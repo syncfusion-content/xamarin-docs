@@ -76,6 +76,8 @@ namespace ChipCustomization
 
 {% endtabs %}
 
+![SfChip with CloseButton](images/customization_images/chip_showclosebutton_image.png)
+
  N> Default value of ShowCloseButton is [`false`]
 
  ## ShowSelectionIndicator
@@ -146,6 +148,8 @@ namespace ChipCustomization
 
 {% endtabs %}
 
+![SfChip with ShowSelectionIndicator](images/customization_images/chip_showselectionindicator_image.png)
+
  N> Default value of ShowSelectionIndicator is [`false`]
 
  ## CloseButtonColor
@@ -215,6 +219,8 @@ namespace ChipCustomization
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChip with CloseButtonColor](images/customization_images/chip_closebuttoncolor_image.png)
 
  N> Default value of CloseButtonColor is [`Color.FromHex("#6b6b6b")`]
 
@@ -290,6 +296,8 @@ namespace ChipCustomization
 
 {% endtabs %}
 
+![SfChip with SelectionIndicatorColor](images/customization_images/chip_selectionindicatorcolor_image.png)
+
  N> Default value of SelectionIndicatorColor is [`Color.FromHex("#6b6b6b")`]
 
  ## BackgroundColor
@@ -364,6 +372,8 @@ namespace ChipCustomization
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChip with BackgroundColor](images/customization_images/chip_chipbackgroundcolor_image.png.png)
 
  N> Default value of BackgroundColor is [`Color.Accent`]
 
@@ -442,6 +452,8 @@ namespace ChipCustomization
 
 {% endtabs %}
 
+![SfChip with BorderColor](images/customization_images/chip_bordercolor_image.png)
+
  N> Default value of BorderColor is [`Color.Transparent`]
 
  ## BorderWidth
@@ -518,6 +530,8 @@ namespace ChipCustomization
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChip with BorderWidth](images/customization_images/chip_borderwidth_image.png)
 
  N> Default value of BorderWidth 
     Android : [`0d`]
@@ -601,6 +615,8 @@ namespace ChipCustomization
 
 {% endtabs %}
 
+![SfChip with CornerRadius](images/customization_images/chip_cornerradius_image.png)
+
 N> Default value of CornerRadius is [`Thickness(0)`].
 
 ## FontAttributes
@@ -675,6 +691,8 @@ namespace ChipCustomization
 
 {% endtabs %}
 
+![SfChip with FontAttributes](images/customization_images/chip_fontattribute_image.png)
+
 ## FontFamily
 
 The [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~FontFamily.html) property is used to customize the font family of text in SfButton.
@@ -748,6 +766,8 @@ namespace ChipCustomization
 
 {% endtabs %}
 
+![SfChip with FontFamily](images/customization_images/chipfontfamily_image.png)
+
 ## FontSize
 
 The [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~FontSize.html) property is used to customize the size of text in SfButton.
@@ -820,6 +840,8 @@ namespace ChipCustomization
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChip with FontSize](images/customization_images/chipfontsize_image.png)
 
 N> Default Value of FontSize 
    Android : [`14d`]
@@ -900,6 +922,8 @@ namespace ChipCustomization
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChip with TextColor](images/customization_images/chip_textcolor_image.png)
 
 N> Default value of TextColor is [`Color.White`].
 
@@ -982,6 +1006,8 @@ namespace ChipCustomization
 
 {% endtabs %}
 
+![SfChip with TextAlignment](images/customization_images/TextAlignment.png)
+
 N> Default value of HorizontalTextAlignment and VerticalTextAlignment is [`TextAlignment.Center`].
 
 ## ShowIcon
@@ -1058,6 +1084,8 @@ namespace ChipCustomization
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChip with ShowIcon](images/customization_images/chip_imagesource_image.png)
 
 N> Default value of ShowIcon is [`false`].
 
@@ -1139,6 +1167,8 @@ namespace ChipCustomization
 
 {% endtabs %}
 
+![SfChip with ImageSource](images/customization_images/chip_imagesource_image.png)
+
 ## ImageWidth
 
 The [`ImageWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageWidth.html) property is used to customize the width of icon image in SfButton.
@@ -1217,6 +1247,8 @@ namespace ChipCustomization
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChip with ImageWidth](images/customization_images/chip_imagewidth_image.png)
 
 N> Default value of ImageWidth is [`32`].
 
@@ -1297,6 +1329,8 @@ namespace ChipCustomization
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChip with ImageAlignment](images/customization_images/chip_imagealignment_image.png)
 
 N> Default value of ImageAlignment is [`Alignment.Start`].
 
@@ -1382,6 +1416,8 @@ public class CommandDemoViewModel : INotifyPropertyChanged
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChip with Command](images/customization_images/chip_command_image.png)
 
 N> Default value of Command is [`null`].
 
@@ -1474,6 +1510,8 @@ namespace Chips
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChipGroup with InputView](images/customization_images/chipgroup_selectedchipbackgroundcolor_image.png)
 
 N> The InputView is visible only in Input type. Default value of InputView is [`null`]. 
 
@@ -1651,6 +1689,8 @@ namespace ChipCustomization
 
 {% endtabs %}
 
+![SfChipGroup with SelectedChipBackgroundColor](images/customization_images/chipgroup_selectedchipbackgroundcolor_image.png)
+
  N> Default value of SelectedChipBackgroundColor is [`Color.Accent`]
 
 ## SelectedChipTextColor
@@ -1744,6 +1784,8 @@ namespace ChipCustomization
 
 {% endtabs %}
 
+![SfChipGroup with SelectedChipTextColor](images/customization_images/chipgroup_selectedchiptextcolor_image.png)
+
  N> Default value of SelectedChipTextColor is [`Color.White`]
 
  ## ChipBackgroundColor
@@ -1779,6 +1821,7 @@ The `ChipBackgroundColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.But
 
 {% highlight c# %}
 
+![SfChipGroup with ChipBackgroundColor](images/customization_images/chipgroup_chipbackgroundcolor_image.png)
 
  N> Default value of ChipBackgroundColor is [`Color.FromHex("#E0E0E0")`]
 
@@ -1820,6 +1863,7 @@ The `ChipBorderColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
 
 {% endtabs %}
 
+![SfChipGroup with ChipBorderColor](images/customization_images/chipgroup_chipbordercolor_image.png)
 
  N> Default value of ChipBorderColor is [`Color.Transparent`] 
 
@@ -1858,6 +1902,7 @@ The `ChipTextColor` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.X
 
 {% endtabs %}
 
+![SfChipGroup with ChipTextColor](images/customization_images/chipgroup_chiptextcolor_image.png)
 
  N> Default value of ChipTextColor is [`Color.FromHex("#212121")`]
 
@@ -1896,10 +1941,10 @@ The `ChipTextSize` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XF
 {% endhighlight %}
 
 {% endtabs %}
-	
+
+![SfChipGroup with ChipTextSize](images/customization_images/chipgroup_chiptextsize_image.png)
 
  N> Default value of ChipTextSize is [`14d`]
-
 
 ## ChipPadding
 
@@ -1936,6 +1981,8 @@ The `ChipPadding` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFo
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChipGroup with ChipPadding](images/customization_images/chipgroup_chippadding_image.png)
 	
  N> Default value of ChipPadding is [`Thickness(5d, 0, 0, 0)`]
 
@@ -1976,6 +2023,8 @@ The `ChipBorderWidth` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
 
 {% endtabs %}
 
+![SfChipGroup with ChipBorderWidth](images/customization_images/chipgroup_chipborderwidth_image.png)
+
  N> Default value of ChipBorderWidth is [`0d`]
 
 ## ItemHeight
@@ -2013,6 +2062,8 @@ The `ItemHeight` (https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFor
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChipGroup with ItemHeight](images/customization_images/chipgroup_itemheight_image.png)
 
  N> Default value of ItemHeight  is [`double.NaN`]
 
@@ -2135,6 +2186,8 @@ namespace ChipCustomization
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChipGroup with ShowIcon](images/customization_images/chipgroup_showicon_image.png)
 
 ## CloseButtonColor
 
@@ -2377,6 +2430,8 @@ namespace ChipCustomization
 
 {% endtabs %}
 
+![SfChipGroup with SelectionIndicatorColor](images/customization_images/chipgroup_selectionindicatorcolor_image.png)
+
  N> Default value of SelectionIndicatorColor is [`Color.White`]
 
 ## ChipImageWidth
@@ -2499,5 +2554,7 @@ namespace ChipCustomization
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfChipGroup with ChipImageWidth](images/customization_images/chip_imagewidth_image.png)
 
  N> Default value of ChipImageWidth is [`26`]

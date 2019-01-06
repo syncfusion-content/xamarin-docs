@@ -1591,54 +1591,6 @@ namespace ChipCustomization
             this.Content = stack;
         }
     }
-
-// Model Class
-
-    public class Person
-    {
-        public string Name
-        {
-            get;
-            set;
-        }
-    }
-
-  //ViewModel Class
-
-    public class ViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Person> employees;
-        public ObservableCollection<Person> Employees
-        {
-            get
-            {
-                return employees;
-            }
-            set
-            {
-                Employees = value;
-                OnPropertyChanged("Employees");
-            }
-        }
-
-        public ViewModel()
-        {
-            employees = new ObservableCollection<Person>();
-            employees.Add(new Person() { Name = "John" });
-            employees.Add(new Person() { Name = "James" });
-            employees.Add(new Person() { Name = "Jacob" });
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void OnPropertyChanged(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
-        }
-    }
 }
 
 {% endhighlight %}
@@ -1727,54 +1679,6 @@ namespace ChipCustomization
             this.Content = stack;
         }
     }
-
-// Model Class
-
-    public class Person
-    {
-        public string Name
-        {
-            get;
-            set;
-        }
-    }
-
-  //ViewModel Class
-
-    public class ViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Person> employees;
-        public ObservableCollection<Person> Employees
-        {
-            get
-            {
-                return employees;
-            }
-            set
-            {
-                Employees = value;
-                OnPropertyChanged("Employees");
-            }
-        }
-
-        public ViewModel()
-        {
-            employees = new ObservableCollection<Person>();
-            employees.Add(new Person() { Name = "John" });
-            employees.Add(new Person() { Name = "James" });
-            employees.Add(new Person() { Name = "Jacob" });
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void OnPropertyChanged(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
-        }
-    }
 }
 
 {% endhighlight %}
@@ -1859,54 +1763,6 @@ namespace ChipCustomization
             chipGroup.ChipBackgroundColor = Color.Aqua;
             chipGroup.Type = SfChipsType.Choice;
             this.Content = stack;
-        }
-    }
-
-// Model Class
-
-    public class Person
-    {
-        public string Name
-        {
-            get;
-            set;
-        }
-    }
-
-  //ViewModel Class
-
-    public class ViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Person> employees;
-        public ObservableCollection<Person> Employees
-        {
-            get
-            {
-                return employees;
-            }
-            set
-            {
-                Employees = value;
-                OnPropertyChanged("Employees");
-            }
-        }
-
-        public ViewModel()
-        {
-            employees = new ObservableCollection<Person>();
-            employees.Add(new Person() { Name = "John" });
-            employees.Add(new Person() { Name = "James" });
-            employees.Add(new Person() { Name = "Jacob" });
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void OnPropertyChanged(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
         }
     }
 }
@@ -1995,54 +1851,6 @@ namespace ChipCustomization
             chipGroup.ChipBorderColor = Color.Black;
             chipGroup.ChipBackgroundColor = Color.Aqua;
             this.Content = stack;
-        }
-    }
-
-// Model Class
-
-    public class Person
-    {
-        public string Name
-        {
-            get;
-            set;
-        }
-    }
-
-  //ViewModel Class
-
-    public class ViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Person> employees;
-        public ObservableCollection<Person> Employees
-        {
-            get
-            {
-                return employees;
-            }
-            set
-            {
-                Employees = value;
-                OnPropertyChanged("Employees");
-            }
-        }
-
-        public ViewModel()
-        {
-            employees = new ObservableCollection<Person>();
-            employees.Add(new Person() { Name = "John" });
-            employees.Add(new Person() { Name = "James" });
-            employees.Add(new Person() { Name = "Jacob" });
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void OnPropertyChanged(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
         }
     }
 }
@@ -2136,54 +1944,6 @@ namespace ChipCustomization
             chipGroup.DisplayMemberPath = "Name";
             chipGroup.ChipTextColor = Color.Blue;
             this.Content = stack;
-        }
-    }
-
-// Model Class
-
-    public class Person
-    {
-        public string Name
-        {
-            get;
-            set;
-        }
-    }
-
-  //ViewModel Class
-
-    public class ViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Person> employees;
-        public ObservableCollection<Person> Employees
-        {
-            get
-            {
-                return employees;
-            }
-            set
-            {
-                Employees = value;
-                OnPropertyChanged("Employees");
-            }
-        }
-
-        public ViewModel()
-        {
-            employees = new ObservableCollection<Person>();
-            employees.Add(new Person() { Name = "John" });
-            employees.Add(new Person() { Name = "James" });
-            employees.Add(new Person() { Name = "Jacob" });
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void OnPropertyChanged(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
         }
     }
 }
@@ -2280,54 +2040,6 @@ namespace ChipCustomization
             this.Content = stack;
         }
     }
-
-// Model Class
-
-    public class Person
-    {
-        public string Name
-        {
-            get;
-            set;
-        }
-    }
-
-  //ViewModel Class
-
-    public class ViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Person> employees;
-        public ObservableCollection<Person> Employees
-        {
-            get
-            {
-                return employees;
-            }
-            set
-            {
-                Employees = value;
-                OnPropertyChanged("Employees");
-            }
-        }
-
-        public ViewModel()
-        {
-            employees = new ObservableCollection<Person>();
-            employees.Add(new Person() { Name = "John" });
-            employees.Add(new Person() { Name = "James" });
-            employees.Add(new Person() { Name = "Jacob" });
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void OnPropertyChanged(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
-        }
-    }
 }
 
 {% endhighlight %}
@@ -2420,54 +2132,6 @@ namespace ChipCustomization
             chipGroup.ChipPadding = new Thickness(8, 8, 0, 0);
             chipGroup.DisplayMemberPath = "Name";
             this.Content = stack;
-        }
-    }
-
-// Model Class
-
-    public class Person
-    {
-        public string Name
-        {
-            get;
-            set;
-        }
-    }
-
-  //ViewModel Class
-
-    public class ViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Person> employees;
-        public ObservableCollection<Person> Employees
-        {
-            get
-            {
-                return employees;
-            }
-            set
-            {
-                Employees = value;
-                OnPropertyChanged("Employees");
-            }
-        }
-
-        public ViewModel()
-        {
-            employees = new ObservableCollection<Person>();
-            employees.Add(new Person() { Name = "John" });
-            employees.Add(new Person() { Name = "James" });
-            employees.Add(new Person() { Name = "Jacob" });
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void OnPropertyChanged(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
         }
     }
 }
@@ -2566,54 +2230,6 @@ namespace ChipCustomization
             this.Content = stack;
         }
     }
-
-// Model Class
-
-    public class Person
-    {
-        public string Name
-        {
-            get;
-            set;
-        }
-    }
-
-  //ViewModel Class
-
-    public class ViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Person> employees;
-        public ObservableCollection<Person> Employees
-        {
-            get
-            {
-                return employees;
-            }
-            set
-            {
-                Employees = value;
-                OnPropertyChanged("Employees");
-            }
-        }
-
-        public ViewModel()
-        {
-            employees = new ObservableCollection<Person>();
-            employees.Add(new Person() { Name = "John" });
-            employees.Add(new Person() { Name = "James" });
-            employees.Add(new Person() { Name = "Jacob" });
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void OnPropertyChanged(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
-        }
-    }
 }
 
 {% endhighlight %}
@@ -2706,54 +2322,6 @@ namespace ChipCustomization
             chipGroup.ItemHeight = 60;
             chipGroup.DisplayMemberPath = "Name";
             this.Content = stack;
-        }
-    }
-
-// Model Class
-
-    public class Person
-    {
-        public string Name
-        {
-            get;
-            set;
-        }
-    }
-
-  //ViewModel Class
-
-    public class ViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Person> employees;
-        public ObservableCollection<Person> Employees
-        {
-            get
-            {
-                return employees;
-            }
-            set
-            {
-                Employees = value;
-                OnPropertyChanged("Employees");
-            }
-        }
-
-        public ViewModel()
-        {
-            employees = new ObservableCollection<Person>();
-            employees.Add(new Person() { Name = "John" });
-            employees.Add(new Person() { Name = "James" });
-            employees.Add(new Person() { Name = "Jacob" });
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void OnPropertyChanged(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
         }
     }
 }
@@ -3010,54 +2578,7 @@ namespace ChipCustomization
             this.Content = stack;
         }
     }
-    public class Person
-    {
-        public string Name
-        {
-            get;
-            set;
-        }
-
-        public string Image
-        {
-            get;
-            set;
-        }
-    }
-    public class ViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Person> employees;
-        public ObservableCollection<Person> Employees
-        {
-            get
-            {
-                return employees;
-            }
-            set
-            {
-                Employees = value;
-                OnPropertyChanged("Employees");
-            }
-        }
-
-        public ViewModel()
-        {
-            employees = new ObservableCollection<Person>();
-            employees.Add(new Person() { Image = "ChipUserContact.png", Name = "John" });
-            employees.Add(new Person() { Image = "ChipUserContact.png", Name = "James" });
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void OnPropertyChanged(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
-        }
-    }
-}
+} 
 
 {% endhighlight %}
 
@@ -3153,55 +2674,6 @@ namespace ChipCustomization
             chipGroup.ChipBackgroundColor = Color.Aqua;
             chipGroup.Type = SfChipsType.Filter;
             this.Content = stack;
-        }
-    }
-
-// Model Class
-
-    public class Person
-    {
-        public string Name
-        {
-            get;
-            set;
-        }
-    }
-
-//ViewModel Class
-
-    public class ViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<Person> employees;
-        public ObservableCollection<Person> Employees
-        {
-            get
-            {
-                return employees;
-            }
-            set
-            {
-                Employees = value;
-                OnPropertyChanged("Employees");
-            }
-        }
-
-        public ViewModel()
-        {
-            employees = new ObservableCollection<Person>();
-            employees.Add(new Person() { Name = "John" });
-            employees.Add(new Person() { Name = "James" });
-            employees.Add(new Person() { Name = "Jacob" });
-
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        public void OnPropertyChanged(string property)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(property));
-            }
         }
     }
 }

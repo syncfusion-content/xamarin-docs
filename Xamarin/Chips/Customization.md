@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Customization for Syncfusion Essential Xamarin.Forms SfChip.
-description : How to customize a appearance for Xamarin.Forms SfChip.
+description : How to customize the appearance of Xamarin.Forms SfChips.
 platform : xamarin
 control : Chips
 documentation : ug
@@ -41,16 +41,6 @@ The [`ShowCloseButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Button
 {% endhighlight %}
 
 {% highlight c# %}
-
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Syncfusion.XForms.Buttons;
-using Xamarin.Forms;
 
 namespace ChipCustomization
 {
@@ -186,12 +176,6 @@ The [`CloseButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Butto
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 

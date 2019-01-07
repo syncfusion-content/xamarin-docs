@@ -149,7 +149,7 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 ## Enable Parsing Mode
 
-SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
+SfNumericUpDown provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
 
 {% tabs %}
 
@@ -173,7 +173,7 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 ## Add Format String
 
-SfNumericTextBox provides option to format the display text in currency format. 
+SfNumericUpDown provides option to format the display text in currency format. 
 
 It has three types,
 
@@ -205,7 +205,7 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 {% endtabs %}
 
-![](images/gettingstarted.png)
+![SfNumericUpDown image](images/gettingstarted.png)
 
 ## Structure
 

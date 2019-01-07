@@ -42,6 +42,10 @@ The [`ShowCloseButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Button
 
 {% highlight c# %}
 
+using System;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
 namespace ChipCustomization
 {
     public partial class MainPage : ContentPage
@@ -104,12 +108,6 @@ The [`ShowSelectionIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -244,12 +242,6 @@ The [`SelectionIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusio
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -321,12 +313,6 @@ The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Button
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -399,12 +385,6 @@ The [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XF
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -478,12 +458,6 @@ The [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XF
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -561,12 +535,6 @@ The `CornerRadius` property is used to customize the rounded edges in SfChip as 
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -639,12 +607,6 @@ The [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -714,12 +676,6 @@ The [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -789,12 +745,6 @@ The [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForm
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -870,12 +820,6 @@ The [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFor
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -951,12 +895,6 @@ The [`HorizontalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusi
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -1032,12 +970,6 @@ You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -1114,12 +1046,6 @@ N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syn
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -1194,12 +1120,6 @@ N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syn
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -1276,12 +1196,6 @@ N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syn
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -1456,9 +1370,10 @@ x:Class="Chips.GettingStarted">
 
 {% highlight c# %}
 
+using System;
 using Syncfusion.XForms.Buttons;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
+using Xamarin.Forms;
+
 namespace Chips
 {
 	public partial class GettingStarted: ContentPage
@@ -1534,14 +1449,6 @@ The [`SelectedChipBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncf
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -1621,14 +1528,6 @@ The [`SelectedChipTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -1708,14 +1607,6 @@ The [`ChipBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Bu
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -1795,14 +1686,6 @@ The [`ChipBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Button
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -1891,14 +1774,6 @@ The [`ChipTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -1985,14 +1860,6 @@ The [`ChipTextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.X
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -2079,14 +1946,6 @@ The [`ChipPadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XF
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -2174,14 +2033,6 @@ The [`ChipBorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Button
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -2269,14 +2120,6 @@ The [`ItemHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XFo
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -2366,14 +2209,6 @@ You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -2517,14 +2352,6 @@ The [`CloseButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Butto
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -2618,14 +2445,6 @@ The [`SelectionIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusio
 {% highlight c# %}
 
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 
@@ -2722,11 +2541,6 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
 using Syncfusion.XForms.Buttons;
 using Xamarin.Forms;
 

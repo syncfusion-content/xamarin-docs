@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Demonstrate Date Picker using SfPicker of Syncfusion Picker control for Xamarin.Forms
+title: Demonstrate Date Picker using Syncfusion Picker for Xamarin.Forms
 description: Overview and key features of Picker control
 platform: Xamarin
 control: Picker
@@ -410,7 +410,7 @@ date.IsOpen = !date.IsOpen;
 
 The following screenshot illustrates the output of above code snippets.
 
-![](images/datepicker_img1.jpeg)
+![DatePicker image](images/datepicker_img1.jpeg)
 
 
 You can download the DatePicker sample for reference from the following link.

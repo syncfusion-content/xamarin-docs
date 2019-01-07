@@ -380,4 +380,4 @@ this.Content = numericTextBox;
 
 ![](images/textformat.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1544804094)
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/NumericTextBox_GettingStarted1501853434.zip)

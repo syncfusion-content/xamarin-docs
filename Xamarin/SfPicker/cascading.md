@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Demonstrate CascadingPicker using SfPicker of Syncfusion Picker control for Xamarin.Forms
+title: Demonstrate CascadingPicker using Syncfusion Picker for Xamarin.Forms
 description: Overview and key features of Picker control
 platform: Xamarin
 control: Picker

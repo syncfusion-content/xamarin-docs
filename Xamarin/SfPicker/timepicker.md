@@ -343,4 +343,4 @@ The following screenshot illustrates the output of the above code snippets.
 
 You can download the TimePicker sample for reference from the following link.
 
-Sample link: [TimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePicker717705423.zip)
+Sample link: [TimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePicker-664195767.zip)

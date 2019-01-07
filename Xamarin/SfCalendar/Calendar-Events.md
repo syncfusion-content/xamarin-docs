@@ -33,7 +33,7 @@ You can handle the calendar month view appointment display by using [InlineViewM
  
 * AgendaView - Show the selected date’s events below the month.
 
-N> If there is no appointment for the selected day, `Inline` view and `AgendaView` displays the text as “No Appointments”
+N> If there is no appointment for the selected day, `Inline` view and `AgendaView` displays the text as “No Appointments”.
  
 ## Month Appointment Indicator
  

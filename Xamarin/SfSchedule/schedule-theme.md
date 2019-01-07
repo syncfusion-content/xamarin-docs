@@ -171,4 +171,4 @@ Day view
 ![SfSchedule themes](GettingStarted_images/Xamarin.Forms-Schedule-Customizedthemeday.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here[ScheduleTheme](https://github.com/SyncfusionExamples/xamarin-schedule-theming).
+here [ScheduleTheme](https://github.com/SyncfusionExamples/xamarin-schedule-theming).

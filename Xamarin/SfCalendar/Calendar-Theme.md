@@ -90,6 +90,7 @@ You can customize the default theme by overriding the existing key and set the n
                 <syncfusion:SfCalendarStyles />
                 <ResourceDictionary>
                     <Color x:Key="SfCalendarInlineBackgroundColor">Green</Color>
+                    <Color x:Key="SfCalendarInlineTextColor">White</Color>
                     <Color x:Key="SfCalendarWeekEndBackgroundColor">Blue</Color>
                     <Color x:Key="SfCalendarYearViewHeaderTextColor">Blue</Color>
                     <Color x:Key="SfCalendarYearViewDateTextColor">Green</Color>
@@ -114,4 +115,4 @@ Year view
 ![SfCalendar themes](images/Xamarin.Forms-Calendar-Customizedthemeyear.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here`CalendarTheme`.
+here [CalendarTheme](https://github.com/SyncfusionExamples/xamarin-calendar-theming).

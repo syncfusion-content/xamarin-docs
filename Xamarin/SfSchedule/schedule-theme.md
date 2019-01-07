@@ -138,8 +138,9 @@ You can customize the default theme by overriding the existing key and set the n
                 <syncTheme:LightTheme x:Name="LightTheme" />
                 <syncfusion:SfScheduleStyles />
                 <ResourceDictionary>
-                    <Color x:Key="SfScheduleHeaderBackgroundColor">Green</Color>
                     <Color x:Key="SfScheduleHeaderTextColor">Red</Color>
+                    <Color x:Key="SfScheduleViewHeaderDayTextColor">Blue</Color>
+                    <Color x:Key="SfScheduleViewHeaderDateTextColor">Blue</Color>
                 </ResourceDictionary>
             </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
         </syncTheme:SyncfusionThemeDictionary>
@@ -170,4 +171,4 @@ Day view
 ![SfSchedule themes](GettingStarted_images/Xamarin.Forms-Schedule-Customizedthemeday.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here`ScheduleTheme`.
+here[ScheduleTheme](https://github.com/SyncfusionExamples/xamarin-schedule-theming).

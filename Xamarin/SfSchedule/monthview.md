@@ -827,7 +827,7 @@ private void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineApp
 ## InlineView Appearance  
 You can customize the inline view with two ways,
 * Using style
-* Using custom UI
+* Using custom view
 
 ### Using style
 You can customize the month inline view by setting the [MonthInlineViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle.html) properties such as [Background](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~BackgroundColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~TextColor.html), [FontSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~FontSize.html), [FontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~FontAttributes.html), [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~FontFamily.html), [TimeTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~TimeTextColor.html), [TimeTextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~TimeTextSize.html), and [TimeTextFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineViewStyle~TimeTextFormat.html) at runtime using [OnMonthInlineLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~OnMonthInlineLoadedEvent_EV.html) in `SfSchedule`. By using `OnMonthInlineLoadedEvent` you can get arguments such as[monthInlineViewStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineLoadedEventArgs~monthInlineViewStyle.html), [appointments](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineLoadedEventArgs~appointments.html), [selectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineLoadedEventArgs~selectedDate.html) in the MonthInlineLoadedEventArgs.
@@ -876,8 +876,8 @@ Get the complete sample for this [here](https://github.com/SyncfusionExamples/Cu
 >**NOTE**
 FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.
 
-### Using custom UI
-You can set custom UI for the inline view by using [InlineView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~InlineViewProperty.html) property of `Schedule` 
+### Using custom view
+You can set custom view for the inline view by using [InlineView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~InlineViewProperty.html) property of `Schedule` 
 {% tabs %}
 {% highlight c# %}
 SfSchedule schedule = new SfSchedule();
@@ -898,7 +898,7 @@ SfSchedule schedule = new SfSchedule();
 {% endhighlight %}
 {% endtabs %}
 
-![Month inline customization with custom UI](monthview_images/CustomInlineView.png)
+![Month inline customization with custom view](monthview_images/CustomInlineView.png)
 
 ## InlineAppointment Appearance 
 You can customize the Month inline view Appointment by using [OnMonthInlineAppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~OnMonthInlineAppointmentLoadedEvent_EV.html) in `SfSchedule`, using [view](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentLoadedEventArgs~view.html) of [MonthInlineAppointmentLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentLoadedEventArgs.html) argument. You can get the details of Appointment in the [appointment](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentLoadedEventArgs~appointment.html) argument.

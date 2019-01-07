@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Interactive Selection modes in Syncfusion Calendar control for Xamarin.Forms
+title: Customization of Syncfusion Calendar control in Xamarin.Forms
 description: How to Perform an operation while a calendar cell is Tapped
 platform: Xamarin
 control: Calendar
 documentation: ug
 ---
 
-# How to Perform an Operation while a Calendar Cell is Tapped?
+# Customization of Calendar control
+
+## How to Perform an Operation while a Calendar Cell is Tapped?
 
 We can perform operation while the Calendar cell is Tapped using `CalendarTapped` event. CalendarTapped event returns the date selected and the Appointments that are associated with the date selected.
 
@@ -17,8 +19,8 @@ We can perform operation while the Calendar cell is Tapped using `CalendarTapped
 <th>Description</th>
 </tr>
 <tr>
-<td>Calendar</td>
-<td>Displays the native control</td>
+<td>(sender as SfCalendar)</td>
+<td>Carries details about native control</td>
 </tr>
 <tr>
 <td>DateTime</td>
@@ -39,7 +41,7 @@ We can perform operation while the Calendar cell is Tapped using `CalendarTapped
 	
 void Handle_OnCalendarTapped(object sender, Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs args)
 {
-	SfCalendar calendar = args.Calendar;
+	SfCalendar calendar = (sender as SfCalendar);
 	DateTime date = args.datetime;		
 }
 	
@@ -47,9 +49,9 @@ void Handle_OnCalendarTapped(object sender, Syncfusion.SfCalendar.XForms.Calenda
 
 {% endtabs %}
 
-# How to Perform an Operation when the Selected Date Get Changed?
+## How to Perform an Operation when the Selected Date Get Changed?
 
-We can perform an operation when the selected date get changed using `SelectionChanged` event which returns the dates selected and dates deselected from the SfCalendar.
+We can perform an operation when the selected date get changed using `SelectionChanged` event which returns the dates selected and dates deselected from the `SfCalendar`.
 
 <table>
 <tr>
@@ -57,8 +59,8 @@ We can perform an operation when the selected date get changed using `SelectionC
 <th>Description</th>
 </tr>
 <tr>
-<td>Calendar</td>
-<td>Displays the native control</td>
+<td>(sender as SfCalendar)</td>
+<td>Carries details about native control</td>
 </tr>
 <tr>
 <td>DateAdded</td>
@@ -67,6 +69,10 @@ We can perform an operation when the selected date get changed using `SelectionC
 <tr>
 <td>DateRemoved</td>
 <td>Date deselected from the calendar</td>
+</tr>
+<tr>
+<td>NewRangeAdded</td>
+<td>Carries details about the selected multi range </td>
 </tr>
 </table>
 
@@ -82,9 +88,10 @@ We can perform an operation when the selected date get changed using `SelectionC
 	
 void Handle_SelectionChanged(object sender, Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs args)
 {
-	SfCalendar calendar = args.Calendar;
-	IList<DateTime> selectedDates = args.DateAdded;
-	IList<DateTime> deselectedDates = args.DateRemoved;
+	 SfCalendar calendar = (sender as SfCalendar);
+     IList<DateTime> selectedDates = args.DateAdded;
+     IList<DateTime> deselectedDates = args.DateRemoved;
+     IList<SelectionRange> deselectedDates = e.NewRangeAdded;
 }
 	
 {% endhighlight %}
@@ -92,7 +99,7 @@ void Handle_SelectionChanged(object sender, Syncfusion.SfCalendar.XForms.Selecti
 {% endtabs %}
 
 
-# How to Perform an Operation when Navigate to Next Month?
+## How to Perform an Operation when Navigate to Next Month?
 
 User defined operation can be performed using `MonthChanged` event when navigating to next month. This event returns the details about current value and previous value of month.
 
@@ -102,8 +109,8 @@ User defined operation can be performed using `MonthChanged` event when navigati
 <th>Description</th>
 </tr>
 <tr>
-<td>Calendar</td>
-<td>Displays the native control</td>
+<td>(sender as SfCalendar)</td>
+<td>Carries details about native control</td>
 </tr>
 <tr>
 <td>Args</td>
@@ -123,9 +130,9 @@ User defined operation can be performed using `MonthChanged` event when navigati
 	
 void Handle_MonthChanged(object sender, Syncfusion.SfCalendar.XForms.MonthChangedEventArgs args)
 {
-	SfCalendar calendar = args.Calendar;
-	DateTime oldMonth = args.args.PreviousValue;
-	DateTime currentMonth = args.args.CurrentValue;
+	 SfCalendar calendar = (sender as SfCalendar);
+     DateTime oldMonth = args.PreviousValue;
+     DateTime currentMonth = args.CurrentValue;
 }
 	
 {% endhighlight %}
@@ -133,7 +140,7 @@ void Handle_MonthChanged(object sender, Syncfusion.SfCalendar.XForms.MonthChange
 {% endtabs %}
 
 
-# How to Perform an Operation while Dealing with Appointments?
+## How to Perform an Operation while Dealing with Appointments?
 
 `InlineToggled` event returns the selected date along with the appointments it carries. Using this event user can perform operation while dealing with appointments.
 
@@ -143,8 +150,8 @@ void Handle_MonthChanged(object sender, Syncfusion.SfCalendar.XForms.MonthChange
 <th>Description</th>
 </tr>
 <tr>
-<td>Calendar</td>
-<td>Displays the native control</td>
+<td>(sender as SfCalendar)</td>
+<td>Carries details about native control</td>
 </tr>
 <tr>
 <td>SelectedAppointment</td>
@@ -165,9 +172,12 @@ void Handle_MonthChanged(object sender, Syncfusion.SfCalendar.XForms.MonthChange
 	
 void Handle_InlineToggled(object sender, Syncfusion.SfCalendar.XForms.InlineToggledEventArgs args)
 {
-		string subject = args.selectedAppointment[0].Subject;
-		DateTime startTime = args.selectedAppointment[0].StartTime;
-		DateTime endTime = args.selectedAppointment[0].EndTime;	
+	if ((args.SelectedAppointment as CalendarEventCollection).Count != 0)
+        {
+            string subject = (args.SelectedAppointment as CalendarEventCollection)[0].Subject;
+            DateTime startTime = (args.SelectedAppointment as CalendarEventCollection)[0].StartTime;
+            DateTime endTime = (args.SelectedAppointment as CalendarEventCollection)[0].EndTime;
+        }
 }
 	
 {% endhighlight %}
@@ -175,9 +185,9 @@ void Handle_InlineToggled(object sender, Syncfusion.SfCalendar.XForms.InlineTogg
 {% endtabs %}
 
 
-# How to Customize Cell or Month View?
+## How to Customize Cell or Month View?
 
-`OnMonthCellLoaded` event allows us to customize SfCalendar control. It returns MonthCell args
+`OnMonthCellLoaded` event allows us to customize `SfCalendar` control. It returns MonthCell args
 
 <table>
 <tr>
@@ -200,27 +210,27 @@ void Handle_InlineToggled(object sender, Syncfusion.SfCalendar.XForms.InlineTogg
 
 {% highlight c# %}
 
-void Handle_OnMonthCellLoaded(object sender, Syncfusion.SfCalendar.XForms.MonthCell args)
+void Handle_OnMonthCellLoaded(object sender, Syncfusion.SfCalendar.XForms.MonthCellLoadedEventArgs args)
 {
-	if (args.IsCurrentMonth)
-    {
-        args.BackgroundColor = Color.Gray;
-        args.TextColor = Color.Red;
-    }
-    else
-    {
-        args.BackgroundColor = Color.LightGray;
-        args.TextColor = Color.Black;
-    }
+     if (args.IsCurrentMonth)
+        {
+            args.BackgroundColor = Color.Gray;
+            args.TextColor = Color.Red;
+        }
+        else
+        {
+            args.BackgroundColor = Color.LightGray;
+            args.TextColor = Color.Black;
+        }
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-# How to Perform the Operation while long pressing the dateCell?
+## How to Perform the Operation while long pressing the dateCell?
 
-`OnDateCellHolding` event returns the long pressed date along with the SfCalendar it carries. Using this event user can perform operation while long pressing the date.
+`OnDateCellHolding` event returns the long pressed date along with the `SfCalendar` it carries. Using this event user can perform operation while long pressing the date.
 
 
 <table>
@@ -244,18 +254,18 @@ void Handle_OnMonthCellLoaded(object sender, Syncfusion.SfCalendar.XForms.MonthC
 
 {% highlight c# %}
 
-calendar.OnDateCellHolding += (object sender, DayCellHoldingEventArgs args) =>
-{
-	// do the operation while long pressing the date cell
-};
+   void Handle_OnDateCellHolding(object sender, Syncfusion.SfCalendar.XForms.DayCellHoldingEventArgs args)
+    {
+       // do the operation while long pressing the date cell     
+    }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-# How to Resize the SfCalendar Control?
+## How to Resize the SfCalendar Control?
 
-SfCalendar control can be resized using `WidthRequest` and `HeightRequest` properties in SfCalendar control.
+`SfCalendar` control can be resized using `WidthRequest` and `HeightRequest` properties in `SfCalendar`control.
 
 {% highlight c# %}
 
@@ -265,9 +275,9 @@ calendar.HeightRequest = 200;
 	
 {% endhighlight %}
 
-# How to Customize the SfCalendar Header?
+## How to Customize the SfCalendar Header?
 
-`HeaderView` property of SfCalendar allows us to customize SfCalendar Header. It returns custom view for SfCalendarHeader
+`HeaderView` property of SfCalendar allows us to customize `SfCalendar` Header. It returns custom view for SfCalendarHeader
 
 <table>
 <tr>
@@ -294,9 +304,9 @@ calendar.HeightRequest = 200;
 
 {% endtabs %}
 
-# How to enable or disable the YearView in SfCalendar?
+## How to enable or disable the YearView in SfCalendar?
 
-`ShowYearView` property of SfCalendar allows us to enable and disable the  YearView of SfCalendar. The default value of ShowYearView is true.
+`ShowYearView` property of `SfCalendar` allows us to enable and disable the  YearView of `SfCalendar`. The default value of ShowYearView is true.
 
 <table>
 <tr>
@@ -319,9 +329,9 @@ calendar.HeightRequest = 200;
 
 {% endtabs %}
 
-# How to enable or disable the Horizontal and Vertical cell grid lines in SfCalendar?
+## How to enable or disable the Horizontal and Vertical cell grid lines in SfCalendar?
 
-`CellGridOptions` property of MonthViewSettings allows us to enable and disable the horizontal and vertical border lines of SfCalendar. 
+`CellGridOptions` property of MonthViewSettings allows us to enable and disable the horizontal and vertical border lines of `SfCalendar`. 
 
 <table>
 <tr>
@@ -355,7 +365,7 @@ calendar.HeightRequest = 200;
 
 {% highlight xaml %}
 
- <syncfusion:SfCalendar  Grid.Row="1" ShowYearView="false" x:Name="calendar"   >
+ <syncfusion:SfCalendar x:Name="calendar"   >
     <syncfusion:SfCalendar.MonthViewSettings>
         <syncfusion:MonthViewSettings CellGridOptions="Both" />
     </syncfusion:SfCalendar.MonthViewSettings>

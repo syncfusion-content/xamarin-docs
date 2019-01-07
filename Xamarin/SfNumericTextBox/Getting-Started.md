@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion NumericTextBox control for Xamarin.Forms 
+title: Getting Started with Syncfusion NumericTextBox for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion NumericTextBox control for Xamarin.Forms platform
 platform: Xamarin
 control: NumericTextBox
@@ -139,9 +139,9 @@ public partial class NumericControlPage : ContentPage
 
 {% endtabs %}
 
-# Display Customization
+## Display Customization
 
-## Setting and Reading Value
+### Setting and Reading Value
 
 `Value` property is used to set and read the value presented by the SfNumericTextBox. 
 
@@ -163,9 +163,9 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![](images/value.png)
+![NumericTextBox with value image](images/value.png)
 
-## Parsing the Value
+### Parsing the Value
 
 Value of the SfNumericTextBox gets parsed based on `ParserMode` property. ParsingMode is of type Parsers which is enum of Double and Decimal. Hence we have option to display the value in double or decimal. 
 
@@ -190,11 +190,11 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![](images/value.png)
+![NumericTextBox with parsed value image](images/value.png)
 
 N> DefaultValue for ParserMode is Double.
  
-## Formatting the Value
+### Formatting the Value
 
 The `FormatString` property determines the format specifier by which the display text has to be formatted.
 
@@ -220,9 +220,9 @@ this.Content = numericTextBox;
 
 N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
 
-![](images/formatstring.png)
+![NumericTextBox with formatted value image](images/formatstring.png)
 
-## Colors
+### Colors
 
 SfNumericTextBox can be set to use a custom background,text and border colors via the following bindable properties:
 
@@ -234,7 +234,7 @@ SfNumericTextBox can be set to use a custom background,text and border colors vi
 
 * `WatermarkColor` - sets the watermark custom color of NumericTextBox's watermark Text.
 
-### TextColor
+#### TextColor
 
 To set the TextColor color in XAML as well as in C#:
 
@@ -257,9 +257,9 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![](images/textcolor.png)
+![NumericTextBox with text color image](images/textcolor.png)
 
-### BackgroundColor
+#### BackgroundColor
 
 To set the BackgroundColor color in XAML as well as in C#:
 
@@ -283,9 +283,9 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![](images/backgroundcolor.png)
+![NumericTextBox with background color image](images/backgroundcolor.png)
 
-### BorderColor
+#### BorderColor
 
 To set the BorderColor color in XAML as well as in C#:
 
@@ -308,9 +308,9 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![](images/bordercolor.png)
+![NumericTextBox with border color image](images/bordercolor.png)
 
-### WatermarkColor
+#### WatermarkColor
 
 To set the WatermarkColor color in XAML as well as in C#:
 
@@ -334,9 +334,9 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![](images/watermarkcolor.png)
+![NumericTextBox with watermark color image](images/watermarkcolor.png)
 
-## Font Settings
+### Font Settings
 
 NumericTextBox has the following two font-related properties that display the value's text:
 We can customize the font style of NumericTextBox by using the following properties.
@@ -378,6 +378,6 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![](images/textformat.png)
+![NumericTextBox with font attributes image](images/textformat.png)
 
 You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/NumericTextBox_GettingStarted1501853434.zip)

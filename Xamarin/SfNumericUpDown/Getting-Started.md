@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion NumericUpDown control for Xamarin.Forms 
+title: Getting Started with Syncfusion NumericUpDown for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion NumericUpDown control for Xamarin.Forms platform
 platform: Xamarin
 control: NumericUpDown

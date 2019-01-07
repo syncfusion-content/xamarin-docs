@@ -29,16 +29,13 @@ For Android, add `android:supportsRtl="true"` in your application tag of `Androi
 
 {% tabs %}
 {% highlight xml %}
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-android:versionCode="1" android:versionName="1.0" package="com.companyname.ScheduleForms">
-<uses-sdk android:minSdkVersion="19" android:targetSdkVersion="27"  />
-<application android:label="ScheduleForms.Android" android:supportsRtl="true">
+<manifest ... >
+<uses-sdk android:minSdkVersion="17" ... />
+<application ... android:supportsRtl="true">
 </application>
 </manifest>
 {% endhighlight %}
 {% endtabs %}
-
-![](Localization_images/scheduledroidmanifest.png)
 
 ### iOS
 For iOS, add the `RightToLeft` language in the `CFBundleLocalizations` section of your `Info.plist` file, and make sure you’re targeting iOS 9+.
@@ -57,7 +54,7 @@ For iOS, add the `RightToLeft` language in the `CFBundleLocalizations` section o
 {% endhighlight %}
 {% endtabs %}
 
-![](Localization_images/scheduleiosplist.png)
+![info plist](Localization_images/scheduleiosplist.png)
 
 ### UWP
 For UWP, you need to set `FlowDirection` to `RightToLeft` in the `MainPage.cs` file of the `UWP` project.

@@ -29,11 +29,11 @@ I> Inline event support can be toggled on / off with `ShowInlineEvents` property
  
 You can handle the calendar month view appointment display by using [InlineViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~InlineViewMode.html) property of `SfCalendar`. By default, `InlineViewMode` is set as `Inline`. Using the `InlineViewMode`, you can set the month view appointments display as follows.
  
-* Inline - Show the selected date’s events inline.
+* Inline - Show the selected date’s events in-line. In this mode, two rows of calendar will be hidden to show the events.
  
 * AgendaView - Show the selected date’s events below the month.
 
-N> If appointments not there in the selected day, `Inline` view and `AgendaView` displays the text as “No Appointments”. In `Inline` mode two rows of calendar will be hidden to show the selected date's events.
+N> If there is no appointment for the selected day, `Inline` view and `AgendaView` displays the text as “No Appointments”
  
 ## Month Appointment Indicator
  

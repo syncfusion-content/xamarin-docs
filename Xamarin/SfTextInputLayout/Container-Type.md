@@ -70,6 +70,37 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ![Outlined type](Container-Type-images/textInput_container_img2.png)
 
+### Customize the corner radius of the outline border 
+
+When setting the [OutlineCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~OutlineCornerRadiusProperty.html) property to double value, the corner radius of the container will be changed.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<inputLayout:SfTextInputLayout
+        Hint="Name" 
+        ContainerType="Outlined"
+	    OutlineCornerRadius="8"/> 
+			
+{% endhighlight %}
+
+{% highlight c# %}
+
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Name";
+inputLayout.ContainerType = ContainerType.Outlined;
+inputLayout.OutlineCornerRadius = 8;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![OutlineCornerRadius img](Container-Type-images/OutlinedCornerRadius.jpg)
+
+>**NOTE**
+It is applicable for the outline border when setting the container type to outlined.
+
 ## None
 
 When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerType.html) property to [None](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html), the container will have empty background and enough spacing.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Assitive Labels
-description: How to add assistive labels like helper text, error label, character counter to the text input layout.
+description: How to add assistive labels like helper text, error label, character counter to the Syncfusion text input layout.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
@@ -40,7 +40,7 @@ inputLayout.InputView = new Entry();
 
 The visibility of the helper text can be disabled by setting the [ShowHelperText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ShowHelperText.html) property to false. By default, it is set to true.
 
-![](Assistive-Labels-images/helper.PNG)
+![helper label](Assistive-Labels-images/helper.PNG)
 
 ## Error message
 
@@ -74,7 +74,7 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Assistive-Labels-images/error.gif)
+![error label](Assistive-Labels-images/error.gif)
 
 N> Error validations should be done in the application level.
 
@@ -110,7 +110,36 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Assistive-Labels-images/charcount.gif)
+![character counter label](Assistive-Labels-images/charcount.gif)
 
 N> When character count reaches the maximum character length, the error color will be applied to hint, border, and counter label.
 
+# Reserve spaces for assistive labels
+
+The reserved spaces for assistive labels can be removed by setting the [ReserveSpaceForAssistiveLabels](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ReserveSpaceForAssistiveLabelsProperty.html) property to false.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<inputLayout:SfTextInputLayout 
+            ContainerType="Outlined" 
+            Hint="Name" 
+            ReserveSpaceForAssistiveLabels="False">
+            <Entry />
+</inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Name";
+inputLayout.ContainerType = ContainerType.Outlined;
+inputLayout.ReserveSpaceForAssistiveLabels = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Reserve space for assistive label img](Assistive-Labels-images/ReserveSpaceAPI.png)

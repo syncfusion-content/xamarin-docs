@@ -18,7 +18,8 @@ The text input layout control for Xamarin.Forms adds decorative elements such as
 * Displays error labels.
 * Supports filled, outlined, and none container types.
 * Provides RTL support.
-* Provides options to reserve space for assistive labels and customize the thickness of its stroke and corner radius.
+* Provides options to reserve space for assistive labels.
+* Provides options to customize the thickness of its stroke width and corner radius.
 * Displays leading and trailing icons.
 * Displays help labels.
 * Displays maximum character count.

@@ -24,7 +24,10 @@ N> A specific platform setup is required to enable the right-to-left localizatio
     <StackLayout>
         <inputLayout:SfTextInputLayout
             x:Name="textinputlayout" 
-            FlowDirection="RightToLeft" />
+            FlowDirection="RightToLeft"
+			ContainerType="Outlined"
+			Hint="اسم"  
+			HelperText="أدخل أسمك" />
     </StackLayout>
 
 </ContentPage>
@@ -33,9 +36,12 @@ N> A specific platform setup is required to enable the right-to-left localizatio
 {% highlight c# %}
 
 textinputlayout.FlowDirection = FlowDirection.RightToLeft;
+textinputlayout.ContainerType = ContainerType.Outlined;
+textinputlayout.Hint = "اسم";
+textinputlayout.HelperText = "أدخل أسمك";
 
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms TextInputLayout with right to left](Supported-input-views-images/XamarinForms_TextInputLayout_RTL.png)
+![Xamarin Forms TextInputLayout with right to left](RTL-images/XamarinForms_TextInputLayout_RTL.png)
 

@@ -687,6 +687,7 @@ public class SourceProviderExt : SourceProvider
 
 public class ContactInfo
 {
+    [Display(Name ="First Name")]
     public String FirstName { get; set; } 
     public string City { get; set; }
 }

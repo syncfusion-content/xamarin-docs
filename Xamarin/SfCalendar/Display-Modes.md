@@ -9,7 +9,7 @@ documentation: ug
 
 # View of SfCalendar
 
-SfCalendar control provides two types of views to display dates such as month view and year view. It can be assigned to the SfCalendar control by using `ViewMode` property.Based on the user’s preference SfCalendar can be viewed in any of the available two types.
+`SfCalendar` control provides two types of views to display dates such as month view and year view. It can be assigned to the `SfCalendar` control by using `ViewMode` property.Based on the user’s preference `SfCalendar` can be viewed in any of the available two types.
 
 N> By default SfCalendar control is assigned with month view. 
 
@@ -31,10 +31,37 @@ We can customize the calendar view in monthView mode by using `MonthViewSettings
 
 * The BlackOutDate color can be modified with `BlackOutColor` property.
 
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar x:Name="calendar">
+            <syncfusion:SfCalendar.MonthViewSettings>
+                  <syncfusion:MonthViewSettings 
+                        CurrentMonthBackgroundColor="#800080"
+                        CurrentMonthTextColor="#ffffff"
+                        PreviousMonthBackgroundColor="#9895F0"
+                        PreviousMonthTextColor="#000000"
+                        DateSelectionColor="#ffffff"
+                        SelectedDayTextColor="#000000"
+                        >
+                     <syncfusion:MonthViewSettings.MonthLabelSettings>  
+                       <syncfusion:MonthLabelSettings
+                         DateFormat="dd"
+                         DayFormat="EEE"
+                         DayLabelSize="20"
+                         DateLabelSize="12"
+                         />
+                     </syncfusion:MonthViewSettings.MonthLabelSettings>
+                </syncfusion:MonthViewSettings>
+           </syncfusion:SfCalendar.MonthViewSettings>
+</syncfusion:SfCalendar>  
+
+{% endhighlight %}
+
 {% highlight c# %}
 	
 SfCalendar calendar = new SfCalendar();    
-
 MonthLabelSettings labelSettings = new MonthLabelSettings();
 labelSettings.DateFormat = "dd";
 labelSettings.DayLabelSize = 20;
@@ -51,12 +78,13 @@ monthViewSettings.SelectedDayTextColor = Color.FromHex("#000000");
 
 monthViewSettings.MonthLabelSettings = labelSettings;
 calendar.MonthViewSettings = monthViewSettings;
-
 this.Content = calendar;
 	
 {% endhighlight %}
 
-![](images/monthviewset.png)
+{% endtabs %}
+
+![Month View in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-monthview-customization.png)
 
 
 N> Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
@@ -76,16 +104,14 @@ This displays entire dates/month of a particular year, by default current year w
 {% highlight c# %}
 
 SfCalendar calendar = new SfCalendar();
-
 calendar.ViewMode=ViewMode.YearView;
-
 this.Content = calendar;
  
 {% endhighlight %}
 
 {% endtabs %}
  
-![](images/yearviewset.png)
+![YearView in Xamarin.Forms Calendar](images/xamarin.forms-calendar-yearview-customization.png)
 
 ### Customization of SfCalendar's dates in YearView
 
@@ -95,19 +121,36 @@ We can customize the calendar view in yearView mode by using `YearViewSettings`.
 
 * We can also customize the header, monthLayout in yearView 's textColor and background color.
 
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar x:Name="calendar">
+             <syncfusion:SfCalendar.YearViewSettings>
+                    <syncfusion:YearViewSettings 
+                        LayoutBackground="#ffe4b5"
+                        DateTextColor="#E6E6FA"
+                        HeaderBackground="#8B4513"
+                        YearHeaderTextColor="#FFFFFF"
+                    />
+                </syncfusion:SfCalendar.YearViewSettings>
+</syncfusion:SfCalendar>    
+
+{% endhighlight %}
+
 {% highlight c# %}
 	
-SfCalendar calendar = new SfCalendar();    
-    
+SfCalendar calendar = new SfCalendar();        
 YearViewSettings yearViewSettings = new YearViewSettings();
-yearViewSettings.BackgroundColor = Color.FromHex("#ffe4b5");
+yearViewSettings.LayoutBackground = Color.FromHex("#ffe4b5");
 yearViewSettings.DateTextColor = Color.FromHex("#E6E6FA");
 yearViewSettings.HeaderBackground = Color.FromHex("#8B4513");
 yearViewSettings.YearHeaderTextColor = Color.FromHex("#FFFFFF");
-
 calendar.YearViewSettings = yearViewSettings;
 this.Content = calendar;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 

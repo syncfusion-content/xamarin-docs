@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Interactive Selection modes in Syncfusion Calendar control for Xamarin.Forms
+title: Selection Modes | SfCalendar | Xamarin.Forms | Syncfusion
 description: Select Multiple Dates
 platform: Xamarin
 control: Calendar
@@ -9,13 +9,13 @@ documentation: ug
 
 # Select Multiple Dates
 
-Dates can be selected by making a touch on month view cells. The default Selection mode is Single which allows user to select one date at a time. SfCalendar provides support to select dates in two modes such as Single and Multiple selection.
+Dates can be selected by making a touch on month view cells. The default Selection mode is Single which allows user to select one date at a time. `SfCalendar` provides support to select dates in two modes such as Single and Multiple selection.
 
 * `SingleSelection` – A single date can be selected in a month view which can be equipped when user needs to select one date at a time / to view events.
 
 * `MultiSelection` – More than one date can be selected in a random manner. Clicking again on selected dates can do deselection.
 
-* `RangeSelection` – It allows us to select a single date range in SfCalendar month view.
+* `RangeSelection` – It allows us to select a single date range in `SfCalendar` month view.
 
 * `MultiRangeSelection` – More than one date range can be selected in a month view.
 
@@ -39,9 +39,9 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![](images/Selection.png)
+![MultiSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-MultiSelection.png)
 
-N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of SfCalendar control.
+N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of `SfCalendar` control.
 
 {% tabs %}
 
@@ -52,8 +52,6 @@ N> In range selection, navigation through swipe will be restricted and moving be
 {% endhighlight %}
 
 {% highlight c# %}
-
-![](images/RangeSelection.png)
 
 SfCalendar calendar = new SfCalendar();	
 calendar.SelectionMode=SelectionMode.RangeSelection;
@@ -81,4 +79,4 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![](images/MultiRangeSelection.png)
+![MultiRangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-MultiRangeSelection.png)

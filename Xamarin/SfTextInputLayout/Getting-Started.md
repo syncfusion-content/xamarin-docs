@@ -174,3 +174,5 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 ![](Getting-Started_images/textInput_getting_img4.png)
 ![](Getting-Started_images/textInput_getting_img5.png)
+
+You can find the complete getting started sample from this [link.]( https://s3.amazonaws.com/files2.syncfusion.com/Xamarin.Forms/Samples/TextInputLayout.zip)

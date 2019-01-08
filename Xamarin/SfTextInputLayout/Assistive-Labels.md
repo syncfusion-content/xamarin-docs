@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Assitive Labels
-description: How to add assistive labels like helper text, error label, character counter to the Syncfusion text input layout.
+title: Syncfusion Text Input Layout Assitive Labels.
+description: How to add assistive labels like helper text, error label, character counter to the text input layout.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
@@ -114,7 +114,7 @@ inputLayout.InputView = new Entry();
 
 N> When character count reaches the maximum character length, the error color will be applied to hint, border, and counter label.
 
-# Reserve spaces for assistive labels
+## Reserve spaces for assistive labels
 
 The reserved spaces for assistive labels can be removed by setting the [ReserveSpaceForAssistiveLabels](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ReserveSpaceForAssistiveLabelsProperty.html) property to false.
 

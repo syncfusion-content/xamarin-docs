@@ -24,7 +24,7 @@ The Parallax view supports custom scrollable controls using the `IParallaxView` 
 
 {% endhighlight %}                         
 
-### ScrollableContentSize
+## Scrollable ContentSize
 
 The `ScrollableContentSize` is the total content size of the scrollable custom control.
 
@@ -43,7 +43,7 @@ The `ScrollableContentSize` is the total content size of the scrollable custom c
 
 {% endhighlight %}
 
-### Scrolling event
+## Scrolling event
 
 The `Scrolling` event occurs whenever the `ParallaxScrollingEventArgs` value is set through the scrollable custom control scrolled event.
 

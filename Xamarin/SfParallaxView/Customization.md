@@ -27,8 +27,8 @@ The `Speed` value denotes the scrolling speed of the `Content` added as a backgr
 
 {% highlight c# %}
 
-using Xamarin.Forms;
 using Syncfusion.XForms.ParallaxView;
+using Syncfusion.ListView.XForms;
 
 namespace ParallaxView_GettingStarted
 {
@@ -38,15 +38,17 @@ namespace ParallaxView_GettingStarted
         public MainPage()
         {
             InitializeComponent();
-            SfParallaxView parallaxview = new SfParallaxView();
+            ParallaxViewModel view = new ParallaxViewModel();
+            BindingContext = view;
+            SfParallaxView parallax = new SfParallaxView();
             SfListView listview = new SfListView();
             Image image = new Image();
             Assembly assembly = typeof(MainPage).GetTypeInfo().Assembly;
             image.Source = ImageSource.FromResource("ParallaxView_GettingStarted.Images.ParallaxWallpaper.png", assembly);
-            parallaxview.Content = image;
-            parallaxview.Speed = 0.5;
-            listview.ItemsSource = viewmodel.Items;
-            parallaxview.Source = listview;
+            parallax.Content = image;
+            parallax.Speed = 0.5;
+            listview.ItemsSource = view.Items;
+            parallax.Source = listview;
         }
     }
 }
@@ -82,25 +84,30 @@ The orientation of the content scrolling can be customized to vertical or horizo
 
 {% highlight c# %}
 
-using Xamarin.Forms;
 using Syncfusion.XForms.ParallaxView;
+using Syncfusion.ListView.XForms;
 
 namespace ParallaxView_GettingStarted
 {
     public partial class MainPage : ContentPage
     {
+
         public MainPage()
         {
             InitializeComponent();
-            SfParallaxView parallaxview = new SfParallaxView();
+            ParallaxViewModel view = new ParallaxViewModel();
+            BindingContext = view;
+            SfParallaxView parallax = new SfParallaxView();
+            SfListView listview = new SfListView();
             Image image = new Image();
             Assembly assembly = typeof(MainPage).GetTypeInfo().Assembly;
             image.Source = ImageSource.FromResource("ParallaxView_GettingStarted.Images.ParallaxWallpaper.png", assembly);
-            parallaxview.Content = image;
-            parallaxview.Speed = 0.5;
-            parallaxview.Orientation = Syncfusion.XForms.ParallaxView.Orientation.Horizontal;
-            parallaxview.Source = listview;
-        }       
+            parallax.Content = image;
+            parallax.Speed = 0.5;
+            parallax.Orientation = Syncfusion.XForms.ParallaxView.Orientation.Horizontal;
+            listview.ItemsSource = view.Items;
+            parallax.Source = listview;
+        }
     }
 }
 

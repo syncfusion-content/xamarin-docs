@@ -575,6 +575,30 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ![Setting caption text for check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditorText.jpg)
 
+## Switch Editor
+
+In switch editor, [Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms) is loaded, and DataForm `Switch` editor supports bool data type property.
+
+To add `Switch` editor in DataForm, register the editor as `Switch` for the required property using the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
+
+{% tabs %}
+{% highlight c# %}
+
+       dataForm.RegisterEditor("CellularData", "Switch");
+       dataForm.RegisterEditor("AirplaneMode", "Switch");
+
+        [Display(Name ="Cellular Data")]
+        public bool CellularData { get; set; } = true;
+
+        [Display(Name = "Airplane Mode")]
+        public bool AirplaneMode { get; set; }
+ 
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting switch editor in Xamarin.Forms DataForm](SfDataForm_images/SwitchEditor.jpg)
+
 ## Drop down editor
 
 In the drop down editor, the [SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/overview) will be loaded.
@@ -641,7 +665,29 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Setting ItemsSource for drop down editor items in Xamarin.Forms DataForm](SfDataForm_images/Editors_DropDownItems.png)
+![Setting ItemsSource for drop down editor items in Xamarin.Forms DataForm](SfDataForm_images/Editors_DropDownItems.jpg)
+
+### Changing ItemsSource of combo box at run time
+
+You can also change the `ItemsSource` at runtime.
+
+{% tabs %}
+{% highlight c# %}
+private void Button_Click(object sender, EventArgs e)
+{
+    var dataFormItem = dataForm.ItemManager.DataFormItems["Name"];
+    if (dataFormItem.Name == "Name")
+    {
+        var list = new List<string>();
+        list.Add("Home");
+        list.Add("Food");
+        list.Add("Utilities");
+        list.Add("Education");
+        (dataFormItem as DataFormDropDownItem).ItemsSource = list;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
 ### Loading complex type property values in combo box
 

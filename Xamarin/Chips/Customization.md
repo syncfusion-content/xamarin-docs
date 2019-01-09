@@ -351,7 +351,7 @@ N> The default value of BackgroundColor is [`Color.Accent`].
 
 The [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BorderColor.html) property customizes the color of border in SfChip.
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 

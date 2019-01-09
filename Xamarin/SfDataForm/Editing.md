@@ -307,7 +307,7 @@ public class CustomSliderEditor : DataFormEditor<Slider>
     {
     }
 
-    protected override Slider OnCreateEditorView()
+    protected override Slider OnCreateEditorView(DataFormItem dataFormItem)
     {
         return new Slider();
     }

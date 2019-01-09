@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-# Theme support
+# Theming
 
 Theming is a set of resources which are used to provide the consistency look for schedule.
 You can modify the default appearance of schedule using this support. By default schedule have default theme resources and it’s located in `Syncfusion.Xamarin.Core` assembly. You need to merge them in your application’s resource to apply the theme.

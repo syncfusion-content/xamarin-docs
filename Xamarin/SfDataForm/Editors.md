@@ -691,9 +691,9 @@ private void Button_Click(object sender, EventArgs e)
 
 ### Loading complex type property values in combo box
 
-You can display the complex type property values in combo box editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for combo box editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem~DisplayMemberPath.html) and [SelectedValuePath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem~SelectedValuePath.html) property value DataFormPickerItem for complex type property.
+You can display the complex type property values in combobox editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for combobox editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem~DisplayMemberPath.html) and [SelectedValuePath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem~SelectedValuePath.html) property value DataFormPickerItem for complex type property.
 
-N> Class cannot be directly set as data type for combo box editor in this complex type scenario.
+N> Class cannot be directly set as data type for combobox editor in this complex type scenario.
 
 {% tabs %}
 {% highlight c# %}

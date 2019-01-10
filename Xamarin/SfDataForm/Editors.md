@@ -667,7 +667,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ![Setting ItemsSource for drop down editor items in Xamarin.Forms DataForm](SfDataForm_images/Editors_DropDownItems.jpg)
 
-### Changing ItemsSource of combo box at run time
+### Changing ItemsSource of SfComboBox at run time
 
 You can also change the `ItemsSource` at runtime.
 
@@ -689,9 +689,9 @@ private void Button_Click(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-### Loading complex type property values in combo box
+### Loading complex type property values in drop down editor
 
-You can display the complex type property values in combobox editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for combobox editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem~DisplayMemberPath.html) and [SelectedValuePath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem~SelectedValuePath.html) property value DataFormPickerItem for complex type property.
+You can display the complex type property values in combobox editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for drop down editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem~DisplayMemberPath.html) and [SelectedValuePath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem~SelectedValuePath.html) property value DataFormPickerItem for complex type property.
 
 N> Class cannot be directly set as data type for combobox editor in this complex type scenario.
 

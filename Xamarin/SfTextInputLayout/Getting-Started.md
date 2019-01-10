@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for Essential Xamarin.Forms Text Input Layout
+title: Getting Started with Syncfusion Text Input Layout
 description: How to initialze a text input layout with floating label.
 platform: xamarin
 control: SfTextInputLayout
@@ -15,7 +15,7 @@ This section explains the steps required to configure the text input layout cont
 
 Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org). To add the text input layout control to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
 
-![](Getting-Started_images/textInput_getting_img1.png)
+![Add Packages](Getting-Started_images/textInput_getting_img1.png)
 
 To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows).
 
@@ -143,7 +143,7 @@ The default translate animation for the hint can be disabled by setting the [Ena
 
 Run the project, and check if you get following output to make sure that the project has been configured properly to add the text input layout control.
 
-![](Getting-Started_images/hint.gif)
+![Adding hint](Getting-Started_images/hint.gif)
 
 ## Enabling password visibility toggle
 
@@ -172,5 +172,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![](Getting-Started_images/textInput_getting_img4.png)
-![](Getting-Started_images/textInput_getting_img5.png)
+![Enable password toggling image](Getting-Started_images/textInput_getting_img4.png)
+![Enable password toggling_input hidden](Getting-Started_images/textInput_getting_img5.png)
+
+You can find the complete getting started sample from this [link.]( https://s3.amazonaws.com/files2.syncfusion.com/Xamarin.Forms/Samples/TextInputLayout.zip)

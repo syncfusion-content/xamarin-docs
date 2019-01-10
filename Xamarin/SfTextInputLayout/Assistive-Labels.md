@@ -137,6 +137,7 @@ var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name";
 inputLayout.ContainerType = ContainerType.Outlined;
 inputLayout.ReserveSpaceForAssistiveLabels = false;
+inputLayout.InputView = new Entry(); 
 
 {% endhighlight %}
 

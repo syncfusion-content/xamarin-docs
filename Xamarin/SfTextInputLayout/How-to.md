@@ -42,7 +42,3 @@ inputLayout.InputView = new Entry() { Text = "John" };
 ![FocusedStrokeWidth img](How-to-images/FocusedStroke.png)
 
 ![UnfocusedStrokeWidth img](How-to-images/UnfocusedStroke.jpg)
-
->**NOTE**
-It is applicable for the bottom line and outline border when setting the container type to filled and outlined, respectively.
-

@@ -81,7 +81,9 @@ When setting the [OutlineCornerRadius](https://help.syncfusion.com/cr/cref_files
 <inputLayout:SfTextInputLayout
         Hint="Name" 
         ContainerType="Outlined"
-	    OutlineCornerRadius="8"/> 
+	    OutlineCornerRadius="8">
+		<Entry />
+</inputLayout:SfTextInputLayout>   
 			
 {% endhighlight %}
 
@@ -91,6 +93,7 @@ var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name";
 inputLayout.ContainerType = ContainerType.Outlined;
 inputLayout.OutlineCornerRadius = 8;
+inputLayout.InputView = new Entry(); 
 
 {% endhighlight %}
 

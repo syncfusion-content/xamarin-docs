@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Custom Header for Sncfusion Essential Xamarin.Forms SfTabView.
+title:  Custom Header for Syncfusion Essential Xamarin.Forms SfTabView.
 description: Custom Header in Syncfusion TabView control for Xamarin.Forms platform
 platform: Xamarin.Forms
 control: TabView

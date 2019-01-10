@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Header and Footer in SfListView
+title: Header and Footer in Syncfusion ListView
 description: Describes the Header and Footer features in SfListView.
 platform: xamarin
 control: SfListView

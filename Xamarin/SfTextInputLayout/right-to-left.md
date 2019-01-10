@@ -27,7 +27,9 @@ N> A specific platform setup is required to enable the right-to-left localizatio
             FlowDirection="RightToLeft"
 			ContainerType="Outlined"
 			Hint="اسم"  
-			HelperText="أدخل أسمك" />
+			HelperText="أدخل أسمك" >
+			<Entry />
+		</inputLayout:SfTextInputLayout>
     </StackLayout>
 
 </ContentPage>
@@ -39,6 +41,7 @@ textinputlayout.FlowDirection = FlowDirection.RightToLeft;
 textinputlayout.ContainerType = ContainerType.Outlined;
 textinputlayout.Hint = "اسم";
 textinputlayout.HelperText = "أدخل أسمك";
+textinputlayout.InputView = new Entry(); 
 
 {% endhighlight %}
 {% endtabs %}

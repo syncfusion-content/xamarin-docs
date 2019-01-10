@@ -15,7 +15,7 @@ This section explains the steps required to create chips and arrange them in a l
 
 Syncfusion components  for Xamarin.Forms are available in [nuget.org](https://www.nuget.org/). To add chips to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons/), and then install it.
 
-![Adding the Buttons nuget to sample](images/chip_packages/chip_packages.png)
+![Adding the Buttons nuget to sample](images/chip-packages/chip_packages.png)
 
 To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually refer the assemblies instead of using NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#chips) to know about the dependent assemblies for chips.
 
@@ -397,7 +397,7 @@ namespace Chips
 
 {% endtabs %}
 
-![ChipGroup sample with display member path and itemsSource demo](images/getting_started/getting_started.png)
+![ChipGroup sample with display member path and itemsSource demo](images/getting-started/getting_started.png)
 
 ## Set types of chip group
 The functionality of chips control differ based on its [Type](https://help.syncfusion.com/xamarin/chips/types) property.
@@ -530,4 +530,4 @@ namespace Chips
 
 {% endtabs %}
 
-![action typed chip group](images/action_type_chip/action_type_chip.png)
+![action typed chip group](images/action-type-chip/action_type_chip.png)

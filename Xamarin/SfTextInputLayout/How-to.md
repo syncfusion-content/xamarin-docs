@@ -21,7 +21,7 @@ The border stroke width (for [Outlined](https://help.syncfusion.com/cr/cref_file
         ContainerType="Outlined"
 	    FocusedStrokeWidth="4"
 	    UnfocusedStrokeWidth="2">
-        <Entry Text="John" />
+        <Entry />
 </inputLayout:SfTextInputLayout> 
 		
 {% endhighlight %}
@@ -33,7 +33,7 @@ inputLayout.Hint = "Name";
 inputLayout.ContainerType = ContainerType.Outlined;
 inputLayout.FocusedStrokeWidth = 4;
 inputLayout.UnfocusedStrokeWidth = 2;
-inputLayout.InputView = new Entry() { Text = "John" }; 
+inputLayout.InputView = new Entry(); 
 
 {% endhighlight %}
 

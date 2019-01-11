@@ -196,7 +196,7 @@ namespace SfListViewSample
 {% endhighlight %}
 {% endtabs %}
 
-You can download entire source code from [GitHub]().
+You can download entire source code from [GitHub](https://github.com/SyncfusionExamples/How-to-update-header-and-footer-height-based-on-font-size-at-runtime).
 
 ![Customize label font size for header and footer item](SfListView_images/SfListView_HeaderFooterFontSizeChange.png)
 

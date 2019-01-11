@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting in SfListView
+title: Sorting in Syncfusion ListView
 description: Describes about the sorting behavior in SfListView.
 platform: xamarin
 control: SfListView

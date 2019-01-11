@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Item Size Customization in SfListView
+title: Item Size Customization in Syncfusion ListView
 description: Describes the Item Size Customization in SfListView.
 platform: xamarin
 control: SfListView
@@ -80,7 +80,7 @@ You can download the entire source code of this demo [here](http://www.syncfusio
 
 ![AutoFit items](SfListView_images/AutoFit.jpg)
 
-## Updating the listviewitem size based on font at runtime
+## Updating the listview item size based on font at runtime
 
 ListView allows you to resize the item size based on the change in font size of the label element at runtime by calling [RefreshListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshListViewItem.html) method asynchronously when [SfListView.AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is Height.
 
@@ -136,7 +136,7 @@ ListView allows you to resize the header and footer item size based on the chang
     </Grid.RowDefinitions>
     <Button Text="Change FontSize" Command="{Binding Resize}" CommandParameter="{x:Reference listView}"/>
     <syncfusion:SfListView x:Name="listView" 
-                ItemsSource="{Binding contactsinfo}"
+                ItemsSource="{Binding Contacts}"
                 BackgroundColor="#FFE8E8EC"
                 AutoFitMode="Height">
                 <syncfusion:SfListView.HeaderTemplate>
@@ -154,7 +154,7 @@ ListView allows you to resize the header and footer item size based on the chang
                         <ViewCell>
                             <Grid >
                                 <Label Text="Contacts Count" FontSize="{Binding BindingContext.FontSize, Source={x:Reference listView}}"/>
-                                <Label Text="{Binding contactsinfo.Count}" FontSize="{Binding BindingContext.FontSize, Source={x:Reference listView}}"/>
+                                <Label Text="{Binding Contacts.Count}" FontSize="{Binding BindingContext.FontSize, Source={x:Reference listView}}"/>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

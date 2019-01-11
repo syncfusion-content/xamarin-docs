@@ -134,7 +134,7 @@ ListView allows you to resize the header and footer item size based on the chang
         <RowDefinition Height="50"/>
         <RowDefinition Height="*"/>
     </Grid.RowDefinitions>
-    <Button Text="Change FontSize" Command="{Binding Resize}" CommandParameter="{x:Reference listView}"/>
+    <Button Text="Change FontSize" Command="{Binding ResizeHeaderFooterCommand}" CommandParameter="{x:Reference listView}"/>
     <syncfusion:SfListView x:Name="listView" 
                 ItemsSource="{Binding Contacts}"
                 BackgroundColor="#FFE8E8EC"
@@ -167,14 +167,14 @@ namespace SfListViewSample
 {
     public class ContactsViewModel : INotifyPropertyChanged
     {
-        public Command Resize { get; set; }
+        public Command ResizeHeaderFooterCommand { get; set; }
         private double MaxPhone = 70;
         private double MinPhone = 20;
         private double MaxTablet = 100;
         private double MinTablet = 30;
         public ContactsViewModel()
         {
-           Resize = new Command(ResizeHeaderFooter);
+           ResizeHeaderFooterCommand = new Command(ResizeHeaderFooter);
         }
         private void ResizeHeaderFooter(object obj)
         {
@@ -184,20 +184,19 @@ namespace SfListViewSample
             if (FontSize >= maxFont)
             {
                 FontSize = minFont;
-                list.RefreshListViewItem(-1, -1, true);
             }
             else
             {
                 FontSize += 10;
-                list.RefreshListViewItem(-1, -1, true);
             }
+            list.RefreshListViewItem(-1, -1, true);
         }
     }
 }       
 {% endhighlight %}
 {% endtabs %}
 
-You can download entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HeaderFooterFontSize-1315751035).
+You can download entire source code from [GitHub]().
 
 ![Customize label font size for header and footer item](SfListView_images/SfListView_HeaderFooterFontSizeChange.png)
 

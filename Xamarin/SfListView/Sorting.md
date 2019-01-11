@@ -11,6 +11,8 @@ documentation: ug
 
 The SfListView supports sorting the data either in ascending or descending order by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property and by using the custom logic.
 
+N> When ItemsSource changed for ListView, SortDescriptors will be cleared by default. You need to add SortDescriptors again after changing ItemsSource if you want to retain sorting in listview.
+
 ## Programmatic sorting
 
 Sorting the data by creating the [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) with required property name and direction and adding it into the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property.

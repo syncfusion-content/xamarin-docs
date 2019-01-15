@@ -250,6 +250,8 @@ N> To use FontIcons, add respective FontFamily name in `info.plist` file under f
 
 ## Through ItemsSource and ItemTemplate
 
+Using ItemsSource any object can be given as item for RadialMenu. The view corresponding to the object can be set using the ItemTemplate property. The simple usage of ItemTemplate and ItemsSource to display a image and nick names of users is given below.
+
 {% tabs %}
 
 {% highkight xaml %}

@@ -277,6 +277,7 @@ N> To use FontIcons, add respective FontFamily name in `info.plist` file under f
 {% endhighlight %}
 
 {% highlight C# %}
+
     public partial class MainPage : ContentPage
     {
         public MainPage()
@@ -301,5 +302,6 @@ N> To use FontIcons, add respective FontFamily name in `info.plist` file under f
         public string NickName { get; set; }
     }
     
-    {% endhighlight %}
-    {% endtabs %}
+{% endhighlight %}
+
+{% endtabs %}

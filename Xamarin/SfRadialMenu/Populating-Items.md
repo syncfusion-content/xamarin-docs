@@ -247,3 +247,59 @@ void Handle_ItemTapped(object sender, Syncfusion.SfRadialMenu.XForms.ItemTappedE
 ![](images/populatingItems.png)
 
 N> To use FontIcons, add respective FontFamily name in `info.plist` file under fonts provided by application category.
+
+## Through ItemsSource and ItemTemplate
+
+{% tabs %}
+
+{% highkight xaml %}
+
+    <radialmenu:SfRadialMenu x:Name="radilaMenu" ItemWidth="30" ItemHeight="50" SeparatorThickness="2" SeparatorColor="#DDDDDD">
+        <radialmenu:SfRadialMenu.CenterButtonView>
+            <Grid WidthRequest="30" BackgroundColor="Transparent">
+                <Image Source="friendadd.png" 
+                       HeightRequest="35" 
+                       WidthRequest="35" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"/>
+            </Grid>
+        </radialmenu:SfRadialMenu.CenterButtonView>
+        <radialmenu:SfRadialMenu.ItemTemplate>
+             <DataTemplate>
+                <StackLayout>
+                    <Image Source="user.png" Margin="2,0" WidthRequest="25" HorizontalOptions="Center" />
+                    <Label HorizontalOptions="Center"  Text="{Binding NickName}"/>
+                </StackLayout>
+            </DataTemplate>
+        </radialmenu:SfRadialMenu.ItemTemplate>
+    </radialmenu:SfRadialMenu>
+    
+{% endhighlight %}
+
+{% highlight C# %}
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            this.BindingContext = this;
+            radilaMenu.ItemsSource = new List<User>()
+            {
+                new User(){NickName= "Alex"},
+                new User(){NickName= "Lee"},
+                new User(){NickName= "Ben"},
+                new User(){NickName= "Carl"},
+                new User(){NickName= "Yang"}
+            };
+        }
+
+        public List<User> UserList { get; set; }
+    }
+
+    public class User
+    {
+        public string NickName { get; set; }
+    }
+    
+    {% endhighlight %}
+    {% endtabs %}

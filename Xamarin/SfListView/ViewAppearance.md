@@ -869,7 +869,7 @@ Create a IsLoading boolean property in view model and bind it to the IsBusy prop
                              ItemsSource="{Binding ContactInfo}" 
                              ItemSize="110">
         </syncfusion:SfListView>
-        <busyIndicator:SfBusyIndicator x:Name="busyIndicator" 
+        <busyIndicator:SfBusyIndicator x:Name="busyIndicator" InputTransparent="True"
                                        AnimationType="SingleCircle" 
                                        IsBusy="{Binding IsLoading, Mode=TwoWay}" 
                                        TextColor="Magenta"
@@ -908,6 +908,8 @@ public class ViewModel : INotifyPropertyChanged
 }
 {% endhighlight %}
 {% endtabs %}
+
+N> When both `SfBusyIndicator` and `ListView` loaded with same row and column, you need to set `InputTransparent` as True to SfBusyindicator in order to pass touch interaction to listview in iOS platform.
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BusyIndicatorOnListView1412366667).
 

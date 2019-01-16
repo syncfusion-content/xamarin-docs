@@ -79,11 +79,11 @@ When setting the [OutlineCornerRadius](https://help.syncfusion.com/cr/cref_files
 {% highlight xaml %}
 
 <inputLayout:SfTextInputLayout
-        Hint="Name" 
-        ContainerType="Outlined"
-	    OutlineCornerRadius="8">
-		<Entry />
-</inputLayout:SfTextInputLayout>   
+    Hint="Name" 
+    ContainerType="Outlined"
+	OutlineCornerRadius="8">
+    <Entry />
+</inputLayout:SfTextInputLayout>  
 			
 {% endhighlight %}
 

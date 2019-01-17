@@ -201,7 +201,7 @@ SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { Progress
 {% endhighlight %}
 
 {% endtabs %} 
-![Multiple segments LinearProgressBar and CircularProgressBar image](overview_images/indeterminate.png)
+![Xamarin.Forms linear progress bar and circular progress bar visualized with multiple sequential task](overview_images/indeterminate.png)
 
 ## Apply colors
 
@@ -232,6 +232,6 @@ SfCircularProgressBar sfCircularProgressBar = new SfCircularProgressBar{Progress
 {% endhighlight %}
 
 {% endtabs %} 
-![Customized LinearProgressBar and CircularProgressBar image](overview_images/style.png)
+![Xamarin.Forms linear progress bar and circular progress bar with customized colors](overview_images/style.png)
 
 You can find the complete getting started sample here: [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar_GettingStarted-1542640562.zip).

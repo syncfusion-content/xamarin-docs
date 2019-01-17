@@ -205,7 +205,7 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 {% endtabs %}
 
-![SfNumericUpDown image](images/gettingstarted.png)
+![Xamarin.Forms Numeric Up-Down](images/gettingstarted.png)
 
 ## Structure
 

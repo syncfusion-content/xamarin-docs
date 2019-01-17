@@ -163,7 +163,7 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![NumericTextBox with value image](images/value.png)
+![Xamarin.Forms Numeric TextBox with value](images/value.png)
 
 ### Parsing the Value
 
@@ -220,7 +220,7 @@ this.Content = numericTextBox;
 
 N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
 
-![NumericTextBox with formatted value image](images/formatstring.png)
+![Xamarin.Forms Numeric TextBox with formatted value](images/formatstring.png)
 
 ### Colors
 
@@ -257,7 +257,7 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![NumericTextBox with text color image](images/textcolor.png)
+![Xamarin.Forms Numeric TextBox with text color customization](images/textcolor.png)
 
 #### BackgroundColor
 
@@ -283,7 +283,7 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![NumericTextBox with background color image](images/backgroundcolor.png)
+![Xamarin.Forms Numeric TextBox with background color customization](images/backgroundcolor.png)
 
 #### BorderColor
 
@@ -308,7 +308,7 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![NumericTextBox with border color image](images/bordercolor.png)
+![Xamarin.Forms Numeric TextBox with border color customization](images/bordercolor.png)
 
 #### WatermarkColor
 
@@ -334,7 +334,7 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![NumericTextBox with watermark color image](images/watermarkcolor.png)
+![Xamarin.Forms Numeric TextBox with watermark color customization](images/watermarkcolor.png)
 
 ### Font Settings
 
@@ -378,6 +378,6 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![NumericTextBox with font attributes image](images/textformat.png)
+![Xamarin.Forms Numeric TextBox with custom font attributes](images/textformat.png)
 
 You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/NumericTextBox_GettingStarted1501853434.zip)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Essential Xamarin.Forms SfProgressBar
+title: Getting Started for Syncfusion Essential Xamarin.Forms Progress Bar
 description: Getting Started.
 platform: xamarin
 control: ProgressBar

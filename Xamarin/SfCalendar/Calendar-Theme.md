@@ -45,7 +45,7 @@ In the below code you can see the default color and key value for the default re
 {% endhighlight %}
 {% endtabs %} 
 
-We can apply the default theme (light theme) or customized theme to calendar.
+You can apply the default theme (light theme) or customized theme to calendar.
 
 ## Default theme (light theme)
 

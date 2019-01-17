@@ -27,7 +27,7 @@ N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 Create a new cross platform application for Xamarin.Forms.Portable in the Visual Studio with the project name "GettingStarted" and refer the above mentioned assemblies to the respective projects.
 
-An additional step is required to render the SfPdfViewer control in iOS project. You need to create an instance of the SfPdfDocumentViewRenderer class within FinishedLaunching method of AppDelegate class in iOS project as shown below
+An additional step is required to render the SfPdfViewer control in `iOS` project. You need to call the `Syncfusion.SfPdfViewer.XForms.iOS.SfPdfDocumentViewRenderer.Init()` and `Syncfusion.SfRangeSlider.XForms.iOS.SfRangeSliderRenderer.Init();` in the `FinishedLaunching` overridden method of the `AppDelegate` class after the Xamarin.Forms Framework has been initialized and before the `LoadApplication` is called, as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -35,8 +35,9 @@ An additional step is required to render the SfPdfViewer control in iOS project.
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     global::Xamarin.Forms.Forms.Init();
+    Syncfusion.SfPdfViewer.XForms.iOS.SfPdfDocumentViewRenderer.Init();
+    Syncfusion.SfRangeSlider.XForms.iOS.SfRangeSliderRenderer.Init();
     LoadApplication(new App());
-    new SfPdfDocumentViewRenderer();
     return base.FinishedLaunching(app, options);
 }
 

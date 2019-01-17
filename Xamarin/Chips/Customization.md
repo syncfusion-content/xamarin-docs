@@ -70,7 +70,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with CloseButton](images/customization_images/chip_showclosebutton_image.png)
+![SfChip with CloseButton](images/customization-images/chip_showclosebutton_image.png)
 
 N> The default value of ShowCloseButton is [`false`].
 
@@ -136,7 +136,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with ShowSelectionIndicator](images/customization_images/chip_showselectionindicator_image.png)
+![SfChip with ShowSelectionIndicator](images/customization-images/chip_showselectionindicator_image.png)
 
 N> The default value of ShowSelectionIndicator is [`false`].
 
@@ -202,7 +202,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with CloseButtonColor](images/customization_images/chip_closebuttoncolor_image.png)
+![SfChip with CloseButtonColor](images/customization-images/chip_closebuttoncolor_image.png)
 
 N> The default value of CloseButtonColor is [`Color.FromHex("#6b6b6b")`].
 
@@ -272,7 +272,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with SelectionIndicatorColor](images/customization_images/chip_selectionindicatorcolor_image.png)
+![SfChip with SelectionIndicatorColor](images/customization-images/chip_selectionindicatorcolor_image.png)
 
 N> The default value of SelectionIndicatorColor is [`Color.FromHex("#6b6b6b")`].
 
@@ -343,7 +343,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with BackgroundColor](images/customization_images/chip_chipbackgroundcolor_image.png)
+![SfChip with BackgroundColor](images/customization-images/chip_chipbackgroundcolor_image.png)
 
 N> The default value of BackgroundColor is [`Color.Accent`].
 
@@ -351,7 +351,7 @@ N> The default value of BackgroundColor is [`Color.Accent`].
 
 The [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BorderColor.html) property customizes the color of border in SfChip.
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -416,7 +416,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with BorderColor](images/customization_images/chip_bordercolor_image.png)
+![SfChip with BorderColor](images/customization-images/chip_bordercolor_image.png)
 
 N> The default value of BorderColor is [`Color.Transparent`].
 
@@ -489,7 +489,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with BorderWidth](images/customization_images/chip_borderwidth_image.png)
+![SfChip with BorderWidth](images/customization-images/chip_borderwidth_image.png)
 
  N> Default value of BorderWidth 
     Android : [`0d`]
@@ -567,7 +567,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with CornerRadius](images/customization_images/chip_cornerradius_image.png)
+![SfChip with CornerRadius](images/customization-images/chip_cornerradius_image.png)
 
 N> The default value of CornerRadius is [`Thickness(0)`].
 
@@ -637,7 +637,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with FontAttributes](images/customization_images/chip_fontattribute_image.png)
+![SfChip with FontAttributes](images/customization-images/chip_fontattribute_image.png)
 
 ## FontFamily
 
@@ -706,7 +706,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with FontFamily](images/customization_images/chipfontfamily_image.png)
+![SfChip with FontFamily](images/customization-images/chipfontfamily_image.png)
 
 ## FontSize
 
@@ -775,7 +775,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with FontSize](images/customization_images/chip_fontsize_image.png)
+![SfChip with FontSize](images/customization-images/chip_fontsize_image.png)
 
 N> Default Value of FontSize 
    Android : [`14d`]
@@ -851,7 +851,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with TextColor](images/customization_images/chip_textcolor_image.png)
+![SfChip with TextColor](images/customization-images/chip_textcolor_image.png)
 
 N> The default value of TextColor is [`Color.White`].
 
@@ -928,7 +928,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with TextAlignment](images/customization_images/chip_textalignment_image.png)
+![SfChip with TextAlignment](images/customization-images/chip_textalignment_image.png)
 
 N> The default values of HorizontalTextAlignment and VerticalTextAlignment are [`TextAlignment.Center`].
 
@@ -1001,7 +1001,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with ShowIcon](images/customization_images/chip_imagesource_image.png)
+![SfChip with ShowIcon](images/customization-images/chip_imagesource_image.png)
 
 N> The default value of ShowIcon is [`false`].
 
@@ -1077,7 +1077,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with ImageSource](images/customization_images/chip_imagesource_image.png)
+![SfChip with ImageSource](images/customization-images/chip_imagesource_image.png)
 
 ## ImageWidth
 
@@ -1152,7 +1152,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with ImageWidth](images/customization_images/chip_imagewidth_image.png)
+![SfChip with ImageWidth](images/customization-images/chip_imagewidth_image.png)
 
 N> The default value of ImageWidth is [`32`].
 
@@ -1228,7 +1228,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChip with ImageAlignment](images/customization_images/chip_imagealignment_image.png)
+![SfChip with ImageAlignment](images/customization-images/chip_imagealignment_image.png)
 
 N> The default value of ImageAlignment is [`Alignment.Start`].
 
@@ -1315,7 +1315,7 @@ public class CommandDemoViewModel : INotifyPropertyChanged
 
 {% endtabs %}
 
-![SfChip with Command](images/customization_images/chip_command_image.png)
+![SfChip with Command](images/customization-images/chip_command_image.png)
 
 N> The default value of Command is [`null`].
 
@@ -1410,7 +1410,7 @@ namespace Chips
 
 {% endtabs %}
 
-![SfChipGroup with InputView](images/customization_images/chipgroup_inputview_image.png)
+![SfChipGroup with InputView](images/customization-images/chipgroup_inputview_image.png)
 
 N> The InputView is visible only in the Input type. The default value of InputView is [`null`].
 
@@ -1488,7 +1488,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChipGroup with SelectedChipBackgroundColor](images/customization_images/chipgroup_selectedchipbackgroundcolor_image.png)
+![SfChipGroup with SelectedChipBackgroundColor](images/customization-images/chipgroup_selectedchipbackgroundcolor_image.png)
 
 N> The default value of SelectedChipBackgroundColor is [`Color.Accent`].
 
@@ -1568,7 +1568,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChipGroup with SelectedChipTextColor](images/customization_images/chipgroup_selectedchiptextcolor_image.png)
+![SfChipGroup with SelectedChipTextColor](images/customization-images/chipgroup_selectedchiptextcolor_image.png)
 
 N> The default value of SelectedChipTextColor is [`Color.White`].
 
@@ -1646,7 +1646,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChipGroup with ChipBackgroundColor](images/customization_images/chipgroup_chipbackgroundcolor_image.png)
+![SfChipGroup with ChipBackgroundColor](images/customization-images/chipgroup_chipbackgroundcolor_image.png)
 
 N> The default value of ChipBackgroundColor is [`Color.FromHex("#E0E0E0")`].
 
@@ -1726,7 +1726,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChipGroup with ChipBorderColor](images/customization_images/chipgroup_chipbordercolor_image.png)
+![SfChipGroup with ChipBorderColor](images/customization-images/chipgroup_chipbordercolor_image.png)
 
 N> The default value of ChipBorderColor is [`Color.Transparent`].
 
@@ -1812,7 +1812,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChipGroup with ChipTextColor](images/customization_images/chipgroup_chiptextcolor_image.png)
+![SfChipGroup with ChipTextColor](images/customization-images/chipgroup_chiptextcolor_image.png)
 
 N> The default value of ChipTextColor is [`Color.FromHex("#212121")`].
 
@@ -1898,7 +1898,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChipGroup with ChipTextSize](images/customization_images/chipgroup_chiptextsize_image.png)
+![SfChipGroup with ChipTextSize](images/customization-images/chipgroup_chiptextsize_image.png)
 
 N> The default value of ChipTextSize is [`14d`].
 
@@ -1984,7 +1984,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChipGroup with ChipPadding](images/customization_images/chipgroup_chippadding_image.png)
+![SfChipGroup with ChipPadding](images/customization-images/chipgroup_chippadding_image.png)
 	
 N> The default value of ChipPadding is [`Thickness(5d, 0, 0, 0)`].
 
@@ -2072,7 +2072,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChipGroup with ChipBorderWidth](images/customization_images/chipgroup_chipborderwidth_image.png)
+![SfChipGroup with ChipBorderWidth](images/customization-images/chipgroup_chipborderwidth_image.png)
 
 N> The default value of ChipBorderWidth is [`0d`].
 
@@ -2158,7 +2158,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChipGroup with ItemHeight](images/customization_images/chipgroup_itemheight_image.png)
+![SfChipGroup with ItemHeight](images/customization-images/chipgroup_itemheight_image.png)
 
 N> The default value of ItemHeight is [`double.NaN`].
 
@@ -2301,7 +2301,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChipGroup with ShowIcon](images/customization_images/chipgroup_showicon_image.png)
+![SfChipGroup with ShowIcon](images/customization-images/chipgroup_showicon_image.png)
 
 ## CloseButtonColor
 
@@ -2486,7 +2486,7 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChipGroup with SelectionIndicatorColor](images/customization_images/chipgroup_selectionindicatorcolor_image.png)
+![SfChipGroup with SelectionIndicatorColor](images/customization-images/chipgroup_selectionindicatorcolor_image.png)
 
 N> The default value of SelectionIndicatorColor is [`Color.White`].
 
@@ -2636,7 +2636,6 @@ namespace ChipCustomization
 
 {% endtabs %}
 
-![SfChipGroup with ChipImageWidth](images/customization_images/chipgroup_chipimagewidth_image.png)
+![SfChipGroup with ChipImageWidth](images/customization-images/chipgroup_chipimagewidth_image.png)
 
 N> The default value of ChipImageWidth is [`26`].
-

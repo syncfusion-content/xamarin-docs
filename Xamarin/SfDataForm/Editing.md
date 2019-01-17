@@ -202,7 +202,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[DropDownControl](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
+{{'[SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -307,7 +307,7 @@ public class CustomSliderEditor : DataFormEditor<Slider>
     {
     }
 
-    protected override Slider OnCreateEditorView()
+    protected override Slider OnCreateEditorView(DataFormItem dataFormItem)
     {
         return new Slider();
     }

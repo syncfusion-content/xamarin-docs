@@ -200,7 +200,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[DropDownControl](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
+{{'[SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -575,13 +575,37 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ![Setting caption text for check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditorText.jpg)
 
+## Switch Editor
+
+In switch editor, [Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms) is loaded, and DataForm `Switch` editor supports bool data type property.
+
+To add `Switch` editor in DataForm, register the editor as `Switch` for the required property using the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
+
+{% tabs %}
+{% highlight c# %}
+
+       dataForm.RegisterEditor("CellularData", "Switch");
+       dataForm.RegisterEditor("AirplaneMode", "Switch");
+
+        [Display(Name ="Cellular Data")]
+        public bool CellularData { get; set; } = true;
+
+        [Display(Name = "Airplane Mode")]
+        public bool AirplaneMode { get; set; }
+ 
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting switch editor in Xamarin.Forms DataForm](SfDataForm_images/SwitchEditor.jpg)
+
 ## Drop down editor
 
-In the drop down editor, the DropDownControl will be loaded.
+In the drop down editor, the [SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/overview) will be loaded.
 
-### Customizing ItemsSource of DropDownControl
+### Customizing ItemsSource of SfComboBox
 
-By default, the `ItemsSource` for DropDownControl is auto-generated for enum types and collection type properties. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
+By default, the `ItemsSource` for SfComboBox is auto-generated for enum types and collection type properties. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
 
 #### Using SourceProvider
 
@@ -641,9 +665,88 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Setting ItemsSource for drop down editor items in Xamarin.Forms DataForm](SfDataForm_images/Editors_DropDownItems.png)
+![Setting ItemsSource for drop down editor items in Xamarin.Forms DataForm](SfDataForm_images/Editors_DropDownItems.jpg)
 
-N> `DropDownEditor` not supported in `Xamarin.Forms.iOS`.
+### Changing ItemsSource of SfComboBox at run time
+
+You can also change the `ItemsSource` at runtime.
+
+{% tabs %}
+{% highlight c# %}
+private void Button_Click(object sender, EventArgs e)
+{
+    var dataFormItem = dataForm.ItemManager.DataFormItems["Name"];
+    if (dataFormItem.Name == "Name")
+    {
+        var list = new List<string>();
+        list.Add("Home");
+        list.Add("Food");
+        list.Add("Utilities");
+        list.Add("Education");
+        (dataFormItem as DataFormDropDownItem).ItemsSource = list;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Loading complex type property values in drop down editor
+
+You can display the complex type property values in drop down editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for drop down editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem~DisplayMemberPath.html) and [SelectedValuePath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem~SelectedValuePath.html) property value of DataFormDropDownItem for complex type property.
+
+N> Class cannot be directly set as data type for drop down editor in this complex type scenario.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.SourceProvider = new SourceProviderExt();
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.RegisterEditor("City", "DropDown");
+ 
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "City")
+    {
+        if (Device.RuntimePlatform != Device.UWP)
+        {
+            (e.DataFormItem as DataFormDropDownItem).DisplayMemberPath = "City";
+            (e.DataFormItem as DataFormDropDownItem).SelectedValuePath = "PostalCode";
+        }
+    }
+} 
+ 
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+        if (sourceName == "City")
+        {
+            List<Address> details = new List<Address>();
+            details.Add(new Address() { City = "Chennai", PostalCode = 1 });
+            details.Add(new Address() { City = "Paris", PostalCode = 2 });
+            details.Add(new Address() { City = "Vatican", PostalCode = 3 });
+
+            return details;
+        }
+       return new List<string>();
+    }
+}
+
+public class ContactInfo
+{
+    [Display(Name ="First Name")]
+    public String FirstName { get; set; } 
+    public string City { get; set; }
+}
+
+public class Address
+{
+    public int PostalCode { get; set; }
+    public string City { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Loading complex type property values for drop down editor in Xamarin.Forms DataForm](SfDataForm_images/ComplexPropertyComboBox.jpg)
 
 ## Picker editor
 

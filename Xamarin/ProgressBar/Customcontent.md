@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Content for Syncfusion Essential Xamarin.Forms ProgressBar
+title: Custom Content for Syncfusion Essential Xamarin.Forms Progress Bar
 platform: xamarin
 control: ProgressBar
 documentation: ug

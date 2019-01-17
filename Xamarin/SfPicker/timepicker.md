@@ -339,7 +339,7 @@ date.IsOpen = !date.IsOpen;
 
 The following screenshot illustrates the output of the above code snippets.
 
-![TimePicker image](images/timepicker_img1.jpeg)
+![Xamarin.Forms Picker](images/timepicker_img1.jpeg)
 
 You can download the TimePicker sample for reference from the following link.
 

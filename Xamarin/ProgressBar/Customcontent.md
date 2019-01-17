@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Content
+title: Custom Content for Syncfusion Essential Xamarin.Forms Progress Bar
 platform: xamarin
 control: ProgressBar
 documentation: ug
@@ -34,7 +34,7 @@ The following code sample demonstrates how to add custom text content.
 
         <Label x:Name="CustomContentProgressBarLabel" Grid.Row="0"
 
-                TextColor="#007cee" Text="{Binding Progress,StringFormat='{0}%'} HorizontalTextAlignment="Center" VerticalTextAlignment="End">                        
+                TextColor="#007cee" Text="{Binding Progress,StringFormat='{0}%'}" BindingContext="{x:Reference CustomContentCircularProgressBar}"  HorizontalTextAlignment="Center" VerticalTextAlignment="End">                        
 
         </Label>
 
@@ -108,7 +108,7 @@ circularProgressBar.Content = grid;
 
 {% endtabs %} 
 
-![](overview_images/customcontent.png)
+![Xamarin.Forms Circular Progress Bar with Custom content](overview_images/customcontent.png)
 
 By default, the progress value will be displayed at the center. You can hide the label in the circular progress bar by setting the [`ShowProgressValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~ShowProgressValue.html) property to false. 
 

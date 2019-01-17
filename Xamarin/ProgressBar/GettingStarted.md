@@ -148,7 +148,7 @@ N> By default, the value of progress should be specified between 0 and 100. To s
 
 Run the project, and check if you get following output to make sure that the project has been configured properly to add the progress bar.
 
-![LinearProgressBar and CircularProgressBar image](overview_images/progressbar.png)
+![Xamarin.Forms linear progress bar and circular progress bar](overview_images/progressbar.png)
 
 ## Enabling indeterminate state
 

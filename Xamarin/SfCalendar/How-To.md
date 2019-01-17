@@ -11,7 +11,7 @@ documentation: ug
 
 ## How to Perform an Operation while a Calendar Cell is Tapped?
 
-We can perform operation while the Calendar cell is Tapped using `CalendarTapped` event. CalendarTapped event returns the date selected and the Appointments that are associated with the date selected.
+We can perform operation while the Calendar cell is Tapped using [CalendarTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnCalendarTapped_EV.html) event. CalendarTapped event returns the date selected and the Appointments that are associated with the date selected.
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ void Handle_OnCalendarTapped(object sender, Syncfusion.SfCalendar.XForms.Calenda
 
 ## How to Perform an Operation when the Selected Date Get Changed?
 
-We can perform an operation when the selected date get changed using `SelectionChanged` event which returns the dates selected and dates deselected from the `SfCalendar`.
+We can perform an operation when the selected date get changed using [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionChanged_EV.html) event which returns the dates selected and dates deselected from the `SfCalendar`.
 
 <table>
 <tr>
@@ -101,7 +101,7 @@ void Handle_SelectionChanged(object sender, Syncfusion.SfCalendar.XForms.Selecti
 
 ## How to Perform an Operation when Navigate to Next Month?
 
-User defined operation can be performed using `MonthChanged` event when navigating to next month. This event returns the details about current value and previous value of month.
+User defined operation can be performed using [MonthChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MonthChanged_EV.html) event when navigating to next month. This event returns the details about current value and previous value of month.
 
 <table>
 <tr>
@@ -142,7 +142,7 @@ void Handle_MonthChanged(object sender, Syncfusion.SfCalendar.XForms.MonthChange
 
 ## How to Perform an Operation while Dealing with Appointments?
 
-`InlineToggled` event returns the selected date along with the appointments it carries. Using this event user can perform operation while dealing with appointments.
+[InlineToggled](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~InlineToggled_EV.html) event returns the selected date along with the appointments it carries. Using this event user can perform operation while dealing with appointments.
 
 <table>
 <tr>
@@ -187,7 +187,7 @@ void Handle_InlineToggled(object sender, Syncfusion.SfCalendar.XForms.InlineTogg
 
 ## How to Customize Cell or Month View?
 
-`OnMonthCellLoaded` event allows us to customize `SfCalendar` control. It returns MonthCell args
+[OnMonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnMonthCellLoaded_EV.html) event allows us to customize `SfCalendar` control. It returns MonthCell args
 
 <table>
 <tr>
@@ -230,7 +230,7 @@ void Handle_OnMonthCellLoaded(object sender, Syncfusion.SfCalendar.XForms.MonthC
 
 ## How to Perform the Operation while long pressing the dateCell?
 
-`OnDateCellHolding` event returns the long pressed date along with the `SfCalendar` it carries. Using this event user can perform operation while long pressing the date.
+[OnDateCellHolding](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnDateCellHolding_EV.html) event returns the long pressed date along with the `SfCalendar` it carries. Using this event user can perform operation while long pressing the date.
 
 
 <table>
@@ -277,7 +277,7 @@ calendar.HeightRequest = 200;
 
 ## How to Customize the SfCalendar Header?
 
-`HeaderView` property of SfCalendar allows us to customize `SfCalendar` Header. It returns custom view for SfCalendarHeader
+[HeaderView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~HeaderView.html) property of SfCalendar allows us to customize `SfCalendar` Header. It returns custom view for SfCalendarHeader
 
 <table>
 <tr>
@@ -306,7 +306,7 @@ calendar.HeightRequest = 200;
 
 ## How to enable or disable the YearView in SfCalendar?
 
-`ShowYearView` property of `SfCalendar` allows us to enable and disable the  YearView of `SfCalendar`. The default value of ShowYearView is true.
+[ShowYearView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowYearView.html) property of `SfCalendar` allows us to enable and disable the  YearView of `SfCalendar`. The default value of ShowYearView is true.
 
 <table>
 <tr>
@@ -331,7 +331,7 @@ calendar.HeightRequest = 200;
 
 ## How to enable or disable the Horizontal and Vertical cell grid lines in SfCalendar?
 
-`CellGridOptions` property of MonthViewSettings allows us to enable and disable the horizontal and vertical border lines of `SfCalendar`. 
+[CellGridOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellGridOptions.html) property of MonthViewSettings allows us to enable and disable the horizontal and vertical border lines of `SfCalendar`. 
 
 <table>
 <tr>

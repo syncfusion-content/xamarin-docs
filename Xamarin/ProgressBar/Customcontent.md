@@ -108,7 +108,7 @@ circularProgressBar.Content = grid;
 
 {% endtabs %} 
 
-![Custom conten with circularProgressBar](overview_images/customcontent.png)
+![Xamarin.Forms Circular Progress Bar with Custom content](overview_images/customcontent.png)
 
 By default, the progress value will be displayed at the center. You can hide the label in the circular progress bar by setting the [`ShowProgressValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfCircularProgressBar~ShowProgressValue.html) property to false. 
 

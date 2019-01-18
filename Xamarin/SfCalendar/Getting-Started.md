@@ -126,7 +126,7 @@ public partial class CalendarPage : ContentPage
 
 ## Set Blackout Dates
 
-`SfCalendar` control provides option to black out the desired date which is in disabled state among the visible dates. Here, holidays are blacked out in the form which cannot be selected by the user. To black out the holiday, add them into `BlackoutDates` list. 
+`SfCalendar` control provides option to black out the desired date which is in disabled state among the visible dates. Here, holidays are blacked out in the form which cannot be selected by the user. To black out the holiday, add them into [BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html) list. 
 
 {% highlight c# %}
 
@@ -168,7 +168,7 @@ calendar.SelectionMode=SelectionMode.MultiSelection;
 
 `SfCalendar` allows to select dates that falls between certain range of dates. Here, restrict user to select dates only in current year.
 
-N> To specify the range, set start date and end date to `MinDate` and `MaxDate` properties respectively.
+N> To specify the range, set start date and end date to [MinDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaxDate.html) properties respectively.
 
 {% highlight c# %}
 

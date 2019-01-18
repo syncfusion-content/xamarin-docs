@@ -13,13 +13,13 @@ documentation: ug
 
 Calendar's events can be added to `SfCalendar` using the following ways. [CalendarEventCollection](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.CalendarEventCollection.html) holds the details about the events to be rendered in calendar. Events contains the following attributes
 
-1. StartTime
+1. [StartTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.CalendarInlineEvent~StartTime.html)
 
-2. EndTime
+2. [EndTime](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.CalendarInlineEvent~EndTime.html)
 
-3. Subject
+3. [Subject](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.CalendarInlineEvent~Subject.html)
 
-4. Color
+4. [Color](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.CalendarInlineEvent~Color.html)
 
 Finally add this collection of `CalendarInlineEvents` into [DataSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~DataSource.html) of `SfCalendar`. The following code example will help to create an appointments on calendar's date. For events to be listed for a particular day, enable the inline feature in month view cell.
 

@@ -244,7 +244,7 @@ void Handle_ItemTapped(object sender, Syncfusion.SfRadialMenu.XForms.ItemTappedE
 	}
 {% endhighlight %}
 
-![](images/populatingItems.png)
+![SfRadialMenu with Items](images/populatingItems.png)
 
 N> To use FontIcons, add respective FontFamily name in `info.plist` file under fonts provided by application category.
 
@@ -256,7 +256,7 @@ Using ItemsSource, objects of any class can be given as items for SfRadialMenu. 
 
 {% highkight xaml %}
 
-    <radialmenu:SfRadialMenu x:Name="radilaMenu" 
+    <radialmenu:SfRadialMenu x:Name="radialMenu" 
         ItemWidth="30" ItemHeight="50" 
         SeparatorThickness="2" 
         SeparatorColor="#DDDDDD">
@@ -289,7 +289,7 @@ Using ItemsSource, objects of any class can be given as items for SfRadialMenu. 
         {
             InitializeComponent();
             this.BindingContext = this;
-            radilaMenu.ItemsSource = new List<string>()
+            radialMenu.ItemsSource = new List<string>()
             {
                 "Alex",
                 "Lee",

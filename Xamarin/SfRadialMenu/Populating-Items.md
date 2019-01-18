@@ -250,15 +250,18 @@ N> To use FontIcons, add respective FontFamily name in `info.plist` file under f
 
 ## Through ItemsSource and ItemTemplate
 
-Using ItemsSource any object can be given as item for RadialMenu. The view corresponding to the object can be set using the ItemTemplate property. The simple usage of ItemTemplate and ItemsSource to display a image and nick names of users is given below.
+Using ItemsSource object of any class can be given as item for SfRadialMenu. The view corresponding to the object can be set using the ItemTemplate property. The simple usage of ItemTemplate and ItemsSource to display a default image and name of users is given below.
 
 {% tabs %}
 
 {% highkight xaml %}
 
-    <radialmenu:SfRadialMenu x:Name="radilaMenu" ItemWidth="30" ItemHeight="50" SeparatorThickness="2" SeparatorColor="#DDDDDD">
+    <radialmenu:SfRadialMenu x:Name="radilaMenu" 
+        ItemWidth="30" ItemHeight="50" 
+        SeparatorThickness="2" 
+        SeparatorColor="#DDDDDD">
         <radialmenu:SfRadialMenu.CenterButtonView>
-            <Grid WidthRequest="30" BackgroundColor="Transparent">
+            <Grid WidthRequest="35" BackgroundColor="Transparent">
                 <Image Source="friendadd.png" 
                        HeightRequest="35" 
                        WidthRequest="35" 
@@ -270,7 +273,7 @@ Using ItemsSource any object can be given as item for RadialMenu. The view corre
              <DataTemplate>
                 <StackLayout>
                     <Image Source="user.png" Margin="2,0" WidthRequest="25" HorizontalOptions="Center" />
-                    <Label HorizontalOptions="Center"  Text="{Binding NickName}"/>
+                    <Label HorizontalOptions="Center"  Text="{Binding}"/>
                 </StackLayout>
             </DataTemplate>
         </radialmenu:SfRadialMenu.ItemTemplate>
@@ -286,24 +289,17 @@ Using ItemsSource any object can be given as item for RadialMenu. The view corre
         {
             InitializeComponent();
             this.BindingContext = this;
-            radilaMenu.ItemsSource = new List<User>()
+            radilaMenu.ItemsSource = new List<string>()
             {
-                new User(){NickName= "Alex"},
-                new User(){NickName= "Lee"},
-                new User(){NickName= "Ben"},
-                new User(){NickName= "Carl"},
-                new User(){NickName= "Yang"}
+                "Alex",
+                "Lee",
+                "Ben",
+                "Carl",
+                "Yang"
             };
         }
-
-        public List<User> UserList { get; set; }
     }
 
-    public class User
-    {
-        public string NickName { get; set; }
-    }
-    
 {% endhighlight %}
 
 {% endtabs %}

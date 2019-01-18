@@ -250,7 +250,7 @@ N> To use FontIcons, add respective FontFamily name in `info.plist` file under f
 
 ## Through ItemsSource and ItemTemplate
 
-Using ItemsSource object of any class can be given as item for SfRadialMenu. The view corresponding to the object can be set using the ItemTemplate property. The simple usage of ItemTemplate and ItemsSource to display a default image and name of users is given below.
+Using ItemsSource, objects of any class can be given as items for SfRadialMenu. The views corresponding to the objects can be set using the ItemTemplate property. The simple usage of ItemTemplate and ItemsSource to display a default image and name of users is given below.
 
 {% tabs %}
 

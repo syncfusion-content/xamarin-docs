@@ -9,7 +9,7 @@ documentation: ug
 
 # View of SfCalendar
 
-`SfCalendar` control provides two types of views to display dates such as month view and year view. It can be assigned to the `SfCalendar` control by using `ViewMode` property.Based on the user’s preference `SfCalendar` can be viewed in any of the available two types.
+`SfCalendar` control provides two types of views to display dates such as month view and year view. It can be assigned to the `SfCalendar` control by using [ViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ViewMode.html) property.Based on the user’s preference `SfCalendar` can be viewed in any of the available two types.
 
 N> By default SfCalendar control is assigned with month view. 
 
@@ -17,19 +17,19 @@ N> By default SfCalendar control is assigned with month view.
 
 This displays entire dates of a particular month, by default current month will be displayed on loading. The current date is provided with separate color different from the rest of the dates color in a month. The events availability will be denoted within the cell based on its duration.
 
-The dates in month view can be selected by three ways such as single, multiple and range which can be modified using `SelectionMode`
+The dates in month view can be selected by three ways such as single, multiple and range which can be modified using [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html)
 
 ### Customization of SfCalendar's dates in MonthView
 
-We can customize the calendar view in monthView mode by using `MonthViewSettings`. 
+We can customize the calendar view in monthView mode by using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html). 
 
-* Current day text color can be modified using `TodayTextColor`.
+* Current day text color can be modified using [TodayTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~TodayTextColor.html).
 
-* It also has API `MonthLabelSettings` to change the date text size, day text size and format options.
+* It also has API [MonthLabelSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthLabelSettings.html) to change the date text size, day text size and format options.
 
-* The background color of the inline view can be modified using `InlineBackgroundColor` property.
+* The background color of the inline view can be modified using [InlineBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~InlineBackgroundColor.html) property.
 
-* The BlackOutDate color can be modified with `BlackOutColor` property.
+* The BlackOutDate color can be modified with [BlackOutColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BlackoutColor.html) property.
 
 {% tabs %}
 
@@ -91,7 +91,7 @@ N> Similar way there are many settings available to modify Text and Background c
 
 ## YearView
 
-This displays entire dates/month of a particular year, by default current year will be displayed on loading. The Years can be changed by swiping back and forth or `Forward` and `Backward` methods. The Months can be navigated quickly by selecting on the particular month in year view.
+This displays entire dates/month of a particular year, by default current year will be displayed on loading. The Years can be changed by swiping back and forth or [Forward](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Forward.html) and [Backward](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Backward.html) methods. The Months can be navigated quickly by selecting on the particular month in year view.
 
 {% tabs %}
 
@@ -115,9 +115,9 @@ this.Content = calendar;
 
 ### Customization of SfCalendar's dates in YearView
 
-We can customize the calendar view in yearView mode by using `YearViewSettings`. 
+We can customize the calendar view in yearView mode by using [YearViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings.html). 
 
-*  date text color can be modified using `DateTextColor`.
+*  date text color can be modified using [DateTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~DateTextColor.html).
 
 * We can also customize the header, monthLayout in yearView 's textColor and background color.
 

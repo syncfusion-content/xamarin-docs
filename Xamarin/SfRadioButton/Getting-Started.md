@@ -159,4 +159,4 @@ N>`SfRadioButtons` are mutually exclusive among them when they are defined withi
 
 ![Xamarin.Forms Radio Button states](Images/StateChage.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/RadioButton_StateChanging.zip).
+This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_GettingStarted-1179328544.zip).

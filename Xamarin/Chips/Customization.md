@@ -210,15 +210,15 @@ N> The default value of CloseButtonColor is [`Color.FromHex("#6b6b6b")`].
 
 The [`SelectionIndicatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChip~SelectionIndicatorColor.html) property customizes the selection indicator color in SfChip.
 
+{% tabs %}
+
+{% highlight xaml %}
+
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ChipCustomization"
              xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
              x:Class="ChipCustomization.MainPage">
-
-{% tabs %}
-
-{% highlight xaml %}
   
    <ContentPage.Content>
         <StackLayout Margin="8,8,8,8" >

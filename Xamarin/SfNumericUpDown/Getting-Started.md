@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion NumericUpDown control for Xamarin.Forms 
+title: Getting Started with Syncfusion NumericUpDown for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion NumericUpDown control for Xamarin.Forms platform
 platform: Xamarin
 control: NumericUpDown
@@ -149,7 +149,7 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 ## Enable Parsing Mode
 
-SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
+SfNumericUpDown provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
 
 {% tabs %}
 
@@ -173,7 +173,7 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 ## Add Format String
 
-SfNumericTextBox provides option to format the display text in currency format. 
+SfNumericUpDown provides option to format the display text in currency format. 
 
 It has three types,
 
@@ -205,7 +205,7 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 {% endtabs %}
 
-![](images/gettingstarted.png)
+![Xamarin.Forms Numeric Up-Down](images/gettingstarted.png)
 
 ## Structure
 
@@ -237,3 +237,4 @@ Spin button position can be customized as follows.
 
 {% endtabs %}
 
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/NumericUpDown_GettingStarted1600898553.zip)

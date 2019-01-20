@@ -11,12 +11,12 @@ documentation: ug
 
 Syncfusion themes allows you to apply common colors across all the Syncfusion controls to match your application theme by merging the following items your application resources.
 
-* Common theme resources for light theme and dark theme which contains the colors for the corresponding keys
+* Common theme resource for theme which contains the colors for the corresponding keys
 * Control style dictionaries for individual controls in which the keys are mapped with control properties
 
 ## Automatic style merging
 
-Since we have more than 40 controls, it can be difficult to merge the control styles for all our controls individually in applications. Hence, we have provided SyncfusionThemeDictionary class. When you merge the common theme resources to this dictionary, we will merge control styles automatically. However, only the styles for the used controls will be merged. 
+while using more number of Syncfusion controls in the application, to make the process easier for merging the control style of those controls, we have provided SyncfusionThemeDictionary class. When you merge the common theme resources to this dictionary, we will merge control styles automatically. However, only the styles for the used controls will be merged. 
 
 {% highlight xaml %}
 
@@ -95,11 +95,15 @@ With the introduction of theming support, it is also possible now to customize s
 {% highlight xaml %}
 
 <Application.Resources>
-    <ResourceDictionary>
-        <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String> 
-        <Color x:Key="SfTextInputLayoutCounterLabelColor">Blue</Color> 
-        <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color> 
-    </ResourceDictionary>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String> 
+                <Color x:Key="SfTextInputLayoutCounterLabelColor">Blue</Color> 
+                <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
 </Application.Resources>
 
 {% endhighlight %}

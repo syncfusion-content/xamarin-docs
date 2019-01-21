@@ -92,7 +92,7 @@ public class CalendarViewModel
    
   private void DateCellHolding(DateTime obj)
   {
-	CommandText = obj.Date.ToString("dd/MM/yyyy");
+	CommandText = obj.ToString("dd/MM/yyyy") ;
   }
  
 }

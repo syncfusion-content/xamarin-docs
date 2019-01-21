@@ -21,7 +21,7 @@ By using the following methods, we can navigate the months or year in `SfCalenda
 
 ### Forward
 
-By default, the date can be navigated to next view using touch gesture and swiping the control in right to left direction. The view can also be changed programmatically using `Forward` method available in `SfCalendar`. It will move to next month, if the view mode is month or it will move to next Year,if the view mode is year.
+By default, the date can be navigated to next view using touch gesture and swiping the control in right to left direction. The view can also be changed programmatically using [Forward](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Forward.html) method available in `SfCalendar`. It will move to next month, if the view mode is month or it will move to next Year,if the view mode is year.
 
 {% highlight c# %}
 
@@ -33,7 +33,7 @@ N> It can be navigated until it reaches the MaxDate.
 
 ### Backward
 
-By default, the date can be navigated to previous view using touch gesture and swiping the control in left to right direction. The view can also be changed programmatically using `Backward` method available in `SfCalendar`. It will move to previous month, if the view mode is month or it will move to previous year, if the view mode is year view.
+By default, the date can be navigated to previous view using touch gesture and swiping the control in left to right direction. The view can also be changed programmatically using [Backward](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Backward.html) method available in `SfCalendar`. It will move to previous month, if the view mode is month or it will move to previous year, if the view mode is year view.
 
 {% highlight c# %}
 
@@ -45,7 +45,7 @@ N> It can be navigated until it reaches the MinDate.
 
 ### Move to Date 
 
-Visible dates can be moved to specific date using `MoveToDate` property available in `SfCalendar`. It will move to any specific month if the view mode is month view or move to year if it is a year view.
+Visible dates can be moved to specific date using [MoveToDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MoveToDate.html) property available in `SfCalendar`. It will move to any specific month if the view mode is month view or move to year if it is a year view.
 
 N>  The specified date should lie between MinDate and MaxDate, if the specified date is greater than MaxDate then the view will be moved to MaxDate and if the specified date is lesser than the MinDate then the view will be moved to MinDate.
 

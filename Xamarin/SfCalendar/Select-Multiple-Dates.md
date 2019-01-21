@@ -9,7 +9,7 @@ documentation: ug
 
 # Select Multiple Dates
 
-Dates can be selected by making a touch on month view cells. The default Selection mode is Single which allows user to select one date at a time. `SfCalendar` provides support to select dates in two modes such as Single and Multiple selection.
+Dates can be selected by making a touch on month view cells. The default [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html) is Single which allows user to select one date at a time. `SfCalendar` provides support to select dates in two modes such as Single and Multiple selection.
 
 * `SingleSelection` – A single date can be selected in a month view which can be equipped when user needs to select one date at a time / to view events.
 

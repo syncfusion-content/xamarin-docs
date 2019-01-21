@@ -143,7 +143,7 @@ public class CalendarViewModel
 
 The [SelectionChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SelectionChangedCommand.html) will be triggered whenever the selection is changed in calendar for the following selections and passing the [SelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs.html) as parameter.
     
-	* SingleSlection - A single date can be selected in a month view which can be equipped when user needs to select one date at a time
+	* SingleSelection - A single date can be selected in a month view which can be equipped when user needs to select one date at a time
 	* MultiSelection - More than one date can be selected.
 	* RangeSelection - It allows us to select a single date range in calendar month view.
 	* MultiRangeSelection - More than one date range can be selected in a month view.

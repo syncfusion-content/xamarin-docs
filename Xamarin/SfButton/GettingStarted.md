@@ -135,7 +135,7 @@ button.Text = "Button";
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with caption](images/ButtonWithText.jpg)
+![SfButton with caption](images/ButtonWithText.png)
 
 ## Toggle button
 
@@ -158,11 +158,11 @@ button.IsCheckable = true;
 
 Checked state:
 
-![SfButton with toggle pressed state](images/Toggle_Pressed_State.jpg)
+![SfButton with toggle pressed state](images/Toggle_Pressed_State.png)
 
 Unchecked state:
 
-![SfButton with toggle relased state](images/Toggle_Released_Button.jpg)
+![SfButton with toggle relased state](images/Toggle_Released_Button.png)
 
 ## Button icon
 
@@ -184,7 +184,7 @@ button.ShowIcon = true;
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with button icon](images/ButtonWithIcon.jpg)
+![SfButton with button icon](images/ButtonWithIcon.png)
 
 ## Button background image
 
@@ -207,6 +207,6 @@ button.CornerRadius = new Thickness(20);
 {% endhighlight %}
 {% endtabs %}
 
-![Button with background image](images/ButtonWithBackgroundImage.jpg)
+![Button with background image](images/ButtonWithBackgroundImage.png)
 
 You can find the complete getting started sample here: [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Button_GettingStarted31009597.zip).

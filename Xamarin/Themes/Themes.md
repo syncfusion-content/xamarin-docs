@@ -9,14 +9,24 @@ documentation: ug
 
 # Themes for Syncfusion Controls
 
-Syncfusion themes allows you to apply common colors across all the Syncfusion controls to match your application theme by merging the following items your application resources.
+Syncfusion themes allows you to apply uniform colors across all the Syncfusion controls to match your application theme by merging the following items in your application resources.
 
-* Common theme resource for theme which contains the colors for the corresponding keys
-* Control style dictionaries for individual controls in which the keys are mapped with control properties
+* Common theme resource dictionary
+* Control style resource dictionaries
 
-## Automatic style merging
+## Common theme resource dictionary
 
-while using more number of Syncfusion controls in the application, to make the process easier for merging the control style of those controls, we have provided SyncfusionThemeDictionary class. When you merge the common theme resources to this dictionary, we will merge control styles automatically. However, only the styles for the used controls will be merged. 
+This resource file contains the keys and its respective values for all the controls. These keys will be mapped to our control properties and when this resource is merged in the application resources, theme will be applied for the used control in the application. 
+
+## Control style resource dictionaries
+
+There is a control style resource dictonary for each and every control in which the actual mapping between the keys declared in common theme resource dictionary and public properties of that control is done. 
+
+As mentioned earlier, it is needed to merge both these common theme resource dictionary and the control style resource dictionaries for the used controls to apply theme. There are two ways to merge these control style resource dictonaries as explained below.
+
+## Automatic merging
+
+While using more number of Syncfusion controls in an application, to make the process easier for merging the control style dictionary of those controls, we have provided SyncfusionThemeDictionary class for automatic merging. When the common theme resource dictionary is merged to this dictionary, control style resource dictionaries will be merged automatically. However, only the styles for the used controls will be merged. 
 
 {% highlight xaml %}
 
@@ -30,9 +40,9 @@ while using more number of Syncfusion controls in the application, to make the p
 
 {% endhighlight %}
 
-## Manual style merging
+## Manual merging
 
-It is also possible to merge only the requried controls for which theming is needed. Here, you have to merge both the common resource and each control style manually as follows. Hence SyncfusionThemeDictionary is not required here.
+It is also possible to merge only the required control style dictionaries for which theming is needed. Here, it is needed to merge both the common resource and each control style dictionary manually as follows. Hence, SyncfusionThemeDictionary is not required here.
 
 {% highlight xaml %}
 
@@ -49,7 +59,7 @@ It is also possible to merge only the requried controls for which theming is nee
 
 ## Common and control specific keys
 
-We have the following set of common keys which are mapped to specific elements in all of our controls. To override the overall appearance of the theme, you can change the values for these keys as required.
+In common theme resource dictionary, we have the following set of keys which are mapped to specific elements in all of our controls. To override the overall appearance of the theme, you can change the values for these keys as required.
 
 * SyncPrimaryColor
 * SyncPrimaryLightColor
@@ -64,11 +74,11 @@ We have the following set of common keys which are mapped to specific elements i
 
 In addition to that, you can also the override the keys which are specific to the controls. You can find the keys and the elements to which they are mapped for all the controls in this link.[link]
 
-Pleae check the below section to know about overriding both common and control specific keys.
+Please check the below section to know about overriding both common and control specific keys.
 
 ### Overriding key values
 
-You can override the default values for the keys as needed by changing the values for the keys after merging the common theme resources.
+You can override the default values for the keys as needed by changing the values for the keys after merging the common theme resource dictionary.
 
 {% highlight xaml %}
 
@@ -88,9 +98,13 @@ You can override the default values for the keys as needed by changing the value
 
 You can find the sample in this link [link].
 
-## Customizing the internal properties of the controls
+## Customization without resource dictionaries
 
-With the introduction of theming support, it is also possible now to customize some of the internal properties for more customization of the controls. In the below example, we are customizing the internal properties of SfTextInputLayout. Similar to this, you can customize for other controls with key "ControlName" + "Theme". You can find the keys and the elements to which they are mapped for all the controls in this link.[link]
+It is also possible to customize the controls without merging common theme resource and control style resource dictionaries in the application resources. 
+
+In the below example, we are customizing the UI elements of SfTextInputLayout by merging the resource with key name 'SfTextInputLayoutTheme' and in the next line, we set the values for the required keys. Similar to this, we can customize for the other controls by merging the resource with key name "ControlName" + "Theme" and in the next line, we can set the values for the required keys of that control. 
+
+You can find the keys and the elements to which they are mapped for all the controls in this link.[link]
 
 {% highlight xaml %}
 
@@ -107,6 +121,3 @@ With the introduction of theming support, it is also possible now to customize s
 </Application.Resources>
 
 {% endhighlight %}
-
-
-

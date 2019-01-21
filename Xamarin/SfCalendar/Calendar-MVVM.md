@@ -7,8 +7,6 @@ control: SfCalendar
 documentation: ug
 ---
 
-# MVVM
-
 # Commands
  
 ## Tap command

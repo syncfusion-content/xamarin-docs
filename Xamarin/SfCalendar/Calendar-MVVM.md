@@ -101,7 +101,7 @@ public class CalendarViewModel
 
 ## Month changed command
 
-The [MonthChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthChangedCommand.html) will be triggered whenever the navigating between month and Forward()/bacward() is called in calendar and passing the [MonthChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthChangedEventArgs.html) as parameter.
+The [MonthChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthChangedCommand.html) will be triggered whenever the navigating between month and Forward()/backward() is called in calendar and passing the [MonthChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthChangedEventArgs.html) as parameter.
 
 {% tabs %}
 {% highlight xaml %} 
@@ -183,7 +183,7 @@ public class CalendarViewModel
    
   private void SelectionChanged(SelectionChangedEventArgs obj)
   {
-	SelectionChangedCommandText = " DateAdded- " +obj.DateAdded?.Count.ToString() +"  "+ " DateRemoved- " + obj.DateRemoved?.Count.ToString() + "  " + " NewRageAdded -"
+	SelectionChangedCommandText = " DateAdded- " +obj.DateAdded?.Count.ToString() +"  "+ " DateRemoved- " + obj.DateRemoved?.Count.ToString() + "  " + " NewRangeAdded -"
 	  + obj.NewRangeAdded?.Count.ToString();
   }
 }

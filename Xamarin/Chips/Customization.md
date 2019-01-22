@@ -367,10 +367,6 @@ The [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XF
                             WidthRequest="150"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            ShowCloseButton="true"
-                            ShowSelectionIndicator="true"
-                            CloseButtonColor = "White"
-                            SelectionIndicatorColor = "White"
                             BorderWidth="4"
                             BorderColor="Black"
                             >
@@ -401,9 +397,6 @@ namespace ChipCustomization
             chip.WidthRequest = 150;
             chip.HorizontalOptions = LayoutOptions.Center;
             chip.VerticalOptions = LayoutOptions.Center;
-            chip.ShowSelectionIndicator = true;
-            chip.CloseButtonColor = Color.White;
-            chip.SelectionIndicatorColor = Color.White;
             chip.BorderWidth = 4;
             chip.BorderColor = Color.Black;
             stackLayout.Children.Add(chip);
@@ -440,10 +433,6 @@ The [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XF
                             WidthRequest="150"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            ShowCloseButton="true"
-                            ShowSelectionIndicator="true"
-                            CloseButtonColor = "White"
-                            SelectionIndicatorColor = "White"
                             BorderWidth="8"
                             BorderColor="Black"
                             >
@@ -474,9 +463,6 @@ namespace ChipCustomization
             chip.WidthRequest = 150;
             chip.HorizontalOptions = LayoutOptions.Center;
             chip.VerticalOptions = LayoutOptions.Center;
-            chip.ShowSelectionIndicator = true;
-            chip.CloseButtonColor = Color.White;
-            chip.SelectionIndicatorColor = Color.White;
             chip.BorderWidth = 8;
             chip.BorderColor = Color.Black;
             stackLayout.Children.Add(chip);
@@ -516,10 +502,6 @@ The `CornerRadius` property is used to customize the rounded edges in SfChip as 
                             WidthRequest="150"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            ShowCloseButton="true"
-                            ShowSelectionIndicator="true"
-                            CloseButtonColor = "White"
-                            SelectionIndicatorColor = "White"
                             BorderWidth="4"
                             CornerRadius = "4"
                             BorderColor="Black"
@@ -551,9 +533,6 @@ namespace ChipCustomization
             chip.WidthRequest = 150;
             chip.HorizontalOptions = LayoutOptions.Center;
             chip.VerticalOptions = LayoutOptions.Center;
-            chip.ShowSelectionIndicator = true;
-            chip.CloseButtonColor = Color.White;
-            chip.SelectionIndicatorColor = Color.White;
             chip.BorderWidth = 4;
             chip.CornerRadius = 4;
             chip.BorderColor = Color.Black;
@@ -875,9 +854,7 @@ The [`HorizontalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusi
                             WidthRequest="150"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            ShowCloseButton="true"
                             ShowSelectionIndicator="true"
-                            CloseButtonColor = "White"
                             SelectionIndicatorColor = "White"
                             BackgroundColor="Aqua"
                             HorizontalTextAlignment="Start"
@@ -912,7 +889,6 @@ namespace ChipCustomization
             chip.HorizontalOptions = LayoutOptions.Center;
             chip.VerticalOptions = LayoutOptions.Center;
             chip.ShowSelectionIndicator = true;
-            chip.CloseButtonColor = Color.White;
             chip.SelectionIndicatorColor = Color.White;
             chip.BackgroundColor = Color.Aqua;
             chip.HorizontalTextAlignment = TextAlignment.Start;
@@ -952,8 +928,6 @@ You can enable the icon image using the [`ShowIcon`](https://help.syncfusion.com
                             WidthRequest="150"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            ShowCloseButton="true"
-                            CloseButtonColor = "White"
                             BackgroundColor="Aqua"
                             TextColor="Black"
                             ImageSource="ChipUserContact.png"
@@ -986,7 +960,6 @@ namespace ChipCustomization
             chip.WidthRequest = 150;
             chip.HorizontalOptions = LayoutOptions.Center;
             chip.VerticalOptions = LayoutOptions.Center;
-            chip.CloseButtonColor = Color.White;
             chip.BackgroundColor = Color.Aqua;
             chip.TextColor = Color.Black;
             chip.ImageSource = "ChipUserContact.png";
@@ -1028,8 +1001,6 @@ N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syn
                             WidthRequest="150"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            ShowCloseButton="true"
-                            CloseButtonColor = "White"
                             BackgroundColor="Aqua"
                             TextColor="Black"
                             ImageSource="ChipUserContact.png"
@@ -1062,7 +1033,6 @@ namespace ChipCustomization
             chip.WidthRequest = 150;
             chip.HorizontalOptions = LayoutOptions.Center;
             chip.VerticalOptions = LayoutOptions.Center;
-            chip.CloseButtonColor = Color.White;
             chip.BackgroundColor = Color.Aqua;
             chip.TextColor = Color.Black;
             chip.ImageSource = "ChipUserContact.png";
@@ -1101,8 +1071,6 @@ N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syn
                             WidthRequest="150"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
-                            ShowCloseButton="true"
-                            CloseButtonColor = "White"
                             BackgroundColor="Aqua"
                             TextColor="Black"
                             ImageSource="ChipUserContact.png"
@@ -1136,7 +1104,6 @@ namespace ChipCustomization
             chip.WidthRequest = 150;
             chip.HorizontalOptions = LayoutOptions.Center;
             chip.VerticalOptions = LayoutOptions.Center;
-            chip.CloseButtonColor = Color.White;
             chip.BackgroundColor = Color.Aqua;
             chip.TextColor = Color.Black;
             chip.ImageSource = "ChipUserContact.png";

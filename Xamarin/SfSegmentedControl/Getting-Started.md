@@ -19,7 +19,7 @@ E.g., C:\Program Files (x86)\Syncfusion\Essential Studio\16.2.0.41\Xamarin\lib
 
 N> Assemblies can be found in an unzipped package location in Mac.
 
-### Adding SfSegmentedControl reference
+## Adding SfSegmentedControl reference
 
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSegmentedControl to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons/), and then install it.
@@ -29,15 +29,15 @@ To know more about obtaining our components, refer to these links: [Mac](https:/
 N> When there is a mismatch of Xamarin NuGet packages between your sample and the segmented control assemblies, an error (Could not load type Xamarin.Forms.ElementTemplate) will occur. Refer to the [System Requirements](https://help.syncfusion.com/xamarin/introduction/system-requirements) section to know the software requirements of Syncfusion controls.
 
 
-# Launching the SfSegmentedControl on each platform
+## Launching the SfSegmentedControl on each platform
 
 To use the segmented control inside an application, each platform application must initialize the segmented control renderer. This initialization steps vary from platform to platform, and it is discussed in the following sections:
 
-## Android and UWP
+### Android and UWP
 
 The Android and UWP launches the SfSegmentedControl without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
-## iOS
+### iOS
 
 To launch the segmented control in iOS, call the SfSegmentedControlRenderer.Init() in the `FinishedLaunching` overridden method of the `AppDelegate` class after the Xamarin.Forms Framework has been initialized and before the `LoadApplication` is called, as demonstrated in the following code example.
 
@@ -56,7 +56,7 @@ To launch the segmented control in iOS, call the SfSegmentedControlRenderer.Ini
 {% endhighlight %}
 
 
-## ReleaseMode issue in UWP platform
+### ReleaseMode issue in UWP platform
 
 There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
 
@@ -85,17 +85,17 @@ The above problem can be resolved by initializing the SfSegmentedControl assembl
 {% endhighlight %}
 
 
-# Creating an application with segmented control.
+## Creating an application with segmented control.
 
 This section explains how to create a bus ticket booking module by using syncfusion segmented control. The control can be configured entirely in C# code or by using XAML markup. The following screenshot illustrates the output of Segmented control on iOS, Android and UWP devices.
 
-![](images/getting-started/Xamarin_forms_gettingstarted.png)
+![OverView image of SegmentedControl](images/getting-started/Xamarin_forms_gettingstarted.png)
 
 ## Creating a project
 
 Create a new BlankApp (Xamarin.Forms.Portable) application in Visual Studio for Xamarin.Forms.
 
-## Adding SfSegmentedControl in Xamarin.Forms
+### Adding SfSegmentedControl in Xamarin.Forms
 
 Add the required assembly references to the PCL and renderer projects as discussed in the Assembly deployment  [section](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfsegmentedcontrol).
 
@@ -311,10 +311,10 @@ View can be created by the following code snippet.
 {% endtabs %}
 
 
-![](images/getting-started/Xamarin_Forms_InitialView.png)
+![Image for adding supportive Views](images/getting-started/Xamarin_Forms_InitialView.png)
 
 
-# Adding data/Items to SfSegmentedControl
+## Adding data/Items to SfSegmentedControl
 
 We can add the data inside the segmented control in 3 different ways. 
 
@@ -324,7 +324,7 @@ We can add the data inside the segmented control in 3 different ways.
 
 Items inside the segmented control can be added through the `ItemsSource` property of `SfSegmentedControl`, which holds the collection/list of items.
 
-## Adding data as a String
+### Adding data as a String
 
 With the help of  Xamarin.Forms `System.Collections.Generic` we can add string data as `ItemsSource` to SfSegmentedControl.
 
@@ -505,9 +505,9 @@ With the help of  Xamarin.Forms `System.Collections.Generic` we can add string d
 {% endtabs %}
 
 
-![](images/getting-started/Xamarin_Forms_String.png)
+![Image for adding data as string](images/getting-started/Xamarin_Forms_String.png)
 
-## Adding data as a SfSegmentItem
+### Adding data as a SfSegmentItem
 
 By using `SfSegmentItem` class, we can add data inside the segmented control.
 
@@ -733,11 +733,11 @@ In ViewModel add the below given code to get the respective items in SfSegmented
 
 {% endtabs %}
 
-![](images/getting-started/Xamarin_Forms_String_SegmentItem.png)
+![Image for adding data as SfSegmentedItem](images/getting-started/Xamarin_Forms_String_SegmentItem.png)
 
 
 
-## Adding data as Custom View.
+### Adding data as Custom View.
 
 We can add any custom view to the segmented control
 
@@ -1030,7 +1030,7 @@ In ViewModel add the below given code to get the respective items/collection in 
 
 {% endtabs %}
 
-![](images/getting-started/Xamarin_forms_gettingstarted.png)
+![CustomView Image](images/getting-started/Xamarin_forms_gettingstarted.png)
 
 ## Customizing segmented control appearance
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion NavigationDrawer control for Xamarin.Forms
+title: Getting started | SfNavigationDrawer | Xamarin | Syncfusion
 description: A quick tour to initial users on Syncfusion NavigationDrawer control for Xamarin.Android platform
 platform: Xamarin
 control: NavigationDrawer
@@ -295,7 +295,7 @@ public MainPage()
 
 {% endtabs %}
 
-![](Images/GettingStarted.png)
+![OverView Image for NavigationDrawer](Images/GettingStarted.png)
 
 We have created knowledge base document by creating SfNavigationDrawer sample fully in code behind. Please refer the same in this [link.](https://www.syncfusion.com/kb/8020/how-to-create-sfnavigationdrawer-sample-in-code-behind)
 

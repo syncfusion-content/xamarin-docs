@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfBusyIndicator control for Xamarin.Forms
+title: Getting started | SfBusyIndicator | Xamarin | Syncfusion
 description: A quick tour to initial users on Syncfusion SfBusyIndicator control for Xamarin.Forms platform
 platform: Xamarin
 control: BusyIndicator
@@ -185,6 +185,6 @@ namespace GettingStarted
 
 {% endtabs %}
 
-![](images/Busyindicator.png)
+![OverView image for BusyIndicator](images/Busyindicator.png)
 
 You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted232240292.zip)

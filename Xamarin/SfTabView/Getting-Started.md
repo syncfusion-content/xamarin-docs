@@ -11,7 +11,7 @@ documentation: ug
 
 This section provides an overview for working with the tab view control for Xamarin.Forms. Walk through the entire process of creating a real-world application with the tab view.
 
-# Assembly deployment
+## Assembly deployment
 
 After installing the Essential Studio for Xamarin, find all the required assemblies in installation folders, {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib}.
 
@@ -27,17 +27,17 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.o
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sftabview) to know about the dependent assemblies for SfTabView.
 
-N> When there is a mismatch of Xamarin NuGet packages between your sample and the tabview control assemblies, an error (Could not load type Xamarin.Forms.ElementTemplate) will occur. Refer to the [System Requirements](https://help.syncfusion.com/xamarin/introduction/system-requirements) section to know the software requirements of Syncfusion controls.
+N> When there is a mismatch of Xamarin NuGet packages between your sample and the tab view control assemblies, an error (Could not load type Xamarin.Forms.ElementTemplate) will occur. Refer to the [System Requirements](https://help.syncfusion.com/xamarin/introduction/system-requirements) section to know the software requirements of Syncfusion controls.
 
-# Launching the tab view on each platform
+## Launching the tab view on each platform
 
 To use the tab view inside an application, each platform application must initialize the tab view renderer. This initialization steps vary from platform to platform, and it is discussed in the following sections:
 
-# Android and UWP
+### Android and UWP
 
 Android launches the tab view without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
-# iOS
+### iOS
 
 To launch the tab view in iOS, call the SfTabViewRenderer.Init() in the `FinishedLaunching` overridden method of the `AppDelegate` class after the Xamarin.Forms Framework has been initialized and before the `LoadApplication` is called, as demonstrated in the following code example.
 
@@ -84,17 +84,17 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 }
 {% endhighlight %}
 
-### Create a simple tab view
+## Create a simple tab view
 
 This section explains how to create a tab view and configure it. The control can be configured entirely in C# code or by using XAML markup. The following screenshot illustrates the output of tab view on iOS, Android and UWP devices.
 
 ![TabViewImage](images/Getting-Started/xamarin_forms_tabview.png)
 
-# Creating the project
+### Creating the project
 
 Create a new BlankApp (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
-# Adding SfTabView in Xamarin.Forms
+### Adding SfTabView in Xamarin.Forms
 
 Add the required assembly references to the PCL and renderer projects as discussed in the Assembly deployment section.
 
@@ -157,7 +157,7 @@ namespace GettingStarted
 
 {% endtabs %}
 
-# Adding tab items
+### Adding tab items
 
 Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
 

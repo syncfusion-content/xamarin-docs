@@ -86,7 +86,7 @@ public SegmentedControlSample()
 
 {% endtabs %}
 
-![](images/Display-mode/Xamarin_Forms_Text.png)
+![Image for DisplayMode as Text](images/Display-mode/Xamarin_Forms_Text.png)
 
 ## Image 
 
@@ -154,7 +154,7 @@ this.Content = segmentedControl;
 
 {% endtabs %}
 
-![](images/Display-mode/Xamarin_Forms_Image.png)
+![Image for DisplayMode as Image](images/Display-mode/Xamarin_Forms_Image.png)
 
 ## Image with text
 
@@ -229,7 +229,7 @@ this.Content = segmentedControl;
 
 {% endtabs %}
 
-![](images/Display-mode/Xamarin_Forms_ImagewithText.png)
+![Image for DisplayMode as ImageWithText](images/Display-mode/Xamarin_Forms_ImagewithText.png)
 
 ## How to set the font icons using ttf file?
 

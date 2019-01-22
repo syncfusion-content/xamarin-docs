@@ -411,6 +411,6 @@ carousel.SelectedIndex=2;
 
 N> The `SelectedIndex` property will be 0 by default.
 
-![](images/gettingstarted.png)
+![OverView image for Carousel](images/gettingstarted.png)
 
 You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted982303964.zip)

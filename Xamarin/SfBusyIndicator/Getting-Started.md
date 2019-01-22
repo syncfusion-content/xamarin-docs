@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started | SfBusyIndicator | Xamarin | Syncfusion
+title: Getting Started for Syncfusion.Xamarin.Forms BusyIndicator
 description: A quick tour to initial users on Syncfusion SfBusyIndicator control for Xamarin.Forms platform
 platform: Xamarin
 control: BusyIndicator

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting started | SfNavigationDrawer | Xamarin | Syncfusion
+title: Getting Started for Syncfusion.Xamarin.Forms NavigationDrawer
 description: A quick tour to initial users on Syncfusion NavigationDrawer control for Xamarin.Android platform
 platform: Xamarin
 control: NavigationDrawer

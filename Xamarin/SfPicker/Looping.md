@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Looping | SfPicker | Xamarin | Syncfusion
+title: Looping for Syncfusion.Xamarin.Forms SfPicker
 description: Looping support of SfPicker control
 platform: Xamarin
 control: Picker

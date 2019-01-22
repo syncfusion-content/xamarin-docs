@@ -401,4 +401,4 @@ The following screenshot illustrates the output of above code.
 
 We have attached sample for reference. You can download the sample from the following link.
 
-Sample link:[GettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Picker_GettingStarted1412016889.zip)
+Sample link:[GettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Picker_GettingStarted-1178342958)

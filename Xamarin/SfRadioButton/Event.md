@@ -66,4 +66,4 @@ private void RadioButton_StateChanged(object sender, StateChangedEventArgs e)
 ![](Images/Event1.png)
 ![](Images/Event2.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/RadioButton_Event.zip).
+This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_Event1787482656 ).

@@ -124,7 +124,7 @@ checkBox.Text = "CheckBox";
 
 ![Xamarin.Forms CheckBox caption](Images/Caption.png) 
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/CheckBox_GettingStarted.zip ).
+This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_GettingStarted978120033).
 
 ## Change the check box state
 The three visual states of `SfCheckBox` are: 
@@ -229,7 +229,7 @@ onion.IsChecked = true;
 
 ![Xamarin.Forms CheckBox multi-selection](Images/StateChange.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/CheckBox_StateChanging.zip ).
+This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_StateChanging1062634575).
 
 ## Indeterminate
 
@@ -325,4 +325,4 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 
 ![Xamarin.Forms CheckBox intermediate state](Images/Inter1.jpg) ![](Images/Inter2.jpg)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_GettingStarted-1768275699.zip ).
+This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_IndeterminateState-1420370588).

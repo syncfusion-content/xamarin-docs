@@ -623,4 +623,4 @@ The following screenshot illustrates the output of above code example.
 
 You can download the sample for reference from the following link.
 
-Sample link:[Cascading](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading-527874888)
+Sample link:[Cascading](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading370076787)

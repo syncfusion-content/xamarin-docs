@@ -60,7 +60,7 @@ picker.EnableLooping = true;
 
 ![](images/Looping.png)
 
-You can find the complete Looping sample from this [link.](http://www.syncfusion.com/downloads/support/forum/137855/ze/Looping752628297)
+You can find the complete Looping sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Looping1389683821)
 
 # How to restrict Looping in a particular column of the picker
 
@@ -93,4 +93,4 @@ private void Picker_OnColumnLoaded(object sender, Syncfusion.SfPicker.XForms.Col
 
 ![](images/ColumnEnableLooping.png)
 
-You can find the sample from this [link.](http://www.syncfusion.com/downloads/support/forum/137855/ze/ColumnAutoReverse185183685)
+You can find the sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ColumnAutoReverse929578764)

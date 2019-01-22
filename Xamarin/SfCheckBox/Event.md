@@ -65,4 +65,4 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 ![](Images/Event2.png)
 ![](Images/Event3.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/CheckBox_Event.zip).
+This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_Event623951807).

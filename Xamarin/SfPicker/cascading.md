@@ -349,4 +349,4 @@ The following screenshot illustrates the output of above code snippets.
 
 You can download the sample for reference from the following link.
 
-Sample link: [CascadingSample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CascadingPicker-1151476176.zip)
+Sample link: [CascadingSample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CascadingPicker773245392)

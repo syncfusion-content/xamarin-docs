@@ -81,4 +81,4 @@ caption.FontSize = 20;
 
 ![](Images/CaptionAppearance.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/CheckBox_VisualCustomization.zip ).
+This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_VisualCustomization881578223).

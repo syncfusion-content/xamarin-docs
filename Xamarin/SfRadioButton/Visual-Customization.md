@@ -67,4 +67,4 @@ radioButton.FontSize = 20;
 
 ![](Images/CaptionAppereance.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/RadioButton_VisualCustomization.zip).
+This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_VisualCustomization1644131704).

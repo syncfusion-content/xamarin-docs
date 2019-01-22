@@ -26,7 +26,7 @@ checkBox.CornerRadius = 5.0f;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Radius.png)
+![Radius Image](Images/Radius.png)
 
 ## Customizing state color
 The default state colors can be customized using the `CheckedColor` and `UncheckedColor` properties. The checked/indeterminate state color is updated to the `CheckedColor` property value when the state is changed to the checked/indeterminate.The unchecked state color is updated to `UncheckedColor` property value when the state is changed to unchecked. 

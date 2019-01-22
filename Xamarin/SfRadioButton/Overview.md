@@ -18,4 +18,4 @@ The radio button is a selection control that allows users to select one option f
 * Allow users to select and clear the control by tapping.
 * Supports radio button color and label text customization.
 
-![](Images/RadioButton_Overview.png)
+![RadioButton Image](Images/RadioButton_Overview.png)

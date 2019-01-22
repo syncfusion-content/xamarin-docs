@@ -18,4 +18,4 @@ The check box is a selection control that allows users to select one or more opt
 * Allow users to select and clear the control by tapping. 
 * Supports check box color, shape and label text customization.
 
-![](Images/CheckBox_Overview.png)
+![Checkbox Image](Images/CheckBox_Overview.png)

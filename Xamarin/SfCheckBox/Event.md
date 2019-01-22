@@ -61,8 +61,8 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Event1.png)
-![](Images/Event2.png)
-![](Images/Event3.png)
+![Checked state image](Images/Event1.png)
+![Unchecked state image](Images/Event2.png)
+![Indeterminate state image ](Images/Event3.png)
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_Event623951807).

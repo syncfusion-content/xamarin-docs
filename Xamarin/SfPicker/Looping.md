@@ -58,7 +58,7 @@ picker.EnableLooping = true;
 
 {% endtabs %}
 
-![](images/Looping.png)
+![Looping Image](images/Looping.png)
 
 You can find the complete Looping sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Looping1389683821)
 
@@ -91,6 +91,6 @@ private void Picker_OnColumnLoaded(object sender, Syncfusion.SfPicker.XForms.Col
 
 {% endtabs %}
 
-![](images/ColumnEnableLooping.png)
+![ColumnEnableLooping Image](images/ColumnEnableLooping.png)
 
 You can find the sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ColumnAutoReverse929578764)

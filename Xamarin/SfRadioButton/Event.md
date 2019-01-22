@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Event in SfRadioButton for Xamarin.Forms platform
+title: Event for Syncfusion.Xamarin.Forms SfRadioButton
 description: Learn how to customize the basic features of SfRadioButton
 platform: Xamarin.Forms
 control: SfRadioButton
@@ -63,7 +63,7 @@ private void RadioButton_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Event1.png)
-![](Images/Event2.png)
+![StateChanged event 1](Images/Event1.png)
+![StateChanged event 2](Images/Event2.png)
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_Event1787482656 ).

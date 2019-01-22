@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in SfRadioButton for Xamarin.Forms platform
+title: Overview for Syncfusion.Xamarin.Forms SfRadioButton
 description: Learn how to customize the basic features of SfRadioButton
 platform: Xamarin.Forms
 control: SfRadioButton

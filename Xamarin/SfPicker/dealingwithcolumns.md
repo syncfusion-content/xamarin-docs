@@ -619,7 +619,7 @@ return colors[color.ToString()];
 
 The following screenshot illustrates the output of above code example.
 
-![](images/casecade.png)
+![Cascading Image](images/casecade.png)
 
 You can download the sample for reference from the following link.
 

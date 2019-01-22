@@ -20,34 +20,14 @@ E.g., C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
 N> In Mac, assemblies can be found in unzipped package location.
 
 
-## Tab view for Xamarin.Forms
+### Adding SfTabView reference
 
-The following list of assemblies should be added as reference from the lib folder to use the tab view.
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfTabView.XForms.dll</td>
-</tr>
-<tr>
-<td>Android renderer</td>
-<td>android\Syncfusion.SfTabView.XForms.dll<br/>android\Syncfusion.SfTabView.XForms.Android.dll</td>
-</tr>
-<tr>
-<td>iOS renderer</td>
-<td>ios-unified\Syncfusion.SfTabView.XForms.dll<br/>ios-unified\Syncfusion. SfTabView.XForms.iOS.dll</td>
-</tr>
-<tr>
-<td>UWP renderer</td>
-<td>uwp\Syncfusion.SfTabView.XForms.dll<br/>uwp\Syncfusion.SfTabView.XForms.UWP.dll</td>
-</tr>
-</table>
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfTabView to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfTabView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTabView/), and then install it.
 
-N> When there is a mismatch of Xamarin NuGet packages between your sample and the tab view assemblies, an error (Could not load type Xamarin.Forms.ElementTemplate) will occur. Refer to the [System Requirements](https://help.syncfusion.com/xamarin/introduction/system-requirements) section to know the software requirements of Syncfusion controls.
+To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sftabview) to know about the dependent assemblies for SfTabView.
+
+N> When there is a mismatch of Xamarin NuGet packages between your sample and the tabview control assemblies, an error (Could not load type Xamarin.Forms.ElementTemplate) will occur. Refer to the [System Requirements](https://help.syncfusion.com/xamarin/introduction/system-requirements) section to know the software requirements of Syncfusion controls.
 
 # Launching the tab view on each platform
 
@@ -399,4 +379,4 @@ Similarly, content region for other tabs also can be configured.
 
 By default, both the vertical swiping for list view and horizontal swiping for tab view will work. If it is not required, it can be customized by using the `EnableSwiping` property of `SfTabView`.
 
-Note: Getting started sample can be downloaded from [this link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TabViewGettingStarted-1537758695).
+Note: Getting started sample can be downloaded from [this link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1726376415.zip).

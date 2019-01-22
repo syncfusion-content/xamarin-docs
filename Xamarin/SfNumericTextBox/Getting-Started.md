@@ -13,7 +13,7 @@ This section explains you the steps to configure a SfNumericTextBox control in
 
 ## Add SfNumericTextBox reference
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) link to know about the assemblies required for adding NumericTextBox to your project.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfnumerictextbox) link to know about the assemblies required for adding NumericTextBox to your project.
 
 ## Launching the SfNumericTextBox on each platform
 
@@ -380,4 +380,4 @@ this.Content = numericTextBox;
 
 ![Xamarin.Forms Numeric TextBox with custom font attributes](images/textformat.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/NumericTextBox_GettingStarted1501853434.zip)
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1977385538.zip)

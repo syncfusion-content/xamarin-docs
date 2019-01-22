@@ -13,7 +13,7 @@ This section explains you the steps to configure a SfBusyIndicator control in 
 
 ## Add SfBusyIndicator reference
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) link to know about the assemblies required for adding Busyindicator to your project.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfbusyindicator) link to know about the assemblies required for adding Busyindicator to your project.
 
 ## Launching the SfBusyIndicator on each platform
 
@@ -187,4 +187,4 @@ namespace GettingStarted
 
 ![](images/Busyindicator.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted618636106)
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted232240292.zip)

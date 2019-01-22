@@ -93,4 +93,4 @@ private void Picker_OnColumnLoaded(object sender, Syncfusion.SfPicker.XForms.Col
 
 ![](images/ColumnEnableLooping.png)
 
-You can find the sample from this [link.](http://www.syncfusion.com/downloads/support/forum/137855/ze/ColumnAutoReverse185183685)
+You can find the sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoReverse-1501001754.zip)

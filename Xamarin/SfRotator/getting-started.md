@@ -378,5 +378,5 @@ rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
 
 ![](images/rotator.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted147786627)
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1493259513.zip)
 

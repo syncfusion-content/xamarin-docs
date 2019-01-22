@@ -86,7 +86,7 @@ public SegmentedControlSample()
 
 {% endtabs %}
 
-![](images/Display-mode/Xamarin_Forms_Text.png)
+![Image for DisplayMode as Text](images/Display-mode/Xamarin_Forms_Text.png)
 
 ## Image 
 
@@ -154,7 +154,7 @@ this.Content = segmentedControl;
 
 {% endtabs %}
 
-![](images/Display-mode/Xamarin_Forms_Image.png)
+![Image for DisplayMode as Image](images/Display-mode/Xamarin_Forms_Image.png)
 
 ## Image with text
 
@@ -229,19 +229,27 @@ this.Content = segmentedControl;
 
 {% endtabs %}
 
-![](images/Display-mode/Xamarin_Forms_ImagewithText.png)
+![Image for DisplayMode as ImageWithText](images/Display-mode/Xamarin_Forms_ImagewithText.png)
 
-## How to generate font icons
+## How to set the font icons using ttf file?
 
-The segmented control enables users to use font icons for items in data source collection. To generate icons, give the desired font icon and its font family using the `IconFont` and `FontIconFontFamily` properties. You can refer this [link](https://help.syncfusion.com/metro-studio/export-font-icon) for getting the font icons.
+You can refer this [link](https://help.syncfusion.com/metro-studio/export-font-icon) for getting the font icons. Add the font file to your application by using the following steps for each platform:
 
-N> Font family must be added to the respective folders based on platforms. 
+**Adding font file for iOS**
 
-iOS     -> Add the font family inside `Resource` folder iOS project.
-Android -> Add the font family inside Resource -> drawable
-UWP     -> Add the font family inside UWP project.
+1. Add the font family inside `Resource` folder iOS project.
+2. Add the font file with the following build action: `BundleResource`.
+3. Update the `Info.plist` file (fonts that are provided by application, UIAppFonts, or key).
 
-For iOS, font family must be added to the info.plist file. The `FontIconFontFamily` property declare as follows.
+**Adding font file for Android**
+
+Add the font file to the `Assets` folder in the application project, and set the following build action: `AndroidAsset`.
+
+**Adding font file for UWP**
+
+Add the font family inside the application project of UWP.
+
+N> For iOS alone, FontFamily property is declared without succeeding with .ttf and for android and UWP platform font family name is defined followed by .ttf.
 
 {% tabs %}
 

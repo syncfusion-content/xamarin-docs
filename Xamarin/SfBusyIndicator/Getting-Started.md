@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfBusyIndicator control for Xamarin.Forms
+title: Getting Started for Syncfusion.Xamarin.Forms BusyIndicator
 description: A quick tour to initial users on Syncfusion SfBusyIndicator control for Xamarin.Forms platform
 platform: Xamarin
 control: BusyIndicator
@@ -13,7 +13,7 @@ This section explains you the steps to configure a SfBusyIndicator control in 
 
 ## Add SfBusyIndicator reference
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) link to know about the assemblies required for adding Busyindicator to your project.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfbusyindicator) link to know about the assemblies required for adding Busyindicator to your project.
 
 ## Launching the SfBusyIndicator on each platform
 
@@ -185,6 +185,6 @@ namespace GettingStarted
 
 {% endtabs %}
 
-![](images/Busyindicator.png)
+![OverView image for BusyIndicator](images/Busyindicator.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted618636106)
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted232240292.zip)

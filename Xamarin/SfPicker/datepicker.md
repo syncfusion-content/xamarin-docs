@@ -415,5 +415,5 @@ The following screenshot illustrates the output of above code snippets.
 
 You can download the DatePicker sample for reference from the following link.
 
-Sample link: [DatePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker-1318140480.zip)
+Sample link: [DatePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePicker-698369396.zip)
 

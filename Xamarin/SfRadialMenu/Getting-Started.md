@@ -391,5 +391,9 @@ Public class RadialMenuPage : ContentPage
 
 ![gettingstarted](images/gettingStarted2.png)
 
+We have attached sample for reference. You can download the sample from the following link.
+
+Sample link:[GettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted472180230.zip)
+
 N> To use FontIcons, add respective FontFamily name in `info.plist` file under fonts provided by application category.
 

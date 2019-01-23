@@ -13,7 +13,7 @@ documentation: UG
 
 DataSource is a non UI component that consumes raw data and processes data operations such as sorting, filtering and grouping saving developers’ time and efforts in building the functionality themselves. We can apply DataSource to any data bound control which can be further processed using the bound DataSource.
 
-![](DataSource-GettingStarted_images/datasource.png)
+![Xamarin.Forms datasource](DataSource-GettingStarted_images/datasource.png)
 
 ## Getting started 
 
@@ -40,7 +40,7 @@ pcl\Syncfusion.DataSource.Portable.dll
 
 * This is how the final output will look like on iOS, Android and Windows Phone devices. You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/xamarin-datasource-getting-started).
 
-![](DataSource-GettingStarted_images/gettingstarted.png)
+![Xamarin.Forms datasource getting started](DataSource-GettingStarted_images/gettingstarted.png)
 
 * Create new **BlankApp** (Xamarin.Forms.Portable) application in **Xamarin Studio** or **Visual Studio**.
 * Now, create a simple data source as shown in the following code example. Add the following code example in a newly created class file and save it as **Contacts.cs** file.

@@ -125,8 +125,6 @@ You can customize the apperance of the controls without merging common theme res
 
 In the following example, the UI elements of SfTextInputLayout are customized by merging the resource with the 'SfTextInputLayoutTheme' key name, and values are set to the required keys in the next line. Similar to this, you can customize the appearance of other controls by merging the resource with the "ControlName" + "Theme" key name and setting values to the required keys of the control in the next line. 
 
-You can find the keys and the elements to which they are mapped for all the controls in this link.[link]
-
 {% highlight xaml %}
 
 <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"

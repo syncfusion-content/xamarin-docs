@@ -20,13 +20,13 @@ This resource file contains keys and their respective values for all the control
 
 ## Control style resource dictionaries
 
-Each control has a control style resource dictonary, in which the actual mapping between the keys declared in common theme resource dictionary and mapping between the properties of the control are done.
+Each control has a control style resource dictionary, in which the actual mapping between the keys declared in common theme resource dictionary and mapping between the properties of the control are done.
 
 Both the common theme resource dictionary and the control style resource dictionaries need to be merged for the controls used in application to apply theme.
 
 ## Merging theme dictionaries
 
-You can merge the resource dictonaries in the following two ways.
+You can merge the resource dictionaries in the following two ways.
 
 ### Manual merging
 
@@ -121,7 +121,7 @@ You can override the default values for the keys as needed by changing the value
 
 ## Applying themes without resource dictionaries
 
-You can customize the apperance of the controls without merging common theme resource and control style resource dictionaries in application resources.
+You can customize the appearance of the controls without merging common theme resource and control style resource dictionaries in application resources.
 
 In the following example, the UI elements of SfTextInputLayout are customized by merging the resource with the 'SfTextInputLayoutTheme' key name, and values are set to the required keys in the next line. Similar to this, you can customize the appearance of other controls by merging the resource with the "ControlName" + "Theme" key name and setting values to the required keys of the control in the next line. 
 

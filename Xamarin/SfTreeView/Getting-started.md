@@ -243,7 +243,7 @@ namespace GettingStarted
 
 Now, run the application to render the below output:
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedUnbound1766363128).
+You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/xamarin-treeview-unbound-mode).
 
 ![Xamarin Forms TreeView Unbound](TreeView_images/TreeView_UnBound.png)
 
@@ -528,7 +528,7 @@ MainPage = new ContentPage { Content = treeView };
 
 Now, run the application to render the similar output:
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1582736825).
+You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/xamarin-treeview-databinding).
 
 ![Xamarin Forms TreeView Bound](TreeView_images/TreeView_Templating.png)
 

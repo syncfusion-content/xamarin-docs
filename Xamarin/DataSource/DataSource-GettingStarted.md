@@ -38,7 +38,7 @@ pcl\Syncfusion.DataSource.Portable.dll
 
 ## Creating your first DataSource in Xamarin.Forms
 
-* This is how the final output will look like on iOS, Android and Windows Phone devices. You can also download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/DataSourceForms_GettingStarted.zip).
+* This is how the final output will look like on iOS, Android and Windows Phone devices. You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/xamarin-datasource-getting-started).
 
 ![](DataSource-GettingStarted_images/gettingstarted.png)
 

@@ -38,7 +38,7 @@ N>Install the same version of the DataSource NUGET in all the projects.
 
 ![Xamarin.Forms datasource getting started](DataSource-GettingStarted_images/gettingstarted.png)
 
-* Create a new [blank (Xamarin.Forms.NET Standard) application](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/get-started/first-app/?pivots=windows) in Xamarin Studio or Visual Studio for Xamarin.Forms.
+* Create a new blank [(Xamarin.Forms.NET Standard) application](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/get-started/first-app/?pivots=windows) in Xamarin Studio or Visual Studio for Xamarin.Forms.
 * Now, create a simple data source as shown in the following code example. Add the following code example in a newly created class file and save it as **Contacts.cs** file.
 
 {% tabs %}

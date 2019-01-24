@@ -125,7 +125,7 @@ In this walk through, you will create a new application with the TreeView that i
 
 ## Creating the Project
 
-Create a new [blank (Xamarin.Forms.NET Standard) application](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/get-started/first-app/?pivots=windows) in Xamarin Studio or Visual Studio for Xamarin.Forms.
+Create a new blank [(Xamarin.Forms.NET Standard) application](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/get-started/first-app/?pivots=windows) in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
 ## Adding the tree view in Xamarin.Forms 
 

@@ -79,8 +79,6 @@ public class CommandViewModel
 {% endhighlight %}
 {% endtabs %}
 
-N> When Command is binded to ItemTemplate, it must also define `Source` property with its root element as reference. Only then it executes the property in the ViewModel of type Command.
-
 ## Event to command
 
 The ListView event can be converted into commands using [Behaviors](https://developer.xamarin.com/guides/xamarin-forms/behaviors/). To achieve this, create a command in the ViewModel class and associate it to the ListView event using `Behaviors`.

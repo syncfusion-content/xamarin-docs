@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with Xamarin.Forms ListView | Syncfusion
-description: This topic describes about different functionalities and events in Xamarin.Forms ListView.
+description: This topic describes about how Syncfusion Xamarin.Forms ListView used along with SQLite, Prism frameworks, Interacting events and other different functionalities. .
 platform: xamarin
 control: SfListView
 documentation: ug

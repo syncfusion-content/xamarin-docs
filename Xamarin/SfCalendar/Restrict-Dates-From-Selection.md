@@ -13,7 +13,7 @@ Dates can be restricted or a collection of dates can be blacked out in `SfCalend
 
 ## Range of Min / Max Dates
 
-Visible dates can be restricted between certain range of dates using `MinDate` and `MaxDate` properties available in `SfCalendar` control. It is applicable in all the calendar views.
+Visible dates can be restricted between certain range of dates using [MinDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaxDate.html) properties available in `SfCalendar` control. It is applicable in all the calendar views.
 
 The inline feature in month view will work only within the min max date range.
 
@@ -45,9 +45,9 @@ In `SfCalendar`, BlackoutDates refers the disabled dates that restrict the user 
 
 The BlackoutDays can be achieved in two ways.
 
-A date collection can be provided to set the `BlackoutDates`. This is useful when one wants to block dates where holidays or any other events occur.
+A date collection can be provided to set the [BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html). This is useful when one wants to block dates where holidays or any other events occur.
 
-By invoking the `AddDatesInPast` method, all past dates will be blacked out till current date.
+By invoking the [AddDatesInPast](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~AddDatesInPast.html) method, all past dates will be blacked out till current date.
 
 {% highlight c# %}
 	

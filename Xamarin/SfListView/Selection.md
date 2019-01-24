@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in SfListView
-description: Describes about the selection behavior in SfListView.
+title: Selection in Syncfusion ListView
+description: Describes about the selection behavior in Syncfusion ListView.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -295,6 +295,18 @@ private void ListView_SelectionChanging(object sender, ItemSelectionChangingEven
   if (e.AddedItems.Count > 0 && e.AddedItems[0] == ViewModel.Items[0])
       e.Cancel = true;
 }
+{% endhighlight %}
+{% endtabs %}
+
+When [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) added to the collection, index of [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) will change because [SfListView](https://help.syncfusion.com/xamarin/sflistview/overview) will calculate `GroupDescriptor` as a individual row along with items. Yo can get the count of `GroupDescriptor` added in `SfListView` before item gets selected in `SelectionChanging` Event like following:
+
+{% tabs %}
+{% highlight c# %}
+private void OnSelectionChanging(object sender, ItemSelectionChangingEventArgs e) 
+{ 
+    var listView = sender as SfListView; 
+    var groupHeaderRowCount = listView.DataSource.Groups.Count; 
+} 
 {% endhighlight %}
 {% endtabs %}
 

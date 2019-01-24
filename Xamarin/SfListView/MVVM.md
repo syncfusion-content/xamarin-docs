@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with Syncfusion ListView in MVVM
-description: Describes how to use ListView in different cases of MVVM.
+description: Describes how to use Syncfusion ListView in different cases of MVVM.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -78,6 +78,8 @@ public class CommandViewModel
 
 {% endhighlight %}
 {% endtabs %}
+
+N> When Command is binded to ItemTemplate, it must also define `Source` property with its root element as reference. Only then it executes the property in the ViewModel of type Command.
 
 ## Event to command
 

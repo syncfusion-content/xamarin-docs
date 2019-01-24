@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Load More in SfListView
+title: Load More in Syncfusion ListView
 description: Describes about the Load More behavior in Syncfusion ListView.
 platform: xamarin
 control: SfListView

@@ -51,7 +51,7 @@ xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Sync
 
 {% endhighlight %}
 
-## Automatic merging
+### Automatic merging
 
 When using more number of Syncfusion controls in an application, to make the process easier for merging the control style dictionary of the controls, the SyncfusionThemeDictionary class has been provided for automatic merging. When the common theme resource dictionary is merged to this dictionary, control style resource dictionaries will be merged automatically. However, only the styles for the controls will be merged.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with SfListView
-description: Describes about different functionalities and events in SfListView.
+title: Working with Syncfusion ListView
+description: Describes about different functionalities and events in Syncfusion ListView.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -1173,3 +1173,6 @@ private bool FilterDepartures(object obj)
 
  You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample842305360).
  
+### Things to know
+
+* Custom Controls with custom bindable properties are not supported in Xamarin Live Player.

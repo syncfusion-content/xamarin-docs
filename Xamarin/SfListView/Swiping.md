@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Swiping in SfListView
-description: Describes about the swiping behavior in SfListView.
+title: Swiping in Syncfusion ListView
+description: Describes about the swiping behavior in Syncfusion ListView.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -454,6 +454,7 @@ When ListView [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
 * While swiping in Android and UWP, button click event executes after swiping.
 * While swiping in iOS, swipe action does not happened when clicking and swiping a button.
+* Swiping will be reset whenever the listview is refreshed like scrolling or any size changes happen.
 
 ## How To
 

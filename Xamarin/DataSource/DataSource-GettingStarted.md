@@ -24,14 +24,14 @@ After installing Essential Studio for Xamarin, you can find all the required ass
 
 N> Assemblies can be found in unzipped package location in Mac
 
-Add the following assemblies to the pcl project as shown below:
+Add the following assemblies to the .Net standard project as shown below:
 
-**PCL project:**
+**.Net standard project:**
 
 <table>
 <tr>
 <td>
-pcl\Syncfusion.DataSource.Portable.dll
+.Net standard\Syncfusion.DataSource.Portable.dll
 </td>
 </tr>
 </table>

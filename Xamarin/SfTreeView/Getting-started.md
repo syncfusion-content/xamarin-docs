@@ -127,7 +127,7 @@ Create a new blank (Xamarin.Forms.Portable) application in Xamarin Studio or Vis
 
 ## Adding the tree view in Xamarin.Forms 
 
- 1. Add the required assembly references to the PCL, and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
+ 1. Add the required assembly references to the corresponding projects as discussed in the [Assembly deployment](#assembly-deployment) section.
  2. Import the SfTreeView control namespace Syncfusion.XForms.TreeView.
  3. Set the TreeView control to the ContentPage.
 

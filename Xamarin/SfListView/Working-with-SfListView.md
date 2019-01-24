@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with SfListView
-description: Describes about different functionalities and events in SfListView.
+title: Working with Syncfusion ListView
+description: Describes about different functionalities and events in Syncfusion ListView.
 platform: xamarin
 control: SfListView
 documentation: ug

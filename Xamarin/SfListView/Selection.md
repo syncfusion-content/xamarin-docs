@@ -298,6 +298,18 @@ private void ListView_SelectionChanging(object sender, ItemSelectionChangingEven
 {% endhighlight %}
 {% endtabs %}
 
+When [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) added to the collection, index of [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) will change because [SfListView](https://help.syncfusion.com/xamarin/sflistview/overview) will calculate `GroupDescriptor` as a individual row along with items. Yo can get the count of `GroupDescriptor` added in `SfListView` before item gets selected in `SelectionChanging` Event like following:
+
+{% tabs %}
+{% highlight c# %}
+private void OnSelectionChanging(object sender, ItemSelectionChangingEventArgs e) 
+{ 
+    var listView = sender as SfListView; 
+    var groupHeaderRowCount = listView.DataSource.Groups.Count; 
+} 
+{% endhighlight %}
+{% endtabs %}
+
 ### SelectionChanged event
 
 The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) event will occur once selection process has been completed for the selected item in the SfListView. [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemSelectionChangedEventArgs.html) has the following members which provides information for `SelectionChanged` event:

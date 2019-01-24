@@ -22,19 +22,15 @@ DataSource is a non UI component that consumes raw data and processes data opera
 After installing Essential Studio for Xamarin, you can find all the required assemblies in the following installation folders,
 {Syncfusion Essential Studio Installed location}\Essential Studio\{Syncfusion release version}\lib
 
-N> Assemblies can be found in unzipped package location in Mac
+Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/control-dependencies#datasource) section to get the list of assemblies or NuGet package needs to be added as reference to use the DataSource control in any application.
 
-Add the following assemblies to the .Net standard project as shown below:
+N> Assemblies can be found in an unzipped package location in Mac.
 
-**.Net standard project:**
+### Adding DataSource Reference
 
-<table>
-<tr>
-<td>
-.Net standard\Syncfusion.DataSource.Portable.dll
-</td>
-</tr>
-</table>
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add DataSource to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.DataSource](https://www.nuget.org/packages/Syncfusion.Xamarin.DataSource/), and then install it. 
+
+N>Install the same version of the DataSource NUGET in all the projects.
 
 ## Creating your first DataSource in Xamarin.Forms
 
@@ -42,7 +38,7 @@ Add the following assemblies to the .Net standard project as shown below:
 
 ![Xamarin.Forms datasource getting started](DataSource-GettingStarted_images/gettingstarted.png)
 
-* Create new **BlankApp** (Xamarin.Forms.Portable) application in **Xamarin Studio** or **Visual Studio**.
+* Create a new [blank (Xamarin.Forms.NET Standard) application](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/get-started/first-app/?pivots=windows) in Xamarin Studio or Visual Studio for Xamarin.Forms.
 * Now, create a simple data source as shown in the following code example. Add the following code example in a newly created class file and save it as **Contacts.cs** file.
 
 {% tabs %}
@@ -124,7 +120,6 @@ public class ContactsList : ObservableCollection<Contacts>, INotifyPropertyChang
 
 {% tabs %}
 {% highlight c# %}
-[C#]
 public App()
 {
     DataSource dataSource = new DataSource();
@@ -146,7 +141,6 @@ The `SortDescriptor` object holds following three properties:
  
 {% tabs %}
 {% highlight c# %}
-[C#]
 dataSource.SortDescriptors.Add(new SortDescriptor("ContactName"));
 {% endhighlight %}
 {% endtabs %}
@@ -164,7 +158,6 @@ The following code example illustrates this without `KeySelector`.
 
 {% tabs %}
 {% highlight c# %}
-[C#]
 dataSource.GroupDescriptors.Add(new GroupDescriptor("ContactName"));
 
 {% endhighlight %}
@@ -174,7 +167,6 @@ The following code example illustrates this with `KeySelector`.
 
 {% tabs %}
 {% highlight c# %}
-[C#]
     dataSource.GroupDescriptors.Add(new GroupDescriptor() 
     {
         PropertyName = "ContactName",
@@ -193,7 +185,6 @@ The following code example illustrates this with `KeySelector`.
 Please refer the below code example that illustrates binding the created DataSource to a ListView control.
 {% tabs %}
 {% highlight c# %}
-[C#]
 
 public App()
 {

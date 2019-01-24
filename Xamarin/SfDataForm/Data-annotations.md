@@ -107,15 +107,6 @@ Specifies the required data field value. Refer to {{'[here](https://help.syncfus
 </tr>
 <tr>
 <td>
-RegularExpression
-
-</td>
-<td>
-Specifies the value matches the specific pattern. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/validation#data-annotations)'| markdownify }} for more details.
-</td>
-</tr>
-<tr>
-<td>
 Range
 
 </td>

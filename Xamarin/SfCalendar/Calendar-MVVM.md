@@ -7,24 +7,19 @@ control: SfCalendar
 documentation: ug
 ---
 
-# Commands
+## Commands
  
-## Tap command
+### Tap command
  
 The [TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.TapCommand.html) will be triggered whenever tapping the calendar cell and passing the [CalendarTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs.html) as parameter.
 
 {% tabs %}
 {% highlight xaml %} 
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-			 xmlns:local="clr-namespace:CalendarTestBedSample" x:Class="CalendarSample.MainPage" 
-			 xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms">
     <calendar:SfCalendar x:Name="calendar"  TapCommand="{Binding CalendarCellTapped}">
               <calendar:SfCalendar.BindingContext>
               <local:CalendarViewModel/>
               </calendar:SfCalendar.BindingContext>
     </calendar:SfCalendar>
-</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 public class CalendarViewModel
@@ -53,22 +48,17 @@ public class CalendarViewModel
 {% endhighlight %}
 {% endtabs %} 
 
-## Hold command
+### Hold command
 
 The [HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.HoldCommand.html) will be triggered whenever the calendar cell is long pressed and passing the [DayCellHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.DayCellHoldingEventArgs.html) as parameter.
 
 {% tabs %}
 {% highlight xaml %} 
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-			 xmlns:local="clr-namespace:CalendarTestBedSample" x:Class="CalendarSample.MainPage" 
-			 xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms">
     <calendar:SfCalendar x:Name="calendar"  HoldCommand="{Binding OnDateCellHolding}">
               <calendar:SfCalendar.BindingContext>
               <local:CalendarViewModel/>
               </calendar:SfCalendar.BindingContext>
     </calendar:SfCalendar>
-</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 public class CalendarViewModel
@@ -97,22 +87,17 @@ public class CalendarViewModel
 {% endhighlight %}
 {% endtabs %} 
 
-## Month changed command
+### Month changed command
 
 The [MonthChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthChangedCommand.html) will be triggered whenever the navigating between month and Forward()/backward() is called in calendar and passing the [MonthChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthChangedEventArgs.html) as parameter.
 
 {% tabs %}
 {% highlight xaml %} 
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:local="clr-namespace:CalendarTestBedSample" x:Class="CalendarSample.MainPage" 
-			 xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms">
     <calendar:SfCalendar x:Name="calendar"  MonthChangedCommand="{Binding OnMonthChanged}">
               <calendar:SfCalendar.BindingContext>
               <local:CalendarViewModel/>
               </calendar:SfCalendar.BindingContext>
     </calendar:SfCalendar>
-</ContentPage>
 {% endhighlight %}
 {% highlight c# %}
 public class CalendarViewModel
@@ -139,7 +124,7 @@ public class CalendarViewModel
 {% endhighlight %}
 {% endtabs %} 
 
-## Selection changed command
+### Selection changed command
 
 The [SelectionChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SelectionChangedCommand.html) will be triggered whenever the selection is changed in calendar for the following selections and passing the [SelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs.html) as parameter.
     
@@ -150,17 +135,11 @@ The [SelectionChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/
 
 {% tabs %}
 {% highlight xaml %} 
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:local="clr-namespace:CalendarTestBedSample" x:Class="CalendarSample.MainPage" 
-			 xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms">
     <calendar:SfCalendar x:Name="calendar"  SelectionChangedCommand="{Binding OnSelectionChanged}">
               <calendar:SfCalendar.BindingContext>
               <local:CalendarViewModel/>
               </calendar:SfCalendar.BindingContext>
     </calendar:SfCalendar>
-</ContentPage>
-
 {% endhighlight %}
 {% highlight c# %}
 public class CalendarViewModel

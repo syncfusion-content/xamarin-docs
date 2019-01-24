@@ -531,3 +531,5 @@ namespace Chips
 {% endtabs %}
 
 ![action typed chip group](images/action-type-chip/action_type_chip.png)
+
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1258894659.zip)

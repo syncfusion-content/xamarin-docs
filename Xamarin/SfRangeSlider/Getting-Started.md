@@ -156,4 +156,4 @@ SfRangeSlider rangeSlider=new SfRangeSlider();
 
 {% endtabs %}  
                                     
-The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RangeSliderSample1483553890) link.
+The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RangeSliderSample1051483242.zip) link.

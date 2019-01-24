@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Swiping in Xamarin.Forms ListView | Syncfusion
-description: This topic explains about how to enable swiping feature in Xamarin.Forms ListView and its various customization features available.
+description: This topic explains how to enable swiping feature in Xamarin.Forms ListView and its various customization features.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -454,7 +454,7 @@ When ListView [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
 * While swiping in Android and UWP, button click event executes after swiping.
 * While swiping in iOS, swipe action does not happened when clicking and swiping a button.
-* Swiping will be reset whenever the listview is refreshed like scrolling or any size changes happen.
+* Swiping will be reset whenever the listview is refreshed like scrolling or any size change is made.
 
 ## How To
 

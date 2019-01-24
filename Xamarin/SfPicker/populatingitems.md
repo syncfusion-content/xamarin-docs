@@ -188,11 +188,11 @@ ItemsSource="{Binding Dates}" />
 
 You can download the multi column sample from the following link.
 
-Sample link: [MultiColumn](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MultiColumnSample798010799)
+Sample link: [MultiColumn](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MultiColumnSample1443124256)
 
 The following screenshot illustrates the output of the above code.
 
-![](images/multicolumn.png)
+![MultiColumn Image](images/multicolumn.png)
 
 
 ## Set items colors and font attributes customization
@@ -636,5 +636,5 @@ public string Text { get; set; }
 
 Screen shot for the above code.
 
-![](images/CustomPickerDroid.png)    ![](images/CustomPickerIOS.png)
+![CustomPickerDroid Image](images/CustomPickerDroid.png)    ![CustomPickerIOS Image](images/CustomPickerIOS.png)
 

@@ -234,4 +234,4 @@ SfCircularProgressBar sfCircularProgressBar = new SfCircularProgressBar{Progress
 {% endtabs %} 
 ![Xamarin.Forms linear progress bar and circular progress bar with customized colors](overview_images/style.png)
 
-You can find the complete getting started sample here: [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar_GettingStarted-1542640562.zip).
+You can find the complete getting started sample here: [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar-717653110.zip).

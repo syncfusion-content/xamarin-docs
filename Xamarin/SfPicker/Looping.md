@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Looping for Syncfusion.Xamarin.Forms SfPicker
+title: Looping support for Syncfusion.Xamarin.Forms SfPicker
 description: Looping support of SfPicker control
 platform: Xamarin
 control: Picker
@@ -58,9 +58,9 @@ picker.EnableLooping = true;
 
 {% endtabs %}
 
-![Image for Looping](images/Looping.png)
+![Looping Image](images/Looping.png)
 
-You can find the complete Looping sample from this [link.](http://www.syncfusion.com/downloads/support/forum/137855/ze/Looping752628297)
+You can find the complete Looping sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Looping1389683821)
 
 ## How to restrict Looping in a particular column of the picker
 
@@ -91,6 +91,6 @@ private void Picker_OnColumnLoaded(object sender, Syncfusion.SfPicker.XForms.Col
 
 {% endtabs %}
 
-![Image for ColumnEnableLooping](images/ColumnEnableLooping.png)
+![ColumnEnableLooping Image](images/ColumnEnableLooping.png)
 
-You can find the sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoReverse-1501001754.zip)
+You can find the sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ColumnAutoReverse929578764)

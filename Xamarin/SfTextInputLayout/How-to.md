@@ -19,8 +19,8 @@ The border stroke width (for [Outlined](https://help.syncfusion.com/cr/cref_file
 <inputLayout:SfTextInputLayout
             Hint="Name" 
             ContainerType="Outlined"
-	        FocusedStrokeWidth="4"
-	        UnfocusedStrokeWidth="2">
+	       FocusedStrokeWidth="4"
+	       UnfocusedStrokeWidth="2">
             <Entry />
 </inputLayout:SfTextInputLayout>
 		

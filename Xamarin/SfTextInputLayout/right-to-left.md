@@ -7,7 +7,7 @@ control: SfTextInputLayout
 documentation: ug
 ---
 
-# Right-to-Left (RTL)
+# Right-to-Left(RTL)
 
 The TextInputLayout supports to change the flow of text to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft`.
 
@@ -22,14 +22,14 @@ N> A specific platform setup is required to enable the right-to-left localizatio
              x:Class="TextInputLayout.MainPage">
 
     <StackLayout>
-        <inputLayout:SfTextInputLayout
+       <inputLayout:SfTextInputLayout
             x:Name="textinputlayout" 
             FlowDirection="RightToLeft"
-			ContainerType="Outlined"
-			Hint="اسم"  
-			HelperText="أدخل أسمك" >
-			<Entry />
-		</inputLayout:SfTextInputLayout>
+            ContainerType="Outlined"
+            Hint="اسم"  
+            HelperText="أدخل أسمك" >
+            <Entry />
+        </inputLayout:SfTextInputLayout>
     </StackLayout>
 
 </ContentPage>

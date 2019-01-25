@@ -244,6 +244,62 @@ void Handle_ItemTapped(object sender, Syncfusion.SfRadialMenu.XForms.ItemTappedE
 	}
 {% endhighlight %}
 
-![](images/populatingItems.png)
+![SfRadialMenu with Items](images/populatingItems.png)
 
-N> To use FontIcons, add respective FontFamily name in `info.plist` file under fonts provided by application category.
+N> To use FontIcons, add respective FontFamily name in the `info.plist` file under fonts provided by application category.
+
+## Through ItemsSource and ItemTemplate
+
+Using ItemsSource, objects of any class can be given as items for SfRadialMenu. The views corresponding to the objects can be set using the ItemTemplate property. A simple usage of ItemTemplate and ItemsSource to display a default image and name of users is shown in the following code.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <radialmenu:SfRadialMenu x:Name="radialMenu" 
+        ItemWidth="30" ItemHeight="50" 
+        SeparatorThickness="2" 
+        SeparatorColor="#DDDDDD">
+        <radialmenu:SfRadialMenu.CenterButtonView>
+            <Grid WidthRequest="35" BackgroundColor="Transparent">
+                <Image Source="friendadd.png" 
+                       HeightRequest="35" 
+                       WidthRequest="35" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"/>
+            </Grid>
+        </radialmenu:SfRadialMenu.CenterButtonView>
+        <radialmenu:SfRadialMenu.ItemTemplate>
+             <DataTemplate>
+                <StackLayout>
+                    <Image Source="user.png" Margin="2,0" WidthRequest="25" HorizontalOptions="Center" />
+                    <Label HorizontalOptions="Center"  Text="{Binding}"/>
+                </StackLayout>
+            </DataTemplate>
+        </radialmenu:SfRadialMenu.ItemTemplate>
+    </radialmenu:SfRadialMenu>
+    
+{% endhighlight %}
+
+{% highlight C# %}
+
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            this.BindingContext = this;
+            radialMenu.ItemsSource = new List<string>()
+            {
+                "Alex",
+                "Lee",
+                "Ben",
+                "Carl",
+                "Yang"
+            };
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}

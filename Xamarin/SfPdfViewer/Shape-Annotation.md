@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Working with shape annotations | Syncfusion
-description: Working with shape annotations
+title:  Add & modify shapes using PDF viewer Xamarin.Forms | Syncfusion
+description: PDF viewer Xamarin.Forms allows user to add, move and delete shapes such as line, rectangle & ellipse PDF document.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug

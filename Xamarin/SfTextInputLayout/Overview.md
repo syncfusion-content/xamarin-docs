@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Text Input Layout
-description: The text input layout control adds decorative elements such as floating label, icons, and assistive labels on the top of the input views such as SfMaskedEdit, SfNumericTextBox, Entry, and Editor controls.
+description: The text input layout control adds decorative elements such as floating label, icons, and assistive labels on the top of the input views.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion TextInputLayout Container Type
-description: The background of the input view for text input layout can be changed by setting the ContainerType property. This property determines the appearance of text input layout background and its border.
+description: The background of the input view for text input layout can be changed by setting the ContainerType property. This property determines the appearance of background and its border.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug

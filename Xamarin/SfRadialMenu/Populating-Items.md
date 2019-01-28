@@ -244,6 +244,6 @@ void Handle_ItemTapped(object sender, Syncfusion.SfRadialMenu.XForms.ItemTappedE
 	}
 {% endhighlight %}
 
-![](images/populatingItems.png)
+![SfRadialMenu with Items](images/populatingItems.png)
 
 N> To use FontIcons, add respective FontFamily name in `info.plist` file under fonts provided by application category.

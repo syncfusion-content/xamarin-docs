@@ -1,6 +1,6 @@
 ---
 title: Adding Layout in Diagram control for Xamarin.Forms | Syncfusion
-description: Learn how to add layout in diagram control.
+description: Describes how to add layout,data source setting ,drag & drop support in layout and expand & collapse in diagram control for Xamarin.Forms
 platform: xamarin
 control: Diagram
 documentation: ug

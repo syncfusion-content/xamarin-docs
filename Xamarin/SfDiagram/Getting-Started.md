@@ -1,6 +1,6 @@
 ---
-title: Getting Started for Essential Xamarin.Forms Diagram.
-description: getting started
+title: Getting Started for Essential Xamarin.Forms Diagram | Syncfusion
+description: Getting started with Xamarin.Forms diagram and walk through to create a demo application from the scratch.
 platform: Xamarin
 control: SfDiagram
 documentation: UG

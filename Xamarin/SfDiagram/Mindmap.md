@@ -1,6 +1,6 @@
 ---
-title: Add mindmap for diagram | Syncfusion
-description: Learn how to add mindmap in diagram
+title: Mindmap for Essential Xamarin.Forms Diagram | Syncfusion
+description: Describes how to add mindmap,free form layout and mindmap layout style in diagram control for Xamarin.Forms
 platform: xamarin
 control: SfDiagram
 documentation: UG

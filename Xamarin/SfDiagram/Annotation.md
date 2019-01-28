@@ -1,6 +1,6 @@
 ---
-title: Adding Annotation for node and connector 
-description: Learn how to add annotation in node and connector.
+title: Annotation for Essential Xamarin.Forms Diagram | Syncfusion
+description: Learn how to add annotation in node and connector for Xamarin.Forms
 platform: Xamarin
 control: Diagram
 documentation: ug

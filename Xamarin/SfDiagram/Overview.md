@@ -1,6 +1,6 @@
 ---
-title: Overview of Diagram control for Xamarin.
-description: Diagram overview and the key features are available.
+title: Overview of Diagram control for Xamarin.Forms | Syncfusion
+description: Diagram overview and the key features are available in Xamarin.Forms
 platform: Xamarin
 control: SfDiagram
 documentation: Ug

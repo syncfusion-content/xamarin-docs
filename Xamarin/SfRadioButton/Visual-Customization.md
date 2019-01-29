@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual customization in SfRadioButton for Xamarin.Forms platform
+title: Visual customization for Syncfusion.Xamarin.Forms SfRadioButton
 description: Learn how to customize the basic features of SfRadioButton
 platform: Xamarin.Forms
 control: SfRadioButton
@@ -36,7 +36,7 @@ radioGroup.Children.Add(uncheck);
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/StateColor.png)
+![StateColor Image](Images/StateColor.png)
 
 ## Setting caption text appearance 
 
@@ -65,6 +65,6 @@ radioButton.FontSize = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/CaptionAppereance.png)
+![CaptionAppereance Image](Images/CaptionAppereance.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/RadioButton_VisualCustomization.zip).
+This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_VisualCustomization1644131704).

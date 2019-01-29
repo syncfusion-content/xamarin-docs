@@ -185,7 +185,7 @@ e.ColumnWidth = 130;
 
 You can download the sample for reference from the following link.
 
-Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTimePicker589676073)
+Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DateTimePickerSample1186467030)
 
 ## Add caption
 
@@ -619,8 +619,8 @@ return colors[color.ToString()];
 
 The following screenshot illustrates the output of above code example.
 
-![](images/casecade.png)
+![Cascading Image](images/casecade.png)
 
 You can download the sample for reference from the following link.
 
-Sample link:[Cascading](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading-527874888)
+Sample link:[Cascading](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading370076787)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started
+title: Getting Started for Syncfusion Essential Xamarin.Forms Progress Bar
 description: Getting Started.
 platform: xamarin
 control: ProgressBar
@@ -15,7 +15,7 @@ This section explains the steps required to work with the progress bar control f
 
 Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org/). To add the progress bar to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfProgressBar](https://www.nuget.org/packages/Syncfusion.Xamarin.SfProgressBar/), and then install it.
 
-![](overview_images/nuget.png)
+![[Xamarin Progress Bar NuGet installation](overview_images/nuget.png)
 
 To know more about obtaining Syncfusion components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac#) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows#). If you prefer to manually refer to the assemblies instead of NuGet, refer to this [documentation](https://help.syncfusion.com/xamarin/introduction/control-dependencies#progress-bar) to know about the dependent assemblies for progress bar.
 
@@ -148,7 +148,7 @@ N> By default, the value of progress should be specified between 0 and 100. To s
 
 Run the project, and check if you get following output to make sure that the project has been configured properly to add the progress bar.
 
-![](overview_images/progressbar.png)
+![Xamarin.Forms linear progress bar and circular progress bar](overview_images/progressbar.png)
 
 ## Enabling indeterminate state
 
@@ -201,7 +201,7 @@ SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { Progress
 {% endhighlight %}
 
 {% endtabs %} 
-![](overview_images/indeterminate.png)
+![Xamarin.Forms linear progress bar and circular progress bar visualized with multiple sequential task](overview_images/indeterminate.png)
 
 ## Apply colors
 
@@ -232,6 +232,6 @@ SfCircularProgressBar sfCircularProgressBar = new SfCircularProgressBar{Progress
 {% endhighlight %}
 
 {% endtabs %} 
-![](overview_images/style.png)
+![Xamarin.Forms linear progress bar and circular progress bar with customized colors](overview_images/style.png)
 
-You can find the complete getting started sample here: [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar-929614915.zip).
+You can find the complete getting started sample here: [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ProgressBar-717653110.zip).

@@ -153,3 +153,5 @@ namespace BorderGettingStarted
 {% endtabs %}
 
 ![border](images/Xamarin_Forms_Border.png)
+
+The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted828010295.zip) link.

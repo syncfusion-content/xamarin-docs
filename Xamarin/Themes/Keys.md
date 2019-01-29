@@ -11,7 +11,7 @@ documentation: ug
 
 This page lists the keys for each control and the element to which it is mapped for all the controls.
 
-
+## SfTextInputLayout
 
 <table>
     <tr>
@@ -23,11 +23,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </th>
         <th>
-            UI Elements
-            <br/>
-            <br/>
-        </th>
-        <th>
             Description
             <br/>
             <br/>
@@ -35,8 +30,8 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="5">
-            LightTheme  
+        <td rowspan="23">
+            SfTextInputLayoutStyles  
             <br/>
             <br/>
         </td>
@@ -46,24 +41,14 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Hint  
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Change the color of hint when text input layout is Focused
+            Color of hint when text input layout is focused.
             <br/>
             <br/>
         </td>
     </tr>
     <tr>
         <td>
-            Line/Border  
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Change the color of Line/Border when text input layout is Focused
+            Color of Line/Border when text input layout is focused.
             <br/>
             <br/>
         </td>
@@ -77,36 +62,21 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Hint  
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Change the color of hint when the input view contains error and it gets focused.
+            Color of hint when the input view contains error and it gets focused.
             <br/>
             <br/>
         </td>
     </tr>
     <tr>
         <td>
-            Border  
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Change the color of Border when input view contains error.
+            Color of border when input view contains error.
             <br/>
             <br/>
         </td>
     </tr>
     <tr>
         <td>
-            Counter label  
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Change the color of counter label when input view contains error.
+            Color of counter label when input view contains error.
             <br/>
             <br/>
         </td>
@@ -114,23 +84,13 @@ This page lists the keys for each control and the element to which it is mapped 
 
     
     <tr>
-        <td rowspan="18">
-            SfTextInputLayoutStyles
-            <br/>
-            <br/>
-        </td>
         <td>
             SfTextInputLayoutHintColor
             <br/>
             <br/>
         </td>
-          <td>
-            Hint  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of hint
+            Color of hint when the text input layout is in default state.
             <br/>
             <br/>
         </td>
@@ -141,13 +101,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Hint  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of hint when text input layout is disabled
+            Color of hint when text input layout is disabled.
             <br/>
             <br/>
         </td>
@@ -159,13 +114,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Hint  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of hint when text input layout is disabled and text inside the input view floated
+            Color of hint when text input layout is disabled and text inside the input view floated.
             <br/>
             <br/>
         </td>
@@ -177,13 +127,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Line/Border  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of line/border when text input layout is in default state.
+            Color of line/border when text input layout is in default state.
             <br/>
             <br/>
         </td>
@@ -195,13 +140,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Line  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of line when text input layout is in disabled state.
+            Color of line when text input layout is in disabled state.
             <br/>
             <br/>
         </td>
@@ -213,13 +153,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Border  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of border when text input layout is in disabled state.
+            Color of border when text input layout is in disabled state.
             <br/>
             <br/>
         </td>
@@ -231,13 +166,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Counter label  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of counter label when text input layout is in default state.
+            Color of counter label when text input layout is in default state.
             <br/>
             <br/>
         </td>
@@ -249,13 +179,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Counter label  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of counter label when text input layout is in disabled state.
+            Color of counter label when text input layout is in disabled state.
             <br/>
             <br/>
         </td>
@@ -267,13 +192,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Container background  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of container background when the text input layout is in default state.
+            Color of container background when the text input layout is in default state.
             <br/>
             <br/>
         </td>
@@ -285,13 +205,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Container background  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of container background when text input layout is in disabled state.
+            Color of container background when text input layout is in disabled state.
             <br/>
             <br/>
         </td>
@@ -303,13 +218,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Helper text  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of helper text when text input layout is in default state.
+            Color of helper text when text input layout is in default state.
             <br/>
             <br/>
         </td>
@@ -321,13 +231,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Helper text  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of helper text when text input layout is in disabled state.
+            Color of helper text when text input layout is in disabled state.
             <br/>
             <br/>
         </td>
@@ -339,13 +244,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Error text  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of error text when text input layout is in default state.
+            Color of error text when text input layout is in default state.
             <br/>
             <br/>
         </td>
@@ -357,13 +257,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Error text  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of error text when text input layout is in disabled state.
+            Color of error text when text input layout is in disabled state.
             <br/>
             <br/>
         </td>
@@ -371,17 +266,12 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfTextInputLayoutPasswordToggleFocusedColor         
-            <br/>
-            <br/>
-        </td>
-          <td>
-            Password toggle button  
+            SfTextInputLayoutPasswordTogglefocusedColor         
             <br/>
             <br/>
         </td>
         <td>
-            Change the color of password toggle button when the input view gets focused.
+            Color of password toggle button when the input view gets focused.
             <br/>
             <br/>
         </td>
@@ -393,13 +283,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Password toggle button  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of password toggle button when the text input layout is in disabled state.
+            Color of password toggle button when the text input layout is in disabled state.
             <br/>
             <br/>
         </td>
@@ -411,13 +296,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Password toggle button  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of password toggle button when the input view gets unfocused.
+            Color of password toggle button when the input view gets unfocused.
             <br/>
             <br/>
         </td>
@@ -429,13 +309,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-          <td>
-            Password toggle button  
-            <br/>
-            <br/>
-        </td>
         <td>
-            Change the color of password toggle button when the input view contains error.
+            Color of password toggle button when the input view contains error.
             <br/>
             <br/>
         </td>

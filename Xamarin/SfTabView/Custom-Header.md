@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Custom Header
+title:  Custom Header for Syncfusion Essential Xamarin.Forms SfTabView.
 description: Custom Header in Syncfusion TabView control for Xamarin.Forms platform
 platform: Xamarin.Forms
 control: TabView
@@ -152,7 +152,7 @@ TextColor="LightSlateGray" />
 </syncfusion:SfTabView>
 {% endhighlight %}
 
-![custom header](images/Custom_header/header_custom.png)
+![custom header](images/Custom-header/header_custom.png)
 
 ## How to handle the events for custom view with tab view
 

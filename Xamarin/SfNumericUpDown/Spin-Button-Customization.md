@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and styling in Syncfusion NumericUpDown control for Xamarin.Forms
+title: Appearance and styling in SfNumericUpDown
 description: Learn how to add customize spin buttons position in NumericUpDown.
 platform: Xamarin
 control: NumericUpDown
@@ -34,7 +34,7 @@ Spin Buttons will get aligned to the right side of the control.
 {% endtabs %}
 
 
-![](images/right.png)
+![right](images/right.png)
 
 ### Left
 
@@ -57,7 +57,7 @@ Spin Buttons will get aligned to the left side of the control.
 {% endtabs %}
 
 
-![](images/left.png)
+![left](images/left.png)
 
 ### Both
 
@@ -80,7 +80,7 @@ Spin Buttons will get aligned to the both side of the control.
 {% endtabs %}
 
 
-![](images/both.png)
+![both](images/both.png)
 
 N> By default the property value is Right.
 
@@ -211,7 +211,7 @@ N> For image and Font icon we need to add the the respective image and TTF file.
 
 {% endtabs %}
 
-![](images/FontTTf.png)
+![fonticon](images/FontTTf.png)
 
 
 
@@ -292,4 +292,4 @@ N> For image and Font icon we need to add the the respective image and TTF file.
 
 {% endtabs %}
 
-![](images/image.png)
+![image](images/image.png)

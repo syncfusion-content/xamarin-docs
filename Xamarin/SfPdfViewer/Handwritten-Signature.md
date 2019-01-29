@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Handwritten signature in Xamarin.Forms PDF Viewer | Syncfusion
+title:  Handwritten signature in PDF Viewer Xamarin.Forms | Syncfusion
 description: Working with handwritten signatures
 platform: Xamarin
 control: SfPdfViewer

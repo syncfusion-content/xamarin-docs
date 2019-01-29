@@ -1,6 +1,6 @@
 ---
 title: Adding connectors in diagram control for Xamarin.Forms | Syncfusion
-description: Describes how to add connector, connection with port and node and it's appearance in diagram control for Xamarin.Forms
+description: Describes how to add connector, connection with node and it's appearance in diagram control for Xamarin.Forms
 platform: Xamarin
 control: Diagram
 documentation: UG

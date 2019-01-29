@@ -30,11 +30,23 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="23">
+        <td rowspan="24">
             SfTextInputLayoutStyles  
             <br/>
             <br/>
         </td>
+		<td>
+           SfTextInputLayoutTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            Key for mapping the below keys and the properties of SfTextInputLayout.
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
         <td rowspan="2">
             SyncPrimaryColor  
             <br/>
@@ -266,7 +278,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfTextInputLayoutPasswordToggleFocusedColor         
+            SfTextInputLayoutPasswordTogglefocusedColor         
             <br/>
             <br/>
         </td>

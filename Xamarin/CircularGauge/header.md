@@ -114,3 +114,68 @@ You can customize the header's text by using the [`FontFamily`](https://help.syn
 {% endtabs %}
 
 ![](header_images/header-customise.png)
+
+## Alignment of header
+
+You can align the header using the [`HorizontalHeaderPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~HorizontalHeaderPosition.html) and [`VerticalHeaderPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~VerticalHeaderPosition.html) properties.
+
+### Setting horizontal header position
+
+{% tabs %}
+
+{% highlight xaml %}
+ 
+<gauge:SfCircularGauge>
+    <gauge:SfCircularGauge.Headers>
+        <gauge:Header Text="Speedometer" ForegroundColor="Black" HorizontalHeaderPosition="Start"/>
+    </gauge:SfCircularGauge.Headers>
+</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge circularGauge = new SfCircularGauge();
+Header header = new Header();
+header.Text = "Speedometer";
+header.ForegroundColor = Color.Black;
+header.HorizontalHeaderPosition = ViewAlignment.Start;
+circularGauge.Headers.Add(header);
+Content = circularGauge;
+    
+{% endhighlight %}
+
+{% endtabs %}
+
+![](header_images/header-customise.png)
+
+### Setting vertical header position
+
+{% tabs %}
+
+{% highlight xaml %}
+ 
+<gauge:SfCircularGauge>
+    <gauge:SfCircularGauge.Headers>
+        <gauge:Header Text="Speedometer" ForegroundColor="Black" VerticalHeaderPosition="Start"/>
+    </gauge:SfCircularGauge.Headers>
+</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge circularGauge = new SfCircularGauge();
+Header header = new Header();
+header.Text = "Speedometer";
+header.ForegroundColor = Color.Black;
+header.VerticalHeaderPosition = ViewAlignment.Start;
+circularGauge.Headers.Add(header);
+Content = circularGauge;
+    
+{% endhighlight %}
+
+{% endtabs %}
+
+![](header_images/header-customise.png)
+

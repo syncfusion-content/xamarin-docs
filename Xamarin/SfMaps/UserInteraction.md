@@ -197,20 +197,23 @@ The zooming feature enables you zoom in and zoom out the maps to show the in-dep
 
 [`MaxZoom`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~MaxZoom.html#): Sets the maximum level of zooming.
 
+[`Zoomlevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~ZoomLevel.html): Sets the zooming level to the shapes.
+
 {% tabs %}
 
 {% highlight xml %}
 
- <maps:SfMaps x:Name="sfmap"  EnableZooming="True" MinZoom="1" 
-                       MaxZoom="10"   BackgroundColor="White" />
+ <maps:SfMaps EnableZooming="True" MinZoom="1" 
+                       MaxZoom="10"  ZoomLevel="2"/>
 {% endhighlight %}
 
 {% highlight c# %}
 
- SfMaps map = new SfMaps(); 
-            map.EnableZooming = true;
-            map.MinZoom = 1;
-            map.MaxZoom = 10;
+SfMaps map = new SfMaps(); 
+map.EnableZooming = true;
+map.MinZoom = 1;
+map.MaxZoom = 10;
+map.ZoomLevel = 2;
 
 {% endhighlight %}
 

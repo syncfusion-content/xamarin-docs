@@ -222,6 +222,40 @@ The [`Direction`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.S
 
 ![](scales_images/scale-direction.png)
 
+## Setting maximum labels
+
+The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~MaximumLabels.html) property defines the count of the scale labels in the 100 pixels. By default, the maximum labels for 100 pixels is 3.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<gauge:SfCircularGauge>
+    <gauge:SfCircularGauge.Scales>
+        <gauge:Scale EndValue="200" MaximumLabels="4" MinorTicksPerInterval="1" />
+    </gauge:SfCircularGauge.Scales>
+</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge sfCircularGauge = new SfCircularGauge();
+ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+Scale scale = new Scale();
+scale.EndValue = 200;
+scale.MaximumLabels = 4;
+scale.MinorTicksPerInterval = 1;
+scales.Add(scale);
+sfCircularGauge.Scales = scales;
+Content = sfCircularGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](scales_images/scale-direction.png)
+
 ## Setting multiple scales for scale
 
 It helps you to add multiple scales to the same circular gauge. You can customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Scales.html) collection.
@@ -331,3 +365,61 @@ It helps you to add multiple scales to the same circular gauge. You can customiz
 {% endtabs %}
 
 ![](scales_images/multiple-scale.png)
+
+## Events
+
+You can change the default label,by trigger the [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelCreated_EV.html) event. You can create label by using the [`LabelContent`] property of [`LabelCreatedEventArgs`].
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<gauge:SfCircularGauge>
+    <gauge:SfCircularGauge.Scales>
+        <gauge:Scale x:Name="scale" StartAngle="270" StartValue="0" EndValue="16" Interval="2" 
+                     SweepAngle="360" MinorTicksPerInterval="1" ShowLastLabel="False" 
+                     LabelCreated="scale_LabelCreated" />
+    </gauge:SfCircularGauge.Scales>
+</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    private void scale_LabelCreated(object sender, LabelCreatedEventArgs args)
+        {
+            switch ((string)args.LabelContent)
+            {
+
+                case "0":
+                    args.LabelContent = "N";
+                    break;
+                case "2":
+                    args.LabelContent = "NE";
+                    break;
+                case "4":
+                    args.LabelContent = "E";
+                    break;
+                case "6":
+                    args.LabelContent = "SE";
+                    break;
+                case "8":
+                    args.LabelContent = "S";
+                    break;
+                case "10":
+                    args.LabelContent = "SW";
+                    break;
+                case "12":
+                    args.LabelContent = "W";
+                    break;
+                case "14":
+                    args.LabelContent = "NW";
+                    break;
+            }
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](scales_images/labelcreated.png)

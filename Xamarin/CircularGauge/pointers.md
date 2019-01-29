@@ -213,7 +213,7 @@ Knob of the needle pointer can be customized by using the [`KnobColor`](https://
 
                  <gauge:Scale.Pointers>
                      <gauge:NeedlePointer  Value="10" KnobRadius="15" KnobStrokeColor="#007DD1"
-                                            KnobStrokeWidth="8" KnobColor="White"/>                
+                                            KnobStrokeWidth="8" KnobColor="White" KnobRadiusFactor="0.1"/>                
                  </gauge:Scale.Pointers>
 		 
 		  </gauge:Scale>
@@ -237,6 +237,7 @@ Knob of the needle pointer can be customized by using the [`KnobColor`](https://
     needlePointer.KnobStrokeColor = Color.FromHex("#007DD1");
     needlePointer.KnobColor = Color.White;
     needlePointer.KnobStrokeWidth = 8;
+    needlePointer.KnobRadiusFactor = 0.1;
     scale.Pointers.Add(needlePointer);
     scales.Add(scale);
     circularGauge.Scales = scales;  

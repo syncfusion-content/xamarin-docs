@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview in SfRadioButton for Xamarin.Forms platform
+title: Overview for Syncfusion.Xamarin.Forms SfRadioButton
 description: Learn how to customize the basic features of SfRadioButton
 platform: Xamarin.Forms
 control: SfRadioButton
@@ -18,4 +18,4 @@ The radio button is a selection control that allows users to select one option f
 * Allow users to select and clear the control by tapping.
 * Supports radio button color and label text customization.
 
-![](Images/RadioButton_Overview.png)
+![RadioButton Image](Images/RadioButton_Overview.png)

@@ -13,7 +13,7 @@ This section explains how to showcase a Gallery of photos along with a Title usi
 
 ## Add SfCarousel reference
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) link to know about the assemblies required for adding Carousel to your project.
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfcarousel) link to know about the assemblies required for adding Carousel to your project.
 
 ## Launching the SfCarousel on each platform
 
@@ -411,6 +411,6 @@ carousel.SelectedIndex=2;
 
 N> The `SelectedIndex` property will be 0 by default.
 
-![](images/gettingstarted.png)
+![OverView image for Carousel](images/gettingstarted.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1031921227.zip)
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted982303964.zip)

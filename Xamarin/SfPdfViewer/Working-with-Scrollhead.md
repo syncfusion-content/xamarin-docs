@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with ScrollHead | Syncfusion
+title:  ScrollHead in PDF Viewer Xamarin.Forms | Syncfusion
 description: Working with ScrollHead
 platform: Xamarin
 control: SfPdfViewer

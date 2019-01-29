@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual customization in SfCheckBox for Xamarin.Forms platform
+title: Visual customization for Syncfusion.Xamarin.Forms SfCheckBox
 description: Learn how to customize the basic features of SfCheckBox
 platform: Xamarin.Forms
 control: SfCheckBox
@@ -26,7 +26,7 @@ checkBox.CornerRadius = 5.0f;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/Radius.png)
+![Radius Image](Images/Radius.png)
 
 ## Customizing state color
 The default state colors can be customized using the `CheckedColor` and `UncheckedColor` properties. The checked/indeterminate state color is updated to the `CheckedColor` property value when the state is changed to the checked/indeterminate.The unchecked state color is updated to `UncheckedColor` property value when the state is changed to unchecked. 
@@ -52,7 +52,7 @@ indeterminate.CheckedColor = Color.Purple;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/StateColor.png)
+![State color image](Images/StateColor.png)
 
 ## Setting caption text appearance 
 You can customize the display text appearance of the `SfCheckBox` control using the following properties:
@@ -79,6 +79,6 @@ caption.FontSize = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![](Images/CaptionAppearance.png)
+![CaptionAppearance image](Images/CaptionAppearance.png)
 
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/CheckBox_VisualCustomization.zip ).
+This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_VisualCustomization881578223).

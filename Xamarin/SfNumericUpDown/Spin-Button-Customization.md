@@ -106,7 +106,26 @@ N> For image and Font icon we need to add the the respective image and TTF file.
 
 	<StackLayout Padding="50" >
 
-		<updown:SfNumericUpDown x:Name="upDown" SpinButtonAlignment="Both" TextAlignment="Center" />
+		 <updown:SfNumericUpDown x:Name="upDown" SpinButtonAlignment="Both" TextAlignment="Center">
+            <updown:SfNumericUpDown.IncrementButtonSettings>
+                <updown:UpDownButtonSettings ButtonHeight="45" ButtonWidth="45">
+                    <updown:UpDownButtonSettings.ButtonView>
+                        <Grid HeightRequest="40" WidthRequest="40">
+                            <Image Source="up.png" Aspect="AspectFit" />
+                        </Grid>
+                    </updown:UpDownButtonSettings.ButtonView>
+                </updown:UpDownButtonSettings>
+            </updown:SfNumericUpDown.IncrementButtonSettings>
+            <updown:SfNumericUpDown.DecrementButtonSettings>
+                <updown:UpDownButtonSettings ButtonHeight="45" ButtonWidth="45">
+                    <updown:UpDownButtonSettings.ButtonView>
+                        <Grid HeightRequest="40" WidthRequest="40">
+                            <Image Source="down.png" Aspect="AspectFit" />
+                        </Grid>
+                    </updown:UpDownButtonSettings.ButtonView>
+                </updown:UpDownButtonSettings>
+            </updown:SfNumericUpDown.DecrementButtonSettings>
+        </updown:SfNumericUpDown>
 
 	</StackLayout>
 	
@@ -114,32 +133,38 @@ N> For image and Font icon we need to add the the respective image and TTF file.
 
 {% highlight C# %}
 
-			UpDownButtonSettings incSettings = new UpDownButtonSettings();
-			Grid incrementStack = new Grid();
-			Image incrementImage = new Image();
-			incrementImage.HorizontalOptions = LayoutOptions.Center;
-			incrementImage.VerticalOptions = LayoutOptions.Center;
-			incrementImage.Source = (FileImageSource)ImageSource.FromFile("up.png");
-			incrementImage.Aspect = Aspect.AspectFit;
-			incrementStack.Children.Add(incrementImage);
-			incrementStack.Padding = new Thickness(5,7);
-			incSettings.ButtonView = incrementStack;
-			incSettings.ButtonHeight = 45;
-			incSettings.ButtonWidth = 45;
-			upDown.IncrementButtonSettings = incSettings;
-			UpDownButtonSettings decrementSettings = new UpDownButtonSettings();
-			Grid decrementStack = new Grid();
-			Image decrementImage = new Image();
-			decrementImage.Source = (FileImageSource)ImageSource.FromFile("down.png");
-			decrementImage.Aspect = Aspect.AspectFit;
-			decrementImage.HorizontalOptions = LayoutOptions.Center;
-			decrementImage.VerticalOptions = LayoutOptions.Center;
-			decrementStack.Children.Add(decrementImage);
-			decrementStack.Padding = new Thickness(5,7);
-			decrementSettings.ButtonView = decrementStack;
-			decrementSettings.ButtonHeight = 45;
-			decrementSettings.ButtonWidth = 45;
-			upDown.DecrementButtonSettings = decrementSettings;
+			SfNumericUpDown upDown = new SfNumericUpDown();
+            upDown.SpinButtonAlignment = SpinButtonAlignment.Both;
+            UpDownButtonSettings incSettings = new UpDownButtonSettings();
+            Grid incrementStack = new Grid();
+			incrementStack.HeightRequest = 40;
+			incrementStack.WidthRequest = 40;
+            Image incrementImage = new Image();
+            incrementImage.HorizontalOptions = LayoutOptions.Center;
+            incrementImage.VerticalOptions = LayoutOptions.Center;
+            incrementImage.Source = (FileImageSource)ImageSource.FromFile("up.png");
+            incrementImage.Aspect = Aspect.AspectFit;
+            incrementStack.Children.Add(incrementImage);
+            incSettings.ButtonView = incrementStack;
+            incSettings.ButtonHeight = 45;
+            incSettings.ButtonWidth = 45;
+            upDown.IncrementButtonSettings = incSettings;
+            UpDownButtonSettings decrementSettings = new UpDownButtonSettings();
+            Grid decrementStack = new Grid();
+			decrementStack.HeightRequest = 40;
+			decrementStack.WidthRequest = 40;
+            Image decrementImage = new Image();
+            decrementImage.Source = (FileImageSource)ImageSource.FromFile("down.png");
+            decrementImage.Aspect = Aspect.AspectFit;
+            decrementImage.HorizontalOptions = LayoutOptions.Center;
+            decrementImage.VerticalOptions = LayoutOptions.Center;
+            decrementStack.Children.Add(decrementImage);
+            decrementSettings.ButtonView = decrementStack;
+            decrementSettings.ButtonHeight = 45;
+            decrementSettings.ButtonWidth = 45;
+            upDown.DecrementButtonSettings = decrementSettings;
+            this.Content = upDown;
+
 
 {% endhighlight %}
 
@@ -153,7 +178,14 @@ N> For image and Font icon we need to add the the respective image and TTF file.
 
 	<StackLayout Padding="50" >
 
-		<updown:SfNumericUpDown x:Name="upDown" SpinButtonAlignment="Both" TextAlignment="Center" />
+		<updown:SfNumericUpDown x:Name="upDown" SpinButtonAlignment="Both" TextAlignment="Center">
+    <updown:SfNumericUpDown.IncrementButtonSettings>
+        <updown:UpDownButtonSettings ButtonImage="up" ButtonHeight="35" ButtonWidth="35" />
+    </updown:SfNumericUpDown.IncrementButtonSettings>
+    <updown:SfNumericUpDown.DecrementButtonSettings>
+        <updown:UpDownButtonSettings ButtonImage="down" ButtonHeight="35" ButtonWidth="35" />
+    </updown:SfNumericUpDown.DecrementButtonSettings>
+        </updown:SfNumericUpDown> 
 
 	</StackLayout>
 	
@@ -161,18 +193,19 @@ N> For image and Font icon we need to add the the respective image and TTF file.
 
 {% highlight C# %}
 
-			UpDownButtonSettings incSettings = new UpDownButtonSettings();
-			Grid incrementStack = new Grid();
-			incSettings.ButtonImage = "up";
-			incSettings.ButtonHeight = 45;
-			incSettings.ButtonWidth = 45;
-			upDown.IncrementButtonSettings = incSettings;
-			UpDownButtonSettings decrementSettings = new UpDownButtonSettings();
-			Grid decrementStack = new Grid();
-			decrementSettings.ButtonImage = "down";
-			decrementSettings.ButtonHeight = 45;
-			decrementSettings.ButtonWidth = 45;
-			upDown.DecrementButtonSettings = decrementSettings;
+			SfNumericUpDown upDown = new SfNumericUpDown();
+            upDown.SpinButtonAlignment = SpinButtonAlignment.Both;
+            UpDownButtonSettings incSettings = new UpDownButtonSettings();
+            incSettings.ButtonImage = "up";
+            incSettings.ButtonHeight = 45;
+            incSettings.ButtonWidth = 45;
+            upDown.IncrementButtonSettings = incSettings;
+            UpDownButtonSettings decrementSettings = new UpDownButtonSettings();
+            decrementSettings.ButtonImage = "down";
+            decrementSettings.ButtonHeight = 45;
+            decrementSettings.ButtonWidth = 45;
+            upDown.DecrementButtonSettings = decrementSettings;
+            this.Content = upDown;
 
 {% endhighlight %}
 
@@ -190,7 +223,42 @@ N> For image and Font icon we need to add the the respective image and TTF file.
 
 	<StackLayout Padding="50" >
 
-		<updown:SfNumericUpDown x:Name="upDown" SpinButtonAlignment="Both" TextAlignment="Center" />
+		  <updown:SfNumericUpDown x:Name="upDown" SpinButtonAlignment="Both" TextAlignment="Center">
+            <updown:SfNumericUpDown.IncrementButtonSettings>
+			<updown:UpDownButtonSettings.ButtonFontFamily>
+                         <OnPlatform
+                                            x:TypeArguments="x:String">
+                                            <On
+                                                Platform="Android"
+                                                Value="numeric.ttf">
+                                            </On>
+                                            <On
+                                                Platform="iOS"
+                                                Value="numeric">
+                                            </On>
+                                        </OnPlatform>
+                    </updown:UpDownButtonSettings.ButtonFontFamily>
+                <updown:UpDownButtonSettings ButtonFontIcon="&#xe701;" ButtonHeight="35" ButtonWidth="35" />
+            </updown:SfNumericUpDown.IncrementButtonSettings>
+            <updown:SfNumericUpDown.DecrementButtonSettings>
+			<updown:UpDownButtonSettings.ButtonFontFamily>
+                         <OnPlatform
+                                            x:TypeArguments="x:String">
+                                            <On
+                                                Platform="Android"
+                                                Value="numeric.ttf">
+                                            </On>
+                                            <On
+                                                Platform="iOS"
+                                                Value="numeric">
+                                            </On>
+                                        </OnPlatform>
+                    </updown:UpDownButtonSettings.ButtonFontFamily>
+                <updown:UpDownButtonSettings ButtonFontIcon="&#xe700;" ButtonHeight="35" ButtonWidth="35" />
+            </updown:SfNumericUpDown.DecrementButtonSettings>
+        </updown:SfNumericUpDown> 
+
+
 
 	</StackLayout>
 	
@@ -198,11 +266,11 @@ N> For image and Font icon we need to add the the respective image and TTF file.
 
 {% highlight C# %}
 
-			UpDownButtonSettings incSettings = new UpDownButtonSettings();
-            UpDownButtonSettings decrementSettings = new UpDownButtonSettings();
-			incSettings.ButtonFontIcon = "\xe701";
-            decrementSettings.ButtonFontIcon = "\xe700";
-            if (Device.OS == TargetPlatform.Android)
+			SfNumericUpDown upDown = new SfNumericUpDown();
+            upDown.SpinButtonAlignment = SpinButtonAlignment.Both;
+            UpDownButtonSettings incSettings = new UpDownButtonSettings();
+            incSettings.ButtonFontIcon = "\xe701";
+			 if (Device.OS == TargetPlatform.Android)
             {
                 incSettings.ButtonFontFamily = "numeric.ttf";
                 decrementSettings.ButtonFontFamily = "numeric.ttf";
@@ -213,8 +281,12 @@ N> For image and Font icon we need to add the the respective image and TTF file.
                 incSettings.ButtonFontFamily = "numeric";
                 decrementSettings.ButtonFontFamily = "numeric";
             }
-			upDown.IncrementButtonSettings = incSettings;
-			upDown.DecrementButtonSettings = decrementSettings;
+            upDown.IncrementButtonSettings = incSettings;
+            UpDownButtonSettings decrementSettings = new UpDownButtonSettings();
+            decrementSettings.ButtonFontIcon = "\xe700";
+            decrementSettings.ButtonWidth = 45;
+            upDown.DecrementButtonSettings = decrementSettings;
+            this.Content = upDown;
 
 {% endhighlight %}
 

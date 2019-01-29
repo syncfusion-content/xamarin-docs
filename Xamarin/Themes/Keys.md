@@ -15,7 +15,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 <table>
     <tr>
-        <th>Styles<br/>
+        <th>Theme Dictionary<br/>
             <br/></th>        
         <th>
           Keys
@@ -41,7 +41,29 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>    
-            Key for mapping the below keys and the properties of SfTextInputLayout.
+            By merging this key in application resources, it is possible to customize the appearance of the SfTextInputLayout without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String> 
+                <Color x:Key="SfTextInputLayoutCounterLabelColor">Blue</Color> 
+                <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
             <br/>
             <br/>
         </td>

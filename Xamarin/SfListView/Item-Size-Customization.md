@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Item Size Customization in SfListView
+title: Item Size Customization in Syncfusion ListView
 description: Describes the Item Size Customization in SfListView.
 platform: xamarin
 control: SfListView
@@ -80,9 +80,9 @@ You can download the entire source code of this demo [here](http://www.syncfusio
 
 ![AutoFit items](SfListView_images/AutoFit.jpg)
 
-## Increasing or Decreasing label font size in the ListView items at runtime
+## Updating the listview item size based on font at runtime
 
-ListView allows you to resize the items based on the change in font size of the label element at runtime by calling [RefreshListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshListViewItem.html) method asynchronously when [SfListView.AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is Height.
+ListView allows you to resize the item size based on the change in font size of the label element at runtime by calling [RefreshListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshListViewItem.html) method asynchronously when [SfListView.AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is Height.
 
 {% tabs %}
 {% highlight xaml %}
@@ -121,6 +121,84 @@ private void Button_Clicked(object sender, EventArgs e)
 {% endtabs %}
 
 ![Customize label font size for listview item](SfListView_images/SfListView-FontSizeChanged.jpg)
+
+## Updating the Header and Footer height based on font at runtime
+
+ListView allows you to resize the header and footer item size based on the change in font size of the label element at runtime by calling [RefreshListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshListViewItem.html) method asynchronously when [SfListView.AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is Height.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">       
+ <Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="50"/>
+        <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Button Text="Change FontSize" Command="{Binding ResizeHeaderFooterCommand}" CommandParameter="{x:Reference listView}"/>
+    <syncfusion:SfListView x:Name="listView" 
+                ItemsSource="{Binding Contacts}"
+                BackgroundColor="#FFE8E8EC"
+                AutoFitMode="Height">
+                <syncfusion:SfListView.HeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Label Text="Contact Details"
+                                       FontSize="{Binding BindingContext.FontSize, Source={x:Reference listView}}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </syncfusion:SfListView.HeaderTemplate>
+                <syncfusion:SfListView.FooterTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid >
+                                <Label Text="Contacts Count" FontSize="{Binding BindingContext.FontSize, Source={x:Reference listView}}"/>
+                                <Label Text="{Binding Contacts.Count}" FontSize="{Binding BindingContext.FontSize, Source={x:Reference listView}}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </syncfusion:SfListView.FooterTemplate>
+    </syncfusion:SfListView>                
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+namespace SfListViewSample
+{
+    public class ContactsViewModel : INotifyPropertyChanged
+    {
+        public Command ResizeHeaderFooterCommand { get; set; }
+        private double MaxPhone = 70;
+        private double MinPhone = 20;
+        private double MaxTablet = 100;
+        private double MinTablet = 30;
+        public ContactsViewModel()
+        {
+           ResizeHeaderFooterCommand = new Command(ResizeHeaderFooter);
+        }
+        private void ResizeHeaderFooter(object obj)
+        {
+            list = obj as SfListView;
+            var maxFont = Device.Idiom == TargetIdiom.Phone ? MaxPhone : MaxTablet;
+            var minFont = (Device.Idiom == TargetIdiom.Phone) ? MinPhone : MinTablet;
+            if (FontSize >= maxFont)
+            {
+                FontSize = minFont;
+            }
+            else
+            {
+                FontSize += 10;
+            }
+            list.RefreshListViewItem(-1, -1, true);
+        }
+    }
+}       
+{% endhighlight %}
+{% endtabs %}
+
+You can download entire source code from [GitHub](https://github.com/SyncfusionExamples/How-to-update-header-and-footer-height-based-on-font-size-at-runtime).
+
+![Customize label font size for header and footer item](SfListView_images/SfListView_HeaderFooterFontSizeChange.png)
 
 ## Load images with autofit mode
 

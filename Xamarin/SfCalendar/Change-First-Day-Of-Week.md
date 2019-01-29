@@ -1,6 +1,6 @@
 ---
 layout: post
-title: FirstDayofWeek support in Syncfusion Calendar control for Xamarin.Forms
+title: FirstDayofWeek | SfCalendar | Xamarin.Forms | Syncfusion
 description: Learn how to change the first day of week
 platform: Xamarin
 control: Calendar
@@ -9,7 +9,7 @@ documentation: ug
 
 # Change First Day Of Week
 
-By default, the starting day will be taken from the device culture. This can be modified using `FirstDayofWeek` property. Changing the first day of week will be applied to both month and year view.
+By default, the starting day will be taken from the device culture. This can be modified using [FirstDayofWeek](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~FirstDayofWeek.html) property. Changing the first day of week will be applied to both month and year view.
 
 {% tabs %}
 
@@ -22,9 +22,7 @@ By default, the starting day will be taken from the device culture. This can be 
 {% highlight c# %}
 	
 SfCalendar  calendar = new SfCalendar();
-
 calendar.FirstDayofWeek= 2;
-
 this.Content = calendar;
 	
 {% endhighlight %}
@@ -33,4 +31,4 @@ this.Content = calendar;
 
 N> The value will be provided as integers starting from 0 as Sunday.
 	
-![](images/Firstdayofweek.png)
+![FirstDayofWeek support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-Firstdayofweek.png)

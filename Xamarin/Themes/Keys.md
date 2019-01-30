@@ -352,8 +352,648 @@ This page lists the keys for each control and the element to which it is mapped 
 
 </table>
 
+## SfChart
 
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+    
+    <tr>
+        <td rowspan="24">
+            SfChartStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfChartTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfChart without merging common theme resource and control style resource dictionaries.
 
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String> 
+                <Color x:Key="SfTextInputLayoutCounterLabelColor">Blue</Color> 
+                <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+        <tr>
+    <td>
+            SfChartTitleTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+        <tr>
+    <td>
+            SfChartTitleBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTitleBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartSelectionRectFillColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartSelectionRectStrokeColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationFillColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationStrokeColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationAxisLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationAxisLabelTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationAxisLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballLineStrokeColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballAxisLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballAxisLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballAxisLabelTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartDataPointSelectionColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartSeriesSelectionColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartStriplineBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartStriplineBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartStriplineTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartStriplineLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartStriplineLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartMajorGridLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartMinorGridLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartMajorTickLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartMinorTickLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisTitleTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisTitleBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisTitleBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisLabelColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartLegendTitleTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartLegendTitleBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartLegendTitleBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartLegendLabelColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartColorPaletteName
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartColorModelColors
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
 
 
 

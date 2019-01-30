@@ -1,6 +1,6 @@
 ---
 title: Diagram control for Xamarin.Forms | Syncfusion
-description: diagram
+description: Briefs about diagram,stencil,page setting and diagram constraints in SfDiagram for Xamarin.Forms
 platform: xamarin
 control: SfDiagram
 documentation: ug

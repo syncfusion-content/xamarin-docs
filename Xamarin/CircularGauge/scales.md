@@ -45,7 +45,7 @@ A range is a visual element, which begins and ends at specified values within a 
 
 {% endtabs %}
 
-![](scales_images/scale.png)
+![Xamarin Circular Scale Image](scales_images/scale.png)
 
 ## Setting start and end values for scale
 
@@ -80,7 +80,7 @@ The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 {% endtabs %}
 
-![](scales_images/start-end-value.png)
+![Circular Scale Start And End Image](scales_images/start-end-value.png)
 
 ## Setting start and sweep angles for scale
 
@@ -114,7 +114,7 @@ The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 {% endtabs %}
 
-![](scales_images/start-end-angle.png)
+![Circular Scale Start And End Angle Image](scales_images/start-end-angle.png)
 
 ## Setting interval for scale
 
@@ -150,7 +150,7 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 
 {% endtabs %}
 
-![](scales_images/interval.png)
+![Circular Scale Interval Image](scales_images/interval.png)
 
 ## Setting auto interval for scale
 
@@ -186,7 +186,7 @@ By default, the interval value is calculated by 10. By using the [`EnableAutoInt
 
 {% endtabs %}
 
-![](scales_images/auto-interval.png)
+![Circular Scale Auto Interval Image](scales_images/auto-interval.png)
 
 ## Setting scale direction for scale
 
@@ -220,7 +220,7 @@ The [`Direction`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.S
 
 {% endtabs %}
 
-![](scales_images/scale-direction.png)
+![Circular Scale Direction Image](scales_images/scale-direction.png)
 
 ## Setting maximum labels
 
@@ -254,7 +254,7 @@ Content = sfCircularGauge;
 
 {% endtabs %}
 
-![](scales_images/scale-direction.png)
+![Circular Scale Maximum Labels Image](scales_images/scale-direction.png)
 
 ## Setting multiple scales for scale
 
@@ -364,7 +364,7 @@ It helps you to add multiple scales to the same circular gauge. You can customiz
     
 {% endtabs %}
 
-![](scales_images/multiple-scale.png)
+![Multiple Scales Image](scales_images/multiple-scale.png)
 
 ## Events
 
@@ -422,4 +422,4 @@ You can change the default label,by trigger the [`LabelCreated`](https://help.sy
 
 {% endtabs %}
 
-![](scales_images/labelcreated.png)
+![Label Created Event Image](scales_images/labelcreated.png)

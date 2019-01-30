@@ -83,7 +83,7 @@ Create a page and import the SfBackdropPage namespace along with [XAML namespace
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
     x:Class="BackdropGettingStarted.BackdropSamplePage"
- Title="Menu">
+    Title="Menu">
 </backdrop:SfBackdropPage>
 
 {% endhighlight %}
@@ -98,7 +98,7 @@ namespace BackdropGettingStarted
         public BackdropSamplePage()
         {
             InitializeComponent();
-		  this.Title = "Menu";
+	this.Title = "Menu";
         }
     }
 }

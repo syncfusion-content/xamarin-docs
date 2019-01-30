@@ -44,7 +44,7 @@ The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGa
 
 {% endtabs %}
 
-![](header_images/header.png)
+![Circular Gauge Header Image](header_images/header.png)
 
 ##  Setting position for header
 
@@ -75,7 +75,7 @@ The [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 
 {% endtabs %}
 
-![](header_images/header-position.png)
+![Circular Gauge Header Position Image](header_images/header-position.png)
 
 ##  Customization of header
 
@@ -113,7 +113,7 @@ You can customize the header's text by using the [`FontFamily`](https://help.syn
 
 {% endtabs %}
 
-![](header_images/header-customise.png)
+![Circular Gauge Header Customization Image](header_images/header-customise.png)
 
 ## Alignment of header
 
@@ -147,7 +147,7 @@ Content = circularGauge;
 
 {% endtabs %}
 
-![](header_images/header-customise.png)
+![Circular Gauge Header Alignment Image](header_images/horizontalalignment.png)
 
 ### Setting vertical header position
 
@@ -177,5 +177,5 @@ Content = circularGauge;
 
 {% endtabs %}
 
-![](header_images/header-customise.png)
+![Circular Gauge Header Alignment Image](header_images/vertical_alignment.png)
 

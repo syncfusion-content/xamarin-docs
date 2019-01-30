@@ -408,7 +408,7 @@ The following code is used to create the `Annotations`.
 
 {% endtabs %}
 
-![](annotations_images/annotations.png)
+![Circular Gauge Annotation Image](annotations_images/annotations.png)
 
 ##  Setting image annotation
 
@@ -518,7 +518,7 @@ Annotations provide options to add any image over the gauge control with respect
 
 {% endtabs %}
 
-![](annotations_images/image_annotation.PNG)
+![Circular Gauge Image Annotation](annotations_images/image_annotation.PNG)
 
 ##  Setting text annotation
 
@@ -626,7 +626,7 @@ You can add any text over the gauge control to enhance the readability. You can 
 
 {% endtabs %}
 
-![](annotations_images/text_annotation.PNG)
+![Circular Gauge Text Annotation](annotations_images/text_annotation.PNG)
 
 ## Set margin to the annotation
 
@@ -696,7 +696,7 @@ Content = gauge;
 
 {% endtabs %}
 
-![](annotations_images/text_annotation.PNG)
+![Circular Gauge Annotation Margin Image](annotations_images/text_annotation.PNG)
 
 ## Alignment of annotation
 
@@ -767,7 +767,7 @@ Content = gauge;
 
 {% endtabs %}
 
-![](annotations_images/text_annotation.PNG)
+![Circular Gauge Annotation Alignment Image](annotations_images/text_annotation.PNG)
 
 ### Setting vertical alignment
 
@@ -835,4 +835,4 @@ Content = gauge;
 
 {% endtabs %}
 
-![](annotations_images/text_annotation.PNG)
+![Circular Gauge Annotation Alignment Image](annotations_images/text_annotation.PNG)

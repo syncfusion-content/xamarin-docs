@@ -254,7 +254,7 @@ Content = sfCircularGauge;
 
 {% endtabs %}
 
-![Circular Scale Maximum Labels Image](scales_images/scale-direction.png)
+![Circular Scale Maximum Labels Image](scales_images/maximumlabels.png)
 
 ## Setting multiple scales for scale
 

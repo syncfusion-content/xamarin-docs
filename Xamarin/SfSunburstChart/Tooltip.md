@@ -80,8 +80,6 @@ The following code shows all the above customizations.
 
 The font can be customized using the [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~FontSize.html), [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~FontAttributes.html), and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~FontFamily.html) properties of tooltip.
 
-The following code shows all the above customizations.
-
 {% tabs %} 
 
 {% highlight xaml %}

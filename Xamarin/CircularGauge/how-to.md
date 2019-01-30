@@ -107,5 +107,5 @@ Content = sfCircularGauge;
 
 {% endtabs %}
 
-![Xamarin Circular Coefficient Image](how-to_images/circular-coefficient.png)
+![Xamarin Circular IsCenterAligned Image](how-to_images/iscenteraligned.png)
 

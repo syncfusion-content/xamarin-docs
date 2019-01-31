@@ -139,7 +139,7 @@ var tabViewItem = new SfTabItem
 	Title = "Calls",
 	Content = allContactsGrid,
 	IconFont = "a", // setting value for font icons as mentioned in *.ttf.
-	FontIconFontFamily = Device.RuntimePlatform == "iOS" ? "TabIcons" : "TabIcons.ttf",
+	FontIconFontFamily = Device.RuntimePlatform == "iOS" ? "TabIcons" : Device.RuntimePlatform == "Android" ? "TabIcons.ttf" : "TabIcons.ttf#TabIcons",
 	FontIconFontColor = Color.LightBlue,
 	FontIconFontSize =  20
 	};

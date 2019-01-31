@@ -495,7 +495,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of annotation.
+            Fill color of annotation.
             <br/>
             <br/>
         </td>
@@ -534,7 +534,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border stroke color of the labels.
+            Border color of the label.
             <br/>
             <br/>
         </td>
@@ -547,7 +547,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the labels.
+            Background color of the label.
             <br/>
             <br/>
         </td>
@@ -586,7 +586,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border stroke color of the axis label of VerticalLine and HorizontalLine annotations.
+            Border color of the axis label of VerticalLine and HorizontalLine annotations.
             <br/>
             <br/>
         </td>
@@ -1074,7 +1074,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Overlay color of unselected region of the date-time range navigator.
+            Overlay color of unselected region of the date time range navigator.
             <br/>
             <br/>
         </td>
@@ -1087,7 +1087,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the date-time range navigator label.
+            Text color of the date time range navigator label.
             <br/>
             <br/>
         </td>
@@ -1100,7 +1100,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the date-time range navigator label.
+            Background color of the date time range navigator label.
             <br/>
             <br/>
         </td>
@@ -1113,7 +1113,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the date-time range navigator label.
+            Border color of the date time range navigator label.
             <br/>
             <br/>
         </td>
@@ -1126,7 +1126,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the date-time range navigator selected label.
+            Text color of the date time range navigator selected label.
             <br/>
             <br/>
         </td>
@@ -1139,7 +1139,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the date-time range navigator selected label.
+            Background color of the date time range navigator selected label.
             <br/>
             <br/>
         </td>
@@ -1152,7 +1152,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the date-time range navigator selected label.
+            Border color of the date time range navigator selected label.
             <br/>
             <br/>
         </td>
@@ -1165,7 +1165,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the date-time range navigator grid lines.
+            Color of the date time range navigator grid lines.
             <br/>
             <br/>
         </td>
@@ -1178,7 +1178,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the date-time range navigator tick lines.
+            Color of the date time range navigator tick lines.
             <br/>
             <br/>
         </td>
@@ -1191,7 +1191,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the date-time range navigator thumb.
+            Background color of the date time range navigator thumb.
             <br/>
             <br/>
         </td>
@@ -1204,7 +1204,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the date-time range navigator thumb.
+            Border color of the date time range navigator thumb.
             <br/>
             <br/>
         </td>
@@ -1217,7 +1217,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the date-time range navigator thumb line.
+            Color of the date time range navigator thumb line.
             <br/>
             <br/>
         </td>
@@ -1230,7 +1230,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the date-time range navigator tooltip.
+            Background color of the date time range navigator tooltip.
             <br/>
             <br/>
         </td>
@@ -1243,7 +1243,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the date-time range navigator tooltip.
+            Border color of the date time range navigator tooltip.
             <br/>
             <br/>
         </td>
@@ -1256,7 +1256,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the date-time range navigator tooltip.
+            Text color of the date time range navigator tooltip.
             <br/>
             <br/>
         </td>

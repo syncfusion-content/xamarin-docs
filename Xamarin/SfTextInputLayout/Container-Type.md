@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion TextInputLayout Container Type
-description: How to change the container of text input layout.
+description: It describes that the background of the input view for text input layout can be changed by setting the ContainerType property.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
@@ -79,11 +79,11 @@ When setting the [OutlineCornerRadius](https://help.syncfusion.com/cr/cref_files
 {% highlight xaml %}
 
 <inputLayout:SfTextInputLayout
-        Hint="Name" 
-        ContainerType="Outlined"
-	    OutlineCornerRadius="8">
-		<Entry />
-</inputLayout:SfTextInputLayout>   
+    Hint="Name" 
+    ContainerType="Outlined"
+    OutlineCornerRadius="8">
+    <Entry />
+</inputLayout:SfTextInputLayout>  
 			
 {% endhighlight %}
 

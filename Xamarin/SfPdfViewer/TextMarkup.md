@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Working with text markup annotation | Syncfusion
-description: Working with text markup annotation
+title:  Add & modify text markups PDF Viewer Xamarin.Forms | Syncfusion
+description: PDF Viewer Xamarin.Forms allows user to highlight, underline and strikethrough the text content in the PDF document.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug

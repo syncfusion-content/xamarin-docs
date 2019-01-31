@@ -244,6 +244,80 @@ void Handle_ItemTapped(object sender, Syncfusion.SfRadialMenu.XForms.ItemTappedE
 	}
 {% endhighlight %}
 
-![](images/populatingItems.png)
+![SfRadialMenu with Items](images/populatingItems.png)
 
-N> To use FontIcons, add respective FontFamily name in `info.plist` file under fonts provided by application category.
+## How to set the font icons using ttf file?
+
+You can refer this [link](https://help.syncfusion.com/metro-studio/export-font-icon) for getting the font icons. Add the font file to your application by using the following steps for each platform:
+
+**Adding font file for iOS**
+
+1. Add the font family inside `Resource` folder iOS project.
+2. Add the font file with the following build action: `BundleResource`.
+3. Update the `Info.plist` file (fonts that are provided by application, UIAppFonts, or key).
+
+**Adding font file for Android**
+
+Add the font file to the `Assets` folder in the application project, and set the following build action: `AndroidAsset`.
+
+**Adding font file for UWP**
+
+Add the font family inside the application project of UWP.
+
+N> For iOS alone, FontFamily property is declared without succeeding with .ttf and for android and UWP platform font family name is defined followed by .ttf.
+
+## Through ItemsSource and ItemTemplate
+
+Using ItemsSource, objects of any class can be given as items for SfRadialMenu. The views corresponding to the objects can be set using the ItemTemplate property. A simple usage of ItemTemplate and ItemsSource to display a default image and name of users is shown in the following code.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <radialmenu:SfRadialMenu x:Name="radialMenu" 
+        ItemWidth="30" ItemHeight="50" 
+        SeparatorThickness="2" 
+        SeparatorColor="#DDDDDD">
+        <radialmenu:SfRadialMenu.CenterButtonView>
+            <Grid WidthRequest="35" BackgroundColor="Transparent">
+                <Image Source="friendadd.png" 
+                       HeightRequest="35" 
+                       WidthRequest="35" 
+                       HorizontalOptions="Center" 
+                       VerticalOptions="Center"/>
+            </Grid>
+        </radialmenu:SfRadialMenu.CenterButtonView>
+        <radialmenu:SfRadialMenu.ItemTemplate>
+             <DataTemplate>
+                <StackLayout>
+                    <Image Source="user.png" Margin="2,0" WidthRequest="25" HorizontalOptions="Center" />
+                    <Label HorizontalOptions="Center"  Text="{Binding}"/>
+                </StackLayout>
+            </DataTemplate>
+        </radialmenu:SfRadialMenu.ItemTemplate>
+    </radialmenu:SfRadialMenu>
+    
+{% endhighlight %}
+
+{% highlight C# %}
+
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            this.BindingContext = this;
+            radialMenu.ItemsSource = new List<string>()
+            {
+                "Alex",
+                "Lee",
+                "Ben",
+                "Carl",
+                "Yang"
+            };
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}

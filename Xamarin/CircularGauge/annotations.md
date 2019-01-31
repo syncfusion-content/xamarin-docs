@@ -767,7 +767,7 @@ Content = gauge;
 
 {% endtabs %}
 
-![Circular Gauge Annotation Alignment Image](annotations_images/text_annotation.PNG)
+![Circular Gauge Annotation Alignment Image](annotations_images/horizontalalignment.png)
 
 ### Setting vertical alignment
 
@@ -835,4 +835,4 @@ Content = gauge;
 
 {% endtabs %}
 
-![Circular Gauge Annotation Alignment Image](annotations_images/text_annotation.PNG)
+![Circular Gauge Annotation Alignment Image](annotations_images/verticalalignment.png)

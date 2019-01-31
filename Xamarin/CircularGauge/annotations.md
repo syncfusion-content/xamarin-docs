@@ -408,7 +408,7 @@ The following code is used to create the `Annotations`.
 
 {% endtabs %}
 
-![Circular Gauge Annotation Image](annotations_images/annotations.png)
+![Annotation support in Xamarin.Forms Circular Gauge](annotations_images/annotations.png)
 
 ##  Setting image annotation
 
@@ -518,7 +518,7 @@ Annotations provide options to add any image over the gauge control with respect
 
 {% endtabs %}
 
-![Circular Gauge Image Annotation](annotations_images/image_annotation.PNG)
+![Annotation image support in Xamarin.Forms Circular Gauge](annotations_images/image_annotation.PNG)
 
 ##  Setting text annotation
 
@@ -626,7 +626,7 @@ You can add any text over the gauge control to enhance the readability. You can 
 
 {% endtabs %}
 
-![Circular Gauge Text Annotation](annotations_images/text_annotation.PNG)
+![Text annotation support in Xamarin.Forms Circular Gauge](annotations_images/text_annotation.PNG)
 
 ## Set margin to the annotation
 
@@ -696,11 +696,11 @@ Content = gauge;
 
 {% endtabs %}
 
-![Circular Gauge Annotation Margin Image](annotations_images/text_annotation.PNG)
+![Adjust annotation in Xamarin.Forms Circular Gauge](annotations_images/text_annotation.PNG)
 
 ## Alignment of annotation
 
-You can align the annotation using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~HorizontalAlignment.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~VerticalAlignment.html) properties.
+You can align the annotation as `Start`, `Center` and `End` using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~HorizontalAlignment.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~VerticalAlignment.html) properties.
 
 ### Setting horizontal alignment
 
@@ -767,7 +767,7 @@ Content = gauge;
 
 {% endtabs %}
 
-![Circular Gauge Annotation Alignment Image](annotations_images/horizontalalignment.jpg)
+![Horizontal alignment for Annotation in Xamarin.Forms Circular Gauge](annotations_images/horizontalalignment.jpg)
 
 ### Setting vertical alignment
 
@@ -835,4 +835,4 @@ Content = gauge;
 
 {% endtabs %}
 
-![Circular Gauge Annotation Alignment Image](annotations_images/verticalalignment.jpg)
+![Vertical alignment for Annotation in Xamarin.Forms Circular Gauge](annotations_images/verticalalignment.jpg)

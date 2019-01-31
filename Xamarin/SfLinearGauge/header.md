@@ -65,7 +65,7 @@ You can add a title to gauge using the [`LinearHeader`](https://help.syncfusion.
 
 {% endtabs %}
 
-![](header_images/header.png)
+![Linear Gauge Header](header_images/header.png)
 
 ##  Positioning the header
 
@@ -118,7 +118,7 @@ To change the position of header, use the [`Offset`](https://help.syncfusion.com
 
 {% endtabs %}
 
-![](header_images/header2.png)
+![Linear Gauge Header Position](header_images/header2.png)
 
 ##  Customizing header text
 
@@ -167,4 +167,4 @@ You can customize the text of [`LinearHeader`](https://help.syncfusion.com/cr/cr
 
 {% endtabs %}
 
-![](header_images/header3.png)
+![Linear Gauge Header Customization](header_images/header3.png)

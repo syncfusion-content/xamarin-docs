@@ -44,4 +44,4 @@ documentation: ug
 
 {% endtabs %}
 
-![](change-orientation_images/orientaion.png)
+![Linear Gauge Orientation](change-orientation_images/orientaion.png)

@@ -15,7 +15,7 @@ This section explains the steps required to configure a [`SfLinearGauge`](https:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add linear gauge to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.sfgauge](https://www.nuget.org/packages/Syncfusion.Xamarin.SfGauge), and then install it. 
 
-![](getting-started_images/cg_nuget.png)
+![Linear Gauge Nuget Image](getting-started_images/cg_nuget.png)
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sflineargauge) to know about the dependent assemblies for linear gauge.
 
@@ -358,7 +358,7 @@ namespace Gauge_GettingStarted
 
 The following linear gauge is created as a result of the above codes.
  
-![](getting-started_images/getting-started.png)
+![Linear Gauge Getting Started](getting-started_images/getting-started.png)
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge-GettingStarted1094113275).  
 

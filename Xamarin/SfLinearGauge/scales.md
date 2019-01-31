@@ -44,7 +44,7 @@ Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/cref_fi
 
 {% endtabs %}
 
-![](scales_images/scale1.png)
+![Linear Gauge Scale](scales_images/scale1.png)
 
 ## Setting minimum and maximum values for scale
 
@@ -79,7 +79,7 @@ To change minimum and maximum values of linear scale, use the [`MinimumValue`](h
 
 {% endtabs %}
 
-![](scales_images/scale2.png)
+![Linear Gauge Scale Value](scales_images/scale2.png)
 
 ## Setting interval for scale
 
@@ -115,7 +115,7 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 
 {% endtabs %}
 
-![](scales_images/scale3.png)
+![Linear Gauge Interval](scales_images/scale3.png)
 
 ## Setting maximum labels
 
@@ -162,7 +162,7 @@ The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% endtabs %}
 
-![](scales_images/scale4.png)
+![Linear Gauge Maximum Labels](scales_images/scale4.png)
 
 ## Scale customization
 
@@ -211,7 +211,7 @@ You can customize the color, length, size, and position of the [`LinearScale`](h
 
 {% endtabs %}
 
-![](scales_images/scale5.png)
+![Linear Gauge Scale Customization](scales_images/scale5.png)
 
 ## Setting opposite position
 
@@ -258,7 +258,7 @@ To place the scale at opposite to its original position, set the [`OpposedPositi
 
 {% endtabs %}
 
-![](scales_images/scale6.png)
+![Linear Gauge Opposed position](scales_images/scale6.png)
 
 ## Setting scale direction
 
@@ -305,7 +305,7 @@ You can set the scale position to its forward and backward using the [`ScalePosi
     
 {% endtabs %}
 
-![](scales_images/scale7.png)
+![Linear Gauge Scale Direction](scales_images/scale7.png)
 
 ## Setting corner radius type for scale
 
@@ -355,7 +355,7 @@ Corners of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin
     
 {% endtabs %}
 
-![](scales_images/scale8.png)
+![Linear Gauge Corner Radius](scales_images/scale8.png)
 
 ## Multiple scales 
 
@@ -478,7 +478,7 @@ It helps you to add multiple scales to the same linear gauge and customize all t
     
 {% endtabs %}
 
-![](scales_images/scale9.png)
+![Linear Gauge Multiple Scales](scales_images/scale9.png)
 
 ## Setting gradient color for scale
 
@@ -560,4 +560,4 @@ You can give smooth color transition to scale to specifying the different colors
     
 {% endtabs %}
 
-![](scales_images/scale10.png)
+![Linear Gauge Scale With Gradient](scales_images/scale10.png)

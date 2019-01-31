@@ -123,7 +123,7 @@ For more information regarding the event to command behavior in Xamarin.Forms, y
 
 ## Binding command of Button inside the ItemTemplate of Xamarin.Forms ListView to ViewModel Command?
 
-You can bind command of Button inside ItemTemplate to the command in ViewModel by specifying Source property with its root element as reference to execute the bindeed property of type command.
+You can bind command of Button inside ItemTemplate to the command in ViewModel by specifying Source property with its root element as reference to execute the binded property of type command.
 
 {% tabs %}
 {% highlight xaml %}
@@ -154,7 +154,7 @@ namespace ListViewSample
         private void OnTapped(object obj)
         {
             var contact = obj as Contacts;
-            contactsinfo.Remove(contact);
+            contactsInfo.Remove(contact);
             App.Current.MainPage.DisplayAlert("Message","Item Deleted :" +contact.ContactName,"Ok");
         }
     }

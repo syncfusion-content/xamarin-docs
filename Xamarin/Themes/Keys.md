@@ -710,19 +710,6 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfChartSeriesSelectionColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
             SfChartStriplineBackgroundColor
             <br/>
             <br/>
@@ -1008,6 +995,271 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 </table>
 
+## SfDateTimeRangeNavigator
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+    
+    <tr>
+        <td rowspan="24">
+            SfDateTimeRangeNavigatorStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfDateTimeRangeNavigatorTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfDateTimeRangeNavigator without merging common theme resource and control style resource dictionaries.
+
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String> 
+                <Color x:Key="SfTextInputLayoutCounterLabelColor">Blue</Color> 
+                <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+     <tr>
+    <td>
+            SfDateTimeRangeNavigatorBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorOverlayColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorLabelTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorSelectedLabelTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorSelectedLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorSelectedLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorGridLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorTickLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorThumbBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorThumbBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorThumbLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorTooltipBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorTooltipBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorTooltipTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
 
 
 

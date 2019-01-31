@@ -352,11 +352,507 @@ This page lists the keys for each control and the element to which it is mapped 
 
 </table>
 
+## SfLinearProgressBar
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+             SfProgressBarStyles 
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfProgressBarTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfLinearProgressBar without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfProgressBarTheme">CustomTheme</x:String> 
+                <Color x:Key="SyncPrimaryColor">Blue</Color> 
+                <Color x:Key="SfProgressBarSecondaryProgressColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of primary progress indicator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+    <tr>
+        <td>
+            SfProgressBarTrackColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of progress indicator background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfProgressBarSecondaryProgressColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the secondary progress indicator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+</table>
+
+## SfCircularProgressBar
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+             SfProgressBarStyles 
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfProgressBarTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfCircularProgressBar without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfProgressBarTheme">CustomTheme</x:String> 
+                <Color x:Key="SyncPrimaryColor">Blue</Color> 
+                <Color x:Key="SfProgressBarTrackColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of primary progress indicator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+    <tr>
+        <td>
+            SfProgressBarTrackColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of progress indicator background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+</table>
+
+## SfNumericTextBox
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+             SfNumericTextBoxStyles 
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfNumericTextBoxTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfNumericTextBox without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfNumericTextBoxTheme">CustomTheme</x:String> 
+                <Color x:Key="SyncPrimaryColor">Blue</Color> 
+                <Color x:Key="SfNumericTextBoxTextColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of line/border when text feild is in default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+    <tr>
+        <td>
+            SfNumericTextBoxTextColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of text in the input field.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+		<td>
+            SfNumericTextBoxBackgroundColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the container background when the text feild is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+</table>
 
 
+## SfNumericUpDown
 
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
 
+    <tr>
+        <td rowspan="24">
+             SfNumericUpDownStyles 
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfNumericUpDownTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfNumericUpDown without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
 
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfNumericUpDownTheme">CustomTheme</x:String> 
+                <Color x:Key="SyncPrimaryColor">Blue</Color> 
+                <Color x:Key="SfNumericUpDownTextColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
 
+....
 
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of line/border when text feild is in default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+    <tr>
+        <td>
+            SfNumericUpDownTextColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of text in the input field.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+		<td>
+            SfNumericUpDownBackgroundColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the container background when the text feild is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+	<tr>
+		<td>
+            SfNumericUpDownButtonBackgroundColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the container background of the up down button is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+    
+	<tr>
+		<td>
+            SfNumericUpDownButtonForegroundColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the container foreground of the up down button is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+</table>
+
+## SfMaskedEdit
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+              SfMaskedEditStyles 
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfMaskedEditTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfMaskedEdit without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfMaskedEditTheme">CustomTheme</x:String> 
+                <Color x:Key="SyncPrimaryColor">Blue</Color> 
+                <Color x:Key="SfMaskedEditTextColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of line/border when text feild is in default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+    <tr>
+        <td>
+            SfMaskedEditTextColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of text in the input field.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+		<td>
+            SfMaskedEditBackgroundColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the container background when the text feild is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+</table>
 

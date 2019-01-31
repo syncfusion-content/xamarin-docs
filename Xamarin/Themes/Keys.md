@@ -382,19 +382,20 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfChart without merging common theme resource and control style resource dictionaries.
+            By merging this key in application resources, you can customize the appearance of SfChart without merging common theme resource and control style resource dictionaries.    
 
 {% highlight xaml %}
 
 <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
              ...>
 <Application.Resources>
     <syncCore:SyncfusionThemeDictionary>
         <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
             <ResourceDictionary>
-                <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String> 
-                <Color x:Key="SfTextInputLayoutCounterLabelColor">Blue</Color> 
-                <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color> 
+                <x:String x:Key="SfChartTheme">CommonTheme</x:String> 
+                <Color x:Key="SfChartBackgroundColor">Transparent</Color> 
+                <Color x:Key="SfChartTitleBackgroundColor">Transparent</Color> 
             </ResourceDictionary>
         </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
     </syncCore:SyncfusionThemeDictionary>
@@ -416,7 +417,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Text color of the chart title.
             <br/>
             <br/>
         </td>
@@ -429,7 +430,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the chart title.
             <br/>
             <br/>
         </td>
@@ -442,7 +443,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the chart title.
             <br/>
             <br/>
         </td>
@@ -455,7 +456,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the chart.
             <br/>
             <br/>
         </td>
@@ -468,7 +469,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Fill color of the selection rectangle when selection zooming the chart.
             <br/>
             <br/>
         </td>
@@ -481,7 +482,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Stroke color of the selection rectangle when selection zooming the chart.
             <br/>
             <br/>
         </td>
@@ -494,7 +495,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of annotation.
             <br/>
             <br/>
         </td>
@@ -507,7 +508,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Stroke color of the annotation.
             <br/>
             <br/>
         </td>
@@ -520,7 +521,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Text color of the label.
             <br/>
             <br/>
         </td>
@@ -533,7 +534,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border stroke color of the labels.
             <br/>
             <br/>
         </td>
@@ -546,7 +547,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the labels.
             <br/>
             <br/>
         </td>
@@ -559,7 +560,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the axis label of VerticalLine and HorizontalLine annotations.
             <br/>
             <br/>
         </td>
@@ -572,7 +573,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Text color of axis label of VerticalLine and HorizontalLine annotations.
             <br/>
             <br/>
         </td>
@@ -585,7 +586,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border stroke color of the axis label of VerticalLine and HorizontalLine annotations.
             <br/>
             <br/>
         </td>
@@ -598,7 +599,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Stroke color of the trackaball line.
             <br/>
             <br/>
         </td>
@@ -611,7 +612,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the trackball label.
             <br/>
             <br/>
         </td>
@@ -624,7 +625,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the trackball label.
             <br/>
             <br/>
         </td>
@@ -637,7 +638,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Text color of the trackball label.
             <br/>
             <br/>
         </td>
@@ -650,7 +651,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the axis label of trackball.
             <br/>
             <br/>
         </td>
@@ -663,7 +664,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the axis label of trackball.
             <br/>
             <br/>
         </td>
@@ -676,7 +677,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Text color of axis label of trackball.
             <br/>
             <br/>
         </td>
@@ -689,7 +690,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the selected segment of the series.
             <br/>
             <br/>
         </td>
@@ -702,7 +703,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the selected series.
             <br/>
             <br/>
         </td>
@@ -715,7 +716,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the strip line.
             <br/>
             <br/>
         </td>
@@ -728,7 +729,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the strip line.
             <br/>
             <br/>
         </td>
@@ -741,7 +742,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Text color of the strip line label.
             <br/>
             <br/>
         </td>
@@ -754,7 +755,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the strip line label.
             <br/>
             <br/>
         </td>
@@ -767,7 +768,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the strip line label.
             <br/>
             <br/>
         </td>
@@ -780,7 +781,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the axis major grid line.
             <br/>
             <br/>
         </td>
@@ -793,7 +794,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the axis minor grid line.
             <br/>
             <br/>
         </td>
@@ -806,7 +807,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the axis major tick line.
             <br/>
             <br/>
         </td>
@@ -819,7 +820,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the axis minor tick line.
             <br/>
             <br/>
         </td>
@@ -832,7 +833,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the axis line.
             <br/>
             <br/>
         </td>
@@ -845,7 +846,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the axis title text.
             <br/>
             <br/>
         </td>
@@ -858,7 +859,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the axis title.
             <br/>
             <br/>
         </td>
@@ -871,7 +872,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the axis title.
             <br/>
             <br/>
         </td>
@@ -884,7 +885,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the axis label.
             <br/>
             <br/>
         </td>
@@ -897,7 +898,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the axis label.
             <br/>
             <br/>
         </td>
@@ -910,7 +911,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the axis label.
             <br/>
             <br/>
         </td>
@@ -923,7 +924,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the Legend title text.
             <br/>
             <br/>
         </td>
@@ -936,7 +937,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the legend title.
             <br/>
             <br/>
         </td>
@@ -949,7 +950,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the legend title.
             <br/>
             <br/>
         </td>
@@ -962,7 +963,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the legend label.
             <br/>
             <br/>
         </td>
@@ -975,7 +976,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+             Predefined color palette for the series.
             <br/>
             <br/>
         </td>
@@ -988,7 +989,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color schemes for a particular series in the chart.
             <br/>
             <br/>
         </td>
@@ -1025,19 +1026,20 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfDateTimeRangeNavigator without merging common theme resource and control style resource dictionaries.
+            By merging this key in application resources, you can customize the appearance of SfDateTimeRangeNavigator without merging common theme resource and control style resource dictionaries.    
 
 {% highlight xaml %}
 
 <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
              ...>
 <Application.Resources>
     <syncCore:SyncfusionThemeDictionary>
         <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
             <ResourceDictionary>
-                <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String> 
-                <Color x:Key="SfTextInputLayoutCounterLabelColor">Blue</Color> 
-                <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color> 
+                <x:String x:Key="SfDateTimeRangeNavigatorTheme">CommonTheme</x:String> 
+                <Color x:Key="SfDateTimeRangeNavigatorBackgroundColor">Transparent</Color> 
+                <Color x:Key="SfDateTimeRangeNavigatorOverlayColor">White</Color> 
             </ResourceDictionary>
         </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
     </syncCore:SyncfusionThemeDictionary>
@@ -1059,7 +1061,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the date-time range navigator.
             <br/>
             <br/>
         </td>
@@ -1072,7 +1074,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Overlay color of unselected region of the date-time range navigator.
             <br/>
             <br/>
         </td>
@@ -1085,7 +1087,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Text color of the date-time range navigator label.
             <br/>
             <br/>
         </td>
@@ -1098,7 +1100,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the date-time range navigator label.
             <br/>
             <br/>
         </td>
@@ -1111,7 +1113,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the date-time range navigator label.
             <br/>
             <br/>
         </td>
@@ -1124,7 +1126,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Text color of the date-time range navigator selected label.
             <br/>
             <br/>
         </td>
@@ -1137,7 +1139,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the date-time range navigator selected label.
             <br/>
             <br/>
         </td>
@@ -1150,7 +1152,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the date-time range navigator selected label.
             <br/>
             <br/>
         </td>
@@ -1163,7 +1165,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the date-time range navigator grid lines.
             <br/>
             <br/>
         </td>
@@ -1176,7 +1178,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the date-time range navigator tick lines.
             <br/>
             <br/>
         </td>
@@ -1189,7 +1191,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the date-time range navigator thumb.
             <br/>
             <br/>
         </td>
@@ -1202,7 +1204,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the date-time range navigator thumb.
             <br/>
             <br/>
         </td>
@@ -1215,7 +1217,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color of the date-time range navigator thumb line.
             <br/>
             <br/>
         </td>
@@ -1228,7 +1230,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the date-time range navigator tooltip.
             <br/>
             <br/>
         </td>
@@ -1241,7 +1243,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the date-time range navigator tooltip.
             <br/>
             <br/>
         </td>
@@ -1254,7 +1256,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Text color of the date-time range navigator tootlip.
             <br/>
             <br/>
         </td>
@@ -1291,19 +1293,20 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfKanban without merging common theme resource and control style resource dictionaries.
+            By merging this key in application resources, you can customize the appearance of SfKanban without merging common theme resource and control style resource dictionaries.    
 
 {% highlight xaml %}
 
 <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             xmlns:chart="clr-namespace:Syncfusion.SfKanban.XForms;assembly=Syncfusion.SfKanban.XForms"
              ...>
 <Application.Resources>
     <syncCore:SyncfusionThemeDictionary>
         <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
             <ResourceDictionary>
-                <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String> 
-                <Color x:Key="SfTextInputLayoutCounterLabelColor">Blue</Color> 
-                <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color> 
+                <x:String x:Key="SfKanbanTheme">CommonTheme</x:String> 
+                <Color x:Key="SfKanbanBackgroundColor">Transparent</Color> 
+                <Color x:Key="SfKanbanPlaceholderBackgroundColor">White Smoke</Color> 
             </ResourceDictionary>
         </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
     </syncCore:SyncfusionThemeDictionary>
@@ -1325,7 +1328,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of kanban.
             <br/>
             <br/>
         </td>
@@ -1338,7 +1341,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color value of the error bar for minimum limit validation.
             <br/>
             <br/>
         </td>
@@ -1351,7 +1354,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color value of the error bar for maximum limit validation.
             <br/>
             <br/>
         </td>
@@ -1364,7 +1367,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Color value of the error bar for validation.
             <br/>
             <br/>
         </td>
@@ -1377,7 +1380,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the placeholder.
             <br/>
             <br/>
         </td>
@@ -1390,7 +1393,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the placeholder.
             <br/>
             <br/>
         </td>
@@ -1403,7 +1406,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Text color of the placeholder.
             <br/>
             <br/>
         </td>
@@ -1416,7 +1419,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Background color of the selected placeholder.
             <br/>
             <br/>
         </td>
@@ -1429,7 +1432,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Border color of the selected placeholder.
             <br/>
             <br/>
         </td>
@@ -1442,7 +1445,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            
+            Text color of the selected placeholder.
             <br/>
             <br/>
         </td>

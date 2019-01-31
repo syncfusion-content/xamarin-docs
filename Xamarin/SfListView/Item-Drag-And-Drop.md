@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Item Drag and Drop in Xamarin.forms ListView | Syncfusion
-description: This topics describes about re-ordering the items in SfListView for Xamarin.Forms by drag and drop the items and its various customization options and use cases.
+description: This topics describes about re-ordering the items in Syncfusion Xamarin.Forms ListView by drag and drop and its customizations.  
 platform: xamarin
 control: SfListView
 documentation: ug

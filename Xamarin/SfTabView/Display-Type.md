@@ -16,7 +16,7 @@ By default, the tab view control displays the title of each tab item. It can be 
 * Image with text
 * No header
 
-![](images/Display-Type/tabstyle01.png)
+![Image for DisplayMode](images/Display-Type/tabstyle01.png)
 
 
 The tab view can be changed by setting the `DisplayMode` property of `SfTabView`.

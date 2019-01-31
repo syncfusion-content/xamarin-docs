@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Interaction
+title: User Interaction in Syncfusion SfMaps control for Xamarin.Forms
 description: This section describes the user interaction on maps control.
 platform: xamarin
 control: SfMaps

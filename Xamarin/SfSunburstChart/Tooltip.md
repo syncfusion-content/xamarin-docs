@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip feature of Essential Xamarin.Forms SfSunburstChart
+title: Tooltip in Syncfusion SfSunburstChart control for Xamarin.Forms
 description: This section describes the tooltip feature of sunburst chart.
 platform: xamarin
 control: SfSunburstChart

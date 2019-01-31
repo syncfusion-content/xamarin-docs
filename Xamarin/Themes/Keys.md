@@ -710,6 +710,19 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
+            SfChartSeriesSelectionColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
             SfChartStriplineBackgroundColor
             <br/>
             <br/>

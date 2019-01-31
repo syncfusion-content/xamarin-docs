@@ -599,7 +599,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Stroke color of the trackaball line.
+            Stroke color of the trackball line.
             <br/>
             <br/>
         </td>
@@ -1256,7 +1256,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the date-time range navigator tootlip.
+            Text color of the date-time range navigator tooltip.
             <br/>
             <br/>
         </td>

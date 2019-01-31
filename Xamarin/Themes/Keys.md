@@ -353,6 +353,151 @@ This page lists the keys for each control and the element to which it is mapped 
 </table>
 
 
+## SfTreeView
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="8">
+            SfTreeViewStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfTreeViewTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfTreeView without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfTreeViewTheme">CustomTheme</x:String> 
+                <Color x:Key="SfTreeViewSelectionBackgroundColor">Blue</Color> 
+                <Color x:Key="SfTreeViewSelectionForegroundColor">White</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SyncPrimaryLightColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of selected items text.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SfTreeViewBackgroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of background of view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfTreeViewSelectionBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of selected item background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+            SfTreeViewContentForegroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of content text in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfTreeViewExpanderColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of expander icon.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+            SfTreeViewFocusBorderColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of border of focused item in the view.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    <tr>
+    <td>
+            SfTreeViewFocusBorderThickness  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thickness of border of focused item in the view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
+
 
 
 

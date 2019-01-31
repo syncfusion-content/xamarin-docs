@@ -371,7 +371,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
     
     <tr>
-        <td rowspan="24">
+        <td rowspan="46">
             SfChartStyles  
             <br/>
             <br/>

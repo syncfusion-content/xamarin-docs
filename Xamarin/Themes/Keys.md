@@ -521,7 +521,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the label.
+            Text color of the annotation label.
             <br/>
             <br/>
         </td>
@@ -534,7 +534,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the label.
+            Border color of the annotation label.
             <br/>
             <br/>
         </td>
@@ -547,7 +547,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the label.
+            Background color of the annotation label.
             <br/>
             <br/>
         </td>

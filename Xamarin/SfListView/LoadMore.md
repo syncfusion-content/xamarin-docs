@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Load More in Xamarin.Forms ListView | Syncfusion
-description: This topic describes about the Load More feature with manual and automatic loading option along with different loading directions and Load More behaviors in Syncfusion ListView.
-platform: xamarin
+description: This topic describes about the load more feature with manual and automatic loading options in Syncfusion Xamarin.Forms ListView.platform: xamarin
 control: SfListView
 documentation: ug
 ---
@@ -754,4 +753,4 @@ private void AddProducts(int index, int count)
 }
 {% endhighlight %}
 
-You can download the GitHub sample [here]()
+You can download the GitHub sample [here](https://github.com/SyncfusionExamples/How-to-disable-LoadMoreCommand-execution-when-ListView-is-Empty)

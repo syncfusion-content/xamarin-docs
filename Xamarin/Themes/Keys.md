@@ -1261,6 +1261,193 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 </table>
 
+## SfKanban
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+    
+    <tr>
+        <td rowspan="24">
+            SfKanbanStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfKanbanTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfKanban without merging common theme resource and control style resource dictionaries.
+
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String> 
+                <Color x:Key="SfTextInputLayoutCounterLabelColor">Blue</Color> 
+                <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    <tr>
+    <td>
+            SfKanbanBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanMinValidationColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanMaxValidationColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanValidationColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanPlaceholderBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanPlaceholderBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanPlaceholderTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanPlaceholderSelectedBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanPlaceholderSelectedBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanPlaceholderSelectedTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
 
 
 

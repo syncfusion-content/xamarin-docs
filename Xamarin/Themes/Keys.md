@@ -1001,32 +1001,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
-    <tr>
-    <td>
-            SfChartColorPaletteName
-            <br/>
-            <br/>
-        </td>
-        <td>
-             Predefined color palette for the series.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfChartColorModelColors
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color schemes for a particular series in the chart.
-            <br/>
-            <br/>
-        </td>
-    </tr>
 </table>
 
 ## SfDateTimeRangeNavigator

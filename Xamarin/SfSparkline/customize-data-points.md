@@ -63,7 +63,7 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![](sparkline_images/MarkerCustomization.png)
+![Marker customization in Xamarin.Forms Sparkline](sparkline_images/MarkerCustomization.png)
 
 Code snippet to customize the segments
 
@@ -100,4 +100,4 @@ SfColumnSparkline columnSparkline = new SfColumnSparkline()
 
 {% endtabs %}
 
-![](sparkline_images/SegmentsCustomization.png)
+![Segment customization in Xamarin.Forms Sparkline](sparkline_images/SegmentsCustomization.png)

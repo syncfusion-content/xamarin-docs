@@ -79,7 +79,7 @@ this.Content = map;
 
 {% endtabs %}
 
-![](Images/UserInteraction_img1.jpeg)
+![Single selection support in Xamarin.Forms Maps](Images/UserInteraction_img1.jpeg)
 
 ### Multiple selection
 
@@ -145,7 +145,7 @@ this.Content = map;
 
 {% endtabs %}
 
-![](Images/UserInteraction_img2.jpeg)
+![Multiple selection in Xamarin.Forms Maps](Images/UserInteraction_img2.jpeg)
 
 ### Selected items
 
@@ -185,7 +185,7 @@ layer.SelectedItems.Remove(model[4]);
 
 {% endtabs %}
 
-![](Images/UserInteraction_img3.jpeg)
+![Selected items in Xamarin.Forms Maps](Images/UserInteraction_img3.jpeg)
 
 ## Zooming
 

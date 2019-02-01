@@ -179,7 +179,7 @@ You can customize the position of [`Scales`](https://help.syncfusion.com/cr/cref
 
 {% endtabs %}
 
-![](rim_images/rim-start-end-offset.png)
+![Scale start and end offset for rim in Xamarin.Forms Circular Gauge](rim_images/rim-start-end-offset.png)
 
 ## Show rim
 
@@ -213,5 +213,5 @@ The [`ShowRim`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfG
 
 {% endtabs %}
 
-![](rim_images/show-rim.png)
+![Show rim support in Xamarin.Forms Circular Gauge](rim_images/show-rim.png)
 

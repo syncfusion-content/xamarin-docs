@@ -61,7 +61,7 @@ Numbers can be displayed in digital gauge in different formats using the `Charac
 
 {% endtabs %}
 
-![](Displaytypes_images/Displaytypes_img1.png)
+![Value as number support in Xamarin.Forms Digital Gauge](Displaytypes_images/Displaytypes_img1.png)
 
 ## Setting value to alphabet
 
@@ -113,7 +113,7 @@ Alphabet can be displayed in digital gauge using any one of the character format
 
 {% endtabs %}
 
-![](Displaytypes_images/Displaytypes_img2.png)
+![Value as alphabet support in Xamarin.Forms Digital Gauge](Displaytypes_images/Displaytypes_img2.png)
 
 ## Setting value to special characters
 
@@ -165,5 +165,5 @@ Special characters can also be displayed in digital gauge using the EightCrossEi
 
 {% endtabs %}
 
-![](Displaytypes_images/Displaytypes_img3.png)
+![Value as special character support in Xamarin.Forms Digital Gauge](Displaytypes_images/Displaytypes_img3.png)
 

@@ -86,7 +86,7 @@ The legend items will be placed in multiple rows if size of the total legend exc
 
 {% endtabs %}
 
-![](Images/LegendWrapping.jpg)
+![Legend positioning in Xamarin.Forms Maps](Images/LegendWrapping.jpg)
 
 
 ## Legend alignment
@@ -125,9 +125,7 @@ Legends can be aligned using the [`HorizontalAlignment`](https://help.syncfusion
 
 {% endtabs %}
 
-![](Images/LegendAlignment.jpg)
-
-
+![Legend alignment support in Xamarin.Forms Maps](Images/LegendAlignment.jpg)
 
 ## Icon customization
 
@@ -201,8 +199,7 @@ The icon shape can be customized using the [`LegendIcon`](https://help.syncfusio
 
 {% endtabs %}
 
-![](Images/LegendIconCustomization.jpg)
-
+![Legend icon customization in Xamarin.Forms Maps](Images/LegendIconCustomization.jpg)
 
 ## Item margin
 
@@ -236,8 +233,7 @@ The [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 {% endtabs %}
 
-![](Images/LegendItemMargin.jpg)
-
+![Legend item margin support in Xamarin.Forms Maps](Images/LegendItemMargin.jpg)
 
 ## Legend label
 
@@ -282,7 +278,7 @@ The following properties are used to customize the label of the legends:
 
 {% endtabs %}
 
-![](Images/LegendFontCustomization.jpg)
+![Legend font customization in Xamarin.Forms Maps](Images/LegendFontCustomization.jpg)
 
 
 The following code sample demonstrates how to add a legend to maps and customize it.
@@ -451,7 +447,7 @@ The following code sample demonstrates how to add a legend to maps and customize
 
 {% endtabs %}
 
-![](Images/LegendForBubble.jpg)
+![Legend for bubbles support in Xamarin.Forms Maps](Images/LegendForBubble.jpg)
 
 
 ### Legend for shapes
@@ -563,5 +559,5 @@ The following code sample demonstrates how to add a legend to maps and customize
 
 {% endtabs %}
 
-![](Images/LegendForShapes.png)
+![Legend for shapes in Xamarin.Forms Maps](Images/LegendForShapes.png)
 

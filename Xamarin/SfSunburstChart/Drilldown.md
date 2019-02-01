@@ -66,7 +66,7 @@ Toolbar can be positioned anywhere on the chart by specifying the [`OffsetX`](ht
 
 {% endtabs %} 
 
-![](Drilldown_images/Offset.png)
+![Toolbar positioning support in Xamarin.Forms Sunburst](Drilldown_images/Offset.png)
 
 ## Toolbar alignment 
 
@@ -108,5 +108,5 @@ The following code shows the toolbar alignment.
 
 {% endtabs %} 
 
-![](Drilldown_images/ToolbarAlignment.png)
+![Toolbar alignment support in Xamarin.Forms Sunburst](Drilldown_images/ToolbarAlignment.png)
 

@@ -43,4 +43,4 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![](sparkline_images/RangeBand.png)
+![Range band support in Xamarin.Forms Sparkline](sparkline_images/RangeBand.png)

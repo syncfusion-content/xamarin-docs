@@ -118,5 +118,5 @@ Below snippet is the complete code for generating the following output.
 
 The following screenshot depicts animation of the sunburst chart with the specified duration.
 
-![](Animation_images/Animate.gif)
+![Animation support in Xamarin.Forms Sunburst](Animation_images/Animate.gif)
 

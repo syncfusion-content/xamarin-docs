@@ -48,4 +48,4 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![](sparkline_images/Axis.png)
+![Axis support in Xamarin.Forms Sparkline](sparkline_images/Axis.png)

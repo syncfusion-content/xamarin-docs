@@ -33,7 +33,7 @@ The following code shows enabling the tooltip.
 
 {% endtabs %} 
 
-![](Tooltip_images/Tooltip.png)
+![Tooltip support in Xamarin.Forms Sunburst](Tooltip_images/Tooltip.png)
 
 ## Customization
 
@@ -74,7 +74,7 @@ The following code shows all the above customizations.
 
 {% endtabs %} 
 
-![](Tooltip_images/Customization.png)
+![Customize tooltip support in Xamarin.Forms Sunburst](Tooltip_images/Customization.png)
 
 ## Font customization
 
@@ -107,7 +107,7 @@ The font can be customized using the [`FontSize`](https://help.syncfusion.com/cr
 
 {% endtabs %} 
 
-![](Tooltip_images/Customization.png)
+![Font customization support in Xamarin.Forms Sunburst](Tooltip_images/Customization.png)
 
 ## Custom template
 
@@ -177,5 +177,5 @@ The sunburst chart provides options to design your own template for tooltip usin
 
 {% endtabs %} 
 
-![](Tooltip_images/Template.png)
+![Custom template support in Xamarin.Forms Sunburst](Tooltip_images/Template.png)
 

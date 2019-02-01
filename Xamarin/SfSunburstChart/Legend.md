@@ -60,8 +60,7 @@ The following code shows how to control the visibility of legend.
 
 {% endtabs %} 
 
-![](Legend_images/Legend.jpg)
-
+![Legend visibility support in Xamarin.Forms Sunburst](Legend_images/Legend.jpg)
 
 ## Position
 
@@ -92,8 +91,7 @@ The following code shows customizing the legend position.
 
 {% endtabs %} 
 
-![](Legend_images/LegendPosition.jpg)
-
+![Legend position support in Xamarin.Forms Sunburst](Legend_images/LegendPosition.jpg)
 
 ## Legend icon types
 
@@ -132,7 +130,7 @@ The following predefined shapes are available in the IconType property:
 
 {% endtabs %} 
 
-![](Legend_images/IconType.jpg)
+![Legend icon types support in Xamarin.Forms Sunburst](Legend_images/IconType.jpg)
 
 ## Icon size customization
 
@@ -163,7 +161,7 @@ The size of the legend icon can be customized using the [`IconHeight`](https://h
 
 {% endtabs %} 
 
-![](Legend_images/IconSize.jpg)
+![Legend icon size customization support in Xamarin.Forms Sunburst](Legend_images/IconSize.jpg)
 
 ## Label style
 
@@ -211,7 +209,7 @@ Legend label can be customized using the following properties available in [`Lab
 
 {% endtabs %} 
 
-![](Legend_images/LabelStyle.png)
+![Customize label support in Xamarin.Forms Sunburst](Legend_images/LabelStyle.png)
 
 
 ## Item margin
@@ -227,8 +225,6 @@ Margin can be set to individual legend items using the [`ItemMargin`](https://he
          </sunburst:SunburstChartLegend>
   </sunburst:SfSunburstChart.Legend>
 
-
-
 {% endhighlight %}
 
 {% highlight C# %}
@@ -242,7 +238,7 @@ Margin can be set to individual legend items using the [`ItemMargin`](https://he
 
 {% endtabs %} 
 
-![](Legend_images/ItemMargin.png)
+![Legend item margin support in Xamarin.Forms Sunburst](Legend_images/ItemMargin.png)
 
 ## Toggle selection
 
@@ -280,4 +276,4 @@ Sunburst segments can also be selected via legends.
 
 {% endtabs %} 
 
-![](Legend_images/LegendSelection.png)
+![Toggle selection support in Xamarin.Forms Sunburst](Legend_images/LegendSelection.png)

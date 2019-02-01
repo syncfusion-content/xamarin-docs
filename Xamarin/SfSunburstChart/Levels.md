@@ -105,5 +105,5 @@ The following code specifies the levels for data model specified in the getting 
 
 {% endtabs %} 
 
-![](Levels_images/Levels.png)
+![Levels support in Xamarin.Forms Sunburst](Levels_images/Levels.png)
 

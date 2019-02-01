@@ -153,7 +153,7 @@ You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusi
 
 {% endtabs %}
 
-![](Images/Sublayer.png)
+![Sublayer support in Xamarin.Forms Maps](Images/Sublayer.png)
 
 ### Customizing sublayer
 

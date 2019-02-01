@@ -441,7 +441,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Header Foregroundcolor of the Diagram Dialog box.
+            Header Foreground Color of the Diagram Dialog box.
             <br/>
             <br/>
         </td>

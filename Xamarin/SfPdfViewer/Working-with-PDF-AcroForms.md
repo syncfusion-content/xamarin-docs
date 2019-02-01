@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Filling PDF forms using PDF Viewer Xamarin | Syncfusion
-description: Filling and signing forms in the PDF document using Syncfusion PDF Viewer Xamarin.Forms
+title:  Filling PDF forms using PDF Viewer Xamarin.Forms | Syncfusion
+description: Filling and signing forms in the PDF document using Syncfusion PDF Viewer Xamarin.Forms.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug

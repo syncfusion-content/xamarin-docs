@@ -17,12 +17,12 @@ The border stroke width (for [Outlined](https://help.syncfusion.com/cr/cref_file
 {% highlight xaml %}
 
 <inputLayout:SfTextInputLayout
-        Hint="Name" 
-        ContainerType="Outlined"
+            Hint="Name" 
+            ContainerType="Outlined"
 	    FocusedStrokeWidth="4"
 	    UnfocusedStrokeWidth="2">
-        <Entry />
-</inputLayout:SfTextInputLayout> 
+            <Entry />
+</inputLayout:SfTextInputLayout>
 		
 {% endhighlight %}
 

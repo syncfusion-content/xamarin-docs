@@ -440,7 +440,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Foreground Color of header in dialog box.
+            Foreground color of header in dialog box.
             <br/>
             <br/>
         </td>
@@ -488,7 +488,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background Color of stencil.
+            Background color of stencil.
             <br/>
             <br/>
         </td>

@@ -371,7 +371,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
     
     <tr>
-        <td rowspan="46">
+        <td rowspan="55">
             SfChartStyles  
             <br/>
             <br/>
@@ -410,6 +410,39 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+    	<tr>
+        <td rowspan="2">
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Stroke color of annotation.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Text color of annotation label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+            <tr>
+    <td>
+            SyncPrimaryLightForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of trackball label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
         <tr>
     <td>
             SfChartTitleTextColor
@@ -1054,6 +1087,34 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+
+<tr>
+        <td rowspan="3">
+            SyncPrimaryColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of tooltip and thumb. 
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Line color of thumb.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Background color of tooltip.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
      <tr>
     <td>
             SfDateTimeRangeNavigatorBackgroundColor

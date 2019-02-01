@@ -599,7 +599,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the numerictextbox is in default state.
+            Border color of the numeric textbox is in default state.
             <br/>
             <br/>
         </td>
@@ -612,7 +612,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the numerictextbox is in default state.
+            Text color of the numeric textbox is in default state.
             <br/>
             <br/>
         </td>
@@ -625,7 +625,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the numerictextbox is in the default state.
+            Background color of the numeric textbox is in the default state.
             <br/>
             <br/>
         </td>
@@ -698,7 +698,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the numericupdown is in default state.
+            Border color of the numericUpDown is in default state.
             <br/>
             <br/>
         </td>
@@ -711,7 +711,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the numerictextbox is in default state.
+            Text color of the numericUpDown is in default state.
             <br/>
             <br/>
         </td>
@@ -724,7 +724,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the numericupdown is in the default state.
+            Background color of the numericUpDown is in the default state.
             <br/>
             <br/>
         </td>

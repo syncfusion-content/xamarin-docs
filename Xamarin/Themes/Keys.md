@@ -706,7 +706,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Change the color of view header day text(sun,mon,etc) in schedule.
+            Change the color of view header day text(Sunday,Monday,etc) in schedule.
             <br/>
             <br/>
         </td>
@@ -1119,7 +1119,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-           Change the color of week day(monday to friday month cell) background in calendar month view.
+           Change the color of week day(Monday to Friday month cell) background in calendar month view.
             <br/>
             <br/>
         </td>
@@ -1132,7 +1132,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Change the color of week day(monday to friday month cell) text in calendar month view.
+            Change the color of week day(Monday to Friday month cell) text in calendar month view.
             <br/>
             <br/>
         </td>
@@ -1171,7 +1171,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Change the color of prvious month cell date background in calendar month view. 
+            Change the color of previous month cell date background in calendar month view. 
             <br/>
             <br/>
         </td>
@@ -1184,7 +1184,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Change the color of prvious month cell date text in calendar month view. 
+            Change the color of previous month cell date text in calendar month view. 
             <br/>
             <br/>
         </td>
@@ -1223,7 +1223,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Change the color of week end(sunday & saturday month cell) text in calendar month view.
+            Change the color of week end(Sunday & Saturday month cell) text in calendar month view.
             <br/>
             <br/>
         </td>
@@ -1236,7 +1236,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Change the color day header (sun,mon,etc) text color in calendar month view.
+            Change the color day header (Sunday,Monday,etc) text color in calendar month view.
             <br/>
             <br/>
         </td>
@@ -1249,7 +1249,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Change the color day header (sun,mon,etc) background color in calendar month view.
+            Change the color day header (Sunday,Monday,etc) background color in calendar month view.
             <br/>
             <br/>
         </td>
@@ -1262,7 +1262,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Change the color of week end(sunday & saturday month cell) background in calendar month view.
+            Change the color of week end(Sunday & Saturday month cell) background in calendar month view.
             <br/>
             <br/>
         </td>
@@ -1327,7 +1327,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Change the color of month layout(jan,feb,etc) background in calendar year view.
+            Change the color of month layout(Jan,Feb,etc) background in calendar year view.
             <br/>
             <br/>
         </td>
@@ -1340,7 +1340,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Change the color of month layout header(jan,feb,etc) background in calendar year view.
+            Change the color of month layout header(Jan,Feb,etc) background in calendar year view.
             <br/>
             <br/>
         </td>
@@ -1379,7 +1379,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Change the color of month header text(jan,feb,etc) in calendar year view.
+            Change the color of month header text(Jan,Feb,etc) in calendar year view.
             <br/>
             <br/>
         </td>

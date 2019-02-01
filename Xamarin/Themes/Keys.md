@@ -352,8 +352,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 </table>
 
-
-## SfTreeView
+## SfListView
 
 <table>
     <tr>
@@ -372,18 +371,18 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="8">
-            SfTreeViewStyles  
+        <td rowspan="11">
+            SfListViewStyles  
             <br/>
             <br/>
         </td>
-		<td>
-           SfTreeViewTheme 
+        <td>
+           SfListViewTheme 
             <br/>
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, you can customize the appearance of SfTreeView without merging common theme resource and control style resource dictionaries.
+            By merging this key in application resources, you can customize the appearance of the SfListView without merging common theme resource and control style resource dictionaries.
 
 {% highlight xaml %}
 
@@ -393,9 +392,198 @@ This page lists the keys for each control and the element to which it is mapped 
     <syncCore:SyncfusionThemeDictionary>
         <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
             <ResourceDictionary>
-                <x:String x:Key="SfTreeViewTheme">CustomTheme</x:String> 
-                <Color x:Key="SfTreeViewSelectionBackgroundColor">Blue</Color> 
-                <Color x:Key="SyncPrimaryLightColor">White</Color> 
+                    <x:String x:Key="SfListViewTheme">CustomTheme</x:String>
+                    <Color x:Key="SfListViewBackgroundColor">LightGreen</Color>
+                    <Color x:Key="SfListViewForegroundColor">DarkGreen</Color>
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+    <tr>
+        <td>
+            SfListViewBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of ListView.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfListViewForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the ListViewItem, when it in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td >
+            SfListViewSelectionBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the ListViewItem when it is in selection.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfListViewFocusBorderThickness
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border thickness of the ListViewItem when it is in selection.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfListViewFocusBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the ListViewItem when it is in selection.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    
+    <tr>
+        <td>
+            SfListViewGroupHeaderForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the GroupHeaderItem, when it in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfListViewLoadMoreForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the LoadMoreItem When it is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SyncPrimaryLightColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the LoadMoreIndicator when the indicator is in the progressed state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfListViewLoadMoreBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the LoadMoreItem when it is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfListViewLoadMoreOpacity
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Percentage of transparency level for the text in the LoadMoreItem when it is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+             SfProgressBarStyles 
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfProgressBarTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfLinearProgressBar without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfProgressBarTheme">CustomTheme</x:String> 
+                <Color x:Key="SyncPrimaryColor">Blue</Color> 
+                <Color x:Key="SfProgressBarSecondaryProgressColor">Green</Color> 
             </ResourceDictionary>
         </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
     </syncCore:SyncfusionThemeDictionary>
@@ -410,97 +598,450 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
-    <tr>
+	<tr>
         <td>
-            SfTreeViewBackgroundColor   
+            SyncPrimaryColor  
             <br/>
             <br/>
         </td>
         <td>
-            Background color of TreeView.
+            Color of the progress indicator in the linear progress bar.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+    <tr>
+        <td>
+            SfProgressBarTrackColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the track in the linear progress bar.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+		<td>
+            SfProgressBarSecondaryProgressColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the secondary progress(buffer) indicator in the linear progress bar.
             <br/>
             <br/>
         </td>
     </tr>
     
+</table>
+
+## SfCircularProgressBar
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+             SfProgressBarStyles 
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfProgressBarTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfCircularProgressBar without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfProgressBarTheme">CustomTheme</x:String> 
+                <Color x:Key="SyncPrimaryColor">Blue</Color> 
+                <Color x:Key="SfProgressBarTrackColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the progress indicator in the circular progress bar.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
     <tr>
         <td>
-            SfTreeViewSelectionBackgroundColor
+            SfProgressBarTrackColor   
             <br/>
             <br/>
         </td>
         <td>
-            Background color of TreeViewItem when it is in selection.
+            Color of the track in the circular progress bar.
             <br/>
             <br/>
         </td>
     </tr>
+    
+</table>
+
+## SfNumericTextBox
+
+<table>
     <tr>
-    <td>
-            SfTreeViewContentForegroundColor   
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
             <br/>
             <br/>
-        </td>
-        <td>
-            Text color of content view label when it is in default state.
+        </th>
+        <th>
+            Description
             <br/>
             <br/>
-        </td>
+        </th>
     </tr>
-    	<tr>
-        <td>
-            SyncPrimaryLightColor  
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Text color of content view label when it is in selection.
-            <br/>
-            <br/>
-        </td>
-    </tr>
+
     <tr>
-    <td>
-            SfTreeViewExpanderColor    
+        <td rowspan="24">
+             SfNumericTextBoxStyles 
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfNumericTextBoxTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfNumericTextBox without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfNumericTextBoxTheme">CustomTheme</x:String> 
+                <Color x:Key="SyncPrimaryColor">Blue</Color> 
+                <Color x:Key="SfNumericTextBoxTextColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SyncPrimaryColor  
             <br/>
             <br/>
         </td>
         <td>
-            Color of expander icon.
+            Border color of the numeric text box.
             <br/>
             <br/>
         </td>
     </tr>
-     <tr>
-    <td>
-            SfTreeViewFocusBorderColor 
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Border color of focused item.
-            <br/>
-            <br/>
-        </td>
-    </tr>  
+	
     <tr>
-    <td>
-            SfTreeViewFocusBorderThickness  
+        <td>
+            SfNumericTextBoxTextColor   
             <br/>
             <br/>
         </td>
         <td>
-            Border thickness of focused item.
+            Text color of the numeric text box.
             <br/>
             <br/>
         </td>
     </tr>
+
+    <tr>
+		<td>
+            SfNumericTextBoxBackgroundColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the numeric text box.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
 </table>
 
 
+## SfNumericUpDown
 
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
 
+    <tr>
+        <td rowspan="24">
+             SfNumericUpDownStyles 
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfNumericUpDownTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfNumericUpDown without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
 
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfNumericUpDownTheme">CustomTheme</x:String> 
+                <Color x:Key="SyncPrimaryColor">Blue</Color> 
+                <Color x:Key="SfNumericUpDownTextColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
 
+....
 
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of numeric up down.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+    <tr>
+        <td>
+            SfNumericUpDownTextColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the numeric up down.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+		<td>
+            SfNumericUpDownBackgroundColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of numeric up down.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+	<tr>
+		<td>
+            SfNumericUpDownButtonBackgroundColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the up and down buttons.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+    
+	<tr>
+		<td>
+            SfNumericUpDownButtonForegroundColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Foreground color of the up and down buttons.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+</table>
+
+## SfMaskedEdit
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+              SfMaskedEditStyles 
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfMaskedEditTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfMaskedEdit without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfMaskedEditTheme">CustomTheme</x:String> 
+                <Color x:Key="SyncPrimaryColor">Blue</Color> 
+                <Color x:Key="SfMaskedEditTextColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the masked edit.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+    <tr>
+        <td>
+            SfMaskedEditTextColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the masked edit.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+		<td>
+            SfMaskedEditBackgroundColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the masked edit.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+</table>
 

@@ -1088,6 +1088,19 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+    
+         <tr>
+    <td>
+            SyncPrimaryLightColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Selected label text color of scale.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 
      <tr>
     <td>

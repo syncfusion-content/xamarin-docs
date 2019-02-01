@@ -59,6 +59,8 @@ listView.DragStartMode = DragStartMode.OnHold | DragStartMode.OnDragIndicator;
 
 N> Reordering changes are made only in view, and not in the underlying data. Thus, the changes will be reverted when performing sorting, grouping, or any other operations that refreshes the view.
 
+N> If [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) is rearranged without sorting and grouping feature by drag and drop action then its necessary to implement the `INotifyPropertyChanged` interface at ViewModel to notify the collection changes. If grouping is enabled then [UpdateSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragDropController~UpdateSource.html) will not update the underlying collection instead it will update only the GroupDescriptor's [PropertyName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~PropertyName.html) which you have used to group items. 
+
 ## Drag indicator view
 
 To drag and drop the items by [DragIndicatorView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragIndicatorView.html), set the [SfListView.DragStartMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~DragStartMode.html) property to `OnDragIndicator`. To display the dragging item, define any custom user interface(UI) in `DragIndicatorView`.

@@ -352,6 +352,150 @@ This page lists the keys for each control and the element to which it is mapped 
 
 </table>
 
+## SfDiagram
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="8">
+            SfDiagramStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfDiagramTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfDiagram without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfDiagramTheme">CustomTheme</x:String> 
+                <Color x:Key="SfDiagramStencilBorderColor">Blue</Color> 
+                <Color x:Key="SfDiagramStencilHeaderForegroundColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    <tr>
+        <td>
+            SfDiagramStencilHeaderBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the Diagram Stencil Header.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDiagramStencilHeaderForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Foreground Color of the Diagram Stencil Header.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+            SfDiagramDialogHeaderForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Header Foregroundcolor of the Diagram Dialog box.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    	<tr>
+        <td>
+            SfDiagramDialogBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background Color of the Diagram Dialog box.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+            SfDiagramLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background Color of Diagram Label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+            SfDiagramStencilBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of Diagram Stencil.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    <tr>
+    <td>
+            SfDiagramStencilBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background Color of Diagram Stencil.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
+
 
 
 

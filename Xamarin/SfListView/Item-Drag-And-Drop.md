@@ -269,8 +269,6 @@ private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 
 N> Underlying collection won't get updated when any data operations like sorting, grouping is performed. The order will be maintained only in DisplayItems of data source. When drag and drop between groups, the value of the property in which grouping is performed gets updated in data object. 
 
-Updating items order is not applicable in the underlying collection if grouping is enabled. Because, order of the `DisplayItems` of the DataSource and underlying collection is different.
-
 ## Delete item when dropping in particular view
 
 To delete the dragged item when dropping into a particular view, handle the [ItemDragging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDragging_EV.html) event based on the conditions of [Action](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDraggingEventArgs~Action.html) and `Bounds` event arguments. 

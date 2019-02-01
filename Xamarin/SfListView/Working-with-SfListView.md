@@ -66,8 +66,6 @@ The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 * To change the underlying bound data.
 * To skip other events like selection events if the Handled property set to true.
 
-N> Touch will not pass over single tap on listview in high sensitivity device like Samsung S8 and other high sensitivity devices because touch will pass only when manual touch threshold meets the device threshold on tap.
-
 ### ItemDoubleTapped event
 
 The [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDoubleTapped_EV.html) event will be triggered whenever double tapping the item. The [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs.html) has the following members providing information for the `ItemDoubleTapped` event:
@@ -187,27 +185,13 @@ The SfListView has been built from the ground up with an optimized view reuse st
 
  * Bind the ItemsSource property to an IList<T> collection instead of an IEnumerable<T> collection because IEnumerable<T> collection do not support random access.
  * The `SfListView` gets refreshed each and every time a new item added into the underlying collection. Because, when adding items at runtime, the `DataSource` gets refreshed. To avoid this behavior, use [BeginInit()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~BeginInit.html) to stop the RefreshView() calling in each time, and use [EndInit()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~EndInit.html) to start the RefreshView() calling when adding number of finished items.
- * Avoid loading complex layout in the template contains large size of images or nested containers that cause some performance degradation on scrolling. It commonly degrades performance in all platforms and affects more in android version API level 19. So recommended to use fewer elements and images with less size and resolution to achieve the maximum performance.
+ * Avoid loading complex layout in the template of listview. For example, loading large size of images or nested containers degrades the the scrolling performance. This practice commonly degrades performance in all platforms and particularly affects more in android version API level 19. So recommended to use fewer elements and images with less size and resolution to achieve the maximum performance.
  * Avoid placing the SfListView inside ScrollView for the following reasons:
     * The SfListView implement its own scrolling.
     * The SfListView will not receive any gestures as it will be handled by the parent ScrollView.
     * Should define size to the SfListView if it loads inside ScrollView.
  * Avoid changing the cell layout based on the BindingContext. This incurs large layout and initialization costs.
  * Implement a model class inherited with `INotifyPropertyChanged` interface to notify the property changes at runtime.
-
-## Dispose listview items
-
-You can dispose its objects manually when objects are not disposed even after GC collects by `Dispose` method.
-
-{% tabs %}
-{% highlight c# %}
-protected override void OnDisappearing()  
-{  
-   listview.Dispose();  
-   base.OnDisappearing();  
-}
-{% endhighlight %}
-{% endtabs %}
 
 ## Loading ListView inside ScrollView
 
@@ -1188,3 +1172,17 @@ private bool FilterDepartures(object obj)
 {% endtabs %}
 
  You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample842305360).
+
+ ## Dispose listview
+
+You can dispose and release resources used by ListView by calling ListView.Dispose method.
+
+{% tabs %}
+{% highlight c# %}
+protected override void OnDisappearing()  
+{  
+   listview.Dispose();  
+   base.OnDisappearing();  
+}
+{% endhighlight %}
+{% endtabs %}

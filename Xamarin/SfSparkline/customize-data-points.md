@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize data points
+title: Customize data in Syncfusion Sparkline control for Xamarin.Forms
 description: How to customize data points in Essential Xamarin.Forms Sparkline
 platform: xamarin
 control: Sparkline

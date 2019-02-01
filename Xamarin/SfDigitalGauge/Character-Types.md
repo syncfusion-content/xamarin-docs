@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Character types in DigitalGauge
+title: Character types in Syncfusion DigitalGauge control for Xamarin.Forms
 description: Learn how to define character type in DigitalGauge
 platform: Xamarin
 control: DigitalGauge

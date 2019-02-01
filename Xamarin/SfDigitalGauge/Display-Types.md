@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting Displaying Text of DigitalGauge
+title: Displaying Text in Syncfusion DigitalGauge control for Xamarin.Forms
 description: Learn how to set Display Text in DigitalGauge
 platform: Xamarin
 control: DigitalGauge

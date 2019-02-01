@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear Tick Settings in LinearGauge
+title: Tick Settings in Syncfusion LinearGauge control for Xamarin.Forms
 description: Learn how to define settings of linear ticks in LinearGauge
 platform: Xamarin
 control: LinearGauge

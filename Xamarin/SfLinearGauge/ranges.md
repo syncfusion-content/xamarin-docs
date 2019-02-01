@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Ranges in LinearGauge
+title: Ranges in Syncfusion LinearGauge control for Xamarin.Forms
 description: Learn how to set ranges in LinearGauge
 platform: Xamarin
 control: LinearGauge

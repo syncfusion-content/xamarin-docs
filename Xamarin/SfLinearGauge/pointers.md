@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pointers in LinearGauge
+title: Pointers in Syncfusion LinearGauge control for Xamarin.Forms
 description: Learn how to define set pointers in LinearGauge
 platform: Xamarin
 control: LinearGauge

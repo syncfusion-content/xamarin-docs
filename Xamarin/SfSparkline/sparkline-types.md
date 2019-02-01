@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sparkline types
+title: Sparkline types in Syncfusion Sparkline control for Xamarin.Forms
 description: What are the different types of Sparklines available in Essential Xamarin.forms Sparkline.
 platform: xamarin
 control: Sparkline

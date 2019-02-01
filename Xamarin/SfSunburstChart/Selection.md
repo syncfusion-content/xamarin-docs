@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection feature of Essential Xamarin.Forms SfSunburstChart
+title: Selection feature of Syncfusion Xamarin.Forms SfSunburstChart
 description: This section describes the segment selection.
 platform: xamarin
 control: SfSunburstChart

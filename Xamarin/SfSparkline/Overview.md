@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Essential Xamarin.Forms Sparkline
+title: Overview of Essential Syncfusion Xamarin.Forms Sparkline
 description: What are the key features available in sparkline.
 platform: xamarin
 control: Sparkline

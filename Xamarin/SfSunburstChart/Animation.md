@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Animation feature of Essential Xamarin.Forms SfSunburstChart
+title: Animation feature of Syncfusion Xamarin.Forms SfSunburstChart
 description: This section describes the animation feature of sunburst chart.
 platform: xamarin
 control: SfSunburstChart

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layers
+title: Layers in Syncfusion Maps control for Xamarin.Forms
 description: This section describes about the layers in maps
 platform: xamarin
 control: SfMaps

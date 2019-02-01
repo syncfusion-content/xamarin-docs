@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend
+title: Legend in Syncfusion Maps control for Xamarin.Forms
 description: This section describes about maps legend.
 platform: xamarin
 control: SfMaps

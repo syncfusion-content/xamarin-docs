@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Scales in LinearGauge
+title: Scales in Syncfusion LinearGauge control for Xamarin.Forms
 description:  Learn how to set scales in in LinearGauge
 platform: Xamarin
 control: LinearGauge

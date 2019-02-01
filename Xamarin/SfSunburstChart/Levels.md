@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Levels of Essential Xamarin.Forms SfSunburstChart
+title:  Levels of Syncfusion Xamarin.Forms SfSunburstChart
 description: This section describes the hierarchical levels in SfSunburstChart.
 platform: xamarin
 control: SfSunburstChart

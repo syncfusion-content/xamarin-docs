@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sparkline Axis
+title: Sparkline Axis in Syncfusion Sparkline control for Xamarin.Forms
 description: How to customize Axis in Essential Xamarin.Forms Sparkline
 platform: xamarin
 control: Sparkline

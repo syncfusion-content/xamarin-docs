@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Data labels of Essential Xamarin.Forms SfSunburstChart
+title:  Data labels of Syncfusion Xamarin.Forms SfSunburstChart
 description: This section describes the data label and its customization.
 platform: xamarin
 control: SfSunburstChart

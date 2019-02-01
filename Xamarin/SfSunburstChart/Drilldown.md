@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drill down feature of Essential Xamarin.Forms SfSunburstChart
+title: Drill down feature of Syncfusion Xamarin.Forms SfSunburstChart
 description: This section describes the drill down feature of sunburst chart.
 platform: xamarin
 control: SfSunburstChart
@@ -36,7 +36,7 @@ The following code shows enabling the [`DrilldownSettings`](https://help.syncfus
 
 {% endtabs %} 
 
-![](Drilldown_images/Drilldown.gif)
+![Drilldown support in Xamarin.Forms Sunburst](Drilldown_images/Drilldown.gif)
 
 ## Positioning Toolbar
 

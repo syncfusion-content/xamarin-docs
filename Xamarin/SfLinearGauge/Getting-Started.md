@@ -31,7 +31,7 @@ I>For UWP alone, one more additional step is required if the project is built-in
 
 3. In the Framework tab, ensure Mono.Android and Mono.Android.Export  is checked and click ok.
 
-![](getting-started_images/add_reference.png)
+![Add Reference in Linear Gauge](getting-started_images/add_reference.png)
 
 **Adding namespace for the added assemblies**
 

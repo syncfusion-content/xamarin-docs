@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization of Essential Xamarin.Forms SfSunburstChart
+title: Customization of Syncfusion Xamarin.Forms SfSunburstChart
 description: This section describes the customization available in sunburst chart.
 platform: xamarin
 control: SfSunburstChart
@@ -128,7 +128,7 @@ The start angle and end angle of the sunburst chart can be adjusted by using the
 
 {% endtabs %} 
 
-![Angle support in Xamarin.Forms Sunburst](Customization_images/Angle.png)
+![Angle support in Xamarin.Forms Sunburst](Customization_images/Angle.jpg)
 
 ## Radius
 

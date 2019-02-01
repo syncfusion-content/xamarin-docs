@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview 
+title: Overview in Syncfusion Maps control for Xamarin.Forms
 description: Overview and Key features of Maps control in Xamarin.Forms
 platform: xamarin
 control: SfMaps

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Legends of Essential Xamarin.Forms SfSunburstChart
+title:  Legends of Syncfusion Xamarin.Forms SfSunburstChart
 description: This section describes the legend and its customization.
 platform: xamarin
 control: SfSunburstChart

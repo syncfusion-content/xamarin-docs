@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Character customization of DigitalGauge
+title: Character customization in Syncfusion DigitalGauge control for Xamarin.Forms
 description: Learn how to customise the Character in DigitalGauge
 platform: xamarin 
 control: DigitalGauge

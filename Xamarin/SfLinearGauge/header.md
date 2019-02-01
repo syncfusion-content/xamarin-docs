@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Accessing Header in LinearGauge
+title: Header in Syncfusion LinearGauge control for Xamarin.Forms
 description:  Learn how to set header in LinearGauge
 platform: Xamarin
 control: LinearGauge

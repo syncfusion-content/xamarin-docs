@@ -341,14 +341,8 @@ public partial class SfPopUpView : ContentView
 
     private void SfListView_ItemHolding(object sender, ItemHoldingEventArgs e)
     {
-        if (e.Position.Y + 100 <= listview.Height && e.Position.X + 100 > listview.Width)
-                this.ShowPopup((int)(e.Position.X - 100), (int)(e.Position.Y));
-        else if (e.Position.Y + 100 > listview.Height && e.Position.X + 100 < listview.Width)
-                this.ShowPopup((int)e.Position.X, (int)(e.Position.Y - 100));
-        else if (e.Position.Y + 100 > listview.Height && e.Position.X + 100 > listview.Width)
-                this.ShowPopup((int)(e.Position.X - 100), (int)(e.Position.Y - 100));
-        else
-                this.ShowPopup((int)e.Position.X, (int)(e.Position.Y));
+        item = e.ItemData as Contacts;
+        this.ShowPopup(e.Position.X, e.Position.Y);
     }
 
     private void SfListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
@@ -464,7 +458,7 @@ public partial class ContextMenu : ContentPage
 {% endhighlight %}
 {% endtabs %}
     
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewContextMenu-991690726).
+You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample842305360).
 
 ![Xamarin.Forms listview with Context menu](SfListView_images/ContextMenu.jpg)
 

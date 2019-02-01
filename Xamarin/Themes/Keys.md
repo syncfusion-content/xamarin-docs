@@ -417,7 +417,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of selected items text.
+            Text Color of the selected item/items.
             <br/>
             <br/>
         </td>
@@ -429,7 +429,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of background of view.
+            Background color of tree view.
             <br/>
             <br/>
         </td>
@@ -442,7 +442,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of selected item background.
+            Background color of the selected item/items.
             <br/>
             <br/>
         </td>
@@ -454,7 +454,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of content text in the default state.
+            Text color of the tree view items.
             <br/>
             <br/>
         </td>
@@ -479,7 +479,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of border of focused item in the view.
+            Border color of the focused item.
             <br/>
             <br/>
         </td>
@@ -491,7 +491,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Thickness of border of focused item in the view.
+            Border thickness of focused item.
             <br/>
             <br/>
         </td>

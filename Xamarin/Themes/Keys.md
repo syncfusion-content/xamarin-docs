@@ -1331,5 +1331,350 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>
 </table>
+## SfPdfViewer
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+    
+    <tr>
+        <td rowspan="46">
+            SfPdfViewerStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfPdfViewerTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfPdfViewer without merging common theme resource and control style resource dictionaries.    
+
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             xmlns:chart="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfPdfViewerTheme">CommonTheme</x:String> 
+                <Color x:Key="SfPdfViewerToolbarBackgroundColor">Cyan</Color> 
+                <Color x:Key="SfPdfViewerToolbarSeparatorColor">Red</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+        <tr>
+    <td>
+            SfPdfViewerButtonIconEnabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the button when it is in enabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+        <tr>
+    <td>
+            SfPdfViewerButtonIconDisabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the button when it is in disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerButtonPressedColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Pressed color of the toolbar buttons.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerToolbarBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the toolbar.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerToolbarBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the toolbar.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerToolbarSeparatorColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Toolbar separator color.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerEntryTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of page number entry.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerEntryBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of page number entry.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerBookmarkItemBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the bookmark items.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerTextElementColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the `PDF Viewer` text labels.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerMoreMenuBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the more menu bar.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerMoreMenuTextDisabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the more menu items when it is in disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerMoreMenuTextEnabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the more menu items when it is in enabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerScrollHeadColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the scroll head label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerScrollHeadBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the scroll head.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerScrollHeadPageNumberViewBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the page number alert window.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerSignaturePadTitleColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Title color of the signature pad.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerSignaturePadColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the signature pad view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerSignaturePadHeaderFooterColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of header and footer of signature pad. 
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerSignatureBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the signature pad.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerSignaturePadButtonDisabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the signature pad button when it is in disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfPdfViewerEditWindowPlaceHolderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Placeholder color of the edit text window.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
 
 

@@ -66,7 +66,7 @@ The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 * To change the underlying bound data.
 * To skip other events like selection events if the Handled property set to true.
 
-N> Touch will not pass over single tap on listview in high sensitivity device like Samsung S8 and other high sensitivy devices because touch will pass only when manual touch threshold meets the device threshold on tap.
+N> Touch will not pass over single tap on listview in high sensitivity device like Samsung S8 and other high sensitivity devices because touch will pass only when manual touch threshold meets the device threshold on tap.
 
 ### ItemDoubleTapped event
 

@@ -352,6 +352,196 @@ This page lists the keys for each control and the element to which it is mapped 
 
 </table>
 
+## SfListView
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="11">
+            SfListViewStyles  
+            <br/>
+            <br/>
+        </td>
+        <td>
+           SfListViewTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfListView without merging common theme resource and control style resource dictionaries.
+
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                    <x:String x:Key="SfListViewTheme">CustomTheme</x:String>
+                    <Color x:Key="SfListViewBackgroundColor">LightGreen</Color>
+                    <Color x:Key="SfListViewForegroundColor">DarkGreen</Color>
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+    <tr>
+        <td>
+            SfListViewBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the ListView.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfListViewForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the ListViewItem, when it in default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td >
+            SfListViewSelectionBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the ListViewItem when it is in selection.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfListViewFocusBorderThickness
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border thickness of the ListViewItem when it is in selection.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfListViewFocusBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the ListViewItem when it is in selection.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    
+    <tr>
+        <td>
+            SfListViewGroupHeaderForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the GroupHeaderItem, when it in default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfListViewLoadMoreForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the LoadMoreItem When it is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SyncPrimaryLightColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the LoadMoreindicator when the indicator is in progressed state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfListViewLoadMoreBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the LoadMoreItem when it is in default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfListViewLoadMoreOpacity
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Percetage of transparency level for the text in the LoadMoreItem when it is in default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+
 
 
 

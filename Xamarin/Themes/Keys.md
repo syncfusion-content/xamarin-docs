@@ -383,8 +383,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfTreeView without merging common theme resource and control style resource dictionaries.
-			
+            By merging this key in application resources, you can customize the appearance of SfTreeView without merging common theme resource and control style resource dictionaries.
+
 {% highlight xaml %}
 
 <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
@@ -417,7 +417,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the TreeView.
+            Background color of TreeView.
             <br/>
             <br/>
         </td>
@@ -430,7 +430,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the TreeViewItem when it is in selection.
+            Background color of TreeViewItem when it is in selection.
             <br/>
             <br/>
         </td>
@@ -442,7 +442,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of content view label, when it is in default state.
+            Text color of content view label when it is in default state.
             <br/>
             <br/>
         </td>
@@ -454,7 +454,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the content view label when it is in selection.
+            Text color of content view label when it is in selection.
             <br/>
             <br/>
         </td>
@@ -466,7 +466,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Tint color of expander icon.
+            Color of expander icon.
             <br/>
             <br/>
         </td>

@@ -1209,32 +1209,6 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfPdfViewerBookmarkTitlebarBackgroundColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Background color of the bookmark titlebar.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfPdfViewerBookmarkTitlebarTextColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Text color of the bookmark title.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
             SfPdfViewerBookmarkItemBackgroundColor
             <br/>
             <br/>

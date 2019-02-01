@@ -416,12 +416,11 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the Diagram Stencil Header.
+            Background color of the stencil header.
             <br/>
             <br/>
         </td>
     </tr>
-    
     <tr>
         <td>
             SfDiagramStencilHeaderForegroundColor
@@ -429,7 +428,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Foreground Color of the Diagram Stencil Header.
+            Foreground color of the stencil header.
             <br/>
             <br/>
         </td>
@@ -441,7 +440,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Header Foreground Color of the Diagram Dialog box.
+            Foreground Color of header in dialog box.
             <br/>
             <br/>
         </td>
@@ -453,7 +452,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background Color of the Diagram Dialog box.
+            Background color of header in dialog box.
             <br/>
             <br/>
         </td>
@@ -465,7 +464,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background Color of Diagram Label.
+            Background color of Label in dialog box.
             <br/>
             <br/>
         </td>
@@ -477,7 +476,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of Diagram Stencil.
+            Border color of stencil.
             <br/>
             <br/>
         </td>
@@ -489,7 +488,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background Color of Diagram Stencil.
+            Background Color of stencil.
             <br/>
             <br/>
         </td>

@@ -382,7 +382,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfListView without merging common theme resource and control style resource dictionaries.
+            By merging this key in application resources, you can customize the appearance of the SfListView without merging common theme resource and control style resource dictionaries.
 
 {% highlight xaml %}
 
@@ -415,7 +415,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the ListView.
+            Background color of ListView.
             <br/>
             <br/>
         </td>
@@ -428,7 +428,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the ListViewItem, when it in default state.
+            Text color of the ListViewItem, when it in the default state.
             <br/>
             <br/>
         </td>
@@ -481,7 +481,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the GroupHeaderItem, when it in default state.
+            Text color of the GroupHeaderItem, when it in the default state.
             <br/>
             <br/>
         </td>
@@ -507,7 +507,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the LoadMoreIndicator when the indicator is in progressed state.
+            Color of the LoadMoreIndicator when the indicator is in the progressed state.
             <br/>
             <br/>
         </td>
@@ -520,7 +520,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the LoadMoreItem when it is in default state.
+            Background color of the LoadMoreItem when it is in the default state.
             <br/>
             <br/>
         </td>
@@ -533,7 +533,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Percentage of transparency level for the text in the LoadMoreItem when it is in default state.
+            Percentage of transparency level for the text in the LoadMoreItem when it is in the default state.
             <br/>
             <br/>
         </td>

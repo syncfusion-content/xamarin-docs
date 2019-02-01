@@ -395,7 +395,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <ResourceDictionary>
                 <x:String x:Key="SfTreeViewTheme">CustomTheme</x:String> 
                 <Color x:Key="SfTreeViewSelectionBackgroundColor">Blue</Color> 
-                <Color x:Key="SfTreeViewSelectionForegroundColor">White</Color> 
+                <Color x:Key="SyncPrimaryLightColor">White</Color> 
             </ResourceDictionary>
         </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
     </syncCore:SyncfusionThemeDictionary>
@@ -430,7 +430,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background Color of the TreeViewItem when it is in selection..
+            Background color of the TreeViewItem when it is in selection.
             <br/>
             <br/>
         </td>
@@ -454,7 +454,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text Color of the content view label when it is in selection.
+            Text color of the content view label when it is in selection.
             <br/>
             <br/>
         </td>

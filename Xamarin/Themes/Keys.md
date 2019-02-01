@@ -352,11 +352,586 @@ This page lists the keys for each control and the element to which it is mapped 
 
 </table>
 
+## SfDataGrid
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+            SfDataGridStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfDataGridTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfDataGrid without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfDataGridTheme">CustomTheme</x:String> 
+                <Color x:Key="SfDataGridRecordBackgroundColor">Blue</Color> 
+                <Color x:Key="SfDataGridRecordForegroundColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td rowspan="2">
+            SfDataGridHeaderBackgroundColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Header background color of the SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+
+    <tr>
+        <td rowspan="3">
+            SfDataGridHeaderForegroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Header foreground color of the SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+    <tr>
+        <td>
+            SfDataGridHeaderBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Header border color of the SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataGridRecordBackgroundColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Record background color of the SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataGridRecordForegroundColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Record foreground color of the SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataGridBorderColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Border color of the SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataGridSelectionBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the Selected row in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataGridSelectionForegroundColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Foreground color of the Selected row in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataGridAlternatingRowBackgroundColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the alternative row background color in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataGridRowDragViewBackgroundColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the drag view of row.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataGridRowDragViewForegroundColor           
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Foreground color of the drag view of row.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataGridColumnDragViewBackgroundColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+             Background color of the drag view of column.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataGridColumnDragViewForegroundColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Foreground color of the drag view of column.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataGridColumnDragViewBorderColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the drag view of column.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataGridTableSummaryBackgroundColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+             Background color of the TableSummaryRow in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataGridTableSummaryForegroundColor        
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Foreground color of the TableSummaryRow in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataGridCaptionSummaryRowBackgroundColor         
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the CaptionSummaryRow in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataGridCaptionSummaryRowForegroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Foreground color of the CaptionSummaryRow in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataGridGroupSummaryRowBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the GroupSummaryRow in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataGridGroupSummaryRowForegroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+              Foreground color of the GroupSummaryRow in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+
+     <tr>
+        <td>
+            SfDataGridLoadMoreViewBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the LoadMore view in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataGridLoadMoreViewForegroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+              Foreground color of the LoadMore view in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+
+     <tr>
+        <td>
+            SfDataGridIndentBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+              Background color of the indent column in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+
+</table>
 
 
 
 
+## SfPopupLayout
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+            SfPopupLayoutStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfPopupLayoutTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfPopupLayout without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfPopupLayoutTheme">CustomTheme</x:String> 
+                <Color x:Key="SfPopupLayoutHeaderBackgroundColor">Blue</Color> 
+                <Color x:Key="SfPopupLayoutFooterBackgroundColor">Blue</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td rowspan="2">
+            SfPopupLayoutHeaderBackgroundColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Header background color of the SfPopupLayout.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+
+    <tr>
+        <td rowspan="3">
+            SfPopupLayoutFooterBackgroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Footer Background color of the SfPopupLayout.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+    <tr>
+        <td>
+            SfPopupLayoutAcceptButtonBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Background color of the accept button in Xamarin.Forms.Android and Xamarin.Forms.iOS platform.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfPopupLayoutDeclineButtonTextColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the decline button in Xamarin.Forms.UWP platform.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfPopupLayoutBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the SfPopupLayout in Xamarin.Forms.Android and Xamarin.Forms.iOS platform.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfPopupLayoutDeclineButtonBackgroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Background color of the decline button in Xamarin.Forms.UWP platform.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+        <td>
+            SfPopupLayoutHeaderTextColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Text color of the header in SfPopupLayout.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
 
 
+## SfPullToRefresh
 
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
 
+    <tr>
+        <td rowspan="24">
+            SfPullToRefreshStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfPullToRefreshTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfPullToRefresh without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfPullToRefreshTheme">CustomTheme</x:String> 
+                <Color x:Key="SfPullToRefreshBackgroundColor">Blue</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    
+	<tr>
+        <td rowspan="2">
+            SfPullToRefreshBackgroundColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+             Background color of the SfPullToRefresh.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+
+</table>

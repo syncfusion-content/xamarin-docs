@@ -507,7 +507,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the LoadMoreindicator when the indicator is in progressed state.
+            Color of the LoadMoreIndicator when the indicator is in progressed state.
             <br/>
             <br/>
         </td>
@@ -533,7 +533,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Percetage of transparency level for the text in the LoadMoreItem when it is in default state.
+            Percentage of transparency level for the text in the LoadMoreItem when it is in default state.
             <br/>
             <br/>
         </td>

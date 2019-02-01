@@ -416,7 +416,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Indicator color of the linear progress indicator.
+            Color of the progress indicator in the linear progress bar.
             <br/>
             <br/>
         </td>
@@ -429,20 +429,20 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Track color of the linear progress indicator.
+            Color of the track in the linear progress bar.
             <br/>
             <br/>
         </td>
     </tr>
 
     <tr>
-    <td>
+		<td>
             SfProgressBarSecondaryProgressColor     
             <br/>
             <br/>
         </td>
         <td>
-            Secondary progress color of the linear progress indicator.
+            Color of the secondary progress(buffer) indicator in the linear progress bar.
             <br/>
             <br/>
         </td>
@@ -514,7 +514,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Indicator color of the circular progress indicator.
+            Color of the progress indicator in the circular progress bar.
             <br/>
             <br/>
         </td>
@@ -527,7 +527,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Track color of the circular progress indicator.
+            Color of the track in the circular progress bar.
             <br/>
             <br/>
         </td>
@@ -599,7 +599,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the numeric textbox is in default state.
+            Border color of the numeric textbox.
             <br/>
             <br/>
         </td>
@@ -612,7 +612,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the numeric textbox is in default state.
+            Text color of the numeric textbox.
             <br/>
             <br/>
         </td>
@@ -625,7 +625,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the numeric textbox is in the default state.
+            Background color of the numeric textbox.
             <br/>
             <br/>
         </td>
@@ -698,7 +698,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the numericUpDown is in default state.
+            Border color of the numeric up-down.
             <br/>
             <br/>
         </td>
@@ -711,7 +711,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the numericUpDown is in default state.
+            Text color of the numeric up-down.
             <br/>
             <br/>
         </td>
@@ -724,7 +724,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the numericUpDown is in the default state.
+            Background color of the numeric up-down.
             <br/>
             <br/>
         </td>
@@ -737,7 +737,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the up down button's is in the default state.
+            Background color of the up down button's.
             <br/>
             <br/>
         </td>
@@ -750,7 +750,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Foreground color of the up down button's is in the default state.
+            Foreground color of the up down button's.
             <br/>
             <br/>
         </td>
@@ -822,7 +822,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the masked edit is in default state.
+            Border color of the masked edit.
             <br/>
             <br/>
         </td>
@@ -835,7 +835,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the masked edit is in default state.
+            Text color of the masked edit.
             <br/>
             <br/>
         </td>
@@ -848,7 +848,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the masked edit is in the default state.
+            Background color of the masked edit.
             <br/>
             <br/>
         </td>

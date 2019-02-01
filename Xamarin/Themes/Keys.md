@@ -442,7 +442,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of content view label, when it in default state.
+            Text color of content view label, when it is in default state.
             <br/>
             <br/>
         </td>

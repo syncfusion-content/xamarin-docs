@@ -478,7 +478,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the focused item.
+            Border color of focused item.
             <br/>
             <br/>
         </td>

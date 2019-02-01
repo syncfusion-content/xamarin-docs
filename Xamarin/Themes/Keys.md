@@ -410,18 +410,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
-	<tr>
-        <td>
-            SyncPrimaryLightColor  
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Text Color of the selected item/items.
-            <br/>
-            <br/>
-        </td>
-    </tr>
     <tr>
         <td>
             SfTreeViewBackgroundColor   
@@ -429,7 +417,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of tree view.
+            Background color of the TreeView.
             <br/>
             <br/>
         </td>
@@ -442,7 +430,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the selected item/items.
+            Background Color of the TreeViewItem when it is in selection..
             <br/>
             <br/>
         </td>
@@ -454,12 +442,23 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the tree view items.
+            Text color of content view label, when it in default state.
             <br/>
             <br/>
         </td>
     </tr>
-    
+    	<tr>
+        <td>
+            SyncPrimaryLightColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text Color of the content view label when it is in selection.
+            <br/>
+            <br/>
+        </td>
+    </tr>
     <tr>
     <td>
             SfTreeViewExpanderColor    
@@ -467,7 +466,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of expander icon.
+            Tint color of expander icon.
             <br/>
             <br/>
         </td>

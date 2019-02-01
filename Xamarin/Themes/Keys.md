@@ -382,7 +382,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfLinearProgressBar without merging common theme resource and control style resource dictionaries.
+            By merging this key in application resources, you can customize the appearance of SfLinearProgressBar without merging common theme resource and control style resource dictionaries.
 			
 {% highlight xaml %}
 
@@ -480,7 +480,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfCircularProgressBar without merging common theme resource and control style resource dictionaries.
+            By merging this key in application resources, you can customize the appearance of SfCircularProgressBar without merging common theme resource and control style resource dictionaries.
 			
 {% highlight xaml %}
 
@@ -565,7 +565,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfNumericTextBox without merging common theme resource and control style resource dictionaries.
+            By merging this key in application resources, you can customize the appearance of SfNumericTextBox without merging common theme resource and control style resource dictionaries.
 			
 {% highlight xaml %}
 
@@ -599,7 +599,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the numeric textbox.
+            Border color of the numeric text box.
             <br/>
             <br/>
         </td>
@@ -612,7 +612,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the numeric textbox.
+            Text color of the numeric text box.
             <br/>
             <br/>
         </td>
@@ -625,7 +625,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the numeric textbox.
+            Background color of the numeric text box.
             <br/>
             <br/>
         </td>
@@ -664,7 +664,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfNumericUpDown without merging common theme resource and control style resource dictionaries.
+            By merging this key in application resources, you can customize the appearance of SfNumericUpDown without merging common theme resource and control style resource dictionaries.
 			
 {% highlight xaml %}
 
@@ -698,7 +698,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the numeric up-down.
+            Border color of numeric up down.
             <br/>
             <br/>
         </td>
@@ -711,7 +711,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the numeric up-down.
+            Text color of the numeric up down.
             <br/>
             <br/>
         </td>
@@ -724,7 +724,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the numeric up-down.
+            Background color of numeric up down.
             <br/>
             <br/>
         </td>
@@ -737,7 +737,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the up down button's.
+            Background color of the up and down buttons.
             <br/>
             <br/>
         </td>
@@ -750,7 +750,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Foreground color of the up down button's.
+            Foreground color of the up and down buttons.
             <br/>
             <br/>
         </td>
@@ -788,7 +788,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfMaskedEdit without merging common theme resource and control style resource dictionaries.
+            By merging this key in application resources, you can customize the appearance of SfMaskedEdit without merging common theme resource and control style resource dictionaries.
 			
 {% highlight xaml %}
 

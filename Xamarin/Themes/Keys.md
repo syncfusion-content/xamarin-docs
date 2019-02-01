@@ -371,7 +371,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="24">
+        <td rowspan="23">
             SfDataGridStyles  
             <br/>
             <br/>
@@ -410,26 +410,26 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
 	</tr>
 	<tr>
-        <td rowspan="2">
+        <td>
             SfDataGridHeaderBackgroundColor  
             <br/>
             <br/>
         </td>
         <td>
-            Header background color of the SfDataGrid.
+            Background color of the row and column headers in the SfDataGrid.
             <br/>
             <br/>
         </td>
     </tr>   
 
     <tr>
-        <td rowspan="3">
+        <td>
             SfDataGridHeaderForegroundColor   
             <br/>
             <br/>
         </td>
         <td>
-            Header foreground color of the SfDataGrid.
+            Foreground color of the row and column headers in the SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -442,7 +442,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-           Header border color of the SfDataGrid.
+          Border color of the row and column header cells in the SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -455,7 +455,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Record background color of the SfDataGrid.
+            Background color of the grid cells in the SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -468,7 +468,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Record foreground color of the SfDataGrid.
+           Foreground color of the grid cells in the SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -481,7 +481,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-           Border color of the SfDataGrid.
+          Border color of the grid cells in the SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -494,7 +494,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the Selected row in SfDataGrid.
+            Background color of the selected row in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -507,7 +507,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Foreground color of the Selected row in SfDataGrid.
+            Foreground color of the selected row in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -520,7 +520,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the alternative row background color in SfDataGrid.
+            Background color of the alternate rows in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -533,7 +533,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the drag view of row.
+          Background color of the RowDragView.
             <br/>
             <br/>
         </td>
@@ -546,7 +546,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Foreground color of the drag view of row.
+          Foreground color of the row drag view.
             <br/>
             <br/>
         </td>
@@ -559,7 +559,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-             Background color of the drag view of column.
+            Background color of the column drag view.
             <br/>
             <br/>
         </td>
@@ -572,7 +572,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Foreground color of the drag view of column.
+           Foreground color of the column drag view.
             <br/>
             <br/>
         </td>
@@ -585,7 +585,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Border color of the drag view of column.
+            Border color of the column drag view.
             <br/>
             <br/>
         </td>
@@ -598,7 +598,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-             Background color of the TableSummaryRow in SfDataGrid.
+             Background color of the [TableSummary](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTableSummaryRow.html) in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -611,7 +611,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Foreground color of the TableSummaryRow in SfDataGrid.
+            Foreground color of the [TableSummary](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTableSummaryRow.html) in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -624,7 +624,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the CaptionSummaryRow in SfDataGrid.
+            Background color of the [CaptionSummary](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CaptionSummaryRow.html) in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -637,7 +637,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Foreground color of the CaptionSummaryRow in SfDataGrid.
+            Foreground color of the [CaptionSummary](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CaptionSummaryRow.html) in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -650,7 +650,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the GroupSummaryRow in SfDataGrid.
+            Background color of the [GroupSummary](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupSummaryRows.html) in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -663,7 +663,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-              Foreground color of the GroupSummaryRow in SfDataGrid.
+              Foreground color of the [GroupSummary](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupSummaryRows.html) in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -732,7 +732,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="24">
+        <td rowspan="7">
             SfPopupLayoutStyles  
             <br/>
             <br/>
@@ -771,59 +771,73 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
 	</tr>
 	<tr>
-        <td rowspan="2">
+        <td>
             SfPopupLayoutHeaderBackgroundColor  
             <br/>
             <br/>
         </td>
         <td>
-            Header background color of the SfPopupLayout.
+           Background color of the header view in SfPopupLayout.
             <br/>
             <br/>
         </td>
     </tr>   
 
     <tr>
-        <td rowspan="3">
+        <td>
             SfPopupLayoutFooterBackgroundColor   
             <br/>
             <br/>
         </td>
         <td>
-            Footer Background color of the SfPopupLayout.
+          Background color of the footer view in SfPopupLayout.
             <br/>
             <br/>
         </td>
     </tr>  
-    
-    <tr>
-        <td>
-            SfPopupLayoutAcceptButtonBackgroundColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-           Background color of the accept button in Xamarin.Forms.Android and Xamarin.Forms.iOS platform.
-            <br/>
-            <br/>
-        </td>
-    </tr>
 
-    <tr>
-        <td>
-            SfPopupLayoutDeclineButtonTextColor 
+     <tr>
+        <td rowspan="2">
+            SfPopupLayoutAcceptButtonBackgroundColor  
             <br/>
             <br/>
         </td>
         <td>
-            Text color of the decline button in Xamarin.Forms.UWP platform.
+             Background color of the accept button in Xamarin.Forms.Android and Xamarin.Forms.iOS platform.
             <br/>
             <br/>
         </td>
     </tr>
-    
     <tr>
         <td>
+           Note: Background color of the accept button for Xamarin.Forms.UWP platform is obtained from SyncPrimaryColor key value.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+
+      <tr>
+        <td rowspan="2">
+            SfPopupLayoutDeclineButtonTextColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+              Text color of the decline button in Xamarin.Forms.UWP platform.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           Note: Text color of the decline button for Xamarin.Forms.Android and Xamarin.Forms.iOS platform is obtained from SyncPrimaryLightColor key value.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+      
+     <tr>
+        <td rowspan="2">
             SfPopupLayoutBorderColor  
             <br/>
             <br/>
@@ -834,19 +848,33 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
     <tr>
         <td>
-            SfPopupLayoutDeclineButtonBackgroundColor   
+           Note: Border color of the SfPopupLayout for Xamarin.Forms.UWP platform is obtained from SyncPrimaryColor key value.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+
+    <tr>
+        <td rowspan="2">
+            SfPopupLayoutDeclineButtonBackgroundColor  
             <br/>
             <br/>
         </td>
         <td>
-           Background color of the decline button in Xamarin.Forms.UWP platform.
+             Background color of the decline button in Xamarin.Forms.UWP platform.
             <br/>
             <br/>
         </td>
     </tr>
+    <tr>
+        <td>
+           Note: Background color of the decline button for Xamarin.Forms.Android and Xamarin.Forms.iOS platform is obtained from SyncPrimaryLightColor key value.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
 
      <tr>
         <td>
@@ -883,7 +911,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="24">
+        <td>
             SfPullToRefreshStyles  
             <br/>
             <br/>
@@ -920,15 +948,15 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
-    
+
 	<tr>
-        <td rowspan="2">
+        <td>
             SfPullToRefreshBackgroundColor  
             <br/>
             <br/>
         </td>
         <td>
-             Background color of the SfPullToRefresh.
+            Background color of the circle view in SfPullToRefresh.
             <br/>
             <br/>
         </td>

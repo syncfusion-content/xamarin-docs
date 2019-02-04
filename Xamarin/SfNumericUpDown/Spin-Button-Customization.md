@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Appearance and styling in Syncfusion NumericUpDown
+title: Appearance and styling in Syncfusion NumericUpDown  for Xamarin.Forms
 description: Learn how to add customize spin buttons position in NumericUpDown.
 platform: Xamarin
 control: NumericUpDown

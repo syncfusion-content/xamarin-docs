@@ -6481,3 +6481,1082 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
 </table>
+
+## SfCircularGauge
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="13">
+            SfCircularGaugeStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfCircularGaugeTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfCircularGauge without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfCircularGaugeTheme">CustomTheme</x:String> 
+                <Color x:Key="SfCircularGaugeScaleLabelColor">Blue</Color> 
+                <Color x:Key="SfCircularGaugeScaleRimColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    
+    <tr>
+    <td>
+            SfCircularGaugeBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of circular gauge background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCircularGaugeNeedlePointerColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of needle pointer in circular gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCircularGaugeSymbolPointerColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of symbol pointer in circular gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCircularGaugeRangePointerColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of range pointer in circular gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCircularGaugeRangeColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of range in circular gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfCircularGaugeHeaderColor        
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of header in circular gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCircularGaugeMinorTickColor         
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of minor tick in circular gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfCircularGaugeMajorTickColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of major tick in circular gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfCircularGaugeKnobColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of knob in circular gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfCircularGaugeKnobStrokeColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of knob stroke in circular gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>      
+
+     <tr>
+    <td>
+            SfCircularGaugeTailColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tail in circular gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>      
+
+     <tr>
+    <td>
+            SfCircularGaugeTailStrokeColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tail stroke in circular gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>      
+
+</table>
+
+## SfLinearGauge
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="7">
+            SfLinearGaugeStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfLinearGaugeTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfLinearGauge without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfLinearGaugeTheme">CustomTheme</x:String> 
+                <Color x:Key="SfLinearGaugeBackgroundColor">Blue</Color> 
+                <Color x:Key="SfLinearGaugeScaleBarColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    
+    <tr>
+    <td>
+            SfLinearGaugeLabelColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of label in linear gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfLinearGaugeRangeColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of range in linear gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfLinearGaugeHeaderColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of header in linear gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfLinearGaugeSymbolColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of symbol pointer in linear gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfLinearGaugeTickColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tick in linear gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfLinearGaugeBarColor        
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of bar pointer in linear gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfDigitalGauge
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">
+            SfDigitalGaugeStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfDigitalGaugeTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfDigitalGauge without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfDigitalGaugeTheme">CustomTheme</x:String> 
+                <Color x:Key="SfDigitalGaugeBackgroundColor">Blue</Color> 
+                <Color x:Key="SfDigitalGaugeDisabledSegmentColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    
+    <tr>
+    <td>
+            SfDigitalGaugeCharacterStrokeColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of character stroke in digital gauge.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+</table>
+
+## SfSunburstChart
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="6">
+            SfSunburstChartStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfSunburstChartTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfSunburstChart without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfSunburstChartTheme">CustomTheme</x:String> 
+                <Color x:Key="SfSunburstChartTitleColor">Blue</Color> 
+                <Color x:Key="SfSunburstLegendTextColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    
+    <tr>
+    <td>
+            SfSunburstSelectionColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of selection when segment is focused in sunburst.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfSunburstSelectionStrokeColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of selection stroke when segment is focused in sunburst.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfSunburstTooltipBorderColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip border in sunburst.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfSunburstTooltipBackgroundColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip background in sunburst.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfSunburstTooltipTextColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip text in sunburst.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfSparkline
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="8">
+            SfSparklineStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfSparklineTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfSparkline without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfSparklineTheme">CustomTheme</x:String> 
+                <Color x:Key="SfSparklineAreaFillColor">Blue</Color> 
+                <Color x:Key="SfLineSparklineStrokeColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    
+    <tr>
+    <td>
+            SfSparklineMarkerBaseColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of marker base in sparkline.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfSparklineAxisStrokeColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of axis stroke in sparkline.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfSparklineRangeBandColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of range band in sparkline.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfWinLossSparklineStrokeColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of stroke color in sparkline.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfWinLossSparklineColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of win loss in sparkline.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfColumnSparklineStrokeColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of stroke in column sparkline.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfColumnSparklineColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of column sparkline.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfMaps
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="11">
+            SfMapsStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfMapsTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfMaps without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfMapsTheme">CustomTheme</x:String> 
+                <Color x:Key="SfMapsShapeFillColor">Blue</Color> 
+                <Color x:Key="SfMapsShapeStrokeColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    
+    <tr>
+    <td>
+            SfMapsSelectedShapeColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of selected shape in maps.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfMapsSelectedShapeStrokeColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of selected shape stroke color in maps.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfMapsBubbleMarkerFillColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of bubble marker in maps.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfMapsLegendTextColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of legend text in maps.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfMapsDataLabelTextColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of data label text in maps.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfMapsMarkerLabelColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of marker label in maps.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfMapsMarkerIconColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of marker icon in maps.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfMapsTooltipBackgroundColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip background in maps.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfMapsTooltipStrokeColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip stroke in maps.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfMapsTooltipTextColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip text in maps.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfTreeMap
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="4">
+            SfTreeMapStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfTreeMapTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfTreeMap without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfTreeMapTheme">CustomTheme</x:String> 
+                <Color x:Key="SfTreemapBackgroundColor">Blue</Color> 
+                <Color x:Key="SfTreemapGroupBorderColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    
+    <tr>
+    <td>
+            SfTreemapGroupBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of group background in treemap.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfTreemapLabelColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of label in treemap.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfTreemapLeafItemBorderColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of leaf item border in maps.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfImageEditor
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">
+            SfImageEditorStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfImageEditorTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfImageEditor without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfImageEditorTheme">CustomTheme</x:String> 
+                <Color x:Key="SfImageEditorToolbarBackgroundColor">Blue</Color> 
+                <Color x:Key="SfImageEditorToolbarTextColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    
+    <tr>
+    <td>
+            SfImageEditorToolbarBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of background in image editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfImageEditorToolbarTextColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tool bar text in image editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+

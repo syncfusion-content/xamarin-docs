@@ -75,7 +75,7 @@ The [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 
 {% endtabs %}
 
-![Circular Gauge Header Position Image](header_images/header-position.png)
+![Positioning image in Xamarin.Forms Circular Gauge's header](header_images/header-position.png)
 
 ##  Customization of header
 
@@ -113,11 +113,11 @@ You can customize the header's text by using the [`FontFamily`](https://help.syn
 
 {% endtabs %}
 
-![Circular Gauge Header Customization Image](header_images/header-customise.png)
+![Customizing image in Xamarin.Forms Circular Gauge header](header_images/header-customise.png)
 
 ## Alignment of header
 
-You can align the header as `Start`, `Center` and `End` using the [`HorizontalHeaderPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~HorizontalHeaderPosition.html) and [`VerticalHeaderPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~VerticalHeaderPosition.html) properties.
+You can align header to the `Start`, `Center` and `End` using the [`HorizontalHeaderPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~HorizontalHeaderPosition.html) and [`VerticalHeaderPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header~VerticalHeaderPosition.html) properties.
 
 ### Setting horizontal header position
 
@@ -147,7 +147,7 @@ Content = circularGauge;
 
 {% endtabs %}
 
-![Circular Gauge Header Alignment Image](header_images/horizontalalignment.png)
+![Aligning image in Xamarin.Forms Circular Gauge's header](header_images/horizontalalignment.png)
 
 ### Setting vertical header position
 

@@ -77,7 +77,7 @@ Content = sfCircularGauge;
 
 ## Gauge alignment
 
-[`IsCenterAligned`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~IsCenterAligned.html) property is used to align the gauge to the center. In semi circular gauge, bottom space will be removed using [`IsCenterAligned`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~IsCenterAligned.html) property.
+The [`IsCenterAligned`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~IsCenterAligned.html) property is used to align the gauge to the center. In semi-circular gauge, bottom space will be removed using the [`IsCenterAligned`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~IsCenterAligned.html) property.
 
 {% tabs %}
 

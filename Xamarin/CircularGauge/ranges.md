@@ -221,7 +221,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 ## Setting range color for labels
 
-You can set the range color to the labels by using [`UseRangeColorForLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~UseRangeColorForLabels.html) property.
+You can set range colors to labels using the [`UseRangeColorForLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~UseRangeColorForLabels.html) property.
 
 {% tabs %}
 

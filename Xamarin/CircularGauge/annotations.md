@@ -628,9 +628,9 @@ You can add any text over the gauge control to enhance the readability. You can 
 
 ![Text annotation support in Xamarin.Forms Circular Gauge](annotations_images/text_annotation.PNG)
 
-## Set margin to the annotation
+## Set margin to annotation
 
-You can adjust the annotation by specifying the [`ViewMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~ViewMargin.html) property in pixel, which adjusts the annotation element from its current position.
+You can adjust annotation by specifying the [`ViewMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~ViewMargin.html) property in pixel, which adjusts annotation elements from their current position.
 
 {% tabs %}
 
@@ -700,7 +700,7 @@ Content = gauge;
 
 ## Alignment of annotation
 
-You can align the annotation as `Start`, `Center` and `End` using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~HorizontalAlignment.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~VerticalAlignment.html) properties.
+You can align annotations to the `Start`, `Center` and `End` using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~HorizontalAlignment.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~VerticalAlignment.html) properties.
 
 ### Setting horizontal alignment
 

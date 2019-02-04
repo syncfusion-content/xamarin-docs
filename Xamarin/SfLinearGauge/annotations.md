@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Annotations in LinearGauge
+title: Annotations in Syncfusion SfLinearGauge control for Xamarin.Forms
 description: Learn how to set annotations in LinearGauge
 platform: Xamarin
 control: LinearGauge

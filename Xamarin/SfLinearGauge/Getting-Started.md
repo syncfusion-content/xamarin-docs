@@ -356,7 +356,7 @@ namespace Gauge_GettingStarted
        
 {% endtabs %}
 
-The following linear gauge is created as a result of the above codes.
+The following screenshot illustrates the result of the above codes.
  
 ![Linear Gauge Getting Started](getting-started_images/getting-started.png)
 

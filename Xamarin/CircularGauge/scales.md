@@ -224,7 +224,7 @@ The [`Direction`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.S
 
 ## Setting maximum labels
 
-The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~MaximumLabels.html) property defines the count of the scale labels in the 100 pixels. By default, the maximum labels for 100 pixels is 3.
+The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~MaximumLabels.html) property defines the count of the scale labels in 100 pixels. By default, the count of maximum labels for 100 pixels is 3.
 
 {% tabs %}
 
@@ -368,7 +368,7 @@ It helps you to add multiple scales to the same circular gauge. You can customiz
 
 ## Events
 
-You can change the default label,by hooked the [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelCreated_EV.html) event. Based on your requirement, labels can be changed by using the [`LabelContent`] property of [`LabelCreatedEventArgs`].
+You can change the default label by hooking the [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelCreated_EV.html) event. Based on your requirements, the labels can be changed by using the [`LabelContent`] property of [`LabelCreatedEventArgs`].
 
 {% tabs %}
 

@@ -79,7 +79,7 @@ The [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/Syn
 
 private void ClickToClosePopup_Clicked(object sender, EventArgs e)
 {
-    //set false to IsOpen or IsVisible property like the folowing code to close the popup view.
+    //set false to IsOpen or IsVisible property like the following code to close the popup view.
 
     popupLayout.IsOpen = false;
     popupLayout.IsVisible = false;

@@ -1697,7 +1697,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="23">
+        <td rowspan="24">
             SfDataGridStyles  
             <br/>
             <br/>
@@ -1859,7 +1859,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-          Background color of the RowDragView.
+          Background color of the row drag view.
             <br/>
             <br/>
         </td>
@@ -1924,7 +1924,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-             Background color of the [TableSummary](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTableSummaryRow.html) in SfDataGrid.
+             Background color of the [TableSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTableSummaryRow.html) in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -1937,7 +1937,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Foreground color of the [TableSummary](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTableSummaryRow.html) in SfDataGrid.
+            Foreground color of the `TableSummaryRow` in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -1950,7 +1950,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the [CaptionSummary](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CaptionSummaryRow.html) in SfDataGrid.
+            Background color of the [CaptionSummaryRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CaptionSummaryRow.html) in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -1963,7 +1963,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Foreground color of the [CaptionSummary](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CaptionSummaryRow.html) in SfDataGrid.
+            Foreground color of the `CaptionSummaryRow` in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -1976,7 +1976,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the [GroupSummary](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupSummaryRows.html) in SfDataGrid.
+            Background color of the [GroupSummaryRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupSummaryRows.html) in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -1989,7 +1989,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-              Foreground color of the [GroupSummary](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupSummaryRows.html) in SfDataGrid.
+              Foreground color of the `GroupSummaryRow` in SfDataGrid.
             <br/>
             <br/>
         </td>
@@ -2058,7 +2058,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="7">
+        <td rowspan="12">
             SfPopupLayoutStyles  
             <br/>
             <br/>
@@ -2236,7 +2236,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </th>
     </tr>
 
-    <tr>
+    <tr rowspan="2">
         <td>
             SfPullToRefreshStyles  
             <br/>

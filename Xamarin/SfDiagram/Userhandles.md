@@ -1,6 +1,6 @@
 ---
 title: Adding userhandles for diagram | Syncfusion
-description: Learn how to add userhandles in diagram
+description: Learn how to add userhandles ,userhandles customization and its event handle in diagram for Xamarin.Forms
 platform: xamarin
 control: SfDiagram
 documentation: UG

@@ -27,9 +27,9 @@ I> From v16.2.0.x, you have to include a license key in your project if you refe
 
 To use the SfBorder control inside an application, each platform application must initialize the SfBorder renderer. This initialization step varies from platform to platform and is discussed in the following sections:
 
-### Android
+### Android and UWP
 
-Android launches the SfBorder without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
+The Android and UWP launches the SfBorder without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
 
 ### iOS
 
@@ -45,20 +45,6 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     …
 }
 {% endhighlight %} 
-
-### Universal Windows Platform (UWP)
-
-To launch SfBorder in UWP, call `SfBorderRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called, as demonstrated in the following code example.
-
-{% highlight c# %}
-public MainPage()
-{
-    …
-    Syncfusion.XForms.UWP.Border.SfBorderRenderer.Init();
-    LoadApplication (new App ());
-    …
-}
-{% endhighlight %}
 
 ### Release mode issue in UWP platform
 

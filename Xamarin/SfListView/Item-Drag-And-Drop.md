@@ -57,7 +57,7 @@ listView.DragStartMode = DragStartMode.OnHold | DragStartMode.OnDragIndicator;
 {% endhighlight %}
 {% endtabs %}
 
-N> Reordering changes are made only in view, and not in the underlying collection. Thus, the changes will be reverted when performing sorting, grouping, or any other operations that refreshes the view. You can update underlying collection by setting UpdateSource as `true`.
+N> Reorder the changes made only in view, and not in underlying collection. Thus, the changes will be reverted when performing sorting, grouping, or any other operation that refreshes view. You can update underlying collection by setting UpdateSource to `true`.
 
 ## Drag indicator view
 
@@ -267,7 +267,7 @@ private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N> Underlying collection won't get updated when any data operations like sorting, grouping is performed. The order will be maintained only in DisplayItems of data source. When drag and drop between groups, the value of the property in which grouping is performed gets updated in data object. 
+N> Underlying collection will not be updated when any data operation like sorting or grouping is performed. The order will be maintained only in DisplayItems of data source. When drag and drop an item between groups, the value of the property in which grouping is performed is updated in data object. 
 
 ## Delete item when dropping in particular view
 

@@ -4602,3 +4602,1882 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr> 
 </table>
+
+## SfAutoComplete
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="11">
+            SfAutoCompleteStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfAutoCompleteTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfAutoComplete without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfAutoCompleteTheme">CustomTheme</x:String> 
+                <Color x:Key="SfAutoCompleteBackgroundColor">Red</Color> 
+                <Color x:Key="SfAutoCompleteTextColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+        <tr>
+        <td rowspan="2">
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of highlighted text in AutoComplete.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Color of indicator text in AutoComplete.
+            <br/>
+            <br/>
+        </td> 
+    </tr>
+	</tr>
+	<tr>
+        <td>
+            SfAutoCompleteBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of AutoComplete.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SfAutoCompleteClearButtonColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the close button when enter the input text.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+            SfAutoCompleteWatermarkColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of AutoComplete's watermark text.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfAutoCompleteDropDownBackgroundColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the drop-down box.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfAutoCompleteDropDownTextColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of items in the drop-down box.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfAutoCompleteTokenBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of token.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfAutoCompleteTokenTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Color of token's text.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfAutoCompleteTokenDeleteButtonColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of token's delete button.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfBusyIndicator
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">
+            SfBusyIndicatorStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfBusyIndicatorTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfBusyIndicator without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfBusyIndicatorTheme">CustomTheme</x:String> 
+                <Color x:Key="SfBusyIndicatorTextColor">Black</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+</table>
+
+## SfButton
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">
+            SfButtonStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfButtonTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfButton without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfButtonTheme">CustomTheme</x:String> 
+                <Color x:Key="SyncPrimaryColor">Black</Color> 
+                <Color x:Key="SyncPrimaryForegroundColor">White</Color>
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    <tr>
+    <td>
+            SyncPrimaryColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of border when text input layout is focused.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr> 
+    <td>
+            SyncPrimaryDarkColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the button when it is in the pressed state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfBorder
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">
+            SfBorderStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfBorderTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfBorder without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfBorderTheme">CustomTheme</x:String> 
+                <Color x:Key="SfBorderBackgroundColor">LightGray</Color> 
+                <Color x:Key="SfBorderBorderColor">Gray</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+
+</table>
+
+## SfCarousel
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">
+            SfCarouselStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfCarouselTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfCarousel without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfCarouselTheme">CustomTheme</x:String> 
+                <Color x:Key="SfCarouselBackgroundColor">White</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+
+</table>
+
+## SfCheckBox
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="5">
+            SfCheckBoxStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfCheckBoxTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfCheckBox without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfCheckBoxTheme">CustomTheme</x:String> 
+                <Color x:Key="SfCheckBoxBackgroundColor">White</Color> 
+                <Color x:Key="SfCheckBoxTextColor">Black</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SfCheckBoxUncheckedColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of unchecked item.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    	<tr>
+        <td>
+            SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of checked item.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfChip
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="7">
+            SfChipStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfChipTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfChip without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfChipTheme">CustomTheme</x:String> 
+                <Color x:Key="SfChipBackgroundColor">LightGray</Color> 
+                <Color x:Key="SfChipBorderColor">Transparent</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SfChipTextColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the text in the SfChip.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SfChipCloseButtonColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the close button in SfChip.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+           SfChipSelectionIndicatorColor.
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the selection indicator in SfChip.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfChipGroup
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="6">
+            SfChipGroupStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfChipGroupTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfChipGroup without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfChipGroupTheme">CustomTheme</x:String> 
+                <Color x:Key="SfChipGroupBackgroundColor">Blue</Color> 
+                <Color x:Key="SfChipBorderColor">Transparent</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SfChipGroupTextColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the text in SfChipGroup.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SfChipGroupCloseButtonColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the close button in SfChipGroup.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+           SfChipSelectionIndicatorColor.
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the selection indicator in SfChipGroup.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfComboBox
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="15">
+            SfComboBoxStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfComboBoxTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfComboBox without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfComboBoxTheme">CustomTheme</x:String> 
+                <Color x:Key="SfComboBoxBackgroundColor">White</Color> 
+                <Color x:Key="SfComboBoxTextColor">Black</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+         <tr>
+        <td rowspan="2">
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of highlighted text in ComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Color of indicator text in ComboBox.
+            <br/>
+            <br/>
+        </td> 
+    </tr>
+	</tr>
+	<tr>
+        <td>
+            SfComboBoxBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SfComboBoxClearButtonColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the close button in SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+           SfComboBoxWatermarkColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the watermark's text in SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+           SfComboBoxDropDownBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the suggestion box in SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfComboBoxDropDownTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the suggestion box's text in SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfComboBoxTokenBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the token in SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfComboBoxTokenTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the token's text in SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfComboBoxTokenDeleteButtonColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the token's delete button in SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfComboBoxDropDownButtonBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the drop-down button in SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+           SfComboBoxDropDownButtonTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the drop-down button's text in SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfNavigationDrawer
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="5">
+            SfNavigationDrawerStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfNavigationDrawerTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfNavigationDrawer without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfNavigationDrawerTheme">CustomTheme</x:String> 
+                <Color x:Key="SfNavigationDrawerBackgroundColor">Black</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+
+</table>
+
+## SfPicker
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="8">
+            SfPickerStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfPickerTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfPicker without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfPickerTheme">CustomTheme</x:String> 
+                <Color x:Key="SfPickerBackgroundColor">Black</Color> 
+                <Color x:Key="SfPickerBorderColor">Red</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+     <tr>
+    <td>
+           SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Background color of header in SfPicker.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SyncPrimaryLightColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Color of SelectedItem's text in SfPicker.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+           SyncPrimaryForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Color of Header's text in SfPicker.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfPickerUnselectedItemTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of UnSelectedItem's text in SfPicker.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfPickerColumnHeaderTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of column header's text in SfPicker.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfPickerColumnHeaderBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of theColumn header in SfPicker.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfPickerSelectionBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the selected item in SfPicker.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfRadioButton
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="5">
+            SfRadioButtonStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfRadioButtonTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfRadioButton without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfRadioButtonTheme">CustomTheme</x:String> 
+                <Color x:Key="SfRadioButtonBackgroundColor">White</Color> 
+                <Color x:Key="SfRadioButtonTextColor">Black</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+      <tr>
+    <td>
+           SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of checked item.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+       <tr>
+    <td>
+           SfRadioButtonUncheckedColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of unchecked item.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfRadialMenu
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="9">
+            SfRadialMenuStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfRadialMenuTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfRadialMenu without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfRadialMenuTheme">CustomTheme</x:String> 
+                <Color x:Key="SfRadialMenuCenterButtonBackgroundColor">Gray</Color> 
+                <Color x:Key="SfRadialMenuCenterButtonTextColor">White</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+     <tr>
+    <td>
+           SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Selection color of SfRadialMenu.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfRadialMenuCenterButtonBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the center button's border in SfRadialMenu.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfRadialMenuRimColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the rim when tap the center button of SfRadialMenu.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfRadialMenuSeparatorColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of separator that appears between two items in SfRadialMenu.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfRadialMenuTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of RadialMenu's text.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfRadialMenuIconFontColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of font icon in SfRadialMenu.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfRangeSlider
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="9">
+            SfRangeSliderStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfRangeSliderTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfRangeSlider without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfRadialMenuTheme">CustomTheme</x:String> 
+                <Color x:Key="SfRangeSliderBackgroundColor">White</Color> 
+                <Color x:Key="SfRangeSliderTickColor">Gray</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    <tr>
+        <td rowspan="2">
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Selection color of track in SfRangeSlider.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Knob color in SfRangeSlider
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfRangeSliderLabelColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of SfRangeSlider's label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfRangeSliderUnselectedTrackColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of unselected track in SfRangeSlider.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfRangeSliderToolTipBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of tooltip in SfRangeSlider.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfRangeSliderToolTipTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip's text in SfRangeSlider.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+    <td>
+           SfRangeSliderToolTipBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip's border in SfRangeSlider.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfRating
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="8">
+            SfRatingStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfRatingTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfRating without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfRatingTheme">CustomTheme</x:String> 
+                <Color x:Key="SfRatingUnratedFillColor">White</Color> 
+                <Color x:Key="SfRatingUnratedStrokeColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>      
+	</tr>
+    <tr>
+        <td rowspan="2">
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Stroke color of rated items.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Fill color of rated items.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SfRatingTooltipBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the tooltip in SfRating.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfRatingTooltipTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color inside the tooltip in SfRating.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfRatingTooltipBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the tooltip in SfRating.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfRotator
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="3">
+            SfRotatorStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfRotatorTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfRotator without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfRotatorTheme">CustomTheme</x:String> 
+                <Color x:Key="SfRotatorUnselectedDotColor">White</Color> 
+                <Color x:Key="SfRotatorDotsBorderColor">Gray</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+          <br/>
+          <br/>
+        </td>      
+	    </tr>
+         <tr>
+        <td>
+            SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Color of selected dots in SfRotator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfSegmentedControl
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="8">
+            SfSegmentedControlStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfSegmentedControlTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfSegmentedControl without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfSegmentedControlTheme">CustomTheme</x:String> 
+                <Color x:Key="SfSegmentedControlBorderColor">Gray</Color> 
+                <Color x:Key="SfSegmentColor">White</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+          <br/>
+          <br/>
+        </td>      
+	    </tr>
+         <tr>
+        <td>
+            SyncPrimaryForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of selected item in the SfSegmentedControl.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+        <tr>
+        <td>
+            SfSegmentFontIconFontColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of font icon in the SfSegmentedControl.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SfSegmentFontColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of font in the SfSegmentedControl.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+        <td>
+            SfSegmentBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of segment's border in the SfSegmentedControl.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
+## SfTabView
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="8">
+            SfTabViewStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfTabViewTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfTabView without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfTabViewTheme">CustomTheme</x:String> 
+                <Color x:Key="SfTabItemFontColor">Red</Color>  
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+<br/>
+    <br/>
+</td>
+	</tr>
+     <tr>
+        <td rowspan="2">
+            SfTabItemFontColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Font color of title in SfTabView.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+             Font color of font icon in SfTabView.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+        <td>
+            SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of tab header in SfTabView.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+        <td rowspan="2">
+            SyncPrimaryForegroundColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Selection color of tab item in SfTabView.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Color of selection indicator in SfTabView.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>

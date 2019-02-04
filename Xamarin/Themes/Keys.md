@@ -4589,19 +4589,6 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>  
     
-    <tr>
-    <td>
-            SfScheduleViewHeaderDateTextColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Change the color of view header date text(10,11,etc) in calendar year view.
-            <br/>
-            <br/>
-        </td>
-    </tr> 
-    
      <tr>
     <td>
             SfCalendarYearViewHeaderTextColor          

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Syncfusion ListView in MVVM
-description: Describes how to use ListView in different cases of MVVM.
+title: Working with Xamarin.Forms ListView in MVVM | Syncfusion
+description: This topic describes about how to use Syncfusion xamarin.Forms ListView with commands, prism, event to command behaavior and different cases of MVVM.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -79,6 +79,8 @@ public class CommandViewModel
 {% endhighlight %}
 {% endtabs %}
 
+N> When Command is binded to ItemTemplate, it must also define `Source` property with its root element as reference. Only then it executes the property in the ViewModel of type Command.
+
 ## Event to command
 
 The ListView event can be converted into commands using [Behaviors](https://developer.xamarin.com/guides/xamarin-forms/behaviors/). To achieve this, create a command in the ViewModel class and associate it to the ListView event using `Behaviors`.
@@ -118,6 +120,49 @@ public class ContactsViewModel
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EventToCommand-343190546).
 
 For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
+
+## Binding command of Button inside the ItemTemplate of Xamarin.Forms ListView to ViewModel Command?
+
+You can bind command of Button inside ItemTemplate to the command in ViewModel by specifying Source property with its root element as reference to execute the binded property of type command.
+
+{% tabs %}
+{% highlight xaml %}
+<Syncfusion:SfListView x:Name="listView" ItemsSource="{Binding contactsinfo}" >
+    <Syncfusion:SfListView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+                <Grid >
+                    <Button Text="Delete" Command="{Binding Path=BindingContext.DeleteCommand, Source={x:Reference listView}}" CommandParameter="{x:Reference listView}"/>
+                </Grid>
+            </ViewCell>
+        </DataTemplate>
+    </Syncfusion:SfListView.ItemTemplate>
+</Syncfusion:SfListView>
+{% endhighlight %}
+{% highlight c# %}
+namespace ListViewSample 
+{
+    public class ContactsViewModel : INotifyPropertyChanged
+    {
+        public Command<object> DeleteCommand { get; set; }
+         
+        public ContactsViewModel()
+        {
+            DeleteCommand = new Command<object>(OnTapped);
+        }
+
+        private void OnTapped(object obj)
+        {
+            var contact = obj as Contacts;
+            contactsInfo.Remove(contact);
+            App.Current.MainPage.DisplayAlert("Message","Item Deleted :" +contact.ContactName,"Ok");
+        }
+    }
+}        
+{% endhighlight %}
+{% endtabs %}
+
+You can download the sample from GitHub [here](https://github.com/SyncfusionExamples/How-bind-a-Command-of-Button-inside-the-ItemTemplate-of-Xamarin.Forms-ListView-to-ViewModel-Command).
 
 ## ListView with Prism Framework
 

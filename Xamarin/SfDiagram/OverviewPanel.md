@@ -1,7 +1,7 @@
 ---
-title: Add overview for diagram
-description: Learn how to add overview in diagram
-platform: XForms
+title: Overview for Essential Xamarin.Forms Diagram | Syncfusion
+description: Describes how to add overview panel and its customization in diagram control for Xamarin.Forms
+platform: Xamarin
 control: SfDiagram
 documentation: UG
 keywords: 

@@ -2236,8 +2236,8 @@ This page lists the keys for each control and the element to which it is mapped 
         </th>
     </tr>
 
-    <tr rowspan="2">
-        <td>
+    <tr>
+        <td rowspan="2">
             SfPullToRefreshStyles  
             <br/>
             <br/>

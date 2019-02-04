@@ -352,6 +352,1155 @@ This page lists the keys for each control and the element to which it is mapped 
 
 </table>
 
+## SfChart
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+    
+    <tr>
+        <td rowspan="55">
+            SfChartStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfChartTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfChart without merging common theme resource and control style resource dictionaries.    
+
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfChartTheme">CommonTheme</x:String> 
+                <Color x:Key="SfChartBackgroundColor">Transparent</Color> 
+                <Color x:Key="SfChartTitleBackgroundColor">Transparent</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    	<tr>
+        <td rowspan="2">
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Stroke color of annotation.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Text color of annotation label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+            <tr>
+    <td>
+            SyncPrimaryLightForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of trackball label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+        <tr>
+    <td>
+            SfChartTitleTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the chart title.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+        <tr>
+    <td>
+            SfChartTitleBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the chart title.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTitleBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the chart title.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the chart.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartSelectionRectFillColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Fill color of the selection rectangle when selection zooming the chart.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartSelectionRectStrokeColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Stroke color of the selection rectangle when selection zooming the chart.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationFillColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Fill color of annotation.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationStrokeColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Stroke color of the annotation.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the annotation label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the annotation label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the annotation label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationAxisLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the axis label of VerticalLine and HorizontalLine annotations.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationAxisLabelTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of axis label of VerticalLine and HorizontalLine annotations.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAnnotationAxisLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the axis label of VerticalLine and HorizontalLine annotations.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballLineStrokeColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Stroke color of the trackball line.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the trackball label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the trackball label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the trackball label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballAxisLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the axis label of trackball.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballAxisLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the axis label of trackball.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartTrackballAxisLabelTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of axis label of trackball.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartDataPointSelectionColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the selected segment of the series.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartSeriesSelectionColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the selected series.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartStriplineBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the strip line.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartStriplineBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the strip line.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartStriplineTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the strip line label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartStriplineLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the strip line label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartStriplineLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the strip line label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartMajorGridLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the axis major grid line.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartMinorGridLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the axis minor grid line.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartMajorTickLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the axis major tick line.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartMinorTickLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the axis minor tick line.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the axis line.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisTitleTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the axis title text.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisTitleBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the axis title.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisTitleBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the axis title.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisLabelColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the axis label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the axis label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartAxisLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the axis label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartLegendTitleTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the Legend title text.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartLegendTitleBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the legend title.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartLegendTitleBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the legend title.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfChartLegendLabelColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the legend label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
+
+## SfDateTimeRangeNavigator
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+    
+    <tr>
+        <td rowspan="24">
+            SfDateTimeRangeNavigatorStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfDateTimeRangeNavigatorTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfDateTimeRangeNavigator without merging common theme resource and control style resource dictionaries.    
+
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfDateTimeRangeNavigatorTheme">CommonTheme</x:String> 
+                <Color x:Key="SfDateTimeRangeNavigatorBackgroundColor">Transparent</Color> 
+                <Color x:Key="SfDateTimeRangeNavigatorOverlayColor">White</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+
+<tr>
+        <td rowspan="3">
+            SyncPrimaryColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of tooltip and thumb. 
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Line color of thumb.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Background color of tooltip.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+         <tr>
+    <td>
+            SyncPrimaryLightColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Selected label text color of scale.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfDateTimeRangeNavigatorBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the date-time range navigator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorOverlayColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Overlay color of unselected region of the date time range navigator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorLabelTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the date time range navigator label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the date time range navigator label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the date time range navigator label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorSelectedLabelTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the date time range navigator selected label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorSelectedLabelBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the date time range navigator selected label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorSelectedLabelBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the date time range navigator selected label.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorGridLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the date time range navigator grid lines.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorTickLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the date time range navigator tick lines.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorThumbBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the date time range navigator thumb.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorThumbBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the date time range navigator thumb.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorThumbLineColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the date time range navigator thumb line.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorTooltipBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the date time range navigator tooltip.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorTooltipBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the date time range navigator tooltip.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfDateTimeRangeNavigatorTooltipTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the date time range navigator tooltip.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
+
+## SfKanban
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+    
+    <tr>
+        <td rowspan="24">
+            SfKanbanStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfKanbanTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfKanban without merging common theme resource and control style resource dictionaries.    
+
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             xmlns:chart="clr-namespace:Syncfusion.SfKanban.XForms;assembly=Syncfusion.SfKanban.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfKanbanTheme">CommonTheme</x:String> 
+                <Color x:Key="SfKanbanBackgroundColor">Transparent</Color> 
+                <Color x:Key="SfKanbanPlaceholderBackgroundColor">White Smoke</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+    <tr>
+    <td>
+            SfKanbanBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of kanban.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanMinValidationColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color value of the error bar for minimum limit validation.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanMaxValidationColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color value of the error bar for maximum limit validation.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanValidationColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color value of the error bar for validation.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanPlaceholderBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the placeholder.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanPlaceholderBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the placeholder.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanPlaceholderTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the placeholder.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanPlaceholderSelectedBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the selected placeholder.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanPlaceholderSelectedBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the selected placeholder.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanPlaceholderSelectedTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the selected placeholder.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
+
+
 ## SfListView
 
 <table>
@@ -2288,4 +3437,1168 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>   
 
+</table>
+
+## SfSchedule
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+
+<tr>
+       <td rowspan="54">
+            SfScheduleStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfScheduleTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfSchedule without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfScheduleTheme">CustomTheme</x:String> 
+                <Color x:Key="SfScheduleHeaderTextColor">Red</Color>
+                <Color x:Key="SfScheduleViewHeaderDayTextColor">Blue</Color>
+                <Color x:Key="SfScheduleViewHeaderDateTextColor">Blue</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+
+<tr>
+        <td >
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of today selection background in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">
+            SyncPrimaryLightColor.
+            <br/>
+            <br/>
+        </td>
+<td>
+            Change the color of current day(Sun,Mon,etc) text in schedule day, week and work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+<tr>
+        <td>
+            Change the color of current date(10,11,etc) text in schedule day, week and work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            SyncPrimaryForegroundColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of current day text in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            SfScheduleDayViewNonWorkingHoursTimeSlotColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of non working hour time slot in schedule day view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+        <td>
+            SfScheduleDayViewNonWorkingHoursTimeSlotBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of non working hour time slot border in schedule day view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            SfScheduleDayViewTimeSlotColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of time slot in schedule day view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfScheduleDayViewTimeSlotBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of time slot border color of schedule day view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+            SfScheduleDayViewVerticalLineColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of time slot vertical lines at schedule day view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfScheduleDayViewAllDayAppointmentLayoutColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of all day appointment layout color, when enable the all day appointment in schedule day view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfScheduleWeekViewNonWorkingHoursTimeSlotColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Change the color of non working hour time slot in schedule week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfScheduleWeekViewNonWorkingHoursTimeSlotBorderColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of non working hour time slot border in schedule week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfScheduleWeekViewTimeSlotColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of time slot in schedule week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfScheduleWeekViewTimeSlotBorderColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of time slot border in schedule week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfScheduleWeekViewVerticalLineColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of time slots vertical line in schedule week view. 
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfScheduleWeekViewAllDayAppointmentLayoutColor           
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of all day appointment layout color, when enable the all day appointment in schedule week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfScheduleWorkWeekViewNonWorkingHoursTimeSlotColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of non working hour timeslot in schedule work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfScheduleWorkWeekViewNonWorkingHoursTimeSlotBorderColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of non working hour time slot border in schedule work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfScheduleWorkWeekViewTimeSlotColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of time slot in schedule work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+     <tr>
+    <td>
+            SfScheduleWorkWeekViewTimeSlotBorderColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of time slot border in schedule work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfScheduleWorkWeekViewVerticalLineColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of time slot vertical line in schedule work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfScheduleWorkWeekViewAllDayAppointmentLayoutColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of all day appointment layout color, when enable the all day appointment in schedule work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfScheduleMonthViewTodayBackground        
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of current date circle background at schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfScheduleMonthViewSelectionTextColor         
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of select month cell text at schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfScheduleDayViewLabelTimeLabelColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of time slot labels(2pm,3pm,etc) at schedule day view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfScheduleWeekViewLabelTimeLabelColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of time slot labels(2pm,3pm,etc) at schedule week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfScheduleWorkWeekViewLabelTimeLabelColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of time slot labels(2pm,3pm,etc) at schedule work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>    
+    
+      <tr>
+    <td>
+            SfScheduleHeaderBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of header layout in schedule.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+     <tr>
+    <td>
+            SfScheduleHeaderTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of header text in schedule.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+    <tr>
+    <td>
+            SfScheduleViewHeaderDayTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of view header day text(Sunday,Monday,etc) in schedule.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+    <tr>
+    <td>
+            SfScheduleViewHeaderBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of view header layout in schedule.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+    <tr>
+    <td>
+            SfScheduleViewHeaderDateTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of view header date text(10,11,etc) in schedule.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+     <tr>
+    <td>
+            SfScheduleSelectionBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of selection background at schedule.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+    <tr>
+    <td>
+            SfScheduleSelectionBorderColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of selection border at schedule.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+     <tr>
+    <td>
+            SfScheduleAppointmentTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of appointment text in schedule day, week and work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+    <tr>
+    <td>
+            SfScheduleAppointmentBorderColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the border color of appointment layout in schedule day, week and work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+    <tr>
+    <td>
+            SfScheduleAppointmentSelectionBorderColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the border color of appointment layout while select in schedule day, week and work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+   
+   <tr>
+    <td>
+            SfScheduleAppointmentSelectionTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the text color of appointment while select in schedule day, week and work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+     <tr>
+    <td>
+            SfScheduleMonthCellTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of month cell text in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+     <tr>
+    <td>
+            SfScheduleMonthCellBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of month cell background in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+     <tr>
+    <td>
+            SfScheduleMonthCellTodayBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the current day background color of month cell in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+     <tr>
+    <td>
+            SfScheduleMonthCellTodayTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the current date text color of month cell in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+      <tr>
+    <td>
+            SfScheduleMonthCellPreviousMonthTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the previous month date text color of month cell in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+     <tr>
+    <td>
+            SfScheduleMonthCellPreviousMonthBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the previous month background color of month cell in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+     <tr>
+    <td>
+            SfScheduleMonthCellNextMonthBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the next month background color of month cell in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+     <tr>
+    <td>
+            SfScheduleMonthCellNextMonthTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the next month date text color of month cell in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+      <tr>
+    <td>
+            SfScheduleMonthViewWeekNumberTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the week number text color, when enable the week number view in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+     <tr>
+    <td>
+            SfScheduleMonthViewWeekNumberBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the week number background color, when enable the week number view in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+         <tr>
+     <td>
+            SfScheduleMonthAgendaViewSubjectFontColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the appointment subject text color, when enable the agenda view in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+    <tr>
+     <td>
+            SfScheduleMonthAgendaViewBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the agenda view layout background color of schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+     <tr>
+     <td>
+            SfScheduleMonthAgendaViewTimeFontColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the appointment time text color, when enable the agenda view in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+     <tr>
+     <td>
+            SfScheduleMonthAgendaViewDateFontColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the selected date text color, when enable the agenda view in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+
+ <tr>
+     <td>
+            SfScheduleTimeIndicatorTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the time indicator text color, when enable drag and drop in schedule day, week and work week view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+</table>
+
+## SfCalendar
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+<tr>
+       <td rowspan="30">
+            SfCalendarStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfCalendarTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfCalendar without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfCalendarTheme">CustomTheme</x:String> 
+                <Color x:Key="SfCalendarInlineBackgroundColor">Green</Color>
+                    <Color x:Key="SfCalendarInlineTextColor">White</Color>
+                    <Color x:Key="SfCalendarWeekEndBackgroundColor">Blue</Color>
+                    <Color x:Key="SfCalendarYearViewHeaderTextColor">Blue</Color>
+                    <Color x:Key="SfCalendarYearViewDateTextColor">Green</Color>
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+<tr>
+        <td rowspan="2">
+            SyncPrimaryLightColor.
+            <br/>
+            <br/>
+        </td>
+<td>
+            Change the color of current day text in calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+<tr>
+        <td>
+            Change the color of month header text in calendar year view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+		<td>
+           SfCalendarInlineTextColor 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+           Change the color of inline appointment text in calendar month view.
+            <br/>
+            <br/>
+        </td>
+	</tr>
+
+
+	<tr>
+        <td>
+            SfCalendarBlackoutColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of black out date denoting view in calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            SfCalendarDateSelectionColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of selected date background in calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfCalendarInlineBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of inline layout background in calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+            SfCalendarSelectedDayTextColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of select date text color in calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfCalendarBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the border color(vertical/horizontal line) of calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCalendarWeekDayBackgroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Change the color of week day(Monday to Friday month cell) background in calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfCalendarWeekDayTextColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of week day(Monday to Friday month cell) text in calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCalendarDisabledBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of disabled month cell date background in calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCalendarDisabledTextColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of disabled month cell date text in calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCalendarPreviousMonthBackgroundColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of previous month cell date background in calendar month view. 
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCalendarPreviousMonthTextColor           
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of previous month cell date text in calendar month view. 
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfCalendarCurrentMonthBackgroundColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of current month cell background in calendar month view. 
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCalendarCurrentMonthTextColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of current month cell date text in calendar month view. 
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCalendarWeekEndTextColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of week end(Sunday & Saturday month cell) text in calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCalendarDayHeaderTextColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color day header (Sunday,Monday,etc) text color in calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfCalendarDayHeaderBackgroundColor        
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color day header (Sunday,Monday,etc) background color in calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfCalendarWeekEndBackgroundColor         
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of week end(Sunday & Saturday month cell) background in calendar month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfCalendarHeaderBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of header layout background in calendar.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfCalendarHeaderTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of header layout date text in calendar.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfCalendarYearViewLayoutBackground          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of year view layout background in calendar.
+            <br/>
+            <br/>
+        </td>
+    </tr>    
+    
+      <tr>
+    <td>
+            SfCalendarYearViewHeaderBackground          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of header layout background in calendar year view.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+     <tr>
+    <td>
+            SfCalendarYearViewMonthLayoutBackground          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of month layout(Jan,Feb,etc) background in calendar year view.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+    <tr>
+    <td>
+            SfCalendarYearViewMonthHeaderBackground          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of month layout header(Jan,Feb,etc) background in calendar year view.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+    <tr>
+    <td>
+            SfCalendarYearViewDateTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of month date (10,11,etc) text in calendar year view.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+     <tr>
+    <td>
+            SfCalendarYearViewHeaderTextColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of month header text(Jan,Feb,etc) in calendar year view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
 </table>

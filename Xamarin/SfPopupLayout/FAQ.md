@@ -802,15 +802,21 @@ Sample Link: You can download the above sample code by clicking [here]().
 
 ## How to change popview background color 
 
-The popup view  background color can be modified by using the property [SfPopupLayout.PopupView.BackGroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~BackgroundColor.html)
+SfPopup view  background color can be modified by using the property [SfPopupLayout.PopupView.BackGroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~BackgroundColor.html)
 as demonstrated in the following code sample.
 
 {% tabs %}
 {%highlight Xaml%}
 <sfPopup:SfPopupLayout x:Name="popupLayout">
-        <sfPopup:SfPopupLayout.PopupView>
-            <sfPopup:PopupView BackgroundColor="DimGray"/>
-        </sfPopup:SfPopupLayout.PopupView>
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView BackgroundColor="DimGray">
+            <sfPopup:PopupView.ContentTemplate>
+                <DataTemplate>
+                    <Label Text="Popup content view" TextColor="White" BackgroundColor="Transparent"/>
+                </DataTemplate>
+             </sfPopup:PopupView.ContentTemplate>
+        </sfPopup:PopupView>
+    </sfPopup:SfPopupLayout.PopupView>
 </sfPopup:SfPopupLayout x:Name="popupLayout">
 {%endhighlight%}
 
@@ -819,6 +825,16 @@ public MainPage()
 {
     ....
     InitializeComponent();
+    popupLayout.PopupView.ContentTemplate = new DataTemplate(() =>
+                 {
+                     return new Label()
+                     {
+                         Text = "Popup content view",
+                         TextColor = Color.White,
+                         BackgroundColor = Color.Transparent
+                     };
+                 });
+
     popupLayout.PopupView.BackgroundColor = Color.DimGray;
     ....
 }

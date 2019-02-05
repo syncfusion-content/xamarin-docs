@@ -20,4 +20,4 @@ The chips control for Xamarin.Forms presents information in an interactive and c
 * Has Command support for the chip group and individual chips in Action chips type.
 * Provides user-friendly customization support to customize the corner radius, border color, border thickness, text color, background color, close button color, selection indicator color, etc.
 
-![overview of chips control](images/overview_image/chip_overview_image.png)
+![overview of chips control](images/overview-image/chip_overview_image.png)

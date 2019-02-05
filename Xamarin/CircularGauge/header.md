@@ -75,7 +75,7 @@ The [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 
 {% endtabs %}
 
-![Positioning image in Xamarin.Forms Circular Gauge's header](header_images/header-position.png)
+![Positioning image in Xamarin.Forms Circular Gauge header](header_images/header-position.png)
 
 ##  Customization of header
 
@@ -147,7 +147,7 @@ Content = circularGauge;
 
 {% endtabs %}
 
-![Aligning image in Xamarin.Forms Circular Gauge's header](header_images/horizontalalignment.png)
+![Aligning image in Xamarin.Forms Circular Gauge header](header_images/horizontalalignment.png)
 
 ### Setting vertical header position
 

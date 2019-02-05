@@ -168,7 +168,3 @@ tabView.SelectedIndex = 0;
 {% endhighlight %}
 
 N> If the click event is not available, it can be achieved by setting the `TapGestureRecognizer` to the custom view.
-
-
-
-

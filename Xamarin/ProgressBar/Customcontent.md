@@ -34,7 +34,7 @@ The following code sample demonstrates how to add custom text content.
 
         <Label x:Name="CustomContentProgressBarLabel" Grid.Row="0"
 
-                TextColor="#007cee" Text="{Binding Progress,StringFormat='{0}%'} HorizontalTextAlignment="Center" VerticalTextAlignment="End">                        
+                TextColor="#007cee" Text="{Binding Progress,StringFormat='{0}%'}" BindingContext="{x:Reference CustomContentCircularProgressBar}"  HorizontalTextAlignment="Center" VerticalTextAlignment="End">                        
 
         </Label>
 

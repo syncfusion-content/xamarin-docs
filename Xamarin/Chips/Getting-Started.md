@@ -82,7 +82,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 	if (rootFrame == null) 
 	{ 
 		List<Assembly> assembliesToInclude = new List<Assembly>();
-
+    assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfButtonRenderer).GetTypeInfo().Assembly);
 	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfChipRenderer).GetTypeInfo().Assembly); 
 
 		Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
@@ -105,7 +105,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 	if (rootFrame == null) 
 	{ 
 		List<Assembly> assembliesToInclude = new List<Assembly>();
-
+    assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfButtonRenderer).GetTypeInfo().Assembly);
 	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfChipGroupRenderer).GetTypeInfo().Assembly); 
 
 		Xamarin.Forms.Forms.Init(e, assembliesToInclude); 

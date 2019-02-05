@@ -70,24 +70,6 @@ private void PopupLayout_Opened(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## How to close popup view
-
-The [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) or [SfPopupLayout.IsVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsVisible.html) property is used to close the [SfPopupLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout.html)
-
-{% tabs %}
-{% highlight c# %}
-
-private void ClickToClosePopup_Clicked(object sender, EventArgs e)
-{
-    //set false to IsOpen or IsVisible property like the following code to close the popup view.
-
-    popupLayout.IsOpen = false;
-    popupLayout.IsVisible = false;
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Closing event
 
 The [SfPopupLayout.Closing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opening_EV.html) event will be fired whenever closing the PopupView in the application. It can cancel popup closing with `CancelEventArgs` that contains the following property:

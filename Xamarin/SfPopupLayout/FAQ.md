@@ -779,3 +779,52 @@ namespace PopupDemo
 {% endtabs %}
 
 Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/SfPopupLayout_XForms_GettingStarted/tree/master/FAQ_UGSamples/PopupCloseIcon).
+
+## How to close popup view
+
+The [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) or [SfPopupLayout.IsVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsVisible.html) property is used to close the [SfPopupLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout.html)
+
+{% tabs %}
+{% highlight c# %}
+
+private void ClickToClosePopup_Clicked(object sender, EventArgs e)
+{
+    //set false to IsOpen or IsVisible property like the following code to close the popup view.
+
+    popupLayout.IsOpen = false;
+    popupLayout.IsVisible = false;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+Sample Link: You can download the above sample code by clicking [here]().
+
+## How to change popview background color 
+
+The popup view  background color can be modified by using the property [SfPopupLayout.PopupView.BackGroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~BackgroundColor.html)
+as demonstrated in the following code sample.
+
+{% tabs %}
+{%highlight Xaml%}
+<sfPopup:SfPopupLayout x:Name="popupLayout">
+        <sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:PopupView BackgroundColor="DimGray"/>
+        </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout x:Name="popupLayout">
+{%endhighlight%}
+
+{% highlight c# %}
+public MainPage()
+{
+    ....
+    InitializeComponent();
+    popupLayout.PopupView.BackgroundColor = Color.DimGray;
+    ....
+}
+
+
+{% endhighlight %}
+{% endtabs %}
+
+Sample Link: You can download the above sample code by clicking [here]().

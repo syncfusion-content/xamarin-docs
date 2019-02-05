@@ -1,6 +1,6 @@
 ---
-layout: post
-title: Orientation in LinearGauge
+layout: post 
+title: Orientation in Syncfusion LinearGauge control for Xamarin.Forms
 description: Learn how to set Orientation in LinearGauge
 platform: Xamarin
 control: LinearGauge
@@ -44,4 +44,4 @@ documentation: ug
 
 {% endtabs %}
 
-![](change-orientation_images/orientaion.png)
+![Linear Gauge Orientation](change-orientation_images/orientaion.png)

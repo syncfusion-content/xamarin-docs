@@ -6546,7 +6546,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the SfDataForm.
+            Background color of the dataform.
             <br/>
             <br/>
         </td>
@@ -6559,7 +6559,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the editor in SfDataForm.
+            Background color of the dataform editors.
             <br/>
             <br/>
         </td>
@@ -6572,7 +6572,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-          Background color of the disabled editor in SfDataForm.
+          Background color of the disabled editors in dataform.
             <br/>
             <br/>
         </td>
@@ -6585,7 +6585,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the editor in SfDataForm.
+            Text color of the dataform editors.
             <br/>
             <br/>
         </td>
@@ -6598,7 +6598,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-           Placeholder color of the editor in SfDataForm.
+           Placeholder color of the editor in dataform.
             <br/>
             <br/>
         </td>
@@ -6611,7 +6611,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-          Text color of the disabled editor in SfDataForm.
+          Text color of the disabled editor in dataform.
             <br/>
             <br/>
         </td>
@@ -6624,7 +6624,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the label in SfDataForm.
+            Text color of the dataform labels.
             <br/>
             <br/>
         </td>
@@ -6637,7 +6637,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the disabled label in SfDataForm.
+            Text color of the disabled label in dataform.
             <br/>
             <br/>
         </td>
@@ -6650,7 +6650,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the label in SfDataForm.
+            Background color of the dataform labels.
             <br/>
             <br/>
         </td>
@@ -6663,7 +6663,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-          Background color of the disabled label in SfDataForm.
+          Background color of the disabled label in dataform.
             <br/>
             <br/>
         </td>
@@ -6676,250 +6676,9 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-          Border color of the editor in SfDataForm.
+          Border color of the dataform editors.
             <br/>
             <br/>
         </td>
     </tr>
-    
-    <tr>
-        <td>
-            SfDataFormSwitchOnTrackColor       
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Track color of the switch in On condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            SfDataFormSwitchOnTrackPressedColor       
-            <br/>
-            <br/>
-        </td>
-        <td>
-           Track pressed color of the switch in On condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            SfDataFormSwitchOnTrackHoverColor       
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Track hover color of the switch in On condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            SfDataFormSwithchOffTrackColor       
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Track color of the switch in Off condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-        <td>
-            SfDataFormSwithchOffThumphColor        
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Thumph color of the switch in Off condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            SfDataFormSwithchOffTrackPressedColor         
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Track pressed color of the switch in Off condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-        <td>
-            SfDataFormSwithchOffThumphPressedColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Thumph pressed color of the switch in Off condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-        <td>
-            SfDataFormSwithchOffTrackHoverColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Track hover color of the switch in Off condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-        <td>
-            SfDataFormSwithchOffThumphHoverColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-              Thumph hover color of the switch in Off condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>     
-
-     <tr>
-        <td>
-            SfDataFormSwitchOnTrackDisabledColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Track color of the disabled switch in On condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-        <td>
-            SfDataFormSwitchOnThumphDisabledColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Thumph color of the disabled switch in On condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>   
-
-    <tr>
-        <td>
-            SfDataFormSwitchOffTrackDisabledColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Track color of the disabled switch in Off condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>     
-
-	<tr>
-        <td>
-            SfDataFormSwithchOffThumphDisabledColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Thumph color of the disabled switch in Off condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-	<tr>
-        <td>
-            SfDataFormSwitchOnPressedBorderColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Pressed border color of the switch in On condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>  
-		<tr>
-        <td>
-            SfDataFormSwitchOffBorderColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Border border color of the switch in Off condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>  
-	<tr>
-        <td>
-            SfDataFormSwitchOffPointerOverBorderColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Pointer over border border color of the switch in Off condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr>  
-	<tr>
-        <td>
-            SfDataFormSwitchOffPressedBorderColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Pressed border border color of the switch in Off condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr> 
-	<tr>
-        <td>
-            SfDataFormSwitchOnDisabledBorderColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Border border color of the disabled switch in On condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr> 
-	<tr>
-        <td>
-            SfDataFormSwitchOffDisabledBorderColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Border border color of the disabled switch in Off condition in SfDataForm.
-            <br/>
-            <br/>
-        </td>
-    </tr> 
 </table>

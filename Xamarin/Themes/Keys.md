@@ -6572,7 +6572,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-          Background color of the disabled editors in dataform.
+            Disabled editor`s background color in dataform.
             <br/>
             <br/>
         </td>
@@ -6611,7 +6611,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-          Text color of the disabled editor in dataform.
+     		Disabled editor`s text color in dataform.     
             <br/>
             <br/>
         </td>
@@ -6637,7 +6637,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the disabled label in dataform.
+			Disabled label`s text color in dataform.
             <br/>
             <br/>
         </td>
@@ -6663,7 +6663,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-          Background color of the disabled label in dataform.
+		    Disabled label`s background color in dataform.
             <br/>
             <br/>
         </td>

@@ -38,13 +38,10 @@ To launch SfSchedule in iOS, you need to call `SfScheduleRenderer.Init()` in the
 
 {% tabs %}       
 {% highlight c# %}   
-using Syncfusion.SfSchedule.XForms.iOS;
-
-
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
 	global::Xamarin.Forms.Forms.Init();
-	SfScheduleRenderer.Init();
+	Syncfusion.SfSchedule.XForms.iOS.SfScheduleRenderer.Init();
 	LoadApplication(new App());
 }
 {% endhighlight %}   
@@ -62,9 +59,6 @@ The above problem can be resolved by initializing the SfSchedule assemblies in `
 
 {% tabs %}   
 {% highlight c# %}
-using Syncfusion.SfSchedule.XForms.UWP;
-
-
 // In App.xaml.cs
 protected override void OnLaunched(LaunchActivatedEventArgs e)
 {
@@ -72,7 +66,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 	// you'll need to add `using System.Reflection;`
 	List<Assembly> assembliesToInclude = new List<Assembly>();
 	//Now, add all the assemblies your app uses 
-	assembliesToInclude.Add(typeof(SfScheduleRenderer).GetTypeInfo().Assembly);
+	assembliesToInclude.Add(typeof(Syncfusion.SfSchedule.XForms.UWP.SfScheduleRenderer).GetTypeInfo().Assembly);
 	// replaces Xamarin.Forms.Forms.Init(e);        
 	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 }

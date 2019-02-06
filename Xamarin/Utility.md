@@ -26,7 +26,7 @@ The following steps direct you to create a **Syncfusion** **Xamarin** **Applicat
 
 1. To create a **Syncfusion Xamarin project**, choose **New** **Project****->****Syncfusion****->** **Cross-Platform****->****Syncfusion** **Xamarin** **Application** in **Visual** **Studio** **2017**.
 
-     ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img1.jpeg)
+     ![Add New Project Window](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img1.jpeg)
 
 2. Name the **Project**, choose the destination location, and set the Framework of the project, and then click **OK**. The Project Configuration Wizard appears.
    
@@ -36,7 +36,7 @@ The following steps direct you to create a **Syncfusion** **Xamarin** **Applicat
 
 Choose the required Project platforms: Android, iOS, and UWP. 
 
-![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img2.jpeg)
+![New Project Configuration Wizard](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img2.jpeg)
 
 **Assemblies From:** Specify where the Syncfusion Xamarin assemblies need to be loaded from: either NuGet or Installed Location.
 
@@ -56,7 +56,7 @@ N> *Installed location option will be available only when the Syncfusion Xamarin
 
 Choose the Syncfusion controls that need to be added to the created project. 
 
-4.Click **Create** and the Syncfusion Xamarin Application wil been created.
+4.Click **Create** and the Syncfusion Xamarin Application will be created.
 
    N> *Choose any one of the project types and controls from the Project Configuration Wizard.*
 
@@ -64,31 +64,31 @@ Choose the Syncfusion controls that need to be added to the created project.
 
    **Net Standard /PCL:**
 
-   ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img3.jpeg)
+   ![NuGet references in Net Standard /PCL](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img3.jpeg)
 
-   ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img4.jpeg)
+   ![Assembly references in Net Standard /PCL](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img4.jpeg)
 
    **Android:**
 
-   ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img5.jpeg)
+   ![NuGet references in XForms.Android](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img5.jpeg)
 
-   ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img6.jpeg)
+   ![Assembly references in XForms.Android](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img6.jpeg)
 
    **iOS:**
 
-   ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img7.jpeg)
+   ![NuGet references in XForms.iOS](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img7.jpeg)
 
-   ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img8.jpeg)
+   ![Assembly references in XForms.iOS](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img8.jpeg)
 
    **UWP:**
 
-   ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img9.jpeg)
+   ![NuGet references in XForms.UWP](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img9.jpeg)
 
-   ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img10.jpeg)
+   ![Assembly references in XForms.UWP](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img10.jpeg)
 
 6.Then, Syncfusion licensing registration required message box will be shown as follow, if you have installed the trial setup or NuGet packages since Syncfusion introduced the licensing system from 2018 Volume 2 (v16.2.0.41) Essential Studio release. Please navigate to the [help topic](https://help.syncfusion.com/common/essential-studio/licensing/license-key#how-to-generate-syncfusion-license-key) which is shown in the licensing message box to generate and register the Syncfusion license key to your project. Refer to this [blog](https://blog.syncfusion.com/post/Whats-New-in-2018-Volume-2-Licensing-Changes-in-the-1620x-Version-of-Essential-Studio.aspx) post for understanding the licensing changes introduced in Essential Studio.
 
-   ![](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img11.jpeg)
+   ![Syncfusion License warning message](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates_img11.jpeg)
 
 ## Toolbox
 
@@ -102,15 +102,15 @@ Create the Xamarin or Syncfusion Xamarin project. The following steps direct you
 
 1. Choose **View** **->** **Other** **Windows** **->** **Syncfusion** **Toolbox** from **Visual** **Studio.**
 
-    ![](Toolbox_images/Toolbox_img1.jpeg)
+    ![Enable Syncfusion Xamarin Toolbox](Toolbox_images/Toolbox_img1.jpeg)
 
 2. Click **Syncfusion** **Toolbox** menu item and the Syncfusion Toolbox wizard appears. The Syncfusion control will be enabled in the Xamarin.Forms designer page. There is no Syncfusion control till the appropriate XAML file from the Xamarin shared/.NET Standard /PCL project is opened.
 
-    ![](Toolbox_images/Toolbox_img2.jpeg)
+    ![Syncfusion Xamarin Toolbox](Toolbox_images/Toolbox_img2.jpeg)
 
 3. Add the required Syncfusion controls design (XAML) snippet and namespace by dragging and dropping the required control from the Toolbox to the Designer.
 
-    ![](Toolbox_images/Toolbox_img3.jpeg)
+    ![Code snippet added in XAML](Toolbox_images/Toolbox_img3.jpeg)
 
 
 4. Install the Syncfusion Xamarin NuGet packages based on the controls in your project and render the Syncfusion control. Refer this [link](https://help.syncfusion.com/xamarin/nuget-packages) for know more about Syncfusion Xamarin NuGet packages install and configuration.

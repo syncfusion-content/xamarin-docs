@@ -6481,3 +6481,445 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
 </table>
+
+## SfDataForm
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+            SfDataFormStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfDataFormTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfDataForm without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfDataFormTheme">CustomTheme</x:String>
+                <Color x:Key="SfDataFormEditorTextColor">Red</Color>
+                <Color x:Key="SfDataFormLabelTextColor">Pink</Color>
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SfDataFormBackgroundColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+
+    <tr>
+        <td>
+            SfDataFormEditorBackgroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the editor in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+    <tr>
+        <td>
+            SfDataFormEditorDisabledBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Background color of the disabled editor in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormEditorTextColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the editor in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataFormEditorPlaceholderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Placeholder color of the editor in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormEditorDisabledTextColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Text color of the disabled editor in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataFormLabelTextColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the label in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormLabelDisabledTextColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the disabled label in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormLabelBackgroundColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the label in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormLabelDisabledBackgroundColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Background color of the disabled label in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormEditorBorderColor           
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Border color of the editor in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataFormSwitchOnTrackColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track color of the switch in On condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormSwitchOnTrackPressedColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Track pressed color of the switch in On condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormSwitchOnTrackHoverColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track hover color of the switch in On condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormSwithchOffTrackColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track color of the switch in Off condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataFormSwithchOffThumphColor        
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumph color of the switch in Off condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormSwithchOffTrackPressedColor         
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track pressed color of the switch in Off condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataFormSwithchOffThumphPressedColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumph pressed color of the switch in Off condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataFormSwithchOffTrackHoverColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track hover color of the switch in Off condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataFormSwithchOffThumphHoverColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+              Thumph hover color of the switch in Off condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+
+     <tr>
+        <td>
+            SfDataFormSwitchOnTrackDisabledColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track color of the disabled switch in On condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataFormSwitchOnThumphDisabledColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumph color of the disabled switch in On condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+
+    <tr>
+        <td>
+            SfDataFormSwitchOffTrackDisabledColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track color of the disabled switch in Off condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+
+	<tr>
+        <td>
+            SfDataFormSwithchOffThumphDisabledColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumph color of the disabled switch in Off condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SfDataFormSwitchOnPressedBorderColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Pressed border color of the switch in On condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+		<tr>
+        <td>
+            SfDataFormSwitchOffBorderColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border border color of the switch in Off condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+	<tr>
+        <td>
+            SfDataFormSwitchOffPointerOverBorderColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Pointer over border border color of the switch in Off condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+	<tr>
+        <td>
+            SfDataFormSwitchOffPressedBorderColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Pressed border border color of the switch in Off condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+	<tr>
+        <td>
+            SfDataFormSwitchOnDisabledBorderColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border border color of the disabled switch in On condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+	<tr>
+        <td>
+            SfDataFormSwitchOffDisabledBorderColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border border color of the disabled switch in Off condition in SfDataForm.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+</table>

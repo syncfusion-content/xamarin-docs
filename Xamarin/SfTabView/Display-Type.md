@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Display Type
+title: Display Type for Syncfusion Essential Xamarin.Forms SfTabView.
 description: Different display types available in Syncfusion TabView control for Xamarin.Forms platform
 platform: Xamarin.Forms
 control: TabView
@@ -16,7 +16,7 @@ By default, the tab view control displays the title of each tab item. It can be 
 * Image with text
 * No header
 
-![](images/Display-Type/tabstyle01.png)
+![Image for DisplayMode](images/Display-Type/tabstyle01.png)
 
 
 The tab view can be changed by setting the `DisplayMode` property of `SfTabView`.
@@ -139,7 +139,7 @@ var tabViewItem = new SfTabItem
 	Title = "Calls",
 	Content = allContactsGrid,
 	IconFont = "a", // setting value for font icons as mentioned in *.ttf.
-	FontIconFontFamily = Device.RuntimePlatform == "iOS" ? "TabIcons" : "TabIcons.ttf",
+	FontIconFontFamily = Device.RuntimePlatform == "iOS" ? "TabIcons" : Device.RuntimePlatform == "Android" ? "TabIcons.ttf" : "TabIcons.ttf#TabIcons",
 	FontIconFontColor = Color.LightBlue,
 	FontIconFontSize =  20
 	};

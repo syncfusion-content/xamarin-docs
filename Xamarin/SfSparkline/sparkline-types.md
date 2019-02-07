@@ -16,6 +16,10 @@ documentation: ug
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeWidth.html) - used to change the stroke width of the sparkline.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeColor.html) - used to change the stroke color of the sparkline.
 
+* [`MinimumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MinimumYValue.html) - used to set the minimum value of the y-axis in sparkline.
+
+*[`MaximumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MaximumYValue.html) - used to set the maximum value of the y-axis in sparkline.
+
 The following code is used to create the [`SfLineSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfLineSparkline.html).
 
 {% tabs %} 
@@ -49,6 +53,11 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeWidth.html) - used to change the stroke width of the sparkline.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeColor.html) - used to change the stroke color of the sparkline.
+
+* [`MinimumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MinimumYValue.html) - used to set the minimum value of the y-axis in sparkline.
+
+*[`MaximumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MaximumYValue.html) - used to set the maximum value of the y-axis in sparkline.
+
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfColumnSparkline~Color.html) - used to change the interior color of the column.
 
 The following code is used to create the [`SfColumnSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfColumnSparkline.html).
@@ -84,6 +93,11 @@ SfColumnSparkline columnSparkline = new SfColumnSparkline()
 
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeWidth.html) - used to change the stroke width of the sparkline.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeColor.html) - used to change the stroke color of the sparkline.
+
+* [`MinimumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MinimumYValue.html) - used to set the minimum value of the y-axis in sparkline.
+
+*[`MaximumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MaximumYValue.html) - used to set the maximum value of the y-axis in sparkline.
+
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfAreaSparkline~Color.html) - used to change the color of interior area.
 
 The following code is used to create the [`SfAreaSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfAreaSparkline.html).
@@ -119,7 +133,13 @@ SfAreaSparkline areaSparkline = new SfAreaSparkline()
 
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeWidth.html) - used to change the stroke width of the sparkline.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~StrokeColor.html) - used to change the stroke color of the sparkline.
+
+* [`MinimumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MinimumYValue.html) - used to set the minimum value of the y-axis in sparkline.
+
+*[`MaximumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MaximumYValue.html) - used to set the maximum value of the y-axis in sparkline.
+
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfWinLossSparkline~Color.html) - used to change the interior color of the positive columns.
+
 * [`NeutralPointColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfWinLossSparkline~NeutralPointColor.html) - used to change the interior color of the neutral columns.
 
 The following code is used to create the [`SfWinLossSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfWinLossSparkline.html).

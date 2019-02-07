@@ -19,6 +19,7 @@ The border stroke width (for [Outlined](https://help.syncfusion.com/cr/cref_file
 <inputLayout:SfTextInputLayout
             Hint="Name" 
             ContainerType="Outlined"
+            HelperText="Enter your name"
 	    FocusedStrokeWidth="4"
 	    UnfocusedStrokeWidth="2">
             <Entry />
@@ -31,6 +32,7 @@ The border stroke width (for [Outlined](https://help.syncfusion.com/cr/cref_file
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name";
 inputLayout.ContainerType = ContainerType.Outlined;
+inputLayout.HelperText = "Enter your name"
 inputLayout.FocusedStrokeWidth = 4;
 inputLayout.UnfocusedStrokeWidth = 2;
 inputLayout.InputView = new Entry(); 
@@ -41,4 +43,4 @@ inputLayout.InputView = new Entry();
 
 ![FocusedStrokeWidth img](How-to-images/FocusedStroke.png)
 
-![UnfocusedStrokeWidth img](How-to-images/UnfocusedStroke.jpg)
+![UnfocusedStrokeWidth img](How-to-images/UnfocusedStroke.png)

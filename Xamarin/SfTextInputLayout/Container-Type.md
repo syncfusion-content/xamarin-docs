@@ -99,7 +99,7 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![OutlineCornerRadius img](Container-Type-images/OutlinedCornerRadius.jpg)
+![OutlineCornerRadius img](Container-Type-images/OutlinedCornerRadius.png)
 
 >**NOTE**
 It is applicable for the outline border when setting the container type to outlined.

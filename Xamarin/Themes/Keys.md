@@ -6541,6 +6541,18 @@ This page lists the keys for each control and the element to which it is mapped 
 	</tr>
 	<tr>
         <td>
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of dataform editors when focused and date time picker's background color in dataform.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
             SfDataFormBackgroundColor  
             <br/>
             <br/>

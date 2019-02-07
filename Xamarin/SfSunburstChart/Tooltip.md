@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip feature of Essential Xamarin.Forms SfSunburstChart
+title: Tooltip in Syncfusion SfSunburstChart control for Xamarin.Forms
 description: This section describes the tooltip feature of sunburst chart.
 platform: xamarin
 control: SfSunburstChart
@@ -33,7 +33,7 @@ The following code shows enabling the tooltip.
 
 {% endtabs %} 
 
-![](Tooltip_images/Tooltip.png)
+![Tooltip support in Xamarin.Forms Sunburst](Tooltip_images/Tooltip.png)
 
 ## Customization
 
@@ -74,7 +74,40 @@ The following code shows all the above customizations.
 
 {% endtabs %} 
 
-![](Tooltip_images/Customization.png)
+![Customize tooltip support in Xamarin.Forms Sunburst](Tooltip_images/Customization.png)
+
+## Font customization
+
+The font can be customized using the [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~FontSize.html), [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~FontAttributes.html), and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~FontFamily.html) properties of tooltip.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+  <sunburst:SfSunburstChart.TooltipSettings>
+        <sunburst:SunburstTooltipSettings ShowTooltip="True" TextColor="White"
+         BackgroundColor="Green"  BorderColor="Black" BorderWidth="1" 
+         Duration="2000" ></sunburst:SunburstTooltipSettings>
+  </sunburst:SfSunburstChart.TooltipSettings>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+  SunburstTooltipSettings tooltipSettings = new SunburstTooltipSettings();
+  tooltipSettings.ShowTooltip = true;
+  tooltipSettings.TextColor = Color.White;
+  tooltipSettings.BackgroundColor = Color.Green;
+  tooltipSettings.BorderColor = Color.Black;
+  tooltipSettings.BorderWidth = 1;
+  tooltipSettings.Duration = 2000;
+  sunburstChart.TooltipSettings = tooltipSettings;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Font customization support in Xamarin.Forms Sunburst](Tooltip_images/Customization.png)
 
 ## Custom template
 
@@ -144,5 +177,5 @@ The sunburst chart provides options to design your own template for tooltip usin
 
 {% endtabs %} 
 
-![](Tooltip_images/Template.png)
+![Custom template support in Xamarin.Forms Sunburst](Tooltip_images/Template.png)
 

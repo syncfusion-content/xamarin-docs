@@ -22,18 +22,20 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
 {% highlight xaml %}
   
     <gauge:SfCircularGauge>
-    
-         <gauge:SfCircularGauge.Scales>
 
-            <gauge:Scale />
+        <gauge:SfCircularGauge.Scales>
 
-        <gauge:Scale.Ranges>
-             <gauge:Range StartValue="0" EndValue="50" />
-        </gauge:Scale.Ranges>
+            <gauge:Scale>
 
-         </gauge:SfCircularGauge.Scales>	
-	
-     </gauge:SfCircularGauge>
+                <gauge:Scale.Ranges>
+                    <gauge:Range StartValue="0" EndValue="50" />
+                </gauge:Scale.Ranges>
+                
+            </gauge:Scale>
+
+        </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 
 {% endhighlight %}
@@ -54,7 +56,7 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
 
 {% endtabs %}
 
-![](ranges_images/default-range.png)
+![Ranges support in Xamarin.Forms Circular Gauge](ranges_images/default-range.png)
 
 ## Range customization
 
@@ -64,31 +66,30 @@ An UI of a range is customized by using the [`Color`](https://help.syncfusion.co
 
 {% highlight xaml %}
   
-    <gauge:SfCircularGauge>
-   
-         <gauge:SfCircularGauge.Scales>
+     <gauge:SfCircularGauge>
 
-             <gauge:Scale   RimThickness="10" RimColor="#E0E0E0" LabelColor="#424242" 
+        <gauge:SfCircularGauge.Scales>
+
+            <gauge:Scale   RimThickness="10" RimColor="#E0E0E0" LabelColor="#424242" 
                        LabelOffset="0.9"  MinorTicksPerInterval="3">
-					   
-                    <gauge:Scale.MajorTickSettings>
-                        <gauge:TickSettings Thickness="3" Length="10" Offset="0.8"/>
-                    </gauge:Scale.MajorTickSettings>
-					
-                    <gauge:Scale.MinorTickSettings>
-                        <gauge:TickSettings Length="5" Offset="0.8"/>
-                    </gauge:Scale.MinorTickSettings>
-					
-	          </gauge:Scale>
 
-        <gauge:Scale.Ranges>
-            <gauge:Range StartValue="0" EndValue="50" Thickness="70"  Offset="0.8"  Color = "Pink"/>
-        </gauge:Scale.Ranges>
+                <gauge:Scale.MajorTickSettings>
+                    <gauge:TickSettings Thickness="3" Length="10" Offset="0.8"/>
+                </gauge:Scale.MajorTickSettings>
 
-         </gauge:SfCircularGauge.Scales>	
+                <gauge:Scale.MinorTickSettings>
+                    <gauge:TickSettings Length="5" Offset="0.8"/>
+                </gauge:Scale.MinorTickSettings>
 
-     </gauge:SfCircularGauge>
+                <gauge:Scale.Ranges>
+                    <gauge:Range StartValue="0" EndValue="50" Thickness="70"  Offset="0.8"  Color = "Pink"/>
+                </gauge:Scale.Ranges>
 
+            </gauge:Scale>
+
+        </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -121,7 +122,7 @@ An UI of a range is customized by using the [`Color`](https://help.syncfusion.co
 
 {% endtabs %}
 
-![](ranges_images/range-customization.png)
+![Range customization in Xamarin.Forms Circular Gauge](ranges_images/range-customization.png)
 
 ## Setting position for range
 
@@ -134,19 +135,20 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 {% highlight xaml %}
   
     <gauge:SfCircularGauge>
-    
-         <gauge:SfCircularGauge.Scales>
 
-            <gauge:Scale />
+        <gauge:SfCircularGauge.Scales>
 
-        <gauge:Scale.Ranges>
-                <gauge:Range StartValue = "0" EndValue = "100" Offset = "0.3" Thickness = "20"/>
-        </gauge:Scale.Ranges>
+            <gauge:Scale>
 
-         </gauge:SfCircularGauge.Scales>	
-	
-     </gauge:SfCircularGauge>
+                <gauge:Scale.Ranges>
+                    <gauge:Range StartValue = "0" EndValue = "100" Offset = "0.3" Thickness = "20"/>
+                </gauge:Scale.Ranges>
 
+            </gauge:Scale>
+
+        </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -168,7 +170,7 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {% endtabs %}
 
-![](ranges_images/range-offset.png)
+![Range positioning in Xamarin.Forms Circular Gauge](ranges_images/range-offset.png)
 
 2.The [`InnerStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~InnerStartOffset.html), [`InnerEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~InnerEndOffset.html), [`OuterStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~OuterStartOffset.html), and [`OuterEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~OuterEndOffset.html) properties.
 
@@ -177,18 +179,20 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 {% highlight xaml %}
   
     <gauge:SfCircularGauge>
-    
-         <gauge:SfCircularGauge.Scales>
 
-            <gauge:Scale />
+        <gauge:SfCircularGauge.Scales>
 
-        <gauge:Scale.Ranges>
-                <gauge:Range StartValue="10" EndValue="80" InnerStartOffset = "0.83" InnerEndOffset = "0.6" OuterStartOffset = "0.85" OuterEndOffset =" 0.8"/>
-        </gauge:Scale.Ranges>
+            <gauge:Scale>
 
-         </gauge:SfCircularGauge.Scales>	
+                <gauge:Scale.Ranges>
+                    <gauge:Range StartValue="10" EndValue="80" InnerStartOffset = "0.83" InnerEndOffset = "0.6" OuterStartOffset = "0.85" OuterEndOffset =" 0.8"/>
+                </gauge:Scale.Ranges>
 
-     </gauge:SfCircularGauge>
+            </gauge:Scale>
+
+        </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
 
 
 {% endhighlight %}
@@ -213,7 +217,56 @@ The range can be placed inside the scale, outside the scale, or on the scale by 
 
 {% endtabs %}
 
-![](ranges_images/range-inner-outer-offset.png)
+![Range with inner offset in Xamarin.Forms Circular Gauge](ranges_images/range-inner-outer-offset.png)
+
+## Setting range color for labels
+
+You can set range colors to labels using the [`UseRangeColorForLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~UseRangeColorForLabels.html) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+  
+    <gauge:SfCircularGauge>
+
+        <gauge:SfCircularGauge.Scales>
+
+            <gauge:Scale UseRangeColorForLabels="True">
+
+                <gauge:Scale.Ranges>
+                    <gauge:Range StartValue = "0" EndValue = "100"  Thickness = "20" />
+                </gauge:Scale.Ranges>
+                
+            </gauge:Scale>
+
+        </gauge:SfCircularGauge.Scales>
+
+    </gauge:SfCircularGauge>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge circularGauge = new SfCircularGauge();
+ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+Scale scale = new Scale();
+scale.UseRangeColorForLabels = true;
+Range range = new Range();
+range.StartValue = 0;
+range.EndValue = 100;
+range.Thickness = 20;
+scale.Ranges.Add(range);
+scales.Add(scale);
+circularGauge.Scales = scales;
+this.Content = circularGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Range with outer offset in Xamarin.Forms Circular Gauge](ranges_images/userangecolorforlabels.png)
+
 
 ## Setting multiple ranges
 
@@ -335,7 +388,7 @@ In addition to the default range, you can add n number of ranges to a scale by u
 
 {% endtabs %}
 
-![](ranges_images/multiple-range.png)
+![Multiple Ranges support in Xamarin.Forms Circular Gauge](ranges_images/multiple-range.png)
 
 ## Setting gradient color for range
 
@@ -441,4 +494,4 @@ You can give smooth color transition to range by specifying the different colors
 
 {% endtabs %}
 
-![](ranges_images/gradient.png)
+![Range with gradient color in Xamarin.Forms Circular Gauge](ranges_images/gradient.png)

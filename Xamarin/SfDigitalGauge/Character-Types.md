@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Character types in DigitalGauge
+title: Character types in Syncfusion DigitalGauge control for Xamarin.Forms
 description: Learn how to define character type in DigitalGauge
 platform: Xamarin
 control: DigitalGauge
@@ -69,22 +69,22 @@ The seven-segment type is capable of displaying numbers and a few uppercase lett
 
 {% endtabs %}
 
-![](CharacterTypes_images/CharacterTypes_img1.png)
+![Character type support in Xamarin.Forms Digital Gauge](CharacterTypes_images/CharacterTypes_img1.png)
 
 ## Fourteen segment
 
 The fourteen-segment type is capable of displaying numbers and alphabet efficiently.
 
-![](CharacterTypes_images/CharacterTypes_img2.png)
+![Fourteen segment in Xamarin.Forms Digital Gauge](CharacterTypes_images/CharacterTypes_img2.png)
 
 ## Sixteen segment
 
 The sixteen-segment type is capable of displaying numbers and alphabet clearly.
 
-![](CharacterTypes_images/CharacterTypes_img3.png)
+![Sixteen segment in Xamarin.Forms Digital Gauge](CharacterTypes_images/CharacterTypes_img3.png)
 
 ## EightCrossEightDotMatrix segment
 
 The dot matrix segment type is capable of displaying numbers, alphabet, and special characters efficiently.
 
-![](CharacterTypes_images/CharacterTypes_img4.png)
+![Dot matrix segment in Xamarin.Forms Digital Gauge](CharacterTypes_images/CharacterTypes_img4.png)

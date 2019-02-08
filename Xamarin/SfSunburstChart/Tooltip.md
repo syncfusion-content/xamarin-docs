@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tooltip feature of Essential Xamarin.Forms SfSunburstChart
+title: Tooltip in Syncfusion SfSunburstChart control for Xamarin.Forms
 description: This section describes the tooltip feature of sunburst chart.
 platform: xamarin
 control: SfSunburstChart
@@ -33,7 +33,7 @@ The following code shows enabling the tooltip.
 
 {% endtabs %} 
 
-![](Tooltip_images/Tooltip.png)
+![Tooltip support in Xamarin.Forms Sunburst](Tooltip_images/Tooltip.png)
 
 ## Customization
 
@@ -74,7 +74,34 @@ The following code shows all the above customizations.
 
 {% endtabs %} 
 
-![](Tooltip_images/Customization.png)
+![Customize tooltip support in Xamarin.Forms Sunburst](Tooltip_images/Customization.png)
+
+## Font customization
+
+The font size can be customized using the [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings~FontSize.html) property of tooltip.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<sunburst:SfSunburstChart.TooltipSettings>
+            <sunburst:SunburstTooltipSettings ShowTooltip="True" FontSize="20" />
+</sunburst:SfSunburstChart.TooltipSettings>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SunburstTooltipSettings tooltipSettings = new SunburstTooltipSettings();
+tooltipSettings.ShowTooltip = true;
+tooltipSettings.FontSize = 20;
+sunburstChart.TooltipSettings = tooltipSettings;
+
+{% endhighlight %}
+
+{% endtabs %} 
+
+![Font customization support in Xamarin.Forms Sunburst](Tooltip_images/font.png)
 
 ## Custom template
 
@@ -144,5 +171,5 @@ The sunburst chart provides options to design your own template for tooltip usin
 
 {% endtabs %} 
 
-![](Tooltip_images/Template.png)
+![Custom template support in Xamarin.Forms Sunburst](Tooltip_images/Template.png)
 

@@ -18,7 +18,7 @@ documentation: ug
 
 * [`MinimumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MinimumYValue.html) - used to set the minimum value of the y-axis in sparkline.
 
-*[`MaximumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MaximumYValue.html) - used to set the maximum value of the y-axis in sparkline.
+* [`MaximumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MaximumYValue.html) - used to set the maximum value of the y-axis in sparkline.
 
 The following code is used to create the [`SfLineSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfLineSparkline.html).
 
@@ -56,7 +56,7 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 * [`MinimumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MinimumYValue.html) - used to set the minimum value of the y-axis in sparkline.
 
-*[`MaximumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MaximumYValue.html) - used to set the maximum value of the y-axis in sparkline.
+* [`MaximumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MaximumYValue.html) - used to set the maximum value of the y-axis in sparkline.
 
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfColumnSparkline~Color.html) - used to change the interior color of the column.
 
@@ -96,7 +96,7 @@ SfColumnSparkline columnSparkline = new SfColumnSparkline()
 
 * [`MinimumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MinimumYValue.html) - used to set the minimum value of the y-axis in sparkline.
 
-*[`MaximumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MaximumYValue.html) - used to set the maximum value of the y-axis in sparkline.
+* [`MaximumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MaximumYValue.html) - used to set the maximum value of the y-axis in sparkline.
 
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfAreaSparkline~Color.html) - used to change the color of interior area.
 
@@ -136,7 +136,7 @@ SfAreaSparkline areaSparkline = new SfAreaSparkline()
 
 * [`MinimumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MinimumYValue.html) - used to set the minimum value of the y-axis in sparkline.
 
-*[`MaximumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MaximumYValue.html) - used to set the maximum value of the y-axis in sparkline.
+* [`MaximumYValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfSparklineBase~MaximumYValue.html) - used to set the maximum value of the y-axis in sparkline.
 
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfWinLossSparkline~Color.html) - used to change the interior color of the positive columns.
 

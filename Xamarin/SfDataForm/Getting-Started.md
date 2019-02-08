@@ -628,7 +628,7 @@ Refer to the following code example to load the SfDataForm control inside a `Sta
 {% highlight xaml %}
 
 <StackLayout x:Name="stackLayout" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-    <dataForm:SfDataForm x:Name="dataForm" " VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+    <dataForm:SfDataForm x:Name="dataForm" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
 </StackLayout>
 
 {% endhighlight %}

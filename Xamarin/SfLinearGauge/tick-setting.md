@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Tick Settings in Syncfusion LinearGauge control for Xamarin.Forms
+title: Linear Tick Settings in LinearGauge
 description: Learn how to define settings of linear ticks in LinearGauge
 platform: Xamarin
 control: LinearGauge
@@ -42,7 +42,7 @@ Ticks visibility can be customized using the [`ShowTicks`](https://help.syncfusi
 
 {% endtabs %}
 
-![Linear Gauge Tick Settings](tick-setting_images/tick-setting1.png)
+![](tick-setting_images/tick-setting1.png)
 
 ## Tick customization
 
@@ -83,7 +83,7 @@ You can customize the color and thickness of ticks by using the [`Color`](https:
 
 {% endtabs %}
 
-![Linear Gauge Tick Customization](tick-setting_images/tick-setting2.png)
+![](tick-setting_images/tick-setting2.png)
 
 ### Minor tick customization
 
@@ -123,7 +123,7 @@ You can customize the color and thickness of ticks by using the [`Color`](https:
 
 {% endtabs %}
 
-![Linear Gauge Majot Tick](tick-setting_images/tick-setting3.png)
+![](tick-setting_images/tick-setting3.png)
 
 ## Setting minor ticks per interval
 
@@ -155,7 +155,7 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 
 {% endtabs %}
 
-![Linear Gauge Minor Tick](tick-setting_images/tick-setting4.png)
+![](tick-setting_images/tick-setting4.png)
 
 ## Setting position for ticks
 
@@ -202,4 +202,4 @@ The major and minor ticks can be positioned far away from the scale by using the
 
 {% endtabs %}
 
-![Linear Gauge Tick Position](tick-setting_images/tick-setting5.png)
+![](tick-setting_images/tick-setting5.png)

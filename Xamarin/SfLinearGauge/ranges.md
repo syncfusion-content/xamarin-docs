@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Ranges in Syncfusion LinearGauge control for Xamarin.Forms
+title: Ranges in LinearGauge
 description: Learn how to set ranges in LinearGauge
 platform: Xamarin
 control: LinearGauge
@@ -65,7 +65,7 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
 
 {% endtabs %}
 
-![Linear Gauge Ranges](ranges_images/range1.png)
+![](ranges_images/range1.png)
 
 ## Range customization
 
@@ -122,7 +122,7 @@ To change the range’s background color, use the [`Color`](https://help.syncfus
 
 {% endtabs %}
 
-![Linear Gauge Range Customization](ranges_images/range2.png)
+![](ranges_images/range2.png)
 
 ## Setting position for range
 
@@ -182,7 +182,7 @@ The range can be adjusted above or below the scale by using the [`Offset`](https
 
 {% endtabs %}
 
-![Linear Gauge Range Position](ranges_images/range3.png)
+![](ranges_images/range3.png)
 
 ## Setting multiple ranges
 
@@ -259,7 +259,7 @@ You can add n number of ranges to a scale by using the [`LinearRange`](https://h
 
 {% endtabs %}
 
-![Linear Gauge Multiple Ranges](ranges_images/range4.png)
+![](ranges_images/range4.png)
 
 ## Setting gradient color for range
 
@@ -319,4 +319,4 @@ You can give smooth color transition to range to specifying the different colors
 
 {% endtabs %}
 
-![Linear Gauge Range With Gradient](ranges_images/range5.png)
+![](ranges_images/range5.png)

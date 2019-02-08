@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Levels of Syncfusion Xamarin.Forms SfSunburstChart
+title:  Levels of Essential Xamarin.Forms SfSunburstChart
 description: This section describes the hierarchical levels in SfSunburstChart.
 platform: xamarin
 control: SfSunburstChart
@@ -105,5 +105,5 @@ The following code specifies the levels for data model specified in the getting 
 
 {% endtabs %} 
 
-![Levels support in Xamarin.Forms Sunburst](Levels_images/Levels.png)
+![](Levels_images/Levels.png)
 

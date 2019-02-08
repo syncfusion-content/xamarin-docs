@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization of Syncfusion Xamarin.Forms SfSunburstChart
+title: Customization of Essential Xamarin.Forms SfSunburstChart
 description: This section describes the customization available in sunburst chart.
 platform: xamarin
 control: SfSunburstChart
@@ -24,6 +24,7 @@ The following palettes are available in the sunburst chart:
 * Custom
 
 The following code shows applying the TomatoSpectrum [`Palette`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartColorModel~Palette.html).
+
 
 {% tabs %} 
 
@@ -76,7 +77,7 @@ The following code shows applying the TomatoSpectrum [`Palette`](https://help.sy
 
 {% endtabs %} 
 
-![Palette support in Xamarin.Forms Sunburst](Customization_images/Palette.png)
+![](Customization_images/Palette.png)
 
 ## Angle
 
@@ -128,7 +129,7 @@ The start angle and end angle of the sunburst chart can be adjusted by using the
 
 {% endtabs %} 
 
-![Angle support in Xamarin.Forms Sunburst](Customization_images/Angle.jpg)
+![](Customization_images/Angle.png)
 
 ## Radius
 
@@ -179,7 +180,7 @@ The sunburst chart allows you to customize the radius by using the [`Radius`](ht
 
 {% endtabs %} 
 
-![Customize radius support in Xamarin.Forms Sunburst](Customization_images/Radius.png)
+![](Customization_images/Radius.png)
 
 ## Inner radius
 
@@ -230,7 +231,7 @@ The sunburst chart allows you to customize the inner radius using the [`InnerRad
 
 {% endtabs %} 
 
-![Customize inner radius support in Xamarin.Forms Sunburst](Customization_images/InnerRadius.png)
+![](Customization_images/InnerRadius.png)
 
 ## Stroke customization
 
@@ -282,4 +283,4 @@ Stroke color and stroke width of the sunburst chart can be customized using [`St
 
 {% endtabs %} 
 
-![Customize stroke support in Xamarin.Forms Sunburst](Customization_images/Stroke.png)
+![](Customization_images/Stroke.png)

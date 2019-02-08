@@ -74,38 +74,3 @@ Content = sfCircularGauge;
 {% endtabs %}
 
 ![Xamarin Circular Coefficient Image](how-to_images/circular-coefficient.png)
-
-## Gauge alignment
-
-The [`IsCenterAligned`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~IsCenterAligned.html) property is used to align the gauge to the center. In semi-circular gauge, bottom space will be removed using the [`IsCenterAligned`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~IsCenterAligned.html) property.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<gauge:SfCircularGauge IsCenterAligned="True">
-    <gauge:SfCircularGauge.Scales>
-         <gauge:Scale StartAngle="180" SweepAngle="180"/>
-    </gauge:SfCircularGauge.Scales>
-</gauge:SfCircularGauge>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCircularGauge sfCircularGauge = new SfCircularGauge();
-sfCircularGauge.IsCenterAligned = true;
-ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
-Scale scale = new Scale();
-scale.StartAngle = 180;
-scale.SweepAngle = 180;
-scales.Add(scale);
-sfCircularGauge.Scales = scales;
-Content = sfCircularGauge;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Xamarin Circular IsCenterAligned Image](how-to_images/iscenteraligned.png)
-

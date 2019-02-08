@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Range Band in Syncfusion Sparkline control for Xamarin.Forms
+title: Range Band
 description: How to highlight particualr region in Essential Xamarin.Forms Sparkline
 platform: xamarin
 control: Sparkline
@@ -43,4 +43,4 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![Range band support in Xamarin.Forms Sparkline](sparkline_images/RangeBand.png)
+![](sparkline_images/RangeBand.png)

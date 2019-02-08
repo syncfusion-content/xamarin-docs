@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sublayer in Syncfusion Maps control for Xamarin.Forms
+title: Sublayer
 description: This section describes about sublayer.
 platform: xamarin
 control: SfMaps
@@ -153,7 +153,7 @@ You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusi
 
 {% endtabs %}
 
-![Sublayer support in Xamarin.Forms Maps](Images/Sublayer.png)
+![](Images/Sublayer.png)
 
 ### Customizing sublayer
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Displaying Text in Syncfusion DigitalGauge control for Xamarin.Forms
+title: Setting Displaying Text of DigitalGauge
 description: Learn how to set Display Text in DigitalGauge
 platform: Xamarin
 control: DigitalGauge
@@ -61,7 +61,7 @@ Numbers can be displayed in digital gauge in different formats using the `Charac
 
 {% endtabs %}
 
-![Value as number support in Xamarin.Forms Digital Gauge](Displaytypes_images/Displaytypes_img1.png)
+![](Displaytypes_images/Displaytypes_img1.png)
 
 ## Setting value to alphabet
 
@@ -113,7 +113,7 @@ Alphabet can be displayed in digital gauge using any one of the character format
 
 {% endtabs %}
 
-![Value as alphabet support in Xamarin.Forms Digital Gauge](Displaytypes_images/Displaytypes_img2.png)
+![](Displaytypes_images/Displaytypes_img2.png)
 
 ## Setting value to special characters
 
@@ -165,5 +165,5 @@ Special characters can also be displayed in digital gauge using the EightCrossEi
 
 {% endtabs %}
 
-![Value as special character support in Xamarin.Forms Digital Gauge](Displaytypes_images/Displaytypes_img3.png)
+![](Displaytypes_images/Displaytypes_img3.png)
 

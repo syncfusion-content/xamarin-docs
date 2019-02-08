@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize data in Syncfusion Sparkline control for Xamarin.Forms
+title: Customize data points
 description: How to customize data points in Essential Xamarin.Forms Sparkline
 platform: xamarin
 control: Sparkline
@@ -63,7 +63,7 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![Marker customization in Xamarin.Forms Sparkline](sparkline_images/MarkerCustomization.png)
+![](sparkline_images/MarkerCustomization.png)
 
 Code snippet to customize the segments
 
@@ -100,4 +100,4 @@ SfColumnSparkline columnSparkline = new SfColumnSparkline()
 
 {% endtabs %}
 
-![Segment customization in Xamarin.Forms Sparkline](sparkline_images/SegmentsCustomization.png)
+![](sparkline_images/SegmentsCustomization.png)

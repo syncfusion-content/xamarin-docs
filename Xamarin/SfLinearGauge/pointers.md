@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Pointers in Syncfusion LinearGauge control for Xamarin.Forms
+title: Pointers in LinearGauge
 description: Learn how to define set pointers in LinearGauge
 platform: Xamarin
 control: LinearGauge
@@ -60,7 +60,7 @@ documentation: ug
 
 {% endtabs %}
 
-![Linear Gauge Bar Pointer](pointers_images/bar-pointer/bar-pointer.png)
+![](pointers_images/bar-pointer/bar-pointer.png)
 
 ## Bar pointer customization
 
@@ -112,7 +112,7 @@ The bar pointer’s UI is customized by using the [`Color`](https://help.syncfus
 
 {% endtabs %}
 
-![Linear Gauge Bar Pointer customization](pointers_images/bar-pointer/bar-pointer2.png)
+![](pointers_images/bar-pointer/bar-pointer2.png)
 
 ## Setting corner radius type for bar pointer
 
@@ -167,7 +167,7 @@ Corners of the [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/
 
 {% endtabs %}
 
-![Linear Gauge Corner Radius](pointers_images/bar-pointer/bar-pointer3.png)
+![](pointers_images/bar-pointer/bar-pointer3.png)
 
 ## Setting gradient color for bar pointer
 
@@ -249,7 +249,7 @@ You can give smooth color transition to bar pointer to specifying the different 
 
 {% endtabs %}
 
-![Linear Gauge Bar Pointer with Gradient](pointers_images/bar-pointer/bar-pointer4.png)
+![](pointers_images/bar-pointer/bar-pointer4.png)
 
 ## Adding symbol pointer to scale
 
@@ -314,7 +314,7 @@ In [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 
 {% endtabs %}
 
-![Linear Gauge Symbol Pointer](pointers_images/symbol-pointer/symbol-pointer1.png)
+![](pointers_images/symbol-pointer/symbol-pointer1.png)
 
 ## Symbol pointer customization
 
@@ -367,7 +367,7 @@ You can modify the symbol pointer’s size using the [`Thickness`](https://help.
 
 {% endtabs %}
 
-![Linear Gauge Symbol Pointer Customization](pointers_images/symbol-pointer/symbol-pointer2.png)
+![](pointers_images/symbol-pointer/symbol-pointer2.png)
 
 ## Positioning symbol pointer
 
@@ -434,7 +434,7 @@ You can customize the position of the [`SymbolPointer`](https://help.syncfusion.
 
 {% endtabs %}
 
-![Linear Gauge Positioning Symbol Pointer](pointers_images/symbol-pointer/symbol-pointer3.png)
+![](pointers_images/symbol-pointer/symbol-pointer3.png)
 
 ## Setting offset for symbol pointer
 
@@ -495,7 +495,7 @@ You can move  the [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xa
 
 {% endtabs %}
 
-![Linear Gauge Symbol Pointer Offset](pointers_images/symbol-pointer/symbol-pointer4.png)
+![](pointers_images/symbol-pointer/symbol-pointer4.png)
 
 ## Change symbol pointer shapes
 
@@ -560,9 +560,9 @@ Different types of shapes are used in [`SymbolPointer`](https://help.syncfusion.
 
 {% endtabs %}
 
-![Linear Gauge Symbol Pointer Shapes](pointers_images/symbol-pointer/symbol-pointer5.png)
+![](pointers_images/symbol-pointer/symbol-pointer5.png)
 
-![Linear Gauge Symbol Pointers](pointers_images/symbol-pointer/symbol-pointer6.png)
+![](pointers_images/symbol-pointer/symbol-pointer6.png)
 
 ## Setting image shape for symbol pointer
 
@@ -626,7 +626,7 @@ You can achieve the image shape  by setting the [`MarkerShape`](https://help.syn
 
 {% endtabs %}
 
-![Linear Gauge Symbol Pointer Image](pointers_images/symbol-pointer/symbol-pointer7.png)
+![](pointers_images/symbol-pointer/symbol-pointer7.png)
 
 ## Adding multiple pointers
 
@@ -691,4 +691,4 @@ In addition to the default pointer, you can add n number of pointers to a linear
 
 {% endtabs %}
 
-![Linear Gauge Multiple Pointers](pointers_images/symbol-pointer/symbol-pointer8.png)
+![](pointers_images/symbol-pointer/symbol-pointer8.png)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drill down feature of Syncfusion Xamarin.Forms SfSunburstChart
+title: Drill down feature of Essential Xamarin.Forms SfSunburstChart
 description: This section describes the drill down feature of sunburst chart.
 platform: xamarin
 control: SfSunburstChart
@@ -36,7 +36,7 @@ The following code shows enabling the [`DrilldownSettings`](https://help.syncfus
 
 {% endtabs %} 
 
-![Drilldown support in Xamarin.Forms Sunburst](Drilldown_images/Drilldown.gif)
+![](Drilldown_images/Drilldown.gif)
 
 ## Positioning Toolbar
 
@@ -66,7 +66,7 @@ Toolbar can be positioned anywhere on the chart by specifying the [`OffsetX`](ht
 
 {% endtabs %} 
 
-![Toolbar positioning support in Xamarin.Forms Sunburst](Drilldown_images/Offset.png)
+![](Drilldown_images/Offset.png)
 
 ## Toolbar alignment 
 
@@ -108,5 +108,5 @@ The following code shows the toolbar alignment.
 
 {% endtabs %} 
 
-![Toolbar alignment support in Xamarin.Forms Sunburst](Drilldown_images/ToolbarAlignment.png)
+![](Drilldown_images/ToolbarAlignment.png)
 

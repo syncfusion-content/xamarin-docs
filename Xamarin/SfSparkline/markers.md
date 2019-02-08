@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markers in Syncfusion Sparkline control for Xamarin.Forms
+title: Markers
 description: How to customize markers in Essential Xamarin.Forms Sparkline
 platform: xamarin
 control: Sparkline
@@ -49,4 +49,4 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![Markers support in Xamarin.Forms Sparkline](sparkline_images/Markers.png)
+![](sparkline_images/Markers.png)

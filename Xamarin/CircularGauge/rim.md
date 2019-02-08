@@ -49,7 +49,7 @@ The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 {% endtabs %}
 
-![Circular Gauge Rim](rim_images/rim.png)
+![](rim_images/rim.png)
 
 ## Rim customization
 
@@ -99,7 +99,7 @@ The color and thickness of rim can be set by using the [`RimColor`](https://help
 
 {% endtabs %}
 
-![Circular Gauge Rim Customization](rim_images/rim-customization.png)
+![](rim_images/rim-customization.png)
 
 ## Setting position for rim
 
@@ -142,7 +142,7 @@ You can customize the position of [`Scales`](https://help.syncfusion.com/cr/cref
 
 {% endtabs %}
 
-![Circular Gauge Rim Offset](rim_images/rim-offset.png)
+![](rim_images/rim-offset.png)
 
 ### Setting scale start and end offsets for rim
 
@@ -179,7 +179,7 @@ You can customize the position of [`Scales`](https://help.syncfusion.com/cr/cref
 
 {% endtabs %}
 
-![Scale start and end offset for rim in Xamarin.Forms Circular Gauge](rim_images/rim-start-end-offset.png)
+![](rim_images/rim-start-end-offset.png)
 
 ## Show rim
 
@@ -213,5 +213,5 @@ The [`ShowRim`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfG
 
 {% endtabs %}
 
-![Show rim support in Xamarin.Forms Circular Gauge](rim_images/show-rim.png)
+![](rim_images/show-rim.png)
 

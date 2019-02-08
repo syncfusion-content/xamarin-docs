@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Character in Syncfusion DigitalGauge for Xamarin.Forms
+title: Character customization of DigitalGauge
 description: Learn how to customise the Character in DigitalGauge
 platform: xamarin 
 control: DigitalGauge
@@ -62,7 +62,7 @@ The values of digital characters are scaled by altering the height and width of 
 
 {% endtabs %}
 
-![Customize character in Xamarin.Forms Digital Gauge](Customize-character-segments_images/Customize-character-segments_img1.png)
+![](Customize-character-segments_images/Customize-character-segments_img1.png)
 
 ## Setting character spacing
 
@@ -115,7 +115,7 @@ The values of digital characters are spaced by altering the space of digital cha
 
 {% endtabs %}
 
-![Character spacing in Xamarin.Forms Digital Gauge](Customize-character-segments_images/Customize-character-segments_img2.png)
+![](Customize-character-segments_images/Customize-character-segments_img2.png)
 
 ## Customize character segment stroke
 
@@ -166,7 +166,7 @@ The values of digital characters color can be customized using the [`CharacterSt
 
 {% endtabs %}
 
-![Customize character stroke in Xamarin.Forms Digital Gauge](Customize-character-segments_images/Customize-character-segments_img3.png)
+![](Customize-character-segments_images/Customize-character-segments_img3.png)
 
 ## Customize disabled segment
 
@@ -219,7 +219,7 @@ You can customize the color and opacity of disabled segments using the [`Disable
 
 {% endtabs %}
 
-![Customize disable segment in Xamarin.Forms Digital Gauge](Customize-character-segments_images/Customize-character-segments_img4.png)
+![](Customize-character-segments_images/Customize-character-segments_img4.png)
 
 ## Customize background color of digital gauge
 
@@ -274,4 +274,4 @@ You can customize the background color of the digital gauge using the [`Backgrou
 
 {% endtabs %}
 
-![Customize background color in Xamarin.Forms Digital Gauge](Customize-character-segments_images/Customize-character-segments_img5.png)
+![](Customize-character-segments_images/Customize-character-segments_img5.png)

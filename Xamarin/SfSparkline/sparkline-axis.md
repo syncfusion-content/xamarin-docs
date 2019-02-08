@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sparkline Axis in Syncfusion Sparkline control for Xamarin.Forms
+title: Sparkline Axis
 description: How to customize Axis in Essential Xamarin.Forms Sparkline
 platform: xamarin
 control: Sparkline
@@ -48,4 +48,4 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![Axis support in Xamarin.Forms Sparkline](sparkline_images/Axis.png)
+![](sparkline_images/Axis.png)

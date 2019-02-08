@@ -44,7 +44,7 @@ The [`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.S
 
 {% endtabs %}
 
-![Show tick support in Xamarin.Forms Circular Gauge](tick-setting_images/show-ticks.png)
+![](tick-setting_images/show-ticks.png)
 
 ## Ticks customization 
 
@@ -92,7 +92,7 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
 
 {% endtabs %}
 
-![Tick customization in Xamarin.Forms Circular Gauge](tick-setting_images/majortick-customise.png)
+![](tick-setting_images/majortick-customise.png)
 
 ## Customize minor ticks for scale
 
@@ -135,7 +135,7 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
 
 {% endtabs %}
 
-![Minor tick customization in Xamarin.Forms Circular Gauge](tick-setting_images/minortick-customise.png)
+![](tick-setting_images/minortick-customise.png)
 
 ## Setting position for ticks
 
@@ -189,7 +189,7 @@ The major and minor ticks can be positioned far away from the rim by using the f
 
 {% endtabs %}
 
-![Positioning tick in Xamarin.Forms Circular Gauge](tick-setting_images/offset.png)
+![](tick-setting_images/offset.png)
 
 ### Setting scale start and end offset for scale
 
@@ -239,4 +239,4 @@ The major and minor ticks can be positioned far away from the rim by using the f
 
 {% endtabs %}
 
-![Tick offset support in Xamarin.Forms Circular Gauge](tick-setting_images/start-end-offset.png)
+![](tick-setting_images/start-end-offset.png)

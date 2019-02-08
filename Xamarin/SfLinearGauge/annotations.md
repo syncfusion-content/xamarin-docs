@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Annotations in Syncfusion SfLinearGauge control for Xamarin.Forms
+title: Annotations in LinearGauge
 description: Learn how to set annotations in LinearGauge
 platform: Xamarin
 control: LinearGauge
@@ -70,7 +70,7 @@ By using the [`View`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% endtabs %}
 
-![Linear Gauge Annotation](annotations_images/annotation1.png)
+![](annotations_images/annotation1.png)
 
 ##  Positioning the annotation
 
@@ -133,7 +133,7 @@ You can position the annotation anywhere in the linear gauge by using the [`Offs
 
 {% endtabs %}
 
-![Linear Gauge Annotation Position](annotations_images/annotation2.png)
+![](annotations_images/annotation2.png)
 
 ### Change annotation position by using scale value
 
@@ -203,7 +203,7 @@ You can also place the annotation by specifying the [`ScaleValue`](https://help.
 
 {% endtabs %}
 
-![Linear Gauge Annotation Scale Value](annotations_images/annotation3.png)
+![](annotations_images/annotation3.png)
 
 ## Set margin to the annotation
 
@@ -274,7 +274,7 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
 
 {% endtabs %}
 
-![Linear Gauge Annotation Margin](annotations_images/annotation4.png)
+![](annotations_images/annotation4.png)
 
 ## Alignment of annotation
 
@@ -349,7 +349,7 @@ You can align the annotation using the [`HorizontalViewAlignment`](https://help.
 
 {% endtabs %}
 
-![Linear Gauge Annotation Alignment](annotations_images/annotation5.png)
+![](annotations_images/annotation5.png)
 
 ### Setting vertical view alignment
 
@@ -420,7 +420,7 @@ You can align the annotation using the [`HorizontalViewAlignment`](https://help.
 
 {% endtabs %}
 
-![Linear Gauge Annotation Vertical Alignment](annotations_images/annotation6.png)
+![](annotations_images/annotation6.png)
 
 ## Setting scale index for annotation
 
@@ -521,7 +521,7 @@ You can set the index for the scale by using [`ScaleIndex`](https://help.syncfus
 
 {% endtabs %}
 
-![Linear Gauge Annotation Scale Index](annotations_images/annotation7.png)
+![](annotations_images/annotation7.png)
 
 ## Multiple annotations
 
@@ -671,4 +671,4 @@ You can add multiple annotations to the gauge as demonstrated below.
 
 {% endtabs %}
 
-![Linear Gauge Multiple Annotation](annotations_images/annotation8.png)
+![](annotations_images/annotation8.png)

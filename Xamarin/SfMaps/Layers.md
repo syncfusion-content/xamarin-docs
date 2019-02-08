@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layers in Syncfusion Maps control for Xamarin.Forms
+title: Layers
 description: This section describes about the layers in maps
 platform: xamarin
 control: SfMaps
@@ -89,7 +89,7 @@ Refer to the following code sample for customizing shapes.
 
 {% endtabs %}
 
-![Shape customization in Xamarin.Forms Maps](Images/ShapeCustomization_img1.jpeg)
+![](Images/ShapeCustomization_img1.jpeg)
 
 To customize the shapes based on the bound values, use the following properties:
 
@@ -179,7 +179,7 @@ layer.ShapeSettings = shapeSetting;
 
 {% endtabs %}
 
-![Customize shapes based on bounds support in Xamarin.Forms Maps](Images/ShapeCustomization_img2.jpeg)
+![](Images/ShapeCustomization_img2.jpeg)
 
 ### Customize selected shapes
 
@@ -221,7 +221,7 @@ layer.ShapeSettings = shapeSetting;
 
 {% endtabs %}
 
-![Customize selected shapes in Xamarin.Forms Maps](Images/ShapeCustomization_img3.jpeg)
+![](Images/ShapeCustomization_img3.jpeg)
 
 ### Events
 
@@ -248,7 +248,7 @@ The [`ShapeSelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/
 
 {% endtabs %}
 
-![Shape Selection Event support in Xamarin.Forms Maps](Images/ShapeCustomization_img4.jpeg)
+![](Images/ShapeCustomization_img4.jpeg)
 
 ## Sublayer
 
@@ -355,4 +355,4 @@ In the ShapeSelected event, the *BaseMapIndex* property has been used to change 
 
 {% endtabs %}
 
-![Drilldown support in Xamarin.Forms Maps](Images/Drilldown1.jpg)  ![](Images/Drilldown_Asia.jpg) 
+![](Images/Drilldown1.jpg)  ![](Images/Drilldown_Asia.jpg) 

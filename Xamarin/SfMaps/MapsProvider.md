@@ -444,6 +444,8 @@ The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Sync
 
 {% endtabs %}
 
+## Events
+
 The [`GeoCoordinateChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~GeoCoordinateChanged_EV.html) event is triggered while zooming and panning the maps.
 
 The following arguments can be gotten from the `ImageryLayer_GeoCoordinateChanged` event: 

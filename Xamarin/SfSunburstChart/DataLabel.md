@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Data labels of Syncfusion Xamarin.Forms SfSunburstChart
+title:  Data labels of Essential Xamarin.Forms SfSunburstChart
 description: This section describes the data label and its customization.
 platform: xamarin
 control: SfSunburstChart
@@ -33,7 +33,7 @@ The following code explains how to initialize data labels.
 
 {% endtabs %} 
 
-![Datalabel support in Xamarin.Forms Sunburst](Datalabel_images/DataLabel.jpg)
+![](Datalabel_images/DataLabel.jpg)
 
 ## Overflow Mode
 
@@ -65,7 +65,7 @@ The following code shows trimming the data labels.
 
 {% endtabs %} 
 
-![Trim support for labels in Xamarin.Forms Sunburst](Datalabel_images/Trim.jpg)
+![](Datalabel_images/Trim.jpg)
 
 ### Hide
 
@@ -93,7 +93,7 @@ The following code shows hiding the data labels.
 
 {% endtabs %} 
 
-![Hide support for labels in Xamarin.Forms Sunburst](Datalabel_images/Hide.jpg)
+![](Datalabel_images/Hide.jpg)
 
 ## Rotation Mode
 
@@ -126,7 +126,7 @@ The following code shows rotating a data label to an angle.
 
 {% endtabs %} 
 
-![Rotation support for labels in Xamarin.Forms Sunburst](Datalabel_images/DataLabel.jpg)
+![](Datalabel_images/DataLabel.jpg)
 
 ### Normal
 
@@ -155,7 +155,7 @@ The following code shows normal mode of data labels.
 
 {% endtabs %} 
 
-![Normal mode support for labels in Xamarin.Forms Sunburst](Datalabel_images/NormalMode.jpg)
+![](Datalabel_images/NormalMode.jpg)
 
 ## Customization
 
@@ -192,7 +192,7 @@ Data labels can be customized using the following properties.
 
 {% endtabs %} 
 
-![Label customization support in Xamarin.Forms Sunburst](Datalabel_images/Customization.png)
+![](Datalabel_images/Customization.png)
 
 ## Label text color
 
@@ -232,4 +232,4 @@ In the following code `Pineapple` palette is applied, hence data label takes the
 
 In the below image, first segment's data label is in black and others in white.
 
-![Label color customization support in Xamarin.Forms Sunburst](Datalabel_images/DataLabelColor.png)
+![](Datalabel_images/DataLabelColor.png)

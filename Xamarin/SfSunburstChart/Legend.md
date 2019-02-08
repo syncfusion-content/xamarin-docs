@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Legends of Syncfusion Xamarin.Forms SfSunburstChart
+title:  Legends of Essential Xamarin.Forms SfSunburstChart
 description: This section describes the legend and its customization.
 platform: xamarin
 control: SfSunburstChart
@@ -60,7 +60,8 @@ The following code shows how to control the visibility of legend.
 
 {% endtabs %} 
 
-![Legend visibility support in Xamarin.Forms Sunburst](Legend_images/Legend.jpg)
+![](Legend_images/Legend.jpg)
+
 
 ## Position
 
@@ -91,7 +92,8 @@ The following code shows customizing the legend position.
 
 {% endtabs %} 
 
-![Legend position support in Xamarin.Forms Sunburst](Legend_images/LegendPosition.jpg)
+![](Legend_images/LegendPosition.jpg)
+
 
 ## Legend icon types
 
@@ -130,7 +132,7 @@ The following predefined shapes are available in the IconType property:
 
 {% endtabs %} 
 
-![Legend icon types support in Xamarin.Forms Sunburst](Legend_images/IconType.jpg)
+![](Legend_images/IconType.jpg)
 
 ## Icon size customization
 
@@ -161,7 +163,7 @@ The size of the legend icon can be customized using the [`IconHeight`](https://h
 
 {% endtabs %} 
 
-![Legend icon size customization support in Xamarin.Forms Sunburst](Legend_images/IconSize.jpg)
+![](Legend_images/IconSize.jpg)
 
 ## Label style
 
@@ -209,7 +211,7 @@ Legend label can be customized using the following properties available in [`Lab
 
 {% endtabs %} 
 
-![Customize label support in Xamarin.Forms Sunburst](Legend_images/LabelStyle.png)
+![](Legend_images/LabelStyle.png)
 
 
 ## Item margin
@@ -225,6 +227,8 @@ Margin can be set to individual legend items using the [`ItemMargin`](https://he
          </sunburst:SunburstChartLegend>
   </sunburst:SfSunburstChart.Legend>
 
+
+
 {% endhighlight %}
 
 {% highlight C# %}
@@ -238,7 +242,7 @@ Margin can be set to individual legend items using the [`ItemMargin`](https://he
 
 {% endtabs %} 
 
-![Legend item margin support in Xamarin.Forms Sunburst](Legend_images/ItemMargin.png)
+![](Legend_images/ItemMargin.png)
 
 ## Toggle selection
 
@@ -276,4 +280,4 @@ Sunburst segments can also be selected via legends.
 
 {% endtabs %} 
 
-![Toggle selection support in Xamarin.Forms Sunburst](Legend_images/LegendSelection.png)
+![](Legend_images/LegendSelection.png)

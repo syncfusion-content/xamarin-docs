@@ -1,6 +1,6 @@
 ---
 layout: post
-title: User Interaction in Syncfusion SfMaps control for Xamarin.Forms
+title: User Interaction
 description: This section describes the user interaction on maps control.
 platform: xamarin
 control: SfMaps
@@ -79,7 +79,7 @@ this.Content = map;
 
 {% endtabs %}
 
-![Single selection support in Xamarin.Forms Maps](Images/UserInteraction_img1.jpeg)
+![](Images/UserInteraction_img1.jpeg)
 
 ### Multiple selection
 
@@ -145,7 +145,7 @@ this.Content = map;
 
 {% endtabs %}
 
-![Multiple selection in Xamarin.Forms Maps](Images/UserInteraction_img2.jpeg)
+![](Images/UserInteraction_img2.jpeg)
 
 ### Selected items
 
@@ -185,7 +185,7 @@ layer.SelectedItems.Remove(model[4]);
 
 {% endtabs %}
 
-![Selected items in Xamarin.Forms Maps](Images/UserInteraction_img3.jpeg)
+![](Images/UserInteraction_img3.jpeg)
 
 ## Zooming
 
@@ -197,23 +197,20 @@ The zooming feature enables you zoom in and zoom out the maps to show the in-dep
 
 [`MaxZoom`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~MaxZoom.html#): Sets the maximum level of zooming.
 
-[`ZoomLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~ZoomLevel.html): Sets zooming level to shapes.
-
 {% tabs %}
 
 {% highlight xml %}
 
- <maps:SfMaps EnableZooming="True" MinZoom="1" 
-                       MaxZoom="10"  ZoomLevel="2"/>
+ <maps:SfMaps x:Name="sfmap"  EnableZooming="True" MinZoom="1" 
+                       MaxZoom="10"   BackgroundColor="White" />
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfMaps map = new SfMaps(); 
-map.EnableZooming = true;
-map.MinZoom = 1;
-map.MaxZoom = 10;
-map.ZoomLevel = 2;
+ SfMaps map = new SfMaps(); 
+            map.EnableZooming = true;
+            map.MinZoom = 1;
+            map.MaxZoom = 10;
 
 {% endhighlight %}
 

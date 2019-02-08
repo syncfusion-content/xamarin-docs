@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Legend in Syncfusion Maps control for Xamarin.Forms
+title: Legend
 description: This section describes about maps legend.
 platform: xamarin
 control: SfMaps
@@ -86,7 +86,7 @@ The legend items will be placed in multiple rows if size of the total legend exc
 
 {% endtabs %}
 
-![Legend positioning in Xamarin.Forms Maps](Images/LegendWrapping.jpg)
+![](Images/LegendWrapping.jpg)
 
 
 ## Legend alignment
@@ -125,7 +125,9 @@ Legends can be aligned using the [`HorizontalAlignment`](https://help.syncfusion
 
 {% endtabs %}
 
-![Legend alignment support in Xamarin.Forms Maps](Images/LegendAlignment.jpg)
+![](Images/LegendAlignment.jpg)
+
+
 
 ## Icon customization
 
@@ -199,7 +201,8 @@ The icon shape can be customized using the [`LegendIcon`](https://help.syncfusio
 
 {% endtabs %}
 
-![Legend icon customization in Xamarin.Forms Maps](Images/LegendIconCustomization.jpg)
+![](Images/LegendIconCustomization.jpg)
+
 
 ## Item margin
 
@@ -233,7 +236,8 @@ The [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 {% endtabs %}
 
-![Legend item margin support in Xamarin.Forms Maps](Images/LegendItemMargin.jpg)
+![](Images/LegendItemMargin.jpg)
+
 
 ## Legend label
 
@@ -278,7 +282,7 @@ The following properties are used to customize the label of the legends:
 
 {% endtabs %}
 
-![Legend font customization in Xamarin.Forms Maps](Images/LegendFontCustomization.jpg)
+![](Images/LegendFontCustomization.jpg)
 
 
 The following code sample demonstrates how to add a legend to maps and customize it.
@@ -447,7 +451,7 @@ The following code sample demonstrates how to add a legend to maps and customize
 
 {% endtabs %}
 
-![Legend for bubbles support in Xamarin.Forms Maps](Images/LegendForBubble.jpg)
+![](Images/LegendForBubble.jpg)
 
 
 ### Legend for shapes
@@ -559,5 +563,5 @@ The following code sample demonstrates how to add a legend to maps and customize
 
 {% endtabs %}
 
-![Legend for shapes in Xamarin.Forms Maps](Images/LegendForShapes.png)
+![](Images/LegendForShapes.png)
 

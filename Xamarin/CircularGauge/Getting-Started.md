@@ -392,6 +392,6 @@ namespace CircularGauge
 
 The following circular gauge is created as a result of the above codes.
  
-![Xamarin circular gauge getting started](getting-started_images/default.png)
+![Getting Started in Xamarin.Forms Circular Gauge](getting-started_images/default.png)
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge-GettingStarted-768663630).

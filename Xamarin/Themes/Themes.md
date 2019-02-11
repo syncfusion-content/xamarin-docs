@@ -16,7 +16,7 @@ Syncfusion themes allow you apply uniform colors across all the Syncfusion contr
 
 ## Common theme resource dictionary
 
-This resource file contains keys and their respective color codes for all the controls; these keys will be mapped to our control properties. There will be seperate resource dictionary for each theme e.g. LightTheme, DarkTheme.  When this resource file is merged in application resources along with the control style resource dictionaries, themes will be applied to the controls used in application. You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys). 
+This resource file contains keys and their respective color codes for all the controls; these keys will be mapped to our control properties. There will be separate resource dictionary for each theme e.g. LightTheme, DarkTheme.  When this resource file is merged in application resources along with the control style resource dictionaries, themes will be applied to the controls used in application. You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys). 
 
 {% highlight xaml %}
 <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"

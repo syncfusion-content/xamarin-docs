@@ -816,7 +816,7 @@ as demonstrated in the following code sample.
              </sfPopup:PopupView.ContentTemplate>
         </sfPopup:PopupView>
     </sfPopup:SfPopupLayout.PopupView>
-</sfPopup:SfPopupLayout x:Name="popupLayout">
+</sfPopup:SfPopupLayout>
 {%endhighlight%}
 
 {% highlight c# %}
@@ -842,4 +842,4 @@ public MainPage()
 {% endhighlight %}
 {% endtabs %}
 
-Sample Link: You can download the above sample code by clicking [here]().
+Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/how-to-set-background-color-for-popupview-in-xamarin-popup/).

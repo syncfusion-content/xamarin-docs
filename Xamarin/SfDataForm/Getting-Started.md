@@ -616,6 +616,73 @@ dataForm.ColumnCount = 2;
 
 ![Setting column count to data form in Xamarin.Forms DataForm](SfDataForm_images/ColumnCount.png)
 
+## Launching SfDataForm inside a StackLayout
+
+StackLayout positions the child elements one after another either horizontally or vertically. Space of the [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) depends on the HorizontalOptions and VerticalOptions properties. Views in a stack layout can be sized based on space in the layout using layout options.
+
+The SfDataForm control can be loaded inside any layout such as [Grid](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.Grid?view=xamarin-forms), [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms), etc. When loading SfDataForm inside a `StackLayout`, set the [HorizontalOptions](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~HorizontalOptions.html) and [VerticalOptions](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~VerticalOptions.html) properties of SfDataForm, and set parent(StackLayout) of SfDataForm to `LayoutOptions.FillAndExpand`.
+
+Refer to the following code example to load the SfDataForm control inside a `StackLayout`. Set the VerticalOptions and HorizontalOptions of the `StackLayout` and SfDataForm to `FillAndExpand`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<StackLayout x:Name="stackLayout" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+    <dataForm:SfDataForm x:Name="dataForm" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+</StackLayout>
+
+{% endhighlight %}
+{% highlight c# %}
+
+public partial class MainPage : ContentPage
+{
+    StackLayout StackLayout;
+    SfDataForm dataForm;
+    public MainPage()
+    {
+		InitializeComponent();
+		stackLayout = new StackLayout();         
+		stackLayout.VerticalOptions = LayoutOptions.FillAndExpand;
+		stackLayout.HorizontalOptions = LayoutOptions.FillAndExpand;
+		dataForm = new SfDataForm();
+		dataForm.DataObject = new ContactInfo();
+		dataForm.VerticalOptions = LayoutOptions.FillAndExpand;
+		dataForm.HorizontalOptions = LayoutOptions.FillAndExpand;
+		stackLayout.Children.Add(dataform);
+		this.Content = stackLayout;
+	}
+}
+ 
+{% endhighlight %}
+{% endtabs %}
+
+![Launching data form inside a StackLayout Xamarin.Forms DataForm](SfDataForm_images/LayoutOptions.jpg)
+
+## Loading SfDataForm with customized height and width
+
+The SfDataForm  can be loaded with specific height and width inside different layouts using the [SfDataForm.HeightRequest](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~HeightRequest.html) and [SfDataForm.WidthRequest](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~WidthRequest.html) properties.
+
+{% tabs %}
+{% highlight xaml %}
+
+<dataForm:SfDataForm x:Name="dataForm" WidthRequest="300"
+        HeightRequest="300" 
+        VerticalOptions="CenterAndExpand"
+        HorizontalOptions="Center"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+dataForm.HeightRequest = 300;
+dataForm.WidthRequest = 300;
+dataForm.VerticalOptions = LayoutOptions.CenterAndExpand;
+dataForm.HorizontalOptions = LayoutOptions.Center;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading data form with customized height and width Xamarin.Forms DataForm](SfDataForm_images/CustomHeightWidth.jpg)
+
 ## Editing
 
 By default, the data form enables editing of the data field. You can disable editing by setting the [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~IsReadOnly.html) property of the data form. You can enable or disable editing for a particular data field by setting the [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~IsReadOnly.html) property of [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) in the `AutoGeneratingDataFormItem` event. The data field editing behavior can also be defined by using [EditableAttribute](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.EditableAttribute.html).

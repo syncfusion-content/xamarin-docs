@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing display Orientation of Syncfusion RangeSlider control for Xamarin.Forms
+title: Changing display Orientation of SfRangeSlider control
 description: Learn how to set orientation for RangeSlider
 platform: Xamarin
 control: RangeSlider
@@ -9,7 +9,7 @@ documentation: ug
 
 # Orientation
 
-SfRangeSlider provides options to display values and slider either horizontally or vertically.
+SfRangeSlider provides options to display values and slider to slide either horizontally or vertically.
 
 N> The default option is Vertical.
 

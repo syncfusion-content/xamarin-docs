@@ -9,9 +9,9 @@ documentation: ug
 
 # Orientation
 
-SfRangeSlider provides option to display the values and the slider either horizontally or vertically.
+SfRangeSlider provides options to display values and slider either horizontally or vertically.
 
-N> The default option is Horizontal.
+N> The default option is Vertical.
 
 ## Horizontal
 
@@ -19,19 +19,46 @@ N> The default option is Horizontal.
 
 {% highlight xaml %}
 
-	<range:SfRangeSlider x:Name="rangeslider" Orientation="Horizontal"/>
-	
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+xmlns:Range="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"
+xmlns:Local="clr-namespace:GettingStarted;assembly=GettingStarted"
+x:Class="GettingStarted.RangeSliderSample">
+	<ContentPage.Content>
+		<Range:SfRangeSlider  Orientation="Horizontal"/>
+	</Range:SfRangeSlider>
+	</ContentPage.Content>
+</ContentPage>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-	rangeSlider.Orientation=Orientation.Horizontal;
+using System.Collections.ObjectModel;
+using Syncfusion.XForms.SfRangeSlider;
+using Xamarin.Forms;
+namespace GettingStarted
+{
+	/// <summary>
+    /// Range slider sample.
+    /// </summary>
+    public partial class RangeSliderSample : ContentPage
+    {
+        public RangeSliderSample()
+        {
+            InitializeComponent();
+			SfRangeSlider rangeSlider = new SfRangeSlider();
+			rangeSlider.Orientation=Orientation.Horizontal;
+            this.Content = rangeSlider;
+        }
+    }
+}	
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/RangeSlider-Horizontal.png)
+![Horizantal image](images/RangeSlider-Horizontal.png)
 
 ## Vertical
 
@@ -39,18 +66,45 @@ N> The default option is Horizontal.
 
 {% highlight xaml %}
 
-	<range:SfRangeSlider x:Name="rangeslider" Orientation="Vertical"/>
-	
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+xmlns:Range="clr-namespace:Syncfusion.SfRangeSlider.XForms;assembly=Syncfusion.SfRangeSlider.XForms"
+xmlns:Local="clr-namespace:GettingStarted;assembly=GettingStarted"
+x:Class="GettingStarted.RangeSliderSample">
+	<ContentPage.Content>
+		<Range:SfRangeSlider  Orientation="Vertical"/>
+	</Range:SfRangeSlider>
+	</ContentPage.Content>
+</ContentPage>
+
 {% endhighlight %}
 
 {% highlight c# %}
 
-	rangeSlider.Orientation=Orientation.Vertical;
+using System.Collections.ObjectModel;
+using Syncfusion.XForms.SfRangeSlider;
+using Xamarin.Forms;
+namespace GettingStarted
+{
+	/// <summary>
+    /// Range slider sample.
+    /// </summary>
+    public partial class RangeSliderSample : ContentPage
+    {
+        public RangeSliderSample()
+        {
+            InitializeComponent();
+			SfRangeSlider rangeSlider = new SfRangeSlider();
+			rangeSlider.Orientation=Orientation.Vertical;
+            this.Content = rangeSlider;
+        }
+    }
+}	
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/RangeSlider-Vertical.png)
+![Vertical image](images/RangeSlider-Vertical.png)
 
 

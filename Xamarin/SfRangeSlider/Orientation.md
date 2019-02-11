@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Changing display Orientation of SfRangeSlider control
-description: Learn how to set orientation for RangeSlider
+title: Changing display Orientation of Syncfusion SfRangeSlider control
+description: Learn how to set orientation for SfRangeSlider
 platform: Xamarin
-control: RangeSlider
+control: SfRangeSlider
 documentation: ug
 ---
 

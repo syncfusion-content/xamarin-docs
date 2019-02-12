@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various features of Syncfusion NavigationDrawer control for Xamarin.Forms
+title: Various features of Syncfusion NavigationDrawer control.
 description: Learn how to set content view, drawer content view, footer view, header view, drawer size in NavigationDrawer.
 platform: Xamarin
 control: NavigationDrawer
@@ -237,4 +237,4 @@ public MainPage()
 
         N> It is mandatory to set ContentView for the SfNavigationDrawer on initialising.
 
-![](Images/MainContent.png)
+![contentview](Images/MainContent.png)

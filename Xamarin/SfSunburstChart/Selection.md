@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection feature of Essential Xamarin.Forms SfSunburstChart
+title: Selection feature of Syncfusion Xamarin.Forms SfSunburstChart
 description: This section describes the segment selection.
 platform: xamarin
 control: SfSunburstChart
@@ -10,7 +10,6 @@ documentation: ug
 # Selection
 
 The sunburst chart provides support to select or highlight the segments. Selection can be enabled with the help of [`EnableSelection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SelectionSettings~EnableSelection.html) property.
-
 
 ## Selection type
 
@@ -45,7 +44,7 @@ The following code shows the `Child` selection type.
 
 {% endtabs %} 
 
-![](Selection_images/Child.jpg)
+![Selection type as child support in Xamarin.Forms Sunburst](Selection_images/Child.jpg)
 
 The following code shows the `Group` selection type.
 
@@ -72,7 +71,7 @@ The following code shows the `Group` selection type.
 
 {% endtabs %} 
 
-![](Selection_images/Group.jpg)
+![Selection type as group support in Xamarin.Forms Sunburst](Selection_images/Group.jpg)
 
 The following code shows the `Parent` selection type.
 
@@ -100,7 +99,7 @@ The following code shows the `Parent` selection type.
 
 {% endtabs %} 
 
-![](Selection_images/Parent.jpg)
+![Selection type as parent support in Xamarin.Forms Sunburst](Selection_images/Parent.jpg)
 
 The following code shows the `Single` selection type.
 
@@ -127,7 +126,7 @@ The following code shows the `Single` selection type.
 
 {% endtabs %} 
 
-![](Selection_images/Single.jpg)
+![Selection type as single support in Xamarin.Forms Sunburst](Selection_images/Single.jpg)
 
 ## Selection display mode
 
@@ -165,7 +164,7 @@ This mode highlights the selected segment with the opacity specified in the [`Op
 
 {% endtabs %} 
 
-![](Selection_images/Group.jpg)
+![Selection display mode as opacity in Xamarin.Forms Sunburst](Selection_images/Group.jpg)
 
 ### Color
 
@@ -195,7 +194,7 @@ This mode highlights the selected segment using the brush specified in the [`Sel
 
 {% endtabs %} 
 
-![](Selection_images/ColorSelection.png)
+![Selection display mode as color in Xamarin.Forms Sunburst](Selection_images/ColorSelection.png)
 
 ### Stroke
 
@@ -226,7 +225,7 @@ This mode highlights the selected segment by applying stroke to it. The color an
 
 {% endtabs %} 
 
-![](Selection_images/StrokeSelection.png)
+![Selection display mode as stroke in Xamarin.Forms Sunburst](Selection_images/StrokeSelection.png)
 
 ## Events
 
@@ -296,4 +295,4 @@ private void SunburstChart_SelectionChanged(object sender, SelectionChangedEvent
 
 {% endtabs %} 
 
-![](Selection_images/Event.png)
+![Selection changed event support in Xamarin.Forms Sunburst](Selection_images/Event.png)

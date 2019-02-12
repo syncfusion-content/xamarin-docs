@@ -408,7 +408,7 @@ The following code is used to create the `Annotations`.
 
 {% endtabs %}
 
-![](annotations_images/annotations.png)
+![Annotation support in Xamarin.Forms Circular Gauge](annotations_images/annotations.png)
 
 ##  Setting image annotation
 
@@ -518,7 +518,7 @@ Annotations provide options to add any image over the gauge control with respect
 
 {% endtabs %}
 
-![](annotations_images/image_annotation.PNG)
+![Annotation image support in Xamarin.Forms Circular Gauge](annotations_images/image_annotation.PNG)
 
 ##  Setting text annotation
 
@@ -528,7 +528,7 @@ You can add any text over the gauge control to enhance the readability. You can 
 
 {% highlight xaml %}
 
-    <gauge:SfCircularGauge HeightRequest="500" WidthRequest="500" BackgroundColor="White" Margin="20">
+    <gauge:SfCircularGauge HeightRequest="500" WidthRequest="500">
       
         <gauge:SfCircularGauge.Headers>
             <gauge:Header Text="13M" Position="0.5, 0.5" ForegroundColor="#0682F6" FontAttributes="Bold" TextSize="20"/>
@@ -562,12 +562,8 @@ You can add any text over the gauge control to enhance the readability. You can 
 {% highlight c# %}
 
             SfCircularGauge gauge = new SfCircularGauge();
-            this.BackgroundColor = Color.White;
-
             gauge.HeightRequest = 500;
             gauge.WidthRequest = 500;
-            gauge.BackgroundColor = Color.White;
-            gauge.Margin = new Thickness(20);
 
             ObservableCollection<Scale> scales = new ObservableCollection<Syncfusion.SfGauge.XForms.Scale>();
 
@@ -630,4 +626,213 @@ You can add any text over the gauge control to enhance the readability. You can 
 
 {% endtabs %}
 
-![](annotations_images/text_annotation.PNG)
+![Text annotation support in Xamarin.Forms Circular Gauge](annotations_images/text_annotation.PNG)
+
+## Set margin to annotation
+
+You can adjust annotation by specifying the [`ViewMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~ViewMargin.html) property in pixel, which adjusts annotation elements from their current position.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<gauge:SfCircularGauge>
+        <gauge:SfCircularGauge.Annotations>
+            <gauge:GaugeAnnotation  ViewMargin="10,50">
+                <gauge:GaugeAnnotation.View>
+                    <Label Text="800 GB" TextColor="Black" FontSize="25"/>
+                </gauge:GaugeAnnotation.View>
+            </gauge:GaugeAnnotation>
+        </gauge:SfCircularGauge.Annotations>
+        <gauge:SfCircularGauge.Scales>
+            <gauge:Scale  ShowLabels="False" ShowTicks="False" RimThickness="25" RadiusFactor="1" RimColor="#e0e0e0"
+                          StartAngle="90" SweepAngle="360" StartValue="0" EndValue="100" Interval="10">
+                <gauge:Scale.Pointers>
+                    <gauge:RangePointer Value="80" Offset="1" Thickness="25" RangeCap="Both" Color="#01bdae"/>
+                </gauge:Scale.Pointers>
+            </gauge:Scale>
+        </gauge:SfCircularGauge.Scales>
+</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge gauge = new SfCircularGauge();
+ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+Scale scale = new Scale();
+scale.ShowLabels = false;
+scale.ShowTicks = false;
+scale.RimThickness = 25;
+scale.RadiusFactor = 1;
+scale.RimColor = Color.FromHex("#e0e0e0");
+scale.StartAngle = 90;
+scale.SweepAngle = 360;
+scale.StartValue = 0;
+scale.EndValue = 100;
+scale.Interval = 10;
+
+RangePointer pointer = new RangePointer();
+pointer.Value = 80;
+pointer.Offset = 1;
+pointer.Thickness = 25;
+pointer.RangeCap = RangeCap.Both;
+pointer.Color = Color.FromHex("#01bdae");
+scale.Pointers.Add(pointer);
+scales.Add(scale);
+
+GaugeAnnotation annotation = new GaugeAnnotation();
+annotation.ViewMargin = new Point(10, 50);
+Label label = new Label();
+label.Text = "800 GB";
+label.FontSize = 25;
+label.TextColor = Color.Black;
+annotation.View = label;
+gauge.Annotations.Add(annotation);
+gauge.Scales = scales;
+Content = gauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adjust annotation in Xamarin.Forms Circular Gauge](annotations_images/viewmargin.png)
+
+## Alignment of annotation
+
+You can align annotations to the `Start`, `Center` and `End` using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~HorizontalAlignment.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~VerticalAlignment.html) properties.
+
+### Setting horizontal alignment
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<gauge:SfCircularGauge>
+        <gauge:SfCircularGauge.Annotations>
+            <gauge:GaugeAnnotation  HorizontalAlignment="Start">
+                <gauge:GaugeAnnotation.View>
+                    <Label Text="800 GB" TextColor="Black" FontSize="25"/>
+                </gauge:GaugeAnnotation.View>
+            </gauge:GaugeAnnotation>
+        </gauge:SfCircularGauge.Annotations>
+        <gauge:SfCircularGauge.Scales>
+            <gauge:Scale  ShowLabels="False" ShowTicks="False" RimThickness="25" RadiusFactor="1"                       RimColor="#e0e0e0"StartAngle="90" SweepAngle="360" StartValue="0"                             EndValue="100" Interval="10">
+                <gauge:Scale.Pointers>
+                    <gauge:RangePointer Value="80" Offset="1" Thickness="25" RangeCap="Both" Color="#01bdae"/>
+                </gauge:Scale.Pointers>
+            </gauge:Scale>
+        </gauge:SfCircularGauge.Scales>
+</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge gauge = new SfCircularGauge();
+ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+Scale scale = new Scale();
+scale.ShowLabels = false;
+scale.ShowTicks = false;
+scale.RimThickness = 25;
+scale.RadiusFactor = 1;
+scale.RimColor = Color.FromHex("#e0e0e0");
+scale.StartAngle = 90;
+scale.SweepAngle = 360;
+scale.StartValue = 0;
+scale.EndValue = 100;
+scale.Interval = 10;
+
+RangePointer pointer = new RangePointer();
+pointer.Value = 80;
+pointer.Offset = 1;
+pointer.Thickness = 25;
+pointer.RangeCap = RangeCap.Both;
+pointer.Color = Color.FromHex("#01bdae");
+scale.Pointers.Add(pointer);
+scales.Add(scale);
+
+GaugeAnnotation annotation = new GaugeAnnotation();
+annotation.HorizontalAlignment = ViewAlignment.Start;
+Label label = new Label();
+label.Text = "800 GB";
+label.FontSize = 25;
+label.TextColor = Color.Black;
+annotation.View = label;
+gauge.Annotations.Add(annotation);
+gauge.Scales = scales;
+Content = gauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Horizontal alignment for Annotation in Xamarin.Forms Circular Gauge](annotations_images/horizontalalignment.jpg)
+
+### Setting vertical alignment
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<gauge:SfCircularGauge  BackgroundColor="White" Margin="20">
+        <gauge:SfCircularGauge.Annotations>
+            <gauge:GaugeAnnotation  VerticalAlignment="Start">
+                <gauge:GaugeAnnotation.View>
+                    <Label Text="800 GB" TextColor="Black" FontSize="25"/>
+                </gauge:GaugeAnnotation.View>
+            </gauge:GaugeAnnotation>
+        </gauge:SfCircularGauge.Annotations>
+        <gauge:SfCircularGauge.Scales>
+            <gauge:Scale  ShowLabels="False" ShowTicks="False" RimThickness="25" RadiusFactor="1" RimColor="#e0e0e0"
+                          StartAngle="90" SweepAngle="360" StartValue="0" EndValue="100" Interval="10">
+                <gauge:Scale.Pointers>
+                    <gauge:RangePointer Value="80" Offset="1" Thickness="25" RangeCap="Both" Color="#01bdae"/>
+                </gauge:Scale.Pointers>
+            </gauge:Scale>
+        </gauge:SfCircularGauge.Scales>
+</gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCircularGauge gauge = new SfCircularGauge();
+ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+Scale scale = new Scale();
+scale.ShowLabels = false;
+scale.ShowTicks = false;
+scale.RimThickness = 25;
+scale.RadiusFactor = 1;
+scale.RimColor = Color.FromHex("#e0e0e0");
+scale.StartAngle = 90;
+scale.SweepAngle = 360;
+scale.StartValue = 0;
+scale.EndValue = 100;
+scale.Interval = 10;
+
+RangePointer pointer = new RangePointer();
+pointer.Value = 80;
+pointer.Offset = 1;
+pointer.Thickness = 25;
+pointer.RangeCap = RangeCap.Both;
+pointer.Color = Color.FromHex("#01bdae");
+scale.Pointers.Add(pointer);
+scales.Add(scale);
+
+GaugeAnnotation annotation = new GaugeAnnotation();
+annotation.VerticalAlignment = ViewAlignment.Start;
+Label label = new Label();
+label.Text = "800 GB";
+label.FontSize = 25;
+label.TextColor = Color.Black;
+annotation.View = label;
+gauge.Annotations.Add(annotation);
+gauge.Scales = scales;
+Content = gauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Vertical alignment for Annotation in Xamarin.Forms Circular Gauge](annotations_images/verticalalignment.jpg)

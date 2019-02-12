@@ -47,4 +47,4 @@ The circular gauge control is highly customizable control with variety of simple
 
  Annotations allows you to mark the specific area of interest in a circular gauge. You can place custom views, text, and images as annotations by using the annotations feature.
 
-![](overview_images/overview.png)
+![Circular Gauge Overview](overview_images/overview.png)

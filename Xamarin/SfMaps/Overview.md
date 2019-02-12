@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview 
+title: Overview in Syncfusion Maps control for Xamarin.Forms
 description: Overview and Key features of Maps control in Xamarin.Forms
 platform: xamarin
 control: SfMaps
@@ -11,7 +11,7 @@ documentation: ug
 
 The maps control for Xamarin.Forms provides a graphical representation of geographical data. It is used to represent the statistical data of a particular geographical area on earth by panning and zooming. The maps control supports enhanced data visualization with bubbles and labels using data bound to map.
 
-![](Images/Overview.png)
+![Overview in Xamarin.Forms Maps](Images/Overview.png)
 
 ## Key features
 

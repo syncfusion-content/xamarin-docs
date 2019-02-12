@@ -85,7 +85,7 @@ schedule.MonthViewSettings = monthViewSettings;
 ![Month appointment diplay count in schedule xamarin forms](monthview_images/appointmentdisplay_count.png)
 
 #### Disable navigation to DayView
-You can disable the navigation to day view by triggering the CellTappedEvent and set the argument `CancelNavigation` value as true. `IsMoreAppointments` argument is used to determine whether the month cell more appointments count element has been tapped or not while the appointment display mode as Appointment.
+You can disable the navigation to day view by triggering the CellTappedEvent and set the argument [CancelNavigation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~CancelNavigation.html) value as true. [IsMoreAppointments](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~IsMoreAppointments.html) argument is used to determine whether the month cell more appointments count element has been tapped or not while the appointment display mode as Appointment.
 
 {% tabs %}
 {% highlight c# %}
@@ -149,14 +149,14 @@ schedule.MonthViewSettings = monthViewSettings;
 - If you enable ShowAgendaView and ShowAppointmentsInline properties together, both of the views (Agenda View and Appointment Inline View) will be displayed in schedule month view.
 
 ### Agenda View Appearance
-You can customize the Agenda view appointment and Selected Date Text by setting [AgendaViewStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewStyle.html) property of `MonthViewSettings`. Agenda view [DateFontColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontColor.html) ,[HeaderHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~HeaderHeight.html), [DateFontFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontFormat.html) , [DateFontAttributes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontAttributes.html) , [DateFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontSize.html) , [DateFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontFamily.html) , [TimeFontColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontColor.html) , [TimeFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontSize.html) , [TimeFontAttributes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontAttributes.html) , [TimeFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontFamily.html) , [TimeFontFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontFormat.html) , [SubjectFontColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontColor.html) , [SubjectFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontSize.html) , [SubjectFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontFamily.html) , [SubjectFontAttributes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontAttributes.html) , [BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~BackgroundColor.html) can be customized using AgendaViewStyle properties.
+You can customize the Agenda view appointment and Selected Date Text by setting [AgendaViewStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewStyle.html) property of `MonthViewSettings`. Agenda view [DateFontColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontColor.html) ,[HeaderHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~HeaderHeight.html), [DateFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFormat.html) , [DateFontAttributes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontAttributes.html) , [DateFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontSize.html) , [DateFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontFamily.html) , [TimeFontColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontColor.html) , [TimeFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontSize.html) , [TimeFontAttributes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontAttributes.html) , [TimeFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontFamily.html) , [TimeFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFormat.html) , [SubjectFontColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontColor.html) , [SubjectFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontSize.html) , [SubjectFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontFamily.html) , [SubjectFontAttributes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontAttributes.html) , [BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~BackgroundColor.html) can be customized using AgendaViewStyle properties.
 {% tabs %}
 {% highlight xaml %}
 <schedule:SfSchedule ScheduleView="MonthView" x:Name="schedule">
     <schedule:SfSchedule.MonthViewSettings>
         <schedule:MonthViewSettings ShowAgendaView="true">
             <schedule:MonthViewSettings.AgendaViewStyle>
-                <schedule:AgendaViewStyle DateFontColor="Purple" HeaderHeight="40" DateFontFormat="dd MMMM, yyyy" DateFontAttributes="Bold" DateFontSize="15" DateFontFamily="Arial" TimeFontColor="Red" TimeFontSize="13" TimeFontFamily="Arial" TimeFontFormat="hh a"
+                <schedule:AgendaViewStyle DateFontColor="Purple" HeaderHeight="40" DateFormat="dd MMMM, yyyy" DateFontAttributes="Bold" DateFontSize="15" DateFontFamily="Arial" TimeFontColor="Red" TimeFontSize="13" TimeFontFamily="Arial" TimeFormat="hh a"
                     TimeFontAttributes="Bold" BackgroundColor="#DEF0DE" SubjectFontColor="Blue" SubjectFontSize="13" SubjectFontFamily="Arial" SubjectFontAttributes="Bold" />
             </schedule:MonthViewSettings.AgendaViewStyle>
         </schedule:MonthViewSettings>
@@ -173,7 +173,7 @@ AgendaViewStyle agendaViewStyle = new AgendaViewStyle();
 // Customize selected Date Text
 agendaViewStyle.DateFontColor = Color.Purple;
 agendaViewStyle.HeaderHeight = 40;
-agendaViewStyle.DateFontFormat = "dd MMMM, yyyy";
+agendaViewStyle.DateFormat = "dd MMMM, yyyy";
 agendaViewStyle.DateFontAttributes = FontAttributes.Bold;
 agendaViewStyle.DateFontSize = 15;
 agendaViewStyle.DateFontFamily = "Arial";
@@ -182,7 +182,7 @@ agendaViewStyle.TimeFontColor = Color.Red;
 agendaViewStyle.TimeFontSize = 13;
 agendaViewStyle.TimeFontAttributes = FontAttributes.None;
 agendaViewStyle.TimeFontFamily = "Arial";
-agendaViewStyle.TimeFontFormat = "hh a";
+agendaViewStyle.TimeFormat = "hh a";
 agendaViewStyle.SubjectFontColor = Color.Blue;
 agendaViewStyle.SubjectFontSize = 13;
 agendaViewStyle.SubjectFontFamily = "Arial";
@@ -499,7 +499,7 @@ schedule.MonthViewSettings = monthViewSettings;
 ![Month view header format in schedule xamarin forms](monthview_images/DateFormat_Month.png)
 
 ### ViewHeader Tapped Event
-You can handle single tap action of ViewHeader by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
+You can handle single tap action of ViewHeader by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs~Datetime.html) details in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -806,7 +806,7 @@ public class MonthCellDateBehavior : Behavior<Label>
 ![Month cell customization using Template selector in schedule xamarin forms](monthview_images/datatemplateselector_month.png)
 
 ## Getting Inline Appointment details
-Using [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~Appointment.html) argument in the [MonthInlineAppointmentTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs.html) of [MonthInlineAppointmentTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MonthInlineAppointmentTapped_EV.html) event, you can get the details Month Inline Appointments details while tapping the specific appointment. You can do the required functions while tapping the inline appointment using this event. 
+Using [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~Appointment.html) argument in the [MonthInlineAppointmentTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs.html) of [MonthInlineAppointmentTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MonthInlineAppointmentTapped_EV.html) event, you can get the Month Inline Appointments details while tapping the specific appointment, and you can get the selected date by using the [selectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~selectedDate.html) property. You can do the required functions while tapping the inline appointment using this event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -877,7 +877,7 @@ Get the complete sample for this [here](https://github.com/SyncfusionExamples/Cu
 FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.
 
 ### Using custom view
-You can set custom view for the inline view by using [InlineView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~InlineViewProperty.html) property of `Schedule` 
+You can set custom view for the inline view by using [InlineView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~InlineView.html) property of `Schedule` 
 {% tabs %}
 {% highlight c# %}
 SfSchedule schedule = new SfSchedule();

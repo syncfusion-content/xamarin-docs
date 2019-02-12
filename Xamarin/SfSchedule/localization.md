@@ -109,7 +109,7 @@ The procedure for creating Resources(.resw) file is as follows:
 ![](Localization_images/Localization_XFUWP.png)
 
 ## Localizing custom strings from pcl
-You can localize the custom strings (All Day, No Events) used in the schedule control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale using DependencyService instead of device language. In the below code, we have set French as Schedule locale as well as custom strings.
+You can localize the custom strings (All Day, No Events) used in the schedule control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale using DependencyService instead of device language, you need to create new resource manager based on the resources, and need to set this to [Manager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResourceManager~Manager.html) property of `ScheduleResourceManager`. In the below code, we have set French as Schedule locale as well as custom strings.
 
 {% tabs %}
 {% highlight c# %}

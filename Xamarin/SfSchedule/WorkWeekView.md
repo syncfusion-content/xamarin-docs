@@ -91,7 +91,7 @@ viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-R
 Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
 
 ### ViewHeader Date Format
-You can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DateFormat.html) and [DayFormat](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayLabelSettings~DayFormat.html) properties of `WorkWeekLabelSettings`.
+You can customize the date and day format of `SfSchedule` ViewHeader by using [DateFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekLabelSettings~DateFormat.html) and [DayFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekLabelSettings~DayFormat.html) properties of `WorkWeekLabelSettings`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -126,7 +126,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 ![Schedule customizing date format work week view](daymodule_images/DateFormat_WorkWeek.png)
 
 ### ViewHeader Tapped Event
-You can handle single tap action of ViewHeader by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) details in it.
+You can handle single tap action of ViewHeader by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs~Datetime.html) details in it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -264,6 +264,15 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 * The number of time slots will be calculated based on total minutes of a day and time interval (total minutes of a day ((start hour - end hour) * 60) / time interval).
 * If the custom time interval is given, then the number of time slots calculated based on given time interval should result in integer value, otherwise given time interval will be neglected and default time interval (60 minutes) will be considered.
 * If the custom start hour and end hour is given, then the number of time slots calculated based on given start hour, end hour should result in integer value, otherwise given end hour will be rounded off. For example, if StartHour is 7.2 (07:12AM), EndHour is 18.6 (06:36AM) and TimeInterval is 60 minutes, then EndHour will be rounded off to 18.2 (06:12PM).
+
+## Changing NonWorking Days
+You can customize the Non-Working days of a week by using [NonWorkingDays] property of `WorkWeekViewSettings`.
+var nonWorkingDays = new ObservableCollection<DayOfWeek>();
+nonWorkingDays.Add(DayOfWeek.Monday);
+nonWorkingDays.Add(DayOfWeek.Friday);
+var workWeekViewSettings = new WorkWeekViewSettings();
+workWeekViewSettings.NonWorkingsDays = nonWorkingDays;
+schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ## Timeslot Appearance
 You can customize the appearance of timeslots in `WeekView`.

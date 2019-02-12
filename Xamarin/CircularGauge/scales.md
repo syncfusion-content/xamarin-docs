@@ -368,7 +368,7 @@ It helps you to add multiple scales to the same circular gauge. You can customiz
 
 ## Events
 
-You can change the default label by hooking the [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelCreated_EV.html) event. Based on your requirements, the labels can be changed by using the [`LabelContent`] property of [`LabelCreatedEventArgs`].
+You can change the default label by hooking the [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelCreated_EV.html) event. Based on your requirements, the labels can be changed by using the `LabelContent` property of `LabelCreatedEventArgs`.
 
 {% tabs %}
 

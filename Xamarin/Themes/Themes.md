@@ -16,13 +16,51 @@ Syncfusion themes allow you apply uniform colors across all the Syncfusion contr
 
 ## Common theme resource dictionary
 
-This resource file contains keys and their respective values for all the controls; these keys will be mapped to our control properties. When this resource file is merged in application resources, themes will be applied to the controls used in application. 
+This resource file contains keys and their respective color codes for all the controls; these keys will be mapped to our control properties. There will be separate resource dictionary for each theme e.g. LightTheme, DarkTheme.  When this resource file is merged in application resources along with the control style resource dictionaries, themes will be applied to the controls used in application. You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys). 
+
+{% highlight xaml %}
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+        <ResourceDictionary>
+            < ResourceDictionary.MergedDictionaries>
+                <syncCore:LightTheme />
+                .........
+            </ ResourceDictionary.MergedDictionaries>
+        </ ResourceDictionary >
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
 
 ## Control style resource dictionaries
 
 Each control has a control style resource dictionary, in which the actual mapping between the keys declared in common theme resource dictionary and mapping between the properties of the control are done.
 
 Both the common theme resource dictionary and the control style resource dictionaries need to be merged for the controls used in application to apply theme.
+
+{% highlight xaml %}
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+        <ResourceDictionary>
+            < ResourceDictionary.MergedDictionaries>
+                ......
+                <textinputlayout:SfTextInputLayoutStyles/>
+            </ ResourceDictionary.MergedDictionaries>
+        </ ResourceDictionary >
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
 
 ## Merging theme dictionaries
 
@@ -89,7 +127,7 @@ The common theme resource dictionary has the following set of keys, which are ma
 * SyncWarningColor
 * SyncInfoColor
 
-In addition to this, you can also override the keys that are specific to the controls.
+In addition to this, you can also override the keys that are specific to the controls. You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
 
 The following section explains how to override both the common and control specific keys.
 
@@ -124,6 +162,8 @@ You can override the default values for the keys as needed by changing the value
 You can customize the appearance of the controls without merging common theme resource and control style resource dictionaries in application resources.
 
 In the following example, the UI elements of SfTextInputLayout are customized by merging the resource with the 'SfTextInputLayoutTheme' key name, and values are set to the required keys in the next line. Similar to this, you can customize the appearance of other controls by merging the resource with the "ControlName" + "Theme" key name and setting values to the required keys of the control in the next line. 
+
+You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
 
 {% highlight xaml %}
 

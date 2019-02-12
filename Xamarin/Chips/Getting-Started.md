@@ -78,6 +78,7 @@ To deploy the `SfChip` in `Release` mode, you need to initialize the SfChip asse
 	// In App.xaml.cs 
 
 using Syncfusion.XForms.UWP.Buttons;
+
 using Syncfusion.XForms.UWP.Border;
 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
@@ -105,6 +106,7 @@ To deploy the `SfChipGroup` in `Release` mode, you need to initialize the SfChip
 	// In App.xaml.cs 
 
 using Syncfusion.XForms.UWP.Buttons;
+
 using Syncfusion.XForms.UWP.Border;
 
 protected override void OnLaunched(LaunchActivatedEventArgs e)

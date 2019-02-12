@@ -76,15 +76,19 @@ To deploy the `SfChip` in `Release` mode, you need to initialize the SfChip asse
 {% highlight c# %}
 
 	// In App.xaml.cs 
+
+using Syncfusion.XForms.UWP.Buttons;
+using Syncfusion.XForms.UWP.Border;
+
 protected override void OnLaunched(LaunchActivatedEventArgs e)
 { 
 	… 
 	if (rootFrame == null) 
 	{ 
 		List<Assembly> assembliesToInclude = new List<Assembly>();
-    assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfButtonRenderer).GetTypeInfo().Assembly);
-	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfChipRenderer).GetTypeInfo().Assembly); 
-
+        assembliesToInclude.Add(typeof(SfButtonRenderer).GetTypeInfo().Assembly);
+	    assembliesToInclude.Add(typeof(SfChipRenderer).GetTypeInfo().Assembly); 
+		assembliesToInclude.Add(typeof(SfBorderRenderer).GetTypeInfo().Assembly);
 		Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
 	} 
 	… 
@@ -99,15 +103,19 @@ To deploy the `SfChipGroup` in `Release` mode, you need to initialize the SfChip
 {% highlight c# %}
 
 	// In App.xaml.cs 
+
+using Syncfusion.XForms.UWP.Buttons;
+using Syncfusion.XForms.UWP.Border;
+
 protected override void OnLaunched(LaunchActivatedEventArgs e)
 { 
 	… 
 	if (rootFrame == null) 
 	{ 
 		List<Assembly> assembliesToInclude = new List<Assembly>();
-    assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfButtonRenderer).GetTypeInfo().Assembly);
-	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfChipGroupRenderer).GetTypeInfo().Assembly); 
-
+    	assembliesToInclude.Add(typeof(SfButtonRenderer).GetTypeInfo().Assembly);
+		assembliesToInclude.Add(typeof(SfChipGroupRenderer).GetTypeInfo().Assembly);
+		assembliesToInclude.Add(typeof(SfBorderRenderer).GetTypeInfo().Assembly); 
 		Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
 	} 
 	… 

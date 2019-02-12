@@ -235,6 +235,6 @@ public MainPage()
 
         {% endhighlight %}
 
-        N> It is mandatory to set ContentView for the SfNavigationDrawer on initialising.
+        N> It is mandatory to set ContentView for the SfNavigationDrawer on initializing.
 
 ![contentview](Images/MainContent.png)

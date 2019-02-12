@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization of Schedule
+title: Localization of Schedule | Syncfusion
 description: How to Localize the contents of Schedule control.
 platform: xamarin
 control: SfSchedule

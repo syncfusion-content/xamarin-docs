@@ -37,9 +37,7 @@ PCL
 <td>
 
 Syncfusion.SfChart.XForms.dll</br>
-
 Syncfusion.Core.XForms.dll</br>
-
 Syncfusion.Licensing.dll
 
 </td>
@@ -51,13 +49,9 @@ Android
 <td>
 
 Syncfusion.SfChart.XForms.Android.dll</br>
-
 Syncfusion.SfChart.XForms.dll</br>
-
 Syncfusion.Core.XForms.dll</br>
-
 Syncfusion.Core.XForms.Android.dll</br>
-
 Syncfusion.Licensing.dll
 
 </td>
@@ -69,13 +63,9 @@ iOS
 <td>
 
 Syncfusion.SfChart.XForms.iOS.dll</br>
-
 Syncfusion.SfChart.XForms.dll</br>
-
 Syncfusion.Core.XForms.dll</br>
-
 Syncfusion.Core.XForms.iOS.dll</br>
-
 Syncfusion.Licensing.dll
 
 </td>
@@ -87,13 +77,9 @@ macOS
 <td>
 
 Syncfusion.SfChart.XForms.macOS.dll</br>
-
 Syncfusion.SfChart.XForms.dll</br>
-
 Syncfusion.Core.XForms.dll</br>
-
 Syncfusion.Core.XForms.macOS.dll</br>
-
 Syncfusion.Licensing.dll
 
 </td>
@@ -105,15 +91,10 @@ UWP
 <td>
 
 Syncfusion.SfChart.UWP.dll</br>
-
 Syncfusion.SfChart.XForms.UWP.dll</br>
-
 Syncfusion.SfChart.XForms.dll</br>
-
 Syncfusion.Core.XForms.dll</br>
-
 Syncfusion.Core.XForms.UWP.dll</br>
-
 Syncfusion.Licensing.dll
 
 </td>

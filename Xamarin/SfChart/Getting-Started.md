@@ -35,11 +35,13 @@ Location : {Installed location}/{version}/Xamarin/lib
 PCL
 </td>
 <td>
+
 Syncfusion.SfChart.XForms.dll</br>
 
 Syncfusion.Core.XForms.dll</br>
 
 Syncfusion.Licensing.dll
+
 </td>
 </tr>
 <tr>
@@ -47,6 +49,7 @@ Syncfusion.Licensing.dll
 Android
 </td>
 <td>
+
 Syncfusion.SfChart.XForms.Android.dll</br>
 
 Syncfusion.SfChart.XForms.dll</br>
@@ -56,6 +59,7 @@ Syncfusion.Core.XForms.dll</br>
 Syncfusion.Core.XForms.Android.dll</br>
 
 Syncfusion.Licensing.dll
+
 </td>
 </tr>
 <tr>
@@ -63,6 +67,7 @@ Syncfusion.Licensing.dll
 iOS
 </td>
 <td>
+
 Syncfusion.SfChart.XForms.iOS.dll</br>
 
 Syncfusion.SfChart.XForms.dll</br>
@@ -72,6 +77,7 @@ Syncfusion.Core.XForms.dll</br>
 Syncfusion.Core.XForms.iOS.dll</br>
 
 Syncfusion.Licensing.dll
+
 </td>
 </tr>
 <tr>
@@ -79,6 +85,7 @@ Syncfusion.Licensing.dll
 macOS
 </td>
 <td>
+
 Syncfusion.SfChart.XForms.macOS.dll</br>
 
 Syncfusion.SfChart.XForms.dll</br>
@@ -88,6 +95,7 @@ Syncfusion.Core.XForms.dll</br>
 Syncfusion.Core.XForms.macOS.dll</br>
 
 Syncfusion.Licensing.dll
+
 </td>
 </tr>
 <tr>
@@ -95,6 +103,7 @@ Syncfusion.Licensing.dll
 UWP
 </td>
 <td>
+
 Syncfusion.SfChart.UWP.dll</br>
 
 Syncfusion.SfChart.XForms.UWP.dll</br>
@@ -106,6 +115,7 @@ Syncfusion.Core.XForms.dll</br>
 Syncfusion.Core.XForms.UWP.dll</br>
 
 Syncfusion.Licensing.dll
+
 </td>
 </tr>
 </table>

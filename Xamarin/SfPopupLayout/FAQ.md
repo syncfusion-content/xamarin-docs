@@ -801,8 +801,8 @@ private void ClickToClosePopup_Clicked(object sender, EventArgs e)
 
 ## How to change popup view background color 
 
-SfPopup view  background color can be modified by using the property [SfPopupLayout.PopupView.BackGroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~BackgroundColor.html)
-as demonstrated in the following code sample.
+The background color of popup view can be set by using the [SfPopupLayout.PopupView.BackGroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~BackgroundColor.html)
+property.
 
 {% tabs %}
 {%highlight Xaml%}

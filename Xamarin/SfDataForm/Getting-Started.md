@@ -616,13 +616,13 @@ dataForm.ColumnCount = 2;
 
 ![Setting column count to data form in Xamarin.Forms DataForm](SfDataForm_images/ColumnCount.png)
 
-## Launching SfDataForm inside a StackLayout
+## Loading DataForm inside StackLayout
 
 StackLayout positions the child elements one after another either horizontally or vertically. Space of the [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) depends on the HorizontalOptions and VerticalOptions properties. Views in a stack layout can be sized based on space in the layout using layout options.
 
-The SfDataForm control can be loaded inside any layout such as [Grid](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.Grid?view=xamarin-forms), [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms), etc. When loading SfDataForm inside a `StackLayout`, set the [HorizontalOptions](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~HorizontalOptions.html) and [VerticalOptions](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~VerticalOptions.html) properties of SfDataForm, and set parent(StackLayout) of SfDataForm to `LayoutOptions.FillAndExpand`.
+The DataForm control can be loaded inside any layout such as [Grid](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.Grid?view=xamarin-forms), [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms), etc. When loading DataForm inside a `StackLayout`, set the [HorizontalOptions](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~HorizontalOptions.html) and [VerticalOptions](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~VerticalOptions.html) properties of DataForm, and set parent(StackLayout) of DataForm to `LayoutOptions.FillAndExpand`.
 
-Refer to the following code example to load the SfDataForm control inside a `StackLayout`. Set the VerticalOptions and HorizontalOptions of the `StackLayout` and SfDataForm to `FillAndExpand`.
+Refer to the following code example to load the DataForm control inside a `StackLayout`. Set the VerticalOptions and HorizontalOptions of the `StackLayout` and DataForm to `FillAndExpand`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -658,9 +658,9 @@ public partial class MainPage : ContentPage
 
 ![Launching data form inside a StackLayout Xamarin.Forms DataForm](SfDataForm_images/LayoutOptions.jpg)
 
-## Loading SfDataForm with customized height and width
+## Loading DataForm with customized height and width
 
-The SfDataForm  can be loaded with specific height and width inside different layouts using the [SfDataForm.HeightRequest](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~HeightRequest.html) and [SfDataForm.WidthRequest](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~WidthRequest.html) properties.
+The DataForm can be loaded with specific height and width inside different layouts using the [SfDataForm.HeightRequest](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~HeightRequest.html) and [SfDataForm.WidthRequest](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~WidthRequest.html) properties.
 
 {% tabs %}
 {% highlight xaml %}

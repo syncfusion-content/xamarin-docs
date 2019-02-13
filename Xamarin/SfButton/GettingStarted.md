@@ -209,4 +209,4 @@ button.CornerRadius = new Thickness(20);
 
 ![Button with background image](images/ButtonWithBackgroundImage.png)
 
-You can find the complete getting started sample here: [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Button_GettingStarted31009597.zip).
+You can find the complete getting started sample here: [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Button_GettingStarted-1596781257.zip).

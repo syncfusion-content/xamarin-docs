@@ -35,7 +35,7 @@ schedule.Locale = "ja";
 {% endhighlight %}   
 {% endtabs %}   
 
-![](Localization_images/Localization_XForms.png)   
+![Localization Forms](Localization_images/Localization_XForms.png)   
 
 ## Change custom texts in the control.
 
@@ -69,7 +69,7 @@ The procedure for creating strings.xml files is as follows:
 *	Create new folders under resource as values-`ar`, values-`de`, values-`en` and values-`fr` (The original values folder already exists).
 *	Place the translated strings.xml files in the respective folders.
  
-![](Localization_images/localization_img2.jpeg)  
+![Localization Android Folder Structure](Localization_images/localization_img2.jpeg)  
 
 >**NOTE** 
 The corresponding Locale values folder updates only when the device language changes.
@@ -78,7 +78,7 @@ The corresponding Locale values folder updates only when the device language cha
 
 You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](https://developer.xamarin.com/guides/ios/advanced_topics/localization_and_internationalization/).
 
-![](Localization_images/Localization_IOS.png) 
+![Localization iOS](Localization_images/Localization_IOS.png) 
 
 If an application requires multiple languages you can follow the below steps:
 
@@ -86,7 +86,7 @@ If an application requires multiple languages you can follow the below steps:
 *	Create new `<Language>.lproj` folders under resource as `en.lproj`, `fr.lproj`, `de.lproj`.
 *	Place the `Localizable.Strings` file in the respective `<Language>.lproj` folders.
 
-![](Localization_images/Localization_iOS_Img2.png)
+![Localization iOS Folder Structure](Localization_images/Localization_iOS_Img2.png)
 
 >**NOTE** 
 The corresponding `<Language>.lproj` folder updates only when the device language changes.
@@ -102,11 +102,11 @@ The procedure for creating Resources(.resw) file is as follows:
 
 *	Create Resources(.resw) file in sample with C# culture standard name for example fr , de-DE and so.
 
-![](Localization_images/Localization_XFUWP_Resw.png)
+![Localization UWP Folder Structure](Localization_images/Localization_XFUWP_Resw.png)
 
 *	Translate the custom string used in schedule to respective localized culture.
 
-![](Localization_images/Localization_XFUWP.png)
+![Localization UWP](Localization_images/Localization_XFUWP.png)
 
 ## Localizing custom strings from pcl
 You can localize the custom strings (All Day, No Events) used in the schedule control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale using DependencyService instead of device language, you need to create new resource manager based on the resources, and need to set this to [Manager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResourceManager~Manager.html) property of `ScheduleResourceManager`. In the below code, we have set French as Schedule locale as well as custom strings.
@@ -132,7 +132,7 @@ if (schedule.Locale == "fr")
 {% endhighlight %}
 {% endtabs %}
 
-![](Localization_images/localeallday.png)
+![Localization All Day](Localization_images/localeallday.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [LocaleFromPCL](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LocaleFromPCL635946080.zip).
@@ -358,7 +358,7 @@ Localize class for iOS project,
 {% endhighlight %}
 {% endtabs %}
 
-![](Localization_images/localenoevents.png)
+![Localization No Events](Localization_images/localenoevents.png)
 
 >**NOTE**
 For UWP project, no sample level changes required.

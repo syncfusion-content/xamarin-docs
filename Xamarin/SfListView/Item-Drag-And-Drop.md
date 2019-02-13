@@ -57,7 +57,7 @@ listView.DragStartMode = DragStartMode.OnHold | DragStartMode.OnDragIndicator;
 {% endhighlight %}
 {% endtabs %}
 
-N> Reorder the changes made only in view, and not in underlying collection. Thus, the changes will be reverted when performing sorting, grouping, or any other operation that refreshes view. You can update underlying collection by setting UpdateSource to `true`.
+N> Reordering changes made only in view, and not in underlying collection. Thus, the changes will be reverted when performing sorting, grouping, or any other operation that refreshes view. You can update underlying collection by setting UpdateSource to `true`.
 
 ## Drag indicator view
 

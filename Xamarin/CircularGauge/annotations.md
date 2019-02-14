@@ -696,7 +696,7 @@ Content = gauge;
 
 {% endtabs %}
 
-![Adjust annotation in Xamarin.Forms Circular Gauge](annotations_images/text_annotation.PNG)
+![Adjust annotation in Xamarin.Forms Circular Gauge](annotations_images/viewmargin.png)
 
 ## Alignment of annotation
 

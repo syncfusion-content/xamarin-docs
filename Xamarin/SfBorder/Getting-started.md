@@ -17,8 +17,7 @@ Syncfusion components for Xamarin.Forms are available in [nuget.org](https://w
 
 ![Xamarin Forms SfBorder Nuget reference](images/Xamarin_Forms_Border_Nuget.png)
 
-To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows).
-
+To learn more about obtaining Syncfusion components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of NuGet, refer to this [documentation](https://help.syncfusion.com/xamarin/introduction/control-dependencies#border) to know about the dependent assemblies for border.
 
 N> Install the same version of the core NuGet in all the projects. The border control will be available in core NuGet from v16.4.0.x onwards.
 

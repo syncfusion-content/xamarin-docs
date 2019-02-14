@@ -11,7 +11,11 @@ documentation: ug
 
 This section explains you the steps required to populate the Chart with data, title, add data labels and tooltips to the Chart. This section covers only the minimal features that you need to know to get started with the Chart.
 
-## Adding SfChart reference from nuget.org
+## Adding SfChart reference
+
+You can add SfChart reference using one of the following methods:
+
+**Method 1: Adding SfChart reference from nuget.org**
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add chart to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it.
 
@@ -19,11 +23,11 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 N> Install the same version of the chart NuGet in all the projects.
 
-## Adding SfChart reference from toolbox
+**Method 2: Adding SfChart reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfChart control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the SfChart control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-## Adding SfChart references manually from installer
+**Method 3: Adding SfChart assemblies manually from installer**
 
 If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
 

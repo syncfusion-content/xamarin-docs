@@ -27,7 +27,7 @@ N> Install the same version of the chart NuGet in all the projects.
 
 Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the SfChart control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Method 3: Adding SfChart assemblies manually from installer**
+**Method 3: Adding SfChart assemblies manually from the installed location**
 
 If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
 
@@ -106,6 +106,8 @@ To use the chart inside an application, each platform application requires some 
 ### iOS
 
 To launch the chart in iOS, call the SfChartRenderer.Init() method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+
+N> If you are adding the references from toolbox, this step is not needed.
 
 {% highlight C# %} 
 

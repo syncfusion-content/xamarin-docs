@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sparkline types
+title: Sparkline types in Syncfusion Sparkline control for Xamarin.Forms
 description: What are the different types of Sparklines available in Essential Xamarin.forms Sparkline.
 platform: xamarin
 control: Sparkline
@@ -40,7 +40,7 @@ SfLineSparkline lineSparkline = new SfLineSparkline()
 
 {% endtabs %}
 
-![](sparkline_images/LineSparkline.png)
+![LineSparkline support in Xamarin.Forms Sparkline](sparkline_images/LineSparkline.png)
 
 
 ## Column Sparkline
@@ -75,7 +75,7 @@ SfColumnSparkline columnSparkline = new SfColumnSparkline()
 
 {% endtabs %}
 
-![](sparkline_images/ColumnSparkline.png)
+![Column Sparkline support in Xamarin.Forms Sparkline](sparkline_images/ColumnSparkline.png)
 
 
 ## Area Sparkline
@@ -110,7 +110,7 @@ SfAreaSparkline areaSparkline = new SfAreaSparkline()
 
 {% endtabs %}
 
-![](sparkline_images/AreaSparkline.png)
+![Area Sparkline support in Xamarin.Forms Sparkline](sparkline_images/AreaSparkline.png)
 
 
 ## WinLoss Sparkline
@@ -146,4 +146,4 @@ SfWinLossSparkline winLossSparkline = new SfWinLossSparkline()
 
 {% endtabs %}
 
-![](sparkline_images/WinLossSparkline.png)
+![Winloss sparkline support in Xamarin.Forms Sparkline](sparkline_images/WinLossSparkline.png)

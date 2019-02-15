@@ -297,51 +297,95 @@ dataForm.RegisterEditor("Text", new CustomTextEditor(dataForm));
 
 Create the custom editor by overriding the [DataFormEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormEditor%601.html) class.
 
-Property settings, commit, data validation can be handled by overriding the required methods. Here, the `Slider` is loaded for `Salary` editor.
+Property settings, commit, data validation can be handled by overriding the required methods. Here, the `Entry` is loaded for `Age` editor.
 
 {% tabs %}
 {% highlight c# %}
-public class CustomSliderEditor : DataFormEditor<Slider>
+
+public class CustomTextEditor : DataFormEditor<Entry>
 {
-    public CustomSliderEditor(SfDataForm dataForm) : base(dataForm)
-    {
-    }
+	public CustomTextEditor(SfDataForm dataForm) : base(dataForm)
+	{
+	}
 
-    protected override Slider OnCreateEditorView(DataFormItem dataFormItem)
-    {
-        return new Slider();
-    }
-    protected override void OnInitializeView(DataFormItem dataFormItem, Slider view)
-    {                     
-        view.Value = (int)this.DataForm.ItemManager.GetValue(dataFormItem);
-    }
+	protected override Entry OnCreateEditorView(DataFormItem dataFormItem)
+	{
+		return new Entry();
+	}
+	protected override void OnInitializeView(DataFormItem dataFormItem, Entry view)
+	{
+		base.OnInitializeView(dataFormItem, view);
+		view.Keyboard = Keyboard.Numeric;
+	}
 
-    protected override void OnWireEvents(Slider view)
-    {
-        view.ValueChanged += View_ValueChanged;
-    }
+	protected override void OnWireEvents(Entry view)
+	{
+		view.TextChanged += OnViewTextChanged;
+		view.Focused += OnViewFocused;
+		view.Unfocused += OnViewUnfocused;
+	}
 
-    private void View_ValueChanged(object sender, Xamarin.Forms.ValueChangedEventArgs e)
-    {
-        OnCommitValue(sender as Slider);
-    }
-    protected override void OnUnWireEvents(Slider view)
-    {
-        view.ValueChanged -= View_ValueChanged;
-    }
-    protected override void OnCommitValue(Slider view)
-    {
-        var dataFormItemView = view.Parent as DataFormItemView;
-        this.DataForm.ItemManager.SetValue(dataFormItemView.DataFormItem, view.Value);
-    }
+	private void OnViewPropertyChanged(object sender, PropertyChangedEventArgs e)
+	{
+		OnValidateValue(sender as Entry);
+	}
+
+	private void OnViewFocused(object sender, FocusEventArgs e)
+	{
+		var view = (sender as Entry);
+		view.TextColor = Color.Green;
+	}
+
+	protected override bool OnValidateValue(Entry view)
+	{
+		return this.DataForm.Validate("Age");
+	}
+	private void OnViewUnfocused(object sender, FocusEventArgs e)
+	{
+		var view = sender as Entry;
+		view.TextColor = Color.Red;
+
+		if (this.DataForm.CommitMode == Syncfusion.XForms.DataForm.CommitMode.LostFocus || this.DataForm.ValidationMode == ValidationMode.LostFocus)
+			this.OnValidateValue(view);
+		if (this.DataForm.CommitMode != Syncfusion.XForms.DataForm.CommitMode.LostFocus) return;
+		this.OnCommitValue(view);
+		OnValidateValue(sender as Entry);
+	}
+	private void OnViewTextChanged(object sender, TextChangedEventArgs e)
+	{
+		var view = sender as Entry;
+		if (DataForm.CommitMode == Syncfusion.XForms.DataForm.CommitMode.PropertyChanged || DataForm.ValidationMode == ValidationMode.PropertyChanged)
+			this.OnValidateValue(view);
+		if (this.DataForm.CommitMode != Syncfusion.XForms.DataForm.CommitMode.PropertyChanged) return;
+		this.OnCommitValue(view);
+	}
+
+	protected override void OnCommitValue(Entry view)
+	{
+		var dataFormItemView = view.Parent as DataFormItemView;
+		this.DataForm.ItemManager.SetValue(dataFormItemView.DataFormItem, view.Text);
+	}
+
+	protected override void OnUnWireEvents(Entry view)
+	{
+		view.TextChanged -= OnViewTextChanged;
+		view.Focused -= OnViewFocused;
+		view.Unfocused -= OnViewUnfocused;
+	}
 }
 
-dataForm.RegisterEditor("Slider", new CustomSliderEditor(dataForm));
-dataForm.RegisterEditor("Salary", "Slider");
+dataForm.RegisterEditor("numeric", new CustomTextEditor(dataForm));
+dataForm.RegisterEditor("Age", "numeric");
+dataForm.ValidationMode = ValidationMode.LostFocus;
+
 {% endhighlight %}
 {% endtabs %}
 
-![Creating custom editor for the data form item in Xamarin.Forms DataForm](SfDataForm_images/Editing_SliderEditor.png)
+You should manually commit the custom DataFormItem editor value by using [OnCommitValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormEditor%601~OnCommitValue.html) override method of [DataFormEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormEditor%601.html) class on custom editor `Value` or `Focus changed` event which is used to update the custom editor value in respective property in [DataObject](https://help.syncfusion.com/xamarin/sfdataform/getting-started#setting-data-object) based on dataform [commit mode](https://help.syncfusion.com/xamarin/sfdataform/editing#commit-mode) set. 
+
+Also , you should manually validate the custom editor value in by using [OnValidateValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormEditor%601~OnValidateValue.html) override method of `DataFormEditor` class on custom editor `Value` or `Focus changed` event which is used to validate the custom editor value based on data form [validation mode](https://help.syncfusion.com/xamarin/sfdataform/validation?cs-save-lang=1&cs-lang=xaml#validation-mode) set . In the override method for OnValidateValue, you need to return [DataForm.Validate(string)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Validate.html) method in order to validate the particular data item.
+
+![Creating custom editor for the data form item in Xamarin.Forms DataForm](SfDataForm_images/DataFormCustomEditor.jpg)
 
 ## Support for Email editor
 

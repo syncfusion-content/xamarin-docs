@@ -121,6 +121,65 @@ You can download the entire source code of this demo [here](http://www.syncfusio
 
 For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
 
+## Binding command of inner ListView to Model Command?
+
+You can bind command of Button inside ItemTemplate to the command in Model by specifying Source property with its root element as reference to execute the binded property of type command.
+
+{% tabs %}
+{% highlight xaml %}
+<listView:SfListView x:Name="listView" ItemsSource="{Binding ContactInfo}">
+     <listView:SfListView.ItemTemplate>
+        <DataTemplate>
+           <ViewCell>
+                <ViewCell.View>
+                   <StackLayout>
+                        <listView:SfListView x:Name="list1" ItemsSource="{Binding ContactDetails}" TapCommand="{Binding NavigateToSelectModelsCommand}" TapCommandParameter="{Binding}">
+                            <listView:SfListView.ItemTemplate>
+                                 <DataTemplate>
+                                      <ViewCell>
+                                          <ViewCell.View>
+                                               <StackLayout BackgroundColor="Teal" >
+                                                    <Label Text="{Binding ContactName} "/>
+                                                    <Label Text="{Binding ContactNumber}"/>
+                                                    <StackLayout HeightRequest="1" BackgroundColor="Gray"/>
+                                                </StackLayout>
+                                           </ViewCell.View>
+                                       </ViewCell>
+                                 </DataTemplate>
+                            </listView:SfListView.ItemTemplate>
+                        </listView:SfListView>
+                    </StackLayout>
+                </ViewCell.View>
+            </ViewCell>
+        </DataTemplate>
+    </listView:SfListView.ItemTemplate>
+</listView:SfListView>
+
+{% endhighlight %}
+{% highlight c# %}
+
+public class ContactInfo_NestedListView
+{
+    public Command<Object> NavigateToSelectModelsCommand { get; private set; }
+
+    public ContactInfo_NestedListView()
+    {
+       NavigateToSelectModelsCommand = new Command<Object>(NavigateToSelectModels, CanNavigate);
+    }
+    private bool CanNavigate(object argument)
+    {
+            return true;
+    }
+    private void NavigateToSelectModels(object model)
+    {
+       var customer = model as ContactInfo_NestedListView;
+            
+       App.Current.MainPage.DisplayAlert("Message", "Tapped customer group value :" + customer.location, "OK");
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Binding command of Button inside the ItemTemplate of Xamarin.Forms ListView to ViewModel Command?
 
 You can bind command of Button inside ItemTemplate to the command in ViewModel by specifying Source property with its root element as reference to execute the binded property of type command.

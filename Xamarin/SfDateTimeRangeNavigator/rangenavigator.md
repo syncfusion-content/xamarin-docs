@@ -21,7 +21,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Adding Xamarin.Forms date-time range navigator reference](gettingstarted_images/img3.png)
 
-N> Install the same version of the SfDateTimeRangeNavigator NuGet in all the projects.
+N> Install the same version of the SfChart NuGet in all the projects.
 
 **Method 2: Adding SfDateTimeRangeNavigator reference from toolbox**
 

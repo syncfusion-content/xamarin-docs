@@ -20,7 +20,7 @@ The SfPopupLayout has different animation modes as listed below:
 * [SlideOnBottom](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)
 * [None](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationMode.html)
 
-N> Setting of AnimationMode is same for both `Displaying pop-up when the SfPopupLayout is set as root view` and `Displaying pop-up when the SfPopupLayout is not set as root view`. 
+N> Setting of AnimationMode is same for both `Displaying popup when the SfPopupLayout is set as root view` and `Displaying popup on the go`. 
 
 ## Zoom 
 
@@ -54,7 +54,7 @@ public MainPage()
 
 {% endtabs %}
 
-![Pop-up with zoom animation](GettingStarted_images/ZoomAnimation.gif)
+![Popup with zoom animation](GettingStarted_images/ZoomAnimation.gif)
 
 ## Fade 
 
@@ -88,7 +88,7 @@ public MainPage()
 
 {% endtabs %}
 
-![Pop-up with fade animation](GettingStarted_images/FadeAnimation.gif)
+![Popup with fade animation](GettingStarted_images/FadeAnimation.gif)
 
 ## SlideOnLeft 
 
@@ -122,7 +122,7 @@ public MainPage()
 
 {% endtabs %}
 
-![Pop-up with slide on left animation](GettingStarted_images/SlideOnLeftAnimation.gif)
+![Popup with slide on left animation](GettingStarted_images/SlideOnLeftAnimation.gif)
 
 ## SlideOnRight
 
@@ -156,7 +156,7 @@ public MainPage()
 
 {% endtabs %}
 
-![Pop-up with slide on right animation](GettingStarted_images/SlideOnRightAnimation.gif)
+![Popup with slide on right animation](GettingStarted_images/SlideOnRightAnimation.gif)
 
 ## SlideOnTop 
 
@@ -191,7 +191,7 @@ public MainPage()
 {% endtabs %}
 
 
-![Pop-up with slide on top animation](GettingStarted_images/SlideOnTopAnimation.gif)
+![Popup with slide on top animation](GettingStarted_images/SlideOnTopAnimation.gif)
 
 ## SlideOnBottom
 
@@ -225,7 +225,7 @@ public MainPage()
 
 {% endtabs %}
 
-![Pop-up with slide on bottom animation](GettingStarted_images/SlideOnBottomAnimation.gif)
+![Popup with slide on bottom animation](GettingStarted_images/SlideOnBottomAnimation.gif)
 
 ## None
 
@@ -258,5 +258,3 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
-
-![Pop-up with no animation](GettingStarted_images/AnimationMode_None.gif)

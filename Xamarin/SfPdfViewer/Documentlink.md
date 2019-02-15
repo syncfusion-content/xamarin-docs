@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Working with Document Link Annotation (Table of content)
-description: Working with Document Link Annotation (Table of content)
+title:  Document link in PDF Viewer Xamarin.Forms | Syncfusion
+description: Document Link Annotation or Table of content support in PDF Viewer Xamarin.Forms allows the user to navigate to specific destination within PDF document.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
@@ -24,4 +24,4 @@ Set the “EnableDocumentLinkAnnotation” property to false to disable the docu
 {% endhighlight %}
 {% endtabs %}
 
-N>**By default, the EnableDocumentLinkAnnotation property is set to true.
+N>By default, the EnableDocumentLinkAnnotation property is set to true.

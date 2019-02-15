@@ -29,7 +29,7 @@ Text
 The String type property and any other type apart from the below specified cases.
 </td>
 <td>
-Entry
+{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -44,7 +44,7 @@ The String type property with multi line text.
 [DataType(DataType.MultilineText)]
 </td>
 <td>
-Editor
+{{'[Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -58,7 +58,7 @@ Numeric
 The property of Int, Double, Float, Decimal, Long types and also its nullable property.
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -72,7 +72,7 @@ Percent
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(“Percent”)] attribute.
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -86,7 +86,7 @@ Currency
 The property of Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(DataType.Currency)] attribute.
 </td>
 <td>
-SfNumericTextBox
+{{'[SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -100,7 +100,7 @@ Date
 DateTime type property and the property with [DataType(DataType.Date)] and [DataType(DataType.DateTime)] attributes.
 </td>
 <td>
-DatePicker
+{{'[DatePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.datepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -114,7 +114,7 @@ Time
 The property with [DataType(DataType.Time)] attribute.
 </td>
 <td>
-TimePicker
+{{'[TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -128,7 +128,7 @@ NumericUpDown
 Int or Double type property.
 </td>
 <td>
-SfNumericUpDown
+{{'[SfNumericUpDown](https://help.syncfusion.com/xamarin/sfnumericupdown/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -142,7 +142,7 @@ Segment
 Enum type property.
 </td>
 <td>
-SegmentControl
+{{'[SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -156,7 +156,7 @@ Bool
 Bool type property.
 </td>
 <td>
-CheckBox
+{{'[SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -170,7 +170,7 @@ Switch
 Bool type property.
 </td>
 <td>
-Switch
+{{'[Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -185,7 +185,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-Picker
+{{'[Picker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.picker?view=xamarin-forms)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -200,7 +200,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-DropDownControl
+{{'[SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -215,7 +215,22 @@ The String type property and property with
 [DataType(DataType.Password)] attribute.
 </td>
 <td>
-Entry
+{{'[Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+RadioGroup
+</td>
+<td>
+{{'[DataFormRadioGroupEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormRadioGroupEditor.html)'| markdownify }}
+</td>
+<td>
+Enum and List type property.
+[EnumDataTypeAttribute]
+</td>
+<td>
+{{'[SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html)'| markdownify }}
 </td>
 </tr>
 </table>
@@ -223,6 +238,23 @@ Entry
 ## Text editor
 
 In the text editor, the [Entry](https://developer.xamarin.com/guides/xamarin-forms/user-interface/text/entry/) is loaded.
+
+## Multiline Text editor
+
+In the `MultilineText` editor, the [Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms) is loaded.
+
+And `MultilineText` editor height will auto expand/reduce based on the line wraps in editor , which allowing text to be readable without scrolling the editor.
+
+{% tabs %}
+{% highlight c# %}
+
+[DataType(DataType.MultilineText)]
+public String Address { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading multi line text editor in Xamarin.Forms DataForm](SfDataForm_images/Editors_MultiLine.jpg)
 
 ## Numeric editor
 
@@ -249,6 +281,22 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 In the date editor, the [DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/) will be loaded.
 
+### Setting null value in date editor
+
+In `DatePicker`, the default date value (1/01/0001) is displayed by default. You can also set the null value by adding nullable `DateTime` data type for the date picker property in data form, which allows you to set the null value and display the empty value in date editor. 
+
+{% tabs %}
+{% highlight c# %}
+
+[DataType(DataType.Date)]
+[Display(Name ="Birth Date")]
+public DateTime? BirthDate { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting nullable date to data form date item in Xamarin.Forms DataForm](SfDataForm_images/DateTime_Nullable.jpg)
+
 ### Customizing format in date editor
 
 In the `DatePicker`, short date will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem~Format.html) property in [DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html).
@@ -268,7 +316,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![DateFormat](SfDataForm_images/Editors_DateFormat.png)
+![Setting DateFormat to data form date item in Xamarin.Forms DataForm](SfDataForm_images/Editors_DateFormat.png)
 
 ### Setting MaximumDate and MinimumDate in date editor
 
@@ -290,15 +338,274 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Maximum date](SfDataForm_images/Editors_DateMaximum.png)
+![Setting maximum date for data form date item in Xamarin.Forms DataForm](SfDataForm_images/Editors_DateMaximum.png)
+
+## Time editor
+
+In the time editor, the [TimePicker](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.timepicker?view=xamarin-forms) will be loaded.
+
+**Setting null value in time editor**
+
+In `TimePicker`, the default time value (12:00 AM) is displayed by default. You can also set the null value by adding nullable `DateTime` data type for the time picker property in data form, which allows you to set the null value and display the empty value in time editor. 
+
+{% tabs %}
+{% highlight c# %}
+
+[DataType(DataType.Time)]
+[Display(Name = "Birth Time")]
+public DateTime? BirthTime { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting nullable time to data form item in Xamarin.Forms DataForm](SfDataForm_images/Time_Nullable.jpg)
+
+**Customizing format in time editor**
+
+In the `TimePicker`, short time will be shown by default. You can change the applied format by setting the [Format](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem~Format.html) property in [DataFormTimeItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem.html).
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "BirthTime")
+        (e.DataFormItem as DataFormTimeItem).Format = "HH:mm";
+} 
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting time format to data form time item in Xamarin.Forms DataForm](SfDataForm_images/Editors_TimeFormat.jpg)
+
+## Segment editor
+
+In segment editor, the [SfSegmentedControl](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/overview) is loaded, and DataForm `Segment` editor supports to `enum` and `List` data type properties.
+
+To add `Segment` editor in DataForm, register the editor as `Segment` for the required property using the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
+
+**Support for enum data type**
+
+By default, the `ItemsSource` for `SfSegmentedControl` is auto-generated for `enum` data types, if the property has been registered for `Segment` editor.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.RegisterEditor("SaveTo", "Segment");
+
+private Location saveTo;
+
+[Display(Name = "Save To")]
+public Location SaveTo
+{
+    get { return saveTo; }
+    set { this.saveTo = value; }
+}
+public enum Location
+{
+    Sim,
+    Phone
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+**Customizing ItemsSource of SfSegmentedControl**
+
+For `List` data types, you can set the `ItemsSource` for `SfSegmentedControl` by using the SourceProvider or using ItemsSource property of [DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem.html).
+
+**Using SourceProvider**
+
+{% tabs %}
+{% highlight c# %}
+
+private string saveTo;
+[Display(Name ="Save To")]
+public string SaveTo
+{
+    get { return saveTo; }
+	set { this. saveTo = value; }
+}
+
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+		var list = new List<string>();
+		if(sourceName == "SaveTo")
+		{
+			list.Add("Sim");
+			list.Add("Phone");
+		}
+		return list;
+	}
+}
+
+dataForm.RegisterEditor("SaveTo", "Segment");
+dataForm.SourceProvider = new SourceProviderExt();
+
+{% endhighlight %}
+{% endtabs %}
+
+**Using ItemsSource property of DataFormSegmentItem**
+
+You can also set `ItemsSource` for segment editor by using the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem~ItemsSource.html) property in the [DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem.html).
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.RegisterEditor("SaveTo", "Segment");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "SaveTo")
+    {
+		var list = new List<string>();
+		list.Add("Sim");
+		list.Add("Phone");
+		(e.DataFormItem as DataFormSegmentItem).ItemsSource = list;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading segment editor in Xamarin.Forms DataForm](SfDataForm_images/SegmentEditor.jpg)
+
+## CheckBox editor
+
+In `CheckBox` editor, the [SfCheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/overview ) control is loaded. By default, for `bool` data type property, the `CheckBox` editor will be loaded in data form.
+
+{% tabs %}
+{% highlight c# %}
+
+[Display(Name = "Is Billable")]
+public bool IsBillable { get; set; } = true;
+
+[Display(Name = "Registered Member")]
+public bool RegisteredMember { get; set; }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading CheckBox editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditor.jpg)
+
+**Visual states of SfCheckBox**
+
+SfCheckBox support three visual states.
+  - Checked
+  - UnChecked
+  - Intermediate
+
+{% tabs %}
+{% highlight c# %}
+
+[Display(Name = "Is Billable")]
+public bool IsBillable { get; set; } = true;
+
+[Display(Name = "Registered Member")]
+public bool RegisteredMember { get; set; } = false;
+
+[Display( Name = "Is Refundable")]
+public bool? IsRefundable { get; set; } = null;
+
+{% endhighlight %}
+{% endtabs %}
+		
+![Setting visual states for check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditorStates.jpg)
+  
+**Customizing the SfCheckBox state color**
+
+You can change the  color of the checked/indeterminate state of SfCheckBox using the [CheckedColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormCheckBoxItem~CheckedColor.html) property and  change the  color of unchecked state  using the [UnCheckedColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormCheckBoxItem~UnCheckedColor.html) property in [DataFormCheckBoxItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormCheckBoxItem.html) in the `AutoGeneratingDataFormItem` event of data form.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name == "IsBillable")
+        {
+            (e.DataFormItem as DataFormCheckBoxItem).CheckedColor = Color.Green;
+        }
+        if (e.DataFormItem.Name == "RegisteredMember")
+        {
+            (e.DataFormItem as DataFormCheckBoxItem).UnCheckedColor = Color.Blue;
+        }
+    }
+}
+ 
+{% endhighlight %}
+{% endtabs %}
+
+![Setting color for check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditorColor.jpg)
+
+**Setting SfCheckBox caption text**
+
+You can customize the appearance of display text in `SfCheckBox` using the `Text` property of the `DataFormCheckBoxItem`.
+
+{% tabs %}
+{% highlight c# %}
+
+[DisplayOptions(ShowLabel = false)]
+public bool Agree { get; set; }
+		
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name.Equals("Agree"))
+        {
+            (e.DataFormItem as DataFormCheckBoxItem).IsThreeState = false;
+            (e.DataFormItem as DataFormCheckBoxItem).Text = "I agree to the Terms & Conditions";
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting caption text for check box editor in Xamarin.Forms DataForm](SfDataForm_images/CheckBoxEditorText.jpg)
+
+## Switch Editor
+
+In switch editor, [Switch](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.switch?view=xamarin-forms) is loaded, and DataForm `Switch` editor supports bool data type property.
+
+To add `Switch` editor in DataForm, register the editor as `Switch` for the required property using the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
+
+{% tabs %}
+{% highlight c# %}
+
+       dataForm.RegisterEditor("CellularData", "Switch");
+       dataForm.RegisterEditor("AirplaneMode", "Switch");
+
+        [Display(Name ="Cellular Data")]
+        public bool CellularData { get; set; } = true;
+
+        [Display(Name = "Airplane Mode")]
+        public bool AirplaneMode { get; set; }
+ 
+
+{% endhighlight %}
+{% endtabs %}
+
+![Setting switch editor in Xamarin.Forms DataForm](SfDataForm_images/SwitchEditor.jpg)
 
 ## Drop down editor
 
-In the drop down editor, the DropDownControl will be loaded.
+In the drop down editor, the [SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/overview) will be loaded.
 
-### Customizing ItemsSource of DropDownControl
+### Customizing ItemsSource of SfComboBox
 
-By default, the `ItemsSource` for DropDownControl is auto-generated for enum types and collection type properties. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
+By default, the `ItemsSource` for SfComboBox is auto-generated for enum types and collection type properties. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
 
 #### Using SourceProvider
 
@@ -358,9 +665,88 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![DropDown items](SfDataForm_images/Editors_DropDownItems.png)
+![Setting ItemsSource for drop down editor items in Xamarin.Forms DataForm](SfDataForm_images/Editors_DropDownItems.jpg)
 
-N> `DropDownEditor` not supported in `Xamarin.Forms.iOS`.
+### Changing ItemsSource of SfComboBox at run time
+
+You can also change the `ItemsSource` at runtime.
+
+{% tabs %}
+{% highlight c# %}
+private void Button_Click(object sender, EventArgs e)
+{
+    var dataFormItem = dataForm.ItemManager.DataFormItems["Name"];
+    if (dataFormItem.Name == "Name")
+    {
+        var list = new List<string>();
+        list.Add("Home");
+        list.Add("Food");
+        list.Add("Utilities");
+        list.Add("Education");
+        (dataFormItem as DataFormDropDownItem).ItemsSource = list;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Loading complex type property values in drop down editor
+
+You can display the complex type property values in drop down editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for drop down editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem~DisplayMemberPath.html) and [SelectedValuePath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem~SelectedValuePath.html) property value of DataFormDropDownItem for complex type property.
+
+N> Class cannot be directly set as data type for drop down editor in this complex type scenario.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.SourceProvider = new SourceProviderExt();
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.RegisterEditor("City", "DropDown");
+ 
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "City")
+    {
+        if (Device.RuntimePlatform != Device.UWP)
+        {
+            (e.DataFormItem as DataFormDropDownItem).DisplayMemberPath = "City";
+            (e.DataFormItem as DataFormDropDownItem).SelectedValuePath = "PostalCode";
+        }
+    }
+} 
+ 
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+        if (sourceName == "City")
+        {
+            List<Address> details = new List<Address>();
+            details.Add(new Address() { City = "Chennai", PostalCode = 1 });
+            details.Add(new Address() { City = "Paris", PostalCode = 2 });
+            details.Add(new Address() { City = "Vatican", PostalCode = 3 });
+
+            return details;
+        }
+       return new List<string>();
+    }
+}
+
+public class ContactInfo
+{
+    [Display(Name ="First Name")]
+    public String FirstName { get; set; } 
+    public string City { get; set; }
+}
+
+public class Address
+{
+    public int PostalCode { get; set; }
+    public string City { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Loading complex type property values for drop down editor in Xamarin.Forms DataForm](SfDataForm_images/ComplexPropertyComboBox.jpg)
 
 ## Picker editor
 
@@ -384,7 +770,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Picker items](SfDataForm_images/Editors_PickerTitle.png)
+![Changing title for data form picker item in Xamarin.Forms DataForm](SfDataForm_images/Editors_PickerTitle.png)
 
 ### Customizing ItemsSource of Picker
 
@@ -526,7 +912,7 @@ public class Address
 {% endhighlight %}
 {% endtabs %}
 
-![Complex property](SfDataForm_images/ComplexPropertyPicker.png)
+![Loading complex type property values in picker in Xamarin.Forms DataForm](SfDataForm_images/ComplexPropertyPicker.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from here [DataFormPickerEditor](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataForm_Picker-2009667790.zip)
 
@@ -551,7 +937,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Spin button](SfDataForm_images/SpinButtonCenter.png)
+![Changing spin button alignment for data form item in Xamarin.Forms DataForm](SfDataForm_images/SpinButtonCenter.png)
 
 ### Changing step value in numeric up down
 
@@ -643,7 +1029,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![NumericTextBox culture](SfDataForm_images/Editors_NumericCulture.png)
+![Setting CultureInfo to data form numeric item in Xamarin.Forms DataForm](SfDataForm_images/Editors_NumericCulture.png)
 
 #### SfNumericUpDown
 
@@ -662,7 +1048,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![NumericUpDown culture](SfDataForm_images/NumericUpDownCulture.png)
+![Setting CultureInfo to data form numeric up down item in Xamarin.Forms DataForm](SfDataForm_images/NumericUpDownCulture.png)
 
 ## Password editor
 
@@ -687,4 +1073,72 @@ public string Password
 {% endhighlight %}
 {% endtabs %}
 
-![Password editor](SfDataForm_images/PasswordEditor.jpg)
+![Loading password editor in Xamarin.Forms DataForm](SfDataForm_images/PasswordEditor.jpg)
+
+## RadioGroup editor
+
+In the `RadioGroup` editor, the [SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html) control is loaded.
+
+The [items](https://help.syncfusion.com/xamarin/sfradiobutton/overview) for `SfRadioGroup` is generated for `enum` and `List` data type properties. In order to add `RadioGroup` editor in the DataForm, you need to register editor as `RadioGroup` for the required property by using the [RegisterEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RegisterEditor(String,String).html) method.
+
+**Support for enum data type**
+
+For `enum` data type property, `SfRadioGroup` [items](https://help.syncfusion.com/xamarin/sfradiobutton/overview) will be added based on specified property enum values.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.RegisterEditor("Phone", "RadioGroup");
+
+private Numbers phone;
+public Numbers Phone
+{
+	get { return phone; }
+	set { this.phone = value; }
+}
+
+public enum Numbers
+{
+	Home,
+	Work,
+	Other
+}
+{% endhighlight %}
+{% endtabs %}
+
+**Support for List data type**
+
+For `List` data type property, you have to set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html), based on that `SfRadioGroup` [items](https://help.syncfusion.com/xamarin/sfradiobutton/overview) will be added.
+
+{% tabs %}
+{% highlight c# %}
+
+dataForm.RegisterEditor("Phone", "RadioGroup");
+dataForm.SourceProvider = new SourceProviderExt();
+
+private string phone;
+public string Phone
+{
+    get { return phone; }
+    set { this.phone = value; }
+}
+
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+		var list = new List<string>();
+		if(sourceName == "Phone")
+		{
+			list.Add("Home");
+			list.Add("Work");
+			list.Add("Other");
+		}
+		return list;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Loading radio group editor in Xamarin.Forms DataForm](SfDataForm_images/RadioGroupEditor.jpg)

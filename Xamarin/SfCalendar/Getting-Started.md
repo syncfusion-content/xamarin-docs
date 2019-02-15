@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains how to implement simple holiday indicator application which allows user to select working days using SfCalendar control.
+This section explains how to implement simple holiday indicator application which allows user to select working days using [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) control.
 
 ## Add SfCalendar
 
@@ -17,26 +17,25 @@ Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-a
 
 ## Launching the SfCalendar on each platform
 
-To use SfCalendar inside an application, each platform application must initialize the SfCalendar renderer. This initialization step varies from platform to platform and is discussed in the following sections.
+To use `SfCalendar` inside an application, each platform application must initialize the `SfCalendar` renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
 ### Android and  UWP
 
-The Android and UWP launches the SfCalendar without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application
+The Android and UWP launches the `SfCalendar` without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application
 
 ### iOS
 
-To launch SfCalendar in iOS, need to create an instance of SfCalendarRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
+To launch `SfCalendar` in iOS, need to create an instance of SfCalendarRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
 
 {% highlight C# %}
+
+using Syncfusion.SfCalendar.XForms.iOS;
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
 	global::Xamarin.Forms.Forms.Init();
-
-	new SfCalendarRenderer();
-
+	SfCalendarRenderer.Init();
 	LoadApplication(new App());
-
 	return base.FinishedLaunching(app, options);
 }
 
@@ -46,7 +45,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
 
-The above problem can be resolved by initializing the SfCalendar assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+The above problem can be resolved by initializing the `SfCalendar` assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
 
 {% highlight C# %}
 
@@ -54,25 +53,19 @@ The above problem can be resolved by initializing the SfCalendar assemblies in `
 
 protected override void OnLaunched(LaunchActivatedEventArgs e)
 {
-…
-
-	rootFrame.NavigationFailed += OnNavigationFailed;
-		
+	rootFrame.NavigationFailed += OnNavigationFailed;	
 	// you'll need to add `using System.Reflection;`
 	List<Assembly> assembliesToInclude = new List<Assembly>();
-
 	//Now, add all the assemblies your app uses
 	assembliesToInclude.Add(typeof(SfCalendarRenderer).GetTypeInfo().Assembly);
-
 	// replaces Xamarin.Forms.Forms.Init(e);        
-	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
-		
-…     
+	Xamarin.Forms.Forms.Init(e, assembliesToInclude);  
 }
 {% endhighlight %}
-### Create a Simple SfCalendar
 
-The SfCalendar control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfCalendar and configure its elements,
+## Create a Simple SfCalendar
+
+The `SfCalendar` control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a `SfCalendar` and configure its elements,
 
 * Adding namespace for the added assemblies. 
 
@@ -80,7 +73,7 @@ The SfCalendar control is configured entirely in C# code or by using XAML markup
 
 {% highlight xaml %}
 
-xmlns:CalendarSample="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
 	
 {% endhighlight %}
 
@@ -99,9 +92,10 @@ using Syncfusion.SfCalendar.XForms;
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
-	xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
-	x:Class="GettingStarted.CalendarPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+xmlns:local="clr-namespace:GettingStarted" 
+xmlns:syncfusion="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms"
+x:Class="GettingStarted.CalendarPage">
 <ContentPage.Content>
  <syncfusion:SfCalendar x:Name="calendar" />	
 </ContentPage.Content>
@@ -121,9 +115,7 @@ public partial class CalendarPage : ContentPage
 	public CalendarPage()
 	{
 		InitializeComponent();
-
 		SfCalendar calendar = new SfCalendar();
-
 		this.Content = calendar;
 	}
 }
@@ -134,27 +126,24 @@ public partial class CalendarPage : ContentPage
 
 ## Set Blackout Dates
 
-SfCalendar control provides option to black out the desired date which is in disabled state among the visible dates. Here, holidays are blacked out in the form which cannot be selected by the user. To black out the holiday, add them into `BlackoutDates` list. 
+`SfCalendar` control provides option to black out the desired date which is in disabled state among the visible dates. Here, holidays are blacked out in the form which cannot be selected by the user. To black out the holiday, add them into [BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html) list. 
 
 {% highlight c# %}
 
 SfCalendar  calendar = new SfCalendar();
-
 List<DateTime> black_dates = new List<DateTime>();
-
 for (int i = 0; i < 5; i++)
 {
 	DateTime date = new DateTime(2018,4,1+i);
 	black_dates.Add(date);
 }
-
 calendar.BlackoutDates = black_dates;
 
 {% endhighlight %}
 
 ## Enable Multiple Selection
 
-SfCalendar control allows user to select one or more dates at a time among the non black out dates.
+`SfCalendar` control allows user to select one or more dates at a time among the non black out dates.
 
 To enable it set `MultiSelection` option in SelectionMode enumeration property.
 
@@ -169,7 +158,6 @@ To enable it set `MultiSelection` option in SelectionMode enumeration property.
 {% highlight c# %}
 
 SfCalendar calendar = new SfCalendar();
-
 calendar.SelectionMode=SelectionMode.MultiSelection;
 
 {% endhighlight %}
@@ -178,20 +166,21 @@ calendar.SelectionMode=SelectionMode.MultiSelection;
 
 ## Restrict Dates
 
-SfCalendar allows to select dates that falls between certain range of dates. Here, restrict user to select dates only in current year.
+`SfCalendar` allows to select dates that falls between certain range of dates. Here, restrict user to select dates only in current year.
 
-N> To specify the range, set start date and end date to `MinDate` and `MaxDate` properties respectively.
+N> To specify the range, set start date and end date to [MinDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaxDate.html) properties respectively.
 
 {% highlight c# %}
 
 SfCalendar  calendar = new SfCalendar();
-
 calendar.MinDate = new DateTime(2014,4,1);
 calendar.MaxDate = new DateTime(2018,4,1);
-
 this.Content = calendar;
 	
 {% endhighlight %}
 
 
-![](images/GS.png)
+![Resrict Dates](images/xamarin.forms-calendar-Getting-started.png)
+
+You can download the entire source code of this demo for Xamarin.Forms from
+here [CalendarGettingStarted](https://github.com/SyncfusionExamples/xamarin-calendar-getting-started)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Demonstrate TimePicker using SfPicker of Syncfusion Picker control for Xamarin.Forms
+title: Demonstrate TimePicker using Syncfusion Picker for Xamarin.Forms
 description: Overview and key features of Picker control
 platform: Xamarin
 control: Picker
@@ -339,8 +339,8 @@ date.IsOpen = !date.IsOpen;
 
 The following screenshot illustrates the output of the above code snippets.
 
-![](images/timepicker_img1.jpeg)
+![Xamarin.Forms Picker](images/timepicker_img1.jpeg)
 
 You can download the TimePicker sample for reference from the following link.
 
-Sample link: [TimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePicker717705423.zip)
+Sample link: [TimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePicker2023840373)

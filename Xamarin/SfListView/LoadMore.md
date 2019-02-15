@@ -1,8 +1,7 @@
 ---
 layout: post
-title: Load More in SfListView
-description: Describes about the Load More behavior in SfListView.
-platform: xamarin
+title: Load More in Xamarin.Forms ListView | Syncfusion
+description: This topic describes about the load more feature with manual and automatic loading options in Syncfusion Xamarin.Forms ListView.platform: xamarin
 control: SfListView
 documentation: ug
 ---
@@ -20,6 +19,8 @@ The `SfListView.LoadMorePosition` property has two positions:
 
 * Top: Positioned on the top of list.
 * Bottom: Positioned on the bottom of list when reaching the end of the list. This is the default value.
+
+[SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) will execute when the listview is empty. This is the default behavior.
 
 ## Load more automatically
 
@@ -401,9 +402,9 @@ private bool CanLoadMoreItems(object obj)
 
 ## Limitations
 
-* The SfListView does not support the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) in `Manual` mode when the [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
-* It does not support for `LoadMoreOption` in `Auto` when the [SfListView.LoadMorePosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMorePosition.html) is `Top`.
-* Call the `CanExecute` method when finite items are loaded in view. It disables `LoadMore` view after all the items are being loaded and avoids repeated triggering of `Execute` method. It is not mandatory to call the `CanExecute` method when loading infinite items. 
+* SfListView does not support to set `Manual` in [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) when [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
+* SfListView supports to set `Auto` in `LoadMoreOption` only when the [SfListView.LoadMorePosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMorePosition.html) is `Bottom`.
+* Handle [LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) execution by implementing `CanExecute` predicate of command. 
 
 ## How to
 
@@ -706,3 +707,50 @@ public partial class MainPage : ContentPage
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Manual-1153429299).
 
 ![Loadmore manual](SfListView_images/SfListView-LoadMoreManuallyUpDirection.jpg)
+
+### How to disable LoadMoreCommand execution when ListView is Empty?
+
+You can skip the load more action by checking the underlying collection count in the execute method.
+
+{% highlight c# %}
+//ViewModel.cs
+LoadMoreItemsCommand = new Command<object>(LoadMoreItems, CanLoadMoreItems);
+
+private bool CanLoadMoreItems(object obj)
+{
+    if (Products.Count >= totalItems)
+        return false;
+    return true;
+}
+
+private async void LoadMoreItems(object obj)
+{
+    if (Products.Count == 0)
+        return;
+    var listView = obj as Syncfusion.ListView.XForms.SfListView;
+    listView.IsBusy = true;
+    await Task.Delay(2500);
+    var index = Products.Count;
+    var count = index + 3 >= totalItems ? totalItems - index : 3;
+    AddProducts(index, count);
+    listView.IsBusy = false;
+}
+
+private void AddProducts(int index, int count)
+{
+    for (int i = index; i < index + count; i++)
+    {
+        var name = Names[i];
+        var p = new Product()
+        {
+            Name = name,
+            Weight = Weights[i],
+            Price = Prices[i],
+            Image = ImageSource.FromResource("LoadMoreUG.LoadMore." + name.Replace(" ", string.Empty) + ".jpg")
+        };
+        Products.Add(p);
+    }
+}
+{% endhighlight %}
+
+You can download the GitHub sample [here](https://github.com/SyncfusionExamples/How-to-disable-LoadMoreCommand-execution-when-ListView-is-Empty)

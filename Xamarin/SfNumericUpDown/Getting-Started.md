@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion NumericUpDown control for Xamarin.Forms 
+title: Getting Started with Syncfusion NumericUpDown for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion NumericUpDown control for Xamarin.Forms platform
 platform: Xamarin
 control: NumericUpDown
@@ -13,34 +13,19 @@ This section provides overview for working with Essential SfNumericUpDown for Xa
 
 ## Add SfNumericUpDown
 
-You can then add the assembly references to the respective projects as shown below
+Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfnumericupdown) link to know about the assemblies required for adding SfNumericUpDown to your project.
 
-<table>
-<tr>
-<th>Project</th>
-<th>Required assemblies</th>
-</tr>
-<tr>
-<td>PCL</td>
-<td>pcl\Syncfusion.SfNumericUpDown.XForms.dll</td>
-</tr>
-<tr>
-<td>Android</td>
-<td>android\Syncfusion.SfNumericUpDown.Android.dll<br/>android\Syncfusion.SfNumericUpDown.XForms.Android.dll<br/>android\Syncfusion.SfNumericUpDown.XForms.dll</td>
-</tr>
-<tr>
-<td>iOS (Unified)</td>
-<td>iOS-unified\Syncfusion.SfNumericUpDown.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericUpDown.XForms.iOS.dll<br/>iOS-unified\Syncfusion.SfNumericUpDown.XForms.dll</td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>uwp\Syncfusion.SfInput.UWP.dll<br/>uwp\Syncfusion.SfShared.UWP.dll<br/>uwp\Syncfusion.SfNumericUpDown.XForms.dll<br/>uwp\Syncfusion.SfNumericUpDown.XForms.UWP.dll</td>
-</tr>
-</table>
+## Launching the SfNumericUpDown on each platform
 
-Currently an additional step is required for iOS project. We need to create an instance of the NumericUpDown custom renderer as shown below. 
+To use SfNumericUpDown inside an application, each platform application must initialize the SfNumericUpDown renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
-Create an instance of SfNumericUpDownRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+### Android and  UWP
+
+The Android and UWP launches the SfNumericUpDown without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
+
+### iOS
+
+To launch SfNumericUpDown in iOS, need to create an instance of SfNumericUpDownRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
 
 {% tabs %}
 
@@ -83,6 +68,8 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 …     
 }
 {% endhighlight %}
+
+## Create a Simple SfNumericUpDown
 
 The SfNumericUpDown control configured entirely in C# code or by using XAML markup. The following steps explains how to create a SfNumericUpDown and configure its elements.
 
@@ -140,7 +127,7 @@ The SfNumericUpDown control display value can be set using `Value` property.
 
 SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	numericUpDown.Value= 5;
-	this.Content = numericTextBox;
+	this.Content = numericUpDown;
 
 {% endhighlight %}
 
@@ -149,7 +136,7 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 ## Enable Parsing Mode
 
-SfNumericTextBox provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
+SfNumericUpDown provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
 
 {% tabs %}
 
@@ -164,7 +151,7 @@ SfNumericTextBox provides option to display the value in double or decimal. Foll
 SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	numericUpDown.Value= 5;
 	numericUpDown.ParsingMode=Parsers.Decimal;
-	this.Content = numericTextBox;
+	this.Content = numericUpDown;
 	
 {% endhighlight %}
 
@@ -173,7 +160,7 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 ## Add Format String
 
-SfNumericTextBox provides option to format the display text in currency format. 
+SfNumericUpDown provides option to format the display text in currency format. 
 
 It has three types,
 
@@ -199,13 +186,13 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 	numericUpDown.Value= 5;
 	numericUpDown.ParsingMode=ParsingMode.Decimal;
 	numericUpDown.FormatString = "c";
-	this.Content = numericTextBox;
+	this.Content = numericUpDown;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/gettingstarted.png)
+![Xamarin.Forms Numeric Up-Down](images/gettingstarted.png)
 
 ## Structure
 
@@ -237,3 +224,4 @@ Spin button position can be customized as follows.
 
 {% endtabs %}
 
+You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2074275096.zip)

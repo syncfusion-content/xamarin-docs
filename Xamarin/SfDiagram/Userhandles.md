@@ -1,7 +1,7 @@
 ---
-title: Adding userhandles for diagram
-description: Learn how to add userhandles in diagram
-platform: XForms
+title: Adding userhandles for diagram | Syncfusion
+description: Learn how to add userhandles ,userhandles customization and its event handle in diagram for Xamarin.Forms
+platform: xamarin
 control: SfDiagram
 documentation: UG
 keywords: 
@@ -108,3 +108,4 @@ User handle position can be moved or adjusted from its default position. The fol
 {% endtabs %}
 ![Customize user handle position in Xamarin.Forms diagram](Userhandles_images/Userhandles_img2.jpeg)
 
+N> Diagram supports user handle in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.

@@ -1,6 +1,6 @@
 ---
-title: Node in Xamarin.Forms Diagram control
-description: Node
+title: Node in Xamarin.Forms Diagram control | Syncfusion
+description: Briefs about node,customization of node and node constraints in SfDiagram for Xamarin.Forms
 platform: xamarin
 control: SfDiagram
 documentation: ug

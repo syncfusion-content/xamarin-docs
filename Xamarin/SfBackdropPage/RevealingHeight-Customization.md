@@ -9,13 +9,13 @@ documentation: ug
 
 # Reveal Height Customization
 
-When revealing the `back layer`(https://help.syncfusion.com/xamarin/sfbackdroppage/getting-started#reveal-and-conceal-the-back-layer), the front layer will be moved downwards. By setting the [`BackLayerRevealOption`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~BackLayerRevealOption.html) property of backdrop, you can customize how far the front layer can be moved from the header when revealing the back layer.
+When revealing the [`back layer`](https://help.syncfusion.com/xamarin/sfbackdroppage/getting-started#reveal-and-conceal-the-back-layer), the front layer will be moved downwards. By setting the [`BackLayerRevealOption`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~BackLayerRevealOption.html) property of backdrop, you can customize how far the front layer can be moved from the header when revealing the back layer.
 
 The following options are provided to move the front layer:
 
-[`Fill`] – Moves the front layer downwards to the entire height of the page except the [`RevealedHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~RevealedHeight.html).
+[`Fill`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.RevealOption.html) – Moves the front layer downwards to the entire height of the page excluding the [`RevealedHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.BackdropFrontLayer~RevealedHeight.html).
 
-[`Auto`] – Moves the front layer downwards to the height of the back layer content.
+[`Auto`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.RevealOption.html) – Moves the front layer downwards to the height of the back layer content.
 
 {% tabs %} 
 
@@ -27,9 +27,9 @@ The following options are provided to move the front layer:
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
     x:Class="BackdropGettingStarted.BackdropSamplePage"
-	BackLayerRevealOption="Fill">
+	BackLayerRevealOption="Auto">
 	<backdrop:SfBackdropPage.FrontLayer>
-        <backdrop:BackdropFrontLayer RevealedHeight="30">
+        <backdrop:BackdropFrontLayer>
             <Grid />
         </backdrop:BackdropFrontLayer>
     </backdrop:SfBackdropPage.FrontLayer>
@@ -47,11 +47,10 @@ namespace BackdropGettingStarted
     {
         public BackdropSamplePage()
         {
-            this.BackLayerRevealOption = RevealOption.Fill;
+            this.BackLayerRevealOption = RevealOption.Auto;
             this.FrontLayer = new BackdropFrontLayer()
             {
-                Content = new Grid(),
-                RevealedHeight = 30
+                Content = new Grid()
             };
         }
     }
@@ -61,3 +60,4 @@ namespace BackdropGettingStarted
 
 {% endtabs %}
 
+![Revealing height customization](RevealingHeight_images/Revealing_height.jpg)

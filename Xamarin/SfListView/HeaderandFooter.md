@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Header and Footer in SfListView
+title: Header and Footer in Syncfusion ListView
 description: Describes the Header and Footer features in SfListView.
 platform: xamarin
 control: SfListView
@@ -309,7 +309,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_FooterTabView707147165).
+You can download the entire source code of this demo [here](https://github.com/SyncfusionExamples/How-to-achieve-tab-view-appearance-in-listview-header).
 
 ![Xamarin.Forms listview with tabview header](SfListView_images/Informations.jpg)
 

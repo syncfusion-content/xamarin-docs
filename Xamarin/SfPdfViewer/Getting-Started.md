@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Getting Started for Essential Xamarin.Forms PDF viewer
-description: getting started
+title:  View & review PDF using PDF Viewer Xamarin.Forms | Syncfusion
+description: Getting started section demonstrates how to create an application that displays a PDF file using PDF Viewer Xamarin.Forms.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
@@ -27,7 +27,7 @@ N> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial se
 
 Create a new cross platform application for Xamarin.Forms.Portable in the Visual Studio with the project name "GettingStarted" and refer the above mentioned assemblies to the respective projects.
 
-An additional step is required to render the SfPdfViewer control in iOS project. You need to create an instance of the SfPdfDocumentViewRenderer class within FinishedLaunching method of AppDelegate class in iOS project as shown below
+An additional step is required to render the SfPdfViewer control in `iOS` project. You need to call the `Syncfusion.SfPdfViewer.XForms.iOS.SfPdfDocumentViewRenderer.Init()` and `Syncfusion.SfRangeSlider.XForms.iOS.SfRangeSliderRenderer.Init();` in the `FinishedLaunching` overridden method of the `AppDelegate` class after the Xamarin.Forms Framework has been initialized and before the `LoadApplication` is called, as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -35,8 +35,9 @@ An additional step is required to render the SfPdfViewer control in iOS project.
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     global::Xamarin.Forms.Forms.Init();
+    Syncfusion.SfPdfViewer.XForms.iOS.SfPdfDocumentViewRenderer.Init();
+    Syncfusion.SfRangeSlider.XForms.iOS.SfRangeSliderRenderer.Init();
     LoadApplication(new App());
-    new SfPdfDocumentViewRenderer();
     return base.FinishedLaunching(app, options);
 }
 
@@ -170,7 +171,7 @@ Add the following XAML code in the MainPage.xaml in the portable project.
 
 The sample that illustrates loading a PDF in MVVM binding can be downloaded from the link below. 
 
-<http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted643780204> 
+<http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2072455774> 
 
 ### Loading a PDF in code-behind
 
@@ -322,3 +323,22 @@ PDF viewer has the BindableProperty ZoomPercentage that is used to retrieve and 
 {% endtabs %}
 
 On binding the entry control to ZoomPercentage property of the PDF viewer instance, the current zoom percentage being displayed in the PDF viewer is displayed in the entry control, and the PDF viewer would be zoomed based on the value entered.
+
+## How to get and set Horizontal and Vertical Offsets in PDF Viewer?
+
+Navigate to the specified vertical and horizontal offset values in PDF Viewer using ScrollToOffset (HorizontalOffset and VerticalOffset) methods and you can also retrieve the current horizontal and vertical offset position by using HorizontalOffset and VerticalOffset properties respectively in [SfPdfViewer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPdfViewer.XForms~Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) class.
+
+{% tabs %}
+{% highlight c# %}
+
+//Retrieves the current horizontal offset of the PdfViewerControl
+m_currentHorizontalOffset = pdfViewerControl.HorizontalOffset;
+
+//Retrieves the current vertical offset of the PdfViewerControl
+m_currentVerticalOffset = pdfViewerControl.VerticalOffset;
+
+//Scrolls the content to the specified vertical offset position in the PdfViewerControl
+pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset+10, m_currentVerticalOffset+10);
+
+{% endhighlight %}
+{% endtabs %}

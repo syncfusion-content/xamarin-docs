@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Select and copy the text
-description: select and copy the text
+title:  Select & copy text using PDF Viewer Xamarin.Forms | Syncfusion
+description: Select and copy text support allows user to select the text in the PDF document and copy it to the clipboard using PDF Viewer Xamarin.Forms.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
@@ -46,7 +46,7 @@ pdfViewerControl.IsTextSelectionEnabled = false;
 
 To select a text in the PDF page, press and hold any word of the text until selection bubbles appear at the top-left and bottom-right corners of its bounds. Then, use the left bubble to select the text at the left and top, and the right bubble to select the text at the right and bottom directions. 
 
-![](pdfviewer_images/textselection.png)
+![Text selection](pdfviewer_images/textselection.png)
 
 ## How to enable or disable the context menu?
 

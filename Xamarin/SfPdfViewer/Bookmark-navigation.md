@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Bookmark Navigation
-description: Bookmark Navigation
+title:  Bookmark Navigation in PDF Viewer Xamarin.Forms | Syncfusion
+description: Bookmark navigation allows users to view the bookmarks and navigate to the destination saved in the bookmarks in PDF Viewer Xamarin.Forms.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
@@ -52,7 +52,7 @@ pdfViewerControl. BookmarkNavigationEnabled = false;
 
 The bookmark pane is expanded and collapsed by clicking the bookmark button from the built-in toolbar.
 
-![](pdfviewer_images/BookmarkButton.png)
+![Button for Bookmark](pdfviewer_images/BookmarkButton.png)
 
 ## Expand and collapse the bookmark pane programmatically
 
@@ -135,4 +135,4 @@ private void PdfViewerControl_BookmarkNavigationOccurred(object sender, Syncfusi
 {% endhighlight %}
 {% endtabs %}
 
-![](pdfviewer_images/bookmark.png)
+![SfPdfViewer](pdfviewer_images/bookmark.png)

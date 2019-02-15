@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Working with built-in toolbar
-description: Working with built-in toolbar
+title:  Built-in toolbar in PDF Viewer Xamarin.Forms | Syncfusion
+description: The PDF Viewer Xamarin.Forms allows the users to perform almost all operations in PDF Viewer using the built-in toolbar.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
@@ -91,7 +91,7 @@ pdfViewerControl.Toolbar.Enabled = true;
 
 ![Build-in-toolbar enable in PDF Viewer](pdfviewer_images/ToolbarEnabled.png)
 
-N>**By default, the built-in toolbar of SfPdfViewer is always visible.
+N>By default, the built-in toolbar of SfPdfViewer is always visible.
 
 ## How to disable/enable bookmark
 

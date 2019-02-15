@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Working with text markup annotation
-description: Working with text markup annotation
+title:  Add & modify text markups PDF Viewer Xamarin.Forms | Syncfusion
+description: PDF Viewer Xamarin.Forms allows user to highlight, underline and strikethrough the text content in the PDF document.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
@@ -267,7 +267,7 @@ pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.Color = Color.Yello
 {% endhighlight %}
 {% endtabs %}
 
-N>**Setting this property will not edit the color of annotations that are included in prior.
+N>Setting this property will not edit the color of annotations that are included in prior.
 
 ### After inclusion of the annotation
 
@@ -348,4 +348,4 @@ private void saveButton_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-N>*The CanUndo property is used to identify whether a document loaded in the PDF viewer is edited or not. When this property is set to true, means that the document in the PDF viewer is edited. 
+N>The `CanUndo` property is used to identify whether a document loaded in the PDF viewer is edited or not. When this property is set to true, means that the document in the PDF viewer is edited. 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion NavigationDrawer control for Xamarin.Forms
+title: Getting Started for Syncfusion.Xamarin.Forms NavigationDrawer
 description: A quick tour to initial users on Syncfusion NavigationDrawer control for Xamarin.Android platform
 platform: Xamarin
 control: NavigationDrawer
@@ -208,7 +208,7 @@ public MainPage()
 
 N> Add the required images in drawable folder of Android project, Assets folder of iOS project and add it directly to the UWP project.
 
-![](Images/HamburgerIcon.png)
+![CustomView Image](Images/HamburgerIcon.png)
 
 
 ## Set ListView as Drawer Content
@@ -295,8 +295,8 @@ public MainPage()
 
 {% endtabs %}
 
-![](Images/GettingStarted.png)
+![OverView Image for NavigationDrawer](Images/GettingStarted.png)
 
 We have created knowledge base document by creating SfNavigationDrawer sample fully in code behind. Please refer the same in this [link.](https://www.syncfusion.com/kb/8020/how-to-create-sfnavigationdrawer-sample-in-code-behind)
 
-You can find the Getting Started Sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfNavigationDrawerSampleBrowser-2067704556.zip)
+You can find the Getting Started Sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1660685208.zip)

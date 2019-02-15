@@ -29,6 +29,8 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sftreeview) to know about the dependent assemblies for TreeView. 
 
+N>Install the same version of the TreeView NUGET in all the projects.
+
 I> After adding the reference, an additionally need to initialize the renderer for [iOS](https://help.syncfusion.com/xamarin/treeview/getting-started#ios) and [UWP](https://help.syncfusion.com/xamarin/treeview/getting-started#universal-windows-platform-uwp) projects.  
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also must include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
@@ -123,11 +125,11 @@ In this walk through, you will create a new application with the TreeView that i
 
 ## Creating the Project
 
-Create a new blank (Xamarin.Forms.Portable) application in Xamarin Studio or Visual Studio for Xamarin.Forms.
+Create a new blank [(Xamarin.Forms.NET Standard) application](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/get-started/first-app/?pivots=windows) in Xamarin Studio or Visual Studio for Xamarin.Forms.
 
 ## Adding the tree view in Xamarin.Forms 
 
- 1. Add the required assembly references to the PCL, and renderer projects as discussed in the [Assembly deployment](#assembly-deployment) section.
+ 1. Add the required assembly references to the corresponding projects as discussed in the [Assembly deployment](#assembly-deployment) section.
  2. Import the SfTreeView control namespace Syncfusion.XForms.TreeView.
  3. Set the TreeView control to the ContentPage.
 
@@ -243,7 +245,7 @@ namespace GettingStarted
 
 Now, run the application to render the below output:
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedUnbound1766363128).
+You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/xamarin-treeview-unbound-mode).
 
 ![Xamarin Forms TreeView Unbound](TreeView_images/TreeView_UnBound.png)
 
@@ -528,7 +530,7 @@ MainPage = new ContentPage { Content = treeView };
 
 Now, run the application to render the similar output:
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1582736825).
+You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/xamarin-treeview-databinding).
 
 ![Xamarin Forms TreeView Bound](TreeView_images/TreeView_Templating.png)
 

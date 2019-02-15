@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Item Drag and Drop in SfListView
-description: Describes about reorder the items in the ListView by drag and drop behavior and its customization.
+title: Item Drag and Drop in Xamarin.forms ListView | Syncfusion
+description: This topics describes about re-ordering the items in Syncfusion Xamarin.Forms ListView by drag and drop and its customizations.  
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -393,26 +393,26 @@ private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
   if (e.Action == DragAction.Dragging)
   {
     var currentGroup = this.GetGroup(e.ItemData);
-    var container = this.listView.GetVisualContainer();
-    var groupIndex = this.listView.DataSource.Groups.IndexOf(currentGroup);
-    var nextGroup = (groupIndex + 1 < this.listView.DataSource.Groups.Count) ? this.listView.DataSource.Groups[groupIndex + 1] : null;
+    var container = this.ListView.GetVisualContainer();
+    var groupIndex = this.ListView.DataSource.Groups.IndexOf(currentGroup);
+    var nextGroup = (groupIndex + 1 < this.ListView.DataSource.Groups.Count) ? this.ListView.DataSource.Groups[groupIndex + 1] : null;
     ListViewItem groupItem = null;
     ListViewItem nextGroupItem = null;
 
     foreach (ListViewItem item in container.Children)
     {
-		if (item.BindingContext == null)
-            continue;
+      if (item.BindingContext == null || !item.Visibility)
+        continue;
 
-		if (item.BindingContext.Equals(currentGroup))
-			groupItem = item;
+      if (item.BindingContext.Equals(currentGroup))
+        groupItem = item;
 
-		if (nextGroup != null && item.BindingContext.Equals(nextGroup))
-			nextGroupItem = item;
-    }
+      if (nextGroup != null && item.BindingContext.Equals(nextGroup))
+        nextGroupItem = item;
+      }
 
-    if (groupItem == null || e.Bounds.Y <= groupItem.Y + groupItem.Height || nextGroupItem != null && (e.Bounds.Y + e.Bounds.Height >= nextGroupItem.Y))
-		e.Handled = true;
+      if (groupItem != null && e.Bounds.Y <= groupItem.Y + groupItem.Height || nextGroupItem != null && (e.Bounds.Y + e.Bounds.Height >= nextGroupItem.Y))
+        e.Handled = true;
   }
 }
 
@@ -433,7 +433,7 @@ private GroupResult GetGroup(object itemData)
 {% endhighlight %}
 {% endtabs %}
 
-Download sample for the previous source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SkipDragging671098196).
+Download sample from GitHub [here](https://github.com/SyncfusionExamples/How-to-skip-dragging-an-item-from-one-group-to-another-group-in-xamarin-forms-sflistview)
 
 ## Drag and drop customization
 

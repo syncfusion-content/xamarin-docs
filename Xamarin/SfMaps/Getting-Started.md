@@ -15,7 +15,7 @@ This section explains the steps required to configure the maps control and custo
 
 Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org/). To add maps to your project, open the NuGet package manager in Visual Studio, search for [syncfusion.xamarin.sfmaps](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaps), and then install it.
 
-![](Images/maps.png)
+![Xamarin maps reference](Images/maps.png)
 
 To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of using NuGet, refer to this [documentation](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfmaps) to learn about the dependent assemblies.
 
@@ -158,7 +158,7 @@ this.Content = map;
 
 The following screenshot illustrates the result of adding shape files.
 
-![](Images/GettingStartedimg1.jpeg)
+![Xamarin maps shape files](Images/GettingStartedimg1.jpeg)
 
 ## GeoJSON support
 
@@ -412,8 +412,8 @@ SfMaps map = new SfMaps();
 
 The following screenshot illustrates the result of the above code sample.
 
-![](Images/GettingStartedimg2.PNG) 
+![Xamarin maps getting started](Images/GettingStartedimg2.PNG) 
 
-You can download the complete [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MapsSample-1975206216.zip) sample.
+You can download the complete [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Maps_GettingStarted182763643) sample.
 
 

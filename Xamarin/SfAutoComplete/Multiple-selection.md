@@ -177,7 +177,7 @@ Customization can be done for Token. There are various ways to customize the tok
 
 * `CornerRadius` - sets the corner radius for the token.
 
-* `DeleteButtonPlacement` - Allows you change the position of delete button in token to either `Left` or `Right`. By default, it is set to the right.
+* `DeleteButtonPlacement` - sets the placement of delete button. `Left` and `Right` are the placement options. By default, it is set placed at right side of the token. 
 
 {% tabs %}
 

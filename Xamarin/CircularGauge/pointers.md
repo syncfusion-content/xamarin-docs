@@ -55,7 +55,7 @@ You can add multiple pointers to the gauge to point multiple values on the same 
 
 {% endtabs %}
 
-![](pointers_images/needle-pointer/default.png)
+![Circular Gauge Pointer Image](pointers_images/needle-pointer/default.png)
 
 ### Setting needle pointer type
 
@@ -105,7 +105,7 @@ The appearance of the needle pointer can be customized by using the [`Type`](htt
 
 {% endtabs %}
 
-![](pointers_images/needle-pointer/bar-pointer.png)
+![Circular Gauge Bar Pointer Image](pointers_images/needle-pointer/bar-pointer.png)
 
 ### Setting needle pointer type
 
@@ -148,7 +148,7 @@ The appearance of the needle pointer can be customized by using the [`Type`](htt
 
 {% endtabs %}
 
-![](pointers_images/needle-pointer/needle-pointer.png)
+![Circular Gauge Needle Pointer](pointers_images/needle-pointer/needle-pointer.png)
 
 ### Needle pointer customization
 
@@ -195,7 +195,7 @@ The length of the needle is controlled by using the [`LengthFactor`](https://hel
 
 {% endtabs %}
 
-![](pointers_images/needle-pointer/needle-customization.png)
+![Circular Gauge Needle Customization](pointers_images/needle-pointer/needle-customization.png)
 
 ### Knob customization
 
@@ -213,7 +213,7 @@ Knob of the needle pointer can be customized by using the [`KnobColor`](https://
 
                  <gauge:Scale.Pointers>
                      <gauge:NeedlePointer  Value="10" KnobRadius="15" KnobStrokeColor="#007DD1"
-                                            KnobStrokeWidth="8" KnobColor="White"/>                
+                                            KnobStrokeWidth="8" KnobColor="White" KnobRadiusFactor="0.1"/>                
                  </gauge:Scale.Pointers>
 		 
 		  </gauge:Scale>
@@ -237,6 +237,7 @@ Knob of the needle pointer can be customized by using the [`KnobColor`](https://
     needlePointer.KnobStrokeColor = Color.FromHex("#007DD1");
     needlePointer.KnobColor = Color.White;
     needlePointer.KnobStrokeWidth = 8;
+    needlePointer.KnobRadiusFactor = 0.1;
     scale.Pointers.Add(needlePointer);
     scales.Add(scale);
     circularGauge.Scales = scales;  
@@ -245,7 +246,7 @@ Knob of the needle pointer can be customized by using the [`KnobColor`](https://
 
 {% endtabs %}
 
-![](pointers_images/needle-pointer/knob-customization.png)
+![Circular Gauge Knob customization](pointers_images/needle-pointer/knob-customization.png)
 
 ### Setting tail for needle pointer
 
@@ -293,7 +294,7 @@ Tail of the needle pointer can be customized by using the [`TailColor`](https://
 
 {% endtabs %}
 
-![](pointers_images/needle-pointer/tail.png)
+![Circular Gauge Needle Pointer with Tail](pointers_images/needle-pointer/tail.png)
 
 ## Range pointer
 
@@ -336,7 +337,7 @@ A range pointer is an accenting line or shaded background range that can be plac
 
 {% endtabs %}
 
-![](pointers_images/range-pointer/range-pointer.png)
+![Circular Gauge Range Pointer](pointers_images/range-pointer/range-pointer.png)
 
 ### Range pointer customization
 
@@ -383,7 +384,7 @@ The range pointer’s UI is customized by using the [`Color`](https://help.syncf
 
 {% endtabs %}
 
-![](pointers_images/range-pointer/rangepointer-customization.png)
+![Circular Gauge Range Pointer Customization](pointers_images/range-pointer/rangepointer-customization.png)
 
 ### Setting position for range pointer
 
@@ -434,7 +435,7 @@ The [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 
 {% endtabs %}
 
-![](pointers_images/range-pointer/rangepointer-offset.png)
+![Circular Gauge Range Pointer Offset](pointers_images/range-pointer/rangepointer-offset.png)
 
 #### Setting start and end offset for range pointer
 
@@ -479,7 +480,7 @@ The [`RangePointer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 
 {% endtabs %}
 
-![](pointers_images/range-pointer/rangepointer-start-end-offset.png)
+![Circular Gauge Range Pointer Start and End Offset](pointers_images/range-pointer/rangepointer-start-end-offset.png)
 
 ### Setting range cap for range pointer
 
@@ -540,7 +541,7 @@ The [`RangeCap`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 
 {% endtabs %}
 
-![](pointers_images/range-pointer/range-cap.png)
+![Circular Gauge Range cap](pointers_images/range-pointer/range-cap.png)
 
 ## Marker pointer
 
@@ -594,7 +595,7 @@ The image is used to denote the pointer value instead of rendering the marker sh
 
 {% endtabs %}
 
-![](pointers_images/marker-pointer/marker-pointer.png)
+![Circular Gauge Marker Pointer](pointers_images/marker-pointer/marker-pointer.png)
 
 ### Setting image marker shape
 
@@ -641,7 +642,7 @@ The image is used to denote the pointer value instead of rendering the marker sh
 
 {% endtabs %}
 
-![](pointers_images/marker-pointer/image.png)
+![Circular Gauge Marker Image](pointers_images/marker-pointer/image.png)
 
 ### Marker pointer customization
 
@@ -689,7 +690,7 @@ The marker can be customized in terms of color, width, and height by using the [
 
 {% endtabs %}
 
-![](pointers_images/marker-pointer/markerpointer-customization.png)
+![Circular Gauge Marker Customization](pointers_images/marker-pointer/markerpointer-customization.png)
 
 ### Setting multiple pointers
 
@@ -758,7 +759,7 @@ In addition to the default pointer, you can add n number of pointers to a scale 
 
 {% endtabs %}
 
-![](pointers_images/marker-pointer/multiple-pointers.png)
+![Circular Gauge Multiple Pointers](pointers_images/marker-pointer/multiple-pointers.png)
 
 ### Setting animation for pointer
 
@@ -846,7 +847,7 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
 
 {% endtabs %}
 
-![](pointers_images/marker-pointer/animation.gif)
+![Circular Gauge Pointer Animation](pointers_images/marker-pointer/animation.gif)
 
 ### Setting pointer drag
 
@@ -910,4 +911,4 @@ Pointers can be dragged over the scale value. It can be achieved by clicking and
 
 {% endtabs %}
 
-![](pointers_images/marker-pointer/pointer-interaction.gif)
+![Circular Gauge Pointer Drag](pointers_images/marker-pointer/pointer-interaction.gif)

@@ -1,6 +1,6 @@
 ---
-title: Diagram for Essential Xamarin.Forms Diagram
-description: diagram
+title: Diagram control for Xamarin.Forms | Syncfusion
+description: Briefs about diagram,stencil,page setting and diagram constraints in SfDiagram for Xamarin.Forms
 platform: xamarin
 control: SfDiagram
 documentation: ug
@@ -136,4 +136,6 @@ Supports customizing the zoom levels. You can set minimum zoom level value to 0.
   diagram.MaximumZoomFactor = 5.00f;
 {% endhighlight %}
 {% endtabs %}
+
+N> Diagram supports zooming with custom option in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
 

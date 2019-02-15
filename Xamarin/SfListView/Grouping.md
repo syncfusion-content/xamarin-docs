@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Grouping in SfListView
+title: Grouping in Syncfusion ListView
 description: Describes about the grouping and its functionalities in SfListView.
 platform: xamarin
 control: SfListView
@@ -10,6 +10,8 @@ documentation: ug
 # Grouping 
 
 A group represents a collection of items belongs to a category. When grouping is applied, the data is organized into different groups based on key values. Each group is identified by its [Key](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult~Key.html), by which you can get the underlying data in the group.
+
+N> When ItemsSource changed for ListView, [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) will be cleared by default. You need to add `DataSource.GroupDescriptors` again after changing ItemsSource if you want to retain grouping in listview.
 
 ## Programmatic grouping
 
@@ -573,7 +575,9 @@ The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/cref_fi
 
 ## Stick group header
 
-To stick the group header to view, enable the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html). If `IsStickyGroupHeader` is true, the corresponding group header will be in view until the last item of the group goes out of view when scrolling.
+To stick the group header to view, enable the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyGroupHeader.html). If `IsStickyGroupHeader` is true, the corresponding group header will be in view until the last item of the group goes out of view, and sticky group header will move when another group header leads while scrolling.
+
+I> If sticky group header is enabled and `AutoFitMode` is `Height`, the panning experience will not be smooth or item's layout will not work as expected. To make the panning experience smooth, set the same size for all group header items by handling the `QueryItemSize` event.
 
 N> When the `IsStickyGroupHeader` is set to true, the [IsStickyHeader](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyHeader.html) property will be changed to true because the header item can not be scrolled. When the `IsStickyHeader` is set to false, if `IsStickyGroupHeader` is true then it will be changed to false because the group header item cannot be sticky.
 
@@ -587,9 +591,9 @@ listView.IsStickyGroupHeader = true;
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when the group headers are sticky.
+The following screenshot illustrates the output when the group headers are sticky.
 
-![Sticky group header in listview](SfListView_images/SfListView-StickGroupHeader.png)
+![Sticky group header in listview](SfListView_images/Stick-Group-Header-Xamarin-Forms-ListView.gif)
 
 ## Group header customization
 

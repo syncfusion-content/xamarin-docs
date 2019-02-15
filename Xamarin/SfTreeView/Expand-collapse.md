@@ -65,6 +65,22 @@ treeView.CollapseNode(node);
 {% endhighlight %}
 {% endtabs %}
 
+### Expand and Collapse all the nodes
+
+Expand and Collapse all the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) programmatically at runtime by using the `SfTreeView.ExpandAll` method and `SfTreeView.CollapseAll` method.
+
+{% tabs %}
+{% highlight c# %}
+
+//Expands all the nodes
+treeView.ExpandAll();
+
+//Collapses all the nodes
+treeView.CollapseAll();
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Expand and Collapse using Keyboard
 
 TreeView allows to expand and collapse the nodes by using right and left arrows keys. To expand a node, press the right arrow key and to collapse a node, press the left arrow key on the focused item.
@@ -79,3 +95,5 @@ TreeView exposes following events to handle expanding and collapsing of items.
 * [NodeExpanded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~NodeExpanded_EV.html) - It occurs when a node is expanded.
 
 The expanding and collapsing interactions can be handled with the help of `NodeCollapsing` and `NodeExpanding` events and expanded and collapsed interactions can be handled with help of `NodeCollapsed` and `NodeExpanded` events.
+
+You can also achieve handle expand and collapse operation using `ExpandCommand` and `CollapseCommand`.

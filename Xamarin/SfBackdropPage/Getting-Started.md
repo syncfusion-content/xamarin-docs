@@ -19,7 +19,7 @@ You can add SfBackdropPage reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfBackdropPage to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBackdrop](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBackdrop), and then install it.
 
-![Adding Xamarin.Forms Backdrop page reference](Adding SfBackdropPage reference.png)
+![Adding Xamarin.Forms Backdrop page reference](Adding_SfBackdropPage_reference.png)
 
 N> Install the same version of SfBackdropPage NuGet in all the projects.
 

@@ -19,7 +19,7 @@ You can add SfAutoComplete reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfAutoComplete to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfAutoComplete](https://www.nuget.org/packages/Syncfusion.Xamarin.SfAutoComplete), and then install it.
 
-![Adding SfAutoComplete reference](images/Getting-Started\Adding_SfAutoComplete_reference.png)
+![Adding SfAutoComplete reference](images/Getting-Started/Adding_SfAutoComplete_reference.png)
 
 N> Install the same version of SfAutoComplete NuGet in all the projects.
 

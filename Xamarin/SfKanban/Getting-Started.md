@@ -13,7 +13,9 @@ This section provides a quick overview for working with Essential Kanban for Xam
 
 ## Adding SfKanban reference
 
-**Adding SfKanban reference from nuget.org**
+You can add SfKanban reference in one of the following methods:
+
+** Method 1: Adding SfKanban reference from nuget.org**
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add kanban to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfKanban](https://www.nuget.org/packages/Syncfusion.Xamarin.SfKanban/), and then install it.
 
@@ -21,11 +23,11 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 N> Install the same version of kanban NuGet in all the projects.
 
-**Adding SfKanban reference from toolbox**
+**Method 2: Adding SfKanban reference from toolbox**
 
 Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfKanban control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Adding SfKanban assemblies manually from the installed location**
+**Method 3: Adding SfKanban assemblies manually from the installed location**
 
 If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
 

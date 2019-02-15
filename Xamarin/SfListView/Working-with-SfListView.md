@@ -246,132 +246,120 @@ The SfListView allows displaying a pop-up menu with different menu items to an i
 
 Defining SfPopUpView
 
-{% tabs %}
-{% highlight xaml %}
-<ContentView>
-
-    <ContentView.Content>
-        <StackLayout BackgroundColor="Teal" >
-            <Button x:Name="SortButton" Text="Sort" Clicked="SortButton_Clicked"/>
-            <Button x:Name="DeleteButton" Text="Delete" Clicked="DeleteButton_Clicked"/>
-        </StackLayout>
-    </ContentView.Content>
-
-</ContentView>
-
-{% endhighlight %}
 {% highlight c# %}
 
-public class SfPopUpView : ContentView
+namespace SfListViewSample
 {
-    public SfPopUpView()
+    public class Behavior : Behavior<SfListView>
     {
-        StackLayout stackLayout = new StackLayout { BackgroundColor = Color.Teal };
-        Button button = new Button { Text = "Sort", };
-        button.Clicked += SortButton_Clicked;
-        Button button1 = new Button { Text = "Delete", };
-        button1.Clicked += DeleteButton_Clicked;
-        stackLayout.Children.Add(button);
-        stackLayout.Children.Add(button1);
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-Layout the Pop-Up Menu
-
-{% highlight c# %}
-
-public partial class SfPopUpView : ContentView
-{
-    int sortOrder = 0;
-    Contacts item;
-    SfListView listview;
-
-    public SfListView ListView
-    {
-        get { return listview; }
-        set
+        SfListView ListView;
+        int sortorder = 0;
+        Contacts item;
+        SfPopupLayout popupLayout;
+        protected override void OnAttachedTo(SfListView listView)
         {
-            if (listview != value)
+            ListView = listView;
+            ListView.ItemHolding += ListView_ItemHolding;
+            ListView.ScrollStateChanged += ListView_ScrollStateChanged;
+            ListView.ItemTapped += ListView_ItemTapped;
+            base.OnAttachedTo(listView);
+        }
+
+        private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
+        {
+            popupLayout.Dismiss();
+        }
+
+        private void ListView_ScrollStateChanged(object sender, ScrollStateChangedEventArgs e)
+        {
+            popupLayout.Dismiss();
+        }
+
+        private void ListView_ItemHolding(object sender, ItemHoldingEventArgs e)
+        {
+            item = e.ItemData as Contacts;
+            popupLayout = new SfPopupLayout();
+            popupLayout.PopupView.HeightRequest = 100;
+            popupLayout.PopupView.WidthRequest = 100;
+            popupLayout.PopupView.ContentTemplate = new DataTemplate(() =>
             {
-                listview = value;
-                OnListViewChanged(listview);
+
+                var mainStack = new StackLayout();
+                mainStack.BackgroundColor = Color.Teal;
+
+                var deletedButton = new Button()
+                {
+                    Text = "Delete",
+                    HeightRequest=50,
+                    BackgroundColor=Color.Teal,
+                    TextColor = Color.White
+                };
+                deletedButton.Clicked += DeletedButton_Clicked;
+                var sortButton = new Button()
+                {
+                    Text = "Sort",
+                    HeightRequest = 50,
+                    BackgroundColor = Color.Teal,
+                    TextColor=Color.White
+                };
+                sortButton.Clicked += SortButton_Clicked;
+                mainStack.Children.Add(deletedButton);
+                mainStack.Children.Add(sortButton);
+                return mainStack;
+
+            });
+            popupLayout.PopupView.ShowHeader = false;
+            popupLayout.PopupView.ShowFooter = false;
+            if (e.Position.Y + 100 <= ListView.Height && e.Position.X + 100 > ListView.Width)
+                popupLayout.Show((double)(e.Position.X - 100), (double)(e.Position.Y));
+            else if (e.Position.Y + 100 > ListView.Height && e.Position.X + 100 < ListView.Width)
+                popupLayout.Show((double)e.Position.X, (double)(e.Position.Y - 100));
+            else if (e.Position.Y + 100 > ListView.Height && e.Position.X + 100 > ListView.Width)
+                popupLayout.Show((double)(e.Position.X - 100), (double)(e.Position.Y - 100));
+            else
+                popupLayout.Show((double)e.Position.X, (double)(e.Position.Y));
+        }
+
+        private void SortButton_Clicked(object sender, EventArgs e)
+        {
+            if (ListView == null)
+                return;
+
+            ListView.DataSource.SortDescriptors.Clear();
+            popupLayout.Dismiss();
+            ListView.DataSource.LiveDataUpdateMode = LiveDataUpdateMode.AllowDataShaping;
+            if (sortorder == 0)
+            {
+                ListView.DataSource.SortDescriptors.Add(new SortDescriptor { PropertyName = "ContactName", Direction = ListSortDirection.Descending });
+                sortorder = 1;
+            }
+            else
+            {
+                ListView.DataSource.SortDescriptors.Add(new SortDescriptor { PropertyName = "ContactName", Direction = ListSortDirection.Ascending });
+                sortorder = 0;
             }
         }
-    }
 
-    public void ShowPopup(double x, double y)
-    {
-        this.IsVisible = true;
-        this.Layout(new Rectangle(x, y, 100, 100));
-    }
-
-    public void Dismiss()
-    {
-        this.IsVisible = false;
-    }
-
-    private void OnListViewChanged(SfListView listview)
-    {
-        if (listview != null)
+        private void Dismiss()
         {
-            listview.ScrollStateChanged += SfListView_ScrollStateChanged;
-            listview.ItemTapped += SfListView_ItemTapped;
-            listview.ItemHolding += SfListView_ItemHolding;
+            popupLayout.IsVisible = false;
         }
-    }
 
-    private void SfListView_ItemHolding(object sender, ItemHoldingEventArgs e)
-    {
-        item = e.ItemData as Contacts;
-        this.ShowPopup(e.Position.X, e.Position.Y);
-    }
-
-    private void SfListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
-    {
-        this.Dismiss();
-    }
-
-    private void SfListView_ScrollStateChanged(object sender, ScrollStateChangedEventArgs e)
-    {
-        this.Dismiss();
-    }
-
-    private void DeleteButton_Clicked(object sender, EventArgs e)
-    {
-        if (ListView == null)
-            return;
-
-        var source = ListView.ItemsSource as IList;
-
-        if (source != null && source.Contains(item))
-            source.Remove(item);
-        else
-            App.Current.MainPage.DisplayAlert("Alert", "Unable to delete the item", "OK");
-
-        item = null;
-        source = null;
-    }
-
-    private void SortButton_Clicked(object sender, EventArgs e)
-    {
-        if (ListView == null)
-            return;
-
-        ListView.DataSource.SortDescriptors.Clear();
-        this.Dismiss();
-        ListView.DataSource.LiveDataUpdateMode = LiveDataUpdateMode.AllowDataShaping;
-        if (sortOrder == 0)
+        private void DeletedButton_Clicked(object sender, EventArgs e)
         {
-            ListView.DataSource.SortDescriptors.Add(new SortDescriptor { PropertyName = "ContactName", Direction = ListSortDirection.Descending });
-            sortOrder = 1;
-        }
-        else
-        {
-            ListView.DataSource.SortDescriptors.Add(new SortDescriptor { PropertyName = "ContactName", Direction = ListSortDirection.Ascending });
-            sortOrder = 0;
+            
+            if (ListView == null)
+                return;
+
+            var source = ListView.ItemsSource as IList;
+
+            if (source != null && source.Contains(item))
+                source.Remove(item);
+            else
+                App.Current.MainPage.DisplayAlert("Alert", "Unable to delete the item", "OK");
+
+            item = null;
+            source = null;
         }
     }
 }
@@ -398,51 +386,15 @@ Defining the SfListView
                         </Grid>
                     </DataTemplate>
                 </listView:SfListView.ItemTemplate>
-                <local:SfPopUpView IsVisible="{Binding ShowPopUp, Mode=TwoWay}" ListView="{x:Reference listView}"/>
-            </listView:SfListView>
+            <listView:SfListView>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
 
 {% endhighlight %}
-{% highlight c# %}
-
-public partial class ContextMenu : ContentPage
-{
-    public ContextMenu()
-    {
-        var grid = new Grid();
-        var listView = new SfListView();
-        ContactsViewModel contactsViewModel = new ContactsViewModel()
-            listView.ItemsSource = contactsViewModel.Items;
-        listView.ItemTemplate = new DataTemplate(() =>
-        {
-            var grid = new Grid();
-            var image = new Image();
-            image.SetBinding(Image.SourceProperty, new Binding("ContactImage"));
-            var label = new Label();
-            label.SetBinding(Label.TextProperty, new Binding("ContactName"));
-            var label1 = new Label();
-            label1.SetBinding(Label.TextProperty, new Binding("ContactNumber"));
-            grid.Children.Add(image);
-            grid.Children.Add(label);
-            grid.Children.Add(label1);
-            return grid;
-        });
-
-        var popupLayout = new SfPopUpView();
-        popupLayout.SetBinding(SfPopUpView.IsVisibleProperty, new Binding("", BindingMode.TwoWay));
-        popupLayout.ListView = listView;
-
-        grid.Children.Add(listView);
-        grid.Children.Add(popupLayout);
-    }
-}
-
-{% endhighlight %}
 {% endtabs %}
     
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewContextMenu-991690726).
+You can download the entire source code of this demo [here](https://github.com/SyncfusionExamples/How-to-display-context-menu-when-tapping-in-Xamarin.Forms-ListView).
 
 ![Xamarin.Forms listview with Context menu](SfListView_images/ContextMenu.jpg)
 

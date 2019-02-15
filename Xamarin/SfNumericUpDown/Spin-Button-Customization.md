@@ -219,7 +219,6 @@ N> For image and Font icon we need to add the the respective image and TTF file.
 
 public partial class MainPage : ContentPage
     {
-        }
         SfNumericUpDown upDown;
         Grid incrementGrid, decrementGrid;
         UpDownButtonSettings incSettings, decrementSettings;

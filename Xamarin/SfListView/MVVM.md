@@ -166,7 +166,7 @@ public class ContactInfo_NestedListView
     {
        NavigateToSelectModelsCommand = new Command<Object>(NavigateToSelectModels, CanNavigate);
     }
-    private bool CanNavigate(object arg)
+    private bool CanNavigate(object argument)
     {
             return true;
     }

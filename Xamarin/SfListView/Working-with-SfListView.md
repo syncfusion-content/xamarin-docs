@@ -185,7 +185,7 @@ The SfListView has been built from the ground up with an optimized view reuse st
 
  * Bind the ItemsSource property to an IList<T> collection instead of an IEnumerable<T> collection because IEnumerable<T> collection do not support random access.
  * The `SfListView` gets refreshed each and every time a new item added into the underlying collection. Because, when adding items at runtime, the `DataSource` gets refreshed. To avoid this behavior, use [BeginInit()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~BeginInit.html) to stop the RefreshView() calling in each time, and use [EndInit()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~EndInit.html) to start the RefreshView() calling when adding number of finished items.
- * Avoid loading complex layout in the template contains large size of images or nested containers that cause some performance degradation on scrolling. So recommended to use fewer elements and images with less size and resolution to achieve the maximum performance.
+ * Avoid loading complex layout in template of listview. For example, loading large-size images or nested containers degrades the scrolling performance. This practice commonly degrades performance in all platforms, and particularly more in Android version API level 19. So, use fewer elements and images with small size and resolution to achieve the maximum performance.
  * Avoid placing the SfListView inside ScrollView for the following reasons:
     * The SfListView implement its own scrolling.
     * The SfListView will not receive any gestures as it will be handled by the parent ScrollView.
@@ -1172,4 +1172,17 @@ private bool FilterDepartures(object obj)
 {% endtabs %}
 
  You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample842305360).
- 
+
+ ## Dispose listview
+
+You can dispose and release resources used by ListView by calling the [ListView.Dispose](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Dispose().html) method.
+
+{% tabs %}
+{% highlight c# %}
+protected override void OnDisappearing()  
+{  
+   listview.Dispose();  
+   base.OnDisappearing();  
+}
+{% endhighlight %}
+{% endtabs %}

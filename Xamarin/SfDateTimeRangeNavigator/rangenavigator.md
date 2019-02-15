@@ -13,19 +13,21 @@ This section walks you through the steps required to add [`SfDateTimeRangeNaviga
 
 ## Adding SfDateTimeRangeNavigator reference
 
-**Adding SfDateTimeRangeNavigator reference from nuget.org**
+You can add SfDateTimeRangeNavigator reference in one of the following methods:
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add date-time range navigator to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it.
+**Method 1: Adding SfDateTimeRangeNavigator reference from nuget.org**
+
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDateTimeRangeNavigator to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChart/), and then install it.
 
 ![Adding Xamarin.Forms date-time range navigator reference](gettingstarted_images/img3.png)
 
-N> Install the same version of the date-time range navigator NuGet in all the projects.
+N> Install the same version of the SfDateTimeRangeNavigator NuGet in all the projects.
 
-**Adding SfDateTimeRangeNavigator reference from toolbox**
+**Method 2: Adding SfDateTimeRangeNavigator reference from toolbox**
 
 Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfDateTimeRangeNavigator control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Adding SfDateTimeRangeNavigator assemblies manually from the installed location**
+**Method 3: Adding SfDateTimeRangeNavigator assemblies manually from the installed location**
 
 If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
 
@@ -89,11 +91,11 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 To use the range navigator inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
 
+N> If you are adding the references from toolbox, this step is not needed.
+
 ### iOS
 
 To launch the range navigator in iOS, call the SfRangeNavigatorRenderer.Init() method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
-
-N> If you are adding the references from toolbox, this step is not needed.
 
 {% highlight C# %} 
 

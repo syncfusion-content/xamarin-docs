@@ -253,7 +253,7 @@ namespace SfListViewSample
     public class Behavior : Behavior<SfListView>
     {
         SfListView ListView;
-        int sortorder = 0;
+        int sortOrder = 0;
         Contacts item;
         SfPopupLayout popupLayout;
         protected override void OnAttachedTo(SfListView listView)
@@ -328,15 +328,15 @@ namespace SfListViewSample
             ListView.DataSource.SortDescriptors.Clear();
             popupLayout.Dismiss();
             ListView.DataSource.LiveDataUpdateMode = LiveDataUpdateMode.AllowDataShaping;
-            if (sortorder == 0)
+            if (sortOrder == 0)
             {
                 ListView.DataSource.SortDescriptors.Add(new SortDescriptor { PropertyName = "ContactName", Direction = ListSortDirection.Descending });
-                sortorder = 1;
+                sortOrder = 1;
             }
             else
             {
                 ListView.DataSource.SortDescriptors.Add(new SortDescriptor { PropertyName = "ContactName", Direction = ListSortDirection.Ascending });
-                sortorder = 0;
+                sortOrder = 0;
             }
         }
 

@@ -15,7 +15,7 @@ This section explains the steps required to configure the text input layout cont
 
 **Adding SfTextInputLayout reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add Text Input Layout to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfTextInputLayout to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
 
 ![Add Packages](Getting-Started_images/Adding SfTextInputLayout reference.png)
 

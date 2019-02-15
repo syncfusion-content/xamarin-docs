@@ -104,7 +104,6 @@ N> For image and Font icon we need to add the the respective image and TTF file.
 
 {% highlight xaml %}
 
-	<StackLayout Padding="50" >
 
 <updown:SfNumericUpDown x:Name="upDown" SpinButtonAlignment="Both" TextAlignment="Center">
 <updown:SfNumericUpDown.IncrementButtonSettings>
@@ -127,43 +126,70 @@ N> For image and Font icon we need to add the the respective image and TTF file.
 </updown:SfNumericUpDown.DecrementButtonSettings>
 </updown:SfNumericUpDown>
 
-	</StackLayout>
-	
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfNumericUpDown upDown = new SfNumericUpDown();
-upDown.SpinButtonAlignment = SpinButtonAlignment.Both;
-UpDownButtonSettings incSettings = new UpDownButtonSettings();
-Grid incrementStack = new Grid();
-incrementStack.HeightRequest = 40;
-incrementStack.WidthRequest = 40;
-Image incrementImage = new Image();
-incrementImage.HorizontalOptions = LayoutOptions.Center;
-incrementImage.VerticalOptions = LayoutOptions.Center;
-incrementImage.Source = (FileImageSource)ImageSource.FromFile("up.png");
-incrementImage.Aspect = Aspect.AspectFit;
-incrementStack.Children.Add(incrementImage);
-incSettings.ButtonView = incrementStack;
-incSettings.ButtonHeight = 45;
-incSettings.ButtonWidth = 45;
-upDown.IncrementButtonSettings = incSettings;
-UpDownButtonSettings decrementSettings = new UpDownButtonSettings();
-Grid decrementStack = new Grid();
-decrementStack.HeightRequest = 40;
-decrementStack.WidthRequest = 40;
-Image decrementImage = new Image();
-decrementImage.Source = (FileImageSource)ImageSource.FromFile("down.png");
-decrementImage.Aspect = Aspect.AspectFit;
-decrementImage.HorizontalOptions = LayoutOptions.Center;
-decrementImage.VerticalOptions = LayoutOptions.Center;
-decrementStack.Children.Add(decrementImage);
-decrementSettings.ButtonView = decrementStack;
-decrementSettings.ButtonHeight = 45;
-decrementSettings.ButtonWidth = 45;
-upDown.DecrementButtonSettings = decrementSettings;
-this.Content = upDown;
+ public partial class MainPage : ContentPage
+    {
+        SfNumericUpDown upDown;
+        Grid incrementGrid, decrementGrid;
+        UpDownButtonSettings incSettings, decrementSettings;
+        Image incrementImage, decrementImage;
+        public MainPage()
+        {
+            InitializeComponent();
+            incrementGrid = new Grid
+            {
+                HeightRequest = 40,
+                WidthRequest = 40,
+                BackgroundColor = Color.Blue
+            };
+            incSettings = new UpDownButtonSettings
+            {
+                ButtonView = incrementGrid,
+                ButtonHeight = 45,
+                ButtonWidth = 45
+            };
+            incrementImage = new Image
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                Source = (FileImageSource)ImageSource.FromFile("up.png"),
+                Aspect = Aspect.AspectFit
+            };
+            decrementSettings = new UpDownButtonSettings
+            {
+                ButtonView = decrementGrid,
+                ButtonHeight = 45,
+                ButtonWidth = 45
+            };
+            decrementGrid = new Grid
+            {
+                HeightRequest = 40,
+                WidthRequest = 40,
+                BackgroundColor = Color.Red
+
+            };
+            decrementImage = new Image
+            {
+                Source = (FileImageSource)ImageSource.FromFile("down.png"),
+                Aspect = Aspect.AspectFit,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            };
+            upDown = new SfNumericUpDown
+            {
+                SpinButtonAlignment = SpinButtonAlignment.Left,
+                IncrementButtonSettings = incSettings,
+                DecrementButtonSettings = decrementSettings
+            };
+            incrementGrid.Children.Add(incrementImage);
+            decrementGrid.Children.Add(decrementImage);
+            this.Content = upDown;
+        }
+        
+    }
 
 
 {% endhighlight %}
@@ -191,19 +217,39 @@ this.Content = upDown;
 
 {% highlight C# %}
 
-SfNumericUpDown upDown = new SfNumericUpDown();
-upDown.SpinButtonAlignment = SpinButtonAlignment.Both;
-UpDownButtonSettings incSettings = new UpDownButtonSettings();
-incSettings.ButtonImage = "up";
-incSettings.ButtonHeight = 45;
-incSettings.ButtonWidth = 45;
-upDown.IncrementButtonSettings = incSettings;
-UpDownButtonSettings decrementSettings = new UpDownButtonSettings();
-decrementSettings.ButtonImage = "down";
-decrementSettings.ButtonHeight = 45;
-decrementSettings.ButtonWidth = 45;
-upDown.DecrementButtonSettings = decrementSettings;
-this.Content = upDown;
+public partial class MainPage : ContentPage
+    {
+        }
+        SfNumericUpDown upDown;
+        Grid incrementGrid, decrementGrid;
+        UpDownButtonSettings incSettings, decrementSettings;
+        Image incrementImage, decrementImage;
+        public MainPage()
+        {
+            InitializeComponent();
+           
+            incSettings = new UpDownButtonSettings
+            {
+                ButtonImage = "up",
+                ButtonHeight = 45,
+                ButtonWidth = 45
+            };
+            decrementSettings = new UpDownButtonSettings
+            {
+                ButtonImage = "down",
+                ButtonHeight = 45,
+                ButtonWidth = 45
+            };
+            upDown = new SfNumericUpDown
+            {
+                SpinButtonAlignment = SpinButtonAlignment.Both,
+                IncrementButtonSettings = incSettings,
+                DecrementButtonSettings = decrementSettings
+            }; 
+            this.Content = upDown;
+        }
+        
+    }
 
 {% endhighlight %}
 

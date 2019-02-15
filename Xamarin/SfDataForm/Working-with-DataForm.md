@@ -364,7 +364,7 @@ The [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/Sync
 
 ### Manually generate DataFormItems for DataObject
 
-You can load the dataform with `DataObject` by generating data items manually and handling read and write values. By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItems.html) will be generated based on DataObject. If you need to generate `DataFormItems` manually, override the [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ItemManager.html).
+By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItems.html) will be generated based on DataObject. If you need to generate `DataFormItems` manually, override the [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ItemManager.html).
 
 To create `DataFormItems`, override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~GenerateDataFormItems.html) method.
 

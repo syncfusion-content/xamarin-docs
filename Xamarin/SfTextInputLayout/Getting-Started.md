@@ -13,19 +13,21 @@ This section explains the steps required to configure the text input layout cont
 
 ## Adding SfTextInputLayout reference
 
-**Adding SfTextInputLayout reference from nuget.org**
+You can add SfTextInputLayout reference using one of the following methods:
+
+**Method 1: Adding SfTextInputLayout reference from nuget.org**
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfTextInputLayout to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
 
 ![Add Packages](Getting-Started_images/Adding SfTextInputLayout reference.png)
 
-N> Install the same version of Text Input Layout NuGet in all the projects.
+N> Install the same version of SfTextInputLayout NuGet in all the projects.
 
-**Adding SfTextInputLayout reference from toolbox**
+**Method 2: Adding SfTextInputLayout reference from toolbox**
 
 Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfTextInputLayout control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Adding SfTextInputLayout assemblies manually from the installed location**
+**Method 3: Adding SfTextInputLayout assemblies manually from the installed location**
 
 If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
 
@@ -58,11 +60,11 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 To use the text input layout inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and are discussed in the following sections:
 
+N> If you are adding the references from toolbox, this step is not needed.
+
 ### iOS
 
 To launch the text input layout in iOS, call the `SfTextInputLayoutRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the `LoadApplication` method is called as demonstrated in the following code sample.
-
-N> If you are adding the references from toolbox, this step is not needed.
 
 {% highlight C# %} 
 

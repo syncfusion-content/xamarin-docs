@@ -145,3 +145,71 @@ public EmployeeViewModel()
 {% endhighlight %}
 
 {% endtabs %}
+
+If the DataSource is bound to business object data, Selected item can be set initially by specifing the index of the datasource item. The property which is specfied in the `SelectedValuePath` will be displayed with respective to the index of the selected item.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" DisplayMemberPath="Name" SelectedValuePath="ID" x:Name="autoComplete" />                            
+</StackLayout> 
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+public partial class SamplePage : ContentPage
+{
+public SamplePage()
+{
+	InitializeComponent();       
+	 var items = new ObservableCollection<Employee>
+            {
+                new Employee{ ID = 1, Name = "Eric" },
+                new Employee{ ID = 2, Name = "James" },
+                new Employee{ ID = 3, Name = "Jacob" },
+                new Employee{ ID = 4, Name = "Lucas" },
+                new Employee{ ID = 5, Name = "Mark" }
+            };
+            autoComplete.DataSource = items;
+            autoComplete.SelectedItem = items[4];
+}
+public class Employee
+{
+private int id;
+public int ID
+{
+	get { return id; }
+	set { id = value; }
+}
+private string name;
+public string Name
+{
+	get { return name; }
+	set { name = value; }
+}
+}
+public class EmployeeViewModel
+{
+private ObservableCollection<Employee> employeeCollection;
+public ObservableCollection<Employee> EmployeeCollection
+{
+	get { return employeeCollection; }
+	set { employeeCollection = value; }
+}
+public EmployeeViewModel()
+{
+	employeeCollection = new ObservableCollection<Employee>();
+	employeeCollection.Add(new Employee() { ID = 1, Name = "Eric" });
+	employeeCollection.Add(new Employee() { ID = 2, Name = "James" });
+	employeeCollection.Add(new Employee() { ID = 3, Name = "Jacob" });
+	employeeCollection.Add(new Employee() { ID = 4, Name = "Lucas" });
+	employeeCollection.Add(new Employee() { ID = 5, Name = "Mark" });
+}
+}
+
+{% endhighlight %}
+
+{% endtabs %}

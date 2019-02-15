@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Retrieving selected value in Syncfusion SfAutoComplete control for Xamarin.Forms
+title: Retrieving selected value in Syncfusion SfAutoComplete control.
 description: Learn how to retrieve selected value from SfAutoComplete control
 platform: xamarin
 control: SfAutoComplete
@@ -146,7 +146,7 @@ public EmployeeViewModel()
 
 {% endtabs %}
 
-If the DataSource is bound to business object data, Selected item can be set initially by specifing the index of the datasource item. The property which is specfied in the `SelectedValuePath` will be displayed with respective to the index of the selected item.
+If the DataSource is bound to business object data, Selected item can be set initially by specifying the index of the datasource item. The property which is specified in the `SelectedValuePath` will be displayed with respective to the index of the selected item.
 
 {% tabs %}
 

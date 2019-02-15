@@ -110,18 +110,18 @@ public SamplePage()
 }
 public class Employee
 {
-private int id;
-public int ID
-{
-	get { return id; }
-	set { id = value; }
-}
-private string name;
-public string Name
-{
-	get { return name; }
-	set { name = value; }
-}
+    private int id;
+    public int ID
+        {
+            get { return id; }
+            set { id = value; }
+        }
+    private string name;
+    public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
 }
 public class EmployeeViewModel
 {

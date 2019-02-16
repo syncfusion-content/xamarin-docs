@@ -15,7 +15,7 @@ Schedule allows you create appointments in various time zones and display them i
 * Create appointments in different  time zones
 * Display appointments based on the client’s  time zone
 * Display appointments based on schedule  time zone
-* Display appointments at the same time everywhere regardless of client’s time zone.
+* Display appointments at the same time everywhere regardless of client’s time zone
 
 ## Create appointments in different time zones
 You can create appointments at different time zones using the [StartTimeZone](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~StartTimeZone.html) and [EndTimeZone](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~EndTimeZone.html) properties of [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment.html). An appointment’s start time and end time are calculated based on the given time zone information for the start time and end time. You can set different time zones to the StartTimeZone and EndTimeZone properties.

@@ -135,7 +135,7 @@ this.Content = border;
 
 ## Adding circular image
 
-You can add the any view inside the border control by adding inside the Content property of Border Control. The below code demonstrate how to apply border using `CornerRadius` property for the circular image.
+You can add any view inside the border control by adding the Content property. The following code sample demonstrates how to apply border using the `CornerRadius` property for a circular image.
 
 {% tabs %}
 {% highlight xaml %}

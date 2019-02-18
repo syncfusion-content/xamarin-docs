@@ -146,7 +146,7 @@ public EmployeeViewModel()
 
 {% endtabs %}
 
-If the DataSource is bound to business object data, Selected item can be set initially by specifying the index of the datasource item. The property which is specified in the `SelectedValuePath` will be displayed with respective to the index of the selected item.
+If the DataSource is bound to business object data, the selected item can be set initially by specifying the index of the data source item. The property specified in the `SelectedValuePath` will be displayed with respect to index of the selected item.
 
 {% tabs %}
 

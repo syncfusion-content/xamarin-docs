@@ -48,7 +48,7 @@ You can add SfDataGrid reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataGrid to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfDataGrid](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataGrid), and then install it.
 
-![Adding SfDataGrid reference from NuGet](SfDataGrid_images/Adding SfDataGrid reference.png)
+![Adding SfDataGrid reference from NuGet](Getting-started_images/Adding SfDataGrid reference.png)
 
 N> Install the same version of SfDataGrid NuGet in all the projects.
 

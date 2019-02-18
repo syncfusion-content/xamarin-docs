@@ -55,6 +55,8 @@ N> To know more about obtaining our components, refer to these links for [Mac](
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
+I> After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of `SfGaugeRenderer` in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/8271/how-to-resolve-sfcirculargauge-not-rendering-issue-in-ios-and-uwp). For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to this [KB article](https://www.syncfusion.com/kb/8272/how-to-make-syncfusion-xamarin-forms-sfcirculargauge-to-work-in-uwp-in-release-mode-when-net-native) for more details. If you are adding the references from toolbox, this step is not needed.
+
 ## Adding namespace for the assemblies
 
 {% tabs %}

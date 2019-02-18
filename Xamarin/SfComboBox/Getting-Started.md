@@ -19,7 +19,7 @@ You can add SfComboBox reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfComboBox to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfComboBox](https://www.nuget.org/packages/Syncfusion.Xamarin.SfComboBox), and then install it.
 
-![selectionChanged](images/Getting-Started/Adding SfComboBox reference.png)
+![Adding SfComboBox reference from NuGet](images/Getting-Started/Adding SfComboBox reference.png)
 
 N> Install the same version of SfComboBox NuGet in all the projects.
 

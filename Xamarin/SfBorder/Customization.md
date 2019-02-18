@@ -133,3 +133,41 @@ this.Content = border;
 
 ![cornerradius](images/Xamarin_Forms_CornerRadius.png)
 
+## Adding circular image
+
+You can add the any view inside the border control by adding inside the Content property of Border Control. The below code demonstrate how to apply border using `CornerRadius` property for the circular image.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Grid HeightRequest="100" WidthRequest="100" HorizontalOptions="Center" VerticalOptions="Center">
+    <border:SfBorder BorderColor="Black" HorizontalOptions="Center" VerticalOptions="Center" CornerRadius="50">
+    <Image Source="plus.jpeg" />
+    </border:SfBorder>
+</Grid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+Grid grid = new Grid();
+grid.HeightRequest = 100;
+grid.WidthRequest = 100;
+grid.HorizontalOptions = LayoutOptions.Center;
+grid.VerticalOptions = LayoutOptions.Center;
+SfBorder border = new SfBorder();
+border.BorderColor = Color.Black;
+border.HorizontalOptions = LayoutOptions.Center;
+border.VerticalOptions = LayoutOptions.Center;
+border.CornerRadius = 50;
+Image image = new Image();
+image.Source = "plus.jpeg";
+border.Content = image;
+grid.Children.Add(border);
+this.Content = grid;
+
+{% endhighlight %}
+{% endtabs %}
+
+![circularimage](images/Xamarin_Forms_CircularImage.png)
+
+

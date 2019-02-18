@@ -147,7 +147,7 @@ Then initialize an empty navigation drawer as shown below,
 	
 {% endhighlight %}
 
-N> It is mandatory to set ContentView for the SfNavigationDrawer on initializing.
+N> It is mandatory to set ContentView for SfNavigationDrawer on initializing.
 
 ## Adjust Drawer Size
 

@@ -139,9 +139,15 @@ Then initialize an empty navigation drawer as shown below,
 
 {% highlight xaml %}
 
-		<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer"/>
+	<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer">
+        <navigationdrawer:SfNavigationDrawer.ContentView>
+            <Grid/>
+        </navigationdrawer:SfNavigationDrawer.ContentView>
+    </navigationdrawer:SfNavigationDrawer> 
 	
 {% endhighlight %}
+
+N> It is mandatory to set ContentView for the SfNavigationDrawer on initializing.
 
 ## Adjust Drawer Size
 

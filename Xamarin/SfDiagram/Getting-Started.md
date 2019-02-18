@@ -20,7 +20,7 @@ You can add SfDiagram reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDiagram to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfDiagram](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDiagram), and then install it.
 
-![Adding SfDiagram reference from NuGet](Getting-Started_images/Adding SfDiagram reference.jpeg)
+![Adding SfDiagram reference from NuGet](Getting-Started_images/Adding SfDiagram reference.png)
 
 N> Install the same version of SfDiagram NuGet in all the projects.
 

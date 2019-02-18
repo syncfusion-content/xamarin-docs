@@ -11,10 +11,50 @@ documentation : ug
 
 This section explains the steps required to create the combo box control, populate it with data and filter the suggestions. This section covers only the minimal features that are needed to get started with the control.
 
-## Adding ComboBox references
+## Adding SfComboBox reference
 
-Refer [this](https://help.syncfusion.com/xamarin/introduction/download-and-installation) section to know the steps for obtaining Essential Studio components in your solution; then refer this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfcombobox) to know the dependency assembly details for adding ComboBox to your project.
-After adding the assembly reference, an additional step is required for iOS and UWP projects.
+You can add SfComboBox reference using one of the following methods:
+
+**Method 1: Adding SfComboBox reference from nuget.org**
+
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfComboBox to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfComboBox](https://www.nuget.org/packages/Syncfusion.Xamarin.SfComboBox), and then install it.
+
+![selectionChanged](images/Getting-Started/Adding SfComboBox reference.png)
+
+N> Install the same version of SfComboBox NuGet in all the projects.
+
+**Method 2: Adding SfComboBox reference from toolbox**
+
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfComboBox control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+
+**Method 3: Adding SfComboBox assemblies manually from the installed location**
+
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+
+Location: {Installed location}/{version}/Xamarin/lib
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ### Additional Step for iOS
 

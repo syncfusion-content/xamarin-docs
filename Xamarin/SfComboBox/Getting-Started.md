@@ -56,6 +56,8 @@ N> To know more about obtaining our components, refer to these links for [Mac](
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
+N> If you are adding the references from toolbox, this step is not needed.
+
 ### Additional Step for iOS
 
 Create an instance of the `SfComboBoxRenderer` in FinishedLaunching overridden method of an AppDelegate class in iOS project as shown in the following codes:

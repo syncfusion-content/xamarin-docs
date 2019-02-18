@@ -19,7 +19,7 @@ You can add Calculate reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add Calculate to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Calculate](https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate), and then install it.
 
-[Screenshot]
+![Adding Calculate reference from nuget](images/Adding Calculate reference.png)
 
 N> Install the same version of Calculate NuGet in all the projects.
 

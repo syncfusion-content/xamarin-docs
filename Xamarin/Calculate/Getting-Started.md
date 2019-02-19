@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Essential Calculate
+title: Getting Started with Syncfusion Essential Calculate
 description: How to compute the formulas using CalcQuickBase,CalcEngine and ICalcData
 platform: xamarin
 control: Calculate

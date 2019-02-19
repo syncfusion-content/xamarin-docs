@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for Essential Xamarin.Forms Kanban
+title: Getting Started for Essential Syncfusion Xamarin.Forms Kanban
 description: getting started
 platform: xamarin
 control: Kanban
@@ -19,7 +19,7 @@ You can add SfKanban reference in one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add kanban to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfKanban](https://www.nuget.org/packages/Syncfusion.Xamarin.SfKanban/), and then install it.
 
-![](SfKanban_images/Adding SfKanban reference.png)
+![Adding SfKanban reference from NuGet](SfKanban_images/Adding SfKanban reference.png)
 
 N> Install the same version of kanban NuGet in all the projects.
 
@@ -273,4 +273,4 @@ doneColumn.Categories = new List<object>() { "Done" };
 
 This is how the final output will look like on iOS, Android and Windows devices. You can download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/GettingStartedKanban.zip).
 
-![](SfKanban_images/GettingStarted.png)
+![Final output of SfKanban](SfKanban_images/GettingStarted.png)

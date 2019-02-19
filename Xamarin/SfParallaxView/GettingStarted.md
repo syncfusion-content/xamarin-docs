@@ -19,7 +19,7 @@ You can add SfParallaxView reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfParallaxView to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfParallaxView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfParallaxView), and then install it.
 
-![Adding SfParallaxView reference from NuGet](ParallaxView_Images/Adding SfParallaxView reference.gif)
+![Adding SfParallaxView reference from NuGet](ParallaxView_Images/Adding SfParallaxView reference.png)
 
 N> Install the same version of SfParallaxView NuGet in all the projects.
 

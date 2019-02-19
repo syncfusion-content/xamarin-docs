@@ -29,7 +29,7 @@ You can add SfListView reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfListView to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfListView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfListView), and then install it.
 
-![Adding SfListView reference from NuGet](SfListView_images/Adding SfListView reference.jpg)
+![Adding SfListView reference from NuGet](SfListView_images/Adding SfListView reference.png)
 
 N> Install the same version of SfListView NuGet in all the projects.
 

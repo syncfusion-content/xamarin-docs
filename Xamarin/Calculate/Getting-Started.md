@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Essential Calculate
+title: Getting Started with Syncfusion Essential Calculate
 description: How to compute the formulas using CalcQuickBase,CalcEngine and ICalcData
 platform: xamarin
 control: Calculate
@@ -11,62 +11,38 @@ documentation: ug
 
 This section helps you to get started with Essential Calculate.
 
-## Assembly Deployment
+## Adding Calculate reference
 
-When the Essential Calculate is used in your application, the following assembly need to be referenced in the project based on the platform.
+You can add Calculate reference using one of the following methods:
+
+**Method 1: Adding Calculate reference from nuget.org**
+
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add Calculate to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Calculate](https://www.nuget.org/packages/Syncfusion.Xamarin.Calculate), and then install it.
+
+![Adding Calculate reference from nuget](Images/Adding Calculate reference.png)
+
+N> Install the same version of Calculate NuGet in all the projects.
+
+**Method 2: Adding Calculate reference from toolbox**
+
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the Calculate control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+
+**Method 3: Adding Calculate assemblies manually from the installed location**
+
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+
+Location: {Installed location}/{version}/Xamarin/lib
 
 <table>
 <tr>
-<thead><th>
-Platform(s)</th>
-<th>
-Assembly
-</th>
-</thead>
+<td>PCL</td>
+<td>Syncfusion.Calculate.Portable.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
-<tbody>
-<tr>
-<td>
-WPF, Windows Forms, ASP. NET 
-</td>
-<td>
-Syncfusion.Calculate.Base
-</td>
-</tr>
-<tr>
-<td>
-Universal Windows Platform
-</td>
-<td>
-Syncfusion.Calculate.UWP
-</td>
-</tr>
-<tr>
-<td>
-Xamarin.Forms
-</td>
-<td>
-Syncfusion.Calculate.Portable<br/>
-</td>
-</tr>
-<tr>
-<td>
-Xamarin.Android
-</td>
-<td>
-Syncfusion.Calculate.Android<br/>
-</td>
-</tr>
-<tr>
-<td>
-Xamarin.iOS
-</td>
-<td>
-Syncfusion.Calculate.iOS<br/>
-</td>
-</tr>
-</tbody>
 </table>
+
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Compute formula using CalcQuickBase
 

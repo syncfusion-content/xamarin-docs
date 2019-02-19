@@ -13,15 +13,50 @@ This section explains the steps required to configure the maps control and custo
 
 ## Adding SfMaps reference
 
-Syncfusion components for Xamarin.Forms are available in [nuget.org](https://www.nuget.org/). To add maps to your project, open the NuGet package manager in Visual Studio, search for [syncfusion.xamarin.sfmaps](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaps), and then install it.
+You can add SfMaps reference using one of the following methods:
 
-![Xamarin maps reference](Images/maps.png)
+**Method 1: Adding SfMaps reference from nuget.org**
 
-To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). If you prefer to manually reference the assemblies instead of using NuGet, refer to this [documentation](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfmaps) to learn about the dependent assemblies.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfMaps to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfMaps](https://www.nuget.org/packages/Syncfusion.Xamarin.SfMaps), and then install it.
 
-I> After adding the reference, an additional step is required for iOS and UWP projects. Create an instance of the `SfMapsRenderer` in iOS and UWP projects as described in this [KB article.](https://www.syncfusion.com/kb/8603).
+![Adding SfMaps reference from NuGet](Images/Adding SfMaps reference.png)
 
-I> For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to this [KB article](https://www.syncfusion.com/kb/8604) for more details.
+N> Install the same version of SfMaps NuGet in all the projects.
+
+**Method 2: Adding SfMaps reference from toolbox**
+
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfMaps control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+
+**Method 3: Adding SfMaps assemblies manually from the installed location**
+
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+
+Location: {Installed location}/{version}/Xamarin/lib
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfMaps.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfMaps.Android.dll<br/>Syncfusion.SfMaps.XForms.Android.dll<br/>Syncfusion.SfMaps.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfMaps.iOS.dll<br/>Syncfusion.SfMaps.XForms.iOS.dll<br/>Syncfusion.SfMaps.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfMaps.UWP.dll<br/>Syncfusion.SfMaps.XForms.UWP.dll<br/>Syncfusion.SfMaps.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
+N> After adding the reference, an additional step is required for iOS and UWP projects. Create an instance of the `SfMapsRenderer` in iOS and UWP projects as described in this [KB article](https://www.syncfusion.com/kb/8603/how-to-resolve-sfmaps-not-rendering-issue-in-ios-and-uwp). For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to this [KB article](https://www.syncfusion.com/kb/8604/how-to-make-syncfusion-xamarin-forms-sfmaps-to-work-in-uwp-in-release-mode-when-net-native-tool-chain) for more details. If you are adding the references from toolbox, this step is not needed.
 
 ## Adding namespace
 

@@ -11,9 +11,50 @@ documentation: ug
 
 This section explains you the steps to configure a SfRotator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRotator control.
 
-## Add SfRotator reference
+## Adding SfRotator reference
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfchart) link to know about the assemblies required for adding SfRotator to your project.
+You can add SfRotator reference using one of the following methods:
+
+**Method 1: Adding SfRotator reference from nuget.org**
+
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfRotator to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRotator](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRotator), and then install it.
+
+![Adding SfRotator reference from nuget](images/Adding SfRotator reference.png)
+
+N> Install the same version of SfRotator NuGet in all the projects.
+
+**Method 2: Adding SfRotator reference from toolbox**
+
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfRotator control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+
+**Method 3: Adding SfRotator assemblies manually from the installed location**
+
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+
+Location: {Installed location}/{version}/Xamarin/lib
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfRotator.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfRotator.Android.dll<br/>Syncfusion.SfRotator.XForms.Android.dll<br/>Syncfusion.SfRotator.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfRotator.iOS.dll<br/>Syncfusion.SfRotator.XForms.iOS.dll<br/>Syncfusion.SfRotator.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfRotator.UWP.dll<br/>Syncfusion.SfRotator.XForms.UWP.dll<br/>Syncfusion.SfRotator.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the SfRotator on each platform
 
@@ -22,6 +63,8 @@ To use SfRotator inside an application, each platform application must initializ
 ### Android and  UWP
 
 The Android and UWP launches the SfRotator without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application
+
+N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 

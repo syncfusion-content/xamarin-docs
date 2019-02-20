@@ -56,7 +56,7 @@ N> Install the same version of SfPopupLayout NuGet in all the projects.
 
 Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfPopupLayout control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Method 3: Adding SfSfPopupLayoutPicker assemblies manually from the installed location**
+**Method 3: Adding SfPopupLayout assemblies manually from the installed location**
 
 If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
 

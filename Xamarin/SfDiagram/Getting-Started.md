@@ -36,7 +36,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 
 <table>
 <tr>
-<td>PCL</td>
+<td>.NET Standard</td>
 <td>Syncfusion.SfDiagram.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>

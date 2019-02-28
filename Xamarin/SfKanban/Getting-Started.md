@@ -40,11 +40,11 @@ Location : {Installed location}/{version}/Xamarin/lib
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfKanban.Android.dll<br/>Syncfusion.SfKanban.XForms.Android.dll<br/>Syncfusion.SfKanban.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfKanban.XForms.Android.dll<br/>Syncfusion.SfKanban.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfKanban.iOS.dll<br/>Syncfusion.SfKanban.XForms.iOS.dll<br/>Syncfusion.SfKanban.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfKanban.XForms.iOS.dll<br/>Syncfusion.SfKanban.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>

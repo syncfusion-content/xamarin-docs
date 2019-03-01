@@ -26,11 +26,38 @@ Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/co
 
 N> Assemblies can be found in an unzipped package location in Mac.
 
-### Adding DataSource Reference
+## Adding DataSource reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add DataSource to your project, open the NuGet package manager in Visual Studio, and search for [syncfusion.xamarin.DataSource](https://www.nuget.org/packages/Syncfusion.Xamarin.DataSource/), and then install it. 
+You can add DataSource reference using one of the following methods:
 
-N>Install the same version of the DataSource NUGET in all the projects.
+**Method 1: Adding DataSource reference from nuget.org**
+
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add DataSource to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.DataSource](https://www.nuget.org/packages/Syncfusion.Xamarin.DataSource), and then install it.
+
+![Adding DataSource reference from NuGet](DataSource-GettingStarted_images/Adding DataSource reference.png)
+
+N> Install the same version of DataSource NuGet in all the projects.
+
+**Method 2: Adding DataSource reference from toolbox**
+
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the DataSource control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+
+**Method 3: Adding DataSource assemblies manually from the installed location**
+
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+
+Location: {Installed location}/{version}/Xamarin/lib
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.DataSource.Portable.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Creating your first DataSource in Xamarin.Forms
 

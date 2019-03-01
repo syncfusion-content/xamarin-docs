@@ -9,70 +9,60 @@ documentation: ug
 
 ---
 
-# GETTING STARTED 
+# Getting Started 
 
 This section explains how to configure a Barcode for Xamarin.Forms application. The following screenshot illustrates the final output of barcode on iOS, Android and Windows Phone devices.
 
-![](getting-started_images/getting-started/getting-started.png)
-
-_Barcode_ _control_ _rendering_ _2D_ _bar_ _code_
+![Overview of SfBarCode](getting-started_images/getting-started/getting-started.png)
 
 To get started with Essential Barcode, go through the following steps.
 
-## Referencing Essential Studio components in your solution
+## Adding SfBarCode reference
 
-When you acquire Essential Studio components through the Xamarin Component Store interface from your IDE, after adding the components to your Xamarin.iOS, Xamarin.Android and Windows Phone projects through the Component Manager, you have to manually reference the PCL (Portable Class Library) assemblies in the Xamarin.Forms PCL Project in your solution. You can do this manually by adding the relevant PCL assembly references to your PCL project contained in the following path inside your solution folder:
+You can add SfBarCode reference using one of the following methods:
 
-Components/syncfusionessentialstudio-version/lib/pcl/
+**Method 1: Adding SfBarCode reference from nuget.org**
 
-Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfBarCode to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBarCode](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBarCode), and then install it.
 
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
+![Adding SfBarCode reference from nuget](getting-started_images/getting-started/Adding SfBarCode reference.png)
 
-{Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
+N> Install the same version of SfBarCode NuGet in all the projects.
 
-Example: C:\Program Files (x86)\Syncfusion\Essential Studio\12.2.0.40\lib
+**Method 2: Adding SfBarCode reference from toolbox**
 
-Otherwise, after downloading through the Xamarin store web interface, all the required assemblies can be found in the below folder
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfBarCode control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-{Download location}\syncfusionessentialstudio-version\lib
+**Method 3: Adding SfBarCode assemblies manually from the installed location**
 
-You can then add the assembly references to the respective projects as follows
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
 
-### PCL project
+Location: {Installed location}/{version}/Xamarin/lib
 
-pcl\Syncfusion.SfBarcode.XForms.dll
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfBarcode.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfBarcode.Android.dll<br/>Syncfusion.SfBarcode.XForms.Android.dll<br/>Syncfusion.SfBarcode.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfBarcode.iOS.dll<br/>Syncfusion.SfBarcode.XForms.iOS.dll<br/>Syncfusion.SfBarcode.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfBarcode.UWP.dll<br/>Syncfusion.SfBarcode.XForms.UWP.dll<br/>Syncfusion.SfBarcode.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
 
-### Android project
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
-android\Syncfusion.SfBarcode.Android.dll
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
-android\Syncfusion.SfBarcode.XForms.Android.dll
-
-### iOS (Classic) project
-
-iOS\Syncfusion.SfBarcode.iOS.dll
-
-iOS\Syncfusion.SfBarcode.XForms.iOS.dll
-
-iOS\Syncfusion.SfBarcode.XForms.dll
-
-### iOS(Unified) project
-
-iOS-unified\Syncfusion.SfBarcode.iOS.dll
-
-iOS-unified\Syncfusion.SfBarcode.XForms.iOS.dll
-
-iOS-unified\Syncfusion.SfBarcode.XForms.dll
-
-### Windows Phone project
-
-wp8\Syncfusion.SfBarcode.WP.dll
-
-wp8\Syncfusion.SfBarcode.XForms.WinPhone.dll
-
->**NOTE**
-Essential Barcode for Xamarin is compatible with Xamarin. Forms 1.3.4.6332.
+N> If you are adding the references from toolbox, this step is not needed.
 
 Currently an additional step is required for Windows Phone and iOS projects. Create an instance of the Barcode custom renderer as mentioned.
 
@@ -255,4 +245,4 @@ Here, the following steps illustrates how to create and configure a barcode.
 {% endhighlight %}
 {% endtabs %}
 
-![](getting-started_images/barcode/barcode.png)
+![Final output of SfBarCode](getting-started_images/barcode/barcode.png)

@@ -13,7 +13,7 @@ documentation: ug
 
 This section explains how to configure a Barcode for Xamarin.Forms application. The following screenshot illustrates the final output of barcode on iOS, Android and Windows Phone devices.
 
-![Overview of SfBarCode](Getting-Started_images/getting-started/Adding SfBarCode reference.png)
+![Overview of SfBarCode](Getting-Started_images/getting-started/getting-started.png)
 
 To get started with Essential Barcode, go through the following steps.
 

@@ -13,7 +13,7 @@ documentation: ug
 
 This section explains how to configure a Barcode for Xamarin.Forms application. The following screenshot illustrates the final output of barcode on iOS, Android and Windows Phone devices.
 
-![Overview of SfBarCode](getting-started_images/getting-started/getting-started.png)
+![Overview of SfBarCode](Getting-Started_images/getting-started/getting-started.png)
 
 To get started with Essential Barcode, go through the following steps.
 
@@ -25,7 +25,7 @@ You can add SfBarCode reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfBarCode to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBarCode](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBarCode), and then install it.
 
-![Adding SfBarCode reference from nuget](getting-started_images/getting-started/Adding SfBarCode reference.png)
+![Adding SfBarCode reference from nuget](Getting-Started_images/getting-started/Adding SfBarCode reference.png)
 
 N> Install the same version of SfBarCode NuGet in all the projects.
 
@@ -245,4 +245,4 @@ Here, the following steps illustrates how to create and configure a barcode.
 {% endhighlight %}
 {% endtabs %}
 
-![Final output of SfBarCode](getting-started_images/barcode/barcode.png)
+![Final output of SfBarCode](Getting-Started_images/barcode/barcode.png)

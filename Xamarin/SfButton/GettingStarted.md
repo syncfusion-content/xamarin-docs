@@ -19,7 +19,7 @@ You can add SfButton reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfButton to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Buttons](https://www.nuget.org/packages/Syncfusion.Xamarin.Buttons), and then install it.
 
-![Adding SfButton reference from NuGet](images/Adding SfButton reference.png)
+![Adding SfButton reference from NuGet](Images/Adding SfButton reference.png)
 
 N> Install the same version of SfButton NuGet in all the projects.
 

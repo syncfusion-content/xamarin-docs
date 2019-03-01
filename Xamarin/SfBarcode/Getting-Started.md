@@ -25,7 +25,7 @@ You can add SfBarCode reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfBarCode to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfBarCode](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBarCode), and then install it.
 
-![Adding SfBarCode reference from nuget](Getting-Started_images/getting-started/Adding SfBarCode reference.png)
+![Adding SfBarCode reference from nuget](Getting-Started_images/getting-started/Adding SfBarcode reference.png)
 
 N> Install the same version of SfBarCode NuGet in all the projects.
 

@@ -13,19 +13,52 @@ documentation: ug
 
 This section explains you the steps to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.
 
-## Adding SfRating Reference
+## Adding SfRating reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add Rating to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfRating](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRating), and then install it. 
+You can add SfRating reference using one of the following methods:
 
-![Adding Xamarin.Forms SfRating reference](images/addref.png)
+**Method 1: Adding SfRating reference from nuget.org**
 
-To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfrating) to know about the dependent assemblies for SfRating. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfRating to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRating](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRating), and then install it.
 
-N>Install the same version of the SfRating NUGET in all the projects.
+![Adding SfRating reference from nuget](images/Adding SfRating reference.png)
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [`link`](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+N> Install the same version of SfRating NuGet in all the projects.
 
-Currently an additional step is required for iOS project. We need to create an instance of the rating custom renderer as shown below. 
+**Method 2: Adding SfRating reference from toolbox**
+
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfRating control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+
+**Method 3: Adding SfRating assemblies manually from the installed location**
+
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+
+Location: {Installed location}/{version}/Xamarin/lib
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfRating.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfRating.Android.dll<br/>Syncfusion.SfRating.XForms.Android.dll<br/>Syncfusion.SfRating.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfRating.iOS.dll<br/>Syncfusion.SfRating.XForms.iOS.dll<br/>Syncfusion.SfRating.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfRating.XForms.UWP.dll<br/>Syncfusion.SfRating.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
+N> Currently an additional step is required for iOS project. You need to create an instance of the rating custom renderer. If you are adding the references from toolbox, this step is not needed.
 
 Create an instance of SfRatingRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
 

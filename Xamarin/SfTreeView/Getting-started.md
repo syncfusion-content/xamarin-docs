@@ -21,19 +21,50 @@ Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/co
 
 N> Assemblies can be found in an unzipped package location in Mac.
 
-### Adding TreeView Reference
+## Adding SfTreeView reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add TreeView to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfTreeView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTreeView/), and then install it. 
+You can add SfTreeView reference using one of the following methods:
 
-![Xamarin Forms TreeView Add](TreeView_images/TreeView_AddTreeView.png)
+**Method 1: Adding SfTreeView reference from nuget.org**
 
-To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sftreeview) to know about the dependent assemblies for TreeView. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfTreeView to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfTreeView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTreeView), and then install it.
 
-N>Install the same version of the TreeView NUGET in all the projects.
+![Adding SfTreeView reference from NuGet](TreeView_images/Adding SfTreeView reference.png)
 
-I> After adding the reference, an additionally need to initialize the renderer for [iOS](https://help.syncfusion.com/xamarin/treeview/getting-started#ios) and [UWP](https://help.syncfusion.com/xamarin/treeview/getting-started#universal-windows-platform-uwp) projects.  
+N> Install the same version of SfTreeView NuGet in all the projects.
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also must include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+**Method 2: Adding SfTreeView reference from toolbox**
+
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfTreeView control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+
+**Method 3: Adding SfTreeView assemblies manually from the installed location**
+
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+
+Location: {Installed location}/{version}/Xamarin/lib
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfTreeView.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfTreeView.XForms.Android.dll<br/>Syncfusion.SfTreeView.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfTreeView.XForms.iOS.dll<br/>Syncfusion.SfTreeView.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfTreeView.XForms.UWP.dll<br/>Syncfusion.SfTreeView.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the TreeView on Each Platform
 
@@ -42,6 +73,8 @@ To use this control inside an application, each platform application must initia
 ### Android
 
 The Android launches the TreeView without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
+
+N> After adding the reference, an additional step is required to initialize the renderer for iOS and UWP projects. If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 

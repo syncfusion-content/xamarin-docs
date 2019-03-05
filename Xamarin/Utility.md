@@ -9,10 +9,15 @@ documentation: ug
 
 # Utilities
 
-The Syncfusion Xamarin Extension provides you quick access, so that you can easily create or configure Syncfusion Xamarin projects. Syncfusion Xamarin Extensions provides the following features.
+The Syncfusion Xamarin Extension provides quick access, so that you can easily create or configure the Syncfusion Xamarin projects. The Syncfusion Xamarin Extensions provides the following features.
 
 * Syncfusion Project Template for Xamarin.Forms
 * Syncfusion Toolbox for Xamarin.Forms
+
+The Syncfusion Xamarin Visual Studio Extensions are installed along with the Essential Studio for Xamarin setup.
+
+N> *Refer to the [installation guideline](https://help.syncfusion.com/common/essential-studio/installation/install-using-the-web-installer)*.
+
 
 ## Project Template
 

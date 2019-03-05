@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TreeMap Event
-description: treemap event
+title: ItemSelected Event in Syncfusion SfTreeMap control
+description: itemselected event
 platform: xamarin
 control: TreeMap
 documentation: ug

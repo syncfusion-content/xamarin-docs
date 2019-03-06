@@ -1204,7 +1204,7 @@ chart.Series.Add(splineSeries);
 
 ### Dashed Lines
 
-[`StrokeDashArray`]() property of the [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineSeries.html) is used to render spline series with dashes.
+[`StrokeDashArray`] property of the [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineSeries.html) is used to render spline series with dashes.
 
 {% tabs %} 
 

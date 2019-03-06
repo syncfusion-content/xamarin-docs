@@ -9,23 +9,23 @@ documentation: ug
 
 ## Adding Multiple trackball in SfChart
 
-[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) allows the user to activate multiple trackballs in chart area by adding two instances of trackball behavior to chart and by using the Show method. Each trackball will be interacting separately by using [`HitTest`]() method which returns the nearest trackball that contains the touch point and the touch override methods of trackball behavior, but these Multiple trackballs having effect only when the [`ActivationMode`] is set as [`None`]. 
+[`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) allows the user to activate multiple trackballs in chart area by adding two instances of trackball behavior to chart and by using the [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~Show.html) method. Each trackball will be interacting separately by using [`HitTest`]() method which returns the nearest trackball that contains the touch point and the touch override methods of trackball behavior, but these Multiple trackballs having effect only when the [`ActivationMode`] is set as [`None`]. 
 
 The following code sample demonstrates this:
 
 {% highlight xaml %}
 
 <chart:SfChart.ChartBehaviors>
-       <local:TrackballBehaviorExt ActivationMode="None" x:Name="TrackballBehavior1" />
-       <local:TrackballBehaviorExt ActivationMode="None" x:Name="TrackballBehavior2" />
+    <local:TrackballBehaviorExt ActivationMode="None" x:Name="trackballBehavior1" />
+    <local:TrackballBehaviorExt ActivationMode="None" x:Name="trackballBehavior2" />
 </chart:SfChart.ChartBehaviors>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-TrackballBehavior1.Show(pointX, pointY);
-TrackballBehavior2.Show(pointX, pointY);
+trackballBehavior1.Show(pointX, pointY);
+trackballBehavior2.Show(pointX, pointY);
 
 {% endhighlight %}
 

@@ -11,9 +11,9 @@ documentation: ug
 
 ##ItemSelected
 
-The `ItemSelected` event is fired when an item is selected. Selected item's `DataSource` and `IsSelected` boolean property will be passed as an argument to `ItemSelectedEventArgs`. `IsSelected` boolean property indicates whether an item is selected or not.
+The `ItemSelected` event occurs when an item is selected. The Selected item's `DataSource` and `IsSelected` boolean property will be passed as arguments to `ItemSelectedEventArgs`. The `IsSelected` boolean property indicates whether the item has been selected.
 
-You need to set `HighlightOnSelection` boolean property as true to use `ItemSelected` event.
+Set the `HighlightOnSelection` boolean property to true to use the `ItemSelected` event.
 
 {% tabs %}
 

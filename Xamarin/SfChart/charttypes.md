@@ -1202,6 +1202,31 @@ chart.Series.Add(splineSeries);
 
 ![Spline chart type in Xamarin.Forms](charttypes_images/charttypes_img13.png)
 
+### Dashed Lines
+
+[`StrokeDashArray`]() property of the [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineSeries.html) is used to render spline series with dashes.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SplineSeries.StrokeDashArray>
+    <x:Array Type="{x:Type x:Double}">
+        <sys:Double>5</sys:Double>
+        <sys:Double>6</sys:Double>
+    </x:Array>
+</chart:SplineSeries.StrokeDashArray>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineSeries.StrokeDashArray = new double[2] { 5, 6 };
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Spline Rendering Types
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineSeries~SplineType.html) allows you to change the spline curve in series. 

@@ -1210,18 +1210,28 @@ chart.Series.Add(splineSeries);
 
 {% highlight xaml %}
 
-<chart:SplineSeries.StrokeDashArray>
-    <x:Array Type="{x:Type x:Double}">
-        <sys:Double>5</sys:Double>
-        <sys:Double>6</sys:Double>
-    </x:Array>
-</chart:SplineSeries.StrokeDashArray>
+<chart:SplineSeries ItemsSource ="{Binding Data}" XBindingPath="Month" YBindingPath="Value">
+    <chart:SplineSeries.StrokeDashArray>
+        <x:Array Type="{x:Type x:Double}">
+            <sys:Double>5</sys:Double>
+            <sys:Double>6</sys:Double>
+        </x:Array>
+    </chart:SplineSeries.StrokeDashArray>
+</chart:SplineSeries>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SplineSeries splineSeries = new SplineSeries() 
+{ 
+	ItemsSource = Data, 
+	XBindingPath = "Month", 
+	YBindingPath = "Value"  
+};
+
 SplineSeries.StrokeDashArray = new double[2] { 5, 6 };
+chart.Series.Add(splineSeries);
 
 {% endhighlight %}
 

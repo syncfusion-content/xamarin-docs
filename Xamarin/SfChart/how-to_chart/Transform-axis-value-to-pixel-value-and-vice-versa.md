@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Transform axis value to pixel value and vice-versa in Syncfusion SfChart
+title: Transform axis value to pixel value and vice-versa | Syncfusion
 description: Transform axis value to pixel value and vice-versa in SfChart
 platform: xamarin
 control: Chart

@@ -1223,14 +1223,14 @@ chart.Series.Add(splineSeries);
 
 {% highlight c# %}
 
-SplineSeries splineSeries = new SplineSeries() 
-{ 
-	ItemsSource = Data, 
-	XBindingPath = "Month", 
-	YBindingPath = "Value"  
+SplineSeries splineSeries = new SplineSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Month",
+    YBindingPath = "Value"
 };
 
-SplineSeries.StrokeDashArray = new double[2] { 5, 6 };
+splineSeries.StrokeDashArray = new double[2] { 5, 6 };
 chart.Series.Add(splineSeries);
 
 {% endhighlight %}

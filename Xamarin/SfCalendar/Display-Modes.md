@@ -89,6 +89,29 @@ this.Content = calendar;
 
 N> Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
 
+### Hide trailing and leading dates
+
+The `SfCalendar` allows you to hide the days of the next month and previous month in the calendar to enhance the appearance of the calendar. This can be achieved by enabling the `ShowLeadingAndTrailingDays` property. The following code illustrates how to hide the leading and trailing dates in the calendar,
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" ShowLeadingAndTrailingDays = "true"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCalendar calendar = new SfCalendar();
+calendar.ViewMode = ViewMode.MonthView;
+calendar.ShowLeadingAndTrailingDays = true;
+this.Content = calendar;
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
 ## YearView
 
 This displays entire dates/month of a particular year, by default current year will be displayed on loading. The Years can be changed by swiping back and forth or [Forward](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Forward.html) and [Backward](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Backward.html) methods. The Months can be navigated quickly by selecting on the particular month in year view.

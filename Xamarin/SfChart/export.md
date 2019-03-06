@@ -70,7 +70,7 @@ The following code snippet demonstrates the usage of this method:
 SfChart chart = new SfChart();
 ...
 
-var chartstream = await chart.GetStreamAsync();
+var stream = await chart.GetStreamAsync();
 
 {% endhighlight %}
 

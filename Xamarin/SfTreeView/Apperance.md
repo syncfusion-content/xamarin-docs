@@ -237,10 +237,10 @@ treeView.ExpanderWidth = 40;
 
 ## ExpanderPosition
 
-The TreeView allows you to change the position of the expander view by setting the [ExpanderPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ExpanderPosition.html) property. The default value of this property is `Start`. This property has two positions as listed as follow.
+The TreeView allows you change the position of expander view by setting the [ExpanderPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ExpanderPosition.html) property. The default value of this property is `Start`.This property has following two positions:
 
-* `Start`: Allows displaying the expander view in the start position.
-* `End`: Allows displaying the expander view in the end position.
+* `Start`: Allows displaying the expander view at the start position.
+* `End`: Allows displaying the expander view at the end position.
 
 {% tabs %}
 {% highlight xaml %}

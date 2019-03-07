@@ -91,7 +91,7 @@ N> Similar way there are many settings available to modify Text and Background c
 
 ### Hide trailing and leading dates
 
-The `SfCalendar` allows you to hide the days of the next month and previous month in the calendar to enhance the appearance of the calendar. This can be achieved by enabling the `ShowLeadingAndTrailingDays` property. The following code illustrates how to hide the leading and trailing dates in the calendar,
+The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the `ShowLeadingAndTrailingDays` property. The following code demonstrates how to hide the leading and trailing dates in calendar.
 
 {% tabs %}
 
@@ -113,8 +113,8 @@ this.Content = calendar;
 {% endtabs %}
 
 >**NOTE** 
-* OnMonthCellLoaded event triggered for current month dates only.
-* VisibleDates count in the MonthChanged event  based on the current month dates only.
+* The OnMonthCellLoaded event is triggered for the current month dates only.
+* The VisibleDates count in the MonthChanged event depends on the current month dates only.
 
 ## YearView
 

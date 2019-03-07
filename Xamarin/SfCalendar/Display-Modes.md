@@ -112,7 +112,9 @@ this.Content = calendar;
 
 {% endtabs %}
 
->**NOTE** 
+![Month View in Xamarin.Forms Calendar ](images/Xamarin.Forms-Calendar-HideLeadingTrailingDates.png)
+
+N>
 * The OnMonthCellLoaded event is triggered for the current month dates only.
 * The VisibleDates count in the MonthChanged event depends on the current month dates only.
 

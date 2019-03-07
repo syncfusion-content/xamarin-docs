@@ -112,7 +112,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Month View in Xamarin.Forms Calendar ](images/Xamarin.Forms-Calendar-HideLeadingTrailingDates.png)
+![Month View in Xamarin.Forms Calendar ](images/Xamarin.Forms-Calendar-HideLeadingTrailing.png)
 
 N>
 * The OnMonthCellLoaded event is triggered for the current month dates only.

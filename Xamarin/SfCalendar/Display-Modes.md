@@ -84,7 +84,7 @@ The `SfCalendar` allows you hide the days of the next month and previous month i
 
 {% highlight xaml %}
 
-<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" ShowLeadingAndTrailingDays = "True"/>
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" ShowLeadingAndTrailingDays="True"/>
 
 {% endhighlight %}
 

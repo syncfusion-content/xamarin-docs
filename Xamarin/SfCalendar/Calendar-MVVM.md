@@ -7,6 +7,167 @@ control: SfCalendar
 documentation: ug
 ---
 
+# Binding Properties in MVVM Pattern
+## Binding SelectedDate
+
+Calendar supports selecting a date programmatically by binding the `SelectedDate` property from your view model.
+
+{% tabs %}
+{% highlight c# %} 
+calendar.SetBinding(SfCalendar.SelectedDateProperty, new Binding("SelectedDate", BindingMode.TwoWay));
+{% endhighlight %}
+{% highlight xaml %} 
+XAML:
+<calendar:SfCalendar x:Name="calendar"
+                     ShowInlineEvents="True"
+                     SelectionMode="SingleSelection"
+                     SelectedDates="{Binding SelectedDate, Mode=TwoWay}">
+</calendar:SfCalendar>
+{% endhighlight %}
+{% endtabs %}
+
+The following code sample demonstrates the ViewModel class.
+
+{% tabs %}
+{% highlight c# %} 
+public class MainViewModel 
+{
+    public DateTime SelectedDate { get; set; }
+
+    public MainViewModel()
+    {
+        SelectedDate = new DateTime(2019, 02, 05);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+* You can bind the `SelectedDate` property only when the `SelectionMode` is set to `SingleSelection` in calendar.
+
+## Binding SelectedDates
+
+Calendar supports selecting dates programmatically by binding the `SelectedDates` property from your view model with the `List<DateTime>` type.
+
+{% tabs %}
+{% highlight c# %} 
+calendar.SetBinding(SfCalendar.SelectedDatesProperty, new Binding("SelectedDates", BindingMode.TwoWay));
+{% endhighlight %}
+{% highlight xaml %} 
+<calendar:SfCalendar x:Name="calendar"
+                     ShowInlineEvents="True"
+                     SelectionMode="MultiSelection"
+                     SelectedDates="{Binding SelectedDates, Mode=TwoWay}">
+</calendar:SfCalendar>
+{% endhighlight %}
+{% endtabs %}
+
+The following code sample demonstrates the ViewModel class.
+
+{% tabs %}
+{% highlight c# %}
+public class MainViewModel
+{
+    public List<DateTime> SelectedDates { get; set; }
+
+    public MainViewModel()
+    {
+        SelectedDates = new List<DateTime>();
+        SelectedDates.Add(new DateTime(2019, 02, 05));
+        SelectedDates.Add(new DateTime(2019, 02, 08));
+        SelectedDates.Add(new DateTime(2019, 02, 10));
+        SelectedDates.Add(new DateTime(2019, 02, 14));
+        SelectedDates.Add(new DateTime(2019, 02, 20));
+    }
+
+}
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+* You can bind the `SelectedDates` property only when `SelectionMode` is set to `MultiSelection` in calendar.
+
+## Binding SelectedRange
+Calendar supports selecting a range of dates programmatically by binding the `SelectedRange` property with `SelectionRange` type from your view model.
+
+{% tabs %}
+{% highlight c#}
+calendar.SetBinding(SfCalendar.SelectedRangeProperty, new Binding("SelectedRange", BindingMode.TwoWay));
+{% endhighlight %}
+{% highlight xaml %}
+<calendar:SfCalendar x:Name="calendar"
+                     ShowInlineEvents="True"
+                     SelectionMode="RangeSelection"
+                     SelectedRange ="{Binding SelectedRange, Mode=TwoWay}">
+</calendar:SfCalendar>
+{% endhighlight %}
+{% endtabs %}
+
+The following code sample demonstrates the ViewModel class.
+
+{% tabs %}
+{% highlight c# %}
+public class MainViewModel
+{
+    public SelectionRange SelectedRange { get; set; }
+
+    public MainViewModel()
+    {
+        SelectedRange = new SelectionRange();
+        SelectedRange.StartDate = new DateTime(2019, 02, 10);
+        SelectedRange.EndDate = new DateTime(2019, 02, 20);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+Calendar supports selecting multiple ranges of dates programmatically by binding the `SelectedRange` property with `ObservableCollection<SelectionRange>` type from your view model.
+
+{% tabs %}
+{% highlight c#}
+calendar.SetBinding(SfCalendar.SelectedRangeProperty, new Binding("SelectedRanges", BindingMode.TwoWay));
+{% endhighlight %}
+{% highlight xaml %}
+<calendar:SfCalendar x:Name="calendar"
+                     ShowInlineEvents="True"
+                     SelectionMode="MultiRangeSelection"
+                     SelectedRange ="{Binding SelectedRanges, Mode=TwoWay}"
+</calendar:SfCalendar>
+{% endhighlight %}
+{% endtabs %}
+
+The following code sample demonstrates the ViewModel class.
+
+{% tabs %}
+{% highlight c# %}
+public class MainViewModel
+{
+    public ObservableCollection<SelectionRange> SelectedRanges { get; set; }
+
+    public MainViewModel()
+    {
+        SelectedRanges = new ObservableCollection<SelectionRange>();
+        SelectedRanges.Add(new SelectionRange()
+        {
+            StartDate = new DateTime(2019, 02, 10),
+            EndDate = new DateTime(2019, 02, 20)
+        });
+
+        SelectedRanges.Add(new SelectionRange()
+        {
+            StartDate = new DateTime(2019, 01, 31),
+            EndDate = new DateTime(2019, 02, 05)
+        });
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+>**NOTE**
+* You can bind the `SelectedRange` property only when `SelectionBinding` is set to `RangeSelection` and `MultiRangeSelection` in calendar.
+
+
+
 ## Commands
  
 ### Tap command

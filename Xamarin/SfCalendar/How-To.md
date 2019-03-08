@@ -375,3 +375,45 @@ calendar.HeightRequest = 200;
 
 {% endtabs %}
 
+## Customize the year cell or year view
+You can customize the year cell of the `SfCalendar` control using the `OnYearCellLoaded` event, which returns `YearCellLoadedEventArgs`. The `YearCellLoadedEventArgs` has the following properties to customize the year view: `BackgroundColor`, `Font`, `FontFamily`, `Month`, `MonthHeaderBackgroundColor`, `MonthHeaderTextColor`, `MonthLayoutBackgroundColor`, `TextColor`, and `View`.
+
+{% tabs %}
+{% highlight c# %}
+private void Calendar_OnYearCellLoaded(object sender, YearCellLoadedEventArgs e)
+{
+    e.BackgroundColor = Color.Red;
+    e.Font = Font.SystemFontOfSize(12, FontAttributes.Italic);
+    e.FontFamily = "Times New Roman";
+    e.MonthHeaderBackgroundColor = Color.Blue;
+    e.MonthHeaderTextColor = Color.Black;
+    e.MonthLayoutBackgroundColor = Color.Gray;
+    e.TextColor = Color.Green;  
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Customize the year view with custom UI	
+You can customize the YearView with Custom UI in the `SfCalendar` control using the `View` property of `YearCellLoadedEventArgs` in the `OnYearCellLoaded` event.
+{% tabs %}
+{% highlight c# %}
+private void Calendar_OnYearCellLoaded(object sender, YearCellLoadedEventArgs e)
+{
+    var button = new Button();
+    button.Text = e.Month.Month.ToString();
+    button.BackgroundColor = Color.Red;
+    e.View = button;        
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Deselect today selection on initial load
+Initially, the calendar is loaded with the current day as selected date in `MonthView` when the SelectionMode is set to SingleSelection, but you can deselect the date on initial loading in `SfCalendar` using the `ToggleDaySelection` and `NullableSelectedDate` properties.
+
+{% tabs %}
+{% highlight c# %}
+calendar.ToggleDaySelection = true;
+calendar.NullableSelectedDate = null;
+{% endhighlight %}
+{% endtabs %}
+

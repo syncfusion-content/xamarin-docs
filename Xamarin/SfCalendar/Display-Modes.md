@@ -24,7 +24,7 @@ The dates in month view can be selected by three ways such as single, multiple a
 We can customize the calendar view in monthView mode by using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html). 
 
 * Current day text color can be modified using [TodayTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~TodayTextColor.html).
-* The day format, day font size, day header font size can be modified using [DayFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayFormat.html), [DayFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayFontSize.html), [DayHeaderFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFontSize.html)
+* The day header format, day font size, day header font size can be modified using [DayHeaderFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFormat.html), [DayFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayFontSize.html), [DayHeaderFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFontSize.html)
 * The background color of the inline view can be modified using [InlineBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~InlineBackgroundColor.html) property.
 * The BlackOutDate color can be modified with [BlackOutColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BlackoutColor.html) property.
 
@@ -41,7 +41,7 @@ We can customize the calendar view in monthView mode by using [MonthViewSettings
                         PreviousMonthTextColor="#000000"
                         DateSelectionColor="#ffffff"
                         SelectedDayTextColor="#000000"
-                        DayFormat="EEEEE"
+                        DayHeaderFormat="EEEEE"
 						DayFontSize="12"
 						DayHeaderFontSize="20">
            </syncfusion:SfCalendar.MonthViewSettings>
@@ -60,7 +60,7 @@ monthViewSettings.PreviousMonthBackgroundColor = Color.FromHex("#9895F0");
 monthViewSettings.PreviousMonthTextColor = Color.FromHex("#000000");
 monthViewSettings.DateSelectionColor = Color.FromHex("#ffffff");
 monthViewSettings.SelectedDayTextColor = Color.FromHex("#000000");
-monthViewSettings.DayFormat = "EEEEE";
+monthViewSettings.DayHeaderFormat = "EEEEE";
 monthViewSettings.DayFontSize = 12;
 monthViewSettings.DayHeaderFontSize = 20;
 
@@ -84,7 +84,7 @@ The `SfCalendar` allows you hide the days of the next month and previous month i
 
 {% highlight xaml %}
 
-<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" ShowLeadingAndTrailingDays = "true"/>
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" ShowLeadingAndTrailingDays = "True"/>
 
 {% endhighlight %}
 

@@ -24,11 +24,8 @@ The dates in month view can be selected by three ways such as single, multiple a
 We can customize the calendar view in monthView mode by using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html). 
 
 * Current day text color can be modified using [TodayTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~TodayTextColor.html).
-
-* It also has API [MonthLabelSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthLabelSettings.html) to change the date text size, day text size and format options.
-
+* The day header format, day font size, day header font size can be modified using [DayHeaderFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFormat.html), [DayFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayFontSize.html), [DayHeaderFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFontSize.html)
 * The background color of the inline view can be modified using [InlineBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~InlineBackgroundColor.html) property.
-
 * The BlackOutDate color can be modified with [BlackOutColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BlackoutColor.html) property.
 
 {% tabs %}
@@ -44,16 +41,9 @@ We can customize the calendar view in monthView mode by using [MonthViewSettings
                         PreviousMonthTextColor="#000000"
                         DateSelectionColor="#ffffff"
                         SelectedDayTextColor="#000000"
-                        >
-                     <syncfusion:MonthViewSettings.MonthLabelSettings>  
-                       <syncfusion:MonthLabelSettings
-                         DateFormat="dd"
-                         DayFormat="EEE"
-                         DayLabelSize="20"
-                         DateLabelSize="12"
-                         />
-                     </syncfusion:MonthViewSettings.MonthLabelSettings>
-                </syncfusion:MonthViewSettings>
+                        DayHeaderFormat="EEEEE"
+						DayFontSize="12"
+						DayHeaderFontSize="20">
            </syncfusion:SfCalendar.MonthViewSettings>
 </syncfusion:SfCalendar>  
 
@@ -62,11 +52,6 @@ We can customize the calendar view in monthView mode by using [MonthViewSettings
 {% highlight c# %}
 	
 SfCalendar calendar = new SfCalendar();    
-MonthLabelSettings labelSettings = new MonthLabelSettings();
-labelSettings.DateFormat = "dd";
-labelSettings.DayLabelSize = 20;
-labelSettings.DayFormat = "EEE";
-labelSettings.DateLabelSize = 12;
 
 MonthViewSettings monthViewSettings = new MonthViewSettings();
 monthViewSettings.CurrentMonthBackgroundColor = Color.FromHex("#800080");
@@ -75,8 +60,10 @@ monthViewSettings.PreviousMonthBackgroundColor = Color.FromHex("#9895F0");
 monthViewSettings.PreviousMonthTextColor = Color.FromHex("#000000");
 monthViewSettings.DateSelectionColor = Color.FromHex("#ffffff");
 monthViewSettings.SelectedDayTextColor = Color.FromHex("#000000");
+monthViewSettings.DayHeaderFormat = "EEEEE";
+monthViewSettings.DayFontSize = 12;
+monthViewSettings.DayHeaderFontSize = 20;
 
-monthViewSettings.MonthLabelSettings = labelSettings;
 calendar.MonthViewSettings = monthViewSettings;
 this.Content = calendar;
 	
@@ -88,6 +75,35 @@ this.Content = calendar;
 
 
 N> Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
+
+### Customize trailing and leading days
+
+The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowLeadingAndTrailingDays.html) property. The following code demonstrates how to hide the leading and trailing dates in calendar.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" ShowLeadingAndTrailingDays="True"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCalendar calendar = new SfCalendar();
+calendar.ViewMode = ViewMode.MonthView;
+calendar.ShowLeadingAndTrailingDays = true;
+this.Content = calendar;
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+![Month View in Xamarin.Forms Calendar ](images/Xamarin.Forms-Calendar-HideLeadingTrailing.png)
+
+N>
+* The OnMonthCellLoaded event is triggered for the current month dates.
+* The VisibleDates in the MonthChanged event will return the current month dates.
 
 ## YearView
 

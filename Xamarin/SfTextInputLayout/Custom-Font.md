@@ -20,13 +20,13 @@ Font can be customized by using the complex property of [hint](https://help.sync
     ContainerType="Outlined"
     HelperText="Enter your name">
     <Entry />
-	<inputLayout:SfTextInputLayout.HintLabelStyle>
-	    <inputLayout:LabelStyle FontFamily="Times New Roman" FontSize="16"/>
-	</inputLayout:SfTextInputLayout.HintLabelStyle>
-	<inputLayout:SfTextInputLayout.HelperLabelStyle>
-	    <inputLayout:LabelStyle FontFamily="Times New Roman" FontSize="12"/>
-	</inputLayout:SfTextInputLayout.HelperLabelStyle>
- </inputLayout:SfTextInputLayout> 
+    <inputLayout:SfTextInputLayout.HintLabelStyle>
+        <inputLayout:LabelStyle FontFamily="Times New Roman" FontSize="16"/>
+    </inputLayout:SfTextInputLayout.HintLabelStyle>
+    <inputLayout:SfTextInputLayout.HelperLabelStyle>
+        <inputLayout:LabelStyle FontFamily="Times New Roman" FontSize="12"/>
+    </inputLayout:SfTextInputLayout.HelperLabelStyle>
+</inputLayout:SfTextInputLayout> 
 
 {% endhighlight %}
 

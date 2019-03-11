@@ -18,8 +18,8 @@ Spaces around the input view can be customized by setting the InputViewPadding p
 <inputLayout:SfTextInputLayout
     Hint="Name"
     InputViewPadding="5,5" 
-	ContainerType="Outlined"
-	HelperText="Enter your name">
+    ContainerType="Outlined"
+    HelperText="Enter your name">
     <Entry />
  </inputLayout:SfTextInputLayout> 
 

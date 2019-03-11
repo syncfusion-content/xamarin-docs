@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Font
+title: Syncfusion TextInputLayout Font Customization.
 description: How to customize the font family, font size, and font attributes for hint, error, helper text, and the counter label.
 platform: xamarin
 control: SfTextInputLayout

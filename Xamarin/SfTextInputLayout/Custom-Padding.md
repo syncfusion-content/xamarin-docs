@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Custom Padding to input views
+title: Syncfusion TextInputLayout Padding Customization.
 description: How to customize the padding around the input view.
 platform: xamarin
 control: SfTextInputLayout

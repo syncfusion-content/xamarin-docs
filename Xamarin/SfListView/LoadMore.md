@@ -14,14 +14,14 @@ The `SfListView.LoadMoreOption` property contains the following four different m
  * None: Disables the load more button. This is the default value.
  * Manual: Displays the load more button when reaching the end of the list and execute `SfListView.LoadMoreCommand` when tapping the button.
  * Auto: Automatically execute the `SfListView.LoadMoreCommand` when reaching end of the list.
- * AutoOnLoad: Executes `SfListView.LoadMoreCommand` when users interact with listview and reach to the end of list.
+ * AutoOnScroll: Executes `SfListView.LoadMoreCommand` when users interact with listview and reach to the end of list.
 
 The `SfListView.LoadMorePosition` property has two positions:
 
 * Top: Positioned on the top of list.
 * Bottom: Positioned on the bottom of list when reaching the end of the list. This is the default value.
 
-[SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) executes when the listview is empty. This is the default behavior of `Manual` and `Auto` when load more.
+[SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) executes when the listview is empty. This is the default behavior of `Manual` and `Auto`.
 
 ## Load more automatically
 
@@ -143,7 +143,7 @@ private void AddProducts(int index, int count)
 
 ## Load more only when user interacts
 
-To semi-automatically load more items using [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) and [SfListView.LoadMoreCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommandParameter.html) when users interact with the listview and reach to the end of list, set the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) property to `AutoOnScroll`.
+To load more items only when users interact with the listview and reach to the end of list using [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) and [SfListView.LoadMoreCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommandParameter.html), set the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) property to `AutoOnScroll`.
 
 The [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) will not execute when the listview is initially loaded. The [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) will execute only when users interact and reach to the end of list.
 

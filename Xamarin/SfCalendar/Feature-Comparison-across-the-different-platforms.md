@@ -387,7 +387,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>MonthLabelSettings</p>
+<p>MonthViewSettings</p>
 </td>
 </tr>
 

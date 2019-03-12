@@ -11,12 +11,6 @@ documentation: ug
 
 You can customize the appearance (size, attributes and family) of Font by setting the FontFamily, FontSize and FontAttributes property of LabelStyle property.
 
-## Font Styles
-
-* [`FontFamily`] - used to change the font family for the hint, error, helper text, and the counter label.
-* [`FontAttributes`] - used to change the font style for the hint, error, helper text, and the counter label.
-* [`FontSize`] - used to change the font size for the hint, error, helper text, and the counter label.
-
 Refer [this](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#use-a-custom-font) to configure the custom fonts in Xamarin.Forms.
 
 ### Hint

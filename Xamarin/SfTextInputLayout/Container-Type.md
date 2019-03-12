@@ -114,7 +114,7 @@ Spaces around the input view can be customized by setting the InputViewPadding p
 
 <inputLayout:SfTextInputLayout
     Hint="Name"
-    InputViewPadding="5,5" 
+    InputViewPadding="5" 
     ContainerType="Outlined"
     HelperText="Enter your name">
     <Entry />
@@ -126,7 +126,7 @@ Spaces around the input view can be customized by setting the InputViewPadding p
 
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name";
-inputLayout.InputViewPadding = new Thickness(5, 5);
+inputLayout.InputViewPadding = new Thickness(5);
 inputLayout.ContainerType = ContainerType.Outlined;
 inputLayout.HelperText = "Enter your name";
 inputLayout.InputView = new Entry(); 

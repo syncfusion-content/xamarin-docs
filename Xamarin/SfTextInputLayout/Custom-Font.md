@@ -31,8 +31,8 @@ You can customize the font of [hint](https://help.syncfusion.com/cr/xamarin/Sync
 <inputLayout:SfTextInputLayout
     Hint="Name"
     ContainerType="Outlined"
-    CharMaxLength="3"
-    ShowCharCount="True"
+	CharMaxLength="3"
+	ShowCharCount="True"
     HelperText="Enter your name">
     <Entry />
     <inputLayout:SfTextInputLayout.HintLabelStyle>
@@ -54,7 +54,7 @@ inputLayout.ContainerType = ContainerType.Outlined;
 inputLayout.HelperText = "Enter your name";
 inputLayout.CharMaxLength = 3;
 inputLayout.ShowCharCount = true;
-inputLayout.HintLabelStyle = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Lobster-Regular.ttf#Lobster"), FontSize = 16};
+inputLayout.HintLabelStyle = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Fonts/Lobster-Regular.ttf#Lobster"), FontSize = 16};
 inputLayout.InputView = new Entry(); 
 
 {% endhighlight %}
@@ -74,12 +74,12 @@ You can customize the font of [helper text](https://help.syncfusion.com/cr/xamar
 <inputLayout:SfTextInputLayout
     Hint="Name"
     ContainerType="Outlined"
-    CharMaxLength="3"
-    ShowCharCount="True"
+	CharMaxLength="3"
+	ShowCharCount="True"
     HelperText="Enter your name">
     <Entry />
     <inputLayout:SfTextInputLayout.HelperLabelStyle>
-                <inputLayout:LabelStyle FontSize="16">
+                <inputLayout:LabelStyle FontSize="12">
                     <inputLayout:LabelStyle.FontFamily>
                         <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf#Lobster-Regular" WinPhone="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
                     </inputLayout:LabelStyle.FontFamily>
@@ -97,7 +97,7 @@ inputLayout.ContainerType = ContainerType.Outlined;
 inputLayout.HelperText = "Enter your name";
 inputLayout.CharMaxLength = 3;
 inputLayout.ShowCharCount = true;
-inputLayout.HelperLabelStyle = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Lobster-Regular.ttf#Lobster"), FontSize = 16};
+inputLayout.HelperLabelStyle = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Fonts/Lobster-Regular.ttf#Lobster"), FontSize = 12};
 inputLayout.InputView = new Entry(); 
 
 {% endhighlight %}
@@ -117,14 +117,14 @@ You can customize the font of [error text](https://help.syncfusion.com/cr/xamari
 <inputLayout:SfTextInputLayout
     Hint="Name"
     ContainerType="Outlined"
-    CharMaxLength="3"
-    ShowCharCount="True"
+	CharMaxLength="3"
+	ShowCharCount="True"
     HelperText="Enter your name"
-    HasError="True"
-    ErrorText="Enter valid name">
+	HasError="True"
+	ErrorText="Enter valid name">
     <Entry />
     <inputLayout:SfTextInputLayout.ErrorLabelStyle>
-                <inputLayout:LabelStyle FontSize="16">
+                <inputLayout:LabelStyle FontSize="12">
                     <inputLayout:LabelStyle.FontFamily>
                         <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf#Lobster-Regular" WinPhone="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
                     </inputLayout:LabelStyle.FontFamily>
@@ -144,7 +144,7 @@ inputLayout.CharMaxLength = 3;
 inputLayout.ShowCharCount = true;
 inputLayout.HasError = true;
 inputLayout.ErrorText = "Enter valid name";
-inputLayout.ErrorLabelStyle = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Lobster-Regular.ttf#Lobster"), FontSize = 16};
+inputLayout.ErrorLabelStyle = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Fonts/Lobster-Regular.ttf#Lobster"), FontSize = 12};
 inputLayout.InputView = new Entry(); 
 
 {% endhighlight %}
@@ -164,12 +164,12 @@ You can customize the font of [counter label](https://help.syncfusion.com/cr/xam
 <inputLayout:SfTextInputLayout
     Hint="Name"
     ContainerType="Outlined"
-    CharMaxLength="3"
-    ShowCharCount="True"
+	CharMaxLength="3"
+	ShowCharCount="True"
     HelperText="Enter your name">
     <Entry />
     <inputLayout:SfTextInputLayout.CounterLabelStyle>
-                <inputLayout:LabelStyle FontSize="16">
+                <inputLayout:LabelStyle FontSize="12">
                     <inputLayout:LabelStyle.FontFamily>
                         <OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf#Lobster-Regular" WinPhone="Assets/Fonts/Lobster-Regular.ttf#Lobster" />
                     </inputLayout:LabelStyle.FontFamily>
@@ -187,7 +187,7 @@ inputLayout.ContainerType = ContainerType.Outlined;
 inputLayout.HelperText = "Enter your name";
 inputLayout.CharMaxLength = 3;
 inputLayout.ShowCharCount = true;
-inputLayout.CounterLabelStyle = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Lobster-Regular.ttf#Lobster"), FontSize = 16};
+inputLayout.CounterLabelStyle = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Fonts/Lobster-Regular.ttf#Lobster"), FontSize = 12};
 inputLayout.InputView = new Entry(); 
 
 {% endhighlight %}

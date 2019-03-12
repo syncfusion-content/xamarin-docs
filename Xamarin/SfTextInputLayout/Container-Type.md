@@ -104,6 +104,39 @@ inputLayout.InputView = new Entry();
 >**NOTE**
 It is applicable for the outline border when setting the container type to outlined.
 
+### Custom Padding
+
+Spaces around the input view can be customized by setting the InputViewPadding property to [thickness](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.thickness?view=xamarin-forms) value.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<inputLayout:SfTextInputLayout
+    Hint="Name"
+    InputViewPadding="5,5" 
+    ContainerType="Outlined"
+    HelperText="Enter your name">
+    <Entry />
+ </inputLayout:SfTextInputLayout> 
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Name";
+inputLayout.InputViewPadding = new Thickness(5, 5);
+inputLayout.ContainerType = ContainerType.Outlined;
+inputLayout.HelperText = "Enter your name";
+inputLayout.InputView = new Entry(); 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Padding customization around the input view](Container-Type-images/paddingCustomization.png)
+
 ## None
 
 When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerType.html) property to [None](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html), the container will have empty background and enough spacing.

@@ -31,8 +31,8 @@ You can customize the font of [hint](https://help.syncfusion.com/cr/xamarin/Sync
 <inputLayout:SfTextInputLayout
     Hint="Name"
     ContainerType="Outlined"
-CharMaxLength="3"
-ShowCharCount="True"
+    CharMaxLength="3"
+    ShowCharCount="True"
     HelperText="Enter your name">
     <Entry />
     <inputLayout:SfTextInputLayout.HintLabelStyle>
@@ -74,8 +74,8 @@ You can customize the font of [helper text](https://help.syncfusion.com/cr/xamar
 <inputLayout:SfTextInputLayout
     Hint="Name"
     ContainerType="Outlined"
-CharMaxLength="3"
-ShowCharCount="True"
+    CharMaxLength="3"
+    ShowCharCount="True"
     HelperText="Enter your name">
     <Entry />
     <inputLayout:SfTextInputLayout.HelperLabelStyle>
@@ -117,11 +117,11 @@ You can customize the font of [error text](https://help.syncfusion.com/cr/xamari
 <inputLayout:SfTextInputLayout
     Hint="Name"
     ContainerType="Outlined"
-CharMaxLength="3"
-ShowCharCount="True"
+    CharMaxLength="3"
+    ShowCharCount="True"
     HelperText="Enter your name"
-HasError="True"
-ErrorText="Enter valid name">
+    HasError="True"
+    ErrorText="Enter valid name">
     <Entry />
     <inputLayout:SfTextInputLayout.ErrorLabelStyle>
                 <inputLayout:LabelStyle FontSize="12">
@@ -164,8 +164,8 @@ You can customize the font of [counter label](https://help.syncfusion.com/cr/xam
 <inputLayout:SfTextInputLayout
     Hint="Name"
     ContainerType="Outlined"
-CharMaxLength="3"
-ShowCharCount="True"
+    CharMaxLength="3"
+    ShowCharCount="True"
     HelperText="Enter your name">
     <Entry />
     <inputLayout:SfTextInputLayout.CounterLabelStyle>

@@ -849,7 +849,7 @@ Here, the `Name` field will be hidden.
 
 ## Change DataFormGroupItem visibility
 
-You can change the Groupitem's visibility by using the [IsVisible] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~IsVisible.html) property in the `DataFormGroupItem`.
+You can change the Group's visibility by using the [IsVisible] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~IsVisible.html) property in the `DataFormGroupItem`.
 
 ### Runtime
 

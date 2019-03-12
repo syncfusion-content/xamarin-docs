@@ -846,3 +846,33 @@ if (dataFormItem.Name == "Name")
 {% endhighlight %}
 {% endtabs %}
 Here, the `Name` field will be hidden.
+
+## Change DataFormGroupItem visibility
+
+You can change the Groupitem's visibility by using the [IsVisible] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~IsVisible.html) property in the `DataFormGroupItem`.
+
+### Runtime
+
+{% tabs %}
+{% highlight c# %}
+var dataFormGroupItem = dataForm.ItemManager.GetDataFormGroupItem("Details");
+if (dataFormGroupItem.GroupName == "Details")
+{
+	dataFormGroupItem.IsVisible = false;
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Using event
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+	if(e.DataFormGroupItem != null )
+	{
+        if (e.DataFormGroupItem.GroupName == "Details")
+            e.DataFormGroupItem.IsVisible = false;
+	}
+}
+
+Here, the `Details` group will be hidden.

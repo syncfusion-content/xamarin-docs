@@ -17,7 +17,7 @@ You can customize the appearance (size, attributes and family) of Font by settin
 * [`FontAttributes`] - used to change the font style for the hint, error, helper text, and the counter label.
 * [`FontSize`] - used to change the font size for the hint, error, helper text, and the counter label.
 
-Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
+Refer [this](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/fonts#use-a-custom-font) to configure the custom fonts in Xamarin.Forms.
 
 ### Hint
 

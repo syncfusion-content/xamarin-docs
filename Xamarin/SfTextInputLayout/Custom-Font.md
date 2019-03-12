@@ -13,10 +13,9 @@ You can customize the appearance (size, attributes and family) of Font by settin
 
 ## Font Styles
 
-* [`Font`] – used to change the label font size, family, and weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
-* [`FontFamily`] - used to change the font family for the tooltip text.
-* [`FontAttributes`] - used to change the font style for the tooltip text.
-* [`FontSize`] - used to change the font size for the tooltip text.
+* [`FontFamily`] - used to change the font family for the hint, error, helper text, and the counter label.
+* [`FontAttributes`] - used to change the font style for the hint, error, helper text, and the counter label.
+* [`FontSize`] - used to change the font size for the hint, error, helper text, and the counter label.
 
 Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
 

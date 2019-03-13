@@ -396,7 +396,7 @@ public class ValidationDataTemplate :DataTemplate
 
 ## Customize validation message using DataTemplateSelector
 
-You can use `DataTemplateSelector` to choose a `DataTemplate` at runtime based on the value of a data-bound to DataForm through [ValidationTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationTemplate.html). It lets you choose a different data template for each validation message, customizing the appearance of a particular validation message based on certain conditions.
+You can use `DataTemplateSelector` to choose a `DataTemplate` at runtime based on the value of a data-bound to [ValidationTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationTemplate.html) property of DataForm. It lets you choose a different data template for each validation message, customizing the appearance of a particular validation message based on certain conditions.
 
 {% tabs %}
 {% highlight xaml %}

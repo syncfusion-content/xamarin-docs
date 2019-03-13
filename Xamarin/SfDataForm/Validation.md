@@ -350,6 +350,50 @@ private void DataFormGettingStarted_PropertyChanged(object sender, PropertyChang
 {% endhighlight %}
 {% endtabs %}
 
+## Customize validation message using DataTemplate
+
+The default appearance of the validation message can be customized by using the [ValidationTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationTemplate.html) property of the `DataForm`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<dataForm:SfDataForm 
+            x:Name="dataForm"  
+            ValidationTemplate="Binding ValidationTemplate">
+            <dataForm:SfDataForm.BindingContext>
+                <local:ValidationDataTemplate/>
+            </dataForm:SfDataForm.BindingContext>
+</dataForm:SfDataForm>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Creating a DataTemplate
+
+{% tabs %}
+{% highlight c# %}
+
+public class ValidationDataTemplate :DataTemplate
+{
+    public DataTemplate ValidationTemplate { get; set; }
+
+    public ValidationDataTemplate()
+    {
+        ValidationTemplate = new DataTemplate(() =>
+        {
+            return new Button
+            {
+                Text = "Field should not be empty",
+                TextColor = Color.White,
+                BackgroundColor = Color.LightGreen
+            };
+        });
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Customize validation message using DataTemplateSelector
 
 You can use DataTemplateSelector to choose a DataTemplate at runtime based on the value of a data-bound to DataForm through [ValidationTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationTemplate.html). It lets you choose a different data template for each validation message, customizing the appearance of a particular validation message based on certain conditions. DataTemplateSelector for validation includes [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) as object item and **SfDataForm** as bindable object.
@@ -358,12 +402,12 @@ You can use DataTemplateSelector to choose a DataTemplate at runtime based on th
 {% highlight xaml %}
 
 <ContentPage.Resources>
-        <ResourceDictionary>
-            <local:TemplateSelector x:Key="validationDataTemplateSelector" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
+    <ResourceDictionary>
+        <local:TemplateSelector x:Key="validationDataTemplateSelector" />
+    </ResourceDictionary>
+</ContentPage.Resources>
 
-  <dataForm:SfDataForm Grid.Row="1" x:Name="dataForm" ValidationTemplate="{StaticResource validationDataTemplateSelector}" />
+<dataForm:SfDataForm Grid.Row="1" x:Name="dataForm" ValidationTemplate="{StaticResource validationDataTemplateSelector}" />
 
 {% endhighlight %}
 {% endtabs %}
@@ -375,74 +419,71 @@ You can use DataTemplateSelector to choose a DataTemplate at runtime based on th
 {% highlight c# %}
 
 public class TemplateSelector : DataTemplateSelector
+{
+    public DataTemplate ValidMessageTemplate { get; set; }
+    public DataTemplate InvalidMessageTemplate { get; set; }     
+    public DataTemplate LastNameTemplate { get; set; }
+    public DataTemplate EmailTemplate { get; set; }
+    public DataTemplate ContactNumberTemplate { get; set; }
+
+    public TemplateSelector()
     {
-        public DataTemplate ValidMessageTemplate { get; set; }
-        public DataTemplate InvalidMessageTemplate { get; set; }     
-        public DataTemplate LastNameTemplate { get; set; }
-        public DataTemplate EmailTemplate { get; set; }
-        public DataTemplate ContactNumberTemplate { get; set; }
-
-        public TemplateSelector()
-        {
-            ValidMessageTemplate = new DataTemplate(typeof(ValidMessageTemplate));
-            InvalidMessageTemplate = new DataTemplate(typeof(InValidMessageTemplate));
-            LastNameTemplate = new DataTemplate(typeof(LastNameTemplate));
-            EmailTemplate = new DataTemplate(typeof(EmailTemplate));
-            ContactNumberTemplate = new DataTemplate(typeof(ContactNumberTemplate));
-        }
-
-        protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
-        {
-            var dataform = (container as SfDataForm);
-            if (dataform == null) return null;
-            if (dataform != null)
-            {
-                if ((item as DataFormItem).LabelText == "First Name")
-                {
-                    if (!(item as DataFormItem).IsValid)
-                    {
-                        return InvalidMessageTemplate;
-                    }
-                    else
-                    {
-                        return ValidMessageTemplate;
-                    }
-                }
-                else if ((item as DataFormItem).LabelText == "Last Name")
-                {
-                    if (!(item as DataFormItem).IsValid)
-                    {
-                        return LastNameTemplate;
-                    }
-                }
-                else if ((item as DataFormItem).LabelText == "Email")
-                {
-                    if (!(item as DataFormItem).IsValid)
-                    {
-                        return EmailTemplate;
-                    }
-                }
-                else if ((item as DataFormItem).LabelText == "Contact Number")
-                {
-                    if (!(item as DataFormItem).IsValid)
-                    {
-                        return ContactNumberTemplate;
-                    }
-                }
-                return null;
-            }
-            else
-                return null;
-          
-        }
-        
+        ValidMessageTemplate = new DataTemplate(typeof(ValidMessageTemplate));
+        InvalidMessageTemplate = new DataTemplate(typeof(InValidMessageTemplate));
+        LastNameTemplate = new DataTemplate(typeof(LastNameTemplate));
+        EmailTemplate = new DataTemplate(typeof(EmailTemplate));
+        ContactNumberTemplate = new DataTemplate(typeof(ContactNumberTemplate));
     }
+
+    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+    {
+        var dataform = (container as SfDataForm);
+        if (dataform == null) return null;
+        if (dataform != null)
+        {
+            if ((item as DataFormItem).LabelText == "First Name")
+            {
+                if (!(item as DataFormItem).IsValid)
+                {
+                    return InvalidMessageTemplate;
+                }
+                else
+                {
+                    return ValidMessageTemplate;
+                }
+            }
+            else if ((item as DataFormItem).LabelText == "Last Name")
+            {
+                if (!(item as DataFormItem).IsValid)
+                {
+                    return LastNameTemplate;
+                }
+            }
+            else if ((item as DataFormItem).LabelText == "Email")
+            {
+                if (!(item as DataFormItem).IsValid)
+                {
+                    return EmailTemplate;
+                }
+            }
+            else if ((item as DataFormItem).LabelText == "Contact Number")
+            {
+                if (!(item as DataFormItem).IsValid)
+                {
+                    return ContactNumberTemplate;
+                }
+            }
+            return null;
+        }
+        else
+            return null;   
+    }   
+}
 
 {% endhighlight %}
 {% endtabs %}
 
 Used **Button** inside a **Grid** to display the valid and invalid message in the view.
-
 
 {% tabs %}
 {% highlight xaml %}
@@ -470,3 +511,4 @@ Used **Button** inside a **Grid** to display the valid and invalid message in th
 {% endhighlight %}
 {% endtabs %}
 
+![Customize validation message using DataTemplateSelector](SfDataForm_images/Validation_Message_Customization.png)

@@ -600,6 +600,25 @@ dataForm.CollapseGroup("Group1");
 {% endhighlight %}
 {% endtabs %}
 
+### Changing DataFormGroupItem visibility
+You can change the group visibility by using the [IsVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~IsVisible.html) property in the `DataFormGroupItem`.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+	if(e.DataFormGroupItem != null )
+	{
+        if (e.DataFormGroupItem.GroupName == "Details")
+            e.DataFormGroupItem.IsVisible = false;
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
+Here, the `Details` group will be hidden.
+
 ## Customizing DataFormLayoutManager
 
 To customize the layout, override the [DataFormLayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormLayoutManager.html) and assign to the [SfDataForm.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~LayoutManager.html) property.
@@ -847,11 +866,9 @@ if (dataFormItem.Name == "Name")
 {% endtabs %}
 Here, the `Name` field will be hidden.
 
-## Change DataFormGroupItem visibility
+## Change DataFormGroupItem visibility at runtime
 
-You can change the group's visibility by using the [IsVisible] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~IsVisible.html) property in the `DataFormGroupItem`.
-
-### Runtime
+You can change the group's visibility by using the [IsVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~IsVisible.html) property in the `DataFormGroupItem`.
 
 {% tabs %}
 {% highlight c# %}
@@ -862,17 +879,5 @@ if (dataFormGroupItem.GroupName == "Details")
 }
 {% endhighlight %}
 {% endtabs %}
-
-### Using event
-
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
-{
-	if(e.DataFormGroupItem != null )
-	{
-        if (e.DataFormGroupItem.GroupName == "Details")
-            e.DataFormGroupItem.IsVisible = false;
-	}
-}
 
 Here, the `Details` group will be hidden.

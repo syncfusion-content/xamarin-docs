@@ -30,13 +30,13 @@ public App()
 >**NOTE**
 Page header for the backdrop will appear only when adding backdrop as a children of [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms).
  
-## Icon Customization
+## Icon customization
 
-Default icons in the navigation header can be customized by using the following ways,
+The default icons in the navigation header can be customized using the following ways:
 
-### Default icons in Navigation Page
+### Default icons in navigation page
 
-When the backdrop page contained within the [NavigationPage](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) , Hamburger icon will be used as Menu icon and Close icon (X mark ) will be used as Close icon.
+When the backdrop page is placed within the [NavigationPage](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms), the Hamburger icon will be used as Menu icon, and the Close icon (X mark) will be used as Close icon.
 
 ![Hamburger icon](Header-Configuration-images/Hamburger.png)
 
@@ -44,7 +44,7 @@ When the backdrop page contained within the [NavigationPage](https://docs.micros
 
 ### Default icons in MasterDetailsPage
 
-When the backdrop page placed in the [MasterDetailPage](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.masterdetailpage?view=xamarin-forms), Down arrow icon will be used as Menu icon and Up arrow will be used as Close icon.
+When the backdrop page is placed in the [MasterDetailPage](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.masterdetailpage?view=xamarin-forms), the Down arrow icon will be used as Menu icon, and the Up arrow will be used as Close icon.
 
 ![Down Arrow icon](Header-Configuration-images/DownArrrow.png)
 

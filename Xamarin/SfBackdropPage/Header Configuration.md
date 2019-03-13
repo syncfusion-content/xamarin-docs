@@ -81,8 +81,8 @@ namespace BackdropGettingStarted
         public BackdropSamplePage()
         {
             InitializeComponent();
-			this.OpenIcon = "open.png";
-    this.CloseIcon = "close.png";
+		this.OpenIcon = "open.png";
+            this.CloseIcon = "close.png";
 	    this.Title = "Menu";
         }
     }

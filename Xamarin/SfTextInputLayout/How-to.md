@@ -44,3 +44,10 @@ inputLayout.InputView = new Entry();
 ![FocusedStrokeWidth img](How-to-images/FocusedStroke.png)
 
 ![UnfocusedStrokeWidth img](How-to-images/UnfocusedStroke.png)
+
+## Customize the font for input view
+
+You can customize the font for the input view(Entry, Editor, SfMaskedEdit, SfNumericTextBox ) inside the SfTextInputLayout by using [FontSize](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.fontsize?view=xamarin-forms), [FontAttributes](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.fontattributes?view=xamarin-forms) and [FontFamily](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.fontfamily?view=xamarin-forms) properties.
+
+
+

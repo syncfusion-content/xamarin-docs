@@ -141,7 +141,7 @@ private void AddProducts(int index, int count)
 {% endhighlight %}
 {% endtabs %}
 
-## Load more only when user interacts
+## Load more when user interacts
 
 To load more items only when users interact with the listview and reach to the end of list using `SfListView.LoadMoreCommand` and `SfListView.LoadMoreCommandParameter`, set the `SfListView.LoadMoreOption` property to [AutoOnScroll](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMoreOption.html).
 

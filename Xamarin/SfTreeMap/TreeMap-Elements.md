@@ -75,3 +75,62 @@ You can also set labels for the leaf nodes by setting the `showLabels` property 
 
 ![](/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img3.png)
 
+### To Avoid Overlap in data labels
+
+The `OverflowMode` property aligns the labels that overlap with each other. The labels can be customized using the `Trim`, `Wrap`, and `Hide` options. The default value of the `OverflowMode` property is Trim.
+
+{% tabs %}
+
+{% highlight xml %}
+
+            <treeMap:SfTreeMap.LeafItemSettings>
+                <treeMap:LeafItemSettings  LabelPath="Country" OverFlowMode="Trim">
+                </treeMap:LeafItemSettings>
+            </treeMap:SfTreeMap.LeafItemSettings>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    treeMap.LeafItemSettings.OverFlowMode = LabelOverflowMode.Trim;
+ 
+{% endhighlight %}
+{% endtabs %}
+
+![Output of SfTreeMap](Getting-Started_images/LabelWrap.jpg)
+
+
+
+### Customize data labels
+
+The Data Label can be customized by using the `LabelStyle` property in LeafItemSettings. The font color, size, attribute and family can be customized using the `FontSize, FontAtrributes, FontFamily and Color` properties.
+
+{% tabs %}
+
+{% highlight xml %}
+
+            <treeMap:SfTreeMap.LeafItemSettings>
+                <treeMap:LeafItemSettings  LabelPath="Country" OverFlowMode="Trim">
+                    <treeMap:LeafItemSettings.LabelStyle>
+                        <treeMap:Style Color="Blue" FontSize="15" FontAttributes="Bold">
+                            <treeMap:Style.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String" iOS="Chalkduster" Android="cursive" WinPhone="Chiller" />
+                            </treeMap:Style.FontFamily>
+                        </treeMap:Style>
+                    </treeMap:LeafItemSettings.LabelStyle>
+                </treeMap:LeafItemSettings>
+            </treeMap:SfTreeMap.LeafItemSettings>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            treeMap.LeafItemSettings.LabelStyle.FontSize = 15;
+            treeMap.LeafItemSettings.LabelStyle.FontAttributes = FontAttributes.Bold;
+            treeMap.LeafItemSettings.LabelStyle.FontFamily = Device.RuntimePlatform == Device.iOS ? "Chalkduster" : Device.RuntimePlatform == Device.Android ? "cursive" : "Chiller";
+            treeMap.LeafItemSettings.LabelStyle.Color = Color.Blue;
+ 
+{% endhighlight %}
+{% endtabs %}
+
+![Output of SfTreeMap](Getting-Started_images/LabelCustomize.jpg)

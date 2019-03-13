@@ -64,7 +64,7 @@ You can customize the open icon and close icon in the navigation header by setti
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
     x:Class="BackdropGettingStarted.BackdropSamplePage"
-	OpenIcon="open.png"
+OpenIcon="open.png"
     CloseIcon="close.png"
     Title="Menu">
 </backdrop:SfBackdropPage>
@@ -82,7 +82,7 @@ namespace BackdropGettingStarted
         {
             InitializeComponent();
 			this.OpenIcon = "open.png";
-    			this.CloseIcon = "close.png";
+    this.CloseIcon = "close.png";
 	    this.Title = "Menu";
         }
     }

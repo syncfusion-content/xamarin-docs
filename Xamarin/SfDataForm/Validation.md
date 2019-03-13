@@ -166,7 +166,7 @@ public DateTime JoinDate
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Validation.png)
+![validation in Xamarin.Forms DataForm](SfDataForm_images/Validation.png)
 
 ## Validation mode
 
@@ -319,7 +319,7 @@ public string Name
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Validation_ValidMessage.png)
+![Valid message for validation in Xamarin.Forms DataForm](SfDataForm_images/Validation_ValidMessage.png)
 
 ## How to validate the property value based on another value
 
@@ -396,7 +396,7 @@ public class ValidationDataTemplate :DataTemplate
 
 ## Customize validation message using DataTemplateSelector
 
-You can use DataTemplateSelector to choose a DataTemplate at runtime based on the value of a data-bound to DataForm through [ValidationTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationTemplate.html). It lets you choose a different data template for each validation message, customizing the appearance of a particular validation message based on certain conditions. DataTemplateSelector for validation includes [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) as object item and **SfDataForm** as bindable object.
+You can use `DataTemplateSelector` to choose a `DataTemplate` at runtime based on the value of a data-bound to DataForm through [ValidationTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationTemplate.html). It lets you choose a different data template for each validation message, customizing the appearance of a particular validation message based on certain conditions.
 
 {% tabs %}
 {% highlight xaml %}
@@ -511,4 +511,4 @@ Used **Button** inside a **Grid** to display the valid and invalid message in th
 {% endhighlight %}
 {% endtabs %}
 
-![Customize validation message using DataTemplateSelector](SfDataForm_images/Validation_Message_Customization.png)
+![Customize validation message using DataTemplateSelector in Xamarin.Forms DataForm](SfDataForm_images/Validation_Message_Customization.png)

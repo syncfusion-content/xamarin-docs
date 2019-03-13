@@ -71,4 +71,4 @@ LoadApplication (new App ());
 {% endhighlight %}
 {% endtabs %}
 
-![RTL in SfCalendar](Images/Calendar_RTL.png)
+![RTL in Xamarin.Forms Calendar](Images/Calendar_RTL.png)

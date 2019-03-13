@@ -71,4 +71,4 @@ LoadApplication (new App ());
 {% endhighlight %}
 {% endtabs %}
 
-![RTL in SfDataForm](SfDataForm_images/DataForm_RTL.png)
+![RTL in Xamarin.Forms DataForm](SfDataForm_images/DataForm_RTL.png)

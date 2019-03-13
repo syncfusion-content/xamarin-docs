@@ -54,5 +54,43 @@ When the backdrop page is created under the masterdetailspage, the revealing and
 
 You can customize the open icon and close icon in the navigation header by setting the OpenIcon and CloseIcon property in SfBackdropPage.
 
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<?xml version="1.0" encoding="UTF-8"?>
+<backdrop:SfBackdropPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
+    x:Class="BackdropGettingStarted.BackdropSamplePage"
+	OpenIcon="open.png"
+    CloseIcon="close.png"
+    Title="Menu">
+</backdrop:SfBackdropPage>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+using Syncfusion.XForms.Backdrop;	
+namespace BackdropGettingStarted
+{
+    public partial class BackdropSamplePage : SfBackdropPage
+    {
+        public BackdropSamplePage()
+        {
+            InitializeComponent();
+			this.OpenIcon = "open.png";
+    			this.CloseIcon = "close.png";
+	    this.Title = "Menu";
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
  ![Custom icons](Header-Configuration-images/IconsCustomization.png)
  

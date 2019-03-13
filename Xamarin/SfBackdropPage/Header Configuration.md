@@ -54,5 +54,5 @@ When the backdrop page is created under the masterdetailspage, the revealing and
 
 You can customize the open icon and close icon in the navigation header by setting the OpenIcon and CloseIcon property in SfBackdropPage.
 
- 
+ ![Custom icons](Header-Configuration-images/IconsCustomization.png)
  

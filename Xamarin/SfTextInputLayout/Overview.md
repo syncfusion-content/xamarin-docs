@@ -14,14 +14,15 @@ The text input layout control for Xamarin.Forms adds decorative elements such as
 ![The customizable text input layout control for Xamarin.Forms](Overview_images/inputlayout_forms.png)
 
 ## Key features
+
 * Displays floating labels when the input view is focused.
 * Displays error labels.
 * Supports filled, outlined, and none container types.
 * Provides RTL support.
 * Provides options to reserve space for assistive labels.
-* Provides options to customize the thickness of its stroke width and corner radius.
+* Provides options to customize the thickness of stroke width and corner radius.
 * Provides options to customize padding around the input view.
-* Provides options to customize the font family, font size, and font attributes for hint, error, helper text, and the counter label.
+* Provides options to customize the font family, font size, and font attributes for hint, error, helper text, and counter label.
 * Displays leading and trailing icons.
 * Displays help labels.
 * Displays maximum character count.

@@ -327,4 +327,4 @@ treeView.IsAnimationEnabled = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin iOS TreeView with Animation](Images/TreeView_Animation.gif)
+![Xamarin Forms TreeView with Animation](TreeView_images/TreeView_Animation.gif)

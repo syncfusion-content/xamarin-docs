@@ -82,11 +82,10 @@ caption.FontSize = 20;
 ![CaptionAppearance image](Images/CaptionAppearance.png)
 
 ## TickColor Customization
+The `TickColor` property customizes the color of the tick in SfCheckBox.
 
 {% tabs %}
 {% highlight xaml %}
-The `TickColor` property customizes the color of the tick in SfCheckBox.
-
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"  x:Class="CheckBoxCustomization.checkbox">

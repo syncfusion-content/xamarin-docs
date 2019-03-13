@@ -36,7 +36,7 @@ Default icons in the navigation header can be customized by using the following 
 
 ### Default icons in Navigation Page
 
-When the backdrop page is created as single Page, the revealing and concealing back layer icon are hamburger and close icon in default.
+When the backdrop page contained within the [NavigationPage](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) , Hamburger icon will be used as Menu icon and Close icon (X mark ) will be used as Close icon.
 
 ![Hamburger icon](Header-Configuration-images/Hamburger.png)
 
@@ -44,7 +44,7 @@ When the backdrop page is created as single Page, the revealing and concealing b
 
 ### Default icons in MasterDetailsPage
 
-When the backdrop page is created under the masterdetailspage, the revealing and concealing back layer icon are Down arrow and Up arrow icon in default.
+When the backdrop page placed in the [MasterDetailPage](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.masterdetailpage?view=xamarin-forms), Down arrow icon will be used as Menu icon and Up arrow will be used as Close icon.
 
 ![Down Arrow icon](Header-Configuration-images/DownArrrow.png)
 
@@ -52,7 +52,7 @@ When the backdrop page is created under the masterdetailspage, the revealing and
 
 ### Custom icons
 
-You can customize the open icon and close icon in the navigation header by setting the OpenIcon and CloseIcon property in SfBackdropPage.
+You can customize the default icons in the navigation header by setting the OpenIcon and CloseIcon properties in SfBackdropPage.
 
 {% tabs %} 
 

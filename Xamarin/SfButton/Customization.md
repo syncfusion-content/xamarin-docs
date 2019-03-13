@@ -366,4 +366,122 @@ public class CommandDemoViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
+## Shadow Effect
+
+The button control provides shadow effect support. To enable shadow effect, set the `HasShadow` property to true.
+
+You can customize the color of shadow using the `ShadowColor` property. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+  <Grid HeightRequest="50" WidthRequest="200" VerticalOptions="Center" HorizontalOptions="Center">
+            <SyncfusionButton:SfButton
+                                     CornerRadius="25"
+                                     HasShadow="True"
+                                     BorderWidth="1"
+                                     BorderColor="Gray"
+                                     BackgroundColor="#538EEC">
+                <SyncfusionButton:SfButton.Content>
+                    <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="45"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Padding="15,0,5,0">
+                            <Label Text="&#xE7BF;" 
+                                   HorizontalTextAlignment="Center" 
+                                   VerticalOptions="Center"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalOptions="Start" 
+                                   FontSize="25" 
+                                   TextColor="White">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Segoe MDL2 Assets" />
+                                        <On Platform="Android" Value="button_Segoe MDL2 Assets.ttf#Segoe MDL2 Assets" />
+                                        <On Platform="UWP" Value="/Assets/Fonts/button_Segoe MDL2 Assets.ttf#Segoe MDL2 Assets" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+                        </Grid>
+                        <Grid Padding="0,15,15,15" Grid.Column="1" >
+                            <Label HorizontalOptions="Center" 
+                                   HorizontalTextAlignment="Center" 
+                                   FontSize="15" 
+                                   TextColor="White"               
+                                   VerticalTextAlignment="Center" 
+                                   VerticalOptions="Center" 
+                                   LineBreakMode="NoWrap" 
+                                   Text="ADD To CART">
+                            </Label>
+                        </Grid>
+                    </Grid>
+                </SyncfusionButton:SfButton.Content>
+            </SyncfusionButton:SfButton>
+        </Grid>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+Grid mainGrid = new Grid() { HeightRequest = 50, WidthRequest = 200, HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center };
+            SfButton button = new SfButton() { CornerRadius = new Thickness(25), HasShadow = true, BorderWidth = 1, BorderColor = Color.Gray, BackgroundColor = Color.FromHex("#538EEC") };
+            Grid contentGrid = new Grid() { HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center };
+            Grid iconGrid = new Grid() { Padding = new Thickness(15, 0, 5, 0) };
+            Label iconLabel = new Label() { Text = "\uE7BF", HorizontalOptions = LayoutOptions.Start, VerticalOptions = LayoutOptions.Center, HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center, FontSize = 25, TextColor = Color.White };
+            Grid textGrid = new Grid() { Padding = new Thickness(0, 15, 15, 15) };
+            Label textLabel = new Label() { Text = "ADD To CART", LineBreakMode = LineBreakMode.NoWrap, HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center, HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center, FontSize = 15, TextColor = Color.White };
+            contentGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = 45 });
+            contentGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = GridLength.Star });
+            if (Device.RuntimePlatform == "iOS")
+            {
+                iconLabel.FontFamily = "Segoe MDL2 Assets";
+            }
+            else if (Device.RuntimePlatform == "Android")
+            {
+                iconLabel.FontFamily = "button_Segoe MDL2 Assets.ttf#Segoe MDL2 Assets";
+            }
+            else if (Device.RuntimePlatform == "UWP")
+            {
+                iconLabel.FontFamily = "/ Assets / Fonts / button_Segoe MDL2 Assets.ttf#Segoe MDL2 Assets";
+            }
+
+            iconGrid.Children.Add(iconLabel);
+            textGrid.Children.Add(textLabel);
+            contentGrid.Children.Add(iconGrid, 0, 0);
+            contentGrid.Children.Add(textGrid, 1, 0);
+            button.Content = contentGrid;
+            mainGrid.Children.Add(button);
+            this.Content = mainGrid;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Shadow support has not been provided for UWP Platform.
+
+![ShadowImage](images/Xamarin_Forms_Shadow.png)
+
+## How to set font icons using ttf file?
+
+You can refer this [link](https://help.syncfusion.com/metro-studio/export-font-icon) for getting the font icons. Add the font file to your application by using the following steps for each platform:
+
+**Adding font file for iOS**
+
+1. Add the font family inside `Resource` folder iOS project.
+2. Add the font file with the following build action: `BundleResource`.
+3. Update the `Info.plist` file (fonts that are provided by application, UIAppFonts, or key).
+
+**Adding font file for Android**
+
+Add the font file to the `Assets` folder in the application project, and set the following build action: `AndroidAsset`.
+
+**Adding font file for UWP**
+
+Add the font family inside the application project of UWP.
+
+N> For iOS alone, FontFamily property is declared without succeeding with .ttf and for android and UWP platform font family name is defined followed by .ttf.
+
 The complete customization sample:[Customization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Customization-1070507783)

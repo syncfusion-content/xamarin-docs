@@ -23,3 +23,5 @@ or
 List<object> dataPoints = Series.GetDataPoints(startX, endX, startY, endY);
 
 {% endhighlight  %}
+
+N> You can get the visible plotting region of the series in the chart using [`SeriesBounds`]() property in run time.

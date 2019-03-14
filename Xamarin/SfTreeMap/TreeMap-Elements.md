@@ -79,6 +79,10 @@ You can also set labels for the leaf nodes by setting the `showLabels` property 
 
 The `OverflowMode` property aligns the labels that overlap with each other. The labels can be customized using the `Trim`, `Wrap`, and `Hide` options. The default value of the `OverflowMode` property is Trim.
 
+#### Trim
+
+To avoid the data labels are displayed outside the leaf node bounds, labels can be trim using property OverflowMode `Trim` option.
+
 {% tabs %}
 
 {% highlight xml %}
@@ -97,8 +101,55 @@ The `OverflowMode` property aligns the labels that overlap with each other. The 
 {% endhighlight %}
 {% endtabs %}
 
+![Output of SfTreeMap](Getting-Started_images/LabelTrim.jpg)
+
+#### Wrap
+
+Data labels can be wrap inside the leaf node bounds using property Overflowmode `Wrap` option to avoid the data labels are displayed outside of leaf node bounds.
+
+{% tabs %}
+
+{% highlight xml %}
+
+            <treeMap:SfTreeMap.LeafItemSettings>
+                <treeMap:LeafItemSettings  LabelPath="Country" OverFlowMode="Wrap">
+                </treeMap:LeafItemSettings>
+            </treeMap:SfTreeMap.LeafItemSettings>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    treeMap.LeafItemSettings.OverFlowMode = LabelOverflowMode.Wrap;
+ 
+{% endhighlight %}
+{% endtabs %}
+
 ![Output of SfTreeMap](Getting-Started_images/LabelWrap.jpg)
 
+#### Hide
+
+Data labels can be hide when label content exceeds the leaf node bounds using property OverflowMode `Hide` option. 
+
+{% tabs %}
+
+{% highlight xml %}
+
+            <treeMap:SfTreeMap.LeafItemSettings>
+                <treeMap:LeafItemSettings  LabelPath="Country" OverFlowMode="Hide">
+                </treeMap:LeafItemSettings>
+            </treeMap:SfTreeMap.LeafItemSettings>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    treeMap.LeafItemSettings.OverFlowMode = LabelOverflowMode.Hide;
+ 
+{% endhighlight %}
+{% endtabs %}
+
+![Output of SfTreeMap](Getting-Started_images/LabelHide.jpg)
 
 
 ### Customize data labels

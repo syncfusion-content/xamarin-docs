@@ -59,7 +59,7 @@ chart.GetStream();
 
 ## GetStreamAsync
 
-The ['GetStreamAsync']() method of SfChart is used to get the chart as stream asynchronously. This  method is available for all platforms.
+The ['GetStreamAsync']() method of SfChart is used to get the chart as stream asynchronously. This method is available for all platforms and this method will work only when the SfChart view in UI.
 
 The following code snippet demonstrates the usage of this method:
 

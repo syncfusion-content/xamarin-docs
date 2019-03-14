@@ -9,18 +9,19 @@ documentation: ug
 
 The ListView enables `Load More` view by setting the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) and [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) properties. This can be displayed either on the top or bottom of the view by setting the [SfListView.LoadMorePosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMorePosition.html) property. This view will be displayed when reaching the end of the list when the `LoadMorePosition` is bottom. This provides an option to add the items at runtime. If the `SfListView.LoadMorePosition` property is set as top, the items will be loaded only by using the `LoadMoreOption.Manual` mode.
 
-The `SfListView.LoadMoreOption` property has three different modes of operation listed as follows:
+The `SfListView.LoadMoreOption` property contains the following four different modes of operations:
 
  * None: Disables the load more button. This is the default value.
  * Manual: Displays the load more button when reaching the end of the list and execute `SfListView.LoadMoreCommand` when tapping the button.
  * Auto: Automatically execute the `SfListView.LoadMoreCommand` when reaching end of the list.
+ * AutoOnScroll: Executes `SfListView.LoadMoreCommand` when users interact with listview and reach to the end of list.
 
 The `SfListView.LoadMorePosition` property has two positions:
 
 * Top: Positioned on the top of list.
 * Bottom: Positioned on the bottom of list when reaching the end of the list. This is the default value.
 
-[SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) will execute when the listview is empty. This is the default behavior.
+`SfListView.LoadMoreCommand` executes when the listview is empty. This is the default behavior of `Manual` and `Auto`.
 
 ## Load more automatically
 
@@ -118,6 +119,85 @@ private async void LoadMoreItems(object obj)
     var index = Products.Count;
     var count = index + 3 >= totalItems ? totalItems - index : 3;
     AddProducts(index, count);
+    listView.IsBusy = false;
+}
+
+private void AddProducts(int index, int count)
+{
+    for (int i = index; i < index + count; i++)
+    {
+        var name = Names[i];
+        var p = new Product()
+        {
+            Name = name,
+            Weight = Weights[i],
+            Price = Prices[i],
+            Image = ImageSource.FromResource("LoadMoreUG.LoadMore." + name.Replace(" ", string.Empty) + ".jpg")
+        };
+    
+    Products.Add(p);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Load more when user interacts
+
+To load more items only when users interact with the listview and reach to the end of list using `SfListView.LoadMoreCommand` and `SfListView.LoadMoreCommandParameter`, set the `SfListView.LoadMoreOption` property to [AutoOnScroll](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMoreOption.html).
+
+The `SfListView.LoadMoreCommand` will not execute when the listview is initially loaded. The `SfListView.LoadMoreCommand` will execute only when users interact and reach to the end of list.
+
+The `SfListView.LoadMoreTemplate` is not displayed when the listview is initially loaded. When users interact, the `SfListView.LoadMoreTemplate` is displayed for the initially loaded items. Then, the visibility of `SfListView.LoadMoreTemplate` will be handled by the `CanExecute` method.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView"
+                 ItemSize="120"
+                 LoadMoreOption="AutoOnScroll"
+                 LoadMoreCommand="{Binding LoadMoreItemsCommand}"
+                 LoadMoreCommandParameter="{Binding Source={x:Reference listView}}"
+                 ItemsSource="{Binding Products}"/>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+listView.LoadMoreOption = LoadMoreOption.AutoOnScroll;
+listView.LoadMoreCommand = viewModel.LoadMoreItemsCommand;
+
+//ViewModel.cs
+LoadMoreItemsCommand = new Command<object>(LoadMoreItems, CanLoadMoreItems);
+
+/// <summary>
+/// When AutoOnScroll load more is enabled, the CanExecute method will be called only when the user interacts and reach to the end of list.
+/// Based on return value, the visibility of the LoadMoreTemplate is handled and the Execute method is called.
+/// </summary>
+/// <param name="obj">ListView is passed as default parameter.</param>
+/// <returns>Returns true if the list has items to load, else returns false.</returns>
+private bool CanLoadMoreItems(object obj)
+{
+    if (Products.Count >= totalItems)
+        return false;
+    return true;
+}
+
+/// <summary>
+/// The Execute method is called based on the return value of the CanExecute method. If CanExecute returns false, the Execute method will not be executed.
+/// </summary>
+/// <param name="obj">ListView is passed as default parameter.</param>
+private async void LoadMoreItems(object obj)
+{
+    var listView = obj as Syncfusion.ListView.XForms.SfListView;
+
+    //Enables LoadMoreIndicator to the LoadMoreTemplate.
+    listView.IsBusy = true;
+    await Task.Delay(2500);
+    var index = Products.Count;
+    var count = index + 3 >= totalItems ? totalItems - index : 3;
+
+    //Adding the items to the list.
+    AddProducts(index, count);
+
+    //Disables LoadMoreIndicator after adding the items.
     listView.IsBusy = false;
 }
 
@@ -403,7 +483,7 @@ private bool CanLoadMoreItems(object obj)
 ## Limitations
 
 * SfListView does not support to set `Manual` in [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) when [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
-* SfListView supports to set `Auto` in `LoadMoreOption` only when the [SfListView.LoadMorePosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMorePosition.html) is `Bottom`.
+* SfListView supports to set `Auto` and `AutoOnScroll` in `SfListView.LoadMoreOption` only when `SfListView.LoadMorePosition` is set to `Bottom`.
 * Handle [LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) execution by implementing `CanExecute` predicate of command. 
 
 ## How to

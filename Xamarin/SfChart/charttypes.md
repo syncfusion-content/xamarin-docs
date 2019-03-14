@@ -1202,6 +1202,41 @@ chart.Series.Add(splineSeries);
 
 ![Spline chart type in Xamarin.Forms](charttypes_images/charttypes_img13.png)
 
+### Dashed Lines
+
+[`StrokeDashArray`] property of the [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineSeries.html) is used to render spline series with dashes.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SplineSeries ItemsSource ="{Binding Data}" XBindingPath="Month" YBindingPath="Value">
+    <chart:SplineSeries.StrokeDashArray>
+        <x:Array Type="{x:Type x:Double}">
+            <sys:Double>5</sys:Double>
+            <sys:Double>6</sys:Double>
+        </x:Array>
+    </chart:SplineSeries.StrokeDashArray>
+</chart:SplineSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineSeries splineSeries = new SplineSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Month",
+    YBindingPath = "Value"
+};
+
+splineSeries.StrokeDashArray = new double[2] { 5, 6 };
+chart.Series.Add(splineSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Spline Rendering Types
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineSeries~SplineType.html) allows you to change the spline curve in series. 
@@ -1437,6 +1472,59 @@ chart.Series.Add(scatterSeries);
 {% endtabs %}
 
 ![Scatter chart type in Xamarin.Forms](charttypes_images/charttypes_img17.png)
+
+## Fast Scatter Chart
+
+The [`FastScatterSeries`]() is a special kind of scatter series that renders a collection with a huge number of data points. You can use the following properties to customize the appearance of a fast scatter point.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Color.html) – Changes the color of series.
+* [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Opacity.html) - Controls the transparency of chart series.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – Changes the stroke width of series.
+* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ScatterSeries~StrokeColor.html) – Changes the stroke color of series.
+* [`ScatterWidth`]() –  Changes the width of series.
+* [`ScatterHeight`]() – Changes the height of series.
+* [`ShapeType`]() - Change the rendering shape of fast scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Diamond`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Ellipse`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Hexagon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`InvertedTriangle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Pentagon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Plus`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Rectangle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html) and [`Triangle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html).
+* [`EnableAntiAliasing`]() – Since [`FastScatterSeries`]() can be loaded with a large number of points, the rendering of series should be smooth. This requirement can be achieved by setting the [`EnableAntiAliasing`]() property of [`FastScatterSeries`]() to false.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+	<chart:FastScatterSeries ScatterHeight="15"
+	ScatterWidth="15"
+	ShapeType="Ellipse"
+	ItemsSource ="{Binding Data}" 
+	XBindingPath="Year"
+	YBindingPath="Value"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+FastScatterSeries fastScatterSeries = new FastScatterSeries ()
+{ 
+	ItemsSource = Data, 	
+	ScatterHeight = 15, 
+	ScatterWidth = 15, 
+	ShapeType = ChartScatterShapeType.Ellipse,
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
+chart.Series.Add(fastScatterSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Fast Scatter chart type in Xamarin.Forms](charttypes_images/charttypes_img17.png)
 
 ## OHLC Chart
 

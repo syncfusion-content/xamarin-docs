@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ItemSelected Event in Syncfusion SfTreeMap control
-description: itemselected event
+description: This section explains the ItemSelected event support in TreeMap. 
 platform: xamarin
 control: TreeMap
 documentation: ug
@@ -11,9 +11,9 @@ documentation: ug
 
 ##ItemSelected
 
-The `ItemSelected` event occurs when an item is selected. The selected Leaf node underlying  Data and IsSelected boolean property will be passed as arguments to ItemSelectedEventArgs. The IsSelected indicates whether the item has been selected.
+The `ItemSelected` event occurs when an item is selected. The selected Leaf node underlying  data item and IsSelected boolean property will be passed as arguments to ItemSelectedEventArgs. The IsSelected indicates whether the item has been selected.
 
-Set the [HighlightOnSelection](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~HighlightOnSelection.html) to true to use the ItemSelected event.
+Set the [`HighlightOnSelection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~HighlightOnSelection.html) to true to use the `ItemSelected` event.
 
 {% tabs %}
 

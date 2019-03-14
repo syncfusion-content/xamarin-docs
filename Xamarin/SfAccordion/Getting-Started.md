@@ -27,7 +27,7 @@ You can add SfAccordion reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfAccordion to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Expander](https://www.nuget.org/packages/Syncfusion.Xamarin.Expander), and then install it. 
 
-![Adding SfAccordion reference from NuGet](sfaccordion_images/adding-sfaccordion-reference.png)
+![Adding SfAccordion reference from NuGet](sfaccordion_images/xamarin-forms-accordion.png)
 
 N> Install the same version of Expander NuGet in all the projects. 
 

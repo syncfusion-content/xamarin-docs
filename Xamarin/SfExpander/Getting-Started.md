@@ -292,7 +292,7 @@ You can download expander sample for Xamarin.Forms from here [ExpanderGettingSta
 
 ## Expand and Collapse 
 
-`SfExpande`r allows to programmatically expand and collapse by using [IsExpanded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~IsExpanded.html) property of SfExpander.  Also, expand & collapse interaction by user can be control by handling `Expanding` and `Collapsing` events.  
+`SfExpander` allows to programmatically expand and collapse by using [IsExpanded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~IsExpanded.html) property of SfExpander.  Also, expand & collapse interaction by user can be control by handling `Expanding` and `Collapsing` events.  
 
 {% tabs %}
 {% highlight xaml %}

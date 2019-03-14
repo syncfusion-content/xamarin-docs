@@ -105,7 +105,7 @@ To avoid the data labels are displayed outside the leaf node bounds, labels can 
 
 #### Wrap
 
-Data labels can be wrap inside the leaf node bounds using property Overflowmode `Wrap` option to avoid the data labels are displayed outside of leaf node bounds.
+Data labels can be wrap inside the leaf node bounds using property OverflowMode `Wrap` option to avoid the data labels are displayed outside of leaf node bounds.
 
 {% tabs %}
 

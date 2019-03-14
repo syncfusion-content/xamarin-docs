@@ -368,7 +368,7 @@ The default appearance of the validation message can be customized by using the 
 {% endhighlight %}
 {% endtabs %}
 
-## Creating a DataTemplate
+### Creating a DataTemplate
 
 {% tabs %}
 {% highlight c# %}

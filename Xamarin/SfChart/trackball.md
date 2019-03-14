@@ -92,7 +92,7 @@ The ChartTrackballActivationMode enum contains the following values:
 
 * [`LongPress`]() – Trackball is activated only when performing long press action.
 * [`TouchMove`]() – Trackball is activated only when performing touch move action.
-* [`None`]() – Trackball is not visible when setting activation mode as `None`. It may be activated when calling [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~Show.html) method.
+* [`None`]() – Trackball is not visible when setting activation mode as [`None`](). It may be activated when calling [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~Show.html) method.
 
 ## Customizing appearance
 

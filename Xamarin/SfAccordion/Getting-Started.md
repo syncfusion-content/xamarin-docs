@@ -268,7 +268,7 @@ Here, Labels are loaded in Header and Content of accordion items.
 
 Now, run the application to render the following output.
 
-![Setting data object to data form in Xamarin.Forms DataForm](sfaccordion_images/accordion.png)
+![Xamarin Forms Accordion](sfaccordion_images/xamarin-forms-accordion.png)
 
 You can download accordion sample for Xamarin.Forms from here [AccordionGettingStarted]().
 

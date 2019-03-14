@@ -10,7 +10,7 @@ documentation: ug
 # Binding Properties in MVVM Pattern
 ## Binding SelectedDate
 
-Calendar supports selecting a date programmatically by binding the `SelectedDate` property from your view model.
+Calendar supports selecting a date programmatically by binding the [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedDate.html) property from your view model.
 
 {% tabs %}
 {% highlight c# %} 
@@ -43,11 +43,11 @@ public class MainViewModel
 {% endtabs %}
 
 >**NOTE**
-* You can bind the `SelectedDate` property only when the `SelectionMode` is set to `SingleSelection` in calendar.
+* You can bind the `SelectedDate` property only when the [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html) is set to SingleSelection in calendar.
 
 ## Binding SelectedDates
 
-Calendar supports selecting dates programmatically by binding the `SelectedDates` property from your view model with the `List<DateTime>` type.
+Calendar supports selecting dates programmatically by binding the [SelectedDates](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedDates.html) property from your view model with the `List<DateTime>` type.
 
 {% tabs %}
 {% highlight c# %} 
@@ -88,7 +88,7 @@ public class MainViewModel
 * You can bind the `SelectedDates` property only when `SelectionMode` is set to `MultiSelection` in calendar.
 
 ## Binding SelectedRange
-Calendar supports selecting a range of dates programmatically by binding the `SelectedRange` property with `SelectionRange` type from your view model.
+Calendar supports selecting a range of dates programmatically by binding the [SelectedRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedRange.html) property with `SelectionRange` type from your view model.
 
 {% tabs %}
 {% highlight c#}

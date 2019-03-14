@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TreeMap-Elements
+title: Syncfusion.Xamarin.Forms TreeMap-Elements
 description: treemap elements
 platform: xamarin
 control: TreeMap
@@ -40,7 +40,7 @@ You can customize the labels of the **legend item** using `legendLabel` property
 
 {% endhighlight %}
 
-![](/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img1.png)
+![Output of SfTreeMap](Getting-Started_images/Legends.png)
 
 
 
@@ -58,7 +58,7 @@ You can set headers for each level by setting the `showHeader` property of the e
 
 
 
-![](/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img2.png)
+![Output of SfTreeMap](Getting-Started_images/Headers.png)
 
 ## Label
 
@@ -73,7 +73,7 @@ You can also set labels for the leaf nodes by setting the `showLabels` property 
 
 
 
-![](/js/TreeMap/TreeMap-Elements_images/TreeMap-Elements_img3.png)
+![Output of SfTreeMap](Getting-Started_images/Labels.png)
 
 ### To Avoid Overlap in data labels
 
@@ -103,7 +103,7 @@ The `OverflowMode` property aligns the labels that overlap with each other. The 
 
 ### Customize data labels
 
-The Data Label can be customized by using the `LabelStyle` property in LeafItemSettings. The font color, size, attribute and family can be customized using the `FontSize, FontAtrributes, FontFamily and Color` properties.
+The Data Label can be customized by using the `LabelStyle` property in LeafItemSettings. The font color, size, attribute and family can be customized using the `FontSize, FontAttributes, FontFamily and Color` properties.
 
 {% tabs %}
 
@@ -131,6 +131,7 @@ The Data Label can be customized by using the `LabelStyle` property in LeafItemS
             treeMap.LeafItemSettings.LabelStyle.Color = Color.Blue;
  
 {% endhighlight %}
+
 {% endtabs %}
 
 ![Output of SfTreeMap](Getting-Started_images/LabelCustomize.jpg)

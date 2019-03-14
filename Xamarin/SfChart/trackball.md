@@ -86,13 +86,13 @@ In the following screenshot, trackball label is shown for only single data point
 
 ## Activation mode
 
-The [`ActivationMode`] property can be used to restrict the trackball visibility based on the touch actions. The default value of [`ActivationMode`] property is [`ChartTrackballActivationMode.LongPress`] for Android and iOS platform and default value for MacOS and UWP platform is [`ChartTrackballActivationMode.TouchMove`].
+The [`ActivationMode`]() property can be used to restrict the trackball visibility based on the touch actions. The default value of [`ActivationMode`]() property is [`ChartTrackballActivationMode.LongPress`]() for Android and iOS platform and default value for MacOS and UWP platform is [`ChartTrackballActivationMode.TouchMove`]().
 
 The ChartTrackballActivationMode enum contains the following values:
 
-* [`LongPress`] – Trackball is activated only when performing long press action.
-* [`TouchMove`] – Trackball is activated only when performing touch move action.
-* [`None`] – Trackball is not visible when setting activation mode as `None`. It may be activated when calling [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~Show.html) method.
+* [`LongPress`]() – Trackball is activated only when performing long press action.
+* [`TouchMove`]() – Trackball is activated only when performing touch move action.
+* [`None`]() – Trackball is not visible when setting activation mode as `None`. It may be activated when calling [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~Show.html) method.
 
 ## Customizing appearance
 

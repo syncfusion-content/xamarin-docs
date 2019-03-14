@@ -9,7 +9,7 @@ documentation: ug
 
 # TreeMap Events
 
-##ItemSelected
+## ItemSelected
 
 The `ItemSelected` event occurs when an item is selected. The selected Leaf node underlying  data item and IsSelected boolean property will be passed as arguments to ItemSelectedEventArgs. The IsSelected indicates whether the item has been selected.
 

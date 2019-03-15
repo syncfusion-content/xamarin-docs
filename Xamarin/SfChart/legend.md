@@ -413,9 +413,9 @@ chart.Legend.OffsetY = 90;
 
 ![Legend positioning support in Xamarin.Forms Chart](legend_images/legend_img5.png)
 
-## Legend Item for Cartesian series
+## Datapoints based legend items for Cartesian series
 
-The [`Legend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend.html) will also contain list of data points which present in [`Cartesian series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries.html).  The [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~Series.html) property of Legend class is used to define the legend items. The information provided in each legend item helps to identify the corresponding data point in series.
+The [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~Series.html) property of [`ChartLegend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend.html) is used to populate the legend items based on the data points which are present in the assigned series. 
 
 The following code example shows how to enable datapoint-based legend for Cartesian series.
 

@@ -17,33 +17,110 @@ N> The selection indicator setting properties will not work when using custom he
 
 {% highlight xaml %}
 
-<tabView:SfTabItem Title="Calls" >
-	<tabView:SfTabItem.HeaderContent>
-	< Button 
-		Text="All Calls" 
-		BackgroundColor="Yellow"
-		Clicked="Button_Clicked" 
-	/>
-	</tabView:SfTabItem.HeaderContent>
-	<tabView:SfTabItem.Content>
-		<!--Some content -->
-	</tabView:SfTabItem.Content>
-</tabView:SfTabItem>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="RangeSlider.TabView">
+    <ContentPage.Content>
+         <tabView:SfTabView BackgroundColor="Aqua">
+            <tabView:SfTabItem Title="Call"
+                               SelectionColor="Aqua">
+                <tabView:SfTabItem.HeaderContent>
+                    <Button
+                        Text="All Calls" 
+                        BackgroundColor="Yellow"
+                        FontSize="10"
+                        Clicked="Handle_Clicked"/>
+                </tabView:SfTabItem.HeaderContent>
+                <tabView:SfTabItem.Content>
+                    <StackLayout>
+                        <Grid BackgroundColor="Green"/>
+                        <Button Text="Contacts" WidthRequest="300" />
+                        <Button Text="Location" WidthRequest="300" />
+                        <Button Text="Email" WidthRequest="300" />
+                    </StackLayout>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Favorites">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Contacts">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </ContentPage.Content>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-var allCallsButton = new Button();
-allCallsButton.Text = "All Calls";
-allCallsButton.BackgroundColor = Color.Yellow;
-allCallsButton.Clicked += AllCallsButton_Clicked;
-var tabViewItem = new SfTabItem()
+using Syncfusion.XForms.TabView;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace RangeSlider
 {
-Title = "Calls",
-Content = allContactsGrid,
-HeaderContent = allCallsButton
-};
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class TabView : ContentPage
+	{
+        SfTabView tabView;
+		public TabView ()
+		{
+			InitializeComponent ();
+            tabView = new SfTabView();
+            var allContactsGrid = new Grid { BackgroundColor = Color.Red };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
+            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var overflowButtonSettings = new OverflowButtonSettings();
+            overflowButtonSettings.BackgroundColor = Color.Yellow;
+            overflowButtonSettings.DisplayMode = OverflowButtonDisplayMode.Text;
+            overflowButtonSettings.TitleFontSize = 10;
+            overflowButtonSettings.TitleFontColor = Color.Blue;
+            tabView.OverflowButtonSettings = overflowButtonSettings;
+            tabView.EnableSwiping = false;
+            var allCallsButton = new Button();
+            Xamarin.Forms.Button button = new Xamarin.Forms.Button() 
+            { 
+                Text = "All Calls",
+                BackgroundColor = Color.Yellow,
+                FontSize = 10 
+            };
+
+            var tabItems = new TabItemCollection
+            {
+                new SfTabItem()
+                {
+                    HeaderContent = button,
+                    Content = allContactsGrid,
+                    SelectionColor = Color.Red
+                },
+                new SfTabItem()
+                {
+                    Title = "Favorites",
+                    Content = favoritesGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Contacts",
+                    Content = contactsGrid
+                }
+            };
+            tabView.Items = tabItems;
+            this.Content = tabView;
+            tabView.BackgroundColor = Color.Aqua;
+            this.Content = tabView;
+		}
+        void Handle_Clicked(object sender, System.EventArgs e)
+        {
+
+        }
+	}
+}
 			
 {% endhighlight %}
 

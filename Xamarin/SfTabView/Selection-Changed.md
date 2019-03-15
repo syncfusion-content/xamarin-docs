@@ -54,7 +54,7 @@ When the selection changed event is needs to be restricted through user interact
             <tabView:SfTabItem Title="Call">
                 <tabView:SfTabItem.Content>
                     <StackLayout>
-                        <Grid BackgroundColor="Green" x:Name="CotactsGrid" />
+                        <Grid BackgroundColor="Green" />
                         <Button Text="Contacts" WidthRequest="300" />
                         <Button Text="Location" WidthRequest="300" />
                         <Button Text="Email" WidthRequest="300" />

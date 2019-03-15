@@ -49,21 +49,131 @@ The selected index can be differentiated by setting the `SelectionColor` propert
 
 {% highlight xaml %}
 
-<tabView:SfTabItem Title="Calls" SelectionColor="Green">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="RangeSlider.TabView">
+    <ContentPage.Content>
+         <tabView:SfTabView OverflowMode="DropDown"
+                            EnableSwiping="false" 
+                            VisibleHeaderCount="3">
+            <tabView:SfTabItem Title="Call"
+                               SelectionColor="Aqua">
+                <tabView:SfTabItem.Content>
+                    <StackLayout>
+                        <Grid BackgroundColor="Green"/>
+                        <Button Text="Contacts" WidthRequest="300" />
+                        <Button Text="Location" WidthRequest="300" />
+                        <Button Text="Email" WidthRequest="300" />
+                    </StackLayout>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Favorites">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Contacts">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Location">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Pink" x:Name="LocationGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Email">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Navy" x:Name="EmailGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Alternative">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="AlternativeGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </ContentPage.Content>
+</ContentPage>
 			
 {% endhighlight %}
 
 {% highlight C# %}
 
-var tabViewItem = new SfTabItem()
+using Syncfusion.XForms.TabView;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace RangeSlider
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class TabView : ContentPage
 	{
-	Title = "Calls",
-	TitleFontColor = Color.Green,
+        SfTabView tabView;
+		public TabView ()
+		{
+			InitializeComponent ();
+            tabView = new SfTabView();
+            var allContactsGrid = new Grid { BackgroundColor = Color.Red };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
+            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var overflowButtonSettings = new OverflowButtonSettings();
+            overflowButtonSettings.BackgroundColor = Color.Yellow;
+            overflowButtonSettings.DisplayMode = OverflowButtonDisplayMode.Text;
+            overflowButtonSettings.Title = "OverFlow";
+            overflowButtonSettings.TitleFontSize = 10;
+            overflowButtonSettings.TitleFontColor = Color.Blue;
+            tabView.OverflowButtonSettings = overflowButtonSettings;
+            tabView.EnableSwiping = false;
+            var tabItems = new TabItemCollection
+            {
+                new SfTabItem()
+                {
+                    Title = "Calls",
+                    Content = allContactsGrid,
+                    SelectionColor = Color.Aqua
+                },
+                new SfTabItem()
+                {
+                    Title = "Favorites",
+                    Content = favoritesGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Contacts",
+                    Content = contactsGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Location",
+                    Content = contactsGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Email",
+                    Content = contactsGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Alternative",
+                    Content = contactsGrid
+                }
+            };
+            tabView.Items = tabItems;
+            this.Content = tabView;
+            tabView.BackgroundColor = Color.Aqua;
+            tabView.OverflowMode = OverflowMode.DropDown;
+            this.Content = tabView;
+		}
 	}
+}
 	
 {% endhighlight %}
 
 {% endtabs %}
+
+![SelectionColor](images/Display-Type/SelectionColor.png)
 
 The further customizations of header are discussed in the following sections:
 

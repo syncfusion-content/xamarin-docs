@@ -24,7 +24,7 @@ When you have large number of tabs, by default, the scroller will be enabled to 
             <tabView:SfTabItem Title="Call">
                 <tabView:SfTabItem.Content>
                     <StackLayout>
-                        <Grid BackgroundColor="Green" x:Name="CotactsGrid" />
+                        <Grid BackgroundColor="Green" />
                         <Button Text="Contacts" WidthRequest="300" />
                         <Button Text="Location" WidthRequest="300" />
                         <Button Text="Email" WidthRequest="300" />

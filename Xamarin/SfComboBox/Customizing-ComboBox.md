@@ -73,6 +73,164 @@ this.Content = stackLayout;
 
 ![](images/Customizing-ComboBox/customizing-entry.png)
 
+### Changing delete button color
+
+The `ClearButtonColor ` property is used to modify the delete button color. The following code example shows changing delete button color. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="True" ClearButtonColor="Red">
+            <combobox:SfComboBox.DataSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+   StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+	List<String> countryNames = new List<String>();
+	countryNames.Add("Uganda");
+	countryNames.Add("Ukraine");
+	countryNames.Add("United Arab Emirates");
+	countryNames.Add("United Kingdom");
+	countryNames.Add("United States");
+
+	SfComboBox comboBox = new SfComboBox();
+	comboBox.DataSource = countryNames;
+	comboBox.ClearButtonColor = Color.Yellow;
+    comboBox.IsEditableMode = true;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/Customizing-ComboBox/customizing-dropdown.png)
+
+### Changing delete button visibility
+
+The `ShowClearButton ` property is used to modify the visibility of delete button. The following code example shows changing delete button visibility.
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="True" IsEditableMode="True" ShowClearButton="False">
+            <combobox:SfComboBox.DataSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+   StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+	List<String> countryNames = new List<String>();
+	countryNames.Add("Uganda");
+	countryNames.Add("Ukraine");
+	countryNames.Add("United Arab Emirates");
+	countryNames.Add("United Kingdom");
+	countryNames.Add("United States");
+
+	SfComboBox comboBox = new SfComboBox();
+	comboBox.DataSource = countryNames;
+	comboBox.ShowClearButton = false;
+    comboBox.IsEditableMode = true;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/Customizing-ComboBox/customizing-dropdown.png)
+
+### Changing border visibility
+
+The `ShowBorder ` property is used to modify the visibility of border. The following code example shows changing border visibilty. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="True" IsEditableMode="True" ShowBorder="False">
+            <combobox:SfComboBox.DataSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+   StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+	List<String> countryNames = new List<String>();
+	countryNames.Add("Uganda");
+	countryNames.Add("Ukraine");
+	countryNames.Add("United Arab Emirates");
+	countryNames.Add("United Kingdom");
+	countryNames.Add("United States");
+
+	SfComboBox comboBox = new SfComboBox();
+	comboBox.DataSource = countryNames;
+	comboBox.ShowBorder = false;
+    comboBox.IsEditableMode = true;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/Customizing-ComboBox/customizing-dropdown.png)
+
 ## CustomView for ComboBox
 
 CustomView property has used to provide the custom view instead of entry in ComboBox. It's default height and width has control height and width.
@@ -295,6 +453,162 @@ The `DropDownItemHeight` property is used to modify the height of suggestion ite
 
 ![](images/Customizing-ComboBox/dropdown-item-height.png)
 
+### Changing suggestion box width
+
+The `DropDownWidth` property is used to modify the width of suggestion box. The following code example shows changing suggestion box width.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownWidth="300">
+            <combobox:SfComboBox.DataSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+   StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+	List<String> countryNames = new List<String>();
+	countryNames.Add("Uganda");
+	countryNames.Add("Ukraine");
+	countryNames.Add("United Arab Emirates");
+	countryNames.Add("United Kingdom");
+	countryNames.Add("United States");
+
+	SfComboBox comboBox = new SfComboBox();
+	comboBox.DataSource = countryNames;
+	comboBox.DropDownWidth = 300;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/Customizing-ComboBox/customizing-dropdown.png)
+
+### Changing suggestion box corner radius
+
+The `DropDownCornerRadius` property is used to modify the corner radius of suggestion box. The following code example shows changing suggestion box corner radius. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownCornerRadius="3">
+            <combobox:SfComboBox.DataSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+   StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+	List<String> countryNames = new List<String>();
+	countryNames.Add("Uganda");
+	countryNames.Add("Ukraine");
+	countryNames.Add("United Arab Emirates");
+	countryNames.Add("United Kingdom");
+	countryNames.Add("United States");
+
+	SfComboBox comboBox = new SfComboBox();
+	comboBox.DataSource = countryNames;
+	comboBox.DropDownCornerRadius = 3;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/Customizing-ComboBox/customizing-dropdown.png)
+
+### Changing suggestion box Background color
+
+The `DropDownBackgroundColor` property is used to modify the background color of suggestion box. The following code example shows changing suggestion box background color. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownBackgroundColor="Red">
+            <combobox:SfComboBox.DataSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+   StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+	List<String> countryNames = new List<String>();
+	countryNames.Add("Uganda");
+	countryNames.Add("Ukraine");
+	countryNames.Add("United Arab Emirates");
+	countryNames.Add("United Kingdom");
+	countryNames.Add("United States");
+
+	SfComboBox comboBox = new SfComboBox();
+	comboBox.DataSource = countryNames;
+	comboBox.DropDownBackgroundColor = Color.Yellow;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/Customizing-ComboBox/customizing-dropdown.png)
+
 ### Customizing suggestion items
 
 Suggestion box items can be customized using the `DropDownItemFontAttributes`, `DropDownItemFontFamily`, `DropDownTextSize` and `DropDownTextColor` properties.
@@ -339,6 +653,58 @@ Suggestion box items can be customized using the `DropDownItemFontAttributes`, `
 	comboBox.DataSource = countryNames;
 	comboBox.DropDownTextColor = Color.FromHex("#1976d2");
 	comboBox.DropDownTextSize = 16;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/Customizing-ComboBox/customizing-dropdown.png)
+
+### Changing selecetd item color in suggestion box 
+
+The `SelectedDropDownItemColor` property is used to modify text color of selected item in drop down. The following code example shows changing the selected item text color in drop down.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectedDropDownItemColor="Blue">
+            <combobox:SfComboBox.DataSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+   StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+	List<String> countryNames = new List<String>();
+	countryNames.Add("Uganda");
+	countryNames.Add("Ukraine");
+	countryNames.Add("United Arab Emirates");
+	countryNames.Add("United Kingdom");
+	countryNames.Add("United States");
+
+	SfComboBox comboBox = new SfComboBox();
+	comboBox.DataSource = countryNames;
+	comboBox.SelectedDropDownItemColor = Color.Blue;
 
     layout.Children.Add(comboBox); 
     Content = layout;

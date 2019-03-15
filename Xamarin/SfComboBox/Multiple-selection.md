@@ -336,7 +336,8 @@ comboBox.MultiSelectMode=MultiSelectMode.Token;
 comboBox.ShowSuggestionsOnFocus=true;
 comboBox.IsSelectedItemsVisibleInDropDown=true;
 comboBox.IndicatorText= "A";
-comboBox.IndicatorTextSize= "sample.ttf";
+comboBox.IndicatorFontFamily= "sample.ttf";
+comboBox.IndicatorTextSize= "15";
 comboBox.IndicatorTextColor = Color.Red;
 comboBox.EnableSelectionIndicator= true;
 

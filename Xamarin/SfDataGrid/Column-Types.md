@@ -595,6 +595,16 @@ public class ViewModel
 
 ![DataGrid with image column](SfDataGrid_images/SfDataGrid-Xamarin_showcase1.png)
 
+## Aspect
+
+SSfDataGrid allows you to size the loaded images within the bounds of the grid cell (whether to stretch, crop or letterbox) using the [GridImageColumn.Aspect](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridImageColumn~Aspect.html) property. The supported aspects are described below, the default value is AspectFit.
+
+AspectFill: Clips the image so that it fills the display area while preserving the aspect (ie. no distortion).
+
+AspectFit:  Letterboxes the image (if required) so that the entire image fits into the display area, with blank space added to the top/bottom or sides depending on whether the image is wide or tall.
+
+Fill: Stretches the image to completely and exactly fill the display area. This may result in the image being distorted.
+
 ## GridTemplateColumn
 
 The GridTemplateColumn is derived from GridColumn. Hence, it inherits all the properties of GridColumn. It allows you to extend the functionality of GridColumn with own view by creating the `CellTemplate` or `CellTemplateSelector`.

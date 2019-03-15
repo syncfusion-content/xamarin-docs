@@ -97,6 +97,17 @@ dataGrid.ScrollToColumnIndex(7);
 
 ![DataGrid with programmatically scrolling to a column](SfDataGrid_images/ScrollToColumnIndex.gif)
 
+### Scroll a row/column to a specific position
+
+The SfDataGrid allows to position the scrolled row/column in the datagrid by passing [ScrollToPosition](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.scrolltoposition?view=xamarin-forms) as parameter to the `ScrollToRowColumnIndex`, `ScrollToRowIndex`, `ScrollToColumnIndex` methods. The scrolled row/column can take either of the four positions as explained below. The default position is `Start`.
+
+* MakeVisible: Scroll to make a specified row/column visible in datagrid. If the specified row/column is already in view, scrolling will not occur.
+* Start: Scroll to make the row/column positioned at the start of the datagrid.
+* Center: Scroll to make the row/column positioned at the center of the datagrid.
+* End: Scroll to make the row/column positioned at the end of the datagrid. 
+
+N> Programmatic scrolling is not applicable for rows and columns that are frozen in view.
+
 ## Vertical Over Scroll Mode
 
 The [SfDataGrid.VerticalOverScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOverScrollMode.html) property customizes the bouncing behavior of the data grid.

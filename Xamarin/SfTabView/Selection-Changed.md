@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection Changed event for Syncfusion Essential Xamarin.Forms SfTabView.
+title: Selection Changed event for Syncfusion Essential SfTabView.
 description: Selection changed event in TabView control for Xamarin.Forms platform
 platform: Xamarin.Forms
 control: TabView

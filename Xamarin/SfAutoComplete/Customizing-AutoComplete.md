@@ -48,7 +48,7 @@ this.Content = stackLayout;
 
 {% endtabs %}
 
-![](images/Customizing-AutoComplete/customizing-entry.png)
+![Entry customization](images/Customizing-AutoComplete/customizing-entry.png)
 
 ## Custom template for Suggestion items
 
@@ -128,7 +128,7 @@ public SamplePage()
 
 {% endtabs %}
 
-![](images/Customizing-AutoComplete/item-template.png)
+![AutoComplete item template](images/Customizing-AutoComplete/item-template.png)
 
 ## Customizing the Suggestion Box
 
@@ -160,7 +160,7 @@ autoComplete.DropDownItemHeight = 45;
 
 {% endtabs %}
 
-![](images/Customizing-AutoComplete/dropdown-item-height.png)
+![Dropdown item height](images/Customizing-AutoComplete/dropdown-item-height.png)
 
 ### Changing suggestion box corner radius
 
@@ -190,7 +190,7 @@ autoComplete.DropDownCornerRadius = 3;
 
 {% endtabs %}
 
-![](images/Customizing-AutoComplete/dropdown-corner-radius.png)
+![Dropdown corner radius](images/Customizing-AutoComplete/dropdown-corner-radius.png)
 
 ### Changing suggestion box Background color
 
@@ -220,7 +220,7 @@ autoComplete.DropDownBackgroundColor = Color.Red;
 
 {% endtabs %}
 
-![](images/Customizing-AutoComplete/dropdown-background-color.png)
+![Dropdown background color](images/Customizing-AutoComplete/dropdown-background-color.png)
 
 ### Customizing Suggestion Items
 
@@ -252,7 +252,7 @@ autoComplete.DropDownTextSize = 16;
 
 {% endtabs %}
 
-![](images/Customizing-AutoComplete/customizing-dropdown.png)
+![Customizing dropdown](images/Customizing-AutoComplete/customizing-dropdown.png)
 
 ### Show clear button
 
@@ -300,7 +300,7 @@ autoComplete.ClearButtonColor = Color.Red;
 
 ### Changing border visibility
 
-The `ShowBorder ` property is used to modify the visibility of border. The following code example demonstrates how to change the border visibilty. 
+The `ShowBorder ` property is used to modify the visibility of border. The following code example demonstrates how to change the border visibility. 
 
 {% tabs %}
 
@@ -326,4 +326,4 @@ autoComplete .ShowBorder = false;
 
 {% endtabs %}
 
-![](images/Customizing-AutoComplete/show-border.png)
+![Border visibility](images/Customizing-AutoComplete/show-border.png)

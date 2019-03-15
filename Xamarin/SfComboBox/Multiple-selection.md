@@ -162,7 +162,7 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
 {% endtabs %}
 
 
-![](images/MultiSelect/TokenRepresentation_Wrap.png)
+![Wrap mode for Token](images/MultiSelect/TokenRepresentation_Wrap.png)
  
 ### Token customization
 
@@ -254,7 +254,7 @@ Token can be customized in the following ways:
 {% endtabs %}
 
 
-![](images/MultiSelect/TokenRepresentation.png)
+![Token representation](images/MultiSelect/TokenRepresentation.png)
 
 ## Delimiter
 
@@ -315,7 +315,7 @@ When selecting multiple items, the selected items can be divided with a desired 
 
 {% endtabs %}
 
-![](images/MultiSelect/Delimiter.png)
+![Delimiter mode for ComboBoxMode](images/MultiSelect/Delimiter.png)
 
 ### Selection indicator
 

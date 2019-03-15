@@ -1,7 +1,7 @@
 ---
 layout : post
-title : MinimumPrefixCharacter for Syncfusion ComboBox Control in Xamarin.Forms
-description : Learn how to set the MinimumPrefixCharacter in ComboBox
+title : Customizations in ComboBox
+description : This section describes about the visual customization of entry, suggestion box and suggestion items in the ComboBox
 platform : Xamarin
 control : SfComboBox
 documentation : ug
@@ -71,7 +71,7 @@ this.Content = stackLayout;
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customizing-entry.png)
+![Customizing entry](images/Customizing-ComboBox/customizing-entry.png)
 
 ### Changing delete button color
 
@@ -124,7 +124,7 @@ The `ClearButtonColor ` property is used to modify the delete button color. The 
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/delete-button-color.png)
+![Delete button color](images/Customizing-ComboBox/delete-button-color.png)
 
 ### Changing delete button visibility
 
@@ -176,11 +176,11 @@ The `ShowClearButton ` property is used to modify the visibility of delete butto
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/delete-button-visibility.png)
+![Delete button visibility](images/Customizing-ComboBox/delete-button-visibility.png)
 
 ### Changing border visibility
 
-The `ShowBorder ` property is used to modify the visibility of border. The following code example shows changing border visibilty. 
+The `ShowBorder ` property is used to modify the visibility of border. The following code example shows changing border visibility. 
 
 {% tabs %}
 
@@ -229,7 +229,7 @@ The `ShowBorder ` property is used to modify the visibility of border. The follo
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/show-border.png)
+![Border visibility](images/Customizing-ComboBox/show-border.png)
 
 ## CustomView for ComboBox
 
@@ -276,7 +276,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customview.png)
+![CustomView for ComboBox](images/Customizing-ComboBox/customview.png)
 
 ## Custom template for suggestion items
 
@@ -398,7 +398,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/item-template.png)
+![Item template for ComboBox](images/Customizing-ComboBox/item-template.png)
 
 ## Customizing the suggestion box
 
@@ -451,7 +451,7 @@ The `DropDownItemHeight` property is used to modify the height of suggestion ite
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/dropdown-item-height.png)
+![Dropdown item height](images/Customizing-ComboBox/dropdown-item-height.png)
 
 ### Changing suggestion box width
 
@@ -503,7 +503,7 @@ The `DropDownWidth` property is used to modify the width of suggestion box. The 
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/dropdown-width.png)
+![Dropdown width](images/Customizing-ComboBox/dropdown-width.png)
 
 ### Changing suggestion box corner radius
 
@@ -555,7 +555,7 @@ The `DropDownCornerRadius` property is used to modify the corner radius of sugge
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/dropdown-corner-radius.png)
+![Dropdown corner radius](images/Customizing-ComboBox/dropdown-corner-radius.png)
 
 ### Changing suggestion box Background color
 
@@ -607,7 +607,7 @@ The `DropDownBackgroundColor` property is used to modify the background color of
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/dropdown-background-color.png)
+![Dropdown background color](images/Customizing-ComboBox/dropdown-background-color.png)
 
 ### Customizing suggestion items
 
@@ -661,9 +661,9 @@ Suggestion box items can be customized using the `DropDownItemFontAttributes`, `
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customizing-dropdown.png)
+![Customizing dropdown](images/Customizing-ComboBox/customizing-dropdown.png)
 
-### Changing selecetd item color in suggestion box 
+### Changing selected item color in suggestion box 
 
 The `SelectedDropDownItemColor` property is used to modify text color of selected item in drop down. The following code example shows changing the selected item text color in drop down.
 
@@ -713,7 +713,7 @@ The `SelectedDropDownItemColor` property is used to modify text color of selecte
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/selected-dropdown-item-color.png)
+![Selected dropdown item color](images/Customizing-ComboBox/selected-dropdown-item-color.png)
 
 ## DropDown button customization
 
@@ -813,7 +813,7 @@ Watermark provides a short note about the type of input to enter in the editor c
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/watermark.png)
+![watermark](images/Customizing-ComboBox/watermark.png)
 
 ## Changing Watermark Text Color
 
@@ -849,4 +849,4 @@ Text color of watermark can be customized using [`WatermarkColor`] property.
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/watermark-color.png)
+![Watermark color](images/Customizing-ComboBox/watermark-color.png)

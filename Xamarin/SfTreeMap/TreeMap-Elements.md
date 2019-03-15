@@ -30,12 +30,11 @@ You can decide the size of the legend icons by setting `iconSize` property of th
 You can customize the labels of the **legend item** using `legendLabel` property of `rangeColorMapping`. 
 
 {% highlight c# %}
-…
 
     LegendSettings legendSettings = new LegendSettings();
     legendSettings.ShowLegend= true;
     legendSettings.IconSize = new Size(15, 15);
-    legendSettings.Size = new Size (350, 70);
+    legendSettings.Size = new Size (350, 100);
     legendSettings.LabelStyle.Color = Color.Black;
     treeMap.LegendSettings= legendSettings;
 
@@ -49,50 +48,46 @@ You can customize the labels of the **legend item** using `legendLabel` property
 
 You can set headers for each level by setting the `showHeader` property of the each **TreeMap** levels. The `headerHeight` property helps to set the height of the header and Group path value determines the header value. 
 
-{% highlight xaml %}
+{% highlight c# %}
 
-            <treeMap:SfTreeMap.Levels>
-                <treeMap:TreeMapFlatLevel HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
-                    <treeMap:TreeMapFlatLevel.HeaderStyle>
-                        <treeMap:Style >
-                            <treeMap:Style.Color>
-                                <OnPlatform Android="#000000" iOS="#000000" UWP="#FFFFFF"/>
-                            </treeMap:Style.Color>
-                        </treeMap:Style>
-                    </treeMap:TreeMapFlatLevel.HeaderStyle>
-                </treeMap:TreeMapFlatLevel>
-            </treeMap:SfTreeMap.Levels>
-
-{% endhighlight %}
+            TreeMapFlatLevel level = new TreeMapFlatLevel()
+            {
+                HeaderStyle =new Syncfusion.SfTreeMap.XForms.Style() {Color = Device.RuntimePlatform == Device.iOS ? Color.Black : Device.RuntimePlatform == Device.Android ? Color.Black : Color.White },
+                GroupPath = "Continent",
+                HeaderHeight = 20,
+                GroupGap = 5,
+                ShowHeader = true
+            };
+            treeMap.Levels.Add(level);     
 
 
+{% endhighlight %} 
 
-![Output of SfTreeMap](Getting-Started_images/Headers.jpg)
+
+![Output of SfTreeMap](Getting-Started_images/Header.jpg)
 
 ## Label
 
-You can also set labels for the leaf nodes by setting the `showLabels` property as true. Group path value is displayed as a label for leaf nodes. 
+You can also set labels for the leaf nodes by setting the `showLabels` property as true. Label path value is displayed as a label for leaf nodes. 
+
+{% tabs %}
 
 {% highlight xaml %}
 
             <treeMap:SfTreeMap.LeafItemSettings>
-                <treeMap:LeafItemSettings   ShowLabels="True" LabelPath="Country">
+                <treeMap:LeafItemSettings  LabelPath="Country" ShowLabels="True">
                 </treeMap:LeafItemSettings>
             </treeMap:SfTreeMap.LeafItemSettings>
-            <treeMap:SfTreeMap.Levels>
-                <treeMap:TreeMapFlatLevel HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
-                    <treeMap:TreeMapFlatLevel.HeaderStyle>
-                        <treeMap:Style >
-                            <treeMap:Style.Color>
-                                <OnPlatform Android="#000000" iOS="#000000" UWP="#FFFFFF"/>
-                            </treeMap:Style.Color>
-                        </treeMap:Style>
-                    </treeMap:TreeMapFlatLevel.HeaderStyle>
-                </treeMap:TreeMapFlatLevel>
-            </treeMap:SfTreeMap.Levels>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+            TreeMap.LeafItemSettings.ShowLabels = true;
+            TreeMap.LeafItemSettings.LabelPath = "Country";
+ 
+{% endhighlight %}
+{% endtabs %} 
 
 
 ![Output of SfTreeMap](Getting-Started_images/ShowLabel.jpg)

@@ -162,6 +162,66 @@ autoComplete.DropDownItemHeight = 45;
 
 ![](images/Customizing-AutoComplete/dropdown-item-height.png)
 
+### Changing suggestion box corner radius
+
+The `DropDownCornerRadius` property is used to modify the corner radius of suggestion box. The following code example demonstrates how to change the suggestion box corner radius. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownCornerRadius="3">
+</StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+autoComplete.DataSource = countryNames;
+autoComplete.DropDownCornerRadius = 3;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/Customizing-AutoComplete/dropdown-corner-radius.png)
+
+### Changing suggestion box Background color
+
+The `DropDownBackgroundColor` property is used to modify the background color of suggestion box. The following code example demonstrates how to change the suggestion box background color. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownBackgroundColor="Red">
+</StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+autoComplete.DataSource = countryNames;
+autoComplete.DropDownBackgroundColor = Color.Red;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/Customizing-AutoComplete/dropdown-background-color.png)
+
 ### Customizing Suggestion Items
 
 Suggestion box items can be customized using `DropDownItemFontAttributes`, `DropDownItemFontFamily`, `DropDownTextSize` and `DropDownTextColor` properties.
@@ -237,3 +297,33 @@ autoComplete.ClearButtonColor = Color.Red;
 {% endhighlight %}
 
 {% endtabs %}
+
+### Changing border visibility
+
+The `ShowBorder ` property is used to modify the visibility of border. The following code example demonstrates how to change the border visibilty. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" ShowBorder="False">
+</StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+autoComplete.DataSource = countryNames;
+autoComplete .ShowBorder = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](images/Customizing-AutoComplete/show-border.png)

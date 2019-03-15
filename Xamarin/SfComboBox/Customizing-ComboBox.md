@@ -124,7 +124,7 @@ The `ClearButtonColor ` property is used to modify the delete button color. The 
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customizing-dropdown.png)
+![](images/Customizing-ComboBox/delete-button-color.png)
 
 ### Changing delete button visibility
 
@@ -176,7 +176,7 @@ The `ShowClearButton ` property is used to modify the visibility of delete butto
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customizing-dropdown.png)
+![](images/Customizing-ComboBox/delete-button-visibility.png)
 
 ### Changing border visibility
 
@@ -229,7 +229,7 @@ The `ShowBorder ` property is used to modify the visibility of border. The follo
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customizing-dropdown.png)
+![](images/Customizing-ComboBox/show-border.png)
 
 ## CustomView for ComboBox
 
@@ -503,7 +503,7 @@ The `DropDownWidth` property is used to modify the width of suggestion box. The 
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customizing-dropdown.png)
+![](images/Customizing-ComboBox/dropdown-width.png)
 
 ### Changing suggestion box corner radius
 
@@ -555,7 +555,7 @@ The `DropDownCornerRadius` property is used to modify the corner radius of sugge
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customizing-dropdown.png)
+![](images/Customizing-ComboBox/dropdown-corner-radius.png)
 
 ### Changing suggestion box Background color
 
@@ -607,7 +607,7 @@ The `DropDownBackgroundColor` property is used to modify the background color of
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customizing-dropdown.png)
+![](images/Customizing-ComboBox/dropdown-background-color.png)
 
 ### Customizing suggestion items
 
@@ -713,7 +713,7 @@ The `SelectedDropDownItemColor` property is used to modify text color of selecte
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customizing-dropdown.png)
+![](images/Customizing-ComboBox/selected-dropdown-item-color.png)
 
 ## DropDown button customization
 

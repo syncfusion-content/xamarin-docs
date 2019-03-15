@@ -59,7 +59,7 @@ chart.GetStream();
 
 ## GetStreamAsync
 
-The [`GetStreamAsync`]() method of SfChart is used to get the chart as stream asynchronously. 
+The [`GetStreamAsync`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~GetStreamAsync.html) method of SfChart is used to get the chart as stream asynchronously. 
 
 N> This method will work only when the SfChart view in UI.
 

@@ -270,7 +270,7 @@ Now, run the application to render the following output.
 
 ![Xamarin Forms Accordion](sfaccordion_images/xamarin-forms-accordion.png)
 
-You can download accordion sample for Xamarin.Forms from here [AccordionGettingStarted]().
+You can download accordion sample for Xamarin.Forms from here [AccordionGettingStarted](https://github.com/SyncfusionExamples/xamarin_accordion_getting_started).
 
 ## Animation duration
 

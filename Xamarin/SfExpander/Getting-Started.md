@@ -249,7 +249,7 @@ Now, run the application to render the following output.
 
 ![Xamarin Forms Expander](sfexpander_images/xamarin-forms-expander.png)
 
-You can download expander sample for Xamarin.Forms from here [ExpanderGettingStarted]().
+You can download expander sample for Xamarin.Forms from here [ExpanderGettingStarted](https://github.com/SyncfusionExamples/xamarin_expander_getting_started).
 
 ## Animation duration
 

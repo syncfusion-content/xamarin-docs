@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Load More in Xamarin.Forms ListView | Syncfusion
-description: This topic describes about the load more feature with manual and automatic loading options in Syncfusion Xamarin.Forms ListView.platform: xamarin
+description: Load more with manual and automatic loading options in ListView.
+platform: xamarin
 control: SfListView
 documentation: ug
 ---

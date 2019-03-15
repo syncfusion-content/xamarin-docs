@@ -87,7 +87,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 ## Launching the accordion on each platform
 
-To use the accordion inside an application, each platform application must initialize the accordion renderer. This initialization step varies from platform to platform and is discussed in the following sections: 
+To use the accordion in an application, each platform application must initialize the accordion renderer. This initialization step varies from platform to platform and is discussed in the following sections: 
 
 ### Android
 

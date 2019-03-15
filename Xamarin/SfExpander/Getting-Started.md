@@ -150,7 +150,7 @@ This section explains how to create a simple Xamarin.Forms application with [SfE
 
 * Creating the project.
 * Adding expander in Xamarin.Forms. 
-* Defining Expander.
+* Defining expander.
 
 ### Creating the project
 
@@ -199,7 +199,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-### Defining expander Items 
+### Defining expander 
 
 `SfExpander` is a layout control comprise of Header and Content. You can load any View in [Header](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Header.html) and [Content](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Content.html). Content visibility of expander can be set by using `IsExpanded` property of Expander. User can expand or collapse the Content view by tapping Header.
 

@@ -532,6 +532,17 @@ trackball.Hide();
 
 {% endhighlight %}
 
+### HitTest method
+
+The [`HitTest`] method is used to check whether the point is in trackball or not.
+
+{% highlight c# %} 
+[C#]
+
+trackball.HitTest(pointX, pointY);
+
+{% endhighlight %}
+
 ## Events
 
 ### TrackballCreated

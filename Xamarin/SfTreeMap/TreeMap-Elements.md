@@ -51,17 +51,17 @@ You can set headers for each level by setting the `showHeader` property of the e
 
 {% highlight xaml %}
 
-            <tree:SfTreeMap.Levels>
-                <tree:TreeMapFlatLevel HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
-                    <tree:TreeMapFlatLevel.HeaderStyle>
-                        <tree:Style >
-                            <tree:Style.Color>
+            <treeMap:SfTreeMap.Levels>
+                <treeMap:TreeMapFlatLevel HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
+                    <treeMap:TreeMapFlatLevel.HeaderStyle>
+                        <treeMap:Style >
+                            <treeMap:Style.Color>
                                 <OnPlatform Android="#000000" iOS="#000000" UWP="#FFFFFF"/>
-                            </tree:Style.Color>
-                        </tree:Style>
-                    </tree:TreeMapFlatLevel.HeaderStyle>
-                </tree:TreeMapFlatLevel>
-            </tree:SfTreeMap.Levels>
+                            </treeMap:Style.Color>
+                        </treeMap:Style>
+                    </treeMap:TreeMapFlatLevel.HeaderStyle>
+                </treeMap:TreeMapFlatLevel>
+            </treeMap:SfTreeMap.Levels>
 
 {% endhighlight %}
 
@@ -75,21 +75,21 @@ You can also set labels for the leaf nodes by setting the `showLabels` property 
 
 {% highlight xaml %}
 
-            <tree:SfTreeMap.LeafItemSettings>
-                <tree:LeafItemSettings   ShowLabels="True" LabelPath="Country">
-                </tree:LeafItemSettings>
-            </tree:SfTreeMap.LeafItemSettings>
-            <tree:SfTreeMap.Levels>
-                <tree:TreeMapFlatLevel HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
-                    <tree:TreeMapFlatLevel.HeaderStyle>
-                        <tree:Style >
-                            <tree:Style.Color>
+            <treeMap:SfTreeMap.LeafItemSettings>
+                <treeMap:LeafItemSettings   ShowLabels="True" LabelPath="Country">
+                </treeMap:LeafItemSettings>
+            </treeMap:SfTreeMap.LeafItemSettings>
+            <treeMap:SfTreeMap.Levels>
+                <treeMap:TreeMapFlatLevel HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
+                    <treeMap:TreeMapFlatLevel.HeaderStyle>
+                        <treeMap:Style >
+                            <treeMap:Style.Color>
                                 <OnPlatform Android="#000000" iOS="#000000" UWP="#FFFFFF"/>
-                            </tree:Style.Color>
-                        </tree:Style>
-                    </tree:TreeMapFlatLevel.HeaderStyle>
-                </tree:TreeMapFlatLevel>
-            </tree:SfTreeMap.Levels>
+                            </treeMap:Style.Color>
+                        </treeMap:Style>
+                    </treeMap:TreeMapFlatLevel.HeaderStyle>
+                </treeMap:TreeMapFlatLevel>
+            </treeMap:SfTreeMap.Levels>
 
 {% endhighlight %}
 

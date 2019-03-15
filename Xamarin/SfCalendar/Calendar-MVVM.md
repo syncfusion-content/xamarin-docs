@@ -91,7 +91,7 @@ public class MainViewModel
 Calendar supports selecting a range of dates programmatically by binding the [SelectedRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedRange.html) property with `SelectionRange` type from your view model.
 
 {% tabs %}
-{% highlight c#}
+{% highlight c# %}
 calendar.SetBinding(SfCalendar.SelectedRangeProperty, new Binding("SelectedRange", BindingMode.TwoWay));
 {% endhighlight %}
 {% highlight xaml %}

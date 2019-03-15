@@ -83,8 +83,8 @@ You can also set labels for the leaf nodes by setting the `showLabels` property 
 
 {% highlight c# %}
 
-            TreeMap.LeafItemSettings.ShowLabels = true;
-            TreeMap.LeafItemSettings.LabelPath = "Country";
+            treeMap.LeafItemSettings.ShowLabels = true;
+            treeMap.LeafItemSettings.LabelPath = "Country";
  
 {% endhighlight %}
 {% endtabs %} 

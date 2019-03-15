@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection Changed
+title: Selection Changed event for Syncfusion TabView control.
 description: Selection changed event in TabView control for Xamarin.Forms platform
 platform: Xamarin.Forms
 control: TabView

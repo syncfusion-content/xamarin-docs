@@ -23,3 +23,5 @@ or
 List<object> dataPoints = Series.GetDataPoints(startX, endX, startY, endY);
 
 {% endhighlight  %}
+
+N> You can get the visible plotting region of the series in the chart using [`SeriesBounds`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SeriesBounds.html) property in run time.

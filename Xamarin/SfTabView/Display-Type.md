@@ -144,7 +144,8 @@ var tabViewItem = new SfTabItem
 	FontIconFontSize =  20
 	};
 
-You can refer this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TabViewFontSample192389450) for the simple sample defining the tab view items with font icons.
+You can refer this 
+[link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TabViewFontSample192389450) for the simple sample defining the tab view items with font icons.
 
 {% endhighlight %}
 

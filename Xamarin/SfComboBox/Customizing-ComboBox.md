@@ -83,14 +83,14 @@ The `ClearButtonColor ` property is used to modify the delete button color. The 
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="True" ClearButtonColor="Red">
-            <combobox:SfComboBox.DataSource>
+            <combobox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Uganda</x:String>
                     <x:String>Ukraine</x:String>
                     <x:String>United Arab Emirates</x:String>
                     <x:String>United Kingdom</x:String>
                 </ListCollection:List>
-            </combobox:SfComboBox.DataSource>
+            </combobox:SfComboBox.ComboBoxSource>
         </combobox:SfComboBox>
  </StackLayout>
 
@@ -135,14 +135,14 @@ The `ShowClearButton ` property is used to modify the visibility of delete butto
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="True" IsEditableMode="True" ShowClearButton="False">
-            <combobox:SfComboBox.DataSource>
+            <combobox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Uganda</x:String>
                     <x:String>Ukraine</x:String>
                     <x:String>United Arab Emirates</x:String>
                     <x:String>United Kingdom</x:String>
                 </ListCollection:List>
-            </combobox:SfComboBox.DataSource>
+            </combobox:SfComboBox.ComboBoxSource>
         </combobox:SfComboBox>
  </StackLayout>
 
@@ -188,14 +188,14 @@ The `ShowBorder ` property is used to modify the visibility of border. The follo
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="True" IsEditableMode="True" ShowBorder="False">
-            <combobox:SfComboBox.DataSource>
+            <combobox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Uganda</x:String>
                     <x:String>Ukraine</x:String>
                     <x:String>United Arab Emirates</x:String>
                     <x:String>United Kingdom</x:String>
                 </ListCollection:List>
-            </combobox:SfComboBox.DataSource>
+            </combobox:SfComboBox.ComboBoxSource>
         </combobox:SfComboBox>
  </StackLayout>
 
@@ -412,14 +412,14 @@ The `DropDownItemHeight` property is used to modify the height of suggestion ite
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50">
-		<combobox:SfComboBox.DataSource>
+		<combobox:SfComboBox.ComboBoxSource>
 			<ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
                 <x:String> United Kingdom </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox.ComboBoxSource>
 	 </combobox:SfComboBox>                
 </StackLayout>
 
@@ -463,14 +463,14 @@ The `DropDownWidth` property is used to modify the width of suggestion box. The 
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownWidth="300">
-            <combobox:SfComboBox.DataSource>
+            <combobox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Uganda</x:String>
                     <x:String>Ukraine</x:String>
                     <x:String>United Arab Emirates</x:String>
                     <x:String>United Kingdom</x:String>
                 </ListCollection:List>
-            </combobox:SfComboBox.DataSource>
+            </combobox:SfComboBox.ComboBoxSource>
         </combobox:SfComboBox>
  </StackLayout>
 
@@ -515,14 +515,14 @@ The `DropDownCornerRadius` property is used to modify the corner radius of sugge
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownCornerRadius="3">
-            <combobox:SfComboBox.DataSource>
+            <combobox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Uganda</x:String>
                     <x:String>Ukraine</x:String>
                     <x:String>United Arab Emirates</x:String>
                     <x:String>United Kingdom</x:String>
                 </ListCollection:List>
-            </combobox:SfComboBox.DataSource>
+            </combobox:SfComboBox.ComboBoxSource>
         </combobox:SfComboBox>
  </StackLayout>
 
@@ -566,15 +566,15 @@ The `DropDownBackgroundColor` property is used to modify the background color of
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownBackgroundColor="Red">
-            <combobox:SfComboBox.DataSource>
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownBackgroundColor="Yellow">
+            <combobox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Uganda</x:String>
                     <x:String>Ukraine</x:String>
                     <x:String>United Arab Emirates</x:String>
                     <x:String>United Kingdom</x:String>
                 </ListCollection:List>
-            </combobox:SfComboBox.DataSource>
+            </combobox:SfComboBox.ComboBoxSource>
         </combobox:SfComboBox>
  </StackLayout>
 
@@ -619,7 +619,7 @@ Suggestion box items can be customized using the `DropDownItemFontAttributes`, `
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownTextSize="16" DropDownTextColor="#1976d2">
-		<combobox:SfComboBox.DataSource>
+		<combobox:SfComboBox.ComboBoxSource>
 			<ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
@@ -627,7 +627,7 @@ Suggestion box items can be customized using the `DropDownItemFontAttributes`, `
                 <x:String> United Kingdom </x:String>
                 <x:String> United States </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox.ComboBoxSource>
 	 </combobox:SfComboBox>                
 </StackLayout>
 
@@ -673,14 +673,14 @@ The `SelectedDropDownItemColor` property is used to modify text color of selecte
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectedDropDownItemColor="Blue">
-            <combobox:SfComboBox.DataSource>
+            <combobox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Uganda</x:String>
                     <x:String>Ukraine</x:String>
                     <x:String>United Arab Emirates</x:String>
                     <x:String>United Kingdom</x:String>
                 </ListCollection:List>
-            </combobox:SfComboBox.DataSource>
+            </combobox:SfComboBox.ComboBoxSource>
         </combobox:SfComboBox>
  </StackLayout>
 
@@ -724,7 +724,7 @@ This section explains various DropDown button settings available in SfComboBox c
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
-		<combobox:SfComboBox.DataSource>
+		<combobox:SfComboBox.ComboBoxSource>
 			<ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
@@ -732,7 +732,7 @@ This section explains various DropDown button settings available in SfComboBox c
                 <x:String> United Kingdom </x:String>
                 <x:String> United States </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox.ComboBoxSource>
 		<combobox:SfComboBox.DropDownButtonSettings>
      		<combobox:DropDownButtonSettings Width="40" Height="40" FontIcon="" FontSize="16" FontColor="Blue" HighlightedBackgroundColor="Green" BackgroundColor="Red" HighlightFontColor="Red"/>
      	</combobox:SfComboBox.DropDownButtonSettings>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Diacritic sensitivity in ComboBox
+title: Diacritic sensitivity in Syncfusion ComboBox control
 description: Learn how to enable and disable Diacritic sensitivity in SfComboBox
 platform: xamarin
 control: SfComboBox

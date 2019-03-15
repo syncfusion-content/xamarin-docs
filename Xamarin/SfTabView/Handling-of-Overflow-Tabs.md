@@ -43,17 +43,17 @@ When you have large number of tabs, by default, the scroller will be enabled to 
             </tabView:SfTabItem>
             <tabView:SfTabItem Title="Location">
                 <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Pink" x:Name="ConttsGrid" />
+                    <Grid BackgroundColor="Pink" x:Name="LocationGrid" />
                 </tabView:SfTabItem.Content>
             </tabView:SfTabItem>
             <tabView:SfTabItem Title="Email">
                 <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Navy" x:Name="Contactrid" />
+                    <Grid BackgroundColor="Navy" x:Name="EmailGrid" />
                 </tabView:SfTabItem.Content>
             </tabView:SfTabItem>
             <tabView:SfTabItem Title="Alternative">
                 <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="ContGrid" />
+                    <Grid BackgroundColor="Blue" x:Name="AlternativeGrid" />
                 </tabView:SfTabItem.Content>
             </tabView:SfTabItem>
         </tabView:SfTabView>

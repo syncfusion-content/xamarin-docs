@@ -124,7 +124,7 @@ public class MainViewModel
 Calendar supports selecting multiple ranges of dates programmatically by binding the `SelectedRange` property with `ObservableCollection<SelectionRange>` type from your view model.
 
 {% tabs %}
-{% highlight c#}
+{% highlight c# %}
 calendar.SetBinding(SfCalendar.SelectedRangeProperty, new Binding("SelectedRanges", BindingMode.TwoWay));
 {% endhighlight %}
 {% highlight xaml %}

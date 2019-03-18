@@ -1164,7 +1164,7 @@ By default, the SfMaskedEdit includes prompt and literals along with your input 
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem; 
 …  
 
-private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGen eratingDataFormItemEventArgs e) 
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e) 
 { 
 if (e.DataFormItem != null && e.DataFormItem.Name == "ContactNumber") 
 { 

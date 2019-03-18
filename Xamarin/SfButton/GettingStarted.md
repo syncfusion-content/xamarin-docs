@@ -68,6 +68,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     global::Xamarin.Forms.Forms.Init();
     LoadApplication(new App());
+    SfBorderRenderer.Init();
     SfButtonRenderer.Init();
     return base.FinishedLaunching(app, options);
 }
@@ -88,6 +89,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     List<Assembly> assembliesToInclude = new List<Assembly>();
     //Now, add all the assemblies that your app uses 
     assembliesToInclude.Add(typeof(SfButtonRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(SfBorderRenderer).GetTypeInfo().Assembly);
     // replaces Xamarin.Forms.Forms.Init(e);
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
     ..... 

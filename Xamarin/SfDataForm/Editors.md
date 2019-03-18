@@ -1141,7 +1141,9 @@ public class SourceProviderExt : SourceProvider
 {% endhighlight %}
 {% endtabs %}
 
-![Loading radio group editor in Xamarin.Forms DataForm](SfDataForm_images/RadioGroupEditor.jpg)## MaskedEditText editor 
+![Loading radio group editor in Xamarin.Forms DataForm](SfDataForm_images/RadioGroupEditor.jpg)
+
+## MaskedEditText editor 
 
 In the MaskedEditText editor, the [SfMaskedEdit](https://help.syncfusion.com/xamarin/sfmaskededit/overview) control is loaded.
 
@@ -1164,7 +1166,7 @@ dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGen eratingDataFormItemEventArgs e) 
 { 
-if (e.DataFormItem != null && e.DataFormItem.Name == " ContactNumber") 
+if (e.DataFormItem != null && e.DataFormItem.Name == "ContactNumber") 
 { 
 (e.DataFormItem as DataFormMaskedEditTextItem).ValueMaskFormat = Syncfusion.XForms.MaskedEdit.MaskFormat.ExcludePromptAndLiterals; 
 } 
@@ -1172,7 +1174,7 @@ if (e.DataFormItem != null && e.DataFormItem.Name == " ContactNumber")
 {% endhighlight %}
 {% endtabs %}
 
-### Localising special characters 
+### Localizing special characters 
 
 The special symbols such as currency, date separator, decimal separator, and other symbols can be localized using the [CultureInfo](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~CultureInfo.html) property of DataFormMaskedEditTextItem. 
 
@@ -1182,7 +1184,7 @@ The special symbols such as currency, date separator, decimal separator, and oth
 {% endhighlight %}
 {% endtabs %}
 
-### Customising the clipboard text
+### Customizing the clipboard text
 
 By default, when you perform the cut or copy operation, the clipboard text will be included with prompt and literals along with your input value. You can modify this and allow the clipboard to hold the value with or without prompt and literals by setting the [CutCopyMaskFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~CutCopyMaskFormat.html) property of the DataFormMaskedEditTextItem. 
 
@@ -1203,7 +1205,7 @@ The mask and mask type of input can be customized using the [Mask](https://help.
 {% endhighlight %}
 {% endtabs %}
 
-###  Customising prompt character
+###  Customizing prompt character
 
 The custom prompt character can be set using the [PromptChar](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~PromptChar.html) property of DataFormMaskedEditTextItem.  
 

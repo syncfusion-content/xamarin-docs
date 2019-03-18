@@ -1157,7 +1157,7 @@ public string ContactNumber { get; set; }
 
 ### Setting the masked editor as int and double type 
 
-By default, the SfMaskedEdit includes prompt and literals along with your input value. The special characters are allowed in int and double type, so you need to exclude prompt and literals using the [ValueMaskFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~ValueMaskFormat.html) property in DataFormMaskedEditTextItem.
+By default, the SfMaskedEdit includes prompt and literals along with your input value. The special characters are not allowed in int and double type, so you need to exclude prompt and literals using the [ValueMaskFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~ValueMaskFormat.html) property in DataFormMaskedEditTextItem.
 
 {% tabs %}
 {% highlight c# %}
@@ -1186,7 +1186,7 @@ The special symbols such as currency, date separator, decimal separator, and oth
 
 ### Customizing the clipboard text
 
-By default, when you perform the cut or copy operation, the clipboard text will be included with prompt and literals along with your input value. You can modify this and allow the clipboard to hold the value with or without prompt and literals by setting the [CutCopyMaskFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~CutCopyMaskFormat.html) property of the DataFormMaskedEditTextItem. 
+By default, when you perform cut or copy operation, the clipboard text will be included with prompt and literals along with your input value. You can modify this and allow the clipboard to hold the value with or without prompt and literals by setting the [CutCopyMaskFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~CutCopyMaskFormat.html) property of the DataFormMaskedEditTextItem. 
 
 {% tabs %}
 {% highlight c# %}

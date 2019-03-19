@@ -117,7 +117,6 @@ namespace RangeSlider
 		}
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-
         }
 	}
 }
@@ -133,8 +132,11 @@ The following code sample demonstrates customizing the header by adding image an
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="RangeSlider.TabView">
-    <ContentPage.Content>
-        <syncfusion:SfTabView x:Name="tabView" 
+        <ContentPage.BindingContext>
+            <local:ContactsViewModel x:Name="viewModel"/>
+        </ContentPage.BindingContext>
+        <ContentPage.Content>
+           <syncfusion:SfTabView x:Name="tabView" 
                               TabHeight="80" 
                               BackgroundColor="#BEBEBE" 
                               EnableSwiping="False" 

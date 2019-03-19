@@ -19,7 +19,7 @@ Tab items can be configured in tab view through the `Items` property of `SfTabVi
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-             x:Class="TabViewAutomationSample.XAMARIN_17573">
+             x:Class="TabViewAutomationSample.TabViewAutomationSample">
     <ContentPage.Content>
         <tabView:SfTabView BackgroundColor="Aqua">
                     <tabView:SfTabItem Title="Call">
@@ -49,7 +49,7 @@ using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace TabViewAutomationSample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TabView : ContentPage
@@ -103,7 +103,7 @@ To share the header space to the tabs equally, set the number of tabs that can b
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-             x:Class="TabViewAutomationSample.XAMARIN_17573">
+             x:Class="TabViewAutomationSample.TabViewAutomationSample">
     <ContentPage.Content>
         <tabView:SfTabView BackgroundColor="Aqua" VisibleHeaderCount="3">
             <tabView:SfTabItem Title="Call">
@@ -138,7 +138,7 @@ using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace TabViewAutomationSample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TabView : ContentPage

@@ -18,7 +18,7 @@ When you have large number of tabs, by default, the scroller will be enabled to 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-             x:Class="RangeSlider.TabView">
+             x:Class="TabView.TabView">
     <ContentPage.Content>
         <tabView:SfTabView OverflowMode="DropDown" VisibleHeaderCount="3" BackgroundColor="Aqua">
             <tabView:SfTabItem Title="Call">
@@ -73,7 +73,7 @@ using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace TabView
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TabView : ContentPage
@@ -147,7 +147,7 @@ Appearance of the text can be customized through the APIs that are available on 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-             x:Class="RangeSlider.TabView">
+             x:Class="TabView.TabView">
     <ContentPage.Content>
         <tabView:SfTabView OverflowMode="DropDown" VisibleHeaderCount="3" BackgroundColor="Aqua">
             <tabView:SfTabView.OverflowButtonSettings>
@@ -205,7 +205,7 @@ using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TabView : ContentPage

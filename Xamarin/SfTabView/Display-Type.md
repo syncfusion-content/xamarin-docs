@@ -25,13 +25,127 @@ The tab view can be changed by setting the `DisplayMode` property of `SfTabView`
 
 {% highlight xaml %}
 
-<tabView:SfTabView VisibleHeaderCount="3" DisplayMode="ImageWithText" >
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="RangeSlider.TabView">
+    <ContentPage.Content>
+         <tabView:SfTabView OverflowMode="DropDown"
+                            EnableSwiping="false" 
+                            VisibleHeaderCount="3"
+                            DisplayMode="ImageWithText">
+            <tabView:SfTabItem Title="Call"
+                               SelectionColor="Aqua">
+                <tabView:SfTabItem.Content>
+                    <StackLayout>
+                        <Grid BackgroundColor="Green"/>
+                        <Button Text="Contacts" WidthRequest="300" />
+                        <Button Text="Location" WidthRequest="300" />
+                        <Button Text="Email" WidthRequest="300" />
+                    </StackLayout>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Favorites">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Contacts">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Location">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Pink" x:Name="LocationGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Email">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Navy" x:Name="EmailGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Alternative">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="AlternativeGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </ContentPage.Content>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-tabView.DisplayMode = TabDisplayMode.ImageWithText;
+using Syncfusion.XForms.TabView;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace RangeSlider
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class TabView : ContentPage
+	{
+        SfTabView tabView;
+		public TabView ()
+		{
+			InitializeComponent ();
+            tabView = new SfTabView();
+            var allContactsGrid = new Grid { BackgroundColor = Color.Red };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
+            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var overflowButtonSettings = new OverflowButtonSettings();
+            overflowButtonSettings.BackgroundColor = Color.Yellow;
+            overflowButtonSettings.DisplayMode = OverflowButtonDisplayMode.Text;
+            overflowButtonSettings.Title = "OverFlow";
+            overflowButtonSettings.TitleFontSize = 10;
+            overflowButtonSettings.TitleFontColor = Color.Blue;
+            tabView.OverflowButtonSettings = overflowButtonSettings;
+            tabView.EnableSwiping = false;
+            tabView.DisplayMode = TabDisplayMode.ImageWithText;
+            var tabItems = new TabItemCollection
+            {
+                new SfTabItem()
+                {
+                    Title = "Calls",
+                    Content = allContactsGrid,
+                    SelectionColor = Color.Aqua
+                },
+                new SfTabItem()
+                {
+                    Title = "Favorites",
+                    Content = favoritesGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Contacts",
+                    Content = contactsGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Location",
+                    Content = contactsGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Email",
+                    Content = contactsGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Alternative",
+                    Content = contactsGrid
+                }
+            };
+            tabView.Items = tabItems;
+            this.Content = tabView;
+            tabView.BackgroundColor = Color.Aqua;
+            tabView.OverflowMode = OverflowMode.DropDown;
+            this.Content = tabView;
+		}
+	}
+}
 
 {% endhighlight %}
 
@@ -183,20 +297,152 @@ The further customizations of header are discussed in the following sections:
 
 {% highlight xaml %}
 
-<tabView:SfTabItem Title="Calls" TitleFontAttributes="Bold" TitleFontColor="Red" TitleFontSize="22">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="RangeSlider.TabView">
+    <ContentPage.Content>
+         <tabView:SfTabView OverflowMode="DropDown"
+                            EnableSwiping="false" 
+                            VisibleHeaderCount="3">
+            <tabView:SfTabItem Title="Call"
+                               SelectionColor="Aqua">
+                <tabView:SfTabItem.Content>
+                    <StackLayout>
+                        <Grid BackgroundColor="Green"/>
+                        <Button Text="Contacts" WidthRequest="300" />
+                        <Button Text="Location" WidthRequest="300" />
+                        <Button Text="Email" WidthRequest="300" />
+                    </StackLayout>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Favorites">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Contacts" 
+                               TitleFontAttributes="Bold" 
+                               TitleFontColor="Red" 
+                               TitleFontSize="22">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Location" 
+                               TitleFontAttributes="Bold" 
+                               TitleFontColor="Red" 
+                               TitleFontSize="22">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Pink" x:Name="LocationGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Email" 
+                               TitleFontAttributes="Bold" 
+                               TitleFontColor="Red" 
+                               TitleFontSize="22">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Navy" x:Name="EmailGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Alternative" 
+                               TitleFontAttributes="Bold" 
+                               TitleFontColor="Red" 
+                               TitleFontSize="22">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="AlternativeGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </ContentPage.Content>
+</ContentPage>
 			
 {% endhighlight %}
 
 {% highlight C# %}
 
-var tabViewItem = new SfTabItem()
+using Syncfusion.XForms.TabView;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace RangeSlider
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class TabView : ContentPage
 	{
-		Title = "Calls",
-		Content = allContactsGrid,
-		TitleFontAttributes = FontAttributes.Bold,
-		TitleFontColor = Color.Red,
-		TitleFontSize = 22
+        SfTabView tabView;
+		public TabView ()
+		{
+			InitializeComponent ();
+            tabView = new SfTabView();
+            var allContactsGrid = new Grid { BackgroundColor = Color.Red };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
+            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var overflowButtonSettings = new OverflowButtonSettings();
+            overflowButtonSettings.BackgroundColor = Color.Yellow;
+            overflowButtonSettings.DisplayMode = OverflowButtonDisplayMode.Text;
+            overflowButtonSettings.Title = "OverFlow";
+            overflowButtonSettings.TitleFontSize = 10;
+            overflowButtonSettings.TitleFontColor = Color.Blue;
+            tabView.OverflowButtonSettings = overflowButtonSettings;
+            tabView.EnableSwiping = false;
+            var tabItems = new TabItemCollection
+            {
+                new SfTabItem()
+                {
+                    Title = "Calls",
+                    Content = allContactsGrid,
+                    SelectionColor = Color.Aqua
+                },
+                new SfTabItem()
+                {
+                    Title = "Favorites",
+                    Content = favoritesGrid,
+                    TitleFontAttributes = FontAttributes.Bold,
+		            TitleFontColor = Color.Red,
+		            TitleFontSize = 22
+                },
+                new SfTabItem()
+                {
+                    Title = "Contacts",
+                    Content = contactsGrid,
+                    TitleFontAttributes = FontAttributes.Bold,
+		            TitleFontColor = Color.Red,
+		            TitleFontSize = 22
+                },
+                new SfTabItem()
+                {
+                    Title = "Location",
+                    Content = contactsGrid,
+                    TitleFontAttributes = FontAttributes.Bold,
+		            TitleFontColor = Color.Red,
+		            TitleFontSize = 22
+                },
+                new SfTabItem()
+                {
+                    Title = "Email",
+                    Content = contactsGrid,
+                    TitleFontAttributes = FontAttributes.Bold,
+		            TitleFontColor = Color.Red,
+		            TitleFontSize = 22
+                },
+                new SfTabItem()
+                {
+                    Title = "Alternative",
+                    Content = contactsGrid,
+                    TitleFontAttributes = FontAttributes.Bold,
+		            TitleFontColor = Color.Red,
+		            TitleFontSize = 22
+                }
+            };
+            tabView.Items = tabItems;
+            this.Content = tabView;
+            tabView.BackgroundColor = Color.Aqua;
+            tabView.OverflowMode = OverflowMode.DropDown;
+            this.Content = tabView;
+		}
 	}
+}
 			
 {% endhighlight %}
 
@@ -228,31 +474,175 @@ N> For iOS alone, FontFamily property is declared without succeeding with .ttf a
 
 {% highlight xaml %}
 
-<ResourceDictionary>
-<OnPlatform x:TypeArguments="x:String" x:Key="fontFamily" iOS="TabIcons" Android="TabIcons.ttf" UWP="TabIcons.ttf#TabIcons" />
-</ResourceDictionary>
-
-	// . . . //
-
-<tabview:SfTabItem Title="Calls"
-IconFont="a"
-FontIconFontColor="LightBlue"
-FontIconFontSize="20"
-FontIconFontFamily="{StaticResource fontFamily}">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TabViewFontSample"
+             xmlns:tabview="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="TabViewFontSample.TabViewFontSamplePage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" 
+                        x:Key="fontfamilyOriginal"
+                        iOS="OtfFont" 
+                        Android="Fonts/OtfFont.ttf" />
+            <OnPlatform x:TypeArguments="x:String" 
+                        x:Key="fontfamilyOriginal1" 
+                        iOS="Fonts/fa-regular-400" 
+                        Android="Fonts/fa-regular-400.ttf" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid BackgroundColor="White" Padding="0,20,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Label Text="Welcome to the Xamarin forms" Grid.Row="0" />
+            <tabview:SfTabView Margin="0,0,0,2" 
+                               x:Name="simTab" 
+                               VisibleHeaderCount="4" 
+                               TabHeaderPosition="Bottom" 
+                               DisplayMode="ImageWithText"
+                               EnableSwiping="true" 
+                               Grid.Row="1" >
+                <tabview:SfTabView.Items>
+                    <tabview:SfTabItem Title="Chat"   
+                                       TitleFontSize="14"
+                                       IconFont="A"
+                                       FontIconFontFamily="{StaticResource fontfamilyOriginal}"
+                                       SelectionColor="#FF00AFF0"
+                                       FontIconFontColor="#FF00AFF0"
+                                       TitleFontColor="#FF00AFF0">
+                        <tabview:SfTabItem.Content>
+                            <Label Text="Hai" />
+                        </tabview:SfTabItem.Content>
+                    </tabview:SfTabItem>
+                    <tabview:SfTabItem Title="Chat2"   
+                                       TitleFontSize="14"
+                                       IconFont="&#xf000;"
+                                       FontIconFontFamily="{StaticResource fontfamilyOriginal1}"
+                                       SelectionColor="#FF00AFF0"
+                                       FontIconFontColor="#FF00AFF0"
+                                       TitleFontColor="#FF00AFF0">
+                        <tabview:SfTabItem.Content>
+                            <Label Text="Hai" />
+                        </tabview:SfTabItem.Content>
+                    </tabview:SfTabItem>
+                    <tabview:SfTabItem Title="like"   
+                                       TitleFontSize="14"
+                                       IconFont="&#0041;"
+                                       FontIconFontFamily="{StaticResource fontfamilyOriginal}"
+                                       SelectionColor="#FF00AFF0"
+                                       FontIconFontColor="#FF00AFF0"
+                                       TitleFontColor="#FF00AFF0">
+                        <tabview:SfTabItem.Content>
+                            <Label Text="Hello"/>
+                        </tabview:SfTabItem.Content>
+                    </tabview:SfTabItem>
+                    <tabview:SfTabItem Title="dislike"   
+                                       TitleFontSize="14"
+                                       IconFont="&#0041;"
+                                       FontIconFontFamily="Fonts/OtfFont.ttf"
+                                       SelectionColor="#FF00AFF0"
+                                       FontIconFontColor="#FF00AFF0"
+                                       TitleFontColor="#FF00AFF0">
+                        <tabview:SfTabItem.Content>
+                            <Label Text="How are"/>
+                        </tabview:SfTabItem.Content>
+                    </tabview:SfTabItem>
+                    <tabview:SfTabItem Title="status"
+                                       TitleFontSize="14"
+                                       IconFont="C"
+                                       FontIconFontFamily="{StaticResource fontfamilyOriginal}"
+                                       SelectionColor="#FF00AFF0"
+                                       FontIconFontColor="#FF00AFF0"
+                                       TitleFontColor="#FF00AFF0">
+                        <tabview:SfTabItem.Content>
+                            <Label Text="You"/>
+                        </tabview:SfTabItem.Content>
+                    </tabview:SfTabItem>
+                </tabview:SfTabView.Items>
+            </tabview:SfTabView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
 			
 {% endhighlight %}
 
 {% highlight C# %}
 
-var tabViewItem = new SfTabItem
+using Syncfusion.XForms.TabView;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace RangeSlider
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class TabView : ContentPage
 	{
-	Title = "Calls",
-	Content = allContactsGrid,
-	IconFont = "a", // setting value for font icons as mentioned in *.ttf.
-	FontIconFontFamily = Device.RuntimePlatform == "iOS" ? "TabIcons" : Device.RuntimePlatform == "Android" ? "TabIcons.ttf" : "TabIcons.ttf#TabIcons",
-	FontIconFontColor = Color.LightBlue,
-	FontIconFontSize =  20
-	};
+        SfTabView tabView;
+		public TabView ()
+		{
+			InitializeComponent ();
+            tabView = new SfTabView();
+            var allContactsGrid = new Grid { BackgroundColor = Color.Red };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
+            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var overflowButtonSettings = new OverflowButtonSettings();
+            overflowButtonSettings.BackgroundColor = Color.Yellow;
+            overflowButtonSettings.DisplayMode = OverflowButtonDisplayMode.Text;
+            overflowButtonSettings.Title = "OverFlow";
+            overflowButtonSettings.TitleFontSize = 10;
+            overflowButtonSettings.TitleFontColor = Color.Blue;
+            tabView.OverflowButtonSettings = overflowButtonSettings;
+            tabView.EnableSwiping = false;
+            var tabItems = new TabItemCollection
+            {
+                new SfTabItem()
+                {
+                    Title = "Calls",
+                    Content = allContactsGrid,
+                    IconFont = "A", // setting value for font icons as mentioned in *.ttf.
+	                FontIconFontFamily = Device.RuntimePlatform == "iOS" ? "TabIcons" : Device.RuntimePlatform == "Android" ? "TabIcons.ttf" : "TabIcons.ttf#TabIcons",
+	                FontIconFontColor = Color.LightBlue,
+	                FontIconFontSize =  20
+                },
+                new SfTabItem()
+                {
+                    Title = "Favorites",
+                    Content = favoritesGrid,
+                    IconFont = "B", // setting value for font icons as mentioned in *.ttf.
+	                FontIconFontFamily = Device.RuntimePlatform == "iOS" ? "TabIcons" : Device.RuntimePlatform == "Android" ? "TabIcons.ttf" : "TabIcons.ttf#TabIcons",
+	                FontIconFontColor = Color.LightBlue,
+	                FontIconFontSize =  20
+                },
+                new SfTabItem()
+                {
+                    Title = "Contacts",
+                    Content = contactsGrid,
+                    IconFont = "C", // setting value for font icons as mentioned in *.ttf.
+	                FontIconFontFamily = Device.RuntimePlatform == "iOS" ? "TabIcons" : Device.RuntimePlatform == "Android" ? "TabIcons.ttf" : "TabIcons.ttf#TabIcons",
+	                FontIconFontColor = Color.LightBlue,
+	                FontIconFontSize =  20
+                },
+                new SfTabItem()
+                {
+                    Title = "Alternative",
+                    Content = contactsGrid,
+                    IconFont = "D", // setting value for font icons as mentioned in *.ttf.
+	                FontIconFontFamily = Device.RuntimePlatform == "iOS" ? "TabIcons" : Device.RuntimePlatform == "Android" ? "TabIcons.ttf" : "TabIcons.ttf#TabIcons",
+	                FontIconFontColor = Color.LightBlue,
+	                FontIconFontSize =  20
+                }
+            };
+            tabView.Items = tabItems;
+            this.Content = tabView;
+            tabView.BackgroundColor = Color.Aqua;
+            tabView.OverflowMode = OverflowMode.DropDown;
+            this.Content = tabView;
+		}
+	}
+}
 
 {% endhighlight %}
 

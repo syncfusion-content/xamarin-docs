@@ -28,7 +28,7 @@ The tab view can be changed by setting the `DisplayMode` property of `SfTabView`
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-             x:Class="RangeSlider.TabView">
+             x:Class="TabView.TabView">
     <ContentPage.Content>
          <tabView:SfTabView OverflowMode="DropDown"
                             EnableSwiping="false" 
@@ -82,7 +82,7 @@ using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TabView : ContentPage
@@ -165,7 +165,7 @@ The selected index can be differentiated by setting the `SelectionColor` propert
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-             x:Class="RangeSlider.TabView">
+             x:Class="TabView.TabView">
     <ContentPage.Content>
          <tabView:SfTabView OverflowMode="DropDown"
                             EnableSwiping="false" 
@@ -218,7 +218,7 @@ using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TabView : ContentPage
@@ -298,7 +298,7 @@ The further customizations of header are discussed in the following sections:
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-             x:Class="RangeSlider.TabView">
+             x:Class="TabView.TabView">
     <ContentPage.Content>
          <tabView:SfTabView OverflowMode="DropDown"
                             EnableSwiping="false" 
@@ -363,7 +363,7 @@ using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TabView : ContentPage
@@ -572,7 +572,7 @@ using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace TabViewFontSample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TabView : ContentPage

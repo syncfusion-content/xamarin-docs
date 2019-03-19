@@ -44,6 +44,7 @@ The `ImageSource` property customizes the icon image of SfTabView by adding a cu
         </tabView:SfTabView>
     </ContentPage.Content>
 </ContentPage>
+
 {% endhighlight %}
 
 {% highlight C# %}

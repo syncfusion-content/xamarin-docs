@@ -1,13 +1,15 @@
 ---
 layout: post
-title: Tab Items
-description: About Tab items in TabView control for Xamarin.Forms platform
+title: Header Customization for Syncfusion SfTabView control.
+description: About customization of header in TabView control for Xamarin.Forms platform
 platform: Xamarin.Forms
 control: TabView
 documentation: ug
 ---
 
-# Tab items
+# TabView Header Customization
+
+# Tab Items
 
 Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
 

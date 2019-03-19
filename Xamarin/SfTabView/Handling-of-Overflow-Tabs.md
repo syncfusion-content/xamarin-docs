@@ -120,7 +120,6 @@ namespace RangeSlider
                 }
             };
             tabView.Items = tabItems;
-            this.Content = tabView;
             tabView.BackgroundColor = Color.Aqua;
             tabView.OverflowMode = OverflowMode.DropDown;
             this.Content = tabView;
@@ -260,7 +259,6 @@ namespace RangeSlider
                 }
             };
             tabView.Items = tabItems;
-            this.Content = tabView;
             tabView.BackgroundColor = Color.Aqua;
             tabView.OverflowMode = OverflowMode.DropDown;
             this.Content = tabView;

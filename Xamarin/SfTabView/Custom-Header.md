@@ -111,7 +111,6 @@ namespace RangeSlider
                 }
             };
             tabView.Items = tabItems;
-            this.Content = tabView;
             tabView.BackgroundColor = Color.Aqua;
             this.Content = tabView;
 		}

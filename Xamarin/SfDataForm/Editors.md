@@ -235,7 +235,7 @@ Enum and List type property.
 </tr>
 <tr>
 <td>
-RadioGroup
+MaskedEditText
 </td>
 <td>
 {{'[DataFormMaskedEditTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormMaskedEditTextEditor.html)'| markdownify }}

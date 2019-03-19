@@ -83,6 +83,15 @@ Generated for Enum type property and the property with [EnumDataTypeAttribute] a
 </tr>
 <tr>
 <td>
+{{'[DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html)'| markdownify }}
+</td>
+<td>
+Generated for the PhoneNumber type property.
+[DataType(DataType.PhoneNumber)]
+</td>
+</tr>
+<tr>
+<td>
 {{'[DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html)'| markdownify }}
 </td>
 <td>
@@ -655,7 +664,7 @@ public class Data : DynamicObject, IDictionary<string, object>
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComplexProperty-1726015503.zip)
 
-## Adding DataFormItems through XAML
+## Adding custom DataFormItems
 
 Support has been provided to generate custom DataFormItems for the defined business model using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of the `SfDataForm` class. You need to set the [AutoGenerateItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~AutoGenerateItems.html) property to false to restrict the auto generation of DataFormItems. 
 

@@ -235,6 +235,20 @@ Enum and List type property.
 {{'[SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html)'| markdownify }}
 </td>
 </tr>
+<tr>
+<td>
+MaskedEditText
+</td>
+<td>
+{{'[DataFormMaskedEditTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormMaskedEditTextEditor.html)'| markdownify }}
+</td>
+<td>
+The property with [DataType(DataType.PhoneNumber)] attribute.
+</td>
+<td>
+{{'[SfMaskedEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit_namespace.html)'| markdownify }}
+</td>
+</tr>
 </table>
 
 ## Changing editor for type

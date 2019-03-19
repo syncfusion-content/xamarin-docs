@@ -20,25 +20,32 @@ Tab headers can be positioned either above the content or below the content. Thi
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="RangeSlider.TabView">
     <ContentPage.Content>
-        <tabView:SfTabView VisibleHeaderCount="3" BackgroundColor="Aqua" TabHeaderPosition="Bottom">
-            <tabView:SfTabItem Title="Call">
+        <tabView:SfTabView VisibleHeaderCount="3"
+                           TabHeaderPosition="Bottom"  
+                           OverflowMode="DropDown">
+            <tabView:SfTabItem Title="CEO">
                 <tabView:SfTabItem.Content>
                     <StackLayout>
-                        <Grid BackgroundColor="Green" x:Name="CotactsGrid" />
+                        <Grid BackgroundColor="Green"/>
                         <Button Text="Contacts" WidthRequest="300" />
                         <Button Text="Location" WidthRequest="300" />
                         <Button Text="Email" WidthRequest="300" />
                     </StackLayout>
                 </tabView:SfTabItem.Content>
             </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Favorites">
+            <tabView:SfTabItem Title="Patients">
                 <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
+                    <Grid BackgroundColor="Blue" x:Name="FavoritesGrid"/>
                 </tabView:SfTabItem.Content>
             </tabView:SfTabItem>
-            <tabView:SfTabItem Title="Contacts">
+            <tabView:SfTabItem Title="Staff">
                 <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                    <Grid BackgroundColor="Green" x:Name="ContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Alternative">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Olive" x:Name="AlternativeGrid" />
                 </tabView:SfTabItem.Content>
             </tabView:SfTabItem>
         </tabView:SfTabView>
@@ -64,25 +71,35 @@ namespace RangeSlider
 			InitializeComponent ();
             tabView = new SfTabView();
             var allContactsGrid = new Grid { BackgroundColor = Color.Red };
-            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
-            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Blue };
+            var contactsGrid = new Grid { BackgroundColor = Color.Green };
+            var alternativeGrid = new Grid { BackgroundColor = Color.Olive };
             tabView.TabHeaderPosition = TabHeaderPosition.Bottom;
+            tabView.OverflowMode = OverflowMode.DropDown;
             var tabItems = new TabItemCollection
             {
                 new SfTabItem()
                 {
-                    Title = "Calls",
+                    Title = "CEO",
                     Content = allContactsGrid
                 },
                 new SfTabItem()
                 {
-                    Title = "Favorites",
+                    Title = "Patients",
                     Content = favoritesGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Staff",
+                    Content = contactsGrid
+                }
+                new SfTabItem()
+                {
+                    Title = "Alternative",
+                    Content = alternativeGrid
                 }
             };
             tabView.Items = tabItems;
-            this.Content = tabView;
-            tabView.BackgroundColor = Color.Aqua;
             this.Content = tabView;
 		}
 	}
@@ -93,3 +110,5 @@ namespace RangeSlider
 {% endtabs %}
 
 When the header is not needed, set the `DisplayMode` property of `SfTabView` to `NoHeader`.
+
+![Positioning of Header](images/Position-of-Header/HeaderPosition.png)

@@ -233,6 +233,20 @@ Enum and List type property.
 {{'[SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html)'| markdownify }}
 </td>
 </tr>
+<tr>
+<td>
+RadioGroup
+</td>
+<td>
+{{'[DataFormMaskedEditTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormMaskedEditTextEditor.html)'| markdownify }}
+</td>
+<td>
+The property with [DataType(DataType.PhoneNumber)] attribute.
+</td>
+<td>
+{{'[SfMaskedEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit_namespace.html)'| markdownify }}
+</td>
+</tr>
 </table>
 
 ## Text editor
@@ -1166,10 +1180,10 @@ dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e) 
 { 
-if (e.DataFormItem != null && e.DataFormItem.Name == "ContactNumber") 
-{ 
-(e.DataFormItem as DataFormMaskedEditTextItem).ValueMaskFormat = Syncfusion.XForms.MaskedEdit.MaskFormat.ExcludePromptAndLiterals; 
-} 
+    if (e.DataFormItem != null && e.DataFormItem.Name == "ContactNumber") 
+    { 
+        (e.DataFormItem as DataFormMaskedEditTextItem).ValueMaskFormat = Syncfusion.XForms.MaskedEdit.MaskFormat.ExcludePromptAndLiterals; 
+        } 
 } 
 {% endhighlight %}
 {% endtabs %}

@@ -120,12 +120,12 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
-<ContentPage.BindingContext>
-    <local:EmployeeViewModel/>
- </ContentPage.BindingContext>
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" DataSource="{Binding EmployeeCollection}"/>
-</StackLayout> 
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" DataSource="{Binding EmployeeCollection}"/>
+    </StackLayout> 
 </ContentPage>
 
 {% endhighlight %}
@@ -195,12 +195,12 @@ Token can be customized in the following ways:
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
-<ContentPage.BindingContext>
-    <local:EmployeeViewModel/>
- </ContentPage.BindingContext>
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image"                             MultiSelectMode="Token" TokensWrapMode="Wrap" DataSource="{Binding EmployeeCollection}">
-        <combobox:SfComboBox.TokenSettings>
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image"                             MultiSelectMode="Token" TokensWrapMode="Wrap" DataSource="{Binding EmployeeCollection}">
+            <combobox:SfComboBox.TokenSettings>
                 <combobox:TokenSettings FontSize="16" BackgroundColor="#66ccff" 
                                         TextColor="White" SelectedBackgroundColor="#ffffe0" 
                                         DeleteButtonColor="Color.Brown" IsCloseButtonVisible="true" 
@@ -208,7 +208,7 @@ Token can be customized in the following ways:
                 </combobox:TokenSettings>
             </combobox:SfComboBox.TokenSettings>
       </combobox:SfComboBox>      
-</StackLayout>
+    </StackLayout>
 </ContentPage>
 
 {% endhighlight %}
@@ -265,9 +265,9 @@ When selecting multiple items, the selected items can be divided with a desired 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MultiSelectMode="Delimiter"  Delimiter=","> 
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MultiSelectMode="Delimiter"  Delimiter=","> 
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Afghanistan </x:String>
                 <x:String> Albania </x:String>
                 <x:String> Mexico </x:String>

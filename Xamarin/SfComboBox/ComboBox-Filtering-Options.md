@@ -17,7 +17,7 @@ The combo box enables the filer option for filtering the suggestions in the drop
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30"> 
     <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" MaximumDropDownHeight="150">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Afghanistan </x:String>
                 <x:String> Albania </x:String>
                 <x:String> Algeria</x:String>
@@ -30,7 +30,7 @@ The combo box enables the filer option for filtering the suggestions in the drop
                 <x:String> Argentina </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>               
+    </combobox:SfComboBox>               
 </StackLayout>
 
 {% endhighlight %}
@@ -104,7 +104,7 @@ Displays all the matches that start with the typed characters in control. This s
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="StartsWith">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> UUnited Arab Emirates</x:String>
@@ -112,7 +112,7 @@ Displays all the matches that start with the typed characters in control. This s
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>              
+    </combobox:SfComboBox>              
 </StackLayout>
 
 {% endhighlight %}
@@ -157,9 +157,9 @@ Displays all the matches that start with the typed characters in control. This s
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<comboBox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="StartsWithCaseSensitive">
+    <comboBox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="StartsWithCaseSensitive">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates</x:String>
@@ -167,7 +167,7 @@ Displays all the matches that start with the typed characters in control. This s
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>           
+    </combobox:SfComboBox>           
 </StackLayout>
 
 {% endhighlight %}
@@ -212,9 +212,9 @@ Displays all the matches that contain the typed characters in control. This stra
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="Contains">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="Contains">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates</x:String>
@@ -223,7 +223,7 @@ Displays all the matches that contain the typed characters in control. This stra
                 <x:String> Italy </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                            
+    </combobox:SfComboBox>                            
 </StackLayout>
 
 {% endhighlight %}
@@ -269,9 +269,9 @@ Displays all the matches that contains the typed characters in control. This str
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="ContainsWithCaseSensitive">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="ContainsWithCaseSensitive">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -280,7 +280,7 @@ Displays all the matches that contains the typed characters in control. This str
                 <x:String> Italy </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                            
+    </combobox:SfComboBox>                            
 </StackLayout>
 
 {% endhighlight %}
@@ -326,9 +326,9 @@ Displays all the words that completely match with the typed characters in contro
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfCpomboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="Equals">
+    <combobox:SfCpomboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="Equals">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -336,7 +336,7 @@ Displays all the words that completely match with the typed characters in contro
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>        
+    </combobox:SfComboBox>        
 </StackLayout>
 
 {% endhighlight %}
@@ -380,9 +380,9 @@ Displays all the words that completely match with the typed characters in contro
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="EqualsWithCaseSensitive">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="EqualsWithCaseSensitive">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -390,7 +390,7 @@ Displays all the words that completely match with the typed characters in contro
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>             
+    </combobox:SfComboBox>             
 </StackLayout>
 
 {% endhighlight %}
@@ -436,9 +436,9 @@ Filters items in the suggestion list based on a custom search by user. This help
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" DropDownTextSize="20" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" ComboBoxMode="Suggest" MaximumDropDownHeight="200" SuggestionMode="Custom">
+    <combobox:SfComboBox HeightRequest="40" DropDownTextSize="20" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" ComboBoxMode="Suggest" MaximumDropDownHeight="200" SuggestionMode="Custom">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Albania </x:String>
                 <x:String> Algeria </x:String>
                 <x:String> American Samoa </x:String>
@@ -446,7 +446,7 @@ Filters items in the suggestion list based on a custom search by user. This help
                 <x:String> Anguilla </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>
+    </combobox:SfComboBox>
 </StackLayout>
 
 {% endhighlight %}
@@ -518,9 +518,9 @@ Displays all the matches that end with the typed characters in control. This str
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" WidthRequest="180" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="EndsWith">
+    <combobox:SfComboBox HeightRequest="40" WidthRequest="180" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" SuggestionMode="EndsWith">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -528,7 +528,7 @@ Displays all the matches that end with the typed characters in control. This str
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                            
+    </combobox:SfComboBox>                            
 </StackLayout>
 
 {% endhighlight %}
@@ -574,9 +574,9 @@ Displays all the matches that ends with the typed characters in control. This st
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  SuggestionMode="EndsWithCaseSensitive">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  SuggestionMode="EndsWithCaseSensitive">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -584,7 +584,7 @@ Displays all the matches that ends with the typed characters in control. This st
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>           
+    </combobox:SfComboBox>           
 </StackLayout>
 
 {% endhighlight %}
@@ -642,9 +642,9 @@ The filtered suggestions are displayed in a drop-down list. User can pick an ite
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  ComboBoxMode="Suggest">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  ComboBoxMode="Suggest">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -652,7 +652,7 @@ The filtered suggestions are displayed in a drop-down list. User can pick an ite
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                      
+    </combobox:SfComboBox>                      
 </StackLayout> 
 		  
 {% endhighlight %}
@@ -697,9 +697,9 @@ The first item in filtered suggestions is appended to SfComboBox text. In this m
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  ComboBoxMode="Append">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  ComboBoxMode="Append">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -707,7 +707,7 @@ The first item in filtered suggestions is appended to SfComboBox text. In this m
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                       
+    </combobox:SfComboBox>                       
 </StackLayout> 
 		  
 {% endhighlight %}
@@ -752,9 +752,9 @@ The text is appended to the first matched item in the suggestions collection, an
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  ComboBoxMode="SuggestAppend">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true"  ComboBoxMode="SuggestAppend">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -762,7 +762,7 @@ The text is appended to the first matched item in the suggestions collection, an
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                
+    </combobox:SfComboBox>                
 </StackLayout> 
 		  
 {% endhighlight %}

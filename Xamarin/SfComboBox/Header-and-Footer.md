@@ -21,7 +21,7 @@ You can provide Header content for header at the top of the ComboBox's Suggestio
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
     <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -91,7 +91,7 @@ The following code example shows how to set Footer content in SfComboBox.
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
     <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>

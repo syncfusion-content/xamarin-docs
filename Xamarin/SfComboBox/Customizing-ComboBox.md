@@ -339,8 +339,9 @@ Now populate this PersonViewModel data in SfComboBox control by binding with [`D
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
 	<ContentPage.BindingContext>
-    	<local:PersonViewModel/>
+    	    <local:PersonViewModel/>
  	</ContentPage.BindingContext>
+     
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DisplayMemberPath="Name" DataSource="{Binding PersonCollection}">
 			<combobox:SfComboBox.ItemTemplate>
@@ -411,38 +412,38 @@ The `DropDownItemHeight` property is used to modify the height of suggestion ite
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50">
-		<combobox:SfComboBox.ComboBoxSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50">
+        <combobox:SfComboBox.ComboBoxSource>
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
                 <x:String> United Kingdom </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.ComboBoxSource>
-	 </combobox:SfComboBox>                
+    </combobox:SfComboBox>                
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- 	StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
 	     VerticalOptions = LayoutOptions.Start, 
 	     HorizontalOptions = LayoutOptions.Start, 
 	     Padding = new Thickness(30) 
     }; 
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.DataSource = countryNames;
-	comboBox.DropDownItemHeight = 50;
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.DropDownItemHeight = 50;
 
     layout.Children.Add(comboBox); 
     Content = layout;
@@ -478,23 +479,23 @@ The `DropDownWidth` property is used to modify the width of suggestion box. The 
 
 {% highlight c# %}
 
-   StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
 	     VerticalOptions = LayoutOptions.Start, 
 	     HorizontalOptions = LayoutOptions.Start, 
 	     Padding = new Thickness(30) 
     }; 
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.DataSource = countryNames;
-	comboBox.DropDownWidth = 300;
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.DropDownWidth = 300;
 
     layout.Children.Add(comboBox); 
     Content = layout;
@@ -530,23 +531,23 @@ The `DropDownCornerRadius` property is used to modify the corner radius of sugge
 
 {% highlight c# %}
 
-   StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.DataSource = countryNames;
-	comboBox.DropDownCornerRadius = 3;
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.DropDownCornerRadius = 3;
 
     layout.Children.Add(comboBox); 
     Content = layout;
@@ -589,16 +590,16 @@ The `DropDownBackgroundColor` property is used to modify the background color of
 	     Padding = new Thickness(30) 
     }; 
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.DataSource = countryNames;
-	comboBox.DropDownBackgroundColor = Color.Yellow;
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.DropDownBackgroundColor = Color.Yellow;
 
     layout.Children.Add(comboBox); 
     Content = layout;
@@ -618,41 +619,41 @@ Suggestion box items can be customized using the `DropDownItemFontAttributes`, `
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownTextSize="16" DropDownTextColor="#1976d2">
-		<combobox:SfComboBox.ComboBoxSource>
-			<ListCollection:List x:TypeArguments="x:String">
-                <x:String> Uganda </x:String>
-                <x:String> Ukraine </x:String>
-                <x:String> United Arab Emirates </x:String>
-                <x:String> United Kingdom </x:String>
-                <x:String> United States </x:String>
-            </ListCollection:List>
-        </combobox:SfComboBox.ComboBoxSource>
-	 </combobox:SfComboBox>                
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownTextSize="16" DropDownTextColor="#1976d2">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String> Uganda </x:String>
+                    <x:String> Ukraine </x:String>
+                    <x:String> United Arab Emirates </x:String>
+                    <x:String> United Kingdom </x:String>
+                    <x:String> United States </x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+    </combobox:SfComboBox>                
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.DataSource = countryNames;
-	comboBox.DropDownTextColor = Color.FromHex("#1976d2");
-	comboBox.DropDownTextSize = 16;
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.DropDownTextColor = Color.FromHex("#1976d2");
+    comboBox.DropDownTextSize = 16;
 
     layout.Children.Add(comboBox); 
     Content = layout;
@@ -688,23 +689,23 @@ The `SelectedDropDownItemColor` property is used to modify text color of selecte
 
 {% highlight c# %}
 
-   StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
 	     VerticalOptions = LayoutOptions.Start, 
 	     HorizontalOptions = LayoutOptions.Start, 
 	     Padding = new Thickness(30) 
     }; 
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.DataSource = countryNames;
-	comboBox.SelectedDropDownItemColor = Color.Blue;
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.SelectedDropDownItemColor = Color.Blue;
 
     layout.Children.Add(comboBox); 
     Content = layout;
@@ -723,9 +724,9 @@ This section explains various DropDown button settings available in SfComboBox c
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
-		<combobox:SfComboBox.ComboBoxSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
+        <combobox:SfComboBox.ComboBoxSource>
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -733,43 +734,43 @@ This section explains various DropDown button settings available in SfComboBox c
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.ComboBoxSource>
-		<combobox:SfComboBox.DropDownButtonSettings>
+        <combobox:SfComboBox.DropDownButtonSettings>
      		<combobox:DropDownButtonSettings Width="40" Height="40" FontIcon="" FontSize="16" FontColor="Blue" HighlightedBackgroundColor="Green" BackgroundColor="Red" HighlightFontColor="Red"/>
      	</combobox:SfComboBox.DropDownButtonSettings>
-	</combobox:SfComboBox>
+    </combobox:SfComboBox>
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
 	     VerticalOptions = LayoutOptions.Start, 
 	     HorizontalOptions = LayoutOptions.Start, 
 	     Padding = new Thickness(30) 
     }; 
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.DataSource = countryNames;
-	DropDownButtonSettings dropDownButtonSettings = new DropDownButtonSettings();
-	dropDownButtonSettings.Height = 40;
-	dropDownButtonSettings.Width = 40;
-	dropDownButtonSettings.FontIcon = "";
-	dropDownButtonSettings.FontSize = 16;
-	dropDownButtonSettings.FontColor = Color.Blue;
-	dropDownButtonSettings.HighlightedBackgroundColor = Color.Green;
-	dropDownButtonSettings.BackgroundColor = Color.Red;
-	dropDownButtonSettings.HighlightFontColor = Color.Red;
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    DropDownButtonSettings dropDownButtonSettings = new DropDownButtonSettings();
+    dropDownButtonSettings.Height = 40;
+    dropDownButtonSettings.Width = 40;
+    dropDownButtonSettings.FontIcon = "";
+    dropDownButtonSettings.FontSize = 16;
+    dropDownButtonSettings.FontColor = Color.Blue;
+    dropDownButtonSettings.HighlightedBackgroundColor = Color.Green;
+    dropDownButtonSettings.BackgroundColor = Color.Red;
+    dropDownButtonSettings.HighlightFontColor = Color.Red;
 
-	comboBox.DropDownButtonSettings = dropDownButtonSettings;
+    comboBox.DropDownButtonSettings = dropDownButtonSettings;
 
     layout.Children.Add(comboBox); 
     Content = layout;
@@ -796,17 +797,17 @@ Watermark provides a short note about the type of input to enter in the editor c
 
 {% highlight c# %}
 
-	StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
 	     VerticalOptions = LayoutOptions.Start, 
 	     HorizontalOptions = LayoutOptions.Start, 
 	     Padding = new Thickness(30) 
     }; 
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.Watermark = "Enter 'U' to filter suggestions"; 
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.Watermark = "Enter 'U' to filter suggestions"; 
 
-	layout.Children.Add(comboBox); 
+    layout.Children.Add(comboBox); 
     Content = layout;
 
 {% endhighlight %}
@@ -831,18 +832,18 @@ Text color of watermark can be customized using [`WatermarkColor`] property.
 
 {% highlight c# %}
 
-	StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
 	     VerticalOptions = LayoutOptions.Start, 
 	     HorizontalOptions = LayoutOptions.Start, 
 	     Padding = new Thickness(30) 
     }; 
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.Watermark = "Enter some text"; 
-	comboBox.WatermarkColor = Color.FromHex("1976d2");
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.Watermark = "Enter some text"; 
+    comboBox.WatermarkColor = Color.FromHex("1976d2");
 
-	layout.Children.Add(comboBox); 
+    layout.Children.Add(comboBox); 
     Content = layout;
 
 {% endhighlight %}

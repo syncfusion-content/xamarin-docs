@@ -31,14 +31,14 @@ Highlights the first position of the matching characters in the suggestion list.
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
     <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" TextHighlightMode="FirstOccurrence" HighlightedTextColor="Red" HighlightedTextFontAttributes="Bold" SuggestionMode="StartsWith">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Albania </x:String>
                 <x:String> Algeria </x:String>
                 <x:String> American Samoa </x:String>
                 <x:String> Andorra </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>              
+    </combobox:SfComboBox>              
 </StackLayout> 
 
 {% endhighlight %}
@@ -88,14 +88,14 @@ Highlights the matching characters that present everywhere in the suggestion lis
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
     <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true" TextHighlightMode="MultipleOccurrence" HighlightedTextColor="Red" HighlightedTextFontAttributes="Bold" SuggestionMode="Contains">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Albania </x:String>
                 <x:String> Algeria </x:String>
                 <x:String> American Samoa </x:String>
                 <x:String> Andorra </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                         
+    </combobox:SfComboBox>                         
 </StackLayout> 
 
 {% endhighlight %}

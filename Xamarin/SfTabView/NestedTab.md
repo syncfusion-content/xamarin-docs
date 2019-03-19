@@ -11,6 +11,8 @@ documentation: ug
 
 Nested Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -254,5 +256,61 @@ Nested Tab items can be configured in tab view through the `Items` property of `
 </ContentPage>
 
 {% endhighlight %}
+
+{% highlight C# %}
+
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using Syncfusion.XForms.TabView;
+using Xamarin.Forms;
+
+namespace TabViewAutomationSample
+{
+    public partial class SBNestedTab : ContentPage
+    {
+        public SBNestedTab()
+        {
+            InitializeComponent();
+        }
+    }
+    public class CustomViewConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            if (Device.RuntimePlatform == "Android")
+            {
+                if (parameter != null && parameter is string)
+                {
+                    return "NestedTab.ttf#" + parameter.ToString();
+                }
+                else
+                {
+                    return "NestedTab.ttf";
+                }
+            }
+            else if (Device.RuntimePlatform == "iOS")
+            {
+                return "NestedTab";
+            }
+            else
+            {
+                return "/Assets/Fonts/NestedTab.ttf#NestedTab";
+            }
+        }
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+    }
+    public class CustomFrame : Frame
+    {
+        
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ![NestedTab Image](images/NestedTab/NestedTab.png)

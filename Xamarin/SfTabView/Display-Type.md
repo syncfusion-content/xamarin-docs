@@ -479,11 +479,11 @@ N> For iOS alone, FontFamily property is declared without succeeding with .ttf a
     <ContentPage.Resources>
         <ResourceDictionary>
             <OnPlatform x:TypeArguments="x:String" 
-                        x:Key="fontfamilyOriginal"
-                        iOS="OtfFont" 
-                        Android="Fonts/OtfFont.ttf" />
+                        x:Key="fonts"
+                        iOS="OpenTypeFont" 
+                        Android="Fonts/OpenTypeFont.ttf" />
             <OnPlatform x:TypeArguments="x:String" 
-                        x:Key="fontfamilyOriginal1" 
+                        x:Key="fonts" 
                         iOS="Fonts/fa-regular-400" 
                         Android="Fonts/fa-regular-400.ttf" />
         </ResourceDictionary>
@@ -506,7 +506,7 @@ N> For iOS alone, FontFamily property is declared without succeeding with .ttf a
                     <tabview:SfTabItem Title="Chat"   
                                        TitleFontSize="14"
                                        IconFont="A"
-                                       FontIconFontFamily="{StaticResource fontfamilyOriginal}"
+                                       FontIconFontFamily="{StaticResource fonts}"
                                        SelectionColor="#FF00AFF0"
                                        FontIconFontColor="#FF00AFF0"
                                        TitleFontColor="#FF00AFF0">
@@ -517,7 +517,7 @@ N> For iOS alone, FontFamily property is declared without succeeding with .ttf a
                     <tabview:SfTabItem Title="Chat2"   
                                        TitleFontSize="14"
                                        IconFont="&#xf000;"
-                                       FontIconFontFamily="{StaticResource fontfamilyOriginal1}"
+                                       FontIconFontFamily="{StaticResource fonts}"
                                        SelectionColor="#FF00AFF0"
                                        FontIconFontColor="#FF00AFF0"
                                        TitleFontColor="#FF00AFF0">
@@ -528,7 +528,7 @@ N> For iOS alone, FontFamily property is declared without succeeding with .ttf a
                     <tabview:SfTabItem Title="like"   
                                        TitleFontSize="14"
                                        IconFont="&#0041;"
-                                       FontIconFontFamily="{StaticResource fontfamilyOriginal}"
+                                       FontIconFontFamily="{StaticResource fonts}"
                                        SelectionColor="#FF00AFF0"
                                        FontIconFontColor="#FF00AFF0"
                                        TitleFontColor="#FF00AFF0">
@@ -539,7 +539,7 @@ N> For iOS alone, FontFamily property is declared without succeeding with .ttf a
                     <tabview:SfTabItem Title="dislike"   
                                        TitleFontSize="14"
                                        IconFont="&#0041;"
-                                       FontIconFontFamily="Fonts/OtfFont.ttf"
+                                       FontIconFontFamily="Fonts/OpenTypeFont.ttf"
                                        SelectionColor="#FF00AFF0"
                                        FontIconFontColor="#FF00AFF0"
                                        TitleFontColor="#FF00AFF0">
@@ -550,7 +550,7 @@ N> For iOS alone, FontFamily property is declared without succeeding with .ttf a
                     <tabview:SfTabItem Title="status"
                                        TitleFontSize="14"
                                        IconFont="C"
-                                       FontIconFontFamily="{StaticResource fontfamilyOriginal}"
+                                       FontIconFontFamily="{StaticResource fonts}"
                                        SelectionColor="#FF00AFF0"
                                        FontIconFontColor="#FF00AFF0"
                                        TitleFontColor="#FF00AFF0">

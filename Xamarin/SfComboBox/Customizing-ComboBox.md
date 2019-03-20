@@ -15,7 +15,7 @@ The combo box control  provides user friendly customizing options for both entry
 
 The `TextColor`, `TextSize`, `FontAttributes`, `FontFamily` and `BorderColor` properties are used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
 
-### Text color
+## Text color
 
 The combo box control provides the user to customize the foreground color of the text inside the entry part.
 

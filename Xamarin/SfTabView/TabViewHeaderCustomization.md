@@ -7,8 +7,6 @@ control: TabView
 documentation: ug
 ---
 
-# TabView Header Customization
-
 # Tab Items
 
 Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.

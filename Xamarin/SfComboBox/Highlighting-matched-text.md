@@ -75,7 +75,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Highlighting-matched-text/FirstOccurrance.png)
+![First occurrance image](images/Highlighting-matched-text/FirstOccurrance.png)
 
 ## Multiple occurrence
 
@@ -131,4 +131,4 @@ Content = layout;
 {% endhighlight %}
 
 {% endtabs %}
-![](images/Highlighting-matched-text/MultipleOccurrance.png)
+![Multiple occurrance image](images/Highlighting-matched-text/MultipleOccurrance.png)

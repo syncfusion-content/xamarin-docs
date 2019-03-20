@@ -76,7 +76,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Header-and-Footer/Header.png)
+![Header Image](images/Header-and-Footer/Header.png)
 
 ## Footer Content
 
@@ -140,5 +140,5 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Header-and-Footer/Footer.png)
+![Footer Image](images/Header-and-Footer/Footer.png)
 

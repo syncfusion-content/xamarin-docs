@@ -105,7 +105,7 @@ When the selection changed event is needs to be restricted through user interact
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-             x:Class="RangeSlider.TabView">
+             x:Class="TabView.TabView">
     <ContentPage.Content>
          <tabView:SfTabView OverflowMode="DropDown"
                             EnableSwiping="false" 
@@ -158,7 +158,7 @@ using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TabView : ContentPage

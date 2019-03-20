@@ -11,7 +11,6 @@ documentation: ug
 
 Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
 
-
 {% tabs %}
 
 {% highlight xaml %}

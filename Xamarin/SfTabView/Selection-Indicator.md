@@ -23,7 +23,7 @@ The selection indicator can be positioned below the title or above the title, or
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-             x:Class="RangeSlider.TabView">
+             x:Class="TabView.TabView">
     <ContentPage.Content>
         <tabView:SfTabView VisibleHeaderCount="3"
                            TabHeaderPosition="Bottom"  
@@ -71,7 +71,7 @@ using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TabView : ContentPage

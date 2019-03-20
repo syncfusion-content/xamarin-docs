@@ -232,11 +232,9 @@ namespace TabView
             var favoritesGrid = new Grid { BackgroundColor = Color.Green };
             var contactsGrid = new Grid { BackgroundColor = Color.Blue };
             var overflowButtonSettings = new OverflowButtonSettings();
-            overflowButtonSettings.BackgroundColor = Color.Yellow;
             overflowButtonSettings.DisplayMode = OverflowButtonDisplayMode.Text;
             overflowButtonSettings.Title = "OverFlow";
             overflowButtonSettings.TitleFontSize = 10;
-            overflowButtonSettings.TitleFontColor = Color.Blue;
             tabView.OverflowButtonSettings = overflowButtonSettings;
             tabView.EnableSwiping = false;
             var tabItems = new TabItemCollection
@@ -274,7 +272,6 @@ namespace TabView
                 }
             };
             tabView.Items = tabItems;
-            tabView.BackgroundColor = Color.Aqua;
             tabView.OverflowMode = OverflowMode.DropDown;
             this.Content = tabView;
 		}

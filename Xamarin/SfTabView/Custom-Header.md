@@ -20,7 +20,7 @@ N> The selection indicator setting properties will not work when using custom he
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-             x:Class="RangeSlider.TabView">
+             x:Class="TabView.TabView">
     <ContentPage.Content>
          <tabView:SfTabView BackgroundColor="Aqua">
             <tabView:SfTabItem Title="Call"
@@ -63,7 +63,7 @@ using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class TabView : ContentPage
@@ -130,7 +130,7 @@ The following code sample demonstrates customizing the header by adding image an
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-             x:Class="RangeSlider.TabView">
+             x:Class="TabView.TabView">
         <ContentPage.BindingContext>
             <local:ContactsViewModel x:Name="viewModel"/>
         </ContentPage.BindingContext>

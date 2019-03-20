@@ -375,3 +375,44 @@ calendar.HeightRequest = 200;
 
 {% endtabs %}
 
+## Customize the year cell or year view
+You can customize the year cell of the `SfCalendar` control using the [OnYearCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnYearCellLoaded_EV.html) event, which returns `YearCellLoadedEventArgs`. The [YearCellLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCellLoadedEventArgs.html) has the following properties to customize the year view: [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~BackgroundColor.html), [Font](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~Font.html), [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~FontAttribute.html), [Month](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~Month.html), [MonthHeaderBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~MonthHeaderBackgroundColor.html), [MonthHeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~MonthHeaderTextColor.html), [MonthLayoutBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~MonthLayoutBackgroundColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~TextColor.html), and [View](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~View.html).
+
+{% tabs %}
+{% highlight c# %}
+private void Calendar_OnYearCellLoaded(object sender, YearCellLoadedEventArgs e)
+{
+    e.BackgroundColor = Color.Red;
+    e.Font = Font.SystemFontOfSize(12, FontAttributes.Italic);
+    e.FontFamily = "Times New Roman";
+    e.MonthHeaderBackgroundColor = Color.Blue;
+    e.MonthHeaderTextColor = Color.Black;
+    e.MonthLayoutBackgroundColor = Color.Gray;
+    e.TextColor = Color.Green;  
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Customize the year view with custom UI	
+You can customize the YearView with Custom UI in the `SfCalendar` control using the `View` property of `YearCellLoadedEventArgs` in the `OnYearCellLoaded` event.
+{% tabs %}
+{% highlight c# %}
+private void Calendar_OnYearCellLoaded(object sender, YearCellLoadedEventArgs e)
+{
+    var button = new Button();
+    button.Text = e.Month.Month.ToString();
+    button.BackgroundColor = Color.Red;
+    e.View = button;        
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Deselect today selection on initial load
+Initially, the calendar is loaded with the current day as selected date in `MonthView` when the SelectionMode is set to SingleSelection, but you can deselect the date on initial loading in `SfCalendar` by set the [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedDate.html) property as null.
+
+{% tabs %}
+{% highlight c# %}
+calendar.SelectedDate = null;
+{% endhighlight %}
+{% endtabs %}
+

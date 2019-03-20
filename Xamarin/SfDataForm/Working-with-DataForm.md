@@ -86,6 +86,9 @@ Generated for Enum type property and the property with [EnumDataTypeAttribute] a
 {{'[DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html)'| markdownify }}
 </td>
 <td>
+MaskedEditText
+</td>
+<td>
 Generated for the PhoneNumber type property.
 [DataType(DataType.PhoneNumber)]
 </td>

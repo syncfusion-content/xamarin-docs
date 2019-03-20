@@ -624,6 +624,10 @@ Enum and List type property.
 {{'[SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html)'| markdownify }}
 </td>
 </tr>
+<tr>
+<td>
+MaskedEditText
+</td>
 <td>
 Property with [DataType(DataType.PhoneNumber)] attribute.
 </td>

@@ -663,7 +663,7 @@ N> [DataFormItem.IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/S
 ## Two-way data binding
 When the DataForm business object properties are updated with two-way data binding support, the value will sync with underlying DataForm editors.
 
-To enable two way binding support, set the value of [NotifyPropertyChanges](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~NotifyPropertyChanges.html) property to true in DataForm.
+To enable two-way data binding support, set the value of [NotifyPropertyChanges](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~NotifyPropertyChanges.html) property to true in DataForm.
 {% tabs %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>

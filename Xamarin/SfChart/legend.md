@@ -413,52 +413,6 @@ chart.Legend.OffsetY = 90;
 
 ![Legend positioning support in Xamarin.Forms Chart](legend_images/legend_img5.png)
 
-## Datapoints based legend items for Cartesian series
-
-The [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~Series.html) property of [`ChartLegend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend.html) is used to populate the legend items based on the data points which are present in the assigned series. 
-
-The following code example shows how to enable datapoint-based legend for Cartesian series.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfChart>
-
-…
-
-<chart:ChartLegend x:Name="chartLegend" Series="{Binding Source={ x:Reference Series}}" />
-
-…
-
-<chart:SfChart.Series>
-                <chart:ColumnSeries x:Name="Series"    ItemsSource="{Binding CategoryData}" XBindingPath="Name" YBindingPath="Value"/>
-…
-
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-...  
-
-ColumnSeries series = new ColumnSeries()
-            {
-                ItemsSource = model.CategoryData,
-                XBindingPath = "XValue",
-                YBindingPath = "YValue",
-            };
-
-            Chart.Legend = new ChartLegend();
-            Chart.Legend.Series = series;
-            Chart.Series.Add(series);
-...
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ## ItemTemplate
 
 You can customize the appearance of legend items with your template by using [`ItemTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~ItemTemplate.html) property of [`ChartLegend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend.html).

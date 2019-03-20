@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Costomize the Syncfusion SfChart padding
-description: Constomize the chart padding
+title: Customize the Syncfusion SfChart padding
+description: Customize the SfChart padding
 platform: xamarin
 control: Chart
 documentation: ug
@@ -18,7 +18,7 @@ The following code example shows how to customize the padding of chart.
 
 {% highlight xaml %}
 
-<chart:SfChart   x:Name="Chart" ChartPadding ="30,30,30,30">
+<chart:SfChart   x:Name="Chart" ChartPadding ="5,5,5,5">
 
 ...
 
@@ -32,7 +32,7 @@ The following code example shows how to customize the padding of chart.
 
      SfChart chart = new SfChart()
        {
-           ChartPadding = new Thickness(30)
+           ChartPadding = new Thickness(5)
        };
 
 ...

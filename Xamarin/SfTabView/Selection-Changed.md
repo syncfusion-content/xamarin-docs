@@ -15,19 +15,79 @@ The `SelectionChanged` event is used to notify when the selection is changed by 
 
 {% highlight xaml %}
 
-<tabView:SfTabView  SelectionChanged="SfTabView_SelectionChanged" >
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Syncfusion.XForms.TabView"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="TabView.TabView">
+    <ContentPage.Content>
+        <tabView:SfTabView VisibleHeaderCount="3" 
+                           SelectionChanged="Handle_SelectionChanged"
+                           BackgroundColor="Aqua">
+            <tabView:SfTabItem Title="Call">
+                <tabView:SfTabItem.Content>
+                    <StackLayout>
+                        <Grid BackgroundColor="Green" />
+                        <Button Text="Contacts" WidthRequest="300" />
+                        <Button Text="Location" WidthRequest="300" />
+                        <Button Text="Email" WidthRequest="300" />
+                    </StackLayout>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Favorites">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Contacts">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Location">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Pink" x:Name="LocationGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Email">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Navy" x:Name="EmailGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Alternative">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="AlternativeGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </ContentPage.Content>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-tabView.SelectionChanged += SfTabView_SelectionChanged;
+using Syncfusion.XForms.TabView;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
-// Occurred when the selected index is changed
-
-private void SfTabView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+namespace TabView
 {
-	var selectedIndex = e.Index;
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class TabView : ContentPage
+	{
+        public TabView ()
+		{
+			InitializeComponent ();
+		}
+
+        // Occurred when the selected index is changed
+        void Handle_SelectionChanged(object sender, Syncfusion.XForms.TabView.SelectionChangedEventArgs e)
+        {
+            var selectedIndex = e.Index;
+        }
+	}
 }
 
 {% endhighlight %}

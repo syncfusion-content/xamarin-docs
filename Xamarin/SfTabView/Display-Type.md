@@ -496,7 +496,7 @@ N> For iOS alone, FontFamily property is declared without succeeding with .ttf a
             </Grid.RowDefinitions>
             <Label Text="Welcome to the Xamarin forms" Grid.Row="0" />
             <tabview:SfTabView Margin="0,0,0,2" 
-                               x:Name="simTab" 
+                               x:Name="SimTab" 
                                VisibleHeaderCount="4" 
                                TabHeaderPosition="Bottom" 
                                DisplayMode="ImageWithText"

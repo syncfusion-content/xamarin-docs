@@ -1266,7 +1266,7 @@ dataForm.RegisterEditor("ContactName", "CustomTextEditor");
 
 ### Creating custom editor using layouts 
 
-Layouts such as Grid, StackLayout, ContentView, and ScrollView can be added as custom editor. Here, the label and Imageview in Grid are loaded as custom editors for `ContactName` property. 
+Layouts such as Grid, StackLayout, ContentView, and ScrollView can be added as custom editor. Here, the label and image view in Grid are loaded as custom editors for `ContactName` property. 
 
 {% tabs %}
 {% highlight xaml %}

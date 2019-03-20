@@ -76,4 +76,4 @@ namespace ComboBox_Sample
 
 {% endtabs %}
 
-![](images/NoResult/NoResultFound.png)
+![NoResultFound Image](images/NoResult/NoResultFound.png)

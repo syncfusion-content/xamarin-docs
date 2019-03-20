@@ -278,7 +278,7 @@ namespace TabViewAutomationSample
 
 ## Adding ListView in tab view
 
-## UseCase Sample with Contacts Information stored in a ListView
+## UseCase Sample with Contacts Information stored as a ListView in TabView Control
 
 Create a view model class with the `ContactsInfo` collection property, which is initialized with required number of data objects.
 

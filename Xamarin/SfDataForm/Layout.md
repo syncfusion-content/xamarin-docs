@@ -948,9 +948,9 @@ LoadApplication (new App ());
 
 ![RTL in Xamarin.Forms DataForm](SfDataForm_images/DataForm_RTL.png)
 
-## Scroll to specific editor
+## Programmatically scroll to specific editor
 
-You can scroll to specific editor using the [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ScrollTo.html) method by passing the `property name`. 
+You can programmatically scroll to specific editor using the [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ScrollTo.html) method by passing the `property name`. 
 
 {% tabs %}
 {% highlight c# %}

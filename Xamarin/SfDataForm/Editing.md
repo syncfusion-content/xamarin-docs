@@ -659,3 +659,28 @@ private void Button_Click(object sender, System.EventArgs e)
 {% endtabs %}
 
 N> [DataFormItem.IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~IsReadOnly.html) takes higher priority than [SfDataForm.IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~IsReadOnly.html).
+
+## Two-way data binding
+When the DataForm business object properties are updated with two-way data binding support, the value will sync with underlying DataForm editors.
+
+To enable two way binding support, set the value of [NotifyPropertyChanges](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~NotifyPropertyChanges.html) property to true in DataForm.
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             xmlns:dataForm ="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
+             x:Class="GettingStarted.MainPage">
+    <ContentPage.Content>        
+            <dataForm:SfDataForm x:Name="dataForm" NotifyPropertyChanges="True"/>                    
+    </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.NotifyPropertyChanges = true;
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire source code of this demo from here [Two-wayDataBinding](https://github.com/SyncfusionExamples/two-way-data-binding-support-in-xamarin.forms-dataform)

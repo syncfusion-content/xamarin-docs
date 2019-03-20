@@ -69,7 +69,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Filtering-Options/allowfiltering.png)
+![AllowFiltering Image](images/ComboBox-Filtering-Options/allowfiltering.png)
 
 ## Filtering types
 
@@ -146,7 +146,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Filtering-Options/starts-with.png)
+![Starts with image](images/ComboBox-Filtering-Options/starts-with.png)
 
 #### Filtering words that starts with input text - case sensitive
 
@@ -201,7 +201,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Filtering-Options/starts-with-case-sensitive.png)
+![Starts with casesensitive Image](images/ComboBox-Filtering-Options/starts-with-case-sensitive.png)
 
 ### Filtering words that contain input text
 
@@ -258,7 +258,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Filtering-Options/contains.png)
+![Contains image](images/ComboBox-Filtering-Options/contains.png)
 
 #### Filtering words that contain input text - case sensitive
 
@@ -315,7 +315,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Filtering-Options/contains-casesensitive.png)
+![contains casesensitive image](images/ComboBox-Filtering-Options/contains-casesensitive.png)
 
 ### Filtering words that equals the input text
 
@@ -428,7 +428,7 @@ Content = layout;
 
 Filters items in the suggestion list based on a custom search by user. This helps to apply our typo toleration functionality to the control.
 
-![](images/ComboBox-Filtering-Options/custom_filter.png)
+![Custom filter image](images/ComboBox-Filtering-Options/custom_filter.png)
 
 
 {% tabs %}
@@ -562,7 +562,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Filtering-Options/ends-with.png)
+![End with image](images/ComboBox-Filtering-Options/ends-with.png)
 
 
 #### Filtering words that end with input text - case sensitive 
@@ -618,7 +618,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Filtering-Options/ends-with-case-sensitive.png)
+![End with case sensitive image](images/ComboBox-Filtering-Options/ends-with-case-sensitive.png)
 
 
 ## ComboBox modes
@@ -686,7 +686,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Filtering-Options/suggest.png)
+![Suggest image](images/ComboBox-Filtering-Options/suggest.png)
 
 ## Appending suggestions to text
 
@@ -741,7 +741,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Filtering-Options/append.png)
+![Append image](images/ComboBox-Filtering-Options/append.png)
 
 ## Suggesting choices and appending suggestions to text
 
@@ -796,4 +796,4 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Filtering-Options/suggest-append.png)
+![Suggest append image](images/ComboBox-Filtering-Options/suggest-append.png)

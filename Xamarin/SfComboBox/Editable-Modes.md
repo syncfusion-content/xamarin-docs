@@ -64,7 +64,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Editing/iseditable.png)
+![IsEditable image](images/ComboBox-Editing/iseditable.png)
 
 ## Non-Editable combo box
 
@@ -117,5 +117,4 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Editing/noneditable.png)
-
+![Non Editable image](images/ComboBox-Editing/noneditable.png)

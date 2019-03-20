@@ -62,7 +62,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Dealing-with-Suggestion-Box/suggestion-box-placement-top.png)
+![Top placement image](images/Dealing-with-Suggestion-Box/suggestion-box-placement-top.png)
 
 ## Maximum suggestion box height
 
@@ -126,7 +126,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Dealing-with-Suggestion-Box/maximum-dropdown-height.png)
+![Maximum dropdown height image](images/Dealing-with-Suggestion-Box/maximum-dropdown-height.png)
 
 ## Opening suggestion box on focus
 
@@ -184,7 +184,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Dealing-with-Suggestion-Box/show-suggestions-on-focus.png)
+![Show suggestion onfocus image](images/Dealing-with-Suggestion-Box/show-suggestions-on-focus.png)
 
 ## Delay opening suggestion box
 

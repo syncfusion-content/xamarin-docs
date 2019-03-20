@@ -170,17 +170,7 @@ You can add multiple shape files in the `ImageryLayer` using the `Sublayers` pro
             <maps:ImageryLayer>
 
                 <maps:ImageryLayer.Sublayers>
-
-                    <maps:ShapeFileLayer  Uri="usa_state.shp">
-
-                        <maps:ShapeFileLayer.ShapeSettings>
-
-                            <maps:ShapeSetting ShapeFill="#FD8C48" ShapeStrokeThickness="1"/>
-
-                        </maps:ShapeFileLayer.ShapeSettings>
-
-                    </maps:ShapeFileLayer>
-
+                  
                     <maps:ShapeFileLayer Uri="africa.shp">
 
                         <maps:ShapeFileLayer.ShapeSettings>
@@ -192,15 +182,7 @@ You can add multiple shape files in the `ImageryLayer` using the `Sublayers` pro
                     </maps:ShapeFileLayer>
 
                 </maps:ImageryLayer.Sublayers>
-
-                <maps:ImageryLayer.Markers>
-
-                    <maps:MapMarker Label="CA" Latitude="37.3382082" Longitude="-121.8863286"/>
-                    
-                    <maps:MapMarker Label="KE" Latitude="-0.023559" Longitude="37.906193"/>
-
-                </maps:ImageryLayer.Markers>
-
+            
             </maps:ImageryLayer>
 
         </maps:SfMaps.Layers>
@@ -210,44 +192,22 @@ You can add multiple shape files in the `ImageryLayer` using the `Sublayers` pro
 {% endhighlight %}
 
 {% highlight c# %}
-
+           
             SfMaps map = new SfMaps();
 
             ImageryLayer imageryLayer = new ImageryLayer();
 
-            ShapeFileLayer subShapeLayer1 = new ShapeFileLayer();
-            subShapeLayer1.Uri = "usa_state.shp";
-
-            ShapeFileLayer subShapeLayer2 = new ShapeFileLayer();
-            subShapeLayer2.Uri = "africa.shp";
+            ShapeFileLayer subShapeLayer = new ShapeFileLayer();
+            subShapeLayer.Uri = "africa.shp";
 
             ShapeSetting shapeSetting = new ShapeSetting();
-            shapeSetting.ShapeStrokeThickness = 2;
             shapeSetting.ShapeFill = Color.FromHex("#FD8C48");
-            subShapeLayer1.ShapeSettings = shapeSetting;
+            shapeSetting.ShapeStrokeThickness = 1;
+            subShapeLayer.ShapeSettings = shapeSetting;
 
-            ShapeSetting shapeSetting2 = new ShapeSetting();
-            shapeSetting2.ShapeFill = Color.FromHex("#FD8C48");
-            shapeSetting2.ShapeStrokeThickness = 1;
-            subShapeLayer2.ShapeSettings = shapeSetting2;
-
-            MapMarker mapMarker1 = new MapMarker();
-            mapMarker1.Label = "KE";
-            mapMarker1.Latitude = "-0.023559";
-            mapMarker1.Longitude = "37.906193";
-            imageryLayer.Markers.Add(mapMarker1);
-
-            MapMarker mapMarker2 = new MapMarker();
-            mapMarker2.Label = "CA";
-            mapMarker2.Latitude = "37.3382082";
-            mapMarker2.Longitude = "-121.8863286";
-            imageryLayer.Markers.Add(mapMarker2);
-
-            imageryLayer.Sublayers.Add(subShapeLayer1);
-            imageryLayer.Sublayers.Add(subShapeLayer2);
+            imageryLayer.Sublayers.Add(subShapeLayer);
 
             map.Layers.Add(imageryLayer);
-			
             Content = map;
 			
 {% endhighlight %}

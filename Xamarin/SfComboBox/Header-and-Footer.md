@@ -113,9 +113,9 @@ The following code example shows how to set Footer content in SfComboBox.
 
 StackLayout layout = new StackLayout()
 {
-VerticalOptions = LayoutOptions.Start,
-HorizontalOptions = LayoutOptions.Start,
-Padding = new Thickness(30)
+    VerticalOptions = LayoutOptions.Start,
+    HorizontalOptions = LayoutOptions.Start,
+    Padding = new Thickness(30)
 };
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
@@ -132,7 +132,16 @@ comboBox.AllowFiltering = true;
 comboBox.ShowDropDownFooterView = true;
 
 StackLayout customFooterView = new StackLayout();
-Label label = new Label() { Text = "Add New", BackgroundColor = Color.FromHex("#f0f0f0"), TextColor = Color.FromHex("#006bcd"), VerticalOptions = LayoutOptions.Center, VerticalTextAlignment = TextAlignment.Center, HorizontalTextAlignment = TextAlignment.Center, FontSize = 20 };
+Label label = new Label() 
+{ 
+    Text = "Add New", 
+    BackgroundColor = Color.FromHex("#f0f0f0"), 
+    TextColor = Color.FromHex("#006bcd"), 
+    VerticalOptions = LayoutOptions.Center, 
+    VerticalTextAlignment = TextAlignment.Center, 
+    HorizontalTextAlignment = TextAlignment.Center, 
+    FontSize = 20 
+};
 customFooterView.Children.Add(label);
 comboBox.DropDownFooterView = customFooterView;
 //Set the height of the Footer View

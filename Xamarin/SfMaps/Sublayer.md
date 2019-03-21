@@ -214,7 +214,7 @@ You can add multiple shape files in the `ImageryLayer` using the `Sublayers` pro
 
 {% endtabs %}	
 
-![Sublayer support in Xamarin.Forms Maps](Images/ImageryLayer-SubLayer.png)
+![Sublayer support in Xamarin.Forms Maps](Images/ImageryLayer-SubLayer.jpg)
 
 ### Customizing sublayer
 

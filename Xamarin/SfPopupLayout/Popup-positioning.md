@@ -711,4 +711,4 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in Android device respectively.
 
-![Popup with default look](PopupLayout_images/Popup_with_full_screen_and_show_method.png)
+![Popup with full screen and show method ](PopupLayout_images/Popup_with_full_screen.png)

@@ -42,6 +42,13 @@ Following are the list of options available to show SfPopupLayout at various pos
 <td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowRelativeToView(View,RelativePosition,Double,Double).html)'| markdownify }} </td>
 <td> Shows the SfPopupLayout at an absolute x, y coordinate from the relative position of the specified view.</td>
 </tr>
+<tr>
+<td> {{'[SfPopupLayout.PopupView.IsFullScreen](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout.PopupView~IsFullScreen.html)'| markdownify }} </td>
+<td> Shows the SfPopupLayout in Full Screen.</td>
+</tr>
+<td> {{'[SfPopupLayout.Show(bool)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show(bool).html)'| markdownify }} </td>
+<td> Shows the SfPopupLayout in Full Screen.</td>
+</tr>
 </table>
 
 ## Center positioning
@@ -445,3 +452,263 @@ public class ViewModel: INotifyPropertyChanged
 Executing the above codes renders the following output in Android device respectively.
 
 ![Relative positioning of Popup in MVVM](PopupLayout_images/ShowingPopupAtRelativePositionInMVVM.jpg)
+
+## Position popup in Full Screen
+
+SfPopupLayout can be shown in Full Screen  by using the following options.
+
+  * `IsFullScreen property`
+  * `SfPopupLayout.Show(bool)`
+
+To open the SfPopupLayout, use the `SfPopupLayout.PopupView.IsFullScreen` property as in the following code sample.
+
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage" 
+             Padding="0,40,0,0"
+			  xmlns:textinput="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+<sfPopup:SfPopupLayout x:Name="popupLayout">
+<popuplayout:SfPopupLayout.PopupView>
+                    <popuplayout:PopupView AppearanceMode="TwoButton"
+                                           AcceptButtonText="SAVE"
+                                           DeclineButtonText="CANCEL">
+                        <popuplayout:PopupView.HeaderTemplate>
+                            <DataTemplate>
+                                <Label Text="ADD EVENT" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontAttributes="Bold"/>
+                            </DataTemplate>
+                        </popuplayout:PopupView.HeaderTemplate>
+                        <popuplayout:PopupView.ContentTemplate>
+                            <DataTemplate>
+                                <Grid BackgroundColor="White" Padding="15,20,15,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="100"/>
+                                        <RowDefinition Height="100"/>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="50"/>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="50"/>
+                                        <RowDefinition>
+                                            <RowDefinition.Height>
+                                                <OnPlatform x:TypeArguments="GridLength" Android="55" iOS="55">
+                                                    <On Platform="UWP" Value="75"/>
+                                                </OnPlatform>
+                                            </RowDefinition.Height>
+                                        </RowDefinition>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid Grid.Row="0" BackgroundColor="#F3F3F9" Margin="0,15,0,0">
+                                        <textinput:SfTextInputLayout Hint="Event name" ContainerType="Outlined" BackgroundColor="Transparent">
+                                            <Entry HeightRequest="75" BackgroundColor="Transparent"/>
+                                        </textinput:SfTextInputLayout>
+                                    </Grid>
+
+                                    <Grid Grid.Row="1" BackgroundColor="#F3F3F9" Margin="0,15,0,0">
+                                        <textinput:SfTextInputLayout Hint="Location" ContainerType="Outlined" BackgroundColor="Transparent">
+                                            <Entry HeightRequest="75" BackgroundColor="Transparent"/>
+                                        </textinput:SfTextInputLayout>
+                                    </Grid>
+
+                                    <Label Grid.Row="2" Text="From" Margin="0,10,0,0"/>
+                                    <Grid Grid.Row="3">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <DatePicker Grid.Column="0" FontSize="Small"/>
+                                        <TimePicker Grid.Column="1" FontSize="Small"/>
+                                    </Grid>
+
+                                    <Label Grid.Row="4" Text="To" Margin="0,10,0,0"/>
+                                    <Grid Grid.Row="5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <DatePicker Grid.Column="0" FontSize="Small"/>
+                                        <TimePicker Grid.Column="1" FontSize="Small"/>
+                                    </Grid>
+                                    <Grid Grid.Row="6" Margin="0,35,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Switch Grid.Column="0"/>
+                                        <Label Grid.Column="1" Text="All-day">
+                                            <Label.Margin>
+                                                <OnPlatform x:TypeArguments="Thickness">
+                                                    <On Platform="UWP" Value="0,10,0,0"/>
+                                                </OnPlatform>
+                                            </Label.Margin>
+                                        </Label>
+                                    </Grid>
+                                </Grid>
+                            </DataTemplate>
+                        </popuplayout:PopupView.ContentTemplate>
+                    </popuplayout:PopupView>
+                </popuplayout:SfPopupLayout.PopupView>
+   <sfPopup:SfPopupLayout.Content>
+     <StackLayout x:Name="layout">
+       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" 
+               VerticalOptions="Start"   HorizontalOptions="FillAndExpand" Clicked="ClickToShowPopup_Clicked" />
+     </StackLayout>
+    </sfPopup:SfPopupLayout.Content>
+  </sfPopup:SfPopupLayout>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.XForms.PopupLayout;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            // Shows SfPopupLayout in Full Screen
+            popupLayout.IsFullScreen = true;
+			popupLayout.IsOpen = true;
+        }
+    }
+}
+{% endhighlight %}
+
+Executing the above codes renders the following output in Android device respectively.
+
+![Popup with Full Screen](PopupLayout_images/Popup_with_full_screen.png)
+
+To open the SfPopupLayout, use the `SfPopupLayout.Show(bool)` method as in the following code sample.
+
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage" 
+             Padding="0,40,0,0"
+			  xmlns:textinput="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+<sfPopup:SfPopupLayout x:Name="popupLayout">
+<popuplayout:SfPopupLayout.PopupView>
+                    <popuplayout:PopupView AppearanceMode="TwoButton"
+                                           AcceptButtonText="SAVE"
+                                           DeclineButtonText="CANCEL">
+                        <popuplayout:PopupView.HeaderTemplate>
+                            <DataTemplate>
+                                <Label Text="ADD EVENT" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" FontAttributes="Bold"/>
+                            </DataTemplate>
+                        </popuplayout:PopupView.HeaderTemplate>
+                        <popuplayout:PopupView.ContentTemplate>
+                            <DataTemplate>
+                                <Grid BackgroundColor="White" Padding="15,20,15,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="100"/>
+                                        <RowDefinition Height="100"/>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="50"/>
+                                        <RowDefinition Height="30"/>
+                                        <RowDefinition Height="50"/>
+                                        <RowDefinition>
+                                            <RowDefinition.Height>
+                                                <OnPlatform x:TypeArguments="GridLength" Android="55" iOS="55">
+                                                    <On Platform="UWP" Value="75"/>
+                                                </OnPlatform>
+                                            </RowDefinition.Height>
+                                        </RowDefinition>
+                                    </Grid.RowDefinitions>
+
+                                    <Grid Grid.Row="0" BackgroundColor="#F3F3F9" Margin="0,15,0,0">
+                                        <textinput:SfTextInputLayout Hint="Event name" ContainerType="Outlined" BackgroundColor="Transparent">
+                                            <Entry HeightRequest="75" BackgroundColor="Transparent"/>
+                                        </textinput:SfTextInputLayout>
+                                    </Grid>
+
+                                    <Grid Grid.Row="1" BackgroundColor="#F3F3F9" Margin="0,15,0,0">
+                                        <textinput:SfTextInputLayout Hint="Location" ContainerType="Outlined" BackgroundColor="Transparent">
+                                            <Entry HeightRequest="75" BackgroundColor="Transparent"/>
+                                        </textinput:SfTextInputLayout>
+                                    </Grid>
+
+                                    <Label Grid.Row="2" Text="From" Margin="0,10,0,0"/>
+                                    <Grid Grid.Row="3">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <DatePicker Grid.Column="0" FontSize="Small"/>
+                                        <TimePicker Grid.Column="1" FontSize="Small"/>
+                                    </Grid>
+
+                                    <Label Grid.Row="4" Text="To" Margin="0,10,0,0"/>
+                                    <Grid Grid.Row="5">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <DatePicker Grid.Column="0" FontSize="Small"/>
+                                        <TimePicker Grid.Column="1" FontSize="Small"/>
+                                    </Grid>
+                                    <Grid Grid.Row="6" Margin="0,35,0,0">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto"/>
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Switch Grid.Column="0"/>
+                                        <Label Grid.Column="1" Text="All-day">
+                                            <Label.Margin>
+                                                <OnPlatform x:TypeArguments="Thickness">
+                                                    <On Platform="UWP" Value="0,10,0,0"/>
+                                                </OnPlatform>
+                                            </Label.Margin>
+                                        </Label>
+                                    </Grid>
+                                </Grid>
+                            </DataTemplate>
+                        </popuplayout:PopupView.ContentTemplate>
+                    </popuplayout:PopupView>
+                </popuplayout:SfPopupLayout.PopupView>
+   <sfPopup:SfPopupLayout.Content>
+     <StackLayout x:Name="layout">
+       <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" 
+               VerticalOptions="Start"  HorizontalOptions="FillAndExpand" Clicked="ClickToShowPopup_Clicked" />
+     </StackLayout>
+    </sfPopup:SfPopupLayout.Content>
+  </sfPopup:SfPopupLayout>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.XForms.PopupLayout;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+           // Shows SfPopupLayout in Full Screen.
+           popupLayout.Show(true);
+        }
+    }
+}
+{% endhighlight %}
+
+Executing the above codes renders the following output in Android device respectively.
+
+![Popup with default look](PopupLayout_images/Popup_with_full_screen_and_show_method.png)

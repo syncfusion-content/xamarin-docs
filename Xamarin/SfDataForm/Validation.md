@@ -298,7 +298,7 @@ private void DataForm_Validated(object sender, ValidatedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can get the details of invalid DataFormItems when validating the data form as explicit `ValidationMode` using [ValidationCompleted](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationCompleted_EV.html) event. This event contains [ValidationCompletedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.ValidationCompletedEventArgs.html) argument, which holds a list of DataFormItem as errors. 
+You can get the details of invalid DataFormItems when validating the data form as `Explicit` validation mode using [ValidationCompleted](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationCompleted_EV.html) event. This event contains [ValidationCompletedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.ValidationCompletedEventArgs.html) argument, which holds a list of DataFormItem as errors. 
 
 {% tabs %}
 {% highlight xaml %}

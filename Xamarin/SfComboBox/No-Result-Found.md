@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NoResultFoundText in Syncfusion SfComboBox control for Xamarin.Forms
+title: NoResultsFoundText in Syncfusion SfComboBox control for Xamarin.Forms
 description: Learn how to display the no result found text in SfComboBox
 platform: xamarin
 control: SfComboBox
@@ -8,7 +8,7 @@ documentation: ug
 ---
 # No Results Found
 
-When the entered item is not in the suggestion list, SfComboBox displays a text that indicates no search results found. You can set the desire text to be displayed for indicating no results found using the NoResultsFoundText property.
+When the entered item is not in the suggestion list, SfComboBox displays a text that indicates no search results found. You can set the desire text to be displayed for indicating no results found using the [`NoResultsFoundText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~NoResultsFoundText.html) property.
 
 {% tabs %}
 
@@ -49,7 +49,8 @@ When the entered item is not in the suggestion list, SfComboBox displays a text 
 
 {% highlight c# %}
 
-using System;								using System.Collections.Generic; 
+using System;								
+using System.Collections.Generic; 
 using Xamarin.Forms; 
 using Syncfusion.XForms.ComboBox; 
   
@@ -76,4 +77,4 @@ namespace ComboBox_Sample
 
 {% endtabs %}
 
-![NoResultFound Image](images/NoResult/NoResultFound.png)
+![NoResultsFound image](images/NoResult/NoResultFound.png)

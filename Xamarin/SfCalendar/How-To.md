@@ -237,7 +237,7 @@ You can customize the month cell of the `SfCalendar` using [CellTemplate](https:
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPagexmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 xmlns:local="clr-namespace:MonthCellCustomization"
 x:Class="MonthCellCustomization.MainPage"

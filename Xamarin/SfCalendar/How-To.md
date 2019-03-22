@@ -252,7 +252,7 @@ xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.S
                         <RowDefinitionHeight="*"/>
                     </Grid.RowDefinitions>
                     <Image x:Name="image1" HorizontalOptions="Center" Source="stethoscope.png" .Row="0"/>
-                    <LabelText="{BindingDay}" TextColor="Black"Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    <LabelText="{Binding Day}" TextColor="Black"Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
                     <Image x:Name="image2" HorizontalOptions="Center" Source="cake.png" Grid.Row="2"/>
                 </Grid>
                 </DataTemplate>
@@ -261,7 +261,7 @@ xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.S
     <ContentPage.Content>
         <calendar:SfCalendarx:Name="calendar">
             <calendar:SfCalendar.MonthViewSettings>
-                <calendar:MonthViewSettingsDateSelectionColor="#dddddd" CellTemplate="{StaticResource ValidTemplate}"/>
+                <calendar:MonthViewSettings DateSelectionColor="#dddddd" CellTemplate="{StaticResource ValidTemplate}"/>
             </calendar:SfCalendar.MonthViewSettings>
             </calendar:SfCalendar>
     </ContentPage.Content>

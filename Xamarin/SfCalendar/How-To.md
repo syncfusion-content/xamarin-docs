@@ -247,9 +247,9 @@ xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.S
             <DataTemplatex:Key="ValidTemplate">
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinitionHeight="*"/>
-                        <RowDefinitionHeight="*"/>
-                        <RowDefinitionHeight="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <Image x:Name="image1" HorizontalOptions="Center" Source="stethoscope.png" Grid.Row="0"/>
                     <LabelText="{Binding Day}" TextColor="Black" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>

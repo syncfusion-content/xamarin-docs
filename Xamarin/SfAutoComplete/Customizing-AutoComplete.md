@@ -50,7 +50,7 @@ this.Content = stackLayout;
 
 ![Entry customization](images/Customizing-AutoComplete/customizing-entry.png)
 
-## Custom template for Suggestion items
+## Custom Template for Suggestion Items
 
 `ItemTemplate` property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
 
@@ -132,7 +132,7 @@ public SamplePage()
 
 ## Customizing the Suggestion Box
 
-### Changing Suggestion Item Height
+### Changing suggestion item height
 
 `DropDownItemHeight` property is used to modify the height of suggestion items in drop down list. The code example is given below:
 
@@ -140,21 +140,39 @@ public SamplePage()
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownItemHeight="45"/>
-</StackLayout>
+<StackLayout Padding="30">
+    <autoComplete:SfAutoComplete x:Name="autoComplete" HeightRequest="40" DropDownItemHeight="45">
+        <autoComplete:SfAutoComplete.AutoCompleteSource>
+            <ListCollection:List x:TypeArguments="x:String">
+                <x:String>Uganda</x:String>
+                <x:String>Ukraine</x:String>
+                <x:String>United Arab Emirates</x:String>
+                <x:String>United Kingdom</x:String>
+            </ListCollection:List>
+        </autoComplete:SfAutoComplete.AutoCompleteSource>
+    </autoComplete:SfAutoComplete>
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+StackLayout mainLayout = new StackLayout()
+{
+    Padding = new Thickness(30)
+};
+
+SfAutoComplete autoComplete = new SfAutoComplete();
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
+countryNames.Add("United States");
 autoComplete.DataSource = countryNames;
+autoComplete.DropDownCornerRadius = 3;
 autoComplete.DropDownItemHeight = 45;
+mainLayout.Children.Add(autoComplete);
 
 {% endhighlight %}
 
@@ -170,21 +188,38 @@ The `DropDownCornerRadius` property is used to modify the corner radius of sugge
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownCornerRadius="3">
-</StackLayout>
+<StackLayout Padding="30">
+    <autoComplete:SfAutoComplete  x:Name="autoComplete" HeightRequest="40" DropDownCornerRadius="3">
+        <autoComplete:SfAutoComplete.AutoCompleteSource>
+            <ListCollection:List x:TypeArguments="x:String">
+                <x:String>Uganda</x:String>
+                <x:String>Ukraine</x:String>
+                <x:String>United Arab Emirates</x:String>
+                <x:String>United Kingdom</x:String>
+            </ListCollection:List>
+        </autoComplete:SfAutoComplete.AutoCompleteSource>
+    </autoComplete:SfAutoComplete>
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+StackLayout mainLayout = new StackLayout()
+{
+    Padding = new Thickness(30)
+};
+
+SfAutoComplete autoComplete = new SfAutoComplete();
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
+countryNames.Add("United States");
 autoComplete.DataSource = countryNames;
 autoComplete.DropDownCornerRadius = 3;
+mainLayout.Children.Add(autoComplete);
 
 {% endhighlight %}
 
@@ -192,7 +227,7 @@ autoComplete.DropDownCornerRadius = 3;
 
 ![Dropdown corner radius](images/Customizing-AutoComplete/dropdown-corner-radius.png)
 
-### Changing suggestion box Background color
+### Changing suggestion box background color
 
 The `DropDownBackgroundColor` property is used to modify the background color of suggestion box. The following code example demonstrates how to change the suggestion box background color. 
 
@@ -200,21 +235,38 @@ The `DropDownBackgroundColor` property is used to modify the background color of
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownBackgroundColor="Red">
-</StackLayout>
+<StackLayout Padding="30">
+    <autoComplete:SfAutoComplete x:Name="autoComplete" HeightRequest="40"  DropDownBackgroundColor="Red">
+        <autoComplete:SfAutoComplete.AutoCompleteSource>
+            <ListCollection:List x:TypeArguments="x:String">
+                <x:String>Uganda</x:String>
+                <x:String>Ukraine</x:String>
+                <x:String>United Arab Emirates</x:String>
+                <x:String>United Kingdom</x:String>
+            </ListCollection:List>
+        </autoComplete:SfAutoComplete.AutoCompleteSource>
+    </autoComplete:SfAutoComplete>
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+StackLayout mainLayout = new StackLayout()
+{
+    Padding = new Thickness(30)
+};
+
+SfAutoComplete autoComplete = new SfAutoComplete();
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
+countryNames.Add("United States");
 autoComplete.DataSource = countryNames;
 autoComplete.DropDownBackgroundColor = Color.Red;
+mainLayout.Children.Add(autoComplete);
 
 {% endhighlight %}
 
@@ -222,7 +274,7 @@ autoComplete.DropDownBackgroundColor = Color.Red;
 
 ![Dropdown background color](images/Customizing-AutoComplete/dropdown-background-color.png)
 
-### Customizing Suggestion Items
+### Customizing suggestion items
 
 Suggestion box items can be customized using `DropDownItemFontAttributes`, `DropDownItemFontFamily`, `DropDownTextSize` and `DropDownTextColor` properties.
 
@@ -230,14 +282,29 @@ Suggestion box items can be customized using `DropDownItemFontAttributes`, `Drop
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownTextSize="16" DropDownTextColor="#1976d2"/>
-</StackLayout>
+<StackLayout Padding="30">
+    <autoComplete:SfAutoComplete HeightRequest="40" DropDownTextSize="16" DropDownTextColor="#1976d2"  x:Name="autoComplete">
+            <autoComplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </autoComplete:SfAutoComplete.AutoCompleteSource>
+    </autoComplete:SfAutoComplete>
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+StackLayout mainLayout = new StackLayout()
+{
+    Padding = new Thickness(30)
+};
+
+SfAutoComplete autoComplete = new SfAutoComplete();
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -247,6 +314,7 @@ countryNames.Add("United States");
 autoComplete.DataSource = countryNames;
 autoComplete.DropDownTextColor = Color.FromHex("#1976d2");
 autoComplete.DropDownTextSize = 16;
+mainLayout.Children.Add(autoComplete);
 
 {% endhighlight %}
 
@@ -306,21 +374,38 @@ The `ShowBorder ` property is used to modify the visibility of border. The follo
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" ShowBorder="False">
-</StackLayout>
+<StackLayout Padding="30">
+    <autoComplete:SfAutoComplete HeightRequest="40" ShowBorder="False" x:Name="autoComplete">
+        <autoComplete:SfAutoComplete.AutoCompleteSource>
+            <ListCollection:List x:TypeArguments="x:String">
+                <x:String>Uganda</x:String>
+                <x:String>Ukraine</x:String>
+                <x:String>United Arab Emirates</x:String>
+                <x:String>United Kingdom</x:String>
+            </ListCollection:List>
+        </autoComplete:SfAutoComplete.AutoCompleteSource>
+    </autoComplete:SfAutoComplete>
+</StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+StackLayout mainLayout = new StackLayout()
+{
+    Padding = new Thickness(30)
+};
+
+SfAutoComplete autoComplete = new SfAutoComplete();
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
 countryNames.Add("United Arab Emirates");
 countryNames.Add("United Kingdom");
+countryNames.Add("United States");
 autoComplete.DataSource = countryNames;
 autoComplete .ShowBorder = false;
+mainLayout.Children.Add(autoComplete);
 
 {% endhighlight %}
 

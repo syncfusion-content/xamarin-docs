@@ -144,8 +144,6 @@ Label label = new Label()
 };
 customFooterView.Children.Add(label);
 comboBox.DropDownFooterView = customFooterView;
-//Set the height of the Footer View
-
 layout.Children.Add(comboBox);
 Content = layout;
 

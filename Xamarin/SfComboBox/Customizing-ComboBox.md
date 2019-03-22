@@ -15,23 +15,23 @@ The combo box control  provides user friendly customizing options for both entry
 
 The [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~TextColor.html), [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~TextSize.html), [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FontAttributes.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FontFamily.html) and [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~BorderColor.html) properties are used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
 
-## Text color
+### Text color
 
 The combo box control provides the user to customize the foreground color of the text inside the entry part.
 
-## Text size
+### Text size
 
 The combo box control provides the user to customize the text size of the text inside the entry part using [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~TextSize.html) property.
 
-## Font attributes
+### Font attributes
 
 The combo box control provides the user to customize the font attribute of the text inside the entry part using [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FontAttributes.html) property.
 
-## Font family
+### Font family
 
 The combo box control provides the user to customize the font family of the text inside the entry part using [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FontFamily.html) property.
 
-## Border color
+### Border color
 
 The combo box control provides the user to customize the border color of the entry box using [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~BorderColor.html) property.
 

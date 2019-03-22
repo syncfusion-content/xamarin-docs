@@ -251,9 +251,9 @@ xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.S
                         <RowDefinitionHeight="*"/>
                         <RowDefinitionHeight="*"/>
                     </Grid.RowDefinitions>
-                    <Imagex:Name="image1" HorizontalOptions="Center" Source="stethoscope.png" .Row="0"/>
+                    <Image x:Name="image1" HorizontalOptions="Center" Source="stethoscope.png" .Row="0"/>
                     <LabelText="{BindingDay}" TextColor="Black"Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                    <Imagex:Name="image2" HorizontalOptions="Center" Source="cake.png" Grid.Row="2"/>
+                    <Image x:Name="image2" HorizontalOptions="Center" Source="cake.png" Grid.Row="2"/>
                 </Grid>
                 </DataTemplate>
         </ResourceDictionary>
@@ -266,7 +266,7 @@ xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.S
             </calendar:SfCalendar>
     </ContentPage.Content>
     </ContentPage>
-    
+
 {% endhighlight %}
 
 {% endtabs %}

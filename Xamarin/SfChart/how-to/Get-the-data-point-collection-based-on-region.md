@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-#  Get the data point collection based on region
+# Get the data point collection based on region
 
 [`CartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries.html) provides the following methods to get a collection of data under a particular region.
 

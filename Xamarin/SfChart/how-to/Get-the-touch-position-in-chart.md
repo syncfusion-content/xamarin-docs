@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-## Get the touch position in chart
+# Get the touch position in chart
 
 ChartBehavior provides the following override methods to get the x and y positions when touch the [`Chart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartBehavior~Chart.html).
 

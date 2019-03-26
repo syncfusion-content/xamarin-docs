@@ -126,15 +126,15 @@ The SfRotator control is configured entirely in C# code or by using XAML markup.
 
 {% tabs %}
 
-{% highlight C# %}
-
-	using Syncfusion.SfRotator.XForms; 
-
-{% endhighlight %}
-
 {% highlight xaml %}
 
 	xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+	using Syncfusion.SfRotator.XForms; 
 	
 {% endhighlight %}
 
@@ -172,9 +172,7 @@ public partial class RotatorControlPage : ContentPage
         public RotatorControlPage()
         {
             InitializeComponent();
-
             SfRotator rotator = new SfRotator();
-
             this.Content = rotator;
         }
     }
@@ -210,14 +208,12 @@ public partial class RotatorControlPage : ContentPage
 		InitializeComponent();
 
 		SfRotator rotator = new SfRotator();
-
 		List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
 		collectionOfItems.Add(new SfRotatorItem() { Image = "movie1.png" });
 		collectionOfItems.Add(new SfRotatorItem() { Image = "movie2.png" });
 		collectionOfItems.Add(new SfRotatorItem() { Image = "movie3.png" });
 		collectionOfItems.Add(new SfRotatorItem() { Image = "movie4.png" });
 		collectionOfItems.Add(new SfRotatorItem() { Image = "movie5.png" });
-
 		rotator.DataSource = collectionOfItems;
 		this.Content = rotator;
 
@@ -229,7 +225,7 @@ public partial class RotatorControlPage : ContentPage
 
 {% endtabs %}
 
-The following code example illustrates to add list of Item in Carousel ,
+The following code example illustrates to add list of Item in Rotator ,
 
 {% tabs %}
 
@@ -246,7 +242,6 @@ public partial class RotatorControlPage : ContentPage
 		collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Button() { Text = "ItemContent1", TextColor = Color.White, BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
 		collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Label() { Text = "ItemContent2", BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
 		collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Image() { Source = "image1.png", Aspect = Aspect.AspectFit } });
-
 		rotator.DataSource = collectionOfItems;
 		this.Content = rotator;
 

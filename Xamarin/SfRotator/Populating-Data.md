@@ -23,16 +23,18 @@ SfRotator items can be populated with a collection of image data. You can assign
 
 {% highlight C# %}
 	
+// Model Class for Rotator.
+
 public RotatorModel(string imageString)
 {
-    Image = imageString;       
+    Image = imageString;
 }
 private String _image;
 public String Image
 {
     get { return _image; }
     set { _image = value; }
-}       
+}      
 
 {% endhighlight %}
 
@@ -44,6 +46,8 @@ Create and populate SfRotator collection as follows
 
 {% highlight C# %}
 
+// ViewModel class for Rotator.
+
 public RotatorViewModel()
 {
     ImageCollection.Add(new RotatorModel("movie1.png"));
@@ -53,7 +57,6 @@ public RotatorViewModel()
     ImageCollection.Add(new RotatorModel("movie5.png"));
 }
 private List<RotatorModel> imageCollection = new List<RotatorModel>();
-
 public List<RotatorModel> ImageCollection
 {
     get { return imageCollection; }
@@ -64,13 +67,21 @@ public List<RotatorModel> ImageCollection
 
 {% endtabs %}
 
-Assigning collection to ItemSource
+Assigning collection to ItemSource ,
 
 {% tabs %}
 
-{% highlight C# %}
+{% highlight xaml %}
 
- rotator.BindingContext = new RotatorViewModel();
+    <ContentPage.BindingContext>
+        <local:RotatorViewModel/>
+	</ContentPage.BindingContext>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rotator.BindingContext = new RotatorViewModel();
 
 {% endhighlight %}
 
@@ -84,14 +95,88 @@ SfRotator provides support to add a custom view as RotatorItems by designing a v
 
 {% highlight xaml %}
 
-<syncfusion:SfRotator x:Name="rotator"  Grid.Row="0" NavigationDelay="2000" ItemsSource="{Binding ImageCollection}" SelectedIndex="2" NavigationDirection="Horizontal" NavigationStripMode="Dots" BackgroundColor="#ececec" NavigationStripPosition="Bottom">
-  <syncfusion:SfRotator.ItemTemplate>
-    <DataTemplate>
-      <Image  Source="{Binding Image}"/>
-    </DataTemplate>
-  </syncfusion:SfRotator.ItemTemplate>
-</syncfusion:SfRotator>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Rotator"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             x:Class="Rotator.Rotator">
+    <ContentPage.BindingContext>
+        <local:RotatorViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <syncfusion:SfRotator x:Name="rotator" 
+                        NavigationDelay="2000" 
+                        ItemsSource="{Binding ImageCollection}" 
+                        SelectedIndex="2"
+                        NavigationDirection="Horizontal"
+                        NavigationStripMode="Dots" 
+                        BackgroundColor="#ececec">
+            <syncfusion:SfRotator.ItemTemplate>
+                <DataTemplate>
+                    <Image  Source="{Binding Image}"/>
+                </DataTemplate>
+            </syncfusion:SfRotator.ItemTemplate>
+        </syncfusion:SfRotator>
+    </ContentPage.Content>
+</ContentPage>
 	  
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.SfRotator.XForms;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace Rotator
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Rotator : ContentPage
+	{
+		public Rotator()
+		{
+			InitializeComponent ();
+            SfRotator rotator = new SfRotator();
+            var ImageCollection = new List<RotatorModel> {
+            new RotatorModel ("movie1.png"),
+            new RotatorModel ("movie2.png"),
+            new RotatorModel ("movie3.png"),
+            new RotatorModel ("movie4.png"),
+            new RotatorModel ("movie5.png")
+            };
+            var itemTemplate = new DataTemplate(() =>
+            {
+                var grid = new Grid();
+                var nameLabel = new Image();
+                nameLabel.SetBinding(Image.SourceProperty, "Image");
+                grid.Children.Add(nameLabel);
+                return grid;
+            });
+            rotator.ItemTemplate = itemTemplate;
+            rotator.ItemsSource = ImageCollection;
+            this.Content = rotator;
+        }
+	}
+    public class RotatorModel
+    {
+        public RotatorModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private String _image;
+        public String Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
+}
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -104,37 +189,39 @@ The ItemTemplate provides common template with different data, whereas if differ
 
 {% highlight C# %}
 
-SfRotator rotator = new SfRotator();
-SfRotatorItem item = new SfRotatorItem();
-List<SfRotatorItem> rotatorItem = new List<SfRotatorItem>();
-Label label = new Label();
-label.Text = "Item no 1";
-label.BackgroundColor = Color.Gray;
-label.FontSize = 50;
-label.VerticalTextAlignment = TextAlignment.Center;
-item.ItemContent = label;
-rotatorItem.Add((item));
-rotator.ItemsSource = rotatorItem;
+using Syncfusion.SfRotator.XForms;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
-
-SfRotatorItem item = new SfRotatorItem();
-List<SfRotatorItem> rotatorItem1 = new List<SfRotatorItem>();
-Image image = new Image();
-image.Source = ImageSource.FromFile("movies.png");
-image.Aspect = Aspect.AspectFit;
-image.VerticalOptions = LayoutOptions.Center;
-image.HeightRequest = 400;
-image.WidthRequest = 400;
-item.ItemContent = image;
-rotatorItem1.Add(item);
-rotator.ItemsSource = rotatorItem1;         
- 
-
-this.Content=rotator;		
+namespace RangeSlider
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Rotator : ContentPage
+	{
+		public Rotator()
+		{
+			InitializeComponent ();
+            SfRotator rotator = new SfRotator();
+            List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
+            collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Xamarin.Forms.Button() { Text = "ItemContent1", TextColor = Color.White, BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
+            collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Label() { Text = "ItemContent2", BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
+            collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Image() { Source = "movie1.png", Aspect = Aspect.AspectFit } });
+            rotator.DataSource = collectionOfItems;
+            this.Content = rotator;
+        }
+	}
+}	
 	  
 {% endhighlight %}
 
 {% endtabs %}
+
+![ItemContent](images/ItemContent.png)
 
 And also rotator provides a support to display only the Image data with `Image` property in SfRotatorItem class.
 

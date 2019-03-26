@@ -20,9 +20,9 @@ Suggestion Box can be placed either at the top or bottom using the `SuggestionBo
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" SuggestionBoxPlacement="Top" x:Name="comboBox">
-		<combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" SuggestionBoxPlacement="Top" x:Name="comboBox">
+        <combobox:SfComboBox.DataSource>
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -30,7 +30,7 @@ Suggestion Box can be placed either at the top or bottom using the `SuggestionBo
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                   
+    </combobox:SfComboBox>                   
 </StackLayout>
 
 {% endhighlight %}
@@ -62,7 +62,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Dealing-with-Suggestion-Box/suggestion-box-placement-top.png)
+![Top placement image](images/Dealing-with-Suggestion-Box/suggestion-box-placement-top.png)
 
 ## Maximum suggestion box height
 
@@ -73,22 +73,22 @@ The maximum height of the suggestion box in the SfComboBox control can be varied
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="100">
-		<combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="100">
+        <combobox:SfComboBox.DataSource>
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Great Britain </x:String>
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> Canada </x:String>
                 <x:String> United Arab Emirates </x:String>
-				<x:String> France </x:String>
+                <x:String> France </x:String>
                 <x:String> United Kingdom </x:String>
                 <x:String> China </x:String>
                 <x:String> United States </x:String>
-				<x:String> Japan </x:String>
+                <x:String> Japan </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                           
+    </combobox:SfComboBox>                           
 </StackLayout> 
 
 {% endhighlight %}
@@ -126,7 +126,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Dealing-with-Suggestion-Box/maximum-dropdown-height.png)
+![Maximum dropdown height image](images/Dealing-with-Suggestion-Box/maximum-dropdown-height.png)
 
 ## Opening suggestion box on focus
 
@@ -137,9 +137,9 @@ Suggestion Box can be shown whenever control receives focus using the `ShowSugge
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" ShowSuggestionsOnFocus="true">
-		<combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" ShowSuggestionsOnFocus="true">
+        <combobox:SfComboBox.DataSource>
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Great Britain </x:String>
                 <x:String> Canada </x:String>
                 <x:String> France </x:String>
@@ -147,7 +147,7 @@ Suggestion Box can be shown whenever control receives focus using the `ShowSugge
                 <x:String> Japan </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                                       
+    </combobox:SfComboBox>                                       
 </StackLayout> 
 
 {% endhighlight %}
@@ -184,7 +184,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Dealing-with-Suggestion-Box/show-suggestions-on-focus.png)
+![Show suggestion onfocus image](images/Dealing-with-Suggestion-Box/show-suggestions-on-focus.png)
 
 ## Delay opening suggestion box
 
@@ -196,9 +196,9 @@ Here in this example, a time duration of 3 seconds is set as popup delay.
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" PopupDelay="3000">
-		<combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" PopupDelay="3000">
+        <combobox:SfComboBox.DataSource>
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -206,7 +206,7 @@ Here in this example, a time duration of 3 seconds is set as popup delay.
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                                            
+    </combobox:SfComboBox>                                            
 </StackLayout> 
 
 {% endhighlight %}
@@ -247,9 +247,9 @@ APIs are available to avoid pop-ups and retrieve filtered suggestion items that 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SuggestionBoxPlacement="None">
-		<combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SuggestionBoxPlacement="None">
+        <combobox:SfComboBox.DataSource>
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -257,7 +257,7 @@ APIs are available to avoid pop-ups and retrieve filtered suggestion items that 
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                             
+    </combobox:SfComboBox>                             
 </StackLayout> 
 
 {% endhighlight %}

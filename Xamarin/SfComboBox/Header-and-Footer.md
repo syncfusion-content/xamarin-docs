@@ -21,7 +21,7 @@ You can provide Header content for header at the top of the ComboBox's Suggestio
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
     <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -76,7 +76,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Header-and-Footer/Header.png)
+![Header Image](images/Header-and-Footer/Header.png)
 
 ## Footer Content
 
@@ -91,7 +91,7 @@ The following code example shows how to set Footer content in SfComboBox.
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
     <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true" AllowFiltering="true">
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -111,11 +111,11 @@ The following code example shows how to set Footer content in SfComboBox.
 
 {% highlight c# %}
 
-StackLayout layout = new StackLayout() 
-{ 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+StackLayout layout = new StackLayout()
+{
+    VerticalOptions = LayoutOptions.Start,
+    HorizontalOptions = LayoutOptions.Start,
+    Padding = new Thickness(30)
 };
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
@@ -130,15 +130,26 @@ comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.ShowDropDownFooterView = true;
-//Set the height of the Footer View
-comboBox.DropDownFooterViewHeight = 50;
 
-layout.Children.Add(comboBox); 
+StackLayout customFooterView = new StackLayout();
+Label label = new Label() 
+{ 
+    Text = "Add New", 
+    BackgroundColor = Color.FromHex("#f0f0f0"), 
+    TextColor = Color.FromHex("#006bcd"), 
+    VerticalOptions = LayoutOptions.Center, 
+    VerticalTextAlignment = TextAlignment.Center, 
+    HorizontalTextAlignment = TextAlignment.Center, 
+    FontSize = 20 
+};
+customFooterView.Children.Add(label);
+comboBox.DropDownFooterView = customFooterView;
+layout.Children.Add(comboBox);
 Content = layout;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/Header-and-Footer/Footer.png)
+![Footer Image](images/Header-and-Footer/Footer.png)
 

@@ -201,29 +201,40 @@ The following code example illustrates to add list of Images in Carousel ,
 
 {% highlight C# %}
 
-public partial class RotatorControlPage : ContentPage
+using Syncfusion.SfRotator.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace RangeSlider
 {
-	public RotatorControlPage()
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Rotator : ContentPage
 	{
-		InitializeComponent();
-
-		SfRotator rotator = new SfRotator();
-		List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
-		collectionOfItems.Add(new SfRotatorItem() { Image = "movie1.png" });
-		collectionOfItems.Add(new SfRotatorItem() { Image = "movie2.png" });
-		collectionOfItems.Add(new SfRotatorItem() { Image = "movie3.png" });
-		collectionOfItems.Add(new SfRotatorItem() { Image = "movie4.png" });
-		collectionOfItems.Add(new SfRotatorItem() { Image = "movie5.png" });
-		rotator.DataSource = collectionOfItems;
-		this.Content = rotator;
-
+        SfRotator rotator = new SfRotator();
+        StackLayout stackLayout = new StackLayout();
+		public Rotator()
+		{
+			InitializeComponent ();
+            stackLayout.HeightRequest = 300;
+            List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie1.png" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie2.png" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie3.png" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie4.png" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie5.png" });
+            rotator.DataSource = collectionOfItems;
+            stackLayout.Children.Add(rotator);
+            this.Content = stackLayout;
+        }
 	}
 }
-
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![Rotator Items](images/RotatorItems.png)
 
 The following code example illustrates to add list of Item in Rotator ,
 

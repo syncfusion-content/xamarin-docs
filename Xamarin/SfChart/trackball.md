@@ -522,6 +522,17 @@ trackball.Hide();
 
 {% endhighlight %}
 
+### HitTest method
+
+The [`HitTest`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~HitTest.html) method is used to check whether the point is in trackball or not.
+
+{% highlight c# %} 
+[C#]
+
+trackball.HitTest(pointX, pointY);
+
+{% endhighlight %}
+
 ## Events
 
 ### TrackballCreated

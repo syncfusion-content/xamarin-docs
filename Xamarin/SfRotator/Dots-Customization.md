@@ -20,9 +20,9 @@ The [`DotsBorderColor`] property is used to customize the color of dots border i
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:RangeSlider"
+             xmlns:local="clr-namespace:Rotator"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
-             x:Class="RangeSlider.Rotator">
+             x:Class="Rotator.Rotator">
      <ContentPage.BindingContext>
         <local:RotatorViewModel/>
     </ContentPage.BindingContext>
@@ -113,9 +113,9 @@ The [`SelectedDotColor`] property is used to customize the color of selected dot
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:RangeSlider"
+             xmlns:local="clr-namespace:Rotator"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
-             x:Class="RangeSlider.Rotator">
+             x:Class="Rotator.Rotator">
      <ContentPage.BindingContext>
         <local:RotatorViewModel/>
     </ContentPage.BindingContext>
@@ -208,9 +208,9 @@ The [`UnselectedDotColor`] property is used to customize the color of unselected
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:RangeSlider"
+             xmlns:local="clr-namespace:Rotator"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
-             x:Class="RangeSlider.Rotator">
+             x:Class="Rotator.Rotator">
      <ContentPage.BindingContext>
         <local:RotatorViewModel/>
     </ContentPage.BindingContext>

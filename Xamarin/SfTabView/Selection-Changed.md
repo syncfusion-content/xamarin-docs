@@ -96,7 +96,7 @@ namespace TabView
 
 ## Enable swiping
 
-When the selection changed event is needs to be restricted through user interaction, the `EnableSwiping` property of `SfTabView` can be set to `false`.
+To restrict the user interaction, the `EnableSwiping` property of `SfTabView` can be set to `false`.
 
 {% tabs %}
 

@@ -36,13 +36,13 @@ The default icons in the navigation header can be customized using the following
 
 ### Default icons in NavigationPage
 
-When the backdrop page contained within the [NavigationPage](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) , Hamburger icon and Close icon (X mark ) will be used by default.
+When the backdrop page contained within the [NavigationPage](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) , hamburger icon and close icon (X mark ) will be used by default.
 
 ![Hamburger icon](Header-Configuration-images/Hamburger.png)
 
 ### Default icons in MasterDetailsPage
 
-When the backdrop page placed in the [MasterDetailPage](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.masterdetailpage?view=xamarin-forms), Down arrow icon and Up arrow icon will be used by default.
+When the backdrop page placed in the [MasterDetailPage](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.masterdetailpage?view=xamarin-forms), down arrow icon and up arrow icon will be used by default.
 
 ![Arrow icon](Header-Configuration-images/Arrow.png)
 
@@ -61,8 +61,7 @@ You can customize the default icons in the navigation header by setting the Open
     xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
     x:Class="BackdropGettingStarted.BackdropSamplePage"
     OpenIcon="open.png"
-    CloseIcon="close.png"
-    Title="Menu">
+    CloseIcon="close.png">
 </backdrop:SfBackdropPage>
 
 {% endhighlight %}
@@ -79,7 +78,6 @@ namespace BackdropGettingStarted
             InitializeComponent();
             this.OpenIcon = "open.png";
             this.CloseIcon = "close.png";
-	    this.Title = "Menu";
         }
     }
 }

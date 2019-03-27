@@ -17,17 +17,17 @@ TreeMap contains various elements such as,
 
 ## Legend
 
-You can set the color value of **leaf nodes** using `LegendSettings`. This legend is appropriate only for the **TreeMap** whose leaf nodes are colored using `rangeColorMapping`.
+You can set the color value of **leaf nodes** using `LegendSettings`. This legend is appropriate only for the **TreeMap** whose leaf nodes are colored using `RangeColorMapping`.
 
-You can set `showLegend` property value to **“True”** to enable or disable legend visibility.
+You can set `ShowLegend` property value to **“True”** to enable or disable legend visibility.
 
 ### TreeMap Legend
 
-You can decide the size of the legend icons by setting `iconSize` property of the `LegendSettings` property avail in **TreeMap**.
+You can decide the size of the legend icons by setting `IconSize` property of the `LegendSettings` property avail in **TreeMap**.
 
 ### Label for Legend
 
-You can customize the labels of the **legend item** using `legendLabel` property of `rangeColorMapping`. 
+You can customize the labels of the **legend item** using `legendLabel` property of `RangeColorMapping`. 
 
 {% highlight c# %}
 
@@ -40,19 +40,19 @@ You can customize the labels of the **legend item** using `legendLabel` property
 
 {% endhighlight %}
 
-![Output of SfTreeMap](Getting-Started_images/Legend.jpg)
+![TreeMap Legend](Getting-Started_images/Legend.jpg)
 
 
 
 ## Header
 
-You can set headers for each level by setting the `showHeader` property of the each **TreeMap** levels. The `headerHeight` property helps to set the height of the header and Group path value determines the header value. 
+You can set headers for each level by setting the `ShowHeader` property of the each **TreeMap** levels. The `HeaderHeight` property helps to set the height of the header and GroupPath value determines the header value. 
 
 {% highlight c# %}
 
             TreeMapFlatLevel level = new TreeMapFlatLevel()
             {
-                HeaderStyle =new Syncfusion.SfTreeMap.XForms.Style() {Color = Device.RuntimePlatform == Device.iOS ? Color.Black : Device.RuntimePlatform == Device.Android ? Color.Black : Color.White },
+                HeaderStyle = new Syncfusion.SfTreeMap.XForms.Style() { Color = Color.Black },
                 GroupPath = "Continent",
                 HeaderHeight = 20,
                 GroupGap = 5,
@@ -64,11 +64,11 @@ You can set headers for each level by setting the `showHeader` property of the e
 {% endhighlight %} 
 
 
-![Output of SfTreeMap](Getting-Started_images/Header.jpg)
+![TreeMap Header](Getting-Started_images/Header.jpg)
 
-## Label
+## Data Label
 
-You can also set labels for the leaf nodes by setting the `showLabels` property as true. Label path value is displayed as a label for leaf nodes. 
+The `ShowLabels` property is used to enable or disable the labels in leaf nodes. The `LabelPath` property allows you to set values for labels.
 
 {% tabs %}
 
@@ -90,14 +90,14 @@ You can also set labels for the leaf nodes by setting the `showLabels` property 
 {% endtabs %} 
 
 
-![Output of SfTreeMap](Getting-Started_images/ShowLabel.jpg)
+![Treemap Datalabel](Getting-Started_images/ShowLabel.jpg)
 
-### To Avoid Overlap in data labels
+### To avoid overlap in data labels
 
-The `OverflowMode` property aligns the labels that overlap with each other. The labels can be customized using the `Trim`, `Wrap`, and `Hide` options. The default value of the `OverflowMode` property is Trim.
+The `OverflowMode` property aligns the labels within the leaf node bounds by using `Trim`, `Wrap`, and `Hide` options. The default value of the `OverflowMode` property is Trim.
 
 #### Trim
-To avoid the data labels are displayed outside the leaf node bounds, labels can be trim using property OverflowMode `Trim` option.
+Data labels can be trim inside the leaf node bounds using property OverflowMode `Trim` option.
 
 {% tabs %}
 
@@ -117,10 +117,10 @@ To avoid the data labels are displayed outside the leaf node bounds, labels can 
 {% endhighlight %}
 {% endtabs %}
 
-![Output of SfTreeMap](Getting-Started_images/LabelTrim.jpg)
+![TreeMap DataLabel Trim](Getting-Started_images/LabelTrim.jpg)
 
 #### Wrap
-Data labels can be wrap inside the leaf node bounds using property OverflowMode `Wrap` option to avoid the data labels are displayed outside of leaf node bounds.
+Data labels can be wrap inside the leaf node bounds using property OverflowMode `Wrap` option.
 
 {% tabs %}
 
@@ -140,10 +140,10 @@ Data labels can be wrap inside the leaf node bounds using property OverflowMode 
 {% endhighlight %}
 {% endtabs %}
 
-![Output of SfTreeMap](Getting-Started_images/LabelWrap.jpg)
+![TreeMap DataLabel Wrap](Getting-Started_images/LabelWrap.jpg)
 
 #### Hide
-Data labels can be hide when label content exceeds the leaf node bounds using property OverflowMode `Hide` option. 
+Data labels can be hide inside the leaf node bounds using property OverflowMode `Hide` option. 
 
 {% tabs %}
 
@@ -163,7 +163,7 @@ Data labels can be hide when label content exceeds the leaf node bounds using pr
 {% endhighlight %}
 {% endtabs %}
 
-![Output of SfTreeMap](Getting-Started_images/LabelHide.jpg)
+![TreeMap Datalabel Hide](Getting-Started_images/LabelHide.jpg)
 
 ### Customize data labels
 
@@ -198,4 +198,4 @@ The Data Label can be customized by using the `LabelStyle` property in LeafItemS
 
 {% endtabs %}
 
-![Output of SfTreeMap](Getting-Started_images/LabelCustomize.jpg)
+![TreeMap customized DataLabel](Getting-Started_images/LabelCustomize.jpg)

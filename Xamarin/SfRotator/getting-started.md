@@ -554,7 +554,7 @@ The placement position of navigation strip items such as Thumbnail or Dots can b
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:RangeSlider"
+             xmlns:local="clr-namespace:Rotator"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
              x:Class="Rotator.Rotator">
     <ContentPage.BindingContext>
@@ -577,6 +577,7 @@ The placement position of navigation strip items such as Thumbnail or Dots can b
         </syncfusion:SfRotator>
     </ContentPage.Content>
 </ContentPage>	
+
 {% endhighlight %}
 
 {% highlight C# %}	

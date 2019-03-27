@@ -19,20 +19,94 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% highlight xaml %}
 
-	<syncfusion:SfRotator x:Name="rotator" NavigationStripMode="Thumbnail" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RangeSlider"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             x:Class="Rotator.Rotator">
+    <ContentPage.BindingContext>
+        <local:RotatorViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <syncfusion:SfRotator x:Name="rotator" 
+                        NavigationDelay="2000" 
+                        ItemsSource="{Binding ImageCollection}" 
+                        SelectedIndex="2"
+                        NavigationDirection="Horizontal"
+                        NavigationStripMode="Thumbnail" 
+                        BackgroundColor="#ececec">
+            <syncfusion:SfRotator.ItemTemplate>
+                <DataTemplate>
+                    <Image  Source="{Binding Image}"/>
+                </DataTemplate>
+            </syncfusion:SfRotator.ItemTemplate>
+        </syncfusion:SfRotator>
+    </ContentPage.Content>
+</ContentPage>
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfRotator rotator = new SfRotator();
-	rotator.NavigationStripMode = NavigationStripMode.Thumbnail;	
+using Syncfusion.SfRotator.XForms;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace Rotator
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Rotator : ContentPage
+	{
+		public Rotator()
+		{
+			InitializeComponent ();
+            SfRotator rotator = new SfRotator();
+            var ImageCollection = new List<RotatorModel> {
+            new RotatorModel ("movie1.png"),
+            new RotatorModel ("movie2.png"),
+            new RotatorModel ("movie3.png"),
+            new RotatorModel ("movie4.png"),
+            new RotatorModel ("movie5.png")
+            };
+            var itemTemplate = new DataTemplate(() =>
+            {
+                var grid = new Grid();
+                var nameLabel = new Image();
+                nameLabel.SetBinding(Image.SourceProperty, "Image");
+                grid.Children.Add(nameLabel);
+                return grid;
+            });
+            rotator.ItemTemplate = itemTemplate;
+            rotator.NavigationStripMode = NavigationStripMode.Thumbnail;
+            rotator.ItemsSource = ImageCollection;
+            this.Content = rotator;
+        }
+	}
+    public class RotatorModel
+    {
+        public RotatorModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private String _image;
+        public String Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
+}	
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/thumbnail.png)
+![Thumbnail Mode Image](images/NavigationStripMode.png)
 
 * `Dots` - The slider items will be loaded in dots view additionally. When a dots item is clicked, the slider will switch to the corresponding image data.
 
@@ -40,21 +114,93 @@ The `NavigationStripMode` property specifies the appearance of navigation bar it
 
 {% highlight xaml %}
 
-	<syncfusion:SfRotator x:Name="rotator" NavigationStripMode="Dots" />
-	
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Rotator"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             x:Class="Rotator.Rotator">
+    <ContentPage.BindingContext>
+        <local:RotatorViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <syncfusion:SfRotator x:Name="rotator" 
+                        NavigationDelay="2000" 
+                        ItemsSource="{Binding ImageCollection}" 
+                        SelectedIndex="2"
+                        NavigationDirection="Horizontal"
+                        NavigationStripMode="Dots" 
+                        BackgroundColor="#ececec">
+            <syncfusion:SfRotator.ItemTemplate>
+                <DataTemplate>
+                    <Image  Source="{Binding Image}"/>
+                </DataTemplate>
+            </syncfusion:SfRotator.ItemTemplate>
+        </syncfusion:SfRotator>
+    </ContentPage.Content>
+</ContentPage>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-	SfRotator rotator = new SfRotator();
-	rotator.NavigationStripMode = NavigationStripMode.Dots;	
+using Syncfusion.SfRotator.XForms;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace Rotator
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Rotator : ContentPage
+	{
+		public Rotator()
+		{
+			InitializeComponent ();
+            SfRotator rotator = new SfRotator();
+            var ImageCollection = new List<RotatorModel> {
+            new RotatorModel ("movie1.png"),
+            new RotatorModel ("movie2.png"),
+            new RotatorModel ("movie3.png"),
+            new RotatorModel ("movie4.png"),
+            new RotatorModel ("movie5.png")
+            };
+            var itemTemplate = new DataTemplate(() =>
+            {
+                var grid = new Grid();
+                var nameLabel = new Image();
+                nameLabel.SetBinding(Image.SourceProperty, "Image");
+                grid.Children.Add(nameLabel);
+                return grid;
+            });
+            rotator.ItemTemplate = itemTemplate;
+            rotator.ItemsSource = ImageCollection;
+            this.Content = rotator;
+        }
+	}
+    public class RotatorModel
+    {
+        public RotatorModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private String _image;
+        public String Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/dots.png)
-
+![Dot Mode Image](images/RotatorImages.png)
 
 ## Items / Dot Strip Positions
 
@@ -71,18 +217,93 @@ There are four available positions,
 
 {% highlight xaml %}
 
-	<syncfusion:SfRotator x:Name="rotator" NavigationStripPosition="Bottom" />
-	
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Rotator"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             x:Class="Rotator.Rotator">
+    <ContentPage.BindingContext>
+        <local:RotatorViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <syncfusion:SfRotator x:Name="rotator" 
+                        NavigationDelay="2000" 
+                        ItemsSource="{Binding ImageCollection}" 
+                        SelectedIndex="2"
+                        NavigationDirection="Horizontal"
+                        NavigationStripMode="Dots" 
+                        BackgroundColor="#ececec"
+                        NavigationStripPosition="Bottom">
+            <syncfusion:SfRotator.ItemTemplate>
+                <DataTemplate>
+                    <Image  Source="{Binding Image}"/>
+                </DataTemplate>
+            </syncfusion:SfRotator.ItemTemplate>
+        </syncfusion:SfRotator>
+    </ContentPage.Content>
+</ContentPage>	
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-	SfRotator rotator = new SfRotator();
-	rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
+using Syncfusion.SfRotator.XForms;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace Rotator
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Rotator : ContentPage
+	{
+		public Rotator()
+		{
+			InitializeComponent ();
+            SfRotator rotator = new SfRotator();
+            var ImageCollection = new List<RotatorModel> {
+            new RotatorModel ("movie1.png"),
+            new RotatorModel ("movie2.png"),
+            new RotatorModel ("movie3.png"),
+            new RotatorModel ("movie4.png"),
+            new RotatorModel ("movie5.png")
+            };
+            var itemTemplate = new DataTemplate(() =>
+            {
+                var grid = new Grid();
+                var nameLabel = new Image();
+                nameLabel.SetBinding(Image.SourceProperty, "Image");
+                grid.Children.Add(nameLabel);
+                return grid;
+            });
+            rotator.ItemTemplate = itemTemplate;
+            rotator.NavigationStripMode = NavigationStripMode.Dots;
+            rotator.NavigationStripPosition = NavigationStripPosition.Bottom;
+            rotator.ItemsSource = ImageCollection;
+            this.Content = rotator;
+        }
+	}
+    public class RotatorModel
+    {
+        public RotatorModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private String _image;
+        public String Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-
-![](images/tabstrip.png)
+![NavigationSTripPosition](images/RotatorImages.png)

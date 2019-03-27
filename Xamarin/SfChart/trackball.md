@@ -84,6 +84,18 @@ In the following screenshot, trackball label is shown for only single data point
 
 ![Label display mode support for trackball in Xamarin.Forms Chart](trackball_images/trackball_img2.png)
 
+## Activation mode
+
+The [`ActivationMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~ActivationMode.html) property is used to restrict the visibility of trackball based on the touch actions. The default value of this property is [`ChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html).
+
+The ChartTrackballActivationMode enum contains the following values:
+
+* [`LongPress`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html) – Activates trackball only when performing the long press action.
+* [`TouchMove`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html) – Activates trackball only when performing touch move action.
+* [`None`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html) – Hides the visibility of trackball when setting activation mode to [`None`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html). It will be activated when calling the [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~Show.html) method.
+
+N> The default value of [`ActivationMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballBehavior~ActivationMode.html) property is [`ChartTrackballActivationMode.LongPress`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html) for Android and iOS platform and default value for MacOS and UWP platform is [`ChartTrackballActivationMode.TouchMove`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballActivationMode.html).
+
 ## Customizing appearance
 
 **Customize Trackball Labels**

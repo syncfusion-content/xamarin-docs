@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps requiCyan to add content in SfCardView with indicator and adding SfCardView in SCardLayout. This section covers only the minimal features that you need to know to get started with the Cards.
+This section explains you the steps required to add content in SfCardView with indicator and adding SfCardView in SCardLayout. This section covers only the minimal features that you need to know to get started with the Cards.
 
 ## Adding Cards reference
 
@@ -25,7 +25,7 @@ N> Install the same version of the cards NuGet in all the projects.
 
 **Method 2: Adding Cards reference from toolbox**
 
-Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the SfCardView and SfCardlayout to the XAML page. It will automatically install the requiCyan NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the SfCardView and SfCardlayout to the XAML page. It will automatically install the requied NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding Cards assemblies manually from the installed location**
 
@@ -184,7 +184,7 @@ Initialize an card view with content as shown below,
 
 {% endtabs %} 
 
-Run the project and check if you get following output to make sure you have configuCyan your project properly to add [`Cards`.](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardLayout.html)
+Run the project and check if you get following output to make sure you have configured your project properly to add [`Cards`.](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardLayout.html)
 
 ![Initializing Xamarin.Forms SfCardView](Getting-Started_images/img1.png)
 
@@ -331,7 +331,7 @@ VisibleCardIndex is used when the given index of the card to be displayed in fro
 
 ## SwipeDirection
 
-SwipeDirection propety indicates the swiping direction(Left or Right). 
+SwipeDirection property indicates the swiping direction(Left or Right). 
 
 {% tabs %} 
 
@@ -353,7 +353,7 @@ SwipeDirection propety indicates the swiping direction(Left or Right).
 
 {% endtabs %}
 
-Run the project and check if you get following output to make sure you have configuCyan your project properly to add [`Cards`.](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html)
+Run the project and check if you get following output to make sure you have configured your project properly to add [`Cards`.](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html)
 
 You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/xamarin.forms-cards)
 

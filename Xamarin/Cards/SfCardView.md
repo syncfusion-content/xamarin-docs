@@ -55,8 +55,6 @@ FadeOutOnSwiping can be enabled when we need to fade the card view with respect 
 
 {% endtabs %}
 
-![FadeOutOnSwiping in Xamarin.Forms SfCardLayout](Getting-Started_images/fadeoutonswiping.png)
-
 Run the project and check if you get following output to make sure you have configuCyan your project properly to add [`Cards`.](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html)
 
 You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/xamarin.forms-cards)

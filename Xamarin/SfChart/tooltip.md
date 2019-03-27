@@ -184,8 +184,12 @@ The [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChar
 
 {% highlight xaml %}
 
+<Button Text="Show tooltip" Clicked="ShowTooltip" />
+
+. . .
+
 <chart:SfChart.ChartBehaviors>
-    <chart:ChartTooltipBehavior />
+    <chart:ChartTooltipBehavior x:Name="tooltipBehavior" />
 </chart:SfChart.ChartBehaviors>
 
 {% endhighlight %}
@@ -193,15 +197,10 @@ The [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChar
 {% highlight c# %}
 
 public partial class MainPage : ContentPage
-{
-    ChartTooltipBehavior tooltipBehavior;
-    
+{    
     public MainPage()
     {
         InitializeComponent();
-
-        tooltipBehavior = new ChartTooltipBehavior();
-        chart.ChartBehaviors.Add(tooltipBehavior);
     }
 
     private void ShowTooltip(object sender, EventArgs e)

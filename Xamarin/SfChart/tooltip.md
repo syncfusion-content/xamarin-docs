@@ -205,7 +205,7 @@ public partial class MainPage : ContentPage
 
     private void ShowTooltip(object sender, EventArgs e)
     {
-        //Arguments are x position, y position and bool value determines whether the tooltip should be animated while displaying.
+        //pointX - determines the x position of tooltip, pointY - determines the y position of tooltip and bool value determines whether the tooltip should be animated while displaying.
         tooltipBehavior.Show(pointX, pointY, true);
     }
 }

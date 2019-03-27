@@ -67,6 +67,9 @@ listView.SelectAll();
 {% endhighlight %}
 {% endtabs %}
 
+N> When programmatically select an item then the selection related [events](https://help.syncfusion.com/xamarin/sflistview/selection#events) will not be triggered. It triggers only on UI interactions.
+However, get the notification form the SelectedItems collection changed event which will be triggered when add an item at runtime.
+
 ## Selected items
 
 ### Get selected items

@@ -25,7 +25,7 @@ N> Install the same version of the cards NuGet in all the projects.
 
 **Method 2: Adding Cards reference from toolbox**
 
-Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the SfCardView and SfCardlayout to the XAML page. It will automatically install the requied NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the SfCardView and SfCardLayout to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding Cards assemblies manually from the installed location**
 
@@ -279,7 +279,7 @@ Initialize an card layout with card view as shown below,
 
 {% endtabs %} 
 
-![Initializing Xamarin.Forms SfCardLayout](Getting-Started_images/cardlayout.gif)
+![Initializing Xamarin.Forms SfCardLayout](Getting-Started_images/layout.gif)
 
 ## ShowSwipedCard
 
@@ -297,7 +297,7 @@ ShowSwipedCard can be enabled to show swiped cards at the edge of card layout.
 {% highlight C# %}
 
     SfCardLayout cardLayout = new SfCardLayout();
-    cardlayout.ShowSwipedCard = true;
+    cardLayout.ShowSwipedCard = true;
 
     this.Content = cardLayout;
 
@@ -321,7 +321,7 @@ VisibleCardIndex is used when the given index of the card to be displayed in fro
 {% highlight C# %}
 
     SfCardLayout cardLayout = new SfCardLayout();
-    cardlayout.VisibleCardIndex = 1;
+    cardLayout.VisibleCardIndex = 1;
 
     this.Content = cardLayout;
 
@@ -345,7 +345,7 @@ SwipeDirection property indicates the swiping direction(Left or Right).
 {% highlight C# %}
 
     SfCardLayout cardLayout = new SfCardLayout();
-    cardlayout.SwipeDirection = CardSwipeDirection.Right;
+    cardLayout.SwipeDirection = CardSwipeDirection.Right;
 
     this.Content = cardLayout;
 

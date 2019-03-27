@@ -1,24 +1,21 @@
 ---
 layout: post
-title: Looping and Delays in Syncfusion Rotator control. 
-description: Learn how to set the autoplay option, loop the items, enable Text Area  and choose the navigation direction in Rotator control for Xamarin.Forms
+title: Customization of Dots for Syncfusion Essential Xamarin.Forms SfRotator
+description: How to customize a appearance for Xamarin.Forms SfRotator
 platform: xamarin 
-control: Rotator
+control: Rotator 
 documentation: ug
 ---
 
-# Adding Looping and Delays
+## Customization
 
-Looping and delay can be enabled in SfRotator control and also we can customize the Text and Navigation direction.
+The Rotator control supports to customize the dots border color, selected dots color and unselected dots color.
 
-## Toggle AutoPlay
+## DotsBorder Color
 
-The `EnableAutoPlay` property specifies whether the items should navigate automatically based on `NavigationDelay` property, when the property value is set to true.
-
-N> By default, the property value is set to false.
+The [`DotsBorderColor`] property is used to customize the color of dots border in SfRotator.
 
 {% tabs %}
-
 {% highlight xaml %}
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -26,18 +23,16 @@ N> By default, the property value is set to false.
              xmlns:local="clr-namespace:Rotator"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
              x:Class="Rotator.Rotator">
-    <ContentPage.BindingContext>
+     <ContentPage.BindingContext>
         <local:RotatorViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <syncfusion:SfRotator x:Name="rotator" 
-                        ItemsSource="{Binding ImageCollection}" 
-                        SelectedIndex="2"
-                        NavigationDirection="Horizontal"
-                        NavigationStripMode="Thumbnail" 
-                        BackgroundColor="#ececec"
-                        EnableAutoPlay="true"
-                        NavigationStripPosition="Bottom">
+                              ItemsSource="{Binding ImageCollection}" 
+                              SelectedIndex="2"
+                              BackgroundColor="#ececec"
+                              NavigationStripPosition="Bottom"
+                              DotsBorderColor="Aqua" >
             <syncfusion:SfRotator.ItemTemplate>
                 <DataTemplate>
                     <Image  Source="{Binding Image}"/>
@@ -48,9 +43,8 @@ N> By default, the property value is set to false.
 </ContentPage>
 
 {% endhighlight %}
+{% highlight c# %}
 
-{% highlight C# %}
-    
 using Syncfusion.SfRotator.XForms;
 using System;
 using System.Collections.Generic;
@@ -68,7 +62,7 @@ namespace Rotator
 		public Rotator()
 		{
 			InitializeComponent ();
-	        SfRotator rotator = new SfRotator();
+            SfRotator rotator = new SfRotator();
             var ImageCollection = new List<RotatorModel> {
             new RotatorModel ("movie1.png"),
             new RotatorModel ("movie2.png"),
@@ -85,7 +79,7 @@ namespace Rotator
                 return grid;
             });
             rotator.ItemTemplate = itemTemplate;
-			rotator.EnableAutoPlay = true;
+            rotator.DotsBorderColor = Color.Aqua;
             rotator.ItemsSource = ImageCollection;
             this.Content = rotator;
         }
@@ -106,137 +100,33 @@ namespace Rotator
 }
 
 {% endhighlight %}
-
 {% endtabs %}
 
-## Setting Navigation Delay
+![SfRotator with dots border color](images/DotsBorderColor.png)
 
-The `NavigationDelay` property specifies the delay duration while switching to next navigation item, when `EnableAutoPlay` property is enabled.
+## Selected Dot Color
 
-N> The property value should be in milliseconds.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Rotator"
-             xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
-             x:Class="Rotator.Rotator">
-    <ContentPage.BindingContext>
-        <local:RotatorViewModel/>
-    </ContentPage.BindingContext>
-    <ContentPage.Content>
-        <syncfusion:SfRotator x:Name="rotator" 
-                        NavigationDelay="2000" 
-                        ItemsSource="{Binding ImageCollection}" 
-                        SelectedIndex="2"
-                        NavigationDirection="Horizontal"
-                        NavigationStripMode="Thumbnail" 
-                        BackgroundColor="#ececec"
-                        EnableAutoPlay="true"
-                        NavigationStripPosition="Bottom">
-            <syncfusion:SfRotator.ItemTemplate>
-                <DataTemplate>
-                    <Image  Source="{Binding Image}"/>
-                </DataTemplate>
-            </syncfusion:SfRotator.ItemTemplate>
-        </syncfusion:SfRotator>
-    </ContentPage.Content>
-</ContentPage>
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-using Syncfusion.SfRotator.XForms;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-
-namespace Rotator
-{
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Rotator : ContentPage
-	{
-		public Rotator()
-		{
-			InitializeComponent ();
-	        SfRotator rotator = new SfRotator();
-            var ImageCollection = new List<RotatorModel> {
-            new RotatorModel ("movie1.png"),
-            new RotatorModel ("movie2.png"),
-            new RotatorModel ("movie3.png"),
-            new RotatorModel ("movie4.png"),
-            new RotatorModel ("movie5.png")
-            };
-            var itemTemplate = new DataTemplate(() =>
-            {
-                var grid = new Grid();
-                var nameLabel = new Image();
-                nameLabel.SetBinding(Image.SourceProperty, "Image");
-                grid.Children.Add(nameLabel);
-                return grid;
-            });
-            rotator.ItemTemplate = itemTemplate;
-			rotator.EnableAutoPlay = true;
-			rotator.NavigationDelay = 2000;
-            rotator.ItemsSource = ImageCollection;
-            this.Content = rotator;
-        }
-	}
-    public class RotatorModel
-    {
-        public RotatorModel(string imageString)
-        {
-            Image = imageString;
-        }
-        private String _image;
-        public String Image
-        {
-            get { return _image; }
-            set { _image = value; }
-        }
-    }
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Looping Items
-
-The `EnableLooping` property specifies whether the items should navigate to first item once it reaches the last item and vice-versa.
+The [`SelectedDotColor`] property is used to customize the color of selected dots in SfRotator.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Rotator"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
              x:Class="Rotator.Rotator">
-    <ContentPage.BindingContext>
+     <ContentPage.BindingContext>
         <local:RotatorViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <syncfusion:SfRotator x:Name="rotator" 
-                        NavigationDelay="2000" 
-                        ItemsSource="{Binding ImageCollection}" 
-                        SelectedIndex="2"
-                        NavigationDirection="Horizontal"
-                        NavigationStripMode="Thumbnail" 
-                        BackgroundColor="#ececec"
-                        EnableAutoPlay="true"
-                        EnableLooping="true"
-                        NavigationStripPosition="Bottom">
+                              ItemsSource="{Binding ImageCollection}" 
+                              SelectedIndex="2"
+                              BackgroundColor="#ececec"
+                              NavigationStripPosition="Bottom"
+                              DotsBorderColor="Aqua" 
+                              SelectedDotColor="Blue">
             <syncfusion:SfRotator.ItemTemplate>
                 <DataTemplate>
                     <Image  Source="{Binding Image}"/>
@@ -245,10 +135,9 @@ The `EnableLooping` property specifies whether the items should navigate to firs
         </syncfusion:SfRotator>
     </ContentPage.Content>
 </ContentPage>
-	
-{% endhighlight %}
 
-{% highlight C# %}
+{% endhighlight %}
+{% highlight c# %}
 
 using Syncfusion.SfRotator.XForms;
 using System;
@@ -267,7 +156,7 @@ namespace Rotator
 		public Rotator()
 		{
 			InitializeComponent ();
-	        SfRotator rotator = new SfRotator();
+            SfRotator rotator = new SfRotator();
             var ImageCollection = new List<RotatorModel> {
             new RotatorModel ("movie1.png"),
             new RotatorModel ("movie2.png"),
@@ -284,9 +173,8 @@ namespace Rotator
                 return grid;
             });
             rotator.ItemTemplate = itemTemplate;
-			rotator.EnableAutoPlay = true;
-			rotator.NavigationDelay = 2000;
-			rotator.EnableLooping = true;
+            rotator.DotsBorderColor = Color.Aqua;
+            rotator.SelectedDotColor = Color.Blue;
             rotator.ItemsSource = ImageCollection;
             this.Content = rotator;
         }
@@ -307,31 +195,34 @@ namespace Rotator
 }
 
 {% endhighlight %}
-
 {% endtabs %}
 
-## Enable swiping
+![SfRotator with selected dot color](images/SelectedDotColor.png)
 
-To restrict the user interaction, the `EnableSwiping` property of `SfRotator` can be set to `false`.
+## Unselected Dot Color
+
+The [`UnselectedDotColor`] property is used to customize the color of unselected dots in SfRotator.
 
 {% tabs %}
-
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Rotator"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
              x:Class="Rotator.Rotator">
-    <ContentPage.BindingContext>
+     <ContentPage.BindingContext>
         <local:RotatorViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <syncfusion:SfRotator x:Name="rotator" 
-                        ItemsSource="{Binding ImageCollection}" 
-                        BackgroundColor="#ececec"
-                        EnableSwiping="false">
+                              ItemsSource="{Binding ImageCollection}" 
+                              SelectedIndex="2"
+                              BackgroundColor="#ececec"
+                              NavigationStripPosition="Bottom"
+                              DotsBorderColor="Aqua" 
+                              SelectedDotColor="Blue"
+                              UnselectedDotColor="Gray">
             <syncfusion:SfRotator.ItemTemplate>
                 <DataTemplate>
                     <Image  Source="{Binding Image}"/>
@@ -340,10 +231,9 @@ To restrict the user interaction, the `EnableSwiping` property of `SfRotator` ca
         </syncfusion:SfRotator>
     </ContentPage.Content>
 </ContentPage>
-	
-{% endhighlight %}
 
-{% highlight C# %}
+{% endhighlight %}
+{% highlight c# %}
 
 using Syncfusion.SfRotator.XForms;
 using System;
@@ -362,7 +252,7 @@ namespace Rotator
 		public Rotator()
 		{
 			InitializeComponent ();
-	        SfRotator rotator = new SfRotator();
+            SfRotator rotator = new SfRotator();
             var ImageCollection = new List<RotatorModel> {
             new RotatorModel ("movie1.png"),
             new RotatorModel ("movie2.png"),
@@ -379,7 +269,9 @@ namespace Rotator
                 return grid;
             });
             rotator.ItemTemplate = itemTemplate;
-			rotator.EnableSwiping = false;
+            rotator.DotsBorderColor = Color.Aqua;
+            rotator.SelectedDotColor = Color.Blue;
+            rotator.UnselectedDotColor = Color.Gray;
             rotator.ItemsSource = ImageCollection;
             this.Content = rotator;
         }
@@ -400,5 +292,6 @@ namespace Rotator
 }
 
 {% endhighlight %}
-
 {% endtabs %}
+
+![SfRotator with unselected dot color](images/UnselectedDotColor.png)

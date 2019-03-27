@@ -40,15 +40,11 @@ When the backdrop page contained within the [NavigationPage](https://docs.micros
 
 ![Hamburger icon](Header-Configuration-images/Hamburger.png)
 
-![Close icon](Header-Configuration-images/Close.png)
-
 ### Default icons in MasterDetailsPage
 
 When the backdrop page placed in the [MasterDetailPage](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.masterdetailpage?view=xamarin-forms), Down arrow icon and Up arrow icon will be used by default.
 
-![Down Arrow icon](Header-Configuration-images/DownArrrow.png)
-
-![Up Arrow icon](Header-Configuration-images/UpArrow.png)
+![Arrow icon](Header-Configuration-images/Arrow.png)
 
 ### Custom icons
 
@@ -93,6 +89,4 @@ namespace BackdropGettingStarted
 {% endtabs %}
 
  ![Open Custom icons](Header-Configuration-images/Settings.png)
- 
- ![Close Custom icons](Header-Configuration-images/Tick.png)
  

@@ -19,9 +19,9 @@ N> By default, the property value is false.
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:RangeSlider"
+             xmlns:local="clr-namespace:Rotator"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
-             x:Class="RangeSlider.Rotator">
+             x:Class="Rotator.Rotator">
     <ContentPage.Content>
         <syncfusion:SfRotator x:Name="rotator" 
                               BackgroundColor="#ececec"

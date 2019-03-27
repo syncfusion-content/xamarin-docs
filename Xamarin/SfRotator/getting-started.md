@@ -206,7 +206,7 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace Rotator
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Rotator : ContentPage
@@ -251,7 +251,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace Rotator
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Rotator : ContentPage
@@ -441,7 +441,7 @@ namespace Rotator
 
 {% endtabs %}
 
-![RotaorImages](images/RotaorImages.png)
+![RotatorImages](images/RotatorImages.png)
 
 I> Rotator's Images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively. 
 
@@ -459,7 +459,7 @@ SfRotator provides option to display the navigating items either in Thumbnail or
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:RangeSlider"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
-             x:Class="RangeSlider.Rotator">
+             x:Class="Rotator.Rotator">
     <ContentPage.BindingContext>
         <local:RotatorViewModel/>
     </ContentPage.BindingContext>
@@ -493,7 +493,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace Rotator
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Rotator : ContentPage
@@ -556,7 +556,7 @@ The placement position of navigation strip items such as Thumbnail or Dots can b
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:RangeSlider"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
-             x:Class="RangeSlider.Rotator">
+             x:Class="Rotator.Rotator">
     <ContentPage.BindingContext>
         <local:RotatorViewModel/>
     </ContentPage.BindingContext>
@@ -590,7 +590,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace RangeSlider
+namespace Rotator
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Rotator : ContentPage
@@ -643,4 +643,3 @@ namespace RangeSlider
 ![NavigationStripPosition](images/NavigationStripPosition.png)
 
 You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1493259513.zip)
-

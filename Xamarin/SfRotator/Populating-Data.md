@@ -206,13 +206,35 @@ namespace RangeSlider
 		public Rotator()
 		{
 			InitializeComponent ();
+
+             // Rotator Item as Label
+
             SfRotator rotator = new SfRotator();
-            List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
-            collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Xamarin.Forms.Button() { Text = "ItemContent1", TextColor = Color.White, BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
-            collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Label() { Text = "ItemContent2", BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
-            collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Image() { Source = "movie1.png", Aspect = Aspect.AspectFit } });
-            rotator.DataSource = collectionOfItems;
-            this.Content = rotator;
+            SfRotatorItem itemLabel = new SfRotatorItem();
+            List<SfRotatorItem> rotatorItem = new List<SfRotatorItem>();
+            Label label = new Label();
+            label.Text = "RotatorItem as Label";
+            label.BackgroundColor = Color.Aqua;
+            label.FontSize = 20;
+            label.VerticalTextAlignment = TextAlignment.Center;
+            label.HorizontalTextAlignment = TextAlignment.Center;
+            label.VerticalOptions = LayoutOptions.Center;
+            itemLabel.ItemContent = label;
+            rotatorItem.Add(itemLabel);
+
+            // Rotator Item as Image
+
+            SfRotatorItem itemImage = new SfRotatorItem();
+            Image image = new Image();
+            image.Source = ImageSource.FromFile("movie1.png");
+            image.Aspect = Aspect.AspectFit;
+            image.VerticalOptions = LayoutOptions.Center;
+            image.HeightRequest = 400;
+            image.WidthRequest = 400;
+            itemImage.ItemContent = image;
+            rotatorItem.Add(itemImage);
+            rotator.ItemsSource = rotatorItem;
+            this.Content = rotator; 
         }
 	}
 }	
@@ -221,7 +243,7 @@ namespace RangeSlider
 
 {% endtabs %}
 
-![ItemContent](images/ItemContent.png)
+![RotatorItem](images/RotatorItem.png)
 
 And also rotator provides a support to display only the Image data with `Image` property in SfRotatorItem class.
 
@@ -234,25 +256,29 @@ public partial class RotatorControlPage : ContentPage
 	public RotatorControlPage()
 	{
 		InitializeComponent();
-
 		SfRotator rotator = new SfRotator();
-
-		List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
-		collectionOfItems.Add(new SfRotatorItem() { Image = "movie1.png" });
-		collectionOfItems.Add(new SfRotatorItem() { Image = "movie2.png" });
-		collectionOfItems.Add(new SfRotatorItem() { Image = "movie3.png" });
-		collectionOfItems.Add(new SfRotatorItem() { Image = "movie4.png" });
-		collectionOfItems.Add(new SfRotatorItem() { Image = "movie5.png" });
-
-		rotator.ItemsSource = collectionOfItems;
-		this.Content = rotator;
-
+        StackLayout stackLayout = new StackLayout();
+		public Rotator()
+		{
+			InitializeComponent ();
+            stackLayout.HeightRequest = 300;
+            List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie1.png" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie2.png" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie3.png" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie4.png" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie5.png" });
+            rotator.DataSource = collectionOfItems;
+            stackLayout.Children.Add(rotator);
+            this.Content = stackLayout;
+        }
 	}
 }
-
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![Rotator Image](images/RotatorItems.png)
 
 Similarly every item can be created and customized in case of different Rotator item view is needed.

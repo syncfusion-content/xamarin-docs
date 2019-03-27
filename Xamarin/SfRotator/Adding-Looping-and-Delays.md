@@ -21,14 +21,89 @@ N> By default, the property value is set to false.
 
 {% highlight xaml %}
 
-	<syncfusion:SfRotator x:Name="rotator" EnableAutoPlay="true" />
-	
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Rotator"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             x:Class="Rotator.Rotator">
+    <ContentPage.BindingContext>
+        <local:RotatorViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <syncfusion:SfRotator x:Name="rotator" 
+                        ItemsSource="{Binding ImageCollection}" 
+                        SelectedIndex="2"
+                        NavigationDirection="Horizontal"
+                        NavigationStripMode="Thumbnail" 
+                        BackgroundColor="#ececec"
+                        EnableAutoPlay="true"
+                        NavigationStripPosition="Bottom">
+            <syncfusion:SfRotator.ItemTemplate>
+                <DataTemplate>
+                    <Image  Source="{Binding Image}"/>
+                </DataTemplate>
+            </syncfusion:SfRotator.ItemTemplate>
+        </syncfusion:SfRotator>
+    </ContentPage.Content>
+</ContentPage>
+
 {% endhighlight %}
 
 {% highlight C# %}
     
-	SfRotator rotator = new SfRotator();
-	rotator.EnableAutoPlay = true;
+using Syncfusion.SfRotator.XForms;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace Rotator
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Rotator : ContentPage
+	{
+		public Rotator()
+		{
+			InitializeComponent ();
+	        SfRotator rotator = new SfRotator();
+            var ImageCollection = new List<RotatorModel> {
+            new RotatorModel ("movie1.png"),
+            new RotatorModel ("movie2.png"),
+            new RotatorModel ("movie3.png"),
+            new RotatorModel ("movie4.png"),
+            new RotatorModel ("movie5.png")
+            };
+            var itemTemplate = new DataTemplate(() =>
+            {
+                var grid = new Grid();
+                var nameLabel = new Image();
+                nameLabel.SetBinding(Image.SourceProperty, "Image");
+                grid.Children.Add(nameLabel);
+                return grid;
+            });
+            rotator.ItemTemplate = itemTemplate;
+			rotator.EnableAutoPlay = true;
+            rotator.ItemsSource = ImageCollection;
+            this.Content = rotator;
+        }
+	}
+    public class RotatorModel
+    {
+        public RotatorModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private String _image;
+        public String Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -44,14 +119,91 @@ N> The property value should be in milliseconds.
 
 {% highlight xaml %}
 
-	<syncfusion:SfRotator x:Name="rotator" NavigationDelay="2000" />
+	<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Rotator"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             x:Class="Rotator.Rotator">
+    <ContentPage.BindingContext>
+        <local:RotatorViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <syncfusion:SfRotator x:Name="rotator" 
+                        NavigationDelay="2000" 
+                        ItemsSource="{Binding ImageCollection}" 
+                        SelectedIndex="2"
+                        NavigationDirection="Horizontal"
+                        NavigationStripMode="Thumbnail" 
+                        BackgroundColor="#ececec"
+                        EnableAutoPlay="true"
+                        NavigationStripPosition="Bottom">
+            <syncfusion:SfRotator.ItemTemplate>
+                <DataTemplate>
+                    <Image  Source="{Binding Image}"/>
+                </DataTemplate>
+            </syncfusion:SfRotator.ItemTemplate>
+        </syncfusion:SfRotator>
+    </ContentPage.Content>
+</ContentPage>
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfRotator rotator = new SfRotator();
-	rotator.NavigationDelay = 2000;
+using Syncfusion.SfRotator.XForms;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace Rotator
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Rotator : ContentPage
+	{
+		public Rotator()
+		{
+			InitializeComponent ();
+	        SfRotator rotator = new SfRotator();
+            var ImageCollection = new List<RotatorModel> {
+            new RotatorModel ("movie1.png"),
+            new RotatorModel ("movie2.png"),
+            new RotatorModel ("movie3.png"),
+            new RotatorModel ("movie4.png"),
+            new RotatorModel ("movie5.png")
+            };
+            var itemTemplate = new DataTemplate(() =>
+            {
+                var grid = new Grid();
+                var nameLabel = new Image();
+                nameLabel.SetBinding(Image.SourceProperty, "Image");
+                grid.Children.Add(nameLabel);
+                return grid;
+            });
+            rotator.ItemTemplate = itemTemplate;
+			rotator.EnableAutoPlay = true;
+			rotator.NavigationDelay = 2000;
+            rotator.ItemsSource = ImageCollection;
+            this.Content = rotator;
+        }
+	}
+    public class RotatorModel
+    {
+        public RotatorModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private String _image;
+        public String Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -65,18 +217,95 @@ The `EnableLooping` property specifies whether the items should navigate to firs
 
 {% highlight xaml %}
 
-	<syncfusion:SfRotator x:Name="rotator" EnableLooping="true" />
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Rotator"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             x:Class="Rotator.Rotator">
+    <ContentPage.BindingContext>
+        <local:RotatorViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <syncfusion:SfRotator x:Name="rotator" 
+                        NavigationDelay="2000" 
+                        ItemsSource="{Binding ImageCollection}" 
+                        SelectedIndex="2"
+                        NavigationDirection="Horizontal"
+                        NavigationStripMode="Thumbnail" 
+                        BackgroundColor="#ececec"
+                        EnableAutoPlay="true"
+                        EnableLooping="true"
+                        NavigationStripPosition="Bottom">
+            <syncfusion:SfRotator.ItemTemplate>
+                <DataTemplate>
+                    <Image  Source="{Binding Image}"/>
+                </DataTemplate>
+            </syncfusion:SfRotator.ItemTemplate>
+        </syncfusion:SfRotator>
+    </ContentPage.Content>
+</ContentPage>
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfRotator rotator = new SfRotator();
-	rotator.EnableLooping = true;
+using Syncfusion.SfRotator.XForms;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace Rotator
+{
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class Rotator : ContentPage
+	{
+		public Rotator()
+		{
+			InitializeComponent ();
+	        SfRotator rotator = new SfRotator();
+            var ImageCollection = new List<RotatorModel> {
+            new RotatorModel ("movie1.png"),
+            new RotatorModel ("movie2.png"),
+            new RotatorModel ("movie3.png"),
+            new RotatorModel ("movie4.png"),
+            new RotatorModel ("movie5.png")
+            };
+            var itemTemplate = new DataTemplate(() =>
+            {
+                var grid = new Grid();
+                var nameLabel = new Image();
+                nameLabel.SetBinding(Image.SourceProperty, "Image");
+                grid.Children.Add(nameLabel);
+                return grid;
+            });
+            rotator.ItemTemplate = itemTemplate;
+			rotator.EnableAutoPlay = true;
+			rotator.NavigationDelay = 2000;
+			rotator.EnableLooping = true;
+            rotator.ItemsSource = ImageCollection;
+            this.Content = rotator;
+        }
+	}
+    public class RotatorModel
+    {
+        public RotatorModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private String _image;
+        public String Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
-
-
-

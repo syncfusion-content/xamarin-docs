@@ -57,9 +57,9 @@ namespace Rotator
             List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
             collectionOfItems.Add(new SfRotatorItem() { Image = "movie1.png", ItemText = "Agile Software" });
             collectionOfItems.Add(new SfRotatorItem() { Image = "movie2.png", ItemText = "Delphi Succinctly" });
-            collectionOfItems.Add(new SfRotatorItem() { Image = "movie3.png", ItemText = "NancyFX Succintly" });
-            collectionOfItems.Add(new SfRotatorItem() { Image = "movie4.png", ItemText = "Rosyln Succintly" });
-            collectionOfItems.Add(new SfRotatorItem() { Image = "movie5.png", ItemText = "Spark Succintly" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie3.png", ItemText = "NancyFX Succinctly" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie4.png", ItemText = "Roslyn Succinctly" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie5.png", ItemText = "Spark Succinctly" });
             rotator.DataSource = collectionOfItems;
             rotator.IsTextVisible = true;
             rotator.DotPlacement = DotPlacement.OutSide;

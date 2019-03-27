@@ -20,10 +20,10 @@ Tab items can be configured in tab view through the `Items` property of `SfTabVi
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabViewAutomationSample.TabViewAutomationSample">
     <ContentPage.Content>
-        <tabView:SfTabView BackgroundColor="Aqua">
+        <tabView:SfTabView BackgroundColor="White">
                     <tabView:SfTabItem Title="Call">
                         <tabView:SfTabItem.Content>
-                            <Grid BackgroundColor="Red" x:Name="AllContactsGrid" />
+                            <Grid BackgroundColor="Gray" x:Name="AllContactsGrid" />
                         </tabView:SfTabItem.Content>
                     </tabView:SfTabItem>
                     <tabView:SfTabItem Title="Favorites">
@@ -58,7 +58,7 @@ namespace TabViewAutomationSample
 		{
 			InitializeComponent ();
             var tabView = new SfTabView();
-            var allContactsGrid = new Grid {BackgroundColor = Color.Red};
+            var allContactsGrid = new Grid {BackgroundColor = Color.Gray};
             var favoritesGrid = new Grid {BackgroundColor = Color.Green};
             var contactsGrid = new Grid {BackgroundColor = Color.Blue};
             var tabItems = new TabItemCollection
@@ -104,10 +104,10 @@ To share the header space to the tabs equally, set the number of tabs that can b
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabViewAutomationSample.TabViewAutomationSample">
     <ContentPage.Content>
-        <tabView:SfTabView BackgroundColor="Aqua" VisibleHeaderCount="3">
+        <tabView:SfTabView BackgroundColor="White" VisibleHeaderCount="3">
             <tabView:SfTabItem Title="Call">
                 <tabView:SfTabItem.Content>
-                    <Grid BackgroundColor="Red" x:Name="AllContactsGrid" />
+                    <Grid BackgroundColor="Gray" x:Name="AllContactsGrid" />
                 </tabView:SfTabItem.Content>
             </tabView:SfTabItem>
             <tabView:SfTabItem Title="Favorites">

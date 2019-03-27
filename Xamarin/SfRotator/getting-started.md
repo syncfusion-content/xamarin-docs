@@ -253,21 +253,22 @@ using Xamarin.Forms.Xaml;
 
 namespace Rotator
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Rotator : ContentPage
-	{
-		public Rotator()
-		{
-			InitializeComponent ();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Rotator : ContentPage
+    {
+        SfRotator rotator;
+        public Rotator()
+        {
+            InitializeComponent();
             SfRotator rotator = new SfRotator();
             List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
-            collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Xamarin.Forms.Button() { Text = "ItemContent1", TextColor = Color.White, BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
-            collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Label() { Text = "ItemContent2", BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
-            collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Image() { Source = "movie1.png", Aspect = Aspect.AspectFit } });
+            collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Xamarin.Forms.Button() { Text = "RotatorButton", TextColor = Color.White, BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
+            collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Label() { Text = "RotatorLabel", BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
+            collectionOfItems.Add(new SfRotatorItem() { ItemContent = new Image() { Source = "image1.png", Aspect = Aspect.AspectFit } });
             rotator.DataSource = collectionOfItems;
             this.Content = rotator;
         }
-	}
+    }
 }
 
 {% endhighlight %}
@@ -457,7 +458,7 @@ SfRotator provides option to display the navigating items either in Thumbnail or
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:RangeSlider"
+             xmlns:local="clr-namespace:Rotator"
              xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
              x:Class="Rotator.Rotator">
     <ContentPage.BindingContext>

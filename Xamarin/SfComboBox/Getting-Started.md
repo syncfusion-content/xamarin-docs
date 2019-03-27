@@ -195,30 +195,30 @@ Now, a list of string with resolution list is created and added to the SfComboBo
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
-			<combobox:SfComboBox.ComboBoxSource>
-				<ListCollection:List x:TypeArguments="x:String">
+            <combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
+                <combobox:SfComboBox.ComboBoxSource>
+                    <ListCollection:List x:TypeArguments="x:String">
                 	<x:String> 1920 x 1080 </x:String>
                 	<x:String> 1680 x 1050 </x:String>
                 	<x:String> 1600 x 900 </x:String>
                 	<x:String> 1440 x 900 </x:String>
                 	<x:String> 1400 x 1050 </x:String>
-					<x:String> 1366 x 768 </x:String>
+                       <x:String> 1366 x 768 </x:String>
                 	<x:String> 1360 x 768 </x:String>
                 	<x:String> 1280 x 1024 </x:String>
-					<x:String> 1280 x 960 </x:String>
+                       <x:String> 1280 x 960 </x:String>
                 	<x:String> 1280 x 720 </x:String>
                 	<x:String> 854 x 480 </x:String>
-					<x:String> 800 x 480 </x:String>
+                       <x:String> 800 x 480 </x:String>
                 	<x:String> 480 X 640 </x:String>
                 	<x:String> 480 x 320 </x:String>
-					<x:String> 432 x 240 </x:String>
-					<x:String> 360 X 640 </x:String>
-					<x:String> 320 x 240 </x:String>
+                       <x:String> 432 x 240 </x:String>
+                       <x:String> 360 X 640 </x:String>
+                       <x:String> 320 x 240 </x:String>
             	</ListCollection:List>
-        	</combobox:SfComboBox.ComboBoxSource>
-	 	</combobox:SfComboBox>              
-	</StackLayout> 
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>              
+    </StackLayout> 
 </ContentPage>
 	
 {% endhighlight %}
@@ -280,28 +280,28 @@ Non-editable mode prevents users from typing and allows them to select items fro
 {% highlight xaml %}
 
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="false">
-			<combobox:SfComboBox.ComboBoxSource>
-				<ListCollection:List x:TypeArguments="x:String">
-                	<x:String> 1920 x 1080 </x:String>
-                	<x:String> 1680 x 1050 </x:String>
-                	<x:String> 1600 x 900 </x:String>
-                	<x:String> 1440 x 900 </x:String>
-                	<x:String> 1400 x 1050 </x:String>
-					<x:String> 1366 x 768 </x:String>
-                	<x:String> 1360 x 768 </x:String>
-                	<x:String> 1280 x 1024 </x:String>
-					<x:String> 1280 x 960 </x:String>
-                	<x:String> 1280 x 720 </x:String>
-                	<x:String> 854 x 480 </x:String>
-					<x:String> 800 x 480 </x:String>
-                	<x:String> 480 X 640 </x:String>
-                	<x:String> 480 x 320 </x:String>
-					<x:String> 432 x 240 </x:String>
-					<x:String> 360 X 640 </x:String>
-					<x:String> 320 x 240 </x:String>
-            	</ListCollection:List>
-        	</combobox:SfComboBox.ComboBoxSource>
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="false">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String> 1920 x 1080 </x:String>
+                    <x:String> 1680 x 1050 </x:String>
+                    <x:String> 1600 x 900 </x:String>
+                    <x:String> 1440 x 900 </x:String>
+                    <x:String> 1400 x 1050 </x:String>
+                    <x:String> 1366 x 768 </x:String>
+                    <x:String> 1360 x 768 </x:String>
+                    <x:String> 1280 x 1024 </x:String>
+                    <x:String> 1280 x 960 </x:String>
+                    <x:String> 1280 x 720 </x:String>
+                    <x:String> 854 x 480 </x:String>
+                    <x:String> 800 x 480 </x:String>
+                    <x:String> 480 X 640 </x:String>
+                    <x:String> 480 x 320 </x:String>
+                    <x:String> 432 x 240 </x:String>
+                    <x:String> 360 X 640 </x:String>
+                    <x:String> 320 x 240 </x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
 	 	</combobox:SfComboBox>              
 	</StackLayout> 
 	
@@ -359,29 +359,29 @@ In editable mode, the combo box allows users to edit in the text box that shows 
 {% highlight xaml %}
 
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="true">
-			<combobox:SfComboBox.ComboBoxSource>
-				<ListCollection:List x:TypeArguments="x:String">
-                	<x:String> 1920 x 1080 </x:String>
-                	<x:String> 1680 x 1050 </x:String>
-                	<x:String> 1600 x 900 </x:String>
-                	<x:String> 1440 x 900 </x:String>
-                	<x:String> 1400 x 1050 </x:String>
-					<x:String> 1366 x 768 </x:String>
-                	<x:String> 1360 x 768 </x:String>
-                	<x:String> 1280 x 1024 </x:String>
-					<x:String> 1280 x 960 </x:String>
-                	<x:String> 1280 x 720 </x:String>
-                	<x:String> 854 x 480 </x:String>
-					<x:String> 800 x 480 </x:String>
-                	<x:String> 480 X 640 </x:String>
-                	<x:String> 480 x 320 </x:String>
-					<x:String> 432 x 240 </x:String>
-					<x:String> 360 X 640 </x:String>
-					<x:String> 320 x 240 </x:String>
-            	</ListCollection:List>
-        	</combobox:SfComboBox.ComboBoxSource>
-	 	</combobox:SfComboBox>              
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="true">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String> 1920 x 1080 </x:String>
+                    <x:String> 1680 x 1050 </x:String>
+                    <x:String> 1600 x 900 </x:String>
+                    <x:String> 1440 x 900 </x:String>
+                    <x:String> 1400 x 1050 </x:String>
+                    <x:String> 1366 x 768 </x:String>
+                    <x:String> 1360 x 768 </x:String>
+                    <x:String> 1280 x 1024 </x:String>
+                    <x:String> 1280 x 960 </x:String>
+                    <x:String> 1280 x 720 </x:String>
+                    <x:String> 854 x 480 </x:String>
+                    <x:String> 800 x 480 </x:String>
+                    <x:String> 480 X 640 </x:String>
+                    <x:String> 480 x 320 </x:String>
+                    <x:String> 432 x 240 </x:String>
+                    <x:String> 360 X 640 </x:String>
+                    <x:String> 320 x 240 </x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>              
 	</StackLayout> 
 	
 {% endhighlight %}
@@ -437,29 +437,29 @@ When selecting an item from the drop-down list, the selection changed event will
 {% highlight xaml %}
 
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="true" SelectionChanged="Handle_SelectionChanged">
-			<combobox:SfComboBox.ComboBoxSource>
-				<ListCollection:List x:TypeArguments="x:String">
-                	<x:String> 1920 x 1080 </x:String>
-                	<x:String> 1680 x 1050 </x:String>
-                	<x:String> 1600 x 900 </x:String>
-                	<x:String> 1440 x 900 </x:String>
-                	<x:String> 1400 x 1050 </x:String>
-					<x:String> 1366 x 768 </x:String>
-                	<x:String> 1360 x 768 </x:String>
-                	<x:String> 1280 x 1024 </x:String>
-					<x:String> 1280 x 960 </x:String>
-                	<x:String> 1280 x 720 </x:String>
-                	<x:String> 854 x 480 </x:String>
-					<x:String> 800 x 480 </x:String>
-                	<x:String> 480 X 640 </x:String>
-                	<x:String> 480 x 320 </x:String>
-					<x:String> 432 x 240 </x:String>
-					<x:String> 360 X 640 </x:String>
-					<x:String> 320 x 240 </x:String>
-            	</ListCollection:List>
-        	</combobox:SfComboBox.ComboBoxSource>
-	 	</combobox:SfComboBox>              
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="true" SelectionChanged="Handle_SelectionChanged">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String> 1920 x 1080 </x:String>
+                    <x:String> 1680 x 1050 </x:String>
+                    <x:String> 1600 x 900 </x:String>
+                    <x:String> 1440 x 900 </x:String>
+                    <x:String> 1400 x 1050 </x:String>
+                    <x:String> 1366 x 768 </x:String>
+                    <x:String> 1360 x 768 </x:String>
+                    <x:String> 1280 x 1024 </x:String>
+                    <x:String> 1280 x 960 </x:String>
+                    <x:String> 1280 x 720 </x:String>
+                    <x:String> 854 x 480 </x:String>
+                    <x:String> 800 x 480 </x:String>
+                    <x:String> 480 X 640 </x:String>
+                    <x:String> 480 x 320 </x:String>
+                    <x:String> 432 x 240 </x:String>
+                    <x:String> 360 X 640 </x:String>
+                    <x:String> 320 x 240 </x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>              
 	</StackLayout> 
 	
 {% endhighlight %}

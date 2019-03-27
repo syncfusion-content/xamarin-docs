@@ -54,9 +54,9 @@ The following code example shows the way to retrieve SelectedIndex and display i
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="Handle_SelectionChanged">
-		<combobox:SfComboBox.ComboBoxSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="Handle_SelectionChanged">
+        <combobox:SfComboBox.ComboBoxSource>
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -64,10 +64,10 @@ The following code example shows the way to retrieve SelectedIndex and display i
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.ComboBoxSource>
-		<combobox:SfComboBox.Behaviors>
+        <combobox:SfComboBox.Behaviors>
             <local:CustomBehavior/>
         </combobox:SfComboBox.Behaviors>
-	 </combobox:SfComboBox>                                                 
+    </combobox:SfComboBox>                                                 
 </StackLayout> 
 
 {% endhighlight %}
@@ -143,9 +143,9 @@ The following code example shows the way to retrieve SelectedValue and display i
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="Handle_SelectionChanged">
-		<combobox:SfComboBox.ComboBoxSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="Handle_SelectionChanged">
+        <combobox:SfComboBox.ComboBoxSource>
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -153,10 +153,10 @@ The following code example shows the way to retrieve SelectedValue and display i
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.ComboBoxSource>
-		<combobox:SfComboBox.Behaviors>
+        <combobox:SfComboBox.Behaviors>
             <local:CustomBehavior/>
         </combobox:SfComboBox.Behaviors>
-	 </combobox:SfComboBox>                                             
+    </combobox:SfComboBox>                                             
 </StackLayout> 
 
 {% endhighlight %}
@@ -200,9 +200,9 @@ The following code example shows to set a value.
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectedItem="Ukraine">
-		<combobox:SfComboBox.ComboBoxSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectedItem="Ukraine">
+        <combobox:SfComboBox.ComboBoxSource>
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -210,7 +210,7 @@ The following code example shows to set a value.
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.ComboBoxSource>
-	 </combobox:SfComboBox>                                             
+    </combobox:SfComboBox>                                             
 </StackLayout> 
 
 {% endhighlight %}
@@ -304,16 +304,16 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
-	<ContentPage.BindingContext>
-    	<local:EmployeeViewModel/>
- 	</ContentPage.BindingContext>
-	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="Handle_SelectionChanged" DataSource="{Binding EmployeeCollection}">
-		<combobox:SfComboBox.Behaviors>
-            <local:CustomBehavior/>
-        </combobox:SfComboBox.Behaviors>
-		</combobox:SfComboBox>
-	</StackLayout> 
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="Handle_SelectionChanged" DataSource="{Binding EmployeeCollection}">
+            <combobox:SfComboBox.Behaviors>
+                <local:CustomBehavior/>
+            </combobox:SfComboBox.Behaviors>
+        </combobox:SfComboBox>
+    </StackLayout> 
 </ContentPage>
 
 {% endhighlight %}

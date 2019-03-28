@@ -19,7 +19,7 @@ You can add Cards reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add cards to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Cards](https://www.nuget.org/packages/Syncfusion.Xamarin.Cards/), and then install it.
 
-![Adding Xamarin.Forms Cards reference](Getting-Started_images/img3.png)
+![Adding Xamarin.Forms Cards reference](getting-started_images/img3.png)
 
 N> Install the same version of the cards NuGet in all the projects.
 

@@ -71,7 +71,7 @@ Nested Tab items can be configured in tab view through the `Items` property of `
                                                                        FontIconFontSize="22"
                                                                        FontIconFontFamily="{Binding Converter={StaticResource NestedTabFont}}">
                                                         <tabview:SfTabItem.Content>
-                                                                              <Grid BackgroundColor="Green" x:Name="FavouritesGrid" />
+                                                                              <Grid BackgroundColor="Gray" x:Name="FavouritesGrid" />
                                                         </tabview:SfTabItem.Content>
                                                     </tabview:SfTabItem>
                                                     <tabview:SfTabItem Title="Received Calls"

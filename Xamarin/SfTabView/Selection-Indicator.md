@@ -30,7 +30,7 @@ The selection indicator can be positioned below the title or above the title, or
                            OverflowMode="DropDown">
 			<tabView:SfTabView.SelectionIndicatorSettings>
                 <tabView:SelectionIndicatorSettings
-                    Color="Red" 
+                    Color="Aqua" 
                     Position="Top" 
                     StrokeThickness="10"/>
             </tabView:SfTabView.SelectionIndicatorSettings>

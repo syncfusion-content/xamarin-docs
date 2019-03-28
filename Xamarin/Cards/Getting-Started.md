@@ -122,7 +122,7 @@ To deploy the cards in `Release` mode, you need to initialize the cards assembli
         if (rootFrame == null) 
         { 
             List<Assembly> assembliesToInclude = new List<Assembly>();
-            assembliesToInclude.Add(typeof(Syncfusion.XForms.iOS.Cards.SfCardViewRenderer).GetTypeInfo().Assembly);
+            assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Cards.SfCardViewRenderer).GetTypeInfo().Assembly);
             Xamarin.Forms.Forms.Init(e, assembliesToInclude);
         } 
     … 
@@ -143,7 +143,7 @@ Import the [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 
 {% highlight xaml %} 
 
-    xmlns:cards="clr-namespace:Syncfusion.XForms.XForms;assembly=Syncfusion.Cards.XForms" 
+    xmlns:cards="clr-namespace:Syncfusion.XForms.Cards;assembly=Syncfusion.Cards.XForms" 
 
 {% endhighlight %}
 
@@ -157,7 +157,7 @@ Import the [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 
 ### SfCardView
 
-Initialize an card view with content as shown below,
+Initialize an card view with [`Content`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~Content.html) as shown below,
 
 {% tabs %} 
 
@@ -190,7 +190,7 @@ Run the project and check if you get following output to make sure you have conf
 
 ## Indicator customization
 
-Indicators are used to indicate the state or level of something.
+Indicator can be added in any direction which can be used to denote the state based on the content of the [`SfCardView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~SfCardView.html).
 
 {% tabs %} 
 
@@ -215,7 +215,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/cards/indicator) to learn 
 
 ## SwipeToDismiss
 
-SwipeToDismiss is used to enable or disable swiping in SfCardView.
+[`SwipeToDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~SwipeToDismiss.html) is used to enable or disable swiping in SfCardView.
 
 {% tabs %} 
 
@@ -283,7 +283,7 @@ Initialize an card layout with card view as shown below,
 
 ## ShowSwipedCard
 
-ShowSwipedCard can be enabled to show swiped cards at the edge of card layout.
+[`ShowSwipedCard`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~ShowSwipedCard.html) can be used enabled to show swiped cards at the edge of card layout.
 
 {% tabs %} 
 
@@ -298,54 +298,6 @@ ShowSwipedCard can be enabled to show swiped cards at the edge of card layout.
 
     SfCardLayout cardLayout = new SfCardLayout();
     cardLayout.ShowSwipedCard = true;
-
-    this.Content = cardLayout;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## VisibleCardIndex
-
-VisibleCardIndex is used when the given index of the card to be displayed in front of the card layout.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-    <cards:SfCardLayout VisibleCardIndex="1">
-    </cards:SfCardLayout>
- 
-{% endhighlight %}
-
-{% highlight C# %}
-
-    SfCardLayout cardLayout = new SfCardLayout();
-    cardLayout.VisibleCardIndex = 1;
-
-    this.Content = cardLayout;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## SwipeDirection
-
-SwipeDirection property indicates the swiping direction(Left or Right). 
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-    <cards:SfCardLayout SwipeDirection="Right">
-    </cards:SfCardLayout>
- 
-{% endhighlight %}
-
-{% highlight C# %}
-
-    SfCardLayout cardLayout = new SfCardLayout();
-    cardLayout.SwipeDirection = CardSwipeDirection.Right;
 
     this.Content = cardLayout;
 

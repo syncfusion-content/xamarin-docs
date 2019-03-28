@@ -9,7 +9,7 @@ documentation: ug
 
 # TreeMap Elements
 
-TreeMap contains various elements such as,
+The TreeMap contains the following elements:
 
 * Legend
 * Headers
@@ -17,17 +17,17 @@ TreeMap contains various elements such as,
 
 ## Legend
 
-You can set the color value of **leaf nodes** using `LegendSettings`. This legend is appropriate only for the **TreeMap** whose leaf nodes are colored using `RangeColorMapping`.
+You can set the color value of **leaf nodes** using the `LegendSettings` property. This legend is appropriate only for the **TreeMap** whose leaf nodes are colored using `RangeColorMapping`.
 
-You can set `ShowLegend` property value to **“True”** to enable or disable legend visibility.
+The visibility of legend can be enabled by setting the `ShowLegend` property to **“True”**.
 
-### TreeMap Legend
+### TreeMap legend
 
-You can decide the size of the legend icons by setting `IconSize` property of the `LegendSettings` property avail in **TreeMap**.
+You can set the size of the legend icons by setting the `IconSize` property of the `LegendSettings` property in **TreeMap**.
 
-### Label for Legend
+### Label for legend
 
-You can customize the labels of the **legend item** using `legendLabel` property of `RangeColorMapping`. 
+You can customize the labels of the **legend items** using the `LegendLabel` property of `RangeColorMapping`. 
 
 {% highlight c# %}
 
@@ -40,13 +40,13 @@ You can customize the labels of the **legend item** using `legendLabel` property
 
 {% endhighlight %}
 
-![TreeMap Legend](Getting-Started_images/Legend.jpg)
+![Customizing the appearance of legend in Xamarin.Forms TreeMap](Getting-Started_images/Legend.jpg)
 
 
 
 ## Header
 
-You can set headers for each level by setting the `ShowHeader` property of the each **TreeMap** levels. The `HeaderHeight` property helps to set the height of the header and GroupPath value determines the header value. 
+You can set headers for each level by setting the `ShowHeader` property of each **TreeMap** level. The `HeaderHeight` property helps you set the height of the header and the `GroupPath` value determines the header value. 
 
 {% highlight c# %}
 
@@ -64,9 +64,9 @@ You can set headers for each level by setting the `ShowHeader` property of the e
 {% endhighlight %} 
 
 
-![TreeMap Header](Getting-Started_images/Header.jpg)
+![Header customization in Xamarin.Forms TreeMap](Getting-Started_images/Header.jpg)
 
-## Data Label
+## Data labels
 
 The `ShowLabels` property is used to enable or disable the labels in leaf nodes. The `LabelPath` property allows you to set values for labels.
 
@@ -90,14 +90,14 @@ The `ShowLabels` property is used to enable or disable the labels in leaf nodes.
 {% endtabs %} 
 
 
-![Treemap Datalabel](Getting-Started_images/ShowLabel.jpg)
+![Providing Visibility for data labels in Xamarin.Forms TreeMap](Getting-Started_images/ShowLabel.jpg)
 
-### To avoid overlap in data labels
+### Avoid overlap in data labels
 
-The `OverflowMode` property aligns the labels within the leaf node bounds by using `Trim`, `Wrap`, and `Hide` options. The default value of the `OverflowMode` property is Trim.
+The `OverflowMode` property aligns data labels within leaf node boundaries using the `Trim`, `Wrap`, and `Hide` options. The default value of the `OverflowMode` property is Trim.
 
 #### Trim
-Data labels can be trim inside the leaf node bounds using property OverflowMode `Trim` option.
+You can trim the data labels inside the leaf node boundaries using the `Trim` option.
 
 {% tabs %}
 
@@ -117,10 +117,10 @@ Data labels can be trim inside the leaf node bounds using property OverflowMode 
 {% endhighlight %}
 {% endtabs %}
 
-![TreeMap DataLabel Trim](Getting-Started_images/LabelTrim.jpg)
+![Data label trim support in Xamarin.Forms TreeMap](Getting-Started_images/LabelTrim.jpg)
 
 #### Wrap
-Data labels can be wrap inside the leaf node bounds using property OverflowMode `Wrap` option.
+You can wrap the data labels inside the leaf node boundaries using the `Wrap` option.
 
 {% tabs %}
 
@@ -140,10 +140,10 @@ Data labels can be wrap inside the leaf node bounds using property OverflowMode 
 {% endhighlight %}
 {% endtabs %}
 
-![TreeMap DataLabel Wrap](Getting-Started_images/LabelWrap.jpg)
+![Data label wrap support in Xamarin.Forms TreeMap](Getting-Started_images/LabelWrap.jpg)
 
 #### Hide
-Data labels can be hide inside the leaf node bounds using property OverflowMode `Hide` option. 
+You can hide the data labels inside the leaf node boundaries using the `Hide` option. 
 
 {% tabs %}
 
@@ -163,11 +163,11 @@ Data labels can be hide inside the leaf node bounds using property OverflowMode 
 {% endhighlight %}
 {% endtabs %}
 
-![TreeMap Datalabel Hide](Getting-Started_images/LabelHide.jpg)
+![Data label hide support in Xamarin.Forms TreeMap](Getting-Started_images/LabelHide.jpg)
 
 ### Customize data labels
 
-The Data Label can be customized by using the `LabelStyle` property in LeafItemSettings. The font color, size, attribute and family can be customized using the `FontSize, FontAttributes, FontFamily and Color` properties.
+You can customize the data labels using the `LabelStyle` property of LeafItemSettings. The font color, size, attribute, and family can be customized using the `FontSize, FontAttributes, FontFamily, and Color` properties.
 
 {% tabs %}
 
@@ -198,4 +198,5 @@ The Data Label can be customized by using the `LabelStyle` property in LeafItemS
 
 {% endtabs %}
 
-![TreeMap customized DataLabel](Getting-Started_images/LabelCustomize.jpg)
+![Customizing the data labels support in Xamain.Forms TreeMap ](Getting-Started_images/LabelCustomize.jpg)
+

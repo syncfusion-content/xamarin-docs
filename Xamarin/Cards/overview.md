@@ -1,4 +1,4 @@
----
+﻿---
 platform: Xamarin.Forms
 control: Cards
 ---
@@ -14,5 +14,5 @@ The new Cards control allows you to create a dismissible card, or a stack of car
 * Customize the background, border width, corner radii, border color, and indicator.
 * Elevation support in iOS and Android platforms.
 
-![Xamarin.Forms Cards](getting-started_images/xamarin-forms-cards.gif)
+![Xamarin.Forms Cards](getting-started_images/xamarincards.gif)
 

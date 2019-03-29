@@ -369,7 +369,7 @@ N> Selection Indicator support has enhanced only on iOS and Android platform.
 {% tabs %}
 {% highlight xaml %}
 
- <autocomplete:SfAutoComplete HeightRequest="40" ShowSuggestionsOnFocus="true" IsSelectedItemsVisibleInDropDown="true" IndicatorText="A" IndicatorTextSize="sample.ttf" IndicatorTextColor="Red" EnableSelectionIndicator="true" MultiSelectMode="Token"  x:Name="autoComplete" DataSource="{Binding EmployeeCollection}"/>
+ <autocomplete:SfAutoComplete HeightRequest="40" ShowSuggestionsOnFocus="true" IsSelectedItemsVisibleInDropDown="true" IndicatorText="A"  IndicatorTextSize="15" IndicatorFontFamily="sample.ttf" IndicatorTextColor="Red" EnableSelectionIndicator="true" MultiSelectMode="Token"  x:Name="autoComplete" DataSource="{Binding EmployeeCollection}"/>
        
 {% endhighlight %}
 
@@ -379,7 +379,8 @@ autoComplete.MultiSelectMode=MultiSelectMode.Token;
 autoComplete.ShowSuggestionsOnFocus=true;
 autoComplete.IsSelectedItemsVisibleInDropDown=true;
 autoComplete.IndicatorText= "A";
-autoComplete.IndicatorTextSize= "sample.ttf";
+autoComplete.IndicatorTextSize= "15";
+autoComplete.IndicatorFontFamily= "sample.ttf";
 autoComplete.IndicatorTextColor = Color.Red;
 autoComplete.EnableSelectionIndicator= true;
 

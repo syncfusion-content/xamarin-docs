@@ -233,6 +233,20 @@ Enum and List type property.
 {{'[SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html)'| markdownify }}
 </td>
 </tr>
+<tr>
+<td>
+MaskedEditText
+</td>
+<td>
+{{'[DataFormMaskedEditTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormMaskedEditTextEditor.html)'| markdownify }}
+</td>
+<td>
+The property with [DataType(DataType.PhoneNumber)] attribute.
+</td>
+<td>
+{{'[SfMaskedEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit_namespace.html)'| markdownify }}
+</td>
+</tr>
 </table>
 
 ## Text editor
@@ -1142,3 +1156,156 @@ public class SourceProviderExt : SourceProvider
 {% endtabs %}
 
 ![Loading radio group editor in Xamarin.Forms DataForm](SfDataForm_images/RadioGroupEditor.jpg)
+
+## MaskedEditText editor 
+
+In the MaskedEditText editor, the [SfMaskedEdit](https://help.syncfusion.com/xamarin/sfmaskededit/overview) control is loaded.
+
+{% tabs %}
+{% highlight c# %}
+[Display(Name = "Contact Number")] 
+[DataType(DataType.PhoneNumber)] 
+public string ContactNumber { get; set; }
+{% endhighlight %}
+{% endtabs %}
+
+### Setting the masked editor as int and double type 
+
+By default, the SfMaskedEdit includes prompt and literals along with your input value. The special characters are not allowed in int and double type, so you need to exclude prompt and literals using the [ValueMaskFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~ValueMaskFormat.html) property in DataFormMaskedEditTextItem.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem; 
+…  
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e) 
+{ 
+    if (e.DataFormItem != null && e.DataFormItem.Name == "ContactNumber") 
+    { 
+        (e.DataFormItem as DataFormMaskedEditTextItem).ValueMaskFormat = Syncfusion.XForms.MaskedEdit.MaskFormat.ExcludePromptAndLiterals; 
+        } 
+} 
+{% endhighlight %}
+{% endtabs %}
+
+### Localizing special characters 
+
+The special symbols such as currency, date separator, decimal separator, and other symbols can be localized using the [CultureInfo](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~CultureInfo.html) property of DataFormMaskedEditTextItem. 
+
+{% tabs %}
+{% highlight c# %}
+(e.DataFormItem as DataFormMaskedEditTextItem).CultureInfo = new CultureInfo("fr-FR");  
+{% endhighlight %}
+{% endtabs %}
+
+### Customizing the clipboard text
+
+By default, when you perform cut or copy operation, the clipboard text will be included with prompt and literals along with your input value. You can modify this and allow the clipboard to hold the value with or without prompt and literals by setting the [CutCopyMaskFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~CutCopyMaskFormat.html) property of the DataFormMaskedEditTextItem. 
+
+{% tabs %}
+{% highlight c# %}
+(e.DataFormItem as DataFormMaskedEditTextItem).CutCopyMaskFormat = Syncfusion.XForms.MaskedEdit.MaskFormat.ExcludePromptAndLiterals; 
+{% endhighlight %}
+{% endtabs %}
+
+### Mask and mask types 
+
+The mask and mask type of input can be customized using the [Mask](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~Mask.html) and [MaskType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~MaskType.html) properties of DataFormMaskedEditTextItem. Refer to this [link](https://help.syncfusion.com/xamarin/sfmaskededit/masktype.html) to know more about the mask characters and mask types available in the masked editor. 
+
+{% tabs %}
+{% highlight c# %}
+(e.DataFormItem as DataFormMaskedEditTextItem).Mask = @"+1\(\d{3}\)\d{6}"; 
+(e.DataFormItem as DataFormMaskedEditTextItem).MaskType = Syncfusion.XForms.MaskedEdit.MaskType.RegEx; 
+{% endhighlight %}
+{% endtabs %}
+
+###  Customizing prompt character
+
+The custom prompt character can be set using the [PromptChar](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~PromptChar.html) property of DataFormMaskedEditTextItem.  
+
+{% tabs %}
+{% highlight c# %}
+(e.DataFormItem as DataFormMaskedEditTextItem).PromptChar = '#'; 
+{% endhighlight %}
+{% endtabs %}
+
+![Loading masked edit text editor in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-maskededittexteditor.png)
+
+## Custom editor
+
+The custom editor can be added to DataForm by overriding the `DataFormEditor` class for business models. You can create custom editor using [Views](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/views) and [Layouts](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/layouts). 
+
+To add custom editor in DataForm, register the editor with custom registered type for the required property using `RegisterEditor` method. You can also customize editor settings by using specific override methods available in `DataFormEditor`. 
+
+* Creating custom editor using views. 
+* Creating custom editor using layouts.
+
+### Creating custom editor using views 
+
+Views such as labels, buttons, and sliders can be loaded to custom editor. Here, entry is loaded as custom editor for `ContactName` property. 
+
+{% tabs %}
+{% highlight c# %}
+public class CustomTextEditor : DataFormEditor<Entry> 
+{ 
+    public CustomTextEditor(SfDataForm dataForm) : base(dataForm) 
+    { 
+    } 
+
+    protected override Entry OnCreateEditorView(DataFormItem dataFormItem) 
+    { 
+        return new Entry(); 
+    } 
+} 
+… 
+
+dataForm.RegisterEditor("CustomTextEditor", new CustomTextEditor(dataForm)); 
+dataForm.RegisterEditor("ContactName", "CustomTextEditor"); 
+{% endhighlight %}
+{% endtabs %}
+
+### Creating custom editor using layouts 
+
+Layouts such as Grid, StackLayout, ContentView, and ScrollView can be added as custom editor. Here, the label and image view in Grid are loaded as custom editors for `ContactName` property. 
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?> 
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+                        x:Class="DataForm_Forms.TextEditor"> 
+    <ContentPage.Content> 
+        <Grid> 
+            <Grid.ColumnDefinitions> 
+                <ColumnDefinition Width="0.05*"/> 
+                <ColumnDefinition Width="Auto"/> 
+            </Grid.ColumnDefinitions> 
+            <Image Source="LabelContactName.png" /> 
+            <Editor Grid.Column="1"/> 
+        </Grid> 
+    </ContentPage.Content> 
+</ContentView> 
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+public class CustomTextEditor : DataFormEditor<TextEditor> 
+{ 
+    public CustomTextEditor(SfDataForm dataForm) : base(dataForm) 
+    { 
+    } 
+
+    protected override TextEditor OnCreateEditorView(DataFormItem dataFormItem) 
+    { 
+        return new TextEditor(); 
+    } 
+} 
+… 
+
+dataForm.RegisterEditor("CustomTextEditor", new CustomTextEditor(dataForm)); 
+dataForm.RegisterEditor("ContactName", "CustomTextEditor"); 
+{% endhighlight %}
+{% endtabs %}
+
+You should manually commit and validate the editor value of custom DataFormItem. Refer to this [link](https://help.syncfusion.com/xamarin/sfdataform/editing#creating-new-custom-editor) to know more about custom editor. 

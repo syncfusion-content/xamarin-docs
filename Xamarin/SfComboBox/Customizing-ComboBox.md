@@ -1,7 +1,7 @@
 ---
 layout : post
-title : MinimumPrefixCharacter for Syncfusion ComboBox Control in Xamarin.Forms
-description : Learn how to set the MinimumPrefixCharacter in ComboBox
+title : Customizations in ComboBox
+description : This section describes about the visual customization of entry, suggestion box and suggestion items in the ComboBox
 platform : Xamarin
 control : SfComboBox
 documentation : ug
@@ -13,27 +13,27 @@ The combo box control  provides user friendly customizing options for both entry
 
 ## Customizing the entry
 
-The `TextColor`, `TextSize`, `FontAttributes`, `FontFamily` and `BorderColor` properties are used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
+The [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~TextColor.html), [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~TextSize.html), [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FontAttributes.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FontFamily.html) and [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~BorderColor.html) properties are used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
 
 ### Text color
 
 The combo box control provides the user to customize the foreground color of the text inside the entry part.
 
-## Text size
+### Text size
 
-The combo box control provides the user to customize the text size of the text inside the entry part using `TextSize` property.
+The combo box control provides the user to customize the text size of the text inside the entry part using [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~TextSize.html) property.
 
-## Font attributes
+### Font attributes
 
-The combo box control provides the user to customize the font attribute of the text inside the entry part using `FontAttributes` property.
+The combo box control provides the user to customize the font attribute of the text inside the entry part using [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FontAttributes.html) property.
 
-## Font family
+### Font family
 
-The combo box control provides the user to customize the font family of the text inside the entry part using `FontFamily` property.
+The combo box control provides the user to customize the font family of the text inside the entry part using [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FontFamily.html) property.
 
-## Border color
+### Border color
 
-The combo box control provides the user to customize the border color of the entry box using `BorderColor` property.
+The combo box control provides the user to customize the border color of the entry box using [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~BorderColor.html) property.
 
 {% tabs %}
 
@@ -71,7 +71,165 @@ this.Content = stackLayout;
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customizing-entry.png)
+![Customizing entry](images/Customizing-ComboBox/customizing-entry.png)
+
+### Changing delete button color
+
+The [`ClearButtonColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~ClearButtonColor.html) property is used to modify the delete button color. The following code example shows changing delete button color. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="True" ClearButtonColor="Red">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
+
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.ClearButtonColor = Color.Yellow;
+    comboBox.IsEditableMode = true;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Delete button color](images/Customizing-ComboBox/delete-button-color.png)
+
+### Changing delete button visibility
+
+The [`ShowClearButton`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~ShowClearButton.html) property is used to modify the visibility of delete button. The following code example shows changing delete button visibility.
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="True" IsEditableMode="True" ShowClearButton="False">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
+
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.ShowClearButton = false;
+    comboBox.IsEditableMode = true;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Delete button visibility](images/Customizing-ComboBox/delete-button-visibility.png)
+
+### Changing border visibility
+
+The [`ShowBorder`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~ShowBorder.html) property is used to modify the visibility of border. The following code example shows changing border visibility. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="True" IsEditableMode="True" ShowBorder="False">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+   StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
+
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.ShowBorder = false;
+    comboBox.IsEditableMode = true;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Border visibility](images/Customizing-ComboBox/show-border.png)
 
 ## CustomView for ComboBox
 
@@ -118,7 +276,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customview.png)
+![CustomView for ComboBox](images/Customizing-ComboBox/customview.png)
 
 ## Custom template for suggestion items
 
@@ -181,8 +339,9 @@ Now populate this PersonViewModel data in SfComboBox control by binding with [`D
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
 	<ContentPage.BindingContext>
-    	<local:PersonViewModel/>
+    	    <local:PersonViewModel/>
  	</ContentPage.BindingContext>
+     
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
 		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DisplayMemberPath="Name" DataSource="{Binding PersonCollection}">
 			<combobox:SfComboBox.ItemTemplate>
@@ -240,51 +399,51 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/item-template.png)
+![Item template for ComboBox](images/Customizing-ComboBox/item-template.png)
 
 ## Customizing the suggestion box
 
 ### Changing suggestion item height
 
-The `DropDownItemHeight` property is used to modify the height of suggestion items in drop-down list. The following code example shows changing suggestion item height.
+The [`DropDownItemHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownItemHeight.html) property is used to modify the height of suggestion items in drop-down list. The following code example shows changing suggestion item height.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50">
-		<combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50">
+        <combobox:SfComboBox.ComboBoxSource>
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
                 <x:String> United Kingdom </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                
+        </combobox:SfComboBox.ComboBoxSource>
+    </combobox:SfComboBox>                
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- 	StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
 	     VerticalOptions = LayoutOptions.Start, 
 	     HorizontalOptions = LayoutOptions.Start, 
 	     Padding = new Thickness(30) 
     }; 
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.DataSource = countryNames;
-	comboBox.DropDownItemHeight = 50;
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.DropDownItemHeight = 50;
 
     layout.Children.Add(comboBox); 
     Content = layout;
@@ -293,52 +452,208 @@ The `DropDownItemHeight` property is used to modify the height of suggestion ite
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/dropdown-item-height.png)
+![Dropdown item height](images/Customizing-ComboBox/dropdown-item-height.png)
+
+### Changing suggestion box width
+
+The [`DropDownWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownWidth.html) property is used to modify the width of suggestion box. The following code example shows changing suggestion box width.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownWidth="300">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
+
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.DropDownWidth = 300;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Dropdown width](images/Customizing-ComboBox/dropdown-width.png)
+
+### Changing suggestion box corner radius
+
+The [`DropDownCornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownCornerRadius.html) property is used to modify the corner radius of suggestion box. The following code example shows changing suggestion box corner radius. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownCornerRadius="3">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    StackLayout layout = new StackLayout() 
+    { 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
+    }; 
+
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
+
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.DropDownCornerRadius = 3;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Dropdown corner radius](images/Customizing-ComboBox/dropdown-corner-radius.png)
+
+### Changing suggestion box background color
+
+The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownBackgroundColor.html) property is used to modify the background color of suggestion box. The following code example shows changing suggestion box background color. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownBackgroundColor="Yellow">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
+
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.DropDownBackgroundColor = Color.Yellow;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Dropdown background color](images/Customizing-ComboBox/dropdown-background-color.png)
 
 ### Customizing suggestion items
 
-Suggestion box items can be customized using the `DropDownItemFontAttributes`, `DropDownItemFontFamily`, `DropDownTextSize` and `DropDownTextColor` properties.
+Suggestion box items can be customized using the [`DropDownItemFontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownItemFontAttributes.html), [`DropDownItemFontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownItemFontFamily.html), [`DropDownTextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownTextSize.html) and [`DropDownTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownTextColor.html) properties.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownTextSize="16" DropDownTextColor="#1976d2">
-		<combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
-                <x:String> Uganda </x:String>
-                <x:String> Ukraine </x:String>
-                <x:String> United Arab Emirates </x:String>
-                <x:String> United Kingdom </x:String>
-                <x:String> United States </x:String>
-            </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownTextSize="16" DropDownTextColor="#1976d2">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String> Uganda </x:String>
+                    <x:String> Ukraine </x:String>
+                    <x:String> United Arab Emirates </x:String>
+                    <x:String> United Kingdom </x:String>
+                    <x:String> United States </x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+    </combobox:SfComboBox>                
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.DataSource = countryNames;
-	comboBox.DropDownTextColor = Color.FromHex("#1976d2");
-	comboBox.DropDownTextSize = 16;
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.DropDownTextColor = Color.FromHex("#1976d2");
+    comboBox.DropDownTextSize = 16;
 
     layout.Children.Add(comboBox); 
     Content = layout;
@@ -347,7 +662,59 @@ Suggestion box items can be customized using the `DropDownItemFontAttributes`, `
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customizing-dropdown.png)
+![Customizing dropdown](images/Customizing-ComboBox/customizing-dropdown.png)
+
+### Changing selected item color in suggestion box 
+
+The [`SelectedDropDownItemColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~SelectedDropDownItemColor.html) property is used to modify text color of selected item in drop down. The following code example shows changing the selected item text color in drop down.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectedDropDownItemColor="Blue">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>
+ </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    StackLayout layout = new StackLayout() 
+    { 
+	     VerticalOptions = LayoutOptions.Start, 
+	     HorizontalOptions = LayoutOptions.Start, 
+	     Padding = new Thickness(30) 
+    }; 
+
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
+
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    comboBox.SelectedDropDownItemColor = Color.Blue;
+
+    layout.Children.Add(comboBox); 
+    Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Selected dropdown item color](images/Customizing-ComboBox/selected-dropdown-item-color.png)
 
 ## DropDown button customization
 
@@ -357,53 +724,53 @@ This section explains various DropDown button settings available in SfComboBox c
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
-		<combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
+        <combobox:SfComboBox.ComboBoxSource>
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
                 <x:String> United Kingdom </x:String>
                 <x:String> United States </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
-		<combobox:SfComboBox.DropDownButtonSettings>
+        </combobox:SfComboBox.ComboBoxSource>
+        <combobox:SfComboBox.DropDownButtonSettings>
      		<combobox:DropDownButtonSettings Width="40" Height="40" FontIcon="" FontSize="16" FontColor="Blue" HighlightedBackgroundColor="Green" BackgroundColor="Red" HighlightFontColor="Red"/>
      	</combobox:SfComboBox.DropDownButtonSettings>
-	</combobox:SfComboBox>
+    </combobox:SfComboBox>
 </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
 	     VerticalOptions = LayoutOptions.Start, 
 	     HorizontalOptions = LayoutOptions.Start, 
 	     Padding = new Thickness(30) 
     }; 
 
-	List<String> countryNames = new List<String>();
-	countryNames.Add("Uganda");
-	countryNames.Add("Ukraine");
-	countryNames.Add("United Arab Emirates");
-	countryNames.Add("United Kingdom");
-	countryNames.Add("United States");
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.DataSource = countryNames;
-	DropDownButtonSettings dropDownButtonSettings = new DropDownButtonSettings();
-	dropDownButtonSettings.Height = 40;
-	dropDownButtonSettings.Width = 40;
-	dropDownButtonSettings.FontIcon = "";
-	dropDownButtonSettings.FontSize = 16;
-	dropDownButtonSettings.FontColor = Color.Blue;
-	dropDownButtonSettings.HighlightedBackgroundColor = Color.Green;
-	dropDownButtonSettings.BackgroundColor = Color.Red;
-	dropDownButtonSettings.HighlightFontColor = Color.Red;
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.DataSource = countryNames;
+    DropDownButtonSettings dropDownButtonSettings = new DropDownButtonSettings();
+    dropDownButtonSettings.Height = 40;
+    dropDownButtonSettings.Width = 40;
+    dropDownButtonSettings.FontIcon = "";
+    dropDownButtonSettings.FontSize = 16;
+    dropDownButtonSettings.FontColor = Color.Blue;
+    dropDownButtonSettings.HighlightedBackgroundColor = Color.Green;
+    dropDownButtonSettings.BackgroundColor = Color.Red;
+    dropDownButtonSettings.HighlightFontColor = Color.Red;
 
-	comboBox.DropDownButtonSettings = dropDownButtonSettings;
+    comboBox.DropDownButtonSettings = dropDownButtonSettings;
 
     layout.Children.Add(comboBox); 
     Content = layout;
@@ -412,7 +779,7 @@ This section explains various DropDown button settings available in SfComboBox c
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/customizing-dropdown.png)
+![Customizing dropdown](images/Customizing-ComboBox/customizing-dropdown.png)
 
 ## Watermark
 
@@ -430,28 +797,28 @@ Watermark provides a short note about the type of input to enter in the editor c
 
 {% highlight c# %}
 
-	StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
 	     VerticalOptions = LayoutOptions.Start, 
 	     HorizontalOptions = LayoutOptions.Start, 
 	     Padding = new Thickness(30) 
     }; 
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.Watermark = "Enter 'U' to filter suggestions"; 
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.Watermark = "Enter 'U' to filter suggestions"; 
 
-	layout.Children.Add(comboBox); 
+    layout.Children.Add(comboBox); 
     Content = layout;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/watermark.png)
+![Watermark text](images/Customizing-ComboBox/watermark.png)
 
 ## Changing Watermark Text Color
 
-Text color of watermark can be customized using [`WatermarkColor`] property.
+Text color of watermark can be customized using [`WatermarkColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~WatermarkColor.html) property.
 
 {% tabs %}
 
@@ -465,22 +832,22 @@ Text color of watermark can be customized using [`WatermarkColor`] property.
 
 {% highlight c# %}
 
-	StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
 	     VerticalOptions = LayoutOptions.Start, 
 	     HorizontalOptions = LayoutOptions.Start, 
 	     Padding = new Thickness(30) 
     }; 
 
-	SfComboBox comboBox = new SfComboBox();
-	comboBox.Watermark = "Enter some text"; 
-	comboBox.WatermarkColor = Color.FromHex("1976d2");
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.Watermark = "Enter some text"; 
+    comboBox.WatermarkColor = Color.FromHex("1976d2");
 
-	layout.Children.Add(comboBox); 
+    layout.Children.Add(comboBox); 
     Content = layout;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/Customizing-ComboBox/watermark-color.png)
+![Watermark color](images/Customizing-ComboBox/watermark-color.png)

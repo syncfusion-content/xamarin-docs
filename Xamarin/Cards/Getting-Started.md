@@ -1,35 +1,35 @@
 ﻿---
 layout: post
 title: Getting Started for Essential Syncfusion.Xamarin.Forms Cards
-description: How to create a SfCardView, SfCardLayout and add contents in SfCardView and SfCardLayout.
-platform: xamarin
+description: How to create a SfCardView, SfCardLayout, and add contents in SfCardView and SfCardLayout.
+platform: Xamarin
 control: Cards
 documentation: ug
 ---
 
 # Getting Started
 
-This section explains you the steps required to add content in SfCardView with indicator and adding SfCardView in SCardLayout. This section covers only the minimal features that you need to know to get started with the Cards.
+This section explains you the steps required to add content to SfCardView with indicator and add SfCardView to SCardLayout. This section covers only the minimal features needed to get started with the cards.
 
-## Adding Cards reference
+## Adding cards reference
 
-You can add Cards reference using one of the following methods:
+You can add cards reference using one of the following methods:
 
-**Method 1: Adding Cards reference from nuget.org**
+**Method 1: Adding cards reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add cards to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Cards](https://www.nuget.org/packages/Syncfusion.Xamarin.Cards/), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add cards to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Cards](https://www.nuget.org/packages/Syncfusion.Xamarin.Cards/), and then install it.
 
 ![Adding Xamarin.Forms Cards reference](getting-started_images/img3.png)
 
 N> Install the same version of the cards NuGet in all the projects.
 
-**Method 2: Adding Cards reference from toolbox**
+**Method 2: Adding cards reference from toolbox**
 
 Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the SfCardView and SfCardLayout to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding Cards assemblies manually from the installed location**
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead of referencing from NuGet, add the following assemblies in respective projects.
 
 Location : {Installed location}/{version}/Xamarin/lib
 
@@ -88,11 +88,11 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 ## Launching the application on each platform with cards
 
-To use the cards inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
+To use the cards inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and are discussed in the following sections:
 
 ### iOS
 
-To launch the cards in iOS, call the SfCardViewRenderer.Init() method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+To launch the cards in iOS, call the SfCardViewRenderer.Init() method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample:
 
 N> If you are adding the references from toolbox, this step is not needed.
 
@@ -111,7 +111,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 ### Universal Windows Platform (UWP)
 
-To deploy the cards in `Release` mode, you need to initialize the cards assemblies in App.xaml.cs in UWP project as shown in the below code snippets.
+To deploy the cards in `Release` mode, you need to initialize the cards assemblies in App.xaml.cs in the UWP project as shown in the below code snippets.
 
 {% highlight C# %} 
 
@@ -134,10 +134,9 @@ To deploy the cards in `Release` mode, you need to initialize the cards assembli
 
 The Android platform does not require any additional configuration to render the cards.
 
+## Initialize cards
 
-## Initialize Cards
-
-Import the [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html) namespace as shown below in your respective Page,
+Import the [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html) namespace as shown in the following code in your respective page.
 
 {% tabs %} 
 
@@ -157,7 +156,7 @@ Import the [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 
 ### SfCardView
 
-Initialize an card view with [`Content`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~Content.html) as shown below,
+Initialize a card view with [`Content`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~Content.html) as shown in the following code.
 
 {% tabs %} 
 
@@ -184,13 +183,13 @@ Initialize an card view with [`Content`](https://help.syncfusion.com/cr/cref_fil
 
 {% endtabs %} 
 
-Run the project and check if you get following output to make sure you have configured your project properly to add [`Cards`.](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardLayout.html)
+Run the project and check if you get following output to make sure that you have configured your project properly to add [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardLayout.html).
 
 ![Initializing Xamarin.Forms SfCardView](getting-started_images/img1.png)
 
 ## Indicator customization
 
-Indicator can be added in any direction which can be used to denote the state based on the content of the [`SfCardView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~SfCardView.html).
+Indicator can be added in any direction; it can be used to denote the state based on the content of the [`SfCardView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~SfCardView.html).
 
 {% tabs %} 
 
@@ -211,11 +210,11 @@ Indicator can be added in any direction which can be used to denote the state ba
 
 {% endtabs %}
 
-Refer this [link](https://help.syncfusion.com/xamarin/cards/indicator) to learn more about the options available in [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html) to customize indicator.
+Refer to this [documentation](https://help.syncfusion.com/xamarin/cards/indicator) to learn more about the options available in [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html) to customize indicator.
 
 ## SwipeToDismiss
 
-[`SwipeToDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~SwipeToDismiss.html) is used to enable or disable swiping in SfCardView.
+The [`SwipeToDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~SwipeToDismiss.html) property is used to enable or disable swiping in SfCardView.
 
 {% tabs %} 
 
@@ -238,7 +237,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/cards/indicator) to learn 
 
 ### SfCardLayout
 
-Initialize an card layout with card view as shown below,
+Initialize a card layout with card view as shown in the following code.
 
 {% tabs %} 
 

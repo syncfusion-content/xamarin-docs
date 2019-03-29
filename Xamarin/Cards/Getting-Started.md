@@ -234,7 +234,7 @@ Refer this [link](https://help.syncfusion.com/xamarin/cards/indicator) to learn 
 
 {% endtabs %}
 
-![SwipeToDismiss in Xamarin.Forms SfCardView](Getting-Started_images/cardview.gif)
+![SwipeToDismiss in Xamarin.Forms SfCardView](getting-started_images/cardview.gif)
 
 ### SfCardLayout
 

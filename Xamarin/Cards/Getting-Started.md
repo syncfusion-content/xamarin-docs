@@ -186,7 +186,7 @@ Initialize an card view with [`Content`](https://help.syncfusion.com/cr/cref_fil
 
 Run the project and check if you get following output to make sure you have configured your project properly to add [`Cards`.](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardLayout.html)
 
-![Initializing Xamarin.Forms SfCardView](Getting-Started_images/img1.png)
+![Initializing Xamarin.Forms SfCardView](getting-started_images/img1.png)
 
 ## Indicator customization
 
@@ -279,33 +279,5 @@ Initialize an card layout with card view as shown below,
 
 {% endtabs %} 
 
-![Initializing Xamarin.Forms SfCardLayout](Getting-Started_images/layout.gif)
-
-## ShowSwipedCard
-
-[`ShowSwipedCard`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~ShowSwipedCard.html) can be used enabled to show swiped cards at the edge of card layout.
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-    <cards:SfCardLayout ShowSwipedCard="true">
-    </cards:SfCardLayout>
- 
-{% endhighlight %}
-
-{% highlight C# %}
-
-    SfCardLayout cardLayout = new SfCardLayout();
-    cardLayout.ShowSwipedCard = true;
-
-    this.Content = cardLayout;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Run the project and check if you get following output to make sure you have configured your project properly to add [`Cards`.](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html)
-
-You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/xamarin.forms-cards)
+![Initializing Xamarin.Forms SfCardLayout](getting-started_images/layout.gif)
 

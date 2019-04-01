@@ -264,6 +264,117 @@ Here, Labels are loaded in Header and Content of accordion items.
 </ContentPage>
 
 {% endhighlight %}
+{% highlight c#}
+public MainPageCS()
+{
+    InitailzeAccordionItems();
+	this.Content = Accordion;
+}
+
+private void InitailzeAccordionItems()
+{
+    Accordion = new SfAccordion();
+    Accordion.Items.Add(AccordionItem1());
+    Accordion.Items.Add(AccordionItem2());
+    Accordion.Items.Add(AccordionItem3());
+}
+
+private AccordionItem AccordionItem1()
+{
+    var item = new AccordionItem();
+    var headergrid = new Grid() { Padding = new Thickness(10, 0, 0, 10) };
+    var headerlabel = new Label() { TextColor = Color.FromHex("#495F6E"), Text = "Invoice Date", HeightRequest = 50, VerticalTextAlignment = TextAlignment.Center };
+    headergrid.Children.Add(headerlabel);
+
+    var contentgrid = new Grid() { Padding = new Thickness(10, 0, 0, 10), BackgroundColor = Color.FromHex("#FFFFFF") };
+	var contentlabel = new Label() { TextColor = Color.FromHex("#303030"), Text = "11.03 AM, 15 January 2019", HeightRequest = 50, VerticalTextAlignment = TextAlignment.Center };
+    contentgrid.Children.Add(contentlabel);
+
+    item.Header = headergrid;
+    item.Content = contentgrid;
+    return item;
+}
+
+private AccordionItem AccordionItem2()
+{
+    var item = new AccordionItem();
+    var headergrid = new Grid() { Padding = new Thickness(10, 0, 10, 10) };
+    var headerlabel = new Label() { TextColor = Color.FromHex("#495F6E"), Text = "Item (s)", HeightRequest = 50, VerticalTextAlignment = TextAlignment.Center };
+    headergrid.Children.Add(headerlabel);
+
+    var contentgrid = new Grid() { Padding = new Thickness(10, 0, 10, 10), BackgroundColor = Color.FromHex("#FFFFFF") };
+    contentgrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Auto) });
+    contentgrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Auto) });
+    contentgrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Auto) });
+    contentgrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Auto) });
+    contentgrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Auto) });
+
+    contentgrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
+    contentgrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
+
+    var contentlabel0 = new Label() { TextColor = Color.FromHex("#303030"), Text = "2018 Subaru Outback" };
+    var contentlabel1 = new Label() { TextColor = Color.FromHex("#303030"), Text = "All-Weather Mats" };
+    var contentlabel2 = new Label() { TextColor = Color.FromHex("#303030"), Text = "Door Edge Guard Kit" };
+    var contentlabel3 = new Label() { TextColor = Color.FromHex("#303030"), Text = "Rear Bumper Cover" };
+    var contentlabel4 = new Label() { TextColor = Color.FromHex("#303030"), Text = "Total Amount Paid", FontAttributes = FontAttributes.Bold };
+    var contentlabel5 = new Label() { TextColor = Color.FromHex("#303030"), Text = "$35,705.00", HorizontalTextAlignment = TextAlignment.End };
+    var contentlabel6 = new Label() { TextColor = Color.FromHex("#303030"), Text = "$105.00", HorizontalTextAlignment = TextAlignment.End };
+    var contentlabel7 = new Label() { TextColor = Color.FromHex("#303030"), Text = "$100.00", HorizontalTextAlignment = TextAlignment.End };
+    var contentlabel8 = new Label() { TextColor = Color.FromHex("#303030"), Text = "$95.00", HorizontalTextAlignment = TextAlignment.End };
+    var contentlabel9 = new Label() { TextColor = Color.FromHex("#303030"), Text = "$36,000.00", HorizontalTextAlignment = TextAlignment.End, FontAttributes = FontAttributes.Bold };
+
+
+    contentgrid.Children.Add(contentlabel0, 0, 0);
+    contentgrid.Children.Add(contentlabel1, 0, 1);
+    contentgrid.Children.Add(contentlabel2, 0, 2);
+    contentgrid.Children.Add(contentlabel3, 0, 3);
+    contentgrid.Children.Add(contentlabel4, 0, 4);
+    contentgrid.Children.Add(contentlabel5, 1, 0);
+    contentgrid.Children.Add(contentlabel6, 1, 1);
+    contentgrid.Children.Add(contentlabel7, 2, 1);
+    contentgrid.Children.Add(contentlabel8, 3, 1);
+    contentgrid.Children.Add(contentlabel9, 4, 1);
+
+    item.Header = headergrid;
+    item.Content = contentgrid;
+    return item;
+}
+
+private AccordionItem AccordionItem3()
+{
+    var item = new AccordionItem();
+    var headergrid = new Grid() { Padding = new Thickness(10, 0, 10, 10) };
+    var headerlabel = new Label() { TextColor = Color.FromHex("#495F6E"), Text = "Payment Details", HeightRequest = 50, VerticalTextAlignment = TextAlignment.Center };
+    headergrid.Children.Add(headerlabel);
+
+    var contentgrid = new Grid() { Padding = new Thickness(10, 0, 10, 10), BackgroundColor = Color.FromHex("#FFFFFF") };
+    contentgrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Auto) });
+    contentgrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Auto) });
+    contentgrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Auto) });
+
+    contentgrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
+    contentgrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
+
+    var contentlabel0 = new Label() { TextColor = Color.FromHex("#303030"), Text = "Card Payment" };
+    var contentlabel1 = new Label() { TextColor = Color.FromHex("#303030"), Text = "Third-Party coupons" };
+    var contentlabel2 = new Label() { TextColor = Color.FromHex("#303030"), Text = "Total Amount Paid", FontAttributes = FontAttributes.Bold };
+    var contentlabel3 = new Label() { TextColor = Color.FromHex("#303030"), Text = "$31,000.00", HorizontalTextAlignment = TextAlignment.End };
+    var contentlabel4 = new Label() { TextColor = Color.FromHex("#303030"), Text = "$5,000.00", HorizontalTextAlignment = TextAlignment.End };
+    var contentlabel5 = new Label() { TextColor = Color.FromHex("#303030"), Text = "$36,000.00", HorizontalTextAlignment = TextAlignment.End, FontAttributes = FontAttributes.Bold };
+
+
+    contentgrid.Children.Add(contentlabel0, 0, 0);
+    contentgrid.Children.Add(contentlabel1, 0, 1);
+    contentgrid.Children.Add(contentlabel2, 0, 2);
+    contentgrid.Children.Add(contentlabel3, 1, 0);
+    contentgrid.Children.Add(contentlabel4, 1, 1);
+    contentgrid.Children.Add(contentlabel5, 1, 2);
+
+    item.Header = headergrid;
+    item.Content = contentgrid;
+    return item;
+}
+{% endhighlight %}
 {% endtabs %}
 
 Now, run the application to render the following output.

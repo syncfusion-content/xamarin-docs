@@ -784,62 +784,129 @@ Sample Link: You can download the above sample code by clicking [here](https://g
 
 The [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) or [SfPopupLayout.IsVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsVisible.html) property is used to close the [SfPopupLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout.html)
 
-{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Popup_Demo"
+             x:Class="Popup_Demo.MainPage"    
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">             
+    <ContentPage.Content>
+        <StackLayout x:Name="mainLayout">
+            <Button x:Name="clickToShowPopup" Text="click to show popup"/>
+            <Button x:Name="clickToClosePopup" Text="click to close popup"/>
+        </StackLayout>
+    </ContentPage.Content>    
+</ContentPage>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
-private void ClickToClosePopup_Clicked(object sender, EventArgs e)
-{
-    //set false to IsOpen or IsVisible property like the following code to close the popup view.
+using Syncfusion.XForms.PopupLayout;
+using System;
+using Xamarin.Forms;
 
-    popupLayout.IsOpen = false;
-    popupLayout.IsVisible = false;
+namespace Popup_Demo
+{
+    public partial class MainPage : ContentPage
+    {
+        SfPopupLayout popupLayout;
+        public MainPage()
+        {
+            InitializeComponent();
+            this.popupLayout = new SfPopupLayout();
+            this.popupLayout.StaysOpen = true;
+            this.popupLayout.PopupView.HeightRequest = 200;
+            this.popupLayout.PopupView.WidthRequest = 200;
+            this.clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
+            this.clickToClosePopup.Clicked += ClickToClosePopup_Clicked;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            //// Opens SfPopupLayout.
+            this.popupLayout.Show(0, 0);
+        }
+
+        private void ClickToClosePopup_Clicked(object sender, EventArgs e)
+        {
+            //// Set IsOpen or IsVisible property as false to close the popup view programatically.
+            this.popupLayout.IsOpen = false;
+            this.popupLayout.IsVisible = false;
+        }
+    }
 }
 
 {% endhighlight %}
-{% endtabs %}
 
 
 ## How to change popup view background color 
 
-The background color of popup view can be set by using the [SfPopupLayout.PopupView.BackGroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~BackgroundColor.html)
+The background color of popup view can be customized by setting the [SfPopupLayout.PopupView.BackGroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~BackgroundColor.html)
 property.
 
-{% tabs %}
-{%highlight Xaml%}
-<sfPopup:SfPopupLayout x:Name="popupLayout">
-    <sfPopup:SfPopupLayout.PopupView>
-        <sfPopup:PopupView BackgroundColor="DimGray">
-            <sfPopup:PopupView.ContentTemplate>
-                <DataTemplate>
-                    <Label Text="Popup content view" TextColor="White" BackgroundColor="Transparent"/>
-                </DataTemplate>
-             </sfPopup:PopupView.ContentTemplate>
-        </sfPopup:PopupView>
-    </sfPopup:SfPopupLayout.PopupView>
-</sfPopup:SfPopupLayout>
-{%endhighlight%}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Popup_Demo"
+             x:Class="Popup_Demo.MainPage"    
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+
+    <ContentPage.Content>
+        <StackLayout x:Name="mainLayout">
+            <Button x:Name="clickToShowPopup" Text="click to show popup"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
 
 {% highlight c# %}
-public MainPage()
-{
-    ....
-    InitializeComponent();
-    popupLayout.PopupView.ContentTemplate = new DataTemplate(() =>
-                 {
-                     return new Label()
-                     {
-                         Text = "Popup content view",
-                         TextColor = Color.White,
-                         BackgroundColor = Color.Transparent
-                     };
-                 });
 
-    popupLayout.PopupView.BackgroundColor = Color.DimGray;
-    ....
+using Syncfusion.XForms.PopupLayout;
+using System;
+using Xamarin.Forms;
+
+namespace Popup_Demo
+{
+    public partial class MainPage : ContentPage
+    {
+        SfPopupLayout popupLayout;
+        DataTemplate dataTemplate;
+        public MainPage()
+        {
+            InitializeComponent();
+            this.popupLayout = new SfPopupLayout();
+            this.dataTemplate = new DataTemplate(() =>
+            {
+                Label label = new Label();
+                label.Text = "Syncfusion";
+                label.BackgroundColor = Color.Transparent;
+                return label;
+            });
+
+            this.popupLayout.PopupView.HeaderTitle = "Company name";
+            this.popupLayout.PopupView.ContentTemplate = dataTemplate;
+
+            //// You can customize your color based on the requirement.
+            this.popupLayout.PopupView.BackgroundColor = Color.LightBlue;
+            this.clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            //// Opens SfPopupLayout.
+            this.popupLayout.Show();
+        }
+    }
 }
 
 
 {% endhighlight %}
-{% endtabs %}
 
-Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/how-to-set-background-color-for-popupview-in-xamarin-popup/).
+
+Sample Link: You can download the above sample code by clicking [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Popup_Demo871662808).

@@ -832,7 +832,7 @@ namespace Popup_Demo
 
         private void ClickToClosePopup_Clicked(object sender, EventArgs e)
         {
-            //// Set IsOpen or IsVisible property as false to close the popup view programatically.
+            //// Set IsOpen or IsVisible property as false to close the popup view programmatically.
             this.popupLayout.IsOpen = false;
             this.popupLayout.IsVisible = false;
         }

@@ -72,7 +72,7 @@ Add packages can be used to search and install NuGet packages to the Visual Stud
               
 2.	By default, the NuGet.org package is selected in the **Package source** drop-down. 
 
-    ![Add packages dialog](NuGet_Packages_Images/img9.png)  
+    ![Add packages dialog](NuGet_Packages_Images/img9.jpg)  
 
 3.	The NuGet Packages available in the package source location will be listed. Search and install the required packages in your application, by clicking **Add Package** button.
 

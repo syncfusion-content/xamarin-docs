@@ -83,6 +83,18 @@ Generated for Enum type property and the property with [EnumDataTypeAttribute] a
 </tr>
 <tr>
 <td>
+{{'[DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html)'| markdownify }}
+</td>
+<td>
+MaskedEditText
+</td>
+<td>
+Generated for the PhoneNumber type property.
+[DataType(DataType.PhoneNumber)]
+</td>
+</tr>
+<tr>
+<td>
 {{'[DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html)'| markdownify }}
 </td>
 <td>
@@ -204,6 +216,27 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
     {
         if (e.DataFormItem.Name == "Salary")
             e.DataFormItem.IsReadOnly = true;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Changing DataFormItem visibility
+
+You can change the [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) visibility by using the [IsVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~IsVisible.html) property in the `DataFormItem`.
+
+Here, `Salary` data field will be hidden.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name == "Salary")
+            e.DataFormItem.IsVisible = false;
     }
 }
 {% endhighlight %}
@@ -633,3 +666,42 @@ public class Data : DynamicObject, IDictionary<string, object>
 ![Binding with dynamic data object in Xamarin.Forms DataForm](SfDataForm_images/DynamicObject.png)
 
 You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComplexProperty-1726015503.zip)
+
+## Adding custom DataFormItems
+
+Support has been provided to generate custom DataFormItems for the defined business model using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of the `SfDataForm` class. You need to set the [AutoGenerateItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~AutoGenerateItems.html) property to false to restrict the auto generation of DataFormItems. 
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                        xmlns:local="clr-namespace:GettingStarted"
+                        xmlns:dataForm ="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
+                        x:Class="GettingStarted.MainPage">
+        <ContentPage.Content>
+            <dataForm:SfDataForm x:Name="dataForm" AutoGenerateItems="false"> 
+                <dataForm:SfDataForm.Items> 
+                    <dataForm:DataFormTextItem Name="Name" Editor="Text"/> 
+                    <dataForm:DataFormTextItem Name="Password" Editor="Password"/> 
+                    <dataForm:DataFormMaskedEditTextItem Name="Phone" Editor="MaskedEditText"/> 
+                    <dataForm:DataFormTextItem Name="Address" Editor="MultilineText"/> 
+                    <dataForm:DataFormDateItem Name="BirthTime" Editor="Date"/> 
+                </dataForm:SfDataForm.Items> 
+            </dataForm:SfDataForm>
+        </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+ObservableCollection<DataFormItemBase> items = new ObservableCollection<DataFormItemBase>(); 
+items.Add(new DataFormItem() { Name = "Name", Editor = "Text" }); 
+items.Add(new DataFormItem() { Name = "Password", Editor = "Password" }); 
+items.Add(new DataFormItem() { Name = "Phone", Editor = "MaskedEditText" }); 
+items.Add(new DataFormItem() { Name = "Address", Editor = "MultilineText" }); 
+items.Add(new DataFormItem() { Name = "BirthTime", Editor = "Time" }); 
+
+dataForm.AutoGenerateItems = false; 
+dataForm.Items = items; 
+{% endhighlight %}
+{% endtabs %}
+

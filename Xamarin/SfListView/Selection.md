@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in SfListView
+title: Selection in Syncfusion SfListView
 description: Describes about the selection behavior in SfListView.
 platform: xamarin
 control: SfListView
@@ -66,6 +66,9 @@ All items of the SfListView can be selected using the [SelectAll](https://help.s
 listView.SelectAll();
 {% endhighlight %}
 {% endtabs %}
+
+N> When programmatically select an item then the selection related [events](https://help.syncfusion.com/xamarin/sflistview/selection#events) will not be triggered. It triggers only on UI interactions.
+However, get the notification from the SelectedItems collection changed event which will be triggered when add an item at runtime.
 
 ## Selected items
 

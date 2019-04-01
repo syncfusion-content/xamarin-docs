@@ -600,6 +600,25 @@ dataForm.CollapseGroup("Group1");
 {% endhighlight %}
 {% endtabs %}
 
+### Changing DataFormGroupItem visibility
+You can change the [DataFormGroupItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormGroupItem.html) visibility by using the [IsVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~IsVisible.html) property in the `DataFormGroupItem`.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+	if(e.DataFormGroupItem != null )
+	{
+        if (e.DataFormGroupItem.GroupName == "Details")
+            e.DataFormGroupItem.IsVisible = false;
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
+Here, the `Details` group will be hidden.
+
 ## Customizing DataFormLayoutManager
 
 To customize the layout, override the [DataFormLayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormLayoutManager.html) and assign to the [SfDataForm.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~LayoutManager.html) property.
@@ -846,3 +865,97 @@ if (dataFormItem.Name == "Name")
 {% endhighlight %}
 {% endtabs %}
 Here, the `Name` field will be hidden.
+
+## Change DataFormGroupItem visibility at runtime
+
+You can change the [DataFormGroupItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormGroupItem.html) visibility by using the [IsVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~IsVisible.html) property in the `DataFormGroupItem`.
+
+{% tabs %}
+{% highlight c# %}
+var dataFormGroupItem = dataForm.ItemManager.GetDataFormGroupItem("Details");
+if (dataFormGroupItem.GroupName == "Details")
+{
+	dataFormGroupItem.IsVisible = false;
+}
+{% endhighlight %}
+{% endtabs %}
+
+Here, the `Details` group will be hidden.
+
+## Right to left(RTL)
+
+SfDataForm supports to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
+
+{% tabs %}
+{% highlight xaml %}
+<dataForm:SfDataForm FlowDirection="RightToLeft">
+</dataForm:SfDataForm>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.FlowDirection = FlowDirection.RightToLeft;
+{% endhighlight %}
+{% endtabs %}
+
+>**Note**
+For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Please refer [RightToLeft](https://blog.xamarin.com/right-to-left-localization-xamarin-forms) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
+
+### Android
+For Android, add `android:supportsRtl="true"` in your application tag of `AndroidManifest.xml` file, and make sure your `MinSDKVersion` is 17+. By changing the device language / enabling the device's `Force RTL layout` can achieve the `RightToLeft` layout direction in DataForm.
+
+{% tabs %}
+{% highlight xml %}
+<manifest ... >
+<uses-sdk android:minSdkVersion="17" ... />
+<application ... android:supportsRtl="true">
+</application>
+</manifest>
+{% endhighlight %}
+{% endtabs %}
+
+### iOS
+For iOS, add the `RightToLeft` language in the `CFBundleLocalizations` section of your `Info.plist` file, and make sure you’re targeting iOS 9+.
+
+{% tabs %}
+{% highlight xml %}
+<resources>
+<key>CFBundleDevelopmentRegion</key>
+<string>en</string>
+<key>CFBundleLocalizations</key>
+<array>
+<string>en</string>
+<string>ar</string>
+</array>
+</resources>
+{% endhighlight %}
+{% endtabs %}
+
+![info plist](SfDataForm_images/DataForm_iosplist.png)
+
+### UWP
+For UWP, you need to set `FlowDirection` to `RightToLeft` in the `MainPage.cs` file of the `UWP` project.
+
+{% tabs %}
+{% highlight c# %}
+public MainPage()
+{
+…
+this.FlowDirection = FlowDirection.RightToLeft;
+LoadApplication (new App ());
+…
+}
+{% endhighlight %}
+{% endtabs %}
+
+![RTL in Xamarin.Forms DataForm](SfDataForm_images/DataForm_RTL.png)
+
+## Programmatically scroll to specific editor
+
+You can programmatically scroll to specific editor using the [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ScrollTo.html) method by passing the `property name`. 
+
+{% tabs %}
+{% highlight c# %}
+dataForm.ScrollTo("BirthDate")
+{% endhighlight %}
+{% endtabs %}
+
+![Scroll to specific editor in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-scrolltosupport.gif)

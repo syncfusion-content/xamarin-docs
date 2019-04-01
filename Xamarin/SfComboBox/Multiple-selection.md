@@ -120,12 +120,12 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
-<ContentPage.BindingContext>
-    <local:EmployeeViewModel/>
- </ContentPage.BindingContext>
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" DataSource="{Binding EmployeeCollection}"/>
-</StackLayout> 
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" DataSource="{Binding EmployeeCollection}"/>
+    </StackLayout> 
 </ContentPage>
 
 {% endhighlight %}
@@ -162,7 +162,7 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
 {% endtabs %}
 
 
-![](images/MultiSelect/TokenRepresentation_Wrap.png)
+![Wrap mode for Token](images/MultiSelect/TokenRepresentation_Wrap.png)
  
 ### Token customization
 
@@ -195,12 +195,12 @@ Token can be customized in the following ways:
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
-<ContentPage.BindingContext>
-    <local:EmployeeViewModel/>
- </ContentPage.BindingContext>
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image"                             MultiSelectMode="Token" TokensWrapMode="Wrap" DataSource="{Binding EmployeeCollection}">
-        <combobox:SfComboBox.TokenSettings>
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image"                             MultiSelectMode="Token" TokensWrapMode="Wrap" DataSource="{Binding EmployeeCollection}">
+            <combobox:SfComboBox.TokenSettings>
                 <combobox:TokenSettings FontSize="16" BackgroundColor="#66ccff" 
                                         TextColor="White" SelectedBackgroundColor="#ffffe0" 
                                         DeleteButtonColor="Color.Brown" IsCloseButtonVisible="true" 
@@ -208,7 +208,7 @@ Token can be customized in the following ways:
                 </combobox:TokenSettings>
             </combobox:SfComboBox.TokenSettings>
       </combobox:SfComboBox>      
-</StackLayout>
+    </StackLayout>
 </ContentPage>
 
 {% endhighlight %}
@@ -254,7 +254,7 @@ Token can be customized in the following ways:
 {% endtabs %}
 
 
-![](images/MultiSelect/TokenRepresentation.png)
+![Token representation](images/MultiSelect/TokenRepresentation.png)
 
 ## Delimiter
 
@@ -265,9 +265,9 @@ When selecting multiple items, the selected items can be divided with a desired 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MultiSelectMode="Delimiter"  Delimiter=","> 
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MultiSelectMode="Delimiter"  Delimiter=","> 
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Afghanistan </x:String>
                 <x:String> Albania </x:String>
                 <x:String> Mexico </x:String>
@@ -315,7 +315,7 @@ When selecting multiple items, the selected items can be divided with a desired 
 
 {% endtabs %}
 
-![](images/MultiSelect/Delimiter.png)
+![Delimiter mode for ComboBoxMode](images/MultiSelect/Delimiter.png)
 
 ### Selection indicator
 
@@ -326,7 +326,7 @@ N> Selection Indicator support has enhanced only on iOS and Android platform.
 {% tabs %}
 {% highlight xaml %}
 
-<combobox:SfComboBox HeightRequest="40" ShowSuggestionsOnFocus="true" IsSelectedItemsVisibleInDropDown="true" IndicatorText="A" IndicatorTextSize="sample.ttf" IndicatorTextColor="Red" EnableSelectionIndicator="true" MultiSelectMode="Token"  x:Name="comboBox" DataSource="{Binding EmployeeCollection}"/>
+<combobox:SfComboBox HeightRequest="40" ShowSuggestionsOnFocus="true" IsSelectedItemsVisibleInDropDown="true" IndicatorText="A" IndicatorFontFamily="sample.ttf" IndicatorTextSize="15" IndicatorTextColor="Red" EnableSelectionIndicator="true" MultiSelectMode="Token"  x:Name="comboBox" DataSource="{Binding EmployeeCollection}"/>
        
 {% endhighlight %}
 
@@ -336,7 +336,8 @@ comboBox.MultiSelectMode=MultiSelectMode.Token;
 comboBox.ShowSuggestionsOnFocus=true;
 comboBox.IsSelectedItemsVisibleInDropDown=true;
 comboBox.IndicatorText= "A";
-comboBox.IndicatorTextSize= "sample.ttf";
+comboBox.IndicatorFontFamily= "sample.ttf";
+comboBox.IndicatorTextSize= "15";
 comboBox.IndicatorTextColor = Color.Red;
 comboBox.EnableSelectionIndicator= true;
 

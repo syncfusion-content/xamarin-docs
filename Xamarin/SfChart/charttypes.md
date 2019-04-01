@@ -1202,6 +1202,41 @@ chart.Series.Add(splineSeries);
 
 ![Spline chart type in Xamarin.Forms](charttypes_images/charttypes_img13.png)
 
+### Dashed Lines
+
+[`StrokeDashArray`] property of the [`SplineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineSeries.html) is used to render spline series with dashes.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SplineSeries ItemsSource ="{Binding Data}" XBindingPath="Month" YBindingPath="Value">
+    <chart:SplineSeries.StrokeDashArray>
+        <x:Array Type="{x:Type x:Double}">
+            <sys:Double>5</sys:Double>
+            <sys:Double>6</sys:Double>
+        </x:Array>
+    </chart:SplineSeries.StrokeDashArray>
+</chart:SplineSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SplineSeries splineSeries = new SplineSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Month",
+    YBindingPath = "Value"
+};
+
+splineSeries.StrokeDashArray = new double[2] { 5, 6 };
+chart.Series.Add(splineSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Spline Rendering Types
 
 [`SplineType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SplineSeries~SplineType.html) allows you to change the spline curve in series. 
@@ -1437,6 +1472,59 @@ chart.Series.Add(scatterSeries);
 {% endtabs %}
 
 ![Scatter chart type in Xamarin.Forms](charttypes_images/charttypes_img17.png)
+
+## Fast Scatter Chart
+
+The [`FastScatterSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastScatterSeries.html) is a special kind of scatter series that renders a collection with a huge number of data points. You can use the following properties to customize the appearance of a fast scatter point.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Color.html) – used to change the color of series.
+* [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Opacity.html) – used to control the transparency of chart series.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of series.
+* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastScatterSeries~StrokeColor.html) – used to change the stroke color of series.
+* [`ScatterWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastScatterSeries~ScatterWidth.html) –  used to change the width of series.
+* [`ScatterHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastScatterSeries~ScatterHeight.html) – used to change the height of series.
+* [`ShapeType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastScatterSeries~ShapeType.html) – used to change the rendering shape of fast scatter series. The available shapes are [`Cross`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Diamond`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Ellipse`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Hexagon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`InvertedTriangle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Pentagon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Plus`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html), [`Rectangle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html) and [`Triangle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartScatterShapeType.html).
+* [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastScatterSeries~EnableAntiAliasing.html) – Enables or disables the smoothness of series. Default value of [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastScatterSeries~EnableAntiAliasing.html) property is true.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+	<chart:FastScatterSeries ScatterHeight="15"
+	ScatterWidth="15"
+	ShapeType="Ellipse"
+	ItemsSource ="{Binding Data}" 
+	XBindingPath="Year"
+	YBindingPath="Value"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+FastScatterSeries fastScatterSeries = new FastScatterSeries ()
+{ 
+	ItemsSource = Data, 	
+	ScatterHeight = 15, 
+	ScatterWidth = 15, 
+	ShapeType = ChartScatterShapeType.Ellipse,
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
+chart.Series.Add(fastScatterSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Fast Scatter chart type in Xamarin.Forms](charttypes_images/charttypes_img17.png)
 
 ## OHLC Chart
 
@@ -2088,6 +2176,9 @@ To render a pie chart, create an instance of [`PieSeries`](https://help.syncfusi
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~StrokeColor.html) – used to change the stroke color of the series.
 * [`DataMarkerPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~DataMarkerPosition.html) - used to change the position of data marker at [`Inside`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html), [`Outside`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html) or [`OutsideExtended`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html).
+* [`ConnectorLinePosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~ConnectorLinePosition.html) - used to change the position of the connector line at [`Auto`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ConnectorLinePosition.html) and [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ConnectorLinePosition.html).
+
+N> ConnectorLinePosition provides better alignment to the straight connector lines with outside extended label position for the minimum number of data points. 
 
 {% tabs %} 
 
@@ -2261,6 +2352,9 @@ To render a doughnut chart, create an instance of [`DoughnutSeries`](https://hel
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the series.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries~StrokeColor.html) – used to change the stroke color of the series.
 * [`DataMarkerPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~DataMarkerPosition.html) - used to change the position of data marker at [`Inside`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html), [`Outside`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html) or [`OutsideExtended`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeriesDataMarkerPosition.html).
+* [`ConnectorLinePosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CircularSeries~ConnectorLinePosition.html) - used to change the position of the connector line at [`Auto`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ConnectorLinePosition.html) and [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ConnectorLinePosition.html).
+
+N> ConnectorLinePosition provides better alignment to the straight connector lines with outside extended label position for the minimum number of data points. 
 
 {% tabs %} 
 

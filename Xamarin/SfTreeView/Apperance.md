@@ -235,6 +235,23 @@ treeView.ExpanderWidth = 40;
 {% endhighlight %}
 {% endtabs %}
 
+## ExpanderPosition
+
+The TreeView allows you change the position of expander view by setting the [ExpanderPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ExpanderPosition.html) property. The default value of this property is `Start`.This property has following two positions:
+
+* `Start`: Allows displaying the expander view at the start position.
+* `End`: Allows displaying the expander view at the end position.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeView x:Name="treeView" ExpanderPosition="End">
+{% endhighlight %}
+{% highlight c# %}
+SfTreeView treeView = new SfTreeView();
+treeView.ExpanderPosition = ExpanderPosition.End;; 
+{% endhighlight %}
+{% endtabs %}
+
 ## Level based styling
 
 The TreeView allows you to customize the style of `TreeViewItem` based on different levels by using [IValueConverter](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.ivalueconverter?view=xamarin-forms).
@@ -293,3 +310,21 @@ Now, run the application to render the below output:
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Styling239740457).
 
 ![Xamarin Forms TreeView with styling](TreeView_images/TreeView_LevelStyle.png)
+
+## Animation
+
+The `SfTreeView` supports to animate expanding or collapsing the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html). To enable/disable the animation use [IsAnimationEnabled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~IsAnimationEnabled.html) property of `SfTreeView`.
+ 
+N> The default value of the `IsAnimationEnabled` property is `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeView x:Name="treeView" IsAnimationEnabled="true">
+{% endhighlight %}
+{% highlight c# %}
+SfTreeView treeView = new SfTreeView();
+treeView.IsAnimationEnabled = true;
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin Forms TreeView with Animation](TreeView_images/TreeView_Animation.gif)

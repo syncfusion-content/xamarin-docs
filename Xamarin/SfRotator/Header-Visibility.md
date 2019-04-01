@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding Looping and Delays in Syncfusion Rotator control for Xamarin.Forms 
-description: Learn how to set the autoplay option, loop the items, enable Text Area  and choose the navigation direction in Rotator control for Xamarin.Forms
+title: Header Visibility in Syncfusion Rotator control for Xamarin.Forms 
+description: Learn how to set the header visiblity in Rotator control for Xamarin.Forms
 platform: xamarin 
 control: Rotator
 documentation: ug
@@ -17,16 +17,60 @@ N> By default, the property value is false.
 
 {% highlight xaml %}
 
-	<syncfusion:SfRotator x:Name="rotator" IsTextVisible="true" />
-	
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Rotator"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             x:Class="Rotator.Rotator">
+    <ContentPage.Content>
+        <syncfusion:SfRotator x:Name="rotator" 
+                              BackgroundColor="#ececec"
+                              IsTextVisible="true">
+        </syncfusion:SfRotator>
+    </ContentPage.Content>
+</ContentPage>
+
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfRotator rotator = new SfRotator();
-	rotator.IsTextVisible = true;
+using Syncfusion.SfRotator.XForms;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace Rotator
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Rotator : ContentPage
+    {
+        SfRotator rotator = new SfRotator();
+        StackLayout stackLayout = new StackLayout();
+        public Rotator()
+        {
+            InitializeComponent();
+            stackLayout.HeightRequest = 300;
+            List<SfRotatorItem> collectionOfItems = new List<SfRotatorItem>();
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie1.png", ItemText = "Agile Software" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie2.png", ItemText = "Delphi Succinctly" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie3.png", ItemText = "NancyFX Succinctly" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie4.png", ItemText = "Roslyn Succinctly" });
+            collectionOfItems.Add(new SfRotatorItem() { Image = "movie5.png", ItemText = "Spark Succinctly" });
+            rotator.DataSource = collectionOfItems;
+            rotator.IsTextVisible = true;
+            rotator.DotPlacement = DotPlacement.OutSide;
+            stackLayout.Children.Add(rotator);
+            this.Content = stackLayout;
+            }
+        }
+    }
 
 {% endhighlight %}
 
 {% endtabs %}
 
+![IsTextVisible](images/IsTextVisible.png)

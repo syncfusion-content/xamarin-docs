@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various customization in Syncfusion gradient view control for Xamarin.Forms
+title: Various customization in Syncfusion gradient view control
 description: Learn how to customize the gradient view control
 platform: Xamarin
 control: SfGradientView

@@ -130,7 +130,7 @@ using Syncfusion.XForms.Graphics;
 
 ### Add the SfGradientView control as the content of ContentPage.
 
-#### Adding LinearGradientbrush for SfGradientView
+#### Adding LinearGradientBrush for SfGradientView
 
 {% tabs %}
 {% highlight xaml %}

@@ -29,16 +29,52 @@ Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location in Mac.
 
-### Adding SfDataForm Reference
+## Adding SfDataForm reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataForm to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfDataForm](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataForm/), and then install it.
+You can add SfDataForm reference using one of the following methods:
 
-![Adding  data form nuget reference in Xamarin.Forms DataForm](SfDataForm_images/DataForm_NuGet.png)
+**Method 1: Adding SfDataForm reference from nuget.org**
 
-To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfdataform) to know about the dependent assemblies for SfDataForm.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfDataForm to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfDataForm](https://www.nuget.org/packages/Syncfusion.Xamarin.SfDataForm), and then install it.
 
->**Important** 
-Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+![Adding SfDataForm reference from NuGet](SfDataForm_images/Adding SfDataForm reference.png)
+
+N> Install the same version of SfDataForm NuGet in all the projects.
+
+**Method 2: Adding SfDataForm reference from toolbox**
+
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfDataForm control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+
+**Method 3: Adding SfDataForm assemblies manually from the installed location**
+
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+
+Location: {Installed location}/{version}/Xamarin/lib
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfDataForm.XForms.Android.dll<br/>Syncfusion.SfNumericTextBox.Android.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>Syncfusion.SfNumericUpDown.Android.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.Android.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.Android.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfDataForm.XForms.iOS.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>Syncfusion.SfNumericUpDown.iOS.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.iOS.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.iOS.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/>
+</td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfDataForm.XForms.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.UWP.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll <br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.UWP.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/>
+</td>
+</tr>
+</table>
+
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the data form on each platform
 
@@ -47,6 +83,8 @@ To use the data form inside an application, each platform application must initi
 ### Android
 
 The Android launches the data form without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
+
+N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 
@@ -616,13 +654,13 @@ dataForm.ColumnCount = 2;
 
 ![Setting column count to data form in Xamarin.Forms DataForm](SfDataForm_images/ColumnCount.png)
 
-## Launching SfDataForm inside a StackLayout
+## Loading DataForm inside StackLayout
 
 StackLayout positions the child elements one after another either horizontally or vertically. Space of the [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) depends on the HorizontalOptions and VerticalOptions properties. Views in a stack layout can be sized based on space in the layout using layout options.
 
-The SfDataForm control can be loaded inside any layout such as [Grid](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.Grid?view=xamarin-forms), [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms), etc. When loading SfDataForm inside a `StackLayout`, set the [HorizontalOptions](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~HorizontalOptions.html) and [VerticalOptions](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~VerticalOptions.html) properties of SfDataForm, and set parent(StackLayout) of SfDataForm to `LayoutOptions.FillAndExpand`.
+The DataForm control can be loaded inside any layout such as [Grid](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.Grid?view=xamarin-forms), [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms), etc. When loading DataForm inside a `StackLayout`, set the [HorizontalOptions](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~HorizontalOptions.html) and [VerticalOptions](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~VerticalOptions.html) properties of DataForm, and set parent(StackLayout) of DataForm to `LayoutOptions.FillAndExpand`.
 
-Refer to the following code example to load the SfDataForm control inside a `StackLayout`. Set the VerticalOptions and HorizontalOptions of the `StackLayout` and SfDataForm to `FillAndExpand`.
+Refer to the following code example to load the DataForm control inside a `StackLayout`. Set the VerticalOptions and HorizontalOptions of the `StackLayout` and DataForm to `FillAndExpand`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -658,9 +696,9 @@ public partial class MainPage : ContentPage
 
 ![Launching data form inside a StackLayout Xamarin.Forms DataForm](SfDataForm_images/LayoutOptions.jpg)
 
-## Loading SfDataForm with customized height and width
+## Loading DataForm with customized height and width
 
-The SfDataForm  can be loaded with specific height and width inside different layouts using the [SfDataForm.HeightRequest](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~HeightRequest.html) and [SfDataForm.WidthRequest](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~WidthRequest.html) properties.
+The DataForm can be loaded with specific height and width inside different layouts using the [SfDataForm.HeightRequest](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~HeightRequest.html) and [SfDataForm.WidthRequest](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~WidthRequest.html) properties.
 
 {% tabs %}
 {% highlight xaml %}

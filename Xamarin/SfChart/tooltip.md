@@ -182,11 +182,33 @@ You can show or hide the chart tooltip programmatically by using the show or hid
 
 The [`Show`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTooltipBehavior~Show.html) method is used to activate the tooltip at the specified location.
 
+{% highlight xaml %}
+
+<Button Text="Show tooltip" Clicked="ShowTooltip" />
+
+. . .
+
+<chart:SfChart.ChartBehaviors>
+    <chart:ChartTooltipBehavior x:Name="tooltipBehavior" />
+</chart:SfChart.ChartBehaviors>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
-//Arguments are x position, y position and bool value determines whether the tooltip should be animated while displaying.
-	
-tooltip.Show(pointX, pointY, true);
+public partial class MainPage : ContentPage
+{    
+    public MainPage()
+    {
+        InitializeComponent();
+    }
+
+    private void ShowTooltip(object sender, EventArgs e)
+    {
+        //pointX - determines the x position of tooltip, pointY - determines the y position of tooltip and bool value determines whether the tooltip should be animated while displaying.
+        tooltipBehavior.Show(pointX, pointY, true);
+    }
+}
 
 {% endhighlight %}
 

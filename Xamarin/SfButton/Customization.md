@@ -366,4 +366,60 @@ public class CommandDemoViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
+## Shadow Effect
+
+The button control provides shadow effect support. To enable shadow effect, set the `HasShadow` property to true.
+
+You can customize the color of shadow using the `ShadowColor` property. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+          <SyncfusionButton:SfButton
+                                     HeightRequest="50"
+                                     WidthRequest="200"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     CornerRadius="25"
+                                     HasShadow="True"
+                                     BorderWidth="1"
+                                     BorderColor="Gray"
+                                     BackgroundColor="#538EEC"
+                                     ImageSource="Basket.png"
+                                     ShowIcon="True"
+                                     ImageAlignment="End"
+                                     Text="ADD To CART"/>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfButton button = new SfButton()
+            {
+                HeightRequest = 50,
+                WidthRequest = 200,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                CornerRadius = new Thickness(25),
+                HasShadow = true,
+                BorderWidth = 1,
+                BorderColor = Color.Gray,
+                BackgroundColor = Color.FromHex("#538EEC"),
+                ImageSource = "Basket.png",
+                ShowIcon = true,
+                ImageAlignment = Alignment.Start,
+                Text = "ADD To CART"
+            };
+
+            this.Content = button;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Shadow support has not been provided for UWP Platform.
+
+![ShadowImage](images/Xamarin_Forms_Shadow.png)
+
 The complete customization sample:[Customization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Customization-1070507783)

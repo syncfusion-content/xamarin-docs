@@ -586,6 +586,6 @@ namespace GettingStarted
 }
 {% endhighlight %}
 
-Executing the above codes renders the following output in Android device respectively.
+Executing the above codes renders the following output in an Android device.
 
 ![Popup with Full Screen](PopupLayout_images/Popup_with_full_screen.png)

@@ -267,11 +267,11 @@ Here, Labels are loaded in Header and Content of accordion items.
 {% highlight c#}
 public MainPageCS()
 {
-    InitialzeAccordionItems();
+    InitializeAccordionItems();
 	this.Content = Accordion;
 }
 
-private void InitialzeAccordionItems()
+private void InitializeAccordionItems()
 {
     Accordion = new SfAccordion();
     Accordion.Items.Add(AccordionItem1());

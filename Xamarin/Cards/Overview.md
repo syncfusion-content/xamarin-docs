@@ -1,6 +1,10 @@
-﻿---
-platform: Xamarin.Forms
-control: Cards
+---
+layout : post
+title : Overview of Syncfusion Cards control for Xamarin.Forms
+description : A quick go through to learn about the Cards control and the key features available in it.
+platform : xamarin
+control : Cards
+documentation : ug
 ---
 
 ### Overview

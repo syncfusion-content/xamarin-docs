@@ -298,6 +298,33 @@ private void DataForm_Validated(object sender, ValidatedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+You can get the details of invalid DataFormItems when validating the data form as `Explicit` validation mode using [ValidationCompleted](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationCompleted_EV.html) event. This event contains [ValidationCompletedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.ValidationCompletedEventArgs.html) argument, which holds a list of DataFormItem as errors. 
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:local="clr-namespace:GettingStarted"
+                xmlns:dataForm ="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
+                x:Class="GettingStarted.MainPage">
+    <ContentPage.Content>     
+        <dataForm:SfDataForm x:Name="dataForm" ValidationCompleted="DataForm_ValidationCompleted" />            
+    </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.ValidationCompleted += DataForm_ValidationCompleted; 
+… 
+
+private void DataForm_ValidationCompleted(object sender, ValidationCompletedEventArgs e) 
+{ 
+    var invalidItems = e.Errors; 
+} 
+{% endhighlight %}
+{% endtabs %}
+
+
 ## Valid or positive message
 
 If the value meets the desired criteria, you can show the [valid or positive message](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute~ValidMessage.html). As error message, the valid message will also be displayed at the bottom of the editor.

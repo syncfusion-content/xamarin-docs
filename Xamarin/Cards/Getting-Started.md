@@ -159,7 +159,7 @@ Run the project and check if you get following output to make sure that you have
 
 ## Indicator customization
 
-Indicator can be added in any direction; it can be used to denote the state based on the content of the [`SfCardView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~SfCardView.html).
+Indicator can be added in any direction. It can be used to denote the state based on the content of the [`SfCardView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~SfCardView.html).
 
 {% tabs %} 
 
@@ -179,8 +179,6 @@ Indicator can be added in any direction; it can be used to denote the state base
 {% endhighlight %}
 
 {% endtabs %}
-
-Refer to this [documentation](https://help.syncfusion.com/xamarin/cards/indicator) to learn more about the options available in [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html) to customize indicator.
 
 ## SwipeToDismiss
 

@@ -61,7 +61,7 @@ this.Content = cardLayout;
 
 ## SwipeDirection
 
-SwipeDirection propety indicates the swiping direction(Left or Right). 
+SwipeDirection property indicates the swiping direction(Left or Right). 
 
 {% tabs %} 
 

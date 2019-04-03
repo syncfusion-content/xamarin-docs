@@ -180,6 +180,7 @@ Token can be customized in the following ways:
 
 * `CornerRadius` - Sets the corner radius for the token.
 
+* `DeleteButtonPlacement` - sets the placement of delete button. `Left` and `Right` are the placement options. By default, it is set placed at right side of the token. 
 
 N> CornerRadius support has enhanced only on iOS and Android platform.
 
@@ -201,7 +202,7 @@ N> CornerRadius support has enhanced only on iOS and Android platform.
                 <combobox:TokenSettings FontSize="16" BackgroundColor="#66ccff" 
                                         TextColor="White" SelectedBackgroundColor="#ffffe0" 
                                         DeleteButtonColor="Color.Brown" IsCloseButtonVisible="true" 
-                                        CornerRadius="15">                   
+                                        CornerRadius="15" DeleteButtonPlacement="Right">                   
                 </combobox:TokenSettings>
             </combobox:SfComboBox.TokenSettings>
       </combobox:SfComboBox>      
@@ -235,6 +236,7 @@ N> CornerRadius support has enhanced only on iOS and Android platform.
     token.DeleteButtonColor = Color.Brown;
     token.IsCloseButtonVisible = true;
     token.CornerRadius = 15;
+    token.DeleteButtonPlacement = DeleteButtonPlacement.Right;
     comboBox.TokenSettings = token;
     comboBox.TokensWrapMode = TokensWrapMode.Wrap;  
 

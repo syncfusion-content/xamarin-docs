@@ -47,7 +47,7 @@ autoComplete.DataSource = countryNames;
 
 {% endtabs %}
 
-![](images/Populating-Data/populating-data-string.png)
+![Populating data string](images/Populating-Data/populating-data-string.png)
 
 ## Populating Business Objects
 
@@ -164,7 +164,7 @@ autoComplete.DisplayMemberPath = "Name";
 	
 {% endhighlight %}
 
-![](images/Populating-Data/populating-data-business-object.png)
+![Populating data business object](images/Populating-Data/populating-data-business-object.png)
 
 ### Setting ItemTemplate
 
@@ -214,4 +214,4 @@ Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/customizing-auto
 
 N> Add the required image in drawable folder(Android), Resources folder(iOS) and at project location for UWP.
 
-![](images/Populating-Data/item-template.png)
+![Item template](images/Populating-Data/item-template.png)

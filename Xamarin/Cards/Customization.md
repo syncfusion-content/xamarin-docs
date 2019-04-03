@@ -95,7 +95,7 @@ Indicators are used to indicate the state or level of something.
 
 {% highlight xaml %}
 
-    <cards:SfCardView x:Name="cardView" IndicatorColor="Cyan" IndicatorThickness="12" IndicatorPosition="Left" />
+    <cards:SfCardView IndicatorColor="Cyan" IndicatorThickness="12" IndicatorPosition="Left" />
 
 {% endhighlight %}
 
@@ -122,7 +122,7 @@ FadeOutOnSwiping can be enabled when the card view needs to be faded with respec
 
 {% highlight xaml %}
 
-    <cards:SfCardView x:Name="cardView" FadeOutOnSwiping="true"/>
+    <cards:SfCardView FadeOutOnSwiping="true"/>
  
 {% endhighlight %}
 

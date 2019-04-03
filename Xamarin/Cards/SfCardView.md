@@ -55,7 +55,5 @@ cardView.FadeOutOnSwiping = true;
 
 {% endtabs %}
 
-Run the project and check if you get following output to make sure that you have configured your project properly to add [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html).
-
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/xamarin.forms-cards).
 

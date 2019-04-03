@@ -35,50 +35,20 @@ Location : {Installed location}/{version}/Xamarin/lib
 
 <table>
 <tr>
-<td>
-PCL
-</td>
-<td>
-Syncfusion.Cards.XForms.dll<br/>
-Syncfusion.Core.XForms.dll<br/>
-Syncfusion.Licensing.dll<br/>
-</td>
+<td>PCL</td>
+<td>Syncfusion.Cards.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
-<td>
-Android
-</td>
-<td>
-Syncfusion.Cards.XForms.Android.dll<br/>
-Syncfusion.Cards.XForms.dll<br/>
-Syncfusion.Core.XForms.dll<br/>
-Syncfusion.Core.XForms.Android.dll<br/>
-Syncfusion.Licensing.dll<br/>
-</td>
+<td>Android</td>
+<td>Syncfusion.Cards.XForms.Android.dll<br/>Syncfusion.Cards.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
-<td>
-iOS
-</td>
-<td>
-Syncfusion.Cards.XForms.iOS.dll<br/>
-Syncfusion.Cards.XForms.dll<br/>
-Syncfusion.Core.XForms.dll<br/>
-Syncfusion.Core.XForms.iOS.dll<br/>
-Syncfusion.Licensing.dll<br/>
-</td>
+<td>iOS</td>
+<td>Syncfusion.Cards.XForms.iOS.dll<br/>Syncfusion.Cards.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
-<td>
-UWP
-</td>
-<td>
-Syncfusion.Cards.XForms.UWP.dll<br/>
-Syncfusion.Cards.XForms.dll<br/>
-Syncfusion.Core.XForms.dll<br/>
-Syncfusion.Core.XForms.UWP.dll<br/>
-Syncfusion.Licensing.dll<br/>
-</td>
+<td>UWP</td>
+<td>Syncfusion.Cards.XForms.UWP.dll<br/>Syncfusion.Cards.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -98,14 +68,14 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 {% highlight C# %} 
 
-    public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
-    { 
-        … 
-        global::Xamarin.Forms.Forms.Init();
-        Syncfusion.XForms.iOS.Cards.SfCardViewRenderer.Init();
-        LoadApplication(new App()); 
-        …
-    }
+public override bool FinishedLaunching(UIApplication app, NSDictionary options) 
+{ 
+	… 
+	global::Xamarin.Forms.Forms.Init();
+	Syncfusion.XForms.iOS.Cards.SfCardViewRenderer.Init();
+	LoadApplication(new App()); 
+	…
+}
 
 {% endhighlight %}
 
@@ -115,18 +85,18 @@ To deploy the cards in `Release` mode, you need to initialize the cards assembli
 
 {% highlight C# %} 
 
-    // In App.xaml.cs 
-    protected override void OnLaunched(LaunchActivatedEventArgs e)
-    { 
+// In App.xaml.cs 
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{ 
+	… 
+	if (rootFrame == null) 
+	{ 
+		List<Assembly> assembliesToInclude = new List<Assembly>();
+		assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Cards.SfCardViewRenderer).GetTypeInfo().Assembly);
+		Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+	} 
     … 
-        if (rootFrame == null) 
-        { 
-            List<Assembly> assembliesToInclude = new List<Assembly>();
-            assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Cards.SfCardViewRenderer).GetTypeInfo().Assembly);
-            Xamarin.Forms.Forms.Init(e, assembliesToInclude);
-        } 
-    … 
-    }
+}
 
 {% endhighlight %}
 
@@ -162,22 +132,22 @@ Initialize a card view with [`Content`](https://help.syncfusion.com/cr/cref_file
 
 {% highlight xaml %} 
 
-    <cards:SfCardView>
+<cards:SfCardView>
 
-         <Label  Text="SfCardView"/>
+	<Label  Text="SfCardView"/>
 
-    </cards:SfCardView>
+</cards:SfCardView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-    SfCardView cardView = new SfCardView();
+SfCardView cardView = new SfCardView();
 
-     //set Content for card view
-    cardView.Content = new Label(){ Text="SfCardView" };
+//set Content for card view
+cardView.Content = new Label(){ Text="SfCardView" };
 
-    this.Content = cardView;
+this.Content = cardView;
 
 {% endhighlight %}
 
@@ -187,31 +157,6 @@ Run the project and check if you get following output to make sure that you have
 
 ![Initializing Xamarin.Forms SfCardView](getting-started_images/img1.png)
 
-## Indicator customization
-
-Indicator can be added in any direction; it can be used to denote the state based on the content of the [`SfCardView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~SfCardView.html).
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-    <cards:SfCardView x:Name="cardView" IndicatorColor="Cyan" IndicatorThickness="12" IndicatorPosition="Left" />
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-    SfCardView cardView = new SfCardView();
-    cardView.IndicatorThickness = 12;
-    cardView.IndicatorPosition = IndicatorPosition.Left;
-    cardView.IndicatorColor = Color.Cyan;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-Refer to this [documentation](https://help.syncfusion.com/xamarin/cards/indicator) to learn more about the options available in [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html) to customize indicator.
-
 ## SwipeToDismiss
 
 The [`SwipeToDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~SwipeToDismiss.html) property is used to enable or disable swiping in SfCardView.
@@ -220,14 +165,20 @@ The [`SwipeToDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 {% highlight xaml %}
 
-    <cards:SfCardView x:Name="cardView" SwipeToDismiss="true"/>
+<cards:SfCardView SwipeToDismiss="true">
+
+	<Label  Text="SfCardView"/>
+
+</cards:SfCardView>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfCardView cardView = new SfCardView();
-    cardView.SwipeToDismiss = true;
+SfCardView cardView = new SfCardView();
+cardView.SwipeToDismiss = true;
+cardView.Content = new Label(){ Text="SfCardView" };
+this.Content = cardView;
 
 {% endhighlight %}
 
@@ -243,36 +194,36 @@ Initialize a card layout with card view as shown in the following code.
 
 {% highlight xaml %} 
 
-    <cards:SfCardLayout x:Name="cardLayout" SwipeDirection="Left" HeightRequest="500" BackgroundColor="#F0F0F0">
+<cards:SfCardLayout SwipeDirection="Left" HeightRequest="500" BackgroundColor="#F0F0F0">
 
-        <cards:SfCardView>
-          <Label  Text="Cyan" BackgroundColor="Cyan"/>
-        </cards:SfCardView>
+	<cards:SfCardView>
+		<Label  Text="Cyan" BackgroundColor="Cyan"/>
+	</cards:SfCardView>
 
-        <cards:SfCardView>
-            <Label  Text="Yellow" BackgroundColor="Yellow"/>
-        </cards:SfCardView>
+	<cards:SfCardView>
+		<Label  Text="Yellow" BackgroundColor="Yellow"/>
+	</cards:SfCardView>
 
-        <cards:SfCardView>
-            <Label  Text="Orange" BackgroundColor="Orange"/>
-        </cards:SfCardView>  
+	<cards:SfCardView>
+		<Label  Text="Orange" BackgroundColor="Orange"/>
+	</cards:SfCardView>  
 
-    </cards:SfCardLayout>
+</cards:SfCardLayout>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-    SfCardLayout cardLayout = new SfCardLayout();
+SfCardLayout cardLayout = new SfCardLayout();
 
-    //Add children for card layout 
-    cardLayout.Children.Add(new SfCardView(){Content = new Label(){ Text="Cyan", BackgroundColor=Color.Cyan }});
+//Add children for card layout 
+cardLayout.Children.Add(new SfCardView(){Content = new Label(){ Text="Cyan", BackgroundColor=Color.Cyan }});
 
-    cardLayout.Children.Add(new SfCardView(){Content = new Label(){ Text="Yellow", BackgroundColor=Color.Yellow }});
+cardLayout.Children.Add(new SfCardView(){Content = new Label(){ Text="Yellow", BackgroundColor=Color.Yellow }});
 
-    cardLayout.Children.Add(new SfCardView(){Content = new Label(){ Text="Orange", BackgroundColor=Color.Orange }});
+cardLayout.Children.Add(new SfCardView(){Content = new Label(){ Text="Orange", BackgroundColor=Color.Orange }});
 
-    this.Content = cardLayout;
+this.Content = cardLayout;
 
 {% endhighlight %}
 

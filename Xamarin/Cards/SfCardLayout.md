@@ -15,17 +15,17 @@ ShowSwipedCard can be enabled to show swiped cards at the edge of card layout.
 
 {% highlight xaml %}
 
-    <cards:SfCardLayout ShowSwipedCard="true">
-    </cards:SfCardLayout>
+<cards:SfCardLayout ShowSwipedCard="true">
+</cards:SfCardLayout>
  
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfCardLayout cardLayout = new SfCardLayout();
-    cardlayout.ShowSwipedCard = true;
+SfCardLayout cardLayout = new SfCardLayout();
+cardlayout.ShowSwipedCard = true;
 
-    this.Content = cardLayout;
+this.Content = cardLayout;
 
 {% endhighlight %}
 
@@ -41,17 +41,17 @@ VisibleCardIndex is used when the given index of the card to be displayed in fro
 
 {% highlight xaml %}
 
-    <cards:SfCardLayout VisibleCardIndex="1">
-    </cards:SfCardLayout>
+<cards:SfCardLayout VisibleCardIndex="1">
+</cards:SfCardLayout>
  
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfCardLayout cardLayout = new SfCardLayout();
-    cardlayout.VisibleCardIndex = 1;
+SfCardLayout cardLayout = new SfCardLayout();
+cardlayout.VisibleCardIndex = 1;
 
-    this.Content = cardLayout;
+this.Content = cardLayout;
 
 {% endhighlight %}
 
@@ -67,17 +67,17 @@ SwipeDirection propety indicates the swiping direction(Left or Right).
 
 {% highlight xaml %}
 
-    <cards:SfCardLayout SwipeDirection="Right">
-    </cards:SfCardLayout>
+<cards:SfCardLayout SwipeDirection="Right">
+</cards:SfCardLayout>
  
 {% endhighlight %}
 
 {% highlight C# %}
 
-    SfCardLayout cardLayout = new SfCardLayout();
-    cardlayout.SwipeDirection = CardSwipeDirection.Right;
+SfCardLayout cardLayout = new SfCardLayout();
+cardlayout.SwipeDirection = CardSwipeDirection.Right;
 
-    this.Content = cardLayout;
+this.Content = cardLayout;
 
 {% endhighlight %}
 

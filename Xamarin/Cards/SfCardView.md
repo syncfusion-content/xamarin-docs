@@ -21,10 +21,10 @@ Indicators are used to indicate the state or level of something.
 
 {% highlight C# %}
 
-    SfCardView cardView = new SfCardView();
-    cardView.IndicatorThickness = 12;
-    cardView.IndicatorPosition = IndicatorPosition.Left;
-    cardView.IndicatorColor = Color.Cyan;
+SfCardView cardView = new SfCardView();
+cardView.IndicatorThickness = 12;
+cardView.IndicatorPosition = IndicatorPosition.Left;
+cardView.IndicatorColor = Color.Cyan;
 
 {% endhighlight %}
 
@@ -48,8 +48,8 @@ FadeOutOnSwiping can be enabled when we need to fade the card view with respect 
 
 {% highlight C# %}
 
-    SfCardView cardView = new SfCardView(); 
-    cardView.FadeOutOnSwiping = true;
+SfCardView cardView = new SfCardView(); 
+cardView.FadeOutOnSwiping = true;
 
 {% endhighlight %}
 

@@ -32,11 +32,11 @@ cardView.IndicatorColor = Color.Cyan;
 
 ![Indicator in Xamarin.Forms SfCardLayout](cardview-customization_images/indicator.png)
 
-Refer this [link](https://help.syncfusion.com/xamarin/cards/indicator) to learn more about the options available in [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html) to customize indicator.
+Refer to this [documentation](https://help.syncfusion.com/xamarin/cards/indicator) to learn more about the options available in [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html) to customize the indicator.
 
 ## FadeOutOnSwiping
 
-FadeOutOnSwiping can be enabled when we need to fade the card view with respect to swiping.
+FadeOutOnSwiping can be enabled when the card view needs to be faded with respect to swiping.
 
 {% tabs %} 
 
@@ -55,7 +55,7 @@ cardView.FadeOutOnSwiping = true;
 
 {% endtabs %}
 
-Run the project and check if you get following output to make sure you have configuCyan your project properly to add [`Cards`.](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html)
+Run the project and check if you get following output to make sure that you have configured your project properly to add [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html).
 
-You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/xamarin.forms-cards)
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/xamarin.forms-cards).
 

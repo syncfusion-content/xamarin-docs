@@ -274,12 +274,12 @@ public MainPageCS()
 private void InitializeAccordionItems()
 {
 	Accordion = new SfAccordion();
-    Accordion.Items.Add(AccordionItem1());
-    Accordion.Items.Add(AccordionItem2());
-    Accordion.Items.Add(AccordionItem3());
+    Accordion.Items.Add(GenerateInvoiceHeaderAccordion());
+    Accordion.Items.Add(GenerateInvoiceItemsAccordion());
+    Accordion.Items.Add(GeneratePaymentDetailsAccordion());
 }
 
-private AccordionItem AccordionItem1()
+private AccordionItem GenerateInvoiceHeaderAccordion()
 {
 	var item = new AccordionItem();
     var headerGrid = new Grid() { Padding = new Thickness(10, 0, 0, 10) };
@@ -295,7 +295,7 @@ private AccordionItem AccordionItem1()
     return item;
 }
 
-private AccordionItem AccordionItem2()
+private AccordionItem GenerateInvoiceItemsAccordion()
 {
 	var item = new AccordionItem();
     var headerGrid = new Grid() { Padding = new Thickness(10, 0, 10, 10) };
@@ -313,8 +313,8 @@ private AccordionItem AccordionItem2()
     contentGrid.ColumnDefinitions.Add(new ColumnDefinition() { Width = new GridLength(1, GridUnitType.Star) });
 
     var contentLabel0 = new Label() { TextColor = Color.FromHex("#303030"), Text = "2018 Subaru Outback" };
+	var contentLabel2 = new Label() { TextColor = Color.FromHex("#303030"), Text = "Door Edge Guard Kit" };
     var contentLabel1 = new Label() { TextColor = Color.FromHex("#303030"), Text = "All-Weather Mats" };
-    var contentLabel2 = new Label() { TextColor = Color.FromHex("#303030"), Text = "Door Edge Guard Kit" };
     var contentLabel3 = new Label() { TextColor = Color.FromHex("#303030"), Text = "Rear Bumper Cover" };
     var contentLabel4 = new Label() { TextColor = Color.FromHex("#303030"), Text = "Total Amount Paid", FontAttributes = FontAttributes.Bold };
     var contentLabel5 = new Label() { TextColor = Color.FromHex("#303030"), Text = "$35,705.00", HorizontalTextAlignment = TextAlignment.End };
@@ -322,7 +322,6 @@ private AccordionItem AccordionItem2()
     var contentLabel7 = new Label() { TextColor = Color.FromHex("#303030"), Text = "$100.00", HorizontalTextAlignment = TextAlignment.End };
     var contentLabel8 = new Label() { TextColor = Color.FromHex("#303030"), Text = "$95.00", HorizontalTextAlignment = TextAlignment.End };
     var contentLabel9 = new Label() { TextColor = Color.FromHex("#303030"), Text = "$36,000.00", HorizontalTextAlignment = TextAlignment.End, FontAttributes = FontAttributes.Bold };
-
 
     contentGrid.Children.Add(contentLabel0, 0, 0);
     contentGrid.Children.Add(contentLabel1, 0, 1);
@@ -340,7 +339,7 @@ private AccordionItem AccordionItem2()
     return item;
 }
 
-private AccordionItem AccordionItem3()
+private AccordionItem GeneratePaymentDetailsAccordion()
 {
 	var item = new AccordionItem();
     var headerGrid = new Grid() { Padding = new Thickness(10, 0, 10, 10) };
@@ -348,7 +347,7 @@ private AccordionItem AccordionItem3()
     headerGrid.Children.Add(headerLabel);
 
     var contentGrid = new Grid() { Padding = new Thickness(10, 0, 10, 10), BackgroundColor = Color.FromHex("#FFFFFF") };
-	contentGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Auto) });
+    contentGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Auto) });
     contentGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Auto) });
     contentGrid.RowDefinitions.Add(new RowDefinition() { Height = new GridLength(1, GridUnitType.Auto) });
 

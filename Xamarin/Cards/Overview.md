@@ -7,11 +7,11 @@ control : Cards
 documentation : ug
 ---
 
-### Overview
+# Overview
 
 The new Cards control allows you to create a dismissible card or a stack of cards where one card is visible at a time until you swipe to see the next card.
 
-### Key features
+## Key features
 
 * Allows you swipe to the left or right to move the card smoothly to view the next card.
 * Allows you swipe to the left or right to dismiss the card.

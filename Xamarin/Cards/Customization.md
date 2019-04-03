@@ -116,8 +116,6 @@ cardView.IndicatorColor = Color.Cyan;
 
 ![Indicator in Xamarin.Forms SfCardLayout](cardview-customization_images/indicator.png)
 
-Refer to this [documentation](https://help.syncfusion.com/xamarin/cards/indicator) to learn more about the options available in [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html) to customize the indicator.
-
 ## FadeOutOnSwiping
 
 FadeOutOnSwiping can be enabled when the card view needs to be faded with respect to swiping.

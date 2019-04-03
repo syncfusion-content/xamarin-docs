@@ -31,7 +31,7 @@ ShowSwipedCard can be enabled to show swiped cards at the edge of card layout.
 
 {% endtabs %}
 
-![ShowSwipedCard in Xamarin.Forms SfCardLayout](Getting-Started_images/showswipedcard.png)
+![ShowSwipedCard in Xamarin.Forms SfCardLayout](cardlayout-customization_images/showswipedcard.png)
 
 ## VisibleCardIndex
 
@@ -57,7 +57,7 @@ VisibleCardIndex is used when the given index of the card to be displayed in fro
 
 {% endtabs %}
 
-![VisibleCardIndex in Xamarin.Forms SfCardLayout](Getting-Started_images/showswipedcard.png)
+![VisibleCardIndex in Xamarin.Forms SfCardLayout](cardlayout-customization_images/showswipedcard.png)
 
 ## SwipeDirection
 
@@ -83,7 +83,7 @@ SwipeDirection propety indicates the swiping direction(Left or Right).
 
 {% endtabs %}
 
-![SwipeDirection in Xamarin.Forms SfCardLayout](Getting-Started_images/swipedirection.png)
+![SwipeDirection in Xamarin.Forms SfCardLayout](cardlayout-customization_images/swipedirection.png)
 
 Run the project and check if you get following output to make sure you have configuCyan your project properly to add [`Cards`.](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html)
 

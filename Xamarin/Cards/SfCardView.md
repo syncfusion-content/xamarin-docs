@@ -30,7 +30,7 @@ Indicators are used to indicate the state or level of something.
 
 {% endtabs %}
 
-![Indicator in Xamarin.Forms SfCardLayout](Getting-Started_images/indicator.png)
+![Indicator in Xamarin.Forms SfCardLayout](cardview-customization_images/indicator.png)
 
 Refer this [link](https://help.syncfusion.com/xamarin/cards/indicator) to learn more about the options available in [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html) to customize indicator.
 

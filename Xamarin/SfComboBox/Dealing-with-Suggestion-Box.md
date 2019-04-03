@@ -39,9 +39,9 @@ Suggestion Box can be placed either at the top or bottom using the `SuggestionBo
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
@@ -54,7 +54,6 @@ SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 
@@ -97,9 +96,9 @@ The maximum height of the suggestion box in the SfComboBox control can be varied
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };
 
 List<String> countryNames = new List<String>();
@@ -118,7 +117,6 @@ SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.MaximumDropDownHeight = 100;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 
@@ -156,9 +154,9 @@ Suggestion Box can be shown whenever control receives focus using the `ShowSugge
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	
 List<String> countryNames = new List<String>();
 countryNames.Add("Great Britain");
@@ -215,9 +213,9 @@ Here in this example, a time duration of 3 seconds is set as popup delay.
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
@@ -266,10 +264,11 @@ APIs are available to avoid pop-ups and retrieve filtered suggestion items that 
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -281,7 +280,6 @@ SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
 comboBox.SuggestionBoxPlacement = SuggestionBoxPlacement.None;
 comboBox.DataSource = countryNames;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 

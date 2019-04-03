@@ -41,9 +41,9 @@ In editable mode, the combo box allows users to edit in the text box that shows 
 	
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
@@ -56,7 +56,6 @@ SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 	 
@@ -94,10 +93,11 @@ Non-editable mode prevents users from typing and allows them to select from drop
 	
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -109,7 +109,6 @@ SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = false;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 	 

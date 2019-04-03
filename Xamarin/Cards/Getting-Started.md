@@ -157,29 +157,6 @@ Run the project and check if you get following output to make sure that you have
 
 ![Initializing Xamarin.Forms SfCardView](getting-started_images/img1.png)
 
-## Indicator customization
-
-Indicator can be added in any direction. It can be used to denote the state based on the content of the [`SfCardView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~SfCardView.html).
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-    <cards:SfCardView IndicatorColor="Cyan" IndicatorThickness="12" IndicatorPosition="Left" />
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfCardView cardView = new SfCardView();
-cardView.IndicatorThickness = 12;
-cardView.IndicatorPosition = IndicatorPosition.Left;
-cardView.IndicatorColor = Color.Cyan;
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ## SwipeToDismiss
 
 The [`SwipeToDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~SwipeToDismiss.html) property is used to enable or disable swiping in SfCardView.

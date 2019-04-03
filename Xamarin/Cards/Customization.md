@@ -7,6 +7,8 @@ control: Cards
 documentation: ug
 ---
 
+# Customization in CardLayout
+
 ## ShowSwipedCard
 
 ShowSwipedCard can be enabled to show the swiped cards at the edge of card layout.
@@ -23,7 +25,7 @@ ShowSwipedCard can be enabled to show the swiped cards at the edge of card layou
 {% highlight C# %}
 
 SfCardLayout cardLayout = new SfCardLayout();
-cardlayout.ShowSwipedCard = true;
+cardLayout.ShowSwipedCard = true;
 
 this.Content = cardLayout;
 
@@ -49,7 +51,7 @@ VisibleCardIndex is used when given index of the card to be displayed in front o
 {% highlight C# %}
 
 SfCardLayout cardLayout = new SfCardLayout();
-cardlayout.VisibleCardIndex = 1;
+cardLayout.VisibleCardIndex = 1;
 
 this.Content = cardLayout;
 
@@ -75,7 +77,7 @@ The SwipeDirection property indicates the swiping direction (left or right).
 {% highlight C# %}
 
 SfCardLayout cardLayout = new SfCardLayout();
-cardlayout.SwipeDirection = CardSwipeDirection.Right;
+cardLayout.SwipeDirection = CardSwipeDirection.Right;
 
 this.Content = cardLayout;
 
@@ -86,6 +88,8 @@ this.Content = cardLayout;
 ![SwipeDirection in Xamarin.Forms SfCardLayout](cardlayout-customization_images/swipedirection.png)
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/xamarin.forms-cards).
+
+# Customization in CardView
 
 ## Indicator customization
 

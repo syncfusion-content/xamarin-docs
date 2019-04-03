@@ -7,9 +7,9 @@ control: Cards
 documentation: ug
 ---
 
-# Customization in CardLayout
+## Customization in CardLayout
 
-## ShowSwipedCard
+### ShowSwipedCard
 
 ShowSwipedCard can be enabled to show the swiped cards at the edge of card layout.
 
@@ -35,7 +35,7 @@ this.Content = cardLayout;
 
 ![ShowSwipedCard in Xamarin.Forms SfCardLayout](cardlayout-customization_images/showswipedcard.png)
 
-## VisibleCardIndex
+### VisibleCardIndex
 
 VisibleCardIndex is used when given index of the card to be displayed in front of the card layout.
 
@@ -61,7 +61,7 @@ this.Content = cardLayout;
 
 ![VisibleCardIndex in Xamarin.Forms SfCardLayout](cardlayout-customization_images/showswipedcard.png)
 
-## SwipeDirection
+### SwipeDirection
 
 The SwipeDirection property indicates the swiping direction (left or right).
 
@@ -89,9 +89,9 @@ this.Content = cardLayout;
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/xamarin.forms-cards).
 
-# Customization in CardView
+## Customization in CardView
 
-## Indicator customization
+### Indicator customization
 
 Indicators are used to indicate the state or level of something.
 
@@ -116,7 +116,7 @@ cardView.IndicatorColor = Color.Cyan;
 
 ![Indicator in Xamarin.Forms SfCardLayout](cardview-customization_images/indicator.png)
 
-## FadeOutOnSwiping
+### FadeOutOnSwiping
 
 FadeOutOnSwiping can be enabled when the card view needs to be faded with respect to swiping.
 

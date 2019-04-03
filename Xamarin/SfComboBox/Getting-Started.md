@@ -164,9 +164,9 @@ Then initialize an empty combobox as shown in the following code,
 
 StackLayout layout = new StackLayout()
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start,
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start,
+    Padding = new Thickness(30) 
 };
 SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
@@ -227,9 +227,9 @@ Now, a list of string with resolution list is created and added to the SfComboBo
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	    
 List<String> resolutionList = new List<String>();
 resolutionList.Add("1920 x 1080");
@@ -311,9 +311,9 @@ Non-editable mode prevents users from typing and allows them to select items fro
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	    
 List<String> resolutionList = new List<String>();
 resolutionList.Add("1920 x 1080");
@@ -390,9 +390,9 @@ In editable mode, the combo box allows users to edit in the text box that shows 
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	    
 List<String> resolutionList = new List<String>();
 resolutionList.Add("1920 x 1080");
@@ -468,9 +468,9 @@ When selecting an item from the drop-down list, the selection changed event will
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	    
 
 List<String> resolutionList = new List<String>();

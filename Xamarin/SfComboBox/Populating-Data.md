@@ -46,9 +46,9 @@ Create an instance of string list and populate items as shown in the following c
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 }; 
 
 List<String> countryNames = new List<String>(); 
@@ -153,9 +153,9 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
 
 StackLayout layout = new StackLayout()
 {
-	VerticalOptions = LayoutOptions.Start,
-	HorizontalOptions = LayoutOptions.Start,
-	Padding = new Thickness(30)
+    VerticalOptions = LayoutOptions.Start,
+    HorizontalOptions = LayoutOptions.Start,
+    Padding = new Thickness(30)
 };
 
 EmployeeViewModel employee = new EmployeeViewModel();
@@ -164,7 +164,6 @@ comboBox.HeightRequest = 40;
 comboBox.BindingContext = employee;
 comboBox.DataSource = employee.EmployeeCollection;
 comboBox.DisplayMemberPath = "Name";
-
 layout.Children.Add(comboBox);
 Content = layout;
 
@@ -214,25 +213,25 @@ The ItemTemplate in the previous XAML code is translated to C# which is shown in
 
 DataTemplate itemTemplate = new DataTemplate(() =>
 {
-	StackLayout stack;
-	Image image;
-	Label label;
-	stack = new StackLayout();
-	stack.Orientation = StackOrientation.Horizontal;
-	image = new Image();
-	image.Source = (FileImageSource)ImageSource.FromFile("User.png");
-	label = new Label();
-	label.SetBinding(Label.TextProperty, "Name");
-	stack.Children.Add(image);
-	stack.Children.Add(label);
-	return new ViewCell { View = stack };
+    StackLayout stack;
+    Image image;
+    Label label;
+    stack = new StackLayout();
+    stack.Orientation = StackOrientation.Horizontal;
+    image = new Image();
+    image.Source = (FileImageSource)ImageSource.FromFile("User.png");
+    label = new Label();
+    label.SetBinding(Label.TextProperty, "Name");
+    stack.Children.Add(image);
+    stack.Children.Add(label);
+    return new ViewCell { View = stack };
 });
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 }; 
 
 EmployeeViewModel employee = new EmployeeViewModel();

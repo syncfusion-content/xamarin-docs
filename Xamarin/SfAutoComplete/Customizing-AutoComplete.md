@@ -20,7 +20,7 @@ AutoComplete provides user friendly customizing options for both entry part and 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" Text="Sample text" TextColor="#1976d2" TextSize="20" BorderColor="#1976d2"/>
+	<autocomplete:SfAutoComplete HeightRequest="45" x:Name="autoComplete" Text="Sample text" TextColor="#1976d2" TextSize="20" BorderColor="#1976d2"/>
 </StackLayout>
 
 {% endhighlight %}
@@ -35,7 +35,7 @@ Padding = new Thickness(30)
 };
 SfAutoComplete autoComplete = new SfAutoComplete() 
 { 
-HeightRequest = 40,  
+HeightRequest = 45,  
 Text = "Sample text", 
 TextColor = Color.FromHex("1976d2"), 
 TextSize = 20, 
@@ -62,9 +62,9 @@ this.Content = stackLayout;
 <autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DisplayMemberPath="Name" DataSource="{Binding PersonCollection}">
 	<autocomplete:SfAutoComplete.ItemTemplate>
 	<DataTemplate>
-		<StackLayout Orientation="Horizontal">
+		<StackLayout Orientation="Horizontal" Padding="2,0,0,0">
 		<Image Source="User.png" WidthRequest="12"/>
-		<Label Text="{Binding Name}" />
+		<Label Text="{Binding Name}" VerticalOptions="Center"/>
 		</StackLayout>
 	</DataTemplate>
 	</autocomplete:SfAutoComplete.ItemTemplate>
@@ -173,6 +173,7 @@ autoComplete.DataSource = countryNames;
 autoComplete.DropDownCornerRadius = 3;
 autoComplete.DropDownItemHeight = 45;
 mainLayout.Children.Add(autoComplete);
+this.Content = mainLayout;
 
 {% endhighlight %}
 
@@ -220,6 +221,7 @@ countryNames.Add("United States");
 autoComplete.DataSource = countryNames;
 autoComplete.DropDownCornerRadius = 3;
 mainLayout.Children.Add(autoComplete);
+this.Content = mainLayout;
 
 {% endhighlight %}
 

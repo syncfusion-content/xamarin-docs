@@ -11,336 +11,290 @@ documentation: ug
 
 SfComboBox provides a way to get the selected values using SelectedValue and SelectedIndex properties.
 
-## Behaviors for the SelectionChanged event to return the SelectedIndex
+## Retrieving the Index of Selected Item
 
-Use the below given behaviors code for selection changed event of SfComboBox
+When an item is selected from suggestion list, its index can be retrieved using [`SelectedIndex`] property. 
+SelectedIndex property holds the index of selected item in suggestion list. 
 
-
-{% highlight c# %}
-
-    public class CustomBehavior : Behavior<SfComboBox>
-    {
-        SfComboBox combo; 
-        protected override void OnAttachedTo(SfComboBox bindable)
-        {
-            base.OnAttachedTo(bindable);
-            combo = bindable;
-            bindable.SelectionChanged += Bindable_SelectionChanged;
-        }
-
-        async private void Bindable_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var answer = await Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Selection Changed", "Selected Index: " + combo.SelectedIndex, null, "OK");
-        }
-        protected override void OnDetachingFrom(SfComboBox bindable)
-        {
-            base.OnDetachingFrom(bindable);
-        }
-    }
-
-
-{% endhighlight %}
-
-
-## Retrieving the index of selected item
-
-When an item is selected from suggestion list, its index can be retrieved using the [`SelectedIndex`] property. 
-This property holds the index of selected item in suggestion list. 
-
-The following code example shows the way to retrieve SelectedIndex and display it in an alert.
+The following code example demonstrates the way to retrieve SelectedIndex and display it in an alert.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="Handle_SelectionChanged">
-        <combobox:SfComboBox.ComboBoxSource>
-            <ListCollection:List x:TypeArguments="x:String">
-                <x:String> Uganda </x:String>
-                <x:String> Ukraine </x:String>
-                <x:String> United Arab Emirates </x:String>
-                <x:String> United Kingdom </x:String>
-                <x:String> United States </x:String>
-            </ListCollection:List>
-        </combobox:SfComboBox.ComboBoxSource>
-        <combobox:SfComboBox.Behaviors>
-            <local:CustomBehavior/>
-        </combobox:SfComboBox.Behaviors>
-    </combobox:SfComboBox>                                                 
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ComboBox"
+	      xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="ComboBox.MainPage">
 
-{% endhighlight %}
+	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+		<comboBox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="ComboBox_SelectionChanged"/>
+	</StackLayout>
 
-{% highlight c# %}
-
-StackLayout layout = new StackLayout() 
-{ 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
-};	
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-
-SfComboBox comboBox = new SfComboBox();
-comboBox.HeightRequest = 40;
-comboBox.DataSource = countryNames;
-comboBox.IsEditableMode = true;
-comboBox.Behaviors.Add(new CustomBehavior());
-
-layout.Children.Add(comboBox); 
-Content = layout; 
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-## Behaviors for the SelectionChanged event to return the SelectedValue
-
-Use the below given behaviors code for selection changed event of SfComboBox
-
-
-{% highlight c# %}
-
-    public class CustomBehavior : Behavior<SfComboBox>
-    {
-        SfComboBox combo; 
-        protected override void OnAttachedTo(SfComboBox bindable)
-        {
-            base.OnAttachedTo(bindable);
-            combo = bindable;
-            bindable.SelectionChanged += Bindable_SelectionChanged;
-        }
-
-        async private void Bindable_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var answer = await Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Selection Changed", "Selected Index: " + combo.SelectedValue.ToString(), null, "OK");
-        }
-        protected override void OnDetachingFrom(SfComboBox bindable)
-        {
-            base.OnDetachingFrom(bindable);
-        }
-    }
-
-
-{% endhighlight %}
-
-
-## Retrieving the value of selected item
-
-When an item is selected from suggestion list, selected value can be retrieved using the [`SelectedValue`] property. If the DataSource is bound to string data, then selected string is set to the SelectedValue property.  
-
-The following code example shows the way to retrieve SelectedValue and display it in an alert.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="Handle_SelectionChanged">
-        <combobox:SfComboBox.ComboBoxSource>
-            <ListCollection:List x:TypeArguments="x:String">
-                <x:String> Uganda </x:String>
-                <x:String> Ukraine </x:String>
-                <x:String> United Arab Emirates </x:String>
-                <x:String> United Kingdom </x:String>
-                <x:String> United States </x:String>
-            </ListCollection:List>
-        </combobox:SfComboBox.ComboBoxSource>
-        <combobox:SfComboBox.Behaviors>
-            <local:CustomBehavior/>
-        </combobox:SfComboBox.Behaviors>
-    </combobox:SfComboBox>                                             
-</StackLayout> 
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-StackLayout layout = new StackLayout() 
-{ 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
-};	
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-
-SfComboBox comboBox = new SfComboBox();
-comboBox.HeightRequest = 40;
-comboBox.DataSource = countryNames;
-comboBox.IsEditableMode = true;
-comboBox.Behaviors.Add(new CustomBehavior());
-
-layout.Children.Add(comboBox); 
-Content = layout;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### How to select a value 
-
-The `SelectedItem` property is used to select a value in SfComboBox control.
-
-The following code example shows to set a value.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectedItem="Ukraine">
-        <combobox:SfComboBox.ComboBoxSource>
-            <ListCollection:List x:TypeArguments="x:String">
-                <x:String> Uganda </x:String>
-                <x:String> Ukraine </x:String>
-                <x:String> United Arab Emirates </x:String>
-                <x:String> United Kingdom </x:String>
-                <x:String> United States </x:String>
-            </ListCollection:List>
-        </combobox:SfComboBox.ComboBoxSource>
-    </combobox:SfComboBox>                                             
-</StackLayout> 
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-StackLayout layout = new StackLayout() 
-{ 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
-};	
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-
-SfComboBox comboBox = new SfComboBox();
-comboBox.HeightRequest = 40;
-comboBox.DataSource = countryNames;
-comboBox.IsEditableMode = true;
-comboBox.SelectedItem = "Ukraine";
-
-layout.Children.Add(comboBox); 
-Content = layout;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-N> SelectedValue property is a read only property and it cannot be used to select a value in SfComboBox control.
-
-### Retrieving a member of model object
-
-If the DataSource is bound to business object data, there is an additional step to get the SelectedValue. The model class may have one or more properties. So, it is necessary to intimate the combo box control that which property of model class should be stored in the SelectedValue property. This can be accomplished using the [`SelectedValuePath`] property.
-
-Define a simple model class Employee with fields ID, Name and populate employee data in ViewModel.
-
-{% highlight c# %}
-
-// Create a Employee Class which holds the Name and id.
-public class Employee
-{
-private int id;
-public int ID
-{
-	get { return id; }
-	set { id = value; }
-}
-private string name;
-public string Name
-{
-	get { return name; }
-	set { name = value; }
-}
-}
-
-// Create EmployeeViewModel class holds the collection of employee data. 
-public class EmployeeViewModel
-{
-private ObservableCollection<Employee> employeeCollection;
-public ObservableCollection<Employee> EmployeeCollection
-{
-	get { return employeeCollection; }
-	set { employeeCollection = value; }
-}
-public EmployeeViewModel()
-{
-	employeeCollection = new ObservableCollection<Employee>();
-	employeeCollection.Add(new Employee() { ID = 1, Name = "Eric" });
-	employeeCollection.Add(new Employee() { ID = 2, Name = "James" });
-	employeeCollection.Add(new Employee() { ID = 3, Name = "Jacob" });
-	employeeCollection.Add(new Employee() { ID = 4, Name = "Lucas" });
-	employeeCollection.Add(new Employee() { ID = 5, Name = "Mark" });
-}
-}
-
-{% endhighlight %}
-
-Now populate this EmployeeViewModel data in SfComboBox control by binding with [`DataSource`] property. 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
-             xmlns:local="clr-namespace:NamespaceName"            
-             x:Class="NamespaceName.ClassName">
-    <ContentPage.BindingContext>
-        <local:EmployeeViewModel/>
-    </ContentPage.BindingContext>
-    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="Handle_SelectionChanged" DataSource="{Binding EmployeeCollection}">
-            <combobox:SfComboBox.Behaviors>
-                <local:CustomBehavior/>
-            </combobox:SfComboBox.Behaviors>
-        </combobox:SfComboBox>
-    </StackLayout> 
 </ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-	StackLayout layout = new StackLayout() 
-    { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
-    }; 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
 
-    SfComboBox comboBox = new SfComboBox();
-    comboBox.BindingContext = new EmployeeViewModel();
-	comboBox.DisplayMemberPath = "Name";
-	comboBox.SelectedValuePath = "ID";
-	comboBox.Behaviors.Add(new CustomBehavior());
+namespace ComboBox
+{
+	public partial class MainPage : ContentPage
+	{
+		public MainPage()
+		{
+			InitializeComponent();
+			List<String> countryNames = new List<String>();
+			countryNames.Add("Uganda");
+			countryNames.Add("Ukraine");
+			countryNames.Add("United Arab Emirates");
+			countryNames.Add("United Kingdom");
+			countryNames.Add("United States");
+			comboBox.DataSource = countryNames;
+		}
 
-    Binding binding = new Binding("EmployeeCollection");
-    binding.Source = this;
-    binding.Mode = BindingMode.TwoWay;
-    comboBox.SetBinding(Label.DataSourceProperty,binding);
-
-    layout.Children.Add(comboBox); 
-    Content = layout;
+		private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
+		{
+			DisplayAlert("Selection Changed", "Selected Index: " + comboBox.SelectedIndex, "OK");
+		}
+	}
+}
 
 {% endhighlight %}
 
 {% endtabs %}
+
+## Retrieving the Value of Selected Item
+
+When an item is selected from suggestion list, selected value can be retrieved using [`SelectedValue`] property. If the DataSource is bound to string data, then selected string is set to the SelectedValue property.  
+
+The following code example demonstrates the way to retrieve SelectedValue and display it in an alert.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ComboBox"
+			 xmlns:comboBox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="ComboBox.MainPage">
+
+	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+		<comboBox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="ComboBox_SelectionChanged"/>
+	</StackLayout>
+
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace ComboBox
+{
+	public partial class MainPage : ContentPage
+	{
+		public MainPage()
+		{
+			InitializeComponent();
+			List<String> countryNames = new List<String>();
+			countryNames.Add("Uganda");
+			countryNames.Add("Ukraine");
+			countryNames.Add("United Arab Emirates");
+			countryNames.Add("United Kingdom");
+			countryNames.Add("United States");
+			comboBox.DataSource = countryNames;
+		}
+
+		private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
+		{
+			DisplayAlert("Selection Changed", "Selected Value: " + comboBox.SelectedValue.ToString(), "OK");
+		}
+	}
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Retrieving a Member of Model Object
+
+If the DataSource is bound to business object data, there is an additional step to get the SelectedValue. The model class may have one or more properties. So, it is necessary to intimate AutoComplete that which property of model class should be stored in SelectedValue property. This can be accomplished by [`SelectedValuePath`] property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ComboBox"
+			 xmlns:comboBox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="ComboBox.MainPage">
+
+	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+		<comboBox:SfComboBox HeightRequest="40" x:Name="comboBox" DataSource="{Binding EmployeeCollection}" DisplayMemberPath="Name" SelectedValuePath="ID" SelectionChanged="ComboBox_SelectionChanged"/>
+	</StackLayout>
+
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace ComboBox
+{
+	public partial class MainPage : ContentPage
+	{
+		public MainPage()
+		{
+			InitializeComponent();
+			comboBox.BindingContext = new EmployeeViewModel();
+		}
+
+		private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
+		{
+			DisplayAlert("Selection Changed", "Selected Value: " + comboBox.SelectedValue.ToString(), "OK");
+		}
+	}
+	public class Employee
+	{
+		private int id;
+		public int ID
+		{
+			get { return id; }
+			set { id = value; }
+		}
+		private string name;
+		public string Name
+		{
+			get { return name; }
+			set { name = value; }
+		}
+	}
+	public class EmployeeViewModel
+	{
+		private ObservableCollection<Employee> employeeCollection;
+		public ObservableCollection<Employee> EmployeeCollection
+		{
+			get { return employeeCollection; }
+			set { employeeCollection = value; }
+		}
+		public EmployeeViewModel()
+		{
+			employeeCollection = new ObservableCollection<Employee>();
+			employeeCollection.Add(new Employee() { ID = 1, Name = "Eric" });
+			employeeCollection.Add(new Employee() { ID = 2, Name = "James" });
+			employeeCollection.Add(new Employee() { ID = 3, Name = "Jacob" });
+			employeeCollection.Add(new Employee() { ID = 4, Name = "Lucas" });
+			employeeCollection.Add(new Employee() { ID = 5, Name = "Mark" });
+		}
+	}
+}
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+If the DataSource is bound to business object data, the selected item can be set initially by specifying the index of the data source item. The property specified in the `SelectedValuePath` will be displayed with respect to index of the selected item.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ComboBox"
+			 xmlns:comboBox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="ComboBox.MainPage">
+
+	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+		<comboBox:SfComboBox HeightRequest="40" x:Name="comboBox" DisplayMemberPath="Name" SelectedValuePath="ID" SelectionChanged="ComboBox_SelectionChanged"/>
+	</StackLayout>
+
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace ComboBox
+{
+	public partial class MainPage : ContentPage
+	{
+		public MainPage()
+		{
+			InitializeComponent();
+			var employeeCollection = new ObservableCollection<Employee>
+			{
+				new Employee{ ID = 1, Name = "Eric" },
+				new Employee{ ID = 2, Name = "James" },
+				new Employee{ ID = 3, Name = "Jacob" },
+				new Employee{ ID = 4, Name = "Lucas" },
+				new Employee{ ID = 5, Name = "Mark" }
+			};
+			comboBox.DataSource = employeeCollection;
+			comboBox.SelectedItem = employeeCollection[4];
+		}
+
+		private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
+		{
+			DisplayAlert("Selection Changed", "Selected Value: " + comboBox.SelectedValue.ToString(), "OK");
+		}
+	}
+	public class Employee
+	{
+		private int id;
+		public int ID
+		{
+			get { return id; }
+			set { id = value; }
+		}
+		private string name;
+		public string Name
+		{
+			get { return name; }
+			set { name = value; }
+		}
+	}
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+

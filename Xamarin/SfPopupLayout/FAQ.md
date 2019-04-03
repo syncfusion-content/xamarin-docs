@@ -909,4 +909,4 @@ namespace Popup_Demo
 {% endhighlight %}
 
 
-Sample Link: You can download the above sample code by clicking [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Popup_Demo871662808).
+Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/how-to-set-background-color-for-popupview-in-xamarin-popup).

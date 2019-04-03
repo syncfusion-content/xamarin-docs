@@ -595,15 +595,31 @@ public class ViewModel
 
 ![DataGrid with image column](SfDataGrid_images/SfDataGrid-Xamarin_showcase1.png)
 
-## Aspect
+### Aspect
 
-SfDataGrid allows you to size the loaded images within the bounds of the grid cell (whether to stretch, crop or letterbox) using the [GridImageColumn.Aspect](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridImageColumn~Aspect.html) property. The supported aspects are described below, the default value is AspectFit.
+SfDataGrid allows you to set the `Aspect` to size the loaded images within the bounds of the grid cell (whether to stretch, crop or letterbox) using the [GridImageColumn.Aspect](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.image.aspect?view=xamarin-forms#Xamarin_Forms_Image_Aspect) property. The supported aspects are described below, the default value is AspectFit.
 
 AspectFill: Clips the image so that it fills the display area while preserving the aspect (ie. no distortion).
 
 AspectFit:  Letterboxes the image (if required) so that the entire image fits into the display area, with blank space added to the top/bottom or sides depending on whether the image is wide or tall.
 
 Fill: Stretches the image to completely and exactly fill the display area. This may result in the image being distorted.
+
+To set `Aspect` to images loaded inside `GridImageColumn`, refer the below code snippet.
+
+{% highlight xaml %}
+<ContentPage.BindingContext>
+    <local:ViewModel />
+</ContentPage.BindingContext>
+
+<sfGrid:SfDataGrid x:Name="dataGrid"
+                   AutoGenerateColumns="True"
+                   ItemsSource="{Binding OrdersInfo}">
+    <sfGrid:SfDataGrid.Columns>
+        <sfGrid:GridImageColumn MappingName="DealerImage" Aspect="AspectFit"/>
+    </sfGrid:SfDataGrid.Columns>
+</sfGrid:SfDataGrid>
+{% endhighlight %}
 
 ## GridTemplateColumn
 

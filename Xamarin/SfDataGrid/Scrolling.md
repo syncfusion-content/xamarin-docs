@@ -106,6 +106,21 @@ The SfDataGrid allows to position the scrolled row/column in the datagrid by pas
 * Center: Scroll to make the row/column positioned at the center of the datagrid.
 * End: Scroll to make the row/column positioned at the end of the datagrid. 
 
+Refer the below code snippet to scroll a column/row to a required position.
+
+{% highlight C# %}
+
+// To scroll a column to a particular position,
+dataGrid.ScrollToColumnIndex(7,scrollToColumnPosition: ScrollToPosition.Center);
+
+// To scroll a row to a particular position,
+dataGrid.ScrollToRowIndex(7,scrollToColumnPosition: ScrollToPosition.Center);
+
+// To scroll a cell to a particular position,
+dataGrid.ScrollToRowColumnIndex(7, 7, scrollToColumnPosition: ScrollToPosition.Center, scrollToRowPosition: ScrollToPosition.Center);
+
+{% endhighlight %}
+
 N> Programmatic scrolling is not applicable for rows and columns that are frozen in view.
 
 ## Vertical Over Scroll Mode

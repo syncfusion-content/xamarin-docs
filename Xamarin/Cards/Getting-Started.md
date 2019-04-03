@@ -165,7 +165,7 @@ Indicator can be added in any direction. It can be used to denote the state base
 
 {% highlight xaml %}
 
-    <cards:SfCardView x:Name="cardView" IndicatorColor="Cyan" IndicatorThickness="12" IndicatorPosition="Left" />
+    <cards:SfCardView IndicatorColor="Cyan" IndicatorThickness="12" IndicatorPosition="Left" />
 
 {% endhighlight %}
 
@@ -188,7 +188,11 @@ The [`SwipeToDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 {% highlight xaml %}
 
-    <cards:SfCardView x:Name="cardView" SwipeToDismiss="true"/>
+<cards:SfCardView SwipeToDismiss="true">
+
+	<Label  Text="SfCardView"/>
+
+</cards:SfCardView>
 
 {% endhighlight %}
 
@@ -196,6 +200,8 @@ The [`SwipeToDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 SfCardView cardView = new SfCardView();
 cardView.SwipeToDismiss = true;
+cardView.Content = new Label(){ Text="SfCardView" };
+this.Content = cardView;
 
 {% endhighlight %}
 
@@ -211,7 +217,7 @@ Initialize a card layout with card view as shown in the following code.
 
 {% highlight xaml %} 
 
-<cards:SfCardLayout x:Name="cardLayout" SwipeDirection="Left" HeightRequest="500" BackgroundColor="#F0F0F0">
+<cards:SfCardLayout SwipeDirection="Left" HeightRequest="500" BackgroundColor="#F0F0F0">
 
 	<cards:SfCardView>
 		<Label  Text="Cyan" BackgroundColor="Cyan"/>

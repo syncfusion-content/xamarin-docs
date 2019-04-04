@@ -599,7 +599,7 @@ public class ViewModel
 
 SfDataGrid allows you to set the `Aspect` to size the loaded images within the bounds of the grid cell (whether to stretch, crop or letterbox) using the [GridImageColumn.Aspect](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.image.aspect?view=xamarin-forms#Xamarin_Forms_Image_Aspect) property. The supported aspects are described below, the default value is AspectFit.
 
-AspectFill: Clips the image so that it fills the display area while preserving the aspect (ie. no distortion).
+AspectFill: Clips the image so that it fills the display area while preserving the aspect (no distortion).
 
 AspectFit:  Letterboxes the image (if required) so that the entire image fits into the display area, with blank space added to the top/bottom or sides depending on whether the image is wide or tall.
 

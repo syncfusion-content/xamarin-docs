@@ -56,7 +56,7 @@ Following are the list of options available to show SfPopupLayout at various pos
 SfPopupLayout can be shown at the center by using the following options.
 
   * [IsOpen property](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html)
-  * [SfPopupLayout.Show](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html) method
+  * [SfPopupLayout.Show](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html)
 
 To open the SfPopupLayout, use the `SfPopupLayout.IsOpen` property as in the following code sample.
 
@@ -457,8 +457,8 @@ Executing the above codes renders the following output in Android device respect
 
 SfPopupLayout can be shown in full width and height of the screen using,
 
-  * `IsFullScreen property`
-  * `SfPopupLayout.Show(bool)`
+  * [SfPopupLayout.PopupView.IsFullScreen](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~IsFullScreen.html)
+  * [SfPopupLayout.Show(bool)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show(Boolean).html)
 
 Refer the below code example to open the popup in full screen.
 

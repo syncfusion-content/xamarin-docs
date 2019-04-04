@@ -39,7 +39,7 @@ N> Diacritic Sensitivity support has enhanced only on iOS and Android platform.
 
 StackLayout mainLayout = new StackLayout()
 {
-Padding = new Thickness(30)
+    Padding = new Thickness(30)
 };
 
 SfComboBox comboBox = new SfComboBox();

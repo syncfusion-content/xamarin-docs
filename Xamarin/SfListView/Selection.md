@@ -445,6 +445,50 @@ public partial class MainPage : ContentPage
 
 You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Get_Index_Selected_Item-722108833).
 
+### Display selection when ItemTemplate contains image
+
+When [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) contains only image, then the selection color will not be visible in the view when select an image. To see selection, add any layout such as Grid or StackLayout above the image, and set margin or padding to it.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView
+   ItemsSource="{Binding BookInfo}"
+   ItemSize="100">  
+    <syncfusion:SfListView.ItemTemplate>  
+        <DataTemplate>  
+            <Grid Margin="10">  
+                <Image Source="{Binding Image}" Aspect="Fill"/>  
+            </Grid>  
+        </DataTemplate>  
+    </syncfusion:SfListView.ItemTemplate>  
+</syncfusion:SfListView>  
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+    SfListView listView;
+    public MainPage()
+    {
+        InitializeComponent();
+        listView = new SfListView();
+        listView.ItemSize = 100;
+        listView.ItemsSource = viewModel.BookInfo;
+        listView.ItemTemplate = new DataTemplate(() =>
+        {
+            var grid = new Grid() { Margin = 10 };
+            var image = new Image() { Aspect = Aspect.Fill};
+            image.SetBinding(Image.SourceProperty, new Binding("Image"));
+            grid.Children.Add(image);
+            return grid;
+        });
+        this.Content = listView;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Limitation
 
 * When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionBackgroundColor.html) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the ListView instead of `ItemTemplate`.

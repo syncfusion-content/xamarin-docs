@@ -20,11 +20,8 @@ The inline feature in month view will work only within the min max date range.
 Beyond the min max date range, following restrictions will be applied.
 
 * Date navigation features of move to date will be restricted.
-
 * Cannot swipe the control using touch gesture.
-
 * Selection does not work for month view.
-
 * The tapped delegates will not be triggered while tapped on the MonthCell.
     
 
@@ -64,3 +61,23 @@ this.Content = calendar;
 {%  endhighlight %}
 	
 ![BlackoutDate support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-Blackout.png)
+
+### Customize the BlackoutDates Color
+We can customize the BlackoutDates Color in month view mode by using[BlackOutColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BlackoutColor.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfCalendar x:Name="calendar">
+<syncfusion:SfCalendar.MonthViewSettings>
+<syncfusion:MonthViewSettings BlackOutColor="Red">
+</syncfusion:SfCalendar.MonthViewSettings>
+</syncfusion:SfCalendar>
+{% endhighlight %}
+{% highlight c# %}
+SfCalendar calendar = new SfCalendar(); 
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.BlackOutColor = Color.Red;
+calendar.MonthViewSettings = monthViewSettings;
+this.Content = calendar;
+{% endhighlight %}
+{% endtabs %}

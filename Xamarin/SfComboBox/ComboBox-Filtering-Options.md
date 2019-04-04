@@ -39,9 +39,9 @@ The combo box enables the filer option for filtering the suggestions in the drop
 	
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	
 
 List<String> countryNames = new List<String>();
@@ -121,10 +121,11 @@ Displays all the matches that start with the typed characters in control. This s
 	
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	    
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -138,7 +139,6 @@ comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.SuggestionMode = SuggestionMode.StartsWith;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 	 
@@ -176,10 +176,11 @@ Displays all the matches that start with the typed characters in control. This s
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
-};	    
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
+};
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -193,7 +194,6 @@ comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.SuggestionMode = SuggestionMode.StartsWithCaseSensitive;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 
@@ -232,10 +232,11 @@ Displays all the matches that contain the typed characters in control. This stra
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
-};	    
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
+};
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -250,7 +251,6 @@ comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.SuggestionMode = SuggestionMode.Contains;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 	 
@@ -289,10 +289,11 @@ Displays all the matches that contains the typed characters in control. This str
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
-};	    
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
+};
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -307,7 +308,6 @@ comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.SuggestionMode = SuggestionMode.ContainsWithCaseSensitive;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 
@@ -345,10 +345,11 @@ Displays all the words that completely match with the typed characters in contro
 	
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
-};	    
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
+};
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -363,7 +364,6 @@ comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.SuggestionMode = SuggestionMode.Equals;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 
@@ -399,10 +399,11 @@ Displays all the words that completely match with the typed characters in contro
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
-};	    
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
+};
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -416,7 +417,6 @@ comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.SuggestionMode = SuggestionMode.EqualsWithCaseSensitive;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 
@@ -537,10 +537,11 @@ Displays all the matches that end with the typed characters in control. This str
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
-};	    
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
+};
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -554,7 +555,6 @@ comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.SuggestionMode = SuggestionMode.EndsWith;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 
@@ -593,10 +593,11 @@ Displays all the matches that ends with the typed characters in control. This st
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
-};	    
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
+};
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -610,7 +611,6 @@ comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.SuggestionMode = SuggestionMode.EndsWithCaseSensitive;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 
@@ -661,9 +661,9 @@ The filtered suggestions are displayed in a drop-down list. User can pick an ite
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	    
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
@@ -678,7 +678,6 @@ comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.ComboBoxMode = ComboBoxMode.Suggest;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 	 
@@ -716,10 +715,11 @@ The first item in filtered suggestions is appended to SfComboBox text. In this m
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
-};	    
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
+};
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -733,7 +733,6 @@ comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.ComboBoxMode = ComboBoxMode.Append;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 	 
@@ -771,10 +770,11 @@ The text is appended to the first matched item in the suggestions collection, an
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
-};	    
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
+};
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -788,7 +788,6 @@ comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
 comboBox.AllowFiltering = true;
 comboBox.ComboBoxMode = ComboBoxMode.SuggestAppend;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 

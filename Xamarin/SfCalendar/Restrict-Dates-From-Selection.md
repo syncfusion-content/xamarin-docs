@@ -63,7 +63,7 @@ this.Content = calendar;
 ![BlackoutDate support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-Blackout.png)
 
 ### Customize the BlackoutDates Color
-We can customize the BlackoutDates Color in month view mode by using[BlackOutColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BlackoutColor.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
+You can customize the color of BlackoutDates in month view mode using the [BlackOutColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BlackoutColor.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
 
 {% tabs %}
 {% highlight xaml %}

@@ -95,8 +95,6 @@ dataGrid.LeftSwipeTemplate = new DataTemplate(() =>
 
 N> Similarly, desired content can be loaded using the [SfDataGrid.RightSwipeTemplate](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~RightSwipeTemplate.html# “”) when swiping towards left.
 
-N> The `DataTemplateSelector` can also be directly assigned to the `SfDataGrid.RightSwipeTemplate` and `SfDataGrid.LeftSwipeTemplate`. You can load the desired template using the RowData and the row element passed in the arguments.
-
 ## Swipe events
 
 [SwipeStarted](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SwipeStarted_EV.html# “”): Fired when the swipe offset changes from its initial value. The swipe action can be canceled by setting the [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true# “”) property of the [SwipeStartedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SwipeStartedEventArgs.html# “”) to `true`. 

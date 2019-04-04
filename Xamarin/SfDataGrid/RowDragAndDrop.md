@@ -155,7 +155,6 @@ The `QueryRowDragging` event provides the following properties in [QueryRowDragg
  * [Reason](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs~Reason.html): Returns row dragging details as [QueryRowDraggingReason](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingReason.html).
  * [RowData](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs~RowData.html): Returns the underlying data associated with the dragged row.
  * [CurrentRowData](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs~CurrentRowData.html): Returns the corresponding row data over which the row drag view is currently placed.
-  * [CanAutoScroll](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs~CanAutoScroll.html): Returns whether auto-scrolling should happen when row drag view reaches the top or bottom of the `SfDataGrid`.
  * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx): Returns the Boolean property to cancel the event.
 
 ## Cancel dragging of a particular row
@@ -435,21 +434,3 @@ public partial class MainPage : ContentPage
 The following screenshot shows the output rendered when executing the above code example.
 
 ![DataGrid with summary update after drag and drop](SfDataGrid_images/UpdatedSummary.png)
-
-## Cancel auto scrolling 
-
-Vertical auto-scrolling of the `SfDataGrid` during row drag and drop can be canceled using `CanAutoScroll` argument of the `QueryRowDragging` event handler.
-
-{% tabs %}
-{% highlight c# %}
-
-this.SfGrid.QueryRowDragging += SfGrid_QueryRowDragging;
-
-private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
-{  
-    // Disable scroll while dragging the Rows.    
-    e.CanAutoScroll = false;
-}
-
-{% endhighlight %}
-{% endtabs %}

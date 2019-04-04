@@ -2336,6 +2336,19 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+	
+	<tr>
+		<td>
+            SfMaskedEditWatermarkColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Watermark color of the masked edit.
+            <br/>
+            <br/>
+        </td>
+    </tr>
     
 </table>
 

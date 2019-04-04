@@ -179,6 +179,8 @@ Customization can be done for Token. There are various ways to customize the tok
 
 * `DeleteButtonPlacement` - sets the placement of delete button. `Left` and `Right` are the placement options. By default, it is set placed at right side of the token. 
 
+N> SelectedBackgroundColor and CornerRadius support has enhanced only on iOS and Android platform.
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -210,7 +212,7 @@ Customization can be done for Token. There are various ways to customize the tok
                         SelectedBackgroundColor="#ffffe0"
                         DeleteButtonColor="#993300"
                         FontFamily="Times New Roman"
-                        DeleteButtonPlacement="Right
+                        DeleteButtonPlacement="Right"
                         IsCloseButtonVisible="true"
                         CornerRadius="15"/>
             </autocomplete:SfAutoComplete.TokenSettings>

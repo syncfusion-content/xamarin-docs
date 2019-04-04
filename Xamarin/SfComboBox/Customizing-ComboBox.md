@@ -82,16 +82,16 @@ The [`ClearButtonColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="True" ClearButtonColor="Red">
-            <combobox:SfComboBox.ComboBoxSource>
-                <ListCollection:List x:TypeArguments="x:String">
-                    <x:String>Uganda</x:String>
-                    <x:String>Ukraine</x:String>
-                    <x:String>United Arab Emirates</x:String>
-                    <x:String>United Kingdom</x:String>
-                </ListCollection:List>
-            </combobox:SfComboBox.ComboBoxSource>
-        </combobox:SfComboBox>
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="True" ClearButtonColor="Red">
+        <combobox:SfComboBox.ComboBoxSource>
+            <ListCollection:List x:TypeArguments="x:String">
+                <x:String>Uganda</x:String>
+                <x:String>Ukraine</x:String>
+                <x:String>United Arab Emirates</x:String>
+                <x:String>United Kingdom</x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.ComboBoxSource>
+    </combobox:SfComboBox>
  </StackLayout>
 
 {% endhighlight %}
@@ -116,7 +116,6 @@ The [`ClearButtonColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
     comboBox.DataSource = countryNames;
     comboBox.ClearButtonColor = Color.Yellow;
     comboBox.IsEditableMode = true;
-
     layout.Children.Add(comboBox); 
     Content = layout;
 
@@ -133,7 +132,7 @@ The [`ShowClearButton`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="True" IsEditableMode="True" ShowClearButton="False">
             <combobox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
@@ -144,7 +143,7 @@ The [`ShowClearButton`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
                 </ListCollection:List>
             </combobox:SfComboBox.ComboBoxSource>
         </combobox:SfComboBox>
- </StackLayout>
+    </StackLayout>
 
 {% endhighlight %}
 
@@ -168,7 +167,6 @@ The [`ShowClearButton`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
     comboBox.DataSource = countryNames;
     comboBox.ShowClearButton = false;
     comboBox.IsEditableMode = true;
-
     layout.Children.Add(comboBox); 
     Content = layout;
 
@@ -186,7 +184,7 @@ The [`ShowBorder`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="True" IsEditableMode="True" ShowBorder="False">
             <combobox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
@@ -197,17 +195,17 @@ The [`ShowBorder`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
                 </ListCollection:List>
             </combobox:SfComboBox.ComboBoxSource>
         </combobox:SfComboBox>
- </StackLayout>
+    </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-   StackLayout layout = new StackLayout() 
+    StackLayout layout = new StackLayout() 
     { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
     List<String> countryNames = new List<String>();
@@ -221,7 +219,6 @@ The [`ShowBorder`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
     comboBox.DataSource = countryNames;
     comboBox.ShowBorder = false;
     comboBox.IsEditableMode = true;
-
     layout.Children.Add(comboBox); 
     Content = layout;
 
@@ -253,9 +250,9 @@ CustomView property has used to provide the custom view instead of entry in Comb
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	
 
 Label customLabel = new Label();
@@ -268,7 +265,6 @@ comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 comboBox.CustomView = customLabel; 
-
 layout.Children.Add(comboBox); 
 Content = layout;
 
@@ -287,43 +283,44 @@ The `ItemTemplate` property helps to decorate suggestion items with custom templ
 {% highlight c# %}
 public class Person
 {
-	private int age;
-	public int Age
-	{
-		get { return age; }
-		set { age = value; }
-	}
+    private int age;
+    public int Age
+    {
+        get { return age; }
+        set { age = value; }
+    }
 
-	private string name;
-	public string Name
-	{
-		get { return name; }
-		set { name = value; }
-	}
+    private string name;
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
 }
 
 public class PersonViewModel
 {
-	private ObservableCollection<Person> personCollection;
-	public ObservableCollection<Person> PersonCollection
-	{
-		get { return personCollection; }
-		set { personCollection = value; }
-	}
+    private ObservableCollection<Person> personCollection;
+    public ObservableCollection<Person> PersonCollection
+    {
+        get { return personCollection; }
+        set { personCollection = value; }
+    }
 
-	public PersonViewModel()
-	{
-		personCollection = new ObservableCollection<Person>();
-		personCollection.Add(new Person() { Age = 21, Name = "Aldan" });
-		personCollection.Add(new Person() { Age = 25, Name = "Clara" });
-		personCollection.Add(new Person() { Age = 23, Name = "Aldrin" });            
-		personCollection.Add(new Person() { Age = 25, Name = "Mark" });
-		personCollection.Add(new Person() { Age = 25, Name = "Lucas" });
-		personCollection.Add(new Person() { Age = 24, Name = "Alan" });
-		personCollection.Add(new Person() { Age = 25, Name = "James" });
-		personCollection.Add(new Person() { Age = 22, Name = "Aaron" });
+    public PersonViewModel()
+    {
+        personCollection = new ObservableCollection<Person>();
+        personCollection.Add(new Person() { Age = 21, Name = "Aldan" });
+        personCollection.Add(new Person() { Age = 25, Name = "Clara" });
+        personCollection.Add(new Person() { Age = 23, Name = "Aldrin" });            
+        personCollection.Add(new Person() { Age = 25, Name = "Mark" });
+        personCollection.Add(new Person() { Age = 25, Name = "Lucas" });
+        personCollection.Add(new Person() { Age = 24, Name = "Alan" });
+        personCollection.Add(new Person() { Age = 25, Name = "James" });
+        personCollection.Add(new Person() { Age = 22, Name = "Aaron" });
 	}
 }
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -362,25 +359,25 @@ Now populate this PersonViewModel data in SfComboBox control by binding with [`D
 
 DataTemplate itemTemplate = new DataTemplate(() =>
 {
-	StackLayout stack;
-	Image image;
-	Label label;
-	stack = new StackLayout();
-	stack.Orientation = StackOrientation.Horizontal;
-	image = new Image();
-	image.Source = (FileImageSource)ImageSource.FromFile("User.png");
-	label = new Label();
-	label.SetBinding(Label.TextProperty, "Name");
-	stack.Children.Add(image);
-	stack.Children.Add(label);
-	return new ViewCell { View = stack };
+    StackLayout stack;
+    Image image;
+    Label label;
+    stack = new StackLayout();
+    stack.Orientation = StackOrientation.Horizontal;
+    image = new Image();
+    image.Source = (FileImageSource)ImageSource.FromFile("User.png");
+    label = new Label();
+    label.SetBinding(Label.TextProperty, "Name");
+    stack.Children.Add(image);
+    stack.Children.Add(label);
+    return new ViewCell { View = stack };
 });
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 }; 
 
 SfComboBox comboBox = new ComboBox();
@@ -391,7 +388,6 @@ binding.Source = this;
 binding.Mode = BindingMode.TwoWay;
 comboBox.SetBinding(Label.DataSourceProperty,binding);
 comboBox.ItemTemplate = itemTemplate;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 
@@ -430,9 +426,9 @@ The [`DropDownItemHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syn
 
     StackLayout layout = new StackLayout() 
     { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
     List<String> countryNames = new List<String>();
@@ -462,7 +458,7 @@ The [`DropDownWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownWidth="300">
             <combobox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
@@ -473,7 +469,7 @@ The [`DropDownWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
                 </ListCollection:List>
             </combobox:SfComboBox.ComboBoxSource>
         </combobox:SfComboBox>
- </StackLayout>
+    </StackLayout>
 
 {% endhighlight %}
 
@@ -481,9 +477,9 @@ The [`DropDownWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
     StackLayout layout = new StackLayout() 
     { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
     List<String> countryNames = new List<String>();
@@ -496,7 +492,6 @@ The [`DropDownWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
     SfComboBox comboBox = new SfComboBox();
     comboBox.DataSource = countryNames;
     comboBox.DropDownWidth = 300;
-
     layout.Children.Add(comboBox); 
     Content = layout;
 
@@ -514,7 +509,7 @@ The [`DropDownCornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownCornerRadius="3">
             <combobox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
@@ -525,7 +520,7 @@ The [`DropDownCornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/S
                 </ListCollection:List>
             </combobox:SfComboBox.ComboBoxSource>
         </combobox:SfComboBox>
- </StackLayout>
+    </StackLayout>
 
 {% endhighlight %}
 
@@ -548,7 +543,6 @@ The [`DropDownCornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/S
     SfComboBox comboBox = new SfComboBox();
     comboBox.DataSource = countryNames;
     comboBox.DropDownCornerRadius = 3;
-
     layout.Children.Add(comboBox); 
     Content = layout;
 
@@ -566,7 +560,7 @@ The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamari
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownBackgroundColor="Yellow">
             <combobox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
@@ -577,7 +571,7 @@ The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamari
                 </ListCollection:List>
             </combobox:SfComboBox.ComboBoxSource>
         </combobox:SfComboBox>
- </StackLayout>
+    </StackLayout>
 
 {% endhighlight %}
 
@@ -585,9 +579,9 @@ The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamari
 
     StackLayout layout = new StackLayout() 
     { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
     List<String> countryNames = new List<String>();
@@ -600,7 +594,6 @@ The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamari
     SfComboBox comboBox = new SfComboBox();
     comboBox.DataSource = countryNames;
     comboBox.DropDownBackgroundColor = Color.Yellow;
-
     layout.Children.Add(comboBox); 
     Content = layout;
 
@@ -654,7 +647,6 @@ Suggestion box items can be customized using the [`DropDownItemFontAttributes`](
     comboBox.DataSource = countryNames;
     comboBox.DropDownTextColor = Color.FromHex("#1976d2");
     comboBox.DropDownTextSize = 16;
-
     layout.Children.Add(comboBox); 
     Content = layout;
 
@@ -691,9 +683,9 @@ The [`SelectedDropDownItemColor`](https://help.syncfusion.com/cr/cref_files/xama
 
     StackLayout layout = new StackLayout() 
     { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
     List<String> countryNames = new List<String>();
@@ -706,7 +698,6 @@ The [`SelectedDropDownItemColor`](https://help.syncfusion.com/cr/cref_files/xama
     SfComboBox comboBox = new SfComboBox();
     comboBox.DataSource = countryNames;
     comboBox.SelectedDropDownItemColor = Color.Blue;
-
     layout.Children.Add(comboBox); 
     Content = layout;
 
@@ -746,9 +737,9 @@ This section explains various DropDown button settings available in SfComboBox c
 
     StackLayout layout = new StackLayout() 
     { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
     List<String> countryNames = new List<String>();
@@ -769,9 +760,7 @@ This section explains various DropDown button settings available in SfComboBox c
     dropDownButtonSettings.HighlightedBackgroundColor = Color.Green;
     dropDownButtonSettings.BackgroundColor = Color.Red;
     dropDownButtonSettings.HighlightFontColor = Color.Red;
-
     comboBox.DropDownButtonSettings = dropDownButtonSettings;
-
     layout.Children.Add(comboBox); 
     Content = layout;
 
@@ -799,9 +788,9 @@ Watermark provides a short note about the type of input to enter in the editor c
 
     StackLayout layout = new StackLayout() 
     { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
     SfComboBox comboBox = new SfComboBox();
@@ -834,15 +823,14 @@ Text color of watermark can be customized using [`WatermarkColor`](https://help.
 
     StackLayout layout = new StackLayout() 
     { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
     SfComboBox comboBox = new SfComboBox();
     comboBox.Watermark = "Enter some text"; 
     comboBox.WatermarkColor = Color.FromHex("1976d2");
-
     layout.Children.Add(comboBox); 
     Content = layout;
 

@@ -47,9 +47,9 @@ Highlights the first position of the matching characters in the suggestion list.
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	
 
 List<String> countryNames = new List<String>();
@@ -104,9 +104,9 @@ Highlights the matching characters that present everywhere in the suggestion lis
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	
 
 List<String> countryNames = new List<String>();

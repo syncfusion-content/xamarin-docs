@@ -38,7 +38,7 @@ this.Content = calendar;
 
 ## Blackout Dates
 
-In `SfCalendar`, BlackoutDates refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes.
+In `SfCalendar`, [BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html) refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes.
 
 The BlackoutDays can be achieved in two ways.
 
@@ -62,8 +62,8 @@ this.Content = calendar;
 	
 ![BlackoutDate support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-Blackout.png)
 
-### Customize the BlackoutDates Color
-You can customize the color of BlackoutDates in month view mode using the [BlackOutColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BlackoutColor.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
+### Customize the blackout dates Color
+You can customize the color of [BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html) in month view mode using the [BlackOutColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BlackoutColor.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
 
 {% tabs %}
 {% highlight xaml %}

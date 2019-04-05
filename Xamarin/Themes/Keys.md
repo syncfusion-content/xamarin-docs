@@ -1538,15 +1538,15 @@ This page lists the keys for each control and the element to which it is mapped 
 <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
              ...>
 <Application.Resources>
-    <syncCore:SyncfusionThemeDictionary>
-        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    <syncTheme:SyncfusionThemeDictionary>
+        <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
             <ResourceDictionary>
                     <x:String x:Key="SfListViewTheme">CustomTheme</x:String>
                     <Color x:Key="SfListViewBackgroundColor">LightGreen</Color>
                     <Color x:Key="SfListViewForegroundColor">DarkGreen</Color>
             </ResourceDictionary>
-        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
-    </syncCore:SyncfusionThemeDictionary>
+        </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncTheme:SyncfusionThemeDictionary>
 </Application.Resources>
 
 ....
@@ -2389,15 +2389,15 @@ This page lists the keys for each control and the element to which it is mapped 
 <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
              ...>
 <Application.Resources>
-    <syncCore:SyncfusionThemeDictionary>
-        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    <syncTheme:SyncfusionThemeDictionary>
+        <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
             <ResourceDictionary>
                 <x:String x:Key="SfTreeViewTheme">CustomTheme</x:String> 
                 <Color x:Key="SfTreeViewSelectionBackgroundColor">Blue</Color> 
                 <Color x:Key="SyncPrimaryLightColor">White</Color> 
             </ResourceDictionary>
-        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
-    </syncCore:SyncfusionThemeDictionary>
+        </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncTheme:SyncfusionThemeDictionary>
 </Application.Resources>
 
 ....

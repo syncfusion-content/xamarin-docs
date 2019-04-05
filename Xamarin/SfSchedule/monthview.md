@@ -979,6 +979,10 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 private void FormsSchedule_CellTapped(object sender, Syncfusion.SfSchedule.XForms.CellTappedEventArgs e)
 {
+	// Gets the field nativeObject from SfSchedule by using reflection 
+    // GetType() used to get the type of schedule instance
+    var fieldInfo = GetField(SelectionSamplePage.FormsSfSchedule.GetType(), "nativeObject");
+    // Gets the value of nativeObject field by using reflection
     var fieldInfo = GetField(SelectionSamplePage.FormsSfSchedule.GetType(), "nativeObject");
     var nativeSchedule = fieldInfo.GetValue(SelectionSamplePage.FormsSfSchedule);
     var monthViewSettings = new Syncfusion.SfSchedule.iOS.MonthViewSettings();

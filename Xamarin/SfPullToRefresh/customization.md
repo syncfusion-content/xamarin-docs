@@ -647,7 +647,7 @@ If we run the above sample with TransitionMode as Push, the output will look lik
 
 ## Pulling and refreshing template
 
-`SfPullToRefresh` allows you to set template while pulling and refreshing the view. The pulling and refreshing template can be set using  [SfPullToRefresh.PullingViewTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullingViewTemplate.html) and [SfPullToRefresh.RefreshingViewTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~RefreshingViewTemplate.html) respectively and it can be customized based on the requirement.
+`SfPullToRefresh` allows you to set template while pulling and refreshing the view. The pulling and refreshing template can be set using [SfPullToRefresh.PullingViewTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullingViewTemplate.html) and [SfPullToRefresh.RefreshingViewTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~RefreshingViewTemplate.html) respectively and it can be customized based on the requirement.
 
 Refer the below code example in which a `SfProgressBar` is loaded in the pulling view template and refreshing view template.
 
@@ -786,4 +786,4 @@ public partial class MainPage : ContentPage
 
 ![PullToRefresh view emplate](hostingsfdatagrid_images/SfPullToRefresh_Template.gif)
 
-Sample Link: You can download the above sample code by clicking [here]()
+Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/how-to-set-template-for-pulling-and-refreshing-view-in-xamarin-forms-pulltorefresh).

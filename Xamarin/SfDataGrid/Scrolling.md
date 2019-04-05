@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scroll to Row Column Index | SfDataGrid | Xamarin | Syncfusion
-description: Programmatic scrolling options to scroll to a particular Row and/or Column in Xamarin.Forms DataGrid. Various modes of scrolling available with options to customize the bouncing behavior of scrolling.
+description: Modes of scrolling, programmatic scrolling to scroll to a particular row and/or column in Xamarin.Forms DataGrid and the bouncing behavior when scrolling.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -97,6 +97,32 @@ dataGrid.ScrollToColumnIndex(7);
 
 ![DataGrid with programmatically scrolling to a column](SfDataGrid_images/ScrollToColumnIndex.gif)
 
+### Scroll a row/column to a specific position
+
+The SfDataGrid allows to position the scrolled row/column in the datagrid by passing [ScrollToPosition](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.scrolltoposition?view=xamarin-forms) as parameter to the `ScrollToRowColumnIndex`, `ScrollToRowIndex`, `ScrollToColumnIndex` methods. The scrolled row/column can take either of the four positions as explained below. The default position is `Start`.
+
+* MakeVisible: Scroll to make a specified row/column visible in datagrid. If the specified row/column is already in view, scrolling will not occur.
+* Start: Scroll to make the row/column positioned at the start of the datagrid.
+* Center: Scroll to make the row/column positioned at the center of the datagrid.
+* End: Scroll to make the row/column positioned at the end of the datagrid. 
+
+Refer the below code snippet to scroll a column/row to a specific position.
+
+{% highlight C# %}
+
+// To scroll a column to a particular position,
+dataGrid.ScrollToColumnIndex(7,scrollToColumnPosition: ScrollToPosition.Center);
+
+// To scroll a row to a particular position,
+dataGrid.ScrollToRowIndex(7,scrollToColumnPosition: ScrollToPosition.Center);
+
+// To scroll a cell to a particular position,
+dataGrid.ScrollToRowColumnIndex(7, 7, scrollToColumnPosition: ScrollToPosition.Center, scrollToRowPosition: ScrollToPosition.Center);
+
+{% endhighlight %}
+
+N> Programmatic scrolling is not applicable for rows and columns that are frozen in view.
+
 ## Vertical Over Scroll Mode
 
 The [SfDataGrid.VerticalOverScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOverScrollMode.html) property customizes the bouncing behavior of the data grid.
@@ -155,6 +181,33 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
 {% endtabs %}
 
 ![DataGrid without bouncing effect](SfDataGrid_images/VerticalOverScrollMode_none.gif)
+
+## Identifying scroll state changes
+
+The `SfDataGrid` will notify the scrolling state changes via the [ScrollStateChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollStateChanged_EV.html) event.
+
+Following states will be notified through the [ScrollState](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ScrollStateChangedEventArgs~ScrollState.html) property in the event argument.
+
+* Dragging: Specifies that `SfDataGrid` is currently being dragged in the view.
+* Fling: Specifies that fling action is performed on the `SfDataGrid`.
+* Idle: Specifies that `SfDataGrid` is not scrolling currently.
+* Programmatic: Specifies that scrolling is performed by using [ScrollToColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollToColumnIndex.html) or [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollToRowIndex.html) method.
+
+{% tabs %}
+{% highlight c# %}
+
+dataGrid.ScrollStateChanged += DataGrid_ScrollStateChanged;
+
+   private void DataGrid_ScrollStateChanged(object sender, ScrollStateChangedEventArgs e)   
+    {
+        if (e.ScrollState == ScrollState.Idle)
+        {              
+            DisplayAlert("ScrollState", "Scrolling has stopped", "OK");
+        }
+    }
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Scrolling customization using Slider
 

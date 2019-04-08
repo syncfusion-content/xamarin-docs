@@ -307,25 +307,6 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 </td>
 </tr>
 
-<tr>
-<td>Animation support on transition </td>
-<td align="center">
-<p>Scroll</p><br> 
-<p>Float</p><br> 
-<p>Reveal</p><br> 
-<p>Card</p><br> 
-</td>
-<td align="center">
-<p>No</p>
-</td>
-<td align="center">
-<p>No</p>
-</td>
-<td align="center">
-<p>TransitionMode</p>
-</td>
-</tr>
-
 <tr style="background-color: #ffefd5;color: #000000;">
 <td>Customization of MonthView </td>
 <td align="center">

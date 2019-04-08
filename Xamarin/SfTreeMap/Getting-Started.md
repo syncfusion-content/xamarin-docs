@@ -102,37 +102,28 @@ The first step is to create a TreeMap object.
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="UTF-8"?>
-
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:local="clr-namespace:Syncfusion.SfTreeMap.XForms;
-  assembly=Syncfusion.SfTreeMap.XForms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-  x:Class="TreeMapGettingStarted.Sample" BackgroundColor=”Black”>
-
-<ContentPage.Content >
-	<local:SfTreeMap x:Name="treeMap">
-</local:SfTreeMap>
-
-</ContentPage.Content>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:treemap="clr-namespace:Syncfusion.SfTreeMap.XForms;assembly=Syncfusion.SfTreeMap.XForms"
+             x:Class="TreeMap.Page3">
+    <ContentPage.Content>
+        <treemap:SfTreeMap></treemap:SfTreeMap>
+    </ContentPage.Content>
 </ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-public static Page GetMainPage()
-{
+public Page3 ()
+		{
+			InitializeComponent ();
 
-SfTreeMap treeMap = new SfTreeMap();
-
-return new ContentPage
-{
-
-    BackgroundColor = Color.Black,
-
-    Content = treeMap,
-
-};
-}
+            SfTreeMap treeMap = new SfTreeMap();
+            
+            this.Content = treeMap;
+        }
 
 {% endhighlight %}
 
@@ -140,30 +131,100 @@ return new ContentPage
 
 ## Populating TreeMap Items
 
-The TreeMap accepts a collection of TreeMapItems as input.
+Treemap items can be populated in two ways using the below properties.
+
+1. DataSource
+2. Items
+
+Using DataSource property you can bind the tree map data collection to it. To render leaf nodes for the underlying data, levels and leaf item settings has to be specified which is explained in detail in `Levels`
+section.
 
 {% tabs %}  
 
 {% highlight xaml %}
 
-// BindingContext is set for the content page class.
+ <ContentPage.BindingContext>
+        <local:PopulationViewModel></local:PopulationViewModel> 
+    </ContentPage.BindingContext>    
 
-//DataModel model = new DataModel();
+  <treemap:SfTreeMap x:Name="treeMap"  DataSource="{Binding PopulationDetails}" WeightValuePath="Population">
+            <treemap:SfTreeMap.LeafItemSettings>
+                <treemap:LeafItemSettings  Gap="2" BorderColor="#A9D9F7" LabelPath="Country" >
+                </treemap:LeafItemSettings>
+            </treemap:SfTreeMap.LeafItemSettings>
+            <treemap:SfTreeMap.Levels>
+                <treemap:TreeMapFlatLevel  HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
+                </treemap:TreeMapFlatLevel>
+            </treemap:SfTreeMap.Levels>
+        </treemap:SfTreeMap>
 
-//..
+{% endhighlight %}
 
-//..
+{% highlight c# %}
 
-//this.BindingContext = model;
+ public class PopulationViewModel
+    {
+        public PopulationViewModel()
+        {
+            this.PopulationDetails = new ObservableCollection<PopulationDetail>();
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Indonesia", Growth = 3, Population = 237641326 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Russia", Growth = 2, Population = 152518015 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Malaysia", Growth = 1, Population = 29672000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "United States", Growth = 4, Population = 315645000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "Mexico", Growth = 2, Population = 112336538 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "Canada", Growth = 1, Population = 35056064 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "South America", Country = "Colombia", Growth = 1, Population = 47000000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "South America", Country = "Brazil", Growth = 3, Population = 193946886 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Africa", Country = "Nigeria", Growth = 2, Population = 170901000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Africa", Country = "Egypt", Growth = 1, Population = 83661000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "Germany", Growth = 1, Population = 81993000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "France", Growth = 1, Population = 65605000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "UK", Growth = 1, Population = 63181775 });
+        }
 
-<local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
+        public ObservableCollection<PopulationDetail> PopulationDetails
+        {
+            get;
+            set;
+        }
+    }
 
-</local:SfTreeMap>
+    public class PopulationDetail
+    {
+        public string Continent { get; set; }
+        public string Country { get; set; }
+        public double Growth { get; set; }
+        public double Population { get; set; }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+[`Items`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~Items.html) accepts a collection of TreeMapItems as input. You can bind tree map items to the Items collection as in the below code snippet.
+
+{% tabs %}  
+
+{% highlight xaml %}
+
+ <ContentPage.BindingContext>
+        <local:DataModel></local:DataModel> 
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <treemap:SfTreeMap x:Name="treeMap"  Items = "{Binding TreeMapItems}"></treemap:SfTreeMap>
+    </ContentPage.Content>
 
 {% endhighlight %}
 
 
 {% highlight c# %}
+
+SfTreeMap treeMap = new SfTreeMap();
+
+DataModel model = new DataModel();
+
+treeMap.Items = model.TreeMapItems;
 
 public class DataModel : BindableObject
 
@@ -210,12 +271,6 @@ public DataModel()
 }
 }
 
-SfTreeMap treeMap = new SfTreeMap();
-
-DataModel model = new DataModel();
-
-treeMap.Items = model.TreeMapItems;
-
 {% endhighlight %}
 
 {% endtabs %}  
@@ -227,35 +282,30 @@ You can group TreeMapItems using two types of levels.
 1. TreeMap Flat Level
 2. TreeMap Hierarchical Level
 
+[`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~Levels.html) were explained in detail in [`TreeMapLevels`](https://help.syncfusion.com/xamarin/sftreemap/treemaplevels) section.
+
 ## Customize TreeMap Appearance by Range
 
-You can differentiate the nodes based on its value and color ranges using the Range color. You can also define the color value range using the From and To properties. 
+You can differentiate the nodes based on its value and color using the [`RangeColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.RangeColorMapping.html). You can define the color value range using the [`From`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~To.html) properties in [`Range`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range.html). From and To properties value is based on the underlying data bound to the [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~ColorValuePath.html) property.
 
 {% tabs %}  
 
 {% highlight xaml %}
 
-<local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
-
-<local:SfTreeMap.LeafItemColorMapping>
-    <local:RangeColorMapping>
-        <local:RangeColorMapping.Ranges>
-           <local:Range LegendLabel = "1 % Growth" From = "0" To = "1" Color =  "#77D8D8"  />
-           <local:Range LegendLabel = "2 % Growth" From = "0" To = "2" Color =  "#AED960"  />
-           <local:Range LegendLabel = "3 % Growth" From = "0" To = "3" Color =  "#FFAF51"  />
-           <local:Range LegendLabel = "4 % Growth" From = "0" To = "4" Color =  "#F3D240"  />
-        </local:RangeColorMapping.Ranges>
-    </local:RangeColorMapping> 
-</local:SfTreeMap.LeafItemColorMapping>
-
-</local:SfTreeMap>
+  <treemap:SfTreeMap.LeafItemColorMapping>
+                <treemap:RangeColorMapping>
+                    <treemap:RangeColorMapping.Ranges>
+                        <treemap:Range LegendLabel = "1 % Growth" From = "0" To = "1" Color =  "#77D8D8"  />
+                        <treemap:Range LegendLabel = "2 % Growth" From = "0" To = "2" Color =  "#AED960"  />
+                        <treemap:Range LegendLabel = "3 % Growth" From = "0" To = "3" Color =  "#FFAF51"  />
+                        <treemap:Range LegendLabel = "4 % Growth" From = "0" To = "4" Color =  "#F3D240"  />
+                    </treemap:RangeColorMapping.Ranges>
+                </treemap:RangeColorMapping>
+            </treemap:SfTreeMap.LeafItemColorMapping>
 
 {% endhighlight %}
 
-
 {% highlight c# %}
-
-…
 
 …
 
@@ -272,21 +322,16 @@ treeMap.LeafItemColorMapping = new RangeColorMapping (){ Ranges = ranges };
 
 ## LeafItemSetting
 
-You can customize the Leaf level TreeMap items using LeafItem setting. 
+You can customize the tree map leaf nodes using [`LeafItemSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LeafItemSettings.html). 
 
 {% tabs %}  
 
 {% highlight xaml %}
 
-<local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
-
-…
-
-<local:SfTreeMap.LeafItemSettings>
-        <local: LeafItemSettings BorderWidth=“1" BorderColor=“White"  />
-</local:SfTreeMap. LeafItemSettings >
-
-</local:SfTreeMap>
+ <treemap:SfTreeMap.LeafItemSettings>
+                <treemap:LeafItemSettings  Gap="2" BorderColor="#A9D9F7" LabelPath="Country" >
+                </treemap:LeafItemSettings>
+            </treemap:SfTreeMap.LeafItemSettings>
 
 {% endhighlight %}
 
@@ -294,11 +339,11 @@ You can customize the Leaf level TreeMap items using LeafItem setting.
 {% highlight c# %}
 
 …
-
-LeafItemSettings leafSetting = new LeafItemSettings();
-leafSetting.BorderWidth = 1;
-leafSetting.BorderColor = Color.White;
-treeMap.LeafItemSettings = leafSetting;
+  LeafItemSettings leafSetting = new LeafItemSettings();
+            leafSetting.Gap = 2;
+            leafSetting.BorderColor = Color.FromHex("#A9D9F7");
+            leafSetting.LabelPath = "Country";
+            treeMap.LeafItemSettings = leafSetting;
 
 {% endhighlight %}
 
@@ -306,36 +351,158 @@ treeMap.LeafItemSettings = leafSetting;
 
 ## Enable Legend
 
-You can set the color value of leaf nodes using the TreeMap Legend. This legend is appropriate only for the TreeMap whose leaf nodes are colored using RangeColorMapping. You can set ShowLegend property value to “True” to make the legend visible.
+Color value of leaf nodes can be tracked with the help of tree map legend. Legend support is applicable only for the TreeMap whose leaf nodes are colored using RangeColorMapping. You can set [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LegendSettings~ShowLegend.html) property value to “True” to make the legend visible.
 
 ## Label for Legends
 
-You can customize the labels of the legend items using the LegendLabel property of RangeColorMapping. 
+You can customize the labels of the legend items using the [`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~LegendLabel.html) property in RangeColorMapping. 
 
 {% tabs %} 
 
 {% highlight xaml %}
 
-<local:SfTreeMap.LegendSettings>
-    <local:LegendSettings  ShowLegend ="true" IconSize=“15,15" Size=“350,70"  />
-</local:SfTreeMap.LegendSettings>
+   <treemap:SfTreeMap.LegendSettings>
+                <treemap:LegendSettings ShowLegend="True" Size="700,45">                  
+                </treemap:LegendSettings>
+            </treemap:SfTreeMap.LegendSettings>
 
 {% endhighlight %}
-
-
 
 {% highlight c# %}
 …
 
-LegendSettings legendSettings = new LegendSettings();
-legendSettings.ShowLegend= true;
-legendSettings.IconSize = new Size(15, 15);
-legendSettings.Size = new Size (350, 70);
-treeMap.LegendSettings= legendSettings;
+ LegendSettings legendSettings = new LegendSettings();
+            legendSettings.ShowLegend = true;
+            legendSettings.Size = new Size(700, 45);
+            treeMap.LegendSettings = legendSettings;
 
 {% endhighlight %}
 
-{% endtabs %}  
+{% endtabs %}
 
-![Output of SfTreeMap](Getting-Started_images/img2.png)
+Below is the complete code for reproducing the following output.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<ContentPage.BindingContext>
+        <local:PopulationViewModel></local:PopulationViewModel> 
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <treemap:SfTreeMap x:Name="treeMap"  DataSource="{Binding PopulationDetails}" 
+        WeightValuePath="Population" ColorValuePath="Growth" LayoutType="Squarified" ShowTooltip="True">
+            <treemap:SfTreeMap.LeafItemSettings>
+                <treemap:LeafItemSettings OverflowMode="Wrap"  Gap="2" BorderColor="#A9D9F7" LabelPath="Country" >
+                </treemap:LeafItemSettings>
+            </treemap:SfTreeMap.LeafItemSettings>
+            <treemap:SfTreeMap.Levels>
+                <treemap:TreeMapFlatLevel  HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
+                    <treemap:TreeMapFlatLevel.HeaderStyle>
+                        <treemap:Style Color= "Black"/>
+                    </treemap:TreeMapFlatLevel.HeaderStyle>
+                </treemap:TreeMapFlatLevel>
+            </treemap:SfTreeMap.Levels>
+
+            <treemap:SfTreeMap.LegendSettings>
+                <treemap:LegendSettings ShowLegend="True"  Size="700,45">
+                    <treemap:LegendSettings.LabelStyle>
+                        <treemap:Style Color="Black"></treemap:Style>
+                    </treemap:LegendSettings.LabelStyle>
+                </treemap:LegendSettings>
+            </treemap:SfTreeMap.LegendSettings>         
+
+            <treemap:SfTreeMap.LeafItemColorMapping>
+                <treemap:RangeColorMapping>
+                    <treemap:RangeColorMapping.Ranges>
+                        <treemap:Range LegendLabel = "1 % Growth" From = "0" To = "1" Color =  "#77D8D8"  />
+                        <treemap:Range LegendLabel = "2 % Growth" From = "0" To = "2" Color =  "#AED960"  />
+                        <treemap:Range LegendLabel = "3 % Growth" From = "0" To = "3" Color =  "#FFAF51"  />
+                        <treemap:Range LegendLabel = "4 % Growth" From = "0" To = "4" Color =  "#F3D240"  />
+                    </treemap:RangeColorMapping.Ranges>
+                </treemap:RangeColorMapping>
+            </treemap:SfTreeMap.LeafItemColorMapping>          
+
+        </treemap:SfTreeMap>
+    </ContentPage.Content>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ PopulationViewModel viewModel = new PopulationViewModel();
+
+            SfTreeMap treeMap = new SfTreeMap();
+            treeMap.BackgroundColor = Color.White;
+            treeMap.ColorValuePath = "Growth";
+            treeMap.WeightValuePath = "Population";
+            treeMap.LayoutType = LayoutTypes.Squarified;
+            treeMap.ShowTooltip = true;
+
+            LeafItemSettings leafSetting = new LeafItemSettings();
+            leafSetting.Gap = 2;
+            leafSetting.OverflowMode = LabelOverflowMode.Wrap;
+            leafSetting.BorderColor = Color.FromHex("#A9D9F7");
+            leafSetting.LabelPath = "Country";
+            treeMap.LeafItemSettings = leafSetting;
+
+            TreeMapFlatLevel flatLevel = new TreeMapFlatLevel();
+            flatLevel.HeaderHeight = 20;
+            flatLevel.GroupPath = "Continent";
+            flatLevel.GroupGap = 5;
+            flatLevel.ShowHeader = true;
+            flatLevel.HeaderStyle = new Syncfusion.SfTreeMap.XForms.Style() { Color = Color.Black };
+            treeMap.Levels.Add(flatLevel);
+
+            LegendSettings legendSettings = new LegendSettings();
+            legendSettings.ShowLegend = true;
+            legendSettings.Size = new Size(700, 45);
+            legendSettings.LabelStyle = new Syncfusion.SfTreeMap.XForms.Style() { Color = Color.Black };
+            treeMap.LegendSettings = legendSettings;
+
+            RangeColorMapping rangeColorMapping = new RangeColorMapping();
+
+            Range range1 = new Range();
+            range1.From = 0;
+            range1.To = 1;
+            range1.Color = Color.FromHex("#77D8D8");
+            range1.LegendLabel = "1 % Growth";
+
+            Range range2 = new Range();
+            range2.From = 0;
+            range2.To = 2;
+            range2.Color = Color.FromHex("#AED960");
+            range2.LegendLabel = "2 % Growth";
+
+            Range range3 = new Range();
+            range3.From = 0;
+            range3.To = 3;
+            range3.Color = Color.FromHex("#FFAF51");
+            range3.LegendLabel = "3 % Growth";
+
+            Range range4 = new Range();
+            range4.From = 0;
+            range4.To = 4;
+            range4.Color = Color.FromHex("#F3D240");
+            range4.LegendLabel = "4 % Growth";
+
+            rangeColorMapping.Ranges.Add(range1);
+            rangeColorMapping.Ranges.Add(range2);
+            rangeColorMapping.Ranges.Add(range3);
+            rangeColorMapping.Ranges.Add(range4);
+
+            treeMap.LeafItemColorMapping = rangeColorMapping;
+
+            treeMap.DataSource = viewModel.PopulationDetails;
+            this.Content = treeMap;
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/TreeMap_GettingStarted_Xamarin_Forms-).  
+
+![Output of SfTreeMap](Getting-Started_images/GettingStarted.png)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization | SfPullToRefresh | Xamarin | Syncfusion
-description: Various built-in styling and customization options available in the Xamarin.Forms PullToRefresh. Host complex controls like DataGrid, ListView as pullable content. 
+description: Various built-in styling and customization options available in the Xamarin.Forms PullToRefresh.
 platform: xamarin
 control: SfPullToRefresh
 documentation: UG

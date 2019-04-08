@@ -647,9 +647,9 @@ If we run the above sample with TransitionMode as Push, the output will look lik
 
 ## Pulling and refreshing template
 
-`SfPullToRefresh` allows you to set template for pulling and refreshing view. The pulling and refreshing template can be set using [SfPullToRefresh.PullingViewTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullingViewTemplate.html) and [SfPullToRefresh.RefreshingViewTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~RefreshingViewTemplate.html) properties respectively.
+The `SfPullToRefresh` allows you set a template for pulling and refreshing the view. The pulling and refreshing a template can be set using the [SfPullToRefresh.PullingViewTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullingViewTemplate.html) and [SfPullToRefresh.RefreshingViewTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~RefreshingViewTemplate.html) properties, respectively.
 
-Refer the below code example in which a `SfProgressBar` is loaded in the pulling view template and refreshing view template.
+Refer to the following code example in which a `SfProgressBar` is loaded in the pulling view template and refreshing view template.
 
 {% highlight xaml %}
 
@@ -786,4 +786,4 @@ public partial class MainPage : ContentPage
 
 ![PullToRefresh view emplate](hostingsfdatagrid_images/SfPullToRefresh_Template.gif)
 
-Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/how-to-set-template-for-pulling-and-refreshing-view-in-xamarin-forms-pulltorefresh).
+You can download the sample code by clicking the following link: [Sample](https://github.com/SyncfusionExamples/how-to-set-template-for-pulling-and-refreshing-view-in-xamarin-forms-pulltorefresh).

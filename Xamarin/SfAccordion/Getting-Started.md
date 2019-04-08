@@ -264,7 +264,7 @@ Here, Labels are loaded in Header and Content of accordion items.
 </ContentPage>
 
 {% endhighlight %}
-{% highlight c#}
+{% highlight c# %}
 public MainPageCS()
 {
     InitializeAccordionItems();

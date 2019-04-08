@@ -99,7 +99,7 @@ if (rootFrame == null)
 	rootFrame.NavigationFailed += OnNavigationFailed;                
 	List<System.Reflection.Assembly> assembliesToInclude = new List<System.Reflection.Assembly>();
 	// Add all the renderer assemblies your app uses 
-	assembliesToInclude.Add(typeof(Syncfusion.XForms.ComboBox.UWP.SfComboBoxRenderer).GetTypeInfo().Assembly);
+	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.ComboBox.SfComboBoxRenderer).GetTypeInfo().Assembly);
 	// Replace the Xamarin.Forms.Forms.Init(e);        
 	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 	if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)

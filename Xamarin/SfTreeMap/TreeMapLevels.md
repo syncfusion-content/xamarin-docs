@@ -7,34 +7,168 @@ control: TreeMap
 documentation: ug
 ---
 
-# TreeMapLevels
+# Tree map levels
 
-The levels of **TreeMap** can be categorized into two types as,
+The levels of tree map can be categorized into two types as follows,
 
-* FlatLevel
+* Flat Level
 * Hierarchical Level
 
 ## Flat Level
 
 ### GroupPath
 
-You can use `groupPath` property for every flat level of the **TreeMap** control. It is a path to a field on the source object that serves as the **“Group”** for the level specified. You can group the data based on the `groupPath` in the **TreeMap** control. When the `groupPath` is not specified, then the items are not grouped and the data is displayed in the order specified in the `dataSource`.
+You can use [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TreeMapFlatLevel~GroupPath.html) property for every flat level in the tree map control. It is a path to a field on the source object that serves as the **“Group”** for the level specified. You can group the data based on the `GroupPath` property. When the `GroupPath` is not specified, then the items will not get grouped and the data will be displayed in the order it is specified in the [`DataSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~DataSource.html).
 
 ### GroupGap
 
-You can use `groupGap` property to separate the items from every flat level and to differentiate the levels mentioned in the **TreeMap** control.
+You can use [`GroupGap`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TreeMapFlatLevel~GroupGap.html) property to separate the items from every flat level and to differentiate the levels mentioned in the tree map control.
 
-{% highlight C# %}  
+{% tabs %}  
 
-     TreeMapFlatLevel level = new TreeMapFlatLevel() { HeaderStyle = new Syncfusion.SfTreeMap.XForms.Style() { Color= Device.OnPlatform(iOS: Color.Gray, Android: Color.Gray, WinPhone: Color.White) }, GroupPath = "Continent", HeaderHeight = 20, GroupGap = 5, ShowHeader = true };
+{% highlight xaml %}
+
+ <treemap:SfTreeMap x:Name="treeMap"  DataSource="{Binding PopulationDetails}" WeightValuePath="Population" ColorValuePath="Growth">
+            <treemap:SfTreeMap.LeafItemSettings>
+                <treemap:LeafItemSettings  Gap="2" BorderColor="#A9D9F7" LabelPath="Country" >
+                </treemap:LeafItemSettings>
+            </treemap:SfTreeMap.LeafItemSettings>
+            <treemap:SfTreeMap.Levels>
+                <treemap:TreeMapFlatLevel  HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
+                </treemap:TreeMapFlatLevel>
+            </treemap:SfTreeMap.Levels>
+
+            <treemap:SfTreeMap.LegendSettings>
+                <treemap:LegendSettings ShowLegend="True"  Size="700,45">
+                    <treemap:LegendSettings.LabelStyle>
+                        <treemap:Style Color="Black"></treemap:Style>
+                    </treemap:LegendSettings.LabelStyle>
+                </treemap:LegendSettings>
+            </treemap:SfTreeMap.LegendSettings>
+
+            <treemap:SfTreeMap.LeafItemColorMapping>
+                <treemap:RangeColorMapping>
+                    <treemap:RangeColorMapping.Ranges>
+                        <treemap:Range LegendLabel = "1 % Growth" From = "0" To = "1" Color =  "#77D8D8"  />
+                        <treemap:Range LegendLabel = "2 % Growth" From = "0" To = "2" Color =  "#AED960"  />
+                        <treemap:Range LegendLabel = "3 % Growth" From = "0" To = "3" Color =  "#FFAF51"  />
+                        <treemap:Range LegendLabel = "4 % Growth" From = "0" To = "4" Color =  "#F3D240"  />
+                    </treemap:RangeColorMapping.Ranges>
+                </treemap:RangeColorMapping>
+            </treemap:SfTreeMap.LeafItemColorMapping>
+
+        </treemap:SfTreeMap>
 
 {% endhighlight %}
 
-![](TreeMapLevels_images/TreeMapFlatLevel.png)
+{% highlight C# %}  
+
+    PopulationViewModel viewModel = new PopulationViewModel();
+            
+            SfTreeMap treeMap = new SfTreeMap();
+            treeMap.DataSource = viewModel.PopulationDetails;
+            treeMap.ColorValuePath = "Growth";
+            treeMap.WeightValuePath = "Population";
+
+            LeafItemSettings leafSetting = new LeafItemSettings();
+            leafSetting.Gap = 2;
+            leafSetting.BorderColor = Color.FromHex("#A9D9F7");
+            leafSetting.LabelPath = "Country";
+            treeMap.LeafItemSettings = leafSetting;
+
+            TreeMapFlatLevel flatLevel = new TreeMapFlatLevel();
+            flatLevel.HeaderHeight = 20;
+            flatLevel.GroupPath = "Continent";
+            flatLevel.GroupGap = 5;
+            flatLevel.ShowHeader = true;
+            treeMap.Levels.Add(flatLevel);
+
+            LegendSettings legendSettings = new LegendSettings();
+            legendSettings.ShowLegend = true;
+            legendSettings.Size = new Size(700, 45);
+            legendSettings.LabelStyle = new Syncfusion.SfTreeMap.XForms.Style() { Color = Color.Black };
+            treeMap.LegendSettings = legendSettings;
+
+            RangeColorMapping rangeColorMapping = new RangeColorMapping();
+
+            Range range1 = new Range();
+            range1.From = 0;
+            range1.To = 1;
+            range1.Color = Color.FromHex("#77D8D8");
+            range1.LegendLabel = "1 % Growth";
+
+            Range range2 = new Range();
+            range2.From = 0;
+            range2.To = 2;
+            range2.Color = Color.FromHex("#AED960");
+            range2.LegendLabel = "2 % Growth";
+
+            Range range3 = new Range();
+            range3.From = 0;
+            range3.To = 3;
+            range3.Color = Color.FromHex("#FFAF51");
+            range3.LegendLabel = "3 % Growth";
+
+            Range range4 = new Range();
+            range4.From = 0;
+            range4.To = 4;
+            range4.Color = Color.FromHex("#F3D240");
+            range4.LegendLabel = "4 % Growth";
+
+            rangeColorMapping.Ranges.Add(range1);
+            rangeColorMapping.Ranges.Add(range2);
+            rangeColorMapping.Ranges.Add(range3);
+            rangeColorMapping.Ranges.Add(range4);
+
+            treeMap.LeafItemColorMapping = rangeColorMapping;
+
+            this.Content = treeMap;
+
+{% endhighlight %}
+
+{% endtabs %}  
+
+![](TreeMapLevels_images/FlatLevel.png)
 
 ## Hierarchical Level
 
-**TreeMap** Hierarchical level is used to define levels for hierarchical data collection that contains tree-structured data.
+Hierarchical level is used to define levels for hierarchical data collection that contains tree-structured data.
+
+{% tabs %}  
+
+{% highlight xaml %}
+
+<ContentPage.BindingContext>
+        <local:CountrySalesCollection></local:CountrySalesCollection>
+    </ContentPage.BindingContext>
+
+  <treemap:SfTreeMap  x:Name="TreeMap"  HorizontalOptions="FillAndExpand" DataSource="{Binding CountrySales}"
+      VerticalOptions="FillAndExpand" WeightValuePath="Sales" ColorValuePath="Expense" BackgroundColor="White"   >
+
+            <treemap:SfTreeMap.LeafItemSettings>
+                <treemap:LeafItemSettings LabelPath="Name"/>
+            </treemap:SfTreeMap.LeafItemSettings>
+
+            <treemap:SfTreeMap.LeafItemColorMapping>
+                <treemap:DesaturationColorMapping Color="#41B8C4" From="1" To=" 0.2"/>
+            </treemap:SfTreeMap.LeafItemColorMapping>
+
+            <treemap:SfTreeMap.Levels>
+
+                <treemap:TreeMapHierarchicalLevel  ChildPadding="4" ChildBackground="White" ShowHeader = "true"  HeaderHeight = "20" 
+                                                   HeaderPath = "Name"  ChildPath = "RegionalSales" >
+                    
+                    <treemap:TreeMapHierarchicalLevel.HeaderStyle>
+                        <treemap:Style Color= "Black"/>
+                    </treemap:TreeMapHierarchicalLevel.HeaderStyle>
+                    
+                </treemap:TreeMapHierarchicalLevel>
+
+            </treemap:SfTreeMap.Levels>
+
+        </treemap:SfTreeMap>
+
+{% endhighlight %}
 
 {% highlight C# %}  
 
@@ -67,7 +201,7 @@ You can use `groupGap` property to separate the items from every flat level and
 
 {% endhighlight %}
 
+{% endtabs %}  
 
-
-![](TreeMapLevels_images/TreeMapHierarchicalLevel.png)
+![](TreeMapLevels_images/HierarchicalLevel.png)
 

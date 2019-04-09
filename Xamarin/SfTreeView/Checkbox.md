@@ -11,68 +11,107 @@ documentation: ug
 
 SfTreeView provides support for loading [CheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/getting-started) in each node, and allows users check/uncheck the corresponding node. There is no built-in support to enable or disable the check box. So, you should add checkbox in the `ItemTemplate` of the `SfTreeView` and bind the `IsChecked` property of the node.
 
+## Checkbox in BoundMode
+
+Set `ItemTemplateContextType` to Node for bound mode to use check box in SfTreeView.
+
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeView 
-    x:Name="TreeView"  
-    CheckBoxMode="Recursive"
-    ItemsSource="{Binding NodeCollection}"
-    ItemTemplateContextType="Node">
-    <syncfusion:SfTreeView.ItemTemplate>
-        <DataTemplate>
-            <ViewCell>
-                <ViewCell.View>
-                    <Grid>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BoundMode_CheckBox"
+             x:Class="BoundMode_CheckBox.MainPage"
+             xmlns:TreeView="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms"
+             xmlns:SfButtons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:TreeViewEngine="clr-namespace:Syncfusion.TreeView.Engine;assembly=Syncfusion.SfTreeView.XForms">
+
+    <ContentPage.BindingContext>
+        <local:FileManagerViewModel />
+    </ContentPage.BindingContext>
+
+    <TreeView:SfTreeView x:Name="SfTreeView"
+                         ItemsSource="{Binding Folders}"
+                         ItemTemplateContextType="Node"
+                         CheckBoxMode="Recursive"
+                         CheckedItems="{Binding CheckedItems}">
+        
+        <TreeView:SfTreeView.HierarchyPropertyDescriptors>
+            <TreeViewEngine:HierarchyPropertyDescriptor TargetType="{x:Type local:Folder}" ChildPropertyName="Files"/>
+            <TreeViewEngine:HierarchyPropertyDescriptor TargetType="{x:Type local:File}" ChildPropertyName="SubFiles"/>
+        </TreeView:SfTreeView.HierarchyPropertyDescriptors>
+        
+        <TreeView:SfTreeView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <ViewCell.View>
                         <Grid Padding="5">
-                            <SfCheckBox:SfCheckBox 
-                                x:Name="CheckBox"
-                                IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
+                            <SfButtons:SfCheckBox 
+                            x:Name="CheckBox"
+                            Text="{Binding Content.FileName}"
+                            IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
                         </Grid>
-                    </Grid>
-                </ViewCell.View>
-            </ViewCell>
-        </DataTemplate>
-    </syncfusion:SfTreeView.ItemTemplate>
-</syncfusion:SfTreeView>
+                    </ViewCell.View>
+                </ViewCell>
+            </DataTemplate>
+        </TreeView:SfTreeView.ItemTemplate>
+    </TreeView:SfTreeView>
+</ContentPage>
 {% endhighlight %}
 {% endtabs %}
 
-N> Set `ItemTemplateContextType` to Node for bound mode to use check box in SfTreeView.
-For UnBound mode, you can directly set the IsChecked property when creating nodes.
+You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/checkbox_bound_mode)
+
+## Checkbox in UnBoundMode
+
+you can directly set the IsChecked property when creating nodes.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfTreeView x:Name="treeView"
-                       CheckBoxMode="Recursive">
-    <syncfusion:SfTreeView.ItemTemplate>
-        <DataTemplate>
-            <ViewCell>
-                <ViewCell.View>
-                    <Grid>
-                        <Grid Padding="5">
-                            <SfCheckBox:SfCheckBox 
-                                x:Name="CheckBox"
-                                IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
-                        </Grid>
-                    </Grid>
-                </ViewCell.View>
-            </ViewCell>
-        </DataTemplate>
-    </syncfusion:SfTreeView.ItemTemplate>
-    <syncfusion:SfTreeView.Nodes>
-        <treeviewengine:TreeViewNode Content="Australia" IsChecked="True" IsExpanded="True">
-            <treeviewengine:TreeViewNode.ChildNodes>
-                <treeviewengine:TreeViewNode Content="New South Wales">
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:UnBoundMode_CheckBox"
+             x:Class="UnBoundMode_CheckBox.MainPage"
+             xmlns:treeviewengine="clr-namespace:Syncfusion.TreeView.Engine;assembly=Syncfusion.SfTreeView.XForms"
+             xmlns:SfCheckBox="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms">
+
+    <ContentPage.Content>
+            <syncfusion:SfTreeView CheckBoxMode="Recursive">
+            <syncfusion:SfTreeView.Nodes>
+                <treeviewengine:TreeViewNode Content="United Arab Emirates" IsChecked="True" IsExpanded="True">
                     <treeviewengine:TreeViewNode.ChildNodes>
-                        <treeviewengine:TreeViewNode Content="Sydney"/>
+                        <treeviewengine:TreeViewNode Content="Abu Dhabi"/>
+                        <treeviewengine:TreeViewNode Content="Dubai">
+                            <treeviewengine:TreeViewNode.ChildNodes>
+                                <treeviewengine:TreeViewNode Content="Burj Khalifa"/>
+                            </treeviewengine:TreeViewNode.ChildNodes>
+                        </treeviewengine:TreeViewNode>
                     </treeviewengine:TreeViewNode.ChildNodes>
                 </treeviewengine:TreeViewNode>
-            </treeviewengine:TreeViewNode.ChildNodes>
-        </treeviewengine:TreeViewNode>
-    </syncfusion:SfTreeView.Nodes>
-</syncfusion:SfTreeView>
+            </syncfusion:SfTreeView.Nodes>
+                
+            <syncfusion:SfTreeView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                        <ViewCell.View>
+                            <Grid Padding="5">
+                                <SfCheckBox:SfCheckBox 
+                                    Text="{Binding Content}"
+                                    IsChecked="{Binding IsChecked, Mode=TwoWay}" />
+                            </Grid>
+                        </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </syncfusion:SfTreeView.ItemTemplate>
+            </syncfusion:SfTreeView>
+    </ContentPage.Content>
+</ContentPage>
 {% endhighlight %}
 {% endtabs %}
+
+You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/checkbox_unbound_mode)
 
 ![Xamarin Forms TreeView with CheckBox](TreeView_images/checkbox.png)
 
@@ -129,7 +168,7 @@ treeView.GetCheckedNodes();
 {% endhighlight %}
 {% endtabs %}
 
-## CheckedItems collection
+## CheckItems binding under MVVM
 
 SfTreeView exposes a collection of all checked items. You can select the items while loading.
 
@@ -182,7 +221,3 @@ public class ViewModel
 }
 {% endhighlight %}
 {% endtabs %}
-
-Now, run the application to render the following output:
-
-You can download the entire source code of this [demo](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox1906051678).

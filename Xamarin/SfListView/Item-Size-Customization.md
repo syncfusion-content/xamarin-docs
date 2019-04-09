@@ -100,7 +100,7 @@ You can download the entire source code of this demo [here](https://github.com/S
 
 ## Updating the listview item size based on font at runtime
 
-ListView allows you to resize the item size based on the change in font size of the label element at runtime by calling [RefreshListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshListViewItem.html) method asynchronously when [SfListView.AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is Height.
+ListView allows you to resize the item size based on the change in font size of the label element at runtime when `SfListView.AutoFitMode` is [DynamicHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.AutoFitMode.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -110,17 +110,18 @@ ListView allows you to resize the item size based on the change in font size of 
         <RowDefinition Height="50"/>
         <RowDefinition Height="*"/>
     </Grid.RowDefinitions>
-    <Button Text="Modify FontSize" Clicked="Button_Clicked" />
+    <Button Text="Modify FontSize" Clicked="Button_Clicked"/>
     <syncfusion:SfListView x:Name="listView" 
                 ItemsSource="{Binding Items}"
                 BackgroundColor="#FFE8E8EC"
-                AutoFitMode="Height"
+                AutoFitMode="DynamicHeight"
                 ItemSize="60">
         <syncfusion:SfListView.ItemTemplate>
             <DataTemplate>
                 <Grid x:Name="grid" RowSpacing="1">
                     <Label LineBreakMode="NoWrap"
-                    TextColor="#474747" FontSize="{Binding BindingContext.FontSize, Source={x:Reference Name=listView}}"
+                    TextColor="#474747"
+                    FontSize="{Binding BindingContext.FontSize, Source={x:Reference Name=listView}}"
                     Text="{Binding ContactName}">
                     </Label>
                 </Grid>
@@ -133,7 +134,6 @@ ListView allows you to resize the item size based on the change in font size of 
 private void Button_Clicked(object sender, EventArgs e)
 {
     ViewModel.FontSize += 25;
-    Device.BeginInvokeOnMainThread(() => { listView.RefreshListViewItem(0, 22, false); });
 }
 {% endhighlight %}
 {% endtabs %}

@@ -94,6 +94,8 @@ listView.AutoFitMode = AutoFitMode.DynamicHeight;
 {% endhighlight %}
 {% endtabs %}
 
+You can download the entire source code of this demo [here](https://github.com/SyncfusionExamples/listview_autofit).
+
 ![AutoFit items at runtime](SfListView_images/AutoFit_DynamicHeight.gif)
 
 ## Updating the listview item size based on font at runtime

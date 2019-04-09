@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Summary | SfDataGrid | Xamarin | Syncfusion
-description: Apply summary for the caption row, group row and for the entire grid and customize its format and aggregate types. Use custom summaries or overried summary renderers for customizing the summary data.
+description: Apply summary for the caption, group and table row. Customize its format, aggregate. Use custom summaries/override summary renderers to modify the summary data.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -960,6 +960,199 @@ sfGrid.TableSummaryRows.Add(bottomSummaryRow);
 The below screenshot illustrates the positioning of table summary rows in SfDataGrid.
 
 ![Customizing table summary row position in a DataGrid](SfDataGrid_images/PositioningTableSummaryRows.png)
+
+## Table summary template
+
+The data grid hosts any view(s) inside a table summary for the entire row or for individual columns by loading a template.
+
+### Displaying template for a row
+
+The template for a table summary row can be set by using [SfDataGrid.TableSummaryTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~TableSummaryTemplate.html) and it can be customized based on the requirement.
+
+Refer the below code example in which a label is loaded in the table summary template of table summary row.
+
+{% highlight xaml %}
+
+ <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:TableSummaryConverter x:Key="SummaryConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <sfgrid:SfDataGrid x:Name="dataGrid"
+                           ItemsSource="{Binding OrdersInfo}"
+                           AutoGenerateColumns="False"
+                           AllowEditing="True"
+                           NavigationMode="Cell"
+                           SelectionMode="Single"
+                           ColumnSizer="Star">
+            <sfgrid:SfDataGrid.Columns>
+                <sfgrid:GridNumericColumn MappingName="OrderID" />
+                <sfgrid:GridTextColumn MappingName="EmployeeID" />
+                <sfgrid:GridTextColumn MappingName="FirstName"  />
+                <sfgrid:GridTextColumn MappingName="LastName"  />
+            </sfgrid:SfDataGrid.Columns>
+            <sfgrid:SfDataGrid.TableSummaryTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" BackgroundColor="Gray">
+                            <Label Text="{Binding Converter={StaticResource SummaryConverter}, ConverterParameter = {x:Reference dataGrid} }"
+                                   TextColor="White"
+                                   FontSize="Large"
+                                   VerticalTextAlignment="Center"
+                                   HorizontalTextAlignment="Start"
+                                   LineBreakMode="NoWrap"
+                                   HorizontalOptions="FillAndExpand"
+                                   VerticalOptions="FillAndExpand">
+                                <Label.Style>
+                                    <Style TargetType="Label">
+                                        <Setter Property="FontAttributes" Value="Italic" />
+                                    </Style>
+                                </Label.Style>
+                            </Label>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </sfgrid:SfDataGrid.TableSummaryTemplate>
+            <sfgrid:SfDataGrid.TableSummaryRows>
+                <sfgrid:GridTableSummaryRow Title="Total Salary :{TotalSalary} for {ProductCount} members"
+                                            Position="Bottom"
+                                            ShowSummaryInRow="True">
+                    <sfgrid:GridTableSummaryRow.SummaryColumns>
+                        <sfgrid:GridSummaryColumn Name="TotalSalary"
+                                                  Format="{}{Sum:c}"
+                                                  MappingName="OrderID"
+                                                  SummaryType="DoubleAggregate" />
+                    </sfgrid:GridTableSummaryRow.SummaryColumns>
+                </sfgrid:GridTableSummaryRow>
+            </sfgrid:SfDataGrid.TableSummaryRows>
+        </sfgrid:SfDataGrid>
+    </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ public class TableSummaryConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            var data = value != null ? value as SummaryRecordEntry : null;
+            if (data != null)
+            {
+                SfDataGrid dataGrid = (SfDataGrid)parameter;
+                var summaryText = SummaryCreator.GetSummaryDisplayText(data, "OrderID", dataGrid.View);
+                return "Total Value:" + " " + summaryText.ToString();
+            }
+
+            return null;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            return null;
+        }
+    }
+
+    {% endhighlight %}
+
+![Table summary template in a row](SfDataGrid_images/TableSummary_Template_In_A_Row.png)
+
+### Displaying template for a column
+
+The template for a table summary column can be set by using `GridSummaryColumn.Template` and it can be customized based on the requirement.
+
+Refer the below code example in which a label is loaded in the template of table summary column.
+
+{% highlight xaml%}
+
+<ContentPage.Resources>
+        <ResourceDictionary>
+            <local:TableSummaryConverter x:Key="SummaryConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <sfgrid:SfDataGrid x:Name="dataGrid"
+                           ItemsSource="{Binding OrdersInfo}"
+                           AutoGenerateColumns="False"
+                           AllowEditing="True"
+                           NavigationMode="Cell"
+                           SelectionMode="Single"
+                           ColumnSizer="Star">
+            <sfgrid:SfDataGrid.Columns>
+                <sfgrid:GridNumericColumn MappingName="OrderID" />
+                <sfgrid:GridTextColumn MappingName="EmployeeID" />
+                <sfgrid:GridTextColumn MappingName="FirstName" />
+                <sfgrid:GridTextColumn MappingName="LastName" />
+            </sfgrid:SfDataGrid.Columns>
+            <sfgrid:SfDataGrid.TableSummaryRows>
+                <sfgrid:GridTableSummaryRow Title="Total Salary :{TotalSalary} for {ProductCount} members"
+                                            Position="Bottom"
+                                            ShowSummaryInRow="False">
+                        <sfgrid:GridTableSummaryRow.SummaryColumns>
+                            <sfgrid:GridSummaryColumn Name="TotalSalary"
+                                                      Format="{}{Sum:c}"
+                                                      MappingName="OrderID"
+                                                      SummaryType="DoubleAggregate" >
+                                <sfgrid:GridSummaryColumn.Template>
+                                 <DataTemplate>
+                                    <StackLayout Orientation="Horizontal" BackgroundColor="Crimson">
+                                        <Label Text="{Binding Converter={StaticResource SummaryConverter}, ConverterParameter = {x:Reference dataGrid} }"
+                                               TextColor="White"
+                                               FontSize="Large"
+                                               VerticalTextAlignment="Center"
+                                               HorizontalTextAlignment="Start"
+                                               LineBreakMode="NoWrap"
+                                               HorizontalOptions="FillAndExpand"
+                                               VerticalOptions="FillAndExpand">
+                                            <Label.Style>
+                                                <Style TargetType="Label">
+                                                    <Setter Property="FontAttributes" Value="Italic" />
+                                                </Style>
+                                            </Label.Style>
+                                        </Label>
+                                    </StackLayout>
+                                 </DataTemplate>
+                                </sfgrid:GridSummaryColumn.Template>
+                            </sfgrid:GridSummaryColumn>
+                        </sfgrid:GridTableSummaryRow.SummaryColumns>
+                    </sfgrid:GridTableSummaryRow>
+            </sfgrid:SfDataGrid.TableSummaryRows>            
+        </sfgrid:SfDataGrid>
+    </StackLayout>
+
+{% endhighlight%}
+
+{% highlight c# %}
+
+// To write a converter, follow the code example:
+
+  public class TableSummaryConverter : IValueConverter
+    {
+        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            var data = value != null ? value as SummaryRecordEntry : null;
+            if (data != null)
+            {
+                SfDataGrid dataGrid = (SfDataGrid)parameter;
+                var summaryText = SummaryCreator.GetSummaryDisplayText(data, "OrderID", dataGrid.View);
+
+                return summaryText.ToString();
+            }
+
+            return null;
+        }
+
+        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+        {
+            return null;
+        }    
+    }
+{% endhighlight %}
+
+![Table summary template in a column](SfDataGrid_images/TableSummary_Template_In_A_Column.png)
+
+N> The `DataTemplateSelector` can also be directly assigned to the `SfDataGrid.TableSummaryTemplate`.
 
 ## Formatting summary
 

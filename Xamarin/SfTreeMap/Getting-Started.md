@@ -504,5 +504,5 @@ Below is the complete code for reproducing the following output.
 
 You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/TreeMap_GettingStarted_Xamarin_Forms-).  
 
-![Output of SfTreeMap](Getting-Started_images/GettingStarted.png)
+![Output of SfTreeMap](Getting-Started_images/GettingStartedOutput.png)
 

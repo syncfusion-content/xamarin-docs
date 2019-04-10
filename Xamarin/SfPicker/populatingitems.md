@@ -77,118 +77,126 @@ The following code example illustrates how to populate Month, Day, and Year valu
 {% tabs %}
 {% highlight c# %}
 
-public class DatesInfo
+    public class DateTimePicker : SfPicker
+    {
+        #region Public Properties
 
-{
+        // Months api is used to modify the Day collection as per change in Month
 
-public ObservableCollection<object> Dates { get; set; }
+        internal Dictionary<string, string> Months { get; set; }
 
-//Day is the collection of day numbers
+        /// <summary>
+        /// Date is the acutal DataSource for SfPicker control which will holds the collection of Day ,Month and Year
+        /// </summary>
+        /// <value>The date.</value>
+        public ObservableCollection<object> Dates { get; set; }
 
-private ObservableCollection<string> Day { get; set; }
+        //Day is the collection of day numbers
+        internal ObservableCollection<object> Day { get; set; }
 
-//Month is the collection of Month Names
+        //Month is the collection of Month Names
+        internal ObservableCollection<object> Month { get; set; }
 
-private ObservableCollection<string> Month { get; set; }
+        //Year is the collection of Years from 1990 to 2042
+        internal ObservableCollection<object> Year { get; set; }
 
-//Year is the collection of Years from 1990 to 2050
+        /// <summary>
+        /// Headers api is holds the column name for every column in date picker
+        /// </summary>
+        /// <value>The Headers.</value>
+        public ObservableCollection<string> Headers { get; set; }
 
-private ObservableCollection<string> Year { get; set; }
+        #endregion
 
-public DatesInfo()
+        public DateTimePicker()
+        {
+            Months = new Dictionary<string, string>();
 
-{
+            Dates = new ObservableCollection<object>();
+            Day = new ObservableCollection<object>();
+            Month = new ObservableCollection<object>();
+            Year = new ObservableCollection<object>();
+            Headers = new ObservableCollection<string>();
 
-Dates = new ObservableCollection<object>();
+            //First column of picker
+            Headers.Add("Month");
 
-//Populate Day, Month and Year values of each collection
+            //Second column of picker
+            Headers.Add("Day");
 
-PopulateDates();
+            //Third column of picker
+            Headers.Add("Year");
 
-//first column of SfPicker
+            HeaderText = "Date Time Picker";
+            PopulateDateCollection();
+            this.ItemsSource = Dates;
+            this.ColumnHeaderText = Headers;
+            ShowFooter = true;
+            ShowHeader = true;
+            ShowColumnHeader = true;
+        }
 
-Dates.Add(Day);
+        private void PopulateDateCollection()
+        {
 
-//Second column of SfPicker
+            //populate months
+            for (int i = 1; i < 13; i++)
+            {
+                if (!Months.ContainsKey(CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i).Substring(0, 3)))
+                    Months.Add(CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i).Substring(0, 3), CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i));
 
-Dates.Add(Month);
+                Month.Add(CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i).Substring(0, 3));
+            }
 
-//Third column of SfPicker
+            //populate year
+            for (int i = 1990; i < 2050; i++)
+            {
+                Year.Add(i.ToString());
+            }
 
-Dates.Add(Year);
+            //populate Days
+            for (int i = 1; i <= DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month); i++)
+            {
+                if (i < 10)
+                {
+                    Day.Add("0" + i);
+                }
+                else
+                    Day.Add(i.ToString());
+            }
 
-}
+            Dates.Add(Month);
+            Dates.Add(Day);
+            Dates.Add(Year);
+        }
 
-private void PopulateDates()
-
-{
-
-Day = new ObservableCollection<string>();
-
-Month = new ObservableCollection<string>();
-
-Year = new ObservableCollection<string>();
-
-for (int i = 1; i <= 31; i++)
-
-Day.Add(i.ToString());
-
-for (int i = 1; i <= 12; i++)
-
-Month.Add(System.Globalization.CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(i));
-
-for (int i = 1990; i <= 2050; i++)
-
-Year.Add(i.ToString());
-
-}
-
-}
-
+    }
+	
 {% endhighlight %}
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8" ?>
+  <ContentPage.BindingContext>
+        <local:DateTimeViewModel/>
+    </ContentPage.BindingContext>
 
-<ContentPage
+    <ContentPage.Content>
 
-x:Class="GettingStarted.PickerSample"
+        <local:DateTimePicker x:Name="picker" 
+                                  PickerHeight="400" 
+                                  PickerWidth="300"
+                                  HeaderText="Date Picker"
+                                  SelectedItem="{Binding StartDate}"
+                                  ColumnHeaderHeight="50">
+        </local:DateTimePicker>
 
-xmlns="http://xamarin.com/schemas/2014/forms"
-
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-
-xmlns:local="clr-namespace:GettingStarted"
-
-xmlns:syncfusion="clr-namespace:Syncfusion.SfPicker.XForms;assembly=Syncfusion.SfPicker.XForms">
-
-<ContentPage.BindingContext>
-
-<local:DatesInfo />
-
-</ContentPage.BindingContext>
-
-<ContentPage.Content>
-
-<syncfusion:SfPicker
-
-x:Name="picker"
-
-HeaderText="Date Picker" 
-
-ItemsSource="{Binding Dates}" />
-
-
-
-</ContentPage.Content>
-
-</ContentPage>
+    </ContentPage.Content>
+	
 {% endhighlight %}
 {% endtabs %}
 
 You can download the multi column sample from the following link.
 
-Sample link: [MultiColumn](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MultiColumnSample1443124256)
+Sample link: [MultiColumn](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MultiColumnHeader-856455649.zip)
 
 The following screenshot illustrates the output of the above code.
 

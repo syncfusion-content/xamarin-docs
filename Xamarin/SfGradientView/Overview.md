@@ -10,13 +10,14 @@ documentation : ug
 # Overview
 
 The Xamarin.Forms GradientView control provides the gradient background to various views of applications. The SfGradientView control supports the following two types of gradient:
+
 * Linear gradient
 * Radial gradient
 
 ## Key Features
 
-* Customizes the background as a linear gradient by horizontally or vertically.
+* Customize the background with a linear gradient. To create a linear gradient effect you must define at least two color stops. 
 
-* Customizes the background as a radial gradient with different center point.
+* Customize the background with a radial gradient. To create a radial gradient effect you must define at least two color stops.
 
 ![SfGradientView](images/Xamarin_Forms_Overview.png)

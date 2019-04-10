@@ -139,6 +139,7 @@ gradientView.BackgroundBrush = linearGradient;
 ## SfRadialGradientBrush
 
 You can customize the following properties of `SfRadialGradientBrush`:
+
 * Center 
 * Radius 
 

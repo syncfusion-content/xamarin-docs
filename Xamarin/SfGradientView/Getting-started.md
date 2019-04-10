@@ -21,7 +21,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Xamarin Forms SfGradientView Nuget reference](images/Adding SfGradientView reference.png)
 
-N> Install the same version of SfGradientView NuGet in all the projects.
+N> Install the same version of Syncfusion.Core.XForms NuGet in all the projects.
 
 **Method 2: Adding SfGradientView reference from toolbox**
 
@@ -239,4 +239,4 @@ namespace GradientViewGettingStarted
 
 ![SfGradientView](images/RadialGradient.jpg)
 
-You can find the complete getting started sample from [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted272847391.zip) link.
+You can find the complete getting started sample from [this](https://github.com/SyncfusionExamples/GradientView_GettingStarted_Xamarin.Forms) link.

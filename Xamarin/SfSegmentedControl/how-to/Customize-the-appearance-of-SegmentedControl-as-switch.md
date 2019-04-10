@@ -87,7 +87,7 @@ private void SfSegmentedControl_SelectionChanged(object sender, SelectionChanged
 
 {% endhighlight %}
 
-![](images/how-to/Segmented_control_as_switch.png)
+![Segmented control as switch in Xamarin.Forms](images/how-to/Segmented_control_as_switch.png)
 
 N> Use the [`SegmentHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfSegmentedControl~SegmentHeight.html), [`SegmentCornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfSegmentedControl~SegmentCornerRadius.html), and [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfSegmentedControl~CornerRadius.html) properties to change the appearance of switch.
 

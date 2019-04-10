@@ -86,7 +86,7 @@ The following code example illustrates how to populate Month, Day, and Year valu
         internal Dictionary<string, string> Months { get; set; }
 
         /// <summary>
-        /// Date is the acutal DataSource for SfPicker control which will holds the collection of Day ,Month and Year
+        /// Date is the actuaal DataSource for SfPicker control which will holds the collection of Day ,Month and Year
         /// </summary>
         /// <value>The date.</value>
         public ObservableCollection<object> Dates { get; set; }

@@ -141,7 +141,7 @@ private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs args)
 {% endhighlight %}
 
 
-N> In on demand paging, you cannot assign a value for the Source property.
+N>In on demand paging, you need to mandatorily define an integer value for `PageCount` property. Also, you should not assign a value for the `Source` property.
 
 When using `OnDemandPaging`, `SfDataPager.PagedSource` loads only the current page data. Upon navigation to another page, `OnDemandLoading` event is fired which loads another set of data, but maintains the previous page data also. When you navigate to the previous page again, OnDemandLoading event is not fired, and the required data maintained in the cache is loaded. However, for further performance enhancement if you do not want to maintain the previous page data, call [Syncfusion.Data.PagedCollectionView.ResetCache()](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Data.Portable~Syncfusion.Data.PagedCollectionView~ResetCache.html# “”) in `OnDemandLoading` event. ResetCache method call resets the cache except the current page.
 

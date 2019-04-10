@@ -11,7 +11,7 @@ documentation: ug
 
 SfTreeView provides support for loading [CheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/getting-started) in each node, and allows users check/uncheck the corresponding node. There is no built-in support to enable or disable the check box. So, you should add checkbox in the `ItemTemplate` of the `SfTreeView` and bind the `IsChecked` property of the node.
 
-## Checkbox in BoundMode
+## Working with Checkbox in BoundMode
 
 Set `ItemTemplateContextType` to Node for bound mode to use check box in SfTreeView.
 
@@ -62,7 +62,7 @@ Set `ItemTemplateContextType` to Node for bound mode to use check box in SfTreeV
 
 You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/checkbox_bound_mode)
 
-## Checkbox in UnBoundMode
+## Working with Checkbox in UnBoundMode
 
 you can directly set the IsChecked property when creating nodes.
 
@@ -168,7 +168,7 @@ treeView.GetCheckedNodes();
 {% endhighlight %}
 {% endtabs %}
 
-## CheckItems binding under MVVM
+## Binding CheckItems in MVVM
 
 SfTreeView exposes a collection of all checked items. You can select the items while loading.
 

@@ -487,6 +487,127 @@ PopulationViewModel viewModel = new PopulationViewModel();
 
 ![](TreeMapLevels_images/TooltipTemplate.png)
 
+## Selection
+
+Tree map control provides selection support which allows you to select the tree map items. Selection can be enabled by setting [`HighlightOnSelection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~HighlightOnSelection.html) property in tree map to true. You can specify the highlight color and border width using the properties [`HightlightColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~HightlightColor.html) and [`HightlightBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~HightlightBorderWidth.html) respectively.
+
+{% tabs %}  
+
+{% highlight xaml %}
+
+ <treemap:SfTreeMap x:Name="treeMap"  DataSource="{Binding PopulationDetails}" HighlightOnSelection="True" 
+                           HightlightBorderWidth="8" HightlightColor="Red"
+        WeightValuePath="Population" ColorValuePath="Growth" LayoutType="Squarified" >
+            <treemap:SfTreeMap.LeafItemSettings>
+                <treemap:LeafItemSettings  Gap="2" BorderColor="#A9D9F7" LabelPath="Country" >
+                </treemap:LeafItemSettings>
+            </treemap:SfTreeMap.LeafItemSettings>
+            <treemap:SfTreeMap.Levels>
+                <treemap:TreeMapFlatLevel  HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
+                    <treemap:TreeMapFlatLevel.HeaderStyle>
+                        <treemap:Style Color= "Black"/>
+                    </treemap:TreeMapFlatLevel.HeaderStyle>
+                </treemap:TreeMapFlatLevel>
+            </treemap:SfTreeMap.Levels>
+
+            <treemap:SfTreeMap.LegendSettings>
+                <treemap:LegendSettings ShowLegend="True"  Size="700,45">
+                    <treemap:LegendSettings.LabelStyle>
+                        <treemap:Style Color="Black"></treemap:Style>
+                    </treemap:LegendSettings.LabelStyle>
+                </treemap:LegendSettings>
+            </treemap:SfTreeMap.LegendSettings>
+
+            <treemap:SfTreeMap.LeafItemColorMapping>
+                <treemap:RangeColorMapping>
+                    <treemap:RangeColorMapping.Ranges>
+                        <treemap:Range LegendLabel = "1 % Growth" From = "0" To = "1" Color =  "#77D8D8"  />
+                        <treemap:Range LegendLabel = "2 % Growth" From = "0" To = "2" Color =  "#AED960"  />
+                        <treemap:Range LegendLabel = "3 % Growth" From = "0" To = "3" Color =  "#FFAF51"  />
+                        <treemap:Range LegendLabel = "4 % Growth" From = "0" To = "4" Color =  "#F3D240"  />
+                    </treemap:RangeColorMapping.Ranges>
+                </treemap:RangeColorMapping>
+            </treemap:SfTreeMap.LeafItemColorMapping>
+
+        </treemap:SfTreeMap>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+ PopulationViewModel viewModel = new PopulationViewModel();
+
+            SfTreeMap treeMap = new SfTreeMap();
+            treeMap.BackgroundColor = Color.White;
+            treeMap.ColorValuePath = "Growth";
+            treeMap.WeightValuePath = "Population";
+            treeMap.LayoutType = LayoutTypes.Squarified;
+            treeMap.HighlightOnSelection = true;
+            treeMap.HightlightBorderWidth = 8;
+            treeMap.HightlightColor = Color.Red;
+
+            LeafItemSettings leafSetting = new LeafItemSettings();
+            leafSetting.Gap = 2;
+            leafSetting.OverflowMode = LabelOverflowMode.Wrap;
+            leafSetting.BorderColor = Color.FromHex("#A9D9F7");
+            leafSetting.LabelPath = "Country";
+            treeMap.LeafItemSettings = leafSetting;
+
+            TreeMapFlatLevel flatLevel = new TreeMapFlatLevel();
+            flatLevel.HeaderHeight = 20;
+            flatLevel.GroupPath = "Continent";
+            flatLevel.GroupGap = 5;
+            flatLevel.ShowHeader = true;
+            flatLevel.HeaderStyle = new Syncfusion.SfTreeMap.XForms.Style() { Color = Color.Black };
+            treeMap.Levels.Add(flatLevel);
+
+            LegendSettings legendSettings = new LegendSettings();
+            legendSettings.ShowLegend = true;
+            legendSettings.Size = new Size(700, 45);
+            legendSettings.LabelStyle = new Syncfusion.SfTreeMap.XForms.Style() { Color = Color.Black };
+            treeMap.LegendSettings = legendSettings;
+
+            RangeColorMapping rangeColorMapping = new RangeColorMapping();
+
+            Range range1 = new Range();
+            range1.From = 0;
+            range1.To = 1;
+            range1.Color = Color.FromHex("#77D8D8");
+            range1.LegendLabel = "1 % Growth";
+
+            Range range2 = new Range();
+            range2.From = 0;
+            range2.To = 2;
+            range2.Color = Color.FromHex("#AED960");
+            range2.LegendLabel = "2 % Growth";
+
+            Range range3 = new Range();
+            range3.From = 0;
+            range3.To = 3;
+            range3.Color = Color.FromHex("#FFAF51");
+            range3.LegendLabel = "3 % Growth";
+
+            Range range4 = new Range();
+            range4.From = 0;
+            range4.To = 4;
+            range4.Color = Color.FromHex("#F3D240");
+            range4.LegendLabel = "4 % Growth";
+
+            rangeColorMapping.Ranges.Add(range1);
+            rangeColorMapping.Ranges.Add(range2);
+            rangeColorMapping.Ranges.Add(range3);
+            rangeColorMapping.Ranges.Add(range4);
+
+            treeMap.LeafItemColorMapping = rangeColorMapping;
+
+            treeMap.DataSource = viewModel.PopulationDetails;
+            this.Content = treeMap;
+
+{% endhighlight %}
+
+{% endtabs %}  
+
+![Selection](Getting-Started_images/Selection.png)
 
 ## ItemTemplate
 

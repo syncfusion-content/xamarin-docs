@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize the Syncfusion segmented control as Switch in Xamarin.Forms
-description: Customize the segmented control as Switch
+title: Customize the Syncfusion segmented control as switch in Xamarin.Forms
+description: Customize the segmented control as switch
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
 
-# Customize the appearance of SegmentedControl as switch
+# Customize the appearance of segmented control as switch
 
 The segmented control can be customized like a switch using the [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfSegmentedControl~VisibleSegmentsCount.html) and [`SelectionIndicatorSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfSegmentedControl~SelectionIndicatorSettings.html) properties and [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfSegmentedControl~SelectionChanged_EV.html) event. By setting the value of [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfSegmentedControl~VisibleSegmentsCount.html) to two, you can customize the appearance of SegmentedControl like a normal switch. For intermediate switch, set the value of [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfSegmentedControl~VisibleSegmentsCount.html) to three.
 

@@ -404,3 +404,57 @@ public class CountriesViewModel : INotifyPropertyChanged
 You can download the example sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EventToCommand839299289.zip).
 
 For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
+
+## Check items binding under MVVM
+
+SfTreeView exposes a collection of all checked items. You can select the items while loading. To implement check box in tree view, refer to [Checkbox](https://help.syncfusion.com/xamarin/sftreeview/checkbox);
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeView 
+    x:Name="TreeView"  
+    CheckBoxMode="Recursive"
+    ItemsSource="{Binding NodeCollection}"
+    CheckedItems="{Binding CheckedNodeInfo}"
+    ItemTemplateContextType="Node">
+    <syncfusion:SfTreeView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+                <ViewCell.View>
+                    <Grid>
+                        <Grid Padding="5">
+                            <SfCheckBox:SfCheckBox 
+                                x:Name="CheckBox"
+                                IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
+                        </Grid>
+                    </Grid>
+                </ViewCell.View>
+            </ViewCell>
+        </DataTemplate>
+    </syncfusion:SfTreeView.ItemTemplate>
+</syncfusion:SfTreeView>
+{% endhighlight %}
+{% highlight c# %}
+public class ViewModel
+{
+    private ObservableCollection<object> checkedNodeInfo;
+    public ObservableCollection<object> CheckedNodeInfo
+    {
+        get
+        {
+            return checkedNodeInfo;
+        }
+        set
+        {
+            this.checkedNodeInfo = value;
+        }
+    }
+
+    public ViewModel()
+    {
+        checkedNodeInfo = new ObservableCollection<object>();
+        checkedNodeInfo.Add(NodeCollection[1]);
+    }
+}
+{% endhighlight %}
+{% endtabs %}

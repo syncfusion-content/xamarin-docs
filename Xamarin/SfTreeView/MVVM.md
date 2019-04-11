@@ -405,7 +405,7 @@ You can download the example sample [here](http://www.syncfusion.com/downloads/s
 
 For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
 
-## Check items binding under MVVM
+## Checkbox items binding in MVVM
 
 SfTreeView exposes a collection of all checked items. You can select the items while loading. To implement check box in tree view, refer to [Checkbox](https://help.syncfusion.com/xamarin/sftreeview/checkbox);
 

@@ -726,7 +726,7 @@ This section explains various DropDown button settings available in SfComboBox c
             </ListCollection:List>
         </combobox:SfComboBox.ComboBoxSource>
         <combobox:SfComboBox.DropDownButtonSettings>
-     		<combobox:DropDownButtonSettings Width="40" Height="40" FontIcon="" FontSize="16" FontColor="Blue" HighlightedBackgroundColor="Green" BackgroundColor="Red" HighlightFontColor="Red"/>
+     		<combobox:DropDownButtonSettings Width="40" Height="40" HighlightedBackgroundColor="Green" BackgroundColor="Red" HighlightFontColor="Red"/>
      	</combobox:SfComboBox.DropDownButtonSettings>
     </combobox:SfComboBox>
 </StackLayout>
@@ -753,10 +753,7 @@ This section explains various DropDown button settings available in SfComboBox c
     comboBox.DataSource = countryNames;
     DropDownButtonSettings dropDownButtonSettings = new DropDownButtonSettings();
     dropDownButtonSettings.Height = 40;
-    dropDownButtonSettings.Width = 40;
-    dropDownButtonSettings.FontIcon = "";
-    dropDownButtonSettings.FontSize = 16;
-    dropDownButtonSettings.FontColor = Color.Blue;
+    dropDownButtonSettings.Width = 40;   
     dropDownButtonSettings.HighlightedBackgroundColor = Color.Green;
     dropDownButtonSettings.BackgroundColor = Color.Red;
     dropDownButtonSettings.HighlightFontColor = Color.Red;
@@ -793,7 +790,9 @@ This section explains how to provide view to the drop down button.
 			<comboBox:SfComboBox.DropDownButtonSettings>
 				<comboBox:DropDownButtonSettings Width="40" Height="40">
 					<comboBox:DropDownButtonSettings.View>
-						<Label WidthRequest="30" Text="Click" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+						<Label WidthRequest="30" Text="Click" 
+							   HorizontalTextAlignment="Center" 
+							   VerticalTextAlignment="Center"/>
 					</comboBox:DropDownButtonSettings.View>
 				</comboBox:DropDownButtonSettings>
 			</comboBox:SfComboBox.DropDownButtonSettings>
@@ -804,7 +803,7 @@ This section explains how to provide view to the drop down button.
 
 {% highlight c# %}
 
-            StackLayout layout = new StackLayout()
+			StackLayout layout = new StackLayout()
 			{
 				VerticalOptions = LayoutOptions.Start,
 				HorizontalOptions = LayoutOptions.Start,
@@ -829,7 +828,7 @@ This section explains how to provide view to the drop down button.
 			label.HorizontalTextAlignment = TextAlignment.Center;
 			label.WidthRequest = 30;
 			dropDownButtonSettings.View = label;
-		       comboBox.DropDownButtonSettings = dropDownButtonSettings;
+			comboBox.DropDownButtonSettings = dropDownButtonSettings;
 			layout.Children.Add(comboBox);
 			Content = layout;
 

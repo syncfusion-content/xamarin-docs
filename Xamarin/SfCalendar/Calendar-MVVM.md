@@ -172,7 +172,7 @@ public class MainViewModel
  
 ### Tap command
  
-The [TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.TapCommand.html) will be triggered whenever tapping the calendar cell and passing the [CalendarTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs.html) as parameter.
+The [TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~TapCommand.html) will be triggered whenever tapping the calendar cell and passing the [CalendarTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs.html) as parameter.
 
 {% tabs %}
 {% highlight xaml %} 
@@ -211,7 +211,7 @@ public class CalendarViewModel
 
 ### Hold command
 
-The [HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.HoldCommand.html) will be triggered whenever the calendar cell is long pressed and passing the [DayCellHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.DayCellHoldingEventArgs.html) as parameter.
+The [HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~HoldCommand.html) will be triggered whenever the calendar cell is long pressed and passing the [DayCellHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.DayCellHoldingEventArgs.html) as parameter.
 
 {% tabs %}
 {% highlight xaml %} 
@@ -250,7 +250,7 @@ public class CalendarViewModel
 
 ### Month changed command
 
-The [MonthChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthChangedCommand.html) will be triggered whenever the navigating between month and Forward()/backward() is called in calendar and passing the [MonthChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthChangedEventArgs.html) as parameter.
+The [MonthChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MonthChangedCommand.html) will be triggered whenever the navigating between month and Forward()/backward() is called in calendar and passing the [MonthChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthChangedEventArgs.html) as parameter.
 
 {% tabs %}
 {% highlight xaml %} 
@@ -287,7 +287,7 @@ public class CalendarViewModel
 
 ### Selection changed command
 
-The [SelectionChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SelectionChangedCommand.html) will be triggered whenever the selection is changed in calendar for the following selections and passing the [SelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs.html) as parameter.
+The [SelectionChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionChangedCommand.html) will be triggered whenever the selection is changed in calendar for the following selections and passing the [SelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs.html) as parameter.
 
 * SingleSelection - A single date can be selected in a month view which can be equipped when user needs to select one date at a time.
 * MultiSelection - More than one date can be selected.

@@ -9,11 +9,13 @@ documentation: ug
 
 # Checkbox
 
-SfTreeView provides support for loading [CheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/getting-started) in each node, and allows users check/uncheck the corresponding node. There is no built-in support to enable or disable the check box. So, you should add checkbox in the `ItemTemplate` of the `SfTreeView` and bind the `IsChecked` property of the node.
+SfTreeView provides support for loading [CheckBox](https://help.syncfusion.com/xamarin/sfcheckbox/getting-started) in each node, and allows users check/uncheck the corresponding node. So, you should add checkbox in the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) of the `SfTreeView` and bind the [IsChecked](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~IsChecked.html) property of the TreeViewNode.
 
 ## Working with Checkbox in BoundMode
 
-Set `ItemTemplateContextType` to Node for bound mode to use check box in SfTreeView.
+When you are populating treeview nodes from [ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemsSource.html), then you can get or set the checked items by using [CheckedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CheckedItems.html) property.
+
+N> Set [ItemTemplateContextType](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplateContextType.html) as Node to bind the `TreeViewNode.IsChecked` property to CheckBox in `ItemTemplate`. To know more about ItemTemplateContextType click [here](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplateContextType.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -64,7 +66,7 @@ You can download the entire source of this demo [here](https://github.com/Syncfu
 
 ## Working with Checkbox in UnBoundMode
 
-you can directly set the IsChecked property when creating nodes.
+you can directly set the [IsChecked](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~IsChecked.html) property when creating nodes.
 
 {% tabs %}
 {% highlight xaml %}

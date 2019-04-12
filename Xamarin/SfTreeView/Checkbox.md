@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Node Checkbox | TreeView for Xamarin.Forms | Syncfusion
-description: Describes CheckBox features of TreeView.
+title: Checkbox with TreeView | TreeView for Xamarin.Forms | Syncfusion
+description: CheckBox in TreeView with non-built-in UI. Customer add our SfCheckBox control and bind to the property we are exposing or to the underlying data object property. We need to process the underlying data object property change and do the needful for recursive checking cases. It is only applicable for ItemTemplateContextType as Node.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -136,6 +136,59 @@ TreeView.CheckBoxMode = CheckBoxMode.Recursive;
 {% endtabs %}
 
 N> In recursive mode, the parent nodes checked property is updated only in UI interaction.
+
+## Checkbox items binding in MVVM
+
+SfTreeView exposes a collection of all checked items. You can select the items while loading.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeView 
+    x:Name="TreeView"  
+    CheckBoxMode="Recursive"
+    ItemsSource="{Binding NodeCollection}"
+    CheckedItems="{Binding CheckedNodeInfo}"
+    ItemTemplateContextType="Node">
+    <syncfusion:SfTreeView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+                <ViewCell.View>
+                        <Grid Padding="5">
+                            <SfCheckBox:SfCheckBox
+                                x:Name="CheckBox"
+                                Text="{Binding Content.FileName}"
+                                IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
+                        </Grid>
+                </ViewCell.View>
+            </ViewCell>
+        </DataTemplate>
+    </syncfusion:SfTreeView.ItemTemplate>
+</syncfusion:SfTreeView>
+{% endhighlight %}
+{% highlight c# %}
+public class ViewModel
+{
+    private ObservableCollection<object> checkedNodeInfo;
+    public ObservableCollection<object> CheckedNodeInfo
+    {
+        get
+        {
+            return checkedNodeInfo;
+        }
+        set
+        {
+            this.checkedNodeInfo = value;
+        }
+    }
+
+    public ViewModel()
+    {
+        checkedNodeInfo = new ObservableCollection<object>();
+        checkedNodeInfo.Add(NodeCollection[1]);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## Events
 

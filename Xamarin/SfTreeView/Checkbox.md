@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Checkbox with TreeView | TreeView for Xamarin.Forms | Syncfusion
-description: CheckBox in TreeView with non-built-in UI. Customer add our SfCheckBox control and bind to the property we are exposing or to the underlying data object property. We need to process the underlying data object property change and do the needful for recursive checking cases. It is only applicable for ItemTemplateContextType as Node.
+description: CheckBox in TreeView with non-built-in UI. Customer add our SfCheckBox control and bind to the property we are exposing or to the underlying data object property. We need to process the underlying data object property change and do the needful for recursive checking cases.
 platform: xamarin
 control: SfTreeView
 documentation: ug

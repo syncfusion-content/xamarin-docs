@@ -745,6 +745,8 @@ America/Phoenix
 <tr>
 <td>
 UTC
+</td>
+<td>
 America/Danmarkshavn
 </td>
 </tr>

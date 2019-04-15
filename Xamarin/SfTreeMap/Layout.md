@@ -9,9 +9,9 @@ documentation: ug
 
 # Layout
 
-You can decide on the visual representation of nodes belonging to all the treemap levels using the [`LayoutType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~LayoutType.html) property in tree map.
+You can decide the visual representation of nodes belonging to all the TreeMap levels using the [`LayoutType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~LayoutType.html) property of TreeMap.
 
-There are four different layouts in tree map such as
+The following four different types of layouts available in TreeMap:
 
 * Squarified
 * SliceAndDiceAuto
@@ -20,7 +20,7 @@ There are four different layouts in tree map such as
 
 ## Squarified
 
-**Squarified** layout creates rectangles with best aspect ratio.
+The **Squarified** layout creates rectangles with best aspect ratio.
 
 {% tabs %}  
 
@@ -80,7 +80,7 @@ There are four different layouts in tree map such as
 
 ## SliceAndDiceAuto
 
-**SliceAndDiceAuto** layout creates rectangles with high aspect ratio and displays them sorted both horizontally and vertically.
+The **SliceAndDiceAuto** layout creates rectangles with high aspect ratio and displays them sorted both horizontally and vertically.
 
 {% tabs %}  
 
@@ -140,7 +140,7 @@ There are four different layouts in tree map such as
 
 ## SliceAndDiceHorizontal
 
-**SliceAndDiceHorizontal** layout creates rectangles with high aspect ratio and displays them sorted horizontally.
+The **SliceAndDiceHorizontal** layout creates rectangles with high aspect ratio and displays them sorted horizontally.
 
 {% tabs %}  
 
@@ -199,7 +199,7 @@ There are four different layouts in tree map such as
 
 ## SliceAndDiceVertical
 
-**SliceAndDiceVertical** layout creates rectangles with high aspect ratio and displays them sorted vertical.
+The **SliceAndDiceVertical** layout creates rectangles with high aspect ratio and displays them sorted vertically.
 
 {% tabs %}  
 
@@ -255,4 +255,5 @@ There are four different layouts in tree map such as
 {% endtabs %}  
 
 ![SliceAndDiceVertical layout](Getting-Started_images/SliceAndDiceVertical.png)
+
 

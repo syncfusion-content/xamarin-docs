@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a TreeMap control in a real-time scenario and also provides a walk-through on some of the customization features available in TreeMap control.
+This section explains the steps required to configure the TreeMap control in a real-time scenario and provides a walk-through on some of the customization features available in the TreeMap control.
 
 ## Adding SfTreeMap reference
 
@@ -58,7 +58,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 N> Currently an additional step is required for UWP project. You need to create an instance of the TreeMap custom renderer. If you are adding the references from toolbox, this step is not needed.
 
-Create an instance of SfTreeMapRenderer in MainPage constructor of the UWP project as shown in the following code sample.
+Create an instance of SfTreeMapRenderer in the MainPage constructor of the UWP project as demonstrated in the following code sample.
 
 {% highlight C# %}  
 
@@ -73,8 +73,7 @@ public MainPage()
 
 {% endhighlight %}
 
-   
-Create an instance of the SfTreeMapRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as follows.
+Create an instance of SfTreeMapRenderer in the FinishedLaunching overridden method of AppDelegate class in the iOS Project as demonstrated in the following code sample.
 
 {% highlight C# %}  
 
@@ -90,13 +89,12 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 }
 
 {% endhighlight %}
-
    
-## Initializing the TreeMap
+## Initializing TreeMap
 
-The Treemap control can be configured entirely in C# code or using XAML markup.
+The Treemap control can be configured entirely in C# or using XAML markup.
 
-The first step is to create a TreeMap object. 
+The first step is to create a TreeMap object.
 
 {% tabs %}  
 
@@ -129,14 +127,14 @@ public Page3 ()
 
 {% endtabs %}  
 
-## Populating TreeMap Items
+## Populating TreeMap items
 
-Treemap items can be populated in two ways using the below properties.
+The Treemap items can be populated in two ways using the following properties:
 
-1. DataSource
-2. Items
+* DataSource
+* Items
 
-Using DataSource property you can bind the tree map data collection to it. To render leaf nodes for the underlying data, levels and leaf item settings has to be specified which is explained in detail in `Levels`
+Using the `DataSource` property, you can bind the tree map data collection to it. To render leaf nodes for underlying data, levels and leaf item settings have to be specified; it is explained in detail in the `Levels`
 section.
 
 {% tabs %}  
@@ -201,7 +199,7 @@ section.
 
 {% endtabs %}
 
-[`Items`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~Items.html) accepts a collection of TreeMapItems as input. You can bind tree map items to the Items collection as in the below code snippet.
+The [`Items`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~Items.html) property accepts a collection of TreeMapItems as input. You can bind tree map items to the Items collection as demonstrated in the following code sample.
 
 {% tabs %}  
 
@@ -216,7 +214,6 @@ section.
     </ContentPage.Content>
 
 {% endhighlight %}
-
 
 {% highlight c# %}
 
@@ -234,7 +231,6 @@ public static readonly BindableProperty TreeMapItemsProperty =
 
 	BindableProperty.Create<DataModel, ObservableCollection<TreeMapItem>>(p => p.TreeMapItems, null, BindingMode.TwoWay, null, null, null, null);
 
-
 public ObservableCollection<TreeMapItem> TreeMapItems
 {
 
@@ -243,7 +239,6 @@ public ObservableCollection<TreeMapItem> TreeMapItems
     set { SetValue(TreeMapItemsProperty, value); }
 
 }
-
 
 public DataModel()
 {
@@ -275,18 +270,18 @@ public DataModel()
 
 {% endtabs %}  
 
-## Grouping of TreeMap Items using Levels
+## Grouping TreeMap items using levels
 
-You can group TreeMapItems using two types of levels.
+You can group TreeMapItems using the following two types of levels:
 
-1. TreeMap Flat Level
-2. TreeMap Hierarchical Level
+* TreeMap Flat Level
+* TreeMap Hierarchical Level
 
-[`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~Levels.html) were explained in detail in [`TreeMapLevels`](https://help.syncfusion.com/xamarin/sftreemap/treemaplevels) section.
+The [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~Levels.html) are explained in detail in the [`TreeMapLevels`](https://help.syncfusion.com/xamarin/sftreemap/treemaplevels) section.
 
-## Customize TreeMap Appearance by Range
+## Customizing the appearance of TreeMap by range
 
-You can differentiate the nodes based on its value and color using the [`RangeColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.RangeColorMapping.html). You can define the color value range using the [`From`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~To.html) properties in [`Range`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range.html). From and To properties value is based on the underlying data bound to the [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~ColorValuePath.html) property.
+You can differentiate the nodes based on their values and colors using [`RangeColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.RangeColorMapping.html). You can define the color value range using the [`From`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~To.html) properties in [`Range`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range.html). The values of `From` and `To` properties depend on underlying data bound to the [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~ColorValuePath.html) property.
 
 {% tabs %}  
 
@@ -322,7 +317,7 @@ treeMap.LeafItemColorMapping = new RangeColorMapping (){ Ranges = ranges };
 
 ## LeafItemSetting
 
-You can customize the tree map leaf nodes using [`LeafItemSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LeafItemSettings.html). 
+You can customize the tree map leaf nodes using [`LeafItemSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LeafItemSettings.html).
 
 {% tabs %}  
 
@@ -349,13 +344,13 @@ You can customize the tree map leaf nodes using [`LeafItemSettings`](https://hel
 
 {% endtabs %} 
 
-## Enable Legend
+## Enabling legends
 
-Color value of leaf nodes can be tracked with the help of tree map legend. Legend support is applicable only for the TreeMap whose leaf nodes are colored using RangeColorMapping. You can set [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LegendSettings~ShowLegend.html) property value to “True” to make the legend visible.
+The color value of leaf nodes can be tracked using tree map legend. The legend support is applicable only for the TreeMap whose leaf nodes are colored using RangeColorMapping. Set the value of [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LegendSettings~ShowLegend.html) property to “True” to make legends visible.
 
-## Label for Legends
+## Labels for legends
 
-You can customize the labels of the legend items using the [`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~LegendLabel.html) property in RangeColorMapping. 
+You can customize the labels of legend items using the [`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~LegendLabel.html) property in RangeColorMapping. 
 
 {% tabs %} 
 
@@ -380,7 +375,7 @@ You can customize the labels of the legend items using the [`LegendLabel`](https
 
 {% endtabs %}
 
-Below is the complete code for reproducing the following output.
+The following code sample helps you reproduce the output.
 
 {% tabs %} 
 
@@ -497,12 +492,13 @@ Below is the complete code for reproducing the following output.
             treeMap.DataSource = viewModel.PopulationDetails;
             this.Content = treeMap;
 
-
 {% endhighlight %}
 
 {% endtabs %}
 
-You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/TreeMap_GettingStarted_Xamarin_Forms-).  
+You can find the complete getting-started sample in the following link: [Getting-started sample](https://github.com/SyncfusionExamples/TreeMap_GettingStarted_Xamarin_Forms-).
+
+The following screenshot illustrates the output of SfTreeMap.
 
 ![Output of SfTreeMap](Getting-Started_images/GettingStartedOutput.png)
 

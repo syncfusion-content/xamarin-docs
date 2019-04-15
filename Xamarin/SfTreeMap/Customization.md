@@ -9,13 +9,13 @@ documentation: ug
 
 # Customization
 
-Tree map control supports color customization to determine the exact combination of colors for the tree nodes displayed and tooltip support to display additional information of treemap data.
+The TreeMap control supports color customization to determine the exact combination of colors for the tree nodes displayed and provides tooltip support to display additional information of TreeMap data.
 
 ## Color
 
-You can customize the colors of the leaf nodes using the [`ColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.ColorMapping.html) support.
+You can customize the colors of leaf nodes using the [`ColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.ColorMapping.html) support.
 
-ColorMapping is categorized into three different types such as,
+The `ColorMapping` is categorized into the following three different types:
 
 * UniColorMapping
 * RangeColorMapping
@@ -23,7 +23,7 @@ ColorMapping is categorized into three different types such as,
 
 ### UniColorMapping
 
-You can color all the leaf nodes with the same color by setting vaue to the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.UniColorMapping~Color.html) property of the [`UniColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.UniColorMapping.html).
+You can color all the leaf nodes with the same color by setting vaue to the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.UniColorMapping~Color.html) property of [`UniColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.UniColorMapping.html).
 
 {% tabs %}  
 
@@ -88,9 +88,9 @@ You can color all the leaf nodes with the same color by setting vaue to the [`Co
 
 ![](TreeMapLevels_images/Unicolor.png)
 
-### Range Color Mapping
+### RangeColorMapping
 
-You can group the leaf nodes based on the range of the data’s color values. You can set a unique color for every ranges. To achieve this, specify the [`To`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~To.html) and [`From`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~From.html) values as range bound and `Color` value to fill the leaf nodes of the particular range, through the `RangeColorMapping` property of the tree map. You must specify value to the ColorValuePath since ranges `From` and `To` will be based on the underbound value of the [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~ColorValuePath.html).
+You can group the leaf nodes based on the range of color values of data. You can set a unique color for every range. To achieve this, specify the [`To`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~To.html) and [`From`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~From.html) values as range bound, and specify the `Color` value to fill the leaf nodes of particular range using the `RangeColorMapping` property of TreeMap. You must specify value to ColorValuePath since the ranges `From` and `To` depend on the underbound value of [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~ColorValuePath.html).
 
 {% tabs %}  
 
@@ -204,9 +204,9 @@ You can group the leaf nodes based on the range of the data’s color values. Yo
 
 ![](TreeMapLevels_images/RangeColor.png)
 
-### Desaturation Color Mapping
+### DesaturationColorMapping
 
-You can differentiate all the leaf nodes using the [`DesaturationColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.DesaturationColorMapping.html) property of the tree map. Differentiation is achieved, even though same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.DesaturationColorMapping~Color.html) value specified in the color value range using [`RangeMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.DesaturationColorMapping~RangeMinimum.html) and [`RangeMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.DesaturationColorMapping~RangeMaximum.html) value of the data collection. You can also bound the opacity range by setting [`From`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.DesaturationColorMapping~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.DesaturationColorMapping~To.html) property of the `DesaturationColorMapping`.
+You can differentiate all the leaf nodes using the [`DesaturationColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.DesaturationColorMapping.html) property of TreeMap. Differentiation can be achieved even though the same color is applied for all the leaf nodes by varying the opacity of the leaf nodes based on the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.DesaturationColorMapping~Color.html) value specified in the color value range using the [`RangeMinimum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.DesaturationColorMapping~RangeMinimum.html) and [`RangeMaximum`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.DesaturationColorMapping~RangeMaximum.html) values of data collection. You can also bind the opacity range by setting the [`From`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.DesaturationColorMapping~From.html) and [`To`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.DesaturationColorMapping~To.html) properties of `DesaturationColorMapping`.
 
 {% tabs %}  
 
@@ -289,13 +289,13 @@ PopulationViewModel viewModel = new PopulationViewModel();
 
 ## Tooltip
 
-You can enable the tooltip support for the TreeMap by setting the [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~ShowTooltip.html) property to true. By default, it takes the property of the bound object that is referred to in the [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TreeMapFlatLevel~GroupPath.html) and displays its content when the corresponding node is tapped.
+You can enable the tooltip support for TreeMap by setting the [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~ShowTooltip.html) property to true. By default, it takes the property of bound object that is referenced in [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TreeMapFlatLevel~GroupPath.html) and displays its content when the corresponding node is tapped.
 
 ![](TreeMapLevels_images/Tooltip.png)
 
 ### Tooltip customization
 
-You can customize the tooltip to more show deatils by specifying [`TooltipTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TooltipSetting~TooltipTemplate.html) to the tooltip.
+You can customize the tooltip to show more deatils by specifying [`TooltipTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TooltipSetting~TooltipTemplate.html) to tooltip.
 
 {% tabs %}  
 
@@ -489,7 +489,7 @@ PopulationViewModel viewModel = new PopulationViewModel();
 
 ## Selection
 
-Tree map control provides selection support which allows you to select the tree map items. Selection can be enabled by setting [`HighlightOnSelection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~HighlightOnSelection.html) property in tree map to true. You can specify the highlight color and border width using the properties [`HightlightColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~HightlightColor.html) and [`HightlightBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~HightlightBorderWidth.html) respectively.
+The TreeMap control provides selection support, which allows you to select the tree map items. The selection can be enabled by setting the [`HighlightOnSelection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~HighlightOnSelection.html) property to true in TreeMap. You can specify the highlight color and border width using the [`HightlightColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~HightlightColor.html) and [`HightlightBorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~HightlightBorderWidth.html) properties, respectively.
 
 {% tabs %}  
 
@@ -611,7 +611,7 @@ Tree map control provides selection support which allows you to select the tree 
 
 ## ItemTemplate
 
-The tree map control provides template support for tree map items with the help of [`ItemTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~ItemTemplate.html) property which allows any type of custom template to be created with any type of view element.
+The TreeMap control provides template support to tree map items using the [`ItemTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~ItemTemplate.html) property, which allows any type of custom template to be created with any type of view element.
 
 {% tabs %}  
 
@@ -691,7 +691,4 @@ The tree map control provides template support for tree map items with the help 
 
 {% endtabs %}  
 
-
 ![](TreeMapLevels_images/ItemTemplate.png)
-
-

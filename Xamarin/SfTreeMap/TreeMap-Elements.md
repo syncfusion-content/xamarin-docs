@@ -11,7 +11,7 @@ documentation: ug
 
 The TreeMap contains the following elements:
 
-* Legend
+* Legends
 * Headers
 * Labels
 
@@ -21,11 +21,11 @@ You can set the color value of leaf nodes using the [`LegendSettings`](https://h
 
 The visibility of legend can be enabled by setting the [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LegendSettings~ShowLegend.html) property to true.
 
-### TreeMap legend
+### TreeMap legends
 
-You can set the size of the legend icons by setting the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LegendSettings~IconSize.html) property of the `LegendSettings` property in tree map.
+You can set the size of legend icons by setting the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LegendSettings~IconSize.html) property of `LegendSettings` in TreeMap.
 
-### Label for legend
+### Labels for legends
 
 You can customize the labels of the legend items using the [`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~LegendLabel.html) property of [`RangeColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.RangeColorMapping.html). 
 
@@ -51,7 +51,6 @@ You can customize the labels of the legend items using the [`LegendLabel`](https
             legendSettings.LabelStyle = new Syncfusion.SfTreeMap.XForms.Style() { Color = Color.Black };
             treeMap.LegendSettings = legendSettings;
 
-
 {% endhighlight %}
 
 {% endtabs %} 
@@ -60,7 +59,7 @@ You can customize the labels of the legend items using the [`LegendLabel`](https
 
 ## Header
 
-You can set headers for each level by setting the [`ShowHeader`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TreeMapLevel~ShowHeader.html) property of each **TreeMap** level. The [`HeaderHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TreeMapLevel~HeaderHeight.html) property helps you set the height of the header and the [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TreeMapFlatLevel~GroupPath.html) value determines the header value. 
+You can set headers for each level by setting the [`ShowHeader`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TreeMapLevel~ShowHeader.html) property of each **TreeMap** level. The [`HeaderHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TreeMapLevel~HeaderHeight.html) property helps you set the height of header, and the [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TreeMapFlatLevel~GroupPath.html) value determines the header value. 
 
 {% tabs %}
 
@@ -95,7 +94,7 @@ You can set headers for each level by setting the [`ShowHeader`](https://help.sy
 
 ## Data labels
 
-The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LeafItemSettings~ShowLabels.html) property is used to enable or disable the labels in leaf nodes. The [`LabelPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LeafItemSettings~LabelPath.html) property allows you to set values for labels.
+The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LeafItemSettings~ShowLabels.html) property is used to enable or disable the labels in leaf nodes. The [`LabelPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LeafItemSettings~LabelPath.html) property allows you to set values to labels.
 
 {% tabs %}
 
@@ -124,6 +123,7 @@ The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 The [`OverflowMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LeafItemSettings~OverflowMode.html) property aligns data labels within leaf node boundaries using the `Trim`, `Wrap`, and `Hide` options. The default value of the `OverflowMode` property is Trim.
 
 #### Trim
+
 You can trim the data labels inside the leaf node boundaries using the `Trim` option.
 
 {% tabs %}
@@ -147,6 +147,7 @@ You can trim the data labels inside the leaf node boundaries using the `Trim` op
 ![Data label trim support in Xamarin.Forms TreeMap](Getting-Started_images/LabelTrim.jpg)
 
 #### Wrap
+
 You can wrap the data labels inside the leaf node boundaries using the `Wrap` option.
 
 {% tabs %}
@@ -170,6 +171,7 @@ You can wrap the data labels inside the leaf node boundaries using the `Wrap` op
 ![Data label wrap support in Xamarin.Forms TreeMap](Getting-Started_images/LabelWrap.jpg)
 
 #### Hide
+
 You can hide the data labels inside the leaf node boundaries using the `Hide` option. 
 
 {% tabs %}
@@ -194,7 +196,7 @@ You can hide the data labels inside the leaf node boundaries using the `Hide` op
 
 ### Customize data labels
 
-You can customize the data labels using the [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LeafItemSettings~LabelStyle.html) property of LeafItemSettings. The font color, size, attribute, and family can be customized using the `FontSize, FontAttributes, FontFamily, and Color` properties.
+You can customize the data labels using the [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.LeafItemSettings~LabelStyle.html) property of LeafItemSettings. The font color, font size, font attribute, and font family can be customized using the `Color`, `FontSize`, `FontAttributes`, and `FontFamily` properties.
 
 {% tabs %}
 

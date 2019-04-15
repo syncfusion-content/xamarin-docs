@@ -83,6 +83,8 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 To deploy the cards in `Release` mode, you need to initialize the cards assemblies in App.xaml.cs in the UWP project as shown in the below code snippets.
 
+N> If you are adding the references from toolbox, this step is not needed.
+
 {% highlight C# %} 
 
 // In App.xaml.cs 

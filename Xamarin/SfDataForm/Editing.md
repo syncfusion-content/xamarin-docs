@@ -330,6 +330,8 @@ public class CustomTextEditor : DataFormEditor<Entry>
 	{
 		base.OnInitializeView(dataFormItem, view);
 		view.Keyboard = Keyboard.Numeric;
+		this.OnUpdateValue(dataFormItem, view);
+        this.OnUpdateReadOnly(dataFormItem, view);
 	}
 
 	protected override void OnWireEvents(Entry view)
@@ -380,6 +382,19 @@ public class CustomTextEditor : DataFormEditor<Entry>
 		this.DataForm.ItemManager.SetValue(dataFormItemView.DataFormItem, view.Text);
 	}
 
+	 protected override void OnUpdateValue(DataFormItem dataFormItem, Entry view)
+    {
+        var cellvalue = this.DataForm.ItemManager.GetValue(dataFormItem);
+        if (cellvalue != null && view.Text == cellvalue.ToString())
+            return;
+        view.Text = cellvalue == null ? string.Empty : cellvalue.ToString();
+    }
+
+    protected override void OnUpdateReadOnly(DataFormItem dataFormItem, Entry view)
+    {
+		base.OnUpdateReadOnly(dataFormItem, view);
+    }
+	
 	protected override void OnUnWireEvents(Entry view)
 	{
 		view.TextChanged -= OnViewTextChanged;
@@ -398,6 +413,8 @@ dataForm.ValidationMode = ValidationMode.LostFocus;
 You should manually commit the custom DataFormItem editor value by using [OnCommitValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormEditor%601~OnCommitValue.html) override method of [DataFormEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormEditor%601.html) class on custom editor `Value` or `Focus changed` event which is used to update the custom editor value in respective property in [DataObject](https://help.syncfusion.com/xamarin/sfdataform/getting-started#setting-data-object) based on dataform [commit mode](https://help.syncfusion.com/xamarin/sfdataform/editing#commit-mode) set. 
 
 Also , you should manually validate the custom editor value in by using [OnValidateValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormEditor%601~OnValidateValue.html) override method of `DataFormEditor` class on custom editor `Value` or `Focus changed` event which is used to validate the custom editor value based on data form [validation mode](https://help.syncfusion.com/xamarin/sfdataform/validation?cs-save-lang=1&cs-lang=xaml#validation-mode) set . In the override method for OnValidateValue, you need to return [DataForm.Validate(string)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Validate.html) method in order to validate the particular data item.
+
+Also, you should manually update the value to the custom editor by using [OnUpdateValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormEditor%601~OnUpdateValue.html) overridee method of `DataFormEditor` class on custom editor while bound the value from the Model class.
 
 ![Creating custom editor for the data form item in Xamarin.Forms DataForm](SfDataForm_images/DataFormCustomEditor.jpg)
 

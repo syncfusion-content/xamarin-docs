@@ -384,10 +384,10 @@ public class CustomTextEditor : DataFormEditor<Entry>
 
 	 protected override void OnUpdateValue(DataFormItem dataFormItem, Entry view)
     {
-        var cellvalue = this.DataForm.ItemManager.GetValue(dataFormItem);
-        if (cellvalue != null && view.Text == cellvalue.ToString())
+        var cellValue = this.DataForm.ItemManager.GetValue(dataFormItem);
+        if (cellValue != null && view.Text == cellValue.ToString())
             return;
-        view.Text = cellvalue == null ? string.Empty : cellvalue.ToString();
+        view.Text = cellValue == null ? string.Empty : cellValue.ToString();
     }
 
     protected override void OnUpdateReadOnly(DataFormItem dataFormItem, Entry view)

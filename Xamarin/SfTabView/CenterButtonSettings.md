@@ -9,7 +9,7 @@ documentation: ug
 
 # CenterButtonSettings
 
-This section explains on how to create and customize The Xamarin.Forms SfTabView CenterButton. To enbable CenterButton need to set the `OverFlowMode` of Xamarin.Forms SfTabView as `CenterButton`.
+This section explains on how to create and customize The Xamarin.Forms SfTabView CenterButton. To enbable CenterButton we need to set the `OverFlowMode` of Xamarin.Forms SfTabView as `CenterButton`.
 
 {% tabs %}
 
@@ -17,25 +17,18 @@ This section explains on how to create and customize The Xamarin.Forms SfTabView
 
 <tabView:SfTabView OverflowMode="CenterButton"
                    x:Name="tabView">
-    <tabView:SfTabView.CenterButtonSettings>
-        <tabView:CenterButtonSettings>
-        </tabView:CenterButtonSettings>
-    </tabView:SfTabView.CenterButtonSettings>
 </tabView:SfTabView>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-public partial class MainPage : ContentPage
+public MainPage()
 {
+    InitializeComponent();
     SfTabView tabView = new SfTabView();
-
-    public MainPage()
-    {
-        InitializeComponent();
-        tabView.OverflowMode = OverflowMode.CenterButton;
-    }
+    tabView.OverflowMode = OverflowMode.CenterButton;
+    this.Content = tabView;
 }
 
 {% endhighlight %}
@@ -44,7 +37,7 @@ public partial class MainPage : ContentPage
 
 ## Customize CenterButtonSettings
 
-We can customize the CenterButton by using the properties of `CenterButtonSetting`. Following are the some properties that are used to customize the view of CenterButton `Title`, `TitleFontSize`, `TitleFontColor`, `TitleFontAttributes`, `Height`, `Width`, `BackgroundColor`, `BorderColor`, `BorderThickness`.
+We can customize the CenterButton by using the properties of `CenterButtonSetting`. Following are the some properties that are used to customize the view of CenterButton `BackgroundColor`, `BorderColor`, `BorderThickness`, `Height`, `Title`, `TitleFontAttributes`, `TitleFontColor`, `TitleFontSize`, `Width`.
 
 {% tabs %}
 
@@ -53,7 +46,7 @@ We can customize the CenterButton by using the properties of `CenterButtonSettin
 <tabView:SfTabView.CenterButtonSettings>
     <tabView:CenterButtonSettings Height="80" Width="100"
                                   Title="CenterButton" TitleFontColor="Green"
-                                  BackgroundColor="LightGray">
+                                  TitleFontAttributes="Bold">
     </tabView:CenterButtonSettings>
 </tabView:SfTabView.CenterButtonSettings>
 
@@ -64,7 +57,6 @@ We can customize the CenterButton by using the properties of `CenterButtonSettin
 public MainPage()
 {
     InitializeComponent();
-    tabView.OverflowMode = OverflowMode.CenterButton;
     var centerButton = tabView.CenterButtonSettings;
     centerButton.Height = 80;
     centerButton.Width = 100;
@@ -85,13 +77,7 @@ When we tapp the `CenterButton` an event `CenterButtonTapped` will be raised. Us
 
 {% highlight xaml %}
 
-<tabView:SfTabView OverflowMode="CenterButton"
-                   x:Name="tabView"
-                   CenterButtonTapped="TabView_CenterButtonTapped">
-    <tabView:SfTabView.CenterButtonSettings>
-        <tabView:CenterButtonSettings>
-        </tabView:CenterButtonSettings>
-    </tabView:SfTabView.CenterButtonSettings>
+<tabView:SfTabView CenterButtonTapped="TabView_CenterButtonTapped">
 </tabView:SfTabView>
 
 {% endhighlight %}
@@ -101,7 +87,6 @@ When we tapp the `CenterButton` an event `CenterButtonTapped` will be raised. Us
 public MainPage()
 {
     InitializeComponent();
-    tabView.OverflowMode = OverflowMode.CenterButton;
     tabView.CenterButtonTapped += TabView_CenterButtonTapped;
 }
 

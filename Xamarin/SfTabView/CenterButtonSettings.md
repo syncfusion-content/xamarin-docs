@@ -9,7 +9,7 @@ documentation: ug
 
 # CenterButtonSettings
 
-This section explains on how to create and customize The Xamarin.Forms SfTabView CenterButton. To enbable CenterButton we need to set the `OverFlowMode` of Xamarin.Forms SfTabView as `CenterButton`.
+This section explains on how to create and customize The Xamarin.Forms SfTabView CenterButton. To enable CenterButton we need to set the `OverFlowMode` of Xamarin.Forms SfTabView as `CenterButton`.
 
 {% tabs %}
 
@@ -45,7 +45,7 @@ We can customize the CenterButton by using the properties of `CenterButtonSettin
 
 <tabView:SfTabView.CenterButtonSettings>
     <tabView:CenterButtonSettings Height="80" Width="100"
-                                  Title="CenterButton" TitleFontColor="Green"
+                                  Title="Center Button" TitleFontColor="Green"
                                   TitleFontAttributes="Bold">
     </tabView:CenterButtonSettings>
 </tabView:SfTabView.CenterButtonSettings>
@@ -71,7 +71,7 @@ public MainPage()
 
 ## CenterButtonTapped Event
 
-When we tapp the `CenterButton` an event `CenterButtonTapped` will be raised. Using this event we can able to set alert message.
+When we tap the `CenterButton` an event `CenterButtonTapped` will be raised. Using this event we can able to set alert message.
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ private void TabView_CenterButtonTapped(object sender, EventArgs e)
 
 ## Custom CenterButton
 
-When built-in view is not needed, It can be overriden by adding custom views to the CenterButtonView. The CenterButton view can be customized by adding Image, Label, Button inside the CenterButtonView. Please refer the following code snippet to customize the CentetButton view.
+When built-in view is not needed, It can be overridden by adding custom views to the CenterButtonView. The CenterButton view can be customized by adding Image, Label, Button inside the CenterButtonView. Please refer the following code snippet to customize the CenterButton view.
 
 {% tabs %}
 
@@ -155,4 +155,4 @@ private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
 
 ![TabViewImage](images/Center-Button/Center_Button_Customization.png)
 
-Youd can Find the sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TabView_CenterButton1561492158.zip).
+Please Find the sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TabView_CenterButton1561492158.zip).

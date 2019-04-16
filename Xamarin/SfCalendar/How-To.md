@@ -88,11 +88,11 @@ We can perform an operation when the selected date get changed using [SelectionC
 	
 void Handle_SelectionChanged(object sender, Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs args)
 {
-	// Gets the added and removed dates from Single, Multi and Range selection mode.
+	 //// Get added and removed dates in Single, Multi and Range selection modes.
      IList<DateTime> selectedDates = args.DateAdded;
      IList<DateTime> deselectedDates = args.DateRemoved;
 	 
-	 //Gets the added date range from Multi-range selection mode.
+	 //// Gets the added date range in Multi-range selection mode.
      IList<SelectionRange> selectionRange = e.NewRangeAdded;
 }
 	

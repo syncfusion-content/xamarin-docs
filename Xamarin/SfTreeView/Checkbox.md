@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TreeView Checkbox | TreeNode CheckBox | Xamarin.Forms | Syncfusion
-description: CheckBox in TreeView with non-built-in UI. Customer add our SfCheckBox control and bind the property we are exposing or to the underlying data object property
+description: CheckBoxTreeView provides support for loading CheckBox in each node and allows users to check/uncheck the corresponding node.
 platform: xamarin
 control: SfTreeView
 documentation: ug

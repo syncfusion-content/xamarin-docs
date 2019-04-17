@@ -11,7 +11,7 @@ documentation: ug
 
 The button control supports to customize the border color, image width, corner radius, background color, and more. The button control can be customized using the following properties:
 
-## Label Customization
+## Text Customization
 
 The text inside the button can be customized by its text color, font size, font attributes, font family and text alignment.
 
@@ -218,7 +218,7 @@ button.BackgroundColor = Color.DeepSkyBlue;
 
 ## Image Customization
 
-The image can be customized by its show icon, image source, image width, image alignment and shadow effect.
+The image can be customized by its show icon, image source, image width and image alignment.
 
 ### ShowIcon
 
@@ -316,62 +316,6 @@ button.ImageAlignment = Alignment.End;
 
 ![SfButton with image with icon image alignment](images/Button_iconalignment.png)
 
-### Shadow Effect
-
-The button control provides shadow effect support. To enable shadow effect, set the `HasShadow` property to true.
-
-You can customize the color of shadow using the `ShadowColor` property. 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-          <SyncfusionButton:SfButton
-                                     HeightRequest="50"
-                                     WidthRequest="200"
-                                     VerticalOptions="Center"
-                                     HorizontalOptions="Center"
-                                     CornerRadius="25"
-                                     HasShadow="True"
-                                     BorderWidth="1"
-                                     BorderColor="Gray"
-                                     BackgroundColor="#538EEC"
-                                     ImageSource="Basket.png"
-                                     ShowIcon="True"
-                                     ImageAlignment="End"
-                                     Text="ADD To CART"/>
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfButton button = new SfButton()
-            {
-                HeightRequest = 50,
-                WidthRequest = 200,
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center,
-                CornerRadius = new Thickness(25),
-                HasShadow = true,
-                BorderWidth = 1,
-                BorderColor = Color.Gray,
-                BackgroundColor = Color.FromHex("#538EEC"),
-                ImageSource = "Basket.png",
-                ShowIcon = true,
-                ImageAlignment = Alignment.Start,
-                Text = "ADD To CART"
-            };
-
-            this.Content = button;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-N> Shadow support has not been provided for UWP Platform.
-
-![ShadowImage](images/Xamarin_Forms_Shadow.png)
-
 ## Command
 
 The [`Command`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~Command.html)  property is used to associate a command with an instance of SfButton. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
@@ -432,5 +376,61 @@ public class CommandDemoViewModel : INotifyPropertyChanged
 
 {% endhighlight %}
 {% endtabs %}
+
+## Shadow Effect
+
+The button control provides shadow effect support. To enable shadow effect, set the `HasShadow` property to true.
+
+You can customize the color of shadow using the `ShadowColor` property. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+          <SyncfusionButton:SfButton
+                                     HeightRequest="50"
+                                     WidthRequest="200"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     CornerRadius="25"
+                                     HasShadow="True"
+                                     BorderWidth="1"
+                                     BorderColor="Gray"
+                                     BackgroundColor="#538EEC"
+                                     ImageSource="Basket.png"
+                                     ShowIcon="True"
+                                     ImageAlignment="End"
+                                     Text="ADD To CART"/>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfButton button = new SfButton()
+            {
+                HeightRequest = 50,
+                WidthRequest = 200,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                CornerRadius = new Thickness(25),
+                HasShadow = true,
+                BorderWidth = 1,
+                BorderColor = Color.Gray,
+                BackgroundColor = Color.FromHex("#538EEC"),
+                ImageSource = "Basket.png",
+                ShowIcon = true,
+                ImageAlignment = Alignment.Start,
+                Text = "ADD To CART"
+            };
+
+            this.Content = button;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Shadow support has not been provided for UWP Platform.
+
+![ShadowImage](images/Xamarin_Forms_Shadow.png)
 
 The complete customization sample:[Customization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Customization-1070507783)

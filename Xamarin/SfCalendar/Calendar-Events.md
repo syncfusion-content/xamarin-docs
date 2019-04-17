@@ -89,7 +89,7 @@ N> The Inline function will be available only in MonthView with Single selection
 You can download the entire source code of this demo for Xamarin.Forms from
 here [CalendarEvents](https://github.com/SyncfusionExamples/creating-events-in-xamarin.forms-sfcalendar)
 
-![SfCalendar Inline events](images/xamarin.forms-calendar-events.jpg)
+![SfCalendar Inline events](images/xamarin.forms-calendar-Event.jpg)
 
 ## Customize inline/agenda view using DataTemplate
 

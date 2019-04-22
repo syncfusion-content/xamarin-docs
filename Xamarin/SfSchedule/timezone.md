@@ -19,6 +19,7 @@ Schedule allows you create appointments in various time zones and display them i
 
 We have added the following Time Zone's for the respective countries to cover all the time zone regions, you can use any of the time zone's from the following list for schedule time zone.
 <table>
+<tr>
 <th>Time Zone</th>
 <th>Region</th>
 </tr>

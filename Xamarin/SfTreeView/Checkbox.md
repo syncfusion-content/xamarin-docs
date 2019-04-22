@@ -234,6 +234,16 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
+## Get checked nodes
+
+Gets all the checked nodes in tree view. When binding `ItemsSource`, you can get the checked nodes list using [CheckedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CheckedItems.html).
+
+{% tabs %}
+{% highlight c# %}
+treeView.GetCheckedNodes();
+{% endhighlight %}
+{% endtabs %}
+
 ## Events
 
 ### NodeChecked event
@@ -254,15 +264,3 @@ private void TreeView_NodeChecked(object sender, Syncfusion.XForms.TreeView.Node
 {% endtabs %}
 
 N> `NodeChecked` event occurs only in UI interactions.
-
-## Method
-
-### GetCheckedNodes
-
-Gets all the checked nodes in tree view. When binding `ItemsSource`, you can get the checked nodes list using [CheckedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CheckedItems.html).
-
-{% tabs %}
-{% highlight c# %}
-treeView.GetCheckedNodes();
-{% endhighlight %}
-{% endtabs %}

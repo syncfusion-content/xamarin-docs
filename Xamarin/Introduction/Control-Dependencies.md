@@ -229,6 +229,34 @@ Syncfusion.Licensing.dll<br/>
 </tr>
 </table>
 
+## Cards
+
+<dl>
+  <dt>NuGet</dt>
+  <dd>Syncfusion.Xamarin.Cards</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.Cards.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.Cards.XForms.Android.dll<br/>Syncfusion.Cards.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.Cards.XForms.iOS.dll<br/>Syncfusion.Cards.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.Cards.XForms.UWP.dll<br/>Syncfusion.Cards.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
 ## Calculate
 
 <dl>

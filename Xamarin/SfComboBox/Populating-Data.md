@@ -22,21 +22,21 @@ Create an instance of string list and populate items as shown in the following c
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30"> 
-       <combobox:SfComboBox HeightRequest="40" x:Name="comboBox"> 
-            <combobox:SfComboBox.ComboBoxSource>
-					<ListCollection:List x:TypeArguments="x:String">
-                          <x:String> Great Britain </x:String>
-                          <x:String> Uganda </x:String>
-                          <x:String> Ukraine </x:String>
-                          <x:String> Canada </x:String>
-                          <x:String> France </x:String>
-                          <x:String> Italy </x:String>
-                          <x:String> United Kingdom </x:String>
-                          <x:String> China </x:String>
-                          <x:String> Japan </x:String>
-                    </ListCollection:List>
-        	</combobox:SfComboBox.ComboBoxSource>
-	    </combobox:SfComboBox>
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox"> 
+        <combobox:SfComboBox.ComboBoxSource>
+            <ListCollection:List x:TypeArguments="x:String">
+                <x:String> Great Britain </x:String>
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> Canada </x:String>
+                <x:String> France </x:String>
+                <x:String> Italy </x:String>
+                <x:String> United Kingdom </x:String>
+                <x:String> China </x:String>
+                <x:String> Japan </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.ComboBoxSource>
+    </combobox:SfComboBox>
 </StackLayout>
 
 	
@@ -46,9 +46,9 @@ Create an instance of string list and populate items as shown in the following c
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 }; 
 
 List<String> countryNames = new List<String>(); 
@@ -139,12 +139,12 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
-<ContentPage.BindingContext>
-    <local:EmployeeViewModel/>
- </ContentPage.BindingContext>
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DataSource="{Binding EmployeeCollection}" DisplayMemberPath="Name" />
-</StackLayout> 
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DataSource="{Binding EmployeeCollection}" DisplayMemberPath="Name" />
+    </StackLayout> 
 </ContentPage>
 
 {% endhighlight %}
@@ -153,9 +153,9 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
 
 StackLayout layout = new StackLayout()
 {
-	VerticalOptions = LayoutOptions.Start,
-	HorizontalOptions = LayoutOptions.Start,
-	Padding = new Thickness(30)
+    VerticalOptions = LayoutOptions.Start,
+    HorizontalOptions = LayoutOptions.Start,
+    Padding = new Thickness(30)
 };
 
 EmployeeViewModel employee = new EmployeeViewModel();
@@ -164,7 +164,6 @@ comboBox.HeightRequest = 40;
 comboBox.BindingContext = employee;
 comboBox.DataSource = employee.EmployeeCollection;
 comboBox.DisplayMemberPath = "Name";
-
 layout.Children.Add(comboBox);
 Content = layout;
 
@@ -194,16 +193,16 @@ The [`ItemTemplate`] property helps to decorate suggestion items with custom tem
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DisplayMemberPath="Name" DataSource="{Binding EmployeeCollection}">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DisplayMemberPath="Name" DataSource="{Binding EmployeeCollection}">
 	<combobox:SfComboBox.ItemTemplate>
-		<DataTemplate>
-			<StackLayout Orientation="Horizontal">
-				<Image Source="User.png" WidthRequest="12"/>
-				<Label Text="{Binding Name}" />
-			</StackLayout>
-		</DataTemplate>
-	</combobox:SfComboBox.ItemTemplate>
-	</combobox:SfComboBox>
+            <DataTemplate>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="User.png" WidthRequest="12"/>
+                    <Label Text="{Binding Name}" />
+                </StackLayout>
+            </DataTemplate>
+        </combobox:SfComboBox.ItemTemplate>
+    </combobox:SfComboBox>
 </StackLayout>
 
 {% endhighlight %}
@@ -214,25 +213,25 @@ The ItemTemplate in the previous XAML code is translated to C# which is shown in
 
 DataTemplate itemTemplate = new DataTemplate(() =>
 {
-	StackLayout stack;
-	Image image;
-	Label label;
-	stack = new StackLayout();
-	stack.Orientation = StackOrientation.Horizontal;
-	image = new Image();
-	image.Source = (FileImageSource)ImageSource.FromFile("User.png");
-	label = new Label();
-	label.SetBinding(Label.TextProperty, "Name");
-	stack.Children.Add(image);
-	stack.Children.Add(label);
-	return new ViewCell { View = stack };
+    StackLayout stack;
+    Image image;
+    Label label;
+    stack = new StackLayout();
+    stack.Orientation = StackOrientation.Horizontal;
+    image = new Image();
+    image.Source = (FileImageSource)ImageSource.FromFile("User.png");
+    label = new Label();
+    label.SetBinding(Label.TextProperty, "Name");
+    stack.Children.Add(image);
+    stack.Children.Add(label);
+    return new ViewCell { View = stack };
 });
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 }; 
 
 EmployeeViewModel employee = new EmployeeViewModel();

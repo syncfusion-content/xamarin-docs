@@ -47,7 +47,7 @@ autoComplete.DataSource = countryNames;
 
 {% endtabs %}
 
-![](images/Populating-Data/populating-data-string.png)
+![Populating data string](images/Populating-Data/populating-data-string.png)
 
 ## Populating Business Objects
 
@@ -112,15 +112,41 @@ Now populate this EmployeeViewModel data in SfAutoComplete control by binding wi
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DataSource="{Binding EmployeeCollection}"/>
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AutoComplete"
+			 xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             x:Class="AutoComplete.MainPage">
+	<ContentPage.BindingContext>
+		<local:EmployeeViewModel/>
+	</ContentPage.BindingContext>
+	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+		<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DisplayMemberPath="Name" DataSource="{Binding EmployeeCollection}" />
+	</StackLayout>
+	
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-autoComplete.BindingContext = new EmployeeViewModel();
+StackLayout layout = new StackLayout()
+{
+	VerticalOptions = LayoutOptions.Start,
+	HorizontalOptions = LayoutOptions.Start,
+    Padding = new Thickness(30)
+};
+
+EmployeeViewModel employee = new EmployeeViewModel();
+SfAutoComplete autoComplete = new SfAutoComplete();
+autoComplete.HeightRequest = 40;
+autoComplete.BindingContext = employee;
+autoComplete.DataSource = employee.EmployeeCollection;
+autoComplete.DisplayMemberPath = "Name";
+
+layout.Children.Add(autoComplete);
+Content = layout;
 
 {% endhighlight %}
 
@@ -138,7 +164,7 @@ autoComplete.DisplayMemberPath = "Name";
 	
 {% endhighlight %}
 
-![](images/Populating-Data/populating-data-business-object.png)
+![Populating data business object](images/Populating-Data/populating-data-business-object.png)
 
 ### Setting ItemTemplate
 
@@ -150,9 +176,9 @@ autoComplete.DisplayMemberPath = "Name";
 	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DisplayMemberPath="Name" DataSource="{Binding EmployeeCollection}">
 	<autocomplete:SfAutoComplete.ItemTemplate>
 		<DataTemplate>
-			<StackLayout Orientation="Horizontal">
+			<StackLayout Orientation="Horizontal" Padding="2,0,0,0">
 				<Image Source="User.png" WidthRequest="12"/>
-				<Label Text="{Binding Name}" />
+				<Label Text="{Binding Name}" VerticalOptions="Center"/>
 			</StackLayout>
 		</DataTemplate>
 	</autocomplete:SfAutoComplete.ItemTemplate>
@@ -188,4 +214,4 @@ Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/customizing-auto
 
 N> Add the required image in drawable folder(Android), Resources folder(iOS) and at project location for UWP.
 
-![](images/Populating-Data/item-template.png)
+![Item template](images/Populating-Data/item-template.png)

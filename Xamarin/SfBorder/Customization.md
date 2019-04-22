@@ -170,4 +170,65 @@ this.Content = grid;
 
 ![circularimage](images/Xamarin_Forms_CircularImage.png)
 
+## Shadow Effect
 
+The border control provides shadow effect support. To enable shadow effect, set the `HasShadow` property to true.
+
+You can customize the color of shadow using the `ShadowColor` property. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+  <border:SfBorder 
+                HorizontalOptions="Center" 
+                VerticalOptions="Center"
+                BackgroundColor="Green"
+                HeightRequest="50"
+                WidthRequest="200" 
+                CornerRadius="20" 
+                BorderWidth="0" 
+                HasShadow="True"
+                ShadowColor="Gray">
+            <Label 
+                    Text="James Williamson" 
+                    HorizontalTextAlignment="Center" 
+                    VerticalTextAlignment="Center" 
+                    TextColor="White"/>
+        </border:SfBorder>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfBorder border = new SfBorder()
+            {
+                BackgroundColor = Color.Green,
+                CornerRadius = 20,
+                BorderWidth = 0,
+                HeightRequest = 50,
+                WidthRequest = 200,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                HasShadow = true,
+                ShadowColor = Color.Gray
+            };
+
+            Label label = new Label()
+            {
+                Text = "James Williamson",
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center,
+                TextColor = Color.White
+            };
+
+            border.Content = label;
+            this.Content = border;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Shadow support has not been provided for UWP Platform.
+
+![ShadowImage](images/Xamarin_Forms_Shadow.png)

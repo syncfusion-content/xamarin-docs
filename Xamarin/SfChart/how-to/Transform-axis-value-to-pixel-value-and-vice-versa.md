@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-## Transform axis value to pixel value and vice-versa
+# Transform axis value to pixel value and vice-versa
 
 [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) offers two utility methods to transform the pixel to chart point and vice-versa.
 

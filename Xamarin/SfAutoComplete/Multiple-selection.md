@@ -179,6 +179,8 @@ Customization can be done for Token. There are various ways to customize the tok
 
 * `DeleteButtonPlacement` - sets the placement of delete button. `Left` and `Right` are the placement options. By default, it is set placed at right side of the token. 
 
+N> SelectedBackgroundColor and CornerRadius support has enhanced only on iOS and Android platform.
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -210,7 +212,7 @@ Customization can be done for Token. There are various ways to customize the tok
                         SelectedBackgroundColor="#ffffe0"
                         DeleteButtonColor="#993300"
                         FontFamily="Times New Roman"
-                        DeleteButtonPlacement="Right
+                        DeleteButtonPlacement="Right"
                         IsCloseButtonVisible="true"
                         CornerRadius="15"/>
             </autocomplete:SfAutoComplete.TokenSettings>
@@ -369,7 +371,7 @@ N> Selection Indicator support has enhanced only on iOS and Android platform.
 {% tabs %}
 {% highlight xaml %}
 
- <autocomplete:SfAutoComplete HeightRequest="40" ShowSuggestionsOnFocus="true" IsSelectedItemsVisibleInDropDown="true" IndicatorText="A" IndicatorTextSize="sample.ttf" IndicatorTextColor="Red" EnableSelectionIndicator="true" MultiSelectMode="Token"  x:Name="autoComplete" DataSource="{Binding EmployeeCollection}"/>
+ <autocomplete:SfAutoComplete HeightRequest="40" ShowSuggestionsOnFocus="true" IsSelectedItemsVisibleInDropDown="true" IndicatorText="A"  IndicatorTextSize="15" IndicatorFontFamily="sample.ttf" IndicatorTextColor="Red" EnableSelectionIndicator="true" MultiSelectMode="Token"  x:Name="autoComplete" DataSource="{Binding EmployeeCollection}"/>
        
 {% endhighlight %}
 
@@ -379,7 +381,8 @@ autoComplete.MultiSelectMode=MultiSelectMode.Token;
 autoComplete.ShowSuggestionsOnFocus=true;
 autoComplete.IsSelectedItemsVisibleInDropDown=true;
 autoComplete.IndicatorText= "A";
-autoComplete.IndicatorTextSize= "sample.ttf";
+autoComplete.IndicatorTextSize= "15";
+autoComplete.IndicatorFontFamily= "sample.ttf";
 autoComplete.IndicatorTextColor = Color.Red;
 autoComplete.EnableSelectionIndicator= true;
 

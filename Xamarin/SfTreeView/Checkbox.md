@@ -159,7 +159,7 @@ Check box contains the following three states:
 
 * `None`: Check and uncheck are updated only in view, but it will not affect the CheckedItems collection.
 * `Individual`: CheckBox state affects individual node only, and it does not affect the parent node or child nodes property value.
-* `Recursive`: Check and uncheck the node value affected the parent and child nodes checkBox state. For example If parent nodes checkbox state is check/uncheck then the all of its child nodes checkbox state is check/uncheck. If all the child nodes are checked within the parent node, then parent node will be checked. If all the child nodes are not checked, then the parent node will not be checked. If any of the child node is checked, then the parent node will be in intermediate state.
+* `Recursive`: Check and uncheck the node value affected the parent and child nodes checkBox state. For example, If parent nodes checkbox state is check or uncheck then the all of its child nodes checkbox state is check or uncheck. If all the child nodes are checked or unchecked within the parent node, then parent node will be checked or unchecked. If any of the child node is checked, then the parent node will be in intermediate state.
 
 {% tabs %}
 {% highlight xaml %}

@@ -17,7 +17,7 @@ Schedule allows you create appointments in various time zones and display them i
 * Display appointments based on schedule  time zone
 * Display appointments at the same time everywhere regardless of client’s time zone
 
-We have added the following Time Zone's for the respective countries to cover all the time zone regions, you can use any of the time zone's from the follwing list for schedule time zone.
+We have added the following Time Zone's for the respective countries to cover all the time zone regions, you can use any of the time zone's from the following list for schedule time zone.
 <table>
 <th>Time Zone</th>
 <th>Region</th>

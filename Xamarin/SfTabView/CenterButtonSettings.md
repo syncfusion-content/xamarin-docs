@@ -9,7 +9,7 @@ documentation: ug
 
 # CenterButtonSettings
 
-This section explains on how to create and customize The Xamarin.Forms SfTabView CenterButton. To enable CenterButton we need to set the `OverFlowMode` of Xamarin.Forms SfTabView as `CenterButton`.
+This section explains how to create and customize The Xamarin.Forms SfTabView CenterButton. To enable CenterButton, set the `OverFlowMode` of Xamarin.Forms SfTabView to `CenterButton`.
 
 {% tabs %}
 
@@ -37,7 +37,7 @@ public MainPage()
 
 ## Customize CenterButtonSettings
 
-We can customize the CenterButton by using the properties of `CenterButtonSetting`. Following are the some properties that are used to customize the view of CenterButton `BackgroundColor`, `BorderColor`, `BorderThickness`, `Height`, `Title`, `TitleFontAttributes`, `TitleFontColor`, `TitleFontSize`, `Width`.
+We can customize the CenterButton using the properties of `CenterButtonSetting`. Teh following properties are used to customize the view of CenterButton `BackgroundColor`, `BorderColor`, `BorderThickness`, `Height`, `Title`, `TitleFontAttributes`, `TitleFontColor`, `TitleFontSize`, `Width`.
 
 {% tabs %}
 
@@ -69,9 +69,9 @@ public MainPage()
 
 {% endtabs %}
 
-## CenterButtonTapped Event
+## CenterButtonTapped event
 
-When we tap the `CenterButton` an event `CenterButtonTapped` will be raised. Using this event we can able to set alert message.
+When `CenterButton` is tapped, the `CenterButtonTapped` event occurs. Using this event we can set alert message.
 
 {% tabs %}
 
@@ -101,7 +101,7 @@ private void TabView_CenterButtonTapped(object sender, EventArgs e)
 
 ## Custom CenterButton
 
-When built-in view is not needed, It can be overridden by adding custom views to the CenterButtonView. The CenterButton view can be customized by adding Image, Label, Button inside the CenterButtonView. Please refer the following code snippet to customize the CenterButton view.
+When built-in view is not needed, it can be overridden by adding custom views to the CenterButtonView. The CenterButton view can be customized by adding images, labels, buttons inside the CenterButtonView. Refer the following code sample to know about customizing the view of CenterButton.
 
 {% tabs %}
 
@@ -155,4 +155,4 @@ private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
 
 ![TabViewImage](images/Center-Button/Center_Button_Customization.png)
 
-Please Find the sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TabView_CenterButton1561492158.zip).
+Please find the sample from the following [Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TabView_CenterButton1561492158.zip).

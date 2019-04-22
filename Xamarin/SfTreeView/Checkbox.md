@@ -80,15 +80,15 @@ public class ViewModel
     public ViewModel()
     {
         var doc = new Folder() { FileName = "Documents" };
-        var typeScript = new File() { FileName = "TypeScript.7z" };
+        var type_Script = new File() { FileName = "TypeScript.7z" };
         var uiGuide = new File() { FileName = "UI-Guide.pdf" };
-        var song = new File() { FileName = "Gouttes" };
+        var song = new File() { FileName = "Gouts" };
         var stone = new File() { FileName = "Stone.jpg" };
         var wind = new File() { FileName = "Wind.jpg" };
 
         checkedItems = new ObservableCollection<object>();
         checkedItems.Add(doc);
-        checkedItems.Add(typeScript);
+        checkedItems.Add(type_Script);
         checkedItems.Add(uiGuide);
         checkedItems.Add(stone);
         checkedItems.Add(wind);

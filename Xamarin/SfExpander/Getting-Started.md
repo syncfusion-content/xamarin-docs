@@ -135,7 +135,8 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     // you'll need to add `using System.Reflection;`
     List<Assembly> assembliesToInclude = new List<Assembly>();
 
-    //Now, add all the assemblies your app uses assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Expander.SfExpanderRenderer).GetTypeInfo().Assembly); 
+    //Now, add all the assemblies your app uses 
+	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Expander.SfExpanderRenderer).GetTypeInfo().Assembly); 
 
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
@@ -296,9 +297,9 @@ You can download expander sample for Xamarin.Forms from here [ExpanderGettingSta
 
 {% tabs %}
 {% highlight xaml %}
-    <syncfusion:SfExpander x:Name="expander" IsEnabled="True"/>        
+    <syncfusion:SfExpander x:Name="expander" IsExpanded="True"/>        
 {% endhighlight %}
 {% highlight c# %}
-    expander.IsEnabled = true;
+    expander.IsExpanded = true;
 {% endhighlight %}
 {% endtabs %}

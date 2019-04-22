@@ -65,12 +65,6 @@ SelectionIndicatorSettings indicatorSettings = new SelectionIndicatorSettings()
 
 segmentedControl.SelectionIndicatorSettings = indicatorSettings;
 
-{% endhighlight %}
-
-{% endtabs %}
-
-{% highlight c# %}
-
 private void SfSegmentedControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
     if (e.Index == 0)
@@ -86,6 +80,8 @@ private void SfSegmentedControl_SelectionChanged(object sender, SelectionChanged
 }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![Segmented control as switch in Xamarin.Forms](images/Segmented_control_as_switch.png)
 

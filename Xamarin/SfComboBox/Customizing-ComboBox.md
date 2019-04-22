@@ -726,7 +726,7 @@ This section explains various DropDown button settings available in SfComboBox c
             </ListCollection:List>
         </combobox:SfComboBox.ComboBoxSource>
         <combobox:SfComboBox.DropDownButtonSettings>
-     		<combobox:DropDownButtonSettings Width="40" Height="40" FontIcon="" FontSize="16" FontColor="Blue" HighlightedBackgroundColor="Green" BackgroundColor="Red" HighlightFontColor="Red"/>
+     		<combobox:DropDownButtonSettings Width="40" Height="40" HighlightedBackgroundColor="Green" BackgroundColor="Red" HighlightFontColor="Red"/>
      	</combobox:SfComboBox.DropDownButtonSettings>
     </combobox:SfComboBox>
 </StackLayout>
@@ -753,10 +753,7 @@ This section explains various DropDown button settings available in SfComboBox c
     comboBox.DataSource = countryNames;
     DropDownButtonSettings dropDownButtonSettings = new DropDownButtonSettings();
     dropDownButtonSettings.Height = 40;
-    dropDownButtonSettings.Width = 40;
-    dropDownButtonSettings.FontIcon = "";
-    dropDownButtonSettings.FontSize = 16;
-    dropDownButtonSettings.FontColor = Color.Blue;
+    dropDownButtonSettings.Width = 40;   
     dropDownButtonSettings.HighlightedBackgroundColor = Color.Green;
     dropDownButtonSettings.BackgroundColor = Color.Red;
     dropDownButtonSettings.HighlightFontColor = Color.Red;
@@ -769,6 +766,77 @@ This section explains various DropDown button settings available in SfComboBox c
 {% endtabs %}
 
 ![Customizing dropdown](images/Customizing-ComboBox/customizing-dropdown.png)
+
+
+## View for drop down button
+
+This section explains how to provide view to the drop down button.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<comboBox:SfComboBox HeightRequest="40" x:Name="comboBox">
+		<comboBox:SfComboBox.ComboBoxSource>
+			<ListCollection:List x:TypeArguments="x:String">
+		        	<x:String>Uganda</x:String>
+				<x:String>Ukraine</x:String>
+				<x:String>United Arab Emirates</x:String>
+				<x:String>United Kingdom</x:String>
+				<x:String>United States</x:String>
+			</ListCollection:List>
+		</comboBox:SfComboBox.ComboBoxSource>
+		<comboBox:SfComboBox.DropDownButtonSettings>
+			<comboBox:DropDownButtonSettings Width="40" Height="40">
+				<comboBox:DropDownButtonSettings.View>
+					<Label WidthRequest="30" Text="Click" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+				</comboBox:DropDownButtonSettings.View>
+			</comboBox:DropDownButtonSettings>
+		</comboBox:SfComboBox.DropDownButtonSettings>
+	</comboBox:SfComboBox>
+</StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+StackLayout layout = new StackLayout()
+{
+   VerticalOptions = LayoutOptions.Start,
+   HorizontalOptions = LayoutOptions.Start,
+   Padding = new Thickness(30)
+};
+
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+
+SfComboBox comboBox = new SfComboBox();
+comboBox.DataSource = countryNames;
+DropDownButtonSettings dropDownButtonSettings = new DropDownButtonSettings();
+dropDownButtonSettings.Height = 40;
+dropDownButtonSettings.Width = 40;
+Label label = new Label();
+label.Text = "Click";
+label.VerticalTextAlignment = TextAlignment.Center;
+label.HorizontalTextAlignment = TextAlignment.Center;
+label.WidthRequest = 30;
+dropDownButtonSettings.View = label;
+comboBox.DropDownButtonSettings = dropDownButtonSettings;
+layout.Children.Add(comboBox);
+Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+![Customizing dropdown view](images/Customizing-ComboBox/customizing-dropdown-view.png)
+
 
 ## Watermark
 

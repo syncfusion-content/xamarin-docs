@@ -409,25 +409,26 @@ For more information regarding the event to command behavior in Xamarin.Forms, y
 
 SfTreeView exposes a collection of all checked items. You can select the items while loading. To implement check box in tree view, refer to [Checkbox](https://help.syncfusion.com/xamarin/sftreeview/checkbox);
 
+N> It is only applicable for bound mode cases.
+
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeView 
     x:Name="TreeView"  
     CheckBoxMode="Recursive"
-    ItemsSource="{Binding NodeCollection}"
+    ItemsSource="{Binding Folders}"
     CheckedItems="{Binding CheckedNodeInfo}"
     ItemTemplateContextType="Node">
     <syncfusion:SfTreeView.ItemTemplate>
         <DataTemplate>
             <ViewCell>
                 <ViewCell.View>
-                    <Grid>
                         <Grid Padding="5">
-                            <SfCheckBox:SfCheckBox 
+                            <SfCheckBox:SfCheckBox
                                 x:Name="CheckBox"
+                                Text="{Binding Content.FileName}"
                                 IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
                         </Grid>
-                    </Grid>
                 </ViewCell.View>
             </ViewCell>
         </DataTemplate>
@@ -452,8 +453,9 @@ public class ViewModel
 
     public ViewModel()
     {
+        var doc = new Folder() { FileName = "Documents" };
         checkedNodeInfo = new ObservableCollection<object>();
-        checkedNodeInfo.Add(NodeCollection[1]);
+        checkedNodeInfo.Add(doc);
     }
 }
 {% endhighlight %}

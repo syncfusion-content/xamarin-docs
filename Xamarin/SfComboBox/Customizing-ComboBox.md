@@ -765,7 +765,7 @@ This section explains various DropDown button settings available in SfComboBox c
 
 {% endtabs %}
 
-![Customizing dropdown](images/Customizing-ComboBox/customizing-dropdown.png)
+![Customizing dropdown](images/Customizing-ComboBox/customizing-dropdown-button.png)
 
 
 ## View for drop down button

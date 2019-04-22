@@ -499,7 +499,7 @@ Africa/Windhoek
 Nepal Standard Time
 </td>
 <td>
-Asia/Katmandu
+Asia/Kathmandu
 </td>
 </tr>
 <tr>
@@ -835,7 +835,7 @@ Asia/Tashkent
 West Pacific Standard Time
 </td>
 <td>
-Pacific/Port_Moresby
+Pacific/Port Moresby
 </td>
 </tr>
 <tr>

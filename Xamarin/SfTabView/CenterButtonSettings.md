@@ -37,7 +37,7 @@ public MainPage()
 
 ## Customize CenterButtonSettings
 
-We can customize the CenterButton using the properties of `CenterButtonSetting`. Teh following properties are used to customize the view of CenterButton `BackgroundColor`, `BorderColor`, `BorderThickness`, `Height`, `Title`, `TitleFontAttributes`, `TitleFontColor`, `TitleFontSize`, `Width`.
+We can customize the CenterButton using the properties of `CenterButtonSetting`. The following properties are used to customize the view of CenterButton `BackgroundColor`, `BorderColor`, `BorderThickness`, `Height`, `Title`, `TitleFontAttributes`, `TitleFontColor`, `TitleFontSize`, `Width`.
 
 {% tabs %}
 

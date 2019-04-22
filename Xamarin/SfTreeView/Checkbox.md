@@ -95,6 +95,7 @@ public class ViewModel
         checkedItems.Add(song);
     }
 }
+{% endhighlight %}
 {% endtabs %}
 
 ![Xamarin Forms BoundMode TreeView with CheckBox](TreeView_images/BoundMode_CheckBox.png)

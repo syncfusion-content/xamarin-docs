@@ -9,12 +9,9 @@ documentation: ug
 
 # NuGet Packages
 
-NuGet is a package manager for the .NET framework. The NuGet client tools simplify the process of installing and upgrading packages. This can be used to automatically add files and references to your Visual Studio projects.
+[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion Xamarin.Forms NuGet packages without installing the Essential Studio or Xamarin platform installation to development with the Syncfusion Xamarin. Forms controls. From v15.4.0.17 onwards, the Syncfusion Xamarin.Forms NuGet packages are published in [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
 
-The Syncfusion Xamarin.Forms components NuGet packages are available in both [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc) and [Syncfusion private NuGet site](http://nuget.syncfusion.com/package/xamarin).
-
-N> From version 15.4.0.17 or later, the Syncfusion Xamarin.Forms NuGet packages are published in [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc).You can use the Syncfusion Xamarin.Forms NuGet packages without installing the Essential Studio or Xamarin platform installation to implement the Syncfusion Xamarin.Forms controls.
-
+N> Starting from v17.1.0.32 (2018 Volume 1), Syncfusion will no longer publish NuGet packages at [nuget.syncfusion.com](https://nuget.syncfusion.com/).
 
 ## Installing NuGet Packages
 
@@ -34,7 +31,7 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
 3.	The Syncfusion Xamarin.Forms NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
 
-N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. So, If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. So, If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/xamarin/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ### Using Package Manager Console
 
@@ -116,7 +113,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
     ~~~
 
-N> If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/xamarin/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ## Upgrading NuGet packages
 

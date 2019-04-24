@@ -9,10 +9,9 @@ documentation: ug
 
 # NuGet Packages
 
-[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion Xamarin.Forms NuGet packages without installing the Essential Studio or Xamarin platform installation to implement the Syncfusion Xamarin.Forms controls.  From v15.4.0.17 onwards, the Syncfusion Xamarin.Forms NuGet packages are published in [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
+[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion Xamarin.Forms NuGet packages without installing the Essential Studio or Xamarin platform installation to implement the Syncfusion Xamarin.Forms controls. From v15.4.0.17 onwards, the Syncfusion Xamarin.Forms NuGet packages are published in [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
 
 N> Starting from v17.1.0.32 (2018 Volume 1), Syncfusion will no longer publish NuGet packages at [nuget.syncfusion.com](https://nuget.syncfusion.com/).
-
 
 ## Installing NuGet Packages
 

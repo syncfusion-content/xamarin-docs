@@ -7,12 +7,10 @@ control: General
 documentation: ug
 ---
 
-# Applying themes
-
-Syncfusion themes allow you apply uniform colors across all the Syncfusion controls which provides consistent look and feel for your application. In this section, we will cover the following items. 
+Syncfusion themes allow you apply colors across all the Syncfusion controls through uniform approach which provides consistent look and feel for your application. In this section, we will cover the following items. 
 
 * Applying light and dark theme
-* Overrding the default theme 
+* Overrding the default theme
 * Creating your own theme
 
 ## Applying light and dark theme
@@ -33,7 +31,7 @@ This resource dictionary contains *keys* and their respective color codes for al
 
 #### Control style resource dictionaries
 
-Each Syncfusion control has a separate control style resource dictionary whose styles are mapped to the keys declared in [theme resource dictionary](https://help.syncfusion.com/xamarin/themes/themes#theme-resource-dictionary).
+Each Syncfusion control has a separate control style resource dictionary whose styles are mapped to the keys declared in [theme resource dictionary](https://help.syncfusion.com/xamarin/themes/themes#theme-resource-dictionary) as a ['DynamicResource'](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/xaml/dynamic).
 
 {% highlight xaml %}
 <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
@@ -116,11 +114,11 @@ When using more number of Syncfusion controls in an application, to make the pro
 
 The theme resource dictionary contains set of keys which are mapped to the style in control style dictionaries. It is possible to customize the default theme appearance by overriding these key values.
 
-The following section explains how to override both the common and control specific keys.
+The following section explains how to override both the primary and control specific keys.
 
-### Overriding the common keys
+### Overriding the primary colors
 
-The theme resource dictionary contains the following set of common keys which are mapped to the UI elements of all the controls. To override the overall appearance of a theme, you can change the values for these keys as required. You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
+The theme resource dictionary contains the following set of primary keys which are mapped to the UI elements of all the controls. To override the primary colors, you can change the values for these keys as required. You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
 
 * SyncPrimaryColor
 * SyncPrimaryLightColor
@@ -156,7 +154,7 @@ The theme resource dictionary contains the following set of common keys which ar
 
 ### Overriding the control specific keys
 
-In addition to the common keys, the theme resource dictionary also contains the keys that are specific to each controls which can also be overridden. You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
+In addition to the primary keys, the theme resource dictionary also contains the keys that are specific to each controls which can also be overridden. You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
 
 {% highlight xaml %}
 
@@ -179,13 +177,11 @@ In addition to the common keys, the theme resource dictionary also contains the 
 
 {% endhighlight %}
 
-### Applying themes without resource dictionaries
+## Creating your own theme
 
-As an alternative approach to the above methods, it is also possible to customize the appearance of the controls without merging the theme resource and control style resource dictionaries in application resources.
+As an alternative approach to the above methods, it is also possible to create your very own theme. For this, first you need to merge the unique key for each controls. This key name should be "ControlName" + "Theme" e.g. SfChartTheme, SfTextInputLayoutTheme. You can find this key for each control in this [link](https://help.syncfusion.com/xamarin/themes/keys). Once it is done, you need to merge the required resources with the keys. You can find these keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
 
-In the following example, the UI elements of SfTextInputLayout are customized by merging the resource with key 'SfTextInputLayoutTheme' and the values set to the required keys in the next line. Similar to this, you can customize the appearance of other controls by merging the resource with the "ControlName" + "Theme" key name and setting values to the required keys of the control in the next line. 
-
-You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
+Using this approach, you can create your own theme for all the controls or only the specifc controls which are needed. 
 
 {% highlight xaml %}
 
@@ -197,7 +193,7 @@ You can find the keys and the elements to which they are mapped for all the cont
             <ResourceDictionary>
                 <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String> 
                 <Color x:Key="SfTextInputLayoutCounterLabelColor">Blue</Color> 
-                <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color> 
+                <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color>
             </ResourceDictionary>
         </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
     </syncCore:SyncfusionThemeDictionary>
@@ -208,58 +204,6 @@ You can find the keys and the elements to which they are mapped for all the cont
 </Application>
 
 {% endhighlight %}
-
-## Creating your own theme
-
-It is possible to create your own theme resource dictionary and merge it instead of light/dark theme resource dictionaries. 
-
-1. Create a XAML ContentPage with name "CustomTheme" and remove its content in XAML.
-2. Change the type to 'ResourceDictionary' from 'ContentPage'.
-3. Add the below resource.
-
-{% highlight xaml %}
- <x:String x:Key="SyncfusionTheme">CustomTheme</x:String>
-
-4. Add the control specific keys for which you need to create theme. The control specific key should be "ControlName" + "Theme". You can find these keys for all the controls [here](https://help.syncfusion.com/xamarin/themes/keys).
-
- {% highlight xaml %}
- <x:String x:Key="SfChartTheme">CustomTheme</x:String>
- <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String>
-
- 5. Add the requred keys with updated color values. You can find all the keys [here](https://help.syncfusion.com/xamarin/themes/keys).
-
- {% highlight xaml %}
- <?xml version="1.0" encoding="UTF-8"?>
- <ResourceDictionary xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
-   <x:String x:Key="SyncfusionTheme">CustomTheme</x:String>
-   <x:String x:Key="SfChartTheme">CommonTheme</x:String>
-   <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String>
-
-   <Color x:Key="SfChartBackgroundColor">#FF0000</Color>
-   <Color x:Key="SfTextInputLayoutHintColor">#707070</Color>
- </ResourceDictionary>
-
- 6. Now merge this custom theme resource dictionary in application resources.
-
- {% highlight xaml %}
-
- <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
-             ...>
-
- <Application.Resources>
-    <syncTheme:SyncfusionThemeDictionary>
-        <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
-            <!-- Theme resource dictionary -->
-            <syncTheme:CustomTheme />
-        </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
-    </syncTheme:SyncfusionThemeDictionary>
- </Application.Resources>
-
- ....
-
- </Application>
-
- {% endhighlight %}
 
  
 

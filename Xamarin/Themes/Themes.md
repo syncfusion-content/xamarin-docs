@@ -116,9 +116,9 @@ The theme resource dictionary contains set of keys which are mapped to the style
 
 The following section explains how to override both the primary and control specific keys.
 
-### Overriding the primary colors
+### Overriding the primary keys
 
-The theme resource dictionary contains the following set of primary keys which are mapped to the UI elements of all the controls. To override the primary colors, you can change the values for these keys as required. You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
+The theme resource dictionary contains the following set of primary keys which are mapped to the UI elements of all the controls. To override the primary colors of theme, you can change the values for these keys as required. You can find the keys and the UI elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
 
 * SyncPrimaryColor
 * SyncPrimaryLightColor
@@ -154,7 +154,7 @@ The theme resource dictionary contains the following set of primary keys which a
 
 ### Overriding the control specific keys
 
-In addition to the primary keys, the theme resource dictionary also contains the keys that are specific to each controls which can also be overridden. You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
+In addition to the primary keys, the theme resource dictionary also contains the keys that are specific to each controls which can also be overridden. You can find the keys and the UI elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
 
 {% highlight xaml %}
 
@@ -179,7 +179,7 @@ In addition to the primary keys, the theme resource dictionary also contains the
 
 ## Creating your own theme
 
-As an alternative approach to the above methods, it is also possible to create your very own theme. For this, first you need to merge the unique key for each controls. This key name should be "ControlName" + "Theme" e.g. SfChartTheme, SfTextInputLayoutTheme. You can find this key for each control in this [link](https://help.syncfusion.com/xamarin/themes/keys). Once it is done, you need to merge the required resources with the keys. You can find these keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
+As an alternative approach to the above methods, it is also possible to create your very own theme. For this, first you need to merge the resource whose key name should be "ControlName" + "Theme" e.g. SfChartTheme, SfTextInputLayoutTheme. You can find this key for each control in this [link](https://help.syncfusion.com/xamarin/themes/keys). Once it is done, you need to merge the required color resources with keys based on the UI elements which needs to be customized. You can find the keys and the UI elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
 
 Using this approach, you can create your own theme for all the controls or only the specifc controls which are needed. 
 

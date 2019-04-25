@@ -699,9 +699,69 @@ items.Add(new DataFormItem() { Name = "Password", Editor = "Password" });
 items.Add(new DataFormItem() { Name = "Phone", Editor = "MaskedEditText" }); 
 items.Add(new DataFormItem() { Name = "Address", Editor = "MultilineText" }); 
 items.Add(new DataFormItem() { Name = "BirthTime", Editor = "Time" }); 
-
 dataForm.AutoGenerateItems = false; 
 dataForm.Items = items; 
 {% endhighlight %}
 {% endtabs %}
+
+### Dynamically Add custom DataFormItems
+Support has been provided to add the DataFormItems to the Collections using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
+
+{% tabs %}
+{% highlight c# %}
+dataForm.Items.Add(new DataFormDropDownItem() { Name = "StateName", Editor = "DropDown", ItemsSource = this.GetItemSource("StateName"), PlaceHolderText = "Select a State" });
+dataForm.Items.Add(new DataFormItem() { Name = "Save", Editor = "Switch" });
+{% endhighlight %}
+{% endtabs %}
+
+### Dynamically Remove Custom DataFormItems 
+Support has been provided to dynamically remove the DataFormItems from the Collections using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
+
+{% tabs %}
+{% highlight c# %}
+dataForm.Items.RemoveAt(2);
+{% endhighlight %}
+{% endtabs %}
+
+### Dynamically Clear Custom DataFormItems 
+Support has been provided to dynamically clear the DataFormItems using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
+
+
+{% tabs %}
+{% highlight c# %}
+dataForm.Items.Clear();
+{% endhighlight %}
+{% endtabs %}
+
+### Dynamically Reset Custom DataFormItems 
+Support has been provided to reset the DataFormItems using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
+
+
+{% tabs %}
+{% highlight c# %}
+var item = dataForm.Items[2];
+item = new DataFormNumericUpDownItem() { Name = "Age", Editor = "NumericUpDown" };
+dataForm.Items[2] = item;
+{% endhighlight %}
+{% endtabs %}
+
+### Dynamically add Custom Group Items
+Support has been provided to dynamically add custom group items using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
+
+{% tabs %}
+{% highlight c# %}
+DataFormGroupItem dataFormGroupItem = new DataFormGroupItem();
+dataFormGroupItem.GroupName = "GroupItem";
+dataFormGroupItem.IsExpanded = true;
+dataFormGroupItem.GetType().GetProperty("IsGroup").SetValue(dataFormGroupItem, true);
+dataFormGroupItem.DataFormItems = new DataFormItems();
+
+dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "Email", Editor = "Text", GroupName = "GroupItem" });
+dataFormGroupItem.DataFormItems.Add(new DataFormNumericItem() { Name = "Age", Editor = "Numeric", GroupName = "GroupItem" });
+dataFormGroupItem.DataFormItems.Add(new DataFormCheckBoxItem() { Name = "Location", Editor = "Bool", GroupName = "GroupItem" });
+
+dataForm.Items.Add(dataFormGroupItem);
+{% endhighlight %}
+{% endtabs %}
+
 

@@ -699,6 +699,7 @@ items.Add(new DataFormItem() { Name = "Password", Editor = "Password" });
 items.Add(new DataFormItem() { Name = "Phone", Editor = "MaskedEditText" }); 
 items.Add(new DataFormItem() { Name = "Address", Editor = "MultilineText" }); 
 items.Add(new DataFormItem() { Name = "BirthTime", Editor = "Time" }); 
+
 dataForm.AutoGenerateItems = false; 
 dataForm.Items = items; 
 {% endhighlight %}

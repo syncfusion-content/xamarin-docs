@@ -706,7 +706,7 @@ dataForm.Items = items;
 {% endtabs %}
 
 ### Dynamically Add custom DataFormItems
-Support has been provided to add the DataFormItems to the Collections using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
+Support has been provided to dynamically add the DataFormItems to the Collections using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
 
 {% tabs %}
 {% highlight c# %}

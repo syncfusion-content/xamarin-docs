@@ -715,6 +715,8 @@ dataForm.Items.Add(new DataFormItem() { Name = "Save", Editor = "Switch" });
 {% endhighlight %}
 {% endtabs %}
 
+![Adding data form items in Xamarin.Forms DataForm](SfDataForm_images/AddCustomItems.gif)
+
 ### Dynamically Remove Custom DataFormItems 
 Support has been provided to dynamically remove the DataFormItems from the Collections using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
 
@@ -723,6 +725,8 @@ Support has been provided to dynamically remove the DataFormItems from the Colle
 dataForm.Items.RemoveAt(2);
 {% endhighlight %}
 {% endtabs %}
+
+![Removing data form items in Xamarin.Forms DataForm](SfDataForm_images/RemoveCustomItems.gif)
 
 ### Dynamically Clear Custom DataFormItems 
 Support has been provided to dynamically clear the DataFormItems using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
@@ -733,6 +737,8 @@ Support has been provided to dynamically clear the DataFormItems using [Items](h
 dataForm.Items.Clear();
 {% endhighlight %}
 {% endtabs %}
+
+![Clear data form items in Xamarin.Forms DataForm](SfDataForm_images/ClearCustomItems.gif)
 
 ### Dynamically Reset Custom DataFormItems 
 Support has been provided to reset the DataFormItems using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
@@ -745,6 +751,8 @@ item = new DataFormNumericUpDownItem() { Name = "Age", Editor = "NumericUpDown" 
 dataForm.Items[2] = item;
 {% endhighlight %}
 {% endtabs %}
+
+![Reset data form items in Xamarin.Forms DataForm](SfDataForm_images/ResetCustomItems.gif)
 
 ### Dynamically add Custom Group Items
 Support has been provided to dynamically add custom group items using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".

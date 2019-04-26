@@ -104,7 +104,7 @@ You can download the entire source of this demo from [here](https://github.com/S
 
 ## Working with Checkbox in UnBoundMode
 
-You can directly set the checked status by setting [IsChecked](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~IsChecked.html) property value while creating nodes.
+You can directly set the checked status by setting [TreeViewNode.IsChecked](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~IsChecked.html) property value while creating nodes.
 
 {% tabs %}
 {% highlight xaml %}

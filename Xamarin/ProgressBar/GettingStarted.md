@@ -87,7 +87,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To launch the progress bar in UWP, you need to initialize the progress bar assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with progress bar in `Release` mode in UWP platform.
+To launch the progress bar in UWP, initialize the progress bar assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with progress bar in `Release` mode in UWP platform.
 
 {% highlight C# %} 
 

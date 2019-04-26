@@ -407,7 +407,7 @@ For more information regarding the event to command behavior in Xamarin.Forms, y
 
 ## Checkbox items binding in MVVM
 
-SfTreeView exposes a collection of all checked items. You can select the items while loading. To implement check box in tree view, refer to [Checkbox](https://help.syncfusion.com/xamarin/sftreeview/checkbox);
+SfTreeView allows to acheieve the `CheckedItems` in MVVM patern. You can check multiple items through binding the [CheckedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CheckedItems.html) property from view model with `ObservableCollection<object>` type.
 
 N> It is only applicable for bound mode cases.
 

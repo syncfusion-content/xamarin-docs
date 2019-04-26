@@ -153,7 +153,7 @@ You can directly set the [IsChecked](https://help.syncfusion.com/cr/xamarin/Sync
 
 You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/checkbox_unbound_mode)
 
-## CheckBox state
+## CheckBox State
 
 SfTreeView provides support to process the selection state of the checkbox based on the [CheckBoxMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CheckBoxMode.html) property. By default, its value is `None`.
 Check box contains the following three states:
@@ -190,7 +190,7 @@ treeView.CheckedItems.Add(viewModel.Folders[3]);
 
 ## Checkbox items binding in MVVM
 
-SfTreeView exposes a collection of all checked items. You can select the items while loading.
+SfTreeView allows to acheieve the `CheckedItems` in MVVM patern. You can check multiple items through binding the [CheckedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CheckedItems.html) property from view model with `ObservableCollection<object>` type.
 
 N> It is only applicable for bound mode cases.
 
@@ -244,9 +244,15 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-## Get checked nodes
+## Get or Set Checked Items
 
-Gets all the checked nodes in tree view. When binding `ItemsSource`, you can get the checked nodes list using [CheckedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CheckedItems.html).
+### Get or Set Checked Items in Bound Mode
+
+You can get or set list of items to be checked by using [CheckedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CheckedItems.html) property.
+
+### Get or Set Checked Nodes in Unbound Mode
+
+You can get the list of checked nodes by using `GetCheckedNodes` method. You can set checked status by setting `TreeViewNode.IsChecked` property.
 
 {% tabs %}
 {% highlight c# %}

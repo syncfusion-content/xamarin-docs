@@ -407,9 +407,9 @@ For more information regarding the event to command behavior in Xamarin.Forms, y
 
 ## Checkbox items binding in MVVM
 
-SfTreeView allows to acheieve the `CheckedItems` in MVVM patern. You can check multiple items through binding the [CheckedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CheckedItems.html) property from view model with `ObservableCollection<object>` type.
+SfTreeView support to check multiple items through binding the [CheckedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CheckedItems.html) property from view model with `ObservableCollection<object>` type.
 
-N> It is only applicable for bound mode cases.
+N> TreeView process and sets `TreeViewNode.IsChecked` based on `CheckedItems` only when you are binding `ItemsSource`.
 
 {% tabs %}
 {% highlight xaml %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Applying themes
+title: Applying themes for Syncfusion controls
 description: This section explains about theming in Syncfusion controls and how to override the key values for further customization
 platform: xamarin
 control: General
@@ -10,7 +10,7 @@ documentation: ug
 Syncfusion themes allow you apply colors across all the Syncfusion controls through uniform approach which provides consistent look and feel for your application. In this section, we will cover the following items. 
 
 * Applying light and dark theme
-* Overrding the default theme
+* Overriding the default theme
 * Creating your own theme
 
 ## Applying light and dark theme
@@ -191,7 +191,7 @@ In addition to the primary keys, the theme resource dictionary also contains the
 
 As an alternative approach to the above methods, it is also possible to create your very own theme. For this, first you need to merge the resource whose key name should be "ControlName" + "Theme" based on the controls you are using e.g. SfChartTheme, SfTextInputLayoutTheme. You can find this key for each control in this [link](https://help.syncfusion.com/xamarin/themes/keys). Once it is done, you need to merge the required color resources with keys based on the UI elements which needs to be customized. You can find the keys and the UI elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
 
-Using this approach, you can create your own theme for all the controls or only the specifc controls which are needed. 
+Using this approach, you can create your own theme for all the controls or only the specific controls which are needed. 
 
 {% highlight xaml %}
 

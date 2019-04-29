@@ -254,7 +254,7 @@ xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.S
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                     <Image x:Name="image1" HorizontalOptions="Center" Source="stethoscope.png" Grid.Row="0"/>
-                    <LabelText="{Binding Day}" TextColor="Black" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    <Label Text="{Binding Day}" TextColor="Black" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
                     <Image x:Name="image2" HorizontalOptions="Center" Source="cake.png" Grid.Row="2"/>
                 </Grid>
                 </DataTemplate>

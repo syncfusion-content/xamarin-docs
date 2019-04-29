@@ -246,7 +246,7 @@ x:Class="MonthCellCustomization.MainPage"
 xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms">
     <ContentPage.Resources>
         <ResourceDictionary>
-            <DataTemplatex:Key="ValidTemplate">
+            <DataTemplate x:Key="Template">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*"/>
@@ -261,9 +261,9 @@ xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.S
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <calendar:SfCalendarx:Name="calendar">
+        <calendar:SfCalendar x:Name="calendar">
             <calendar:SfCalendar.MonthViewSettings>
-                <calendar:MonthViewSettings DateSelectionColor="#dddddd" CellTemplate="{StaticResource ValidTemplate}"/>
+                <calendar:MonthViewSettings DateSelectionColor="#dddddd" CellTemplate="{StaticResource Template}"/>
             </calendar:SfCalendar.MonthViewSettings>
             </calendar:SfCalendar>
     </ContentPage.Content>

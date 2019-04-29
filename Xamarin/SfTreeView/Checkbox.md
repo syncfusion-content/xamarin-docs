@@ -159,7 +159,7 @@ public class FileManagerViewModel
 
         checkedItems = new ObservableCollection<object>();
         checkedItems.Add(doc);
-        checkedItems.Add(typeScript);
+        checkedItems.Add(TypeScript);
         checkedItems.Add(uiGuide);
         checkedItems.Add(stone);
         checkedItems.Add(wind);

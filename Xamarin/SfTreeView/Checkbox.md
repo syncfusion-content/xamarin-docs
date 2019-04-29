@@ -103,10 +103,10 @@ public class FileManagerViewModel
 
         var games = new File() { FileName = "Game.exe"};
         var tutorials = new File() { FileName = "Tutorials.zip"};
-        var typeScript = new File() { FileName = "TypeScript.7z"};
+        var TypeScript = new File() { FileName = "TypeScript.7z"};
         var uiGuide = new File() { FileName = "UI-Guide.pdf"};
 
-        var song = new File() { FileName = "Gouttes"};
+        var song = new File() { FileName = "Gouts"};
 
         var camera = new File() { FileName = "Camera Roll"};
         var stone = new File() { FileName = "Stone.jpg"};
@@ -116,7 +116,7 @@ public class FileManagerViewModel
         var img1 = new SubFile() { FileName = "WIN_20160726_094118.JPG"};
 
         var video1 = new File() { FileName = "Naturals.mp4"};
-        var video2 = new File() { FileName = "Wild.mpeg"};
+        var video2 = new File() { FileName = "Wild.mpg"};
 
         doc.Files = new ObservableCollection<File>
             {
@@ -128,7 +128,7 @@ public class FileManagerViewModel
             {
                 games,
                 tutorials,
-                typeScript,
+                TypeScript,
                 uiGuide
             };
 

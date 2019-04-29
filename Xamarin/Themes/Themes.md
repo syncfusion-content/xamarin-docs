@@ -40,14 +40,14 @@ xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Butto
              ...>
 <Application.Resources>
         <ResourceDictionary>
-            < ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary.MergedDictionaries>
                 <!-- Theme resource dictionary -->
                 <syncTheme:DarkTheme />
                 <!-- Control style resource dictionaries -->
                 <gauge:SfCircularGaugeStyles />
                 <buttons:SfButtonStyles />
-            </ ResourceDictionary.MergedDictionaries>
-        </ ResourceDictionary >
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
 </Application.Resources>
 
 ....
@@ -71,14 +71,14 @@ xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Butto
              ...>
 <Application.Resources>
         <ResourceDictionary>
-            < ResourceDictionary.MergedDictionaries>
+            <ResourceDictionary.MergedDictionaries>
                 <!-- Theme resource dictionary -->
                 <syncTheme:DarkTheme />
                 <!-- Control style resource dictionaries -->
                 <gauge:SfCircularGaugeStyles />
                 <buttons:SfButtonStyles />
-            </ ResourceDictionary.MergedDictionaries>
-        </ ResourceDictionary >
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary >
 </Application.Resources>
 
 ....
@@ -142,10 +142,10 @@ The theme resource dictionary contains the following set of primary keys that ar
     <syncCore:SyncfusionThemeDictionary>
         <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
             <syncCore:DarkTheme />
-                <ResourceDictionary>
-                    <Color x:Key="SyncPrimaryColor">LimeGreen</Color>
-                    <Color x:Key="SyncPrimaryLightColor">LimeGreen</Color>
-                </ResourceDictionary>
+            <ResourceDictionary>
+                <Color x:Key="SyncPrimaryColor">LimeGreen</Color>
+                <Color x:Key="SyncPrimaryLightColor">LimeGreen</Color>
+            </ResourceDictionary>
         </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
     </syncCore:SyncfusionThemeDictionary>
 </Application.Resources>
@@ -169,11 +169,11 @@ In addition to the primary keys, the theme resource dictionary also contains the
 <Application.Resources>
     <syncCore:SyncfusionThemeDictionary>
         <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
-            <syncCore:LightTheme />
+            <syncCore:DarkTheme />
             <ResourceDictionary>
                 <Color x:Key="SyncPrimaryColor">LimeGreen</Color>
                 <Color x:Key="SyncPrimaryLightColor">LimeGreen</Color>
-                <Color x:Key="SfCircularGaugeScaleRimColor">Red</Color>
+                <Color x:Key="SfCircularGaugeScaleRimColor">Green</Color>
             </ResourceDictionary>
         </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
     </syncCore:SyncfusionThemeDictionary>
@@ -204,7 +204,7 @@ Using this approach, you can create your own theme to all the controls or for sp
                 <x:String x:Key="SfCircularGaugeTheme">CustomTheme</x:String> 
                 <Color x:Key="SyncPrimaryColor">LimeGreen</Color>
                 <Color x:Key="SyncPrimaryLightColor">LimeGreen</Color>
-                <Color x:Key="SfCircularGaugeScaleRimColor">Red</Color>
+                <Color x:Key="SfCircularGaugeScaleRimColor">Green</Color>
             </ResourceDictionary>
         </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
     </syncCore:SyncfusionThemeDictionary>

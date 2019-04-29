@@ -169,7 +169,7 @@ In addition to the primary keys, the theme resource dictionary also contains the
 <Application.Resources>
     <syncCore:SyncfusionThemeDictionary>
         <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
-            <syncCore:LightTheme />
+            <syncCore:DarkTheme />
             <ResourceDictionary>
                 <Color x:Key="SyncPrimaryColor">LimeGreen</Color>
                 <Color x:Key="SyncPrimaryLightColor">LimeGreen</Color>

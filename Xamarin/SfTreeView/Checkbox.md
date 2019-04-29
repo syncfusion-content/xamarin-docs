@@ -78,10 +78,6 @@ public class FileManagerViewModel
 
     public ObservableCollection<Folder> Folders { get; set; }
 
-    public ObservableCollection<File> Files { get; set; }
-
-    public ObservableCollection<SubFile> SubFiles { get; set; }
-
     public FileManagerViewModel()
     {
         this.Folders = GetFiles();

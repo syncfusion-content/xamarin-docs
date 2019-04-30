@@ -11,7 +11,7 @@ documentation: ug
 
 Sublayer in the maps control allows to load multiple shape files in a single container and enables maps to display more information.
 
-## Adding sublayer
+## Adding sublayers in ShapeFileLayer
 
 You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer.html) using the [`Sublayers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~Sublayers.html) property.
 
@@ -154,6 +154,67 @@ You can add multiple shape files in the [`ShapeFileLayer`](https://help.syncfusi
 {% endtabs %}
 
 ![Sublayer support in Xamarin.Forms Maps](Images/Sublayer.png)
+
+## Adding sublayers in ImageryLayer
+
+You can add multiple shape files in the `ImageryLayer` using the `Sublayers` property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <maps:SfMaps x:Name="sfmap">
+
+        <maps:SfMaps.Layers>
+
+            <maps:ImageryLayer>
+
+                <maps:ImageryLayer.Sublayers>
+                  
+                    <maps:ShapeFileLayer Uri="africa.shp">
+
+                        <maps:ShapeFileLayer.ShapeSettings>
+
+                            <maps:ShapeSetting ShapeFill="#FD8C48" ShapeStrokeThickness="1"/>
+
+                        </maps:ShapeFileLayer.ShapeSettings>
+
+                    </maps:ShapeFileLayer>
+
+                </maps:ImageryLayer.Sublayers>
+            
+            </maps:ImageryLayer>
+
+        </maps:SfMaps.Layers>
+        
+    </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+           
+            SfMaps map = new SfMaps();
+
+            ImageryLayer imageryLayer = new ImageryLayer();
+
+            ShapeFileLayer subShapeLayer = new ShapeFileLayer();
+            subShapeLayer.Uri = "africa.shp";
+
+            ShapeSetting shapeSetting = new ShapeSetting();
+            shapeSetting.ShapeFill = Color.FromHex("#FD8C48");
+            shapeSetting.ShapeStrokeThickness = 1;
+            subShapeLayer.ShapeSettings = shapeSetting;
+
+            imageryLayer.Sublayers.Add(subShapeLayer);
+
+            map.Layers.Add(imageryLayer);
+            Content = map;
+			
+{% endhighlight %}
+
+{% endtabs %}	
+
+![Sublayer support in Xamarin.Forms Maps](Images/ImageryLayer-SubLayer.jpg)
 
 ### Customizing sublayer
 

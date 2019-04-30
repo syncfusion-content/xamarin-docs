@@ -374,8 +374,8 @@ chart.Legend = new ChartLegend()
 You can position the legend anywhere inside the chart. The following properties are used to customize the position of legend:
 
 * [`DockPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~DockPosition.html) – used to position the legend relatively. The available options are [`Left`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LegendPlacement.html), [`Right`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LegendPlacement.html), [`Top`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LegendPlacement.html), [`Bottom`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LegendPlacement.html), and [`Floating`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LegendPlacement.html). If the DockPosition is Floating, you can position the legend using the x and y-coordinates.
-* [`OffsetX`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~OffsetX.html) – used to move the legend on x-coordinate by the given offset value; it will work only if the dock position is [`Floating`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LegendPlacement.html).
-* [`OffsetY`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~OffsetY.html) - used to move the legend on y-coordinate by the given offset value, it will work only if the dock position is [`Floating`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LegendPlacement.html).
+* [`OffsetX`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~OffsetX.html) – used to move the legend on x-coordinate by the given offset value.
+* [`OffsetY`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~OffsetY.html) - used to move the legend on y-coordinate by the given offset value.
 * [`Orientation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~Orientation.html) - used to change the orientation of the legend, the default value is Auto, orientation of the legend items will be changed based on its dock position. Also, you can manually set [`Horizontal`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartOrientation.html) or [`Vertical`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartOrientation.html).
 
 {% tabs %} 
@@ -412,6 +412,52 @@ chart.Legend.OffsetY = 90;
 {% endtabs %}
 
 ![Legend positioning support in Xamarin.Forms Chart](legend_images/legend_img5.png)
+
+## Populate the data based legend items for all series
+
+The [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~Series.html) property of [`ChartLegend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend.html) is used to populate the legend items based on the data points which are present in the assigned series. 
+
+The following code example shows how to enable datapoint-based legend for Cartesian series.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+
+…
+
+<chart:ChartLegend x:Name="chartLegend" Series="{Binding Source={ x:Reference Series}}" />
+
+…
+
+<chart:SfChart.Series>
+                <chart:ColumnSeries x:Name="Series"    ItemsSource="{Binding CategoryData}" XBindingPath="Name" YBindingPath="Value"/>
+…
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+...  
+
+ColumnSeries series = new ColumnSeries()
+            {
+                ItemsSource = model.CategoryData,
+                XBindingPath = "XValue",
+                YBindingPath = "YValue",
+            };
+
+            Chart.Legend = new ChartLegend();
+            Chart.Legend.Series = series;
+            Chart.Series.Add(series);
+...
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## ItemTemplate
 

@@ -166,7 +166,7 @@ public DateTime JoinDate
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Validation.png)
+![validation in Xamarin.Forms DataForm](SfDataForm_images/Validation.png)
 
 ## Validation mode
 
@@ -298,6 +298,33 @@ private void DataForm_Validated(object sender, ValidatedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+You can get the details of invalid DataFormItems when validating the data form as `Explicit` validation mode using [ValidationCompleted](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationCompleted_EV.html) event. This event contains [ValidationCompletedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.ValidationCompletedEventArgs.html) argument, which holds a list of DataFormItem as errors. 
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:local="clr-namespace:GettingStarted"
+                xmlns:dataForm ="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
+                x:Class="GettingStarted.MainPage">
+    <ContentPage.Content>     
+        <dataForm:SfDataForm x:Name="dataForm" ValidationCompleted="DataForm_ValidationCompleted" />            
+    </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.ValidationCompleted += DataForm_ValidationCompleted; 
+… 
+
+private void DataForm_ValidationCompleted(object sender, ValidationCompletedEventArgs e) 
+{ 
+    var invalidItems = e.Errors; 
+} 
+{% endhighlight %}
+{% endtabs %}
+
+
 ## Valid or positive message
 
 If the value meets the desired criteria, you can show the [valid or positive message](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute~ValidMessage.html). As error message, the valid message will also be displayed at the bottom of the editor.
@@ -319,7 +346,7 @@ public string Name
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/Validation_ValidMessage.png)
+![Valid message for validation in Xamarin.Forms DataForm](SfDataForm_images/Validation_ValidMessage.png)
 
 ## How to validate the property value based on another value
 
@@ -349,3 +376,166 @@ private void DataFormGettingStarted_PropertyChanged(object sender, PropertyChang
 }
 {% endhighlight %}
 {% endtabs %}
+
+## Customize validation message using DataTemplate
+
+The default appearance of the validation message can be customized by using the [ValidationTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationTemplate.html) property of the `DataForm`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<dataForm:SfDataForm 
+            x:Name="dataForm"  
+            ValidationTemplate="{Binding ValidationTemplate}">
+            <dataForm:SfDataForm.BindingContext>
+                <local:ValidationDataTemplate/>
+            </dataForm:SfDataForm.BindingContext>
+</dataForm:SfDataForm>
+
+{% endhighlight %}
+{% endtabs %}
+
+### Creating a DataTemplate
+
+{% tabs %}
+{% highlight c# %}
+
+public class ValidationDataTemplate :DataTemplate
+{
+    public DataTemplate ValidationTemplate { get; set; }
+
+    public ValidationDataTemplate()
+    {
+        ValidationTemplate = new DataTemplate(() =>
+        {
+            return new Button
+            {
+                Text = "Field should not be empty",
+                TextColor = Color.White,
+                BackgroundColor = Color.LightGreen
+            };
+        });
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Customize validation message using DataTemplateSelector
+
+You can use `DataTemplateSelector` to choose a `DataTemplate` at runtime based on the value of a data-bound to [ValidationTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationTemplate.html) property of DataForm. It lets you choose a different data template for each validation message, customizing the appearance of a particular validation message based on certain conditions.
+
+{% tabs %}
+{% highlight xaml %}
+
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <local:TemplateSelector x:Key="validationDataTemplateSelector" />
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+<dataForm:SfDataForm Grid.Row="1" x:Name="dataForm" ValidationTemplate="{StaticResource validationDataTemplateSelector}" />
+
+{% endhighlight %}
+{% endtabs %}
+
+### Creating a DataTemplateSelector
+
+
+{% tabs %}
+{% highlight c# %}
+
+public class TemplateSelector : DataTemplateSelector
+{
+    public DataTemplate ValidMessageTemplate { get; set; }
+    public DataTemplate InvalidMessageTemplate { get; set; }     
+    public DataTemplate LastNameTemplate { get; set; }
+    public DataTemplate EmailTemplate { get; set; }
+    public DataTemplate ContactNumberTemplate { get; set; }
+
+    public TemplateSelector()
+    {
+        ValidMessageTemplate = new DataTemplate(typeof(ValidMessageTemplate));
+        InvalidMessageTemplate = new DataTemplate(typeof(InValidMessageTemplate));
+        LastNameTemplate = new DataTemplate(typeof(LastNameTemplate));
+        EmailTemplate = new DataTemplate(typeof(EmailTemplate));
+        ContactNumberTemplate = new DataTemplate(typeof(ContactNumberTemplate));
+    }
+
+    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+    {
+        var dataform = (container as SfDataForm);
+        if (dataform == null) return null;
+        if (dataform != null)
+        {
+            if ((item as DataFormItem).LabelText == "First Name")
+            {
+                if (!(item as DataFormItem).IsValid)
+                {
+                    return InvalidMessageTemplate;
+                }
+                else
+                {
+                    return ValidMessageTemplate;
+                }
+            }
+            else if ((item as DataFormItem).LabelText == "Last Name")
+            {
+                if (!(item as DataFormItem).IsValid)
+                {
+                    return LastNameTemplate;
+                }
+            }
+            else if ((item as DataFormItem).LabelText == "Email")
+            {
+                if (!(item as DataFormItem).IsValid)
+                {
+                    return EmailTemplate;
+                }
+            }
+            else if ((item as DataFormItem).LabelText == "Contact Number")
+            {
+                if (!(item as DataFormItem).IsValid)
+                {
+                    return ContactNumberTemplate;
+                }
+            }
+            return null;
+        }
+        else
+            return null;   
+    }   
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+Used **Button** inside a **Grid** to display the valid and invalid message in the view.
+
+{% tabs %}
+{% highlight xaml %}
+
+<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataForm_Validation.ValidMessageTemplate"  
+    VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+    <Grid BackgroundColor="Transparent">
+        <Button x:Name="maingrid"  CornerRadius="8"  Text="Name length is enough" FontSize="9" TextColor="Green" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+   </Grid>
+</Grid>
+
+…..
+
+<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DataForm_Validation.InValidMessageTemplate"
+    VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+    <Grid BackgroundColor="Transparent">
+        <Button x:Name="maingrid"  CornerRadius="8" Text="Pleae enter your first name" FontSize="9" TextColor="White" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"/>
+  </Grid>
+</Grid>
+
+{% endhighlight %}
+{% endtabs %}
+
+![Customize validation message using DataTemplateSelector in Xamarin.Forms DataForm](SfDataForm_images/Validation_Message_Customization.png)

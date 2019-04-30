@@ -11,17 +11,54 @@ documentation: ug
 
 This section explains the steps required to configure the [`SfSunburstChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html) and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
 
-## Add sunburst chart references
+## Adding SfSunburstChart reference
 
-The Syncfusion components for Xamarin.Forms are available in [`nuget.org`](https://www.nuget.org/). To add SfSunburstChart to your project, open the NuGet package manager in Visual Studio, search for [`Syncfusion.Xamarin.SfSunburstChart`](https://www.nuget.org/packages/Syncfusion.Xamarin.SfSunburstChart), and then install it.
+You can add SfSunburstChart reference using one of the following methods:
 
-![SfSunburstChart Reference](Getting-Started_images/Reference.png)
+**Method 1: Adding SfSunburstChart reference from nuget.org**
 
-Refer to this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer to [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfsunburstchart) link to know about the assemblies required for adding SfSunburstChart to your project.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSunburstChart to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfSunburstChart](https://www.nuget.org/packages/Syncfusion.Xamarin.SfSunburstChart), and then install it.
 
-I> After adding the reference, an additional step is required for iOS and UWP projects. You should call Init method in the `SfSunburstChartRenderer` as shown in this [KB article](http://www.syncfusion.com/support/kb/7714).
+![Adding SfSunburstChart reference from NuGet](Getting-Started_images/Adding SfSunburstChart reference.png)
 
-I> For UWP alone, an additional step is required if the project is still in built-in release mode with .NET Native tool chain enabled. You can refer to the [KB article](http://www.syncfusion.com/support/kb/7715) for more details.
+N> Install the same version of SfSunburstChart NuGet in all the projects.
+
+**Method 2: Adding SfSunburstChart reference from toolbox**
+
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfSunburstChart control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+
+**Method 3: Adding SfSunburstChart assemblies manually from the installed location**
+
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+
+Location: {Installed location}/{version}/Xamarin/lib
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfSunburstChart.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfSunburstChart.Android.dll<br/>Syncfusion.SfSunburstChart.XForms.Android.dll<br/>Syncfusion.SfSunburstChart.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfSunburstChart.iOS.dll<br/>Syncfusion.SfSunburstChart.XForms.iOS.dll<br/>Syncfusion.SfSunburstChart.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfSunburstChart.UWP.dll<br/>Syncfusion.SfSunburstChart.XForms.UWP.dll<br/>Syncfusion.SfSunburstChart.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
+N> After adding the reference, an additional step is required for iOS and UWP projects. You should call Init method in the `SfSunburstChartRenderer` as shown in this [KB article](http://www.syncfusion.com/support/kb/7714). If you are adding the references from toolbox, this step is not needed.
+
+N> For UWP alone, one more additional step is required if the project is still in built-in release mode with .NET Native tool chain enabled. You can refer to the [KB article](http://www.syncfusion.com/support/kb/7715) for more details.
 
 ## Initialize sunburst chart
 

@@ -48,7 +48,7 @@ N> If appointments count are lesser than the Appointment Indicator count value i
     <syncfusion:SfCalendar.BindingContext>
         <local:CalendarViewModel/>
     </syncfusion:SfCalendar.BindingContext>
-    <syncfusion:SfCalendar x:Name="calendar" ViewMode="MonthView" ShowInlineEvents="true" InlineViewMode="Inline" MaximumEventIndicatorCount="1" DataSource="{Binding CalendarInlineEvents}">
+    <syncfusion:SfCalendar x:Name="calendar" ViewMode="MonthView" ShowInlineEvents="True" InlineViewMode="Inline" MaximumEventIndicatorCount="1" DataSource="{Binding CalendarInlineEvents}">
     </syncfusion:SfCalendar>
 </ContentPage>
 {% endhighlight %}
@@ -89,14 +89,14 @@ N> The Inline function will be available only in MonthView with Single selection
 You can download the entire source code of this demo for Xamarin.Forms from
 here [CalendarEvents](https://github.com/SyncfusionExamples/creating-events-in-xamarin.forms-sfcalendar)
 
-![SfCalendar Inline events](images/xamarin.forms-calendar-events.png)
+![SfCalendar Inline events](images/xamarin.forms-calendar-Event.jpg)
 
 ## Customize inline/agenda view using DataTemplate
 
 The default appearance of the appointment can be customized by using the [InlineItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~InlineItemTemplate.html) property of the [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
 {% tabs %}
 {% highlight xaml %}
-    <syncfusion:SfCalendar x:Name="calendar" ShowInlineEvents="true">
+    <syncfusion:SfCalendar x:Name="calendar" ShowInlineEvents="True">
         <syncfusion:SfCalendar.MonthViewSettings>
             <syncfusion:MonthViewSettings>
                 <syncfusion:MonthViewSettings.InlineItemTemplate>
@@ -112,11 +112,11 @@ The default appearance of the appointment can be customized by using the [Inline
 
 Inline view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplate.png)
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplate.jpg)
 
 Agenda view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplate.png)
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplate.jpg)
 
 ## Customize inline/agenda view using Template Selector
 
@@ -129,7 +129,7 @@ Inline template selector can be used to choose a `DataTemplate` at runtime based
             <local:AppointmentSelector x:Key="TemplateSelector" />
         </ResourceDictionary>
     </ContentPage.Resources>
-    <syncfusion:SfCalendar x:Name="calendar"  ShowInlineEvents="true">
+    <syncfusion:SfCalendar x:Name="calendar"  ShowInlineEvents="True">
         <syncfusion:SfCalendar.MonthViewSettings>
             <syncfusion:MonthViewSettings InlineItemTemplate="{StaticResource TemplateSelector}" />
         </syncfusion:SfCalendar.MonthViewSettings>
@@ -197,11 +197,11 @@ Inline template selector can be used to choose a `DataTemplate` at runtime based
 
 Inline view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplateselector.png)
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplateselector.jpg)
 
 Agenda view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplateselector.png)
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplateselector.jpg)
 
 ## Getting inline/agenda view appointment details
 
@@ -222,7 +222,7 @@ private void Calendar_InlineItemTapped(object sender, InlineItemTappedEventArgs 
 
 Inline view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlineitemtapped.png)
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlineitemtapped.jpg)
 
 Agenda view mode
 

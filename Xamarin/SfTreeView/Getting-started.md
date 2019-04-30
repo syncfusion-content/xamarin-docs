@@ -21,19 +21,50 @@ Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/co
 
 N> Assemblies can be found in an unzipped package location in Mac.
 
-### Adding TreeView Reference
+## Adding SfTreeView reference
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add TreeView to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfTreeView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTreeView/), and then install it. 
+You can add SfTreeView reference using one of the following methods:
 
-![Xamarin Forms TreeView Add](TreeView_images/TreeView_AddTreeView.png)
+**Method 1: Adding SfTreeView reference from nuget.org**
 
-To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sftreeview) to know about the dependent assemblies for TreeView. 
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfTreeView to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfTreeView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTreeView), and then install it.
 
-N>Install the same version of the TreeView NUGET in all the projects.
+![Adding SfTreeView reference from NuGet](TreeView_images/Adding SfTreeView reference.png)
 
-I> After adding the reference, an additionally need to initialize the renderer for [iOS](https://help.syncfusion.com/xamarin/treeview/getting-started#ios) and [UWP](https://help.syncfusion.com/xamarin/treeview/getting-started#universal-windows-platform-uwp) projects.  
+N> Install the same version of SfTreeView NuGet in all the projects.
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet feed, you also must include a license key in your projects. Please refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion license key in your Xamarin application to use our components.
+**Method 2: Adding SfTreeView reference from toolbox**
+
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfTreeView control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+
+**Method 3: Adding SfTreeView assemblies manually from the installed location**
+
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+
+Location: {Installed location}/{version}/Xamarin/lib
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfTreeView.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfTreeView.XForms.Android.dll<br/>Syncfusion.SfTreeView.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfTreeView.XForms.iOS.dll<br/>Syncfusion.SfTreeView.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfTreeView.XForms.UWP.dll<br/>Syncfusion.SfTreeView.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the TreeView on Each Platform
 
@@ -42,6 +73,8 @@ To use this control inside an application, each platform application must initia
 ### Android
 
 The Android launches the TreeView without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
+
+N> After adding the reference, an additional step is required to initialize the renderer for iOS and UWP projects. If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 
@@ -119,6 +152,8 @@ In this walk through, you will create a new application with the TreeView that i
 * [Populating Nodes without data source - Unbound Mode](#populating-nodes-without-data-source---unbound-mode) 
 * [Creating Data Model](#creating-data-model-for-the-tree-view)  
 * [Bind to a hierarchical data source - Bound Mode](#bind-to-a-hierarchical-data-source---bound-mode)
+* [Creating hierarchical Data Model](#creating-hierarchical-data-model-for-the-tree-view)
+* [Bind to a Hierarchy Property Descriptors data source - Bound Mode](#bind-to-a-hierarchy-Property-descriptors-data-source---bound-mode)
 * [Defining a template to expander and content view](#defining-a-template-to-expander-and-content-view)
 * [Interacting with a tree view](#interacting-with-a-tree-view)
 * [Selection](#selection)
@@ -445,13 +480,310 @@ MainPage = new ContentPage { Content = treeView };
 {% endhighlight %}
 {% endtabs %}
 
+## Creating hierarchical Data Model for tree view
+
+Create an hierarchical data model to bind it to the control. 
+
+Create a simple hierarchical  data source as shown in the following code example in a new class file, and save it as FileManager.cs file.
+
+{% tabs %}
+{% highlight c# %}
+public class Folder : INotifyPropertyChanged
+{
+    private string fileName;
+    private ImageSource imageIcon;
+    private ObservableCollection<File> files;
+
+    public Folder()
+    {
+    }
+
+    public ObservableCollection<File> Files
+    {
+        get { return files; }
+        set
+        {
+            files = value;
+            RaisedOnPropertyChanged("SubFiles");
+        }
+    }
+
+    public string FileName
+    {
+        get { return fileName; }
+        set
+        {
+            fileName = value;
+            RaisedOnPropertyChanged("FileName");
+        }
+    }
+
+    public ImageSource ImageIcon
+    {
+        get { return imageIcon; }
+        set
+        {
+            imageIcon = value;
+            RaisedOnPropertyChanged("ImageIcon");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+}
+
+public class File : INotifyPropertyChanged
+{
+    private string fileName;
+    private ImageSource imageIcon;
+    private ObservableCollection<SubFile> subFiles;
+
+    public File()
+    {
+    }
+
+    public ObservableCollection<SubFile> SubFiles
+    {
+        get { return subFiles; }
+        set
+        {
+            subFiles = value;
+            RaisedOnPropertyChanged("SubFiles");
+        }
+    }
+
+    public string FileName
+    {
+        get { return fileName; }
+        set
+        {
+            fileName = value;
+            RaisedOnPropertyChanged("FileName");
+        }
+    }
+
+    public ImageSource ImageIcon
+    {
+        get { return imageIcon; }
+        set
+        {
+            imageIcon = value;
+            RaisedOnPropertyChanged("ImageIcon");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+}
+
+
+public class SubFile : INotifyPropertyChanged
+{
+    private string fileName;
+    private ImageSource imageIcon;
+
+    public SubFile()
+    {
+    }
+
+    public string FileName
+    {
+        get { return fileName; }
+        set
+        {
+            fileName = value;
+            RaisedOnPropertyChanged("FolderName");
+        }
+    }
+
+    public ImageSource ImageIcon
+    {
+        get { return imageIcon; }
+        set
+        {
+            imageIcon = value;
+            RaisedOnPropertyChanged("ImageIcon");
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    public void RaisedOnPropertyChanged(string _PropertyName)
+    {
+        if (PropertyChanged != null)
+        {
+            PropertyChanged(this, new PropertyChangedEventArgs(_PropertyName));
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> If you need your hierarchical data model to respond to property changes, then implement the `INotifyPropertyChanged` interface in your model class.
+
+Create a model repository class with ImageNodeInfo collection property initialized with required number of data objects in a new class file as shown in the following code example, and save it as FileManagerViewModel.cs file:
+
+{% tabs %}
+{% highlight c# %}
+public class FileManagerViewModel
+{
+    public ObservableCollection<Folder> Folders { get; set; }
+
+    public ObservableCollection<File> Files { get; set; }
+
+    public ObservableCollection<SubFile> SubFiles { get; set; }
+
+    public FileManagerViewModel()
+    {
+        this.Folders = GetFiles();
+    }
+
+    private ObservableCollection<Folder> GetFiles()
+    {
+        var nodeImageInfo = new ObservableCollection<Folder>();
+        Assembly assembly = typeof(NodeWithImage).GetTypeInfo().Assembly;
+
+        var doc = new Folder() { FileName = "Documents", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var download = new Folder() { FileName = "Downloads", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var mp3 = new Folder() { FileName = "Music", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var pictures = new Folder() { FileName = "Pictures", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var video = new Folder() { FileName = "Videos", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+
+        var pollution = new File() { FileName = "Environmental Pollution.docx", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_word.png", assembly) };
+        var globalWarming = new File() { FileName = "Global Warming.ppt", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_ppt.png", assembly) };
+        var sanitation = new File() { FileName = "Sanitation.docx", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_word.png", assembly) };
+        var socialNetwork = new File() { FileName = "Social Network.pdf", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_pdf.png", assembly) };
+        var youthEmpower = new File() { FileName = "Youth Empowerment.pdf", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_pdf.png", assembly) };
+
+        var games = new File() { FileName = "Game.exe", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_exe.png", assembly) };
+        var tutorials = new File() { FileName = "Tutorials.zip", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_zip.png", assembly) };
+        var typeScript = new File() { FileName = "TypeScript.7z", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_zip.png", assembly) };
+        var uiGuide = new File() { FileName = "UI-Guide.pdf", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_pdf.png", assembly) };
+
+        var song = new File() { FileName = "Gouttes", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_mp3.png", assembly) };
+
+        var camera = new File() { FileName = "Camera Roll", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_folder.png", assembly) };
+        var stone = new File() { FileName = "Stone.jpg", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_png.png", assembly) };
+        var wind = new File() { FileName = "Wind.jpg", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_png.png", assembly) };
+
+        var img0 = new SubFile() { FileName = "WIN_20160726_094117.JPG", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_img0.png", assembly) };
+        var img1 = new SubFile() { FileName = "WIN_20160726_094118.JPG", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_img1.png", assembly) };
+
+        var video1 = new File() { FileName = "Naturals.mp4", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_video.png", assembly) };
+        var video2 = new File() { FileName = "Wild.mpeg", ImageIcon = ImageSource.FromResource("SampleBrowser.SfTreeView.Icons.NodeWithImage.treeview_video.png", assembly) };
+
+        doc.Files = new ObservableCollection<File>
+            {
+                pollution,
+                globalWarming,
+                sanitation,
+                socialNetwork,
+                youthEmpower
+            };
+
+        download.Files = new ObservableCollection<File>
+            {
+                games,
+                tutorials,
+                typeScript,
+                uiGuide
+            };
+
+        mp3.Files = new ObservableCollection<File>
+            {
+                song
+            };
+
+        pictures.Files = new ObservableCollection<File>
+            {
+                camera,
+                stone,
+                wind
+            };
+
+        camera.SubFiles = new ObservableCollection<SubFile>
+            {
+                img0,
+                img1
+            };
+
+        video.Files = new ObservableCollection<File>
+            {
+                video1,
+                video2
+            };
+
+        nodeImageInfo.Add(doc);
+        nodeImageInfo.Add(download);
+        nodeImageInfo.Add(mp3);
+        nodeImageInfo.Add(pictures);
+        nodeImageInfo.Add(video);
+        return nodeImageInfo;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Bind to a Hierarchy Property Descriptors data source - Bound mode
+
+You can create a tree view by binding the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemsSource.html) to a hierarchy property descriptors data source. To create a tree view using hierarchical data binding, set a hierarchical collection to the `ItemsSource` property, and then set the `TargetType` and [ChildPropertyName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ChildPropertyName.html) property values in `HierarchyPropertyDescriptors`.
+
+>**Important** 
+`ItemsSource` is an alternative mechanism to [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) for adding content into the TreeView control. You cannot set both `ItemsSource` and `Nodes` at the same time. When you use `ItemsSource`, nodes are created internally, but you cannot access them from the `Nodes` property.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms"
+             xmlns:treeviewengine="clr-namespace:Syncfusion.TreeView.Engine;assembly=Syncfusion.SfTreeView.XForms"
+             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             x:Class="GettingStarted.MainPage">
+
+   <ContentPage.BindingContext>
+      <local:FileManagerViewModel x:Name="viewModel"></local:FileManagerViewModel>
+   </ContentPage.BindingContext>
+
+   <ContentPage.Content>
+      <syncfusion:SfTreeView x:Name="treeView" ItemsSource="{Binding ImageNodeInfo}">
+         <sfTreeView:SfTreeView.HierarchyPropertyDescriptors>
+            <treeviewengine:HierarchyPropertyDescriptor TargetType="{x:Type local:Folder}" ChildPropertyName="Files"/>
+            <treeviewengine:HierarchyPropertyDescriptor TargetType="{x:Type local:File}" ChildPropertyName="SubFiles"/>
+         </sfTreeView:SfTreeView.HierarchyPropertyDescriptors>
+      </syncfusion:SfTreeView>
+   </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+SfTreeView treeView = new SfTreeView();
+FileManagerViewModel viewModel = new FileManagerViewModel ();
+treeView.ItemsSource = viewModel.ImageNodeInfo; 
+MainPage = new ContentPage { Content = treeView };
+{% endhighlight %}
+{% endtabs %}
+
 ## Defining a template to expander and content view
 
- By defining the [ExpanderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ExpanderTemplate.html) and [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) properties, a custom user interface(UI) can be achieved to display the data items for both expander and content view. It is applicable for both Unbound Mode and Bound Mode data items. 
+By defining the [ExpanderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ExpanderTemplate.html) and [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) properties, a custom user interface (UI) can be created to display the data items for both expander and content view. It is applicable for both Unbound mode and Bound mode data items. 
 
- N> By default, the binding context for each treeview item will be the data model object for Bound Mode and [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) for Unbound Mode. However, you can change the binding context for treeview items in Bound Mode as `TreeViewNode` by defining the [ItemTemplateContextType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplateContextTypeProperty.html) enumeration to `Node` which is applicable for both `ExpanderTemplate` and `ItemTemplate` properties.
+N> By default, the binding context for each tree view item will be the data model object for Bound Mode and [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) for Unbound Mode. However, you can change the binding context for tree view items in Bound Mode as `TreeViewNode` by defining the [ItemTemplateContextType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplateContextTypeProperty.html) enumeration to `Node`, which is applicable for both `ExpanderTemplate` and `ItemTemplate` properties.
 
-The following code example will illustrate you to customize your content view by using `ItemTemplate` and `ExpanderTemplate` property in both XAML and C#.
+The following code example demonstrates how to customize your content view using the `ItemTemplate` and `ExpanderTemplate` property in both XAML and C#.
 
 {% tabs %}
 {% highlight xaml %}

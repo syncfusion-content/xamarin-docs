@@ -8,7 +8,7 @@ documentation: ug
 --- 
 # How to 
 
-## Customize the thickness of the stroke 
+## Customize the thickness of stroke 
 
 The border stroke width (for [Outlined](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html)) and line thickness (for [Filled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html) and [None](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html)) can be customized based on the focus state of the input view by setting the [FocusedStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~FocusedStrokeWidthProperty.html) and [UnfocusedStrokeWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~UnfocusedStrokeWidthProperty.html) properties.
 
@@ -44,3 +44,8 @@ inputLayout.InputView = new Entry();
 ![FocusedStrokeWidth img](How-to-images/FocusedStroke.png)
 
 ![UnfocusedStrokeWidth img](How-to-images/UnfocusedStroke.png)
+
+## Customize the font for input view
+
+You can customize the font for the input view (Entry, Editor, SfMaskedEdit, and SfNumericTextBox) inside SfTextInputLayout using the [FontSize](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.fontsize?view=xamarin-forms), [FontAttributes](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.fontattributes?view=xamarin-forms), and [FontFamily](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.fontfamily?view=xamarin-forms) properties.
+

@@ -1,34 +1,53 @@
 ---
 layout: post
-title: Themes for Syncfusion Controls
+title: Applying themes for Syncfusion controls
 description: This section explains about theming in Syncfusion controls and how to override the key values for further customization
 platform: xamarin
 control: General
 documentation: ug
 ---
 
-# Themes for Syncfusion Controls
+Syncfusion themes allow you apply colors across all the Syncfusion controls with a uniform approach and provide consistent look and feel to your applications. This section covers the following topics: 
 
-Syncfusion themes allow you apply uniform colors across all the Syncfusion controls to match your application theme by merging the following items in your application resources.
+* Applying light and dark themes
+* Overriding the default theme
+* Creating your own theme
 
-* Common theme resource dictionary
+## Applying light and dark themes
+
+By default, Syncfusion provides support for light and dark themes. As names suggest, these themes will have colors with light and dark color contrasts, respectively.
+
+To apply themes to your application, merge the following items:
+
+* Theme resource dictionary
 * Control style resource dictionaries
 
-## Common theme resource dictionary
+#### Theme resource dictionary
 
-This resource file contains keys and their respective color codes for all the controls; these keys will be mapped to our control properties. There will be separate resource dictionary for each theme e.g. LightTheme, DarkTheme.  When this resource file is merged in application resources along with the control style resource dictionaries, themes will be applied to the controls used in application. You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys). 
+This resource dictionary contains *keys* and their respective color codes for all the Syncfusion controls. Currently, the following two theme resource dictionaries are available:
+
+1. Light theme resource dictionary
+2. Dark theme resource dictionary
+
+#### Control style resource dictionaries
+
+Each Syncfusion control has a separate control style resource dictionary, whose styles are mapped to the keys declared in [theme resource dictionary](https://help.syncfusion.com/xamarin/themes/themes#theme-resource-dictionary) as a ['DynamicResource'](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/xaml/dynamic).
 
 {% highlight xaml %}
 <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
-xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms" 
+xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
              ...>
 <Application.Resources>
         <ResourceDictionary>
-            < ResourceDictionary.MergedDictionaries>
-                <syncCore:LightTheme />
-                .........
-            </ ResourceDictionary.MergedDictionaries>
-        </ ResourceDictionary >
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Theme resource dictionary -->
+                <syncTheme:DarkTheme />
+                <!-- Control style resource dictionaries -->
+                <gauge:SfCircularGaugeStyles />
+                <buttons:SfButtonStyles />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
 </Application.Resources>
 
 ....
@@ -37,23 +56,29 @@ xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Sync
 
 {% endhighlight %}
 
-## Control style resource dictionaries
+### Merging the dictionaries
 
-Each control has a control style resource dictionary, in which the actual mapping between the keys declared in common theme resource dictionary and mapping between the properties of the control are done.
+You can merge the theme resource dictionary and control style resource dictionaries in the following two ways:
 
-Both the common theme resource dictionary and the control style resource dictionaries need to be merged for the controls used in application to apply theme.
+#### Manual merging
+
+For manual merging, both the theme resource dictionary and each control style resource dictionary need to be merged for the required controls in the application resources as follows.
 
 {% highlight xaml %}
 <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
-xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms" 
+xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
              ...>
 <Application.Resources>
         <ResourceDictionary>
-            < ResourceDictionary.MergedDictionaries>
-                ......
-                <textinputlayout:SfTextInputLayoutStyles/>
-            </ ResourceDictionary.MergedDictionaries>
-        </ ResourceDictionary >
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Theme resource dictionary -->
+                <syncTheme:DarkTheme />
+                <!-- Control style resource dictionaries -->
+                <gauge:SfCircularGaugeStyles />
+                <buttons:SfButtonStyles />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary >
 </Application.Resources>
 
 ....
@@ -62,36 +87,9 @@ xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Sync
 
 {% endhighlight %}
 
-## Merging theme dictionaries
+#### Automatic merging
 
-You can merge the resource dictionaries in the following two ways.
-
-### Manual merging
-
-For manual merging, both the common resource and each control style resource dictionaries need to be merged for the required controls in the application resources as follows.
-
-{% highlight xaml %}
-<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
-xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
-             ...>
-<Application.Resources>
-        <ResourceDictionary>
-            < ResourceDictionary.MergedDictionaries>
-                <syncCore:LightTheme />
-                <textinputlayout:SfTextInputLayoutStyles/>
-            </ ResourceDictionary.MergedDictionaries>
-        </ ResourceDictionary >
-</Application.Resources>
-
-....
-
-</Application>
-
-{% endhighlight %}
-
-### Automatic merging
-
-When using more number of Syncfusion controls in an application, to make the process easier for merging the control style dictionary of the controls, the SyncfusionThemeDictionary class has been provided for automatic merging. When the common theme resource dictionary is merged to this dictionary, control style resource dictionaries will be merged automatically. However, only the styles for the controls will be merged.
+When using more number of Syncfusion controls in an application, to make the process easier for merging the control style dictionaries of the controls, the SyncfusionThemeDictionary class has been provided for automatic merging. When the theme resource dictionary is merged to this dictionary, control style resource dictionaries will be merged automatically. However, only the styles for the controls used in the application will be merged.
 
 {% highlight xaml %}
 
@@ -101,7 +99,8 @@ When using more number of Syncfusion controls in an application, to make the pro
 <Application.Resources>
     <syncTheme:SyncfusionThemeDictionary>
         <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
-            <syncTheme:LightTheme />
+            <!-- Theme resource dictionary -->
+            <syncTheme:DarkTheme />
         </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
     </syncTheme:SyncfusionThemeDictionary>
 </Application.Resources>
@@ -112,9 +111,17 @@ When using more number of Syncfusion controls in an application, to make the pro
 
 {% endhighlight %}
 
-## Common and control specific keys
+![DarkThemeImage](Images/DarkTheme.png)
 
-The common theme resource dictionary has the following set of keys, which are mapped to specific elements in all our controls. To override the overall appearance of a theme, change the values for the keys as required.
+## Overriding the default theme
+
+The theme resource dictionary contains a set of keys that are mapped to the style in control style dictionaries. The default appearance of themes can be customized by overriding the key values.
+
+The following section explains how to override both the primary and control specific keys.
+
+### Overriding the primary keys
+
+The theme resource dictionary contains the following set of primary keys that are mapped to the UI elements of all the controls. To override the primary colors of theme, change the values for these keys as required. You can find the keys and the UI elements to which they are mapped to all the controls in this [documentation](https://help.syncfusion.com/xamarin/themes/keys).
 
 * SyncPrimaryColor
 * SyncPrimaryLightColor
@@ -127,14 +134,6 @@ The common theme resource dictionary has the following set of keys, which are ma
 * SyncWarningColor
 * SyncInfoColor
 
-In addition to this, you can also override the keys that are specific to the controls. You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
-
-The following section explains how to override both the common and control specific keys.
-
-### Overriding key values
-
-You can override the default values for the keys as needed by changing the values for the keys after merging the common theme resource dictionary.
-
 {% highlight xaml %}
 
 <Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
@@ -142,10 +141,10 @@ You can override the default values for the keys as needed by changing the value
 <Application.Resources>
     <syncCore:SyncfusionThemeDictionary>
         <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
-            <syncCore:LightTheme />
+            <syncCore:DarkTheme />
             <ResourceDictionary>
-                <Color x:Key="SyncPrimaryColor">Green</Color>
-                <Color x:Key="SfTextInputLayoutHintColor">Red</Color>
+                <Color x:Key="SyncPrimaryColor">LimeGreen</Color>
+                <Color x:Key="SyncPrimaryLightColor">LimeGreen</Color>
             </ResourceDictionary>
         </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
     </syncCore:SyncfusionThemeDictionary>
@@ -157,13 +156,11 @@ You can override the default values for the keys as needed by changing the value
 
 {% endhighlight %}
 
-## Applying themes without resource dictionaries
+![OverridingPrimaryColors](Images/DarkThemePrimaryColors.png)
 
-You can customize the appearance of the controls without merging common theme resource and control style resource dictionaries in application resources.
+### Overriding the control specific keys
 
-In the following example, the UI elements of SfTextInputLayout are customized by merging the resource with the 'SfTextInputLayoutTheme' key name, and values are set to the required keys in the next line. Similar to this, you can customize the appearance of other controls by merging the resource with the "ControlName" + "Theme" key name and setting values to the required keys of the control in the next line. 
-
-You can find the keys and the elements to which they are mapped for all the controls in this [link](https://help.syncfusion.com/xamarin/themes/keys).
+In addition to the primary keys, the theme resource dictionary also contains the keys that are specific to each controls; these keys can also be overridden. You can find the keys and the UI elements to which they are mapped to all the controls in this [documentation](https://help.syncfusion.com/xamarin/themes/keys).
 
 {% highlight xaml %}
 
@@ -172,10 +169,11 @@ You can find the keys and the elements to which they are mapped for all the cont
 <Application.Resources>
     <syncCore:SyncfusionThemeDictionary>
         <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <syncCore:DarkTheme />
             <ResourceDictionary>
-                <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String> 
-                <Color x:Key="SfTextInputLayoutCounterLabelColor">Blue</Color> 
-                <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color> 
+                <Color x:Key="SyncPrimaryColor">LimeGreen</Color>
+                <Color x:Key="SyncPrimaryLightColor">LimeGreen</Color>
+                <Color x:Key="SfCircularGaugeScaleRimColor">Green</Color>
             </ResourceDictionary>
         </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
     </syncCore:SyncfusionThemeDictionary>
@@ -186,3 +184,36 @@ You can find the keys and the elements to which they are mapped for all the cont
 </Application>
 
 {% endhighlight %}
+
+![OverridingControlSpecificColors](Images/DarkTheme_ControlSpecific.png)
+
+## Creating your own theme
+
+As an alternative approach to the above methods, you can also create your own theme. To create own theme, first, you need to merge the resource, whose key name should be "ControlName" + "Theme" based on the controls, e.g., SfChartTheme and SfTextInputLayoutTheme. You can find this key for each control in this [documentation](https://help.syncfusion.com/xamarin/themes/keys). After merge the control name, you need to merge the required color resources with keys based on the UI elements that need to be customized. You can find the keys and the UI elements to which they are mapped to all the controls in this [documentation](https://help.syncfusion.com/xamarin/themes/keys).
+
+Using this approach, you can create your own theme to all the controls or for specific controls you need. 
+
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfCircularGaugeTheme">CustomTheme</x:String> 
+                <Color x:Key="SyncPrimaryColor">LimeGreen</Color>
+                <Color x:Key="SyncPrimaryLightColor">LimeGreen</Color>
+                <Color x:Key="SfCircularGaugeScaleRimColor">Green</Color>
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+
+ 

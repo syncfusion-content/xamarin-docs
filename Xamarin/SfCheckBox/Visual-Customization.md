@@ -81,4 +81,46 @@ caption.FontSize = 20;
 
 ![CaptionAppearance image](Images/CaptionAppearance.png)
 
+## TickColor Customization
+The `TickColor` property customizes the color of the tick in SfCheckBox.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"  x:Class="CheckBoxCustomization.checkbox">
+     <ContentPage.Content>
+            <StackLayout>
+                <syncfusion:SfCheckBox x:Name="checkBox" IsChecked="True" CheckedColor="Aqua" TickColor="Fuchsia" Text="CheckBox" />
+            </StackLayout>
+        </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+using System;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace CheckBoxCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfCheckBox checkBox = new SfCheckBox();
+            checkBox.IsChecked = true;
+            checkBox.Text = "CheckBox";
+            checkBox.CheckedColor = Color.Aqua;
+            checkBox.TickColor = Color.Fuchsia;
+            stackLayout.Children.Add(checkBox);
+            this.Content = stackLayout;
+{% endhighlight %}
+{% endtabs %}
+
+![SfCheckBox with TickColor](Images/TickColor.png)
+
+N> The `TickColor` is not applicable for Android Platform. The default value of TickColor is [`Color.White`].
+
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_VisualCustomization881578223).

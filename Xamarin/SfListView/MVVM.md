@@ -121,6 +121,65 @@ You can download the entire source code of this demo [here](http://www.syncfusio
 
 For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
 
+## Binding command of inner ListView to Model Command?
+
+You can bind command of Button inside ItemTemplate to the command in Model by specifying Source property with its root element as reference to execute the binded property of type command.
+
+{% tabs %}
+{% highlight xaml %}
+<listView:SfListView x:Name="listView" ItemsSource="{Binding ContactInfo}">
+     <listView:SfListView.ItemTemplate>
+        <DataTemplate>
+           <ViewCell>
+                <ViewCell.View>
+                   <StackLayout>
+                        <listView:SfListView x:Name="list1" ItemsSource="{Binding ContactDetails}" TapCommand="{Binding NavigateToSelectModelsCommand}" TapCommandParameter="{Binding}">
+                            <listView:SfListView.ItemTemplate>
+                                 <DataTemplate>
+                                      <ViewCell>
+                                          <ViewCell.View>
+                                               <StackLayout BackgroundColor="Teal" >
+                                                    <Label Text="{Binding ContactName} "/>
+                                                    <Label Text="{Binding ContactNumber}"/>
+                                                    <StackLayout HeightRequest="1" BackgroundColor="Gray"/>
+                                                </StackLayout>
+                                           </ViewCell.View>
+                                       </ViewCell>
+                                 </DataTemplate>
+                            </listView:SfListView.ItemTemplate>
+                        </listView:SfListView>
+                    </StackLayout>
+                </ViewCell.View>
+            </ViewCell>
+        </DataTemplate>
+    </listView:SfListView.ItemTemplate>
+</listView:SfListView>
+
+{% endhighlight %}
+{% highlight c# %}
+
+public class ContactInfo_NestedListView
+{
+    public Command<Object> NavigateToSelectModelsCommand { get; private set; }
+
+    public ContactInfo_NestedListView()
+    {
+       NavigateToSelectModelsCommand = new Command<Object>(NavigateToSelectModels, CanNavigate);
+    }
+    private bool CanNavigate(object argument)
+    {
+            return true;
+    }
+    private void NavigateToSelectModels(object model)
+    {
+       var customer = model as ContactInfo_NestedListView;
+            
+       App.Current.MainPage.DisplayAlert("Message", "Tapped customer group value :" + customer.location, "OK");
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Binding command of Button inside the ItemTemplate of Xamarin.Forms ListView to ViewModel Command?
 
 You can bind command of Button inside ItemTemplate to the command in ViewModel by specifying Source property with its root element as reference to execute the binded property of type command.
@@ -229,6 +288,83 @@ public partial class App : PrismApplication
 For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1).
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewWithprism-154406465).
+
+## ListView with MVVMCross
+
+The SfListView allows users work with MVVMCross Framework. Follow the below steps to work withMVVMCross Framework:
+
+1. Inherit App.cs from MvxApplication instead of your application.
+{% tabs %}
+{% highlight c# %}
+public class CoreApp : MvvmCross.Core.ViewModels.MvxApplication
+{
+    public override void Initialize()
+    {
+
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+2. Inherit ViewModel from the MvxViewModel.
+{% tabs %}
+{% highlight c# %}
+public class MvxFormsViewModel : MvxViewModel
+{
+    public MvxFormsViewModel()
+    {
+
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+3. Connect view and view model instead of binding context by registering them.
+{% tabs %}
+{% highlight c# %}
+public class CoreApp : MvvmCross.Core.ViewModels.MvxApplication
+{
+    public override void Initialize()
+    {
+        CreatableTypes()
+            .EndingWith("Service")
+            .AsInterfaces()
+            .RegisterAsLazySingleton();
+
+        RegisterNavigationServiceAppStart<ViewModels.MvxFormsViewModel>();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+4. Derive MainActivity and AppDelegate from MvxFormsAppCompatActivity and MvxFormsApplicationDelegate for initializing renderer.
+{% tabs %}
+{% highlight c# %}
+public class MainActivity : MvxFormsAppCompatActivity
+{
+    protected override void OnCreate(Bundle bundle)
+    {
+        base.OnCreate(bundle);
+        TabLayoutResource = Resource.Layout.Tabbar;
+        ToolbarResource = Resource.Layout.Toolbar;
+    }
+}
+
+public partial class AppDelegate : MvxFormsApplicationDelegate
+{
+    public override UIWindow Window { get; set; }
+
+    public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+    {
+        SfListViewRenderer.Init();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+For more details, refer to this [documentation](https://www.mvvmcross.com/documentation/getting-started/mvvmcross-overview).
+
+You can download the entire source code of this demo in the following link: [Source code](https://github.com/SyncfusionExamples/listview_MVVMCross).
 
 ## Binding properties in MVVM pattern
 

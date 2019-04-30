@@ -11,13 +11,54 @@ documentation: ug
 
 This section explains you the steps required to populate the Sparkline with data. 
 
-## Adding Sparkline Reference
+## Adding SfSparkline reference
 
-Refer this [article](https://help.syncfusion.com/xamarin/introduction/download-and-installation) to know how to obtain and reference Essential Studio components in your solution; then refer [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfsparkline) link to know about the assemblies required for adding Sparkline to your project.
+You can add SfSparkline reference using one of the following methods:
 
-I> After adding the reference, currently, an additional step is required for iOS and UWP projects. We need to call Init method in the `SfSparklineRenderer` as shown in this [KB article.](https://www.syncfusion.com/kb/7713)
+**Method 1: Adding SfSparkline reference from nuget.org**
 
-I> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7167) for more details.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfSparkline to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfSparkline](https://www.nuget.org/packages/Syncfusion.Xamarin.SfSparkline), and then install it.
+
+![Adding SfSparkline reference from NuGet](Getting-Started-image/Adding SfSparkline reference.png)
+
+N> Install the same version of SfSparkline NuGet in all the projects.
+
+**Method 2: Adding SfSparkline reference from toolbox**
+
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfSparkline control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+
+**Method 3: Adding SfSparkline assemblies manually from the installed location**
+
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+
+Location: {Installed location}/{version}/Xamarin/lib
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfSparkline.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfSparkline.Android.dll<br/>Syncfusion.SfSparkline.XForms.Android.dll<br/>Syncfusion.SfSparkline.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfSparkline.iOS.dll<br/>Syncfusion.SfSparkline.XForms.iOS.dll<br/>Syncfusion.SfSparkline.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfSparkline.UWP.dll<br/>Syncfusion.SfSparkline.XForms.UWP.dll<br/>Syncfusion.SfSparkline.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
+N> After adding the reference, an additional step is required for iOS and UWP projects. You need to call Init method in the `SfSparklineRenderer` as shown in this [KB article](https://www.syncfusion.com/kb/7713). If you are adding the references from toolbox, this step is not needed.
+
+N> For UWP alone, one more additional step is required if the project is built in release mode with .NET Native tool chain enabled. You can refer the [KB article](https://www.syncfusion.com/kb/7167) for more details.
 
 ## Initialize view model
 

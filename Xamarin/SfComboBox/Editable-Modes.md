@@ -22,9 +22,9 @@ In editable mode, the combo box allows users to edit in the text box that shows 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true"> 
-		<combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true"> 
+        <combobox:SfComboBox.DataSource>
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
                 <x:String> United Arab Emirates </x:String>
@@ -32,7 +32,7 @@ In editable mode, the combo box allows users to edit in the text box that shows 
                 <x:String> United States </x:String>
             </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	 </combobox:SfComboBox>                     
+    </combobox:SfComboBox>                     
 </StackLayout> 
 		  
 {% endhighlight %}
@@ -41,9 +41,9 @@ In editable mode, the combo box allows users to edit in the text box that shows 
 	
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
@@ -56,7 +56,6 @@ SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = true;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 	 
@@ -64,7 +63,7 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Editing/iseditable.png)
+![IsEditable image](images/ComboBox-Editing/iseditable.png)
 
 ## Non-Editable combo box
 
@@ -75,9 +74,9 @@ Non-editable mode prevents users from typing and allows them to select from drop
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="false">
-		<combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="false">
+        <combobox:SfComboBox.DataSource>
+            <ListCollection:List x:TypeArguments="x:String">
                  <x:String> Uganda </x:String>
                  <x:String> Ukraine </x:String>
                  <x:String> United Arab Emirates </x:String>
@@ -85,7 +84,7 @@ Non-editable mode prevents users from typing and allows them to select from drop
                  <x:String> United States </x:String>
              </ListCollection:List>
         </combobox:SfComboBox.DataSource>
-	</combobox:SfComboBox>                        
+    </combobox:SfComboBox>                        
 </StackLayout> 
 		  
 {% endhighlight %}
@@ -94,10 +93,11 @@ Non-editable mode prevents users from typing and allows them to select from drop
 	
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	
+
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -109,7 +109,6 @@ SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
 comboBox.DataSource = countryNames;
 comboBox.IsEditableMode = false;
-
 layout.Children.Add(comboBox); 
 Content = layout;
 	 
@@ -117,5 +116,4 @@ Content = layout;
 
 {% endtabs %}
 
-![](images/ComboBox-Editing/noneditable.png)
-
+![Non Editable image](images/ComboBox-Editing/noneditable.png)

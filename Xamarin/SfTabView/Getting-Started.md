@@ -19,15 +19,50 @@ E.g., C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
 
 N> In Mac, assemblies can be found in unzipped package location.
 
+## Adding SfTabView reference
 
-### Adding SfTabView reference
+You can add SfTabView reference using one of the following methods:
 
+**Method 1: Adding SfTabView reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfTabView to your project, open the NuGet package manager in Visual Studio, and search for [Syncfusion.Xamarin.SfTabView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTabView/), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfTabView to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfTabView](https://www.nuget.org/packages/Syncfusion.Xamarin.SfTabView), and then install it.
 
-To know more about obtaining our components, refer to these links: [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows). Also, if you prefer to manually refer the assemblies instead of NuGet, refer to this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sftabview) to know about the dependent assemblies for SfTabView.
+![Adding SfTabView reference from NuGet](images/Getting-Started/Adding SfTabView reference.png)
 
-N> When there is a mismatch of Xamarin NuGet packages between your sample and the tab view control assemblies, an error (Could not load type Xamarin.Forms.ElementTemplate) will occur. Refer to the [System Requirements](https://help.syncfusion.com/xamarin/introduction/system-requirements) section to know the software requirements of Syncfusion controls.
+N> Install the same version of SfTabView NuGet in all the projects.
+
+**Method 2: Adding SfTabView reference from toolbox**
+
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfTabView control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+
+**Method 3: Adding SfTabView assemblies manually from the installed location**
+
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+
+Location: {Installed location}/{version}/Xamarin/lib
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.SfTabView.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.SfTabView.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfTabView.XForms.dll<br/>Syncfusion.SfTabView.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the tab view on each platform
 
@@ -36,6 +71,8 @@ To use the tab view inside an application, each platform application must initia
 ### Android and UWP
 
 Android launches the tab view without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
+
+N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 
@@ -124,12 +161,12 @@ Set the control to content in `ContentPage`.
 
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-		xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
-		x:Class="GettingStarted.MainPage">
-<ContentPage.Content>   
-<tabView:SfTabView  />   
-</ContentPage.Content>  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="TabViewAutomationSample.TabViewAutomationSample">
+    <ContentPage.Content> 
+        <tabView:SfTabView/> 
+    </ContentPage.Content>  
 </ContentPage>
 
 {% endhighlight %}
@@ -157,7 +194,7 @@ namespace GettingStarted
 
 {% endtabs %}
 
-### Adding tab items
+## Populating tab items
 
 Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
 
@@ -165,104 +202,83 @@ Tab items can be configured in tab view through the `Items` property of `SfTabVi
 
 {% highlight xaml %}
 
-<tabView:SfTabView >
-<tabView:SfTabItem Title="Call">
-<tabView:SfTabItem.Content>
-	<Grid BackgroundColor="Red" x:Name="AllContactsGrid" />
-</tabView:SfTabItem.Content>
-</tabView:SfTabItem>
-<tabView:SfTabItem Title="Favorites">
-<tabView:SfTabItem.Content>
-	<Grid BackgroundColor="Green" x:Name="FavoritesGrid" />
-</tabView:SfTabItem.Content>
-</tabView:SfTabItem>
-<tabView:SfTabItem Title="Contacts">
-<tabView:SfTabItem.Content>
-	<Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
-</tabView:SfTabItem.Content>
-</tabView:SfTabItem>
-</tabView:SfTabView>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="TabViewAutomationSample.TabViewAutomationSample">
+    <ContentPage.Content>
+        <tabView:SfTabView BackgroundColor="Aqua">
+                    <tabView:SfTabItem Title="Call">
+                        <tabView:SfTabItem.Content>
+                            <Grid BackgroundColor="Red" x:Name="AllContactsGrid" />
+                        </tabView:SfTabItem.Content>
+                    </tabView:SfTabItem>
+                    <tabView:SfTabItem Title="Favorites">
+                        <tabView:SfTabItem.Content>
+                            <Grid BackgroundColor="Green" x:Name="FavoritesGrid" />
+                        </tabView:SfTabItem.Content>
+                    </tabView:SfTabItem>
+                    <tabView:SfTabItem Title="Contacts">
+                        <tabView:SfTabItem.Content>
+                            <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                        </tabView:SfTabItem.Content>
+                    </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </ContentPage.Content>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-var tabView = new SfTabView();
-var allContactsGrid = new Grid {BackgroundColor = Color.Red};
-var favoritesGrid = new Grid {BackgroundColor = Color.Green};
-var contactsGrid = new Grid {BackgroundColor = Color.Blue};
-var tabItems = new TabItemCollection
-    {
-	new SfTabItem()
-	    {
-		Title = "Calls",
-		Content = allContactsGrid
-	    },
-	new SfTabItem()
+using Syncfusion.XForms.TabView;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace TabViewAutomationSample
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class TabView : ContentPage
+	{
+        SfTabView tabView;
+		public TabView ()
 		{
-		Title = "Favorites",
-		Content = favoritesGrid
-		},
-	new SfTabItem()
-		{
-		Title = "Contacts",
-		Content = contactsGrid
+			InitializeComponent ();
+            var tabView = new SfTabView();
+            Grid allContactsGrid = new Grid {BackgroundColor = Color.Red};
+            Grid favoritesGrid = new Grid {BackgroundColor = Color.Green};
+            Grid contactsGrid = new Grid {BackgroundColor = Color.Blue};
+            var tabItems = new TabItemCollection
+            {
+                new SfTabItem()
+                {
+                    Title = "Calls",
+                    Content = allContactsGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Favorites",
+                    Content = favoritesGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Contacts",
+                    Content = contactsGrid
+                }
+            };
+            tabView.Items = tabItems;
+            this.Content = tabView;
 		}
-	};
-
-tabView.Items = tabItems;
-this.Content = tabView;
+	}
+}
 
 {% endhighlight %}
 
 {% endtabs %}
-
-## Share the header space equally
-
-To share the header space to tabs equally, set the number of tabs that can be distributed in the available space though the `VisibleHeaderCount` property of tab view.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<tabView:SfTabView VisibleHeaderCount="3" >
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-tabView.VisibleHeaderCount = 3;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-After set the number of tabs, you can add the required controls for your application. Here, a `ListView` has been added in the content region.
-
-## Set background color for tab view
-
-To set color for the whole tab view control, set `BackgroundColor` property of tab view control. This will change the background color for whole tab view content and tab view header with same color.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<tabView:SfTabView BackgroundColor="Red" >
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-tabView.BackgroundColor = Color.Red;
-
-{% endhighlight %}
-
-{% endtabs %}
-
 
 ## Adding ListView in tab view
 
-## Preparing data
+## UseCase Sample with Contacts Information stored as a ListView in TabView Control
 
 Create a view model class with the `ContactsInfo` collection property, which is initialized with required number of data objects.
 
@@ -301,79 +317,64 @@ public class ContactsViewModel : INotifyPropertyChanged
 
 ## Binding data to list view
 
-Bind the items source of the `ListView`, and set the required appearance in its `ItemsTemplate` property in which the list view can be hosted within the content region of tab item. 
+Bind the items source of the `ListView`, and set the required appearance in its `ItemTemplate` property in which the list view can be hosted within the content region of tab item. 
 
 {% highlight xaml %}
 
-
-<ContentPage.Content>
-<syncfusion:SfTabView x:Name="tabView"  EnableSwiping="False" VisibleHeaderCount="3" Margin="0,40,0,0">
-<syncfusion:SfTabView.SelectionIndicatorSettings>
-<syncfusion:SelectionIndicatorSettings Color="Red" Position="Bottom" StrokeThickness="0"/>
-</syncfusion:SfTabView.SelectionIndicatorSettings>
-<syncfusion:SfTabItem >
-<syncfusion:SfTabItem.HeaderContent>
-<StackLayout VerticalOptions="Center">
-<Label HorizontalTextAlignment="Center" Text="ACCOUNTS"></Label>
-<BoxView BackgroundColor="Black" HorizontalOptions="Center" HeightRequest="3" WidthRequest="35">
-</BoxView>
-</StackLayout>
-</syncfusion:SfTabItem.HeaderContent>
-<syncfusion:SfTabItem.Content>
-<Grid BackgroundColor="Yellow" x:Name="FavoritesGrid" />
-</syncfusion:SfTabItem.Content>
-</syncfusion:SfTabItem>
-<syncfusion:SfTabItem >
-<syncfusion:SfTabItem.HeaderContent>
-<StackLayout VerticalOptions="Center">
-<Label HorizontalTextAlignment="Center" Text="CARDS"></Label>
-<BoxView Style="{DynamicResource Key=cards}" BackgroundColor="Black" HorizontalOptions="Center" HeightRequest="3" WidthRequest="35"></BoxView>
-</StackLayout>
-</syncfusion:SfTabItem.HeaderContent>
-<syncfusion:SfTabItem.Content>
-<Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
-</syncfusion:SfTabItem.Content>
-</syncfusion:SfTabItem>
-<syncfusion:SfTabItem>
-<syncfusion:SfTabItem.HeaderContent>
-<StackLayout VerticalOptions="Center">
-<Label HorizontalTextAlignment="Center" Text="WALLETS"></Label>
-<BoxView Style="{DynamicResource Key=wallets}" BackgroundColor="Black" HorizontalOptions="Center" HeightRequest="3" WidthRequest="35"></BoxView>
-</StackLayout>
-</syncfusion:SfTabItem.HeaderContent>
-<syncfusion:SfTabItem.Content>
-<ListView x:Name="ContactListView" 
-ItemsSource="{Binding ContactList}"
-BackgroundColor="Beige" RowHeight="100">
-<ListView.BindingContext>
-<local:ContactsViewModel />
-</ListView.BindingContext>
-<ListView.ItemTemplate>
-<DataTemplate>
-<ViewCell>
-<StackLayout Orientation="Vertical">
-<Label 
-Text="{Binding Name}"
-FontSize="24" 
-TextColor="Blue" />
-<Label 
-Text="{Binding Number}" 
-FontSize="20" 
-TextColor="LightSlateGray" />
-</StackLayout>
-</ViewCell>
-</DataTemplate>
-</ListView.ItemTemplate>
-</ListView>
-</Grid>
-</syncfusion:SfTabItem.Content>
-</syncfusion:SfTabItem>
-</syncfusion:SfTabView>
-</ContentPage.Content>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TabViewAutomationSample"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="TabViewAutomationSample.XAMARIN_22272">
+   <ContentPage.Content>
+        <tabView:SfTabView BackgroundColor="#f6f6f6" x:Name="tabView">
+            <tabView:SfTabItem Title="{Binding Title1}">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="White" x:Name="AllContactsGrid" >
+                        <ListView x:Name="ContactListView" 
+                                  ItemsSource="{Binding ContactList}"
+                                  RowHeight="75">
+                            <ListView.BindingContext>
+                                <local:ContactsViewModel />
+                            </ListView.BindingContext>
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <StackLayout Orientation="Vertical" Margin="30,0,0,0">
+                                            <Label 
+                                                Text="{Binding Name}"
+                                                FontSize="24"  />
+                                            <Label 
+                                                Text="{Binding Number}" 
+                                                FontSize="20" 
+                                                TextColor="LightSlateGray" />
+                                        </StackLayout>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Favorites">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Green" x:Name="FavouritesGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Contacts">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </ContentPage.Content>
+</ContentPage>
 	
 {% endhighlight %}
 
 Similarly, content region for other tabs also can be configured.
+
+![LisViewImage](images/Getting-Started/ListView.png)
 
 ## Swiping
 

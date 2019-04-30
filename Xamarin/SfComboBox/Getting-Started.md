@@ -11,10 +11,52 @@ documentation : ug
 
 This section explains the steps required to create the combo box control, populate it with data and filter the suggestions. This section covers only the minimal features that are needed to get started with the control.
 
-## Adding ComboBox references
+## Adding SfComboBox reference
 
-Refer [this](https://help.syncfusion.com/xamarin/introduction/download-and-installation) section to know the steps for obtaining Essential Studio components in your solution; then refer this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfcombobox) to know the dependency assembly details for adding ComboBox to your project.
-After adding the assembly reference, an additional step is required for iOS and UWP projects.
+You can add SfComboBox reference using one of the following methods:
+
+**Method 1: Adding SfComboBox reference from nuget.org**
+
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfComboBox to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfComboBox](https://www.nuget.org/packages/Syncfusion.Xamarin.SfComboBox), and then install it.
+
+![Adding SfComboBox reference from NuGet](images/Getting-Started/Adding SfComboBox reference.png)
+
+N> Install the same version of SfComboBox NuGet in all the projects.
+
+**Method 2: Adding SfComboBox reference from toolbox**
+
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfComboBox control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+
+**Method 3: Adding SfComboBox assemblies manually from the installed location**
+
+If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+
+Location: {Installed location}/{version}/Xamarin/lib
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
+N> If you are adding the references from toolbox, this step is not needed.
 
 ### Additional Step for iOS
 
@@ -57,7 +99,7 @@ if (rootFrame == null)
 	rootFrame.NavigationFailed += OnNavigationFailed;                
 	List<System.Reflection.Assembly> assembliesToInclude = new List<System.Reflection.Assembly>();
 	// Add all the renderer assemblies your app uses 
-	assembliesToInclude.Add(typeof(Syncfusion.XForms.ComboBox.UWP.SfComboBoxRenderer).GetTypeInfo().Assembly);
+	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.ComboBox.SfComboBoxRenderer).GetTypeInfo().Assembly);
 	// Replace the Xamarin.Forms.Forms.Init(e);        
 	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 	if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
@@ -122,9 +164,9 @@ Then initialize an empty combobox as shown in the following code,
 
 StackLayout layout = new StackLayout()
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start,
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start,
+    Padding = new Thickness(30) 
 };
 SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
@@ -148,35 +190,35 @@ Now, a list of string with resolution list is created and added to the SfComboBo
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
-			<combobox:SfComboBox.ComboBoxSource>
-				<ListCollection:List x:TypeArguments="x:String">
+            <combobox:SfComboBox HeightRequest="40" x:Name="comboBox">
+                <combobox:SfComboBox.ComboBoxSource>
+                    <ListCollection:List x:TypeArguments="x:String">
                 	<x:String> 1920 x 1080 </x:String>
                 	<x:String> 1680 x 1050 </x:String>
                 	<x:String> 1600 x 900 </x:String>
                 	<x:String> 1440 x 900 </x:String>
                 	<x:String> 1400 x 1050 </x:String>
-					<x:String> 1366 x 768 </x:String>
+                       <x:String> 1366 x 768 </x:String>
                 	<x:String> 1360 x 768 </x:String>
                 	<x:String> 1280 x 1024 </x:String>
-					<x:String> 1280 x 960 </x:String>
+                       <x:String> 1280 x 960 </x:String>
                 	<x:String> 1280 x 720 </x:String>
                 	<x:String> 854 x 480 </x:String>
-					<x:String> 800 x 480 </x:String>
+                       <x:String> 800 x 480 </x:String>
                 	<x:String> 480 X 640 </x:String>
                 	<x:String> 480 x 320 </x:String>
-					<x:String> 432 x 240 </x:String>
-					<x:String> 360 X 640 </x:String>
-					<x:String> 320 x 240 </x:String>
+                       <x:String> 432 x 240 </x:String>
+                       <x:String> 360 X 640 </x:String>
+                       <x:String> 320 x 240 </x:String>
             	</ListCollection:List>
-        	</combobox:SfComboBox.ComboBoxSource>
-	 	</combobox:SfComboBox>              
-	</StackLayout> 
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>              
+    </StackLayout> 
 </ContentPage>
 	
 {% endhighlight %}
@@ -185,9 +227,9 @@ Now, a list of string with resolution list is created and added to the SfComboBo
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	    
 List<String> resolutionList = new List<String>();
 resolutionList.Add("1920 x 1080");
@@ -238,28 +280,28 @@ Non-editable mode prevents users from typing and allows them to select items fro
 {% highlight xaml %}
 
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="false">
-			<combobox:SfComboBox.ComboBoxSource>
-				<ListCollection:List x:TypeArguments="x:String">
-                	<x:String> 1920 x 1080 </x:String>
-                	<x:String> 1680 x 1050 </x:String>
-                	<x:String> 1600 x 900 </x:String>
-                	<x:String> 1440 x 900 </x:String>
-                	<x:String> 1400 x 1050 </x:String>
-					<x:String> 1366 x 768 </x:String>
-                	<x:String> 1360 x 768 </x:String>
-                	<x:String> 1280 x 1024 </x:String>
-					<x:String> 1280 x 960 </x:String>
-                	<x:String> 1280 x 720 </x:String>
-                	<x:String> 854 x 480 </x:String>
-					<x:String> 800 x 480 </x:String>
-                	<x:String> 480 X 640 </x:String>
-                	<x:String> 480 x 320 </x:String>
-					<x:String> 432 x 240 </x:String>
-					<x:String> 360 X 640 </x:String>
-					<x:String> 320 x 240 </x:String>
-            	</ListCollection:List>
-        	</combobox:SfComboBox.ComboBoxSource>
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="false">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String> 1920 x 1080 </x:String>
+                    <x:String> 1680 x 1050 </x:String>
+                    <x:String> 1600 x 900 </x:String>
+                    <x:String> 1440 x 900 </x:String>
+                    <x:String> 1400 x 1050 </x:String>
+                    <x:String> 1366 x 768 </x:String>
+                    <x:String> 1360 x 768 </x:String>
+                    <x:String> 1280 x 1024 </x:String>
+                    <x:String> 1280 x 960 </x:String>
+                    <x:String> 1280 x 720 </x:String>
+                    <x:String> 854 x 480 </x:String>
+                    <x:String> 800 x 480 </x:String>
+                    <x:String> 480 X 640 </x:String>
+                    <x:String> 480 x 320 </x:String>
+                    <x:String> 432 x 240 </x:String>
+                    <x:String> 360 X 640 </x:String>
+                    <x:String> 320 x 240 </x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
 	 	</combobox:SfComboBox>              
 	</StackLayout> 
 	
@@ -269,9 +311,9 @@ Non-editable mode prevents users from typing and allows them to select items fro
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	    
 List<String> resolutionList = new List<String>();
 resolutionList.Add("1920 x 1080");
@@ -317,29 +359,29 @@ In editable mode, the combo box allows users to edit in the text box that shows 
 {% highlight xaml %}
 
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="true">
-			<combobox:SfComboBox.ComboBoxSource>
-				<ListCollection:List x:TypeArguments="x:String">
-                	<x:String> 1920 x 1080 </x:String>
-                	<x:String> 1680 x 1050 </x:String>
-                	<x:String> 1600 x 900 </x:String>
-                	<x:String> 1440 x 900 </x:String>
-                	<x:String> 1400 x 1050 </x:String>
-					<x:String> 1366 x 768 </x:String>
-                	<x:String> 1360 x 768 </x:String>
-                	<x:String> 1280 x 1024 </x:String>
-					<x:String> 1280 x 960 </x:String>
-                	<x:String> 1280 x 720 </x:String>
-                	<x:String> 854 x 480 </x:String>
-					<x:String> 800 x 480 </x:String>
-                	<x:String> 480 X 640 </x:String>
-                	<x:String> 480 x 320 </x:String>
-					<x:String> 432 x 240 </x:String>
-					<x:String> 360 X 640 </x:String>
-					<x:String> 320 x 240 </x:String>
-            	</ListCollection:List>
-        	</combobox:SfComboBox.ComboBoxSource>
-	 	</combobox:SfComboBox>              
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="true">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String> 1920 x 1080 </x:String>
+                    <x:String> 1680 x 1050 </x:String>
+                    <x:String> 1600 x 900 </x:String>
+                    <x:String> 1440 x 900 </x:String>
+                    <x:String> 1400 x 1050 </x:String>
+                    <x:String> 1366 x 768 </x:String>
+                    <x:String> 1360 x 768 </x:String>
+                    <x:String> 1280 x 1024 </x:String>
+                    <x:String> 1280 x 960 </x:String>
+                    <x:String> 1280 x 720 </x:String>
+                    <x:String> 854 x 480 </x:String>
+                    <x:String> 800 x 480 </x:String>
+                    <x:String> 480 X 640 </x:String>
+                    <x:String> 480 x 320 </x:String>
+                    <x:String> 432 x 240 </x:String>
+                    <x:String> 360 X 640 </x:String>
+                    <x:String> 320 x 240 </x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>              
 	</StackLayout> 
 	
 {% endhighlight %}
@@ -348,9 +390,9 @@ In editable mode, the combo box allows users to edit in the text box that shows 
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	    
 List<String> resolutionList = new List<String>();
 resolutionList.Add("1920 x 1080");
@@ -395,29 +437,29 @@ When selecting an item from the drop-down list, the selection changed event will
 {% highlight xaml %}
 
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="true" SelectionChanged="Handle_SelectionChanged">
-			<combobox:SfComboBox.ComboBoxSource>
-				<ListCollection:List x:TypeArguments="x:String">
-                	<x:String> 1920 x 1080 </x:String>
-                	<x:String> 1680 x 1050 </x:String>
-                	<x:String> 1600 x 900 </x:String>
-                	<x:String> 1440 x 900 </x:String>
-                	<x:String> 1400 x 1050 </x:String>
-					<x:String> 1366 x 768 </x:String>
-                	<x:String> 1360 x 768 </x:String>
-                	<x:String> 1280 x 1024 </x:String>
-					<x:String> 1280 x 960 </x:String>
-                	<x:String> 1280 x 720 </x:String>
-                	<x:String> 854 x 480 </x:String>
-					<x:String> 800 x 480 </x:String>
-                	<x:String> 480 X 640 </x:String>
-                	<x:String> 480 x 320 </x:String>
-					<x:String> 432 x 240 </x:String>
-					<x:String> 360 X 640 </x:String>
-					<x:String> 320 x 240 </x:String>
-            	</ListCollection:List>
-        	</combobox:SfComboBox.ComboBoxSource>
-	 	</combobox:SfComboBox>              
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="true" SelectionChanged="Handle_SelectionChanged">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String> 1920 x 1080 </x:String>
+                    <x:String> 1680 x 1050 </x:String>
+                    <x:String> 1600 x 900 </x:String>
+                    <x:String> 1440 x 900 </x:String>
+                    <x:String> 1400 x 1050 </x:String>
+                    <x:String> 1366 x 768 </x:String>
+                    <x:String> 1360 x 768 </x:String>
+                    <x:String> 1280 x 1024 </x:String>
+                    <x:String> 1280 x 960 </x:String>
+                    <x:String> 1280 x 720 </x:String>
+                    <x:String> 854 x 480 </x:String>
+                    <x:String> 800 x 480 </x:String>
+                    <x:String> 480 X 640 </x:String>
+                    <x:String> 480 x 320 </x:String>
+                    <x:String> 432 x 240 </x:String>
+                    <x:String> 360 X 640 </x:String>
+                    <x:String> 320 x 240 </x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>              
 	</StackLayout> 
 	
 {% endhighlight %}
@@ -426,9 +468,9 @@ When selecting an item from the drop-down list, the selection changed event will
 
 StackLayout layout = new StackLayout() 
 { 
-	VerticalOptions = LayoutOptions.Start, 
-	HorizontalOptions = LayoutOptions.Start, 
-	Padding = new Thickness(30) 
+    VerticalOptions = LayoutOptions.Start, 
+    HorizontalOptions = LayoutOptions.Start, 
+    Padding = new Thickness(30) 
 };	    
 
 List<String> resolutionList = new List<String>();

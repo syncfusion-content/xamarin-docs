@@ -1,7 +1,7 @@
 ---
 layout: post
-title: View Appearance in Syncfusion ListView
-description: Describes about view appearance and different functionalities in SfListView.
+title: View Appearance in Xamarin.Forms ListView | Syncfusion
+description: This topic describes about view appearance and different types of customization of item template in Syncfusion Xamarin.Forms ListView.
 platform: xamarin
 control: SfListView
 documentation: ug

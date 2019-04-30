@@ -32,9 +32,9 @@ Selected items will be displayed with a customizable token representation. Users
 
    StackLayout layout = new StackLayout() 
    { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
     SfComboBox comboBox = new SfComboBox();
@@ -42,7 +42,6 @@ Selected items will be displayed with a customizable token representation. Users
     comboBox.MultiSelectMode = MultiSelectMode.Token;
     comboBox.TokensWrapMode = TokensWrapMode.Wrap;
     comboBox.IsSelectedItemsVisibleInDropDown = false;
-
     layout.Children.Add(comboBox); 
     Content = layout;
 
@@ -120,12 +119,12 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
-<ContentPage.BindingContext>
-    <local:EmployeeViewModel/>
- </ContentPage.BindingContext>
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" DataSource="{Binding EmployeeCollection}"/>
-</StackLayout> 
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" DataSource="{Binding EmployeeCollection}"/>
+    </StackLayout> 
 </ContentPage>
 
 {% endhighlight %}
@@ -134,14 +133,14 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
        
    StackLayout layout = new StackLayout() 
    { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
     SfComboBox comboBox = new SfComboBox();
     comboBox.DropDownItemHeight = 50;
-    comboBox.DisplayMemberName = "Name";
+    comboBox.DisplayMemberPath = "Name";
     comboBox.ImageMemberPath = "Image";
     comboBox.MultiSelectMode = MultiSelectMode.Token;
     this.BindingContext = new EmployeeViewModel(); 
@@ -149,10 +148,7 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
     // Set TokensWrapMode to Wrap 
     comboBox.TokensWrapMode = TokensWrapMode.Wrap;  
 
-    Binding binding = new Binding("EmployeeCollection");
-    binding.Source = this;
-    binding.Mode = BindingMode.TwoWay;
-    comboBox.SetBinding(Label.DataSourceProperty,binding);
+    comboBox.SetBinding(SfComboBox.DataSourceProperty, "EmployeeCollection", BindingMode.TwoWay);
 
     layout.Children.Add(comboBox); 
     Content = layout;
@@ -162,7 +158,7 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
 {% endtabs %}
 
 
-![](images/MultiSelect/TokenRepresentation_Wrap.png)
+![Wrap mode for Token](images/MultiSelect/TokenRepresentation_Wrap.png)
  
 ### Token customization
 
@@ -184,7 +180,9 @@ Token can be customized in the following ways:
 
 * `CornerRadius` - Sets the corner radius for the token.
 
+* `DeleteButtonPlacement` - sets the placement of delete button. `Left` and `Right` are the placement options. By default, it is set placed at right side of the token. 
 
+N> CornerRadius support has enhanced only on iOS and Android platform.
 
 {% tabs %}
 
@@ -195,20 +193,20 @@ Token can be customized in the following ways:
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              xmlns:local="clr-namespace:NamespaceName"            
              x:Class="NamespaceName.ClassName">
-<ContentPage.BindingContext>
-    <local:EmployeeViewModel/>
- </ContentPage.BindingContext>
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image"                             MultiSelectMode="Token" TokensWrapMode="Wrap" DataSource="{Binding EmployeeCollection}">
-        <combobox:SfComboBox.TokenSettings>
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image"                             MultiSelectMode="Token" TokensWrapMode="Wrap" DataSource="{Binding EmployeeCollection}">
+            <combobox:SfComboBox.TokenSettings>
                 <combobox:TokenSettings FontSize="16" BackgroundColor="#66ccff" 
                                         TextColor="White" SelectedBackgroundColor="#ffffe0" 
                                         DeleteButtonColor="Color.Brown" IsCloseButtonVisible="true" 
-                                        CornerRadius="15">                   
+                                        CornerRadius="15" DeleteButtonPlacement="Right">                   
                 </combobox:TokenSettings>
             </combobox:SfComboBox.TokenSettings>
       </combobox:SfComboBox>      
-</StackLayout>
+    </StackLayout>
 </ContentPage>
 
 {% endhighlight %}
@@ -217,14 +215,14 @@ Token can be customized in the following ways:
 
    StackLayout layout = new StackLayout() 
    { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
 
     SfComboBox comboBox = new SfComboBox();
     comboBox.DropDownItemHeight = 50;
-    comboBox.DisplayMemberName = "Name";
+    comboBox.DisplayMemberPath = "Name";
     comboBox.ImageMemberPath = "Image";
     comboBox.MultiSelectMode = MultiSelectMode.Token;
     this.BindingContext = new EmployeeViewModel(); 
@@ -238,13 +236,11 @@ Token can be customized in the following ways:
     token.DeleteButtonColor = Color.Brown;
     token.IsCloseButtonVisible = true;
     token.CornerRadius = 15;
+    token.DeleteButtonPlacement = DeleteButtonPlacement.Right;
     comboBox.TokenSettings = token;
     comboBox.TokensWrapMode = TokensWrapMode.Wrap;  
 
-    Binding binding = new Binding("EmployeeCollection");
-    binding.Source = this;
-    binding.Mode = BindingMode.TwoWay;
-    comboBox.SetBinding(Label.DataSourceProperty,binding);
+    comboBox.SetBinding(SfComboBox.DataSourceProperty, "EmployeeCollection", BindingMode.TwoWay);
 
     layout.Children.Add(comboBox); 
     Content = layout;
@@ -254,20 +250,22 @@ Token can be customized in the following ways:
 {% endtabs %}
 
 
-![](images/MultiSelect/TokenRepresentation.png)
+![Token representation](images/MultiSelect/TokenRepresentation.png)
 
 ## Delimiter
 
 When selecting multiple items, the selected items can be divided with a desired character given for a delimiter. You can set delimiter character using the `Delimiter` property.
+
+N> Delimiter support has enhanced only on iOS and Android platform.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MultiSelectMode="Delimiter"  Delimiter=","> 
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MultiSelectMode="Delimiter"  Delimiter=","> 
         <combobox:SfComboBox.DataSource>
-			<ListCollection:List x:TypeArguments="x:String">
+            <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Afghanistan </x:String>
                 <x:String> Albania </x:String>
                 <x:String> Mexico </x:String>
@@ -288,10 +286,11 @@ When selecting multiple items, the selected items can be divided with a desired 
 
     StackLayout layout = new StackLayout() 
     { 
-	     VerticalOptions = LayoutOptions.Start, 
-	     HorizontalOptions = LayoutOptions.Start, 
-	     Padding = new Thickness(30) 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
     }; 
+    
     List<String> countryNames = new List<String>();
     countryNames.Add("Afghanistan");
     countryNames.Add("Albania");
@@ -315,18 +314,16 @@ When selecting multiple items, the selected items can be divided with a desired 
 
 {% endtabs %}
 
-![](images/MultiSelect/Delimiter.png)
+![Delimiter mode for ComboBoxMode](images/MultiSelect/Delimiter.png)
 
 ### Selection indicator
 
 The combobox enables the user to indicate the selected item from the datasource when selecting multiple items from the dropdown. It can be performed by enabling `EnableSelectionIndicator` property.
 
-N> Selection Indicator support has enhanced only on iOS and Android platform.
-
 {% tabs %}
 {% highlight xaml %}
 
-<combobox:SfComboBox HeightRequest="40" ShowSuggestionsOnFocus="true" IsSelectedItemsVisibleInDropDown="true" IndicatorText="A" IndicatorTextSize="sample.ttf" IndicatorTextColor="Red" EnableSelectionIndicator="true" MultiSelectMode="Token"  x:Name="comboBox" DataSource="{Binding EmployeeCollection}"/>
+<combobox:SfComboBox HeightRequest="40" ShowSuggestionsOnFocus="true" IsSelectedItemsVisibleInDropDown="true" IndicatorText="A" IndicatorFontFamily="sample.ttf" IndicatorTextSize="15" IndicatorTextColor="Red" EnableSelectionIndicator="true" MultiSelectMode="Token"  x:Name="comboBox" DataSource="{Binding EmployeeCollection}"/>
        
 {% endhighlight %}
 
@@ -336,7 +333,8 @@ comboBox.MultiSelectMode=MultiSelectMode.Token;
 comboBox.ShowSuggestionsOnFocus=true;
 comboBox.IsSelectedItemsVisibleInDropDown=true;
 comboBox.IndicatorText= "A";
-comboBox.IndicatorTextSize= "sample.ttf";
+comboBox.IndicatorFontFamily= "sample.ttf";
+comboBox.IndicatorTextSize= "15";
 comboBox.IndicatorTextColor = Color.Red;
 comboBox.EnableSelectionIndicator= true;
 
@@ -347,8 +345,6 @@ comboBox.EnableSelectionIndicator= true;
 ### Item padding
 
 The autocomplete enables the user to provide padding for the items inside dropdown using `ItemPadding` property.
-
-N> `ItemPadding` property is available only on iOS and Android platform.
 
 {% tabs %}
 {% highlight xaml %}

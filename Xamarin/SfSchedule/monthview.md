@@ -983,6 +983,7 @@ private void FormsSchedule_CellTapped(object sender, Syncfusion.SfSchedule.XForm
     // GetType() used to get the type of schedule instance
     var fieldInfo = GetField(SelectionSamplePage.FormsSfSchedule.GetType(), "nativeObject");
     // Gets the value of nativeObject field by using reflection
+    var fieldInfo = GetField(SelectionSamplePage.FormsSfSchedule.GetType(), "nativeObject");
     var nativeSchedule = fieldInfo.GetValue(SelectionSamplePage.FormsSfSchedule);
     var monthViewSettings = new Syncfusion.SfSchedule.iOS.MonthViewSettings();
     // Setting Month cell selection indicator color

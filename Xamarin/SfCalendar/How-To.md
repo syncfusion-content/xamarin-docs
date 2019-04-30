@@ -244,30 +244,34 @@ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
 xmlns:local="clr-namespace:MonthCellCustomization"
 x:Class="MonthCellCustomization.MainPage"
 xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms">
-    <ContentPage.Resources>
-        <ResourceDictionary>
-            <DataTemplate x:Key="Template">
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Image x:Name="image1" HorizontalOptions="Center" Source="stethoscope.png" Grid.Row="0"/>
-                    <Label Text="{Binding Day}" TextColor="Black" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
-                    <Image x:Name="image2" HorizontalOptions="Center" Source="cake.png" Grid.Row="2"/>
-                </Grid>
-                </DataTemplate>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-    <ContentPage.Content>
-        <calendar:SfCalendar x:Name="calendar">
-            <calendar:SfCalendar.MonthViewSettings>
-                <calendar:MonthViewSettings DateSelectionColor="#dddddd" CellTemplate="{StaticResource Template}"/>
-            </calendar:SfCalendar.MonthViewSettings>
-            </calendar:SfCalendar>
-    </ContentPage.Content>
-    </ContentPage>
+<ContentPage.Content>
+        <calendar:SfCalendar x:Name="calendar" ShowLeadingAndTrailingDays="true" BackgroundColor="White">
+            <calendar:SfCalendar.MonthViewSettings>
+                <calendar:MonthViewSettings>
+                    <calendar:MonthViewSettings.CellTemplate>
+                <DataTemplate>
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions> 
+                        <RowDefinition Height="*"/> 
+                        <RowDefinition Height="*"/> 
+                        <RowDefinition Height="*"/>  
+                    </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                     <ColumnDefinition Width="*"/>
+                                     <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                    <Image HorizontalOptions="Center" Source="Weather1.png" Grid.Row="0" Grid.Column="0"/>
+                    <Label Text="{Binding Day}" FontAttributes="Bold" TextColor="Black" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="1" FontSize="10"/>
+                    <Image HorizontalOptions="Center" Grid.Row="2" Source="Weather2.png" Grid.Column="2"/> 
+                </Grid>
+                </DataTemplate>
+                </calendar:MonthViewSettings.CellTemplate>
+                </calendar:MonthViewSettings>
+            </calendar:SfCalendar.MonthViewSettings>
+            </calendar:SfCalendar>
+    </ContentPage.Content>
+    </ContentPage>
 
 {% endhighlight %}
 

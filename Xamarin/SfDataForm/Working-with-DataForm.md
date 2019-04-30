@@ -707,6 +707,7 @@ dataForm.Items = items;
 
 ### Dynamically add custom DataFormItems
 Support has been provided to dynamically add the DataFormItems to collections using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
+
 {% tabs %}
 {% highlight c# %}
 dataForm.Items.Add(new DataFormDropDownItem() { Name = "StateName", Editor = "DropDown", ItemsSource = this.GetItemSource("StateName"), PlaceHolderText = "Select a State" });
@@ -718,6 +719,7 @@ dataForm.Items.Add(new DataFormItem() { Name = "Save", Editor = "Switch" });
 
 ### Dynamically remove Custom DataFormItems 
 Support has been provided to dynamically remove the DataFormItems from collections using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
+
 {% tabs %}
 {% highlight c# %}
 dataForm.Items.RemoveAt(2);
@@ -751,7 +753,8 @@ dataForm.Items[2] = item;
 
 ### Dynamically add Custom GroupItems
 Support has been provided to dynamically add custom group items using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
-{% tabs %}
+{
+% tabs %}
 {% highlight c# %}
 DataFormGroupItem dataFormGroupItem = new DataFormGroupItem();
 dataFormGroupItem.GroupName = "GroupItem";

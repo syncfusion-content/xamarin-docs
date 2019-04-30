@@ -773,4 +773,5 @@ dataForm.Items.Add(dataFormGroupItem);
 {% endhighlight %}
 {% endtabs %}
 
+![Group data form items in Xamarin.Forms DataForm](SfDataForm_images/GroupItems.jpg)
 

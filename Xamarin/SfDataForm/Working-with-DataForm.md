@@ -693,12 +693,12 @@ Support has been provided to generate custom DataFormItems for the defined busin
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
-ObservableCollection<DataFormItemBase> items = new ObservableCollection<DataFormItemBase>(); 
-items.Add(new DataFormItem() { Name = "Name", Editor = "Text" }); 
-items.Add(new DataFormItem() { Name = "Password", Editor = "Password" }); 
-items.Add(new DataFormItem() { Name = "Phone", Editor = "MaskedEditText" }); 
-items.Add(new DataFormItem() { Name = "Address", Editor = "MultilineText" }); 
-items.Add(new DataFormItem() { Name = "BirthTime", Editor = "Time" }); 
+ObservableCollection<DataFormItemBase> items = new ObservableCollection<DataFormItemBase>();
+items.Add(new DataFormTextItem() { Name = "Name", Editor = "Text" });
+items.Add(new DataFormTextItem() { Name = "Password", Editor = "Password" });
+items.Add(new DataFormMaskedEditTextItem() { Name = "Phone", Editor = "MaskedEditText" });
+items.Add(new DataFormTextItem() { Name = "Address", Editor = "MultilineText" });
+items.Add(new DataFormTimeItem() { Name = "BirthTime", Editor = "Time" }); 
 
 dataForm.AutoGenerateItems = false; 
 dataForm.Items = items; 

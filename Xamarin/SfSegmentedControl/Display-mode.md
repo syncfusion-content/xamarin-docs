@@ -19,7 +19,7 @@ Add the following namespace for loading data collection in string.
 
 {% highlight xaml %}
 
-xmlns:segmentCollection="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+xmlns:segmentCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
 
 {% endhighlight %}
 

@@ -752,7 +752,6 @@ dataForm.Items[2] = item;
 {% endhighlight %}
 {% endtabs %}
 
-![Reset data form items in Xamarin.Forms DataForm](SfDataForm_images/ResetCustomItems.gif)
 
 ### Dynamically add Custom Group Items
 Support has been provided to dynamically add custom group items using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".

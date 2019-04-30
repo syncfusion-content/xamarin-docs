@@ -277,6 +277,9 @@ xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.S
 
 {% endtabs %}
 
+![Cell template support in xamarin forms calendar control](images/calendar/xamarin.forms-CellTemplate.jpg)
+
+
 ## How to Perform the Operation while long pressing the dateCell?
 
 [OnDateCellHolding](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnDateCellHolding_EV.html) event returns the long pressed date along with the `SfCalendar` it carries. Using this event user can perform operation while long pressing the date.

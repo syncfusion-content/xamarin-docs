@@ -277,7 +277,7 @@ xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.S
 
 {% endtabs %}
 
-![Cell template support in xamarin forms calendar control](images/calendar/xamarin.forms-CalendarCellTemplate.jpg)
+![Cell template support in xamarin forms calendar control](images/xamarin.forms-CalendarCellTemplate.jpg)
 
 
 ## How to Perform the Operation while long pressing the dateCell?

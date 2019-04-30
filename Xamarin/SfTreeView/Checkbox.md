@@ -19,7 +19,7 @@ SfTreeView supports to check multiple items through binding the [CheckedItems](h
 
 N> Set [ItemTemplateContextType](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplateContextType.html) as `Node` to bind the `TreeViewNode.IsChecked` property to `CheckBox` in `ItemTemplate`. To know more about `ItemTemplateContextType` click [here](https://help.syncfusion.com/xamarin/sftreeview/apperance#bindingcontext-for-itemtemplate). 
 
-N > TreeView process and sets [TreeViewNode.IsChecked]((https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~IsChecked.html)) based on `CheckedItems` only when you are binding `ItemsSource`.
+N> TreeView process and sets [TreeViewNode.IsChecked]((https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~IsChecked.html)) based on `CheckedItems` only when you are binding `ItemsSource`.
 
 {% tabs %}
 {% highlight xaml %}

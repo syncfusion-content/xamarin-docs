@@ -128,7 +128,7 @@ You can use the [`GroupGap`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
 {% endtabs %}  
 
-![](TreeMapLevels_images/FlatLevel.png)
+![FlatLevel](TreeMapLevels_images/FlatLevel.png)
 
 ## Hierarchical Level
 
@@ -203,5 +203,5 @@ Hierarchical level is used to define levels for hierarchical data collection tha
 
 {% endtabs %}  
 
-![](TreeMapLevels_images/HierarchicalLevel.png)
+![HierarchicalLevel](TreeMapLevels_images/HierarchicalLevel.png)
 

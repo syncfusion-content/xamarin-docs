@@ -23,7 +23,7 @@ The `ColorMapping` is categorized into the following three different types:
 
 ### UniColorMapping
 
-You can color all the leaf nodes with the same color by setting vaue to the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.UniColorMapping~Color.html) property of [`UniColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.UniColorMapping.html).
+You can color all the leaf nodes with the same color by setting value to the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.UniColorMapping~Color.html) property of [`UniColorMapping`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.UniColorMapping.html).
 
 {% tabs %}  
 
@@ -86,11 +86,11 @@ You can color all the leaf nodes with the same color by setting vaue to the [`Co
 
 {% endtabs %}  
 
-![](TreeMapLevels_images/Unicolor.png)
+![UniColorMapping](TreeMapLevels_images/Unicolor.png)
 
 ### RangeColorMapping
 
-You can group the leaf nodes based on the range of color values of data. You can set a unique color for every range. To achieve this, specify the [`To`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~To.html) and [`From`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~From.html) values as range bound, and specify the `Color` value to fill the leaf nodes of particular range using the `RangeColorMapping` property of TreeMap. You must specify value to ColorValuePath since the ranges `From` and `To` depend on the underbound value of [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~ColorValuePath.html).
+You can group the leaf nodes based on the range of color values of data. You can set a unique color for every range. To achieve this, specify the [`To`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~To.html) and [`From`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.Range~From.html) values as range bound, and specify the `Color` value to fill the leaf nodes of particular range using the `RangeColorMapping` property of TreeMap. You must specify value to ColorValuePath since the ranges `From` and `To` depend on the under bound value of [`ColorValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~ColorValuePath.html).
 
 {% tabs %}  
 
@@ -202,7 +202,7 @@ You can group the leaf nodes based on the range of color values of data. You can
 
 {% endtabs %}  
 
-![](TreeMapLevels_images/RangeColor.png)
+![RangeColorMapping](TreeMapLevels_images/RangeColor.png)
 
 ### DesaturationColorMapping
 
@@ -285,17 +285,17 @@ PopulationViewModel viewModel = new PopulationViewModel();
 
 {% endtabs %}  
 
-![](TreeMapLevels_images/Desaturation.png)
+![DesaturationColorMapping](TreeMapLevels_images/Desaturation.png)
 
 ## Tooltip
 
 You can enable the tooltip support for TreeMap by setting the [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~ShowTooltip.html) property to true. By default, it takes the property of bound object that is referenced in [`GroupPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TreeMapFlatLevel~GroupPath.html) and displays its content when the corresponding node is tapped.
 
-![](TreeMapLevels_images/Tooltip.png)
+![Tooltip](TreeMapLevels_images/Tooltip.png)
 
 ### Tooltip customization
 
-You can customize the tooltip to show more deatils by specifying [`TooltipTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TooltipSetting~TooltipTemplate.html) to tooltip.
+You can customize the tooltip to show more details by specifying [`TooltipTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.TooltipSetting~TooltipTemplate.html) to tooltip.
 
 {% tabs %}  
 
@@ -485,7 +485,7 @@ PopulationViewModel viewModel = new PopulationViewModel();
 
 {% endtabs %}  
 
-![](TreeMapLevels_images/TooltipTemplate.png)
+![TooltipTemplate](TreeMapLevels_images/TooltipTemplate.png)
 
 ## Selection
 
@@ -627,7 +627,7 @@ The TreeMap control provides template support to tree map items using the [`Item
             <DataTemplate>
                 <Grid BackgroundColor ="#D73028" >
                     <Image  HorizontalOptions= "Center" VerticalOptions= "Center" HeightRequest= "50" 
-                            WidthRequest= "50" Source="{Binding Data.GameImgSource}" />
+                            WidthRequest= "50" Source="{Binding Data.GameImageSource}" />
                     <Label Margin="5,5,0,0"  FontSize="12" Text= "{Binding Data.GameName}" 
                            TextColor = "White" HeightRequest="50" WidthRequest="100" HorizontalOptions= "Start" 
                            VerticalOptions= "Start"/>
@@ -641,11 +641,11 @@ The TreeMap control provides template support to tree map items using the [`Item
 
 {% highlight C# %} 
 
- public class OlymicMedalsViewModel
+ public class OlympicMedalsViewModel
     {
         public ObservableCollection<OlympicMedals> OlympicMedalsDetails { get; set; }
 
-        public OlymicMedalsViewModel()
+        public OlympicMedalsViewModel()
         {
             this.OlympicMedalsDetails = new ObservableCollection<OlympicMedals>();
             this.OlympicMedalsDetails.Add(new OlympicMedals { Country = "US", GameName = "Swimming", GoldMedals = 16, SilverMedals = 9, BronzeMedals = 6, TotalMedals = 31, ImageName = "Swimming.png" });
@@ -667,21 +667,21 @@ The TreeMap control provides template support to tree map items using the [`Item
         public double SilverMedals { get; set; }
         public double BronzeMedals { get; set; }
         public double TotalMedals { get; set; }
-        public ImageSource GameImgSource { get; set; }
-        private string imagename;
+        public ImageSource GameImageSource { get; set; }
+        private string imageName;
         public string ImageName
         {
-            get { return imagename; }
+            get { return imageName; }
             set
             {
-                imagename = value;
+                imageName = value;
                 if (Device.RuntimePlatform == Device.UWP)
                 {
-                    GameImgSource = ImageSource.FromResource("TreeMap." + imagename, typeof(OlympicMedals).GetTypeInfo().Assembly);
+                    GameImageSource = ImageSource.FromResource("TreeMap." + imageName, typeof(OlympicMedals).GetTypeInfo().Assembly);
                 }
                 else
                 {
-                    GameImgSource = ImageSource.FromResource("TreeMap." + imagename);
+                    GameImageSource = ImageSource.FromResource("TreeMap." + imageName);
                 }
             }
         }
@@ -691,4 +691,4 @@ The TreeMap control provides template support to tree map items using the [`Item
 
 {% endtabs %}  
 
-![](TreeMapLevels_images/ItemTemplate.png)
+![ItemTemplate](TreeMapLevels_images/ItemTemplate.png)

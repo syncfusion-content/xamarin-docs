@@ -11,7 +11,7 @@ documentation: ug
 
 The TreeMap control for Xamarin.Forms provides a simple yet effective way to visualize flat or hierarchical data as clustered rectangles with a specific weighted attribute determining the size of the rectangle.
 
-![](Getting-Started_images/GettingStartedOutput.png)
+![GettingStartedOutput](Getting-Started_images/GettingStartedOutput.png)
 
 ## Key features
 

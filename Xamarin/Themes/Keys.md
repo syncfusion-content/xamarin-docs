@@ -7057,6 +7057,19 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+
+     <tr>
+    <td>
+            SfSunburstChartBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of sunburst background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
     
     <tr>
     <td>
@@ -7182,6 +7195,58 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+
+     <tr>
+    <td>
+            SfSparklineAreaBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of area sparkline background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfLineSparklineBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of line sparkline background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfColumnSparklineBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of column sparkline background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfWinLossSparklineBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of win loss sparkline background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
     
     <tr>
     <td>
@@ -7333,6 +7398,19 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+
+     <tr>
+    <td>
+            SfMapsBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of maps background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
     
     <tr>
     <td>
@@ -7539,19 +7617,6 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfTreemapLabelColor     
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of label in treemap.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
             SfTreemapLeafItemBorderColor      
             <br/>
             <br/>
@@ -7562,6 +7627,45 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+
+     <tr>
+    <td>
+            SfTreemapTooltipBackgroundColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip background in treemap.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfTreemapTooltipStrokeColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip stroke in treemap.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfTreemapTooltipTextColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip text in treemap.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
 
 </table>
 

@@ -248,7 +248,7 @@ You can display the watermark in the editor by defining the display attribute or
 
 ### Using attribute
 
-You can show the watermark in the editor by setting the [Prompt](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute.prompt.aspx) in display attribute.
+You can show the watermark in the editor by setting the [Prompt](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~Prompt.html) in display attribute.
 
 {% tabs %}
 {% highlight c# %}

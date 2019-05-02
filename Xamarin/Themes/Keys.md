@@ -5736,6 +5736,30 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+	  <tr>
+    <td>
+          SfPickerBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfPicker.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	  <tr>
+    <td>
+          SfPickerBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the SfPicker.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 
 </table>
 
@@ -6031,6 +6055,33 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+
+	  <tr>
+    <td>
+           SfRangeSliderBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of SfRangeSlider.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	  <tr>
+    <td>
+           SfRangeSliderTickColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color for ticks in SfRangeSlider.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
      <tr>
     <td>
            SfRangeSliderLabelColor
@@ -6075,18 +6126,6 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Color of tooltip's text in SfRangeSlider.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-     <tr>
-    <td>
-           SfRangeSliderToolTipBorderColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of tooltip's border in SfRangeSlider.
             <br/>
             <br/>
         </td>
@@ -6198,17 +6237,29 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            SfRatingTooltipBorderColor
+            SfRatingUnratedFillColor
             <br/>
             <br/>
         </td>
         <td>
-            Border color of the tooltip in SfRating.
+            Fill color for unrated items in SfRating.
             <br/>
             <br/>
         </td>
     </tr>
 
+	  <tr>
+        <td>
+            SfRatingUnratedStrokeColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Stroke color for unrated items in SfRating.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfRotator
@@ -6279,7 +6330,31 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
+    <tr>
+        <td>
+            SfRotatorUnselectedDotColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of Unselected dots in SfRotator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	    <tr>
+        <td>
+            SfRotatorDotsBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+        <td>
+            Color of dots border in SfRotator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfSegmentedControl

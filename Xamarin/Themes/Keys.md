@@ -5736,6 +5736,30 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+	  <tr>
+    <td>
+          SfPickerBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfPicker.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	  <tr>
+    <td>
+          SfPickerBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the SfPicker.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 
 </table>
 
@@ -6031,6 +6055,33 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+
+	  <tr>
+    <td>
+           SfRangeSliderBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of SfRangeSlider.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	  <tr>
+    <td>
+           SfRangeSliderTickColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color for ticks in SfRangeSlider.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
      <tr>
     <td>
            SfRangeSliderLabelColor
@@ -6075,18 +6126,6 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Color of tooltip's text in SfRangeSlider.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-     <tr>
-    <td>
-           SfRangeSliderToolTipBorderColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of tooltip's border in SfRangeSlider.
             <br/>
             <br/>
         </td>
@@ -6198,17 +6237,29 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            SfRatingTooltipBorderColor
+            SfRatingUnratedFillColor
             <br/>
             <br/>
         </td>
         <td>
-            Border color of the tooltip in SfRating.
+            Fill color for unrated items in SfRating.
             <br/>
             <br/>
         </td>
     </tr>
 
+	  <tr>
+        <td>
+            SfRatingUnratedStrokeColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Stroke color for unrated items in SfRating.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfRotator
@@ -6279,7 +6330,31 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
+    <tr>
+        <td>
+            SfRotatorUnselectedDotColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of Unselected dots in SfRotator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	    <tr>
+        <td>
+            SfRotatorDotsBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+        <td>
+            Color of dots border in SfRotator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfSegmentedControl
@@ -6982,6 +7057,19 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+
+     <tr>
+    <td>
+            SfSunburstChartBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of sunburst background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
     
     <tr>
     <td>
@@ -7107,6 +7195,58 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+
+     <tr>
+    <td>
+            SfSparklineAreaBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of area sparkline background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfLineSparklineBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of line sparkline background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfColumnSparklineBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of column sparkline background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfWinLossSparklineBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of win loss sparkline background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
     
     <tr>
     <td>
@@ -7258,6 +7398,19 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+
+     <tr>
+    <td>
+            SfMapsBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of maps background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
     
     <tr>
     <td>
@@ -7464,19 +7617,6 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfTreemapLabelColor     
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of label in treemap.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
             SfTreemapLeafItemBorderColor      
             <br/>
             <br/>
@@ -7487,6 +7627,45 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+
+     <tr>
+    <td>
+            SfTreemapTooltipBackgroundColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip background in treemap.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfTreemapTooltipStrokeColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip stroke in treemap.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfTreemapTooltipTextColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip text in treemap.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
 
 </table>
 

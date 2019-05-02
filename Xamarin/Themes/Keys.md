@@ -7167,7 +7167,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of winloss sparkline background.
+            Color of win loss sparkline background.
             <br/>
             <br/>
         </td>
@@ -7560,7 +7560,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of tooltip background in treemap.Fgant
+            Color of tooltip background in treemap.
             <br/>
             <br/>
         </td>

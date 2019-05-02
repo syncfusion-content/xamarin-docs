@@ -9,7 +9,7 @@ documentation: UG
 
 # Data Annotations
 
-The data form supports the following attributes:
+The data form supports the following attribute, and these attributes can be accessible using `Syncfusion.SfDataForm.XForms`.
 
 ## Display attribute
 

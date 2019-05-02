@@ -753,8 +753,7 @@ dataForm.Items[2] = item;
 
 ### Dynamically add Custom GroupItems
 Support has been provided to dynamically add custom group items using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of "SfDataForm".
-{
-% tabs %}
+{% tabs %}
 {% highlight c# %}
 DataFormGroupItem dataFormGroupItem = new DataFormGroupItem();
 dataFormGroupItem.GroupName = "GroupItem";

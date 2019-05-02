@@ -105,7 +105,7 @@ public class EmployeeInfo : INotifyDataErrorInfo, INotifyPropertyChanged
 
 You can validate the data using data annotation attributes.
 
-The numeric type like Int, Double, Decimal properties can be validated using the [Range](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.rangeattribute.aspx) attribute.
+The numeric type like Int, Double, Decimal properties can be validated using the [Range](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.RangeAttribute.html) attribute.
 
 {% tabs %}
 {% highlight c# %}
@@ -123,7 +123,7 @@ public int EmployeeID
 {% endhighlight %}
 {% endtabs %}
 
-The String type property can be validated using [Required](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.requiredattribute.aspx) and [StringLength](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute.aspx) attributes.
+The String type property can be validated using [Required](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.RequiredAttribute.html) and [StringLength](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.stringlengthattribute.aspx) attributes.
 
 {% tabs %}
 {% highlight c# %}

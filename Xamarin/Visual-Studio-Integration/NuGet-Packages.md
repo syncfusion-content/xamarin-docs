@@ -9,12 +9,13 @@ documentation: ug
 
 # NuGet Packages
 
-NuGet is a package manager for the .NET framework. The NuGet client tools simplify the process of installing and upgrading packages. This can be used to automatically add files and references to your Visual Studio projects.
+[NuGet](https://www.nuget.org/) can be used to automatically add files and references to your Visual Studio projects. You can use the Syncfusion Xamarin.Forms NuGet packages without installing the Essential Studio or Xamarin platform installation to development with the Syncfusion Xamarin. Forms controls. 
 
-The Syncfusion Xamarin.Forms components NuGet packages are available in both [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc) and [Syncfusion private NuGet site](http://nuget.syncfusion.com/package/xamarin).
+From v15.4.0.17 onwards, the Syncfusion Xamarin.Forms NuGet packages are published in [nuget.org](https://www.nuget.org/profiles/SyncfusionInc). 
 
-N> From version 15.4.0.17 or later, the Syncfusion Xamarin.Forms NuGet packages are published in [NuGet gallery site](https://www.nuget.org/profiles/SyncfusionInc).You can use the Syncfusion Xamarin.Forms NuGet packages without installing the Essential Studio or Xamarin platform installation to implement the Syncfusion Xamarin.Forms controls.
+Starting with v16.2.0.x, if you reference Syncfusion assemblies from trial setup or from the NuGet package, you must include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to learn about registering Syncfusion license key in your Xamarin.Forms application to use Syncfusion controls.
 
+N> Starting from v17.1.0.32 (2018 Volume 1), Syncfusion will no longer publish NuGet packages at [nuget.syncfusion.com](https://nuget.syncfusion.com/).
 
 ## Installing NuGet Packages
 
@@ -28,17 +29,17 @@ The NuGet Package Manager can be used to search and install NuGet packages in th
 
     Alternatively, click **Tools** menu, `NuGet Package Manager | Manage NuGet Packages for Solution...`
 
-2.	By default, the NuGet.org package is selected in the **Package source** drop-down. If NuGet.org is not configured in your Visual Studio, refer to the [Microsoft docs](https://docs.microsoft.com/en-us/nuget/tools/package-manager-ui#package-sources) to configure NuGet.org feed URL in your Visual Studio. 
+2.	Select the NuGet.org from the **Package Source** drop-down. 
 
      ![NuGet package manager dialog window](NuGet_Packages_Images/img7.png)             
 
-3.	The Syncfusion Xamarin.Forms NuGet Packages are listed and available in the package source feed URL. Search and install the required packages in your application, by clicking **Install** button.
+3.	All the Syncfusion NuGet Packages are listed and available. Search and install the required packages in your application, by clicking the **Install** button.
 
-N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. So, If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> The Syncfusion NuGet packages are published in public [NuGet.org](https://www.nuget.org/) from v16.2.0.46. To Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ### Using Package Manager Console
 
-To reference the Syncfusion Xamarin.Forms component using the Package Manager Console as NuGet packages, follow the below steps.  
+To reference the Syncfusion Xamarin.Forms component using the Package Manager Console as NuGet packages, follow the below steps:  
 
 1.	On the **Tools** menu, select **NuGet Package Manager** and then **Package Manager Console**. 
 
@@ -64,7 +65,7 @@ To reference the Syncfusion Xamarin.Forms component using the Package Manager Co
 
 ### Using Visual Studio for macOS
 
-Add packages can be used to search and install NuGet packages to the Visual Studio project in macOS.
+Add packages can be used to search and install NuGet packages to the Visual Studio project in macOS:
 
 1.	Right-click the folder in the project, and then select **Add Packages…** 
 
@@ -80,7 +81,7 @@ Add packages can be used to search and install NuGet packages to the Visual Stud
 
 The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of NuGet functionality to install, create, publish, and manage packages without making any change to the project files.
 
-1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
+1.	Download the latest NuGet CLI [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 
     N> To update the existing nuget.exe to latest version use the following command:
 
@@ -116,7 +117,7 @@ The NuGet Command Line Interface (CLI), nuget.exe, provides the full extent of N
     mono nuget.exe install “C:\Users\SyncfusionApplication\package.config”
     ~~~
 
-N> If you need to Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/extension/syncfusion-nuget-packages/nuget-packages#syncfusion-nuget-feed-url-configuration).
+N> To Install earlier version of 16.2.0.46 Syncfusion NuGet packages, [configure Syncfusion private feed URL](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages#syncfusion-nuget-feed-url-configuration).
 
 ## Upgrading NuGet packages
 
@@ -133,7 +134,7 @@ NuGet packages can be updated to their specific version or latest version availa
 
 Using **Update** context menu from Visual Studio for Mac application, NuGet packages can be updated.
 
-1.	Right-click on the Packages folder in the project, and select **Update**. 
+1.	Right-click the Packages folder in the project, and select **Update**. 
 
     ![NuGet package manager add-in for macOS](NuGet_Packages_Images/img10.png) 
 
@@ -174,7 +175,7 @@ To update the installed Syncfusion Xamarin.Forms NuGet packages using the Packag
 
 Using the NuGet CLI, all the NuGet packages in the project can be updated to the available latest version. 
 
-1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
+1.	Download the latest NuGet CLI [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 
     N> To update the existing nuget.exe to latest version use the following command. 
 
@@ -265,7 +266,7 @@ You should get the private Syncfusion Xamarin NuGet feed URL to install or upgra
 
 #### NuGet CLI 
 
-1.	Download the latest NuGet CLI from [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
+1.	Download the latest NuGet CLI [here](https://dist.nuget.org/win-x86-commandline/latest/nuget.exe).
 
     N> To update the existing nuget.exe to latest version use the following command.
 
@@ -273,7 +274,7 @@ You should get the private Syncfusion Xamarin NuGet feed URL to install or upgra
     nuget update -self
     ~~~
 
-2.	Open the downloaded executable location in the command window, and run the following commands to configure the Syncfusion Xamarin.Forms NuGet packages.
+2.	Open the downloaded executable location in the command window, and run the following commands to configure the Syncfusion Xamarin.Forms NuGet packages:
 
     ~~~
     #Add specified package source in NuGet.config file for Windows platform

@@ -234,7 +234,7 @@ void Handle_OnMonthCellLoaded(object sender, Syncfusion.SfCalendar.XForms.MonthC
 
 You can customize the month cell of the `SfCalendar` using [CellTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellTemplate.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
 
-% tabs %}
+{% tabs %}
 
 {% highlight xaml %}
 

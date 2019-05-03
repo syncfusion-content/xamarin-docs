@@ -762,8 +762,8 @@ dataFormGroupItem.GetType().GetProperty("IsGroup").SetValue(dataFormGroupItem, t
 dataFormGroupItem.DataFormItems = new DataFormItems();
 
 dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "First Name", Editor = "Text", GroupName = "GroupItem" });
-dataFormGroupItem.DataFormItems.Add(new DataFormNumericItem() { Name = "Middle Name", Editor = "Numeric", GroupName = "GroupItem" });
-dataFormGroupItem.DataFormItems.Add(new DataFormCheckBoxItem() { Name = "Last Name", Editor = "Bool", GroupName = "GroupItem" });
+dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "Middle Name", Editor = "Text", GroupName = "GroupItem" });
+dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "Last Name", Editor = "Text", GroupName = "GroupItem" });
 
 dataForm.Items.Add(dataFormGroupItem);
 {% endhighlight %}

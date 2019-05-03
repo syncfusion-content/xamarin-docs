@@ -5232,7 +5232,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
     <tr>
         <td>
-            SfChipBackgroundColor.
+            SfChipBackgroundColor
             <br/>
             <br/>
         </td>
@@ -5244,7 +5244,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 	<tr>
         <td>
-            SfChipBorderColor.
+            SfChipBorderColor
             <br/>
             <br/>
         </td>
@@ -5352,7 +5352,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
     <tr>
         <td>
-            SfChipGroupBackgroundColor.
+            SfChipGroupBackgroundColor
             <br/>
             <br/>
         </td>
@@ -5364,7 +5364,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 	    <tr>
         <td>
-            SfChipGroupBorderColor.
+            SfChipGroupBorderColor
             <br/>
             <br/>
         </td>
@@ -5376,7 +5376,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 	<tr>
         <td>
-            SyncPrimaryColor.
+            SyncPrimaryColor
             <br/>
             <br/>
         </td>
@@ -5388,7 +5388,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 	<tr>
         <td>
-            SyncPrimaryForegroundColor.
+            SyncPrimaryForegroundColor
             <br/>
             <br/>
         </td>
@@ -6551,7 +6551,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 	<tr>
         <td>
-            SfSegmentColor.
+            SfSegmentColor
             <br/>
             <br/>
         </td>
@@ -6563,7 +6563,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 	<tr>
         <td>
-            SyncPrimaryColor.
+            SyncPrimaryColor
             <br/>
             <br/>
         </td>

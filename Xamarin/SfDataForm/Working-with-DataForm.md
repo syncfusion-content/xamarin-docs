@@ -710,8 +710,17 @@ Support has been provided to dynamically add the dataform items to collections u
 
 {% tabs %}
 {% highlight c# %}
-dataForm.Items.Add(new DataFormDropDownItem() { Name = "StateName", Editor = "DropDown", ItemsSource = this.GetItemSource("StateName"), PlaceHolderText = "Select a State" });
-dataForm.Items.Add(new DataFormItem() { Name = "Save", Editor = "Switch" });
+dataForm.Items.Add(new DataFormDropDownItem() 
+				  { Name = "StateName", 
+					Editor = "DropDown", 
+					ItemsSource = this.GetItemSource("StateName"), 
+					PlaceHolderText = "Select a State" 
+				  });
+				
+dataForm.Items.Add(new DataFormItem() 
+				  { Name = "Save", 
+				    Editor = "Switch" 
+				  });
 {% endhighlight %}
 {% endtabs %}
 
@@ -761,9 +770,9 @@ dataFormGroupItem.IsExpanded = true;
 dataFormGroupItem.GetType().GetProperty("IsGroup").SetValue(dataFormGroupItem, true);
 dataFormGroupItem.DataFormItems = new DataFormItems();
 
-dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "Email", Editor = "Text", GroupName = "GroupItem" });
-dataFormGroupItem.DataFormItems.Add(new DataFormNumericItem() { Name = "Age", Editor = "Numeric", GroupName = "GroupItem" });
-dataFormGroupItem.DataFormItems.Add(new DataFormCheckBoxItem() { Name = "Location", Editor = "Bool", GroupName = "GroupItem" });
+dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "First Name", Editor = "Text", GroupName = "GroupItem" });
+dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "Middle Name", Editor = "Text", GroupName = "GroupItem" });
+dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "Last Name", Editor = "Text", GroupName = "GroupItem" });
 
 dataForm.Items.Add(dataFormGroupItem);
 {% endhighlight %}

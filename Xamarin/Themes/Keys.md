@@ -70,7 +70,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
 	</tr>
     	<tr>
-        <td rowspan="2">
+        <td rowspan="4">
             SyncPrimaryColor  
             <br/>
             <br/>
@@ -88,20 +88,21 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
-            <tr>
-    <td>
-            SyncPrimaryLightForegroundColor
-            <br/>
-            <br/>
-        </td>
+	<tr>
         <td>
-            Text color of trackball label.
+            Background color of the axis label of VerticalLine and HorizontalLine annotations.
             <br/>
             <br/>
         </td>
     </tr>
-
+	<tr>
+        <td>
+            Border color of the axis label of VerticalLine and HorizontalLine annotations.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
         <tr>
     <td>
             SfChartTitleTextColor
@@ -195,32 +196,6 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfChartAnnotationStrokeColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Stroke color of the annotation.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfChartAnnotationTextColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Text color of the annotation label.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
             SfChartAnnotationLabelBorderColor
             <br/>
             <br/>
@@ -247,38 +222,12 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfChartAnnotationAxisLabelBackgroundColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Background color of the axis label of VerticalLine and HorizontalLine annotations.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
             SfChartAnnotationAxisLabelTextColor
             <br/>
             <br/>
         </td>
         <td>
             Text color of axis label of VerticalLine and HorizontalLine annotations.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfChartAnnotationAxisLabelBorderColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Border color of the axis label of VerticalLine and HorizontalLine annotations.
             <br/>
             <br/>
         </td>
@@ -4915,26 +4864,45 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
 	</tr>
     <tr>
-    <td>
+    <td rowspan="2">
             SyncPrimaryColor 
             <br/>
             <br/>
         </td>
         <td>
-            Color of border when text input layout is focused.
+            Background color of the SfButton.
             <br/>
             <br/>
         </td>
     </tr>
-    
+	<tr>
+	    <td>
+		    Border color of the SfButton.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+
     <tr> 
-    <td>
+        <td>
             SyncPrimaryDarkColor  
             <br/>
             <br/>
         </td>
         <td>
             Color of the button when it is in the pressed state.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	<tr> 
+        <td>
+            SyncPrimaryForegroundColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the SfButton.
             <br/>
             <br/>
         </td>
@@ -5142,6 +5110,30 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+	<tr>
+        <td>
+            SfCheckBoxBackgroundColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfCheckBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SfCheckBoxTextColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the SfCheckBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 
 </table>
 
@@ -5238,7 +5230,31 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
+    <tr>
+        <td>
+            SfChipBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfChip.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SfChipBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the SfChip.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
 </table>
 
 ## SfChipGroup
@@ -5334,7 +5350,55 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
+    <tr>
+        <td>
+            SfChipGroupBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of SfChipGroup.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	    <tr>
+        <td>
+            SfChipGroupBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of SfChipGroup.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the selected chip in SfChipGroup.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SyncPrimaryForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the selected chip in SfChipGroup.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
 </table>
 
 ## SfComboBox
@@ -5840,6 +5904,30 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Color of unchecked item.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SfRadioButtonBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfRadioButton.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SfRadioButtonTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the SfRadioButton.
             <br/>
             <br/>
         </td>
@@ -6451,12 +6539,36 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
      <tr>
         <td>
-            SfSegmentBorderColor
+            SfSegmentedControlBorderColor
             <br/>
             <br/>
         </td>
         <td>
             Color of segment's border in the SfSegmentedControl.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SfSegmentColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of segment in the SfSegmentedControl.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the selected item in the SfSegmentedControl.
             <br/>
             <br/>
         </td>

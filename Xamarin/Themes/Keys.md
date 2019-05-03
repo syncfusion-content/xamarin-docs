@@ -2862,7 +2862,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="24">
+        <td rowspan="25">
             SfDataGridStyles  
             <br/>
             <br/>
@@ -2900,6 +2900,20 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+
+     <tr>
+        <td>
+            SfDataGridBackgroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the grid cells in the SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+
 	<tr>
         <td>
             SfDataGridHeaderBackgroundColor  

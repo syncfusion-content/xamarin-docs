@@ -761,9 +761,9 @@ dataFormGroupItem.IsExpanded = true;
 dataFormGroupItem.GetType().GetProperty("IsGroup").SetValue(dataFormGroupItem, true);
 dataFormGroupItem.DataFormItems = new DataFormItems();
 
-dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "Email", Editor = "Text", GroupName = "GroupItem" });
-dataFormGroupItem.DataFormItems.Add(new DataFormNumericItem() { Name = "Age", Editor = "Numeric", GroupName = "GroupItem" });
-dataFormGroupItem.DataFormItems.Add(new DataFormCheckBoxItem() { Name = "Location", Editor = "Bool", GroupName = "GroupItem" });
+dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "First Name", Editor = "Text", GroupName = "GroupItem" });
+dataFormGroupItem.DataFormItems.Add(new DataFormNumericItem() { Name = "Middle Name", Editor = "Numeric", GroupName = "GroupItem" });
+dataFormGroupItem.DataFormItems.Add(new DataFormCheckBoxItem() { Name = "Last Name", Editor = "Bool", GroupName = "GroupItem" });
 
 dataForm.Items.Add(dataFormGroupItem);
 {% endhighlight %}

@@ -2908,7 +2908,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the grid cells in the SfDataGrid.
+            Background color of the remaining area other than rows/columns is rendered in DataGrid.
             <br/>
             <br/>
         </td>

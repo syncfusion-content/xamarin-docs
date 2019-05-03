@@ -5915,7 +5915,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the radio button.
+            Background color of the SfRadioButton.
             <br/>
             <br/>
         </td>
@@ -5927,7 +5927,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the radio button.
+            Text color of the SfRadioButton.
             <br/>
             <br/>
         </td>

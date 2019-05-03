@@ -70,7 +70,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
 	</tr>
     	<tr>
-        <td rowspan="2">
+        <td rowspan="4">
             SyncPrimaryColor  
             <br/>
             <br/>
@@ -88,20 +88,21 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
-            <tr>
-    <td>
-            SyncPrimaryLightForegroundColor
-            <br/>
-            <br/>
-        </td>
+	<tr>
         <td>
-            Text color of trackball label.
+            Background color of the axis label of VerticalLine and HorizontalLine annotations.
             <br/>
             <br/>
         </td>
     </tr>
-
+	<tr>
+        <td>
+            Border color of the axis label of VerticalLine and HorizontalLine annotations.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
         <tr>
     <td>
             SfChartTitleTextColor
@@ -195,32 +196,6 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfChartAnnotationStrokeColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Stroke color of the annotation.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfChartAnnotationTextColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Text color of the annotation label.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
             SfChartAnnotationLabelBorderColor
             <br/>
             <br/>
@@ -247,38 +222,12 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfChartAnnotationAxisLabelBackgroundColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Background color of the axis label of VerticalLine and HorizontalLine annotations.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
             SfChartAnnotationAxisLabelTextColor
             <br/>
             <br/>
         </td>
         <td>
             Text color of axis label of VerticalLine and HorizontalLine annotations.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfChartAnnotationAxisLabelBorderColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Border color of the axis label of VerticalLine and HorizontalLine annotations.
             <br/>
             <br/>
         </td>

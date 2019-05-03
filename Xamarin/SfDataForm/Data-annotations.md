@@ -20,7 +20,7 @@ The data form supports the following attribute, and these attributes can be acce
 </tr>
 <tr>
 <td>
-[Name](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~Name.html)
+{{'[Name](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~Name.html)'| markdownify }}
 </td>
 <td>
 Specifies the label text.
@@ -28,7 +28,7 @@ Specifies the label text.
 </tr>
 <tr>
 <td>
-[GroupName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~GroupName.html)
+{{'[GroupName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~GroupName.html)'| markdownify }}
 </td>
 <td>
 Specifies the group name which groups the fields in the data form. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#grouping-data-fields)'| markdownify }} for more details.
@@ -36,7 +36,7 @@ Specifies the group name which groups the fields in the data form. Refer to {{'[
 </tr>
 <tr>
 <td>
-[ShortName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~ShortName.html)
+{{'[ShortName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~ShortName.html)'| markdownify }}
 </td>
 <td>
 Specifies the label text. It takes higher priority than Name.
@@ -44,7 +44,7 @@ Specifies the label text. It takes higher priority than Name.
 </tr>
 <tr>
 <td>
-[AutoGenerateField](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~AutoGenerateField.html)
+{{'[AutoGenerateField](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~AutoGenerateField.html)'| markdownify }}
 </td>
 <td>
 Specifies whether the field should be auto generated or not. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#cancel-dataformitem-generation-of-data-field)'| markdownify }} for more details.
@@ -52,7 +52,7 @@ Specifies whether the field should be auto generated or not. Refer to {{'[here](
 </tr>
 <tr>
 <td>
-[Prompt](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~Prompt.html)
+{{'[Prompt](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~Prompt.html)'| markdownify }}
 </td>
 <td>
 Specifies watermark text for the editor. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#setting-watermark)'| markdownify }} for more details.
@@ -60,7 +60,7 @@ Specifies watermark text for the editor. Refer to {{'[here](https://help.syncfus
 </tr>
 <tr>
 <td>
-[Order](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~Order.html)
+{{'[Order](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~Order.html)'| markdownify }}
 </td>
 <td>
 Specifies the order of field in the data form. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#changing-order-of-the-dataformitem	)'| markdownify }} for more details.
@@ -157,7 +157,7 @@ Details
 </tr>
 <tr>
 <td>
-[RowSpan](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute~RowSpan.html)
+{{'[RowSpan](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute~RowSpan.html)'| markdownify }}
 </td>
 <td>
 Specifies the row span for the data form item. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#row-span)'| markdownify }} for more details.
@@ -165,7 +165,7 @@ Specifies the row span for the data form item. Refer to {{'[here](https://help.s
 </tr>
 <tr>
 <td>
-[ColumnSpan](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute~ColumnSpan.html)
+{{'[ColumnSpan](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute~ColumnSpan.html)'| markdownify }}
 </td>
 <td>
 Specifies the column span for the data form item. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#column-span)'| markdownify }} for more details.
@@ -173,7 +173,7 @@ Specifies the column span for the data form item. Refer to {{'[here](https://hel
 </tr>
 <tr>
 <td>
-[ValidMessage](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute~ValidMessage.html)
+{{'[ValidMessage](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute~ValidMessage.html)'| markdownify }}
 </td>
 <td>
 Specifies positive message to be shown when validation is passed. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/validation#valid-or-positive-message)'| markdownify }} for more details.
@@ -181,7 +181,7 @@ Specifies positive message to be shown when validation is passed. Refer to {{'[h
 </tr>
 <tr>
 <td>
-[ImageSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~ImageSource.html)
+{{'[ImageSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~ImageSource.html)'| markdownify }}
 </td>
 <td>
 Specifies the image source for loading image instead of label. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#loading-images-for-label)'| markdownify }} for more details.
@@ -189,7 +189,7 @@ Specifies the image source for loading image instead of label. Refer to {{'[here
 </tr>
 <tr>
 <td>
-[ShowLabel](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute~ShowLabel.html)
+{{'[ShowLabel](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute~ShowLabel.html)'| markdownify }}
 </td>
 <td>
 Specifies whether the label should be visible or not. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#label-visibility)'| markdownify }} for more details.
@@ -210,7 +210,7 @@ Details
 </tr>
 <tr>
 <td>
-[ConverterType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.ConverterAttribute~ConverterType.html)
+{{'[ConverterType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.ConverterAttribute~ConverterType.html)'| markdownify }}
 </td>
 <td>
 Specifies the Converter type which converts the original value in different format or as different value. Refer to here for more details.
@@ -231,7 +231,7 @@ Details
 </tr>
 <tr>
 <td>
-[MinYear](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DateRangeAttribute~MinYear.html)
+{{'[MinYear](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DateRangeAttribute~MinYear.html)'| markdownify }}
 </td>
 <td>
 Specifies the required minimum year.
@@ -239,7 +239,7 @@ Specifies the required minimum year.
 </tr>
 <tr>
 <td>
-[MinMonth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DateRangeAttribute~MinMonth.html)
+{{'[MinMonth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DateRangeAttribute~MinMonth.html)'| markdownify }}
 </td>
 <td>
 Specifies the required minimum month.
@@ -247,7 +247,7 @@ Specifies the required minimum month.
 </tr>
 <tr>
 <td>
-[MinDay](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DateRangeAttribute~MinDay.html)
+{{'[MinDay](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DateRangeAttribute~MinDay.html)'| markdownify }}
 </td>
 <td>
 Specifies the required minimum day.
@@ -255,7 +255,7 @@ Specifies the required minimum day.
 </tr>
 <tr>
 <td>
-[MaxYear](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DateRangeAttribute~MaxYear.html)
+{{'[MaxYear](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DateRangeAttribute~MaxYear.html)'| markdownify }}
 </td>
 <td>
 Specifies the required maximum year.
@@ -263,7 +263,7 @@ Specifies the required maximum year.
 </tr>
 <tr>
 <td>
-[MaxMonth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DateRangeAttribute~MaxMonth.html)
+{{'[MaxMonth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DateRangeAttribute~MaxMonth.html)'| markdownify }}
 </td>
 <td>
 Specifies the required maximum month.
@@ -271,7 +271,7 @@ Specifies the required maximum month.
 </tr>
 <tr>
 <td>
-[MaxDay](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DateRangeAttribute~MaxDay.html)
+{{'[MaxDay](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DateRangeAttribute~MaxDay.html)'| markdownify }}
 </td>
 <td>
 Specifies the required maximum day.

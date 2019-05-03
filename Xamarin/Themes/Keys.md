@@ -4870,20 +4870,21 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the button.
+            Background color of the SfButton.
             <br/>
             <br/>
         </td>
     </tr>
 	<tr>
 	    <td>
-		    Border color of the button.
+		    Border color of the SfButton.
 			<br/>
 			<br/>
 		</td>
     </tr>	    
+
     <tr> 
-    <td>
+        <td>
             SyncPrimaryDarkColor  
             <br/>
             <br/>
@@ -4901,7 +4902,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the button.
+            Text color of the SfButton.
             <br/>
             <br/>
         </td>
@@ -5373,7 +5374,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-	    <tr>
+	<tr>
         <td>
             SyncPrimaryColor.
             <br/>
@@ -5385,7 +5386,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-	    <tr>
+	<tr>
         <td>
             SyncPrimaryForegroundColor.
             <br/>

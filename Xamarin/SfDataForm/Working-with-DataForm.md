@@ -705,8 +705,8 @@ dataForm.Items = items;
 {% endhighlight %}
 {% endtabs %}
 
-### Dynamically add custom DataFormItems
-Support has been provided to dynamically add the DataFormItems[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItems.html] to collections using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+### Dynamically add custom dataform items
+Support has been provided to dynamically add the dataform items to collections using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
 
 {% tabs %}
 {% highlight c# %}
@@ -717,8 +717,8 @@ dataForm.Items.Add(new DataFormItem() { Name = "Save", Editor = "Switch" });
 
 ![Adding data form items in Xamarin.Forms DataForm](SfDataForm_images/AddCustomItems.gif)
 
-### Dynamically remove Custom DataFormItems 
-Support has been provided to dynamically remove the DataFormItems[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItems.html] from collections using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+### Dynamically remove custom dataform items
+Support has been provided to dynamically remove the dataform items from collections using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
 
 {% tabs %}
 {% highlight c# %}
@@ -728,8 +728,8 @@ dataForm.Items.RemoveAt(2);
 
 ![Removing data form items in Xamarin.Forms DataForm](SfDataForm_images/RemoveCustomItems.gif)
 
-### Dynamically clear Custom DataFormItems 
-Support has been provided to dynamically clear the DataFormItems[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItems.html] using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+### Dynamically clear custom dataform items
+Support has been provided to dynamically clear the dataform items using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
 
 {% tabs %}
 {% highlight c# %}
@@ -739,8 +739,8 @@ dataForm.Items.Clear();
 
 ![Clear data form items in Xamarin.Forms DataForm](SfDataForm_images/ClearCustomItems.gif)
 
-### Dynamically reset Custom DataFormItems 
-Support has been provided to reset the DataFormItems[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItems.html] using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+### Dynamically reset custom dataform items
+Support has been provided to reset the dataform items using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
 
 {% tabs %}
 {% highlight c# %}
@@ -751,7 +751,7 @@ dataForm.Items[2] = item;
 {% endtabs %}
 
 
-### Dynamically add Custom GroupItems
+### Dynamically add custom dataform group items
 Support has been provided to dynamically add custom group items using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
 {% tabs %}
 {% highlight c# %}

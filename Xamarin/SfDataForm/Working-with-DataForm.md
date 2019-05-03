@@ -710,8 +710,17 @@ Support has been provided to dynamically add the dataform items to collections u
 
 {% tabs %}
 {% highlight c# %}
-dataForm.Items.Add(new DataFormDropDownItem() { Name = "StateName", Editor = "DropDown", ItemsSource = this.GetItemSource("StateName"), PlaceHolderText = "Select a State" });
-dataForm.Items.Add(new DataFormItem() { Name = "Save", Editor = "Switch" });
+dataForm.Items.Add(new DataFormDropDownItem() 
+				  { Name = "StateName", 
+					Editor = "DropDown", 
+					ItemsSource = this.GetItemSource("StateName"), 
+					PlaceHolderText = "Select a State" 
+				  });
+				
+dataForm.Items.Add(new DataFormItem() 
+				  { Name = "Save", 
+				    Editor = "Switch" 
+				  });
 {% endhighlight %}
 {% endtabs %}
 

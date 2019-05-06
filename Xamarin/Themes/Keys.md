@@ -1828,7 +1828,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Sets the background color for the up down button when it is pressed.
+            Sets the background color for the up-down button when it is pressed.
             <br/>
             <br/>
         </td>
@@ -1841,7 +1841,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Sets the font color for the up down button when it is pressed.
+            Sets the font color for the up-down button when it is pressed.
             <br/>
             <br/>
         </td>
@@ -2618,7 +2618,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfBackdropPage without merging common theme resource and control style resource dictionaries.
+            By merging this key in application resources, you can customize the appearance of SfBackdropPage without merging common theme resource and control style resource dictionaries.
             
 {% highlight xaml %}
 
@@ -2688,7 +2688,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfCardView without merging common theme resource and control style resource dictionaries.
+            By merging this key in application resources, you can customize the appearance of SfCardView without merging common theme resource and control style resource dictionaries.
             
 {% highlight xaml %}
 

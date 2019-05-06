@@ -135,7 +135,8 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     // you'll need to add `using System.Reflection;`
     List<Assembly> assembliesToInclude = new List<Assembly>();
 
-    //Now, add all the assemblies your app uses assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Accordion.SfAccordionRenderer).GetTypeInfo().Assembly); 
+    //Now, add all the assemblies your app uses 
+	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Accordion.SfAccordionRenderer).GetTypeInfo().Assembly); 
 
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);

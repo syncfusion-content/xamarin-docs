@@ -7,12 +7,128 @@ control: sfbutton
 documentation: ug
 ---
 
-## Customization
+# Customization
 
 The button control supports to customize the border color, image width, corner radius, background color, and more. The button control can be customized using the following properties:
 
+## Text Customization
 
-## CornerRadius
+The text inside the button can be customized by its text color, font size, font attributes, font family and text alignment.
+
+### TextColor
+
+The [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~TextColor.html) property is used to customize the color of text in SfButton.
+
+{% tabs %}
+{% highlight xaml %}
+
+<button:SfButton x:Name="button" Text="Button" TextColor = "White">
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.TextColor = Color.White;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with text color](images/Button_textcolor.png)
+
+### FontSize
+
+The [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~FontSize.html) property is used to customize the size of text in SfButton.
+
+{% tabs %}
+{% highlight xaml %}
+
+<button:SfButton x:Name="button" Text="Button" FontSize = "18">
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.FontSize = 18;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with font size](images/Button_fontsize.png)
+
+### FontAttributes
+
+The [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~FontAttributes.html) property is used to customize the font style of text in SfButton.
+
+{% tabs %}
+{% highlight xaml %}
+
+<button:SfButton x:Name="button" Text="Button" FontAttributes = "Italic">
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.FontAttributes = FontAttributes.Italic;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with fontattributes](images/Button_fontattributes.png)
+
+### FontFamily
+
+The [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~FontFamily.html) property is used to customize the font family of text in SfButton.
+
+{% tabs %}
+{% highlight xaml %}
+
+<button:SfButton x:Name="button" Text="Button" FontFamily = "Arial">
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.FontFamily = "Arial";
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with fontfamily](images/Button_fontfamily.png)
+
+### TextAlignment
+
+The [`HorizontalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~HorizontalTextAlignment.html) and [`VerticalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~VerticalTextAlignment.html) properties are used to customize the alignment of text in SfButton.
+
+{% tabs %}
+{% highlight xaml %}
+
+<button:SfButton x:Name="button" Text="Button" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.HorizontalTextAlignment = TextAlignment.Center;
+button.VerticalTextAlignment = TextAlignment.Center;
+
+{% endhighlight %}
+{% endtabs %}
+
+## Background Customization
+
+The background of the button can be customized by its corner radius, border width, border color and background color.
+
+### CornerRadius
 
 The `CornerRadius` property is used to customize the rounded edges in SfButton as demonstrated in the following code sample.
 
@@ -34,7 +150,7 @@ button.CornerRadius = 3;
 
 ![SfButton with cornerradius](images/Button_cornerradius.png)
 
-## BorderWidth
+### BorderWidth
 
 The [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BorderWidth.html) property is used to customize the thickness of border in SfButton. 
 
@@ -55,7 +171,7 @@ button.BorderColor = Color.Red;
 {% endhighlight %}
 {% endtabs %}
 
-## BorderColor
+### BorderColor
 
 The [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BorderColor.html) property is used to customize the color of border in SfButton.
 
@@ -78,29 +194,7 @@ button.BorderColor = Color.Red;
 
 ![SfButton with border](images/Button_border.png)
 
-## TextColor
-
-The [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~TextColor.html) property is used to customize the color of text in SfButton.
-
-{% tabs %}
-{% highlight xaml %}
-
-<button:SfButton x:Name="button" Text="Button" TextColor = "White">
-</button:SfButton>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfButton button = new SfButton();
-button.Text = "Button";
-button.TextColor = Color.White;
-
-{% endhighlight %}
-{% endtabs %}
-
-![SfButton with text color](images/Button_textcolor.png)
-
-## BackgroundColor
+### BackgroundColor
 
 The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BackgroundColor.html) property is used to customize the background color of SfButton.
 
@@ -122,94 +216,11 @@ button.BackgroundColor = Color.DeepSkyBlue;
 
 ![SfButton with background color](images/Button_backgroundcolor.png)
 
-## FontSize
+## Image Customization
 
-The [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~FontSize.html) property is used to customize the size of text in SfButton.
+The image can be customized by its show icon, image source, image width and image alignment.
 
-{% tabs %}
-{% highlight xaml %}
-
-<button:SfButton x:Name="button" Text="Button" FontSize = "18">
-</button:SfButton>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfButton button = new SfButton();
-button.Text = "Button";
-button.FontSize = 18;
-
-{% endhighlight %}
-{% endtabs %}
-
-![SfButton with font size](images/Button_fontsize.png)
-
-## FontAttributes
-
-The [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~FontAttributes.html) property is used to customize the font style of text in SfButton.
-
-{% tabs %}
-{% highlight xaml %}
-
-<button:SfButton x:Name="button" Text="Button" FontAttributes = "Italic">
-</button:SfButton>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfButton button = new SfButton();
-button.Text = "Button";
-button.FontAttributes = FontAttributes.Italic;
-
-{% endhighlight %}
-{% endtabs %}
-
-![SfButton with fontattributes](images/Button_fontattributes.png)
-
-## FontFamily
-
-The [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~FontFamily.html) property is used to customize the font family of text in SfButton.
-
-{% tabs %}
-{% highlight xaml %}
-
-<button:SfButton x:Name="button" Text="Button" FontFamily = "Arial">
-</button:SfButton>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfButton button = new SfButton();
-button.Text = "Button";
-button.FontFamily = "Arial";
-
-{% endhighlight %}
-{% endtabs %}
-
-![SfButton with fontfamily](images/Button_fontfamily.png)
-
-## TextAlignment
-
-The [`HorizontalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~HorizontalTextAlignment.html) and [`VerticalTextAlignment `](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~VerticalTextAlignment.html) properties are used to customize the alignment of text in SfButton.
-
-{% tabs %}
-{% highlight xaml %}
-
-<button:SfButton x:Name="button" Text="Button" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">
-</button:SfButton>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfButton button = new SfButton();
-button.Text = "Button";
-button.HorizontalTextAlignment = TextAlignment.Center;
-button.VerticalTextAlignment = TextAlignment.Center;
-
-{% endhighlight %}
-{% endtabs %}
-
-## ShowIcon
+### ShowIcon
 
 You can enable the Icon image using the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ShowIcon.html) property to know whether any image appears to the SfButton.
 
@@ -230,7 +241,7 @@ button.ShowIcon = True;
 {% endhighlight %}
 {% endtabs %}
 
-## ImageSource
+### ImageSource
 
 The [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property is used to customize the icon image of SfButton by adding a custom image.
 
@@ -255,7 +266,7 @@ button.ShowIcon = True;
 
 ![SfButton with image with content](images/Button_icon.png)
 
-## ImageWidth
+### ImageWidth
 
 The [`ImageWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageWidth.html) property is used to customize the width of icon image in SfButton.
 
@@ -279,7 +290,7 @@ button.ImageWidth = 50;
 {% endhighlight %}
 {% endtabs %}
 
-## ImageAlignment 
+### ImageAlignment 
 
 The [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageAlignment.html) property is used to customize the alignment of icon image in SfButton.
 

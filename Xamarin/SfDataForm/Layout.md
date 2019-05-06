@@ -872,15 +872,17 @@ You can change the [DataFormGroupItem](https://help.syncfusion.com/cr/cref_files
 
 {% tabs %}
 {% highlight c# %}
-var dataFormGroupItem = dataForm.ItemManager.GetDataFormGroupItem("Details");
-if (dataFormGroupItem.GroupName == "Details")
+var dataFormGroupItem = dataForm.ItemManager.GetDataFormGroupItem("Name");
+if (dataFormGroupItem.GroupName == "Name")
 {
 	dataFormGroupItem.IsVisible = false;
 }
 {% endhighlight %}
 {% endtabs %}
 
-Here, the `Details` group will be hidden.
+Here, the `Name` group will be hidden.
+
+![DataFormGroupItem visibility at runtime in Xamarin.Forms DataForm](SfDataForm_images/CollapseGroupItems.gif)
 
 ## Right to left(RTL)
 
@@ -954,7 +956,7 @@ You can programmatically scroll to specific editor using the [ScrollTo](https://
 
 {% tabs %}
 {% highlight c# %}
-dataForm.ScrollTo("BirthDate")
+dataForm.ScrollTo("ContactNumber")
 {% endhighlight %}
 {% endtabs %}
 

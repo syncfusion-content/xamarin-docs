@@ -227,4 +227,4 @@ Inline view mode
 
 Agenda view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendaitemtapped.png)
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendaitemtapped.jpg)

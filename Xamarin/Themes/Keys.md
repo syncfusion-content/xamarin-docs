@@ -5692,7 +5692,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="8">
+        <td rowspan="10">
             SfPickerStyles  
             <br/>
             <br/>
@@ -6382,7 +6382,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="3">
+        <td rowspan="4">
             SfRotatorStyles  
             <br/>
             <br/>

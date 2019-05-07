@@ -42,7 +42,7 @@ We can customize the calendar view in monthView mode by using [MonthViewSettings
                         SelectedDayTextColor="#000000"
                         DayHeaderFormat="EEEEE"
 						DayFontSize="12"
-						DayHeaderFontSize="20">
+						DayHeaderFontSize="14"/>
            </syncfusion:SfCalendar.MonthViewSettings>
 </syncfusion:SfCalendar>  
 
@@ -70,7 +70,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Month View in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-monthview-customization.png)
+![Month View in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-monthview-customization.jpg)
 
 
 N> Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
@@ -126,7 +126,7 @@ this.Content = calendar;
 
 {% endtabs %}
  
-![YearView in Xamarin.Forms Calendar](images/xamarin.forms-calendar-yearview-customization.png)
+![YearView in Xamarin.Forms Calendar](images/xamarin.forms-calendar-yearview-customization.jpg)
 
 ### Customization of SfCalendar's dates in YearView
 

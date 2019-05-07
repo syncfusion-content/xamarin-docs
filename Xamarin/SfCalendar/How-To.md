@@ -230,6 +230,56 @@ void Handle_OnMonthCellLoaded(object sender, Syncfusion.SfCalendar.XForms.MonthC
 
 {% endtabs %}
 
+## How to customize month view cell using a template?
+
+You can customize the month cell of the `SfCalendar` using [CellTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellTemplate.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+xmlns:local="clr-namespace:MonthCellCustomization"
+x:Class="MonthCellCustomization.MainPage"
+xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.SfCalendar.XForms">
+<ContentPage.Content>
+        <calendar:SfCalendar x:Name="calendar" ShowLeadingAndTrailingDays="true" BackgroundColor="White">
+            <calendar:SfCalendar.MonthViewSettings>
+                <calendar:MonthViewSettings>
+                    <calendar:MonthViewSettings.CellTemplate>
+                <DataTemplate>
+                <Grid BackgroundColor="White">
+                    <Grid.RowDefinitions> 
+                        <RowDefinition Height="*"/> 
+                        <RowDefinition Height="*"/> 
+                        <RowDefinition Height="*"/>  
+                    </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                     <ColumnDefinition Width="*"/>
+                                     <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                    <Image HorizontalOptions="Center" Source="Weather1.png" Grid.Row="0" Grid.Column="0"/>
+                    <Label Text="{Binding Day}" FontAttributes="Bold" TextColor="Black" Grid.Row="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="1" FontSize="10"/>
+                    <Image HorizontalOptions="Center" Grid.Row="2" Source="Weather2.png" Grid.Column="2"/> 
+                </Grid>
+                </DataTemplate>
+                </calendar:MonthViewSettings.CellTemplate>
+                </calendar:MonthViewSettings>
+            </calendar:SfCalendar.MonthViewSettings>
+            </calendar:SfCalendar>
+    </ContentPage.Content>
+    </ContentPage>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Cell template support in xamarin forms calendar control](images/xamarin.forms-CalendarCellTemplate.jpg)
+
+
 ## How to Perform the Operation while long pressing the dateCell?
 
 [OnDateCellHolding](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnDateCellHolding_EV.html) event returns the long pressed date along with the `SfCalendar` it carries. Using this event user can perform operation while long pressing the date.

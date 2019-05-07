@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to
+title: How to customize theming in Syncfusion controls
 description: This section explains about unique customizations in theming in Syncfusion controls
 platform: xamarin
 control: General

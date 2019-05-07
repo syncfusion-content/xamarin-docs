@@ -39,10 +39,10 @@ We can perform operation while the Calendar cell is Tapped using [CalendarTapped
 
 {% highlight c# %}
 	
-void Handle_OnCalendarTapped(object sender, Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs args)
+void Handle_OnCalendarTapped(object sender, CalendarTappedEventArgs e)
 {
 	SfCalendar calendar = (sender as SfCalendar);
-	DateTime date = args.datetime;		
+	DateTime date = e.datetime;		
 }
 	
 {% endhighlight %}
@@ -86,11 +86,11 @@ We can perform an operation when the selected date get changed using [SelectionC
 
 {% highlight c# %}
 	
-void Handle_SelectionChanged(object sender, Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs args)
+void Handle_SelectionChanged(object sender, SelectionChangedEventArgs e)
 {
 	 //// Get added and removed dates in Single, Multi and Range selection modes.
-     IList<DateTime> selectedDates = args.DateAdded;
-     IList<DateTime> deselectedDates = args.DateRemoved;
+     IList<DateTime> selectedDates = e.DateAdded;
+     IList<DateTime> deselectedDates = e.DateRemoved;
 	 
 	 //// Gets the added date range in Multi-range selection mode.
      IList<SelectionRange> selectionRange = e.NewRangeAdded;
@@ -130,11 +130,11 @@ User defined operation can be performed using [MonthChanged](https://help.syncfu
 
 {% highlight c# %}
 	
-void Handle_MonthChanged(object sender, Syncfusion.SfCalendar.XForms.MonthChangedEventArgs args)
+void Handle_MonthChanged(object sender, MonthChangedEventArgs e)
 {
 	 SfCalendar calendar = (sender as SfCalendar);
-     DateTime oldMonth = args.PreviousValue;
-     DateTime currentMonth = args.CurrentValue;
+     DateTime oldMonth = e.PreviousValue;
+     DateTime currentMonth = e.CurrentValue;
 }
 	
 {% endhighlight %}
@@ -172,13 +172,13 @@ void Handle_MonthChanged(object sender, Syncfusion.SfCalendar.XForms.MonthChange
 
 {% highlight c# %}
 	
-void Handle_InlineToggled(object sender, Syncfusion.SfCalendar.XForms.InlineToggledEventArgs args)
+void Handle_InlineToggled(object sender, InlineToggledEventArgs e)
 {
 	if ((args.SelectedAppointment as CalendarEventCollection).Count != 0)
         {
-            string subject = (args.SelectedAppointment as CalendarEventCollection)[0].Subject;
-            DateTime startTime = (args.SelectedAppointment as CalendarEventCollection)[0].StartTime;
-            DateTime endTime = (args.SelectedAppointment as CalendarEventCollection)[0].EndTime;
+            string subject = (e.SelectedAppointment as CalendarEventCollection)[0].Subject;
+            DateTime startTime = (e.SelectedAppointment as CalendarEventCollection)[0].StartTime;
+            DateTime endTime = (e.SelectedAppointment as CalendarEventCollection)[0].EndTime;
         }
 }
 	
@@ -212,17 +212,17 @@ void Handle_InlineToggled(object sender, Syncfusion.SfCalendar.XForms.InlineTogg
 
 {% highlight c# %}
 
-void Handle_OnMonthCellLoaded(object sender, Syncfusion.SfCalendar.XForms.MonthCellLoadedEventArgs args)
+void Handle_OnMonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
 {
-     if (args.IsCurrentMonth)
+     if (e.IsCurrentMonth)
         {
-            args.BackgroundColor = Color.Gray;
-            args.TextColor = Color.Red;
+            e.BackgroundColor = Color.Gray;
+            e.TextColor = Color.Red;
         }
         else
         {
-            args.BackgroundColor = Color.LightGray;
-            args.TextColor = Color.Black;
+            e.BackgroundColor = Color.LightGray;
+            e.TextColor = Color.Black;
         }
 }
 
@@ -306,7 +306,7 @@ xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.S
 
 {% highlight c# %}
 
-   void Handle_OnDateCellHolding(object sender, Syncfusion.SfCalendar.XForms.DayCellHoldingEventArgs args)
+   void Handle_OnDateCellHolding(object sender, Syncfusion.SfCalendar.XForms.DayCellHoldingEventArgs e)
     {
        // do the operation while long pressing the date cell     
     }

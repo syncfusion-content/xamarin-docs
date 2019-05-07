@@ -3526,6 +3526,19 @@ This page lists the keys for each control and the element to which it is mapped 
 
 <tr>
         <td>
+            SfScheduleBackgroundColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of schedule background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+<tr>
+        <td>
             SfScheduleDayViewNonWorkingHoursTimeSlotColor 
             <br/>
             <br/>

@@ -4884,7 +4884,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="11">
+        <td rowspan="14">
             SfAutoCompleteStyles  
             <br/>
             <br/>
@@ -4922,25 +4922,54 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <tr>
-        <td rowspan="2">
+        <td>
             SyncPrimaryColor  
             <br/>
             <br/>
         </td>
         <td>
+            Color of indicator text in AutoComplete.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	</tr>
+    <tr>
+        <td>
+            SyncPrimaryLightColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
             Color of highlighted text in AutoComplete.
+        <br/>
+        <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SfAutoCompleteBackgroundColor  
+            <br/>
+            <br/>
+        </td> 
+        <td>
+            Background color of AutoComplete.
             <br/>
             <br/>
         </td>
     </tr>
     <tr>
         <td>
-            Color of indicator text in AutoComplete.
+            SfAutoCompleteTextColor  
             <br/>
             <br/>
-        </td> 
+        </td>
+        <td>
+            Text color of AutoComplete.
+            <br/>
+            <br/>
+        </td>
     </tr>
-	</tr>
 	<tr>
         <td>
             SfAutoCompleteBorderColor  
@@ -5101,6 +5130,18 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+    <tr>
+    <td>
+           SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+             Color of the SfBusyIndicator text.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfButton
@@ -5349,7 +5390,18 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
-
+<tr>
+    <td>
+           SfCarouselBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfCarousel.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfCheckBox
@@ -5743,7 +5795,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="15">
+        <td rowspan="18">
             SfComboBoxStyles  
             <br/>
             <br/>
@@ -5781,25 +5833,54 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
          <tr>
-        <td rowspan="2">
+        <td>
             SyncPrimaryColor  
             <br/>
             <br/>
         </td>
         <td>
-            Color of highlighted text in ComboBox.
+            Color of indicator text in ComboBox.   
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	</tr>
+    <tr>
+        <td>
+            SyncPrimaryLightColor  
+            <br/>
+            <br/>
+        </td> 
+        <td>
+            Color of highlighted text in ComboBox. 
             <br/>
             <br/>
         </td>
     </tr>
     <tr>
         <td>
-            Color of indicator text in ComboBox.
+            SfComboBoxBackgroundColor  
             <br/>
             <br/>
-        </td> 
+        </td>
+        <td>
+            BackgroundColor of SfComboBox.
+            <br/>
+            <br/>
+        </td>
     </tr>
-	</tr>
+    <tr>
+        <td>
+            SfComboBoxTextColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 	<tr>
         <td>
             SfComboBoxBorderColor  
@@ -5844,6 +5925,18 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Background color of the suggestion box in SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+       <tr>
+        <td>
+            SfComboBoxSelectedDropDownItemColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the suggestion box's item in SfComboBox. 
             <br/>
             <br/>
         </td>
@@ -5920,7 +6013,18 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
+   <tr>
+    <td>
+           SfComboBoxHighlightedDropDownButtonBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Highlighted Background color of the drop-down button in SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfNavigationDrawer
@@ -5979,7 +6083,18 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
-
+  <tr>
+    <td>
+           SfNavigationDrawerBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfNavigationDrawer.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfPicker
@@ -6317,7 +6432,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	</tr>
      <tr>
     <td>
-           SyncPrimaryColor
+           SfRadialMenuPressedColor
             <br/>
             <br/>
         </td>
@@ -6335,6 +6450,30 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Color of the center button's border in SfRadialMenu.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+    <td>
+           SfRadialMenuCenterButtonBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the center button's background in SfRadialMenu.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+   <tr>
+    <td>
+           SfRadialMenuCenterButtonTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the center button's text in SfRadialMenu.
             <br/>
             <br/>
         </td>

@@ -4839,7 +4839,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="3">
+        <td rowspan="5">
             SfButtonStyles  
             <br/>
             <br/>
@@ -5290,7 +5290,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="6">
+        <td rowspan="8">
             SfChipGroupStyles  
             <br/>
             <br/>

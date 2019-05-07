@@ -38,5 +38,6 @@ public class NumericalAxisExt : NumericalAxis
 ![Custom labels support in Xamarin.Forms Chart](images/custom_labels.png)
 
 N>
+- This is applicable for all types of axis.
 - Labels are rendered only if the label position presents within the visible range.
 - The labels should be created only if users call the base of [`OnCreateLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~OnCreateLabels.html).

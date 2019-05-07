@@ -230,6 +230,23 @@ void Handle_OnMonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
 
 {% endtabs %}
 
+![ Cell customization support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-cell-customization.jpg)
+
+## Customize the month view with custom UI?
+You can customize the MonthView with Custom UI in the `SfCalendar` control using the `View` property of `MonthCellLoadedEventArgs` in the `OnMonthCellLoaded` event.
+{% tabs %}
+{% highlight c# %}
+private void Calendar_OnMonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
+{
+    var button = new Button();
+    button.Text = e.Date.Day.ToString();
+    e.View = button;        
+}
+{% endhighlight %}
+{% endtabs %}
+
+![ Cell customization using custom UI support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-cell-customization_customUI.jpg)
+
 ## How to customize month view cell using a template?
 
 You can customize the month cell of the `SfCalendar` using [CellTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellTemplate.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
@@ -348,13 +365,15 @@ calendar.HeightRequest = 200;
 
  <syncfusion:SfCalendar  x:Name="calendar"   >
          <syncfusion:SfCalendar.HeaderView>
-                <Label Text="Custom Header View" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                <Label Text="May 2019" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Large"/>
         </syncfusion:SfCalendar.HeaderView>
     </syncfusion:SfCalendar>
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![Custom Header support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-custom-header.jpg)
 
 ## How to enable or disable the YearView in SfCalendar?
 
@@ -427,6 +446,8 @@ calendar.HeightRequest = 200;
 
 {% endtabs %}
 
+![CellGridOptions support support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-CellGridOptions.jpg)
+
 ## Customize the year cell or year view
 You can customize the year cell of the `SfCalendar` control using the [OnYearCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnYearCellLoaded_EV.html) event, which returns `YearCellLoadedEventArgs`. The [YearCellLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCellLoadedEventArgs.html) has the following properties to customize the year view: [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~BackgroundColor.html), [Font](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~Font.html), [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~FontAttribute.html), [Month](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~Month.html), [MonthHeaderBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~MonthHeaderBackgroundColor.html), [MonthHeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~MonthHeaderTextColor.html), [MonthLayoutBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~MonthLayoutBackgroundColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~TextColor.html), and [View](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~View.html).
 
@@ -444,6 +465,8 @@ private void Calendar_OnYearCellLoaded(object sender, YearCellLoadedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+
+![ Year Cell customization support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-yearcell-customization.jpg)
 
 ## Customize the year view with custom UI	
 You can customize the YearView with Custom UI in the `SfCalendar` control using the `View` property of `YearCellLoadedEventArgs` in the `OnYearCellLoaded` event.

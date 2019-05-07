@@ -81,3 +81,5 @@ calendar.MonthViewSettings = monthViewSettings;
 this.Content = calendar;
 {% endhighlight %}
 {% endtabs %}
+
+![BlackoutDate color support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-Blackout-color.jpg)

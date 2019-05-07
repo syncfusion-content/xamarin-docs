@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add custom labels to SfChart axis | Syncfusion
+title: Adding custom labels to SfChart axis | Syncfusion
 description: Add, remove or modify the labels of SfChart axis
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-## Add custom labels to SfChart axis
+## Adding custom labels to SfChart axis
 
 To add a custom label to chart axis, write a class derived from NumericalAxis class. You need to override the [`OnCreatedLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~OnCreateLabels.html) method, which will be called whenever new labels are generated, and add, remove, or modify the labels using the [`VisibleLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~VisibleLabels.html) property.
 

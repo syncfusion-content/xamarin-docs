@@ -23,7 +23,7 @@ Use the following steps to add the Syncfusion Xamarin item in Visual Studio:
 
    ![Syncfusion Menu for item template](Syncfusion-Item-Templates_images/Syncfuion-menu.png)
 
-   N> In Visual Studio 2019, Syncfusion menu is available under Extension in Visual Studio menu.
+   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
    **Option2:** Right-click the **Xamarin.Form** project from the **Solution Explorer** and select the **Syncfusion UI for Xamarin** option.
 

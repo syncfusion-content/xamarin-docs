@@ -2644,7 +2644,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 	<tr>
     <td>
-            SfPdfViewerBookmarkTitlebarBackgroundColor
+            SfPdfViewerBookmarkTitleBarBackgroundColor
             <br/>
             <br/>
         </td>
@@ -2656,7 +2656,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
     <tr>
     <td>
-            SfPdfViewerBookmarkTitlebarTextColor
+            SfPdfViewerBookmarkTitleBarTextColor
             <br/>
             <br/>
         </td>

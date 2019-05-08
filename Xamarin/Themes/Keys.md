@@ -2649,7 +2649,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the bookmark titlebar.
+            Background color of the bookmark title bar.
             <br/>
             <br/>
         </td>
@@ -2661,7 +2661,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of the bookmark titlebar.
+            Text color of the bookmark title bar.
             <br/>
             <br/>
         </td>
@@ -2764,7 +2764,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Seperator color of the page number alert window items.
+            Separator color of the page number alert window items.
             <br/>
             <br/>
         </td>
@@ -2897,12 +2897,12 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 	<tr>
     <td>
-            SfPdfViewerSearchbarBackgroundColor
+            SfPdfViewerSearchBarBackgroundColor
             <br/>
             <br/>
         </td>
         <td>
-            Background color of the searchbar.
+            Background color of the search bar.
             <br/>
             <br/>
         </td>

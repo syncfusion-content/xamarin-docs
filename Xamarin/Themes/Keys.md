@@ -2752,7 +2752,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the page number alert window.
+            Background color of the page number alert dialog.
             <br/>
             <br/>
         </td>
@@ -2764,7 +2764,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Separator color of the page number alert window items.
+            Separator color of the page number alert window.
             <br/>
             <br/>
         </td>
@@ -2974,7 +2974,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the thickness button in thickness selector toolbar.
+            Border color of the thickness button when it is in disabled state.
             <br/>
             <br/>
         </td>

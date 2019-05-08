@@ -23,6 +23,6 @@ void UpdateTheme(object sender, System.EventArgs e)
     mergedDictionaries.Add(new LightTheme());
 }
 
-Similary, to switch to dark theme from light theme, remove the light theme resource, and add the dark theme resource dictionary.
-
 {% endhighlight %}
+
+Similarly, to switch to dark theme from light theme, remove the light theme resource, and add the dark theme resource dictionary.

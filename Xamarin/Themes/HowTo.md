@@ -25,4 +25,4 @@ void UpdateTheme(object sender, System.EventArgs e)
 
 {% endhighlight %}
 
-Similary, to switch to dark theme from light theme, remove the light theme resource, and add the dark theme resource dictionary.
+Similarly, to switch to dark theme from light theme, remove the light theme resource, and add the dark theme resource dictionary.

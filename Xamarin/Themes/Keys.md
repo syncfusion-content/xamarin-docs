@@ -2764,7 +2764,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Separator color of the page number alert window.
+            Separator color of the page number alert dialog.
             <br/>
             <br/>
         </td>

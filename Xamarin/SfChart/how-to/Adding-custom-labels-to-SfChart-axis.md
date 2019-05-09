@@ -21,7 +21,7 @@ public class NumericalAxisExt : NumericalAxis
     {
         base.OnCreateLabels();
 		
-    //Using VisibleLabels collection you can define your custom labels
+        //Using VisibleLabels collection you can define your custom labels
         VisibleLabels.Clear();
         ViewModel viewModel = BindingContext as ViewModel;
 

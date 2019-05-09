@@ -22,7 +22,7 @@ Use the following steps to create the **Syncfusion** **Xamarin** **Application**
 
    ![Choose Syncfusion Xamarin application from Visual Studio new project dialog via Syncfusion menu](Syncfusion-Project-Templates_images/Syncfusion_Menu_ProjectTemplate.png)
 
-   N> In Visual Studio 2019, Syncfusion menu is available under Extension in Visual Studio menu.
+   N> In Visual Studio 2019, Syncfusion menu is available under Extensions in Visual Studio menu.
 
    **Option 2:**  
    Choose **File > New > Project** and navigate to **Syncfusion > Cross-Platform > Syncfusion Xamarin Project Template** in **Visual Studio**.

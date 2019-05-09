@@ -74,7 +74,7 @@ N> After adding the reference, an additional step is required for [iOS](https://
 
 ## System Requirements
 
-In the SfListView, current supported Xamarin.Forms version is `2.4.0.280` and later.
+In the SfListView, current supported Xamarin.Forms version is `3.5.0.129452` and later.
 
 The following table lists the platforms supported versions:
 

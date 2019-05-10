@@ -266,7 +266,7 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 * If the custom start hour and end hour is given, then the number of time slots calculated based on given start hour, end hour should result in integer value, otherwise given end hour will be rounded off. For example, if StartHour is 7.2 (07:12AM), EndHour is 18.6 (06:36AM) and TimeInterval is 60 minutes, then EndHour will be rounded off to 18.2 (06:12PM).
 
 ## Changing NonWorking Days
-You can customize the Non-Working days of a week by using [NonWorkingDays] property of `WorkWeekViewSettings`.
+You can customize the Non-Working days of a week by using [NonWorkingsDays](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~NonWorkingsDays.html) property of `WorkWeekViewSettings`.
 var nonWorkingDays = new ObservableCollection<DayOfWeek>();
 nonWorkingDays.Add(DayOfWeek.Monday);
 nonWorkingDays.Add(DayOfWeek.Friday);

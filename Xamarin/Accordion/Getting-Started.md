@@ -27,7 +27,7 @@ You can add SfAccordion reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfAccordion to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Expander](https://www.nuget.org/packages/Syncfusion.Xamarin.Expander), and then install it. 
 
-![Adding SfAccordion reference from NuGet](sfaccordion_images/adding-sfaccordion-reference.png)
+![Adding SfAccordion reference from NuGet](accordion_images/adding-sfaccordion-reference.png)
 
 N> Install the same version of Expander NuGet in all the projects. 
 
@@ -379,7 +379,7 @@ private AccordionItem GeneratePaymentDetailsAccordion()
 
 Now, run the application to render the following output.
 
-![Xamarin Forms Accordion](sfaccordion_images/xamarin-forms-accordion.png)
+![Xamarin Forms Accordion](accordion_images/xamarin-forms-accordion.png)
 
 You can download accordion sample for Xamarin.Forms from here [AccordionGettingStarted](https://github.com/SyncfusionExamples/xamarin_accordion_getting_started).
 

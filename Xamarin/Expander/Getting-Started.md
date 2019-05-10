@@ -27,7 +27,7 @@ You can add SfExpander reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfExpander to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Expander](https://www.nuget.org/packages/Syncfusion.Xamarin.Expander), and then install it. 
 
-![Adding SfExpander reference from NuGet](sfexpander_images/adding-sfexpander-reference.png)
+![Adding SfExpander reference from NuGet](expander_images/adding-sfexpander-reference.png)
 
 N> Install the same version of Expander NuGet in all the projects.  
 
@@ -248,7 +248,7 @@ Here, Labels are loaded in Header and Content of expander.
 
 Now, run the application to render the following output.
 
-![Xamarin Forms Expander](sfexpander_images/xamarin-forms-expander.png)
+![Xamarin Forms Expander](expander_images/xamarin-forms-expander.png)
 
 You can download expander sample for Xamarin.Forms from here [ExpanderGettingStarted](https://github.com/SyncfusionExamples/xamarin_expander_getting_started).
 

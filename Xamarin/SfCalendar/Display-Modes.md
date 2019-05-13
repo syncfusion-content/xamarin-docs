@@ -62,9 +62,14 @@ monthViewSettings.SelectedDayTextColor = Color.FromHex("#000000");
 monthViewSettings.DayHeaderFormat = "EEEEE";
 monthViewSettings.DayFontSize = 12;
 monthViewSettings.DayHeaderFontSize = 20;
+monthViewSettings.SelectionRadius = 15;
+monthViewSettings.TodaySelectionTextColor= Color.Black;
+monthViewSettings.TodaySelectionBackgroundColor= Color.Green;
 
 calendar.MonthViewSettings = monthViewSettings;
 this.Content = calendar;
+
+N>If you want to disable the TodaySelectionBackgroundColor, set the value as transparent.
 	
 {% endhighlight %}
 

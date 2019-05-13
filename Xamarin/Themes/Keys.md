@@ -2871,7 +2871,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Text color of page number entry.
+            Text color of entry.
             <br/>
             <br/>
         </td>
@@ -2879,12 +2879,35 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
+            SfPdfViewerEntryBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of entry.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	 <td>
+            SfPdfViewerEntryPlaceholderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Placeholder color of entry.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
             SfPdfViewerEntryBackgroundColor
             <br/>
             <br/>
         </td>
         <td>
-            Background color of page number entry.
+            Background color of entry.
             <br/>
             <br/>
         </td>
@@ -2898,6 +2921,30 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Background color of the bookmark items.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+    <td>
+            SfPdfViewerBookmarkTitleBarBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the bookmark title bar.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+            SfPdfViewerBookmarkTitleBarTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the bookmark title bar.
             <br/>
             <br/>
         </td>
@@ -2988,7 +3035,19 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Background color of the page number alert window.
+            Background color of the page number alert dialog.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+    <td>
+            SfPdfViewerScrollHeadPageNumberViewSeparatorColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Separator color of the page number alert dialog.
             <br/>
             <br/>
         </td>
@@ -3048,12 +3107,60 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfPdfViewerSignaturePadButtonDisabledColor
+            SfPdfViewerSignaturePadConfirmationButtonDisabledColor
             <br/>
             <br/>
         </td>
         <td>
-            Text color of the signature pad button when it is in disabled state.
+            Text color of the signature pad confirmation button when it is in disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+    <td>
+            SfPdfViewerSignaturePadCancelButtonEnabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the signature pad cancel button when it is in enabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+    <td>
+            SfPdfViewerSignaturePadCancelButtonDisabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the signature pad cancel button when it is in disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+    <td>
+            SfPdfViewerSignaturePadClearButtonEnabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the signature pad clear button when it is in enabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+    <td>
+            SfPdfViewerSignaturePadClearButtonDisabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the signature pad clear button when it is in disabled state.
             <br/>
             <br/>
         </td>
@@ -3071,7 +3178,136 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
+	<tr>
+    <td>
+            SfPdfViewerSearchBarBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the search bar.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+    <td>
+            SfPdfViewerFreeTextConfirmationButtonDisabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the FreeText confirmation button when it is in disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+            SfPdfViewerFreeTextCancelButtonEnabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the FreeText cancel button when it is in enabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+            SfPdfViewerFreeTextCancelButtonDisabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the FreeText cancel button when it is in disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+    <td>
+            SfPdfViewerThicknessViewBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the thickness selector toolbar.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+    <td>
+            SfPdfViewerThicknessViewButtonBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the thickness button in thickness selector toolbar.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+    <td>
+            SfPdfViewerThicknessViewButtonBorderDisabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the thickness button when it is in disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+    <td>
+            SfPdfViewerAlertDialogBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the page number alert dialog.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+    <td>
+            SfPdfViewerAlertDialogTitleColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Title color of the page number alert dialog.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<td>
+            SfPdfViewerAlertDialogTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the page number alert dialog.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<td>
+            SfPdfViewerAlertDialogBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the page number alert dialog.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 
@@ -3802,6 +4038,19 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Change the color of current day text in schedule month view.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+<tr>
+        <td>
+            SfScheduleBackgroundColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of schedule background.
             <br/>
             <br/>
         </td>

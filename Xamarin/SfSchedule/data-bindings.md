@@ -218,14 +218,14 @@ The `RecurrenceRule` is a string value, that contains the details of the recurre
 | BYSETPOS | This property is used to store the index value of the week. For example, when you create the monthly appointment in second week of the month, the index value of the second week (2) is stored in BYSETPOS. Example: FREQ=MONTHLY;BYDAY=MO;BYSETPOS=2;UNTIL=8/11/2014 |
 
 ### Recurrence Pattern
-Recurrence pattern used in the control are in iCal standard. Schedule control supports all four types of [recurrence patterns](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceType.html).
+Recurrence pattern used in the control are in iCal standard. Schedule control supports all four types of [recurrence patterns](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceType.html). You can set the recurrence pattern using [RecurrenceType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~RecurrenceType.html) property of `RecurrenceRule`.
 
 | RecurrenceType | RecurrenceProperties | Description                                                                                 |
 |----------------|----------------------|---------------------------------------------------------------------------------------------|
 | Daily          | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~Interval.html) | Gets or sets the day interval on which recurrence has to be set.                            |
 | Weekly         | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~Interval.html) | Gets or sets the day interval on which recurrence has to be set.                            |
 |                | [DayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~DayOfWeek.html)  | Gets or sets the day of week on which recurrence has to be set.                             |
-|                | [WeekDays](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~WeekDays.html)   | Gets or sets the day/days in a week on which recurrence has to be set.                      |
+|                | [WeekDays](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~WeekDays.html)   | Gets or sets the [day/days](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekDays.html) in a week on which recurrence has to be set.                      |
 |				 | [Week](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~Week.html)					| Gets or sets the week of month on which recurrence has to be set.							  |
 | Monthly        | [Interval](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~Interval.html) | Gets or sets the day interval on which  recurrence has to be set.                           |
 |                | [DayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~DayOfWeek.html) | Gets or sets the day of week on which  recurrence has to be set.                            |
@@ -236,7 +236,7 @@ Recurrence pattern used in the control are in iCal standard. Schedule control su
 |                | [DayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~DayOfWeek.html) | Gets or sets the day of week on which  recurrence has to be set.                            |
 |				 | [Month](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~Month.html)				| Gets or sets the specific month of year on which recurrence has to be set.				  |
 |				 | [Week](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~Week.html)					| Gets or sets the week of month on which recurrence has to be set.							  |
-| Common         | [RecurrenceRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~RecurrenceRange.html) | Gets or sets the type of the recurrence range for the time limit of recurrence appointment. |
+| Common         | [RecurrenceRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~RecurrenceRange.html) | Gets or sets the type of the [recurrence range](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceRange.html) for the time limit of recurrence appointment. |
 |                | [RecurrenceCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~RecurrenceCount.html) | Gets or sets the count for recurring appointment.                                           |
 |                | [StartDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~StartDate.html) | Gets or sets the date to start the recurrence appointment.                                  |
 |                | [EndDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.RecurrenceProperties~EndDate.html)  | Gets or sets the date to end the recurrence appointment.                                    |
@@ -267,7 +267,7 @@ Find the following `RecurrenceRule` possibilities available in the Schedule cont
 |  | Appointment is created with selected date and month Ends On | RecurrenceType = RecurrenceType.Yearly, Interval = 1, Month = 12, DayOfMonth = 12, RecurrenceRange = RecurrenceRange.EndDate, EndDate = new DateTime(2018, 06, 11) | FREQ=YEARLY; BYMONTHDAY=12; BYMONTH=12; INTERVAL=1; UNTIL=06/11//2018 |
 
 ### Adding Recurrence Appointment using Recurrence Builder
-Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~RecurrenceRule.html) is used to populate the required recurring appointment collection in a specific pattern. `RRULE` can be easily created through `RecurrenceBuilder` engine by simple APIs available in Schedule control.
+Schedule appointment [RecurrenceRule](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~RecurrenceRule.html) is used to populate the required recurring appointment collection in a specific pattern. `RRULE` can be easily created through `RecurrenceBuilder` engine by using [RRuleGenerator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~RRuleGenerator.html) method in schedule.
 
 {% tabs %}
 {% highlight c# %}
@@ -396,7 +396,7 @@ In Schedule "Xamarin.Forms UWP", there is no need to set IsRecursive property fo
 ![Custom recurrence appointments support in schedule Xamarin Forms](PopulatingAppointments_images/RecurrenceAppointment.png)
 
 ### How to get the Recurrence editor field values from RRULE?
-You can get the Recurrence properties from `RRULE` using the RRuleParser() of `SfSchedule`.
+You can get the Recurrence properties from `RRULE` using the [RRuleParser](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~RRuleParser.html) method of `SfSchedule`.
 
 {% tabs %}
 {% highlight c# %}
@@ -412,7 +412,7 @@ recurrenceProperties.RecurrenceCount = 3;
 recurrenceProperties.RecurrenceRange = RecurrenceRange.Count;
 
 ### How to get the occurrences date time list of recurring appointment from RRULE?
-You can get the occurrences date time list of recurring appointment from `RRULE` using the GetRecurrenceDateTimeCollection() of `SfSchedule`.
+You can get the occurrences date time list of recurring appointment from `RRULE` using the [GetRecurrenceDateTimeCollection](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~GetRecurrenceDateTimeCollection.html) method of `SfSchedule`.
 
 {% tabs %}
 {% highlight c# %}
@@ -842,7 +842,7 @@ private void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChange
 {% endtabs %}
 
 ## Appearance Customization
-The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
+The default appearance of the appointment can be customized by using the [AppointmentStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentStyle.html) property and [AppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentLoadedEventArgs.html). The event and property is used to customize or override the default template of the Appointments.
 
 * [Customize appearance using Style](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-style) 
 * [Customize appearance using Event](https://help.syncfusion.com/xamarin/sfschedule/data-bindings#customize-appearance-using-event) 

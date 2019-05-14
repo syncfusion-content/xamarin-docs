@@ -475,12 +475,14 @@ You can customize the YearView with Custom UI in the `SfCalendar` control using 
 private void Calendar_OnYearCellLoaded(object sender, YearCellLoadedEventArgs e)
 {
     var button = new Button();
-    button.Text = e.Month.Month.ToString();
-    button.BackgroundColor = Color.Red;
+    button.Text = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(e.Month.Month);
+    button.BackgroundColor = Color.Pink;
     e.View = button;        
 }
 {% endhighlight %}
 {% endtabs %}
+
+![ Year Cell customization support in Xamarin.Forms Calendar](images/xamarin.forms-custom-yearview.jpg)
 
 ## Deselect today selection on initial load
 Initially, the calendar is loaded with the current day as selected date in `MonthView` when the SelectionMode is set to SingleSelection, but you can deselect the date on initial loading in `SfCalendar` by set the [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedDate.html) property as null.

@@ -330,6 +330,9 @@ schedule.ScheduleView = ScheduleView.DayView;
 DayViewSettings dayViewSettings = new DayViewSettings();
 dayViewSettings.NonWorkingHoursTimeSlotBorderColor = Color.FromHex("#fceb9f");
 dayViewSettings.NonWorkingHoursTimeSlotColor = Color.FromHex("#fcf3c9");
+dayViewSettings.TimeSlotBorderStrokeWidth = 5;
+dayViewSettings.VerticalLineColor = Color.LightGray;
+dayViewSettings.VerticalLineStrokeWidth = 5;
 schedule.DayViewSettings = dayViewSettings;
 {% endhighlight %}
 {% endtabs %}

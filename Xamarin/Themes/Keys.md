@@ -777,19 +777,6 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfDateTimeRangeNavigatorSelectedLabelTextColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Text color of the date time range navigator selected label.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
             SfDateTimeRangeNavigatorSelectedLabelBackgroundColor
             <br/>
             <br/>
@@ -874,32 +861,6 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Color of the date time range navigator thumb line.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfDateTimeRangeNavigatorTooltipBackgroundColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Background color of the date time range navigator tooltip.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfDateTimeRangeNavigatorTooltipBorderColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Border color of the date time range navigator tooltip.
             <br/>
             <br/>
         </td>
@@ -1102,6 +1063,136 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Text color of the selected placeholder.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfKanbanCardBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the card.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanCardBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the card.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanCardTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the card.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanCardTitleColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of card title.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanCardTagBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the card tag.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanCardTagTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the card tag.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanHeaderTitleTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the header.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanHeaderBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the header.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanHeaderCollapsedBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the collapsed header.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfKanbanHeaderInfoTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the header info.
             <br/>
             <br/>
         </td>
@@ -1578,6 +1669,19 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+
+    <tr>
+        <td>
+            SfNumericTextBoxBorderColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the numeric text box.
+            <br/>
+            <br/>
+        </td>
+    </tr>
     
 </table>
 
@@ -1699,6 +1803,45 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Foreground color of the up and down buttons.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfNumericUpDownBorderColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the numeric up down.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfNumericUpDownHighlightedBackgroundColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Sets the background color for the up-down button when it is pressed.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+    
+    <tr>
+        <td>
+            SfNumericUpDownHighlightedFontColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Sets the font color for the up-down button when it is pressed.
             <br/>
             <br/>
         </td>
@@ -2432,17 +2575,157 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
     <td>
-            SfTextInputLayoutPasswordToggleErrorColor          
+            SfTextInputLayoutFloatedHintUnfocusedColor          
             <br/>
             <br/>
         </td>
         <td>
-            Color of password toggle button when the input view contains error.
+            Color of floated hint text when input view is unfocused.
             <br/>
             <br/>
         </td>
-    </tr>      
+    </tr>
 
+</table>
+
+## SfBackdropPage
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+            SfBackdropPageStyles  
+            <br/>
+            <br/>
+        </td>
+        <td>
+           SfBackdropPageTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfBackdropPage without merging common theme resource and control style resource dictionaries.
+            
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfBackdropPageTheme">CustomTheme</x:String> 
+                <Color x:Key="SfBackdropPageFrontLayerBackgroundColor">Red</Color>
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SfBackdropPageFrontLayerBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the front layer.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
+
+## SfCardView
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+            SfCardViewStyles  
+            <br/>
+            <br/>
+        </td>
+        <td>
+           SfCardViewTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfCardView without merging common theme resource and control style resource dictionaries.
+            
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfCardViewTheme">CustomTheme</x:String> 
+                <Color x:Key="CardViewContentBackgroundColor">Red</Color>
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            CardViewContentBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the card view content.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfPdfViewer
@@ -5271,6 +5554,32 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+    
+    <tr>
+    <td>
+            SfBorderBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the border.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfBorderBorderColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the border control.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 
 </table>
 

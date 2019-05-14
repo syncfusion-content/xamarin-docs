@@ -267,12 +267,17 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ## Changing NonWorking Days
 You can customize the Non-Working days of a week by using [NonWorkingsDays](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~NonWorkingsDays.html) property of `WorkWeekViewSettings`.
+{% tabs %}
+{% highlight C# %}
 var nonWorkingDays = new ObservableCollection<DayOfWeek>();
 nonWorkingDays.Add(DayOfWeek.Monday);
 nonWorkingDays.Add(DayOfWeek.Friday);
 var workWeekViewSettings = new WorkWeekViewSettings();
 workWeekViewSettings.NonWorkingsDays = nonWorkingDays;
 schedule.WorkWeekViewSettings = workWeekViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
 
 ## Timeslot Appearance
 You can customize the appearance of timeslots in `WeekView`.

@@ -83,13 +83,13 @@ here [CalendarEvents](https://github.com/SyncfusionExamples/creating-events-in-x
 
 
 N> If there is no appointment for the selected day, `Inline` view and `AgendaView` displays the text as “No Appointments”.
-N> The Inline function will be available only in MonthView with Single selection mode.
+N> The `Inline` view and `AgendaView` will be available only in month view with single selection mode.
  
 ## Month Appointment Indicator
  
 You can customize the number of appointment indicators displayed in month cell using [MaximumEventIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaximumEventIndicatorCount.html) property of ‘SfCalendar’. The default value of `MaximumEventIndicatorCount` is 5.
 
-N> If appointments count are lesser than the Appointment Indicator count value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.Maximum number of appointment indicators drawn in the month cell is 5.
+N> If appointments count are lesser than the Appointment Indicator count value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.
 
 
 ## Customize inline/agenda view using DataTemplate

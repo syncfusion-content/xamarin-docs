@@ -7842,7 +7842,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="6">
+        <td rowspan="7">
             SfSunburstChartStyles  
             <br/>
             <br/>
@@ -7980,7 +7980,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="8">
+        <td rowspan="12">
             SfSparklineStyles  
             <br/>
             <br/>
@@ -8183,7 +8183,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="11">
+        <td rowspan="12">
             SfMapsStyles  
             <br/>
             <br/>
@@ -8386,7 +8386,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="4">
+        <td rowspan="6">
             SfTreeMapStyles  
             <br/>
             <br/>

@@ -232,8 +232,8 @@ void Handle_OnMonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
 
 ![ Cell customization support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-cell-customization.jpg)
 
-## Customize the month view with custom UI?
-You can customize the MonthView with Custom UI in the `SfCalendar` control using the `View` property of `MonthCellLoadedEventArgs` in the `OnMonthCellLoaded` event.
+## Create your own custom calendar month cell view
+You can customize the month view with custom view using the `View` property of `MonthCellLoadedEventArgs` in the `OnMonthCellLoaded` event `SfCalendar` control.
 {% tabs %}
 {% highlight c# %}
 private void Calendar_OnMonthCellLoaded(object sender, MonthCellLoadedEventArgs e)
@@ -245,7 +245,7 @@ private void Calendar_OnMonthCellLoaded(object sender, MonthCellLoadedEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-![ Cell customization using custom UI support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-cell-customization_customUI.jpg)
+![ Cell customization using custom view support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-cell-customization_customUI.jpg)
 
 ## How to customize month view cell using a template?
 
@@ -363,9 +363,9 @@ calendar.HeightRequest = 200;
 
 {% highlight xaml %}
 
- <syncfusion:SfCalendar  x:Name="calendar"   >
+ <syncfusion:SfCalendar  x:Name="calendar">
          <syncfusion:SfCalendar.HeaderView>
-                <Label Text="May 2019" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Large"/>
+                <Label Text="{binding CalendarDate}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="Large"/>
         </syncfusion:SfCalendar.HeaderView>
     </syncfusion:SfCalendar>
 
@@ -482,7 +482,6 @@ private void Calendar_OnYearCellLoaded(object sender, YearCellLoadedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![ Year Cell customization support in Xamarin.Forms Calendar](images/xamarin.forms-custom-yearview.jpg)
 
 ## Deselect today selection on initial load
 Initially, the calendar is loaded with the current day as selected date in `MonthView` when the SelectionMode is set to SingleSelection, but you can deselect the date on initial loading in `SfCalendar` by set the [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedDate.html) property as null.

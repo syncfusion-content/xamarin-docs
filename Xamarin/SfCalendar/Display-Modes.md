@@ -69,8 +69,6 @@ monthViewSettings.TodaySelectionBackgroundColor= Color.Green;
 calendar.MonthViewSettings = monthViewSettings;
 this.Content = calendar;
 
-N>If you want to disable the TodaySelectionBackgroundColor, set the value as transparent.
-	
 {% endhighlight %}
 
 {% endtabs %}

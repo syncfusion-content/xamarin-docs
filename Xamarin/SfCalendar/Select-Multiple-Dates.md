@@ -91,6 +91,10 @@ this.Content = calendar;
 
 ## SingleSelection mode
 
+{% tabs %}
+
+{% highlight xaml %}
+
 <syncfusion:SfCalendar  x:Name="calendar" SelectionMode="SingleSelection"/>
 
 {% endhighlight %}

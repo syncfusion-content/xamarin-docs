@@ -511,3 +511,9 @@ private void Datagrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
 {% endhighlight %}
 
 You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-661295078).
+
+## Limitations
+
+When data grid is loaded in MasterDetailPage with `AllowSwiping` as true, it behaves as follows: 
+
+ * In iOS platform, when swiping a data row, touch and hold the row for some fraction of seconds (0.25 - 0.5 seconds) and then swipe. 

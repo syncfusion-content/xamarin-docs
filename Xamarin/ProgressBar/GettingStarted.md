@@ -87,27 +87,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To launch the progress bar in UWP, initialize the SfLinearProgressRenderer() or SfCircularProgressBarRenderer() in the MainPage constructor before the LoadApplication is called as demonstrated in the following code sample.
-
-{% highlight C# %} 
-
-public MainPage() 
-{ 
-    … 
-
-  // Add the below line if you are using SfLinearProgressBar. 
-  new Syncfusion.XForms.UWP.ProgressBar.SfLinearProgressRenderer(); 
-
-  // Add the below line if you are using SfCircularProgressBar. 
-  new Syncfusion.XForms.UWP.ProgressBar.SfCircularProgressBarRenderer();
-
-  LoadApplication (new App ()); 
-  … 
-}
-
-{% endhighlight %}
-
-In addition to the above configurations, you need to initialize the progress bar assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with progress bar in `Release` mode in UWP platform.
+To launch the progress bar in UWP, initialize the progress bar assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with progress bar in `Release` mode in UWP platform.
 
 {% highlight C# %} 
 

@@ -11,347 +11,6 @@ documentation: ug
 
 This page lists the keys for each control and the element to which it is mapped for all the controls.
 
-## SfTextInputLayout
-
-<table>
-    <tr>
-        <th>Theme Dictionary<br/>
-            <br/></th>        
-        <th>
-          Keys
-            <br/>
-            <br/>
-        </th>
-        <th>
-            Description
-            <br/>
-            <br/>
-        </th>
-    </tr>
-
-    <tr>
-        <td rowspan="24">
-            SfTextInputLayoutStyles  
-            <br/>
-            <br/>
-        </td>
-		<td>
-           SfTextInputLayoutTheme 
-            <br/>
-            <br/>
-        </td>
-        <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfTextInputLayout without merging common theme resource and control style resource dictionaries.
-			
-{% highlight xaml %}
-
-<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
-             ...>
-<Application.Resources>
-    <syncCore:SyncfusionThemeDictionary>
-        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
-            <ResourceDictionary>
-                <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String> 
-                <Color x:Key="SfTextInputLayoutCounterLabelColor">Blue</Color> 
-                <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color> 
-            </ResourceDictionary>
-        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
-    </syncCore:SyncfusionThemeDictionary>
-</Application.Resources>
-
-....
-
-</Application>
-
-{% endhighlight %}
-            <br/>
-            <br/>
-        </td>
-	</tr>
-	<tr>
-        <td rowspan="2">
-            SyncPrimaryColor  
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of hint when text input layout is focused.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Color of line/border when text input layout is focused.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-
-    <tr>
-        <td rowspan="3">
-            SyncErrorColor   
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of hint when the input view contains error and is focused.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Color of border when input view contains error.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Color of counter label when input view contains error.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    
-    <tr>
-        <td>
-            SfTextInputLayoutHintColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of hint when the text input layout is in the default state.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    <tr>
-    <td>
-            SfTextInputLayoutDisabledHintColor 
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of hint when text input layout is disabled.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-    <td>
-            SfTextInputLayoutFloatedHintDisabledColor  
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of hint when text input layout is disabled, and text inside the input view is floated.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfTextInputLayoutLineColor   
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of line/border when text input layout is in the default state.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-    <td>
-            SfTextInputLayoutFilledLineDisabledColor    
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of line when text input layout is in the disabled state.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfTextInputLayoutOutlinedLineDisabledColor     
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of border when text input layout is in the disabled state.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfTextInputLayoutCounterLabelColor      
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of counter label when text input layout is in the default state.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfTextInputLayoutCounterLabelDisabledColor       
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of counter label when text input layout is in the disabled state.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfTextInputLayoutContainerBackgroundColor           
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of container background when the text input layout is in the default state.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-    <td>
-            SfTextInputLayoutContainerBackgroundDisabledColor       
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of container background when text input layout is in the disabled state.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfTextInputLayoutHelperTextColor       
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of helper text when text input layout is in the default state.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfTextInputLayoutHelperTextDisabledColor       
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of helper text when text input layout is in the disabled state.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfTextInputLayoutErrorTextColor       
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of error text when text input layout is in the default state.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-    <td>
-            SfTextInputLayoutErrorTextDisabledColor        
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of error text when text input layout is in the disabled state.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfTextInputLayoutPasswordToggleFocusedColor         
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of password toggle button when the input view is focused.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-    <td>
-            SfTextInputLayoutPasswordToggleDisabledColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of password toggle button when the text input layout is in the disabled state.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-    <td>
-            SfTextInputLayoutPasswordToggleUnfocusedColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of password toggle button when the input view is unfocused.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-    <td>
-            SfTextInputLayoutPasswordToggleErrorColor          
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of password toggle button when the input view contains error.
-            <br/>
-            <br/>
-        </td>
-    </tr>      
-
-</table>
-
 ## SfChart
 
 <table>
@@ -411,7 +70,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
 	</tr>
     	<tr>
-        <td rowspan="2">
+        <td rowspan="4">
             SyncPrimaryColor  
             <br/>
             <br/>
@@ -429,20 +88,21 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
-            <tr>
-    <td>
-            SyncPrimaryLightForegroundColor
-            <br/>
-            <br/>
-        </td>
+	<tr>
         <td>
-            Text color of trackball label.
+            Background color of the axis label of VerticalLine and HorizontalLine annotations.
             <br/>
             <br/>
         </td>
     </tr>
-
+	<tr>
+        <td>
+            Border color of the axis label of VerticalLine and HorizontalLine annotations.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
         <tr>
     <td>
             SfChartTitleTextColor
@@ -536,32 +196,6 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfChartAnnotationStrokeColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Stroke color of the annotation.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfChartAnnotationTextColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Text color of the annotation label.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
             SfChartAnnotationLabelBorderColor
             <br/>
             <br/>
@@ -588,38 +222,12 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfChartAnnotationAxisLabelBackgroundColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Background color of the axis label of VerticalLine and HorizontalLine annotations.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
             SfChartAnnotationAxisLabelTextColor
             <br/>
             <br/>
         </td>
         <td>
             Text color of axis label of VerticalLine and HorizontalLine annotations.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
-            SfChartAnnotationAxisLabelBorderColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Border color of the axis label of VerticalLine and HorizontalLine annotations.
             <br/>
             <br/>
         </td>
@@ -2495,6 +2103,348 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>
 </table>
+
+## SfTextInputLayout
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+            SfTextInputLayoutStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfTextInputLayoutTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfTextInputLayout without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfTextInputLayoutTheme">CustomTheme</x:String> 
+                <Color x:Key="SfTextInputLayoutCounterLabelColor">Blue</Color> 
+                <Color x:Key="SfTextInputLayoutCounterLabelDisabledColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td rowspan="2">
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of hint when text input layout is focused.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Color of line/border when text input layout is focused.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td rowspan="3">
+            SyncErrorColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of hint when the input view contains error and is focused.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Color of border when input view contains error.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Color of counter label when input view contains error.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    
+    <tr>
+        <td>
+            SfTextInputLayoutHintColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of hint when the text input layout is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+    <td>
+            SfTextInputLayoutDisabledHintColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of hint when text input layout is disabled.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfTextInputLayoutFloatedHintDisabledColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of hint when text input layout is disabled, and text inside the input view is floated.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfTextInputLayoutLineColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of line/border when text input layout is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfTextInputLayoutFilledLineDisabledColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of line when text input layout is in the disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfTextInputLayoutOutlinedLineDisabledColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of border when text input layout is in the disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfTextInputLayoutCounterLabelColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of counter label when text input layout is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfTextInputLayoutCounterLabelDisabledColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of counter label when text input layout is in the disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfTextInputLayoutContainerBackgroundColor           
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of container background when the text input layout is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfTextInputLayoutContainerBackgroundDisabledColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of container background when text input layout is in the disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfTextInputLayoutHelperTextColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of helper text when text input layout is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfTextInputLayoutHelperTextDisabledColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of helper text when text input layout is in the disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfTextInputLayoutErrorTextColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of error text when text input layout is in the default state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfTextInputLayoutErrorTextDisabledColor        
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of error text when text input layout is in the disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+    <td>
+            SfTextInputLayoutPasswordToggleFocusedColor         
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of password toggle button when the input view is focused.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfTextInputLayoutPasswordToggleDisabledColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of password toggle button when the text input layout is in the disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfTextInputLayoutPasswordToggleUnfocusedColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of password toggle button when the input view is unfocused.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+    <td>
+            SfTextInputLayoutPasswordToggleErrorColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of password toggle button when the input view contains error.
+            <br/>
+            <br/>
+        </td>
+    </tr>      
+
+</table>
+
 ## SfPdfViewer
 
 <table>
@@ -2861,7 +2811,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="24">
+        <td rowspan="25">
             SfDataGridStyles  
             <br/>
             <br/>
@@ -2899,6 +2849,20 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+
+     <tr>
+        <td>
+            SfDataGridBackgroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the remaining area other than rows/columns is rendered in DataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+
 	<tr>
         <td>
             SfDataGridHeaderBackgroundColor  
@@ -4637,7 +4601,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="11">
+        <td rowspan="14">
             SfAutoCompleteStyles  
             <br/>
             <br/>
@@ -4675,25 +4639,54 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <tr>
-        <td rowspan="2">
+        <td>
             SyncPrimaryColor  
             <br/>
             <br/>
         </td>
         <td>
+            Color of indicator text in AutoComplete.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	</tr>
+    <tr>
+        <td>
+            SyncPrimaryLightColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
             Color of highlighted text in AutoComplete.
+        <br/>
+        <br/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            SfAutoCompleteBackgroundColor  
+            <br/>
+            <br/>
+        </td> 
+        <td>
+            Background color of AutoComplete.
             <br/>
             <br/>
         </td>
     </tr>
     <tr>
         <td>
-            Color of indicator text in AutoComplete.
+            SfAutoCompleteTextColor  
             <br/>
             <br/>
-        </td> 
+        </td>
+        <td>
+            Text color of AutoComplete.
+            <br/>
+            <br/>
+        </td>
     </tr>
-	</tr>
 	<tr>
         <td>
             SfAutoCompleteBorderColor  
@@ -4854,6 +4847,18 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+    <tr>
+    <td>
+           SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+             Color of the SfBusyIndicator text.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfButton
@@ -4875,7 +4880,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="3">
+        <td rowspan="5">
             SfButtonStyles  
             <br/>
             <br/>
@@ -4914,26 +4919,45 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
 	</tr>
     <tr>
-    <td>
+    <td rowspan="2">
             SyncPrimaryColor 
             <br/>
             <br/>
         </td>
         <td>
-            Color of border when text input layout is focused.
+            Background color of the SfButton.
             <br/>
             <br/>
         </td>
     </tr>
-    
+	<tr>
+	    <td>
+		    Border color of the SfButton.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+
     <tr> 
-    <td>
+        <td>
             SyncPrimaryDarkColor  
             <br/>
             <br/>
         </td>
         <td>
             Color of the button when it is in the pressed state.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	<tr> 
+        <td>
+            SyncPrimaryForegroundColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the SfButton.
             <br/>
             <br/>
         </td>
@@ -5057,7 +5081,18 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
-
+<tr>
+    <td>
+           SfCarouselBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfCarousel.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfCheckBox
@@ -5137,6 +5172,30 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Color of checked item.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SfCheckBoxBackgroundColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfCheckBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SfCheckBoxTextColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the SfCheckBox.
             <br/>
             <br/>
         </td>
@@ -5237,7 +5296,31 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
+    <tr>
+        <td>
+            SfChipBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfChip.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SfChipBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the SfChip.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
 </table>
 
 ## SfChipGroup
@@ -5259,7 +5342,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="6">
+        <td rowspan="8">
             SfChipGroupStyles  
             <br/>
             <br/>
@@ -5333,7 +5416,55 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
+    <tr>
+        <td>
+            SfChipGroupBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of SfChipGroup.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	    <tr>
+        <td>
+            SfChipGroupBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of SfChipGroup.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the selected chip in SfChipGroup.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SyncPrimaryForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the selected chip in SfChipGroup.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
 </table>
 
 ## SfComboBox
@@ -5355,7 +5486,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="15">
+        <td rowspan="18">
             SfComboBoxStyles  
             <br/>
             <br/>
@@ -5393,25 +5524,54 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
          <tr>
-        <td rowspan="2">
+        <td>
             SyncPrimaryColor  
             <br/>
             <br/>
         </td>
         <td>
-            Color of highlighted text in ComboBox.
+            Color of indicator text in ComboBox.   
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	</tr>
+    <tr>
+        <td>
+            SyncPrimaryLightColor  
+            <br/>
+            <br/>
+        </td> 
+        <td>
+            Color of highlighted text in ComboBox. 
             <br/>
             <br/>
         </td>
     </tr>
     <tr>
         <td>
-            Color of indicator text in ComboBox.
+            SfComboBoxBackgroundColor  
             <br/>
             <br/>
-        </td> 
+        </td>
+        <td>
+            BackgroundColor of SfComboBox.
+            <br/>
+            <br/>
+        </td>
     </tr>
-	</tr>
+    <tr>
+        <td>
+            SfComboBoxTextColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 	<tr>
         <td>
             SfComboBoxBorderColor  
@@ -5456,6 +5616,18 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Background color of the suggestion box in SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+       <tr>
+        <td>
+            SfComboBoxSelectedDropDownItemColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the suggestion box's item in SfComboBox. 
             <br/>
             <br/>
         </td>
@@ -5532,7 +5704,18 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
+   <tr>
+    <td>
+           SfComboBoxHighlightedDropDownButtonBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Highlighted Background color of the drop-down button in SfComboBox.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfNavigationDrawer
@@ -5591,7 +5774,18 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
-
+  <tr>
+    <td>
+           SfNavigationDrawerBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfNavigationDrawer.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfPicker
@@ -5613,7 +5807,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="8">
+        <td rowspan="10">
             SfPickerStyles  
             <br/>
             <br/>
@@ -5735,6 +5929,30 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+	  <tr>
+    <td>
+          SfPickerBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfPicker.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	  <tr>
+    <td>
+          SfPickerBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the SfPicker.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 
 </table>
 
@@ -5819,6 +6037,30 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+	<tr>
+        <td>
+            SfRadioButtonBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the SfRadioButton.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SfRadioButtonTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the SfRadioButton.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 
 </table>
 
@@ -5881,7 +6123,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	</tr>
      <tr>
     <td>
-           SyncPrimaryColor
+           SfRadialMenuPressedColor
             <br/>
             <br/>
         </td>
@@ -5899,6 +6141,30 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Color of the center button's border in SfRadialMenu.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+    <td>
+           SfRadialMenuCenterButtonBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the center button's background in SfRadialMenu.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+   <tr>
+    <td>
+           SfRadialMenuCenterButtonTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the center button's text in SfRadialMenu.
             <br/>
             <br/>
         </td>
@@ -6030,6 +6296,33 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+
+	  <tr>
+    <td>
+           SfRangeSliderBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of SfRangeSlider.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	  <tr>
+    <td>
+           SfRangeSliderTickColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color for ticks in SfRangeSlider.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
      <tr>
     <td>
            SfRangeSliderLabelColor
@@ -6074,18 +6367,6 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Color of tooltip's text in SfRangeSlider.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-     <tr>
-    <td>
-           SfRangeSliderToolTipBorderColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of tooltip's border in SfRangeSlider.
             <br/>
             <br/>
         </td>
@@ -6197,17 +6478,29 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            SfRatingTooltipBorderColor
+            SfRatingUnratedFillColor
             <br/>
             <br/>
         </td>
         <td>
-            Border color of the tooltip in SfRating.
+            Fill color for unrated items in SfRating.
             <br/>
             <br/>
         </td>
     </tr>
 
+	  <tr>
+        <td>
+            SfRatingUnratedStrokeColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Stroke color for unrated items in SfRating.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfRotator
@@ -6228,7 +6521,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="3">
+        <td rowspan="4">
             SfRotatorStyles  
             <br/>
             <br/>
@@ -6278,7 +6571,31 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
+    <tr>
+        <td>
+            SfRotatorUnselectedDotColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of Unselected dots in SfRotator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	    <tr>
+        <td>
+            SfRotatorDotsBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+        <td>
+            Color of dots border in SfRotator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 </table>
 
 ## SfSegmentedControl
@@ -6375,12 +6692,36 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
      <tr>
         <td>
-            SfSegmentBorderColor
+            SfSegmentedControlBorderColor
             <br/>
             <br/>
         </td>
         <td>
             Color of segment's border in the SfSegmentedControl.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SfSegmentColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of segment in the SfSegmentedControl.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the selected item in the SfSegmentedControl.
             <br/>
             <br/>
         </td>
@@ -6981,6 +7322,19 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+
+     <tr>
+    <td>
+            SfSunburstChartBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of sunburst background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
     
     <tr>
     <td>
@@ -7106,6 +7460,58 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+
+     <tr>
+    <td>
+            SfSparklineAreaBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of area sparkline background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfLineSparklineBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of line sparkline background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfColumnSparklineBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of column sparkline background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfWinLossSparklineBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of win loss sparkline background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
     
     <tr>
     <td>
@@ -7257,6 +7663,19 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+
+     <tr>
+    <td>
+            SfMapsBackgroundColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of maps background.
+            <br/>
+            <br/>
+        </td>
+    </tr>
     
     <tr>
     <td>
@@ -7463,19 +7882,6 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
     <td>
-            SfTreemapLabelColor     
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of label in treemap.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-    <td>
             SfTreemapLeafItemBorderColor      
             <br/>
             <br/>
@@ -7486,6 +7892,45 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
+
+     <tr>
+    <td>
+            SfTreemapTooltipBackgroundColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip background in treemap.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfTreemapTooltipStrokeColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip stroke in treemap.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+     <tr>
+    <td>
+            SfTreemapTooltipTextColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tooltip text in treemap.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
 
 </table>
 

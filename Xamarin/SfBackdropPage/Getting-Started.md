@@ -60,7 +60,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 To use the backdrop page inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and are discussed in the following sections:
 
-N> If you are adding the references from toolbox, this step is not needed.
+N> If you are adding the references from toolbox, below steps are not needed.
 
 ### iOS
 

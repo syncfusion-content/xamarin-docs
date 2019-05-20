@@ -259,7 +259,7 @@ View can be created by the following code snippet.
                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                 xmlns:local="clr-namespace:SegmentGettingStarted"
                 xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-                xmlns:segmentCollection="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+                xmlns:segmentCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
                 x:Class="SegmentGettingStarted.MainPage">
     <ContentPage.BindingContext>
         <local:ViewModel x:Name="viewModel" />
@@ -416,7 +416,7 @@ With the help of  Xamarin.Forms `System.Collections.Generic` we can add string d
                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                 xmlns:local="clr-namespace:SegmentGettingStarted"
                 xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-                xmlns:segmentCollection="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+                xmlns:segmentCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
                 x:Class="SegmentGettingStarted.MainPage">
     <ContentPage.BindingContext>
         <local:ViewModel x:Name="viewModel" />
@@ -613,7 +613,7 @@ In ViewModel add the below given code to get the respective items in SfSegmented
                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                  xmlns:local="clr-namespace:SegmentGettingStarted"
                   xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-                 xmlns:segmentCollection="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+                 xmlns:segmentCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
                  x:Class="SegmentGettingStarted.MainPage">
         <ContentPage.BindingContext>
             <local:ViewModel x:Name="viewModel" />
@@ -878,7 +878,7 @@ In ViewModel add the below given code to get the respective items/collection in 
                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                  xmlns:local="clr-namespace:SegmentGettingStarted"
                   xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-                 xmlns:segmentCollection="clr-namespace:System.Collections.Generic;assembly=mscorlib"
+                 xmlns:segmentCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
                  x:Class="SegmentGettingStarted.MainPage">
     
         <ContentPage.BindingContext>

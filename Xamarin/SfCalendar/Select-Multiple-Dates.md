@@ -39,7 +39,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![MultiSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-MultiSelection.png)
+![MultiSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-MultiSelection.jpg)
 
 N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of `SfCalendar` control.
 
@@ -79,4 +79,4 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![MultiRangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-MultiRangeSelection.png)
+![MultiRangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-MultiRangeSelection.jpg)

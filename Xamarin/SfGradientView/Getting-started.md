@@ -106,7 +106,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 The Android platform does not require any additional configuration to render the gradient view.
 
-## Creating SfGradientView control
+## Adding Gradient View 
 
 The `SfGradientView` control is configured entirely in C# code or in XAML markup. The `SfGradientView` supports linear gradient and radial gradient. Each gradient is a collection of gradient stops which used to set colors with different offsets. The following steps explain how to create a `SfGradientView` and configure its elements.
 
@@ -128,7 +128,7 @@ using Syncfusion.XForms.Graphics;
 
 {% endtabs %}
 
-#### Adding SfLinearGradientBrush
+#### Adding Linear Gradient Brush
 
 `SfLinearGradientBrush` is used to create linear gradient effects. 
 
@@ -183,7 +183,7 @@ namespace GradientViewGettingStarted
 
 ![SfGradientView](images/LinearGradientView.png)
 
-#### Adding SfRadialGradientBrush
+#### Adding Radial Gradient Brush
 
 `SfRadialGradientBrush` is used to create radial gradient effects.
 

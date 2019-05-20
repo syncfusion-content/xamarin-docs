@@ -168,8 +168,8 @@ namespace GradientViewGettingStarted
             SfLinearGradientBrush linearGradientBrush = new SfLinearGradientBrush();
             linearGradientBrush.GradientStops = new GradientStopCollection()
             {
-                new SfGradientStop(){Color = Color.FromHex("#2d265b "), Offset=0.0},
-                new SfGradientStop(){Color = Color.FromHex("#b8495c "), Offset=1.0},
+                new SfGradientStop(){Color = Color.FromHex("#2d265b"), Offset=0.0},
+                new SfGradientStop(){Color = Color.FromHex("#b8495c"), Offset=1.0},
             };
             gradientView.BackgroundBrush = linearGradientBrush;
             grid.Children.Add(gradientView);

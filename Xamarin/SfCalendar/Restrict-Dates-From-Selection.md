@@ -83,3 +83,23 @@ this.Content = calendar;
 {% endtabs %}
 
 ![BlackoutDate color support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-Blackout-color.jpg)
+
+### Rendering Blackout dates using MonthCellLoaded event
+Using[OnMonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnMonthCellLoaded_EV.html) event you can render the black out dates.
+
+{% tabs %}
+{% highlight c# %}
+
+private void Calendar_OnMonthCellLoaded(object sender, EventArgs e)
+{
+	List<DateTime> blackoutDates = new List<DateTime>();
+	var dayOfWeek = e.Date.DayOfWeek;
+    if(dayOfWeek==DayOfWeek.Saturday || dayOfWeek == DayOfWeek.Sunday)
+    {
+		blackoutDates.Add(e.Date);
+		calendar.BlackoutDates = blackoutDates;
+	}
+}
+
+{% endhighlight %}
+{% endtabs %}

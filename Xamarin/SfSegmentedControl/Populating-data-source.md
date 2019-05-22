@@ -61,7 +61,7 @@ this.Content = segmentedControl;
 
 {% endtabs %}
 
-![](images/Data-source/Xamarin_Forms_string.png)
+![SfSegmentedControl with collection of string](images/Data-source/Xamarin_Forms_string.png)
 
 ## Segment items
 
@@ -128,7 +128,7 @@ this.Content = segmentedControl;
 
 {% endtabs %} 
 
-![](images/Data-source/Xamarin_Forms_SegmentItemCollection.png)    
+![SfSegmentedControl with collection of SfSegmentItem](images/Data-source/Xamarin_Forms_SegmentItemCollection.png)    
 
 ## Custom views
 
@@ -219,6 +219,6 @@ segmentedControl.SelectionIndicatorSettings = new SelectionIndicatorSettings()
 
 {% endtabs %}
 
-![](images/Data-source/Xamarin_Forms_ViewCollection.png)
+![SfSegmentedControl with collection of custom object](images/Data-source/Xamarin_Forms_ViewCollection.png)
 
 

@@ -18,7 +18,10 @@ The segmented control provides the collection of strings as a data source.
 {% tabs %}
 
 {% highlight xaml %}
+Namespace:
 
+xmlns:sys="clr-namespace:System.Collections.Generic;assembly=netstandard"
+...
 <ContentPage.Content>
     <buttons:SfSegmentedControl  
         VisibleSegmentsCount="3"
@@ -27,11 +30,11 @@ The segmented control provides the collection of strings as a data source.
         FontColor="Black"
         Color="Transparent"
         SelectionTextColor="#02A0AE"> 
-        <segmentCollection:List x:TypeArguments="x:String">
+        <sys:List x:TypeArguments="x:String">
             <x:String>Formals</x:String>
             <x:String>Casuals</x:String>
             <x:String>Trendy</x:String>
-        </segmentCollection:List>
+        </sys:List>
     </buttons:SfSegmentedControl>
 </ContentPage.Content>
 
@@ -39,27 +42,20 @@ The segmented control provides the collection of strings as a data source.
 
 {% highlight c# %}
 
- public partial class SegmentedControlSample : ContentPage
+SfSegmentedControl segmentedControl = new SfSegmentedControl();
+List<string> clothList = new List<string>
 {
-    public SegmentedControlSample()
-    {
-        InitializeComponent();
-        SfSegmentedControl segmentedControl = new SfSegmentedControl();
-        List<string> clothList = new List<string>
-        {
-           "Formals","Casuals","Trendy"
-        };
+    "Formals","Casuals","Trendy"
+};
 
-        segmentedControl.ItemsSource = clothList;
-        segmentedControl.Color = Color.Transparent;
-        segmentedControl.VisibleSegmentsCount = 3;
-        segmentedControl.SelectedIndex = 2;
-        segmentedControl.BorderColor = Color.FromHex("#3F3F3F");
-        segmentedControl.FontColor = Color.Black;
-        segmentedControl.SelectionTextColor = Color.FromHex("#02A0AE");
-        this.Content = segmentedControl;
-    }
-}
+segmentedControl.ItemsSource = clothList;
+segmentedControl.Color = Color.Transparent;
+segmentedControl.VisibleSegmentsCount = 3;
+segmentedControl.SelectedIndex = 2;
+segmentedControl.BorderColor = Color.FromHex("#3F3F3F");
+segmentedControl.FontColor = Color.Black;
+segmentedControl.SelectionTextColor = Color.FromHex("#02A0AE");
+this.Content = segmentedControl;
 
 {% endhighlight %}
 
@@ -117,23 +113,16 @@ public class ViewModel
 
 {% highlight c# %}
 
-public partial class SegmentedControlSample : ContentPage
-{
-    public SegmentedControlSample()
-    {
-        InitializeComponent();
-        SfSegmentedControl segmentedControl = new SfSegmentedControl();
-        segmentedControl.BindingContext = new ViewModel();
-        segmentedControl.SetBinding(SfSegmentedControl.ItemsSourceProperty, "SegmentItems");
-        segmentedControl.CornerRadius = 20;
-        segmentedControl.Color = Color.White;
-        segmentedControl.VisibleSegmentsCount = 5;
-        segmentedControl.BorderColor = Color.FromHex("#2C7BBC");
-        segmentedControl.FontColor = Color.FromHex("#3F3F3F");
-        segmentedControl.SelectionTextColor = Color.White;
-        this.Content = segmentedControl;
-    }
-}
+SfSegmentedControl segmentedControl = new SfSegmentedControl();
+segmentedControl.BindingContext = new ViewModel();
+segmentedControl.SetBinding(SfSegmentedControl.ItemsSourceProperty, "SegmentItems");
+segmentedControl.CornerRadius = 20;
+segmentedControl.Color = Color.White;
+segmentedControl.VisibleSegmentsCount = 5;
+segmentedControl.BorderColor = Color.FromHex("#2C7BBC");
+segmentedControl.FontColor = Color.FromHex("#3F3F3F");
+segmentedControl.SelectionTextColor = Color.White;
+this.Content = segmentedControl;
 
 {% endhighlight %}
 

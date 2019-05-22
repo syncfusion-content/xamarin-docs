@@ -9,7 +9,7 @@ documentation: ug
 
 From version 3.5, Xamarin.Forms has introduced a new approach, called BindableLayout, which works with all the layouts that are derived from Layout<T>. By simply setting ItemTemplate and ItemsSource, BindableLayout creates a group of UI (for the given ItemTemplate) for every data in the ItemsSource and add them as children.
 
-Since [`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout.html) is an extended class of Layout<T>, this approach is also possible for [`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout.html).
+Since [`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout.html) is an extended class of Layout&lt<T>, this approach is also possible for SfCardLayout.
 
 ## Initialize view model
 

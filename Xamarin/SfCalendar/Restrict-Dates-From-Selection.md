@@ -103,3 +103,5 @@ private void Calendar_OnMonthCellLoaded(object sender, EventArgs e)
 
 {% endhighlight %}
 {% endtabs %}
+
+![BlackoutDate color support in Xamarin.Forms Calendar](images/xamarin.forms-Blackoutdate_MonthCellLoaded.jpg)

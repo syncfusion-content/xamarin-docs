@@ -475,8 +475,7 @@ You can customize the YearView with Custom UI in the `SfCalendar` control using 
 private void Calendar_OnYearCellLoaded(object sender, YearCellLoadedEventArgs e)
 {
     var button = new Button();
-    button.Text = CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(e.Month.Month);
-    button.BackgroundColor = Color.Pink;
+    button.Text = e.Month.ToString("MMMM");
     e.View = button;        
 }
 {% endhighlight %}

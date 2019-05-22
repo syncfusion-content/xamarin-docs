@@ -57,9 +57,7 @@ N> In range selection, navigation through swipe will be restricted and moving be
 
 {% highlight c# %}
 
-SfCalendar calendar = new SfCalendar();	
 calendar.SelectionMode=SelectionMode.RangeSelection;
-this.Content = calendar;
 	
 {% endhighlight %}
 
@@ -78,10 +76,8 @@ this.Content = calendar;
 {% endhighlight %}
 
 {% highlight c# %}
-	
-SfCalendar calendar = new SfCalendar();	
+
 calendar.SelectionMode=SelectionMode.MultiRangeSelection;
-this.Content = calendar;
 	
 {% endhighlight %}
 
@@ -101,9 +97,7 @@ this.Content = calendar;
 
 {% highlight c# %}
 	
-SfCalendar calendar = new SfCalendar();	
-calendar.SelectionMode=SelectionMode.SingleSelection;
-this.Content = calendar;
+calendar.SelectionMode = SelectionMode.SingleSelection;
 	
 {% endhighlight %}
 

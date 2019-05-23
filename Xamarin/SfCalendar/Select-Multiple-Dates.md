@@ -21,7 +21,7 @@ Dates can be selected by making a touch on month view cells. The default [Select
 
 The selected dates can be retrieved through `OnSelectionChanged` event which is raised on selecting.
 
-## MultiSelection mode
+## Multi selection mode
 
 {% tabs %}
 
@@ -45,7 +45,7 @@ this.Content = calendar;
 
 N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of `SfCalendar` control.
 
-## RangeSelection mode
+## Range selection mode
 
 {% tabs %}
 
@@ -65,7 +65,7 @@ calendar.SelectionMode=SelectionMode.RangeSelection;
 
 ![RangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-RangeSelection.png)
 
-## MultiRangeSelection mode
+## Multi range selection mode
 
 {% tabs %}
 
@@ -85,8 +85,8 @@ calendar.SelectionMode=SelectionMode.MultiRangeSelection;
 
 ![MultiRangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-MultiRangeSelection.jpg)
 
-## SingleSelection mode
-
+## Single selection mode
+ 
 {% tabs %}
 
 {% highlight xaml %}

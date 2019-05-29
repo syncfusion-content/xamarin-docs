@@ -10,21 +10,23 @@ documentation: ug
 
 The maximum number of digits to be displayed after the decimal point can be specified by using [`MaximumDecimalDigits `](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms~Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown~MaximumDecimalDigits.html) property. 
 
-N> The [`MaximumDecimalDigits `](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms~Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown~MaximumDecimalDigits.html) property can be provided with positive value only.
+N> The [`MaximumDecimalDigits `](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms~Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown~MaximumDecimalDigits.html). The MaximumDecimalDigits property is provided with positive value only. By default, the value of this property is 2.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown" MaximumDecimalDigits ="2"/>
+	<numeric:SfNumericUpDown x:Name="numericUpDown" MaximumDecimalDigits ="3"/>
 	
 {% endhighlight %}
 
 
 {% highlight C# %}
 
-	numericUpDown.MaximumDecimalDigits  = 2;
+	numericUpDown.MaximumDecimalDigits  = 3;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![Display the SfNumericUpDown control with MaximumDecimalDigits](images/MaximumDecimalDigits.png)

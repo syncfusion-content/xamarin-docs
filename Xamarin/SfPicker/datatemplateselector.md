@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DataTemplateSlector support for Syncfusion Essential Xamarin.Forms SfPicker
+title: DataTemplateSlector support for Xamarin.Forms SfPicker
 description: How to use a DataTemplateSelctor  for Xamarin.Forms SfPicker
 platform: Xamarin
 control: Picker

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio Xamarin products
+title: Installation and Deployment process for Syncfusion Xamarin
 description: Learn how to install and deploy the Syncfusion Xamarin component
 platform: Xamarin
 control: Installation and Deployment

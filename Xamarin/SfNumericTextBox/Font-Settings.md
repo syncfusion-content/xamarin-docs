@@ -11,9 +11,9 @@ documentation: ug
 NumericTextBox has the following two font-related properties that display the value's text:
 We can customize the font style of NumericTextBox by using the following properties.
 
-* `FontSize` : set the font size for NumericTextBox’s text. Default value is 20.
+* `FontSize` : Sets the font size for NumericTextBox’s text. 
 
-* `FontAttributes` : set the style of NumericTextBox’s text. We can give three types of style on it.It is specifying style information like Italic and Bold (using the FontAttributes enumeration in C#)
+* `FontAttributes` : Sets the style of NumericTextBox’s text. We can give three types of style on it.It is specifying style information like Italic and Bold (using the FontAttributes enumeration in C#)
 
 1. Bold- The font is bold
 2. Italic – The font is Italic
@@ -21,7 +21,9 @@ We can customize the font style of NumericTextBox by using the following propert
 
 N> Default value is None.
 
-* `TextAlignment` : set the style of NumericTextBox’s text. We can give three types of style on it.It is specifying style information like Start,End and Center (using the TextAlignment enumeration in C#)
+* `FontFamily` : Customizes the font family of the NumericTextBox’s text.
+
+* `TextAlignment` : Sets the style of NumericTextBox’s text. We can give three types of style on it.It is specifying style information like Start,End and Center (using the TextAlignment enumeration in C#)
 
 N> Default value is Start.
 
@@ -48,4 +50,4 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![](images/textformatend.png)
+![Display SfNumericTextBox control with TextAlignment](images/textformatend.png)

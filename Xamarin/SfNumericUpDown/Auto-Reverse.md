@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Watermark support in Syncfusion NumericUpDown control for Xamarin.Forms
+title: Watermark support in Syncfusion NumericUpDown for Xamarin.Forms
 description: Learn how to add water mark text to NumericUpDown.
 platform: Xamarin
 control: NumericUpDown
@@ -17,7 +17,7 @@ N> By default the property value is false.
 {% highlight C# %}
 
 SfNumericUpDown numericUpDown=new SfNumericUpDown();
-	numericUpDown.AutoReverse = true;
+numericUpDown.AutoReverse = true;
 
 {% endhighlight %}
 
@@ -33,28 +33,31 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 User can restrict the Values between a specific range by setting `Maximum` and `Minimum` property value.
 
-N> By default the minimum property value is 0 and maximum property value is 100.
+N> By default, the value of minimum property is Double.MinValue and the value of maximum property is Double.MaxValue.
+In iOS, if typed value is less than minimum value, the minimum value will be validated.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown" Minimum="10" Maximum="50"/>
+	<numeric:SfNumericUpDown x:Name="numericUpDown" Minimum="10" Maximum="100"/>
 	
 {% endhighlight %}
 
 {% highlight C# %}
+
 SfNumericUpDown numericUpDown=new SfNumericUpDown();
-	numericUpDown.Minimum = 0;
-	numericUpDown.Maximum = 100;
+numericUpDown.Minimum = 0;
+numericUpDown.Maximum = 100;
+this.Content = numericUpDown;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/maximum.png)
+![Display the value with maximum](images/maximum.png)
 
-![](images/minimum.png)
+![Display the value with minimum](images/minimum.png)
 
 ## Set Increment
 
@@ -73,7 +76,30 @@ N> By default the property value is 1.
 {% highlight C# %}
 
 SfNumericUpDown numericUpDown=new SfNumericUpDown();
-	numericUpDown.StepValue = 6;
+numericUpDown.StepValue = 6;
+this.Content = numericUpDown;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Set IsEditable
+
+This property is used to decide whether users need to perform edit operation in input field.
+
+N> By default, the value of IsEditable property is true.
+{% tabs %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown Value="123"  IsEditable="True"/>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+numericUpDown.IsEditable = true;
 
 {% endhighlight %}
 

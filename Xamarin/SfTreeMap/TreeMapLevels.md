@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TreeMapLevels
-description: treemaplevels
+title: TreeMapLevels in Syncfusion TreeMap control for Xamarin.Forms
+description: Learn how to categorize the levels in Syncfusion TreeMap control
 platform: xamarin
 control: TreeMap
 documentation: ug

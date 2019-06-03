@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization
-description: customization
+title: Customization in Syncfusion TreeMap control for Xamarin.Forms
+description: This section explains the steps required to customize the data in Syncfusion TreeMap control for Xamarin.Forms
 platform: xamarin
 control: TreeMap
 documentation: ug

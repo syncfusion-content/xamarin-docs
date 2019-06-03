@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DataBinding
-description: databinding
+title: DataBinding in Syncfusion TreeMap control for Xamarin.Forms
+description: Learn how to add data source in Syncfusion TreeMap control
 platform:  xamarin
 control: TreeMap
 documentation: ug

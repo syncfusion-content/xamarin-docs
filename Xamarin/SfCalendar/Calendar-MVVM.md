@@ -21,7 +21,7 @@ XAML:
 <calendar:SfCalendar x:Name="calendar"
                      ShowInlineEvents="True"
                      SelectionMode="SingleSelection"
-                     SelectedDates="{Binding SelectedDate, Mode=TwoWay}">
+                     SelectedDate="{Binding SelectedDate, Mode=TwoWay}">
 </calendar:SfCalendar>
 {% endhighlight %}
 {% endtabs %}
@@ -131,7 +131,7 @@ calendar.SetBinding(SfCalendar.SelectedRangeProperty, new Binding("SelectedRange
 <calendar:SfCalendar x:Name="calendar"
                      ShowInlineEvents="True"
                      SelectionMode="MultiRangeSelection"
-                     SelectedRange ="{Binding SelectedRanges, Mode=TwoWay}"
+                     SelectedRange ="{Binding SelectedRanges, Mode=TwoWay}">
 </calendar:SfCalendar>
 {% endhighlight %}
 {% endtabs %}

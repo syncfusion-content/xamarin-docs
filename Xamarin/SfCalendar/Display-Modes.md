@@ -78,7 +78,7 @@ this.Content = calendar;
 
 
 N> Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
-N> To disable the current day selection, use `TodaySelectionBackgroundColor` color as Transparent
+N> To disable the current day selection, use `TodaySelectionBackgroundColor` color as Transparent.
 
 ### Customize trailing and leading days
 

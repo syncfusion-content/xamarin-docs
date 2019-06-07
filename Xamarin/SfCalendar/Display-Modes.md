@@ -42,7 +42,8 @@ We can customize the calendar view in monthView mode by using [MonthViewSettings
                         SelectedDayTextColor="#000000"
                         DayHeaderFormat="EEEEE"
 						DayFontSize="12"
-						DayHeaderFontSize="14"/>
+						DayHeaderFontSize="14"
+						TodaySelectionBackgroundColor="Green"/>
            </syncfusion:SfCalendar.MonthViewSettings>
 </syncfusion:SfCalendar>  
 
@@ -77,6 +78,7 @@ this.Content = calendar;
 
 
 N> Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
+N> To disable the current day selection, use `TodaySelectionBackgroundColor` color as Transparent
 
 ### Customize trailing and leading days
 

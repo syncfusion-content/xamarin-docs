@@ -461,4 +461,4 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source of this demo from [here](https://github.com/SyncfusionExamples/checkbox_bound_mode)
+You can download the entire source of this demo from [here](https://github.com/SyncfusionExamples/checkbox_bound_mode). To know more about usage of checkbox, you can refer the documentation from [here](https://help.syncfusion.com/xamarin/sftreeview/checkbox).

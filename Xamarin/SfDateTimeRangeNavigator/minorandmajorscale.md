@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Minor and Major scale customization for SfDateTimeRangeNavigator
+title: Syncfusion Minor and Major scale customization for SfDateTimeRangeNavigator
 description: Minor and Major scales
 platform: xamarin
 control: SfDateTimeRangeNavigator
@@ -27,7 +27,7 @@ dateTime.Intervals = DateTimeIntervalType.Year | DateTimeIntervalType. Month;
 {% endhighlight %}
 {% endtabs %}
 
-![](minorandmajorscale_images/minorandmajorscale_img1.png)
+![intervals](minorandmajorscale_images/minorandmajorscale_img1.png)
 
 ## Appearance Customization
 
@@ -93,7 +93,7 @@ dateTime.MinorScaleStyle.SelectedLabelFontSize = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![](minorandmajorscale_images/minorandmajorscale_img2.png)
+![appearance](minorandmajorscale_images/minorandmajorscale_img2.png)
 
 ## Control visibility
 
@@ -123,15 +123,15 @@ dateTime.MinorScaleStyle.IsVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![](minorandmajorscale_images/minorandmajorscale_img3.png)
+![visibility](minorandmajorscale_images/minorandmajorscale_img3.png)
 
-## MinorScaleLabelscreated event
+## MinorScaleLabelsCreated event
 
 This event triggered when the minor scale labels gets created initially. The argument of this event contains the following information.
 
 * `MinorScaleLabels` - used to get the `Content` of the each minor scale labels.
 
-## MajorScaleLabelscreated event
+## MajorScaleLabelsCreated event
 
 This event triggered when the major scale labels gets created initially. The argument of this event contains the following information.
 

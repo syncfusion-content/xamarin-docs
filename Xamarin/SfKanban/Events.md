@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in Xamarin.Forms Kanban control
+title: Syncfusion Events in Xamarin.Forms Kanban control
 description: Kanban Events
 platform: xamarin
 control: Kanban

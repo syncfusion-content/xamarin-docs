@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Minor and Major scale customization for SfDateTimeRangeNavigator
+title: Syncfusion Minor and Major scale customization 
 description: Minor and Major scales
 platform: xamarin
 control: SfDateTimeRangeNavigator

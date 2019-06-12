@@ -9,7 +9,7 @@ documentation: ug
 
 # Major and Minor Scales
 
-SfDateTimeRangeNavigator displays major and minor scales at the top and bottom position of the control. You can also control its visibility using [`MajorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) and [`MinorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) properties.
+SfDateTimeRangeNavigator displays major and minor scales at the top and bottom position of the control. 
 
 ## Intervals
 
@@ -95,4 +95,44 @@ dateTime.MinorScaleStyle.SelectedLabelFontSize = 20;
 
 ![](minorandmajorscale_images/minorandmajorscale_img2.png)
 
+## Control visibility
+
+The user can also control the visibility of minor scale and major scale using [`MajorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) and [`MinorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) properties.
+
+{% tabs %}
+{% highlight xaml %}
+    <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" Maximum="2016,01,01">
+        <rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
+            <rangenavigator:ScaleStyle IsVisible="false" />
+            </rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
+        
+        <rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
+            <rangenavigator:ScaleStyle IsVisible="false" />
+        </rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
+    </rangenavigator:SfDateTimeRangeNavigator>
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator();
+rangeNavigator.Minimum = new DateTime(2015, 01, 01);
+rangeNavigator.Maximum = new DateTime(2016, 01, 01);
+dateTime.MajorScaleStyle.IsVisible = false;
+dateTime.MinorScaleStyle.IsVisible = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+
+## MinorScaleLabelscreated event
+
+This event triggered when the minor scale labels gets created initially. The argument of this event contains the following information.
+
+* `MinorScaleLabels` - used to get the `Content` of the each minor scale labels.
+
+## MajorScaleLabelscreated event
+
+This event triggered when the major scale labels gets created initially. The argument of this event contains the following information.
+
+* `MajorScaleLabels` - used to get the `Content` of the each major scale labels.
 

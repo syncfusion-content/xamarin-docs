@@ -123,6 +123,7 @@ dateTime.MinorScaleStyle.IsVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
+![](minorandmajorscale_images/minorandmajorscale_img3.png)
 
 ## MinorScaleLabelscreated event
 

@@ -21,6 +21,108 @@ documentation: ug
 
 The `CardTappedCommand` property is used to associate a command with an instance of SfKanban. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
+### CommandParameter
+
+The `CardTappedCommandParameter` property is used to set the parameter reference to which the event  argument will display the properties associated with that reference.
+
+>**NOTE**
+The default value of `CardTappedCommandParameter` is `null`.
+
+{% tabs %}
+{% highlight xaml %}
+<kanban:SfKanban x:Name="kanban" CardTappedCommand="{Binding ItemTappedCommand}" CardTappedCommandParameter="{Binding Source={x:Reference kanban}}" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ItemsSource="{Binding Cards}">
+    <kanban:SfKanban.BindingContext>
+        <local:ViewModel/>
+    </kanban:SfKanban.BindingContext>
+        <kanban:SfKanban.Columns> 
+            <kanban:KanbanColumn x:Name="column1" Title="To Do">
+            </kanban:KanbanColumn>
+            <kanban:KanbanColumn x:Name="column2" Title="In Progress">
+            </kanban:KanbanColumn>
+            <kanban:KanbanColumn x:Name="column3" Title="Code Review">
+            </kanban:KanbanColumn>
+            <kanban:KanbanColumn x:Name="column4" Title="Done">
+            </kanban:KanbanColumn>
+        </kanban:SfKanban.Columns>
+</kanban:SfKanban>
+{% endhighlight %}
+
+{% highlight c# %}
+ public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+
+            column1.Categories = new List<object>() { "Open" };
+            column2.Categories = new List<object>() { "In Progress" };
+            column3.Categories = new List<object>() { "Code Review" };
+            column4.Categories = new List<object>() { "Closed" };
+        }
+    }
+    public class ViewModel
+    {
+        public ObservableCollection<KanbanModel> Cards { get; set; }
+        public ICommand ItemTappedCommand { get; set; }
+        public ViewModel()
+        {
+            Cards = new ObservableCollection<KanbanModel>();
+            ItemTappedCommand = new Command<object>(ItemTappedEvent);
+            Cards.Add(new KanbanModel()
+            {
+                ID = 1,
+                Title = "iOS - 1002",
+                ImageURL = "Image1.png",
+                Category = "Open",
+                Description = "Analyze customer requirements",
+                ColorKey = "Red",
+                Tags = new string[] { "Incident", "Customer" }
+            });
+            Cards.Add(new KanbanModel()
+            {
+                ID = 6,
+                Title = "Xamarin - 4576",
+                ImageURL = "Image2.png",
+                Category = "Open",
+                Description = "Show the retrieved data from the server in grid control",
+                ColorKey = "Green",
+                Tags = new string[] { "Story", "Customer" }
+            });
+            Cards.Add(new KanbanModel()
+            {
+                ID = 13,
+                Title = "UWP - 13",
+                ImageURL = "Image4.png",
+                Category = "In Progress",
+                Description = "Add responsive support to application",
+                ColorKey = "Brown",
+                Tags = new string[] { "Story", "Customer" }
+            });
+            Cards.Add(new KanbanModel()
+            {
+                ID = 2543,
+                Title = "Xamarin_iOS - 2543",
+                Category = "Code Review",
+                ImageURL = "Image3.png",
+                Description = "Check login page validation",
+                ColorKey = "Brown",
+                Tags = new string[] { "Story", "Customer" }
+            });
+        }
+
+        private void ItemTappedEvent(object args)
+        {
+            KanbanTappedEventArgs paramerter = args as KanbanTappedEventArgs;
+            var column = paramerter.Column;
+            var index = paramerter.Index;
+            KanbanModel model = paramerter.Data as KanbanModel;
+            model.Title = "Sync";
+            model.ID = 555;
+        }
+    }
+{% endhighlight %}
+{% endtabs %}
+
 ## DragStart
 
 [`DragStart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~DragStart_EV.html) event is triggered when you start to drag a card. The argument contains the following information.

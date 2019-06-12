@@ -55,7 +55,55 @@ N> To know more about obtaining our components, refer to these links for [Mac](
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
-I> After adding the reference, an additional step is required for iOS and UWP projects. You should create an instance of `SfGaugeRenderer` in iOS and UWP projects as shown in this [KB article](https://www.syncfusion.com/kb/8271/how-to-resolve-sfcirculargauge-not-rendering-issue-in-ios-and-uwp). For UWP alone, one more additional step is required if the project is built-in release mode with .NET Native tool chain enabled. You can refer to this [KB article](https://www.syncfusion.com/kb/8272/how-to-make-syncfusion-xamarin-forms-sfcirculargauge-to-work-in-uwp-in-release-mode-when-net-native) for more details. If you are adding the references from toolbox, this step is not needed.
+## Launching an application on each platform with SfDigitalGauge.
+
+To use the SfDigitalGauge control inside an application, each platform requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
+
+N> If you are adding the references from toolbox, this step is not needed.
+
+### iOS
+
+To launch the SfDigitalGauge in iOS, call the `SfGaugeRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called, as demonstrated in the following code example.
+
+{% highlight c# %}
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{
+    …
+    global::Xamarin.Forms.Forms.Init ();
+    Syncfusion.SfGauge.XForms.iOS.SfGaugeRenderer.Init();
+    LoadApplication (new App ());
+    …
+}
+{% endhighlight %} 
+
+### Universal Windows Platform (UWP)
+
+You need to initialize the digital gauge view assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with digital gauge in Release mode in UWP platform.
+
+{% highlight c# %}
+// In App.xaml.cs
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+    {
+        …
+    	    rootFrame.NavigationFailed += OnNavigationFailed;
+    
+        // Add `using System.Reflection;`
+        List<Assembly> assembliesToInclude = new List<Assembly>();
+    
+        // Now, add all the assemblies your app uses                 
+        assembliesToInclude.Add(typeof(Syncfusion.SfGauge.XForms.UWP.SfGaugeRenderer).GetTypeInfo().Assembly);
+		
+        // Replaces Xamarin.Forms.Forms.Init(e);        
+        Xamarin.Forms.Forms.Init(e, assembliesToInclude);	
+        …     
+    }
+
+{% endhighlight %}
+
+### Android
+
+The Android platform does not require any additional configuration to render the digital gauge.
 
 ## Adding namespace for the assemblies
 

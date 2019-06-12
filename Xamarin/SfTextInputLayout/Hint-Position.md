@@ -9,7 +9,7 @@ documentation: ug
 
 # Hint position
 
-Hint lable for the text input layout can be fixed always at the top position. This helps the user to make the hint label floating even if the assistive elements are not focused. It can be enabled by setting the `IsHintAlwaysFloated`. This supports for all the container type in input text layout.
+Hint label for the text input layout can be fixed always at the top position. This helps the user to make the hint label floating even if the assistive elements are not focused. It can be enabled by setting the `IsHintAlwaysFloated`. This supports for all the container type in input text layout.
 
 >**NOTE**
 The default value of `IsHintAlwaysFloated` is `false`.
@@ -45,7 +45,7 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![Filled type](Hint-Position-images/HintPosition_filled.png)
+![Filled type](Hint-Position-images/HintPosition_filled.jpg)
 
 ## Outlined
 
@@ -78,7 +78,7 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![Outlined type]((Hint-Position-images/HintPosition_outlined.png)
+![Outlined type](Hint-Position-images/HintPosition_outlined.jpg)
 
 ## None
 
@@ -112,6 +112,6 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![None type](Hint-Position-images/none.png)
+![None type](Hint-Position-images/HintPosition_none.jpg)
 
 

@@ -11,6 +11,6 @@ documentation: ug
 
 ## BackLayerStateChanged event
 
-`BackLayerStateChanged` event is triggered when the backdrop front layer page is revealed and concealed. The event gets triggered when [IsBackLayerRevealed](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~IsBackLayerRevealed.html)  gets changed dynamically, when revealing and concealing the frontlayer page on swiping and by touch interaction when clicking the tool bar icon.
+`BackLayerStateChanged` event is triggered when the backdrop front layer page is revealed and concealed. The event gets triggered when [IsBackLayerRevealed](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~IsBackLayerRevealed.html)  gets changed dynamically, when revealing and concealing the front layer page on swiping and by touch interaction when clicking the tool bar icon.
 
 

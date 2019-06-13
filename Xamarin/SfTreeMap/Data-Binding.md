@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DataBinding
-description: databinding
+title: DataBinding in Syncfusion TreeMap control for Xamarin.Forms
+description: Learn how to add data source in Syncfusion TreeMap control
 platform:  xamarin
 control: TreeMap
 documentation: ug
@@ -9,86 +9,66 @@ documentation: ug
 
 # DataBinding
 
-**TreeMap** control supports Data Binding and it can be achieved using `dataSource` property.
+The TreeMap control supports data binding, and it can be achieved using the [`DataSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~DataSource.html) property.
 
-The `dataSource` property accepts the collection values as input. For example, you can provide the list of objects as input. The following code illustrates you on how to bind a flat collection as datasource for **TreeMap**.
+The [`DataSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~DataSource.html) property accepts a collection of values as input. The following code sample demonstrates how to bind a flat collection as data source to TreeMap.
 
 {% tabs %}  
 
 {% highlight xaml %}
 
-// BindingContext is set for the content page class.
-
-//DataModel model = new DataModel();
-
-//..
-
-//..
-
-//this.BindingContext = model;
-
-<local:SfTreeMap x:Name="treeMap" Items = "{Binding TreeMapItems}">
-
-</local:SfTreeMap>
+ <treemap:SfTreeMap x:Name="treeMap"  DataSource="{Binding PopulationDetails}" WeightValuePath="Population" ColorValuePath="Growth">
+            <treemap:SfTreeMap.LeafItemSettings>
+                <treemap:LeafItemSettings  Gap="2" BorderColor="#A9D9F7" LabelPath="Country" >
+                </treemap:LeafItemSettings>
+            </treemap:SfTreeMap.LeafItemSettings>
+            <treemap:SfTreeMap.Levels>
+                <treemap:TreeMapFlatLevel  HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
+                </treemap:TreeMapFlatLevel>
+            </treemap:SfTreeMap.Levels>
+			
+			 </treemap:SfTreeMap>
 
 {% endhighlight %}
 
-
 {% highlight c# %}
 
-public class DataModel : BindableObject
+public class PopulationViewModel
+    {
+        public PopulationViewModel()
+        {
+            this.PopulationDetails = new ObservableCollection<PopulationDetail>();
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Indonesia", Growth = 3, Population = 237641326 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Russia", Growth = 2, Population = 152518015 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Asia", Country = "Malaysia", Growth = 1, Population = 29672000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "United States", Growth = 4, Population = 315645000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "Mexico", Growth = 2, Population = 112336538 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "North America", Country = "Canada", Growth = 1, Population = 35056064 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "South America", Country = "Colombia", Growth = 1, Population = 47000000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "South America", Country = "Brazil", Growth = 3, Population = 193946886 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Africa", Country = "Nigeria", Growth = 2, Population = 170901000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Africa", Country = "Egypt", Growth = 1, Population = 83661000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "Germany", Growth = 1, Population = 81993000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "France", Growth = 1, Population = 65605000 });
+            PopulationDetails.Add(new PopulationDetail() { Continent = "Europe", Country = "UK", Growth = 1, Population = 63181775 });
+        }
 
-{
+        public ObservableCollection<PopulationDetail> PopulationDetails
+        {
+            get;
+            set;
+        }
+    }
 
-public static readonly BindableProperty TreeMapItemsProperty =
-
-	BindableProperty.Create<DataModel, ObservableCollection<TreeMapItem>>(p => p.TreeMapItems, null, BindingMode.TwoWay, null, null, null, null);
-
-
-public ObservableCollection<TreeMapItem> TreeMapItems
-{
-
-    get { return (ObservableCollection<TreeMapItem>)GetValue(TreeMapItemsProperty); }
-
-    set { SetValue(TreeMapItemsProperty, value); }
-
-}
-
-
-public DataModel()
-{
-
-    this.TreeMapItems = new ObservableCollection<TreeMapItem>();
-
-    TreeMapItems.Add(new TreeMapItem() { Label = "Indonesia", ColorWeight = 3, Weight = 237641326 });
-
-    TreeMapItems.Add(new TreeMapItem() { Label = "Russia", ColorWeight = 2, Weight = 152518015 });
-
-    TreeMapItems.Add(new TreeMapItem() { Label = "United States", ColorWeight = 4, Weight = 315645000 });
-
-    TreeMapItems.Add(new TreeMapItem() { Label = "Mexico", ColorWeight = 2, Weight = 112336538 });
-
-    TreeMapItems.Add(new TreeMapItem() { Label = "Nigeria", ColorWeight = 2, Weight = 170901000 });
-
-    TreeMapItems.Add(new TreeMapItem() { Label = "Egypt", ColorWeight = 1, Weight = 83661000 });
-
-    TreeMapItems.Add(new TreeMapItem() { Label = "Germany", ColorWeight = 1, Weight = 81993000 });
-
-    TreeMapItems.Add(new TreeMapItem() { Label = "France", ColorWeight = 1, Weight = 65605000 });
-
-    TreeMapItems.Add(new TreeMapItem() { Label = "UK", ColorWeight = 1, Weight = 63181775 });
-
-}
-}
-
-SfTreeMap treeMap = new SfTreeMap();
-
-DataModel model = new DataModel();
-
-treeMap.Items = model.TreeMapItems;
+    public class PopulationDetail
+    {
+        public string Continent { get; set; }
+        public string Country { get; set; }
+        public double Growth { get; set; }
+        public double Population { get; set; }
+    }
 
 {% endhighlight %}
 
 {% endtabs %}  
-
 

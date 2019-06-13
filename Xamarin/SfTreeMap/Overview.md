@@ -9,17 +9,23 @@ documentation: ug
 
 # Overview
 
-The Essential Xamarin Treemap control provides a simple yet effective way to visualize flat or hierarchical data as clustered rectangles, with a specific weighted attribute determining the size of the rectangle.
+The TreeMap control for Xamarin.Forms provides a simple yet effective way to visualize flat or hierarchical data as clustered rectangles with a specific weighted attribute determining the size of the rectangle.
 
-![](Getting-Started_images/img2.png)
+![GettingStartedOutput](Getting-Started_images/GettingStartedOutput.png)
 
-## Key Features
+## Key features
 
-* `Levels` - TreeMap levels are used to define levels of various flat data and hierarchical data collection.
- 
-* `Layout` - Layouts such as Squarified, SliceAndDiceAuto, SliceAndDiceHorizontal and SliceAndDiceVertical determines the visual representation of nodes belonging to all the TreeMap levels in TreeMap.
- 
-* `Visualization for Colors` - Easy customization options is provided to customize the colors of the leaf nodes of TreeMap.
+* `Levels` - Define the levels of various flat data and hierarchical data collections.
 
+* `Layouts` - Determine the visual representation of nodes belonging to all the levels in TreeMap using the layouts such as Squarified, SliceAndDiceAuto, SliceAndDiceHorizontal, and SliceAndDiceVertical.
 
+* `Visualization for colors` - Customize the colors of the leaf nodes in TreeMap.
+
+* `Tooltip` - Provides additional information about the leaf nodes.
+
+* `Selection` - Allows you select or highlight specific leaf nodes.
+
+* `Legends` - Help you relate data with the leaf nodes.
+
+* `DataLabels` - Show group path information on the leaf node with Trim, Wrap, and Hide options.
 

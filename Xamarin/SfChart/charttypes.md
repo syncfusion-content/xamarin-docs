@@ -2905,3 +2905,52 @@ FunnelSeries funnelSeries = new FunnelSeries()
 {% endtabs %}
 
 ![Minimum width support for funnel series in Xamarin.Forms Chart](charttypes_images/charttypes_img40.png)
+
+## Waterfall Series
+
+[`WaterfallSeries`]() clarifies the cumulative effect of set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles. 
+
+* [`SummaryBindingPath`]() – Gets or sets the string value that indicates the sum of previous segments in series.
+* [`SummarySegmentColor`]() – Used to change the color of summary segment in series.
+* [`NegativeSegmentColor`]() – Used to change the color of nagative segment in series
+* [`AllowAutoSum`]() – Used to change the summary segment calculation by using the [`AllowAutoSum`]() property. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
+* [`ShowConnectorLine`]() – Enables or Disables the connector line of series. By default, the property value  is true.
+* [`ConnectorLineStyle`]() – Used to customize the appearance of connector line style.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:WaterfallSeries ItemsSource="{Binding RevenueDetails}"
+                       XBindingPath="Category" 
+                       YBindingPath="Value"
+					   AllowAutoSum="True"
+					   SummaryBindingPath="IsSummary" 
+					   NegativeSegmentColor="#F14C72" 
+					   SummarySegmentColor="#8C8C8C"
+					   ShowConnectorLine="True">
+</chart:WaterfallSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+WaterfallSeries waterfallSeries = new WaterfallSeries()
+{
+	ItemsSource = RevenueDetails,
+	XBindingPath = "Category",
+	YBindingPath = "Value",
+	AllowAutoSum = true,
+	SummaryBindingPath = "IsSummary",
+	NegativeSegmentColor = Color.FromHex("#F14C72"),
+	SummarySegmentColor = Color.FromHex("#8C8C8C"),
+	ShowConnectorLine = true
+};
+
+chart.Series.Add(waterfallSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Waterfall chart type in Xamarin.Forms]()

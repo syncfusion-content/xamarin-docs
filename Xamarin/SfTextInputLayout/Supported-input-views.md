@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported input views
+title: Syncfusion Supported input views
 description: How to add supported input views in text input layout.
 platform: xamarin
 control: SfTextInputLayout
@@ -38,7 +38,7 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Supported-input-views-images/textInput_input_img1.PNG)
+![entry](Supported-input-views-images/textInput_input_img1.PNG)
 
 ## Editor
 
@@ -67,7 +67,7 @@ inputLayout.InputView = new Editor();
 
 {% endtabs %}
 
-![](Supported-input-views-images/textInput_input_img2.PNG)
+![editor](Supported-input-views-images/textInput_input_img2.PNG)
 
 ## Masked edit
 
@@ -98,7 +98,7 @@ inputLayout.InputView = new SfMaskedEdit() { Keyboard = Keyboard.Numeric, Mask =
 
 {% endtabs %}
 
-![](Supported-input-views-images/textInput_input_img3.PNG)
+![Masked edit](Supported-input-views-images/textInput_input_img3.PNG)
 
 ## Numeric text box
 
@@ -130,7 +130,7 @@ inputLayout.InputView = new SfNumericTextBox() { Value = 123.45, FormatString="c
 {% endtabs %}
 
 
-![](Supported-input-views-images/textInput_input_img4.PNG)
+![Numerictextbox](Supported-input-views-images/textInput_input_img4.PNG)
 
 ## Auto complete
 
@@ -168,7 +168,7 @@ inputLayout.InputView = autoComplete;
 
 {% endtabs %}
 
-![](Supported-input-views-images/textInput_input_img5.PNG)
+![autocomplete](Supported-input-views-images/textInput_input_img5.PNG)
 
 ## Combo box
 
@@ -206,4 +206,4 @@ inputLayout.InputView = combobox;
 
 {% endtabs %}
 
-![](Supported-input-views-images/textInput_input_img6.PNG)
+![combobox](Supported-input-views-images/textInput_input_img6.PNG)

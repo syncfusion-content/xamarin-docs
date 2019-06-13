@@ -10,7 +10,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to add the SfSwitch control with basic functionalities in Xamarin Forms.
+This section explains you the steps to add the SfSwitch control with basic functionalities in Xamarin.Forms.
 
 * Adding SfSwitch reference
 * Launching an application on each platform with SfSwitch

@@ -12,7 +12,7 @@ documentation: ug
 
 ## Overview
 
-Essential SfSwitch for Xamarin Forms provides an efficient way to select between the states based on the toggled value.
+Essential SfSwitch for Xamarin.Forms provides an efficient way to select between the states based on the toggled value.
 
 ## Key features
 

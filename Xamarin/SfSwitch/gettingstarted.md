@@ -23,7 +23,7 @@ You can add SfSwitch reference using one of the below methods.
 
 **Method** **1** **:** **Adding** **SfSwitch** **reference** **from** **nuget** **.** **org**
 
-****Syncfusion Xamarin components are available in [`nuget.org`](https://www.nuget.org/#). To add switch control to your project, open the NuGet package manager in Visual Studio, search for Syncfusion.Xamarin.SfSwitch, and then install it.
+Syncfusion Xamarin components are available in [`nuget.org`](https://www.nuget.org/#). To add switch control to your project, open the NuGet package manager in Visual Studio, search for Syncfusion.Xamarin.SfSwitch, and then install it.
 
 **Method** **2****:** **Adding** **SfSwitch** **reference** **from** **toolbox**
 

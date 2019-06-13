@@ -115,8 +115,8 @@ The user can also control the visibility of minor scale and major scale using [`
 {% highlight c# %}
 
 SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator();
-rangeNavigator.Minimum = new DateTime(2015, 01, 01);
-rangeNavigator.Maximum = new DateTime(2016, 01, 01);
+dateTime.Minimum = new DateTime(2015, 01, 01);
+dateTime.Maximum = new DateTime(2016, 01, 01);
 dateTime.MajorScaleStyle.IsVisible = false;
 dateTime.MinorScaleStyle.IsVisible = false;
 
@@ -131,9 +131,65 @@ This event triggered when the minor scale labels gets created initially. The arg
 
 * `MinorScaleLabels` - used to get the `Content` of the each minor scale labels.
 
+{% tabs %} 
+
+{% highlight xaml %} 
+
+ <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" MinorScaleLabelsCreated="MinorScaleLabelsCreated" Maximum="2016,01,01">
+    
+  
+{% endhighlight %}
+
+{% highlight C# %} 
+
+public MainPage()
+    {
+        InitializeComponent();
+        SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator();
+		dateTime.Minimum = new DateTime(2015, 01, 01);
+        dateTime.Maximum = new DateTime(2016, 01, 01);
+		dateTime.MinorScaleLabelsCreated += MinorScaleLabelsCreated;
+    }
+void MinorScaleLabelsCreated(object sender, Syncfusion.RangeNavigator.XForms.MinorScaleLabelsCreatedEventArgs e)
+    {
+        
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ## MajorScaleLabelsCreated event
 
 This event triggered when the major scale labels gets created initially. The argument of this event contains the following information.
 
 * `MajorScaleLabels` - used to get the `Content` of the each major scale labels.
 
+{% tabs %} 
+
+{% highlight xaml %} 
+
+ <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" MajorScaleLabelsCreated="MajorScaleLabelsCreated" Maximum="2016,01,01">
+    
+  
+{% endhighlight %}
+
+{% highlight C# %} 
+
+public MainPage()
+    {
+        InitializeComponent();
+        SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator();
+		dateTime.Minimum = new DateTime(2015, 01, 01);
+        dateTime.Maximum = new DateTime(2016, 01, 01);
+		dateTime.MajorScaleLabelsCreated += MajorScaleLabelsCreated;
+    }
+void MajorScaleLabelsCreated(object sender, Syncfusion.RangeNavigator.XForms.MajorScaleLabelsCreatedEventArgs e)
+    {
+        
+    }
+
+{% endhighlight %}
+
+{% endtabs %}

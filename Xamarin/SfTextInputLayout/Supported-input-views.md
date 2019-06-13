@@ -132,6 +132,78 @@ inputLayout.InputView = new SfNumericTextBox() { Value = 123.45, FormatString="c
 
 ![](Supported-input-views-images/textInput_input_img4.PNG)
 
+## Auto complete
 
+To initialize the auto complete control and launch it in each platform, refer to the [getting started with auto complete](https://help.syncfusion.com/xamarin/sfautocomplete/getting-started) documentation.
 
+{% tabs %} 
 
+{% highlight xaml %} 
+
+<inputLayout:SfTextInputLayout Hint="Country name">
+   <autocomplete:SfAutoComplete x:Name="autoComplete"/>
+</inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var inputLayout = new SfTextInputLayout();
+SfAutoComplete autoComplete = new SfAutoComplete();
+inputLayout.Hint = "Country name";
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("Canada");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("France");
+countryNames.Add("United Kingdom");
+countryNames.Add("China");
+countryNames.Add("United States");
+countryNames.Add("Japan");
+autoComplete.DataSource = countryNames;
+inputLayout.InputView = autoComplete;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Supported-input-views-images/textInput_input_img5.PNG)
+
+## Combo box
+
+To initialize the combo box control and launch it in each platform, refer to the [getting started with combo box](https://help.syncfusion.com/xamarin/sfcombobox/getting-started) documentation.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<inputLayout:SfTextInputLayout Hint="Country name">
+   <combobox:SfComboBox  x:Name="combobox" DataSource="countryNames"/>
+</inputLayout:SfTextInputLayout> 
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var inputLayout = new SfTextInputLayout();
+SfComboBox combobox = new SfComboBox();
+inputLayout.Hint = "Country name";
+List<String> countryNames = new List<String>();
+countryNames.Add("Uganda");
+countryNames.Add("Ukraine");
+countryNames.Add("Canada");
+countryNames.Add("United Arab Emirates");
+countryNames.Add("France");
+countryNames.Add("United Kingdom");
+countryNames.Add("China");
+countryNames.Add("United States");
+countryNames.Add("Japan");
+combobox.DataSource = countryNames;
+inputLayout.InputView = combobox;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![](Supported-input-views-images/textInput_input_img6.PNG)

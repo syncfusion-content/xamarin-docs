@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual types in SfSwitch Xamarin.Forms.
+title: Visual types in Syncfusion SfSwitch Xamarin.Forms.
 description: Explaining about visual types in SfSwitch.
 platform: Xamarin
 control: Switch

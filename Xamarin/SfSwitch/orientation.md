@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Orientation in SfSwitch Xamarin.Forms.
+title: Orientation in Syncfusion SfSwitch Xamarin.Forms.
 description: Explaining about types of orientation in SfSwitch.
 platform: Xamarin
 control: Switch

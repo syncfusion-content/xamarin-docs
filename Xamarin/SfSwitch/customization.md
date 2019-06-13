@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization with visual states in SfSwitch Xamarin.Forms.
+title: Customization with visual states in Syncfusion SfSwitch Xamarin.Forms.
 description: Explaining about customization based on visual states in SfSwitch.
 platform: Xamarin
 control: Switch
@@ -163,7 +163,7 @@ You can also specify the range of colors in thumb and track using ThumbGradientC
 
 In switch the sizing of the thumb and the track can be controlled using the following properties.
 
-* TrackCornerradius – Represents a double value to create curved corner.
+* TrackCornerRadius – Represents a double value to create curved corner.
 * TrackBorderWidth - Represents a double value for defining the track border width.
 * TrackWidthRequest - Represents a double value for defining the track width.
 * TrackHeightRequest - Represents double value for defining the track height.

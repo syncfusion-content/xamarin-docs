@@ -1,6 +1,6 @@
 ---
 layout: post
-title: States in SfSwitch Xamarin.Forms.
+title: States in Syncfusion SfSwitch Xamarin.Forms.
 description: Explaining about states in SfSwitch.
 platform: Xamarin
 control: Switch

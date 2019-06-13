@@ -2921,8 +2921,14 @@ FunnelSeries funnelSeries = new FunnelSeries()
 
 {% highlight xaml %}
 
-<chart:WaterfallSeries ItemsSource="{Binding RevenueDetails}"
-                       XBindingPath="Category"          YBindingPath="Value"  AllowAutoSum="True"	   SummaryBindingPath="IsSummary"   NegativeSegmentColor="#F14C72"  SummarySegmentColor="#8C8C8C"  ShowConnectorLine="True">
+<chart:WaterfallSeries ItemsSource="{Binding RevenueDetails}" 
+XBindingPath="Category"
+YBindingPath="Value" 
+AllowAutoSum="True"	
+SummaryBindingPath="IsSummary"   
+NegativeSegmentColor="#F14C72" 
+SummarySegmentColor="#8C8C8C" 
+ShowConnectorLine="True">
 </chart:WaterfallSeries>
 
 {% endhighlight %}

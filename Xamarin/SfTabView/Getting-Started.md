@@ -384,7 +384,7 @@ We can set the duration for the TabView content transition by setting `ContentTr
 
 {% highlight xaml %}
 
-   <tabView:SfTabView BackgroundColor="#f6f6f6" ContentTransitionDuration= "200" >
+   <tabView:SfTabView BackgroundColor="#f6f6f6" ContentTransitionDuration="200" >
    </tabView:SfTabView>
 
 {% endhighlight %}

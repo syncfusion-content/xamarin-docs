@@ -60,11 +60,11 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 To use SfNumericUpDown inside an application, each platform application must initialize the SfNumericUpDown renderer. This initialization step varies from platform to platform and is discussed in the following sections.
 
+N> If you are adding the references from toolbox, below steps are not needed.
+
 ### Android and  UWP
 
 The Android and UWP launches the SfNumericUpDown without any initialization and is enough to only initialize the Xamarin.Forms Framework to launch the application.
-
-N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 
@@ -76,7 +76,14 @@ To launch SfNumericUpDown in iOS, need to create an instance of SfNumericUpDownR
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
-    new SfNumericUpDownRenderer ();
+	global::Xamarin.Forms.Forms.Init();
+
+	SfNumericUpDownRenderer.Init();
+
+	LoadApplication(new App());
+
+	return base.FinishedLaunching(app, options);
+   
 }	
 
 {% endhighlight %}
@@ -147,8 +154,8 @@ The SfNumericUpDown control configured entirely in C# code or by using XAML mark
 
 {% highlight C# %}
 
-	SfNumericUpDown numericUpDown=new SfNumericUpDown();
-	this.Content = numericUpDown;
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+this.Content = numericUpDown;
 
 {% endhighlight %}
 
@@ -169,102 +176,11 @@ The SfNumericUpDown control display value can be set using `Value` property.
 {% highlight C# %}
 
 SfNumericUpDown numericUpDown=new SfNumericUpDown();
-	numericUpDown.Value= 5;
-	this.Content = numericUpDown;
+numericUpDown.Value= 5;
+this.Content = numericUpDown;
 
 {% endhighlight %}
 
 
 {% endtabs %}
 
-## Enable Parsing Mode
-
-SfNumericUpDown provides option to display the value in double or decimal. Following code shows the Decimal parsing mode which can be set through `ParsingMode` property.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<numeric:SfNumericUpDown x:Name="numericUpDown" Value="5" ParsingMode="Decimal"/>
-	
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfNumericUpDown numericUpDown=new SfNumericUpDown();
-	numericUpDown.Value= 5;
-	numericUpDown.ParsingMode=Parsers.Decimal;
-	this.Content = numericUpDown;
-	
-{% endhighlight %}
-
-{% endtabs %}
-
-
-## Add Format String
-
-SfNumericUpDown provides option to format the display text in currency format. 
-
-It has three types,
-
-* c - Display the value with currency notation.
-* n – Display the value in number format.
-* p – Display the value in Percentage.
-
-N> The control displays the formatted text on lost focus. Default Value of `FormatString` is "n".
-
-Following code explains how to set the currency format using `FormatString` property.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<numeric:SfNumericUpDown x:Name="numericUpDown" Value="5" ParsingMode="Decimal" FormatString="c"/>
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfNumericUpDown numericUpDown=new SfNumericUpDown();
-	numericUpDown.Value= 5;
-	numericUpDown.ParsingMode=ParsingMode.Decimal;
-	numericUpDown.FormatString = "c";
-	this.Content = numericUpDown;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Xamarin.Forms Numeric Up-Down](images/gettingstarted.png)
-
-## Structure
-
-Text area and spin button are the two elements of SfNumericUpDown control. 
-
-### Text area 
-
-It is the area where the numeric values are displayed.
-
-### Spin Button
-
-Current value of the SfNumericUpDown control can be incremented or decremented using the spin button.
-
-Spin button position can be customized as follows.
-
-{% tabs %}
-
-{% highlight C# %}
-
-	numericUpDown.SpinButtonAlignment = SpinButtonAlignment.Right;
-
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<numeric:SfNumericUpDown x:Name="numericUpDown" SpinButtonAlignment="Right"/>
-	
-{% endhighlight %}
-
-{% endtabs %}
-
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2074275096.zip)

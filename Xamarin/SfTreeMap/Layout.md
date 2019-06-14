@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layout
-description: layout
+title: Layout in Syncfusion TreeMap control for Xamarin.Forms
+description: Learn how to add and customize the layout in Syncfusion TreeMap control
 platform: xamarin
 control: TreeMap
 documentation: ug

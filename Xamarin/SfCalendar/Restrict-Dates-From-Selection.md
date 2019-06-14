@@ -60,7 +60,29 @@ this.Content = calendar;
 	
 {%  endhighlight %}
 	
-![BlackoutDate support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-Blackout.png)
+![BlackoutDate support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-Blackout.jpg)
+
+### Dynamic Blackout dates rendering
+Using[OnMonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnMonthCellLoaded_EV.html) event you can render the black out dates.
+
+{% tabs %}
+{% highlight c# %}
+
+private void Calendar_OnMonthCellLoaded(object sender, EventArgs e)
+{
+	List<DateTime> blackoutDates = new List<DateTime>();
+	var dayOfWeek = e.Date.DayOfWeek;
+    if(dayOfWeek==DayOfWeek.Saturday || dayOfWeek == DayOfWeek.Sunday)
+    {
+		blackoutDates.Add(e.Date);
+		calendar.BlackoutDates = blackoutDates;
+	}
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![BlackoutDate color support in Xamarin.Forms Calendar](images/xamarin.forms-Blackoutdate_MonthCellLoaded.jpg)
 
 ### Customize the blackout dates Color
 You can customize the color of [BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html) in month view mode using the [BlackOutColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BlackoutColor.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
@@ -81,3 +103,6 @@ calendar.MonthViewSettings = monthViewSettings;
 this.Content = calendar;
 {% endhighlight %}
 {% endtabs %}
+
+![BlackoutDate color support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-Blackout-color.jpg)
+

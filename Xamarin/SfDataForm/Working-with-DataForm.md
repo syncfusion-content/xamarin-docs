@@ -248,7 +248,7 @@ You can display the watermark in the editor by defining the display attribute or
 
 ### Using attribute
 
-You can show the watermark in the editor by setting the [Prompt](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute.prompt.aspx) in display attribute.
+You can show the watermark in the editor by setting the [Prompt](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~Prompt.html) in display attribute.
 
 {% tabs %}
 {% highlight c# %}
@@ -693,15 +693,90 @@ Support has been provided to generate custom DataFormItems for the defined busin
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
-ObservableCollection<DataFormItemBase> items = new ObservableCollection<DataFormItemBase>(); 
-items.Add(new DataFormItem() { Name = "Name", Editor = "Text" }); 
-items.Add(new DataFormItem() { Name = "Password", Editor = "Password" }); 
-items.Add(new DataFormItem() { Name = "Phone", Editor = "MaskedEditText" }); 
-items.Add(new DataFormItem() { Name = "Address", Editor = "MultilineText" }); 
-items.Add(new DataFormItem() { Name = "BirthTime", Editor = "Time" }); 
+ObservableCollection<DataFormItemBase> items = new ObservableCollection<DataFormItemBase>();
+items.Add(new DataFormTextItem() { Name = "Name", Editor = "Text" });
+items.Add(new DataFormTextItem() { Name = "Password", Editor = "Password" });
+items.Add(new DataFormMaskedEditTextItem() { Name = "Phone", Editor = "MaskedEditText" });
+items.Add(new DataFormTextItem() { Name = "Address", Editor = "MultilineText" });
+items.Add(new DataFormTimeItem() { Name = "BirthTime", Editor = "Time" }); 
 
 dataForm.AutoGenerateItems = false; 
 dataForm.Items = items; 
 {% endhighlight %}
 {% endtabs %}
+
+### Dynamically add custom dataform items
+Support has been provided to dynamically add the dataform items to collections using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.Items.Add(new DataFormDropDownItem() 
+				  { Name = "StateName", 
+					Editor = "DropDown", 
+					ItemsSource = this.GetItemSource("StateName"), 
+					PlaceHolderText = "Select a State" 
+				  });
+				
+dataForm.Items.Add(new DataFormItem() 
+				  { Name = "Save", 
+				    Editor = "Switch" 
+				  });
+{% endhighlight %}
+{% endtabs %}
+
+![Adding data form items in Xamarin.Forms DataForm](SfDataForm_images/AddCustomItems.gif)
+
+### Dynamically remove custom dataform items
+Support has been provided to dynamically remove the dataform items from collections using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.Items.RemoveAt(2);
+{% endhighlight %}
+{% endtabs %}
+
+![Removing data form items in Xamarin.Forms DataForm](SfDataForm_images/RemoveCustomItems.gif)
+
+### Dynamically clear custom dataform items
+Support has been provided to dynamically clear the dataform items using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.Items.Clear();
+{% endhighlight %}
+{% endtabs %}
+
+![Clear data form items in Xamarin.Forms DataForm](SfDataForm_images/ClearCustomItems.gif)
+
+### Dynamically reset custom dataform items
+Support has been provided to reset the dataform items using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+
+{% tabs %}
+{% highlight c# %}
+var item = dataForm.Items[2];
+item = new DataFormNumericUpDownItem() { Name = "Age", Editor = "NumericUpDown" };
+dataForm.Items[2] = item;
+{% endhighlight %}
+{% endtabs %}
+
+
+### Dynamically add custom dataform group items
+Support has been provided to dynamically add custom group items using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+{% tabs %}
+{% highlight c# %}
+DataFormGroupItem dataFormGroupItem = new DataFormGroupItem();
+dataFormGroupItem.GroupName = "GroupItem";
+dataFormGroupItem.IsExpanded = true;
+dataFormGroupItem.GetType().GetProperty("IsGroup").SetValue(dataFormGroupItem, true);
+dataFormGroupItem.DataFormItems = new DataFormItems();
+
+dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "First Name", Editor = "Text", GroupName = "GroupItem" });
+dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "Middle Name", Editor = "Text", GroupName = "GroupItem" });
+dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "Last Name", Editor = "Text", GroupName = "GroupItem" });
+
+dataForm.Items.Add(dataFormGroupItem);
+{% endhighlight %}
+{% endtabs %}
+
+![Group data form items in Xamarin.Forms DataForm](SfDataForm_images/GroupItems.jpg)
 

@@ -42,7 +42,8 @@ We can customize the calendar view in monthView mode by using [MonthViewSettings
                         SelectedDayTextColor="#000000"
                         DayHeaderFormat="EEEEE"
 						DayFontSize="12"
-						DayHeaderFontSize="14"/>
+						DayHeaderFontSize="14"
+						TodaySelectionBackgroundColor="Green"/>
            </syncfusion:SfCalendar.MonthViewSettings>
 </syncfusion:SfCalendar>  
 
@@ -62,10 +63,13 @@ monthViewSettings.SelectedDayTextColor = Color.FromHex("#000000");
 monthViewSettings.DayHeaderFormat = "EEEEE";
 monthViewSettings.DayFontSize = 12;
 monthViewSettings.DayHeaderFontSize = 20;
+monthViewSettings.SelectionRadius = 15;
+monthViewSettings.TodaySelectionTextColor= Color.Black;
+monthViewSettings.TodaySelectionBackgroundColor= Color.Green;
 
 calendar.MonthViewSettings = monthViewSettings;
 this.Content = calendar;
-	
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -74,6 +78,7 @@ this.Content = calendar;
 
 
 N> Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
+N> To disable the current day selection, use `TodaySelectionBackgroundColor` color as Transparent.
 
 ### Customize trailing and leading days
 
@@ -158,9 +163,8 @@ We can customize the calendar view in yearView mode by using [YearViewSettings](
 SfCalendar calendar = new SfCalendar();        
 YearViewSettings yearViewSettings = new YearViewSettings();
 yearViewSettings.LayoutBackground = Color.FromHex("#ffe4b5");
-yearViewSettings.DateTextColor = Color.FromHex("#E6E6FA");
-yearViewSettings.HeaderBackground = Color.FromHex("#8B4513");
-yearViewSettings.YearHeaderTextColor = Color.FromHex("#FFFFFF");
+yearViewSettings.DateTextColor = Color.FromHex("#008000");
+yearViewSettings.YearHeaderTextColor = Color.FromHex("#ff0000");
 calendar.YearViewSettings = yearViewSettings;
 this.Content = calendar;
 
@@ -168,4 +172,4 @@ this.Content = calendar;
 
 {% endtabs %}
 
-
+![Year View in Xamarin.Forms Calendar ](images/xamarin.Forms-Calendar-year-view-settings.jpg)

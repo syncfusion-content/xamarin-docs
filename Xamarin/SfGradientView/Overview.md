@@ -9,7 +9,7 @@ documentation : ug
 
 # Overview
 
-The Xamarin.Forms GradientView control provides the gradient background to various views of applications. The SfGradientView control supports the following two types of gradient:
+The Xamarin.Forms SfGradientView control provides the gradient background to various views of applications. The SfGradientView control supports the following two types of gradient:
 
 * Linear gradient
 * Radial gradient

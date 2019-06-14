@@ -2913,8 +2913,8 @@ FunnelSeries funnelSeries = new FunnelSeries()
 * [`SummaryBindingPath`]() – Gets or sets the string value that indicates the sum of previous segments in series.
 * [`SummarySegmentColor`]() – Used to change the color of summary segment in series.
 * [`NegativeSegmentColor`]() – Used to change the color of negative segment in series
-* [`AllowAutoSum`]() – Used to change the summary segment calculation by using the [`AllowAutoSum`]() property. By default, the property is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
-* [`ShowConnectorLine`]() – Enables or Disables the connector line of series. By default, the property value  is true.
+* [`AllowAutoSum`]() – Enables or disables the segment has been drawn based on the sum value of previous segments. By default, the property value is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
+* [`ShowConnectorLine`]() – Enables or disables the connector line of series. By default, the property value is true.
 * [`ConnectorLineStyle`]() – Used to customize the appearance of connector line style.
 
 {% tabs %}

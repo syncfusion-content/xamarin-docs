@@ -21,7 +21,7 @@ A polygon is a two-dimensional surface stored as a sequence of points defining i
 
 The polyline is shape that has a dimension of 1. It is called a simple line, if it does not intersect itself. The polylines are often used to define linear features such as roads, rivers, and power lines. Mostly the shape file layer with the polyline shape type is used as [`sublayer`](https://help.syncfusion.com/xamarin/sfmaps/sublayer#adding-sublayers-in-shapefilelayer).
 
-The below example demonstrates the sublayer with the polyline shape type. In that roads(sublayer) of Baharin (base layer) has been displayed using the shape file layer of maps
+The below example demonstrates the sublayer with the polyline shape type. In that roads(sublayer) of Bahrain (base layer) has been displayed using the shape file layer of maps
 
 {% tabs %}
 

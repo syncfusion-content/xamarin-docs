@@ -33,6 +33,8 @@ sfSwitch.IsOn=true;
 
 {% endtabs %}
 
+![switch conrol displaying on state](images/ON.png)
+
 ### Off
 
 This is the default state. You can switch to off state by tapping the switch button or by defining as shown in the below code example.
@@ -54,6 +56,8 @@ sfSwitch.IsOn = false;
 {% endhighlight %}
 
 {% endtabs %}
+
+![switch conrol displaying off state](images/off.png)
 
 ### Indeterminate
 
@@ -78,5 +82,7 @@ sfSwitch.AllowIndeterminateState = true;
 {% endhighlight %}
 
 {% endtabs %}
+
+![switch conrol displaying indeterminate state](images/intermediate.png)
 
 N> By default there will be only two states, on and off.

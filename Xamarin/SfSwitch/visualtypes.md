@@ -19,6 +19,8 @@ SfSwitch supports customization using built in visual types. The visual types ba
 
 This is the default value set for visual type. 
 
+![switch conrol having default visual type](images/default.png)
+
 N> If we set default, the visual type is internally changed based on the device platform.
 
 ### Material
@@ -43,6 +45,8 @@ sfSwitch.VisualType = VisualType.Material;
 
 {% endtabs %}
 
+![switch conrol having material visual type](images/material.png)
+
 ### Cupertino
 
 Cupertino visual type brings in the appearance based on Cupertino guidelines. The below code example shows you how to Cupertino visual type. 
@@ -65,6 +69,8 @@ sfSwitch.VisualType = VisualType.Cupertino;
 
 {% endtabs %}
 
+![switch conrol having cupertino visual type](images/cupertino.png)
+
 ### Fluent
 
 Fluent visual type brings in the appearance based on Fluent guidelines. The below code example shows you how to Fluent visual type.
@@ -86,6 +92,8 @@ sfSwitch.VisualType = VisualType.Fluent;
 {% endhighlight %}
 
 {% endtabs %}
+
+![switch conrol having fluent visual type](images/fluent.png)
 
 ### Custom
 

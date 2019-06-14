@@ -32,6 +32,8 @@ sfSwitch.Orientation = SwitchOrientation.Horizontal;
 
 {% endtabs %}
 
+![switch conrol having horizontal orientation](images/horizontal.png)
+
 ### Vertical
 
 To view the switch button in vertical direction, you can define the Vertical Orientation as shown in the below code example.
@@ -52,3 +54,5 @@ sfSwitch.Orientation = SwitchOrientation.Vertical;
 {% endhighlight %}
 
 {% endtabs %}
+
+![switch conrol having vertical orientation](images/vertical.png)

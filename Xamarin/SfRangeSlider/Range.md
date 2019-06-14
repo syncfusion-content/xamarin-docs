@@ -80,17 +80,17 @@ Gets and sets the end value of the range.
 
 ## ValueChangeMode
 
-The ValueChangeMode property is used for changing the value based on the touch of the SfRangeSlider control , it consist of two types
+The ValueChangeMode property is used for changing the value based on the touch of the `SfRangeSlider` control , it consist of two types
 
 * Default
 * OnThumbPress
 
-N> Default value for the ValueChangeMode property is Default
+N> Default value for the ValueChangeMode property is `Default`.
 
 
 ### Default
 
-Value has been changed wherever tocuh inside the control.
+Value gets updated when we touch inside the control.
 
 {% tabs %}
 
@@ -110,7 +110,7 @@ Value has been changed wherever tocuh inside the control.
 
 ### OnThumb
 
-Value has been changed only touch or move the thumb/knob.
+Value gets updated when we touch or move the thumb/knob.
 
 {% tabs %}
 

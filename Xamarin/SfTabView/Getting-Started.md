@@ -376,6 +376,27 @@ Similarly, content region for other tabs also can be configured.
 
 ![LisViewImage](images/Getting-Started/ListView.png)
 
+## ContentTransitionDuration
+
+We can set the duration for the TabView content transition by setting `ContentTransitionDuration` as
+
+{% tabs %}
+
+{% highlight xaml %}
+
+   <tabView:SfTabView BackgroundColor="#f6f6f6" ContentTransitionDuration= "200" >
+   </tabView:SfTabView>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+  tabview.ContentTransitionDuration = 200;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Swiping
 
 By default, both the vertical swiping for list view and horizontal swiping for tab view will work. If it is not required, it can be customized by using the `EnableSwiping` property of `SfTabView`.

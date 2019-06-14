@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layout
-description: layout
+title: Layout in Syncfusion TreeMap control for Xamarin.Forms
+description: Learn how to add and customize the layout in Syncfusion TreeMap control
 platform: xamarin
 control: TreeMap
 documentation: ug
@@ -9,9 +9,9 @@ documentation: ug
 
 # Layout
 
-You can decide on the visual representation of nodes belonging to all the treemap levels using the `LayoutType` property of the TreeMap.
+You can decide the visual representation of nodes belonging to all the TreeMap levels using the [`LayoutType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~LayoutType.html) property of TreeMap.
 
-There are four different **TreeMap** layouts such as
+The following four different types of layouts available in TreeMap:
 
 * Squarified
 * SliceAndDiceAuto
@@ -20,65 +20,240 @@ There are four different **TreeMap** layouts such as
 
 ## Squarified
 
-**Squarified** layout creates rectangles with best aspect ratio.
+The **Squarified** layout creates rectangles with best aspect ratio.
+
+{% tabs %}  
+
+{% highlight xaml %}
+
+ <treemap:SfTreeMap x:Name="treeMap"  DataSource="{Binding PopulationDetails}" 
+        WeightValuePath="Population" ColorValuePath="Growth" LayoutType="Squarified">
+            <treemap:SfTreeMap.LeafItemSettings>
+                <treemap:LeafItemSettings  Gap="2" BorderColor="#A9D9F7" LabelPath="Country" >
+                </treemap:LeafItemSettings>
+            </treemap:SfTreeMap.LeafItemSettings>
+            <treemap:SfTreeMap.Levels>
+                <treemap:TreeMapFlatLevel  HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
+                    <treemap:TreeMapFlatLevel.HeaderStyle>
+                        <treemap:Style Color= "Black"/>
+                    </treemap:TreeMapFlatLevel.HeaderStyle>
+                </treemap:TreeMapFlatLevel>
+            </treemap:SfTreeMap.Levels>          
+
+        </treemap:SfTreeMap>
+		
+{% endhighlight %}
 
 {% highlight C# %} 
       
-        SfTreeMap tree = new SfTreeMap();
-        tree.WeightValuePath = "Population";
-        tree.ColorValuePath = "Growth";
-        tree.DataSource = new PopulationViewModel ().PopulationDetails;      
-        tree.LayoutType = LayoutTypes.Squarified;
+       PopulationViewModel viewModel = new PopulationViewModel();
+
+            SfTreeMap treeMap = new SfTreeMap();
+            treeMap.BackgroundColor = Color.White;
+            treeMap.ColorValuePath = "Growth";
+            treeMap.WeightValuePath = "Population";
+            treeMap.LayoutType = LayoutTypes.Squarified;
+
+            LeafItemSettings leafSetting = new LeafItemSettings();
+            leafSetting.Gap = 2;
+            leafSetting.BorderColor = Color.FromHex("#A9D9F7");
+            leafSetting.LabelPath = "Country";
+            treeMap.LeafItemSettings = leafSetting;
+
+            TreeMapFlatLevel flatLevel = new TreeMapFlatLevel();
+            flatLevel.HeaderHeight = 20;
+            flatLevel.GroupPath = "Continent";
+            flatLevel.GroupGap = 5;
+            flatLevel.ShowHeader = true;
+            flatLevel.HeaderStyle = new Syncfusion.SfTreeMap.XForms.Style() { Color = Color.Black };
+            treeMap.Levels.Add(flatLevel);
+			
+            treeMap.DataSource = viewModel.PopulationDetails;
+            this.Content = treeMap;
+
 
 {% endhighlight %}
 
+{% endtabs %}  
 
-
-![](/js/TreeMap/Layout_images/Layout_img1.png)
+![Squarified layout](Getting-Started_images/Squarified.png)
 
 ## SliceAndDiceAuto
 
-**SliceAndDiceAuto** layout creates rectangles with high aspect ratio and displays them sorted both horizontally and vertically.
+The **SliceAndDiceAuto** layout creates rectangles with high aspect ratio and displays them sorted both horizontally and vertically.
+
+{% tabs %}  
+
+{% highlight xaml %}
+
+ <treemap:SfTreeMap x:Name="treeMap"  DataSource="{Binding PopulationDetails}" 
+        WeightValuePath="Population" ColorValuePath="Growth" LayoutType="SliceAndDiceAuto">
+            <treemap:SfTreeMap.LeafItemSettings>
+                <treemap:LeafItemSettings  Gap="2" BorderColor="#A9D9F7" LabelPath="Country" >
+                </treemap:LeafItemSettings>
+            </treemap:SfTreeMap.LeafItemSettings>
+            <treemap:SfTreeMap.Levels>
+                <treemap:TreeMapFlatLevel  HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
+                    <treemap:TreeMapFlatLevel.HeaderStyle>
+                        <treemap:Style Color= "Black"/>
+                    </treemap:TreeMapFlatLevel.HeaderStyle>
+                </treemap:TreeMapFlatLevel>
+            </treemap:SfTreeMap.Levels>          
+
+        </treemap:SfTreeMap>
+		
+{% endhighlight %}
 
 {% highlight C# %} 
 
-    SfTreeMap tree = new SfTreeMap();
-    tree.LayoutType = LayoutTypes.SliceAndDiceAuto;
+   PopulationViewModel viewModel = new PopulationViewModel();
+
+            SfTreeMap treeMap = new SfTreeMap();
+            treeMap.BackgroundColor = Color.White;
+            treeMap.ColorValuePath = "Growth";
+            treeMap.WeightValuePath = "Population";
+            treeMap.LayoutType = LayoutTypes.SliceAndDiceAuto;
+
+            LeafItemSettings leafSetting = new LeafItemSettings();
+            leafSetting.Gap = 2;
+            leafSetting.BorderColor = Color.FromHex("#A9D9F7");
+            leafSetting.LabelPath = "Country";
+            treeMap.LeafItemSettings = leafSetting;
+
+            TreeMapFlatLevel flatLevel = new TreeMapFlatLevel();
+            flatLevel.HeaderHeight = 20;
+            flatLevel.GroupPath = "Continent";
+            flatLevel.GroupGap = 5;
+            flatLevel.ShowHeader = true;
+            flatLevel.HeaderStyle = new Syncfusion.SfTreeMap.XForms.Style() { Color = Color.Black };
+            treeMap.Levels.Add(flatLevel);
+			
+            treeMap.DataSource = viewModel.PopulationDetails;
+            this.Content = treeMap;
+
 
 {% endhighlight %}
 
+{% endtabs %}  
 
-
-![](/js/TreeMap/Layout_images/Layout_img2.png)
+![SliceAndDiceAuto layout](Getting-Started_images/SliceAndDiceAuto.png)
 
 ## SliceAndDiceHorizontal
 
-**SliceAndDiceHorizontal** layout creates rectangles with high aspect ratio and displays them sorted horizontally.
+The **SliceAndDiceHorizontal** layout creates rectangles with high aspect ratio and displays them sorted horizontally.
+
+{% tabs %}  
+
+{% highlight xaml %}
+
+ <treemap:SfTreeMap x:Name="treeMap"  DataSource="{Binding PopulationDetails}" 
+        WeightValuePath="Population" ColorValuePath="Growth" LayoutType="SliceAndDiceHorizontal">
+            <treemap:SfTreeMap.LeafItemSettings>
+                <treemap:LeafItemSettings  Gap="2" BorderColor="#A9D9F7" LabelPath="Country" >
+                </treemap:LeafItemSettings>
+            </treemap:SfTreeMap.LeafItemSettings>
+            <treemap:SfTreeMap.Levels>
+                <treemap:TreeMapFlatLevel  HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
+                    <treemap:TreeMapFlatLevel.HeaderStyle>
+                        <treemap:Style Color= "Black"/>
+                    </treemap:TreeMapFlatLevel.HeaderStyle>
+                </treemap:TreeMapFlatLevel>
+            </treemap:SfTreeMap.Levels>          
+
+        </treemap:SfTreeMap>
+		
+{% endhighlight %}
 
 {% highlight C# %} 
 
-       SfTreeMap tree = new SfTreeMap();
-       tree.LayoutType = LayoutTypes.SliceAndDiceHorizontal;
+       PopulationViewModel viewModel = new PopulationViewModel();
+
+            SfTreeMap treeMap = new SfTreeMap();
+            treeMap.BackgroundColor = Color.White;
+            treeMap.ColorValuePath = "Growth";
+            treeMap.WeightValuePath = "Population";
+            treeMap.LayoutType = LayoutTypes.SliceAndDiceHorizontal;
+
+            LeafItemSettings leafSetting = new LeafItemSettings();
+            leafSetting.Gap = 2;
+            leafSetting.BorderColor = Color.FromHex("#A9D9F7");
+            leafSetting.LabelPath = "Country";
+            treeMap.LeafItemSettings = leafSetting;
+
+            TreeMapFlatLevel flatLevel = new TreeMapFlatLevel();
+            flatLevel.HeaderHeight = 20;
+            flatLevel.GroupPath = "Continent";
+            flatLevel.GroupGap = 5;
+            flatLevel.ShowHeader = true;
+            flatLevel.HeaderStyle = new Syncfusion.SfTreeMap.XForms.Style() { Color = Color.Black };
+            treeMap.Levels.Add(flatLevel);
+			
+            treeMap.DataSource = viewModel.PopulationDetails;
+            this.Content = treeMap;
 
 {% endhighlight %}
 
+{% endtabs %}  
 
-
-![](/js/TreeMap/Layout_images/Layout_img3.png)
+![SliceAndDiceHorizontal layout](Getting-Started_images/SliceAndDiceHorizontal.png)
 
 ## SliceAndDiceVertical
 
-**SliceAndDiceVertical** layout creates rectangles with high aspect ratio and displays them sorted vertical.
+The **SliceAndDiceVertical** layout creates rectangles with high aspect ratio and displays them sorted vertically.
+
+{% tabs %}  
+
+{% highlight xaml %}
+
+ <treemap:SfTreeMap x:Name="treeMap"  DataSource="{Binding PopulationDetails}" 
+        WeightValuePath="Population" ColorValuePath="Growth" LayoutType="SliceAndDiceVertical">
+            <treemap:SfTreeMap.LeafItemSettings>
+                <treemap:LeafItemSettings  Gap="2" BorderColor="#A9D9F7" LabelPath="Country" >
+                </treemap:LeafItemSettings>
+            </treemap:SfTreeMap.LeafItemSettings>
+            <treemap:SfTreeMap.Levels>
+                <treemap:TreeMapFlatLevel  HeaderHeight="20" GroupPath = "Continent" GroupGap =" 5" ShowHeader = "true">
+                    <treemap:TreeMapFlatLevel.HeaderStyle>
+                        <treemap:Style Color= "Black"/>
+                    </treemap:TreeMapFlatLevel.HeaderStyle>
+                </treemap:TreeMapFlatLevel>
+            </treemap:SfTreeMap.Levels>          
+
+        </treemap:SfTreeMap>
+		
+{% endhighlight %}
 
 {% highlight C# %} 
 
-        SfTreeMap tree = new SfTreeMap();
-        tree.LayoutType = LayoutTypes.SliceAndDiceVertical;
+       PopulationViewModel viewModel = new PopulationViewModel();
 
+            SfTreeMap treeMap = new SfTreeMap();
+            treeMap.BackgroundColor = Color.White;
+            treeMap.ColorValuePath = "Growth";
+            treeMap.WeightValuePath = "Population";
+            treeMap.LayoutType = LayoutTypes.SliceAndDiceVertical;
+
+            LeafItemSettings leafSetting = new LeafItemSettings();
+            leafSetting.Gap = 2;
+            leafSetting.BorderColor = Color.FromHex("#A9D9F7");
+            leafSetting.LabelPath = "Country";
+            treeMap.LeafItemSettings = leafSetting;
+
+            TreeMapFlatLevel flatLevel = new TreeMapFlatLevel();
+            flatLevel.HeaderHeight = 20;
+            flatLevel.GroupPath = "Continent";
+            flatLevel.GroupGap = 5;
+            flatLevel.ShowHeader = true;
+            flatLevel.HeaderStyle = new Syncfusion.SfTreeMap.XForms.Style() { Color = Color.Black };
+            treeMap.Levels.Add(flatLevel);
+			
+            treeMap.DataSource = viewModel.PopulationDetails;
+            this.Content = treeMap;
 
 {% endhighlight %}
 
+{% endtabs %}  
 
+![SliceAndDiceVertical layout](Getting-Started_images/SliceAndDiceVertical.png)
 
-![](/js/TreeMap/Layout_images/Layout_img4.png)
 

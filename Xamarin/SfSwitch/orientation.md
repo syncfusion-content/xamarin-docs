@@ -32,7 +32,7 @@ sfSwitch.Orientation = SwitchOrientation.Horizontal;
 
 {% endtabs %}
 
-![switch conrol having horizontal orientation](images/horizontal.png)
+![switch conrol having horizontal orientation](images/orientation.png)
 
 ### Vertical
 

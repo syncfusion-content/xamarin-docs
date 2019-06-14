@@ -33,7 +33,7 @@ sfSwitch.IsOn=true;
 
 {% endtabs %}
 
-![switch conrol displaying on state](images/ON.png)
+![switch control displaying on state](images/on.png)
 
 ### Off
 
@@ -57,7 +57,7 @@ sfSwitch.IsOn = false;
 
 {% endtabs %}
 
-![switch conrol displaying off state](images/off.png)
+![switch control displaying off state](images/off.png)
 
 ### Indeterminate
 

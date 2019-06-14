@@ -93,6 +93,19 @@ Syncfusion.Core.XForms.UWP.dll<br/>
 Syncfusion.Licensing.dll<br/>
 </td>
 </tr>
+<tr>
+<td>
+WPF
+</td>
+<td>
+Syncfusion.SfChart.WPF.dll<br/>
+Syncfusion.SfChart.XForms.WPF.dll<br/>
+Syncfusion.SfChart.XForms.dll<br/>
+Syncfusion.Core.XForms.dll<br/>
+Syncfusion.Core.XForms.WPF.dll<br/>
+Syncfusion.Licensing.dll<br/>
+</td>
+</tr>
 </table>
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
@@ -162,6 +175,28 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
       Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
    } 
 … 
+}
+
+{% endhighlight %}
+
+### Windows Presentation Foundation (WPF)
+
+To launch the chart in WPF, call the SfChartRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+
+{% highlight C# %} 
+
+public partial class MainWindow : FormsApplicationPage
+{
+     public MainWindow()
+     { 
+            InitializeComponent();
+
+            Forms.Init();
+
+            Syncfusion.SfChart.XForms.WPF.SfChartRenderer.Init();
+
+            LoadApplication(new App());
+     }
 }
 
 {% endhighlight %}

@@ -316,6 +316,80 @@ button.ImageAlignment = Alignment.End;
 
 ![SfButton with image with icon image alignment](images/Button_iconalignment.png)
 
+## Gradient Colors
+
+You can set the gradient color as background for SfButton using the [`GradientBackgroundColor`]() property. GradientBackgroundColor supports the following types of gradients:
+
+* `LinearGradient` - used to create linear gradient effects. You can use the `StartPoint` and `EndPoint` properties of SfLinearGradientBrush to define the direction of gradient color.
+* `RadialGradient` - used to create radial gradient effects. You can use the `Center` and `Radius` properties to customize the appearance of a radial gradient.
+
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:gradient ="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+
+. . . 
+
+<button:SfButton>
+    <button:SfButton.GradientBackgroundColor>
+        <gradient:SfLinearGradientBrush>
+            <gradient:SfLinearGradientBrush.GradientStops>
+                <gradient:SfGradientStop Color="Red" Offset="0"/>
+                <gradient:SfGradientStop Color="LightGreen" Offset="0.5"/>
+                <gradient:SfGradientStop Color="Blue" Offset="1"/>
+            </gradient:SfLinearGradientBrush.GradientStops>
+        </gradient:SfLinearGradientBrush>
+    </button:SfButton.GradientBackgroundColor>
+</button:SfButton>
+
+<button:SfButton>
+    <button:SfButton.GradientBackgroundColor>
+        <gradient:SfRadialGradientBrush Radius="1">
+            <gradient:SfRadialGradientBrush.GradientStops>
+                <gradient:SfGradientStop Color="Red" Offset="0"/>
+                <gradient:SfGradientStop Color="LightGreen" Offset="0.5"/>
+                <gradient:SfGradientStop Color="Blue" Offset="1"/>
+            </gradient:SfRadialGradientBrush.GradientStops>
+        </gradient:SfRadialGradientBrush>
+    </button:SfButton.GradientBackgroundColor>
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.XForms.Graphics;
+
+. . .
+
+SfButton linearButton = new SfButton();
+SfLinearGradientBrush linearGradientBrush = new SfLinearGradientBrush();
+linearGradientBrush.GradientStops = new GradientStopCollection()
+{
+    new SfGradientStop(){ Color = Color.Red, Offset = 0 },
+    new SfGradientStop(){ Color = Color.LightGreen, Offset = 0.5 },
+    new SfGradientStop(){ Color = Color.Blue, Offset = 1 }
+};
+
+linearButton.GradientBackgroundColor = linearGradientBrush;
+
+SfButton radialButton = new SfButton();
+SfRadialGradientBrush radialGradientBrush = new SfRadialGradientBrush() { Radius = 1 };
+radialGradientBrush.GradientStops = new GradientStopCollection()
+{
+    new SfGradientStop(){ Color = Color.Red, Offset = 0 },
+    new SfGradientStop(){ Color = Color.LightGreen, Offset = 0.5 },
+    new SfGradientStop(){ Color = Color.Blue, Offset = 1 }
+};
+
+radialButton.GradientBackgroundColor = radialGradientBrush;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> RadialGradient support has not been provided for UWP Platform.
+
+![Xamarin.Forms gradient support](images/Button_gradient.png)
+
 ## Command
 
 The [`Command`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~Command.html)  property is used to associate a command with an instance of SfButton. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.

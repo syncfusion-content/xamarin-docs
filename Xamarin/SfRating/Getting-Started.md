@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Getting Started with Syncfusion Rating control for Xamarin.Forms
+title: Getting Started with Syncfusion SfRating control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion Rating control for Xamarin.Forms platform.
 platform: Xamarin
 control: Rating
@@ -11,7 +11,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains you the steps to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.
+This section explains how to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.
 
 ## Adding SfRating reference
 
@@ -108,7 +108,9 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 The SfRating control is configured entirely in C# code or by using XAML markup. The following steps explains how to create a SfRating and configure its elements.
 
-* Adding namespace for the added assemblies. 
+## Adding namespace
+
+Add the following namespace.
 
 {% tabs %}
 
@@ -126,7 +128,9 @@ The SfRating control is configured entirely in C# code or by using XAML markup. 
 
 {% endtabs %}
 
-* Now add the SfRating control with a required optimal name by using the included namespace.
+## Initialize Rating
+
+Now, add the SfRating control with a required optimal name using the included namespace.
 
 {% tabs %}
 
@@ -138,8 +142,13 @@ The SfRating control is configured entirely in C# code or by using XAML markup. 
 
 {% highlight C# %}
 
-	SfRating rating = new SfRating();
-	this.Content = rating; 
+SfRating rating;
+public MainPage()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    this.Content = rating;
+} 
 
 {% endhighlight %}
 
@@ -147,21 +156,27 @@ The SfRating control is configured entirely in C# code or by using XAML markup. 
 
 ## Set Number of Rating Items
 
-Number of rating items which are to be displayed can be customized in SfRatingControl. User may wants to create the rating application with 5 items as follows.  
+The number of rating items to be displayed can be customized in the SfRating control. Users can create a rating application with 5 items as follows. The `ItemCount` property is used to define the number of rating items.
 
-N> The default property value is 5.
+N> The default value of ItemCount is 5.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="rating" ItemCount="5" />
+	<rating:SfRating ItemCount="5" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	rating.ItemCount=5;
+SfRating rating;
+public MainPage()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    rating.ItemCount = 5;
+}
 
 {% endhighlight %}
 
@@ -169,21 +184,27 @@ N> The default property value is 5.
 
 ## Set Value
 
-Display value can be set in SfRating control which is selected among the items. The following example shows the display value of 3 with 5 rating items. 
+The display value can be set in the SfRating control, which is selected among the items. The following code example shows the display value of 3 with 5 rating items. The `Value` property is used to set display value.
 
-N> By default, property value is 0.
+N> The default value of this property is 0.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="rating" Value="3" />
+	<rating:SfRating Value="3" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-    rating.Value=3;
+SfRating rating;
+public MainPage()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    rating.Value = 3;
+}
 
 {% endhighlight %}
 
@@ -191,31 +212,30 @@ N> By default, property value is 0.
 
 ## Precision
 
-SfRating control provides option to rate the items in full, half and exact value. This can be set through `Precision` property.
+The SfRating control provides an option to rate the items in full, half, and exact values. This can be set using the `Precision` property. By default, the precision mode is `Standard`.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="rating" Precision="Standard" />
+	<rating:SfRating Precision="Standard" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
+SfRating rating;
+public MainPage()
+{
+    InitializeComponent();
+    rating = new SfRating();
     rating.Precision = Precision.Standard;
+}
 
 {% endhighlight%}
 
 {% endtabs %}
 
-![gettingstartedimage](images/gettingstarted.png)
+![SfRating Getting Started ](images/gettingstarted.png)
 
-The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RatingSample15508632281303717040.zip) link.
-
-
-
-
-
-
-
+The complete Getting Started sample is available in this [documentation](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfRating_GettingStarted419194381.zip).

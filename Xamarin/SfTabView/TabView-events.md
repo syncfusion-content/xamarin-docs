@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TabItemTapped event for Syncfusion Essential SfTabView.
-description: TabItemTapped event in TabView control for Xamarin.Forms platform
+title: ItemTapped event for Syncfusion Essential SfTabView.
+description: ItemTapped event in TabView control for Xamarin.Forms platform
 platform: Xamarin.Forms
 control: TabView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # TabItemTapped
 
-Whenever the TapItem is tapped, the `TapItemTapped` event will occur. Using this event, you can Modify the selected Tab Item properties.
+Whenever the TabItem is tapped, the `TabItemTapped` event will occur. Using this event, you can Modify the selected Tab Item properties.
 
 {% tabs %}
 

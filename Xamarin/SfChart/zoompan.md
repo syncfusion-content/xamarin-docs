@@ -26,6 +26,7 @@ Following properties are used to configure the zooming feature,
 * [`SelectionRectStrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectStrokeDashArray.html) - used to change the stroke dashes of selection rectangle. 
 * [`SelectionRectFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectFillColor.html) - used to change the stroke fill color of selection rectangle. 
 
+N> EnableDirectionalZooming support has not been provided for MacOS Platform.
 
 Following code snippet illustrates how to enable zooming.
 

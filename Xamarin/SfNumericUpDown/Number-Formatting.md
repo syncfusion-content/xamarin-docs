@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Number Formatting in Syncfusion NumericUpDown control for Xamarin.Forms
+title: Number Formatting in Syncfusion NumericUpDown for Xamarin.Forms
 description: Learn how to add format String, enable parser mode and percent display mode for NumericUpDown control.
 platform: Xamarin
 control: NumericUpDown
@@ -23,14 +23,36 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 {% tabs %}
 	
 {% highlight C# %}
-	SfNumericUpDown numericUpDown=new SfNumericUpDown();
-	numericUpDown.FormatString="c";
+
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+numericUpDown.FormatString="c";
 	 
 {% endhighlight %}
 
 {% highlight xaml %}
 
 	<numeric:SfNumericUpDown x:Name="numericUpDown" FormatString="c"/>
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+### Display Percentage Notation
+
+`p` – Displays the value in percentage.
+	
+{% tabs %}	
+	
+{% highlight C# %}
+
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+numericUpDown.FormatString="p";
+	 
+{% endhighlight %}
+
+{% highlight xaml %}
+
+	<numeric:SfNumericUpDown x:Name="numericUpDown" FormatString="p"/>
 	
 {% endhighlight %}
 
@@ -48,68 +70,18 @@ N> The control displays the formatted text on lost focus. Default Value of `Form
 	
 {% endhighlight %}
 
-	
 {% highlight C# %}
 	
-	SfNumericUpDown numericUpDown=new SfNumericUpDown();
-	numericUpDown.FormatString="n";
-	 
-{% endhighlight %}
-
-{% endtabs %}
-
-### Display Percentage Notation
-
-`p` – Displays the value in Percentage.
-	
-{% tabs %}	
-	
-{% highlight C# %}
-
 SfNumericUpDown numericUpDown=new SfNumericUpDown();
-	numericUpDown.FormatString="p";
+numericUpDown.FormatString="n";
 	 
-{% endhighlight %}
-
-{% highlight xaml %}
-
-	<numeric:SfNumericUpDown x:Name="numericUpDown" FormatString="p"/>
-	
 {% endhighlight %}
 
 {% endtabs %}
 
-	
 N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericUpDown.
 
-![](images/format.png)
-
-## Parser Input Value
-
-The value of the SfNumericUpDown can be parsed based on the `ParsingMode` property. 
-
-N> The `ParsingMode` is of type Parsers containing enum values of Double and Decimal. The default Value for `ParsingMode` is Double.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<numeric:SfNumericUpDown x:Name="numericUpDown" ParsingMode="Decimal"/>
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfNumericUpDown numericUpDown=new SfNumericUpDown();
-	numericUpDown.ParsingMode=ParsingMode.Decimal;
-	  
-{% endhighlight %}
-
-
-{% endtabs %}
-
-
-![](images/ParserMode.png)
+![Display the value with number notation](images/format.png)
 
 ## Compute to Percentage
 
@@ -121,20 +93,22 @@ When the control is in percentage format, the value can be displayed in two ways
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown" PercentDisplayMode="Value"/>
+	<numeric:SfNumericUpDown x:Name="numericUpDown" Value="5" FormatString="p" PercentDisplayMode="Value"/>
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
 SfNumericUpDown numericUpDown=new SfNumericUpDown();
-	numericUpDown.FormatString="p";
-	numericUpDown.PercentDisplayMode=PercentDisplayMode.Value;
+numericUpDown.Value = 5;
+numericUpDown.FormatString="p";
+numericUpDown.PercentDisplayMode=PercentDisplayMode.Value;
 
 {% endhighlight %}
 
 {% endtabs %}
 
+![Display the value with PercentageDisplayMode as Compute](images/PercentDisplayMode_Value.png)
 
 * `Compute`: Displays the value computed by 100 with percentage symbol.
 
@@ -142,15 +116,16 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="numericUpDown" PercentDisplayMode="Compute"/>
+	<numeric:SfNumericUpDown x:Name="numericUpDown" Value="5" FormatString="p" PercentDisplayMode="Compute"/>
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
 SfNumericUpDown numericUpDown=new SfNumericUpDown();
-	numericUpDown.FormatString="p";
-	numericUpDown.PercentDisplayMode=PercentDisplayMode.Compute;
+numericUpDown.Value = "5";
+numericUpDown.FormatString="p";
+numericUpDown.PercentDisplayMode=PercentDisplayMode.Compute;
 
 {% endhighlight %}
 
@@ -158,5 +133,29 @@ SfNumericUpDown numericUpDown=new SfNumericUpDown();
 
 N> The control displays the percent value on lost focus. 
 
+![Display the value with PercentageDisplayMode as Compute](images/PercentDisplayMode_Compute.png)
 
-![](images/PercentageDisplayMode.png)
+## Set EnableGroupSeparator 
+
+The `EnableGroupSeparator` property is used to get rid of the comma in the Value of SfNumericUpDown.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	   <numeric:SfNumericUpDown x:Name="NumericUpDown" Value="12345" EnableGroupSeparator="True"/>
+	
+{% endhighlight %}
+
+{% highlight c# %}
+ 
+SfNumericUpDown NumericUpDown=new SfNumericUpDown();
+NumericUpDown.Value=12345;
+NumericUpDown.EnableGroupSeparator = true;
+this.Content = NumericUpDown;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Display the SfNumericUpDown control with EnableGroupSeparator](images/enablegroupseparator.png)

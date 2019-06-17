@@ -10,15 +10,9 @@ documentation: ug
 
 The SfNumericUpDown value can be localized to any specific culture. It can be specified by setting the `Culture` property with `System.Globalization.CultureInfo` object instance.
 
-N> Default `Culture` property value is en-US.
+N> You cannot set value to the Culture property in XAML.
 
 {% tabs %}
-
-{% highlight xaml %}
-
-	<numeric:SfNumericUpDown x:Name="numericUpDown" Culture="hi-IN"/>
-	
-{% endhighlight %}
 
 {% highlight C# %}
 
@@ -28,7 +22,7 @@ N> Default `Culture` property value is en-US.
 
 {% endtabs %}
 
-![](images/Culture.png)
+![Display the SfNumericUpDown control with culture](images/Culture.png)
 
 ## Change Localization of Return key text
 

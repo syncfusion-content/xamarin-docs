@@ -41,7 +41,7 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![](images/textcolor.png)
+![Display SfNumericTextBox with TextColor](images/textcolor.png)
 
 ### BackgroundColor
 
@@ -67,7 +67,7 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![](images/backgroundcolor.png)
+![Display SfNumericTextBox with BackgroundColor](images/backgroundcolor.png)
 
 ### BorderColor
 
@@ -92,7 +92,7 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![](images/bordercolor.png)
+![Display SfNumericTextBox with BorderColor](images/bordercolor.png)
 
 ### WatermarkColor
 
@@ -102,20 +102,20 @@ To set the WatermarkColor color in XAML as well as in C#:
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox  x:Name="numericTextBox" AllowNull="true" Value="123" WatermarkColor="Blue" />
+	<syncfusion:SfNumericTextBox  x:Name="numericTextBox" AllowNull="true" WatermarkColor="Blue" Watermark="Enter a Number"/>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfNumericTextBox numericTextBox=new SfNumericTextBox();
-numericTextBox.WatermarkColor = Color.Blue;
-numericTextBox.Value = 123;
 numericTextBox.AllowNull=true;
+numericTextBox.WatermarkColor = Color.Blue;
+numericTextBox.Watermark = "Enter a Number"
 this.Content = numericTextBox;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/watermarkcolor.png)
+![Display SfNumericTextBox with WatermarkColor](images/watermarkcolor.png)

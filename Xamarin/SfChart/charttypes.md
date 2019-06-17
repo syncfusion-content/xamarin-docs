@@ -2908,14 +2908,14 @@ FunnelSeries funnelSeries = new FunnelSeries()
 
 ## Waterfall Series
 
-[`WaterfallSeries`]() clarifies the cumulative effect of set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles. 
+[`WaterfallSeries`]() clarifies the cumulative effect of a set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles. 
 
 * [`SummaryBindingPath`]() – Gets or sets the string value that indicates the sum of previous segments in series.
-* [`SummarySegmentColor`]() – Used to change the color of summary segment in series.
-* [`NegativeSegmentColor`]() – Used to change the color of negative segment in series
-* [`AllowAutoSum`]() – Enables or disables the segment has been drawn based on the sum value of previous segments. By default, the property value is true. When disabling this property, it renders the segment by using the y value of provided ItemsSource collection.
+* [`SummarySegmentColor`]() – Changes the color of summary segment in series.
+* [`NegativeSegmentColor`]() – Changes the color of negative segment in series.
+* [`AllowAutoSum`]() – Enables or disables the segment that has been drawn based on the sum value of previous segments. By default, the value of this property is true. When disabling this property, it renders the segment by using the y-value of provided ItemsSource collection.
 * [`ShowConnectorLine`]() – Enables or disables the connector line of series. By default, the property value is true.
-* [`ConnectorLineStyle`]() – Used to customize the appearance of connector line style.
+* [`ConnectorLineStyle`]() – Customizes the appearance of connector line style.
 
 {% tabs %}
 

@@ -2952,3 +2952,5 @@ chart.Series.Add(waterfallSeries);
 {% endhighlight %}
 
 {% endtabs %}
+
+![Waterfall chart type in Xamarin.Forms](charttypes_images/Waterfall.png)

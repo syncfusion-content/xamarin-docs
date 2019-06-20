@@ -1137,7 +1137,7 @@ chart.SecondaryAxis = numerical;
 
 [`RangeStyles`]():
 Axis GridLines, TickLines and label can be customized for a specific range of an axis using the [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html) [`RangeStyles`]() property.
-ChartAxisRangeStyle has the following properties to customize the axis:
+[`ChartAxisRangeStyle`]() has the following properties to customize the axis:
 
 * [`Start`]() - Used to set the [`start`]() range of the axis to customize.
 * [`End`]() - Used to set the [`end`]() range of the axis to customize.

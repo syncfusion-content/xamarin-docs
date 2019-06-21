@@ -11,9 +11,22 @@ documentation: ug
 
 Resource view displays the resources as discrete views integrated with the scheduler to display appointments in all types of schedule views. It provides an intuitive user interface, which allows users to select single or multiple resources and display the events associated with the selected resources with efficient and effective utilization. Each resource can be assigned to a unique color to more easily identify the resource associated with an appointment. 
 
-You can add resources that can be assigned to appointments using the [ScheduleResources](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResource.html) property of `SfSchedule`. You need to set the [Name](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResource~Name.html), [Id](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResource~Id.html), and [Color](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResource~Color.html) properties of [ScheduleResource]() to create a resource.
+You can add resources that can be assigned to appointments using the [ScheduleResources](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ScheduleResources.html) property of `SfSchedule`. You need to set the [Name](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResource~Name.html), [Id](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResource~Id.html), and [Color](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResource~Color.html) properties of [ScheduleResource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResource.html) to create a resource.
 
 {% tabs %}
+{% highlight xaml %}
+<syncfusion:SfSchedule
+          x:Name="schedule"
+          ScheduleView="WeekView" 
+          ShowResourceView="True">
+          <syncfusion:SfSchedule.ScheduleResources>
+               <syncfusion:ScheduleResource 
+                    Name="Brooklyn" 
+                    Id="5601" 
+                    Color="#FF3399" />
+          </syncfusion:SfSchedule.ScheduleResources>
+</syncfusion:SfSchedule>
+{% endhighlight %}
 {% highlight c# %}
 // Creating an instance for schedule resource collection.
 ObservableCollection<object> resources = new ObservableCollection<object>();
@@ -23,7 +36,7 @@ resources.Add(new ScheduleResource()
 { 
      Name = "Brooklyn", 
      Id = 5601, 
-     Color = Color.FromHex("#FF339933") 
+     Color = Color.FromHex("#FF3399") 
 });
 
 // Adding schedule resource collection to schedule resources of SfSchedule.
@@ -74,7 +87,7 @@ schedule.DataSource = scheduleAppointmentCollection;
 
 You can associate resources to the custom appointments using the equivalent field of `ResourceIds` in custom appointment class.
 
-### Creating custom appointments
+### Creating custom events
 
 You can create a custom class `Event` with mandatory fields `From`, `To`, `EventName`, and `Resources`. 
 
@@ -102,15 +115,15 @@ You can map the properties of `Meeting` class with our `SfSchedule` control usin
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfSchedule x:Name="schedule" ScheduleView="DayView" DataSource="{Binding Meetings}">
-	<syncfusion:SfSchedule.AppointmentMapping>
-		<syncfusion:ScheduleAppointmentMapping
-			SubjectMapping="EventName"
-			ColorMapping="Color"
-			StartTimeMapping="From"
-			EndTimeMapping="To"
-			ResourceIdsMapping="Resources">
-		</syncfusion:ScheduleAppointmentMapping>
-	</syncfusion:SfSchedule.AppointmentMapping>
+     <syncfusion:SfSchedule.AppointmentMapping>
+          <syncfusion:ScheduleAppointmentMapping
+               SubjectMapping="EventName"
+               ColorMapping="Color"
+               StartTimeMapping="From"
+               EndTimeMapping="To"
+               ResourceIdsMapping="Resources">
+          </syncfusion:ScheduleAppointmentMapping>
+     </syncfusion:SfSchedule.AppointmentMapping>
 </syncfusion:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
@@ -143,8 +156,9 @@ meeting.Resources = new ObservableCollection<object> () {5601, 5604};
 
 >**NOTE**
 * You can also associate custom resources to the appointments by using the equivalent field of resource `Id` in custom resource class.
-* No appointment will be displayed or selected when the `ShowResourceView` property is set to true.
-* Appointments with single resource will be displayed in resource `Color`. 
+* No appointment will be displayed when the `ShowResourceView` property is set to false.
+* Appointments with single resource will be displayed in resource `Color`. Appointments with multiple resources will be displayed in the default appointment `Color`.
+
 
 ## Mapping
 
@@ -233,6 +247,8 @@ schedule.ScheduleResources = Employees;
 {% endhighlight %}
 {% endtabs %}
 
+You can download the custom resource demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/Resource-view/tree/master/ResourceView).
+
 ## Selection mode
 
 The `SfSchedule` control provides support to select single or multiple resources using the [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceViewSettings~SelectionMode.html) property of [ResourceViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ResourceViewSettings.html) in `SfSchedule`.
@@ -254,7 +270,7 @@ schedule.ResourceViewSettings = resourceViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Selection mode in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-selection-mode.jpg)
+![Selection mode in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-selection-mode.png)
 
 ## Programmatic resource selection
 
@@ -303,7 +319,7 @@ schedule.ResourceViewHeight = 200;
 {% endhighlight %}
 {% endtabs %}
 
-![Resource view height in xamarin forms schedule resources](resource-view-images/xamarin-forms-resource-view-height.jpg)
+![Resource view height in xamarin forms schedule resources](resource-view-images/xamarin-forms-resource-view-height.png)
 
 ## Visible resource count
 
@@ -317,7 +333,7 @@ You can customize the number of visible resources in the current view using the 
           <schedule:ResourceViewSettings.VisibleResourceCount>
                <OnPlatform x:TypeArguments="x:Int32"
                               iOS="5"
-                              Android="5" 
+                              Android="4" 
                               WinPhone="10" />
           </schedule:ResourceViewSettings.VisibleResourceCount>
           </schedule:ResourceViewSettings>
@@ -331,7 +347,7 @@ schedule.ResourceViewSettings = resourceViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Visible resource count in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-visible-resource-count.jpg)
+![Visible resource count in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-visible-resource-count.png)
 
 ## Resource item tapped event
 
@@ -357,13 +373,13 @@ You can customize the text color of the resource name using the [DisplayLabelTex
 {% highlight xaml %}
 <schedule:SfSchedule ScheduleView="WeekView" ShowResourceView="True">
      <schedule:SfSchedule.ResourceViewSettings>
-          <schedule:ResourceViewSettings DisplayLabelTextColor="#ff0019" />
+          <schedule:ResourceViewSettings DisplayLabelTextColor="#8490f9" />
      </schedule:SfSchedule.ResourceViewSettings>
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}
 ResourceViewSettings resourceViewSettings = new ResourceViewSettings();
-resourceViewSettings.DisplayLabelTextColor = Color.FromHex("#ff0019");
+resourceViewSettings.DisplayLabelTextColor = Color.FromHex("#8490f9");
 schedule.ResourceViewSettings = resourceViewSettings;
 {% endhighlight %}
 {% endtabs %}
@@ -386,6 +402,22 @@ The default appearance of the resource can be customized using the [ResourceItem
 ### Creating a DataTemplate
 
 {% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<Button xmlns="http://xamarin.com/schemas/2014/forms"
+        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+        x:Class="ScheduleSample.ResourceTemplate"
+        Text="{Binding Name}" 
+        TextColor="White"
+        FontSize="15"
+        BackgroundColor="{Binding Color}"
+        BorderColor="Black"
+        BorderWidth="2">
+</Button>
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
 {% highlight c# %}
 public class ResourceDataTemplate : DataTemplate
 {
@@ -395,19 +427,14 @@ public class ResourceDataTemplate : DataTemplate
      {
           ResourceTemplate = new DataTemplate(() =>
           {
-               return new Button
-               {
-               Text = "Template",
-               TextColor = Color.White,
-               BackgroundColor = Color.LightGreen
-               };
+               return new ResourceTemplate();
           });
      }
 }
 {% endhighlight %}
 {% endtabs %}
 
-![Data template in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-data-template.jpg)
+![Data template in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-data-template.png)
 
 ### Template selector
 
@@ -419,16 +446,15 @@ public class ResourceDataTemplate : DataTemplate
      <ResourceDictionary>
           <local:ResourceTemplateSelector x:Key="resourceDataTemplateSelector"/>
      </ResourceDictionary>
-</ContentPage.Resources>
-
-
+</ContentPage.Resources>     
+<ContentPage.Content>
      <schedule:SfSchedule x:Name="schedule" 
                          ScheduleView="WeekView" 
-                         ShowResourceView="True"                                      
+                         ShowResourceView="True"               
                          ResourceItemTemplate="{StaticResource resourceDataTemplateSelector}"/>
+</ContentPage.Content>                         
 {% endhighlight %}
 {% endtabs %}
-
 
 ### Creating a DataTemplateSelector
 
@@ -488,4 +514,6 @@ Used button to display the resources
 {% endhighlight %}
 {% endtabs %}
 
-![Data template selector in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-data-template-selector.jpg)
+![Data template selector in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-data-template-selector.png)
+
+You can download the template selector demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/Resource-view/tree/master/TemplatedResourceView).

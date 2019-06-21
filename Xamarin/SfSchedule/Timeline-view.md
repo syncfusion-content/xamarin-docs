@@ -9,7 +9,7 @@ documentation: ug
 
 # Timeline view
 
-`TimelineView` Xamarin.Forms scheduler displays the dates in horizontal time axis with the desired day`s count. You can see the past or future dates by scrolling right or left. Each view displays events accurately across the time slots with an intuitive drag-and-drop feature. Provides support to highlight selected region of time slots and handle interaction.
+`TimelineView` Xamarin.Forms scheduler displays the dates in horizontal time axis with the desired day's count. You can see the past or future dates by scrolling right or left. Each view displays events accurately across the time slots with an intuitive drag-and-drop feature. Provides support to highlight selected region of time slots and handle interaction.
 
 {% tabs %}
 {% highlight xaml %}
@@ -46,7 +46,7 @@ schedule.TimelineSettings = timelineViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Timeline view in xamarin forms](timeline-view-images/xamarin-forms-timeline-view-days-count.jpg)
+![Timeline view in xamarin forms](timeline-view-images/xamarin-forms-timeline-view-days-count.png)
 
 ## Timeline view based on day, week, work week and month.
 
@@ -65,11 +65,8 @@ You can customize [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/
     <schedule:SfSchedule.TimelineViewSettings>
         <!--setting visible hours properties-->
         <schedule:TimelineViewSettings
-            StartHour="07.5"
-            EndHour="18.5">
-            <schedule:TimelineViewSettings.LabelSettings>
-                <schedule:TimelineLabelSettings TimeFormat="hh:mm" />
-            </schedule:TimelineViewSettings.LabelSettings>
+            StartHour="09"
+            EndHour="13">
         </schedule:TimelineViewSettings>
     </schedule:SfSchedule.TimelineViewSettings>
 </schedule:SfSchedule>    
@@ -78,16 +75,13 @@ You can customize [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/
 schedule.ScheduleView = ScheduleView.TimelineView;
 //Creating new instance of TimelineViewSettings
 TimelineViewSettings timelineViewSettings = new TimelineViewSettings();
-TimelineLabelSettings labelSettings = new TimelineLabelSettings();
-labelSettings.TimeFormat = "hh:mm";
-timelineViewSettings.StartHour = 07.5;
-timelineViewSettings.EndHour = 18.5;
-timelineViewSettings.LabelSettings = labelSettings;
+timelineViewSettings.StartHour = 09;
+timelineViewSettings.EndHour = 13;
 schedule.TimelineViewSettings = timelineViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Working hours customization in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-slot-customisation.jpg)
+![Working hours customization in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-slot-customisation.png)
 
 >**NOTE**
 * `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
@@ -116,12 +110,12 @@ You can enable/disable the touch interaction of a special time region by using [
     <!--setting Special time regions property-->
     <schedule:SfSchedule.SpecialTimeRegions>
         <schedule:TimeRegionSettings 
-            StartHour="13" 
-            EndHour="14" 
+            StartHour="12" 
+            EndHour="13" 
             Text="Lunch"
             CanEdit="False"
-            Color="Black"
-            TextColor="White"/>
+            Color="#EAEAEA"
+            TextColor="Black"/>
     </schedule:SfSchedule.SpecialTimeRegions>
 </schedule:SfSchedule>     
 {% endhighlight %}
@@ -130,18 +124,18 @@ schedule.ScheduleView = ScheduleView.TimelineView;
 ObservableCollection<TimeRegionSettings> specialTimeRegions = new ObservableCollection<TimeRegionSettings>();
 //Setting Special time regions property
 TimeRegionSettings timeRegionSettings = new TimeRegionSettings();
-timeRegionSettings.StartHour = 13;
-timeRegionSettings.EndHour = 14;
+timeRegionSettings.StartHour = 12;
+timeRegionSettings.EndHour = 13;
 timeRegionSettings.Text = "Lunch";
-timeRegionSettings.Color = Color.Black;
-timeRegionSettings.TextColor = Color.White;
+timeRegionSettings.Color = Color.FromHex("#EAEAEA");
+timeRegionSettings.TextColor = Color.Black;
 timeRegionSettings.CanEdit = false;
 specialTimeRegions.Add(timeRegionSettings);
 schedule.SpecialTimeRegions = specialTimeRegions;
 {% endhighlight %}
 {% endtabs %}
 
-![Special time region in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-special-time-region.jpg)
+![Special time region in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-special-time-region.png)
 
 ## Time interval
 
@@ -157,7 +151,7 @@ schedule.TimeInterval = 180
 {% endhighlight %}
 {% endtabs %}
 
-![Time interval in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-interval.jpg)
+![Time interval in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-interval.png)
 
 ## Time interval height
 
@@ -172,7 +166,7 @@ schedule.TimeIntervalHeight = 180;
 {% endhighlight %}
 {% endtabs %}
 
-![Time interval height in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-interval-height.jpg)
+![Time interval height in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-interval-height.png)
 
 ## Nonworking days
 
@@ -206,7 +200,7 @@ schedule.FirstDayOfWeek = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![First day of week in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-first-day-of-week.jpg)
+![First day of week in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-first-day-of-week.png)
 
 >**NOTE**
 In Timeline view, `FirstDayOfWeek` will be applied only when `DayCounts` property of `TimelineViewSettings` is 7.
@@ -234,7 +228,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Appointment height in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-appointment-height.jpg)
+![Appointment height in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-appointment-height.png)
 
 >**NOTE**
 When a greater number of appointments are added in same time slot, appointment height will be calculated automatically without considering the `AppointmentHeight` property to display all the appointment in the view. 
@@ -276,8 +270,8 @@ You can customize the default appearance of view header in Timeline view by usin
 <schedule:SfSchedule x:Name="schedule" ScheduleView =" TimelineView">
     <schedule:SfSchedule.ViewHeaderStyle>
         <schedule:ViewHeaderStyle
-                BackgroundColor="#009688" 
-                DateTextColor="#FFFFFF" 
+                BackgroundColor="#a9b1fc" 
+                DateTextColor="Black" 
                 DateFontFamily="Arial">
         </schedule:ViewHeaderStyle>
     </schedule:SfSchedule.ViewHeaderStyle>
@@ -289,14 +283,14 @@ SfSchedule schedule = new SfSchedule();
 schedule.ScheduleView = ScheduleView.TimelineView;
 //Customize the schedule view header
 ViewHeaderStyle viewHeaderStyle = new ViewHeaderStyle();
-viewHeaderStyle.BackgroundColor = Color.FromHex("#009688");
-viewHeaderStyle.DateTextColor = Color.FromHex("#FFFFFF");
+viewHeaderStyle.BackgroundColor = Color.FromHex("#a9b1fc");
+viewHeaderStyle.DateTextColor = Color.Black;
 viewHeaderStyle.DateFontFamily = "Arial";
 schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![View header customization in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-view-header-customization.jpg)
+![View header customization in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-view-header-customization.png)
 
 >**NOTE**
 `FontAttributes` and `FontFamily` are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
@@ -313,7 +307,7 @@ schedule.ViewHeaderHeight = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![View header height in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-view-header-height.jpg)
+![View header height in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-view-header-height.png)
 
 ### View header date format
 
@@ -348,7 +342,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![View header date format in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-view-header-date-format.jpg)
+![View header date format in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-view-header-date-format.png)
 
 ## Timeslot customization
 
@@ -360,9 +354,9 @@ You can customize the appearance of time slots using [Color](https://help.syncfu
     <schedule:SfSchedule.TimelineViewSettings>
         <!--setting timeline view settings properties -->
         <schedule:TimelineViewSettings
-            Color="#fcf3c9"
-            BorderColor="#fceb9f"
-            BorderWidth="5" />
+            Color="#e8eaf9"
+            BorderColor="#8490f9"
+            BorderWidth="2" />
     </schedule:SfSchedule.TimelineViewSettings>
 </schedule:SfSchedule>
 {% endhighlight %}
@@ -370,14 +364,14 @@ You can customize the appearance of time slots using [Color](https://help.syncfu
 schedule.ScheduleView = ScheduleView.TimelineView;
 //Create new instance of TimelineViewSettings
 TimelineViewSettings timelineViewSettings = new TimelineViewSettings();
-timelineViewSettings.BorderColor = Color.FromHex("#fceb9f");
-timelineViewSettings.Color = Color.FromHex("#fcf3c9");
-timelineViewSettings.BorderWidth = 5;
+timelineViewSettings.BorderColor = Color.FromHex("#8490f9");
+timelineViewSettings.Color = Color.FromHex("#e8eaf9");
+timelineViewSettings.BorderWidth = 2;
 schedule.TimelineViewSettings = timelineViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Time slot customization in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-slot-customization.jpg)
+![Time slot customization in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-slot-customization.png)
 
 ## Time label customization
 
@@ -407,7 +401,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Time label format in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-format.jpg)
+![Time label format in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-format.png)
 
 ### Time label appearance
 
@@ -420,7 +414,7 @@ You can customize the color for the labels which are mentioning the time, by set
         <!--setting time format property-->
         <schedule:TimelineViewSettings>
             <schedule:TimelineViewSettings.LabelSettings>
-                <schedule:TimelineLabelSettings TimeLabelColor="#8282ff" />
+                <schedule:TimelineLabelSettings TimeLabelColor="#8490f9" />
             </schedule:TimelineViewSettings.LabelSettings>
         </schedule:TimelineViewSettings>
     </schedule:SfSchedule.TimelineViewSettings>
@@ -431,13 +425,13 @@ schedule.ScheduleView = ScheduleView.TimelineView;
 //Creating new instance of TimelineViewSettings
 TimelineViewSettings timelineViewSettings = new TimelineViewSettings();
 TimelineLabelSettings labelSettings = new TimelineLabelSettings();
-labelSettings.TimeLabelColor = Color.FromHex("#8282ff");
+labelSettings.TimeLabelColor = Color.FromHex("#8490f9");
 timelineViewSettings.LabelSettings = labelSettings;
 schedule.TimelineViewSettings = timelineViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Time label appearance in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-appearance.jpg)
+![Time label appearance in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-appearance.png)
 
 ### Time Label size
 
@@ -461,13 +455,13 @@ schedule.ScheduleView = ScheduleView.TimelineView;
 //Creating new instance of TimelineViewSettings
 TimelineViewSettings timelineViewSettings = new TimelineViewSettings();
 TimelineLabelSettings labelSettings = new TimelineLabelSettings();
-labelSettings.TimeLabelSize = 15;	
+labelSettings.TimeLabelSize = 10;	
 timelineViewSettings.LabelSettings = labelSettings;
 schedule.TimelineViewSettings = timelineViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Time label size in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-size.jpg)
+![Time label size in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-size.png)
 
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
@@ -482,21 +476,21 @@ You can customize the timeslot selection by using [SelectionStyle](https://help.
 {% tabs %}
 {% highlight XAML %}
 <schedule:SfSchedule x:Name="schedule" ScheduleView="TimelineView">
-	<schedule:SfSchedule.SelectionStyle>
-		  <schedule:SelectionStyle 
-			  BackgroundColor="Blue"
-			  BorderColor="Black"
-			  BorderThickness="5" 
-			  BorderCornerRadius="5">
-		  </schedule:SelectionStyle>
-	</schedule:SfSchedule.SelectionStyle>
+    <schedule:SfSchedule.SelectionStyle>
+            <schedule:SelectionStyle 
+                BackgroundColor="#8490f9"
+                BorderColor="Black"
+                BorderThickness="5" 
+                BorderCornerRadius="5">
+            </schedule:SelectionStyle>
+    </schedule:SfSchedule.SelectionStyle>
 </schedule:SfSchedule> 
 {% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.TimelineView;
 //Create new instance of SelectionStyle
 SelectionStyle selectionStyle = new SelectionStyle();
-selectionStyle.BackgroundColor = Color.Blue;
+selectionStyle.BackgroundColor = Color.FromHex("#8490f9");
 selectionStyle.BorderColor = Color.Black;
 selectionStyle.BorderThickness = 5;
 selectionStyle.BorderCornerRadius = 5;
@@ -504,7 +498,7 @@ schedule.SelectionStyle = selectionStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![Selection style in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-selection-style.jpg)
+![Selection style in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-selection-style.png)
 
 ### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionView.html) property of `SfSchedule`.
@@ -531,7 +525,7 @@ schedule.SelectionView = customView;
 {% endhighlight %}
 {% endtabs %}
 
-![Custom selection view in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-custom-selection-view.jpg)
+![Custom selection view in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-custom-selection-view.png)
 
 ### Programmatic selection
 You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
@@ -554,8 +548,10 @@ schedule.SelectedDate = null;
 
 You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
 
-![Programatic selection in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-programatic-selection.jpg)
+![Programatic selection in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-programatic-selection.png)
 
 >**NOTE**
 * `SfSchedule` does not support multiple selection.
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
+
+You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/Timeline-view).

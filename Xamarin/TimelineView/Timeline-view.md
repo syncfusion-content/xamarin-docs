@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting started | Timeline view | Xamarin | Syncfusion
-description: Getting started with Xamarin Forms Timeline view.
+title: Timeline view scheduler | Xamarin.Forms | Syncfusion
+description: Xamarin.Forms scheduler timeline view displays the dates in a horizontal time axis with the desired days count, displays events accurately across the time slots and supports drag-and-drop interface.
 platform: xamarin
 control: SfScheduler
 documentation: ug
 ---
 
-# Getting started
+# Timeline view
 
-[TimelineView]() Xamarin.Forms scheduler displays the dates in horizontal time axis with the desired day`s count. You can see the past or future dates by scrolling right or left. Each view displays events accurately across the time slots with an intuitive drag-and-drop feature. Provides support to highlight selected region of time slots and handle interaction.
+`TimelineView` Xamarin.Forms scheduler displays the dates in horizontal time axis with the desired day`s count. You can see the past or future dates by scrolling right or left. Each view displays events accurately across the time slots with an intuitive drag-and-drop feature. Provides support to highlight selected region of time slots and handle interaction.
 
 {% tabs %}
 {% highlight xaml %}
@@ -24,7 +24,7 @@ schedule.ScheduleView = ScheduleView.TimelineView;
 
 ## Timeline view days count
 
-You can customize the number of days in timeline view by using [DaysCount]() property of [TimelineViewSettings](). By default, timeline days count value is -1 and single day will be visible.
+You can customize the number of days in timeline view by using [DaysCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~DaysCount.html) property of [TimelineViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings.html). By default, timeline days count value is -1 and single day will be visible.
 
 {% tabs %}
 {% highlight xaml %}
@@ -50,12 +50,14 @@ schedule.TimelineSettings = timelineViewSettings;
 
 ## Timeline view based on day, week, work week and month.
 
+You can achieve timeline day, timeline week, timeline work week and timeline month views with default value of `DaysCount`, by dynamically switching between day, week, work week and month views to timeline view with respective visible dates. 
+
 >**NOTE**
-For other value of `DaysCount`, only timeline view visible dates will be displayed as mentioned days count on schedule view switching. 
+For other value of `DaysCount`, only timeline view visible dates will be displayed as mentioned days count on dynamic view switching.
 
 ## Customized working hours
 
-You can customize [StartHour]() and [EndHour]() properties of Timeline view, to show only the required time duration for end users. You can also set `StartHour` and `EndHour` in double value which will be converted to time to show required time duration in minutes. Default value for `StartHour` and `EndHour` value is 0 to 24 to show all the time slots in Timeline View. 
+You can customize [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~EndHour.html) properties of Timeline view, to show only the required time duration for end users. You can also set `StartHour` and `EndHour` in double value which will be converted to time to show required time duration in minutes. Default value for `StartHour` and `EndHour` value is 0 to 24 to show all the time slots in Timeline View. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -98,15 +100,15 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ## Special time regions
 
-You can restrict user interaction like selection and highlight specific region of time in Timeline view by adding special time region in the [SpecialTimeRegions]() property of `SfSchedule`. You need to set [StartHour]() and [EndHour]() properties of [TimeRegionSettings]() to create a special time region. You can also set `StartHour` and `EndHour` in double value which will be converted to time to show required time duration in minutes. By default, `StatHour` and `EndHour` values are 0.
+You can restrict user interaction like selection and highlight specific region of time in Timeline view by adding special time region in the [SpecialTimeRegions](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SpecialTimeRegions.html) property of `SfSchedule`. You need to set [StartHour](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeRegionSettings~StartHour.html) and [EndHour](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeRegionSettings~EndHour.html) properties of [TimeRegionSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeRegionSettings.html) to create a special time region. You can also set `StartHour` and `EndHour` in double value which will be converted to time to show required time duration in minutes. By default, `StatHour` and `EndHour` values are 0.
 
 ### Special time region appearance
 
-You can customize the appearance of SpecialTimeRegion by using [Color]() and [TextColor]() properties of `TimeRegionSettings`.
+You can customize the appearance of SpecialTimeRegion by using [Color](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeRegionSettings~Color.html) and [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeRegionSettings~TextColor.html) properties of `TimeRegionSettings`.
 
 ### Selection restriction in time slots
 
-You can enable/disable the touch interaction of a special time region by using [CanEdit]() property of `TimeRegionSettings`. By default, it is true.
+You can enable/disable the touch interaction of a special time region by using [CanEdit](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimeRegionSettings~CanEdit.html) property of `TimeRegionSettings`. By default, it is true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -143,7 +145,7 @@ schedule.SpecialTimeRegions = specialTimeRegions;
 
 ## Time interval
 
-You can customize the interval of time slots in Timeline view by setting [TimeInterval]() property of `SfSchedule`.
+You can customize the interval of time slots in Timeline view by setting [TimeInterval](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeInterval.html) property of `SfSchedule`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -159,8 +161,7 @@ schedule.TimeInterval = 180
 
 ## Time interval height
 
-You can customize the interval height of time slots in Timeline view by setting [TimeIntervalHeight]() property of `SfSchedule`.
-
+You can customize the interval height of time slots in Timeline view by setting [TimeIntervalHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeIntervalHeight.html
 {% tabs %}
 {% highlight xaml %}
 <schedule:SfSchedule x:Name="schedule" ScheduleView="TimelineView" TimeIntervalHeight="180"/>     
@@ -175,7 +176,7 @@ schedule.TimeIntervalHeight = 180;
 
 ## Nonworking days
 
-You can customize the non-working days in Timeline view by using [NonWorkingsDays]() property of `TimelineViewSettings`. By default, it is null.
+You can customize the non-working days in Timeline view by using [NonWorkingsDays](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~NonWorkingsDays.html) property of `TimelineViewSettings`. By default, it is null.
 
 {% tabs %}
 {% highlight c# %}
@@ -212,7 +213,7 @@ In Timeline view, `FirstDayOfWeek` will be applied only when `DayCounts` propert
 
 ## Appointment height
 
-You can customize the height of the appointment in Timeline view by using [AppointmentHeight]() property of `TimelineViewSettings`. By default, its value is 50.
+You can customize the height of the appointment in Timeline view by using [AppointmentHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~AppointmentHeight.html) property of `TimelineViewSettings`. By default, its value is 50.
 
 {% tabs %}
 {% highlight xaml %}
@@ -268,7 +269,7 @@ private void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e)
 
 ## View header customization
 
-You can customize the default appearance of view header in Timeline view by using `ViewHeaderStyle` property of `SfSchedule`.
+You can customize the default appearance of view header in Timeline view by using [ViewHeaderStyle](https://help.syncfusion.com/xamarin/sfschedule/dayview#viewheader-appearance) property of `SfSchedule`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -300,7 +301,7 @@ schedule.ViewHeaderStyle = viewHeaderStyle;
 >**NOTE**
 `FontAttributes` and `FontFamily` are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
 
-You can customize the height of the view header in Timeline view by setting `ViewHeaderHeight` property of `SfSchedule`.
+You can customize the height of the view header in Timeline view by setting [ViewHeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderHeight.html) property of `SfSchedule`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -316,7 +317,7 @@ schedule.ViewHeaderHeight = 50;
 
 ### View header date format
 
-You can customize the date format of view header in Timeline view by using [DateFormat]() property of `TimelineViewSettings`.
+You can customize the date format of view header in Timeline view by using `DateFormat` property of `TimelineViewSettings`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -351,7 +352,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ## Timeslot customization
 
-You can customize the appearance of time slots using [Color](), [BorderColor]() and [BorderWidth]() properties of `TimelineViewSettings`.
+You can customize the appearance of time slots using [Color](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~Color.html), [BorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~BorderColor.html) and [BorderWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~BorderWidth.html) properties of `TimelineViewSettings`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -380,7 +381,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ## Time label customization
 
-You can customize the format for the labels which are mentioning the time, by setting [TimeFormat]() property of [LabelSettings]() in `TimelineViewSettings`.
+You can customize the format for the labels which are mentioning the time, by setting [TimeFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineLabelSettings~TimeFormat.html) property of [LabelSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~LabelSettings.html) in `TimelineViewSettings`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -410,7 +411,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ### Time label appearance
 
-You can customize the color for the labels which are mentioning the time, by setting [TimeLabelColor]() property of `LabelSettings` in `TimelineViewSettings`.
+You can customize the color for the labels which are mentioning the time, by setting [TimeLabelColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineLabelSettings~TimeLabelColor.html) property of `LabelSettings` in `TimelineViewSettings`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -440,7 +441,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ### Time Label size
 
-You can customize the size of the labels which are mentioning the time, by setting [TimeLabelSize]() property of `LabelSettings` in `TimelineViewSettings`.
+You can customize the size of the labels which are mentioning the time, by setting [TimeLabelSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineLabelSettings~TimeLabelSize.html) property of `LabelSettings` in `TimelineViewSettings`.
 
 {% tabs %}
 {% highlight xaml %}

@@ -183,8 +183,6 @@ schedule.TimelineViewSettings = timelineViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Nonworking days in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-nonworking-days.png)
-
 ## First day of week
 
 By default, schedule control will be rendered with Sunday as the first day of the week, it can be customized to any day of the week by using `FirstDayOfWeek` property of `SfSchedule`.

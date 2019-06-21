@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in Xamarin.Forms Kanban control
-description: Kanban Events
+title: Syncfusion events in Xamarin.Forms Kanban control
+description: Kanban events
 platform: xamarin
 control: Kanban
 documentation: ug
@@ -16,6 +16,44 @@ documentation: ug
 * [`Column`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanTappedEventArgs~Column.html)          - Used to get the column of the card.
 * [`Data`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanTappedEventArgs~Data.html) 			- Used to get the underlying model of the card.
 * [`Index`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanTappedEventArgs~Index.html) 			- Used to get the index of the card in a column.
+
+### Command
+
+The `CardTappedCommand` property is used to associate a command with an instance of SfKanban. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+
+### CommandParameter
+
+The `CardTappedCommandParameter` property is used to set the parameter reference, based on which the event argument is shown.
+
+>**NOTE**
+The default value of the `CardTappedCommandParameter` is `null`.
+
+{% tabs %}
+{% highlight xaml %}
+<kanban:SfKanban  CardTappedCommand="{Binding CardTappedCommand}" CardTappedCommandParameter="1">
+           <!--Intialize the column-->
+</kanban:SfKanban >
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public class ViewModel
+    {
+
+        public ViewModel()
+        {
+            CardTappedCommand = new Command<object>(CardTappedEvent);
+
+            public ICommand CardTappedCommand { get; set; }
+        }
+
+        private void CardTappedEvent(object args)
+        {
+            //  handle event action.
+        }
+    }
+{% endhighlight %}
+{% endtabs %}
 
 ## DragStart
 

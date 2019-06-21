@@ -167,7 +167,7 @@ countryNames.Add("Japan");
 
 SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
-comboBox.DataSource = countryNames;
+comboBox.ComboBoxSource = countryNames;
 comboBox.ShowSuggestionsOnFocus = true;
 comboBox.IsEditableMode = true;
 comboBox.SelectionChanged += (sender, e) => 

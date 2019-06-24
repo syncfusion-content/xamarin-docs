@@ -372,7 +372,7 @@ linearGradientBrush.GradientStops = new GradientStopCollection()
     new SfGradientStop(){ Color = Color.Blue, Offset = 1 }
 };
 
-linearButton.GradientBackgroundColor = linearGradientBrush;
+linearButton.BackgroundGradient = linearGradientBrush;
 
 SfButton radialButton = new SfButton();
 SfRadialGradientBrush radialGradientBrush = new SfRadialGradientBrush() { Radius = 1 };
@@ -383,7 +383,7 @@ radialGradientBrush.GradientStops = new GradientStopCollection()
     new SfGradientStop(){ Color = Color.Blue, Offset = 1 }
 };
 
-radialButton.GradientBackgroundColor = radialGradientBrush;
+radialButton.BackgroundGradient = radialGradientBrush;
 
 {% endhighlight %}
 {% endtabs %}

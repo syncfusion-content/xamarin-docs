@@ -1135,17 +1135,17 @@ chart.SecondaryAxis = numerical;
 
 ### Customize individual axis elements
 
-The [`RangeStyles`]() can be used to customize the gridlines, ticks and axis labels for a specific region of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html). The following properties are used to customize the specific range in an axis.
+The [`RangeStyles`]() can be used to customize the gridlines, ticks and axis labels for a specific region of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html). The following properties are used to customize the specific range in an axis:
 
-* [`Start`]() - Used to set the [`start`]() range of an axis.
-* [`End`]() - Used to set the [`end`]() range of an axis.
-* [`MajorGridLineStyle`]() - Used to customize the major grid lines of the axis.
-* [`MinorGridLineStyle`]() - Used to customize the minor grid lines of an axis. 
-* [`MajorTickStyle`]() - Used to customize the major tick lines of an axis.
-* [`MinorTickStyle`]() - Used to customize the minor tick lines of an axis.
-* [`LabelStyle`]() - Used to customize the axis labels for a specific range. 
+* [`Start`]() -  Sets the [`start`]() range of an axis
+* [`End`]() - Sets the [`end`]() range of an axis
+* [`MajorGridLineStyle`]() - Customizes the major grid lines of an axis.
+* [`MinorGridLineStyle`]() - Customizes the minor grid lines of an axis.
+* [`MajorTickStyle`]() - Customizes the major tick lines of an axis.
+* [`MinorTickStyle`]() - Customizes the minor tick lines of an axis.
+* [`LabelStyle`]() -  Customizes the axis labels for a specific range.
 
-N> Grid lines [`StrokeDashArray`]() is not supported if the axis [`RangeStyles`]() is set in `UWP`.
+N> Grid lines [`StrokeDashArray`]() is not supported if the [`RangeStyles`]() of axis is set in `UWP`.
 
 ### Inversing axis
 

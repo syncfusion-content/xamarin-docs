@@ -11,9 +11,9 @@ documentation : ug
 
 ## CardTapped
 
-`CardTapped` event is triggered when you tap on any card. The argument contains the following information.
+[`CardTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout~CardTapped_EV.html) event is triggered when you tap on any card. The argument contains the following information.
 
-* `CardView` - Used to get the particular card view details .
+* [`CardView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView.html) - Used to get the particular card view details .
 
 ### Command
 

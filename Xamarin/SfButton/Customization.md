@@ -318,10 +318,12 @@ button.ImageAlignment = Alignment.End;
 
 ## Gradient Colors
 
-You can set the gradient color as background for SfButton using the [`GradientBackgroundColor`]() property. GradientBackgroundColor supports the following types of gradients:
+You can set the gradient as background for SfButton using the [`BackgroundGradient`]() property. It supports the following types of gradients:
 
-* `LinearGradient` - used to create linear gradient effects. You can use the `StartPoint` and `EndPoint` properties of SfLinearGradientBrush to define the direction of gradient color.
-* `RadialGradient` - used to create radial gradient effects. You can use the `Center` and `Radius` properties to customize the appearance of a radial gradient.
+* `LinearGradient` - used to create linear gradient effects.
+* `RadialGradient` - used to create radial gradient effects.
+
+Click [here](https://help.syncfusion.com/xamarin/sfgradientview/customization) to know more details about gradient.
 
 {% tabs %}
 {% highlight xaml %}
@@ -331,7 +333,7 @@ xmlns:gradient ="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Co
 . . . 
 
 <button:SfButton>
-    <button:SfButton.GradientBackgroundColor>
+    <button:SfButton.BackgroundGradient>
         <gradient:SfLinearGradientBrush>
             <gradient:SfLinearGradientBrush.GradientStops>
                 <gradient:SfGradientStop Color="Red" Offset="0"/>
@@ -339,11 +341,11 @@ xmlns:gradient ="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Co
                 <gradient:SfGradientStop Color="Blue" Offset="1"/>
             </gradient:SfLinearGradientBrush.GradientStops>
         </gradient:SfLinearGradientBrush>
-    </button:SfButton.GradientBackgroundColor>
+    </button:SfButton.BackgroundGradient>
 </button:SfButton>
 
 <button:SfButton>
-    <button:SfButton.GradientBackgroundColor>
+    <button:SfButton.BackgroundGradient>
         <gradient:SfRadialGradientBrush Radius="1">
             <gradient:SfRadialGradientBrush.GradientStops>
                 <gradient:SfGradientStop Color="Red" Offset="0"/>
@@ -351,7 +353,7 @@ xmlns:gradient ="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Co
                 <gradient:SfGradientStop Color="Blue" Offset="1"/>
             </gradient:SfRadialGradientBrush.GradientStops>
         </gradient:SfRadialGradientBrush>
-    </button:SfButton.GradientBackgroundColor>
+    </button:SfButton.BackgroundGradient>
 </button:SfButton>
 
 {% endhighlight %}
@@ -386,7 +388,7 @@ radialButton.GradientBackgroundColor = radialGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-N> RadialGradient support has not been provided for UWP Platform.
+N> RadialGradient doesn't support UWP Platform.
 
 ![Xamarin.Forms gradient support](images/Button_gradient.png)
 

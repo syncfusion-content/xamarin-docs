@@ -9,13 +9,15 @@ documentation: ug
 
 # Drilldown
 
-Drill down provides better visualization of hierarchy. Large set of data’s can be virtualized into minimal views. Each level of items can be drilled down. Tree map provides animation along with drilldown support. Drill down header will be enabled on drill down the tree map which helps in performing zoom out operation.
+Drilldown provides better visualization of hierarchy. Large set of data’s can be virtualized into minimal views. Each level of items can be drilled down. Treemap provides animation along with drilldown support. Drilldown header will be enabled once you perform drilldown on the treemap and this header helps in performing zoom out operation(i.e. drill up one level).
 
-Drill down feature can be enabled or disabled using [`EnableDrilldown`] property in tree map. Drill down operation can be performed in both flat level and hierarchy level.
+Drilldown feature can be enabled or disabled using `EnableDrilldown` property in treemap. Drilldown operation can be performed for both flat level and hierarchy level.
 
-I> Tap on the item to perform drill down operation after enabling the EnableDrilldown property.
+I> Tap either on the item or on the item header to perform drilldown operation after enabling the EnableDrilldown property.
 
-The following code shows enabling the drill down property.
+Icons will be displayed to the left of the header to indicate whether the item can be further drilled in or not. Plus icon indicates the drilldown operation and minus icon indicates the drillup operation.
+
+The following code shows enabling the drilldown property.
 
 {% tabs %} 
 
@@ -34,9 +36,11 @@ map.EnableDrilldown = true;
 
 {% endtabs %} 
 
+![Drilldown](Drilldown_Images/RootLevel.jpg)
+
 ## Header customization
 
-Drill down header which is used for zooming out operation can be customized by setting style to it using [`DrilldownHeaderStyle`] property in tree map. This property provides similar customization option as that of the tree map level header.
+Drilldown header which is used for zooming out (i.e. drillup one level) operation can be customized by setting style to it using `DrilldownHeaderStyle` property in treemap. This property provides similar customization option as that of the treemap level header.
 
 The following code shows defining Drilldown header style.
 
@@ -61,7 +65,7 @@ map.DrilldownHeaderStyle = new Syncfusion.SfTreeMap.XForms.Style() { Color = Col
 
 ![Drilldown](Drilldown_Images/Header.png)
 
-The following is the complete code for drill down.
+The following is the complete code for drilldown.
 
 {% tabs %} 
 
@@ -146,9 +150,9 @@ DrilldownViewModel viewModel = new DrilldownViewModel();
 
 {% endtabs %} 
 
-![Drilldown](Drilldown_Images/RootLevel.jpg)
+![Drilldown](Drilldown_Images/drilldown.gif)
 
-Below is the model data used for the above drill down example.
+Below is the model data used for the above drilldown example.
 
 {% tabs %} 
 

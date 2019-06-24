@@ -180,7 +180,7 @@ gradientView.BackgroundBrush = radialGradient;
 
 ![SfGradientView](images/RadialGradient.jpg)
 
-###Customize the center
+### Customize the center
 
 You can customize the center point of radial gradient brush using the `Center` property of `SfRadialGradientBrush`.
 
@@ -220,7 +220,7 @@ gradientView.BackgroundBrush = radialGradient;
 
 ![SfGradientView](images/Custom_Center.jpg)
 
-###Customize the radius
+### Customize the radius
 
 You can customize the radius of the radial gradient brush using `Radius` property of `SfRadialGradientBrush`. The `Radius` property ranges from 0 to 1.
 

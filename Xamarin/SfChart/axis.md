@@ -1133,16 +1133,16 @@ chart.SecondaryAxis = numerical;
 
 ![Axis tick lines customization support in Xamarin.Forms Chart](axis_images/axis_img23.png)
 
-### Axis Range Customization
+### Customize individual axis elements
 
 The [`RangeStyles`]() can be used to customize the gridlines, ticks and axis labels for a specific region of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html). The following properties are used to customize the specific range in an axis.
 
-* [`Start`]() - Used to set the [`start`]() range of the axis.
-* [`End`]() - Used to set the [`end`]() range of the axis.
+* [`Start`]() - Used to set the [`start`]() range of an axis.
+* [`End`]() - Used to set the [`end`]() range of an axis.
 * [`MajorGridLineStyle`]() - Used to customize the major grid lines of the axis.
-* [`MinorGridLineStyle`]() - Used to customize the minor grid lines of the axis. 
-* [`MajorTickStyle`]() - Used to customize the major tick lines of the axis.
-* [`MinorTickStyle`]() - Used to customize the minor tick lines of the axis.
+* [`MinorGridLineStyle`]() - Used to customize the minor grid lines of an axis. 
+* [`MajorTickStyle`]() - Used to customize the major tick lines of an axis.
+* [`MinorTickStyle`]() - Used to customize the minor tick lines of an axis.
 * [`LabelStyle`]() - Used to customize the axis labels for a specific range. 
 
 N> Grid lines [`StrokeDashArray`]() is not supported if the axis [`RangeStyles`]() is set in `UWP`.

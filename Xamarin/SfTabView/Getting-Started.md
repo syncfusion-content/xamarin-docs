@@ -378,7 +378,7 @@ Similarly, content region for other tabs also can be configured.
 
 ## ContentTransitionDuration
 
-We can set the duration for the TabView content transition by setting `ContentTransitionDuration` as
+You can set the duration for the TabView content transition by setting `ContentTransitionDuration` 
 
 {% tabs %}
 

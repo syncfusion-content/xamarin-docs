@@ -158,7 +158,7 @@ public override void DidFinishLaunching(NSNotification notification)
 
 ### Windows Presentation Foundation (WPF)
 
-To launch the chart in WPF, call the SfChartRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+To launch the chart in WPF, call the SfChartRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
 
 {% highlight C# %} 
 

@@ -19,87 +19,117 @@ The following properties are used to apply solid colors in the thumb, track, bor
 * ThumbBorderColor – Represents the border color for thumb.
 * TrackBorderColor – Represents the color for the border of the switch.
 * TrackColor – Represents the color for the slider.
-* BusyIndicatorColor – Represents the color for the busy indicator which is displayed inside the thumb.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<syncfusion:SfSwitch VisualType="Custom" IsBusy="True" >
+    <syncfusion:SfSwitch VisualType="Custom">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup  x:Name="CommonStates">
 
-<VisualStateManager.VisualStateGroups>
+                <VisualState x:Name="On">
+                    <VisualState.Setters>
+                        <Setter Property="SwitchSettings">
+                            <Setter.Value>
+                                <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OnState" 
+                                 ThumbBorderColor="DarkCyan" ThumbColor="Aqua" 
+                                 TrackBorderColor="Green" TrackColor="GreenYellow" 
+                                 BusyIndicatorColor="Coral" />
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                </VisualState>
 
-<VisualStateGroup  x:Name="CommonStates">
+                <VisualState x:Name="Off">
+                    <VisualState.Setters>
+                        <Setter Property="SwitchSettings">
+                            <Setter.Value>
+                                <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OffState" 
+                                ThumbBorderColor="DarkCyan" ThumbColor="Aqua" 
+                                TrackBorderColor="Green" TrackColor="GreenYellow"/>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                </VisualState>
 
-<VisualState x:Name="On">
+                <VisualState x:Name="Indeterminate">
+                    <VisualState.Setters>
+                        <Setter Property="SwitchSettings">
+                            <Setter.Value>
+                                <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:IndeterminateState" 
+                                ThumbBorderColor="DarkCyan" TrackBorderColor="Green" 
+                                ThumbColor="Aqua" TrackColor="GreenYellow"/>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                </VisualState>
 
-<VisualState.Setters>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </syncfusion:SfSwitch>
 
-<Setter Property="SwitchSettings">
+{% endhighlight %}
 
-<Setter.Value>
+{% highlight c# %}
 
-<syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OnState" 
+SfSwitch sfSwitch = new SfSwitch();
+sfSwitch.VisualType = VisualType.Custom;
 
-ThumbBorderColor="DarkCyan" ThumbColor="Aqua" TrackBorderColor="Green" TrackColor="GreenYellow" BusyIndicatorColor="Coral" />
+DefaultSwitchSettings<OnState> defaultSwitch = new DefaultSwitchSettings<OnState>();
+defaultSwitch.ThumbBorderColor = Color.DarkCyan;
+defaultSwitch.ThumbColor = Color.Aqua;
+defaultSwitch.TrackBorderColor = Color.Green;
+defaultSwitch.TrackColor = Color.GreenYellow;
+defaultSwitch.BusyIndicatorColor = Color.Coral;
 
-</Setter.Value>
+DefaultSwitchSettings<OffState> defaultSwitch1 = new DefaultSwitchSettings<OffState>();
+defaultSwitch1.ThumbBorderColor = Color.DarkCyan;
+defaultSwitch1.ThumbColor = Color.Aqua;
+defaultSwitch1.TrackBorderColor = Color.Green;
+defaultSwitch1.TrackColor = Color.GreenYellow;
 
-</Setter>
+DefaultSwitchSettings<IndeterminateState> defaultSwitch2 = new DefaultSwitchSettings<IndeterminateState>();
+defaultSwitch2.ThumbBorderColor = Color.DarkCyan;
+defaultSwitch2.ThumbColor = Color.Aqua;
+defaultSwitch2.TrackBorderColor = Color.Green;
+defaultSwitch2.TrackColor = Color.GreenYellow;
 
-</VisualState.Setters>
+VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
 
-</VisualState>
+VisualStateGroup commonStateGroup = new VisualStateGroup();
+VisualState onState = new VisualState
+{
+Name = "On"
+};
+onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value= defaultSwitch});
 
-<VisualState x:Name="Off">
+VisualState offState = new VisualState
+{
+Name = "OFF"
+};
+offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
 
-<VisualState.Setters>
+VisualState indeterminate = new VisualState
+{
+Name = "Indeterminate"
+};
+indeterminate.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch2 });
 
-<Setter Property="SwitchSettings">
+commonStateGroup.States.Add(onState);
+commonStateGroup.States.Add(offState);
+commonStateGroup.States.Add(indeterminate);
+visualStateGroupList.Add(commonStateGroup);
 
-<Setter.Value>
+VisualStateManager.SetVisualStateGroups(sfSwitch, visualStateGroupList);
 
-<syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OffState" 
-
-ThumbBorderColor="DarkCyan" ThumbColor="Aqua" TrackBorderColor="Green" TrackColor="GreenYellow"/>
-
-</Setter.Value>
-
-</Setter>
-
-</VisualState.Setters>
-
-</VisualState>
-
-<VisualState x:Name="Indeterminate">
-
-<VisualState.Setters>
-
-<Setter Property="SwitchSettings">
-
-<Setter.Value>
-
-<syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:IndeterminateState" 
-
-ThumbBorderColor="DarkCyan" TrackBorderColor="Green" ThumbColor="Aqua" TrackColor="GreenYellow"/>
-
-</Setter.Value>
-
-</Setter>
-
-</VisualState.Setters>
-
-</VisualState>
-
-</VisualStateGroup>
-
-</VisualStateManager.VisualStateGroups>
-
-</syncfusion:SfSwitch>
+this.Content = sfSwitch;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![switch conrol with visual state customization](images/customization-with-visual-state.png)
 
 ### Gradient Colors
 
@@ -109,55 +139,132 @@ You can also specify the range of colors in thumb and track using ThumbGradientC
 
 {% highlight xaml %}
 
-<syncfusion:DefaultSwitchSettings.ThumbGradientColor>
+    <syncfusion:SfSwitch VisualType="Custom"  >
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="CommonStates">
+                <VisualState x:Name="On">
+                    <VisualState.Setters>
+                        <Setter Property="SwitchSettings">
+                            <Setter.Value>
+                                <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OnState">
 
-<graphics:SfLinearGradientBrush>
+                                    <syncfusion:DefaultSwitchSettings.ThumbGradientColor>
+                                        <graphics:SfLinearGradientBrush>
+                                            <graphics:SfLinearGradientBrush.GradientStops>
+                                                <graphics:GradientStopCollection>
+                                                    <graphics:SfGradientStop Color="White" Offset="0"></graphics:SfGradientStop>
+                                                    <graphics:SfGradientStop Color="LightSkyBlue" Offset="0.5"></graphics:SfGradientStop>
+                                                    <graphics:SfGradientStop Color="White" Offset="1"></graphics:SfGradientStop>
+                                                </graphics:GradientStopCollection>
+                                            </graphics:SfLinearGradientBrush.GradientStops>
+                                        </graphics:SfLinearGradientBrush>
+                                 </syncfusion:DefaultSwitchSettings.ThumbGradientColor>
 
-<graphics:SfLinearGradientBrush.GradientStops>
+                                    <syncfusion:DefaultSwitchSettings.TrackGradientColor>
+                                        <graphics:SfLinearGradientBrush>
+                                            <graphics:SfLinearGradientBrush.GradientStops>
+                                                <graphics:GradientStopCollection>
+                                                    <graphics:SfGradientStop Color="White" Offset="0"></graphics:SfGradientStop>
+                                                    <graphics:SfGradientStop Color="LightCoral" Offset="0.25"></graphics:SfGradientStop>
+                                                    <graphics:SfGradientStop Color="Red" Offset="0.5"></graphics:SfGradientStop>
+                                                    <graphics:SfGradientStop Color="LightSalmon" Offset="0.75"></graphics:SfGradientStop>
+                                                </graphics:GradientStopCollection>
+                                            </graphics:SfLinearGradientBrush.GradientStops>
+                                        </graphics:SfLinearGradientBrush>
+                                    </syncfusion:DefaultSwitchSettings.TrackGradientColor>
 
-<graphics:GradientStopCollection>
+                                </syncfusion:DefaultSwitchSettings>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </syncfusion:SfSwitch>
 
-<graphics:SfGradientStop Color="White" Offset="0"></graphics:SfGradientStop>
+{% endhighlight %}
 
-<graphics:SfGradientStop Color="LightSkyBlue" Offset="0.5"></graphics:SfGradientStop>
+{% highlight c# %}
 
-<graphics:SfGradientStop Color="White" Offset="1"></graphics:SfGradientStop>
+SfSwitch sfSwitch = new SfSwitch();
+sfSwitch.VisualType = VisualType.Custom;
 
-</graphics:GradientStopCollection>
+DefaultSwitchSettings<OnState> defaultSwitch = new DefaultSwitchSettings<OnState>();
+SfLinearGradientBrush sfLinearGradientBrush = new SfLinearGradientBrush();
 
-</graphics:SfLinearGradientBrush.GradientStops>
+GradientStopCollection sfGradientStops = new GradientStopCollection();
 
-</graphics:SfLinearGradientBrush>
+SfGradientStop sfGradientStop = new SfGradientStop();
+sfGradientStop.Color = Color.White;
+sfGradientStop.Offset = 0;
+sfGradientStops.Add(sfGradientStop);
 
-</syncfusion:DefaultSwitchSettings.ThumbGradientColor>
+SfGradientStop sfGradientStop1 = new SfGradientStop();
+sfGradientStop1.Color = Color.LightSkyBlue;
+sfGradientStop1.Offset = 0.5;
+sfGradientStops.Add(sfGradientStop1);
 
-<syncfusion:DefaultSwitchSettings.TrackGradientColor>
+SfGradientStop sfGradientStop2 = new SfGradientStop();
+sfGradientStop2.Color = Color.White;
+sfGradientStop2.Offset = 1;
+sfGradientStops.Add(sfGradientStop2);
 
-<graphics:SfLinearGradientBrush>
+sfLinearGradientBrush.GradientStops = sfGradientStops;
 
-<graphics:SfLinearGradientBrush.GradientStops>
+defaultSwitch.ThumbGradientColor = sfLinearGradientBrush;
 
-<graphics:GradientStopCollection>
+SfLinearGradientBrush sfLinearGradientBrush1 = new SfLinearGradientBrush();
 
-<graphics:SfGradientStop Color="White" Offset="0"></graphics:SfGradientStop>
+GradientStopCollection sfGradientStops1 = new GradientStopCollection();
 
-<graphics:SfGradientStop Color="LightCoral" Offset="0.25"></graphics:SfGradientStop>
+SfGradientStop sfGradientStop3 = new SfGradientStop();
+sfGradientStop3.Color = Color.White;
+sfGradientStop3.Offset = 0;
+sfGradientStops1.Add(sfGradientStop3);
 
-<graphics:SfGradientStop Color="Red" Offset="0.5"></graphics:SfGradientStop>
+SfGradientStop sfGradientStop4 = new SfGradientStop();
+sfGradientStop4.Color = Color.LightCoral;
+sfGradientStop4.Offset = 0.25;
+sfGradientStops1.Add(sfGradientStop4);
 
-<graphics:SfGradientStop Color="LightSalmon" Offset="0.75"></graphics:SfGradientStop>
+SfGradientStop sfGradientStop5 = new SfGradientStop();
+sfGradientStop5.Color = Color.Red;
+sfGradientStop5.Offset = 0.5;
+sfGradientStops1.Add(sfGradientStop5);
 
-</graphics:GradientStopCollection>
+SfGradientStop sfGradientStop6 = new SfGradientStop();
+sfGradientStop6.Color = Color.LightSalmon;
+sfGradientStop6.Offset = 0.75;
+sfGradientStops1.Add(sfGradientStop6);
 
-</graphics:SfLinearGradientBrush.GradientStops>
+sfLinearGradientBrush1.GradientStops = sfGradientStops1;
 
-</graphics:SfLinearGradientBrush>
+defaultSwitch.TrackGradientColor = sfLinearGradientBrush1;
 
-</syncfusion:DefaultSwitchSettings.TrackGradientColor>
+
+VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
+
+VisualStateGroup commonStateGroup = new VisualStateGroup();
+VisualState onState = new VisualState
+{
+Name = "On"
+};
+onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch });
+
+
+commonStateGroup.States.Add(onState);
+
+visualStateGroupList.Add(commonStateGroup);
+
+VisualStateManager.SetVisualStateGroups(sfSwitch, visualStateGroupList);
+
+this.Content = sfSwitch;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![switch conrol with gradient](images/gradient.png)
 
 ### Sizing
 
@@ -178,72 +285,97 @@ The following example shows the customization of the size in the track and thumb
 
 {% highlight xaml %}
 
-<syncfusion:SfSwitch  VisualType="Custom" >
+    <syncfusion:SfSwitch  VisualType="Custom" >
 
-<VisualStateManager.VisualStateGroups>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup  x:Name="CommonStates">
+                <VisualState x:Name="On">
+                    <VisualState.Setters>
+                        <Setter Property="SwitchSettings">
+                            <Setter.Value>
+                                <syncfusion:DefaultSwitchSettings  x:TypeArguments="syncfusion:OnState" 
+                                 ThumbBorderWidth="2" TrackBorderWidth="2"  
+                                 TrackHeightRequest="25" TrackWidthRequest="75" TrackCornerRadius="4"
+                                 ThumbCornerRadius="4" ThumbHeightRequest="10" ThumbWidthRequest="10">
+                                </syncfusion:DefaultSwitchSettings>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                </VisualState>
 
-<VisualStateGroup  x:Name="CommonStates">
+                <VisualState x:Name="Off">
+                    <VisualState.Setters>
+                        <Setter Property="SwitchSettings">
+                            <Setter.Value>
+                                <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OffState" 
+                                 ThumbBorderWidth="2" TrackBorderWidth="2"  
+                                 TrackHeightRequest="25" TrackWidthRequest="75" TrackCornerRadius="4"
+                                 ThumbCornerRadius="4" ThumbHeightRequest="10" ThumbWidthRequest="10"/>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
 
-<VisualState x:Name="On">
+        </VisualStateManager.VisualStateGroups>
+    </syncfusion:SfSwitch>
 
-<VisualState.Setters>
+{% endhighlight %}
 
-<Setter Property="SwitchSettings">
+{% highlight c# %}
 
-<Setter.Value>
+SfSwitch sfSwitch = new SfSwitch();
+sfSwitch.VisualType = VisualType.Custom;
 
-<syncfusion:DefaultSwitchSettings  x:TypeArguments="syncfusion:OnState" 
+DefaultSwitchSettings<OnState> defaultSwitch = new DefaultSwitchSettings<OnState>();
+defaultSwitch.ThumbBorderWidth = 2;
+defaultSwitch.TrackBorderWidth = 2;
+defaultSwitch.TrackHeightRequest = 25;
+defaultSwitch.TrackWidthRequest = 75;
+defaultSwitch.TrackCornerRadius = 4;
+defaultSwitch.ThumbCornerRadius = 4;
+defaultSwitch.ThumbHeightRequest = 10;
+defaultSwitch.ThumbWidthRequest = 10;
 
-ThumbBorderWidth="2" TrackBorderWidth="2"  
+DefaultSwitchSettings<OffState> defaultSwitch1 = new DefaultSwitchSettings<OffState>();
+defaultSwitch1.ThumbBorderWidth = 2;
+defaultSwitch1.TrackBorderWidth = 2;
+defaultSwitch1.TrackHeightRequest = 25;
+defaultSwitch1.TrackWidthRequest = 75;
+defaultSwitch1.TrackCornerRadius = 4;
+defaultSwitch1.ThumbCornerRadius = 4;
+defaultSwitch1.ThumbHeightRequest = 10;
+defaultSwitch1.ThumbWidthRequest = 10;
 
-TrackHeightRequest="25" TrackWidthRequest="75" TrackCornerRadius="4"
+VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
 
-ThumbCornerRadius="4" ThumbHeightRequest="10" ThumbWidthRequest="10">
+VisualStateGroup commonStateGroup = new VisualStateGroup();
+VisualState onState = new VisualState
+{
+Name = "On"
+};
+onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch });
 
-</syncfusion:DefaultSwitchSettings>
+VisualState offState = new VisualState
+{
+Name = "OFF"
+};
 
-</Setter.Value>
+offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
 
-</Setter>
+commonStateGroup.States.Add(onState);
 
-</VisualState.Setters>
+visualStateGroupList.Add(commonStateGroup);
 
-</VisualState>
+VisualStateManager.SetVisualStateGroups(sfSwitch, visualStateGroupList);
 
-<VisualState x:Name="Off">
-
-<VisualState.Setters>
-
-<Setter Property="SwitchSettings">
-
-<Setter.Value>
-
-<syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OffState" 
-
-ThumbBorderWidth="2" TrackBorderWidth="2"  
-
-TrackHeightRequest="25" TrackWidthRequest="75" TrackCornerRadius="4"
-
-ThumbCornerRadius="4" ThumbHeightRequest="10" ThumbWidthRequest="10"/>
-
-</Setter.Value>
-
-</Setter>
-
-</VisualState.Setters>
-
-</VisualState>
-
-</VisualStateGroup>
-
-</VisualStateManager.VisualStateGroups>
-
-</syncfusion:SfSwitch>
-
+this.Content = sfSwitch;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![switch conrol with sizing](images/sizing.png)
 
 ### Images
 
@@ -258,62 +390,78 @@ The following code example illustrates the image customization.
 
 {% highlight xaml %}
 
-<syncfusion:SfSwitch IsOn="False" HorizontalOptions="Center" VisualType="Custom">
+    <syncfusion:SfSwitch IsOn="False" HorizontalOptions="Center" VisualType="Custom">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="CommonStates">
+                <VisualState x:Name="On">
+                    <VisualState.Setters>
+                        <Setter Property="SwitchSettings">
+                            <Setter.Value>
+                                <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OnState"
+                                 TrackImageSource="switchbg2.png"
+                                 ThumbImageSource="switchmoon.png"/>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Off">
+                    <VisualState.Setters>
+                        <Setter Property="SwitchSettings">
+                            <Setter.Value>
+                                <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OffState"
+                                  TrackImageSource="switchbg.png"
+                                  ThumbImageSource="switchsun.png"/>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </syncfusion:SfSwitch>
 
-<VisualStateManager.VisualStateGroups>
+{% endhighlight %}
 
-<VisualStateGroup x:Name="CommonStates">
+{% highlight c# %}
 
-<VisualState x:Name="On">
+SfSwitch sfSwitch = new SfSwitch();
+sfSwitch.IsOn = false;
 
-<VisualState.Setters>
+sfSwitch.VisualType = VisualType.Custom;
 
-<Setter Property="SwitchSettings">
+DefaultSwitchSettings<OnState> defaultSwitch = new DefaultSwitchSettings<OnState>();
+defaultSwitch.TrackImageSource = "switchbg2.png";
+defaultSwitch.ThumbImageSource = "switchmoon.png";
 
-<Setter.Value>
+DefaultSwitchSettings<OffState> defaultSwitch1 = new DefaultSwitchSettings<OffState>();
+defaultSwitch1.TrackImageSource = "switchbg.png";
+defaultSwitch1.ThumbImageSource = "switchsun.png";
 
-<syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OnState"
+VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
 
-TrackImageSource="switchbg2.png"
+VisualStateGroup commonStateGroup = new VisualStateGroup();
+VisualState onState = new VisualState
+{
+Name = "On"
+};
+onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch });
 
-ThumbImageSource="switchmoon.png"/>
+VisualState offState = new VisualState
+{
+Name = "OFF"
+};
 
-</Setter.Value>
+offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
 
-</Setter>
+commonStateGroup.States.Add(onState);
+commonStateGroup.States.Add(offState);
+visualStateGroupList.Add(commonStateGroup);
 
-</VisualState.Setters>
+VisualStateManager.SetVisualStateGroups(sfSwitch, visualStateGroupList);
 
-</VisualState>
-
-<VisualState x:Name="Off">
-
-<VisualState.Setters>
-
-<Setter Property="SwitchSettings">
-
-<Setter.Value>
-
-<syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OffState"
-
-TrackImageSource="switchbg.png"
-
-ThumbImageSource="switchsun.png"/>
-
-</Setter.Value>
-
-</Setter>
-
-</VisualState.Setters>
-
-</VisualState>
-
-</VisualStateGroup>
-
-</VisualStateManager.VisualStateGroups>
-
-</syncfusion:SfSwitch>
+this.Content = sfSwitch;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![switch conrol with image](images/image.png)

@@ -17,7 +17,7 @@ This section explains you the steps to add the SfSwitch control with basic funct
 * Initializing SfSwitch
 * Perform an action based on state
 
-### Adding  SfSwitch reference
+## Adding  SfSwitch reference
 
 You can add SfSwitch reference using one of the below methods.
 
@@ -54,7 +54,7 @@ UWP<br/><br/></td><td>
 Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/><br/></td></tr>
 </table>
 
-### Launching an application on each platform with SfSwitch
+## Launching an application on each platform with SfSwitch
 
 To use the SfSwitch inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
 
@@ -124,7 +124,7 @@ Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 
 The Android platform does not require any additional configuration to render the chart.
 
-### Initializing SfSwitch
+## Initializing SfSwitch
 
 Import the Button namespace as shown below in your respective Page,
 
@@ -164,7 +164,7 @@ SfSwitch sfSwitch = new SfSwitch();
 
 ![Initializing switch conrol](images/switch.png)
 
-### Perform action based on state
+## Perform action based on state
 
 You can switch between the states. When the state is changed the StateChanging and StateChanged event will be triggered where you can perform an action based on the current state.The StateChanging event allows you to cancel moving to a new state.
 
@@ -195,4 +195,3 @@ DisplayAlert("Message", "SUCESS", "OK");
 {% endhighlight %}
 
 {% endtabs %}
-

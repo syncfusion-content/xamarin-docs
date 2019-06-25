@@ -41,7 +41,7 @@ SfSwitch sfSwitch=new SfSwitch();
 
 sfSwitch.VisualType = VisualType.Material;
 
-{% highlight c# %}
+{% endhighlight %}
 
 {% endtabs %}
 
@@ -98,5 +98,3 @@ sfSwitch.VisualType = VisualType.Fluent;
 ### Custom
 
 Custom type will allow you to customize the control where you can handle the size, colors, images etc. of the control. Please refer [`here`]().
-
-

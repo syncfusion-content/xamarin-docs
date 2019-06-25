@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Number Formatting in Syncfusion NumericTextBox control for Xamarin.Forms
+title: Number Formatting in Syncfusion NumericTextBox for Xamarin.Forms
 description: Learn how to add format String, enable parser mode and percent display mode for NumericTextBox control.
 platform: Xamarin
 control: NumericTextBox
@@ -39,7 +39,7 @@ this.content=numericTextBox;
 
 {% endtabs %}
 	
-![](images/currency.png)
+![Display the value with currency notation](images/currency.png)
 
 ### Display Number Notation
 
@@ -64,7 +64,7 @@ this.content=numericTextBox;
 
 {% endtabs %}
 
-![](images/number.png)
+![Display value with number notation](images/number.png)
 
 ### Display Percentage Notation
 
@@ -89,7 +89,7 @@ this.content=numericTextBox;
 
 {% endtabs %}
 	
-![](images/percentage.png)
+![Display the value with Percentage mode](images/percentage.png)
 
 N> Instead of using above `FormatString` types, we can provide any symbol or value as string in `FormatString` property which will be appended with the value in SfNumericTextBox. 
 
@@ -115,7 +115,7 @@ this.content=numericTextBox;
 {% endtabs %}
 
 
-![](images/years.png)
+![Display the value with custom format string](images/years.png)
 
 ## Compute to Percentage
 
@@ -143,12 +143,13 @@ this.content=numericTextBox;
 
 {% endtabs %}
 
-![](images/percentage.png)
+![Display the value with percent display mode is value](images/percentage.png)
 
 
 * `Compute`: Displays the computed value with percentage symbol.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 	<syncfusion:SfNumericTextBox x:Name="numericTextBox" FormatString="p" Value="1000"  PercentDisplayMode="Compute" />
@@ -167,6 +168,27 @@ this.content=numericTextBox;
 
 {% endtabs %}
 
-![](images/percentagevalue.png)
+![Display the value with percent display mode is compute](images/percentagevalue.png)
+
+## Set EnableGroupSeparator 
+
+`EnableGroupSeparator` property is used to get rid of the comma in the Value of SfNumericTextBox.
+
+{% tabs %}
+
+{% highlight c# %}
+ 
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.Value=12345;
+numericTextBox.EnableGroupSeparator = true;
+this.Content = numericTextBox;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Display the value with enable group separator](images/enablegroupseparator.png)
+
+
 
 

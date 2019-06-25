@@ -58,19 +58,21 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
 
 {% highlight xaml %}
 
-     <gauge:SfCircularGauge>
-    
+      <gauge:SfCircularGauge>
+
         <gauge:SfCircularGauge.Scales>
-		
-             <gauge:Scale/>
-			 
-			 <gauge:Scale.MajorTickSettings>
-                 <gauge:TickSettings Color ="Brown" Thickness=”4" Length="15" Offset=”0.97”/>
-             </gauge:Scale.MajorTickSettings>
+
+            <gauge:Scale>
+
+                <gauge:Scale.MajorTickSettings>
+                    <gauge:TickSettings Color ="Brown" Thickness="4" Length="15" Offset="0.97"/>
+                </gauge:Scale.MajorTickSettings>
+
+            </gauge:Scale>
 
         </gauge:SfCircularGauge.Scales>
-	
-	 </gauge:SfCircularGauge>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -100,19 +102,21 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
 
 {% highlight xaml %}
 
-     <gauge:SfCircularGauge>
-     
+      <gauge:SfCircularGauge>
+
         <gauge:SfCircularGauge.Scales>
-		
-             <gauge:Scale/>
-			 
-			 <gauge:Scale.MinorTickSettings>
-                 <gauge:TickSettings Color ="SkyBlue" Thickness="4" Length="4" Offset = “0.97” />
-             </gauge:Scale.MinorTickSettings>
+
+            <gauge:Scale>
+
+                <gauge:Scale.MinorTickSettings>
+                    <gauge:TickSettings Color ="SkyBlue" Thickness="4" Length="4" Offset = "0.97" />
+                </gauge:Scale.MinorTickSettings>
+
+            </gauge:Scale>
 
         </gauge:SfCircularGauge.Scales>
-	
-	 </gauge:SfCircularGauge>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -126,8 +130,7 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
     minorTicks.Color = Color.SkyBlue;
     minorTicks.Thickness = 4;
     minorTicks.Offset = 0.97;
-    scale.MinorTickSettings = minorTicks; 
-   
+    scale.MinorTickSettings = minorTicks;   
     scales.Add(scale);
     circularGauge.Scales = scales;  
   
@@ -150,23 +153,25 @@ The major and minor ticks can be positioned far away from the rim by using the f
 
 {% highlight xaml %}
 
-     <gauge:SfCircularGauge>
-      
+        <gauge:SfCircularGauge>
+
         <gauge:SfCircularGauge.Scales>
-		
-             <gauge:Scale/>
-			 
-			 <gauge:Scale.MajorTickSettings>
-                 <gauge:TickSettings Offset = “0.5”/>
-             </gauge:Scale.MajorTickSettings>
-			 
-			 <gauge:Scale.MinorTickSettings>
-                 <gauge:TickSettings Offset = “0.5”/>
-             </gauge:Scale.MinorTickSettings>
+
+            <gauge:Scale>
+
+                <gauge:Scale.MajorTickSettings>
+                    <gauge:TickSettings Offset = "0.5"/>
+                </gauge:Scale.MajorTickSettings>
+
+                <gauge:Scale.MinorTickSettings>
+                    <gauge:TickSettings Offset = "0.5"/>
+                </gauge:Scale.MinorTickSettings>
+
+            </gauge:Scale>
 
         </gauge:SfCircularGauge.Scales>
 
-	 </gauge:SfCircularGauge>
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 
@@ -181,7 +186,6 @@ The major and minor ticks can be positioned far away from the rim by using the f
     TickSettings minorTicks = new TickSettings();
     minorTicks.Offset = 0.5;
     scale.MinorTickSettings = minorTicks; 
-   
     scales.Add(scale);
     circularGauge.Scales = scales;  
   
@@ -198,23 +202,25 @@ The major and minor ticks can be positioned far away from the rim by using the f
 {% highlight xaml %}
 
      <gauge:SfCircularGauge>
-    
+
 
         <gauge:SfCircularGauge.Scales>
-		
-             <gauge:Scale/>
-			 
-			 <gauge:Scale.MajorTickSettings>
-                <gauge:TickSettings StartOffset = “0.3” EndOffset =”0.4”/>
-             </gauge:Scale.MajorTickSettings>
-			 
-			 <gauge:Scale.MinorTickSettings>
-                 <gauge:TickSettings StartOffset = “0.3” EndOffset =”0.35”/>
-             </gauge:Scale.MinorTickSettings>
+
+            <gauge:Scale>
+
+                <gauge:Scale.MajorTickSettings>
+                    <gauge:TickSettings StartOffset = "0.3" EndOffset ="0.4"/>
+                </gauge:Scale.MajorTickSettings>
+
+                <gauge:Scale.MinorTickSettings>
+                    <gauge:TickSettings StartOffset = "0.3" EndOffset ="0.35"/>
+                </gauge:Scale.MinorTickSettings>
+
+            </gauge:Scale>
 
         </gauge:SfCircularGauge.Scales>
-	
-	 </gauge:SfCircularGauge>
+
+    </gauge:SfCircularGauge>
 
 {% endhighlight %}
 

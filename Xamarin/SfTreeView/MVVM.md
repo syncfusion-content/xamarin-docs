@@ -404,3 +404,61 @@ public class CountriesViewModel : INotifyPropertyChanged
 You can download the example sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EventToCommand839299289.zip).
 
 For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
+
+## Checkbox items binding in MVVM
+
+SfTreeView support to check multiple items through binding the [CheckedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CheckedItems.html) property from view model with `ObservableCollection<object>` type.
+
+N> TreeView process and sets [TreeViewNode.IsChecked]((https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~IsChecked.html)) based on `CheckedItems` only when you are binding `ItemsSource`.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeView 
+    x:Name="TreeView"  
+    CheckBoxMode="Recursive"
+    ItemsSource="{Binding Folders}"
+    CheckedItems="{Binding CheckedNodeInfo}"
+    ItemTemplateContextType="Node">
+    <syncfusion:SfTreeView.ItemTemplate>
+        <DataTemplate>
+            <ViewCell>
+                <ViewCell.View>
+                        <Grid Padding="5">
+                            <SfCheckBox:SfCheckBox
+                                x:Name="CheckBox"
+                                Text="{Binding Content.FileName}"
+                                IsChecked="{Binding IsChecked, Mode=TwoWay}"/>
+                        </Grid>
+                </ViewCell.View>
+            </ViewCell>
+        </DataTemplate>
+    </syncfusion:SfTreeView.ItemTemplate>
+</syncfusion:SfTreeView>
+{% endhighlight %}
+{% highlight c# %}
+public class ViewModel
+{
+    private ObservableCollection<object> checkedNodeInfo;
+    public ObservableCollection<object> CheckedNodeInfo
+    {
+        get
+        {
+            return checkedNodeInfo;
+        }
+        set
+        {
+            this.checkedNodeInfo = value;
+        }
+    }
+
+    public ViewModel()
+    {
+        var doc = new Folder() { FileName = "Documents" };
+        checkedNodeInfo = new ObservableCollection<object>();
+        checkedNodeInfo.Add(doc);
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire source of this demo from [here](https://github.com/SyncfusionExamples/checkbox_bound_mode). To know more about usage of checkbox, you can refer the documentation from [here](https://help.syncfusion.com/xamarin/sftreeview/checkbox).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events and Interactivity in Syncfusion NumericTextBox control for Xamarin.Forms
+title: Events in Syncfusion NumericTextBox for Xamarin.Forms
 description: Learn how to get the value changed event and some interactivity in  NumericTextBox
 platform: Xamarin
 control: NumericTextBox
@@ -49,33 +49,6 @@ void Handle_ValueChanged(object sender, Syncfusion.SfNumericTextBox.XForms.Value
 
 {% endtabs %}
 
-### Completed 
-
-Raised when the user finalizes the text in the NumericTextBox by pressing return key on the keyboard.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-    <syncfusion:SfNumericTextBox x:Name="numericTextBox" Completed="Handle_Completed”/>
-    
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfNumericTextBox numericTextBox=new SfNumericTextBox();
-numericTextBox.Completed += Handle_Completed;
-this.Content=numericTextBox;
-
-void Handle_Completed(object sender, System.EventArgs e)
-{
-  System.Diagnostics.Debug.WriteLine(“Completed”);         
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ## Interactivity : ValueChangeMode
 
 The ValueChangeMode property is used to mention when the validation need to take place, either in key pressed or in focus lost. When ValueChangeMode is set to OnKeyFocus, the validation will be carried out for each key press. When ValueChangeMode is OnLostFocus, the validation occur when the control lost the focus or the focus move to next control. ValueChangeMode includes the following options:
@@ -104,7 +77,7 @@ this.Content=numericTextBox;
 
 {% endtabs %}
 
-![](images/onkeyfocus.png)
+![Display SfNumericTextBox control with ValueChanged event OnKeyFocus](images/onkeyfocus.png)
 
 ### OnLostFocus
 
@@ -127,4 +100,31 @@ this.Content=numericTextBox;
 
 {% endtabs %}
 
-![](images/onlostfocus.png)
+![Display SfNumericTextBox control with ValueChanged event OnLostFocus](images/onlostfocus.png)
+
+### Completed 
+
+Raised when the user finalizes the text in the NumericTextBox by pressing return key on the keyboard.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <syncfusion:SfNumericTextBox x:Name="numericTextBox" Completed="Handle_Completed”/>
+    
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfNumericTextBox numericTextBox=new SfNumericTextBox();
+numericTextBox.Completed += Handle_Completed;
+this.Content=numericTextBox;
+
+void Handle_Completed(object sender, System.EventArgs e)
+{
+  System.Diagnostics.Debug.WriteLine(“Completed”);         
+}
+
+{% endhighlight %}
+
+{% endtabs %}

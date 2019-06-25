@@ -58,11 +58,7 @@ I> Starting with v17.1.0.x, if you reference Syncfusion assemblies from the tria
 
 ## Launching an application on each platform with SfGradientView.
 
-To use the SfGradientView control inside an application, each platform application must initialize the SfGradientViewRenderer. This initialization step varies from platform to platform and is discussed in the following sections:
-
-### Android and UWP
-
-The Android and UWP platforms launch the SfGradientView without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch an application.
+To use the SfGradientView control inside an application, each platform requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
 
 N> If you are adding the references from toolbox, this step is not needed.
 
@@ -81,9 +77,9 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 }
 {% endhighlight %} 
 
-### Release mode issue in UWP platform
+### Universal Windows Platform (UWP)
 
-The known Framework issue in UWP platform is that the custom controls will not be rendered when deployed an application in `Release Mode`. It can be resolved by initializing the SfGradientView assemblies in the `App.xaml.cs` file in the UWP project, as demonstrated in the following code example.
+You need to initialize the gradient view assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with gradient view in Release mode in UWP platform.
 
 {% highlight c# %}
 // In App.xaml.cs
@@ -106,9 +102,13 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 {% endhighlight %}
 
-## Creating SfGradientView control
+### Android
 
-The `SfGradientView` control is configured entirely in C# code or in XAML markup. The following steps explain how to create a `SfGradientView` and configure its elements.
+The Android platform does not require any additional configuration to render the gradient view.
+
+## Adding Gradient View 
+
+The `SfGradientView` control is configured entirely in C# code or in XAML markup. The `SfGradientView` supports linear gradient and radial gradient. Each gradient is a collection of gradient stops which used to set colors with different offsets. The following steps explain how to create a `SfGradientView` and configure its elements.
 
 ### Adding namespace for referred assemblies
 
@@ -128,9 +128,9 @@ using Syncfusion.XForms.Graphics;
 
 {% endtabs %}
 
-### Add the SfGradientView control as the content of ContentPage.
+#### Adding Linear Gradient Brush
 
-#### Adding LinearGradientBrush for SfGradientView
+`SfLinearGradientBrush` is used to create linear gradient effects. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -138,12 +138,12 @@ using Syncfusion.XForms.Graphics;
 <Grid>    
     <gradient:SfGradientView>
         <gradient:SfGradientView.BackgroundBrush>           
-            <gradient:SfRadialGradientBrush>                
-                <gradient:SfRadialGradientBrush.GradientStops>
+            <gradient:SfLinearGradientBrush>                
+                <gradient:SfLinearGradientBrush.GradientStops>
                     <gradient:SfGradientStop Color="#2d265b" Offset="0.0" />
                     <gradient:SfGradientStop Color="#b8495c" Offset="1.0" />
-                </gradient:SfRadialGradientBrush.GradientStops>                
-            </gradient:SfRadialGradientBrush>            
+                </gradient:SfLinearGradientBrush.GradientStops>                
+            </gradient:SfLinearGradientBrush>            
         </gradient:SfGradientView.BackgroundBrush>
     </gradient:SfGradientView>  
 </Grid>
@@ -168,8 +168,8 @@ namespace GradientViewGettingStarted
             SfLinearGradientBrush linearGradientBrush = new SfLinearGradientBrush();
             linearGradientBrush.GradientStops = new GradientStopCollection()
             {
-                new SfGradientStop(){Color = Color.FromHex("#2d265b "), Offset=0.0},
-                new SfGradientStop(){Color = Color.FromHex("#b8495c "), Offset=1.0},
+                new SfGradientStop(){Color = Color.FromHex("#2d265b"), Offset=0.0},
+                new SfGradientStop(){Color = Color.FromHex("#b8495c"), Offset=1.0},
             };
             gradientView.BackgroundBrush = linearGradientBrush;
             grid.Children.Add(gradientView);
@@ -183,7 +183,9 @@ namespace GradientViewGettingStarted
 
 ![SfGradientView](images/LinearGradientView.png)
 
-#### Adding RadialGradientBrush for SfGradientView
+#### Adding Radial Gradient Brush
+
+`SfRadialGradientBrush` is used to create radial gradient effects.
 
 {% tabs %}
 {% highlight xaml %}

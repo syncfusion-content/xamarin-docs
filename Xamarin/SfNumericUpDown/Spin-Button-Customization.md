@@ -34,7 +34,7 @@ Spin Buttons will get aligned to the right side of the control.
 {% endtabs %}
 
 
-![right](images/right.png)
+![Display SfNumericUpDown control with SpinButtonAlignment right](images/right.png)
 
 ### Left
 
@@ -57,7 +57,7 @@ Spin Buttons will get aligned to the left side of the control.
 {% endtabs %}
 
 
-![left](images/left.png)
+![Display SfNumericUpDown control with SpinButtonAlignment left](images/left.png)
 
 ### Both
 
@@ -80,7 +80,7 @@ Spin Buttons will get aligned to the both side of the control.
 {% endtabs %}
 
 
-![both](images/both.png)
+![Display SfNumericUpDown control with SpinButtonAlignment center](images/both.png)
 
 N> By default the property value is Right.
 
@@ -196,7 +196,7 @@ N> For image and Font icon we need to add the the respective image and TTF file.
 
 {% endtabs %}
 
-### By using Image
+### By using Image with Button Height & Width
 
 {% tabs %}
 
@@ -254,7 +254,7 @@ public partial class MainPage : ContentPage
 
 {% endtabs %}
 
-![image](images/image.png)
+![Display SfNumericUpDown control with Button properties](images/image.png)
 
 
 ### By using FontIconText
@@ -299,9 +299,6 @@ public partial class MainPage : ContentPage
 </updown:SfNumericUpDown.DecrementButtonSettings>
 </updown:SfNumericUpDown> 
 
-
-
-
 {% endhighlight %}
 
 {% highlight C# %}
@@ -332,4 +329,140 @@ this.Content = upDown;
 
 {% endtabs %}
 
-![fonticon](images/FontTTf.png)
+![Display the control with fonticon](images/FontTTf.png)
+
+## Additional customization properties of UpDownButtonSettings
+
+### BackgroundColor
+
+This property is used to change the background color of increment and decrement buttons.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<updown:SfNumericUpDown >
+    <updown:SfNumericUpDown.IncrementButtonSettings>
+    <updown:UpDownButtonSettings BackgroundColor="Red"/>
+    </updown:SfNumericUpDown.IncrementButtonSettings>
+    <updown:SfNumericUpDown.DecrementButtonSettings>
+    <updown:UpDownButtonSettings BackgroundColor="Green"/>
+    </updown:SfNumericUpDown.DecrementButtonSettings>
+</updown:SfNumericUpDown>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+ SfNumericUpDown numericUpDown = new SfNumericUpDown();
+ UpDownButtonSettings incrementButtonSettings = new UpDownButtonSettings();
+ UpDownButtonSettings decrementButtonSettings = new UpDownButtonSettings();
+ numericUpDown.IncrementButtonSettings = incrementButtonSettings;
+ numericUpDown.DecrementButtonSettings = decrementButtonSettings;
+ incrementButtonSettings.BackgroundColor = Color.Red;
+ decrementButtonSettings.BackgroundColor = Color.Green;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Display the value with maximum](images/buttonbackground.png)
+
+### HighlightedBackgroundColor
+
+This property is used to change the background color of when press the increment or decrement button.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <updown:SfNumericUpDown >
+  <updown:SfNumericUpDown.IncrementButtonSettings>
+  <updown:UpDownButtonSettings HighlightedBackgroundColor="Red"/>
+  </updown:SfNumericUpDown.IncrementButtonSettings>
+  <updown:SfNumericUpDown.DecrementButtonSettings>
+  <updown:UpDownButtonSettings HighlightedBackgroundColor="Green"/>
+  </updown:SfNumericUpDown.DecrementButtonSettings>
+ </updown:SfNumericUpDown>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+ SfNumericUpDown numericUpDown = new SfNumericUpDown();
+ UpDownButtonSettings incrementButtonSettings = new UpDownButtonSettings();
+ UpDownButtonSettings decrementButtonSettings = new UpDownButtonSettings();
+ numericUpDown.IncrementButtonSettings = incrementButtonSettings;
+ numericUpDown.DecrementButtonSettings = decrementButtonSettings;
+ incrementButtonSettings.HighlightedBackgroundColor = Color.Red;
+ decrementButtonSettings.HighlightedBackgroundColor = Color.Green;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### ButtonFontColor
+
+This property is used to change the text color of increment and decrement buttons.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <updown:SfNumericUpDown >
+    <updown:SfNumericUpDown.IncrementButtonSettings>
+    <updown:UpDownButtonSettings ButtonFontColor="Red"/>
+    </updown:SfNumericUpDown.IncrementButtonSettings>
+    <updown:SfNumericUpDown.DecrementButtonSettings>
+    <updown:UpDownButtonSettings ButtonFontColor="Green"/>
+    </updown:SfNumericUpDown.DecrementButtonSettings>
+</updown:SfNumericUpDown>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+ SfNumericUpDown numericUpDown = new SfNumericUpDown();
+ UpDownButtonSettings incrementButtonSettings = new UpDownButtonSettings();
+ UpDownButtonSettings decrementButtonSettings = new UpDownButtonSettings();
+ numericUpDown.IncrementButtonSettings = incrementButtonSettings;
+ numericUpDown.DecrementButtonSettings = decrementButtonSettings;
+ incrementButtonSettings.ButtonFontColor = Color.Red;
+ decrementButtonSettings.ButtonFontColor = Color.Green;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### HighlightedButtonFontColor
+
+This property is used to change the text color of button when press the increment or decrement button.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<updown:SfNumericUpDown >
+    <updown:SfNumericUpDown.IncrementButtonSettings>
+    <updown:UpDownButtonSettings HighlightedButtonFontColor="Red"/>
+    </updown:SfNumericUpDown.IncrementButtonSettings>
+    <updown:SfNumericUpDown.DecrementButtonSettings>
+    <updown:UpDownButtonSettings HighlightedButtonFontColor="Green"/>
+    </updown:SfNumericUpDown.DecrementButtonSettings>
+</updown:SfNumericUpDown>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+ SfNumericUpDown numericUpDown = new SfNumericUpDown();
+ UpDownButtonSettings incrementButtonSettings = new UpDownButtonSettings();
+ UpDownButtonSettings decrementButtonSettings = new UpDownButtonSettings();
+ numericUpDown.IncrementButtonSettings = incrementButtonSettings;
+ numericUpDown.DecrementButtonSettings = decrementButtonSettings;
+ incrementButtonSettings.HighlightedButtonFontColor = Color.Red;
+ decrementButtonSettings.HighlightedButtonFontColor = Color.Green;
+
+{% endhighlight %}
+
+{% endtabs %}

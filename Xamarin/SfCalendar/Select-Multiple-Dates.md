@@ -21,6 +21,8 @@ Dates can be selected by making a touch on month view cells. The default [Select
 
 The selected dates can be retrieved through `OnSelectionChanged` event which is raised on selecting.
 
+## Multi selection mode
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -39,9 +41,11 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![MultiSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-MultiSelection.png)
+![MultiSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-MultiSelection.jpg)
 
 N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of `SfCalendar` control.
+
+## Range selection mode
 
 {% tabs %}
 
@@ -53,13 +57,15 @@ N> In range selection, navigation through swipe will be restricted and moving be
 
 {% highlight c# %}
 
-SfCalendar calendar = new SfCalendar();	
 calendar.SelectionMode=SelectionMode.RangeSelection;
-this.Content = calendar;
 	
 {% endhighlight %}
 
 {% endtabs %}
+
+![RangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-RangeSelection.png)
+
+## Multi range selection mode
 
 {% tabs %}
 
@@ -70,13 +76,31 @@ this.Content = calendar;
 {% endhighlight %}
 
 {% highlight c# %}
-	
-SfCalendar calendar = new SfCalendar();	
+
 calendar.SelectionMode=SelectionMode.MultiRangeSelection;
-this.Content = calendar;
 	
 {% endhighlight %}
 
 {% endtabs %}
 
-![MultiRangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-MultiRangeSelection.png)
+![MultiRangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-MultiRangeSelection.jpg)
+
+## Single selection mode
+ 
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar  x:Name="calendar" SelectionMode="SingleSelection"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+	
+calendar.SelectionMode = SelectionMode.SingleSelection;
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+![SingleSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-SingleSelection.png)

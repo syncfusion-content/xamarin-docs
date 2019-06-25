@@ -60,11 +60,11 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 To use the SfBorder control inside an application, each platform application must initialize the SfBorder renderer. This initialization step varies from platform to platform and is discussed in the following sections:
 
+N> If you are adding the references from toolbox, below steps are not needed.
+
 ### Android and UWP
 
 The Android and UWP launches the SfBorder without any initialization, and it is enough to only initialize the Xamarin.Forms Framework to launch the application.
-
-N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 

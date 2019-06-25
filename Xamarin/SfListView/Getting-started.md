@@ -74,7 +74,7 @@ N> After adding the reference, an additional step is required for [iOS](https://
 
 ## System Requirements
 
-In the SfListView, current supported Xamarin.Forms version is `2.4.0.280` and later.
+In the SfListView, current supported Xamarin.Forms version is `3.5.0.129452` and later.
 
 The following table lists the platforms supported versions:
 
@@ -611,7 +611,7 @@ It also supports to stick the group header by enabling the [SfListView.IsStickyG
     <syncfusion:SfListView.DataSource>
       <data:DataSource>
         <data:DataSource.GroupDescriptors>
-          <data:SortDescriptor PropertyName="BookName"/>
+          <data:GroupDescriptor PropertyName="BookName"/>
         </data:DataSource.GroupDescriptors>
       </data:DataSource>
     </syncfusion:SfListView.DataSource>

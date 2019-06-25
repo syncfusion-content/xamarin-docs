@@ -33,14 +33,6 @@ You can handle the calendar month view appointment display by using [InlineViewM
  
 * AgendaView - Show the selected date’s events below the month.
 
-N> If there is no appointment for the selected day, `Inline` view and `AgendaView` displays the text as “No Appointments”.
- 
-## Month Appointment Indicator
- 
-You can customize the number of appointment indicators displayed in month cell using [MaximumEventIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaximumEventIndicatorCount.html) property of ‘SfCalendar’. The default value of `MaximumEventIndicatorCount` is 5.
-
-N> If appointments count are lesser than the Appointment Indicator count value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.Maximum number of appointment indicators drawn in the month cell is 5.
-
 {% tabs %}
 {% highlight xaml %} 
 <?xml version="1.0" encoding="utf-8"?>
@@ -84,12 +76,21 @@ namespace CalendarSample
 {% endhighlight %}
 {% endtabs %} 
 
-N> The Inline function will be available only in MonthView with Single selection mode.
-
 You can download the entire source code of this demo for Xamarin.Forms from
 here [CalendarEvents](https://github.com/SyncfusionExamples/creating-events-in-xamarin.forms-sfcalendar)
 
-![SfCalendar Inline events](images/xamarin.forms-calendar-events.png)
+![SfCalendar Inline events](images/xamarin.forms-calendar-Event.jpg)
+
+
+N> If there is no appointment for the selected day, `Inline` view and `AgendaView` displays the text as “No Appointments”.
+N> The `Inline` view and `AgendaView` will be available only in month view with single selection mode.
+ 
+## Month Appointment Indicator
+ 
+You can customize the number of appointment indicators displayed in month cell using [MaximumEventIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaximumEventIndicatorCount.html) property of ‘SfCalendar’. The default value of `MaximumEventIndicatorCount` is 5.
+
+N> If appointments count are lesser than the Appointment Indicator count value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.
+
 
 ## Customize inline/agenda view using DataTemplate
 
@@ -112,11 +113,11 @@ The default appearance of the appointment can be customized by using the [Inline
 
 Inline view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplate.png)
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplate.jpg)
 
 Agenda view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplate.png)
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplate.jpg)
 
 ## Customize inline/agenda view using Template Selector
 
@@ -197,11 +198,11 @@ Inline template selector can be used to choose a `DataTemplate` at runtime based
 
 Inline view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplateselector.png)
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplateselector.jpg)
 
 Agenda view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplateselector.png)
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplateselector.jpg)
 
 ## Getting inline/agenda view appointment details
 
@@ -222,8 +223,8 @@ private void Calendar_InlineItemTapped(object sender, InlineItemTappedEventArgs 
 
 Inline view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlineitemtapped.png)
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlineitemtapped.jpg)
 
 Agenda view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendaitemtapped.png)
+![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendaitemtapped.jpg)

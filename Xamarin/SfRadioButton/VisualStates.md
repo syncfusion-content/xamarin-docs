@@ -1,0 +1,98 @@
+---
+layout: post
+title: Visual States for Syncfusion Essential Xamarin.Forms SfRadioButton
+description: How to customize RadioButton based on its visual state changes in Xamarin.Forms SfRadioButton.
+platform: xamarin.forms
+control: SfRadioButton
+documentation: ug
+---
+
+## Visual States
+
+The RadioButton visual can be customized through `VisualStates`. The [`SfRadioButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioButton.html) control have the following three visual states:
+
+* Disabled
+* Checked
+* Unchecked
+
+
+{% tabs %}
+{% highlight xaml %}
+
+<buttons:SfRadioButton Text="Radio Button">
+    <VisualStateManager.VisualStateGroups>
+        <VisualStateGroup x:Name="CommonStates">
+            <VisualState x:Name="Checked">
+                <VisualState.Setters>
+                    <Setter Property="TextColor" Value="Accent"/>
+                    <Setter Property="BackgroundColor" Value="#8bc5fb"/>
+                    <Setter Property="CheckedColor" Value="Accent"/>
+                </VisualState.Setters>
+            </VisualState>
+            <VisualState x:Name="Unchecked">
+                <VisualState.Setters>
+                    <Setter Property="TextColor" Value="#ea3737"/>
+                    <Setter Property="BackgroundColor" Value="#f6acac"/>
+                    <Setter Property="UncheckedColor" Value="#ea3737"/>
+                </VisualState.Setters>
+            </VisualState>
+            <VisualState x:Name="Disabled">
+                <VisualState.Setters>
+                    <Setter Property="TextColor" Value="#1947c3"/>
+                    <Setter Property="BackgroundColor" Value="#7b7f89"/>
+                </VisualState.Setters>
+            </VisualState>
+        </VisualStateGroup>
+    </VisualStateManager.VisualStateGroups>
+</buttons:SfRadioButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfRadioButton radioButton = new SfRadioButton { Text = "Radio Button" };
+VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
+VisualStateGroup commonStateGroup = new VisualStateGroup();
+
+VisualState checkedState = new VisualState
+{
+    Name = "Checked"
+};
+
+checkedState.Setters.Add(new Setter { Property = SfRadioButton.TextColorProperty, Value = Color.Accent });
+checkedState.Setters.Add(new Setter { Property = SfRadioButton.BackgroundColorProperty, Value = Color.FromHex("#8bc5fb") });
+checkedState.Setters.Add(new Setter { Property = SfRadioButton.CheckedColorProperty, Value = Color.Accent });
+
+VisualState uncheckedState = new VisualState
+{
+    Name = "Unchecked"
+};
+uncheckedState.Setters.Add(new Setter { Property = SfRadioButton.TextColorProperty, Value = Color.FromHex("#ea3737") });
+uncheckedState.Setters.Add(new Setter { Property = SfRadioButton.BackgroundColorProperty, Value = Color.FromHex("#f6acac") });
+uncheckedState.Setters.Add(new Setter { Property = SfRadioButton.UncheckedColorProperty, Value = Color.FromHex("#ea3737") });
+
+VisualState disabledState = new VisualState
+{
+    Name = "Disabled"
+};
+
+disabledState.Setters.Add(new Setter { Property = SfRadioButton.TextColorProperty, Value = Color.FromHex("#1947c3") });
+disabledState.Setters.Add(new Setter { Property = SfRadioButton.BackgroundColorProperty, Value = Color.FromHex("#7b7f89") });
+
+commonStateGroup.States.Add(checkedState);
+commonStateGroup.States.Add(uncheckedState);
+commonStateGroup.States.Add(disabledState);
+
+visualStateGroupList.Add(commonStateGroup);
+VisualStateManager.SetVisualStateGroups(radioButton, visualStateGroupList);
+
+{% endhighlight %}
+{% endtabs %}
+
+Visual state checked:
+![SfRadioButton with visual state of checked state](images/RadioButton_VisualState_Checked.png)
+
+Visual state unchecked:
+![SfRadioButton with visual state of unchecked state](images/RadioButton_VisualState_Unchecked.png)
+
+Visual state disabled:
+![SfRadioButton with visual state of disabled state](images/RadioButton_VisualState_Disabled.png)

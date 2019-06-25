@@ -9,10 +9,9 @@ documentation: ug
 
 ## Visual States
 
-The button visual can be customized through `VisualStates`. The [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html) control have the following five visual states:
+The button visual can be customized through `VisualStates`. The [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html) control have the following four visual states:
 
 * Normal
-* Disabled
 * Pressed
 * Checked
 * Unchecked

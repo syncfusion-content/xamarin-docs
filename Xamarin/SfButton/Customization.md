@@ -316,9 +316,9 @@ button.ImageAlignment = Alignment.End;
 
 ![SfButton with image with icon image alignment](images/Button_iconalignment.png)
 
-## Gradient colors
+## Gradient background
 
-You can set the gradient colors as background of SfButton using the [`BackgroundGradient`]() property. It supports the following types of gradients:
+You can set the gradient as background of SfButton using the [`BackgroundGradient`]() property. It supports the following types of gradients:
 
 * `LinearGradient` - Creates linear gradient effects.
 * `RadialGradient` - Creates radial gradient effects.

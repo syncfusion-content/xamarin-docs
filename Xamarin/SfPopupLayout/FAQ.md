@@ -912,9 +912,9 @@ namespace Popup_Demo
 Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/how-to-set-background-color-for-popupview-in-xamarin-popup).
 
 
-## How to prevent the popupview by press device back button
+## How to prevent the popup by press device back button
 
-The SfPopupLayout Supports the device back button for close the popupview by using the [SfPopupLayout.ClosePopupOnBackButtonPressed] property.
+The SfPopupLayout Supports the device back button for close the popup by using the [SfPopupLayout.ClosePopupOnBackButtonPressed] property.
 
 {% tabs %}
 

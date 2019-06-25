@@ -7,7 +7,7 @@ control: Switch
 documentation: ug
 ---
 
-## Visual Types
+# Visual Types
 
 SfSwitch supports customization using built-in visual types. The visual types based on device platform are listed as follows.
 
@@ -15,7 +15,7 @@ SfSwitch supports customization using built-in visual types. The visual types ba
 * iOS – Cupertino
 * Windows – Fluent
 
-### Default
+## Default
 
 This is the default value set for visual type.
 
@@ -23,7 +23,7 @@ This is the default value set for visual type.
 
 N> If you set default, the visual type will be internally changed based on the device platform.
 
-### Material
+## Material
 
 Material visual type brings the appearance based on material guidelines. The following code example demonstrates how to define material visual type.
 
@@ -31,7 +31,7 @@ Material visual type brings the appearance based on material guidelines. The fol
 
 {% highlight xaml %}
 
-<syncfusion:SfSwitch VisualType="Material" />
+    <syncfusion:SfSwitch VisualType="Material" />
 
 {% endhighlight %}
 
@@ -47,7 +47,7 @@ sfSwitch.VisualType = VisualType.Material;
 
 ![switch conrol is having material visual type](images/material.png)
 
-### Cupertino
+## Cupertino
 
 Cupertino visual type brings the appearance based on Cupertino guidelines. The following code example demonstrates how to define Cupertino visual type.
 
@@ -55,7 +55,7 @@ Cupertino visual type brings the appearance based on Cupertino guidelines. The f
 
 {% highlight xaml %}
 
-<syncfusion:SfSwitch VisualType="Cupertino" />
+    <syncfusion:SfSwitch VisualType="Cupertino" />
 
 {% endhighlight %}
 
@@ -71,7 +71,7 @@ sfSwitch.VisualType = VisualType.Cupertino;
 
 ![switch conrol is having cupertino visual type](images/cupertino.png)
 
-### Fluent
+## Fluent
 
 Fluent visual type brings the appearance based on Fluent guidelines. The following code example demonstrates how to define Fluent visual type.
 
@@ -79,7 +79,7 @@ Fluent visual type brings the appearance based on Fluent guidelines. The followi
 
 {% highlight xaml %}
 
-<syncfusion:SfSwitch VisualType="Fluent" />
+    <syncfusion:SfSwitch VisualType="Fluent" />
 
 {% endhighlight %}
 
@@ -95,7 +95,7 @@ sfSwitch.VisualType = VisualType.Fluent;
 
 ![switch conrol is having fluent visual type](images/fluent.png)
 
-### Custom
+## Custom
 
-Custom type will allow you to customize the control, where you can handle the size, colors, images etc. of the control. Refer to this [`documentation`]().
+Custom type will allow you to customize the control, where you can handle the size, colors, images etc. of the control. Refer to this [`documentation`](https://help.syncfusion.com/xamarin/sfswitch/customization).
 

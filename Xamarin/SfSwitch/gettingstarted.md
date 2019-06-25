@@ -64,7 +64,8 @@ To launch the switch in iOS, call the SfSwitchRenderer.Init() method in the Fini
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight c# %}
+
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {
@@ -92,7 +93,8 @@ To deploy the switch in Release mode, you need to initialize the button assembli
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight c# %}
+
 protected override void OnLaunched(LaunchActivatedEventArgs e) 
 
 { 
@@ -105,7 +107,6 @@ rootFrame.NavigationFailed += OnNavigationFailed;
 
 List<Assembly> assembliesToInclude = new List<Assembly>(); 
 //Now, add all the assemblies that your app uses.
-assembliesToInclude.Add(typeof(SfButtonRenderer).GetTypeInfo().Assembly); 
 assembliesToInclude.Add(typeof(SfBorderRenderer).GetTypeInfo().Assembly); 
 // replaces Xamarin.Forms.Forms.Init(e); 
 
@@ -150,7 +151,7 @@ Then initialize the switch control as shown below using the code example.
 
 {% highlight xaml %}
 
-<syncfusion:SfSwitch /> 
+    <syncfusion:SfSwitch /> 
 
 {% endhighlight %}
 
@@ -174,8 +175,7 @@ The following code example displays a message box when switched to off state whe
 
 {% highlight xaml %}
 
-
-<syncfusion:SfSwitch StateChanged="SfSwitch_StateChanged" />
+    <syncfusion:SfSwitch StateChanged="SfSwitch_StateChanged" />
 
 {% endhighlight %}
 
@@ -183,14 +183,18 @@ The following code example displays a message box when switched to off state whe
 
 sfSwitch.StateChanged += SfSwitch_StateChanged;
 
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
 private void SfSwitch_StateChanged (object sender, EventArgs e)
-
 {
-
-DisplayAlert("Message", "SUCESS", "OK");
-
+   DisplayAlert("Message", "SUCESS", "OK");
 }
-
 
 {% endhighlight %}
 

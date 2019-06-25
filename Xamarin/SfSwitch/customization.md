@@ -7,18 +7,18 @@ control: Switch
 documentation: ug
 ---
 
-## Customization with visual states
+# Customization with visual states
 
 The switch control provides options to customize the color based on states. The following code example demonstrates how to customize the switch control.
 
-### Solid colors
+## Solid colors
 
 The following properties are used to apply solid colors to the thumb, track, border, and busy indicator, respectively:
 
 * ThumbColor: Represents the color for the thumb.
 * ThumbBorderColor: Represents the border color for the thumb.
-* TrackBorderColor: Represents the color for the border of the switch.
-* TrackColor: Represents the color for the slider.
+* TrackBorderColor: Represents the color for the border of the track.
+* TrackColor: Represents the color for the track.
 
 {% tabs %}
 
@@ -131,7 +131,7 @@ this.Content = sfSwitch;
 
 ![switch conrol with visual state customization](images/customization-with-visual-state.png)
 
-### Gradient colors
+## Gradients
 
 You can also specify a range of colors in thumb and track using ThumbGradientColor and TrackGradientColor as demonstrates in the following code example.
 
@@ -266,7 +266,7 @@ this.Content = sfSwitch;
 
 ![switch conrol with gradient](images/gradient.png)
 
-### Sizing
+## Sizing
 
 In the switch control, sizing of the thumb and the track can be controlled using the following properties:
 
@@ -377,7 +377,7 @@ this.Content = sfSwitch;
 
 ![switch conrol with sizing](images/sizing.png)
 
-### Images
+## Images
 
 Images can also be added to enhance the visual appearance. The following properties are used to add the images:
 

@@ -7,9 +7,9 @@ control: Switch
 documentation: ug
 ---
 
-## How to
+# How to
 
-### Show busy indicator to perform async action
+## Show busy indicator to perform async action
 
 The busy indicator indicates users that something is on progress in the background. For instance, some data is being fetched from the back end. Here, when users about to switch the state, the StateChanging event occurs, and users can set the `IsBusy` property to true to show busy indicator and perform fetching the data from the server. After fetching the data, the `IsOn` property will be set to true or false based on validation. After validation, the `IsBusy` property is set to false.
 
@@ -17,21 +17,29 @@ The busy indicator indicates users that something is on progress in the backgrou
 
 {% highlight xaml %}
 
-    <syncfusion:SfSwitch x:Name="sfSwitch" StateChanging="Stc_StateChanging"/>
+    <syncfusion:SfSwitch x:Name="sfSwitch" StateChanging="State_StateChanging"/>
         
 {% endhighlight %}
 
 {% highlight c# %}
 
-       private async void Stc_StateChanging(object sender, Syncfusion.XForms.Core.CancelEventArgs e)
+ SfSwitch sfSwitch = new SfSwitch();
+
+ sfSwitch.StateChanged += State_StateChanging;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+{% highlight c# %}
+
+       private async void State_StateChanging(object sender, Syncfusion.XForms.Core.CancelEventArgs e)
         {
             this.sfSwitch.IsBusy = true;
             await Task.Delay(2500);
             this.sfSwitch.IsOn = ValidateInternetConnection();
             this.sfSwitch.IsBusy = false;
         }
-
-
 
         private bool ValidateInternetConnection()
         {
@@ -45,11 +53,9 @@ The busy indicator indicates users that something is on progress in the backgrou
 
 {% endhighlight %}
 
-{% endtabs %}
-
 ![switch control with busy indicator](images/busy-indicator.png)
 
-### Change thumb color alone based on its state and devices
+## Change thumb color alone based on its state and devices
 
 You can customize the thumb color using the `ThumbColor` property based on its visual state and devices.
 
@@ -152,7 +158,7 @@ You can customize the thumb color using the `ThumbColor` property based on its v
 
 ![switch control with busy indicator](images/thumb-color.png)
 
-### Change thumb color alone based on its state with Material theme for all devices
+## Change thumb color alone based on its state with Material theme for all devices
 
 By using the `MaterialSwitchSettings`, `CupertinoSwitchSettings`, and `FluentSwitchSettings` properties, you can change the thumb color based on its state for all devices.
 
@@ -160,7 +166,7 @@ By using the `MaterialSwitchSettings`, `CupertinoSwitchSettings`, and `FluentSwi
 
 {% highlight xaml %}
 
- <syncfusion:SfSwitch  VisualType="Custom">
+    <syncfusion:SfSwitch  VisualType="Custom">
 
         <VisualStateManager.VisualStateGroups>
 
@@ -254,3 +260,100 @@ By using the `MaterialSwitchSettings`, `CupertinoSwitchSettings`, and `FluentSwi
 {% endhighlight %}
 
 ![switch conrol with thumb color](images/thumb-color-based-on-device.png)
+
+## Set color for disabled state
+
+The Switch control provides options to customize the color based on the disabled states. The below code example illustrates this customization.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+     <syncfusion:SfSwitch  VisualType="Custom" IsEnabled="False"  IsOn="True">
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup  x:Name="CommonStates">
+                <VisualState x:Name="DisabledOn">
+                    <VisualState.Setters>
+                        <Setter Property="SwitchSettings">
+                            <Setter.Value>
+                                <syncfusion:DefaultSwitchSettings  x:TypeArguments="syncfusion:DisabledOnState" 
+                                ThumbBorderColor="Red" ThumbColor="Green" 
+                                 TrackBorderColor="LightGreen" TrackColor="OrangeRed" 
+                                 BusyIndicatorColor="Pink">
+                                </syncfusion:DefaultSwitchSettings>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:Name="DisabledOff">
+                    <VisualState.Setters>
+                        <Setter Property="SwitchSettings">
+                            <Setter.Value>
+                                <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:DisabledOffState" 
+                                   ThumbBorderColor="Red" ThumbColor="Green" 
+                                 TrackBorderColor="LightGreen" TrackColor="OrangeRed" 
+                                 />
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+
+        </VisualStateManager.VisualStateGroups>
+    </syncfusion:SfSwitch>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfSwitch sfSwitch = new SfSwitch();
+sfSwitch.VisualType = VisualType.Custom;
+sfSwitch.IsOn = true;
+sfSwitch.IsEnabled = false;
+
+DefaultSwitchSettings<DisabledOnState> defaultSwitch = new DefaultSwitchSettings<DisabledOnState>();
+defaultSwitch.ThumbBorderColor = Color.Red;
+defaultSwitch.ThumbColor = Color.Green;
+defaultSwitch.TrackBorderColor = Color.LightGreen;
+defaultSwitch.TrackColor = Color.OrangeRed;
+defaultSwitch.BusyIndicatorColor = Color.Pink;
+
+DefaultSwitchSettings<DisabledOffState> defaultSwitch1 = new DefaultSwitchSettings<DisabledOffState>();
+defaultSwitch1.ThumbBorderColor = Color.Red;
+defaultSwitch1.ThumbColor = Color.Green;
+defaultSwitch1.TrackBorderColor = Color.LightGreen;
+defaultSwitch1.TrackColor = Color.OrangeRed;
+
+VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
+
+VisualStateGroup commonStateGroup = new VisualStateGroup();
+VisualState onState = new VisualState
+{
+Name = "DisabledOn"
+};
+onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch });
+
+VisualState offState = new VisualState
+{
+Name = "DisabledOff"
+};
+
+offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
+
+commonStateGroup.States.Add(onState);
+
+commonStateGroup.States.Add(offState);
+
+visualStateGroupList.Add(commonStateGroup);
+
+VisualStateManager.SetVisualStateGroups(sfSwitch, visualStateGroupList);
+
+this.Content = sfSwitch;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![switch conrol with image](images/thumb-color-in-disabled-state.png)

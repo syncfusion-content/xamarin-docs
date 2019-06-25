@@ -7,18 +7,19 @@ control: Switch
 documentation: ug
 ---
 
-## Orientation
+# Orientation
 
-The switch control provides options to change the default alignment.
+The switch control provides options to change the default orientation.
 
-### Horizontal 
+## Horizontal 
 
 By default, it is displayed horizontally. You can also define the orientation as demonstrated in the following code example.
 
 {% tabs %}
+
 {% highlight xaml %}
 
-<syncfusion:SfSwitch Orientation="Horizontal" />
+    <syncfusion:SfSwitch Orientation="Horizontal" />
 
 {% endhighlight %}
 
@@ -34,14 +35,15 @@ sfSwitch.Orientation = SwitchOrientation.Horizontal;
 
 ![switch conrol has horizontal orientation](images/orientation.png)
 
-### Vertical
+## Vertical
 
 To view the switch control vertically, you can define the vertical orientation as demonstrated in the following code example.
 
 {% tabs %}
+
 {% highlight xaml %}
 
-<syncfusion:SfSwitch Orientation="Vertical" />
+    <syncfusion:SfSwitch Orientation="Vertical" />
 
 {% endhighlight %}
 
@@ -56,4 +58,3 @@ sfSwitch.Orientation = SwitchOrientation.Vertical;
 {% endtabs %}
 
 ![switch conrol has vertical orientation](images/vertical.png)
-

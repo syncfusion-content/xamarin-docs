@@ -9,7 +9,7 @@ documentation: ug
 
 ## Visual Types
 
-SfSwitch supports customization using built in visual types. The visual types based on the device platform is listed below.
+SfSwitch supports customization using built-in visual types. The visual types based on device platform are listed as follows.
 
 * Android – Material 
 * iOS – Cupertino
@@ -17,15 +17,15 @@ SfSwitch supports customization using built in visual types. The visual types ba
 
 ### Default
 
-This is the default value set for visual type. 
+This is the default value set for visual type.
 
-![switch conrol having default visual type](images/default.png)
+![switch conrol is having default visual type](images/default.png)
 
-N> If we set default, the visual type is internally changed based on the device platform.
+N> If you set default, the visual type will be internally changed based on the device platform.
 
 ### Material
 
-Material visual type brings in the appearance based on material guidelines. The below code example shows you how to define material visual type.
+Material visual type brings the appearance based on material guidelines. The following code example demonstrates how to define material visual type.
 
 {% tabs %}
 
@@ -45,11 +45,11 @@ sfSwitch.VisualType = VisualType.Material;
 
 {% endtabs %}
 
-![switch conrol having material visual type](images/material.png)
+![switch conrol is having material visual type](images/material.png)
 
 ### Cupertino
 
-Cupertino visual type brings in the appearance based on Cupertino guidelines. The below code example shows you how to Cupertino visual type. 
+Cupertino visual type brings the appearance based on Cupertino guidelines. The following code example demonstrates how to define Cupertino visual type.
 
 {% tabs %}
 
@@ -69,11 +69,11 @@ sfSwitch.VisualType = VisualType.Cupertino;
 
 {% endtabs %}
 
-![switch conrol having cupertino visual type](images/cupertino.png)
+![switch conrol is having cupertino visual type](images/cupertino.png)
 
 ### Fluent
 
-Fluent visual type brings in the appearance based on Fluent guidelines. The below code example shows you how to Fluent visual type.
+Fluent visual type brings the appearance based on Fluent guidelines. The following code example demonstrates how to define Fluent visual type.
 
 {% tabs %}
 

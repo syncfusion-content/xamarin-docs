@@ -93,8 +93,9 @@ sfSwitch.VisualType = VisualType.Fluent;
 
 {% endtabs %}
 
-![switch conrol having fluent visual type](images/fluent.png)
+![switch conrol is having fluent visual type](images/fluent.png)
 
 ### Custom
 
-Custom type will allow you to customize the control where you can handle the size, colors, images etc. of the control. Please refer [`here`]().
+Custom type will allow you to customize the control, where you can handle the size, colors, images etc. of the control. Refer to this [`documentation`]().
+

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Essential Xamarin.Forms Step Progress Bar
+title: Getting Started for Syncfusion Xamarin.Forms Step Progress Bar
 description: A quick tour to initial users on Syncfusion step progress bar control for Xamarin.Forms platform.
 platform: xamarin
 control: StepProgressBar

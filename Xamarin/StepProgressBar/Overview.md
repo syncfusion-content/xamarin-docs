@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: Overview of Syncfusion Xamarin.Forms StepProgressBar
+description: What are the key features available in StepProgressBar.
 platform: xamarin
 control: StepProgressBar
 documentation: ug
@@ -20,4 +20,4 @@ The step progress bar control for Xamarin.Forms allows you to indicate the progr
 * Customize the step content with numbers, tick, cross, dot, or image.
 * Allows to initialize the state and progress value.
 
-![](overview_images/overview.png)
+![Overview of Step ProgressBar](overview_images/overview.png)

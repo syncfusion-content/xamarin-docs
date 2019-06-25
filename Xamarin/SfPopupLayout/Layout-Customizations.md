@@ -534,3 +534,318 @@ namespace GettingStarted
 ![Popup with custom content](GettingStarted_images/ContentView.png)
 
 To display ListView as the content of the popup, refer [here](https://help.syncfusion.com/xamarin/sfpopuplayout/faq#show-listview-as-a-popup).
+
+# Auto-Sizing
+
+The SfPopupLayout supports four types of [SfPopupLayout.PopupView.AutoSizeMode]. By default, the `AutoSizeMode.None` is set. You can change the AutoSizeMode by using the `SfPopupLayout.PopupView.AutoSizeMode` property.
+
+The four different autosize modes in the SfPopupLayout are as follows:
+
+<table>
+<tr>
+<th> Modes </th>
+<th> Description </th>
+</tr>
+<tr>
+<td> {{'[None]' }} </td>
+<td> SfPopupView will not autosizing. This is the default value.</td>
+</tr>
+<tr>
+<td> {{'[Both]'}} </td>
+<td> SfPopupView width and height will be autosizing that is based on content template of SfPopupView</td>
+</tr>
+<tr>
+<td> {{'[Width]'}} </td>
+<td> SfPopupView width will be autosizing that is based on content template of SfPopupView</td>
+</tr>
+<tr>
+<td> {{'[Height]'}} </td>
+<td> SfPopupView height will be autosizing that is based on content template of SfPopupView</td>
+</tr>
+</table>
+
+## AutoSizeMode.None
+
+The `SfPopupView` width and height will not autosizing and this is default value of `SfPopupLayout.PopupView.AutoSizeMode` property. Refer the below code snippet the same.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SfPopuplayout"
+             x:Class="SfPopuplayout.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+  <ContentPage.Content>
+    <sfPopup:SfPopupLayout x:Name="popUpLayout">
+        <sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:PopupView AutoSizeMode="None">
+                <sfPopup:PopupView.ContentTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="5,5,5,0">
+                            <Label Text="Window loads under the parent window surrounded by an overlay which prevents clicking anywhere else on the screen apart from the control of the modal. Modal opens in the same window. It also does not require any user action to open, and give callbacks when closing or opening the modal."
+                            BackgroundColor="White"
+                            LineBreakMode="WordWrap"
+                           />
+                        </StackLayout>
+                    </DataTemplate>
+                </sfPopup:PopupView.ContentTemplate>
+            </sfPopup:PopupView>
+        </sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:SfPopupLayout.Content>
+            <StackLayout x:Name="mainLayout">
+                <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </sfPopup:SfPopupLayout.Content>
+    </sfPopup:SfPopupLayout>
+  </ContentPage.Content>
+</ContentPage>
+
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.PopupLayout;
+namespace SfPopuplayout
+{
+	public partial class MainPage : ContentPage
+	{
+        public MainPage()
+        {
+            InitializeComponent();
+            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
+            popUpLayout.PopupView.AutoSizeMode = AutoSizeMode.None;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            popUpLayout.Show();
+        }
+
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## AutoSizeMode.Both
+
+The `SfPopupView` width and height will be autosizing and that size based on content template of `SfPopupView`. Refer the below code snippet the same.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SfPopuplayout"
+             x:Class="SfPopuplayout.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+  <ContentPage.Content>
+    <sfPopup:SfPopupLayout x:Name="popUpLayout">
+        <sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:PopupView AutoSizeMode="Both">
+                <sfPopup:PopupView.ContentTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="5,5,5,0">
+                            <Label Text="Window loads under the parent window surrounded by an overlay which prevents clicking anywhere else on the screen apart from the control of the modal. Modal opens in the same window. It also does not require any user action to open, and give callbacks when closing or opening the modal."
+                            BackgroundColor="White"
+                            LineBreakMode="WordWrap"
+                           />
+                        </StackLayout>
+                    </DataTemplate>
+                </sfPopup:PopupView.ContentTemplate>
+            </sfPopup:PopupView>
+        </sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:SfPopupLayout.Content>
+            <StackLayout x:Name="mainLayout">
+                <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </sfPopup:SfPopupLayout.Content>
+    </sfPopup:SfPopupLayout>
+  </ContentPage.Content>
+</ContentPage>
+
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.PopupLayout;
+namespace SfPopuplayout
+{
+	public partial class MainPage : ContentPage
+	{
+        public MainPage()
+        {
+            InitializeComponent();
+            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
+            popUpLayout.PopupView.AutoSizeMode = AutoSizeMode.Both;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            popUpLayout.Show();
+        }
+
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## AutoSizeMode.Height
+
+The `SfPopupView` height only will be autosizing and that size based on content template height of `SfPopupView`. Refer the below code snippet the same.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SfPopuplayout"
+             x:Class="SfPopuplayout.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+  <ContentPage.Content>
+    <sfPopup:SfPopupLayout x:Name="popUpLayout">
+        <sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:PopupView AutoSizeMode="Height">
+                <sfPopup:PopupView.ContentTemplate>
+                    <DataTemplate>
+                        <StackLayout Padding="5,5,5,0">
+                            <Label Text="Window loads under the parent window surrounded by an overlay which prevents clicking anywhere else on the screen apart from the control of the modal. Modal opens in the same window. It also does not require any user action to open, and give callbacks when closing or opening the modal."
+                            BackgroundColor="White"
+                            LineBreakMode="WordWrap"
+                           />
+                        </StackLayout>
+                    </DataTemplate>
+                </sfPopup:PopupView.ContentTemplate>
+            </sfPopup:PopupView>
+        </sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:SfPopupLayout.Content>
+            <StackLayout x:Name="mainLayout">
+                <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </sfPopup:SfPopupLayout.Content>
+    </sfPopup:SfPopupLayout>
+  </ContentPage.Content>
+</ContentPage>
+
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.PopupLayout;
+namespace SfPopuplayout
+{
+	public partial class MainPage : ContentPage
+	{
+        public MainPage()
+        {
+            InitializeComponent();
+            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
+            popUpLayout.PopupView.AutoSizeMode = AutoSizeMode.Height;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            popUpLayout.Show();
+        }
+
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Executing the above codes renders the following output in Android devices respectively.
+
+![PopupView with autoSize as height](PopupLayout_images/PopupView_AutoSize_Height.jpg)
+
+## AutoSizeMode.Width
+
+The `SfPopupView` width only will be autosizing and that size based on content template width of `SfPopupView`. Refer the below code snippet the same.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SfPopuplayout"
+             x:Class="SfPopuplayout.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+  <ContentPage.Content>
+        <sfPopup:SfPopupLayout x:Name="popUpLayout">
+            <sfPopup:SfPopupLayout.PopupView>
+                <sfPopup:PopupView AutoSizeMode="Width" HeaderTitle="Modal Window">
+                    <sfPopup:PopupView.ContentTemplate>
+                        <DataTemplate>
+                            <StackLayout Padding="5,5,5,0">
+                                <Label Text="Window loads under the parent window surrounded by an overlay which prevents clicking anywhere else on the screen apart from the control of the modal. Modal opens in the same window. It also does not require any user action to open, and give callbacks when closing or opening the modal."
+                            BackgroundColor="White"
+                            LineBreakMode="WordWrap"
+                            WidthRequest="350"
+                           />
+                            </StackLayout>
+                        </DataTemplate>
+                    </sfPopup:PopupView.ContentTemplate>
+                </sfPopup:PopupView>
+            </sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:SfPopupLayout.Content>
+                <StackLayout x:Name="mainLayout">
+                    <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+            </sfPopup:SfPopupLayout.Content>
+        </sfPopup:SfPopupLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.PopupLayout;
+namespace SfPopuplayout
+{
+	public partial class MainPage : ContentPage
+	{
+        public MainPage()
+        {
+            InitializeComponent();
+            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
+            popUpLayout.PopupView.AutoSizeMode = AutoSizeMode.Width;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            popUpLayout.Show();
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Executing the above codes renders the following output in Android devices respectively.
+
+![PopupView with autoSize as width](PopupLayout_images/PopupView_AutoSize_Width.jpg)
+
+Sample Link: You can download the above sample code by clicking [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoSize_SfPopuplayout1703576210).

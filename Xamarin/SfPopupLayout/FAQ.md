@@ -910,3 +910,60 @@ namespace Popup_Demo
 
 
 Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/how-to-set-background-color-for-popupview-in-xamarin-popup).
+
+
+## How to prevent the popupview by press device back button
+
+The SfPopupLayout Supports the device back button for close the popupview by using the [SfPopupLayout.ClosePopupOnBackButtonPressed] property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SfPopuplayout"
+             x:Class="SfPopuplayout.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+
+<ContentPage.Content>
+        <sfPopup:SfPopupLayout x:Name="popUpLayout" ClosePopupOnBackButtonPressed="True">
+            <sfPopup:SfPopupLayout.Content>
+                <StackLayout x:Name="mainLayout">
+                    <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+            </sfPopup:SfPopupLayout.Content>
+        </sfPopup:SfPopupLayout>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.PopupLayout;
+namespace SfPopuplayout
+{
+	public partial class MainPage : ContentPage
+	{
+        public MainPage()
+        {
+            InitializeComponent();
+            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
+            popUpLayout.ClosePopupOnBackButtonPressed = true;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            popUpLayout.Show();
+        }
+
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Sample Link: You can download the above sample code by clicking [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/backbutton_SfPopuplayout2034060256).

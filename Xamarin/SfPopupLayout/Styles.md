@@ -242,3 +242,101 @@ public MainPage()
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![Popup with border customization](PopupLayout_images/BorderCustomization.png)
+
+## Overlay customization
+
+The SfPopupLayout allows customizing the overlay appearance with various overlay customizations as follows:
+
+<table>
+<tr>
+<th> Property </th>
+<th> Description </th>
+</tr>
+<tr>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.OverlayColor]' }} </td>
+<td>  Gets or sets the overlay color for the PopupView.</td>
+</tr>
+<tr>
+<td> {{'[SfPopupLayout.PopupView.PopupStyle.OverlayOpacity]'}} </td>
+<td>  Gets or sets the overlay opacity for the PopupView. Default value is 0.5</td>
+</tr>
+<tr>
+<td> {{'[SfPopupLayout.ShowOverlayAlways]'}} </td>
+<td>  Shows the overlay always. Default value is false.</td>
+</tr>
+</table>
+
+Refer to the following code example for customizing the overlay elements.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SfPopuplayout"
+             x:Class="SfPopuplayout.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+    
+	<ContentPage.Content>
+        <sfPopup:SfPopupLayout x:Name="popUpLayout" ShowOverlayAlways="False">
+            <sfPopup:SfPopupLayout.PopupView>
+                <sfPopup:PopupView>
+                    <sfPopup:PopupView.PopupStyle>
+                        <sfPopup:PopupStyle OverlayColor="Transparent" OverlayOpacity="0">
+
+                        </sfPopup:PopupStyle>
+                    </sfPopup:PopupView.PopupStyle>
+                </sfPopup:PopupView>
+            </sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:SfPopupLayout.Content>
+                <StackLayout x:Name="mainLayout">
+                    <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
+                </StackLayout>
+            </sfPopup:SfPopupLayout.Content>
+        </sfPopup:SfPopupLayout>
+    </ContentPage.Content>
+	
+</ContentPage>
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+using Syncfusion.XForms.PopupLayout;
+namespace SfPopuplayout
+{
+	public partial class MainPage : ContentPage
+	{
+        public MainPage()
+        {
+            InitializeComponent();
+            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
+		    popUpLayout.PopupView.PopupStyle.OverlayColor = Color.Transparent;
+            popUpLayout.PopupView.PopupStyle.OverlayOpacity = 0;
+            popUpLayout.ShowOverlayAlways = false;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            popUpLayout.Show();
+        }
+
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Executing the above codes renders the following output in Android devices respectively.
+
+![Popup with overlay customization](PopupLayout_images/PopupView_Overlay.jpg)
+
+You can download a readily runnable sample for the above code snippet. [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Overlay_SfPopuplayout1893827201).

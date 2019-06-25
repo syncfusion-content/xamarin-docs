@@ -16,7 +16,7 @@ Chart allows you to zoom in to view the data clearly. To enable this feature, yo
 Following properties are used to configure the zooming feature,
 
 * [`EnableZooming`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~EnableZooming.html) – used to enable/disable the pinch zooming. Default value is true. 
-* [`EnableDirectionalZooming`]() - used to enable/disable the pinch zooming based on pinch gesture direction. Default value is false. 
+* [`EnableDirectionalZooming`]() - Enables or disables the pinch zooming based on pinch gesture direction. The default value of this property is false.
 * [`EnableDoubleTap`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~EnableDoubleTap.html) – when you enable this property, you can double tap on the chart to reset it to the original size or zoom in by one level.
 * [`EnableSelectionZooming`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~EnableSelectionZooming.html) – when this property is set to true, you can double tap and drag to select a range on the chart to be zoomed in.
 * [`EnablePanning`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~EnablePanning.html) – used to enable/disable the panning. Default value is true.
@@ -26,7 +26,7 @@ Following properties are used to configure the zooming feature,
 * [`SelectionRectStrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectStrokeDashArray.html) - used to change the stroke dashes of selection rectangle. 
 * [`SelectionRectFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectFillColor.html) - used to change the stroke fill color of selection rectangle. 
 
-N> EnableDirectionalZooming doesn't support MacOS Platform.
+N> EnableDirectionalZooming is not supported in the MacOS platform.
 
 Following code snippet illustrates how to enable zooming.
 

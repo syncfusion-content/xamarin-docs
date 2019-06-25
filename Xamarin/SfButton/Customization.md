@@ -316,14 +316,14 @@ button.ImageAlignment = Alignment.End;
 
 ![SfButton with image with icon image alignment](images/Button_iconalignment.png)
 
-## Gradient Colors
+## Gradient colors
 
-You can set the gradient as background for SfButton using the [`BackgroundGradient`]() property. It supports the following types of gradients:
+You can set the gradient colors as background of SfButton using the [`BackgroundGradient`]() property. It supports the following types of gradients:
 
-* `LinearGradient` - used to create linear gradient effects.
-* `RadialGradient` - used to create radial gradient effects.
+* `LinearGradient` - Creates linear gradient effects.
+* `RadialGradient` - Creates radial gradient effects.
 
-Click [here](https://help.syncfusion.com/xamarin/sfgradientview/customization) to know more details about gradient.
+Refer to this [documentation](https://help.syncfusion.com/xamarin/sfgradientview/customization) to learn more details about gradient.
 
 {% tabs %}
 {% highlight xaml %}
@@ -388,7 +388,7 @@ radialButton.BackgroundGradient = radialGradientBrush;
 {% endhighlight %}
 {% endtabs %}
 
-N> RadialGradient doesn't support UWP Platform.
+N> UWP platform does not support RadialGradient.
 
 ![Xamarin.Forms gradient support](images/Button_gradient.png)
 

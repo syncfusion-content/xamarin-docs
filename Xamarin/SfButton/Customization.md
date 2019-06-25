@@ -320,8 +320,8 @@ button.ImageAlignment = Alignment.End;
 
 You can set the gradient as background of SfButton using the [`BackgroundGradient`]() property. It supports the following types of gradients:
 
-* `LinearGradient` - Creates linear gradient effects.
-* `RadialGradient` - Creates radial gradient effects.
+* LinearGradient
+* RadialGradient
 
 N> UWP platform does not support RadialGradient.
 
@@ -334,25 +334,23 @@ xmlns:gradient ="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Co
 
 . . . 
 
-<button:SfButton>
+<button:SfButton Text="Linear Gradient" CornerRadius="20">
     <button:SfButton.BackgroundGradient>
         <gradient:SfLinearGradientBrush>
             <gradient:SfLinearGradientBrush.GradientStops>
-                <gradient:SfGradientStop Color="Red" Offset="0"/>
-                <gradient:SfGradientStop Color="LightGreen" Offset="0.5"/>
-                <gradient:SfGradientStop Color="Blue" Offset="1"/>
+                <gradient:SfGradientStop Color="#2F9BDF" Offset="0"/>
+                <gradient:SfGradientStop Color="#51F1F2" Offset="1"/>
             </gradient:SfLinearGradientBrush.GradientStops>
         </gradient:SfLinearGradientBrush>
     </button:SfButton.BackgroundGradient>
 </button:SfButton>
 
-<button:SfButton>
+<button:SfButton Text="Radial Gradient" CornerRadius="20">
     <button:SfButton.BackgroundGradient>
-        <gradient:SfRadialGradientBrush Radius="1">
+        <gradient:SfRadialGradientBrush Radius="1.5">
             <gradient:SfRadialGradientBrush.GradientStops>
-                <gradient:SfGradientStop Color="Red" Offset="0"/>
-                <gradient:SfGradientStop Color="LightGreen" Offset="0.5"/>
-                <gradient:SfGradientStop Color="Blue" Offset="1"/>
+                <gradient:SfGradientStop Color="#FFB57B" Offset="0"/>
+                <gradient:SfGradientStop Color="#FF5361" Offset="1"/>
             </gradient:SfRadialGradientBrush.GradientStops>
         </gradient:SfRadialGradientBrush>
     </button:SfButton.BackgroundGradient>
@@ -366,25 +364,26 @@ using Syncfusion.XForms.Graphics;
 . . .
 
 SfButton linearButton = new SfButton();
+linearButton.Text = "Linear Gradient";
+linearButton.CornerRadius = 20;
 SfLinearGradientBrush linearGradientBrush = new SfLinearGradientBrush();
 linearGradientBrush.GradientStops = new GradientStopCollection()
 {
-    new SfGradientStop(){ Color = Color.Red, Offset = 0 },
-    new SfGradientStop(){ Color = Color.LightGreen, Offset = 0.5 },
-    new SfGradientStop(){ Color = Color.Blue, Offset = 1 }
-};
-
+    new SfGradientStop(){ Color = Color.FromHex("#2F9BDF"), Offset = 0 },
+    new SfGradientStop(){ Color = Color.FromHex("#51F1F2"), Offset = 1 }
+};     
 linearButton.BackgroundGradient = linearGradientBrush;
 
 SfButton radialButton = new SfButton();
-SfRadialGradientBrush radialGradientBrush = new SfRadialGradientBrush() { Radius = 1 };
+radialButton.Text = "Radial Gradient";
+radialButton.CornerRadius = 20;
+SfRadialGradientBrush radialGradientBrush = new SfRadialGradientBrush();
+radialGradientBrush.Radius = 1.5;
 radialGradientBrush.GradientStops = new GradientStopCollection()
 {
-    new SfGradientStop(){ Color = Color.Red, Offset = 0 },
-    new SfGradientStop(){ Color = Color.LightGreen, Offset = 0.5 },
-    new SfGradientStop(){ Color = Color.Blue, Offset = 1 }
+    new SfGradientStop(){ Color = Color.FromHex("#FFB57B"), Offset = 0 },
+    new SfGradientStop(){ Color = Color.FromHex("#FF5361"), Offset = 1 }
 };
-
 radialButton.BackgroundGradient = radialGradientBrush;
 
 {% endhighlight %}

@@ -1,24 +1,24 @@
 ---
 layout: post
-title: Customization with visual states in Syncfusion SfSwitch Xamarin.Forms.
+title: Customization with visual states in Syncfusion Switch control for Xamarin.Forms.
 description: Explaining about customization based on visual states in SfSwitch.
 platform: Xamarin
 control: Switch
 documentation: ug
 ---
 
-## Customization with Visual States
+## Customization with visual states
 
-The Switch control provides options to customize the color based on the states. The below code example illustrates this customization.
+The switch control provides options to customize the color based on states. The following code example demonstrates how to customize the switch control.
 
-### Solid Colors
+### Solid colors
 
-The following properties are used to apply solid colors in the thumb, track, border and busy indicator respectively.
+The following properties are used to apply solid colors to the thumb, track, border, and busy indicator, respectively:
 
-* ThumbColor – Represents the color for the thumb.
-* ThumbBorderColor – Represents the border color for thumb.
-* TrackBorderColor – Represents the color for the border of the switch.
-* TrackColor – Represents the color for the slider.
+* ThumbColor: Represents the color for the thumb.
+* ThumbBorderColor: Represents the border color for the thumb.
+* TrackBorderColor: Represents the color for the border of the switch.
+* TrackColor: Represents the color for the slider.
 
 {% tabs %}
 
@@ -131,9 +131,9 @@ this.Content = sfSwitch;
 
 ![switch conrol with visual state customization](images/customization-with-visual-state.png)
 
-### Gradient Colors
+### Gradient colors
 
-You can also specify the range of colors in thumb and track using ThumbGradientColor and TrackGradientColor as shown in the below code example.
+You can also specify a range of colors in thumb and track using ThumbGradientColor and TrackGradientColor as demonstrates in the following code example.
 
 {% tabs %}
 
@@ -268,18 +268,18 @@ this.Content = sfSwitch;
 
 ### Sizing
 
-In switch the sizing of the thumb and the track can be controlled using the following properties.
+In the switch control, sizing of the thumb and the track can be controlled using the following properties:
 
-* TrackCornerRadius – Represents a double value to create curved corner.
-* TrackBorderWidth - Represents a double value for defining the track border width.
-* TrackWidthRequest - Represents a double value for defining the track width.
-* TrackHeightRequest - Represents double value for defining the track height.
-* ThumbBorderWidth - Represents a double value for defining the thumb border width.
-* ThumbCornerRadius - Represents a double value to create curved corner.
-* ThumbHeightRequest - Represents double value for defining the thumb height.
-* ThumbWidthRequest - Represents double value for defining the thumb width.
+* TrackCornerRadius: Represents a double value to create curved corner.
+* TrackBorderWidth: Represents a double value for defining the track border width.
+* TrackWidthRequest: Represents a double value for defining the track width.
+* TrackHeightRequest: Represents double value for defining the track height.
+* ThumbBorderWidth: Represents a double value for defining the thumb border width.
+* ThumbCornerRadius: Represents a double value to create curved corner.
+* ThumbHeightRequest: Represents double value for defining the thumb height.
+* ThumbWidthRequest: Represents double value for defining the thumb width.
 
-The following example shows the customization of the size in the track and thumb.
+The following code example demonstrates how to customize the size of the track and thumb.
 
 {% tabs %}
 
@@ -379,12 +379,12 @@ this.Content = sfSwitch;
 
 ### Images
 
-Images can also be added to enhance the visual appearance. The following properties are used to add the images.
+Images can also be added to enhance the visual appearance. The following properties are used to add the images:
 
-* TrackImageSource – Represents the image source for the track.
-* ThumbImageSource – Represents the image source for thumb.
+* TrackImageSource: Represents the image source for the track.
+* ThumbImageSource: Represents the image source for thumb.
 
-The following code example illustrates the image customization.
+The following code example demonstrates how to customize the image.
 
 {% tabs %}
 

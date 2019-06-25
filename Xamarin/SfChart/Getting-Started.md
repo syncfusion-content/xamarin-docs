@@ -23,7 +23,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 N> 
 * Install the same version of the chart NuGet in all the projects.
-* In addition you need to install [Syncfusion.Xamarin.SfChart.WPF]() package for Xamarin.Forms WPF platform only.
+* In addition, you need to install the [Syncfusion.Xamarin.SfChart.WPF]() package for Xamarin.Forms WPF platform only.
 
 **Method 2: Adding SfChart reference from toolbox**
 

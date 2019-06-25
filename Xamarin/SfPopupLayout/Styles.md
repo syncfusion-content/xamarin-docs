@@ -271,15 +271,6 @@ Refer to the following code example for customizing the overlay elements.
 {% tabs %}
 
 {% highlight xaml %}
-
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:SfPopuplayout"
-             x:Class="SfPopuplayout.MainPage"
-             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
-    
-	<ContentPage.Content>
         <sfPopup:SfPopupLayout x:Name="popUpLayout" ShowOverlayAlways="False">
             <sfPopup:SfPopupLayout.PopupView>
                 <sfPopup:PopupView>
@@ -290,46 +281,14 @@ Refer to the following code example for customizing the overlay elements.
                     </sfPopup:PopupView.PopupStyle>
                 </sfPopup:PopupView>
             </sfPopup:SfPopupLayout.PopupView>
-            <sfPopup:SfPopupLayout.Content>
-                <StackLayout x:Name="mainLayout">
-                    <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
-                </StackLayout>
-            </sfPopup:SfPopupLayout.Content>
-        </sfPopup:SfPopupLayout>
-    </ContentPage.Content>
-	
-</ContentPage>
+			</sfPopup:SfPopupLayout>
 {% endhighlight %}
 
 {% highlight c# %}
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
-using Syncfusion.XForms.PopupLayout;
-namespace SfPopuplayout
-{
-	public partial class MainPage : ContentPage
-	{
-        public MainPage()
-        {
-            InitializeComponent();
-            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
 		    popUpLayout.PopupView.PopupStyle.OverlayColor = Color.Transparent;
             popUpLayout.PopupView.PopupStyle.OverlayOpacity = 0;
             popUpLayout.ShowOverlayAlways = false;
-        }
-
-        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
-        {
-            popUpLayout.Show();
-        }
-
-    }
-}
 
 {% endhighlight %}
 

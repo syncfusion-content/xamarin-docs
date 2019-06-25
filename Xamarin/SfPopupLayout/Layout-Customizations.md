@@ -535,7 +535,7 @@ namespace GettingStarted
 
 To display ListView as the content of the popup, refer [here](https://help.syncfusion.com/xamarin/sfpopuplayout/faq#show-listview-as-a-popup).
 
-# Auto Sizing
+# AutoSizing
 
 The SfPopupLayout supports four types of [SfPopupLayout.PopupView.AutoSizeMode]. By default, the `AutoSizeMode.None` is set. You can change the AutoSizeMode by using the `SfPopupLayout.PopupView.AutoSizeMode` property.
 
@@ -572,13 +572,6 @@ The `SfPopupView` width and height will not autosizing and this is default value
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:SfPopuplayout"
-             x:Class="SfPopuplayout.MainPage"
-             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
-  <ContentPage.Content>
     <sfPopup:SfPopupLayout x:Name="popUpLayout">
         <sfPopup:SfPopupLayout.PopupView>
             <sfPopup:PopupView AutoSizeMode="None">
@@ -594,40 +587,13 @@ The `SfPopupView` width and height will not autosizing and this is default value
                 </sfPopup:PopupView.ContentTemplate>
             </sfPopup:PopupView>
         </sfPopup:SfPopupLayout.PopupView>
-        <sfPopup:SfPopupLayout.Content>
-            <StackLayout x:Name="mainLayout">
-                <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
-            </StackLayout>
-        </sfPopup:SfPopupLayout.Content>
     </sfPopup:SfPopupLayout>
-  </ContentPage.Content>
-</ContentPage>
-
-
-
+	
 {% endhighlight %}
 
 {% highlight c# %}
 
-using Syncfusion.XForms.PopupLayout;
-namespace SfPopuplayout
-{
-	public partial class MainPage : ContentPage
-	{
-        public MainPage()
-        {
-            InitializeComponent();
-            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
             popUpLayout.PopupView.AutoSizeMode = AutoSizeMode.None;
-        }
-
-        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
-        {
-            popUpLayout.Show();
-        }
-
-    }
-}
 
 {% endhighlight %}
 
@@ -641,13 +607,6 @@ The `SfPopupView` width and height will be autosizing and that size based on con
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:SfPopuplayout"
-             x:Class="SfPopuplayout.MainPage"
-             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
-  <ContentPage.Content>
     <sfPopup:SfPopupLayout x:Name="popUpLayout">
         <sfPopup:SfPopupLayout.PopupView>
             <sfPopup:PopupView AutoSizeMode="Both">
@@ -663,41 +622,14 @@ The `SfPopupView` width and height will be autosizing and that size based on con
                 </sfPopup:PopupView.ContentTemplate>
             </sfPopup:PopupView>
         </sfPopup:SfPopupLayout.PopupView>
-        <sfPopup:SfPopupLayout.Content>
-            <StackLayout x:Name="mainLayout">
-                <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
-            </StackLayout>
-        </sfPopup:SfPopupLayout.Content>
     </sfPopup:SfPopupLayout>
-  </ContentPage.Content>
-</ContentPage>
-
-
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-using Syncfusion.XForms.PopupLayout;
-namespace SfPopuplayout
-{
-	public partial class MainPage : ContentPage
-	{
-        public MainPage()
-        {
-            InitializeComponent();
-            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
             popUpLayout.PopupView.AutoSizeMode = AutoSizeMode.Both;
-        }
-
-        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
-        {
-            popUpLayout.Show();
-        }
-
-    }
-}
-
+			
 {% endhighlight %}
 
 {% endtabs %}
@@ -710,13 +642,6 @@ The `SfPopupView` height only will be autosizing and that size based on content 
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:SfPopuplayout"
-             x:Class="SfPopuplayout.MainPage"
-             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
-  <ContentPage.Content>
     <sfPopup:SfPopupLayout x:Name="popUpLayout">
         <sfPopup:SfPopupLayout.PopupView>
             <sfPopup:PopupView AutoSizeMode="Height">
@@ -732,40 +657,13 @@ The `SfPopupView` height only will be autosizing and that size based on content 
                 </sfPopup:PopupView.ContentTemplate>
             </sfPopup:PopupView>
         </sfPopup:SfPopupLayout.PopupView>
-        <sfPopup:SfPopupLayout.Content>
-            <StackLayout x:Name="mainLayout">
-                <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
-            </StackLayout>
-        </sfPopup:SfPopupLayout.Content>
     </sfPopup:SfPopupLayout>
-  </ContentPage.Content>
-</ContentPage>
-
-
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-using Syncfusion.XForms.PopupLayout;
-namespace SfPopuplayout
-{
-	public partial class MainPage : ContentPage
-	{
-        public MainPage()
-        {
-            InitializeComponent();
-            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
             popUpLayout.PopupView.AutoSizeMode = AutoSizeMode.Height;
-        }
-
-        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
-        {
-            popUpLayout.Show();
-        }
-
-    }
-}
 
 {% endhighlight %}
 
@@ -783,13 +681,6 @@ The `SfPopupView` width only will be autosizing and that size based on content t
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:SfPopuplayout"
-             x:Class="SfPopuplayout.MainPage"
-             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
-  <ContentPage.Content>
         <sfPopup:SfPopupLayout x:Name="popUpLayout">
             <sfPopup:SfPopupLayout.PopupView>
                 <sfPopup:PopupView AutoSizeMode="Width" HeaderTitle="Modal Window">
@@ -806,39 +697,13 @@ The `SfPopupView` width only will be autosizing and that size based on content t
                     </sfPopup:PopupView.ContentTemplate>
                 </sfPopup:PopupView>
             </sfPopup:SfPopupLayout.PopupView>
-            <sfPopup:SfPopupLayout.Content>
-                <StackLayout x:Name="mainLayout">
-                    <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" HorizontalOptions="FillAndExpand" />
-                </StackLayout>
-            </sfPopup:SfPopupLayout.Content>
         </sfPopup:SfPopupLayout>
-    </ContentPage.Content>
-</ContentPage>
-
-
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-using Syncfusion.XForms.PopupLayout;
-namespace SfPopuplayout
-{
-	public partial class MainPage : ContentPage
-	{
-        public MainPage()
-        {
-            InitializeComponent();
-            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
             popUpLayout.PopupView.AutoSizeMode = AutoSizeMode.Width;
-        }
-
-        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
-        {
-            popUpLayout.Show();
-        }
-    }
-}
 
 {% endhighlight %}
 

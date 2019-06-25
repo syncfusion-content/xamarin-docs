@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization with visual states in Syncfusion Switch control for Xamarin.Forms.
+title: Customization with visual states in Syncfusion Switch Xamarin.Forms
 description: Explaining about customization based on visual states in SfSwitch.
 platform: Xamarin
 control: Switch

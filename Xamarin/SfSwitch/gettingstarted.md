@@ -193,7 +193,7 @@ sfSwitch.StateChanged += SfSwitch_StateChanged;
 
 private void SfSwitch_StateChanged (object sender, EventArgs e)
 {
-   DisplayAlert("Message", "SUCESS", "OK");
+   DisplayAlert("Message", "SUCCESS", "OK");
 }
 
 {% endhighlight %}

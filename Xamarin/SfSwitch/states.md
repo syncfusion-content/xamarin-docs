@@ -61,7 +61,7 @@ sfSwitch.IsOn = false;
 
 ## Indeterminate
 
-The indeterminate state can be enabled when you need to display the work progres. The following code example demonstrates how to load the switch in indeterminate state by setting the IsOn property to null.
+The indeterminate state can be enabled when you need to display the work progress. The following code example demonstrates how to load the switch in indeterminate state by setting the IsOn property to null.
 
 {% tabs %}
 

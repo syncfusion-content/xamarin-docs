@@ -1,6 +1,6 @@
 ---
 layout: post
-title: States in Syncfusion SfSwitch Xamarin.Forms.
+title: States in Syncfusion Switch control for Xamarin.Forms.
 description: Explaining about states in SfSwitch.
 platform: Xamarin
 control: Switch
@@ -11,7 +11,7 @@ documentation: ug
 
 ### Show busy indicator to perform async action
 
-The busy indicator indicates the users that something is progress in the background. For instance, some data is being fetched from the back end. Here when user about to switch state,  StateChanging event is triggerred at we can here set the `IsBusy` property as true to show busy indicator and can perform fetching the data from the server. After fetching the data, `IsOn` property will be true or false based on validation. After validation, `IsBusy` property is set to false.
+The busy indicator indicates users that something is on progress in the background. For instance, some data is being fetched from the back end. Here, when users about to switch the state, the StateChanging event occurs, and users can set the `IsBusy` property to true to show busy indicator and perform fetching the data from the server. After fetching the data, the `IsOn` property will be set to true or false based on validation. After validation, the `IsBusy` property is set to false.
 
 {% tabs %}
 
@@ -49,9 +49,9 @@ The busy indicator indicates the users that something is progress in the backgro
 
 ![switch control with busy indicator](images/busy-indicator.png)
 
-### Change thumb color alone, based on its state and devices
+### Change thumb color alone based on its state and devices
 
-You customize the thumb color by using `ThumbColor` property in  based on its visual state and devices.
+You can customize the thumb color using the `ThumbColor` property based on its visual state and devices.
 
 {% tabs %}
 
@@ -152,10 +152,9 @@ You customize the thumb color by using `ThumbColor` property in  based on its vi
 
 ![switch control with busy indicator](images/thumb-color.png)
 
-### Change thumb color alone based on its state with Material theme for all devices?
+### Change thumb color alone based on its state with Material theme for all devices
 
-By using the `MaterialSwitchSettings`, `CupertinoSwitchSettings` and 
-`FluentSwitchSettings` properties, you can change the thumb color based on its state for all devices. 
+By using the `MaterialSwitchSettings`, `CupertinoSwitchSettings`, and `FluentSwitchSettings` properties, you can change the thumb color based on its state for all devices.
 
 {% tabs %}
 

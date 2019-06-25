@@ -104,7 +104,7 @@ rootFrame.NavigationFailed += OnNavigationFailed;
 // Add using System.Reflection;
 
 List<Assembly> assembliesToInclude = new List<Assembly>(); 
-//Now, add all the assemblies that your app uses 
+//Now, add all the assemblies that your app uses.
 assembliesToInclude.Add(typeof(SfButtonRenderer).GetTypeInfo().Assembly); 
 assembliesToInclude.Add(typeof(SfBorderRenderer).GetTypeInfo().Assembly); 
 // replaces Xamarin.Forms.Forms.Init(e); 
@@ -164,7 +164,7 @@ SfSwitch sfSwitch = new SfSwitch();
 
 ![Initializing switch conrol](images/switch.png)
 
-## Perform action based on state
+## Performing an action based on state
 
 You can switch between the states. When the state is changed the StateChanging and StateChanged event will be triggered where you can perform an action based on the current state.The StateChanging event allows you to cancel moving to a new state.
 

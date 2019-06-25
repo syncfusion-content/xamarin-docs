@@ -19,6 +19,36 @@ This displays entire dates of a particular month, by default current month will 
 
 The dates in month view can be selected by three ways such as single, multiple and range which can be modified using [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html)
 
+## Trailing and leading days
+
+The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowLeadingAndTrailingDays.html) property. The following code demonstrates how to hide the leading and trailing dates in calendar.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" ShowLeadingAndTrailingDays="True"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCalendar calendar = new SfCalendar();
+calendar.ViewMode = ViewMode.MonthView;
+calendar.ShowLeadingAndTrailingDays = true;
+this.Content = calendar;
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+![Month View in Xamarin.Forms Calendar ](images/Xamarin.Forms-Calendar-HideLeadingTrailing.png)
+
+N>
+* The OnMonthCellLoaded event is triggered for the current month dates.
+* The VisibleDates in the MonthChanged event will return the current month dates.
+
+
 ## Month view customization
 
 You can customize the calendar view in monthView mode by using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html). 
@@ -80,12 +110,11 @@ this.Content = calendar;
 N> Similar way there are many settings available to modify Text and Background colors of month view in `MonthViewSettings` class.
 N> To disable the current day selection, use `TodaySelectionBackgroundColor` color as Transparent.
 
-## Today border color customization
+### Month cell border color customization
 
 You can customize the border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
 
-* The border color of month cell can be customized using the [BorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BorderColor.html) property.By enabling [CellGridOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellGridOptions.html) property which used to display the month cell lines.
-* The border color of current day can be customized using the [TodayBorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~TodayBorderColor.html) property, and it is applicable for both Fill and Circle SelectionShape.
+* The border color of month cells can be customized using the [BorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~BorderColor.html) property, and the lines of month cells can be enabled using the [CellGridOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellGridOptions.html) property.
 
 {% tabs %}	
 	
@@ -95,7 +124,6 @@ You can customize the border color of calendar month cell using [MonthViewSettin
             <syncfusion:SfCalendar.MonthViewSettings>
                   <syncfusion:MonthViewSettings 
 	                   BorderColor ="#ff0000"/>                      
-                       TodayBorderColor="#ff0000"/>
            </syncfusion:SfCalendar.MonthViewSettings>
 </syncfusion:SfCalendar>  
 
@@ -106,6 +134,36 @@ You can customize the border color of calendar month cell using [MonthViewSettin
 SfCalendar calendar = new SfCalendar();    
 MonthViewSettings monthViewSettings = new MonthViewSettings();
 monthViewSettings.BorderColor = Color.FromHex("#ff0000");
+calendar.MonthViewSettings = monthViewSettings;
+this.Content = calendar;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Today border color customization
+
+You can customize the today border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
+
+* The border color of current day can be customized using the [TodayBorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~TodayBorderColor.html) property, and it is applicable for both Fill and Circle SelectionShape.
+
+{% tabs %}	
+	
+{% highlight xaml %}
+
+<syncfusion:SfCalendar x:Name="calendar">
+            <syncfusion:SfCalendar.MonthViewSettings>
+                  <syncfusion:MonthViewSettings 
+                       TodayBorderColor="#ff0000"/>
+           </syncfusion:SfCalendar.MonthViewSettings>
+</syncfusion:SfCalendar>  
+
+{% endhighlight %}
+
+{% highlight c# %}
+	
+SfCalendar calendar = new SfCalendar();    
+MonthViewSettings monthViewSettings = new MonthViewSettings();
 monthViewSettings.TodayBorderColor = Color.FromHex("#ff0000");
 calendar.MonthViewSettings = monthViewSettings;
 this.Content = calendar;
@@ -141,28 +199,6 @@ calendar.NumberOfWeeksInView = 3;
 
 {% endtabs %}
 
-### Customize trailing and leading days
-
-The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowLeadingAndTrailingDays.html) property. The following code demonstrates how to hide the leading and trailing dates in calendar.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" ShowLeadingAndTrailingDays="True"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCalendar calendar = new SfCalendar();
-calendar.ViewMode = ViewMode.MonthView;
-calendar.ShowLeadingAndTrailingDays = true;
-this.Content = calendar;
- 
-{% endhighlight %}
-
-{% endtabs %}
 
 ![Month View in Xamarin.Forms Calendar ](images/Xamarin.Forms-Calendar-HideLeadingTrailing.png)
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: States in Syncfusion SfSwitch Xamarin.Forms.
-description: Explaining about states in SfSwitch.
+title: States in Syncfusion SfSwitch Xamarin.Forms
+description: Explaining about states in SfSwitch
 platform: Xamarin
 control: Switch
 documentation: ug
@@ -9,11 +9,11 @@ documentation: ug
 
 ## States
 
-Switch allows you to configure the states as explained in the below sections.
+Switch allows you to configure the states as explained in the following sections.
 
 ### On
 
-You can switch to on state by tapping the switch button or by setting the value as shown in the below code example.
+You can switch to on state by tapping the switch button or by setting a value as demonstrated in the following code example.
 
 {% tabs %}
 
@@ -33,11 +33,11 @@ sfSwitch.IsOn=true;
 
 {% endtabs %}
 
-![switch control displaying on state](images/on.png)
+![switch control is displaying on state](images/on.png)
 
 ### Off
 
-This is the default state. You can switch to off state by tapping the switch button or by defining as shown in the below code example.
+This is the default state. You can switch to off state by tapping the switch button or by defining as demonstrated in the following code example.
 
 {% tabs %}
 
@@ -61,7 +61,7 @@ sfSwitch.IsOn = false;
 
 ### Indeterminate
 
-The indeterminate state can be enabled when you need to display the work progress .The below code example demonstrates loading the switch in indeterminate state by setting IsOn property value as null.
+The indeterminate state can be enabled when you need to display the work progres. The following code example demonstrates how to load the switch in indeterminate state by setting the IsOn property to null.
 
 {% tabs %}
 
@@ -83,13 +83,13 @@ sfSwitch.AllowIndeterminateState = true;
 
 {% endtabs %}
 
-![switch conrol displaying indeterminate state](images/intermediate.png)
+![switch conrol is displaying indeterminate state](images/intermediate.png)
 
-N> By default there will be only two states, on and off.
+N> By default, the switch control has only two states: on and off.
 
 ### Disabled On
 
-You can switch to on state by tapping the switch button or by setting the value as shown in the below code example.
+You can switch to on state by tapping the switch button or by setting a value as demonstrated in the following code example.
 
 {% tabs %}
 
@@ -109,11 +109,11 @@ sfSwitch.IsOn=true;
 
 {% endtabs %}
 
-![switch control displaying on state](images/on.png)
+![switch control is displaying on state](images/on.png)
 
 ### Disbaled Off
 
-You can switch to off state by tapping the switch button or by defining as shown in the below code example.
+You can switch to off state by tapping the switch button or by defining as demonstrated in the following code example.
 
 {% tabs %}
 
@@ -133,11 +133,11 @@ sfSwitch.IsOn = false;
 
 {% endtabs %}
 
-![switch control displaying off state](images/off.png)
+![switch control is displaying off state](images/off.png)
 
-### Disabled Indeterminate
+### Disabled indeterminate
 
-The indeterminate state can be enabled when you need to display the work progress .The below code example demonstrates loading the switch in indeterminate state by setting IsOn property value as null.
+The indeterminate state can be enabled when you need to display the work progress. The following code example demonstrates how to load the switch in indeterminate state by setting the IsOn property to null.
 
 {% tabs %}
 
@@ -159,4 +159,4 @@ sfSwitch.AllowIndeterminateState = true;
 
 {% endtabs %}
 
-![switch conrol displaying indeterminate state](images/intermediate.png)
+![switch conrol is displaying indeterminate state](images/intermediate.png)

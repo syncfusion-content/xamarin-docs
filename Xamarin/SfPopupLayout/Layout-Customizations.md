@@ -535,7 +535,7 @@ namespace GettingStarted
 
 To display ListView as the content of the popup, refer [here](https://help.syncfusion.com/xamarin/sfpopuplayout/faq#show-listview-as-a-popup).
 
-# Auto-sizing
+# Auto Sizing
 
 The SfPopupLayout supports four types of [SfPopupLayout.PopupView.AutoSizeMode]. By default, the `AutoSizeMode.None` is set. You can change the AutoSizeMode by using the `SfPopupLayout.PopupView.AutoSizeMode` property.
 

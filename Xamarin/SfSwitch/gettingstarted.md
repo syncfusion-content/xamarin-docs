@@ -17,7 +17,7 @@ This section explains you the steps to add the SfSwitch control with basic funct
 * Initializing SfSwitch
 * Perform an action based on state
 
-### Adding  SfSwitch reference
+## Adding SfSwitch reference
 
 You can add SfSwitch reference using one of the below methods.
 
@@ -54,7 +54,7 @@ UWP<br/><br/></td><td>
 Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/><br/></td></tr>
 </table>
 
-### Launching an application on each platform with SfSwitch
+## Launching an application on each platform with SfSwitch
 
 To use the SfSwitch inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
 
@@ -64,7 +64,8 @@ To launch the switch in iOS, call the SfSwitchRenderer.Init() method in the Fini
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight c# %}
+
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 {
@@ -72,8 +73,6 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 global::Xamarin.Forms.Forms.Init();
 
 Syncfusion.XForms.iOS.Buttons.SfSwitchRenderer.Init();
-
-
 
 LoadApplication(new App());
 
@@ -94,7 +93,8 @@ To deploy the switch in Release mode, you need to initialize the button assembli
 
 {% tabs %}
 
-{% highlight xaml %}
+{% highlight c# %}
+
 protected override void OnLaunched(LaunchActivatedEventArgs e) 
 
 { 
@@ -105,7 +105,10 @@ rootFrame.NavigationFailed += OnNavigationFailed;
 
 // Add using System.Reflection;
 
-List<Assembly> assembliesToInclude = new List<Assembly>(); //Now, add all the assemblies that your app uses assembliesToInclude.Add(typeof(SfButtonRenderer).GetTypeInfo().Assembly); assembliesToInclude.Add(typeof(SfBorderRenderer).GetTypeInfo().Assembly); // replaces Xamarin.Forms.Forms.Init(e); 
+List<Assembly> assembliesToInclude = new List<Assembly>(); 
+//Now, add all the assemblies that your app uses.
+assembliesToInclude.Add(typeof(SfBorderRenderer).GetTypeInfo().Assembly); 
+// replaces Xamarin.Forms.Forms.Init(e); 
 
 Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 
@@ -122,7 +125,7 @@ Xamarin.Forms.Forms.Init(e, assembliesToInclude);
 
 The Android platform does not require any additional configuration to render the chart.
 
-### Initializing SfSwitch
+## Initializing SfSwitch
 
 Import the Button namespace as shown below in your respective Page,
 
@@ -148,7 +151,7 @@ Then initialize the switch control as shown below using the code example.
 
 {% highlight xaml %}
 
-<syncfusion:SfSwitch /> 
+    <syncfusion:SfSwitch /> 
 
 {% endhighlight %}
 
@@ -160,7 +163,9 @@ SfSwitch sfSwitch = new SfSwitch();
 
 {% endtabs %}
 
-### Perform action based on state
+![Initializing switch conrol](images/switch.png)
+
+## Performing an action based on state
 
 You can switch between the states. When the state is changed the StateChanging and StateChanged event will be triggered where you can perform an action based on the current state.The StateChanging event allows you to cancel moving to a new state.
 
@@ -170,8 +175,7 @@ The following code example displays a message box when switched to off state whe
 
 {% highlight xaml %}
 
-
-<syncfusion:SfSwitch StateChanged="SfSwitch_StateChanged" />
+    <syncfusion:SfSwitch StateChanged="SfSwitch_StateChanged" />
 
 {% endhighlight %}
 
@@ -179,14 +183,18 @@ The following code example displays a message box when switched to off state whe
 
 sfSwitch.StateChanged += SfSwitch_StateChanged;
 
+{% endhighlight %}
+
+{% endtabs %}
+
+{% tabs %}
+
+{% highlight c# %}
+
 private void SfSwitch_StateChanged (object sender, EventArgs e)
-
 {
-
-DisplayAlert("Message", "SUCESS", "OK");
-
+   DisplayAlert("Message", "SUCCESS", "OK");
 }
-
 
 {% endhighlight %}
 

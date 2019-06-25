@@ -9,9 +9,8 @@ documentation: ug
 
 ## Visual States
 
-The CheckBox visual can be customized through `VisualStates`. The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) control have the following four visual states:
+The CheckBox visual can be customized through `VisualStates`. The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) control have the following three visual states:
 
-* Disabled
 * Checked
 * Unchecked
 * Intermediate
@@ -40,12 +39,6 @@ The CheckBox visual can be customized through `VisualStates`. The [`SfCheckBox`]
                     <Setter Property="Text" Value="Intermediate State"/>
                 </VisualState.Setters>
             </VisualState>
-            <VisualState x:Name="Disabled">
-                <VisualState.Setters>
-                    <Setter Property="TextColor" Value="#1947c3"/>
-                    <Setter Property="BackgroundColor" Value="#7b7f89"/>
-                </VisualState.Setters>
-            </VisualState>
         </VisualStateGroup>
     </VisualStateManager.VisualStateGroups>
 </buttons:SfCheckBox>
@@ -72,14 +65,6 @@ VisualState uncheckedState = new VisualState
 uncheckedState.Setters.Add(new Setter { Property = SfCheckBox.TextColorProperty, Value = Color.FromHex("#ea3737") });
 uncheckedState.Setters.Add(new Setter { Property = SfCheckBox.UncheckedColorProperty, Value = Color.FromHex("#ea3737") });
 
-VisualState disabledState = new VisualState
-{
-    Name = "Disabled"
-};
-
-disabledState.Setters.Add(new Setter { Property = SfCheckBox.TextColorProperty, Value = Color.FromHex("#1947c3") });
-disabledState.Setters.Add(new Setter { Property = SfCheckBox.BackgroundColorProperty, Value = Color.FromHex("#7b7f89") });
-
 VisualState intermediateState = new VisualState
 {
     Name = "Intermediate"
@@ -90,7 +75,6 @@ intermediateState.Setters.Add(new Setter { Property = SfCheckBox.TextProperty, V
 commonStateGroup.States.Add(checkedState);
 commonStateGroup.States.Add(uncheckedState);
 commonStateGroup.States.Add(intermediateState);
-commonStateGroup.States.Add(disabledState);
 
 visualStateGroupList.Add(commonStateGroup);
 VisualStateManager.SetVisualStateGroups(checkBox, visualStateGroupList);
@@ -106,6 +90,3 @@ Visual state unchecked:
 
 Visual state intermediate:
 ![SfCheckBox with visual state of intermediate state](images/CheckBox_VisualState_Intermediate.png)
-
-Visual state disabled:
-![SfCheckBox with visual state of disabled state](images/CheckBox_VisualState_Disabled.png)

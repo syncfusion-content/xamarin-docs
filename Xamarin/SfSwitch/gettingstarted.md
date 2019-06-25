@@ -17,7 +17,7 @@ This section explains you the steps to add the SfSwitch control with basic funct
 * Initializing SfSwitch
 * Perform an action based on state
 
-## Adding  SfSwitch reference
+## Adding SfSwitch reference
 
 You can add SfSwitch reference using one of the below methods.
 

@@ -275,4 +275,4 @@ Refer the following code example for customizing the overlay opacity and backgro
 
 Executing the above codes renders the following output in an Android device.
 
-![Popup with overlay customization](PopupLayout_images/PopupView_Overlay.jpg)
+![Popup with overlay customization](PopupLayout_images/PopupView_Overlay.png)

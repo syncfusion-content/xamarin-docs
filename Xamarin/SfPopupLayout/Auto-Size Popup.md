@@ -46,6 +46,6 @@ popUpLayout.PopupView.AutoSizeMode = AutoSizeMode.Height;
 
 Executing the above codes renders the following output in an Android device.
 
-![Auto height in Xamarin.Forms Popup](PopupLayout_images/PopupView_AutoSize_Height.jpg)
+![Auto height in Xamarin.Forms Popup](PopupLayout_images/PopupView_AutoSize_Height.png)
 
 Sample Link: You can download the above sample code by clicking [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoSize_SfPopuplayout1703576210).

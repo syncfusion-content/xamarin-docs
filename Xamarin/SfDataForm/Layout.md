@@ -158,8 +158,6 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Changing label position of data form fields in Xamarin.Forms DataForm](SfDataForm_images/LabelPosition_DataFormItem.png)
-
 ## Loading images for label
 
 You can load image instead of label by defining attribute or by handling the `AutoGeneratingDataFormItem` event.

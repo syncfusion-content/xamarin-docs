@@ -1,15 +1,13 @@
 ---
 layout: post
 title: Right to left(RTL) | SfDataForm | Xamarin.Forms | Syncfusion
-description: Layout direction from Right to Left.
+description: Describes how dataform works on right-to-left localization.
 platform: xamarin
 control: SfDataForm
 documentation: UG
 ---
 
 # Right to left(RTL)
-
-## Overview
 
 The data form supports linear and grid layouts. The DataFormLayoutManager creates the [DataFormItemView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemView.html), [DataFormGroupItemView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormGroupItemView.html), and manages layout of label, editor, and validation label.
 

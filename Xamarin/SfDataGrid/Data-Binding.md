@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding | SfDataGrid | Xamarin | Syncfusion
+title: Data Binding | SfDataGrid | Xamarin.Forms | Syncfusion
 description: Data Binding and different sources that can be bound to Xamarin.Forms DataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Data Binding
+# Data Binding in Xamarin.Forms SfDataGrid
 
 The SfDataGrid is bound to an external data source to display the data. It supports data sources such as [List](https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx), [ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604(v=vs.110).aspx), and so on. The [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ItemsSource.html) property helps to bind this control with collection of objects.
 

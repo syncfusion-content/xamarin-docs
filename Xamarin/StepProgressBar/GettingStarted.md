@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Xamarin.Forms Step Progress Bar
-description: A quick tour to initial users on Syncfusion step progress bar control for Xamarin.Forms platform.
+title: Getting Started for Syncfusion Xamarin.Forms StepProgressBar
+description: A quick tour to initial users on Syncfusion StepProgressBar control for Xamarin.Forms platform.
 platform: xamarin
 control: StepProgressBar
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to work with the step progress bar control for Xamarin.Forms.
+This section explains the steps required to work with the StepProgressBar control for Xamarin.Forms.
 
 ## Adding SfStepProgressBar reference
 
@@ -29,7 +29,7 @@ Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the S
 
 **Method 3: Adding SfStepProgressBar assemblies manually from the installed location**
 
-If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
+If you prefer to manually reference the assemblies instead referencing from the NuGet, add the following assemblies in respective projects.
 
 Location: {Installed location}/{version}/Xamarin/lib
 
@@ -52,19 +52,19 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To learn more about obtaining Syncfusion components, refer to [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer the [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to learn about registering Syncfusion license key in your Xamarin application to use Syncfusion components.
 
-## Launching the application on each platform with step progress bar
+## Launching the application on each platform with StepProgressBar
 
-To use the step progress bar in an application, each platform requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
+To use the StepProgressBar in an application, each platform requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
 
-N> If you are adding the references from toolbox, this step is not needed.
+N> If you are adding the references from toolbox, this step is not required.
 
 ### iOS
 
-To launch the step progress bar in iOS, call the 'SfLinearProgressBarRenderer.Init()' and 'SfBorderRenderer.Init()'  in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
+To launch the StepProgressBar in iOS, call the 'SfLinearProgressBarRenderer.Init()' and 'SfBorderRenderer.Init()' in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
 
 {% highlight C# %} 
 
@@ -87,7 +87,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To launch the step progress bar in UWP, initialize the progress bar assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with progress bar in `Release` mode in UWP platform.
+To launch the StepProgressBar in UWP, initialize the progress bar assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with progress bar in `Release` mode in UWP platform.
 
 {% highlight C# %} 
 
@@ -115,10 +115,10 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ### Android
 
-The Android platform does not require any additional configuration to render the step progress bar.
+The Android platform does not require any additional configuration to render the StepProgressBar.
 
 
-## Initializing the step progress bar
+## Initializing the StepProgressBar
 
 Import the progress bar namespace as demonstrated in the following code sample in your respective page.
 
@@ -137,7 +137,7 @@ using Syncfusion.XForms.ProgressBar;
 
 {% endtabs %} 
 
-Then initialize SfStepProgressBar as shown in the following code:
+Then, initialize the SfStepProgressBar as shown in the following code:
 
 {% tabs %} 
 
@@ -163,7 +163,7 @@ public MainPage()
 
     Grid mainGrid = new Grid();
 
-    // Create Step Progress Bar control
+    // Create StepProgressBar control
     SfStepProgressBar stepProgressBar = new SfStepProgressBar();
     stepProgressBar.VerticalOptions = LayoutOptions.Center;
     stepProgressBar.HorizontalOptions = LayoutOptions.Center;
@@ -183,4 +183,4 @@ public MainPage()
 
 {% endtabs %} 
 
-The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted2043475775) link.
+The complete Getting Started sample is available in this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted2043475775).

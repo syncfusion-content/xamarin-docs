@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mutiple / Multi-level column headers in Xamamrin.Forms DataGrid | SfDataGrid | Xamarin | Syncfusion
+title: Mutiple/Multi-level column headers | SfDataGrid | Xamarin | Syncfusion
 description: Display and customize multiple / multi-level column headers in Xamarin.Forms DataGrid.
 platform: xamarin
 control: SfDataGrid
@@ -159,7 +159,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs  e)
 ## Appearance
 ### Font customization
 
-Customize the FontSize, FontFamily and the FontAttiribute of the text displayed in stacked header column using the `StackedColumn.TextSize`, `StackedColumn.Font` and `StackedColumn.FontAttribute` property respectively. The default font size and font attribute are 14 and normal respectively.
+Customize the FontSize, FontFamily and the FontAttribute of the text displayed in stacked header column using the `StackedColumn.TextSize`, `StackedColumn.Font` and `StackedColumn.FontAttribute` property respectively. The default font size and font attribute are 14 and normal respectively.
 
 Refer the below code snippet to customize the font of the text in stacked columns.
 

@@ -26,14 +26,20 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <td align="center" >
 <p>MonthView</p><br> 
 <p>YearView</p><br> 
+<p>Decade</p><br> 
+<p>Century/p><br> 
 </td>
 <td align="center">
 <p>MonthView</p><br> 
 <p>YearView</p><br> 
+<p>Decade</p><br> 
+<p>Century/p><br> 
 </td>
 <td align="center">
 <p>MonthView</p><br>
 <p>YearView</p><br>
+<p>Decade</p><br> 
+<p>Century/p><br> 
 </td>
 <td align="center">
 <p>ViewMode</p>

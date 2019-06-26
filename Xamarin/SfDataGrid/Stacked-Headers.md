@@ -232,7 +232,7 @@ public class Dark : DataGridStyle
 
     public override Color GetStackedHeaderBackgroundColor(int rowIndex)
     {
-        return Color.FromRgb(15, 15, 15);
+        return Color.DarkGoldenrod;
     }
 
     public override Color GetStackedHeaderForegroundColor(int rowIndex)
@@ -242,7 +242,7 @@ public class Dark : DataGridStyle
 } 
 {% endhighlight %}
 
-![Customize appearance of stacked header row](SfDataGrid_images/StackedHeader.png)
+![Customize appearance of stacked header row](SfDataGrid_images/StackedHeader_Background_Foreground.jpeg)
 
 ### Conditional styling
 
@@ -260,17 +260,17 @@ public class Dark : DataGridStyle
     {
         if (rowIndex == 0)
         {
-            return Color.FromRgb(15, 15, 15);
+            return Color.Black;
         }
-        else
+        else if (rowIndex == 1)
         {
-            return Color.FromRgb(43, 43, 43);
+            return Color.DarkOliveGreen;
         }
     }
 
     public override Color GetStackedHeaderForegroundColor(int rowIndex)
     {
-        if (rowIndex == 0)
+        if (rowIndex == 0 || rowIndex == 1)
         {
             return Color.FromRgb(255, 255, 255);
         }
@@ -282,7 +282,7 @@ public class Dark : DataGridStyle
 } 
 {% endhighlight %}
 
-![Customize background of stacked header row based on index](SfDataGrid_images/StackedHeader.png)
+![Customize background of stacked header row based on index](SfDataGrid_images/StackedHeader_Conditional.jpeg)
 
 ## Loading template in stacked column
 
@@ -290,35 +290,84 @@ The SfDataGrid allows you to load any desired view inside a `StackedColumn` usin
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:StackedHeaderRow>
-    <syncfusion:StackedHeaderRow.StackedColumns>
-        <syncfusion:StackedColumn 
-                ChildColumns="OrderID,OrderDate,CustomerID,ContactName"
-                Text="Order Shipment Details"
-                MappingName="SalesDetails">
-                <syncfusion:StackedColumn.Template>
-                    <DataTemplate>
-                        <Label Text="Order Details" BackgroundColor="Red"/>
-                    </DataTemplate>
-                </syncfusion:StackedColumn.Template>
-        </syncfusion:StackedColumn>  
-    </syncfusion:StackedHeaderRow.StackedColumns>
-</syncfusion:StackedHeaderRow>
+     <syncfusion:SfDataGrid.StackedHeaderRows>
+            <syncfusion:StackedHeaderRow>
+                <syncfusion:StackedHeaderRow.StackedColumns>
+                    <syncfusion:StackedColumn
+                            ChildColumns="OrderID,OrderDate"
+                            Text="Order Details"
+                            MappingName="OrderDetails"
+                            FontAttribute="Bold"
+                            TextAlignment="Center"
+                            />
+                    <syncfusion:StackedColumn
+                            ChildColumns="CustomerID,ContactName"
+                            MappingName="CustomerDetails"
+                            >
+                            <syncfusion:StackedColumn.Template>
+                            <DataTemplate>
+                                <Grid BackgroundColor="MediumPurple">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="50"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Text="Customer Details" TextColor="White" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="0"/>
+                                    <Image Source="customer_details.png"  VerticalOptions="Center" HorizontalOptions="Start" Aspect="AspectFit" Grid.Column="1"/>
+                                </Grid>
+                            </DataTemplate>
+                        </syncfusion:StackedColumn.Template>
+                     </syncfusion:StackedColumn>
+                </syncfusion:StackedHeaderRow.StackedColumns>
+            </syncfusion:StackedHeaderRow>
+      </syncfusion:SfDataGrid.StackedHeaderRows>
 {% endhighlight %}
 {% highlight c# %}
-var stackedHeaderRow = new StackedHeaderRow();
-stackedHeaderRow.StackedColumns.Add(new StackedColumn()
+var stackedHeaderRow1 = new StackedHeaderRow();
+stackedHeaderRow1.StackedColumns.Add(new StackedColumn()
 {
-    ChildColumns = "OrderID" + "," + "OrderDate" + "," + "CustomerID" + "," + "ContactName",
-    Text = "Order Shipment Details",
-    MappingName = "SalesDetails",
-    Template = new DataTemplate(()=>{
-        return new Label() { BackgroundColor = Color.Red, Text = " Order Details" };
-    })
+	ChildColumns = "OrderID" + "," + "OrderDate",
+	Text = "Order Details",
+	MappingName = "OrderDetails",
+	FontAttribute = FontAttributes.Bold,
+	TextAlignment = TextAlignment.Center
 });
-dataGrid.StackedHeaderRows.Add(stackedHeaderRow);
+stackedHeaderRow1.StackedColumns.Add(new StackedColumn()
+{
+	ChildColumns = "CustomerID" + "," + "ContactName",
+	MappingName = "CustomerDetails",
+    Template = new DataTemplate(() => 
+    {
+        var gridView = new Grid()
+        {
+            BackgroundColor = Color.MediumPurple,
+            ColumnDefinitions = new ColumnDefinitionCollection()
+        {
+            new ColumnDefinition{Width = new GridLength(1, GridUnitType.Star) },
+            new ColumnDefinition{ Width = 50}
+        }
+        };
+        var imageView = new Image()
+        {
+            Source = ImageSource.FromFile("customer_details.png"),
+            Aspect = Aspect.AspectFit,
+            VerticalOptions = LayoutOptions.Center,
+            HorizontalOptions = LayoutOptions.Start
+        };
+        var label = new Label()
+        {
+            Text = "Customer Details",
+            TextColor = Color.White,
+            VerticalTextAlignment = TextAlignment.Center,
+            HorizontalTextAlignment = TextAlignment.Center
+        };
+        gridView.Children.Add(label, 0, 0);
+        gridView.Children.Add(imageView, 1, 0);
+        return gridView;
+    }) 
+});
+this.dataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 {% endhighlight %}
 {% endtabs %}
 
-![Load template in stacked header rows](SfDataGrid_images/StackedHeader.png)
+![Load template in stacked header rows](SfDataGrid_images/StackedHeader_Template.jpeg)
 

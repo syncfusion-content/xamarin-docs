@@ -243,40 +243,20 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ![Popup with border customization](PopupLayout_images/BorderCustomization.png)
 
-## Overlay customization
+## Styling overlay background
 
-The SfPopupLayout allows customizing the overlay appearance with various overlay customizations as follows:
+The SfPopupLayout allows customizing the opacity and the background color of the overlay using the `SfPopupLayout.PopupView.PopupStyle.OverlayColor` and `SfPopupLayout.PopupView.PopupStyle.OverlayOpacity` properties respectively.
 
-<table>
-<tr>
-<th> Property </th>
-<th> Description </th>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.OverlayColor]' }} </td>
-<td>  Gets or sets the overlay color for the PopupView.</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.PopupView.PopupStyle.OverlayOpacity]'}} </td>
-<td>  Gets or sets the overlay opacity for the PopupView. Default value is 0.5</td>
-</tr>
-<tr>
-<td> {{'[SfPopupLayout.ShowOverlayAlways]'}} </td>
-<td>  Shows the overlay always. Default value is false.</td>
-</tr>
-</table>
-
-Refer to the following code example for customizing the overlay elements.
+Refer the following code example for customizing the overlay opacity and background color.
 
 {% tabs %}
 
 {% highlight xaml %}
-        <sfPopup:SfPopupLayout x:Name="popUpLayout" ShowOverlayAlways="False">
+        <sfPopup:SfPopupLayout x:Name="popUpLayout">
             <sfPopup:SfPopupLayout.PopupView>
                 <sfPopup:PopupView>
                     <sfPopup:PopupView.PopupStyle>
-                        <sfPopup:PopupStyle OverlayColor="Transparent" OverlayOpacity="0">
-
+                        <sfPopup:PopupStyle OverlayColor="Red" OverlayOpacity="0.2">
                         </sfPopup:PopupStyle>
                     </sfPopup:PopupView.PopupStyle>
                 </sfPopup:PopupView>
@@ -286,16 +266,13 @@ Refer to the following code example for customizing the overlay elements.
 
 {% highlight c# %}
 
-		    popUpLayout.PopupView.PopupStyle.OverlayColor = Color.Transparent;
-            popUpLayout.PopupView.PopupStyle.OverlayOpacity = 0;
-            popUpLayout.ShowOverlayAlways = false;
+		    popUpLayout.PopupView.PopupStyle.OverlayColor = Color.Red;
+            popUpLayout.PopupView.PopupStyle.OverlayOpacity = 0.2;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Executing the above codes renders the following output in Android devices respectively.
+Executing the above codes renders the following output in an Android device.
 
 ![Popup with overlay customization](PopupLayout_images/PopupView_Overlay.jpg)
-
-You can download a readily runnable sample for the above code snippet. [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Overlay_SfPopuplayout1893827201).

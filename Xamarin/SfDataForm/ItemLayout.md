@@ -23,7 +23,7 @@ We have enabled the floating label support for the below listed editors based on
 * Picker editor
 
 
-## LayoutOptions
+## Layout options
 By default, the dataform arranges the editors and their labels corresponding to fields in stack layout. However, in order to enable floating label ,you need to use the `LayoutOptions` in DataForm or in each `DataFormItem` as `TextInputLayout` to layout the editor inside text input layout, which comprised of a floating label, editor view.
 
 {% tabs %}
@@ -70,7 +70,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-## Container Type
+## Container types
 Containers enhance the perspective of editor views as provide some contrast between editor view and assistive components.
 
 By default, the container type is `Outlined`. By choosing `ContainerType` property in DataForm or in `DataFormItem` to modify the container type to `Filled` or `None`.

@@ -24,7 +24,7 @@ We have enabled the floating label support for the below listed editors based on
 
 
 ## LayoutOptions
-By default, the data form arranges the editors and their labels corresponding to fields in stack layout. However, in order to enable floating label ,you need to use the `LayoutOptions` in DataForm or in each `DataFormItem` as `TextInputLayout` to layout the editor inside text input layout, which comprised of a floating label, editor view.
+By default, the dataform arranges the editors and their labels corresponding to fields in stack layout. However, in order to enable floating label ,you need to use the `LayoutOptions` in DataForm or in each `DataFormItem` as `TextInputLayout` to layout the editor inside text input layout, which comprised of a floating label, editor view.
 
 {% tabs %}
 {% highlight xaml %}       
@@ -129,7 +129,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endtabs %}
 
 ## Customizing floating label layout
-Data form control provides user-friendly options for text input layout customization. In this section, it is explained how to customize the text input layout for each item in the data form through `TextInputLayoutSettings` available in DataForm control including leading view , trailing view and deals with allocating space for assistive labels.
+Dataform control provides user-friendly options for text input layout customization. In this section, it is explained how to customize the text input layout for each item in the dataform through `TextInputLayoutSettings` available in DataForm control including leading view , trailing view and deals with allocating space for assistive labels.
 
 ### Leading view
 By setting the LeadingView property, a label can be added as a leading icon for editor view. By setting the `LeadingViewPosition` property, it can be placed either inside or outside the container. It's positioned outside by default.

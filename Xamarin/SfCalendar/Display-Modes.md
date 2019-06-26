@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessing View modes in Syncfusion Calendar control for Xamarin.Forms
-description: Learn how to set month view and year view in Calendar
+description: Learn how to set month view,year view,decade view,century view in Calendar
 platform: Xamarin
 control: Calendar
 documentation: ug

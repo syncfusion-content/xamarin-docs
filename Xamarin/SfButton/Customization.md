@@ -320,8 +320,8 @@ button.ImageAlignment = Alignment.End;
 
 You can set the gradient as background of SfButton using the [`BackgroundGradient`]() property. It supports the following types of gradients:
 
-* LinearGradient
-* RadialGradient
+* Linear Gradient
+* Radial Gradient
 
 N> UWP platform does not support RadialGradient.
 

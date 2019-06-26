@@ -9,7 +9,7 @@ documentation: ug
 
 # View of SfCalendar
 
-`SfCalendar` control provides two types of views to display dates such as month view and year view. It can be assigned to the `SfCalendar` control by using [ViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ViewMode.html) property.Based on the user’s preference `SfCalendar` can be viewed in any of the available two types.
+`SfCalendar` control provides 4 different types of views such month, year, decade and century.It can be assigned to the `SfCalendar` control by using [ViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ViewMode.html) property.
 
 N> By default SfCalendar control is assigned with month view. 
 
@@ -51,7 +51,7 @@ N>
 
 ## Month view customization
 
-You can customize the calendar view in monthView mode by using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html). 
+You can customize the calendar month view by using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html). 
 
 * Current day text color can be modified using [TodayTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~TodayTextColor.html).
 * The day header format, day font size, day header font size can be modified using [DayHeaderFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFormat.html), [DayFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayFontSize.html), [DayHeaderFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFontSize.html)
@@ -123,7 +123,7 @@ You can customize the border color of calendar month cell using [MonthViewSettin
 <syncfusion:SfCalendar x:Name="calendar">
             <syncfusion:SfCalendar.MonthViewSettings>
                   <syncfusion:MonthViewSettings 
-	                   BorderColor ="#ff0000"/>                      
+	                   BorderColor ="#ff0000" CellGridOptions="Both"/>                      
            </syncfusion:SfCalendar.MonthViewSettings>
 </syncfusion:SfCalendar>  
 
@@ -134,6 +134,7 @@ You can customize the border color of calendar month cell using [MonthViewSettin
 SfCalendar calendar = new SfCalendar();    
 MonthViewSettings monthViewSettings = new MonthViewSettings();
 monthViewSettings.BorderColor = Color.FromHex("#ff0000");
+monthViewSettings.CellGridOptions = CellGridOptions.Both;
 calendar.MonthViewSettings = monthViewSettings;
 this.Content = calendar;
 

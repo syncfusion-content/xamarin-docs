@@ -18,7 +18,7 @@ Essential Calendar can be used in various scenarios like ticket booking, events 
 
 ## Key Features
 
-* `Built-in Views` – A multi-view representation to display dates in month or year view layout.
+* `Built-in Views` – A multi-view representation to display dates in month,year,decade,century view based on the view mode.
 
 * `Selection` – Enables users to select one or multiple dates.
 

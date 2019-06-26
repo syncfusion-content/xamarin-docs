@@ -9,7 +9,7 @@ documentation: ug
 
 ## Visual States
 
-The CheckBox visual can be customized through `VisualStates`. The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) control have the following three visual states:
+The visual of CheckBox can be customized using `VisualStates`. The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) control contains the following three visual states:
 
 * Checked
 * Unchecked
@@ -82,11 +82,11 @@ VisualStateManager.SetVisualStateGroups(checkBox, visualStateGroupList);
 {% endhighlight %}
 {% endtabs %}
 
-Visual state checked:
+Checked visual state
 ![SfCheckBox with visual state of checked state](images/CheckBox_VisualState_Checked.png)
 
-Visual state unchecked:
+Unchecked visual state
 ![SfCheckBox with visual state of unchecked state](images/CheckBox_VisualState_Unchecked.png)
 
-Visual state intermediate:
+Intermediate visual state
 ![SfCheckBox with visual state of intermediate state](images/CheckBox_VisualState_Intermediate.png)

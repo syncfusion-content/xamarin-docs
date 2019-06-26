@@ -129,7 +129,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endtabs %}
 
 ## Customizing floating label layout
-Dataform control provides user-friendly options for text input layout customization. In this section, it is explained how to customize the text input layout for each item in the dataform through `TextInputLayoutSettings` available in DataForm control including leading view , trailing view and deals with allocating space for assistive labels.
+You can customize the dataform floating label layout such as customizing outline corner radius ,leading view, trailing view and allocating space for assistive labels by using `TextInputLayoutSettings`.
 
 ### Leading view
 By setting the LeadingView property, a label can be added as a leading icon for editor view. By setting the `LeadingViewPosition` property, it can be placed either inside or outside the container. It's positioned outside by default.

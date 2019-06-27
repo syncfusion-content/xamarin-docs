@@ -9,10 +9,10 @@ documentation: ug
 
 # Fixed hint position
 
-Hint label for the text input layout can be fixed always at the top position. This helps the user to make the hint label floating even if the input view are not focused. It can be enabled by setting the `IsHintAlwaysFloated`.
+Hint label for the text input layout is fixed always at the top position. This helps users make the hint label floating even when the input view is not focused. It can be enabled by setting the `IsHintAlwaysFloated` property.
 
 >**NOTE**
-The default value of `IsHintAlwaysFloated` is `false`.
+The default value of the `IsHintAlwaysFloated` is `false`.
 
 ## Filled
 

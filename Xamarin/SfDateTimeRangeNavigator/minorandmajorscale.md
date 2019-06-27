@@ -9,7 +9,7 @@ documentation: ug
 
 # Major and Minor Scales
 
-SfDateTimeRangeNavigator displays major and minor scales at the top and bottom position of the control. 
+The SfDateTimeRangeNavigator control displays major and minor scales at the top and bottom position of the control. 
 
 ## Intervals
 
@@ -27,7 +27,7 @@ dateTime.Intervals = DateTimeIntervalType.Year | DateTimeIntervalType. Month;
 {% endhighlight %}
 {% endtabs %}
 
-![intervals](minorandmajorscale_images/minorandmajorscale_img1.png)
+![Intervals](minorandmajorscale_images/minorandmajorscale_img1.png)
 
 ## Appearance Customization
 
@@ -50,7 +50,7 @@ The [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
 
 {% tabs %}
 {% highlight xaml %}
-<rangenavigator:SfDateTimeRangeNavigator Minimum="1/1/2015" Maximum="1/1/2016" ViewRangeStart="5/1/2015" 
+<rangenavigator:SfDateTimeRangeNavigator Minimum="1/1/2015" Maximum="1/1/2016" ViewRangeStart="5/1/201" 
 	ViewRangeEnd="9/1/2016">
 
 	<rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
@@ -89,16 +89,15 @@ dateTime.MinorScaleStyle.SelectedLabelFontSize = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![appearance](minorandmajorscale_images/minorandmajorscale_img2.png)
+![Appearance](minorandmajorscale_images/minorandmajorscale_img2.png)
 
 ## Scale visibility
 
-The user can also control the visibility of minor scale and major scale using [`MajorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) and [`MinorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) properties.
+The users can also control the visibility of minor scale and major scale using the  [`MajorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) and [`MinorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) properties.
 
 {% tabs %}
 {% highlight xaml %}
-    <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" Maximum="2016,01,01">
-
+    <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" Maximum="2019,01,01">
         <rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
             <rangenavigator:ScaleStyle IsVisible="false" />
             </rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
@@ -106,7 +105,6 @@ The user can also control the visibility of minor scale and major scale using [`
         <rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
             <rangenavigator:ScaleStyle IsVisible="false" />
         </rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
-
     </rangenavigator:SfDateTimeRangeNavigator>
 {% endhighlight %}
 
@@ -114,26 +112,26 @@ The user can also control the visibility of minor scale and major scale using [`
 
 SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator();
 dateTime.Minimum = new DateTime(2015, 01, 01);
-dateTime.Maximum = new DateTime(2016, 01, 01);
+dateTime.Maximum = new DateTime(2019, 01, 01);
 dateTime.MajorScaleStyle.IsVisible = false;
 dateTime.MinorScaleStyle.IsVisible = false;
 
 {% endhighlight %}
 {% endtabs %}
 
-![visibility](minorandmajorscale_images/minorandmajorscale_img3.png)
+![Visibility](minorandmajorscale_images/minorandmajorscale_img3.png)
 
 ## MinorScaleLabelsCreated event
 
-This event triggered when the minor scale labels gets created initially. The argument of this event contains the following information.
+This event occurs when the minor scale labels are created initially. The argument of this event contains the following information:
 
-* `MinorScaleLabels` - used to get the `Content` of the each minor scale label.
+* `MinorScaleLabels` - Gets the `Content` of the each minor scale label.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
- <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" MinorScaleLabelsCreated="MinorScaleLabelsCreated" Maximum="2016,01,01">
+ <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" Maximum="2019,01,01" MinorScaleLabelsCreated="MinorScaleLabelsCreated" >
     
   
 {% endhighlight %}
@@ -145,12 +143,13 @@ public MainPage()
         InitializeComponent();
         SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator();
 		dateTime.Minimum = new DateTime(2015, 01, 01);
-        dateTime.Maximum = new DateTime(2016, 01, 01);
+        dateTime.Maximum = new DateTime(2019, 01, 01);
 		dateTime.MinorScaleLabelsCreated += MinorScaleLabelsCreated;
     }
+
  private void MinorScaleLabelsCreated(object sender, Syncfusion.RangeNavigator.XForms.MinorScaleLabelsCreatedEventArgs e)
     {
-        // TODO: handle event action.
+        // handle event action.
     }
 
 {% endhighlight %}
@@ -160,15 +159,15 @@ public MainPage()
 
 ## MajorScaleLabelsCreated event
 
-This event triggered when the major scale labels gets created initially. The argument of this event contains the following information.
+This event occurs when the major scale labels are created initially. The argument of this event contains the following information:
 
-* `MajorScaleLabels` - used to get the `Content` of the each major scale label.
+* `MajorScaleLabels` - Gets the `Content` of the each major scale label.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
- <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" MajorScaleLabelsCreated="MajorScaleLabelsCreated" Maximum="2016,01,01">
+ <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" Maximum="2016,01,01" MajorScaleLabelsCreated="MajorScaleLabelsCreated" >
     
   
 {% endhighlight %}
@@ -183,9 +182,10 @@ public MainPage()
         dateTime.Maximum = new DateTime(2016, 01, 01);
 		dateTime.MajorScaleLabelsCreated += MajorScaleLabelsCreated;
     }
+
 private void MajorScaleLabelsCreated(object sender, Syncfusion.RangeNavigator.XForms.MajorScaleLabelsCreatedEventArgs e)
     {
-        // TODO: handle event action.
+        // handle event action.
     }
 
 {% endhighlight %}

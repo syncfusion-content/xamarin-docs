@@ -11,9 +11,9 @@ documentation : ug
 
 ## CardTapped
 
-[`CardTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout~CardTapped_EV.html) event is triggered when you tap on any card view. The argument contains the following information.
+The [`CardTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout~CardTapped_EV.html) event occurs when any card view is tapped. The argument contains the following information:
 
-* [`CardView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView.html) - Used to get the particular card view details .
+* [`CardView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView.html) - Gets the details of a particular card view.
 
 ### Command
 
@@ -21,16 +21,15 @@ The `CardTappedCommand` property is used to associate a command with an instance
 
 ### CommandParameter
 
-The `CardTappedCommandParameter` property is used to set the parameter reference to which the event argument must contains.
+The `CardTappedCommandParameter` property is used to set the parameter reference, based on which the event argument is shown.
 
 >**NOTE**
-The default value of `CardTappedCommandParameter` is `null`.
+The default value of the `CardTappedCommandParameter` is `null`.
 
 {% tabs %}
 {% highlight xaml %}
 
 <cards:SfCardLayout CardTappedCommand="{Binding CardTappedCommand}">
-
 		<cards:SfCardView>
 			<Label Text="Cyan" BackgroundColor="Cyan" />
 		</cards:SfCardView>
@@ -42,7 +41,6 @@ The default value of `CardTappedCommandParameter` is `null`.
 		<cards:SfCardView>
 			<Label Text="Orange" BackgroundColor="Orange" />
 		</cards:SfCardView>
-
 </cards:SfCardLayout>
 {% endhighlight %}
 
@@ -59,7 +57,7 @@ The default value of `CardTappedCommandParameter` is `null`.
 
         private void CardTapped(object obj)
         {
-            // TODO: handle event action.
+            // handle event action.
         }
 
     }
@@ -69,17 +67,16 @@ The default value of `CardTappedCommandParameter` is `null`.
 
 ## VisibleCardIndexChanging
 
-`VisibleCardIndexChanging` event gets triggered when the visible card index gets changing. The argument contains the following information.
+The `VisibleCardIndexChanging` event occurs when the visible card index is changed. The argument contains the following information:
 
-* `OldCard` - used to get the details on the previous index card.
+* `OldCard` - Gets the details of the previous index card.
 
-* `NewCard` - used to get the details of the next possible index card.
+* `NewCard` - Gets the details of the next possible index card.
 
 {% tabs %}
 {% highlight xaml %}
 
 <cards:SfCardLayout VisibleCardIndexChanging="VisibleCardIndexChanging" >
-
 		<cards:SfCardView>
 			<Label Text="Cyan" BackgroundColor="Cyan" />
 		</cards:SfCardView>
@@ -91,7 +88,6 @@ The default value of `CardTappedCommandParameter` is `null`.
 		<cards:SfCardView>
 			<Label Text="Orange" BackgroundColor="Orange" />
 		</cards:SfCardView>
-
 </cards:SfCardLayout>
 {% endhighlight %}
 
@@ -125,17 +121,16 @@ public partial class MainPage : ContentPage
 
 ## VisibleCardIndexChanged
 
-`VisibleCardIndexChanged` event gets triggered when the visible card index gets changed. The argument contains the following information.
+The `VisibleCardIndexChanged` event occurs when the visible card index is changed. The argument contains the following information:
 
-* `OldCard` - used to get the details on the previous card.
+* `OldCard` - Gets the details of the previous card.
 
-* `NewCard` - used to get the details on the current card.
+* `NewCard` - Gets the details of the current card.
 
 {% tabs %}
 {% highlight xaml %}
 
 <cards:SfCardLayout VisibleCardIndexChanged="VisibleCardIndexChanged" >
-
 		<cards:SfCardView>
 			<Label Text="Cyan" BackgroundColor="Cyan" />
 		</cards:SfCardView>
@@ -147,7 +142,6 @@ public partial class MainPage : ContentPage
 		<cards:SfCardView>
 			<Label Text="Orange" BackgroundColor="Orange" />
 		</cards:SfCardView>
-
 </cards:SfCardLayout>
 {% endhighlight %}
 
@@ -171,7 +165,7 @@ public partial class MainPage : ContentPage
 
         private void VisibleCardIndexChanged(object sender Syncfusion.XForms.Cards.VisibleCardIndexChangedEventArgs e)
         {
-              // TODO: handle event action.
+              // handle event action.
         }
 	}
 

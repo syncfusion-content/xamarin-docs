@@ -134,7 +134,7 @@ inputLayout.InputView = new SfNumericTextBox() { Value = 123.45, FormatString="c
 
 ## Auto complete
 
-To initialize the auto complete control and launch it in each platform, refer to the [getting started with auto complete](https://help.syncfusion.com/xamarin/sfautocomplete/getting-started) documentation.
+To initialize the Autocomplete control and launch it in each platform, refer to the [getting started with auto complete](https://help.syncfusion.com/xamarin/sfautocomplete/getting-started) documentation.
 
 {% tabs %} 
 
@@ -149,15 +149,9 @@ To initialize the auto complete control and launch it in each platform, refer to
 {% highlight C# %} 
 
 List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("Canada");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("France");
 countryNames.Add("United Kingdom");
-countryNames.Add("China");
 countryNames.Add("United States");
-countryNames.Add("Japan");
+countryNames.Add("United Republic of Tanzania");
 autoComplete.DataSource = countryNames;
 
 {% endhighlight %}
@@ -183,15 +177,9 @@ To initialize the combo box control and launch it in each platform, refer to the
 {% highlight C# %} 
 
 List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("Canada");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("France");
-countryNames.Add("United Kingdom");
-countryNames.Add("China");
-countryNames.Add("United States");
-countryNames.Add("Japan");
+countryNames.Add("Afghanistan");
+countryNames.Add("Akrotiri");
+countryNames.Add("Albania");
 combobox.DataSource = countryNames;
 
 {% endhighlight %}

@@ -23,22 +23,20 @@ The `CardTappedCommand` property is used to associate a command with an instance
 
 ### CommandParameter
 
-The `CardTappedCommandParameter` property is used to set the parameter reference to which the event argument must contains.
+The `CardTappedCommandParameter` property is used to set the parameter reference, based on which the event argument is shown.
 
 >**NOTE**
-The default value of `CardTappedCommandParameter` is `null`.
+The default value of the `CardTappedCommandParameter` is `null`.
 
 {% tabs %}
 {% highlight xaml %}
-<kanban:SfKanban x:Name="kanban" CardTappedCommand="{Binding CardTappedCommand}" CardTappedCommandParameter="{Binding Source={x:Reference kanban}}" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ItemsSource="{Binding Cards}">
-
+<kanban:SfKanban x:Name="kanban" CardTappedCommand="{Binding CardTappedCommand}" CardTappedCommandParameter="{Binding Source={x:Reference kanban}}" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ItemsSource="{Binding CardsSource}">
     <kanban:SfKanban.Columns> 
         <kanban:KanbanColumn x:Name="column1" Title="To Do"/>
         <kanban:KanbanColumn x:Name="column2" Title="In Progress"/>
         <kanban:KanbanColumn x:Name="column3" Title="Code Review"/>    
         <kanban:KanbanColumn x:Name="column4" Title="Done"/>
     </kanban:SfKanban.Columns>
-
 </kanban:SfKanban>
 {% endhighlight %}
 
@@ -57,14 +55,12 @@ The default value of `CardTappedCommandParameter` is `null`.
 
     public class ViewModel
     {
-        public ObservableCollection<KanbanModel> Cards { get; set; }
-        public ICommand CardTappedCommand { get; set; }
 
         public ViewModel()
         {
-            Cards = new ObservableCollection<KanbanModel>();
+            CardsSource = new ObservableCollection<KanbanModel>();
             CardTappedCommand = new Command<object>(CardTappedEvent);
-            Cards.Add(new KanbanModel()
+            CardsSource.Add(new KanbanModel()
             {
                 ID = 1,
                 Title = "iOS - 1002",
@@ -75,7 +71,7 @@ The default value of `CardTappedCommandParameter` is `null`.
                 Tags = new string[] { "Incident", "Customer" }
             });
 
-            Cards.Add(new KanbanModel()
+            CardsSource.Add(new KanbanModel()
             {
                 ID = 6,
                 Title = "Xamarin - 4576",
@@ -86,7 +82,7 @@ The default value of `CardTappedCommandParameter` is `null`.
                 Tags = new string[] { "Story", "Customer" }
             });
 
-            Cards.Add(new KanbanModel()
+            CardsSource.Add(new KanbanModel()
             {
                 ID = 13,
                 Title = "UWP - 13",
@@ -97,7 +93,7 @@ The default value of `CardTappedCommandParameter` is `null`.
                 Tags = new string[] { "Story", "Customer" }
             });
 
-            Cards.Add(new KanbanModel()
+            CardsSource.Add(new KanbanModel()
             {
                 ID = 2543,
                 Title = "Xamarin_iOS - 2543",
@@ -108,6 +104,10 @@ The default value of `CardTappedCommandParameter` is `null`.
                 Tags = new string[] { "Story", "Customer" }
             });
         }
+
+        public ObservableCollection<KanbanModel> CardsSource { get; set; }
+
+        public ICommand CardTappedCommand { get; set; }
 
         private void CardTappedEvent(object args)
         {

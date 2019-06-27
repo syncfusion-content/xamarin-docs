@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drilldown
+title: Drilldown feature in syncfusion TreeMap control for Xamarin.Forms
 description: Drilldown feature of TreeMap control
 platform: xamarin
 control: SfTreeMap
@@ -15,7 +15,7 @@ Drilldown feature can be enabled or disabled using `EnableDrilldown` property in
 
 I> Tap either on the item or on the item header to perform drilldown operation after enabling the EnableDrilldown property.
 
-Icons will be displayed to the left of the header to indicate whether the item can be further drilled in or not. Plus icon indicates the drilldown operation and minus icon indicates the drillup operation.
+Icons will be displayed to the left of the header to indicate whether the item can be further drilled in or not. Plus icon indicates the drilldown operation and minus icon indicates the drill up operation.
 
 The following code shows enabling the drilldown property.
 
@@ -40,7 +40,7 @@ map.EnableDrilldown = true;
 
 ## Header customization
 
-Drilldown header which is used for zooming out (i.e. drillup one level) operation can be customized by setting style to it using `DrilldownHeaderStyle` property in treemap. This property provides similar customization option as that of the treemap level header.
+Drilldown header which is used for zooming out (i.e. drill up one level) operation can be customized by setting style to it using `DrilldownHeaderStyle` property in treemap. This property provides similar customization option as that of the treemap level header.
 
 The following code shows defining Drilldown header style.
 

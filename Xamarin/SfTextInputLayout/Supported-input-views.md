@@ -141,7 +141,7 @@ To initialize the Autocomplete control and launch it in each platform, refer to 
 {% highlight xaml %} 
 
 <inputLayout:SfTextInputLayout Hint="Country name">
-   <autocomplete:SfAutoComplete x:Name="autoComplete"/>
+   <autocomplete:SfAutoComplete x:Name="autoComplete" AutoCompleteMode="SuggestAppend"/>
 </inputLayout:SfTextInputLayout>
 
 {% endhighlight %}

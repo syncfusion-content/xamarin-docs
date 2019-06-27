@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Suggestion DropDown in Syncfusion SfAutoComplete control for Xamarin.Forms
+title: DropDown in Syncfusion SfAutoComplete control for Xamarin.Forms
 description: Learn how to deal with the properties of Suggestion DropDown
 platform: xamarin
 control: SfAutoComplete
@@ -40,7 +40,7 @@ autoComplete.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 
 {% endtabs %}
 
-![](images/Dealing-with-Suggestion-Box/suggestion-box-placement-top.png)
+![SuggestionBoxPlacement](images/Dealing-with-Suggestion-Box/suggestion-box-placement-top.png)
 
 ## Maximum suggestion box height
 
@@ -76,7 +76,7 @@ autoComplete.MaximumDropDownHeight = 100;
 
 {% endtabs %}
 
-![](images/Dealing-with-Suggestion-Box/maximum-dropdown-height.png)
+![MaximumDropDownHeight](images/Dealing-with-Suggestion-Box/maximum-dropdown-height.png)
 
 ## Opening suggestion box on focus
 
@@ -107,7 +107,7 @@ autoComplete.ShowSuggestionsOnFocus = true;
 
 {% endtabs %}
 
-![](images/Dealing-with-Suggestion-Box/show-suggestions-on-focus.png)
+![SuggestionsOnFocus](images/Dealing-with-Suggestion-Box/show-suggestions-on-focus.png)
 
 ## Delay opening suggestion box
 

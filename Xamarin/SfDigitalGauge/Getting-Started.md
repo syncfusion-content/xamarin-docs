@@ -63,7 +63,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 
-To launch the SfDigitalGauge in iOS, call the `SfGaugeRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called, as demonstrated in the following code example.
+To launch the SfDigitalGauge in iOS, call the `SfDigitalGaugeRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called, as demonstrated in the following code example.
 
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)

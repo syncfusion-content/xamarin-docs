@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Mutiple/multilevel column headers | SfDataGrid | Xamarin | Syncfusion
-description: Display and customize multiple/multilevel column headers in Xamarin.Forms DataGrid.
+title: Multicolumn headers | Stacked header | DataGrid | Xamarin | Syncfusion
+description: Display multilevel column headers(unbound header rows) that span across multiple columns. Group one or more columns under common column headers in Xamarin.Forms DataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -96,7 +96,7 @@ this.dataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 
 ## Adding child columns
 
-You can add the child columns to a particular stacked header row directly using the following code snippet.
+You can add the child columns to a particular stacked header row directly.
 
 {% tabs %}
 {% highlight c# %}
@@ -107,7 +107,7 @@ dataGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns = childColumn + ","
 
 ## Removing child columns
 
-Similarly, you can remove the child columns from a particular stacked header row directly using the following code snippet.
+Similarly, you can remove the child columns from a particular stacked header row directly.
 
 {% tabs %}
 {% highlight c# %}
@@ -162,9 +162,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs  e)
 
 ### Font customization
 
-Customize the FontSize, FontFamily, and the FontAttribute of the text displayed in stacked header column using the `StackedColumn.TextSize`, `StackedColumn.Font`, and `StackedColumn.FontAttribute` properties, respectively. The default font size and font attribute are 14 and normal, respectively.
-
-Refer to the following code snippet to customize the font of the text in stacked columns.
+Customize the font's size, family and attribute of the text displayed in stacked header column using the `StackedColumn.TextSize`, `StackedColumn.Font`, and `StackedColumn.FontAttribute` properties, respectively. The default font size and font attribute are 14 and normal, respectively.
 
 {% tabs %}
 {% highlight xaml %}
@@ -250,7 +248,7 @@ public class Dark : DataGridStyle
 
 ### Conditional styling
 
-The SfDataGrid also allows to customize the appearance of stacked header rows based on its row index. Refer to the following code snippet to achieve the same.
+The SfDataGrid also allows to customize the appearance of stacked header rows conditionally based on its row index.
 
 {% highlight c# %}
 //Custom style class
@@ -290,7 +288,7 @@ public class Dark : DataGridStyle
 
 ## Loading template in stacked column
 
-The SfDataGrid allows you to load any desired view inside a `StackedColumn` using the `StackedColumn.Template` property. Refer to the following code snippet to load a custom view inside a stacked column header.
+The SfDataGrid allows you to load any desired view inside a `StackedColumn` using the `StackedColumn.Template` property.
 
 {% tabs %}
 {% highlight xaml %}

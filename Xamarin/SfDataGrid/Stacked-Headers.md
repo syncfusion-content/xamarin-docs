@@ -1,27 +1,26 @@
 ---
 layout: post
-title: Mutiple/Multi-level column headers | SfDataGrid | Xamarin | Syncfusion
-description: Display and customize multiple / multi-level column headers in Xamarin.Forms DataGrid.
+title: Mutiple/multilevel column headers | SfDataGrid | Xamarin | Syncfusion
+description: Display and customize multiple/multilevel column headers in Xamarin.Forms DataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Stacked Headers 
-The SfDataGrid supports displaying additional unbound, multiple/multi-level header rows known as `StackedHeaderRows` that span across the DataGrid columns. You can group one or more columns under each stacked header.
+# Stacked Headers
 
-Each `StackedHeaderRow` contains `StackedColumns` which contains a number of child columns. The `StackedColumn.ChildColumns` property contains the columns grouped under the stacked header row. The `StackedColumn.MappingName` is a unique name used for mapping a specific child column that is grouped under the same stacked header row whereas, the `StackedColumn.Text` contains the text displayed in the stacked header row.
+The SfDataGrid supports displaying additional unbound, multiple/multillevel header rows known as `StackedHeaderRows` that spans across the DataGrid columns. You can group one or more columns under each stacked header.
 
-### Adding Stacked header
-The stacked headers can be added by using the below steps,
+Each `StackedHeaderRow` contains `StackedColumns`, which contains a number of child columns. The `StackedColumn.ChildColumns` property contains the columns grouped under the stacked header row. The `StackedColumn.MappingName` is a unique name used for mapping a specific child column grouped under the same stacked header row, whereas the `StackedColumn.Text` contains the text displayed in the stacked header row.
+
+### Adding stacked header
+
+The stacked headers can be added using the following steps:
 
 1. Create an object of `StackedHeaderRow` for adding stacked columns.
-
-2. Add the columns using `ChildColumns` property of `StackedColumn`.
-
+2. Add the columns using the `ChildColumns` property of `StackedColumn`.
 3. Add the `StackedColumn` to `StackedColumns` collection.
-
-4. Finally add the `StackedHeaderRow` to `StackedHeaderRows` collection of the SfDataGrid. 
+4. Finally, add the `StackedHeaderRow` to `StackedHeaderRows` collection of the SfDataGrid. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -93,10 +92,11 @@ this.dataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 {% endhighlight %}
 {% endtabs %}
 
-![Multi-lelvel/Multiple headers in Xamarin.Forms datagrid](SfDataGrid_images/StackedHeader.png)
+![Multilelvel/multiple headers in Xamarin.Forms DataGrid](SfDataGrid_images/StackedHeader.png)
 
-## Adding ChildColumns
-You can add the child columns to a particular stacked header row directly using the below code snippet.
+## Adding child columns
+
+You can add the child columns to a particular stacked header row directly using the following code snippet.
 
 {% tabs %}
 {% highlight c# %}
@@ -105,8 +105,9 @@ dataGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns = childColumn + ","
 {% endhighlight %}
 {% endtabs %}
 
-## Removing ChildColumns
-Similarly, you can remove the child columns from a particular stacked header row directly using the below code snippet.
+## Removing child columns
+
+Similarly, you can remove the child columns from a particular stacked header row directly using the following code snippet.
 
 {% tabs %}
 {% highlight c# %}
@@ -129,7 +130,8 @@ dataGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns = childColumns;
 {% endtabs %}
 
 ## Changing stacked header row height
-You can change the height of StackedHeaderRows by using `SfDataGrid.HeaderRowHeight` property.
+
+You can change the height of StackedHeaderRows using the `SfDataGrid.HeaderRowHeight` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -137,7 +139,7 @@ dataGrid.HeaderRowHeight = 50;
 {% endhighlight %}
 {% endtabs %}
 
-You can also change the height of stacked header rows using `SfDataGrid.QueryRowHeight` event.
+You can also change the height of stacked header rows using the `SfDataGrid.QueryRowHeight` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -146,7 +148,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs  e)
 {
     if(e.RowIndex < this.dataGrid.GetHeaderIndex())
     {
-        // Using below code you can set a desired height based on the row index. 
+        // Using the following code, you can set a desired height based on the row index. 
         e.Height = 50;
         // Uncomment the below line of code to apply auto fit height based on the contents of the stacked header row.
         //e.Height = dataGrid.GetRowHeight(e.RowIndex);
@@ -157,11 +159,12 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs  e)
 {% endtabs %}
 
 ## Appearance
+
 ### Font customization
 
-Customize the FontSize, FontFamily and the FontAttribute of the text displayed in stacked header column using the `StackedColumn.TextSize`, `StackedColumn.Font` and `StackedColumn.FontAttribute` property respectively. The default font size and font attribute are 14 and normal respectively.
+Customize the FontSize, FontFamily, and the FontAttribute of the text displayed in stacked header column using the `StackedColumn.TextSize`, `StackedColumn.Font`, and `StackedColumn.FontAttribute` properties, respectively. The default font size and font attribute are 14 and normal, respectively.
 
-Refer the below code snippet to customize the font of the text in stacked columns.
+Refer to the following code snippet to customize the font of the text in stacked columns.
 
 {% tabs %}
 {% highlight xaml %}
@@ -193,8 +196,9 @@ dataGrid.StackedHeaderRows.Add(stackedHeaderRow);
 {% endhighlight %}
 {% endtabs %}
 
-###	Foreground & Background customization
-The appearance of stacked header row can be customized by returning a desired color in the `GetStackedHeaderBackgroundColor()` and `GetStackedHeaderForegroundColor()` overrides of the  custom written style class derived from `DataGridStyle`, and assigning it to the `SfDataGrid.GridStyle` property. 
+###	Foreground and background customization
+
+The appearance of stacked header row can be customized by returning a desired color in the `GetStackedHeaderBackgroundColor()` and `GetStackedHeaderForegroundColor()` overrides of the  custom written style class derived from `DataGridStyle` and assigning it to the `SfDataGrid.GridStyle` property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -242,11 +246,11 @@ public class Dark : DataGridStyle
 } 
 {% endhighlight %}
 
-![Customize appearance of stacked header row](SfDataGrid_images/StackedHeader_Background_Foreground.jpeg)
+![Customizing the appearance of stacked header row](SfDataGrid_images/StackedHeader_Background_Foreground.jpeg)
 
 ### Conditional styling
 
-The SfDataGrid also allows to customize the appearance of stacked header rows based on its row index. Refer the below code snippet to achieve the same.
+The SfDataGrid also allows to customize the appearance of stacked header rows based on its row index. Refer to the following code snippet to achieve the same.
 
 {% highlight c# %}
 //Custom style class
@@ -282,11 +286,11 @@ public class Dark : DataGridStyle
 } 
 {% endhighlight %}
 
-![Customize background of stacked header row based on index](SfDataGrid_images/StackedHeader_Conditional.jpeg)
+![Customizing the background of stacked header row based on index](SfDataGrid_images/StackedHeader_Conditional.jpeg)
 
 ## Loading template in stacked column
 
-The SfDataGrid allows you to load any desired view inside a `StackedColumn` using the `StackedColumn.Template` property. Refer the below code snippet to load a custom view inside a stacked column header.
+The SfDataGrid allows you to load any desired view inside a `StackedColumn` using the `StackedColumn.Template` property. Refer to the following code snippet to load a custom view inside a stacked column header.
 
 {% tabs %}
 {% highlight xaml %}

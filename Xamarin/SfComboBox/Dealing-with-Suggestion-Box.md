@@ -21,7 +21,7 @@ Suggestion Box can be placed either at the top or bottom using the `SuggestionBo
 
 <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
     <combobox:SfComboBox HeightRequest="40" SuggestionBoxPlacement="Top" x:Name="comboBox">
-        <combobox:SfComboBox.DataSource>
+        <combobox:SfComboBox.ComboBoxSource>
             <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
@@ -29,7 +29,7 @@ Suggestion Box can be placed either at the top or bottom using the `SuggestionBo
                 <x:String> United Kingdom </x:String>
                 <x:String> United States </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox.ComboBoxSource>
     </combobox:SfComboBox>                   
 </StackLayout>
 
@@ -52,7 +52,7 @@ countryNames.Add("United States");
 
 SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
-comboBox.DataSource = countryNames;
+comboBox.ComboBoxSource = countryNames;
 comboBox.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 layout.Children.Add(comboBox); 
 Content = layout;

@@ -174,7 +174,7 @@ The following code snippet demonstrates the way to retrieve [`SelectedIndex`](ht
 
 You can get or set the indices of the selected items using the [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~SelectedIndicesProperty.html) property. It can be applicable when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~MultiSelectModeProperty.html) is in either Token or Delimiter.
 
-### How To Set The Indices Of Items 
+### How to set the indices of items 
 
 [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~SelectedIndicesProperty.html) property holds the Indices of selected items in suggestion list.
 

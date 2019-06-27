@@ -11,19 +11,13 @@ documentation: ug
 
 # Precision Mode
 
-The Precision mode defines the accuracy level of the SfRating control. It has Standard, Half and Exact options.
+The Precision mode defines the accuracy level of the SfRating control. It has Standard, Half, and Exact options. The default precision mode of the SfRating control is `Standard`.
 
 ## Standard
 
-The rating item will be filled completely based on the rating value.
+When the precision mode of SfRating is set as `Standard`, the rating item will be filled completely based on the rating value.
 
 {% tabs %}
-
-{% highlight C# %}
-
-	rating.Precision=Precision.Standard;
-
-{% endhighlight %} 
 
 {% highlight xaml %}
 
@@ -31,21 +25,27 @@ The rating item will be filled completely based on the rating value.
 	
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfRating rating;
+public MainPage()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    rating.Precision = Precision.Standard;
+}
+
+{% endhighlight %} 
+
 {% endtabs %}
 
-![](images/standard.jpg)
+![SfRating standard precision mode](images/standard.jpg)
 
 ## Half
 
-The rating item will be filled partially based on the rating value.
+When the precision mode of SfRating is set as `Half`, the rating item will be filled partially based on the rating value.
 
 {% tabs %}
-
-{% highlight C# %}
-
-	rating.Precision=Precision.Half;
-
-{% endhighlight %} 
 
 {% highlight xaml %}
 
@@ -53,21 +53,27 @@ The rating item will be filled partially based on the rating value.
 	
 {% endhighlight %}
 
+{% highlight C# %}
+
+SfRating rating;
+public MainPage()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    rating.Precision = Precision.Half;
+}
+
+{% endhighlight %} 
+
 {% endtabs %}
 
-![](images/half.jpg) 
+![SfRating half precision mode](images/half.jpg) 
 
 ## Exact
 
-The rating item will be filled exactly based on the rating value.
+When the precision mode of SfRating is set as `Exact`, the rating item will be filled exactly based on the rating value.
 
 {% tabs %}
-
-{% highlight c# %}
-
-	rating.Precision=Precision.Exact;
-
-{% endhighlight %} 
 
 {% highlight xaml %}
 
@@ -75,9 +81,19 @@ The rating item will be filled exactly based on the rating value.
 	
 {% endhighlight %}
 
+{% highlight c# %}
+
+SfRating rating;
+public MainPage()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    rating.Precision = Precision.Exact;
+}
+
+{% endhighlight %} 
+
 {% endtabs %}
 
-![](images/exact.jpg) 
-
-
+![SfRating exact precision mode](images/exact.jpg) 
 

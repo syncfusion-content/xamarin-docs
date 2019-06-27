@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Appearance and Styling in Syncfusion Rating control for Xamarin.Forms
+title: Appearance-Styling in Syncfusion SfRating control for Xamarin.Forms
 description: Learn how to change the Appearance and Styling of rating control
 platform: Xamarin
 control: Rating
@@ -11,7 +11,7 @@ documentation: ug
 
 # Appearance and Styling
 
-SfRating control provides support to customize the Size, Item count and space between rating items.
+When the default view is not needed, you can customize the view of Xamarin.Forms SfRating control. The SfRating control provides support to customize the size, item count, and space between rating items.
 
 ## Set Size
 
@@ -23,19 +23,25 @@ N> By default, property value is 50.
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="rating" ItemSize="20" />
+	<rating:SfRating ItemSize="20" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	rating.ItemSize=20;
+SfRating rating;
+public MainPage()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    rating.ItemSize = 20;
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/layoutSize.jpg)
+![SfRating layout customization](images/layoutSize.jpg)
 
 ## Set Number of Items
 
@@ -47,19 +53,25 @@ N> The default property value is 5.
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="rating" ItemCount="4" />
+	<rating:SfRating ItemCount="4" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	rating.ItemCount=4;
+SfRating rating;
+public MainPage()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    rating.ItemCount = 4;
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/four star.jpg)
+![Set number of rating items](images/fourstar.jpg)
  
 ## Set Space between Items
 
@@ -71,49 +83,58 @@ N> By default, property value is 5.
 
 {% highlight xaml %}
 
-	<rating:SfRating x:Name="rating" ItemSpacing="20" />
+	<rating:SfRating ItemSpacing="20" />
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-	rating.ItemSpacing=20;
+SfRating rating;
+public MainPage()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    rating.ItemSpacing = 20;
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/layoutSpace.jpg) 
-
+![Space between rating items](images/layoutSpace.jpg) 
 
 ## Rating Settings
 
-This section explains various Rating settings available in SfRating control. 
+This section explains about various rating settings available in the SfRating control.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-     <rating:SfRating  x:Name="rating" Value="3">
-     <rating:SfRating.RatingSettings>
-     <rating:SfRatingSettings RatedFill="Red" UnRatedFill="Blue" RatedStrokeWidth="0" UnRatedStrokeWidth="0" />
-     </rating:SfRating.RatingSettings>
+     <rating:SfRating  Value="3">
+        <rating:SfRating.RatingSettings>
+            <rating:SfRatingSettings RatedFill="Red" UnRatedFill="Blue" RatedStrokeWidth="3" UnRatedStrokeWidth="2" />
+        </rating:SfRating.RatingSettings>
      </rating:SfRating>
-	
+
 {% endhighlight %}
 
-{% highlight C# %}
+{% highlight c# %}
 
-     SfRating rating= new SfRating();
-     SfRatingSettings  ratingSettings = new SfRatingSettings();
-	 ratingSettings.RatedFill = Color.FromHex("#fbd10a");
-	 ratingSettings.UnRatedFill = Color.FromHex("#cdcccb");
-	 ratingSettings.RatedStrokeThickness = 0;
-	 ratingSettings.UnRatedStrokeThickness = 0;
-     rating.RatingSettings=ratingSettings;
+SfRating rating;
+SfRatingSettings ratingSettings;
+public MainPage()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    ratingSettings = new SfRatingSettings();
+    ratingSettings.RatedFill = Color.Red;
+    ratingSettings.UnRatedFill = Color.Blue;
+    ratingSettings.RatedStrokeWidth = 3;
+    ratingSettings.UnRatedStrokeWidth = 2;
+    rating.RatingSettings = ratingSettings;
+}
 
 {% endhighlight %}
 
 {% endtabs %}
-
- 

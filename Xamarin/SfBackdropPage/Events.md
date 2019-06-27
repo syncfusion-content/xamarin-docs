@@ -11,7 +11,7 @@ documentation: ug
 
 ## BackLayerStateChanged event
 
-`BackLayerStateChanged` event is triggered when the backdrop front layer page is revealed and concealed. The event gets triggered when [IsBackLayerRevealed](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBackdrop.XForms~Syncfusion.XForms.Backdrop.SfBackdropPage~IsBackLayerRevealed.html)  gets changed dynamically, when revealing and concealing the front layer page on swiping and by touch interaction when clicking the tool bar icon.
+`BackLayerStateChanged` event is triggered when the backdrop page back layer is revealed and concealed. The event gets triggered in the following cases mentioned in this [link](https://help.syncfusion.com/xamarin/sfbackdroppage/getting-started#reveal-and-conceal-the-back-layer).
 
 {% tabs %} 
 
@@ -22,8 +22,9 @@ documentation: ug
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:backdrop="clr-namespace:Syncfusion.XForms.Backdrop;assembly=Syncfusion.SfBackdrop.XForms"
-    x:Class="BackDropSample.MainPage"
-    Title="Menu" x:Name="backdrop" BackLayerStateChanged="BackLayerStateChanged" >
+    x:Class="BackdropGettingStarted.MainPage"
+    Title="Menu"
+    BackLayerStateChanged="BackLayerStateChanged" >
   
 {% endhighlight %}
 
@@ -32,11 +33,11 @@ documentation: ug
 public MainPage()
     {
         InitializeComponent();
-        backdrop.BackLayerStateChanged += BackLayerStateChanged;
+        this.BackLayerStateChanged += BackLayerStateChanged;
     }
-void BackLayerStateChanged(object sender, System.EventArgs e)
+private void BackLayerStateChanged(object sender, System.EventArgs e)
     {
-           
+        // TODO: handle event action.
     }
 {% endhighlight %}
 

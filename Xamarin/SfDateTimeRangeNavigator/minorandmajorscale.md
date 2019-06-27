@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Minor and Major scale customization 
+title: Syncfusion minor and major scale customization 
 description: Minor and Major scales
 platform: xamarin
 control: SfDateTimeRangeNavigator
@@ -52,21 +52,17 @@ The [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
 {% highlight xaml %}
 <rangenavigator:SfDateTimeRangeNavigator Minimum="1/1/2015" Maximum="1/1/2016" ViewRangeStart="5/1/2015" 
 	ViewRangeEnd="9/1/2016">
-	
+
 	<rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
-	
 		<rangenavigator:ScaleStyle Position="Inside" LabelAlignment="Right" SelectedLabelTextColor="Blue" 
-			SelectedLabelFontSize="20" SelectedLabelMargin="15" LabelTextColor="Black" LabelFontSize="20" LabelMargin="15"/>
-			
+			SelectedLabelFontSize="20" SelectedLabelMargin="15" LabelTextColor="Black" LabelFontSize="20" LabelMargin="15"/>	
 	</rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
 	
 	<rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
-	
 		<rangenavigator:ScaleStyle Position="Inside" LabelAlignment="Left" SelectedLabelTextColor="Black" 
 			SelectedLabelFontSize="20" SelectedLabelMargin="15" LabelTextColor="Red" LabelFontSize="20" LabelMargin="15" />
-			
 	</rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
-	
+
 </rangenavigator:SfDateTimeRangeNavigator>
 {% endhighlight %}
 
@@ -95,13 +91,14 @@ dateTime.MinorScaleStyle.SelectedLabelFontSize = 20;
 
 ![appearance](minorandmajorscale_images/minorandmajorscale_img2.png)
 
-## Control visibility
+## Scale visibility
 
 The user can also control the visibility of minor scale and major scale using [`MajorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) and [`MinorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) properties.
 
 {% tabs %}
 {% highlight xaml %}
     <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" Maximum="2016,01,01">
+
         <rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
             <rangenavigator:ScaleStyle IsVisible="false" />
             </rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
@@ -109,6 +106,7 @@ The user can also control the visibility of minor scale and major scale using [`
         <rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
             <rangenavigator:ScaleStyle IsVisible="false" />
         </rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
+
     </rangenavigator:SfDateTimeRangeNavigator>
 {% endhighlight %}
 
@@ -129,7 +127,7 @@ dateTime.MinorScaleStyle.IsVisible = false;
 
 This event triggered when the minor scale labels gets created initially. The argument of this event contains the following information.
 
-* `MinorScaleLabels` - used to get the `Content` of the each minor scale labels.
+* `MinorScaleLabels` - used to get the `Content` of the each minor scale label.
 
 {% tabs %} 
 
@@ -150,9 +148,9 @@ public MainPage()
         dateTime.Maximum = new DateTime(2016, 01, 01);
 		dateTime.MinorScaleLabelsCreated += MinorScaleLabelsCreated;
     }
-void MinorScaleLabelsCreated(object sender, Syncfusion.RangeNavigator.XForms.MinorScaleLabelsCreatedEventArgs e)
+ private void MinorScaleLabelsCreated(object sender, Syncfusion.RangeNavigator.XForms.MinorScaleLabelsCreatedEventArgs e)
     {
-        
+        // TODO: handle event action.
     }
 
 {% endhighlight %}
@@ -164,7 +162,7 @@ void MinorScaleLabelsCreated(object sender, Syncfusion.RangeNavigator.XForms.Min
 
 This event triggered when the major scale labels gets created initially. The argument of this event contains the following information.
 
-* `MajorScaleLabels` - used to get the `Content` of the each major scale labels.
+* `MajorScaleLabels` - used to get the `Content` of the each major scale label.
 
 {% tabs %} 
 
@@ -185,9 +183,9 @@ public MainPage()
         dateTime.Maximum = new DateTime(2016, 01, 01);
 		dateTime.MajorScaleLabelsCreated += MajorScaleLabelsCreated;
     }
-void MajorScaleLabelsCreated(object sender, Syncfusion.RangeNavigator.XForms.MajorScaleLabelsCreatedEventArgs e)
+private void MajorScaleLabelsCreated(object sender, Syncfusion.RangeNavigator.XForms.MajorScaleLabelsCreatedEventArgs e)
     {
-        
+        // TODO: handle event action.
     }
 
 {% endhighlight %}

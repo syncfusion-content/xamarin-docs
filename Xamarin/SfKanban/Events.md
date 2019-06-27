@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion Events in Xamarin.Forms Kanban control
-description: Kanban Events
+title: Syncfusion events in Xamarin.Forms Kanban control
+description: Kanban events
 platform: xamarin
 control: Kanban
 documentation: ug
@@ -23,27 +23,22 @@ The `CardTappedCommand` property is used to associate a command with an instance
 
 ### CommandParameter
 
-The `CardTappedCommandParameter` property is used to set the parameter reference to which the event  argument will display the properties associated with that reference.
+The `CardTappedCommandParameter` property is used to set the parameter reference to which the event argument must contains.
 
 >**NOTE**
 The default value of `CardTappedCommandParameter` is `null`.
 
 {% tabs %}
 {% highlight xaml %}
-<kanban:SfKanban x:Name="kanban" CardTappedCommand="{Binding ItemTappedCommand}" CardTappedCommandParameter="{Binding Source={x:Reference kanban}}" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ItemsSource="{Binding Cards}">
-    <kanban:SfKanban.BindingContext>
-        <local:ViewModel/>
-    </kanban:SfKanban.BindingContext>
-        <kanban:SfKanban.Columns> 
-            <kanban:KanbanColumn x:Name="column1" Title="To Do">
-            </kanban:KanbanColumn>
-            <kanban:KanbanColumn x:Name="column2" Title="In Progress">
-            </kanban:KanbanColumn>
-            <kanban:KanbanColumn x:Name="column3" Title="Code Review">
-            </kanban:KanbanColumn>
-            <kanban:KanbanColumn x:Name="column4" Title="Done">
-            </kanban:KanbanColumn>
-        </kanban:SfKanban.Columns>
+<kanban:SfKanban x:Name="kanban" CardTappedCommand="{Binding CardTappedCommand}" CardTappedCommandParameter="{Binding Source={x:Reference kanban}}" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ItemsSource="{Binding Cards}">
+
+    <kanban:SfKanban.Columns> 
+        <kanban:KanbanColumn x:Name="column1" Title="To Do"/>
+        <kanban:KanbanColumn x:Name="column2" Title="In Progress"/>
+        <kanban:KanbanColumn x:Name="column3" Title="Code Review"/>    
+        <kanban:KanbanColumn x:Name="column4" Title="Done"/>
+    </kanban:SfKanban.Columns>
+
 </kanban:SfKanban>
 {% endhighlight %}
 
@@ -53,21 +48,22 @@ The default value of `CardTappedCommandParameter` is `null`.
         public MainPage()
         {
             InitializeComponent();
-
             column1.Categories = new List<object>() { "Open" };
             column2.Categories = new List<object>() { "In Progress" };
             column3.Categories = new List<object>() { "Code Review" };
             column4.Categories = new List<object>() { "Closed" };
         }
     }
+
     public class ViewModel
     {
         public ObservableCollection<KanbanModel> Cards { get; set; }
-        public ICommand ItemTappedCommand { get; set; }
+        public ICommand CardTappedCommand { get; set; }
+
         public ViewModel()
         {
             Cards = new ObservableCollection<KanbanModel>();
-            ItemTappedCommand = new Command<object>(ItemTappedEvent);
+            CardTappedCommand = new Command<object>(CardTappedEvent);
             Cards.Add(new KanbanModel()
             {
                 ID = 1,
@@ -78,6 +74,7 @@ The default value of `CardTappedCommandParameter` is `null`.
                 ColorKey = "Red",
                 Tags = new string[] { "Incident", "Customer" }
             });
+
             Cards.Add(new KanbanModel()
             {
                 ID = 6,
@@ -88,6 +85,7 @@ The default value of `CardTappedCommandParameter` is `null`.
                 ColorKey = "Green",
                 Tags = new string[] { "Story", "Customer" }
             });
+
             Cards.Add(new KanbanModel()
             {
                 ID = 13,
@@ -98,6 +96,7 @@ The default value of `CardTappedCommandParameter` is `null`.
                 ColorKey = "Brown",
                 Tags = new string[] { "Story", "Customer" }
             });
+
             Cards.Add(new KanbanModel()
             {
                 ID = 2543,
@@ -110,7 +109,7 @@ The default value of `CardTappedCommandParameter` is `null`.
             });
         }
 
-        private void ItemTappedEvent(object args)
+        private void CardTappedEvent(object args)
         {
             KanbanTappedEventArgs paramerter = args as KanbanTappedEventArgs;
             var column = paramerter.Column;

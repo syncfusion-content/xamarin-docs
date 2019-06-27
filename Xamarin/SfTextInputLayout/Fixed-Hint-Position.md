@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Syncfusion TextInputLayout Hint Position
+title: Syncfusion text input layout hint position
 description: It describes that the hint position for text input layout can be fixed always at the top by setting the IsHintAlwaysFloated property.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Hint position
+# Fixed hint position
 
-Hint label for the text input layout can be fixed always at the top position. This helps the user to make the hint label floating even if the assistive elements are not focused. It can be enabled by setting the `IsHintAlwaysFloated`. This supports for all the container type in input text layout.
+Hint label for the text input layout can be fixed always at the top position. This helps the user to make the hint label floating even if the input view are not focused. It can be enabled by setting the `IsHintAlwaysFloated`.
 
 >**NOTE**
 The default value of `IsHintAlwaysFloated` is `false`.

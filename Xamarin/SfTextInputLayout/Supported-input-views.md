@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Syncfusion Supported input views
+title: Syncfusion supported input views
 description: How to add supported input views in text input layout.
 platform: xamarin
 control: SfTextInputLayout
@@ -38,7 +38,7 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![entry](Supported-input-views-images/textInput_input_img1.PNG)
+![Entry](Supported-input-views-images/textInput_input_img1.PNG)
 
 ## Editor
 
@@ -67,7 +67,7 @@ inputLayout.InputView = new Editor();
 
 {% endtabs %}
 
-![editor](Supported-input-views-images/textInput_input_img2.PNG)
+![Editor](Supported-input-views-images/textInput_input_img2.PNG)
 
 ## Masked edit
 
@@ -148,9 +148,6 @@ To initialize the auto complete control and launch it in each platform, refer to
 
 {% highlight C# %} 
 
-var inputLayout = new SfTextInputLayout();
-SfAutoComplete autoComplete = new SfAutoComplete();
-inputLayout.Hint = "Country name";
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -162,13 +159,12 @@ countryNames.Add("China");
 countryNames.Add("United States");
 countryNames.Add("Japan");
 autoComplete.DataSource = countryNames;
-inputLayout.InputView = autoComplete;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![autocomplete](Supported-input-views-images/textInput_input_img5.PNG)
+![Autocomplete](Supported-input-views-images/textInput_input_img5.PNG)
 
 ## Combo box
 
@@ -179,16 +175,13 @@ To initialize the combo box control and launch it in each platform, refer to the
 {% highlight xaml %} 
 
 <inputLayout:SfTextInputLayout Hint="Country name">
-   <combobox:SfComboBox  x:Name="combobox" DataSource="countryNames"/>
+   <combobox:SfComboBox  x:Name="combobox"/>
 </inputLayout:SfTextInputLayout> 
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-var inputLayout = new SfTextInputLayout();
-SfComboBox combobox = new SfComboBox();
-inputLayout.Hint = "Country name";
 List<String> countryNames = new List<String>();
 countryNames.Add("Uganda");
 countryNames.Add("Ukraine");
@@ -200,10 +193,9 @@ countryNames.Add("China");
 countryNames.Add("United States");
 countryNames.Add("Japan");
 combobox.DataSource = countryNames;
-inputLayout.InputView = combobox;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![combobox](Supported-input-views-images/textInput_input_img6.PNG)
+![Combobox](Supported-input-views-images/textInput_input_img6.PNG)

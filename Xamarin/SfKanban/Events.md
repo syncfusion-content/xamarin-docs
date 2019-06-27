@@ -30,93 +30,24 @@ The default value of the `CardTappedCommandParameter` is `null`.
 
 {% tabs %}
 {% highlight xaml %}
-<kanban:SfKanban x:Name="kanban" CardTappedCommand="{Binding CardTappedCommand}" CardTappedCommandParameter="{Binding Source={x:Reference kanban}}" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ItemsSource="{Binding CardsSource}">
-    <kanban:SfKanban.Columns> 
-        <kanban:KanbanColumn x:Name="column1" Title="To Do"/>
-        <kanban:KanbanColumn x:Name="column2" Title="In Progress"/>
-        <kanban:KanbanColumn x:Name="column3" Title="Code Review"/>    
-        <kanban:KanbanColumn x:Name="column4" Title="Done"/>
-    </kanban:SfKanban.Columns>
-</kanban:SfKanban>
+<kanban:SfKanban  CardTappedCommand="{Binding CardTappedCommand}" CardTappedCommandParameter="1"/>
 {% endhighlight %}
 
 {% highlight c# %}
- public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-            column1.Categories = new List<object>() { "Open" };
-            column2.Categories = new List<object>() { "In Progress" };
-            column3.Categories = new List<object>() { "Code Review" };
-            column4.Categories = new List<object>() { "Closed" };
-        }
-    }
 
     public class ViewModel
     {
 
         public ViewModel()
         {
-            CardsSource = new ObservableCollection<KanbanModel>();
             CardTappedCommand = new Command<object>(CardTappedEvent);
-            CardsSource.Add(new KanbanModel()
-            {
-                ID = 1,
-                Title = "iOS - 1002",
-                ImageURL = "Image1.png",
-                Category = "Open",
-                Description = "Analyze customer requirements",
-                ColorKey = "Red",
-                Tags = new string[] { "Incident", "Customer" }
-            });
 
-            CardsSource.Add(new KanbanModel()
-            {
-                ID = 6,
-                Title = "Xamarin - 4576",
-                ImageURL = "Image2.png",
-                Category = "Open",
-                Description = "Show the retrieved data from the server in grid control",
-                ColorKey = "Green",
-                Tags = new string[] { "Story", "Customer" }
-            });
-
-            CardsSource.Add(new KanbanModel()
-            {
-                ID = 13,
-                Title = "UWP - 13",
-                ImageURL = "Image4.png",
-                Category = "In Progress",
-                Description = "Add responsive support to application",
-                ColorKey = "Brown",
-                Tags = new string[] { "Story", "Customer" }
-            });
-
-            CardsSource.Add(new KanbanModel()
-            {
-                ID = 2543,
-                Title = "Xamarin_iOS - 2543",
-                Category = "Code Review",
-                ImageURL = "Image3.png",
-                Description = "Check login page validation",
-                ColorKey = "Brown",
-                Tags = new string[] { "Story", "Customer" }
-            });
+            public ICommand CardTappedCommand { get; set; }
         }
-
-        public ObservableCollection<KanbanModel> CardsSource { get; set; }
-
-        public ICommand CardTappedCommand { get; set; }
 
         private void CardTappedEvent(object args)
         {
-            KanbanTappedEventArgs paramerter = args as KanbanTappedEventArgs;
-            var column = paramerter.Column;
-            var index = paramerter.Index;
-            KanbanModel model = paramerter.Data as KanbanModel;
-            model.Title = "Sync";
-            model.ID = 555;
+            //  handle event action.
         }
     }
 {% endhighlight %}

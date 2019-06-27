@@ -29,18 +29,7 @@ The default value of the `CardTappedCommandParameter` is `null`.
 {% tabs %}
 {% highlight xaml %}
 
-<cards:SfCardLayout CardTappedCommand="{Binding CardTappedCommand}">
-		<cards:SfCardView>
-			<Label Text="Cyan" BackgroundColor="Cyan" />
-		</cards:SfCardView>
-
-		<cards:SfCardView>
-			<Label Text="Yellow" BackgroundColor="Yellow" />
-		</cards:SfCardView>
-
-		<cards:SfCardView>
-			<Label Text="Orange" BackgroundColor="Orange" />
-		</cards:SfCardView>
+<cards:SfCardLayout CardTappedCommand="{Binding CardTappedCommand}" CardTappedCommandParameter= "1">
 </cards:SfCardLayout>
 {% endhighlight %}
 

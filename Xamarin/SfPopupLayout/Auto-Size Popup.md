@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Auto-Size Xamarin.Forms Popup | SfPopupLayout |Xamarin | Syncfusion
-description: Auto-Size / AutoFit popup's content in Xamarin.Forms PopupLayout.
+title: Auto-size Xamarin.Forms Popup | SfPopupLayout |Xamarin | Syncfusion
+description: Auto-size / Auto-fit Popup's content in Xamarin.Forms SfPopupLayout.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
---- 
+---
 
-# Auto-Size Popup
+# Auto-size Popup
 
-The `SfPopupLayout` can auto size the popup view based on the contents loaded inside its `SfPopupLayout.PopupView.ContentTemplate` property using the `SfPopupLayout.PopupView.AutoSizeMode` property. The default value is `AutoSizeMode.None`. You can choose to auto size the popup in height, width or in both height and width of its contents. By default the `HeightRequest` and `WidthRequest` set to the `SfPopupLayout.PopupView` or to the views loaded inside the template is given higher priority than the `AutoSizeMode`.
+The `SfPopupLayout` can auto-size the popup view based on the contents loaded inside its `SfPopupLayout.PopupView.ContentTemplate` property using the `SfPopupLayout.PopupView.AutoSizeMode` property. The default value is `AutoSizeMode.None`. You can choose to auto-size the Popup in height, width, or in both height and width of its contents. By default, the `HeightRequest` and `WidthRequest` are set to the `SfPopupLayout.PopupView` or the views loaded inside the template is given higher priority than the `AutoSizeMode`.
 
-Refer the below code snippet to auto size the popup in height based on the content loaded inside the `SfPopupLayout.PopupView.ContentTemplate` property.
+Refer to the following code snippet to auto-size the Popup in height based on the content loaded inside the `SfPopupLayout.PopupView.ContentTemplate` property.
 
 {% tabs %}
 
@@ -44,8 +44,8 @@ popUpLayout.PopupView.AutoSizeMode = AutoSizeMode.Height;
 
 {% endtabs %}
 
-Executing the above codes renders the following output in an Android device.
+Executing the above codes renders the following output in Android devices.
 
-![Auto height in Xamarin.Forms Popup](PopupLayout_images/PopupView_AutoSize_Height.png)
+![Auto-height in Xamarin.Forms Popup](PopupLayout_images/PopupView_AutoSize_Height.png)
 
-Sample Link: You can download the above sample code by clicking [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoSize_SfPopuplayout1703576210).
+You can download the above sample code by clicking the following link: [Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoSize_SfPopuplayout1703576210).

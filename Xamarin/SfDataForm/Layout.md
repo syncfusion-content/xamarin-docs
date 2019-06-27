@@ -944,7 +944,7 @@ You can define the `Height` as described as follows.
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDataFormItemEventArgs e)
 {
-   if (e.DataFormItem != null && e.DataFormItem.Name == "Name")
+   if (e.DataFormItem != null)
      {
          if (e.DataFormItem.Name == "Experience" || e.DataFormItem.Name == "Rating" || e.DataFormItem.Name == "Recommend")
          {

@@ -912,9 +912,9 @@ namespace Popup_Demo
 Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/how-to-set-background-color-for-popupview-in-xamarin-popup).
 
 
-## How to prevent popup from closing when pressing the back navigation button
+## How to prevent the Popup from being closed when pressing the back navigation button
 
-By default, the popup will be closed whenever the back navigation button is pressed in an android device. To prevent the popup from closing when the back navigation button is pressed, set `False` to the `SfPopupLayout.ClosePopupOnBackButtonPressed` property.
+By default, the Popup will be closed whenever the back navigation button is pressed in Android devices. To prevent the Popup from being closed when the back navigation button is pressed, set `False` to the `SfPopupLayout.ClosePopupOnBackButtonPressed` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -926,9 +926,9 @@ By default, the popup will be closed whenever the back navigation button is pres
 {% endhighlight %}
 {% endtabs %}
 
-## How to show overlay background always in xamarin popup?
+## How to show overlay background always in Xamarin.Forms Popup?
 
-By default the overlay background will not be shown around the popup if the `WidthRequest`, `HeightRequest`, `StartX` and `StartY` properties are all set to the `SfPopupLayout.PopupView`. For cases where the overlay background should always be shown around the popup, set `True` to the `SfPopupLayout.ShowOverlayAlways` property.
+By default, the overlay background will not be shown around the Popup if all the `WidthRequest`, `HeightRequest`, `StartX`, and `StartY` properties are set to `SfPopupLayout.PopupView`. For cases where the overlay background should always be shown around the Popup, set `True` to the `SfPopupLayout.ShowOverlayAlways` property.
 
 {% tabs %}
 {% highlight xaml %}

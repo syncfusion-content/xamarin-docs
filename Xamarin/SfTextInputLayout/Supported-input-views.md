@@ -132,7 +132,7 @@ inputLayout.InputView = new SfNumericTextBox() { Value = 123.45, FormatString="c
 
 ![Numerictextbox](Supported-input-views-images/textInput_input_img4.PNG)
 
-## Auto complete
+## Autocomplete
 
 To initialize the Autocomplete control and launch it in each platform, refer to the [getting started with auto complete](https://help.syncfusion.com/xamarin/sfautocomplete/getting-started) documentation.
 
@@ -140,19 +140,32 @@ To initialize the Autocomplete control and launch it in each platform, refer to 
 
 {% highlight xaml %} 
 
-<inputLayout:SfTextInputLayout Hint="Country name">
-   <autocomplete:SfAutoComplete x:Name="autoComplete" AutoCompleteMode="SuggestAppend"/>
+<inputLayout:SfTextInputLayout Hint="Country">
+   <autocomplete:SfAutoComplete  AutoCompleteMode="SuggestAppend">
+      <autocomplete:SfAutoComplete.AutoCompleteSource>
+         <ListCollection:List x:TypeArguments="x:String">
+         	<x:String> United Kingdom </x:String>
+            <x:String> United States </x:String>
+            <x:String> United Republic of Tanzania </x:String>
+         </ListCollection:List>
+      </autocomplete:SfAutoComplete.AutoCompleteSource>
+   </autocomplete:SfAutoComplete>
 </inputLayout:SfTextInputLayout>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
+var autoComplete = new SfAutoComplete();
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Country"; 
 List<String> countryNames = new List<String>();
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
 countryNames.Add("United Republic of Tanzania");
+autoComplete.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
 autoComplete.DataSource = countryNames;
+inputLayout.InputView = autoComplete; 
 
 {% endhighlight %}
 
@@ -168,19 +181,31 @@ To initialize the ComboBox control and launch it in each platform, refer to the 
 
 {% highlight xaml %} 
 
-<inputLayout:SfTextInputLayout Hint="Country name">
-   <combobox:SfComboBox  x:Name="combobox"/>
+<inputLayout:SfTextInputLayout Hint="Country">
+   <combobox:SfComboBox>
+      <combobox:SfComboBox.ComboBoxSource>
+         <ListCollection:List x:TypeArguments="x:String">
+         	<x:String> Afghanistan </x:String>
+            <x:String> Akrotiri </x:String>
+            <x:String> Albania </x:String>
+         </ListCollection:List>
+      </combobox:SfComboBox.ComboBoxSource>
+   </combobox:SfComboBox>
 </inputLayout:SfTextInputLayout> 
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
+var combobox = new SfComboBox();
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Country"; 
 List<String> countryNames = new List<String>();
 countryNames.Add("Afghanistan");
 countryNames.Add("Akrotiri");
 countryNames.Add("Albania");
 combobox.DataSource = countryNames;
+inputLayout.InputView = combobox; 
 
 {% endhighlight %}
 

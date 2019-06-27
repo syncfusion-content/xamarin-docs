@@ -33,6 +33,7 @@ I> Cursor color of the input view will be same as the `Accent` color of the appl
 
 {% highlight C# %} 
 
+var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "User name";
 inputLayout.FocusedColor = Color.FromHex("#00AFA0");
 inputLayout.ErrorText = "User name available";
@@ -64,6 +65,7 @@ N> Thickness of the border will also vary between the focused and unfocused stat
 
 {% highlight C# %} 
 
+var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "User name";
 inputLayout.UnfocusedColor = Color.Silver;
 inputLayout.ErrorText = "User name available";
@@ -94,6 +96,7 @@ The error color can also be customized by setting the [ErrorColor](https://help.
 
 {% highlight C# %} 
 
+var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name";
 inputLayout.ErrorColor = Color.FromHex("#B00020");
 inputLayout.ErrorText = "Should not contain special characters";
@@ -129,6 +132,7 @@ The color of the container is customized when the [ContainerType](https://help.s
 
 {% highlight C# %} 
 
+var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name";
 inputLayout.FocusedColor = Color.FromHex("#0450C2");
 inputLayout.ContainerBackgroundColor = Color.FromHex("#E6EEF9");
@@ -161,6 +165,7 @@ The color of the container is customized when the [ContainerType](https://help.s
 
 {% highlight C# %} 
 
+var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name";
 inputLayout.ContainerType = ContainerType.Outlined;
 inputLayout.FocusedColor = Color.FromHex("#0450C2");
@@ -191,6 +196,7 @@ The text input layout is disabled by setting the [IsEnabled](https://help.syncfu
 
 {% highlight C# %} 
 
+var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name";
 inputLayout.IsEnabled = false;
 inputLayout.InputView = new Entry(); 

@@ -111,7 +111,7 @@ public partial class MainPage : ContentPage
 
         private void VisibleCardIndexChanging(object sender, Syncfusion.XForms.Cards.VisibleCardIndexChangingEventArgs e)
         {
-            // TODO: handle event action.
+           // handle event action.
         }
 	}
 

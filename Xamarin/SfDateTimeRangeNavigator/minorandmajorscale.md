@@ -50,7 +50,7 @@ The [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
 
 {% tabs %}
 {% highlight xaml %}
-<rangenavigator:SfDateTimeRangeNavigator Minimum="1/1/2015" Maximum="1/1/2016" ViewRangeStart="5/1/201" 
+<rangenavigator:SfDateTimeRangeNavigator Minimum="1/1/2015" Maximum="1/1/2016" ViewRangeStart="5/1/2015" 
 	ViewRangeEnd="9/1/2016">
 
 	<rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
@@ -95,13 +95,34 @@ dateTime.MinorScaleStyle.SelectedLabelFontSize = 20;
 
 The users can also control the visibility of minor scale and major scale using the  [`MajorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) and [`MinorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) properties.
 
+### Hide minor scale
+
 {% tabs %}
 {% highlight xaml %}
     <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" Maximum="2019,01,01">
         <rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
             <rangenavigator:ScaleStyle IsVisible="false" />
             </rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
-        
+    </rangenavigator:SfDateTimeRangeNavigator>
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator();
+dateTime.Minimum = new DateTime(2015, 01, 01);
+dateTime.Maximum = new DateTime(2019, 01, 01);
+dateTime.MinorScaleStyle.IsVisible = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![MinorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img3.png)
+
+### Hide major scale
+
+{% tabs %}
+{% highlight xaml %}
+    <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" Maximum="2019,01,01">        
         <rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
             <rangenavigator:ScaleStyle IsVisible="false" />
         </rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
@@ -114,12 +135,11 @@ SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator();
 dateTime.Minimum = new DateTime(2015, 01, 01);
 dateTime.Maximum = new DateTime(2019, 01, 01);
 dateTime.MajorScaleStyle.IsVisible = false;
-dateTime.MinorScaleStyle.IsVisible = false;
+
+![MajorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img4.png)
 
 {% endhighlight %}
 {% endtabs %}
-
-![Visibility](minorandmajorscale_images/minorandmajorscale_img3.png)
 
 ## MinorScaleLabelsCreated event
 

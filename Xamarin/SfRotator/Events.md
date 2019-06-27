@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ItemTapped of Syncfusion Xamarin.Forms SfRotator
+title: Events in Syncfusion Xamarin.Forms SfRotator
 description: How to use a ItemTapped  for Xamarin.Forms SfRotator
 platform: xamarin 
 control: Rotator 

@@ -231,6 +231,38 @@ this.Content = calendar;
  
 ![YearView in Xamarin.Forms Calendar](images/xamarin.forms-calendar-yearview-customization.jpg)
 
+## Year view mode
+
+You can set the year view as either date or month using [YearViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~YearViewMode.html). By default, current year and months will be displayed. 
+
+* If the `YearViewMode` is date,it will be displays all the months with dates in a particular year view.
+* If the `YearViewMode` is month,it will be displays all the months in a particular year view.
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="YearView" YearViewMode="Date"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfCalendar calendar = new SfCalendar();
+calendar.ViewMode=ViewMode.YearView;
+calendar.YearViewMode = YearViewMode.Date;
+this.Content = calendar;
+ 
+{% endhighlight %}
+
+{% endtabs %}
+ 
+
+N>
+* The `YearViewMode` property is only applicable for calendar in Android and iOS platforms.
+
+
 ## Year view customization
 
 We can customize the calendar view in yearView mode by using [YearViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings.html). 
@@ -272,36 +304,6 @@ this.Content = calendar;
 
 ![Year View in Xamarin.Forms Calendar ](images/xamarin.Forms-Calendar-year-view-settings.jpg)
 
-## Year view mode
-
-You can set the year view as either date or month using [YearViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~YearViewMode.html). By default, current year and months will be displayed. 
-
-* If the `YearViewMode` is date,it will be displays all the months with dates in a particular year view.
-* If the `YearViewMode` is month,it will be displays all the months in a particular year view.
-
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:SfCalendar  x:Name="calendar" ViewMode="YearView" YearViewMode="Date"/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfCalendar calendar = new SfCalendar();
-calendar.ViewMode=ViewMode.YearView;
-calendar.YearViewMode = YearViewMode.Date;
-this.Content = calendar;
- 
-{% endhighlight %}
-
-{% endtabs %}
- 
-
-N>
-* The `YearViewMode` property is only applicable for calendar in Android and iOS platforms.
 
 ## Decade view
 

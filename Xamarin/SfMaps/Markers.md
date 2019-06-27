@@ -282,13 +282,6 @@ Based on the background color of the shapes, contrast color will be applied to m
             shapeSetting.ColorMappings.Add(colorMapping);
             shapeSetting.ColorMappings.Add(colorMapping1);
             layer.ShapeSettings = shapeSetting;
-
-            MapMarkerSetting markerSetting = new MapMarkerSetting();
-
-            markerSetting.MarkerIcon = MapMarkerIcon.Square;
-
-            layer.MarkerSettings = markerSetting;
-
             this.Content = map;
 
 

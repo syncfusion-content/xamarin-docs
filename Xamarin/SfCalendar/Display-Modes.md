@@ -287,7 +287,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Year View in Xamarin.Forms Calendar ](images/xamarin.Forms-Calendar-year-view-settings.png)
+![Year View in Xamarin.Forms Calendar ](images/xamarin.Forms-Calendar-year-view-settings.jpg)
 
 
 ## Decade view

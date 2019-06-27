@@ -29,7 +29,7 @@ autoComplete.DataSource = countryNames;
 
 {% endtabs %}
 
-![images](images/Maximum-display-item-with-Expander/NoResultsFound.png)
+![NoResultsFound](images/Maximum-display-item-with-Expander/NoResultsFound.png)
 
 ## Customizing NoResultsFoundText
 
@@ -57,4 +57,4 @@ autoComplete.DataSource = countryNames;
 
 {% endtabs %}
 
-![images](images/Maximum-display-item-with-Expander/NoResultsFoundText_Customization.jpg)
+![NoResultsFoundText_Customization](images/Maximum-display-item-with-Expander/NoResultsFoundText_Customization.jpg)

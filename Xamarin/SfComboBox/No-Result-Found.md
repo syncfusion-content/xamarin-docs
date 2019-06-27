@@ -105,4 +105,4 @@ comboBox.ComboBoxSource = new List<string>() { "Uganda", "Great Britain", "Ukrai
 
 {% endtabs %}
 
-![images](images/NoResult/NoResultsFoundText_Customization.jpg)
+![NoResultsFoundText_Customization](images/NoResult/NoResultsFoundText_Customization.jpg)

@@ -455,5 +455,5 @@ Floating label layout not support for the below listed non editable editors.
 * Radiogroup editor
 * Segment editor
 * Checkbox editor
-* Swich editor
+* Switch editor
 * Dropdown editor

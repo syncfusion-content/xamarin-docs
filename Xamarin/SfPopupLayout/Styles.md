@@ -245,9 +245,9 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ## Styling overlay background
 
-The SfPopupLayout allows customizing the opacity and the background color of the overlay using the `SfPopupLayout.PopupView.PopupStyle.OverlayColor` and `SfPopupLayout.PopupView.PopupStyle.OverlayOpacity` properties respectively.
+The SfPopupLayout allows to customize the opacity and the background color of overlay using the `SfPopupLayout.PopupView.PopupStyle.OverlayOpacity` and `SfPopupLayout.PopupView.PopupStyle.OverlayColor` properties, respectively.
 
-Refer the following code example for customizing the overlay opacity and background color.
+Refer to the following code example for customizing the overlay opacity and the background color.
 
 {% tabs %}
 
@@ -273,6 +273,6 @@ Refer the following code example for customizing the overlay opacity and backgro
 
 {% endtabs %}
 
-Executing the above codes renders the following output in an Android device.
+Executing the above codes renders the following output in Android devices.
 
 ![Popup with overlay customization](PopupLayout_images/PopupView_Overlay.png)

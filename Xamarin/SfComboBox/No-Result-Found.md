@@ -94,8 +94,8 @@ The `NoResultsFoundTextColor`, `NoResultsFoundFontSize`, `NoResultsFoundFontAttr
 
 {% highlight c# %}
 
-comboBox.NoResultsFoundText="No Results Found";
-comboBox.NoResultsFoundTextColor = Color.DarkGreen;
+comboBox.NoResultsFoundText="Country not in the list";
+comboBox.NoResultsFoundTextColor = Color.Blue;
 comboBox.NoResultsFoundFontSize = 20;
 comboBox.NoResultsFoundFontAttributes = FontAttributes.Bold;
 comboBox.NoResultsFoundFontFamily = "Pacifico.ttf"

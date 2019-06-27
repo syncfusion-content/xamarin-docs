@@ -997,4 +997,4 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
 
 {% endtabs %}
 
-![Data form item height in Xamarin.Forms DataForm](SfDataForm_images/xamarin.forms-DataFormItemHeight.png)
+![Data form item height in Xamarin.Forms DataForm](SfDataForm_images/xamarin.forms-Height.png)

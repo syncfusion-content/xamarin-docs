@@ -79,6 +79,35 @@ To launch the image editor in iOS, call the `SfImageEditorRenderer.Init()` metho
 
 {% endhighlight %}
 
+### Universal Windows Platform (UWP)
+
+You need to initialize the image editor view assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with image editor in Release mode in UWP platform.
+
+{% highlight c# %}
+// In App.xaml.cs
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+    {
+        …
+    	    rootFrame.NavigationFailed += OnNavigationFailed;
+    
+        // Add `using System.Reflection;`
+        List<Assembly> assembliesToInclude = new List<Assembly>();
+    
+        // Now, add all the assemblies your app uses                 
+        assembliesToInclude.Add(typeof(Syncfusion.SfImageEditor.XForms.UWP.SfImageEditorRenderer).GetTypeInfo().Assembly);
+		
+        // Replaces Xamarin.Forms.Forms.Init(e);        
+        Xamarin.Forms.Forms.Init(e, assembliesToInclude);	
+        …     
+    }
+
+{% endhighlight %}
+
+### Android
+
+The Android platform does not require any additional configuration to render the image editor.
+
 ## Initializing image editor
 
 1. Import SfImageEditor control namespace as `xmlns:syncfusion="clr-namespace:Syncfusion.SfImageEditor.XForms;assembly=Syncfusion.SfImageEditor.XForms` in XAML page.

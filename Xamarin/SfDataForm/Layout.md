@@ -929,7 +929,7 @@ dataForm.ScrollTo("ContactNumber")
 
 ## Changing the height of DataFormItem.
 
-You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Height.html) property, and it will be handled in the `AutoGeneratingDataFormItem` event.
+You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~Height.html) property, and it will be handled in the `AutoGeneratingDataFormItem` event.
 
 You can define the `Height` as described as follows.
 
@@ -946,18 +946,16 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
 {
    if (e.DataFormItem != null && e.DataFormItem.Name == "Name")
      {
-        if (e.DataFormItem.Name == "Experience")
-        {
-            e.DataFormItem.Height = GridLength.Auto;
-        }
-        if (e.DataFormItem.Name == "Rating")
-        {
-            e.DataFormItem.Height = GridLength.Auto;
-        }
-		if (e.DataFormItem.Name == "Recommend")
-        {
-            e.DataFormItem.Height = 200;
-        }
+         if (e.DataFormItem.Name == "Experience" || e.DataFormItem.Name == "Rating" || e.DataFormItem.Name == "Recommend")
+         {
+               e.DataFormItem.LabelPosition = LabelPosition.Left;
+               e.DataFormItem.Height = GridLength.Auto;
+         }
+         if (e.DataFormItem.Name == "Improvement")
+         {
+               e.DataFormItem.LabelPosition = LabelPosition.Left;
+               e.DataFormItem.Height = 200;
+         }
      }
 }
 {% endhighlight %}

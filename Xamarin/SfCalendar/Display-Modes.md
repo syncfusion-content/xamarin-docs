@@ -356,7 +356,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Decade view in Xamarin.Forms Calendar ](images/xamarin.forms-DecadeView-Custom.png)
+![Decade view customization in Xamarin.Forms Calendar ](images/xamarin.forms-DecadeView-Custom.png)
 
 ## Century view
 
@@ -380,7 +380,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Decade view in Xamarin.Forms Calendar ](images/xamarin.form-CenturyView.png)
+![Century view in Xamarin.Forms Calendar ](images/xamarin.form-CenturyView.png)
  
 ## Century view customization
 
@@ -424,7 +424,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Decade view in Xamarin.Forms Calendar ](images/xamarin.forms-CenturyView-Custom.png)
+![Century view customization in Xamarin.Forms Calendar ](images/xamarin.forms-CenturyView-Custom.png)
 
 
 

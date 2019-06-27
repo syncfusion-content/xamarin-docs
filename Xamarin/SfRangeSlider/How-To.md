@@ -109,6 +109,7 @@ The `DragStarted` event is raised when a thumb is dragged. After the thumb relea
 {% endhighlight %}
 
 ## How to trigger the ThumbTouchDown event?
+
 The `ThumbTouchDown` event occurs when touching the thumb. The argument contains the state of the thumb.
 
 `IsStartThumb` - Gets the state whether thumb touch down position is start or end. If the thumb touch down position is start, then `IsStartThumb` state is true. If it's end, then `IsStartThumb` state is false. It is a read only property.
@@ -121,6 +122,7 @@ The `ThumbTouchDown` event occurs when touching the thumb. The argument contains
 {% endhighlight %}
 
 ## How to trigger the ThumbTouchUp event?
+
 `IsStartThumb` - Gets the state whether thumb touch up position is start or end. If the thumb touch up position is start, then `IsStartThumb` state is true. If it's end, then IsStartThumb state is false. It is a read only property.
 
 {% highlight c# %}

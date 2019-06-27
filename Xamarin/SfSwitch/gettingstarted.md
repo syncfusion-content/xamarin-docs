@@ -12,24 +12,21 @@ documentation: ug
 
 This section explains you the steps to add the SfSwitch control with basic functionalities in Xamarin.Forms.
 
-* Adding SfSwitch reference
-* Launching an application on each platform with SfSwitch
-* Initializing SfSwitch
-* Perform an action based on state
-
 ## Adding SfSwitch reference
 
 You can add SfSwitch reference using one of the below methods.
 
-**Method** **1** **:** **Adding** **SfSwitch** **reference** **from** **nuget** **.** **org**
+**Method 1: Adding SfSwitch reference from nuget.org**
 
-Syncfusion Xamarin components are available in [`nuget.org`](https://www.nuget.org/#). To add switch control to your project, open the NuGet package manager in Visual Studio, search for Syncfusion.Xamarin.SfSwitch, and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/#). To add SfSwitch to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
 
-**Method** **2****:** **Adding** **SfSwitch** **reference** **from** **toolbox**
+![Add Packages](images/Adding SfTextInputLayout reference.png)
+
+**Method 2: Adding SfSwitch reference from toolbox**
 
 Syncfusion provides Xamarin Toolbox. Using this toolbox, you can drag the SfSwitch control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [`Toolbox`](https://help.syncfusion.com/xamarin/utility#toolbox).
 
-**Method** **3****:** **Adding** **SfSwitch** **assemblies** **manually** **from** **the** **installed** **location**
+**Method 3: Adding SfSwitch assemblies manually from the installed location**
 
 If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
 
@@ -54,9 +51,15 @@ UWP<br/><br/></td><td>
 Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/><br/></td></tr>
 </table>
 
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
 ## Launching an application on each platform with SfSwitch
 
 To use the SfSwitch inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
+
+N> If you are adding the references from toolbox, below steps are not needed.   
 
 **iOS**
 
@@ -199,3 +202,5 @@ private void SfSwitch_StateChanged (object sender, EventArgs e)
 {% endhighlight %}
 
 {% endtabs %}
+
+You can find the complete getting started sample from this `link`

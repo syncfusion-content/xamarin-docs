@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Set size to Xamarin.Forms Popup | SfPopupLayout |Xamarin | Syncfusion
+title: Popup size | Fullscreen | Auto-size | Popup | Xamarin | Syncfusion
 description: Display popup at a desired size, or show popup in full screen or Auto-size/Auto-fit Popup's content in Xamarin.Forms SfPopupLayout.
 platform: Xamarin
 control: SfPopupLayout

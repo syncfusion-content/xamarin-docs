@@ -127,3 +127,26 @@ The value is updated when you touch or move the thumb/knob.
 {% endhighlight %}
 
 {% endtabs %}
+
+
+## Value
+
+Gets or sets the range value, which ranges between Minimum and Maximum. The default value of RangeSlider is 0.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" Minimum="0" Maximum="100" Value="30"/>
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+            rangeslider.Value = 30;
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![Range value in SfRangeSlider in Xamarin.Forms](images/Value.jpg)

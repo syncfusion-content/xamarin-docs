@@ -156,6 +156,149 @@ The shape of a marker icon can be customized using the [`MarkerIcon`](https://he
 
 ![Marker Icon Image](Images/Marker_icon_type.png)
 
+### Setting contrast color
+
+Based on the background color of the shapes, contrast color will be applied to marker icon.
+
+{% tabs %}
+
+{% highlight xml %}
+
+            <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
+                <maps:SfMaps.Layers >
+                    <maps:ShapeFileLayer x:Name="layer" Uri="usa_state.shp" ShapeIDPath="State" ShowMapItems="False"
+                                         ShapeIDTableField="STATE_NAME">
+
+                        <maps:ShapeFileLayer.Markers>
+                            <maps:MapMarker  Latitude = "37" Longitude = "-120">
+                            </maps:MapMarker>
+                            <maps:MapMarker  Latitude = "31" Longitude = "-97">
+                            </maps:MapMarker>
+                            <maps:MapMarker  Latitude = "41" Longitude = "-92">
+                            </maps:MapMarker>
+                            <maps:MapMarker  Latitude = "38" Longitude = "-98">
+                            </maps:MapMarker>
+                            <maps:MapMarker  Latitude = "41" Longitude = "-99">
+                            </maps:MapMarker>
+                        </maps:ShapeFileLayer.Markers>
+
+                        <maps:ShapeFileLayer.ShapeSettings>
+                            <maps:ShapeSetting ShapeColorValuePath="Candidate" ShapeValuePath="Candidate">
+                                <maps:ShapeSetting.ColorMappings>
+
+                                    <maps:EqualColorMapping Color="#FFD84F" LegendLabel="Romney"
+                                                            Value = "Romney"></maps:EqualColorMapping>
+                                    <maps:EqualColorMapping Color="#316DB5" LegendLabel="Obama"
+                                                            Value="Obama"></maps:EqualColorMapping>
+                                </maps:ShapeSetting.ColorMappings>
+                            </maps:ShapeSetting>
+                        </maps:ShapeFileLayer.ShapeSettings>
+
+                        <maps:ShapeFileLayer.LegendSettings>
+                            <maps:MapLegendSetting ShowLegend="True" 
+                                                   LegendPosition="30,70">
+                                <maps:MapLegendSetting.IconSize>
+                                    <Size Width="20" Height="20"></Size>
+                                </maps:MapLegendSetting.IconSize>
+                            </maps:MapLegendSetting>
+                        </maps:ShapeFileLayer.LegendSettings>
+
+                    </maps:ShapeFileLayer>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+       	SfMaps map = new SfMaps();
+
+            ShapeFileLayer layer = new ShapeFileLayer();
+
+		 layer.ItemsSource = viewModel.Data;
+
+            layer.Uri = "usa_state.shp";
+
+            map.Layers.Add(layer);
+
+            MapMarker marker = new MapMarker();
+
+            marker.Label = "California";
+
+            marker.Latitude = "37";
+
+            marker.Longitude = "-120";
+
+            layer.Markers.Add(marker);
+             MapLegendSetting legendSetting = new MapLegendSetting();
+             legendSetting.ShowLegend = true;
+             legendSetting.LegendPosition = new Point(30, 70);
+            legendSetting.IconSize = new Size(20, 20);
+            layer.LegendSettings = legendSetting;
+
+            MapMarker marker1 = new MapMarker();
+
+            marker1.Label = "California";
+
+            marker1.Latitude = "31";
+
+            marker1.Longitude = "-97";
+
+            layer.Markers.Add(marker1);
+       	 MapMarker marker2 = new MapMarker();
+
+            marker2.Label = "California";
+
+            marker2.Latitude = "41";
+
+            marker2.Longitude = "-92";
+
+            layer.Markers.Add(marker2);
+
+       	 MapMarker marker3 = new MapMarker();
+
+            marker3.Label = "California";
+
+            marker3.Latitude = "38";
+
+            marker3.Longitude = "-98";
+
+            layer.Markers.Add(marker3);
+       	 MapMarker marker4 = new MapMarker();
+
+            marker4.Label = "California";
+
+            marker4.Latitude = "41";
+
+            marker4.Longitude = "-99";
+
+            layer.Markers.Add(marker4);
+
+       	 EqualColorMapping colorMapping = new EqualColorMapping();
+            colorMapping.Color = Color.FromHex("#FFD84F");
+            colorMapping.LegendLabel = "Romney";
+            colorMapping.Value = "Romney";
+
+            EqualColorMapping colorMapping1 = new EqualColorMapping();
+            colorMapping1.Color = Color.FromHex("#316DB5");
+            colorMapping1.LegendLabel = "Obama";
+            colorMapping1.Value = "Obama";
+
+            ShapeSetting shapeSetting = new ShapeSetting();
+            shapeSetting.ShapeValuePath = "Candidate";
+            shapeSetting.ShapeColorValuePath = "Candidate";
+            shapeSetting.ColorMappings.Add(colorMapping);
+            shapeSetting.ColorMappings.Add(colorMapping1);
+            layer.ShapeSettings = shapeSetting;
+            this.Content = map;
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Marker icon color change based on background color support in Xamarin.Forms Maps](Images/MarkerIconContrastColor.jpg) 
+
 ### Setting image marker icon
 
 You can pin an image as marker icon by setting the icon type as `Image`. Set [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~ImageSource.html) to get the image from local path.

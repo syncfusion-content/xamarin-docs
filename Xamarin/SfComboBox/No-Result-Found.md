@@ -1,6 +1,6 @@
 ---
 layout: post
-title: NoResultsFoundText in Syncfusion SfComboBox control for Xamarin.Forms
+title: NoResultsFoundText in Syncfusion SfComboBox control for Forms
 description: Learn how to display the no result found text in SfComboBox
 platform: xamarin
 control: SfComboBox
@@ -78,3 +78,31 @@ namespace ComboBox_Sample
 {% endtabs %}
 
 ![NoResultsFound image](images/NoResult/NoResultFound.png)
+
+## Customizing NoResultsFoundText
+
+The `NoResultsFoundTextColor`, `NoResultsFoundFontSize`, `NoResultsFoundFontAttributes`, and `NoResultsFoundFontFamily` properties are used to customize the foreground color, font size, font attribute, and font family of NoResultsFoundText.
+{% tabs %}
+
+{% highlight xaml %}
+
+<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true"  NoResultsFoundText="No Results Found" NoResultsFoundTextColor="DarkGreen" NoResultsFoundFontSize="20" NoResultsFoundFontAttributes="Bold" NoResultsFoundFontFamily="Pacifico.ttf" />                    
+</StackLayout> 
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+comboBox.NoResultsFoundText="No Results Found";
+comboBox.NoResultsFoundTextColor = Color.DarkGreen;
+comboBox.NoResultsFoundFontSize = 20;
+comboBox.NoResultsFoundFontAttributes = FontAttributes.Bold;
+comboBox.NoResultsFoundFontFamily = "Pacifico.ttf"
+comboBox.ComboBoxSource = new List<string>() { "Uganda", "Great Britain", "Ukraine", "Canada", "France", "Italy", "United Kingdom", "China", "Japan" }; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![images](images/NoResult/NoResultsFoundText_Customization.jpg)

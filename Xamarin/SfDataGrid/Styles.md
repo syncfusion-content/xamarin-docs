@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styles | SfDataGrid | Xamarin | Syncfusion
+title: Styles | SfDataGrid | Xamarin.Forms | Syncfusion
 description: Apply styles for all the elements in Xamarin.Forms DataGrid. Customize the border, border color, sort icons and resizing indicator in the DataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Styles
+# Styles in Xamarin.Forms SfDataGrid
 
 The data grid applies style for all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html), and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
   
@@ -111,7 +111,7 @@ public class Dark : DataGridStyle
 
 The following picture shows the grid loaded in a different style:
 
-![DataGrdi with style customized](SfDataGrid_images/Style.png)
+![Xamarin.Forms DataGrid with style customized](SfDataGrid_images/Style.png)
 
 N> Xamarin.Forms.Style which has specified target type, that will not be applied to the internal components used in the SfDataGrid.
 
@@ -139,7 +139,7 @@ public class CustomGridStyle : DataGridStyle
 }
 {% endhighlight %}
 
-![DataGrid with alternate row style](SfDataGrid_images/AlternateRowStyle.png)
+![Xamarin.Forms DataGrid with alternate row style](SfDataGrid_images/AlternateRowStyle.png)
 
 ## Customizing the alternation count
 
@@ -154,7 +154,7 @@ dataGrid.AlternationCount = 3;
 
 {% endhighlight %}
 
-![DataGrid with alternate row style with alternation count customized](SfDataGrid_images/AlernationCount.png)
+![Xamarin.Forms DataGrid with alternate row style with alternation count customized](SfDataGrid_images/AlernationCount.png)
 
 ## Border customization
 
@@ -199,7 +199,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![DataGrid with both horizontal and vertical borders lines](SfDataGrid_images/BorderCustomization_Both.png)
+![Xamarin.Forms DataGrid with both horizontal and vertical borders lines](SfDataGrid_images/BorderCustomization_Both.png)
 
 ### Horizontal
 
@@ -214,7 +214,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![DataGrid with horizonal border lines](SfDataGrid_images/BorderCustomization_Horizontal.png)
+![Xamarin.Forms DataGrid with horizonal border lines](SfDataGrid_images/BorderCustomization_Horizontal.png)
 
 ### Vertical
 
@@ -229,7 +229,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![DataGrid with vertical border lines](SfDataGrid_images/BorderCustomization_Vertical.png)
+![Xamarin.Forms DataGrid with vertical border lines](SfDataGrid_images/BorderCustomization_Vertical.png)
 
 ### None
 
@@ -244,7 +244,7 @@ public override GridLinesVisibility GetGridLinesVisibility()
 
 The following screenshot shows the outcome upon execution of the above code:
 
-![DataGrid with no border lines](SfDataGrid_images/BorderCustomization_None.png)
+![Xamarin.Forms DataGrid with no border lines](SfDataGrid_images/BorderCustomization_None.png)
 
 ## Header border color customization
 
@@ -295,7 +295,7 @@ public class CustomStyle : DataGridStyle
 {% endhighlight %}
 
 The following screenshot shows the final outcome upon execution of the above code:
-![DataGrid with header border customization](SfDataGrid_images/HeaderBorderCustomization_Both.png)
+![Xamarin.Forms DataGrid with header border customization](SfDataGrid_images/HeaderBorderCustomization_Both.png)
 
 ## Customizing sort icons in the header
 
@@ -323,7 +323,7 @@ public class Custom : DataGridStyle
 {% endhighlight %}
 
 The following screenshots shows the final outcome of the above code:
-![DataGrid with sort icon customized](SfDataGrid_images/SortIconCustomization.png)
+![Xamarin.Forms DataGrid with sort icon customized](SfDataGrid_images/SortIconCustomization.png)
 
 N> The BuildAction image must be set to EmbeddedResource in order to access the image as resource as shown in above code.
 

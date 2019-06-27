@@ -934,8 +934,8 @@ You can define the height of each `DataFormItem` using the Height property, and 
 You can define the  height as described as follows.
 
 * You can directly set the exact height value; it considers the GridLength as GridUnitType.Absolute. 
-* You can use the `GridLength.Auto` to size the height of DataFormItem, so that it fits to the label text that it contains. 
-* You can use the `GridLength.Star` to display the default DataFormItem height. 
+* You can use the `GridLength.Auto` to size the height of `DataFormItem`, so that it fits to the label text that it contains. 
+* You can use the `GridLength.Star` to display the default `DataFormItem` height. 
 
 {% tabs %}
 

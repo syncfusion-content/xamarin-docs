@@ -162,7 +162,7 @@ autoComplete.DataSource = countryNames;
 
 ## Combo box
 
-To initialize the combo box control and launch it in each platform, refer to the [getting started with combo box](https://help.syncfusion.com/xamarin/sfcombobox/getting-started) documentation.
+To initialize the ComboBox control and launch it in each platform, refer to the [getting started with combo box](https://help.syncfusion.com/xamarin/sfcombobox/getting-started) documentation.
 
 {% tabs %} 
 

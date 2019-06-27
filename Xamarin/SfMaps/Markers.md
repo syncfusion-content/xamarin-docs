@@ -215,6 +215,8 @@ Based on the background color of the shapes, contrast color will be applied to m
 
             ShapeFileLayer layer = new ShapeFileLayer();
 
+		 layer.ItemsSource = viewModel.Data;
+
             layer.Uri = "usa_state.shp";
 
             map.Layers.Add(layer);
@@ -236,39 +238,39 @@ Based on the background color of the shapes, contrast color will be applied to m
 
             MapMarker marker1 = new MapMarker();
 
-            Marker1.Label = "California";
+            marker1.Label = "California";
 
-            Marker1.Latitude = "31";
+            marker1.Latitude = "31";
 
-            Marker1.Longitude = "-97";
+            marker1.Longitude = "-97";
 
             layer.Markers.Add(marker1);
        	 MapMarker marker2 = new MapMarker();
 
-            Marker2.Label = "California";
+            marker2.Label = "California";
 
-            Marker2.Latitude = "41";
+            marker2.Latitude = "41";
 
-            Marker2.Longitude = "-92";
+            marker2.Longitude = "-92";
 
             layer.Markers.Add(marker2);
 
        	 MapMarker marker3 = new MapMarker();
 
-            Marker3.Label = "California";
+            marker3.Label = "California";
 
-            Marker3.Latitude = "38";
+            marker3.Latitude = "38";
 
-            Marker3.Longitude = "-98";
+            marker3.Longitude = "-98";
 
             layer.Markers.Add(marker3);
        	 MapMarker marker4 = new MapMarker();
 
-            Marker4.Label = "California";
+            marker4.Label = "California";
 
-            Marker4.Latitude = "41";
+            marker4.Latitude = "41";
 
-            Marker4.Longitude = "-99";
+            marker4.Longitude = "-99";
 
             layer.Markers.Add(marker4);
 

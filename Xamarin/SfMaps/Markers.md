@@ -211,7 +211,7 @@ Based on the background color of the shapes, contrast color will be applied to m
 
 {% highlight c# %}
 
-       SfMaps map = new SfMaps();
+       	SfMaps map = new SfMaps();
 
             ShapeFileLayer layer = new ShapeFileLayer();
 
@@ -228,7 +228,13 @@ Based on the background color of the shapes, contrast color will be applied to m
             marker.Longitude = "-120";
 
             layer.Markers.Add(marker);
-       MapMarker marker1 = new MapMarker();
+             MapLegendSetting legendSetting = new MapLegendSetting();
+             legendSetting.ShowLegend = true;
+             legendSetting.LegendPosition = new Point(30, 70);
+            legendSetting.IconSize = new Size(20, 20);
+            layer.LegendSettings = legendSetting;
+
+            MapMarker marker1 = new MapMarker();
 
             Marker1.Label = "California";
 
@@ -237,7 +243,7 @@ Based on the background color of the shapes, contrast color will be applied to m
             Marker1.Longitude = "-97";
 
             layer.Markers.Add(marker1);
-       MapMarker marker2 = new MapMarker();
+       	 MapMarker marker2 = new MapMarker();
 
             Marker2.Label = "California";
 
@@ -247,7 +253,7 @@ Based on the background color of the shapes, contrast color will be applied to m
 
             layer.Markers.Add(marker2);
 
-       MapMarker marker3 = new MapMarker();
+       	 MapMarker marker3 = new MapMarker();
 
             Marker3.Label = "California";
 
@@ -256,7 +262,7 @@ Based on the background color of the shapes, contrast color will be applied to m
             Marker3.Longitude = "-98";
 
             layer.Markers.Add(marker3);
-       MapMarker marker4 = new MapMarker();
+       	 MapMarker marker4 = new MapMarker();
 
             Marker4.Label = "California";
 
@@ -266,7 +272,7 @@ Based on the background color of the shapes, contrast color will be applied to m
 
             layer.Markers.Add(marker4);
 
-       EqualColorMapping colorMapping = new EqualColorMapping();
+       	 EqualColorMapping colorMapping = new EqualColorMapping();
             colorMapping.Color = Color.FromHex("#FFD84F");
             colorMapping.LegendLabel = "Romney";
             colorMapping.Value = "Romney";

@@ -7,7 +7,7 @@ control: SfPopupLayout
 documentation: ug
 --- 
 
-# Popup Animations in Xamarin SfPopupLayout
+# Popup Animations
 
 Built-in animations are available in SfPopupLayout, which is applied when the PopupView opens and closes in the screen.
 The SfPopupLayout has different animation modes as listed below:
@@ -54,7 +54,7 @@ public MainPage()
 
 {% endtabs %}
 
-![Xamarin Popup with zoom animation](GettingStarted_images/ZoomAnimation.gif)
+![Popup with zoom animation](GettingStarted_images/ZoomAnimation.gif)
 
 ## Fade 
 
@@ -88,7 +88,7 @@ public MainPage()
 
 {% endtabs %}
 
-![Xamarin Popup with fade animation](GettingStarted_images/FadeAnimation.gif)
+![Popup with fade animation](GettingStarted_images/FadeAnimation.gif)
 
 ## SlideOnLeft 
 
@@ -122,7 +122,7 @@ public MainPage()
 
 {% endtabs %}
 
-![Xamarin Popup with slide on left animation](GettingStarted_images/SlideOnLeftAnimation.gif)
+![Popup with slide on left animation](GettingStarted_images/SlideOnLeftAnimation.gif)
 
 ## SlideOnRight
 
@@ -156,7 +156,7 @@ public MainPage()
 
 {% endtabs %}
 
-![Xamarin Popup with slide on right animation](GettingStarted_images/SlideOnRightAnimation.gif)
+![Popup with slide on right animation](GettingStarted_images/SlideOnRightAnimation.gif)
 
 ## SlideOnTop 
 
@@ -191,7 +191,7 @@ public MainPage()
 {% endtabs %}
 
 
-![Xamarin Popup with slide on top animation](GettingStarted_images/SlideOnTopAnimation.gif)
+![Popup with slide on top animation](GettingStarted_images/SlideOnTopAnimation.gif)
 
 ## SlideOnBottom
 
@@ -225,7 +225,7 @@ public MainPage()
 
 {% endtabs %}
 
-![Xamarin Popup with slide on bottom animation](GettingStarted_images/SlideOnBottomAnimation.gif)
+![Popup with slide on bottom animation](GettingStarted_images/SlideOnBottomAnimation.gif)
 
 ## None
 

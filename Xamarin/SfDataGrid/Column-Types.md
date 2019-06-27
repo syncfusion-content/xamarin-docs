@@ -50,6 +50,11 @@ The following table describes the types of columns and its usage:
 <td>To display the IEnumerable data using Picker.</td>
 </tr>
 <tr>
+<td>{{'[GridComboBoxColumn]()'| markdownify }}</td>
+<td>{{'[GridCellComboBoxRenderer]()'| markdownify }}</td>
+<td>To display the IEnumerable data using Picker.</td>
+</tr>
+<tr>
 <td>{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html)'| markdownify }}</td>
 <td>{{'[GridDateTimeColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Renderers.GridCellDateTimeRenderer.html)'| markdownify }}</td>
 <td>To display the date and time value.</td>
@@ -1195,6 +1200,301 @@ Upon entering the edit mode at RowColumnIndex(1,1), the Picker pop up opens with
 When edit mode is exited by selecting a value(9) from the Picker pop up, the `GridCell` at RowColumn index(0,1) displays the corresponding OrderID value for the selected EmployeeID value which is 4.
 
 ![Value changes in DataGrid when editing a Picker column with display member path](SfDataGrid_images/PickerColumn_Customization.png)
+
+## GridComboBoxColumn
+
+The `GridComboBoxColumn` inherits all the properties of the `SfDataGrid.GridColumn`. It displays a list of items in the form of a `SfComboBox` as the content of a column. To enable or disable editing for the particular column, set the `GridColumn.AllowEditing` property to true or false. In the editing mode it displays a `SfComboBox` element. The data source to SfComboBox can be set by using the `GridComboBoxColumn.ItemsSource` property. The combobox column can be populated with data by the following ways:
+
+* Collection of primitive types
+* Collection of user-defined types (Custom objects)
+
+![DataGrid with editing in comboBox column](SfDataGrid_images/GridComboBoxColumn.jpg)
+
+### Collection of primitive types
+
+To display the collection of items in the comboBox drop down, create a `GridComboBoxColumn` and set its `ItemsSource` property to a simple collection. 
+
+To load the `GridComboBoxColumn` with a simple string collection, follow the code example:
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.BindingContext>
+    <local:ViewModel x:Name="viewModel"/>
+</ContentPage.BindingContext>
+
+<sfGrid:SfDataGrid x:Name="dataGrid"                   
+                   ItemsSource="{Binding OrdersInfo}">
+    <sfGrid:SfDataGrid.Columns>
+        <sfgrid:GridComboBoxColumn BindingContext="{x:Reference viewModel}"
+                                 HeaderText="Dealer Name"                                 
+                                 ItemsSource="{Binding CustomerNames}"                                 
+                                 MappingName="DealerName"/>
+    </sfGrid:SfDataGrid.Columns>
+</sfGrid:SfDataGrid>
+{% endhighlight %}
+
+{% highlight c# %}
+dataGrid = new SfDataGrid();
+GridComboBoxColumn comboBoxColumn = new GridComboBoxColumn()
+{
+    BindingContext = viewModel,
+    MappingName = "DealerName",
+    ItemsSource = viewModel.CustomerNames,
+    HeaderText = "Dealer Name"
+
+};
+dataGrid.Columns.Add(comboBoxColumn);
+{% endhighlight %}
+{% endtabs %}
+
+{% highlight c# %}
+// ViewModel class
+public class ViewModel
+{
+    public ObservableCollection<string> CustomerNames { get; set; }
+
+    public ViewModel()
+    {
+        this.CustomerNames = Customers.ToObservableCollection();
+    }
+
+    internal string[] Customers = new string[] {"Adams","Crowley","Ellis","Gable","Irvine","Keefe","Mendoza","Owens","Rooney","Wadded",};
+    
+}
+{% endhighlight %}
+
+### Collection of user-defined types
+
+To display a list of user-defined items in the combo-box drop down, create a `SfDataGrid.GridComboBoxColumn` and set its `ItemsSource` property to a user-defined collection. Initially, the combo-box column will be displayed with the values from the `GridColumn.MappingName` property of the column if the `DisplayMemberPath` and `ValueMemberPath` are not set.
+
+For more details about the DisplayMemberPath and ValueMemberPath, Please refer [here](https://help.syncfusion.com/xamarin/sfdatagrid/column-types#collection-of-user-defined-types).
+
+### Customizing GridComboBoxColumn
+
+Editable element of the GridComboBoxColumn can be Customizing by using the custom `GridCellComboBoxRenderer`.
+
+Replace the default renderer with custom renderer in the SfDataGrid.CellRenderers collection.
+
+{% highlight c# %}
+this.dataGrid.CellRenderers.Remove("ComboBox");
+this.dataGrid.CellRenderers.Add("ComboBox", new CustomComboBoxRenderer());
+
+public class CustomComboBoxRenderer : GridCellComboBoxRenderer
+{
+    public override void OnInitializeEditView(DataColumnBase dataColumn, GridComboBox view)
+    {
+        base.OnInitializeEditView(dataColumn, view);
+        view.DropDownBackgroundColor = Color.LightBlue;
+        view.DropDownBorderColor = Color.Blue;
+        view.TextColor = Color.Brown;
+    }
+}
+{% endhighlight %}
+
+![DataGrid with Customizing comboBox column](SfDataGrid_images/CustomizingGridComboBox.jpg)
+
+### Loading Different ItemSource for each row of GridComboBoxColumn
+
+You can load the different ItemsSource to each row of GridComboBoxColumn by setting SfDataGrid.ItemsSourceSelector property.
+
+### Implementing IItemsSourceSelector
+
+`ItemsSourceSelector` needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
+
+* Record – data object associated with row.
+* Data Context – Binding context of data grid.
+
+In the below code, ItemsSource for ShipCity column returned based on ShipCountry column value using the record and Binding context of data grid passed to GetItemsSource method.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <local:ItemSourceSelector x:Key="converter"/>
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+<sfgrid:SfDataGrid x:Name="dataGrid"
+					ItemsSource="{Binding DealerInformation}"
+					AllowEditing="True"
+					AutoGenerateColumns="false"
+					NavigationMode="Cell"
+					EditTapAction="OnDoubleTap"
+					SelectionMode="Single">
+    <sfgrid:SfDataGrid.Columns>
+        <sfgrid:GridComboBoxColumn BindingContext="{x:Reference viewModel}"
+									ItemsSource="{Binding CountryList}"
+									MappingName="ShipCountry"
+									LoadUIView="True">
+        </sfgrid:GridComboBoxColumn>
+
+        <sfgrid:GridComboBoxColumn ItemsSourceSelector="{StaticResource converter}"
+									MappingName="ShipCity"
+									LoadUIView="True">
+        </sfgrid:GridComboBoxColumn>
+    </sfgrid:SfDataGrid.Columns>
+</sfgrid:SfDataGrid>
+{% endhighlight %}
+
+{% highlight c# %}
+public class ItemSourceSelector : IItemsSourceSelector
+{
+    public IEnumerable GetItemsSource(object record, object dataContext)
+    {
+        if (record == null)
+        {
+            return null;
+        }
+
+        var orderinfo = record as DealerInfo;
+        var countryName = orderinfo.ShipCountry;
+        var viewModel = dataContext as EditingViewModel;
+
+        // Returns ShipCity collection based on ShipCountry.
+        if (viewModel.ShipCities.ContainsKey(countryName))
+        {
+            string[] shipcities = null;
+            viewModel.ShipCities.TryGetValue(countryName, out shipcities);
+            return shipcities.ToList();
+        }
+
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![DataGrid with Customizing comboBox column](SfDataGrid_images/GridItemsSourceSelector.png)
+
+### Editing the combo box
+The `GridComboBoxColumn` supports both editable and non-editable text box to choose selected items in given data source. Users can select one item from the suggestion list.
+
+`IsEditableMode` property is used to enable the user input in `GridComboBoxColumn`. The default value is `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.BindingContext>
+    <local:ViewModel x:Name="viewModel"/>
+</ContentPage.BindingContext>
+
+<sfGrid:SfDataGrid x:Name="dataGrid"                   
+                   ItemsSource="{Binding OrdersInfo}">
+    <sfGrid:SfDataGrid.Columns>
+        <sfgrid:GridComboBoxColumn BindingContext="{x:Reference viewModel}"
+                                 HeaderText="Dealer Name"  
+                                 IsEditableMode="True"                               
+                                 ItemsSource="{Binding CustomerNames}"                                 
+                                 MappingName="DealerName"/>
+    </sfGrid:SfDataGrid.Columns>
+</sfGrid:SfDataGrid>
+{% endhighlight %}
+
+{% highlight c# %}
+dataGrid = new SfDataGrid();
+GridComboBoxColumn comboBoxColumn = new GridComboBoxColumn()
+{
+    BindingContext = viewModel,
+    MappingName = "DealerName",
+    ItemsSource = viewModel.CustomerNames,
+    IsEditableMode = True,
+    HeaderText = "Dealer Name"
+
+};
+dataGrid.Columns.Add(comboBoxColumn);
+{% endhighlight %}
+{% endtabs %}
+
+![DataGrid with Customizing comboBox column](SfDataGrid_images/EditableGridComboBox.jpg)
+
+### Auto completing on edit mode
+
+The auto completion on the edit mode can be enabled by using the `GridComboBoxColumn.AutoCompleteMode` property. Default value is Suggest. Following types of auto complete modes are available,
+
+* Append
+* Suggest
+* SuggestAppend
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.BindingContext>
+    <local:ViewModel x:Name="viewModel"/>
+</ContentPage.BindingContext>
+
+<sfGrid:SfDataGrid x:Name="dataGrid"                   
+                   ItemsSource="{Binding OrdersInfo}">
+    <sfGrid:SfDataGrid.Columns>
+        <sfgrid:GridComboBoxColumn BindingContext="{x:Reference viewModel}"
+                                 HeaderText="Dealer Name"  
+                                 IsEditableMode="True"
+                                 AutoCompleteMode="Suggest"                               
+                                 ItemsSource="{Binding CustomerNames}"                                 
+                                 MappingName="DealerName"/>
+    </sfGrid:SfDataGrid.Columns>
+</sfGrid:SfDataGrid>
+{% endhighlight %}
+
+{% highlight c# %}
+dataGrid = new SfDataGrid();
+GridComboBoxColumn comboBoxColumn = new GridComboBoxColumn()
+{
+    BindingContext = viewModel,
+    MappingName = "DealerName",
+    ItemsSource = viewModel.CustomerNames,
+    IsEditableMode = True,
+    AutoCompleteMode = ComboBoxMode.Suggest,
+    HeaderText = "Dealer Name"
+
+};
+dataGrid.Columns.Add(comboBoxColumn);
+{% endhighlight %}
+{% endtabs %}
+
+![DataGrid with Customizing comboBox column](SfDataGrid_images/AutoCompleteMode.jpg)
+
+### Auto suggesting on edit mode
+
+By default, auto suggestion in the dropdown will display the value based on the `StartsWith` filter condition. This can be changed to retrieve the matches with the Contains condition by using the `SuggestionMode` property.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.BindingContext>
+    <local:ViewModel x:Name="viewModel"/>
+</ContentPage.BindingContext>
+
+<sfGrid:SfDataGrid x:Name="dataGrid"                   
+                   ItemsSource="{Binding OrdersInfo}">
+    <sfGrid:SfDataGrid.Columns>
+        <sfgrid:GridComboBoxColumn BindingContext="{x:Reference viewModel}"
+                                 HeaderText="Dealer Name"  
+                                 IsEditableMode="True"
+                                 CanFilterSuggestions="True"
+                                 AutoCompleteMode="Suggest"
+                                 SuggestionMode="Contains"                               
+                                 ItemsSource="{Binding CustomerNames}"                                 
+                                 MappingName="DealerName"/>
+    </sfGrid:SfDataGrid.Columns>
+</sfGrid:SfDataGrid>
+{% endhighlight %}
+
+{% highlight c# %}
+dataGrid = new SfDataGrid();
+GridComboBoxColumn comboBoxColumn = new GridComboBoxColumn()
+{
+    BindingContext = viewModel,
+    MappingName = "DealerName",
+    ItemsSource = viewModel.CustomerNames,
+    IsEditableMode = True,
+    CanFilterSuggestions = true;
+    AutoCompleteMode = ComboBoxMode.Suggest,
+    SuggestionMode = SuggestionMode.Contains,
+    HeaderText = "Dealer Name"
+
+};
+dataGrid.Columns.Add(comboBoxColumn);
+{% endhighlight %}
+{% endtabs %}
+
+![DataGrid with Customizing comboBox column](SfDataGrid_images/AutoSuggestionMode.jpg)
 
 ## GridNumericColumn
 

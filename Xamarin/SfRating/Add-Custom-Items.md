@@ -195,6 +195,8 @@ public MainPage()
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![Add custom view in Xamarin.Forms](images/CustomviewItems.png)
  
 

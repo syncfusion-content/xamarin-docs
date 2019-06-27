@@ -126,16 +126,16 @@ button.VerticalTextAlignment = TextAlignment.Center;
 
 ## Background Customization
 
-The background of the button can be customized by its corner radius, border width, border color and background color.
+The background of the button can be customized by its background color, border color, border width and corner radius.
 
-### CornerRadius
+### BackgroundColor
 
-The `CornerRadius` property is used to customize the rounded edges in SfButton as demonstrated in the following code sample.
+The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BackgroundColor.html) property is used to customize the background color of SfButton.
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" CornerRadius="3">
+<button:SfButton x:Name="button" Text="Button" BackgroundColor = "DeepSkyBlue">
 </button:SfButton>
 
 {% endhighlight %}
@@ -143,33 +143,12 @@ The `CornerRadius` property is used to customize the rounded edges in SfButton a
 
 SfButton button = new SfButton();
 button.Text = "Button";
-button.CornerRadius = 3;
+button.BackgroundColor = Color.DeepSkyBlue;
 
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with cornerradius](images/Button_cornerradius.png)
-
-### BorderWidth
-
-The [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BorderWidth.html) property is used to customize the thickness of border in SfButton. 
-
-{% tabs %}
-{% highlight xaml %}
-
-<button:SfButton x:Name="button" Text="Button" BorderColor = "Red" BorderWidth="4">
-</button:SfButton>
-
-{% endhighlight %}
-{% highlight c# %}
-
-SfButton button = new SfButton();
-button.Text = "Button";
-button.BorderWidth = 4;
-button.BorderColor = Color.Red;
-
-{% endhighlight %}
-{% endtabs %}
+![SfButton with background color](images/Button_backgroundcolor.png)
 
 ### BorderColor
 
@@ -194,14 +173,14 @@ button.BorderColor = Color.Red;
 
 ![SfButton with border](images/Button_border.png)
 
-### BackgroundColor
+### BorderWidth
 
-The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BackgroundColor.html) property is used to customize the background color of SfButton.
+The [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BorderWidth.html) property is used to customize the thickness of border in SfButton. 
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" BackgroundColor = "DeepSkyBlue">
+<button:SfButton x:Name="button" Text="Button" BorderColor = "Red" BorderWidth="4">
 </button:SfButton>
 
 {% endhighlight %}
@@ -209,12 +188,33 @@ The [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Button
 
 SfButton button = new SfButton();
 button.Text = "Button";
-button.BackgroundColor = Color.DeepSkyBlue;
+button.BorderWidth = 4;
+button.BorderColor = Color.Red;
 
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with background color](images/Button_backgroundcolor.png)
+### CornerRadius
+
+The `CornerRadius` property is used to customize the rounded edges in SfButton as demonstrated in the following code sample.
+
+{% tabs %}
+{% highlight xaml %}
+
+<button:SfButton x:Name="button" Text="Button" CornerRadius="3">
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.CornerRadius = 3;
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with cornerradius](images/Button_cornerradius.png)
 
 ## Image Customization
 
@@ -315,6 +315,81 @@ button.ImageAlignment = Alignment.End;
 {% endtabs %}
 
 ![SfButton with image with icon image alignment](images/Button_iconalignment.png)
+
+## Gradient background
+
+You can set the gradient as background of SfButton using the [`BackgroundGradient`]() property. It supports the following types of gradients:
+
+* Linear gradient
+* Radial gradient
+
+N> UWP platform does not support radial gradient.
+
+Refer to this [documentation](https://help.syncfusion.com/xamarin/sfgradientview/customization) to learn more details about gradient.
+
+{% tabs %}
+{% highlight xaml %}
+
+xmlns:gradient ="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+
+. . . 
+
+<button:SfButton Text="Linear Gradient" CornerRadius="20">
+    <button:SfButton.BackgroundGradient>
+        <gradient:SfLinearGradientBrush>
+            <gradient:SfLinearGradientBrush.GradientStops>
+                <gradient:SfGradientStop Color="#2F9BDF" Offset="0"/>
+                <gradient:SfGradientStop Color="#51F1F2" Offset="1"/>
+            </gradient:SfLinearGradientBrush.GradientStops>
+        </gradient:SfLinearGradientBrush>
+    </button:SfButton.BackgroundGradient>
+</button:SfButton>
+
+<button:SfButton Text="Radial Gradient" CornerRadius="20">
+    <button:SfButton.BackgroundGradient>
+        <gradient:SfRadialGradientBrush Radius="1.5">
+            <gradient:SfRadialGradientBrush.GradientStops>
+                <gradient:SfGradientStop Color="#FFB57B" Offset="0"/>
+                <gradient:SfGradientStop Color="#FF5361" Offset="1"/>
+            </gradient:SfRadialGradientBrush.GradientStops>
+        </gradient:SfRadialGradientBrush>
+    </button:SfButton.BackgroundGradient>
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.XForms.Graphics;
+
+. . .
+
+SfButton linearButton = new SfButton();
+linearButton.Text = "Linear Gradient";
+linearButton.CornerRadius = 20;
+SfLinearGradientBrush linearGradientBrush = new SfLinearGradientBrush();
+linearGradientBrush.GradientStops = new GradientStopCollection()
+{
+    new SfGradientStop(){ Color = Color.FromHex("#2F9BDF"), Offset = 0 },
+    new SfGradientStop(){ Color = Color.FromHex("#51F1F2"), Offset = 1 }
+};     
+linearButton.BackgroundGradient = linearGradientBrush;
+
+SfButton radialButton = new SfButton();
+radialButton.Text = "Radial Gradient";
+radialButton.CornerRadius = 20;
+SfRadialGradientBrush radialGradientBrush = new SfRadialGradientBrush();
+radialGradientBrush.Radius = 1.5;
+radialGradientBrush.GradientStops = new GradientStopCollection()
+{
+    new SfGradientStop(){ Color = Color.FromHex("#FFB57B"), Offset = 0 },
+    new SfGradientStop(){ Color = Color.FromHex("#FF5361"), Offset = 1 }
+};
+radialButton.BackgroundGradient = radialGradientBrush;
+
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin.Forms gradient support](images/Button_gradient.png)
 
 ## Command
 

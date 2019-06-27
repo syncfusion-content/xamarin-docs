@@ -264,7 +264,7 @@ Validation label used to display the dataform validation messages such as valid 
 
 ### Counter label
 
-Counter label can be used to notify the character count limitation in given validation. It can be enabled by setting the `ShowCharCount` property to `true’. Character limit can be set using the `StringLength` attribute.
+Counter label can be used to notify the character count limitation in given validation. It can be enabled by setting the `ShowCharCount` property to `true`. Character limit can be set using the `StringLength` attribute.
 
 
 {% tabs %}

@@ -929,7 +929,7 @@ dataForm.ScrollTo("ContactNumber")
 
 ## Changing the height of DataFormItem.
 
-You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataFormItem~Height.html) property, and it will be handled in the `AutoGeneratingDataFormItem` event.
+You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Height.html) property, and it will be handled in the `AutoGeneratingDataFormItem` event.
 
 You can define the `Height` as described as follows.
 
@@ -954,7 +954,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
         {
             e.DataFormItem.Height = GridLength.Auto;
         }
-		 if (e.DataFormItem.Name == "Recommend")
+		if (e.DataFormItem.Name == "Recommend")
         {
             e.DataFormItem.Height = 200;
         }

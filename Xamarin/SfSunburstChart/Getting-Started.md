@@ -56,9 +56,55 @@ N> To know more about obtaining our components, refer to these links for [Mac](
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
-N> After adding the reference, an additional step is required for iOS and UWP projects. You should call Init method in the `SfSunburstChartRenderer` as shown in this [KB article](http://www.syncfusion.com/support/kb/7714). If you are adding the references from toolbox, this step is not needed.
+## Launching an application on each platform with SfSunburstChart.
 
-N> For UWP alone, one more additional step is required if the project is still in built-in release mode with .NET Native tool chain enabled. You can refer to the [KB article](http://www.syncfusion.com/support/kb/7715) for more details.
+To use the SfSunburstChart control inside an application, each platform requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
+
+N> If you are adding the references from toolbox, this step is not needed.
+
+### iOS
+
+To launch the SfSunburstChart in iOS, call the `SfSunburstChartRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called, as demonstrated in the following code example.
+
+{% highlight c# %}
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{
+    …
+    global::Xamarin.Forms.Forms.Init ();
+    Syncfusion.SfSunburstChart.XForms.iOS.SfSunburstChartRenderer.Init();
+    LoadApplication (new App ());
+    …
+}
+{% endhighlight %} 
+
+### Universal Windows Platform (UWP)
+
+You need to initialize the sunburst view assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with sunburst in Release mode in UWP platform.
+
+{% highlight c# %}
+// In App.xaml.cs
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+    {
+        …
+    	    rootFrame.NavigationFailed += OnNavigationFailed;
+    
+        // Add `using System.Reflection;`
+        List<Assembly> assembliesToInclude = new List<Assembly>();
+    
+        // Now, add all the assemblies your app uses                 
+        assembliesToInclude.Add(typeof(Syncfusion.SfSunburstChart.XForms.UWP.SfSunburstChartRenderer).GetTypeInfo().Assembly);
+		
+        // Replaces Xamarin.Forms.Forms.Init(e);        
+        Xamarin.Forms.Forms.Init(e, assembliesToInclude);	
+        …     
+    }
+
+{% endhighlight %}
+
+### Android
+
+The Android platform does not require any additional configuration to render the sunburst.
 
 ## Initialize sunburst chart
 

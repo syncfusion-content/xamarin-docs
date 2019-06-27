@@ -248,13 +248,13 @@ You can change the default index of the color palette in toolbar. By default, co
 
 {% highlight XAML %}
   
-    <imageeditor:SfImageEditor x:Name="editor" DefaultSelectedColorIndex="3"/>
+    <imageeditor:SfImageEditor x:Name="editor" DefaultSelectedColorIndex="0"/>
       
 {% endhighlight %}
 
 {% highlight C# %}
 
-    editor.DefaultSelectedColorIndex = 3;
+    editor.DefaultSelectedColorIndex = 0;
 
 {% endhighlight %}
 

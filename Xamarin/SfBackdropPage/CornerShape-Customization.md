@@ -45,8 +45,6 @@ this.FrontLayer = new BackdropFrontLayer()
 
 {% endtabs %}
 
->**NOTE**
-Flat type shape is not currently available for UWP platform.
 
 
 

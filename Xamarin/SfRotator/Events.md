@@ -49,7 +49,7 @@ The ItemTapped event will be triggered whenever tapping the item.
     </ContentPage.Content>
 </ContentPage>
 
-{% tabs %}
+{% endhighlight %}
 
 {% highlight C# %}
 

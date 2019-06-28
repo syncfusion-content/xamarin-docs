@@ -266,6 +266,8 @@ this.Content = sfSwitch;
 
 ![switch conrol with gradient](images/gradient.png)
 
+N> If you want to add `SfLinearGradientBrush`, refer the [`Syncfusion.Xamarin.Core`](https://www.nuget.org/packages/Syncfusion.Xamarin.Core) from [`nuget.org`](https://www.nuget.org/). To know more about gradient view refer this [`link`](https://help.syncfusion.com/xamarin/sfgradientview/getting-started).
+
 ## Sizing
 
 In the switch control, sizing of the thumb and the track can be controlled using the following properties:

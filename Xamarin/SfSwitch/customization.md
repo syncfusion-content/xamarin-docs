@@ -133,7 +133,7 @@ this.Content = sfSwitch;
 
 ## Gradients
 
-You can also specify a range of colors in thumb and track using ThumbGradientColor and TrackGradientColor as demonstrates in the following code example.
+You can also specify a range of colors in thumb and track using ThumbGradient and TrackGradient as demonstrates in the following code example.
 
 {% tabs %}
 
@@ -148,7 +148,7 @@ You can also specify a range of colors in thumb and track using ThumbGradientCol
                             <Setter.Value>
                                 <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OnState">
 
-                                    <syncfusion:DefaultSwitchSettings.ThumbGradientColor>
+                                    <syncfusion:DefaultSwitchSettings.ThumbGradient>
                                         <graphics:SfLinearGradientBrush>
                                             <graphics:SfLinearGradientBrush.GradientStops>
                                                 <graphics:GradientStopCollection>
@@ -158,9 +158,9 @@ You can also specify a range of colors in thumb and track using ThumbGradientCol
                                                 </graphics:GradientStopCollection>
                                             </graphics:SfLinearGradientBrush.GradientStops>
                                         </graphics:SfLinearGradientBrush>
-                                 </syncfusion:DefaultSwitchSettings.ThumbGradientColor>
+                                 </syncfusion:DefaultSwitchSettings.ThumbGradient>
 
-                                    <syncfusion:DefaultSwitchSettings.TrackGradientColor>
+                                    <syncfusion:DefaultSwitchSettings.TrackGradient>
                                         <graphics:SfLinearGradientBrush>
                                             <graphics:SfLinearGradientBrush.GradientStops>
                                                 <graphics:GradientStopCollection>
@@ -171,7 +171,7 @@ You can also specify a range of colors in thumb and track using ThumbGradientCol
                                                 </graphics:GradientStopCollection>
                                             </graphics:SfLinearGradientBrush.GradientStops>
                                         </graphics:SfLinearGradientBrush>
-                                    </syncfusion:DefaultSwitchSettings.TrackGradientColor>
+                                    </syncfusion:DefaultSwitchSettings.TrackGradient>
 
                                 </syncfusion:DefaultSwitchSettings>
                             </Setter.Value>
@@ -211,7 +211,7 @@ sfGradientStops.Add(sfGradientStop2);
 
 sfLinearGradientBrush.GradientStops = sfGradientStops;
 
-defaultSwitch.ThumbGradientColor = sfLinearGradientBrush;
+defaultSwitch.ThumbGradient = sfLinearGradientBrush;
 
 SfLinearGradientBrush sfLinearGradientBrush1 = new SfLinearGradientBrush();
 
@@ -239,7 +239,7 @@ sfGradientStops1.Add(sfGradientStop6);
 
 sfLinearGradientBrush1.GradientStops = sfGradientStops1;
 
-defaultSwitch.TrackGradientColor = sfLinearGradientBrush1;
+defaultSwitch.TrackGradient = sfLinearGradientBrush1;
 
 
 VisualStateGroupList visualStateGroupList = new VisualStateGroupList();

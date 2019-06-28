@@ -106,7 +106,7 @@ onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Val
 
 VisualState offState = new VisualState
 {
-Name = "OFF"
+Name = "Off"
 };
 offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
 
@@ -358,7 +358,7 @@ onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Val
 
 VisualState offState = new VisualState
 {
-Name = "OFF"
+Name = "Off"
 };
 
 offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
@@ -447,7 +447,7 @@ onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Val
 
 VisualState offState = new VisualState
 {
-Name = "OFF"
+Name = "Off"
 };
 
 offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });

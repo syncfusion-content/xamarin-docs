@@ -408,3 +408,28 @@ private void DataGrid_CurrentCellEndEdit(object sender, GridCurrentCellEndEditEv
         args.Cancel == true;
 }
 {% endhighlight %}
+
+### Customize editor UI in landscape mode 
+ 
+By default in Android platform, when entering edit mode for a text column in landscape orientation, the editor view loads in full width and height of the screen like below.
+![DataGrid with ImeOptions is Done ](SfDataGrid_images/ImeOptions_Done.png)
+
+If in case when entering edit mode you want to load the editor just like in portrait orientation, where the editor is loaded within the cells and the grid rows are visible in the background, set the `SfDataGrid.ImeOptions` property as `GridImeOptions.NoExtractUi`. The default value of `SfDataGrid.ImeOptions`is `GridImeOptions.Done`.
+
+{% tabs %}
+{% highlight xaml %}
+  <syncfusion:SfDataGrid x:Name="dataGrid"
+                          ItemsSource="{Binding OrdersInfo,Mode=TwoWay}"
+                          AllowEditing="True"
+                          NavigationMode="Cell"
+                          SelectionMode="Single"
+                          ImeOptions="NoExtractUi">
+    </syncfusion:SfDataGrid>
+{% endhighlight %}
+
+{% highlight c# %}
+this.dataGrid.ImeOptions = GridImeOptions.NoExtractUi;
+{% endhighlight %}
+{% endtabs %}
+
+![DataGrid with ImeOptions is NoExtractUi ](SfDataGrid_images/ImeOptions_NoExtractUI.png)

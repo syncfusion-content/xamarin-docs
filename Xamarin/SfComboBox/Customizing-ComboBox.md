@@ -669,7 +669,7 @@ The DropDownBorderColor property is used to change the border color of suggestio
 
             SfComboBox comboBox = new SfComboBox();
             comboBox.HeightRequest = 40;
-            comboBox.AutoCompleteSource = resolutionList;
+            comboBox.ComboBoxSource = resolutionList;
             comboBox.DropDownBorderColor = Color.Blue;
 
             layout.Children.Add(comboBox);

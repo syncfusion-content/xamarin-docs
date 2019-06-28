@@ -1137,8 +1137,8 @@ chart.SecondaryAxis = numerical;
 
 The [`RangeStyles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~RangeStyles.html) can be used to customize the gridlines, ticks and axis labels for a specific region of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html). The following properties are used to customize the specific range in an axis:
 
-* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~Start.html) -  Sets the [`start`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~Start.html) range of an axis
-* [`End`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~End.html) - Sets the [`end`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~End.html) range of an axis
+* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~Start.html) -  Sets the start range of an axis
+* [`End`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~End.html) - Sets the end range of an axis
 * [`MajorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~MajorGridLineStyle.html) - Customizes the major grid lines of an axis.
 * [`MinorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~MinorGridLineStyle.html) - Customizes the minor grid lines of an axis.
 * [`MajorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~MajorTickStyle.html) - Customizes the major tick lines of an axis.

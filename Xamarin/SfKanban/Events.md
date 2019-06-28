@@ -30,7 +30,9 @@ The default value of the `CardTappedCommandParameter` is `null`.
 
 {% tabs %}
 {% highlight xaml %}
-<kanban:SfKanban  CardTappedCommand="{Binding CardTappedCommand}" CardTappedCommandParameter="1"/>
+<kanban:SfKanban  CardTappedCommand="{Binding CardTappedCommand}" CardTappedCommandParameter="1">
+           <!--Intialize the column-->
+</kanban:SfKanban >
 {% endhighlight %}
 
 {% highlight c# %}

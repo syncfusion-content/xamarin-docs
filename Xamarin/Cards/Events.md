@@ -30,6 +30,7 @@ The default value of the `CardTappedCommandParameter` is `null`.
 {% highlight xaml %}
 
 <cards:SfCardLayout CardTappedCommand="{Binding CardTappedCommand}" CardTappedCommandParameter= "1">
+             <!--Add children for card layout-->
 </cards:SfCardLayout>
 {% endhighlight %}
 

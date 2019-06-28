@@ -102,7 +102,7 @@ SfComboBox supports DataTemplateSelector, which is used to choose a DataTemplate
 
 ### Create and Initialize Business Models 
 
-Define a simple model class MobileDetail with fields IsAvaiableInStock, Mobile and populate mobile detail in ViewModel.
+Define a simple model class MobileDetail with fields IsAvailableInStock, Mobile and populate mobile detail in ViewModel.
 
 {% tabs %}
 
@@ -115,15 +115,15 @@ Define a simple model class MobileDetail with fields IsAvaiableInStock, Mobile a
         {
             this.MobileCollection = new ObservableCollection<MobileDetail>()
             {
-                new MobileDetail () { Mobile="Samasung S8", IsAvaiableInStock=false },
-                new MobileDetail () { Mobile="Samasung S9", IsAvaiableInStock=true },
-                new MobileDetail () { Mobile="Samsung S10", IsAvaiableInStock=true },
-                new MobileDetail () { Mobile="Samsung S10 plus", IsAvaiableInStock=true },
-                new MobileDetail () { Mobile="iPhone 7", IsAvaiableInStock=true },
-                new MobileDetail () { Mobile="iPhone 8", IsAvaiableInStock=true },
-                new MobileDetail () { Mobile="iPhone X", IsAvaiableInStock=false },
-                new MobileDetail () { Mobile="iPhone XR", IsAvaiableInStock=false },
-                new MobileDetail () { Mobile="iPhone XS", IsAvaiableInStock=true },
+                new MobileDetail () { Mobile="Samasung S8", IsAvailableInStock=false },
+                new MobileDetail () { Mobile="Samasung S9", IsAvailableInStock=true },
+                new MobileDetail () { Mobile="Samsung S10", IsAvailableInStock=true },
+                new MobileDetail () { Mobile="Samsung S10 plus", IsAvailableInStock=true },
+                new MobileDetail () { Mobile="iPhone 7", IsAvailableInStock=true },
+                new MobileDetail () { Mobile="iPhone 8", IsAvailableInStock=true },
+                new MobileDetail () { Mobile="iPhone X", IsAvailableInStock=false },
+                new MobileDetail () { Mobile="iPhone XR", IsAvailableInStock=false },
+                new MobileDetail () { Mobile="iPhone XS", IsAvailableInStock=true },
             };
         }
     }
@@ -132,7 +132,7 @@ Define a simple model class MobileDetail with fields IsAvaiableInStock, Mobile a
     {
         public string Mobile { get; set; }
 
-        public bool IsAvaiableInStock { get; set; }
+        public bool IsAvailableInStock { get; set; }
     }
 
 {% endhighlight %}
@@ -157,9 +157,9 @@ The OnSelectTemplate is an overridden method to return a particular DataTemplate
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
             var message = item as MobileDetail;
-            if (message.IsAvaiableInStock == null)
+            if (message.IsAvailableInStock == null)
                 return null;
-            return message.IsAvaiableInStock == false ? SpecificDataTemplate : DefaultTemplate;
+            return message.IsAvailableInStock == false ? SpecificDataTemplate : DefaultTemplate;
         }
 
     }

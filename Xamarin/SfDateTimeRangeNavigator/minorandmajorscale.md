@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Minor and Major scale customization for SfDateTimeRangeNavigator
+title: Syncfusion minor and major scale customization 
 description: Minor and Major scales
 platform: xamarin
 control: SfDateTimeRangeNavigator
@@ -9,7 +9,7 @@ documentation: ug
 
 # Major and Minor Scales
 
-SfDateTimeRangeNavigator displays major and minor scales at the top and bottom position of the control. You can also control its visibility using [`MajorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) and [`MinorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) properties.
+The SfDateTimeRangeNavigator control displays major and minor scales at the top and bottom position of the control. 
 
 ## Intervals
 
@@ -27,7 +27,7 @@ dateTime.Intervals = DateTimeIntervalType.Year | DateTimeIntervalType. Month;
 {% endhighlight %}
 {% endtabs %}
 
-![](minorandmajorscale_images/minorandmajorscale_img1.png)
+![Intervals](minorandmajorscale_images/minorandmajorscale_img1.png)
 
 ## Appearance Customization
 
@@ -52,21 +52,17 @@ The [`MajorScaleStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
 {% highlight xaml %}
 <rangenavigator:SfDateTimeRangeNavigator Minimum="1/1/2015" Maximum="1/1/2016" ViewRangeStart="5/1/2015" 
 	ViewRangeEnd="9/1/2016">
-	
+
 	<rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
-	
 		<rangenavigator:ScaleStyle Position="Inside" LabelAlignment="Right" SelectedLabelTextColor="Blue" 
-			SelectedLabelFontSize="20" SelectedLabelMargin="15" LabelTextColor="Black" LabelFontSize="20" LabelMargin="15"/>
-			
+			SelectedLabelFontSize="20" SelectedLabelMargin="15" LabelTextColor="Black" LabelFontSize="20" LabelMargin="15"/>	
 	</rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
 	
 	<rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
-	
 		<rangenavigator:ScaleStyle Position="Inside" LabelAlignment="Left" SelectedLabelTextColor="Black" 
 			SelectedLabelFontSize="20" SelectedLabelMargin="15" LabelTextColor="Red" LabelFontSize="20" LabelMargin="15" />
-			
 	</rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
-	
+
 </rangenavigator:SfDateTimeRangeNavigator>
 {% endhighlight %}
 
@@ -93,6 +89,125 @@ dateTime.MinorScaleStyle.SelectedLabelFontSize = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![](minorandmajorscale_images/minorandmajorscale_img2.png)
+![Appearance](minorandmajorscale_images/minorandmajorscale_img2.png)
+
+## Scale visibility
+
+The users can also control the visibility of minor scale and major scale using the  [`MajorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) and [`MinorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) properties.
+
+### Hide minor scale
+
+{% tabs %}
+{% highlight xaml %}
+    <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" Maximum="2019,01,01">
+        <rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
+            <rangenavigator:ScaleStyle IsVisible="false" />
+            </rangenavigator:SfDateTimeRangeNavigator.MinorScaleStyle>
+    </rangenavigator:SfDateTimeRangeNavigator>
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator();
+dateTime.Minimum = new DateTime(2015, 01, 01);
+dateTime.Maximum = new DateTime(2019, 01, 01);
+dateTime.MinorScaleStyle.IsVisible = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+![MinorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img3.png)
+
+### Hide major scale
+
+{% tabs %}
+{% highlight xaml %}
+    <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" Maximum="2019,01,01">        
+        <rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
+            <rangenavigator:ScaleStyle IsVisible="false" />
+        </rangenavigator:SfDateTimeRangeNavigator.MajorScaleStyle>
+    </rangenavigator:SfDateTimeRangeNavigator>
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator();
+dateTime.Minimum = new DateTime(2015, 01, 01);
+dateTime.Maximum = new DateTime(2019, 01, 01);
+dateTime.MajorScaleStyle.IsVisible = false;
+
+![MajorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img4.png)
+
+{% endhighlight %}
+{% endtabs %}
+
+## MinorScaleLabelsCreated event
+
+This event occurs when the minor scale labels are created initially. The argument of this event contains the following information:
+
+* `MinorScaleLabels` - Gets the `Content` of the each minor scale label.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+ <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" Maximum="2019,01,01" MinorScaleLabelsCreated="MinorScaleLabelsCreated" >
+    
+  
+{% endhighlight %}
+
+{% highlight C# %} 
+
+public MainPage()
+    {
+        InitializeComponent();
+        SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator();
+		dateTime.Minimum = new DateTime(2015, 01, 01);
+        dateTime.Maximum = new DateTime(2019, 01, 01);
+		dateTime.MinorScaleLabelsCreated += MinorScaleLabelsCreated;
+    }
+
+ private void MinorScaleLabelsCreated(object sender, Syncfusion.RangeNavigator.XForms.MinorScaleLabelsCreatedEventArgs e)
+    {
+        // handle event action.
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
 
 
+## MajorScaleLabelsCreated event
+
+This event occurs when the major scale labels are created initially. The argument of this event contains the following information:
+
+* `MajorScaleLabels` - Gets the `Content` of the each major scale label.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+ <rangenavigator:SfDateTimeRangeNavigator Minimum="2015,01,01" Maximum="2016,01,01" MajorScaleLabelsCreated="MajorScaleLabelsCreated" >
+    
+  
+{% endhighlight %}
+
+{% highlight C# %} 
+
+public MainPage()
+    {
+        InitializeComponent();
+        SfDateTimeRangeNavigator dateTime = new SfDateTimeRangeNavigator();
+		dateTime.Minimum = new DateTime(2015, 01, 01);
+        dateTime.Maximum = new DateTime(2016, 01, 01);
+		dateTime.MajorScaleLabelsCreated += MajorScaleLabelsCreated;
+    }
+
+private void MajorScaleLabelsCreated(object sender, Syncfusion.RangeNavigator.XForms.MajorScaleLabelsCreatedEventArgs e)
+    {
+        // handle event action.
+    }
+
+{% endhighlight %}
+
+{% endtabs %}

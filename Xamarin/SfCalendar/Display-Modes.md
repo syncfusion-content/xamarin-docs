@@ -136,6 +136,8 @@ this.Content = calendar;
 
 {% endtabs %}
 
+![Month view border color in Xamarin.Forms Calendar ](images/xamarin.forms-BorderColor.png)
+
 ### Today border color customization
 
 You can customize the today border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html). The border color of current day can be customized using the [TodayBorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~TodayBorderColor.html) property and it is applicable for both `Fill` and `Circle` `SelectionShape`.
@@ -164,6 +166,8 @@ this.Content = calendar;
 
 {% endtabs %}
 
+![Month view today border color in Xamarin.Forms Calendar ](images/xamarin.forms-TodayBorderColor.png)
+
 ## Week view
 
 The number of weeks in the month view can be changed by setting the [NumberOfWeeksInView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NumberOfWeeksInView.html) property in SfCalendar. By default, `NumberOfWeeksInView` starts from current week, and this can be modified using the [MoveToDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MoveToDate.html) property of calendar. It also supports all existing features such as [FirstDayOfWeek](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~FirstDayOfWeek.html), [MinDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MinDate.html), [MaxDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaxDate.html), and [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html).
@@ -190,6 +194,8 @@ calendar.NumberOfWeeksInView = 3;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Week view in Xamarin.Forms Calendar ](images/xamarin.forms-NumberOfWeeksInView.png)
 
 ## Year view
 
@@ -241,6 +247,8 @@ this.Content = calendar;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Year view mode in Xamarin.Forms Calendar ](images/xamarin.forms-YearViewMode.png)
  
 N>
 * The `YearViewMode` property is only applicable for calendar in Android and iOS platforms.
@@ -303,6 +311,8 @@ this.Content = calendar;
 {% endhighlight %}	
 
 {% endtabs %}
+
+![Decade view in Xamarin.Forms Calendar ](images/xamarin.forms-DecadeView.png)
  
 ## Decade view customization
 
@@ -346,6 +356,8 @@ this.Content = calendar;
 
 {% endtabs %}
 
+![Decade view customization in Xamarin.Forms Calendar ](images/xamarin.forms-DecadeView-Custom.png)
+
 ## Century view
 
 This view displays the period of 100 years. By default, current year range of 100 years will be displayed on loading. You can easily navigate between month/year/decade view to century view by tapping the calendar header. You can easily navigate to decade view by selecting decade years in century view.
@@ -367,6 +379,8 @@ this.Content = calendar;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Century view in Xamarin.Forms Calendar ](images/xamarin.form-CenturyView.png)
  
 ## Century view customization
 
@@ -409,6 +423,8 @@ this.Content = calendar;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Century view customization in Xamarin.Forms Calendar ](images/xamarin.forms-CenturyView-Custom.png)
 
 
 

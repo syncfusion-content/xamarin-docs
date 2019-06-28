@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TrackBar Customization of Syncfusion RangeSlider control for Xamarin.Forms
+title: TrackBar in Syncfusion RangeSlider control for Xamarin.Forms
 description: Learn how to customize the TrackBar appearance for RangeSlider control in Xamarin.Forms
 platform: Xamarin
 control: RangeSlider
@@ -202,3 +202,43 @@ namespace TrackCustomization
 {% endtabs %}
 
 ![Installation steps](Track_Customization_Images/TrackSelectionColor.png)
+
+### Customizing knob color
+
+The `KnobColor` property is used to change the knob color of SfRangeSlider.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <range:SfRangeSlider x:Name="rangeslider" KnobColor="Red"  Minimum="0" Maximum="100"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ rangeslider.KnobColor = Color.Red;
+
+ {% endhighlight %}
+
+{% endtabs %}
+
+### Customizing thumb size
+
+The `ThumbSize` property is used to change the thumb size of SfRangeSlider.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <range:SfRangeSlider x:Name="rangeslider" ThumbSize="3" Minimum="0" Maximum="100"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ rangeslider.ThumbSize = 3;
+
+ {% endhighlight %}
+
+{% endtabs %}

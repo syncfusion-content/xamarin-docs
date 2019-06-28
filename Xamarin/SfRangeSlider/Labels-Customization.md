@@ -232,3 +232,22 @@ namespace GettingStarted
 
 ![Font customization in SfRangeSlider in Xamarin.Forms](images/FontItalicCustom.png)
 
+## LabelColor
+
+The `LabelColor` property used to change the color of the label.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<range:SfRangeSlider x:Name="rangeslider" LabelColor="Red" Minimum="0" Maximum="100"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ rangeslider.LabelColor = Color.Red;
+
+{% endhighlight %}
+
+![Label in SfRangeSlider in Xamarin.Forms](images/LabelColor.jpg)

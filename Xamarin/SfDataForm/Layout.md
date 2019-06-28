@@ -961,3 +961,38 @@ dataForm.ScrollTo("ContactNumber")
 {% endtabs %}
 
 ![Scroll to specific editor in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-scrolltosupport.gif)
+
+## Changing the height of DataFormItem.
+
+You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~Height.html) property, and it will be handled in the `AutoGeneratingDataFormItem` event.
+
+You can define the `Height` as described as follows.
+
+* You can directly set the exact `Height` value; it considers the `GridLength` as `GridUnitType.Absolute`. 
+* You can use the `GridLength.Auto` to size the height of `DataFormItem`, so that it fits to the label text that it contains. 
+* You can use the `GridLength.Star` to display the default `DataFormItem` height. 
+
+{% tabs %}
+
+{% highlight c# %}
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDataFormItemEventArgs e)
+{
+   if (e.DataFormItem != null)
+     {
+         if (e.DataFormItem.Name == "Experience" || e.DataFormItem.Name == "Rating" || e.DataFormItem.Name == "Recommend")
+         {
+               e.DataFormItem.LabelPosition = LabelPosition.Left;
+               e.DataFormItem.Height = GridLength.Auto;
+         }
+         if (e.DataFormItem.Name == "Improvement")
+         {
+               e.DataFormItem.LabelPosition = LabelPosition.Left;
+               e.DataFormItem.Height = 200;
+         }
+     }
+}
+{% endhighlight %}
+
+{% endtabs %}

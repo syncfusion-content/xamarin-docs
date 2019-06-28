@@ -1133,6 +1133,73 @@ chart.SecondaryAxis = numerical;
 
 ![Axis tick lines customization support in Xamarin.Forms Chart](axis_images/axis_img23.png)
 
+### Customize individual axis elements
+
+The [`RangeStyles`]() can be used to customize the gridlines, ticks and axis labels for a specific region of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html). The following properties are used to customize the specific range in an axis:
+
+* [`Start`]() -  Sets the [`start`]() range of an axis
+* [`End`]() - Sets the [`end`]() range of an axis
+* [`MajorGridLineStyle`]() - Customizes the major grid lines of an axis.
+* [`MinorGridLineStyle`]() - Customizes the minor grid lines of an axis.
+* [`MajorTickStyle`]() - Customizes the major tick lines of an axis.
+* [`MinorTickStyle`]() - Customizes the minor tick lines of an axis.
+* [`LabelStyle`]() -  Customizes the axis labels for a specific range.
+
+N> Grid lines [`StrokeDashArray`]() is not supported if the [`RangeStyles`]() of axis is set in `UWP`.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:NumericalAxis.RangeStyles>
+
+	<chart:ChartAxisRangeStyleCollection>
+
+		<chart:ChartAxisRangeStyle Start="15" End="21" >
+
+			<chart:ChartAxisRangeStyle.MajorGridLineStyle>
+
+				<chart:ChartLineStyle StrokeColor="#096EBF" StrokeWidth="3"/>
+
+			</chart:ChartAxisRangeStyle.MajorGridLineStyle>
+			<chart:ChartAxisRangeStyle.LabelStyle>
+
+				<chart:ChartAxisLabelStyle  TextColor="#096EBF" FontAttributes="Bold"/>
+
+			</chart:ChartAxisRangeStyle.LabelStyle>
+
+		</chart:ChartAxisRangeStyle>
+
+		....
+
+	</chart:ChartAxisRangeStyleCollection>
+
+</chart:NumericalAxis.RangeStyles>				
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+NumericalAxis numericalAxis = new NumericalAxis() { Minimum = 15, Maximum = 27 };
+
+ChartAxisRangeStyleCollection axisRangeStyles = new ChartAxisRangeStyleCollection();
+
+ChartAxisRangeStyle rangeStyle = new ChartAxisRangeStyle() { Start = 15, End = 21};
+
+rangeStyle.MajorGridLineStyle = new ChartLineStyle() { StrokeColor = Color.FromHex("#096EBF"), StrokeWidth = 3 };
+
+rangeStyle.LabelStyle = new ChartAxisLabelStyle() { TextColor = Color.FromHex("#096EBF"), FontAttributes = FontAttributes.Bold };
+
+axisRangeStyles.Add(rangeStyle);
+
+....
+
+numericalAxis.RangeStyles = axisRangeStyles;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Inversing axis
 
 Axis can be inversed using the [`IsInversed`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~IsInversed.html) property of axis. Default value of [`IsInversed`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~IsInversed.html) property is `False`.

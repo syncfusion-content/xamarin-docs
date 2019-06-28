@@ -75,6 +75,35 @@ To launch the parallax view in iOS, call the `SfParallaxViewRenderer.Init()` met
 
 {% endhighlight %}
 
+### Universal Windows Platform (UWP)
+
+You need to initialize the parallax view assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with parallax view in Release mode in UWP platform.
+
+{% highlight c# %}
+// In App.xaml.cs
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+    {
+        …
+    	rootFrame.NavigationFailed += OnNavigationFailed;
+    
+        // Add `using System.Reflection;`
+        List<Assembly> assembliesToInclude = new List<Assembly>();
+    
+        // Now, add all the assemblies your app uses                 
+        assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.ParallaxView.SfParallaxViewRenderer).GetTypeInfo().Assembly);
+		
+        // Replaces Xamarin.Forms.Forms.Init(e);        
+        Xamarin.Forms.Forms.Init(e, assembliesToInclude);	
+        …     
+    }
+
+{% endhighlight %}
+
+### Android
+
+The Android platform does not require any additional configuration to render the parallax view.
+
 ## Initialize parallax view
 
 1. Import SfParallaxView control namespace as `xmlns:parallax="clr-namespace:Syncfusion.XForms.ParallaxView;assembly=Syncfusion.SfParallaxView.XForms` in the XAML page.

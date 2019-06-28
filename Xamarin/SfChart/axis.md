@@ -1135,17 +1135,17 @@ chart.SecondaryAxis = numerical;
 
 ### Customize individual axis elements
 
-The [`RangeStyles`]() can be used to customize the gridlines, ticks and axis labels for a specific region of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html). The following properties are used to customize the specific range in an axis:
+The [`RangeStyles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~RangeStyles.html) can be used to customize the gridlines, ticks and axis labels for a specific region of [`ChartAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis.html). The following properties are used to customize the specific range in an axis:
 
-* [`Start`]() -  Sets the [`start`]() range of an axis
-* [`End`]() - Sets the [`end`]() range of an axis
-* [`MajorGridLineStyle`]() - Customizes the major grid lines of an axis.
-* [`MinorGridLineStyle`]() - Customizes the minor grid lines of an axis.
-* [`MajorTickStyle`]() - Customizes the major tick lines of an axis.
-* [`MinorTickStyle`]() - Customizes the minor tick lines of an axis.
-* [`LabelStyle`]() -  Customizes the axis labels for a specific range.
+* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~Start.html) -  Sets the [`start`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~Start.html) range of an axis
+* [`End`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~End.html) - Sets the [`end`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~End.html) range of an axis
+* [`MajorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~MajorGridLineStyle.html) - Customizes the major grid lines of an axis.
+* [`MinorGridLineStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~MinorGridLineStyle.html) - Customizes the minor grid lines of an axis.
+* [`MajorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~MajorTickStyle.html) - Customizes the major tick lines of an axis.
+* [`MinorTickStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~MinorTickStyle.html) - Customizes the minor tick lines of an axis.
+* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxisRangeStyle~LabelStyle.html) -  Customizes the axis labels for a specific range.
 
-N> Grid lines [`StrokeDashArray`]() is not supported if the [`RangeStyles`]() of axis is set in `UWP`.
+N> Grid lines [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLineStyle~StrokeDashArray.html) is not supported if the [`RangeStyles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~RangeStyles.html) of axis is set in `UWP`.
 
 {% tabs %} 
 
@@ -1199,6 +1199,8 @@ numericalAxis.RangeStyles = axisRangeStyles;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Individual axis elements customization support in Xamarin.Forms Chart](axis_images/axis_img30.png)
 
 ### Inversing axis
 

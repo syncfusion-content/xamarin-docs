@@ -1,4 +1,4 @@
----
+﻿---
 layout : post
 title : Customizations in ComboBox
 description : This section describes about the visual customization of entry, suggestion box and suggestion items in the ComboBox
@@ -602,6 +602,84 @@ The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamari
 {% endtabs %}
 
 ![Dropdown background color](images/Customizing-ComboBox/dropdown-background-color.png)
+
+### Changing the border color of suggestion box
+
+The DropDownBorderColor property is used to change the border color of suggestion box. The following code example demonstrates how to change the border color of suggestion box.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+  <StackLayout>
+        <comboBox:SfComboBox HeightRequest="40" DropDownBorderColor="Blue">
+            <comboBox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>1920 x 1080</x:String>
+                    <x:String>1680 x 1050</x:String>
+                    <x:String>1600 x 900</x:String>
+                    <x:String>1440 x 900</x:String>
+                    <x:String>1400 x 1050</x:String>
+                    <x:String>1366 x 768</x:String>
+                    <x:String>1360 x 768</x:String>
+                    <x:String>1280 x 1024</x:String>
+                    <x:String>1280 x 960</x:String>
+                    <x:String>1280 x 720</x:String>
+                    <x:String>854 x 480</x:String>
+                    <x:String>800 x 480</x:String>
+                    <x:String>480 X 640</x:String>
+                    <x:String>480 x 320</x:String>
+                    <x:String>432 x 240</x:String>
+                    <x:String>360 X 640</x:String>
+                    <x:String>320 x 240</x:String>
+                </ListCollection:List>
+            </comboBox:SfComboBox.ComboBoxSource>
+        </comboBox:SfComboBox>
+    </StackLayout>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            StackLayout layout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+            List<String> resolutionList = new List<String>();
+            resolutionList.Add("1920 x 1080");
+            resolutionList.Add("1680 x 1050");
+            resolutionList.Add("1600 x 900");
+            resolutionList.Add("1440 x 900");
+            resolutionList.Add("1400 x 1050");
+            resolutionList.Add("1366 x 768");
+            resolutionList.Add("1360 x 768");
+            resolutionList.Add("1280 x 1024");
+            resolutionList.Add("1280 x 960");
+            resolutionList.Add("1280 x 720");
+            resolutionList.Add("854 x 480");
+            resolutionList.Add("800 x 480");
+            resolutionList.Add("480 X 640");
+            resolutionList.Add("480 x 320");
+            resolutionList.Add("432 x 240");
+            resolutionList.Add("360 X 640");
+            resolutionList.Add("320 x 240");
+
+            SfComboBox comboBox = new SfComboBox();
+            comboBox.HeightRequest = 40;
+            comboBox.ComboBoxSource = resolutionList;
+            comboBox.DropDownBorderColor = Color.Blue;
+
+            layout.Children.Add(comboBox);
+            Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Dropdown background color](images/Customizing-ComboBox/dropdown-border-color.png)
 
 ### Customizing suggestion items
 

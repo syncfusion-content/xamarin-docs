@@ -266,7 +266,7 @@ this.Content = sfSwitch;
 
 ![switch conrol with gradient](images/gradient.png)
 
-N> Here ThumbGradient and TrackGradient are type of `SfLinearGradientBrush`, So You can apply  `SfLinearGradientBrush` or `SfRadialGradientBrush` on it.  This `SfLinearGradientBrush` is avaiable in  [`Syncfusion.Xamarin.Core`](https://www.nuget.org/packages/Syncfusion.Xamarin.Core) from [`nuget.org`](https://www.nuget.org/). To know more about gradient view refer this [`link`](https://help.syncfusion.com/xamarin/sfgradientview/getting-started).
+N> Here ThumbGradient and TrackGradient are type of `SfLinearGradientBrush`, So You can apply  `SfLinearGradientBrush` or `SfRadialGradientBrush` on it.  This `SfLinearGradientBrush` is available in  [`Syncfusion.Xamarin.Core`](https://www.nuget.org/packages/Syncfusion.Xamarin.Core) from [`nuget.org`](https://www.nuget.org/). To know more about gradient view refer this [`link`](https://help.syncfusion.com/xamarin/sfgradientview/getting-started).
 
 ## Sizing
 

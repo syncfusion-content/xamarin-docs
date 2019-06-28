@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Segmenting and Placing items in Syncfusion RadialMenu control for Xamarin.Forms
+title: Segmenting items in Syncfusion RadialMenu control for Xamarin.Forms
 description: How to Segment the Rim and place items in RadialMenu control in Xamarin.Forms
 platform: Xamarin
 control: SfRadialMenu
@@ -28,7 +28,7 @@ Number of segments in the panel is determined by `VisibleSegmentsCount` property
 
 `VisibleSegmentsCount` property is used to specify the number of segments available in circular panel. When children count is greater than the value given in the VisibleSegmentsCount property, overflowing children are not arranged in the panel. When children count is lesser than the VisibleSegmentsCount property, then remaining segments are left free.
 
-![](images/beforeVisbleSegment.png)
+![beforeVisbleSegment](images/beforeVisbleSegment.png)
 
 If number of item count is higher than VisibleItemCount, excessive items will not be shown.
 
@@ -115,7 +115,7 @@ Public class RadialMenuPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-![](images/visibleSegmentCount.png)
+![visibleSegmentCount](images/visibleSegmentCount.png)
 
 ### SegmentIndex
 
@@ -199,8 +199,114 @@ Public class RadialMenuPage : ContentPage
 {% endtabs %}
 
 
-![](images/radialMenuSegmentIndex.png)
+![radialMenuSegmentIndex](images/radialMenuSegmentIndex.png)
 
+### StartAngle
 
+`StartAngle` property is used to set the angle from which the arrangement of radial menu items should start.
+
+{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="UTF-8"?>
+ <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadialMenuGettingStarted"
+             xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             x:Class="RadialMenuGettingStarted.MainPage">
+			 
+ <ContentPage.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="Font">
+                <On Platform="Android" Value="Segoe MDL2 Assets.ttf#Segoe MDL2 Assets" />
+                <On Platform="UWP" Value="/Assets/Segoe MDL2 Assets.ttf#Segoe MDL2 Assets" />
+                <On Platform="iOS" Value="Segoe MDL2 Assets" />
+            </OnPlatform>
+        </ResourceDictionary>
+        
+</ContentPage.Resources>
+
+<ContentPage.Content>
+
+ <radialMenu:SfRadialMenu x:Name="radial_Menu"
+                                 SeparatorThickness="2"
+                                 StartAngle="90"
+                                 CenterButtonText="&#xe713;" 
+                                 CenterButtonBackText="&#xe713;"
+                                 CenterButtonFontFamily="{StaticResource Font}"
+                                 CenterButtonRadius="32">
+                <radialMenu:SfRadialMenu.Items>
+                    <radialMenu:SfRadialMenuItem  FontIconText="&#xe701;" IconFontFamily= "{StaticResource Font}">                        
+                    </radialMenu:SfRadialMenuItem>
+                    <radialMenu:SfRadialMenuItem  FontIconText="&#xe702;" IconFontFamily="{StaticResource Font}">
+                    </radialMenu:SfRadialMenuItem>
+                    <radialMenu:SfRadialMenuItem  FontIconText="&#xeA8F;" IconFontFamily="{StaticResource Font}">
+                    </radialMenu:SfRadialMenuItem>
+                    <radialMenu:SfRadialMenuItem  FontIconText="&#xE793;" IconFontFamily="{StaticResource Font}">
+                    </radialMenu:SfRadialMenuItem>
+                    <radialMenu:SfRadialMenuItem  FontIconText="&#xE83F;" IconFontFamily="{StaticResource Font}">
+                    </radialMenu:SfRadialMenuItem>
+                    <radialMenu:SfRadialMenuItem  FontIconText="&#xE7E8;" IconFontFamily="{StaticResource Font}">
+                    </radialMenu:SfRadialMenuItem>
+                </radialMenu:SfRadialMenu.Items>
+            </radialMenu:SfRadialMenu>
+</ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c#%}
+using Syncfusion.XForms.SfRadialMenu;
+using Xamarin.Forms;
+
+public class App : Application
+ {
+    public App()
+    {
+       MainPage = new RadialMenuPage ();
+    }
+
+ }
+ 
+public class RadialMenuPage : ContentPage
+{
+   
+	public RadialMenuPage ()
+	{
+		InitializeComponent();
+			//Creating instance for RadialMenu
+			SfRadialMenu radialMenu = new SfRadialMenu();
+
+			//Initializing RadialMenu's properties
+			radialMenu.CenterButtonText = "\uE713";
+			radialMenu.VisibleSegmentsCount = 12;
+			radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
+			radialMenu.CenterButtonRadius = 26;
+			radialMenu.CenterButtonBorderColor = Color.White;
+			radialMenu.StartAngle = 90;
+
+			//Adding Main menu Items
+
+			string[] menuItems = new string[] { "\uE701", "\uE702","\uEA8F","\uE793", "\uE83F","\uE7E8" };
+
+			for (int i = 0; i < 6; i++)
+			{
+				SfRadialMenuItem mainMenuItems = new SfRadialMenuItem();
+				mainMenuItems.IconFontSize = 20;
+				mainMenuItems.FontIconText = menuItems[i];
+				mainMenuItems.ItemHeight = 30;
+				mainMenuItems.ItemWidth = 40;
+				mainMenuItems.TextColor = Color.White;
+				mainMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
+				radialMenu.Items.Add(mainMenuItems);
+			}
+
+			this.Content = radialMenu;
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
+![StartAngle](images/StartAngle.png)
 
 

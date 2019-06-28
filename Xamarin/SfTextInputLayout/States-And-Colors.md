@@ -1,6 +1,6 @@
 ---
 layout: post
-title: States and Colors
+title: Syncfusion TextInputLayout States and Colors
 description: How to customize the colors based on states.
 platform: xamarin
 control: SfTextInputLayout
@@ -33,6 +33,7 @@ I> Cursor color of the input view will be same as the `Accent` color of the appl
 
 {% highlight C# %} 
 
+var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "User name";
 inputLayout.FocusedColor = Color.FromHex("#00AFA0");
 inputLayout.ErrorText = "User name available";
@@ -42,7 +43,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![](States-And-Colors-images/textInput_colors_img1.png)
+![Focused color](States-And-Colors-images/textInput_colors_img1.png)
 
 ## Unfocused color
 When the input view is unfocused, the [UnfocusedColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~UnfocusedColor.html) property value will be applied to the hint label and border. 
@@ -64,6 +65,7 @@ N> Thickness of the border will also vary between the focused and unfocused stat
 
 {% highlight C# %} 
 
+var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "User name";
 inputLayout.UnfocusedColor = Color.Silver;
 inputLayout.ErrorText = "User name available";
@@ -73,7 +75,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![](States-And-Colors-images/textInput_colors_img2.png)
+![Unfocused color](States-And-Colors-images/textInput_colors_img2.png)
 
 ## Error color
 The error color can also be customized by setting the [ErrorColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ErrorColor.html) property.
@@ -94,6 +96,7 @@ The error color can also be customized by setting the [ErrorColor](https://help.
 
 {% highlight C# %} 
 
+var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name";
 inputLayout.ErrorColor = Color.FromHex("#B00020");
 inputLayout.ErrorText = "Should not contain special characters";
@@ -104,10 +107,14 @@ inputLayout.InputView = new Entry() { Text = "John/" };
 
 {% endtabs %}
 
-![](States-And-Colors-images/textInput_colors_img3.png)
+![Error color](States-And-Colors-images/textInput_colors_img3.png)
 
 ## Container color
-The color of the container can be customized by setting the [ContainerBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerBackgroundColor.html) property. It is applicable only When [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerType.html) property is set to [Filled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html).
+The color of the container can be customized by setting the [ContainerBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerBackgroundColor.html) property. It is applicable when the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerType.html) property is set to [Filled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html) and [Outlined](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html).
+
+### Filled
+
+The color of the container is customized when the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerType.html) is [Filled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html).
 
 {% tabs %} 
 
@@ -116,6 +123,7 @@ The color of the container can be customized by setting the [ContainerBackground
 <inputLayout:SfTextInputLayout
     Hint="Name" 
     FocusedColor="#0450C2"
+    ContainerType="Filled"
     ContainerBackgroundColor="#E6EEF9">
     <Entry Text="John" />
 </inputLayout:SfTextInputLayout>  
@@ -124,7 +132,42 @@ The color of the container can be customized by setting the [ContainerBackground
 
 {% highlight C# %} 
 
+var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name";
+inputLayout.FocusedColor = Color.FromHex("#0450C2");
+inputLayout.ContainerBackgroundColor = Color.FromHex("#E6EEF9");
+inputLayout.ContainerType = ContainerType.Filled;
+inputLayout.InputView = new Entry() { Text = "John" }; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Filled](States-And-Colors-images/textInput_colors_img4.png)
+
+### Outlined
+
+The color of the container is customized when the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerType.html) is [Outlined](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<inputLayout:SfTextInputLayout
+    Hint="Name" 
+    FocusedColor="#0450C2"
+    ContainerType="Outlined"
+    ContainerBackgroundColor="#E6EEF9">
+    <Entry Text="John" />
+</inputLayout:SfTextInputLayout>  
+ 
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Name";
+inputLayout.ContainerType = ContainerType.Outlined;
 inputLayout.FocusedColor = Color.FromHex("#0450C2");
 inputLayout.ContainerBackgroundColor = Color.FromHex("#E6EEF9");
 inputLayout.InputView = new Entry() { Text = "John" }; 
@@ -133,7 +176,7 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 {% endtabs %}
 
-![](States-And-Colors-images/textInput_colors_img4.png)
+![outlined](States-And-Colors-images/textInput_colors_img6.png)
 
 ## Disabled state
 
@@ -153,6 +196,7 @@ The text input layout is disabled by setting the [IsEnabled](https://help.syncfu
 
 {% highlight C# %} 
 
+var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Name";
 inputLayout.IsEnabled = false;
 inputLayout.InputView = new Entry(); 
@@ -161,4 +205,4 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](States-And-Colors-images/textInput_colors_img5.PNG)
+![Disabled state](States-And-Colors-images/textInput_colors_img5.PNG)

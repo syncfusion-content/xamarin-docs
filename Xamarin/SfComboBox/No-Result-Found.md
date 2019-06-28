@@ -87,7 +87,7 @@ The `NoResultsFoundTextColor`, `NoResultsFoundFontSize`, `NoResultsFoundFontAttr
 {% highlight xaml %}
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true"  NoResultsFoundText="No Results Found" NoResultsFoundTextColor="DarkGreen" NoResultsFoundFontSize="20" NoResultsFoundFontAttributes="Bold" NoResultsFoundFontFamily="Pacifico.ttf" />                    
+	<combobox:SfComboBox HeightRequest="40" x:Name="comboBox" IsEditableMode="true"  NoResultsFoundText="Country not in the list" NoResultsFoundTextColor="DarkGreen" NoResultsFoundFontSize="20" NoResultsFoundFontAttributes="Bold" NoResultsFoundFontFamily="Pacifico.ttf" />                    
 </StackLayout> 
 
 {% endhighlight %}

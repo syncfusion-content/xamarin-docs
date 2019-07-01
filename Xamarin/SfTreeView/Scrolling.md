@@ -36,7 +36,7 @@ You can also download the entire source code of this demo from [here](http://www
 
  When scroll to the item which is in collapsed state, TreeView expands the particular node and scroll to the specified item by setting the `canExpand` parameter of `BringIntoView` method to `true`.
 
-#### Scrolls the item into spcified position
+#### Scrolls the item into specified position
 
 The SfTreeView allows to position the scrolled item in the view by passing `ScrollToPosition` as parameter to the [BringIntoView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~BringIntoView.html) methods. The scrolled item can take either of the four positions as explained below. The default position is Start.
 

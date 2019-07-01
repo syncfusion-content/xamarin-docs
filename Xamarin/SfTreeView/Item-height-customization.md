@@ -22,29 +22,9 @@ The `SfTreeView.QueryNodeSize` event provides the following parameters in their 
 
 TreeView allows to customizing the height of the particular item on-demand by using [QueryNodeSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~QueryNodeSize_EV.html) event.
 
-{% tabs %}
-{% highlight c# %}
-this.treeView.QueryNodeSize += TreeView_QueryNodeSize;
-
-private void TreeView_QueryNodeSize(object sender, QueryNodeSizeEventArgs e)
-{
-    var data = e.Node.Content as State;
-    if (data != null && data.Name == "New South Wales")
-    {
-        e.Height = 300;
-        e.Handled = true;
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-You can download the entire source code of this demo [here]().
-
-![Height of item in TreeView](TreeView_images/TreeView_AutoFit.png)
-
 ## AutoFit the items based on the content
 
-The SfTreeView allows adjusting height of items based on the content loaded by using [QueryNodeSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~QueryNodeSize_EV.html) event and [QueryNodeSize.GetActualNodeHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.QueryNodeSizeEventArgs~GetActualNodeHeight.html) method.
+TreeView allows adjusting height of items based on the content loaded by using [QueryNodeSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~QueryNodeSize_EV.html) event and [QueryNodeSize.GetActualNodeHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.QueryNodeSizeEventArgs~GetActualNodeHeight.html) method.
                                              
 {% tabs %}
 {% highlight xaml %}
@@ -75,8 +55,18 @@ public class MainPage : ContentPage
     
     private void TreeView_QueryNodeSize(object sender, QueryNodeSizeEventArgs e)
     {
-        e.Height = e.GetActualNodeHeight();
-        e.Handled = true;
+        if (e.Node.Level == 0)
+        {
+            //Returns speified item height for items.
+            e.Height = 200;
+            e.Handled = true;
+        }
+        else
+        {
+            // Returns item height based on the content loaded.
+            e.Height = e.GetActualNodeHeight();
+            e.Handled = true;
+        }
     }
 }
 {% endhighlight %}

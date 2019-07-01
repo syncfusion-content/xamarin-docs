@@ -77,3 +77,76 @@ Gets and sets the end value of the range.
 {% endhighlight  %}
 
 {% endtabs %}
+
+## ValueChangeMode
+
+The ValueChangeMode property changes the value based on the touch of the `SfRangeSlider` control. It consists of the following two types
+
+* Default
+* OnThumbPress
+
+N> The default value of the ValueChangeMode property is `Default`.
+
+
+### Default
+
+The value is updated when you touch inside the control.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider"  ValueChangeMode="Default" />
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeSlider.ValueChangeMode = ValueChangeMode.Default;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### OnThumb
+
+The value is updated when you touch or move the thumb/knob.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider"  ValueChangeMode="OnThumb" />
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+	rangeSlider.ValueChangeMode = ValueChangeMode.OnThumb;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## Value
+
+Gets or sets the range value, which ranges between Minimum and Maximum. The default value of RangeSlider is 0.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<range:SfRangeSlider x:Name="rangeslider" Minimum="0" Maximum="100" Value="30"/>
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+            rangeslider.Value = 30;
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![Range value in SfRangeSlider in Xamarin.Forms](images/Value.jpg)

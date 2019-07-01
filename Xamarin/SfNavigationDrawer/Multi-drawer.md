@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Multi drawer support of Syncfusion NavigationDrawer control for Xamarin.Forms
+title: Multi drawer support of Syncfusion NavigationDrawer control for Forms
 description: Learn how to set multi drawer view in NavigationDrawer.
 platform: Xamarin
 control: NavigationDrawer
@@ -32,6 +32,7 @@ Implement the default drawer using the default drawer settings class. The follow
         Transition ="SlideOnTop"
         DrawerHeaderHeight="150"
         DrawerFooterHeight="150"
+		ContentBackgroundColor ="Red"
         Position="Left">
     </navigationdrawer:DrawerSettings>
     </navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>
@@ -45,6 +46,7 @@ DrawerSettings defaultDrawerSettings = new DrawerSettings();
 defaultDrawerSettings.DrawerHeight = 150;
 defaultDrawerSettings.Position = Position.Left;
 defaultDrawerSettings.Transition = Transition.SlideOnTop;
+defaultDrawerSettings.ContentBackgroundColor = Color.Red;
 defaultDrawerSettings.DrawerWidth = 150;
 navigationDrawer.DrawerHeaderHeight = 150;
 navigationDrawer.DrawerFooterHeight = 150;
@@ -178,6 +180,7 @@ Implement the secondary drawer using the secondary drawer settings class. Its pr
     <navigationdrawer:DrawerSettings x:Name="secondaryDrawer"
     DrawerHeaderHeight="40"
     DrawerFooterHeight="40"
+	ContentBackgroundColor="Blue"
     DrawerHeight="300"
     DrawerWidth= 150;
     Duration="400" 
@@ -193,6 +196,7 @@ DrawerSettings secondaryDrawer = new DrawerSettings();
 secondaryDrawer.DrawerHeight = 300;
 secondaryDrawer.Position = Position.Right;
 secondaryDrawer.Transition = Transition.SlideOnTop;
+secondaryDrawer.ContentBackgroundColor = Color.Blue;
 secondaryDrawer.DrawerWidth = 150;
 secondaryDrawer.DrawerHeaderHeight = 40;
 secondaryDrawer.DrawerFooterHeight = 40;

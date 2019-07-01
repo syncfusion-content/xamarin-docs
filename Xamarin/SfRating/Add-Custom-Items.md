@@ -29,7 +29,7 @@ To customize the view of rating items, create and set custom view as `SelectedVi
         </rating:SfRating.Items>
     </rating:SfRating>
 
-{% endhighlight xaml %}
+{% endhighlight %}
 
 {% highlight C# %}
 
@@ -37,6 +37,7 @@ SfRating rating= new SfRating();
 SfRatingItem ratingItem = new SfRatingItem();
 rating.Items = ratingItem;
 rating.EnableCustomView = true;
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -46,6 +47,7 @@ rating.EnableCustomView = true;
 The `SelectedView` property is used to apply the given SelectedView to selected rating item.
 
 {% tabs %}
+
 {% highlight xaml %}
 
     <rating:SfRatingItem>

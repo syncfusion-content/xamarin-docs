@@ -1,4 +1,4 @@
-﻿---
+---
 layout : post
 title : Customizations in ComboBox
 description : This section describes about the visual customization of entry, suggestion box and suggestion items in the ComboBox
@@ -679,7 +679,7 @@ The DropDownBorderColor property is used to change the border color of suggestio
 
 {% endtabs %}
 
-![Dropdown background color](images/Customizing-ComboBox/dropdown-border-color.png)
+![Dropdown border color](images/Customizing-ComboBox/dropdown-border-color.png)
 
 ### Customizing suggestion items
 

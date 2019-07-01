@@ -52,7 +52,7 @@ The following table describes the types of columns and its usage:
 <tr>
 <td>{{'[GridComboBoxColumn]()'| markdownify }}</td>
 <td>{{'[GridCellComboBoxRenderer]()'| markdownify }}</td>
-<td>To display the IEnumerable data using Picker.</td>
+<td>To display the IEnumerable data using [ComboBox](https://help.syncfusion.com/xamarin/sfcombobox/overview).</td>
 </tr>
 <tr>
 <td>{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html)'| markdownify }}</td>

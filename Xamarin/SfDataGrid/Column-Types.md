@@ -1208,7 +1208,7 @@ The [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 * Collection of primitive types
 * Collection of user-defined types (Custom objects)
 
-![DataGrid with editing in comboBox column](SfDataGrid_images/GridComboBoxColumn.jpg)
+![DataGrid with editing in comboBox column](SfDataGrid_images/GridComboBoxColumn.png)
 
 ### Collection of primitive types
 
@@ -1291,7 +1291,7 @@ public class CustomComboBoxRenderer : GridCellComboBoxRenderer
 }
 {% endhighlight %}
 
-![DataGrid with Customizing comboBox column](SfDataGrid_images/CustomizingGridComboBox.jpg)
+![DataGrid with Customizing comboBox column](SfDataGrid_images/CustomizingGridComboBox.png)
 
 ### Loading Different ItemSource for each row of GridComboBoxColumn
 
@@ -1404,7 +1404,7 @@ dataGrid.Columns.Add(comboBoxColumn);
 {% endhighlight %}
 {% endtabs %}
 
-![DataGrid with Customizing comboBox column](SfDataGrid_images/EditableGridComboBox.jpg)
+![DataGrid with Customizing comboBox column](SfDataGrid_images/EditableGridComboBox.png)
 
 ### Auto completing on edit mode
 
@@ -1449,7 +1449,7 @@ dataGrid.Columns.Add(comboBoxColumn);
 {% endhighlight %}
 {% endtabs %}
 
-![DataGrid with Customizing comboBox column](SfDataGrid_images/AutoCompleteMode.jpg)
+![DataGrid with Customizing comboBox column](SfDataGrid_images/AutoCompleteMode.png)
 
 ### Auto suggesting on edit mode
 
@@ -1494,7 +1494,7 @@ dataGrid.Columns.Add(comboBoxColumn);
 {% endhighlight %}
 {% endtabs %}
 
-![DataGrid with Customizing comboBox column](SfDataGrid_images/AutoSuggestionMode.jpg)
+![DataGrid with Customizing comboBox column](SfDataGrid_images/AutoSuggestionMode.png)
 
 ## GridNumericColumn
 

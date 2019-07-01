@@ -40,7 +40,7 @@ private void TreeView_QueryNodeSize(object sender, QueryNodeSizeEventArgs e)
 
 You can download the entire source code of this demo [here]().
 
-![Height of item in TreeView]()
+![Height of item in TreeView](TreeView_images/TreeView_AutoFit.png)
 
 ## AutoFit the items based on the content
 
@@ -86,7 +86,7 @@ public class MainPage : ContentPage
 
 You can download the entire source code of this demo [here]().
 
-![AutoFit items]()
+![AutoFit items](TreeView_images/TreeView_AutoFit_Items.png)
 
 
 ## Limitations

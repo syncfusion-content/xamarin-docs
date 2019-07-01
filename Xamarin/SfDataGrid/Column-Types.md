@@ -50,8 +50,8 @@ The following table describes the types of columns and its usage:
 <td>To display the IEnumerable data using Picker.</td>
 </tr>
 <tr>
-<td>{{'[GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html)'| markdownify }}</td>
-<td>{{'[GridCellComboBoxRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCellComboBoxRenderer.html)'| markdownify }}</td>
+<td>{{'[GridComboBoxColumn]()'| markdownify }}</td>
+<td>{{'[GridCellComboBoxRenderer]()'| markdownify }}</td>
 <td>To display the IEnumerable data using Picker.</td>
 </tr>
 <tr>
@@ -1203,7 +1203,7 @@ When edit mode is exited by selecting a value(9) from the Picker pop up, the `Gr
 
 ## GridComboBoxColumn
 
-The [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) inherits all the properties of the [SfDataGrid.GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html). It displays a list of items in the form of a [SfComboBox](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox_namespace.html) as the content of a column. To enable or disable editing for the particular column, set the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays a `SfComboBox` element. The data source to SfComboBox can be set by using the [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property. The combobox column can be populated with data by the following ways:
+The `GridComboBoxColumn` inherits all the properties of the `SfDataGrid.GridColumn`. It displays a list of items in the form of a `SfComboBox` as the content of a column. To enable or disable editing for the particular column, set the `GridColumn.AllowEditing` property to true or false. In the editing mode it displays a `SfComboBox` element. The data source to SfComboBox can be set by using the `GridComboBoxColumn.ItemsSource` property. The combobox column can be populated with data by the following ways:
 
 * Collection of primitive types
 * Collection of user-defined types (Custom objects)
@@ -1212,9 +1212,9 @@ The [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 
 ### Collection of primitive types
 
-To display the collection of items in the comboBox drop down, create a [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) and set its [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property to a simple collection. 
+To display the collection of items in the comboBox drop down, create a `GridComboBoxColumn` and set its `ItemsSource` property to a simple collection. 
 
-To load the [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) with a simple string collection, follow the code example:
+To load the `GridComboBoxColumn` with a simple string collection, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -1265,13 +1265,13 @@ public class ViewModel
 
 ### Collection of user-defined types
 
-To display a list of user-defined items in the combo-box drop down, create a [SfDataGrid.GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) and set its [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property to a user-defined collection. Initially, the combo-box column will be displayed with the values from the [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) property of the column if the [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ValueMemberPath.html) are not set.
+To display a list of user-defined items in the combo-box drop down, create a `SfDataGrid.GridComboBoxColumn` and set its `ItemsSource` property to a user-defined collection. Initially, the combo-box column will be displayed with the values from the `GridColumn.MappingName` property of the column if the `DisplayMemberPath` and `ValueMemberPath` are not set.
 
 For more details about the DisplayMemberPath and ValueMemberPath, Please refer [here](https://help.syncfusion.com/xamarin/sfdatagrid/column-types#collection-of-user-defined-types).
 
 ### Customizing GridComboBoxColumn
 
-Editable element of the GridComboBoxColumn can be Customizing by using the custom [GridCellComboBoxRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCellComboBoxRenderer.html).
+Editable element of the GridComboBoxColumn can be Customizing by using the custom `GridCellComboBoxRenderer`.
 
 Replace the default renderer with custom renderer in the SfDataGrid.CellRenderers collection.
 
@@ -1295,11 +1295,11 @@ public class CustomComboBoxRenderer : GridCellComboBoxRenderer
 
 ### Loading Different ItemSource for each row of GridComboBoxColumn
 
-You can load the different ItemsSource to each row of GridComboBoxColumn by setting [SfDataGrid.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSourceSelector.html) property.
+You can load the different ItemsSource to each row of GridComboBoxColumn by setting SfDataGrid.ItemsSourceSelector property.
 
 ### Implementing IItemsSourceSelector
 
-[ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSourceSelector.html) needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
+`ItemsSourceSelector` needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
 
 * Record – data object associated with row.
 * Data Context – Binding context of data grid.
@@ -1367,9 +1367,9 @@ public class ItemSourceSelector : IItemsSourceSelector
 ![DataGrid with Customizing comboBox column](SfDataGrid_images/GridItemsSourceSelector.png)
 
 ### Editing the combo box
-The [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) supports both editable and non-editable text box to choose selected items in given data source. Users can select one item from the suggestion list.
+The `GridComboBoxColumn` supports both editable and non-editable text box to choose selected items in given data source. Users can select one item from the suggestion list.
 
-[IsEditableMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~IsEditableMode.html) property is used to enable the user input in [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html). The default value is `false`.
+`IsEditableMode` property is used to enable the user input in `GridComboBoxColumn`. The default value is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1408,7 +1408,7 @@ dataGrid.Columns.Add(comboBoxColumn);
 
 ### Auto completing on edit mode
 
-The auto completion on the edit mode can be enabled by using the [GridComboBoxColumn.AutoCompleteMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~AutoCompleteMode.html) property. Default value is `Suggest`. Following types of auto complete modes are available,
+The auto completion on the edit mode can be enabled by using the `GridComboBoxColumn.AutoCompleteMode` property. Default value is Suggest. Following types of auto complete modes are available,
 
 * Append
 * Suggest
@@ -1453,7 +1453,7 @@ dataGrid.Columns.Add(comboBoxColumn);
 
 ### Auto suggesting on edit mode
 
-By default, auto suggestion in the dropdown will display the value based on the [StartsWith](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SuggestionMode.html) filter condition. This can be changed to retrieve the matches with the Contains condition by using the [SuggestionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~SuggestionMode.html) property.
+By default, auto suggestion in the dropdown will display the value based on the `StartsWith` filter condition. This can be changed to retrieve the matches with the Contains condition by using the `SuggestionMode` property.
 
 {% tabs %}
 {% highlight xaml %}

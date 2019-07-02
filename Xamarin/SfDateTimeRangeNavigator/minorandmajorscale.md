@@ -116,7 +116,7 @@ dateTime.MinorScaleStyle.IsVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![MinorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img3.png)
+![MinorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img3.jpg)
 
 ### Hide major scale
 
@@ -139,7 +139,7 @@ dateTime.MajorScaleStyle.IsVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![MajorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img4.png)
+![MajorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img4.jpg)
 
 ## MinorScaleLabelsCreated event
 

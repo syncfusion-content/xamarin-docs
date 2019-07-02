@@ -136,10 +136,10 @@ dateTime.Minimum = new DateTime(2015, 01, 01);
 dateTime.Maximum = new DateTime(2019, 01, 01);
 dateTime.MajorScaleStyle.IsVisible = false;
 
-![MajorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img4.png)
-
 {% endhighlight %}
 {% endtabs %}
+
+![MajorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img4.png)
 
 ## MinorScaleLabelsCreated event
 

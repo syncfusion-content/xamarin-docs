@@ -21,7 +21,7 @@ Suggestion Box can be placed either at the top or bottom using the `SuggestionBo
 
 <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
     <combobox:SfComboBox HeightRequest="40" SuggestionBoxPlacement="Top" x:Name="comboBox">
-        <combobox:SfComboBox.DataSource>
+        <combobox:SfComboBox.ComboBoxSource>
             <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
@@ -29,7 +29,7 @@ Suggestion Box can be placed either at the top or bottom using the `SuggestionBo
                 <x:String> United Kingdom </x:String>
                 <x:String> United States </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox.ComboBoxSource>
     </combobox:SfComboBox>                   
 </StackLayout>
 
@@ -52,7 +52,7 @@ countryNames.Add("United States");
 
 SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
-comboBox.DataSource = countryNames;
+comboBox.ComboBoxSource = countryNames;
 comboBox.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
 layout.Children.Add(comboBox); 
 Content = layout;
@@ -73,7 +73,7 @@ The maximum height of the suggestion box in the SfComboBox control can be varied
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
     <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="100">
-        <combobox:SfComboBox.DataSource>
+        <combobox:SfComboBox.ComboBoxSource>
             <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Great Britain </x:String>
                 <x:String> Uganda </x:String>
@@ -86,7 +86,7 @@ The maximum height of the suggestion box in the SfComboBox control can be varied
                 <x:String> United States </x:String>
                 <x:String> Japan </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox.ComboBoxSource>
     </combobox:SfComboBox>                           
 </StackLayout> 
 
@@ -115,7 +115,7 @@ countryNames.Add("Japan");
 
 SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
-comboBox.DataSource = countryNames;
+comboBox.ComboBoxSource = countryNames;
 comboBox.MaximumDropDownHeight = 100;
 layout.Children.Add(comboBox); 
 Content = layout;
@@ -136,7 +136,7 @@ Suggestion Box can be shown whenever control receives focus using the `ShowSugge
 
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
     <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" ShowSuggestionsOnFocus="true">
-        <combobox:SfComboBox.DataSource>
+        <combobox:SfComboBox.ComboBoxSource>
             <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Great Britain </x:String>
                 <x:String> Canada </x:String>
@@ -144,7 +144,7 @@ Suggestion Box can be shown whenever control receives focus using the `ShowSugge
                 <x:String> China </x:String>
                 <x:String> Japan </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox.ComboBoxSource>
     </combobox:SfComboBox>                                       
 </StackLayout> 
 
@@ -167,7 +167,7 @@ countryNames.Add("Japan");
 
 SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
-comboBox.DataSource = countryNames;
+comboBox.ComboBoxSource = countryNames;
 comboBox.ShowSuggestionsOnFocus = true;
 comboBox.IsEditableMode = true;
 comboBox.SelectionChanged += (sender, e) => 
@@ -187,7 +187,7 @@ Content = layout;
 ## Delay opening suggestion box
 
 The `PopupDelay` property is used to delay the suggestion box opening process. It gets milliseconds as input in integer data type.
-Here in this example, a time duration of 3 seconds is set as popup delay.
+In this example, a time duration of 3 seconds is set to popup delay.
 
 {% tabs %}
 
@@ -195,7 +195,7 @@ Here in this example, a time duration of 3 seconds is set as popup delay.
 
 <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
     <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" PopupDelay="3000">
-        <combobox:SfComboBox.DataSource>
+        <combobox:SfComboBox.ComboBoxSource>
             <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
@@ -203,7 +203,7 @@ Here in this example, a time duration of 3 seconds is set as popup delay.
                 <x:String> United Kingdom </x:String>
                 <x:String> United States </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox.ComboBoxSource>
     </combobox:SfComboBox>                                            
 </StackLayout> 
 
@@ -226,11 +226,64 @@ countryNames.Add("United States");
 
 SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
-comboBox.DataSource = countryNames;
+comboBox.ComboBoxSource = countryNames;
 comboBox.PopupDelay = 3000;
 
 layout.Children.Add(comboBox); 
 Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Delay before searching algorithm starts
+
+The `SearchDelay` property is used to delay the searching algorithm process. It gets milliseconds as input in integer data type.
+
+In this example, a time duration of 3 seconds is set to search delay.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
+    <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SearchDelay="3000">
+        <combobox:SfComboBox.ComboBoxSource>
+            <ListCollection:List x:TypeArguments="x:String">
+                <x:String> Uganda </x:String>
+                <x:String> Ukraine </x:String>
+                <x:String> United Arab Emirates </x:String>
+                <x:String> United Kingdom </x:String>
+                <x:String> United States </x:String>
+            </ListCollection:List>
+        </combobox:SfComboBox.ComboBoxSource>
+    </combobox:SfComboBox>                                            
+</StackLayout> 
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    StackLayout layout = new StackLayout() 
+    { 
+        VerticalOptions = LayoutOptions.Start, 
+        HorizontalOptions = LayoutOptions.Start, 
+        Padding = new Thickness(30) 
+    };	
+    List<String> countryNames = new List<String>();
+    countryNames.Add("Uganda");
+    countryNames.Add("Ukraine");
+    countryNames.Add("United Arab Emirates");
+    countryNames.Add("United Kingdom");
+    countryNames.Add("United States");
+    
+    SfComboBox comboBox = new SfComboBox();
+    comboBox.HeightRequest = 40;
+    comboBox.ComboBoxSource = countryNames;
+    comboBox.SearchDelay = 3000;
+    
+    layout.Children.Add(comboBox); 
+    Content = layout;
 
 {% endhighlight %}
 
@@ -246,7 +299,7 @@ APIs are available to avoid pop-ups and retrieve filtered suggestion items that 
 
 <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
     <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" SuggestionBoxPlacement="None">
-        <combobox:SfComboBox.DataSource>
+        <combobox:SfComboBox.ComboBoxSource>
             <ListCollection:List x:TypeArguments="x:String">
                 <x:String> Uganda </x:String>
                 <x:String> Ukraine </x:String>
@@ -254,7 +307,7 @@ APIs are available to avoid pop-ups and retrieve filtered suggestion items that 
                 <x:String> United Kingdom </x:String>
                 <x:String> United States </x:String>
             </ListCollection:List>
-        </combobox:SfComboBox.DataSource>
+        </combobox:SfComboBox.ComboBoxSource>
     </combobox:SfComboBox>                             
 </StackLayout> 
 
@@ -279,7 +332,7 @@ countryNames.Add("United States");
 SfComboBox comboBox = new SfComboBox();
 comboBox.HeightRequest = 40;
 comboBox.SuggestionBoxPlacement = SuggestionBoxPlacement.None;
-comboBox.DataSource = countryNames;
+comboBox.ComboBoxSource = countryNames;
 layout.Children.Add(comboBox); 
 Content = layout;
 

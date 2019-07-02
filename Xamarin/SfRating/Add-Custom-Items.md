@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title: Adding Custom items in Syncfusion Rating control for Xamarin.Forms
+title: Adding Custom items in Syncfusion SfRating control for Xamarin.Forms
 description: Learn how to add the Custom Items in rating control
 platform: Xamarin
 control: Rating 
@@ -13,37 +13,82 @@ documentation: ug
 
 SfRating Items control provides support to add custom views.
 
-## Add SfRating Items
+N> To use custom views in Xamarin.Forms UWP platform, you need to set ItemCount value.
 
-The SfRating Items control is configured entirely in C# code. Add the SfRating Items control with a required optimal name by using the included namespace.
+## Add SfRating items
+
+To customize the view of rating items, create and set custom view as `SelectedView` and `UnSelectedView` of SfRatingItem. Refer to the following code snippet to create a custom view.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <rating:SfRating EnableCustomView="true">
+        <rating:SfRating.Items>
+            <rating:SfRatingItem/>                
+        </rating:SfRating.Items>
+    </rating:SfRating>
+
+{% endhighlight %}
 
 {% highlight C# %}
 
 SfRating rating= new SfRating();
-
-SfRatingItem item = new SfRatingItem();
+SfRatingItem ratingItem = new SfRatingItem();
+rating.Items = ratingItem;
+rating.EnableCustomView = true;
 
 {% endhighlight %}
 
-## Set Selected View
- 
+{% endtabs %}
+
+## Set selected view
+
 The `SelectedView` property is used to apply the given SelectedView to selected rating item.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <rating:SfRatingItem>
+        <rating:SfRatingItem.SelectedView>
+            <Image Source="Angry_selected.png"/>
+        </rating:SfRatingItem.SelectedView>
+    </rating:SfRatingItem>
+
+{% endhighlight %}
 
 {% highlight C# %}
 
-item.SelectedView = new Image() { Source = "Angry_selected.png", Aspect = Aspect.Fill };
+ratingItem.SelectedView = new Image() { Source = "Angry_selected.png", Aspect = Aspect.Fill };
 
 {% endhighlight %}
 
-## Set UnSelected View
+{% endtabs %}
+
+## Set unselected view
  
 The `UnSelectedView` property is used to apply the given UnSelectedView to unselected rating item.
 
-{% highlight C# %}
+{% tabs %}
 
-item.UnSelectedView = new Image() { Source = "Angry_Unselected.png", Aspect = Aspect.Fill };
+{% highlight xaml %}
+
+        <rating:SfRatingItem>
+            <rating:SfRatingItem.UnSelectedView>
+                <Image Source="Angry_Unselected.png"/>
+            </rating:SfRatingItem.UnSelectedView>
+        </rating:SfRatingItem>
 
 {% endhighlight %}
+
+{% highlight C# %}
+
+ratingItem.UnSelectedView = new Image() { Source = "Angry_Unselected.png", Aspect = Aspect.Fill };
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Add Items
 
@@ -53,50 +98,108 @@ N> SfRatingItem keeps both selected and unselected view respectively.
 
 {% highlight C# %}
 
-	ObservableCollection<SfRatingItem> customItems = new ObservableCollection<SfRatingItem>();
-	customItems.Add(item);
-	rating.Items = customItems;
+	ObservableCollection<SfRatingItem> ratingItemList = new ObservableCollection<SfRatingItem>();
+	ratingItemList.Add(ratingItem);
+	rating.Items = ratingItemList;
 
 {% endhighlight %}
 
-## Enable Custom Items
+## Enable custom items
 
-When `EnableCustomItems` property is enabled, it will display the custom items added in the rating items. 
+When the `EnableCustomItems` property is enabled, the custom items added in the rating items will be displayed.
 
+{% tabs %}
+
+{% highlight xaml %}
+
+    <rating:SfRating x:Name="rating" EnableCustomView="True" ItemCount="5">
+        <rating:SfRating.Items>
+            <collection:ObservableCollection x:TypeArguments="rating:SfRatingItem">
+                <rating:SfRatingItem>
+                    <rating:SfRatingItem.SelectedView>
+                        <Image Source="Angry_selected.png"/>
+                    </rating:SfRatingItem.SelectedView>
+                    <rating:SfRatingItem.UnSelectedView>
+                        <Image Source="Angry_Unselected.png"/>
+                    </rating:SfRatingItem.UnSelectedView>
+                </rating:SfRatingItem>
+                <rating:SfRatingItem>
+                    <rating:SfRatingItem.SelectedView>
+                        <Image Source="UnHappy_selected.png"/>
+                    </rating:SfRatingItem.SelectedView>
+                    <rating:SfRatingItem.UnSelectedView>
+                        <Image Source="UnHappy_Unselected.png"/>
+                    </rating:SfRatingItem.UnSelectedView>
+                </rating:SfRatingItem>
+                <rating:SfRatingItem>
+                    <rating:SfRatingItem.SelectedView>
+                        <Image Source="Neutral_selected.png"/>
+                    </rating:SfRatingItem.SelectedView>
+                    <rating:SfRatingItem.UnSelectedView>
+                        <Image Source="Neutral_Unselected.png"/>
+                    </rating:SfRatingItem.UnSelectedView>
+                </rating:SfRatingItem>
+                <rating:SfRatingItem>
+                    <rating:SfRatingItem.SelectedView>
+                        <Image Source="Happy_selected.png"/>
+                    </rating:SfRatingItem.SelectedView>
+                    <rating:SfRatingItem.UnSelectedView>
+                        <Image Source="Happy_Unselected.png"/>
+                    </rating:SfRatingItem.UnSelectedView>
+                </rating:SfRatingItem>
+                <rating:SfRatingItem>
+                    <rating:SfRatingItem.SelectedView>
+                        <Image Source="Excited_selected.png"/>
+                    </rating:SfRatingItem.SelectedView>
+                    <rating:SfRatingItem.UnSelectedView>
+                        <Image Source="Excited_Unselected.png"/>
+                    </rating:SfRatingItem.UnSelectedView>
+                </rating:SfRatingItem>
+            </collection:ObservableCollection>
+        </rating:SfRating.Items>
+    </rating:SfRating>
+
+{% endhighlight %}
 
 {% highlight C# %}
-	
-	SfRating rating= new SfRating();
-	SfRatingItem item = new SfRatingItem();
-        	item.SelectedView = new Image() { Source = "Angry_selected.png", Aspect = Aspect.Fill };
-        	item.UnSelectedView = new Image() { Source = "Angry_Unselected.png", Aspect = Aspect.Fill };
-	SfRatingItem item1 = new SfRatingItem();
-		item1.SelectedView = new Image() { Source = "UnHappy_selected.png", Aspect = Aspect.Fill };
-		item1.UnSelectedView = new Image() { Source = "UnHappy_Unselected.png", Aspect = Aspect.Fill };
-	SfRatingItem item2 = new SfRatingItem();
-		item2.SelectedView = new Image() { Source = "Neutral_selected.png", Aspect = Aspect.Fill };
-		item2.UnSelectedView = new Image() { Source = "Neutral_Unselected.png", Aspect = Aspect.Fill };
-	SfRatingItem item3 = new SfRatingItem();
-		item3.SelectedView = new Image() { Source = "Happy_selected.png", Aspect = Aspect.Fill };
-		item3.UnSelectedView = new Image() { Source = "Happy_Unselected.png", Aspect = Aspect.Fill };
-	SfRatingItem item4 = new SfRatingItem();
-		item4.SelectedView = new Image() { Source = "Excited_selected.png", Aspect = Aspect.Fill };
-		item4.UnSelectedView = new Image() { Source = "Excited_Unselected.png", Aspect = Aspect.Fill };
-	ObservableCollection<SfRatingItem> customItems = new ObservableCollection<SfRatingItem>();
-            customItems.Add(item);
-            customItems.Add(item1);
-            customItems.Add(item2);
-            customItems.Add(item3);
-            customItems.Add(item4);
-	rating.Items = customItems;
-	rating.EnableCustomView = true;
+
+SfRating rating;
+public MainPage()
+{
+    InitializeComponent();
+    rating = new SfRating();
+    rating.EnableCustomView = true;
+    rating.ItemCount = 5;
+    SfRatingItem angry = new SfRatingItem();
+    angry.SelectedView = new Image() { Source = "Angry_selected.png" };
+    angry.UnSelectedView = new Image() { Source = "Angry_Unselected.png" };
+    SfRatingItem unhappy = new SfRatingItem();
+    unhappy.SelectedView = new Image() { Source = "UnHappy_selected.png" };
+    unhappy.UnSelectedView = new Image() { Source = "UnHappy_Unselected.png" };
+    SfRatingItem neutral = new SfRatingItem();
+    neutral.SelectedView = new Image() { Source = "Neutral_selected.png" };
+    neutral.UnSelectedView = new Image() { Source = "Neutral_Unselected.png" };
+    SfRatingItem happy = new SfRatingItem();
+    happy.SelectedView = new Image() { Source = "Happy_selected.png" };
+    happy.UnSelectedView = new Image() { Source = "Happy_Unselected.png" };
+    SfRatingItem excited = new SfRatingItem();
+    excited.SelectedView = new Image() { Source = "Excited_selected.png" };
+    excited.UnSelectedView = new Image() { Source = "Excited_Unselected.png" };
+    ObservableCollection<SfRatingItem> ratingItemList = new ObservableCollection<SfRatingItem>();
+    customItems.Add(angry);
+    customItems.Add(unhappy);
+    customItems.Add(neutral);
+    customItems.Add(happy);
+    customItems.Add(excited);
+    rating.Items = ratingItemList;
+    this.Content = rating;
+}
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![Add custom view in Xamarin.Forms](images/CustomviewItems.png)
  
 
-
-
-
- 
+![Custom view SfRating](images/CustomviewItems.png)

@@ -21,7 +21,9 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Adding Xamarin.Forms Chart reference](Getting-Started_images/img3.png)
 
-N> Install the same version of the chart NuGet in all the projects.
+N> 
+* Install the same version of the chart NuGet in all the projects.
+* In addition, you need to install the [Syncfusion.Xamarin.SfChart.WPF]() package for Xamarin.Forms WPF platform only.
 
 **Method 2: Adding SfChart reference from toolbox**
 
@@ -93,6 +95,19 @@ Syncfusion.Core.XForms.UWP.dll<br/>
 Syncfusion.Licensing.dll<br/>
 </td>
 </tr>
+<tr>
+<td>
+WPF
+</td>
+<td>
+Syncfusion.SfChart.WPF.dll<br/>
+Syncfusion.SfChart.XForms.WPF.dll<br/>
+Syncfusion.SfChart.XForms.dll<br/>
+Syncfusion.Core.XForms.dll<br/>
+Syncfusion.Core.XForms.WPF.dll<br/>
+Syncfusion.Licensing.dll<br/>
+</td>
+</tr>
 </table>
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
@@ -139,6 +154,28 @@ public override void DidFinishLaunching(NSNotification notification)
 
     LoadApplication(new App());          
     …
+}
+
+{% endhighlight %}
+
+### Windows Presentation Foundation (WPF)
+
+To launch the chart in WPF, call the SfChartRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
+
+{% highlight C# %} 
+
+public partial class MainWindow : FormsApplicationPage
+{
+     public MainWindow()
+     { 
+            InitializeComponent();
+
+            Forms.Init();
+
+            Syncfusion.SfChart.XForms.WPF.SfChartRenderer.Init();
+
+            LoadApplication(new App());
+     }
 }
 
 {% endhighlight %}

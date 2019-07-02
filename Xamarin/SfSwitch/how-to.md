@@ -220,8 +220,6 @@ By using the `MaterialSwitchSettings`, `CupertinoSwitchSettings`, and `FluentSwi
 
 {% endhighlight %}
 
-{% endtabs %}
-
 {% highlight c# %}
 
             SfSwitch sfSwitch = new SfSwitch();
@@ -258,6 +256,8 @@ By using the `MaterialSwitchSettings`, `CupertinoSwitchSettings`, and `FluentSwi
             this.Content = sfSwitch;
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ![switch conrol with thumb color](images/thumb-color-based-on-device.png)
 

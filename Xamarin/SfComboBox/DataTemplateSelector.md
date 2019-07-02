@@ -170,7 +170,7 @@ The OnSelectTemplate is an overridden method to return a particular DataTemplate
 
 The following screenshot illustrates the output of above code.
 
-![Data template selector](images/Data_Template_Selector/DataTemplateSelector.png)
+![Data template selector](images/Data-Template-Selector/DataTemplateSelector.png)
 
 
 We have attached sample for reference. You can download the sample from the following link.

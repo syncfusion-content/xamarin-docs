@@ -90,6 +90,26 @@ listView.IsStickyFooter = true;
 
 ![Xamarin.Forms listview with header and footer](SfListView_images/SfListView-HeaderAndFooter.jpg)
 
+## Sticky footer position
+
+The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows to position the footer item by using the [StickyFooterPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~StickyFooterPosition.html) property. 
+
+The `StickyFooterPosition` property has two positions:
+
+* Body: Positioned below the content, only when the ListView has lesser items than view.
+* Default: Positioned at the bottom of the ListView.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfListView x:Name="listView" StickyFooterPosition="Body"/>          
+{% endhighlight %}
+{% highlight c# %}
+listView.StickyFooterPosition = FooterPosition.Body;
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin Forms ListView with sticky footer position](SfListView_images/SfListView-StickyFooterPosition.jpg)
+
 ## How to
 
 ### TabView appearance using listview header

@@ -244,7 +244,7 @@ public class Dark : DataGridStyle
 } 
 {% endhighlight %}
 
-![Customizing the appearance of stacked header row](SfDataGrid_images/StackedHeader_Background_Foreground.jpeg)
+![Customizing the appearance of stacked header row](SfDataGrid_images/StackedHeader_Background_Foreground.png)
 
 ### Conditional styling
 
@@ -284,7 +284,7 @@ public class Dark : DataGridStyle
 } 
 {% endhighlight %}
 
-![Customizing the background of stacked header row based on index](SfDataGrid_images/StackedHeader_Conditional.jpeg)
+![Customizing the background of stacked header row based on index](SfDataGrid_images/StackedHeader_Conditional.png)
 
 ## Loading template in stacked column
 
@@ -371,5 +371,5 @@ this.dataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 {% endhighlight %}
 {% endtabs %}
 
-![Load template in stacked header rows](SfDataGrid_images/StackedHeader_Template.jpeg)
+![Load template in stacked header rows](SfDataGrid_images/StackedHeader_Template.png)
 

@@ -250,4 +250,6 @@ The `LabelColor` property used to change the color of the label.
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ![Label in SfRangeSlider in Xamarin.Forms](images/LabelColor.jpg)

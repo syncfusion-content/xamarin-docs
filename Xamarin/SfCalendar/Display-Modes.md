@@ -182,14 +182,14 @@ N>
 
 {% highlight xaml %}
 
-<syncfusion:SfCalendar x:Name="calendar" NumberOfWeeksInView=3/>
+<syncfusion:SfCalendar x:Name="calendar" NumberOfWeeksInView="2"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfCalendar calendar = new SfCalendar();
-calendar.NumberOfWeeksInView = 3;
+calendar.NumberOfWeeksInView = 2;
 
 {% endhighlight %}
 

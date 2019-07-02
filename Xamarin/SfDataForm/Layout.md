@@ -127,6 +127,39 @@ dataForm.LabelPosition = LabelPosition.Top;
 
 ![Arranging data form field when label position as top in Xamarin.Forms DataForm](SfDataForm_images/Layout_LabelPosition.png)
 
+### Changing label position of the DataFormItem
+
+You can change the label position using the [LabelPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~LabelPosition.html) property in `DataFormItem`, and it will be handled in the `AutoGeneratingDataFormItem` event.
+
+{% tabs %}
+{% highlight xaml %}
+<dataForm:SfDataForm x:Name="dataForm" DataObject="{Binding ContactsInfo}"  AutoGeneratingDataFormItem="DataForm_AutoGeneratingDataFormItem">
+</dataForm:SfDataForm>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.RegisterEditor("Gender", "Segment");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name == "Gender")
+        {
+            e.DataFormItem.LabelPosition = LabelPosition.Top;
+        }
+        if (e.DataFormItem.Name == "Address")
+        {
+            e.DataFormItem.LabelPosition = LabelPosition.Top;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Arranging data form fields when label position mention for each in Xamarin.Forms DataForm](SfDataForm_images/DataFormItem_LabelPosition.png)
+
 ## Loading images for label
 
 You can load image instead of label by defining attribute or by handling the `AutoGeneratingDataFormItem` event.

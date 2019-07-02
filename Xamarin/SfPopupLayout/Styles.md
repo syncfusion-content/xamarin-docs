@@ -242,3 +242,37 @@ public MainPage()
 Executing the above codes renders the following output in iOS, Android and Windows Phone devices respectively.
 
 ![Popup with border customization](PopupLayout_images/BorderCustomization.png)
+
+## Styling overlay background
+
+The SfPopupLayout allows to customize the opacity and the background color of overlay using the `SfPopupLayout.PopupView.PopupStyle.OverlayOpacity` and `SfPopupLayout.PopupView.PopupStyle.OverlayColor` properties, respectively.
+
+Refer to the following code example for customizing the overlay opacity and the background color.
+
+{% tabs %}
+
+{% highlight xaml %}
+        <sfPopup:SfPopupLayout x:Name="popUpLayout">
+            <sfPopup:SfPopupLayout.PopupView>
+                <sfPopup:PopupView>
+                    <sfPopup:PopupView.PopupStyle>
+                        <sfPopup:PopupStyle OverlayColor="Red" OverlayOpacity="0.2">
+                        </sfPopup:PopupStyle>
+                    </sfPopup:PopupView.PopupStyle>
+                </sfPopup:PopupView>
+            </sfPopup:SfPopupLayout.PopupView>
+			</sfPopup:SfPopupLayout>
+{% endhighlight %}
+
+{% highlight c# %}
+
+		    popUpLayout.PopupView.PopupStyle.OverlayColor = Color.Red;
+            popUpLayout.PopupView.PopupStyle.OverlayOpacity = 0.2;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Executing the above codes renders the following output in Android devices.
+
+![Popup with overlay customization](PopupLayout_images/PopupView_Overlay.png)

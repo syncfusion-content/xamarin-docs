@@ -921,4 +921,4 @@ public class ViewModel:INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/xamarin-listview-loadmore).
+You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMButtonCommand201962307).

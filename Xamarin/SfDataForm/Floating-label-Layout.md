@@ -278,7 +278,7 @@ The data field caption will be displayed as floating or hint label for the edito
 
 ### Helper label
 
-The helper label is used to display the water mark for the editor to provide hint for users and it can be set using [Prompt ] https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#setting-watermark.
+The helper label is used to display the water mark for the editor to provide hint for users and it can be set using [Prompt] https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#setting-watermark.
 
 ### Validation label
 

@@ -41,18 +41,10 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null)
     {
-        if (e.DataFormItem.Name == "Address")
+        if (e.DataFormItem.Name == "Name" || e.DataFormItem.Name == "PhoneNumber" || (e.DataFormItem.Name == "Address" || e.DataFormItem.Name == "City")
         {
             e.DataFormItem.LayoutOptions = LayoutOptions.TextInputLayout;
         }
-        if (e.DataFormItem.Name == "DOB")
-        {
-            e.DataFormItem.LayoutOptions = LayoutOptions.TextInputLayout;
-        }
-    }
-    if (e.DataFormItem != null && e.DataFormItem.Name == "Password")
-    {
-       e.DataFormItem.LayoutOptions = LayoutOptions.TextInputLayout;
     }
 }
 
@@ -88,7 +80,7 @@ To enable the outlined container type, you can set [ContainerType](https://help.
 ![Arranging data form field in floating label layout with outlined container type in Xamarin.Forms DataForm](SfDataForm_images/FloatingLabel_Layout.png)
 
 ### None
-When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerType.html) property to ` None ` in `DataForm` or in `DataFormItem` container, it will have empty background and enough spacing.
+When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerType.html) property to `None` in `DataForm` or in `DataFormItem` container, it will have empty background and enough spacing.
 
 ![Arranging data form field in floating label layout with none container type in Xamarin.Forms DataForm](SfDataForm_images/NoneContainerType.png)
 
@@ -118,18 +110,14 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null)
     {
-        if (e.DataFormItem.Name == "Name")
+        if (e.DataFormItem.Name == "PhoneNumber")
         {
             e.DataFormItem.ContainerType = ContainerType.Filled;
         }
-        if (e.DataFormItem.Name == "Address")
+        if (e.DataFormItem.Name == "LastName")
         {
             e.DataFormItem.ContainerType = ContainerType.None;
         }
-    }
-    if (e.DataFormItem != null && e.DataFormItem.Name == "Password")
-    {
-        e.DataFormItem.ContainerType = ContainerType.Outlined;
     }
 }
 
@@ -486,7 +474,7 @@ dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
-    if (e.DataFormItem != null && e.DataFormItem.Name == "Password")
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Name")
     {
         (e.DataFormItem.HintLabelStyle  = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Fonts/Lobster-Regular.ttf#Lobster"), FontSize = 16};
     }

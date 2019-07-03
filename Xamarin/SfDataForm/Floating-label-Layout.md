@@ -72,17 +72,20 @@ By default, the container type is `Outlined`. By using the [ContainerType](https
 ### Filled
 The background color of dataform editor view will be filled with container color and it can be enabled by setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerType.html)  property to `Filled` in `DataForm` or in `DataFormItem`.
 
+{% tabs %}
+{% highlight xaml %}      
+<dataForm:SfDataForm x:Name="dataForm" ContainerType="Filled">
+</dataForm:SfDataForm>                    
+{% endhighlight %}
+{% highlight c# %}
+dataForm.LayoutOptions = ContainerType.Filled;
+{% endhighlight %}
+{% endtabs %}
+
 ![Arranging data form field in floating label layout with filled container type in Xamarin.Forms DataForm](SfDataForm_images/Filled_ContainerType.png)
 
 ### Outlined
 To enable the outlined container type, you can set [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerType.html) property to `Outlined` in `DataForm` or in `DataFormItem` which covers the editor view with rounded-corner.
-
-![Arranging data form field in floating label layout with outlined container type in Xamarin.Forms DataForm](SfDataForm_images/FloatingLabel_Layout.png)
-
-### None
-When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerType.html) property to `None` in `DataForm` or in `DataFormItem` container, it will have empty background and enough spacing.
-
-![Arranging data form field in floating label layout with none container type in Xamarin.Forms DataForm](SfDataForm_images/NoneContainerType.png)
 
 {% tabs %}
 {% highlight xaml %}      
@@ -91,6 +94,25 @@ When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamar
 {% endhighlight %}
 {% highlight c# %}
 dataForm.LayoutOptions = ContainerType.Outlined;
+{% endhighlight %}
+{% endtabs %}
+
+![Arranging data form field in floating label layout with outlined container type in Xamarin.Forms DataForm](SfDataForm_images/FloatingLabel_Layout.png)
+
+
+
+### None
+When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerType.html) property to `None` in `DataForm` or in `DataFormItem` container, it will have empty background and enough spacing.
+
+![Arranging data form field in floating label layout with none container type in Xamarin.Forms DataForm](SfDataForm_images/NoneContainerType.png)
+
+{% tabs %}
+{% highlight xaml %}      
+<dataForm:SfDataForm x:Name="dataForm" ContainerType="None">
+</dataForm:SfDataForm>                    
+{% endhighlight %}
+{% highlight c# %}
+dataForm.LayoutOptions = ContainerType.None;
 {% endhighlight %}
 {% endtabs %}
 

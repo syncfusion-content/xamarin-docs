@@ -360,7 +360,7 @@ this.Content = sfSwitch;
 
 ## Change busy indicator color
 
-You can customize the busy indictaor color using the `BusyIndicatorColor` property based on its visual state and devices.
+You can customize the busy indicator color using the `BusyIndicatorColor` property based on its visual state and devices.
 
 {% tabs %}
 

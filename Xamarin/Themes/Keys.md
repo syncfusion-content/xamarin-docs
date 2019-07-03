@@ -6759,14 +6759,14 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>	    
     <tr>
 	    <td>
-		    Track color of the cupertino switch in On state.
+		    Track color of the Cupertino switch in On state.
 			<br/>
 			<br/>
 		</td>
     </tr>	    
     <tr>
 	    <td>
-		    Track border color of the cupertino switch in On state.
+		    Track border color of the Cupertino switch in On state.
 			<br/>
 			<br/>
 		</td>
@@ -6792,14 +6792,14 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Thumb color of the cupertino switch in On state.
+            Thumb color of the Cupertino switch in On state.
             <br/>
             <br/>
         </td>
     </tr>
 	<tr>
 	    <td>
-		    Thumb border color of the cupertino switch in On state.
+		    Thumb border color of the Cupertino switch in On state.
 			<br/>
 			<br/>
 		</td>
@@ -6897,7 +6897,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Thumb border color of the cupertino switch in off state.
+            Thumb border color of the Cupertino switch in off state.
             <br/>
             <br/>
         </td>
@@ -6909,7 +6909,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Track color of the cupertino switch in off state.
+            Track color of the Cupertino switch in off state.
             <br/>
             <br/>
         </td>
@@ -6921,7 +6921,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Track border color of the cupertino switch in off state.
+            Track border color of the Cupertino switch in off state.
             <br/>
             <br/>
         </td>

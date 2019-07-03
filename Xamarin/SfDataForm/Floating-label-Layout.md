@@ -41,18 +41,10 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null)
     {
-        if (e.DataFormItem.Name == "Address")
+        if (e.DataFormItem.Name == "Name" || e.DataFormItem.Name == "PhoneNumber" || (e.DataFormItem.Name == "Address" || e.DataFormItem.Name == "City")
         {
             e.DataFormItem.LayoutOptions = LayoutOptions.TextInputLayout;
         }
-        if (e.DataFormItem.Name == "DOB")
-        {
-            e.DataFormItem.LayoutOptions = LayoutOptions.TextInputLayout;
-        }
-    }
-    if (e.DataFormItem != null && e.DataFormItem.Name == "Password")
-    {
-       e.DataFormItem.LayoutOptions = LayoutOptions.TextInputLayout;
     }
 }
 
@@ -88,7 +80,7 @@ To enable the outlined container type, you can set [ContainerType](https://help.
 ![Arranging data form field in floating label layout with outlined container type in Xamarin.Forms DataForm](SfDataForm_images/FloatingLabel_Layout.png)
 
 ### None
-When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerType.html) property to ` None ` in `DataForm` or in `DataFormItem` container, it will have empty background and enough spacing.
+When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerType.html) property to `None` in `DataForm` or in `DataFormItem` container, it will have empty background and enough spacing.
 
 ![Arranging data form field in floating label layout with none container type in Xamarin.Forms DataForm](SfDataForm_images/NoneContainerType.png)
 
@@ -118,18 +110,14 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null)
     {
-        if (e.DataFormItem.Name == "Name")
+        if (e.DataFormItem.Name == "PhoneNumber")
         {
             e.DataFormItem.ContainerType = ContainerType.Filled;
         }
-        if (e.DataFormItem.Name == "Address")
+        if (e.DataFormItem.Name == "LastName")
         {
             e.DataFormItem.ContainerType = ContainerType.None;
         }
-    }
-    if (e.DataFormItem != null && e.DataFormItem.Name == "Password")
-    {
-        e.DataFormItem.ContainerType = ContainerType.Outlined;
     }
 }
 
@@ -217,6 +205,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         }
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with trailing view in Xamarin.Forms DataForm](SfDataForm_images/FloatingLabel_TrailingView.png)
 
@@ -269,6 +259,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         };
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with reserved space between editors for assistive labels in Xamarin.Forms DataForm](SfDataForm_images/ReserveSpaceForAssitiveLabel.png)
 
@@ -278,7 +270,7 @@ The data field caption will be displayed as floating or hint label for the edito
 
 ### Helper label
 
-The helper label is used to display the water mark for the editor to provide hint for users and it can be set using [Prompt ] https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#setting-watermark.
+The helper label is used to display the water mark for the editor to provide hint for users and it can be set using [Prompt](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#setting-watermark).
 
 ### Validation label
 
@@ -347,6 +339,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         };
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with outlined corner radius in Xamarin.Forms DataForm](SfDataForm_images/FloatingLabel_CornerRadius.png)
 
@@ -371,6 +365,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         }
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with customized focused color in Xamarin.Forms DataForm](SfDataForm_images/FocusedColor.png)
 
@@ -395,6 +391,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         }
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with customized unfocused color in Xamarin.Forms DataForm](SfDataForm_images/UnfocusedColor.png)
 
@@ -419,6 +417,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         }
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with customized error message color in Xamarin.Forms DataForm](SfDataForm_images/ErrorMessage_Color.png)
 
@@ -443,6 +443,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         }
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with customized validation message color in Xamarin.Forms DataForm](SfDataForm_images/ValidationMessage_Color.png)
 
@@ -472,7 +474,7 @@ dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
-    if (e.DataFormItem != null && e.DataFormItem.Name == "Password")
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Name")
     {
         (e.DataFormItem.HintLabelStyle  = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Fonts/Lobster-Regular.ttf#Lobster"), FontSize = 16};
     }

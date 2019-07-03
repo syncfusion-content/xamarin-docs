@@ -57,7 +57,7 @@ The default value of the `CardTappedCommandParameter` is `null`.
 
 ## VisibleCardIndexChanging
 
-The `VisibleCardIndexChanging` event occurs when the visible card index is changed. The argument contains the following information:
+The `VisibleCardIndexChanging` event occurs when the visible card index is changing. The argument contains the following information:
 
 * `OldCard` - Gets the details of the previous index card.
 

@@ -498,4 +498,4 @@ Floating label layout do not support for the following non-editable editors.
 * Switch editor
 * Drop down editor
 
-You can download the sample from [here](https://github.com/SyncfusionExamples/Floating-label-editors-in-xamarin.forms-dataform)
+You can download the sample from [example](https://github.com/SyncfusionExamples/Floating-label-editors-in-xamarin.forms-dataform)

@@ -950,13 +950,11 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
      {
          if (e.DataFormItem.Name == "Experience" || e.DataFormItem.Name == "Rating" || e.DataFormItem.Name == "Recommend")
          {
-               e.DataFormItem.LabelPosition = LabelPosition.Left;
-               e.DataFormItem.Height = GridLength.Auto;
+             e.DataFormItem.Height = GridLength.Auto;
          }
          if (e.DataFormItem.Name == "Improvement")
          {
-               e.DataFormItem.LabelPosition = LabelPosition.Left;
-               e.DataFormItem.Height = 200;
+             e.DataFormItem.Height = 200;
          }
      }
 }

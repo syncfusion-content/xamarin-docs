@@ -17,7 +17,25 @@ N> By default calendar control is assigned with month view.
 
 This displays entire dates of a particular month, by default current month will be displayed on loading. The current date is provided with separate color different from the rest of the dates color in a month. The events availability will be denoted within the cell based on its duration.
 
-The dates in month view can be selected by four ways such as single, multiple, range and multi range selections which can be achieved using [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html)
+The dates in month view can be selected by four ways such as single, multiple, range and multi range selections which can be achieved using [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html). Refer [here](https://help.syncfusion.com/xamarin/sfcalendar/select-multiple-dates).
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+calendar.ViewMode = ViewMode.MonthView;
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+![Month view in Xamarin.Forms Calendar](images/xamarin.forms-calendar-SingleSelection.png)
 
 ## Trailing and leading days
 
@@ -182,14 +200,14 @@ N>
 
 {% highlight xaml %}
 
-<syncfusion:SfCalendar x:Name="calendar" NumberOfWeeksInView=3/>
+<syncfusion:SfCalendar x:Name="calendar" NumberOfWeeksInView="2"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 SfCalendar calendar = new SfCalendar();
-calendar.NumberOfWeeksInView = 3;
+calendar.NumberOfWeeksInView = 2;
 
 {% endhighlight %}
 

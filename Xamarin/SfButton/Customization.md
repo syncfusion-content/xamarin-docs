@@ -318,7 +318,7 @@ button.ImageAlignment = Alignment.End;
 
 ## Gradient background
 
-You can set the gradient as background of SfButton using the [`BackgroundGradient`]() property. It supports the following types of gradients:
+You can set the gradient as background of SfButton using the [`BackgroundGradient`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~BackgroundGradient.html) property. It supports the following types of gradients:
 
 * Linear gradient
 * Radial gradient

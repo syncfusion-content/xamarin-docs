@@ -2906,7 +2906,7 @@ FunnelSeries funnelSeries = new FunnelSeries()
 
 ![Minimum width support for funnel series in Xamarin.Forms Chart](charttypes_images/charttypes_img40.png)
 
-## Waterfall Series
+## Waterfall Chart
 
 [`WaterfallSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.WaterfallSeries.html) clarifies the cumulative effect of a set of provided positive and negative values. The series is represented by a rectangle and a connector between the rectangles. 
 

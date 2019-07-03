@@ -6680,6 +6680,234 @@ This page lists the keys for each control and the element to which it is mapped 
 
 </table>
 
+## SfSwitch
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="15">
+            SfSwitchStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfSwitchTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfSwitch without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfSwitchTheme">CustomTheme</x:String> 
+                <Color x:Key="MaterialOnTrackColor">Black</Color> 
+                <Color x:Key="MaterialOnTrackBorderColor">White</Color>
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+
+    <tr> 
+        <td>
+            MaterialOffThumbColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb color of the material switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	<tr> 
+        <td>
+            MaterialOffTrackColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track color of the material switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr> 
+        <td>
+            MaterialOffThumbBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb border color of the material switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr> 
+        <td>
+            MaterialOffTrackBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track border color of the material switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr> 
+        <td>
+            MaterialIndeterminateTrackColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate track color of the material switch.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr> 
+        <td>
+            MaterialIndeterminateTrackBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate track border color of the material switch.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr> 
+        <td>
+            CupertinoOffThumbBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb border color of the cupertino switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr> 
+        <td>
+            CupertinoOffTrackColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track color of the cupertino switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr> 
+        <td>
+            CupertinoOffTrackBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track border color of the cupertino switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr> 
+        <td>
+            FluentOffThumbColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb color of the fluent switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr> 
+        <td>
+            FluentOffTrackColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track color of the fluent switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr> 
+        <td>
+            FluentOffThumbBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb border color of the fluent switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr> 
+        <td>
+            FluentOffTrackBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the fluent switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
 ## SfBorder
 
 <table>

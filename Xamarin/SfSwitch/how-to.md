@@ -139,7 +139,7 @@ You can customize the thumb color using the `ThumbColor` property based on its v
 
             VisualState offState = new VisualState
             {
-                Name = "OFF"
+                Name = "Off"
             };
 
             offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
@@ -242,7 +242,7 @@ By using the `MaterialSwitchSettings`, `CupertinoSwitchSettings`, and `FluentSwi
 
             VisualState offState = new VisualState
             {
-                Name = "OFF"
+                Name = "Off"
             };
 
             offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
@@ -357,3 +357,257 @@ this.Content = sfSwitch;
 {% endtabs %}
 
 ![switch conrol with image](images/thumb-color-in-disabled-state.png)
+
+## Change busy indicator color
+
+You can customize the busy indictaor color using the `BusyIndicatorColor` property based on its visual state and devices.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <syncfusion:SfSwitch  VisualType="Custom"  IsBusy="True">
+
+        <VisualStateManager.VisualStateGroups>
+
+            <VisualStateGroup  x:Name="CommonStates">
+
+                <VisualState x:Name="On">
+
+                    <VisualState.Setters>
+
+                        <Setter Property="SwitchSettings">
+
+                            <Setter.Value>
+
+                                <syncfusion:DefaultSwitchSettings  x:TypeArguments="syncfusion:OnState"  BusyIndicatorColor="Red" >
+
+                                </syncfusion:DefaultSwitchSettings>
+
+                            </Setter.Value>
+
+                        </Setter>
+
+                    </VisualState.Setters>
+
+                </VisualState>
+
+                <VisualState x:Name="Off">
+
+                    <VisualState.Setters>
+
+                        <Setter Property="SwitchSettings">
+
+                            <Setter.Value>
+
+                                <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OffState" BusyIndicatorColor="Red" />
+
+                            </Setter.Value>
+
+                        </Setter>
+
+                    </VisualState.Setters>
+
+                </VisualState>
+
+            </VisualStateGroup>
+
+        </VisualStateManager.VisualStateGroups>
+
+    </syncfusion:SfSwitch>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfSwitch sfSwitch = new SfSwitch();
+sfSwitch.VisualType = VisualType.Custom;
+sfSwitch.IsBusy = true;
+DefaultSwitchSettings<OnState> defaultSwitch = new DefaultSwitchSettings<OnState>();
+defaultSwitch.BusyIndicatorColor = Color.Red;
+DefaultSwitchSettings<OffState> defaultSwitch1 = new DefaultSwitchSettings<OffState>();
+defaultSwitch1.BusyIndicatorColor = Color.Red;
+
+VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
+
+VisualStateGroup commonStateGroup = new VisualStateGroup();
+VisualState onState = new VisualState
+{
+Name = "On"
+};
+onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch });
+
+VisualState offState = new VisualState
+{
+Name = "Off"
+};
+
+offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
+
+commonStateGroup.States.Add(onState);
+commonStateGroup.States.Add(offState);
+visualStateGroupList.Add(commonStateGroup);
+
+VisualStateManager.SetVisualStateGroups(sfSwitch, visualStateGroupList);
+
+this.Content = sfSwitch;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![switch control with busy indicator color](images/change-busy-indicator-color.png)
+
+## Set all state in same look
+
+All state can be customized in same look by setting the same state for all switch settings.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <syncfusion:SfSwitch  VisualType="Custom" >
+
+        <VisualStateManager.VisualStateGroups>
+
+            <VisualStateGroup  x:Name="CommonStates">
+
+                <VisualState x:Name="On">
+
+                    <VisualState.Setters>
+
+                        <Setter Property="SwitchSettings">
+
+                            <Setter.Value>
+
+                                <syncfusion:DefaultSwitchSettings  x:TypeArguments="syncfusion:OnState" />
+
+                            </Setter.Value>
+
+                        </Setter>
+
+                    </VisualState.Setters>
+
+                </VisualState>
+
+                <VisualState x:Name="Off">
+
+                    <VisualState.Setters>
+
+                        <Setter Property="SwitchSettings">
+
+                            <Setter.Value>
+
+                                <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OnState" />
+
+                            </Setter.Value>
+
+                        </Setter>
+
+                    </VisualState.Setters>
+
+                </VisualState>
+
+            </VisualStateGroup>
+
+        </VisualStateManager.VisualStateGroups>
+
+    </syncfusion:SfSwitch>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfSwitch sfSwitch = new SfSwitch();
+sfSwitch.VisualType = VisualType.Custom;
+
+DefaultSwitchSettings<OnState> defaultSwitch = new DefaultSwitchSettings<OnState>();
+
+DefaultSwitchSettings<OnState> defaultSwitch1 = new DefaultSwitchSettings<OnState>();
+
+VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
+
+VisualStateGroup commonStateGroup = new VisualStateGroup();
+VisualState onState = new VisualState
+{
+Name = "On"
+};
+onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch });
+
+VisualState offState = new VisualState
+{
+Name = "Off"
+};
+
+offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
+
+commonStateGroup.States.Add(onState);
+
+commonStateGroup.States.Add(offState);
+
+visualStateGroupList.Add(commonStateGroup);
+
+VisualStateManager.SetVisualStateGroups(sfSwitch, visualStateGroupList);
+
+this.Content = sfSwitch;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![switch control with same look](images/All-state-in-same-look.png)
+
+## Set RTL to switch control
+
+Switch supports to change the layout direction of the control in the right-to-left direction by setting the `FlowDirection` to `RightToLeft`.
+The device direction takes when we set the `FlowDirection` as `MatchParent`.
+
+### Setting right to left
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <syncfusion:SfSwitch  FlowDirection="RightToLeft" >
+    </syncfusion:SfSwitch>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfSwitch sfSwitch = new SfSwitch();
+sfSwitch.FlowDirection = FlowDirection.RightToLeft;
+this.Content = sfSwitch;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![switch control with RTL support](images/RTL-support.png)
+
+### Setting match parent
+
+{% tabs %}
+
+{% highlight xaml %}
+
+     <Grid FlowDirection="RightToLeft">
+        <syncfusion:SfSwitch FlowDirection="MatchParent" />
+    </Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Grid grid = new Grid();
+grid.FlowDirection = FlowDirection.RightToLeft;
+SfSwitch sfSwitch = new SfSwitch();
+sfSwitch.FlowDirection = FlowDirection.MatchParent;
+grid.Children.Add(sfSwitch);
+this.Content = grid;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![switch control with RTL support](images/RTL-support.png)

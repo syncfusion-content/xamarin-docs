@@ -6699,7 +6699,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="17">
+        <td rowspan="24">
             SfSwitchStyles  
             <br/>
             <br/>
@@ -6854,7 +6854,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
     <tr> 
         <td>
             MaterialOffTrackBorderColor  
@@ -6867,7 +6866,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
     <tr> 
         <td>
             MaterialIndeterminateTrackColor  
@@ -6880,7 +6878,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
     <tr> 
         <td>
             MaterialIndeterminateTrackBorderColor  
@@ -6893,7 +6890,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
     <tr> 
         <td>
             CupertinoOffThumbBorderColor  
@@ -6906,7 +6902,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
     <tr> 
         <td>
             CupertinoOffTrackColor  
@@ -6919,7 +6914,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
     <tr> 
         <td>
             CupertinoOffTrackBorderColor  
@@ -6932,7 +6926,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
     <tr> 
         <td>
             FluentOffThumbColor  
@@ -6945,7 +6938,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
     <tr> 
         <td>
             FluentOffTrackColor  
@@ -6958,7 +6950,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
     <tr> 
         <td>
             FluentOffThumbBorderColor  
@@ -6971,7 +6962,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
     <tr> 
         <td>
             FluentOffTrackBorderColor  

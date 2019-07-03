@@ -82,11 +82,11 @@ VisualStateManager.SetVisualStateGroups(checkBox, visualStateGroupList);
 {% endhighlight %}
 {% endtabs %}
 
-Checked visual state
+**Checked visual state:**
 ![SfCheckBox with visual state of checked state](images/CheckBox_VisualState_Checked.png)
 
-Unchecked visual state
+**Unchecked visual state:**
 ![SfCheckBox with visual state of unchecked state](images/CheckBox_VisualState_Unchecked.png)
 
-Intermediate visual state
+**Intermediate visual state:**
 ![SfCheckBox with visual state of intermediate state](images/CheckBox_VisualState_Intermediate.png)

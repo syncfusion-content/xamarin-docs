@@ -217,6 +217,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         }
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with trailing view in Xamarin.Forms DataForm](SfDataForm_images/FloatingLabel_TrailingView.png)
 
@@ -269,6 +271,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         };
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with reserved space between editors for assistive labels in Xamarin.Forms DataForm](SfDataForm_images/ReserveSpaceForAssitiveLabel.png)
 
@@ -278,7 +282,7 @@ The data field caption will be displayed as floating or hint label for the edito
 
 ### Helper label
 
-The helper label is used to display the water mark for the editor to provide hint for users and it can be set using [Prompt ] https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#setting-watermark.
+The helper label is used to display the water mark for the editor to provide hint for users and it can be set using [Prompt](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#setting-watermark).
 
 ### Validation label
 
@@ -347,6 +351,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         };
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with outlined corner radius in Xamarin.Forms DataForm](SfDataForm_images/FloatingLabel_CornerRadius.png)
 
@@ -371,6 +377,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         }
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with customized focused color in Xamarin.Forms DataForm](SfDataForm_images/FocusedColor.png)
 
@@ -395,6 +403,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         }
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with customized unfocused color in Xamarin.Forms DataForm](SfDataForm_images/UnfocusedColor.png)
 
@@ -419,6 +429,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         }
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with customized error message color in Xamarin.Forms DataForm](SfDataForm_images/ErrorMessage_Color.png)
 
@@ -443,6 +455,8 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
         }
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 ![Arranging data form field in floating label layout with customized validation message color in Xamarin.Forms DataForm](SfDataForm_images/ValidationMessage_Color.png)
 

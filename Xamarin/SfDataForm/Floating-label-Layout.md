@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Floating label Layout | DataForm | Xamarin.Forms | Syncfusion
+title: Floating label layout | DataForm | Xamarin.Forms | Syncfusion
 description: Xamarin.Forms Dataform supports floating label layout with assistive labels, leading and trailing icons, password toggle icon to display or hide a password.
 platform: xamarin
 control: SfDataForm

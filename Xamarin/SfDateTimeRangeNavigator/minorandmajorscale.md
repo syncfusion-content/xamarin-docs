@@ -93,7 +93,7 @@ dateTime.MinorScaleStyle.SelectedLabelFontSize = 20;
 
 ## Scale visibility
 
-The users can also control the visibility of minor scale and major scale using the  [`MajorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) and [`MinorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) properties.
+You can also control the visibility of minor scale and major scale using the  [`MajorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) and [`MinorScaleStyle.IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.ScaleStyle~IsVisible.html) properties.
 
 ### Hide minor scale
 
@@ -116,7 +116,7 @@ dateTime.MinorScaleStyle.IsVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-![MinorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img3.png)
+![MinorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img3.jpg)
 
 ### Hide major scale
 
@@ -136,10 +136,10 @@ dateTime.Minimum = new DateTime(2015, 01, 01);
 dateTime.Maximum = new DateTime(2019, 01, 01);
 dateTime.MajorScaleStyle.IsVisible = false;
 
-![MajorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img4.png)
-
 {% endhighlight %}
 {% endtabs %}
+
+![MajorScaleVisibility](minorandmajorscale_images/minorandmajorscale_img4.jpg)
 
 ## MinorScaleLabelsCreated event
 

@@ -6699,7 +6699,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="15">
+        <td rowspan="17">
             SfSwitchStyles  
             <br/>
             <br/>
@@ -6738,6 +6738,86 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
 	</tr>
 
+    <tr>
+    <td rowspan="6">
+            SyncPrimaryColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb color of the material switch in On state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+	    <td>
+		    Thumb border color of the material switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+    <tr>
+	    <td>
+		    Track color of the cupertino switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+    <tr>
+	    <td>
+		    Track border color of the cupertino switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+    <tr>
+	    <td>
+		    Track color of the Fluent switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+    <tr>
+	    <td>
+		    Track border color of the Fluent switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	   
+     <tr>
+    <td rowspan="4">
+            SyncPrimaryForegroundColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb color of the cupertino switch in On state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+	    <td>
+		    Thumb border color of the cupertino switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+    <tr>
+	    <td>
+		    Thumb color of the Fluent switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+    <tr>
+	    <td>
+		    Thumb border color of the Fluent switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
     <tr> 
         <td>
             MaterialOffThumbColor  
@@ -6762,7 +6842,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-
     <tr> 
         <td>
             MaterialOffThumbBorderColor  

@@ -160,7 +160,7 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
         </td>
         <td>
-            Windows 10 devices
+            Windows 10
             <br/>
             <br/>
         </td>

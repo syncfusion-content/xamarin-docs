@@ -125,7 +125,7 @@ N> Programmatic scrolling is not applicable for rows and columns that are frozen
 
 ## Diagonal scrolling 
 
-By default, `SfDataGrid` supports diagonal scrolling(both vertical and horizontal scrolling simultaneously). Setting false to `SfDataGrid.AllowDiagonalScrolling` disables diagonal scrolling and scrolls the data grid in either horizontal or vertical direction but not simultaneously.
+By default, `SfDataGrid` supports diagonal scrolling(both vertical and horizontal scrolling simultaneously). Setting false to [SfDataGrid.AllowDiagonalScrolling](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowDiagonalScrolling.html) disables diagonal scrolling and scrolls the data grid in either horizontal or vertical direction but not simultaneously.
 
 {% tabs %}
 {% highlight xaml %}

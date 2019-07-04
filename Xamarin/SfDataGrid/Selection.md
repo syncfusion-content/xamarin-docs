@@ -200,7 +200,7 @@ If the current cell is in edit mode, reverts the changes done in the current cel
 <kbd>Delete</kbd>
 </td>
 <td>
-Deletes all the rows that are currently in selection. To prevent rows from being deleted set the `SfDataGrid.AllowDeleting` as `False`.
+Deletes all the rows that are currently in selection. To prevent rows from being deleted set the [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowDeleting.html) as `False`.
 </td>
 </tr>
 </table>
@@ -245,7 +245,7 @@ Moves selection to the previous row from the currently selected row when the Sel
 
 ### Customize key functionalities
 
-To perform custom actions apart from the functionalities mentioned in the above tables for key press actions of the keyboard, implement your custom actions in the `ProcessKeyDown()` override of the custom written selection controller class derived from `GridSelectionController` and assign it to the `SfDataGrid.GridSelectionController` property.
+To perform custom actions apart from the functionalities mentioned in the above tables for key press actions of the keyboard, implement your custom actions in the [ProcessKeyDown()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController~ProcessKeyDown.html) override of the custom written selection controller class derived from [GridSelectionController](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController.html#) and assign it to the [SfDataGrid.GridSelectionController](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html) property.
 
 {% tabs %}
 {% highlight xaml %}

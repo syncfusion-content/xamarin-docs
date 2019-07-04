@@ -94,9 +94,8 @@ N> When you change items source for the SfDatagrid during run time, then the col
 
 ### Auto generate columns for custom type
 
-By default columns are also auto generated for custom type properties and complex properties in the data object. To prevent such columns from being auto generated set the `SfDataGrid.AutoGenerateColumnsForCustomType` property as `False`.
-By default in case of complex properties in the data object, columns will be auto generated only for the parent type. To auto generate columns for the inner properties of the complex property set the `SfDataGrid.AutoGenerateColumnsModeForCustomType` as `AutoGenerateColumnsModeForCustomType.Child`.
-To auto generate columns for both the inner properties and the parent property of the complex property set the `SfDataGrid.AutoGenerateColumnsModeForCustomType` as `AutoGenerateColumnsModeForCustomType.Both`.
+By default columns are also auto generated for custom type properties and for parent properties of complex properties in the data object. To prevent such columns from being auto generated set the `SfDataGrid.AutoGenerateColumnsForCustomType` property as `False`.
+In case of complex properties, use the `SfDataGrid.AutoGenerateColumnsModeForCustomType` to auto generate columns for either parent property, inner properties of the parent or both parent and inner properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -116,10 +115,6 @@ this.dataGrid.AutoGenerateColumnsForCustomType = true;
 this.dataGrid.AutoGenerateColumnsModeForCustomType = AutoGenerateColumnsModeForCustomType.Both;
 {% endhighlight %}
 {% endtabs %}
-
-The `SfDataGrid.AutoGenerateColumnsModeForCustomType` includes the following modes.
-
-You can download the sample demo [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/ComplexPropertySample-19426679) 
 
 ### Customize automatically generated columns
 

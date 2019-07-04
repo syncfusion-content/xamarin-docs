@@ -143,6 +143,28 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
             <br/>
         </td>
+    <tr>
+        <td>
+            WPF
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Desktop
+            <br/>
+            <br/>
+        </td>
+          <td>
+            SfChart 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Windows 10 devices
+            <br/>
+            <br/>
+        </td>
+    </tr>
     
 </table>
 

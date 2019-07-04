@@ -257,60 +257,6 @@ private void ResetColumnsWidth()
 
 ![Resetting columns width in DataGrid](SfDataGrid_images/Reset_ColumnWidth_Forms.png)
 
-### Customize auto width calculation for a column
-
-For cases, where a column might require more width than the applied auto width or if you want to apply your own custom logic to calculate the auto width of a column, return a desired width in the `GetColumnAutoSizeWidth()` override of the custom written column-sizer class derived from `GridColumnSizer` and assign it to the `SfDataGrid.GridColumnSizer` property.
-If in case you want to modify the auto calculations of a column's header cell alone, return a desired width in the `GetHeaderCellWidth()` override of your custom column-sizer class.
-
-{% tabs %}
-{% highlight c# %}
-public class CustomColumnSizer : GridColumnSizer
-    {
-        protected override double GetColumnAutoSizeWidth(GridColumn column)
-        {
-            if (column.MappingName == "OrderID")
-            {
-                // return width based on your logic
-            }
-            else
-            {
-                return base.GetColumnAutoSizeWidth(column);
-            }
-        }
-
-        protected override double GetHeaderCellWidth(GridColumn column)
-        {
-            if (column.MappingName == "CustomerID")
-            {
-                // return width based on your logic
-            }
-            else
-            {
-                return base.GetHeaderCellWidth(column);
-            }
-        }
-    }
-{% endhighlight %}
-{% endtabs %}
-
-{% tabs %}
-{% highlight xaml %}
-<ContentPage.Resources>
-    <local:CustomColumnSizer x:Key="CustomColumnSizer"/>
-</ContentPage.Resources>
-
-<syncfusion:SfDataGrid x:Name="dataGrid"
-                        ItemsSource="{Binding OrdersInfo,Mode=TwoWay}"
-                        ColumnSizer="Auto"
-                        GridColumnSizer="{x:StaticResource CustomColumnSizer}">
-</syncfusion:SfDataGrid>
-{% endhighlight %}
-
-{% highlight c# %}
-dataGrid.GridColumnSizer  = new CustomColumnSizer();
-{% endhighlight %}
-{% endtabs %}
-
 ## Star column sizer ratio support
 
 To customize the `ColumnSizer.Star` width calculation, write a custom GridColumnSizer class derived from [GridColumnSizer](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer.html) and assign it to the `SfDataGrid.ColumnSizer` property. To implement your own logic to divide column width in different ratios, override the [SetStarWidthForColumns](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer~SetStarWidthForColumns.html) method in your custom GridColumnSizer class.

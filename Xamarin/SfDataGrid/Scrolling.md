@@ -123,23 +123,6 @@ dataGrid.ScrollToRowColumnIndex(7, 7, scrollToColumnPosition: ScrollToPosition.C
 
 N> Programmatic scrolling is not applicable for rows and columns that are frozen in view.
 
-## Diagonal scrolling 
-
-By default, `SfDataGrid` supports diagonal scrolling(both vertical and horizontal scrolling simultaneously). Setting false to `SfDataGrid.AllowDiagonalScrolling` disables diagonal scrolling and scrolls the data grid in either horizontal or vertical direction but not simultaneously.
-
-{% tabs %}
-{% highlight xaml %}
-  <syncfusion:SfDataGrid x:Name="dataGrid"
-                           ItemsSource="{Binding OrdersInfo,Mode=TwoWay}"
-                           AllowDiagonalScrolling="False">
-  </syncfusion:SfDataGrid>
-{% endhighlight %}
-
-{% highlight c# %}
-this.dataGrid.AllowDiagonalScrolling = false;
-{% endhighlight %}
-{% endtabs %}
-
 ## Vertical Over Scroll Mode
 
 The [SfDataGrid.VerticalOverScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOverScrollMode.html) property customizes the bouncing behavior of the data grid.

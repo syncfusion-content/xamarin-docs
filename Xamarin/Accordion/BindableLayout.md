@@ -121,4 +121,4 @@ BindableLayout.SetItemsSource(Accordion, viewModel.Info);
 
 ![Xamarin Forms Accordion with Bimdable Layout](accordion_images/xamarin-forms-accordion.png)
 
-You can download the entire source of this demo from [here]().
+You can download the entire source of this demo from [here](https://github.com/SyncfusionExamples/Xamarin-Populate-Accordion-Items-using-Bindable-Layout).

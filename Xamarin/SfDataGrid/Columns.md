@@ -94,8 +94,8 @@ N> When you change items source for the SfDatagrid during run time, then the col
 
 ### Auto generate columns for custom type
 
-By default columns are also auto generated for custom type properties and for parent properties of complex properties in the data object. To prevent such columns from being auto generated set the `SfDataGrid.AutoGenerateColumnsForCustomType` property as `False`.
-In case of complex properties, use the `SfDataGrid.AutoGenerateColumnsModeForCustomType` to auto generate columns for either parent property, inner properties of the parent or both parent and inner properties.
+By default columns are also auto generated for custom type properties and for parent properties of complex properties in the data object. To prevent such columns from being auto generated set the [SfDataGrid.AutoGenerateColumnsForCustomType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumnsForCustomType.html) property as `False`.
+In case of complex properties, use the [SfDataGrid.AutoGenerateColumnsModeForCustomType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumnsModeForCustomType.html) to auto generate columns for either parent property, inner properties of the parent or both parent and inner properties.
 
 {% tabs %}
 {% highlight xaml %}

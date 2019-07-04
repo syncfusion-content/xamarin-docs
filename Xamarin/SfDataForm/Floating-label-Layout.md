@@ -104,8 +104,6 @@ dataForm.LayoutOptions = ContainerType.Outlined;
 ### None
 When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerType.html) property to `None` in `DataForm` or in `DataFormItem` container, it will have empty background and enough spacing.
 
-![Arranging data form field in floating label layout with none container type in Xamarin.Forms DataForm](SfDataForm_images/NoneContainerType.png)
-
 {% tabs %}
 {% highlight xaml %}      
 <dataForm:SfDataForm x:Name="dataForm" ContainerType="None">
@@ -115,6 +113,8 @@ When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamar
 dataForm.LayoutOptions = ContainerType.None;
 {% endhighlight %}
 {% endtabs %}
+
+![Arranging data form field in floating label layout with none container type in Xamarin.Forms DataForm](SfDataForm_images/NoneContainerType.png)
 
 ### Changing container type of the DataFormItem
 
@@ -194,7 +194,7 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
 ## Trailing view
 Floating label layout supports trailing view, which shows an icon view to the right of editor.
 
-Unicode or font icons for the labels can be displayed as icons.By setting the [TrailingView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~TrailingView.html) property, a label can be added as a trailing icon for editor view. By setting the [TrailingViewPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~TrailingViewPosition.html) property, it can be placed either inside or outside the container. It is positioned outside by default. 
+Unicode or font icons for the labels can be displayed as icons.By setting the [TrailingView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~TrailingView.html) property in `TextInputLayoutSettings` of `DataFormItem`, a label can be added as a trailing icon for editor view. By setting the [TrailingViewPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~TrailingViewPosition.html) property, it can be placed either inside or outside the container. It is positioned outside by default. 
 
 N> Refer to the following links to learn more about font icons:
 * [How to create font icons using our metro studio and export as ttf?](https://help.syncfusion.com/metro-studio/export-icon-font)

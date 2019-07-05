@@ -467,3 +467,8 @@ this.Content = sfSwitch;
 {% endtabs %}
 
 ![switch conrol with image](images/image.png)
+
+## Limitation
+
+Since we are handling Visual State Manger (internally) in our control, Applying  Visual State Manger thorough Style (As Dynamic resource) it wont work.
+

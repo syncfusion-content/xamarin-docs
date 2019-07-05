@@ -162,7 +162,7 @@ meeting.Resources = new ObservableCollection<object> () {5601, 5604};
 
 ## Mapping
 
-Schedule supports full data binding to any type of `IEnumerable` source. Specify the [ResourceMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceMapping.html) attribute to map the properties in the underlying data source to the schedule resource.
+Schedule supports full data binding to any type of `IEnumerable` source. Specify the [ResourceMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ResourceMapping.html) attribute to map the properties in the underlying data source to the schedule resource.
 
 | Property Name | Description |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|

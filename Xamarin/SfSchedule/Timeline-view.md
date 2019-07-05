@@ -48,10 +48,10 @@ schedule.TimelineSettings = timelineViewSettings;
 
 ![Timeline view in xamarin forms](timeline-view-images/xamarin-forms-timeline-view-days-count.png)
 
-## Timeline view based on day, week, work week and month.
-
-You can achieve timeline day, timeline week, timeline work week and timeline month views with default value of `DaysCount`, by dynamically switching between day, week, work week and month views to timeline view with respective visible dates. 
-
+## Timeline view based on day, week, work week, and month.
+ 
+You can achieve timeline day, timeline week, timeline work week, and timeline month view with the default value of `DaysCount` by dynamically switching between day, week, work week, and month view to timeline view with respective visible dates. 
+ 
 >**NOTE**
 For other value of `DaysCount`, only timeline view visible dates will be displayed as mentioned days count on dynamic view switching.
 
@@ -175,7 +175,7 @@ schedule.TimeIntervalHeight = 180;
 
 ## Nonworking days
 
-You can add the non-working days in `TimelineView` using [NonWorkingsDays](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~NonWorkingsDays.html) property of `TimelineViewSettings`. By default, no non-working days in `TimelineView`.
+You can add the non-working days in `TimelineView` using [NonWorkingsDays](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~NonWorkingsDays.html) property of `TimelineViewSettings`. By default, there is no non-working day in `TimelineView`.
 
 {% tabs %}
 {% highlight c# %}

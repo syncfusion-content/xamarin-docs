@@ -239,6 +239,21 @@ schedule.ScheduleView = ScheduleView.WorkWeekView;
 >**NOTE**
 Appointments in non-working days will not be displayed.
 
+### Timeline view   
+ 
+`TimelineView` displays the dates in horizontal time axis with the desired day's count. You can see the past or future dates by scrolling to the right or left. Each view displays events accurately across the time slots with an intuitive drag-and-drop feature.  
+    
+{% tabs %}   
+{% highlight xaml %}
+<syncfusion:SfSchedule x:Name="schedule" ScheduleView="TimelineView" />   
+{% endhighlight %}   
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.TimelineView;   
+{% endhighlight %}   
+{% endtabs %}   
+    
+![Timeline view in xamarin forms](timeline-view-images/xamarin-forms-timeline-view.png)	
+
 ### Month View   
     
 `MonthView` in Schedule control is to view entire dates of a particular month. Appointments can be viewed in inline by setting [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowAppointmentsInline.html) property of `SfSchedule` as true.    

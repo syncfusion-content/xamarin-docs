@@ -37,6 +37,9 @@ In the below code you can see the default color and key value for the default re
     <Color x:Key="SfScheduleWorkWeekViewTimeSlotBorderColor">#F0F0F0</Color>
     <Color x:Key="SfScheduleWorkWeekViewVerticalLineColor">#F0F0F0</Color>
     <Color x:Key="SfScheduleWorkWeekViewAllDayAppointmentLayoutColor">#FFFFFF</Color>
+    <!--TimelineViewSettings-->
+    <Color x:Key="SfScheduleTimelineViewTimeSlotColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleTimelineViewTimeSlotBorderColor">#F0F0F0</Color>
     <!--MonthViewSettings-->
     <Color x:Key="SfScheduleMonthViewTodayBackground">#1470D0</Color>
     <Color x:Key="SfScheduleMonthViewSelectionTextColor">#000000</Color>
@@ -46,6 +49,8 @@ In the below code you can see the default color and key value for the default re
     <Color x:Key="SfScheduleWeekViewLabelTimeLabelColor">#707070</Color>
     <!--WorkWeekLabelSettings-->
     <Color x:Key="SfScheduleWorkWeekViewLabelTimeLabelColor">#707070</Color>
+    <!--TimelineLabelSettings-->
+    <Color x:Key="SfScheduleTimelineViewLabelTimeLabelColor">#707070</Color>
     <!--HeaderStyle-->
     <Color x:Key="SfScheduleHeaderBackgroundColor">#FFFFFF</Color>
     <Color x:Key="SfScheduleHeaderTextColor">#707070</Color>

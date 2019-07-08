@@ -97,7 +97,7 @@ dataForm.LayoutOptions = ContainerType.Outlined;
 {% endhighlight %}
 {% endtabs %}
 
-![Arranging data form field in floating label layout with outlined container type in Xamarin.Forms DataForm](SfDataForm_images/FloatingLabel_Layout.png)
+![Arranging data form field in floating label layout with outlined container type in Xamarin.Forms DataForm](SfDataForm_images/Outline_ContaierType.png)
 
 
 

@@ -38,11 +38,11 @@ You can customize the number of days in `TimelineView` using the [DaysCount](htt
 {% endhighlight %}
 {% highlight c# %}
 schedule.ScheduleView = ScheduleView.TimelineView;
-//Creating new instance of TimelineSettings
-TimelineSettings timelineViewSettings = new TimelineSettings();
+//Creating new instance of TimelineViewSettings
+TimelineViewSettings timelineViewSettings = new TimelineViewSettings();
 //Customizing days count
 timelineViewSettings.DaysCount = 10;
-schedule.TimelineSettings = timelineViewSettings;
+schedule.TimelineViewSettings = timelineViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
@@ -147,7 +147,7 @@ You can customize the interval of time slots in `TimelineView` by setting [TimeI
 {% endhighlight %}
 {% highlight c# %}
 schedule.ScheduleView = ScheduleView.TimelineView; 
-schedule.TimeInterval = 180
+schedule.TimeInterval = 180;
 {% endhighlight %}
 {% endtabs %}
 
@@ -250,13 +250,13 @@ You can handle single tap action of ViewHeader using the `ViewHeaderTapped` even
 //Creating new instance of Schedule 
 SfSchedule schedule = new SfSchedule(); 
 schedule.ScheduleView = ScheduleView.TimelineView; 
-schedule.ViewHeaderTapped += Handle_ViewHeaderTapped;
+schedule.ViewHeaderTapped += OnViewHeaderTapped;
 {% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
-private void Handle_ViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e) 
+private void OnViewHeaderTapped(object sender, ViewHeaderTappedEventArgs e) 
 { 
      var dateTime = e.DateTime; 
 }

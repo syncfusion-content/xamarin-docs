@@ -195,6 +195,14 @@ If the active current cell is in edit mode, changes will be committed and select
 If the current cell is in edit mode, reverts the changes done in the current cell. If the underlying source implements the {{'[IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject#"")'| markdownify }}, pressing Esc key for the second time will cancel the edit mode for the entire row.
 </td>
 </tr>
+<tr>
+<td>
+<kbd>Delete</kbd>
+</td>
+<td>
+Deletes all the rows that are currently in selection. To prevent rows from being deleted set the [SfDataGrid.AllowDeleting](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowDeleting.html) as `False`.
+</td>
+</tr>
 </table>
 
 
@@ -234,6 +242,55 @@ Moves selection to the previous row from the currently selected row when the Sel
 </td>   
 </tr>
 </table>
+
+### Customize key functionalities
+
+To perform custom actions apart from the functionalities mentioned in the above tables for key press actions of the keyboard, implement your custom actions in the [ProcessKeyDown()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController~ProcessKeyDown.html) override of the custom written selection controller class derived from [GridSelectionController](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController.html#) and assign it to the [SfDataGrid.GridSelectionController](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.Resources>
+        <local:CustomSelectionController x:Key="CustomSelectionController" />
+</ContentPage.Resources>
+
+  <syncfusion:SfDataGrid x:Name="dataGrid"
+                          ItemsSource="{Binding OrdersInfo,Mode=TwoWay}"
+                          AllowEditing="True"
+                          NavigationMode="Cell"
+                          SelectionMode="Single"
+                          SelectionController="{x:StaticResource CustomSelectionController}">
+    </syncfusion:SfDataGrid>
+{% endhighlight %}
+
+{% highlight c# %}
+dataGrid.SelectionController = new CustomSelectionController();
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# %}
+public class CustomSelectionController : GridSelectionController
+    {
+        public CustomSelectionController()
+        {
+           this.SelectedRows = new GridSelectedRowsCollection();
+        }
+
+        protected override void ProcessKeyDown(string keyCode, bool isCtrlKeyPressed, bool isShiftKeyPressed)
+        {
+            if(keyCode == "Down")
+            {
+                // your logics here
+            }
+            else
+            {
+                // default key action
+                base.ProcessKeyDown(keyCode, isCtrlKeyPressed, isShiftKeyPressed);
+            }
+        }
+    }
+{% endhighlight %}
+{% endtabs %}
 
 ### Scroll to selected item
 

@@ -1295,11 +1295,11 @@ public class CustomComboBoxRenderer : GridCellComboBoxRenderer
 
 ### Loading Different ItemSource for each row of GridComboBoxColumn
 
-You can load the different ItemsSource to each row of GridComboBoxColumn by setting [SfDataGrid.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSourceSelector.html) property.
+You can load the different ItemsSource to each row of GridComboBoxColumn by setting [GridComboBoxColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSourceSelector.html) property.
 
 ### Implementing IItemsSourceSelector
 
-[SfDataGrid.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSourceSelector.html) needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
+[GridComboBoxColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSourceSelector.html) needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
 
 * Record – data object associated with row.
 * Data Context – Binding context of data grid.

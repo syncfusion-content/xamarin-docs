@@ -32,3 +32,7 @@ listView.FlowDirection = FlowDirection.RightToLeft;
 You can download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/Xamarin-ListView-RightToLeft).
 
 N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is not applied due to the framework issue. It has been reported to the Xamarin team; for more details about this, refer to this [link](https://github.com/xamarin/Xamarin.Forms/issues/3611). To overcome this issue, set the `HorizontalOptions` to `StartAndExpand` in Label.
+
+## Limitation
+
+* ListView item does not arrange from right to left direction in `Horizontal` orientation, when the [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) as `Height`.

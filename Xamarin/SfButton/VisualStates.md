@@ -82,8 +82,8 @@ this.Content = stackLayout;
 {% endhighlight %}
 {% endtabs %}
 
-Visual state pressed:
+**Pressed visual state:**
 ![SfButton with visual state](images/VisualState_PressedState.png)
 
-Visual state normal:
+**Normal visual state:**
 ![SfButton with visual state](images/VisualState_NormalState.png)

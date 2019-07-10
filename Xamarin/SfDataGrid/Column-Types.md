@@ -1201,6 +1201,79 @@ When edit mode is exited by selecting a value(9) from the Picker pop up, the `Gr
 
 ![Value changes in DataGrid when editing a Picker column with display member path](SfDataGrid_images/PickerColumn_Customization.png)
 
+### Loading Different ItemSource for each row of GridPickerColumn
+
+You can load the different ItemsSource to each row of GridPickerColumn by setting [GridPickerColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSourceSelector.html) property.
+
+### Implementing IItemsSourceSelector
+
+[GridPickerColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSourceSelector.html) needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
+
+* Record – data object associated with row.
+* Data Context – Binding context of data grid.
+
+In the below code, ItemsSource for ShipCity column returned based on ShipCountry column value using the record and Binding context of data grid passed to GetItemsSource method.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <local:ItemSourceSelector x:Key="converter"/>
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+<sfgrid:SfDataGrid x:Name="dataGrid"
+					ItemsSource="{Binding DealerInformation}"
+					AllowEditing="True"
+					AutoGenerateColumns="false"
+					NavigationMode="Cell"
+					EditTapAction="OnDoubleTap"
+					SelectionMode="Single">
+    <sfgrid:SfDataGrid.Columns>
+        <sfgrid:GridPickerColumn BindingContext="{x:Reference viewModel}"
+									ItemsSource="{Binding CountryList}"
+									MappingName="ShipCountry"
+									LoadUIView="True">
+        </sfgrid:GridPickerColumn>
+
+        <sfgrid:GridPickerColumn ItemsSourceSelector="{StaticResource converter}"
+									MappingName="ShipCity"
+									LoadUIView="True">
+        </sfgrid:GridPickerColumn>
+    </sfgrid:SfDataGrid.Columns>
+</sfgrid:SfDataGrid>
+{% endhighlight %}
+
+{% highlight c# %}
+public class ItemSourceSelector : IItemsSourceSelector
+{
+    public IEnumerable GetItemsSource(object record, object dataContext)
+    {
+        if (record == null)
+        {
+            return null;
+        }
+
+        var orderinfo = record as DealerInfo;
+        var countryName = orderinfo.ShipCountry;
+        var viewModel = dataContext as EditingViewModel;
+
+        // Returns ShipCity collection based on ShipCountry.
+        if (viewModel.ShipCities.ContainsKey(countryName))
+        {
+            string[] shipcities = null;
+            viewModel.ShipCities.TryGetValue(countryName, out shipcities);
+            return shipcities.ToList();
+        }
+
+        return null;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![GridPickerColumn with ItemsSourceSelector](SfDataGrid_images/GridPickerColumnItemsSource.png)
+
 ## GridComboBoxColumn
 
 The [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) inherits all the properties of the [SfDataGrid.GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html). It displays a list of items in the form of a `SfComboBox` as the content of a column. To enable or disable editing for the particular column, set the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays a [SfComboBox](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox_namespace.html) element. The data source to SfComboBox can be set by using the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays a [SfComboBox](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox_namespace.html)  element. The data source to SfComboBox can be set by using the [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property. The combobox column can be populated with data by the following ways:
@@ -1295,11 +1368,11 @@ public class CustomComboBoxRenderer : GridCellComboBoxRenderer
 
 ### Loading Different ItemSource for each row of GridComboBoxColumn
 
-You can load the different ItemsSource to each row of GridComboBoxColumn by setting [SfDataGrid.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSourceSelector.html) property.
+You can load the different ItemsSource to each row of GridComboBoxColumn by setting [GridComboBoxColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSourceSelector.html) property.
 
 ### Implementing IItemsSourceSelector
 
-[SfDataGrid.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSourceSelector.html) needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
+[GridComboBoxColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSourceSelector.html) needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
 
 * Record – data object associated with row.
 * Data Context – Binding context of data grid.

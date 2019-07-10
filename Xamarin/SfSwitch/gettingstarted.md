@@ -203,4 +203,4 @@ private void SfSwitch_StateChanged (object sender, EventArgs e)
 
 {% endtabs %}
 
-You can find the complete getting started sample from this `link`
+You can find the complete getting started sample from this [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted_(2)705867670)

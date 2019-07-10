@@ -243,7 +243,7 @@ You can handle single tap action of ViewHeader using the `ViewHeaderTapped` even
 {% highlight xaml %}
 <schedule:SfSchedule x:Name="schedule" 
     ScheduleView="TimelineView "   
-    ViewHeaderTapped="Handle_ViewHeaderTapped"> 
+    ViewHeaderTapped="OnViewHeaderTapped"> 
 </schedule:SfSchedule>
 {% endhighlight %}
 {% highlight c# %}

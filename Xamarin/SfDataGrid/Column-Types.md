@@ -1203,7 +1203,7 @@ When edit mode is exited by selecting a value(9) from the Picker pop up, the `Gr
 
 ### Loading Different ItemSource for each row of GridPickerColumn
 
-You can load the different ItemsSource to each row of GridComboBoxColumn by setting [GridPickerColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSourceSelector.html) property.
+You can load the different ItemsSource to each row of GridPickerColumn by setting [GridPickerColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSourceSelector.html) property.
 
 ### Implementing IItemsSourceSelector
 

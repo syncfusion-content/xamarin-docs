@@ -44,7 +44,7 @@ schedule.ScheduleResources = resources;
 {% endhighlight %}
 {% endtabs %}
 
-![Resource view in xamarin forms](resource-view-images/xamarin-forms-resource-view.jpg)
+![Resource view in xamarin forms](resource-view-images/xamarin-forms-resource-view.png)
 
 ## Resource view visibility
 
@@ -156,9 +156,10 @@ meeting.Resources = new ObservableCollection<object> () {5601, 5604};
 
 >**NOTE**
 * You can also associate custom resources to the appointments by using the equivalent field of resource `Id` in custom resource class.
-* No appointment will be displayed when the `ShowResourceView` property is set to false.
 * Appointments with single resource will be displayed in resource `Color`. Appointments with multiple resources will be displayed in the default appointment `Color`.
-
+* No appointment will be shown when the `ShowResourceView` is set to true and resources are not added in `ScheduleResources`.
+* No appointment will be shown unless the schedule resources are selected either by interaction or programmatically.
+* All the appointments will be displayed when `ShowResourceView` is set to false.
 
 ## Mapping
 
@@ -383,6 +384,8 @@ resourceViewSettings.DisplayLabelTextColor = Color.FromHex("#8490f9");
 schedule.ResourceViewSettings = resourceViewSettings;
 {% endhighlight %}
 {% endtabs %}
+
+![Resource name label text color in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-label-text-color.png)
 
 ### Data template
 

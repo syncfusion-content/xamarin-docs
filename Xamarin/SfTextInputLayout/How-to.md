@@ -47,7 +47,7 @@ inputLayout.InputView = new Entry();
 
 ## Customize the font for input view
 
-You can customize the font for the input view used inside SfTextInputLayout using thier customizing properties.
+You can customize the font for the input view inside SfTextInputLayout using its properties.
 
 * [Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms#properties)
 

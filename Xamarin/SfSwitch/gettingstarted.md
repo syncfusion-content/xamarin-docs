@@ -194,13 +194,13 @@ sfSwitch.StateChanged += SfSwitch_StateChanged;
 
 {% highlight c# %}
 
-private void SfSwitch_StateChanged (object sender, EventArgs e)
+ private void SfSwitch_StateChanged(object sender, SwitchStateChangedEventArgs e)
 {
-   DisplayAlert("Message", "SUCCESS", "OK");
+     DisplayAlert("Message", "SUCCESS", "OK");
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-You can find the complete getting started sample from this [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted_(2)705867670)
+You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedSample1199686003).

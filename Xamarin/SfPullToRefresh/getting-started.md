@@ -160,7 +160,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a SfPullToRefresh and configure it. 
  
-You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/PullToRefresh_GettingStartedForms.zip).
+You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/PullToRefresh-GettingStarted-in-Xamarin-Forms).
 
 ## Creating the project
 

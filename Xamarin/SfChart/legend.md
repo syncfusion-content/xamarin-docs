@@ -469,33 +469,64 @@ N> The BindingContext of the template is the corresponding underlying legend ite
 
 {% highlight xaml %}
 
+ <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Value">
+    ....                 
+</chart:PieSeries>
+
 <chart:SfChart.Legend>
 
-   ...
-                <chart:ChartLegend.ItemTemplate>
+    ...
+    <chart:ChartLegend.ItemTemplate>
                     
-                    <DataTemplate>
-                     
-                     ...
-                    </DataTemplate>
+        <DataTemplate>
+            
+			<StackLayout Orientation="Horizontal" WidthRequest="143">
+
+                <BoxView Color="{Binding IconColor}" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="13" WidthRequest="13" />
+
+                <Label FontSize="13" VerticalTextAlignment="Center" Text="{Binding DataPoint.Name}"/>
+
+                <Label HorizontalTextAlignment="End" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" FontSize="13" Text="{Binding DataPoint.Value}"/>
+
+            </StackLayout>
+
+        </DataTemplate>
                     
-                </chart:ChartLegend.ItemTemplate>
+    </chart:ChartLegend.ItemTemplate>
 
-            </chart:ChartLegend>
-
-        </chart:SfChart.Legend>
+</chart:SfChart.Legend>
 		
 {% endhighlight %}
 
 {% highlight c# %}
 
 chart.Legend = new ChartLegend();
-DataTemplate template = new DataTemplate ( () =>
+chart.Legend.ItemTemplate = new DataTemplate ( () =>
 {
-   ...
-});
+    StackLayout stack = new StackLayout() { Orientation = StackOrientation.Horizontal, WidthRequest = 143 };
+   
+    BoxView boxView = new BoxView() 
+	{
+		 HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center, WidthRequest = 13, HeightRequest = 13 
+	};
+    
+	boxView.SetBinding(BoxView.BackgroundColorProperty, "IconColor");
 
-chart.Legend.ItemTemplate = template;
+    Label name = new Label() { VerticalTextAlignment = TextAlignment.Center, FontSize = 13 };
+    
+	name.SetBinding(Label.TextProperty, "DataPoint.Name");
+
+    Label value = new Label() { HorizontalTextAlignment = TextAlignment.End, VerticalTextAlignment = TextAlignment.Center, FontSize = 13 };
+
+	value.HorizontalOptions = LayoutOptions.EndAndExpand;
+    
+	value.SetBinding(Label.TextProperty, "DataPoint.Value");
+
+    stack.Children.Add(boxView);
+    stack.Children.Add(name);
+    stack.Children.Add(value);
+    return stack;
+});
 
 {% endhighlight %}
 

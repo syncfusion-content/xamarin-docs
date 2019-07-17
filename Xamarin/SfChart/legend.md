@@ -469,13 +469,13 @@ N> The BindingContext of the template is the corresponding underlying legend ite
 
 {% highlight xaml %}
 
- <chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Value">
+<chart:PieSeries ItemsSource="{Binding Data}" XBindingPath="Name" YBindingPath="Value">
     ....                 
 </chart:PieSeries>
 
 <chart:SfChart.Legend>
 
-    ...
+    ....
     <chart:ChartLegend.ItemTemplate>
                     
         <DataTemplate>
@@ -503,23 +503,28 @@ N> The BindingContext of the template is the corresponding underlying legend ite
 chart.Legend = new ChartLegend();
 chart.Legend.ItemTemplate = new DataTemplate ( () =>
 {
-    StackLayout stack = new StackLayout() { Orientation = StackOrientation.Horizontal, WidthRequest = 143 };
+    StackLayout stack = new StackLayout()
+	{
+		  Orientation = StackOrientation.Horizontal, WidthRequest = 143 
+	};
    
     BoxView boxView = new BoxView() 
 	{
 		 HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.Center, WidthRequest = 13, HeightRequest = 13 
 	};
-    
 	boxView.SetBinding(BoxView.BackgroundColorProperty, "IconColor");
 
-    Label name = new Label() { VerticalTextAlignment = TextAlignment.Center, FontSize = 13 };
-    
+    Label name = new Label() 
+	{
+		 VerticalTextAlignment = TextAlignment.Center, FontSize = 13 
+	};
 	name.SetBinding(Label.TextProperty, "DataPoint.Name");
 
-    Label value = new Label() { HorizontalTextAlignment = TextAlignment.End, VerticalTextAlignment = TextAlignment.Center, FontSize = 13 };
-
+    Label value = new Label() 
+	{
+		 HorizontalTextAlignment = TextAlignment.End, VerticalTextAlignment = TextAlignment.Center, FontSize = 13 
+	};
 	value.HorizontalOptions = LayoutOptions.EndAndExpand;
-    
 	value.SetBinding(Label.TextProperty, "DataPoint.Value");
 
     stack.Children.Add(boxView);

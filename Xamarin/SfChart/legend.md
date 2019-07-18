@@ -537,6 +537,8 @@ chart.Legend.ItemTemplate = new DataTemplate ( () =>
 
 {% endtabs %}
 
+![Legend ItemTemplate support in Xamarin.Forms Chart](legend_images/legend_ItemTemplate.png)
+
 ## Event
 
  **LegendItemClicked**

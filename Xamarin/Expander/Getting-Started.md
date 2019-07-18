@@ -206,7 +206,7 @@ namespace GettingStarted
 
 Here, Labels are loaded in Header and Content of expander. 
 
-N> When `Label` is directly loaded inside Expander.Header or Expander.Content, `TextAlignment` doesn't works properly.Since Expander.Header and Expander.Content is just a container to hold the views loaded in the DataTemplate, hence you need to load Label inside the view like `Grid` in order to change TextAlignment.
+N> When `Label` is directly loaded inside Expander.Header or Expander.Content, `TextAlignment` doesn't works properly.Since `Expander.Header` and `Expander.Content` is just a container to hold the views loaded in the `DataTemplate`, hence you need to load Label inside the view like `Grid` in order to change TextAlignment.
 
 {% tabs %}
 {% highlight xaml %}

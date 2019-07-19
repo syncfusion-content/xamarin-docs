@@ -175,7 +175,7 @@ here [ScheduleProject](http://www.syncfusion.com/downloads/support/directtrac/ge
 
 ## Changing Schedule Views   
     
-SfSchedule control provides four different types of views to display dates and it can be assigned to the control by using [ScheduleView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ScheduleView.html) property. By default the control is assigned with `DayView`. Current date will be displayed initially for all the Schedule views.  
+SfSchedule control provides five different types of views to display dates and it can be assigned to the control by using [ScheduleView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ScheduleView.html) property. By default the control is assigned with `DayView`. Current date will be displayed initially for all the Schedule views.  
 
 Schedule control will be rendered with `Sunday` as the first day of the week, but you can customize to any day by using [FirstDayOfWeek](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~FirstDayOfWeek.html) property of `SfSchedule`.
     
@@ -238,6 +238,21 @@ schedule.ScheduleView = ScheduleView.WorkWeekView;
 
 >**NOTE**
 Appointments in non-working days will not be displayed.
+
+### Timeline view   
+ 
+`TimelineView` displays the dates in horizontal time axis with the desired day's count. You can see the past or future dates by scrolling to the right or left. Each view displays events accurately across the time slots with an intuitive drag-and-drop feature.  
+    
+{% tabs %}   
+{% highlight xaml %}
+<syncfusion:SfSchedule x:Name="schedule" ScheduleView="TimelineView" />   
+{% endhighlight %}   
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.TimelineView;   
+{% endhighlight %}   
+{% endtabs %}   
+    
+![Timeline view in xamarin forms](timeline-view-images/xamarin-forms-timeline-view.png)	
 
 ### Month View   
     

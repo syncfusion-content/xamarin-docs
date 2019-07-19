@@ -99,5 +99,10 @@ ToolTip will be collapsed.
 
 {% endtabs %}
 
+## Tooltip color
 
+`TooltipTextColor` - Changes the text color of tooltip.
+`TooltipBackgroundColor` - Changes the background color of tooltip.
+
+![SfRangeSlider Tooltip color Xamarin.Forms](images/Tooltip-color.jpg)
 

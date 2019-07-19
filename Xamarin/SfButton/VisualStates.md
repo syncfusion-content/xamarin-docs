@@ -16,6 +16,8 @@ The button visual can be customized through `VisualStates`. The [`SfButton`](htt
 * Checked
 * Unchecked
 
+N>In addition, `MouseOver` VisualState is available only in the UWP platform.
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -80,8 +82,8 @@ this.Content = stackLayout;
 {% endhighlight %}
 {% endtabs %}
 
-Visual state pressed:
+**Pressed visual state:**
 ![SfButton with visual state](images/VisualState_PressedState.png)
 
-Visual state normal:
+**Normal visual state:**
 ![SfButton with visual state](images/VisualState_NormalState.png)

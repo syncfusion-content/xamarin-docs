@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Layout | SfDataForm | Xamarin.Forms | Syncfusion
-description: Different layouts and its customization in Xamarin.Forms SfDataForm.
+description: Different layouts and its customization  in SfDataForm.
 platform: xamarin
 control: SfDataForm
 documentation: UG
 ---
 
-# Layout in Xamarin.Forms SfDataForm
+# Layout
 
 ## Overview
 
@@ -126,6 +126,39 @@ dataForm.LabelPosition = LabelPosition.Top;
 {% endtabs %}
 
 ![Arranging data form field when label position as top in Xamarin.Forms DataForm](SfDataForm_images/Layout_LabelPosition.png)
+
+### Changing label position of the DataFormItem
+
+You can change the label position using the [LabelPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~LabelPosition.html) property in `DataFormItem`, and it will be handled in the `AutoGeneratingDataFormItem` event.
+
+{% tabs %}
+{% highlight xaml %}
+<dataForm:SfDataForm x:Name="dataForm" DataObject="{Binding ContactsInfo}"  AutoGeneratingDataFormItem="DataForm_AutoGeneratingDataFormItem">
+</dataForm:SfDataForm>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.RegisterEditor("Gender", "Segment");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name == "Gender")
+        {
+            e.DataFormItem.LabelPosition = LabelPosition.Top;
+        }
+        if (e.DataFormItem.Name == "Address")
+        {
+            e.DataFormItem.LabelPosition = LabelPosition.Top;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Arranging data form fields when label position mention for each in Xamarin.Forms DataForm](SfDataForm_images/DataFormItem_LabelPosition.png)
 
 ## Loading images for label
 
@@ -884,72 +917,6 @@ Here, the `Name` group will be hidden.
 
 ![DataFormGroupItem visibility at runtime in Xamarin.Forms DataForm](SfDataForm_images/CollapseGroupItems.gif)
 
-## Right to left(RTL)
-
-SfDataForm supports to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
-
-{% tabs %}
-{% highlight xaml %}
-<dataForm:SfDataForm FlowDirection="RightToLeft">
-</dataForm:SfDataForm>
-{% endhighlight %}
-{% highlight c# %}
-dataForm.FlowDirection = FlowDirection.RightToLeft;
-{% endhighlight %}
-{% endtabs %}
-
->**Note**
-For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Please refer [RightToLeft](https://blog.xamarin.com/right-to-left-localization-xamarin-forms) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
-
-### Android
-For Android, add `android:supportsRtl="true"` in your application tag of `AndroidManifest.xml` file, and make sure your `MinSDKVersion` is 17+. By changing the device language / enabling the device's `Force RTL layout` can achieve the `RightToLeft` layout direction in DataForm.
-
-{% tabs %}
-{% highlight xml %}
-<manifest ... >
-<uses-sdk android:minSdkVersion="17" ... />
-<application ... android:supportsRtl="true">
-</application>
-</manifest>
-{% endhighlight %}
-{% endtabs %}
-
-### iOS
-For iOS, add the `RightToLeft` language in the `CFBundleLocalizations` section of your `Info.plist` file, and make sure you’re targeting iOS 9+.
-
-{% tabs %}
-{% highlight xml %}
-<resources>
-<key>CFBundleDevelopmentRegion</key>
-<string>en</string>
-<key>CFBundleLocalizations</key>
-<array>
-<string>en</string>
-<string>ar</string>
-</array>
-</resources>
-{% endhighlight %}
-{% endtabs %}
-
-![info plist](SfDataForm_images/DataForm_iosplist.png)
-
-### UWP
-For UWP, you need to set `FlowDirection` to `RightToLeft` in the `MainPage.cs` file of the `UWP` project.
-
-{% tabs %}
-{% highlight c# %}
-public MainPage()
-{
-…
-this.FlowDirection = FlowDirection.RightToLeft;
-LoadApplication (new App ());
-…
-}
-{% endhighlight %}
-{% endtabs %}
-
-![RTL in Xamarin.Forms DataForm](SfDataForm_images/DataForm_RTL.png)
-
 ## Programmatically scroll to specific editor
 
 You can programmatically scroll to specific editor using the [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ScrollTo.html) method by passing the `property name`. 
@@ -961,3 +928,38 @@ dataForm.ScrollTo("ContactNumber")
 {% endtabs %}
 
 ![Scroll to specific editor in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-scrolltosupport.gif)
+
+## Changing the height of DataFormItem.
+
+You can define the height of each `DataFormItem` using the [Height](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~Height.html) property, and it will be handled in the `AutoGeneratingDataFormItem` event.
+
+You can define the `Height` as described as follows.
+
+* You can directly set the exact `Height` value; it considers the `GridLength` as `GridUnitType.Absolute`. 
+* You can use the `GridLength.Auto` to size the height of `DataFormItem`, so that it fits to the label text that it contains. 
+* You can use the `GridLength.Star` to display the default `DataFormItem` height. 
+
+{% tabs %}
+
+{% highlight c# %}
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDataFormItemEventArgs e)
+{
+   if (e.DataFormItem != null)
+     {
+         if (e.DataFormItem.Name == "Experience" || e.DataFormItem.Name == "Rating" || e.DataFormItem.Name == "Recommend")
+         {
+             e.DataFormItem.Height = GridLength.Auto;
+         }
+         if (e.DataFormItem.Name == "Improvement")
+         {
+             e.DataFormItem.Height = 200;
+         }
+     }
+}
+{% endhighlight %}
+
+{% endtabs %}
+
+![Data form item height in Xamarin.Forms DataForm](SfDataForm_images/xamarin.forms-Height.png)

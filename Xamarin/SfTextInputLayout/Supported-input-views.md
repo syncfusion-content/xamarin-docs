@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Supported input views
+title: Syncfusion supported input views
 description: How to add supported input views in text input layout.
 platform: xamarin
 control: SfTextInputLayout
@@ -38,7 +38,7 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Supported-input-views-images/textInput_input_img1.PNG)
+![Entry](Supported-input-views-images/textInput_input_img1.PNG)
 
 ## Editor
 
@@ -67,7 +67,7 @@ inputLayout.InputView = new Editor();
 
 {% endtabs %}
 
-![](Supported-input-views-images/textInput_input_img2.PNG)
+![Editor](Supported-input-views-images/textInput_input_img2.PNG)
 
 ## Masked edit
 
@@ -98,7 +98,7 @@ inputLayout.InputView = new SfMaskedEdit() { Keyboard = Keyboard.Numeric, Mask =
 
 {% endtabs %}
 
-![](Supported-input-views-images/textInput_input_img3.PNG)
+![Masked edit](Supported-input-views-images/textInput_input_img3.PNG)
 
 ## Numeric text box
 
@@ -130,8 +130,85 @@ inputLayout.InputView = new SfNumericTextBox() { Value = 123.45, FormatString="c
 {% endtabs %}
 
 
-![](Supported-input-views-images/textInput_input_img4.PNG)
+![Numerictextbox](Supported-input-views-images/textInput_input_img4.PNG)
 
+## Autocomplete
 
+To initialize the Autocomplete control and launch it in each platform, refer to the [getting started with auto complete](https://help.syncfusion.com/xamarin/sfautocomplete/getting-started) documentation.
 
+{% tabs %} 
 
+{% highlight xaml %} 
+
+<inputLayout:SfTextInputLayout Hint="Country">
+   <autocomplete:SfAutoComplete  AutoCompleteMode="SuggestAppend">
+      <autocomplete:SfAutoComplete.AutoCompleteSource>
+         <ListCollection:List x:TypeArguments="x:String">
+         	<x:String> United Kingdom </x:String>
+            <x:String> United States </x:String>
+            <x:String> United Republic of Tanzania </x:String>
+         </ListCollection:List>
+      </autocomplete:SfAutoComplete.AutoCompleteSource>
+   </autocomplete:SfAutoComplete>
+</inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var autoComplete = new SfAutoComplete();
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Country"; 
+List<String> countryNames = new List<String>();
+countryNames.Add("United Kingdom");
+countryNames.Add("United States");
+countryNames.Add("United Republic of Tanzania");
+autoComplete.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+autoComplete.DataSource = countryNames;
+inputLayout.InputView = autoComplete; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Autocomplete](Supported-input-views-images/textInput_input_img5.PNG)
+
+## Combo box
+
+To initialize the ComboBox control and launch it in each platform, refer to the [getting started with combo box](https://help.syncfusion.com/xamarin/sfcombobox/getting-started) documentation.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<inputLayout:SfTextInputLayout Hint="Country">
+   <combobox:SfComboBox>
+      <combobox:SfComboBox.ComboBoxSource>
+         <ListCollection:List x:TypeArguments="x:String">
+         	<x:String> Afghanistan </x:String>
+            <x:String> Akrotiri </x:String>
+            <x:String> Albania </x:String>
+         </ListCollection:List>
+      </combobox:SfComboBox.ComboBoxSource>
+   </combobox:SfComboBox>
+</inputLayout:SfTextInputLayout> 
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var combobox = new SfComboBox();
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Country"; 
+List<String> countryNames = new List<String>();
+countryNames.Add("Afghanistan");
+countryNames.Add("Akrotiri");
+countryNames.Add("Albania");
+combobox.DataSource = countryNames;
+inputLayout.InputView = combobox; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Combobox](Supported-input-views-images/textInput_input_img6.PNG)

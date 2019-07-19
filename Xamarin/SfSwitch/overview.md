@@ -14,6 +14,8 @@ documentation: ug
 
 Essential SfSwitch for Xamarin.Forms provides an efficient way to select between the states based on the toggled value.
 
+![Xamarin.Forms switch overview.](images/overview.png)
+
 ## Key features
 
 * Provides support for inbuilt visual types like Material, Cupertino or fluent type. 

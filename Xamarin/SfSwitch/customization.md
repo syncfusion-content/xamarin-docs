@@ -106,7 +106,7 @@ onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Val
 
 VisualState offState = new VisualState
 {
-Name = "OFF"
+Name = "Off"
 };
 offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
 
@@ -133,7 +133,7 @@ this.Content = sfSwitch;
 
 ## Gradients
 
-You can also specify a range of colors in thumb and track using ThumbGradientColor and TrackGradientColor as demonstrates in the following code example.
+You can also specify a range of colors in thumb and track using ThumbGradient and TrackGradient as demonstrates in the following code example.
 
 {% tabs %}
 
@@ -148,7 +148,7 @@ You can also specify a range of colors in thumb and track using ThumbGradientCol
                             <Setter.Value>
                                 <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OnState">
 
-                                    <syncfusion:DefaultSwitchSettings.ThumbGradientColor>
+                                    <syncfusion:DefaultSwitchSettings.ThumbGradient>
                                         <graphics:SfLinearGradientBrush>
                                             <graphics:SfLinearGradientBrush.GradientStops>
                                                 <graphics:GradientStopCollection>
@@ -158,9 +158,9 @@ You can also specify a range of colors in thumb and track using ThumbGradientCol
                                                 </graphics:GradientStopCollection>
                                             </graphics:SfLinearGradientBrush.GradientStops>
                                         </graphics:SfLinearGradientBrush>
-                                 </syncfusion:DefaultSwitchSettings.ThumbGradientColor>
+                                 </syncfusion:DefaultSwitchSettings.ThumbGradient>
 
-                                    <syncfusion:DefaultSwitchSettings.TrackGradientColor>
+                                    <syncfusion:DefaultSwitchSettings.TrackGradient>
                                         <graphics:SfLinearGradientBrush>
                                             <graphics:SfLinearGradientBrush.GradientStops>
                                                 <graphics:GradientStopCollection>
@@ -171,7 +171,7 @@ You can also specify a range of colors in thumb and track using ThumbGradientCol
                                                 </graphics:GradientStopCollection>
                                             </graphics:SfLinearGradientBrush.GradientStops>
                                         </graphics:SfLinearGradientBrush>
-                                    </syncfusion:DefaultSwitchSettings.TrackGradientColor>
+                                    </syncfusion:DefaultSwitchSettings.TrackGradient>
 
                                 </syncfusion:DefaultSwitchSettings>
                             </Setter.Value>
@@ -211,7 +211,7 @@ sfGradientStops.Add(sfGradientStop2);
 
 sfLinearGradientBrush.GradientStops = sfGradientStops;
 
-defaultSwitch.ThumbGradientColor = sfLinearGradientBrush;
+defaultSwitch.ThumbGradient = sfLinearGradientBrush;
 
 SfLinearGradientBrush sfLinearGradientBrush1 = new SfLinearGradientBrush();
 
@@ -239,7 +239,7 @@ sfGradientStops1.Add(sfGradientStop6);
 
 sfLinearGradientBrush1.GradientStops = sfGradientStops1;
 
-defaultSwitch.TrackGradientColor = sfLinearGradientBrush1;
+defaultSwitch.TrackGradient = sfLinearGradientBrush1;
 
 
 VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
@@ -265,6 +265,8 @@ this.Content = sfSwitch;
 {% endtabs %}
 
 ![switch conrol with gradient](images/gradient.png)
+
+N> Here ThumbGradient and TrackGradient are type of `SfLinearGradientBrush`, So You can apply  `SfLinearGradientBrush` or `SfRadialGradientBrush` on it.  This `SfLinearGradientBrush` is available in  [`Syncfusion.Xamarin.Core`](https://www.nuget.org/packages/Syncfusion.Xamarin.Core) from [`nuget.org`](https://www.nuget.org/). To know more about gradient view refer this [`link`](https://help.syncfusion.com/xamarin/sfgradientview/getting-started).
 
 ## Sizing
 
@@ -358,7 +360,7 @@ onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Val
 
 VisualState offState = new VisualState
 {
-Name = "OFF"
+Name = "Off"
 };
 
 offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
@@ -447,7 +449,7 @@ onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Val
 
 VisualState offState = new VisualState
 {
-Name = "OFF"
+Name = "Off"
 };
 
 offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
@@ -465,3 +467,8 @@ this.Content = sfSwitch;
 {% endtabs %}
 
 ![switch conrol with image](images/image.png)
+
+## Limitation
+
+Since the Visual State Manger (internally) is handled in our control, applying  Visual State Manger thorough style (as dynamic resource) does not work.
+

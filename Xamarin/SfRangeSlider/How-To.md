@@ -132,3 +132,4 @@ The `ThumbTouchDown` event occurs when touching the thumb. The argument contains
         }
 {% endhighlight %}
 
+N> `ThumbTouchDown` and `ThumbTouchUp` events applicable only for Android, iOS platform and not for UWP.

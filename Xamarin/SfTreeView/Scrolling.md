@@ -68,7 +68,7 @@ private void BringIntoView_Clicked(object sender, EventArgs e)
 
 ### Scroll the item into specified position
 
-The fourth optional parameter `scrollToPostion` in `BringIntoView` method allows to position the scrolled item in the view. The scrolled item can take either of the four positions as explained below. The default position is `Start`.
+The fourth optional parameter `scrollToPosition` in `BringIntoView` method allows to position the scrolled item in the view. The scrolled item can take either of the four positions as explained below. The default position is `Start`.
 
 * `Start`: Scroll to make the node positioned at the start of the view.
 * `MakeVisible`: Scroll to make a specified node visible in the view. If the specified node is already in view, scrolling will not occur.

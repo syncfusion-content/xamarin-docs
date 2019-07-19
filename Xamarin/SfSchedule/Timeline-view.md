@@ -20,6 +20,8 @@ schedule.ScheduleView = ScheduleView.TimelineView;
 {% endhighlight %}
 {% endtabs %}
 
+You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/Timeline-view).
+
 ![Timeline view in xamarin forms](timeline-view-images/xamarin-forms-timeline-view.png)
 
 ## Timeline view days count
@@ -464,8 +466,6 @@ schedule.TimelineViewSettings = timelineViewSettings;
 {% endtabs %}
 
 ![Time label size in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-size.png)
-
-You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/Timeline-view).
 
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.

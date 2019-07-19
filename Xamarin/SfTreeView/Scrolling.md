@@ -1,21 +1,18 @@
 ---
 layout: post
-title: Scrolling | TreeView for Xamarin.Forms | Syncfusion
-description: Describes about programmatic scrolling of treeview.
+title: Scrolling | TreeView | Xamarin.Forms | Syncfusion
+description: Describes how to achieve programmatic scrolling in treeview.
 platform: xamarin
 control: SfTreeView
 documentation: ug
 ---
 
 # Scrolling
+The TreeView provides various options to achieve programmatic scrolling. Please walkthrough the below section in detail to achieve the same.
 
-## Programmatic scrolling
+## Bring InTo View
 
-### Bring InTo View
-
-The TreeView allows programmatically scrolling based on the data model and [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) by using the [BringIntoView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~BringIntoView.html) method.
-
-It also enables and disables the scrolling animation when changing the view. By default, the scrolling will be animated.
+The TreeView allows programmatic scrolling based on the data model and [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) by using the [BringIntoView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~BringIntoView.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -28,31 +25,65 @@ private void BringIntoView_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-Now, run the application to render the below output:
-
 You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Scrolling-37722442).
 
-#### Scrolls to the child item of the collapsed node
+The `BringIntoView` method comprises of other optional parameters to decide on the way in which the child item should come into view. 
 
- When scroll to the item which is in collapsed state, TreeView expands the particular node and scroll to the specified item by setting the `canExpand` parameter of `BringIntoView` method to `true`.
+### Scroll to the child item with animation
 
-#### Scrolls the item into specified position
+The second optional parameter `disableAnimation` in `BringIntoView` method decides whether the scrolling animation should be enabled or disabled when the child item comes into view. By default, the scrolling will be animated.
 
-The SfTreeView allows to position the scrolled item in the view by passing `ScrollToPosition` as parameter to the [BringIntoView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~BringIntoView.html) methods. The scrolled item can take either of the four positions as explained below. The default position is Start.
+* If the parameter value is `true`, scrolling animation will be disabled.
+* If the parameter value is `false`, scrolling animation will be enabled.
+
+{% tabs %}
+{% highlight c# %}
+private void BringIntoView_Clicked(object sender, EventArgs e)
+{
+    var count= viewModel.ImageNodeInfo.Count;
+    var data = viewModel.ImageNodeInfo[count-1];
+    // Here, the second optional parameter has been passed as true hence it will disable the animation
+    TreeView.BringIntoView(data, true);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Scroll to the collapsed child item
+
+ The third optional parameter `canExpand` in `BringIntoView` method decides whether we need to expand and show the collapsed node or not when item passed for `BringIntoView` method which is in collapsed state. By default, this parameter value will be `false`.
+ 
+ * If the parameter value is `true`, TreeView expands the collapsed node if it is collapsed and scroll to the specified item.
+ * If the parameter value is `false`, TreeView does not expand the collapsed node and only scroll for item which is not in collapsed state.
+
+{% tabs %}
+{% highlight c# %}
+private void BringIntoView_Clicked(object sender, EventArgs e)
+{
+    var count= viewModel.ImageNodeInfo.Count;
+    var data = viewModel.ImageNodeInfo[count-1];
+    TreeView.BringIntoView(data, false, true);
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Scroll the item into specified position
+
+The fourth optional parameter `scrollToPostion` in `BringIntoView` method allows to position the scrolled item in the view. The scrolled item can take either of the four positions as explained below. The default position is `Start`.
 
 * `Start`: Scroll to make the node positioned at the start of the view.
 * `MakeVisible`: Scroll to make a specified node visible in the view. If the specified node is already in view, scrolling will not occur.
 * `Center`: Scroll to make the node positioned at the center of the view.
 * `End`: Scroll to make the node positioned at the end of the view.
-Refer the below code snippet to scroll a item to a specific position.
 
 {% tabs %}
 {% highlight c# %}
-// Scroll to the data after expanding its parent node if it is in collapsed state.
-treeView.BringIntoView(data, false, true, ScrollToPosition.MakeVisible);
-
-// Scrolls to the data item to make visible in the view.
-treeView.BringIntoView(data, false, false, ScrollToPosition.MakeVisible);
+private void BringIntoView_Clicked(object sender, EventArgs e)
+{
+    var count= viewModel.ImageNodeInfo.Count;
+    var data = viewModel.ImageNodeInfo[count-1];
+    // Scrolls to the data item to make visible in the view.
+    treeView.BringIntoView(data, false, false, ScrollToPosition.MakeVisible);
+}
 {% endhighlight %}
 {% endtabs %}
 

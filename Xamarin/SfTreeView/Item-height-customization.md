@@ -24,7 +24,7 @@ TreeView allows to customizing the height of the particular item on-demand by us
 
 ## AutoFit the items based on the content
 
-TreeView allows adjusting height of items based on the content loaded by using [QueryNodeSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~QueryNodeSize_EV.html) event and [QueryNodeSize.GetActualNodeHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.QueryNodeSizeEventArgs~GetActualNodeHeight.html) method.
+TreeView allows adjusting height of items based on the content loaded by using [QueryNodeSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~QueryNodeSize_EV.html) event and [QueryNodeSizeEventArgs.GetActualNodeHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.QueryNodeSizeEventArgs~GetActualNodeHeight.html) method.
                                              
 {% tabs %}
 {% highlight xaml %}
@@ -73,6 +73,62 @@ public class MainPage : ContentPage
 {% endtabs %}
 
  N> If you define any size manually to the view loaded in [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html), the `SfTreeView` will return that size as the item size for each item.
+
+## Customize item height on dynamic changes
+
+
+TreeView supports, TreeViewItems to respond for dynamic changes. It is enabled by setting `NodeSizeMode` property to `Dynamic`. The control has two different modes to perform NodeSize calculations during auto fit.
+
+* `None`: TreeViewItem height does not changes for dynamic changes. By default `NodeSizeMode` is `NodeSizeMode.None`
+* `Dynamic`: TreeViewItem height responds for dynamic changes and the size is recalculated.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.XForms.TreeView;assembly=Syncfusion.SfTreeView.XForms"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage">
+    <ContentPage.BindingContext>
+       <local:FileManagerViewModel x:Name="viewModel"></local:FileManagerViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+       <syncfusion:SfTreeView x:Name="treeView"
+                              QueryNodeSize="TreeView_QueryNodeSize"
+                              NodeSizeMode="Dynamic"
+                              ChildPropertyName="SubFiles"
+                              ItemsSource="{Binding ImageNodeInfo}"/>
+       </syncfusion:SfTreeView>
+    </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+public class MainPage : ContentPage
+{
+    public MainPage()
+    {
+      InitializeComponent();
+      this.treeView.QueryNodeSize += TreeView_QueryNodeSize;
+      this.treeView.NodeSizeMode = NodeSizeMode.Dynamic; 
+    }
+    
+    private void TreeView_QueryNodeSize(object sender, QueryNodeSizeEventArgs e)
+    {
+        if (e.Node.Level == 0)
+        {
+            //Returns speified item height for items.
+            e.Height = 200;
+            e.Handled = true;
+        }
+        else
+        {
+            // Returns item height based on the content loaded.
+            e.Height = e.GetActualNodeHeight();
+            e.Handled = true;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
 You can download the entire source code of this demo [here]().
 

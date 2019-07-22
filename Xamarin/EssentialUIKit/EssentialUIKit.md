@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Syncfusion | Xamarin XAML UI templates
 description: Syncfusion | Xamarin XAML UI templates
@@ -25,7 +25,7 @@ The screens are developed with MVVM pattern that separates the UI and business l
 
 ## Adding predefined screens to your application
 
-The screens can be added in your application by the following two ways:
+The screens can be added in your application by the following two ways: 
 
 1. Using **XAML UI Kit for Xamarin.Forms** Visual Studio extension.
 

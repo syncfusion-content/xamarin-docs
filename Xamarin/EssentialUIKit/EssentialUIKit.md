@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: Getting Started For Xamarin.Forms UI Kit
+title: Syncfusion Essential UI Kit
 platform: xamarin
 control: Xamarin UI Kit
 documentation: ug
@@ -28,7 +28,7 @@ The screens can be added in your application by the following two ways:
 
 1. Using **XAML UI Kit for Xamarin.Forms** Visual Studio extension.
 
-2. Copying the files from our opensource [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms).
+2. Copying the files from our open source [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms).
 
 ## Essential UI Kit for Xamarin.Forms extension
 
@@ -42,7 +42,7 @@ This is the easiest way to add the pre-defined screens to your application. The 
 
 3. Search for **XAML UI Kit for Xamarin.Forms**, and then install it.
 
-![Visual Studio Extensions & Updates](Essential-UI-Kit-images/Extension&Update.png)
+![Visual Studio Extensions & Updates](Essential-UI-Kit-images/Extension_Update.png)
 
 4. Restart the Visual Studio and allow it to complete the installation. 
 
@@ -52,11 +52,11 @@ This is the easiest way to add the pre-defined screens to your application. The 
 
 7. Select the category and pages you need to add in your application. In the following screenshot, the **Login Page with Gradient** screen has been selected from the **Login** category. 
 
-![Visual Studio Extensions & Updates](Essential-UI-Kit-images/EssentialUIKitCategory.png)
+![Visual Studio Extensions & Updates](Essential-UI-Kit-images/Essential_UIKit_Category.png)
 
 8. Clicking the 'Add' button will include the selected template to your project. The necessary class files, resources, and NuGet package references will automatically be added to your project as shown in the following screenshot.
 
-![Visual Studio Extensions & Updates](Essential-UI-Kit-images/Kit_Nuget&Files.png)
+![Visual Studio Extensions & Updates](Essential-UI-Kit-images/Kit_Nuget_Files.jpg)
 
 ## How to render the added page
 

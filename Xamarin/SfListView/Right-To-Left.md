@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right-to-left | ListView for Xamarin.Forms | Syncfusion
-description: Describes how listview works on right-to-left localization.
+title: ListView Right-to-left | Xamarin.Forms | Syncfusion
+description: Describes how Xamarin.Forms ListView works on right-to-left localization.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -35,4 +35,4 @@ N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is 
 
 ## Limitation
 
-* ListView item does not arrange from right to left direction in `Horizontal` orientation, when the [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) as `Height`.
+* ListView item does not arrange from right to left direction in `Horizontal` orientation, when the [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) is `Height`.

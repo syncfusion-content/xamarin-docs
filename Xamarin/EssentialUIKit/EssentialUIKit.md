@@ -1,6 +1,7 @@
 ﻿---
 layout: post
-title: Syncfusion Essential UI Kit
+title: Syncfusion | Xamarin XAML UI templates
+description: Syncfusion | Xamarin XAML UI templates
 platform: xamarin
 control: Xamarin UI Kit
 documentation: ug
@@ -42,7 +43,7 @@ This is the easiest way to add the pre-defined screens to your application. The 
 
 3. Search for **XAML UI Kit for Xamarin.Forms**, and then install it.
 
-![Visual Studio Extensions & Updates](Essential-UI-Kit-images/Extension_Update.png)
+![Visual Studio Extensions and Updates](Essential-UI-Kit-images/Extension_Update.png)
 
 4. Restart the Visual Studio and allow it to complete the installation. 
 

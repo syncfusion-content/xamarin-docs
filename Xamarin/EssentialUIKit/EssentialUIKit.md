@@ -11,7 +11,7 @@ documentation: ug
 The Syncfusion Essential UI Kit is a collection of easy-to-use, extendable, and adaptable XAML templates that allows you to quickly create a Xamarin.Forms application by providing generic pre-defined screens. Now, the UI Kit has screens for the following categories:
 
 * Login
-* Ecommerce
+* ECommerce
 * Chat
 * Feedback
 * Contact us
@@ -52,11 +52,11 @@ This is the easiest way to add the pre-defined screens to your application. The 
 
 7. Select the category and pages you need to add in your application. In the following screenshot, the **Login Page with Gradient** screen has been selected from the **Login** category. 
 
-![Visual Studio Extensions & Updates](Essential-UI-Kit-images/Essential_UIKit_Category.png)
+![Visual Studio UIkit Category](Essential-UI-Kit-images/Essential_UIKit_Category.png)
 
 8. Clicking the 'Add' button will include the selected template to your project. The necessary class files, resources, and NuGet package references will automatically be added to your project as shown in the following screenshot.
 
-![Visual Studio Extensions & Updates](Essential-UI-Kit-images/Kit_Nuget_Files.jpg)
+![Visual Studio Ui Kit nuget and files](Essential-UI-Kit-images/Kit_Nuget_Files.jpg)
 
 ## How to render the added page
 

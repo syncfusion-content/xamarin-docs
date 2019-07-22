@@ -10,7 +10,7 @@ documentation: ug
 # Scrolling
 The TreeView provides various options to achieve programmatic scrolling. Please walkthrough the below section in detail to achieve the same.
 
-## Bring InTo View
+## Bring Into View
 
 The TreeView allows programmatic scrolling based on the data model and [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html) by using the [BringIntoView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~BringIntoView.html) method.
 

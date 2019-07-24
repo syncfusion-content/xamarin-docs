@@ -19,7 +19,7 @@ The Syncfusion Essential UI Kit is a collection of easy-to-use, extendable, and 
 * About Us
 * Article
 * Navigation
-* Error and Empty  
+* Error and Empty
 
 The screens are developed with MVVM pattern that separates the UI and business logic results in a clean, professional, and scalable representation of a user interface in your Xamarin.Forms application.
 
@@ -71,6 +71,6 @@ MainPage = new SampleFormsApplication.Views.Login.LoginPage();
 In real-world applications you may need to update the below to use these templates.
 1. Updating the services for fetching a list of items from a remote server or from local.
 2. Updating the business logics in view-models.
-3. Wire up the navigation from XAML file. Example: (The “Add To Cart” in “Products Details” page button must navigate the screen to “Cart” page) 
+3. Wire up the navigation from XAML file. Example: (The â€œAdd To Cartâ€ in â€œProducts Detailsâ€ page button must navigate the screen to â€œCartâ€ page) 
 
 N> Now, **XAML UI Kit for Xamarin.Forms** Visual Studio extension is supported in the Windows operating system only.

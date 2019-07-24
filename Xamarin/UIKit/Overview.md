@@ -19,7 +19,7 @@ The Syncfusion Essential UI Kit is a collection of easy-to-use, extendable, and 
 * About Us
 * Article
 * Navigation
-* Error and Empty  
+* Error and Empty
 
 The screens are developed with MVVM pattern that separates the UI and business logic results in a clean, professional, and scalable representation of a user interface in your Xamarin.Forms application.
 

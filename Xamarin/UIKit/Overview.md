@@ -39,11 +39,11 @@ This is the easiest way to add the pre-defined screens to your application. The 
 
 2. Go to Extension, and then click Manage Extensions as shown in the following screenshot.
 
-![Visual Studio Extensions](Essential-UI-Kit-images/VS_Extensions.png)
+   ![Visual Studio Extensions](UI-Kit-images/VS_Extensions.png)
 
 3. Search for **XAML UI Kit for Xamarin.Forms**, and then install it.
 
-![Visual Studio Extensions and Updates](Essential-UI-Kit-images/Extension_Update.png)
+   ![Visual Studio Extensions and Updates](UI-Kit-images/Extension_Update.png)
 
 4. Restart the Visual Studio and allow it to complete the installation. 
 
@@ -53,11 +53,11 @@ This is the easiest way to add the pre-defined screens to your application. The 
 
 7. Select the category and pages you need to add in your application. In the following screenshot, the **Login Page with Gradient** screen has been selected from the **Login** category. 
 
-![Visual Studio UIkit Category](Essential-UI-Kit-images/Essential_UIKit_Category.png)
+   ![Visual Studio UIkit Category](UI-Kit-images/Essential_UIKit_Category.png)
 
 8. Clicking the 'Add' button will include the selected template to your project. The necessary class files, resources, and NuGet package references will automatically be added to your project as shown in the following screenshot.
 
-![Visual Studio Ui Kit nuget and files](Essential-UI-Kit-images/Kit_Nuget_Files.jpg)
+   ![Visual Studio Ui Kit nuget and files](UI-Kit-images/Kit_Nuget_Files.jpg)
 
 ## How to render the added page
 
@@ -65,9 +65,12 @@ In a Xamarin.Forms demo application, you must make the added template as the sta
 Example: If you added the Login Page, then you must invoke the page as demonstrated in the following code.
 
 {% highlight c# %}
-MainPage=new SampleFormsApplication.Views.Login.LoginPage();
+MainPage = new SampleFormsApplication.Views.Login.LoginPage();
 {% endhighlight %} 
 
-In real-world applications, you can set the navigations or wire up the newly added pages as your requirement. 
+In real-world applications you may need to update the below to use these templates.
+1. Updating the services for fetching a list of items from a remote server or from local.
+2. Updating the business logics in view-models.
+3. Wire up the navigation from XAML file. Example: (The “Add To Cart” in “Products Details” page button must navigate the screen to “Cart” page) 
 
 N> Now, **XAML UI Kit for Xamarin.Forms** Visual Studio extension is supported in the Windows operating system only.

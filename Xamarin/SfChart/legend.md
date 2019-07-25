@@ -500,8 +500,9 @@ N> The BindingContext of the template is the corresponding underlying legend ite
 
 {% highlight c# %}
 
-chart.Legend = new ChartLegend();
-chart.Legend.ItemTemplate = new DataTemplate ( () =>
+ChartLegend legend = new ChartLegend();
+chart.Legend = legend;
+legend.ItemTemplate = new DataTemplate ( () =>
 {
     StackLayout stack = new StackLayout()
 	{

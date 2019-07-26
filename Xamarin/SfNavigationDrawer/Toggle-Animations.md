@@ -189,7 +189,7 @@ The navigation pane is hidden behind the main content. Main content moves away i
              xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
              x:Class="NaviSample.MainPage">
     <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" 
-                                         Transition="Reveala" 
+                                         Transition="Reveal" 
                                          DrawerHeaderHeight="50">
         <navigationdrawer:SfNavigationDrawer.ContentView>
             <StackLayout>

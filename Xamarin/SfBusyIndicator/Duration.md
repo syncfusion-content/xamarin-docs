@@ -25,8 +25,7 @@ The `Duration` property of SfBusyIndicator indicates timeline for completing one
                                        AnimationType="Battery" 
                                        ViewBoxHeight="100"
                                        ViewBoxWidth="100"
-                                       Duration="0.5"
-                                       TextColor="Maroon"/>
+                                       Duration="0.5"/>
     </ContentPage.Content>
 </ContentPage>
 
@@ -49,8 +48,7 @@ namespace GettingStarted
                 AnimationType = AnimationTypes.Battery,
                 ViewBoxWidth = 100,
                 ViewBoxHeight = 100,
-                Duration = 0.5f,
-                TextColor = Color.Maroon
+                Duration = 0.5f
             };
 
             this.Content = busyIndicator;

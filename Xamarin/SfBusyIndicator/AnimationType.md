@@ -26,7 +26,8 @@ The `AnimationType` property for the SfBusyIndicator allows the user to set one 
                                        AnimationType="Ball" 
                                        ViewBoxHeight="100"
                                        ViewBoxWidth="100"
-                                       TextColor="Blue"/>
+                                       BackgroundColor="Blue"
+                                       TextColor="White"/>
     </ContentPage.Content>
 </ContentPage>
 
@@ -49,8 +50,9 @@ namespace GettingStarted
                 AnimationType = AnimationTypes.Ball,
                 ViewBoxWidth = 100,
                 ViewBoxHeight = 100,
-                Title = "Loading..."
-                TextColor = Color.Blue
+                Title = "Loading...",
+                BackgroundColor="Blue",
+                TextColor = Color.White
             };
 
             this.Content = busyIndicator;

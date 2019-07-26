@@ -93,18 +93,18 @@ namespace AutocompleteSample
             SfAutoComplete autoComplete = new SfAutoComplete()
             {
                 HeightRequest = 40,
-                SuggestionMode  = SuggestionMode.StartsWith,
+                SuggestionMode = SuggestionMode.StartsWith,
                 AutoCompleteSource = new List<string>()
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }
@@ -186,18 +186,18 @@ namespace AutocompleteSample
             SfAutoComplete autoComplete = new SfAutoComplete()
             {
                 HeightRequest = 40,
-                SuggestionMode  = SuggestionMode.StartsWithCaseSensitive,
+                SuggestionMode = SuggestionMode.StartsWithCaseSensitive,
                 AutoCompleteSource = new List<string>()
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }
@@ -279,18 +279,18 @@ namespace AutocompleteSample
             SfAutoComplete autoComplete = new SfAutoComplete()
             {
                 HeightRequest = 40,
-                SuggestionMode  = SuggestionMode.Contains,
+                SuggestionMode = SuggestionMode.Contains,
                 AutoCompleteSource = new List<string>()
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }
@@ -329,7 +329,7 @@ Displays all the matches that contains the typed characters in control. This str
         <autocomplete:SfAutoComplete HeightRequest="40" 
                                      SuggestionMode="ContainsWithCaseSensitive">
             <autocomplete:SfAutoComplete.AutoCompleteSource>
-                 <ListCollection:List x:TypeArguments="x:String">
+                <ListCollection:List x:TypeArguments="x:String">
                     <x:String>India</x:String>
                     <x:String>Uganda</x:String>
                     <x:String>Ukraine</x:String>
@@ -372,18 +372,18 @@ namespace AutocompleteSample
             SfAutoComplete autoComplete = new SfAutoComplete()
             {
                 HeightRequest = 40,
-                SuggestionMode  = SuggestionMode.ContainsWithCaseSensitive,
+                SuggestionMode = SuggestionMode.ContainsWithCaseSensitive,
                 AutoCompleteSource = new List<string>()
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }
@@ -465,18 +465,18 @@ namespace AutocompleteSample
             SfAutoComplete autoComplete = new SfAutoComplete()
             {
                 HeightRequest = 40,
-                SuggestionMode  = SuggestionMode.Equals,
+                SuggestionMode = SuggestionMode.Equals,
                 AutoCompleteSource = new List<string>()
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }
@@ -487,7 +487,6 @@ namespace AutocompleteSample
         }
     }
 }
-
 
 {% endhighlight %}
 
@@ -557,18 +556,18 @@ namespace AutocompleteSample
             SfAutoComplete autoComplete = new SfAutoComplete()
             {
                 HeightRequest = 40,
-                SuggestionMode  = SuggestionMode.EqualsWithCaseSensitive,
+                SuggestionMode = SuggestionMode.EqualsWithCaseSensitive,
                 AutoCompleteSource = new List<string>()
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }
@@ -666,13 +665,13 @@ namespace AutocompleteSample
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }
@@ -715,8 +714,6 @@ namespace AutocompleteSample
 	{% endhighlight %}
 
     {% endtabs %}
-
-
 
 ## Filtering Words that Ends with the Input Text
 
@@ -782,18 +779,18 @@ namespace AutocompleteSample
             SfAutoComplete autoComplete = new SfAutoComplete()
             {
                 HeightRequest = 40,
-                SuggestionMode  = SuggestionMode.EndsWith,
+                SuggestionMode = SuggestionMode.EndsWith,
                 AutoCompleteSource = new List<string>()
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }
@@ -876,18 +873,18 @@ namespace AutocompleteSample
             SfAutoComplete autoComplete = new SfAutoComplete()
             {
                 HeightRequest = 40,
-                SuggestionMode  = SuggestionMode.EndsWithCaseSensitive,
+                SuggestionMode = SuggestionMode.EndsWithCaseSensitive,
                 AutoCompleteSource = new List<string>()
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }

@@ -121,7 +121,7 @@ Text color of watermark can be customized using [`WatermarkColor`] property.
         <autocomplete:SfAutoComplete
 	           x:Name="autoComplete"
 	           HeightRequest="40"
-               Watermark="Enter 'A' to filter suggestions"
+               Watermark="Enter some text"
                WatermarkColor="#1976d2">
             <autocomplete:SfAutoComplete.AutoCompleteSource>
                 <ListCollection:List x:TypeArguments="x:String">
@@ -166,7 +166,7 @@ namespace AutocompleteSample
             SfAutoComplete autoComplete = new SfAutoComplete()
             {
                 HeightRequest = 40,
-                Watermark = "Enter 'A' to filter suggestions",
+                Watermark = "Enter some text",
                 WatermarkColor = Color.FromHex("1976d2"),
                 AutoCompleteSource = new List<string>()
                 {

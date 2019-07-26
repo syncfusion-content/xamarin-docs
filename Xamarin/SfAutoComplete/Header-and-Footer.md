@@ -93,13 +93,13 @@ namespace AutocompleteSample
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }
@@ -222,13 +222,13 @@ namespace AutocompleteSample
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }

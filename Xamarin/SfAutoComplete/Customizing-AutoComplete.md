@@ -215,6 +215,7 @@ namespace AutocompleteSample
                     <x:String>Ukraine</x:String>
                     <x:String>Canada</x:String>
                     <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
                 </ListCollection:List>
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
@@ -253,7 +254,8 @@ namespace AutocompleteSample
                     "Uganda",
                     "Ukraine",
                     "Canada",
-                    "United Arab Emirates"
+                    "United Arab Emirates",
+                    "United Kingdom"
                 }
             };
 
@@ -298,6 +300,7 @@ The [`DropDownCornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/S
                     <x:String>Ukraine</x:String>
                     <x:String>Canada</x:String>
                     <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
                 </ListCollection:List>
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
@@ -336,7 +339,8 @@ namespace AutocompleteSample
                     "Uganda",
                     "Ukraine",
                     "Canada",
-                    "United Arab Emirates"
+                    "United Arab Emirates",
+                    "United Kingdom"
                 }
             };
 
@@ -381,12 +385,7 @@ The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamari
                     <x:String>Ukraine</x:String>
                     <x:String>Canada</x:String>
                     <x:String>United Arab Emirates</x:String>
-                    <x:String>France</x:String>
                     <x:String>United Kingdom</x:String>
-                    <x:String>China</x:String>
-                    <x:String>United States</x:String>
-                    <x:String>Japan</x:String>
-                    <x:String>Angola</x:String>
                 </ListCollection:List>
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
@@ -425,7 +424,8 @@ namespace AutocompleteSample
                     "Uganda",
                     "Ukraine",
                     "Canada",
-                    "United Arab Emirates"
+                    "United Arab Emirates",
+                    "United Kingdom"
                 }
             };
 
@@ -458,30 +458,32 @@ The DropDownBorderColor property is used to change the border color of suggestio
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
              xmlns:local="clr-namespace:AutocompleteSample"
              x:Class="AutocompleteSample.MainPage">
-    <StackLayout 
-        VerticalOptions="Start" 
-        HorizontalOptions="Start"
-        Padding="30">
-        <autocomplete:SfAutoComplete x:Name="autoComplete"
-                                     HeightRequest="40"
-                                     DropDownBorderColor="Red">
-            <autocomplete:SfAutoComplete.AutoCompleteSource>
-                <ListCollection:List x:TypeArguments="x:String">
-                    <x:String>India</x:String>
-                    <x:String>Uganda</x:String>
-                    <x:String>Ukraine</x:String>
-                    <x:String>Canada</x:String>
-                    <x:String>United Arab Emirates</x:String>
-                    <x:String>France</x:String>
-                    <x:String>United Kingdom</x:String>
-                    <x:String>China</x:String>
-                    <x:String>United States</x:String>
-                    <x:String>Japan</x:String>
-                    <x:String>Angola</x:String>
-                </ListCollection:List>
-            </autocomplete:SfAutoComplete.AutoCompleteSource>
-        </autocomplete:SfAutoComplete>
-    </StackLayout>
+    <StackLayout>
+    <autoComplete:SfAutoComplete HeightRequest="40" 
+                                 DropDownBorderColor="Blue">
+        <autoComplete:SfAutoComplete.AutoCompleteSource>
+            <ListCollection:List x:TypeArguments="x:String">
+                <x:String>1920 x 1080</x:String>
+                <x:String>1680 x 1050</x:String>
+                <x:String>1600 x 900</x:String>
+                <x:String>1440 x 900</x:String>
+                <x:String>1400 x 1050</x:String>
+                <x:String>1366 x 768</x:String>
+                <x:String>1360 x 768</x:String>
+                <x:String>1280 x 1024</x:String>
+                <x:String>1280 x 960</x:String>
+                <x:String>1280 x 720</x:String>
+                <x:String>854 x 480</x:String>
+                <x:String>800 x 480</x:String>
+                <x:String>480 X 640</x:String>
+                <x:String>480 x 320</x:String>
+                <x:String>432 x 240</x:String>
+                <x:String>360 X 640</x:String>
+                <x:String>320 x 240</x:String>
+            </ListCollection:List>
+        </autoComplete:SfAutoComplete.AutoCompleteSource>
+    </autoComplete:SfAutoComplete>
+</StackLayout>
 </ContentPage>
 
 {% endhighlight %}
@@ -499,29 +501,38 @@ namespace AutocompleteSample
         public MainPage()
         {
             InitializeComponent();
-            StackLayout stackLayout = new StackLayout()
+            StackLayout layout = new StackLayout()
             {
                 VerticalOptions = LayoutOptions.Start,
                 HorizontalOptions = LayoutOptions.Start,
                 Padding = new Thickness(30)
             };
+            List<String> resolutionList = new List<String>();
+            resolutionList.Add("1920 x 1080");
+            resolutionList.Add("1680 x 1050");
+            resolutionList.Add("1600 x 900");
+            resolutionList.Add("1440 x 900");
+            resolutionList.Add("1400 x 1050");
+            resolutionList.Add("1366 x 768");
+            resolutionList.Add("1360 x 768");
+            resolutionList.Add("1280 x 1024");
+            resolutionList.Add("1280 x 960");
+            resolutionList.Add("1280 x 720");
+            resolutionList.Add("854 x 480");
+            resolutionList.Add("800 x 480");
+            resolutionList.Add("480 X 640");
+            resolutionList.Add("480 x 320");
+            resolutionList.Add("432 x 240");
+            resolutionList.Add("360 X 640");
+            resolutionList.Add("320 x 240");
 
-            SfAutoComplete autoComplete = new SfAutoComplete()
-            {
-                HeightRequest = 40,
-                DropDownBorderColor = Color.Red,
-                AutoCompleteSource = new List<string>()
-                {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates"
-                }
-            };
+            SfAutoComplete autoComplete = new SfAutoComplete();
+            autoComplete.HeightRequest = 40;
+            autoComplete.AutoCompleteSource = resolutionList;
+            autoComplete.DropDownBorderColor = Color.Blue;
 
-            stackLayout.Children.Add(autoComplete);
-            this.Content = stackLayout;
+            layout.Children.Add(autoComplete);
+            Content = layout;
         }
     }
 }
@@ -563,12 +574,7 @@ Suggestion box items can be customized using [`DropDownItemFontAttributes`](http
                     <x:String>Ukraine</x:String>
                     <x:String>Canada</x:String>
                     <x:String>United Arab Emirates</x:String>
-                    <x:String>France</x:String>
                     <x:String>United Kingdom</x:String>
-                    <x:String>China</x:String>
-                    <x:String>United States</x:String>
-                    <x:String>Japan</x:String>
-                    <x:String>Angola</x:String>
                 </ListCollection:List>
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
@@ -608,7 +614,8 @@ namespace AutocompleteSample
                     "Uganda",
                     "Ukraine",
                     "Canada",
-                    "United Arab Emirates"
+                    "United Arab Emirates",
+                    "United Kingdom"
                 }
             };
 
@@ -653,12 +660,7 @@ The autocomplete provided the user to show or hide the clear button using [`Show
                     <x:String>Ukraine</x:String>
                     <x:String>Canada</x:String>
                     <x:String>United Arab Emirates</x:String>
-                    <x:String>France</x:String>
                     <x:String>United Kingdom</x:String>
-                    <x:String>China</x:String>
-                    <x:String>United States</x:String>
-                    <x:String>Japan</x:String>
-                    <x:String>Angola</x:String>
                 </ListCollection:List>
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
@@ -697,7 +699,8 @@ namespace AutocompleteSample
                     "Uganda",
                     "Ukraine",
                     "Canada",
-                    "United Arab Emirates"
+                    "United Arab Emirates",
+                    "United Kingdom"
                 }
             };
 
@@ -742,12 +745,7 @@ N> `ClearButtonColor` property is available only on iOS and Android platform.
                     <x:String>Ukraine</x:String>
                     <x:String>Canada</x:String>
                     <x:String>United Arab Emirates</x:String>
-                    <x:String>France</x:String>
                     <x:String>United Kingdom</x:String>
-                    <x:String>China</x:String>
-                    <x:String>United States</x:String>
-                    <x:String>Japan</x:String>
-                    <x:String>Angola</x:String>
                 </ListCollection:List>
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
@@ -786,7 +784,8 @@ namespace AutocompleteSample
                     "Uganda",
                     "Ukraine",
                     "Canada",
-                    "United Arab Emirates"
+                    "United Arab Emirates",
+                    "United Kingdom"
                 }
             };
 
@@ -829,12 +828,7 @@ The [`ShowBorder`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
                     <x:String>Ukraine</x:String>
                     <x:String>Canada</x:String>
                     <x:String>United Arab Emirates</x:String>
-                    <x:String>France</x:String>
                     <x:String>United Kingdom</x:String>
-                    <x:String>China</x:String>
-                    <x:String>United States</x:String>
-                    <x:String>Japan</x:String>
-                    <x:String>Angola</x:String>
                 </ListCollection:List>
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
@@ -873,7 +867,8 @@ namespace AutocompleteSample
                     "Uganda",
                     "Ukraine",
                     "Canada",
-                    "United Arab Emirates"
+                    "United Arab Emirates",
+                    "United Kingdom"
                 }
             };
 

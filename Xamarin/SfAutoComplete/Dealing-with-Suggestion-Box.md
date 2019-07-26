@@ -82,13 +82,13 @@ namespace AutocompleteSample
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }
@@ -172,17 +172,17 @@ namespace AutocompleteSample
             {
                 HeightRequest = 40,
                 MaximumDropDownHeight = 100,
-               AutoCompleteSource = new List<string>()
+                AutoCompleteSource = new List<string>()
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }
@@ -223,17 +223,11 @@ Suggestion box can be shown whenever the control receives focus using the `ShowS
                ShowSuggestionsOnFocus="True">
             <autocomplete:SfAutoComplete.AutoCompleteSource>
                 <ListCollection:List x:TypeArguments="x:String">
-                    <x:String>India</x:String>
-                    <x:String>Uganda</x:String>
-                    <x:String>Ukraine</x:String>
+                    <x:String>Great Britain</x:String>
                     <x:String>Canada</x:String>
-                    <x:String>United Arab Emirates</x:String>
                     <x:String>France</x:String>
-                    <x:String>United Kingdom</x:String>
                     <x:String>China</x:String>
-                    <x:String>United States</x:String>
                     <x:String>Japan</x:String>
-                    <x:String>Angola</x:String>
                 </ListCollection:List>
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
@@ -268,17 +262,11 @@ namespace AutocompleteSample
                 ShowSuggestionsOnFocus = true,
                 AutoCompleteSource = new List<string>()
                 {
-                    "India",
-                    "Uganda",
-                    "Ukraine", 
-					"Canada",
-                    "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
-                    "Japan",
-                    "Angola"
+                    "Great Britain",
+                    "Canada",
+                    "France",
+                    "China",
+                    "Japan"
                 }
             };
             stackLayout.Children.Add(autoComplete);
@@ -361,17 +349,17 @@ namespace AutocompleteSample
             {
                 HeightRequest = 40,
                 PopupDelay = 3000,
-               AutoCompleteSource = new List<string>()
+                AutoCompleteSource = new List<string>()
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }
@@ -381,7 +369,6 @@ namespace AutocompleteSample
         }
     }
 }
-
 
 {% endhighlight %}
 
@@ -460,13 +447,13 @@ namespace AutocompleteSample
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }
@@ -552,13 +539,13 @@ namespace AutocompleteSample
                 {
                     "India",
                     "Uganda",
-                    "Ukraine", 
-					"Canada",
+                    "Ukraine",
+                    "Canada",
                     "United Arab Emirates",
-                    "France", 
-					"United Kingdom",
-                    "China", 
-					"United States",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
                     "Japan",
                     "Angola"
                 }

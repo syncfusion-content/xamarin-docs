@@ -14,22 +14,92 @@ Restrict the number of suggestions displayed and have the remaining items loaded
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" MultiSelectMode="Delimiter" Delimiter="," LoadMoreText= "LOAD MORE" x:Name="autoComplete" MaximumSuggestion="8"  />                    
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete HeightRequest="40"
+                                     MultiSelectMode="Delimiter"
+                                     Delimiter=","
+                                     LoadMoreText="LOAD MORE"
+                                     MaximumSuggestion="2">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+               <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Albania</x:String>
+                    <x:String>Algeria</x:String>
+                    <x:String>American Samoa</x:String>
+                    <x:String>Andorra</x:String>
+                    <x:String>Aruba</x:String>
+                    <x:String>Angola</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Armenia</x:String>
+                    <x:String>America</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-autoComplete.MaximumSuggestion = 8;
-autoComplete.LoadMoreText =  "LOAD MORE";
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                MultiSelectMode = MultiSelectMode.Delimiter,
+                Delimiter = ",",
+                LoadMoreText = "LOAD MORE",
+                MaximumSuggestion = 2,
+                AutoCompleteSource = new List<string>()
+                {
+                   "Albania",
+                   "Algeria",
+                   "American Samoa",
+                   "Andorra",
+                   "Aruba",
+                   "Angola",
+                   "Argentina",
+                   "Armenia",
+                   "America"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/Maximum-display-item-with-Expander/LoadMore.png)
+![Maximum display item with Expander](images/Maximum-display-item-with-Expander/LoadMore.png)
 
 ### Restricting the maximum display of item dynamically
 

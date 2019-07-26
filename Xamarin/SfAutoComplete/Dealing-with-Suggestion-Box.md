@@ -19,22 +19,85 @@ Suggestion box can be placed either at the top or bottom using the `SuggestionBo
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" SuggestionBoxPlacement="Top" x:Name="autoComplete" />
-</StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Center" 
+                 HorizontalOptions="Center" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete
+	           x:Name="autoComplete"
+	           HeightRequest="40"
+               SuggestionBoxPlacement="Top">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete.SuggestionBoxPlacement = SuggestionBoxPlacement.Top;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Center,
+                HorizontalOptions = LayoutOptions.Center,
+                Padding = 30
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                SuggestionBoxPlacement = SuggestionBoxPlacement.Top,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -50,27 +113,85 @@ The maximum height of the suggestion box in the SfAutocomplete control can be va
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" MaximumDropDownHeight="100" />                     
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete
+	           x:Name="autoComplete"
+	           HeightRequest="40"
+               MaximumDropDownHeight="100">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Great Britain");
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("Canada");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("France");
-countryNames.Add("United Kingdom");
-countryNames.Add("China");
-countryNames.Add("United States");
-countryNames.Add("Japan");
-autoComplete.DataSource = countryNames;
-autoComplete.MaximumDropDownHeight = 100;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = 30
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                MaximumDropDownHeight = 100,
+               AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -86,22 +207,85 @@ Suggestion box can be shown whenever the control receives focus using the `ShowS
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" ShowSuggestionsOnFocus="true" />                        
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete
+	           x:Name="autoComplete"
+	           HeightRequest="40"
+               ShowSuggestionsOnFocus="True">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Great Britain");
-countryNames.Add("Canada");
-countryNames.Add("France");
-countryNames.Add("China");
-countryNames.Add("Japan");
-autoComplete.DataSource = countryNames;
-autoComplete.ShowSuggestionsOnFocus = true;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = 30
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                ShowSuggestionsOnFocus = true,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -118,22 +302,86 @@ In this example, a time duration of 3 seconds is set to popup delay.
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" PopupDelay="3000" />                            
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete
+	           x:Name="autoComplete"
+	           HeightRequest="40"
+               PopupDelay="3000">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete.PopupDelay = 3000;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = 30
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                PopupDelay = 3000,
+               AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
+
 
 {% endhighlight %}
 
@@ -149,22 +397,85 @@ In this example, a time duration of 3 seconds is set to search delay.
 
 {% highlight xaml %}
 
-    <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SearchDelay="3000" />                            
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete
+	           x:Name="autoComplete"
+	           HeightRequest="40"
+               SearchDelay="3000">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                 <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    List<String> countryNames = new List<String>();
-    countryNames.Add("Uganda");
-    countryNames.Add("Ukraine");
-    countryNames.Add("United Arab Emirates");
-    countryNames.Add("United Kingdom");
-    countryNames.Add("United States");
-    autoComplete.DataSource = countryNames;
-    autoComplete.SearchDelay = 3000;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = 30
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                SearchDelay = 3000,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -178,23 +489,85 @@ APIs are available to avoid pop-ups and retrieve filtered suggestion items that 
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionBoxPlacement="None" />                            
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete
+	           x:Name="autoComplete"
+	           HeightRequest="40"
+            SuggestionBoxPlacement="None">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                 <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.SuggestionBoxPlacement=SuggestionBoxPlacement.None;
-autoComplete.DataSource = countryNames;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
 
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = 30
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                SuggestionBoxPlacement = SuggestionBoxPlacement.None,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 

@@ -37,28 +37,90 @@ Displays all the matches that starts with the typed characters in control. This 
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="StartsWith"/>                            
-</StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete HeightRequest="40" 
+                                     SuggestionMode="StartsWith">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                 <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 	
 {% highlight c# %}
 	
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete.SuggestionMode= SuggestionMode.StartsWith;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                SuggestionMode  = SuggestionMode.StartsWith,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 	 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/AutoComplete-Filtering-Options/starts-with.png)
+![Filtering options starts with](images/AutoComplete-Filtering-Options/starts-with.png)
 
 ### Filtering Words that Starts with Input Text - CaseSensitive
 
@@ -68,28 +130,90 @@ Displays all the matches that starts with the typed characters in control. This 
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="StartsWithCaseSensitive"/>                            
-</StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete HeightRequest="40" 
+                                     SuggestionMode="StartsWithCaseSensitive">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                 <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete.SuggestionMode= SuggestionMode.StartsWithCaseSensitive;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                SuggestionMode  = SuggestionMode.StartsWithCaseSensitive,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/AutoComplete-Filtering-Options/starts-with-case-sensitive.png)
+![starts with case sensitive](images/AutoComplete-Filtering-Options/starts-with-case-sensitive.png)
 
 ## Filtering Words that Contains the Input Text
 
@@ -99,29 +223,90 @@ Displays all the matches that contains the typed characters in control. This str
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="Contains"/>                            
-</StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete HeightRequest="40" 
+                                     SuggestionMode="Contains">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                 <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-countryNames.Add("Italy");
-autoComplete.DataSource = countryNames;
-autoComplete.SuggestionMode= SuggestionMode.Contains;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                SuggestionMode  = SuggestionMode.Contains,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 	 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/AutoComplete-Filtering-Options/contains.png)
+![Filtering options contains](images/AutoComplete-Filtering-Options/contains.png)
 
 ### Filtering Words that Contains the Input Text - CaseSensitive
 
@@ -131,29 +316,90 @@ Displays all the matches that contains the typed characters in control. This str
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="ContainsWithCaseSensitive"/>                            
-</StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete HeightRequest="40" 
+                                     SuggestionMode="ContainsWithCaseSensitive">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                 <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-countryNames.Add("Italy");
-autoComplete.DataSource = countryNames;
-autoComplete.SuggestionMode= SuggestionMode.ContainsWithCaseSensitive;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                SuggestionMode  = SuggestionMode.ContainsWithCaseSensitive,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/AutoComplete-Filtering-Options/contains-casesensitive.png)
+![contains casesensitive](images/AutoComplete-Filtering-Options/contains-casesensitive.png)
 
 ## Filtering Words that Equals the Input Text
 
@@ -163,22 +409,85 @@ Displays all the words that completely matches with the typed characters in cont
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="Equals"/>                            
-</StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete HeightRequest="40" 
+                                     SuggestionMode="Equals">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                 <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete.SuggestionMode= SuggestionMode.Equals;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                SuggestionMode  = SuggestionMode.Equals,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
+
 
 {% endhighlight %}
 
@@ -192,22 +501,84 @@ Displays all the words that completely matches with the typed characters in cont
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="EqualsWithCaseSensitive"/>                            
-</StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete HeightRequest="40" 
+                                     SuggestionMode="EqualsWithCaseSensitive">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                 <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete.SuggestionMode= SuggestionMode.EqualsWithCaseSensitive;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                SuggestionMode  = SuggestionMode.EqualsWithCaseSensitive,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -217,61 +588,129 @@ autoComplete.SuggestionMode= SuggestionMode.EqualsWithCaseSensitive;
 
 Filter items in the suggestion list based on a custom search by the user. This will help to apply our typo toleration functionality to the control.
 
-![](images/AutoComplete-Filtering-Options/custom_filter.png)
+![custom filter](images/AutoComplete-Filtering-Options/custom_filter.png)
 
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" DropDownTextSize="20" x:Name="autoComplete" AutoCompleteMode="Suggest" MaximumDropDownHeight="200" SuggestionMode="Custom"/>                        
-</StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete"
+                                     HeightRequest="40"
+                                     DropDownTextSize="20"
+                                     AutoCompleteMode="Suggest"
+                                     MaximumDropDownHeight="200" 
+                                     SuggestionMode="Custom"
+                                     >
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                 <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    public AutoCompletePage()
+using Syncfusion.SfAutoComplete.XForms;
+using System;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
     {
-        InitializeComponent();
-        List<string> list = new List<string>();
-        list.Add("Albania");
-        list.Add("Algeria");
-        list.Add("American Samoa");
-        list.Add("Andorra");
-        list.Add("Angola");
-        list.Add("Anguilla");
-        autocomplete.AutoCompleteSource = list;
-        autocomplete.Filter = ContainingSpaceFilter;
-    }
-    public bool ContainingSpaceFilter(string search, object item)
-    {
-        string text = item.ToString().ToLower();
-        if (item != null)
+        public MainPage()
         {
-            try
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
             {
-                var split = search.Split(' ');
-                foreach (var results in split)
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                DropDownTextSize = 20,
+                AutoCompleteMode = AutoCompleteMode.Suggest,
+                MaximumDropDownHeight = 200,
+                SuggestionMode = SuggestionMode.Custom,
+                Filter = ContainingSpaceFilter,
+                AutoCompleteSource = new List<string>()
                 {
-                    if (!text.Contains(results.ToLower()))
-                    {
-                        return true;
-                    }
-                    else
-                        return false;
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
                 }
-                return true;
-            }
-            catch (Exception)
-            {
-                return (text.Contains(search));
-            }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
         }
-        else
-            return false;
+
+        public bool ContainingSpaceFilter(string search, object item)
+        {
+            string text = item.ToString().ToLower();
+            if (item != null)
+            {
+                try
+                {
+                    var split = search.Split(' ');
+                    foreach (var results in split)
+                    {
+                        if (!text.Contains(results.ToLower()))
+                        {
+                            return true;
+                        }
+                        else
+                            return false;
+                    }
+                    return true;
+                }
+                catch (Exception)
+                {
+                    return (text.Contains(search));
+                }
+            }
+            else
+                return false;
+        }
     }
+}
 
 	{% endhighlight %}
 
@@ -287,28 +726,90 @@ Displays all the matches that ends with the typed characters in control. This st
 	
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" WidthRequest="180" x:Name="autoComplete" SuggestionMode="EndsWith"/>                            
-</StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete HeightRequest="40" 
+                                     SuggestionMode="EndsWith">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                 <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete.SuggestionMode= SuggestionMode.EndsWith;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                SuggestionMode  = SuggestionMode.EndsWith,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
  
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/AutoComplete-Filtering-Options/ends-with.png)
+![Filtering options ends with](images/AutoComplete-Filtering-Options/ends-with.png)
 
 
 ### Filtering Words that Ends with the Input Text - CaseSensitive 
@@ -319,26 +820,88 @@ Displays all the matches that ends with the typed characters in control. This st
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" SuggestionMode="EndsWithCaseSensitive"/>                            
-</StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete HeightRequest="40" 
+                                     SuggestionMode="EndsWithCaseSensitive">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                 <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 	
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete.SuggestionMode= SuggestionMode.EndsWithCaseSensitive;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                SuggestionMode  = SuggestionMode.EndsWithCaseSensitive,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine", 
+					"Canada",
+                    "United Arab Emirates",
+                    "France", 
+					"United Kingdom",
+                    "China", 
+					"United States",
+                    "Japan",
+                    "Angola"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/AutoComplete-Filtering-Options/ends-with-case-sensitive.png)
+![ends with case sensitive](images/AutoComplete-Filtering-Options/ends-with-case-sensitive.png)
 

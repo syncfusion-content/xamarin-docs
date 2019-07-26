@@ -237,7 +237,7 @@ The default position of navigation pane is left so let us change the drawer widt
              xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
              x:Class="NaviSample.MainPage">
    <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer"
-                                        DrawerWidth="100">
+                                        DrawerWidth="200">
         <navigationdrawer:SfNavigationDrawer.ContentView>
             <Grid/>
         </navigationdrawer:SfNavigationDrawer.ContentView>
@@ -259,7 +259,7 @@ namespace NaviSample
             InitializeComponent();
             SfNavigationDrawer navigationDrawer = new SfNavigationDrawer()
             {
-                DrawerWidth = 100
+                DrawerWidth = 200
             };
 
             Grid grid = new Grid();
@@ -297,9 +297,9 @@ Create a button and set required image to the Image property of Button. Subscrib
                   BackgroundColor="White">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="auto"/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-                  <StackLayout BackgroundColor="#1aa1d6" 
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackLayout BackgroundColor="#1aa1d6" 
                                Orientation="Horizontal">
                     <Button x:Name="hamburgerButton" 
                             HeightRequest="50" 
@@ -315,8 +315,8 @@ Create a button and set required image to the Image property of Button. Subscrib
                            Text="Home" FontSize="16" 
                            TextColor="White" 
                            BackgroundColor="#1aa1d6"/>
-                 </StackLayout>
-               <Label Grid.Row="1" 
+                </StackLayout>
+                <Label Grid.Row="1" 
                       x:Name="contentLabel" 
                       VerticalOptions="Center" 
                       HorizontalOptions="Center" 
@@ -324,7 +324,7 @@ Create a button and set required image to the Image property of Button. Subscrib
                       FontSize="14" 
                       TextColor="Black"/>
             </Grid>
-        </navigationdrawer:SfNavigationDrawer.ContentView>        
+        </navigationdrawer:SfNavigationDrawer.ContentView>
     </navigationdrawer:SfNavigationDrawer>
 </ContentPage>
 	
@@ -343,11 +343,11 @@ namespace NaviSample
         public MainPage()
         {
             InitializeComponent();
-			hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
         }
         void hamburgerButton_Clicked(object sender, EventArgs e)
         {
-			 navigationDrawer.ToggleDrawer();
+            navigationDrawer.ToggleDrawer();
         }
     }
 }

@@ -78,6 +78,7 @@ namespace NaviSample
         public MainPage()
         {
             InitializeComponent();
+            navigationDrawer.DrawerHeight = 200; 
             navigationDrawer.Transition = Syncfusion.SfNavigationDrawer.XForms.Transition.SlideOnTop;
             hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
 
@@ -156,6 +157,7 @@ namespace NaviSample
         public MainPage()
         {
             InitializeComponent();
+            navigationDrawer.DrawerHeight = 200;
             navigationDrawer.Transition = Syncfusion.SfNavigationDrawer.XForms.Transition.Push;
             hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
 
@@ -234,6 +236,7 @@ namespace NaviSample
         public MainPage()
         {
             InitializeComponent();
+            navigationDrawer.DrawerHeight = 200;
             navigationDrawer.Transition = Syncfusion.SfNavigationDrawer.XForms.Transition.Reveal;
             hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
 

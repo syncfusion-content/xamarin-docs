@@ -75,8 +75,8 @@ Content = navigationDrawer;
              xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
              x:Class="NaviSample.MainPage">
     <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" 
-                                         DrawerWidth="40" 
-                                         Position="Top">       
+                                         DrawerWidth="200" 
+                                         Position="Left">       
         <navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
             <Label Text="This is a very short content used to demonstrate the DrawerHeight property "/>            
         </navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
@@ -100,8 +100,8 @@ namespace NaviSample
             InitializeComponent();
             SfNavigationDrawer navigationDrawer = new SfNavigationDrawer()
             {
-                Position = Position.Top,
-                DrawerWidth = 40,
+                Position = Position.Left,
+                DrawerWidth = 200,
                 DrawerHeaderView = new Label()
                 {
                     Text = "This is a very short content used to demonstrate the DrawerHeight property"

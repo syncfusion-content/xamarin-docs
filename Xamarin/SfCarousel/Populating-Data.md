@@ -23,18 +23,22 @@ The SfCarousel model looks as follows.
 
 {% highlight C# %}
 
-public class CarouselModel
+namespace CarouselSample
 {
-	public CarouselModel(string imageString)
-	{
-		Image = imageString;
-	}
-	private string _image;
-	public string Image
-	{
-		get { return _image; }
-		set { _image = value; }
-	}
+    public class CarouselModel
+    {
+        public CarouselModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private string _image;
+
+        public string Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
 }
 
 {% endhighlight %}
@@ -43,23 +47,29 @@ Populate carousel items collection in View model with the image data. The below 
 
 {% highlight C# %}
 
-public class CarouselViewModel
+using System.Collections.Generic;
+
+namespace CarouselSample
 {
-	public CarouselViewModel()
-	{
-		ImageCollection.Add(new CarouselModel("image1.png"));
-		ImageCollection.Add(new CarouselModel("image2.png"));
-		ImageCollection.Add(new CarouselModel("image3.png"));
-		ImageCollection.Add(new CarouselModel("image4.png"));
-		ImageCollection.Add(new CarouselModel("image5.png"));
-	}
-	private List<CarouselModel> imageCollection = new List<CarouselModel>();
-	public List<CarouselModel> ImageCollection
-	{
-		get { return imageCollection; }
-		set { imageCollection = value; }
-	}
+    public class CarouselViewModel
+    {
+        public CarouselViewModel()
+        {
+            ImageCollection.Add(new CarouselModel("carousel_person1.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person2.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person3.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person4.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person5.png"));
+        }
+        private List<CarouselModel> imageCollection = new List<CarouselModel>();
+        public List<CarouselModel> ImageCollection
+        {
+            get { return imageCollection; }
+            set { imageCollection = value; }
+        }
+    }
 }
+
 {% endhighlight %}
 
 N> Images can also be referred in PCL and from website URL as [instructed](https://developer.xamarin.com/guides/xamarin-forms/working-with/images/)
@@ -69,22 +79,112 @@ N> Images can also be referred in PCL and from website URL as [instructed](https
 
 SfCarousel provides support to add a custom view as carousel items by designing a view inside its ItemTemplate. This template will be applied for all its items and its data will be binded.
 
+{% tabs %}
+
 {% highlight xaml %}
 
-	<ContentPage.Resources>
-    	<ResourceDictionary>
-     	 	<DataTemplate x:Key="itemTemplate">
-       	 		<Image Source="{Binding Image}" 
-					Aspect="AspectFit"/>
-      		</DataTemplate>
-    	</ResourceDictionary>
- 	 </ContentPage.Resources>
-
-	<ContentPage.Content>
-		<carousel:SfCarousel x:Name="carousel"  ItemTemplate="{StaticResource itemTemplate}" DataSource="{Binding ImageCollection}"   HeightRequest="400" WidthRequest="800" />	
-	</ContentPage.Content>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+             xmlns:local="clr-namespace:CarouselSample"
+             x:Class="CarouselSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:CarouselViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="itemTemplate">
+                <Image Source="{Binding Image}" 
+                       Aspect="AspectFit"/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <carousel:SfCarousel x:Name="carousel"  
+                             ItemTemplate="{StaticResource itemTemplate}" 
+                             ItemsSource="{Binding ImageCollection}" 
+                             HeightRequest="400" 
+                             WidthRequest="800" />
+    </ContentPage.Content>
+</ContentPage>
 
 {% endhighlight %}
+
+{% highlight C# %}
+
+using Syncfusion.SfCarousel.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace CarouselSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            CarouselViewModel carouselViewModel = new CarouselViewModel();
+
+            SfCarousel carousel = new SfCarousel()
+            {
+                HeightRequest = 400,
+                WidthRequest = 800
+            };
+
+            var itemTemplate = new DataTemplate(() =>
+            {
+                var grid = new Grid();
+                var nameLabel = new Image();
+                nameLabel.SetBinding(Image.SourceProperty, "Image");
+                grid.Children.Add(nameLabel);
+                return grid;
+            });
+
+            carousel.ItemTemplate = itemTemplate;
+            carousel.ItemsSource = carouselViewModel.ImageCollection;
+
+            this.Content = carousel;
+        }
+    }
+
+    public class CarouselModel
+    {
+        public CarouselModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private string _image;
+
+        public string Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
+
+    public class CarouselViewModel
+    {
+        public CarouselViewModel()
+        {
+            ImageCollection.Add(new CarouselModel("carousel_person1.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person2.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person3.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person4.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person5.png"));
+        }
+
+        private List<CarouselModel> imageCollection = new List<CarouselModel>();
+        public List<CarouselModel> ImageCollection
+        {
+            get { return imageCollection; }
+            set { imageCollection = value; }
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 * Now set the `BindingContext` for the items collection in code behind.
 
@@ -100,49 +200,74 @@ Different set of views can be provided to every items through `ItemContent` prop
 
 {% highlight C# %}
 
-SfCarousel carousel = new SfCarousel();
+using Syncfusion.SfCarousel.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
 
-ObservableCollection<SfCarouselItem> listOf = new ObservableCollection<SfCarouselItem>();
+namespace CarouselSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfCarousel carousel = new SfCarousel()
+            {
+                ItemWidth = 170,
+                ItemHeight = 250
+            };
 
-listOf.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "image1.png",Aspect=Aspect.Fill } });
-listOf.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "image2.png",Aspect=Aspect.Fill } });
-listOf.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "image3.png",Aspect=Aspect.Fill } });
-listOf.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "image4.png",Aspect=Aspect.Fill } });
-listOf.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "image5.png",Aspect=Aspect.Fill } });
+            ObservableCollection<SfCarouselItem> carouselItems = new ObservableCollection<SfCarouselItem>();
 
-carousel.DataSource = listOf;
+            carouselItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "carousel_person1.png", Aspect = Aspect.Fill } });
+            carouselItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "carousel_person2.png", Aspect = Aspect.Fill } });
+            carouselItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "carousel_person3.png", Aspect = Aspect.Fill } });
+            carouselItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "carousel_person4.png", Aspect = Aspect.Fill } });
+            carouselItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "carousel_person5.png", Aspect = Aspect.Fill } });
 
-this.Content = carousel;	
+            carousel.ItemsSource = carouselItems;
 
-	  
+            this.Content = carousel;
+        }
+    }
+}
+
 {% endhighlight %}
 
 and also carousel provides a support to display only the Image data with `Image` property in SfCarouselItem class.
 
 {% highlight C# %}
 
-public partial class CarouselControlPage : ContentPage
+using Syncfusion.SfCarousel.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace CarouselSample
 {
-        public CarouselControlPage()
-        {
-            InitializeComponent();
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfCarousel carousel = new SfCarousel()
+            {
+                ItemWidth = 170,
+                ItemHeight = 250
+            };
 
-            SfCarousel carousel = new SfCarousel() { ItemWidth = 170, ItemHeight = 250 };
+            ObservableCollection<SfCarouselItem> carouselItems = new ObservableCollection<SfCarouselItem>();
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person1.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person2.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person3.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person4.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person5.png" });
 
-            ObservableCollection<SfCarouselItem> collectionOfItems = new ObservableCollection<SfCarouselItem>();
+            carousel.ItemsSource = carouselItems;
 
-            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images1.png" });
-            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images2.png" });
-            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images3.png" });
-            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images4.png" });
-            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images5.png" });
-            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images6.png" });
-
-            carousel.DataSource = collectionOfItems;
-
-            this.Content =carousel;
+            this.Content = carousel;
         }
-}	
+    }
+}
 
 {% endhighlight %}
 

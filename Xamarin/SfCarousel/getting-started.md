@@ -125,7 +125,7 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 
 {% highlight xaml %}
 
-	xmlns:syncfusion="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+	xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
 
 {% endhighlight %}
 
@@ -143,34 +143,30 @@ The SfCarousel control is configured entirely in C# code or by using XAML markup
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
-		xmlns:syncfusion="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
-		x:Class="GettingStarted.CarouselControlPage">
-  <ContentPage.Content>
-     <syncfusion:SfCarousel x:Name="carousel" />	
-	</ContentPage.Content>
-	
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+             xmlns:local="clr-namespace:CarouselSample"
+             x:Class="CarouselSample.MainPage">
+    <carousel:SfCarousel x:Name="carousel" />
 </ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-
 using Syncfusion.SfCarousel.XForms;
 using Xamarin.Forms;
 
-namespace GettingStarted
+namespace CarouselSample
 {
-public partial class CarouselControlPage : ContentPage
-    {
-        public CarouselControlPage()
-        {
-            InitializeComponent();
-
-            SfCarousel carousel = new SfCarousel();
-
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfCarousel carousel = new SfCarousel();
             this.Content = carousel;
         }
     }
@@ -197,29 +193,35 @@ The following code example illustrates to add list of Images in Carousel ,
 
 {% highlight C# %}
 
-public partial class CarouselControlPage : ContentPage
+using Syncfusion.SfCarousel.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace CarouselSample
 {
-        public CarouselControlPage()
-        {
-            InitializeComponent();
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfCarousel carousel = new SfCarousel()
+            {
+                ItemWidth = 170,
+                ItemHeight = 250
+            };
+            ObservableCollection<SfCarouselItem> carouselItems = new ObservableCollection<SfCarouselItem>();
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person1.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person2.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person3.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person4.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person5.png" });
 
-            SfCarousel carousel = new SfCarousel() { ItemWidth = 170, ItemHeight = 250 };
+            carousel.ItemsSource = carouselItems;
 
-            ObservableCollection<SfCarouselItem> collectionOfItems = new ObservableCollection<SfCarouselItem>();
-
-            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images1.png" });
-            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images2.png" });
-            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images3.png" });
-            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images4.png" });
-            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images5.png" });
-            collectionOfItems.Add(new SfCarouselItem() { ImageName = "images6.png" });
-
-            carousel.ItemsSource = collectionOfItems;
-
-            this.Content =carousel;
+            this.Content = carousel;
         }
-}	
-
+    }
+}
 
 {% endhighlight %}
 
@@ -227,25 +229,61 @@ The following code example illustrates to add list of Item in Carousel ,
 
 {% highlight C# %}
 
-public partial class CarouselControlPage : ContentPage
+using Syncfusion.SfCarousel.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace CarouselSample
 {
-        public CarouselControlPage()
-        {
-            InitializeComponent();
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfCarousel carousel = new SfCarousel()
+            {
+                ItemWidth = 170,
+                ItemHeight = 250
+            };
 
-            SfCarousel carousel = new SfCarousel() { ItemWidth = 170, ItemHeight = 250 };
+            ObservableCollection<SfCarouselItem> carouselItems = new ObservableCollection<SfCarouselItem>();
 
-            ObservableCollection<SfCarouselItem> collectionOfItems = new ObservableCollection<SfCarouselItem>();
+            carouselItems.Add(new SfCarouselItem()
+            {
+                ItemContent = new Button()
+                {
+                    Text = "ItemContent1",
+                    TextColor = Color.White,
+                    BackgroundColor = Color.FromHex("#7E6E6B"),
+                    FontSize = 12
+                }
+            });
+            carouselItems.Add(new SfCarouselItem()
+            {
+                ItemContent = new Label()
+                {
+                    Text = "ItemContent2",
+                    BackgroundColor = Color.FromHex("#7E6E6B"),
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    VerticalTextAlignment = TextAlignment.Center,
+                    FontSize = 12
+                }
+            });
+            carouselItems.Add(new SfCarouselItem()
+            {
+                ItemContent = new Image()
+                {
+                    Source = "carousel_person1.png",
+                    Aspect = Aspect.AspectFit
+                }
+            });
 
-			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new Button() { Text = "ItemContent1",TextColor=Color.White, BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
-			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new Label() { Text = "ItemContent2", BackgroundColor = Color.FromHex("#7E6E6B"), FontSize = 12 } });
-			collectionOfItems.Add(new SfCarouselItem() { ItemContent = new Image() { Source = "image1.png", Aspect = Aspect.AspectFit } });
+            carousel.ItemsSource = carouselItems;
 
-			carousel.ItemsSource = collectionOfItems;
-
-            this.Content =carousel;
+            this.Content = carousel;
         }
-}	
+    }
+}
 
 
 {% endhighlight %}
@@ -258,43 +296,53 @@ public partial class CarouselControlPage : ContentPage
 
 {% highlight C# %}
 
-public class CarouselModel
+namespace CarouselSample
 {
-		public CarouselModel(string imageString)
-		{
-			Image = imageString;
-		}
-		private string _image;
+    public class CarouselModel
+    {
+        public CarouselModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private string _image;
 
-		public string Image
-		{
-			get { return _image; }
-			set { _image = value; }
-		}
+        public string Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
 }
+
 {% endhighlight %}
 
 * Populate carousel items collection in View model with the image data. 
 
 {% highlight C# %}
 
-public class CarouselViewModel
+using System.Collections.Generic;
+
+namespace CarouselSample
 {
-	public CarouselViewModel()
-	{
-		ImageCollection.Add(new CarouselModel("image1.png"));
-		ImageCollection.Add(new CarouselModel("image2.png"));
-		ImageCollection.Add(new CarouselModel("image3.png"));
-		ImageCollection.Add(new CarouselModel("image4.png"));
-		ImageCollection.Add(new CarouselModel("image5.png"));
-	}
-	private List<CarouselModel> imageCollection = new List<CarouselModel>();
-	public List<CarouselModel> ImageCollection
-	{
-		get { return imageCollection; }
-		set { imageCollection = value; }
-	}
+    public class CarouselViewModel
+    {
+        public CarouselViewModel()
+        {
+            ImageCollection.Add(new CarouselModel("carousel_person1.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person2.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person3.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person4.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person5.png"));
+        }
+        private List<CarouselModel> imageCollection = new List<CarouselModel>();
+        public List<CarouselModel> ImageCollection
+        {
+            get { return imageCollection; }
+            set { imageCollection = value; }
+        }
+    }
 }
+
 {% endhighlight %}
 
 The following code illustrates the way to use `ItemTemplate` in both XAML as well as C#
@@ -303,130 +351,170 @@ The following code illustrates the way to use `ItemTemplate` in both XAML as wel
 
 {% highlight xaml %}
 
-	<ContentPage.Resources>
-    	<ResourceDictionary>
-     	 	<DataTemplate x:Key="itemTemplate">
-       	 		<Image Source="{Binding Image}" Aspect="AspectFit"/>
-      		</DataTemplate>
-    	</ResourceDictionary>
- 	 </ContentPage.Resources>
-
-	<ContentPage.Content>
-		<syncfusion:SfCarousel x:Name="carousel"  ItemTemplate="{StaticResource itemTemplate}" ItemsSource="{Binding ImageCollection}"  HeightRequest="400" WidthRequest="800" />	
-	</ContentPage.Content>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+             xmlns:local="clr-namespace:CarouselSample"
+             x:Class="CarouselSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:CarouselViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="itemTemplate">
+                <Image Source="{Binding Image}" 
+                       Aspect="AspectFit"/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <carousel:SfCarousel x:Name="carousel"  
+                             ItemTemplate="{StaticResource itemTemplate}" 
+                             ItemsSource="{Binding ImageCollection}" 
+                             HeightRequest="400" 
+                             WidthRequest="800" />
+    </ContentPage.Content>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-public partial class CarouselControlPage : ContentPage
-    {
-        public CarouselControlPage()
-        {
-            InitializeComponent();
+using Syncfusion.SfCarousel.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
 
-            SfCarousel carousel = new SfCarousel() {HeightRequest=400,WidthRequest=800};
+namespace CarouselSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            CarouselViewModel carouselViewModel = new CarouselViewModel();
 
-             var ImageCollection = new List<CarouselModel> {
-	  			new CarouselModel ("image1.png"),
-				new CarouselModel ("image2.png"),
-				new CarouselModel ("image3.png"),
-				new CarouselModel ("image4.png"),
-				new CarouselModel ("image5.png")
-			};
-			var itemTemplate = new DataTemplate(() =>
-			{
-				var grid = new Grid();
-				var nameLabel = new Image();
-				nameLabel.SetBinding(Image.SourceProperty, "Image");
-				grid.Children.Add(nameLabel);
-				return grid;
-			});
+            SfCarousel carousel = new SfCarousel()
+            {
+                HeightRequest = 400,
+                WidthRequest = 800
+            };
 
-			carousel.ItemTemplate = itemTemplate;
-			carousel.ItemsSource = ImageCollection;
+            var itemTemplate = new DataTemplate(() =>
+            {
+                var grid = new Grid();
+                var nameLabel = new Image();
+                nameLabel.SetBinding(Image.SourceProperty, "Image");
+                grid.Children.Add(nameLabel);
+                return grid;
+            });
+
+            carousel.ItemTemplate = itemTemplate;
+            carousel.ItemsSource = carouselViewModel.ImageCollection;
 
             this.Content = carousel;
         }
     }
 
+    public class CarouselModel
+    {
+        public CarouselModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private string _image;
+
+        public string Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
+
+    public class CarouselViewModel
+    {
+        public CarouselViewModel()
+        {
+            ImageCollection.Add(new CarouselModel("carousel_person1.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person2.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person3.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person4.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person5.png"));
+        }
+
+        private List<CarouselModel> imageCollection = new List<CarouselModel>();
+        public List<CarouselModel> ImageCollection
+        {
+            get { return imageCollection; }
+            set { imageCollection = value; }
+        }
+    }
+}
+
 {% endhighlight %}
-
-
 {% endtabs %}
-
-* Finally set the `BindingContext` for the items collection in code behind.
-
-{% highlight C# %}
-
-carousel.BindingContext = new CarouselViewModel();
-
-{% endhighlight %}
 
 I> Carousel's Images are placed within the application folder for Android, iOS and UWP with build action Android Resource, Bundled Resource and Content respectively. 
 
 N> In addition, carousel provides a support to load the Images from `URL` and `SD Card` location.
 
-## Set Gap between Items
-
-SfCarousel provides option to set the distance between the unselected items in the panel. This can be done by using the `Offset` property in SfCarousel control. 
-
-The items can be populated as described [above](#add-carousel-items)
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:SfCarousel x:Name="carousel" Offset="20"/>
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfCarousel carousel = new SfCarousel();	
-carousel.Offset=20;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-## Tilt Non Selected Items
-
-Items in the SfCarousel control can be rotated in user defined angle. `RotationAngle` property is used to decide the angle in which items should be rotated.
-
-The items can be populated as described [above](#add-carousel-items)
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<syncfusion:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" />
-	
-{% endhighlight %}
-
-{% highlight C# %}
-
-SfCarousel carousel = new SfCarousel();
-carousel.Offset=20;
-carousel.RotationAngle = 45;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-
-## Setting the height and width of carousel's Item
+## Setting the height and width of the carousel item
 
 `ItemHeight` and `ItemWidth` properties are used to change the height and width of carouselItem in carousel panel.
 
-{% highlight C# %}
+{% tabs %}
 
-SfCarousel sfCarousel=new SfCarousel();
-sfCarousel.ItemWidth=150;
-sfCarousel.ItemHeight=170;
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+             xmlns:local="clr-namespace:CarouselSample"
+             x:Class="CarouselSample.MainPage">
+    <carousel:SfCarousel x:Name="carousel"
+                         ItemHeight="170"
+                         ItemWidth="270"/>
+</ContentPage>
 
 {% endhighlight %}
+
+{% highlight C# %}
+
+using Syncfusion.SfCarousel.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace CarouselSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfCarousel carousel = new SfCarousel()
+            {
+                ItemWidth = 170,
+                ItemHeight = 250
+            };
+
+            ObservableCollection<SfCarouselItem> carouselItems = new ObservableCollection<SfCarouselItem>();
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person1.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person2.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person3.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person4.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person5.png" });
+
+            carousel.ItemsSource = carouselItems;
+
+            this.Content = carousel;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Set Desire Item to be Selected
 
@@ -438,16 +526,53 @@ The items can be populated as described [above](#add-carousel-items)
 
 {% highlight xaml %}
 
-<syncfusion:SfCarousel x:Name="carousel" Offset="20" RotationAngle="45" SelectedIndex="2" />
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+             xmlns:local="clr-namespace:CarouselSample"
+             x:Class="CarouselSample.MainPage">
+    <carousel:SfCarousel x:Name="carousel"
+                         ItemHeight="170"
+                         ItemWidth="270"
+                         SelectedIndex="2"/>
+</ContentPage>
 	
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfCarousel carousel = new SfCarousel();
-carousel.Offset=20;
-carousel.RotationAngle = 45;
-carousel.SelectedIndex=2;
+using Syncfusion.SfCarousel.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace CarouselSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfCarousel carousel = new SfCarousel()
+            {
+                ItemWidth = 170,
+                ItemHeight = 250,
+                SelectedIndex = 2
+            };
+
+            ObservableCollection<SfCarouselItem> carouselItems = new ObservableCollection<SfCarouselItem>();
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person1.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person2.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person3.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person4.png" });
+            carouselItems.Add(new SfCarouselItem() { ImageName = "carousel_person5.png" });
+
+            carousel.ItemsSource = carouselItems;
+
+            this.Content = carousel;
+        }
+    }
+}
 
 {% endhighlight %}
 

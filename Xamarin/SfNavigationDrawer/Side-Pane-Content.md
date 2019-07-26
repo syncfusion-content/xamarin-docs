@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various features of Syncfusion NavigationDrawer control for Xamarin.Forms
+title: Various features of Syncfusion NavigationDrawer control
 description: Learn how to set header view in NavigationDrawer.
 platform: Xamarin
 control: NavigationDrawer
@@ -28,33 +28,56 @@ As the name suggests it is displayed at the top of drawer. `DrawerHeaderView` pr
 
 {% highlight xaml %}
 
-    <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer">
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer">
         <navigationdrawer:SfNavigationDrawer.ContentView>
             <StackLayout>
-                <Grid BackgroundColor="#1aa1d6" HeightRequest="50" VerticalOptions="Start">
-                    <Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
+                <Grid BackgroundColor="#1aa1d6" 
+                      HeightRequest="50" 
+                      VerticalOptions="Start">
+                    <Button x:Name="hamburgerButton" 
+                            HeightRequest="50" 
+                            WidthRequest="50" 
+                            HorizontalOptions="Start" 
+                            FontSize="20" 
+                            BackgroundColor="#1aa1d6" 
+                            Clicked="hamburgerButton_Clicked"/>
                 </Grid>
             </StackLayout>
         </navigationdrawer:SfNavigationDrawer.ContentView>
         <navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-            <Grid BackgroundColor="#1aa1d6" >
-               <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                <Label Text="Header View"/>
-               </StackLayout>
-            </Grid> 
+            <Grid BackgroundColor="#1aa1d6">
+               <StackLayout VerticalOptions="Center" 
+                            HorizontalOptions="Center">
+                <Label Text="Header View"/>
+               </StackLayout>
+            </Grid> 
         </navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
     </navigationdrawer:SfNavigationDrawer>
+</ContentPage>
 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-public MainPage()
+using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
 
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
         {
             InitializeComponent();
-             navigationDrawer.DrawerWidth = 200;
+            navigationDrawer.DrawerWidth = 200;
             hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
         }
 
@@ -62,13 +85,14 @@ public MainPage()
         {
             navigationDrawer.ToggleDrawer();
         }
-
+    }
+}
   
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Images/Header.png)
+![Header](Images/Header.png)
 
 ## Header Height
 
@@ -80,33 +104,56 @@ N> DrawerHeaderView will be disabled by setting DrawerHeaderHeight to zero
 
 {% highlight xaml %}
     
-    <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" DrawerHeaderHeight="50">
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+ <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" 
+                                      DrawerHeaderHeight="50">
         <navigationdrawer:SfNavigationDrawer.ContentView>
             <StackLayout>
-                <Grid BackgroundColor="#1aa1d6" HeightRequest="50" VerticalOptions="Start">
-                    <Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
+                <Grid BackgroundColor="#1aa1d6" 
+                      HeightRequest="50" 
+                      VerticalOptions="Start">
+                    <Button x:Name="hamburgerButton" 
+                            HeightRequest="50" 
+                            WidthRequest="50" 
+                            HorizontalOptions="Start" 
+                            FontSize="20" 
+                            BackgroundColor="#1aa1d6" 
+                            Clicked="hamburgerButton_Clicked"/>
                 </Grid>
             </StackLayout>
         </navigationdrawer:SfNavigationDrawer.ContentView>
         <navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-            <Grid BackgroundColor="#1aa1d6" >
-                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                <Label Text="Header View"/>
-                        </StackLayout>
-            </Grid> 
+            <Grid BackgroundColor="#1aa1d6" >
+                    <StackLayout VerticalOptions="Center" 
+                                 HorizontalOptions="Center">
+                <Label Text="Header View"/>
+                       </StackLayout>
+            </Grid> 
         </navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
     </navigationdrawer:SfNavigationDrawer>
-
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-public MainPage()
+using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
 
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
         {
             InitializeComponent();
-            navigationDrawer.DrawerWidth = 200;
+            navigationDrawer.DrawerHeaderHeight = 50;
             hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
         }
 
@@ -114,13 +161,14 @@ public MainPage()
         {
             navigationDrawer.ToggleDrawer();
         }
-
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Images/HeaderHeight.png)
+![Header height](Images/HeaderHeight.png)
 
 ## Footer Content
 
@@ -130,33 +178,55 @@ As the name suggests it is displayed at the bottom of drawer. `DrawerFooterView`
 
 {% highlight xaml %}
 
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
     <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer">
         <navigationdrawer:SfNavigationDrawer.ContentView>
             <StackLayout>
-                <Grid BackgroundColor="#1aa1d6" HeightRequest="50" VerticalOptions="Start">
-                    <Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
+                <Grid BackgroundColor="#1aa1d6" 
+                      HeightRequest="50" 
+                      VerticalOptions="Start">
+                    <Button x:Name="hamburgerButton" 
+                            HeightRequest="50" 
+                            WidthRequest="50" 
+                            HorizontalOptions="Start" 
+                            FontSize="20" 
+                            BackgroundColor="#1aa1d6" 
+                            Clicked="hamburgerButton_Clicked"/>
                 </Grid>
             </StackLayout>
         </navigationdrawer:SfNavigationDrawer.ContentView>
         <navigationdrawer:SfNavigationDrawer.DrawerFooterView>
-           <Grid BackgroundColor="#1aa1d6" >
-            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                <Label Text="Footer View"/>
-            </StackLayout>
-           </Grid> 
+           <Grid BackgroundColor="#1aa1d6" >
+            <StackLayout VerticalOptions="Center" 
+                         HorizontalOptions="Center">
+                <Label Text="Footer View"/>
+            </StackLayout>
+           </Grid> 
         </navigationdrawer:SfNavigationDrawer.DrawerFooterView>
     </navigationdrawer:SfNavigationDrawer>
-
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-public MainPage()
+using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
 
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
         {
             InitializeComponent();
-            navigationDrawer.DrawerWidth = 200;
+            navigationDrawer.DrawerFooterHeight = 50;
             hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
         }
 
@@ -164,13 +234,14 @@ public MainPage()
         {
             navigationDrawer.ToggleDrawer();
         }
-
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Images/Footer.png)
+![Footer](Images/Footer.png)
 
 ## Footer Height
 
@@ -182,33 +253,56 @@ N> DrawerFooterView will be disabled by setting DrawerFooterHeight to zero
 
 {% highlight xaml %} 
 
-   <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" DrawerFooterHeight="50">
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" 
+                                     DrawerFooterHeight="50">
         <navigationdrawer:SfNavigationDrawer.ContentView>
             <StackLayout>
-                <Grid BackgroundColor="#1aa1d6" HeightRequest="50" VerticalOptions="Start">
-                    <Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
+                <Grid BackgroundColor="#1aa1d6" 
+                      HeightRequest="50" 
+                      VerticalOptions="Start">
+                    <Button x:Name="hamburgerButton" 
+                            HeightRequest="50" 
+                            WidthRequest="50" 
+                            HorizontalOptions="Start" 
+                            FontSize="20" 
+                            BackgroundColor="#1aa1d6" 
+                            Clicked="hamburgerButton_Clicked"/>
                 </Grid>
             </StackLayout>
         </navigationdrawer:SfNavigationDrawer.ContentView>
         <navigationdrawer:SfNavigationDrawer.DrawerFooterView>
-            <Grid BackgroundColor="#1aa1d6" >
-            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                <Label Text="Footer View"/>
-            </StackLayout>
-             </Grid> 
+            <Grid BackgroundColor="#1aa1d6" >
+            <StackLayout VerticalOptions="Center" 
+                         HorizontalOptions="Center">
+                <Label Text="Footer View"/>
+            </StackLayout>
+             </Grid> 
         </navigationdrawer:SfNavigationDrawer.DrawerFooterView>
     </navigationdrawer:SfNavigationDrawer>
-
+</ContentPage>
 	
 {% endhighlight %}
 
 {% highlight c# %}
         
-public MainPage()
+using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
 
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
         {
             InitializeComponent();
-            navigationDrawer.DrawerWidth = 200;
+            navigationDrawer.DrawerFooterHeight = 50;
             hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
         }
 
@@ -216,13 +310,14 @@ public MainPage()
         {
             navigationDrawer.ToggleDrawer();
         }
-
+    }
+}
   
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Images/FooterHeight.png)
+![Footer hight](Images/FooterHeight.png)
 
 ## Main Content
 
@@ -232,31 +327,53 @@ Drawer main content is displayed in between header and footer content. It can be
 
 {% highlight xaml %} 
 
-    <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer">
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+ <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer">
         <navigationdrawer:SfNavigationDrawer.ContentView>
             <StackLayout>
-                <Grid BackgroundColor="#1aa1d6" HeightRequest="50" VerticalOptions="Start">
-                    <Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
+                <Grid BackgroundColor="#1aa1d6" 
+                      HeightRequest="50" 
+                      VerticalOptions="Start">
+                    <Button x:Name="hamburgerButton" 
+                            HeightRequest="50" 
+                            WidthRequest="50" 
+                            HorizontalOptions="Start" 
+                            FontSize="20" 
+                            BackgroundColor="#1aa1d6" 
+                            Clicked="hamburgerButton_Clicked"/>
                 </Grid>
             </StackLayout>
         </navigationdrawer:SfNavigationDrawer.ContentView>
         <navigationdrawer:SfNavigationDrawer.DrawerContentView>
             <Grid BackgroundColor="#1aa1d6">
-                <Label Text="Content View" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Label Text="Content View" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"/>
             </Grid>
         </navigationdrawer:SfNavigationDrawer.DrawerContentView>
     </navigationdrawer:SfNavigationDrawer>
-
+</ContentPage>
 	
 {% endhighlight %}
 
 {% highlight c# %}
         
-public MainPage()
+using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
 
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
         {
             InitializeComponent();
-            navigationDrawer.DrawerWidth = 200;
             hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
         }
 
@@ -264,10 +381,11 @@ public MainPage()
         {
             navigationDrawer.ToggleDrawer();
         }
-
+    }
+}
   
 {% endhighlight %}
 
 {% endtabs %}
 
-![](Images/Content.png)
+![content](Images/Content.png)

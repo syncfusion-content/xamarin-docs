@@ -247,3 +247,7 @@ private void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs
     }
 } 
 {% endhighlight %}
+
+## Limitaions
+
+While setting `SfDataGrid.ScrollingMode` as `ScrollingMode.Line`, `SfDataGrid.QueryRowHeight` event will not be fired. By default scrolling mode for `SfDataGrid` is `ScrollingMode.Pixel`.

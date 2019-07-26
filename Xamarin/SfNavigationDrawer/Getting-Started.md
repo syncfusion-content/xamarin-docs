@@ -180,15 +180,46 @@ Import the SfNavigationDrawer namespace in respective Page as shown below:
 
 Then initialize an empty navigation drawer as shown below,
 
+{% tabs %}	
 {% highlight xaml %}
 
-	<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer">
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+   <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer">
         <navigationdrawer:SfNavigationDrawer.ContentView>
             <Grid/>
         </navigationdrawer:SfNavigationDrawer.ContentView>
-    </navigationdrawer:SfNavigationDrawer> 
+    </navigationdrawer:SfNavigationDrawer>
+</ContentPage>
 	
 {% endhighlight %}
+{% highlight c# %} 
+
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
+
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+            Grid grid = new Grid();
+            navigationDrawer.ContentView = grid;
+            this.Content = navigationDrawer;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
 
 N> It is mandatory to set ContentView for SfNavigationDrawer on initializing.
 
@@ -196,11 +227,52 @@ N> It is mandatory to set ContentView for SfNavigationDrawer on initializing.
 
 The default position of navigation pane is left so let us change the drawer width to 200.
 
+{% tabs %}	
 {% highlight xaml %}
 
-		<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" DrawerWidth ="200"/>
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+   <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer"
+                                        DrawerWidth="200">
+        <navigationdrawer:SfNavigationDrawer.ContentView>
+            <Grid/>
+        </navigationdrawer:SfNavigationDrawer.ContentView>
+    </navigationdrawer:SfNavigationDrawer>
+</ContentPage>
 	
 {% endhighlight %}
+{% highlight c# %} 
+
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
+
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfNavigationDrawer navigationDrawer = new SfNavigationDrawer()
+            {
+                DrawerWidth = 200
+            };
+
+            Grid grid = new Grid();
+            navigationDrawer.ContentView = grid;
+            this.Content = navigationDrawer;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 N> For changing the side of navigation pane use Position property. Use DrawerHeight property to change the drawer height in Top and Bottom positions.
 
@@ -212,44 +284,73 @@ Create a button and set required image to the Image property of Button. Subscrib
 
 {% highlight xaml %}
 
-	<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" DrawerWidth ="200">
-		<navigationdrawer:SfNavigationDrawer.ContentView>
-			<Grid x:Name="mainContentView" BackgroundColor="White">
-				<Grid.RowDefinitions>
-    				<RowDefinition Height="auto"/>
-						<RowDefinition/>
-				    </Grid.RowDefinitions>
-				  <StackLayout BackgroundColor="#1aa1d6" Orientation="Horizontal">
-					<Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
-					<Label x:Name="headerLabel" HeightRequest="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Home" FontSize="16" TextColor="White" BackgroundColor="#1aa1d6"/>
-				 </StackLayout>
-			   <Label Grid.Row="1" x:Name="contentLabel" VerticalOptions="Center" HorizontalOptions="Center" Text="Content View" FontSize="14" TextColor="Black"/>
-			</Grid>
-		</navigationdrawer:SfNavigationDrawer.ContentView>        
-	</navigationdrawer:SfNavigationDrawer>
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+    <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" 
+                                         DrawerWidth ="200">
+        <navigationdrawer:SfNavigationDrawer.ContentView>
+            <Grid x:Name="mainContentView" 
+                  BackgroundColor="White">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackLayout BackgroundColor="#1aa1d6" 
+                               Orientation="Horizontal">
+                    <Button x:Name="hamburgerButton" 
+                            HeightRequest="50" 
+                            WidthRequest="50" 
+                            HorizontalOptions="Start" 
+                            FontSize="20" 
+                            BackgroundColor="#1aa1d6" 
+                            Clicked="hamburgerButton_Clicked"/>
+                    <Label x:Name="headerLabel" 
+                           HeightRequest="50" 
+                           HorizontalTextAlignment="Center" 
+                           VerticalTextAlignment="Center" 
+                           Text="Home" FontSize="16" 
+                           TextColor="White" 
+                           BackgroundColor="#1aa1d6"/>
+                </StackLayout>
+                <Label Grid.Row="1" 
+                      x:Name="contentLabel" 
+                      VerticalOptions="Center" 
+                      HorizontalOptions="Center" 
+                      Text="Content View" 
+                      FontSize="14" 
+                      TextColor="Black"/>
+            </Grid>
+        </navigationdrawer:SfNavigationDrawer.ContentView>
+    </navigationdrawer:SfNavigationDrawer>
+</ContentPage>
 	
 {% endhighlight %}
 	
 {% highlight c# %} 
 
-public MainPage()
+using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
 
+namespace NaviSample
 {
-
-	InitializeComponent();	
-	navigationDrawer.DrawerWidth = 200;
-    hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
-
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
+        }
+        void hamburgerButton_Clicked(object sender, EventArgs e)
+        {
+            navigationDrawer.ToggleDrawer();
+        }
+    }
 }
-
- void hamburgerButton_Clicked(object sender, EventArgs e)
-
-  {
-
-       navigationDrawer.ToggleDrawer();
-
-  }
-  
     
 {% endhighlight %}
 
@@ -268,55 +369,105 @@ Create a ListView with five items and set it as DrawerContentView.
 
 {% highlight xaml %}
 
-	    <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" DrawerWidth ="200" DrawerHeaderHeight="160">
-		<navigationdrawer:SfNavigationDrawer.ContentView>
-			<Grid x:Name="mainContentView" BackgroundColor="White">
-				<Grid.RowDefinitions>
-				<RowDefinition Height="auto"/>
-				<RowDefinition/>
-				</Grid.RowDefinitions>
-				<StackLayout BackgroundColor="#1aa1d6" Orientation="Horizontal">
-					<Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
-					<Label x:Name="headerLabel" HeightRequest="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Home" FontSize="16" TextColor="White" BackgroundColor="#1aa1d6"/>
-				</StackLayout>
-				<Label Grid.Row="1" x:Name="contentLabel" VerticalOptions="Center" HorizontalOptions="Center" Text="Content View" FontSize="14" TextColor="Black"/>
-			</Grid>
-		</navigationdrawer:SfNavigationDrawer.ContentView>
-		<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-			<Grid BackgroundColor="#1aa1d6">
-				<Grid.RowDefinitions>
-					<RowDefinition Height="120"/>
-					<RowDefinition Height="40"/>
-				</Grid.RowDefinitions>
-				<Image Source="user.png" HeightRequest="110" Margin="0,10,0,0" BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center"/>
-				<Label Text="James Pollock" Grid.Row="1" HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
-			</Grid>
-		</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-		<navigationdrawer:SfNavigationDrawer.DrawerContentView>
-			<ListView x:Name="listView" ItemSelected="listView_ItemSelected">
-				<ListView.ItemTemplate>
-					<DataTemplate>
-						<ViewCell>
-							<StackLayout HeightRequest="40">
-								<Label Margin="10,7,0,0" Text="{Binding}" FontSize="16"/>
-							</StackLayout>
-						</ViewCell>
-					</DataTemplate>
-				</ListView.ItemTemplate>
-			</ListView>
-		</navigationdrawer:SfNavigationDrawer.DrawerContentView>
-	</navigationdrawer:SfNavigationDrawer>
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+    <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" 
+                                         DrawerWidth ="200" 
+                                         DrawerHeaderHeight="160">
+        <navigationdrawer:SfNavigationDrawer.ContentView>
+            <Grid x:Name="mainContentView" 
+                  BackgroundColor="White">
+                <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+                </Grid.RowDefinitions>
+                <StackLayout BackgroundColor="#1aa1d6" 
+                             Orientation="Horizontal">
+                    <Button x:Name="hamburgerButton" 
+                            HeightRequest="50" 
+                            WidthRequest="50" 
+                            HorizontalOptions="Start" 
+                            FontSize="20" 
+                            BackgroundColor="#1aa1d6" 
+                            Clicked="hamburgerButton_Clicked"/>
+                    <Label x:Name="headerLabel" 
+                           HeightRequest="50" 
+                           HorizontalTextAlignment="Center" 
+                           VerticalTextAlignment="Center" 
+                           Text="Home" 
+                           FontSize="16" 
+                           TextColor="White" 
+                           BackgroundColor="#1aa1d6"/>
+                </StackLayout>
+                <Label Grid.Row="1" 
+                       x:Name="contentLabel" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center" 
+                       Text="Content View" 
+                       FontSize="14" 
+                       TextColor="Black"/>
+            </Grid>
+        </navigationdrawer:SfNavigationDrawer.ContentView>
+        <navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+            <Grid BackgroundColor="#1aa1d6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="40"/>
+                </Grid.RowDefinitions>
+                <Image Source="user.png" 
+                       HeightRequest="110" 
+                       Margin="0,10,0,0" 
+                       BackgroundColor="#1aa1d6" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"/>
+                <Label Text="James Pollock" 
+                       Grid.Row="1" 
+                       HorizontalTextAlignment="Center" 
+                       HorizontalOptions="Center" 
+                       FontSize="20" 
+                       TextColor="White"/>
+            </Grid>
+        </navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+        <navigationdrawer:SfNavigationDrawer.DrawerContentView>
+            <ListView x:Name="listView" 
+                      ItemSelected="listView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout HeightRequest="40">
+                                <Label Margin="10,7,0,0" 
+                                       Text="{Binding}" 
+                                       FontSize="16"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </navigationdrawer:SfNavigationDrawer.DrawerContentView>
+    </navigationdrawer:SfNavigationDrawer>
+</ContentPage>
 
   	
 {% endhighlight %}
 	
 {% highlight c# %}
 
-public MainPage()
+using System;
+using System.Collections.Generic;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
 
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
         {
             InitializeComponent();
-            navigationDrawer.DrawerWidth = 200;
             hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
             List<string> list = new List<string>();
             list.Add("Home");
@@ -327,18 +478,19 @@ public MainPage()
             list.Add("Draft");
             listView.ItemsSource = list;
         }
-		
+
         void hamburgerButton_Clicked(object sender, EventArgs e)
         {
             navigationDrawer.ToggleDrawer();
         }
 
-    private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             // Your codes here
             navigationDrawer.ToggleDrawer();
         }
-
+    }
+}
 
 {% endhighlight %}
 

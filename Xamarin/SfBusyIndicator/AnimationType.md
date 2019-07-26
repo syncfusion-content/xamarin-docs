@@ -14,13 +14,20 @@ The `AnimationType` property for the SfBusyIndicator allows the user to set one 
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
-	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
-	x:Class="GettingStarted.BusyIndicatorPage">
-<ContentPage.Content>
- <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" Title="Loading..." BackgroundColor="Blue" TextColor="White" />	
-</ContentPage.Content>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             x:Class="GettingStarted.MainPage">
+    <ContentPage.Content>
+        <busyindicator:SfBusyIndicator x:Name="busyindicator" 
+                                       Title="Loading..."
+                                       AnimationType="Ball" 
+                                       ViewBoxHeight="100"
+                                       ViewBoxWidth="100"
+                                       TextColor="Blue"/>
+    </ContentPage.Content>
 </ContentPage>
 
 {% endhighlight %}
@@ -32,97 +39,100 @@ using Xamarin.Forms;
 
 namespace GettingStarted
 {
-	public partial class BusyIndicatorPage : ContentPage
-	{
-		public BusyIndicatorPage()
-		{
-			InitializeComponent();
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfBusyIndicator busyIndicator = new SfBusyIndicator()
+            {
+                AnimationType = AnimationTypes.Ball,
+                ViewBoxWidth = 100,
+                ViewBoxHeight = 100,
+                Title = "Loading..."
+                TextColor = Color.Blue
+            };
 
-			SfBusyIndicator busyIndicator = new SfBusyIndicator();
-			busyIndicator.AnimationType = AnimationTypes.Ball;
-			busyIndicator.BackgroundColor = Color.Blue;
-			busyIndicator.TextColor = Color.White;
-			busyIndicator.Title ="Loading…";
-			this.Content = busyIndicator;
-		}
-	}
+            this.Content = busyIndicator;
+        }
+    }
 }
-	
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/ball1.png)
+![ball](images/ball1.png)
 
 Busy Indicator with Ball type animation 
 {:.caption}
 
-![](images/HorizontalPulsingBox.png) 
+![HorizontalPulsingBox](images/HorizontalPulsingBox.png) 
 
 Busy Indicator with HorizontalPulsingBox type animation 
 {:.caption}
 
-![](images/rectangle.png) 
+![rectangle](images/rectangle.png) 
 
 Busy Indicator with Rectangle type animation 
 {:.caption}
  
-![](images/battery.png) 
+![battery](images/battery.png) 
 
 Busy Indicator with Battery type animation 
 {:.caption}
  
-![](images/globe.png) 
+![globe](images/globe.png) 
 
 Busy Indicator with Globe type animation 
 {:.caption}
  
-![](images/singlecircle.png) 
+![singlecircle](images/singlecircle.png) 
 
 Busy Indicator with SingleCircle type animation 
 {:.caption}
 
-![](images/SlicedCircle.png) 
+![SlicedCircle](images/SlicedCircle.png) 
 
 Busy Indicator with SlicedCircle type animation 
 {:.caption}
  
-![](images/doublecircle.png) 
+![doublecircle](images/doublecircle.png) 
 
 Busy Indicator with DoubleCircle type animation 
 {:.caption}
  
-![](images/ecg.png) 
+![ECG](images/ecg.png) 
 
 Busy Indicator with ECG type animation 
 {:.caption}
  
-![](images/print.png) 
+![Print](images/print.png) 
 
 Busy Indicator with Print type animation 
 {:.caption}
 
-![](images/box.png) 
+![Box](images/box.png) 
 
 Busy Indicator with Box type animation 
 {:.caption}
 
-![](images/gear.png) 
+![Gear](images/gear.png) 
 
 Busy Indicator with Gear type animation 
 {:.caption}
 
-![](images/timer.png) 
+![Timer](images/timer.png) 
 
 Busy Indicator with MovieTimer type animation 
 {:.caption}
 
-![](images/zoomingtarget.png) 
+![Zooming target](images/zoomingtarget.png) 
 
 Busy Indicator with ZoomingTarget type animation 
 {:.caption}
 
-![](images/rollingball.png) 
+![Rolling ball](images/rollingball.png) 
 
 Busy Indicator with RollingBall type animation 
 {:.caption}

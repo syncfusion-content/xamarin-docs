@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Duration support in Syncfusion SfBusyIndicator control for Xamarin.Forms
+title: Duration in Syncfusion SfBusyIndicator control for Xamarin.Forms
 description: Learn how to customize the duration of the control viewbox
 platform: Xamarin
 control: BusyIndicator
@@ -14,43 +14,55 @@ The `Duration` property of SfBusyIndicator indicates timeline for completing one
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
-	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
-	x:Class="GettingStarted.BusyIndicatorPage">
-<ContentPage.Content>
- <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery"  ViewBoxWidth = "100" ViewBoxHeight="100" Duration="0.5" />	
-</ContentPage.Content>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             x:Class="GettingStarted.MainPage">
+    <ContentPage.Content>
+        <busyindicator:SfBusyIndicator x:Name="busyindicator" 
+                                       AnimationType="Battery" 
+                                       ViewBoxHeight="100"
+                                       ViewBoxWidth="100"
+                                       Duration="0.5"
+                                       TextColor="Maroon"/>
+    </ContentPage.Content>
 </ContentPage>
-	
+
 {% endhighlight %}
 
 {% highlight c# %}
 
 using Syncfusion.SfBusyIndicator.XForms;
 using Xamarin.Forms;
+
 namespace GettingStarted
 {
-	public partial class BusyIndicatorPage : ContentPage
-	{
-		public BusyIndicatorPage()
-		{
-			InitializeComponent();
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfBusyIndicator busyIndicator = new SfBusyIndicator()
+            {
+                AnimationType = AnimationTypes.Battery,
+                ViewBoxWidth = 100,
+                ViewBoxHeight = 100,
+                Duration = 0.5f,
+                TextColor = Color.Maroon
+            };
 
-			SfBusyIndicator busyIndicator = new SfBusyIndicator();
-			busyIndicator.ViewBoxWidth = 100;
-			busyIndicator.ViewBoxHeight = 100;
-			busyIndicator.Duration = 0.5;
-			this.Content = busyIndicator;
-		}
-	}
+            this.Content = busyIndicator;
+        }
+    }
 }
     
 {% endhighlight %}
 
 {% endtabs %}
 
-![](hostingsfbusyindicator_images/Maximum.gif)
+![Maximum Duration](hostingsfbusyindicator_images/Maximum.gif)
 
 
 

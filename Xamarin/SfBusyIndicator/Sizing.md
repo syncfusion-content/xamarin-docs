@@ -14,13 +14,19 @@ Drawing size can be customized in SfBusyIndicator. `ViewBoxHeight` and `ViewBoxW
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
-	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
-	x:Class="GettingStarted.BusyIndicatorPage">
-<ContentPage.Content>
- <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="SlicedCircle"  ViewBoxWidth = "20" ViewBoxHeight="20" TextColor="Maroon" />	
-</ContentPage.Content>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             x:Class="GettingStarted.MainPage">
+    <ContentPage.Content>
+        <busyindicator:SfBusyIndicator x:Name="busyindicator" 
+                                       AnimationType="SlicedCircle" 
+                                       ViewBoxWidth = "20" 
+                                       ViewBoxHeight="20" 
+                                       TextColor="Maroon"/>
+    </ContentPage.Content>
 </ContentPage>
 	
 {% endhighlight %}
@@ -29,29 +35,32 @@ Drawing size can be customized in SfBusyIndicator. `ViewBoxHeight` and `ViewBoxW
 
 using Syncfusion.SfBusyIndicator.XForms;
 using Xamarin.Forms;
+
 namespace GettingStarted
 {
-	public partial class BusyIndicatorPage : ContentPage
-	{
-		public BusyIndicatorPage()
-		{
-			InitializeComponent();
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfBusyIndicator busyIndicator = new SfBusyIndicator()
+            {
+                AnimationType = AnimationTypes.SlicedCircle,
+                ViewBoxHeight = 20,
+                ViewBoxWidth = 20,
+                TextColor = Color.Maroon
+            };
 
-			SfBusyIndicator busyIndicator = new SfBusyIndicator();
-			busyIndicator.AnimationType = AnimationTypes.SlicedCircle;
-			busyIndicator.ViewBoxWidth = 20;
-			busyIndicator.ViewBoxHeight = 20;
-			busyIndicator.TextColor = Color.Maroon;
-			this.Content = busyIndicator;
-		}
-	}
+            this.Content = busyIndicator;
+        }
+    }
 }
-    
+ 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/heightand width.png)  
+![Height and width](images/heightand width.png)  
 
 
 

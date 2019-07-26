@@ -458,7 +458,7 @@ I> Carousel's Images are placed within the application folder for Android, iOS a
 
 N> In addition, carousel provides a support to load the Images from `URL` and `SD Card` location.
 
-## Setting the height and width of carousel's Item
+## Setting the height and width of the carousel item
 
 `ItemHeight` and `ItemWidth` properties are used to change the height and width of carouselItem in carousel panel.
 

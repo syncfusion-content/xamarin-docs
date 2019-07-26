@@ -30,7 +30,7 @@ N> If the angle value is positive, then the rotation is in the clockwise directi
     <carousel:SfCarousel x:Name="carousel"
                          ItemHeight="170"
                          ItemWidth="270"
-                         RotationAngle="45"/>
+                         RotationAngle="90"/>
 </ContentPage>
 	
 {% endhighlight %}
@@ -52,7 +52,7 @@ namespace CarouselSample
             {
                 ItemWidth = 170,
                 ItemHeight = 250,
-                RotationAngle = 45
+                RotationAngle = 90
             };
 
             ObservableCollection<SfCarouselItem> carouselItems = new ObservableCollection<SfCarouselItem>();
@@ -95,7 +95,7 @@ N> The default value is 20.
     <carousel:SfCarousel x:Name="carousel"
                          ItemHeight="170"
                          ItemWidth="270"
-                         Offset="20"/>
+                         Offset="30"/>
 </ContentPage>
 
 	
@@ -118,7 +118,7 @@ namespace CarouselSample
             {
                 ItemWidth = 170,
                 ItemHeight = 250,
-                Offset = 20
+                Offset = 30
             };
 
             ObservableCollection<SfCarouselItem> carouselItems = new ObservableCollection<SfCarouselItem>();
@@ -347,7 +347,7 @@ Spacing of all the items in Linear mode can be determined by using `ItemSpacing`
 			ItemsSource="{Binding ImageCollection}"
 			ItemHeight="200"
 			ItemWidth="200"
-			ItemSpacing="5"
+			ItemSpacing="10"
 			ViewMode="Linear"/>
     </ContentPage.Content>
 </ContentPage>
@@ -372,7 +372,7 @@ namespace CarouselSample
             {
                 ItemHeight = 200,
                 ItemWidth = 200,
-                ItemSpacing = 5,
+                ItemSpacing = 10,
                 ViewMode = ViewMode.Linear
             };
 

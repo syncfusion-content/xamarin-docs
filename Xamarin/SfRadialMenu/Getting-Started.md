@@ -150,11 +150,12 @@ using Syncfusion.XForms.SfRadialMenu;
         {
             public MainPage()
             {
-                SfRadialMenu radialMenu = new   SfRadialMenu();
+                SfRadialMenu radialMenu = new SfRadialMenu();
                 this.Content = radialMenu;
             }
         }
     }
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -171,11 +172,20 @@ using Syncfusion.XForms.SfRadialMenu;
              xmlns:local="clr-namespace:RadialSample"
              xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
              x:Class="RadialSample.MainPage">
-    <radialMenu:SfRadialMenu x:Name="radialMenu">
+    <radialMenu:SfRadialMenu x:Name="radialMenu" 
+                             CenterButtonText="Edit"
+                             CenterButtonFontSize="15">
         <radialMenu:SfRadialMenu.Items>
-            <radialMenu:SfRadialMenuItem Text="Cut"/>
-            <radialMenu:SfRadialMenuItem Text="Copy"/>
-            <radialMenu:SfRadialMenuItem Text="Paste"/>
+            <radialMenu:SfRadialMenuItem Text="Cut"
+                                         FontSize="15"/>
+            <radialMenu:SfRadialMenuItem Text="Copy"
+                                         FontSize="15"/>
+            <radialMenu:SfRadialMenuItem Text="Paste"
+                                         FontSize="15"/>
+            <radialMenu:SfRadialMenuItem Text="Crop"
+                                         FontSize="15"/>
+            <radialMenu:SfRadialMenuItem Text="Paint"
+                                         FontSize="15"/>
         </radialMenu:SfRadialMenu.Items>
     </radialMenu:SfRadialMenu>
 </ContentPage>
@@ -195,11 +205,37 @@ namespace RadialSample
         public MainPage()
         {
             InitializeComponent();
-            SfRadialMenu radialMenu = new SfRadialMenu();
+            SfRadialMenu radialMenu = new SfRadialMenu()
+            {
+                CenterButtonText = "Edit",
+                CenterButtonFontSize = 15
+            };
             ObservableCollection<SfRadialMenuItem> itemCollection = new ObservableCollection<SfRadialMenuItem>();
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Cut" });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Copy" });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Paste" });
+            itemCollection.Add(new SfRadialMenuItem()
+            {
+                Text = "Cut",
+                FontSize = 15
+            });
+            itemCollection.Add(new SfRadialMenuItem()
+            {
+                Text = "Copy",
+                FontSize = 15
+            });
+            itemCollection.Add(new SfRadialMenuItem()
+            {
+                Text = "Paste",
+                FontSize = 15
+            });
+            itemCollection.Add(new SfRadialMenuItem()
+            {
+                Text = "Crop",
+                FontSize = 15
+            });
+            itemCollection.Add(new SfRadialMenuItem()
+            {
+                Text = "Paint",
+                FontSize = 15
+            });
             radialMenu.Items = itemCollection;
             this.Content = radialMenu;
         }

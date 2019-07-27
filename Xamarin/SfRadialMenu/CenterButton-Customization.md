@@ -74,8 +74,6 @@ namespace RadialSample
 
 {% endtabs %}
 
-![Image for center button](images/centerButtonIconFont.png)
-
 ## CenterButtonTextColor and CenterButtonBackTextColor
 
 The [`CenterButtonTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonTextColorProperty.html) changes the text color of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html), and the [`CenterButtonBackTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonBackTextColorProperty.html) changes the text color of the center back button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
@@ -891,3 +889,5 @@ namespace RadialSample
 {% endhighlight %}
 
 {% endtabs %}
+
+![Image for center button](images/centerButtonIconFont.png)

@@ -89,17 +89,28 @@ The following code snippet demonstrates how to add the nested items of radial me
              xmlns:local="clr-namespace:RadialSample"
              xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
              x:Class="RadialSample.MainPage">
-    <radialMenu:SfRadialMenu>
+     <radialMenu:SfRadialMenu CenterButtonText="Edit" 
+                             CenterButtonFontSize="12">
         <radialMenu:SfRadialMenu.Items>
-            <radialMenu:SfRadialMenuItem Text="Bold" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Copy" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Undo" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Paste" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Bold" 
+                                         FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Copy" 
+                                         FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Undo" 
+                                         FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Paste" 
+                                         FontSize="12"/>
             <radialMenu:SfRadialMenuItem Text="Color" FontSize="12">
                 <radialMenu:SfRadialMenuItem.Items>
-                    <radialMenu:SfRadialMenuItem Text="Font" FontSize="12" ItemWidth="50"/>
-                    <radialMenu:SfRadialMenuItem Text="Gradient" FontSize="12" ItemWidth="50"/>
-                    <radialMenu:SfRadialMenuItem Text="Highlight" FontSize="12" ItemWidth="50"/>
+                    <radialMenu:SfRadialMenuItem Text="Font" 
+                                                 FontSize="12" 
+                                                 ItemWidth="50"/>
+                    <radialMenu:SfRadialMenuItem Text="Gradient" 
+                                                 FontSize="12" 
+                                                 ItemWidth="50"/>
+                    <radialMenu:SfRadialMenuItem Text="Highlight" 
+                                                 FontSize="12" 
+                                                 ItemWidth="50"/>
                 </radialMenu:SfRadialMenuItem.Items>
             </radialMenu:SfRadialMenuItem>
         </radialMenu:SfRadialMenu.Items>
@@ -154,7 +165,7 @@ namespace RadialSample
 
 {% endtabs %}
 
-![SfRadialMenu with Items](images/populatingItems.png)
+![SfRadialMenu with Items](images/gettingStarted2.png)
 
 
 ## Through ItemsSource and ItemTemplate

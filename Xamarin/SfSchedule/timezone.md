@@ -22,7 +22,7 @@ We have added the following Time Zone's for the respective countries to cover al
 <tr>
 <th>Time Zone</th>
 <th>Region</th>
-<th>Time</th>
+<th>UTC Offset</th>
 </tr>
 <tr>
 <td>

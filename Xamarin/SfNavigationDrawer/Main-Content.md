@@ -16,7 +16,13 @@ Main content of NavigationDrawer is always visible and it can be set using `Cont
 
 {% highlight xaml %}
 
-	<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" DrawerHeaderHeight="160">
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+    <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" DrawerHeaderHeight="160">
         <navigationdrawer:SfNavigationDrawer.ContentView>
             <Grid x:Name="mainContentView" BackgroundColor="White">
                 <Grid.RowDefinitions>
@@ -54,13 +60,20 @@ Main content of NavigationDrawer is always visible and it can be set using `Cont
             </ListView>
         </navigationdrawer:SfNavigationDrawer.DrawerContentView>
     </navigationdrawer:SfNavigationDrawer>
-
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
- public partial class MainPage : ContentPage
+ using System;
+using System.Collections.Generic;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
+
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
     {
         SfNavigationDrawer navigationDrawer = new SfNavigationDrawer() { DrawerHeaderHeight = 160 };
         Label label1;
@@ -187,54 +200,12 @@ Main content of NavigationDrawer is always visible and it can be set using `Cont
             navigationDrawer.ToggleDrawer();
         }
     }
-
+}
   
 {% endhighlight %}
 
 {% endtabs %}
 
-The code behind code which is common for xaml and c# code are given below
-
-{% highlight c# %}
-
-public MainPage()
-
-        {
-            InitializeComponent();
-            List<string> list = new List<string>();
-            list.Add("Home");
-            list.Add("Profile");
-            list.Add("Inbox");
-            list.Add("Out box");
-            list.Add("Sent");
-            list.Add("Draft");
-            listView.ItemsSource = list;            
-        }
-
-        void hamburgerButton_Clicked(object sender, EventArgs e)
-        {
-            navigationDrawer.ToggleDrawer();
-        }
-
-        private void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            if (e.SelectedItem.ToString() == "Home")
-                contentLabel.Text = "Home";
-            else if (e.SelectedItem.ToString() == "Profile")
-                contentLabel.Text = "Profile";
-            else if (e.SelectedItem.ToString() == "Inbox")
-                contentLabel.Text = "Inbox";
-            else if (e.SelectedItem.ToString() == "Out box")
-                contentLabel.Text = "Out box";
-            else if (e.SelectedItem.ToString() == "Sent")
-                contentLabel.Text = "Sent";
-            else if (e.SelectedItem.ToString() == "Draft")
-                contentLabel.Text = "The folder is empty";
-            navigationDrawer.ToggleDrawer();
-        }
-
-        {% endhighlight %}
-
-        N> It is mandatory to set ContentView for SfNavigationDrawer on initializing.
+N> It is mandatory to set ContentView for SfNavigationDrawer on initializing.
 
 ![contentview](Images/MainContent.png)

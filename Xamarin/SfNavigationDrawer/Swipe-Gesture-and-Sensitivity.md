@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Swipe gesture in Syncfusion's NavigationDrawer control for Xamarin.Forms
+title: Swipe gesture in Syncfusion's NavigationDrawer control.
 description: Learn how to open Drawer panel using swipe gesture.
 platform: Xamarin
 control: NavigationDrawer
@@ -18,13 +18,26 @@ It can be enabled/disabled using `EnableSwipeGesture` property.
 
 {% highlight xaml %}
 
-	<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" EnableSwipeGesture="True">
-		<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-			<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
-				<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
-			</Grid>
-		</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-	</navigationdrawer:SfNavigationDrawer>
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+    <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" 
+                                         EnableSwipeGesture="True">
+        <navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+            <Grid BackgroundColor="#1aa1d6" 
+                  VerticalOptions="Center" 
+                  HorizontalOptions="Center">
+                <Label Text="Header view" 
+                       FontSize="16" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"/>
+            </Grid>
+        </navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+    </navigationdrawer:SfNavigationDrawer>
+</ContentPage>
 
 {% endhighlight %}	
 	
@@ -44,13 +57,27 @@ In smaller screens user may find it difficult to swipe the drawer from the edge 
 
 {% highlight xaml %}
 
-	<navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" EnableSwipeGesture="True" TouchThreshold="70">
-		<navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-			<Grid BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center">
-				<Label Text="Header view" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center"/>
-			</Grid>
-		</navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
-	</navigationdrawer:SfNavigationDrawer>
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+    <navigationdrawer:SfNavigationDrawer x:Name="navigationDrawer" 
+                                         EnableSwipeGesture="True"
+                                         TouchThreshold="70">
+        <navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+            <Grid BackgroundColor="#1aa1d6" 
+                  VerticalOptions="Center" 
+                  HorizontalOptions="Center">
+                <Label Text="Header view" 
+                       FontSize="16" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center"/>
+            </Grid>
+        </navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
+    </navigationdrawer:SfNavigationDrawer>
+</ContentPage>
 
 {% endhighlight %}	
 	

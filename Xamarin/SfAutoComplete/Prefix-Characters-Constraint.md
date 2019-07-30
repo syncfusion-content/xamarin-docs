@@ -14,22 +14,83 @@ Instead of displaying suggestion list on every character entry, matches can be f
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" MinimumPrefixCharacters="3" />                    
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete
+	           x:Name="autoComplete"
+	           HeightRequest="40"
+               MinimumPrefixCharacters="3">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Antigua and Barbuda</x:String>
+                    <x:String>American Samoa</x:String>
+                    <x:String>Afghanistan</x:String>
+                    <x:String>Antarctica</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Anguilla</x:String>
+                    <x:String>Albania</x:String>
+                    <x:String>Algeria</x:String>
+                    <x:String>Andorra</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete.MinimumPrefixCharacters = 3;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = 30
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                MinimumPrefixCharacters = 3,
+                AutoCompleteSource = new List<string>()
+                {
+                    "Antigua and Barbuda",
+                    "American Samoa",
+                    "Afghanistan",
+                    "Antarctica",
+                    "Argentina",
+                    "Anguilla",
+                    "Albania",
+                    "Algeria",
+                    "Andorra",
+                    "Angola"
+                }
+            };
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 

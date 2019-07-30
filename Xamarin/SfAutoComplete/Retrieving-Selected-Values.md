@@ -29,7 +29,16 @@ The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoCo
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
         <autocomplete:SfAutoComplete
 	           x:Name="autoComplete"
 	           HeightRequest="40" 
@@ -51,23 +60,35 @@ The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoCo
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
     </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    StackLayout stackLayout = new StackLayout()
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
             {
                 VerticalOptions = LayoutOptions.Start,
                 HorizontalOptions = LayoutOptions.Start,
                 Padding = 30
-            };    
-            SfAutoComplete autoComplete = new    SfAutoComplete()
+            };
+            SfAutoComplete autoComplete = new SfAutoComplete()
             {
                 HeightRequest = 40,
                 SelectedIndex = 1,
-				MultiSelectMode=MultiSelectMode.None,
-                DataSource = new List<string>()
+                MultiSelectMode = MultiSelectMode.None,
+                AutoCompleteSource = new List<string>()
                 {
                     "Antigua and Barbuda",
                     "American Samoa",
@@ -82,8 +103,11 @@ The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoCo
                 }
             };
 
-    		stackLayout.Children.Add(autoComplete);
-    		this.Content = stackLayout;
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -99,7 +123,16 @@ The following code snippet demonstrates the way to retrieve [`SelectedIndex`](ht
 
 {% highlight xaml %}
 
-    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
         <autocomplete:SfAutoComplete
 	           x:Name="autoComplete"
 	           HeightRequest="40" 
@@ -120,15 +153,24 @@ The following code snippet demonstrates the way to retrieve [`SelectedIndex`](ht
                 </ListCollection:List>
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
-    </StackLayout> 
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
         SfAutoComplete autoComplete;
         public MainPage()
-		{
+        {
             InitializeComponent();
             StackLayout stackLayout = new StackLayout()
             {
@@ -140,8 +182,8 @@ The following code snippet demonstrates the way to retrieve [`SelectedIndex`](ht
             autoComplete = new SfAutoComplete()
             {
                 HeightRequest = 40,
-				MultiSelectMode=MultiSelectMode.None,
-                DataSource = new List<string>()
+                MultiSelectMode = MultiSelectMode.None,
+                AutoCompleteSource = new List<string>()
                 {
                     "Antigua and Barbuda",
                     "American Samoa",
@@ -165,6 +207,8 @@ The following code snippet demonstrates the way to retrieve [`SelectedIndex`](ht
         {
             DisplayAlert("Selection Changed", "SelectedIndex: " + autoComplete.SelectedIndex, "OK");
         }
+    }
+}
 
 {% endhighlight %}
 
@@ -182,7 +226,16 @@ You can get or set the indices of the selected items using the [`SelectedIndices
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
         <autocomplete:SfAutoComplete
 	           x:Name="autoComplete"
 	           HeightRequest="40" 
@@ -204,11 +257,17 @@ You can get or set the indices of the selected items using the [`SelectedIndices
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
     </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
     public partial class MainPage : ContentPage
     {
         private object selectedIndices;
@@ -225,6 +284,7 @@ You can get or set the indices of the selected items using the [`SelectedIndices
             this.BindingContext = this;
         }
     }
+}
 
 {% endhighlight %}
 
@@ -240,7 +300,16 @@ The following code snippet demonstrates the way to retrieve [`SelectedIndices`](
 
 {% highlight xaml %}
 
-    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
         <autocomplete:SfAutoComplete
 	           x:Name="autoComplete"
 	           HeightRequest="40" 
@@ -275,12 +344,19 @@ The following code snippet demonstrates the way to retrieve [`SelectedIndices`](
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-    </StackLayout> 
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
     public partial class MainPage : ContentPage, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
@@ -288,9 +364,9 @@ The following code snippet demonstrates the way to retrieve [`SelectedIndices`](
         protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }  
-   
-    
+        }
+
+
         private object selectedIndices;
         public object SelectedIndices
         {
@@ -299,7 +375,7 @@ The following code snippet demonstrates the way to retrieve [`SelectedIndices`](
             {
                 selectedIndices = value;
                 NotifyPropertyChanged("SelectedIndices");
-                
+
             }
         }
         public MainPage()
@@ -307,7 +383,8 @@ The following code snippet demonstrates the way to retrieve [`SelectedIndices`](
             InitializeComponent();
             this.BindingContext = this;
         }
-	}
+    }
+}
 
 {% endhighlight %}
 
@@ -325,7 +402,16 @@ The following code snippet demonstrates the way to set `SelectedItem`.
 
 {% highlight xaml %}
 
-	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
         <autocomplete:SfAutoComplete
 	           x:Name="autoComplete"
 	           HeightRequest="40" 
@@ -346,11 +432,18 @@ The following code snippet demonstrates the way to set `SelectedItem`.
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
     </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
     public partial class MainPage : ContentPage
     {
         public MainPage()
@@ -367,7 +460,7 @@ The following code snippet demonstrates the way to set `SelectedItem`.
                 HeightRequest = 40,
                 SelectedItem = "Angola",
                 MultiSelectMode = MultiSelectMode.None,
-                DataSource = new List<string>()
+                AutoCompleteSource = new List<string>()
                 {
                     "Antigua and Barbuda",
                     "American Samoa",
@@ -386,6 +479,7 @@ The following code snippet demonstrates the way to set `SelectedItem`.
             this.Content = stackLayout;
         }
     }
+}
 
 {% endhighlight %}
 
@@ -401,7 +495,16 @@ The following code snippet demonstrates the way to retrieve [`SelectedItem`](htt
 
 {% highlight xaml %}
 
-    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
         <autocomplete:SfAutoComplete
 	           x:Name="autoComplete"
 	           HeightRequest="40" 
@@ -422,14 +525,21 @@ The following code snippet demonstrates the way to retrieve [`SelectedItem`](htt
                 </ListCollection:List>
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
-    </StackLayout> 
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
     public partial class MainPage : ContentPage
-     {
+    {
         SfAutoComplete autoComplete;
         public MainPage()
         {
@@ -445,7 +555,7 @@ The following code snippet demonstrates the way to retrieve [`SelectedItem`](htt
             {
                 HeightRequest = 40,
                 MultiSelectMode = MultiSelectMode.None,
-                DataSource = new List<string>()
+                AutoCompleteSource = new List<string>()
                 {
                     "Antigua and Barbuda",
                     "American Samoa",
@@ -469,7 +579,8 @@ The following code snippet demonstrates the way to retrieve [`SelectedItem`](htt
         {
             DisplayAlert("Selection Changed", "SelectedItem: " + autoComplete.SelectedItem, "OK");
         }
-	 }
+    }
+}
 
 {% endhighlight %}
 

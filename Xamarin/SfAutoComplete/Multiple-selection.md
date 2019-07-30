@@ -22,17 +22,77 @@ Selected items will be displayed with a customizable token representation and th
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" MultiSelectMode="Token" TokensWrapMode="Wrap" IsSelectedItemsVisibleInDropDown="false" />                    
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete" 
+                                     HeightRequest="40"
+                                     MultiSelectMode="Token" 
+                                     TokensWrapMode="Wrap" 
+                                     IsSelectedItemsVisibleInDropDown="false">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-autoComplete.MultiSelectMode=MultiSelectMode.Token;
-autoComplete.TokensWrapMode=TokensWrapMode.Wrap;
-autoComplete.IsSelectedItemsVisibleInDropDown=false;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                MultiSelectMode = MultiSelectMode.Token,
+                TokensWrapMode = TokensWrapMode.Wrap,
+                IsSelectedItemsVisibleInDropDown = false,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -50,106 +110,130 @@ The selected item can be displayed as token inside SfAutoComplete in two ways. T
 
 {% highlight xaml %}
 
-
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-    <autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DropDownItemHeight="50" DisplayMemberPath="Name" ImageMemberPath="Image" MultiSelectMode="Token" DataSource="{Binding EmployeeCollection}">
-    </autocomplete:SfAutoComplete>
-</StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete" 
+                                     HeightRequest="40"
+                                     DropDownItemHeight="50" 
+                                     DisplayMemberPath="Name" 
+                                     ImageMemberPath="Image" 
+                                     MultiSelectMode="Token" 
+                                     TokensWrapMode="Wrap"
+                                     DataSource="{Binding EmployeeCollection}">
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
-namespace autocomplete
-{
-public partial class autocompletePage : ContentPage
-{
-EmployeeViewModel view = new EmployeeViewModel();
-public autocompletePage()
-{
-InitializeComponent();
-// Set TokensWrapMode to Wrap
-autoComplete.TokensWrapMode = TokensWrapMode.Wrap;
-this.BindingContext = view;
-}
-}
-// Create a Employee Class which holds the Name and image.
 
-public class Employee
-{
-private string image;
-public string Image
-{
-get { return image; }
-set { image = value; }
-}
-private string name;
-public string Name
-{
-get { return name; }
-set { name = value; }
-}
-}
-// Create EmployeeViewModel class holds the collection of employee data.
+using System;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using Xamarin.Forms;
 
-public class EmployeeViewModel :INotifyPropertyChanged
+namespace AutocompleteSample
 {
-private ObservableCollection<Employee> employeeCollection;
-public ObservableCollection<Employee> EmployeeCollection
-{
-get { return employeeCollection; }
-set { employeeCollection = value; }
-}
-public EmployeeViewModel()
-{
-employeeCollection = new ObservableCollection<Employee>();
-employeeCollection.Add(new Employee() { Image = "John.png", Name = "John" });
-employeeCollection.Add(new Employee() { Image = "James.png", Name = "James" });
-employeeCollection.Add(new Employee() { Image = "Jacob.png", Name = "Jacob" });
-employeeCollection.Add(new Employee() { Image = "Joy.png", Name = "Joy" });
-employeeCollection.Add(new Employee() { Image = "Justin.png", Name = "Justin" });
-employeeCollection.Add(new Employee() { Image = "Jerome.png", Name = "Jerome" });
-employeeCollection.Add(new Employee() { Image = "Jessica.png", Name = "Jessica" });
-employeeCollection.Add(new Employee() { Image = "Victoria.png", Name = "Victoria" });
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
 
+    public class Employee
+    {
+        private string image;
+        public string Image
+        {
+            get { return image; }
+            set { image = value; }
+        }
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+    }
+    // Create EmployeeViewModel class holds the collection of employee data.
+
+    public class EmployeeViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<Employee> employeeCollection;
+        public ObservableCollection<Employee> EmployeeCollection
+        {
+            get { return employeeCollection; }
+            set { employeeCollection = value; }
+        }
+        public EmployeeViewModel()
+        {
+            employeeCollection = new ObservableCollection<Employee>();
+            employeeCollection.Add(new Employee() { Image = "John.png", Name = "John" });
+            employeeCollection.Add(new Employee() { Image = "James.png", Name = "James" });
+            employeeCollection.Add(new Employee() { Image = "Jacob.png", Name = "Jacob" });
+            employeeCollection.Add(new Employee() { Image = "Joy.png", Name = "Joy" });
+            employeeCollection.Add(new Employee() { Image = "Justin.png", Name = "Justin" });
+            employeeCollection.Add(new Employee() { Image = "Jerome.png", Name = "Jerome" });
+            employeeCollection.Add(new Employee() { Image = "Jessica.png", Name = "Jessica" });
+            employeeCollection.Add(new Employee() { Image = "Victoria.png", Name = "Victoria" });
+
+        }
+
+        public int GetHeight(bool value)
+        {
+            if (value)
+            {
+                return 80;
+            }
+            return 40;
+        }
+
+        private int toHeight = 40;
+        public int ToHeight
+        {
+            get { return toHeight; }
+            set
+            {
+                toHeight = value;
+                RaisePropertyChanged("ToHeight");
+            }
+        }
+        private bool isToFocused = false;
+        public bool IsToFocused
+        {
+            get { return isToFocused; }
+            set
+            {
+                isToFocused = value;
+                ToHeight = GetHeight(value);
+                RaisePropertyChanged("IsToFocused");
+            }
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
+        private void RaisePropertyChanged(String name)
+        {
+            if (PropertyChanged != null)
+                this.PropertyChanged(this, new PropertyChangedEventArgs(name));
+        }
+    }
 }
 
-public int GetHeight(bool value)
-{
-if (value)
-return 80;
-}
-
-private int toHeight = 40;
-public int ToHeight
-{
-get { return toHeight; }
-set
-{
-toHeight = value;
-RaisePropertyChanged("ToHeight");
-}
-}
-private bool isToFocused = false;
-public bool IsToFocused
-{
-get { return isToFocused; }
-set
-{
-isToFocused = value;
-ToHeight = GetHeight(value);
-RaisePropertyChanged("IsToFocused");
-}
-}
-public event PropertyChangedEventHandler PropertyChanged;
-private void RaisePropertyChanged(String name)
-{
-if (PropertyChanged != null)
-this.PropertyChanged(this, new PropertyChangedEventArgs(name));
-}
-}
-}
-
-}
 {% endhighlight %}
 
 {% endtabs %}
@@ -185,27 +269,26 @@ N> SelectedBackgroundColor and CornerRadius support has enhanced only on iOS and
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage 
-    xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    xmlns:local="clr-namespace:GettingStarted"
-    x:Class="GettingStarted.MainPage">
-    
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
     <ContentPage.BindingContext>
-         <local:EmployeeViewModel/>
+        <local:EmployeeViewModel/>
     </ContentPage.BindingContext>
     <ContentPage.Content>
         <StackLayout>
-        <autocomplete:SfAutoComplete
+            <autocomplete:SfAutoComplete
             DisplayMemberPath="Name" 
             MultiSelectMode="Token" 
             ImageMemberPath="Image"
             TokensWrapMode="Wrap" 
-            DataSource="{Binding EmployeeCollection}" />
-             <autocomplete:SfAutoComplete.TokenSettings>
-                 <autocomplete:TokenSettings
+            DataSource="{Binding EmployeeCollection}">
+                <autocomplete:SfAutoComplete.TokenSettings>
+                    <autocomplete:TokenSettings
                         FontSize="16"
                         BackgroundColor="#66ccff"
                         TextColor="White" 
@@ -215,17 +298,21 @@ N> SelectedBackgroundColor and CornerRadius support has enhanced only on iOS and
                         DeleteButtonPlacement="Right"
                         IsCloseButtonVisible="true"
                         CornerRadius="15"/>
-            </autocomplete:SfAutoComplete.TokenSettings>
-        </autocomplete:SfAutoComplete>
-        </StackLayout> 
+                </autocomplete:SfAutoComplete.TokenSettings>
+            </autocomplete:SfAutoComplete>
+        </StackLayout>
     </ContentPage.Content>
-
-</ContentPage>         
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
-namespace GettingStarted
+
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
 {
     public partial class MainPage : ContentPage
     {
@@ -234,7 +321,7 @@ namespace GettingStarted
             InitializeComponent();
             this.BindingContext = new EmployeeViewModel();
             StackLayout stackLayout = new StackLayout();
-            var autoComplete = new SfAutoComplete()
+            SfAutoComplete autoComplete = new SfAutoComplete()
             {
                 MultiSelectMode = MultiSelectMode.Token,
                 DisplayMemberPath = "Name",
@@ -258,16 +345,7 @@ namespace GettingStarted
             this.Content = stackLayout;
         }
     }
-}
- 
-{% endhighlight %}
 
-{% endtabs %}
-
-{% highlight c# %}
-
-namespace GettingStarted
-{
     public class Employee
     {
         private string image;
@@ -330,6 +408,7 @@ namespace GettingStarted
         }
     }
 }
+
 {% endhighlight %}
 
 ![token represents the image and text with closebutton](images/MultiSelect/TokenRepresentation.png)
@@ -341,9 +420,32 @@ When selecting the multiple items, the selected items can be divided with a desi
 {% tabs %}
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" MultiSelectMode="Delimiter"  Delimiter="," />                    
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete"
+                                     HeightRequest="40" 
+                                     MultiSelectMode="Delimiter"  
+                                     Delimiter=",">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 N> The optimal value for Delimiter property is any single character.
 
@@ -351,10 +453,45 @@ N> The optimal value for Delimiter property is any single character.
 
 {% highlight c# %}
 
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
 
-autoComplete.MultiSelectMode=MultiSelectMode.Delimiter;
-autoComplete.Delimiter=",";
+namespace AutocompleteSample
+{
 
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                MultiSelectMode = MultiSelectMode.Delimiter,
+                Delimiter = ",",
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -371,20 +508,146 @@ N> Selection Indicator support has enhanced only on iOS and Android platform.
 {% tabs %}
 {% highlight xaml %}
 
- <autocomplete:SfAutoComplete HeightRequest="40" ShowSuggestionsOnFocus="true" IsSelectedItemsVisibleInDropDown="true" IndicatorText="A"  IndicatorTextSize="15" IndicatorFontFamily="sample.ttf" IndicatorTextColor="Red" EnableSelectionIndicator="true" MultiSelectMode="Token"  x:Name="autoComplete" DataSource="{Binding EmployeeCollection}"/>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String"
+                        x:Key="customfontfamily" 
+                        iOS="Sample" 
+                        Android="sample.ttf" 
+                        WinPhone="sample.ttf#Sample"  />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete" 
+                                     HeightRequest="40" 
+                                     ShowSuggestionsOnFocus="true" 
+                                     IsSelectedItemsVisibleInDropDown="true" 
+                                     IndicatorText="A"  
+                                     IndicatorTextSize="15" 
+                                     IndicatorFontFamily="{StaticResource customfontfamily}" 
+                                     IndicatorTextColor="Red" 
+                                     EnableSelectionIndicator="true" 
+                                     MultiSelectMode="Token"
+                                     DataSource="{Binding EmployeeCollection}"/>
+    </StackLayout>
+</ContentPage>
        
 {% endhighlight %}
 
 {% highlight c# %}
 
-autoComplete.MultiSelectMode=MultiSelectMode.Token;
-autoComplete.ShowSuggestionsOnFocus=true;
-autoComplete.IsSelectedItemsVisibleInDropDown=true;
-autoComplete.IndicatorText= "A";
-autoComplete.IndicatorTextSize= "15";
-autoComplete.IndicatorFontFamily= "sample.ttf";
-autoComplete.IndicatorTextColor = Color.Red;
-autoComplete.EnableSelectionIndicator= true;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            EmployeeViewModel viewModel = new EmployeeViewModel();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                ShowSuggestionsOnFocus = true,
+                IsSelectedItemsVisibleInDropDown = true,
+                IndicatorText = "A",
+                IndicatorTextSize = 15,
+                IndicatorFontFamily = Device.RuntimePlatform == "iOS" ? "Sample" : Device.RuntimePlatform == "Android" ? "sample.ttf" : "sample.ttf#Sample",
+                IndicatorTextColor = Color.Red,
+                EnableSelectionIndicator = true,
+                MultiSelectMode = MultiSelectMode.Token,
+                DataSource = viewModel.EmployeeCollection,
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+
+    public class Employee
+    {
+        private string image;
+
+        private string name;
+
+        public string Image
+        {
+            get
+            {
+                return image;
+            }
+
+            set
+            {
+                image = value;
+            }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+            }
+        }
+    }
+
+    public class EmployeeViewModel
+    {
+        private ObservableCollection<Employee> employeeCollection;
+
+        public ObservableCollection<Employee> EmployeeCollection
+        {
+            get
+            {
+                return employeeCollection;
+            }
+
+            set
+            {
+                employeeCollection = value;
+            }
+        }
+        public EmployeeViewModel()
+        {
+            employeeCollection.Add(new Employee() { Image = "John.png", Name = "John" });
+            employeeCollection.Add(new Employee() { Image = "James.png", Name = "James" });
+            employeeCollection.Add(new Employee() { Image = "Jacob.png", Name = "Jacob" });
+            employeeCollection.Add(new Employee() { Image = "Joy.png", Name = "Joy" });
+            employeeCollection.Add(new Employee() { Image = "Justin.png", Name = "Justin" });
+            employeeCollection.Add(new Employee() { Image = "Jerome.png", Name = "Jerome" });
+            employeeCollection.Add(new Employee() { Image = "Jessica.png", Name = "Jessica" });
+            employeeCollection.Add(new Employee() { Image = "Victoria.png", Name = "Victoria" });
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -399,15 +662,76 @@ N> `ItemPadding` property is available only on iOS and Android platform.
 {% tabs %}
 {% highlight xaml %}
 
- <autocomplete:SfAutoComplete ShowSuggestionsOnFocus="true" ItemPadding="20,10,0,0" MultiSelectMode="Token"  x:Name="autoComplete" DataSource="{Binding EmployeeCollection}"/>
+ <?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete  x:Name="autoComplete" 
+                                      ShowSuggestionsOnFocus="true" 
+                                     ItemPadding="20,10,0,0" 
+                                     MultiSelectMode="Token">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
        
 {% endhighlight %}
 
 {% highlight c# %}
 
-autoComplete.MultiSelectMode=MultiSelectMode.Token;
-autoComplete.ShowSuggestionsOnFocus=true;
-autoComplete.ItemPadding= new Thickness(20,10,0,0);;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                MultiSelectMode = MultiSelectMode.Token,
+                ShowSuggestionsOnFocus = true,
+                ItemPadding = new Thickness(20, 10, 0, 0),
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 

@@ -121,38 +121,50 @@ ListView sorts the groups using default sorting logic of List.
 ### Custom sorting of groups
 The SfListView supports sorting the groups based on custom logic applied to either [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupComparer.html) property or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html) added to the `DataSource.GroupDescriptors` collection.
 
-In custom group comparer, all the items present in a group compares each other based on the items count to each group sorted accordingly.
+In custom group comparer, all the items present in a group compares each other based on the items count to each group sorted accordingly. You can download the entire sample code [here](https://github.com/SyncfusionExamples/xamarinforms-listview-custom-sorting-groups-)
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"
+             xmlns:local="clr-namespace:CustomGrouping">
+  <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding ContactsInfo}">
+    <syncfusion:SfListView.DataSource>
+      <dataSource:DataSource>
+        <dataSource:DataSource.GroupDescriptors>
+          <dataSource:GroupDescriptor PropertyName="ContactType">
+            <dataSource:GroupDescriptor.Comparer>
+              <local:CustomGroupComparer/>
+            </dataSource:GroupDescriptor.Comparer>
+          </dataSource:GroupDescriptor>
+        </dataSource:DataSource.GroupDescriptors>
+      </dataSource:DataSource>
+    </syncfusion:SfListView.DataSource>
+  </syncfusion:SfListView>
+</ContentPage>
+{% endhighlight %}
+{% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
-public class CustomGroupComparer : IComparer<GroupResult>, ISortDirection
+public class CustomGroupComparer : IComparer<GroupResult>
 {
-  public CustomGroupComparer()
-  {
-    this.SortDirection = ListSortDirection.Ascending;
-  }
-  
-  public ListSortDirection SortDirection
-  {
-    get;
-    set;
-  }
-  
   public int Compare(GroupResult x, GroupResult y)
   {
-    int groupX;
-    int groupY;
+    if (x.Count > y.Count)
+    {
+       //GroupResult y is stacked into top of the group i.e., Ascending.
+       //GroupResult x is stacked at the bottom of the group i.e., Descending.
+        return 1;
+    }
+    else if (x.Count < y.Count)
+    {
+       //GroupResult x is stacked into top of the group i.e., Ascending.
+       //GroupResult y is stacked at the bottom of the group i.e., Descending.
+       return -1;
+    }
 
-    groupX = x.Count;
-    groupY = y.Count;
-
-    // Objects are compared and return the SortDirection
-    if (groupX.CompareTo(groupY) > 0)
-      return SortDirection == ListSortDirection.Ascending ? 1 : -1;
-    else if (groupX.CompareTo(groupY) == -1)
-      return SortDirection == ListSortDirection.Ascending ? -1 : 1;
-    else
-      return 0;
+    return 0;
   }
 }
 {% endhighlight %}

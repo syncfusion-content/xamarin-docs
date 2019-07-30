@@ -263,7 +263,6 @@ private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDat
           e.DataFormItem.EditorFontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label));
           e.DataFormItem.LabelFontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
           e.DataFormItem.ValidationLabelFontSize = Device.GetNamedSize(NamedSize.Micro, typeof(Label));
- 
           // Setting value to FontSize directly.                
           e.DataFormItem.EditorFontSize = 8;
           e.DataFormItem.LabelFontSize = 8;

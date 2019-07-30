@@ -105,15 +105,21 @@ To hook the `DragBegin` event, and to get the start position and restricts the d
              xmlns:local="clr-namespace:RadialSample"
              xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
              x:Class="RadialSample.MainPage">
-    <radialMenu:SfRadialMenu  IsDragEnabled="True"
-                              DragBegin="RadialMenu_DragBegin">
-        <radialMenu:SfRadialMenu.Items>
-            <radialMenu:SfRadialMenuItem Text="Bold" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Copy" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Undo" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Paste" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Color" FontSize="12"/>
-        </radialMenu:SfRadialMenu.Items>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="customfontfamily" iOS="Segoe MDL2 Assets" Android="radialmenu_Segoe MDL2 Assets.ttf" WinPhone="radialmenu_Segoe_MDL2_Assets.ttf#Segoe MDL2 Assets"  />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <radialMenu:SfRadialMenu x:Name="radialMenu" 
+                             IsDragEnabled="true" 
+                             DragBegin="RadialMenu_DragBegin"
+                             CenterButtonText="&#xe713;"
+                             CenterButtonFontFamily="{StaticResource customfontfamily}" 
+                             CenterButtonRadius="30"
+                             CenterButtonFontSize="26" 
+                             CenterButtonTextColor="White"
+                             CenterButtonBorderColor="White" 
+                             CenterButtonBorderThickness="3">
     </radialMenu:SfRadialMenu>
 </ContentPage>
 
@@ -134,16 +140,16 @@ namespace RadialSample
             InitializeComponent();
             SfRadialMenu radialMenu = new SfRadialMenu()
             {
-                IsDragEnabled = true
+                IsDragEnabled = true,
+                CenterButtonText = "\uE713",
+                CenterButtonFontFamily = Device.RuntimePlatform == "iOS" ? "Segoe MDL2 Assets" : Device.RuntimePlatform == "Android" ? "radialmenu_Segoe MDL2 Assets.ttf" : "radialmenu_Segoe_MDL2_Assets.ttf#Segoe MDL2 Assets",
+                CenterButtonRadius = 30,
+                CenterButtonFontSize = 26,
+                CenterButtonTextColor = Color.White,
+                CenterButtonBorderColor = Color.White,
+                CenterButtonBorderThickness = 3
             };
 
-            ObservableCollection<SfRadialMenuItem> itemCollection = new ObservableCollection<SfRadialMenuItem>();
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Bold", FontSize = 12 });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Copy", FontSize = 12 });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Paste", FontSize = 12 });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Undo", FontSize = 12 });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Color", FontSize = 12 });
-            radialMenu.Items = itemCollection;
             radialMenu.DragBegin += RadialMenu_DragBegin;
             this.Content = radialMenu;
         }
@@ -180,18 +186,23 @@ To hook the `DragEnd` event, and to get the start position, end position and res
              xmlns:local="clr-namespace:RadialSample"
              xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
              x:Class="RadialSample.MainPage">
-    <radialMenu:SfRadialMenu  IsDragEnabled="True"
-                              DragEnd="radialMenu_DragEnd">
-        <radialMenu:SfRadialMenu.Items>
-            <radialMenu:SfRadialMenuItem Text="Bold" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Copy" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Undo" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Paste" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Color" FontSize="12"/>
-        </radialMenu:SfRadialMenu.Items>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="customfontfamily" iOS="Segoe MDL2 Assets" Android="radialmenu_Segoe MDL2 Assets.ttf" WinPhone="radialmenu_Segoe_MDL2_Assets.ttf#Segoe MDL2 Assets"  />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <radialMenu:SfRadialMenu x:Name="radialMenu" 
+                             IsDragEnabled="true" 
+                             DragEnd="radialMenu_DragEnd"
+                             CenterButtonText="&#xe713;"
+                             CenterButtonFontFamily="{StaticResource customfontfamily}" 
+                             CenterButtonRadius="30"
+                             CenterButtonFontSize="26" 
+                             CenterButtonTextColor="White"
+                             CenterButtonBorderColor="White" 
+                             CenterButtonBorderThickness="3">
     </radialMenu:SfRadialMenu>
 </ContentPage>
-
 
 {% endhighlight %}
 
@@ -210,16 +221,16 @@ namespace RadialSample
             InitializeComponent();
             SfRadialMenu radialMenu = new SfRadialMenu()
             {
-                IsDragEnabled = true
+                IsDragEnabled = true,
+                CenterButtonText = "\uE713",
+                CenterButtonFontFamily = Device.RuntimePlatform == "iOS" ? "Segoe MDL2 Assets" : Device.RuntimePlatform == "Android" ? "radialmenu_Segoe MDL2 Assets.ttf" : "radialmenu_Segoe_MDL2_Assets.ttf#Segoe MDL2 Assets",
+                CenterButtonRadius = 30,
+                CenterButtonFontSize = 26,
+                CenterButtonTextColor = Color.White,
+                CenterButtonBorderColor = Color.White,
+                CenterButtonBorderThickness = 3
             };
 
-            ObservableCollection<SfRadialMenuItem> itemCollection = new ObservableCollection<SfRadialMenuItem>();
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Bold", FontSize = 12 });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Copy", FontSize = 12 });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Paste", FontSize = 12 });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Undo", FontSize = 12 });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Color", FontSize = 12 });
-            radialMenu.Items = itemCollection;
             radialMenu.DragEnd += radialMenu_DragEnd;
             this.Content = radialMenu;
         }
@@ -248,14 +259,20 @@ You can place radial menu anywhere on its parent layout. Radial Menu's position 
              xmlns:local="clr-namespace:RadialSample"
              xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
              x:Class="RadialSample.MainPage">
-    <radialMenu:SfRadialMenu  Point="100, 150">
-        <radialMenu:SfRadialMenu.Items>
-            <radialMenu:SfRadialMenuItem Text="Bold" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Copy" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Undo" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Paste" FontSize="12"/>
-            <radialMenu:SfRadialMenuItem Text="Color" FontSize="12"/>
-        </radialMenu:SfRadialMenu.Items>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="customfontfamily" iOS="Segoe MDL2 Assets" Android="radialmenu_Segoe MDL2 Assets.ttf" WinPhone="radialmenu_Segoe_MDL2_Assets.ttf#Segoe MDL2 Assets"  />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <radialMenu:SfRadialMenu x:Name="radialMenu" 
+                             Point="100, 150"
+                             CenterButtonText="&#xe713;"
+                             CenterButtonFontFamily="{StaticResource customfontfamily}" 
+                             CenterButtonRadius="30"
+                             CenterButtonFontSize="26" 
+                             CenterButtonTextColor="White"
+                             CenterButtonBorderColor="White" 
+                             CenterButtonBorderThickness="3">
     </radialMenu:SfRadialMenu>
 </ContentPage>
 
@@ -276,16 +293,16 @@ namespace RadialSample
             InitializeComponent();
             SfRadialMenu radialMenu = new SfRadialMenu()
             {
+                CenterButtonText = "\uE713",
+                CenterButtonFontFamily = Device.RuntimePlatform == "iOS" ? "Segoe MDL2 Assets" : Device.RuntimePlatform == "Android" ? "radialmenu_Segoe MDL2 Assets.ttf" : "radialmenu_Segoe_MDL2_Assets.ttf#Segoe MDL2 Assets",
+                CenterButtonRadius = 30,
+                CenterButtonFontSize = 26,
+                CenterButtonTextColor = Color.White,
+                CenterButtonBorderColor = Color.White,
+                CenterButtonBorderThickness = 3,
                 Point = new Point(100, 150)
             };
 
-            ObservableCollection<SfRadialMenuItem> itemCollection = new ObservableCollection<SfRadialMenuItem>();
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Bold", FontSize = 12 });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Copy", FontSize = 12 });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Paste", FontSize = 12 });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Undo", FontSize = 12 });
-            itemCollection.Add(new SfRadialMenuItem() { Text = "Color", FontSize = 12 });
-            radialMenu.Items = itemCollection;
             this.Content = radialMenu;
         }
     }

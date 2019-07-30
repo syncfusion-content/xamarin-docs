@@ -20,6 +20,8 @@ schedule.ScheduleView = ScheduleView.TimelineView;
 {% endhighlight %}
 {% endtabs %}
 
+You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/Timeline-view).
+
 ![Timeline view in xamarin forms](timeline-view-images/xamarin-forms-timeline-view.png)
 
 ## Timeline view days count
@@ -465,8 +467,6 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ![Time label size in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-size.png)
 
-You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/Timeline-view).
-
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
 
@@ -550,10 +550,7 @@ schedule.SelectedDate = null;
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
-
 ![Programatic selection in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-programatic-selection.png)
 
 >**NOTE**
-* `SfSchedule` does not support multiple selection.
-* `SfSchedule` supports two-way binding of `SelectedDate` property.
+* `SfSchedule` does not support multiple selection. 

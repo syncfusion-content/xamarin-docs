@@ -14,15 +14,21 @@ SfBusyIndicator control provides support to determine whether an animation needs
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
-	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
-	x:Class="GettingStarted.BusyIndicatorPage">
-<ContentPage.Content>
- <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="Ball" IsBusy="false" ViewBoxWidth = "150" ViewBoxHeight="150" TextColor="Maroon" />	
-</ContentPage.Content>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             x:Class="GettingStarted.MainPage">
+    <ContentPage.Content>
+        <busyindicator:SfBusyIndicator x:Name="busyindicator" 
+                                       AnimationType="Ball" 
+                                       ViewBoxWidth = "150" 
+                                       ViewBoxHeight="150" 
+                                       TextColor="Maroon" 
+                                       IsBusy="False"/>
+    </ContentPage.Content>
 </ContentPage>
-
 	
 {% endhighlight %}
 
@@ -30,23 +36,26 @@ SfBusyIndicator control provides support to determine whether an animation needs
 
 using Syncfusion.SfBusyIndicator.XForms;
 using Xamarin.Forms;
+
 namespace GettingStarted
 {
-	public partial class BusyIndicatorPage : ContentPage
-	{
-		public BusyIndicatorPage()
-		{
-			InitializeComponent();
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfBusyIndicator busyIndicator = new SfBusyIndicator()
+            {
+                AnimationType = AnimationTypes.Ball,
+                ViewBoxHeight = 150,
+                ViewBoxWidth = 150,
+                TextColor = Color.Maroon,
+                IsBusy = false
+            };
 
-			SfBusyIndicator busyIndicator = new SfBusyIndicator();
-			busyIndicator.AnimationType = AnimationTypes.Battery;
-			busyIndicator.ViewBoxWidth = 150;
-			busyIndicator.ViewBoxHeight = 150;
-			busyIndicator.IsBusy=false;
-			busyIndicator.TextColor = Color.Maroon;
-			this.Content = busyIndicator;
-		}
-	}
+            this.Content = busyIndicator;
+        }
+    }
 }
 	
 {% endhighlight %}

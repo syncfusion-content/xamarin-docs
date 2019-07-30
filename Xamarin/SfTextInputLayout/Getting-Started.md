@@ -208,4 +208,6 @@ inputLayout.InputView = new Entry() { Text = "John" };
 ![Enable password toggling image](Getting-Started_images/textInput_getting_img4.png)
 ![Enable password toggling_input hidden](Getting-Started_images/textInput_getting_img5.png)
 
+N> Password visibility toggle can be enabled only for [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry) control.
+
 You can find the complete getting started sample from this [link.]( https://s3.amazonaws.com/files2.syncfusion.com/Xamarin.Forms/Samples/TextInputLayout.zip)

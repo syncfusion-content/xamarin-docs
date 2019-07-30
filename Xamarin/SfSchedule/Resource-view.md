@@ -44,6 +44,8 @@ schedule.ScheduleResources = resources;
 {% endhighlight %}
 {% endtabs %}
 
+You can download the custom resource demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/Resource-view/tree/master/ResourceView).
+
 ![Resource view in xamarin forms](resource-view-images/xamarin-forms-resource-view.jpg)
 
 ## Resource view visibility
@@ -246,8 +248,6 @@ Employees.Add(employee);
 schedule.ScheduleResources = Employees;
 {% endhighlight %}
 {% endtabs %}
-
-You can download the custom resource demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/Resource-view/tree/master/ResourceView).
 
 ## Selection mode
 

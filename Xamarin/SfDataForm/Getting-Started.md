@@ -135,6 +135,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     assembliesToInclude.Add(typeof(SfCheckBoxRenderer).GetTypeInfo().Assembly);
     assembliesToInclude.Add(typeof(SfRadioButtonRenderer).GetTypeInfo().Assembly);
     assembliesToInclude.Add(typeof(SfMaskedEditRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(SfTextInputLayoutRenderer).GetTypeInfo().Assembly);
     
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);

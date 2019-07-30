@@ -25,6 +25,12 @@ Implement the default drawer using the default drawer settings class. The follow
 
 {% highlight xaml %}
 
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
     <navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings >
     <navigationdrawer:DrawerSettings
         DrawerWidth="150"
@@ -32,25 +38,41 @@ Implement the default drawer using the default drawer settings class. The follow
         Transition ="SlideOnTop"
         DrawerHeaderHeight="150"
         DrawerFooterHeight="150"
-		ContentBackgroundColor ="Red"
+        ContentBackgroundColor ="Red"
         Position="Left">
     </navigationdrawer:DrawerSettings>
     </navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>
-
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-DrawerSettings defaultDrawerSettings = new DrawerSettings();
-defaultDrawerSettings.DrawerHeight = 150;
-defaultDrawerSettings.Position = Position.Left;
-defaultDrawerSettings.Transition = Transition.SlideOnTop;
-defaultDrawerSettings.ContentBackgroundColor = Color.Red;
-defaultDrawerSettings.DrawerWidth = 150;
-navigationDrawer.DrawerHeaderHeight = 150;
-navigationDrawer.DrawerFooterHeight = 150;
-navigationDrawer.DefaultDrawerSettings = defaultDrawerSettings;
+using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
+
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+            DrawerSettings defaultDrawerSettings = new DrawerSettings();
+            defaultDrawerSettings.DrawerHeight = 150;
+            defaultDrawerSettings.Position = Position.Left;
+            defaultDrawerSettings.Transition = Transition.SlideOnTop;
+            defaultDrawerSettings.ContentBackgroundColor = Color.Red;
+            defaultDrawerSettings.DrawerWidth = 150;
+            navigationDrawer.DrawerHeaderHeight = 150;
+            navigationDrawer.DrawerFooterHeight = 150;
+            navigationDrawer.DefaultDrawerSettings = defaultDrawerSettings;
+            this.Content = navigationDrawer;
+        }
+    }
+}
   
 {% endhighlight %}
 
@@ -65,32 +87,55 @@ The header content can be provided to the default drawer using the `DrawerHeader
 {% tabs %}
 
 {% highlight xaml %}
-   <navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>
+
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+    <navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>
     <Grid BackgroundColor="#1aa1d6">
     <Grid.RowDefinitions>
     <RowDefinition Height="120"/>
     </Grid.RowDefinitions>
     <navigationdrawer:DrawerSettings.DrawerHeaderView>
-        <Label Text="Syncfusion Xamarin Products"  HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
-     </Grid>
+    <Label Text="Syncfusion Xamarin Products"  HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
     </navigationdrawer:DrawerSettings.DrawerHeaderView>
+     </Grid>
     </navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>
-
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    DrawerSettings defaultDrawerSettings = new DrawerSettings();
-    Grid headerLayout = new Grid();
-    headerLayout.BackgroundColor = Color.FromHex("#1aa1d6");
-    Label header = new Label();
-    header.Text = "Syncfusion Xamarin Products";
-    header.FontSize = 20;
-    header.TextColor = Color.White;
-    header.HorizontalTextAlignment = TextAlignment.Center;
-    headerLayout.Children.Add(header);
-    defaultDrawerSettings.DrawerHeaderView = headerLayout;
+   using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
+
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+            DrawerSettings defaultDrawerSettings = new DrawerSettings();
+            Grid headerLayout = new Grid();
+            headerLayout.BackgroundColor = Color.FromHex("#1aa1d6");
+            Label header = new Label();
+            header.Text = "Syncfusion Xamarin Products";
+            header.FontSize = 20;
+            header.TextColor = Color.White;
+            header.HorizontalTextAlignment = TextAlignment.Center;
+            headerLayout.Children.Add(header);
+            defaultDrawerSettings.DrawerHeaderView = headerLayout;
+            this.Content = navigationDrawer;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -104,27 +149,55 @@ The drawer content can be provided to the default drawer using the `DrawerConten
 
 {% highlight xaml %}
 
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
 <navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>
 <navigationdrawer:DrawerSettings>
 <navigationdrawer:DrawerSettings.DrawerContentView>
-    <Label Text="DrawerContent "  HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
+    <Label Text="DrawerContent "  
+           HorizontalTextAlignment="Center" 
+           HorizontalOptions="Center"
+           FontSize="20" 
+           TextColor="White"/>
 </navigationdrawer:DrawerSettings.DrawerContentView>
 </navigationdrawer:DrawerSettings>   
 </navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>
+</ContentPage>
       
 {% endhighlight %}
+
 {% highlight c# %}
 
-DrawerSettings defaultDrawerSettings = new DrawerSettings();
-Grid contentLayout = new Grid();
-contentLayout.BackgroundColor = Color.FromHex("#1aa1d6");
-Label content = new Label();
-content.Text = "DrawerContent";
-content.FontSize = 20;
-content.TextColor = Color.White;
-content.HorizontalTextAlignment = TextAlignment.Center;
-contentLayout.Children.Add(content);
-defaultDrawerSettings.DrawerContentView = contentLayout;
+using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
+
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+            DrawerSettings defaultDrawerSettings = new DrawerSettings();
+            Grid contentLayout = new Grid();
+            contentLayout.BackgroundColor = Color.FromHex("#1aa1d6");
+            Label content = new Label();
+            content.Text = "DrawerContent";
+            content.FontSize = 20;
+            content.TextColor = Color.White;
+            content.HorizontalTextAlignment = TextAlignment.Center;
+            contentLayout.Children.Add(content);
+            defaultDrawerSettings.DrawerContentView = contentLayout;
+            this.Content = navigationDrawer;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -138,32 +211,60 @@ The footer content can be provided to the default drawer using the `DrawerFooter
 
 {% highlight xaml %}
     
-    <navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>   
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+<navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>   
     <navigationdrawer:DrawerSettings.DrawerFooterView>
     <Grid BackgroundColor="#1aa1d6">
     <Grid.RowDefinitions>
     <RowDefinition Height="120"/>
     </Grid.RowDefinitions>
-        <Label Text="Close" Grid.Row="0" HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
+        <Label Text="Close" 
+               Grid.Row="0" 
+               HorizontalTextAlignment="Center" 
+               HorizontalOptions="Center" 
+               FontSize="20" 
+               TextColor="White"/>
     </Grid>
     </navigationdrawer:DrawerSettings.DrawerFooterView>
     </navigationdrawer:SfNavigationDrawer.DefaultDrawerSettings>
-
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-DrawerSettings defaultDrawerSettings = new DrawerSettings();
-Grid footerLayout = new Grid();
-footerLayout.BackgroundColor = Color.FromHex("#1aa1d6");
-Label footer = new Label();
-footer.Text = "Close";
-footer.FontSize = 20;
-footer.TextColor = Color.White;
-footer.HorizontalTextAlignment = TextAlignment.Center;
-footerLayout.Children.Add(footer);
-defaultDrawerSettings.DrawerFooterView = footerLayout;
+using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
+
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+            DrawerSettings defaultDrawerSettings = new DrawerSettings();
+            Grid footerLayout = new Grid();
+            footerLayout.BackgroundColor = Color.FromHex("#1aa1d6");
+            Label footer = new Label();
+            footer.Text = "Close";
+            footer.FontSize = 20;
+            footer.TextColor = Color.White;
+            footer.HorizontalTextAlignment = TextAlignment.Center;
+            footerLayout.Children.Add(footer);
+            defaultDrawerSettings.DrawerFooterView = footerLayout;
+            this.Content = navigationDrawer;
+        }
+    }
+}
+
 {% endhighlight %}
 
 {% endtabs %}   
@@ -176,32 +277,55 @@ Implement the secondary drawer using the secondary drawer settings class. Its pr
 
 {% highlight xaml %}
 
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
     <navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings >
-    <navigationdrawer:DrawerSettings x:Name="secondaryDrawer"
-    DrawerHeaderHeight="40"
-    DrawerFooterHeight="40"
-	ContentBackgroundColor="Blue"
-    DrawerHeight="300"
-    DrawerWidth= 150;
-    Duration="400" 
-    Position="Right"
-    Transition="SlideOnTop">
+        <navigationdrawer:DrawerSettings x:Name="secondaryDrawer"
+                                 DrawerHeaderHeight="40"
+                                 DrawerFooterHeight="40"
+                                 ContentBackgroundColor="Blue"
+                                 DrawerHeight="300"
+                                 DrawerWidth= "150"
+                                 Duration="400" 
+                                 Position="Right"
+                                 Transition="SlideOnTop">
+        </navigationdrawer:DrawerSettings>
     </navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings>
+</ContentPage>
                
 {% endhighlight %}
 
 {% highlight c# %}
 
-DrawerSettings secondaryDrawer = new DrawerSettings();
-secondaryDrawer.DrawerHeight = 300;
-secondaryDrawer.Position = Position.Right;
-secondaryDrawer.Transition = Transition.SlideOnTop;
-secondaryDrawer.ContentBackgroundColor = Color.Blue;
-secondaryDrawer.DrawerWidth = 150;
-secondaryDrawer.DrawerHeaderHeight = 40;
-secondaryDrawer.DrawerFooterHeight = 40;
-navigationDrawer.SecondaryDrawerSettings = secondaryDrawer;
+using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
 
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+            DrawerSettings secondaryDrawer = new DrawerSettings();
+            secondaryDrawer.DrawerHeight = 300;
+            secondaryDrawer.Position = Position.Right;
+            secondaryDrawer.Transition = Transition.SlideOnTop;
+            secondaryDrawer.ContentBackgroundColor = Color.Blue;
+            secondaryDrawer.DrawerWidth = 150;
+            secondaryDrawer.DrawerHeaderHeight = 40;
+            secondaryDrawer.DrawerFooterHeight = 40;
+            navigationDrawer.SecondaryDrawerSettings = secondaryDrawer;
+            this.Content = navigationDrawer;
+        }
+    }
+}
   
 {% endhighlight %}
 
@@ -217,31 +341,59 @@ The header content can be provided to the secondary drawer using the `DrawerHead
 
 {% highlight xaml %}
     
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
     <navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings>
-    <navigationdrawer:DrawerSettings.DrawerHeaderView>
-    <Grid BackgroundColor="#1aa1d6">
-    <Grid.RowDefinitions>
-    <RowDefinition Height="120"/>
-    </Grid.RowDefinitions>
-        <Label Text="Syncfusion Enterprise solution" Grid.Row="0" HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
-    </Grid>
-    </navigationdrawer:DrawerSettings.DrawerHeaderView>
+        <navigationdrawer:DrawerSettings.DrawerHeaderView>
+            <Grid BackgroundColor="#1aa1d6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                </Grid.RowDefinitions>
+                <Label Text="Syncfusion Enterprise solution" 
+                       Grid.Row="0" 
+                       HorizontalTextAlignment="Center" 
+                       HorizontalOptions="Center" 
+                       FontSize="20" 
+                       TextColor="White"/>
+            </Grid>
+        </navigationdrawer:DrawerSettings.DrawerHeaderView>
     </navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-DrawerSettings secondaryDrawer = new DrawerSettings();
-Grid secondary = new Grid();
-secondary.BackgroundColor = Color.FromHex("#1aa1d6");
-Label header = new Label();
-header.Text = "Syncfusion Enterprise solution";
-header.FontSize = 20;
-header.TextColor = Color.White;
-header.HorizontalTextAlignment = TextAlignment.Center;
-secondary.Children.Add(header);
-secondaryDrawer.DrawerHeaderView = secondary;
+using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
+
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+            DrawerSettings secondaryDrawer = new DrawerSettings();
+            Grid secondary = new Grid();
+            secondary.BackgroundColor = Color.FromHex("#1aa1d6");
+            Label header = new Label();
+            header.Text = "Syncfusion Enterprise solution";
+            header.FontSize = 20;
+            header.TextColor = Color.White;
+            header.HorizontalTextAlignment = TextAlignment.Center;
+            secondary.Children.Add(header);
+            secondaryDrawer.DrawerHeaderView = secondary;
+            this.Content = navigationDrawer;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -255,29 +407,55 @@ The drawer content can be provided to the default drawer using the `DrawerConten
 
 {% highlight xaml %}
 
-<navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings>
-<navigationdrawer:DrawerSettings>
-<navigationdrawer:DrawerSettings.DrawerContentView>
-    <Label Text="DrawerContent "  HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
-</navigationdrawer:DrawerSettings.DrawerContentView>
-</navigationdrawer:DrawerSettings>   
-</navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings>
-      
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
+    <navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings>
+        <navigationdrawer:DrawerSettings>
+            <navigationdrawer:DrawerSettings.DrawerContentView>
+                <Label Text="DrawerContent "  
+                       HorizontalTextAlignment="Center" 
+                       HorizontalOptions="Center" 
+                       FontSize="20" 
+                       TextColor="White"/>
+            </navigationdrawer:DrawerSettings.DrawerContentView>
+        </navigationdrawer:DrawerSettings>   
+    </navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings>
+</ContentPage>
       
 {% endhighlight %}
 
 {% highlight c# %}
 
-DrawerSettings secondaryDrawer = new DrawerSettings();
-Grid Layout = new Grid();
-Layout.BackgroundColor = Color.FromHex("#1aa1d6");
-Label content = new Label();
-content.Text = "DrawerContent";
-content.FontSize = 20;
-content.TextColor = Color.White;
-content.HorizontalTextAlignment = TextAlignment.Center;
-Layout.Children.Add(content);
-secondaryDrawer.DrawerContentView = Layout;
+using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
+
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+            DrawerSettings secondaryDrawer = new DrawerSettings();
+            Grid Layout = new Grid();
+            Layout.BackgroundColor = Color.FromHex("#1aa1d6");
+            Label content = new Label();
+            content.Text = "DrawerContent";
+            content.FontSize = 20;
+            content.TextColor = Color.White;
+            content.HorizontalTextAlignment = TextAlignment.Center;
+            Layout.Children.Add(content);
+            secondaryDrawer.DrawerContentView = Layout;
+            this.Content = navigationDrawer;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -291,31 +469,59 @@ The footer content can be provided to the secondary drawer using the `DrawerFoot
 
 {% highlight xaml %}
     
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:NaviSample" 
+             xmlns:navigationdrawer="clr-namespace:Syncfusion.SfNavigationDrawer.XForms;assembly=Syncfusion.SfNavigationDrawer.XForms"
+             x:Class="NaviSample.MainPage">
     <navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings>
-    <navigationdrawer:DrawerSettings.DrawerFooterView>
-    <Grid BackgroundColor="#1aa1d6">
-    <Grid.RowDefinitions>
-    <RowDefinition Height="120"/>
-    </Grid.RowDefinitions>
-        <Label Text="Close" Grid.Row="0" HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
-    </Grid>
-    </navigationdrawer:DrawerSettings.DrawerFooterView>
+        <navigationdrawer:DrawerSettings.DrawerFooterView>
+            <Grid BackgroundColor="#1aa1d6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                </Grid.RowDefinitions>
+                <Label Text="Close" 
+                       Grid.Row="0" 
+                       HorizontalTextAlignment="Center" 
+                       HorizontalOptions="Center" 
+                       FontSize="20" 
+                       TextColor="White"/>
+            </Grid>
+        </navigationdrawer:DrawerSettings.DrawerFooterView>
     </navigationdrawer:SfNavigationDrawer.SecondaryDrawerSettings>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-DrawerSettings secondaryDrawer = new DrawerSettings();
-Grid Layout = new Grid();
-Layout.BackgroundColor = Color.FromHex("#1aa1d6");
-Label footer = new Label();
-footer.Text = "Close";
-footer.FontSize = 20;
-footer.TextColor = Color.White;
-footer.HorizontalTextAlignment = TextAlignment.Center;
-Layout.Children.Add(footer);
-secondaryDrawer.DrawerFooterView = Layout;
+using System;
+using Syncfusion.SfNavigationDrawer.XForms;
+using Xamarin.Forms;
+
+namespace NaviSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfNavigationDrawer navigationDrawer = new SfNavigationDrawer();
+            DrawerSettings secondaryDrawer = new DrawerSettings();
+            Grid Layout = new Grid();
+            Layout.BackgroundColor = Color.FromHex("#1aa1d6");
+            Label footer = new Label();
+            footer.Text = "Close";
+            footer.FontSize = 20;
+            footer.TextColor = Color.White;
+            footer.HorizontalTextAlignment = TextAlignment.Center;
+            Layout.Children.Add(footer);
+            secondaryDrawer.DrawerFooterView = Layout;
+            this.Content = navigationDrawer;
+        }
+    }
+}
 
 {% endhighlight %}
 

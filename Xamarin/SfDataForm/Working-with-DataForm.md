@@ -799,7 +799,6 @@ Support has been provided to dynamically add custom group items using [Items](ht
 DataFormGroupItem dataFormGroupItem = new DataFormGroupItem();
 dataFormGroupItem.GroupName = "GroupItem";
 dataFormGroupItem.IsExpanded = true;
-dataFormGroupItem.GetType().GetProperty("IsGroup").SetValue(dataFormGroupItem, true);
 dataFormGroupItem.DataFormItems = new DataFormItems();
 
 dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "First Name", Editor = "Text", GroupName = "GroupItem" });

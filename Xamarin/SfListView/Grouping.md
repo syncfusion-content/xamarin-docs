@@ -46,44 +46,7 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 
 ## Custom grouping
 
-The SfListView supports grouping the items based on custom logic applied to either [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupComparer.html) property or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html) added to the `DataSource.GroupDescriptors` collection.
-
-In custom group comparer, all the items present in a group compares each other based on the items count to each group sorted accordingly.
-
-{% tabs %}
-{% highlight c# %}
-public class CustomGroupComparer : IComparer<GroupResult>, ISortDirection
-{
-  public CustomGroupComparer()
-  {
-    this.SortDirection = ListSortDirection.Ascending;
-  }
-  
-  public ListSortDirection SortDirection
-  {
-    get;
-    set;
-  }
-  
-  public int Compare(GroupResult x, GroupResult y)
-  {
-    int groupX;
-    int groupY;
-
-    groupX = x.Count;
-    groupY = y.Count;
-
-    // Objects are compared and return the SortDirection
-    if (groupX.CompareTo(groupY) > 0)
-      return SortDirection == ListSortDirection.Ascending ? 1 : -1;
-    else if (groupX.CompareTo(groupY) == -1)
-      return SortDirection == ListSortDirection.Ascending ? -1 : 1;
-    else
-      return 0;
-  }
-}
-{% endhighlight %}
-{% endtabs %}
+ListView supports grouping the items based on custom logic for each [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) by using [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html). Below topics explains how to achieve different custom grouping use cases with code examples,  
 
 ### Grouping based on first character
 
@@ -150,6 +113,74 @@ listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
 The following screenshot shows grouping by ignoring case sensitivity. You can download the entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Case_sensitivity-488204229).
 
 ![Group items based on case sensitive in listview](SfListView_images/SfListView-CaseSensitivity.png)
+
+## Sorting the groups
+
+ListView sorts the groups using default sorting logic of List.
+
+### Custom sorting of groups
+The SfListView supports sorting the groups based on custom logic applied to either [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupComparer.html) property or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html) added to the `DataSource.GroupDescriptors` collection.
+
+In custom group comparer, all the items present in a group compares each other based on the items count to each group sorted accordingly.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomGroupComparer : IComparer<GroupResult>, ISortDirection
+{
+  public CustomGroupComparer()
+  {
+    this.SortDirection = ListSortDirection.Ascending;
+  }
+  
+  public ListSortDirection SortDirection
+  {
+    get;
+    set;
+  }
+  
+  public int Compare(GroupResult x, GroupResult y)
+  {
+    int groupX;
+    int groupY;
+
+    groupX = x.Count;
+    groupY = y.Count;
+
+    // Objects are compared and return the SortDirection
+    if (groupX.CompareTo(groupY) > 0)
+      return SortDirection == ListSortDirection.Ascending ? 1 : -1;
+    else if (groupX.CompareTo(groupY) == -1)
+      return SortDirection == ListSortDirection.Ascending ? -1 : 1;
+    else
+      return 0;
+  }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Sorting the items within group
+
+Group the items of underlying collection along with sorting by adding the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) and the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) with required properties.
+
+{% tabs %}
+{% highlight c# %}
+public GroupingPage()
+{
+    InitializeComponent();
+    listView.DataSource.SortDescriptors.Add(new SortDescriptor { PropertyName = "ContactName", Direction = ListSortDirection.Ascending });
+    //Applying custom grouping
+    listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
+       {
+           PropertyName = "ContactName",
+           KeySelector = (object obj1) =>
+            {
+                var item = (obj1 as Contacts);
+                return item.ContactName[0].ToString();
+            },
+        });
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## Group header summary
 
@@ -1021,30 +1052,6 @@ ListView allows you to provide space between the group header items by using the
 
 
 ## How To 
-
-### Group an item along with sorting
-
-Group the items of underlying collection along with sorting by adding the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) and the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) with required properties.
-
-{% tabs %}
-{% highlight c# %}
-public GroupingPage()
-{
-    InitializeComponent();
-    listView.DataSource.SortDescriptors.Add(new SortDescriptor { PropertyName = "ContactName", Direction = ListSortDirection.Ascending });
-    //Applying custom grouping
-    listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
-       {
-           PropertyName = "ContactName",
-           KeySelector = (object obj1) =>
-            {
-                var item = (obj1 as Contacts);
-                return item.ContactName[0].ToString();
-            },
-        });
-}
-{% endhighlight %}
-{% endtabs %}
 
 ### Allow to select only one item in a group at a time
 

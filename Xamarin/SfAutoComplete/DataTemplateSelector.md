@@ -16,6 +16,13 @@ SfAutoComplete supports DataTemplateSelector, which is used to choose a DataTemp
 
 {% highlight xaml %}
 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
     <ContentPage.BindingContext>
         <local:MobileDetailViewModel/>
     </ContentPage.BindingContext>
@@ -38,17 +45,24 @@ SfAutoComplete supports DataTemplateSelector, which is used to choose a DataTemp
         </ResourceDictionary>
     </ContentPage.Resources>
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <autoComplete:SfAutoComplete DataSource="{Binding MobileCollection}" DisplayMemberPath="Mobile">
-            <autoComplete:SfAutoComplete.ItemTemplate>
+        <autocomplete:SfAutoComplete DataSource="{Binding MobileCollection}" DisplayMemberPath="Mobile">
+            <autocomplete:SfAutoComplete.ItemTemplate>
                 <local:DataTemplateSelectorViewModel DefaultTemplate="{StaticResource default}" SpecificDataTemplate="{StaticResource specific}" />
-            </autoComplete:SfAutoComplete.ItemTemplate>
-        </autoComplete:SfAutoComplete>
+            </autocomplete:SfAutoComplete.ItemTemplate>
+        </autocomplete:SfAutoComplete>
     </StackLayout>
+</ContentPage>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
     public partial class MainPage : ContentPage
     {
         DataTemplate defaultTemplate;
@@ -95,6 +109,7 @@ SfAutoComplete supports DataTemplateSelector, which is used to choose a DataTemp
             Content = layout;
         }
     }
+}
 
 {% endhighlight %}
 
@@ -108,6 +123,8 @@ Define a simple model class MobileDetail with fields IsAvailableInStock, Mobile 
 
 {% highlight C# %}
 
+namespace AutocompleteSample
+{
     public class MobileDetailViewModel
     {
         public ObservableCollection<MobileDetail> MobileCollection { get; set; }
@@ -134,6 +151,7 @@ Define a simple model class MobileDetail with fields IsAvailableInStock, Mobile 
 
         public bool IsAvailableInStock { get; set; }
     }
+}
 
 {% endhighlight %}
 
@@ -149,6 +167,8 @@ The OnSelectTemplate is an overridden method to return a particular DataTemplate
 
 {% highlight C# %}
 
+namespace AutocompleteSample
+{
     public class DataTemplateSelectorViewModel : DataTemplateSelector
     {
         public DataTemplate DefaultTemplate { get; set; }
@@ -163,6 +183,7 @@ The OnSelectTemplate is an overridden method to return a particular DataTemplate
         }
 
     }
+}
 
 {% endhighlight %}
 

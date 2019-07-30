@@ -466,7 +466,7 @@ namespace RadialSample
 
 ## VisibleSegmentCount
 
-The [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem~VisibleSegmentsCountProperty.html) property provides the number of items to be displayed in radial menu.
+The [`VisibleSegmentsCount`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem~VisibleSegmentsCountProperty.html) property provides the number of items to be displayed in radial menu item.
 
 {% tabs %}
 
@@ -515,7 +515,7 @@ namespace RadialSample
 
 ## BackgroundImage
 
-The [`BackgroundImage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem~BackgroundImageProperty.html) property provides the background image to the [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
+The [`BackgroundImage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem~BackgroundImageProperty.html) property provides the background image to the [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html).
 
 {% tabs %}
 

@@ -231,9 +231,9 @@ namespace RadialSample
 
 {% endtabs %}
 
-## Perform an action while tapping the center button
+## Perform an action while tapping the center back button
 
-You can perform an action when tapping the center button of the radial menu. The [`CenterButtonBackTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonBackTapped_EV.html) event occurs when tapping the center button of the radial menu.
+You can perform an action when tapping the center back button of the radial menu. The [`CenterButtonBackTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonBackTapped_EV.html) event occurs when tapping the center button of the radial menu.
 
 {% tabs %}
 

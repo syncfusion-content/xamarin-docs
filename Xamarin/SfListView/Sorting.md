@@ -58,7 +58,7 @@ Sort the items based on the custom logic and it can be applied to either [SfList
 
 You can download the entire sample code from the [github](https://github.com/SyncfusionExamples/xamarin-forms-listview-custom-sorting).
 
-N> If the `PropertyName` in the [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) and `GroupDescriptor` are same then the parameters in the `IComparer` interface method will be passed as [GroupResult](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult.html) in the custom `SortComparer` otherwise data objects are passed. To sort the data items alone, set the different `PropertyName` in both `SortDescriptor` and `GroupDescriptor` properties.
+N> If the `PropertyName` in the [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) and `GroupDescriptor` are same then, [GroupResult](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult.html) will be passed as parameters for the `SortDescriptor.Comparer`. Otherwise data objects are passed. To sort the data items alone, set the different `PropertyName` in both `SortDescriptor` and `GroupDescriptor` properties.
 
 {% tabs %}
 {% highlight xaml %}

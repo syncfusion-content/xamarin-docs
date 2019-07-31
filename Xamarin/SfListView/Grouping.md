@@ -21,6 +21,8 @@ The SfListView allows programmatic grouping by defining the [GroupDescriptor](ht
 * [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html): Describes selector to return the group key.
 * [Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html): Describes comparer to be applied in when sorting take place.
 
+N> If the `PropertyName` in the [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) and `GroupDescriptor` are same then groups will be sorted. If both the `PropertyName` are different, groups are not sorted but the underlying data items will be sorted based on the `PropertyName` specified in the `SortDescriptor`.
+
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
@@ -122,6 +124,8 @@ ListView sorts the groups using default sorting logic of List.
 The SfListView supports sorting the groups based on custom logic applied to either [SfListView.DataSource.GroupComparer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupComparer.html) property or [GroupDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~Comparer.html) added to the `DataSource.GroupDescriptors` collection.
 
 In custom group comparer, all the items present in a group compares each other based on the items count to each group sorted accordingly. You can download the entire sample code [here](https://github.com/SyncfusionExamples/xamarinforms-listview-custom-sorting-groups-)
+
+N> If the `PropertyName` in the [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) and `GroupDescriptor` are same and if you have implemented both the custom `SortComparer` and `GroupComparer` then the custom `GroupComparer` method will be invoked for better sorting performance. To sort the data items alone using `SortComparer`, set the different `PropertyName` in both `SortDescriptor` and `GroupDescriptor` properties.
 
 {% tabs %}
 {% highlight xaml %}

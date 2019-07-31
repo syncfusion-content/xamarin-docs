@@ -56,21 +56,24 @@ N> It is mandatory to specify the `PropertyName` of `SortDescriptor`.
 
 Sort the items based on the custom logic and it can be applied to either [SfListView.DataSource.SortComparer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortComparer.html) property or [SortDescriptor.Comparer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor~Comparer.html) which is added into the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) collection.
 
+You can download the entire sample code from the [github](https://github.com/SyncfusionExamples/xamarin-forms-listview-custom-sorting).
+
+N> If the `PropertyName` in the [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) and `GroupDescriptor` are same then, [GroupResult](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.Extensions.GroupResult.html) will be passed as parameters for the `SortDescriptor.Comparer`. Otherwise data objects are passed. To sort the data items alone, set the different `PropertyName` in both `SortDescriptor` and `GroupDescriptor` properties.
+
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
   <ContentPage.Resources>
     <ResourceDictionary>
-      <local:CustomComparer x:Key="Comparer" />
+      <local:CustomSortComparer x:Key="CustomSortComparer" />
     </ResourceDictionary>
   </ContentPage.Resources>
   <syncfusion:SfListView x:Name="listView"
     <syncfusion:SfListView.DataSource>
       <data:DataSource>
         <data:DataSource.SortDescriptors>
-          <data:SortDescriptor PropertyName="ContactName" Direction="Ascending" 
-                               Comparer="{StaticResource Comparer}"/>
+          <data:SortDescriptor Comparer="{StaticResource CustomSortComparer}"/>
         </data:DataSource.SortDescriptors>
       </data:DataSource>
     </syncfusion:SfListView.DataSource>
@@ -80,54 +83,46 @@ Sort the items based on the custom logic and it can be applied to either [SfList
 {% highlight c# %}
 listView.DataSource.SortDescriptors.Add(new SortDescriptor()
 {
-  PropertyName = "ContactName",
-  Direction = ListSortDirection.Ascending,
-  Comparer = new CustomComparer()
+  Comparer = new CustomSortComparer()
 });
 {% endhighlight %}
 {% endtabs %}
 
 {% tabs %}
 {% highlight c# %}
-public class CustomComparer : IComparer<object>, ISortDirection
+public class CustomSortComparer : IComparer<object>
 {
   public int Compare(object x, object y)
   {
-     int nameX;
-     int nameY;
-
-     //For Contacts Type data
-     if (x.GetType() == typeof(Contacts))
+     if (x.GetType() == typeof(ListViewContactsInfo))
      {
-       //Calculating the length of ContactName if the object type is Contacts
-       nameX = ((Contacts)x).ContactName.Length;
-       nameY = ((Contacts)y).ContactName.Length;
-     }
-     else
-     {
-       nameX = x.ToString().Length;
-       nameY = y.ToString().Length;
+        var xitem = (x as ListViewContactsInfo).ContactName;
+        var yitem = (y as ListViewContactsInfo).ContactName;
+
+        if (xitem.Length > yitem.Length)
+        {
+           return 1;
+        }
+        else if (xitem.Length < yitem.Length)
+        {
+           return -1;
+        }
+        else
+        {
+           if (string.Compare(xitem, yitem) == -1)
+               return -1;
+           else if (string.Compare(xitem, yitem) == 1)
+               return 1;
+        }
      }
 
-     // Objects are compared and return the SortDirection
-     if (nameX.CompareTo(nameY) > 0)
-        return SortDirection == ListSortDirection.Ascending ? 1 : -1;
-     else if (nameX.CompareTo(nameY) == -1)
-        return SortDirection == ListSortDirection.Ascending ? -1 : 1;
-     else
-        return 0;
-   }
-
-   //Get or Set the SortDirection value
-   private ListSortDirection _SortDirection;
-   public ListSortDirection SortDirection
-   {
-     get { return _SortDirection; }
-     set { _SortDirection = value; }
+     return 0;
    }
 }
 {% endhighlight %}
 {% endtabs %}
+
+For more information about custom sorting of groups, please refer the documentation [here](https://help.syncfusion.com/xamarin/sflistview/grouping#custom-sorting-of-groups).
 
 ## Sort the items on header tapped
 

@@ -61,8 +61,6 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 To use the kanban inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and are discussed in the following sections:
 
-N> If you are adding the references from toolbox, below steps are not needed.
-
 ### iOS
 
 To launch the kanban in iOS, call the `SfKanbanRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the `LoadApplication` method is called as demonstrated in the following code sample.

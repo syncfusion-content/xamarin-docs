@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing | SfDataForm | Xamarin.Forms | Syncfusion
-description: Editing in SfDataForm
+description: Editing in SfDataForm for Xamarin.Forms.
 platform: xamarin
 control: SfDataForm
 documentation: UG

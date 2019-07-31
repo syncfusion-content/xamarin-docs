@@ -26,288 +26,13 @@ We have added the following Time Zone's for the respective countries to cover al
 </tr>
 <tr>
 <td>
-AUS Central Standard Time
+Samoa Standard Time
 </td>
 <td>
-Australia/Darwin
+Pacific/Apia
 </td>
 <td>
-UTC + 09:30
-</td>
-</tr>
-<tr>
-<td>
-AUS Eastern Standard Time
-</td>
-<td>
-Australia/Sydney
-</td>
-<td>
-UTC + 10:00
-</td>
-</tr>
-<tr>
-<td>
-Afghanistan Standard Time
-</td>
-<td>
-Asia/Kabul
-</td>
-<td>
-UTC + 04:30
-</td>
-</tr>
-<tr>
-<td>
-Alaskan Standard Time
-</td>
-<td>
-America/Anchorage
-</td>
-<td>
-UTC - 09:00
-</td>
-</tr>
-<tr>
-<td>
-Arab Standard Time
-</td>
-<td>
-Asia/Riyadh
-</td>
-<td>
-UTC + 03:00
-</td>
-</tr>
-<tr>
-<td>
-Arabian Standard Time
-</td>
-<td>
-Etc/GMT-4
-</td>
-<td>
-UTC + 04:00
-</td>
-</tr>
-<tr>
-<td>
-Arabic Standard Time
-</td>
-<td>
-Asia/Baghdad
-</td>
-<td>
-UTC + 03:00
-</td>
-</tr>
-<tr>
-<td>
-Argentina Standard Time
-</td>
-<td>
-America/Buenos_Aires
-</td>
-<td>
-UTC - 03:00
-</td>
-</tr>
-<tr>
-<td>
-Atlantic Standard Time
-</td>
-<td>
-America/Halifax
-</td>
-<td>
-UTC - 04:00
-</td>
-</tr>
-<tr>
-<td>
-Azerbaijan Standard Time
-</td>
-<td>
-Asia/Baku
-</td>
-<td>
-UTC + 04:00
-</td>
-</tr>
-<tr>
-<td>
-Azores Standard Time
-</td>
-<td>
-Atlantic/Azores
-</td>
-<td>
-UTC - 01:00
-</td>
-</tr>
-<tr>
-<td>
-Bahia Standard Time
-</td>
-<td>
-America/Bahia
-</td>
-<td>
-UTC - 03:00
-</td>
-</tr>
-<tr>
-<td>
-Bangladesh Standard Time
-</td>
-<td>
-Asia/Dhaka
-</td>
-<td>
-UTC + 06:00
-</td>
-</tr>
-<tr>
-<td>
-Belarus Standard Time
-</td>
-<td>
-Europe/Minsk
-</td>
-<td>
-UTC + 03:00
-</td>
-</tr>
-<tr>
-<td>
-Canada Central Standard Time
-</td>
-<td>
-America/Regina
-</td>
-<td>
-UTC - 06:00
-</td>
-</tr>
-<tr>
-<td>
-Cape Verde Standard Time
-</td>
-<td>
-Atlantic/Cape_Verde
-</td>
-<td>
-UTC - 01:00
-</td>
-</tr>
-<tr>
-<td>
-Caucasus Standard Time
-</td>
-<td>
-Asia/Yerevan
-</td>
-<td>
-UTC + 04:00
-</td>
-</tr>
-<tr>
-<td>
-Cen. Australia Standard Time
-</td>
-<td>
-Australia/Adelaide
-</td>
-<td>
-UTC + 09:30
-</td>
-</tr>
-<tr>
-<td>
-Central America Standard Time
-</td>
-<td>
-America/Guatemala
-</td>
-<td>
-UTC - 06:00
-</td>
-</tr>
-<tr>
-<td>
-Central Asia Standard Time
-</td>
-<td>
-Asia/Almaty
-</td>
-<td>
-UTC + 06:00
-</td>
-</tr>
-<tr>
-<td>
-Central Brazilian Standard Time
-</td>
-<td>
-America/Cuiaba
-</td>
-<td>
-UTC - 04:00
-</td>
-</tr>
-<tr>
-<td>
-Central Europe Standard Time
-</td>
-<td>
-Europe/Budapest
-</td>
-<td>
-UTC + 01:00
-</td>
-</tr>
-<tr>
-<td>
-Central European Standard Time
-</td>
-<td>
-Europe/Warsaw
-</td>
-<td>
-UTC + 01:00
-</td>
-</tr>
-<tr>
-<td>
-Central Pacific Standard Time
-</td>
-<td>
-Pacific/Guadalcanal
-</td>
-<td>
-UTC + 11:00
-</td>
-</tr>
-<tr>
-<td>
-Central Standard Time
-</td>
-<td>
-America/Chicago
-</td>
-<td>
-UTC - 06:00
-</td>
-</tr>
-<tr>
-<td>
-China Standard Time
-</td>
-<td>
-Asia/Shanghai
-</td>
-<td>
-UTC + 08:00
+UTC - 13:00
 </td>
 </tr>
 <tr>
@@ -323,145 +48,13 @@ UTC - 12:00
 </tr>
 <tr>
 <td>
-E. Africa Standard Time
+UTC-11
 </td>
 <td>
-Africa/Nairobi
+Pacific/Midway
 </td>
 <td>
-UTC + 03:00
-</td>
-</tr>
-<tr>
-<td>
-E. Australia Standard Time
-</td>
-<td>
-Australia/Brisbane
-</td>
-<td>
-UTC + 10:00
-</td>
-</tr>
-<tr>
-<td>
-E. South America Standard Time
-</td>
-<td>
-America/Sao_Paulo
-</td>
-<td>
-UTC - 03:00
-</td>
-</tr>
-<tr>
-<td>
-Eastern Standard Time
-</td>
-<td>
-America/New_York
-</td>
-<td>
-UTC - 05:00
-</td>
-</tr>
-<tr>
-<td>
-Egypt Standard Time
-</td>
-<td>
-Africa/Cairo
-</td>
-<td>
-UTC + 02:00
-</td>
-</tr>
-<tr>
-<td>
-Ekaterinburg Standard Time
-</td>
-<td>
-Asia/Yekaterinburg
-</td>
-<td>
-UTC + 06:00
-</td>
-</tr>
-<tr>
-<td>
-FLE Standard Time
-</td>
-<td>
-Europe/Kiev
-</td>
-<td>
-UTC + 02:00
-</td>
-</tr>
-<tr>
-<td>
-Fiji Standard Time
-</td>
-<td>
-Pacific/Fiji
-</td>
-<td>
-UTC + 12:00
-</td>
-</tr>
-<tr>
-<td>
-GMT Standard Time
-</td>
-<td>
-Europe/London
-</td>
-<td>
-UTC
-</td>
-</tr>
-<tr>
-<td>
-GTB Standard Time
-</td>
-<td>
-Europe/Bucharest
-</td>
-<td>
-UTC + 02:00
-</td>
-</tr>
-<tr>
-<td>
-Georgian Standard Time
-</td>
-<td>
-Asia/Tbilisi
-</td>
-<td>
-UTC + 04:00
-</td>
-</tr>
-<tr>
-<td>
-Greenland Standard Time
-</td>
-<td>
-America/Godthab
-</td>
-<td>
-UTC - 03:00
-</td>
-</tr>
-<tr>
-<td>
-Greenwich Standard Time
-</td>
-<td>
-Atlantic/Reykjavik
-</td>
-<td>
-UTC
+UTC - 11:00
 </td>
 </tr>
 <tr>
@@ -477,266 +70,13 @@ UTC - 10:00
 </tr>
 <tr>
 <td>
-India Standard Time
+Alaskan Standard Time
 </td>
 <td>
-Asia/Calcutta
+America/Anchorage
 </td>
 <td>
-UTC + 05:30
-</td>
-</tr>
-<tr>
-<td>
-Iran Standard Time
-</td>
-<td>
-Asia/Tehran
-</td>
-<td>
-UTC + 03:30
-</td>
-</tr>
-<tr>
-<td>
-Israel Standard Time
-</td>
-<td>
-Asia/Jerusalem
-</td>
-<td>
-UTC + 02:00
-</td>
-</tr>
-<tr>
-<td>
-Jordan Standard Time
-</td>
-<td>
-Asia/Amman
-</td>
-<td>
-UTC + 03:00
-</td>
-</tr>
-<tr>
-<td>
-Kaliningrad Standard Time
-</td>
-<td>
-Europe/Kaliningrad
-</td>
-<td>
-UTC + 03:00
-</td>
-</tr>
-<tr>
-<td>
-Korea Standard Time
-</td>
-<td>
-Asia/Seoul
-</td>
-<td>
-UTC + 09:00
-</td>
-</tr>
-<tr>
-<td>
-Libya Standard Time
-</td>
-<td>
-Africa/Tripoli
-</td>
-<td>
-UTC + 02:00
-</td>
-</tr>
-<tr>
-<td>
-Line Islands Standard Time
-</td>
-<td>
-Pacific/Kiritimati
-</td>
-<td>
-UTC + 14:00
-</td>
-</tr>
-<tr>
-<td>
-Magadan Standard Time
-</td>
-<td>
-Asia/Magadan
-</td>
-<td>
-UTC + 12:00
-</td>
-</tr>
-<tr>
-<td>
-Mauritius Standard Time
-</td>
-<td>
-Indian/Mauritius
-</td>
-<td>
-UTC + 04:00
-</td>
-</tr>
-<tr>
-<td>
-Middle East Standard Time
-</td>
-<td>
-Asia/Beirut
-</td>
-<td>
-UTC + 02:00
-</td>
-</tr>
-<tr>
-<td>
-Montevideo Standard Time
-</td>
-<td>
-America/Montevideo
-</td>
-<td>
-UTC - 03:00
-</td>
-</tr>
-<tr>
-<td>
-Morocco Standard Time
-</td>
-<td>
-Africa/Casablanca
-</td>
-<td>
-UTC
-</td>
-</tr>
-<tr>
-<td>
-Mountain Standard Time
-</td>
-<td>
-America/Denver
-</td>
-<td>
-UTC - 07:00
-</td>
-</tr>
-<tr>
-<td>
-Mountain Standard Time (Mexico)
-</td>
-<td>
-America/Chihuahua
-</td>
-<td>
-UTC - 07:00
-</td>
-</tr>
-<tr>
-<td>
-Myanmar Standard Time
-</td>
-<td>
-Asia/Rangoon
-</td>
-<td>
-UTC + 06:30
-</td>
-</tr>
-<tr>
-<td>
-N. Central Asia Standard Time
-</td>
-<td>
-Asia/Novosibirsk
-</td>
-<td>
-UTC + 07:00
-</td>
-</tr>
-<tr>
-<td>
-Namibia Standard Time
-</td>
-<td>
-Africa/Windhoek
-</td>
-<td>
-UTC + 01:00
-</td>
-</tr>
-<tr>
-<td>
-Nepal Standard Time
-</td>
-<td>
-Asia/Kathmandu
-</td>
-<td>
-UTC + 05:45
-</td>
-</tr>
-<tr>
-<td>
-New Zealand Standard Time
-</td>
-<td>
-Pacific/Auckland
-</td>
-<td>
-UTC + 12:00
-</td>
-</tr>
-<tr>
-<td>
-Newfoundland Standard Time
-</td>
-<td>
-America/St_Johns
-</td>
-<td>
-UTC - 03:30
-</td>
-</tr>
-<tr>
-<td>
-North Asia East Standard Time
-</td>
-<td>
-Asia/Irkutsk
-</td>
-<td>
-UTC + 09:00
-</td>
-</tr>
-<tr>
-<td>
-North Asia Standard Time
-</td>
-<td>
-Asia/Krasnoyarsk
-</td>
-<td>
-UTC + 08:00
-</td>
-</tr>
-<tr>
-<td>
-Pacific SA Standard Time
-</td>
-<td>
-America/Santiago
-</td>
-<td>
-UTC - 04:00
+UTC - 09:00
 </td>
 </tr>
 <tr>
@@ -763,13 +103,145 @@ UTC - 08:00
 </tr>
 <tr>
 <td>
-Pakistan Standard Time
+Mountain Standard Time
 </td>
 <td>
-Asia/Karachi
+America/Denver
 </td>
 <td>
-UTC + 05:00
+UTC - 07:00
+</td>
+</tr>
+<tr>
+<td>
+Mountain Standard Time (Mexico)
+</td>
+<td>
+America/Chihuahua
+</td>
+<td>
+UTC - 07:00
+</td>
+</tr>
+<tr>
+<td>
+US Mountain Standard Time
+</td>
+<td>
+America/Phoenix
+</td>
+<td>
+UTC - 07:00
+</td>
+</tr>
+<tr>
+<td>
+Canada Central Standard Time
+</td>
+<td>
+America/Regina
+</td>
+<td>
+UTC - 06:00
+</td>
+</tr>
+<tr>
+<td>
+Central America Standard Time
+</td>
+<td>
+America/Guatemala
+</td>
+<td>
+UTC - 06:00
+</td>
+</tr>
+<tr>
+<td>
+Central Standard Time
+</td>
+<td>
+America/Chicago
+</td>
+<td>
+UTC - 06:00
+</td>
+</tr>
+<tr>
+<td>
+Eastern Standard Time
+</td>
+<td>
+America/New_York
+</td>
+<td>
+UTC - 05:00
+</td>
+</tr>
+<tr>
+<td>
+SA Pacific Standard Time
+</td>
+<td>
+America/Bogota
+</td>
+<td>
+UTC - 05:00
+</td>
+</tr>
+<tr>
+<td>
+US Eastern Standard Time
+</td>
+<td>
+America/Indianapolis
+</td>
+<td>
+UTC - 05:00
+</td>
+</tr>
+<tr>
+<td>
+Venezuela Standard Time
+</td>
+<td>
+America/Caracas
+</td>
+<td>
+UTC - 04:30
+</td>
+</tr>
+<tr>
+<td>
+Atlantic Standard Time
+</td>
+<td>
+America/Halifax
+</td>
+<td>
+UTC - 04:00
+</td>
+</tr>
+<tr>
+<td>
+Central Brazilian Standard Time
+</td>
+<td>
+America/Cuiaba
+</td>
+<td>
+UTC - 04:00
+</td>
+</tr>
+<tr>
+<td>
+Pacific SA Standard Time
+</td>
+<td>
+America/Santiago
+</td>
+<td>
+UTC - 04:00
 </td>
 </tr>
 <tr>
@@ -785,6 +257,204 @@ UTC - 04:00
 </tr>
 <tr>
 <td>
+SA Western Standard Time
+</td>
+<td>
+America/La_Paz
+</td>
+<td>
+UTC - 04:00
+</td>
+</tr>
+<tr>
+<td>
+Newfoundland Standard Time
+</td>
+<td>
+America/St_Johns
+</td>
+<td>
+UTC - 03:30
+</td>
+</tr>
+<tr>
+<td>
+Bahia Standard Time
+</td>
+<td>
+America/Bahia
+</td>
+<td>
+UTC - 03:00
+</td>
+</tr>
+<tr>
+<td>
+Argentina Standard Time
+</td>
+<td>
+America/Buenos_Aires
+</td>
+<td>
+UTC - 03:00
+</td>
+</tr>
+<tr>
+<td>
+E. South America Standard Time
+</td>
+<td>
+America/Sao_Paulo
+</td>
+<td>
+UTC - 03:00
+</td>
+</tr>
+<tr>
+<td>
+Greenland Standard Time
+</td>
+<td>
+America/Godthab
+</td>
+<td>
+UTC - 03:00
+</td>
+</tr>
+<tr>
+<td>
+Montevideo Standard Time
+</td>
+<td>
+America/Montevideo
+</td>
+<td>
+UTC - 03:00
+</td>
+</tr>
+<tr>
+<td>
+SA Eastern Standard Time
+</td>
+<td>
+America/Cayenne
+</td>
+<td>
+UTC - 03:00
+</td>
+</tr>
+<tr>
+<td>
+UTC-02
+</td>
+<td>
+America/Noronha
+</td>
+<td>
+UTC - 02:00
+</td>
+</tr>
+<tr>
+<td>
+Azores Standard Time
+</td>
+<td>
+Atlantic/Azores
+</td>
+<td>
+UTC - 01:00
+</td>
+</tr>
+<tr>
+<td>
+Cape Verde Standard Time
+</td>
+<td>
+Atlantic/Cape_Verde
+</td>
+<td>
+UTC - 01:00
+</td>
+</tr>
+<tr>
+<td>
+GMT Standard Time
+</td>
+<td>
+Europe/London
+</td>
+<td>
+UTC
+</td>
+</tr>
+<tr>
+<td>
+Greenwich Standard Time
+</td>
+<td>
+Atlantic/Reykjavik
+</td>
+<td>
+UTC
+</td>
+</tr>
+<tr>
+<td>
+Morocco Standard Time
+</td>
+<td>
+Africa/Casablanca
+</td>
+<td>
+UTC
+</td>
+</tr>
+<tr>
+<td>
+UTC
+</td>
+<td>
+America/Danmarkshavn
+</td>
+<td>
+UTC
+</td>
+</tr>
+<tr>
+<td>
+Central Europe Standard Time
+</td>
+<td>
+Europe/Budapest
+</td>
+<td>
+UTC + 01:00
+</td>
+</tr>
+<tr>
+<td>
+Central European Standard Time
+</td>
+<td>
+Europe/Warsaw
+</td>
+<td>
+UTC + 01:00
+</td>
+</tr>
+<tr>
+<td>
+Namibia Standard Time
+</td>
+<td>
+Africa/Windhoek
+</td>
+<td>
+UTC + 01:00
+</td>
+</tr>
+<tr>
+<td>
 Romance Standard Time
 </td>
 <td>
@@ -796,24 +466,256 @@ UTC + 01:00
 </tr>
 <tr>
 <td>
-Russia Time Zone 10
+W. Central Africa Standard Time
 </td>
 <td>
-Asia/Srednekolymsk
+Africa/Lagos
 </td>
 <td>
-UTC + 11:00
+UTC + 01:00
 </td>
 </tr>
 <tr>
 <td>
-Russia Time Zone 11
+W. Europe Standard Time
 </td>
 <td>
-Asia/Kamchatka
+Europe/Berlin
 </td>
 <td>
-UTC + 12:00
+UTC + 01:00
+</td>
+</tr>
+<tr>
+<tr>
+<td>
+Egypt Standard Time
+</td>
+<td>
+Africa/Cairo
+</td>
+<td>
+UTC + 02:00
+</td>
+</tr>
+<tr>
+<td>
+FLE Standard Time
+</td>
+<td>
+Europe/Kiev
+</td>
+<td>
+UTC + 02:00
+</td>
+</tr>
+<tr>
+<td>
+GTB Standard Time
+</td>
+<td>
+Europe/Bucharest
+</td>
+<td>
+UTC + 02:00
+</td>
+</tr>
+<tr>
+<td>
+Israel Standard Time
+</td>
+<td>
+Asia/Jerusalem
+</td>
+<td>
+UTC + 02:00
+</td>
+</tr>
+<tr>
+<td>
+Libya Standard Time
+</td>
+<td>
+Africa/Tripoli
+</td>
+<td>
+UTC + 02:00
+</td>
+</tr>
+<tr>
+<td>
+Middle East Standard Time
+</td>
+<td>
+Asia/Beirut
+</td>
+<td>
+UTC + 02:00
+</td>
+</tr>
+<tr>
+<td>
+South Africa Standard Time
+</td>
+<td>
+Africa/Johannesburg
+</td>
+<td>
+UTC + 02:00
+</td>
+</tr>
+<tr>
+<td>
+Syria Standard Time
+</td>
+<td>
+Asia/Damascus
+</td>
+<td>
+UTC + 02:00
+</td>
+</tr>
+<tr>
+<td>
+Turkey Standard Time
+</td>
+<td>
+Europe/Istanbul
+</td>
+<td>
+UTC + 02:00
+</td>
+</tr>
+<tr>
+<td>
+Arab Standard Time
+</td>
+<td>
+Asia/Riyadh
+</td>
+<td>
+UTC + 03:00
+</td>
+</tr>
+<tr>
+<td>
+Arabic Standard Time
+</td>
+<td>
+Asia/Baghdad
+</td>
+<td>
+UTC + 03:00
+</td>
+</tr>
+<tr>
+<td>
+Belarus Standard Time
+</td>
+<td>
+Europe/Minsk
+</td>
+<td>
+UTC + 03:00
+</td>
+</tr>
+<tr>
+<td>
+E. Africa Standard Time
+</td>
+<td>
+Africa/Nairobi
+</td>
+<td>
+UTC + 03:00
+</td>
+</tr>
+<tr>
+<td>
+Jordan Standard Time
+</td>
+<td>
+Asia/Amman
+</td>
+<td>
+UTC + 03:00
+</td>
+</tr>
+<tr>
+<td>
+Kaliningrad Standard Time
+</td>
+<td>
+Europe/Kaliningrad
+</td>
+<td>
+UTC + 03:00
+</td>
+</tr>
+<tr>
+<td>
+Iran Standard Time
+</td>
+<td>
+Asia/Tehran
+</td>
+<td>
+UTC + 03:30
+</td>
+</tr>
+<tr>
+<td>
+Arabian Standard Time
+</td>
+<td>
+Etc/GMT-4
+</td>
+<td>
+UTC + 04:00
+</td>
+</tr>
+<tr>
+<td>
+Azerbaijan Standard Time
+</td>
+<td>
+Asia/Baku
+</td>
+<td>
+UTC + 04:00
+</td>
+</tr>
+<tr>
+<td>
+Caucasus Standard Time
+</td>
+<td>
+Asia/Yerevan
+</td>
+<td>
+UTC + 04:00
+</td>
+</tr>
+<tr>
+<td>
+Georgian Standard Time
+</td>
+<td>
+Asia/Tbilisi
+</td>
+<td>
+UTC + 04:00
+</td>
+</tr>
+<tr>
+<td>
+Mauritius Standard Time
+</td>
+<td>
+Indian/Mauritius
+</td>
+<td>
+UTC + 04:00
 </td>
 </tr>
 <tr>
@@ -840,79 +742,45 @@ UTC + 04:00
 </tr>
 <tr>
 <td>
-SA Eastern Standard Time
+Afghanistan Standard Time
 </td>
 <td>
-America/Cayenne
+Asia/Kabul
 </td>
 <td>
-UTC - 03:00
-</td>
-</tr>
-<tr>
-<td>
-SA Pacific Standard Time
-</td>
-<td>
-America/Bogota
-</td>
-<td>
-UTC - 05:00
+UTC + 04:30
 </td>
 </tr>
 <tr>
 <td>
-SA Western Standard Time
+Pakistan Standard Time
 </td>
 <td>
-America/La_Paz
+Asia/Karachi
 </td>
 <td>
-UTC - 04:00
+UTC + 05:00
+</td>
+</tr>
+<td>
+West Asia Standard Time
+</td>
+<td>
+Asia/Tashkent
+</td>
+<td>
+UTC + 05:00
 </td>
 </tr>
 <tr>
 <td>
-SE Asia Standard Time
+India Standard Time
 </td>
 <td>
-Asia/Bangkok
+Asia/Calcutta
 </td>
 <td>
-UTC + 07:00
-</td>
-</tr>
-<tr>
-<td>
-Samoa Standard Time
-</td>
-<td>
-Pacific/Apia
-</td>
-<td>
-UTC - 13:00
-</td>
-</tr>
-<tr>
-<td>
-Singapore Standard Time
-</td>
-<td>
-Asia/Singapore
-</td>
-<td>
-UTC + 08:00
-</td>
-</tr>
-<tr>
-<td>
-South Africa Standard Time
-</td>
-<td>
-Africa/Johannesburg
-</td>
-<td>
-UTC + 02:00
+UTC + 05:30
 </td>
 </tr>
 <tr>
@@ -928,13 +796,112 @@ UTC + 05:30
 </tr>
 <tr>
 <td>
-Syria Standard Time
+Nepal Standard Time
 </td>
 <td>
-Asia/Damascus
+Asia/Kathmandu
 </td>
 <td>
-UTC + 02:00
+UTC + 05:45
+</td>
+</tr>
+<tr>
+<td>
+Bangladesh Standard Time
+</td>
+<td>
+Asia/Dhaka
+</td>
+<td>
+UTC + 06:00
+</td>
+</tr>
+<tr>
+<td>
+Central Asia Standard Time
+</td>
+<td>
+Asia/Almaty
+</td>
+<td>
+UTC + 06:00
+</td>
+</tr>
+<tr>
+<td>
+Ekaterinburg Standard Time
+</td>
+<td>
+Asia/Yekaterinburg
+</td>
+<td>
+UTC + 06:00
+</td>
+</tr>
+<tr>
+<td>
+Myanmar Standard Time
+</td>
+<td>
+Asia/Rangoon
+</td>
+<td>
+UTC + 06:30
+</td>
+</tr>
+<tr>
+<td>
+SE Asia Standard Time
+</td>
+<td>
+Asia/Bangkok
+</td>
+<td>
+UTC + 07:00
+</td>
+</tr>
+<tr>
+<td>
+N. Central Asia Standard Time
+</td>
+<td>
+Asia/Novosibirsk
+</td>
+<td>
+UTC + 07:00
+</td>
+</tr>
+<tr>
+<td>
+China Standard Time
+</td>
+<td>
+Asia/Shanghai
+</td>
+<td>
+UTC + 08:00
+</td>
+</tr>
+<tr>
+<td>
+North Asia Standard Time
+</td>
+<td>
+Asia/Krasnoyarsk
+</td>
+<td>
+UTC + 08:00
+</td>
+</tr>
+<tr>
+<td>
+Singapore Standard Time
+</td>
+<td>
+Asia/Singapore
+</td>
+<td>
+UTC + 08:00
 </td>
 </tr>
 <tr>
@@ -950,116 +917,6 @@ UTC + 08:00
 </tr>
 <tr>
 <td>
-Tasmania Standard Time
-</td>
-<td>
-Australia/Hobart
-</td>
-<td>
-UTC + 10:00
-</td>
-</tr>
-<tr>
-<td>
-Tokyo Standard Time
-</td>
-<td>
-Asia/Tokyo
-</td>
-<td>
-UTC + 09:00
-</td>
-</tr>
-<tr>
-<td>
-Tonga Standard Time
-</td>
-<td>
-Pacific/Tongatapu
-</td>
-<td>
-UTC + 13:00
-</td>
-</tr>
-<tr>
-<td>
-Turkey Standard Time
-</td>
-<td>
-Europe/Istanbul
-</td>
-<td>
-UTC + 02:00
-</td>
-</tr>
-<tr>
-<td>
-US Eastern Standard Time
-</td>
-<td>
-America/Indianapolis
-</td>
-<td>
-UTC - 05:00
-</td>
-</tr>
-<tr>
-<td>
-US Mountain Standard Time
-</td>
-<td>
-America/Phoenix
-</td>
-<td>
-UTC - 07:00
-</td>
-</tr>
-<tr>
-<td>
-UTC
-</td>
-<td>
-America/Danmarkshavn
-</td>
-<td>
-UTC
-</td>
-</tr>
-<tr>
-<td>
-UTC+12
-</td>
-<td>
-Pacific/Tarawa
-</td>
-<td>
-UTC + 12:00
-</td>
-</tr>
-<tr>
-<td>
-UTC-02
-</td>
-<td>
-America/Noronha
-</td>
-<td>
-UTC - 02:00
-</td>
-</tr>
-<tr>
-<td>
-UTC-11
-</td>
-<td>
-Pacific/Midway
-</td>
-<td>
-UTC - 11:00
-</td>
-</tr>
-<tr>
-<td>
 Ulaanbaatar Standard Time
 </td>
 <td>
@@ -1067,28 +924,6 @@ Asia/Ulaanbaatar
 </td>
 <td>
 UTC + 08:00
-</td>
-</tr>
-<tr>
-<td>
-Venezuela Standard Time
-</td>
-<td>
-America/Caracas
-</td>
-<td>
-UTC - 04:30
-</td>
-</tr>
-<tr>
-<td>
-Vladivostok Standard Time
-</td>
-<td>
-Asia/Vladivostok
-</td>
-<td>
-UTC + 11:00
 </td>
 </tr>
 <tr>
@@ -1104,35 +939,90 @@ UTC + 08:00
 </tr>
 <tr>
 <td>
-W. Central Africa Standard Time
+Korea Standard Time
 </td>
 <td>
-Africa/Lagos
+Asia/Seoul
 </td>
 <td>
-UTC + 01:00
-</td>
-</tr>
-<tr>
-<td>
-W. Europe Standard Time
-</td>
-<td>
-Europe/Berlin
-</td>
-<td>
-UTC + 01:00
+UTC + 09:00
 </td>
 </tr>
 <tr>
 <td>
-West Asia Standard Time
+North Asia East Standard Time
 </td>
 <td>
-Asia/Tashkent
+Asia/Irkutsk
 </td>
 <td>
-UTC + 05:00
+UTC + 09:00
+</td>
+</tr>
+<tr>
+<td>
+Tokyo Standard Time
+</td>
+<td>
+Asia/Tokyo
+</td>
+<td>
+UTC + 09:00
+</td>
+</tr>
+<tr>
+<td>
+AUS Central Standard Time
+</td>
+<td>
+Australia/Darwin
+</td>
+<td>
+UTC + 09:30
+</td>
+</tr>
+<tr>
+<td>
+Cen. Australia Standard Time
+</td>
+<td>
+Australia/Adelaide
+</td>
+<td>
+UTC + 09:30
+</td>
+</tr>
+<tr>
+<td>
+AUS Eastern Standard Time
+</td>
+<td>
+Australia/Sydney
+</td>
+<td>
+UTC + 10:00
+</td>
+</tr>
+<tr>
+<td>
+E. Australia Standard Time
+</td>
+<td>
+Australia/Brisbane
+</td>
+<td>
+UTC + 10:00
+</td>
+</tr>
+<tr>
+<td>
+Tasmania Standard Time
+</td>
+<td>
+Australia/Hobart
+</td>
+<td>
+UTC + 10:00
 </td>
 </tr>
 <tr>
@@ -1155,6 +1045,116 @@ Asia/Yakutsk
 </td>
 <td>
 UTC + 10:00
+</td>
+</tr>
+<tr>
+<td>
+Central Pacific Standard Time
+</td>
+<td>
+Pacific/Guadalcanal
+</td>
+<td>
+UTC + 11:00
+</td>
+</tr>
+<tr>
+<td>
+Russia Time Zone 10
+</td>
+<td>
+Asia/Srednekolymsk
+</td>
+<td>
+UTC + 11:00
+</td>
+</tr>
+<tr>
+<td>
+Vladivostok Standard Time
+</td>
+<td>
+Asia/Vladivostok
+</td>
+<td>
+UTC + 11:00
+</td>
+</tr>
+<tr>
+<td>
+Fiji Standard Time
+</td>
+<td>
+Pacific/Fiji
+</td>
+<td>
+UTC + 12:00
+</td>
+</tr>
+<tr>
+<td>
+Magadan Standard Time
+</td>
+<td>
+Asia/Magadan
+</td>
+<td>
+UTC + 12:00
+</td>
+</tr>
+<tr>
+<td>
+New Zealand Standard Time
+</td>
+<td>
+Pacific/Auckland
+</td>
+<td>
+UTC + 12:00
+</td>
+</tr>
+<tr>
+<td>
+Russia Time Zone 11
+</td>
+<td>
+Asia/Kamchatka
+</td>
+<td>
+UTC + 12:00
+</td>
+</tr>
+<tr>
+<td>
+UTC+12
+</td>
+<td>
+Pacific/Tarawa
+</td>
+<td>
+UTC + 12:00
+</td>
+</tr>
+<tr>
+<td>
+Tonga Standard Time
+</td>
+<td>
+Pacific/Tongatapu
+</td>
+<td>
+UTC + 13:00
+</td>
+</tr>
+<tr>
+<td>
+Line Islands Standard Time
+</td>
+<td>
+Pacific/Kiritimati
+</td>
+<td>
+UTC + 14:00
 </td>
 </tr>
 </table>

@@ -410,6 +410,7 @@ namespace AutocompleteSample
 }
 
 {% endhighlight %}
+{% endtabs %}
 
 ![token represents the image and text with closebutton](images/MultiSelect/TokenRepresentation.png)
 

@@ -82,7 +82,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To deploy the text input layout in `Release` mode, initialize the kanban assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code samples.
+To deploy the kanban in `Release` mode, initialize the kanban assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code samples.
 
 {% highlight C# %} 
 

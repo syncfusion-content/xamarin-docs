@@ -146,13 +146,15 @@ The SfBusyIndicator control is configured entirely in C# code or by using XAML m
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
-	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
-	x:Class="GettingStarted.BusyIndicatorPage">
-<ContentPage.Content>
- <syncfusion:SfBusyIndicator x:Name="busyindicator" />	
-</ContentPage.Content>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             x:Class="GettingStarted.MainPage">
+    <ContentPage.Content>
+        <busyindicator:SfBusyIndicator x:Name="busyindicator" />
+    </ContentPage.Content>
 </ContentPage>
    
 {% endhighlight %}
@@ -164,17 +166,15 @@ using Xamarin.Forms;
 
 namespace GettingStarted
 {
-public partial class BusyIndicatorPage : ContentPage
-{
-	public BusyIndicatorPage()
-	{
-		InitializeComponent();
-
-		SfBusyIndicator busyIndicator = new SfBusyIndicator();
-
-		this.Content = busyIndicator;
-	}
-}
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfBusyIndicator busyIndicator = new SfBusyIndicator();
+            this.Content = busyIndicator;
+        }
+    }
 }
 
 {% endhighlight %}
@@ -191,13 +191,19 @@ Following example depicts the battery type animation for SfBusyIndicator.
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:GettingStarted" 
-	xmlns:syncfusion="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
-	x:Class="GettingStarted.BusyIndicatorPage">
-<ContentPage.Content>
- <syncfusion:SfBusyIndicator x:Name="busyindicator" AnimationType="Battery" ViewBoxWidth = "150" ViewBoxHeight="150" TextColor="Maroon" />	
-</ContentPage.Content>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             x:Class="GettingStarted.MainPage">
+    <ContentPage.Content>
+        <busyindicator:SfBusyIndicator x:Name="busyindicator" 
+                                       AnimationType="Battery" 
+                                       ViewBoxWidth = "150" 
+                                       ViewBoxHeight="150" 
+                                       TextColor="Maroon" />
+    </ContentPage.Content>
 </ContentPage>
 
 {% endhighlight %}
@@ -206,22 +212,79 @@ Following example depicts the battery type animation for SfBusyIndicator.
 
 using Syncfusion.SfBusyIndicator.XForms;
 using Xamarin.Forms;
+
 namespace GettingStarted
 {
-	public partial class BusyIndicatorPage : ContentPage
-	{
-		public BusyIndicatorPage()
-		{
-			InitializeComponent();
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfBusyIndicator busyIndicator = new SfBusyIndicator()
+            {
+                AnimationType = AnimationTypes.Battery,
+                ViewBoxHeight = 150,
+                ViewBoxWidth = 150,
+                TextColor = Color.Maroon
+            };
 
-			SfBusyIndicator busyIndicator = new SfBusyIndicator();
-			busyIndicator.AnimationType = AnimationTypes.Battery;
-			busyIndicator.ViewBoxWidth = 150;
-			busyIndicator.ViewBoxHeight = 150;
-			busyIndicator.TextColor = Color.Maroon;
-			this.Content = busyIndicator;
-		}
-	}
+            this.Content = busyIndicator;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## EnableAnimation
+
+SfBusyIndicator provides options to enable or disable animation of the Busy Indicator. Animation can be enabled or disabled using the [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBusyIndicator.XForms~Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator~EnableAnimationProperty.html) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             x:Class="GettingStarted.MainPage">
+    <ContentPage.Content>
+        <busyindicator:SfBusyIndicator x:Name="busyindicator" 
+                                       AnimationType="Battery" 
+                                       ViewBoxWidth = "150" 
+                                       ViewBoxHeight="150"
+                                       EnableAnimation="True"/>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.SfBusyIndicator.XForms;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfBusyIndicator busyIndicator = new SfBusyIndicator()
+            {
+                AnimationType = AnimationTypes.Ball,
+                ViewBoxHeight = 150,
+                ViewBoxWidth = 150,
+                EnableAnimation = true
+            };
+
+            this.Content = busyIndicator;
+        }
+    }
 }
 
 {% endhighlight %}

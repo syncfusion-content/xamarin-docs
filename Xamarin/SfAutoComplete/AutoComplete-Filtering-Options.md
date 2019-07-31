@@ -613,17 +613,12 @@ Filter items in the suggestion list based on a custom search by the user. This w
                                      >
             <autocomplete:SfAutoComplete.AutoCompleteSource>
                  <ListCollection:List x:TypeArguments="x:String">
-                    <x:String>India</x:String>
-                    <x:String>Uganda</x:String>
-                    <x:String>Ukraine</x:String>
-                    <x:String>Canada</x:String>
-                    <x:String>United Arab Emirates</x:String>
-                    <x:String>France</x:String>
-                    <x:String>United Kingdom</x:String>
-                    <x:String>China</x:String>
-                    <x:String>United States</x:String>
-                    <x:String>Japan</x:String>
+                    <x:String>Albania</x:String>
+                    <x:String>Algeria</x:String>
+                    <x:String>American Samoa</x:String>
+                    <x:String>Andorra</x:String>
                     <x:String>Angola</x:String>
+                    <x:String>Anguilla</x:String>
                 </ListCollection:List>
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
@@ -663,17 +658,12 @@ namespace AutocompleteSample
                 Filter = ContainingSpaceFilter,
                 AutoCompleteSource = new List<string>()
                 {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
+                    "Albania",
+                    "Algeria",
+                    "American Samoa",
+                    "Andorra",
+                    "Angola",
+                    "Anguilla"
                 }
             };
 

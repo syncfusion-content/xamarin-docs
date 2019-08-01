@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting started
 
-The UI Kit screens can be added in your application by the following two ways: 
+The UI Kit screens can be added in your application by the following two ways:
 
 1. Using **Essential UI Kit for Xamarin.Forms** Visual Studio extension.
 

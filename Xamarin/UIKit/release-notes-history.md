@@ -27,15 +27,6 @@ The Syncfusion Essential UI Kit is a collection of easy-to-use, extendable, and 
 * Error and Empty
 
 
-## UI Kit version 1.0.0.1 
-
-
-The screens can be added in your application by the following two ways: 
-
-1. Using **XAML UI Kit for Xamarin.Forms** Visual Studio extension.
-
-2. Copying the files from our open source [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms).
-
 
 
 

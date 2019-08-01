@@ -24,6 +24,19 @@ The following assemblies should be added for exporting the SfDataGrid to Excel f
 </tr>
 </table>
 
+If NuGet package is installed in the project. The following NuGet package should be installed to export the SfDataGrid to Excel file.
+
+<table>
+<tr>
+<th> Project </th>
+<th> Required package </th>
+</tr>
+<tr>
+<td> Xamarin.Forms </td>
+<td> Syncfusion.Xamarin.DataGridExport</td>
+</tr>
+</table>
+
 The following code illustrates how to create and display a SfDataGrid in view.
 
 {% tabs %}

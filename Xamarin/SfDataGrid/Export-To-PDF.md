@@ -24,6 +24,19 @@ The following assemblies should be added for exporting to PDF file.
 </tr>
 </table>
 
+If NuGet package is installed in the project. The following NuGet package should be installed to export the SfDataGrid to PDF file.
+
+<table>
+<tr>
+<th> Project </th>
+<th> Required package </th>
+</tr>
+<tr>
+<td> Xamarin.Forms </td>
+<td> Syncfusion.Xamarin.DataGridExport</td>
+</tr>
+</table>
+
 You can export the SfDataGrid to PDF by using the following extension methods present in the Syncfusion.SfDataGrid.XForms.Exporting namespace.
 
 * [ExportToPdf](https://help.syncfusion.com/xamarin/sfdatagrid/export-to-pdf#exporttopdf)

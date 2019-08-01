@@ -9,7 +9,7 @@ documentation: ug
 
 # Release Notes
 
-The UI Kit contains elegantly designed XAML templates for Xamarin.Forms apps. These templates are compatible with Android, iOS, and UWP platforms, and use the MVVM design pattern to provide trouble-free integration.
+The UI Kit contains elegantly designed XAML pages for Xamarin.Forms apps. These templates are compatible with Android, iOS, and UWP platforms, and use the MVVM design pattern to provide trouble-free integration.
 
 To know more please click [here](https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms/blob/master/README.md)
 
@@ -21,7 +21,7 @@ The UI Kit version 1.0.0.0 has 45 screens for the following categories with RTL 
 * ECommerce
 * Chat
 * Feedback
-* Contact us
+* Contact Us
 * About Us
 * Article
 * Navigation

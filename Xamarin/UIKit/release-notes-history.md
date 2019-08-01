@@ -26,9 +26,3 @@ The UI Kit version 1.0.0.0 has 45 screens for the following categories with RTL 
 * Article
 * Navigation
 * Error and Empty
-
-
-
-
-
-

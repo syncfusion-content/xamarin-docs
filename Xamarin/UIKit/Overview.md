@@ -15,13 +15,21 @@ The Syncfusion Essential UI Kit is a collection of easy-to-use, extendable, and 
 * ECommerce
 * Chat
 * Feedback
-* Contact us
+* Contact Us
 * About Us
 * Article
 * Navigation
 * Error and Empty
 
-The screens are developed with MVVM pattern that separates the UI and business logic results in a clean, professional, and scalable representation of a user interface in your Xamarin.Forms application.
+The screens are developed with MVVM pattern, which separates the UI and business logic results in a clean, professional, and scalable representation of user interface in your Xamarin.Forms applications. You can get the UI Kit application from [Google Play Store] (https://play.google.com/store/apps/details?id=com.syncfusion.xamarin.uikit) and the complete application is available in [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms)
+
+# Supported Platforms
+
+* Android 5.0 (or API level 21) and later versions.
+* iOS 9.0 and later versions.
+* UWP Build 17763 and later versions
+
+The required minimum version of Xamarin.Forms is 4.0.0.425677.
 
 ## Adding predefined screens to your application
 
@@ -31,7 +39,7 @@ The screens can be added in your application by the following two ways:
 
 2. Copying the files from our open source [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms).
 
-## Essential UI Kit for Xamarin.Forms extension
+## Essential UI Kit for Xamarin.Forms Extension
 
 This is the easiest way to add the pre-defined screens to your application. The following steps explain how to add screens to an application with our extension: 
 
@@ -68,9 +76,12 @@ Example: If you added the Login Page, then you must invoke the page as demonstra
 MainPage = new SampleFormsApplication.Views.Login.LoginPage();
 {% endhighlight %} 
 
-In real-world applications you may need to update the below to use these templates.
-1. Updating the services for fetching a list of items from a remote server or from local.
-2. Updating the business logics in view-models.
-3. Wire up the navigation from XAML file. Example: (The “Add To Cart” in “Products Details” page button must navigate the screen to “Cart” page) 
+In real-world applications, you may need to do the following to use these templates:
+1. Update the services for fetching the data from remote server or local database.
+2. Wire up the navigation and update the business logics in view models.
+
+## Requesting Screens and Reporting Bugs
+
+If you would like to request a new screen or report a bug in existing screens, create a feature request or submit a bug through our [feedback portal](https://www.syncfusion.com/feedback/xamarin-forms?control=ui-kit)
 
 N> Now, **XAML UI Kit for Xamarin.Forms** Visual Studio extension is supported in the Windows operating system only.

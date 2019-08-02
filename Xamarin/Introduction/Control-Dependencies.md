@@ -548,7 +548,7 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.L
 
 ## Exporting SfDataGrid to Excel and PDF
 
-For exporting SfDataGrid to excel and PDF, the following references need to be added in your application.
+For exporting SfDataGrid to Excel and PDF, the following reference need to be added in your application.
 
 <dl>
   <dt>NuGet</dt>

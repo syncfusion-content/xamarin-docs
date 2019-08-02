@@ -37,7 +37,7 @@ If you are using nuget package in the package, the following NuGet package shoul
 </tr>
 </table>
 
-The following code illustrates how to create and display a SfDataGrid in view.
+The following code sample demonstrates how to create and display a SfDataGrid in view.
 
 {% tabs %}
 {% highlight xaml %}

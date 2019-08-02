@@ -24,7 +24,7 @@ The following assemblies should be added for exporting the SfDataGrid to Excel f
 </tr>
 </table>
 
-If NuGet package is installed in the project. The following NuGet package should be installed to export the SfDataGrid to Excel file.
+If you are using nuget package in the package, the following NuGet package should be installed to export the SfDataGrid to Excel file.
 
 <table>
 <tr>

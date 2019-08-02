@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Localization in SfDataForm
+title: Localization in Syncfusion SfDataForm for Xamairn.Forms
 description: Describes how to localize the SfDataForm display text and error messages based on culture.
 platform: xamarin
 control: SfDataForm
@@ -111,6 +111,6 @@ private void DataForm_Validating(object sender, ValidatingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![](SfDataForm_images/DataFormLocalization.png)
+![Localization in DataForm for Xamarin.Forms](SfDataForm_images/DataFormLocalization.png)
 
 You can download the entire source code of this demo for Xamarin.Forms using attributes from here [LocalizationThroughAttribute](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataFormLocalizationAttribute-1609800763.zip) and using event from here [LocalizationThroughEvent](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataFormLocalizationEvent-933806775.zip).

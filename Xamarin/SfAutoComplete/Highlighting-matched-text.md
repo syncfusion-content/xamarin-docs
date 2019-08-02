@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MatchHighlighting in Syncfusion SfAutoComplete control for Xamarin.Forms
+title: MatchHighlighting in Syncfusion SfAutoComplete control 
 description: Learn how to highlight the matched text in SfAutoComplete
 platform: xamarin
 control: SfAutoComplete
@@ -29,24 +29,82 @@ It highlights the first position of the matching characters in the suggestion li
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" TextHighlightMode="FirstOccurrence" HighlightedTextColor="Red" HighlightTextFontAttributes="Bold" SuggestionMode="StartsWith"/>                    
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete HeightRequest="40"
+                                     TextHighlightMode="FirstOccurrence"
+                                     HighlightedTextColor="Red"
+                                     HighlightedTextFontAttributes="Bold"
+                                     SuggestionMode="StartsWith">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Albania</x:String>
+                    <x:String>Algeria</x:String>
+                    <x:String>American Samoa</x:String>
+                    <x:String>Andorra</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-autoComplete.SuggestionMode= SuggestionMode.StartsWith;
-autoComplete.TextHighlightMode=OccurrenceMode.FirstOccurrence;
-autoComplete.HighlightedTextColor= Color.Red;
-autoComplete.HighlightedTextFontAttributes = FontAttributes.Bold;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                SuggestionMode = SuggestionMode.StartsWith,
+                TextHighlightMode = OccurrenceMode.FirstOccurrence,
+                HighlightedTextColor = Color.Red,
+                HighlightedTextFontAttributes = FontAttributes.Bold,
+                AutoCompleteSource = new List<string>()
+                {
+                    "Albania",
+                    "Algeria",
+                    "American Samoa",
+                    "Andorra"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/Highlighting-matched-text/FirstOccurrance.png)
+![Highlighting matched text](images/Highlighting-matched-text/FirstOccurrance.png)
 
 ## Multiple Occurrence
 
@@ -56,20 +114,78 @@ It highlights the matching character that are present everywhere in the suggesti
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" TextHighlightMode="MultipleOccurrence" HighlightedTextColor="Red" HighlightTextFontAttributes="Bold" SuggestionMode="Contains"/>                    
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete HeightRequest="40"
+                                     TextHighlightMode="MultipleOccurrence"
+                                     HighlightedTextColor="Red"
+                                     HighlightedTextFontAttributes="Bold"
+                                     SuggestionMode="Contains">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Albania</x:String>
+                    <x:String>Algeria</x:String>
+                    <x:String>American Samoa</x:String>
+                    <x:String>Andorra</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-autoComplete.SuggestionMode= SuggestionMode.Contains;
-autoComplete.TextHighlightMode=OccurrenceMode.MultipleOccurrence;
-autoComplete.HighlightedTextColor= Color.Red;
-autoComplete.HighlightedTextFontAttributes = FontAttributes.Bold;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                SuggestionMode = SuggestionMode.Contains,
+                TextHighlightMode = OccurrenceMode.MultipleOccurrence,
+                HighlightedTextColor = Color.Red,
+                HighlightedTextFontAttributes = FontAttributes.Bold,
+                AutoCompleteSource = new List<string>()
+                {
+                    "Albania",
+                    "Algeria",
+                    "American Samoa",
+                    "Andorra"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
-![](images/Highlighting-matched-text/MultipleOccurrance.png)
+![Highlighting matched text](images/Highlighting-matched-text/MultipleOccurrance.png)

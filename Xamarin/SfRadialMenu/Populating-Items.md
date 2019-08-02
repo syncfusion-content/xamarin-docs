@@ -13,258 +13,160 @@ This section explains the ways about populating items through radial menu item a
 
 ## Through radial menu items
 
-By passing collection of `SfRadialMenuItem`, you can get the view of `SfRadialMenu` control. radial menu item class provides various options to customize the items by giving custom views, font icons, and images. It is possible to add radial menu items hierarchically. Item selection can be identified by using ItemTapped event. The ItemTapped event will be fired whenever you tap an item from radial menu.
+By passing a collection of `SfRadialMenuItem`, you can get the view of `SfRadialMenu` control. The radial menu item class provides various options to customize the items by giving custom views, font icons, and images. You can add radial menu items by hierarchy.
+
+### Adding outer rim items of radial menu
+
+The following code snippet demonstrates how to add the outer rim items of radial menu.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" BackgroundColor="White"
- xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="RadialMenuGettingStarted.RadialMenuPage"
- xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms">
-    
-<ContentPage.Content>
-           <radialMenu:SfRadialMenu x:Name="radial_Menu" CenterButtonText="&#xe700;" CenterButtonBackText="&#xe72b;" CenterButtonFontFamily="Segoe MDL2 Assets.ttf" CenterButtonRadius="32">
-				<radialMenu:SfRadialMenu.Items>
-					<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" FontIconText="&#xe734;" IconFontFamily="Segoe MDL2 Assets.ttf">
-						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe734;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem  ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe738;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe72b;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped"
-							 FontIconText="&#xe700;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-						</radialMenu:SfRadialMenuItem.Items>
-					</radialMenu:SfRadialMenuItem>
-					<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" FontIconText="&#xe700;" IconFontFamily="Segoe MDL2 Assets.ttf">
-						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe734;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe738;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe700;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe72b;"" IconFontFamily="Segoe MDL2 Assets.ttf" />
-						</radialMenu:SfRadialMenuItem.Items>
-					</radialMenu:SfRadialMenuItem>
-					<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" FontIconText="&#xe72d;" IconFontFamily="Segoe MDL2 Assets.ttf">
-						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped"
-							 FontIconText="&#xe734;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe72e;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe734;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-						</radialMenu:SfRadialMenuItem.Items>
-					</radialMenu:SfRadialMenuItem>
-					<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" FontIconText="&#xe735;" IconFontFamily="Segoe MDL2 Assets.ttf">
-						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" IconFontSize="16" FontIconText="&#xe734;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" IconFontSize="18" FontIconText="&#xe738;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" IconFontSize="20" FontIconText="&#xe72b;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-						</radialMenu:SfRadialMenuItem.Items>
-					</radialMenu:SfRadialMenuItem>
-					<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" FontIconText="&#xe700;" IconFontFamily="Segoe MDL2 Assets.ttf">
-						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe73b;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe73a;"" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe739;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-						</radialMenu:SfRadialMenuItem.Items>
-					</radialMenu:SfRadialMenuItem>
-					<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" FontIconText="&#xe73a;" IconFontFamily="Segoe MDL2 Assets.ttf">
-						<radialMenu:SfRadialMenuItem.Items>
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe73d;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe73c;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-							<radialMenu:SfRadialMenuItem ItemTapped="Handle_ItemTapped" 
-							FontIconText="&#xe734;" IconFontFamily="Segoe MDL2 Assets.ttf" />
-						</radialMenu:SfRadialMenuItem.Items>
-					</radialMenu:SfRadialMenuItem>
-				</radialMenu:SfRadialMenu.Items>
-			</radialMenu:SfRadialMenu>
-    </ContentPage.Content>
-</ContentPage> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadialSample"
+             xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             x:Class="RadialSample.MainPage">
+    <radialMenu:SfRadialMenu>
+        <radialMenu:SfRadialMenu.Items>
+            <radialMenu:SfRadialMenuItem Text="Bold" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Copy" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Undo" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Paste" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Color" FontSize="12"/>
+        </radialMenu:SfRadialMenu.Items>
+    </radialMenu:SfRadialMenu>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-using Syncfusion.XForms.SfRadialMenu;
+using Syncfusion.SfRadialMenu.XForms;
+using System.Collections.ObjectModel;
 using Xamarin.Forms;
 
-public class App : Application
-    {
-        public App()
-        {
-            MainPage = new RadialMenuPage ();
-        }
-
-    }
-Public class RadialMenuPage : ContentPage
+namespace RadialSample
 {
-	public RadialMenuPage ()
-	{
-        InitializeComponent();
-		//Creating instance for RadialMenu
-			SfRadialMenu radialMenu = new SfRadialMenu();
-
-			//Initializing RadialMenu's properties
-			radialMenu.CenterButtonText = "\uE713";
-			radialMenu.CenterButtonBackText = "\uE72B";
-			radialMenu.CenterButtonFontFamily = "Segoe MDL2 Assets.ttf";
-			radialMenu.CenterButtonBackFontFamily = "Segoe MDL2 Assets.ttf";
-			radialMenu.CenterButtonRadius = 32;
-			radialMenu.CenterButtonBorderColor = Color.White;
-
-			//Adding RadialMenu items
-
-			string[] layer = new string[] { "\uE701", "\uE702", "\uEA8F", "\uE706", "\uEBAA", "\uE7E8" };
-			string[] Wi-Fi = new string[] { "\uEC3B", "\uEC3A", "\uEC39", "\uEC38", "\uEC37" };
-			string[] battery = new string[] { "\uEBB8", "\uEBBC", "\uEBC0" };
-			string[] brightness = new string[] { "\uEC8A", "\uEC8A", "\uE706" };
-			string[] profile = new string[] { "\uE7ED", "\uE877", "\uEA8F" };
-			string[] power = new string[] { "\uE708", "\uE777", "\uE7E8" };
-
-			//Adding radialMenu main menu items
-			for (int i = 0; i < 6; i++)
-			{
-				SfRadialMenuItem mainMenuItems = new SfRadialMenuItem();
-				mainMenuItems.IconFontSize = 20;
-				mainMenuItems.FontIconText = layer[i];
-				mainMenuItems.ItemHeight = 30;
-				mainMenuItems.ItemWidth = 40;
-				mainMenuItems.TextColor = Color.White;
-				mainMenuItems.ItemTapped += Handle_ItemTapped;
-				mainMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
-				radialMenu.Items.Add(mainMenuItems);
-			}
-
-			// Adding Wi-Fi  submenu items
-			for (int i = 0; i < 5; i++)
-			{
-				SfRadialMenuItem Wi-FiSubMenuItems = new SfRadialMenuItem();
-				Wi-FiSubMenuItems.IconFontSize = 20;
-				Wi-FiSubMenuItems.FontIconText = wifi[i];
-				Wi-FiSubMenuItems.ItemHeight = 30;
-				Wi-FiSubMenuItems.ItemWidth = 40;
-				Wi-FiSubMenuItems.TextColor = Color.White;
-				Wi-FiSubMenuItems.ItemTapped += Handle_ItemTapped;
-				Wi-FiSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
-				radialMenu.Items[0].Items.Add(Wi-FiSubMenuItems);
-			}
-
-			//Adding bluetooth submenu items
-			for (int i = 0; i < 5; i++)
-			{
-				SfRadialMenuItem bluetoothSubMenuItems = new SfRadialMenuItem();
-				bluetoothSubMenuItems.IconFontSize = 20;
-				bluetoothSubMenuItems.FontIconText = Wi-Fi[i];
-				bluetoothSubMenuItems.ItemHeight = 30;
-				bluetoothSubMenuItems.ItemWidth = 40;
-				bluetoothSubMenuItems.TextColor = Color.White;
-				bluetoothSubMenuItems.ItemTapped += Handle_ItemTapped;
-				bluetoothSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
-				radialMenu.Items[1].Items.Add(bluetoothSubMenuItems);
-			}
-
-			//Adding profile submenu items
-			for (int i = 0; i < 3; i++)
-			{
-				SfRadialMenuItem profileSubMenuItems = new SfRadialMenuItem();
-				profileSubMenuItems.IconFontSize = 20;
-				profileSubMenuItems.FontIconText = profile[i];
-				profileSubMenuItems.ItemHeight = 30;
-				profileSubMenuItems.ItemWidth = 40;
-				profileSubMenuItems.TextColor = Color.White;
-				profileSubMenuItems.ItemTapped += Handle_ItemTapped;
-				profileSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
-				radialMenu.Items[2].Items.Add(profileSubMenuItems);
-			}
-
-			//Adding brightness submenu items
-			for (int i = 0; i < 3; i++)
-			{
-				SfRadialMenuItem brightnessSubMenuItems = new SfRadialMenuItem();
-				brightnessSubMenuItems.IconFontSize = 20;
-				brightnessSubMenuItems.FontIconText = brightness[i];
-				brightnessSubMenuItems.ItemHeight = 30;
-				brightnessSubMenuItems.ItemWidth = 40;
-				brightnessSubMenuItems.TextColor = Color.White;
-				brightnessSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
-				brightnessSubMenuItems.ItemTapped += Handle_ItemTapped;
-				radialMenu.Items[3].Items.Add(brightnessSubMenuItems);
-			}
-
-			//Adding battery submenu items
-			for (int i = 0; i < 3; i++)
-			{
-				SfRadialMenuItem batterySubMenuItems = new SfRadialMenuItem();
-				batterySubMenuItems.IconFontSize = 20;
-				batterySubMenuItems.FontIconText = battery[i];
-				batterySubMenuItems.ItemHeight = 30;
-				batterySubMenuItems.ItemWidth = 40;
-				batterySubMenuItems.TextColor = Color.White;
-				batterySubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
-				batterySubMenuItems.ItemTapped += Handle_ItemTapped;
-				radialMenu.Items[4].Items.Add(batterySubMenuItems);
-			}
-
-			//Adding power submenu items
-			for (int i = 0; i < 3; i++)
-			{
-				SfRadialMenuItem powerSubMenuItems = new SfRadialMenuItem();
-				powerSubMenuItems.IconFontSize = 20;
-				powerSubMenuItems.FontIconText = power[i];
-				powerSubMenuItems.ItemHeight = 30;
-				powerSubMenuItems.ItemWidth = 40;
-				powerSubMenuItems.TextColor = Color.White;
-				powerSubMenuItems.IconFontFamily = "Segoe MDL2 Assets.ttf";
-				powerSubMenuItems.ItemTapped += Handle_ItemTapped;
-				radialMenu.Items[5].Items.Add(powerSubMenuItems);
-			}
-
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfRadialMenu radialMenu = new SfRadialMenu();
+            ObservableCollection<SfRadialMenuItem> itemCollection = new ObservableCollection<SfRadialMenuItem>();
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Bold", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Copy", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Paste", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Undo", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Color", FontSize = 12 });
+            radialMenu.Items = itemCollection;
             this.Content = radialMenu;
-	}
+        }
+    }
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
-{% highlight c# %}
-void Handle_ItemTapped(object sender, Syncfusion.SfRadialMenu.XForms.ItemTappedEventArgs e)
-	{
-		DisplayAlert("ItemTapped", "RadialMenu Item is tapped", "ok");
-	}
+
+### Adding nested items of radial menu
+
+You can populate the nested levels of items within a menu to group similar actions based on their result. For example, you can group the clipboard operations by adding a clipboard as a main menu and cut, copy, and paste as its children.
+
+The following code snippet demonstrates how to add the nested items of radial menu.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadialSample"
+             xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             x:Class="RadialSample.MainPage">
+     <radialMenu:SfRadialMenu CenterButtonText="Edit" 
+                             CenterButtonFontSize="12">
+        <radialMenu:SfRadialMenu.Items>
+            <radialMenu:SfRadialMenuItem Text="Bold" 
+                                         FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Copy" 
+                                         FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Undo" 
+                                         FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Paste" 
+                                         FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Color" FontSize="12">
+                <radialMenu:SfRadialMenuItem.Items>
+                    <radialMenu:SfRadialMenuItem Text="Font" 
+                                                 FontSize="12" 
+                                                 ItemWidth="50"/>
+                    <radialMenu:SfRadialMenuItem Text="Gradient" 
+                                                 FontSize="12" 
+                                                 ItemWidth="50"/>
+                    <radialMenu:SfRadialMenuItem Text="Highlight" 
+                                                 FontSize="12" 
+                                                 ItemWidth="50"/>
+                </radialMenu:SfRadialMenuItem.Items>
+            </radialMenu:SfRadialMenuItem>
+        </radialMenu:SfRadialMenu.Items>
+    </radialMenu:SfRadialMenu>
+</ContentPage>
+
 {% endhighlight %}
 
-![SfRadialMenu with Items](images/populatingItems.png)
+{% highlight c# %} 
 
-## How to set the font icons using ttf file?
+using Syncfusion.SfRadialMenu.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
 
-You can refer this [link](https://help.syncfusion.com/metro-studio/export-font-icon) for getting the font icons. Add the font file to your application by using the following steps for each platform:
+namespace RadialSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            string[] mainItem = new string[] { "Bold", "Copy", "Paste", "Undo", "Color" };
+            string[] colorItem = new string[] { "Font", "Gradient", "Highlight" };
 
-**Adding font file for iOS**
+            SfRadialMenu radialMenu = new SfRadialMenu();
 
-1. Add the font family inside `Resource` folder iOS project.
-2. Add the font file with the following build action: `BundleResource`.
-3. Update the `Info.plist` file (fonts that are provided by application, UIAppFonts, or key).
+            // Adding radial menu outer rim items.
 
-**Adding font file for Android**
+            for (int i = 0; i < 5; i++)
+            {
+                SfRadialMenuItem mainMenuItems = new SfRadialMenuItem();
+                mainMenuItems.Text = mainItem[i];
+                mainMenuItems.FontSize = 12;
+                radialMenu.Items.Add(mainMenuItems);
+            }
 
-Add the font file to the `Assets` folder in the application project, and set the following build action: `AndroidAsset`.
+            // Adding inner rim items.
 
-**Adding font file for UWP**
+            for (int i = 0; i < 3; i++)
+            {
+                SfRadialMenuItem colorSubMenuItem = new SfRadialMenuItem();
+                colorSubMenuItem.Text = colorItem[i];
+                colorSubMenuItem.FontSize = 12;
+                colorSubMenuItem.ItemWidth = 50;
+                radialMenu.Items[4].Items.Add(colorSubMenuItem);
+            }
+        }
+    }
+}
 
-Add the font family inside the application project of UWP.
+{% endhighlight %}
 
-N> For iOS alone, FontFamily property is declared without succeeding with .ttf and for android and UWP platform font family name is defined followed by .ttf.
+{% endtabs %}
+
+![SfRadialMenu with Items](images/gettingStarted2.png)
+
 
 ## Through ItemsSource and ItemTemplate
 
@@ -274,50 +176,470 @@ Using ItemsSource, objects of any class can be given as items for SfRadialMenu. 
 
 {% highlight xaml %}
 
-    <radialmenu:SfRadialMenu x:Name="radialMenu" 
-        ItemWidth="30" ItemHeight="50" 
-        SeparatorThickness="2" 
-        SeparatorColor="#DDDDDD">
-        <radialmenu:SfRadialMenu.CenterButtonView>
-            <Grid WidthRequest="35" BackgroundColor="Transparent">
-                <Image Source="friendadd.png" 
-                       HeightRequest="35" 
-                       WidthRequest="35" 
-                       HorizontalOptions="Center" 
-                       VerticalOptions="Center"/>
-            </Grid>
-        </radialmenu:SfRadialMenu.CenterButtonView>
-        <radialmenu:SfRadialMenu.ItemTemplate>
-             <DataTemplate>
-                <StackLayout>
-                    <Image Source="user.png" Margin="2,0" WidthRequest="25" HorizontalOptions="Center" />
-                    <Label HorizontalOptions="Center"  Text="{Binding}"/>
-                </StackLayout>
-            </DataTemplate>
-        </radialmenu:SfRadialMenu.ItemTemplate>
-    </radialmenu:SfRadialMenu>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadialSample"
+             xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             x:Class="RadialSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <radialMenu:SfRadialMenu 
+            x:Name="radial_Menu" 
+            ItemsSource="{Binding EmployeeCollection}">
+            <radialMenu:SfRadialMenu.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout>
+                        <Image Source="user.png" 
+                               HorizontalOptions="Center" 
+                               WidthRequest="15"/>
+                        <Label Text="{Binding EmployeeName}" 
+                               HorizontalTextAlignment="Center" 
+                               VerticalTextAlignment="Center"/>
+                    </StackLayout>
+                </DataTemplate>
+            </radialMenu:SfRadialMenu.ItemTemplate>
+        </radialMenu:SfRadialMenu>
+    </ContentPage.Content>
+</ContentPage>
     
 {% endhighlight %}
 
 {% highlight C# %}
 
+using Syncfusion.SfRadialMenu.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace RadialSample
+{
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
-            this.BindingContext = this;
-            radialMenu.ItemsSource = new List<string>()
-            {
-                "Alex",
-                "Lee",
-                "Ben",
-                "Carl",
-                "Yang"
-            };
         }
     }
 
+    public class EmployeeModel
+    {
+        private string employeeName;
+
+        public string EmployeeName
+        {
+            get { return employeeName; }
+            set { employeeName = value; }
+        }
+
+    }
+
+    public class EmployeeViewModel
+    {
+        private ObservableCollection<EmployeeModel> employeeCollection = new ObservableCollection<EmployeeModel>();
+
+        public ObservableCollection<EmployeeModel> EmployeeCollection
+        {
+            get { return employeeCollection; }
+            set { employeeCollection = value; }
+        }
+
+        public EmployeeViewModel()
+        {
+            EmployeeCollection.Add(new EmployeeModel() { EmployeeName = "Alex" });
+            EmployeeCollection.Add(new EmployeeModel() { EmployeeName = "Lee" });
+            EmployeeCollection.Add(new EmployeeModel() { EmployeeName = "Ben" });
+            EmployeeCollection.Add(new EmployeeModel() { EmployeeName = "Carl" });
+            EmployeeCollection.Add(new EmployeeModel() { EmployeeName = "Yang" });
+        }
+    }
+}
+
 {% endhighlight %}
 
+{% endtabs %}
+
+## Animation duration
+
+Duration of animation in radial menu can be changed using the [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~AnimationDurationProperty.html) property. It is used to change the speed of opening and closing of radial menu.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadialSample"
+             xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             x:Class="RadialSample.MainPage">
+    <radialMenu:SfRadialMenu AnimationDuration="1000">
+        <radialMenu:SfRadialMenu.Items>
+            <radialMenu:SfRadialMenuItem Text="Bold" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Copy" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Undo" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Paste" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Color" FontSize="12"/>
+        </radialMenu:SfRadialMenu.Items>
+    </radialMenu:SfRadialMenu>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.SfRadialMenu.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace RadialSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfRadialMenu radialMenu = new SfRadialMenu()
+            {
+                AnimationDuration = 1000
+            };
+
+            ObservableCollection<SfRadialMenuItem> itemCollection = new ObservableCollection<SfRadialMenuItem>();
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Bold", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Copy", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Paste", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Undo", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Color", FontSize = 12 });
+            radialMenu.Items = itemCollection;
+            this.Content = radialMenu;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## IsOpen
+
+The [`IsOpen`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~IsOpenProperty.html) property indicates whether the radial menu is in open or close state.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadialSample"
+             xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             x:Class="RadialSample.MainPage">
+    <radialMenu:SfRadialMenu IsOpen="True">
+        <radialMenu:SfRadialMenu.Items>
+            <radialMenu:SfRadialMenuItem Text="Bold" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Copy" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Undo" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Paste" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Color" FontSize="12"/>
+        </radialMenu:SfRadialMenu.Items>
+    </radialMenu:SfRadialMenu>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.SfRadialMenu.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace RadialSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfRadialMenu radialMenu = new SfRadialMenu()
+            {
+                IsOpen = true
+            };
+
+            ObservableCollection<SfRadialMenuItem> itemCollection = new ObservableCollection<SfRadialMenuItem>();
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Bold", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Copy", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Paste", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Undo", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Color", FontSize = 12 });
+            radialMenu.Items = itemCollection;
+            this.Content = radialMenu;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Selection color of radial menu
+
+Selection color of an item can be changed using the [`SelectionColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~SelectionColorProperty.html) property of radial menu.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadialSample"
+             xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             x:Class="RadialSample.MainPage">
+    <radialMenu:SfRadialMenu SelectionColor="#FFFF33">
+        <radialMenu:SfRadialMenu.Items>
+            <radialMenu:SfRadialMenuItem Text="Bold" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Copy" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Undo" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Paste" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Color" FontSize="12"/>
+        </radialMenu:SfRadialMenu.Items>
+    </radialMenu:SfRadialMenu>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.SfRadialMenu.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace RadialSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfRadialMenu radialMenu = new SfRadialMenu()
+            {
+                SelectionColor = Color.FromHex("#FFFF33")
+            };
+
+            ObservableCollection<SfRadialMenuItem> itemCollection = new ObservableCollection<SfRadialMenuItem>();
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Bold", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Copy", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Paste", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Undo", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Color", FontSize = 12 });
+            radialMenu.Items = itemCollection;
+            this.Content = radialMenu;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Separator thickness and color in radial menu
+
+Thickness of strip between the two items can be changed using the [`SeparatorThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~SeparatorThicknessProperty.html) property and the color of strip can be changed using the [`SeparatorColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~SeparatorColorProperty.html) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadialSample"
+             xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             x:Class="RadialSample.MainPage">
+    <radialMenu:SfRadialMenu  SeparatorThickness="5" 
+                              SeparatorColor="#FF1493">
+        <radialMenu:SfRadialMenu.Items>
+            <radialMenu:SfRadialMenuItem Text="Bold" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Copy" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Undo" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Paste" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Color" FontSize="12"/>
+        </radialMenu:SfRadialMenu.Items>
+    </radialMenu:SfRadialMenu>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.SfRadialMenu.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace RadialSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfRadialMenu radialMenu = new SfRadialMenu()
+            {
+                SeparatorThickness = 50,
+                SeparatorColor = Color.FromHex("#FF1493")
+
+            };
+
+            ObservableCollection<SfRadialMenuItem> itemCollection = new ObservableCollection<SfRadialMenuItem>();
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Bold", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Copy", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Paste", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Undo", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Color", FontSize = 12 });
+            radialMenu.Items = itemCollection;
+            this.Content = radialMenu;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## Rim color and rim radius in radial menu
+
+The radius of rim can be changed using the [`RimRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~RimRadiusProperty.html) property and the color of rim can be changed using the [`RimColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~RimColorProperty.html) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadialSample"
+             xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             x:Class="RadialSample.MainPage">
+    <radialMenu:SfRadialMenu  RimRadius="150" 
+                              RimColor="#FF1493">
+        <radialMenu:SfRadialMenu.Items>
+            <radialMenu:SfRadialMenuItem Text="Bold" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Copy" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Undo" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Paste" FontSize="12"/>
+            <radialMenu:SfRadialMenuItem Text="Color" FontSize="12"/>
+        </radialMenu:SfRadialMenu.Items>
+    </radialMenu:SfRadialMenu>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.SfRadialMenu.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace RadialSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfRadialMenu radialMenu = new SfRadialMenu()
+            {
+                RimRadius = 150,
+                RimColor = Color.FromHex("#FF1493")
+
+            };
+
+            ObservableCollection<SfRadialMenuItem> itemCollection = new ObservableCollection<SfRadialMenuItem>();
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Bold", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Copy", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Paste", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Undo", FontSize = 12 });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Color", FontSize = 12 });
+            radialMenu.Items = itemCollection;
+            this.Content = radialMenu;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+## DisplayMemberPath
+
+The control is populated with a list of employees, and the employee model contains two properties: ID and EmployeeName. So, it is necessary to intimate by which property it should display to the items. The [`DisplayMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~DisplayMemberPathProperty.html) property specifies the property path.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadialSample"
+             xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             x:Class="RadialSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <radialMenu:SfRadialMenu 
+        ItemsSource="{Binding EmployeeCollection}"
+        DisplayMemberPath="EmployeeName"/>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.SfRadialMenu.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace RadialSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
+
+    public class Employee
+    {
+        private int id;
+        public int ID
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        private string employeeName;
+        public string EmployeeName
+        {
+            get { return employeeName; }
+            set { employeeName = value; }
+        }
+    }
+
+    public class EmployeeViewModel
+    {
+        private ObservableCollection<Employee> employeeCollection;
+        public ObservableCollection<Employee> EmployeeCollection
+        {
+            get { return employeeCollection; }
+            set { employeeCollection = value; }
+        }
+        public EmployeeViewModel()
+        {
+            employeeCollection = new ObservableCollection<Employee>();
+            employeeCollection.Add(new Employee() { ID = 1, EmployeeName = "Eric" });
+            employeeCollection.Add(new Employee() { ID = 2, EmployeeName = "James" });
+            employeeCollection.Add(new Employee() { ID = 3, EmployeeName = "Jacob" });
+            employeeCollection.Add(new Employee() { ID = 4, EmployeeName = "Lucas" });
+        }
+    }
+}
+
+{% endhighlight %}
 {% endtabs %}

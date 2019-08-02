@@ -19,30 +19,59 @@ AutoComplete provides user friendly customizing options for both entry part and 
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-	<autocomplete:SfAutoComplete HeightRequest="45" x:Name="autoComplete" Text="Sample text" TextColor="#1976d2" TextSize="20" BorderColor="#1976d2"/>
-</StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout 
+        VerticalOptions="Start"
+        HorizontalOptions="Start" 
+        Padding="30">
+        <autocomplete:SfAutoComplete HeightRequest="45" 
+                                     Text="Sample text" 
+                                     TextColor="#1976d2" 
+                                     TextSize="20" 
+                                     BorderColor="#1976d2"/>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-StackLayout stackLayout = new StackLayout() 
-{ 
-VerticalOptions = LayoutOptions.Start, 
-HorizontalOptions = LayoutOptions.Start,
-Padding = new Thickness(30) 
-};
-SfAutoComplete autoComplete = new SfAutoComplete() 
-{ 
-HeightRequest = 45,  
-Text = "Sample text", 
-TextColor = Color.FromHex("1976d2"), 
-TextSize = 20, 
-BorderColor = Color.FromHex("1976d2")
-};
-stackLayout.Children.Add(autoComplete);
-this.Content = stackLayout;
+using Syncfusion.SfAutoComplete.XForms;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 45,
+                Text = "Sample text",
+                TextColor = Color.FromHex("1976d2"),
+                TextSize = 20,
+                BorderColor = Color.FromHex("1976d2")
+            };
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -58,70 +87,95 @@ this.Content = stackLayout;
 
 {% highlight xaml %}
 
-<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-<autocomplete:SfAutoComplete HeightRequest="40" x:Name="autoComplete" DisplayMemberPath="Name" DataSource="{Binding PersonCollection}">
-	<autocomplete:SfAutoComplete.ItemTemplate>
-	<DataTemplate>
-		<StackLayout Orientation="Horizontal" Padding="2,0,0,0">
-		<Image Source="User.png" WidthRequest="12"/>
-		<Label Text="{Binding Name}" VerticalOptions="Center"/>
-		</StackLayout>
-	</DataTemplate>
-	</autocomplete:SfAutoComplete.ItemTemplate>
-</autocomplete:SfAutoComplete>
-</StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:PersonViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout 
+        VerticalOptions="Start"
+        HorizontalOptions="Start" 
+        Padding="30">
+        <autocomplete:SfAutoComplete HeightRequest="40" 
+                                     DisplayMemberPath="Name" 
+                                     DataSource="{Binding PersonCollection}">
+            <autocomplete:SfAutoComplete.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal" 
+                                 Padding="2,0,0,0">
+                        <Image Source="User.png" 
+                               WidthRequest="12"/>
+                        <Label Text="{Binding Name}" 
+                               VerticalOptions="Center"/>
+                    </StackLayout>
+                </DataTemplate>
+            </autocomplete:SfAutoComplete.ItemTemplate>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-public class Person
-{
-private int age;
-public int Age
-{
-	get { return age; }
-	set { age = value; }
-}
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
 
-private string name;
-public string Name
+namespace AutocompleteSample
 {
-	get { return name; }
-	set { name = value; }
-}
-}
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
 
-public class PersonViewModel
-{
-private ObservableCollection<Person> personCollection;
-public ObservableCollection<Person> PersonCollection
-{
-	get { return personCollection; }
-	set { personCollection = value; }
-}
+    public class Person
+    {
+        private int age;
+        public int Age
+        {
+            get { return age; }
+            set { age = value; }
+        }
 
-public PersonViewModel()
-{
-	personCollection = new ObservableCollection<Person>();
-	personCollection.Add(new Person() { Age = 21, Name = "Aldan" });
-	personCollection.Add(new Person() { Age = 25, Name = "Clara" });
-	personCollection.Add(new Person() { Age = 23, Name = "Aldrin" });            
-	personCollection.Add(new Person() { Age = 25, Name = "Mark" });
-	personCollection.Add(new Person() { Age = 25, Name = "Lucas" });
-	personCollection.Add(new Person() { Age = 24, Name = "Alan" });
-	personCollection.Add(new Person() { Age = 25, Name = "James" });
-	personCollection.Add(new Person() { Age = 22, Name = "Aaron" });
-}
-}
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+    }
 
-public partial class SamplePage : ContentPage
-{
-public SamplePage()
-{
-	InitializeComponent();       
-	autoComplete.BindingContext = new PersonViewModel();
-}
+    public class PersonViewModel
+    {
+        private ObservableCollection<Person> personCollection;
+        public ObservableCollection<Person> PersonCollection
+        {
+            get { return personCollection; }
+            set { personCollection = value; }
+        }
+
+        public PersonViewModel()
+        {
+            personCollection = new ObservableCollection<Person>();
+            personCollection.Add(new Person() { Age = 21, Name = "Aldan" });
+            personCollection.Add(new Person() { Age = 25, Name = "Clara" });
+            personCollection.Add(new Person() { Age = 23, Name = "Aldrin" });
+            personCollection.Add(new Person() { Age = 25, Name = "Mark" });
+            personCollection.Add(new Person() { Age = 25, Name = "Lucas" });
+            personCollection.Add(new Person() { Age = 24, Name = "Alan" });
+            personCollection.Add(new Person() { Age = 25, Name = "James" });
+            personCollection.Add(new Person() { Age = 22, Name = "Aaron" });
+        }
+    }
 }
 
 {% endhighlight %}
@@ -140,40 +194,76 @@ public SamplePage()
 
 {% highlight xaml %}
 
-<StackLayout Padding="30">
-    <autoComplete:SfAutoComplete x:Name="autoComplete" HeightRequest="40" DropDownItemHeight="45">
-        <autoComplete:SfAutoComplete.AutoCompleteSource>
-            <ListCollection:List x:TypeArguments="x:String">
-                <x:String>Uganda</x:String>
-                <x:String>Ukraine</x:String>
-                <x:String>United Arab Emirates</x:String>
-                <x:String>United Kingdom</x:String>
-            </ListCollection:List>
-        </autoComplete:SfAutoComplete.AutoCompleteSource>
-    </autoComplete:SfAutoComplete>
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout 
+        VerticalOptions="Start" 
+        HorizontalOptions="Start"
+        Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete"
+                                     HeightRequest="40"
+                                     DropDownItemHeight="45">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-StackLayout mainLayout = new StackLayout()
-{
-    Padding = new Thickness(30)
-};
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
 
-SfAutoComplete autoComplete = new SfAutoComplete();
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete.DropDownCornerRadius = 3;
-autoComplete.DropDownItemHeight = 45;
-mainLayout.Children.Add(autoComplete);
-this.Content = mainLayout;
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                DropDownItemHeight = 45,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "United Kingdom"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -189,39 +279,76 @@ The [`DropDownCornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
 {% highlight xaml %}
 
-<StackLayout Padding="30">
-    <autoComplete:SfAutoComplete  x:Name="autoComplete" HeightRequest="40" DropDownCornerRadius="3">
-        <autoComplete:SfAutoComplete.AutoCompleteSource>
-            <ListCollection:List x:TypeArguments="x:String">
-                <x:String>Uganda</x:String>
-                <x:String>Ukraine</x:String>
-                <x:String>United Arab Emirates</x:String>
-                <x:String>United Kingdom</x:String>
-            </ListCollection:List>
-        </autoComplete:SfAutoComplete.AutoCompleteSource>
-    </autoComplete:SfAutoComplete>
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout 
+        VerticalOptions="Start" 
+        HorizontalOptions="Start"
+        Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete"
+                                     HeightRequest="40"
+                                     DropDownCornerRadius="3">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-StackLayout mainLayout = new StackLayout()
-{
-    Padding = new Thickness(30)
-};
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
 
-SfAutoComplete autoComplete = new SfAutoComplete();
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete.DropDownCornerRadius = 3;
-mainLayout.Children.Add(autoComplete);
-this.Content = mainLayout;
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                DropDownCornerRadius = 3,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "United Kingdom"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -237,38 +364,76 @@ The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamari
 
 {% highlight xaml %}
 
-<StackLayout Padding="30">
-    <autoComplete:SfAutoComplete x:Name="autoComplete" HeightRequest="40"  DropDownBackgroundColor="Red">
-        <autoComplete:SfAutoComplete.AutoCompleteSource>
-            <ListCollection:List x:TypeArguments="x:String">
-                <x:String>Uganda</x:String>
-                <x:String>Ukraine</x:String>
-                <x:String>United Arab Emirates</x:String>
-                <x:String>United Kingdom</x:String>
-            </ListCollection:List>
-        </autoComplete:SfAutoComplete.AutoCompleteSource>
-    </autoComplete:SfAutoComplete>
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout 
+        VerticalOptions="Start" 
+        HorizontalOptions="Start"
+        Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete"
+                                     HeightRequest="40"
+                                     DropDownBackgroundColor="Red">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-StackLayout mainLayout = new StackLayout()
-{
-    Padding = new Thickness(30)
-};
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
 
-SfAutoComplete autoComplete = new SfAutoComplete();
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete.DropDownBackgroundColor = Color.Red;
-mainLayout.Children.Add(autoComplete);
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                DropDownBackgroundColor = Color.Red,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "United Kingdom"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -286,36 +451,56 @@ The DropDownBorderColor property is used to change the border color of suggestio
 
 {% highlight xaml %}
 
-  <StackLayout>
-        <autoComplete:SfAutoComplete HeightRequest="40" DropDownBorderColor="Blue">
-            <autoComplete:SfAutoComplete.AutoCompleteSource>
-                <ListCollection:List x:TypeArguments="x:String">
-                    <x:String>1920 x 1080</x:String>
-                    <x:String>1680 x 1050</x:String>
-                    <x:String>1600 x 900</x:String>
-                    <x:String>1440 x 900</x:String>
-                    <x:String>1400 x 1050</x:String>
-                    <x:String>1366 x 768</x:String>
-                    <x:String>1360 x 768</x:String>
-                    <x:String>1280 x 1024</x:String>
-                    <x:String>1280 x 960</x:String>
-                    <x:String>1280 x 720</x:String>
-                    <x:String>854 x 480</x:String>
-                    <x:String>800 x 480</x:String>
-                    <x:String>480 X 640</x:String>
-                    <x:String>480 x 320</x:String>
-                    <x:String>432 x 240</x:String>
-                    <x:String>360 X 640</x:String>
-                    <x:String>320 x 240</x:String>
-                </ListCollection:List>
-            </autoComplete:SfAutoComplete.AutoCompleteSource>
-        </autoComplete:SfAutoComplete>
-    </StackLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout>
+    <autoComplete:SfAutoComplete HeightRequest="40" 
+                                 DropDownBorderColor="Blue">
+        <autoComplete:SfAutoComplete.AutoCompleteSource>
+            <ListCollection:List x:TypeArguments="x:String">
+                <x:String>1920 x 1080</x:String>
+                <x:String>1680 x 1050</x:String>
+                <x:String>1600 x 900</x:String>
+                <x:String>1440 x 900</x:String>
+                <x:String>1400 x 1050</x:String>
+                <x:String>1366 x 768</x:String>
+                <x:String>1360 x 768</x:String>
+                <x:String>1280 x 1024</x:String>
+                <x:String>1280 x 960</x:String>
+                <x:String>1280 x 720</x:String>
+                <x:String>854 x 480</x:String>
+                <x:String>800 x 480</x:String>
+                <x:String>480 X 640</x:String>
+                <x:String>480 x 320</x:String>
+                <x:String>432 x 240</x:String>
+                <x:String>360 X 640</x:String>
+                <x:String>320 x 240</x:String>
+            </ListCollection:List>
+        </autoComplete:SfAutoComplete.AutoCompleteSource>
+    </autoComplete:SfAutoComplete>
+</StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
             StackLayout layout = new StackLayout()
             {
                 VerticalOptions = LayoutOptions.Start,
@@ -348,6 +533,9 @@ The DropDownBorderColor property is used to change the border color of suggestio
 
             layout.Children.Add(autoComplete);
             Content = layout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -364,39 +552,78 @@ Suggestion box items can be customized using [`DropDownItemFontAttributes`](http
 
 {% highlight xaml %}
 
-<StackLayout Padding="30">
-    <autoComplete:SfAutoComplete HeightRequest="40" DropDownTextSize="16" DropDownTextColor="#1976d2"  x:Name="autoComplete">
-            <autoComplete:SfAutoComplete.AutoCompleteSource>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout 
+        VerticalOptions="Start" 
+        HorizontalOptions="Start"
+        Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete"
+                                     HeightRequest="40"
+                                     DropDownTextColor="#1976d2"
+                                     DropDownTextSize="12">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
                 <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
                     <x:String>Uganda</x:String>
                     <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
                     <x:String>United Arab Emirates</x:String>
                     <x:String>United Kingdom</x:String>
                 </ListCollection:List>
-            </autoComplete:SfAutoComplete.AutoCompleteSource>
-    </autoComplete:SfAutoComplete>
-</StackLayout> 
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-StackLayout mainLayout = new StackLayout()
-{
-    Padding = new Thickness(30)
-};
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
 
-SfAutoComplete autoComplete = new SfAutoComplete();
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete.DropDownTextColor = Color.FromHex("#1976d2");
-autoComplete.DropDownTextSize = 16;
-mainLayout.Children.Add(autoComplete);
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                DropDownTextColor = Color.FromHex("#1976d2"),
+                DropDownTextSize = 16,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "United Kingdom"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -412,14 +639,76 @@ The autocomplete provided the user to show or hide the clear button using [`Show
 
 {% highlight xaml %}
 
-	<autocomplete:SfAutoComplete  x:Name="autoComplete" ShowClearButton="true"/>
-
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout 
+        VerticalOptions="Start" 
+        HorizontalOptions="Start"
+        Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete"
+                                     HeightRequest="40"
+                                     ShowClearButton="True">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-autoComplete.ShowClearButton = true;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                ShowClearButton = true,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "United Kingdom"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -435,14 +724,76 @@ N> `ClearButtonColor` property is available only on iOS and Android platform.
 
 {% highlight xaml %}
 
-	<autocomplete:SfAutoComplete  x:Name="autoComplete" ClearButtonColor="Red"/>
-
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout 
+        VerticalOptions="Start" 
+        HorizontalOptions="Start"
+        Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete"
+                                     HeightRequest="40"
+                                     ClearButtonColor="Red">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-autoComplete.ClearButtonColor = Color.Red;
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                ClearButtonColor = Color.Red,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "United Kingdom"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -456,38 +807,76 @@ The [`ShowBorder`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 {% highlight xaml %}
 
-<StackLayout Padding="30">
-    <autoComplete:SfAutoComplete HeightRequest="40" ShowBorder="False" x:Name="autoComplete">
-        <autoComplete:SfAutoComplete.AutoCompleteSource>
-            <ListCollection:List x:TypeArguments="x:String">
-                <x:String>Uganda</x:String>
-                <x:String>Ukraine</x:String>
-                <x:String>United Arab Emirates</x:String>
-                <x:String>United Kingdom</x:String>
-            </ListCollection:List>
-        </autoComplete:SfAutoComplete.AutoCompleteSource>
-    </autoComplete:SfAutoComplete>
-</StackLayout> 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <StackLayout 
+        VerticalOptions="Start" 
+        HorizontalOptions="Start"
+        Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autoComplete"
+                                     HeightRequest="40"
+                                     ShowBorder="False">
+            <autocomplete:SfAutoComplete.AutoCompleteSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>United Kingdom</x:String>
+                </ListCollection:List>
+            </autocomplete:SfAutoComplete.AutoCompleteSource>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-StackLayout mainLayout = new StackLayout()
-{
-    Padding = new Thickness(30)
-};
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
 
-SfAutoComplete autoComplete = new SfAutoComplete();
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
-autoComplete.DataSource = countryNames;
-autoComplete .ShowBorder = false;
-mainLayout.Children.Add(autoComplete);
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                ShowBorder = false,
+                AutoCompleteSource = new List<string>()
+                {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "United Kingdom"
+                }
+            };
+
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
+        }
+    }
+}
 
 {% endhighlight %}
 

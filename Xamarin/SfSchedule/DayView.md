@@ -2,7 +2,7 @@
 
 layout: post
 title: Customize DayView at Syncfusion SfSchedule for Xamarin.Forms
-description: Learn how to Customize the schedule DayView in SfSchedule control
+description: Learn how to Customize the schedule DayView in SfSchedule control in Xamarin.Forms
 platform: xamarin
 control: SfSchedule
 documentation: ug

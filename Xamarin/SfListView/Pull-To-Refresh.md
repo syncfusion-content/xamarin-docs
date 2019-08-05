@@ -88,7 +88,8 @@ private async void PullToRefresh_Refreshing(object sender, EventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-Run the application to render the following output. You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListInsideSfpulltorefresh282382156).
+Run the application to render the following output. 
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Load-xamarin.forms-listview-inside-pulltorefresh).
 
 ![Pull to refresh data in listview](SfListView_images/SfListView-PullToRefresh.png)
 
@@ -215,7 +216,7 @@ public ListViewPullToRefresh()
 {% endhighlight %}
 {% endtabs %}
 
-You can download entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SearchbarAtTop355876287).
+Download entire source code from GitHub [here](https://github.com/SyncfusionExamples/Load-pulltorefresh-with-searchbar-at-the-top-in-xamarin.forms-listview-).
 
 ### Pull-to-refresh with Grouping
 

@@ -428,6 +428,6 @@ public class SfListViewExt : SfListView
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Footer_Vertical941521363).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Load-header-and-footer-in-vertical-inside-horizontal-xamarin.forms-listview).
 
 ![Horizontal listview with vertical header and footer](SfListView_images/Vertical_Header_Horizontal_ListView.jpg)

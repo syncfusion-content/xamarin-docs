@@ -80,6 +80,8 @@ private bool FilterContacts(object obj)
 {% endhighlight %}
 {% endtabs %}
 
+You can download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Filter-items-in-xamarin.forms-listview)
+
 The following screenshot shows the output rendered when the items are filtered:
 
 ![Items filter in listview](SfListView_images/SfListView-Filtering.png)
@@ -150,3 +152,4 @@ private void DataSource_FilterChanged(object sender, NotifyCollectionChangedEven
 }
 {% endhighlight %}
 {% endtabs %}
+

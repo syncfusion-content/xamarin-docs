@@ -195,7 +195,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HorizontalListView-721870895).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/How-to-navigate-xamarin.forms-listview-across-listviewitem).
 
 ![Xamarin.Forms listview with tabview](SfListView_images/NavigateView.jpg)
 
@@ -271,7 +271,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/HorizontalInsideVerticalList-991620132).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Load-horizontal-listview-inside-vertical-xamarin.forms-listview).
 
 ![Vertical listview with horizontal items](SfListView_images/Horizontal_List_Inside_Vertical_List.jpg)
 
@@ -377,7 +377,7 @@ public class IndexToColorConverter : IValueConverter
 }
 {% endhighlight %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AlternateRowStyling566000668).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Alternate-row-style-in-Xamarin.Forms-ListView).
 
 ![Alternate row style in listview](SfListView_images/AlternateRowStyle.jpg)
 
@@ -438,7 +438,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RoundedCornerItems-83216015).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Rounded-corners-for-xamarin.forms-listview).
 
 ![Rounded corners on items in listview](SfListView_images/RoundCorner.jpg)
 
@@ -509,7 +509,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DropShadowEffect-1675448697).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/How-to-apply-fading-edge-effect-shadow-for-listview-item-in-Xamarin.Forms).
 
 ![Frame shadow effect in listview](SfListView_images/FrameShadow.jpg)
 
@@ -850,7 +850,7 @@ internal class SfListViewAccordionBehavior : Behavior<ContentPage>
 
 The `IsVisible` model property which is bound to the second template will be enabled when tapping the item and disabled when tapping again the same item.
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AccordionSample2103212952).
+Download the entire source code offrom GitHub [here](https://github.com/SyncfusionExamples/listview_autofit).
 
 ![Xamarin.Forms listview with Accordion](SfListView_images/SfListView-AccordImage.png)
 
@@ -911,7 +911,7 @@ public class ViewModel : INotifyPropertyChanged
 
 N> When both `SfBusyIndicator` and `ListView` loaded with same row and column, you need to set `InputTransparent` as True to SfBusyindicator in order to pass touch interaction to listview in iOS platform.
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BusyIndicatorOnListView1412366667).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin-forms-listview-loading-indicator).
 
 ![Busy indicator to load listview](SfListView_images/ListViewBusyIndicator.jpg)    ![Loaded listview items](SfListView_images/ListView.jpg)
 
@@ -1088,7 +1088,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BusyIndicatorOnItems1095316072).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Load-busyindicator-to-update-each-listviewitem-xamarin.forms-listview).
 
 ![Busy indicator to load listview items](SfListView_images/ListViewItemBusyIndicator.jpg)    ![Loaded listview](SfListView_images/ListViewItem.jpg)
 
@@ -1159,7 +1159,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/BusyIndicatorToggle1696157913).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Load-busyindicator-on-each-listviewitem-in-xamarin.forms-listview-toggle).
 
 ![Xamarin.Forms listview with switch on](SfListView_images/SfListView-SwitchOn.png)    ![Xamarin.Forms listview with switch off](SfListView_images/SfListView-SwitchOff.png)
 
@@ -1246,7 +1246,8 @@ public class ListViewItemExt : ListViewItem
 {% endhighlight %}
 {% endtabs %}
 
-Here `FadeTo` animation is applied for [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html), when comes in the view. You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ExtensionofListViewItem-Appearing-1339007241).
+Here `FadeTo` animation is applied for [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html), when comes in the view. 
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/how-to-animate-xamarin-listview-items).
 
 ![Xamarin.Forms listview with animation](SfListView_images/SfListView-ItemAppearingAnimation.gif)
 

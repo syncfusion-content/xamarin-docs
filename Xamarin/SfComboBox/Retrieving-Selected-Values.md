@@ -1,300 +1,477 @@
 ---
 layout: post
-title: Retrieving selected value in Syncfusion SfComboBox control
-description: Learn how to retrieve selected value from SfComboBox control
+title: Retrieving selected value in Syncfusion ComboBox control.
+description: Learn how to retrieve selected value from the SfComboBox control
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
 
-# Retrieving Selected values
+# Handling Selected Items
 
-SfComboBox provides a way to get the selected values using SelectedValue and SelectedIndex properties.
+SfComboBox provides a way to handle the selected item using the following properties:
+* SelectedIndex
+* SelectedIndices
+* SelectedItem
 
-## Retrieving the Index of Selected Item
+## SelectedIndex
 
-When an item is selected from suggestion list, its index can be retrieved using [`SelectedIndex`] property. 
-SelectedIndex property holds the index of selected item in suggestion list. 
+You can get or set the index of the selected item using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndexProperty.html) property. It is applicable only when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~MultiSelectModeProperty.html) is set to None.
 
-The following code example demonstrates the way to retrieve SelectedIndex and display it in an alert.
+### Set the index of item to be selected
 
-{% tabs %}
-
-{% highlight xaml %}
-
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:ComboBox"
-	      xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
-             x:Class="ComboBox.MainPage">
-
-	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<comboBox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="ComboBox_SelectionChanged"/>
-	</StackLayout>
-
-</ContentPage>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
-
-namespace ComboBox
-{
-	public partial class MainPage : ContentPage
-	{
-		public MainPage()
-		{
-			InitializeComponent();
-			List<String> countryNames = new List<String>();
-			countryNames.Add("Uganda");
-			countryNames.Add("Ukraine");
-			countryNames.Add("United Arab Emirates");
-			countryNames.Add("United Kingdom");
-			countryNames.Add("United States");
-			comboBox.DataSource = countryNames;
-		}
-
-		private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
-		{
-			DisplayAlert("Selection Changed", "Selected Index: " + comboBox.SelectedIndex, "OK");
-		}
-	}
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Retrieving the Value of Selected Item
-
-When an item is selected from suggestion list, selected value can be retrieved using [`SelectedValue`] property. If the DataSource is bound to string data, then selected string is set to the SelectedValue property.  
-
-The following code example demonstrates the way to retrieve SelectedValue and display it in an alert.
+The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndexProperty.html) property holds the index of selected item in suggestion list. 
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:ComboBox"
-			 xmlns:comboBox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
-             x:Class="ComboBox.MainPage">
-
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<comboBox:SfComboBox HeightRequest="40" x:Name="comboBox" SelectionChanged="ComboBox_SelectionChanged"/>
-	</StackLayout>
-
-</ContentPage>
+        <comboBox:SfComboBox
+	           x:Name="comboBox"
+	           HeightRequest="40" 
+			   MultiSelectMode="None"
+	           SelectedIndex="1">
+            <comboBox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Antigua and Barbuda</x:String>
+                    <x:String>American Samoa</x:String>
+                    <x:String>Afghanistan</x:String>
+                    <x:String>Antarctica</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Anguilla</x:String>
+                    <x:String>Albania</x:String>
+                    <x:String>Algeria</x:String>
+                    <x:String>Andorra</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </comboBox:SfComboBox.ComboBoxSource>
+        </comboBox:SfComboBox>
+    </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+    StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = 30
+            };    
+            SfComboBox comboBox = new    SfComboBox()
+            {
+                HeightRequest = 40,
+                SelectedIndex = 1,
+				MultiSelectMode=MultiSelectMode.None,
+                DataSource = new List<string>()
+                {
+                    "Antigua and Barbuda",
+                    "American Samoa",
+                    "Afghanistan",
+                    "Antarctica",
+                    "Argentina",
+                    "Anguilla",
+                    "Albania",
+                    "Algeria",
+                    "Andorra",
+                    "Angola"
+                }
+            };
 
-namespace ComboBox
-{
-	public partial class MainPage : ContentPage
-	{
-		public MainPage()
-		{
-			InitializeComponent();
-			List<String> countryNames = new List<String>();
-			countryNames.Add("Uganda");
-			countryNames.Add("Ukraine");
-			countryNames.Add("United Arab Emirates");
-			countryNames.Add("United Kingdom");
-			countryNames.Add("United States");
-			comboBox.DataSource = countryNames;
-		}
-
-		private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
-		{
-			DisplayAlert("Selection Changed", "Selected Value: " + comboBox.SelectedValue.ToString(), "OK");
-		}
-	}
-}
+    		stackLayout.Children.Add(comboBox);
+    		this.Content = stackLayout;
 
 {% endhighlight %}
 
 {% endtabs %}
 
-### Retrieving a Member of Model Object
+### Retrieve the index of selected item
 
-If the DataSource is bound to business object data, there is an additional step to get the SelectedValue. The model class may have one or more properties. So, it is necessary to intimate AutoComplete that which property of model class should be stored in SelectedValue property. This can be accomplished by [`SelectedValuePath`] property.
+When an item is selected from suggestion list, its index can be retrieved using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndexProperty.html) property. 
+
+The following code sample demonstrates how to retrieve [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndexProperty.html) and display it in an alert.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:ComboBox"
-			 xmlns:comboBox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
-             x:Class="ComboBox.MainPage">
-
-	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<comboBox:SfComboBox HeightRequest="40" x:Name="comboBox" DataSource="{Binding EmployeeCollection}" DisplayMemberPath="Name" SelectedValuePath="ID" SelectionChanged="ComboBox_SelectionChanged"/>
-	</StackLayout>
-
-</ContentPage>
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <comboBox:SfComboBox
+	           x:Name="comboBox"
+	           HeightRequest="40" 
+			   MultiSelectMode="None"
+               SelectionChanged="comboBox_SelectionChanged">
+            <comboBox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Antigua and Barbuda</x:String>
+                    <x:String>American Samoa</x:String>
+                    <x:String>Afghanistan</x:String>
+                    <x:String>Antarctica</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Anguilla</x:String>
+                    <x:String>Albania</x:String>
+                    <x:String>Algeria</x:String>
+                    <x:String>Andorra</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </comboBox:SfComboBox.ComboBoxSource>
+        </comboBox:SfComboBox>
+    </StackLayout> 
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+        SfComboBox comboBox;
+        public MainPage()
+		{
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = 30
+            };
 
-namespace ComboBox
-{
-	public partial class MainPage : ContentPage
-	{
-		public MainPage()
-		{
-			InitializeComponent();
-			comboBox.BindingContext = new EmployeeViewModel();
-		}
+            comboBox = new SfComboBox()
+            {
+                HeightRequest = 40,
+				MultiSelectMode=MultiSelectMode.None,
+                DataSource = new List<string>()
+                {
+                    "Antigua and Barbuda",
+                    "American Samoa",
+                    "Afghanistan",
+                    "Antarctica",
+                    "Argentina",
+                    "Anguilla",
+                    "Albania",
+                    "Algeria",
+                    "Andorra",
+                    "Angola"
+                }
+            };
 
-		private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
-		{
-			DisplayAlert("Selection Changed", "Selected Value: " + comboBox.SelectedValue.ToString(), "OK");
-		}
-	}
-	public class Employee
-	{
-		private int id;
-		public int ID
-		{
-			get { return id; }
-			set { id = value; }
-		}
-		private string name;
-		public string Name
-		{
-			get { return name; }
-			set { name = value; }
-		}
-	}
-	public class EmployeeViewModel
-	{
-		private ObservableCollection<Employee> employeeCollection;
-		public ObservableCollection<Employee> EmployeeCollection
-		{
-			get { return employeeCollection; }
-			set { employeeCollection = value; }
-		}
-		public EmployeeViewModel()
-		{
-			employeeCollection = new ObservableCollection<Employee>();
-			employeeCollection.Add(new Employee() { ID = 1, Name = "Eric" });
-			employeeCollection.Add(new Employee() { ID = 2, Name = "James" });
-			employeeCollection.Add(new Employee() { ID = 3, Name = "Jacob" });
-			employeeCollection.Add(new Employee() { ID = 4, Name = "Lucas" });
-			employeeCollection.Add(new Employee() { ID = 5, Name = "Mark" });
-		}
-	}
-}
+            comboBox.SelectionChanged += comboBox_SelectionChanged;
+            stackLayout.Children.Add(comboBox);
+            this.Content = stackLayout;
+        }
 
+        private void comboBox_SelectionChanged(object sender, Syncfusion.SfComboBox.XForms.SelectionChangedEventArgs e)
+        {
+            DisplayAlert("Selection Changed", "SelectedIndex: " + comboBox.SelectedIndex, "OK");
+        }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-If the DataSource is bound to business object data, the selected item can be set initially by specifying the index of the data source item. The property specified in the `SelectedValuePath` will be displayed with respect to index of the selected item.
+## SelectedIndices
+
+You can get or set the indices of the selected items using the [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndicesProperty.html) property. It is applicable when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~MultiSelectModeProperty.html) is set to either Token or Delimiter.
+
+### Set the indices of items
+
+The [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndicesProperty.html) property holds the indices of the selected items in suggestion list.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:ComboBox"
-			 xmlns:comboBox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
-             x:Class="ComboBox.MainPage">
-
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-		<comboBox:SfComboBox HeightRequest="40" x:Name="comboBox" DisplayMemberPath="Name" SelectedValuePath="ID" SelectionChanged="ComboBox_SelectionChanged"/>
-	</StackLayout>
-
-</ContentPage>
+        <comboBox:SfComboBox
+	           x:Name="comboBox"
+	           HeightRequest="40" 
+               MultiSelectMode="Token"
+               SelectedIndices="{Binding SelectedIndices}">
+            <comboBox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Antigua and Barbuda</x:String>
+                    <x:String>American Samoa</x:String>
+                    <x:String>Afghanistan</x:String>
+                    <x:String>Antarctica</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Anguilla</x:String>
+                    <x:String>Albania</x:String>
+                    <x:String>Algeria</x:String>
+                    <x:String>Andorra</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </comboBox:SfComboBox.ComboBoxSource>
+        </comboBox:SfComboBox>
+    </StackLayout>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xamarin.Forms;
+    public partial class MainPage : ContentPage
+    {
+        private object selectedIndices;
+        public object SelectedIndices
+        {
+            get { return selectedIndices; }
+            set { selectedIndices = value; }
+        }
 
-namespace ComboBox
-{
-	public partial class MainPage : ContentPage
-	{
-		public MainPage()
-		{
-			InitializeComponent();
-			var employeeCollection = new ObservableCollection<Employee>
-			{
-				new Employee{ ID = 1, Name = "Eric" },
-				new Employee{ ID = 2, Name = "James" },
-				new Employee{ ID = 3, Name = "Jacob" },
-				new Employee{ ID = 4, Name = "Lucas" },
-				new Employee{ ID = 5, Name = "Mark" }
-			};
-			comboBox.DataSource = employeeCollection;
-			comboBox.SelectedItem = employeeCollection[4];
-		}
-
-		private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
-		{
-			DisplayAlert("Selection Changed", "Selected Value: " + comboBox.SelectedValue.ToString(), "OK");
-		}
-	}
-	public class Employee
-	{
-		private int id;
-		public int ID
-		{
-			get { return id; }
-			set { id = value; }
-		}
-		private string name;
-		public string Name
-		{
-			get { return name; }
-			set { name = value; }
-		}
-	}
-}
+        public MainPage()
+        {
+            InitializeComponent();
+            SelectedIndices = new List<int>() { 2, 4, 7 };
+            this.BindingContext = this;
+        }
+    }
 
 {% endhighlight %}
 
 {% endtabs %}
 
+### Retrieve the indices of selected item
+
+When an item is selected from suggestion list, its index can be retrieved using the [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndicesProperty.html) property.
+
+The following code sample demonstrates how to retrieve [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndicesProperty.html) and display them in ListView.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <comboBox:SfComboBox
+	           x:Name="comboBox"
+	           HeightRequest="40" 
+               MultiSelectMode="Token">
+            <comboBox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Antigua and Barbuda</x:String>
+                    <x:String>American Samoa</x:String>
+                    <x:String>Afghanistan</x:String>
+                    <x:String>Antarctica</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Anguilla</x:String>
+                    <x:String>Albania</x:String>
+                    <x:String>Algeria</x:String>
+                    <x:String>Andorra</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </comboBox:SfComboBox.ComboBoxSource>
+        </comboBox:SfComboBox>
+        <ListView 
+            x:Name="MainListView"  
+            RowHeight="30" 
+            ItemsSource="{Binding Source={x:Reference comboBox},Path=SelectedIndices}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="SelectedIndex:"/>
+                            <Label Text="{Binding}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout> 
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class MainPage : ContentPage, INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }  
+   
+    
+        private object selectedIndices;
+        public object SelectedIndices
+        {
+            get { return selectedIndices; }
+            set
+            {
+                selectedIndices = value;
+                NotifyPropertyChanged("SelectedIndices");
+                
+            }
+        }
+        public MainPage()
+        {
+            InitializeComponent();
+            this.BindingContext = this;
+        }
+	}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## SelectedItem
+
+The `SelectedItem` property is used to select a particular item from the suggestion list. You can either get or set the SelectedItem.
+
+### How to set the SelectedItem
+
+The following code sample demonstrates how to set `SelectedItem`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <comboBox:SfComboBox
+	           x:Name="comboBox"
+	           HeightRequest="40" 
+               SelectedItem="Angola">
+            <comboBox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Antigua and Barbuda</x:String>
+                    <x:String>American Samoa</x:String>
+                    <x:String>Afghanistan</x:String>
+                    <x:String>Antarctica</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Anguilla</x:String>
+                    <x:String>Albania</x:String>
+                    <x:String>Algeria</x:String>
+                    <x:String>Andorra</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </comboBox:SfComboBox.ComboBoxSource>
+        </comboBox:SfComboBox>
+    </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = 30
+            };
+            SfComboBox comboBox = new SfComboBox()
+            {
+                HeightRequest = 40,
+                SelectedItem = "Angola",
+                MultiSelectMode = MultiSelectMode.None,
+                DataSource = new List<string>()
+                {
+                    "Antigua and Barbuda",
+                    "American Samoa",
+                    "Afghanistan",
+                    "Antarctica",
+                    "Argentina",
+                    "Anguilla",
+                    "Albania",
+                    "Algeria",
+                    "Andorra",
+                    "Angola"
+                }
+            };
+
+            stackLayout.Children.Add(comboBox);
+            this.Content = stackLayout;
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Retrieve the selected item
+
+When an item is selected from suggestion list, it can be retrieved using the [`SelectedItem`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedItemProperty.html) property. 
+
+The `SelectedValuePath` API is used to retrieve the value of the selected item in drop-down when the item is selected. The `SelectedValue` property is updated based on the selection. For loading the default values in the control, use only the SelectedItem, and the SelectedValue is used for retrieving the value of our desired property[ID] based on the selection.
+
+There are scenarios in which SelectedValue can have duplicate items when DisplayMemberPath is loaded with Countries and SelectedValue is bound to Continent; it will be the same for many countries. In such scenarios, you cannot populate based on SelectedValue.
+
+The following code sample demonstrates how to retrieve [`SelectedItem`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedItemProperty.html) and display it in an alert.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+        <comboBox:SfComboBox
+	           x:Name="comboBox"
+	           HeightRequest="40" 
+			   MultiSelectMode="None"
+               SelectionChanged="comboBox_SelectionChanged">
+            <comboBox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>Antigua and Barbuda</x:String>
+                    <x:String>American Samoa</x:String>
+                    <x:String>Afghanistan</x:String>
+                    <x:String>Antarctica</x:String>
+                    <x:String>Argentina</x:String>
+                    <x:String>Anguilla</x:String>
+                    <x:String>Albania</x:String>
+                    <x:String>Algeria</x:String>
+                    <x:String>Andorra</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </comboBox:SfComboBox.ComboBoxSource>
+        </comboBox:SfComboBox>
+    </StackLayout> 
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class MainPage : ContentPage
+     {
+        SfComboBox comboBox;
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = 30
+            };
+
+            comboBox = new SfComboBox()
+            {
+                HeightRequest = 40,
+                MultiSelectMode = MultiSelectMode.None,
+                DataSource = new List<string>()
+                {
+                    "Antigua and Barbuda",
+                    "American Samoa",
+                    "Afghanistan",
+                    "Antarctica",
+                    "Argentina",
+                    "Anguilla",
+                    "Albania",
+                    "Algeria",
+                    "Andorra",
+                    "Angola"
+                }
+            };
+
+            comboBox.SelectionChanged += comboBox_SelectionChanged;
+            stackLayout.Children.Add(comboBox);
+            this.Content = stackLayout;
+        }
+
+        private void comboBox_SelectionChanged(object sender, Syncfusion.comboBox.XForms.SelectionChangedEventArgs e)
+        {
+            DisplayAlert("Selection Changed", "SelectedItem: " + comboBox.SelectedItem, "OK");
+        }
+	 }
+
+{% endhighlight %}
+
+{% endtabs %}

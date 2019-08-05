@@ -80,7 +80,7 @@ private bool FilterContacts(object obj)
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Filter-items-in-xamarin.forms-listview)
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Filter-items-in-xamarin.forms-listview)
 
 The following screenshot shows the output rendered when the items are filtered:
 

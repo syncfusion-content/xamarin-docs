@@ -796,7 +796,9 @@ public class BoolToImageConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when grouping with expand collapse icon in group header. Dwnload entire source code from GitHub [here](https://github.com/SyncfusionExamples/Display-group-header-with-expand-collapse-icon-in-xamarin.forms-listview).
+The following screenshot shows the output when grouping with expand collapse icon in group header. 
+
+Download entire source code from GitHub [here](https://github.com/SyncfusionExamples/Display-group-header-with-expand-collapse-icon-in-xamarin.forms-listview).
 
 ![Group header with expand and collapse icon in listview](SfListView_images/SfListView-CollapsedView.png)
 

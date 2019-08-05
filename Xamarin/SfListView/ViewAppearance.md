@@ -850,7 +850,7 @@ internal class SfListViewAccordionBehavior : Behavior<ContentPage>
 
 The `IsVisible` model property which is bound to the second template will be enabled when tapping the item and disabled when tapping again the same item.
 
-Download the entire source code offrom GitHub [here](https://github.com/SyncfusionExamples/listview_autofit).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/listview_autofit).
 
 ![Xamarin.Forms listview with Accordion](SfListView_images/SfListView-AccordImage.png)
 

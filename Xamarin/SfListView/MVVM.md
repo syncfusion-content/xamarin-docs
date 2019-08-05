@@ -117,7 +117,7 @@ public class ContactsViewModel
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EventToCommand-343190546).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Load-xamarin.forms-listview-with-event-to-command-behavior).
 
 For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
 
@@ -287,7 +287,7 @@ public partial class App : PrismApplication
 
 For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1).
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewWithprism-154406465).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Using-xamarin.forms-listview-in-prism).
 
 ## ListView with MVVMCross
 
@@ -470,7 +470,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMSelectedItem315636739).
+Download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/xamarin-forms-listview-selected-item-binding).
 
 ### Binding SelectedItems
 
@@ -523,7 +523,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMSelectedItems739377311).
+Download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/xamarin.forms-listview-selecteditems-binding).
 
 ### Binding SelectionChanged event
 
@@ -578,7 +578,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMSelectionChanged598843483).
+Download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/Xamarin-forms-listview-selected-item-binding-selectionchanged-event-).
 
 ### Binding SelectionChanging event
 
@@ -633,7 +633,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMSelectionChanging964295010).
+Download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/Xamarin-forms-listview-selected-item-binding-selectionchanging-event).
 
 N> Similarly, you can bind the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html), [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDoubleTapped_EV.html), and [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event.
 
@@ -686,7 +686,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMTapCommand1058162896).
+Download the entire sample from GitHub [here]https://github.com/SyncfusionExamples/xamarin-forms-listview-itemtapped-mvvm).
 
 ### Handling ItemHolding action
 
@@ -735,7 +735,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMHoldCommand57192241).
+Download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/Xamarin-forms-listview-itemholding-).
 
 ### Binding button command
 
@@ -822,7 +822,7 @@ public class BookInfoRepository : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MVVMButtonCommand201962307).
+Download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/Xamarin-forms-listview-viewmodel-binding-button-command).
 
 ### Processing LoadMore
 

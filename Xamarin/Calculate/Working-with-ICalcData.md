@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with ICalcData
-description: Explains about the computation in ICalcData
+title: Working with ICalcData | Xamarin.Forms | Syncfusion
+description: Explains about the computation in Xamarin.Forms ICalcData
 platform: xamarin
 control: Calculate
 documentation: ug

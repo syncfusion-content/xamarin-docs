@@ -225,7 +225,7 @@ When the SfListView is loaded inside the ScrollView with sticky header and stick
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewInsideScrollview-235910398).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin.forms-listview-inside-scrollview).
 
 ## Loading ListView inside CarouselPage/Master detail page
 
@@ -525,7 +525,7 @@ public class SfListViewPagingBehavior : Behavior<ContentPage>
 
 {% endhighlight %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Paging737472841).
+Download the entire source code form GitHub [here](https://github.com/SyncfusionExamples/xamarin.forms-listview-paging).
 
 ![Xamarin.Forms listview with paging](SfListView_images/Paging.png)
  
@@ -699,7 +699,7 @@ public partial class ToDoListPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AzureSampleApp-1350807709-2017106000).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Loading-data-from-SQlite-online-database-from-xamarin.forms-listview-).
 
 ## Loading data from SQLite offline database
 
@@ -831,7 +831,7 @@ Refer to the following code which illustrates, how to bind the data from the SQL
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SQL_offline2081750820).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Loading-data-from-SQlite-offline-database-from-xamarin.forms-listview-).
 
 ## ListView with Prism Framework
 
@@ -897,7 +897,7 @@ public partial class App : PrismApplication
 
 For more details, refer to [https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1](https://xamgirl.com/prism-in-xamarin-forms-step-by-step-part-1).
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewPrism1060147379).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Using-xamarin.forms-listview-in-prism).
 
 ## Scrolling ListView without virtualization
 
@@ -928,7 +928,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScrollingwithoutVirtualization1188151350).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/How-to-load-xamarin.forms-listview-for-full-height-without-virtualization).
 
 When ListView is in [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) as 'Height', the extend of the ListView will be updated only while scrolling. So you can resize the ListView in `VisualContainer` [PropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.VisualContainer~PropertyChanged_EV.html) method as like below.
 
@@ -1057,7 +1057,7 @@ public class ExtendedListView : SfListView
 }
 {% endhighlight %}
 
- You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/NestedListView95603140).
+ Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin-forms-listview-inside-another-listview).
  
 ## Rendering ListView when loading in different layouts
 
@@ -1123,7 +1123,7 @@ private bool FilterDepartures(object obj)
 {% endhighlight %}
 {% endtabs %}
 
- You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample842305360).
+ Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Filter-xamarin.forms-listview-based-on-swiped-items-in-another-listview).
 
  ## Dispose listview
 

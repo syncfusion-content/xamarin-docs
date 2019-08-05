@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Layouts in SfListView
+title: Layouts in Xamarin.Forms ListView | Syncfusion
 description: Describes about the different layouts and its functionalities in SfListView.
 platform: xamarin
 control: SfListView

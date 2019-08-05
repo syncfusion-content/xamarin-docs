@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PullToRefresh in SfListView
+title: PullToRefresh in Xamrin.Forms ListView | Syncfusion
 description: Describes about the pull to refresh integration into SfListView.
 platform: xamarin
 control: SfListView

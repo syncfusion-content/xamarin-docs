@@ -435,19 +435,6 @@ You can download accordion sample for Xamarin.Forms from here [AccordionGettingS
 {% endhighlight %}
 {% endtabs %}
 
-## Header icon position 
-
-`SfAccordion` allows to customize the position of the header icon in accordion item by using [HeaderIconPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~HeaderIconPosition.html) property. By default, the header Icon position is `End`.  
-
-{% tabs %}
-{% highlight xaml %}
-    <syncfusion:SfAccordion x:Name="accordion" HeaderIconPosition="Start" />       
-{% endhighlight %}
-{% highlight c# %}
-    accordion.HeaderIconPosition = Syncfusion.XForms.Expander.IconPosition.Start;
-{% endhighlight %}
-{% endtabs %}
-
 ## Item spacing
 
 `SfAccordion` allows to customize the vertical spacing between the accordion items by using [ItemSpacing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~ItemSpacing.html) property. The default value is `6.0d`. 

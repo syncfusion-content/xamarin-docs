@@ -1,15 +1,15 @@
 ---
 layout: post
 title: BindableLayout | Accordion for Xamarin.Forms | Syncfusion
-description: How to bind AccordionItem to SfAccordion using BindableLayout
+description: How to bind AccordionItem to Xamarin.Forms SfAccordion using BindableLayout
 platform: xamarin
 control: SfAccordion
 documentation: ug
 ---
 
-### Bindable Layout
+# Bindable Layout
 
-The [SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows to set a collection of items by setting `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties. Accordion supports Bindable Layout in Xamarin.Forms version 3.5 and above.
+The [SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows to set a collection of items by setting `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties. The Accordion supports Bindable Layout in Xamarin.Forms version 3.5 and above.
 
 ## Creating Data Model
 
@@ -60,7 +60,7 @@ this.BindingContext = new ItemInfoRepository();
 
 ## Binding data to SfAccordion
 
-`SfAccordion` can be binded with data by setting the ItemsSource property of BindableLayout.
+`SfAccordion` can be bounded with data by setting the ItemsSource property of BindableLayout.
 
 The following code example binds the collection created in previous step to the `Bindable.ItemsSource` property:
 

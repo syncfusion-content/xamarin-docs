@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance | Expander for Xamarin.Forms | Syncfusion
-description: Describes about view appearance and different functionalities in Expander.
+description: Describes about view appearance and different functionalities in Xamarin.Forms Expander.
 platform: xamarin
 control: SfExpander
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance
 
-The Expander allows customizing appearance of the Icon, and provides different functionalities to the end-user.
+The Expander allows customizing appearance of the Icon, and provides various functionalities to the end-user.
 
 ## Header icon position 
 

@@ -2303,10 +2303,11 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-	</tr>
-	<tr>
-        <td rowspan="2">
-            SyncPrimaryColor  
+	</tr> 
+    
+    <tr>
+        <td>
+            SyncPrimaryLightColor
             <br/>
             <br/>
         </td>
@@ -2316,14 +2317,19 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>
-    <tr>
+    
+      <tr>
+        <td>
+            SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
         <td>
             Color of line/border when text input layout is focused.
             <br/>
             <br/>
         </td>
     </tr>
-
 
     <tr>
         <td rowspan="3">

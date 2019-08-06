@@ -246,7 +246,7 @@ this.listView.DataSource.SortDescriptors.Add(new SortDescriptor()
 {% endhighlight %}
 {% endtabs %}
 
-The following screenshot shows the output when items are sorted by year. You can download the entire source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SortByYear-641250936)
+The following screenshot shows the output when items are sorted by year. Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Using-sorting-and-grouping-xamarin.forms-listview)
 
 ![Custom sort by year in listview](SfListView_images/SfListView-Sorting1.png)
 

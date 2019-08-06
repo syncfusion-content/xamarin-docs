@@ -142,7 +142,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EndReachedOnScrolling-1173643672).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Notify-when-end-of-the-xamarin.forms-listview-reached-on-scrolling).
 
 ## Maintain the scroll position while updating ItemsSource at runtime
 
@@ -176,4 +176,4 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemsourceScrolling-919001878).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Maintaing-scroll-position-on-changing-itemssource-xamarin.forms-listview).

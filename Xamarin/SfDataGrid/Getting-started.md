@@ -161,7 +161,7 @@ This section explains how to create a SfDataGrid and configure it. The SfDataGri
  
 ![A simple DataGrid](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
 
-You can download the entire source code of this demo for Xamarin.Forms from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/DataGrid_GettingStartedForms.zip).
+You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/DataGrid-GettingStarted-in-Xamarin-Forms).
 
 In this walk through, a new application can be created that contains the SfDataGrid which includes the following topics:
 

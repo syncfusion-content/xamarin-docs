@@ -2,7 +2,7 @@
 
 layout: post
 title: Appointments | SfSchedule | Xamarin | Syncfusion
-description: Learn how to Populate Appointments in SfSchedule control
+description: Learn how to Populate Appointments in SfSchedule control in Xamarin.Forms
 platform: xamarin
 control: SfSchedule
 documentation: ug
@@ -51,6 +51,7 @@ Schedule supports full data binding to any type of IEnumerable source. Specify t
 | [LocationMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~LocationMapping.html) | This property is to map the property name of custom class which is equivalent for Location of ScheduleAppointment. |
 | [IsRecursiveMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~IsRecursiveMapping.html) | This property is to map the property name of custom class which is equivalent for IsRecursive of ScheduleAppointment. |
 | [MinHeightMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~MinHeightMapping.html) | This property is to map the property name of custom class which is equivalent for MinHeight of ScheduleAppointment. |
+| [ResourceIdsMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping~ResourceIdsMapping.html) | This property is to map the property name of custom class which is equivalent for ResourceIds of ScheduleAppointment. |
 
 N> CustomAppointment class should contain two DateTime fields and a string field as mandatory.
 

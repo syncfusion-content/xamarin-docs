@@ -33,7 +33,7 @@ The busy indicator indicates users that something is on progress in the backgrou
 
 {% highlight c# %}
 
-       private async void State_StateChanging(object sender, Syncfusion.XForms.Core.CancelEventArgs e)
+    private async void State_StateChanging(object sender, SwitchStateChangingEventArgs e)
         {
             this.sfSwitch.IsBusy = true;
             await Task.Delay(2500);
@@ -50,7 +50,7 @@ The busy indicator indicates users that something is on progress in the backgrou
             }
             return true;
         }
-
+        
 {% endhighlight %}
 
 ![switch control with busy indicator](images/busy-indicator.png)
@@ -139,7 +139,7 @@ You can customize the thumb color using the `ThumbColor` property based on its v
 
             VisualState offState = new VisualState
             {
-                Name = "OFF"
+                Name = "Off"
             };
 
             offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
@@ -242,7 +242,7 @@ By using the `MaterialSwitchSettings`, `CupertinoSwitchSettings`, and `FluentSwi
 
             VisualState offState = new VisualState
             {
-                Name = "OFF"
+                Name = "Off"
             };
 
             offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
@@ -357,3 +357,1848 @@ this.Content = sfSwitch;
 {% endtabs %}
 
 ![switch conrol with image](images/thumb-color-in-disabled-state.png)
+
+## Change busy indicator color
+
+You can customize the busy indicator color using the `BusyIndicatorColor` property based on its visual state and devices.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <syncfusion:SfSwitch  VisualType="Custom"  IsBusy="True">
+
+        <VisualStateManager.VisualStateGroups>
+
+            <VisualStateGroup  x:Name="CommonStates">
+
+                <VisualState x:Name="On">
+
+                    <VisualState.Setters>
+
+                        <Setter Property="SwitchSettings">
+
+                            <Setter.Value>
+
+                                <syncfusion:DefaultSwitchSettings  x:TypeArguments="syncfusion:OnState"  BusyIndicatorColor="Red" >
+
+                                </syncfusion:DefaultSwitchSettings>
+
+                            </Setter.Value>
+
+                        </Setter>
+
+                    </VisualState.Setters>
+
+                </VisualState>
+
+                <VisualState x:Name="Off">
+
+                    <VisualState.Setters>
+
+                        <Setter Property="SwitchSettings">
+
+                            <Setter.Value>
+
+                                <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OffState" BusyIndicatorColor="Red" />
+
+                            </Setter.Value>
+
+                        </Setter>
+
+                    </VisualState.Setters>
+
+                </VisualState>
+
+            </VisualStateGroup>
+
+        </VisualStateManager.VisualStateGroups>
+
+    </syncfusion:SfSwitch>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfSwitch sfSwitch = new SfSwitch();
+sfSwitch.VisualType = VisualType.Custom;
+sfSwitch.IsBusy = true;
+DefaultSwitchSettings<OnState> defaultSwitch = new DefaultSwitchSettings<OnState>();
+defaultSwitch.BusyIndicatorColor = Color.Red;
+DefaultSwitchSettings<OffState> defaultSwitch1 = new DefaultSwitchSettings<OffState>();
+defaultSwitch1.BusyIndicatorColor = Color.Red;
+
+VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
+
+VisualStateGroup commonStateGroup = new VisualStateGroup();
+VisualState onState = new VisualState
+{
+Name = "On"
+};
+onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch });
+
+VisualState offState = new VisualState
+{
+Name = "Off"
+};
+
+offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
+
+commonStateGroup.States.Add(onState);
+commonStateGroup.States.Add(offState);
+visualStateGroupList.Add(commonStateGroup);
+
+VisualStateManager.SetVisualStateGroups(sfSwitch, visualStateGroupList);
+
+this.Content = sfSwitch;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![switch control with busy indicator color](images/change-busy-indicator-color.png)
+
+## Set all state in same look
+
+All state can be customized in same look by setting the same state for all switch settings.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <syncfusion:SfSwitch  VisualType="Custom" >
+
+        <VisualStateManager.VisualStateGroups>
+
+            <VisualStateGroup  x:Name="CommonStates">
+
+                <VisualState x:Name="On">
+
+                    <VisualState.Setters>
+
+                        <Setter Property="SwitchSettings">
+
+                            <Setter.Value>
+
+                                <syncfusion:DefaultSwitchSettings  x:TypeArguments="syncfusion:OnState" />
+
+                            </Setter.Value>
+
+                        </Setter>
+
+                    </VisualState.Setters>
+
+                </VisualState>
+
+                <VisualState x:Name="Off">
+
+                    <VisualState.Setters>
+
+                        <Setter Property="SwitchSettings">
+
+                            <Setter.Value>
+
+                                <syncfusion:DefaultSwitchSettings x:TypeArguments="syncfusion:OnState" />
+
+                            </Setter.Value>
+
+                        </Setter>
+
+                    </VisualState.Setters>
+
+                </VisualState>
+
+            </VisualStateGroup>
+
+        </VisualStateManager.VisualStateGroups>
+
+    </syncfusion:SfSwitch>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfSwitch sfSwitch = new SfSwitch();
+sfSwitch.VisualType = VisualType.Custom;
+
+DefaultSwitchSettings<OnState> defaultSwitch = new DefaultSwitchSettings<OnState>();
+
+DefaultSwitchSettings<OnState> defaultSwitch1 = new DefaultSwitchSettings<OnState>();
+
+VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
+
+VisualStateGroup commonStateGroup = new VisualStateGroup();
+VisualState onState = new VisualState
+{
+Name = "On"
+};
+onState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch });
+
+VisualState offState = new VisualState
+{
+Name = "Off"
+};
+
+offState.Setters.Add(new Setter { Property = SfSwitch.SwitchSettingsProperty, Value = defaultSwitch1 });
+
+commonStateGroup.States.Add(onState);
+
+commonStateGroup.States.Add(offState);
+
+visualStateGroupList.Add(commonStateGroup);
+
+VisualStateManager.SetVisualStateGroups(sfSwitch, visualStateGroupList);
+
+this.Content = sfSwitch;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![switch control with same look](images/All-state-in-same-look.png)
+
+## Set RTL to switch control
+
+Switch supports to change the layout direction of the control in the right-to-left direction by setting the `FlowDirection` to `RightToLeft`.
+The device direction takes when we set the `FlowDirection` as `MatchParent`.
+
+### Setting right to left
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <syncfusion:SfSwitch  FlowDirection="RightToLeft" >
+    </syncfusion:SfSwitch>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfSwitch sfSwitch = new SfSwitch();
+sfSwitch.FlowDirection = FlowDirection.RightToLeft;
+this.Content = sfSwitch;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![switch control with RTL support](images/RTL-support.png)
+
+### Setting match parent
+
+{% tabs %}
+
+{% highlight xaml %}
+
+     <Grid FlowDirection="RightToLeft">
+        <syncfusion:SfSwitch FlowDirection="MatchParent" />
+    </Grid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Grid grid = new Grid();
+grid.FlowDirection = FlowDirection.RightToLeft;
+SfSwitch sfSwitch = new SfSwitch();
+sfSwitch.FlowDirection = FlowDirection.MatchParent;
+grid.Children.Add(sfSwitch);
+this.Content = grid;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![switch control with RTL support](images/RTL-support.png)
+
+## Get default color of the switches in all three state.
+
+The following table illustrate the default color of the switches in all three state.
+
+### Material
+
+<table>
+    <tr>
+        <th>Elements<br/>
+            <br/></th>        
+        <th>
+          State
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Colors
+            <br/>
+            <br/>
+        </th>
+    </tr>
+ 	<tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #FFFFFFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent with 0.4 opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #FFFFFFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent with 0.4 opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            LightGray
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent with 0.4 opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #DADADA
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent with 0.4 opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent with 0.2 opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #949494
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Track Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #CACACA
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent with 0.2 opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #E0E0E0
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Track Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #E0E0E0
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Track Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Track Border Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Border Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Border Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Track Border Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Busy Indicator Color    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Busy Indicator Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Busy Indicator Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Busy Indicator Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Busy Indicator Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Busy Indicator Color      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    </table>
+
+### Cupertino 
+
+<table>
+    <tr>
+        <th>Elements<br/>
+            <br/></th>        
+        <th>
+          State
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Colors
+            <br/>
+            <br/>
+        </th>
+    </tr>
+ 	<tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #FFFFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #FFFFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #FFFFFFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #FFFFFFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent with 0.5 opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            0.1 Opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            0.3 Opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            0.1 Opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            0.5 Opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            0.3 Opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            0.5 Opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Track Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent with 0.5 opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Track Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Track Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #E5E5E5
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Track Border Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Border Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent with 0.5 opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Border Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #F2F2F2
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Track Border Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent with 0.5 opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Busy Indicator Color    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Busy Indicator Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Busy Indicator Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+           #00BFFF  
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Busy Indicator Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Busy Indicator Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Busy Indicator Color      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
+
+### Fluent
+
+<table>
+    <tr>
+        <th>Elements<br/>
+            <br/></th>        
+        <th>
+          State
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Colors
+            <br/>
+            <br/>
+        </th>
+    </tr>
+ 	<tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #FFFFFFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #000000
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            0.2 Opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+             0.2 Opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+             0.2 Opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Thumb Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Track Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Transparent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            0.2 opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            0.2 opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Track Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            0.2 opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Track Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Border Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #000000
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Track Border Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Accent
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Border Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            0.2 Opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Track Border Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            0.2 Opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Track Border Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            0.2 Opacity
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Busy Indicator Color    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            On
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Busy Indicator Color     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Off
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+      <tr>
+		<td>
+            Busy Indicator Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+           #00BFFF  
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Busy Indicator Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            DisabledOn
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr>
+		<td>
+            Busy Indicator Color       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            DisabledOff
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+     <tr>
+		<td>
+            Busy Indicator Color      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            DisabledIndeterminate
+            <br/>
+            <br/>
+        </td>
+        <td>
+            #00BFFF
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with DataForm | SfDataForm | Xamarin.Forms | Syncfusion
-description: Working with DataForm.
+description: Working with DataForm in Xamarin.Forms.
 platform: xamarin
 control: SfDataForm
 documentation: UG
@@ -240,6 +240,37 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
     }
 }
 {% endhighlight %}
+{% endtabs %}
+
+### Changing DataFormItem FontSize
+
+Using the [EditorFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~EditorFontSize.html), [LabelFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~LabelFontSize.html), and [ValidationLabelFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~ValidationLabelFontSize.html) properties from `DataFormItem`, you can define the font size of the `Editor`, `Label`, and `ValidationLabel`. Changing the font size will be handled in the `AutoGeneratingDataFormItem` event.
+
+You can define the font size as described as follows.
+      
+ * Set the value to font size directly or use the named font sizes such as `Small`, `Medium`, and `Large`.
+
+{% tabs %}
+
+{% highlight c# %}
+
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDataFormItemEventArgs e)
+{
+   if (e.DataFormItem != null)
+     {
+          // Setting Fontsize using NamedSize.                
+          e.DataFormItem.EditorFontSize = Device.GetNamedSize(NamedSize.Small, typeof(Label));
+          e.DataFormItem.LabelFontSize = Device.GetNamedSize(NamedSize.Large, typeof(Label));
+          e.DataFormItem.ValidationLabelFontSize = Device.GetNamedSize(NamedSize.Micro, typeof(Label));
+          // Setting value to FontSize directly.                
+          e.DataFormItem.EditorFontSize = 8;
+          e.DataFormItem.LabelFontSize = 8;
+          e.DataFormItem.ValidationLabelFontSize = 8; 
+     }
+}
+{% endhighlight %}
+
 {% endtabs %}
 
 ## Setting watermark
@@ -767,7 +798,6 @@ Support has been provided to dynamically add custom group items using [Items](ht
 DataFormGroupItem dataFormGroupItem = new DataFormGroupItem();
 dataFormGroupItem.GroupName = "GroupItem";
 dataFormGroupItem.IsExpanded = true;
-dataFormGroupItem.GetType().GetProperty("IsGroup").SetValue(dataFormGroupItem, true);
 dataFormGroupItem.DataFormItems = new DataFormItems();
 
 dataFormGroupItem.DataFormItems.Add(new DataFormTextItem() { Name = "First Name", Editor = "Text", GroupName = "GroupItem" });

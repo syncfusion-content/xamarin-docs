@@ -30,27 +30,26 @@ N>The default value of the `AllowLoadMore` property is false.
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
-	<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-	xmlns:local="clr-namespace:LoadMore"
-	x:Class="LoadMore.MainPage"
-	xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+             xmlns:local="clr-namespace:CarouselSample"
+             x:Class="CarouselSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:CarouselViewModel />
+    </ContentPage.BindingContext>
 
-	<ContentPage.BindingContext>
-	<local:CarouselViewModel />
-	</ContentPage.BindingContext>
-
-	<ContentPage.Resources>
-		<ResourceDictionary>
-			<DataTemplate x:Key="itemTemplate">
-				<Image Source="{Binding Image}"
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="itemTemplate">
+                <Image Source="{Binding Image}"
 				Aspect="AspectFit"/>
-			</DataTemplate>
-		</ResourceDictionary>
-	</ContentPage.Resources>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-		<ContentPage.Content>
-			<carousel:SfCarousel x:Name="carousel"
+    <ContentPage.Content>
+        <carousel:SfCarousel x:Name="carousel"
 			ItemTemplate="{StaticResource itemTemplate}"
 			ItemsSource="{Binding ImageCollection}"
 			ItemHeight="200"
@@ -58,38 +57,82 @@ N>The default value of the `AllowLoadMore` property is false.
 			ItemSpacing="2"
 			AllowLoadMore="True"
 			ViewMode="Linear">
-			</carousel:SfCarousel>
-		</ContentPage.Content>
-	</ContentPage>
+        </carousel:SfCarousel>
+    </ContentPage.Content>
+</ContentPage>
 	
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCarousel carousel = new SfCarousel();
+using Syncfusion.SfCarousel.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
 
-this.BindingContext = new CarouselViewModel();
+namespace CarouselSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            this.BindingContext = new CarouselViewModel();
+            SfCarousel carousel = new SfCarousel()
+            {
+                ItemHeight = 200,
+                ItemWidth = 200,
+                ItemSpacing = 2,
+                AllowLoadMore = true,
+                ViewMode = ViewMode.Linear
+            };
 
-carousel.ItemTemplate = new DataTemplate(() => {
+            carousel.ItemTemplate = new DataTemplate(() =>
+            {
                 Image image = new Image();
                 image.SetBinding(Image.SourceProperty, "Image");
                 image.Aspect = Aspect.AspectFit;
                 return image;
             });
 
-carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+            carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+            this.Content = carousel;
+        }
+    }
 
-carousel.ItemHeight = 100;
+    public class CarouselModel
+    {
+        public CarouselModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private string _image;
 
-carousel.ItemWidth = 100;
+        public string Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
 
- carousel.ItemSpacing = 2;
+    public class CarouselViewModel
+    {
+        public CarouselViewModel()
+        {
+            ImageCollection.Add(new CarouselModel("carousel_person1.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person2.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person3.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person4.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person5.png"));
+        }
 
- //Enable load more in SfCarousel
-
-carousel.AllowLoadMore = true;
-
-carousel.ViewMode = ViewMode.Linear;
+        private List<CarouselModel> imageCollection = new List<CarouselModel>();
+        public List<CarouselModel> ImageCollection
+        {
+            get { return imageCollection; }
+            set { imageCollection = value; }
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -112,63 +155,112 @@ N>The default value of the `LoadMoreItemsCount` property is 3.
 	x:Class="LoadMore.MainPage"
 	xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms">
 
-	<ContentPage.BindingContext>
-	<local:CarouselViewModel/>
-	</ContentPage.BindingContext>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+             xmlns:local="clr-namespace:CarouselSample"
+             x:Class="CarouselSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:CarouselViewModel />
+    </ContentPage.BindingContext>
 
-	<ContentPage.Resources>
-		<ResourceDictionary>
-			<DataTemplate x:Key="itemTemplate">
-				<Image Source="{Binding Image}"
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="itemTemplate">
+                <Image Source="{Binding Image}"
 				Aspect="AspectFit"/>
-			</DataTemplate>
-		</ResourceDictionary>
-	</ContentPage.Resources>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-		<ContentPage.Content>
-			<carousel:SfCarousel x:Name="carousel"
+    <ContentPage.Content>
+        <carousel:SfCarousel x:Name="carousel"
 			ItemTemplate="{StaticResource itemTemplate}"
 			ItemsSource="{Binding ImageCollection}"
 			ItemHeight="200"
 			ItemWidth="200"
 			ItemSpacing="2"
-			LoadMoreItemsCount="5"
 			AllowLoadMore="True"
-			ViewMode="Linear">
-			</carousel:SfCarousel>
-		</ContentPage.Content>
-	</ContentPage>
+			ViewMode="Linear"
+            LoadMoreItemsCount="2">
+        </carousel:SfCarousel>
+    </ContentPage.Content>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCarousel carousel = new SfCarousel();
+using Syncfusion.SfCarousel.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
 
-this.BindingContext = new CarouselViewModel();
+namespace CarouselSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            this.BindingContext = new CarouselViewModel();
+            SfCarousel carousel = new SfCarousel()
+            {
+                ItemHeight = 200,
+                ItemWidth = 200,
+                ItemSpacing = 2,
+                AllowLoadMore = true,
+                LoadMoreItemsCount = 2,
+                ViewMode = ViewMode.Linear
+            };
 
-carousel.ItemTemplate = new DataTemplate(() => {
+            carousel.ItemTemplate = new DataTemplate(() =>
+            {
                 Image image = new Image();
                 image.SetBinding(Image.SourceProperty, "Image");
                 image.Aspect = Aspect.AspectFit;
                 return image;
             });
 
-carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+            carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
+            this.Content = carousel;
+        }
+    }
 
-carousel.ItemHeight = 100;
+    public class CarouselModel
+    {
+        public CarouselModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private string _image;
 
-carousel.ItemWidth = 100;
-                
-carousel.ItemSpacing = 2;
+        public string Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
 
-carousel.LoadMoreItemsCount = 5;
-                
-//Enable load more in SfCarousel
-                
-carousel.AllowLoadMore = true;
-                
-carousel.ViewMode = ViewMode.Linear;
+    public class CarouselViewModel
+    {
+        public CarouselViewModel()
+        {
+            ImageCollection.Add(new CarouselModel("carousel_person1.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person2.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person3.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person4.png"));
+            ImageCollection.Add(new CarouselModel("carousel_person5.png"));
+        }
+
+        private List<CarouselModel> imageCollection = new List<CarouselModel>();
+        public List<CarouselModel> ImageCollection
+        {
+            get { return imageCollection; }
+            set { imageCollection = value; }
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -182,57 +274,152 @@ Custom view can be passed instead of the LoadMore label by using the `LoadMoreVi
 
 {% highlight xaml %}
 
-<syncfusion:SfCarousel.LoadMoreView>
-      <Grid
-      BackgroundColor="#FFFFFFFF">
-        <Label
-        Text="Load More..."
-        FontSize="14"
-        TextColor="#FF000000"
-        FontAttributes="Bold"
-        HorizontalTextAlignment="Center"
-        VerticalTextAlignment="Center"
-        HorizontalOptions="Center"
-        VerticalOptions="Center" /> 
-    </Grid>
-</syncfusion:SfCarousel.LoadMoreView>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+             xmlns:local="clr-namespace:CarouselSample"
+             x:Class="CarouselSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:CarouselViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="itemTemplate">
+                <Image Source="{Binding Image}"
+				Aspect="AspectFit"/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <carousel:SfCarousel x:Name="carousel"
+			ItemTemplate="{StaticResource itemTemplate}"
+			ItemsSource="{Binding ImageCollection}"
+			ItemHeight="200"
+			ItemWidth="200"
+			ItemSpacing="2"
+			AllowLoadMore="True"
+			ViewMode="Linear"
+            LoadMoreItemsCount="2">
+            <carousel:SfCarousel.LoadMoreView>
+                <Grid BackgroundColor="#FFFFFFFF">
+                    <Label
+                        Text="Load More..."
+                        FontSize="14"
+                        TextColor="#FF000000"
+                        FontAttributes="Bold"
+                        HorizontalTextAlignment="Center"
+                        VerticalTextAlignment="Center"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"/>
+                </Grid>
+            </carousel:SfCarousel.LoadMoreView>
+        </carousel:SfCarousel>
+    </ContentPage.Content>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-SfCarousel carousel = new SfCarousel();
+using Syncfusion.SfCarousel.XForms;
+using System.Collections.Generic;
+using Xamarin.Forms;
 
-Grid grid = new Grid();
+namespace CarouselSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            this.BindingContext = new CarouselViewModel();
+            SfCarousel carousel = new SfCarousel()
+            {
+                ItemHeight = 200,
+                ItemWidth = 200,
+                ItemSpacing = 2,
+                AllowLoadMore = true,
+                LoadMoreItemsCount = 2,
+                ViewMode = ViewMode.Linear
+            };
 
-grid.BackgroundColor = Color.White;
+            carousel.ItemTemplate = new DataTemplate(() =>
+            {
+                Image image = new Image();
+                image.SetBinding(Image.SourceProperty, "Image");
+                image.Aspect = Aspect.AspectFit;
+                return image;
+            });
 
-Label label = new Label();
+            carousel.SetBinding(SfCarousel.ItemsSourceProperty, "ImageCollection");
 
-label.Text = "Load More...";
+            Grid grid = new Grid()
+            {
+                BackgroundColor = Color.White
+            };
 
-label.FontSize = 14;
+            Label label = new Label()
+            {
+                Text = "Load More...",
+                FontSize = 14,
+                TextColor = Color.Black,
+                FontAttributes = FontAttributes.Bold,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                HorizontalTextAlignment = TextAlignment.Center,
+                VerticalTextAlignment = TextAlignment.Center
+            };
 
-label.TextColor = Color.Black;
+            grid.Children.Add(label);
 
-label.FontAttributes = FontAttributes.Bold;
+            carousel.LoadMoreView = grid;
 
-label.HorizontalOptions = LayoutOptions.Center;
+            this.Content = carousel;
+        }
+    }
 
-label.VerticalOptions = LayoutOptions.Center;
+    public class CarouselModel
+    {
+        public CarouselModel(string imageString)
+        {
+            Image = imageString;
+        }
+        private string _image;
 
-label.HorizontalTextAlignment = TextAlignment.Center;
+        public string Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
 
-label.VerticalTextAlignment = TextAlignment.Center;
+    public class CarouselViewModel
+    {
+        public CarouselViewModel()
+        {
+            ImageCollection.Add(new CarouselModel("cart.png"));
+            ImageCollection.Add(new CarouselModel("cart.png"));
+            ImageCollection.Add(new CarouselModel("cart.png"));
+            ImageCollection.Add(new CarouselModel("cart.png"));
+            ImageCollection.Add(new CarouselModel("cart.png"));
+        }
 
-grid.Children.Add(label);
-
-carousel.LoadMoreView = grid;
+        private List<CarouselModel> imageCollection = new List<CarouselModel>();
+        public List<CarouselModel> ImageCollection
+        {
+            get { return imageCollection; }
+            set { imageCollection = value; }
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![](images/LoadMore.png)
+![Load more](images/LoadMore.png)
 
 You can find the complete Load More sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore1567166256.zip)

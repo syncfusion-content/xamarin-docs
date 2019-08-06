@@ -47,5 +47,17 @@ inputLayout.InputView = new Entry();
 
 ## Customize the font for input view
 
-You can customize the font for the input view (Entry, Editor, SfMaskedEdit, and SfNumericTextBox) inside SfTextInputLayout using the [FontSize](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.fontsize?view=xamarin-forms), [FontAttributes](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.fontattributes?view=xamarin-forms), and [FontFamily](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.fontfamily?view=xamarin-forms) properties.
+You can customize the font for the input view inside SfTextInputLayout using its properties.
+
+* [Entry](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry?view=xamarin-forms#properties)
+
+* [Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms#properties)
+
+* [SfMaskedEdit](https://help.syncfusion.com/xamarin/sfmaskededit/visual-customization#setting-appearance-of-text) 
+
+* [SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/font-settings)
+
+* [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/customizing-autocomplete)
+
+* [SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/customizing-combobox)
 

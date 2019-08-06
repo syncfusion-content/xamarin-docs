@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization of Schedule | Syncfusion
-description: How to Localize the contents of Schedule control.
+description: How to Localize the contents of Schedule control in Xamarin.Forms.
 platform: xamarin
 control: SfSchedule
 documentation: ug
@@ -57,6 +57,7 @@ You can localize custom text available in the control by adding equivalent local
 <resources>
 	<string name="No_Appointments">Aucun événement</string>
 	<string name="all_day">Toute la journée</string>
+    <string name="No_Resources">Aucune ressource</string>
 </resources>
 {% endhighlight %}  
 {% endtabs %} 
@@ -109,7 +110,7 @@ The procedure for creating Resources(.resw) file is as follows:
 ![Localization UWP](Localization_images/Localization_XFUWP.png)
 
 ## Localizing custom strings from pcl
-You can localize the custom strings (All Day, No Events) used in the schedule control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale using DependencyService instead of device language, you need to create new resource manager based on the resources, and need to set this to [Manager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResourceManager~Manager.html) property of [ScheduleResourceManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResourceManager.html). In the below code, we have set French as Schedule locale as well as custom strings.
+You can localize the custom strings (All Day, No Events, No Resources) used in the schedule control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale using DependencyService instead of device language, you need to create new resource manager based on the resources, and need to set this to [Manager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResourceManager~Manager.html) property of [ScheduleResourceManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResourceManager.html). In the below code, we have set French as Schedule locale as well as custom strings.
 
 {% tabs %}
 {% highlight c# %}
@@ -151,6 +152,9 @@ Now, set the Build Action as EmbeddedResource for `Syncfusion.SfSchedule.Forms.f
 </data>
 <data name="AllDay" xml:space="preserve">
     <value>Toute la journéer</value>
+</data>
+<data name="NoResources" xml:space="preserve">
+    <value>Aucune ressource</value>
 </data>
 {% endhighlight %}
 {% endtabs %}

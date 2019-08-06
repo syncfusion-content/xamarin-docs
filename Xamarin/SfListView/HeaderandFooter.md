@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header and Footer in Syncfusion ListView
-description: Describes the Header and Footer features in SfListView.
+title: ListView Header and Footer | Xamarin.Forms | Syncfusion
+description: Describes the Header and Footer features in Xamarin.Forms ListView.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -73,7 +73,7 @@ listView.FooterSize = 60;
 
 N> For vertical orientation, the header and footer size are considered as height. For horizontal orientation, that will be considered as width.
 
-## Stick header and footer
+## Sticky header and footer
 
 The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows sticking the header and footer items to view by enabling the [SfListView.IsStickyHeader](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyHeader.html) and [SfListView.IsStickyFooter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsStickyFooter.html) properties. If the `SfListView.IsStickyHeader` is `true`, the header item will stick to the top of the view. If the `SfListView.IsStickyFooter` is `true`, the footer item will stick to the bottom of the view.
 
@@ -89,6 +89,26 @@ listView.IsStickyFooter = true;
 {% endtabs %}
 
 ![Xamarin.Forms listview with header and footer](SfListView_images/SfListView-HeaderAndFooter.jpg)
+
+## Sticky footer position
+
+The [SfListView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView.html) allows to position the footer item by using the [StickyFooterPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~StickyFooterPosition.html) property. 
+
+The `StickyFooterPosition` property has two options:
+
+* Body: The footer item will be positioned inside the body of the ListView when the items are less than the view size.
+* Default: The footer item will be positioned at the bottom of the ListView.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfListView x:Name="listView" StickyFooterPosition="Body"/>          
+{% endhighlight %}
+{% highlight c# %}
+listView.StickyFooterPosition = FooterPosition.Body;
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin Forms ListView with sticky footer position](SfListView_images/SfListView-StickyFooterPosition.jpg)
 
 ## How to
 

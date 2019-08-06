@@ -92,6 +92,30 @@ The default value of `SfDatagrid.AutoGenerateColumns` property is `true` and `Sf
 
 N> When you change items source for the SfDatagrid during run time, then the columns are generated on the basis of option set for `SfDataGrid.AutoGenerateColumnsMode`.
 
+### Auto generate columns for custom type
+
+By default columns are also auto generated for custom type properties and for parent properties of complex properties in the data object. To prevent such columns from being auto generated set the [SfDataGrid.AutoGenerateColumnsForCustomType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumnsForCustomType.html) property as `False`.
+In case of complex properties, use the [SfDataGrid.AutoGenerateColumnsModeForCustomType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumnsModeForCustomType.html) to auto generate columns for either parent property, inner properties of the parent or both parent and inner properties.
+
+{% tabs %}
+{% highlight xaml %}
+  <syncfusion:SfDataGrid x:Name="dataGrid"
+                           ItemsSource="{Binding OrdersInfo,Mode=TwoWay}"
+                           AutoGenerateColumnsForCustomType="True"
+                           AutoGenerateColumnsModeForCustomType="Both"
+                           AllowEditing="True"
+                           AllowSorting="True"
+                           NavigationMode="Cell"
+                           SelectionMode="Single">
+    </syncfusion:SfDataGrid>
+{% endhighlight %}
+
+{% highlight c# %}
+this.dataGrid.AutoGenerateColumnsForCustomType = true;
+this.dataGrid.AutoGenerateColumnsModeForCustomType = AutoGenerateColumnsModeForCustomType.Both;
+{% endhighlight %}
+{% endtabs %}
+
 ### Customize automatically generated columns
 
 When `SfDatagrid.AutoGenerateColumns` is `true`, the [SfDataGrid.AutoGeneratingColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event is raised for each GridColumn. This event receives two arguments namely sender which is the SfDatagrid and the [AutoGeneratingColumnEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.AutoGeneratingColumnEventArgs.html).

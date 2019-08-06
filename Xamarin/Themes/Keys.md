@@ -3937,6 +3937,219 @@ This page lists the keys for each control and the element to which it is mapped 
 
 </table>
 
+## SfDataForm
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+            SfDataFormStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfDataFormTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfDataForm without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfDataFormTheme">CustomTheme</x:String>
+                <Color x:Key="SfDataFormEditorTextColor">Red</Color>
+                <Color x:Key="SfDataFormLabelTextColor">Pink</Color>
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SyncPrimaryColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of dataform editors when focused and date time picker's background color in dataform.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+        <td>
+            SfDataFormBackgroundColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the dataform.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+
+    <tr>
+        <td>
+            SfDataFormEditorBackgroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the dataform editors.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+    <tr>
+        <td>
+            SfDataFormEditorDisabledBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Disabled editor`s background color in dataform.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormEditorTextColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the dataform editors.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataFormEditorPlaceholderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Placeholder color of the editor in dataform.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormEditorDisabledTextColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+     		Disabled editor`s text color in dataform.     
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfDataFormLabelTextColor    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the dataform labels.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormLabelDisabledTextColor     
+            <br/>
+            <br/>
+        </td>
+        <td>
+			Disabled label`s text color in dataform.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormLabelBackgroundColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the dataform labels.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormLabelDisabledBackgroundColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+		    Disabled label`s background color in dataform.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfDataFormEditorBorderColor           
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Border color of the dataform editors.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
+
 ## SfSchedule
 
 <table>
@@ -6680,6 +6893,303 @@ This page lists the keys for each control and the element to which it is mapped 
 
 </table>
 
+## SfSwitch
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="24">
+            SfSwitchStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfSwitchTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, you can customize the appearance of SfSwitch without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfSwitchTheme">CustomTheme</x:String> 
+                <Color x:Key="MaterialOnTrackColor">Black</Color> 
+                <Color x:Key="MaterialOnTrackBorderColor">White</Color>
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+
+    <tr>
+    <td rowspan="6">
+            SyncPrimaryColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb color of the material switch in On state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+	    <td>
+		    Thumb border color of the material switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+    <tr>
+	    <td>
+		    Track color of the Cupertino switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+    <tr>
+	    <td>
+		    Track border color of the Cupertino switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+    <tr>
+	    <td>
+		    Track color of the Fluent switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+    <tr>
+	    <td>
+		    Track border color of the Fluent switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	   
+     <tr>
+    <td rowspan="4">
+            SyncPrimaryForegroundColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb color of the Cupertino switch in On state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	<tr>
+	    <td>
+		    Thumb border color of the Cupertino switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+    <tr>
+	    <td>
+		    Thumb color of the Fluent switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+    <tr>
+	    <td>
+		    Thumb border color of the Fluent switch in On state.
+			<br/>
+			<br/>
+		</td>
+    </tr>	    
+    <tr> 
+        <td>
+            MaterialOffThumbColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb color of the material switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	<tr> 
+        <td>
+            MaterialOffTrackColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track color of the material switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            MaterialOffThumbBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb border color of the material switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            MaterialOffTrackBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track border color of the material switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            MaterialIndeterminateTrackColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate track color of the material switch.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            MaterialIndeterminateTrackBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Indeterminate track border color of the material switch.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            CupertinoOffThumbBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb border color of the Cupertino switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            CupertinoOffTrackColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track color of the Cupertino switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            CupertinoOffTrackBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track border color of the Cupertino switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            FluentOffThumbColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb color of the fluent switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            FluentOffTrackColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Track color of the fluent switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            FluentOffThumbBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Thumb border color of the fluent switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    <tr> 
+        <td>
+            FluentOffTrackBorderColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the fluent switch in off state.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+</table>
+
 ## SfBorder
 
 <table>
@@ -8577,217 +9087,4 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>
 
-</table>
-
-## SfDataForm
-
-<table>
-    <tr>
-        <th>Theme Dictionary<br/>
-            <br/></th>        
-        <th>
-          Keys
-            <br/>
-            <br/>
-        </th>
-        <th>
-            Description
-            <br/>
-            <br/>
-        </th>
-    </tr>
-
-    <tr>
-        <td rowspan="24">
-            SfDataFormStyles  
-            <br/>
-            <br/>
-        </td>
-		<td>
-           SfDataFormTheme 
-            <br/>
-            <br/>
-        </td>
-        <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfDataForm without merging common theme resource and control style resource dictionaries.
-			
-{% highlight xaml %}
-
-<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
-             ...>
-<Application.Resources>
-    <syncCore:SyncfusionThemeDictionary>
-        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
-            <ResourceDictionary>
-                <x:String x:Key="SfDataFormTheme">CustomTheme</x:String>
-                <Color x:Key="SfDataFormEditorTextColor">Red</Color>
-                <Color x:Key="SfDataFormLabelTextColor">Pink</Color>
-            </ResourceDictionary>
-        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
-    </syncCore:SyncfusionThemeDictionary>
-</Application.Resources>
-
-....
-
-</Application>
-
-{% endhighlight %}
-            <br/>
-            <br/>
-        </td>
-	</tr>
-	<tr>
-        <td>
-            SyncPrimaryColor  
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Border color of dataform editors when focused and date time picker's background color in dataform.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-	<tr>
-        <td>
-            SfDataFormBackgroundColor  
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Background color of the dataform.
-            <br/>
-            <br/>
-        </td>
-    </tr>   
-
-    <tr>
-        <td>
-            SfDataFormEditorBackgroundColor   
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Background color of the dataform editors.
-            <br/>
-            <br/>
-        </td>
-    </tr>  
-    
-    <tr>
-        <td>
-            SfDataFormEditorDisabledBackgroundColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Disabled editor`s background color in dataform.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            SfDataFormEditorTextColor 
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Text color of the dataform editors.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-        <td>
-            SfDataFormEditorPlaceholderColor  
-            <br/>
-            <br/>
-        </td>
-        <td>
-           Placeholder color of the editor in dataform.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            SfDataFormEditorDisabledTextColor   
-            <br/>
-            <br/>
-        </td>
-        <td>
-     		Disabled editor`s text color in dataform.     
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-        <td>
-            SfDataFormLabelTextColor    
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Text color of the dataform labels.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            SfDataFormLabelDisabledTextColor     
-            <br/>
-            <br/>
-        </td>
-        <td>
-			Disabled label`s text color in dataform.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            SfDataFormLabelBackgroundColor      
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Background color of the dataform labels.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            SfDataFormLabelDisabledBackgroundColor       
-            <br/>
-            <br/>
-        </td>
-        <td>
-		    Disabled label`s background color in dataform.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            SfDataFormEditorBorderColor           
-            <br/>
-            <br/>
-        </td>
-        <td>
-          Border color of the dataform editors.
-            <br/>
-            <br/>
-        </td>
-    </tr>
 </table>

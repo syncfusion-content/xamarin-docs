@@ -158,7 +158,7 @@ private void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs
 } 
 {% endhighlight %}
 
-![DataGrid with auto fitting capabilities for rows](SfDataGrid_images/AutoRowHeight_forms.png)
+![DataGrid with auto fitting capabilities for rows](SfDataGrid_images/AutoRowHeight_forms.jpg)
 
 ## Customize header row height based on header content
 

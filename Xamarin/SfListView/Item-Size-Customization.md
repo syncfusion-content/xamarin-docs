@@ -38,7 +38,7 @@ private void ListView_QueryItemSize(object sender, Syncfusion.ListView.XForms.Qu
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CustomizeItems171985138).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/How-to-set-different-row-height-for-each-row-in-Xamarin.Forms-listview).
 
 ![Size of item in listview](SfListView_images/QueryItemSize.jpg)
 
@@ -72,7 +72,7 @@ listView.AutoFitMode = AutoFitMode.Height;
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoFitItems-252477562).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Autofit-listviewitem-in-xamarin.forms-listview).
 
 ![AutoFit items](SfListView_images/AutoFit.jpg)
 

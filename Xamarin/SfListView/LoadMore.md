@@ -242,7 +242,7 @@ private async void LoadMoreItems(object obj)
 {% endhighlight %}
 {% endtabs %}
 
-Download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Loading_Indicator-1292005291).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin-listview-loadmore).
 
 Items can be loaded either on the top or bottom of the view.
 
@@ -534,7 +534,7 @@ public class LoadMoreViewModel:INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMoreInfinitescroll-1060583579).
+Download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/Load-more-items-on-infinite-scroll-in-xamarin.forms-listview).
 
 ### Load more items automatically from up direction
 
@@ -659,7 +659,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Automatic-1467526465).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin-listview-loadmore).
 
 ![Loadmore automatic](SfListView_images/SfListView-LoadMoreAutomaticallyUpDirection.png)
 
@@ -785,7 +785,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore_Up_Manual-1153429299).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Xamarin-ListView-LoadMore-Upwards).
 
 ![Loadmore manual](SfListView_images/SfListView-LoadMoreManuallyUpDirection.jpg)
 
@@ -834,4 +834,4 @@ private void AddProducts(int index, int count)
 }
 {% endhighlight %}
 
-You can download the GitHub sample [here](https://github.com/SyncfusionExamples/How-to-disable-LoadMoreCommand-execution-when-ListView-is-Empty)
+Download the GitHub sample from GitHub [here](https://github.com/SyncfusionExamples/How-to-disable-LoadMoreCommand-execution-when-ListView-is-Empty)

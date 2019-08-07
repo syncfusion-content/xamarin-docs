@@ -125,7 +125,7 @@ listView.ItemTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-The screenshot shows the output of the reordering items by drag and drop. You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DragIndicatorView525431618).
+The screenshot shows the output of the reordering items by drag and drop. Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Load-dar-view-indicator-in-xamarin.forms-listview).
 
 ![Item reordering by drag and drop](SfListView_images/SfListView-ItemReordering.gif)
 
@@ -373,7 +373,7 @@ private async void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample for above source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ItemDragAndDelete102430510).
+Download the sample from GitHub [here](https://github.com/SyncfusionExamples/Delete-dragging-item-on-dropping-into-a-particular-view).
 
 ![Delete item while drop in listview](SfListView_images/SfListView-ItemReordering1.gif)
 

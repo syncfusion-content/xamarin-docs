@@ -142,7 +142,7 @@ The SfListView supports customizing the selection background color for the selec
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SelectedItemCustomization-473967184).
+Download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/Customize-selected-item-in-xamarin.forms-listview).
 
 ![Custom selection in listview](SfListView_images/SfListView-Selection-3.png)
 
@@ -224,7 +224,7 @@ listView.SelectedItemTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Checked_Circle_OnSelected_Items-1476673984).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Show-checked-circle-on-selected-items-in-xamarin.forms-listview).
 
 ![Multiple item selection in listview](SfListView_images/SfListView-Selection-2.png)
 
@@ -270,7 +270,7 @@ public class SelectionControllerExt : SelectionController
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample for above source code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Programatic_Animation-311129164).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Animate-items-programmatically-on-selection-in-xamarin.forms-listview).
 
 ![Selection animation in listview](SfListView_images/SfListView-SelectionAnimation.gif)
 
@@ -385,7 +385,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/disable_selection_onparticualr_item-576187978).
+Download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/Disable-selection-animation-on-particular-item-in-xamarin-forms-listview).
 
 ### Automatically scroll to bring a selected item into the view
 
@@ -417,7 +417,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Automatic_scrol_selected_Item_In_view-1395779347).
+Download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/Scroll-the-xamarin.forms-listview-to-bring-the-particular-item-in-view-).
 
 ### Gets the index of selected item
 
@@ -443,7 +443,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Get_Index_Selected_Item-722108833).
+Download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/Get-the-index-of-selected-item-in-xamarin.forms-listview).
 
 ### Display selection when ItemTemplate contains image
 

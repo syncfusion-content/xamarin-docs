@@ -66,6 +66,8 @@ private void BringIntoView_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+N> We need to set the [NodePopulationMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~NodePopulationMode.html) API value as `PopulationMode.Instant` for scrolling to the collapsed item in addition to the additional parameter passed to the `BringIntoView` method.
+
 ### Scroll the item into specified position
 
 The fourth optional parameter `scrollToPosition` in `BringIntoView` method allows to position the scrolled item in the view. The scrolled item can take either of the four positions as explained below. The default position is `Start`.

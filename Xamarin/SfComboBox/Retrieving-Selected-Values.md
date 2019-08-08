@@ -25,7 +25,13 @@ The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboB
 {% tabs %}
 
 {% highlight xaml %}
-
+ 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ComboBox"
+             xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="ComboBox.MainPage">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox
 	           x:Name="comboBox"
@@ -48,12 +54,27 @@ The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboB
             </comboBox:SfComboBox.ComboBoxSource>
         </comboBox:SfComboBox>
     </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    StackLayout stackLayout = new StackLayout()
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace ComboBox
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
             {
                 VerticalOptions = LayoutOptions.Start,
                 HorizontalOptions = LayoutOptions.Start,
@@ -81,6 +102,9 @@ The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboB
 
     		stackLayout.Children.Add(comboBox);
     		this.Content = stackLayout;
+            }
+    }
+}
 
 {% endhighlight %}
 
@@ -96,6 +120,12 @@ The following code sample demonstrates how to retrieve [`SelectedIndex`](https:/
 
 {% highlight xaml %}
 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ComboBox"
+          xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="ComboBox.MainPage">
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox
 	           x:Name="comboBox"
@@ -118,11 +148,22 @@ The following code sample demonstrates how to retrieve [`SelectedIndex`](https:/
             </comboBox:SfComboBox.ComboBoxSource>
         </comboBox:SfComboBox>
     </StackLayout> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
 
+namespace ComboBox
+{
+    public partial class MainPage : ContentPage
+    {
         SfComboBox comboBox;
         public MainPage()
 		{
@@ -162,6 +203,8 @@ The following code sample demonstrates how to retrieve [`SelectedIndex`](https:/
         {
             DisplayAlert("Selection Changed", "SelectedIndex: " + comboBox.SelectedIndex, "OK");
         }
+    }
+}
 
 {% endhighlight %}
 
@@ -179,6 +222,12 @@ The [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
 
 {% highlight xaml %}
 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ComboBox"
+          xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="ComboBox.MainPage">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox
 	           x:Name="comboBox"
@@ -201,11 +250,21 @@ The [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
             </comboBox:SfComboBox.ComboBoxSource>
         </comboBox:SfComboBox>
     </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace ComboBox
+{
     public partial class MainPage : ContentPage
     {
         private object selectedIndices;
@@ -222,6 +281,7 @@ The [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
             this.BindingContext = this;
         }
     }
+}
 
 {% endhighlight %}
 
@@ -237,6 +297,12 @@ The following code sample demonstrates how to retrieve [`SelectedIndices`](https
 
 {% highlight xaml %}
 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ComboBox"
+          xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="ComboBox.MainPage">
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox
 	           x:Name="comboBox"
@@ -273,11 +339,21 @@ The following code sample demonstrates how to retrieve [`SelectedIndices`](https
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace ComboBox
+{
     public partial class MainPage : ContentPage, INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
@@ -305,6 +381,7 @@ The following code sample demonstrates how to retrieve [`SelectedIndices`](https
             this.BindingContext = this;
         }
 	}
+}
 
 {% endhighlight %}
 
@@ -322,6 +399,12 @@ The following code sample demonstrates how to set `SelectedItem`.
 
 {% highlight xaml %}
 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ComboBox"
+          xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="ComboBox.MainPage">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox
 	           x:Name="comboBox"
@@ -343,11 +426,21 @@ The following code sample demonstrates how to set `SelectedItem`.
             </comboBox:SfComboBox.ComboBoxSource>
         </comboBox:SfComboBox>
     </StackLayout>
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace ComboBox
+{
     public partial class MainPage : ContentPage
     {
         public MainPage()
@@ -383,6 +476,7 @@ The following code sample demonstrates how to set `SelectedItem`.
             this.Content = stackLayout;
         }
     }
+}
 
 {% endhighlight %}
 
@@ -402,6 +496,12 @@ The following code sample demonstrates how to retrieve [`SelectedItem`](https://
 
 {% highlight xaml %}
 
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ComboBox"
+          xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             x:Class="ComboBox.MainPage">
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox
 	           x:Name="comboBox"
@@ -424,11 +524,21 @@ The following code sample demonstrates how to retrieve [`SelectedItem`](https://
             </comboBox:SfComboBox.ComboBoxSource>
         </comboBox:SfComboBox>
     </StackLayout> 
+</ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace ComboBox
+{
     public partial class MainPage : ContentPage
      {
         SfComboBox comboBox;
@@ -471,6 +581,7 @@ The following code sample demonstrates how to retrieve [`SelectedItem`](https://
             DisplayAlert("Selection Changed", "SelectedItem: " + comboBox.SelectedItem, "OK");
         }
 	 }
+}
 
 {% endhighlight %}
 

@@ -54,4 +54,4 @@ MainPage=new application name.Views.
 
 Example: If you added Login Page,
 
-MainPage=new App1.Views.Login1.LoginPage();
+MainPage=new App1.Views.Login.LoginPage();

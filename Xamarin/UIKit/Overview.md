@@ -30,3 +30,5 @@ The screens are developed with MVVM pattern, which separates the UI and business
 * UWP Build 17763 and later versions
 
 N> The required minimum version of Xamarin.Forms is 4.0.0.425677.
+
+To get started with Syncfusion XAML Pages for Xamarin.Forms, refer to [Getting Started](https://help.syncfusion.com/xamarin/uikit/gettingstarted)

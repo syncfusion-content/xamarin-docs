@@ -24,6 +24,13 @@ To update the collection changes in UI, it is necessary to define [NotificationS
 * PropertyChange - Updates its ChildItems when associated collection property gets changed.
 * None - It is a default mode and it doesn't reflect collection/property changes in UI.
 
+To decide how to populate the nodes, it is necessary to set this [NodePopulationMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~NodePopulationMode.html) API to Treeview. 
+
+The `NodePopulationMode` API has following enum values:
+
+* OnDemand - Populate the child nodes only when parent nodes is expanded. It is the default value.
+* Instant - Populates all the child nodes when Treeview control is initially loaded.
+
 ### Create Data Model for treeview
 
 Create a simple data source as shown in the following code example in a new class file, and save it as FileManager.cs file: 

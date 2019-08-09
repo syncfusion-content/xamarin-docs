@@ -34,11 +34,10 @@ The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboB
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <comboBox:SfComboBox
-	           x:Name="comboBox"
-	           HeightRequest="40" 
-			   MultiSelectMode="None"
-	           SelectedIndex="1">
+        <comboBox:SfComboBox x:Name="comboBox"
+	                         HeightRequest="40" 
+			                 MultiSelectMode="None"
+	                         SelectedIndex="1">
             <comboBox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Antigua and Barbuda</x:String>

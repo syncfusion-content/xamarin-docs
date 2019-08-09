@@ -34,10 +34,7 @@ The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboB
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <comboBox:SfComboBox x:Name="comboBox"
-	                         HeightRequest="40" 
-			                 MultiSelectMode="None"
-	                         SelectedIndex="1">
+        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None" SelectedIndex="1">
             <comboBox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Antigua and Barbuda</x:String>
@@ -128,11 +125,7 @@ The following code sample demonstrates how to retrieve [`SelectedIndex`](https:/
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <comboBox:SfComboBox
-	           x:Name="comboBox"
-	           HeightRequest="40" 
-			   MultiSelectMode="None"
-               SelectionChanged="comboBox_SelectionChanged">
+        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None">
             <comboBox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Antigua and Barbuda</x:String>
@@ -231,11 +224,7 @@ The [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <comboBox:SfComboBox
-	           x:Name="comboBox"
-	           HeightRequest="40" 
-               MultiSelectMode="Token"
-               SelectedIndices="{Binding SelectedIndices}">
+        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="Token" SelectedIndices="{Binding SelectedIndices}">
             <comboBox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Antigua and Barbuda</x:String>
@@ -307,10 +296,7 @@ The following code sample demonstrates how to retrieve [`SelectedIndices`](https
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <comboBox:SfComboBox
-	           x:Name="comboBox"
-	           HeightRequest="40" 
-               MultiSelectMode="Token">
+        <comboBox:SfComboBox x:Name="comboBox"HeightRequest="40" MultiSelectMode="Token">
             <comboBox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Antigua and Barbuda</x:String>
@@ -410,10 +396,7 @@ The following code sample demonstrates how to set `SelectedItem`.
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <comboBox:SfComboBox
-	           x:Name="comboBox"
-	           HeightRequest="40" 
-               SelectedItem="Angola">
+        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" SelectedItem="Angola">
             <comboBox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Antigua and Barbuda</x:String>
@@ -508,11 +491,7 @@ The following code sample demonstrates how to retrieve [`SelectedItem`](https://
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <comboBox:SfComboBox
-	           x:Name="comboBox"
-	           HeightRequest="40" 
-			   MultiSelectMode="None"
-               SelectionChanged="comboBox_SelectionChanged">
+        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None">
             <comboBox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Antigua and Barbuda</x:String>

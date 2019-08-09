@@ -171,8 +171,8 @@ namespace ComboBox
 
             comboBox = new SfComboBox()
             {
-                HeightRequest = 40,
-				MultiSelectMode=MultiSelectMode.None,
+                   HeightRequest = 40,
+				   MultiSelectMode=MultiSelectMode.None,
                 DataSource = new List<string>()
                 {
                     "Antigua and Barbuda",

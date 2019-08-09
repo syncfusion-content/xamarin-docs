@@ -30,6 +30,7 @@ The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboB
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ComboBox"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
@@ -124,7 +125,8 @@ The following code sample demonstrates how to retrieve [`SelectedIndex`](https:/
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ComboBox"
-          xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox
@@ -226,7 +228,8 @@ The [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ComboBox"
-          xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox
@@ -301,7 +304,8 @@ The following code sample demonstrates how to retrieve [`SelectedIndices`](https
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ComboBox"
-          xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox
@@ -403,7 +407,8 @@ The following code sample demonstrates how to set `SelectedItem`.
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ComboBox"
-          xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox
@@ -500,7 +505,8 @@ The following code sample demonstrates how to retrieve [`SelectedItem`](https://
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ComboBox"
-          xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox

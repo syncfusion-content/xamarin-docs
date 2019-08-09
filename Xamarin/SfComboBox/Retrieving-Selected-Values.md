@@ -33,7 +33,7 @@ The [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboB
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
-	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+ <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None" SelectedIndex="1">
             <comboBox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
@@ -81,7 +81,7 @@ namespace ComboBox
             {
                 HeightRequest = 40,
                 SelectedIndex = 1,
-				MultiSelectMode=MultiSelectMode.None,
+             MultiSelectMode=MultiSelectMode.None,
                 DataSource = new List<string>()
                 {
                     "Antigua and Barbuda",
@@ -97,8 +97,8 @@ namespace ComboBox
                 }
             };
 
-    		stackLayout.Children.Add(comboBox);
-    		this.Content = stackLayout;
+         stackLayout.Children.Add(comboBox);
+         this.Content = stackLayout;
             }
     }
 }
@@ -160,7 +160,7 @@ namespace ComboBox
     {
         SfComboBox comboBox;
         public MainPage()
-		{
+     {
             InitializeComponent();
             StackLayout stackLayout = new StackLayout()
             {
@@ -171,8 +171,7 @@ namespace ComboBox
 
             comboBox = new SfComboBox()
             {
-                   HeightRequest = 40,
-				   MultiSelectMode=MultiSelectMode.None,
+                HeightRequest = 40,MultiSelectMode=MultiSelectMode.None,
                 DataSource = new List<string>()
                 {
                     "Antigua and Barbuda",
@@ -223,7 +222,7 @@ The [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
-	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+ <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="Token" SelectedIndices="{Binding SelectedIndices}">
             <comboBox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
@@ -369,7 +368,7 @@ namespace ComboBox
             InitializeComponent();
             this.BindingContext = this;
         }
-	}
+ }
 }
 
 {% endhighlight %}
@@ -395,7 +394,7 @@ The following code sample demonstrates how to set `SelectedItem`.
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
-	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
+ <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
         <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" SelectedItem="Angola">
             <comboBox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
@@ -564,7 +563,7 @@ namespace ComboBox
         {
             DisplayAlert("Selection Changed", "SelectedItem: " + comboBox.SelectedItem, "OK");
         }
-	 }
+  }
 }
 
 {% endhighlight %}

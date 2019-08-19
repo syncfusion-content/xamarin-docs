@@ -11,6 +11,8 @@ documentation: ug
 
 This section provides a quick overview for working with the SfDataGrid for Xamarin.Forms. Walk through the entire process of creating a real world of this control.
 
+N> Watch the video: [Xamarin.Forms DataGrid - Getting Started (YouTube)](https://youtu.be/rdPStxCSy5w)
+
 ## Assembly deployment
 
 After installing Essential Studio for Xamarin, find all the required assemblies in the installation folders {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
@@ -159,9 +161,9 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a SfDataGrid and configure it. The SfDataGrid control can be configured entirely in C# code or using XAML markup. This is how the final output will look like on iOS, Android, and Windows Phone devices.
  
-![A simple DataGrid](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
+![Xamarin DataGrid](SfDataGrid_images/SfDataGrid-Xamarin_img2.png)
 
-You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/DataGrid-GettingStarted-in-Xamarin-Forms).
+N> You can download the complete project of this demo from [GitHub](https://github.com/SyncfusionExamples/DataGrid-GettingStarted-in-Xamarin-Forms).
 
 In this walk through, a new application can be created that contains the SfDataGrid which includes the following topics:
 

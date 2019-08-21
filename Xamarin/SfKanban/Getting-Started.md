@@ -57,9 +57,53 @@ N> To know more about obtaining our components, refer to these links for [Mac](
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
+## Launching an application on each platform with kanban
+
+To use the kanban inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and are discussed in the following sections:
+
+N> If you are adding the references from toolbox, below steps are not needed.
+
+### iOS
+
+To launch the kanban in iOS, call the `SfKanbanRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the `LoadApplication` method is called as demonstrated in the following code sample.
+
+{% highlight C# %} 
+
+public override bool FinishedLaunching(UIApplication app, NSDictionary options)
+{
+    global::Xamarin.Forms.Forms.Init();
+    SfKanbanRenderer.Init();
+    LoadApplication(new App());
+    return base.FinishedLaunching(app, options);
+} 
+
+{% endhighlight %}
 
 
+### Universal Windows Platform (UWP)
 
+To deploy the kanban in `Release` mode, initialize the kanban assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code samples.
+
+{% highlight C# %} 
+
+// In App.xaml.cs 
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{ 
+   … 
+   if (rootFrame == null) 
+   { 
+      List<Assembly> assembliesToInclude = new List<Assembly>();
+      assembliesToInclude.Add(typeof(SfKanbanRenderer).GetTypeInfo().Assembly);
+      Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+   } 
+   … 
+}
+
+{% endhighlight %}
+
+### Android
+
+Android platform does not require any additional configuration to render the kanban control.
 
 
 ## Initialize Kanban

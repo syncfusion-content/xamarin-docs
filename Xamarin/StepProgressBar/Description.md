@@ -13,11 +13,11 @@ documentation: ug
 
 # Description
 
-Each step in a multistep process has a different operation. To provide self-explanatory information about a step, a step description can be shown on either side. A primary description will be on the right or bottom of the step, and a secondary description will be on the left or top of the step.
+Each step in a multistep process has a different operation. To provide self-explanatory information about a step, description can be shown on either side. A primary description will be on the right or bottom of the step, and a secondary description will be on the left or top of the step.
 
 ## Text 
 
-The primary and secondary description for a step view can be set using PrimaryText and SecondaryText properties as demonstrated in the following code example.
+The primary and secondary description for a step view can be set using the PrimaryText and SecondaryText properties as demonstrated in the following code example.
 
 {% tabs %}
 
@@ -42,9 +42,9 @@ The primary and secondary description for a step view can be set using PrimaryTe
 
 ![ Primary and secondary description of StepView ](images/Text.png)
 
-## Formatted Text
+## Formatted text
 
-To customize the description with different formatting style, PrimaryFormattedText and SecondaryFormattedText can be used. The following code example illustrates how to set PrimaryFormattedText and SecondaryFormattedText to a step view.
+To customize the description with different formatting style, PrimaryFormattedText and SecondaryFormattedText can be used. The following code example explains how to set PrimaryFormattedText and SecondaryFormattedText to a step view.
 
 {% tabs %}
 
@@ -84,12 +84,12 @@ To customize the description with different formatting style, PrimaryFormattedTe
 {% endhighlight %}
 
 {% endtabs %}
-N> To know more about defining formats for different span in a text, refer to [FormattedString](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.formattedstring?view=xamarin-forms).
+N> To learn more about defining formats for different span in a text, refer to [FormattedString](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.formattedstring?view=xamarin-forms).
 
 ![StepProgressBar stepview's formatted text](images/vertical.png)
 
-# Customize Description
-With help of `TitleAlignment` and `TitleSpace`, the description alignment and space between the description and marker can be customized respectively. The following code example illustrates how to customize TitleSpace and TitleAlignment property.
+# Customize description
+Using `TitleAlignment` and `TitleSpace`, the description alignment and space between the description and marker can be customized, respectively. The following code example explains how to customize the TitleSpace and TitleAlignment properties.
 {% tabs %}
 
 {% highlight xaml %}

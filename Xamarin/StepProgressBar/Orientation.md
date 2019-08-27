@@ -9,7 +9,7 @@ documentation: ug
 
 # Orientation
 
-The StepProgressBar control provides options to change the default orientation so a multi-step process can be visualized in horizontal or vertical orientation.
+The StepProgressBar control provides options to change the default orientation, so a multi-step process can be visualized in horizontal or vertical orientation.
 
 ## Horizontal 
 

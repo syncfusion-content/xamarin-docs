@@ -1,4 +1,4 @@
----
+---x
 layout: post
 title: Description in Syncfusion Xamarin.Forms StepProgressBar
 description: Explaining about Step view description and its formattings.
@@ -7,13 +7,14 @@ control: StepProgressBar
 documentation: ug
 ---
 
-# Step Progress Overview
-
-![ Step progress overview ](images/stepoverview.png)
-
 # Description
 
-Each step in a multistep process has a different operation. To provide self-explanatory information about a step, description can be shown on either side. A primary description will be on the right or bottom of the step, and a secondary description will be on the left or top of the step.
+Each step in a multi-step process has a different operation. To provide self-explanatory information about a step, description can be shown on either side. A primary description will be on the right or bottom of the step, and a secondary description will be on the left or top of the step.
+
+## StepProgressBar overview
+
+The following overview image illustrates the major elements presented in StepProgressBar.
+![ StepProgressBar major elements ](overview_images/stepoverview.png)
 
 ## Text 
 
@@ -40,7 +41,7 @@ The primary and secondary description for a step view can be set using the Prima
 
 {% endtabs %}
 
-![ Primary and secondary description of StepView ](images/Text.png)
+![ Primary and secondary description of StepView ](overview_images/Text.png)
 
 ## Formatted text
 
@@ -86,9 +87,9 @@ To customize the description with different formatting style, PrimaryFormattedTe
 {% endtabs %}
 N> To learn more about defining formats for different span in a text, refer to [FormattedString](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.formattedstring?view=xamarin-forms).
 
-![StepProgressBar stepview's formatted text](images/vertical.png)
+![StepProgressBar stepview formatted text](overview_images/vertical.png)
 
-# Customize description
+## Customize description
 Using `TitleAlignment` and `TitleSpace`, the description alignment and space between the description and marker can be customized, respectively. The following code example explains how to customize the TitleSpace and TitleAlignment properties.
 {% tabs %}
 
@@ -123,4 +124,4 @@ Using `TitleAlignment` and `TitleSpace`, the description alignment and space bet
 {% endhighlight %}
 
 {% endtabs %}
-![StepProgressBar description customization](images/title.png)
+![StepProgressBar description customization](overview_images/title.png)

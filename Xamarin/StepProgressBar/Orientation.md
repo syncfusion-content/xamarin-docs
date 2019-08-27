@@ -13,7 +13,7 @@ The StepProgressBar control provides options to change the default orientation, 
 
 ## Horizontal 
 
-By default, StepProgressBar stepviews are displayed horizontally. You can also define the orientation as demonstrated in the following code example.
+By default, StepProgressBar step views are displayed horizontally. You can also define the orientation as demonstrated in the following code example.
 
 {% tabs %}
 
@@ -32,7 +32,7 @@ stepProgress.Orientation = StepOrientation.Horizontal;
 
 {% endtabs %}
 
-![StepProgressBar control has horizontal orientation](images/horizontal.jpg)
+![StepProgressBar control has horizontal orientation](overview_images/horizontal.jpg)
 
 ## Vertical
 
@@ -55,4 +55,4 @@ stepProgress.Orientation = StepOrientation.Vertical;
 
 {% endtabs %}
 
-![StepProgressBar control has vertical orientation](images/vertical.png)
+![StepProgressBar control has vertical orientation](overview_images/vertical.png)

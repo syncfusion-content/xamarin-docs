@@ -9,8 +9,10 @@ documentation: ug
 
 # Status
 	
-A step has three statuses: not started, in progress, and completed. Based on the status, you can format a step with different styles, which means whenever the status of a step changes, the style of the visual will change synchronously. The following code example explains how to set a status for a step view.
+A step has three statuses: not started, in progress, and completed. Based on the status, you can format a step with different styles, which means whenever the status of a step changes, the style of the visual will change synchronously. Refer the following GIF in which the status of step is updated dynamically.
+![Update stepview status in StepProgressBar control](overview_images/Steps-in-Not-Started-Status.png)
 
+The following code example explains how to set a status for a step view.
 {% tabs %} 
 
 {% highlight xaml %} 
@@ -42,23 +44,23 @@ stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 5" });
 
 {% endtabs %} 
 
-![Different status in StepProgressBar control](images/status.jpg)
+![Different status in StepProgressBar control](overview_images/status.jpg)
 
 ## Customizing Step view style based on their status
 
 The Xamarin.Forms StepProgressBar control allows you to customize a step based on its status. Define an individual style for each status to achieve this. Marker color, marker shape type, marker content color, marker content type, marker stroke color, marker stroke width, marker size, marker content size, progress line color, and font can be defined for a style. The following overview image explains different properties available in StepProgressBar.
 
-![StepProgressBar properties](images/properties.png)
+![StepProgressBar properties](overview_images/properties.png)
 
 ### Marker shape
 
 The shape of a step marker can be a circle or a square.
-![Step markers](images/Step-Markers.jpg)
+![Step markers](overview_images/Step-Markers.jpg)
 
 ### Content type
 
 You can customize the step content with numbers, ticks, crosses, dots or images.
-![Step Content](images/Step-Content.png)
+![Step Content](overview_images/Step-Content.png)
 
 The following code example explains how to customize a step view based on their status.
 
@@ -172,4 +174,4 @@ stepProgress.Children.Add(step4);
 
 {% endtabs %} 
 
-![Different status in StepProgressBar control](images/style.png)
+![Different status in StepProgressBar control](overview_images/style.png)

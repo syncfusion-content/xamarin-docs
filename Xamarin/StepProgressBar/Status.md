@@ -10,7 +10,7 @@ documentation: ug
 # Status
 	
 A step has three statuses: not started, in progress, and completed. Based on the status, you can format a step with different styles, which means whenever the status of a step changes, the style of the visual will change synchronously. Refer the following GIF in which the status of step is updated dynamically.
-![Update stepview status in StepProgressBar control](overview_images/Steps-in-Not-Started-Status.png)
+![Update stepview status in StepProgressBar control](overview_images/Steps-in-Not-Started-Status.gif)
 
 The following code example explains how to set a status for a step view.
 {% tabs %} 

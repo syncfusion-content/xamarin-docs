@@ -100,5 +100,3 @@ You can customize the color of shadow using the `ShadowColor` property.
 
 N> Shadow support has not been provided for UWP Platform.
 
-![ShadowImage]()
-

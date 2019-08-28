@@ -19,7 +19,7 @@ The `SfAvatarView` control supports customization using the following built-in v
 
 Custom type allows you to customize the control, where you can handle the size, colors, images, etc. of the control. Refer to this [documentation](https://help.syncfusion.com/xamarin/sfavatarview/customization).
 
-N> The defalut visual type is custom.
+N> The default visual type is custom.
 
 ## Circle
 
@@ -382,4 +382,4 @@ The following code sample demonstrates how to define visual style of square Avat
 
 ![SfAvatarView control with square visual style](images/VisualSquare_AvatarView.jpg)
 
-The visual stlye sample is available in the following link: [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/VisualStyles1309959883).
+The visual style sample is available in the following link: [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/VisualStyles1309959883).

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various customization in Syncfusion AvatarView control.
+title: Various customization in Syncfusion AvatarView control.  
 description: Learn how to change the Avatartype in AvatarView.
 platform: Xamarin
 control: SfAvatarView
@@ -23,7 +23,7 @@ The `SfAvatarView` control provides the following five different ways to display
 
 ## Automatic
 
-Automatic type avatar view is used for displaying the default vector image when initilaizing without the initials, custom, or group view types.
+Automatic type avatar view is used for displaying the default vector image when initializing without the initials, custom, or group view types.
 
 {% tabs %}
 

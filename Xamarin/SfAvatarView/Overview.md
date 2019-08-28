@@ -11,7 +11,6 @@ documentation : ug
 
 The `SfAvatarView` control for Xamarin.Forms provides a graphical representation of user image that allows you to customize the view by adding image, background color, icon, text, etc.
 
-![]()
 
 ## Key features
 
@@ -21,4 +20,3 @@ The `SfAvatarView` control for Xamarin.Forms provides a graphical representation
 * `GroupView`: Supports to add maximum three custom images or initials in a single view.
 * Supports different types of visual styles. 
 * Supports `BadgeView` and `GradientBrush`.
-

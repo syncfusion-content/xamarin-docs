@@ -1,4 +1,4 @@
----x
+---
 layout: post
 title: Description in Syncfusion Xamarin.Forms StepProgressBar
 description: Explaining about Step view description and its formattings.

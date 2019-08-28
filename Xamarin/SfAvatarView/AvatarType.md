@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various customization in Syncfusion AvatarView control for Xamarin.Forms
+title: Various customization in Syncfusion AvatarView control.
 description: Learn how to change the Avatartype in AvatarView.
 platform: Xamarin
 control: SfAvatarView
@@ -11,19 +11,19 @@ documentation: ug
 
 The `SfAvatarView` control provides the following five different ways to display the view:
 
-* `Automatic` - Adds the default image when initalizing without any other source such as image and group.
+* `Automatic` - Adds the default image when initializing without any other source such as image and group.
 
-* `Initials` - Set the inital value in SfAvatarView.
+* `Initials` - Set the initial value in SfAvatarView.
 
-* `Custom` - Adds the user custom image in SfAvatatView.
+* `Custom` - Adds the user custom image in SfAvatarView.
 
-* `AvatarCharacter` - Sets the defalut image in SfAvatarView.
+* `AvatarCharacter` - Sets the default image in SfAvatarView.
 
-* `Group` - Adds maximum three images or initials in a single SfAvatarview.
+* `Group` - Adds maximum three images or initials in a single `SfAvatarView`.
 
 ## Automatic
 
-Automatic type avatar view is used for displaying the default vector image when intilaizing without the initials, custom, or group view types.
+Automatic type avatar view is used for displaying the default vector image when initilaizing without the initials, custom, or group view types.
 
 {% tabs %}
 
@@ -324,7 +324,7 @@ Set the `InitialsMemberPath` for displaying the initials in the group view. For 
 
 ## Add initials only in GroupView
 
-You can set the initials only in the group view by setting the `InitalsMemberPath` alone. It is demonstrated in the following code sample.
+You can set the initials only in the group view by setting the `InitialsMemberPath` alone. It is demonstrated in the following code sample.
 
 {% tabs %}
 

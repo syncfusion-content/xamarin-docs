@@ -96,9 +96,9 @@ The background color for the SfAvatarView control can be set using the `ColorMod
 
 ### Automatic background color
 
-The `SfAvatarView` control allows automatic background color while initialzing. It contains the following properties:
+The `SfAvatarView` control allows automatic background color while initializing. It contains the following properties:
 
-* `AutomaticDarkColorsOnInitialize`: Shows a dark color for the intials and background color.
+* `AutomaticDarkColorsOnInitialize`: Shows a dark color for the initials and background color.
 * `AutomaticLightColorsOnInitialize`: Shows a light color for the initials and background color.
 
 #### Dark color

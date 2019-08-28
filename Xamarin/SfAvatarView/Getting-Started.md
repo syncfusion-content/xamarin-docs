@@ -123,7 +123,7 @@ using Syncfusion.XForms.AvatarView;
 
 ### Adding the SfAvatarView control as the content of ContentPage
 
-You can add a custom image for displaying in SfAvatarview using the `ImageSource` property.
+You can add a custom image for displaying in SfAvatarView using the `ImageSource` property.
 
 {% tabs %}
 {% highlight xaml %}

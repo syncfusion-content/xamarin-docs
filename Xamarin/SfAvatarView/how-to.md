@@ -11,7 +11,7 @@ documentation: ug
 
 ## Set badge view to avatar
 
-The `SfAvatarview` control provides support for `BadgeView` to notify users of new or unread messages, notifications, or the status of something.
+The `SfAvatarView` control provides support for `BadgeView` to notify users of new or unread messages, notifications, or the status of something.
 
 {% tabs %}
 
@@ -100,5 +100,5 @@ You can customize the color of shadow using the `ShadowColor` property.
 
 N> Shadow support has not been provided for UWP Platform.
 
-![ShadowImage](images/BadgeView_AvatarView.png)
+![ShadowImage]()
 

@@ -380,6 +380,6 @@ The following code sample demonstrates how to define visual style of square Avat
 {% endhighlight %}
 {% endtabs %}
 
-![SfAvatarView control with square visual style](images/VisualSquare_AvatarView.png)
+![SfAvatarView control with square visual style](images/VisualSquare_AvatarView.jpg)
 
 The visual stlye sample is available in the following link: [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/VisualStyles1309959883).

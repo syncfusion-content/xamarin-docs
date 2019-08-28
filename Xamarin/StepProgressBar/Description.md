@@ -87,7 +87,7 @@ To customize the description with different formatting style, PrimaryFormattedTe
 {% endtabs %}
 N> To learn more about defining formats for different span in a text, refer to [FormattedString](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.formattedstring?view=xamarin-forms).
 
-![StepProgressBar stepview formatted text](overview_images/vertical.png)
+![StepProgressBar stepview formatted text](overview_images/formatted.png)
 
 ## Customize description
 Using `TitleAlignment` and `TitleSpace`, the description alignment and space between the description and marker can be customized, respectively. The following code example explains how to customize the TitleSpace and TitleAlignment properties.

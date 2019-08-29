@@ -551,7 +551,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![Arranging data form field in floating label layout with customized background color of editor view in Xamarin.Forms DataForm](ContainerBackgroundColor/.png)
+![Arranging data form field in floating label layout with customized background color of editor view in Xamarin.Forms DataForm](SfDataForm_images/ContainerBackgroundColor.png)
 
 ## Font customization
 You can customize the font of assistive labels by setting the FontFamily, FontSize, and FontAttributes properties of the LabelStyle  property.

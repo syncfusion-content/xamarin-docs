@@ -333,6 +333,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
+![Arranging data form field in floating label layout with helper label text as hint label text in Xamarin.Forms DataForm](SfDataForm_images/ShowHelperText.jpg)
+
 ### Validation label
 
 The validation label used to display the dataform validation messages such as valid or invalid data. Refer [validation](https://help.syncfusion.com/xamarin/sfdataform/validation) to learn more about dataform validation.
@@ -514,11 +516,11 @@ The floating label layout editor view background color can be customized by sett
 
 {% tabs %}
 {% highlight xaml %}       
-  <dataForm:SfDataForm x:Name="dataForm" LayoutOptions="TextInputLayout" ContainerBackgroundColor="Red">
+  <dataForm:SfDataForm x:Name="dataForm" LayoutOptions="TextInputLayout" ContainerBackgroundColor="Silver">
  <dataForm:SfDataForm/>
 {% endhighlight %}
 {% highlight c# %}
-dataForm.ContainerBackgroundColor = Color.Red;
+dataForm.ContainerBackgroundColor = Color.Silver;
 {% endhighlight %}
 {% endtabs %}
 
@@ -541,13 +543,15 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
         {
             e.DataFormItem.TextInputLayoutSettings = new Syncfusion.SfDataForm.XForms.TextInputLayoutSettings()
             {
-                ContainerBackgroundColor = Color.GreenYellow
+                ContainerBackgroundColor = Color.FromHex("#E6EEF9")
             };
         }
     }
 }
 {% endhighlight %}
 {% endtabs %}
+
+![Arranging data form field in floating label layout with customized background color of editor view in Xamarin.Forms DataForm](SfDataForm_images/ContainerBackgroundColor.jpg)
 
 ## Font customization
 You can customize the font of assistive labels by setting the FontFamily, FontSize, and FontAttributes properties of the LabelStyle  property.
@@ -577,7 +581,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Name")
     {
-        (e.DataFormItem.HintLabelStyle  = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Fonts/Lobster-Regular.ttf#Lobster"), FontSize = 16};
+        e.DataFormItem.HintLabelStyle  = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Fonts/Lobster-Regular.ttf#Lobster"), FontSize = 16};
     }
 }
 {% endhighlight %}

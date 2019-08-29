@@ -171,7 +171,7 @@ public MainPage()
     stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 1" });
     stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 2" });
     stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 3" });
-	stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 4", Status = Status.InProgress });
+	stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 4", Status = StepStatus.InProgress });
     stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 5" });
 
     mainGrid.Children.Add(stepProgressBar);

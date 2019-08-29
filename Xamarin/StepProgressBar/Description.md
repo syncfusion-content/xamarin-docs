@@ -68,7 +68,7 @@ To customize the description with different formatting style, PrimaryFormattedTe
 {% highlight c# %}
 
 	SfStepProgressBar stepProgress = new SfStepProgressBar();
-	stepProgress.Orientation = StepOrientation.Horizontal;            
+	stepProgress.Orientation = StepOrientation.Vertical;            
 	StepView step1 = new StepView();            
 	step1.Status = StepStatus.Completed;
 	
@@ -77,8 +77,8 @@ To customize the description with different formatting style, PrimaryFormattedTe
 	
 	step1.PrimaryFormattedText = new FormattedString();
 	step1.PrimaryFormattedText.Spans.Add(new Span { Text = "Ordered and Approved", FontSize = 13, FontAttributes = FontAttributes.Bold, TextColor = Color.Blue });
-	step1.PrimaryFormattedText.Spans.Add(new Span { Text = "Your Order has been placed", FontSize = 12, FontAttributes = FontAttributes.Italic | FontAttributes.Bold, TextColor = Color.DarkBlue });
-	step1.PrimaryFormattedText.Spans.Add(new Span { Text = "&#10;Sat, 27th Oct&#10;", FontSize = 12, FontAttributes = FontAttributes.Italic, TextColor = Color.Blue });
+	step1.PrimaryFormattedText.Spans.Add(new Span { Text = "\nYour Order has been placed", FontSize = 12, FontAttributes = FontAttributes.Italic | FontAttributes.Bold, TextColor = Color.DarkBlue });
+	step1.PrimaryFormattedText.Spans.Add(new Span { Text = "\nSat, 27th Oct", FontSize = 12, FontAttributes = FontAttributes.Italic, TextColor = Color.Blue });
 	
 	stepProgress.Children.Add(step1);
 	

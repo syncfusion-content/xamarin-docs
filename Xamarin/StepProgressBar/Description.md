@@ -24,7 +24,7 @@ The primary and secondary description for a step view can be set using the Prima
 
 {% highlight xaml %}
 	<progressBar:SfStepProgressBar Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="Center">
-		<progressBar:StepView PrimaryText="Completed" SecondaryText="Task" />
+		<progressBar:StepView PrimaryText="Completed" SecondaryText="Task" Status="Completed"/>
 	</progressBar:SfStepProgressBar>
 
 {% endhighlight %}
@@ -35,6 +35,7 @@ The primary and secondary description for a step view can be set using the Prima
 	StepView step1 = new StepView();
     step1.SecondaryText = "Task";
     step1.PrimaryText = "Completed";
+	step1.Status = StepStatus.Completed;
 	stepProgress.Children.Add(step1);
 
 {% endhighlight %}

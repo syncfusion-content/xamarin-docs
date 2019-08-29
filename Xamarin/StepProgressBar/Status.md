@@ -37,7 +37,7 @@ stepProgressBar.HorizontalOptions = LayoutOptions.Center;
 stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 1" });
 stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 2" });
 stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 3" });
-stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 4", Status = Status.InProgress });
+stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 4", Status = StepStatus.InProgress });
 stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 5" });
 
 {% endhighlight %}
@@ -147,15 +147,15 @@ stepProgress.CompletedStepStyle.MarkerFillColor = Color.Green;
 StepView step1 = new StepView();
 step1.PrimaryFormattedText = new FormattedString();
 step1.PrimaryFormattedText.Spans.Add(new Span { Text = "Ordered and Approved", FontSize = 13, FontAttributes = FontAttributes.Bold, TextColor = Color.Blue });
-step1.PrimaryFormattedText.Spans.Add(new Span { Text = "Your Order has been placed", FontSize = 12, FontAttributes = FontAttributes.Italic | FontAttributes.Bold, TextColor = Color.DarkBlue });
-step1.PrimaryFormattedText.Spans.Add(new Span { Text = "&#10;Sat, 27th Oct&#10;", FontSize = 12, FontAttributes = FontAttributes.Italic, TextColor = Color.Blue });
+step1.PrimaryFormattedText.Spans.Add(new Span { Text = "\nYour Order has been placed", FontSize = 12, FontAttributes = FontAttributes.Italic | FontAttributes.Bold, TextColor = Color.DarkBlue });
+step1.PrimaryFormattedText.Spans.Add(new Span { Text = "\nSat, 27th Oct\n", FontSize = 12, FontAttributes = FontAttributes.Italic, TextColor = Color.Blue });
 stepProgress.Children.Add(step1);
           
 StepView step2 = new StepView();
 step2.PrimaryFormattedText = new FormattedString();
 step2.PrimaryFormattedText.Spans.Add(new Span { Text = "Packed", FontSize = 13, FontAttributes = FontAttributes.Bold, TextColor = Color.Blue });
-step2.PrimaryFormattedText.Spans.Add(new Span { Text = "&#10;&#10;Your item has been picked up by courier partner.", FontSize = 12, FontAttributes = FontAttributes.Italic | FontAttributes.Bold, TextColor = Color.DarkBlue });
-step2.PrimaryFormattedText.Spans.Add(new Span { Text = "&#10;Mon, 29th Oct", FontSize = 12, FontAttributes = FontAttributes.Italic, TextColor = Color.Blue });
+step2.PrimaryFormattedText.Spans.Add(new Span { Text = "\nYour item has been picked up by courier partner.", FontSize = 12, FontAttributes = FontAttributes.Italic | FontAttributes.Bold, TextColor = Color.DarkBlue });
+step2.PrimaryFormattedText.Spans.Add(new Span { Text = "\nMon, 29th Oct\n", FontSize = 12, FontAttributes = FontAttributes.Italic, TextColor = Color.Blue });
 stepProgress.Children.Add(step2);
 
 StepView step3 = new StepView();

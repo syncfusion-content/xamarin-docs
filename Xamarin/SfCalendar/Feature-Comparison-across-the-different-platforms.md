@@ -434,7 +434,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <tr>
 <td>Maximum number of Inline event count indication</td>
 <td align="center">
-<p>No</p>
+<p>Yes</p>
 </td>
 <td align="center">
 <p>Yes</p>

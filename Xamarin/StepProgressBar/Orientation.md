@@ -32,7 +32,7 @@ stepProgress.Orientation = StepOrientation.Horizontal;
 
 {% endtabs %}
 
-![StepProgressBar control has horizontal orientation](overview_images/horizontal.jpg)
+![StepProgressBar control has horizontal orientation](overview_images/horizontal.png)
 
 ## Vertical
 

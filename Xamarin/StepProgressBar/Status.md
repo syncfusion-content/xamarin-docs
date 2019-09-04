@@ -44,7 +44,7 @@ stepProgressBar.Children.Add(new StepView() { PrimaryText = "Step 5" });
 
 {% endtabs %} 
 
-![Different status in StepProgressBar control](overview_images/status.jpg)
+![Different status in StepProgressBar control](overview_images/status.png)
 
 ## Customizing Step view style based on their status
 
@@ -55,7 +55,7 @@ The Xamarin.Forms StepProgressBar control allows you to customize a step based o
 ### Marker shape
 
 The shape of a step marker can be a circle or a square.
-![Step markers](overview_images/Step-Markers.jpg)
+![Step markers](overview_images/Step-Markers.png)
 
 ### Content type
 

@@ -294,6 +294,47 @@ The data field caption will be displayed as floating or hint label for the edito
 
 The helper label is used to display the water mark for the editor to provide hint for users and it can be set using [Prompt](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#setting-watermark).
 
+The visibility of helper text in DataForm floating label layout can be collapsed by setting [ShowHelperText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ShowHelperText.html) to false in `DataForm` or [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings.html). In this case, DataForm `Prompt` text will be displayed as editor view hint text if the hint label visibility is collapsed using the `ShowLabel` property of [DisplayOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute.html) or `DataFormItem`.
+
+{% tabs %}
+{% highlight xaml %}       
+  <dataForm:SfDataForm x:Name="dataForm" LayoutOptions="TextInputLayout" ShowHelperText="False">
+  <dataForm:SfDataForm/>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.ShowHelperText = false;
+{% endhighlight %}
+{% endtabs %}
+
+### Changing helper text visibility of DataFormItem
+You can remove the helper label of [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) by setting the [ShowHelperText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~ShowHelperText.html) property to false in [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings.html), and it will be handled using the `AutoGeneratingDataFormItem` event.
+
+{% tabs %}
+{% highlight xaml %}  
+<dataForm:SfDataForm x:Name="dataForm" DataObject="{Binding ContactsInfo}" AutoGeneratingDataFormItem="DataForm_AutoGeneratingDataFormItem">
+</dataForm:SfDataForm>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name == "PhoneNumber")
+        {
+            e.DataFormItem.TextInputLayoutSettings = new Syncfusion.SfDataForm.XForms.TextInputLayoutSettings()
+            {
+                ShowHelperText = false
+            };
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Arranging data form field in floating label layout with helper label text as hint label text in Xamarin.Forms DataForm](SfDataForm_images/ShowHelperText.jpg)
+
 ### Validation label
 
 The validation label used to display the dataform validation messages such as valid or invalid data. Refer [validation](https://help.syncfusion.com/xamarin/sfdataform/validation) to learn more about dataform validation.
@@ -470,6 +511,48 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
 
 ![Arranging data form field in floating label layout with customized validation message color in Xamarin.Forms DataForm](SfDataForm_images/ValidationMessage_Color.png)
 
+## Customize the background color of editor view
+The floating label layout editor view background color can be customized by setting the [ContainerBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerBackgroundColor.html) property of `DataForm` or [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings.html). It is applicable when the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerType.html) is set to `Filled` or `Outlined`.
+
+{% tabs %}
+{% highlight xaml %}       
+  <dataForm:SfDataForm x:Name="dataForm" LayoutOptions="TextInputLayout" ContainerBackgroundColor="Silver">
+ <dataForm:SfDataForm/>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.ContainerBackgroundColor = Color.Silver;
+{% endhighlight %}
+{% endtabs %}
+
+### Customize the editor view background color of DataFormItem
+You can change the editor view background color of [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) using the [ContainerBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~ContainerBackgroundColor.html) property in [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings.html), and it will be handled using the `AutoGeneratingDataFormItem` event.
+
+{% tabs %}
+{% highlight xaml %}  
+<dataForm:SfDataForm x:Name="dataForm" DataObject="{Binding ContactsInfo}" AutoGeneratingDataFormItem="DataForm_AutoGeneratingDataFormItem">
+</dataForm:SfDataForm>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null)
+    {
+        if (e.DataFormItem.Name == "PhoneNumber")
+        {
+            e.DataFormItem.TextInputLayoutSettings = new Syncfusion.SfDataForm.XForms.TextInputLayoutSettings()
+            {
+                ContainerBackgroundColor = Color.FromHex("#E6EEF9")
+            };
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Arranging data form field in floating label layout with customized background color of editor view in Xamarin.Forms DataForm](SfDataForm_images/ContainerBackgroundColor.jpg)
+
 ## Font customization
 You can customize the font of assistive labels by setting the FontFamily, FontSize, and FontAttributes properties of the LabelStyle  property.
 
@@ -498,7 +581,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Name")
     {
-        (e.DataFormItem.HintLabelStyle  = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Fonts/Lobster-Regular.ttf#Lobster"), FontSize = 16};
+        e.DataFormItem.HintLabelStyle  = new LabelStyle() { FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf#Lobster-Regular", "Assets/Fonts/Lobster-Regular.ttf#Lobster"), FontSize = 16};
     }
 }
 {% endhighlight %}

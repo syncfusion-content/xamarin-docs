@@ -113,7 +113,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 #### Windows Presentation Foundation (WPF)
 
-To launch the schedule in WPF SfScheduleRenderer.Init() method in the MainWindow constructor of the MainiWindow class after the Xamarin.Forms Framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
+To launch the schedule in WPF SfScheduleRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms Framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
 
 {% tabs %}   
 {% highlight c# %}

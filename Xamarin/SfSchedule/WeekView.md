@@ -186,7 +186,7 @@ schedule.TimeIntervalHeight = 180;
 ![Time interval height in schedule xamarin forms](daymodule_images/weekview_height.png)
 
 ### Adjust the Time Interval height based on the StartTime and EndTime
-TimeIntervalHeight will be adujusting automatically based on the StartTime and EndTime value of the Schedule.
+TimeIntervalHeight will be adjusting automatically based on the StartTime and EndTime value of the Schedule.
 
 ## Change Working hours
 

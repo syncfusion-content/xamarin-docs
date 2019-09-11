@@ -74,9 +74,6 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
->**NOTE**
-`AppointmentDisplayMode` support applicable only for XForms UWP(Desktop) platform.
-
 ![Month appointment diplay mode in schedule xamarin forms](monthview_images/appointmentdisplay.png)
 
 ### Month Appointment display count

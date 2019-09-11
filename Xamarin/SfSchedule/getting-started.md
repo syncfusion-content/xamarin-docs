@@ -50,6 +50,10 @@ Location: {Installed location}/{version}/Xamarin/lib
 <td>UWP</td>
 <td>Syncfusion.SfSchedule.XForms.UWP.dll<br/>Syncfusion.SfSchedule.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
+<tr>
+<td>WPF</td>
+<td>Syncfusion.SfSchedule.XForms.WPF.dll<br/>Syncfusion.SfSchedule.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.WPF.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
 </table>
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
@@ -106,6 +110,29 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}   
+
+#### Windows Presentation Foundation (WPF)
+
+To launch the schedule in WPF SfSchedulerenderer.Init() method in the MainiWindow constructor of the MainiWindow class after the Xamarin.Forms Framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
+
+{% tabs %}   
+{% highlight c# %}
+// In App.xaml.cs
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+   … 
+   if (rootFrame == null) 
+   { 
+      List<Assembly> assembliesToInclude = new List<Assembly>();
+
+      assembliesToInclude.Add(typeof(Syncfusion.SfSchedule.XForms.UWP.SfScheduleRender).GetTypeInfo().Assembly);
+
+      Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
+   } 
+   … 
+}
+{% endhighlight %}
+{% endtabs %}  
 
 ## Create a simple application with SfSchedule  
     

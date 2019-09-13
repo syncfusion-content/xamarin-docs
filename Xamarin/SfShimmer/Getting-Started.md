@@ -98,7 +98,7 @@ using Syncfusion.XForms.Shimmer;
 
 {% endtabs %}
 
-Add any content 
+We can add any content to shimmer control. 
 
 {% tabs %} 
 

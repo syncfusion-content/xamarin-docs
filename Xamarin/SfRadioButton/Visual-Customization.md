@@ -70,7 +70,6 @@ radioButton.FontSize = 20;
 ## LineBreakMode
 `LineBreakMode` allows you to wrap or truncate the text to next line. The default value of this property is `NoWrap`. Other available options of LineBreakMode are listed below.
 
-
  * `NoWrap` - - Used to text do not wrap. 
  * `WordWrap` - Used to text wrap by words.
  * `CharacterWrap` - Used to text of word by character.

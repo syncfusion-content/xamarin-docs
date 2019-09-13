@@ -21,7 +21,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Add Packages](Getting-Started_images/Reference.png)
 
-N> Install the same version of SfShimmer NuGet in all the projects. SfShimmer supports only in Android and iOS. 
+N> SfShimmer supports in Android and iOS. 
 
 **Method 2: Adding SfShimmer reference from toolbox**
 

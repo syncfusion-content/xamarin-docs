@@ -60,6 +60,8 @@ N> Currently an additional step is required for iOS project. You need to create 
 
 Create an instance of SfRangeSliderRenderer in the FinishedLaunching overridden method of AppDelegate class in the iOS Project as shown below.
 
+{% tabs %}
+
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -68,9 +70,13 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 }	
 {% endhighlight %} 
 
+{% endtabs %}
+
 ## Additional step for UWP 
 
 This step is required only if the application is deployed in release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the `SfRangeSlider` assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested workaround. The following code example demonstrates how to initialize the `SfRangeSlider` assembly.
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -93,6 +99,8 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 	…     
 }
 {% endhighlight %}
+
+{% endtabs %}
 
 * Adding namespace for the added assemblies. 
 

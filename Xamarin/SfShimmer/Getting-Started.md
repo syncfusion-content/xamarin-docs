@@ -17,11 +17,11 @@ You can add SfShimmer reference using one of the following methods:
 
 **Method 1: Adding SfShimmer reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfShimmer to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfShimmer to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
 
 ![Add Packages](Getting-Started_images/Reference.png)
 
-N> SfShimmer supports in Android and iOS. 
+N> SfShimmer supports for Android and iOS.
 
 **Method 2: Adding SfShimmer reference from toolbox**
 
@@ -50,13 +50,13 @@ Location : {Installed location}/{version}/Xamarin/lib
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you will have to include a license key in your projects. Refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to learn about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching an application on each platform with SfShimmer
 
 To use the shimmer inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and are discussed in the following sections:
 
-N> If you are adding the references from toolbox, below steps are not needed.
+N> If you are adding the references from toolbox, the following steps are not needed.
 
 ### iOS
 
@@ -98,7 +98,7 @@ using Syncfusion.XForms.Shimmer;
 
 {% endtabs %}
 
-We can add any content to shimmer control. 
+Add any content 
 
 {% tabs %} 
 
@@ -138,6 +138,6 @@ shimmer.Content = stackLayout;
 
 ![Shimmer with Persona type](Getting-Started_images/Persona.gif)
 
-N> The SfShimmer has different shimmer types which can be referred from this [`link`](). The default shimmer type is [`Persona`]().
+N> The SfShimmer has different shimmer types, which can be referred from this [`link`](). The default shimmer type is [`Persona`]().
 
-You can find the complete getting started sample from this [`link`]().
+You can find the complete getting started sample from this link: [`Sample`]().

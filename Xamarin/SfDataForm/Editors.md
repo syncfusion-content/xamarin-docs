@@ -1247,11 +1247,11 @@ The custom prompt character can be set using the [PromptChar](https://help.syncf
 
 ![Loading masked edit text editor in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-maskededittexteditor.png)
 
-## Auto complete editor
+## Autocomplete editor
 
 In the drop down editor, the [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview) will be loaded.
 
-### Customizing ItemsSource of autocomplete editor:
+### Customizing ItemsSource of SfAutoComplete:
 
 By default, the `ItemsSource` for AutoComplete editor is auto-generated for enum types. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
 
@@ -1295,7 +1295,7 @@ dataForm.RegisterEditor("Continents", "AutoComplete");
 
 #### Using AutoGeneratingItem event
 
-You can also set the ItemsSource for auto complete editor by using the [ItemsSource] property in the `AutoCompleteItem`.
+You can also set the ItemsSource for autocomplete editor by using the [ItemsSource] property in the `AutoCompleteItem`.
 
 {% tabs %}
 {% highlight c# %}
@@ -1316,7 +1316,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-#### Changing ItemsSource of autocomplete editor at run time
+#### Changing ItemsSource of SfAutoComplete at run time
 
 You can also change the `ItemsSource` at runtime.
 
@@ -1338,11 +1338,11 @@ private void Button_Click(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-#### Loading complex type property values in auto complete editor
+#### Loading complex type property values in autocomplete editor
 
-You can display the complex type property values in auto complete editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for drop down editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath] and [SelectedValuePath] property value of AutoComplete for complex type property.
+You can display the complex type property values in autocomplete editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for drop down editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath] and [SelectedValuePath] property value of AutoComplete for complex type property.
 
-N> Class cannot be directly set as data type for auto complete editor in this complex type scenario.
+N> Class cannot be directly set as data type for autocomplete editor in this complex type scenario.
 
 {% tabs %}
 {% highlight c# %}
@@ -1487,7 +1487,7 @@ public class ContactInfo
 
 #### Appending Suggestion to Text
 
-The first item in filtered suggestions is appended to Auto complete editor text. In this mode, drop down remains closed.
+The first item in filtered suggestions is appended to autocomplete editor text. In this mode, drop down remains closed.
 
 {% tabs %}
 {% highlight c# %}
@@ -1665,7 +1665,7 @@ The phenomenon of string comparison for filtering suggestions can be changed usi
 
 #### Filtering Words that Starts with Input Text
 
-Displays all the matches that starts with the typed characters in items source of auto complete editor. This strategy is case in-sensitive.
+Displays all the matches that starts with the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
 
 {% tabs %}
 {% highlight c# %}
@@ -1744,7 +1744,7 @@ public class ContactInfo
 
 #### Filtering Words that Starts with Input Text - CaseSensitive
 
-Displays all the matches that starts with the typed characters in items source of auto complete editor. This strategy is case sensitive.
+Displays all the matches that starts with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
 
 {% tabs %}
 {% highlight c# %}
@@ -1823,27 +1823,27 @@ public class ContactInfo
 
 #### Filtering Words that Contains the Input Text
 
-Displays all the matches that contains the typed characters in items source of auto complete editor. This strategy is case in-sensitive.
+Displays all the matches that contains the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
 	
 #### Filtering Words that Contains the Input Text - CaseSensitive
 
-Displays all the matches that contains the typed characters in items source of auto complete editor. This strategy is case sensitive.
+Displays all the matches that contains the typed characters in items source of autocomplete editor. This strategy is case sensitive.
 
 #### Filtering Words that Equals the Input Text
 
-Displays all the words that completely matches with the typed characters in items source of auto complete editor. This strategy is case in-sensitive.
+Displays all the words that completely matches with the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
 
 #### Filtering Words that Equals the Input Text - CaseSensitive
 
-Displays all the words that completely matches with the typed characters in items source of auto complete editor. This strategy is case sensitive.
+Displays all the words that completely matches with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
 
 #### Filtering Words that Ends with the Input Text
 
-Displays all the matches that ends with the typed characters in items source of auto complete editor. This strategy is case in-sensitive.
+Displays all the matches that ends with the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
 
 #### Filtering Words that Ends with the Input Text - CaseSensitive 
 
-Displays all the matches that ends with the typed characters in items source of auto complete editor. This strategy is case sensitive.
+Displays all the matches that ends with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
 
 ### No results found text
 

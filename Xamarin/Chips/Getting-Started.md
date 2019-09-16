@@ -183,10 +183,10 @@ public partial class MainWindow : FormsApplicationPage
 			
 			Syncfusion.XForms.WPF.Border.SfBorderRenderer.Init();
 			
-			//For chip group 
+			//For chip group
 			Syncfusion.XForms.WPF.Buttons.SfChipGroupRenderer.Init();
 			
-			//For chip 
+			//For chip
 			Syncfusion.XForms.WPF.Buttons.SfChipRenderer.Init();
 			
 			LoadApplication(new App());

@@ -17,7 +17,7 @@ The following code sample demonstrates this.
 
 SfChart chart = new SfChart();
 
--  -  -
+. . .
 
 chart.Axes.Add(new NumericalAxis()
 {

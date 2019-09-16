@@ -1292,7 +1292,7 @@ dataForm.RegisterEditor("ItemName", "AutoComplete");
 
 #### Using AutoGeneratingItem event
 
-You can also set the ItemsSource for auto comeplete editor by using the [ItemsSource] property in the `AutoCompleteItem`.
+You can also set the ItemsSource for auto complete editor by using the [ItemsSource] property in the `AutoCompleteItem`.
 
 {% tabs %}
 {% highlight c# %}
@@ -1337,7 +1337,7 @@ private void Button_Click(object sender, EventArgs e)
 
 #### Loading complex type property values in auto complete editor
 
-You can display the complex type property values in auto complete editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for drop down editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath] and [SelectedValuePath] property value of AutoCommplete for complex type property.
+You can display the complex type property values in auto complete editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for drop down editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath] and [SelectedValuePath] property value of AutoComplete for complex type property.
 
 N> Class cannot be directly set as data type for auto complete editor in this complex type scenario.
 

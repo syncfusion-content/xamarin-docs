@@ -96,6 +96,60 @@ chart.PrimaryAxis = new CategoryAxis() { Interval = 2, LabelPlacement = LabelPla
 
 ![Enable or disable the axis auto-interval support in Xamarin.Forms Chart](axis_images/axis_img3.png)
 
+### Indexed category axis
+
+Category axis can also be rendered based on the index values of data source by setting the [`ArrangeByIndex`]() property to true in the axis.
+
+% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+	  <chart:CategoryAxis ArrangeByIndex="False" />
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.Series>
+
+      <chart:ColumnSeries ItemsSource="{Binding Data1}"  XBindingPath="Country" YBindingPath="Year2016"/>
+       
+      <chart:ColumnSeries ItemsSource="{Binding Data2}"  XBindingPath="Country" YBindingPath="Year2016"/>
+
+</chart:SfChart.Series>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new CategoryAxis() 
+{ 
+	ArrangeByIndex = false 
+};
+
+ColumnSeries series1 = new ColumnSeries()
+ {
+        ItemsSource = view.Data1,
+        XBindingPath = "Country",
+        YBindingPath = "Year2016"
+ };
+ ColumnSeries series2 = new ColumnSeries()
+ {
+        ItemsSource = view.Data2,
+        XBindingPath = "Country",
+        YBindingPath = "Year2016",
+ };
+
+chart.Series.Add(series1);
+chart.Series.Add(series2);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Category axis indexed feature support in Xamarin.Forms Chart]()
+
+
 ## Numeric Axis
 
 Numeric axis uses numerical scale and displays numbers as labels. 

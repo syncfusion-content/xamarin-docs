@@ -248,6 +248,22 @@ The property with [DataType(DataType.PhoneNumber)] attribute.
 </td>
 </tr>
 </table>
+<tr>
+<td>
+AutoComplete
+</td>
+<td>
+{{'[DataFormAutoCompleteEditor]'| markdownify }}
+</td>
+<td>
+Enum and List type property.
+[EnumDataTypeAttribute]
+</td>
+<td>
+{{'[SfAutoComplete](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms_namespace.html)'| markdownify }}
+</td>
+</tr>
+</table>
 
 ## Text editor
 
@@ -1230,6 +1246,1012 @@ The custom prompt character can be set using the [PromptChar](https://help.syncf
 {% endtabs %}
 
 ![Loading masked edit text editor in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-maskededittexteditor.png)
+
+## Auto complete editor
+
+In the drop down editor, the [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview) will be loaded.
+
+### Customizing items source of autocomplete editor:
+
+By default, the `ItemsSource` for AutoComplete editor is auto-generated for enum types and collection type properties. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
+
+#### Using SourceProvider
+
+{% tabs %}
+{% highlight c# %}
+private string _ItemName;
+public string ItemName
+{
+    get
+    {
+        return _ItemName;
+    }
+    set
+    {
+        _ItemName = value;
+    }
+}
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+        var list = new List<string>();
+        if (sourceName == "ItemName")
+        {
+            list.Add("Item1");
+            list.Add("Item2");
+            list.Add("Item3");
+        }
+        return list;
+    }
+}
+dataForm.SourceProvider = new SourceProviderExt();
+dataForm.RegisterEditor("ItemName", "AutoComplete");
+{% endhighlight %}
+{% endtabs %}
+
+#### Using AutoGeneratingItem event
+
+You can also set the ItemsSource for auto comeplete editor by using the [ItemsSource] property in the `AutoCompleteItem`.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Name")
+    {
+        var list = new List<string>();
+        list.Add("Home");
+        list.Add("Food");
+        list.Add("Utilities");
+        list.Add("Education");
+        (e.DataFormItem as AutoCompleteItem).ItemsSource = list;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Changing ItemsSource of auto complete editor at run time
+
+You can also change the `ItemsSource` at runtime.
+
+{% tabs %}
+{% highlight c# %}
+private void Button_Click(object sender, EventArgs e)
+{
+    var dataFormItem = dataForm.ItemManager.DataFormItems["Name"];
+    if (dataFormItem.Name == "Name")
+    {
+        var list = new List<string>();
+        list.Add("Home");
+        list.Add("Food");
+        list.Add("Utilities");
+        list.Add("Education");
+        (dataFormItem as AutoCompleteItem).ItemsSource = list;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Loading complex type property values in auto complete editor
+
+You can display the complex type property values in auto complete editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for drop down editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath] and [SelectedValuePath] property value of AutoCommplete for complex type property.
+
+N> Class cannot be directly set as data type for auto complete editor in this complex type scenario.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.SourceProvider = new SourceProviderExt();
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.RegisterEditor("City", "AutoComplete");
+ 
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "City")
+    {
+        if (Device.RuntimePlatform != Device.UWP)
+        {
+            (e.DataFormItem as AutoCompleteItem).DisplayMemberPath = "City";
+            (e.DataFormItem as AutoCompleteItem).SelectedValuePath = "PostalCode";
+        }
+    }
+} 
+ 
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+        if (sourceName == "City")
+        {
+            List<Address> details = new List<Address>();
+            details.Add(new Address() { City = "Chennai", PostalCode = 1 });
+            details.Add(new Address() { City = "Paris", PostalCode = 2 });
+            details.Add(new Address() { City = "Vatican", PostalCode = 3 });
+
+            return details;
+        }
+       return new List<string>();
+    }
+}
+
+public class ContactInfo
+{
+    [Display(Name ="First Name")]
+    public String FirstName { get; set; } 
+    public string City { get; set; }
+}
+
+public class Address
+{
+    public int PostalCode { get; set; }
+    public string City { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Customizing autoComplete editor appearance:
+
+### AutoComplete editor modes:
+
+AutoComplete editor provides three different ways to display the filtered suggestions. They are 
+
+* Suggest - displaying suggestion in drop down list
+
+* Append - appending the first suggestion to text
+
+* SuggestAppend - Both of these
+
+`AutoCompleteMode` property is used to choose the suggestion display mode in AutoCompleteItem class. The default value is Suggest.
+
+#### Suggesting Choices in List
+
+The filtered suggestions are displayed in a drop down list. User can pick an item from the list.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.RegisterEditor("Name", "AutoComplete");
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        autoCompleteItem.AutoCompleteMode = AutoCompleteMode.Suggest;
+        autoCompleteItem.ItemsSource = new List<string>
+                    {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
+                    "Japan",
+                    "Angola"
+                    };
+    }
+}
+
+public class ContactInfo
+{
+ private string name = "John";
+        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
+        private string country;
+
+        [Display(Name = "First Name")]
+        public String Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+        [DataType(DataType.MultilineText)]
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                address = value;
+            }
+        }
+        public string Country
+        {
+            get
+            {
+                return country;
+            }
+            set
+            {
+                country = value;
+            }
+        }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Appending Suggestion to Text
+
+The first item in filtered suggestions is appended to Auto complete editor text. In this mode, drop down remains closed.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.RegisterEditor("Name", "AutoComplete");
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        autoCompleteItem.AutoCompleteMode = AutoCompleteMode.Append;
+        autoCompleteItem.ItemsSource = new List<string>
+                    {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
+                    "Japan",
+                    "Angola"
+                    };
+    }
+}
+
+public class ContactInfo
+{
+ private string name = "John";
+        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
+        private string country;
+
+        [Display(Name = "First Name")]
+        public String Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+        [DataType(DataType.MultilineText)]
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                address = value;
+            }
+        }
+        public string Country
+        {
+            get
+            {
+                return country;
+            }
+            set
+            {
+                country = value;
+            }
+        }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Suggesting Choices and Appending Suggestions to Text
+
+The text is appended to the first matched item in the suggestions collection and filtered suggestions are displayed in a drop down list. The user can pick from a list directly or use up and down keys for browsing the list.
+	
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.RegisterEditor("Name", "AutoComplete");
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        autoCompleteItem.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+        autoCompleteItem.ItemsSource = new List<string>
+                    {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
+                    "Japan",
+                    "Angola"
+                    };
+    }
+}
+
+public class ContactInfo
+{
+ private string name = "John";
+        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
+        private string country;
+
+        [Display(Name = "First Name")]
+        public String Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+        [DataType(DataType.MultilineText)]
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                address = value;
+            }
+        }
+        public string Country
+        {
+            get
+            {
+                return country;
+            }
+            set
+            {
+                country = value;
+            }
+        }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### AutoComplete editor suggestion options:
+
+The phenomenon of string comparison for filtering suggestions can be changed using the `SuggestionMode` property. The default filtering strategy is “StartsWith” and it is case insensitive. The available filtering modes are
+
+* StartsWith
+
+* StartsWithCaseSensitive
+
+* Contains
+
+* ContainsWithCaseSensitive
+
+* Equals
+
+* EqualsWithCaseSensitive
+
+* EndsWith
+
+* EndsWithCaseSensitive
+
+#### Filtering Words that Starts with Input Text
+
+Displays all the matches that starts with the typed characters in items source of auto complete editor. This strategy is case in-sensitive.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.RegisterEditor("Name", "AutoComplete");
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        autoCompleteItem.SuggestionMode = Syncfusion.XForms.DataForm.SuggestionMode.StartsWith;
+        autoCompleteItem.ItemsSource = new List<string>
+                    {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
+                    "Japan",
+                    "Angola"
+                    };
+    }
+}
+
+public class ContactInfo
+{
+ private string name = "John";
+        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
+        private string country;
+
+        [Display(Name = "First Name")]
+        public String Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+        [DataType(DataType.MultilineText)]
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                address = value;
+            }
+        }
+        public string Country
+        {
+            get
+            {
+                return country;
+            }
+            set
+            {
+                country = value;
+            }
+        }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Filtering Words that Starts with Input Text - CaseSensitive
+
+Displays all the matches that starts with the typed characters in items source of auto complete editor. This strategy is case sensitive.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.RegisterEditor("Name", "AutoComplete");
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        autoCompleteItem.SuggestionMode = Syncfusion.XForms.DataForm.SuggestionMode.StartsWithCaseSensitive;
+        autoCompleteItem.ItemsSource = new List<string>
+                    {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
+                    "Japan",
+                    "Angola"
+                    };
+    }
+}
+
+public class ContactInfo
+{
+ private string name = "John";
+        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
+        private string country;
+
+        [Display(Name = "First Name")]
+        public String Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+        [DataType(DataType.MultilineText)]
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                address = value;
+            }
+        }
+        public string Country
+        {
+            get
+            {
+                return country;
+            }
+            set
+            {
+                country = value;
+            }
+        }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Filtering Words that Contains the Input Text
+
+Displays all the matches that contains the typed characters in items source of auto complete editor. This strategy is case in-sensitive.
+	
+#### Filtering Words that Contains the Input Text - CaseSensitive
+
+Displays all the matches that contains the typed characters in items source of auto complete editor. This strategy is case sensitive.
+
+#### Filtering Words that Equals the Input Text
+
+Displays all the words that completely matches with the typed characters in items source of auto complete editor. This strategy is case in-sensitive.
+
+#### Filtering Words that Equals the Input Text - CaseSensitive
+
+Displays all the words that completely matches with the typed characters in items source of auto complete editor. This strategy is case sensitive.
+
+#### Filtering Words that Ends with the Input Text
+
+Displays all the matches that ends with the typed characters in items source of auto complete editor. This strategy is case in-sensitive.
+
+#### Filtering Words that Ends with the Input Text - CaseSensitive 
+
+Displays all the matches that ends with the typed characters in items source of auto complete editor. This strategy is case sensitive.
+
+### No results found text:
+
+When the entered item is not in the suggestion list, SfAutoComplete displays a text indicating there is no search results found. We can set the desire text to be displayed for indicating no results found with the `NoResultsFoundText` property.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.RegisterEditor("Name", "AutoComplete");
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        autoCompleteItem.NoResultsFoundText = "No result found";
+        autoCompleteItem.ItemsSource = new List<string>
+                    {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
+                    "Japan",
+                    "Angola"
+                    };
+    }
+}
+
+public class ContactInfo
+{
+ private string name = "John";
+        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
+        private string country;
+
+        [Display(Name = "First Name")]
+        public String Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+        [DataType(DataType.MultilineText)]
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                address = value;
+            }
+        }
+        public string Country
+        {
+            get
+            {
+                return country;
+            }
+            set
+            {
+                country = value;
+            }
+        }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> `NoResultsFoundText` works default in UWP platform without setting any property by showing the text "No result found".
+
+### Highlighting match text:
+
+Highlight matching characters in a suggestion list to pick an item with more clarity. The text highlight can be indicated with various customizing color by enabling the below property.
+
+* HighlightedTextColor -  sets the color of the highlighted text for differentiating the highlighted characters.
+
+#### TextHighlightMode
+ There are two ways to highlight the matching text:
+
+
+* First Occurrence
+
+* Multiple Occurrence
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.RegisterEditor("Name", "AutoComplete");
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+            autoCompleteItem.TextHighlightMode = Syncfusion.XForms.DataForm.OccurrenceMode.FirstOccurrence;
+            autoCompleteItem.HighlightedTextColor = Color.Red;
+            autoCompleteItem.ItemsSource = new List<string>
+                    {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
+                    "Japan",
+                    "Angola"
+                    };
+    }
+}
+
+public class ContactInfo
+{
+ private string name = "John";
+        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
+        private string country;
+
+        [Display(Name = "First Name")]
+        public String Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+        [DataType(DataType.MultilineText)]
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                address = value;
+            }
+        }
+        public string Country
+        {
+            get
+            {
+                return country;
+            }
+            set
+            {
+                country = value;
+            }
+        }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Maximum display item in dropdown column:
+
+Restrict the number of suggestions displayed and have the remaining items loaded by selecting LoadMore.We can restrict maximum suggestion to be displayed with the `MaximumSuggestion` property. We can set the desire text for the displaying the Load more text with the property `LoadMoreText`.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.RegisterEditor("Name", "AutoComplete");
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+            autoCompleteItem.MaximumSuggestion = 3;
+            autoCompleteItem.LoadMoreText = "Load Remaing";
+            autoCompleteItem.ItemsSource = new List<string>
+                    {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
+                    "Japan",
+                    "Angola"
+                    };
+    }
+}
+
+public class ContactInfo
+{
+ private string name = "John";
+        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
+        private string country;
+
+        [Display(Name = "First Name")]
+        public String Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+        [DataType(DataType.MultilineText)]
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                address = value;
+            }
+        }
+        public string Country
+        {
+            get
+            {
+                return country;
+            }
+            set
+            {
+                country = value;
+            }
+        }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Minimum prefix character:
+
+Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done by [`MinimumPrefixCharacters`] property and its default value is 1.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.RegisterEditor("Name", "AutoComplete");
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+            autoCompleteItem.MinimumPrefixCharacters = 3;
+            autoCompleteItem.ItemsSource = new List<string>
+                    {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
+                    "Japan",
+                    "Angola"
+                    };
+    }
+}
+
+public class ContactInfo
+{
+ private string name = "John";
+        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
+        private string country;
+
+        [Display(Name = "First Name")]
+        public String Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+        [DataType(DataType.MultilineText)]
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                address = value;
+            }
+        }
+        public string Country
+        {
+            get
+            {
+                return country;
+            }
+            set
+            {
+                country = value;
+            }
+        }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Diacritic sensitivity:
+The control does not stick with one type of keyboard, so you can populate items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard. Users can enable or disable the diacritic sensitivity with the `IgnoreDiacritic` property. In the below code example we have illustrate how to enables the diacritic sensitivity so that items in the suggestion list get populated by entering any diacritic character of that alphabet.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+dataForm.RegisterEditor("Name", "AutoComplete");
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+            autoCompleteItem.IgnoreDiacritic = false;
+            autoCompleteItem.ItemsSource = new List<string>
+                    {
+                    "India",
+                    "Uganda",
+                    "Ukraine",
+                    "Canada",
+                    "United Arab Emirates",
+                    "France",
+                    "United Kingdom",
+                    "China",
+                    "United States",
+                    "Japan",
+                    "Angola"
+                    };
+    }
+}
+
+public class ContactInfo
+{
+ private string name = "John";
+        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
+        private string country;
+
+        [Display(Name = "First Name")]
+        public String Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
+
+        [DataType(DataType.MultilineText)]
+        public string Address
+        {
+            get
+            {
+                return address;
+            }
+            set
+            {
+                address = value;
+            }
+        }
+        public string Country
+        {
+            get
+            {
+                return country;
+            }
+            set
+            {
+                country = value;
+            }
+        }
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## Custom editor
 

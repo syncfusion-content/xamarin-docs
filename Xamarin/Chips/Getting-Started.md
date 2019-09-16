@@ -21,7 +21,9 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Adding Chips reference from NuGet](images/action-type-chip/Adding Chips reference.png)
 
-N> Install the same version of Chips NuGet in all the projects.
+N> 
+* Install the same version of Chips NuGet in all the projects.
+* In addition, you need to install the [Syncfusion.Xamarin.Buttons.WPF]() package for Xamarin.Forms WPF platform only.
 
 **Method 2: Adding Chips reference from toolbox**
 
@@ -36,20 +38,24 @@ Location: {Installed location}/{version}/Xamarin/lib
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/></td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>Android</td>
 <td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll
-<br/>Syncfusion.Core.XForms.Android.dll<br/></td>
+<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/></td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/></td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>WPF</td>
+<td>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.WPF.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.WPF.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -159,6 +165,34 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 	… 
 }
 	
+{% endhighlight %}
+
+### Windows Presentation Foundation (WPF)
+
+To launch the chip in WPF, call the SfChipGroupRenderer.Init() and SfChipRenderer.Init() methods in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
+
+{% highlight C# %} 
+
+public partial class MainWindow : FormsApplicationPage
+{
+     public MainWindow()
+     { 
+            InitializeComponent();
+
+            Forms.Init();
+
+			Syncfusion.XForms.WPF.Border.SfBorderRenderer.Init();
+ 
+            //For chip group
+            Syncfusion.XForms.WPF.Buttons.SfChipGroupRenderer.Init();
+
+            //For chip
+			Syncfusion.XForms.WPF.Buttons.SfChipRenderer.Init();
+
+            LoadApplication(new App());
+     }
+}
+
 {% endhighlight %}
 
 ### Android

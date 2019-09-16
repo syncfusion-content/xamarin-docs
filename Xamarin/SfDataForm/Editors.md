@@ -1247,11 +1247,11 @@ The custom prompt character can be set using the [PromptChar](https://help.syncf
 
 ![Loading masked edit text editor in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-maskededittexteditor.png)
 
-## Autocomplete editor
+## AutoComplete editor
 
 In the drop down editor, the [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview) will be loaded.
 
-### Customizing ItemsSource of SfAutoComplete:
+### Customizing ItemsSource of autocomplete editor
 
 By default, the `ItemsSource` for AutoComplete editor is auto-generated for enum types. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
 
@@ -1316,7 +1316,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-#### Changing ItemsSource of SfAutoComplete at run time
+#### Changing ItemsSource of autocomplete editor at run time
 
 You can also change the `ItemsSource` at runtime.
 
@@ -1392,9 +1392,9 @@ public class Address
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing SfAutoComplete appearance:
+## Customizing autocomplete editor appearance
 
-### AutoComplete editor modes:
+### AutoComplete editor modes
 
 AutoComplete editor provides three different ways to display the filtered suggestions. They are 
 
@@ -1643,7 +1643,7 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-### AutoComplete editor suggestion options:
+### AutoComplete editor suggestion options
 
 The phenomenon of string comparison for filtering suggestions can be changed using the `SuggestionMode` property. The default filtering strategy is “StartsWith” and it is case insensitive. The available filtering modes are
 
@@ -1926,7 +1926,7 @@ public class ContactInfo
 
 N> `NoResultsFoundText` works default in UWP platform without setting any property by showing the text "No result found".
 
-### Highlighting match text:
+### Highlighting match text
 
 Highlight matching characters in a suggestion list to pick an item with more clarity. The text highlight can be indicated with various customizing color by enabling the below property.
 

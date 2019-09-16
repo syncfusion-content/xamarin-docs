@@ -731,17 +731,22 @@ Support has been provided to generate custom DataFormItems for the defined busin
                         xmlns:local="clr-namespace:GettingStarted"
                         xmlns:dataForm ="clr-namespace:Syncfusion.XForms.DataForm;assembly=Syncfusion.SfDataForm.XForms"
                         x:Class="GettingStarted.MainPage">
-        <ContentPage.Content>
-            <dataForm:SfDataForm x:Name="dataForm" AutoGenerateItems="false"> 
-                <dataForm:SfDataForm.Items> 
-                    <dataForm:DataFormTextItem Name="Name" Editor="Text"/> 
-                    <dataForm:DataFormTextItem Name="Password" Editor="Password"/> 
-                    <dataForm:DataFormMaskedEditTextItem Name="Phone" Editor="MaskedEditText"/> 
-                    <dataForm:DataFormTextItem Name="Address" Editor="MultilineText"/> 
-                    <dataForm:DataFormDateItem Name="BirthTime" Editor="Date"/> 
-                </dataForm:SfDataForm.Items> 
-            </dataForm:SfDataForm>
-        </ContentPage.Content>
+    <ContentPage.BindingContext>
+        <local:ViewModel x:Name="bindingContext"/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <dataForm:SfDataForm x:Name="dataForm" DataObject="{Binding Details}"  AutoGenerateItems="false"> 
+            <dataForm:SfDataForm.Items> 
+                <dataForm:DataFormTextItem Name="Name" Editor="Text"/> 
+                <dataForm:DataFormTextItem Name="Password" Editor="Password"/> 
+                <dataForm:DataFormMaskedEditTextItem Name="Phone" Editor="MaskedEditText"/> 
+                <dataForm:DataFormTextItem Name="Address" Editor="MultilineText"/> 
+                <dataForm:DataFormAutoCompleteItem Name="Countries" Editor="AutoComplete" ItemsSource = "{Binding CountryNames}"/> 
+                <dataForm:DataFormDateItem Name="BirthTime" Editor="Date"/> 
+            </dataForm:SfDataForm.Items> 
+        </dataForm:SfDataForm>
+    </ContentPage.Content>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
@@ -750,10 +755,39 @@ items.Add(new DataFormTextItem() { Name = "Name", Editor = "Text" });
 items.Add(new DataFormTextItem() { Name = "Password", Editor = "Password" });
 items.Add(new DataFormMaskedEditTextItem() { Name = "Phone", Editor = "MaskedEditText" });
 items.Add(new DataFormTextItem() { Name = "Address", Editor = "MultilineText" });
+items.Add(new DataFormAutoCompleteItem() { Name = "Countries", Editor = "AutoComplete", ItemsSource = this.GetItemSource("Countries")});
 items.Add(new DataFormTimeItem() { Name = "BirthTime", Editor = "Time" }); 
-
 dataForm.AutoGenerateItems = false; 
 dataForm.Items = items; 
+
+ public class ViewModel
+    {
+        private DataFormModel details;
+        private IList<string> countryNames;
+        public ViewModel()
+        {
+            details = new DataFormModel();
+            countryNames = new List<string>
+            {
+                "United states",
+                "United Kingdom",
+                "France",
+                "Belgium",
+                "Germany"
+            };
+        }
+
+        public DataFormModel Details
+        {
+            get { return this.details; }
+            set { this.details = value; }
+        }
+        public IList<string> CountryNames
+        {
+            get { return this.countryNames; }
+            set { this.countryNames = value; }
+        }
+    }
 {% endhighlight %}
 {% endtabs %}
 

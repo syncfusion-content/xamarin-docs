@@ -104,7 +104,7 @@ Add any content
 
 {% highlight xaml %} 
 
-<shimmer:SfShimmer x:Name="shimmer" VerticalOptions="FillAndExpand"
+<shimmer:SfShimmer x:Name="shimmer" VerticalOptions="Fill"
                            IsLoaded="{Binding IsLoaded}">
                         <shimmer:SfShimmer.Content>
                             <StackLayout>
@@ -118,7 +118,7 @@ Add any content
 {% highlight C# %} 
 
 SfShimmer shimmer = new SfShimmer();
-shimmer.VerticalOptions = LayoutOptions.FillAndExpand;
+shimmer.VerticalOptions = LayoutOptions.Fill;
 shimmer.SetBinding(SfShimmer.IsLoadedProperty, "IsLoaded");
 
 var stackLayout = new StackLayout();
@@ -138,6 +138,4 @@ shimmer.Content = stackLayout;
 
 ![Shimmer with Persona type](Getting-Started_images/Persona.gif)
 
-N> The SfShimmer has different shimmer types, which can be referred from this [`link`](). The default shimmer type is [`Persona`]().
-
-You can find the complete getting started sample from this link: [`Sample`]().
+N> The SfShimmer has different shimmer types. The default shimmer type is [`Persona`]().

@@ -117,11 +117,11 @@ public partial class MainWindow : FormsApplicationPage
             InitializeComponent();
 
             Forms.Init();
-
+            
             Syncfusion.XForms.WPF.Border.SfBorderRenderer.Init();
-
-			Syncfusion.XForms.WPF.Buttons.SfButtonRenderer.Init();
-
+            
+            Syncfusion.XForms.WPF.Buttons.SfButtonRenderer.Init();
+            
             LoadApplication(new App());
      }
 }

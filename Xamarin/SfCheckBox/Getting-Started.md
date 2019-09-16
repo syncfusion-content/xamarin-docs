@@ -113,11 +113,11 @@ public partial class MainWindow : FormsApplicationPage
      public MainWindow()
      { 
             InitializeComponent();
-
+            
             Forms.Init();
-
-			Syncfusion.XForms.WPF.Buttons.SfCheckBoxRenderer.Init();
-
+            
+            Syncfusion.XForms.WPF.Buttons.SfCheckBoxRenderer.Init();
+            
             LoadApplication(new App());
      }
 }

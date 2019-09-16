@@ -42,7 +42,7 @@ Default DataFormItem generated for the String type and the properties with [Data
 Numeric
 </td>
 <td>
-Generated for Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(DataType.Currency)] and [DataType(Percent)] attributes. 
+Generated for Int, Double, Float, Decimal, Long types and also its nullable property with [DataType(DataType.Currency)] and [DataType("Percent")] attributes. 
 
 </td>
 </tr>

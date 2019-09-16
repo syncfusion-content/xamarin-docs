@@ -1249,7 +1249,7 @@ The custom prompt character can be set using the [PromptChar](https://help.syncf
 
 ## AutoComplete editor
 
-In the drop down editor, the [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview) will be loaded.
+In the autocomplete editor, the [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview) will be loaded.
 
 ### Customizing ItemsSource of autocomplete editor
 

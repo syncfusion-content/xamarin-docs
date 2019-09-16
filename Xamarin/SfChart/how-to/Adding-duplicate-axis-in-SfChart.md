@@ -15,7 +15,11 @@ The following code sample demonstrates this.
 
 {% highlight c# %}
 
-Chart.Axes.Add(new NumericalAxis()
+SfChart chart = new SfChart();
+
+-  -  -
+
+chart.Axes.Add(new NumericalAxis()
 {
     Minimum = 0,
     Maximum = 70,

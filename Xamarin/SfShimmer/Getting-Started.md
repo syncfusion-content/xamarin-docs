@@ -98,7 +98,7 @@ using Syncfusion.XForms.Shimmer;
 
 {% endtabs %}
 
-Add any content 
+Then initialze effects view as shown below,
 
 {% tabs %} 
 

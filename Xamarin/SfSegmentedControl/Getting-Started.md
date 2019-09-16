@@ -138,11 +138,11 @@ public partial class MainWindow : FormsApplicationPage
      public MainWindow()
      { 
             InitializeComponent();
-
+            
             Forms.Init();
             
             Syncfusion.XForms.WPF.Buttons.SfSegmentedControlRenderer.Init();
-
+            
             LoadApplication(new App());
      }
 }

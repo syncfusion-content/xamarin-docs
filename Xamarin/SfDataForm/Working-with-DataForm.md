@@ -83,6 +83,27 @@ Generated for Enum type property and the property with [EnumDataTypeAttribute] a
 </tr>
 <tr>
 <td>
+{{'[DataFormDropDownItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem.html)'| markdownify }}
+</td>
+<td>
+Picker
+</td>
+<td>
+Generated for Enum type property and the property with [EnumDataTypeAttribute] attribute. 
+</td>
+</tr><tr>
+<td>
+{{'[DataFormAutoCompleteItem]'| markdownify }}
+</td>
+<td>
+Picker
+</td>
+<td>
+Generated for Enum type property and the property with [EnumDataTypeAttribute] attribute. 
+</td>
+</tr>
+<tr>
+<td>
 {{'[DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html)'| markdownify }}
 </td>
 <td>

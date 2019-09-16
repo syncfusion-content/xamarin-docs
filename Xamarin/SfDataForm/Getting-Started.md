@@ -442,6 +442,24 @@ Generated for the PhoneNumber type property.
 [DataType(DataType.PhoneNumber)]
 </td>
 </tr>
+<tr>
+<td>
+{{'DataFormAutoCompleteItem'| markdownify }}
+</td>
+<td>
+Generated for the Enum type property.
+[EnumDataTypeAttribute]
+</td>
+</tr>
+<tr>
+<td>
+{{'DataFormDropDowneItem'| markdownify }}
+</td>
+<td>
+Generated for the Enum type property.
+[EnumDataTypeAttribute]
+</td>
+</tr>
 </table>
 
 The following list of editors are supported:
@@ -600,6 +618,18 @@ Enum and List type property.
 </td>
 <td>
 {{'[SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+AutoComplete
+</td>
+<td>
+Enum and List type property.
+[EnumDataTypeAttribute]
+</td>
+<td>
+{{'[SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview)'| markdownify }}
 </td>
 </tr>
 <tr>

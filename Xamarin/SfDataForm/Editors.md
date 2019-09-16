@@ -1251,24 +1251,24 @@ The custom prompt character can be set using the [PromptChar](https://help.syncf
 
 In the drop down editor, the [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview) will be loaded.
 
-### Customizing items source of autocomplete editor:
+### Customizing ItemsSource of autocomplete editor:
 
-By default, the `ItemsSource` for AutoComplete editor is auto-generated for enum types and collection type properties. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
+By default, the `ItemsSource` for AutoComplete editor is auto-generated for enum types. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
 
 #### Using SourceProvider
 
 {% tabs %}
 {% highlight c# %}
-private string _ItemName;
-public string ItemName
+private string continents;
+public string Continents
 {
     get
     {
-        return _ItemName;
+        return continents;
     }
     set
     {
-        _ItemName = value;
+        continents = value;
     }
 }
 public class SourceProviderExt : SourceProvider
@@ -1276,17 +1276,20 @@ public class SourceProviderExt : SourceProvider
     public override IList GetSource(string sourceName)
     {
         var list = new List<string>();
-        if (sourceName == "ItemName")
+        if (sourceName == "Continents")
         {
-            list.Add("Item1");
-            list.Add("Item2");
-            list.Add("Item3");
+            list.Add("Asia");
+            list.Add("Europe");
+            list.Add("North America");
+            list.Add("South Americ");
+            list.Add("Australia");
+
         }
         return list;
     }
 }
 dataForm.SourceProvider = new SourceProviderExt();
-dataForm.RegisterEditor("ItemName", "AutoComplete");
+dataForm.RegisterEditor("Continents", "AutoComplete");
 {% endhighlight %}
 {% endtabs %}
 
@@ -1313,7 +1316,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-#### Changing ItemsSource of auto complete editor at run time
+#### Changing ItemsSource of autocomplete editor at run time
 
 You can also change the `ItemsSource` at runtime.
 
@@ -1352,11 +1355,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "City")
     {
-        if (Device.RuntimePlatform != Device.UWP)
-        {
-            (e.DataFormItem as AutoCompleteItem).DisplayMemberPath = "City";
-            (e.DataFormItem as AutoCompleteItem).SelectedValuePath = "PostalCode";
-        }
+       (e.DataFormItem as AutoCompleteItem).DisplayMemberPath = "City";
+       (e.DataFormItem as AutoCompleteItem).SelectedValuePath = "PostalCode";
     }
 } 
  
@@ -1392,7 +1392,7 @@ public class Address
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing autoComplete editor appearance:
+## Customizing SfAutoComplete appearance:
 
 ### AutoComplete editor modes:
 
@@ -1404,7 +1404,7 @@ AutoComplete editor provides three different ways to display the filtered sugges
 
 * SuggestAppend - Both of these
 
-`AutoCompleteMode` property is used to choose the suggestion display mode in AutoCompleteItem class. The default value is Suggest.
+`AutoCompleteMode` property is used to choose the suggestion display mode in `AutoCompleteItem` class. The default value is Suggest.
 
 #### Suggesting Choices in List
 
@@ -1845,7 +1845,7 @@ Displays all the matches that ends with the typed characters in items source of 
 
 Displays all the matches that ends with the typed characters in items source of auto complete editor. This strategy is case sensitive.
 
-### No results found text:
+### No results found text
 
 When the entered item is not in the suggestion list, SfAutoComplete displays a text indicating there is no search results found. We can set the desire text to be displayed for indicating no results found with the `NoResultsFoundText` property.
 
@@ -2016,7 +2016,7 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-### Maximum display item in dropdown column:
+### Maximum display item in dropdown column
 
 Restrict the number of suggestions displayed and have the remaining items loaded by selecting LoadMore.We can restrict maximum suggestion to be displayed with the `MaximumSuggestion` property. We can set the desire text for the displaying the Load more text with the property `LoadMoreText`.
 
@@ -2096,7 +2096,7 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-### Minimum prefix character:
+### Minimum prefix character
 
 Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done by [`MinimumPrefixCharacters`] property and its default value is 1.
 
@@ -2175,7 +2175,7 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-### Diacritic sensitivity:
+### Diacritic sensitivity
 The control does not stick with one type of keyboard, so you can populate items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard. Users can enable or disable the diacritic sensitivity with the `IgnoreDiacritic` property. In the below code example we have illustrate how to enables the diacritic sensitivity so that items in the suggestion list get populated by entering any diacritic character of that alphabet.
 
 {% tabs %}

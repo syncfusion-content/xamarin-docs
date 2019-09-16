@@ -229,7 +229,7 @@ public class ContactInfo
 The Percent data type is supported. Refer to [here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#auto-generating-dataformitems-for-the-data-field) for more details.
 
 ## Custom attribute
-The data form supports the following cutsom attribute, and these attributes can be accessible using `Syncfusion.SfDataForm.XForms`.
+The data form supports the following custom attribute, and these attributes can be accessible using `Syncfusion.SfDataForm.XForms`.
 
 ### DisplayOptions attribute
 

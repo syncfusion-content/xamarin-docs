@@ -9,7 +9,7 @@ documentation: UG
 
 # Data Annotations
 
-The data form supports the following attribute, and these attributes can be accessible using `Syncfusion.SfDataForm.XForms`.
+The data form supports the following attribute, and these attributes can be accessible using `System.ComponentModel.DataAnnotation`.
 
 ## Display attribute
 
@@ -140,9 +140,96 @@ Supported data types are Text, MultilineText, Date, DateTime, Time, and Currency
 
 Refer to [here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#auto-generating-dataformitems-for-the-data-field) for more details.
 
+## DisplayFormatAttribute
+
+It specifies how data fields are displayed and formatted.
+
+Supported data types are currency, percentage, date, time.
+
+<table>
+<tr>
+<th>Property</th>
+<th>Details</th>
+</tr>
+<tr>
+<td>
+DataFormatString
+</td>
+<td>
+Specifies the display format of the field value.
+</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<th>Editor</th>
+<th>FormatString</th>
+</tr>
+<tr>
+<td>
+Currency
+</td>
+<td>
+{0:C}
+</td>
+</tr>
+<tr>
+<td>
+Percentage
+</td>
+<td>
+{0:P}
+</td>
+</tr>
+<tr>
+<td>
+Date
+</td>
+<td>
+{0:D}
+</td>
+</tr>
+<tr>
+<td>
+Time
+</td>
+<td>
+{0:T}
+</td>
+</tr>
+</table>
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+
+public class ContactInfo
+{
+        private int markPercentage;
+
+        [DisplayFormat(DataFormatString ="{0:P}")]
+        public String MarkPercentage
+        {
+            get
+            {
+                return markPercentage;
+            }
+            set
+            {
+                markPercentage = value;
+            }
+        }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## CustomDataType attribute
 
 The Percent data type is supported. Refer to [here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#auto-generating-dataformitems-for-the-data-field) for more details.
+
+## Custom attribute
+The data form supports the following cutsom attribute, and these attributes can be accessible using `Syncfusion.SfDataForm.XForms`.
 
 ### DisplayOptions attribute
 

@@ -147,8 +147,6 @@ chart.Series.Add(series2);
 
 {% endtabs %}
 
-![Category axis indexed feature support in Xamarin.Forms Chart]()
-
 
 ## Numeric Axis
 

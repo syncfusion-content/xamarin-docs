@@ -85,12 +85,11 @@ caption.FontSize = 20;
 `LineBreakMode` allows you to wrap or truncate the text. The default value of this property is `NoWrap`. Other available options of LineBreakMode are listed below.
 
  * `NoWrap` - Used to avoid the text wrap. 
- * `WordWrap` - Used to wrap by words.
- * `CharacterWrap` - Used to wrap words by characters.
- * `HeadTruncation` - Truncate the head of text. 
- * `MiddleTruncation` - Truncate the center of text.
- * `TailTruncation` - Truncate the tail of text.
- 
+ * `WordWrap` - Used to wrap the text by words.
+ * `CharacterWrap` - Used to wrap the text by character.
+ * `HeadTruncation` - Truncate the text in the start.
+ * `MiddleTruncation` - Truncate the text in the center.
+ * `TailTruncation` - Truncate the text in the End.
 ## TickColor Customization
 The `TickColor` property customizes the color of the tick in SfCheckBox.
 

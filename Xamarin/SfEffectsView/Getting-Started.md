@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion EffectsView
-description: How to initialze a effects view.
+description: How to initialze an effects view.
 platform: xamarin
 control: SfEffectsView
 documentation: ug
@@ -21,7 +21,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Add Packages](Getting-Started_images/Reference.png)
 
-N> Install the same version of SfEffectsView NuGet in all the projects. SfEffectsView supports only in Android and iOS. 
+N> SfEffectsView supports in Android and iOS. 
 
 **Method 2: Adding SfEffectsView reference from toolbox**
 
@@ -98,7 +98,7 @@ using Syncfusion.XForms.EffectsView;
 
 {% endtabs %}
 
-Then initialze effects view as shown below,
+Then initialize effects view as shown below,
 
 {% tabs %} 
 

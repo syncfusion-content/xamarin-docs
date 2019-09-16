@@ -177,17 +177,17 @@ public partial class MainWindow : FormsApplicationPage
 {
      public MainWindow()
      {
-		 InitializeComponent();
+		InitializeComponent();
 		 
-		 Forms.Init();
+		Forms.Init();
 		 
-		 Syncfusion.XForms.WPF.Border.SfBorderRenderer.Init();
+		Syncfusion.XForms.WPF.Border.SfBorderRenderer.Init();
+		//For chip group 
+		Syncfusion.XForms.WPF.Buttons.SfChipGroupRenderer.Init();
+		// For chip 
+		Syncfusion.XForms.WPF.Buttons.SfChipRenderer.Init();
 		 
-		 Syncfusion.XForms.WPF.Buttons.SfChipGroupRenderer.Init();
-		 
-		 Syncfusion.XForms.WPF.Buttons.SfChipRenderer.Init();
-		 
-		 LoadApplication(new App());
+		LoadApplication(new App());
      }
 }
 

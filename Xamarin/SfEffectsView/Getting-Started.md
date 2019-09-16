@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion EffectsView
-description: How to initialze an effects view.
+description: How to initialze an SfEffectsView.
 platform: xamarin
 control: SfEffectsView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the effects view.
+This section explains the steps required to configure the SfEffectsView control.
 
 ## Adding SfEffectsView reference
 
@@ -17,11 +17,11 @@ You can add SfEffectsView reference using one of the following methods:
 
 **Method 1: Adding SfEffectsView reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfEffectsView to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfEffectsView to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.Core](https://www.nuget.org/packages/Syncfusion.Xamarin.Core), and then install it.
 
 ![Add Packages](Getting-Started_images/Reference.png)
 
-N> SfEffectsView supports in Android and iOS. 
+N> SfEffectsView is supported in Android and iOS.
 
 **Method 2: Adding SfEffectsView reference from toolbox**
 
@@ -50,17 +50,17 @@ Location : {Installed location}/{version}/Xamarin/lib
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching an application on each platform with SfEffectsView
 
-To use the effects view inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and are discussed in the following sections:
+To use the SfEffectsView inside an application, each platform application requires some additional configurations. The configurations vary from platform to platform and are discussed in the following sections:
 
-N> If you are adding the references from toolbox, below steps are not needed.
+N> If you are adding the references from toolbox, the following steps are not needed.
 
 ### iOS
 
-To launch the effects view in iOS, call the `SfEffectsViewRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the `LoadApplication` method is called as demonstrated in the following code sample.
+To launch the SfEffectsView in iOS, call the `SfEffectsViewRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the `LoadApplication` method is called as demonstrated in the following code sample.
 
 {% highlight C# %} 
 
@@ -76,9 +76,9 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Android
 
-Android platform does not require any additional configuration to render the effects view control.
+Android platform does not require any additional configuration to render the SfEffectsView control.
 
-## Initializing effects view
+## Initializing SfEffectsView
 
 Import the [`SfEffectsView`]() control namespace in respective page as demonstrated in the following code sample.
 
@@ -98,7 +98,7 @@ using Syncfusion.XForms.EffectsView;
 
 {% endtabs %}
 
-Then initialize effects view as shown below,
+Then, initialize the SfEffectsView as demonstrated in the following code example.
 
 {% tabs %} 
 

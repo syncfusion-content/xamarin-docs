@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Shimmer
-description: The shimmer control can be used to indicate data is being loaded in the background.
+description: Customization of Syncfusion Shimmer.
 platform: xamarin
 control: SfShimmer
 documentation: ug

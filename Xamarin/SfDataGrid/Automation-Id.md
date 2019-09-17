@@ -103,7 +103,7 @@ public void SfDataGrid_AutomationId()
 
 ## DataPager
 
-Refer the below image to know the AutomationId values of the pager buttons in SfDatapager.
+Refer the below image to know the AutomationId values of the pager buttons in SfDataPager.
 
 ![Automation Id format for Pager](SfDataGrid_images/AutomationId_Pager.png)
 

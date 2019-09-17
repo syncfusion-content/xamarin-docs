@@ -1253,7 +1253,7 @@ In the autocomplete editor, the [SfAutoComplete](https://help.syncfusion.com/xam
 
 ### Customizing ItemsSource of autocomplete editor
 
-By default, the `ItemsSource` for AutoComplete editor is auto-generated for enum types. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
+By default, the `ItemsSource` for `AutoComplete` editor is auto-generated for enum types. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
 
 #### Using SourceProvider
 
@@ -1316,7 +1316,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-#### Changing ItemsSource of autocomplete editor at run time
+#### Dynamically changing the ItemsSource of autocomplete editor
 
 You can also change the `ItemsSource` at runtime.
 
@@ -1406,7 +1406,7 @@ AutoComplete editor provides three different ways to display the filtered sugges
 
 `AutoCompleteMode` property is used to choose the suggestion display mode in `AutoCompleteItem` class. The default value is Suggest.
 
-#### Suggesting Choices in List
+#### Suggesting choices in List
 
 The filtered suggestions are displayed in a drop down list. User can pick an item from the list.
 
@@ -1485,7 +1485,7 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-#### Appending Suggestion to Text
+#### Appending suggestion to Text
 
 The first item in filtered suggestions is appended to autocomplete editor text. In this mode, drop down remains closed.
 
@@ -1564,7 +1564,7 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-#### Suggesting Choices and Appending Suggestions to Text
+#### Suggesting choices and appending suggestions to Text
 
 The text is appended to the first matched item in the suggestions collection and filtered suggestions are displayed in a drop down list. The user can pick from a list directly or use up and down keys for browsing the list.
 	
@@ -1663,7 +1663,7 @@ The phenomenon of string comparison for filtering suggestions can be changed usi
 
 * EndsWithCaseSensitive
 
-#### Filtering Words that Starts with Input Text
+#### Filtering words that starts with input text
 
 Displays all the matches that starts with the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
 
@@ -1742,7 +1742,7 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-#### Filtering Words that Starts with Input Text - CaseSensitive
+#### Filtering words that starts with input text - CaseSensitive
 
 Displays all the matches that starts with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
 
@@ -1821,27 +1821,27 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-#### Filtering Words that Contains the Input Text
+#### Filtering words that contains the input text
 
 Displays all the matches that contains the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
 	
-#### Filtering Words that Contains the Input Text - CaseSensitive
+#### Filtering words that contains the input text - CaseSensitive
 
 Displays all the matches that contains the typed characters in items source of autocomplete editor. This strategy is case sensitive.
 
-#### Filtering Words that Equals the Input Text
+#### Filtering words that equals the input text
 
 Displays all the words that completely matches with the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
 
-#### Filtering Words that Equals the Input Text - CaseSensitive
+#### Filtering words that equals the input text - CaseSensitive
 
 Displays all the words that completely matches with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
 
-#### Filtering Words that Ends with the Input Text
+#### Filtering words that ends with the input text
 
 Displays all the matches that ends with the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
 
-#### Filtering Words that Ends with the Input Text - CaseSensitive 
+#### Filtering words that ends with the input text - CaseSensitive 
 
 Displays all the matches that ends with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
 

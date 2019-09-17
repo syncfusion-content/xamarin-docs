@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Automation Id | SfPopupLayout | Xamarin | Syncfusion
-description: Set Automation Id to control inner elements for automation framework to find and interact.
+description: Set Automation Id to SfPopupLayout for automation framework to find and interact with control inner elements.
 platform: xamarin
 control: SfPopupLayout
 documentation: UG
@@ -59,7 +59,7 @@ namespace GettingStarted
 {% highlight c# %}
 // UI Script Automation Codes to interact with Close button 
 
-App.DoubleTap("SyncfusionPopup Close");
+App.Tap("SyncfusionPopup Close");
 
 {% endhighlight %}
 {% endtabs %}
@@ -125,7 +125,7 @@ namespace GettingStarted
 {% highlight c# %}
 // UI Script Automation Codes to interact with content template button 
 
-App.DoubleTap("TemplateButton");
+App.Tap("TemplateButton");
 
 {% endhighlight %}
 {% endtabs %}

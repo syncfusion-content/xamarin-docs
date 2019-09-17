@@ -123,6 +123,6 @@ public MainPage()
 
 ![SfImageEditor](ImageEditor_images/Sharpen.jpg)
 
-N> The ImageEffect enum also contains “None” option, which removes all the previously applied effects, which are not saved displays the original image. When applying effect through the ApplyImageeffect method, the effects will be saved automatically. But, if you apply effect from toolbar, each effect will be saved only when clicking the OK button, else all the applied effects will not be saved.
+N> The Image Effect enum also contains “None” option, which removes all the previously applied effects, which are not saved displays the original image. When applying effect through the ApplyImageeffect method, the effects will be saved automatically. But, if you apply effect from toolbar, each effect will be saved only when clicking the OK button, else all the applied effects will not be saved.
 
 ![SfImageEditor](ImageEditor_images/ImageFilter.jpg)

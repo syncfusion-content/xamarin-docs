@@ -24,7 +24,7 @@ maskedEdit.PasswordChar = '*';
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/PasswordChar.png)
+![Show Password Char](SfMaskedEditImages/PasswordChar.png)
 
 ## Password Delay
 
@@ -43,7 +43,7 @@ maskedEdit.EnablePasswordDelay = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/Passworddelayfeature.gif)
+![Delay password character](SfMaskedEditImages/Passworddelayfeature.gif)
 
 N> The default value of the EnablePasswordDelay property is false.
 

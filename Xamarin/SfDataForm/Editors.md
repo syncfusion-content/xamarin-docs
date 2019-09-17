@@ -1295,7 +1295,7 @@ dataForm.RegisterEditor("Continents", "AutoComplete");
 
 #### Using AutoGeneratingItem event
 
-You can also set ItemsSource for autocomplete editor by using [ItemsSource] property in the `AutoCompleteItem`.
+You can also set ItemsSource for autocomplete editor by using [ItemsSource] property in the `DataFormAutoCompleteItem`.
 
 {% tabs %}
 {% highlight c# %}
@@ -1310,7 +1310,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
         list.Add("Food");
         list.Add("Utilities");
         list.Add("Education");
-        (e.DataFormItem as AutoCompleteItem).ItemsSource = list;
+        (e.DataFormItem as DataFormAutoCompleteItem).ItemsSource = list;
     }
 }
 {% endhighlight %}
@@ -1332,7 +1332,7 @@ private void Button_Click(object sender, EventArgs e)
         list.Add("Food");
         list.Add("Utilities");
         list.Add("Education");
-        (dataFormItem as AutoCompleteItem).ItemsSource = list;
+        (dataFormItem as DataFormAutoCompleteItem).ItemsSource = list;
     }
 }
 {% endhighlight %}
@@ -1355,8 +1355,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "City")
     {
-       (e.DataFormItem as AutoCompleteItem).DisplayMemberPath = "City";
-       (e.DataFormItem as AutoCompleteItem).SelectedValuePath = "PostalCode";
+       (e.DataFormItem as DataFormAutoCompleteItem).DisplayMemberPath = "City";
+       (e.DataFormItem as DataFormAutoCompleteItem).SelectedValuePath = "PostalCode";
     }
 } 
  
@@ -1404,7 +1404,7 @@ The `DataFormAutoCompleteEditor` provides the following three different ways to 
 
 * SuggestAppend - Performs both suggest and append.
 
-The `AutoCompleteMode` property is used to choose the suggestion display mode in the `AutoCompleteItem` class. The default value is Suggest.
+The `AutoCompleteMode` property is used to choose the suggestion display mode in the `DataFormAutoCompleteItem` class. The default value is Suggest.
 
 #### Suggestion choices in list
 
@@ -1420,7 +1420,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
         autoCompleteItem.AutoCompleteMode = AutoCompleteMode.Suggest;
         autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1499,7 +1499,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem )
         autoCompleteItem.AutoCompleteMode = AutoCompleteMode.Append;
         autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1578,7 +1578,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
         autoCompleteItem.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
         autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1677,7 +1677,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
         autoCompleteItem.SuggestionMode = Syncfusion.XForms.DataForm.SuggestionMode.StartsWith;
         autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1756,7 +1756,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
         autoCompleteItem.SuggestionMode = Syncfusion.XForms.DataForm.SuggestionMode.StartsWithCaseSensitive;
         autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1859,7 +1859,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
         autoCompleteItem.NoResultsFoundText = "No result found";
         autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1950,7 +1950,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
             autoCompleteItem.TextHighlightMode = Syncfusion.XForms.DataForm.OccurrenceMode.FirstOccurrence;
             autoCompleteItem.HighlightedTextColor = Color.Red;
             autoCompleteItem.ItemsSource = new List<string>
@@ -2030,7 +2030,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
             autoCompleteItem.MaximumSuggestion = 3;
             autoCompleteItem.LoadMoreText = "Load Remaing";
             autoCompleteItem.ItemsSource = new List<string>
@@ -2110,7 +2110,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
             autoCompleteItem.MinimumPrefixCharacters = 3;
             autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -2188,7 +2188,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as AutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
             autoCompleteItem.IgnoreDiacritic = false;
             autoCompleteItem.ItemsSource = new List<string>
                     {

@@ -704,10 +704,6 @@ For exporting SfDataGrid to Excel and PDF, the following reference need to be ad
 <td>iOS</td>
 <td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
-<tr>
-<td>UWP</td>
-<td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
-</tr>
 </table>
 
 ## SfExpander
@@ -1449,10 +1445,6 @@ Syncfusion.Licensing.dll<br/>
 <tr>
 <td>iOS</td>
 <td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
-</tr>
-<tr>
-<td>UWP</td>
-<td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 

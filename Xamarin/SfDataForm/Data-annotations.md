@@ -140,7 +140,7 @@ Supported data types are Text, MultilineText, Date, DateTime, Time, and Currency
 
 Refer to [here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#auto-generating-dataformitems-for-the-data-field) for more details.
 
-## DisplayFormatAttribute
+## DisplayFormat attribute
 
 It specifies how data fields are displayed and formatted.
 

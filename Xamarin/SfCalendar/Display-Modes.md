@@ -46,14 +46,14 @@ The `SfCalendar` allows you hide the days of the next month and previous month i
 {% highlight xaml %}
 
 <syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" 
-						ShowLeadingAndTrailingDays="True"/>
+						ShowLeadingAndTrailingDays="False"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 calendar.ViewMode = ViewMode.MonthView;
-calendar.ShowLeadingAndTrailingDays = true; 
+calendar.ShowLeadingAndTrailingDays = False; 
  
 {% endhighlight %}
 
@@ -64,6 +64,31 @@ calendar.ShowLeadingAndTrailingDays = true;
 N>
 * The OnMonthCellLoaded event is triggered for the current month dates.
 * The VisibleDates in the MonthChanged event will return the current month dates.
+
+## Enable and disable past dates.
+
+The SfCalendar allows you to enable/disable the past dates in MonthView. This can be achieved by changing the [EnableDatesInPast](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~EnableDatesInPast.html) property. By default, value of this property is set to true.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" 
+						EnableDatesInPast="False"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+calendar.ViewMode = ViewMode.MonthView;
+calendar.EnableDatesInPast = False; 
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+N>
+* The EnableDatesInPast is not applicable for UWP.
 
 
 ## Month view customization

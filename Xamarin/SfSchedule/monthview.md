@@ -806,7 +806,7 @@ public class MonthCellDateBehavior : Behavior<Label>
 ![Month cell customization using Template selector in schedule xamarin forms](monthview_images/datatemplateselector_month.png)
 
 ## Getting Inline Appointment details
-Using [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~Appointment.html) argument in the [MonthInlineAppointmentTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs.html) of [MonthInlineAppointmentTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MonthInlineAppointmentTapped_EV.html) event, you can get the Month Inline Appointments details while tapping the specific appointment, and you can get the selected date by using the [selectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~selectedDate.html) property. You can do the required functions while tapping the inline appointment using this event. 
+Using [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~Appointment.html) argument in the [MonthInlineAppointmentTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs.html) of [MonthInlineAppointmentTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MonthInlineAppointmentTapped_EV.html) event, you can get the Month Inline Appointments details while tapping the specific appointment, and you can get the selected date by using the [selectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~selectedDate.html) property. `MonthInlineAppointmentTapped` also trigger while tapping the No Events view in inline.You can do the required functions while tapping the inline appointment using this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -816,8 +816,22 @@ schedule.MonthInlineAppointmentTapped += Schedule_MonthInlineAppointmentTapped;
 
 private void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineAppointmentTappedEventArgs args)
 {
-	var appointment = (args.Appointment as ScheduleAppointment);
-	DisplayAlert(appointment.Subject, appointment.StartTime.ToString(), "ok");
+    if (args.Appointment != null)
+    {
+        var appointment = (args.Appointment as ScheduleAppointment);
+        DisplayAlert(appointment.Subject, appointment.StartTime.ToString(), "ok");
+    }
+    else
+    {
+        DisplayAlert("", "MonthInlineAppointmentTapped event triggered", "ok");
+        (schedule.DataSource as ScheduleAppointmentCollection).Add(new ScheduleAppointment()
+          {
+            StartTime = new DateTime(args.selectedDate.Year, args.selectedDate.Month, args.selectedDate.Day, 10, 0, 0),
+            EndTime = new DateTime(args.selectedDate.Year, args.selectedDate.Month, args.selectedDate.Day, 12, 0, 0),
+            Subject = "Meeting",
+            Location = "Hutchison road",
+          });
+    }
 }
 {% endhighlight %}
 {% endtabs %}

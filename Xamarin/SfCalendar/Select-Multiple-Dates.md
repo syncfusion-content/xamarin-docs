@@ -104,3 +104,15 @@ calendar.SelectionMode = SelectionMode.SingleSelection;
 {% endtabs %}
 
 ![SingleSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-SingleSelection.png)
+
+## Programmatically clear the selected dates
+      
+You can clear the calendar selected dates pragmatically by using `ClearSelection` method, which is applicable for calendar `SelectionMode` such as `SingleSelection`, `MultiSelection`, `RangeSelection`, and `MultiRangeSelection`.
+
+{% highlight c# %}
+	
+calendar.ClearSelection();
+	
+{% endhighlight %}
+
+

@@ -1406,7 +1406,7 @@ The `DataFormAutoCompleteEditor` provides the following three different ways to 
 
 The `AutoCompleteMode` property is used to choose the suggestion display mode in the `AutoCompleteItem` class. The default value is Suggest.
 
-#### Suggestion choices in List
+#### Suggestion choices in list
 
 The filtered suggestions are displayed in a drop-down list. Users can pick an item from the list.
 

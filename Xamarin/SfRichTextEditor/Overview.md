@@ -14,7 +14,7 @@ The Xamarin RichTextEditor control is a WYSIWYG editor that provides a great use
 ## Key features
 
 * Applies formatting such as bold, italics, and underline.
-* Applies font color and background color to content.
+* Applies font color and background color to the content.
 * Customizes the text size and selection.
 * Creates bulleted and numbered lists.
 

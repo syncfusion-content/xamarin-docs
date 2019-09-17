@@ -34,7 +34,7 @@ public class ViewModel
     {
         Segments = new ObservableCollection<SfSegmentItem>();
         Segments.Add(new SfSegmentItem() { Text = "Max" });
-        Segments.Add(new SfSegmentItem() { Text = "Riya" });
+        Segments.Add(new SfSegmentItem() { Text = "Roger" });
         Segments.Add(new SfSegmentItem() { Text = "Evans" });
         Segments.Add(new SfSegmentItem() { Text = "John" });
         Segments.Add(new SfSegmentItem() { Text = "Peter" });
@@ -46,7 +46,7 @@ public class ViewModel
 
 {% endtabs %}
 
-The below table describes how to set the AutomationId for the above code snippet for each segment item in the control.
+The below table shows the AutomationId value set for each segment item in the control for the above code snippet.
 
 <table>
 <tr>
@@ -60,8 +60,8 @@ The below table describes how to set the AutomationId for the above code snippet
 <tr>
 
 <tr>
-<td>Riya</td>
-<td>SegmentedControl1_Riya</td>
+<td>Roger</td>
+<td>SegmentedControl1_Roger</td>
 <tr>
 
 <tr>

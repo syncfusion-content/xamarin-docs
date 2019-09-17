@@ -9,7 +9,7 @@ documentation: UG
 
 # Data Annotations
 
-The data form supports the following attribute, and these attributes can be accessible using `System.ComponentModel.DataAnnotation`.
+The data form supports the following attribute, and these attributes can be accessible using `System.ComponentModel.DataAnnotation` assembly.
 
 ## Display attribute
 

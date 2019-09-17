@@ -129,13 +129,13 @@ chart.PrimaryAxis = new CategoryAxis()
 
 ColumnSeries series1 = new ColumnSeries()
  {
-        ItemsSource = view.Data1,
+        ItemsSource = viewmodel.Data1,
         XBindingPath = "Country",
         YBindingPath = "Year2016"
  };
  ColumnSeries series2 = new ColumnSeries()
  {
-        ItemsSource = view.Data2,
+        ItemsSource = viewmodel.Data2,
         XBindingPath = "Country",
         YBindingPath = "Year2016",
  };

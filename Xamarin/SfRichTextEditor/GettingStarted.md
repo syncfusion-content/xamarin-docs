@@ -185,4 +185,4 @@ public MainPage()
 
 {% endtabs %} 
 
-The complete Getting Started sample is available in this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-488109269).
+The complete Getting Started sample is available in this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1444240336)

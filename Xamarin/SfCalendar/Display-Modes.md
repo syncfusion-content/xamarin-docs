@@ -67,7 +67,7 @@ N>
 
 ## Enable and disable past dates.
 
-The SfCalendar allows you to enable/disable the past dates in MonthView. This can be achieved by changing the [EnableDatesInPast](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~EnableDatesInPast.html) property. By default, value of this property is set to true.
+The `SfCalendar` allows you to enable/disable the past dates in MonthView. This can be achieved by changing the [EnableDatesInPast](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~EnableDatesInPast.html) property. By default, value of this property is set to true.
 
 {% tabs %}
 

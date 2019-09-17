@@ -68,13 +68,13 @@ radioButton.FontSize = 20;
 ![CaptionAppereance Image](Images/CaptionAppereance.png)
 
 ## LineBreakMode
-`LineBreakMode` allows you to wrap or truncate the text. The default value of this property is `NoWrap`. Other available options of LineBreakMode are listed below.
+The `LineBreakMode` allows you to wrap or truncate the text. The default value of this property is `NoWrap`. The following other options are available in `LineBreakMode`:
 
- * `NoWrap` - Used to avoid the text wrap. 
- * `WordWrap` - Used to wrap the text by words.
- * `CharacterWrap` - Used to wrap the text by character.
- * `HeadTruncation` - Truncate the text in the start.
- * `MiddleTruncation` - Truncate the text in the center.
- * `TailTruncation` - Truncate the text in the end.
+ * `NoWrap` - Avoids the text wrap. 
+ * `WordWrap` - Wraps the text by words.
+ * `CharacterWrap` - Wraps the text by character.
+ * `HeadTruncation` - Truncates the text at the start.
+ * `MiddleTruncation` - Truncates the text at the center.
+ * `TailTruncation` - Truncates the text at the end.
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_VisualCustomization1644131704).

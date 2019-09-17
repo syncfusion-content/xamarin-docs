@@ -247,7 +247,6 @@ The property with [DataType(DataType.PhoneNumber)] attribute.
 {{'[SfMaskedEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit_namespace.html)'| markdownify }}
 </td>
 </tr>
-</table>
 <tr>
 <td>
 AutoComplete

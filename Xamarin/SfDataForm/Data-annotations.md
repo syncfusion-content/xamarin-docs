@@ -206,20 +206,20 @@ dataForm.DataObject = new ContactInfo();
 
 public class ContactInfo
 {
-        private int markPercentage;
+    private int markPercentage;
 
-        [DisplayFormat(DataFormatString ="{0:P}")]
-        public String MarkPercentage
+    [DisplayFormat(DataFormatString ="{0:P}")]
+    public String MarkPercentage
+    {
+        get
         {
-            get
-            {
-                return markPercentage;
-            }
-            set
-            {
-                markPercentage = value;
-            }
+            return markPercentage;
         }
+        set
+        {
+            markPercentage = value;
+        }
+    }
 }
 {% endhighlight %}
 {% endtabs %}

@@ -95,7 +95,7 @@ with font family name.
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/FontFamily.png)
+![SfImageEditor](ImageEditor_images/FontFamily.jpg)
 
 ## Multiline text and text alignment
 
@@ -143,7 +143,7 @@ You can rotate the text based on a particular angle using `Angle` property in `T
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/rotation.png)
+![SfImageEditor](ImageEditor_images/rotation.jpg)
 
 ## Restricting the edit text box pop-up window
 

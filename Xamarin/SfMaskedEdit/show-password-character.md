@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Show password character for Xamarin.Forms platform
+title: Show password character for Syncfusion SfMaskedEdit control in Xamarin.Forms platform
 description: Learn how SfMaskedEdit work as password textbox
 platform: Xamarin
 control: SfMaskedEdit

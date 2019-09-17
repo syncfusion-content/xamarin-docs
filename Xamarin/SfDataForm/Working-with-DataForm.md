@@ -791,7 +791,7 @@ dataForm.Items = items;
 
     private IList GetItemSource(string sourceName) 
     { 
-        var list = new List<SimpleInfo>(); 
+        var list = new List<string>(); 
         if (sourceName == "Countries") 
         { 
             list.Add("Afghanistan");
@@ -805,7 +805,6 @@ dataForm.Items = items;
             list.Add("Antarctica");
             list.Add("Antigua and Barbuda");
         } 
-
         return list; 
     }
 {% endhighlight %}

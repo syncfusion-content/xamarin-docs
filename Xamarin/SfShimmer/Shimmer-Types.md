@@ -11,7 +11,7 @@ documentation: ug
 
 ## Built-in types
 
-The different built-in shimmer types available in Shimmer are as follows:
+The following different built-in shimmer types are available in Shimmer:
 
 * [`Persona`]()
 * [`Profile`]()
@@ -20,7 +20,7 @@ The different built-in shimmer types available in Shimmer are as follows:
 * [`Feed`]()
 * [`Shopping`]()
 
-You can use the built-in shimmer types by setting [`Type`] of [`SfShimmer`].
+You can use the built-in shimmer types by setting the [`Type`] of [`SfShimmer`].
 
 {% tabs %} 
 
@@ -55,9 +55,9 @@ You can use the built-in shimmer types by setting [`Type`] of [`SfShimmer`].
 
 ![The built-in shimmer types for Xamarin.Forms](Shimmer-Types_images/Shimmer_Syncfusion.gif)
 
-## Custom View
+## Custom view
 
-You can customize the shimmer by using your own view by using the [`CustomView`] property of [`SfShimmer`].
+You can customize the shimmer using your own view using the [`CustomView`] property of [`SfShimmer`].
 
 {% tabs %} 
 

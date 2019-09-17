@@ -9,11 +9,11 @@ documentation: ug
 
 # Customization of Shimmer
 
-The Shimmer control supports options to customize wave color, shimmer color, wave direction, wave animation duration and more. In this section, customizing shimmer control is explained.
+The Shimmer control supports options to customize the wave color, shimmer color, wave direction, wave animation duration, and more. This section explains how to customize the shimmer control.
 
 ## IsLoaded
 
-On enabling the [`IsLoaded`] property of [`SfShimmer`], shimmer content will be loaded.
+By enabling the [`IsLoaded`] property of [`SfShimmer`], shimmer content is loaded.
 
 {% tabs %} 
 
@@ -48,7 +48,7 @@ On enabling the [`IsLoaded`] property of [`SfShimmer`], shimmer content will be 
 
 ## WaveDirection
 
-The [`WaveDirection`] property of [`SfShimmer`] is used to change the direction of shimmer wave. The different wave directions available in [`SfShimmer`] are as follows:
+The [`WaveDirection`] property of [`SfShimmer`] is used to change the direction of shimmer wave. The following different wave directions are available in [`SfShimmer`]:
 
 * [`Default`]()
 * [`LeftToRight`]()
@@ -199,7 +199,7 @@ The [`WaveWidth`] property of [`SfShimmer`] is used to customize the width of wa
 
 ## AnimationDuration
 
-You can control the duration of wave animation by using the [`AnimationDuration`] property of [`SfShimmer`]. The default value of [`AnimationDuration`] is 1000ms.
+You can control the duration of wave animation using the [`AnimationDuration`] property of [`SfShimmer`]. The default value of [`AnimationDuration`] is 1000 ms.
 
 {% tabs %} 
 

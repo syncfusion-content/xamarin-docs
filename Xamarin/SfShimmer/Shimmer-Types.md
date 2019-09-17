@@ -53,7 +53,7 @@ You can use the built-in shimmer types by setting the [`Type`] of [`SfShimmer`].
 
 {% endtabs %}
 
-![The built-in shimmer types for Xamarin.Forms](Shimmer-Types_images/Shimmer_Syncfusion.gif)
+![The built-in shimmer types for Xamarin.Forms](Shimmer-Types_images/ShimmerTypes.gif)
 
 ## Custom view
 
@@ -63,7 +63,7 @@ You can customize the shimmer using your own view using the [`CustomView`] prope
 
 {% highlight xaml %} 
 
- <shimmer:SfShimmer.CustomView>
+            <shimmer:SfShimmer.CustomView>
                 <Grid
                     x:Name="customView"
                     Padding="10" ColumnSpacing="15" RowSpacing="15"
@@ -105,7 +105,7 @@ You can customize the shimmer using your own view using the [`CustomView`] prope
 
 {% highlight C# %} 
 
-var grid = new Grid
+            var grid = new Grid
             {
                 Padding = 10,
                 ColumnSpacing = 15,

@@ -159,7 +159,7 @@ The [`WaveColor`] property of [`SfShimmer`] is used to customize the color of wa
 
 {% endtabs %}
 
-![Wave color customization](Customization_images/ShimmerColor.png)
+![Wave color customization](Customization_images/WaveColor.png)
 
 ## WaveWidth
 

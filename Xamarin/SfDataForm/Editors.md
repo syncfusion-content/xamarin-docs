@@ -1249,11 +1249,11 @@ The custom prompt character can be set using the [PromptChar](https://help.syncf
 
 ## AutoComplete editor
 
-In the autocomplete editor, the [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview) will be loaded.
+In the autocomplete editor, the [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview) is loaded.
 
 ### Customizing ItemsSource of autocomplete editor
 
-By default, the `ItemsSource` for `AutoComplete` editor is auto-generated for enum types. For other types, you can set the `ItemsSource` by using the [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
+By default, the `ItemsSource` for `AutoComplete` editor is auto-generated for enum types. For other types, you can set `ItemsSource` using [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
 
 #### Using SourceProvider
 
@@ -1295,7 +1295,7 @@ dataForm.RegisterEditor("Continents", "AutoComplete");
 
 #### Using AutoGeneratingItem event
 
-You can also set the ItemsSource for autocomplete editor by using the [ItemsSource] property in the `AutoCompleteItem`.
+You can also set ItemsSource for autocomplete editor by using [ItemsSource] property in the `AutoCompleteItem`.
 
 {% tabs %}
 {% highlight c# %}
@@ -1340,7 +1340,7 @@ private void Button_Click(object sender, EventArgs e)
 
 #### Loading complex type property values in autocomplete editor
 
-You can display the complex type property values in autocomplete editor by using the [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of SourceProvider class, which is used to get source list as complex property values for drop down editor and set it to `SourceProvider` property of SfDataForm. You need to use `AutoGeneratingDataFormItem `event to set [DisplayMemberPath] and [SelectedValuePath] property value of AutoComplete for complex type property.
+You can display the complex type property values in autocomplete editor by using [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of the SourceProvider class, which is used to get source list as complex property values for autocomplete editor and set it to the `SourceProvider` property of SfDataForm.Use the `AutoGeneratingDataFormItem `event to set [DisplayMemberPath] and [SelectedValuePath] property values of AutoComplete for complex type property.
 
 N> Class cannot be directly set as data type for autocomplete editor in this complex type scenario.
 
@@ -1392,23 +1392,23 @@ public class Address
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing autocomplete editor appearance
+## Customizing the appearance of autocomplete editor
 
 ### AutoComplete editor modes
 
-AutoComplete editor provides three different ways to display the filtered suggestions. They are 
+The `DataFormAutoCompleteEditor` provides the following three different ways to display the filtered suggestions.
 
-* Suggest - displaying suggestion in drop down list
+* Suggest - Displays suggestions in drop-down list
 
-* Append - appending the first suggestion to text
+* Append - Appends the first suggestion to text
 
-* SuggestAppend - Both of these
+* SuggestAppend - Performs both suggest and append.
 
-`AutoCompleteMode` property is used to choose the suggestion display mode in `AutoCompleteItem` class. The default value is Suggest.
+The `AutoCompleteMode` property is used to choose the suggestion display mode in the `AutoCompleteItem` class. The default value is Suggest.
 
-#### Suggesting choices in List
+#### Suggestion choices in List
 
-The filtered suggestions are displayed in a drop down list. User can pick an item from the list.
+The filtered suggestions are displayed in a drop-down list. Users can pick an item from the list.
 
 {% tabs %}
 {% highlight c# %}
@@ -1485,9 +1485,9 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-#### Appending suggestion to Text
+#### Appending suggestion to text
 
-The first item in filtered suggestions is appended to autocomplete editor text. In this mode, drop down remains closed.
+The first item in the filtered suggestions is appended to autocomplete editor text. In this mode,the drop down remains closed.
 
 {% tabs %}
 {% highlight c# %}
@@ -1566,7 +1566,7 @@ public class ContactInfo
 
 #### Suggesting choices and appending suggestions to Text
 
-The text is appended to the first matched item in the suggestions collection and filtered suggestions are displayed in a drop down list. The user can pick from a list directly or use up and down keys for browsing the list.
+The text is appended to the first matched item in the suggestions collection, and the filtered suggestions are displayed in a drop-down list. The users can pick an item from a list directly or use the up and down keys for browsing the list.
 	
 {% tabs %}
 {% highlight c# %}
@@ -1645,7 +1645,7 @@ public class ContactInfo
 
 ### AutoComplete editor suggestion options
 
-The phenomenon of string comparison for filtering suggestions can be changed using the `SuggestionMode` property. The default filtering strategy is “StartsWith” and it is case insensitive. The available filtering modes are
+The phenomenon of string comparison for filtering suggestions can be changed using the `SuggestionMode` property. The default filtering strategy is “StartsWith”, and it is case insensitive. The available filtering modes are,
 
 * StartsWith
 
@@ -1665,7 +1665,7 @@ The phenomenon of string comparison for filtering suggestions can be changed usi
 
 #### Filtering words that starts with input text
 
-Displays all the matches that starts with the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
+Displays all the matches that start with the typed characters in items source of autocomplete editor. This strategy is case in sensitive.
 
 {% tabs %}
 {% highlight c# %}
@@ -1744,7 +1744,7 @@ public class ContactInfo
 
 #### Filtering words that starts with input text - CaseSensitive
 
-Displays all the matches that starts with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
+Displays all the matches that start with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
 
 {% tabs %}
 {% highlight c# %}
@@ -1823,31 +1823,31 @@ public class ContactInfo
 
 #### Filtering words that contains the input text
 
-Displays all the matches that contains the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
+Displays all the matches that contain the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
 	
 #### Filtering words that contains the input text - CaseSensitive
 
-Displays all the matches that contains the typed characters in items source of autocomplete editor. This strategy is case sensitive.
+Displays all the matches that contain the typed characters in items source of autocomplete editor. This strategy is case sensitive.
 
 #### Filtering words that equals the input text
 
 Displays all the words that completely matches with the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
 
-#### Filtering words that equals the input text - CaseSensitive
+#### Filtering words that equal the input text - CaseSensitive
 
-Displays all the words that completely matches with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
+Displays all the words that completely match with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
 
-#### Filtering words that ends with the input text
+#### Filtering words that end with the input text
 
-Displays all the matches that ends with the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
+Displays all the matches that end with the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
 
-#### Filtering words that ends with the input text - CaseSensitive 
+#### Filtering words that end with the input text - CaseSensitive 
 
-Displays all the matches that ends with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
+Displays all the matches that end with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
 
 ### No results found text
 
-When the entered item is not in the suggestion list, SfAutoComplete displays a text indicating there is no search results found. We can set the desire text to be displayed for indicating no results found with the `NoResultsFoundText` property.
+When the entered item is not in the suggestion list, SfAutoComplete displays a text that indicates there is no search results found. You can set the desire text to be displayed for indicating no results found with the `NoResultsFoundText` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -1924,21 +1924,21 @@ public class ContactInfo
 {% endhighlight %}
 {% endtabs %}
 
-N> `NoResultsFoundText` works default in UWP platform without setting any property by showing the text "No result found".
+N> The `NoResultsFoundText` works by default in the UWP platform without setting any property by showing the text "No result found".
 
 ### Highlighting match text
 
-Highlight matching characters in a suggestion list to pick an item with more clarity. The text highlight can be indicated with various customizing color by enabling the below property.
+Highlights matching characters in a suggestion list to pick an item with more clarity. The text highlight can be indicated with various customizing colors by enabling the following property.
 
-* HighlightedTextColor -  sets the color of the highlighted text for differentiating the highlighted characters.
+* HighlightedTextColor -  Sets the color of the highlighted text for differentiating the highlighted characters.
 
 #### TextHighlightMode
  There are two ways to highlight the matching text:
 
 
-* First Occurrence
+* First occurrence
 
-* Multiple Occurrence
+* Multiple occurrence
 
 {% tabs %}
 {% highlight c# %}
@@ -2018,7 +2018,7 @@ public class ContactInfo
 
 ### Maximum display item in dropdown column
 
-Restrict the number of suggestions displayed and have the remaining items loaded by selecting LoadMore.We can restrict maximum suggestion to be displayed with the `MaximumSuggestion` property. We can set the desire text for the displaying the Load more text with the property `LoadMoreText`.
+Restrict the number of suggestions displayed and get the remaining items loaded by selecting LoadMore.You can restrict maximum suggestion to be displayed with the `MaximumSuggestion` property. You can set the desired text for displaying the Load more text using the `LoadMoreText` property.
 
 {% tabs %}
 {% highlight c# %}
@@ -2098,7 +2098,7 @@ public class ContactInfo
 
 ### Minimum prefix character
 
-Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done by [`MinimumPrefixCharacters`] property and its default value is 1.
+Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries using the [`MinimumPrefixCharacters`] property. The default value is 1.
 
 {% tabs %}
 {% highlight c# %}
@@ -2176,7 +2176,7 @@ public class ContactInfo
 {% endtabs %}
 
 ### Diacritic sensitivity
-The control does not stick with one type of keyboard, so you can populate items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard. Users can enable or disable the diacritic sensitivity with the `IgnoreDiacritic` property. In the below code example we have illustrate how to enables the diacritic sensitivity so that items in the suggestion list get populated by entering any diacritic character of that alphabet.
+The control does not stick with one type of keyboard, so you can populate items from a language with letters containing diacritics, and search for them with the English characters from an en-US keyboard. Users can enable or disable the diacritic sensitivity using `IgnoreDiacritic` property. The following code example illustrats how to enable the diacritic sensitivity, so that items in the suggestion list can be populated by entering any diacritic character of that alphabet.
 
 {% tabs %}
 {% highlight c# %}

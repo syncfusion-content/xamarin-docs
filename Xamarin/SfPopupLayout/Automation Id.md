@@ -67,7 +67,7 @@ App.Tap("SyncfusionPopup Close");
 
 ## Automation Id for template content 
 
-Automation Id can be set dirctly to the templated view of PopupView properties such as ContentTemplate, HeaderTemplate and FooterTemplate. Following code snippet explains setting automation Id for template content.
+Automation Id can be set directly to the templated view of PopupView properties such as ContentTemplate, HeaderTemplate and FooterTemplate. Following code snippet explains setting automation Id for template content.
 
 {% tabs %}
 {% highlight xaml %}

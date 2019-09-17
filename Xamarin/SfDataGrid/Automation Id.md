@@ -9,7 +9,7 @@ documentation: UG
 
 # Automation Id
 
-SfDataGrid control has built in AutomationId for inner elements. These automation id values allows the automation framework to find and interact with those inner elements. To keep unique automation id, inner element automation id's will get updated based on the control's automation id. Please find following code snippet and imgae to know about the inner element automation id's format.
+SfDataGrid control has built in AutomationId for inner elements. These automation id values allows the automation framework to find and interact with those inner elements. To keep unique automation id, inner element automation id's will get updated based on the control's automation id. Please find following code snippet and image to know about the inner element automation id's format.
 
 {% tabs %}
 {% highlight xaml %}

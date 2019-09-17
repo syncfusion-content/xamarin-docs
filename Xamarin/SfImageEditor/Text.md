@@ -113,7 +113,7 @@ N> The default text alignment is `Left` and text alignment is not applicable for
 
 {% endhighlight %}
 
-![SfImageEditor](ImageEditor_images/multiline.png)
+![SfImageEditor](ImageEditor_images/multiline.jpg)
 
 ## Text Rotation
 

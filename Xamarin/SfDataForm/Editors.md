@@ -1298,17 +1298,19 @@ You can also set ItemsSource for autocomplete editor by using [ItemsSource] prop
 
 {% tabs %}
 {% highlight c# %}
+dataForm.RegisterEditor("Continents", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
-    if (e.DataFormItem != null && e.DataFormItem.Name == "Name")
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Continents")
     {
         var list = new List<string>();
-        list.Add("Home");
-        list.Add("Food");
-        list.Add("Utilities");
-        list.Add("Education");
+            list.Add("Asia");
+            list.Add("Europe");
+            list.Add("North America");
+            list.Add("South Americ");
+            list.Add("Australia");
         (e.DataFormItem as DataFormAutoCompleteItem).ItemsSource = list;
     }
 }
@@ -1323,14 +1325,15 @@ You can also change the `ItemsSource` at runtime.
 {% highlight c# %}
 private void Button_Click(object sender, EventArgs e)
 {
-    var dataFormItem = dataForm.ItemManager.DataFormItems["Name"];
-    if (dataFormItem.Name == "Name")
+    var dataFormItem = dataForm.ItemManager.DataFormItems["Continents"];
+    if (dataFormItem.Name == "Continents")
     {
         var list = new List<string>();
-        list.Add("Home");
-        list.Add("Food");
-        list.Add("Utilities");
-        list.Add("Education");
+            list.Add("Asia");
+            list.Add("Europe");
+            list.Add("North America");
+            list.Add("South Americ");
+            list.Add("Australia");
         (dataFormItem as DataFormAutoCompleteItem).ItemsSource = list;
     }
 }

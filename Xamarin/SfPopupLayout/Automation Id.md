@@ -82,7 +82,7 @@ Automation Id can be set directly to the templated view of PopupView properties 
             <sfPopup:PopupView.ContentTemplate>
                 <DataTemplate>
                     <Button Text="This is SfPopupLayout" BackgroundColor="SkyBlue"
-                           AutomationId="TemplateButton" />
+                           AutomationId="TemplateButton" Clicked="Button_Clicked"/>
                 </DataTemplate>
             </sfPopup:PopupView.ContentTemplate>
         </sfPopup:PopupView>
@@ -115,6 +115,11 @@ namespace GettingStarted
         private void ClickToShowPopup_Clicked(object sender, EventArgs e)
         {
             popupLayout.Show();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            // your logics 
         }
     }
 }

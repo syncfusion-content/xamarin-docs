@@ -789,26 +789,24 @@ dataForm.Items = items;
         }
     }
 
-    public class SourceProviderExt : SourceProvider
-    {
-        public override IList GetSource(string sourceName)
-        {
-            var list = new List<string>();
-            if(sourceName == "Countries")
-            {
-                list.Add("Afghanistan");
-                list.Add("Akrotiri");
-                list.Add("Albania");
-                list.Add("Algeria");
-                list.Add("American Samoa");
-                list.Add("Andorra");
-                list.Add("Angola");
-                list.Add("Anguilla");
-                list.Add("Antarctica");
-                list.Add("Antigua and Barbuda");
-            }
-            return list;
-        }
+    private IList GetItemSource(string sourceName) 
+    { 
+        var list = new List<SimpleInfo>(); 
+        if (sourceName == "Countries") 
+        { 
+            list.Add("Afghanistan");
+            list.Add("Akrotiri");
+            list.Add("Albania");
+            list.Add("Algeria");
+            list.Add("American Samoa");
+            list.Add("Andorra");
+            list.Add("Angola");
+            list.Add("Anguilla");
+            list.Add("Antarctica");
+            list.Add("Antigua and Barbuda");
+        } 
+
+        return list; 
     }
 {% endhighlight %}
 {% endtabs %}

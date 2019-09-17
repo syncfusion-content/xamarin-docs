@@ -39,7 +39,7 @@ calendar.ViewMode = ViewMode.MonthView;
 
 ## Trailing and leading days
 
-The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowLeadingAndTrailingDays.html) property. The following code demonstrates how to hide the leading and trailing dates in calendar.
+The `SfCalendar` allows you show/hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowLeadingAndTrailingDays.html) property. The following code demonstrates how to hide the leading and trailing dates in calendar.
 
 {% tabs %}
 
@@ -88,7 +88,7 @@ calendar.EnableDatesInPast = False;
 {% endtabs %}
 
 N>
-* The EnableDatesInPast is not applicable for UWP.
+* The `EnableDatesInPast` is not applicable for UWP.
 
 
 ## Month view customization
@@ -116,6 +116,7 @@ You can customize the calendar month view by using [MonthViewSettings](https://h
 				DayHeaderFormat="EEEEE"
 				DayFontSize="12"
 				DayHeaderFontSize="14"
+				AgendaSelectedDateColor="Blue"
 				TodaySelectionBackgroundColor="Green"/>
    </syncfusion:SfCalendar.MonthViewSettings>
 </syncfusion:SfCalendar>  
@@ -139,6 +140,7 @@ monthViewSettings.DayHeaderFontSize = 20;
 monthViewSettings.SelectionRadius = 15;
 monthViewSettings.TodaySelectionTextColor= Color.Black;
 monthViewSettings.TodaySelectionBackgroundColor= Color.Green;
+monthViewSettings.AgendaSelectedDateColor = Color.Blue;
 
 calendar.MonthViewSettings = monthViewSettings;
 this.Content = calendar;

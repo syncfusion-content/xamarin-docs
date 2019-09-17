@@ -38,7 +38,7 @@ this.Content = calendar;
 
 ## Blackout Dates
 
-In `SfCalendar`, [BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html) refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes and Strike through, by using the [BlackoutDatesViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDatesViewMode.html)  property.
+In `SfCalendar`, [BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html) refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes and Strike through, by using the [BlackoutDatesViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDatesViewMode.html)  property. By default, the value of this property is set to Strikethrough
 
 The BlackoutDays can be achieved in two ways.
 

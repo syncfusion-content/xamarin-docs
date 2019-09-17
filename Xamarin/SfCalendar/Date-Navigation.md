@@ -66,6 +66,5 @@ You can navigate the calendar `MonthView`, `YearView`, `DecadeView` and `Century
 
 SfCalendar calendar = new SfCalendar();
 Calendar.NavigationDirection = NavigationDirection.Vertical;
-This.Content = calendar;
 
 {% endhighlight %}

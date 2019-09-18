@@ -226,6 +226,8 @@ The [`CornerRadius`] property of [`SfEffectsView`] is used to customize the corn
 
 {% endtabs %}
 
+![EffectsView CornerRadius customization](Customization_images/CornerRadius.png)
+
 ## InitialRippleFactor
 
 The [`InitialRippleFactor`] property of [`SfEffectsView`] is used to customize the initial radius of ripple.
@@ -343,6 +345,8 @@ The [`InitialRippleFactor`] property of [`SfEffectsView`] is used to customize t
 
 {% endtabs %}
 
+![InitialRippleFactor customization](Customization_images/InitialRippleFactor.gif)
+
 ## ScaleFactor
 
 The [`ScaleFactor`] property of [`SfEffectsView`] is used to customize the scale down factor.
@@ -377,6 +381,8 @@ The [`ScaleFactor`] property of [`SfEffectsView`] is used to customize the scale
 
 {% endtabs %}
 
+![ScaleFactor customization](Customization_images/ScaleFactor.gif)
+
 ## HighlightColor
 
 The [`HighlightColor`] property of [`SfEffectsView`] is used to customize the color of highlight effect.
@@ -385,9 +391,35 @@ The [`HighlightColor`] property of [`SfEffectsView`] is used to customize the co
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView TouchDownEffects="Highlight" HighlightColor="#2196F3">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
-            </sfEffectsView:SfEffectsView>
+            <sfEffectsView:SfEffectsView TouchDownEffects="Highlight" HighlightColor="#2196F3">                                                  
+                   <Grid BackgroundColor="White">
+                       
+                       <Grid.ColumnDefinitions>
+                           <ColumnDefinition Width="3*"/>
+                           <ColumnDefinition Width="7*"/>
+                       </Grid.ColumnDefinitions>
+   
+                       <Grid.RowDefinitions>
+                           <RowDefinition />
+                           <RowDefinition />
+                           <RowDefinition />
+                           <RowDefinition />
+                       </Grid.RowDefinitions>
+   
+                       <Image Source="Person.png" Margin="7" 
+                              Grid.RowSpan="4"/>
+                       <Label Text="Laura Steffi" Grid.Column="1"
+                              FontAttributes="Bold"  Grid.Row="0"  VerticalTextAlignment="Center"
+                              Margin="15,0,0,0" Font="17"/>
+                       <Label Text="Data Science Analyst" Grid.Column="1" Grid.Row="1" 
+                              VerticalTextAlignment="Center" FontAttributes="Bold"
+                              Margin="15,0,0,0" Font="14"/>
+                       <Label Text="laurasteffi@gmail.com" Grid.Column="1" Grid.Row="2"
+                              VerticalTextAlignment="Center" Margin="15,0,0,0" Font="14"/>
+                       <Label Text="011-253-321" Grid.Column="1" Grid.Row="3" 
+                              VerticalTextAlignment="Center" Margin="15,0,0,0" Font="14"/>
+                   </Grid>
+           </sfEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -397,16 +429,74 @@ The [`HighlightColor`] property of [`SfEffectsView`] is used to customize the co
             {
                 HighlightColor = Color.FromHex("#2196F3"),
                 TouchDownEffects = SfEffects.Highlight,
-                Content = new Image()
-                {
-                    Source = "Biscuits.png",
-                    Aspect = Aspect.Fill
-                }
             };
+
+            var grid = new Grid
+            {
+                BackgroundColor = Color.White,
+                ColumnDefinitions = new ColumnDefinitionCollection()
+                {
+                    new ColumnDefinition{ Width = new GridLength(3, GridUnitType.Star) },
+                    new ColumnDefinition{ Width = new GridLength(7, GridUnitType.Star) }
+                },
+            };
+
+            var image = new Image
+            {
+                Source = "Person.png",
+                Margin = 7
+            };
+
+            var name = new Label
+            {
+                Text = "Laura Steffi",
+                FontAttributes = FontAttributes.Bold,
+                VerticalTextAlignment = TextAlignment.Center,
+                Margin = new Thickness(15,0,0,0),
+                FontSize = 17
+            };
+
+            var designation = new Label
+            {
+                Text = "Data Science Analyst",
+                FontAttributes = FontAttributes.Bold,
+                VerticalTextAlignment = TextAlignment.Center,
+                Margin = new Thickness(15, 0, 0, 0),
+                FontSize = 14
+            };
+
+            var email = new Label
+            {
+                Text = "laurasteffi@gmail.com",
+                FontAttributes = FontAttributes.Bold,
+                VerticalTextAlignment = TextAlignment.Center,
+                Margin = new Thickness(15, 0, 0, 0),
+                FontSize = 14
+            };
+
+            var phone = new Label
+            {
+                Text = "011-253-321",
+                FontAttributes = FontAttributes.Bold,
+                VerticalTextAlignment = TextAlignment.Center,
+                Margin = new Thickness(15, 0, 0, 0),
+                FontSize = 14
+            };
+
+            grid.Children.Add(image, 0, 0);
+            Grid.SetRowSpan(image, 4);
+            grid.Children.Add(name, 1, 0);
+            grid.Children.Add(designation, 1, 1);
+            grid.Children.Add(email, 1, 2);
+            grid.Children.Add(phone, 1, 3);
+
+            effectsView.Content = grid;
             this.Content = effectsView;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Highlight Color customization](Customization_images/HighlightColor.png)
 
 ## RippleColor
 
@@ -437,6 +527,8 @@ The [`RippleColor`] property of [`SfEffectsView`] is used to customize the color
 {% endhighlight %}
 
 {% endtabs %}
+
+![Ripple Color customization](Customization_images/RippleColor.png)
 
 ## SelectionColor
 
@@ -469,6 +561,8 @@ The [`SelectionColor`] property of [`SfEffectsView`] is used to customize the co
 
 {% endtabs %}
 
+![Selection Color customization](Customization_images/SelectionColor.png)
+
 ## Angle
 
 The [`Angle`] property of [`SfEffectsView`] is used to customize the rotation angle.
@@ -478,7 +572,7 @@ The [`Angle`] property of [`SfEffectsView`] is used to customize the rotation an
 {% highlight xaml %} 
 
             <sfEffectsView:SfEffectsView Angle="180" TouchDownEffects="Rotation">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
+                <Image Source="Arrow.png" HeightRequest="70" WidthRequest="70"/>
             </sfEffectsView:SfEffectsView>
 
 {% endhighlight %}
@@ -491,7 +585,7 @@ The [`Angle`] property of [`SfEffectsView`] is used to customize the rotation an
                 TouchDownEffects = SfEffects.Rotation,
                 Content = new Image()
                 {
-                    Source = "Biscuits.png",
+                    Source = "Arrow.png",
                     Aspect = Aspect.Fill
                 }
             };
@@ -499,6 +593,8 @@ The [`Angle`] property of [`SfEffectsView`] is used to customize the rotation an
 {% endhighlight %}
 
 {% endtabs %}
+
+![Rotation Angle customization](Customization_images/Angle.gif)
 
 ## TouchDownEffects
 

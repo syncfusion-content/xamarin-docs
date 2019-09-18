@@ -3,12 +3,11 @@ layout: post
 title: Xamarin-Mac Overview | xamarin | Syncfusion
 description: The Syncfusion Xamarin Extensions provide quick access to create or configure the Syncfusion Xamarin projects
 platform: xamarin
-control: Syncfusion Extensions
+control: Syncfusion Mac Extensions
 documentation: ug
 ---
 
-
-### Installation
+#### Installation
 
 The following procedure illustrates how to install Syncfusion Xamarin Extension in Visual Studio for Mac. 
 
@@ -16,7 +15,7 @@ The following procedure illustrates how to install Syncfusion Xamarin Extension 
 
 **Location:**
 
- Eg: {Documents}\Syncfusion\{version}\{platform}\Xamarin\Extension\Syncfusion Xamarin VS Mac Extensions.mpack
+Eg: {Documents}\Syncfusion\{version}\{platform}\Xamarin\Extension\Syncfusion Xamarin VS Mac Extensions.mpack
 
 ![Mac Extensions File Location](ProjectTemplate_images/Mac_Extensions_File_Location.PNG)
 

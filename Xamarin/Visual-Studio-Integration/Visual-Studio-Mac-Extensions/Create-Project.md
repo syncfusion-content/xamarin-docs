@@ -15,7 +15,7 @@ The following procedure illustrates how to install Syncfusion Xamarin Extension 
 
 **Location:**
 
-    Eg: {Documents}\Syncfusion\{version}\{platform}\Xamarin\Extension\Syncfusion Xamarin VS Mac Extensions.mpack
+ Eg: {Documents}\Syncfusion\{version}\{platform}\Xamarin\Extension\Syncfusion Xamarin VS Mac Extensions.mpack
 
 ![Mac Extensions File Location](ProjectTemplate_Images/Mac_Extensions_File_Location.PNG)
 

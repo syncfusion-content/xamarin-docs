@@ -176,7 +176,7 @@ schedule.TimeIntervalHeight = 180;
 ![Time interval height in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-interval-height.png)
 
 ### Adjust the Time Interval height based on the StartTime and EndTime
-Schedule time interval height can be adjust based on screen height by changing the TimeIntervalHeight property value to -1. It will auto fit to the screen height and width.
+Schedule time interval height can be adjust based on screen height by changing the `TimeIntervalHeight` property value to -1. It will auto fit to the screen height and width.
 
 ## Nonworking days
 

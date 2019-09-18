@@ -185,7 +185,7 @@ schedule.TimeIntervalHeight = 180;
 ![Schedule customize time slot height day view](daymodule_images/dayview_height.png)
 
 ### Adjust the Time Interval height based on the StartTime and EndTime
-Schedule time interval height can be adjust based on screen height by changing the TimeIntervalHeight property value to -1. It will auto fit to the screen height and width.
+Schedule time interval height can be adjust based on screen height by changing the `TimeIntervalHeight` property value to -1. It will auto fit to the screen height and width.
 
 ## Change Working hours
 

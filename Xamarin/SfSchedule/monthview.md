@@ -83,8 +83,8 @@ schedule.MonthViewSettings = monthViewSettings;
 [AppointmentDisplayCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentDisplayCount.html) /[AppointmentIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentIndicatorCount.html) used to define the maximum number of the appointment to be displayed in a month cell in month view. If `AppointmentDisplayCount` value is 1 and the month cell have more than 1 appointments, single appointment will be displayed and remaining appointments in month cell will be displayed as more appointments. By clicking more option schedule navigate to day view by default.
 
 >**NOTE**
-* `AppointmentIndicatorCount` support applicable for XForms Android, iOS platform.
-* `AppointmentDisplayCount` support applicable for XForms UWP (Desktop) platform.
+* `AppointmentIndicatorCount` support applicable for XForms Android, iOS platforms.
+* `AppointmentDisplayCount` support applicable for XForms UWP (Desktop)and XForms WPF (Desktop) platforms.
 
 ![Month appointment diplay count in schedule xamarin forms](monthview_images/appointmentdisplay_count.png)
 

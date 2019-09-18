@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-#### Installation
+### Installation
 
 The following procedure illustrates how to install Syncfusion Xamarin Extension in Visual Studio for Mac. 
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Syncfusion.Xamarin.Forms Shimmer types
 description: Different Shimmer types available in Essential Xamarin.forms Shimmer.
@@ -161,3 +161,7 @@ You can customize the shimmer using your own view using the [`CustomView`] prope
 {% endhighlight %}
 
 {% endtabs %}
+
+![Shimmer Custom View for Xamarin.Forms](Shimmer-Types_images/CustomView.gif)
+
+N> Currently, [`CustomView`] will support only in Android.

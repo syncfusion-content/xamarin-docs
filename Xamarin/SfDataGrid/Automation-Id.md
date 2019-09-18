@@ -13,13 +13,13 @@ SfDataGrid and SfDataPager supports built in [AutomationId](https://docs.microso
 
 ## DataGrid
 
-Refer the below image to know the AutomationId values of the grid cells, rows and other inner elements of the SfDataGrid.
+Refer the below image to know the `AutomationId` values of the grid cells, rows and other inner elements of the SfDataGrid.
 
 ![Automation Id format for Row and Cell element](SfDataGrid_images/AutomationId_DataGrid.png)
 
 ![Automation Id format for LoadMoreView](SfDataGrid_images/AutomationId_LoadMoreItems.png)
 
-Refer the below code snippet to set the AutomationId to the datagrid.
+Refer the below code snippet to set the `AutomationId` to the datagrid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -81,11 +81,13 @@ sfGrid.CaptionSummaryRow = summaryRow;
 {% tabs %}
 {% highlight c# %}
 
+Refer the below code snippet to access the inner elements of the datagrid from the automation script.
+
 [Test]
 [Description("SfDataGrid Automation Id")]
 public void SfDataGrid_AutomationId()
 {
-   // To enter in to edit mode at fourth row and second column cell
+   // To enter edit mode for the grid cell at fourth row and second column.
    App.DoubleTap("SyncfusionGrid R4C1");
 
    // To tap group expand and collapse icon
@@ -103,11 +105,11 @@ public void SfDataGrid_AutomationId()
 
 ## DataPager
 
-Refer the below image to know the AutomationId values of the pager buttons in SfDataPager.
+Refer the below image to know the `AutomationId` values of the pager buttons in SfDataPager.
 
 ![Automation Id format for Pager](SfDataGrid_images/AutomationId_Pager.png)
 
-Refer the below code snippet to set the AutomationId to the dataPager.
+Refer the below code snippet to set the `AutomationId` to the dataPager.
 
 {% tabs %}
 {% highlight xaml %}
@@ -118,7 +120,7 @@ Refer the below code snippet to set the AutomationId to the dataPager.
         <RowDefinition Height="*" />
       </Grid.RowDefinitions>
       <sfPager:SfDataPager x:Name ="dataPager"
-                           Grid.Row="0"           
+                           Grid.Row="1"           
                            PageSize="10" 
                            HeightRequest ="50"
                            NumericButtonCount="20"
@@ -127,7 +129,7 @@ Refer the below code snippet to set the AutomationId to the dataPager.
       </sfPager:SfDataPager>
        
       <sfgrid:SfDataGrid x:Name="dataGrid"
-                         Grid.Row="1"
+                         Grid.Row="0"
                          ItemsSource="{Binding PagedSource, Source={x:Reference dataPager}}" >                   
       </sfgrid:SfDataGrid>
 </Grid> 
@@ -151,8 +153,9 @@ gridLayout.RowDefinitions = new RowDefinitionCollection
           new RowDefinition { Height = 50 },
           new RowDefinition {},    
         };
-gridLayout.Children.Add(sfPager, 0, 0);
-gridLayout.Children.Add(sfGrid, 0, 1);
+gridLayout.Children.Add(sfGrid, 0, 0);
+gridLayout.Children.Add(sfPager, 0, 1);
+
 this.Content = gridLayout;
 
 {% endhighlight %}
@@ -160,6 +163,8 @@ this.Content = gridLayout;
 
 {% tabs %}
 {% highlight c# %}
+
+Refer the below code snippet to access the inner elements of the data pager from the automation script.
 
 [Test]
 [Description("SfDataPager Automation Id")]

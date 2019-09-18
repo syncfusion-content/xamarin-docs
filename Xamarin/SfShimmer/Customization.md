@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Customization of Syncfusion Shimmer
 description: How to customize shimmer.
@@ -10,41 +10,6 @@ documentation: ug
 # Customization of Shimmer
 
 The Shimmer control supports options to customize the wave color, shimmer color, wave direction, wave animation duration, and more. This section explains how to customize the shimmer control.
-
-## IsLoaded
-
-By enabling the [`IsLoaded`] property of [`SfShimmer`], shimmer content is loaded.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-        <shimmer:SfShimmer x:Name="shimmer" VerticalOptions="FillAndExpand" IsLoaded ="true">
-                <shimmer:SfShimmer.Content>
-                     <StackLayout>
-                        <Label Text="Content is loaded!"/>
-                      </StackLayout>
-                </shimmer:SfShimmer.Content>
-        </shimmer:SfShimmer>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-            shimmer = new SfShimmer()
-            {
-                IsLoaded = true,
-                VerticalOptions = LayoutOptions.FillAndExpand,
-                Content = new Label
-                {
-                    Text = "Content is loaded!"
-                }
-            };
-            this.Content = shimmer;
-
-{% endhighlight %}
-
-{% endtabs %}
 
 ## WaveDirection
 
@@ -169,7 +134,7 @@ The [`WaveWidth`] property of [`SfShimmer`] is used to customize the width of wa
 
 {% highlight xaml %} 
 
-        <shimmer:SfShimmer x:Name="shimmer" VerticalOptions="FillAndExpand" WaveColor="#B8D4F2" WaveWidth ="150">
+        <shimmer:SfShimmer x:Name="shimmer" VerticalOptions="FillAndExpand" WaveColor="#B8D4F2" WaveWidth ="100">
                 <shimmer:SfShimmer.Content>
                      <StackLayout>
                         <Label Text="Content is loaded!"/>
@@ -183,7 +148,7 @@ The [`WaveWidth`] property of [`SfShimmer`] is used to customize the width of wa
 
             shimmer = new SfShimmer()
             {
-                WaveWidth = 150,
+                WaveWidth = 100,
                 WaveColor = Color.FromHex("#B8D4F2"),
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 Content = new Label
@@ -196,6 +161,8 @@ The [`WaveWidth`] property of [`SfShimmer`] is used to customize the width of wa
 {% endhighlight %}
 
 {% endtabs %}
+
+![Wave Width customization](Customization_images/WaveWidth.png)
 
 ## AnimationDuration
 

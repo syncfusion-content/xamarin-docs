@@ -44,7 +44,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 ## Highlight
 
-[`SfEffects.Highlight`] will provide the highligt effect by changing the BackgroundColor.
+[`SfEffects.Highlight`] will provide the highlight effect by changing the BackgroundColor.
 
 {% tabs %} 
 

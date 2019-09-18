@@ -9,7 +9,7 @@ documentation: ug
 
 # Interaction in EffectsView
 
-You can set the effects on different interactions. This section explains how to set effects on different interactions available in effectsview.
+You can set the effects on different interactions. This section explains how to set effects on different interactions available in effects view.
 
 ## TouchDownEffects
 

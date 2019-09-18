@@ -13,7 +13,7 @@ You add or remove effect programmatically by using the [`ApplyEffects`] or [`Res
 
 ## ApplyEffects
 
-The [`ApplyEffects`] method is used to apply the provided effect with or without repeatation.
+The [`ApplyEffects`] method is used to apply the provided effect with or without repetition.
 
 {% highlight xaml %} 
 

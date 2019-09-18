@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization of EffectsView
 
-The Effects View control provides support to customize corner radius, animation duration, color and more. This section explains how to customize the effectsview control.
+The Effects View control provides support to customize corner radius, animation duration, color and more. This section explains how to customize the effects view control.
 
 ## RippleAnimationDuration
 

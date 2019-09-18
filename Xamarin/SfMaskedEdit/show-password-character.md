@@ -10,7 +10,7 @@ keywords: mask, SfMaskedEdit, maskededit
 
 # Show password character
 
-The SFMaskedEdit control supports to work as a password text box when setting a character to the `PasswordChar` property.
+The SfMaskedEdit control supports to work as a password text box when setting a character to the `PasswordChar` property.
 
 {% tabs %}
 {% highlight xaml %}

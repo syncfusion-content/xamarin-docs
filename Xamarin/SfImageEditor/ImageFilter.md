@@ -9,7 +9,7 @@ documentation : ug
 
 # Image Filter
 
-Using the image editor control, you can add effects such as Hue, Saturation, Brightness, Contrast, Blur, and Sharpen to the image. These effects can be applied from toolbar or using the ApplyImageEffect method. The ApplyImageEffect method contains two arguments: `ImageEffect` and `EffectValues`. The ImageEffect is an Enum, which contains the following effects:
+Using the image editor control, you can add effects such as Hue, Saturation, Brightness, Contrast, Blur, and Sharpen to the image. These effects can be applied from toolbar or using the ApplyImageEffect method. The ApplyImageEffect method contains two arguments: `ImageEffect` and `EffectValue`. The ImageEffect is an Enum, which contains the following effects:
 
 * Hue
 * Saturation
@@ -19,7 +19,7 @@ Using the image editor control, you can add effects such as Hue, Saturation, Bri
 * Sharpen 
 * None
 
-The EffectValues are the corresponding ImageEffect values, which varies for each effect, and they are explained as follows.
+The EffectValue are the corresponding ImageEffect values, which varies for each effect, and they are explained as follows.
 
 ## Hue
 

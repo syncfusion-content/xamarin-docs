@@ -77,11 +77,10 @@ sfGrid.CaptionSummaryRow = summaryRow;
 {% endhighlight %}
 {% endtabs %}
 
+Refer the below code snippet to access the inner elements of the datagrid from the automation script.
 
 {% tabs %}
 {% highlight c# %}
-
-Refer the below code snippet to access the inner elements of the datagrid from the automation script.
 
 [Test]
 [Description("SfDataGrid Automation Id")]
@@ -161,10 +160,10 @@ this.Content = gridLayout;
 {% endhighlight %}
 {% endtabs %}
 
+Refer the below code snippet to access the inner elements of the data pager from the automation script.
+
 {% tabs %}
 {% highlight c# %}
-
-Refer the below code snippet to access the inner elements of the data pager from the automation script.
 
 [Test]
 [Description("SfDataPager Automation Id")]

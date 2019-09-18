@@ -841,8 +841,6 @@ private void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineApp
 N>
 * The `MonthInlineAppointmentTapped` is also applicable for AgendaView.
 
-
-
 ## InlineView Appearance  
 You can customize the inline view with two ways,
 * Using style

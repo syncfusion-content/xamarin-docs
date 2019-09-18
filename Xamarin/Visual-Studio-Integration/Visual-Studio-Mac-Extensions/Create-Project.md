@@ -23,19 +23,19 @@ The following procedure illustrates how to install Syncfusion Xamarin Extension 
 
 3. Click the Visual Studio Community and select the Extensions…
 
-![Extension Manager](ProjectTemplate_images/ExtensionManager.PNG)
+![Extension Manager](ProjectTemplate_images/ExtensionManager.png)
 
 4. The Extension Manager window will open. Select the Install from file… 
 
-![Installation](ProjectTemplate_images/Installation.PNG)
+![Installation](ProjectTemplate_images/Installation.png)
 
 5. The Install Extension Package dialog will open. Navigate to Syncfusion Xamarin Mac Extensions file(.mpack) location which explained in above and click open to install.
 
-![Extensions File](ProjectTemplate_images/ExtensionsFile.PNG)
+![Extensions File](ProjectTemplate_images/ExtensionsFile.png)
 
 6. Once the extension installed, the Syncfusion Xamarin Extension will listed in the IDE extension section
 
-![Installation Details](ProjectTemplate_images/InstallationDetails.PNG)
+![Installation Details](ProjectTemplate_images/InstallationDetails.png)
 
 #### Create Project
 
@@ -71,24 +71,24 @@ Choose File > New > Project and navigate to Syncfusion > App > Syncfusion Xamari
 
 Choose the Xamarin application needs to create with the Syncfusion controls.
 
-![Choose Controls](ProjectTemplate_images/ChooseControls.PNG)
+![Choose Controls](ProjectTemplate_images/ChooseControls.png)
 
 3) Name the project and click the Create.
 
-![New Project](ProjectTemplate_images/NewProject.PNG)
+![New Project](ProjectTemplate_images/NewProject.png)
 
 4) Required Syncfusion NuGet and configuration have been added to the project based on the Syncfusion component chosen.
 
 **Net Standard:**
 
-![Net Standard References](ProjectTemplate_images/NetStandardReferences.PNG)
+![Net Standard References](ProjectTemplate_images/NetStandardReferences.png)
 
 **Android:**
 
-![Android References](ProjectTemplate_images/AndroidReferences.PNG)
+![Android References](ProjectTemplate_images/AndroidReferences.png)
 
 **iOS:**
 
-![iOS References](ProjectTemplate_images/iOSReferences.PNG)
+![iOS References](ProjectTemplate_images/iOSReferences.png)
 
 Now, you can follow the user guide documentation to use the Syncfusion Xamarin components.

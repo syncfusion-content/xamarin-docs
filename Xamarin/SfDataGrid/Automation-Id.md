@@ -115,8 +115,8 @@ Refer the below code snippet to set the `AutomationId` to the dataPager.
 
 <Grid> 
       <Grid.RowDefinitions>
-        <RowDefinition Height="Auto" />
         <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
       </Grid.RowDefinitions>
       <sfPager:SfDataPager x:Name ="dataPager"
                            Grid.Row="1"           
@@ -149,8 +149,8 @@ Grid gridLayout = new Grid();
 gridLayout.HorizontalOptions = LayoutOptions.FillAndExpand;
 gridLayout.RowDefinitions = new RowDefinitionCollection
         {
-          new RowDefinition { Height = 50 },
-          new RowDefinition {},    
+          new RowDefinition { },
+          new RowDefinition { Height = 50 },    
         };
 gridLayout.Children.Add(sfGrid, 0, 0);
 gridLayout.Children.Add(sfPager, 0, 1);

@@ -11,6 +11,8 @@ documentation: UG
 
 SfPopupLayout supports built in [AutomationId](https://docs.microsoft.com/en-gb/dotnet/api/xamarin.forms.element.automationid?view=xamarin-forms#Xamarin_Forms_Element_AutomationId) for all its inner elements. These `AutomationId` values allows the automation framework to find and interact with the inner elements when the test scripts are run. A unique `AutomationId` is maintained for each inner element by prefixing the control's `AutomationId` with the inner element's Id.
 
+## Automation Id for popup view inner elements
+
 Refer the below image to know the `AutomationId` values of the inner elements of the PopupView.
 
 ![Automation Id format for Popuplayout inner element](PopupLayout_images/AutomationId_Popup.png)
@@ -91,11 +93,7 @@ public void SfPopupLayout_AutomationId()
 
 ## Automation Id for template content 
 
-To access the template elements from the script, set `AutomationId` directly to the template view's from the sample level. 
-
-Refer the below image to know the `AutomationId` values of the template content of the PopupView.
-
-![Automation Id format for template content of popupView](PopupLayout_images/AutomationId_PopupContent.png)
+To access the template elements from the script, set `AutomationId` directly to the template view from the sample level.
 
 Following code snippet explains setting `AutomationId` for the template content.
 

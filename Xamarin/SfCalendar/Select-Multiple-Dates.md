@@ -123,5 +123,3 @@ You can clear the calendar selected dates pragmatically by using `ClearSelection
 calendar.ClearSelection();
 	
 {% endhighlight %}
-
-

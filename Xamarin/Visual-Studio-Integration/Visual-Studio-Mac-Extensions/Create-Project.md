@@ -67,6 +67,7 @@ Choose File > New > Project and navigate to Syncfusion > App > Syncfusion Xamari
 ### iOS:
 1. Target Device: Select the device of Xamarin.iOS project either Unified, iPhone/iPod, or iPad
 2. Target Version: Choose the version of Xamarin.iOS Project.      
+
 ### Choose controls:
 
 Choose the Xamarin application needs to create with the Syncfusion controls.

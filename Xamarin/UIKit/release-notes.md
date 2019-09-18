@@ -94,7 +94,7 @@ Transaction
 Bookmark
 </td>
 <td>
-1. Wishlist Page<br/>
+1. Wish list Page<br/>
 </td>
 </tr>
 <tr>

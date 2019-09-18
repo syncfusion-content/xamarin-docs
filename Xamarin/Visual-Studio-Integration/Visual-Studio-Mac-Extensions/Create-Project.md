@@ -33,7 +33,7 @@ The following procedure illustrates how to install Syncfusion Xamarin Extension 
 
     ![Extensions File](ProjectTemplate_Images/ExtensionsFile.png)
 
-6. Once the extension installed, the Syncfusion Xamarin Extension will listed in the IDE extension section
+6. Once the extension installed, the Syncfusion Xamarin Extension will listed in the IDE extension section.
 
     ![Installation Details](ProjectTemplate_Images/InstallationDetails.png)
 

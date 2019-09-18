@@ -185,7 +185,7 @@ schedule.TimeIntervalHeight = 180;
 
 ![Schedule customizing time interval height work week view](daymodule_images/workweekview_height.png)
 
-### Adjust the Time Interval height based on the StartTime and EndTime
+### Full screen scheduler
 Schedule time interval height can be adjust based on screen height by changing the `TimeIntervalHeight` property value to -1. It will auto fit to the screen height and width.
 
 ## Change Working hours

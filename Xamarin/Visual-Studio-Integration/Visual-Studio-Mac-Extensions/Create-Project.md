@@ -11,13 +11,13 @@ documentation: ug
 
 The following procedure illustrates how to install Syncfusion Xamarin Extension in Visual Studio for Mac. 
 
-1. Follow this guideline to install the Essential Studio for Xamarin Mac build if not installed, then you will get the Visual Studio for Mac Extensions in installed location.
+Follow this guideline to install the Essential Studio for Xamarin Mac build if not installed, then you will get the Visual Studio for Mac Extensions in installed location.
 
 **Location:**
 
  Eg: {Documents}\Syncfusion\{version}\{platform}\Xamarin\Extension\Syncfusion Xamarin VS Mac Extensions.mpack
 
-    ![Mac Extensions File Location](ProjectTemplate_Images/Mac_Extensions_File_Location.PNG)
+![Mac Extensions File Location](ProjectTemplate_Images/Mac_Extensions_File_Location.PNG)
 
 2. Open the Visual Studio 2019 for Mac.
 
@@ -49,7 +49,7 @@ Use the following steps to create the Syncfusion Xamarin Application through the
 Option 1:
 Click Syncfusion Menu and choose Essential Studio for Xamarin > Create New Syncfusion Project.
 
-![Create New Project from Syncfusion Menu](ProjectTemplate_Imagess/Syncfusion_Menu.PNG)
+![Create New Project from Syncfusion Menu](ProjectTemplate_Images/Syncfusion_Menu.PNG)
 
 Option 2:
 Choose File > New > Project and navigate to Syncfusion > App > Syncfusion Xamarin Project Template.

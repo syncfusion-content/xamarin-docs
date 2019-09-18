@@ -35,15 +35,15 @@ The selected dates can be retrieved through `OnSelectionChanged` event which is 
 	
 SfCalendar calendar = new SfCalendar();	
 calendar.SelectionMode=SelectionMode.MultiSelection;
-List<DateTime> selected_dates = new List<DateTime>();
-selected_dates.Add(new DateTime(2019, 3, 06));
-selected_dates.Add(new DateTime(2019, 3, 11));
-selected_dates.Add(new DateTime(2019, 3, 15));
-selected_dates.Add(new DateTime(2019, 3, 19));
-selected_dates.Add(new DateTime(2019, 3, 21));
-selected_dates.Add(new DateTime(2019, 3, 25));
-selected_dates.Add(new DateTime(2019, 3, 27));
-calendar.SelectedDates = selected_dates;
+List<DateTime> selectedDates = new List<DateTime>();
+selectedDates.Add(new DateTime(2019, 3, 06));
+selectedDates.Add(new DateTime(2019, 3, 11));
+selectedDates.Add(new DateTime(2019, 3, 15));
+selectedDates.Add(new DateTime(2019, 3, 19));
+selectedDates.Add(new DateTime(2019, 3, 21));
+selectedDates.Add(new DateTime(2019, 3, 25));
+selectedDates.Add(new DateTime(2019, 3, 27));
+calendar.SelectedDates = selectedDates;
 this.Content = calendar;
 	
 {% endhighlight %}

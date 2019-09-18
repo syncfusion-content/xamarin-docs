@@ -109,125 +109,6 @@ The [`RotationAnimationDuration`] property of [`SfEffectsView`] is used to custo
 
 {% endtabs %}
 
-## CornerRadius
-
-The [`CornerRadius`] property of [`SfEffectsView`] is used to customize the corner radius of [`SfEffectsView`].
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-           <sfEffectsView:SfEffectsView CornerRadius="0,25">                                                    
-                   <Grid BackgroundColor="#2196F3">
-                       
-                       <Grid.ColumnDefinitions>
-                           <ColumnDefinition Width="3*"/>
-                           <ColumnDefinition Width="7*"/>
-                       </Grid.ColumnDefinitions>
-   
-                       <Grid.RowDefinitions>
-                           <RowDefinition />
-                           <RowDefinition />
-                           <RowDefinition />
-                           <RowDefinition />
-                       </Grid.RowDefinitions>
-   
-                       <Image Source="Person.png" Margin="7" 
-                              Grid.RowSpan="4"/>
-                       <Label Text="Laura Steffi" Grid.Column="1" TextColor="White" 
-                              FontAttributes="Bold"  Grid.Row="0"  VerticalTextAlignment="Center"
-                              Margin="15,0,0,0" Font="17"/>
-                       <Label Text="Data Science Analyst" Grid.Column="1" Grid.Row="1" TextColor="WhiteSmoke" 
-                              VerticalTextAlignment="Center" FontAttributes="Bold"
-                              Margin="15,0,0,0" Font="14"/>
-                       <Label Text="laurasteffi@gmail.com" Grid.Column="1" Grid.Row="2" TextColor="WhiteSmoke" 
-                              VerticalTextAlignment="Center" Margin="15,0,0,0" Font="14"/>
-                       <Label Text="011-253-321" Grid.Column="1" Grid.Row="3" TextColor="WhiteSmoke" 
-                              VerticalTextAlignment="Center" Margin="15,0,0,0" Font="14"/>
-                   </Grid>
-           </sfEffectsView:SfEffectsView>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-            var effectsView = new SfEffectsView
-            {
-                CornerRadius = new Thickness(0, 25)
-            };
-
-            var grid = new Grid
-            {
-                BackgroundColor = Color.FromHex("#2196F3"),
-                ColumnDefinitions = new ColumnDefinitionCollection()
-                {
-                    new ColumnDefinition{ Width = new GridLength(3, GridUnitType.Star) },
-                    new ColumnDefinition{ Width = new GridLength(7, GridUnitType.Star) }
-                },
-            };
-
-            var image = new Image
-            {
-                Source = "Person.png",
-                Margin = 7
-            };
-
-            var name = new Label
-            {
-                Text = "Laura Steffi",
-                TextColor = Color.White,
-                FontAttributes = FontAttributes.Bold,
-                VerticalTextAlignment = TextAlignment.Center,
-                Margin = new Thickness(15,0,0,0),
-                FontSize = 17
-            };
-
-            var designation = new Label
-            {
-                Text = "Data Science Analyst",
-                TextColor = Color.WhiteSmoke,
-                FontAttributes = FontAttributes.Bold,
-                VerticalTextAlignment = TextAlignment.Center,
-                Margin = new Thickness(15, 0, 0, 0),
-                FontSize = 14
-            };
-
-            var email = new Label
-            {
-                Text = "laurasteffi@gmail.com",
-                TextColor = Color.WhiteSmoke,
-                FontAttributes = FontAttributes.Bold,
-                VerticalTextAlignment = TextAlignment.Center,
-                Margin = new Thickness(15, 0, 0, 0),
-                FontSize = 14
-            };
-
-            var phone = new Label
-            {
-                Text = "011-253-321",
-                TextColor = Color.WhiteSmoke,
-                FontAttributes = FontAttributes.Bold,
-                VerticalTextAlignment = TextAlignment.Center,
-                Margin = new Thickness(15, 0, 0, 0),
-                FontSize = 14
-            };
-
-            grid.Children.Add(image, 0, 0);
-            Grid.SetRowSpan(image, 4);
-            grid.Children.Add(name, 1, 0);
-            grid.Children.Add(designation, 1, 1);
-            grid.Children.Add(email, 1, 2);
-            grid.Children.Add(phone, 1, 3);
-
-            effectsView.Content = grid;
-            this.Content = effectsView;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![EffectsView CornerRadius customization](Customization_images/CornerRadius.png)
-
 ## InitialRippleFactor
 
 The [`InitialRippleFactor`] property of [`SfEffectsView`] is used to customize the initial radius of ripple.
@@ -563,6 +444,125 @@ The [`SelectionColor`] property of [`SfEffectsView`] is used to customize the co
 
 ![Selection Color customization](Customization_images/SelectionColor.png)
 
+## CornerRadius
+
+The [`CornerRadius`] property of [`SfEffectsView`] is used to customize the corner radius of [`SfEffectsView`].
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+           <sfEffectsView:SfEffectsView CornerRadius="0,25">                                                    
+                   <Grid BackgroundColor="#2196F3">
+                       
+                       <Grid.ColumnDefinitions>
+                           <ColumnDefinition Width="3*"/>
+                           <ColumnDefinition Width="7*"/>
+                       </Grid.ColumnDefinitions>
+   
+                       <Grid.RowDefinitions>
+                           <RowDefinition />
+                           <RowDefinition />
+                           <RowDefinition />
+                           <RowDefinition />
+                       </Grid.RowDefinitions>
+   
+                       <Image Source="Person.png" Margin="7" 
+                              Grid.RowSpan="4"/>
+                       <Label Text="Laura Steffi" Grid.Column="1" TextColor="White" 
+                              FontAttributes="Bold"  Grid.Row="0"  VerticalTextAlignment="Center"
+                              Margin="15,0,0,0" Font="17"/>
+                       <Label Text="Data Science Analyst" Grid.Column="1" Grid.Row="1" TextColor="WhiteSmoke" 
+                              VerticalTextAlignment="Center" FontAttributes="Bold"
+                              Margin="15,0,0,0" Font="14"/>
+                       <Label Text="laurasteffi@gmail.com" Grid.Column="1" Grid.Row="2" TextColor="WhiteSmoke" 
+                              VerticalTextAlignment="Center" Margin="15,0,0,0" Font="14"/>
+                       <Label Text="011-253-321" Grid.Column="1" Grid.Row="3" TextColor="WhiteSmoke" 
+                              VerticalTextAlignment="Center" Margin="15,0,0,0" Font="14"/>
+                   </Grid>
+           </sfEffectsView:SfEffectsView>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            var effectsView = new SfEffectsView
+            {
+                CornerRadius = new Thickness(0, 25)
+            };
+
+            var grid = new Grid
+            {
+                BackgroundColor = Color.FromHex("#2196F3"),
+                ColumnDefinitions = new ColumnDefinitionCollection()
+                {
+                    new ColumnDefinition{ Width = new GridLength(3, GridUnitType.Star) },
+                    new ColumnDefinition{ Width = new GridLength(7, GridUnitType.Star) }
+                },
+            };
+
+            var image = new Image
+            {
+                Source = "Person.png",
+                Margin = 7
+            };
+
+            var name = new Label
+            {
+                Text = "Laura Steffi",
+                TextColor = Color.White,
+                FontAttributes = FontAttributes.Bold,
+                VerticalTextAlignment = TextAlignment.Center,
+                Margin = new Thickness(15,0,0,0),
+                FontSize = 17
+            };
+
+            var designation = new Label
+            {
+                Text = "Data Science Analyst",
+                TextColor = Color.WhiteSmoke,
+                FontAttributes = FontAttributes.Bold,
+                VerticalTextAlignment = TextAlignment.Center,
+                Margin = new Thickness(15, 0, 0, 0),
+                FontSize = 14
+            };
+
+            var email = new Label
+            {
+                Text = "laurasteffi@gmail.com",
+                TextColor = Color.WhiteSmoke,
+                FontAttributes = FontAttributes.Bold,
+                VerticalTextAlignment = TextAlignment.Center,
+                Margin = new Thickness(15, 0, 0, 0),
+                FontSize = 14
+            };
+
+            var phone = new Label
+            {
+                Text = "011-253-321",
+                TextColor = Color.WhiteSmoke,
+                FontAttributes = FontAttributes.Bold,
+                VerticalTextAlignment = TextAlignment.Center,
+                Margin = new Thickness(15, 0, 0, 0),
+                FontSize = 14
+            };
+
+            grid.Children.Add(image, 0, 0);
+            Grid.SetRowSpan(image, 4);
+            grid.Children.Add(name, 1, 0);
+            grid.Children.Add(designation, 1, 1);
+            grid.Children.Add(email, 1, 2);
+            grid.Children.Add(phone, 1, 3);
+
+            effectsView.Content = grid;
+            this.Content = effectsView;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![EffectsView CornerRadius customization](Customization_images/CornerRadius.png)
+
 ## Angle
 
 The [`Angle`] property of [`SfEffectsView`] is used to customize the rotation angle.
@@ -595,96 +595,6 @@ The [`Angle`] property of [`SfEffectsView`] is used to customize the rotation an
 {% endtabs %}
 
 ![Rotation Angle customization](Customization_images/Angle.gif)
-
-## TouchDownEffects
-
-The [`TouchDownEffects`] property of [`SfEffectsView`] is used to customize the effect on touch down.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-            <sfEffectsView:SfEffectsView TouchDownEffects="Ripple">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
-            </sfEffectsView:SfEffectsView>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-            var effectsView = new SfEffectsView
-            {
-                TouchDownEffects = SfEffects.Ripple,
-                Content = new Image()
-                {
-                    Source = "Biscuits.png",
-                    Aspect = Aspect.Fill
-                }
-            };
-            this.Content = effectsView;
-{% endhighlight %}
-
-{% endtabs %}
-
-## LongPressEffects
-
-The [`LongPressEffects`] property of [`SfEffectsView`] is used to customize the effect on long press.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-            <sfEffectsView:SfEffectsView LongPressEffects="Ripple">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
-            </sfEffectsView:SfEffectsView>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-            var effectsView = new SfEffectsView
-            {
-                LongPressEffects = SfEffects.Ripple,
-                Content = new Image()
-                {
-                    Source = "Biscuits.png",
-                    Aspect = Aspect.Fill
-                }
-            };
-            this.Content = effectsView;
-{% endhighlight %}
-
-{% endtabs %}
-
-## TouchUpEffects
-
-The [`TouchUpEffects`] property of [`SfEffectsView`] is used to customize the effect on touch up.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-            <sfEffectsView:SfEffectsView TouchUpEffects="Ripple">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
-            </sfEffectsView:SfEffectsView>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-            var effectsView = new SfEffectsView
-            {
-                TouchUpEffects = SfEffects.Ripple,
-                Content = new Image()
-                {
-                    Source = "Biscuits.png",
-                    Aspect = Aspect.Fill
-                }
-            };
-            this.Content = effectsView;
-{% endhighlight %}
-
-{% endtabs %}
 
 ## FadeOutRipple
 

@@ -103,7 +103,7 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 </tr>
 
 <tr>
-<td>TimeslotView(Only applicable dayscount is 1)</td>
+<td>TimeslotView(Only applicable if days count is 1)</td>
 <td>hh a dd/MMMM/yyyy</td>
 <td>09 AM 22/August/2019</td>
 </tr>

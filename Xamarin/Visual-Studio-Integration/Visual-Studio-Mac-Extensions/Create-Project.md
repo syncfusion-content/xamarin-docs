@@ -23,7 +23,7 @@ The following procedure illustrates how to install Syncfusion Xamarin Extension 
 
 3. Click the Visual Studio Community and select the Extensions…
 
-![Extension Manager](ProjectTemplate_Images/ExtensionManager.png)
+    ![Extension Manager](ProjectTemplate_Images/ExtensionManager.png)
 
 4. The Extension Manager window will open. Select the Install from file… 
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Getting Started with Syncfusion Shimmer
 description: How to initialze a shimmer.
@@ -98,7 +98,7 @@ using Syncfusion.XForms.Shimmer;
 
 {% endtabs %}
 
-Then initialize effects view as shown below,
+Then initialize shimmer as shown below,
 
 {% tabs %} 
 
@@ -139,3 +139,38 @@ shimmer.Content = stackLayout;
 ![Shimmer with Persona type](Getting-Started_images/Persona.gif)
 
 N> The SfShimmer has different shimmer types. The default shimmer type is [`Persona`]().
+
+## Loading shimmer content
+
+By enabling the [`IsLoaded`] property of [`SfShimmer`], shimmer content is loaded.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+        <shimmer:SfShimmer x:Name="shimmer" VerticalOptions="FillAndExpand" IsLoaded ="true">
+                <shimmer:SfShimmer.Content>
+                     <StackLayout>
+                        <Label Text="Content is loaded!"/>
+                      </StackLayout>
+                </shimmer:SfShimmer.Content>
+        </shimmer:SfShimmer>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            shimmer = new SfShimmer()
+            {
+                IsLoaded = true,
+                VerticalOptions = LayoutOptions.FillAndExpand,
+                Content = new Label
+                {
+                    Text = "Content is loaded!"
+                }
+            };
+            this.Content = shimmer;
+
+{% endhighlight %}
+
+{% endtabs %}

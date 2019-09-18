@@ -19,7 +19,7 @@ You can add RichTextEditor reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add RichTextEditor to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRichTextEditor](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRichTextEditor) and then install it.
 
-![Adding SfRichTextEditor reference from NuGet]((SfRichTextEditor_Images/RichTextEditor_reference.png)
+![Adding SfRichTextEditor reference from NuGet](SfRichTextEditor_Images/RichTextEditor_reference.png)
 
 N> Install the same version of SfRichTextEditor NuGet in all the projects.
 
@@ -185,4 +185,4 @@ public MainPage()
 
 {% endtabs %} 
 
-The complete Getting Started sample is available in this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-488109269).
+The complete Getting Started sample is available in this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1444240336)

@@ -9,7 +9,7 @@ documentation: ug
 
 # Overview
 
-The SfParallaxView control binds the scroll position of a foreground element (e.g. list) to a background element and moves the background element at different speeds.
+SfParallaxView for Xamarin.Forms provides a perfect way for scrolling any control that implements the IParallaxView interface with a background element that translates slower than the foreground element. The SfParallaxView control binds the scroll position of a foreground element (e.g., list) to a background element and moves the background element at different speeds.
 
 ## Key features
 

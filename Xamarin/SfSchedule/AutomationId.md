@@ -81,7 +81,7 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 
 <tr>
 <td>ViewHeader</td>
-<td>ddd dd/MMMM/yyyy</td>
+<td>dddd dd/MMMM/yyyy</td>
 <td>Sunday 22/August/2019</td>
 </tr>
 
@@ -128,7 +128,7 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 
 <tr>
 <td>ViewHeader</td>
-<td>ddd dd/MMMM/yyyy</td>
+<td>dddd dd/MMMM/yyyy</td>
 <td>Sunday 22/August/2019</td>
 </tr>
 

@@ -27,15 +27,15 @@ The following procedure illustrates how to install Syncfusion Xamarin Extension 
 
 4. The Extension Manager window will open. Select the Install from file… 
 
-![Installation](ProjectTemplate_Images/Installation.png)
+    ![Installation](ProjectTemplate_Images/Installation.png)
 
 5. The Install Extension Package dialog will open. Navigate to Syncfusion Xamarin Mac Extensions file(.mpack) location which explained in above and click open to install.
 
-![Extensions File](ProjectTemplate_Images/ExtensionsFile.png)
+    ![Extensions File](ProjectTemplate_Images/ExtensionsFile.png)
 
 6. Once the extension installed, the Syncfusion Xamarin Extension will listed in the IDE extension section
 
-![Installation Details](ProjectTemplate_Images/InstallationDetails.png)
+    ![Installation Details](ProjectTemplate_Images/InstallationDetails.png)
 
 #### Create Project
 
@@ -48,7 +48,7 @@ Use the following steps to create the Syncfusion Xamarin Application through the
 Option 1:
 Click Syncfusion Menu and choose Essential Studio for Xamarin > Create New Syncfusion Project.
 
-![Create New Project from Syncfusion Menu](ProjectTemplate_Imagess/Syncfusion_Menu.PNG)
+    ![Create New Project from Syncfusion Menu](ProjectTemplate_Imagess/Syncfusion_Menu.PNG)
 
 Option 2:
 Choose File > New > Project and navigate to Syncfusion > App > Syncfusion Xamarin Project Template.
@@ -57,7 +57,7 @@ Choose File > New > Project and navigate to Syncfusion > App > Syncfusion Xamari
 
 2)	Configure the Syncfusion Xamarin Application by using the following Project Configuration dialog, choose the project Android and iOS by toggling respected checkbox and Syncfusion components.
 
-![Project Configuration](ProjectTemplate_Images/ProjectConfiguration.PNG)
+    ![Project Configuration](ProjectTemplate_Images/ProjectConfiguration.PNG)
 
 ### Android:
 
@@ -73,24 +73,24 @@ Choose File > New > Project and navigate to Syncfusion > App > Syncfusion Xamari
 
 Choose the Xamarin application needs to create with the Syncfusion controls.
 
-![Choose Controls](ProjectTemplate_Images/ChooseControls.png)
+    ![Choose Controls](ProjectTemplate_Images/ChooseControls.png)
 
 3) Name the project and click the Create.
 
-![New Project](ProjectTemplate_Images/NewProject.png)
+    ![New Project](ProjectTemplate_Images/NewProject.png)
 
 4) Required Syncfusion NuGet and configuration have been added to the project based on the Syncfusion component chosen.
 
 **Net Standard:**
 
-![Net Standard References](ProjectTemplate_Images/NetStandardReferences.png)
+    ![Net Standard References](ProjectTemplate_Images/NetStandardReferences.png)
 
 **Android:**
 
-![Android References](ProjectTemplate_Images/AndroidReferences.png)
+    ![Android References](ProjectTemplate_Images/AndroidReferences.png)
 
 **iOS:**
 
-![iOS References](ProjectTemplate_Images/iOSReferences.png)
+    ![iOS References](ProjectTemplate_Images/iOSReferences.png)
 
 Now, you can follow the user guide documentation to use the Syncfusion Xamarin components.

@@ -42,6 +42,7 @@ In the below code you can see the default color and key value for the default re
 <Color x:Key="SfCalendarYearViewMonthHeaderBackground">#FFFFFF</Color>
 <Color x:Key="SfCalendarYearViewDateTextColor">#414141</Color>
 <Color x:Key="SfCalendarYearViewHeaderTextColor">#707070</Color>
+<Color x:Key="SfCalendarAgendaSelectedDateColor">#FFFFFF</Color>
 {% endhighlight %}
 {% endtabs %} 
 

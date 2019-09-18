@@ -57,3 +57,14 @@ calendar.MoveToDate = new DateTime(2017,5,5);
 this.Content = calendar;
 	
 {% endhighlight %}
+
+### Navigation Direction
+
+You can navigate the calendar `MonthView`, `YearView`, `DecadeView` and `CenturyView` either `Vertical` or `Horizontal` directions by setting the [NavigationDirection](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationDirection.html).
+
+{% highlight c# %}
+
+SfCalendar calendar = new SfCalendar();
+Calendar.NavigationDirection = NavigationDirection.Vertical;
+
+{% endhighlight %}

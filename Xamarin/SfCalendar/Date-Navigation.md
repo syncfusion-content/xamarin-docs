@@ -69,4 +69,4 @@ Calendar.NavigationDirection = NavigationDirection.Vertical;
 
 {% endhighlight %}
 
-![YearView Navigation in Xamarin.Forms Calendar ](images/xamarin.forms-NavigationDirection.png)
+![YearView Navigation in Xamarin.Forms Calendar ](images/Xamarin.forms-Calendar-NavigationDirection.png)

@@ -9,15 +9,15 @@ documentation: UG
 
 # Automation Id
 
-SfPopupLayout supports built in [AutomationId](https://docs.microsoft.com/en-gb/dotnet/api/xamarin.forms.element.automationid?view=xamarin-forms#Xamarin_Forms_Element_AutomationId) for all its inner elements. These `AutomationId` values allows the automation framework to find and interact with the inner elements when the test scripts are run. A unique `AutomationId` is maintained for each inner element by prefixing the control's `AutomationId` with the inner element's Id.
+SfPopupLayout supports built-in [AutomationId](https://docs.microsoft.com/en-gb/dotnet/api/xamarin.forms.element.automationid?view=xamarin-forms#Xamarin_Forms_Element_AutomationId) for all its inner elements. These `AutomationId` values allow the automation framework to find and interact with the inner elements when the test scripts are run. A unique `AutomationId` is maintained for each inner element by prefixing the control's `AutomationId` with the inner element's Id.
 
 ## Automation Id for popup view inner elements
 
-Refer the below image to know the `AutomationId` values of the inner elements of the PopupView.
+The following screenshot illustrates the `AutomationId` values of the inner elements of SfPopupView.
 
 ![Automation Id format for Popuplayout inner element](PopupLayout_images/AutomationId_Popup.png)
 
-Refer the below code snippet to set the `AutomationId` to the PopupLayout.
+The following code snippet demonstrates how to set `AutomationId` to the SfPopupLayout.
 
 {% tabs %}
 {% highlight xaml %}
@@ -62,7 +62,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-Refer the below code snippet to access the inner elements of the PopupView from the automation script.
+The following code snippet demonstrates how to access the inner elements of SfPopupView from the automation script.
 
 {% tabs %}
 {% highlight c# %}
@@ -93,9 +93,9 @@ public void SfPopupLayout_AutomationId()
 
 ## Automation Id for template content 
 
-To access the template elements from the script, set `AutomationId` directly to the template view from the sample level.
+To access the template elements from script, set the `AutomationId` directly to the template view from the sample level.
 
-Following code snippet explains setting `AutomationId` for the template content.
+The following code snippet explains how to set `AutomationId` for the template content.
 
 {% tabs %}
 {% highlight xaml %}
@@ -150,7 +150,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-Refer the below code snippet to access the template content of PopupView from the automation script
+Refer to the following code snippet to access the template content of SfPopupView from the automation script.
 
 {% tabs %}
 {% highlight c# %}

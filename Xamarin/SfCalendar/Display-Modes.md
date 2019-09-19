@@ -65,7 +65,7 @@ N>
 * The OnMonthCellLoaded event is triggered for the current month dates.
 * The VisibleDates in the MonthChanged event will return the current month dates.
 
-## Enable and disable past dates.
+## Enable and disable past dates
 
 The `SfCalendar` allows you to enable/disable the past dates in MonthView. This can be achieved by changing the [EnableDatesInPast](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~EnableDatesInPast.html) property. By default, value of this property is set to true.
 
@@ -87,8 +87,10 @@ calendar.EnableDatesInPast = False;
 
 {% endtabs %}
 
+![Month View in Xamarin.Forms Calendar ](images/xamarin.forms-EnableDates.png)
+
 N>
-* The `EnableDatesInPast` is not applicable for UWP.
+ The `EnableDatesInPast` is not applicable for UWP.
 
 
 ## Month view customization

@@ -11,17 +11,17 @@ documentation: ug
 
 The following procedure illustrates how to install Syncfusion Xamarin Extension in Visual Studio for Mac. 
 
-Follow this guideline to install the Essential Studio for Xamarin Mac build if not installed, then you will get the Visual Studio for Mac Extensions in installed location.
+Follow [this guideline to install the Essential Studio for Xamarin Mac build](https://help.syncfusion.com/common/essential-studio/installation/essential-studio-mac-installer) if not installed, then you will get the Visual Studio for Mac Extensions in installed location.
 
 **Location:**
 
- Eg: {Documents}\Syncfusion\{version}\{platform}\Xamarin\Extension\Syncfusion Xamarin VS Mac Extensions.mpack
+ Eg: {Documents}\Syncfusion\ {version}\ {platform}\Xamarin\Extension\Syncfusion Xamarin VS Mac Extensions.mpack
 
 ![Mac Extensions File Location](ProjectTemplate_Images/Mac_Extensions_File_Location.PNG)
 
 2. Open the Visual Studio 2019 for Mac.
 
-3. Click the Visual Studio Community and select the Extensions…
+3. Click the Visual Studio Community/Professional/Enterprise and select the Extensions…
 
     ![Extension Manager](ProjectTemplate_Images/ExtensionManager.png)
 
@@ -44,7 +44,7 @@ Syncfusion provides the Visual Studio for Mac Project Templates for Xamarin plat
 
 Use the following steps to create the Syncfusion Xamarin Application through the Visual Studio 2019 for Mac:
 
-1)	To create a Syncfusion Xamarin project, follow either one of the options below in Visual Studio for Mac
+1)	To create a Syncfusion Xamarin project, follow either one of the options below in Visual Studio for Mac.
 
 Option 1:
 Click Syncfusion Menu and choose Essential Studio for Xamarin > Create New Syncfusion Project.
@@ -96,4 +96,4 @@ Choose the Xamarin application needs to create with the Syncfusion controls.
 
 ![iOS References](ProjectTemplate_Images/iOSReferences.png)
 
-Now, you can follow the user guide documentation to use the Syncfusion Xamarin components.
+Now, you can follow the [user guide documentation](https://help.syncfusion.com/xamarin/introduction/overview) to use the Syncfusion Xamarin components.

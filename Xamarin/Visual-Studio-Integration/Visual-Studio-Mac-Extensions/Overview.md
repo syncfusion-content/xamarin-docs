@@ -11,7 +11,7 @@ documentation: ug
 
 The Syncfusion Essential Studio for Xamarin Visual Studio for Mac extensions that allow you to create the Xamarin application in Visual Studio for Mac with the Syncfusion components. 
 
-I> The Syncfusion Xamarin Mac Extensions Support for Visual Studio Mac 2019 and it is available from v17.3.0.9.
+I> The Syncfusion Xamarin Mac Extensions Support for Visual Studio for Mac 2019 and it is available from v17.3.0.9.
 
 The Syncfusion provides the following extension supports in Visual Studio for Mac:
 

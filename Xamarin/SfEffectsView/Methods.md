@@ -9,7 +9,7 @@ documentation: ug
 
 # Methods
 
-You add or remove effect programmatically by using the [`ApplyEffects`] or [`Reset`] methods
+You can add or remove effect programmatically using the [`ApplyEffects`] or [`Reset`] method.
 
 ## ApplyEffects
 

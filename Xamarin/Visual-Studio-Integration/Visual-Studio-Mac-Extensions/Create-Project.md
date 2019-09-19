@@ -63,11 +63,13 @@ Choose File > New > Project and navigate to Syncfusion > App > Syncfusion Xamari
 ### Android:
 
 **1. Minimum Android Version:** Select the oldest Android version that you want to support your application.
+
 **2. Target Android Version:** Select the version of Android to run your application.
 
 ### iOS:
 
 **1. Target Device:** Select the device of Xamarin.iOS project either Unified, iPhone/iPod, or iPad
+
 **2. Target Version:** Choose the version of Xamarin.iOS Project.  
 
 ### Choose controls:

@@ -65,3 +65,5 @@ The [`Reset`] method is used to reset the applied effect.
             }
 
 {% endhighlight %}
+
+![ApplyEffects and Reset methods](Methods_images/Methods.gif)

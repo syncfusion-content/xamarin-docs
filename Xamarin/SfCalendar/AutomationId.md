@@ -92,7 +92,7 @@ The `SfCalendar` control has built-in `AutomationId` for inner elements. Please 
 
 </table>
 
-To keep unique `AutomationId`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`. For example, if you set `SfCalendar` AutomationId as “SfCalendar.AutomationId = “Calendar1””, then the Automation framework will interact with the `RightArrow` button as `Calendar1Forward`. The following screenshots denote the AutomationIds for inner elements.
+To keep unique `AutomationId`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`. For example, if you set `SfCalendar` AutomationId as “SfCalendar.AutomationId = “Calendar””, then the Automation framework will interact with the `RightArrow` button as `CalendarForward`. The following screenshots denote the AutomationIds for inner elements.
 
 ## Month View
 

@@ -9,11 +9,11 @@ documentation: ug
 
 # Features in SfEffectsView
 
-The SfEffectsView control provides the following additional features to enhance the effects.
+The [`SfEffectsView`] control provides the following additional features to enhance the effects.
 
 ## FadeOutRipple
 
-By enabling the [`FadeOutRipple`] property of [`SfEffectsView`], the background color is faded out as the ripple progresses.
+By enabling the [`FadeOutRipple`] property of [`SfEffectsView`], the growable circle will lose its opacity to 0.
 
 {% tabs %} 
 
@@ -183,7 +183,7 @@ Enabling the [`IsSelected`] property of [`SfEffectsView`] sets the view state as
 
 ## ShouldIgnoreTouches
 
-Enabling the [`ShouldIgnoreTouches`] property of [`SfEffectsView`] cancels the touch in EffectsView.
+Enabling the [`ShouldIgnoreTouches`] property of [`SfEffectsView`] cancels the direct interaction of the [`SfEffectsView`].
 
 {% tabs %} 
 

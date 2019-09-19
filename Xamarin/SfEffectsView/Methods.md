@@ -13,12 +13,12 @@ You can add or remove effect programmatically using the [`ApplyEffects`] or [`Re
 
 ## ApplyEffects
 
-The [`ApplyEffects`] method is used to apply the provided effect with or without repetition. The following are the optional parameters to be passed.
+The [`ApplyEffects`] method is used to trigger the effects rendering with or without repetition. The following are the optional parameters to be passed:
 
-* [`effects`] - [`SfEffects`] to be applied. By default, [`SfEffects.Ripple`] will apply.
-* [`rippleStartPosition`] - [`RippleStartPosition`] can be left, top, right, bottom or default. By default, ripple will start from the center.
-* [`rippleStartPoint`] - point at which ripple animation start. The default value is null.
-* [`repeat`] - bool value to set whether to repeat the applied effect. The default value is false.
+* [`effects`] - [`SfEffects`] to be applied. By default, [`SfEffects.Ripple`] will be applied.
+* [`rippleStartPosition`] - [`RippleStartPosition`] can be left, top, right, bottom, or default. By default, ripple starts from the center.
+* [`rippleStartPoint`] - point at which ripple animation starts. The default value is null.
+* [`repeat`] - bool value used to set whether to repeat the applied effect. The default value is false. Only [`SfEffects.Ripple`] and [`SfEffects.Highlight `] can be repeated. 
 
 {% highlight xaml %} 
 
@@ -82,9 +82,11 @@ The [`ApplyEffects`] method is used to apply the provided effect with or without
 
 {% endhighlight %}
 
+N> The [`SfEffects`] applied using [`ApplyEffects`] method will be removed only after calling [`Reset`] method is called.
+
 ## Reset
 
-The [`Reset`] method is used to reset the applied effect.
+The [`Reset`] method is used to reset the [`SfEffects.Highlight`] and [`SfEffects.Ripple`] effects which are applied by using [`ApplyEffects`] method.
 
 {% highlight xaml %} 
 

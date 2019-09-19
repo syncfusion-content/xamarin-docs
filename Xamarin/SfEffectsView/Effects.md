@@ -11,47 +11,6 @@ documentation: ug
 
 The [`SfEffectsView`] control provides support to ripple effect, highlight effect, and more. This section explains about different effects available in effects view.
 
-## Ripple
-
-The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the tapped location, and it will grow till the whole layout is filled. [`SfEffects.Ripple`] is rendered based on [`SfEffectsView.InitialRippleFactor`].
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-                <sfEffectsView:SfEffectsView HorizontalOptions="Center" TouchDownEffects="Ripple">
-                    <Label BackgroundColor="#D3D2D5" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center" Text="Ripple" VerticalOptions="Center" VerticalTextAlignment="Center" WidthRequest="90" />
-                </sfEffectsView:SfEffectsView>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-            var effectsView = new SfEffectsView()
-            {
-                TouchDownEffects = SfEffects.Ripple,
-                HorizontalOptions = LayoutOptions.Center,
-                Content = new Label()
-                {
-                    Text = "Ripple",
-                    HeightRequest = 50,
-                    WidthRequest = 90,
-                    BackgroundColor = Color.FromHex("#D3D2D5"),
-                    FontAttributes = FontAttributes.Bold,
-                    FontSize = 18,
-                    HorizontalTextAlignment = TextAlignment.Center,
-                    VerticalTextAlignment = TextAlignment.Center,
-                    VerticalOptions = LayoutOptions.Center,
-                }
-            };
-            this.Content = effectsView;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Ripple effect](Effects_images/Ripple.png)
-
 ## Highlight
 
 [`SfEffects.Highlight`] is a smooth transition on the background color of the [`SfEffectsView`]. It generally appears before all the effects when it is given in combination with other [`SfEffects`].
@@ -168,30 +127,37 @@ The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the 
 
 ![Highlight effect](Effects_images/Highlight.gif)
 
-## Selection
+## Ripple
 
-[`SfEffects.Selection`] is a smooth color transition to indicate the view state is moved to selected state. It generally appears after the ripple effect when it is given in combination with [`SfEffects.Ripple`] effect.
+The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the tapped location, and it will grow till the whole layout is filled. [`SfEffects.Ripple`] is rendered based on [`SfEffectsView.InitialRippleFactor`].
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView SelectionColor="#FF0000" LongPressEffects="Selection">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
-            </sfEffectsView:SfEffectsView>
+                <sfEffectsView:SfEffectsView HorizontalOptions="Center" TouchDownEffects="Ripple">
+                    <Label BackgroundColor="#D3D2D5" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center" Text="Ripple" VerticalOptions="Center" VerticalTextAlignment="Center" WidthRequest="90" />
+                </sfEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView
+            var effectsView = new SfEffectsView()
             {
-                SelectionColor = Color.FromHex("#FF0000"),
-                LongPressEffects = SfEffects.Selection,
-                Content = new Image()
+                TouchDownEffects = SfEffects.Ripple,
+                HorizontalOptions = LayoutOptions.Center,
+                Content = new Label()
                 {
-                    Source = "Biscuits.png",
-                    Aspect = Aspect.Fill
+                    Text = "Ripple",
+                    HeightRequest = 50,
+                    WidthRequest = 90,
+                    BackgroundColor = Color.FromHex("#D3D2D5"),
+                    FontAttributes = FontAttributes.Bold,
+                    FontSize = 18,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    VerticalTextAlignment = TextAlignment.Center,
+                    VerticalOptions = LayoutOptions.Center,
                 }
             };
             this.Content = effectsView;
@@ -200,7 +166,8 @@ The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the 
 
 {% endtabs %}
 
-![Selection effect](Effects_images/SelectionEffect.gif)
+![Ripple effect](Effects_images/Ripple.png)
+
 
 ## Scale
 
@@ -238,6 +205,40 @@ The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the 
 {% endtabs %}
 
 ![Scale effect](Effects_images/Scale.gif)
+
+## Selection
+
+[`SfEffects.Selection`] is a smooth color transition to indicate the view state is moved to selected state. It generally appears after the ripple effect when it is given in combination with [`SfEffects.Ripple`] effect.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+            <sfEffectsView:SfEffectsView SelectionColor="#FF0000" LongPressEffects="Selection">
+                <Image Source="Biscuits.png" Aspect="Fill"/>
+            </sfEffectsView:SfEffectsView>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            var effectsView = new SfEffectsView
+            {
+                SelectionColor = Color.FromHex("#FF0000"),
+                LongPressEffects = SfEffects.Selection,
+                Content = new Image()
+                {
+                    Source = "Biscuits.png",
+                    Aspect = Aspect.Fill
+                }
+            };
+            this.Content = effectsView;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Selection effect](Effects_images/SelectionEffect.gif)
 
 ## Rotation
 

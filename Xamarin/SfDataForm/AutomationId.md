@@ -1,10 +1,10 @@
 ---
 layout: post
-title: AutomationId | SfDataForm | Xamarin.Forms | Syncfusion
-description: Learn how to use automationid support
+title: Automation Id | SfDataForm | Xamarin.Forms | Syncfusion
+description: Set Automation Id to SfDataForm for automation framework to find and interact with control inner elements.
 platform: Xamarin
 control: SfDataForm
-documentation: ug
+documentation: UG
 ---
 
 # AutomationId
@@ -98,7 +98,7 @@ The `SfDataForm`control has built-in `AutomationId` support for inner elements. 
 
 </table>
 
-To keep unique `AutomationID`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`.  For example, if you set `SfDataForm` `AutomationId` as “SfDataForm.AutomationId = “ContactsInfo””, then the Automation framework will interact with the text editor as “ContactsInfoFocus FirstName”. The following screenshots denote the AutomationIds for inner elements.
+To keep unique `AutomationID`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`.  For example, if you set `SfDataForm` `AutomationId` as `SfDataForm.AutomationId = ContactsInfo`, then the Automation framework will interact with the text editor as `ContactsInfoFocus FirstName`. The following screenshots denote the AutomationIds for inner elements.
 
 ![AutomationId support in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-automationid.png)
 

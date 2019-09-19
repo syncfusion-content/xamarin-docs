@@ -9,7 +9,7 @@ documentation: ug
 
 # Effects
 
-The SfEffectsView control provides support to ripple effect, highlight effect, and more. This section explains about different effects available in effects view.
+The [`SfEffectsView`] control provides support to ripple effect, highlight effect, and more. This section explains about different effects available in effects view.
 
 ## Ripple
 
@@ -54,7 +54,7 @@ The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the 
 
 ## Highlight
 
-[`SfEffects.Highlight`] is a smooth transition on the background color of the [`SfEffectsView`]. It generally appears before the ripple effect when it is given in combination with [`SfEffects.Ripple`] effect.
+[`SfEffects.Highlight`] is a smooth transition on the background color of the [`SfEffectsView`]. It generally appears before all the effects when it is given in combination with other [`SfEffects`].
 
 {% tabs %} 
 

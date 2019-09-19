@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization of SfEffectsView
 
-The SfEffectsView control provides support to customize the corner radius, animation duration, color and more. This section explains how to customize the effects view control.
+The [`SfEffectsView`] control provides support to customize the corner radius, animation duration, color and more. This section explains how to customize the effects view control.
 
 ## RippleAnimationDuration
 
@@ -230,7 +230,7 @@ The [`InitialRippleFactor`] property of [`SfEffectsView`] is used to customize t
 
 ## ScaleFactor
 
-The [`ScaleFactor`] property of [`SfEffectsView`] is used to customize the scale down factor.
+The [`ScaleFactor`] property of [`SfEffectsView`] is used to customize the scale of the view.
 
 {% tabs %} 
 
@@ -571,7 +571,7 @@ The [`Angle`] property of [`SfEffectsView`] is used to customize the rotation an
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView Angle="180" TouchDownEffects="Rotation">
+            <sfEffectsView:SfEffectsView Angle="180" TouchDownEffects="Ripple,Rotation">
                 <Image Source="Arrow.png" HeightRequest="70" WidthRequest="70"/>
             </sfEffectsView:SfEffectsView>
 
@@ -582,7 +582,7 @@ The [`Angle`] property of [`SfEffectsView`] is used to customize the rotation an
             var effectsView = new SfEffectsView
             {
                 Angle = 180,
-                TouchDownEffects = SfEffects.Rotation,
+                TouchDownEffects = SfEffects.Ripple | SfEffects.Rotation,
                 Content = new Image()
                 {
                     Source = "Arrow.png",

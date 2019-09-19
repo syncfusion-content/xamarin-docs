@@ -13,7 +13,12 @@ You add or remove effect programmatically by using the [`ApplyEffects`] or [`Res
 
 ## ApplyEffects
 
-The [`ApplyEffects`] method is used to apply the provided effect with or without repetition.
+The [`ApplyEffects`] method is used to apply the provided effect with or without repetition. The following are the optional parameters to be passed.
+
+* [`effects`] - [`SfEffects`] to be applied. By default, [`SfEffects.Ripple`] will apply.
+* [`rippleStartPosition`] - [`RippleStartPosition`] which can be left, top, right, bottom and default. By default, [`RippleStartPosition`] is center.
+* [`rippleStartPoint`] - a point at which ripple animation start. The default value is null.
+* [`repeat`] - a bool value to set whether to repeate the applied effect. The default value is false.
 
 {% highlight xaml %} 
 

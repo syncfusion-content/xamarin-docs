@@ -15,7 +15,7 @@ Follow [this guideline to install the Essential Studio for Xamarin Mac build](ht
 
 **Location:**
 
- Eg: {Documents}\Syncfusion\ {version}\ {platform}\Xamarin\Extension\Syncfusion Xamarin VS Mac Extensions.mpack
+ Eg: {Documents}\Syncfusion\ {version}\Xamarin\Extension\Syncfusion Xamarin VS Mac Extensions.mpack
 
 ![Mac Extensions File Location](ProjectTemplate_Images/Mac_Extensions_File_Location.PNG)
 

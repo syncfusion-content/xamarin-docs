@@ -13,7 +13,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 ## Ripple
 
-[`SfEffects.Ripple`] will render ripple view based on [`SfEffectsView.InitialRippleFactor`].
+[`SfEffects.Ripple`] is a growable circle, which is initially centered on the tapped location and it will grow till the whole layout is filled. [`SfEffects.Ripple`] will render based on [`SfEffectsView.InitialRippleFactor`].
 
 {% tabs %} 
 
@@ -44,7 +44,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 ## Highlight
 
-[`SfEffects.Highlight`] will provide the highlight effect by changing the BackgroundColor.
+[`SfEffects.Highlight`] is a smooth transition on the background color of the [`SfEffectsView`]. It will generally appear before the ripple effect when given in combination with [`SfEffects.Ripple`] effect.
 
 {% tabs %} 
 
@@ -158,7 +158,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 ## Selection
 
-[`SfEffects.Selection`] will move the state of ['SfEffectsView'] to selection state with ['SfEffectsView.SelectionColor'].
+[`SfEffects.Selection`] is a smooth color transition to indicate the view state is moved to selected state. It will generally appear after the ripple effect when given in combination with [`SfEffects.Ripple`] effect.
 
 {% tabs %} 
 
@@ -190,7 +190,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 ## Scale
 
-[`SfEffects.Scale`] will resize the ['SfEffectsView'] based on ['SfEffectsView.ScaleFactor'].
+[`SfEffects.Scale`] is a smooth transition from actual size of the object to the size calculated based on ['SfEffectsView.ScaleFactor'] in pixels.
 
 {% tabs %} 
 
@@ -225,7 +225,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 ## Rotation
 
-[`SfEffects.Rotation`] will rotate the ['SfEffectsView'] to the specified ['SfEffectsView.Angle'].
+[`SfEffects.Rotation`] provides a circular movement of the [`SfEffectsView`] around the center of the [`SfEffectsView`] based on the specified ['SfEffectsView.Angle']. 
 
 {% tabs %} 
 

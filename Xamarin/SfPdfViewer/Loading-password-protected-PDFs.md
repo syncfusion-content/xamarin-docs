@@ -41,5 +41,5 @@ private void PdfViewerControl_UnhandledConditionOccurred(object sender, Unhandle
 {% endhighlight %}
 {% endtabs %}
 
-N>The event will be raised also when an encrypted PDF is loaded without providing a password using the `LoadDocument(Stream stream)` overload.        
+N>The event will also be raised when an encrypted PDF is loaded without providing a password using the `LoadDocument(Stream stream)` overload.        
 

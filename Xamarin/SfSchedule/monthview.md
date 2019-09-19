@@ -823,14 +823,7 @@ private void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineApp
     }
     else
     {
-        DisplayAlert("", "MonthInlineAppointmentTapped event triggered", "ok");
-        (schedule.DataSource as ScheduleAppointmentCollection).Add(new ScheduleAppointment()
-          {
-            StartTime = new DateTime(args.selectedDate.Year, args.selectedDate.Month, args.selectedDate.Day, 10, 0, 0),
-            EndTime = new DateTime(args.selectedDate.Year, args.selectedDate.Month, args.selectedDate.Day, 12, 0, 0),
-            Subject = "Meeting",
-            Location = "Hutchison road",
-          });
+        DisplayAlert("", "No Events", "ok");
     }
 }
 {% endhighlight %}

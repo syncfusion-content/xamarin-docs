@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Interactions in Syncfusion EffectsView
 description: How to set effects on different interactions in effectsview

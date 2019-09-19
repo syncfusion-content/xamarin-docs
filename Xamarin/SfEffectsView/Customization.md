@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customization of Syncfusion EffectsView
 description: How to customize effectsview

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Features in Syncfusion EffectsView
 description: How to use the additional features in effectsview

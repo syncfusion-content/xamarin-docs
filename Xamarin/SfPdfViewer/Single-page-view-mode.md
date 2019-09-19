@@ -9,7 +9,7 @@ documentation: ug
 
 # Single page view mode
 
-The default continuous view mode of PDF viewer allows only vertical scrolling. But PDF viewer also provides options to view PDFs page by page with horizontal navigation support. The page ny page view mode offers better readability.
+The default continuous view mode of PDF Viewer allows vertical scrolling. In addition to that, PDF Viewer also provides options to view PDFs page by page with horizontal navigation support.
 
 ![Single page view mode](pdfviewer_images/SinglePageViewer.gif)
 

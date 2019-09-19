@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Getting Started with Syncfusion Shimmer
 description: How to initialze a shimmer.

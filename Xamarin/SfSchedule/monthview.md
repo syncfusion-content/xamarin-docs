@@ -836,7 +836,7 @@ private void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineApp
 ![Month inline appointment details using MonthInlineAppointmentTapped in schedule xamarin forms](monthview_images/inlineappointmentdetails.png)
 
 N>
-* The `MonthInlineAppointmentTapped` is also applicable for AgendaView.
+ The `MonthInlineAppointmentTapped` is also applicable for AgendaView.
 
 ## InlineView Appearance  
 You can customize the inline view with two ways,

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Syncfusion.Xamarin.Forms Shimmer types
 description: Different Shimmer types available in Essential Xamarin.forms Shimmer.

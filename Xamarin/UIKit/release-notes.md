@@ -26,3 +26,100 @@ The UI Kit version 1.0.0.0 has 45 screens for the following categories with RTL 
 * Article
 * Navigation
 * Error and Empty
+
+## UI Kit 2.0.0.0
+
+The UI Kit version 2.0.0.0 has 12 new screens for the following categories.
+
+<table>
+<tbody>
+<tr>
+<th align="center">S.No</th>
+<th align="center">Categories</th>
+<th align="center">Pages</th>
+</tr>
+<tr>
+<td align="center">
+1
+</td>
+<td>
+Forms
+</td>
+<td>
+1. Add Contact Page<br/>
+2. Tabbed Login Page<br/>
+3. Add Card Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+2
+</td>
+<td>
+Detail
+</td>
+</td>
+<td>
+1. Article Detail Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+3
+</td>
+<td>
+Navigation
+</td>
+<td>
+1. Bottom Navigation Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+4
+</td>
+<td>
+Transaction
+</td>
+<td>
+1. Payment Success Page<br/>
+2. Payment Failure page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+5
+</td>
+<td>
+Bookmark
+</td>
+<td>
+1. Wish List Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+6
+</td>
+<td>
+History
+</td>
+<td>
+1. Transaction History page<br/>
+2. History - My Orders Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+7
+</td>
+<td>
+Social
+</td>
+<td>
+1. Social Profile with Connections Page<br/>
+2. Social Profile with Card page<br/>
+</td>
+</tr>
+</tbody>
+</table>

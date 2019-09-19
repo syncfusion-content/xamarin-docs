@@ -9,17 +9,17 @@ documentation: UG
 
 # Automation Id
 
-SfDataGrid and SfDataPager supports built in [AutomationId](https://docs.microsoft.com/en-gb/dotnet/api/xamarin.forms.element.automationid?view=xamarin-forms#Xamarin_Forms_Element_AutomationId) for all its inner elements. These `AutomationId` values allows the automation framework to find and interact with the inner elements when the test scripts are run. A unique `AutomationId` is maintained for each inner element by prefixing the control's `AutomationId` with the inner element's Id.
+SfDataGrid and SfDataPager support built-in [AutomationId](https://docs.microsoft.com/en-gb/dotnet/api/xamarin.forms.element.automationid?view=xamarin-forms#Xamarin_Forms_Element_AutomationId) for all their inner elements. These `AutomationId` values allow the automation framework to find and interact with the inner elements when the test scripts are run. A unique `AutomationId` is maintained for each inner element by prefixing the control's `AutomationId` with the inner element's Id.
 
 ## DataGrid
 
-Refer the below image to know the `AutomationId` values of the grid cells, rows and other inner elements of the SfDataGrid.
+The following screensots illustrate the `AutomationId` values of grid cells, rows, and other inner elements of SfDataGrid.
 
 ![Automation Id format for Row and Cell element](SfDataGrid_images/AutomationId_DataGrid.png)
 
 ![Automation Id format for LoadMoreView](SfDataGrid_images/AutomationId_LoadMoreItems.png)
 
-Refer the below code snippet to set the `AutomationId` to the datagrid.
+The following code snippet demonsttrates how to set the `AutomationId` to data grid.
 
 {% tabs %}
 {% highlight xaml %}
@@ -77,7 +77,7 @@ sfGrid.CaptionSummaryRow = summaryRow;
 {% endhighlight %}
 {% endtabs %}
 
-Refer the below code snippet to access the inner elements of the datagrid from the automation script.
+Refer to the following code snippet to access the inner elements of data grid from the automation script.
 
 {% tabs %}
 {% highlight c# %}
@@ -95,7 +95,7 @@ public void SfDataGrid_AutomationId()
    // To apply sorting 
    App.Tap("SyncfusionGrid R2C1");
 
-   // To click on LoadMoreView for loading more items
+   // To click LoadMoreView for loading more items
    App.Tap("SyncfusionGrid LOAD MORE ITEMS");
 }
 
@@ -104,11 +104,11 @@ public void SfDataGrid_AutomationId()
 
 ## DataPager
 
-Refer the below image to know the `AutomationId` values of the pager buttons in SfDataPager.
+The following screenshot illustrates the `AutomationId` values of the pager buttons in SfDataPager.
 
 ![Automation Id format for Pager](SfDataGrid_images/AutomationId_Pager.png)
 
-Refer the below code snippet to set the `AutomationId` to the dataPager.
+The following code snippet demonstrates how to set `AutomationId` to dataPager.
 
 {% tabs %}
 {% highlight xaml %}
@@ -160,7 +160,7 @@ this.Content = gridLayout;
 {% endhighlight %}
 {% endtabs %}
 
-Refer the below code snippet to access the inner elements of the data pager from the automation script.
+Refer to the following code snippet to access the inner elements of data pager from automation script.
 
 {% tabs %}
 {% highlight c# %}

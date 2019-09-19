@@ -1,10 +1,10 @@
 ---
 layout: post
 title: AutomationId | SfSchedule | Xamarin.Forms | Syncfusion
-description: Learn how to use automationid support
+description: Set Automation Id to SfSchedule for automation framework to find and interact with control inner elements.
 platform: Xamarin
 control: SfSchedule
-documentation: ug
+documentation: UG
 ---
 
 # AutomationId
@@ -134,7 +134,7 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 
 </table>
 
-To keep unique `AutomationID`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`.  For example, if you set `SfSchedule` `AutomationId` as “SfSchedule.AutomationId = “EventScheduler””, then the Automation framework will interact with the month header as `EventSchedulerAugust 2019`. The following screenshots denote the AutomationIds for inner elements.
+To keep unique `AutomationId`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`.  For example, if you set `SfSchedule` `AutomationId` as `SfSchedule.AutomationId = EventScheduler`, then the Automation framework will interact with the month header as `EventSchedulerAugust 2019`. The following screenshots denote the AutomationIds for inner elements.
 
 ## MonthView 
 ![MonthView AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view.png)

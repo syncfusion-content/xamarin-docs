@@ -9,11 +9,11 @@ documentation: ug
 
 # Effects
 
-The Effects View control provides support to ripple effect, highlight effect and more. This section explains about the different effects available in effects view.
+The SfEffectsView control provides support to ripple effect, highlight effect, and more. This section explains about different effects available in effects view.
 
 ## Ripple
 
-[`SfEffects.Ripple`] is a growable circle, which is initially centered on the tapped location and it will grow till the whole layout is filled. [`SfEffects.Ripple`] will render based on [`SfEffectsView.InitialRippleFactor`].
+The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the tapped location, and it will grow till the whole layout is filled. [`SfEffects.Ripple`] is rendered based on [`SfEffectsView.InitialRippleFactor`].
 
 {% tabs %} 
 
@@ -54,7 +54,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 ## Highlight
 
-[`SfEffects.Highlight`] is a smooth transition on the background color of the [`SfEffectsView`]. It will generally appear before the ripple effect when given in combination with [`SfEffects.Ripple`] effect.
+[`SfEffects.Highlight`] is a smooth transition on the background color of the [`SfEffectsView`]. It generally appears before the ripple effect when it is given in combination with [`SfEffects.Ripple`] effect.
 
 {% tabs %} 
 
@@ -170,7 +170,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 ## Selection
 
-[`SfEffects.Selection`] is a smooth color transition to indicate the view state is moved to selected state. It will generally appear after the ripple effect when given in combination with [`SfEffects.Ripple`] effect.
+[`SfEffects.Selection`] is a smooth color transition to indicate the view state is moved to selected state. It generally appears after the ripple effect when it is given in combination with [`SfEffects.Ripple`] effect.
 
 {% tabs %} 
 
@@ -204,7 +204,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 ## Scale
 
-[`SfEffects.Scale`] is a smooth transition from actual size of the object to the size calculated based on ['SfEffectsView.ScaleFactor'] in pixels.
+[`SfEffects.Scale`] is a smooth transition from actual size of the object to the size calculated based on [`SfEffectsView.ScaleFactor`] in pixels.
 
 {% tabs %} 
 
@@ -241,7 +241,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 ## Rotation
 
-[`SfEffects.Rotation`] provides a circular movement of the [`SfEffectsView`] around the center of the [`SfEffectsView`] based on the specified ['SfEffectsView.Angle']. 
+[`SfEffects.Rotation`] provides a circular movement to the [`SfEffectsView`] around the center of the [`SfEffectsView`] based on the specified [`SfEffectsView.Angle`]. 
 
 {% tabs %} 
 

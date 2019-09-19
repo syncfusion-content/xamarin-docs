@@ -7,7 +7,7 @@ control: SfEffectsView
 documentation: ug
 ---
 
-# Interaction in EffectsView
+# Interaction in SfEffectsView
 
 You can set the effects on different interactions. This section explains how to set effects on different interactions available in effects view.
 

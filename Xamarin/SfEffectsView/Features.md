@@ -13,7 +13,7 @@ The Effects View control also provides following additional additional features 
 
 ## FadeOutRipple
 
-On enabling [`FadeOutRipple`] property of [`SfEffectsView`], fades out the background color as the ripple progresses.
+By enabling the [`FadeOutRipple`] property of [`SfEffectsView`], fades out the background color as the ripple progresses.
 
 {% tabs %} 
 
@@ -43,9 +43,11 @@ On enabling [`FadeOutRipple`] property of [`SfEffectsView`], fades out the backg
 
 {% endtabs %}
 
+![FadeOutRipple](Customization_images/FadeOutRipple.gif)
+
 ## IsSelected
 
-Enabling [`IsSelected`] property of [`SfEffectsView`], sets the view state as selected.
+Enabling the [`IsSelected`] property of [`SfEffectsView`] sets the view state as selected.
 
 {% tabs %} 
 

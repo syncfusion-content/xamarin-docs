@@ -7,9 +7,9 @@ control: SfEffectsView
 documentation: ug
 ---
 
-# Customization of EffectsView
+# Customization of SfEffectsView
 
-The Effects View control provides support to customize corner radius, animation duration, color and more. This section explains how to customize the effects view control.
+The SfEffectsView control provides support to customize the corner radius, animation duration, color and more. This section explains how to customize the effects view control.
 
 ## RippleAnimationDuration
 
@@ -595,95 +595,3 @@ The [`Angle`] property of [`SfEffectsView`] is used to customize the rotation an
 {% endtabs %}
 
 ![Rotation Angle customization](Customization_images/Angle.gif)
-
-## FadeOutRipple
-
-On enabling [`FadeOutRipple`] property of [`SfEffectsView`], fades out the background color as the ripple progresses.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-            <sfEffectsView:SfEffectsView FadeOutRipple="true" TouchDownEffects="Ripple">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
-            </sfEffectsView:SfEffectsView>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-            var effectsView = new SfEffectsView
-            {
-                FadeOutRipple = true,
-                TouchDownEffects = SfEffects.Ripple,
-                Content = new Image()
-                {
-                    Source = "Biscuits.png",
-                    Aspect = Aspect.Fill
-                }
-            };
-            this.Content = effectsView;
-{% endhighlight %}
-
-{% endtabs %}
-
-## IsSelected
-
-Enabling [`IsSelected`] property of [`SfEffectsView`], sets the view state as selected.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-            <sfEffectsView:SfEffectsView IsSelected="true" LongPressEffects="Selection">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
-            </sfEffectsView:SfEffectsView>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-            var effectsView = new SfEffectsView
-            {
-                IsSelected = true,
-                LongPressEffects = SfEffects.Selection,
-                Content = new Image()
-                {
-                    Source = "Biscuits.png",
-                    Aspect = Aspect.Fill
-                }
-            };
-            this.Content = effectsView;
-{% endhighlight %}
-
-{% endtabs %}
-
-## ShouldIgnoreTouches
-
-Enabling [`ShouldIgnoreTouches`] property of [`SfEffectsView`], cancels the touch in EffectsView.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-            <sfEffectsView:SfEffectsView ShouldIgnoreTouches="true">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
-            </sfEffectsView:SfEffectsView>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-            var effectsView = new SfEffectsView
-            {
-                ShouldIgnoreTouches = true,
-                Content = new Image()
-                {
-                    Source = "Biscuits.png",
-                    Aspect = Aspect.Fill
-                }
-            };
-            this.Content = effectsView;
-{% endhighlight %}
-
-{% endtabs %}

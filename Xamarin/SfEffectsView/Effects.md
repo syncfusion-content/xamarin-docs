@@ -19,9 +19,9 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView TouchDownEffects="Ripple">  
-                    <Label Text="Ripple" HeightRequest="40"/>
-            </sfEffectsView:SfEffectsView>
+                <sfEffectsView:SfEffectsView HorizontalOptions="Center" TouchDownEffects="Ripple">
+                    <Label BackgroundColor="#D3D2D5" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center" Text="Ripple" VerticalOptions="Center" VerticalTextAlignment="Center" WidthRequest="90" />
+                </sfEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -30,10 +30,18 @@ The Effects View control provides support to ripple effect, highlight effect and
             var effectsView = new SfEffectsView()
             {
                 TouchDownEffects = SfEffects.Ripple,
+                HorizontalOptions = LayoutOptions.Center,
                 Content = new Label()
                 {
                     Text = "Ripple",
-                    HeightRequest = 40
+                    HeightRequest = 50,
+                    WidthRequest = 90,
+                    BackgroundColor = Color.FromHex("#D3D2D5"),
+                    FontAttributes = FontAttributes.Bold,
+                    FontSize = 18,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    VerticalTextAlignment = TextAlignment.Center,
+                    VerticalOptions = LayoutOptions.Center,
                 }
             };
             this.Content = effectsView;
@@ -41,6 +49,8 @@ The Effects View control provides support to ripple effect, highlight effect and
 {% endhighlight %}
 
 {% endtabs %}
+
+![Ripple effect](Effects_images/Ripple.png)
 
 ## Highlight
 
@@ -50,7 +60,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView TouchDownEffects="Highlight" HighlightColor="#2196F3">                                                  
+            <sfEffectsView:SfEffectsView TouchDownEffects="Highlight" HighlightColor="#FF0000">                                                  
                    <Grid BackgroundColor="White">
                        
                        <Grid.ColumnDefinitions>
@@ -86,7 +96,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
             var effectsView = new SfEffectsView
             {
-                HighlightColor = Color.FromHex("#2196F3"),
+                HighlightColor = Color.FromHex("#FF0000"),
                 TouchDownEffects = SfEffects.Highlight,
             };
 
@@ -156,6 +166,8 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 {% endtabs %}
 
+![Highlight effect](Effects_images/Highlight.gif)
+
 ## Selection
 
 [`SfEffects.Selection`] is a smooth color transition to indicate the view state is moved to selected state. It will generally appear after the ripple effect when given in combination with [`SfEffects.Ripple`] effect.
@@ -164,7 +176,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView SelectionColor="#2196F3" LongPressEffects="Selection">
+            <sfEffectsView:SfEffectsView SelectionColor="#FF0000" LongPressEffects="Selection">
                 <Image Source="Biscuits.png" Aspect="Fill"/>
             </sfEffectsView:SfEffectsView>
 
@@ -174,7 +186,7 @@ The Effects View control provides support to ripple effect, highlight effect and
 
             var effectsView = new SfEffectsView
             {
-                SelectionColor = Color.FromHex("#2196F3"),
+                SelectionColor = Color.FromHex("#FF0000"),
                 LongPressEffects = SfEffects.Selection,
                 Content = new Image()
                 {
@@ -187,6 +199,8 @@ The Effects View control provides support to ripple effect, highlight effect and
 {% endhighlight %}
 
 {% endtabs %}
+
+![Selection effect](Effects_images/SelectionEffect.gif)
 
 ## Scale
 
@@ -222,6 +236,8 @@ The Effects View control provides support to ripple effect, highlight effect and
 {% endhighlight %}
 
 {% endtabs %}
+
+![Scale effect](Effects_images/Scale.gif)
 
 ## Rotation
 

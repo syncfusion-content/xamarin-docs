@@ -22,13 +22,54 @@ The [`ApplyEffects`] method is used to apply the provided effect with or without
 
 {% highlight xaml %} 
 
-            <StackLayout>
-                <sfEffectsView:SfEffectsView x:Name="effectsView">
-                    <Label Text="Ripple" HeightRequest="40"/>
-                </sfEffectsView:SfEffectsView>
-         
-                <Button Text="Apply Effect" Clicked="ApplyEffectClicked"/>
-            </StackLayout>
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.ColumnSpan="2">
+
+                        <sfEffectsView:SfEffectsView
+                            x:Name="effectsView"
+                            RippleAnimationDuration="500"
+                            VerticalOptions="Center">
+                            <Image Aspect="Fill" Source="Biscuits.png" />
+                        </sfEffectsView:SfEffectsView>
+
+                    </Grid>
+
+                    <Button
+                        x:Name="ApplyScaleEffectButton"
+                        Grid.Row="1"
+                        BackgroundColor="Accent"
+                        Clicked="ApplyScaleEffectButton_Clicked"
+                        HeightRequest="40"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Apply Effect"
+                        TextColor="White"
+                        VerticalOptions="CenterAndExpand"
+                        WidthRequest="120" />
+                    <Button
+                        x:Name="ScaleResetButton"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        BackgroundColor="Accent"
+                        Clicked="ScaleResetButton_Clicked"
+                        HeightRequest="40"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Reset"
+                        TextColor="White"
+                        VerticalOptions="Center"
+                        WidthRequest="120" />
+
+                </Grid>
 
 {% endhighlight %}
 
@@ -36,7 +77,7 @@ The [`ApplyEffects`] method is used to apply the provided effect with or without
 
             private void ApplyEffectClicked(object sender, EventArgs e)
             {
-                effectsView.ApplyEffects(SfEffects.Ripple, RippleStartPosition.Right, true);
+                effectsView.ApplyEffects(effects: SfEffects.Ripple, repeat: true);
             }
 
 {% endhighlight %}
@@ -47,13 +88,54 @@ The [`Reset`] method is used to reset the applied effect.
 
 {% highlight xaml %} 
 
-            <StackLayout>
-                <sfEffectsView:SfEffectsView x:Name="effectsView">
-                    <Label Text="Ripple" HeightRequest="40"/>
-                </sfEffectsView:SfEffectsView>
-         
-                <Button Text="Reset Effect" Clicked="ResetEffectClicked"/>
-            </StackLayout>
+                <Grid>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Grid.ColumnSpan="2">
+
+                        <sfEffectsView:SfEffectsView
+                            x:Name="effectsView"
+                            RippleAnimationDuration="500"
+                            VerticalOptions="Center">
+                            <Image Aspect="Fill" Source="Biscuits.png" />
+                        </sfEffectsView:SfEffectsView>
+
+                    </Grid>
+
+                    <Button
+                        x:Name="ApplyScaleEffectButton"
+                        Grid.Row="1"
+                        BackgroundColor="Accent"
+                        Clicked="ApplyScaleEffectButton_Clicked"
+                        HeightRequest="40"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Apply Effect"
+                        TextColor="White"
+                        VerticalOptions="CenterAndExpand"
+                        WidthRequest="120" />
+                    <Button
+                        x:Name="ScaleResetButton"
+                        Grid.Row="1"
+                        Grid.Column="1"
+                        BackgroundColor="Accent"
+                        Clicked="ScaleResetButton_Clicked"
+                        HeightRequest="40"
+                        HorizontalOptions="CenterAndExpand"
+                        Text="Reset"
+                        TextColor="White"
+                        VerticalOptions="Center"
+                        WidthRequest="120" />
+
+                </Grid>
 
 {% endhighlight %}
 

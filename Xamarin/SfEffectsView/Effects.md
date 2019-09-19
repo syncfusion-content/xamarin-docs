@@ -271,3 +271,175 @@ The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the 
 {% endhighlight %}
 
 {% endtabs %}
+
+## Combinations
+
+The [`SfEffectsView`] control provides support to apply multiple [`SfEffects`] in combination. The following are some valid combinations of [`SfEffects`]:
+
+### Highlight and Ripple
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+            <sfEffectsView:SfEffectsView TouchDownEffects="Highlight,Ripple">
+                <Label Text="Ripple" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" />
+            </sfEffectsView:SfEffectsView>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            var effectsView = new SfEffectsView()
+            {
+                TouchDownEffects = SfEffects.Highlight | SfEffects.Ripple,
+                Content = new Label()
+                {
+                    Text = "Ripple",
+                    FontAttributes = FontAttributes.Bold,
+                    FontSize = 18,
+                    HeightRequest = 50,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    VerticalTextAlignment = TextAlignment.Center,
+                }
+            };
+            this.Content = effectsView;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Highlight and Selection
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+            <sfEffectsView:SfEffectsView TouchDownEffects="Highlight" LongPressEffects="Selection">
+                <Label Text="Sign up" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" />
+            </sfEffectsView:SfEffectsView>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            var effectsView = new SfEffectsView()
+            {
+                TouchDownEffects = SfEffects.Highlight,
+                LongPressEffects = SfEffects.Selection,
+                Content = new Label()
+                {
+                    Text = "Sign up",
+                    HeightRequest = 50,
+                    FontAttributes = FontAttributes.Bold,
+                    FontSize = 18,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    VerticalTextAlignment = TextAlignment.Center,
+                }
+            };
+            this.Content = effectsView;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Ripple and Selection
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+            <sfEffectsView:SfEffectsView TouchDownEffects="Ripple" TouchUpEffects="Selection">
+                <Label Text="Sign up" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" />
+            </sfEffectsView:SfEffectsView>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            var effectsView = new SfEffectsView()
+            {
+                TouchDownEffects = SfEffects.Ripple,
+                TouchUpEffects = SfEffects.Selection,
+                Content = new Label()
+                {
+                    Text = "Sign up",
+                    HeightRequest = 50,
+                    FontAttributes = FontAttributes.Bold,
+                    FontSize = 18,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    VerticalTextAlignment = TextAlignment.Center,
+                }
+            };
+            this.Content = effectsView;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Highlight, Ripple and Selection
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+            <sfEffectsView:SfEffectsView TouchDownEffects="Highlight,Ripple" LongPressEffects="Selection">
+                <Label Text="Sign up" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" />
+            </sfEffectsView:SfEffectsView>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            var effectsView = new SfEffectsView()
+            {
+                TouchDownEffects = SfEffects.Highlight | SfEffects.Ripple,
+                LongPressEffects = SfEffects.Selection,
+                Content = new Label()
+                {
+                    Text = "Sign up",
+                    HeightRequest = 50,
+                    FontAttributes = FontAttributes.Bold,
+                    FontSize = 18,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    VerticalTextAlignment = TextAlignment.Center,
+                }
+            };
+            this.Content = effectsView;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Scale and Selection
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+            <sfEffectsView:SfEffectsView LongPressEffects="Scale,Selection">
+                <Label Text="Sign up" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" />
+            </sfEffectsView:SfEffectsView>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+            var effectsView = new SfEffectsView()
+            {
+                LongPressEffects = SfEffects.Scale | SfEffects.Selection,
+                Content = new Label()
+                {
+                    Text = "Sign up",
+                    HeightRequest = 50,
+                    FontAttributes = FontAttributes.Bold,
+                    FontSize = 18,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    VerticalTextAlignment = TextAlignment.Center,
+                }
+            };
+            this.Content = effectsView;
+
+{% endhighlight %}
+
+{% endtabs %}

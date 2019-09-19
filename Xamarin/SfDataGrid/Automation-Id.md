@@ -13,13 +13,13 @@ SfDataGrid and SfDataPager support built-in [AutomationId](https://docs.microsof
 
 ## DataGrid
 
-The following screensots illustrate the `AutomationId` values of grid cells, rows, and other inner elements of SfDataGrid.
+The following screenshots illustrate the `AutomationId` values of grid cells, rows, and other inner elements of SfDataGrid.
 
 ![Automation Id format for Row and Cell element](SfDataGrid_images/AutomationId_DataGrid.png)
 
 ![Automation Id format for LoadMoreView](SfDataGrid_images/AutomationId_LoadMoreItems.png)
 
-The following code snippet demonsttrates how to set the `AutomationId` to data grid.
+The following code snippet demonstrates how to set the `AutomationId` to data grid.
 
 {% tabs %}
 {% highlight xaml %}

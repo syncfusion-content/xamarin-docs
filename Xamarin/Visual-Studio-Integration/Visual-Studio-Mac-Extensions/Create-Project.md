@@ -11,7 +11,7 @@ documentation: ug
 
 The following procedure illustrates how to install Syncfusion Xamarin Extension in Visual Studio for Mac. 
 
-Follow [this guideline to install the Essential Studio for Xamarin Mac build](https://help.syncfusion.com/common/essential-studio/installation/essential-studio-mac-installer) if not installed, then you will get the Visual Studio for Mac Extensions in installed location.
+Follow [this guideline](https://help.syncfusion.com/common/essential-studio/installation/essential-studio-mac-installer) to install the Essential Studio for Xamarin Mac build if not installed, then you will get the Visual Studio for Mac Extensions in installed location.
 
 **Location:**
 

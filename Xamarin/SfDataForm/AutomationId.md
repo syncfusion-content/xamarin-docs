@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automation Id | SfDataForm | Xamarin.Forms | Syncfusion
+title: AutomationId | SfDataForm | Xamarin.Forms | Syncfusion
 description: Set Automation Id to SfDataForm for automation framework to find and interact with control inner elements.
 platform: Xamarin
 control: SfDataForm

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automation Id | SfSchedule | Xamarin.Forms | Syncfusion
+title: AutomationId | SfSchedule | Xamarin.Forms | Syncfusion
 description: Set Automation Id to SfSchedule for automation framework to find and interact with control inner elements.
 platform: Xamarin
 control: SfSchedule

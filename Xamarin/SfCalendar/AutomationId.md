@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automation Id | SfCalendar | Xamarin.Forms | Syncfusion
+title: AutomationId | SfCalendar | Xamarin.Forms | Syncfusion
 description: Set Automation Id to SfCalendar for automation framework to find and interact with control inner elements.
 platform: Xamarin
 control: SfCalendar

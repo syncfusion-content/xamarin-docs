@@ -80,7 +80,11 @@ schedule.MonthViewSettings = monthViewSettings;
 ![Month appointment diplay mode in schedule xamarin forms](monthview_images/appointmentdisplay.png)
 
 ### Month Appointment display count
-[AppointmentDisplayCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentDisplayCount.html) used to define the maximum number of the appointment to be displayed in a month cell in month view. If `AppointmentDisplayCount` value is 1 and the month cell have more than 1 appointments, single appointment will be displayed and remaining appointments in month cell will be displayed as more appointments. By clicking more option schedule navigate to day view by default.
+[AppointmentDisplayCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentDisplayCount.html) or [AppointmentIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentIndicatorCount.html) is used to define the maximum number of appointments to be displayed in a month cell in month view. If `AppointmentDisplayCount` value is 1 and the month cell have more than 1 appointments, single appointment will be displayed and remaining appointments in month cell will be displayed as more appointments. By clicking more option, schedule navigates to the day view by default.
+
+>**NOTE**
+* The `AppointmentIndicatorCount` support is applicable for XForms Android and iOS platforms.
+* The `AppointmentDisplayCount` support is applicable for XForms UWP (Desktop)and XForms WPF (Desktop) platforms.
 
 ![Month appointment diplay count in schedule xamarin forms](monthview_images/appointmentdisplay_count.png)
 
@@ -806,7 +810,7 @@ public class MonthCellDateBehavior : Behavior<Label>
 ![Month cell customization using Template selector in schedule xamarin forms](monthview_images/datatemplateselector_month.png)
 
 ## Getting Inline Appointment details
-Using [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~Appointment.html) argument in the [MonthInlineAppointmentTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs.html) of [MonthInlineAppointmentTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MonthInlineAppointmentTapped_EV.html) event, you can get the Month Inline Appointments details while tapping the specific appointment, and you can get the selected date by using the [selectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~selectedDate.html) property. You can do the required functions while tapping the inline appointment using this event. 
+Using [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~Appointment.html) argument in the [MonthInlineAppointmentTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs.html) of [MonthInlineAppointmentTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MonthInlineAppointmentTapped_EV.html) event, you can get the Month Inline Appointments details while tapping the specific appointment, and you can get the selected date by using the [selectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~selectedDate.html) property. `MonthInlineAppointmentTapped` also trigger while tapping the `No Events` view in inline. You can do the required functions while tapping the inline appointment using this event.
 
 {% tabs %}
 {% highlight c# %}
@@ -816,13 +820,23 @@ schedule.MonthInlineAppointmentTapped += Schedule_MonthInlineAppointmentTapped;
 
 private void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineAppointmentTappedEventArgs args)
 {
-	var appointment = (args.Appointment as ScheduleAppointment);
-	DisplayAlert(appointment.Subject, appointment.StartTime.ToString(), "ok");
+    if (args.Appointment != null)
+    {
+        var appointment = (args.Appointment as ScheduleAppointment);
+        DisplayAlert(appointment.Subject, appointment.StartTime.ToString(), "ok");
+    }
+    else
+    {
+        DisplayAlert("", "No Events", "ok");
+    }
 }
 {% endhighlight %}
 {% endtabs %}
 
 ![Month inline appointment details using MonthInlineAppointmentTapped in schedule xamarin forms](monthview_images/inlineappointmentdetails.png)
+
+N>
+* The `MonthInlineAppointmentTapped` is also applicable for AgendaView.
 
 ## InlineView Appearance  
 You can customize the inline view with two ways,

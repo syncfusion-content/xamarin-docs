@@ -608,6 +608,128 @@ ImageName = ImageSource.FromResource("MapsSample.pin.png");
 
 ![Custom Marker Image](Images/Markers_img5.jpeg)
 
+## Marker Alignment
+
+You can align the maps marker horizontally and vertically using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~HorizontalAlignmentProperty.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~VerticalAlignmentProperty.html) properties. 
+
+### Setting horizontal alignment
+
+The HorizontalAlignment property is used to position the marker icon in x-axis. The marker icon can be positioned using the following ways in x-axis:
+
+* Near: Specifies the near position of the marker icon for the given latitude and longitude values in x-axis position. 
+* Center: Specifies the center position of the marker icon for the given latitude and longitude values in x-axis position.
+* Far: Specifies the far position of the marker icon for the given latitude and longitude values in x-axis position.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<maps:SfMaps Grid.Row="0" x:Name="Map" EnableZooming="False" EnablePanning="False">
+    <maps:SfMaps.Layers >
+        <maps:ShapeFileLayer Uri="usa_state.shp" ShapeIDPath="Name" ShapeIDTableField="STATE_NAME" 
+                                    ItemsSource="{Binding DataSource}">
+            ....
+        <maps:ShapeFileLayer.MarkerSettings>
+        <maps:MapMarkerSetting x:Name="markerSetting" MarkerIcon="Image" ImageSource="pin.png" HorizontalAlignment="Center" IconSize="25"/>
+        </maps:ShapeFileLayer.MarkerSettings>
+            ....
+        </maps:ShapeFileLayer>
+    </maps:SfMaps.Layers>
+</maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfMaps map = new SfMaps();
+ShapeFileLayer layer = new ShapeFileLayer();
+CustomMarker customMarker = new CustomMarker();
+
+layer.ItemsSource = customMarker.DataSource;
+layer.Uri = "usa_state.shp";
+layer.ShapeIDPath = "Name";
+layer.ShapeIDTableField = "STATE_NAME";
+map.Layers.Add(layer);
+
+....
+
+MapMarkerSetting mapMarkerSetting = new MapMarkerSetting();
+mapMarkerSetting.MarkerIcon = MapMarkerIcon.Image;
+mapMarkerSetting.ImageSource = "pin.png";
+mapMarkerSetting.IconSize = 25;
+mapMarkerSetting.HorizontalAlignment = MarkerAlignment.Center;
+layer.MarkerSettings = mapMarkerSetting;
+
+....
+
+this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![HorizontalAlignment](Images/Horizontal_Alignment.png)
+
+### Setting vertical alignment
+
+The VerticalAlignment property is used to position the marker icon in y-axis. The marker icon can be positioned using the following ways in y-axis:
+
+* Near: Specifies the near position of the marker icon for the given latitude and longitude values in y-axis position.
+* Center: Specifies the center position of the marker icon for the given latitude and longitude values in y-axis position.
+* Far: Specifies the far position of the marker icon for the given latitude and longitude values in y-axis position.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<maps:SfMaps Grid.Row="0" x:Name="Map" EnableZooming="False" EnablePanning="False">
+    <maps:SfMaps.Layers >
+        <maps:ShapeFileLayer Uri="usa_state.shp" ShapeIDPath="Name" ShapeIDTableField="STATE_NAME" 
+                                    ItemsSource="{Binding DataSource}">
+            ....
+        <maps:ShapeFileLayer.MarkerSettings>
+        <maps:MapMarkerSetting x:Name="markerSetting" MarkerIcon="Image" ImageSource="pin.png" VerticalAlignment="Center" IconSize="25"/>
+        </maps:ShapeFileLayer.MarkerSettings>
+            ....
+        </maps:ShapeFileLayer>
+    </maps:SfMaps.Layers>
+</maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfMaps map = new SfMaps();
+ShapeFileLayer layer = new ShapeFileLayer();
+CustomMarker customMarker = new CustomMarker();
+
+layer.ItemsSource = customMarker.DataSource;
+layer.Uri = "usa_state.shp";
+layer.ShapeIDPath = "Name";
+layer.ShapeIDTableField = "STATE_NAME";
+map.Layers.Add(layer);
+
+....
+
+MapMarkerSetting mapMarkerSetting = new MapMarkerSetting();
+mapMarkerSetting.MarkerIcon = MapMarkerIcon.Image;
+mapMarkerSetting.ImageSource = "pin.png";
+mapMarkerSetting.IconSize = 25;
+mapMarkerSetting.VerticalAlignment = MarkerAlignment.Center;
+layer.MarkerSettings = mapMarkerSetting;
+
+....
+
+this.Content = map;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![VerticalAlignment](Images/Vertical_Alignment.png)
+
+N> The default marker icon position for VerticalAlignment and HorizontalAlignment is Center.
+
 ## Events
 
 The `MarkerSelected` event is fired when a marker is selected. The `CustomView` and `MapMarker` will be passed to `MarkerSelectedEventArgs`.

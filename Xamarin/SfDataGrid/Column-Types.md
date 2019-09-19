@@ -259,6 +259,8 @@ orderID.Padding = new Thickness(10, 0, 0, 0);
 {% endhighlight %}
 {% endtabs %}
 
+N> `GridTemplateColumn` ignores the `GridTemplateColumn.Padding` values set in the sample since it takes default padding values based on the [DataGridStyle.GetGridLinesVisibility](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetGridLinesVisibility.html), so that the borders are visible. Hence to set custom padding values, set margin for the base view of your DataTemplate.
+
 ## GridTextColumn
 
 GridTextColumn inherits all the properties of GridColumn. It is used to host the textual content in the record cells. Each of the record cell displays text based on the `MappingName` that associates the column with a property in the data source.

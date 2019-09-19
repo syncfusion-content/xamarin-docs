@@ -95,7 +95,7 @@ with font family name.
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/FontFamily.png)
+![SfImageEditor](ImageEditor_images/FontFamily.jpg)
 
 ## Multiline text and text alignment
 
@@ -113,7 +113,7 @@ N> The default text alignment is `Left` and text alignment is not applicable for
 
 {% endhighlight %}
 
-![SfImageEditor](ImageEditor_images/multiline.png)
+![SfImageEditor](ImageEditor_images/multiline.jpg)
 
 ## Text Rotation
 
@@ -143,4 +143,15 @@ You can rotate the text based on a particular angle using `Angle` property in `T
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/rotation.png)
+![SfImageEditor](ImageEditor_images/rotation.jpg)
+
+## Restricting the edit text box pop-up window
+
+You can restrict the edit text box pop-up window using the `IsEditable` property. By Default, the value of the IsEditable property is true, so you can edit the text in edit text box pop-up window. When setting the IsEditable property to false, the edit text box pop-up window will not be displayed, and you are restricted to edit the text in the edit text box. 
+
+{% highlight c# %}
+
+ editor.AddText("text", new TextSettings { IsEditable=false });
+
+{% endhighlight %}
+

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: AutomationId | SfCalendar | Xamarin.Forms | Syncfusion
-description: Learn how to use automationid support
+description: Set Automation Id to SfCalendar for automation framework to find and interact with control inner elements.
 platform: Xamarin
-control: Calendar
-documentation: ug
+control: SfCalendar
+documentation: UG
 ---
 
 # AutomationId
@@ -92,7 +92,7 @@ The `SfCalendar` control has built-in `AutomationId` for inner elements. Please 
 
 </table>
 
-To keep unique `AutomationId`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`. For example, if you set `SfCalendar` AutomationId as “SfCalendar.AutomationId = “Calendar””, then the Automation framework will interact with the `RightArrow` button as `CalendarForward`. The following screenshots denote the AutomationIds for inner elements.
+To keep unique `AutomationId`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`. For example, if you set `SfCalendar` AutomationId as `SfCalendar.AutomationId = Calendar`, then the Automation framework will interact with the `RightArrow` button as `CalendarForward`. The following screenshots denote the AutomationIds for inner elements.
 
 ## Month View
 

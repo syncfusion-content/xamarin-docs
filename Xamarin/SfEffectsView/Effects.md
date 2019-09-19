@@ -13,7 +13,7 @@ The [`SfEffectsView`] control provides support to ripple effect, highlight effec
 
 ## Highlight
 
-[`SfEffects.Highlight`] is a smooth transition on the background color of the [`SfEffectsView`]. It generally appears before all the effects when it is given in combination with other [`SfEffects`].
+[`SfEffects.Highlight`] is a smooth transition on the background color of the [`SfEffectsView`].
 
 {% tabs %} 
 
@@ -135,9 +135,9 @@ The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the 
 
 {% highlight xaml %} 
 
-                <sfEffectsView:SfEffectsView HorizontalOptions="Center" TouchDownEffects="Ripple">
-                    <Label BackgroundColor="#D3D2D5" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center" Text="Ripple" VerticalOptions="Center" VerticalTextAlignment="Center" WidthRequest="90" />
-                </sfEffectsView:SfEffectsView>
+            <sfEffectsView:SfEffectsView HorizontalOptions="Center" TouchDownEffects="Ripple">
+                <Label BackgroundColor="#D3D2D5" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center" Text="Ripple" VerticalOptions="Center" VerticalTextAlignment="Center" WidthRequest="90" />
+            </sfEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -208,7 +208,7 @@ The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the 
 
 ## Selection
 
-[`SfEffects.Selection`] is a smooth color transition to indicate the view state is moved to selected state. It generally appears after the ripple effect when it is given in combination with [`SfEffects.Ripple`] effect.
+[`SfEffects.Selection`] is a smooth color transition to indicate the view state is moved to selected state.
 
 {% tabs %} 
 

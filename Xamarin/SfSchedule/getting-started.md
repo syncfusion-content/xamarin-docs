@@ -118,18 +118,18 @@ To launch the schedule in WPF SfScheduleRenderer.Init() method in the MainWindow
 {% tabs %}   
 {% highlight c# %}
 // In App.xaml.cs
-protected override void OnLaunched(LaunchActivatedEventArgs e)
+public partial class MainWindow : FormsApplicationPage
 {
-   … 
-   if (rootFrame == null) 
-   { 
-      List<Assembly> assembliesToInclude = new List<Assembly>();
+     public MainWindow()
+     { 
+            InitializeComponent();
 
-      assembliesToInclude.Add(typeof(Syncfusion.SfSchedule.XForms.UWP.SfScheduleRender).GetTypeInfo().Assembly);
+            Forms.Init();
 
-      Xamarin.Forms.Forms.Init(e, assembliesToInclude); 
-   } 
-   … 
+            Syncfusion.SfSchedule.XForms.WPF.SfScheduleRenderer.Init();
+
+            LoadApplication(new App());
+     }
 }
 {% endhighlight %}
 {% endtabs %}  

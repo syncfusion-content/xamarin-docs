@@ -38,9 +38,9 @@ this.Content = calendar;
 
 ## Blackout Dates
 
-In `SfCalendar`, [BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html) refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted Stripes.
+In `SfCalendar`, [BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html) refers the disabled dates that restrict the user from selecting it. These dates will be marked with slanted `Stripes` and `Strikethrough`, by using the [BlackoutDatesViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDatesViewMode.html) property. By default, the value of this property is set to `Strikethrough`.
 
-The BlackoutDays can be achieved in two ways.
+The Blackout dates can be achieved in two ways.
 
 A date collection can be provided to set the [BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html). This is useful when one wants to block dates where holidays or any other events occur.
 
@@ -48,19 +48,25 @@ By invoking the [AddDatesInPast](https://help.syncfusion.com/cr/xamarin/Syncfusi
 
 {% highlight c# %}
 	
-SfCalendar calendar = new SfCalendar();        
+SfCalendar calendar = new SfCalendar(); 
+calendar.BlackoutDatesViewMode = BlackoutDatesViewMode.Stripes;       
 List<DateTime> black_dates = new List<DateTime>();
-black_dates.Add (new DateTime(2016,1,20));
-black_dates.Add (new DateTime(2016,1,21));
-black_dates.Add (new DateTime(2016,1,22));
-black_dates.Add (new DateTime(2016,1,23));
-black_dates.Add (new DateTime(2016,1,24));
+black_dates.Add(new DateTime(2019, 09, 18));
+black_dates.Add(new DateTime(2019, 09, 19));
+black_dates.Add(new DateTime(2019, 09, 20));
+black_dates.Add(new DateTime(2019, 09, 21));
+black_dates.Add(new DateTime(2019, 09, 22));
+black_dates.Add(new DateTime(2019, 09, 23));
+black_dates.Add(new DateTime(2019, 09, 24));
+black_dates.Add(new DateTime(2019, 09, 25));
+black_dates.Add(new DateTime(2019, 09, 26));
+black_dates.Add(new DateTime(2019, 09, 27));
 calendar.BlackoutDates= black_dates ;
 this.Content = calendar;
 	
 {%  endhighlight %}
 	
-![BlackoutDate support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-Blackout.jpg)
+![BlackoutDate support in Xamarin.Forms Calendar](images/xamarin.forms-BlackoutDates.png)
 
 ### Dynamic Blackout dates rendering
 Using[OnMonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnMonthCellLoaded_EV.html) event you can render the black out dates.

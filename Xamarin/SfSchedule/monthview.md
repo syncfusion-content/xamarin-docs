@@ -833,7 +833,7 @@ private void Schedule_MonthInlineAppointmentTapped(object sender, MonthInlineApp
 {% endhighlight %}
 {% endtabs %}
 
-![Month inline appointment details using MonthInlineAppointmentTapped in schedule xamarin forms](monthview_images/inlineappointmentdetails.png)
+![Month inline appointment details using MonthInlineAppointmentTapped in schedule xamarin forms](monthview_images/xamarin.forms-Schedule-InlineAppointmentTapped.png)
 
 N>
  The `MonthInlineAppointmentTapped` is also applicable for AgendaView.

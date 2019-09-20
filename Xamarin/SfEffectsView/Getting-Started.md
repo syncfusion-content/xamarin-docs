@@ -80,7 +80,7 @@ Android platform does not require any additional configuration to render the SfE
 
 ## Initializing SfEffectsView
 
-Import the [`SfEffectsView`]() control namespace in respective page as demonstrated in the following code sample.
+Import the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control namespace in respective page as demonstrated in the following code sample.
 
 {% tabs %} 
 

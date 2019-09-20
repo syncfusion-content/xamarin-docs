@@ -13,7 +13,7 @@ The Shimmer control supports options to customize the wave color, shimmer color,
 
 ## WaveDirection
 
-The [`WaveDirection`] property of [`SfShimmer`] is used to change the direction of shimmer wave. The following different wave directions are available in [`SfShimmer`]:
+The [`WaveDirection`]() property of [`SfShimmer`]() is used to change the direction of shimmer wave. The following different wave directions are available in [`SfShimmer`]():
 
 * [`Default`]()
 * [`LeftToRight`]()
@@ -54,7 +54,7 @@ The [`WaveDirection`] property of [`SfShimmer`] is used to change the direction 
 
 ## Color
 
-The [`Color`] property of [`SfShimmer`] is used to customize the color of shimmer.
+The [`Color`]() property of [`SfShimmer`]() is used to customize the color of shimmer.
 
 {% tabs %} 
 
@@ -91,7 +91,7 @@ The [`Color`] property of [`SfShimmer`] is used to customize the color of shimme
 
 ## WaveColor
 
-The [`WaveColor`] property of [`SfShimmer`] is used to customize the color of wave.
+The [`WaveColor`]() property of [`SfShimmer`]() is used to customize the color of wave.
 
 {% tabs %} 
 
@@ -128,7 +128,7 @@ The [`WaveColor`] property of [`SfShimmer`] is used to customize the color of wa
 
 ## WaveWidth
 
-The [`WaveWidth`] property of [`SfShimmer`] is used to customize the width of wave.
+The [`WaveWidth`]() property of [`SfShimmer`]() is used to customize the width of wave.
 
 {% tabs %} 
 
@@ -166,7 +166,7 @@ The [`WaveWidth`] property of [`SfShimmer`] is used to customize the width of wa
 
 ## AnimationDuration
 
-You can control the duration of wave animation using the [`AnimationDuration`] property of [`SfShimmer`]. The default value of [`AnimationDuration`] is 1000 ms.
+You can control the duration of wave animation using the [`AnimationDuration`]() property of [`SfShimmer`](). The default value of [`AnimationDuration`]() is 1000 ms.
 
 {% tabs %} 
 

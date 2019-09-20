@@ -20,7 +20,7 @@ The following different built-in shimmer types are available in Shimmer:
 * [`Feed`]()
 * [`Shopping`]()
 
-You can use the built-in shimmer types by setting the [`Type`] of [`SfShimmer`].
+You can use the built-in shimmer types by setting the [`Type`]() of [`SfShimmer`]().
 
 {% tabs %} 
 
@@ -57,7 +57,7 @@ You can use the built-in shimmer types by setting the [`Type`] of [`SfShimmer`].
 
 ## Custom view
 
-You can customize the shimmer using your own view using the [`CustomView`] property of [`SfShimmer`].
+You can customize the shimmer using your own view using the [`CustomView`]() property of [`SfShimmer`]().
 
 {% tabs %} 
 
@@ -164,4 +164,4 @@ You can customize the shimmer using your own view using the [`CustomView`] prope
 
 ![Shimmer Custom View for Xamarin.Forms](Shimmer-Types_images/CustomView.gif)
 
-N> Currently, [`CustomView`] will support only in Android.
+N> Currently, [`CustomView`]() will support only in Android.

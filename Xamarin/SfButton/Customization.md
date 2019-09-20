@@ -297,7 +297,7 @@ The [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons
     * Start  - Places the image at the start if any flow direction is mentioned.
     * End    - Places the image at the end if any flow direction is mentioned.
     * Top    - Places the image at the top of the text.
-    * Bottom - Places the image at the bottom of text.
+    * Bottom - Places the image at the bottom of the text.
     * Left   - Places the image at the left of the text. 
     * Right  - Places the image at the right of the text.
 

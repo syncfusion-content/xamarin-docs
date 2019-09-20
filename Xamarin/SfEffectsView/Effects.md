@@ -9,11 +9,11 @@ documentation: ug
 
 # Effects
 
-The [`SfEffectsView`] control provides support to ripple effect, highlight effect, and more. This section explains about different effects available in the effects view control.
+The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides support to ripple effect, highlight effect, and more. This section explains about different effects available in the effects view control.
 
 ## Highlight
 
-[`SfEffects.Highlight`] is a smooth transition on the background color of the [`SfEffectsView`].
+`SfEffects.Highlight` is a smooth transition on the background color of the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html).
 
 {% tabs %} 
 
@@ -129,7 +129,7 @@ The [`SfEffectsView`] control provides support to ripple effect, highlight effec
 
 ## Ripple
 
-The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the tapped location, and it grows till the whole layout is filled. [`SfEffects.Ripple`] is rendered based on [`SfEffectsView.InitialRippleFactor`].
+The `SfEffects.Ripple` is a growable circle, which is initially placed on the tapped location, and it grows till the whole layout is filled. `SfEffects.Ripple` is rendered based on [`InitialRippleFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~InitialRippleFactor.html).
 
 {% tabs %} 
 
@@ -171,7 +171,7 @@ The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the 
 
 ## Scale
 
-[`SfEffects.Scale`] is a smooth transition from actual size of the object to the size calculated based on [`SfEffectsView.ScaleFactor`] in pixels.
+`SfEffects.Scale` is a smooth transition from actual size of the object to the size calculated based on [`ScaleFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~ScaleFactor.html) in pixels.
 
 {% tabs %} 
 
@@ -208,7 +208,7 @@ The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the 
 
 ## Selection
 
-[`SfEffects.Selection`] is a smooth color transition to indicate the view state is moved to selected state.
+`SfEffects.Selection` is a smooth color transition to indicate the view state is moved to selected state.
 
 {% tabs %} 
 
@@ -242,7 +242,7 @@ The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the 
 
 ## Rotation
 
-[`SfEffects.Rotation`] provides a circular movement to the [`SfEffectsView`] around the center of the [`SfEffectsView`] based on the specified [`SfEffectsView.Angle`]. 
+`SfEffects.Rotation` provides a circular movement to the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) around the center of the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) based on the specified [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~Angle.html). 
 
 {% tabs %} 
 
@@ -274,7 +274,7 @@ The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the 
 
 ## Combinations
 
-The [`SfEffectsView`] control provides support to apply multiple [`SfEffects`] in combination. The following are some valid combinations of [`SfEffects`]:
+The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides support to apply multiple [`SfEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffects.html) in combination. The following are some valid combinations of [`SfEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffects.html):
 
 ### Highlight and Ripple
 

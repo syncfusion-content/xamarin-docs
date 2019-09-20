@@ -87,7 +87,7 @@ calendar.EnableDatesInPast = False;
 
 {% endtabs %}
 
-![Month View in Xamarin.Forms Calendar ](images/xamarin.forms-EnableDates.png)
+![Month View in Xamarin.Forms Calendar ](images/Xamarin.forms-Calendar-EnableDatesInPast.png)
 
 N>
  The `EnableDatesInPast` is not applicable for UWP.

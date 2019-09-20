@@ -21,7 +21,9 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Xamarin Forms SfBorder Nuget reference](images/Adding SfBorder reference.png)
 
-N> Install the same version of SfBorder NuGet in all the projects.
+N> 
+* Install the same version of SfBorder NuGet in all the projects.
+* In addition, you need to install the [Syncfusion.Xamarin.Core.WPF]() package for Xamarin.Forms WPF platform only.
 
 **Method 2: Adding SfBorder reference from toolbox**
 
@@ -49,6 +51,10 @@ Location: {Installed location}/{version}/Xamarin/lib
 <tr>
 <td>UWP</td>
 <td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>WPF</td>
+<td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.WPF.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -103,6 +109,28 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
         Xamarin.Forms.Forms.Init(e, assembliesToInclude);	
         …     
     }
+
+{% endhighlight %}
+
+### Windows Presentation Foundation (WPF)
+
+To launch the border in WPF, call the SfBorderRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
+
+{% highlight C# %} 
+
+public partial class MainWindow : FormsApplicationPage
+{
+     public MainWindow()
+     { 
+            InitializeComponent();
+
+            Forms.Init();
+
+            Syncfusion.XForms.WPF.Border.SfBorderRenderer.Init();
+
+            LoadApplication(new App());
+     }
+}
 
 {% endhighlight %}
 

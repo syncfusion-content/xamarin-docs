@@ -7,7 +7,9 @@ control: SegmentedControl
 documentation: ug
 ---
 
-The SfSegmentedControl provides support to make a null selection. By default, it selects the 0th indexed item. Now, it provides support to set the `SelectedIndex` as negative value or beyond the collection count for making a no selection.
+# Clear the selection in SfSegmentedControl
+
+The SfSegmentedControl provides support to make a null selection. By default, it selects the 0th indexed item. Now, it provides a support to clear the selection on segments by setting the `SelectedIndex` value as negative value or beyond the collection count.
 
 {% tabs %}
 

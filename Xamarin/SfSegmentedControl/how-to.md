@@ -7,9 +7,9 @@ control: SegmentedControl
 documentation: ug
 ---
 
-# How to clear the selection in SfSegmentedControl?
+# How to clear the selection in SfSegmentedControl
 
-SfSegmentedControl provides the support to make a null selection. By default, it selects the 0th indexed item. Now providing the support to set the `SelectedIndex` as negative value or beyond the collection count for making a no selection.
+The SfSegmentedControl provides support to make a null selection. By default, it selects the 0th indexed item. Now, it provides support to set the `SelectedIndex` as negative value or beyond the collection count for making a no selection.
 
 {% tabs %}
 
@@ -63,4 +63,3 @@ xmlns:sys="clr-namespace:System.Collections.Generic;assembly=netstandard"
 {% endtabs %}
 
 ![Indicates the nullable selection of SfSegmentedControl in Xamarin.Forms](images/how-to/Xamarin_Forms_SegmentedControl_Nullable_Selection.png)
-

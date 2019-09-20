@@ -9,7 +9,7 @@ documentation: ug
 
 # Effects
 
-The [`SfEffectsView`] control provides support to ripple effect, highlight effect, and more. This section explains about different effects available in effects view.
+The [`SfEffectsView`] control provides support to ripple effect, highlight effect, and more. This section explains about different effects available in the effects view control.
 
 ## Highlight
 
@@ -129,7 +129,7 @@ The [`SfEffectsView`] control provides support to ripple effect, highlight effec
 
 ## Ripple
 
-The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the tapped location, and it will grow till the whole layout is filled. [`SfEffects.Ripple`] is rendered based on [`SfEffectsView.InitialRippleFactor`].
+The [`SfEffects.Ripple`] is a growable circle, which is initially placed on the tapped location, and it grows till the whole layout is filled. [`SfEffects.Ripple`] is rendered based on [`SfEffectsView.InitialRippleFactor`].
 
 {% tabs %} 
 

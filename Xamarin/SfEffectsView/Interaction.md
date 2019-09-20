@@ -13,7 +13,7 @@ You can set the effects on different interactions. This section explains how to 
 
 ## TouchDownEffects
 
-The [`TouchDownEffects`] property of [`SfEffectsView`] is used to render the effects in touch down interaction.
+The [`TouchDownEffects`] property of [`SfEffectsView`] is used to render the effects in touch-down interaction.
 
 {% tabs %} 
 
@@ -43,8 +43,7 @@ The [`TouchDownEffects`] property of [`SfEffectsView`] is used to render the eff
 
 ## LongPressEffects
 
-The [`LongPressEffects`] property of [`SfEffectsView`] is used to render the effects in long press interaction.
-
+The [`LongPressEffects`] property of [`SfEffectsView`] is used to render the effects in long-press interaction.
 
 {% tabs %} 
 
@@ -74,7 +73,7 @@ The [`LongPressEffects`] property of [`SfEffectsView`] is used to render the eff
 
 ## TouchUpEffects
 
-The [`TouchUpEffects`] property of [`SfEffectsView`] is used to render the effects in touch up interaction.
+The [`TouchUpEffects`] property of [`SfEffectsView`] is used to render the effects in touch-up interaction.
 
 {% tabs %} 
 

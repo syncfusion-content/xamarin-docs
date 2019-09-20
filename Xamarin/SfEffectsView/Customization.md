@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization of SfEffectsView
 
-The [`SfEffectsView`] control provides support to customize the corner radius, animation duration, color and more. This section explains how to customize the effects view control.
+The [`SfEffectsView`] control provides support to customize the corner radius, animation duration, color, and more. This section explains how to customize the effects view control.
 
 ## RippleAnimationDuration
 
@@ -446,7 +446,7 @@ The [`SelectionColor`] property of [`SfEffectsView`] is used to customize the co
 
 ## CornerRadius
 
-The [`CornerRadius`] property of [`SfEffectsView`] is used to customize the corner radius of [`SfEffectsView`].
+The [`CornerRadius`] property of [`SfEffectsView`] is used to customize the corner radius of the [`SfEffectsView`] control.
 
 {% tabs %} 
 

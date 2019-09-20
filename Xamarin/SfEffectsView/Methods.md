@@ -18,7 +18,7 @@ The [`ApplyEffects`] method is used to trigger the effects rendering with or wit
 * [`effects`] - [`SfEffects`] to be applied. By default, [`SfEffects.Ripple`] will be applied.
 * [`rippleStartPosition`] - [`RippleStartPosition`] can be left, top, right, bottom, or default. By default, ripple starts from the center.
 * [`rippleStartPoint`] - point at which ripple animation starts. The default value is null.
-* [`repeat`] - bool value used to set whether to repeat the applied effect. The default value is false. Only [`SfEffects.Ripple`] and [`SfEffects.Highlight `] can be repeated. 
+* [`repeat`] - bool value used to set whether to repeat the applied effect. The default value is false. Only [`SfEffects.Ripple`] and [`SfEffects.Highlight `] can be repeated.
 
 {% highlight xaml %} 
 
@@ -82,11 +82,11 @@ The [`ApplyEffects`] method is used to trigger the effects rendering with or wit
 
 {% endhighlight %}
 
-N> The [`SfEffects`] applied using [`ApplyEffects`] method will be removed only after calling [`Reset`] method is called.
+N> The [`SfEffects`] applied using [`ApplyEffects`] method will be removed only after calling the [`Reset`] method.
 
 ## Reset
 
-The [`Reset`] method is used to reset the [`SfEffects.Highlight`] and [`SfEffects.Ripple`] effects which are applied by using [`ApplyEffects`] method.
+The [`Reset`] method is used to reset the [`SfEffects.Highlight`] and [`SfEffects.Ripple`] effects, which are applied using the [`ApplyEffects`] method.
 
 {% highlight xaml %} 
 

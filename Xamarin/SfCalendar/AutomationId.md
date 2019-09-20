@@ -94,23 +94,23 @@ The `SfCalendar` control has built-in `AutomationId` for inner elements. Please 
 
 To keep unique `AutomationId`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`. For example, if you set `SfCalendar` AutomationId as `SfCalendar.AutomationId = Calendar`, then the Automation framework will interact with the `RightArrow` button as `CalendarForward`. The following screenshots denote the AutomationIds for inner elements.
 
-## Month View
+## Month view
 
 ![MonthView AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-month-view.png)
 
-## Week View
+## Week view
 
-![WeekView AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-week-view.png)
-![WeekView AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-weekview.png)
+![Week view AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-week-view.png)
+![Week view AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-weekview.png)
 
-## Year View
+## Year view
 
 ![Year view AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-year-view.png)
 
-## Decade View
+## Decade view
 
 ![Decade view AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-decade-view.png)
 
-## Century View
+## Century view
 
-![CenturyView AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-century-view.png)
+![Century view AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-century-view.png)

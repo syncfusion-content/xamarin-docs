@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Single page view mode | Syncfusion
-description: Importing and exporting form data
+title: Single page view mode in PDF Viewer Xamarin Forms | Syncfusion
+description: PDF Viewer provides option to view PDFs page by page with horizontal navigation support
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug

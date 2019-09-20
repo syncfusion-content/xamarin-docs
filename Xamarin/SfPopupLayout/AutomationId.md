@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automation Id | SfPopupLayout | Xamarin | Syncfusion
+title: Automation | SfPopupLayout | Xamarin | Syncfusion
 description: Set Automation Id to SfPopupLayout for automation framework to find and interact with control inner elements.
 platform: xamarin
 control: SfPopupLayout

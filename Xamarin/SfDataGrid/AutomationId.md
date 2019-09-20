@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Automation Id | SfDataGrid | Xamarin | Syncfusion
+title: Automation | SfDataGrid | Xamarin | Syncfusion
 description: Set Automation Id to SfDataGrid for automation framework to find and interact with control inner elements.
 platform: xamarin
 control: SfDataGrid

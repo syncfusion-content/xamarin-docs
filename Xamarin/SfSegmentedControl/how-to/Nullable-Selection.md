@@ -1,13 +1,11 @@
 ---
 layout: post
-title: How to section of Syncfusion segmented control for Xamarin.Forms
-description: Learn how to make a nullable selection in segmented control
+title: Nullable selection in Syncfusion segmented control for Xamarin.Forms
+description: Learn how to clear the selection in segmented control
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
-
-# How to clear the selection in SfSegmentedControl
 
 The SfSegmentedControl provides support to make a null selection. By default, it selects the 0th indexed item. Now, it provides support to set the `SelectedIndex` as negative value or beyond the collection count for making a no selection.
 
@@ -20,7 +18,7 @@ Namespace:
 xmlns:sys="clr-namespace:System.Collections.Generic;assembly=netstandard"
 ...
    <buttons:SfSegmentedControl
-        SelectedIndex="-9"
+        SelectedIndex="-1"
         BorderColor="#3F3F3F"
         FontColor="Black"
         HorizontalOptions="Center"
@@ -43,7 +41,7 @@ xmlns:sys="clr-namespace:System.Collections.Generic;assembly=netstandard"
 
     SfSegmentedControl segmentedControl = new SfSegmentedControl()
     {
-        SelectedIndex = -9,
+        SelectedIndex = -1,
         BorderColor = Color.FromHex("#3F3F3F"),
         FontColor = Color.Black,
         HorizontalOptions = LayoutOptions.Center,

@@ -50,18 +50,23 @@ By invoking the [AddDatesInPast](https://help.syncfusion.com/cr/xamarin/Syncfusi
 	
 SfCalendar calendar = new SfCalendar(); 
 calendar.BlackoutDatesViewMode = BlackoutDatesViewMode.Stripes;       
-List<DateTime> black_dates = new List<DateTime>();
-black_dates.Add (new DateTime(2016,1,20));
-black_dates.Add (new DateTime(2016,1,21));
-black_dates.Add (new DateTime(2016,1,22));
-black_dates.Add (new DateTime(2016,1,23));
-black_dates.Add (new DateTime(2016,1,24));
-calendar.BlackoutDates= black_dates ;
+List<DateTime> black_Dates = new List<DateTime>();
+black_Dates.Add(new DateTime(2019, 09, 18));
+black_Dates.Add(new DateTime(2019, 09, 19));
+black_Dates.Add(new DateTime(2019, 09, 20));
+black_Dates.Add(new DateTime(2019, 09, 21));
+black_Dates.Add(new DateTime(2019, 09, 22));
+black_Dates.Add(new DateTime(2019, 09, 23));
+black_Dates.Add(new DateTime(2019, 09, 24));
+black_Dates.Add(new DateTime(2019, 09, 25));
+black_Dates.Add(new DateTime(2019, 09, 26));
+black_Dates.Add(new DateTime(2019, 09, 27));
+calendar.BlackoutDates= black_Dates ;
 this.Content = calendar;
 	
 {%  endhighlight %}
 	
-![BlackoutDate support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-Blackout.jpg)
+![BlackoutDate support in Xamarin.Forms Calendar](images/Xamarin.forms-Calendar-BlackoutDates.png)
 
 ### Dynamic Blackout dates rendering
 Using[OnMonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnMonthCellLoaded_EV.html) event you can render the black out dates.

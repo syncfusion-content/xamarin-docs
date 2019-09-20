@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customization of Syncfusion Shimmer
 description: How to customize shimmer.

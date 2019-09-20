@@ -1,15 +1,17 @@
 ---
 layout: post
 title: Nullable selection in Syncfusion segmented control for Xamarin.Forms
-description: Learn how to clear the selection in segmented control
+description: Learn how to clear the default selection in segmented control
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
 
-# Clear the selection in SfSegmentedControl
+# Clear the default selection in SfSegmentedControl
 
-The SfSegmentedControl provides support to make a null selection. By default, it selects the 0th indexed item. Now, it provides a support to clear the selection on segments by setting the `SelectedIndex` value as negative value or beyond the collection count.
+The SfSegmentedControl provides support to clear the default selection on segments by setting the `SelectedIndex` value as negative value or beyond the collection count.
+
+N> By default, it selects the 0th indexed item.
 
 {% tabs %}
 

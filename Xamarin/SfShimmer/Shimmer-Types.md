@@ -13,14 +13,14 @@ documentation: ug
 
 The following different built-in shimmer types are available in Shimmer:
 
-* [`Persona`]()
-* [`Profile`]()
-* [`Article`]()
-* [`Video`]()
-* [`Feed`]()
-* [`Shopping`]()
+* `Persona`
+* `Profile`
+* `Article`
+* `Video`
+* `Feed`
+* `Shopping`
 
-You can use the built-in shimmer types by setting the [`Type`] of [`SfShimmer`].
+You can use the built-in shimmer types by setting the [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~Type.html) of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html).
 
 {% tabs %} 
 
@@ -57,7 +57,7 @@ You can use the built-in shimmer types by setting the [`Type`] of [`SfShimmer`].
 
 ## Custom view
 
-You can customize the shimmer using your own view using the [`CustomView`] property of [`SfShimmer`].
+You can customize the shimmer using your own view using the [`CustomView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~CustomView.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html).
 
 {% tabs %} 
 
@@ -164,4 +164,4 @@ You can customize the shimmer using your own view using the [`CustomView`] prope
 
 ![Shimmer Custom View for Xamarin.Forms](Shimmer-Types_images/CustomView.gif)
 
-N> Currently, [`CustomView`] will support only in Android.
+N> Currently, [`CustomView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~CustomView.html) will support only in Android.

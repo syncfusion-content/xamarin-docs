@@ -100,7 +100,7 @@ chart.PrimaryAxis = new CategoryAxis() { Interval = 2, LabelPlacement = LabelPla
 
 Category axis can also be rendered based on the index values of data source by setting the [`ArrangeByIndex`]() property to true in the axis.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight xaml %}
 

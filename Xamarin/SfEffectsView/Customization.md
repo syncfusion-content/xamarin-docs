@@ -9,11 +9,11 @@ documentation: ug
 
 # Customization of SfEffectsView
 
-The [`SfEffectsView`] control provides support to customize the corner radius, animation duration, color, and more. This section explains how to customize the effects view control.
+The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides support to customize the corner radius, animation duration, color, and more. This section explains how to customize the effects view control.
 
 ## RippleAnimationDuration
 
-The [`RippleAnimationDuration`] property of [`SfEffectsView`] is used to customize the duration of ripple animation.
+The [`RippleAnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~RippleAnimationDuration.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the duration of ripple animation.
 
 {% tabs %} 
 
@@ -45,7 +45,7 @@ The [`RippleAnimationDuration`] property of [`SfEffectsView`] is used to customi
 
 ## ScaleAnimationDuration
 
-The [`ScaleAnimationDuration`] property of [`SfEffectsView`] is used to customize the duration of scale animation.
+The [`ScaleAnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~ScaleAnimationDuration.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the duration of scale animation.
 
 {% tabs %} 
 
@@ -78,7 +78,7 @@ The [`ScaleAnimationDuration`] property of [`SfEffectsView`] is used to customiz
 
 ## RotationAnimationDuration
 
-The [`RotationAnimationDuration`] property of [`SfEffectsView`] is used to customize the duration of rotation animation.
+The [`RotationAnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~RotationAnimationDuration.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the duration of rotation animation.
 
 {% tabs %} 
 
@@ -111,7 +111,7 @@ The [`RotationAnimationDuration`] property of [`SfEffectsView`] is used to custo
 
 ## InitialRippleFactor
 
-The [`InitialRippleFactor`] property of [`SfEffectsView`] is used to customize the initial radius of ripple.
+The [`InitialRippleFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~InitialRippleFactor.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the initial radius of ripple.
 
 {% tabs %} 
 
@@ -230,7 +230,7 @@ The [`InitialRippleFactor`] property of [`SfEffectsView`] is used to customize t
 
 ## ScaleFactor
 
-The [`ScaleFactor`] property of [`SfEffectsView`] is used to customize the scale of the view.
+The [`ScaleFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~ScaleFactor.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the scale of the view.
 
 {% tabs %} 
 
@@ -266,7 +266,7 @@ The [`ScaleFactor`] property of [`SfEffectsView`] is used to customize the scale
 
 ## HighlightColor
 
-The [`HighlightColor`] property of [`SfEffectsView`] is used to customize the color of highlight effect.
+The [`HighlightColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~HighlightColor.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the color of highlight effect.
 
 {% tabs %} 
 
@@ -381,7 +381,7 @@ The [`HighlightColor`] property of [`SfEffectsView`] is used to customize the co
 
 ## RippleColor
 
-The [`RippleColor`] property of [`SfEffectsView`] is used to customize the color of ripple.
+The [`RippleColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~RippleColor.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the color of ripple.
 
 {% tabs %} 
 
@@ -413,7 +413,7 @@ The [`RippleColor`] property of [`SfEffectsView`] is used to customize the color
 
 ## SelectionColor
 
-The [`SelectionColor`] property of [`SfEffectsView`] is used to customize the color of selection effect.
+The [`SelectionColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~SelectionColor.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the color of selection effect.
 
 {% tabs %} 
 
@@ -446,7 +446,7 @@ The [`SelectionColor`] property of [`SfEffectsView`] is used to customize the co
 
 ## CornerRadius
 
-The [`CornerRadius`] property of [`SfEffectsView`] is used to customize the corner radius of the [`SfEffectsView`] control.
+The [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~CornerRadius.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the corner radius of the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control.
 
 {% tabs %} 
 
@@ -565,7 +565,7 @@ The [`CornerRadius`] property of [`SfEffectsView`] is used to customize the corn
 
 ## Angle
 
-The [`Angle`] property of [`SfEffectsView`] is used to customize the rotation angle.
+The [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~Angle.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the rotation angle.
 
 {% tabs %} 
 

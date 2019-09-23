@@ -9,11 +9,11 @@ documentation: ug
 
 # Features in SfEffectsView
 
-The [`SfEffectsView`] control provides the following additional features to enhance the effects.
+The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides the following additional features to enhance the effects.
 
 ## FadeOutRipple
 
-By enabling the [`FadeOutRipple`] property of [`SfEffectsView`], the growable circle will lose its opacity to 0.
+By enabling the [`FadeOutRipple`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~FadeOutRipple.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html), the growable circle will lose its opacity to 0.
 
 {% tabs %} 
 
@@ -151,7 +151,7 @@ By enabling the [`FadeOutRipple`] property of [`SfEffectsView`], the growable ci
 
 ## IsSelected
 
-Enabling the [`IsSelected`] property of [`SfEffectsView`] sets the view state as selected.
+Enabling the [`IsSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~IsSelected.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) sets the view state as selected.
 
 {% tabs %} 
 
@@ -183,7 +183,7 @@ Enabling the [`IsSelected`] property of [`SfEffectsView`] sets the view state as
 
 ## ShouldIgnoreTouches
 
-Enabling the [`ShouldIgnoreTouches`] property of [`SfEffectsView`] cancels the direct interaction of the [`SfEffectsView`].
+Enabling the [`ShouldIgnoreTouches`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~ShouldIgnoreTouches.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) cancels the direct interaction of the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html).
 
 {% tabs %} 
 

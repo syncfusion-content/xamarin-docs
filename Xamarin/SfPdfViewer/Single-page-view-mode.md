@@ -11,7 +11,9 @@ documentation: ug
 
 The default continuous view mode of PDF Viewer allows vertical scrolling. In addition to that, PDF Viewer also provides options to view PDFs page by page with horizontal navigation support.
 
-![Single page view mode](pdfviewer_images/SinglePageViewer.gif)
+![Single page view mode flipping](pdfviewer_images/SinglePageViewerFlipping.gif)
+
+![Single page view mode scrolling](pdfviewer_images/SinglePageViewerScrolling.gif)
 
 ## Switching between view modes
 

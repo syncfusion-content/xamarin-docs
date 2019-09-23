@@ -64,4 +64,4 @@ xmlns:sys="clr-namespace:System.Collections.Generic;assembly=netstandard"
 
 {% endtabs %}
 
-![Indicates the nullable selection of SfSegmentedControl in Xamarin.Forms](images/Xamarin_Forms_SegmentedControl_Nullable_Selection.png)
+![Indicates the nullable selection of SfSegmentedControl in Xamarin.Forms](images/Xamarin_Forms_SegmentedControl_Nullable_Selections.png)

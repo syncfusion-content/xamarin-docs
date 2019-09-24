@@ -178,6 +178,7 @@ Syncfusion.Licensing.dll<br/>
 <dl>
   <dt>NuGet</dt>
   <dd>Syncfusion.Xamarin.Core</dd>
+  <dd>In addition, you need to install the Syncfusion.Xamarin.Core.WPF package for Xamarin.Forms WPF platform only</dd>
 </dl>
 
 **Assemblies**
@@ -432,6 +433,7 @@ Syncfusion.Licensing.dll<br/></td>
 <dl>
   <dt>NuGet</dt>
   <dd>Syncfusion.Xamarin.SfChart</dd>
+  <dd>In addition, you need to install the Syncfusion.Xamarin.SfChart.WPF package for Xamarin.Forms WPF platform only</dd>
 </dl>
 
 **Assemblies**
@@ -469,6 +471,7 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.L
 <dl>
   <dt>NuGet</dt>
   <dd>Syncfusion.Xamarin.Buttons</dd>
+  <dd>In addition, you need to install the Syncfusion.Xamarin.Buttons.WPF package for Xamarin.Forms WPF platform only</dd>
 </dl>
 
 **Assemblies**
@@ -502,6 +505,7 @@ Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.L
 <dl>
   <dt>NuGet</dt>
   <dd>Syncfusion.Xamarin.Buttons</dd>
+  <dd>In addition, you need to install the Syncfusion.Xamarin.Buttons.WPF package for Xamarin.Forms WPF platform only</dd>
 </dl>
 
 **Assemblies**
@@ -1277,6 +1281,7 @@ Syncfusion.Licensing.dll<br/>
 <dl>
   <dt>NuGet</dt>
   <dd>Syncfusion.Xamarin.Buttons</dd>
+  <dd>In addition, you need to install the Syncfusion.Xamarin.Buttons.WPF package for Xamarin.Forms WPF platform only</dd>
 </dl>
 
 **Assemblies**
@@ -1421,6 +1426,7 @@ Syncfusion.Licensing.dll<br/>
 <dl>
   <dt>NuGet</dt>
   <dd>Syncfusion.Xamarin.Buttons</dd>
+  <dd>In addition, you need to install the Syncfusion.Xamarin.Buttons.WPF package for Xamarin.Forms WPF platform only</dd>
 </dl>
 
 **Assemblies**
@@ -1661,6 +1667,7 @@ Syncfusion.Licensing.dll<br/>
 <dl>
   <dt>NuGet</dt>
   <dd>Syncfusion.Xamarin.Buttons</dd>
+  <dd>In addition, you need to install the Syncfusion.Xamarin.Buttons.WPF package for Xamarin.Forms WPF platform only</dd>
 </dl>
 
 **Assemblies**

@@ -51,6 +51,18 @@ The SfPdfViewer control has built-in `AutomationId` for inner elements. The `Aut
 
 ![Rectangle annotation Toolbar](pdfviewer_images/automation_id/Rectangle Toolbar.png)
 
+##Ellipse annotation toolbar
+
+![Ellipse annotation Toolbar](pdfviewer_images/automation_id/Ellipse Toolbar.png)
+
+##Line annotation toolbar
+
+![Line annotation Toolbar](pdfviewer_images/automation_id/Line Toolbar.png)
+
+##Arrow annotation toolbar
+
+![Arrow annotation Toolbar](pdfviewer_images/automation_id/Arrow Toolbar.png)
+
 ##Ink annotation toolbar
 
 ![Ink annotation Toolbar](pdfviewer_images/automation_id/Ink Toolbar.png)

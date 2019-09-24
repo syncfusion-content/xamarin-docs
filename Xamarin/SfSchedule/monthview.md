@@ -75,7 +75,7 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endtabs %}
 
 >**NOTE**
-`AppointmentDisplayMode.None` applicable only for XForms UWP(Desktop) platform.
+`AppointmentDisplayMode.None` is applicable only for XForms UWP(Desktop) and WPF platforms.
 
 ![Month appointment diplay mode in schedule xamarin forms](monthview_images/appointmentdisplay.png)
 
@@ -84,7 +84,7 @@ schedule.MonthViewSettings = monthViewSettings;
 
 >**NOTE**
 * The `AppointmentIndicatorCount` support is applicable for XForms Android and iOS platforms.
-* The `AppointmentDisplayCount` support is applicable for XForms UWP and XForms WPF platforms.
+* The `AppointmentDisplayCount` support is applicable for XForms UWP and WPF platforms.
 * By clicking more option, schedule navigates to the day view by default in XForms UWP and WPF platforms.
 
 ![Month appointment diplay count in schedule xamarin forms](monthview_images/appointment_display_indicator count.png)

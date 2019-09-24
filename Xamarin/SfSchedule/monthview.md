@@ -75,16 +75,17 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endtabs %}
 
 >**NOTE**
-`AppointmentDisplayMode` support applicable only for XForms UWP(Desktop) platform.
+`AppointmentDisplayMode.None` is applicable only for XForms UWP and WPF platforms.
 
 ![Month appointment diplay mode in schedule xamarin forms](monthview_images/appointmentdisplay.png)
 
 ### Month Appointment display count
-[AppointmentDisplayCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentDisplayCount.html) or [AppointmentIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentIndicatorCount.html) is used to define the maximum number of appointments to be displayed in a month cell in month view. If `AppointmentDisplayCount` value is 1 and the month cell have more than 1 appointments, single appointment will be displayed and remaining appointments in month cell will be displayed as more appointments. By clicking more option, schedule navigates to the day view by default.
+[AppointmentDisplayCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentDisplayCount.html) or [AppointmentIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentIndicatorCount.html) is used to define the maximum number of appointments to be displayed in a month cell in month view. If `AppointmentDisplayCount` or `AppointmentIndicatorCount` value is 1 and the month cell have more than 1 appointments, single appointment will be displayed and remaining appointments in month cell will be displayed as more appointments. 
 
 >**NOTE**
 * The `AppointmentIndicatorCount` support is applicable for XForms Android and iOS platforms.
-* The `AppointmentDisplayCount` support is applicable for XForms UWP (Desktop)and XForms WPF (Desktop) platforms.
+* The `AppointmentDisplayCount` support is applicable for XForms UWP and WPF platforms.
+* By clicking more option, schedule navigates to the day view by default in XForms UWP and WPF platforms.
 
 ![Month appointment diplay count in schedule xamarin forms](monthview_images/appointment_display_indicator count.png)
 
@@ -103,6 +104,9 @@ private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
 } 
 {% endhighlight %}
 {% endtabs %}
+
+>**NOTE**
+`CancelNavigation` and `IsMoreAppointments` arguments applicable only for XForms UWP and WPF platform.
 
 ## Month InlineView
 You can use [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowAppointmentsInline.html) bool property in `SfSchedule` to enable / disable the month inline view, by setting `ShowAppointmentsInline` property as `true` you can view the Appointments in the specific date. 

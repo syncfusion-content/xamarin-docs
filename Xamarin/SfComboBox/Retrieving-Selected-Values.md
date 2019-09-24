@@ -192,7 +192,7 @@ namespace ComboBox
             this.Content = stackLayout;
         }
 
-        private void comboBox_SelectionChanged(object sender, Syncfusion.XForms.comboBox.SelectionChangedEventArgs e)
+        private void comboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
         {
             DisplayAlert("Selection Changed", "SelectedIndex: " + comboBox.SelectedIndex, "OK");
         }
@@ -559,7 +559,7 @@ namespace ComboBox
             this.Content = stackLayout;
         }
 
-        private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.comboBox.SelectionChangedEventArgs e)
+        private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
         {
             DisplayAlert("Selection Changed", "SelectedItem: " + comboBox.SelectedItem, "OK");
         }

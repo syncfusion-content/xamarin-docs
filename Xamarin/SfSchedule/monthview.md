@@ -106,7 +106,7 @@ private void Schedule_CellTapped(object sender, CellTappedEventArgs e)
 {% endtabs %}
 
 >**NOTE**
-* `e.CancelNavigation` argument applicable only for XForms UWP platform.
+* `e.CancelNavigation` and `e.IsMoreAppointments` arguments applicable only for XForms UWP platform.
 
 ## Month InlineView
 You can use [ShowAppointmentsInline](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowAppointmentsInline.html) bool property in `SfSchedule` to enable / disable the month inline view, by setting `ShowAppointmentsInline` property as `true` you can view the Appointments in the specific date. 

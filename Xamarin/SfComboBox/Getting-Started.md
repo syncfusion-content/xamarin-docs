@@ -497,13 +497,14 @@ comboBox.HeightRequest = 40;
 comboBox.MaximumDropDownHeight = 200;
 comboBox.IsEditableMode = true;
 comboBox.ComboBoxSource = resolutionList;
-comboBox.SelectionChanged += (object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e) => 
-{
-	Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Resolution", "Resolution was changed", "OK");                
-};
-
 layout.Children.Add(comboBox); 
 Content = layout;
+}
+
+private void Handle_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
+{
+    Xamarin.Forms.Application.Current.MainPage.DisplayAlert("Resolution", "Resolution was changed", "OK");  
+}
 
 {% endhighlight %}
 

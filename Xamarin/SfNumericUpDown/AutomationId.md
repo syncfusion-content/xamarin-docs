@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AutomationId for inner elements of Syncfusion NumericUpDown control for Xamarin.Forms
+title: AutomationId for inner elements of Syncfusion NumericUpDown
 description: How to set AutomationId for inner elements of NumericUpDown
 platform: Xamarin
 control: NumericUpDown

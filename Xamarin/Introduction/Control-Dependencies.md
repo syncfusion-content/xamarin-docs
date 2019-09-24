@@ -199,6 +199,10 @@ Syncfusion.Licensing.dll<br/>
 <td>UWP</td>
 <td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
+<tr>
+<td>WPF</td>
+<td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.WPF.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
 </table>
 
 ## SfBusyIndicator
@@ -1557,6 +1561,10 @@ Syncfusion.Licensing.dll<br/>
 <tr>
 <td>UWP</td>
 <td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>WPF</td>
+<td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.WPF.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 

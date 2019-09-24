@@ -178,6 +178,16 @@ schedule.TimeIntervalHeight = 180;
 ### Full screen scheduler
 Schedule time interval height can be adjusted based on screen height by changing the value of `TimeIntervalHeight` property to -1. It will auto-fit to the screen height and width.
 
+{% tabs %}
+{% highlight xaml %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="TimelineView" TimeIntervalHeight="-1"/>     
+{% endhighlight %}
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.TimelineView; 
+schedule.TimeIntervalHeight = -1;
+{% endhighlight %}
+{% endtabs %}
+
 ## Nonworking days
 
 You can add the non-working days in `TimelineView` using [NonWorkingsDays](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~NonWorkingsDays.html) property of `TimelineViewSettings`. By default, there is no non-working day in `TimelineView`.

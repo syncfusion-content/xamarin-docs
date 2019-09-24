@@ -437,7 +437,7 @@ When selecting an item from the drop-down list, the selection changed event will
 {% highlight xaml %}
 
 	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="true" SelectionChanged="Handle_SelectionChanged">
+        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="true" SelectionChanged="ComboBox_SelectionChanged">
             <combobox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String> 1920 x 1080 </x:String>

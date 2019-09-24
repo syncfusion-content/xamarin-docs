@@ -539,5 +539,5 @@ Create model and view model for initializing and assigning a value for adding im
 
 ![GroupView in ListView](images/GroupView_Listview.png)
 
-The complete SfAvatarView of GroupView type using MVVM is available in this [sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GroupView1104179040.zip).
+The complete SfAvatarView of GroupView type using MVVM is available in this [sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GroupViewSample1097739977).
 

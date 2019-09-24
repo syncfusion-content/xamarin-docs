@@ -205,7 +205,7 @@ The following code sample demonstrates how to define visual style of circle Avat
 
 {% endtabs %}
 
-![SfAvatarView control with circle visual style](images/VisualCircle_AvatarView.jpg)
+![SfAvatarView control with circle visual style](images/VisualCircle_AvatarView.png)
 
 ## Square
 
@@ -390,6 +390,6 @@ The following code sample demonstrates how to define visual style of square Avat
 {% endhighlight %}
 {% endtabs %}
 
-![SfAvatarView control with square visual style](images/VisualSquare_AvatarView.jpg)
+![SfAvatarView control with square visual style](images/VisualSquare_AvatarView.png)
 
-The visual style sample is available in the following link: [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/VisualStyles2032103636.zip).
+The visual style sample is available in the following link: [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/VisualStyles-180489920).

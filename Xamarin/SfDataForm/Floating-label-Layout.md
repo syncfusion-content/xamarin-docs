@@ -606,4 +606,6 @@ Floating label layout do not support for the following non-editable editors.
 * CheckBox editor
 * Switch editor
 
+N> To avoid crash while using unsupported editors with `DataForm` layout option as `TextInputLayout` we can set layout options for unsupported editors' data fields using this [link](https://help.syncfusion.com/xamarin/sfdataform/floating-label-layout#changing-layout-options-of-the-dataformitem)
+
 You can download the [DataForm with floating labels](https://github.com/SyncfusionExamples/Floating-label-editors-in-xamarin.forms-dataform) sample in GitHub.

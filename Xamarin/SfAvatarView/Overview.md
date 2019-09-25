@@ -11,6 +11,7 @@ documentation : ug
 
 The `SfAvatarView` control for Xamarin.Forms provides a graphical representation of user image that allows you to customize the view by adding image, background color, icon, text, etc.
 
+![Xamarin.Forms SfAvataraview overview.](images/overview.png)
 
 ## Key features
 

@@ -409,6 +409,7 @@ Syncfusion.SfNumericUpDown.XForms.dll<br/>
 Syncfusion.SfComboBox.XForms.dll<br/>
 Syncfusion.Buttons.XForms.dll<br/>
 Syncfusion.SfMaskedEdit.XForms.dll<br/>
+Syncfusion.SfAutoComplete.XForms.dll<br/>
 Syncfusion.Core.XForms.dll<br/>
 Syncfusion.Licensing.dll<br/>
 System.ComponentModel.Annotations<br/></td>

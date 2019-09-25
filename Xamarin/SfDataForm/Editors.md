@@ -1369,9 +1369,15 @@ public class SourceProviderExt : SourceProvider
         if (sourceName == "City")
         {
             List<Address> details = new List<Address>();
-            details.Add(new Address() { City = "Chennai", PostalCode = 1 });
-            details.Add(new Address() { City = "Paris", PostalCode = 2 });
-            details.Add(new Address() { City = "Vatican", PostalCode = 3 });
+            details.Add(new Address() { City = "Colorado Springs", PostalCode = 1 });
+            details.Add(new Address() { City = "Chicago", PostalCode = 2 });
+            details.Add(new Address() { City = "Columbus", PostalCode = 3 });
+            details.Add(new Address() { City = "Portland", PostalCode = 4 });
+            details.Add(new Address() { City = "Paris", PostalCode = 5 });
+            details.Add(new Address() { City = "Las Vegas", PostalCode = 6 });         
+            details.Add(new Address() { City = "New York", PostalCode = 7 });
+            details.Add(new Address() { City = "Cincinnati", PostalCode = 8 });
+            details.Add(new Address() { City = "San Diego", PostalCode = 9 });
 
             return details;
         }
@@ -1607,6 +1613,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
                     "France",
                     "United Kingdom",
                     "China",
+                    "combodia",
                     "United States",
                     "Japan",
                     "Angola"
@@ -1658,6 +1665,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
                     "France",
                     "United Kingdom",
                     "China",
+                    "cambodia",
                     "United States",
                     "Japan",
                     "Angola"
@@ -1838,7 +1846,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
     {
         var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
             autoCompleteItem.MaximumSuggestion = 3;
-            autoCompleteItem.LoadMoreText = "Load Remaing";
+            autoCompleteItem.LoadMoreText = "Load more";
             autoCompleteItem.ItemsSource = new List<string>
                     {
                     "India",
@@ -1893,6 +1901,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
             autoCompleteItem.ItemsSource = new List<string>
                     {
                     "India",
+                    "Indonesia",
+                    "Italy",
                     "Uganda",
                     "Ukraine",
                     "Canada",

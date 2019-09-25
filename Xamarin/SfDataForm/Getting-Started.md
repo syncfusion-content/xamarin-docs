@@ -54,11 +54,11 @@ Location: {Installed location}/{version}/Xamarin/lib
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/>System.ComponentModel.Annotations<br/></td>
+<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.Licensing.dll<br/>System.ComponentModel.Annotations<br/></td>
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfDataForm.XForms.Android.dll<br/>Syncfusion.SfNumericTextBox.Android.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>Syncfusion.SfNumericUpDown.Android.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.Android.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.Android.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.SfAutoComplete.XForms.Android.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.Android.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/>System.ComponentModel.DataAnnotation<br/></td>
+<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfDataForm.XForms.Android.dll<br/>Syncfusion.SfNumericTextBox.Android.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>Syncfusion.SfNumericUpDown.Android.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.Android.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.Android.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.SfAutoComplete.XForms.Android.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.Android.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>

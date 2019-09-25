@@ -252,7 +252,7 @@ The property with [DataType(DataType.PhoneNumber)] attribute.
 AutoComplete
 </td>
 <td>
-{{'[DataFormAutoCompleteEditor]'| markdownify }}
+{{'[DataFormAutoCompleteEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormAutoCompleteEditor.html)'| markdownify }}
 </td>
 <td>
 Enum and List type property.
@@ -1252,22 +1252,22 @@ In the autocomplete editor, the [SfAutoComplete](https://help.syncfusion.com/xam
 
 ### Customizing ItemsSource of autocomplete editor
 
-By default, the `ItemsSource` for `AutoComplete` editor is auto-generated for enum types. For other types, you can set `ItemsSource` using [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
+By default, the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~ItemsSource.html) for `AutoComplete` editor is auto-generated for enum types. For other types, you can set [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~ItemsSource.html) using [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
 
 #### Using SourceProvider
 
 {% tabs %}
 {% highlight c# %}
-private string continents;
-public string Continents
+private string country;
+public string Country
 {
     get
     {
-        return continents;
+        return country;
     }
     set
     {
-        continents = value;
+        country = value;
     }
 }
 public class SourceProviderExt : SourceProvider
@@ -1275,42 +1275,58 @@ public class SourceProviderExt : SourceProvider
     public override IList GetSource(string sourceName)
     {
         var list = new List<string>();
-        if (sourceName == "Continents")
+        if (sourceName == "Country")
         {
-            list.Add("Asia");
-            list.Add("Europe");
-            list.Add("North America");
-            list.Add("South Americ");
-            list.Add("Australia");
+                list.Add("Indonesia");
+                list.Add("Italy");
+                list.Add("India");
+                list.Add("Iran");
+                list.Add("Iraq");
+                list.Add("Uganda");
+                list.Add("Ukraine");
+                list.Add("Canada");
+                list.Add("Australia");
+                list.Add("Uzbekistan");
+                list.Add("France");
+                list.Add("United Kingdom");
+                list.Add("United States");
 
         }
         return list;
     }
 }
 dataForm.SourceProvider = new SourceProviderExt();
-dataForm.RegisterEditor("Continents", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 {% endhighlight %}
 {% endtabs %}
 
 #### Using AutoGeneratingItem event
 
-You can also set ItemsSource for autocomplete editor by using [ItemsSource] property in the `DataFormAutoCompleteItem`.
+You can also set `ItemsSource` for autocomplete editor by using [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~ItemsSource.html) property in the [DataFormAutoCompleteItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem.html).
 
 {% tabs %}
 {% highlight c# %}
-dataForm.RegisterEditor("Continents", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
-    if (e.DataFormItem != null && e.DataFormItem.Name == "Continents")
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
         var list = new List<string>();
-            list.Add("Asia");
-            list.Add("Europe");
-            list.Add("North America");
-            list.Add("South Americ");
-            list.Add("Australia");
+                list.Add("Indonesia");
+                list.Add("Italy");
+                list.Add("India");
+                list.Add("Iran");
+                list.Add("Iraq");
+                list.Add("Uganda");
+                list.Add("Ukraine");
+                list.Add("Canada");
+                list.Add("Australia");
+                list.Add("Uzbekistan");
+                list.Add("France");
+                list.Add("United Kingdom");
+                list.Add("United States");
         (e.DataFormItem as DataFormAutoCompleteItem).ItemsSource = list;
     }
 }
@@ -1319,21 +1335,23 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 #### Dynamically changing the ItemsSource of autocomplete editor
 
-You can also change the `ItemsSource` at runtime.
+You can also change the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~ItemsSource.html) at runtime.
 
 {% tabs %}
 {% highlight c# %}
 private void Button_Click(object sender, EventArgs e)
 {
-    var dataFormItem = dataForm.ItemManager.DataFormItems["Continents"];
+    var dataFormItem = dataForm.ItemManager.DataFormItems["Country"];
     if (dataFormItem.Name == "Continents")
     {
         var list = new List<string>();
-            list.Add("Asia");
-            list.Add("Europe");
-            list.Add("North America");
-            list.Add("South Americ");
+            list.Add("Ukraine");
+            list.Add("Canada");
             list.Add("Australia");
+            list.Add("Uzbekistan");
+            list.Add("France");
+            list.Add("United Kingdom");
+            list.Add("United States");
         (dataFormItem as DataFormAutoCompleteItem).ItemsSource = list;
     }
 }
@@ -1350,8 +1368,8 @@ N> Class cannot be directly set as data type for autocomplete editor in this com
 {% highlight c# %}
 dataForm.SourceProvider = new SourceProviderExt();
 dataForm.DataObject = new ContactInfo();
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 dataForm.RegisterEditor("City", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
  
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
@@ -1369,9 +1387,15 @@ public class SourceProviderExt : SourceProvider
         if (sourceName == "City")
         {
             List<Address> details = new List<Address>();
-            details.Add(new Address() { City = "Chennai", PostalCode = 1 });
-            details.Add(new Address() { City = "Paris", PostalCode = 2 });
-            details.Add(new Address() { City = "Vatican", PostalCode = 3 });
+            details.Add(new Address() { City = "Colorado Springs", PostalCode = 1 });
+            details.Add(new Address() { City = "Chicago", PostalCode = 2 });
+            details.Add(new Address() { City = "Columbus", PostalCode = 3 });
+            details.Add(new Address() { City = "Portland", PostalCode = 4 });
+            details.Add(new Address() { City = "Paris", PostalCode = 5 });
+            details.Add(new Address() { City = "Las Vegas", PostalCode = 6 });         
+            details.Add(new Address() { City = "New York", PostalCode = 7 });
+            details.Add(new Address() { City = "Cincinnati", PostalCode = 8 });
+            details.Add(new Address() { City = "San Diego", PostalCode = 9 });
 
             return details;
         }
@@ -1394,11 +1418,11 @@ public class Address
 {% endhighlight %}
 {% endtabs %}
 
-## Customizing the appearance of autocomplete editor
+### Customizing the appearance of autocomplete editor
 
-### AutoComplete editor modes
+#### AutoComplete editor modes
 
-The `DataFormAutoCompleteEditor` provides the following three different ways to display the filtered suggestions.
+The [DataFormAutoCompleteEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormAutoCompleteEditor.html) provides the following three different ways to display the filtered suggestions.
 
 * Suggest - Displays suggestions in drop-down list
 
@@ -1406,7 +1430,7 @@ The `DataFormAutoCompleteEditor` provides the following three different ways to 
 
 * SuggestAppend - Performs both suggest and append.
 
-The `AutoCompleteMode` property is used to choose the suggestion display mode in the `DataFormAutoCompleteItem` class. The default value is Suggest.
+The [AutoCompleteMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~AutoCompleteMode.html) property is used to choose the suggestion display mode in the [DataFormAutoCompleteItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem.html) class. The default value is Suggest.
 
 #### Suggestion choices in list
 
@@ -1415,75 +1439,44 @@ The filtered suggestions are displayed in a drop-down list. Users can pick an it
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
+dataForm.SourceProvider = new SourceProviderExt();
+dataForm.RegisterEditor("Country", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.AutoCompleteMode = AutoCompleteMode.Suggest;
-        autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
+    }
+}
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+        var list = new List<string>();
+        if (sourceName == "Country")
+        {
+                list.Add("Indonesia");
+                list.Add("Italy");
+                list.Add("India");
+                list.Add("Iran");
+                list.Add("Iraq");
+                list.Add("Uganda");
+                list.Add("Ukraine");
+                list.Add("Canada");
+                list.Add("Australia");
+                list.Add("Uzbekistan");
+                list.Add("France");
+                list.Add("United Kingdom");
+                list.Add("United States");
+
+        }
+        return list;
     }
 }
 
-public class ContactInfo
-{
- private string name = "John";
-        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
-        private string country;
-
-        [Display(Name = "First Name")]
-        public String Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-
-        [DataType(DataType.MultilineText)]
-        public string Address
-        {
-            get
-            {
-                return address;
-            }
-            set
-            {
-                address = value;
-            }
-        }
-        public string Country
-        {
-            get
-            {
-                return country;
-            }
-            set
-            {
-                country = value;
-            }
-        }
-}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1494,75 +1487,18 @@ The first item in the filtered suggestions is appended to autocomplete editor te
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem )
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.AutoCompleteMode = AutoCompleteMode.Append;
-        autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
     }
 }
 
-public class ContactInfo
-{
- private string name = "John";
-        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
-        private string country;
-
-        [Display(Name = "First Name")]
-        public String Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-
-        [DataType(DataType.MultilineText)]
-        public string Address
-        {
-            get
-            {
-                return address;
-            }
-            set
-            {
-                address = value;
-            }
-        }
-        public string Country
-        {
-            get
-            {
-                return country;
-            }
-            set
-            {
-                country = value;
-            }
-        }
-}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1573,81 +1509,23 @@ The text is appended to the first matched item in the suggestions collection, an
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-        autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
     }
-}
-
-public class ContactInfo
-{
- private string name = "John";
-        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
-        private string country;
-
-        [Display(Name = "First Name")]
-        public String Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-
-        [DataType(DataType.MultilineText)]
-        public string Address
-        {
-            get
-            {
-                return address;
-            }
-            set
-            {
-                address = value;
-            }
-        }
-        public string Country
-        {
-            get
-            {
-                return country;
-            }
-            set
-            {
-                country = value;
-            }
-        }
 }
 {% endhighlight %}
 {% endtabs %}
 
-### AutoComplete editor suggestion options
+#### AutoComplete editor suggestion options
 
-The phenomenon of string comparison for filtering suggestions can be changed using the `SuggestionMode` property. The default filtering strategy is “StartsWith”, and it is case insensitive. The available filtering modes are,
+The phenomenon of string comparison for filtering suggestions can be changed using the [SuggestionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~SuggestionMode.html) property. The default filtering strategy is “StartsWith”, and it is case insensitive. The available filtering modes are,
 
 * StartsWith
 
@@ -1672,74 +1550,16 @@ Displays all the matches that start with the typed characters in items source of
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.SuggestionMode = Syncfusion.XForms.DataForm.SuggestionMode.StartsWith;
-        autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
     }
-}
-
-public class ContactInfo
-{
- private string name = "John";
-        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
-        private string country;
-
-        [Display(Name = "First Name")]
-        public String Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-
-        [DataType(DataType.MultilineText)]
-        public string Address
-        {
-            get
-            {
-                return address;
-            }
-            set
-            {
-                address = value;
-            }
-        }
-        public string Country
-        {
-            get
-            {
-                return country;
-            }
-            set
-            {
-                country = value;
-            }
-        }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -1751,74 +1571,16 @@ Displays all the matches that start with the typed characters in items source of
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.SuggestionMode = Syncfusion.XForms.DataForm.SuggestionMode.StartsWithCaseSensitive;
-        autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
     }
-}
-
-public class ContactInfo
-{
- private string name = "John";
-        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
-        private string country;
-
-        [Display(Name = "First Name")]
-        public String Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-
-        [DataType(DataType.MultilineText)]
-        public string Address
-        {
-            get
-            {
-                return address;
-            }
-            set
-            {
-                address = value;
-            }
-        }
-        public string Country
-        {
-            get
-            {
-                return country;
-            }
-            set
-            {
-                country = value;
-            }
-        }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -1847,411 +1609,182 @@ Displays all the matches that end with the typed characters in items source of a
 
 Displays all the matches that end with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
 
-### No results found text
+#### No results found text
 
-When the entered item is not in the suggestion list, SfAutoComplete displays a text that indicates there is no search results found. You can set the desire text to be displayed for indicating no results found with the `NoResultsFoundText` property.
+When the entered item is not in the suggestion list, SfAutoComplete displays a text that indicates there is no search results found. You can set the desire text to be displayed for indicating no results found with the [NoResultsFoundText]((https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~NoResultsFoundText.html)) property.
 
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.NoResultsFoundText = "No result found";
-        autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
     }
-}
-
-public class ContactInfo
-{
- private string name = "John";
-        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
-        private string country;
-
-        [Display(Name = "First Name")]
-        public String Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-
-        [DataType(DataType.MultilineText)]
-        public string Address
-        {
-            get
-            {
-                return address;
-            }
-            set
-            {
-                address = value;
-            }
-        }
-        public string Country
-        {
-            get
-            {
-                return country;
-            }
-            set
-            {
-                country = value;
-            }
-        }
 }
 {% endhighlight %}
 {% endtabs %}
 
-N> The `NoResultsFoundText` works by default in the UWP platform without setting any property by showing the text "No result found".
+N> The [NoResultsFoundText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~NoResultsFoundText.html) works by default in the UWP platform without setting any property by showing the text "No result found".
 
-### Highlighting match text
+#### Highlighting match text
 
 Highlights matching characters in a suggestion list to pick an item with more clarity. The text highlight can be indicated with various customizing colors by enabling the following property.
 
-* HighlightedTextColor -  Sets the color of the highlighted text for differentiating the highlighted characters.
+* [HighlightedTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~HighlightedTextColor.html) -  Sets the color of the highlighted text for differentiating the highlighted characters.
 
 #### TextHighlightMode
  There are two ways to highlight the matching text:
 
-
 * First occurrence
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+        autoCompleteItem.SuggestionMode = SuggestionMode.StartsWith;
+        autoCompleteItem.HighlightedTextColor = Color.Red;
+        autoCompleteItem.TextHighlightMode = OccurrenceMode.FirstOccurrence;
+        autoCompleteItem.ItemsSource = new List<string>
+        {
+            "Albania",
+            "Algeria",
+            "American Samoa",
+            "Andorra"
+        };
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
 * Multiple occurrence
 
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
-            autoCompleteItem.TextHighlightMode = Syncfusion.XForms.DataForm.OccurrenceMode.FirstOccurrence;
-            autoCompleteItem.HighlightedTextColor = Color.Red;
-            autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+        autoCompleteItem.SuggestionMode = SuggestionMode.Contains;
+        autoCompleteItem.HighlightedTextColor = Color.Red;
+        autoCompleteItem.TextHighlightMode = OccurrenceMode.FirstOccurrence;
+        autoCompleteItem.ItemsSource = new List<string>
+        {
+            "Albania",
+            "Algeria",
+            "American Samoa",
+            "Andorra"
+        };
     }
-}
-
-public class ContactInfo
-{
- private string name = "John";
-        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
-        private string country;
-
-        [Display(Name = "First Name")]
-        public String Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-
-        [DataType(DataType.MultilineText)]
-        public string Address
-        {
-            get
-            {
-                return address;
-            }
-            set
-            {
-                address = value;
-            }
-        }
-        public string Country
-        {
-            get
-            {
-                return country;
-            }
-            set
-            {
-                country = value;
-            }
-        }
 }
 {% endhighlight %}
 {% endtabs %}
 
-### Maximum display item in dropdown column
+#### Maximum display item in dropdown column
 
-Restrict the number of suggestions displayed and get the remaining items loaded by selecting LoadMore.You can restrict maximum suggestion to be displayed with the `MaximumSuggestion` property. You can set the desired text for displaying the Load more text using the `LoadMoreText` property.
+Restrict the number of suggestions displayed and get the remaining items loaded by selecting LoadMore.You can restrict maximum suggestion to be displayed with the [MaximumSuggestion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~MaximumSuggestion.html) property. You can set the desired text for displaying the Load more text using the [LoadMoreText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~LoadMoreText.html) property.
 
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
             autoCompleteItem.MaximumSuggestion = 3;
-            autoCompleteItem.LoadMoreText = "Load Remaing";
-            autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
+            autoCompleteItem.LoadMoreText = "Load more";
     }
 }
 
-public class ContactInfo
-{
- private string name = "John";
-        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
-        private string country;
-
-        [Display(Name = "First Name")]
-        public String Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-
-        [DataType(DataType.MultilineText)]
-        public string Address
-        {
-            get
-            {
-                return address;
-            }
-            set
-            {
-                address = value;
-            }
-        }
-        public string Country
-        {
-            get
-            {
-                return country;
-            }
-            set
-            {
-                country = value;
-            }
-        }
-}
 {% endhighlight %}
 {% endtabs %}
 
-### Minimum prefix character
+#### Minimum prefix character
 
-Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries using the [`MinimumPrefixCharacters`] property. The default value is 1.
+Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries using the [MinimumPrefixCharacters](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~MaximumSuggestion.html) property. The default value is 1.
 
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
             autoCompleteItem.MinimumPrefixCharacters = 3;
-            autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
     }
-}
-
-public class ContactInfo
-{
- private string name = "John";
-        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
-        private string country;
-
-        [Display(Name = "First Name")]
-        public String Name
-        {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
-        }
-
-        [DataType(DataType.MultilineText)]
-        public string Address
-        {
-            get
-            {
-                return address;
-            }
-            set
-            {
-                address = value;
-            }
-        }
-        public string Country
-        {
-            get
-            {
-                return country;
-            }
-            set
-            {
-                country = value;
-            }
-        }
 }
 {% endhighlight %}
 {% endtabs %}
 
-### Diacritic sensitivity
-The control does not stick with one type of keyboard, so you can populate items from a language with letters containing diacritics, and search for them with the English characters from an en-US keyboard. Users can enable or disable the diacritic sensitivity using `IgnoreDiacritic` property. The following code example illustrates how to enable the diacritic sensitivity, so that items in the suggestion list can be populated by entering any diacritic character of that alphabet.
+#### Diacritic sensitivity
+The control does not stick with one type of keyboard, so you can populate items from a language with letters containing diacritics, and search for them with the English characters from an en-US keyboard. Users can enable or disable the diacritic sensitivity using [IgnoreDiacritic](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~IgnoreDiacritic.html) property. The following code example illustrates how to enable the diacritic sensitivity, so that items in the suggestion list can be populated by entering any diacritic character of that alphabet.
 
 {% tabs %}
 {% highlight c# %}
-dataForm.DataObject = new ContactInfo();
+dataForm.DataObject = new Queries();
+dataForm.RegisterEditor("RelatedQuestions", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
-    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    if (e.DataFormItem != null && e.DataFormItem.Name == "RelatedQuestions")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
             autoCompleteItem.IgnoreDiacritic = false;
             autoCompleteItem.ItemsSource = new List<string>
                     {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
+                   "Hów tó gâin wéight?",
+                   "Hów tó drâw ân éléphânt?",
+                   "Whéré cân I buy â câmérâ?",
+                   "Guidé mé âll thé wây",
                     };
     }
 }
-
-public class ContactInfo
+public class Queries
 {
- private string name = "John";
-        private string address = "No 7 Old Bungalow,West Street,WarZone,France";
-        private string country;
+    [Display(ShortName = "Product Name")]
+    public string ProductName { get; set; }
+    public string Cost { get; set; }
 
-        [Display(Name = "First Name")]
-        public String Name
+    private string relatedQuestions;
+    [Display(ShortName = "Related questions asked")]
+    public string RelatedQuestions
+    {
+        get
         {
-            get
-            {
-                return name;
-            }
-            set
-            {
-                name = value;
-            }
+            return relatedQuestions;
         }
-
-        [DataType(DataType.MultilineText)]
-        public string Address
+        set
         {
-            get
-            {
-                return address;
-            }
-            set
-            {
-                address = value;
-            }
+            relatedQuestions = value;
         }
-        public string Country
-        {
-            get
-            {
-                return country;
-            }
-            set
-            {
-                country = value;
-            }
+    }
         }
-}
 {% endhighlight %}
 {% endtabs %}
 

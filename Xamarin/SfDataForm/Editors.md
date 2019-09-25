@@ -1258,16 +1258,16 @@ By default, the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/
 
 {% tabs %}
 {% highlight c# %}
-private string continents;
-public string Continents
+private string country;
+public string Country
 {
     get
     {
-        return continents;
+        return country;
     }
     set
     {
-        continents = value;
+        country = value;
     }
 }
 public class SourceProviderExt : SourceProvider
@@ -1275,20 +1275,28 @@ public class SourceProviderExt : SourceProvider
     public override IList GetSource(string sourceName)
     {
         var list = new List<string>();
-        if (sourceName == "Continents")
+        if (sourceName == "Country")
         {
-            list.Add("Asia");
-            list.Add("Europe");
-            list.Add("North America");
-            list.Add("South Americ");
-            list.Add("Australia");
+                list.Add("Indonesia");
+                list.Add("Italy");
+                list.Add("India");
+                list.Add("Iran");
+                list.Add("Iraq");
+                list.Add("Uganda");
+                list.Add("Ukraine");
+                list.Add("Canada");
+                list.Add("Australia");
+                list.Add("Uzbekistan");
+                list.Add("France");
+                list.Add("United Kingdom");
+                list.Add("United States");
 
         }
         return list;
     }
 }
 dataForm.SourceProvider = new SourceProviderExt();
-dataForm.RegisterEditor("Continents", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 {% endhighlight %}
 {% endtabs %}
 
@@ -1298,19 +1306,27 @@ You can also set `ItemsSource` for autocomplete editor by using [ItemsSource](ht
 
 {% tabs %}
 {% highlight c# %}
-dataForm.RegisterEditor("Continents", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
-    if (e.DataFormItem != null && e.DataFormItem.Name == "Continents")
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
         var list = new List<string>();
-            list.Add("Asia");
-            list.Add("Europe");
-            list.Add("North America");
-            list.Add("South Americ");
-            list.Add("Australia");
+                list.Add("Indonesia");
+                list.Add("Italy");
+                list.Add("India");
+                list.Add("Iran");
+                list.Add("Iraq");
+                list.Add("Uganda");
+                list.Add("Ukraine");
+                list.Add("Canada");
+                list.Add("Australia");
+                list.Add("Uzbekistan");
+                list.Add("France");
+                list.Add("United Kingdom");
+                list.Add("United States");
         (e.DataFormItem as DataFormAutoCompleteItem).ItemsSource = list;
     }
 }
@@ -1325,15 +1341,17 @@ You can also change the [ItemsSource](https://help.syncfusion.com/cr/cref_files/
 {% highlight c# %}
 private void Button_Click(object sender, EventArgs e)
 {
-    var dataFormItem = dataForm.ItemManager.DataFormItems["Continents"];
+    var dataFormItem = dataForm.ItemManager.DataFormItems["Country"];
     if (dataFormItem.Name == "Continents")
     {
         var list = new List<string>();
-            list.Add("Asia");
-            list.Add("Europe");
-            list.Add("North America");
-            list.Add("South Americ");
+            list.Add("Ukraine");
+            list.Add("Canada");
             list.Add("Australia");
+            list.Add("Uzbekistan");
+            list.Add("France");
+            list.Add("United Kingdom");
+            list.Add("United States");
         (dataFormItem as DataFormAutoCompleteItem).ItemsSource = list;
     }
 }
@@ -1421,6 +1439,7 @@ The filtered suggestions are displayed in a drop-down list. Users can pick an it
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
+dataForm.SourceProvider = new SourceProviderExt();
 dataForm.RegisterEditor("Country", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
@@ -1430,38 +1449,34 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
     {
         var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.AutoCompleteMode = AutoCompleteMode.Suggest;
-        autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
+    }
+}
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+        var list = new List<string>();
+        if (sourceName == "Country")
+        {
+                list.Add("Indonesia");
+                list.Add("Italy");
+                list.Add("India");
+                list.Add("Iran");
+                list.Add("Iraq");
+                list.Add("Uganda");
+                list.Add("Ukraine");
+                list.Add("Canada");
+                list.Add("Australia");
+                list.Add("Uzbekistan");
+                list.Add("France");
+                list.Add("United Kingdom");
+                list.Add("United States");
+
+        }
+        return list;
     }
 }
 
-public class ContactInfo
-{
-    private string country;
-    public string Country
-    {
-        get
-        {
-            return country;
-        }
-        set
-        {
-            country = value;
-        }
-    }
-}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1481,38 +1496,9 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
     {
         var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.AutoCompleteMode = AutoCompleteMode.Append;
-        autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
     }
 }
 
-public class ContactInfo
-{
-    private string country;
-    public string Country
-    {
-        get
-        {
-            return country;
-        }
-        set
-        {
-            country = value;
-        }
-    }
-}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1532,36 +1518,6 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
     {
         var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-        autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
-    }
-}
-
-public class ContactInfo
-{
-    private string country;
-    public string Country
-    {
-        get
-        {
-            return country;
-        }
-        set
-        {
-            country = value;
-        }
     }
 }
 {% endhighlight %}
@@ -1603,37 +1559,6 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
     {
         var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.SuggestionMode = Syncfusion.XForms.DataForm.SuggestionMode.StartsWith;
-        autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "combodia",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
-    }
-}
-
-public class ContactInfo
-{
-    private string country;
-    public string Country
-    {
-        get
-        {
-            return country;
-        }
-        set
-        {
-            country = value;
-        }
     }
 }
 {% endhighlight %}
@@ -1655,37 +1580,6 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
     {
         var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.SuggestionMode = Syncfusion.XForms.DataForm.SuggestionMode.StartsWithCaseSensitive;
-        autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "cambodia",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
-    }
-}
-
-public class ContactInfo
-{
-    private string country;
-    public string Country
-    {
-        get
-        {
-            return country;
-        }
-        set
-        {
-            country = value;
-        }
     }
 }
 {% endhighlight %}
@@ -1731,36 +1625,6 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
     {
         var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.NoResultsFoundText = "No result found";
-        autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
-    }
-}
-
-public class ContactInfo
-{
-    private string country;
-    public string Country
-    {
-        get
-        {
-            return country;
-        }
-        set
-        {
-            country = value;
-        }
     }
 }
 {% endhighlight %}
@@ -1777,8 +1641,33 @@ Highlights matching characters in a suggestion list to pick an item with more cl
 #### TextHighlightMode
  There are two ways to highlight the matching text:
 
-
 * First occurrence
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+        autoCompleteItem.SuggestionMode = SuggestionMode.StartsWith;
+        autoCompleteItem.HighlightedTextColor = Color.Red;
+        autoCompleteItem.TextHighlightMode = OccurrenceMode.FirstOccurrence;
+        autoCompleteItem.ItemsSource = new List<string>
+        {
+            "Albania",
+            "Algeria",
+            "American Samoa",
+            "Andorra"
+        };
+    }
+}
+{% endhighlight %}
+{% endtabs %}
 
 * Multiple occurrence
 
@@ -1793,38 +1682,16 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
         var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
-            autoCompleteItem.TextHighlightMode = Syncfusion.XForms.DataForm.OccurrenceMode.FirstOccurrence;
-            autoCompleteItem.HighlightedTextColor = Color.Red;
-            autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
-    }
-}
-
-public class ContactInfo
-{
-    private string country;
-    public string Country
-    {
-        get
+        autoCompleteItem.SuggestionMode = SuggestionMode.Contains;
+        autoCompleteItem.HighlightedTextColor = Color.Red;
+        autoCompleteItem.TextHighlightMode = OccurrenceMode.FirstOccurrence;
+        autoCompleteItem.ItemsSource = new List<string>
         {
-            return country;
-        }
-        set
-        {
-            country = value;
-        }
+            "Albania",
+            "Algeria",
+            "American Samoa",
+            "Andorra"
+        };
     }
 }
 {% endhighlight %}
@@ -1847,38 +1714,9 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
         var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
             autoCompleteItem.MaximumSuggestion = 3;
             autoCompleteItem.LoadMoreText = "Load more";
-            autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
     }
 }
 
-public class ContactInfo
-{
-    private string country;
-    public string Country
-    {
-        get
-        {
-            return country;
-        }
-        set
-        {
-            country = value;
-        }
-    }
-}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1898,38 +1736,6 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
     {
         var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
             autoCompleteItem.MinimumPrefixCharacters = 3;
-            autoCompleteItem.ItemsSource = new List<string>
-                    {
-                    "India",
-                    "Indonesia",
-                    "Italy",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
-                    };
-    }
-}
-
-public class ContactInfo
-{
-    private string country;
-    public string Country
-    {
-        get
-        {
-            return country;
-        }
-        set
-        {
-            country = value;
-        }
     }
 }
 {% endhighlight %}
@@ -1940,48 +1746,45 @@ The control does not stick with one type of keyboard, so you can populate items 
 
 {% tabs %}
 {% highlight c# %}
-dataForm.DataObject = new ContactInfo();
-dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.DataObject = new Queries();
+dataForm.RegisterEditor("RelatedQuestions", "AutoComplete");
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
-    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    if (e.DataFormItem != null && e.DataFormItem.Name == "RelatedQuestions")
     {
         var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
             autoCompleteItem.IgnoreDiacritic = false;
             autoCompleteItem.ItemsSource = new List<string>
                     {
-                    "India",
-                    "Uganda",
-                    "Ukraine",
-                    "Canada",
-                    "United Arab Emirates",
-                    "France",
-                    "United Kingdom",
-                    "China",
-                    "United States",
-                    "Japan",
-                    "Angola"
+                   "Hów tó gâin wéight?",
+                   "Hów tó drâw ân éléphânt?",
+                   "Whéré cân I buy â câmérâ?",
+                   "Guidé mé âll thé wây",
                     };
     }
 }
-
-public class ContactInfo
+public class Queries
 {
-    private string country;
-    public string Country
+    [Display(ShortName = "Product Name")]
+    public string ProductName { get; set; }
+    public string Cost { get; set; }
+
+    private string relatedQuestions;
+    [Display(ShortName = "Related questions asked")]
+    public string RelatedQuestions
     {
         get
         {
-            return country;
+            return relatedQuestions;
         }
         set
         {
-            country = value;
+            relatedQuestions = value;
         }
     }
-}
+        }
 {% endhighlight %}
 {% endtabs %}
 

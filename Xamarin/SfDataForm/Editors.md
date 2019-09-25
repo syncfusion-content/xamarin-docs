@@ -1416,13 +1416,13 @@ The filtered suggestions are displayed in a drop-down list. Users can pick an it
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.AutoCompleteMode = AutoCompleteMode.Suggest;
         autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1467,13 +1467,13 @@ The first item in the filtered suggestions is appended to autocomplete editor te
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem )
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.AutoCompleteMode = AutoCompleteMode.Append;
         autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1518,13 +1518,13 @@ The text is appended to the first matched item in the suggestions collection, an
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
         autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1589,13 +1589,13 @@ Displays all the matches that start with the typed characters in items source of
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.SuggestionMode = Syncfusion.XForms.DataForm.SuggestionMode.StartsWith;
         autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1640,13 +1640,13 @@ Displays all the matches that start with the typed characters in items source of
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.SuggestionMode = Syncfusion.XForms.DataForm.SuggestionMode.StartsWithCaseSensitive;
         autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1715,13 +1715,13 @@ When the entered item is not in the suggestion list, SfAutoComplete displays a t
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.NoResultsFoundText = "No result found";
         autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1778,13 +1778,13 @@ Highlights matching characters in a suggestion list to pick an item with more cl
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
             autoCompleteItem.TextHighlightMode = Syncfusion.XForms.DataForm.OccurrenceMode.FirstOccurrence;
             autoCompleteItem.HighlightedTextColor = Color.Red;
             autoCompleteItem.ItemsSource = new List<string>
@@ -1830,13 +1830,13 @@ Restrict the number of suggestions displayed and get the remaining items loaded 
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
             autoCompleteItem.MaximumSuggestion = 3;
             autoCompleteItem.LoadMoreText = "Load Remaing";
             autoCompleteItem.ItemsSource = new List<string>
@@ -1858,6 +1858,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 public class ContactInfo
 {
+    private string country;
     public string Country
     {
         get
@@ -1881,13 +1882,13 @@ Instead of displaying suggestion list on every character entry, matches can be f
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
             autoCompleteItem.MinimumPrefixCharacters = 3;
             autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1931,13 +1932,13 @@ The control does not stick with one type of keyboard, so you can populate items 
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
-dataForm.RegisterEditor("Name", "AutoComplete");
+dataForm.RegisterEditor("Country", "AutoComplete");
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
     if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
     {
-        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem)
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
             autoCompleteItem.IgnoreDiacritic = false;
             autoCompleteItem.ItemsSource = new List<string>
                     {
@@ -1958,6 +1959,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 public class ContactInfo
 {
+    private string country;
     public string Country
     {
         get

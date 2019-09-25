@@ -207,6 +207,21 @@ Enum and List type property.
 </tr>
 <tr>
 <td>
+AutoComplete
+</td>
+<td>
+{{'[DataFormAutoCompleteEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormAutoCompleteEditor.html)'| markdownify }}
+</td>
+<td>
+Enum and List type property.
+[EnumDataTypeAttribute]
+</td>
+<td>
+{{'[SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
 Password
 </td>
 <td>

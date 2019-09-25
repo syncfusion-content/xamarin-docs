@@ -11,9 +11,9 @@ documentation: ug
 
 The SfDataForm control helps editing the data fields of any data object. It can be used to develop various forms such as login, reservation, data entry, etc. Key features includes the following:
 
-* Layout and grouping: Supports to linear and grid layout with grouping support. Supports customizing the layout with different heights for each item.
+* Layout and grouping: Supports to linear, grid layout and floating label layout with grouping support. Supports customizing the layout with different heights for each item.
 * Caption customization: Supports loading the image as caption for the editor.
-* Editors: Built-in support for text, numeric, numeric up-down, picker, date picker, time picker, switch, and checkbox editors. 
+* Editors: Built-in support for text, numeric, numeric up-down, picker, date picker, time picker, switch,drop-down,autoComplete and checkbox editors. 
 * Custom editor: Supports loading the custom editors.
 * Validation: Built-in support to validate the data based on the [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) and data annotations. It also programmatically supports validation handling.
 
@@ -54,7 +54,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/>System.ComponentModel.Annotations<br/></td>
 </tr>
 <tr>
 <td>Android</td>
@@ -445,7 +445,7 @@ Generated for the PhoneNumber type property.
 </tr>
 <tr>
 <td>
-{{'DataFormAutoCompleteItem'| markdownify }}
+{{'[DataFormAutoCompleteItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the Enum type property.
@@ -454,7 +454,7 @@ Generated for the Enum type property.
 </tr>
 <tr>
 <td>
-{{'DataFormDropDowneItem'| markdownify }}
+{{'[DataFormDropDowneItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the Enum type property.

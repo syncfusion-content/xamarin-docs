@@ -1350,8 +1350,8 @@ N> Class cannot be directly set as data type for autocomplete editor in this com
 {% highlight c# %}
 dataForm.SourceProvider = new SourceProviderExt();
 dataForm.DataObject = new ContactInfo();
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 dataForm.RegisterEditor("City", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
  
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
@@ -1415,8 +1415,8 @@ The filtered suggestions are displayed in a drop-down list. Users can pick an it
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
@@ -1466,8 +1466,8 @@ The first item in the filtered suggestions is appended to autocomplete editor te
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
@@ -1517,8 +1517,8 @@ The text is appended to the first matched item in the suggestions collection, an
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
@@ -1588,8 +1588,8 @@ Displays all the matches that start with the typed characters in items source of
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
@@ -1639,8 +1639,8 @@ Displays all the matches that start with the typed characters in items source of
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
@@ -1714,8 +1714,8 @@ When the entered item is not in the suggestion list, SfAutoComplete displays a t
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
@@ -1777,8 +1777,8 @@ Highlights matching characters in a suggestion list to pick an item with more cl
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
@@ -1829,8 +1829,8 @@ Restrict the number of suggestions displayed and get the remaining items loaded 
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
@@ -1881,8 +1881,8 @@ Instead of displaying suggestion list on every character entry, matches can be f
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {
@@ -1931,8 +1931,8 @@ The control does not stick with one type of keyboard, so you can populate items 
 {% tabs %}
 {% highlight c# %}
 dataForm.DataObject = new ContactInfo();
-dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {

@@ -11,6 +11,10 @@ documentation: ug
 
 This section explains the steps required to load an image to the image editor control.
 
+To get start quickly with Xamarin Image Editor control, you can check on this video:
+
+`https://youtu.be/SW1fsk7YbeA`
+
 ## Adding SfImageEditor reference
 
 You can add SfImageEditor reference using one of the following methods:

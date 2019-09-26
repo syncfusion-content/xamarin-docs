@@ -185,6 +185,19 @@ schedule.TimeIntervalHeight = 180;
 
 ![Schedule customizing time interval height work week view](daymodule_images/workweekview_height.png)
 
+### Full screen scheduler
+Schedule time interval height can be adjusted based on screen height by changing the value of `TimeIntervalHeight` property to -1. It will auto-fit to the screen height and width.
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule  x:Name="schedule"  ScheduleView="WorkWeekView" TimeIntervalHeight="-1"/>
+{% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+schedule.TimeIntervalHeight = -1;
+{% endhighlight %}
+{% endtabs %}
+
 ## Change Working hours
 
 Working hours in `WorkWeekView` of Schedule control will be differentiated with non-working hours by separate color. By default, working hours will be between 09 to 18. You can customize the working hours by setting [WorkStartHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~WorkStartHour.html) and [WorkEndHour](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~WorkEndHour.html) properties of [WorkWeekViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/sfschedule/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~WorkWeekViewSettings.html). You can also customize the working hours along with minutes by setting double value which will be converted to time.

@@ -247,6 +247,21 @@ The property with [DataType(DataType.PhoneNumber)] attribute.
 {{'[SfMaskedEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit_namespace.html)'| markdownify }}
 </td>
 </tr>
+<tr>
+<td>
+AutoComplete
+</td>
+<td>
+{{'[DataFormAutoCompleteEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormAutoCompleteEditor.html)'| markdownify }}
+</td>
+<td>
+Enum and List type property.
+[EnumDataTypeAttribute]
+</td>
+<td>
+{{'[SfAutoComplete](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms_namespace.html)'| markdownify }}
+</td>
+</tr>
 </table>
 
 ## Text editor
@@ -1230,6 +1245,548 @@ The custom prompt character can be set using the [PromptChar](https://help.syncf
 {% endtabs %}
 
 ![Loading masked edit text editor in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-maskededittexteditor.png)
+
+## AutoComplete editor
+
+In the autocomplete editor, the [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview) is loaded.
+
+### Customizing ItemsSource of autocomplete editor
+
+By default, the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~ItemsSource.html) for `AutoComplete` editor is auto-generated for enum types. For other types, you can set [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~ItemsSource.html) using [SourceProvider](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider.html).
+
+#### Using SourceProvider
+
+{% tabs %}
+{% highlight c# %}
+private string country;
+public string Country
+{
+    get
+    {
+        return country;
+    }
+    set
+    {
+        country = value;
+    }
+}
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+        var list = new List<string>();
+        if (sourceName == "Country")
+        {
+                list.Add("Indonesia");
+                list.Add("Italy");
+                list.Add("India");
+                list.Add("Iran");
+                list.Add("Iraq");
+                list.Add("Uganda");
+                list.Add("Ukraine");
+                list.Add("Canada");
+                list.Add("Australia");
+                list.Add("Uzbekistan");
+                list.Add("France");
+                list.Add("United Kingdom");
+                list.Add("United States");
+
+        }
+        return list;
+    }
+}
+dataForm.SourceProvider = new SourceProviderExt();
+dataForm.RegisterEditor("Country", "AutoComplete");
+{% endhighlight %}
+{% endtabs %}
+
+#### Using AutoGeneratingItem event
+
+You can also set `ItemsSource` for autocomplete editor by using [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~ItemsSource.html) property in the [DataFormAutoCompleteItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem.html).
+
+{% tabs %}
+{% highlight c# %}
+dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var list = new List<string>();
+                list.Add("Indonesia");
+                list.Add("Italy");
+                list.Add("India");
+                list.Add("Iran");
+                list.Add("Iraq");
+                list.Add("Uganda");
+                list.Add("Ukraine");
+                list.Add("Canada");
+                list.Add("Australia");
+                list.Add("Uzbekistan");
+                list.Add("France");
+                list.Add("United Kingdom");
+                list.Add("United States");
+        (e.DataFormItem as DataFormAutoCompleteItem).ItemsSource = list;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Dynamically changing the ItemsSource of autocomplete editor
+
+You can also change the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~ItemsSource.html) at runtime.
+
+{% tabs %}
+{% highlight c# %}
+private void Button_Click(object sender, EventArgs e)
+{
+    var dataFormItem = dataForm.ItemManager.DataFormItems["Country"];
+    if (dataFormItem.Name == "Continents")
+    {
+        var list = new List<string>();
+            list.Add("Ukraine");
+            list.Add("Canada");
+            list.Add("Australia");
+            list.Add("Uzbekistan");
+            list.Add("France");
+            list.Add("United Kingdom");
+            list.Add("United States");
+        (dataFormItem as DataFormAutoCompleteItem).ItemsSource = list;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Loading complex type property values in autocomplete editor
+
+You can display the complex type property values in autocomplete editor by using [GetSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SourceProvider~GetSource.html) override method of the SourceProvider class, which is used to get source list as complex property values for autocomplete editor and set it to the `SourceProvider` property of SfDataForm.Use the `AutoGeneratingDataFormItem `event to set [DisplayMemberPath] and [SelectedValuePath] property values of AutoComplete for complex type property.
+
+N> Class cannot be directly set as data type for autocomplete editor in this complex type scenario.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.SourceProvider = new SourceProviderExt();
+dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("City", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+ 
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "City")
+    {
+       (e.DataFormItem as DataFormAutoCompleteItem).DisplayMemberPath = "City";
+       (e.DataFormItem as DataFormAutoCompleteItem).SelectedValuePath = "PostalCode";
+    }
+} 
+ 
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+        if (sourceName == "City")
+        {
+            List<Address> details = new List<Address>();
+            details.Add(new Address() { City = "Colorado Springs", PostalCode = 1 });
+            details.Add(new Address() { City = "Chicago", PostalCode = 2 });
+            details.Add(new Address() { City = "Columbus", PostalCode = 3 });
+            details.Add(new Address() { City = "Portland", PostalCode = 4 });
+            details.Add(new Address() { City = "Paris", PostalCode = 5 });
+            details.Add(new Address() { City = "Las Vegas", PostalCode = 6 });         
+            details.Add(new Address() { City = "New York", PostalCode = 7 });
+            details.Add(new Address() { City = "Cincinnati", PostalCode = 8 });
+            details.Add(new Address() { City = "San Diego", PostalCode = 9 });
+
+            return details;
+        }
+       return new List<string>();
+    }
+}
+
+public class ContactInfo
+{
+    [Display(Name ="First Name")]
+    public String FirstName { get; set; } 
+    public string City { get; set; }
+}
+
+public class Address
+{
+    public int PostalCode { get; set; }
+    public string City { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Customizing the appearance of autocomplete editor
+
+#### AutoComplete editor modes
+
+The [DataFormAutoCompleteEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormAutoCompleteEditor.html) provides the following three different ways to display the filtered suggestions.
+
+* Suggest - Displays suggestions in drop-down list
+
+* Append - Appends the first suggestion to text
+
+* SuggestAppend - Performs both suggest and append.
+
+The [AutoCompleteMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~AutoCompleteMode.html) property is used to choose the suggestion display mode in the [DataFormAutoCompleteItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem.html) class. The default value is Suggest.
+
+#### Suggestion choices in list
+
+The filtered suggestions are displayed in a drop-down list. Users can pick an item from the list.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.SourceProvider = new SourceProviderExt();
+dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+        autoCompleteItem.AutoCompleteMode = AutoCompleteMode.Suggest;
+    }
+}
+public class SourceProviderExt : SourceProvider
+{
+    public override IList GetSource(string sourceName)
+    {
+        var list = new List<string>();
+        if (sourceName == "Country")
+        {
+                list.Add("Indonesia");
+                list.Add("Italy");
+                list.Add("India");
+                list.Add("Iran");
+                list.Add("Iraq");
+                list.Add("Uganda");
+                list.Add("Ukraine");
+                list.Add("Canada");
+                list.Add("Australia");
+                list.Add("Uzbekistan");
+                list.Add("France");
+                list.Add("United Kingdom");
+                list.Add("United States");
+
+        }
+        return list;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Appending suggestion to text
+
+The first item in the filtered suggestions is appended to autocomplete editor text. In this mode,the drop down remains closed.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+        autoCompleteItem.AutoCompleteMode = AutoCompleteMode.Append;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Suggesting choices and appending suggestions to Text
+
+The text is appended to the first matched item in the suggestions collection, and the filtered suggestions are displayed in a drop-down list. The users can pick an item from a list directly or use the up and down keys for browsing the list.
+	
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+        autoCompleteItem.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### AutoComplete editor suggestion options
+
+The phenomenon of string comparison for filtering suggestions can be changed using the [SuggestionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~SuggestionMode.html) property. The default filtering strategy is “StartsWith”, and it is case insensitive. The available filtering modes are,
+
+* StartsWith
+
+* StartsWithCaseSensitive
+
+* Contains
+
+* ContainsWithCaseSensitive
+
+* Equals
+
+* EqualsWithCaseSensitive
+
+* EndsWith
+
+* EndsWithCaseSensitive
+
+#### Filtering words that starts with input text
+
+Displays all the matches that start with the typed characters in items source of autocomplete editor. This strategy is case in sensitive.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+        autoCompleteItem.SuggestionMode = Syncfusion.XForms.DataForm.SuggestionMode.StartsWith;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Filtering words that starts with input text - CaseSensitive
+
+Displays all the matches that start with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+        autoCompleteItem.SuggestionMode = Syncfusion.XForms.DataForm.SuggestionMode.StartsWithCaseSensitive;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Filtering words that contains the input text
+
+Displays all the matches that contain the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
+	
+#### Filtering words that contains the input text - CaseSensitive
+
+Displays all the matches that contain the typed characters in items source of autocomplete editor. This strategy is case sensitive.
+
+#### Filtering words that equals the input text
+
+Displays all the words that completely matches with the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
+
+#### Filtering words that equal the input text - CaseSensitive
+
+Displays all the words that completely match with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
+
+#### Filtering words that end with the input text
+
+Displays all the matches that end with the typed characters in items source of autocomplete editor. This strategy is case in-sensitive.
+
+#### Filtering words that end with the input text - CaseSensitive 
+
+Displays all the matches that end with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
+
+#### No results found text
+
+When the entered item is not in the suggestion list, SfAutoComplete displays a text that indicates there is no search results found. You can set the desire text to be displayed for indicating no results found with the [NoResultsFoundText]((https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~NoResultsFoundText.html)) property.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+        autoCompleteItem.NoResultsFoundText = "No result found";
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> The [NoResultsFoundText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~NoResultsFoundText.html) works by default in the UWP platform without setting any property by showing the text "No result found".
+
+#### Highlighting match text
+
+Highlights matching characters in a suggestion list to pick an item with more clarity. The text highlight can be indicated with various customizing colors by enabling the following property.
+
+* [HighlightedTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~HighlightedTextColor.html) -  Sets the color of the highlighted text for differentiating the highlighted characters.
+
+#### TextHighlightMode
+ There are two ways to highlight the matching text:
+
+* First occurrence
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+        autoCompleteItem.SuggestionMode = SuggestionMode.StartsWith;
+        autoCompleteItem.HighlightedTextColor = Color.Red;
+        autoCompleteItem.TextHighlightMode = OccurrenceMode.FirstOccurrence;
+        autoCompleteItem.ItemsSource = new List<string>
+        {
+            "Albania",
+            "Algeria",
+            "American Samoa",
+            "Andorra"
+        };
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+* Multiple occurrence
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+        autoCompleteItem.SuggestionMode = SuggestionMode.Contains;
+        autoCompleteItem.HighlightedTextColor = Color.Red;
+        autoCompleteItem.TextHighlightMode = OccurrenceMode.FirstOccurrence;
+        autoCompleteItem.ItemsSource = new List<string>
+        {
+            "Albania",
+            "Algeria",
+            "American Samoa",
+            "Andorra"
+        };
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Maximum display item in dropdown column
+
+Restrict the number of suggestions displayed and get the remaining items loaded by selecting LoadMore.You can restrict maximum suggestion to be displayed with the [MaximumSuggestion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~MaximumSuggestion.html) property. You can set the desired text for displaying the Load more text using the [LoadMoreText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~LoadMoreText.html) property.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+            autoCompleteItem.MaximumSuggestion = 3;
+            autoCompleteItem.LoadMoreText = "Load more";
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+#### Minimum prefix character
+
+Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries using the [MinimumPrefixCharacters](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~MaximumSuggestion.html) property. The default value is 1.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new ContactInfo();
+dataForm.RegisterEditor("Country", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Country")
+    {
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+            autoCompleteItem.MinimumPrefixCharacters = 3;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+#### Diacritic sensitivity
+The control does not stick with one type of keyboard, so you can populate items from a language with letters containing diacritics, and search for them with the English characters from an en-US keyboard. Users can enable or disable the diacritic sensitivity using [IgnoreDiacritic](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~IgnoreDiacritic.html) property. The following code example illustrates how to enable the diacritic sensitivity, so that items in the suggestion list can be populated by entering any diacritic character of that alphabet.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.DataObject = new Queries();
+dataForm.RegisterEditor("RelatedQuestions", "AutoComplete");
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{
+    if (e.DataFormItem != null && e.DataFormItem.Name == "RelatedQuestions")
+    {
+        var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
+            autoCompleteItem.IgnoreDiacritic = false;
+            autoCompleteItem.ItemsSource = new List<string>
+                    {
+                   "Hów tó gâin wéight?",
+                   "Hów tó drâw ân éléphânt?",
+                   "Whéré cân I buy â câmérâ?",
+                   "Guidé mé âll thé wây",
+                    };
+    }
+}
+public class Queries
+{
+    [Display(ShortName = "Product Name")]
+    public string ProductName { get; set; }
+    public string Cost { get; set; }
+
+    private string relatedQuestions;
+    [Display(ShortName = "Related questions asked")]
+    public string RelatedQuestions
+    {
+        get
+        {
+            return relatedQuestions;
+        }
+        set
+        {
+            relatedQuestions = value;
+        }
+    }
+        }
+{% endhighlight %}
+{% endtabs %}
 
 ## Custom editor
 

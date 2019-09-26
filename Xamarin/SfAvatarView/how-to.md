@@ -80,24 +80,3 @@ xmlns:badge="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBad
 ![BadgeView support](images/BadgeView_AvatarView.jpg)
 
 N> The `SfBadgeView` is available in [`Syncfusion.Xamarin.SfBadgeView`](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBadgeView) from [`nuget.org`](https://www.nuget.org/). To know more about `SfBadgeView` view, refer to this [documentation](https://help.syncfusion.com/xamarin/sfbadgeview/getting-started).
-
-## Provide shadow effect
-
-The `SfAvatarView` control provides shadow effect support. To enable shadow effect, set the `HasShadow` property to true.
-
-You can customize the color of shadow using the `ShadowColor` property.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-N> Shadow support has not been provided for UWP Platform.
-

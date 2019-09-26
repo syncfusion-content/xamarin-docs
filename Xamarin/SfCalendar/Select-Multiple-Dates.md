@@ -35,6 +35,15 @@ The selected dates can be retrieved through `OnSelectionChanged` event which is 
 	
 SfCalendar calendar = new SfCalendar();	
 calendar.SelectionMode=SelectionMode.MultiSelection;
+List<DateTime> selectedDates = new List<DateTime>();
+selectedDates.Add(new DateTime(2019, 3, 06));
+selectedDates.Add(new DateTime(2019, 3, 11));
+selectedDates.Add(new DateTime(2019, 3, 15));
+selectedDates.Add(new DateTime(2019, 3, 19));
+selectedDates.Add(new DateTime(2019, 3, 21));
+selectedDates.Add(new DateTime(2019, 3, 25));
+selectedDates.Add(new DateTime(2019, 3, 27));
+calendar.SelectedDates = selectedDates;
 this.Content = calendar;
 	
 {% endhighlight %}
@@ -104,3 +113,13 @@ calendar.SelectionMode = SelectionMode.SingleSelection;
 {% endtabs %}
 
 ![SingleSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-SingleSelection.png)
+
+## Programmatically clear the selected dates
+      
+You can clear the calendar selected dates pragmatically by using `ClearSelection` method, which is applicable for calendar `SelectionMode` such as `SingleSelection`, `MultiSelection`, `RangeSelection`, and `MultiRangeSelection`.
+
+{% highlight c# %}
+	
+calendar.ClearSelection();
+	
+{% endhighlight %}

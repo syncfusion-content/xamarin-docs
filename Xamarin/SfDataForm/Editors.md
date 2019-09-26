@@ -1484,7 +1484,7 @@ public class SourceProviderExt : SourceProvider
 {% endhighlight %}
 {% endtabs %}
 
-![You can set Suggest as one of display mode in AutoComplete to display all the matchesin Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete.png)
+![You can set Suggest as one of display mode in AutoComplete to display all the matches in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete.png)
 
 #### Appending suggestion to text
 
@@ -1739,7 +1739,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![You can decide no of items to be displayed maximum in suggestions by MaximumSuggestion property in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_LoadMore.png)
+![You can decide number of items to be displayed maximum in suggestions by MaximumSuggestion property in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_LoadMore.png)
 
 #### Minimum prefix character
 

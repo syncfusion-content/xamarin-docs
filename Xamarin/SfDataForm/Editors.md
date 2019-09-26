@@ -1684,6 +1684,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
+![You can highlights matching characters in a suggestion list by HighlightedTextColor property in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_Highlight_Color.png)
+
 * Multiple occurrence
 
 {% tabs %}
@@ -1699,7 +1701,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
         var autoCompleteItem = (e.DataFormItem as DataFormAutoCompleteItem);
         autoCompleteItem.SuggestionMode = SuggestionMode.Contains;
         autoCompleteItem.HighlightedTextColor = Color.Red;
-        autoCompleteItem.TextHighlightMode = OccurrenceMode.FirstOccurrence;
+        autoCompleteItem.TextHighlightMode = OccurrenceMode.MultipleOccurrence;
         autoCompleteItem.ItemsSource = new List<string>
         {
             "Albania",
@@ -1712,7 +1714,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![You can highlights matching characters in a suggestion list by HighlightedTextColor property in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_Highlight_Color.png)
+![You can highlights matching characters in a suggestion list by HighlightedTextColor property in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_hightlght_multipleOccurance.png)
 
 #### Maximum display item in dropdown column
 

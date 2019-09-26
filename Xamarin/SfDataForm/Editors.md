@@ -1300,6 +1300,8 @@ dataForm.RegisterEditor("Country", "AutoComplete");
 {% endhighlight %}
 {% endtabs %}
 
+![Setting ItemsSource for auto complete editor in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete.png)
+
 #### Using AutoGeneratingItem event
 
 You can also set `ItemsSource` for autocomplete editor by using [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~ItemsSource.html) property in the [DataFormAutoCompleteItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem.html).
@@ -1418,6 +1420,8 @@ public class Address
 {% endhighlight %}
 {% endtabs %}
 
+![Setting complex itemsSource for auto complete editor in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_ComplexSource.png)
+
 ### Customizing the appearance of autocomplete editor
 
 #### AutoComplete editor modes
@@ -1480,6 +1484,8 @@ public class SourceProviderExt : SourceProvider
 {% endhighlight %}
 {% endtabs %}
 
+![You can set Suggest as one of display mode in AutoComplete to display all the matchesin Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete.png)
+
 #### Appending suggestion to text
 
 The first item in the filtered suggestions is appended to autocomplete editor text. In this mode,the drop down remains closed.
@@ -1501,6 +1507,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 {% endhighlight %}
 {% endtabs %}
+![You can set Append as one of display mode in AutoComplete to display all the matchesin Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoCompleteAppend.png)
 
 #### Suggesting choices and appending suggestions to Text
 
@@ -1522,6 +1529,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 }
 {% endhighlight %}
 {% endtabs %}
+
+![You can set SuggestAppend as one of display mode in AutoComplete to display all the matchesin Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_Append&Sugges.png)
 
 #### AutoComplete editor suggestion options
 
@@ -1564,6 +1573,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
+![You can set to display all the matches that start with the typed characters by SuggestionMode property in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_StartsWithFilter.png)
+
 #### Filtering words that starts with input text - CaseSensitive
 
 Displays all the matches that start with the typed characters in items source of autocomplete editor. This strategy is case sensitive.
@@ -1584,6 +1595,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 }
 {% endhighlight %}
 {% endtabs %}
+
+![You can set to display all the matches that start with the typed characters by SuggestionMode property in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_StartswithCaseSensitiveFilter.png)
 
 #### Filtering words that contains the input text
 
@@ -1629,6 +1642,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 }
 {% endhighlight %}
 {% endtabs %}
+
+![You can set text to indicate there is no search result to display by NoResultsFoundText property in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoCompleteNoResultFound.png)
 
 N> The [NoResultsFoundText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~NoResultsFoundText.html) works by default in the UWP platform without setting any property by showing the text "No result found".
 
@@ -1697,6 +1712,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
+![You can highlights matching characters in a suggestion list by HighlightedTextColor property in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_Highlight_Color.png)
+
 #### Maximum display item in dropdown column
 
 Restrict the number of suggestions displayed and get the remaining items loaded by selecting LoadMore.You can restrict maximum suggestion to be displayed with the [MaximumSuggestion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~MaximumSuggestion.html) property. You can set the desired text for displaying the Load more text using the [LoadMoreText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~LoadMoreText.html) property.
@@ -1720,6 +1737,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
+![You can decide no of items to be displayed maximum in suggestions by MaximumSuggestion property in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_LoadMore.png)
+
 #### Minimum prefix character
 
 Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries using the [MinimumPrefixCharacters](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~MaximumSuggestion.html) property. The default value is 1.
@@ -1740,6 +1759,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 }
 {% endhighlight %}
 {% endtabs %}
+
+![Filter the items only after few entries made by MinimumPrefixCharacters property in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_MinimumPrefix.png)
 
 #### Diacritic sensitivity
 The control does not stick with one type of keyboard, so you can populate items from a language with letters containing diacritics, and search for them with the English characters from an en-US keyboard. Users can enable or disable the diacritic sensitivity using [IgnoreDiacritic](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem~IgnoreDiacritic.html) property. The following code example illustrates how to enable the diacritic sensitivity, so that items in the suggestion list can be populated by entering any diacritic character of that alphabet.
@@ -1770,23 +1791,13 @@ public class Queries
     [Display(ShortName = "Product Name")]
     public string ProductName { get; set; }
     public string Cost { get; set; }
-
-    private string relatedQuestions;
     [Display(ShortName = "Related questions asked")]
-    public string RelatedQuestions
-    {
-        get
-        {
-            return relatedQuestions;
-        }
-        set
-        {
-            relatedQuestions = value;
-        }
-    }
-        }
+    public string RelatedQuestions { get;set;}
+}
 {% endhighlight %}
 {% endtabs %}
+
+![User can enable or disable diacritic sensitivity by this in Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_Diacriticsensitivity.png)
 
 ## Custom editor
 

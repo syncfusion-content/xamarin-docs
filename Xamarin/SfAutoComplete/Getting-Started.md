@@ -11,7 +11,9 @@ documentation : ug
 
 This section explains the steps to create AutoComplete, populate it with data and filter the suggestions. This section covers only the minimal features that are needed to get started with the AutoComplete.
 
-N> Watch the video: [Xamarin.Forms SfAutoComplete - Getting Started (YouTube)](https://youtu.be/XT5-CKZCiH8)
+To get start quickly with Xamarin.Forms SfAutoComplete, you can check on this video:
+
+`youtube:XT5-CKZCiH8`
 
 ## Adding SfAutoComplete reference
 

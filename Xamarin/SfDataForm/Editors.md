@@ -1530,7 +1530,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-![You can set SuggestAppend as one of display mode in AutoComplete to display all the matchesin Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_Append&Sugges.png)
+![You can set SuggestAppend as one of display mode in AutoComplete to display all the matchesin Xamarin.Forms DataForm](SfDataForm_images/DataForm_AutoComplete_AppendandSugges.png)
 
 #### AutoComplete editor suggestion options
 

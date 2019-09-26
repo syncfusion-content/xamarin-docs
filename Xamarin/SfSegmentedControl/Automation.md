@@ -9,7 +9,7 @@ documentation: ug
 
 # Automation
 
-The segmented control supports for automating the each segment item in the control using the  `AutomationId` property. The AutomationId value given for control will appends with the each segment item's text value and it can be used for writing automation scripts. The below code snippet explains how to set AutomationId value for segmented control.
+The segmented control supports automating each segment item in control using the  AutomationId property. The AutomationId value given for control will be appended with each segment item's text value, and it can be used for writing automation scripts. The following code snippet explains how to set AutomationId value to the segmented control.
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ public class ViewModel
 
 {% endtabs %}
 
-The below table shows the AutomationId value set for each segment item in the control for the above code snippet.
+The following table shows that the AutomationId value is set to each segment item in control for the above code snippet.
 
 <table>
 <tr>

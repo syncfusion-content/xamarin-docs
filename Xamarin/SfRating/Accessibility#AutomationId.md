@@ -15,4 +15,4 @@ For example, if you set SfRating's `AutomationId` as "Feedback" and you select t
 
 N> AutomationId support works only when the precision mode of SfRating is set as Standard.
 
-![AutomationId Image](images/AutomationId.jpg)
+![AutomationId Image](images/AutomationId.png)

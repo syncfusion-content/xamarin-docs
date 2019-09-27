@@ -213,7 +213,7 @@ You can customize the color, length, size, and position of the [`LinearScale`](h
 
 ![Linear Gauge Scale Customization](scales_images/scale5.png)
 
-# Scale Offset
+## Scale Offset
 The space between the control and linear scale can be customized using the `ScaleOffset` property.
 {% tabs %}
 {% highlight XAML %}

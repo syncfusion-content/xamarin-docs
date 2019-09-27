@@ -347,6 +347,27 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ![Setting DateFormat to data form date item in Xamarin.Forms DataForm](SfDataForm_images/Editors_DateFormat.png)
 
+### Setting title for date editor[UWP]
+
+You can set the title for the time editor by handling the `Title` property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html]. The default value is `Choose Date`.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{   
+
+    if (e.DataFormItem != null && e.DataFormItem.Name == "Date")
+    {
+        (e.DataFormItem as DataFormDateItem).Title = "Select a date";
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+>N Applicable only in UWP platform.
+
 ### Setting MaximumDate and MinimumDate in date editor
 
 You can customize the maximum and minimum allowable dates in the `DatePicker` by setting [MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem~MaximumDate.html) and [MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem~MinimumDate.html) in the [DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html) respectively.
@@ -408,6 +429,27 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endtabs %}
 
 ![Setting time format to data form time item in Xamarin.Forms DataForm](SfDataForm_images/Editors_TimeFormat.jpg)
+
+### Setting title for time editor[UWP]
+
+You can set the title for the time editor by handling the `Title` property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem.html]. The default value is `Choose Time`.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{   
+
+    if (e.DataFormItem != null && e.DataFormItem.Name == "BirthTime")
+    {
+        (e.DataFormItem as DataFormTimeItem).Title = "Select time of birth";
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+>N Applicable only in UWP platform.
 
 ## Segment editor
 
@@ -1246,6 +1288,25 @@ The custom prompt character can be set using the [PromptChar](https://help.syncf
 
 ![Loading masked edit text editor in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-maskededittexteditor.png)
 
+### Password character
+To enable [MaskedTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormMaskedEditTextEditor.html) as [PasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormPasswordEditor.html) you can set a character to [PasswordChar](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~PasswordChar.html) property of [DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html).
+{% tabs %}
+{% highlight c# %}
+(e.DataFormItem as DataFormMaskedEditTextItem).PasswordChar = '*'; 
+{% endhighlight %}
+{% endtabs %}
+
+#### Password Delay and Duration
+While typing the password character you can enable a delay to show the typed character for a while.It can be enabled by setting [EnablePasswordDelay] property into `true`. You can handle the duration of the displaying typed character using the [PasswordDelayDuration] property when password delay is enabled.
+
+{% tabs %}
+{% highlight c# %}
+(e.DataFormItem as DataFormMaskedEditTextItem).PasswordChar = '*'; 
+(e.DataFormItem as DataFormMaskedEditTextItem).EnablePasswordDelay = true; 
+(e.DataFormItem as DataFormMaskedEditTextItem).PasswordDelayDuration  = 2; 
+{% endhighlight %}
+{% endtabs %}
+
 ## AutoComplete editor
 
 In the autocomplete editor, the [SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview) is loaded.
@@ -1344,7 +1405,7 @@ You can also change the [ItemsSource](https://help.syncfusion.com/cr/cref_files/
 private void Button_Click(object sender, EventArgs e)
 {
     var dataFormItem = dataForm.ItemManager.DataFormItems["Country"];
-    if (dataFormItem.Name == "Continents")
+    if (dataFormItem.Name == "Country")
     {
         var list = new List<string>();
             list.Add("Ukraine");

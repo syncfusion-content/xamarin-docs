@@ -7,11 +7,11 @@ control: SfSchedule
 documentation: UG
 ---
 
-# AutomationId
+## AutomationId
 
 The `SfSchedule` control has built-in `AutomationId` for inner elements. Please find the following table of Automation IDs for inner elements. To keep unique `AutomationId`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`.  For example, if you set `SfSchedule` `AutomationId` as `SfSchedule.AutomationId = EventScheduler`, then the Automation framework will interact with the month header as `EventSchedulerAugust 2019`. The following screenshots denote the AutomationIds for inner elements.
 
-## Month view
+### Month view
 
 <table>
 <tr>
@@ -55,7 +55,7 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 ![Month view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view.png)
 ![Month view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-no-events.png)
 
-## Day, week and workweek views
+### Day, week and workweek views
 
 <table>
 <tr>
@@ -102,7 +102,7 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 
 ![Work week view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-work-week-view.png)
 
-## Timeline view
+### Timeline view
 
 <table>
 <tr>

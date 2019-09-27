@@ -13,6 +13,6 @@ The SfComboBox control has built-in `AutomationId` for inner elements. The `Auto
 
  For example, If you set SfComboBox's `AutomationId` as "Employee ComboBox", then the automation framework will interact with the drop-down button as "Employee ComboBox Dropdown Button". 
 
-The following screenshot illustrates the AutomationIds of inner elements. The automation framework will interact with the dropdown for scrolling the items as "Employee ComboBox Dropdown". You can also interact with the elements inside the HeaderView and FooterView with the element's AutomationId. The Automation framework will not interact the Input Clear Button when the `MultiSelectMode` is None.
+The following screenshot illustrates the AutomationIds of inner elements. The automation framework will interact with the dropdown for scrolling the items as "Employee ComboBox Dropdown". You can also interact with the elements inside the HeaderView and FooterView with the element's AutomationId. The Automation framework will not interact with the Input Clear Button when the `MultiSelectMode` is None and Delimiter mode also.
 
 ![AutomationId Image](images/AutomationId/AutomationId.png)

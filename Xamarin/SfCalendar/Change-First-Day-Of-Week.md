@@ -31,4 +31,4 @@ this.Content = calendar;
 
 N> The value will be provided as integers starting from 0 as Sunday.
 	
-![FirstDayofWeek support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-Firstdayofweek.jpg)
+![FirstDayofWeek support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-firstdayofweek.png)

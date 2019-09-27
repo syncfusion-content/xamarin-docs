@@ -216,14 +216,14 @@ N> To specify the range, set start date and end date to [MinDate](https://help.s
 {% highlight c# %}
 
 SfCalendar  calendar = new SfCalendar();
-calendar.MinDate = new DateTime(2019,3,1);
-calendar.MaxDate = new DateTime(2019,3,28);
+calendar.MinDate = new DateTime(2019,9,1);
+calendar.MaxDate = new DateTime(2019,9,30);
 this.Content = calendar;
 	
 {% endhighlight %}
 
 
-![Resrict Dates](images/xamarin.forms-calendar-Getting-started.jpg)
+![Resrict Dates](images/xamarin.forms-calendar-restrictdates.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [CalendarGettingStarted](https://github.com/SyncfusionExamples/xamarin-calendar-getting-started)

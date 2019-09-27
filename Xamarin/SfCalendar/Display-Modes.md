@@ -35,7 +35,7 @@ calendar.ViewMode = ViewMode.MonthView;
 
 {% endtabs %}
 
-![Month view in Xamarin.Forms Calendar](images/xamarin.forms-calendar-SingleSelection.png)
+![Month view in Xamarin.Forms Calendar](images/xamarin.forms-calendar-monthview.png)
 
 ## Trailing and leading days
 
@@ -59,7 +59,7 @@ calendar.ShowLeadingAndTrailingDays = False;
 
 {% endtabs %}
 
-![Month View in Xamarin.Forms Calendar ](images/Xamarin.Forms-Calendar-HideLeadingTrailing.png)
+![Month View in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-showleadingandtrailing.png)
 
 N>
 * The OnMonthCellLoaded event is triggered for the current month dates.
@@ -184,7 +184,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Month view border color in Xamarin.Forms Calendar ](images/xamarin.forms-BorderColor.png)
+![Month view border color in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-monthcellborder.png)
 
 ### Today border color customization
 
@@ -214,7 +214,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Month view today border color in Xamarin.Forms Calendar ](images/xamarin.forms-TodayBorderColor.png)
+![Month view today border color in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-todaybordercolor.png)
 
 ## Week view
 
@@ -243,7 +243,7 @@ calendar.NumberOfWeeksInView = 2;
 
 {% endtabs %}
 
-![Week view in Xamarin.Forms Calendar ](images/xamarin.forms-NumberOfWeeksInView.png)
+![Week view in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-weekviewdefault.png)
 
 ## Year view
 
@@ -267,7 +267,7 @@ this.Content = calendar;
 
 {% endtabs %}
  
-![YearView in Xamarin.Forms Calendar](images/xamarin.forms-calendar-yearview-customization.jpg)
+![YearView in Xamarin.Forms Calendar](images/xamarin.forms-calendar-yearview.png)
 
 ## Year view mode
 
@@ -296,7 +296,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Year view mode in Xamarin.Forms Calendar ](images/xamarin.forms-YearViewMode.png)
+![Year view mode in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-yearviewmode.png)
  
 N>
 * The `YearViewMode` property is only applicable for calendar in Android and iOS platforms.
@@ -360,7 +360,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Decade view in Xamarin.Forms Calendar ](images/xamarin.forms-DecadeView.png)
+![Decade view in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-decadeview.png)
  
 ## Decade view customization
 
@@ -404,7 +404,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Decade view customization in Xamarin.Forms Calendar ](images/xamarin.forms-DecadeView-Custom.png)
+![Decade view customization in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-decadecustom.png)
 
 ## Century view
 
@@ -428,7 +428,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Century view in Xamarin.Forms Calendar ](images/xamarin.form-CenturyView.png)
+![Century view in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-centuryview.png)
  
 ## Century view customization
 
@@ -472,7 +472,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Century view customization in Xamarin.Forms Calendar ](images/xamarin.forms-CenturyView-Custom.png)
+![Century view customization in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-centuryviewcustom.png)
 
 
 

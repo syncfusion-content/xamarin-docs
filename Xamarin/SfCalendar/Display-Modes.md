@@ -267,7 +267,7 @@ this.Content = calendar;
 
 {% endtabs %}
  
-![YearView in Xamarin.Forms Calendar](images/xamarin.forms-calendar-yearview.jpg)
+![YearView in Xamarin.Forms Calendar](images/xamarin.forms-calendar-yearview.png)
 
 ## Year view mode
 

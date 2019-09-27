@@ -13,7 +13,8 @@ This section explains the steps to create AutoComplete, populate it with data an
 
 To get start quickly with Xamarin.Forms SfAutoComplete, you can check on this video:
 
-`youtube:XT5-CKZCiH8`
+<style>#XamarinAutoCompleteVideoTutorial{width : 90% !important; height: 400px !important }</style>
+<iframe id='XamarinAutoCompleteVideoTutorial' src='https://www.youtube.com/embed/XT5-CKZCiH8'></iframe>
 
 ## Adding SfAutoComplete reference
 

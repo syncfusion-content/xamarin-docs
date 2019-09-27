@@ -25,7 +25,7 @@ this.Content = calendar;
 
 N> By default, SfCalendar control is available with en-US locale.  
 
-![Localization support in Xamarin.Forms SfCalendar](images/xamarin.forms-calendar-localization.png) 
+![Localization support in Xamarin.Forms SfCalendar](images/xamarin.forms-calendar-defaultlanguage.png) 
 
 ## Localizing custom strings from PCL
 You can localize the custom strings (All Day, No Events) used in the calendar control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale. In the below code, we have set Portugal as Calendar locale as well as custom strings.
@@ -81,7 +81,7 @@ The procedure for creating strings.xml files is as follows:
 *	Create new folders under resource as values-`ar`, values-`de`, values-`en` and values-`fr` (The original values folder already exists).
 *	Place the translated strings.xml files in the respective folders.
  
-![Localization support in Xamarin.Forms SfCalendar](Images/xamarin.forms-calendar-localization-android.jpeg)  
+![Localization support in Xamarin.Forms SfCalendar](Images/xamarin.forms-calendar-localecustom.png)  
 
 >**NOTE** 
 The corresponding Locale values folder updates only when the device language changes.

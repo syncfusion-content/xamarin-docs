@@ -79,7 +79,7 @@ namespace CalendarSample
 You can download the entire source code of this demo for Xamarin.Forms from
 here [CalendarEvents](https://github.com/SyncfusionExamples/creating-events-in-xamarin.forms-sfcalendar)
 
-![SfCalendar Inline events](images/xamarin.forms-calendar-Event.jpg)
+![SfCalendar Inline events](images/xamarin.forms-calendar-monthappintmentdisplay.png)
 
 
 N> If there is no appointment for the selected day, `Inline` view and `AgendaView` displays the text as “No Appointments”.
@@ -113,11 +113,11 @@ The default appearance of the appointment can be customized by using the [Inline
 
 Inline view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplate.jpg)
+![SfCalendar Inline events](images/xamarin.forms-calendar-inlinedatatemplate.png)
 
 Agenda view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplate.jpg)
+![SfCalendar Inline events](images/xamarin.forms-calendar-agendadatatemplate.png)
 
 ## Customize inline/agenda view using Template Selector
 
@@ -198,11 +198,11 @@ Inline template selector can be used to choose a `DataTemplate` at runtime based
 
 Inline view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlinetemplateselector.jpg)
+![SfCalendar Inline events](images/xamarin.forms-calendar-inlinetemplateselector.png)
 
 Agenda view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendatemplateselector.jpg)
+![SfCalendar Inline events](images/xamarin.forms-calendar-agendatemplateselector.png)
 
 ## Getting inline/agenda view appointment details
 
@@ -223,8 +223,8 @@ private void Calendar_InlineItemTapped(object sender, InlineItemTappedEventArgs 
 
 Inline view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Inlineitemtapped.jpg)
+![SfCalendar Inline events](images/xamarin.forms-calendar-inlineappointmentdetails.png)
 
 Agenda view mode
 
-![SfCalendar Inline events](images/Xamarin.Forms-Calendar-Agendaitemtapped.jpg)
+![SfCalendar Inline events](images/xamarin.forms-calendar-agendaappointmentdetails.png)

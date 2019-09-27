@@ -103,6 +103,7 @@ You can customize the color of [BlackoutDates](https://help.syncfusion.com/cr/xa
 {% endhighlight %}
 {% highlight c# %}
 SfCalendar calendar = new SfCalendar(); 
+calendar.BlackoutDatesViewMode = BlackoutDatesViewMode.Stripes;  
 MonthViewSettings monthViewSettings = new MonthViewSettings();
 monthViewSettings.BlackOutColor = Color.Red;
 calendar.MonthViewSettings = monthViewSettings;

@@ -1344,7 +1344,7 @@ You can also change the [ItemsSource](https://help.syncfusion.com/cr/cref_files/
 private void Button_Click(object sender, EventArgs e)
 {
     var dataFormItem = dataForm.ItemManager.DataFormItems["Country"];
-    if (dataFormItem.Name == "Continents")
+    if (dataFormItem.Name == "Country")
     {
         var list = new List<string>();
             list.Add("Ukraine");

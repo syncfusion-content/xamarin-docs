@@ -138,7 +138,7 @@ public partial class MainWindow : FormsApplicationPage
     
 This section explains how to create a simple application using SfSchedule control. SfSchedule control can be configured entirely in C# code or by using XAML markup. This is how the final output will look like on iOS, Android and Windows Phone devices.  
     
-![GettingStarted](GettingStarted_images/GettingStarted.png)   
+![GettingStarted](GettingStarted_images/xamarin.forms.-schedule-over-view.png)   
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted285067184.zip)
@@ -216,7 +216,7 @@ schedule.FirstDayOfWeek = (int)DayOfWeek.Tuesday;
 {% endhighlight %}  
 {% endtabs %}   
     
-![First Day of week](GettingStarted_images/FirstDayOfWeek.png)   
+![First Day of week](GettingStarted_images/xamarin.forms-schedule-first-day-of-week.png)   
 
 ### Day View   
     
@@ -231,7 +231,7 @@ schedule.ScheduleView = ScheduleView.DayView;
 {% endhighlight %}   
 {% endtabs %}   
     
-![Day View](GettingStarted_images/DayView.png)   
+![Day View](GettingStarted_images/xamarin.forms-schedule-day-view.png)   
 
 ### Week View   
  
@@ -246,7 +246,7 @@ schedule.ScheduleView = ScheduleView.WeekView;
 {% endhighlight %}   
 {% endtabs %}   
     
-![Week View](GettingStarted_images/WeekView.png)  
+![Week View](GettingStarted_images/xamarin.forms-schedule-week-view.png)  
 
 ### Work Week View   
  
@@ -261,7 +261,7 @@ schedule.ScheduleView = ScheduleView.WorkWeekView;
 {% endhighlight %}   
 {% endtabs %}   
     
-![Work Week View](GettingStarted_images/WorkWeek.png)   
+![Work Week View](GettingStarted_images/xamarin.forms-schedule-work-weekview.png)   
 
 >**NOTE**
 Appointments in non-working days will not be displayed.
@@ -279,7 +279,7 @@ schedule.ScheduleView = ScheduleView.TimelineView;
 {% endhighlight %}   
 {% endtabs %}   
     
-![Timeline view in xamarin forms](timeline-view-images/xamarin-forms-timeline-view.png)	
+![Timeline view in xamarin forms](GettingStarted_images/xamarin.forms-schedule-timeline-view.png)	
 
 ### Month View   
     
@@ -300,7 +300,7 @@ schedule.ShowAppointmentsInline = true;
 {% endhighlight %}   
 {% endtabs %}   
     
-![Month View](GettingStarted_images/MonthView.png)
+![Month View](GettingStarted_images/xamarin.forms-schedule-monthview.png)
 
 ## Binding data to SfSchedule control   
   
@@ -533,8 +533,6 @@ ViewModel viewModel = new ViewModel();
 schedule.DataSource = viewModel.Meetings;
 {% endhighlight %}
 {% endtabs %}
-
-![GettingStarted Schedule](GettingStarted_images/GettingStarted.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [ScheduleGettingStarted](https://github.com/SyncfusionExamples/xamarin-schedule-getting-started)

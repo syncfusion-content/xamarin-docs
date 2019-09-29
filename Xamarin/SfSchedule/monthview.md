@@ -22,7 +22,7 @@ schedule.ScheduleView = ScheduleView.MonthView;
 {% endhighlight %}
 {% endtabs %}
 
-![Month view in schedule xamarin forms](monthview_images/monthview.png)
+![Month view in schedule xamarin forms](monthview_images/xamarin.forms-schedule-month-view.png)
 
 ## Month Appointment indicator
 In `MonthView`, appointments are not viewed in the month cell instead appointment indicators are drawn. You can customize the number of appointment indicators displayed in month cell using  [AppointmentIndicatorCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentIndicatorCount.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MonthViewSettings.html) in `SfSchedule`, by default Appointment indicator count is 3.
@@ -48,7 +48,7 @@ schedule.MonthViewSettings = monthViewSettings;
 >**NOTE**
 If appointments count are lesser than the AppointmentIndicatorCount value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.Maximum number of appointment indicators drawn in the month cell is 6 in android and ios platforms.
 
-![Month appointment indicator in schedule xamarin forms](monthview_images/appointmentindicator.png)
+![Month appointment indicator in schedule xamarin forms](monthview_images/xamarin.forms-schedule-appointment-indicator.png)
 
 ## Month Appointment display mode
 You can handle the schedule month view appointment display by using [AppointmentDisplayMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentDisplayMode.html) property of `MonthViewSettings`. By default `AppointmentDisplayMode` is set as `Indicator`, using the `AppointmentDisplayMode` you can set the month view appointments display as follows.
@@ -77,7 +77,7 @@ schedule.MonthViewSettings = monthViewSettings;
 >**NOTE**
 `AppointmentDisplayMode.None` is applicable only for XForms UWP and WPF platforms.
 
-![Month appointment diplay mode in schedule xamarin forms](monthview_images/appointmentdisplay.png)
+![Month appointment diplay mode in schedule xamarin forms](monthview_images/xamarin.forms-schedule-appointment-displaymode.png)
 
 ### Month Appointment display count
 [AppointmentDisplayCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentDisplayCount.html) or [AppointmentIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AppointmentIndicatorCount.html) is used to define the maximum number of appointments to be displayed in a month cell in month view. If `AppointmentDisplayCount` or `AppointmentIndicatorCount` value is 1 and the month cell have more than 1 appointments, single appointment will be displayed and remaining appointments in month cell will be displayed as more appointments. 
@@ -87,7 +87,7 @@ schedule.MonthViewSettings = monthViewSettings;
 * The `AppointmentDisplayCount` support is applicable for XForms UWP and WPF platforms.
 * By clicking more option, schedule navigates to the day view by default in XForms UWP and WPF platforms.
 
-![Month appointment diplay count in schedule xamarin forms](monthview_images/appointment_display_indicator count.png)
+![Month appointment diplay count in schedule xamarin forms](monthview_images/xamarin.forms-schedule-appointment-indicator-count.png)
 
 #### Disable navigation to DayView
 You can disable the navigation to day view by triggering the CellTappedEvent and set the argument [CancelNavigation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~CancelNavigation.html) value as true. [IsMoreAppointments](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~IsMoreAppointments.html) argument is used to determine whether the month cell more appointments count element has been tapped or not while the appointment display mode as Appointment.
@@ -124,7 +124,7 @@ schedule.ShowAppointmentsInline = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Month inline appointment in schedule xamarin forms](monthview_images/monthinlineview.png)
+![Month inline appointment in schedule xamarin forms](monthview_images/xamarin.forms-schedule-inlineview.png)
 
 >**NOTE**
 If appointments not there in the selected day, Inline view displays the text as "No Events"
@@ -149,7 +149,7 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Month agenda view appointment in schedule xamarin forms](monthview_images/AgendaView.png)
+![Month agenda view appointment in schedule xamarin forms](monthview_images/xamarin.forms-schedule-agendaview.png)
 
 >**NOTE**
 - An agenda view displays text as “No Selected Date” until no date is selected.
@@ -200,7 +200,7 @@ schedule.MonthViewSettings.AgendaViewStyle = agendaViewStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![Month agenda view appointment customization in schedule xamarin forms](monthview_images/AgendaViewStyle.png)
+![Month agenda view appointment customization in schedule xamarin forms](monthview_images/xamarin.forms-schedule-agendaview-appearance.png)
 
 >**NOTE**
 Agenda View Appearance customization is not applicable for UWP platform.
@@ -240,7 +240,7 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Month agenda item template in schedule xamarin forms](monthview_images/AgendaTemplate.png)
+![Month agenda item template in schedule xamarin forms](monthview_images/xamarin.forms-schedule-agendaview-itemtemplate.png)
 
 >**NOTE**
 Agenda item template support is not applicable for UWP platform.
@@ -378,7 +378,7 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![black out dates in schedule xamarin forms](monthview_images/blackoutdate.png)
+![black out dates in schedule xamarin forms](monthview_images/xamarin.forms-schedule-blackoutdate.png)
 
 ## First day of Week in Month
 You can set First day of week using [FirstDayOfWeek](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~FirstDayOfWeek.html) property of `SfSchedule`, by default schedule control will rendered with `Sunday` as the first day of the week. 
@@ -397,7 +397,7 @@ schedule.FirstDayOfWeek = 3; // Tuesday
 {% endhighlight %}
 {% endtabs %}
 
-![First day of week in schedule xamarin forms](monthview_images/firstdayofweek.png)
+![First day of week in schedule xamarin forms](monthview_images/xamarin.forms-schedule-firstdayofweek.png)
 
 ## Week Number of the Year in Month
 You can display the Week Number of the year in `MonthView` by setting [ShowWeekNumber](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~ShowWeekNumber.html) property of `MonthViewSettings` as `true`, by default it is `false`.
@@ -417,7 +417,7 @@ monthViewSettings.ShowWeekNumber = true;
 {% endhighlight %}
 {% endtabs %}
 
-![Week number support in schedule xamarin forms](monthview_images/showweeknumber.png)
+![Week number support in schedule xamarin forms](monthview_images/xamarin.forms-schedule-weeknumber.png)
 
 ## Week Number Appearance
 You can customize the Week Number appearance by using [WeekNumberStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~WeekNumberStyle.html) property of `MonthViewSettings`. Week number [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~BackgroundColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~TextColor.html), [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~FontFamily.html), [FontSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~FontSize.html), [FontAttributes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekNumberStyle~FontAttributes.html) can be customized using `WeekNumberStyle` properties.
@@ -435,7 +435,7 @@ monthViewSettings.WeekNumberStyle = weekNumberStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![Week number customization in schedule xamarin forms](monthview_images/weeknumberstyle.png)
+![Week number customization in schedule xamarin forms](monthview_images/xamarin.forms-schedule-weeknumber-appearance.png)
 
 ## View Header Appearance  
 You can customize the View Header appearance by using [ViewHeaderStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderStyle.html) property in SfSchedule. View Header [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~BackgroundColor.html), [DayTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayTextColor.html) and [DayFontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderStyle~DayFontFamily.html) can be customized using `ViewHeaderStyle` properties.
@@ -463,7 +463,7 @@ schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![Month view header customization in schedule xamarin forms](monthview_images/viewheaderstyle.png)
+![Month view header customization in schedule xamarin forms](monthview_images/xamarin.forms-schedule-viewheader-appaearance.png)
 
 >**NOTE**
 FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
@@ -504,7 +504,7 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Month view header format in schedule xamarin forms](monthview_images/DateFormat_Month.png)
+![Month view header format in schedule xamarin forms](monthview_images/xamarin.forms-schedule-viewheader-dateformat.png)
 
 ### ViewHeader Tapped Event
 You can handle single tap action of ViewHeader by using [ViewHeaderTapped](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ViewHeaderTapped_EV.html) event of `SfSchedule`. This event will be triggered when the ViewHeader is Tapped. This event contains [ViewHeaderTappedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs.html) argument which holds [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ViewHeaderTappedEventArgs~Datetime.html) details in it.
@@ -579,7 +579,7 @@ schedule.MonthCellStyle = monthCellStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![Month cell customization using styling in schedule xamarin forms](monthview_images/monthcellstyle.png)
+![Month cell customization using styling in schedule xamarin forms](monthview_images/xamarin.forms-schedule-monthcell-appearance.png)
     
 ### Customize month cell using event
 By using [OnMonthCellLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~OnMonthCellLoadedEvent_EV.html) in `SfSchedule`, you can customize the month cell properties in the run time. In `OnMonthCellLoadedEvent`, arguments such as [cellStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellLoadedEventArgs~cellStyle.html), [appointments](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellLoadedEventArgs~appointments.html), [date](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellLoadedEventArgs~date.html), [view](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellLoadedEventArgs~view.html) and boolean properties such as [isToday](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellLoadedEventArgs~isToday.html), [isNextMonthDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellLoadedEventArgs~isNextMonthDate.html), [isPreviousMonthDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellLoadedEventArgs~isPreviousMonthDate.html) and [isBlackOutDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellLoadedEventArgs~isBlackOutDate.html) are in the [MonthCellLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthCellLoadedEventArgs.html).
@@ -627,7 +627,7 @@ private void Schedule_OnMonthCellLoadedEvent(object sender, MonthCellLoadedEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Month cell customization using events in schedule xamarin forms](monthview_images/monthcellstyle_event.png)
+![Month cell customization using events in schedule xamarin forms](monthview_images/xamarin.forms-schedule-monthcell-style.png)
 
 >**NOTE**
 FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.
@@ -657,7 +657,7 @@ private void Schedule_OnMonthCellLoadedEvent(object sender, MonthCellLoadedEvent
 {% endhighlight %}
 {% endtabs %}
 
-![Month cell customization using custom view in schedule xamarin forms](monthview_images/monthcellcustomview.png)
+![Month cell customization using custom view in schedule xamarin forms](monthview_images/xamarin.forms-schedule-monthcell-custom.png)
 
 ### Customize month cell using DataTemplate
 You can customize the default appearance of the month cell by using the [MonthCellTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~MonthCellTemplate.html) property of `MonthViewSettings`.
@@ -679,7 +679,7 @@ x:Name="schedule" ScheduleView="MonthView">
 {% endhighlight %}
 {% endtabs %}
 
-![Month cell customization using DataTemplate in schedule xamarin forms](monthview_images/monthdatatemplate.png)
+![Month cell customization using DataTemplate in schedule xamarin forms](monthview_images/xamarin.forms-schedule-monthcell-datatemplate.png)
 
 ### Customize month cell using DataTemplateSelector
 
@@ -811,7 +811,7 @@ public class MonthCellDateBehavior : Behavior<Label>
 {% endhighlight %}
 {% endtabs %}
 
-![Month cell customization using Template selector in schedule xamarin forms](monthview_images/datatemplateselector_month.png)
+![Month cell customization using Template selector in schedule xamarin forms](monthview_images/xamarin.forms-schedule-datatemplate-seletor.png)
 
 ## Getting Inline Appointment details
 Using [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~Appointment.html) argument in the [MonthInlineAppointmentTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs.html) of [MonthInlineAppointmentTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MonthInlineAppointmentTapped_EV.html) event, you can get the Month Inline Appointments details while tapping the specific appointment, and you can get the selected date by using the [selectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentTappedEventArgs~selectedDate.html) property. `MonthInlineAppointmentTapped` also trigger while tapping the `No Events` view in inline. You can do the required functions while tapping the inline appointment using this event.
@@ -886,8 +886,8 @@ private void Schedule_OnMonthInlineLoadedEvent(object sender, MonthInlineLoadedE
 {% endhighlight %}
 {% endtabs %}
 
-![Month inline appointment details formatting and appearance in schedule xamarin forms](monthview_images/inlineviewstyle.png)
-![Month inline No Events text customization](monthview_images/No_Events_Customization.png)
+![Month inline appointment details formatting and appearance in schedule xamarin forms](monthview_images/xamarin.forms-schedule-inlineview-style.png)
+![Month inline No Events text customization](monthview_images/xamarin.forms-schedule-noevents-customization.png)
 
 Get the complete sample for this [here](https://github.com/SyncfusionExamples/Customizing-inline-view-in-Xamarin.Forms-schedule/).
 
@@ -916,7 +916,7 @@ SfSchedule schedule = new SfSchedule();
 {% endhighlight %}
 {% endtabs %}
 
-![Month inline customization with custom view](monthview_images/CustomInlineView.png)
+![Month inline customization with custom view](monthview_images/xamarin.forms-schedule-inline-customview.png)
 
 ## InlineAppointment Appearance 
 You can customize the Month inline view Appointment by using [OnMonthInlineAppointmentLoadedEvent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~OnMonthInlineAppointmentLoadedEvent_EV.html) in `SfSchedule`, using [view](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentLoadedEventArgs~view.html) of [MonthInlineAppointmentLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentLoadedEventArgs.html) argument. You can get the details of Appointment in the [appointment](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthInlineAppointmentLoadedEventArgs~appointment.html) argument.
@@ -939,7 +939,7 @@ private void Schedule_OnMonthInlineAppointmentLoadedEvent(object sender, MonthIn
 {% endhighlight %}
 {% endtabs %}
 
-![Custom month inline appointment in schedule xamarin forms](monthview_images/inlinecustomview.png)
+![Custom month inline appointment in schedule xamarin forms](monthview_images/xamarin.forms-schedule-inline-appointment-appearance.png)
 
 >**NOTE**
 Inline view customization - There is no support for inline view appointments customization using custom view, TimeTextSize, TimeTextFormat and TimeTextColor properties in XForms UWP.
@@ -974,7 +974,7 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Month selection text color customization in schedule xamarin forms](monthview_images/selectiontextcolor.png)
+![Month selection text color customization in schedule xamarin forms](monthview_images/xamarin.forms-schedule-selection-textcolor.png)
 
 ### Selection indicator color customization
 Month cell selection indicator color can be customized using [SelectionIndicatorColor](https://help.syncfusion.com/cr/cref_files/xamarin-ios/Syncfusion.SfSchedule.iOS~Syncfusion.SfSchedule.iOS.MonthViewSettings~SelectionIndicatorColor.html) property of `MonthViewSettings` in Xamarin.iOS (Native). You can achieve the same in Xamarin.Forms by setting the required color to `SelectionIndicatorColor` property of the Xamarin.Forms (iOS) project using reflection.
@@ -1044,7 +1044,7 @@ schedule.SelectionStyle = selectionStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![Month selection style customization in schedule xamarin forms](monthview_images/SelectionStyle_Month.png)
+![Month selection style customization in schedule xamarin forms](monthview_images/xamarin.forms-schedule-selection-style.png)
 
 ### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionView.html) property of `SfSchedule`.
@@ -1071,7 +1071,7 @@ schedule.SelectionView = customView;
 {% endhighlight %}
 {% endtabs %}
 
-![custom month selection in schedule xamarin forms](monthview_images/SelectionView_Month.png)
+![custom month selection in schedule xamarin forms](monthview_images/xamarin.forms-schedule-selection-customview.png)
 
 ### Programmatic selection
 You can programmatically select the specific cell by setting corresponding date to [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
@@ -1098,7 +1098,7 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 * `SfSchedule` does not support multiple selection.
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
-![Month programatic selection in schedule xamarin forms](monthview_images/selection_Month.png)
+![Month programatic selection in schedule xamarin forms](monthview_images/xamarin.forms-schedule-selection.png)
 
 ## Today Background Color
 You can customize the current date background of  `SfSchedule`  by using [TodayBackground](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~TodayBackground.html) property of `MonthViewSettings`.
@@ -1121,7 +1121,7 @@ schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Month today background color customization in schedule xamarin forms](monthview_images/TodayBackground.png)
+![Month today background color customization in schedule xamarin forms](monthview_images/xamarin.forms-schedule-today-backgroundcolor.png)
 
 ## Custom Font
 
@@ -1143,7 +1143,7 @@ viewHeaderStyle.DayFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Re
 {% endhighlight %}
 {% endtabs %}
 
-![Month view header custom font support in schedule xamarin forms](monthview_images/customfontviewheader_month.png)
+![Month view header custom font support in schedule xamarin forms](monthview_images/xamarin.forms-schedule-customfont-header.png)
 
 {% tabs %}
 {% highlight xaml %}
@@ -1156,7 +1156,7 @@ monthCellStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regula
 {% endhighlight %}
 {% endtabs %}
 
-![Month view cell custom font support in schedule xamarin forms](monthview_images/customfontmonthcell.png)
+![Month view cell custom font support in schedule xamarin forms](monthview_images/xamarin.forms-schedule-customfont-monthcell.png)
 
 
 {% tabs %}
@@ -1174,7 +1174,7 @@ private void Schedule_OnMonthInlineLoadedEvent(object sender, MonthInlineLoadedE
 {% endhighlight %}
 {% endtabs %}
 
-![Month view inline custom font support in schedule xamarin forms](monthview_images/customfontinline.png)
+![Month view inline custom font support in schedule xamarin forms](monthview_images/xamarin.forms-schedule-customfont-inline.png)
 
 {% tabs %}
 {% highlight c# %}
@@ -1182,7 +1182,7 @@ weekNumberStyle.FontFamily = Device.OnPlatform("Lobster=Regular", "Lobster-Regul
 {% endhighlight %}
 {% endtabs %}
 
-![Month view week number custom font support in schedule xamarin forms](monthview_images/customfontweeknumber.png)
+![Month view week number custom font support in schedule xamarin forms](monthview_images/xamarin.forms-schedule-customfont-weeknumber.png)
 
 Following steps will explain how to configure the custom fonts.
 

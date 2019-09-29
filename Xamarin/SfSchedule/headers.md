@@ -49,7 +49,7 @@ schedule.HeaderStyle = headerStyle;
 {% endhighlight %}
 {% endtabs %} 
 
-![](Header_images/HeaderStyle.png) 
+![Xamarin.Forms SfSchedule Header Style](Header_images/xamarin.forms.schedule-header-appearance.png) 
 
 >**NOTE**
 FontAttributes and FontFamily are native to the  platform. Custom font and the font which are not available in the specified platform will not be applied.
@@ -69,7 +69,7 @@ headerStyle.FontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.t
 {% endhighlight %}
 {% endtabs %} 
 
-![](Header_images/customfontheader.png) 
+![Xamarin.Forms SfSchedule Header customization](Header_images/xamarin.forms-schedule-customize-font.png) 
 
 Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
 
@@ -122,7 +122,7 @@ schedule.ScheduleHeaderDateFormat = "LLL yy";
 {% endhighlight %}
 {% endtabs %}
 
-![](Header_images/HeaderDateFormat.png)
+![Xamarin.Forms SfSchedule Header DateFormat](Header_images/xamarin.forms-schedule-date-format.png)
 
 ## Header Tapped Event
 

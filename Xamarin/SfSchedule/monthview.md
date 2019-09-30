@@ -862,12 +862,12 @@ private void Schedule_OnMonthInlineLoadedEvent(object sender, MonthInlineLoadedE
             MonthInlineViewStyle monthInlineViewStyle = new MonthInlineViewStyle();
             if (appointments != null && appointments.Count > 0)
             {
-                monthInlineViewStyle.BackgroundColor = Color.Blue;
-                monthInlineViewStyle.TextColor = Color.Green;
-                monthInlineViewStyle.FontSize = 20;
+                monthInlineViewStyle.BackgroundColor = Color.AliceBlue;
+                monthInlineViewStyle.TextColor = Color.White;
+                monthInlineViewStyle.FontSize = 10;
                 monthInlineViewStyle.FontAttributes = FontAttributes.None;
                 monthInlineViewStyle.FontFamily = "Times New Roman";
-                monthInlineViewStyle.TimeTextColor = Color.Red;
+                monthInlineViewStyle.TimeTextColor = Color.Yellow;
                 monthInlineViewStyle.TimeTextSize = 15;
                 monthInlineViewStyle.TimeTextFormat = "hh a";
             }

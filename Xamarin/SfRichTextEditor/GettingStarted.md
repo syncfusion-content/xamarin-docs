@@ -19,7 +19,7 @@ You can add Rich Text Editor reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add Rich Text Editor to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRichTextEditor](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRichTextEditor) and then install it.
 
-![Adding SfRich Text Editor reference from NuGet](SfRichTextEditor_Images/RichTextEditor_reference.png)
+![Adding SfRichTextEditor reference from NuGet](SfRichTextEditor_Images/RichTextEditor_reference.png)
 
 N> Install the same version of SfRichTextEditor NuGet in all the projects.
 
@@ -65,7 +65,7 @@ N> If you are adding the references from toolbox, this step is not required.
 
 ### iOS
 
-To launch the Rich Text Editor in iOS, call the 'SfRichTextEditorIOS.Init()', 'SfButtonRenderer.Init()', 'SfComboBoxRenderer.Init()' and 'SfBorderRenderer.Init()' in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
+To launch the Rich Text Editor in iOS, call the 'SfRichTextEditorRenderer.Init()' in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
 
 {% highlight C# %} 
 

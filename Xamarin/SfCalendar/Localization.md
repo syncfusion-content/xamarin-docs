@@ -48,7 +48,7 @@ Example: For Portuguese, `Syncfusion.SfCalendar.Forms.pt.resx`
 ![Localization support in Xamarin.Forms SfCalendar](Images/xamarin.forms-calendar-localizable-strings-pcl.png)  
 Now, set the Build Action as EmbeddedResource for `Syncfusion.SfCalendar.Forms.pt.resx` file and Build Action as Compile for `Syncfusion.SfCalendar.Forms.pt.Designer.cs` file.
 
-![Localization support in Xamarin.Forms SfCalendar](Images/xamarin.forms-calendar-localization-noevents.png)
+![Localization support in Xamarin.Forms SfCalendar](Images/xamarin.forms-calendar-localecustom.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [LocaleFromPCL](https://github.com/SyncfusionExamples/Localizing-the-custom-texts-in-Xamarin.Forms-Calendar).
@@ -81,7 +81,7 @@ The procedure for creating strings.xml files is as follows:
 *	Create new folders under resource as values-`ar`, values-`de`, values-`en` and values-`fr` (The original values folder already exists).
 *	Place the translated strings.xml files in the respective folders.
  
-![Localization support in Xamarin.Forms SfCalendar](Images/xamarin.forms-calendar-localecustom.png)  
+![Localization support in Xamarin.Forms SfCalendar](Images/xamarin.forms-calendar-localization-android.jpeg)  
 
 >**NOTE** 
 The corresponding Locale values folder updates only when the device language changes.

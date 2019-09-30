@@ -7,6 +7,6 @@ control : SfBusyIndicator
 documentation : ug
 ---
 
-# AutomationId
+## AutomationId
 
 `SfBusyIndicator` does not have support for `AutomationID` since the `SfBusyIndicator` does not have any elements to interact with.

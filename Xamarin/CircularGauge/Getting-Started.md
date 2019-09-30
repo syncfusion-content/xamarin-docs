@@ -15,7 +15,8 @@ This section explains the steps required to configure the [`SfCircularGauge`](ht
 
 To get start quickly with Xamarin Circular Gauge control, you can check on this video:
 
-`https://youtu.be/Rjd9NxDFoWo`
+<style>#XamarinGaugeVideoTutorial{width : 90% !important; height: 300px !important }</style>
+<iframe id='XamarinGaugeVideoTutorial' src='https://www.youtube.com/embed/Rjd9NxDFoWo'></iframe>
 
 ## Adding SfCircularGauge reference
 

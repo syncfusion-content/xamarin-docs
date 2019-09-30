@@ -7,7 +7,7 @@ control: SfDataForm
 documentation: UG
 ---
 
-# AutomationId
+## AutomationId
 
 The `SfDataForm`control has built-in `AutomationId` support for inner elements. Please find the following table of Automation IDs for inner elements.
 

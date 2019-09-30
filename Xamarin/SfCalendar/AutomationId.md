@@ -7,7 +7,7 @@ control: SfCalendar
 documentation: UG
 ---
 
-# AutomationId
+## AutomationId
 
 The `SfCalendar` control has built-in `AutomationId` for inner elements. Please find the following table of Automation IDs for inner elements.
 
@@ -94,23 +94,23 @@ The `SfCalendar` control has built-in `AutomationId` for inner elements. Please 
 
 To keep unique `AutomationId`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`. For example, if you set `SfCalendar` AutomationId as `SfCalendar.AutomationId = Calendar`, then the Automation framework will interact with the `RightArrow` button as `CalendarForward`. The following screenshots denote the AutomationIds for inner elements.
 
-## Month view
+### Month view
 
 ![MonthView AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-month-view.png)
 
-## Week view
+### Week view
 
 ![Week view AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-week-view.png)
 ![Week view AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-weekview.png)
 
-## Year view
+### Year view
 
 ![Year view AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-year-view.png)
 
-## Decade view
+### Decade view
 
 ![Decade view AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-decade-view.png)
 
-## Century view
+### Century view
 
 ![Century view AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-century-view.png)

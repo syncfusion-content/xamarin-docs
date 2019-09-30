@@ -11,6 +11,11 @@ documentation: ug
 
 This section explains the steps required to load an image to the image editor control.
 
+To get start quickly with Xamarin Image Editor control, you can check on this video:
+
+<style>#xamarinImageEditorVideoTutorial{width : 90% !important; height: 300px !important }</style>
+<iframe id='xamarinImageEditorVideoTutorial' src='https://www.youtube.com/embed/SW1fsk7YbeA'></iframe>
+
 ## Adding SfImageEditor reference
 
 You can add SfImageEditor reference using one of the following methods:

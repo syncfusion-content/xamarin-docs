@@ -212,3 +212,5 @@ inputLayout.InputView = combobox;
 {% endtabs %}
 
 ![Combobox](Supported-input-views-images/textInput_input_img6.PNG)
+
+N> Entry and Editor are the only input views supported by [`SfTextInputLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html) in WPF platform.

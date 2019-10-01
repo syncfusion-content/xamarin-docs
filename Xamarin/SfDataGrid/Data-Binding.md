@@ -50,7 +50,7 @@ N> The SfDataGrid does not supports `DataTable` binding in `Xamarin.Forms` since
 The SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, and filtering are supported when binding collection derived from `IEnumerable`.
 
 ## Binding with DataTable
-SfDataGrid control supports to bind the DataTable. SfDataGrid control automatically refresh the UI when binding DataTable as `ItemsSource` when rows are added, removed or cleared.
+`SfDataGrid` control supports to bind the [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=netframework-4.8). SfDataGrid control automatically refresh the UI when binding DataTable as `ItemsSource` when rows are added, removed or cleared.
 
 {% tabs %}
 {% highlight xaml %}

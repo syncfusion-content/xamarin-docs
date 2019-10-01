@@ -235,9 +235,9 @@ private void OnFilterChanged()
 }
 {% endhighlight %}
 
-## Filtering based on RowFilter
+## DataTable filtering
 
-To filter the rows in SfDataGrid using DataView.RowFilter expression, set the value of `SfDataGrid.CanUseViewFilter` property to `true`. The default filter which created in DataView can be applied or canceled through this property. 
+To filter the rows in SfDataGrid using [DataView.RowFilter](https://docs.microsoft.com/en-us/dotnet/api/system.data.dataview.rowfilter?view=netframework-4.8) expression, set the value of [SfDataGrid.CanUseRowFilter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CanUseViewFilter.html) property to `true`. The default filter which created in DataView can be applied or canceled through this property. 
 
 ## Filter individual columns
 

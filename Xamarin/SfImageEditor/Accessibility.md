@@ -3,7 +3,7 @@ layout : post
 title : Automation ID in Syncfusion SfImageEditor control in Xamarin.Forms
 description : Learn how to use automation ID in ImageEditor for Xamarin.Forms
 platform : xamarin.forms
-control : ImageEditor
+control : SfImageEditor
 documentation : ug
 ---
 

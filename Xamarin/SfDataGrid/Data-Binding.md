@@ -52,10 +52,18 @@ The SfDataGrid control supports to bind any collection that implements the [IEnu
 ## Binding with DataTable
 SfDataGrid control supports to bind the DataTable. SfDataGrid control automatically refresh the UI when binding DataTable as `ItemsSource` when rows are added, removed or cleared.
 
+{% tabs %}
+{% highlight xaml %}
+<sfGrid:SfDataGrid x:Name="dataGrid"
+                   AutoGenerateColumns="False"
+                   ItemsSource="{Binding Table}">
+</sfGrid:SfDataGrid>
+{% endhighlight %} 
 {% highlight c# %}
-DataTable dataTable = this.GetDataTable();
-this.sfDataGrid1.ItemsSource = dataTable;
+DataTable Table = this.GetDataTable();
+this.sfDataGrid1.ItemsSource = Table;
 {% endhighlight %}
+{% endtabs %}
 
 Below are the limitations when binding DataTable as `ItemsSource` to SfDataGrid.
 

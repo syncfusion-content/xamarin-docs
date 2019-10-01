@@ -87,7 +87,7 @@ schedule.MonthViewSettings = monthViewSettings;
 * The `AppointmentDisplayCount` support is applicable for XForms UWP and WPF platforms.
 * By clicking more option, schedule navigates to the day view by default in XForms UWP and WPF platforms.
 
-![Month appointment diplay count in schedule xamarin forms](monthview_images/xamarin.forms-schedule-appointment-indicator-count.png)
+![Month appointment diplay count in schedule xamarin forms](monthview_images/xamarin.forms-schedule-appointment-indicator-count.jpg)
 
 #### Disable navigation to DayView
 You can disable the navigation to day view by triggering the CellTappedEvent and set the argument [CancelNavigation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~CancelNavigation.html) value as true. [IsMoreAppointments](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~IsMoreAppointments.html) argument is used to determine whether the month cell more appointments count element has been tapped or not while the appointment display mode as Appointment.

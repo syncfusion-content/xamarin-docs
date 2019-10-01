@@ -11,8 +11,6 @@ documentation: ug
 
 The Effects View is a container control that provides modern effects like ripple, selection, scaling, and rotation. Users can render these effects through touch interactions such as touch down, touch up, long press, and also by calling the APIs. 
 
-![The effects view control for Xamarin.Forms](Overview_images/EffectsView_Syncfusion.gif)
-
 ## Key features
 
 * Supports highlight and ripple animation.

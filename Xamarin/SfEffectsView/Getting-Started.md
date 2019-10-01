@@ -67,7 +67,7 @@ To launch the SfEffectsView in iOS, call the `SfEffectsViewRenderer.Init()` meth
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     global::Xamarin.Forms.Forms.Init();
-    SfEffectsViewRenderer.Init();
+    Syncfusion.XForms.iOS.EffectsView.SfEffectsViewRenderer.Init();
     LoadApplication(new App());
     return base.FinishedLaunching(app, options);
 } 
@@ -104,34 +104,16 @@ Then, initialize the SfEffectsView as demonstrated in the following code example
 
 {% highlight xaml %} 
 
-<sfEffectsView:SfEffectsView x:Name="EffectsView"  Margin="0,5,0,10" CornerRadius="0,25,0,25" 
-                                                 RippleAnimationDuration="800">                        
-    <Grid>
-        <sfBorder:SfBorder BackgroundColor="#2196F3"  BorderColor="Transparent" BorderWidth="0">  		
-        ...                   
-        </sfBorder:SfBorder>
-    </Grid>
-</sfEffectsView:SfEffectsView>
+<sync:SfEffectsView CornerRadius="0,25,0,25">
+    ...
+</sync:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
 SfEffectsView effectsView = new SfEffectsView();
-effectsView.Margin = new Thickness(0, 5, 0, 10);
 effectsView.CornerRadius = new Thickness(0, 25, 0, 25);
-effectsView.RippleAnimationDuration = 800;
-
-Grid grid = new Grid();
-
-SfBorder border = new SfBorder();
-border.BackgroundColor = Color.FromHex("#2196F3");
-border.BorderColor = Color.Transparent;
-border.BorderWidth = 0;
-...
-grid.Children.Add(border);
-
-effectsView.Content = grid;
 
 {% endhighlight %}
 

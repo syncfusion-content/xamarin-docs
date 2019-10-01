@@ -113,7 +113,7 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
         </td>
           <td>
-            All controls [except SfEffectsView and SfShimmer]
+            All controls except SfEffectsView and SfShimmer
             <br/>
             <br/>
         </td>

@@ -268,4 +268,4 @@ The following list of Easing effects are available to animate the PopupView when
 * `Linear`: Use the [SfPopupLayout.PopupView.AnimationEasing.Linear] to animate the PopupView with constant velocity. This is default value.
 * `SignIn`: Use the [SfPopupLayout.PopupView.AnimationEasing.SignIn] to animate the PopupView by accelerating smoothly.
 * `SignOut`: Use the [SfPopupLayout.PopupView.AnimationEasing.SignOut] to animate the PopupView by decelerating smoothly.
-* `SignInOut`: Use the [SfPopupLayout.PopupView.AnimationEasing.SignInOut] to animate the PopupView by accelerating smoothly at begining and decelerating smoothly at the end.
+* `SignInOut`: Use the [SfPopupLayout.PopupView.AnimationEasing.SignInOut] to animate the PopupView by accelerating smoothly at beginning and decelerating smoothly at the end.

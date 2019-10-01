@@ -8,9 +8,20 @@ documentation: ug
 ---
 # Automation Id
 
-The Expander control has built in AutomationId for inner elements. Please find following table of AutomationIds of inner elements. To keep unique 
-AutomationID, These inner element's Automation IDs get updated based on Expander's Automation ID. For example, if we set Expander's AutomationId as
-"Expander.AutomationId = AutomationIcon1 or AutomationIcon2... " then Automation framework will interact the `Expander` as `AutomationIcon1 Expander`, `AutomationIcon2 Expander` for subsequent icons.
- The following image denoted the AutomationIds of inner elements.
+The Expander control has built in AutomationId for inner elements. Please find following table of AutomationIds of inner elements. To keep unique AutomationID, These inner element's Automation IDs get updated based on Expander's Automation ID. For example, if we set Expander's AutomationId as "Expander.AutomationId = AutomationIcon1 or AutomationIcon2... " then Automation framework will interact the `Expander` as `AutomationIcon1 Expander`, `AutomationIcon2 Expander` for subsequent icons. The following image denoted the AutomationIds of inner elements.
+
+<table>
+<tr>
+<th align="center" >View</th>
+<th align="center" >AutomationId Format</th>
+<th align="center" >Example</th>
+</tr>
+
+<tr>
+<td>Expander Icon</td>
+<td>ControlAutomationId Expander</td>
+<td>Expander</td>
+</tr>
+</table>
 
 ![Automation id for expander](expander_images/ExpanderAutomationImage.png)

@@ -13,19 +13,23 @@ The text input layout control has built-in AutomationId for inner elements. To k
 
 <table>
 <tr>
- <th>Icon</th>
- <th>AutomationId</th>
+ <th>Element</th>
+ <th>Element AutomationId</th>
+ <th>Qualified AutomationId</th>
 </tr>
 <tr>
 <td>Password Toggle VisibleIcon</td>
+<td>show password</td>
 <td>textInputLayout show password</td>
 </tr>
 <tr>
 <td>Password Toggle CollapsedIcon</td>
+<td>hide password</td>
 <td>textInputLayout hide password</td>
 </tr>
 <tr>
 <td>DropDown Button</td>
+<td>drop down</td>
 <td>textInputLayout drop down</td>
 </tr>
 </table>

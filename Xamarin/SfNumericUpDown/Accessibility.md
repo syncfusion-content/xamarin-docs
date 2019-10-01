@@ -13,15 +13,18 @@ The NumericUpDown control has built-in AutomationId for inner elements. To keep 
 
 <table>
 <tr>
- <th>Icon</th>
- <th>AutomationId</th>
+ <th>Element</th>
+ <th>Element AutomationId</th>
+ <th>Qualified AutomationId</th>
 </tr>
 <tr>
 <td>Increment Button</td>
+<td>increment button</td>
 <td>numericUpDown increment button</td>
 </tr>
 <tr>
 <td>Decrement Button</td>
+<td>decrement button</td>
 <td>numericUpDown decrement button</td>
 </tr>
 </table>

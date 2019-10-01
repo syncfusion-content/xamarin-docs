@@ -452,3 +452,32 @@ public class ViewModel: INotifyPropertyChanged
 Executing the above codes renders the following output in Android device respectively.
 
 ![Relative positioning of Popup in MVVM](PopupLayout_images/ShowingPopupAtRelativePositionInMVVM.jpg)
+
+## Display the popup with Padding
+
+The SfPopupLayout allows user to set padding for layout the PopupView by using the `SfPopupLayout.Padding` property. The default value is 5 for `SfPopupLayout`, So specifying greater than this default values applies effective padding.
+
+{% tabs %}
+{% highlight xaml %}
+    <ContentPage.Content>
+        <sfPopup:SfPopupLayout x:Name="popupLayout" Padding="15,15,15,15">
+            <sfPopup:SfPopupLayout.Content>
+                <StackLayout x:Name="mainLayout" VerticalOptions="StartAndExpand" HorizontalOptions="Start">
+                    <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
+                        <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" TextColor="White" 
+                  HeightRequest="60" VerticalOptions="Start" Margin="50,0,0,0" HorizontalOptions="StartAndExpand" BackgroundColor="Blue" 
+                  Clicked="ClickToShowPopup_Clicked"/>
+                    </StackLayout>
+                </StackLayout>
+            </sfPopup:SfPopupLayout.Content>
+        </sfPopup:SfPopupLayout>
+    </ContentPage.Content>
+{% endhighlight %}
+
+{% highlight c# %}
+            SfPopupLayout popupLayout = new SfPopupLayout();
+            popupLayout.Padding = new Thickness(15, 15, 15, 15);
+{% endhighlight %}
+{% endtabs %}
+
+![Popup with Padding](PopupLayout_images/SfPopupLayoutPadding_Android.jpg)

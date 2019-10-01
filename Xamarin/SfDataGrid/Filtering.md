@@ -237,7 +237,7 @@ private void OnFilterChanged()
 
 ## Filtering based on RowFilter
 
-To filter the rows in SfDataGrid using DataView.RowFilter expression, set the value of `SfDataGrid.CanUseRowFilter` property to `true`. The default filter which created in DataView can be applied or canceled through this property. 
+To filter the rows in SfDataGrid using DataView.RowFilter expression, set the value of `SfDataGrid.CanUseViewFilter` property to `true`. The default filter which created in DataView can be applied or canceled through this property. 
 
 ## Filter individual columns
 

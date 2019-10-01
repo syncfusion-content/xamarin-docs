@@ -43,7 +43,7 @@ inputLayout.InputView = new Entry();
 ## Editor
 
 
-To enter multi line text input, add [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor).
+To enter multi line text input, add [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor) and set the `AutoSize` property to `TextChanges`.
 
 
 {% tabs %} 
@@ -52,7 +52,7 @@ To enter multi line text input, add [Editor](https://docs.microsoft.com/en-us/xa
 
 <inputLayout:SfTextInputLayout
    Hint="Notes">
-   <Editor />
+   <Editor AutoSize="TextChanges" />
 </inputLayout:SfTextInputLayout>  
 
 {% endhighlight %}

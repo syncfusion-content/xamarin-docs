@@ -325,6 +325,8 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
         var collection = (sender as SfDataGrid).ItemsSource as IList;
         collection.RemoveAt(e.From - 1);
         collection.Insert(e.To - 1, e.RowData);
+	    //To skip default collection change inside the SfDataGrid source for a successful drag and drop operation.
+        e.Cancel = true;
     }
 }
 

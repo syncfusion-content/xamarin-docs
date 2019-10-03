@@ -188,6 +188,9 @@ schedule.TimeIntervalHeight = -1;
 {% endhighlight %}
 {% endtabs %}
 
+>**NOTE**
+In Timeline view, If the time slot duration such as `DaysCount` ,`StartHour`, or `EndHour` is within the width of the screen, the `TimeIntervalHeight` will automatically be adjusted to the screen, otherwise the `TimeIntervalHeight` will be adjusted to 100 offset value.
+
 ## Nonworking days
 
 You can add the non-working days in `TimelineView` using [NonWorkingsDays](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~NonWorkingsDays.html) property of `TimelineViewSettings`. By default, there is no non-working day in `TimelineView`.

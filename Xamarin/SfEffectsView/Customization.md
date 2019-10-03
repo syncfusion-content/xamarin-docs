@@ -299,4 +299,4 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![Rotation Angle customization](Customization_images/EffectsView_Rotation.gif)
+![Rotation Angle customization](Customization_images/EffectsView_Rotation.png)

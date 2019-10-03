@@ -39,7 +39,7 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![Highlight effect](Effects_images/Highlight.gif)
+![Highlight effect](Effects_images/EffectsView_Highlight.png)
 
 ## Ripple
 
@@ -100,7 +100,7 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![Scale effect](Effects_images/Scale.gif)
+![Scale effect](Effects_images/EffectsView_Scale.png)
 
 ## Selection
 
@@ -130,7 +130,7 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![Selection effect](Effects_images/SelectionEffect.gif)
+![Selection effect](Effects_images/EffectsView_Selection.png)
 
 ## Rotation
 

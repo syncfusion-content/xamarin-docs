@@ -23,6 +23,7 @@ The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
     HighlightColor="#FF0000"
     TouchDownEffects="Highlight">
     ...
+    
 </sync:SfEffectsView>
 
 {% endhighlight %}

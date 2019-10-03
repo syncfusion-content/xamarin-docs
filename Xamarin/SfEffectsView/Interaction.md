@@ -19,24 +19,19 @@ The [`TouchDownEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView TouchDownEffects="Ripple">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
-            </sfEffectsView:SfEffectsView>
+<sync:SfEffectsView TouchDownEffects="Ripple">
+    ...
+</sync:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView
-            {
-                TouchDownEffects = SfEffects.Ripple,
-                Content = new Image()
-                {
-                    Source = "Biscuits.png",
-                    Aspect = Aspect.Fill
-                }
-            };
-            this.Content = effectsView;
+var effectsView = new SfEffectsView
+{
+    TouchDownEffects = SfEffects.Ripple
+};
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -49,24 +44,19 @@ The [`LongPressEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView LongPressEffects="Ripple">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
-            </sfEffectsView:SfEffectsView>
+<sync:SfEffectsView LongPressEffects="Ripple">
+    ...
+</sync:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView
-            {
-                LongPressEffects = SfEffects.Ripple,
-                Content = new Image()
-                {
-                    Source = "Biscuits.png",
-                    Aspect = Aspect.Fill
-                }
-            };
-            this.Content = effectsView;
+var effectsView = new SfEffectsView
+{
+    LongPressEffects = SfEffects.Ripple
+};
+
 {% endhighlight %}
 
 {% endtabs %}
@@ -79,24 +69,19 @@ The [`TouchUpEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView TouchUpEffects="Ripple">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
-            </sfEffectsView:SfEffectsView>
+<sync:SfEffectsView TouchUpEffects="Ripple">
+    ...
+</sync:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView
-            {
-                TouchUpEffects = SfEffects.Ripple,
-                Content = new Image()
-                {
-                    Source = "Biscuits.png",
-                    Aspect = Aspect.Fill
-                }
-            };
-            this.Content = effectsView;
+var effectsView = new SfEffectsView
+{
+    TouchUpEffects = SfEffects.Ripple
+};
+
 {% endhighlight %}
 
 {% endtabs %}

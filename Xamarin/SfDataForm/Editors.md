@@ -1288,16 +1288,27 @@ The custom prompt character can be set using the [PromptChar](https://help.syncf
 
 ![Loading masked edit text editor in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-maskededittexteditor.png)
 
-### Password character
-To enable [MaskedTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormMaskedEditTextEditor.html) as [PasswordEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormPasswordEditor.html) you can set a character to [PasswordChar](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~PasswordChar.html) property of [DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html).
+### Show password character
+The [MaskedTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormMaskedEditTextEditor.html) supports to work as a password text box when setting a character to the[PasswordChar](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~PasswordChar.html) property of [DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html).
+
 {% tabs %}
 {% highlight c# %}
 (e.DataFormItem as DataFormMaskedEditTextItem).PasswordChar = '*'; 
 {% endhighlight %}
 {% endtabs %}
 
-#### Password Delay and Duration
-While typing the password character you can enable a delay to show the typed character for a while.It can be enabled by setting [EnablePasswordDelay] property into `true`. You can handle the duration of the displaying typed character using the [PasswordDelayDuration] property when password delay is enabled.
+### Password Delay
+When providing password character, you can show the typed character with some delay using the `EnablePasswordDelay` property in [DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html). When enabling the EnablePasswordDelay property, the typed character will be displayed for a few seconds before it is converted to the password character.
+
+{% tabs %}
+{% highlight c# %}
+(e.DataFormItem as DataFormMaskedEditTextItem).PasswordChar = '*'; 
+(e.DataFormItem as DataFormMaskedEditTextItem).EnablePasswordDelay = true; 
+{% endhighlight %}
+{% endtabs %}
+
+### Password delay duration
+When `PasswordDelay` is enabled, you can handle the duration of the displaying typed character using the `PasswordDelayDuration` property in [DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html.
 
 {% tabs %}
 {% highlight c# %}

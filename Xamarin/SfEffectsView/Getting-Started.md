@@ -86,7 +86,7 @@ Import the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
 {% highlight xaml %} 
 
-xmlns:sfEffectsView="clr-namespace:Syncfusion.XForms.EffectsView;assembly=Syncfusion.Core.XForms"
+xmlns:sync="clr-namespace:Syncfusion.XForms.EffectsView;assembly=Syncfusion.Core.XForms"
 
 {% endhighlight %}
 

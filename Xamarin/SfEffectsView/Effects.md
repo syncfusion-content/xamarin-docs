@@ -23,7 +23,6 @@ The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
     HighlightColor="#FF0000"
     TouchDownEffects="Highlight">
     ...
-    
 </sync:SfEffectsView>
 
 {% endhighlight %}
@@ -272,28 +271,18 @@ var effectsView = new SfEffectsView()
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView LongPressEffects="Scale,Selection">
-                <Label Text="Sign up" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" />
-            </sfEffectsView:SfEffectsView>
+ <sync:SfEffectsView LongPressEffects="Scale,Selection">
+     ...
+</sync:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView()
-            {
-                LongPressEffects = SfEffects.Scale | SfEffects.Selection,
-                Content = new Label()
-                {
-                    Text = "Sign up",
-                    HeightRequest = 50,
-                    FontAttributes = FontAttributes.Bold,
-                    FontSize = 18,
-                    HorizontalTextAlignment = TextAlignment.Center,
-                    VerticalTextAlignment = TextAlignment.Center,
-                }
-            };
-            this.Content = effectsView;
+var effectsView = new SfEffectsView()
+{
+    LongPressEffects = SfEffects.Scale | SfEffects.Selection
+};
 
 {% endhighlight %}
 

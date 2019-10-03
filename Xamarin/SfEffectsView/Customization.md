@@ -45,8 +45,9 @@ The [`ScaleAnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin
 {% highlight xaml %} 
 
 <sync:SfEffectsView
+    ScaleAnimationDuration="800"
     LongPressEffects="Scale"
-    ScaleAnimationDuration="800">
+    ScaleFactor="0.85">
     ...
 </sync:SfEffectsView>
 
@@ -56,8 +57,9 @@ The [`ScaleAnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin
 
 var effectsView = new SfEffectsView()
 {
+    ScaleAnimationDuration = 800,
     LongPressEffects = SfEffects.Scale,
-    ScaleAnimationDuration = 800
+    ScaleFactor = 0.85
 };
 
 {% endhighlight %}
@@ -74,6 +76,7 @@ The [`RotationAnimationDuration`](https://help.syncfusion.com/cr/cref_files/xama
 
 <sync:SfEffectsView
     RotationAnimationDuration="800"
+    Angle="180"
     TouchDownEffects="Rotation">
     ...
 </sync:SfEffectsView>
@@ -85,6 +88,7 @@ The [`RotationAnimationDuration`](https://help.syncfusion.com/cr/cref_files/xama
 var effectsView = new SfEffectsView()
 {
     RotationAnimationDuration = 800,
+    Angle = 180,
     LongPressEffects = SfEffects.Rotation
 };
 

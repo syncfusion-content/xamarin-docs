@@ -20,8 +20,8 @@ The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 {% highlight xaml %} 
 
 <sync:SfEffectsView
-    HighlightColor="#FF0000"
-    TouchDownEffects="Highlight">
+    TouchDownEffects="Highlight"
+    HighlightColor="#FF0000">
     ...
 </sync:SfEffectsView>
 
@@ -31,8 +31,8 @@ The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 var effectsView = new SfEffectsView
 {
-    HighlightColor = Color.FromHex("#FF0000"),
     TouchDownEffects = SfEffects.Highlight,
+    HighlightColor = Color.FromHex("#FF0000")
 };
 
 {% endhighlight %}
@@ -122,8 +122,8 @@ var effectsView = new SfEffectsView
 
 var effectsView = new SfEffectsView
 {
-    SelectionColor = Color.FromHex("#FF0000"),
-    LongPressEffects = SfEffects.Selection
+    LongPressEffects = SfEffects.Selection,
+    SelectionColor = Color.FromHex("#FF0000")
 };
 
 {% endhighlight %}
@@ -141,8 +141,8 @@ var effectsView = new SfEffectsView
 {% highlight xaml %} 
 
 <sync:SfEffectsView
-    Angle="180"
-    TouchDownEffects="Rotation">
+    TouchDownEffects="Rotation"
+    Angle="180">
     ...
 </sync:SfEffectsView>
 
@@ -152,8 +152,8 @@ var effectsView = new SfEffectsView
 
 var effectsView = new SfEffectsView
 {
+    TouchDownEffects = SfEffects.Rotation,
     Angle = 180,
-    TouchDownEffects = SfEffects.Rotation
 };
 
 {% endhighlight %}
@@ -205,8 +205,8 @@ var effectsView = new SfEffectsView()
 
 var effectsView = new SfEffectsView()
 {
-    TouchDownEffects = SfEffects.Highlight,
-    LongPressEffects = SfEffects.Selection
+    LongPressEffects = SfEffects.Selection,
+    TouchDownEffects = SfEffects.Highlight
 };
 
 {% endhighlight %}

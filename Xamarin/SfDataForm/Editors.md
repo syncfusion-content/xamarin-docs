@@ -347,9 +347,9 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ![Setting DateFormat to data form date item in Xamarin.Forms DataForm](SfDataForm_images/Editors_DateFormat.png)
 
-### Setting title for date editor[UWP]
+### Setting title for date editor
 
-You can set the title for the time editor by handling the `Title` property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html]. The default value is `Choose Date`.
+You can set title to the time editor by handling the `Title` property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html]. The default value of the property is `Choose Date`.
 
 {% tabs %}
 {% highlight c# %}
@@ -432,7 +432,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Setting title for time editor[UWP]
 
-You can set the title for the time editor by handling the `Title` property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem.html]. The default value is `Choose Time`.
+You can set title to the time editor by handling the `Title` property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem.html]. The default value of this property is `Choose Time`.
 
 {% tabs %}
 {% highlight c# %}

@@ -480,4 +480,4 @@ The SfPopupLayout allows user to set padding for layout the PopupView by using t
 {% endhighlight %}
 {% endtabs %}
 
-![Popup with Padding](PopupLayout_images/SfPopupLayoutPadding_Android.jpg)
+![Popup with Padding](PopupLayout_images/SfPopupLayoutPadding_Android.png)

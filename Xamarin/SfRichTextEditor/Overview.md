@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Overview of Syncfusion Xamarin.Forms RichTextEditor
-description: What are the key features available in RichTextEditor.
+title: Overview of Syncfusion Xamarin.Forms Rich Text Editor
+description: What are the key features available in Rich Text Editor.
 platform: xamarin
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
 # Overview
 
-The Xamarin RichTextEditor control is a WYSIWYG editor that provides a great user experience for composing or editing rich text content from your Xamarin.Forms applications. Users can format their content using standard toolbar commands.
+The Xamarin Rich Text Editor control is a WYSIWYG editor that provides a great user experience for composing or editing rich text content from your Xamarin.Forms applications. Users can format their content using standard toolbar commands.
 
 ## Key features
 
@@ -19,4 +19,4 @@ The Xamarin RichTextEditor control is a WYSIWYG editor that provides a great use
 * Creates bulleted and numbered lists.
 
 
-![Overview of RichTextEditor](SfRichTextEditor_Images/Overview.gif)
+![Overview of Rich Text Editor](SfRichTextEditor_Images/Overview.gif)

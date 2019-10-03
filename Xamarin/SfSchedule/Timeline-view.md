@@ -83,7 +83,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Working hours customization in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-slot-customisation.png)
+![Working hours customization in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-slot-custom-workinghour.png)
 
 >**NOTE**
 * `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
@@ -187,6 +187,9 @@ schedule.ScheduleView = ScheduleView.TimelineView;
 schedule.TimeIntervalHeight = -1;
 {% endhighlight %}
 {% endtabs %}
+
+>**NOTE**
+In Timeline view, If the time slot duration such as `DaysCount` ,`StartHour`, or `EndHour` is within the width of the screen, the `TimeIntervalHeight` will automatically be adjusted to the screen, otherwise the `TimeIntervalHeight` will be adjusted to 100 offset value.
 
 ## Nonworking days
 

@@ -269,7 +269,7 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![EffectsView CornerRadius customization](Customization_images/CornerRadius.png)
+![EffectsView CornerRadius customization](Customization_images/EffectsView_CornerRadius.png)
 
 ## Angle
 

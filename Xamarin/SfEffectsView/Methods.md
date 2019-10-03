@@ -25,5 +25,3 @@ N> The [`SfEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 ## Reset
 
 The [`Reset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~Reset.html) method is used to reset the `SfEffects.Highlight` and `SfEffects.Ripple` effects, which are applied using the [`ApplyEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~ApplyEffects.html) method.
-
-![ApplyEffects and Reset methods](Methods_images/Methods.gif)

@@ -121,7 +121,7 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![InitialRippleFactor customization](Customization_images/InitialRippleFactor.gif)
+![InitialRippleFactor customization](Customization_images/EffectsView_InitialRippleFactor.gif)
 
 ## ScaleFactor
 
@@ -299,4 +299,4 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![Rotation Angle customization](Customization_images/Angle.gif)
+![Rotation Angle customization](Customization_images/EffectsView_Rotation.gif)

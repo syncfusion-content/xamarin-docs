@@ -39,7 +39,7 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![FadeOutRipple](Features_images/FadeOutRipple.gif)
+![FadeOutRipple](Features_images/EffectsView_Fadeout_Ripple.gif)
 
 ## IsSelected
 

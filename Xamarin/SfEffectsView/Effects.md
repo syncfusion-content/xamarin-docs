@@ -66,7 +66,7 @@ var effectsView = new SfEffectsView()
 
 {% endtabs %}
 
-![Ripple effect](Effects_images/Ripple.png)
+![Ripple effect](Effects_images/EffectsView_Ripple.png)
 
 ## Scale
 

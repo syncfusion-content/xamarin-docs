@@ -19,9 +19,9 @@ The [`TouchDownEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView TouchDownEffects="Ripple">
+<syncEffectsView:SfEffectsView TouchDownEffects="Ripple">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -44,9 +44,9 @@ The [`LongPressEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView LongPressEffects="Ripple">
+<syncEffectsView:SfEffectsView LongPressEffects="Ripple">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -69,9 +69,9 @@ The [`TouchUpEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView TouchUpEffects="Ripple">
+<syncEffectsView:SfEffectsView TouchUpEffects="Ripple">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 

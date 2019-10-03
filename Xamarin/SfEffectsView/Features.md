@@ -19,11 +19,11 @@ By enabling the [`FadeOutRipple`](https://help.syncfusion.com/cr/cref_files/xama
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
     FadeOutRipple="True"
     RippleAnimationDuration="1000">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -49,11 +49,11 @@ Enabling the [`IsSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Sy
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
     IsSelected="true"
     LongPressEffects="Selection">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -77,9 +77,9 @@ Enabling the [`ShouldIgnoreTouches`](https://help.syncfusion.com/cr/cref_files/x
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView ShouldIgnoreTouches="true">
+<syncEffectsView:SfEffectsView ShouldIgnoreTouches="true">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 

@@ -86,7 +86,7 @@ Import the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
 {% highlight xaml %} 
 
-xmlns:sync="clr-namespace:Syncfusion.XForms.EffectsView;assembly=Syncfusion.Core.XForms"
+xmlns:syncEffectsView="clr-namespace:Syncfusion.XForms.EffectsView;assembly=Syncfusion.Core.XForms"
 
 {% endhighlight %}
 
@@ -104,9 +104,9 @@ Then, initialize the SfEffectsView as demonstrated in the following code example
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView CornerRadius="0,25,0,25">
+<syncEffectsView:SfEffectsView CornerRadius="0,25,0,25">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 

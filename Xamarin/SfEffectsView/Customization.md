@@ -19,9 +19,9 @@ The [`RippleAnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamari
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView RippleAnimationDuration="800">
+<syncEffectsView:SfEffectsView RippleAnimationDuration="800">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -44,12 +44,12 @@ The [`ScaleAnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
     ScaleAnimationDuration="800"
     LongPressEffects="Scale"
     ScaleFactor="0.85">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -74,12 +74,12 @@ The [`RotationAnimationDuration`](https://help.syncfusion.com/cr/cref_files/xama
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
     RotationAnimationDuration="800"
     Angle="180"
     TouchDownEffects="Rotation">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -104,9 +104,9 @@ The [`InitialRippleFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Sy
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView InitialRippleFactor="0.1">
+<syncEffectsView:SfEffectsView InitialRippleFactor="0.1">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -131,13 +131,13 @@ The [`ScaleFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion
 
 {% highlight xaml %} 
 
- <sync:SfEffectsView
+ <syncEffectsView:SfEffectsView
      ScaleFactor="0.85"
      LongPressEffects="Scale"
      TouchDownEffects="None"
      TouchUpEffects="None">
      ...
- </sync:SfEffectsView>
+ </syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -165,11 +165,11 @@ The [`HighlightColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
      HighlightColor="#2196F3"
      TouchDownEffects="Highlight">
      ...
- </sync:SfEffectsView>
+ </syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -195,9 +195,9 @@ The [`RippleColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView RippleColor="#2196F3">
+<syncEffectsView:SfEffectsView RippleColor="#2196F3">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -222,11 +222,11 @@ The [`SelectionColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
     LongPressEffects="Selection"
     SelectionColor="#2196F3">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -252,9 +252,9 @@ The [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView CornerRadius="0,25">
+<syncEffectsView:SfEffectsView CornerRadius="0,25">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -279,11 +279,11 @@ The [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
     Angle="180"
     TouchDownEffects="Ripple,Rotation">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 

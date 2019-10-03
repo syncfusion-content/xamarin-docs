@@ -19,11 +19,11 @@ The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
     TouchDownEffects="Highlight"
     HighlightColor="#FF0000">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -49,9 +49,9 @@ The `SfEffects.Ripple` is a growable circle, which is initially placed on the ta
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView TouchDownEffects="Ripple">
+<syncEffectsView:SfEffectsView TouchDownEffects="Ripple">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -76,13 +76,13 @@ var effectsView = new SfEffectsView()
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
     ScaleFactor="0.85"
     TouchDownEffects="None"
     TouchUpEffects="None"
     LongPressEffects="Scale">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -110,11 +110,11 @@ var effectsView = new SfEffectsView
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
     LongPressEffects="Selection"
     SelectionColor="#FF0000">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -140,11 +140,11 @@ var effectsView = new SfEffectsView
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
     TouchDownEffects="Rotation"
     Angle="180">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -170,9 +170,9 @@ The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView TouchDownEffects="Highlight,Ripple">
+<syncEffectsView:SfEffectsView TouchDownEffects="Highlight,Ripple">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -193,11 +193,11 @@ var effectsView = new SfEffectsView()
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
     LongPressEffects="Selection"
     TouchDownEffects="Highlight">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -219,11 +219,11 @@ var effectsView = new SfEffectsView()
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
     TouchDownEffects="Ripple"
     TouchUpEffects="Selection">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -245,11 +245,11 @@ var effectsView = new SfEffectsView()
 
 {% highlight xaml %} 
 
-<sync:SfEffectsView
+<syncEffectsView:SfEffectsView
     LongPressEffects="Selection"
     TouchDownEffects="Highlight,Ripple">
     ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
@@ -271,9 +271,9 @@ var effectsView = new SfEffectsView()
 
 {% highlight xaml %} 
 
- <sync:SfEffectsView LongPressEffects="Scale,Selection">
+ <syncEffectsView:SfEffectsView LongPressEffects="Scale,Selection">
      ...
-</sync:SfEffectsView>
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 

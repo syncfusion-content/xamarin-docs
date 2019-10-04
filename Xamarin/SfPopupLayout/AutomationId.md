@@ -1,17 +1,46 @@
 ---
 layout: post
-title: Automation | SfPopupLayout | Xamarin | Syncfusion
-description: Set Automation Id to SfPopupLayout for automation framework to find and interact with control inner elements.
+title: Accessibility | SfPopupLayout | Xamarin | Syncfusion
+description: Set AutomationId to SfPopupLayout for automation framework to find and interact with control inner elements.
 platform: xamarin
 control: SfPopupLayout
 documentation: UG
 ---
 
-# Automation Id
+# AutomationId
 
 SfPopupLayout supports built-in [AutomationId](https://docs.microsoft.com/en-gb/dotnet/api/xamarin.forms.element.automationid?view=xamarin-forms#Xamarin_Forms_Element_AutomationId) for all its inner elements. These `AutomationId` values allow the automation framework to find and interact with the inner elements when the test scripts are run. A unique `AutomationId` is maintained for each inner element by prefixing the control's `AutomationId` with the inner element's Id.
 
-## Automation Id for popup view inner elements
+## AutomationId for popup view inner elements
+
+The below table illustrates the predefined automation values set internally which can be used to identify the SfPopupView elements.
+
+<table>
+<tr>
+<th>Element</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>Header title</td>
+<td>"Title"</td>
+</tr>
+<tr>
+<td>Header close button</td>
+<td>"Close"</td>
+</tr>
+<tr>
+<td>PopupView content</td>
+<td>"Message"</td>
+</tr>
+<tr>
+<td>Accept button</td>
+<td>"Accept"</td>
+</tr>
+<tr>
+<td>Decline button</td>
+<td>"Decline"</td>
+</tr>
+</table>
 
 The following screenshot illustrates the `AutomationId` values of the inner elements of SfPopupView.
 
@@ -91,7 +120,7 @@ public void SfPopupLayout_AutomationId()
 {% endtabs %}
 
 
-## Automation Id for template content 
+## AutomationId for template content 
 
 To access the template elements from script, set the `AutomationId` directly to the template view from the sample level.
 

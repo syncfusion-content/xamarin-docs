@@ -13,7 +13,7 @@ SfPopupLayout supports built-in [AutomationId](https://docs.microsoft.com/en-gb/
 
 ## AutomationId for popup view inner elements
 
-The below table illustrates the predefined automation values set internally which can be used to identify the SfPopupView elements.
+The below table illustrates the predefined automation values set internally which can be used to identify the PopupView's elements.
 
 <table>
 <tr>

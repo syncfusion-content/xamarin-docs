@@ -11,13 +11,15 @@ documentation: ug
 
 ## AnimationCompleted event
 
-The [`AnimationCompleted`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~AnimationCompleted_EV.html) event occurs when the effects completed. When the effects rendered on direct interaction, this event will trigger on touch up and when applied programmatically, it will trigger immediately on its completion.
+The [`AnimationCompleted`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~AnimationCompleted_EV.html) event occurs when the rendered effects completed. 
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView AnimationCompleted="AnimationCompleted">
+<syncEffectsView:SfEffectsView
+    TouchDownEffects="Ripple"
+    AnimationCompleted="AnimationCompleted">
     ...
 </syncEffectsView:SfEffectsView>
   
@@ -27,11 +29,17 @@ The [`AnimationCompleted`](https://help.syncfusion.com/cr/cref_files/xamarin/Syn
 
 public partial class MainPage : ContentPage
 {
+
     public MainPage()
     {
         InitializeComponent();
-        var effectsView = new SfEffectsView();
+        var effectsView = new SfEffectsView
+        {
+            TouchDownEffects = SfEffects.Ripple
+        };
+
         effectsView.AnimationCompleted += AnimationCompleted;
+        ...
     }
 
     private void AnimationCompleted(object sender, EventArgs e)
@@ -44,6 +52,8 @@ public partial class MainPage : ContentPage
 
 {% endtabs %}
 
+N> When the effects rendered on direct interaction, [`AnimationCompleted`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~AnimationCompleted_EV.html) event will trigger on touch up and when applied programmatically, it will trigger immediately on completion of effects.
+
 N> The [`AnimationCompleted`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~AnimationCompleted_EV.html) event is not applicable for `SfEffects.Selection`.
 
 ## SelectionChanged event
@@ -54,7 +64,11 @@ The [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 
 {% highlight xaml %} 
 
-<syncEffectsView:SfEffectsView LongPressEffects="Selection" SelectionChanged="SelectionChanged">
+<syncEffectsView:SfEffectsView
+    LongPressEffects="Selection"
+    SelectionChanged="SelectionChanged"
+    TouchDownEffects="None"
+    TouchUpEffects="None">
     ...
 </syncEffectsView:SfEffectsView>
   
@@ -64,12 +78,19 @@ The [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 
 public partial class MainPage : ContentPage
 {
+
     public MainPage()
     {
         InitializeComponent();
-        var effectsView = new SfEffectsView();
-        effectsView.LongPressEffects = SfEffects.Selection;
-        effectsView.SelectionChanged += EffectsView_SelectionChanged;
+        var effectsView = new SfEffectsView
+        {
+            LongPressEffects = SfEffects.Selection,
+            TouchDownEffects = SfEffects.None,
+            TouchUpEffects = SfEffects.None
+        };
+
+        effectsView.SelectionChanged += SelectionChanged;
+        ...
     }
 
     private void SelectionChanged(object sender, EventArgs e)
@@ -81,3 +102,5 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 
 {% endtabs %}
+
+N> The [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~SelectionChanged_EV.html) event will trigger both on rendering `SfEffects.Selection` by direct interaction and on changing the [`IsSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~IsSelected.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html).

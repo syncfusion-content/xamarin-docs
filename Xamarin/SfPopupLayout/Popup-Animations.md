@@ -265,7 +265,7 @@ public MainPage()
 
 The `SfPopupLayout` allows to show the `PopupView` with various easing effects for all available `SfPopupLayout.PopupView.AnimationMode` using the [SfPopupLayout.PopupView.AnimationEasing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AnimationEasing.html) property .
 
-The following easing effects can be applied to the opening and closing animation of the PopupView.
+The following easing effects can be applied to the PopupView's animation.
 
 * `Linear`: Set [SfPopupLayout.PopupView.AnimationEasing.Linear] to animate the PopupView with constant velocity. This is the default value.
 * `SignIn`: Set [SfPopupLayout.PopupView.AnimationEasing.SignIn] to smoothly accelerate the PopupView animation.

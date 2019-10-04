@@ -42,6 +42,7 @@ In the below code you can see the default color and key value for the default re
 <Color x:Key="SfCalendarYearViewMonthHeaderBackground">#FFFFFF</Color>
 <Color x:Key="SfCalendarYearViewDateTextColor">#414141</Color>
 <Color x:Key="SfCalendarYearViewHeaderTextColor">#707070</Color>
+<Color x:Key="SfCalendarAgendaSelectedDateColor">#FFFFFF</Color>
 {% endhighlight %}
 {% endtabs %} 
 
@@ -69,11 +70,11 @@ You need to apply the syncfusion theme dictionaries in your application to view 
 
 Month view
 
-![SfCalendar themes](images/Xamarin.Forms-Calendar-Defaultthemedmonth.png)
+![SfCalendar themes](images/xamarin.forms-calendar-monthdefaulttheme.png)
 
 Year view
 
-![SfCalendar themes](images/Xamarin.Forms-Calendar-Defaultthemeyear.png)
+![SfCalendar themes](images/xamarin.forms-calendar-yeardefaultcustom.png)
 
 ## Customizing the default theme
 
@@ -108,11 +109,11 @@ You can customize the default theme by overriding the existing key and set the n
 
 Month view
 
-![SfCalendar themes](images/Xamarin.Forms-Calendar-Customizedthememonth.png)
+![SfCalendar themes](images/xamarin.forms-calendar-monthcustomizationdefaulttheme.png)
 
 Year view
 
-![SfCalendar themes](images/Xamarin.Forms-Calendar-Customizedthemeyear.png)
+![SfCalendar themes](images/xamarin.forms-calendar-yearcustometheme.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [CalendarTheme](https://github.com/SyncfusionExamples/xamarin-calendar-theming).

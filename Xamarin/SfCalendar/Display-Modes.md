@@ -35,35 +35,62 @@ calendar.ViewMode = ViewMode.MonthView;
 
 {% endtabs %}
 
-![Month view in Xamarin.Forms Calendar](images/xamarin.forms-calendar-SingleSelection.png)
+![Month view in Xamarin.Forms Calendar](images/xamarin.forms-calendar-monthview.png)
 
 ## Trailing and leading days
 
-The `SfCalendar` allows you hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowLeadingAndTrailingDays.html) property. The following code demonstrates how to hide the leading and trailing dates in calendar.
+The `SfCalendar` allows you show/hide the days of the next month and previous month in calendar to enhance the appearance. This can be achieved by enabling the [ShowLeadingAndTrailingDays](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowLeadingAndTrailingDays.html) property. The following code demonstrates how to hide the leading and trailing dates in calendar.
 
 {% tabs %}
 
 {% highlight xaml %}
 
 <syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" 
-						ShowLeadingAndTrailingDays="True"/>
+						ShowLeadingAndTrailingDays="False"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
 calendar.ViewMode = ViewMode.MonthView;
-calendar.ShowLeadingAndTrailingDays = true; 
+calendar.ShowLeadingAndTrailingDays = False; 
  
 {% endhighlight %}
 
 {% endtabs %}
 
-![Month View in Xamarin.Forms Calendar ](images/Xamarin.Forms-Calendar-HideLeadingTrailing.png)
+![Month View in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-showleadingandtrailing.png)
 
 N>
 * The OnMonthCellLoaded event is triggered for the current month dates.
 * The VisibleDates in the MonthChanged event will return the current month dates.
+
+## Enable and disable past dates
+
+The `SfCalendar` allows you to enable/disable the past dates in MonthView. This can be achieved by changing the [EnableDatesInPast](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~EnableDatesInPast.html) property. By default, value of this property is set to true.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" 
+						EnableDatesInPast="False"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+calendar.ViewMode = ViewMode.MonthView;
+calendar.EnableDatesInPast = False; 
+ 
+{% endhighlight %}
+
+{% endtabs %}
+
+![Month View in Xamarin.Forms Calendar ](images/Xamarin.forms-Calendar-EnableDatesInPast.png)
+
+N>
+ The `EnableDatesInPast` is not applicable for UWP.
 
 
 ## Month view customization
@@ -73,6 +100,7 @@ You can customize the calendar month view by using [MonthViewSettings](https://h
 * Current day text color can be modified using [TodayTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~TodayTextColor.html).
 * The day header format, day font size, day header font size can be modified using [DayHeaderFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFormat.html), [DayFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayFontSize.html), [DayHeaderFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFontSize.html)
 * The background color of the inline view can be modified using [InlineBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~InlineBackgroundColor.html) property.
+* In AgendaView the selected date color can be modified using [AgendaSelectedDateColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~AgendaSelectedDateColor.html)
 
 {% tabs %}
 
@@ -90,6 +118,7 @@ You can customize the calendar month view by using [MonthViewSettings](https://h
 				DayHeaderFormat="EEEEE"
 				DayFontSize="12"
 				DayHeaderFontSize="14"
+				AgendaSelectedDateColor="Blue"
 				TodaySelectionBackgroundColor="Green"/>
    </syncfusion:SfCalendar.MonthViewSettings>
 </syncfusion:SfCalendar>  
@@ -113,6 +142,7 @@ monthViewSettings.DayHeaderFontSize = 20;
 monthViewSettings.SelectionRadius = 15;
 monthViewSettings.TodaySelectionTextColor= Color.Black;
 monthViewSettings.TodaySelectionBackgroundColor= Color.Green;
+monthViewSettings.AgendaSelectedDateColor = Color.Blue;
 
 calendar.MonthViewSettings = monthViewSettings;
 this.Content = calendar;
@@ -154,7 +184,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Month view border color in Xamarin.Forms Calendar ](images/xamarin.forms-BorderColor.png)
+![Month view border color in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-monthcellborder.png)
 
 ### Today border color customization
 
@@ -184,7 +214,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Month view today border color in Xamarin.Forms Calendar ](images/xamarin.forms-TodayBorderColor.png)
+![Month view today border color in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-todaybordercolor.png)
 
 ## Week view
 
@@ -213,7 +243,7 @@ calendar.NumberOfWeeksInView = 2;
 
 {% endtabs %}
 
-![Week view in Xamarin.Forms Calendar ](images/xamarin.forms-NumberOfWeeksInView.png)
+![Week view in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-weekviewdefault.png)
 
 ## Year view
 
@@ -237,7 +267,7 @@ this.Content = calendar;
 
 {% endtabs %}
  
-![YearView in Xamarin.Forms Calendar](images/xamarin.forms-calendar-yearview-customization.jpg)
+![YearView in Xamarin.Forms Calendar](images/xamarin.forms-calendar-yearview.png)
 
 ## Year view mode
 
@@ -266,7 +296,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Year view mode in Xamarin.Forms Calendar ](images/xamarin.forms-YearViewMode.png)
+![Year view mode in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-yearviewmode.png)
  
 N>
 * The `YearViewMode` property is only applicable for calendar in Android and iOS platforms.
@@ -330,7 +360,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Decade view in Xamarin.Forms Calendar ](images/xamarin.forms-DecadeView.png)
+![Decade view in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-decadeview.png)
  
 ## Decade view customization
 
@@ -374,7 +404,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Decade view customization in Xamarin.Forms Calendar ](images/xamarin.forms-DecadeView-Custom.png)
+![Decade view customization in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-decadecustom.png)
 
 ## Century view
 
@@ -398,7 +428,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Century view in Xamarin.Forms Calendar ](images/xamarin.form-CenturyView.png)
+![Century view in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-centuryview.png)
  
 ## Century view customization
 
@@ -442,7 +472,7 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Century view customization in Xamarin.Forms Calendar ](images/xamarin.forms-CenturyView-Custom.png)
+![Century view customization in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-centuryviewcustom.png)
 
 
 

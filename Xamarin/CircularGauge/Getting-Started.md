@@ -13,6 +13,11 @@ documentation: ug
 
 This section explains the steps required to configure the [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html), and also explains the steps required to add basic elements to [`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) through various APIs available within it.
 
+To get start quickly with Xamarin Circular Gauge control, you can check on this video:
+
+<style>#XamarinGaugeVideoTutorial{width : 90% !important; height: 300px !important }</style>
+<iframe id='XamarinGaugeVideoTutorial' src='https://www.youtube.com/embed/Rjd9NxDFoWo'></iframe>
+
 ## Adding SfCircularGauge reference
 
 You can add SfCircularGauge reference using one of the following methods:

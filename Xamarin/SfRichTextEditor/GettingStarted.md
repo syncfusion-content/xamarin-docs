@@ -1,31 +1,31 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Xamarin.Forms RichTextEditor
-description: A quick tour to initial users on Syncfusion RichTextEditor control for Xamarin.Forms platform.
+title: Getting Started for Syncfusion Xamarin.Forms Rich Text Editor
+description: A quick tour to initial users on Syncfusion Rich Text Editor control for Xamarin.Forms platform.
 platform: xamarin
-control: RichTextEditor
+control: Rich Text Editor
 documentation: ug
 ---
 
 # Getting Started
 
-This section explains the steps required to work with the RichTextEditor control for Xamarin.Forms.
+This section explains the steps required to work with the Rich Text Editor control for Xamarin.Forms.
 
 ## Adding SfRichTextEditor reference
 
-You can add RichTextEditor reference using one of the following methods:
+You can add Rich Text Editor reference using one of the following methods:
 
 **Method 1: Adding SfRichTextEditor reference from nuget.org**
 
-Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add RichTextEditor to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRichTextEditor](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRichTextEditor) and then install it.
+Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add Rich Text Editor to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfRichTextEditor](https://www.nuget.org/packages/Syncfusion.Xamarin.SfRichTextEditor) and then install it.
 
-![Adding SfRichTextEditor reference from NuGet]((SfRichTextEditor_Images/RichTextEditor_reference.png)
+![Adding SfRichTextEditor reference from NuGet](SfRichTextEditor_Images/RichTextEditor_reference.png)
 
 N> Install the same version of SfRichTextEditor NuGet in all the projects.
 
 **Method 2: Adding SfRichTextEditor reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the RichTextEditor control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the Rich Text Editor control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfRichTextEditor assemblies manually from the installed location**
 
@@ -57,15 +57,15 @@ N> To learn more about obtaining Syncfusion components, refer to [Mac](https://h
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to the [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to learn about registering Syncfusion license key in your Xamarin application to use Syncfusion components.
 
-## Launching the application on each platform with RichTextEditor
+## Launching the application on each platform with Rich Text Editor
 
-To use the RichTextEditor in an application, each platform requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
+To use the Rich Text Editor in an application, each platform requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
 
 N> If you are adding the references from toolbox, this step is not required.
 
 ### iOS
 
-To launch the RichTextEditor in iOS, call the 'SfRichTextEditorIOS.Init()', 'SfButtonRenderer.Init()', 'SfComboBoxRenderer.Init()' and 'SfBorderRenderer.Init()' in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
+To launch the Rich Text Editor in iOS, call the 'SfRichTextEditorRenderer.Init()' in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
 
 {% highlight C# %} 
 
@@ -75,16 +75,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     global::Xamarin.Forms.Forms.Init();
 
     // Add the below line for using SfRichTextEditor.
-    Syncfusion.XForms.iOS.RichTextEditor.SfRichTextEditorIOS.Init();
-
-	// Add the below line for using SfButton.
-	Syncfusion.XForms.iOS.Buttons.SfButtonRenderer.Init();
-
-    // Add the below line for using SfBorder.
-    Syncfusion.XForms.iOS.Border.SfBorderRenderer.Init();
-
-	// Add the below line for using SfComboBox.
-	Syncfusion.XForms.iOS.ComboBox.SfComboBoxRenderer.Init();
+    Syncfusion.XForms.iOS.RichTextEditor.SfRichTextEditorRenderer.Init();
 
     LoadApplication(new App()); 
     …
@@ -94,7 +85,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Universal Windows Platform (UWP)
 
-To launch the RichTextEditor in UWP, initialize the RichTextEditor assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with RichTextEditor in `Release` mode in UWP platform.
+To launch the Rich Text Editor in UWP, initialize the Rich Text Editor assemblies in App.xaml.cs in UWP project as demonstrated in the following code samples. This is required to deploy the application with Rich Text Editor in `Release` mode in UWP platform.
 
 {% highlight C# %} 
 
@@ -128,12 +119,12 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ### Android
 
-The Android platform does not require any additional configuration to render the RichTextEditor.
+The Android platform does not require any additional configuration to render the Rich Text Editor.
 
 
-## Initializing the RichTextEditor
+## Initializing the Rich Text Editor
 
-Import the RichTextEditor namespace as demonstrated in the following code sample in your respective page.
+Import the Rich Text Editor namespace as demonstrated in the following code sample in your respective page.
 
 {% tabs %} 
 
@@ -185,4 +176,4 @@ public MainPage()
 
 {% endtabs %} 
 
-The complete Getting Started sample is available in this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-488109269).
+The complete Getting Started sample is available in this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1569261313)

@@ -276,3 +276,25 @@ private void Editor_ItemUnselected(object sender, ItemUnselectedEventArgs e)
 }
 
 {% endhighlight %}
+
+## ImageEdited Event
+
+This event occurs whenever you start to edit an image. You can know whether the current image is edited or not by using the IsImageEdited argument.
+
+{% highlight c# %}
+
+public MainPage()
+{               
+    . . .
+    editor.ImageEdited += ImageEditor_ImageEdited;
+    . . .
+}
+
+private void ImageEditor_ImageEdited(object sender, ImageEditedEventArgs e)
+{
+    If (args.IsImageEdited)
+    {
+    }            
+}
+
+{% endhighlight %}

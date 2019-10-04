@@ -35,13 +35,22 @@ The selected dates can be retrieved through `OnSelectionChanged` event which is 
 	
 SfCalendar calendar = new SfCalendar();	
 calendar.SelectionMode=SelectionMode.MultiSelection;
+List<DateTime> selectedDates = new List<DateTime>();
+selectedDates.Add(new DateTime(2019, 3, 06));
+selectedDates.Add(new DateTime(2019, 3, 11));
+selectedDates.Add(new DateTime(2019, 3, 15));
+selectedDates.Add(new DateTime(2019, 3, 19));
+selectedDates.Add(new DateTime(2019, 3, 21));
+selectedDates.Add(new DateTime(2019, 3, 25));
+selectedDates.Add(new DateTime(2019, 3, 27));
+calendar.SelectedDates = selectedDates;
 this.Content = calendar;
 	
 {% endhighlight %}
 
 {% endtabs %}
 
-![MultiSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-MultiSelection.jpg)
+![MultiSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-multiselection.png)
 
 N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of `SfCalendar` control.
 
@@ -63,7 +72,7 @@ calendar.SelectionMode=SelectionMode.RangeSelection;
 
 {% endtabs %}
 
-![RangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-RangeSelection.png)
+![RangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-rangeslection.png)
 
 ## Multi range selection mode
 
@@ -83,7 +92,7 @@ calendar.SelectionMode=SelectionMode.MultiRangeSelection;
 
 {% endtabs %}
 
-![MultiRangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-MultiRangeSelection.jpg)
+![MultiRangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-multirange.png)
 
 ## Single selection mode
  
@@ -98,9 +107,23 @@ calendar.SelectionMode=SelectionMode.MultiRangeSelection;
 {% highlight c# %}
 	
 calendar.SelectionMode = SelectionMode.SingleSelection;
-	
+
 {% endhighlight %}
 
 {% endtabs %}
 
-![SingleSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-SingleSelection.png)
+![SingleSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-singleselectionmonth.png)
+
+## Programmatically clear the selected dates
+      
+You can clear the calendar selected dates pragmatically by using `ClearSelection` method, which is applicable for calendar `SelectionMode` such as `SingleSelection`, `MultiSelection`, `RangeSelection`, and `MultiRangeSelection`.
+
+{% tabs %}
+
+{% highlight c# %}
+	
+calendar.ClearSelection();
+	
+{% endhighlight %}
+
+{% endtabs %}

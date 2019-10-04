@@ -46,7 +46,7 @@ schedule.ViewHeaderStyle = viewHeaderStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![View header appearance in schedule xamarin forms](daymodule_images/viewheader_appearance_week.png)
+![View header appearance in schedule xamarin forms](weekview_images/xamarin.forms.schedule-viewheader-appearance.png)
 
 >**NOTE**
 FontAttributes and FontFamily are native to the platform. Custom font and the font which are not available in the specified platform will not be applied.
@@ -63,7 +63,7 @@ schedule.ViewHeaderHeight = 50;
 {% endhighlight %}
 {% endtabs %}
 
-![View header height in schedule xamarin forms](daymodule_images/viewheaderheight_week.png)
+![View header height in schedule xamarin forms](weekview_images/xamarin.forms-schedule-viewheader-height.png)
 
 ### Customize Font Appearance
 
@@ -84,7 +84,7 @@ viewHeaderStyle.DateFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-R
 {% endhighlight %}
 {% endtabs %}
 
-![Customize font appearance in schedule xamarin forms](daymodule_images/customfontviewheader_week.png)
+![Customize font appearance in schedule xamarin forms](weekview_images/xamarin.forms-schedule-custom-font-view-header.png)
 
 Refer [this](https://help.syncfusion.com/xamarin/sfschedule/monthview#custom-font-setting-in-xamarinforms-android) to configure the custom fonts in Xamarin.Forms.
 
@@ -122,7 +122,7 @@ schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![View header date format in schedule xamarin forms](daymodule_images/DateFormat_Week.png)
+![View header date format in schedule xamarin forms](weekview_images/xamarin.forms-schedule-viewheader-dateformat.png)
 
 
 ### ViewHeader Tapped Event
@@ -165,7 +165,7 @@ schedule.TimeInterval = 180;
 {% endhighlight %}
 {% endtabs %}
 
-![Time interval in schedule xamarin forms](daymodule_images/timeinterval_week.png)
+![Time interval in schedule xamarin forms](weekview_images/xamarin.forms-schedule-timeinterval.png)
 
 >**NOTE**
 If you modify the `TimeInterval` value (in minutes), you need to change the time labels format by setting the `TimeFormat` value as "hh:mm". By default, TimeFormat value is `"hh a"`. You can refer [here](https://help.syncfusion.com/xamarin/sfschedule/weekview#time-label-formatting) for changing TimeFormat value.
@@ -183,7 +183,20 @@ schedule.TimeIntervalHeight = 180;
 {% endhighlight %}
 {% endtabs %}
 
-![Time interval height in schedule xamarin forms](daymodule_images/weekview_height.png)
+![Time interval height in schedule xamarin forms](weekview_images/xamarin.forms-schedule-timeintervalheight.png)
+
+### Full screen scheduler
+Schedule time interval height can be adjusted based on screen height by changing the value of `TimeIntervalHeight` property to -1. It will auto-fit to the screen height and width.
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule  x:Name="schedule"  ScheduleView="WeekView" TimeIntervalHeight="-1"/>
+{% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WeekView;
+schedule.TimeIntervalHeight = -1;
+{% endhighlight %}
+{% endtabs %}
 
 ## Change Working hours
 
@@ -211,13 +224,13 @@ WeekViewSettings weekViewSettings = new WeekViewSettings();
 WeekLabelSettings weekLabelSettings = new WeekLabelSettings();
 weekLabelSettings.TimeFormat = "hh:mm";
 weekViewSettings.WorkStartHour = 11.5;
-weekViewSettings.WorkEndHour = 17.5;
+weekViewSettings.WorkEndHour = 14.5;
 weekViewSettings.WeekLabelSettings = weekLabelSettings;
 schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Working hour in schedule xamarin forms](daymodule_images/WorkHour_and_StartHour_Week.png)
+![Working hour in schedule xamarin forms](weekview_images/xamarin.forms-schedule-working-hours.png)
 
 >**NOTE**
 No need to specify the decimal point values for `WorkStartHour` and `WorkEndHour`, if you don’t want to set the minutes.
@@ -253,7 +266,7 @@ schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Changing StartHour and EndHour in schedule xamarin forms](daymodule_images/WorkHour_and_StartHour_Week.png)
+![Changing StartHour and EndHour in schedule xamarin forms](weekview_images/xamarin.forms-schedule-starthour-endhour.png)
 
 >**NOTE**
 * `StartHour` must be greater than or equal to 0 and `EndHour` must be lesser than or equal to 24, otherwise `InvalidDataException` will be thrown.
@@ -261,8 +274,8 @@ schedule.WeekViewSettings = weekViewSettings;
 * Schedule UI such as Appointments and NonAccessibleBlocks which does not fall within the `StartHour` and `EndHour` will not be visible and if it falls partially, it will be clipped.
 * No need to specify the decimal point values for `StartHour` and `EndHour`, if you don’t want to set the minutes.
 * The number of time slots will be calculated based on total minutes of a day and time interval (total minutes of a day ((start hour - end hour) * 60) / time interval).
-* If the custom time interval is given, then the number of time slots calculated based on given time interval should result in integer value, otherwise given time interval will be neglected and default time interval (60 minutes) will be considered.
-* If the custom start hour and end hour is given, then the number of time slots calculated based on given start hour, end hour should result in integer value, otherwise given end hour will be rounded off. For example, if StartHour is 7.2 (07:12AM), EndHour is 18.6 (06:36AM) and TimeInterval is 60 minutes, then EndHour will be rounded off to 18.2 (06:12PM).
+* If custom `TimeInterval` is given, then the number of time slots calculated based on given `TimeInterval` should result in integer value (total minutes % `TimeInterval` = 0), otherwise next immediate time interval that result in integer value when divide total minutes of a day will be considered. For example, if `TimeInterval`="135” (2 Hours 15 minutes) and total minutes = 1440 (24 Hours per day), then `TimeInterval` will be changed to "144” (1440%144=0) by considering (total minutes % TimeInterval = 0); it will return integer value for time slots rendering.
+* If the custom `StartHour` and `EndHour` are given, then the number of time slots calculated based on given `StartHour` and `EndHour` should result in integer value, otherwise next immediate `TimeInterval` will be considered until the result is integer value. For example, if `StartHour` is 9 (09:00AM), `EndHour` is 18.25 (06:15 PM), `TimeInterval` is 30 minutes, and total minutes = 555 ((18.25-9)*60), then the `TimeInterval` will be changed to "37” (555%37=0) by considering (total minutes % `TimeInterval` = 0); it will return integer value for time slots rendering.
 
 ## Timeslot Appearance
 You can customize the appearance of timeslots in `WeekView`.
@@ -302,7 +315,7 @@ schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Time slot customization work-hours in schedule xamarin forms](daymodule_images/timeslotappearance_week.png)
+![Time slot customization work-hours in schedule xamarin forms](weekview_images/xamarin.forms-schedule-timeslot-appearance.png)
 
 ### Timeslot customization in Non Working hours
 
@@ -336,7 +349,7 @@ schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Time slot customization in non-working-hours in schedule xamarin forms](daymodule_images/non-workinghours_week.png)
+![Time slot customization in non-working-hours in schedule xamarin forms](weekview_images/xamarin.forms-schedule-nonworking-hours.png)
 
 >**NOTE**
 `TimeSlotBorderStrokeWidth`and ` VerticalLineStrokeWidth` properties are common to both Working hours and Non-Working hour time slot customization.
@@ -379,7 +392,7 @@ schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Non accessible block timeslots in schedule xamarin forms](daymodule_images/non-accessibleblock_week.png)
+![Non accessible block timeslots in schedule xamarin forms](weekview_images/xamarin.forms-schedule-nonaccessible-block.png)
 
 >**NOTE**
 Selection and related events will not be working in this blocks.
@@ -397,7 +410,7 @@ schedule.FirstDayOfWeek = 3;
 {% endhighlight %}
 {% endtabs %}
 
-![First day of week in schedule xamarin forms](daymodule_images/firstdayofweek_week.png)
+![First day of week in schedule xamarin forms](weekview_images/xamarin.forms-schedule-firstday-of-week.png)
 
 ## Time Label Formatting
 
@@ -414,7 +427,7 @@ schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Time label formatting in schedule xamarin forms](daymodule_images/timelabelformat_week.png)
+![Time label formatting in schedule xamarin forms](weekview_images/xamarin.forms-schedule-timelabel-format.png)
 
 ## Time Label Appearance
 
@@ -433,7 +446,7 @@ schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Time label appearance in schedule xamarin forms](daymodule_images/timelabelappearance_week.png)
+![Time label appearance in schedule xamarin forms](weekview_images/xamarin.forms-schedule-timelabel-appearance.png)
 
 ## Time Label Size
 
@@ -453,7 +466,7 @@ schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-![Time label size in schedule xamarin forms](daymodule_images/TimeLabelSize_Week.png)
+![Time label size in schedule xamarin forms](weekview_images/xamarin.forms-schedule-timelabel-size.png)
 
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
@@ -490,7 +503,7 @@ schedule.SelectionStyle = selectionStyle;
 {% endhighlight %}
 {% endtabs %}
 
-![Selection customization in schedule xamarin forms](daymodule_images/selectionstyle_week.png)
+![Selection customization in schedule xamarin forms](weekview_images/xamarin.forms-schedule-selection-style.png)
 
 ### Selection customization using custom View
 You can replace the default selection UI with your custom view by setting [SelectionView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectionView.html) property of `SfSchedule`.
@@ -517,7 +530,7 @@ schedule.SelectionView = customView;
 {% endhighlight %}
 {% endtabs %}
 
-![Selection customization using custom view in schedule xamarin forms](daymodule_images/selectioncustomview_week.png)
+![Selection customization using custom view in schedule xamarin forms](weekview_images/xamarin.forms-schedule-selection-customview.png)
 
 ### Programmatic selection
 You can programmatically select the specific timeslot by setting corresponding date and time value to [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedDate.html) property of `SfSchedule`. By default, it is null.
@@ -544,5 +557,5 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 * `SfSchedule` does not support multiple selection.
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
-![Selection in schedule xamarin forms](daymodule_images/selection_Week.png)
+![Selection in schedule xamarin forms](weekview_images/xamarin.forms-schedule-selection.png)
 

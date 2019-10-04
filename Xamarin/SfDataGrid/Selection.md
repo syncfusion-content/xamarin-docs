@@ -402,6 +402,24 @@ public class CustomSelectionController : GridSelectionController
 
 ![DataGrid with selection animation](SfDataGrid_images/SelectionAnimation.gif)
 
+## Skip selection
+
+The `SfDataGrid` allows to disable selection or navigation to specified columns by using [AllowFocus](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowFocus.html) property.
+
+To disable a particular auto generated column, follow the code example.
+
+{% tabs %}
+{% highlight c# %}
+dataGrid.AutoGeneratingColumn += DataGrid_AutoGeneratingColumn;  
+
+private void DataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnEventArgs e)
+{
+   if (e.Column.MappingName == "Customer")
+     e.Column.AllowFocus = false;
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Events in selection
 
 The data grid provides the following events for selection:

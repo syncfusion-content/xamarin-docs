@@ -11,7 +11,7 @@ documentation: ug
 
 ## AnimationCompleted event
 
-The [`AnimationCompleted`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~AnimationCompleted_EV.html) event occurs when the ripple effect is completed. 
+The [`AnimationCompleted`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~AnimationCompleted_EV.html) event occurs when the effects completed. 
 
 {% tabs %} 
 
@@ -44,9 +44,11 @@ public partial class MainPage : ContentPage
 
 {% endtabs %}
 
+N> The [`AnimationCompleted`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~AnimationCompleted_EV.html) event is not applicable for `SfEffects.Selection`.
+
 ## SelectionChanged event
 
-The [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~SelectionChanged_EV.html) event occurs when this view selected.
+The [`SelectionChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~SelectionChanged_EV.html) event occurs when the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is selected or unselected.
 
 {% tabs %} 
 

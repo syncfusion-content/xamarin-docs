@@ -9,6 +9,8 @@ documentation: ug
 
 # Popup Animations
 
+## Animation Modes
+
 Built-in animations are available in SfPopupLayout, which is applied when the PopupView opens and closes in the screen.
 The SfPopupLayout has different animation modes as listed below:
 

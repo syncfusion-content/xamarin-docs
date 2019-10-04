@@ -159,6 +159,9 @@ private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs args)
 
 The `SfDataPager` allows you to change the shape of the buttons through [SfDataPager.ButtonShape](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~ButtonShape.html) property. You can choose either rectangular or circular shaped buttons.
 
+ * Rectangle - Creates rectangular shaped numeric and page navigation buttons.
+ * Circle - Creates circular shaped numeric and page navigation buttons.
+
 Refer the below code to change the shape of the buttons.
 
 {% tabs %}
@@ -184,7 +187,10 @@ public partial class MainPage : ContentPage
 
 ## Generating numeric buttons
 
-The `SfDataPager` allows you to choose the generation mode of numeric buttons through [SfDataPager.NumericButtonsGenerateMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonsGenerateMode.html) property. The numeric buttons can either be generated automatically or by specifying manually in the [SfDataPager.NumericButtonCount](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonCount.html) property. To generate numeric buttons automatically based on the screen size occupied by the `SfDataPager`, use `Auto` value. 
+The `SfDataPager` allows you to choose the generation mode of numeric buttons through [SfDataPager.NumericButtonsGenerateMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonsGenerateMode.html) property. The numeric buttons can either be generated in the view automatically or by specifying directly in the [SfDataPager.NumericButtonCount](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonCount.html) property. 
+
+ * Auto - Generate numeric buttons in the view automatically based on the screen size occupied by the `SfDataPager`. 
+ * Manual - Generate numeric buttons in the view based on the value specified in the `NumericButtonCount` property.
 
 To set the generation mode, follow the code example:
 
@@ -208,6 +214,8 @@ public partial class MainPage : ContentPage
 }
 {% endhighlight %}
 {% endtabs %}
+
+N> The size of the `SfDataPager` adjusts automatically based on the available screen size if the view couldn't hold the numeric buttons specified in the `NumericButtonCount` property.
 
 ## AppearanceManager
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization of Syncfusion EffectsView
-description: How to customize effectsview
+title: Methods in Syncfusion EffectsView
+description: How to call the methods to apply and reset effects programatically.
 platform: xamarin
 control: SfEffectsView
 documentation: ug

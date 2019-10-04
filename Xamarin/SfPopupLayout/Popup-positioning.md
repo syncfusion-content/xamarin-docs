@@ -461,13 +461,17 @@ The SfPopupLayout allows users to set padding for the PopupView when the space b
 {% highlight xaml %}
     <ContentPage.Content>
         <sfPopup:SfPopupLayout x:Name="popupLayout" Padding="15,15,15,15">
+            <sfPopup:SfPopupLayout.PopupView>
+                <sfPopup:PopupView AppearanceMode="TwoButton"
+                                   IsFullScreen="True"
+                                   AcceptButtonText="SAVE"
+                                   DeclineButtonText="CANCEL"
+                                   HeaderTemplate="{StaticResource HeaderViewTemplate}"
+                                   ContentTemplate="{StaticResource ContentViewTemplate}"/>
+            </sfPopup:SfPopupLayout.PopupView>
             <sfPopup:SfPopupLayout.Content>
-                <StackLayout x:Name="mainLayout" VerticalOptions="StartAndExpand" HorizontalOptions="Start">
-                    <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="StartAndExpand">
-                        <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" TextColor="White" 
-                  HeightRequest="60" VerticalOptions="Start" Margin="50,0,0,0" HorizontalOptions="StartAndExpand" BackgroundColor="Blue" 
-                  Clicked="ClickToShowPopup_Clicked"/>
-                    </StackLayout>
+                <StackLayout x:Name="layout">
+                    <Button x:Name="clickToShowPopup" Text="ClickToShowPopup"  Clicked="ClickToShowPopup_Clicked" />
                 </StackLayout>
             </sfPopup:SfPopupLayout.Content>
         </sfPopup:SfPopupLayout>
@@ -477,6 +481,9 @@ The SfPopupLayout allows users to set padding for the PopupView when the space b
 {% highlight c# %}
             SfPopupLayout popupLayout = new SfPopupLayout();
             popupLayout.Padding = new Thickness(15, 15, 15, 15);
+            popupLayout.PopupView.IsFullScreen = true;
+            popupLayout.PopupView.HeaderTemplate = GetHeaderTemplate();
+            popupLayout.PopupView.ContentTemplate = GetContentTemplate();
 {% endhighlight %}
 {% endtabs %}
 

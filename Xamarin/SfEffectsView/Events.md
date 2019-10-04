@@ -11,7 +11,7 @@ documentation: ug
 
 ## AnimationCompleted event
 
-The [`AnimationCompleted`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~AnimationCompleted_EV.html) event occurs when the effects completed. When the effects rendered on direct interaction, this event will trigger on touch up and when applied programatically, it will trigger immediately on its completion.
+The [`AnimationCompleted`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~AnimationCompleted_EV.html) event occurs when the effects completed. When the effects rendered on direct interaction, this event will trigger on touch up and when applied programmatically, it will trigger immediately on its completion.
 
 {% tabs %} 
 

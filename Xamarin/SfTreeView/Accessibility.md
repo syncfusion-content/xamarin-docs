@@ -1,15 +1,16 @@
 ---
 layout: post 
-title: Automation | TreeView for Xamarin.Forms | Syncfusion.
-description: Describes about automation id of expander view
+title: Automation in Xamarin TreeView Control | Syncfusion
+description: Describes about setting automation id to find and interact with inner elements in TreeView
 platform: Xamarin
-control: SfTreeView
+control: TreeView
 documentation: ug
 ---
-# Automation Id
+# AutomationId
 
-The TreeView control has built in AutomationId for inner elements. Please find following table of AutomationIds of inner elements. To keep unique AutomationID, These inner element's Automation IDs get updated based on Control's Automation ID. For example, if we set SfTreeView's AutomationId as
-"SfTreeView.AutomationId = TreeView" then Automation framework will interact the `Expander` as `TreeViewItem0 Expander`.Here, along with the controls AutomationId Count of the treeview item will be appended. For example - if you tap expander icon of first item then `Item0` will add after control's AutomationId. The following image denoted the AutomationIds of inner elements.
+The TreeView control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the TreeView control. To keep unique AutomationId, these inner element's AutomationIds are updated based on TreeView control `AutomationId`. 
+
+For example, if we set TreeView's AutomationId as "Automation" then Automation framework will interact with expander icon of TreeNodeItem  as `AutomationItem1 Expander`. Here, along with the control's AutomationId, index of an item will also be added for differentiating each TreeNodeItem expander. 
 
 <table>
 <tr>
@@ -20,9 +21,11 @@ The TreeView control has built in AutomationId for inner elements. Please find f
 
 <tr>
 <td>Expander View</td>
-<td>ControlAutomationId+Item+ItemNumber Expander</td>
-<td>Expander</td>
+<td>ControlAutomationId+Item+ItemIndex Expander</td>
+<td>AutomationItem1 Expander</td>
 </tr>
 </table>
+
+The following image denotes the AutomationIds of inner elements.
 
 ![Automation id for expander](TreeView_images/TreeViewAutomationImage.png)

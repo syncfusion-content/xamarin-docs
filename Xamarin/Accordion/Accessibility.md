@@ -1,14 +1,16 @@
 ---
 layout: post 
-title: Automation | Accordion for Xamarin.Forms | Syncfusion.
-description: Describes about automation id of Accordion.
+title: Automation in Xamarin Accordion Control | Syncfusion
+description: Describes about setting automation id to find and interact with inner elements in Accordion
 platform: Xamarin
 control: Accordion
 documentation: ug
 ---
-# Automation Id
+# AutomationId
 
-The Accordion control has built in AutomationId for inner elements. Please find following table of AutomationIds of inner elements. To keep unique AutomationID, These inner element's Automation IDs get updated based on Accordion's Automation ID. For example, if we set Accordion's AutomationId as "Accordion.AutomationId = Automation" then Automation framework will interact the `Accordion` as `AutomationItem1 Expander` when you tap expander icon of first AccordionItem. Here, along with the control's AutomationId, count of an item will also be added. The following image denoted the AutomationIds of inner elements.
+The Accordion control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the Accordion control. To keep unique AutomationId, these inner element's AutomationIds are updated based on Accordion control `AutomationId`. 
+
+For example, if we set Accordion's AutomationId as "Automation" then Automation framework will interact with expander icon of AccordionItem  as `AutomationItem1 Expander`. Here, along with the control's AutomationId, index of an item will also be added for differentiating each AccordionItem expander. 
 
 <table>
 <tr>
@@ -19,9 +21,11 @@ The Accordion control has built in AutomationId for inner elements. Please find 
 
 <tr>
 <td>Expander Icon</td>
-<td>ControlAutomationId+Item+ItemNumber Expander</td>
-<td>Expander</td>
+<td>ControlAutomationId+Item+ItemIndex Expander</td>
+<td>AutomationItem1 Expander</td>
 </tr>
 </table>
+
+The following image denotes the AutomationIds of inner elements.
 
 ![Automation id for accordion](accordion_images/AccordionAutomationImage.png)

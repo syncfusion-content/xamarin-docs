@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Accessibility | SfDataGrid | Xamarin | Syncfusion
-description: Set Automation Id to SfDataGrid for automation framework to find and interact with control inner elements.
+description: Set AutomationId to SfDataGrid for automation framework to find and interact with control inner elements.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Automation Id
+# AutomationId
 
 SfDataGrid and SfDataPager support built-in [AutomationId](https://docs.microsoft.com/en-gb/dotnet/api/xamarin.forms.element.automationid?view=xamarin-forms#Xamarin_Forms_Element_AutomationId) for all their inner elements. These `AutomationId` values allow the automation framework to find and interact with the inner elements when the test scripts are run. A unique `AutomationId` is maintained for each inner element by prefixing the control's `AutomationId` with the inner element's Id.
 
@@ -17,28 +17,39 @@ The below table illustrates the predefined automation values set internally whic
 
 <table>
 <tr>
-<th>Elements</th>
-<th>Values</th>
+<th>Element</th>
+<th>Value</th>
+<th>Example</th>
 </tr>
 <tr>
-<td>Header</td>
-<td>"Row" + HeaderCellIndex</td>
+<td>Header Row</td>
+<td>"Row" + RowIndex</td>
+<td>R0</td>
 </tr>
 <tr>
-<td>Cell</td>
-<td>"R" + CellRowIndex + "C" + CellColumnIndex</td>
+<td>Header Cell</td>
+<td>"R" + RowIndex + "C" + ColumnIndex</td>
+<td>R0C2</td>
 </tr>
 <tr>
 <td>Row</td>
 <td>"Row" + RowIndex</td>
+<td>R4</td>
 </tr>
 <tr>
-<td>GroupHeader</td>
-<td>"Row" + GroupHeaderCellIndex</td>
+<td>Grid Cell</td>
+<td>"R" + RowIndex + "C" + ColumnIndex</td>
+<td>R4C2</td>
 </tr>
 <tr>
-<td>LoadMoreView</td>
+<td>Group Header</td>
+<td>"Row" + RowIndex</td>
+<td>R5</td>
+</tr>
+<tr>
+<td>LoadMore View</td>
 <td>"LOAD MORE ITEMS"</td>
+<td>LOAD MORE ITEMS</td>
 </tr>
 </table>
 
@@ -137,8 +148,8 @@ The below table illustrates the predefined automation values set internally whic
 
 <table>
 <tr>
-<th>Elements</th>
-<th>Values</th>
+<th>Element</th>
+<th>Value</th>
 </tr>
 <tr>
 <td>First page button</td>
@@ -150,7 +161,10 @@ The below table illustrates the predefined automation values set internally whic
 </tr>
 <tr>
 <td>Numeric buttons</td>
-<td>"NumericButton" + NumericButtonIndex</td>
+<td>
+"NumericButton" + NumericButtonIndex
+Example : NumericButton3
+</td>
 </tr>
 <tr>
 <td>Next page button</td>

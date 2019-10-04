@@ -380,6 +380,59 @@ The [SfDatagrid.CancelEdit](https://help.syncfusion.com/cr/cref_files/xamarin/Sy
 this.dataGrid.CancelEdit();
 {% endhighlight %}
 
+## Edit template customization
+
+The `SfDataGrid` allows to load customized template when entering into edit mode. 
+
+The following code example illustrates how template column can be used to load customized edit template:
+
+{% tabs %}
+{% highlight xaml %}
+<sfGrid:SfDataGrid.Columns>
+    <sfGrid:GridTemplateColumn HeaderCellTextSize="16"
+        HeaderFontAttribute="Bold"
+        HeaderText="Employee Details"
+        MappingName="OrderID">
+            <sfGrid:GridTemplateColumn.CellTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding OrderID}"/>
+                </DataTemplate>
+            </sfGrid:GridTemplateColumn.CellTemplate>
+            <sfGrid:GridTemplateColumn.EditTemplate>
+                <DataTemplate>
+                    <Entry Text="{Binding OrderID}"/>
+                </DataTemplate>
+            </sfGrid:GridTemplateColumn.EditTemplate>
+    </sfGrid:GridTemplateColumn>
+</sfGrid:SfDataGrid.Columns>
+{% endhighlight %}
+{% highlight c# %}
+GridTemplateColumn templateColumn = new GridTemplateColumn()
+{
+    MappingName = "OrderID",
+    Width = 50,
+};
+
+var cellTemplate = new DataTemplate(() =>
+{
+    var label = new Label();
+    label.SetBinding(Label.TextProperty, "OrderID");
+    return label;
+});
+
+var editTemplate = new DataTemplate(() =>
+{
+    var entry = new Entry();
+    entry.SetBinding(Entry.TextProperty, "OrderID");
+    return entry;
+});
+
+templateColumn.CellTemplate = cellTemplate;
+templateColumn.EditTemplate = editTemplate;
+dataGrid.Columns.Add(templateColumn);
+{% endhighlight %}
+{% endtabs %}
+
 ## How to 
 
 ### Cancel editing

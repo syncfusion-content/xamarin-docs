@@ -162,7 +162,7 @@ The below table illustrates the predefined automation values set internally whic
 <tr>
 <td>Numeric buttons</td>
 <td>
-"NumericButton" + NumericButtonIndex
+"NumericButton" + NumericButtonIndex <br/>
 Example : NumericButton3
 </td>
 </tr>

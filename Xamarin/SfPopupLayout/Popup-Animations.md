@@ -24,7 +24,7 @@ The SfPopupLayout has different animation modes as listed below:
 
 N> Setting of AnimationMode is same for both `Displaying popup when the SfPopupLayout is set as root view` and `Displaying popup on the go`. 
 
-## Zoom 
+### Zoom 
 
 Zoom-out animation will be applied when the PopupView opens and Zoom-in animation will be applied when the PopupView closes.
 
@@ -58,7 +58,7 @@ public MainPage()
 
 ![Popup with zoom animation](GettingStarted_images/ZoomAnimation.gif)
 
-## Fade 
+### Fade 
 
 Fade-out animation will be applied when the PopupView opens and Fade-in animation will be applied when the PopupView closes.
 
@@ -92,7 +92,7 @@ public MainPage()
 
 ![Popup with fade animation](GettingStarted_images/FadeAnimation.gif)
 
-## SlideOnLeft 
+### SlideOnLeft 
 
 PopupView will be animated from left-to-right when it opens and from right-to-left when it closes.
 
@@ -126,7 +126,7 @@ public MainPage()
 
 ![Popup with slide on left animation](GettingStarted_images/SlideOnLeftAnimation.gif)
 
-## SlideOnRight
+### SlideOnRight
 
 PopupView will be animated from right-to-left when it opens and from left-to-right when it closes.
 
@@ -160,7 +160,7 @@ public MainPage()
 
 ![Popup with slide on right animation](GettingStarted_images/SlideOnRightAnimation.gif)
 
-## SlideOnTop 
+### SlideOnTop 
 
 PopupView will be animated from top-to-bottom when it opens and from bottom-to-top when it closes.
 
@@ -195,7 +195,7 @@ public MainPage()
 
 ![Popup with slide on top animation](GettingStarted_images/SlideOnTopAnimation.gif)
 
-## SlideOnBottom
+### SlideOnBottom
 
 PopupView will be animated from bottom-to-top when it opens and from top-to-bottom when it closes.
 
@@ -229,7 +229,7 @@ public MainPage()
 
 ![Popup with slide on bottom animation](GettingStarted_images/SlideOnBottomAnimation.gif)
 
-## None
+### None
 
 Animation will not be applied.
 

@@ -15,9 +15,9 @@ The data grid allows you to select a specific row or group of rows either progra
 
 ### Disable selection for rows and columns
 
-You can disable selection and navigation on particular column by using [GridColumn.AllowFocus](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowFocus.html) property. You can disable selection on particular row or cell or column by handling [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentCellActivating_EV.html)  event. 
+You can disable selection and navigation in a particular column using the [GridColumn.AllowFocus](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowFocus.html) property. You can disable selection in a particular row or cell or column by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentCellActivating_EV.html)  event. 
 
-N> It is not possible to select header rows, table summary rows, unbound rows which are above the table summary row when it’s placed in top and the unbound rows which are below table summary rows when it’s placed in bottom of SfDataGrid. 
+N> It is not possible to select header rows, table summary rows, and unbound rows that are above the table summary row when they are placed at the top and the unbound rows that are placed are below table summary rows when they placed at the bottom of SfDataGrid.
 
 ## Selection modes 
 

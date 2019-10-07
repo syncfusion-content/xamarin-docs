@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Types | SfDataGrid | Xamarin | Syncfusion
-description: Different types of column classified based on its functionalities with it's properties and customizations in a Xamarin.Forms DataGrid. 
+description: Different types of columns classified based on their functionalities with its properties and customizations in a Xamarin.Forms DataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -655,7 +655,7 @@ The following table provides the list of properties in GridTemplateColumn:
 </tr>
 </table>
 
-### Cell Template
+### Cell template
 
 Underlying records will be the BindingContext for the `CellTemplate`. The following code example shows templating of GridTemplateColumn:
 
@@ -757,9 +757,9 @@ The following screenshot shows the different types of columns in the SfDataGrid:
 
 ![DataGrid with template column](SfDataGrid_images/TemplateColumns2.png)
 
-### Edit Template
+### Edit template
 
-The `SfDataGrid` allows to load any custom view in edit mode through [EditTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn~EditTemplate.html) property.
+The `SfDataGrid` allows you to load any custom view in edit mode using the [EditTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn~EditTemplate.html) property.
 
 {% highlight xaml %}
 <ContentPage.Resources>

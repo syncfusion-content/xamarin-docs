@@ -11,9 +11,9 @@ documentation: ug
 
 The SfDataForm control helps editing the data fields of any data object. It can be used to develop various forms such as login, reservation, data entry, etc. Key features includes the following:
 
-* Layout and grouping: Supports to linear and grid layout with grouping support. Supports customizing the layout with different heights for each item.
+* Layout and grouping: Supports to linear, grid layout and floating label layout with grouping support. Supports customizing the layout with different heights for each item.
 * Caption customization: Supports loading the image as caption for the editor.
-* Editors: Built-in support for text, numeric, numeric up-down, picker, date picker, time picker, switch, and checkbox editors. 
+* Editors: Built-in support for text, numeric, numeric up-down, picker, date picker, time picker, switch,drop-down,autoComplete and checkbox editors. 
 * Custom editor: Supports loading the custom editors.
 * Validation: Built-in support to validate the data based on the [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) and data annotations. It also programmatically supports validation handling.
 
@@ -54,20 +54,20 @@ Location: {Installed location}/{version}/Xamarin/lib
 <table>
 <tr>
 <td>PCL</td>
-<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Licensing.dll<br/>System.ComponentModel.Annotations<br/></td>
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfDataForm.XForms.Android.dll<br/>Syncfusion.SfNumericTextBox.Android.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>Syncfusion.SfNumericUpDown.Android.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.Android.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.Android.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.Android.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfDataForm.XForms.Android.dll<br/>Syncfusion.SfNumericTextBox.Android.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.Android.dll<br/>Syncfusion.SfNumericUpDown.Android.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.Android.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.Android.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.SfAutoComplete.XForms.Android.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.Android.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfDataForm.XForms.iOS.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>Syncfusion.SfNumericUpDown.iOS.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.iOS.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.iOS.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.iOS.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/>
+<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfDataForm.XForms.iOS.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericTextBox.XForms.iOS.dll<br/>Syncfusion.SfNumericUpDown.iOS.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.iOS.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.iOS.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.SfAutoComplete.XForms.iOS.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.iOS.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/>
 </td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfDataForm.XForms.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.UWP.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll <br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.UWP.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/>
+<td>Syncfusion.SfDataForm.XForms.dll<br/>Syncfusion.SfDataForm.XForms.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.SfNumericUpDown.XForms.UWP.dll<br/>Syncfusion.SfNumericUpDown.XForms.dll <br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.UWP.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.SfAutoComplete.XForms.UWP.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.SfMaskedEdit.XForms.dll<br/>Syncfusion.SfMaskedEdit.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/>
 </td>
 </tr>
 </table>
@@ -136,6 +136,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     assembliesToInclude.Add(typeof(SfRadioButtonRenderer).GetTypeInfo().Assembly);
     assembliesToInclude.Add(typeof(SfMaskedEditRenderer).GetTypeInfo().Assembly);
     assembliesToInclude.Add(typeof(SfTextInputLayoutRenderer).GetTypeInfo().Assembly);
+    assembliesToInclude.Add(typeof(SfAutoCompleteRenderer).GetTypeInfo().Assembly);
     
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
@@ -442,6 +443,24 @@ Generated for the PhoneNumber type property.
 [DataType(DataType.PhoneNumber)]
 </td>
 </tr>
+<tr>
+<td>
+{{'[DataFormAutoCompleteItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem.html)'| markdownify }}
+</td>
+<td>
+Generated for the Enum type property.
+[EnumDataTypeAttribute]
+</td>
+</tr>
+<tr>
+<td>
+{{'[DataFormDropDowneItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem.html)'| markdownify }}
+</td>
+<td>
+Generated for the Enum type property.
+[EnumDataTypeAttribute]
+</td>
+</tr>
 </table>
 
 The following list of editors are supported:
@@ -600,6 +619,18 @@ Enum and List type property.
 </td>
 <td>
 {{'[SfComboBox](https://help.syncfusion.com/xamarin/sfcombobox/overview)'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+AutoComplete
+</td>
+<td>
+Enum and List type property.
+[EnumDataTypeAttribute]
+</td>
+<td>
+{{'[SfAutoComplete](https://help.syncfusion.com/xamarin/sfautocomplete/overview)'| markdownify }}
 </td>
 </tr>
 <tr>

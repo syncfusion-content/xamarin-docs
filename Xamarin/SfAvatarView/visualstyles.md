@@ -42,7 +42,7 @@ The following code sample demonstrates how to define visual style of circle Avat
            <Style x:Key="AvatarViewStyle"  TargetType="sfavatar:SfAvatarView">
                 <Setter Property="VerticalOptions" Value="Center"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
-                <Setter Property="AvatarType" Value="Custom"/>
+                <Setter Property="ContentType" Value="Custom"/>
                 <Setter Property="ImageSource" Value="ellanaa.png"/>
             </Style>
             </ResourceDictionary>
@@ -63,16 +63,16 @@ The following code sample demonstrates how to define visual style of circle Avat
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <sfavatar:SfAvatarView AvatarStyle="ExtraLargeCircle" Grid.Row="0" Grid.Column="4" Style="{StaticResource AvatarViewStyle}"/>
-                    <Label Text="XLargeCircle" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="4" FontSize="10"/>
-                    <sfavatar:SfAvatarView AvatarStyle="LargeCircle" Grid.Row="0" Grid.Column="3" Style="{StaticResource AvatarViewStyle}"/>
+                    <sfavatar:SfAvatarView AvatarShape="Circle" AvatarSize="ExtraLarge" Grid.Row="0" Grid.Column="4" Style="{StaticResource AvatarViewStyle}"/>
+                    <Label Text="ExtraLargeCircle" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="4" FontSize="10"/>
+                    <sfavatar:SfAvatarView AvatarShape="Circle" AvatarSize="Large" Grid.Row="0" Grid.Column="3" Style="{StaticResource AvatarViewStyle}"/>
                     <Label Text="LargeCircle" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="3" FontSize="10"/>
-                    <sfavatar:SfAvatarView AvatarStyle="MediumCircle" Grid.Row="0" Grid.Column="2" Style="{StaticResource AvatarViewStyle}"/>
+                    <sfavatar:SfAvatarView AvatarShape="Circle" AvatarSize="Medium" Grid.Row="0" Grid.Column="2" Style="{StaticResource AvatarViewStyle}"/>
                     <Label Text="MediumCircle" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="2" FontSize="10"/>
-                    <sfavatar:SfAvatarView AvatarStyle="SmallCircle" Grid.Row="0" Grid.Column="1" Style="{StaticResource AvatarViewStyle}"/>
+                    <sfavatar:SfAvatarView AvatarShape="Circle" AvatarSize="Small" Grid.Row="0" Grid.Column="1" Style="{StaticResource AvatarViewStyle}"/>
                     <Label Text="SmallCircle" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="1" FontSize="10"/>
-                    <sfavatar:SfAvatarView AvatarStyle="ExtraSmallCircle" Grid.Row="0" Grid.Column="0" Style="{StaticResource AvatarViewStyle}"/>
-                    <Label Text="XSmallCircle" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="0" FontSize="10"/>
+                    <sfavatar:SfAvatarView AvatarShape="Circle" AvatarSize="ExtraSmall" Grid.Row="0" Grid.Column="0" Style="{StaticResource AvatarViewStyle}"/>
+                    <Label Text="ExtraSmallCircle" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="0" FontSize="10"/>
     </Grid>
    </StackLayout>
   </ContentPage.Content>
@@ -96,8 +96,8 @@ The following code sample demonstrates how to define visual style of circle Avat
             mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
             mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
 
-             Label XLargeCirclelabel = new Label();
-            XLargeCirclelabel.Text = "XLargeCircle";
+            Label XLargeCirclelabel = new Label();
+            XLargeCirclelabel.Text = "ExtraLargeCircle";
             XLargeCirclelabel.FontSize = 12;
             XLargeCirclelabel.FontAttributes = FontAttributes.Bold;
             XLargeCirclelabel.HorizontalOptions = LayoutOptions.Center;
@@ -109,8 +109,9 @@ The following code sample demonstrates how to define visual style of circle Avat
             SfAvatarView avatarview1 = new SfAvatarView();
             avatarview1.VerticalOptions = LayoutOptions.Center;
             avatarview1.HorizontalOptions = LayoutOptions.Center;
-            avatarview1.AvatarStyle = AvatarStyle.ExtraLargeCircle;
-            avatarview1.AvatarType = AvatarType.Automatic;
+            avatarview1.AvatarShape = AvatarShape.Circle;
+            avatarview1.AvatarSize = AvatarSize.ExtraLarge;
+            avatarview1.ContentType = ContentType.Default;
             avatarview1.ImageSource = "ellanaa.png";
 
             Label LargeCirclelabel = new Label();
@@ -126,8 +127,9 @@ The following code sample demonstrates how to define visual style of circle Avat
             SfAvatarView avatarview2 = new SfAvatarView();
             avatarview2.VerticalOptions = LayoutOptions.Center;
             avatarview2.HorizontalOptions = LayoutOptions.Center;
-            avatarview2.AvatarStyle = AvatarStyle.LargeCircle;
-            avatarview2.AvatarType = AvatarType.Automatic;
+            avatarview2.AvatarShape = AvatarShape.Circle;
+            avatarview2.AvatarSize = AvatarSize.Large;
+            avatarview2.ContentType = ContentType.Default;
             avatarview2.ImageSource = "ellanaa.png";
 
             Label MediumCirclelabel = new Label();
@@ -143,8 +145,9 @@ The following code sample demonstrates how to define visual style of circle Avat
             SfAvatarView avatarview3 = new SfAvatarView();
             avatarview3.VerticalOptions = LayoutOptions.Center;
             avatarview3.HorizontalOptions = LayoutOptions.Center;
-            avatarview3.AvatarStyle = AvatarStyle.MediumCircle;
-            avatarview3.AvatarType = AvatarType.Automatic;
+            avatarview3.AvatarShape = AvatarShape.Circle;
+            avatarview3.AvatarSize = AvatarSize.Medium;
+            avatarview3.ContentType = ContentType.Default;
             avatarview3.ImageSource = "ellanaa.png";
 
             Label SmallCirclelabel = new Label();
@@ -160,12 +163,13 @@ The following code sample demonstrates how to define visual style of circle Avat
             SfAvatarView avatarview4 = new SfAvatarView();
             avatarview4.VerticalOptions = LayoutOptions.Center;
             avatarview4.HorizontalOptions = LayoutOptions.Center;
-            avatarview4.AvatarStyle = AvatarStyle.SmallCircle;
-            avatarview4.AvatarType = AvatarType.Automatic;
+            avatarview4.AvatarShape = AvatarShape.Circle;
+            avatarview4.AvatarSize = AvatarSize.Small;
+            avatarview4.ContentType = ContentType.Default;
             avatarview4.ImageSource = "ellanaa.png";
 
             Label XSmallCirclelabel = new Label();
-            XSmallCirclelabel.Text = "XSmallCircle";
+            XSmallCirclelabel.Text = "ExtraSmallCircle";
             XSmallCirclelabel.FontSize = 12;
             XSmallCirclelabel.FontAttributes = FontAttributes.Bold;
             XSmallCirclelabel.HorizontalOptions = LayoutOptions.Center;
@@ -177,9 +181,10 @@ The following code sample demonstrates how to define visual style of circle Avat
             SfAvatarView avatarview5 = new SfAvatarView();
             avatarview5.VerticalOptions = LayoutOptions.Center;
             avatarview5.HorizontalOptions = LayoutOptions.Center;
-            avatarview5.AvatarStyle = AvatarStyle.XSmallCircle;
+            avatarview5.AvatarShape = AvatarShape.Circle;
             avatarview5.ImageSource = "ellanaa.png";
-            avatarview5.AvatarType = AvatarType.Automatic;
+            avatarview5.AvatarSize = AvatarSize.ExtraSmall;
+            avatarview5.ContentType = ContentType.Default;
 
        
             mainGrid.Children.Add(XLargeCirclelabel,4,1);
@@ -200,7 +205,7 @@ The following code sample demonstrates how to define visual style of circle Avat
 
 {% endtabs %}
 
-![SfAvatarView control with circle visual style](images/VisualCircle_AvatarView.jpg)
+![SfAvatarView control with circle visual style](images/VisualCircle_AvatarView.png)
 
 ## Square
 
@@ -223,7 +228,7 @@ The following code sample demonstrates how to define visual style of square Avat
            <Style x:Key="AvatarViewStyle"  TargetType="sfavatar:SfAvatarView">
                 <Setter Property="VerticalOptions" Value="Center"/>
                 <Setter Property="HorizontalOptions" Value="Center"/>
-                <Setter Property="AvatarType" Value="Custom"/>
+                <Setter Property="ContentType" Value="Custom"/>
                 <Setter Property="ImageSource" Value="ellanaa.png"/>
             </Style>
             </ResourceDictionary>
@@ -244,16 +249,16 @@ The following code sample demonstrates how to define visual style of square Avat
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
 
-                    <sfavatar:SfAvatarView AvatarStyle="ExtraLargeSquare" Grid.Row="0" Grid.Column="4" Style="{StaticResource AvatarViewStyle}"/>
-                    <Label Text="XLargeSquare" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="4" FontSize="10"/>
-                    <sfavatar:SfAvatarView AvatarStyle="LargeSquare" Grid.Row="0" Grid.Column="3" Style="{StaticResource AvatarViewStyle}"/>
+                    <sfavatar:SfAvatarView AvatarShape="Square" AvatarSize="ExtraLarge" Grid.Row="0" Grid.Column="4" Style="{StaticResource AvatarViewStyle}"/>
+                    <Label Text="ExtraLargeSquare" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="4" FontSize="10"/>
+                    <sfavatar:SfAvatarView AvatarShape="Square" AvatarSize="Large" Grid.Row="0" Grid.Column="3" Style="{StaticResource AvatarViewStyle}"/>
                     <Label Text="LargeSquare" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="3" FontSize="10"/>
-                    <sfavatar:SfAvatarView AvatarStyle="MediumSquare" Grid.Row="0" Grid.Column="2" Style="{StaticResource AvatarViewStyle}"/>
+                    <sfavatar:SfAvatarView  AvatarShape="Square" AvatarSize="Medium" Grid.Row="0" Grid.Column="2" Style="{StaticResource AvatarViewStyle}"/>
                     <Label Text="MediumSquare" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="2" FontSize="10"/>
-                    <sfavatar:SfAvatarView AvatarStyle="SmallSquare" Grid.Row="0" Grid.Column="1" Style="{StaticResource AvatarViewStyle}"/>
+                    <sfavatar:SfAvatarView AvatarShape="Square" AvatarSize="Small" Grid.Row="0" Grid.Column="1" Style="{StaticResource AvatarViewStyle}"/>
                     <Label Text="SmallSquare" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="1" FontSize="10"/>
-                    <sfavatar:SfAvatarView AvatarStyle="ExtraSmallSquare" Grid.Row="0" Grid.Column="0" Style="{StaticResource AvatarViewStyle}"/>
-                    <Label Text="XSmallSquare" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="0" FontSize="10"/>
+                    <sfavatar:SfAvatarView AvatarShape="Square" AvatarSize="ExtraSmall" Grid.Row="0" Grid.Column="0" Style="{StaticResource AvatarViewStyle}"/>
+                    <Label Text="ExtraSmallSquare" FontAttributes="Bold" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="Center" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Grid.Column="0" FontSize="10"/>
         </Grid>
      </StackLayout>
   </ContentPage.Content>
@@ -262,124 +267,129 @@ The following code sample demonstrates how to define visual style of square Avat
 
 {% highlight c# %}
 
-                StackLayout stack = new StackLayout();
-                stack.Orientation = StackOrientation.Vertical;
-                stack.HorizontalOptions = LayoutOptions.CenterAndExpand;
-                stack.VerticalOptions = LayoutOptions.CenterAndExpand;
+            StackLayout stack = new StackLayout();
+            stack.Orientation = StackOrientation.Vertical;
+            stack.HorizontalOptions = LayoutOptions.CenterAndExpand;
+            stack.VerticalOptions = LayoutOptions.CenterAndExpand;
 
-                Grid mainGrid = new Grid();
-                mainGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
-                mainGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            Grid mainGrid = new Grid();
+            mainGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
+            mainGrid.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
 
-                mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-                mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-                mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-                mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
-                mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
+            mainGrid.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
 
-                Label XLargeSquarelabel = new Label();
-                XLargeSquarelabel.Text = "XLargeSquare";
-                XLargeSquarelabel.FontSize = 12;
-                XLargeSquarelabel.FontAttributes = FontAttributes.Bold;
-                XLargeSquarelabel.HorizontalOptions = LayoutOptions.Center;
-                XLargeSquarelabel.VerticalOptions = LayoutOptions.Center;
-                XLargeSquarelabel.HorizontalTextAlignment = TextAlignment.Center;
-                XLargeSquarelabel.VerticalTextAlignment = TextAlignment.Center;
-                XLargeSquarelabel.FontSize = 10;
+            Label XLargeSquarelabel = new Label();
+            XLargeSquarelabel.Text = "ExtraLargeSquare";
+            XLargeSquarelabel.FontSize = 12;
+            XLargeSquarelabel.FontAttributes = FontAttributes.Bold;
+            XLargeSquarelabel.HorizontalOptions = LayoutOptions.Center;
+            XLargeSquarelabel.VerticalOptions = LayoutOptions.Center;
+            XLargeSquarelabel.HorizontalTextAlignment = TextAlignment.Center;
+            XLargeSquarelabel.VerticalTextAlignment = TextAlignment.Center;
+            XLargeSquarelabel.FontSize = 10;
 
-                SfAvatarView avatarviewsquare1 = new SfAvatarView();
-                avatarviewsquare1.VerticalOptions = LayoutOptions.Center;
-                avatarviewsquare1.HorizontalOptions = LayoutOptions.Center;
-                avatarviewsquare1.AvatarStyle = AvatarStyle.ExtraLargeSquare;
-                avatarviewsquare1.AvatarType = AvatarType.Automatic;
-                avatarviewsquare1.ImageSource = "ellanaa.png";
+            SfAvatarView avatarviewsquare1 = new SfAvatarView();
+            avatarviewsquare1.VerticalOptions = LayoutOptions.Center;
+            avatarviewsquare1.HorizontalOptions = LayoutOptions.Center;
+            avatarviewsquare1.AvatarShape = AvatarShape.Square;
+            avatarviewsquare1.AvatarSize = AvatarSize.ExtraLarge;
+            avatarviewsquare1.ContentType = ContentType.Default;
+            avatarviewsquare1.ImageSource = "ellanaa.png";
 
-                Label LargeSquarelabel = new Label();
-                LargeSquarelabel.Text = "LargeSquare";
-                LargeSquarelabel.FontSize = 12;
-                LargeSquarelabel.FontAttributes = FontAttributes.Bold;
-                LargeSquarelabel.HorizontalOptions = LayoutOptions.Center;
-                LargeSquarelabel.VerticalOptions = LayoutOptions.Center;
-                LargeSquarelabel.HorizontalTextAlignment = TextAlignment.Center;
-                LargeSquarelabel.VerticalTextAlignment = TextAlignment.Center;
-                LargeSquarelabel.FontSize = 10;
+            Label LargeSquarelabel = new Label();
+            LargeSquarelabel.Text = "LargeSquare";
+            LargeSquarelabel.FontSize = 12;
+            LargeSquarelabel.FontAttributes = FontAttributes.Bold;
+            LargeSquarelabel.HorizontalOptions = LayoutOptions.Center;
+            LargeSquarelabel.VerticalOptions = LayoutOptions.Center;
+            LargeSquarelabel.HorizontalTextAlignment = TextAlignment.Center;
+            LargeSquarelabel.VerticalTextAlignment = TextAlignment.Center;
+            LargeSquarelabel.FontSize = 10;
 
-                SfAvatarView avatarviewsquare2 = new SfAvatarView();
-                avatarviewsquare2.VerticalOptions = LayoutOptions.Center;
-                avatarviewsquare2.HorizontalOptions = LayoutOptions.Center;
-                avatarviewsquare2.AvatarStyle = AvatarStyle.LargeSquare;
-                avatarviewsquare2.AvatarType = AvatarType.Automatic;
-                avatarviewsquare2.ImageSource = "ellanaa.png";
+            SfAvatarView avatarviewsquare2 = new SfAvatarView();
+            avatarviewsquare2.VerticalOptions = LayoutOptions.Center;
+            avatarviewsquare2.HorizontalOptions = LayoutOptions.Center;
+            avatarviewsquare2.AvatarShape = AvatarShape.Square;
+            avatarviewsquare2.AvatarSize = AvatarSize.Large;
+            avatarviewsquare2.ContentType = ContentType.Default;
+            avatarviewsquare2.ImageSource = "ellanaa.png";
 
-                Label MediumSquarelabel = new Label();
-                MediumSquarelabel.Text = "MediumSquare";
-                MediumSquarelabel.FontSize = 12;
-                MediumSquarelabel.FontAttributes = FontAttributes.Bold;
-                MediumSquarelabel.HorizontalOptions = LayoutOptions.Center;
-                MediumSquarelabel.VerticalOptions = LayoutOptions.Center;
-                MediumSquarelabel.HorizontalTextAlignment = TextAlignment.Center;
-                MediumSquarelabel.VerticalTextAlignment = TextAlignment.Center;
-                MediumSquarelabel.FontSize = 10;
+            Label MediumSquarelabel = new Label();
+            MediumSquarelabel.Text = "MediumSquare";
+            MediumSquarelabel.FontSize = 12;
+            MediumSquarelabel.FontAttributes = FontAttributes.Bold;
+            MediumSquarelabel.HorizontalOptions = LayoutOptions.Center;
+            MediumSquarelabel.VerticalOptions = LayoutOptions.Center;
+            MediumSquarelabel.HorizontalTextAlignment = TextAlignment.Center;
+            MediumSquarelabel.VerticalTextAlignment = TextAlignment.Center;
+            MediumSquarelabel.FontSize = 10;
 
-                SfAvatarView avatarviewsquare3 = new SfAvatarView();
-                avatarviewsquare3.VerticalOptions = LayoutOptions.Center;
-                avatarviewsquare3.HorizontalOptions = LayoutOptions.Center;
-                avatarviewsquare3.AvatarStyle = AvatarStyle.MediumSquare;
-                avatarviewsquare3.AvatarType = AvatarType.Automatic;
-                avatarviewsquare3.ImageSource = "ellanaa.png";
+            SfAvatarView avatarviewsquare3 = new SfAvatarView();
+            avatarviewsquare3.VerticalOptions = LayoutOptions.Center;
+            avatarviewsquare3.HorizontalOptions = LayoutOptions.Center;
+            avatarviewsquare3.AvatarShape = AvatarShape.Square;
+            avatarviewsquare3.AvatarSize = AvatarSize.Medium;
+            avatarviewsquare3.ContentType = ContentType.Default;
+            avatarviewsquare3.ImageSource = "ellanaa.png";
 
-                Label SmallSquarelabel = new Label();
-                SmallSquarelabel.Text = "SmallSquare";
-                SmallSquarelabel.FontSize = 12;
-                SmallSquarelabel.FontAttributes = FontAttributes.Bold;
-                SmallSquarelabel.HorizontalOptions = LayoutOptions.Center;
-                SmallSquarelabel.VerticalOptions = LayoutOptions.Center;
-                SmallSquarelabel.HorizontalTextAlignment = TextAlignment.Center;
-                SmallSquarelabel.VerticalTextAlignment = TextAlignment.Center;
-                SmallSquarelabel.FontSize = 10;
+            Label SmallSquarelabel = new Label();
+            SmallSquarelabel.Text = "SmallSquare";
+            SmallSquarelabel.FontSize = 12;
+            SmallSquarelabel.FontAttributes = FontAttributes.Bold;
+            SmallSquarelabel.HorizontalOptions = LayoutOptions.Center;
+            SmallSquarelabel.VerticalOptions = LayoutOptions.Center;
+            SmallSquarelabel.HorizontalTextAlignment = TextAlignment.Center;
+            SmallSquarelabel.VerticalTextAlignment = TextAlignment.Center;
+            SmallSquarelabel.FontSize = 10;
 
-                SfAvatarView avatarviewsquare4 = new SfAvatarView();
-                avatarviewsquare4.VerticalOptions = LayoutOptions.Center;
-                avatarviewsquare4.HorizontalOptions = LayoutOptions.Center;
-                avatarviewsquare4.AvatarStyle = AvatarStyle.SmallSquare;
-                avatarviewsquare4.AvatarType = AvatarType.Automatic;
-                avatarviewsquare4.ImageSource = "ellanaa.png";
+            SfAvatarView avatarviewsquare4 = new SfAvatarView();
+            avatarviewsquare4.VerticalOptions = LayoutOptions.Center;
+            avatarviewsquare4.HorizontalOptions = LayoutOptions.Center;
+            avatarviewsquare4.AvatarShape = AvatarShape.Square;
+            avatarviewsquare4.AvatarSize = AvatarSize.Small;
+            avatarviewsquare4.ContentType = ContentType.Default;
+            avatarviewsquare4.ImageSource = "ellanaa.png";
 
-                Label XSmallSquarelabel = new Label();
-                XSmallSquarelabel.Text = "XSmallSquare";
-                XSmallSquarelabel.FontSize = 12;
-                XSmallSquarelabel.FontAttributes = FontAttributes.Bold;
-                XSmallSquarelabel.HorizontalOptions = LayoutOptions.Center;
-                XSmallSquarelabel.VerticalOptions = LayoutOptions.Center;
-                XSmallSquarelabel.HorizontalTextAlignment = TextAlignment.Center;
-                XSmallSquarelabel.VerticalTextAlignment = TextAlignment.Center;
-                XSmallSquarelabel.FontSize = 10;
+            Label XSmallSquarelabel = new Label();
+            XSmallSquarelabel.Text = "ExtraSmallSquare";
+            XSmallSquarelabel.FontSize = 12;
+            XSmallSquarelabel.FontAttributes = FontAttributes.Bold;
+            XSmallSquarelabel.HorizontalOptions = LayoutOptions.Center;
+            XSmallSquarelabel.VerticalOptions = LayoutOptions.Center;
+            XSmallSquarelabel.HorizontalTextAlignment = TextAlignment.Center;
+            XSmallSquarelabel.VerticalTextAlignment = TextAlignment.Center;
+            XSmallSquarelabel.FontSize = 10;
 
 
-                SfAvatarView avatarviewsquare5 = new SfAvatarView();
-                avatarviewsquare5.VerticalOptions = LayoutOptions.Center;
-                avatarviewsquare5.HorizontalOptions = LayoutOptions.Center;
-                avatarviewsquare5.AvatarStyle = AvatarStyle.ExtraSmallSquare;
-                avatarviewsquare5.AvatarType = AvatarType.Automatic;
-                avatarviewsquare5.ImageSource = "ellanaa.png";
-      
-                mainGrid.Children.Add(XLargeSquarelabel, 4, 1);
-                mainGrid.Children.Add(avatarviewsquare1, 4, 0);
-                mainGrid.Children.Add(LargeSquarelabel, 3, 1);
-                mainGrid.Children.Add(avatarviewsquare2, 3, 0);
-                mainGrid.Children.Add(MediumSquarelabel, 2, 1);
-                mainGrid.Children.Add(avatarviewsquare3, 2, 0);
-                mainGrid.Children.Add(SmallSquarelabel, 1, 1);
-                mainGrid.Children.Add(avatarviewsquare4, 1, 0);
-                mainGrid.Children.Add(XSmallSquarelabel, 0, 1);
-                mainGrid.Children.Add(avatarviewsquare5, 0, 0);
+            SfAvatarView avatarviewsquare5 = new SfAvatarView();
+            avatarviewsquare5.VerticalOptions = LayoutOptions.Center;
+            avatarviewsquare5.HorizontalOptions = LayoutOptions.Center;
+            avatarviewsquare5.AvatarShape = AvatarShape.Square;
+            avatarviewsquare5.AvatarSize = AvatarSize.ExtraSmall;
+            avatarviewsquare5.ContentType = ContentType.Default;
+            avatarviewsquare5.ImageSource = "ellanaa.png";
 
-                stack.Children.Add(mainGrid);
-                this.Content = stack;
+            mainGrid.Children.Add(XLargeSquarelabel, 4, 1);
+            mainGrid.Children.Add(avatarviewsquare1, 4, 0);
+            mainGrid.Children.Add(LargeSquarelabel, 3, 1);
+            mainGrid.Children.Add(avatarviewsquare2, 3, 0);
+            mainGrid.Children.Add(MediumSquarelabel, 2, 1);
+            mainGrid.Children.Add(avatarviewsquare3, 2, 0);
+            mainGrid.Children.Add(SmallSquarelabel, 1, 1);
+            mainGrid.Children.Add(avatarviewsquare4, 1, 0);
+            mainGrid.Children.Add(XSmallSquarelabel, 0, 1);
+            mainGrid.Children.Add(avatarviewsquare5, 0, 0);
+
+            stack.Children.Add(mainGrid);
+            this.Content = stack;
 
 {% endhighlight %}
 {% endtabs %}
 
-![SfAvatarView control with square visual style](images/VisualSquare_AvatarView.jpg)
+![SfAvatarView control with square visual style](images/VisualSquare_AvatarView.png)
 
-The visual style sample is available in the following link: [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/VisualStyles1309959883).
+The visual style sample is available in the following link: [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/VisualStyles-180489920).

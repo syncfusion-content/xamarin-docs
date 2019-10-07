@@ -129,13 +129,13 @@ You can add a custom image for displaying in SfAvatarView using the `ImageSource
 {% highlight xaml %}
 <ContentPage.Content>
 <Grid>
-    <sfavatar:SfAvatarView AvatarType="Custom"
+    <sfavatar:SfAvatarView ContentType="Custom"
                            ImageSource="alex.png"
                            VerticalOptions="Center"
                            HorizontalOptions="Center"   
                            HeightRequest="50"
                            CornerRadius="25"
-		                   WidthRequest="50" />
+                           WidthRequest="50" />
  </Grid>
  </ContentPage.Content>
 {% endhighlight %}
@@ -161,7 +161,7 @@ namespace AvatarViewGettingStarted
             avatarview.VerticalOptions = LayoutOptions.Center;
             avatarview.HorizontalOptions = LayoutOptions.Center;
             avatarview.BackgroundColor = Color.FromHex("#ffb6c1");
-            avatarview.AvatarType = AvatarType.Custom;
+            avatarview.ContentType = ContentType.Custom;
             avatarview.ImageSource = "alex.png";
             avatarview.WidthRequest = 50;
             avatarview.HeightRequest = 50;
@@ -179,4 +179,4 @@ namespace AvatarViewGettingStarted
 
 ![SfAvatarView](images/Getting_Started_Ssample.png)
 
-The Getting Started sample is available in this following link: [Getting Started](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedSample2011055791).
+The Getting Started sample is available in this following link: [Getting Started](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1355304957).

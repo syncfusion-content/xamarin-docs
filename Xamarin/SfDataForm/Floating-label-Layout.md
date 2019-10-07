@@ -63,6 +63,8 @@ Dataform supports the floating label layout for the following editors.
 * Date editor
 * Time editor
 * Picker editor
+* DropDown editor
+* AutoComplete editor.
 
 ## Container types
 Containers enhance the perspective of dataform editor views and provide some contrast between editor view and assistive labels. Their border and assistive label color will be changed based on the dataform field validation.
@@ -603,6 +605,7 @@ Floating label layout do not support for the following non-editable editors.
 * Segment editor
 * CheckBox editor
 * Switch editor
-* Drop down editor
+
+N> While using unsupported editors with `DataForm` layout option as `TextInputLayout` we can set layout options for unsupported editors' data fields using this [link](https://help.syncfusion.com/xamarin/sfdataform/floating-label-layout#changing-layout-options-of-the-dataformitem)
 
 You can download the [DataForm with floating labels](https://github.com/SyncfusionExamples/Floating-label-editors-in-xamarin.forms-dataform) sample in GitHub.

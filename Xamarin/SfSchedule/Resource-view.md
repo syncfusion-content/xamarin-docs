@@ -158,8 +158,8 @@ meeting.Resources = new ObservableCollection<object> () {5601, 5604};
 
 >**NOTE**
 * You can also associate custom resources to the appointments by using the equivalent field of resource `Id` in custom resource class.
-* No appointment will be displayed when the `ShowResourceView` property is set to false.
-* Appointments with single resource will be displayed in resource `Color`. Appointments with multiple resources will be displayed in the default appointment `Color`.
+* All appointments will be displayed when the `ShowResourceView` property is set to false.
+* If an appointment is mapped to a single resource, it will be displayed in resource `Color`. If an appointment is mapped to multiple resources, it will be displayed in the default appointment `Color`.
 
 
 ## Mapping
@@ -516,4 +516,4 @@ Used button to display the resources
 
 ![Data template selector in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-data-template-selector.png)
 
-You can download the template selector demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/Resource-view/tree/master/TemplatedResourceView).
+You can download the template selector demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/xamarin-schedule-templated-resource-view).

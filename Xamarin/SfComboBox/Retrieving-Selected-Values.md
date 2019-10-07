@@ -125,7 +125,7 @@ The following code sample demonstrates how to retrieve [`SelectedIndex`](https:/
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None">
+        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None" SelectionChanged="ComboBox_SelectionChanged">
             <comboBox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Antigua and Barbuda</x:String>
@@ -192,7 +192,7 @@ namespace ComboBox
             this.Content = stackLayout;
         }
 
-        private void comboBox_SelectionChanged(object sender, Syncfusion.SfComboBox.XForms.SelectionChangedEventArgs e)
+        private void comboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
         {
             DisplayAlert("Selection Changed", "SelectedIndex: " + comboBox.SelectedIndex, "OK");
         }
@@ -490,7 +490,7 @@ The following code sample demonstrates how to retrieve [`SelectedItem`](https://
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None">
+        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None"  SelectionChanged="ComboBox_SelectionChanged">
             <comboBox:SfComboBox.ComboBoxSource>
                 <ListCollection:List x:TypeArguments="x:String">
                     <x:String>Antigua and Barbuda</x:String>
@@ -554,12 +554,12 @@ namespace ComboBox
                 }
             };
 
-            comboBox.SelectionChanged += comboBox_SelectionChanged;
+            comboBox.SelectionChanged += ComboBox_SelectionChanged;
             stackLayout.Children.Add(comboBox);
             this.Content = stackLayout;
         }
 
-        private void comboBox_SelectionChanged(object sender, Syncfusion.comboBox.XForms.SelectionChangedEventArgs e)
+        private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
         {
             DisplayAlert("Selection Changed", "SelectedItem: " + comboBox.SelectedItem, "OK");
         }

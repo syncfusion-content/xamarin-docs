@@ -56,7 +56,7 @@ You can localize custom text available in the control by adding equivalent local
 {% highlight xml %}
 <resources>
 	<string name="No_Appointments">Aucun événement</string>
-	<string name="all_day">Toute la journée</string>
+	<string name="No SelectedDate">Aucune date sélectionnée</string>
     <string name="No_Resources">Aucune ressource</string>
 </resources>
 {% endhighlight %}  
@@ -79,7 +79,7 @@ The corresponding Locale values folder updates only when the device language cha
 
 You can localize custom text available in the control by adding equivalent localized string in the Localizable.strings file, refer [here](https://developer.xamarin.com/guides/ios/advanced_topics/localization_and_internationalization/).
 
-![Localization iOS](Localization_images/Localization_IOS.png) 
+![Localization iOS](Localization_images/xamarin.forms-schedule-localization-iOS-renderer.png) 
 
 If an application requires multiple languages you can follow the below steps:
 
@@ -107,10 +107,10 @@ The procedure for creating Resources(.resw) file is as follows:
 
 *	Translate the custom string used in schedule to respective localized culture.
 
-![Localization UWP](Localization_images/Localization_XFUWP.png)
+![Localization UWP](Localization_images/xamarin.forms-schedule-localization-uwp-renderer.png)
 
-## Localizing custom strings from pcl
-You can localize the custom strings (All Day, No Events, No Resources) used in the schedule control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale using DependencyService instead of device language, you need to create new resource manager based on the resources, and need to set this to [Manager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResourceManager~Manager.html) property of [ScheduleResourceManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResourceManager.html). In the below code, we have set French as Schedule locale as well as custom strings.
+## Localizing custom strings from PCL
+You can localize the custom strings (No SelectedDate, No Events, and No Resources) used in the schedule control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale using DependencyService instead of device language. Create a new resource manager based on the resources, and set it to the [Manager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResourceManager~Manager.html) property of [ScheduleResourceManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResourceManager.html). In the following code, French has been set as Schedule locale as well as custom strings.
 
 {% tabs %}
 {% highlight c# %}
@@ -133,7 +133,7 @@ if (schedule.Locale == "fr")
 {% endhighlight %}
 {% endtabs %}
 
-![Localization All Day](Localization_images/localeallday.png)
+![Localization All Day](Localization_images/xamarin.forms-schedule-localization-from-pcl.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [LocaleFromPCL](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LocaleFromPCL635946080.zip).
@@ -150,8 +150,8 @@ Now, set the Build Action as EmbeddedResource for `Syncfusion.SfSchedule.Forms.f
 <data name="NoEvents" xml:space="preserve">
     <value>Pas d'événements</value>
 </data>
-<data name="AllDay" xml:space="preserve">
-    <value>Toute la journéer</value>
+<data name="NoSelectedDate" xml:space="preserve">
+    <value>Aucune date sélectionnée</value>
 </data>
 <data name="NoResources" xml:space="preserve">
     <value>Aucune ressource</value>

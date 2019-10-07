@@ -43,7 +43,7 @@ inputLayout.InputView = new Entry();
 ## Editor
 
 
-To enter multi line text input, add [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor).
+To enter multi-line text input, add [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), and then set the `AutoSize` property to `TextChanges`.
 
 
 {% tabs %} 
@@ -52,7 +52,7 @@ To enter multi line text input, add [Editor](https://docs.microsoft.com/en-us/xa
 
 <inputLayout:SfTextInputLayout
    Hint="Notes">
-   <Editor />
+   <Editor AutoSize="TextChanges" />
 </inputLayout:SfTextInputLayout>  
 
 {% endhighlight %}
@@ -212,3 +212,5 @@ inputLayout.InputView = combobox;
 {% endtabs %}
 
 ![Combobox](Supported-input-views-images/textInput_input_img6.PNG)
+
+N> Entry and Editor are the only input views supported by [`SfTextInputLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html) in WPF platform.

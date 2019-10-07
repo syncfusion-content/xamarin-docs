@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various customization in Syncfusion segmented control for Xamarin.Forms
+title: Various customization in Syncfusion SegmentedControl for Xamarin.Forms
 description: Learn how to customize the segmented control
 platform: Xamarin
 control: SegmentedControl
@@ -65,7 +65,7 @@ segmentedControl.SelectionTextColor = Color.Red;
 
 {% endtabs %}
 
-![](images/Customization/Xamarin_Forms_Fontcolor.png)
+![Font color customization in segmented control](images/Customization/Xamarin_Forms_Fontcolor.png)
 
 ### Font size
 
@@ -87,7 +87,7 @@ segmentedControl.FontSize = 20;
 
 {% endtabs %}
 
-![](images/Customization/Xamarin_Forms_Size.png)
+![Font size customization in segmented control](images/Customization/Xamarin_Forms_Size.png)
 
 ## Border
 
@@ -113,7 +113,7 @@ segmentedControl.BorderColor = Color.Red;
 
 {% endtabs %}
 
-![](images/Customization/Xamarin_Forms_Bordercolor.png)
+![Border color customization in segmented control](images/Customization/Xamarin_Forms_Bordercolor.png)
 
 ### Border thickness
 
@@ -135,7 +135,7 @@ segmentedControl.BorderThickness = 5;
 
 {% endtabs %}
 
-![](images/Customization/Xamarin_Forms_BorderThickness.png)
+![Border thickness customization in segmented control](images/Customization/Xamarin_Forms_BorderThickness.png)
 
 ### Padding
 
@@ -161,7 +161,7 @@ segmentedControl.SegmentPadding = 15;
 
 {% endtabs %}
 
-![](images/Customization/Xamarin_Forms_Padding.png)
+![Segment padding customization in segmented control](images/Customization/Xamarin_Forms_Padding.png)
 
 ### Corner radius
 
@@ -187,7 +187,7 @@ segmentedControl.SegmentCornerRadius = 15;
 
 {% endtabs %}
 
-![](images/Customization/Xamarin_Forms_ItemCornerRadius.png)
+![Segment corner radius customization in segmented control](images/Customization/Xamarin_Forms_ItemCornerRadius.png)
 
 #### Selection strip radius
 
@@ -217,7 +217,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 {% endtabs %}
 
-![](images/Customization/Xamarin_Forms_SelectionstripRadius.png)
+![Selected segment corner radius customization in segmented control](images/Customization/Xamarin_Forms_SelectionstripRadius.png)
 
 #### Control radius
 
@@ -240,7 +240,7 @@ segmentedControl.CornerRadius = 15;
 
 {% endtabs %}
 
-![](images/Customization/Xamarin_Forms_controlRadius.png)
+![Corner radius customization in segmented control](images/Customization/Xamarin_Forms_controlRadius.png)
 
 ### Color
 
@@ -272,7 +272,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 {% endtabs %}
 
-![](images/Customization/Xamarin_Forms_ItemCornerRadius.png)
+![Segment item color customization in segmented control](images/Customization/Xamarin_Forms_ItemCornerRadius.png)
 
 #### Control color
 
@@ -294,8 +294,36 @@ segmentedControl.Color = Color.FromHex("#02A0AE");
 
 {% endtabs %}
 
-![](images/Customization/Xamarin_Forms_color.png)
+![Segmented control color customization in segmented control](images/Customization/Xamarin_Forms_color.png)
 
+## Scrolling in segmented control programmatically
 
+The SegmentedControl allows programmatic scrolling based on index and item using the `ScrollTo` methods mentioned as follows.
 
+### ScrollTo(index, scrollToPosition)
 
+This method is used to scroll the segment item based on given index and [`ScrollToPosition`]() value.
+
+{% tabs %}
+
+{% highlight c# %}
+
+segmentedControl.ScrollTo(5,  Syncfusion.XForms.Buttons.ScrollToPosition.Start);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### ScrollTo(item, scrollToPosition)
+
+This method is used to scroll the segment item based on the given data or `SfSegmentItem` and [`ScrollToPosition`]() value.
+
+{% tabs %}
+
+{% highlight c# %}
+
+segmentedControl.ScrollTo(viewModel.Items[5], Syncfusion.XForms.Buttons.ScrollToPosition.Start);
+
+{% endhighlight %}
+
+{% endtabs %}

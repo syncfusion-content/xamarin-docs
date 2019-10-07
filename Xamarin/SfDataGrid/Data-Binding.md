@@ -49,6 +49,30 @@ N> The SfDataGrid does not supports `DataTable` binding in `Xamarin.Forms` since
 
 The SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, and filtering are supported when binding collection derived from `IEnumerable`.
 
+## Binding with DataTable
+`SfDataGrid` control supports to bind the [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=netframework-4.8). SfDataGrid control automatically refresh the UI when binding DataTable as `ItemsSource` when rows are added, removed or cleared.
+
+{% tabs %}
+{% highlight xaml %}
+<sfGrid:SfDataGrid x:Name="dataGrid"
+                   AutoGenerateColumns="False"
+                   ItemsSource="{Binding Table}">
+</sfGrid:SfDataGrid>
+{% endhighlight %} 
+{% highlight c# %}
+DataTable Table = this.GetDataTable();
+this.sfDataGrid1.ItemsSource = Table;
+{% endhighlight %}
+{% endtabs %}
+
+Below are the limitations when binding DataTable as `ItemsSource` to SfDataGrid.
+
+* Custom sorting is not supported.
+* `SfDataGrid.View.Filter` is not supported.
+* Advanced Filtering does not support Case Sensitive filtering.
+* [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumn~Expression.html) is not supported. This can be achieved by using the [DataColumn](https://msdn.microsoft.com/en-us/library/System.Data.DataColumn) of DataTable by setting [DataColumn.Expression](https://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression) property.
+* [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Data.Portable~Syncfusion.Data.CollectionViewAdv~LiveDataUpdateMode.html) is not supported.
+
 ## Binding complex properties
 
 The SfDataGrid control supports to bind complex property to its columns. To bind complex property to the [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html), set the complex property path to the [MappingName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html).

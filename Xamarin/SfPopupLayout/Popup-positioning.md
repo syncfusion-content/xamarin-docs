@@ -39,7 +39,7 @@ Following are the list of options available to show SfPopupLayout at various pos
 <td> Shows the `SfPopupLayout` at the position relative to the specified view.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowRelativeToView(View,RelativePosition,Double,Double).html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowRelativeToView.html)'| markdownify }} </td>
 <td> Shows the `SfPopupLayout` at an absolute x, y coordinate from the relative position of the specified view.</td>
 </tr>
 <tr>

@@ -21,23 +21,24 @@ xmlns:badge="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBad
 .......
 
         <badge:SfBadgeView VerticalOptions="Center"
-                    HorizontalOptions="Center">
-                <badge:SfBadgeView.Content>
-                    <sfavatar:SfAvatarView  HorizontalOptions="Center"
-                                            AvatarType="Custom"
-                                            ImageSource="alex.png"
-                                            VerticalOptions="Center"
-                                            WidthRequest="60"
-                                            HeightRequest="60"
-                                            CornerRadius="30"/>
-                </badge:SfBadgeView.Content>
-                <badge:SfBadgeView.BadgeSettings>
-                    <badge:BadgeSetting Offset="-10,-10" 
-                                        BadgeAnimation="Scale"
-                                        BadgePosition="BottomRight" 
-                                        BadgeType="Success"
-                                        BadgeIcon="Away"/>
-                </badge:SfBadgeView.BadgeSettings>
+                           HorizontalOptions="Center">
+            <badge:SfBadgeView.Content>
+                <sfavatar:SfAvatarView  HorizontalOptions="Center"
+                                        ContentType="Custom"
+                                        ImageSource="alex.png"
+                                        VerticalOptions="Center"
+                                        WidthRequest="60"
+                                        HeightRequest="60"
+                                        CornerRadius="30">
+                </sfavatar:SfAvatarView>
+            </badge:SfBadgeView.Content>
+            <badge:SfBadgeView.BadgeSettings>
+                <badge:BadgeSetting Offset="-10,-10"
+                                    BadgeAnimation="Scale"
+                                    BadgePosition="BottomRight" 
+                                    BadgeType="Success"
+                                    BadgeIcon="Away"/>
+            </badge:SfBadgeView.BadgeSettings>
         </badge:SfBadgeView>
 
 {% endhighlight %}
@@ -58,7 +59,7 @@ xmlns:badge="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBad
             badgeSetting.BadgeAnimation = BadgeAnimation.Scale;
             badgeSetting.Offset = new Point(-10, -10);
             badge.BadgeSettings = badgeSetting;
-            
+
             Grid mainGrid = new Grid();
             SfAvatarView avatarview = new SfAvatarView();
             avatarview.HorizontalOptions = LayoutOptions.Center;
@@ -67,7 +68,7 @@ xmlns:badge="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBad
             avatarview.HeightRequest = 60;
             avatarview.CornerRadius = 30;
             avatarview.ImageSource = "alex.png";
-            avatarview.AvatarType = AvatarType.Custom;
+            avatarview.ContentType = ContentType.Custom;
             badge.Content = avatarview;
             mainGrid.Children.Add(badge);
             this.Content = mainGrid;
@@ -79,24 +80,3 @@ xmlns:badge="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBad
 ![BadgeView support](images/BadgeView_AvatarView.jpg)
 
 N> The `SfBadgeView` is available in [`Syncfusion.Xamarin.SfBadgeView`](https://www.nuget.org/packages/Syncfusion.Xamarin.SfBadgeView) from [`nuget.org`](https://www.nuget.org/). To know more about `SfBadgeView` view, refer to this [documentation](https://help.syncfusion.com/xamarin/sfbadgeview/getting-started).
-
-## Provide shadow effect
-
-The `SfAvatarView` control provides shadow effect support. To enable shadow effect, set the `HasShadow` property to true.
-
-You can customize the color of shadow using the `ShadowColor` property.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-N> Shadow support has not been provided for UWP Platform.
-

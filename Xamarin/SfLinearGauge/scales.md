@@ -213,6 +213,47 @@ You can customize the color, length, size, and position of the [`LinearScale`](h
 
 ![Linear Gauge Scale Customization](scales_images/scale5.png)
 
+## Scale Offset
+The space between the control and linear scale can be customized using the `ScaleOffset` property.
+{% tabs %}
+{% highlight XAML %}
+<gauge:SfLinearGauge>
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleOffset="40"  ScaleBarSize="20" CornerRadiusType="Start"  CornerRadius="10" ScaleBarColor="#e0e0e0" LabelColor="#424242">
+                    <gauge:LinearScale.MajorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="15"/>
+                    </gauge:LinearScale.MajorTickSettings>
+                    <gauge:LinearScale.MinorTickSettings>
+                        <gauge:LinearTickSettings Thickness="1"  Color="Gray" Length="7"/>
+                    </gauge:LinearScale.MinorTickSettings>
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>
+{% endhighlight %}
+
+{% highlight c# %}
+public MainPage()
+            {               
+            SfLinearGauge linearGauge = new SfLinearGauge();
+            LinearScale linearScale = new LinearScale();
+            linearScale.ScaleBarSize = 20;
+            linearScale.ScaleBarColor = Color.FromHex("#e0e0e0");
+            linearScale.CornerRadiusType = CornerRadiusType.Start;
+            linearScale.CornerRadius = 10;
+            linearScale.ScaleOffset = 40;
+            linearScale.MajorTickSettings.Thickness = 1;
+            linearScale.MajorTickSettings.Length = 15;
+            linearScale.MajorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Color = Color.Gray;
+            linearScale.MinorTickSettings.Length = 7;
+            linearScale.MinorTickSettings.Thickness = 1;
+            linearScale.LabelColor = Color.FromHex("#424242");
+            linearGauge.Scales.Add(linearScale);
+            }
+        }
+{% endhighlight %}
+{% endtabs %}
+
 ## Setting opposite position
 
 To place the scale at opposite to its original position, set the [`OpposedPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~OpposedPosition.html) property to true in the scale.

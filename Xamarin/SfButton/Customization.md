@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization for Syncfusion Essential Xamarin.Forms SfButton
-description: How to customize a appearance for Xamarin.Forms SfButton.
+description: How to customize appearance of Xamarin.Forms SfButton
 platform: xamarin.forms
 control: sfbutton
 documentation: ug

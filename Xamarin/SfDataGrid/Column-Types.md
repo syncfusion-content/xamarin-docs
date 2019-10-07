@@ -759,7 +759,7 @@ The following screenshot shows the different types of columns in the SfDataGrid:
 
 ### Edit Template
 
-The `SfDataGrid` allows to load any custom view in edit mode.
+The `SfDataGrid` allows to load any custom view in edit mode through [EditTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn~EditTemplate.html) property.
 
 {% highlight xaml %}
 <ContentPage.Resources>

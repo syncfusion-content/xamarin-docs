@@ -157,7 +157,7 @@ private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs args)
 
 ## Numeric button shapes
 
-The `SfDataPager` allows you to change the shape of the buttons through [SfDataPager.ButtonShape](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~ButtonShape.html) property. 
+The `SfDataPager` allows you to change the shape of the buttons using the [SfDataPager.ButtonShape](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~ButtonShape.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -182,7 +182,7 @@ public partial class MainPage : ContentPage
 
 ## Generating numeric buttons
 
-The `SfDataPager` allows you to choose the generation mode of numeric buttons through [SfDataPager.NumericButtonsGenerateMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonsGenerateMode.html) property. The numeric buttons can either be generated in the view automatically or by specifying directly in the [SfDataPager.NumericButtonCount](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonCount.html) property. 
+The `SfDataPager` allows you to choose the generation mode of numeric buttons using the [SfDataPager.NumericButtonsGenerateMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonsGenerateMode.html) property. The numeric buttons can either be generated in view automatically or by specifying directly in the [SfDataPager.NumericButtonCount](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonCount.html) property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -205,7 +205,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-N> The size of the `SfDataPager` adjusts automatically based on the available screen size if the view couldn't hold the numeric buttons specified in the `NumericButtonCount` property.
+N> The size of the `SfDataPager` is adjusted automatically based on the available screen size if the view couldn't hold the numeric buttons specified in the `NumericButtonCount` property.
 
 ## AppearanceManager
 

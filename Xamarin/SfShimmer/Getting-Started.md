@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion Shimmer
-description: How to initialze a shimmer.
+description: How to add shimmer reference, launch an application on each platform with SfShimmer, initialize and load shimmer content.
 platform: xamarin
 control: SfShimmer
 documentation: ug
@@ -105,7 +105,7 @@ Then initialize shimmer as shown below,
 {% highlight xaml %} 
 
 <shimmer:SfShimmer x:Name="shimmer" VerticalOptions="Fill"
-                           IsLoaded="{Binding IsLoaded}">
+                           IsActive="{Binding IsActive}">
                         <shimmer:SfShimmer.Content>
                             <StackLayout>
                                 <Label Text="Content is loaded!" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
@@ -119,7 +119,7 @@ Then initialize shimmer as shown below,
 
 SfShimmer shimmer = new SfShimmer();
 shimmer.VerticalOptions = LayoutOptions.Fill;
-shimmer.SetBinding(SfShimmer.IsLoadedProperty, "IsLoaded");
+shimmer.SetBinding(SfShimmer.IsActiveProperty, "IsActive");
 
 var stackLayout = new StackLayout();
 
@@ -142,13 +142,13 @@ N> The SfShimmer has different shimmer types. The default shimmer type is `Perso
 
 ## Loading shimmer content
 
-By enabling the [`IsLoaded`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~IsLoaded.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html), shimmer content is loaded.
+By disabling the [`IsActive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~IsActive.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html), shimmer content is loaded.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 
-        <shimmer:SfShimmer x:Name="shimmer" VerticalOptions="FillAndExpand" IsLoaded ="true">
+        <shimmer:SfShimmer x:Name="shimmer" VerticalOptions="FillAndExpand" IsActive ="false">
                 <shimmer:SfShimmer.Content>
                      <StackLayout>
                         <Label Text="Content is loaded!"/>
@@ -162,7 +162,7 @@ By enabling the [`IsLoaded`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
             shimmer = new SfShimmer()
             {
-                IsLoaded = true,
+                IsActive = false,
                 VerticalOptions = LayoutOptions.FillAndExpand,
                 Content = new Label
                 {

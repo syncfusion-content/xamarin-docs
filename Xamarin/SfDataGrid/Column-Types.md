@@ -757,6 +757,65 @@ The following screenshot shows the different types of columns in the SfDataGrid:
 
 ![DataGrid with template column](SfDataGrid_images/TemplateColumns2.png)
 
+### EditTemplate
+
+The `SfDataGrid` allows to load customized template when entering into edit mode. 
+
+The following code example illustrates how template column can be used to load customized edit template:
+
+{% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <local:ImageConverter x:Key="imageConverter" /> 
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+<ContentPage.ContentView>
+    <syncfusion:SfDataGrid x:Name="dataGrid"
+                           ColumnSizer="Star">
+
+        <syncfusion:SfDataGrid.Columns>
+            <syncfusion:GridTemplateColumn HeaderText="Stock Change"
+                                           MappingName="StockChange">
+                <syncfusion:GridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0"
+                                   Source="{Binding StockChange,
+                                   Converter={StaticResource imageConverter}}" />
+                            <Label x:Name="changeValue" Grid.Column="1"
+                                   Text="{Binding StockChange}" TextColor="Black"
+                                   XAlign="Center" YAlign="Center">
+                            </Label>
+                        </Grid>
+                    </DataTemplate>
+                </syncfusion:GridTemplateColumn.CellTemplate>
+                <syncfusion:GridTemplateColumn.EditTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0"
+                                   Source="{Binding StockChange,
+                                   Converter={StaticResource imageConverter}}" />
+                            <Entry Grid.Column="1"
+                                   Text="{Binding StockChange}">
+                            </Label>
+                        </Grid>
+                    </DataTemplate>
+                </syncfusion:GridTemplateColumn.EditTemplate>
+            </syncfusion:GridTemplateColumn>
+        </syncfusion:SfDataGrid.Columns>
+    </syncfusion:SfDataGrid>
+</ContentPage.ContentView>
+{% endhighlight %}
+
 ## CellTemplateSelector
 
 Underlying records will be the BindingContext for the `CellTemplateSelector`. The following code example shows templating of the GridTemplateColumn using the `CellTemplateSelector` property:

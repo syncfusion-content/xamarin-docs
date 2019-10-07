@@ -13,6 +13,12 @@ This section explains how to enable selection in the data grid; modes, propertie
 
 The data grid allows you to select a specific row or group of rows either programmatically or by touch interactions. To enable selection, set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) property to a value other than `None`. This control has different selection modes to perform the selection operation as follows:
 
+### Disable selection for rows and columns
+
+You can disable selection and navigation on particular column by using [GridColumn.AllowFocus](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowFocus.html) property. You can disable selection on particular row or cell or column by handling [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentCellActivating_EV.html)  event. 
+
+N> It is not possible to select header rows, table summary rows, unbound rows which are above the table summary row when it’s placed in top and the unbound rows which are below table summary rows when it’s placed in bottom of SfDataGrid. 
+
 ## Selection modes 
 
 <table>
@@ -401,24 +407,6 @@ public class CustomSelectionController : GridSelectionController
 {% endtabs %}
 
 ![DataGrid with selection animation](SfDataGrid_images/SelectionAnimation.gif)
-
-## Skip selection
-
-The `SfDataGrid` allows to disable selection or navigation to specified columns by using [AllowFocus](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowFocus.html) property.
-
-To disable a particular auto generated column, follow the code example.
-
-{% tabs %}
-{% highlight c# %}
-dataGrid.AutoGeneratingColumn += DataGrid_AutoGeneratingColumn;  
-
-private void DataGrid_AutoGeneratingColumn(object sender, AutoGeneratingColumnEventArgs e)
-{
-   if (e.Column.MappingName == "Customer")
-     e.Column.AllowFocus = false;
-}
-{% endhighlight %}
-{% endtabs %}
 
 ## Events in selection
 

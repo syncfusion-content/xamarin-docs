@@ -246,30 +246,6 @@ The following screenshot shows the outcome upon execution of the above code:
 
 ![DataGrid with no border lines](SfDataGrid_images/BorderCustomization_None.png)
 
-### Summary row border customization
-
-The data grid allows to show/hide the vertical border lines in summary rows when [ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html) is false. Override the [DataGridStyle.GetSummaryVerticalLineVisibility](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetSummaryVerticalLineVisibility.html) method to customize summary row borders in the data grid.
-
-{% highlight c# %}
-//Apply custom style to SfDataGrid from code
-dataGrid.GridStyle = new CustomStyle ();
-{% endhighlight %}
-
-{% highlight c# %}
-//Custom Style class
-public class CustomStyle : DataGridStyle
-{
-    public CustomStyle ()
-    {
-    }
-    public override bool GetSummaryVerticalLineVisibility()
-    {
-        return true;
-    }
-}
-{% endhighlight %}
-
-
 ## Header border color customization
 
 The data grid customizes the header border color for different `DataGridStyle.GridLinesVisibility` by writing a custom style class deriving from `DataGridStyle`, and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property. Override the `GetHeaderBorderColor` method in the custom style to customize color of the column header and row header.
@@ -320,6 +296,29 @@ public class CustomStyle : DataGridStyle
 
 The following screenshot shows the final outcome upon execution of the above code:
 ![DataGrid with header border customization](SfDataGrid_images/HeaderBorderCustomization_Both.png)
+
+## Summary row border customization
+
+SfDataGrid allows to show/hide the vertical border lines in summary rows when [ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html) is false. Override the [DataGridStyle.GetSummaryVerticalLineVisibility](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetSummaryVerticalLineVisibility.html) method to customize summary row borders in the SfDataGrid.
+
+{% highlight c# %}
+//Apply custom style to SfDataGrid from code
+dataGrid.GridStyle = new CustomStyle ();
+{% endhighlight %}
+
+{% highlight c# %}
+//Custom Style class
+public class CustomStyle : DataGridStyle
+{
+    public CustomStyle ()
+    {
+    }
+    public override bool GetSummaryVerticalLineVisibility()
+    {
+        return true;
+    }
+}
+{% endhighlight %}
 
 ## Customizing sort icons in the header
 

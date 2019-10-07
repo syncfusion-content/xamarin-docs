@@ -299,7 +299,7 @@ The following screenshot shows the final outcome upon execution of the above cod
 
 ## Summary row border customization
 
-SfDataGrid allows to show/hide the vertical border lines in summary rows when [ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html) is false. Override the [DataGridStyle.GetSummaryVerticalLineVisibility](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetSummaryVerticalLineVisibility.html) method to customize summary row borders in the SfDataGrid.
+SfDataGrid allows you to show or hide the vertical border lines in summary rows when [ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html) is false. Override the [DataGridStyle.GetSummaryVerticalLineVisibility](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetSummaryVerticalLineVisibility.html) method to customize summary row borders in SfDataGrid.
 
 {% highlight c# %}
 //Apply custom style to SfDataGrid from code

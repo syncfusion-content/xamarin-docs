@@ -13,6 +13,12 @@ This section explains how to enable selection in the data grid; modes, propertie
 
 The data grid allows you to select a specific row or group of rows either programmatically or by touch interactions. To enable selection, set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) property to a value other than `None`. This control has different selection modes to perform the selection operation as follows:
 
+### Disable selection for rows and columns
+
+You can disable selection and navigation in a particular column using the [GridColumn.AllowFocus](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowFocus.html) property. You can disable selection in a particular row or cell or column by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentCellActivating_EV.html)  event. 
+
+N> It is not possible to select header rows, table summary rows, and unbound rows that are above the table summary row when they are placed at the top and the unbound rows that are placed are below table summary rows when they placed at the bottom of SfDataGrid.
+
 ## Selection modes 
 
 <table>

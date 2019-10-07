@@ -655,7 +655,7 @@ The following table provides the list of properties in GridTemplateColumn:
 </tr>
 </table>
 
-### CellTemplate
+### Cell Template
 
 Underlying records will be the BindingContext for the `CellTemplate`. The following code example shows templating of GridTemplateColumn:
 
@@ -757,11 +757,9 @@ The following screenshot shows the different types of columns in the SfDataGrid:
 
 ![DataGrid with template column](SfDataGrid_images/TemplateColumns2.png)
 
-### EditTemplate
+### Edit Template
 
-The `SfDataGrid` allows to load customized template when entering into edit mode. 
-
-The following code example illustrates how template column can be used to load customized edit template:
+The `SfDataGrid` allows to load any custom view in edit mode.
 
 {% highlight xaml %}
 <ContentPage.Resources>

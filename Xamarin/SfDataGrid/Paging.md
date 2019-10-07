@@ -159,8 +159,6 @@ private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs args)
 
 The `SfDataPager` allows you to change the shape of the buttons through [SfDataPager.ButtonShape](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~ButtonShape.html) property. 
 
-Refer the below code to change the shape of the buttons.
-
 {% tabs %}
 {% highlight xaml %}
 <sfDataPager:SfDataPager x:Name="sfDataPager"
@@ -185,8 +183,6 @@ public partial class MainPage : ContentPage
 ## Generating numeric buttons
 
 The `SfDataPager` allows you to choose the generation mode of numeric buttons through [SfDataPager.NumericButtonsGenerateMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonsGenerateMode.html) property. The numeric buttons can either be generated in the view automatically or by specifying directly in the [SfDataPager.NumericButtonCount](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonCount.html) property. 
-
-To set the generation mode, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}

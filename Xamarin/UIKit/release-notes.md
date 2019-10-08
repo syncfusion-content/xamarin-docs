@@ -175,17 +175,6 @@ Article
 4
 </td>
 <td>
-Article
-</td>
-<td>
-My Article Page<br/>
-</td>
-</tr>
-<tr>
-<td align="center">
-5
-</td>
-<td>
 Social
 </td>
 <td>
@@ -194,7 +183,7 @@ Social Profile with Interest Page<br/>
 </tr>
 <tr>
 <td align="center">
-6
+5
 </td>
 <td>
 Tracking

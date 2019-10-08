@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion.Xamarin.Forms Shimmer types
-description: Different Shimmer types available in Essential Xamarin.forms Shimmer.
+description: Different built-in Shimmer types and Custom view support available in Essential Xamarin.forms Shimmer.
 platform: xamarin
 control: SfShimmer
 documentation: ug

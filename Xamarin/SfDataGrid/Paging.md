@@ -155,6 +155,58 @@ private void OnDemandPageLoading(object sender, OnDemandLoadingEventArgs args)
 }
 {% endhighlight %}
 
+## Numeric button shapes
+
+The `SfDataPager` allows you to change the shape of the buttons using the [SfDataPager.ButtonShape](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~ButtonShape.html) property. 
+
+{% tabs %}
+{% highlight xaml %}
+<sfDataPager:SfDataPager x:Name="sfDataPager"
+                         ButtonShape="Rectangle"
+                         PageCount="10"
+                         PageSize="10"
+                         Source="{Binding OrdersInfo}">
+</sfDataPager:SfDataPager>
+{% endhighlight %}
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        this.sfDataPager.ButtonShape = ButtonShape.Rectangle;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Generating numeric buttons
+
+The `SfDataPager` allows you to choose the generation mode of numeric buttons using the [SfDataPager.NumericButtonsGenerateMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonsGenerateMode.html) property. The numeric buttons can either be generated in view automatically or by specifying directly in the [SfDataPager.NumericButtonCount](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonCount.html) property. 
+
+{% tabs %}
+{% highlight xaml %}
+<sfDataPager:SfDataPager x:Name="sfDataPager"
+                         NumericButtonsGenerateMode="Auto"
+                         PageCount="10"
+                         PageSize="10"
+                         Source="{Binding OrdersInfo}">
+</sfDataPager:SfDataPager>
+{% endhighlight %}
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        dataPager.NumericButtonsGenerateMode = NumericButtonsGenerateMode.Auto;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> The size of the `SfDataPager` is adjusted automatically based on the available screen size if the view couldn't hold the numeric buttons specified in the `NumericButtonCount` property.
+
 ## AppearanceManager
 
 The data grid allows changing the appearance by writing a style class overriding from the `AppearanceManager`, and assigning it to the [SfDataPager.AppearanceManager](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~AppearanceManager.html) property.

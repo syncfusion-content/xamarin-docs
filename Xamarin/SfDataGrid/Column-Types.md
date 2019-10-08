@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Types | SfDataGrid | Xamarin | Syncfusion
-description: Different types of column and it's properties and customizations in a Xamarin.Forms DataGrid. 
+description: Different types of columns classified based on their functionalities with its properties and customizations in a Xamarin.Forms DataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -655,7 +655,7 @@ The following table provides the list of properties in GridTemplateColumn:
 </tr>
 </table>
 
-### CellTemplate
+### Cell template
 
 Underlying records will be the BindingContext for the `CellTemplate`. The following code example shows templating of GridTemplateColumn:
 
@@ -756,6 +756,63 @@ public class ImageConverter:IValueConverter
 The following screenshot shows the different types of columns in the SfDataGrid:
 
 ![DataGrid with template column](SfDataGrid_images/TemplateColumns2.png)
+
+### Edit template
+
+The `SfDataGrid` allows you to load any custom view in edit mode using the [EditTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn~EditTemplate.html) property.
+
+{% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <local:ImageConverter x:Key="imageConverter" /> 
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+<ContentPage.ContentView>
+    <syncfusion:SfDataGrid x:Name="dataGrid"
+                           ColumnSizer="Star">
+
+        <syncfusion:SfDataGrid.Columns>
+            <syncfusion:GridTemplateColumn HeaderText="Stock Change"
+                                           MappingName="StockChange">
+                <syncfusion:GridTemplateColumn.CellTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0"
+                                   Source="{Binding StockChange,
+                                   Converter={StaticResource imageConverter}}" />
+                            <Label x:Name="changeValue" Grid.Column="1"
+                                   Text="{Binding StockChange}" TextColor="Black"
+                                   XAlign="Center" YAlign="Center">
+                            </Label>
+                        </Grid>
+                    </DataTemplate>
+                </syncfusion:GridTemplateColumn.CellTemplate>
+                <syncfusion:GridTemplateColumn.EditTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Grid.Column="0"
+                                   Source="{Binding StockChange,
+                                   Converter={StaticResource imageConverter}}" />
+                            <Entry Grid.Column="1"
+                                   Text="{Binding StockChange}">
+                            </Label>
+                        </Grid>
+                    </DataTemplate>
+                </syncfusion:GridTemplateColumn.EditTemplate>
+            </syncfusion:GridTemplateColumn>
+        </syncfusion:SfDataGrid.Columns>
+    </syncfusion:SfDataGrid>
+</ContentPage.ContentView>
+{% endhighlight %}
 
 ## CellTemplateSelector
 

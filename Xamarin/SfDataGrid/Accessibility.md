@@ -1,17 +1,57 @@
 ---
 layout: post
-title: Automation | SfDataGrid | Xamarin | Syncfusion
-description: Set Automation Id to SfDataGrid for automation framework to find and interact with control inner elements.
+title: Accessibility | SfDataGrid | Xamarin | Syncfusion
+description: Set AutomationId to SfDataGrid for automation framework to find and interact with control inner elements.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Automation Id
+# AutomationId
 
 SfDataGrid and SfDataPager support built-in [AutomationId](https://docs.microsoft.com/en-gb/dotnet/api/xamarin.forms.element.automationid?view=xamarin-forms#Xamarin_Forms_Element_AutomationId) for all their inner elements. These `AutomationId` values allow the automation framework to find and interact with the inner elements when the test scripts are run. A unique `AutomationId` is maintained for each inner element by prefixing the control's `AutomationId` with the inner element's Id.
 
 ## DataGrid
+
+The below table illustrates the predefined automation values set internally which can be used to identify the SfDataGrid elements.
+
+<table>
+<tr>
+<th>Element</th>
+<th>Value</th>
+<th>Example</th>
+</tr>
+<tr>
+<td>Header Row</td>
+<td>"Row" + RowIndex</td>
+<td>R0</td>
+</tr>
+<tr>
+<td>Header Cell</td>
+<td>"R" + RowIndex + "C" + ColumnIndex</td>
+<td>R0C2</td>
+</tr>
+<tr>
+<td>Row</td>
+<td>"Row" + RowIndex</td>
+<td>R4</td>
+</tr>
+<tr>
+<td>Grid Cell</td>
+<td>"R" + RowIndex + "C" + ColumnIndex</td>
+<td>R4C2</td>
+</tr>
+<tr>
+<td>Group Header</td>
+<td>"Row" + RowIndex</td>
+<td>R5</td>
+</tr>
+<tr>
+<td>LoadMore View</td>
+<td>"LOAD MORE ITEMS"</td>
+<td>LOAD MORE ITEMS</td>
+</tr>
+</table>
 
 The following screenshots illustrate the `AutomationId` values of grid cells, rows, and other inner elements of SfDataGrid.
 
@@ -103,6 +143,38 @@ public void SfDataGrid_AutomationId()
 {% endtabs %}
 
 ## DataPager
+
+The below table illustrates the predefined automation values set internally which can be used to identify the SfDataPager elements.
+
+<table>
+<tr>
+<th>Element</th>
+<th>Value</th>
+</tr>
+<tr>
+<td>First page button</td>
+<td>"FirstPage"</td>
+</tr>
+<tr>
+<td>Previous page button</td>
+<td>"PreviousPage"</td>
+</tr>
+<tr>
+<td>Numeric buttons</td>
+<td>
+"NumericButton" + NumericButtonIndex <br/>
+Example : NumericButton3
+</td>
+</tr>
+<tr>
+<td>Next page button</td>
+<td>"NextPage"</td>
+</tr>
+<tr>
+<td>Last page button</td>
+<td>"LastPage"</td>
+</tr>
+</table>
 
 The following screenshot illustrates the `AutomationId` values of the pager buttons in SfDataPager.
 

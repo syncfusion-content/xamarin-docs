@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keys for Syncfusion Controls
+title: About Keys for Syncfusion Controls | Syncfusion
 description: This section contains the details about the keys which are mapped to the UI elements of all the controls
 platform: xamarin
 control: General

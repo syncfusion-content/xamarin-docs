@@ -349,7 +349,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Setting title for date editor
 
-You can set title to the date editor by handling the [Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem~Title.html) property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html]. The default value of the property is `Choose Date`.
+You can set title to the date editor by handling the [Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem~Title.html) property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html]. The default value of the property is `Choose Date`.
 
 {% tabs %}
 {% highlight c# %}
@@ -369,7 +369,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
->N Applicable only in UWP platform.
+>N Title property is applicable only for XForms UWP platform.
 
 ### Setting MaximumDate and MinimumDate in date editor
 
@@ -435,7 +435,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Setting title for time editor
 
-You can set title to the time editor by handling the [Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem~Title.html) property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem.html]. The default value of this property is `Choose Time`.
+You can set title to the time editor by handling the [Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem~Title.html) property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem.html]. The default value of this property is `Choose Time`.
 
 {% tabs %}
 {% highlight c# %}
@@ -455,7 +455,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
->N Applicable only in UWP platform.
+>N Title property is applicable only for XForms UWP platform.
 
 ## Segment editor
 

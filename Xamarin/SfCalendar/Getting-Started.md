@@ -40,11 +40,11 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfCalendar.Android.dll<br/>Syncfusion.SfCalendar.XForms.Android.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfCalendar.XForms.Android.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfCalendar.iOS.dll<br/>Syncfusion.SfCalendar.XForms.iOS.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfCalendar.XForms.iOS.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>

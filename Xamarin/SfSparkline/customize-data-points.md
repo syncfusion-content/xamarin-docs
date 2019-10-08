@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize data in Syncfusion Sparkline control for Xamarin.Forms
-description: Customize data points in Xamarin.Forms Sparkline
+description: How to customize data points in Essential Xamarin.Forms Sparkline. Describes how to apply color for different data points. 
 platform: xamarin
 control: Sparkline
 documentation: ug

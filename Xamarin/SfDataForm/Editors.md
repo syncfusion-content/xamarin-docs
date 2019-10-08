@@ -349,7 +349,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Setting title for date editor
 
-You can set title to the time editor by handling the `Title` property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html]. The default value of the property is `Choose Date`.
+You can set title to the date editor by handling the [Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem~Title.html) property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html]. The default value of the property is `Choose Date`.
 
 {% tabs %}
 {% highlight c# %}
@@ -358,9 +358,12 @@ dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
 private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
 {   
 
-    if (e.DataFormItem != null && e.DataFormItem.Name == "Date")
-    {
-        (e.DataFormItem as DataFormDateItem).Title = "Select a date";
+    if (e.DataFormItem != null && e.DataFormItem.Name == "BirthDate")
+    {       
+         if(Device.RuntimePlatform == Device.UWP)
+        {
+            (e.DataFormItem as DataFormDateItem).Title = "Select a date";
+        }
     }
 }
 {% endhighlight %}
@@ -432,7 +435,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Setting title for time editor
 
-You can set title to the time editor by handling the `Title` property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem.html]. The default value of this property is `Choose Time`.
+You can set title to the time editor by handling the [Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem~Title.html) property in DataFormTimeItem[https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem.html]. The default value of this property is `Choose Time`.
 
 {% tabs %}
 {% highlight c# %}
@@ -443,7 +446,10 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
     if (e.DataFormItem != null && e.DataFormItem.Name == "BirthTime")
     {
-        (e.DataFormItem as DataFormTimeItem).Title = "Select time of birth";
+        if(Device.RuntimePlatform == Device.UWP)
+        {
+            (e.DataFormItem as DataFormTimeItem).Title = "Select time of birth";
+        }
     }
 }
 {% endhighlight %}
@@ -1298,7 +1304,7 @@ The [MaskedTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 {% endtabs %}
 
 ### Password Delay
-When providing password character, you can show the typed character with some delay using the `EnablePasswordDelay` property in [DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html). When enabling the EnablePasswordDelay property, the typed character will be displayed for a few seconds before it is converted to the password character.
+When providing password character, you can show the typed character with some delay using the [EnablePasswordDelay](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~EnablePasswordDelay.html) property in [DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html). When enabling the EnablePasswordDelay property, the typed character will be displayed for a few seconds before it is converted to the password character.
 
 {% tabs %}
 {% highlight c# %}
@@ -1308,7 +1314,7 @@ When providing password character, you can show the typed character with some de
 {% endtabs %}
 
 ### Password delay duration
-When `PasswordDelay` is enabled, you can handle the duration of the displaying typed character using the `PasswordDelayDuration` property in [DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html.
+When `PasswordDelay` is enabled, you can handle the duration of the displaying typed character using the [PasswordDelayDuration](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~PasswordDelayDuration.html) property in [DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html.
 
 {% tabs %}
 {% highlight c# %}

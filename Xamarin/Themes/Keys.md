@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Keys for Syncfusion Controls
+title: Theme dynamic Keys for Syncfusion Controls
 description: This section contains the details about the keys which are mapped to the UI elements of all the controls
 platform: xamarin
 control: General
@@ -6449,7 +6449,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="3">
+        <td rowspan="22">
             SfImageEditorStyles  
             <br/>
             <br/>
@@ -6509,6 +6509,253 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Color of tool bar text in image editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorToolbarBorderColor      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tool bar border in image editor. 
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorToolbarPressedColor       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tool bar item background in image editor when it is pressed state. 
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorToolbarLineSeparatorColor        
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tool bar line separator in image editor.  
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorToolbarSelectionColor         
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of tool bar item in image editor when it is selected.   
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorDeleteBackgroundColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of delete background in image editor.   
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorDeletePressedColor           
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of delete background in image editor when it is pressed.   
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorToolbarSliderProgressColor            
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of slider progress in image editor.   
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorToolbarColorPaletteHighlightColor             
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of toolbar color palette border in image editor.    
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorBackgroundColor              
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of ImageEditor control background.    
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorTextPreviewerEditTextColor               
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of Text previewer window EditText in Image editor.     
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorTextPreviewerBackgroundColor                
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of Text previewer window background in Image editor.      
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorTextPreviewerButtonColor                 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of Text previewer window button text in Image editor.     
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorTextPreviewerButtonBackgroundColor                  
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of Text previewer window button background in Image editor.     
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorTextPreviewerButtonPressedColor                   
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of Text previewer window button background in Image editor when it is pressed.     
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorTextPreviewerButtonTextColor                    
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of Text previewer window button text color in Image editor.      
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorCheckBoxStrokeColor                     
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of CheckBox stroke in Image editor.     
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfImageEditorDeleteBorderColor                      
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of delete border in Image editor.     
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfTextPreviewerButtonDisabledColor                       
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of Text previewer window button background in Image editor when it is disabled.      
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+	<tr>
+    <td>
+            SfTextPreviewerButtonDisabledTextColor                        
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of Text previewer window button text in Image editor when it is disabled.       
             <br/>
             <br/>
         </td>

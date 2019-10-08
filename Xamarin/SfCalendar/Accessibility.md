@@ -50,8 +50,20 @@ The `SfCalendar` control has built-in `AutomationId` for inner elements. Please 
 
 <tr>
 <td>Inline View , Agenda View</td>
-<td>subject text</td>
-<td>Meeting</td>
+<td>Subject hh tt-hh tt dd/MMMM/yyyy</td>
+<td>Consulting 10AM-12PM  01/July/2019</td>
+</tr>
+
+<tr>
+<td>All day</td>
+<td>Subject All day</td>
+<td>Consulting All day</td>
+</tr>
+
+<tr>
+<td>Spanning Appointment</td>
+<td>Subject hh tt dd/MMMM/yyyy-hh tt dd/MMMM/yyyy</td>
+<td>Planning 10 AM 12/August/2019-02 PM 18/August/2019</td>
 </tr>
 
 <tr>
@@ -97,6 +109,7 @@ To keep unique `AutomationId`, these inner elements’ AutomationIds are updated
 ### Month view
 
 ![MonthView AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-month-view.png)
+![MonthView AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-month-view-spanning.png)
 
 ### Week view
 

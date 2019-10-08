@@ -22,8 +22,8 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 
 <tr>
 <td>MonthCell</td>
-<td>dd/MMMM/yyyy</td>
-<td>01/July/2019</td>
+<td>dddd dd/MMMM/yyyy</td>
+<td>Tuesday 01/July/2019</td>
 </tr>
 
 <tr>
@@ -34,14 +34,32 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 
 <tr>
 <td>Inline View</td>
-<td>hh a Subject dd/MMMM/yyyy</td>
-<td>10 AM Consulting 22/August/2019</td>
+<td>Subject hh tt-hh tt dd/MMMM/yyyy</td>
+<td>Consulting 10 AM-12 PM 01/July/2019</td>
 </tr>
 
 <tr>
 <td>Agenda View</td>
-<td>hh a Subject dd/MMMM/yyyy</td>
-<td>11 AM Planning 22/August/2019</td>
+<td>Subject hh tt-hh tt dd/MMMM/yyyy</td>
+<td>Planning 10 AM-11 AM 01/July/2019</td>
+</tr>
+
+<tr>
+<td>All day</td>
+<td>Subject All day</td>
+<td>Consulting All day</td>
+</tr>
+
+<tr>
+<td>Spanning Appointment</td>
+<td>Subject hh tt dd/MMMM/yyyy-hh tt dd/MMMM/yyyy</td>
+<td>Planning 10 AM 12/August/2019-02 PM 18/August/2019</td>
+</tr>
+
+<tr>
+<td>Resources</td>
+<td>Name ResourceID</td>
+<td>John 1501</td>
 </tr>
 
 <tr>
@@ -53,6 +71,9 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 </table>
 
 ![Month view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view.png)
+![Month view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-allday.png)
+![Month view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-spanning.png)
+![Month view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-resources.png)
 ![Month view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-no-events.png)
 
 ### Day, week and workweek views
@@ -72,8 +93,8 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 
 <tr>
 <td>Appointment</td>
-<td>hh a Subject dd/MMMM/yyyy</td>
-<td>10 AM Consulting 22/August/2019</td>
+<td>Subject hh tt-hh tt dd/MMMM/yyyy</td>
+<td>Planning 10 AM-12 PM 01/July/2019</td>
 </tr>
 
 <tr>
@@ -90,17 +111,37 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 
 <tr>
 <td>AllDay</td>
-<td>hh a Subject dd/MMMM/yyyy</td>
-<td>10 AM Consulting 22/August/2019</td>
+<td>Subject All day</td>
+<td>Consulting All day</td>
+</tr>
+
+<tr>
+<td>Spanning Appointment</td>
+<td>Subject hh tt dd/MMMM/yyyy-hh tt dd/MMMM/yyyy</td>
+<td>Planning 10 AM 12/August/2019-02 PM 18/August/2019</td>
+</tr>
+
+<tr>
+<td>Resources</td>
+<td>Name ResourceID</td>
+<td>Brooklyn 6343</td>
 </tr>
 
 </table>
 
 ![Day view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-day-view.png)
 
+![Day view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-day-view-resources.png)
+
+![Day view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-day-view-spanning.png)
+
 ![Week view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-week-view.png)
 
+![Week view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-week-view-spanning.png)
+
 ![Work week view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-work-week-view.png)
+
+![Work week view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-workweek-view-spanning.png)
 
 ### Timeline view
 
@@ -119,8 +160,14 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 
 <tr>
 <td>Appointment</td>
-<td>hh a Subject dd/MMMM/yyyy</td>
-<td>10 AM Consulting 22/August/2019</td>
+<td>Subject hh tt-hh tt dd/MMMM/yyyy</td>
+<td>Planning 10 AM-12PM 01/July/2019</td>
+</tr>
+
+<tr>
+<td>Resources</td>
+<td>Name ResourceID</td>
+<td>Sophia 7456</td>
 </tr>
 
 <tr>
@@ -145,3 +192,4 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 
 ![Timeline view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view.png)
 ![Timeline View AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view-header.png)
+![Timeline View AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view-resources.png)

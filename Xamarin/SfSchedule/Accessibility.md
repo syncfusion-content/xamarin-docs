@@ -33,19 +33,19 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 </tr>
 
 <tr>
-<td>Inline View</td>
+<td>Inline View appointment</td>
 <td>Subject hh tt-hh tt dd/MMMM/yyyy</td>
 <td>Consulting 10 AM-12 PM 01/July/2019</td>
 </tr>
 
 <tr>
-<td>Agenda View</td>
+<td>Agenda View appointment</td>
 <td>Subject hh tt-hh tt dd/MMMM/yyyy</td>
 <td>Planning 10 AM-11 AM 01/July/2019</td>
 </tr>
 
 <tr>
-<td>All day</td>
+<td>All day appointment</td>
 <td>Subject All day</td>
 <td>Consulting All day</td>
 </tr>
@@ -71,10 +71,10 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 </table>
 
 ![Month view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view.png)
-![Month view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-allday.png)
-![Month view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-spanning.png)
-![Month view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-resources.png)
-![Month view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-no-events.png)
+![Month view Allday appointment AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-allday.png)
+![Month view Spanning appointment AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-spanning.png)
+![Month view Resources AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-resources.png)
+![Month view No Events AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-month-view-no-events.png)
 
 ### Day, week and workweek views
 
@@ -131,17 +131,17 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 
 ![Day view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-day-view.png)
 
-![Day view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-day-view-resources.png)
+![Day view Resources AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-day-view-resources.png)
 
-![Day view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-day-view-spanning.png)
+![Day view Spanning appointment AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-day-view-spanning.png)
 
 ![Week view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-week-view.png)
 
-![Week view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-week-view-spanning.png)
+![Week view Spanning appointment AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-week-view-spanning.png)
 
 ![Work week view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-work-week-view.png)
 
-![Work week view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-workweek-view-spanning.png)
+![Work week view Spanning appointment AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-workweek-view-spanning.png)
 
 ### Timeline view
 
@@ -191,5 +191,5 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 </table>
 
 ![Timeline view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view.png)
-![Timeline View AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view-header.png)
-![Timeline View AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view-resources.png)
+![Timeline View header AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view-header.png)
+![Timeline View Resources AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view-resources.png)

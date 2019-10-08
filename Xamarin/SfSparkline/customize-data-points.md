@@ -105,6 +105,6 @@ SfColumnSparkline columnSparkline = new SfColumnSparkline()
 
 ## Padding
 
-The `padding` property represents the distance between an element and its child elements. Padding can be applied in specific direction or in all directions. 
+The `padding` property represents the distance between an element and its child elements. Padding can be applied in specific direction or in all directions. Padding can be applied for all sparkline types.
 
 ![Padding in Xamarin.Forms Sparkline](sparkline_images/PaddingSparkline.jpg)

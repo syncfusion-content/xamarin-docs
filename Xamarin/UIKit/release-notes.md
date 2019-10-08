@@ -123,3 +123,74 @@ Social
 </tr>
 </tbody>
 </table>
+
+## UI Kit 2.1.0.0
+
+The UI Kit version 2.1.0.0 has 6 new screens for the following categories.
+
+<table>
+<tbody>
+<tr>
+<th align="center">S.No</th>
+<th align="center">Categories</th>
+<th align="center">Pages</th>
+</tr>
+<tr>
+<td align="center">
+1
+</td>
+<td>
+Forms
+</td>
+<td>
+Add Profile Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+2
+</td>
+<td>
+Catalog
+</td>
+</td>
+<td>
+Product Home Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+3
+</td>
+<td>
+Article
+</td>
+<td>
+1. Article Comments Page<br/>
+2. My Article Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+4
+</td>
+<td>
+Social
+</td>
+<td>
+Social Profile with Interest Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+5
+</td>
+<td>
+Tracking
+</td>
+<td>
+Product Delivery Tracking Page<br/>
+</td>
+</tr>
+</tbody>
+</table>

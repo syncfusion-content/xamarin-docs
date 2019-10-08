@@ -5339,7 +5339,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Change the color of Agendaview Date text(12 Tue, 13 Wed, 14 Thu) in calendar month view.
+            Change the color of agenda view Date text(12 Tue, 13 Wed, 14 Thu) in calendar month view.
             <br/>
             <br/>
         </td>

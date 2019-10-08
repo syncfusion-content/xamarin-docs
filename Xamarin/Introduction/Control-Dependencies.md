@@ -1,4 +1,4 @@
-Fsfcale---
+---
 layout: post
 title: Control Dependencies of Syncfusion Xamarin.Forms
 description: Contains Xamarin.Forms control dependencies for each control to be referred in each platform project.

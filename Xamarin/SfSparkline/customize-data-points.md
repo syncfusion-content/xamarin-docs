@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize data in Syncfusion Sparkline control for Xamarin.Forms
-description: How to customize data points in Essential Xamarin.Forms Sparkline
+description: How to customize data points in Essential Xamarin.Forms Sparkline. Describes how to apply color for different data points. 
 platform: xamarin
 control: Sparkline
 documentation: ug
@@ -101,3 +101,50 @@ SfColumnSparkline columnSparkline = new SfColumnSparkline()
 {% endtabs %}
 
 ![Segment customization in Xamarin.Forms Sparkline](sparkline_images/SegmentsCustomization.png)
+
+## Padding
+
+The `padding` property represents the distance between an element and its child elements. Padding can be applied in specific direction or in all directions. Padding can be applied for all sparkline types.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+ <sparkline:SfLineSparkline ItemsSource="{Binding Data}" 
+                              YBindingPath="Performance"
+                              BackgroundColor="Bisque"
+                              Padding="25"
+                              >   
+<sparkline:SfLineSparkline.Marker>
+	       <sparkline:MarkerBase                                      IsVisible="True" 
+                                Color = "Red"
+                                 Width="15"
+                                 Height="15"/>
+     </sparkline:SfLineSparkline.Marker>                                
+  
+</sparkline:SfLineSparkline>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfLineSparkline lineSparkline = new SfLineSparkline()
+{
+    YBindingPath = "Performance",
+    ItemsSource = viewModel.Data,
+    BackgroundColor = Color.Bisque,
+    Padding = new Thickness(25),
+    Marker = new MarkerBase()
+    {
+        IsVisible = true,
+        Color = Color.Red,
+        Width = 15,
+        Height = 15
+    }
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Padding in Xamarin.Forms Sparkline](sparkline_images/PaddingSparkline.jpg)

@@ -452,3 +452,39 @@ public class ViewModel: INotifyPropertyChanged
 Executing the above codes renders the following output in Android device respectively.
 
 ![Relative positioning of Popup in MVVM](PopupLayout_images/ShowingPopupAtRelativePositionInMVVM.jpg)
+
+## Display the popup with Padding
+
+The SfPopupLayout allows users to set padding for the PopupView when the space between the popup and the screen is less than the minimum padding value of 5 pixels. The custom padding value set in the sample will not apply when the space between the popup and the screen is already greater than 5 pixels. For cases where you want to position your popup farther away from the screen use the [SfPopupLayout.Show(double,double)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show(Double,Double).html) as shown [here](https://help.syncfusion.com/xamarin/sfpopuplayout/popup-positioning#absolute-positioning).
+
+{% tabs %}
+{% highlight xaml %}
+    <ContentPage.Content>
+        <sfPopup:SfPopupLayout x:Name="popupLayout" Padding="15,15,15,15">
+            <sfPopup:SfPopupLayout.PopupView>
+                <sfPopup:PopupView AppearanceMode="TwoButton"
+                                   IsFullScreen="True"
+                                   AcceptButtonText="SAVE"
+                                   DeclineButtonText="CANCEL"
+                                   HeaderTemplate="{StaticResource HeaderViewTemplate}"
+                                   ContentTemplate="{StaticResource ContentViewTemplate}"/>
+            </sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:SfPopupLayout.Content>
+                <StackLayout x:Name="layout">
+                    <Button x:Name="clickToShowPopup" Text="ClickToShowPopup"  Clicked="ClickToShowPopup_Clicked" />
+                </StackLayout>
+            </sfPopup:SfPopupLayout.Content>
+        </sfPopup:SfPopupLayout>
+    </ContentPage.Content>
+{% endhighlight %}
+
+{% highlight c# %}
+            SfPopupLayout popupLayout = new SfPopupLayout();
+            popupLayout.Padding = new Thickness(15, 15, 15, 15);
+            popupLayout.PopupView.IsFullScreen = true;
+            popupLayout.PopupView.HeaderTemplate = GetHeaderTemplate();
+            popupLayout.PopupView.ContentTemplate = GetContentTemplate();
+{% endhighlight %}
+{% endtabs %}
+
+![Popup with Padding](PopupLayout_images/SfPopupLayoutPadding_Android.png)

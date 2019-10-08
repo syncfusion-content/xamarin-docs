@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Xamarin
-description: Learn how to install and deploy the Syncfusion Xamarin component
+title: Installation process for Syncfusion Xamarin
+description: This section provides information regarding the Syncfusion Xamarin Online installer and steps for installing it
 platform: Xamarin
 control: Installation and Deployment
 documentation: ug

@@ -26,13 +26,7 @@ The below table illustrates the predefined automation values set internally whic
 <td>"Step"</td>
 <td>Step</td>
 </tr>
-
 </table>
-
-The following screenshots illustrate the `AutomationId` values of marker elements of StepProgressBar.
-
-![Automation Id format for marker element](SfDataGrid_images/AutomationId_DataGrid.png)
-
 
 The following code snippet demonstrates how to set the `AutomationId` to StepProgressBar's marker element.
 

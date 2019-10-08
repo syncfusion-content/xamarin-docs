@@ -28,6 +28,10 @@ The below table illustrates the predefined automation values set internally whic
 </tr>
 </table>
 
+The following screenshots illustrate the `AutomationId` values of markers elements for StepProgressBar.
+
+![Automation Id format for marker element](overview_images/AutomationId_StepProgressBar.png)
+
 The following code snippet demonstrates how to set the `AutomationId` to StepProgressBar's marker element.
 
 {% tabs %}
@@ -76,10 +80,10 @@ Refer to the following code snippet to access the marker elements of StepProgres
 public void StepProgressBar_AutomationId()
 {
 
-   // To tap group expand and collapse icon
+   // To tap the first step marker.
    App.Tap("SyncfusionStepMarker Step");
 
-   // To apply sorting 
+   // To tap the second step marker.
    App.Tap("SyncfusionStepMarker1 Step");
 
 }

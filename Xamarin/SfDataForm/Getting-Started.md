@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started | SfDataForm | Xamarin | Syncfusion
-description: Getting started with SfDataForm.
+description: Learn here about getting started with Syncfusion Xamarin DataForm (SfDataForm) control and more details..
 platform: xamarin
 control: SfDataForm
 documentation: ug

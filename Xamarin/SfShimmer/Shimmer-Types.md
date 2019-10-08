@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion.Xamarin.Forms Shimmer types
-description: Different Shimmer types available in Essential Xamarin.forms Shimmer.
+description: Different built-in Shimmer types and Custom view support available in Essential Xamarin.forms Shimmer.
 platform: xamarin
 control: SfShimmer
 documentation: ug
@@ -164,4 +164,4 @@ You can customize the shimmer using your own view using the [`CustomView`](https
 
 ![Shimmer Custom View for Xamarin.Forms](Shimmer-Types_images/CustomView.gif)
 
-N> Currently, [`CustomView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~CustomView.html) will support only in Android.
+N> For using [`CustomView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~CustomView.html) in iOS, please set WaveColor as the BackgroundColor of Shimmer.

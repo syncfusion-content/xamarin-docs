@@ -6534,7 +6534,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of tool bar item background in image editor when it is pressed state. 
+            Color of tool bar item background in image editor when it is in pressed state. 
             <br/>
             <br/>
         </td>
@@ -6586,7 +6586,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of delete background in image editor when it is pressed.   
+            Color of delete background in image editor when it is in pressed state.   
             <br/>
             <br/>
         </td>
@@ -6690,7 +6690,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of Text previewer window button background in Image editor when it is pressed.     
+            Color of Text previewer window button background in Image editor when it is in pressed state.     
             <br/>
             <br/>
         </td>

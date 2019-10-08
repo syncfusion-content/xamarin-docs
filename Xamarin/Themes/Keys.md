@@ -6449,7 +6449,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="3">
+        <td rowspan="22">
             SfImageEditorStyles  
             <br/>
             <br/>

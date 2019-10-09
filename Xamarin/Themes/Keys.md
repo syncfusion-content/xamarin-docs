@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Theme dynamic Keys for Syncfusion Controls
+title: About Keys for Syncfusion Controls | Syncfusion
 description: This section contains the details about the keys which are mapped to the UI elements of all the controls
 platform: xamarin
 control: General
@@ -5327,6 +5327,19 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Change the color of month header text(Jan,Feb,etc) in calendar year view.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+
+     <tr>
+    <td>
+            SfCalendarAgendaSelectedDateColor          
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Change the color of agenda view Date text(12 Tue, 13 Wed, 14 Thu) in calendar month view.
             <br/>
             <br/>
         </td>

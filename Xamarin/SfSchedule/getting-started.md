@@ -1,7 +1,7 @@
 ---   
 layout: post   
 title: Getting Started | SfSchedule | Xamarin | Syncfusion   
-description: A quick tour to initial users on Syncfusion SfSchedule control for Xamarin.Forms platform   
+description: Learn here about getting started with Syncfusion Xamarin Schedule (SfSchedule) control and more details. 
 platform: xamarin   
 control: SfSchedule   
 documentation: ug   
@@ -40,11 +40,11 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfSchedule.Android.dll<br/>Syncfusion.SfSchedule.XForms.Android.dll<br/>Syncfusion.SfSchedule.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfSchedule.XForms.Android.dll<br/>Syncfusion.SfSchedule.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfSchedule.iOS.dll<br/>Syncfusion.SfSchedule.XForms.iOS.dll<br/>Syncfusion.SfSchedule.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfSchedule.XForms.iOS.dll<br/>Syncfusion.SfSchedule.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion Calendar control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion calendar control for Xamarin.Forms platform
+description: Learn here about getting started with Syncfusion Xamarin Calendar (SfCalendar) control and more details.
 platform: Xamarin
 control: Calendar
 documentation: ug
@@ -40,11 +40,11 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfCalendar.Android.dll<br/>Syncfusion.SfCalendar.XForms.Android.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfCalendar.XForms.Android.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.SfCalendar.iOS.dll<br/>Syncfusion.SfCalendar.XForms.iOS.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfCalendar.XForms.iOS.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>

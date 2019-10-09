@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Layout | SfDataForm | Xamarin.Forms | Syncfusion
-description: Different editors and its customization  in SfDataForm.
+description: Learn about different editors and its customization in Syncfusion Xamarin DataForm (SfDataForm) control and more details.
 platform: xamarin
 control: SfDataForm
 documentation: UG
@@ -347,6 +347,30 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ![Setting DateFormat to data form date item in Xamarin.Forms DataForm](SfDataForm_images/Editors_DateFormat.png)
 
+### Setting title for date editor
+
+You can set title to the date editor by handling the [Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem~Title.html) property in [DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html). The default value of the property is `Choose Date`.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{   
+
+    if (e.DataFormItem != null && e.DataFormItem.Name == "BirthDate")
+    {       
+         if(Device.RuntimePlatform == Device.UWP)
+        {
+            (e.DataFormItem as DataFormDateItem).Title = "Select a date";
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+>N `Title` property is applicable only for XForms UWP platform.
+
 ### Setting MaximumDate and MinimumDate in date editor
 
 You can customize the maximum and minimum allowable dates in the `DatePicker` by setting [MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem~MaximumDate.html) and [MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem~MinimumDate.html) in the [DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html) respectively.
@@ -408,6 +432,30 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endtabs %}
 
 ![Setting time format to data form time item in Xamarin.Forms DataForm](SfDataForm_images/Editors_TimeFormat.jpg)
+
+### Setting title for time editor
+
+You can set title to the time editor by handling the [Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem~Title.html) property in [DataFormTimeItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem.html). The default value of this property is `Choose Time`.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+
+private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDataFormItemEventArgs e)
+{   
+
+    if (e.DataFormItem != null && e.DataFormItem.Name == "BirthTime")
+    {
+        if(Device.RuntimePlatform == Device.UWP)
+        {
+            (e.DataFormItem as DataFormTimeItem).Title = "Select time of birth";
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+>N `Title` property is applicable only for XForms UWP platform.
 
 ## Segment editor
 
@@ -1245,6 +1293,36 @@ The custom prompt character can be set using the [PromptChar](https://help.syncf
 {% endtabs %}
 
 ![Loading masked edit text editor in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-maskededittexteditor.png)
+
+### Show password character
+The [MaskedTextEditor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.Editors.DataFormMaskedEditTextEditor.html) supports to work as a password text box when setting a character to the [PasswordChar](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~PasswordChar.html) property of [DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html).
+
+{% tabs %}
+{% highlight c# %}
+(e.DataFormItem as DataFormMaskedEditTextItem).PasswordChar = '*'; 
+{% endhighlight %}
+{% endtabs %}
+
+### Password Delay
+When providing password character, you can show the typed character with some delay using the [EnablePasswordDelay](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~EnablePasswordDelay.html) property in [DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html). When enabling the EnablePasswordDelay property, the typed character will be displayed for a few seconds before it is converted to the password character.
+
+{% tabs %}
+{% highlight c# %}
+(e.DataFormItem as DataFormMaskedEditTextItem).PasswordChar = '*'; 
+(e.DataFormItem as DataFormMaskedEditTextItem).EnablePasswordDelay = true; 
+{% endhighlight %}
+{% endtabs %}
+
+### Password delay duration
+When `PasswordDelay` is enabled, you can handle the duration of the displaying typed character using the [PasswordDelayDuration](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem~PasswordDelayDuration.html) property in [DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html).
+
+{% tabs %}
+{% highlight c# %}
+(e.DataFormItem as DataFormMaskedEditTextItem).PasswordChar = '*'; 
+(e.DataFormItem as DataFormMaskedEditTextItem).EnablePasswordDelay = true; 
+(e.DataFormItem as DataFormMaskedEditTextItem).PasswordDelayDuration  = 2; 
+{% endhighlight %}
+{% endtabs %}
 
 ## AutoComplete editor
 

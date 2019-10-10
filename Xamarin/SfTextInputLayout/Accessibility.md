@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutomationId for inner elements of Syncfusion Text Input Layout
-description: How to set the AutomationId for inner elements of Essential Xamarin.Forms Text Input Layout control 
+description: How to set a qualified AutomationId for inner elements of Essential Xamarin.Forms Text Input Layout control
 platform: Xamarin
 control: SfTextInputLayout
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutomationId for inner elements of Syncfusion NumericUpDown
-description: How to set a qualified AutomationId for inner elements of essential Xamarin.Forms numeric up down control.
+description: How to set AutomationId for inner elements(up and down buttons) of essential Xamarin.Forms numeric up down control.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug

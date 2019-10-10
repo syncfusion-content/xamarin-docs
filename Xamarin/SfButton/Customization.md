@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization for Syncfusion Essential Xamarin.Forms SfButton
-description: How to customize the appearance of Xamarin.Forms SfButton 
+description: Learn how to customize the appearance of Text, Image, Background, CornerRadius, and Gradient in Xamarin.Forms SfButton 
 platform: xamarin.forms
 control: sfbutton
 documentation: ug

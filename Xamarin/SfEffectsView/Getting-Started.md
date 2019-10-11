@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion EffectsView control in Xamarin.Forms
-description: How to initialze an Syncfusion EffectsView control in Xamarin.Forms.
+description: The SfEffectsView is a container control that and this provided how to initialze Syncfusion EffectsView control in Xamarin.Forms.
 platform: xamarin
 control: SfEffectsView
 documentation: ug

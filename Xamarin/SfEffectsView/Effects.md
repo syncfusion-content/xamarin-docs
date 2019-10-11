@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Effects in Syncfusion EffectsView control in Xamarin.Forms
-description: Different effects available in Syncfusion EffectsView control in Xamarin.Forms.
+description: This section describes the different effects available in Syncfusion EffectsView control in Xamarin.Forms.
 platform: xamarin
 control: SfEffectsView
 documentation: ug

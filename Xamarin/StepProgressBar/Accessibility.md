@@ -13,22 +13,7 @@ StepProgressBar supports built-in [AutomationId](https://docs.microsoft.com/en-g
 
 ## StepProgressBar
 
-The below table illustrates the predefined automation values set internally which can be used to identify the StepProgressBar's marker element.
-
-<table>
-<tr>
-<th>Element</th>
-<th>Value</th>
-<th>Example</th>
-</tr>
-<tr>
-<td>Header Row</td>
-<td>"Step"</td>
-<td>Step</td>
-</tr>
-</table>
-
-The following screenshots illustrate the `AutomationId` values of markers elements for StepProgressBar.
+The predefined automation value `Step` is set internally to identify the StepProgressBar's marker element. The following screenshots illustrate the `AutomationId` values of markers elements for StepProgressBar.
 
 ![Automation Id format for marker element](overview_images/AutomationId_StepProgressBar.png)
 

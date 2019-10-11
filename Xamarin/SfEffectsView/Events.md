@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Syncfusion EffectsView control in Xamarin.Forms
-description: How to hook the event in Syncfusion EffectsView
+description: How to hook the event in Syncfusion EffectsView control in Xamarin.Forms
 platform: xamarin
 control: SfEffectsView
 documentation: ug

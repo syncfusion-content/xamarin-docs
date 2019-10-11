@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Interactions in Syncfusion EffectsView control in Xamarin.Forms
-description: How to set effects on different interactions in effectsview
+description: How to set effects on different interactions in effectsview in Xamarin.Forms
 platform: xamarin
 control: SfEffectsView
 documentation: ug

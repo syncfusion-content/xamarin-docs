@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Methods in Syncfusion EffectsView control in Xamarin.Forms
-description: How to call the methods to apply and reset effects programatically.
+description: How to call the methods to apply and reset effects programatically in EffectsView.
 platform: xamarin
 control: SfEffectsView
 documentation: ug

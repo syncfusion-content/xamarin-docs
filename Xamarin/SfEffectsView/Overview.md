@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview of Syncfusion EffectsView
+title: Overview of Syncfusion EffectsView control in Xamarin.Forms
 description: The SfEffectsView is a container control that provides modern effects such as ripple, selection, scaling, and rotation out of the box.
 platform: xamarin
 control: SfEffectsView

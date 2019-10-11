@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion EffectsView
+title: Getting Started with Syncfusion EffectsView control in Xamarin.Forms
 description: How to initialze an SfEffectsView.
 platform: xamarin
 control: SfEffectsView

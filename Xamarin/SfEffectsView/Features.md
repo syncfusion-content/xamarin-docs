@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Features in Syncfusion EffectsView
+title: Features in Syncfusion EffectsView control in Xamarin.Forms
 description: How to use the additional features in effectsview
 platform: xamarin
 control: SfEffectsView

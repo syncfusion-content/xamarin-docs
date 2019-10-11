@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Events in Syncfusion EffectsView
+title: Events in Syncfusion EffectsView control in Xamarin.Forms
 description: How to hook the event in Syncfusion EffectsView
 platform: xamarin
 control: SfEffectsView

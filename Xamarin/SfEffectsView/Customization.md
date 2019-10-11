@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization of Syncfusion EffectsView
+title: Customization of Syncfusion EffectsView control in Xamarin.Forms
 description: How to customize effectsview
 platform: xamarin
 control: SfEffectsView

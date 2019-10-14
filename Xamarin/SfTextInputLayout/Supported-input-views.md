@@ -132,6 +132,36 @@ inputLayout.InputView = new SfNumericTextBox() { Value = 123.45, FormatString="c
 
 ![Numerictextbox](Supported-input-views-images/textInput_input_img4.PNG)
 
+
+## Numeric up down
+
+To initialize the numeric up down control and launch it in each platform, refer to the [getting started with numeric up down](https://help.syncfusion.com/xamarin/sfnumericupdown/getting-started) documentation.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<inputLayout:SfTextInputLayout
+   Hint="Amount"
+   HelperText="Required *">
+   <numeric:SfNumericUpDown 
+   x:Name="numericUpDown" 
+   Value="5"/>
+</inputLayout:SfTextInputLayout>  
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Amount"; 
+inputLayout.HelperText = "Required *"
+inputLayout.InputView = new SfNumericUpDown() { Value = 5}; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Autocomplete
 
 To initialize the Autocomplete control and launch it in each platform, refer to the [getting started with auto complete](https://help.syncfusion.com/xamarin/sfautocomplete/getting-started) documentation.

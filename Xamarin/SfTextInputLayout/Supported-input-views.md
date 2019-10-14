@@ -143,7 +143,7 @@ To initialize the numeric up down control and launch it in each platform, refer 
 
 <inputLayout:SfTextInputLayout
    Hint="Amount"
-   HelperText="Required *">
+   HelperText="Maximum limit is $10,000.">
    <numeric:SfNumericUpDown 
    x:Name="numericUpDown" 
    Value="5"/>
@@ -155,7 +155,7 @@ To initialize the numeric up down control and launch it in each platform, refer 
 
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Amount"; 
-inputLayout.HelperText = "Required *"
+inputLayout.HelperText = "Maximum limit is $10,000."
 inputLayout.InputView = new SfNumericUpDown() { Value = 5}; 
 
 {% endhighlight %}

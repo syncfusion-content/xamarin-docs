@@ -297,6 +297,29 @@ public class CustomStyle : DataGridStyle
 The following screenshot shows the final outcome upon execution of the above code:
 ![DataGrid with header border customization](SfDataGrid_images/HeaderBorderCustomization_Both.png)
 
+## Summary row border customization
+
+SfDataGrid allows you to show or hide the vertical border lines in summary rows when [ShowSummaryInRow](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSummaryRow~ShowSummaryInRow.html) is false. Override the [DataGridStyle.GetSummaryVerticalLineVisibility](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetSummaryVerticalLineVisibility.html) method to customize summary row borders in SfDataGrid.
+
+{% highlight c# %}
+//Apply custom style to SfDataGrid from code
+dataGrid.GridStyle = new CustomStyle ();
+{% endhighlight %}
+
+{% highlight c# %}
+//Custom Style class
+public class CustomStyle : DataGridStyle
+{
+    public CustomStyle ()
+    {
+    }
+    public override bool GetSummaryVerticalLineVisibility()
+    {
+        return true;
+    }
+}
+{% endhighlight %}
+
 ## Customizing sort icons in the header
 
 Any desired image can be loaded as the sort indicator using the [GetHeaderSortIndicatorDown](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorDown.html) and [GetHeaderSortIndicatorUp](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorUp.html) overriding from the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) class. To change the sort indicators, follow the code example:

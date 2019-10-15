@@ -11,6 +11,34 @@ documentation: ug
 
 The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides support to customize the corner radius, animation duration, color, and more. This section explains how to customize the effects view control.
 
+
+## CornerRadius
+
+The [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~CornerRadius.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the corner radius of the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<syncEffectsView:SfEffectsView CornerRadius="0,25">
+    ...
+</syncEffectsView:SfEffectsView>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var effectsView = new SfEffectsView
+{
+    CornerRadius = new Thickness(0, 25)
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![EffectsView CornerRadius customization](Customization_images/EffectsView_CornerRadius.jpg)
+
 ## RippleAnimationDuration
 
 The [`RippleAnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~RippleAnimationDuration.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the duration of ripple animation.
@@ -243,33 +271,6 @@ var effectsView = new SfEffectsView
 {% endtabs %}
 
 ![Selection Color customization](Customization_images/EffectsView_Selection.png)
-
-## CornerRadius
-
-The [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~CornerRadius.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) is used to customize the corner radius of the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-
-<syncEffectsView:SfEffectsView CornerRadius="0,25">
-    ...
-</syncEffectsView:SfEffectsView>
-
-{% endhighlight %}
-
-{% highlight C# %} 
-
-var effectsView = new SfEffectsView
-{
-    CornerRadius = new Thickness(0, 25)
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![EffectsView CornerRadius customization](Customization_images/EffectsView_CornerRadius.jpg)
 
 ## Angle
 

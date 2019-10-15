@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Features in Syncfusion EffectsView
-description: Different effects available in EffectsView
+title: Effects in Syncfusion EffectsView control in Xamarin.Forms
+description: This section describes the different effects available in Syncfusion EffectsView control in Xamarin.Forms.
 platform: xamarin
 control: SfEffectsView
 documentation: ug
@@ -19,113 +19,27 @@ The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView TouchDownEffects="Highlight" HighlightColor="#FF0000">                                                  
-                   <Grid BackgroundColor="White">
-                       
-                       <Grid.ColumnDefinitions>
-                           <ColumnDefinition Width="3*"/>
-                           <ColumnDefinition Width="7*"/>
-                       </Grid.ColumnDefinitions>
-   
-                       <Grid.RowDefinitions>
-                           <RowDefinition />
-                           <RowDefinition />
-                           <RowDefinition />
-                           <RowDefinition />
-                       </Grid.RowDefinitions>
-   
-                       <Image Source="Person.png" Margin="7" 
-                              Grid.RowSpan="4"/>
-                       <Label Text="Laura Steffi" Grid.Column="1"
-                              FontAttributes="Bold"  Grid.Row="0"  VerticalTextAlignment="Center"
-                              Margin="15,0,0,0" Font="17"/>
-                       <Label Text="Data Science Analyst" Grid.Column="1" Grid.Row="1" 
-                              VerticalTextAlignment="Center" FontAttributes="Bold"
-                              Margin="15,0,0,0" Font="14"/>
-                       <Label Text="laurasteffi@gmail.com" Grid.Column="1" Grid.Row="2"
-                              VerticalTextAlignment="Center" Margin="15,0,0,0" Font="14"/>
-                       <Label Text="011-253-321" Grid.Column="1" Grid.Row="3" 
-                              VerticalTextAlignment="Center" Margin="15,0,0,0" Font="14"/>
-                   </Grid>
-           </sfEffectsView:SfEffectsView>
+<syncEffectsView:SfEffectsView
+    TouchDownEffects="Highlight"
+    HighlightColor="#FF0000">
+    ...
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView
-            {
-                HighlightColor = Color.FromHex("#FF0000"),
-                TouchDownEffects = SfEffects.Highlight,
-            };
-
-            var grid = new Grid
-            {
-                BackgroundColor = Color.White,
-                ColumnDefinitions = new ColumnDefinitionCollection()
-                {
-                    new ColumnDefinition{ Width = new GridLength(3, GridUnitType.Star) },
-                    new ColumnDefinition{ Width = new GridLength(7, GridUnitType.Star) }
-                },
-            };
-
-            var image = new Image
-            {
-                Source = "Person.png",
-                Margin = 7
-            };
-
-            var name = new Label
-            {
-                Text = "Laura Steffi",
-                FontAttributes = FontAttributes.Bold,
-                VerticalTextAlignment = TextAlignment.Center,
-                Margin = new Thickness(15,0,0,0),
-                FontSize = 17
-            };
-
-            var designation = new Label
-            {
-                Text = "Data Science Analyst",
-                FontAttributes = FontAttributes.Bold,
-                VerticalTextAlignment = TextAlignment.Center,
-                Margin = new Thickness(15, 0, 0, 0),
-                FontSize = 14
-            };
-
-            var email = new Label
-            {
-                Text = "laurasteffi@gmail.com",
-                FontAttributes = FontAttributes.Bold,
-                VerticalTextAlignment = TextAlignment.Center,
-                Margin = new Thickness(15, 0, 0, 0),
-                FontSize = 14
-            };
-
-            var phone = new Label
-            {
-                Text = "011-253-321",
-                FontAttributes = FontAttributes.Bold,
-                VerticalTextAlignment = TextAlignment.Center,
-                Margin = new Thickness(15, 0, 0, 0),
-                FontSize = 14
-            };
-
-            grid.Children.Add(image, 0, 0);
-            Grid.SetRowSpan(image, 4);
-            grid.Children.Add(name, 1, 0);
-            grid.Children.Add(designation, 1, 1);
-            grid.Children.Add(email, 1, 2);
-            grid.Children.Add(phone, 1, 3);
-
-            effectsView.Content = grid;
-            this.Content = effectsView;
+var effectsView = new SfEffectsView
+{
+    TouchDownEffects = SfEffects.Highlight,
+    HighlightColor = Color.FromHex("#FF0000")
+};
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Highlight effect](Effects_images/Highlight.gif)
+![Highlight effect](Effects_images/EffectsView_Highlight.png)
 
 ## Ripple
 
@@ -135,39 +49,24 @@ The `SfEffects.Ripple` is a growable circle, which is initially placed on the ta
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView HorizontalOptions="Center" TouchDownEffects="Ripple">
-                <Label BackgroundColor="#D3D2D5" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center" Text="Ripple" VerticalOptions="Center" VerticalTextAlignment="Center" WidthRequest="90" />
-            </sfEffectsView:SfEffectsView>
+<syncEffectsView:SfEffectsView TouchDownEffects="Ripple">
+    ...
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView()
-            {
-                TouchDownEffects = SfEffects.Ripple,
-                HorizontalOptions = LayoutOptions.Center,
-                Content = new Label()
-                {
-                    Text = "Ripple",
-                    HeightRequest = 50,
-                    WidthRequest = 90,
-                    BackgroundColor = Color.FromHex("#D3D2D5"),
-                    FontAttributes = FontAttributes.Bold,
-                    FontSize = 18,
-                    HorizontalTextAlignment = TextAlignment.Center,
-                    VerticalTextAlignment = TextAlignment.Center,
-                    VerticalOptions = LayoutOptions.Center,
-                }
-            };
-            this.Content = effectsView;
+var effectsView = new SfEffectsView()
+{
+    TouchDownEffects = SfEffects.Ripple,
+};
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Ripple effect](Effects_images/Ripple.png)
-
+![Ripple effect](Effects_images/EffectsView_Ripple.gif)
 
 ## Scale
 
@@ -177,34 +76,31 @@ The `SfEffects.Ripple` is a growable circle, which is initially placed on the ta
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView TouchDownEffects="None" TouchUpEffects="None"
-                                         LongPressEffects="Scale" ScaleFactor="0.85">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
-            </sfEffectsView:SfEffectsView>
+<syncEffectsView:SfEffectsView
+    ScaleFactor="0.85"
+    TouchDownEffects="None"
+    TouchUpEffects="None"
+    LongPressEffects="Scale">
+    ...
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView
-            {
-                ScaleFactor = 0.85,
-                TouchDownEffects = SfEffects.None,
-                TouchUpEffects = SfEffects.None,
-                LongPressEffects = SfEffects.Scale,
-                Content = new Image()
-                {
-                    Source = "Biscuits.png",
-                    Aspect = Aspect.Fill
-                }
-            };
-            this.Content = effectsView;
+var effectsView = new SfEffectsView
+{
+    ScaleFactor = 0.85,
+    TouchDownEffects = SfEffects.None,
+    TouchUpEffects = SfEffects.None,
+    LongPressEffects = SfEffects.Scale
+};
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Scale effect](Effects_images/Scale.gif)
+![Scale effect](Effects_images/EffectsView_Scale.png)
 
 ## Selection
 
@@ -214,31 +110,27 @@ The `SfEffects.Ripple` is a growable circle, which is initially placed on the ta
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView SelectionColor="#FF0000" LongPressEffects="Selection">
-                <Image Source="Biscuits.png" Aspect="Fill"/>
-            </sfEffectsView:SfEffectsView>
+<syncEffectsView:SfEffectsView
+    LongPressEffects="Selection"
+    SelectionColor="#FF0000">
+    ...
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView
-            {
-                SelectionColor = Color.FromHex("#FF0000"),
-                LongPressEffects = SfEffects.Selection,
-                Content = new Image()
-                {
-                    Source = "Biscuits.png",
-                    Aspect = Aspect.Fill
-                }
-            };
-            this.Content = effectsView;
+var effectsView = new SfEffectsView
+{
+    LongPressEffects = SfEffects.Selection,
+    SelectionColor = Color.FromHex("#FF0000")
+};
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Selection effect](Effects_images/SelectionEffect.gif)
+![Selection effect](Effects_images/EffectsView_Selection.png)
 
 ## Rotation
 
@@ -248,25 +140,21 @@ The `SfEffects.Ripple` is a growable circle, which is initially placed on the ta
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView Angle="180" TouchDownEffects="Rotation">
-                <Image Source="Arrow.png" HeightRequest="70" WidthRequest="70"/>
-            </sfEffectsView:SfEffectsView>
+<syncEffectsView:SfEffectsView
+    TouchDownEffects="Rotation"
+    Angle="180">
+    ...
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView
-            {
-                Angle = 180,
-                TouchDownEffects = SfEffects.Rotation,
-                Content = new Image()
-                {
-                    Source = "Arrow.png",
-                    Aspect = Aspect.Fill
-                }
-            };
-            this.Content = effectsView;
+var effectsView = new SfEffectsView
+{
+    TouchDownEffects = SfEffects.Rotation,
+    Angle = 180,
+};
 
 {% endhighlight %}
 
@@ -282,28 +170,18 @@ The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView TouchDownEffects="Highlight,Ripple">
-                <Label Text="Ripple" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" />
-            </sfEffectsView:SfEffectsView>
+<syncEffectsView:SfEffectsView TouchDownEffects="Highlight,Ripple">
+    ...
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView()
-            {
-                TouchDownEffects = SfEffects.Highlight | SfEffects.Ripple,
-                Content = new Label()
-                {
-                    Text = "Ripple",
-                    FontAttributes = FontAttributes.Bold,
-                    FontSize = 18,
-                    HeightRequest = 50,
-                    HorizontalTextAlignment = TextAlignment.Center,
-                    VerticalTextAlignment = TextAlignment.Center,
-                }
-            };
-            this.Content = effectsView;
+var effectsView = new SfEffectsView()
+{
+    TouchDownEffects = SfEffects.Highlight | SfEffects.Ripple
+};
 
 {% endhighlight %}
 
@@ -315,29 +193,21 @@ The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView TouchDownEffects="Highlight" LongPressEffects="Selection">
-                <Label Text="Sign up" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" />
-            </sfEffectsView:SfEffectsView>
+<syncEffectsView:SfEffectsView
+    LongPressEffects="Selection"
+    TouchDownEffects="Highlight">
+    ...
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView()
-            {
-                TouchDownEffects = SfEffects.Highlight,
-                LongPressEffects = SfEffects.Selection,
-                Content = new Label()
-                {
-                    Text = "Sign up",
-                    HeightRequest = 50,
-                    FontAttributes = FontAttributes.Bold,
-                    FontSize = 18,
-                    HorizontalTextAlignment = TextAlignment.Center,
-                    VerticalTextAlignment = TextAlignment.Center,
-                }
-            };
-            this.Content = effectsView;
+var effectsView = new SfEffectsView()
+{
+    LongPressEffects = SfEffects.Selection,
+    TouchDownEffects = SfEffects.Highlight
+};
 
 {% endhighlight %}
 
@@ -349,29 +219,21 @@ The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView TouchDownEffects="Ripple" TouchUpEffects="Selection">
-                <Label Text="Sign up" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" />
-            </sfEffectsView:SfEffectsView>
+<syncEffectsView:SfEffectsView
+    TouchDownEffects="Ripple"
+    TouchUpEffects="Selection">
+    ...
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView()
-            {
-                TouchDownEffects = SfEffects.Ripple,
-                TouchUpEffects = SfEffects.Selection,
-                Content = new Label()
-                {
-                    Text = "Sign up",
-                    HeightRequest = 50,
-                    FontAttributes = FontAttributes.Bold,
-                    FontSize = 18,
-                    HorizontalTextAlignment = TextAlignment.Center,
-                    VerticalTextAlignment = TextAlignment.Center,
-                }
-            };
-            this.Content = effectsView;
+var effectsView = new SfEffectsView()
+{
+    TouchDownEffects = SfEffects.Ripple,
+    TouchUpEffects = SfEffects.Selection
+};
 
 {% endhighlight %}
 
@@ -383,29 +245,21 @@ The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView TouchDownEffects="Highlight,Ripple" LongPressEffects="Selection">
-                <Label Text="Sign up" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" />
-            </sfEffectsView:SfEffectsView>
+<syncEffectsView:SfEffectsView
+    LongPressEffects="Selection"
+    TouchDownEffects="Highlight,Ripple">
+    ...
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView()
-            {
-                TouchDownEffects = SfEffects.Highlight | SfEffects.Ripple,
-                LongPressEffects = SfEffects.Selection,
-                Content = new Label()
-                {
-                    Text = "Sign up",
-                    HeightRequest = 50,
-                    FontAttributes = FontAttributes.Bold,
-                    FontSize = 18,
-                    HorizontalTextAlignment = TextAlignment.Center,
-                    VerticalTextAlignment = TextAlignment.Center,
-                }
-            };
-            this.Content = effectsView;
+var effectsView = new SfEffectsView()
+{
+    LongPressEffects = SfEffects.Selection,
+    TouchDownEffects = SfEffects.Highlight | SfEffects.Ripple,
+};
 
 {% endhighlight %}
 
@@ -417,28 +271,18 @@ The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% highlight xaml %} 
 
-            <sfEffectsView:SfEffectsView LongPressEffects="Scale,Selection">
-                <Label Text="Sign up" FontAttributes="Bold" FontSize="18" HeightRequest="50" HorizontalTextAlignment="Center"  VerticalTextAlignment="Center" />
-            </sfEffectsView:SfEffectsView>
+ <syncEffectsView:SfEffectsView LongPressEffects="Scale,Selection">
+     ...
+</syncEffectsView:SfEffectsView>
 
 {% endhighlight %}
 
 {% highlight C# %} 
 
-            var effectsView = new SfEffectsView()
-            {
-                LongPressEffects = SfEffects.Scale | SfEffects.Selection,
-                Content = new Label()
-                {
-                    Text = "Sign up",
-                    HeightRequest = 50,
-                    FontAttributes = FontAttributes.Bold,
-                    FontSize = 18,
-                    HorizontalTextAlignment = TextAlignment.Center,
-                    VerticalTextAlignment = TextAlignment.Center,
-                }
-            };
-            this.Content = effectsView;
+var effectsView = new SfEffectsView()
+{
+    LongPressEffects = SfEffects.Scale | SfEffects.Selection
+};
 
 {% endhighlight %}
 

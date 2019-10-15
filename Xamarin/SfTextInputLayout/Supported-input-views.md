@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion supported input views
-description: How to add supported input views in text input layout.
+description: This section describes how to add supported input views in Syncfusion TextInputLayout control in Xamarin.Forms.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
@@ -131,6 +131,36 @@ inputLayout.InputView = new SfNumericTextBox() { Value = 123.45, FormatString="c
 
 
 ![Numerictextbox](Supported-input-views-images/textInput_input_img4.PNG)
+
+
+## Numeric up down
+
+To initialize the numeric up down control and launch it in each platform, refer to the [getting started with numeric up down](https://help.syncfusion.com/xamarin/sfnumericupdown/getting-started) documentation.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<inputLayout:SfTextInputLayout
+   Hint="Amount"
+   HelperText="Maximum limit is $10,000.">
+   <numeric:SfNumericUpDown 
+   x:Name="numericUpDown" 
+   Value="5"/>
+</inputLayout:SfTextInputLayout>  
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Amount"; 
+inputLayout.HelperText = "Maximum limit is $10,000."
+inputLayout.InputView = new SfNumericUpDown() { Value = 5}; 
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Autocomplete
 

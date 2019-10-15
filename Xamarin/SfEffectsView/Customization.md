@@ -185,7 +185,7 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![Highlight Color customization](Customization_images/EffectsView_Highlight.jpg)
+![Highlight Color customization](Customization_images/EffectsView_Highlight.png)
 
 ## RippleColor
 
@@ -242,7 +242,7 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-![Selection Color customization](Customization_images/EffectsView_Selection.jpg)
+![Selection Color customization](Customization_images/EffectsView_Selection.png)
 
 ## CornerRadius
 

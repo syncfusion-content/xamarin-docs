@@ -120,7 +120,7 @@ The `SingleCharacter` is used for displaying the first character in the string y
 
 ### DoubleCharacter
 
-The `DoubleCharacter` is used for displaying a two-characters text you have set in the `Initials` property. If the initials contain one word, it shows the first and last letters of the single string. If it contains two or more words, it displays the first letter of the first string and last letter of the second or last string.
+The `DoubleCharacter` is used for displaying a two-characters text you have set in the `Initials` property. If the initials contain one word, it shows the first and last letters of the single string. If it contains two or more words, it displays the first letter of the first string and first letter of the last string.
 
 {% tabs %}
 {% highlight xaml %}

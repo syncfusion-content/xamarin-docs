@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Format string in Syncfusion RangeSlider control for Xamarin.Forms
-description: Learn how to provide the formatting string support for the Value in RangeSlider control.
+description: Learn how to provide the formatting string support for the Value in xamarin.Forms RangeSlider control.
 platform: Xamarin
 control: RangeSlider
 documentation: ug

@@ -19,7 +19,7 @@ SfAutoComplete provides a way to handle the selected item using the following pr
 
 ## SelectedIndex
 
-You can get or set the index of the selected item using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~SelectedIndexProperty.html) property. It can be applicable only when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~MultiSelectModeProperty.html) is None.
+You can get or set the index of the selected item using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~SelectedIndexProperty.html) property. It can be applicable only when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~MultiSelectModeProperty.html) is None. SelectedIndex will accept a single integer value.
 
 ### How to set the index of item to be selected
 
@@ -216,7 +216,7 @@ namespace AutocompleteSample
 
 ## SelectedIndices
 
-You can get or set the indices of the selected items using the [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~SelectedIndicesProperty.html) property. It can be applicable when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~MultiSelectModeProperty.html) is in either Token or Delimiter.
+You can get or set the indices of the selected items using the [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~SelectedIndicesProperty.html) property. It can be applicable when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~MultiSelectModeProperty.html) is in either Token or Delimiter. SelectedIndices will accept collection of integer.
 
 ### How to set the indices of items 
 

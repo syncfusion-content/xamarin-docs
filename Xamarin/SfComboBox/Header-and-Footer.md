@@ -42,35 +42,46 @@ You can provide Header content for header at the top of the ComboBox's Suggestio
 
 {% highlight c# %}
 
-StackLayout layout = new StackLayout() 
-{ 
-    VerticalOptions = LayoutOptions.Start, 
-    HorizontalOptions = LayoutOptions.Start, 
-    Padding = new Thickness(30) 
-};
+            StackLayout layout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
+            Label label2 = new Label()
+            {
+                FontSize = 20,
+                VerticalTextAlignment = TextAlignment.Center,
+                HorizontalTextAlignment = TextAlignment.Center,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                TextColor = Color.FromHex("#006bcd")
+            };
 
-SfComboBox comboBox = new SfComboBox();
-comboBox.HeightRequest = 40;
-comboBox.DataSource = countryNames;
-comboBox.IsEditableMode = true;
-comboBox.AllowFiltering = true;
-comboBox.ShowDropDownHeaderView = true;
-//Set the height of the Header View
-comboBox.DropDownHeaderViewHeight = 50;
-comboBox.ValueChanged += (object sender, Syncfusion.XForms.ComboBox.ValueChangedEventArgs e) =>
-{
-    label2.Text = "Search for " + e.Value;
-}
+            List<String> countryNames = new List<String>();
+            countryNames.Add("Uganda");
+            countryNames.Add("Ukraine");
+            countryNames.Add("United Arab Emirates");
+            countryNames.Add("United Kingdom");
+            countryNames.Add("United States");
 
-layout.Children.Add(comboBox); 
-Content = layout;
+            SfComboBox comboBox = new SfComboBox();
+            comboBox.HeightRequest = 40;
+            comboBox.DataSource = countryNames;
+            comboBox.IsEditableMode = true;
+            comboBox.AllowFiltering = true;
+            comboBox.ShowDropDownHeaderView = true;
+            //Set the height of the Header View
+            comboBox.DropDownHeaderViewHeight = 50;
+            comboBox.ValueChanged += (object sender, Syncfusion.XForms.ComboBox.ValueChangedEventArgs e) =>
+            {
+                label2.Text = "Search for " + e.Value;
+            };
+
+            comboBox.DropDownHeaderView = label2;
+            layout.Children.Add(comboBox);
+            this.Content = layout;
 
 {% endhighlight %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Various customization in Syncfusion AvatarView control.  
-description: Learn how to change the Avatartype in AvatarView.
+description: Learn what are the types in AvatarType and how to set value for the Avatartype in xamarin forms AvatarView.
 platform: Xamarin
 control: SfAvatarView
 documentation: ug

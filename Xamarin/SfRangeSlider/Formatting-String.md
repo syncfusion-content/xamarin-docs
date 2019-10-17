@@ -46,7 +46,7 @@ this.Content = stack;
 {% endhighlight %}
 {% endtabs %}
 
-![](images/FormatString.png)
+![Label Format image](images/FormatString.png)
 
 
 ## Culture Localization
@@ -80,7 +80,7 @@ this.Content = rangeSlider;
 {% endhighlight %}
 {% endtabs %}
 
-![](images/culture.png)
+![Culture localization image](images/culture.png)
 
 
 

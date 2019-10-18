@@ -470,7 +470,7 @@ namespace AutocompleteSample
 
 ## Avoid opening suggestion box
 
-To avoid the drop down open, you can set the `SuggestionBoxPlacement` API to None.
+To avoid opening the drop-down, you can set the `SuggestionBoxPlacement` API to None.
 
 {% tabs %}
 
@@ -562,7 +562,8 @@ namespace AutocompleteSample
 
 ## Retrieve the filter suggestion items
 
-Two ways to get the filtered suggestion items from SfAutoComplete. You can use the `FilteredItems` API in SfAutoComplete to access filtered suggestions items.
+There are two ways to get the filtered suggestion items from SfAutoComplete. 
+You can use the `FilteredItems` API in SfAutoComplete to access filtered suggestions items.
 
 {% tabs %}
 

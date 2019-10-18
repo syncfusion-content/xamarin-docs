@@ -19,7 +19,7 @@ SfAutoComplete provides a way to handle the selected item using the following pr
 
 ## SelectedIndex
 
-You can get or set the index of the selected item using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~SelectedIndexProperty.html) property. It can be applicable only when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~MultiSelectModeProperty.html) is None. SelectedIndex will accept a single integer value.
+You can get or set the index of the selected item using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~SelectedIndexProperty.html) property. It can be applicable only when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~MultiSelectModeProperty.html) is None. SelectedIndex will accept integer values.
 
 ### How to set the index of item to be selected
 

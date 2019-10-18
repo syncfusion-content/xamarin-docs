@@ -16,7 +16,7 @@ SfComboBox provides a way to handle the selected item using the following proper
 
 ## SelectedIndex
 
-You can get or set the index of the selected item using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndexProperty.html) property. It is applicable only when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~MultiSelectModeProperty.html) is set to None. SelectedIndex will accept a single integer value.
+You can get or set the index of the selected item using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndexProperty.html) property. It is applicable only when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~MultiSelectModeProperty.html) is set to None. SelectedIndex will accept integer values.
 
 ### Set the index of item to be selected
 

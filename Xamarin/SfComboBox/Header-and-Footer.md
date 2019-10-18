@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header and Footer in Syncfusion SfComboBox control for Xamarin.Forms
-description: This section describes how to enable  or disable Header and Footer and also how to give the view to the both Header and Footer in SfComboBox.
+description: This section describes how to enable Header and Footer and also how to give the view to the both Header and Footer in SfComboBox.
 platform: xamarin
 control: SfComboBox
 documentation: ug

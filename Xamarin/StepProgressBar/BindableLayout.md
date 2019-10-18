@@ -133,3 +133,5 @@ BindableLayout.SetItemsSource(sfStepProgressBar, ShipmentViewModel.ShipmentInfoC
                 </progressBar:SfStepProgressBar>
 
 {% endhighlight %}
+
+You can download the entire source of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Shipment_Tracking-237228452.zip)

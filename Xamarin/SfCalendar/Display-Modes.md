@@ -184,7 +184,7 @@ this.Content = calendar;
 
 N>
 * To disable the current day selection, use `TodaySelectionBackgroundColor` color as Transparent.
-* `DisabledBackgroundColor` only visible when set the MinDate, MaxDate, EnableDatesInPast for the calendar.
+* `DisabledBackgroundColor` added while calendar using MinDate, MaxDate and EnableDatesInPast properties.
 
 ### Month view border color customization
 

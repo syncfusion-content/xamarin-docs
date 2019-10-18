@@ -103,6 +103,43 @@ this.Content = border;
 
 ![borderwidth](images/Xamarin_Forms_BorderWidth.png)
 
+## Dashed Border
+
+You can render the border with dashes using the [`DashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Border.SfBorder~DashArray.html) property.
+
+{% tabs %}
+{% highlight xaml %}
+...
+xmlns:sys="clr-namespace:System;assembly=netstandard"
+...
+
+<border:SfBorder x:Name="border">
+    <border:SfBorder.DashArray>
+        <x:Array Type="{x:Type sys:Double}">
+            <sys:Double>3</sys:Double>
+            <sys:Double>4</sys:Double>
+        </x:Array>
+    </border:SfBorder.DashArray>
+    <Label Text="James Williamson" TextColor="Black" />
+</border:SfBorder>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfBorder border = new SfBorder();
+border.DashArray = new double[2] { 3, 4 };
+Label label = new Label();
+label.Text = "James Williamson";
+label.TextColor = Color.Black;
+border.Content = label;
+this.Content = border;
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![dashedborder](images/Xamarin_Forms_DashedBorder.png)
+
 ## Corner radius
 
 You can customize the corner radius of the border on four sides using the `CornerRadius` property with type as `Thickness`.

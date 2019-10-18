@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header and Footer in Syncfusion SfComboBox control for Xamarin.Forms
-description: Learn how to enable Header and Footer in SfComboBox
+description: This section describes how to enable Header and Footer and also how to give the view to the both Header and Footer in SfComboBox.
 platform: xamarin
 control: SfComboBox
 documentation: ug
@@ -12,7 +12,7 @@ You can provide header and footer views in the suggestion list in SfComboBox by 
 
 ## Header content
 
-You can provide Header content for header at the top of the ComboBox's Suggestion box. The `DropDownHeaderView` property is used to set the content of the header. The height of the header in the SfComboBox can be adjusted using the property `DropDownHeaderViewHeight` property.
+You can provide content for header at the top of the ComboBox's Suggestion box. The `DropDownHeaderView` property is used to set the content of the header. The height of the header in the SfComboBox can be adjusted using the `DropDownHeaderViewHeight` property.
 
 {% tabs %}
 
@@ -42,35 +42,46 @@ You can provide Header content for header at the top of the ComboBox's Suggestio
 
 {% highlight c# %}
 
-StackLayout layout = new StackLayout() 
-{ 
-    VerticalOptions = LayoutOptions.Start, 
-    HorizontalOptions = LayoutOptions.Start, 
-    Padding = new Thickness(30) 
-};
+            StackLayout layout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
 
-List<String> countryNames = new List<String>();
-countryNames.Add("Uganda");
-countryNames.Add("Ukraine");
-countryNames.Add("United Arab Emirates");
-countryNames.Add("United Kingdom");
-countryNames.Add("United States");
+            Label label2 = new Label()
+            {
+                FontSize = 20,
+                VerticalTextAlignment = TextAlignment.Center,
+                HorizontalTextAlignment = TextAlignment.Center,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                TextColor = Color.FromHex("#006bcd")
+            };
 
-SfComboBox comboBox = new SfComboBox();
-comboBox.HeightRequest = 40;
-comboBox.DataSource = countryNames;
-comboBox.IsEditableMode = true;
-comboBox.AllowFiltering = true;
-comboBox.ShowDropDownHeaderView = true;
-//Set the height of the Header View
-comboBox.DropDownHeaderViewHeight = 50;
-comboBox.ValueChanged += (object sender, Syncfusion.XForms.ComboBox.ValueChangedEventArgs e) =>
-{
-    label2.Text = "Search for " + e.Value;
-}
+            List<String> countryNames = new List<String>();
+            countryNames.Add("Uganda");
+            countryNames.Add("Ukraine");
+            countryNames.Add("United Arab Emirates");
+            countryNames.Add("United Kingdom");
+            countryNames.Add("United States");
 
-layout.Children.Add(comboBox); 
-Content = layout;
+            SfComboBox comboBox = new SfComboBox();
+            comboBox.HeightRequest = 40;
+            comboBox.DataSource = countryNames;
+            comboBox.IsEditableMode = true;
+            comboBox.AllowFiltering = true;
+            comboBox.ShowDropDownHeaderView = true;
+            //Set the height of the Header View
+            comboBox.DropDownHeaderViewHeight = 50;
+            comboBox.ValueChanged += (object sender, Syncfusion.XForms.ComboBox.ValueChangedEventArgs e) =>
+            {
+                label2.Text = "Search for " + e.Value;
+            };
+
+            comboBox.DropDownHeaderView = label2;
+            layout.Children.Add(comboBox);
+            this.Content = layout;
 
 {% endhighlight %}
 
@@ -78,11 +89,11 @@ Content = layout;
 
 ![Header Image](images/Header-and-Footer/Header.png)
 
-## Footer Content
+## Footer content
 
-You can provide content for footer at the bottom of the ComboBox's Suggestion box. The `DropDownFooterView` property is used to set the content for footer. The height of the Header in the SfComboBox can be adjusted using the `DropDownFooterViewHeight` property.
+You can provide content for footer at the bottom of the ComboBox's Suggestion box. The `DropDownFooterView` property is used to set the content for footer. The height of the footer in the SfComboBox can be adjusted using the `DropDownFooterViewHeight` property.
 
-The following code example shows how to set Footer content in SfComboBox.
+The following code example shows how to set footer content in SfComboBox.
 
 {% tabs %}
 

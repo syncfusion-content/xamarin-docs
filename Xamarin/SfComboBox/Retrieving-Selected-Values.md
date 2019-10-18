@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Retrieving selected value in Syncfusion ComboBox control.
-description: Learn how to retrieve selected value from the SfComboBox control
+description: This section describes how to get the selected value and set the selected value in the SfComboBox control.
 platform: xamarin
 control: SfComboBox
 documentation: ug
@@ -16,7 +16,7 @@ SfComboBox provides a way to handle the selected item using the following proper
 
 ## SelectedIndex
 
-You can get or set the index of the selected item using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndexProperty.html) property. It is applicable only when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~MultiSelectModeProperty.html) is set to None.
+You can get or set the index of the selected item using the [`SelectedIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndexProperty.html) property. It is applicable only when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~MultiSelectModeProperty.html) is set to None. SelectedIndex will accept integer values.
 
 ### Set the index of item to be selected
 
@@ -205,7 +205,7 @@ namespace ComboBox
 
 ## SelectedIndices
 
-You can get or set the indices of the selected items using the [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndicesProperty.html) property. It is applicable when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~MultiSelectModeProperty.html) is set to either Token or Delimiter.
+You can get or set the indices of the selected items using the [`SelectedIndices`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~SelectedIndicesProperty.html) property. It is applicable when [`MultiSelectMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.SfComboBox.XForms.SfComboBox~MultiSelectModeProperty.html) is set to either Token or Delimiter. SelectedIndices will accept collection of integer.
 
 ### Set the indices of items
 

@@ -12,7 +12,7 @@ You can provide header and footer views in the suggestion list in SfComboBox by 
 
 ## Header content
 
-You can provide Header content for header at the top of the ComboBox's Suggestion box. The `DropDownHeaderView` property is used to set the content of the header. The height of the header in the SfComboBox can be adjusted using the property `DropDownHeaderViewHeight` property.
+You can provide content for header at the top of the ComboBox's Suggestion box. The `DropDownHeaderView` property is used to set the content of the header. The height of the header in the SfComboBox can be adjusted using the `DropDownHeaderViewHeight` property.
 
 {% tabs %}
 
@@ -89,11 +89,11 @@ You can provide Header content for header at the top of the ComboBox's Suggestio
 
 ![Header Image](images/Header-and-Footer/Header.png)
 
-## Footer Content
+## Footer content
 
-You can provide content for footer at the bottom of the ComboBox's Suggestion box. The `DropDownFooterView` property is used to set the content for footer. The height of the Header in the SfComboBox can be adjusted using the `DropDownFooterViewHeight` property.
+You can provide content for footer at the bottom of the ComboBox's Suggestion box. The `DropDownFooterView` property is used to set the content for footer. The height of the footer in the SfComboBox can be adjusted using the `DropDownFooterViewHeight` property.
 
-The following code example shows how to set Footer content in SfComboBox.
+The following code example shows how to set footer content in SfComboBox.
 
 {% tabs %}
 

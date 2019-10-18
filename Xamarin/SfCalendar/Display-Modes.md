@@ -98,7 +98,8 @@ N>
 You can customize the calendar month view by using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html) of `SfCalendar`.
 
 * Current day text color can be modified using [TodayTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~TodayTextColor.html).
-* The day header format, day font size, day header font size can be modified using [DayHeaderFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFormat.html), [DayFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayFontSize.html), [DayHeaderFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFontSize.html)
+* The day header format, day font size, day header font size, day header font family, header font family, day cell font family can be modified using [DayHeaderFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFormat.html), [DayFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayFontSize.html), [DayHeaderFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFontSize.html), [DayHeaderFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFontFamily.html)
+[HeaderFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~HeaderFontFamily.html), [DayCellFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayCellFontFamily.html)
 * The background color of the inline view can be modified using [InlineBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~InlineBackgroundColor.html) property.
 * In AgendaView the selected date color can be modified using [AgendaSelectedDateColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~AgendaSelectedDateColor.html)
 
@@ -108,18 +109,36 @@ You can customize the calendar month view by using [MonthViewSettings](https://h
 
 <syncfusion:SfCalendar x:Name="calendar">
 	<syncfusion:SfCalendar.MonthViewSettings>
-		  <syncfusion:MonthViewSettings 
-				CurrentMonthBackgroundColor="#800080"
-				CurrentMonthTextColor="#ffffff"
-				PreviousMonthBackgroundColor="#9895F0"
-				PreviousMonthTextColor="#000000"
-				DateSelectionColor="#ffffff"
-				SelectedDayTextColor="#000000"
-				DayHeaderFormat="EEEEE"
-				DayFontSize="12"
-				DayHeaderFontSize="14"
-				AgendaSelectedDateColor="Blue"
-				TodaySelectionBackgroundColor="Green"/>
+<syncfusion:MonthViewSettings 
+		CurrentMonthBackgroundColor="#800080"
+		CurrentMonthTextColor="#ffffff"
+		PreviousMonthBackgroundColor="#9895F0"
+		PreviousMonthTextColor="#000000"
+		DateSelectionColor="#ffffff"
+		SelectedDayTextColor="#000000"
+		DayHeaderFormat="EEEEE"
+		DayFontSize="12"
+		DayHeaderFontSize="14"
+		DayHeaderBackgroundColor="#fed766"
+		SelectionRadius="15"
+		TodaySelectionTextColor="Black"
+		TodaySelectionBackgroundColor="Green"
+		DayHeaderTextColor="Black"
+		HeaderBackgroundColor="Pink"
+		HeaderFontAttributes="Italic"
+		HeaderFontSize="16"
+		WeekEndTextColor="#fe4a49"
+		WeekEndBackgroundColor="#2ab7ca">
+			<syncfusion:MonthViewSettings.HeaderFontFamily>
+				<OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+			</syncfusion:MonthViewSettings.HeaderFontFamily>
+			<syncfusion:MonthViewSettings.DayHeaderFontFamily>
+				<OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+			</syncfusion:MonthViewSettings.DayHeaderFontFamily>
+			<syncfusion:MonthViewSettings.DayCellFontFamily>
+				<OnPlatform x:TypeArguments="x:String" iOS="Lobster-Regular" Android="Lobster-Regular.ttf" WinPhone="Assets/Lobster-Regular.ttf#Lobster" />
+			</syncfusion:MonthViewSettings.DayCellFontFamily>
+		</syncfusion:MonthViewSettings>
    </syncfusion:SfCalendar.MonthViewSettings>
 </syncfusion:SfCalendar>  
 
@@ -138,10 +157,20 @@ monthViewSettings.DateSelectionColor = Color.FromHex("#ffffff");
 monthViewSettings.SelectedDayTextColor = Color.FromHex("#000000");
 monthViewSettings.DayHeaderFormat = "EEEEE";
 monthViewSettings.DayFontSize = 12;
-monthViewSettings.DayHeaderFontSize = 20;
+monthViewSettings.DayHeaderFontSize = 14;
+monthViewSettings.DayHeaderBackgroundColor = Color.FromHex("#fed766");
 monthViewSettings.SelectionRadius = 15;
-monthViewSettings.TodaySelectionTextColor= Color.Black;
-monthViewSettings.TodaySelectionBackgroundColor= Color.Green;
+monthViewSettings.TodaySelectionTextColor = Color.Black;
+monthViewSettings.TodaySelectionBackgroundColor = Color.Green;
+monthViewSettings.DayHeaderTextColor = Color.Black;
+monthViewSettings.DayHeaderFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+monthViewSettings.HeaderBackgroundColor = Color.Pink;
+monthViewSettings.HeaderFontAttributes = FontAttributes.Italic;
+monthViewSettings.HeaderFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+monthViewSettings.HeaderFontSize = 16;
+monthViewSettings.DayCellFontFamily = Device.OnPlatform("Lobster-Regular", "Lobster-Regular.ttf", "Assets/Lobster-Regular.ttf#Lobster");
+monthViewSettings.WeekEndTextColor = Color.FromHex("#fe4a49");
+monthViewSettings.WeekEndBackgroundColor = Color.FromHex("#2ab7ca");
 monthViewSettings.AgendaSelectedDateColor = Color.Blue;
 
 calendar.MonthViewSettings = monthViewSettings;
@@ -151,9 +180,11 @@ this.Content = calendar;
 
 {% endtabs %}
 
-![Month View in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-monthview-customization.jpg)
+![Month View in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-monthview-customization.png)
 
-N> To disable the current day selection, use `TodaySelectionBackgroundColor` color as Transparent.
+N>
+* To disable the current day selection, use `TodaySelectionBackgroundColor` color as Transparent.
+* `DisabledBackgroundColor` only visible when set the MinDate, MaxDate, EnableDatesInPast for the calendar.
 
 ### Month view border color customization
 
@@ -281,7 +312,7 @@ You can set the year view as either date or month using [YearViewMode](https://h
 
 {% highlight xaml %}
 
-<syncfusion:SfCalendar  x:Name="calendar" ViewMode="YearView" YearViewMode="Date"/>
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="YearView" YearViewMode="Date" NavigationDirection="Vertical"/>
 
 {% endhighlight %}
 
@@ -346,7 +377,8 @@ This view displays the period of 10 years. By default, current year range of 10 
 
 {% highlight xaml %}
 
-<syncfusion:SfCalendar  x:Name="calendar" ViewMode="Decade"/>
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="Decade" ShowNavigationButtons="True" NavigationDirection="Vertical">
+</syncfusion:SfCalendar>
 
 {% endhighlight %}
 
@@ -354,6 +386,8 @@ This view displays the period of 10 years. By default, current year range of 10 
 
 SfCalendar calendar = new SfCalendar();
 calendar.ViewMode=ViewMode.Decade;
+calendar.ShowNavigationButtons=true;
+calendar.NavigationDirection = NavigationDirection.Vertical;
 this.Content = calendar;
  
 {% endhighlight %}	
@@ -375,7 +409,7 @@ You can customize the decade view of calendar by using [YearViewSettings](https:
 
 {% highlight xaml %}
 
-<syncfusion:SfCalendar x:Name="calendar">
+<syncfusion:SfCalendar x:Name="calendar" ShowNavigationButtons="True" NavigationDirection="Vertical">
 <syncfusion:SfCalendar.YearViewSettings>
 	<syncfusion:YearViewSettings 
 		LayoutBackground ="#D3D3D3"
@@ -390,7 +424,9 @@ You can customize the decade view of calendar by using [YearViewSettings](https:
 
 {% highlight c# %}
 	
-SfCalendar calendar = new SfCalendar();        
+SfCalendar calendar = new SfCalendar();    
+calendar.ShowNavigationButtons=true;   
+calendar.NavigationDirection = NavigationDirection.Vertical;    
 YearViewSettings yearViewSettings = new YearViewSettings();
 yearViewSettings.LayoutBackground = Color.FromHex("#D3D3D3");
 yearViewSettings.MonthHeaderTextColor = Color.FromHex("#0000FF");
@@ -414,7 +450,8 @@ This view displays the period of 100 years. By default, current year range of 10
 
 {% highlight xaml %}
 
-<syncfusion:SfCalendar  x:Name="calendar" ViewMode="Century"/>
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="Century" ShowNavigationButtons="True" NavigationDirection="Vertical">
+</syncfusion:SfCalendar>
 
 {% endhighlight %}
 
@@ -422,6 +459,8 @@ This view displays the period of 100 years. By default, current year range of 10
 
 SfCalendar calendar = new SfCalendar();
 calendar.ViewMode=ViewMode.Century;
+calendar.ShowNavigationButtons=true;
+calendar.NavigationDirection = NavigationDirection.Vertical;
 this.Content = calendar;
  
 {% endhighlight %}
@@ -443,7 +482,7 @@ You can customize the century view of calendar using [YearViewSettings](https://
 
 {% highlight xaml %}
 
-<syncfusion:SfCalendar x:Name="calendar">
+<syncfusion:SfCalendar x:Name="calendar" ShowNavigationButtons="True" NavigationDirection="Vertical">
 	<syncfusion:SfCalendar.YearViewSettings>
 		<syncfusion:YearViewSettings 
 			LayoutBackground ="#D3D3D3"
@@ -458,7 +497,9 @@ You can customize the century view of calendar using [YearViewSettings](https://
 
 {% highlight c# %}
 	
-SfCalendar calendar = new SfCalendar();        
+SfCalendar calendar = new SfCalendar();   
+calendar.ShowNavigationButtons = true;     
+calendar.NavigationDirection = NavigationDirection.Vertical;
 YearViewSettings yearViewSettings = new YearViewSettings();
 yearViewSettings.LayoutBackground = Color.FromHex("#D3D3D3");
 yearViewSettings.MonthHeaderTextColor = Color.FromHex("#0000FF");

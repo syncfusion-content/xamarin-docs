@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance | Expander for Xamarin.Forms | Syncfusion
-description: Describes about view appearance and different functionalities in Xamarin.Forms Expander.
+description: Learn about Appearance support in Syncfusion Xamarin Expander (SfExpander) control and more details.
 platform: xamarin
 control: SfExpander
 documentation: ug

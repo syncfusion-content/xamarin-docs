@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Appearance | TreeView for Xamarin.Forms | Syncfusion
-description: Describes about view appearance and different functionalities in TreeView.
+description: Learn about Appearance support in Syncfusion Xamarin TreeView (SfTreeView) control and more details.
 platform: xamarin
 control: SfTreeView
 documentation: ug

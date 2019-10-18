@@ -9,7 +9,7 @@ documentation: ug
 
 # Dealing with suggestion box
 
-Suggestion box is a drop-down list box which displays the filtered suggestions inside a popup. This section explains the properties that deals with the drop-down list in SfComboBox control.
+Suggestion box is a drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with the drop-down list in SfComboBox control.
 
 ## Suggestion box placement mode
 
@@ -128,7 +128,7 @@ Content = layout;
 
 ## Opening suggestion box on focus
 
-Suggestion Box can be shown whenever control receives focus using the `ShowSuggestionsOnFocus` property. Suggestion list is the complete list of data source.
+Suggestion box can be shown whenever the control receives focus using the `ShowSuggestionsOnFocus` property. Suggestion list is the complete list of data source.
 
 {% tabs %}
 
@@ -342,7 +342,8 @@ Content = layout;
 
 ## Retrieve the filter suggestion items
 
-Two ways to get the filtered suggestion items from SfComboBox. You can use the `FilteredItems` API in SfComboBox to access filtered suggestions items. You can get the filtered items when `IsEditableMode` is true and `AllowFiltering` is true.
+There are two ways to get the filtered suggestion items from SfComboBox. 
+You can use the `FilteredItems` API in SfComboBox to access filtered suggestions items. You can get the filtered items when `IsEditableMode` is true and `AllowFiltering` is true.
 
 {% tabs %}
 
@@ -411,7 +412,7 @@ Two ways to get the filtered suggestion items from SfComboBox. You can use the `
 
 {% endtabs %}
 
-The other way to get a filtered suggestion item is an event called `FilterCollectionChanged`. This event is triggered when the SfComboBox suggestions have changed. You can get the filtered items from the `FilterCollectionChanged` event value argument.
+The other way to get a filtered suggestion item is an event called `FilterCollectionChanged`. This event is triggered when the SfComboBox suggestions have been changed. You can get the filtered items from the `FilterCollectionChanged` event value argument.
 
 <table>
 <tr>

@@ -291,7 +291,7 @@ In this example, a time duration of 3 seconds is set to search delay.
 
 ## Avoid opening suggestion box
 
-APIs are available to avoid pop-ups and retrieve filtered suggestion items that help you arrange lists or items control. 
+To avoid the drop down open, you can set the `SuggestionBoxPlacement` API to None.
 
 {% tabs %}
 
@@ -335,6 +335,184 @@ comboBox.SuggestionBoxPlacement = SuggestionBoxPlacement.None;
 comboBox.ComboBoxSource = countryNames;
 layout.Children.Add(comboBox); 
 Content = layout;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Retrieve the filter suggestion items
+
+Two ways to get the filtered suggestion items from SfComboBox. You can use the `FilteredItems` API in SfComboBox to access filtered suggestions items. You can get the filtered items when `IsEditableMode` is true and `AllowFiltering` is true.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SfComboBox_Sample"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard" 
+             x:Class="SfComboBox_Sample.MainPage">
+
+    <StackLayout VerticalOptions="StartAndExpand" 
+                 HorizontalOptions="StartAndExpand" 
+                 Padding="30">
+        <combobox:SfComboBox HeightRequest="40" 
+                             x:Name="comboBox" 
+                             IsEditableMode="True" 
+                             AllowFiltering="True" 
+                             SuggestionMode="Contains"
+                             SuggestionBoxPlacement="None">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>
+        <StackLayout Orientation="Vertical" Margin="0,50,0,0">
+            <Label Text="Filtered Items" 
+               FontSize="20" 
+               FontAttributes="Bold" 
+               TextColor="Green"/>
+            <ListView 
+            x:Name="MainListView"  
+            RowHeight="30" 
+            ItemsSource="{Binding Source={x:Reference comboBox},Path=FilteredItems}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The other way to get a filtered suggestion item is an event called `FilterCollectionChanged`. This event is triggered when the SfComboBox suggestions have changed. You can get the filtered items from the `FilterCollectionChanged` event value argument.
+
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Value</td>
+<td>Shows filtered items in SfComboBox control.</td>
+</tr>
+</table>
+
+The following code snippet describes how to trigger an event called `FilterCollectionChanged`.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SfComboBox_Sample"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             x:Class="SfComboBox_Sample.MainPage">
+
+    <StackLayout VerticalOptions="StartAndExpand" 
+                 HorizontalOptions="StartAndExpand" 
+                 Padding="30">
+        <combobox:SfComboBox HeightRequest="40" 
+                             x:Name="comboBox" 
+                             IsEditableMode="True" 
+                             AllowFiltering="True" 
+                             SuggestionMode="Contains"
+                             SuggestionBoxPlacement="None"
+                             FilterCollectionChanged="ComboBox_FilterCollectionChanged">
+            <combobox:SfComboBox.ComboBoxSource>
+                <ListCollection:List x:TypeArguments="x:String">
+                    <x:String>India</x:String>
+                    <x:String>Uganda</x:String>
+                    <x:String>Ukraine</x:String>
+                    <x:String>Canada</x:String>
+                    <x:String>United Arab Emirates</x:String>
+                    <x:String>France</x:String>
+                    <x:String>United Kingdom</x:String>
+                    <x:String>China</x:String>
+                    <x:String>United States</x:String>
+                    <x:String>Japan</x:String>
+                    <x:String>Angola</x:String>
+                </ListCollection:List>
+            </combobox:SfComboBox.ComboBoxSource>
+        </combobox:SfComboBox>
+        <StackLayout Orientation="Vertical" Margin="0,50,0,0">
+            <Label Text="Filtered Items" 
+               FontSize="20" 
+               FontAttributes="Bold" 
+               TextColor="Green"/>
+            <ListView 
+            x:Name="MainListView"  
+            RowHeight="30">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.ComboBox;
+using System.Collections;
+using Xamarin.Forms;
+
+namespace SfComboBox_Sample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            comboBox.FilterCollectionChanged += ComboBox_FilterCollectionChanged;
+        }
+
+        private void ComboBox_FilterCollectionChanged(object sender, FilterCollectionChangedEventArgs e)
+        {
+            MainListView.ItemsSource = (IEnumerable)e.Value;
+        }
+    }
+}
 
 {% endhighlight %}
 

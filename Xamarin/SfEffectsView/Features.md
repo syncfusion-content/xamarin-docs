@@ -93,3 +93,5 @@ var effectsView = new SfEffectsView
 {% endhighlight %}
 
 {% endtabs %}
+
+N> On enabling [`ShouldIgnoreTouches`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~ShouldIgnoreTouches.html) property in iOS, the child view will not get interaction.

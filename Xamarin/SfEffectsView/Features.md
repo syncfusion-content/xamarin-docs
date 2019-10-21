@@ -9,11 +9,11 @@ documentation: ug
 
 # Features in SfEffectsView
 
-The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides the following additional features to enhance the effects.
+The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides the following additional features to enhance the effects:
 
 ## FadeOutRipple
 
-By enabling the [`FadeOutRipple`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~FadeOutRipple.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html), the growable circle will lose its opacity to 0.
+By enabling the [`FadeOutRipple`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~FadeOutRipple.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html), the growable circle will lose its opacity to 0 on growing.
 
 {% tabs %} 
 
@@ -93,3 +93,5 @@ var effectsView = new SfEffectsView
 {% endhighlight %}
 
 {% endtabs %}
+
+N> On enabling [`ShouldIgnoreTouches`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~ShouldIgnoreTouches.html) property in iOS, the child view will not get interaction.

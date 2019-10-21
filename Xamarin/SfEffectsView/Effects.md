@@ -9,11 +9,11 @@ documentation: ug
 
 # Effects
 
-The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides support to ripple effect, highlight effect, and more. This section explains about different effects available in the effects view control.
+The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides modern effects such as highlight, ripple, selection, scaling, and rotation. This section explains about these effects.
 
 ## Highlight
 
-`SfEffects.Highlight` is a smooth transition on the background color of the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html).
+`SfEffects.Highlight` is a smooth transition on the background color of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html).
 
 {% tabs %} 
 
@@ -70,7 +70,7 @@ var effectsView = new SfEffectsView()
 
 ## Scale
 
-`SfEffects.Scale` is a smooth transition from actual size of the object to the size calculated based on [`ScaleFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~ScaleFactor.html) in pixels.
+`SfEffects.Scale` is a smooth transition on the size of the [`SfEffectsView.Content`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~Content.html) from actual size to the size calculated based on [`ScaleFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~ScaleFactor.html) in pixels.
 
 {% tabs %} 
 
@@ -104,7 +104,7 @@ var effectsView = new SfEffectsView
 
 ## Selection
 
-`SfEffects.Selection` is a smooth color transition to indicate the view state is moved to selected state.
+`SfEffects.Selection` is a smooth color transition to indicate whether the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) state is selected or not.
 
 {% tabs %} 
 
@@ -134,7 +134,7 @@ var effectsView = new SfEffectsView
 
 ## Rotation
 
-`SfEffects.Rotation` provides a circular movement to the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) around the center of the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) based on the specified [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~Angle.html). 
+`SfEffects.Rotation` provides a circular movement to [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) around the center of the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) based on the specified [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~Angle.html).
 
 {% tabs %} 
 
@@ -164,7 +164,7 @@ var effectsView = new SfEffectsView
 
 The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides support to apply multiple [`SfEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffects.html) in combination. The following are some valid combinations of [`SfEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffects.html):
 
-### Highlight and Ripple
+### Highlight and ripple
 
 {% tabs %} 
 
@@ -187,7 +187,7 @@ var effectsView = new SfEffectsView()
 
 {% endtabs %}
 
-### Highlight and Selection
+### Highlight and selection
 
 {% tabs %} 
 
@@ -213,7 +213,7 @@ var effectsView = new SfEffectsView()
 
 {% endtabs %}
 
-### Ripple and Selection
+### Ripple and selection
 
 {% tabs %} 
 
@@ -239,7 +239,7 @@ var effectsView = new SfEffectsView()
 
 {% endtabs %}
 
-### Highlight, Ripple and Selection
+### Highlight, ripple and selection
 
 {% tabs %} 
 
@@ -265,7 +265,7 @@ var effectsView = new SfEffectsView()
 
 {% endtabs %}
 
-### Scale and Selection
+### Scale and selection
 
 {% tabs %} 
 

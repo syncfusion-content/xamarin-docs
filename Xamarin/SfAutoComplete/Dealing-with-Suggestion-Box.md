@@ -577,43 +577,33 @@ You can use the `FilteredItems` API in SfAutoComplete to access filtered suggest
              xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
              x:Class="AutoComplete.MainPage">
 
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
     <StackLayout VerticalOptions="StartAndExpand" 
                  HorizontalOptions="StartAndExpand" 
                  Padding="30">
         <autocomplete:SfAutoComplete HeightRequest="40" 
-                             x:Name="autoComplete" 
+                             x:Name="comboBox" 
                              SuggestionMode="Contains"
-                             SuggestionBoxPlacement="None">
-            <autocomplete:SfAutoComplete.AutoCompleteSource>
-                <ListCollection:List x:TypeArguments="x:String">
-                    <x:String>India</x:String>
-                    <x:String>Uganda</x:String>
-                    <x:String>Ukraine</x:String>
-                    <x:String>Canada</x:String>
-                    <x:String>United Arab Emirates</x:String>
-                    <x:String>France</x:String>
-                    <x:String>United Kingdom</x:String>
-                    <x:String>China</x:String>
-                    <x:String>United States</x:String>
-                    <x:String>Japan</x:String>
-                    <x:String>Angola</x:String>
-                </ListCollection:List>
-            </autocomplete:SfAutoComplete.AutoCompleteSource>
-        </autocomplete:SfAutoComplete>
+                             SuggestionBoxPlacement="None"
+                             DisplayMemberPath="Name"
+                             DataSource="{Binding EmployeeCollection}"
+                             FilteredItems="{Binding Items,Mode=TwoWay}"/>
         <StackLayout Orientation="Vertical" Margin="0,50,0,0">
             <Label Text="Filtered Items" 
                FontSize="20" 
                FontAttributes="Bold" 
                TextColor="Green"/>
             <ListView 
-            x:Name="MainListView"  
+            x:Name="MainListView" 
             RowHeight="30"
-            ItemsSource="{Binding Source={x:Reference comboBox},Path=FilteredItems}">
+            ItemsSource="{Binding Items}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding}" />
+                                <Label Text="{Binding Name}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
@@ -622,6 +612,161 @@ You can use the `FilteredItems` API in SfAutoComplete to access filtered suggest
         </StackLayout>
     </StackLayout>
 </ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.SfAutoComplete.XForms;
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using Xamarin.Forms;
+
+namespace AutoComplete
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            EmployeeViewModel viewModel = new EmployeeViewModel();
+            this.BindingContext = viewModel;
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete comboBox = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                WidthRequest = 100,
+                DisplayMemberPath = "Name",
+                SuggestionBoxPlacement = SuggestionBoxPlacement.None,
+                SuggestionMode = SuggestionMode.Contains,
+                DataSource = viewModel.EmployeeCollection
+            };
+
+            Binding binding = new Binding();
+            binding.Source = viewModel;
+            binding.Path = "Items";
+            binding.Mode = BindingMode.TwoWay;
+            comboBox.SetBinding(SfAutoComplete.FilteredItemsProperty, binding);
+            StackLayout stack = new StackLayout()
+            {
+                Orientation = StackOrientation.Vertical,
+                Margin = new Thickness(0, 50, 0, 0)
+            };
+
+            Label label = new Label()
+            {
+                Text = "Filtered Items",
+                FontSize = 20,
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Color.Green
+            };
+
+            ListView MainListView = new ListView()
+            {
+                RowHeight = 30
+            };
+
+            Binding binding1 = new Binding();
+            binding1.Source = viewModel;
+            binding1.Path = "Items";
+            MainListView.SetBinding(ListView.ItemsSourceProperty, binding1);
+
+            DataTemplate itemTemplate = new DataTemplate(() =>
+            {
+                StackLayout layout = new StackLayout()
+                {
+                    Orientation = StackOrientation.Horizontal
+                };
+
+                Label label1 = new Label();
+                label1.SetBinding(Label.TextProperty, "Name");
+                layout.Children.Add(label1);
+
+                return new ViewCell { View = layout };
+            });
+
+            MainListView.ItemTemplate = itemTemplate;
+
+            stack.Children.Add(label);
+            stack.Children.Add(MainListView);
+            stackLayout.Children.Add(comboBox);
+            stackLayout.Children.Add(stack);
+            this.Content = stackLayout;
+        }
+    }
+
+    public class Employee
+    {
+        private int id;
+        public int ID
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+    }
+
+    public class EmployeeViewModel : INotifyPropertyChanged
+    {
+        private IEnumerable<object> items;
+
+        public IEnumerable<object> Items
+        {
+            get { return items; }
+            set
+            {
+                items = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        private ObservableCollection<Employee> employeeCollection;
+        public ObservableCollection<Employee> EmployeeCollection
+        {
+            get { return employeeCollection; }
+            set { employeeCollection = value; }
+        }
+        public EmployeeViewModel()
+        {
+            employeeCollection = new ObservableCollection<Employee>();
+            employeeCollection.Add(new Employee() { ID = 1, Name = "Eric" });
+            employeeCollection.Add(new Employee() { ID = 2, Name = "James" });
+            employeeCollection.Add(new Employee() { ID = 3, Name = "Jacob" });
+            employeeCollection.Add(new Employee() { ID = 4, Name = "Lucas" });
+            employeeCollection.Add(new Employee() { ID = 5, Name = "Mark" });
+            employeeCollection.Add(new Employee() { ID = 6, Name = "Aldan" });
+            employeeCollection.Add(new Employee() { ID = 7, Name = "Aldrin" });
+            employeeCollection.Add(new Employee() { ID = 8, Name = "Alan" });
+            employeeCollection.Add(new Employee() { ID = 9, Name = "Aaron" });
+        }
+    }
+}
 
 {% endhighlight %}
 
@@ -654,43 +799,33 @@ The following code snippet describes how to trigger an event called `FilterColle
              xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
              x:Class="AutoComplete.MainPage">
 
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
     <StackLayout VerticalOptions="StartAndExpand" 
                  HorizontalOptions="StartAndExpand" 
                  Padding="30">
         <autocomplete:SfAutoComplete HeightRequest="40" 
-                             x:Name="autoComplete" 
+                             x:Name="comboBox" 
                              SuggestionMode="Contains"
                              SuggestionBoxPlacement="None"
-                             FilterCollectionChanged="AutoComplete_FilterCollectionChanged">
-            <autocomplete:SfAutoComplete.AutoCompleteSource>
-                <ListCollection:List x:TypeArguments="x:String">
-                    <x:String>India</x:String>
-                    <x:String>Uganda</x:String>
-                    <x:String>Ukraine</x:String>
-                    <x:String>Canada</x:String>
-                    <x:String>United Arab Emirates</x:String>
-                    <x:String>France</x:String>
-                    <x:String>United Kingdom</x:String>
-                    <x:String>China</x:String>
-                    <x:String>United States</x:String>
-                    <x:String>Japan</x:String>
-                    <x:String>Angola</x:String>
-                </ListCollection:List>
-            </autocomplete:SfAutoComplete.AutoCompleteSource>
-        </autocomplete:SfAutoComplete>
+                             DisplayMemberPath="Name"
+                             DataSource="{Binding EmployeeCollection}"
+                             FilteredItems="{Binding Items,Mode=TwoWay}"
+                             FilterCollectionChanged="AutoComplete_FilterCollectionChanged"/>
         <StackLayout Orientation="Vertical" Margin="0,50,0,0">
             <Label Text="Filtered Items" 
                FontSize="20" 
                FontAttributes="Bold" 
                TextColor="Green"/>
             <ListView 
-            x:Name="MainListView"  
+            x:Name="MainListView" 
             RowHeight="30">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding}" />
+                                <Label Text="{Binding Name}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
@@ -704,27 +839,161 @@ The following code snippet describes how to trigger an event called `FilterColle
 
 {% highlight c# %}
 
+using Syncfusion.SfAutoComplete.XForms;
+using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 
 namespace AutoComplete
 {
     public partial class MainPage : ContentPage
     {
+        ListView MainListView;
         public MainPage()
         {
             InitializeComponent();
+            EmployeeViewModel viewModel = new EmployeeViewModel();
+            this.BindingContext = viewModel;
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                WidthRequest = 100,
+                DisplayMemberPath = "Name",
+                SuggestionBoxPlacement = SuggestionBoxPlacement.None,
+                SuggestionMode = SuggestionMode.Contains,
+                DataSource = viewModel.EmployeeCollection
+            };
+
             autoComplete.FilterCollectionChanged += AutoComplete_FilterCollectionChanged;
+            Binding binding = new Binding();
+            binding.Source = viewModel;
+            binding.Path = "Items";
+            binding.Mode = BindingMode.TwoWay;
+            autoComplete.SetBinding(SfAutoComplete.FilteredItemsProperty, binding);
+            StackLayout stack = new StackLayout()
+            {
+                Orientation = StackOrientation.Vertical,
+                Margin = new Thickness(0, 50, 0, 0)
+            };
+
+            Label label = new Label()
+            {
+                Text = "Filtered Items",
+                FontSize = 20,
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Color.Green
+            };
+
+            MainListView = new ListView()
+            {
+                RowHeight = 30
+            };
+
+            DataTemplate itemTemplate = new DataTemplate(() =>
+            {
+                StackLayout layout = new StackLayout()
+                {
+                    Orientation = StackOrientation.Horizontal
+                };
+
+                Label label1 = new Label();
+                label1.SetBinding(Label.TextProperty, "Name");
+                layout.Children.Add(label1);
+
+                return new ViewCell { View = layout };
+            });
+
+            MainListView.ItemTemplate = itemTemplate;
+
+            stack.Children.Add(label);
+            stack.Children.Add(MainListView);
+            stackLayout.Children.Add(autoComplete);
+            stackLayout.Children.Add(stack);
+            this.Content = stackLayout;
         }
 
-        private void AutoComplete_FilterCollectionChanged(object sender, Syncfusion.SfAutoComplete.XForms.FilterCollectionChangedEventArgs e)
+        private void AutoComplete_FilterCollectionChanged(object sender, FilterCollectionChangedEventArgs e)
         {
             MainListView.ItemsSource = (IEnumerable)e.Value;
         }
     }
-}
 
+    public class Employee
+    {
+        private int id;
+        public int ID
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+    }
+
+    public class EmployeeViewModel : INotifyPropertyChanged
+    {
+        private IEnumerable<object> items;
+
+        public IEnumerable<object> Items
+        {
+            get { return items; }
+            set
+            {
+                items = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        private ObservableCollection<Employee> employeeCollection;
+        public ObservableCollection<Employee> EmployeeCollection
+        {
+            get { return employeeCollection; }
+            set { employeeCollection = value; }
+        }
+        public EmployeeViewModel()
+        {
+            employeeCollection = new ObservableCollection<Employee>();
+            employeeCollection.Add(new Employee() { ID = 1, Name = "Eric" });
+            employeeCollection.Add(new Employee() { ID = 2, Name = "James" });
+            employeeCollection.Add(new Employee() { ID = 3, Name = "Jacob" });
+            employeeCollection.Add(new Employee() { ID = 4, Name = "Lucas" });
+            employeeCollection.Add(new Employee() { ID = 5, Name = "Mark" });
+            employeeCollection.Add(new Employee() { ID = 6, Name = "Aldan" });
+            employeeCollection.Add(new Employee() { ID = 7, Name = "Aldrin" });
+            employeeCollection.Add(new Employee() { ID = 8, Name = "Alan" });
+            employeeCollection.Add(new Employee() { ID = 9, Name = "Aaron" });
+        }
+    }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![Filtered_Items_Image](images/AutoComplete-Filtering-Options/Filtered_Items_SfAutoComplete.png)

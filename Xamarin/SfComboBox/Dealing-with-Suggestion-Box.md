@@ -357,9 +357,13 @@ You can use the `FilteredItems` API in SfComboBox to access filtered suggestions
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
-             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard" 
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+              xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" 
              x:Class="SfComboBox_Sample.MainPage">
-
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
     <StackLayout VerticalOptions="StartAndExpand" 
                  HorizontalOptions="StartAndExpand" 
                  Padding="30">
@@ -368,37 +372,24 @@ You can use the `FilteredItems` API in SfComboBox to access filtered suggestions
                              IsEditableMode="True" 
                              AllowFiltering="True" 
                              SuggestionMode="Contains"
-                             SuggestionBoxPlacement="None">
-            <combobox:SfComboBox.ComboBoxSource>
-                <ListCollection:List x:TypeArguments="x:String">
-                    <x:String>India</x:String>
-                    <x:String>Uganda</x:String>
-                    <x:String>Ukraine</x:String>
-                    <x:String>Canada</x:String>
-                    <x:String>United Arab Emirates</x:String>
-                    <x:String>France</x:String>
-                    <x:String>United Kingdom</x:String>
-                    <x:String>China</x:String>
-                    <x:String>United States</x:String>
-                    <x:String>Japan</x:String>
-                    <x:String>Angola</x:String>
-                </ListCollection:List>
-            </combobox:SfComboBox.ComboBoxSource>
-        </combobox:SfComboBox>
+                             SuggestionBoxPlacement="None"
+                             DisplayMemberPath="Name"
+                             DataSource="{Binding EmployeeCollection}"
+                             FilteredItems="{Binding Items,Mode=TwoWay}"/>
         <StackLayout Orientation="Vertical" Margin="0,50,0,0">
             <Label Text="Filtered Items" 
                FontSize="20" 
                FontAttributes="Bold" 
                TextColor="Green"/>
             <ListView 
-            x:Name="MainListView"  
-            RowHeight="30" 
-            ItemsSource="{Binding Source={x:Reference comboBox},Path=FilteredItems}">
+            x:Name="MainListView" 
+            ItemsSource="{Binding Items}"
+            RowHeight="30">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding}" />
+                                <Label Text="{Binding Name}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
@@ -410,6 +401,161 @@ You can use the `FilteredItems` API in SfComboBox to access filtered suggestions
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+using Syncfusion.XForms.ComboBox;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using Xamarin.Forms;
+
+namespace SfComboBox_Sample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            EmployeeViewModel viewModel = new EmployeeViewModel();
+            this.BindingContext = viewModel;
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            SfComboBox comboBox = new SfComboBox()
+            {
+                HeightRequest = 40,
+                WidthRequest = 100,
+                IsEditableMode = true,
+                AllowFiltering = true,
+                DisplayMemberPath = "Name",
+                SuggestionBoxPlacement = SuggestionBoxPlacement.None,
+                SuggestionMode = SuggestionMode.Contains,
+                DataSource = viewModel.EmployeeCollection
+            };
+
+            Binding binding = new Binding();
+            binding.Source = viewModel;
+            binding.Path = "Items";
+            binding.Mode = BindingMode.TwoWay;
+            comboBox.SetBinding(SfComboBox.FilteredItemsProperty, binding);
+            StackLayout stack = new StackLayout()
+            {
+                Orientation = StackOrientation.Vertical,
+                Margin = new Thickness(0, 50, 0, 0)
+            };
+
+            Label label = new Label()
+            {
+                Text = "Filtered Items",
+                FontSize = 20,
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Color.Green
+            };
+
+            ListView MainListView = new ListView()
+            {
+                RowHeight = 30
+            };
+
+            Binding binding1 = new Binding();
+            binding1.Source = viewModel;
+            binding1.Path = "Items";
+            MainListView.SetBinding(ListView.ItemsSourceProperty, binding1);
+
+            DataTemplate itemTemplate = new DataTemplate(() =>
+            {
+                StackLayout layout = new StackLayout()
+                {
+                    Orientation = StackOrientation.Horizontal
+                };
+
+                Label label1 = new Label();
+                label1.SetBinding(Label.TextProperty, "Name");
+                layout.Children.Add(label1);
+
+                return new ViewCell { View = layout };
+            });
+
+            MainListView.ItemTemplate = itemTemplate;
+
+            stack.Children.Add(label);
+            stack.Children.Add(MainListView);
+            stackLayout.Children.Add(comboBox);
+            stackLayout.Children.Add(stack);
+            this.Content = stackLayout;
+        }
+    }
+
+    public class Employee
+    {
+        private int id;
+        public int ID
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+    }
+
+    public class EmployeeViewModel : INotifyPropertyChanged
+    {
+        private IEnumerable<object> items;
+
+        public IEnumerable<object> Items
+        {
+            get { return items; }
+            set
+            {
+                items = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        private ObservableCollection<Employee> employeeCollection;
+        public ObservableCollection<Employee> EmployeeCollection
+        {
+            get { return employeeCollection; }
+            set { employeeCollection = value; }
+        }
+        public EmployeeViewModel()
+        {
+            employeeCollection = new ObservableCollection<Employee>();
+            employeeCollection.Add(new Employee() { ID = 1, Name = "Eric" });
+            employeeCollection.Add(new Employee() { ID = 2, Name = "James" });
+            employeeCollection.Add(new Employee() { ID = 3, Name = "Jacob" });
+            employeeCollection.Add(new Employee() { ID = 4, Name = "Lucas" });
+            employeeCollection.Add(new Employee() { ID = 5, Name = "Mark" });
+            employeeCollection.Add(new Employee() { ID = 6, Name = "Aldan" });
+            employeeCollection.Add(new Employee() { ID = 7, Name = "Aldrin" });
+            employeeCollection.Add(new Employee() { ID = 8, Name = "Alan" });
+            employeeCollection.Add(new Employee() { ID = 9, Name = "Aaron" });
+        }
+    }
+}
+
+{% endhighlight %}
 {% endtabs %}
 
 The other way to get a filtered suggestion item is an event called `FilterCollectionChanged`. This event is triggered when the SfComboBox suggestions have been changed. You can get the filtered items from the `FilterCollectionChanged` event value argument.
@@ -440,8 +586,12 @@ The following code snippet describes how to trigger an event called `FilterColle
              mc:Ignorable="d"
              xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+              xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms" 
              x:Class="SfComboBox_Sample.MainPage">
-
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
     <StackLayout VerticalOptions="StartAndExpand" 
                  HorizontalOptions="StartAndExpand" 
                  Padding="30">
@@ -451,36 +601,23 @@ The following code snippet describes how to trigger an event called `FilterColle
                              AllowFiltering="True" 
                              SuggestionMode="Contains"
                              SuggestionBoxPlacement="None"
-                             FilterCollectionChanged="ComboBox_FilterCollectionChanged">
-            <combobox:SfComboBox.ComboBoxSource>
-                <ListCollection:List x:TypeArguments="x:String">
-                    <x:String>India</x:String>
-                    <x:String>Uganda</x:String>
-                    <x:String>Ukraine</x:String>
-                    <x:String>Canada</x:String>
-                    <x:String>United Arab Emirates</x:String>
-                    <x:String>France</x:String>
-                    <x:String>United Kingdom</x:String>
-                    <x:String>China</x:String>
-                    <x:String>United States</x:String>
-                    <x:String>Japan</x:String>
-                    <x:String>Angola</x:String>
-                </ListCollection:List>
-            </combobox:SfComboBox.ComboBoxSource>
-        </combobox:SfComboBox>
+                             DisplayMemberPath="Name"
+                             DataSource="{Binding EmployeeCollection}"
+                             FilteredItems="{Binding Items,Mode=TwoWay}"
+                             FilterCollectionChanged="ComboBox_FilterCollectionChanged"/>
         <StackLayout Orientation="Vertical" Margin="0,50,0,0">
             <Label Text="Filtered Items" 
                FontSize="20" 
                FontAttributes="Bold" 
                TextColor="Green"/>
             <ListView 
-            x:Name="MainListView"  
+            x:Name="MainListView" 
             RowHeight="30">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="{Binding}" />
+                                <Label Text="{Binding Name}" />
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>
@@ -495,22 +632,155 @@ The following code snippet describes how to trigger an event called `FilterColle
 {% highlight c# %}
 
 using Syncfusion.XForms.ComboBox;
+using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
 using Xamarin.Forms;
 
 namespace SfComboBox_Sample
 {
     public partial class MainPage : ContentPage
     {
+        ListView MainListView;
         public MainPage()
         {
             InitializeComponent();
-            comboBox.FilterCollectionChanged += ComboBox_FilterCollectionChanged;
-        }
+            EmployeeViewModel viewModel = new EmployeeViewModel();
+            this.BindingContext = viewModel;
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
 
+            SfComboBox comboBox = new SfComboBox()
+            {
+                HeightRequest = 40,
+                WidthRequest = 100,
+                IsEditableMode = true,
+                AllowFiltering = true,
+                DisplayMemberPath = "Name",
+                SuggestionBoxPlacement = SuggestionBoxPlacement.None,
+                SuggestionMode = SuggestionMode.Contains,
+                DataSource = viewModel.EmployeeCollection
+            };
+
+            comboBox.FilterCollectionChanged += ComboBox_FilterCollectionChanged;
+            Binding binding = new Binding();
+            binding.Source = viewModel;
+            binding.Path = "Items";
+            binding.Mode = BindingMode.TwoWay;
+            comboBox.SetBinding(SfComboBox.FilteredItemsProperty, binding);
+            StackLayout stack = new StackLayout()
+            {
+                Orientation = StackOrientation.Vertical,
+                Margin = new Thickness(0, 50, 0, 0)
+            };
+
+            Label label = new Label()
+            {
+                Text = "Filtered Items",
+                FontSize = 20,
+                FontAttributes = FontAttributes.Bold,
+                TextColor = Color.Green
+            };
+
+            MainListView = new ListView()
+            {
+                RowHeight = 30
+            };
+
+            DataTemplate itemTemplate = new DataTemplate(() =>
+            {
+                StackLayout layout = new StackLayout()
+                {
+                    Orientation = StackOrientation.Horizontal
+                };
+
+                Label label1 = new Label();
+                label1.SetBinding(Label.TextProperty, "Name");
+                layout.Children.Add(label1);
+
+                return new ViewCell { View = layout };
+            });
+
+            MainListView.ItemTemplate = itemTemplate;
+
+            stack.Children.Add(label);
+            stack.Children.Add(MainListView);
+            stackLayout.Children.Add(comboBox);
+            stackLayout.Children.Add(stack);
+            this.Content = stackLayout;
+        }
         private void ComboBox_FilterCollectionChanged(object sender, FilterCollectionChangedEventArgs e)
         {
             MainListView.ItemsSource = (IEnumerable)e.Value;
+        }
+    }
+
+    public class Employee
+    {
+        private int id;
+        public int ID
+        {
+            get { return id; }
+            set { id = value; }
+        }
+        private string name;
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+    }
+
+    public class EmployeeViewModel : INotifyPropertyChanged
+    {
+        private IEnumerable<object> items;
+
+        public IEnumerable<object> Items
+        {
+            get { return items; }
+            set
+            {
+                items = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+
+        private ObservableCollection<Employee> employeeCollection;
+        public ObservableCollection<Employee> EmployeeCollection
+        {
+            get { return employeeCollection; }
+            set { employeeCollection = value; }
+        }
+        public EmployeeViewModel()
+        {
+            employeeCollection = new ObservableCollection<Employee>();
+            employeeCollection.Add(new Employee() { ID = 1, Name = "Eric" });
+            employeeCollection.Add(new Employee() { ID = 2, Name = "James" });
+            employeeCollection.Add(new Employee() { ID = 3, Name = "Jacob" });
+            employeeCollection.Add(new Employee() { ID = 4, Name = "Lucas" });
+            employeeCollection.Add(new Employee() { ID = 5, Name = "Mark" });
+            employeeCollection.Add(new Employee() { ID = 6, Name = "Aldan" });
+            employeeCollection.Add(new Employee() { ID = 7, Name = "Aldrin" });
+            employeeCollection.Add(new Employee() { ID = 8, Name = "Alan" });
+            employeeCollection.Add(new Employee() { ID = 9, Name = "Aaron" });
         }
     }
 }
@@ -518,3 +788,5 @@ namespace SfComboBox_Sample
 {% endhighlight %}
 
 {% endtabs %}
+
+![Filtered_Items_Image](images/ComboBox-Filtering-Options/Filtered_Items_SfComboBox.png)

@@ -103,7 +103,7 @@ this.Content = border;
 
 ![borderwidth](images/Xamarin_Forms_BorderWidth.png)
 
-## Dashed Border
+## Dashed border
 
 You can render the border with dashes using the [`DashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Border.SfBorder~DashArray.html) property.
 

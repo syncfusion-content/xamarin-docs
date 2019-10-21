@@ -1,7 +1,7 @@
 ---
 layout: post
 title: BindableLayout in Syncfusion.Xamarin.Forms StepProgressBar.
-description: How to bind StepView to Syncfusion.Xamarin.Forms StepProgressBar using BindableLayout.
+description: How to bind (ItemSource data) StepView to Syncfusion.Xamarin.Forms StepProgressBar using BindableLayout.
 platform: xamarin
 control: StepProgressBar
 documentation: ug

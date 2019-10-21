@@ -7,7 +7,7 @@ control: StepProgressBar
 documentation: ug
 ---
 
-From version 3.5, Xamarin.Forms has introduced a new approach, called BindableLayout, which works with all the layouts that are derived from Layout&lt;T&gt;. By simply setting ItemTemplate and ItemsSource, BindableLayout creates a group of UI (for the given ItemTemplate) for every data in the ItemsSource and add them as children.
+From version 3.5, Xamarin.Forms has introduced a new approach called BindableLayout that works with all the layouts derived from Layout&lt;T&gt;. By simply setting ItemTemplate and ItemsSource, BindableLayout will create a group of UI (for the given ItemTemplate) for every data in the ItemsSource and add them as children.
 
 ## Initialize view model
 
@@ -133,5 +133,7 @@ BindableLayout.SetItemsSource(sfStepProgressBar, ShipmentViewModel.ShipmentInfoC
                 </progressBar:SfStepProgressBar>
 
 {% endhighlight %}
+
+(overview_images/bindable_layout.png)
 
 You can download the entire source of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Shipment_Tracking-237228452.zip)

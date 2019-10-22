@@ -584,7 +584,7 @@ You can use the `FilteredItems` API in SfAutoComplete to access filtered suggest
                  HorizontalOptions="StartAndExpand" 
                  Padding="30">
         <autocomplete:SfAutoComplete HeightRequest="40" 
-                             x:Name="comboBox" 
+                             x:Name="autoComplete" 
                              SuggestionMode="Contains"
                              SuggestionBoxPlacement="None"
                              DisplayMemberPath="Name"
@@ -642,7 +642,7 @@ namespace AutoComplete
                 Padding = new Thickness(30)
             };
 
-            SfAutoComplete comboBox = new SfAutoComplete()
+            SfAutoComplete autoComplete = new SfAutoComplete()
             {
                 HeightRequest = 40,
                 WidthRequest = 100,
@@ -656,7 +656,7 @@ namespace AutoComplete
             filteredItemsBinding.Source = viewModel;
             filteredItemsBinding.Path = "Items";
             filteredItemsBinding.Mode = BindingMode.TwoWay;
-            comboBox.SetBinding(SfAutoComplete.FilteredItemsProperty, filteredItemsBinding);
+            autoComplete.SetBinding(SfAutoComplete.FilteredItemsProperty, filteredItemsBinding);
             StackLayout stack = new StackLayout()
             {
                 Orientation = StackOrientation.Vertical,
@@ -699,7 +699,7 @@ namespace AutoComplete
 
             stack.Children.Add(filteredItemsLabel);
             stack.Children.Add(MainListView);
-            stackLayout.Children.Add(comboBox);
+            stackLayout.Children.Add(autoComplete);
             stackLayout.Children.Add(stack);
             this.Content = stackLayout;
         }
@@ -806,7 +806,7 @@ The following code snippet describes how to trigger an event called `FilterColle
                  HorizontalOptions="StartAndExpand" 
                  Padding="30">
         <autocomplete:SfAutoComplete HeightRequest="40" 
-                             x:Name="comboBox" 
+                             x:Name="autoComplete" 
                              SuggestionMode="Contains"
                              SuggestionBoxPlacement="None"
                              DisplayMemberPath="Name"

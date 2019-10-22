@@ -652,18 +652,18 @@ namespace AutoComplete
                 DataSource = viewModel.EmployeeCollection
             };
 
-            Binding binding = new Binding();
-            binding.Source = viewModel;
-            binding.Path = "Items";
-            binding.Mode = BindingMode.TwoWay;
-            comboBox.SetBinding(SfAutoComplete.FilteredItemsProperty, binding);
+            Binding filteredItemsBinding = new Binding();
+            filteredItemsBinding.Source = viewModel;
+            filteredItemsBinding.Path = "Items";
+            filteredItemsBinding.Mode = BindingMode.TwoWay;
+            comboBox.SetBinding(SfAutoComplete.FilteredItemsProperty, filteredItemsBinding);
             StackLayout stack = new StackLayout()
             {
                 Orientation = StackOrientation.Vertical,
                 Margin = new Thickness(0, 50, 0, 0)
             };
 
-            Label label = new Label()
+            Label filteredItemsLabel = new Label()
             {
                 Text = "Filtered Items",
                 FontSize = 20,
@@ -676,10 +676,10 @@ namespace AutoComplete
                 RowHeight = 30
             };
 
-            Binding binding1 = new Binding();
-            binding1.Source = viewModel;
-            binding1.Path = "Items";
-            MainListView.SetBinding(ListView.ItemsSourceProperty, binding1);
+            Binding itemSource_binding = new Binding();
+            itemSource_binding.Source = viewModel;
+            itemSource_binding.Path = "Items";
+            MainListView.SetBinding(ListView.ItemsSourceProperty, itemSource_binding);
 
             DataTemplate itemTemplate = new DataTemplate(() =>
             {
@@ -688,16 +688,16 @@ namespace AutoComplete
                     Orientation = StackOrientation.Horizontal
                 };
 
-                Label label1 = new Label();
-                label1.SetBinding(Label.TextProperty, "Name");
-                layout.Children.Add(label1);
+                Label nameLabel = new Label();
+                nameLabel.SetBinding(Label.TextProperty, "Name");
+                layout.Children.Add(nameLabel);
 
                 return new ViewCell { View = layout };
             });
 
             MainListView.ItemTemplate = itemTemplate;
 
-            stack.Children.Add(label);
+            stack.Children.Add(filteredItemsLabel);
             stack.Children.Add(MainListView);
             stackLayout.Children.Add(comboBox);
             stackLayout.Children.Add(stack);
@@ -876,18 +876,18 @@ namespace AutoComplete
             };
 
             autoComplete.FilterCollectionChanged += AutoComplete_FilterCollectionChanged;
-            Binding binding = new Binding();
-            binding.Source = viewModel;
-            binding.Path = "Items";
-            binding.Mode = BindingMode.TwoWay;
-            autoComplete.SetBinding(SfAutoComplete.FilteredItemsProperty, binding);
+            Binding filteredItemsBinding = new Binding();
+            filteredItemsBinding.Source = viewModel;
+            filteredItemsBinding.Path = "Items";
+            filteredItemsBinding.Mode = BindingMode.TwoWay;
+            autoComplete.SetBinding(SfAutoComplete.FilteredItemsProperty, filteredItemsBinding);
             StackLayout stack = new StackLayout()
             {
                 Orientation = StackOrientation.Vertical,
                 Margin = new Thickness(0, 50, 0, 0)
             };
 
-            Label label = new Label()
+            Label filteredItemsLabel = new Label()
             {
                 Text = "Filtered Items",
                 FontSize = 20,
@@ -907,16 +907,16 @@ namespace AutoComplete
                     Orientation = StackOrientation.Horizontal
                 };
 
-                Label label1 = new Label();
-                label1.SetBinding(Label.TextProperty, "Name");
-                layout.Children.Add(label1);
+                Label nameLabel = new Label();
+                nameLabel.SetBinding(Label.TextProperty, "Name");
+                layout.Children.Add(nameLabel);
 
                 return new ViewCell { View = layout };
             });
 
             MainListView.ItemTemplate = itemTemplate;
 
-            stack.Children.Add(label);
+            stack.Children.Add(filteredItemsLabel);
             stack.Children.Add(MainListView);
             stackLayout.Children.Add(autoComplete);
             stackLayout.Children.Add(stack);

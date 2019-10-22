@@ -89,7 +89,7 @@ this.BindingContext = new ShipmentViewModel();
 
 {% highlight xaml %}
 
-<progressBar:SfStepProgressBar x:Name="stepProgress">
+<progressBar:SfStepProgressBar x:Name="stepProgress" BindableLayout.ItemsSource="{Binding ShipmentInfoCollection}" >
 …
 </progressBar:SfStepProgressBar>
 
@@ -108,7 +108,7 @@ BindableLayout.SetItemsSource(sfStepProgressBar, ShipmentViewModel.ShipmentInfoC
 
 {% highlight xaml %}
 
-               <progressBar:SfStepProgressBar TitleAlignment="Start" BackgroundColor="Transparent" TitleSpace="10" Orientation="Vertical" x:Name="stepProgress">
+               <progressBar:SfStepProgressBar BindableLayout.ItemsSource="{Binding ShipmentInfoCollection}" TitleAlignment="Start" BackgroundColor="Transparent" TitleSpace="10" Orientation="Vertical" x:Name="stepProgress">
                     <BindableLayout.ItemTemplate>
                         <DataTemplate>
                             <progressBar:StepView x:Name="stepView" ProgressValue="{Binding ProgressValue}" Status="{Binding Status}">
@@ -134,6 +134,6 @@ BindableLayout.SetItemsSource(sfStepProgressBar, ShipmentViewModel.ShipmentInfoC
 
 {% endhighlight %}
 
-(overview_images/bindable_layout.png)
+![Xamarin Forms StepProgressBar with Bimdable Layout](overview_images/bindable_layout.png)
 
 You can download the entire source of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Shipment_Tracking-237228452.zip)

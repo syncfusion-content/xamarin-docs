@@ -9,6 +9,10 @@ documentation: ug
 
 From version 3.5, Xamarin.Forms has introduced a new approach called BindableLayout that works with all the layouts derived from Layout&lt;T&gt;. By simply setting ItemTemplate and ItemsSource, BindableLayout will create a group of UI (for the given ItemTemplate) for every data in the ItemsSource and add them as children.
 
+# Bindable Layout
+
+The [SfStepProgressBar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfStepProgressBar.html) allows to set a collection of items by setting `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties. The StepProgressBar supports Bindable Layout in Xamarin.Forms version 3.5 and above.
+
 ## Initialize view model
 
 {% highlight c# %}

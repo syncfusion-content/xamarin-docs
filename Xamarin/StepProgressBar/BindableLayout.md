@@ -9,6 +9,10 @@ documentation: ug
 
 From version 3.5, Xamarin.Forms has introduced a new approach called BindableLayout that works with all the layouts derived from Layout&lt;T&gt;. By simply setting ItemTemplate and ItemsSource, BindableLayout will create a group of UI (for the given ItemTemplate) for every data in the ItemsSource and add them as children.
 
+# Bindable Layout
+
+The [SfStepProgressBar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.SfStepProgressBar.html) allows to set a collection of items by setting `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties. The StepProgressBar supports Bindable Layout in Xamarin.Forms version 3.5 and above.
+
 ## Initialize view model
 
 {% highlight c# %}
@@ -89,7 +93,7 @@ this.BindingContext = new ShipmentViewModel();
 
 {% highlight xaml %}
 
-<progressBar:SfStepProgressBar x:Name="stepProgress">
+<progressBar:SfStepProgressBar x:Name="stepProgress" BindableLayout.ItemsSource="{Binding ShipmentInfoCollection}" >
 …
 </progressBar:SfStepProgressBar>
 
@@ -108,7 +112,7 @@ BindableLayout.SetItemsSource(sfStepProgressBar, ShipmentViewModel.ShipmentInfoC
 
 {% highlight xaml %}
 
-               <progressBar:SfStepProgressBar TitleAlignment="Start" BackgroundColor="Transparent" TitleSpace="10" Orientation="Vertical" x:Name="stepProgress">
+               <progressBar:SfStepProgressBar BindableLayout.ItemsSource="{Binding ShipmentInfoCollection}" TitleAlignment="Start" BackgroundColor="Transparent" TitleSpace="10" Orientation="Vertical" x:Name="stepProgress">
                     <BindableLayout.ItemTemplate>
                         <DataTemplate>
                             <progressBar:StepView x:Name="stepView" ProgressValue="{Binding ProgressValue}" Status="{Binding Status}">
@@ -134,6 +138,6 @@ BindableLayout.SetItemsSource(sfStepProgressBar, ShipmentViewModel.ShipmentInfoC
 
 {% endhighlight %}
 
-(overview_images/bindable_layout.png)
+![Xamarin Forms StepProgressBar with Bimdable Layout](overview_images/bindable_layout.png)
 
 You can download the entire source of this demo from [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Shipment_Tracking-237228452.zip)

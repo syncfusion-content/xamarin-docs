@@ -40,8 +40,8 @@ The `SfDataForm`control has built-in `AutomationId` support for inner elements. 
 
 <tr>
 <td>Switch Editor</td>
-<td>Toggle  ” + LabelText</td>
-<td>Toggle Registered</td>
+<td>"Toggle ” + LabelText</td>
+<td>Toggle TrackHours</td>
 </tr>
 
 <tr>
@@ -77,19 +77,19 @@ The `SfDataForm`control has built-in `AutomationId` support for inner elements. 
 <tr>
 <td>Numeric Editor</td>
 <td>“Enter ” + LabelText</td>
-<td>Enter Numeric</td>
+<td>Enter Value</td>
 </tr>
 
 <tr>
 <td>NumericUpDown Editor</td>
 <td>“Enter ” + LabelText</td>
-<td>Enter Value</td>
+<td>Enter Amount</td>
 </tr>
 
 <tr>
 <td>Checkbox Editor</td>
-<td>Checkbox ” + LabelText</td>
-<td>Enter CheckBox</td>
+<td>"Checkbox ” + LabelText</td>
+<td>Checkbox Registered</td>
 </tr>
 
 <tr>
@@ -146,7 +146,7 @@ The `SfDataForm`control has built-in `AutomationId` support for inner elements. 
 <tr>
 <td>Dropdown Editor</td>
 <td>LabelText</td>
-<td>Team</td>
+<td>ItemName</td>
 </tr>
 
 <tr>
@@ -158,19 +158,25 @@ The `SfDataForm`control has built-in `AutomationId` support for inner elements. 
 <tr>
 <td>Numeric Editor</td>
 <td>LabelText</td>
-<td>Numeric</td>
+<td>Value</td>
 </tr>
 
 <tr>
 <td>NumericUpDown Editor</td>
 <td>LabelText</td>
-<td>Value</td>
+<td>Amount</td>
 </tr>
 
 <tr>
 <td>Masked Editor</td>
 <td>LabelText</td>
 <td>Contact</td>
+</tr>
+
+<tr>
+<td>Picker</td>
+<td>LabelText</td>
+<td>Name</td>
 </tr>
 
 </table>

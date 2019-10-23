@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started for Essential Syncfusion.Xamarin.Forms Chart
-description: How to create a chart, add series, legend and multiple Y axis in Chart.
+description: A quick tour to create a chart with title, series, legend, data labels, tooltip, and multiple Y axis in Xamarin.Forms Chart.
 platform: xamarin
 control: Chart
 documentation: ug

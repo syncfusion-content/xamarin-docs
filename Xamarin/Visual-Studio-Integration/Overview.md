@@ -22,7 +22,7 @@ The Syncfusion provides the following extension supports in Visual Studio:
 3.	[Toolbox](https://help.syncfusion.com/xamarin/visual-studio-integration/visual-studio-extensions/toolbox-control): Add the Syncfusion Xamarin components in Xamarin.Forms designer from Syncfusion Toolbox.
 
 
-**No project selected in Visual Studio**
+**Essential Studio for Xamarin in Visual Studio**
 
 ![Syncfusion Menu when No project selected in Visual Studio](Overview_images/Syncfusion_Menu_OverView1.png)
 

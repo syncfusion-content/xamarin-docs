@@ -11,6 +11,86 @@ documentation: UG
 
 The `SfDataForm`control has built-in `AutomationId` support for inner elements. Please find the following table of Automation IDs for inner elements. To keep unique `AutomationId`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`.  For example, if you set `SfDataForm` `AutomationId` as `SfDataForm.AutomationId = ContactsInfo`, then the Automation framework will interact with the text editor as `ContactsInfoEnter  FirstName`. The following screenshots denote the AutomationIds for inner elements.
 
+### Floating label layout
+
+<table>
+<tr>
+<th align="center" >Editor</th>
+<th align="center" >AutomationId Format</th>
+<th align="center" >Example</th>
+</tr>
+
+<tr>
+<td>Text editor</td>
+<td>LabelText</td>
+<td>FirstName</td>
+</tr>
+
+<tr>
+<td>Multiline text editor</td>
+<td>LabelText</td>
+<td>Address</td>
+</tr>
+
+<tr>
+<td>Password Editor</td>
+<td>LabelText</td>
+<td>Password</td>
+</tr>
+
+<tr>
+<td>Date Editor</td>
+<td>LabelText</td>
+<td>Birth Date</td>
+</tr>
+
+<tr>
+<td>Time editor</td>
+<td>LabelText</td>
+<td>Birth Time</td>
+</tr>
+
+<tr>
+<td>Dropdown Editor</td>
+<td>LabelText</td>
+<td>ItemName</td>
+</tr>
+
+<tr>
+<td>AutoComplete Editor</td>
+<td>LabelText</td>
+<td>Country  Input Field</td>
+</tr>
+
+<tr>
+<td>Numeric Editor</td>
+<td>LabelText</td>
+<td>Value</td>
+</tr>
+
+<tr>
+<td>NumericUpDown Editor</td>
+<td>LabelText</td>
+<td>Amount</td>
+</tr>
+
+<tr>
+<td>Masked Editor</td>
+<td>LabelText</td>
+<td>Contact</td>
+</tr>
+
+<tr>
+<td>Picker</td>
+<td>LabelText</td>
+<td>Name</td>
+</tr>
+
+</table>
+
+![AutomationId support Floating label layout in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-floatinglabel-layout.png)
+![AutomationId support Floating label layout in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-floating-label-layout.png)
+
 ### Default Layout
 
 <table>
@@ -103,85 +183,3 @@ The `SfDataForm`control has built-in `AutomationId` support for inner elements. 
 ![AutomationId support Default layout in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-default-layout.png)
 
 ![AutomationId support Default layout in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-defaultlayout.png)
-
-### TextInput Layout
-
-<table>
-<tr>
-<th align="center" >Editor</th>
-<th align="center" >AutomationId Format</th>
-<th align="center" >Example</th>
-</tr>
-
-<tr>
-<td>Text editor</td>
-<td>LabelText</td>
-<td>FirstName</td>
-</tr>
-
-<tr>
-<td>Multiline text editor</td>
-<td>LabelText</td>
-<td>Address</td>
-</tr>
-
-<tr>
-<td>Password Editor</td>
-<td>LabelText</td>
-<td>Password</td>
-</tr>
-
-<tr>
-<td>Date Editor</td>
-<td>LabelText</td>
-<td>Birth Date</td>
-</tr>
-
-<tr>
-<td>Time editor</td>
-<td>LabelText</td>
-<td>Birth Time</td>
-</tr>
-
-<tr>
-<td>Dropdown Editor</td>
-<td>LabelText</td>
-<td>ItemName</td>
-</tr>
-
-<tr>
-<td>AutoComplete Editor</td>
-<td>LabelText</td>
-<td>Country  Input Field</td>
-</tr>
-
-<tr>
-<td>Numeric Editor</td>
-<td>LabelText</td>
-<td>Value</td>
-</tr>
-
-<tr>
-<td>NumericUpDown Editor</td>
-<td>LabelText</td>
-<td>Amount</td>
-</tr>
-
-<tr>
-<td>Masked Editor</td>
-<td>LabelText</td>
-<td>Contact</td>
-</tr>
-
-<tr>
-<td>Picker</td>
-<td>LabelText</td>
-<td>Name</td>
-</tr>
-
-</table>
-
-
-![AutomationId support Textinput layout in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-textinput-layout.png)
-
-![AutomationId support TextInput layout in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-text-input-layout.png)

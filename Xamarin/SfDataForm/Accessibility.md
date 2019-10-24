@@ -71,7 +71,7 @@ The `SfDataForm`control has built-in `AutomationId` support for inner elements. 
 <tr>
 <td>AutoComplete Editor</td>
 <td>“Enter ” + LabelText</td>
-<td>Enter Country</td>
+<td>Enter Country Input Field</td>
 </tr>
 
 <tr>
@@ -100,9 +100,9 @@ The `SfDataForm`control has built-in `AutomationId` support for inner elements. 
 
 </table>
 
-![AutomationId support in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-automationid.png)
+![AutomationId support Default layout in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-default-layout.png)
 
-![AutomationId support in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-automation-id.png)
+![AutomationId support Default layout in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-defaultlayout.png)
 
 ### TextInput Layout
 
@@ -152,7 +152,7 @@ The `SfDataForm`control has built-in `AutomationId` support for inner elements. 
 <tr>
 <td>AutoComplete Editor</td>
 <td>LabelText</td>
-<td>Country</td>
+<td>Country  Input Field</td>
 </tr>
 
 <tr>
@@ -180,3 +180,8 @@ The `SfDataForm`control has built-in `AutomationId` support for inner elements. 
 </tr>
 
 </table>
+
+
+![AutomationId support Textinput layout in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-textinput-layout.png)
+
+![AutomationId support TextInput layout in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-text-input-layout.png)

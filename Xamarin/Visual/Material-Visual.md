@@ -7,11 +7,11 @@ control: General
 documentation: ug
 ---
 
-Xamarin.Forms has provided material design support for the framework controls in Xamarin.Forms 3.6 version for iOS and Android platform. When it is enabled in the application, all the supported views will render in uniform look and feel.
+Xamarin.Forms has provided material design support for the framework controls in 3.6 version for iOS and Android platform. When it is enabled in the application, all the supported views will render in uniform look and feel.
 
 To learn about the configurations needed in the application level, please follow the detailed guidelines in this [link](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/visual/material-visual).
 
-To achieve this, we need to set the property “Visual” as "Material". 
+To achieve this, we need to set the property ['Visual'](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.visual?view=xamarin-forms#Xamarin_Forms_VisualElement_Visual) as ['Material'](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualmarker.material?view=xamarin-forms). 
 
 {% highlight xaml %}
 <StackLayout Spacing="50" VerticalOptions="Center" HorizontalOptions="Center">
@@ -22,7 +22,7 @@ To achieve this, we need to set the property “Visual” as "Material".
 
 ![MaterialVisual](Images/Material.png)
 
-"Visual" is a property which can be set to the element or it's parent or the page it self. Due to this, you can set “Visual” as “Material” for the root element and override it as “Default” for specific element if needed.
+"Visual" is a property which can be set to the element or it's parent or the page it self. Due to this, you can set ['Visual'](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.visual?view=xamarin-forms#Xamarin_Forms_VisualElement_Visual) as ['Material'](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualmarker.material?view=xamarin-forms) for the root element and override it as “Default” for specific element if needed.
 
 {% highlight xaml %}
 <StackLayout Visual="Material" Spacing="50" VerticalOptions="Center" HorizontalOptions="Center">
@@ -35,19 +35,19 @@ To achieve this, we need to set the property “Visual” as "Material".
 
 ## Apply material visual for Syncfusion controls
 
-To use this feature with Syncfusion controls, you need not to make any additional configurations. The procedure is exactly same as the above. By simply setting the "Visual" property as "Material" either to the Syncfusion control or to any of its parent views, the UI will be updated. In Volume 3, 2019, we have provided this support for the following controls. 
+To use this feature with Syncfusion controls, you need not to make any additional configurations. The procedure is exactly same as the above. By simply setting the ['Visual'](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.visual?view=xamarin-forms#Xamarin_Forms_VisualElement_Visual) as ['Material'](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualmarker.material?view=xamarin-forms) either to the Syncfusion control or to any of its parent views, the UI will be updated. In Volume 3, 2019, we have provided this support for the following controls. 
 
 * Calendar
 * Button
-* Check box
-* Radio button
+* CheckBox
+* Radio Button
 * Chips
-* Range slider
-* Schedule
+* Range Slider
+* Scheduler
 * Switch
-* Tabbed view
+* Tabbed View
 * DataGrid
-* PopupLayout
+* Popup
 * Picker
 * ListView
 * TreeView

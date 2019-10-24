@@ -51,7 +51,7 @@ The `SfCalendar` control has built-in `AutomationId` for inner elements. Please 
 <tr>
 <td>Inline View , Agenda View appointment</td>
 <td>Subject hh tt-hh tt dd/MMMM/yyyy</td>
-<td>Consulting 10AM-12PM  01/July/2019</td>
+<td>Consulting 10 AM-12 PM  01/July/2019</td>
 </tr>
 
 <tr>

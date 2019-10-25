@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Corner shape customization of Syncfusion Backdrop Page
-description: How to customize a corner shape
+description: This section explains how to customize the corners of the front layer of the backdrop to flat and curve shapes. 
 platform: xamarin
 control: SfBackdropPage
 documentation: ug

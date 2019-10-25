@@ -11,7 +11,9 @@ documentation: ug
 
 This section provides a quick overview for working with the SfDataGrid for Xamarin.Forms. Walk through the entire process of creating a real world of this control.
 
-N> Watch the video: [Xamarin.Forms DataGrid - Getting Started (YouTube)](https://youtu.be/rdPStxCSy5w)
+To get start quickly with Xamarin.Forms DataGrid, you can check on this video:
+<style>#XamarinDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
+<iframe id='XamarinDataGridVideoTutorial' src='https://www.youtube.com/embed/rdPStxCSy5w'></iframe>
 
 ## Assembly deployment
 

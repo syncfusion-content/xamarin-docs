@@ -7,7 +7,7 @@ control: Calendar
 documentation: ug
 ---
 
-# Customization of Calendar control
+# Customization of Calendar (SfCalendar) control in Xamarin 
 
 ## How to Perform an Operation while a Calendar Cell is Tapped?
 

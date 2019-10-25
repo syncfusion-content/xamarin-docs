@@ -180,6 +180,8 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
+![DataGrid with rectangular pager buttons](SfDataGrid_images/RectangularPagerButtons.png)
+
 ## Generating numeric buttons
 
 The `SfDataPager` allows you to choose the generation mode of numeric buttons using the [SfDataPager.NumericButtonsGenerateMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonsGenerateMode.html) property. The numeric buttons can either be generated in view automatically or by specifying directly in the [SfDataPager.NumericButtonCount](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager~NumericButtonCount.html) property. 

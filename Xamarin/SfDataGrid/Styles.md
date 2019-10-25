@@ -320,6 +320,9 @@ public class CustomStyle : DataGridStyle
 }
 {% endhighlight %}
 
+The following screenshot shows the final outcome upon execution of the above code:
+![DataGrid with summary row border customization](SfDataGrid_images/SummaryBorderCustomization.png)
+
 ## Customizing sort icons in the header
 
 Any desired image can be loaded as the sort indicator using the [GetHeaderSortIndicatorDown](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorDown.html) and [GetHeaderSortIndicatorUp](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetHeaderSortIndicatorUp.html) overriding from the [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) class. To change the sort indicators, follow the code example:

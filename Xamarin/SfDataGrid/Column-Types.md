@@ -648,6 +648,12 @@ The following table provides the list of properties in GridTemplateColumn:
 <td>Null</td>
 </tr>
 <tr>
+<td>EditTemplate</td>
+<td>DataTemplate</td>
+<td>Gets or sets the template that is used to edit the contents of the record cells.</td>
+<td>Null</td>
+</tr>
+<tr>
 <td>CellTemplateSelector</td>
 <td>DataTemplateSelector</td>
 <td>Gets or sets the template selector that is used to display the contents of the record cells.</td>
@@ -813,6 +819,8 @@ The `SfDataGrid` allows you to load any custom view in edit mode using the [Edit
     </syncfusion:SfDataGrid>
 </ContentPage.ContentView>
 {% endhighlight %}
+
+![DataGrid with edit template column](SfDataGrid_images/EditTemplateColumn.png)
 
 ## CellTemplateSelector
 

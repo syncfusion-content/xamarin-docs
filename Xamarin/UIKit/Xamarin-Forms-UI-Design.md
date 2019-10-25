@@ -9,28 +9,116 @@ documentation: ug
 
 # Syncfusion Xamarin Forms UI Design 
 
-The UI Kit offers a set of easy-to-use, extendable, and adaptable XAML UI pages crafted for Xamarin.Forms applications. These pages cover the most generic mobile, desktop, and tablet UI patterns, and are designed for enhancing the end-user experience.
+The Essential UIKit includes above 60 screens which is under the following categories. 
 
-## Easy Integration
+## Forms	
 
-The pages can be integrated in Xamarin applications by just setting up the navigation among the XAML pages and updating the business logic in the view models.
+* Simple Login Page
+* Simple Sign Up Page
+* Simple Reset Password Page
+* Simple Forgot Password Page
+* Login Page With Gradient
+* Sign Up Page With Gradient
+* Reset Password Page With Gradient
+* Forgot Password Page With Gradient
+* Add Contact Page
+* Tabbed Login Page
+* Add Card Page
+* Add Profile Page
  
-## Phones, Tablets, and Desktops
+## Catalog	
 
-The XAML pages are tested on various screen sizes. The pages are adaptable to landscape and portrait modes in mobile, tablet, and desktop devices.
- 
-## MVVM Design Pattern
+* Category Tile Page
+* Catalog Tile Page
+* Catalog List Page
+* Article List Page
+* Article Tile Page
+* Product Home Page
 
-The XAML pages are designed with MVVM pattern, ensuring a clean separation between the UI and the application logic.
- 
-## Completely Open Source
+## Detail	Product Detail Page
 
-Users will get full access to the complete code base. The UI Kit is maintained in a public GitHub repository as completely open source under an MIT license.
- 
-## Custom Branding
+* Feedback Detail Page
+* Article Detail Page
 
-You can easily edit the logo, background image, fonts, and a lot more by changing a few lines of code. The pages in the UI Kit have different styles and themes for every XAML element that can be easily modified.
- 
-## Help from Folks at Syncfusion
+## Article	
 
-If you would like to request a new screen or report a bug in existing screens, then create a feature request or submit a bug through our Syncfusion feedback portal.
+* Article Detail with Comments Page
+* My Article Page
+	
+## Reviews and Ratings	
+
+* Feedback Page
+* Review Page
+
+## Contact Us	
+
+* Contact Us Page
+
+## About Us	
+
+* Simple About Us Page
+* About Us Page with Cards
+* About Us Page with Parallax Scrolling
+
+## Navigation	
+
+* Bottom Navigation Page
+* Navigation List Card Page
+* Navigation Tile Card Page
+
+## Onboarding	
+
+* Walkthrough Page
+
+## Error and Empty	
+
+* Empty Cart Page
+* Location Denied Page
+* No Credits Page
+* No Internet Connection Page
+* No Item Page
+* No Photos page
+* No Tasks page
+* Not Enough Credits Page
+* No Videos Page
+* Payment Failed Page
+* Something Went Wrong Page
+
+## Transaction	
+
+* Checkout Page
+* Payment Success Page
+* Payment Failure Page
+
+## Bookmark
+
+* Wishlist Page
+* Cart Page
+* Article Bookmarks Page
+
+## History	
+
+* Transaction History Page
+* My Orders Page
+
+## Social
+
+* Social Profile with Connections Page
+* Social Profile with Card Page
+* Social Profile with Interest Page
+
+## Profile
+
+* Author Profile Page
+* Contacts Page
+* Chat Profile Page
+* Master Page
+
+## Tracking
+
+* Product Delivery Tracking Page
+
+## Chat
+
+* Recent Chat Page
+* Chat Conversation Page

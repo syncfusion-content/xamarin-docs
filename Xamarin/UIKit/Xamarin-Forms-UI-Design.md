@@ -35,6 +35,11 @@ The Essential UIKit includes above 60 screens which is under the following categ
 * Article Tile Page
 * Product Home Page
 
+## Chat
+
+* Recent Chat Page
+* Chat Conversation Page
+
 ## Detail	Product Detail Page
 
 * Feedback Detail Page
@@ -118,7 +123,3 @@ The Essential UIKit includes above 60 screens which is under the following categ
 
 * Product Delivery Tracking Page
 
-## Chat
-
-* Recent Chat Page
-* Chat Conversation Page

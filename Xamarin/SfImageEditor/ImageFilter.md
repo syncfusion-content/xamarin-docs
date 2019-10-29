@@ -64,7 +64,7 @@ The brightness represents how bright the color is. The value of brightness effec
 public MainPage()
 {               
     . . .
-    editor.ApplyImageEffect(ImageEffect.Brightness, 40);
+    editor.ApplyImageEffect(ImageEffect.Brightness, -60);
     . . .
 }
 

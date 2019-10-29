@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization of Syncfusion Calendar control in Xamarin.Forms
-description: How to Perform an operation while a calendar cell is Tapped
+description: How to section explains selection, usage of calendar events, custom views and navigation with Syncfusion Xamarin Calendar (SfCalendar) control.
 platform: Xamarin
 control: Calendar
 documentation: ug

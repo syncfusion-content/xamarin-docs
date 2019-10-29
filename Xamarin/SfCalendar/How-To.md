@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Customization of Syncfusion Calendar control in Xamarin.Forms
-description: How to Perform an operation while a calendar cell is Tapped
+description: How to section explains selection, usage of calendar events, custom views and navigation with Syncfusion Xamarin Calendar (SfCalendar) control.
 platform: Xamarin
 control: Calendar
 documentation: ug
 ---
 
-# Customization of Calendar control
+# Customization of Calendar (SfCalendar) control in Xamarin 
 
 ## How to Perform an Operation while a Calendar Cell is Tapped?
 
@@ -49,7 +49,7 @@ void Handle_OnCalendarTapped(object sender, CalendarTappedEventArgs e)
 
 {% endtabs %}
 
-## How to Perform an Operation when the Selected Date Get Changed?
+## How to get the selected date range from the calendar?
 
 We can perform an operation when the selected date get changed using [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionChanged_EV.html) event which returns the dates selected and dates deselected from the `SfCalendar`.
 
@@ -94,6 +94,9 @@ void Handle_SelectionChanged(object sender, SelectionChangedEventArgs e)
 	 
 	 //// Gets the added date range in Multi-range selection mode.
      IList<SelectionRange> selectionRange = e.NewRangeAdded;
+	 
+	 // You can get the SelectedRange Start date and End date
+     var selectedRange = calendar.SelectedRange;
 }
 	
 {% endhighlight %}

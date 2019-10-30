@@ -1,7 +1,7 @@
 ---
 layout: post 
 title: Automation in Xamarin TreeView Control | Syncfusion
-description: Describes about setting automation id to find and interact with inner elements in TreeView
+description: Describes about setting automation id to TreeView for automation framework to find and interact with control inner elements.
 platform: Xamarin
 control: TreeView
 documentation: ug

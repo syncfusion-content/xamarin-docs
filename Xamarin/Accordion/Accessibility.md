@@ -1,7 +1,7 @@
 ---
 layout: post 
 title: Automation in Xamarin Accordion Control | Syncfusion
-description: Describes about setting automation id to find and interact with inner elements in Accordion
+description: Describes about setting automation id to accordion for automation framework to find and interact with control inner elements.
 platform: Xamarin
 control: Accordion
 documentation: ug

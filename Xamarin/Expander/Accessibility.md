@@ -1,7 +1,7 @@
 ---
 layout: post 
 title: Automation in Xamarin Expander Control | Syncfusion
-description: Describes about setting automation id to find and interact with inner elements in Expander
+description: Describes about setting automation id to Expander for automation framework to find and interact with control inner elements.
 platform: Xamarin
 control: Expander
 documentation: ug

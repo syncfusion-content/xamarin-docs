@@ -1,7 +1,7 @@
 ---
 layout: post 
 title: Automation in Xamarin TreeView Control | Syncfusion
-description: Describes about setting automation id to find and interact with inner elements in TreeView
+description: Describes about setting automation id to TreeView for automation framework to find and interact with control inner elements.
 platform: Xamarin
 control: TreeView
 documentation: ug
@@ -22,7 +22,9 @@ For example, if we set TreeView's AutomationId as "Automation" then Automation f
 <tr>
 <td>Expander View</td>
 <td>ControlAutomationId+Item+ItemIndex Expander</td>
-<td>AutomationItem1 Expander</td>
+<td>AutomationItem1 Expander<br/>
+where `Automation` represents Control AutomationId, `Item1` represents Item text appended with item index which has been generated based on item position and `Expander` represents the expander dropdown icon. 
+</td>
 </tr>
 </table>
 

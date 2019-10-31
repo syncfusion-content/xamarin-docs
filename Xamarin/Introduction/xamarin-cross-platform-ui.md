@@ -21,7 +21,7 @@ Syncfusion Xamarin.Forms controls support following platforms,
 
 You can find the details about the platform-wise controls below. 
 
-| Control           | Android | iOS  | UWP | WPF | MacOS |
+| Control           | Android | iOS  | UWP | WPF | macOS |
 |-------------------|---------|------|-----|-----|-------|
 | DataGrid          | Yes     | Yes  | Yes | No  | Yes   |
 | Scheduler         | Yes     | Yes  | Yes | Yes | No    |

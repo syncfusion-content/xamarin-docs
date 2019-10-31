@@ -75,7 +75,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     global::Xamarin.Forms.Forms.Init();
     LoadApplication(new App());
-    SfRadioButtonRenderer.Init();
+    Syncfusion.XForms.iOS.Buttons.SfRadioButtonRenderer.Init();
     return base.FinishedLaunching(app, options);
 }
 {% endhighlight %}

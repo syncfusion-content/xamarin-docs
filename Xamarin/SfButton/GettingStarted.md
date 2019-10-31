@@ -74,8 +74,8 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     global::Xamarin.Forms.Forms.Init();
     LoadApplication(new App());
-    SfBorderRenderer.Init();
-    SfButtonRenderer.Init();
+    Syncfusion.XForms.iOS.Border.SfBorderRenderer.Init();
+    Syncfusion.XForms.iOS.Buttons.SfButtonRenderer.Init();
     return base.FinishedLaunching(app, options);
 }
 {% endhighlight %}

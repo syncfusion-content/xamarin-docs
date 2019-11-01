@@ -80,7 +80,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 | Shimmer           | Yes     | Yes  | No  | No  | No    |
 | GradientView      | Yes     | Yes  | Yes | Yes | No    |
 
-You can find the platforms supported by each Xamarin.Forms file-format libraries as below.
+You can find the platforms supported by each Xamarin.Forms file-format library as below.
 
 | Control           | Android | iOS  | UWP | WPF | macOS |
 |-------------------|---------|------|-----|-----|-------|

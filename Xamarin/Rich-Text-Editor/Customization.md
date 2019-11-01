@@ -13,7 +13,7 @@ The Xamarin Rich Text Editor control provides support for customizing the toolba
 
 ## ToolbarOptions
 
-The [`ToolbarOptions`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor~ToolbarOptions.html) property of [`SfRichTextEditor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html) is used to change the toolbar items presented in Toolbar. The following different toolbar items are available in [`SfRichTextEditor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html).
+The [`ToolbarOptions`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor~ToolbarOptions.html) property of [`SfRichTextEditor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html) is used to change the toolbar items presented in the toolbar. The following different toolbar items are available in [`SfRichTextEditor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html):
 
 * `Alignment`	
 * `Bold`
@@ -52,9 +52,9 @@ The [`ToolbarOptions`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichT
 
 {% endtabs %}
 
-## Customizing Toolbar
+## Customizing toolbar
 
-The appearance of toolbar can be customized. [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.ToolbarSettings~BackgroundColor.html) , [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.ToolbarSettings~TextColor.html) and [`ToolbarBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.ToolbarSettings~ToolbarBackgroundColor.html) properties helps to change the background color of toolbar item, text color of toolbar item and background color of toolbar respectively. The following code example illustrates how to customize the toolbar appearance.
+The appearance of toolbar can be customized. The [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.ToolbarSettings~BackgroundColor.html), [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.ToolbarSettings~TextColor.html), and [`ToolbarBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.ToolbarSettings~ToolbarBackgroundColor.html) properties helps to change the background color, text color of toolbar item, and background color of toolbar respectively. The following code example explains how to customize the toolbar appearance.
 
 {% tabs %} 
 

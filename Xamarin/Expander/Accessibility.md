@@ -23,7 +23,7 @@ For example, if we set Expander's AutomationId as "Automation" then Automation f
 <td>Expander Icon</td>
 <td>ControlAutomationId Expander</td>
 <td>AutomationItem1 Expander<br/><br/>
-where *AutomationItem1* represents Control AutomationId and *Expander* represents the expander dropdown icon. 
+where <b>AutomationItem1</b> represents Control AutomationId and <b>Expander</b> represents the expander dropdown icon. 
 </td>
 </tr>
 </table>

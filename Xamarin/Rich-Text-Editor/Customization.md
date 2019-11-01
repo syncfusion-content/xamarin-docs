@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization of Syncfusion Xamarin.Forms Rich Text Editor
-description: How to customize Syncfusion Xamarin.Forms Rich Text Editor.
+description: This page explains how to customize the appearance of Syncfusion Rich Text Editor for Xamarin.Forms platform.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug

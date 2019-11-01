@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Syncfusion Xamarin.Forms Cross platform UI  | Syncfusion
+title:  Syncfusion Xamarin.Forms Cross Platform UI  | Syncfusion
 description: The Syncfusion Xamarin.Forms cross platform UI controls are an ideal choice for developing cross platform applications in Android, iOS, UWP, WPF, and macOS.
 platform: xamarin
 control: Xamarin
@@ -9,7 +9,7 @@ documentation: ug
 
 # Syncfusion Xamarin.Forms cross platform UI controls
 
-The Syncfusion Xamarin.Forms cross platform UI controls are an ideal choice for developing rich cross platform applications with .NET from a single shared code base. You can build more responsive, interactive, and creative application that run on multiple platforms and devices with various form factors. Some of the cool features like theming and customization options makes the controls a perfect once for your cross-platform application.
+The Syncfusion Xamarin.Forms cross platform UI controls are an ideal choice for developing rich cross platform applications with .NET from a single shared code base. You can build more responsive, interactive, and creative application that run on multiple platforms and devices with various form factors. Some of the cool features like theming and customization options makes the controls a perfect one for your cross-platform application.
 
 Syncfusion Xamarin.Forms controls support following platforms,
 
@@ -19,7 +19,7 @@ Syncfusion Xamarin.Forms controls support following platforms,
 * WPF
 * macOS
 
-You can find the details about the platform-wise controls below. 
+You can find the platforms supported by each Xamarin.Forms UI control as below.
 
 | Control           | Android | iOS  | UWP | WPF | macOS |
 |-------------------|---------|------|-----|-----|-------|
@@ -76,10 +76,15 @@ You can find the details about the platform-wise controls below.
 | Range Slider      | Yes     | Yes  | Yes | No  | No    |
 | Rating            | Yes     | Yes  | Yes | No  | No    |
 | Segmented Control | Yes     | Yes  | Yes | Yes | No    |
+| EffectsView       | Yes     | Yes  | No  | No  | No    |
+| Shimmer           | Yes     | Yes  | No  | No  | No    |
+| GradientView      | Yes     | Yes  | Yes | Yes | No    |
+
+You can find the platforms supported by each Xamarin.Forms file-format libraries as below.
+
+| Control           | Android | iOS  | UWP | WPF | macOS |
+|-------------------|---------|------|-----|-----|-------|
 | Excel             | Yes     | Yes  | Yes | No  | No    |
 | PDF               | Yes     | Yes  | Yes | No  | No    |
 | Word              | Yes     | Yes  | Yes | No  | No    |
 | PowerPoint        | Yes     | Yes  | Yes | No  | No    |
-| EffectsView       | Yes     | Yes  | No  | No  | No    |
-| Shimmer           | Yes     | Yes  | No  | No  | No    |
-| GradientView      | Yes     | Yes  | Yes | Yes | No    |

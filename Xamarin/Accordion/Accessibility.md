@@ -24,7 +24,7 @@ For example, if we set Accordion's AutomationId as "Automation" then Automation 
 <td>ControlAutomationId+Item+ItemIndex Expander</td>
 <td>
 AutomationItem1 Expander<br/><br/>
-where *Automation* represents Control AutomationId, *Item1* represents Item text appended with item index which has been generated based on item position and *Expander* represents the expander dropdown icon. 
+where <b>Automation</b> represents Control AutomationId, <b>Item1</b> represents Item text appended with item index which has been generated based on item position and <b>Expander</b> represents the expander dropdown icon. 
 </td>
 </tr>
 </table>

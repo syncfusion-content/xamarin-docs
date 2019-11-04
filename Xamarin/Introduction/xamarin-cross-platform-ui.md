@@ -43,7 +43,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 | [Digital Gauge](https://help.syncfusion.com/xamarin/digital-gauge/overview)     | Yes     | Yes  | Yes | No  | No    |
 | [Linear Gauge](https://help.syncfusion.com/xamarin/linear-gauge/overview)      | Yes     | Yes  | Yes | No  | No    |
 | [Maps](https://help.syncfusion.com/xamarin/maps/overview)              | Yes     | Yes  | Yes | No  | No    |
-| Range Selector    | Yes     | Yes  | Yes | No  | No    |
+| [Range Selector](https://help.syncfusion.com/xamarin/datetime-range-navigator/overview)    | Yes     | Yes  | Yes | No  | No    |
 | [Sparkline](https://help.syncfusion.com/xamarin/sparkline/overview)         | Yes     | Yes  | Yes | No  | No    |
 | [Sunburst Chart](https://help.syncfusion.com/xamarin/sunburst-chart/overview)    | Yes     | Yes  | Yes | No  | No    |
 | [TreeMap](https://help.syncfusion.com/xamarin/treemap/overview)           | Yes     | Yes  | Yes | No  | No    |
@@ -69,7 +69,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 | [ComboBox](https://help.syncfusion.com/xamarin/combobox/overview)          | Yes     | Yes  | Yes | No  | No    |
 | [DataForm](https://help.syncfusion.com/xamarin/dataform/getting-started)          | Yes     | Yes  | Yes | No  | No    |
 | [Masked Entry](https://help.syncfusion.com/xamarin/masked-entry/overview)      | Yes     | Yes  | Yes | No  | No    |
-| Numeric Entry     | Yes     | Yes  | Yes | No  | No    |
+| [Numeric Entry](https://help.syncfusion.com/xamarin/numeric-entry/overview)     | Yes     | Yes  | Yes | No  | No    |
 | [NumericUpDown](https://help.syncfusion.com/xamarin/numericupdown/overview)     | Yes     | Yes  | Yes | No  | No    |
 | [Picker](https://help.syncfusion.com/xamarin/picker/overview)            | Yes     | Yes  | Yes | No  | No    |
 | [Radio Button](https://help.syncfusion.com/xamarin/radio-button/overview)      | Yes     | Yes  | Yes | Yes | No    |

@@ -34,20 +34,19 @@ The [`ToolbarOptions`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichT
 
 {% highlight xaml %} 
 
-         <richtexteditor:SfRichTextEditor x:Name="richtexteditor" VerticalOptions="FillAndExpand" ToolbarOptions="Bold,FontColor,NumberList" Text= "The Xamarin Rich Text Editor control is a WYSIWYG editor that provides a great user experience for composing or editing rich text content from your Xamarin.Forms applications." />
+<richtexteditor:SfRichTextEditor x:Name="richtexteditor" VerticalOptions="FillAndExpand" ToolbarOptions="Bold,FontColor,NumberList" Text= "The Xamarin Rich Text Editor control is a WYSIWYG editor that provides a great user experience for composing or editing rich text content from your Xamarin.Forms applications." />
        
 
 {% endhighlight %}
 
 {% highlight C# %} 
-		richtexteditor = new SfRichTextEditor()
-		{
-			VerticalOptions = LayoutOptions.FillAndExpand,
-			ToolbarOptions = ToolbarOptions.Bold| ToolbarOptions.FontColor| ToolbarOptions.NumberList,
-			Text = "The Xamarin Rich Text Editor control is a WYSIWYG editor that provides a great user experience for composing or editing rich text content from your Xamarin.Forms applications.",
-		};
-		this.Content = richtexteditor;
-
+richtexteditor = new SfRichTextEditor()
+{
+	VerticalOptions = LayoutOptions.FillAndExpand,
+	ToolbarOptions = ToolbarOptions.Bold| ToolbarOptions.FontColor| ToolbarOptions.NumberList,
+	Text = "The Xamarin Rich Text Editor control is a WYSIWYG editor that provides a great user experience for composing or editing rich text content from your Xamarin.Forms applications.",
+};
+this.Content = richtexteditor;
 {% endhighlight %}
 
 {% endtabs %}
@@ -59,22 +58,20 @@ The appearance of toolbar can be customized. The [`BackgroundColor`](https://hel
 {% tabs %} 
 
 {% highlight xaml %} 
-	    <richtexteditor:SfRichTextEditor x:Name="richtexteditor" VerticalOptions="FillAndExpand">
-            <richtexteditor:SfRichTextEditor.ToolbarSettings>
-                <richtexteditor:ToolbarSettings BackgroundColor="Orange" ToolbarBackgroundColor="DarkBlue" TextColor="DarkBlue"/>
-            </richtexteditor:SfRichTextEditor.ToolbarSettings>
-        </richtexteditor:SfRichTextEditor>      
+<richtexteditor:SfRichTextEditor x:Name="richtexteditor" VerticalOptions="FillAndExpand">
+    <richtexteditor:SfRichTextEditor.ToolbarSettings>
+        <richtexteditor:ToolbarSettings BackgroundColor="Orange" ToolbarBackgroundColor="DarkBlue" TextColor="DarkBlue"/>
+    </richtexteditor:SfRichTextEditor.ToolbarSettings>
+</richtexteditor:SfRichTextEditor>      
 {% endhighlight %}
 
 {% highlight C# %} 
-
-		richtexteditor = new SfRichTextEditor();
-		richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
-		richtexteditor.ToolbarSettings.BackgroundColor = Color.Orange;
-		richtexteditor.ToolbarSettings.TextColor = Color.DarkBlue;
-		richtexteditor.ToolbarSettings.ToolbarBackgroundColor = Color.DarkBlue;
-		this.Content = richtexteditor;
-
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToolbarSettings.BackgroundColor = Color.Orange;
+richtexteditor.ToolbarSettings.TextColor = Color.DarkBlue;
+richtexteditor.ToolbarSettings.ToolbarBackgroundColor = Color.DarkBlue;
+this.Content = richtexteditor;
 {% endhighlight %}
 
 {% endtabs %}

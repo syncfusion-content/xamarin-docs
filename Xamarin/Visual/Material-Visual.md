@@ -7,6 +7,8 @@ control: General
 documentation: ug
 ---
 
+# Xamarin.Forms material visual
+
 Xamarin.Forms has provided material design support for the framework controls in 3.6 version for iOS and Android platforms. When it is enabled in the application, all the supported views will render in a consistent look and feel.
 
 To learn about the configurations required at the application level, please follow the detailed guidelines in this [link](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/visual/material-visual).

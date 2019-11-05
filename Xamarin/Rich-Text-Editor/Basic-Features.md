@@ -17,18 +17,17 @@ The Xamarin Rich Text Editor control displays the text/formatted text(HTML strin
 
 {% highlight xaml %} 
 
-          <richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" Text= "The &lt;b&gt; rich text editor &lt;/b&gt; component is WYSIWYG editor that provides the best user experience to create and update the content" />
+ <richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" Text= "The &lt;b&gt; rich text editor &lt;/b&gt; component is WYSIWYG editor that provides the best user experience to create and update the content" />
 
 {% endhighlight %}
 
 {% highlight C# %} 
-		richtexteditor = new SfRichTextEditor()
-		{
-			VerticalOptions = LayoutOptions.FillAndExpand,			
-			Text = "The <b>rich text editor</b> component is WYSIWYG editor that provides the best user experience to create and update the content";
-		};
-		this.Content = richtexteditor;
-
+richtexteditor = new SfRichTextEditor()
+{
+	VerticalOptions = LayoutOptions.FillAndExpand,			
+	Text = "The <b>rich text editor</b> component is WYSIWYG editor that provides the best user experience to create and update the content";
+};
+this.Content = richtexteditor;
 {% endhighlight %}
 
 {% endtabs %}
@@ -41,7 +40,7 @@ The formatted text of Rich Text Editor can be retrieved using [`GetHtmlString`](
 
 {% highlight C# %} 
 
-		string HTMLText = richtexteditor.GetHtmlString();
+string HTMLText = richtexteditor.GetHtmlString();
 
 {% endhighlight %}
 

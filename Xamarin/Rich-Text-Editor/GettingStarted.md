@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started for Syncfusion Xamarin.Forms Rich Text Editor
-description: A quick tour to initial users on Syncfusion Rich Text Editor control for Xamarin.Forms platform.
+description: A quick tour to initial users for getting started with Syncfusion Rich Text Editor control for Xamarin.Forms platform.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug

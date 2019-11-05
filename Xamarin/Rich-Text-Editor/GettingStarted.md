@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started for Syncfusion Xamarin.Forms Rich Text Editor
-description: A quick tour to initial users on Syncfusion Rich Text Editor control for Xamarin.Forms platform.
+description: A quick tour to initial users for getting started with Syncfusion Rich Text Editor control for Xamarin.Forms platform.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug
@@ -119,8 +119,26 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ### Android
 
-The Android platform does not require any additional configuration to render the Rich Text Editor.
+The [SetSoftInputMode](https://developer.android.com/reference/android/view/Window#setSoftInputMode(int)) method need to be invoked in `OnCreate` method of `MainActivity` class  to resize the Rich Text Editor control when it is focused so that both editor and toolbar are visible.
 
+{% highlight C# %} 
+
+// In MainActivity.cs 
+protected override void OnCreate(Bundle savedInstanceState)
+{
+    TabLayoutResource = Resource.Layout.Tabbar;
+    ToolbarResource = Resource.Layout.Toolbar;
+
+    base.OnCreate(savedInstanceState);
+
+    Xamarin.Essentials.Platform.Init(this, savedInstanceState);
+    global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
+    LoadApplication(new App());
+
+    Window.SetSoftInputMode(Android.Views.SoftInput.AdjustResize);
+}
+{% endhighlight %}
 
 ## Initializing the Rich Text Editor
 

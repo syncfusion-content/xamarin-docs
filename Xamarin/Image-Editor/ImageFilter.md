@@ -47,7 +47,7 @@ The Saturation represents the intensity of the color. The value of the saturatio
 public MainPage()
 {               
     . . .
-    editor.ApplyImageEffect(ImageEffect. Saturation, 20);
+    editor.ApplyImageEffect(ImageEffect. Saturation, -80);
     . . .
 }
 
@@ -64,7 +64,7 @@ The brightness represents how bright the color is. The value of brightness effec
 public MainPage()
 {               
     . . .
-    editor.ApplyImageEffect(ImageEffect.Brightness, 80);
+    editor.ApplyImageEffect(ImageEffect.Brightness, -60);
     . . .
 }
 
@@ -81,7 +81,7 @@ The contrast represents the color contrast of an image. The value of contrast ef
 public MainPage()
 {               
     . . .
-    editor.ApplyImageEffect(ImageEffect. Contrast, 30);
+    editor.ApplyImageEffect(ImageEffect. Contrast, -30);
     . . .
 }
 

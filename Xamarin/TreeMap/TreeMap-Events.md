@@ -38,12 +38,14 @@ public MainPage()
     treemap.HighlightOnSelection = true;
 }
 
-private void Treemap_ItemSelected(object sender, TreeMapSelectedEventArgs e)
+private void Treemap_ItemSelected(object sender, TreeMapItemSelectedEventArgs e)
 {
-    var selectedItem = (e.Item as PopulationViewModel);
+    var selectedItem = e.Item as PopulationDetail;
     bool setSelection = e.IsSelected;
 }
 
 {% endhighlight %}
 
 {% endtabs %}
+
+N> We've suggested using DataSource to populate items, when you need Item property in TreeMapItemSelectedEventArgs.

@@ -203,7 +203,7 @@ schedule.MonthViewSettings.AgendaViewStyle = agendaViewStyle;
 ![Month agenda view appointment customization in schedule xamarin forms](monthview_images/xamarin.forms-schedule-agendaview-appearance.png)
 
 >**NOTE**
-Agenda View Appearance customization is not applicable for UWP platform.
+Agenda View Appearance customization is not applicable for UWP and WPF platforms.
 
 ### Agenda Item Template
 The default appearance of the Appointment can be customized by using the [AgendaItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaItemTemplate.html) property of the `MonthViewSettings`.
@@ -242,8 +242,6 @@ schedule.MonthViewSettings = monthViewSettings;
 
 ![Month agenda item template in schedule xamarin forms](monthview_images/xamarin.forms-schedule-agendaview-itemtemplate.png)
 
->**NOTE**
-Agenda item template support is not applicable for UWP platform.
 
 ### Agenda View Using Template Selector
 AgendaTemplateSelector can be used to choose a DataTemplate at runtime based on the value of a data-bound to agenda appointment property through `AgendaItemTemplate`. It lets you choose a different data template for each appointment, customizing the appearance of a particular inline appointment based on certain conditions. DataTemplateSelector for inline appointment includes `ScheduleAppointment` or custom appointment as `object` and `Schedule` as bindable object.
@@ -327,9 +325,6 @@ Used button to display day appointment and all day appointment.
 {% endtabs %}
 
 ![Month agenda item template selector in schedule xamarin forms](monthview_images/AgendaTemplateselector.png)
-
->**NOTE**
-Agenda item template selector support is not applicable for UWP platform.
 
 ## Month Navigation direction
 MonthView of Schedule can be navigated in both horizontal and vertical direction. You can change the direction of navigation through [MonthNavigationDirection](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~MonthNavigationDirection.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings.html) in `SfSchedule`, by default Month navigation direction is [Horizontal](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthNavigationDirections.html).
@@ -942,7 +937,7 @@ private void Schedule_OnMonthInlineAppointmentLoadedEvent(object sender, MonthIn
 ![Custom month inline appointment in schedule xamarin forms](monthview_images/xamarin.forms-schedule-inline-appointment-appearance.png)
 
 >**NOTE**
-Inline view customization - There is no support for inline view appointments customization using custom view, TimeTextSize, TimeTextFormat and TimeTextColor properties in XForms UWP.
+Inline view customization - There is no support for inline view appointments customization using custom view, TimeTextSize, TimeTextFormat and TimeTextColor properties in XForms UWP and WPF platforms.
 
 ## Selection
 You can customize the default appearance of selection UI in the month cells.

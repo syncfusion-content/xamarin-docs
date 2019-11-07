@@ -168,7 +168,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endhighlight %} 
 {% endtabs %}
 
-N> When effects view is applied to listview by adding `VisualElement as "Material"`, it is necessary to initialize `EffectsViewRenderer` in iOS.
+N> When effects view is applied to listview by adding `Visual as "Material"`, it is necessary to initialize `EffectsViewRenderer` in iOS.
 
 ### Universal Windows Platform (UWP)
 

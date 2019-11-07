@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started | SfListView | Xamarin | Syncfusion
-description: Describes about quick overview for getting started with the ListView in Xamarin.Forms.
+description: Describes about quick overview for getting started with the ListView in Xamarin.Forms, binding data, layouts, sorting, filtering and much more.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -155,16 +155,20 @@ To launch the SfListView in iOS, call the `SfListViewRenderer.Init()` in the `Fi
 
 {% tabs %}
 {% highlight c# %}
+using Syncfusion.XForms.iOS.EffectsView;
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     …
     global::Xamarin.Forms.Forms.Init ();
     SfListViewRenderer.Init();
+    SfEffectsViewRenderer.Init();  //Initialize only when effects view is added to Listview.
     LoadApplication (new App ());
     …
 }
 {% endhighlight %} 
 {% endtabs %}
+
+N> When effects view is applied to listview by adding `Visual as "Material"`, it is necessary to initialize `EffectsViewRenderer` in iOS.
 
 ### Universal Windows Platform (UWP)
 

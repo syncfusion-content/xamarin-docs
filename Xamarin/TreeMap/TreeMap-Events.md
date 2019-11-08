@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ItemSelected Event in Syncfusion SfTreeMap control
-description: This section explains the ItemSelected event support in TreeMap. 
+description: This section describes the ItemSelected event support of SfTreeMap control in Xamarin.Forms platform. 
 platform: xamarin
 control: TreeMap
 documentation: ug
@@ -38,12 +38,14 @@ public MainPage()
     treemap.HighlightOnSelection = true;
 }
 
-private void Treemap_ItemSelected(object sender, TreeMapSelectedEventArgs e)
+private void Treemap_ItemSelected(object sender, TreeMapItemSelectedEventArgs e)
 {
-    var selectedItem = (e.Item as PopulationViewModel);
+    var selectedItem = e.Item as PopulationDetail;
     bool setSelection = e.IsSelected;
 }
 
 {% endhighlight %}
 
 {% endtabs %}
+
+N> We've suggested using DataSource to populate items, when you need Item property value of TreeMapItemSelectedEventArgs.

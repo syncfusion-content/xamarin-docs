@@ -21,240 +21,1205 @@ Syncfusion Xamarin.Forms controls support following platforms,
 
 You can find the platforms supported by each Xamarin.Forms UI control as below.
 
-+-----------------+---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|   Category      |   Control           |   Android |   iOS |   UWP |   WPF |   macOS |
-|                 |                     |           |       |       |       |         |
-+-----------------+---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|   Grid          |   [DataGrid](https://help.syncfusion.com/xamarin/datagrid/overview)          |   Yes     |   Yes |   Yes |   No  |   Yes   |
-|                 |                     |           |       |       |       |         |
-+-----------------+---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|   DATA          |   [Barcode](https://help.syncfusion.com/xamarin/barcode/overview)           |   Yes     |   Yes |   Yes |   No  |   No    |
-|   VISUALIZATION |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Charts](https://help.syncfusion.com/xamarin/charts/overview)            |   Yes     |   Yes |   Yes |   Yes |   Yes   |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Circular Gauge](https://help.syncfusion.com/xamarin/circular-gauge/overview)    |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Diagram](https://help.syncfusion.com/xamarin/diagram/overview)           |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Digital Gauge](https://help.syncfusion.com/xamarin/digital-gauge/overview)     |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Linear Gauge](https://help.syncfusion.com/xamarin/linear-gauge/overview)      |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Maps](https://help.syncfusion.com/xamarin/maps/overview)              |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Range Selector](https://help.syncfusion.com/xamarin/datetime-range-navigator/overview)    |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Sparkline](https://help.syncfusion.com/xamarin/sparkline/overview)         |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Sunburst Chart](https://help.syncfusion.com/xamarin/sunburst-chart/overview)    |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [TreeMap](https://help.syncfusion.com/xamarin/treemap/overview)           |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-+-----------------+---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|   NAVIGATION    |   [Navigation Drawer](https://help.syncfusion.com/xamarin/navigation-drawer/overview) |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Radial Menu](https://help.syncfusion.com/xamarin/radial-menu/overview)       |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Rotator](https://help.syncfusion.com/xamarin/rotator/overview)           |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Tabbed View](https://help.syncfusion.com/xamarin/tabbed-view/overview)       |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Tree View](https://help.syncfusion.com/xamarin/treeview/overview)         |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-+-----------------+---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|   EDITORS       |   [Rich Text Editor](https://help.syncfusion.com/xamarin/rich-text-editor/overview)  |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Autocomplete](https://help.syncfusion.com/xamarin/autocomplete/overview)      |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [CheckBox](https://help.syncfusion.com/xamarin/checkbox/overview)          |   Yes     |   Yes |   Yes |   Yes |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [ComboBox](https://help.syncfusion.com/xamarin/combobox/overview)          |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [DataForm](https://help.syncfusion.com/xamarin/dataform/getting-started)          |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Masked Entry](https://help.syncfusion.com/xamarin/masked-entry/overview)      |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Numeric Entry](https://help.syncfusion.com/xamarin/numeric-entry/overview)     |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [NumericUpDown](https://help.syncfusion.com/xamarin/numericupdown/overview)     |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Picker](https://help.syncfusion.com/xamarin/picker/overview)            |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Radio Button](https://help.syncfusion.com/xamarin/radio-button/overview)      |   Yes     |   Yes |   Yes |   Yes |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Range Slider](https://help.syncfusion.com/xamarin/range-slider/overview)      |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Rating](https://help.syncfusion.com/xamarin/rating/overview)            |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Segmented Control](https://help.syncfusion.com/xamarin/segmented-control/overview) |   Yes     |   Yes |   Yes |   Yes |   No    |
-|                 |                     |           |       |       |       |         |
-+-----------------+---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|   Calendar      |   [Scheduler](https://help.syncfusion.com/xamarin/scheduler/overview)         |   Yes     |   Yes |   Yes |   Yes |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Calendar](https://help.syncfusion.com/xamarin/calendar/overview)          |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-+-----------------+---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|   BUTTONS       |   [Button](https://help.syncfusion.com/xamarin/button/overview)            |   Yes     |   Yes |   Yes |   Yes |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Chips](https://help.syncfusion.com/xamarin/chips/overview)             |   Yes     |   Yes |   Yes |   Yes |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Switch](https://help.syncfusion.com/xamarin/switch/overview)            |   Yes     |   Yes |   Yes |   Yes |   No    |
-|                 |                     |           |       |       |       |         |
-+-----------------+---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|   Layout        |   [Accordion](https://help.syncfusion.com/xamarin/accordion/getting-started)         |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Backdrop](https://help.syncfusion.com/xamarin/backdrop-page/overview)          |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Border](https://help.syncfusion.com/xamarin/border/overview)            |   Yes     |   Yes |   Yes |   Yes |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Cards](https://help.syncfusion.com/xamarin/cards/overview)             |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Carousel View](https://help.syncfusion.com/xamarin/carousel-view/overview)     |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Expander](https://help.syncfusion.com/xamarin/expander/getting-started)          |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [ListView](https://help.syncfusion.com/xamarin/listview/overview)          |   Yes     |   Yes |   Yes |   Yes |   Yes   |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Parallax View](https://help.syncfusion.com/xamarin/parallax-view/overview)     |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Popup](https://help.syncfusion.com/xamarin/popup/overview)             |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Text Input Layout](https://help.syncfusion.com/xamarin/text-input-layout/overview) |   Yes     |   Yes |   Yes |   Yes |   No    |
-|                 |                     |           |       |       |       |         |
-+-----------------+---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|   PROJECT       |   [Kanban Board](https://help.syncfusion.com/xamarin/kanban-board/overview)      |   Yes     |   Yes |   Yes |   No  |   No    |
-|   MANAGEMENT    |                     |           |       |       |       |         |
-|                 |                     |           |       |       |       |         |
-+-----------------+---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|   NOTIFICATION  |   [BadgeView](https://help.syncfusion.com/xamarin/badge-view/overview)         |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Busy Indicator](https://help.syncfusion.com/xamarin/busy-indicator/overview)    |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [ProgressBar](https://help.syncfusion.com/xamarin/progressbar/overview)       |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [StepProgressBar](https://help.syncfusion.com/xamarin/stepprogressbar/overview)   |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [PullToRefresh](https://help.syncfusion.com/xamarin/pull-to-refresh/overview)     |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-+-----------------+---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|   VIEWER/EDITOR |   [Image Editor](https://help.syncfusion.com/xamarin/image-editor/overview)      |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [PDF Viewer](https://help.syncfusion.com/xamarin/pdf-viewer/overview)        |   Yes     |   Yes |   Yes |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-+-----------------+---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|   MISCELLANEOUS |   [EffectsView](https://help.syncfusion.com/xamarin/effects-view/overview)       |   Yes     |   Yes |   No  |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Shimmer](https://help.syncfusion.com/xamarin/shimmer/overview)           |   Yes     |   Yes |   No  |   No  |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [GradientView](https://help.syncfusion.com/xamarin/gradient-view/overview)      |   Yes     |   Yes |   Yes |   Yes |   No    |
-|                 |                     |           |       |       |       |         |
-|                 +---------------------+-----------+-------+-------+-------+---------+
-|                 |                     |           |       |       |       |         |
-|                 |   [Avatar View](https://help.syncfusion.com/xamarin/avatar-view/overview)       |   Yes     |   Yes |   Yes |   Yes |   No    |
-|                 |                     |           |       |       |       |         |
-+-----------------+---------------------+-----------+-------+-------+-------+---------+
+<table>
+	<tr>
+		<th>
+			Category<br/><br/>
+		</th>
+		<th>
+			Control<br/><br/>
+		</th>
+		<th>
+			Android<br/><br/>
+		</th>
+		<th>
+			iOS<br/><br/>
+		</th>
+		<th>
+			UWP<br/><br/>
+		</th>
+		<th>
+			WPF<br/><br/>
+		</th>
+		<th>
+			macOS<br/><br/>
+		</th>
+	</tr>
+	<tr>
+		<th>
+			GRID<br/><br/>
+		</th>
+		<td>
+			<a href="/xamarin/datagrid/overview">DataGrid </a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<th rowspan="11">
+			DATA VISUALIZATION<br/><br/>
+		</th>
+		<td>
+			<a href="/xamarin/barcode/overview">Barcode </a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/charts/overview">Charts </a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/circular-gauge/overview">Circular Gauge </a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/diagram/overview">Diagram </a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/digital-gauge/overview">Digital Gauge</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/linear-gauge/overview">Linear Gauge</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/maps/overview">Maps</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/datetime-range-navigator/overview">Range Selector</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/sparkline/overview">Sparkline</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/sunburst-chart/overview">Sunburst Chart</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/treeMap/overview">TreeMap</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+	    <th rowspan="5">
+			NAVIGATION<br/><br/>
+		</th>	
+		<td>
+			<a href="/xamarin/navigation-drawer/overview">Navigation Drawer</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/radial-menu/overview">Radial Menu</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/rotator/overview">Rotator</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/tabbed-view/overview">Tabbed View</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/treeview/overview">Tree View</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+	    <th rowspan="13">
+			Editors<br/><br/>
+		</th>	
+		<td>
+			<a href="/xamarin/navigation-drawer/overview">Rich Text Editor</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/autocomplete/overview">Autocomplete</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/checkBox/overview">CheckBox</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/comboBox/overview">ComboBox</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/dataForm/getting-started">DataForm</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/masked-entry/overview">Masked Entry</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/numeric-entry/overview">Numeric Entry</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/numericupdown/overview">NumericUpDown</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/picker/overview">Picker</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/radio-button/overview">Radio Button</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/range-slider/overview">Range Slider</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/rating/overview">Rating</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/segmented-control/overview">Segmented Control</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+    <tr>
+	    <th rowspan="2">
+		CALENDAR<br/><br/>
+		</th>
+		<td>
+			<a href="/xamarin/scheduler/overview">Scheduler</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/calendar/overview">Calendar</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+    <tr>
+	    <th rowspan="3">
+		BUTTONS<br/><br/>
+		</th>
+		<td>
+			<a href="/xamarin/button/overview">Button</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/chips/overview">Chips</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>		
+    <tr>
+		<td>
+			<a href="/xamarin/switch/overview">Switch</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr>
+	    <th rowspan="10">
+		LAYOUT<br/><br/>
+		</th>
+		<td>
+			<a href="/xamarin/accordion/getting-started">Accordion</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/backdrop-page/overview">Backdrop</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/border/overview">Border</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/cards/overview">Cards</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/carousel-view/overview">Carousel View</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/expander/getting-started">Expander</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/listView/overview">ListView</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/parallax-view/overview">Parallax View</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/popup/overview">Popup</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/text-input-layout/overview">Text Input Layout</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr>
+	    <th>
+	    PROJECT MANAGEMENT<br/><br/>
+		</th>
+		<td>
+			<a href="/xamarin/kanban-board/overview">Kanban Board</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr>  
+	    <th rowspan="5">
+	    NOTIFICATION<br/><br/>
+		</th>
+		<td>
+			<a href="/xamarin/badge-view/overview">Badge View</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	
+    <tr> 
+		<td>
+			<a href="/xamarin/busy-indicator/overview">Busy Indicator</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr> 	
+    <tr> 
+		<td>
+			<a href="/xamarin/progressbar/overview">ProgressBar</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr> 	
+    <tr> 
+		<td>
+			<a href="/xamarin/stepprogressbar/overview">StepProgressBar</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr> 	
+    <tr> 
+		<td>
+			<a href="/xamarin/pull-to-refresh/overview">PullToRefresh</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>  	
+    <tr>  
+	    <th rowspan="2">
+	    VIEWER/EDITOR<br/><br/>
+		</th>
+		<td>
+			<a href="/xamarin/Image Editor/overview">image-editor</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>		
+    <tr>  
+		<td>
+			<a href="/xamarin/pdf-viewer/overview">PDF Viewer</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>		
+    <tr>  
+	    <th rowspan="4">
+	    MISCELLANEOUS <br/><br/>
+		</th>
+		<td>
+			<a href="/xamarin/effects-view/overview">EffectsView</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>	  			
+    <tr>  
+		<td>
+			<a href="/xamarin/shimmer/overview">Shimmer</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>		
+    <tr>  
+		<td>
+			<a href="/xamarin/gradient-view/overview">GradientView</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>		
+    <tr>  
+		<td>
+			<a href="/xamarin/avatar-view/overview">Avatar View</a><br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		Yes<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+		<td>
+		No<br/><br/>
+		</td>
+	</tr>
+</table>
+  
 
 You can find the platforms supported by each Xamarin.Forms file-format library as below.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Screen wise Resources
-description: Essential UI Kit Screen wise required files
+title:  XAML Templates and Pages - Resources required by each page of UI Kit
+description: The list of screen-wise resources and NuGet packages required for each Xamarin Essential UI kit page.
 platform: xamarin
 control: UI kit
 documentation: ug

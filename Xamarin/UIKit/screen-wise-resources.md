@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Screen wise Resources of Syncfusion Xamarin.Forms Essential UI Kit
+title:  Screen wise Resources
 description: Essential UI Kit Screen wise required files
 platform: xamarin
 control: UI kit

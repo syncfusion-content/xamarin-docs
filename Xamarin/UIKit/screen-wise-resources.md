@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Screen wise Resources of Syncfusion Xamarin.Forms Essential UI Kit
-description: Essential UI Kit Screen wise required files & nuget packages.
+description: Essential UI Kit Screen wise required files
 platform: xamarin
 control: UI kit
 documentation: ug

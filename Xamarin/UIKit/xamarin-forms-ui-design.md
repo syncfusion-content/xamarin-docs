@@ -40,8 +40,9 @@ The Essential UI Kit includes 62 screens which is under the following categories
 * Recent Chat Page
 * Chat Conversation Page
 
-## Detail	Product Detail Page
+## Detail	
 
+* Product Detail Page
 * Feedback Detail Page
 * Article Detail Page
 

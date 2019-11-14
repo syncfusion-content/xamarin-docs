@@ -9,6 +9,8 @@ documentation: ug
 
 # Screen wise Resources for Syncfusion Xamarin.Forms Essential UI Kit  
 
+## Forms
+
 <table>
 	<tr>
 		<th>
@@ -190,9 +192,28 @@ documentation: ug
 		<b>PCL:</b><br/>  Views\Forms\AddProfilePage.xaml<br/>  Views\Forms\AddProfilePage.xaml.cs<br/>  Views\Forms\Styles.xaml<br/>  Views\Forms\Styles.xaml.cs<br/>  Controls\BorderlessEntry.cs<br/>  Converters\BooleanToColorConverter.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Resources\drawable\Card.png<br/>  Renderers\BorderlessEntryRenderer.cs<br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b><br/>  Resources\Card.png<br/>  Renderers\BorderlessEntryRenderer.cs<br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  scale-100\Card.png<br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>  Renderers\BorderlessEntryRenderer.cs<br/> 
 		</td>
 	</tr>
+</table>
+
+## Catalog
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			13<br/>
+			1<br/>
 		</td>
 		<td>
 		Category Tile Page<br/>
@@ -206,7 +227,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			14<br/>
+			2<br/>
 		</td>
 		<td>
 		Catalog Tile page<br/>
@@ -220,7 +241,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			15<br/>
+			3<br/>
 		</td>
 		<td>
 		Catalog List Page<br/>
@@ -234,7 +255,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			16<br/>
+			4<br/>
 		</td>
 		<td>
 		Article List Page <br/>
@@ -248,7 +269,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			17<br/>
+			5<br/>
 		</td>
 		<td>
 		Article Tile Page<br/>
@@ -262,7 +283,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			18<br/>
+			6<br/>
 		</td>
 		<td>
 		Product Home page<br/>
@@ -274,9 +295,28 @@ documentation: ug
 		<b>PCL:</b><br/>  EssentialUIKit\Views\Catalog\ProductHomePage.xaml<br/>  EssentialUIKit\Views\Catalog\ProductHomePage.xaml.cs<br/>  EssentialUIKit\Views\Catalog\Styles.xaml<br/>  EssentialUIKit\Views\Catalog\Styles.xaml.cs<br/>  EssentialUIKit\ViewModels\Catalog\ProductHomePageViewModel.cs<br/>  EssentialUIKit\Converters\DynamicResourceToColorConverter.cs <br/>  EssentialUIKit\Models\Product.cs<br/>  EssentialUIKit\Models\Review.cs<br/>  EssentialUIKit\Controls\TitleView.cs<br/>  EssentialUIKit\Controls\CustomShadowFrame.cs<br/>  EssentialUIKit\Behaviors\SfListViewExtendHeightBehavior.cs<br/>  EssentialUIKit\Themes\LightTheme.xaml<br/>  EssentialUIKit\Themes\LightTheme.xaml.cs<br/>  EssentialUIKit\DataService\ProductHomeDataService.cs<br/>  EssentialUIKit\Data\ecommerce.json<br/>  EssentialUIKit\ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderers\FrameShadowRenderer.cs<br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
 		</td>
 	</tr>
+</table>
+
+## Detail
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			19<br/>
+			1<br/>
 		</td>
 		<td>
 		Product Detail page<br/>
@@ -290,7 +330,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			20<br/>
+			2<br/>
 		</td>
 		<td>
 		Feedback Detail Page<br/>
@@ -304,7 +344,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			21<br/>
+			3<br/>
 		</td>
 		<td>
 		Article Detail<br/>
@@ -315,9 +355,29 @@ documentation: ug
 		<td>
 		<b>PCL:</b><br/>  Views\Detail\ArticleDetailPage.xaml<br/>  Views\Detail\ArticleDetailPage.xaml.cs<br/>  Views\Detail\Styles.xaml<br/>  Views\Detail\Styles.xaml.cs<br/>  ViewModels\Detail\ArticleDetailPageViewModel.cs <br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Models\Article.cs<br/>  Converters\BooleanToStringConverter.cs<br/>  Controls\TitleView.cs<br/>  Converters\DynamicResourceToColorConverter.cs<br/>  Views\Templates\ArticleListTemplate.xaml<br/>  Views\Templates\ArticleListTemplate.xaml.cs<br/>  Views\Templates\Styles.xaml<br/>  Views\Templates\Styles.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>
 		</td>
-	</tr><tr valign="top">		
+	</tr>
+</table>
+
+## Chat
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
+	<tr valign="top">		
 		<td align="center">
-			22<br/>
+			1<br/>
 		</td>
 		<td>
 		Recent Chat Page<br/>
@@ -331,7 +391,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			23<br/>
+			2<br/>
 		</td>
 		<td>
 		Chat Conversation Page<br/>
@@ -343,9 +403,28 @@ documentation: ug
 		<b>PCL:</b><br/>  Views\Chat\ChatMessagePage.xaml<br/>  Views\Chat\ChatMessagePage.xaml.cs<br/>  Views\Chat\Styles.xaml<br/>  Views\Chat\Styles.xaml.cs<br/>  Views\Chat\Selectors\MessageDataTemplateSelector.cs<br/>  Views\Chat\Templates\IncomingImageTemplate.xaml <br/>  Views\Chat\Templates\IncomingImageTemplate.xaml.cs<br/>  Views\Chat\Templates\OutgoingImageTemplate.xaml <br/>  Views\Chat\Templates\OutgoingImageTemplate.xaml.cs<br/>  Views\Chat\Templates\IncomingTextTemplate.xaml<br/>  Views\Chat\Templates\IncomingTextTemplate.xaml.cs<br/>  Views\Chat\Templates\OutgoingTextTemplate.xaml<br/>  Views\Chat\Templates\OutgoingTextTemplate.xaml.cs<br/>  ViewModels\Chat\ChatMessageViewModel.cs<br/>  Models\Chat\ChatMessage.cs<br/>  Helpers\RTLHelper.cs<br/>  Controls\BorderlessEditor.cs<br/>  Controls\BorderlessEntry.cs<br/>  Converters\DateTimeToStringConverter.cs<br/>  Behaviors\Chat\ChatMessageListViewBehavior.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b> <br/>  Renderers\BorderlessEditorRenderer.cs<br/>  Renderers\BorderlessEntryRenderer.cs<br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderers\BorderlessEntryRenderer.cs<br/>   <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b> <br/>  Renderers\BorderlessEditorRenderer.cs<br/>  Renderers\BorderlessEntryRenderer.cs<br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
 		</td>
 	</tr>
+</table>
+
+## Article
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			24<br/>
+			1<br/>
 		</td>
 		<td>
 		Article with Comments page<br/>
@@ -358,7 +437,7 @@ documentation: ug
 		</td>
 	</tr><tr valign="top">		
 		<td align="center">
-			25<br/>
+			2<br/>
 		</td>
 		<td>
 		Article parallax Header Page<br/>
@@ -372,7 +451,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			26<br/>
+			3<br/>
 		</td>
 		<td>
 		My Article Page<br/>
@@ -384,9 +463,28 @@ documentation: ug
 		<b>PCL:</b><br/>  Views\Article\MyArticlePage.xaml<br/>  Views\Article\MyArticlePage.xaml.cs<br/>  Views\Article\Styles.xaml<br/>  Views\Article\Styles.xaml.cs<br/>  Models\Article.cs<br/>  ViewModels\Article\MyArticlePageViewModel.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Controls\TitleView.cs<br/>  Behaviors\SfListViewTapBehavior.cs<br/>  Converters\DynamicResourceToColorConverter.cs" <br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
 		</td>
 	</tr>
+</table>
+
+## Reviews and Ratings
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			27<br/>
+			1<br/>
 		</td>
 		<td>
 		Feedback Page<br/>
@@ -399,7 +497,7 @@ documentation: ug
 		</td>
 	</tr><tr valign="top">		
 		<td align="center">
-			28<br/>
+			2<br/>
 		</td>
 		<td>
 		Review Page<br/>
@@ -411,9 +509,28 @@ documentation: ug
 		<b>PCL:</b><br/>  Views\Feedback\ReviewPage.xaml<br/>  Views\Feedback\ReviewPage.xaml.cs<br/>  Views\Feedback\Styles.xaml<br/>  Views\Feedback\Styles.xaml.cs<br/>  ViewModels\Feedback\ReviewPageViewModel.cs <br/>  Controls\BorderlessEditor.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Renderers\BorderlessEditorRenderer.cs<br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderers\BorderlessEditorRenderer.cs<br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>
 		</td>
 	</tr>
+</table>
+
+## Contact Us
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			29<br/>
+			1<br/>
 		</td>
 		<td>
 		Contact us Page<br/>
@@ -425,9 +542,28 @@ documentation: ug
 		<b>PCL:</b><br/>  Views\ContactUs\ContactUsPage.xaml<br/>  Views\ContactUs\ContactUsPage.xaml.cs<br/>  Views\ContactUs\Styles.xaml<br/>  Views\ContactUs\Styles.xaml.cs<br/>  ViewModels\ContactUs\ContactUsViewModel.cs<br/>  Models\ContactUs\LocationMarker.cs<br/>  Controls\BorderlessEntry.cs<br/>  Controls\BorderlessEditor.cs<br/>  Controls\TitleView.cs<br/>  Converters\StringToBooleanConverter.cs <br/>  Converters\BooleanToColorConverter.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Renderers\BorderlessEditorRenderer.cs<br/>  Renderers\BorderlessEntryRenderer.cs<br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderers\BorderlessEntryRenderer.cs<br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderers\BorderlessEntryRenderer.cs<br/>  Renderers\BorderlessEditorRenderer.cs<br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>
 		</td>
 	</tr>
+</table>
+
+## About Us
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			30<br/>
+			1<br/>
 		</td>
 		<td>
 		Simple About Us Page<br/>
@@ -440,7 +576,7 @@ documentation: ug
 		</td>
 	</tr><tr valign="top">		
 		<td align="center">
-			31<br/>
+			2<br/>
 		</td>
 		<td>
 		About Us Page with cards<br/>
@@ -454,7 +590,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			32<br/>
+			3<br/>
 		</td>
 		<td>
 		About Page with parallax Scrolling<br/>
@@ -466,9 +602,28 @@ documentation: ug
 		<b>PCL:</b><br/>  Views\AboutUs\AboutUswithScrollPage.xaml <br/>  Views\AboutUs\AboutUswithScrollPage.xaml.cs<br/>  Views\AboutUs\Styles.xaml<br/>  Views\AboutUs\Styles.xaml.cs<br/>  ViewModels\About\AboutUsViewModel.cs<br/>  Models\About\AboutUsModel.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Behaviors\SfListViewExtendHeightBehavior.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Resources\drawable\About.png<br/>  Resources\drawable\OurTeam.png<br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources \About.png<br/>  Resources \OurTeam.png<br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  scale-100\ About.png<br/>  scale-100\ OurTeam.png<br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
 		</td>
 	</tr>
+</table>
+
+## Navigation
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			33<br/>
+			1<br/>
 		</td>
 		<td>
 		Bottom Navigation Page<br/>
@@ -481,7 +636,7 @@ documentation: ug
 		</td>
 	</tr><tr valign="top">		
 		<td align="center">
-			34<br/>
+			2<br/>
 		</td>
 		<td>
 		Navigation List Card Page<br/>
@@ -495,7 +650,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			35<br/>
+			3<br/>
 		</td>
 		<td>
 		Navigation Tile Card Page<br/>
@@ -507,9 +662,28 @@ documentation: ug
 		<b>PCL:</b><br/>  Views\Navigation\NavigationTileCardPage.xaml<br/>  Views\Navigation\NavigationTileCardPage.xaml.cs<br/>  Views\Navigation\Styles.xaml<br/>  Views\Navigation\Styles.xaml.cs<br/>  ViewModels\Navigation\NavigationViewModel.cs<br/>  Models\Navigation\NavigationModel.cs<br/>  Controls\CustomShadowFrame.cs<br/>  Controls\TitleView.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Data\navigation.json<br/>  DataService\NavigationDataService.cs<br/>  Views\Templates\NavigationTileTemplate.xaml <br/>  Views\Templates\NavigationTileTemplate.xaml.cs<br/>  Views\Templates\Styles.xaml<br/>  Views\Templates\Styles.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
 		</td>
 	</tr>
+</table>
+
+## Onboarding
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			36<br/>
+			1<br/>
 		</td>
 		<td>
 		Walkthrough Page<br/>
@@ -520,9 +694,29 @@ documentation: ug
 		<td>
 		<b>PCL:</b><br/>  Views\OnBoarding\OnBoardingAnimationPage.xaml <br/>  Views\OnBoarding\OnBoardingAnimationPage.xaml.cs<br/>  Views\OnBoarding\WalkthroughItemPage.xaml<br/>  Views\OnBoarding\WalkthroughItemPage.xaml.cs<br/>  Views\OnBoarding\Styles.xaml<br/>  Views\OnBoarding\Styles.xaml.cs<br/>  ViewModels\OnBoarding\OnBoardingAnimationViewModel.cs<br/>  Models\OnBoarding\Boarding.cs<br/>  Controls\SVGImage.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Images\ChooseGradient.svg<br/>  Images\ConfirmGradient.svg<br/>  Images\DeliverGradient.svg<br/>  Behaviors\OnBoarding\SfRotatorBehavior.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b><br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
 		</td>
-	</tr><tr valign="top">		
+	</tr>
+</table>
+
+## Error and Empty
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
+	<tr valign="top">		
 		<td align="center">
-			37<br/>
+			1<br/>
 		</td>
 		<td>
 		Empty Cart Page<br/>
@@ -536,7 +730,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			38<br/>
+			2<br/>
 		</td>
 		<td>
 		Location Denied Page<br/>
@@ -550,7 +744,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			39<br/>
+			3<br/>
 		</td>
 		<td>
 		No Credits Page<br/>
@@ -563,7 +757,7 @@ documentation: ug
 		</td>
 	</tr><tr valign="top">		
 		<td align="center">
-			40<br/>
+			4<br/>
 		</td>
 		<td>
 		No Internet Connection Page<br/> 
@@ -577,7 +771,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			41<br/>
+			5<br/>
 		</td>
 		<td>
 		No Item Page<br/> 
@@ -591,7 +785,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			42<br/>
+			6<br/>
 		</td>
 		<td>
 		No Photos Page<br/>
@@ -604,7 +798,7 @@ documentation: ug
 		</td>
 	</tr><tr valign="top">		
 		<td align="center">
-			43<br/>
+			7<br/>
 		</td>
 		<td>
 		No Tasks Page<br/>
@@ -618,7 +812,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			44<br/>
+			8<br/>
 		</td>
 		<td>
 		Not Enough Credit Page<br/>
@@ -632,7 +826,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			45<br/>
+			9<br/>
 		</td>
 		<td>
 		No Videos Page<br/>
@@ -645,7 +839,7 @@ documentation: ug
 		</td>
 	</tr><tr valign="top">		
 		<td align="center">
-			46<br/>
+			10<br/>
 		</td>
 		<td>
 		Payment Failed Page<br/>
@@ -659,7 +853,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			47<br/>
+			11<br/>
 		</td>
 		<td>
 		Something Went Wrong Page<br/>
@@ -671,9 +865,28 @@ documentation: ug
 		<b>PCL:</b><br/>  Views\ErrorAndEmpty\SomethingWentWrongPage.xaml<br/>  Views\ErrorAndEmpty\SomethingWentWrongPage.xaml.cs<br/>  Views\ErrorAndEmpty\Styles.xaml<br/>  Views\ErrorAndEmpty\Styles.xaml.cs<br/>  ViewModels\ErrorAndEmpty\SomethingWentWrongPageViewModel.cs <br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Images\SomethingWentWrong.svg<br/>  Controls\SVGImage.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b><br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
 		</td>
 	</tr>
+</table>
+
+## Transaction
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			48<br/>
+			1<br/>
 		</td>
 		<td>
 		Checkout Page<br/>
@@ -687,7 +900,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			49<br/>
+			2<br/>
 		</td>
 		<td>
 		Payment Success Page<br/>
@@ -700,7 +913,7 @@ documentation: ug
 		</td>
 	</tr><tr valign="top">		
 		<td align="center">
-			50<br/>
+			3<br/>
 		</td>
 		<td>
 		Payment Failure Page<br/>
@@ -712,9 +925,28 @@ documentation: ug
 		<b>PCL:</b><br/>  Views\Transaction\PaymentFailurePage.xaml<br/>  Views\Transaction\PaymentFailurePage.xaml.cs<br/>  Views\Transaction\Styles.xaml<br/>  Views\Transaction\Styles.xaml.cs<br/>  ViewModels\Transaction\PaymentViewmodel.cs <br/>  Controls\SVGImage.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Images\PaymentFailure.svg<br/>  Controls\TitleView.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b><br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
 		</td>
 	</tr>
+</table>
+
+## Bookmark
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			51<br/>
+			1<br/>
 		</td>
 		<td>
 		Wishlist Page<br/>
@@ -728,7 +960,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			52<br/>
+			2<br/>
 		</td>
 		<td>
 		Cart Page<br/>
@@ -742,7 +974,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			53<br/>
+			3<br/>
 		</td>
 		<td>
 		Article Bookmark<br/>
@@ -754,9 +986,28 @@ documentation: ug
 		<b>PCL:</b><br/>  Views\Bookmarks\BookmarksPage.xaml<br/>  Views\Bookmarks\BookmarksPage.xaml.cs<br/>  Views\Bookmarks\Styles.xaml<br/>  Views\Bookmarks\Styles.xaml.cs<br/>  ViewModels\Bookmarks\BookmarksViewModel.cs<br/>  Models\Article.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Controls\TitleView.cs<br/>  Controls\SfPopupView.cs<br/>  Converters\BooleanToStringConverter.cs<br/>  Behaviors\ItemTemplateButtonBehavior.cs<br/>  Converters\DynamicResourceToColorConverter.cs<br/>  Views\Templates\ArticleListTemplate.xaml<br/>  Views\Templates\ArticleListTemplate.xaml.cs<br/>  Views\Templates\Styles.xaml<br/>  Views\Templates\Styles.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b><br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>
 		</td>
 	</tr>
+</table>
+
+## History
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			54<br/>
+			1<br/>
 		</td>
 		<td>
 		Transaction History Page<br/>
@@ -770,7 +1021,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			55<br/>
+			2<br/>
 		</td>
 		<td>
 		My Orders Page<br/>
@@ -782,9 +1033,28 @@ documentation: ug
 		<b>PCL:</b><br/>  Views\History\MyOrdersPage.xaml<br/>  Views\History\MyOrdersPage.xaml.cs<br/>  Views\History\MyOrdersView.xaml<br/>  Views\History\MyOrdersView.xaml.cs<br/>  ViewModels\History\MyOrdersPageViewModel.cs<br/>  Controls\SVGImage.cs<br/>  Converters\StringToColorConverter.cs<br/>  Models\History\Orders.cs<br/>  Data\ecommerce.json<br/>  DataService\MyOrdersDataService.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Views\Templates\OrderHistoryTemplate.xaml<br/>  Views\Templates\OrderHistoryTemplate.xaml.cs<br/>  Views\Templates\Styles.xaml<br/>  Views\Templates\Styles.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b><br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
 		</td>
 	</tr>
+</table>
+
+## Social
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			56<br/>
+			1<br/>
 		</td>
 		<td>
 		Social Profile with Connections Page<br/>
@@ -798,7 +1068,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			57<br/>
+			2<br/>
 		</td>
 		<td>
 		Social Profile with Card Page<br/>
@@ -812,7 +1082,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			58<br/>
+			3<br/>
 		</td>
 		<td>
 		Social Profile with Interests Page<br/>
@@ -824,9 +1094,28 @@ documentation: ug
 		<b>PCL:</b><br/>  Views\Social\SocialProfileWithInterestsPage.xaml<br/>  Views\Social\SocialProfileWithInterestsPage.xaml.cs<br/>  Views\Social\Templates\ProfileTemplate.xaml<br/>  Views\Social\Templates\ProfileTemplate.xaml.cs<br/>  Views\Social\Styles.xaml<br/>  Views\Social\Styles.xaml.cs<br/>  ViewModels\Social\SocialProfileViewModel.cs<br/>  Models\Profile.cs<br/>  Behaviors\SfListViewExtendHeightBehavior.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Controls\CustomShadowFrame.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b><br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
 		</td>
 	</tr>
+</table>
+
+## Profile
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			59<br/>
+			1<br/>
 		</td>
 		<td>
 		Author Profile Page<br
@@ -840,7 +1129,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			60<br/>
+			2<br/>
 		</td>
 		<td>
 		Contacts Page<br/>
@@ -854,7 +1143,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			61<br/>
+			3<br/>
 		</td>
 		<td>
 		Chat Profile Page<br/>
@@ -868,7 +1157,7 @@ documentation: ug
 	</tr>
 	<tr valign="top">		
 		<td align="center">
-			62<br/>
+			4<br/>
 		</td>
 		<td>
 		Master Page<br/>
@@ -880,9 +1169,28 @@ documentation: ug
 		<b>PCL:</b><br/>  Views\Profile\MasterPage.xaml<br/>  Views\Profile\MasterPage.xaml.cs<br/>  Views\Profile\Styles.xaml<br/>  Views\Profile\Styles.xaml.cs<br/>  ViewModels\Profile\MasterPageViewModel.cs<br/>  Helpers\RTLHelper.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>
 		</td>
 	</tr>
+</table>
+
+## Tracking
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
 	<tr valign="top">		
 		<td align="center">
-			63<br/>
+			1<br/>
 		</td>
 		<td>
 		Product Delivery Tracking Page<br/>

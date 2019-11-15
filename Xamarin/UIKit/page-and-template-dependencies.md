@@ -7,7 +7,7 @@ control: UI kit
 documentation: ug
 ---
 
-# Page Template Dependencies for Syncfusion Xamarin.Forms Essential UI Kit  
+This page list the dependencies ( converters, rendereres and NuGet packages) of each XAML page in Essential UI Kit project 
 
 ## Forms
 

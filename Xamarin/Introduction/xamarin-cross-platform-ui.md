@@ -23,1199 +23,1199 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 
 <table>
 	<tr>
-		<th>
-			Category<br/><br/>
+		<th align="center">
+			Category<br/>
 		</th>
-		<th>
-			Control<br/><br/>
+		<th align="center">
+			Control<br/>
 		</th>
-		<th>
-			Android<br/><br/>
+		<th align="center">
+			Android<br/>
 		</th>
-		<th>
-			iOS<br/><br/>
+		<th align="center">
+			iOS<br/>
 		</th>
-		<th>
-			UWP<br/><br/>
+		<th align="center">
+			UWP<br/>
 		</th>
-		<th>
-			WPF<br/><br/>
+		<th align="center">
+			WPF<br/>
 		</th>
-		<th>
-			macOS<br/><br/>
+		<th align="center">
+			macOS<br/>
 		</th>
 	</tr>
 	<tr>
-		<th>
-			GRID<br/><br/>
-		</th>
 		<td>
-			<a href="/xamarin/datagrid/overview">DataGrid </a><br/><br/>
+			GRID<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+			<a href="/xamarin/datagrid/overview">DataGrid </a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<th rowspan="11">
-			DATA VISUALIZATION<br/><br/>
-		</th>
-		<td>
-			<a href="/xamarin/barcode/overview">Barcode </a><br/><br/>
+		No<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		Yes<br/>
 		</td>
 	</tr>
 	<tr>
-		<td>
-			<a href="/xamarin/charts/overview">Charts </a><br/><br/>
+		<td rowspan="11" valign="top">
+			DATA VISUALIZATION<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+			<a href="/xamarin/barcode/overview">Barcode </a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/circular-gauge/overview">Circular Gauge </a><br/><br/>
+			<a href="/xamarin/charts/overview">Charts </a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="/xamarin/diagram/overview">Diagram </a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		Yes<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/digital-gauge/overview">Digital Gauge</a><br/><br/>
+			<a href="/xamarin/circular-gauge/overview">Circular Gauge </a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="/xamarin/linear-gauge/overview">Linear Gauge</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/maps/overview">Maps</a><br/><br/>
+			<a href="/xamarin/diagram/overview">Diagram </a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="/xamarin/datetime-range-navigator/overview">Range Selector</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/sparkline/overview">Sparkline</a><br/><br/>
+			<a href="/xamarin/digital-gauge/overview">Digital Gauge</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="/xamarin/sunburst-chart/overview">Sunburst Chart</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/treeMap/overview">TreeMap</a><br/><br/>
+			<a href="/xamarin/linear-gauge/overview">Linear Gauge</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>
-	<tr>
-	    <th rowspan="5">
-			NAVIGATION<br/><br/>
-		</th>	
-		<td>
-			<a href="/xamarin/navigation-drawer/overview">Navigation Drawer</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/radial-menu/overview">Radial Menu</a><br/><br/>
+			<a href="/xamarin/maps/overview">Maps</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="/xamarin/rotator/overview">Rotator</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/tabbed-view/overview">Tabbed View</a><br/><br/>
+			<a href="/xamarin/datetime-range-navigator/overview">Range Selector</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="/xamarin/treeview/overview">Tree View</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-	</tr>
-	<tr>
-	    <th rowspan="13">
-			Editors<br/><br/>
-		</th>	
-		<td>
-			<a href="/xamarin/navigation-drawer/overview">Rich Text Editor</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/autocomplete/overview">Autocomplete</a><br/><br/>
+			<a href="/xamarin/sparkline/overview">Sparkline</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="/xamarin/checkBox/overview">CheckBox</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/comboBox/overview">ComboBox</a><br/><br/>
+			<a href="/xamarin/sunburst-chart/overview">Sunburst Chart</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="/xamarin/dataForm/getting-started">DataForm</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/masked-entry/overview">Masked Entry</a><br/><br/>
+			<a href="/xamarin/treeMap/overview">TreeMap</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+	    <td rowspan="5" valign="top">
+			NAVIGATION<br/>
+		</td>	
+		<td>
+			<a href="/xamarin/navigation-drawer/overview">Navigation Drawer</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/numeric-entry/overview">Numeric Entry</a><br/><br/>
+			<a href="/xamarin/radial-menu/overview">Radial Menu</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="/xamarin/numericupdown/overview">NumericUpDown</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/picker/overview">Picker</a><br/><br/>
+			<a href="/xamarin/rotator/overview">Rotator</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="/xamarin/radio-button/overview">Radio Button</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/range-slider/overview">Range Slider</a><br/><br/>
+			<a href="/xamarin/tabbed-view/overview">Tabbed View</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<a href="/xamarin/rating/overview">Rating</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			<a href="/xamarin/segmented-control/overview">Segmented Control</a><br/><br/>
+			<a href="/xamarin/treeview/overview">Tree View</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+	    <td rowspan="13" valign="top">
+			EDITORS<br/>
+		</td>	
+		<td>
+			<a href="/xamarin/navigation-drawer/overview">Rich Text Editor</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/autocomplete/overview">Autocomplete</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/checkBox/overview">CheckBox</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/comboBox/overview">ComboBox</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/dataForm/getting-started">DataForm</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/masked-entry/overview">Masked Entry</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/numeric-entry/overview">Numeric Entry</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/numericupdown/overview">NumericUpDown</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/picker/overview">Picker</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/radio-button/overview">Radio Button</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/range-slider/overview">Range Slider</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/rating/overview">Rating</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/segmented-control/overview">Segmented Control</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
 		</td>
 	</tr>
     <tr>
-	    <th rowspan="2">
-		CALENDAR<br/><br/>
-		</th>
-		<td>
-			<a href="/xamarin/scheduler/overview">Scheduler</a><br/><br/>
+	    <td rowspan="2" valign="top">
+		CALENDAR<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+			<a href="/xamarin/scheduler/overview">Scheduler</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
 		</td>
 	</tr>	
     <tr>
 		<td>
-			<a href="/xamarin/calendar/overview">Calendar</a><br/><br/>
+			<a href="/xamarin/calendar/overview">Calendar</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>
     <tr>
-	    <th rowspan="3">
-		BUTTONS<br/><br/>
-		</th>
-		<td>
-			<a href="/xamarin/button/overview">Button</a><br/><br/>
+	    <td rowspan="3" valign="top">
+		BUTTONS<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+			<a href="/xamarin/button/overview">Button</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
 		</td>
 	</tr>	
     <tr>
 		<td>
-			<a href="/xamarin/chips/overview">Chips</a><br/><br/>
+			<a href="/xamarin/chips/overview">Chips</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>		
     <tr>
 		<td>
-			<a href="/xamarin/switch/overview">Switch</a><br/><br/>
+			<a href="/xamarin/switch/overview">Switch</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>	
-    <tr>
-	    <th rowspan="10">
-		LAYOUT<br/><br/>
-		</th>
-		<td>
-			<a href="/xamarin/accordion/getting-started">Accordion</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>	
     <tr>
-		<td>
-			<a href="/xamarin/backdrop-page/overview">Backdrop</a><br/><br/>
+	    <td rowspan="10" valign="top">
+		LAYOUT<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+			<a href="/xamarin/accordion/getting-started">Accordion</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
 		</td>
 	</tr>	
     <tr>
 		<td>
-			<a href="/xamarin/border/overview">Border</a><br/><br/>
+			<a href="/xamarin/backdrop-page/overview">Backdrop</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>	
-    <tr>
-		<td>
-			<a href="/xamarin/cards/overview">Cards</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>	
     <tr>
 		<td>
-			<a href="/xamarin/carousel-view/overview">Carousel View</a><br/><br/>
+			<a href="/xamarin/border/overview">Border</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>	
-    <tr>
-		<td>
-			<a href="/xamarin/expander/getting-started">Expander</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>	
     <tr>
 		<td>
-			<a href="/xamarin/listView/overview">ListView</a><br/><br/>
+			<a href="/xamarin/cards/overview">Cards</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
-		</td>
-	</tr>	
-    <tr>
-		<td>
-			<a href="/xamarin/parallax-view/overview">Parallax View</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>	
     <tr>
 		<td>
-			<a href="/xamarin/popup/overview">Popup</a><br/><br/>
+			<a href="/xamarin/carousel-view/overview">Carousel View</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/expander/getting-started">Expander</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
 		</td>
 	</tr>	
     <tr>
 		<td>
-			<a href="/xamarin/text-input-layout/overview">Text Input Layout</a><br/><br/>
+			<a href="/xamarin/listView/overview">ListView</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		Yes<br/>
 		</td>
 	</tr>	
     <tr>
-	    <th>
-	    PROJECT MANAGEMENT<br/><br/>
-		</th>
 		<td>
-			<a href="/xamarin/kanban-board/overview">Kanban Board</a><br/><br/>
+			<a href="/xamarin/parallax-view/overview">Parallax View</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/popup/overview">Popup</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>	
+    <tr>
+		<td>
+			<a href="/xamarin/text-input-layout/overview">Text Input Layout</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>	
+    <tr>
+	    <td>
+	    PROJECT MANAGEMENT<br/>
+		</td>
+		<td>
+			<a href="/xamarin/kanban-board/overview">Kanban Board</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
 		</td>
 	</tr>	
     <tr>  
-	    <th rowspan="5">
-	    NOTIFICATION<br/><br/>
-		</th>
-		<td>
-			<a href="/xamarin/badge-view/overview">Badge View</a><br/><br/>
+	    <td rowspan="5" valign="top">
+	    NOTIFICATION<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+			<a href="/xamarin/badge-view/overview">Badge View</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
 		</td>
 	</tr>	
     <tr> 
 		<td>
-			<a href="/xamarin/busy-indicator/overview">Busy Indicator</a><br/><br/>
+			<a href="/xamarin/busy-indicator/overview">Busy Indicator</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr> 	
-    <tr> 
-		<td>
-			<a href="/xamarin/progressbar/overview">ProgressBar</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr> 	
     <tr> 
 		<td>
-			<a href="/xamarin/stepprogressbar/overview">StepProgressBar</a><br/><br/>
+			<a href="/xamarin/progressbar/overview">ProgressBar</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr> 	
     <tr> 
 		<td>
-			<a href="/xamarin/pull-to-refresh/overview">PullToRefresh</a><br/><br/>
+			<a href="/xamarin/stepprogressbar/overview">StepProgressBar</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
+		</td>
+	</tr> 	
+    <tr> 
+		<td>
+			<a href="/xamarin/pull-to-refresh/overview">PullToRefresh</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
 		</td>
 	</tr>  	
     <tr>  
-	    <th rowspan="2">
-	    VIEWER/EDITOR<br/><br/>
-		</th>
-		<td>
-			<a href="/xamarin/Image Editor/overview">image-editor</a><br/><br/>
+	    <td rowspan="2" valign="top">
+	    VIEWER/EDITOR<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+			<a href="/xamarin/Image Editor/overview">image-editor</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>		
-    <tr>  
-		<td>
-			<a href="/xamarin/pdf-viewer/overview">PDF Viewer</a><br/><br/>
+		No<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>		
     <tr>  
-	    <th rowspan="4">
-	    MISCELLANEOUS <br/><br/>
-		</th>
 		<td>
-			<a href="/xamarin/effects-view/overview">EffectsView</a><br/><br/>
+			<a href="/xamarin/pdf-viewer/overview">PDF Viewer</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
+		</td>
+	</tr>		
+    <tr>  
+	    <td rowspan="4" valign="top">
+	    MISCELLANEOUS <br/>
+		</td>
+		<td>
+			<a href="/xamarin/effects-view/overview">EffectsView</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
 		</td>
 	</tr>	  			
     <tr>  
 		<td>
-			<a href="/xamarin/shimmer/overview">Shimmer</a><br/><br/>
+			<a href="/xamarin/shimmer/overview">Shimmer</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
-		</td>
-	</tr>		
-    <tr>  
-		<td>
-			<a href="/xamarin/gradient-view/overview">GradientView</a><br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		Yes<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
-		</td>
-		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 	</tr>		
     <tr>  
 		<td>
-			<a href="/xamarin/avatar-view/overview">Avatar View</a><br/><br/>
+			<a href="/xamarin/gradient-view/overview">GradientView</a><br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		Yes<br/><br/>
+		Yes<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
 		</td>
 		<td>
-		No<br/><br/>
+		No<br/>
+		</td>
+	</tr>		
+    <tr>  
+		<td>
+			<a href="/xamarin/avatar-view/overview">Avatar View</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
 		</td>
 	</tr>
 </table>

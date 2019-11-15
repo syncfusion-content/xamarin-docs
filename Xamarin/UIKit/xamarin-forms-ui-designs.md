@@ -7,7 +7,7 @@ control: Xamarin UI Kit
 documentation: ug
 ---
 
-# Syncfusion Xamarin.Forms UI Design 
+# Syncfusion Xamarin.Forms UI Designs 
 
 The Essential UI Kit includes 62 screens which is under the following categories. 
 

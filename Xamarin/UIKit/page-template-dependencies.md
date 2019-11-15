@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  XAML Templates | Resources required by pages of UI Kit | Syncfusion
+title:  XAML Templates | Page Template Dependencies of UI Kit | Syncfusion
 description: The list of screen-wise resources and NuGet packages required for each Xamarin Essential UI kit page.
 platform: xamarin
 control: UI kit
 documentation: ug
 ---
 
-# Screen wise Resources for Syncfusion Xamarin.Forms Essential UI Kit  
+# Page Template Dependencies for Syncfusion Xamarin.Forms Essential UI Kit  
 
 ## Forms
 

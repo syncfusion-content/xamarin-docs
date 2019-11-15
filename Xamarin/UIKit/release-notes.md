@@ -32,7 +32,6 @@ The UI Kit version 1.0.0.0 has 45 screens for the following categories with RTL 
 The UI Kit version 2.0.0.0 has 12 new screens for the following categories.
 
 <table>
-<tbody>
 <tr>
 <th align="center">S.No</th>
 <th align="center">Categories</th>
@@ -121,7 +120,6 @@ Social
 2. Social Profile with Card page<br/>
 </td>
 </tr>
-</tbody>
 </table>
 
 ## UI Kit 2.1.0.0
@@ -129,7 +127,6 @@ Social
 The UI Kit version 2.1.0.0 has 6 new screens for the following categories.
 
 <table>
-<tbody>
 <tr>
 <th align="center">S.No</th>
 <th align="center">Categories</th>
@@ -192,13 +189,11 @@ Tracking
 Product Delivery Tracking Page<br/>
 </td>
 </tr>
-</tbody>
 </table>
 
 The UI Kit version 2.1.0.0 has updated the screens for the following categories.
 
 <table>
-<tbody>
 <tr>
 <th align="center">S.No</th>
 <th align="center">Categories</th>
@@ -276,5 +271,4 @@ Article Bookmarks Page<br/>
 When click the Bookmark button, item should be removed from the list.<br/>
 </td>
 </tr>
-</tbody>
 </table>

@@ -272,3 +272,49 @@ When click the Bookmark button, item should be removed from the list.<br/>
 </td>
 </tr>
 </table>
+
+## UI Kit 2.3.0.0
+
+The UI Kit version 2.3.0.0 has 6 new screens for the following categories.
+
+<table>
+<tr>
+<th align="center">S.No</th>
+<th align="center">Categories</th>
+<th align="center">Pages</th>
+</tr>
+<tr>
+<td align="center">
+1
+</td>
+<td>
+Dashboard
+</td>
+<td>
+Stock Overview Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+2
+</td>
+<td>
+Settings
+</td>
+</td>
+<td>
+Setting Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+3
+</td>
+<td>
+Article
+</td>
+<td>
+Article Parallax Header Page<br/>
+</td>
+</tr>
+</table>

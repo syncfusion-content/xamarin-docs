@@ -50,6 +50,7 @@ The Essential UI Kit includes 62 screens which is under the following categories
 
 * Article Detail with Comments Page
 * My Article Page
+* Article Parallax Header Page
 	
 ## Reviews and Ratings	
 
@@ -123,4 +124,13 @@ The Essential UI Kit includes 62 screens which is under the following categories
 ## Tracking
 
 * Product Delivery Tracking Page
+
+## Dashboard
+
+* Stock Overview Page
+
+
+## Settings
+
+* Setting Page
 

@@ -350,10 +350,10 @@ This page list the dependencies ( converters, rendereres and NuGet packages) of 
 		Article Detail<br/>
 		</td>
 		<td>
-		Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.SfRating,<br/>  Syncfusion.Xamarin.SfComboBox<br/>
+		Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.Core,<br/> Syncfusion.Xamarin.SfListView,<br/>  Syncfusion.Xamarin.SfRating,<br/>  Syncfusion.Xamarin.SfComboBox<br/>
 		</td>
 		<td>
-		<b>PCL:</b><br/>  Views\Detail\ArticleDetailPage.xaml<br/>  Views\Detail\ArticleDetailPage.xaml.cs<br/>  Views\Detail\Styles.xaml<br/>  Views\Detail\Styles.xaml.cs<br/>  ViewModels\Detail\ArticleDetailPageViewModel.cs <br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Models\Article.cs<br/>  Converters\BooleanToStringConverter.cs<br/>  Controls\TitleView.cs<br/>  Converters\DynamicResourceToColorConverter.cs<br/>  Views\Templates\ArticleListTemplate.xaml<br/>  Views\Templates\ArticleListTemplate.xaml.cs<br/>  Views\Templates\Styles.xaml<br/>  Views\Templates\Styles.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>
+		<b>PCL:</b><br/>  Views\Detail\ArticleDetailPage.xaml<br/>  Views\Detail\ArticleDetailPage.xaml.cs<br/>  Views\Detail\Styles.xaml<br/>  Views\Detail\Styles.xaml.cs<br/>  ViewModels\Detail\ArticleDetailPageViewModel.cs <br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Models\Article.cs<br/>  Converters\BooleanToStringConverter.cs<br/>  Controls\TitleView.cs<br/>  Converters\DynamicResourceToColorConverter.cs<br/>  Views\Templates\ArticleListTemplate.xaml<br/>  Views\Templates\ArticleListTemplate.xaml.cs<br/>  Views\Templates\Styles.xaml<br/>  Views\Templates\Styles.xaml.cs<br/> Behaviors\ItemTemplateButtonBehavior.cs<br/> ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>
 		</td>
 	</tr>
 </table>
@@ -1203,3 +1203,69 @@ This page list the dependencies ( converters, rendereres and NuGet packages) of 
 		</td>
 	</tr>
 </table>	
+
+## Dashboard
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			1<br/>
+		</td>
+		<td>
+		Stock Overview Page<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Buttons,<br/> Syncfusion.Xamarin.Core,<br/> Syncfusion.Xamarin.Expander,<br/> Syncfusion.Xamarin.SfChart</br>
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views\Dashboard\StockOverviewPage.xaml<br/> Views\Dashboard\StockOverviewPage.xaml.cs<br/> Views\Dashboard\Styles.xaml<br/> Views\Dashboard\Styles.xaml.cs<br/> Models\Dashboard\Stock.cs<br/> ViewModels\Dashboard\StockOverviewViewModel.cs<br/> ViewModels\BaseViewModel.cs<br/> Themes\LightTheme.xaml<br/> Themes\LightTheme.xaml.cs<br/> Controls\TitleView.cs<br/> Controls\CustomShadowFrame.cs<br/> Converters\IntToDateFormatConverter.cs<br/> Converters\DynamicResourceToColorConverter.cs<br/> Behaviors\SegmentedControlCommandBehavior.cs<br/> Behaviors\ExpanderCommandBehavior.cs<br/> Behaviors\Dashboard\SegmentedControlSelectionBehavior.cs<br/> ViewModels\BaseViewModel.cs<br/>   <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b><br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>
+		</td>
+	</tr>
+</table>	
+
+## Settings
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			1<br/>
+		</td>
+		<td>
+		Setting Page<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.Core<br/>
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views\Settings\SettingPage.xaml<br/> Views\Settings\SettingPage.xaml.cs<br/> Views\Settings\Styles.xaml<br/> Views\Settings\Styles.xaml.cs<br/> ViewModels\Settings\SettingViewModel.cs<br/> ViewModels\BaseViewModel.cs<br/> Themes\LightTheme.xaml<br/> Themes\LightTheme.xaml.cs<br/> Controls\TitleView.cs<br/> Controls\TapAnimationGrid.cs<br/>   <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b><br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>
+		</td>
+	</tr>
+</table>

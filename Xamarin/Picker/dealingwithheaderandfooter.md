@@ -281,12 +281,12 @@ picker.CancelButtonClicked += picker_CancelButtonClicked;
 
 private void picker_OkButtonClicked(object sender, Syncfusion.SfPicker.XForms.SelectionChangedEventArgs e)
 {
-
+    //// Perform any operation.
 }
 
 private void picker_CancelButtonClicked(object sender, Syncfusion.SfPicker.XForms.SelectionChangedEventArgs e)
 {
-
+    //// Perform any operation.
 }
 
 ![CustomFooter Image](images/OkCancelButton.png)

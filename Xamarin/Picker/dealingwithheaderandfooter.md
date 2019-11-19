@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with Header and Footer of Syncfusion Picker control for Xamarin.Forms
-description: Dealing with Header and Footer of Picker control
+title: Dealing with Header and Footer of Picker for Xamarin.Forms.
+description: Dealing with Header and Footer of Syncfusion SfPicker control for Xamarin.Forms.
 platform: Xamarin
 control: Picker
 documentation: ug

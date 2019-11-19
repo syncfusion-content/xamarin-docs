@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Working with custom stamp annotations in PDF Viewer Xamarin.Forms | Syncfusion
-description: The PDF Viewer custom stamp annotation allows the users to to include any form of Xamarin.Forms widget like Button, Entry, Label, and Image anywhere in the PDF document
+title: Working with custom stamp annotations in PDF Viewer | Syncfusion
+description: The custom stamp annotation allows the users to include any form of Xamarin.Forms widget like Button, Entry, Label, and Image anywhere in the PDF document
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
@@ -39,8 +39,8 @@ private void Button_Clicked(object sender, EventArgs e)
 {
     //Set image source
     Image image = new Image();
-    image.Source = ImageSource.FromResource("SimpleSample.Assets.Logo.png", typeof(App).GetTypeInfo().Assembly);
-    mage.WidthRequest = 200;
+    image.Source = ImageSource.FromResource("Sample.Assets.Logo.png", typeof(App).GetTypeInfo().Assembly);
+    image.WidthRequest = 200;
     image.HeightRequest = 100;
 
     //Add image as custom stamp to the first page
@@ -83,7 +83,7 @@ private void PdfViewer_StampAnnotationSelected(object sender, StampAnnotationSel
     int pageNumber = e.PageNumber;
 
     //Gets the bounds of selected stamp annotation
-	Rectangle bounds = e.Bounds;
+    Rectangle bounds = e.Bounds;
 }
 
 {% endhighlight %}

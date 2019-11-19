@@ -57,7 +57,6 @@ Forms
 <td>
 Detail
 </td>
-</td>
 <td>
 1. Article Detail Page<br/>
 </td>
@@ -150,7 +149,6 @@ Add Profile Page<br/>
 <td>
 Catalog
 </td>
-</td>
 <td>
 Product Home Page<br/>
 </td>
@@ -220,7 +218,6 @@ Added notification for cart item count when click the Add Cart button.<br/>
 </td>
 <td>
 Onboarding
-</td>
 </td>
 <td>
 Walkthrough Page<br/>
@@ -322,7 +319,6 @@ Stock Overview Page<br/>
 </td>
 <td>
 Settings
-</td>
 </td>
 <td>
 Setting Page<br/>

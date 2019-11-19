@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | Xamarin Forms | Syncfusion
+title: Overview of Syncfusion Essential Studio Xamarin Forms products
 description: Basic overview about the list of available features on Syncfusion Xamarin.Forms  components and steps to use the guide.
 platform: xamarin
 control: Overview
@@ -24,6 +24,8 @@ The Knowledge Base section contains responses to some of the most common questio
 
 Similar to the Knowledge Base, the Forum section also contains responses to questions of other customers asked in the past.
 
-## Create a support incident
+## Support and feedback
 
-In case, you are not able to find the information that you are looking for in the self-help resources mentioned above, then please contact us by creating a support ticket.
+If you are unable to find the information that you are looking for in the self-help resources mentioned above then you contact us by creating a [support ticket](https://www.syncfusion.com/support/directtrac/incidents).
+
+Don’t see what you need? Please request it in our [feedback portal](https://www.syncfusion.com/feedback/xamarin-forms).

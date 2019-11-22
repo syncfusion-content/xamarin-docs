@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dealing with Header and Footer of Syncfusion Picker control for Xamarin.Forms
-description: Dealing with Header and Footer of Picker control
+title: Dealing with Header and Footer of Syncfusion Picker.
+description: Dealing with Enable or disable Header, Footer and ColumnHeader of Syncfusion SfPicker control for Xamarin.Forms.
 platform: Xamarin
 control: Picker
 documentation: ug
@@ -193,28 +193,6 @@ picker.HeaderFontAttribute = FontAttributes.Italic;
 {% endhighlight %}
 {% endtabs %}
 
-## Enable or disable footer 
-
-Picker allows enabling or disabling the footer section by setting `SfPicker.ShowFooter` property to True or False. Default value of `SfPicker.ShowFooter` property is False.
-
-{% tabs %}
-{% highlight xaml %}
-
-<syncfusion:SfPicker
-
-x:Name="picker" ShowFooter="True"
-
-/>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-picker.ShowFooter = true;
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Set custom footer
 
 picker allows providing custom view to its footer by setting `SfPicker.FooterView` property. Default value of `SfPicker.FooterView` property is Null.
@@ -251,6 +229,28 @@ picker.FooterView = layout;
 {% endhighlight %}
 {% endtabs %}
 
+## Enable or disable footer 
+
+Picker allows enabling or disabling the footer section by setting `SfPicker.ShowFooter` property to True or False. Default value of `SfPicker.ShowFooter` property is False.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPicker
+
+x:Name="picker" ShowFooter="True"
+
+/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+picker.ShowFooter = true;
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Perform validation with default validation button
 
 Picker allows performing validation based on OK or Cancel button by hooking `SfPicker.OkButtonClicked` and `SfPicker.CancelButtonClicked`. In this event, from the `SelectionChangedEvent` argument, current selected items can be obtained.
@@ -267,6 +267,8 @@ CancelButtonClicked="picker_CancelButtonClicked"
 
 OkButtonClicked="picker_OkButtonClicked"
 
+ItemsSource="{Binding Colors}"
+
 ShowFooter="True" />
 
 {% endhighlight %}
@@ -276,6 +278,18 @@ ShowFooter="True" />
 picker.OkButtonClicked += picker_OkButtonClicked;
 
 picker.CancelButtonClicked += picker_CancelButtonClicked;
+
+private void picker_OkButtonClicked(object sender, Syncfusion.SfPicker.XForms.SelectionChangedEventArgs e)
+{
+    //// Perform any operation.
+}
+
+private void picker_CancelButtonClicked(object sender, Syncfusion.SfPicker.XForms.SelectionChangedEventArgs e)
+{
+    //// Perform any operation.
+}
+
+![CustomFooter Image](images/OkCancelButton.png)
 
 {% endhighlight %}
 {% endtabs %}

@@ -57,7 +57,6 @@ Forms
 <td>
 Detail
 </td>
-</td>
 <td>
 1. Article Detail Page<br/>
 </td>
@@ -150,7 +149,6 @@ Add Profile Page<br/>
 <td>
 Catalog
 </td>
-</td>
 <td>
 Product Home Page<br/>
 </td>
@@ -221,7 +219,6 @@ Added notification for cart item count when click the Add Cart button.<br/>
 <td>
 Onboarding
 </td>
-</td>
 <td>
 Walkthrough Page<br/>
 </td>
@@ -273,9 +270,31 @@ When click the Bookmark button, item should be removed from the list.<br/>
 </tr>
 </table>
 
+## UI Kit 2.2.0.0
+
+Created the 10 templates below and reused them in existing pages instead of duplicating the same view in a couple of pages.
+
+* Article Tile Template.
+* Article List Template.
+* Cart Item Template.
+* Navigation List Template.
+* Navigation Tile Template.
+* Order History Template.
+* Product List Template.
+* Product Tile Template.
+* Review Template.
+* Wishlist Item Template.
+
+Changed the animation in the following pages when removing an item from the list.
+
+* ` Cart Page ` in the ` Bookmark ` category.
+* ` Article Bookmarks Page ` in the ` Bookmark ` category.
+
+Resolved a reported issue - XAMLParseException thrown in debug mode while deploying the EssentialUIKit.iOS project.
+
 ## UI Kit 2.3.0.0
 
-The UI Kit version 2.3.0.0 has 6 new screens for the following categories.
+The UI Kit version 2.3.0.0 has 3 new screens for the following categories.
 
 <table>
 <tr>
@@ -300,7 +319,6 @@ Stock Overview Page<br/>
 </td>
 <td>
 Settings
-</td>
 </td>
 <td>
 Setting Page<br/>

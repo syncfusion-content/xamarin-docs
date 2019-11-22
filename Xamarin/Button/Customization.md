@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization for Syncfusion Essential Xamarin.Forms SfButton
-description: How to customize the appearance of text, background and image for SfButton in Xamarin.Forms.
+description: This section describes how to customize the appearance of text, background and image for SfButton in Xamarin.Forms.
 platform: xamarin.forms
 control: sfbutton
 documentation: ug

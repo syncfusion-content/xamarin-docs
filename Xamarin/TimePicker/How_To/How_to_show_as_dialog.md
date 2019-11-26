@@ -9,7 +9,7 @@ documentation: ug
 
 # How to show as a Dialog
 
- TimePicker can be rendered as a dialog by setting the`SfTimePicker.PickerMode` property to Dialog. Default value of `SfTimePicker.PickerMode` property is "Default". 
+TimePicker can be rendered as a dialog by setting the`SfTimePicker.PickerMode` property to Dialog. Default value of the `SfTimePicker.PickerMode` property is "Default". 
 
 {% tabs %}
 {% highlight xaml %}
@@ -55,7 +55,7 @@ namespace TimePickerSample
 
 The TimePicker can be opened programmatically by setting the `SfTimePicker.IsOpen` property to true. Default value of `SfTimePicker.IsOpen` is "false".
 
-Note: This property is automatically changed to false when you close the dialog by clicking outside of dialog.
+Note: This property is automatically changed to false when you close the dialog by clicking outside of the dialog.
 
 {% tabs %}
 {% highlight xaml %}

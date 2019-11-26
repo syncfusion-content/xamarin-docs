@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# How to handle date changed using DateSelected event
+# How to handle date changed using the DateSelected event
 
 You can perform an operation when selecting a date using the `DateSelected` event. The DateSelected event returns the following arguments:
 

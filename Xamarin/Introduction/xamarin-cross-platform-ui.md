@@ -1046,7 +1046,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 		Yes<br/>
 		</td>
 		<td>
-		No<br/>
+		Yes<br/>
 		</td>
 		<td>
 		No<br/>
@@ -1149,7 +1149,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 		Yes<br/>
 		</td>
 		<td>
-		Yes<br/>
+		No<br/>
 		</td>
 		<td>
 		No<br/>
@@ -1169,7 +1169,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 		Yes<br/>
 		</td>
 		<td>
-		Yes<br/>
+		No<br/>
 		</td>
 		<td>
 		No<br/>

@@ -10,7 +10,7 @@ documentation: ug
 
 # How to show as a Dialog
 
- DatePicker can be rendered as a dialog by setting the`SfDatePicker.PickerMode` property to Dialog. The default value of `SfDatePicker.PickerMode` property is "Default". 
+DatePicker can be rendered as a dialog by setting the`SfDatePicker.PickerMode` property to Dialog. The default value of `SfDatePicker.PickerMode` property is "Default". 
 
 {% tabs %}
 {% highlight xaml %}
@@ -56,7 +56,7 @@ namespace DatePickerSample
 
 The DatePicker can be opened programmatically by setting the `SfDatePicker.IsOpen` property to true. Default value of `SfDatePicker.IsOpen` is "false".
 
-Note: This property is automatically changed to false when you close the dialog by clicking outside of dialog.
+Note: This property is automatically changed to false when you close the dialog by clicking outside of the dialog.
 
 {% tabs %}
 {% highlight xaml %}

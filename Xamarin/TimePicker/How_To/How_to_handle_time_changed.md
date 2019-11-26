@@ -7,7 +7,7 @@ control: TimePicker
 documentation: ug
 ---
 
-# How to handle time changed using TimeSelected event
+# How to handle time changed using the TimeSelected event
 You can perform an operation when selecting time using the `TimeSelected` event. The TimeSelected event returns the following arguments:
 
 <table>

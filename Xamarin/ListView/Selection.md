@@ -327,6 +327,49 @@ private void ListView_OnSelectionChanged(object sender, ItemSelectionChangedEven
 
 N> [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanging_EV.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) events will be triggered only on UI interactions.
 
+## Commands
+
+### SelectionChangedCommand
+
+The [SelectionChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChangedCommand.html) will be triggered when the selection is changed and passing the [SelectionChangedCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SelectionChangedCommandParameter.html) as parameter. The default value of `SelectionChangedCommandParameter` is null. If `SelectionChangedCommandParameter` is not defined then `ItemSelectionChangedEventArgs` will be passed as argument.
+
+{% tabs %}
+{% highlight xaml %}
+
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView"
+   SelectionChangedCommandParameter="{Binding ListViewSelectionChangedCommand}"
+   SelectionChangedCommandParameter="{x:Reference listView}"
+   ItemsSource="{Binding BookInfo}"
+   ItemSize="100">
+  </syncfusion:SfListView>  
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# %}
+
+public class CommandViewModel
+{
+  private Command<Object> selectionChangedCommand;
+  public Command<object> ListViewSelectionChagedCommand
+  {
+    get { return selectionChangedCommand; }
+    set { selectionChangedCommand = value; }
+  }
+  public CommandViewModel()
+  {
+    ListViewSelectionChagedCommand = new Command<object>(SelectionChagedCommandMethod);
+  }
+  private void SelectionChagedCommandMethod(object obj)
+  {
+    var listView = obj as SfListView;
+    listView.SelectedItems.Clear();
+  }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Key navigation
 
 The [AllowKeyNavigation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowKeyboardNavigation.html) property enables navigation through keyboard buttons. When the `AllowKeyNavigation` property is `true`, navigation gets enabled. Otherwise, set to `false`. Behavior of key navigation in UWP and macOS are explained as follows :

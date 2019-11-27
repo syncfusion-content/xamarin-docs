@@ -52,6 +52,7 @@ listView.LayoutManager.ScrollToRowIndex(index, true);
  * If [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method is called when loading the `SfListView`, set `disableAnimation` to `true` to scroll to the appropriate row index, or else view does not scrolled in Android.
  * If the `ScrollToRowIndex` method is applied to a particular item index while the item is in Grouping or AutoFit mode, the particular item will get displayed in view but not in the exact position when the [ScrollToPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ScrollToPosition.html) property is set as `MakeVisible` or `Center` for first time.
 * In UWP platform, when you hover and scroll the inner listview, the outer listview will not be scrolled by default. To overcome this, set the `InputTransparent` to `True` for the parent element loaded in the `ItemTemplate`. If you set InputTransparent, then the inner listview scroll will not work. This is the default behavior of the listview.
+
 ## Scrollbar visibility
 
 The SfListView provides an option to enable or disable the `Scrollbar` visibility by using the [IsScrollBarVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsScrollBarVisible.html) property. By default, the value will be `true`.  
@@ -64,6 +65,19 @@ N> Due to some restrictions in native ScrollView renderer in Xamarin.Forms, you 
 {% endhighlight %}
 {% highlight c# %}
 listView.IsScrollBarVisible = false; 
+{% endhighlight %}
+{% endtabs %}
+
+## Load without virtualization
+
+The `SfListView` will load all of its items by setting the [IsScrollingEnabled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsScrollingEnabled.html) property to `false`. The default value of `IsScrollingEnabled` is `true`. If `IsScrollingEnabled` is set as `true` then `SfListView` loads its contents to view size and reuse the items while scrolling.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfListView x:Name="listView" IsScrollingEnabled="False" />
+{% endhighlight %}
+{% highlight c# %}
+listView.IsScrollingEnabled = false; 
 {% endhighlight %}
 {% endtabs %}
 

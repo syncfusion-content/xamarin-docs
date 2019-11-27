@@ -338,7 +338,7 @@ The [SelectionChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/
 
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
   <syncfusion:SfListView x:Name="listView"
-   SelectionChangedCommandParameter="{Binding ListViewSelectionChangedCommand}"
+   SelectionChangedCommand="{Binding ListViewSelectionChangedCommand}"
    SelectionChangedCommandParameter="{x:Reference listView}"
    ItemsSource="{Binding BookInfo}"
    ItemSize="100">

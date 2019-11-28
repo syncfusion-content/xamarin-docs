@@ -2,7 +2,7 @@
 
 layout: post
 title: Appointments | SfSchedule | Xamarin | Syncfusion
-description: Learn how to Populate Appointments in SfSchedule control in Xamarin.Forms
+description: Learn how to Populate Appointments in Xamarin.Forms SfSchedule control.
 platform: xamarin
 control: SfSchedule
 documentation: ug

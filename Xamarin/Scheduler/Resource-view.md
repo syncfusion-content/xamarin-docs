@@ -264,9 +264,9 @@ schedule.ResourceViewMode = ResourceViewMode.Absolute;
 {% endtabs %}
 
 >**NOTE**
-`Absolute` option in the `ResourceViewMode` is applicable only for timeline view.
+* `Absolute` option in the `ResourceViewMode` is applicable only for timeline view.
 
-If an appointment is mapped to a single resource and `ResourceViewMode` is `Selection`, it will be displayed in resource color. If an appointment is mapped to multiple resources or `ResourceViewMode` is `Absolute`, it will be displayed in the default appointment color.
+* If an appointment is mapped to a single resource and `ResourceViewMode` is `Selection`, it will be displayed in resource color. If an appointment is mapped to multiple resources or `ResourceViewMode` is `Absolute`, it will be displayed in the default appointment color.
 
 ## Selection mode
 

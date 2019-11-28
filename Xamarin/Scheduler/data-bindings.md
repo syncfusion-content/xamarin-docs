@@ -1130,6 +1130,7 @@ These events will be triggered while perform respective touch actions in timeslo
 • [Appointment](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Appointment.html) - Contains the selected appointment value when tapped on the appointment. It will be null when tapped on the timeslot. Selected occurrence of a recurring appointment's value will be same as the master appointment, except the date values. So selected occurrence's date can be obtained from the args.DateTime value.
 • [Appointments](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Appointments.html) - Contains appointments value of Tapped month cell.
 • [DateTime](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.CellTappedEventArgs~Datetime.html) - Contains selected time slot DateTime value.
+• `Resource` - Contains the resource value of the selected time slot when the `ScheduleView` is `TimelineView` and the `ResourceViewMode` is `Absolute`. Otherwise, it returns null.
 
 >N Occurrences can be handled from tapped event when single occurrence remains unmodified.
 

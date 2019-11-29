@@ -1,7 +1,7 @@
 ---
 layout: post 
 title: Automation in Xamarin Expander Control | Syncfusion
-description: Describes about setting automation id to find and interact with inner elements in Expander
+description: Describes about setting automation id to Expander for automation framework to find and interact with control inner elements.
 platform: Xamarin
 control: Expander
 documentation: ug
@@ -22,7 +22,9 @@ For example, if we set Expander's AutomationId as "Automation" then Automation f
 <tr>
 <td>Expander Icon</td>
 <td>ControlAutomationId Expander</td>
-<td>Automation Expander</td>
+<td>AutomationItem1 Expander<br/><br/>
+where <b>AutomationItem1</b> represents Control AutomationId and <b>Expander</b> represents the expander dropdown icon. 
+</td>
 </tr>
 </table>
 

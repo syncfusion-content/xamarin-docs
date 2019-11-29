@@ -1,7 +1,7 @@
 ---
 layout: post 
 title: Automation in Xamarin Accordion Control | Syncfusion
-description: Describes about setting automation id to find and interact with inner elements in Accordion
+description: Describes about setting automation id to accordion for automation framework to find and interact with control inner elements.
 platform: Xamarin
 control: Accordion
 documentation: ug
@@ -22,7 +22,10 @@ For example, if we set Accordion's AutomationId as "Automation" then Automation 
 <tr>
 <td>Expander Icon</td>
 <td>ControlAutomationId+Item+ItemIndex Expander</td>
-<td>AutomationItem1 Expander</td>
+<td>
+AutomationItem1 Expander<br/><br/>
+where <b>Automation</b> represents Control AutomationId, <b>Item1</b> represents Item text appended with item index which has been generated based on item position and <b>Expander</b> represents the expander dropdown icon. 
+</td>
 </tr>
 </table>
 

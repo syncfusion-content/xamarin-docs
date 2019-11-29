@@ -266,7 +266,7 @@ schedule.ResourceViewMode = ResourceViewMode.Absolute;
 {% endhighlight %}
 {% endtabs %}
 
-![Selection mode in xamarin forms Resource view](resource-view-images/xamarin-forms-schedule-resource-view-mode.jpg)
+![Selection mode in xamarin forms Resource view](resource-view-images/xamarin-forms-schedule-resource-view-mode.png)
 
 >**NOTE**
 * `Absolute` option in the `ResourceViewMode` is applicable only for timeline view.

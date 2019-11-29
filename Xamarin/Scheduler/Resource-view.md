@@ -251,7 +251,10 @@ schedule.ScheduleResources = Employees;
 
 ## Resource view mode
 
-The `SfSchedule` control provides support to view the appointments of either selected resource or entire resource in timeline view using the `ResourceViewMode` property of `SfSchedule`.
+The `SfSchedule` control provides support to view the appointments of either selected resource or entire resource in timeline view using the [ResourceViewMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ResourceViewMode.html) property of `SfSchedule`.
+
+`Selection`: Displays the appointments of selected resource.
+`Absolute`: Displays the appointments of entire resource.
 
 {% tabs %}
 {% highlight xaml %}
@@ -262,6 +265,8 @@ schedule.ScheduleView = ScheduleView.TimelineView;
 schedule.ResourceViewMode = ResourceViewMode.Absolute;
 {% endhighlight %}
 {% endtabs %}
+
+![Selection mode in xamarin forms Resource view](resource-view-images/xamarin-forms-schedule-resource-view-mode.jpg)
 
 >**NOTE**
 * `Absolute` option in the `ResourceViewMode` is applicable only for timeline view.

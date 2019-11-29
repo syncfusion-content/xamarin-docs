@@ -1,7 +1,7 @@
 ---
 layout : post
-title : Events for Syncfusion ChipGroup control for Xamarin.Forms
-description : Learn how to use the SfChipGroup events
+title : Events for Syncfusion ChipGroup control in Xamarin.Forms
+description : Learn more about SfChipGroup events SelectionChanging and SelectionChanged
 platform : xamarin
 control : Chips
 documentation : ug
@@ -25,6 +25,6 @@ The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
  * [RemovedItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.Buttons.XForms.SfChip.SelectionChangedEventArgs~RemovedItem.html
 ) - Get the previous selected or deselected chip from [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup.html).
 
-N>  Currently, the [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.Buttons.XForms.SfChip.SelectionChangingEventArgs.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.Buttons.XForms.SfChip.SelectionChangedEventArgs.html
-) event support only `Choice` and `Filter` types.
+N>  Currently, `Choice` and `Filter` types are supported for [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.Buttons.XForms.SfChip.SelectionChangingEventArgs.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.Buttons.XForms.SfChip.SelectionChangedEventArgs.html
+) events.
 

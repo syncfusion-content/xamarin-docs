@@ -1,7 +1,7 @@
 ---
 layout : post
 title : Events for Syncfusion ChipGroup control for Xamarin.Forms
-description : Learn how to customize the basic features of SfChipGroup
+description : Learn how to use the SfChipGroup event
 platform : xamarin
 control : Chips
 documentation : ug
@@ -10,11 +10,11 @@ documentation : ug
 # Event
 
 ## SelectionChanging Event
-The `SelectionChanging` event is raised while selecting an item at the execution time. `SelectionChangingEventArgs` has the following members which provides the information for `SelectionChanging` event:
+The [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.Buttons.XForms.SfChip.SelectionChangingEventArgs.html) event is triggered before the Chip is selected. You can restrict a chip from being selected, by canceling this event, by setting Cancel property in the event argument to true. The argument contains the following information,
 
- * `AddedItem` - Used to get the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup.html) of selected chip.
- * `RemovedItem` - Used to get the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup.html) previous selected or deselected chip.
- * `Cancel` - Used to set the value indicating whether the selection should be canceled. 
+ * [AddedItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.Buttons.XForms.SfChip.SelectionChangingEventArgs~AddedItem.html) - Used to get the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup.html) of selected chip.
+ * [RemovedItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.Buttons.XForms.SfChip.SelectionChangingEventArgs~RemovedItem.html) - Used to get the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup.html) previous selected or deselected chip.
+ * [Cancel](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.Buttons.XForms.SfChip.SelectionChangingEventArgs~Cancel.html) - Used to set the value indicating whether the selection should be canceled. 
 
 ## SelectionChanged Event
 The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.Buttons.XForms.SfChip.SelectionChangedEventArgs.html
@@ -28,5 +28,5 @@ The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 ) - Get the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup.html) previous selected or deselected chip.
 
 N>  Currently, the [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.Buttons.XForms.SfChip.SelectionChangedEventArgs.html
-) and `SelectionChanging` event occurs only `Choice` and `Filter` types.
+) and [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.Buttons.XForms.SfChip.SelectionChangingEventArgs.html) event occurs only `Choice` and `Filter` types.
 

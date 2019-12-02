@@ -133,7 +133,7 @@ The items in the toolbar is shown or hidden using the following API.
 {% tabs %}
 {% highlight c# %}
 
-//Show/Hide the toobar item(s)
+//Show/Hide the toolbar item(s)
 pdfViewerControl.Toolbar.SetToolbarItemVisibility(string itemName, bool isVisible);             
 
 {% endhighlight %}
@@ -155,7 +155,7 @@ Similarly, the other items can be hidden by mentioning the appropriate key names
 <table>
 
 <tr>
-<th>Toobar Item Name</th>
+<th>Toolbar Item Name</th>
 <th>Key Name</th>
 </tr>
 

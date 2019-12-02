@@ -126,7 +126,7 @@ pdfViewerControl. BookmarkNavigationEnabled = false;
 
 ## How to show/hide the toolbar items in built-in toolbar
 
-The built-in toolbar in PdfViewer includes various items to perform operations such as navigation (bookmark, hyperlink and table of contents) and reviewing the PDF files with different annotation tools. These toolbar buttons can be hidden and customized as per the requirement.
+The built-in toolbar in PdfViewer includes various items to perform operations such as navigation (bookmark, hyperlink and table of contents) and reviewing the PDF files with different annotation tools. These toolbar items can be hidden and customized as per the requirement.
 
 The items in the toolbar is shown or hidden using the following API.
 

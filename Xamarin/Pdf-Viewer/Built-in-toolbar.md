@@ -161,337 +161,337 @@ Similarly, the other items can be hidden by mentioning the appropriate key names
 
 <tr>
 <td>Page view mode button</td>
-<td><i>page-view-mode</i></td>
+<td><i><b>page-view-mode</b></i></td>
 </tr>
 
 <tr>
 <td>Continuous page view mode button</td>
-<td><i>continuous-pages</i></td>
+<td><i><b>continuous-pages</b></i></td>
 </tr>
 
 <tr>
 <td>Single page view mode button</td>
-<td><i>page-by-page</i></td>
+<td><i><b>page-by-page</b></i></td>
 </tr>
 
 <tr>
 <td>Bookmark button</td>
-<td><i>bookmark</i></td>
+<td><i><b>bookmark</b></i></td>
 </tr>
 
 <tr>
 <td>Page number entry</td>
-<td><i>page-entry</i></td>
+<td><i><b>page-entry</b></i></td>
 </tr>
 
 <tr>
 <td>Page count label</td>
-<td><i>page-count</i></td>
+<td><i><b>page-count</b></i></td>
 </tr>
 
 <tr>
 <td>Previous page button</td>
-<td><i>previous-page</i></td>
+<td><i><b>previous-page</b></i></td>
 </tr>
 
 <tr>
 <td>Next page button</td>
-<td><i>next-page</i></td>
+<td><i><b>next-page</b></i></td>
 </tr>
 
 <tr>
 <td>Search button</td>
-<td><i>search</i></td>
+<td><i><b>search</b></i></td>
 </tr>
 
 <tr>
 <td>Search back button</td>
-<td><i>search-back</i></td>
+<td><i><b>search-back</b></i></td>
 </tr>
 
 <tr>
 <td>Search Bar</td>
-<td><i>search-bar</i></td>
+<td><i><b>search-bar</b></i></td>
 </tr>
 
 <tr>
 <td>Clear/Cancel search button</td>
-<td><i>search-clear</i></td>
+<td><i><b>search-clear</b></i></td>
 </tr>
 
 <tr>
 <td>Search next button</td>
-<td><i>search-next</i></td>
+<td><i><b>search-next</b></i></td>
 </tr>
 
 <tr>
 <td>Search previous button</td>
-<td><i>search-previous</i></td>
+<td><i><b>search-previous</b></i></td>
 </tr>
 
 <tr>
 <td>Search instances label</td>
-<td><i>search-instances</i></td>
+<td><i><b>search-instances</b></i></td>
 </tr>
 
 <tr>
 <td>More options button</td>
-<td><i>more-options</i></td>
+<td><i><b>more-options</b></i></td>
 </tr>
 
 <tr>
 <td>Undo button</td>
-<td><i>undo</i></td>
+<td><i><b>undo</b></i></td>
 </tr>
 
 <tr>
 <td>Redo button</td>
-<td><i>redo</i></td>
+<td><i><b>redo</b></i></td>
 </tr>
 
 <tr>
 <td>Save button</td>
-<td><i>save</i></td>
+<td><i><b>save</b></i></td>
 </tr>
 
 <tr>
 <td>Print button</td>
-<td><i>print</i></td>
+<td><i><b>print</b></i></td>
 </tr>
 
 <tr>
 <td>Annotation button</td>
-<td><i>annotation</i></td>
+<td><i><b>annotation</b></i></td>
 </tr>
 
 <tr>
 <td>Annotation back button</td>
-<td><i>annotation-back</i></td>
+<td><i><b>annotation-back</b></i></td>
 </tr>
 
 <tr>
 <td>Text markups annotation button</td>
-<td><i>text-markups</i></td>
+<td><i><b>text-markups</b></i></td>
 </tr>
 
 <tr>
 <td>Text markups back button</td>
-<td><i>text-markups-back</i></td>
+<td><i><b>text-markups-back</b></i></td>
 </tr>
 
 <tr>
 <td>Text highlight button</td>
-<td><i>text-highlight</i></td>
+<td><i><b>text-highlight</b></i></td>
 </tr>
 
 <tr>
 <td>Text underline button</td>
-<td><i>text-underline</i></td>
+<td><i><b>text-underline</b></i></td>
 </tr>
 
 <tr>
 <td>Text strikethrough button</td>
-<td><i>text-strikethrough</i></td>
+<td><i><b>text-strikethrough</b></i></td>
 </tr>
 
 <tr>
 <td>Shapes annotation button</td>
-<td><i>shapes</i></td>
+<td><i><b>shapes</b></i></td>
 </tr>
 
 <tr>
 <td>Shapes back button</td>
-<td><i>shapes-back</i></td>
+<td><i><b>shapes-back</b></i></td>
 </tr>
 
 <tr>
 <td>Rectangle shape button</td>
-<td><i>rectangle</i></td>
+<td><i><b>rectangle</b></i></td>
 </tr>
 
 <tr>
 <td>Ellipse shape button</td>
-<td><i>ellipse</i></td>
+<td><i><b>ellipse</b></i></td>
 </tr>
 
 <tr>
 <td>Line shape button</td>
-<td><i>line</i></td>
+<td><i><b>line</b></i></td>
 </tr>
 
 <tr>
 <td>Arrow shape button</td>
-<td><i>arrow</i></td>
+<td><i><b>arrow</b></i></td>
 </tr>
 
 <tr>
 <td>Ink annotation button</td>
-<td><i>ink</i></td>
+<td><i><b>ink</b></i></td>
 </tr>
 
 <tr>
 <td>Ink undo button</td>
-<td><i>undo-ink</i></td>
+<td><i><b>undo-ink</b></i></td>
 </tr>
 
 <tr>
 <td>Ink redo button</td>
-<td><i>redo-ink</i></td>
+<td><i><b>redo-ink</b></i></td>
 </tr>
 
 <tr>
 <td>Ink confirmation button</td>
-<td><i>done</i></td>
+<td><i><b>done</b></i></td>
 </tr>
 
 <tr>
 <td>Free text annotation button</td>
-<td><i>free-text</i></td>
+<td><i><b>free-text</b></i></td>
 </tr>
 
 <tr>
 <td>Signature button</td>
-<td><i>signature</i></td>
+<td><i><b>signature</b></i></td>
 </tr>
 
 <tr>
 <td>Selected annotation button</td>
-<td><i>selected-annotation</i></td>
+<td><i><b>selected-annotation</b></i></td>
 </tr>
 
 <tr>
 <td>Edited annotation button</td>
-<td><i>edited-annotation</i></td>
+<td><i><b>edited-annotation</b></i></td>
 </tr>
 
 <tr>
 <td>Selected annotation back button</td>
-<td><i>selected-annotation-back</i></td>
+<td><i><b>selected-annotation-back</b></i></td>
 </tr>
 
 <tr>
 <td>Edited annotation back button</td>
-<td><i>edited-annotation-back</i></td>
+<td><i><b>edited-annotation-back</b></i></td>
 </tr>
 
 <tr>
 <td>Selected annotation color button</td>
-<td><i>selected-annotation-color</i></td>
+<td><i><b>selected-annotation-color</b></i></td>
 </tr>
 
 <tr>
 <td>Edited annotation color button</td>
-<td><i>edited-annotation-color</i></td>
+<td><i><b>edited-annotation-color</b></i></td>
 </tr>
 
 <tr>
 <td>Magenta color button</td>
-<td><i>magenta</i></td>
+<td><i><b>magenta</b></i></td>
 </tr>
 
 <tr>
 <td>Black color button</td>
-<td><i>black</i></td>
+<td><i><b>black</b></i></td>
 </tr>
 
 <tr>
 <td>Red color button</td>
-<td><i>red</i></td>
+<td><i><b>red</b></i></td>
 </tr>
 
 <tr>
 <td>Green color button</td>
-<td><i>green</i></td>
+<td><i><b>green</b></i></td>
 </tr>
 
 <tr>
 <td>Yellow color button</td>
-<td><i>yellow</i></td>
+<td><i><b>yellow</b></i></td>
 </tr>
 
 <tr>
 <td>Blue color button</td>
-<td><i>blue</i></td>
+<td><i><b>blue</b></i></td>
 </tr>
 
 <tr>
 <td>Cyan color button</td>
-<td><i>cyan</i></td>
+<td><i><b>cyan</b></i></td>
 </tr>
 
 <tr>
 <td>Color opacity button</td>
-<td><i>opacity</i></td>
+<td><i><b>opacity</b></i></td>
 </tr>
 
 <tr>
 <td>Color opacity slider</td>
-<td><i>opacity-slider</i></td>
+<td><i><b>opacity-slider</b></i></td>
 </tr>
 
 <tr>
 <td>Font size button</td>
-<td><i>font-size</i></td>
+<td><i><b>font-size</b></i></td>
 </tr>
 
 <tr>
 <td>Font size label</td>
-<td><i>font-label</i></td>
+<td><i><b>font-label</b></i></td>
 </tr>
 
 <tr>
 <td>Font range slider</td>
-<td><i>font-range-slider</i></td>
+<td><i><b>font-range-slider</b></i></td>
 </tr>
 
 <tr>
 <td>Selected annotation thickness button</td>
-<td><i>selected-annotation-thickness</i></td>
+<td><i><b>selected-annotation-thickness</b></i></td>
 </tr>
 
 <tr>
 <td>Edited annotation thickness button</td>
-<td><i>edited-annotation-thickness</i></td>
+<td><i><b>edited-annotation-thickness</b></i></td>
 </tr>
 
 <tr>
 <td>First thickness button</td>
-<td><i>1pt-thickness</i></td>
+<td><i><b>1pt-thickness</b></i></td>
 </tr>
 
 <tr>
 <td>Second thickness button</td>
-<td><i>3pt-thickness</i></td>
+<td><i><b>3pt-thickness</b></i></td>
 </tr>
 
 <tr>
 <td>Third thickness button</td>
-<td><i>5pt-thickness</i></td>
+<td><i><b>5pt-thickness</b></i></td>
 </tr>
 
 <tr>
 <td>Fourth thickness button</td>
-<td><i>7pt-thickness</i></td>
+<td><i><b>7pt-thickness</b></i></td>
 </tr>
 
 <tr>
 <td>Fifth thickness button</td>
-<td><i>9pt-thickness</i></td>
+<td><i><b>9pt-thickness</b></i></td>
 </tr>
 
 <tr>
 <td>Edited annotation font size button</td>
-<td><i>edited-annotation-font-size</i></td>
+<td><i><b>edited-annotation-font-size</b></i></td>
 </tr>
 
 <tr>
 <td>Edited annotation modify free text button</td>
-<td><i>edited-annotation-modify-free-text</i></td>
+<td><i><b>edited-annotation-modify-free-text</b></i></td>
 </tr>
 
 <tr>
 <td>Edited annotation delete button</td>
-<td><i>edited-annotation-delete</i></td>
+<td><i><b>edited-annotation-delete</b></i></td>
 </tr>
 
 </table>

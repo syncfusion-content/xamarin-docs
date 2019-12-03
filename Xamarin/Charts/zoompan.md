@@ -100,7 +100,7 @@ Following screenshot shows the zoomed area,
 
 ### Show axis tooltip on selection zooming
 
-The axis tooltip can be enabled while selection zooming by using the [`ChartAxis.ShowTrackballInfo`]() property to show/hide the tooltip on the axis. 
+The axis tooltip on selection zooming can be enabled using the [`ChartAxis.ShowTrackballInfo`]() property to show/hide the tooltip on the axis.
 
 [`ChartAxis.TrackballLabelStyle`]() property is used to customize the appearance of the axis tooltip.
 The following properties are used to customize the axis tooltip:

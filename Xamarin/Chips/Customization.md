@@ -2459,7 +2459,7 @@ N> The default value of SelectionIndicatorColor is [`Color.White`].
 
 ## ChipImageWidth
 
-The [`ChipImageWidth`] property customizes the width of icon image in the SfChipGroup.
+The [ChipImageWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ChipImageWidth.html) property customizes the width of icon image in the SfChipGroup.
 
 {% tabs %}
 

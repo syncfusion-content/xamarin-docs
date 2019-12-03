@@ -98,6 +98,84 @@ Following screenshot shows the zoomed area,
 
 ![Panning support in Xamarin.Forms Chart](zoompan_images/zoompan_img2.png)
 
+### Show axis tooltip on selection zooming
+
+The axis tooltip can be enabled while selection zooming by using the [`ChartAxis.ShowTrackballInfo`]() property to show/hide the tooltip on the axis. 
+
+[`ChartAxis.TrackballLabelStyle`]() property is used to customize the appearance of the axis tooltip.
+The following properties are used to customize the axis tooltip:
+
+* AxisLabelAlignment - used to change the position of the trackball axis label.
+* TextColor – used to change the color of the label.
+* BackgroundColor – used to change the label background color.
+* BorderColor – used to change the border color.
+* BorderThickness – used to change the border width.
+* LabelFormat - used to format the label.
+FontFamily - used to change the font family for the axis title.
+* FontAttributes - used to change the font style for the axis title.
+* FontSize - used to change the font size for the axis title.
+* Margin - used to change the margin size for labels.
+
+You can customize the line color between the tooltip for the selected range while selection zooming using the chart axis [`TrackballAxisLabelStyle`]() [`BorderColor`]().
+
+N> Selection zooming show axis tooltip feature is not supported in `UWP` platform.
+
+Following code snippet illustrates how to enable axis tooltip while selection zooming.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+	<chart:NumericalAxis ShowTrackballInfo="True">
+
+        <chart:NumericalAxis.TrackballLabelStyle>
+
+            <chart:ChartTrackballAxisLabelStyle LabelFormat="##.##"/>
+
+        </chart:NumericalAxis.TrackballLabelStyle>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+	<chart:NumericalAxis ShowTrackballInfo="True">
+
+        <chart:NumericalAxis.TrackballLabelStyle>
+
+            <chart:ChartTrackballAxisLabelStyle LabelFormat="##.##"/>
+
+        </chart:NumericalAxis.TrackballLabelStyle>
+
+</chart:SfChart.SecondaryAxis>
+
+<chart:SfChart.ChartBehaviors>
+
+	<chart:ChartZoomPanBehavior EnableSelectionZooming="True"/>
+
+</chart:SfChart.ChartBehaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+primaryAxis.TrackballLabelStyle = new ChartTrackballAxisLabelStyle() { LabelFormat = "##.##" }; 
+
+secondaryAxis.TrackballLabelStyle = new ChartTrackballAxisLabelStyle() { LabelFormat = "##.##" }; 
+
+ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
+
+zoomPanBehavior.EnableSelectionZooming = true;
+
+chart.ChartBehaviors.Add(zoomPanBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Zoom Mode
 
 The [`ZoomMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~ZoomMode.html) property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of [`ZoomMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ZoomMode.html) is [`XY`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ZoomMode.html) (both axis).

@@ -97,6 +97,8 @@ BindableLayout.SetItemsSource(cardLayout, viewModel.Model.Colors);
 
 [`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout.html) accepts only [`SfCardView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView.html) as its child. The appearance of each [`SfCardView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView.html) can be defined by setting the BindableLayout.ItemTemplate property.
 
+{% tabs %} 
+
 {% highlight xaml %}
 
 <cards:SfCardLayout BindableLayout.ItemsSource="{Binding Model.Colors}"  SwipeDirection="Left" VerticalOptions="Center"  HeightRequest="300" WidthRequest="300" BackgroundColor="#F0F0F0">
@@ -110,3 +112,41 @@ BindableLayout.SetItemsSource(cardLayout, viewModel.Model.Colors);
 </cards:SfCardLayout>
 
 {% endhighlight %}
+
+{% highlight c# %}
+
+SfCardLayout cardLayout = new SfCardLayout()
+{
+    SwipeDirection = CardSwipeDirection.Left,
+    BackgroundColor = Color.FromHex("#F0F0F0"),
+    VerticalOptions = LayoutOptions.Center,
+    HeightRequest = 300,
+    WidthRequest = 300,
+};
+
+this.BindingContext = viewModel;
+
+DataTemplate dataTemplate = new DataTemplate(() =>
+{
+    SfCardView cardView = new SfCardView();
+    cardView.SetBinding(SfCardView.BackgroundColorProperty, new Binding() { Path = "."});
+
+    Label label = new Label()
+    {
+        HorizontalOptions = LayoutOptions.CenterAndExpand,
+        VerticalTextAlignment = TextAlignment.Center
+    };
+
+    label.SetBinding(Label.TextProperty, new Binding() { Path= "."});
+    cardView.Content = label;
+    return cardView;
+});
+
+BindableLayout.SetItemTemplate(cardLayout, dataTemplate);
+BindableLayout.SetItemsSource(cardLayout, viewModel.Model.Colors);
+
+this.Content = cardLayout;
+
+{% endhighlight %}
+
+{% endtabs %}

@@ -105,7 +105,7 @@ The axis tooltip on selection zooming can be enabled using the [`ChartAxis.ShowT
 [`ChartAxis.TrackballLabelStyle`]() property is used to customize the appearance of the axis tooltip.
 The following properties are used to customize the axis tooltip:
 
-* AxisLabelAlignment - used to change the position of the trackball axis label.
+* AxisLabelAlignment - used to change the position of the tooltip axis label.
 * TextColor – used to change the color of the label.
 * BackgroundColor – used to change the label background color.
 * BorderColor – used to change the border color.

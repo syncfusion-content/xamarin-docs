@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in Syncfusion SfListView
-description: Describes about the selection behavior in SfListView.
+description: Describes about the selection behavior.
 platform: xamarin
 control: SfListView
 documentation: ug

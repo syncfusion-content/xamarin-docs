@@ -162,7 +162,11 @@ Following code snippet illustrates how to enable axis tooltip while selection zo
 
 SfChart chart = new SfChart();
 
+primaryAxis.ShowTrackballInfo = true;
+
 primaryAxis.TrackballLabelStyle = new ChartTrackballAxisLabelStyle() { LabelFormat = "##.##" }; 
+
+secondaryAxis.ShowTrackballInfo = true;
 
 secondaryAxis.TrackballLabelStyle = new ChartTrackballAxisLabelStyle() { LabelFormat = "##.##" }; 
 

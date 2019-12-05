@@ -1223,17 +1223,7 @@ public class ListViewItemExt : ListViewItem
     public ListViewItemExt(SfListView listView)
     {
         this.listView = listView;
-        this.PropertyChanged += ListViewItemExt_PropertyChanged; 
     }
-
-    private void ListViewItemExt_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e) 
-    { 
-        if (e.PropertyName == "Visibility") 
-        { 
-            if (!this.Visibility) 
-                this.AbortAnimation("FadeTo"); 
-        } 
-    } 
 
     protected override void OnItemAppearing()
     {

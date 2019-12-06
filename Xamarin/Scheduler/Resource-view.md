@@ -297,7 +297,7 @@ schedule.ResourceViewSettings = resourceViewSettings;
 ![Selection mode in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-selection-mode.png)
 
 >**NOTE**
-In timeline view, it is applicable only when the `ResourceViewMode` is `Selection`.
+In timeline view, [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceViewSettings~SelectionMode.html) is applicable only when the `ResourceViewMode` is `Selection`.
 
 ## Programmatic resource selection
 
@@ -349,7 +349,7 @@ schedule.ResourceViewHeight = 200;
 ![Resource view height in xamarin forms schedule resources](resource-view-images/xamarin-forms-resource-view-height.png)
 
 >**NOTE**
-The `ResourceViewHeight` property acts as width when `ResourceViewMode` is `Absolute` for timeline view.
+The `ResourceViewHeight` property functions as width when `ResourceViewMode` is `Absolute` for timeline view.
 
 ## Visible resource count
 

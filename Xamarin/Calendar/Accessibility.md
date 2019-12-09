@@ -127,3 +127,126 @@ To keep unique `AutomationId`, these inner elements’ AutomationIds are updated
 ### Century view
 
 ![Century view AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-century-view.png)
+
+## Keyboard Behavior
+`SfCalendar` supports selection in `MonthView` using keyboard interactions for the Xamarin.Forms.UWP platform. Keyboard interaction will not have any effect when the `SfCalendar.SelectionMode` is set to `SelectionMode.None` or `SelctionMode.MultiRangeSelection`.
+
+<table>
+<tr>
+<th>
+Key
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+<kbd>DownArrow</kbd>
+</td>
+<td>
+Moves selection to the date directly below the currently selected date on next row.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>UpArrow</kbd>
+</td>
+<td>
+Moves selection to the date directly above the currently selected date on previous row.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>RightArrow</kbd>
+</td>
+<td>
+Moves the selection to the next date of the date currently selected.
+</tr>
+<tr>
+<td>
+<kbd>LeftArrow</kbd>
+</td>
+<td>
+Moves the selection to the previous date of the date currently selected.
+</td>
+</tr>
+</table>
+
+If in `Multiple` selection mode the moved date is already selected, the date will be deselected. In `RangeSelection` selection mode, if the moved date is within the selected range, pressing arrow keys will deselect the entire range and select the moved date alone.
+
+### Shift key combinations
+<table>
+<tr>
+<th>
+Key combinations
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+<kbd>Shift + DownArrow</kbd>
+</td>
+<td>
+If the `SelectionMode` is `Multiple`, the date directly below the last selected date on the next row will be selected along with the currently selected dates. 
+If the `SelectionMode` is `RangeSelection` and selecting dates using the keyboard, the range will be extended to the date directly below the last selected date.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Shift + UpArrow</kbd>
+</td>
+<td>
+If the `SelectionMode` is `Multiple`, the date directly above the last selected date on the previous row will be selected along with the currently selected dates.
+If the `SelectionMode` is `RangeSelection` and selecting dates using the keyboard, the range will be extended to the date directly above the last selected date.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Shift + RightArrow</kbd>
+</td>
+<td>
+If the `SelectionMode` is `Multiple`, the next date of the last selected date will be selected along with the currently selected dates. 
+If the `SelectionMode` is `RangeSelection` and selecting dates using the keyboard, the range will be extended to the next date of the last selected date.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Shift + LeftArrow</kbd>
+</td>
+<td>
+If the `SelectionMode` is `Multiple`, the previous date of the last selected date will be selected along with the currently selected dates.
+If the `SelectionMode` is `RangeSelection` and selecting dates using the keyboard, the range will be extended to the previous date of the last selected date.
+</td>
+</tr>
+</table>
+
+### View navigations
+<table>
+<tr>
+<th>
+Key combinations
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+<kbd>Ctrl + Plus</kbd>
+</td>
+<td>
+`SfCalendar` `ViewMode` changes in the order of `MonthView`, `YearView`, `DecadeView`, and `CenturyView`.
+</td>
+</tr>
+<tr>
+<td>
+<kbd>Ctrl + Minus</kbd>
+</td>
+<td>
+`SfCalendar` `ViewMode` changes in the order of `MonthView`, `CenturyView`, `DecadeView`, and `YearView`.
+</td>
+</tr>
+</table>

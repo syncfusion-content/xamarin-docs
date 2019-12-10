@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in PDF Viewer Xamarin.Forms | Syncfusion
-description: PDF Viewer in Xamarin.Forms supports localizing the static texts used within it to a specific language at the application level.
+description: PDF Viewer in Xamarin.Forms supports to localize the static texts used within it to a specific language at the application level.
 platform: xamarin
 control: SfPdfViewer
 documentation: UG

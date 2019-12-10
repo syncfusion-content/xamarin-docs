@@ -184,7 +184,7 @@ The `SfDataForm`control has built-in `AutomationId` support for inner elements. 
 
 ![AutomationId support Default layout in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-defaultlayout.png)
 
-## Keyboard Behavior
+## Keyboard
 `SfDataForm` provides support to move focus to editors using keyboard interaction.
 
 >**NOTE**
@@ -201,7 +201,7 @@ Description
 </tr>
 <tr>
 <td>
-<kbd>Tab or RightArrow or DownArrow</kbd>
+Tab
 </td>
 <td>
 Moves focus to the next editor from currently focused editor.
@@ -209,18 +209,10 @@ Moves focus to the next editor from currently focused editor.
 </tr>
 <tr>
 <td>
-<kbd>Shift + Tab or LeftArrow or UpArrow</kbd>
+Shift + Tab
 </td>
 <td>
 Moves focus to the previous editor from currently focused editor.
-</td>
-</tr>
-<tr>
-<td>
-<kbd>Enter</kbd>
-</td>
-<td>
-Moves focus to the next editor from currently focused editor. If the editor is `MultilineText`, an empty row will be added inside the editor and the focus will not move.  
 </td>
 </tr>
 </table>

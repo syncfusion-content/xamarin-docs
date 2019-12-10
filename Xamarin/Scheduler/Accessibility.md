@@ -194,7 +194,7 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 ![Timeline View header AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view-header.png)
 ![Timeline View Resources AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view-resources.png)
 
-## Keyboard Behavior
+## Keyboard
 `SfSchedule` supports selection using keyboard interactions. Keyboard interaction will not have any effect when the `SfSchedule.SelectionMode` is set to `SelectionMode.None`.
 
 >**NOTE**
@@ -212,7 +212,7 @@ Description
 </tr>
 <tr>
 <td>
-<kbd>DownArrow</kbd>
+DownArrow
 </td>
 <td>
 Moves selection to the next time slot directly below the currently selected time slot.
@@ -220,7 +220,7 @@ Moves selection to the next time slot directly below the currently selected time
 </tr>
 <tr>
 <td>
-<kbd>UpArrow</kbd>
+UpArrow
 </td>
 <td>
 Moves selection to the previous time slot directly above the currently selected time slot.
@@ -228,7 +228,7 @@ Moves selection to the previous time slot directly above the currently selected 
 </tr>
 <tr>
 <td>
-<kbd>RightArrow</kbd>
+RightArrow
 </td>
 <td>
 Moves selection to the same time slot on the next day.
@@ -236,7 +236,7 @@ Moves selection to the same time slot on the next day.
 </tr>
 <tr>
 <td>
-<kbd>LeftArrow</kbd>
+LeftArrow
 </td>
 <td>
 Moves selection to the same time slot on the previous day.
@@ -256,7 +256,7 @@ Description
 </tr>
 <tr>
 <td>
-<kbd>RightArrow</kbd>
+RightArrow
 </td>
 <td>
 Moves selection to the next time slot of the currently selected time slot.
@@ -264,7 +264,7 @@ Moves selection to the next time slot of the currently selected time slot.
 </tr>
 <tr>
 <td>
-<kbd>LeftArrow</kbd>
+LeftArrow
 </td>
 <td>
 Moves selection to the previous time slot of the currently selected time slot.
@@ -284,7 +284,7 @@ Description
 </tr>
 <tr>
 <td>
-<kbd>DownArrow</kbd>
+DownArrow
 </td>
 <td>
 Moves selection to the date directly below the currently selected date on the next row.
@@ -292,7 +292,7 @@ Moves selection to the date directly below the currently selected date on the ne
 </tr>
 <tr>
 <td>
-<kbd>UpArrow</kbd>
+UpArrow
 </td>
 <td>
 Moves selection to the date directly above the currently selected date on the previous row.
@@ -300,7 +300,7 @@ Moves selection to the date directly above the currently selected date on the pr
 </tr>
 <tr>
 <td>
-<kbd>RightArrow</kbd>
+RightArrow
 </td>
 <td>
 Moves selection to the next date of the currently selected date.
@@ -308,7 +308,7 @@ Moves selection to the next date of the currently selected date.
 </tr>
 <tr>
 <td>
-<kbd>LeftArrow</kbd>
+LeftArrow
 </td>
 <td>
 Moves selection to the previous date of the currently selected date.
@@ -328,7 +328,7 @@ Description
 </tr>
 <tr>
 <td>
-<kbd>Tab</kbd>
+Tab
 </td>
 <td>
 Moves selection to the next appointment of the currently selected appointment.
@@ -336,7 +336,7 @@ Moves selection to the next appointment of the currently selected appointment.
 </tr>
 <tr>
 <td>
-<kbd>Shift + Tab</kbd>
+Shift + Tab
 </td>
 <td>
 Moves selection to the previous appointment of the currently selected appointment.
@@ -344,7 +344,7 @@ Moves selection to the previous appointment of the currently selected appointmen
 </tr>
 <tr>
 <td>
-<kbd>Delete</kbd>
+Delete
 </td>
 <td>
 Deletes the selected appointment from appointments collection.
@@ -364,7 +364,7 @@ Description
 </tr>
 <tr>
 <td>
-<kbd>Ctrl + Plus</kbd>
+Ctrl + Plus
 </td>
 <td>
 `SfSchedule` `ScheduleView` changes in the order of `DayView`, `WeekView`, `WorkWeekView`, `MonthView`, and `TimelineView`.
@@ -372,7 +372,7 @@ Description
 </tr>
 <tr>
 <td>
-<kbd>Ctrl + Minus</kbd>
+Ctrl + Minus
 </td>
 <td>
 `SfSchedule` `ScheduleView` changes in the order of `DayView`, `TimelineView`, `MonthView`, `WorkWeekView`, and `WeekView`.

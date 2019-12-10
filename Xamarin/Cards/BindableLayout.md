@@ -1,7 +1,7 @@
 ---
 layout: post
 title: BindableLayout in Syncfusion.Xamarin.Forms SfCardLayout
-description: How to bind SfCardView to SfCardLayout using BindableLayout
+description: This section describes about how to populate the SfCardLayout with SfCardView using BindableLayout by setting ItemTemplate and ItemsSource.
 platform: xamarin
 control: Cards
 documentation: ug

@@ -11,29 +11,189 @@ documentation: UG
 
 Localization is the process of configuring the application to a specific language. PdfViewerControl supports to localize its static text. SfPdfViewer uses the following static text that can be localized in application level:
 
-* SfPdfViewerCancel
-* SfPdfViewerCopy
-* SfPdfViewerHighlight
-* SfPdfViewerHyperlinkCancel
-* SfPdfViewerHyperlinkMessage
-* SfPdfViewerHyperlinkMessageTitle
-* SfPdfViewerHyperlinkOpen
-* SfPdfViewerInvalidPageMessage
-* SfPdfViewerInvalidPageMessageTitle
-* SfPdfViewerNoMatches
-* SfPdfViewerNoOccurrences
-* SfPdfViewerOkMessage
-* SfPdfViewerPageEntryCancel
-* SfPdfViewerPageEntryOkay
-* SfPdfViewerPageNumberEntryMessage
-* SfPdfViewerPageNumberEntryMessageTitle
-* SfPdfViewerPlaceHolderText
-* SfPdfViewerRedo
-* SfPdfViewerSave
-* SfPdfViewerSearchResult
-* SfPdfViewerStrikethrough
-* SfPdfViewerUnderline
-* SfPdfViewerUndo
+<table>
+
+<tr>
+<th>Keyword</th>
+<th>Text(English)</th>
+</tr>
+
+<tr>
+<td>SfPdfViewerCancel</td>
+<td>Cancel</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerCopy</td>
+<td>Copy</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerHighlight</td>
+<td>Highlight</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerHyperlinkCancel</td>
+<td>Cancel</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerHyperlinkMessage</td>
+<td>Do you want to open the webpage</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerHyperlinkMessageTitle</td>
+<td>Open web page</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerHyperlinkOpen</td>
+<td>Open</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerInvalidPageMessage</td>
+<td>Invalid Page Number</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerInvalidPageMessageTitle</td>
+<td>Error</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerNoMatches</td>
+<td>No matches were found</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerNoOccurrences</td>
+<td>No more matches were found</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerOkMessage</td>
+<td>Ok</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPageEntryCancel</td>
+<td>Cancel</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPageEntryOkay</td>
+<td>Ok</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPageNumberEntryMessage</td>
+<td>Enter Page Number</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPageNumberEntryMessageTitle</td>
+<td>Go To Page</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPlaceHolderText</td>
+<td>Type your text</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerRedo</td>
+<td>Redo</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerSave</td>
+<td>Save</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerSearchResult</td>
+<td>Search Result</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerStrikethrough</td>
+<td>Strikethrough</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerUnderline</td>
+<td>Underline</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerUndo</td>
+<td>Undo</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerSignaturePadTitle</td>
+<td>Create Signature</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerDone</td>
+<td>Done</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerClear</td>
+<td>Clear</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerSignatureCancel</td>
+<td>Cancel</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerSearchPlaceHolderText</td>
+<td>Enter text to search</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerBookmarkToolbarTitle</td>
+<td>Bookmarks</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerNoBookmarksText</td>
+<td>No Bookmarks</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPrint</td>
+<td>Print</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerContinuousPage</td>
+<td>Continuous Pages</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerPageByPage</td>
+<td>Page By Page</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerOfMessage</td>
+<td>Of</td>
+</tr>
+
+<tr>
+<td>SfPdfViewerSubmit</td>
+<td>Submit</td>
+</tr>
+
+</table>
 
 To localize the SfPdfViewer, follow the steps in application level:
 

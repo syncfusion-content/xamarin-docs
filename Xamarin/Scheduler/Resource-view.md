@@ -249,6 +249,30 @@ schedule.ScheduleResources = Employees;
 {% endhighlight %}
 {% endtabs %}
 
+## Resource view mode
+
+The `SfSchedule` control provides support to view the appointments of either selected resource or entire resource in timeline view using the [ResourceViewMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ResourceViewMode.html) property of `SfSchedule`.
+
+`Selection`: Displays the appointments of selected resource.
+`Absolute`: Displays the appointments of entire resource.
+
+{% tabs %}
+{% highlight xaml %}
+<schedule:SfSchedule ScheduleView="TimelineView" ResourceViewMode="Absolute" />
+{% endhighlight %}
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.TimelineView;
+schedule.ResourceViewMode = ResourceViewMode.Absolute;
+{% endhighlight %}
+{% endtabs %}
+
+![Selection mode in xamarin forms Resource view](resource-view-images/xamarin-forms-schedule-resource-view-mode.png)
+
+>**NOTE**
+* `Absolute` option in the `ResourceViewMode` is applicable only for timeline view.
+
+* If an appointment is mapped to a single resource and `ResourceViewMode` is `Selection`, it will be displayed in resource color. If an appointment is mapped to multiple resources or `ResourceViewMode` is `Absolute`, it will be displayed in the default appointment color.
+
 ## Selection mode
 
 The `SfSchedule` control provides support to select single or multiple resources using the [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceViewSettings~SelectionMode.html) property of [ResourceViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ResourceViewSettings.html) in `SfSchedule`.
@@ -271,6 +295,9 @@ schedule.ResourceViewSettings = resourceViewSettings;
 {% endtabs %}
 
 ![Selection mode in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-selection-mode.png)
+
+>**NOTE**
+In timeline view, [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceViewSettings~SelectionMode.html) is applicable only when the `ResourceViewMode` is `Selection`.
 
 ## Programmatic resource selection
 
@@ -321,6 +348,9 @@ schedule.ResourceViewHeight = 200;
 
 ![Resource view height in xamarin forms schedule resources](resource-view-images/xamarin-forms-resource-view-height.png)
 
+>**NOTE**
+The `ResourceViewHeight` property functions as width when `ResourceViewMode` is `Absolute` for timeline view.
+
 ## Visible resource count
 
 You can customize the number of visible resources in the current view using the [VisibleResourceCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceViewSettings~VisibleResourceCount.html) property of `ResourceViewSettings` in `SfSchedule`. By default, value of this property is set to -1. 
@@ -362,6 +392,9 @@ private void OnResourceItemTapped(object sender, ResourceItemTappedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}
+
+>**NOTE**
+In timeline view, the `SelectedResources` becomes null on tapping an item when the `ResourceViewMode` is `Absolute`.
 
 ## Customization
 

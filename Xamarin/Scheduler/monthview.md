@@ -937,7 +937,7 @@ private void Schedule_OnMonthInlineAppointmentLoadedEvent(object sender, MonthIn
 ![Custom month inline appointment in schedule xamarin forms](monthview_images/xamarin.forms-schedule-inline-appointment-appearance.png)
 
 >**NOTE**
-Inline view customization - There is no support for inline view appointments customization using custom view, TimeTextSize, TimeTextFormat and TimeTextColor properties in XForms UWP and WPF platforms.
+Inline view customization - There is no support for inline view appointments customization using TimeTextSize, TimeTextFormat and TimeTextColor properties in XForms UWP and WPF platforms.
 
 ## Selection
 You can customize the default appearance of selection UI in the month cells.

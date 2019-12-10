@@ -185,7 +185,10 @@ The `SfDataForm`control has built-in `AutomationId` support for inner elements. 
 ![AutomationId support Default layout in Xamarin.Forms DataForm](SfDataForm_images/xamarin-forms-dataform-defaultlayout.png)
 
 ## Keyboard Behavior
-`SfDataForm` provides support to move focus to editors using keyboard interaction for the Xamarin.Forms.UWP platform.
+`SfDataForm` provides support to move focus to editors using keyboard interaction.
+
+>**NOTE**
+Keyboard interaction is applicable only for UWP platform.
 
 <table>
 <tr>
@@ -201,7 +204,7 @@ Description
 <kbd>Tab or RightArrow or DownArrow</kbd>
 </td>
 <td>
-Moves focus to the next editor from currently focused editor. If the last editor is currently focused, the focus is set to `SfDataForm`.
+Moves focus to the next editor from currently focused editor.
 </td>
 </tr>
 <tr>
@@ -209,7 +212,7 @@ Moves focus to the next editor from currently focused editor. If the last editor
 <kbd>Shift + Tab or LeftArrow or UpArrow</kbd>
 </td>
 <td>
-Moves focus to the previous editor from currently focused editor. If the first editor is currently focused, the focus is set to `SfDataForm`.
+Moves focus to the previous editor from currently focused editor.
 </td>
 </tr>
 <tr>
@@ -225,7 +228,7 @@ Moves focus to the next editor from currently focused editor. If the editor is `
 ### Customize key functionalities
 To perform custom actions apart from the functions listed in the above table for keyboard keypress actions, implement your custom actions in the `MoveToNextFocusableEditor` and `MoveToPreviousFocusableEditor` overrides of custom layout manager class derived from the [DataFormLayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormLayoutManager.html) class and assign it to the [SfDataForm.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~LayoutManager.html) property.
 
-The `Tab`, `DownArrow`, and `RightArrow` key pressed actions will call `MoveToNextFocusableEditor`. For `Shift + Tab`, `LeftArrow`, and `UpArrow` key pressed actions, `MoveToPreviousFocuableEditor` will be called. Keyboard behaviors can be restricted in override methods by returning false.
+The `Tab`, `DownArrow`, and `RightArrow` key pressed actions will call `MoveToNextFocusableEditor`. For `Shift + Tab`, `LeftArrow`, and `UpArrow` key pressed actions, `MoveToPreviousFocusableEditor` will be called. Keyboard behaviors can be restricted in override methods by returning false.
 
 {% tabs %}
 {% highlight c# %}

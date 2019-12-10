@@ -195,7 +195,10 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 ![Timeline View Resources AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view-resources.png)
 
 ## Keyboard Behavior
-`SfSchedule` supports selection using keyboard interactions for the Xamarin.Forms.UWP platform. Keyboard interaction will not have any effect when the `SfSchedule.SelectionMode` is set to `SelectionMode.None`.
+`SfSchedule` supports selection using keyboard interactions. Keyboard interaction will not have any effect when the `SfSchedule.SelectionMode` is set to `SelectionMode.None`.
+
+>**NOTE**
+Keyboard interaction is applicable only for UWP and WPF platforms.
 
 ### DayView, WeekView and WorkWeekView
 <table>

@@ -28,6 +28,7 @@ You can perform an operation when selecting a date using the `DateSelected` even
 </table>
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -70,6 +71,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![MinimumDate of SfDatePicker](images/Event.png)

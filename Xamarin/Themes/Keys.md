@@ -9107,7 +9107,6 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-        <td>
             Color of dots border in SfRotator.
             <br/>
             <br/>

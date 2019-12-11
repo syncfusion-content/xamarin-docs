@@ -26,6 +26,7 @@ You can perform an operation when selecting time using the `TimeSelected` event.
 </table>
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -68,6 +69,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![Event](images/Event.png)

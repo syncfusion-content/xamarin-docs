@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header Customization for Syncfusion SfTabView control.
-description: About customization of header in TabView control for Xamarin.Forms platform
+description: About customization of header by using the Header content, visible header count options in Syncfusion TabView control for Xamarin.Forms platform
 platform: Xamarin.Forms
 control: TabView
 documentation: ug
@@ -189,7 +189,7 @@ namespace TabViewAutomationSample
 
 ## Add all tab items in a single view 
 
-When you set the `VisibleHeaderCount` to -1, you get all the tabitems in a single view based on the width of the screen and the tab count.
+When you set the `VisibleHeaderCount` to -1, you get all the tab items in a single view based on the width of the screen and the tab count.
 
 {% tabs %}
 

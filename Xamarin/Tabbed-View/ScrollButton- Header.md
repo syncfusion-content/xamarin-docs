@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scroll Buttons for Syncfusion SfTabView Control
-description: Add the Scroll Buttons on tab header in Syncfusion TabView control for Xamarin.Forms platform
+description: Add the Scroll Buttons on both sides of the tab header in Syncfusion TabView control for Xamarin.Forms platform
 platform: Xamarin.Forms
 control: TabView
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Scroll Buttons on Tab Header
 
-Buttons can be used to scroll the items in the header of the tabview by setting the `IsScrollEnabled` property of `SfTabView`.
+Buttons can be used to scroll the items in the header of the tab view by setting the `IsScrollEnabled` property of `SfTabView`.
 
 N> The `IsScrollEnabled` is working only when `OverFlowMode` is set as `Scroll`.
 
@@ -67,7 +67,7 @@ namespace TabView
 
 ## ScrollButtonBackgroundColor and ScrollButtonForegroundColor
 
-Change the color of the Scroll buttons foreground and background color by usign the `ScrollButtonBackgroundColor` and `ScrollButtonForegroundColor` properties
+Change the color of the Scroll buttons foreground and background color by using the `ScrollButtonBackgroundColor` and `ScrollButtonForegroundColor` properties
 
 {% tabs %}
 

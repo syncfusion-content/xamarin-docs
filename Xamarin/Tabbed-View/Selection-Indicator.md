@@ -143,14 +143,28 @@ When the selected index of the control is changed, you can set the speed of the 
              x:Class="TabView.TabView">
     <ContentPage.Content>
         <tabView:SfTabView>
-			<tabView:SfTabView.SelectionIndicatorSettings>
+            <tabView:SfTabView.SelectionIndicatorSettings>
                 <tabView:SelectionIndicatorSettings
-                    Color="Aqua" 
+                    Color="Red" 
                     Position="Top" 
                     AnimationDuration="500"
-                    StrokeThickness="10"/>
+                    StrokeThickness="5"/>
             </tabView:SfTabView.SelectionIndicatorSettings>
-            <!--Add TabItems-->
+            <tabView:SfTabItem Title="Call">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Green"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Favorites">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Green"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Contacts">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
         </tabView:SfTabView>
     </ContentPage.Content>
 </ContentPage>
@@ -186,7 +200,21 @@ namespace TabView
             var contactsGrid = new Grid { BackgroundColor = Color.Blue };
             var tabItems = new TabItemCollection
             {
-                 //Add TabItems
+               new tabview.SfTabItem()
+                {
+                Title = "Calls",
+                Content = allContactsGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Favorites",
+                    Content = favoritesGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Contacts",
+                    Content = contactsGrid
+                }               
             };
             tabView.Items = tabItems;
             this.Content = tabView;

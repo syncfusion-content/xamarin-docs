@@ -69,13 +69,13 @@ using Xamarin.Forms.Xaml;
 namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TabView : ContentPage
-	{
+    public partial class TabView : ContentPage
+    {
         SfTabView tabView;
-		public TabView ()
-		{
-			InitializeComponent ();
-            tabView = new SfTabView();        
+        public TabView()
+        {
+            InitializeComponent();
+            tabView = new SfTabView();
             var tabItems = new TabItemCollection
             {
                new tabview.SfTabItem()
@@ -113,8 +113,8 @@ namespace TabView
             tabView.OverflowMode = OverflowMode.Scroll;
             tabView.IsScrollButtonEnabled = true;
             this.Content = tabView;
-		}
-	}
+        }
+    }
 }
 			
 {% endhighlight %}
@@ -184,13 +184,13 @@ using Xamarin.Forms.Xaml;
 namespace TabView
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class TabView : ContentPage
-	{
+    public partial class TabView : ContentPage
+    {
         SfTabView tabView;
-		public TabView ()
-		{
-			InitializeComponent ();
-            tabView = new SfTabView();        
+        public TabView()
+        {
+            InitializeComponent();
+            tabView = new SfTabView();
             var tabItems = new TabItemCollection
             {
                new tabview.SfTabItem()
@@ -230,8 +230,8 @@ namespace TabView
             tabView.ScrollButtonBackgroundColor = Color.Gray;
             tabView.ScrollButtonForegroundColor = Color.Blue;
             this.Content = tabView;
-		}
-	}
+        }
+    }
 }
 	
 {% endhighlight %}

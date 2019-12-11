@@ -9,7 +9,7 @@ documentation: ug
 
 # Scroll Buttons on Tab Header
 
-Buttons can be used to scroll the items in the header of the tab view by setting the `IsScrollEnabled` property of `SfTabView`.
+Buttons can be used to scroll the items in the header of the tab view by setting the `IsScrollEnabled` property of `SfTabView`.This also helps to indicate that there are tabs beyond the visible area if more tabs are present.
 
 N> The `IsScrollEnabled` is working only when `OverFlowMode` is set as `Scroll`.
 
@@ -24,7 +24,36 @@ N> The `IsScrollEnabled` is working only when `OverFlowMode` is set as `Scroll`.
     <ContentPage.Content>
        <tabView:SfTabView OverflowMode="Scroll" 
                           IsScrollButtonEnabled="True">
-                <!--Add TabItems-->
+                <tabView:SfTabItem Title="Call">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Green"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Favorites">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Green"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Contacts">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Location">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Pink" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Email">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Navy"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Alternative">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
             </tabView:SfTabView>
     </ContentPage.Content>
 </ContentPage>
@@ -49,7 +78,36 @@ namespace TabView
             tabView = new SfTabView();        
             var tabItems = new TabItemCollection
             {
-               //Add TabItems
+               new tabview.SfTabItem()
+                {
+                Title = "Calls",
+                Content = allContactsGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Favorites",
+                    Content = favoritesGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Contacts",
+                    Content = contactsGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Location",
+                    Content = allContactsGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Email",
+                    Content = contactsGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Alternative",
+                    Content = allContactsGrid
+                }
             };
             tabView.Items = tabItems;
             tabView.OverflowMode = OverflowMode.Scroll;
@@ -81,7 +139,36 @@ Change the color of the Scroll buttons foreground and background color by using 
        <tabView:SfTabView OverflowMode="Scroll"   
                           IsScrollButtonEnabled="True"
                           ScrollButtonBackgroundColor="Gray" ScrollButtonForegroundColor="Blue">
-                <!--Add TabItems-->
+                <tabView:SfTabItem Title="Call">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Green"/>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Favorites">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Green" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Contacts">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue" />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Location">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Pink"  />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Email">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Navy"  />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
+                <tabView:SfTabItem Title="Alternative">
+                    <tabView:SfTabItem.Content>
+                        <Grid BackgroundColor="Blue"  />
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
             </tabView:SfTabView>
     </ContentPage.Content>
 </ContentPage>
@@ -106,7 +193,36 @@ namespace TabView
             tabView = new SfTabView();        
             var tabItems = new TabItemCollection
             {
-               //Add TabItems
+               new tabview.SfTabItem()
+                {
+                Title = "Calls",
+                Content = allContactsGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Favorites",
+                    Content = favoritesGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Contacts",
+                    Content = contactsGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Location",
+                    Content = allContactsGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Email",
+                    Content = contactsGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Alternative",
+                    Content = allContactsGrid
+                }
             };
             tabView.Items = tabItems;
             tabView.OverflowMode = OverflowMode.Scroll;

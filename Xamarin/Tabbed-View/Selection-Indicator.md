@@ -131,7 +131,7 @@ N> Stroke thickness will not be applicable when the selection indicator’s posi
 
 ## AnimationDuration
 
-When animated, you can set the speed of the SelectionIndicator by setting the `AnimationDuration` property in the `SelectionIndicatorSettings` 
+When the selected index of the control is changed, you can set the speed of the animation of SelectionIndicator by setting the `AnimationDuration` property in the `SelectionIndicatorSettings` 
 
 {% tabs %}
 

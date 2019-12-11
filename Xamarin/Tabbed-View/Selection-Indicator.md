@@ -128,3 +128,74 @@ namespace TabView
 N> Stroke thickness will not be applicable when the selection indicator’s position is set to "Fill".
 
 ![SelectionIndicator Settings Image](images/Selection-Indicator/SelectionIndicator.png)
+
+## AnimationDuration
+
+When animated, you can set the speed of the SelectionIndicator by setting the `AnimationDuration` property in the `SelectionIndicatorSettings` 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="TabView.TabView">
+    <ContentPage.Content>
+        <tabView:SfTabView>
+			<tabView:SfTabView.SelectionIndicatorSettings>
+                <tabView:SelectionIndicatorSettings
+                    Color="Aqua" 
+                    Position="Top" 
+                    AnimationDuration="500"
+                    StrokeThickness="10"/>
+            </tabView:SfTabView.SelectionIndicatorSettings>
+            <!--Add TabItems-->
+        </tabView:SfTabView>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+using Syncfusion.XForms.TabView;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace TabView
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class TabView : ContentPage
+	{
+        SfTabView tabView;
+		public TabView ()
+		{
+			InitializeComponent ();
+            tabView = new SfTabView();
+            var selectionIndicatorSettings = new SelectionIndicatorSettings();
+            selectionIndicatorSettings.Color = Color.Red;
+            selectionIndicatorSettings.Position = SelectionIndicatorPosition.Bottom;
+            selectionIndicatorSettings.StrokeThickness = 5;
+            selectionIndicatorSettings.AnimationDuration = 500;
+            tabView.SelectionIndicatorSettings = selectionIndicatorSettings;
+            tabView.TabHeaderPosition = TabHeaderPosition.Top;
+            tabView.OverflowMode = OverflowMode.Scroll;
+            var allContactsGrid = new Grid { BackgroundColor = Color.Aqua };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
+            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var tabItems = new TabItemCollection
+            {
+                 //Add TabItems
+            };
+            tabView.Items = tabItems;
+            this.Content = tabView;
+		}
+	}
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Animation Duration](images/Selection-Indicator/AnimationDuration.gif)

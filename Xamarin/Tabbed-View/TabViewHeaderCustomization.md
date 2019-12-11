@@ -186,3 +186,119 @@ namespace TabViewAutomationSample
 {% endtabs %}
 
 ![VisibleHeaderCount](images/TabItems/VisibleHeaderCount.png)
+
+## Add all tab items in a single view 
+
+When you set the `VisibleHeaderCount` to -1, you get all the tabitems in a single view based on the width of the screen and the tab count.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="TabViewAutomationSample.TabViewAutomationSample">
+    <ContentPage.Content>
+        <tabView:SfTabView BackgroundColor="White" VisibleHeaderCount="-1">
+            <tabView:SfTabItem Title="Call">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Gray" x:Name="AllContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Favorites">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Green" x:Name="FavoritesGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Contacts">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue" x:Name="ContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+             <tabView:SfTabItem Title="Location">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Aqua" x:Name="Location" />
+                </tabView:SfTabItem.Content>
+            <tabView:SfTabItem Title="Email">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Olive" x:Name="EmailGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Alternative">
+                <tabView:SfTabItem.Content>
+                     <Grid BackgroundColor="Blue" x:Name="AlternativeGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </ContentPage.Content>
+</ContentPage>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+
+using Syncfusion.XForms.TabView;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace TabViewAutomationSample
+{
+	public partial class TabView : ContentPage
+	{
+        SfTabView tabView;
+		public TabView ()
+		{
+			InitializeComponent ();
+            var tabView = new SfTabView();
+            var allContactsGrid = new Grid {BackgroundColor = Color.Red};
+            var favoritesGrid = new Grid {BackgroundColor = Color.Green};
+            var contactsGrid = new Grid {BackgroundColor = Color.Blue};
+            var emailGrid = new Grid {BackgroundColor = Color.Olive};
+            tabView.VisibleHeaderCount = -1;
+            var tabItems = new TabItemCollection
+            {
+                new SfTabItem()
+                {
+                    Title = "Calls",
+                    Content = allContactsGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Favorites",
+                    Content = favoritesGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Contacts",
+                    Content = contactsGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Location",
+                    Content = favoritesGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Email",
+                    Content = emailGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Alternative",
+                    Content = allContactsGrid
+                }
+            };
+            tabView.Items = tabItems;
+            this.Content = tabView;
+		}
+	}
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The nullable support for `VisibleHeaderCount` only works when `OverFlowMode` is set to `Scroll` or `DropDown`. 
+
+![VisibleHeaderCount](images/TabItems/NullVisibleHeaderCount.jpg)

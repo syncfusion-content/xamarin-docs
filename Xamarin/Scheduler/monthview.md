@@ -243,6 +243,34 @@ schedule.MonthViewSettings = monthViewSettings;
 ![Month agenda item template in schedule xamarin forms](monthview_images/xamarin.forms-schedule-agendaview-itemtemplate.png)
 
 
+### Agenda item height
+You can customize the Agenda view appointment height by setting the [ItemHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~ItemHeight.html) in [AgendaViewStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewStyle.html) property of `MonthViewSettings`.
+
+{% tabs %}
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.MonthView;
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.ShowAgendaView = true;
+schedule.MonthViewSettings = monthViewSettings;
+AgendaViewStyle agendaViewStyle = new AgendaViewStyle();
+agendaViewStyle.ItemHeight = 100;
+schedule.MonthViewSettings.AgendaViewStyle = agendaViewStyle;
+{% endhighlight %}
+{% endtabs %}
+
+### Agenda view height
+You can customize the height of AgendaView in `MonthView` by using the [AgendaViewHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewHeight.html) property in `MonthViewSettings`.
+
+{% tabs %}
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.MonthView;
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.AgendaViewHeight = 300;
+schedule.MonthViewSettings = monthViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+
 ### Agenda View Using Template Selector
 AgendaTemplateSelector can be used to choose a DataTemplate at runtime based on the value of a data-bound to agenda appointment property through `AgendaItemTemplate`. It lets you choose a different data template for each appointment, customizing the appearance of a particular inline appointment based on certain conditions. DataTemplateSelector for inline appointment includes `ScheduleAppointment` or custom appointment as `object` and `Schedule` as bindable object.
 

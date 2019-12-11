@@ -483,6 +483,19 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 
 ![Schedule customizint time label size work week view](workweekview_images/xamarin.forms-schedule-timelabel-size.png)
 
+## Time ruler size Customization
+
+You can customize the size of time ruler in `WorkWeekview` by setting the [TimeRulerSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~TimeRulerSize.html) property in `WorkWeekViewSettings`.
+
+{% tabs %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+workWeekViewSettings.TimeRulerSize = 0;
+schedule.WorkWeekViewSettings = workWeekViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
 

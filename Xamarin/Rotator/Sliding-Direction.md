@@ -208,3 +208,195 @@ namespace Rotator
 {% endhighlight %}
 
 {% endtabs %}
+
+## LeftToRight
+
+Rotator items can be navigate from Left to Right only.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             x:Class="RotatorNavigation.MainPage">
+    
+    <StackLayout>
+        <rotator:SfRotator NavigationDirection="LeftToRight" x:Name="rotator"/>
+    </StackLayout>
+
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+public partial class MainPage : ContentPage
+{
+    SfRotator rotator;
+    StackLayout stackLayoout;
+    public MainPage()
+    {
+        InitializeComponent();
+        rotator = new SfRotator();
+        stackLayoout = new StackLayout();
+        rotator.NavigationDirection = NavigationDirection.LeftToRight;
+        stackLayoout.Children.Add(rotator);
+        this.Content = stackLayoout;
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![LeftToRight](images/LeftToRight.gif)
+
+## RightToLeft
+
+Rotator items can be navigate from Right to Left only.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             x:Class="RotatorNavigation.MainPage">
+    
+    <StackLayout>
+        <rotator:SfRotator NavigationDirection="RightToLeft" x:Name="rotator"/>
+    </StackLayout>
+
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+public partial class MainPage : ContentPage
+{
+    SfRotator rotator;
+    StackLayout stackLayoout;
+    public MainPage()
+    {
+        InitializeComponent();
+        rotator = new SfRotator();
+        stackLayoout = new StackLayout();
+        rotator.NavigationDirection = NavigationDirection.RightToLeft;
+        stackLayoout.Children.Add(rotator);
+        this.Content = stackLayoout;
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![RightToLeft](images/RightToLeft.gif)
+
+## TopToBottom
+
+Rotator items can be navigate from Top to Bottom only.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             x:Class="RotatorNavigation.MainPage">
+    
+    <StackLayout>
+        <rotator:SfRotator NavigationDirection="TopToBottom" x:Name="rotator"/>
+    </StackLayout>
+
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+public partial class MainPage : ContentPage
+{
+    SfRotator rotator;
+    StackLayout stackLayoout;
+    public MainPage()
+    {
+        InitializeComponent();
+        rotator = new SfRotator();
+        stackLayoout = new StackLayout();
+        rotator.NavigationDirection = NavigationDirection.TopToBottom;
+        stackLayoout.Children.Add(rotator);
+        this.Content = stackLayoout;
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![TopToBottom](images/TopToBottom.gif)
+
+## BottomToTop
+
+Rotator items can be navigate from Bottom to Top only.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:rotator="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             x:Class="RotatorNavigation.MainPage">
+    
+    <StackLayout>
+        <rotator:SfRotator NavigationDirection="BottomToTop" x:Name="rotator"/>
+    </StackLayout>
+
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+public partial class MainPage : ContentPage
+{
+    SfRotator rotator;
+    StackLayout stackLayoout;
+    public MainPage()
+    {
+        InitializeComponent();
+        rotator = new SfRotator();
+        stackLayoout = new StackLayout();
+        rotator.NavigationDirection = NavigationDirection.BottomToTop;
+        stackLayoout.Children.Add(rotator);
+        this.Content = stackLayoout;
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![BottomToTop](images/BottomToTop.gif)

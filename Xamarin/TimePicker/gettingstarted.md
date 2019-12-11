@@ -424,6 +424,11 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![GettingStarted of SfTimePicker](images/GettingStarted_TimePicker.png)
+
+We have attached sample for reference. You can download the sample from the following link.
+
+Sample link:[GettingStarted](https://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePickerSample211616816)

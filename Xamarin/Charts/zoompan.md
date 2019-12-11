@@ -180,6 +180,8 @@ chart.ChartBehaviors.Add(zoomPanBehavior);
 
 {% endtabs %}
 
+![Show axis tooltip on selection zooming in Xamarin.Forms Chart](zoompan_images/zoompan_img4.png)
+
 ## Zoom Mode
 
 The [`ZoomMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~ZoomMode.html) property specifies whether chart should be allowed to scale along horizontal axis or vertical axis or along both axis. The default value of [`ZoomMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ZoomMode.html) is [`XY`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ZoomMode.html) (both axis).

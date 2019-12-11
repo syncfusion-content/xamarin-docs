@@ -20,6 +20,7 @@ SfTimePicker allows customizing the header's background, text color, and fonts.
 SfTimePicker allows enabling or disabling the header section by setting the `SfTimePicker.ShowHeader` property to true or false. The default value of the `SfTimePicker.ShowHeader` property is "true".
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -59,6 +60,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Set custom header 
@@ -66,6 +68,7 @@ namespace TimePickerSample
 SfTimePicker allows providing custom text to its header by setting the `SfTimePicker.HeaderText` property. The default value of the `SfTimePicker.HeaderText` property is "Time Picker".
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -105,6 +108,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Background
@@ -112,6 +116,7 @@ namespace TimePickerSample
 Background color of the header can be customized by setting the `SfTimePicker.HeaderBackgroundColor` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -127,7 +132,6 @@ Background color of the header can be customized by setting the `SfTimePicker.He
 </ContentPage>
 
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight c# %}
 
@@ -152,6 +156,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Text-Color 
@@ -159,6 +164,7 @@ namespace TimePickerSample
 Text color of the header can be customized by setting the `SfTimePicker.HeaderTextColor` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -177,7 +183,25 @@ Text color of the header can be customized by setting the `SfTimePicker.HeaderTe
 
 {% highlight c# %}
 
-picker.HeaderTextColor = Color.Red; 
+using Syncfusion.XForms.Pickers;
+using Xamarin.Forms;
+
+namespace TimePickerSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfTimePicker timePicker = new SfTimePicker()
+            {
+               HeaderTextColor = Color.Red; 
+            };
+
+            this.Content = timePicker;
+        }
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -191,6 +215,7 @@ This section explains about the Font customization of header text.
 FontFamily of the header text can be customized by setting the `SfTimePicker.HeaderFontFamily` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <<?xml version="1.0" encoding="utf-8" ?>
@@ -230,6 +255,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 #### FontSize
@@ -237,6 +263,7 @@ namespace TimePickerSample
 FontSize of the header text can be customized by setting the `SfTimePicker.HeaderFontSize` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -276,6 +303,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}   
 
 #### FontAttribute
@@ -283,6 +311,7 @@ namespace TimePickerSample
 FontAttribute of the header text can be customized by setting the `SfTimePicker.HeaderFontAttribute` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -322,6 +351,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## Column header customization
@@ -333,6 +363,7 @@ SfTimePicker allows customizing the column header's background, text color, and 
 SfTimePicker allows enabling or disabling the column header section by setting the `SfTimePicker.ShowColumnHeader` property to true or false. The default value of the `SfTimePicker.ShowColumnHeader` property is "true".
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -372,6 +403,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Set custom column header 
@@ -379,6 +411,7 @@ namespace TimePickerSample
 SfTimePicker allows providing custom text to its column header by setting the `SfTimePicker.HourHeaderText`, `SfTimePicker.MinutesHeaderText`, and `SfTimePicker.SecondsHeaderText` properties. The default value of the `SfTimePicker.HourHeaderText` property is "Hour", `SfTimePicker.MinutesHeaderText` is "Minutes", and `SfTimePicker.SecondsHeaderText` is "Seconds".
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -421,11 +454,16 @@ namespace TimePickerSample
     }
 }
 
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Background
 
 Background color of the column header can be customized by setting the `SfTimePicker.ColumnHeaderBackgroundColor` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -441,7 +479,6 @@ Background color of the column header can be customized by setting the `SfTimePi
 </ContentPage>
 
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight c# %}
 
@@ -466,6 +503,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Text-Color 
@@ -473,6 +511,7 @@ namespace TimePickerSample
 Text color of the column header can be customized by setting the `SfTimePicker.ColumnHeaderTextColor` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -512,6 +551,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Font 
@@ -523,6 +563,7 @@ This section explains about the Font customization of the column header text.
 FontFamily of the column header text can be customized by setting the `SfTimePicker.ColumnHeaderFontFamily` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -562,6 +603,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 #### FontSize
@@ -569,6 +611,7 @@ namespace TimePickerSample
 FontSize of the column header text can be customized by setting the `SfTimePicker.ColumnHeaderFontSize` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -608,6 +651,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}   
 
 #### FontAttribute
@@ -615,6 +659,7 @@ namespace TimePickerSample
 FontAttribute of the column header text can be customized by setting the `SfTimePicker.ColumnHeaderFontAttribute` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -654,6 +699,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## Footer customization
@@ -665,6 +711,7 @@ SfTimePicker allows customizing background, text color of the OK and Cancel butt
 TimePicker allows enabling or disabling the footer section by setting the `SfTimePicker.ShowFooter` property to true or false. The default value of `SfTimePicker.ShowFooter` property is "false".
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -704,6 +751,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### OK and Cancel buttons customizations
@@ -713,6 +761,7 @@ namespace TimePickerSample
 Background colors of the OK and Cancel buttons can be customized by setting the `SfTimePicker.OKButtonBackgroundColor` and `SfTimePicker.CancelButtonBackgroundColor` properties.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -730,7 +779,6 @@ Background colors of the OK and Cancel buttons can be customized by setting the 
 </ContentPage>
 
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight c# %}
 
@@ -756,6 +804,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 #### Text-Color 
@@ -763,6 +812,7 @@ namespace TimePickerSample
 Text colors of the OK and Cancel buttons can be customized by setting the `SfTimePicker.OKButtonTextColor` and `SfTimePicker.CancelButtonTextColor` properties.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -805,6 +855,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Perform validation with default validation button
@@ -814,6 +865,7 @@ TimePicker allows performing validation based on OK or Cancel button by using `S
 The following example shows how to use the OkCommand and the CancelCommand. When you click the OK button, the background color of the selected item will change to green. When you click the Cancel button, the background color of the selected item will change to red.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -901,6 +953,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## Selected item customization
@@ -912,6 +965,7 @@ SfTimePicker allows customizing the SelectedItems's background, text color, and 
 Background color of the SelectedItem can be customized by setting the `SfTimePicker.SelectionBackgroundColor` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -927,7 +981,6 @@ Background color of the SelectedItem can be customized by setting the `SfTimePic
 </ContentPage>
 
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight c# %}
 
@@ -952,6 +1005,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Text-Color 
@@ -1009,6 +1063,7 @@ This section explains about the Font customization of SelectedItem text.
 FontFamily of the SelectedItem text can be customized by setting the `SfTimePicker.SelectedItemFontFamily` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1048,6 +1103,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 #### FontSize
@@ -1094,6 +1150,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}   
 
 #### FontAttribute
@@ -1101,6 +1158,7 @@ namespace TimePickerSample
 FontAttribute of the SelectedItem text can be customized by setting the `SfTimePicker.SelectedItemFontAttribute` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1140,6 +1198,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## Unselected item customization
@@ -1151,6 +1210,7 @@ SfTimePicker allows customizing the Unselected item's text color, and fonts.
 Text color of the unselected item can be customized by setting the `SfTimePicker.UnselectedItemTextColor` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1190,6 +1250,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Font 
@@ -1240,6 +1301,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 #### FontSize
@@ -1247,6 +1309,7 @@ namespace TimePickerSample
 FontSize of the unselected item text can be customized by setting `SfTimePicker.UnselectedItemFontSize` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1286,6 +1349,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}   
 
 #### FontAttribute
@@ -1293,6 +1357,7 @@ namespace TimePickerSample
 FontAttribute of the unselected item text can be customized by setting the `SfTimePicker.UnselectedItemFontAttribute` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1332,5 +1397,6 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 

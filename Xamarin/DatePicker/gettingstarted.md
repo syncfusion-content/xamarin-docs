@@ -169,6 +169,7 @@ Create a new blank project (Xamarin.Forms portable) by using Visual Studio or Xa
   * Create a new SfDatePicker instance in ContentPage constructor, and assign SfDatePicker instance to ContentPage content property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -203,6 +204,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Set header to the DatePicker
@@ -210,6 +212,7 @@ namespace DatePickerSample
 The SfDatePicker control allows you to the define header text by setting the `SfDatePicker.HeaderText`, and enable SfPicker header by setting `SfDatePicker.ShowHeader` property to true. The default value of `SfDatePicker.ShowHeader` is "true".
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -248,6 +251,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Enable validation button in footer
@@ -255,6 +259,7 @@ namespace DatePickerSample
 In SfDatePicker control, validation buttons (OK and Cancel)can be enabled by setting `SfDatePicker.ShowFooter` property to true. The default value of `SfDatePicker.ShowFooter` property is "false".
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -293,6 +298,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### PickerHeight and PickerWidth
@@ -300,6 +306,7 @@ namespace DatePickerSample
 The SfDatePicker control allows you to the change the height and the width of the picker using the `SfDatePicker.PickerHeight`, and `SfDatePicker.PickerWidth` properties.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -376,6 +383,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Date
@@ -383,6 +391,7 @@ namespace DatePickerSample
 The date can be selected by using the Date property. The default value of Date is current date.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -422,6 +431,11 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![OverView of SfDatePicker](images/GettingStatrted_DatePicker.png)
+
+We have attached sample for reference. You can download the sample from the following link.
+
+Sample link:[GettingStarted](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePickerSample-472749877)

@@ -17,6 +17,7 @@ By default, the DatePicker’s format is "DateFormat.M_d_yyyy".
 The following example demonstrates the DatePicker with the custom format DateFormat.yyyy-MM-dd.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -56,6 +57,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![Format of SfDatePicker](images/Format_DatePicker.png)

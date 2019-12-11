@@ -14,6 +14,7 @@ documentation: ug
 TimePicker provides an option to give an interval between hours using the `SfTimePicker.HourInterval` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -53,6 +54,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## How to set an interval between minutes
@@ -60,6 +62,7 @@ namespace TimePickerSample
 TimePicker provides an option to give an interval between minutes using the `SfTimePicker.MinuteInterval` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -99,6 +102,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## How to set an interval between seconds
@@ -106,6 +110,7 @@ namespace TimePickerSample
 TimePicker provides an option to give an interval between seconds using the `SfTimePicker.SecondInterval` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>

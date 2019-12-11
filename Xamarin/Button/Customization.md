@@ -292,7 +292,14 @@ button.ImageWidth = 50;
 
 ### ImageAlignment 
 
-The [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageAlignment.html) property is used to customize the alignment of icon image in SfButton.
+The [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageAlignment.html) property is used to customize the alignment of icon image in SfButton. The following options are available in [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageAlignment.html):
+
+    * Start  - Places the image at the start if any flow direction is mentioned.
+    * End    - Places the image at the end if any flow direction is mentioned.
+    * Top    - Places the image at the top of the text.
+    * Bottom - Places the image at the bottom of the text.
+    * Left   - Places the image at the left of the text. 
+    * Right  - Places the image at the right of the text.
 
 N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ShowIcon.html) property to enable the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property. 
 

@@ -426,7 +426,7 @@ You can find the complete Load More sample from this [link.](http://www.syncfusi
 
 ## LoadMore method
 
-Virtualization can be achieved without the use of [`AllowLoadMore`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms~Syncfusion.SfCarousel.XForms.SfCarousel~AllowLoadMore.html) property. This can be achieved using the LoadMore method. Carousel items can be loaded on the basis of [`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms~Syncfusion.SfCarousel.XForms.SfCarousel~LoadMoreItemsCount.html) property.
+To load more items programatically, LoadMore method can be called which loads the items dynamically to the UI based on the [`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms~Syncfusion.SfCarousel.XForms.SfCarousel~LoadMoreItemsCount.html) API value.
 
 {% tabs %}
 

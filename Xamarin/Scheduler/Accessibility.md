@@ -193,3 +193,189 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 ![Timeline view AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view.png)
 ![Timeline View header AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view-header.png)
 ![Timeline View Resources AutomationId support in Xamarin.Forms Schedule](automationid_images/xamarin-forms-schedule-timeline-view-resources.png)
+
+## Keyboard
+`SfSchedule` supports selection using keyboard interactions.
+
+>**NOTE**
+Keyboard interaction is applicable only for UWP and WPF platforms.
+
+### DayView, WeekView and WorkWeekView
+<table>
+<tr>
+<th>
+Key
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+DownArrow
+</td>
+<td>
+Moves selection to the next time slot directly below the currently selected time slot.
+</td>
+</tr>
+<tr>
+<td>
+UpArrow
+</td>
+<td>
+Moves selection to the previous time slot directly above the currently selected time slot.
+</td>
+</tr>
+<tr>
+<td>
+RightArrow
+</td>
+<td>
+Moves selection to the same time slot on the next day.
+</td>
+</tr>
+<tr>
+<td>
+LeftArrow
+</td>
+<td>
+Moves selection to the same time slot on the previous day.
+</td>
+</tr>
+</table>
+
+### TimelineView
+<table>
+<tr>
+<th>
+Key
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+RightArrow
+</td>
+<td>
+Moves selection to the next time slot of the currently selected time slot.
+</td>
+</tr>
+<tr>
+<td>
+LeftArrow
+</td>
+<td>
+Moves selection to the previous time slot of the currently selected time slot.
+</td>
+</tr>
+</table>
+
+### MonthView
+<table>
+<tr>
+<th>
+Key
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+DownArrow
+</td>
+<td>
+Moves selection to the date directly below the currently selected date on the next row.
+</td>
+</tr>
+<tr>
+<td>
+UpArrow
+</td>
+<td>
+Moves selection to the date directly above the currently selected date on the previous row.
+</td>
+</tr>
+<tr>
+<td>
+RightArrow
+</td>
+<td>
+Moves selection to the next date of the currently selected date.
+</td>
+</tr>
+<tr>
+<td>
+LeftArrow
+</td>
+<td>
+Moves selection to the previous date of the currently selected date.
+</td>
+</tr>
+</table>
+
+### Appointments
+<table>
+<tr>
+<th>
+Key or Key combinations
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+Tab
+</td>
+<td>
+Moves selection to the next appointment of the currently selected appointment.
+</td>
+</tr>
+<tr>
+<td>
+Shift + Tab
+</td>
+<td>
+Moves selection to the previous appointment of the currently selected appointment.
+</td>
+</tr>
+<tr>
+<td>
+Delete
+</td>
+<td>
+Deletes the selected appointment from appointments collection.
+</td>
+</tr>
+</table>
+
+### View navigations
+<table>
+<tr>
+<th>
+Key combinations
+</th>
+<th>
+Description
+</th>
+</tr>
+<tr>
+<td>
+Ctrl + Plus
+</td>
+<td>
+`SfSchedule` `ScheduleView` changes in the order of `DayView`, `WeekView`, `WorkWeekView`, `MonthView`, and `TimelineView`.
+</td>
+</tr>
+<tr>
+<td>
+Ctrl + Minus
+</td>
+<td>
+`SfSchedule` `ScheduleView` changes in the order of `DayView`, `TimelineView`, `MonthView`, `WorkWeekView`, and `WeekView`.
+</td>
+</tr>
+</table>

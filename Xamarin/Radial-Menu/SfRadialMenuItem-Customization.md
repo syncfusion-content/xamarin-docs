@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion RadialMenu item customization in Xamarin.Forms
-description: Working with various options available in SfRadialMenuItems in Xamarin.Forms
+description: This section explains how to use the various properties available in Syncfusion Xamarin.Forms SfRadialMenuItem
 platform: Xamarin
 control: SfRadialMenu
 documentation: ug
@@ -844,4 +844,110 @@ namespace RadialSample
 
 {% endhighlight %}
 
+{% endtabs %}
+
+## Command
+
+The `Command` property is used to associate a command with an instance of SfRadialMenu. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+
+The following example shows how the command should be used. When you click SfRadialMenuItem, the text color of the SfRadialMenuItem and the center button will be changed to green.
+
+{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RadialMenuCommandSample"
+             xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             x:Class="RadialMenuCommandSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:CommandDemoViewModel/>
+    </ContentPage.BindingContext>
+
+    <StackLayout>
+        <radialMenu:SfRadialMenu x:Name="radialMenu" 
+                                 CenterButtonText="Edit"
+                                 CenterButtonTextColor="{Binding Background}"  
+                                 Command="{Binding ButtonCommand}"
+                                 CenterButtonFontSize="18">
+            <radialMenu:SfRadialMenu.Items>
+                <radialMenu:SfRadialMenuItem Text="Cut"
+                                             TextColor="{Binding Background}"
+                                             FontSize="13"/>
+                <radialMenu:SfRadialMenuItem Text="Copy" 
+                                             TextColor="{Binding Background}"
+                                             FontSize="13"/>
+                <radialMenu:SfRadialMenuItem Text="Paste" 
+                                             TextColor="{Binding Background}"
+                                             FontSize="13"/>
+                <radialMenu:SfRadialMenuItem Text="Crop" 
+                                             TextColor="{Binding Background}"
+                                             FontSize="13"/>
+                <radialMenu:SfRadialMenuItem Text="Paint" 
+                                             TextColor="{Binding Background}"
+                                             FontSize="13"/>
+            </radialMenu:SfRadialMenu.Items>
+        </radialMenu:SfRadialMenu>
+    </StackLayout>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c#%}
+
+using System;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+using System.Windows.Input;
+using Xamarin.Forms;
+
+namespace RadialMenuCommandSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+    }
+
+    // ViewModel
+    public class CommandDemoViewModel : INotifyPropertyChanged
+    {
+
+        private Color _background = Color.Accent;
+
+        public Color Background
+        {
+            get { return _background; }
+            set
+            {
+                _background = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        public CommandDemoViewModel()
+        {
+            BackgroundColor();
+            this.Background = Color.Accent;
+        }
+
+        private void BackgroundColor()
+        {
+            this.Background = Color.Green;
+        }
+        public ICommand ButtonCommand => new Command(BackgroundColor);
+    }
+}
+
+{% endhighlight %}
 {% endtabs %}

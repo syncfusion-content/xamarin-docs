@@ -240,7 +240,7 @@ Description
 Ctrl + Plus
 </td>
 <td>
-SfCalendar ViewMode changes in the order of MonthView, YearView, DecadeView, and CenturyView.
+View mode changes in the order of Month, Year, Decade, and Century.
 </td>
 </tr>
 <tr>
@@ -248,7 +248,7 @@ SfCalendar ViewMode changes in the order of MonthView, YearView, DecadeView, and
 Ctrl + Minus
 </td>
 <td>
-SfCalendar ViewMode changes in the order of MonthView, CenturyView, DecadeView, and YearView.
+View mode changes in the order of Month, Century, Decade, and Year.
 </td>
 </tr>
 </table>

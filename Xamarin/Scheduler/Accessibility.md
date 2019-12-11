@@ -367,7 +367,7 @@ Description
 Ctrl + Plus
 </td>
 <td>
-SfSchedule ScheduleView changes in the order of DayView, WeekView, WorkWeekView, MonthView, and TimelineView.
+Schedule view changes in the order of Day, Week, Work week, Month, and Timeline.
 </td>
 </tr>
 <tr>
@@ -375,7 +375,7 @@ SfSchedule ScheduleView changes in the order of DayView, WeekView, WorkWeekView,
 Ctrl + Minus
 </td>
 <td>
-SfSchedule ScheduleView changes in the order of DayView, TimelineView, MonthView, WorkWeekView, and WeekView.
+Schedule view changes in the order of Day, Timeline, Month, Work week, and Week.
 </td>
 </tr>
 </table>

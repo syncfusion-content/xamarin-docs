@@ -255,8 +255,6 @@ public partial class MainPage : ContentPage
 
 {% endtabs %}
 
-![LeftToRight](images/LeftToRight.gif)
-
 ## RightToLeft
 
 Rotator items can be navigate from Right to Left only.
@@ -302,8 +300,6 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 
 {% endtabs %}
-
-![RightToLeft](images/RightToLeft.gif)
 
 ## TopToBottom
 
@@ -351,8 +347,6 @@ public partial class MainPage : ContentPage
 
 {% endtabs %}
 
-![TopToBottom](images/TopToBottom.gif)
-
 ## BottomToTop
 
 Rotator items can be navigate from Bottom to Top only.
@@ -398,5 +392,3 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 
 {% endtabs %}
-
-![BottomToTop](images/BottomToTop.gif)

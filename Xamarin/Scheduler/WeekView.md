@@ -468,7 +468,7 @@ schedule.WeekViewSettings = weekViewSettings;
 
 ![Time label size in schedule xamarin forms](weekview_images/xamarin.forms-schedule-timelabel-size.png)
 
-## Time ruler size Customization
+## Time ruler size customization
 
 You can customize the size of time ruler in `WeekView` by setting the [TimeRulerSize](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~TimeRulerSize.html) property in `WeekViewSettings`.
 

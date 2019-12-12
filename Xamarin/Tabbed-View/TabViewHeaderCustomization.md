@@ -189,7 +189,7 @@ namespace TabViewAutomationSample
 
 ## Add all tab items in a single view 
 
-When you set the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTabView.XForms~Syncfusion.XForms.TabView.SfTabView~VisibleHeaderCount.html) to -1, you get all the tab items in a single view based on the width of the visible area in the control and the tab count.
+When you set the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTabView.XForms~Syncfusion.XForms.TabView.SfTabView~VisibleHeaderCount.html) to -1, you get all the tab items in a single view based on the width of the visible area in the control and tab count.
 
 {% tabs %}
 

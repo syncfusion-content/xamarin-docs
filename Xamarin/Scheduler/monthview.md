@@ -244,7 +244,7 @@ schedule.MonthViewSettings = monthViewSettings;
 
 
 ### Agenda item height
-You can customize the Agenda view appointment height by setting the [ItemHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~ItemHeight.html) in [AgendaViewStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewStyle.html) property of `MonthViewSettings`.
+You can customize the agenda view appointment height by setting the [ItemHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~ItemHeight.html) in [AgendaViewStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewStyle.html) property of `MonthViewSettings`.
 
 {% tabs %}
 {% highlight c# %}
@@ -259,7 +259,7 @@ schedule.MonthViewSettings.AgendaViewStyle = agendaViewStyle;
 {% endtabs %}
 
 ### Agenda view height
-You can customize the height of AgendaView in `MonthView` by using the [AgendaViewHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewHeight.html) property in `MonthViewSettings`.
+You can customize the height of agenda view in `MonthView` by using the [AgendaViewHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewHeight.html) property in `MonthViewSettings`.
 
 {% tabs %}
 {% highlight c# %}

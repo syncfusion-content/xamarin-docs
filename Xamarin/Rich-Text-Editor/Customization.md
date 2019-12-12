@@ -23,11 +23,14 @@ The [`ToolbarOptions`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichT
 * `FontColor`
 * `FontSize`
 * `HighlightColor`
+* `Hyperlink`
 * `IncreaseIndent`
 * `Italic`
 * `NumberList`
 * `ParagraphFormat`
+* `Redo`
 * `Underline`
+* `Undo`
 * `All` - default
 
 {% tabs %} 
@@ -71,6 +74,50 @@ richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
 richtexteditor.ToolbarSettings.BackgroundColor = Color.Orange;
 richtexteditor.ToolbarSettings.TextColor = Color.DarkBlue;
 richtexteditor.ToolbarSettings.ToolbarBackgroundColor = Color.DarkBlue;
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+## Placeholder
+
+Specifies the placeholder for the RichTextEditor’s content which is displayed when the RichTextEditor Text is empty. The following code example explains how to set a placeholder for Rich Text Editor.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+<StackLayout>
+   <richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" PlaceHolder="Type something"/>
+</StackLayout>   
+{% endhighlight %}
+
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.PlaceHolder="Type something";
+this.Content = richtexteditor;
+{% endhighlight %}
+
+![Placeholder support in Rich Text Editor](SfRichTextEditor_Images/Placeholder.png)
+
+{% endtabs %}
+
+## Read-only support
+
+Rich Text Editor provides read-only support which allows user to restrict editing. Rich Text Editor can be used as HTML Viewer using this feature. The following code example explains how to set read-only mode in Rich Text Editor.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+<StackLayout>
+   <richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" ReadOnly="True" />
+</StackLayout>   
+{% endhighlight %}
+
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ReadOnly=true;
 this.Content = richtexteditor;
 {% endhighlight %}
 

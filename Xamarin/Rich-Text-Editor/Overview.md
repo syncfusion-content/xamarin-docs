@@ -17,6 +17,7 @@ The Xamarin Rich Text Editor control is a WYSIWYG editor that provides a great u
 * Applies font color and background color to the content.
 * Customizes the text size and selection.
 * Creates bulleted and numbered lists.
-
+* Allows hyperlink manipulation i.e., create, edit, and remove hyperlink.
+* Allows Undo and Redo editing action in Xamarin.Forms UWP.
 
 ![Overview of Rich Text Editor](SfRichTextEditor_Images/Overview.gif)

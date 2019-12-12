@@ -2,7 +2,7 @@
 
 layout: post
 title: Customize WorkWeekView at Syncfusion SfSchedule for Xamarin.Forms
-description: Learn how to Customize the schedule WorkWeekView in SfSchedule control in Xamarin.Forms
+description: Learn how to customize the scheduler work week view settings and its appearance in SfSchedule control in Xamarin.Forms
 platform: xamarin
 control: SfSchedule
 documentation: ug
@@ -482,6 +482,19 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 {% endtabs %}
 
 ![Schedule customizint time label size work week view](workweekview_images/xamarin.forms-schedule-timelabel-size.png)
+
+## Time ruler size customization
+
+You can customize the size of time ruler in `WorkWeekView` by setting the [TimeRulerSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~TimeRulerSize.html) property in `WorkWeekViewSettings`.
+
+{% tabs %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();
+workWeekViewSettings.TimeRulerSize = 0;
+schedule.WorkWeekViewSettings = workWeekViewSettings;
+{% endhighlight %}
+{% endtabs %}
 
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.

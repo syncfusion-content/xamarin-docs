@@ -483,6 +483,20 @@ schedule.TimelineViewSettings = timelineViewSettings;
 
 ![Time label size in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-time-label-size.png)
 
+## Time ruler size customization
+
+You can customize the height of time ruler in `TimelineView` by setting the [TimeRulerSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.TimelineViewSettings~TimeRulerSize.html) property in `TimelineViewSettings`.
+
+{% tabs %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.TimelineView;
+TimelineViewSettings timelineViewSettings = new DayViewSettings();
+timelineViewSettings.TimeRulerSize = 0;
+schedule.TimelineViewSettings = timelineViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
 

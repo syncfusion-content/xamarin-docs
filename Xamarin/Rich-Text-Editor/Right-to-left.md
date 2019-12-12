@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Right-to-left | Rich Text Editor | Xamarin.Forms | Syncfusion
-description: Describes how Rich Text Editor works on right-to-left localization.
+description: Describes how Syncfusion Rich Text Editor control works on right-to-left localization in Xamarin.Forms platform.
 platform: xamarin
 control: Rich Text Editor
 documentation: UG

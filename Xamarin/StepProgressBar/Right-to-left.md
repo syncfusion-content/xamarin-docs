@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Right-to-left | StepProgressBar | Xamarin.Forms | Syncfusion
-description: Describes how StepProgressBar works on right-to-left localization.
+description: Describes how Syncfusion StepProgressBar control works on right-to-left localization in Xamarin.Forms platform.
 platform: xamarin
 control: StepProgressBar
 documentation: UG

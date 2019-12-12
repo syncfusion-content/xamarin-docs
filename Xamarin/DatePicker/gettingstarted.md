@@ -112,7 +112,7 @@ using Syncfusion.XForms.Pickers;
 {% endhighlight %}
 {% endtabs %}
 
-### Referring SfDatePIcker control with declared suffix name for namespace
+### Referring SfDatePicker control with declared suffix name for namespace
 
 {% tabs %}
 {% highlight xaml %}

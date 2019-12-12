@@ -101,28 +101,25 @@ Following screenshot shows the zoomed area,
 
 You can customize the selection rectangle using the below properties.
 
-* [`SelectionRectStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectStrokeWidth.html) - used to change the stoke width of selection rectangle 
+* [`SelectionRectStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectStrokeWidth.html) - used to change the stroke width of selection rectangle 
 * [`SelectionRectStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectStrokeColor.html) - used to change the stroke color of selection rectangle.  
 * [`SelectionRectStrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectStrokeDashArray.html) - used to change the stroke dashes of selection rectangle. 
-* [`SelectionRectFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectFillColor.html) - used to change the stroke fill color of selection rectangle. 
+* [`SelectionRectFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectFillColor.html) - used to change the fill color of selection rectangle. 
 
-### Show axis tooltip on selection zooming
+### Show axis tooltip
 
-The axis tooltip on selection zooming can be enabled using the [`ChartAxis.ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ShowTrackballInfo.html) property to show/hide the tooltip on the axis.
+The axis tooltip on selection zooming can be enabled using the [`ChartAxis.ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ShowTrackballInfo.html) property. You can customize the appearance of the axis tooltip by the below properties of [`ChartAxis.TrackballLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~TrackballLabelStyle.html).
 
-[`ChartAxis.TrackballLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~TrackballLabelStyle.html) property is used to customize the appearance of the axis tooltip.
-The following properties are used to customize the axis tooltip:
-
-* [`AxisLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle~AxisLabelAlignment.html) - used to change the position of the tooltip axis label.
-* [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~TextColor.html) – used to change the color of the label.
+* [`AxisLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle~AxisLabelAlignment.html) - used to change the position of the axis label.
+* [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~TextColor.html) – used to change the label text color.
 * [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BackgroundColor.html) – used to change the label background color.
-* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BorderColor.html) – used to change the border color.
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BorderColor.html) – used to change the label border color.
 * [`BorderThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BorderThickness.html) – used to change the border width.
 * [`LabelFormat`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) - used to format the label.
-* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~FontFamily.html) - used to change the font family for the axis tooltip.
-* [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~FontAttributes.html) - used to change the font style for the axis tooltip.
-* [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~FontSize.html) - used to change the font size for the axis tooltip.
-* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~Margin.html) - used to change the margin size for labels.
+* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~FontFamily.html) - used to change the font family for the axis label.
+* [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~FontAttributes.html) - used to change the fontAttributes for the axis label.
+* [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~FontSize.html) - used to change the font size for the axis label.
+* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~Margin.html) - used to change the margin for axis label.
 
 You can customize the line color between the tooltip for the selected range while selection zooming using the chart axis [`TrackballAxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle.html) [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BorderColor.html).
 
@@ -144,6 +141,8 @@ Following code snippet illustrates how to enable axis tooltip while selection zo
 
         </chart:NumericalAxis.TrackballLabelStyle>
 
+    </chart:NumericalAxis>
+
 </chart:SfChart.PrimaryAxis>
 
 <chart:SfChart.SecondaryAxis>
@@ -155,6 +154,8 @@ Following code snippet illustrates how to enable axis tooltip while selection zo
             <chart:ChartTrackballAxisLabelStyle LabelFormat="##.##"/>
 
         </chart:NumericalAxis.TrackballLabelStyle>
+
+    </chart:NumericalAxis>
 
 </chart:SfChart.SecondaryAxis>
 
@@ -170,14 +171,18 @@ Following code snippet illustrates how to enable axis tooltip while selection zo
 
 SfChart chart = new SfChart();
 
-primaryAxis.ShowTrackballInfo = true;
+NumericalAxis primaryAxis = new NumericalAxis() { ShowTrackballInfo = true};
 
-primaryAxis.TrackballLabelStyle = new ChartTrackballAxisLabelStyle() { LabelFormat = "##.##" }; 
+primaryAxis.TrackballLabelStyle = new ChartTrackballAxisLabelStyle() { LabelFormat = "##.##" };
 
-secondaryAxis.ShowTrackballInfo = true;
+chart.PrimaryAxis = primaryAxis;
 
-secondaryAxis.TrackballLabelStyle = new ChartTrackballAxisLabelStyle() { LabelFormat = "##.##" }; 
+NumericalAxis secondaryAxis = new NumericalAxis() { ShowTrackballInfo = true};
 
+secondaryAxis.TrackballLabelStyle = new ChartTrackballAxisLabelStyle() { LabelFormat = "##.##" };
+
+chart.SecondaryAxis = secondaryAxis;
+ 
 ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
 
 zoomPanBehavior.EnableSelectionZooming = true;

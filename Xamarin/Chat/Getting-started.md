@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting started | SfChat | Xamarin | Syncfusion
-description: Getting started with Xamarin.Forms Chat and walk through to create a demo application from the scratch. 
+description: Getting started with Syncfusion Chat control in Xamarin.Forms and walk through to create a demo application from the scratch. 
 platform: xamarin
 control: SfChat
 documentation: ug
@@ -72,11 +72,11 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 <tr>
 <td>iOS</td>
-<td>Syncfusion.DataSource.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.SfCalendar.XForms.iOS.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.iOS.dll<br/>Syncfusion.SfListView.XForms.dll<br/>Syncfusion.SfListView.XForms.iOS.dll<br/>Syncfusion.SfChat.XForms.dll<br/>Syncfusion.SfChat.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.DataSource.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.SfCalendar.XForms.iOS.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.iOS.dll<br/>Syncfusion.SfListView.XForms.dll<br/>Syncfusion.SfListView.XForms.iOS.dll<br/>Syncfusion.SfChat.XForms.dll<br/>Syncfusion.SfChat.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.DataSource.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.SfCalendar.XForms.UWP.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.SfListView.XForms.dll<br/>Syncfusion.SfListView.XForms.UWP.dll<br/>Syncfusion.SfChat.XForms.dll<br/>Syncfusion.SfChat.XForms.UWP<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.DataSource.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.SfCalendar.XForms.UWP.dll<br/>Syncfusion.Buttons.XForms.dll<br/>Syncfusion.Buttons.XForms.UWP.dll<br/>Syncfusion.SfListView.XForms.dll<br/>Syncfusion.SfListView.XForms.UWP.dll<br/>Syncfusion.SfChat.XForms.dll<br/>Syncfusion.SfChat.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -125,7 +125,7 @@ public MainPage()
 
 ### Release mode issue in UWP platform
 
-The known Framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode`. It can be resolved by initializing the SfChat assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
+The known Framework issue in UWP platform is that the custom controls will not render when deployed the application in `Release Mode`. It can be resolved by initializing the SfChat assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
 
 {% highlight c# %}
 // In App.xaml.cs
@@ -157,7 +157,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a SfChat and configure it. The SfChat control can be configured entirely in C# code or using XAML markup. This is how the final output will look like on iOS, Android, and Windows Desktop.
  
-![Xamarin Chat](SfChat_images/SfChat_Xamarin_img1.png)
+![Xamarin Chat](Getting-started_images/Adding SfChat reference.png)
 
 N> You can download the complete project of this demo from [GitHub](https://github.com/SyncfusionExamples/Chat-GettingStarted-in-Xamarin-Forms).
 
@@ -221,7 +221,7 @@ namespace GettingStarted
 
 ## Creating the ViewModel for the SfChat
 
-The SfChat is a conversation control. Hence, a message should be created to bind it to the control. 
+The SfChat is a data-bound control displaying a collection of messages between users. Hence, messages should be created and binded to the control. 
 
 Create a simple message collection as shown in the following code example in a new class file. Save it as GettingStartedViewModel.cs file:
 
@@ -230,24 +230,24 @@ Create a simple message collection as shown in the following code example in a n
 public class GettingStartedViewModel : INotifyPropertyChanged
     {
         /// <summary>
-        /// Message conversation collection.
+        /// Collection of messages in a conversation.
         /// </summary>
         private ObservableCollection<object> messages;
 
         /// <summary>
-        /// current user of chat.
+        /// Current user of chat.
         /// </summary>
-        private Author currentUser;
+        private Author currentAuthor;
 
         public GettingStartedViewModel()
         {
             this.messages = new ObservableCollection<object>();
-            this.currentUser = new Author() { Name = "Nancy", Avatar = "Nancy.png" };
+            this.currentAuthor = new Author() { Name = "Nancy", Avatar = "Nancy.png" };
             this.GenerateMessages();
         }
 
         /// <summary>
-        /// Gets or sets the message conversation collection.
+        /// Gets or sets the collection of messages of a conversation.
         /// </summary>
         public ObservableCollection<object> Messages
         {
@@ -263,18 +263,18 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         }
 
         /// <summary>
-        /// Gets or sets the current author.
+        /// Gets or sets the current author of the message.
         /// </summary>
-        public Author CurrentUser
+        public Author CurrentAuthor
         {
             get
             {
-                return this.currentUser;
+                return this.currentAuthor;
             }
             set
             {
-                this.currentUser = value;
-                RaisePropertyChanged("CurrentUser");
+                this.currentAuthor = value;
+                RaisePropertyChanged("CurrentAuthor");
             }
         }
 
@@ -299,7 +299,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             this.messages.Add(new TextMessage()
             {
-                Author = currentUser,
+                Author = currentAuthor,
                 Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
                 ShowAvatar = true,
                 ShowTimestamp = true,
@@ -339,7 +339,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
             this.messages.Add(new TextMessage()
             {
-                Author = currentUser,
+                Author = currentAuthor,
                 Text = "A kind of Emergency Broadcast App.",
                 ShowAvatar = true,
                 ShowTimestamp = true,
@@ -351,9 +351,9 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 {% endhighlight %}
 
-## Binding Messages to the SfChat 
+## Binding Messages to SfChat 
 
-To bind the messages to the SfChat, set the [SfChat.Messages](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~Messages.html) property as follows. You can bind the message collection of the SfChat either from XAML or in code. 
+To bind the messages to SfChat, set the [SfChat.Messages](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~Messages.html) property as follows. You can bind the message collection of the SfChat either from XAML or in code. 
 
 The following code example binds the collection created in previous step to `SfChat.Messages` property.
 
@@ -375,7 +375,7 @@ The following code example binds the collection created in previous step to `SfC
                        Messages="{Binding Messages}"
                        TimestampFormat="hh:mm tt"
                        MessageShape="RoundedRectangle"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentAuthor}" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -398,7 +398,7 @@ namespace GettingStarted
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.TimestampFormat = "hh:mm tt";
             this.sfChat.MessageShape = MessageShape.RoundedRectangle;
-            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.CurrentUser = viewModel.CurrentAuthor;
             this.Content = sfChat;
         }
     }
@@ -409,7 +409,7 @@ namespace GettingStarted
 
 Run the application to render the following output.
 
-![Xamarin Chat](SfChat_images/SfChat_Xamarin_img1.png)
+![Xamarin Chat](SfChat_images/SfChat-Xamarin_img1.png)
 
 ## Showing time break between messages
 
@@ -434,7 +434,7 @@ Messages can be separated based on the date specified in the message and this ca
                        ShowTimeBreak="True"
                        TimestampFormat="hh:mm tt"
                        MessageShape="RoundedRectangle"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentAuthor}" />
     </ContentPage.Content>
 
 </ContentPage>
@@ -459,7 +459,7 @@ namespace GettingStarted
             this.sfChat.ShowTimeBreak = true;
             this.sfChat.TimestampFormat = "hh:mm tt";
             this.sfChat.MessageShape = MessageShape.RoundedRectangle;
-            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.CurrentUser = viewModel.CurrentAuthor;
             this.Content = sfChat;
         }
     }
@@ -470,4 +470,4 @@ namespace GettingStarted
 
 Run the application to render the following output.
 
-![Xamarin Chat](SfChat_images/SfChat_Xamarin_img2.png)
+![Xamarin Chat](SfChat_images/SfChat-Xamarin_img2.png)

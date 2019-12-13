@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | SfChat | Xamarin | Syncfusion
-description: The Xamarin.Forms Chat helps you render the conversation messages.
+description: A quick overview of the key features in SfChat.
 platform: xamarin
 control: SfChat
 documentation: ug
@@ -13,10 +13,10 @@ The Syncfusion chat control for Xamarin.Forms provides a modern conversational c
 
 ## Key features
 
-* Message types: Built-in support for various message types such as text, calendar, date picker, time picker, and hyperlink to show the chat messages.
-* Message input area: Sends messages to users by interacting with the built-in editor and the button at the end of the chat control.
-* Time break: Shows the chat messages under groups based on the date time in which the messages were created.
-* Typing indicator: Indicates the users who are currently typing.
-
+* Message types: Built-in support for various message types such as text, calendar, date picker, time picker, and hyperlink to show different types of messages.
+* Message input area: Send messages to users by interacting with the built-in editor and button at the bottom of the chat control.
+* Time break: Shows the chat messages under groups based on the `System.DateTime` in which the messages were created.
+* Typing indicator: Indicates the users of, who are currently typing with an animation.
+* Suggestions : Add a set of suggestions to be chosen from, as a reply to a user message.
 
 ![Chat with typing indicator](SfChat_images/SfChat-Xamarin_showcase1.png)

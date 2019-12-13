@@ -157,7 +157,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a SfChat and configure it. The SfChat control can be configured entirely in C# code or using XAML markup. This is how the final output will look like on iOS, Android, and Windows Desktop.
  
-![Xamarin Chat](Getting-started_images/Adding SfChat reference.png)
+![Xamarin Chat](SfChat_images/SfChat_Xamarin_img1.jpg)
 
 N> You can download the complete project of this demo from [GitHub](https://github.com/SyncfusionExamples/Chat-GettingStarted-in-Xamarin-Forms).
 
@@ -409,7 +409,7 @@ namespace GettingStarted
 
 Run the application to render the following output.
 
-![Xamarin Chat](SfChat_images/SfChat-Xamarin_img1.png)
+![Xamarin Chat](SfChat_images/SfChat_Xamarin_img1.jpg)
 
 ## Showing time break between messages
 
@@ -470,4 +470,4 @@ namespace GettingStarted
 
 Run the application to render the following output.
 
-![Xamarin Chat](SfChat_images/SfChat-Xamarin_img2.png)
+![Xamarin Chat](SfChat_images/SfChat_Xamarin_img2.jpg)

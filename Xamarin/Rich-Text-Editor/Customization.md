@@ -56,7 +56,7 @@ this.Content = richtexteditor;
 
 ## Customizing toolbar
 
-The appearance of toolbar can be customized. The [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.ToolbarSettings~BackgroundColor.html), [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.ToolbarSettings~TextColor.html), and [`ToolbarBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.ToolbarSettings~ToolbarBackgroundColor.html) properties helps to change the background color, text color of toolbar item, and background color of toolbar respectively. The following code example explains how to customize the toolbar appearance.
+The appearance of the toolbar can be customized. The [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.ToolbarSettings~BackgroundColor.html), [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.ToolbarSettings~TextColor.html), and [`ToolbarBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.ToolbarSettings~ToolbarBackgroundColor.html) properties helps to change the background color, text color of toolbar item, and background color of toolbar respectively. The following code example explains how to customize the toolbar appearance.
 
 {% tabs %} 
 
@@ -81,7 +81,7 @@ this.Content = richtexteditor;
 
 ## Placeholder
 
-Specifies the placeholder for the RichTextEditor’s content which is displayed when the RichTextEditor Text is empty. The following code example explains how to set a placeholder for Rich Text Editor.
+Specifies the placeholder for the RichTextEditor’s content, which is displayed when the RichTextEditor text is empty. The following code example explains how to set a placeholder for Rich Text Editor.
 
 {% tabs %} 
 
@@ -104,7 +104,7 @@ this.Content = richtexteditor;
 
 ## Read-only support
 
-Rich Text Editor provides read-only support which allows user to restrict editing. Rich Text Editor can be used as HTML Viewer using this feature. The following code example explains how to set read-only mode in Rich Text Editor.
+Rich Text Editor provides read-only support, which allows the users to restrict editing. Rich Text Editor can be used as HTML Viewer using this feature. The following code example explains how to set read-only mode in Rich Text Editor.
 
 {% tabs %} 
 

@@ -9,7 +9,7 @@ documentation: UG
 
 # Right to left(RTL)
 
-Rich Text Editor supports to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
+Rich Text Editor provides support to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
 
 {% tabs %}
 {% highlight xaml %}
@@ -23,10 +23,10 @@ Rich Text Editor supports to change the layout direction of the control in the r
 {% endtabs %}
 
 >**Note**
-For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Please refer [RightToLeft](https://blog.xamarin.com/right-to-left-localization-xamarin-forms) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
+For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Refer to [RightToLeft](https://blog.xamarin.com/right-to-left-localization-xamarin-forms) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
 
 ### Android
-For Android, add `android:supportsRtl="true"` in your application tag of `AndroidManifest.xml` file, and make sure your `MinSDKVersion` is 17+. By changing the device language / enabling the device's `Force RTL layout` can achieve the `RightToLeft` layout direction in Rich Text Editor.
+For Android, add `android:supportsRtl="true"` to your application tag of `AndroidManifest.xml` file, and make sure your `MinSDKVersion` is 17+. By changing the device language or enabling the device's `Force RTL layout`, you can achieve the `RightToLeft` layout direction in Rich Text Editor.
 
 {% tabs %}
 {% highlight xml %}
@@ -39,7 +39,7 @@ For Android, add `android:supportsRtl="true"` in your application tag of `Androi
 {% endtabs %}
 
 ### iOS
-For iOS, add the `RightToLeft` language in the `CFBundleLocalizations` section of your `Info.plist` file, and make sure you’re targeting iOS 9+.
+For iOS, add the `RightToLeft` language to the `CFBundleLocalizations` section of your `Info.plist` file, and make sure your are targeting iOS 9+.
 
 {% tabs %}
 {% highlight xml %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | SfChat | Xamarin | Syncfusion
-description: A quick overview of the key features in SfChat.
+description: A quick overview of the key features in SfChat that shows the conversation between two or more users in a fully customizable layout.
 platform: xamarin
 control: SfChat
 documentation: ug

@@ -462,6 +462,13 @@ schedule.DayViewSettings = dayViewSettings;
 You can customize the size of time ruler in `DayView` by setting the [TimeRulerSize](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~TimeRulerSize.html) property in `DayViewSettings`.
 
 {% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="DayView">
+     <schedule:SfSchedule.DayViewSettings>
+          <schedule:DayViewSettings TimeRulerSize="0"/>
+     </schedule:SfSchedule.DayViewSettings>
+</schedule:SfSchedule>
+{% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.DayView;
 DayViewSettings dayViewSettings = new DayViewSettings();

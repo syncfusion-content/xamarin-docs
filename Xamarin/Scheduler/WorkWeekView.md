@@ -488,6 +488,13 @@ schedule.WorkWeekViewSettings = workWeekViewSettings;
 You can customize the size of time ruler in `WorkWeekView` by setting the [TimeRulerSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WorkWeekViewSettings~TimeRulerSize.html) property in `WorkWeekViewSettings`.
 
 {% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WorkWeekView">
+   <schedule:SfSchedule.WorkWeekViewSettings>
+        <schedule:WorkWeekViewSettings TimeRulerSize="0"/>
+   </schedule:SfSchedule.WorkWeekViewSettings>
+</schedule:SfSchedule>
+{% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.WorkWeekView;
 WorkWeekViewSettings workWeekViewSettings = new WorkWeekViewSettings();

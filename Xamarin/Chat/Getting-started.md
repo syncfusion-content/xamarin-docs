@@ -157,7 +157,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a SfChat and configure it. The SfChat control can be configured entirely in C# code or using XAML markup. This is how the final output will look like on iOS, Android, and Windows Desktop.
  
-![Xamarin Chat](Getting-started_images/Adding SfChat reference.png)
+![Xamarin Chat](SfChat_images/SfChat_Xamarin_img1.png)
 
 N> You can download the complete project of this demo from [GitHub](https://github.com/SyncfusionExamples/Chat-GettingStarted-in-Xamarin-Forms).
 
@@ -353,7 +353,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Binding Messages to the SfChat 
 
-To bind the messages to the SfChat, set the [SfChat.Messages](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~Messages.html) property as follows. You can bind the message colection of the SfChat either from XAML or in code. 
+To bind the messages to the SfChat, set the [SfChat.Messages](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~Messages.html) property as follows. You can bind the message collection of the SfChat either from XAML or in code. 
 
 The following code example binds the collection created in previous step to `SfChat.Messages` property.
 
@@ -409,11 +409,11 @@ namespace GettingStarted
 
 Run the application to render the following output.
 
-![Xamarin Chat](SfChat_images/SfChat-Xamarin_img1.png)
+![Xamarin Chat](SfChat_images/SfChat_Xamarin_img1.png)
 
 ## Showing time break between messages
 
-Messages can be seperated based on the date specified in the message and this can be achieved by setting the [SfChat.ShowTimeBreak](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowTimeBreak) property to true. It can be done from both XAML and code. The following code example illustrates this:
+Messages can be separated based on the date specified in the message and this can be achieved by setting the [SfChat.ShowTimeBreak](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowTimeBreak) property to true. It can be done from both XAML and code. The following code example illustrates this:
 
 {% tabs %}
 {% highlight xaml %}
@@ -470,4 +470,4 @@ namespace GettingStarted
 
 Run the application to render the following output.
 
-![Xamarin Chat](SfChat_images/SfChat-Xamarin_img2.png)
+![Xamarin Chat](SfChat_images/SfChat_Xamarin_img2.png)

@@ -19,4 +19,4 @@ The Syncfusion chat control for Xamarin.Forms provides a modern conversational c
 * Typing indicator: Indicates the users of, who are currently typing with an animation.
 * Suggestions : Add a set of suggestions to be chosen from, as a reply to a user message.
 
-![Chat with typing indicator](SfChat_images/SfChat-Xamarin_showcase1.jpg)
+![xamarin forms chat ui](SfChat_images/xamarin-forms-chat.jpg)

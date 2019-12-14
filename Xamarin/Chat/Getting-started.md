@@ -47,7 +47,7 @@ You can add SfChat reference using one of the following methods:
 
 Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org/). To add SfChat to your project, open the NuGet package manager in Visual Studio, search for [Syncfusion.Xamarin.SfChat](https://www.nuget.org/packages/Syncfusion.Xamarin.SfChat), and then install it.
 
-![Adding SfChat reference from NuGet](Getting-started_images/Adding SfChat reference.png)
+![Adding Xamarin Chat reference from NuGet](Getting-started_images/Adding_SfChat_reference.png)
 
 N> Install the same version of SfChat NuGet in all the projects.    
 
@@ -157,7 +157,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 This section explains how to create a SfChat and configure it. The SfChat control can be configured entirely in C# code or using XAML markup. This is how the final output will look like on iOS, Android, and Windows Desktop.
  
-![Xamarin Chat](SfChat_images/SfChat_Xamarin_img1.jpg)
+![Xamarin Forms Chat](SfChat_images/xamarin-forms-chat-getting-started.jpg)
 
 N> You can download the complete project of this demo from [GitHub](https://github.com/SyncfusionExamples/Chat-GettingStarted-in-Xamarin-Forms).
 
@@ -237,7 +237,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         /// <summary>
         /// Current user of chat.
         /// </summary>
-        private Author currentAuthor;
+        private Author currentUser;
 
         public GettingStartedViewModel()
         {
@@ -263,9 +263,9 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         }
 
         /// <summary>
-        /// Gets or sets the current author of the message.
+        /// Gets or sets the current user of the message.
         /// </summary>
-        public Author CurrentAuthor
+        public Author CurrentUser
         {
             get
             {
@@ -302,9 +302,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
                 Author = currentAuthor,
                 Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
                 ShowAvatar = true,
-                ShowTimestamp = true,
-                ShowAuthorName = true,
-                DateTime = DateTime.Now,
             });
 
             this.messages.Add(new TextMessage()
@@ -312,9 +309,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
                 Author = new Author() { Name = "Andrea", Avatar = "Andrea.png" },
                 Text = "Oh! That's great.",
                 ShowAvatar = true,
-                ShowTimestamp = true,
-                ShowAuthorName = true,
-                DateTime = DateTime.Now,
             });
 
             this.messages.Add(new TextMessage()
@@ -322,9 +316,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
                 Author = new Author() { Name = "Harrison", Avatar = "Harrison.png" },
                 Text = "That is good news.",
                 ShowAvatar = true,
-                ShowTimestamp = true,
-                ShowAuthorName = true,
-                DateTime = DateTime.Now,
             });
 
             this.messages.Add(new TextMessage()
@@ -332,9 +323,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
                 Author = new Author() { Name = "Margaret", Avatar = "Margaret.png" },
                 Text = "What kind of application is it and when are we going to launch?",
                 ShowAvatar = true,
-                ShowTimestamp = true,
-                ShowAuthorName = true,
-                DateTime = DateTime.Now,
             });
 
             this.messages.Add(new TextMessage()
@@ -342,9 +330,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
                 Author = currentAuthor,
                 Text = "A kind of Emergency Broadcast App.",
                 ShowAvatar = true,
-                ShowTimestamp = true,
-                ShowAuthorName = true,
-                DateTime = DateTime.Now,
             });
         }
     }
@@ -375,7 +360,7 @@ The following code example binds the collection created in previous step to `SfC
                        Messages="{Binding Messages}"
                        TimestampFormat="hh:mm tt"
                        MessageShape="RoundedRectangle"
-                       CurrentUser="{Binding CurrentAuthor}" />
+                       CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -396,9 +381,7 @@ namespace GettingStarted
             this.sfChat = new SfChat();
             this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
-            this.sfChat.TimestampFormat = "hh:mm tt";
-            this.sfChat.MessageShape = MessageShape.RoundedRectangle;
-            this.sfChat.CurrentUser = viewModel.CurrentAuthor;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
             this.Content = sfChat;
         }
     }
@@ -409,7 +392,7 @@ namespace GettingStarted
 
 Run the application to render the following output.
 
-![Xamarin Chat](SfChat_images/SfChat_Xamarin_img1.jpg)
+![Xamarin Forms Chat](SfChat_images/xamarin-forms-chat-getting-started.jpg)
 
 ## Showing time break between messages
 
@@ -433,8 +416,7 @@ Messages can be separated based on the date specified in the message and this ca
                        Messages="{Binding Messages}"
                        ShowTimeBreak="True"
                        TimestampFormat="hh:mm tt"
-                       MessageShape="RoundedRectangle"
-                       CurrentUser="{Binding CurrentAuthor}" />
+                       CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
 
 </ContentPage>
@@ -457,9 +439,7 @@ namespace GettingStarted
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.TimestampFormat = "hh:mm tt";
             this.sfChat.ShowTimeBreak = true;
-            this.sfChat.TimestampFormat = "hh:mm tt";
-            this.sfChat.MessageShape = MessageShape.RoundedRectangle;
-            this.sfChat.CurrentUser = viewModel.CurrentAuthor;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
             this.Content = sfChat;
         }
     }
@@ -470,4 +450,4 @@ namespace GettingStarted
 
 Run the application to render the following output.
 
-![Xamarin Chat](SfChat_images/SfChat_Xamarin_img2.jpg)
+![Xamarin Forms Chat time break mode](SfChat_images/xamarin-forms-chat-timebreak-mode.jpg)

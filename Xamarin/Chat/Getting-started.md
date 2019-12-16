@@ -155,9 +155,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Create a simple SfChat 
 
-This section explains how to create a SfChat and configure it. The SfChat control can be configured entirely in C# code or using XAML markup. This is how the final output will look like on iOS, Android, and Windows Desktop.
- 
-![Xamarin Forms Chat](SfChat_images/xamarin-forms-chat-getting-started.jpg)
+This section explains how to create a SfChat and configure it. The SfChat control can be configured entirely in C# code or using XAML markup.
 
 N> You can download the complete project of this demo from [GitHub](https://github.com/SyncfusionExamples/Chat-GettingStarted-in-Xamarin-Forms).
 

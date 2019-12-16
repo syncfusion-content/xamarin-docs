@@ -13,9 +13,9 @@ Rich Text Editor provides support to change the layout direction of the control 
 
 {% tabs %}
 {% highlight xaml %}
-	<Grid>	
-		<richtexteditor:SfRichTextEditor FlowDirection="RightToLeft" />
-	</Grid>
+<Grid>	
+	<richtexteditor:SfRichTextEditor FlowDirection="RightToLeft" />
+</Grid>
 {% endhighlight %}
 {% highlight c# %}
 	richTextEditor.FlowDirection = FlowDirection.RightToLeft;
@@ -72,4 +72,4 @@ LoadApplication (new App ());
 {% endhighlight %}
 {% endtabs %}
 
-![RTL in Xamarin.Forms Rich Text Editor](SfRichTextEditor_Images/RTL.png)
+	

@@ -357,7 +357,6 @@ The following code example binds the collection created in previous step to `SfC
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        TimestampFormat="hh:mm tt"
-                       MessageShape="RoundedRectangle"
                        CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
 </ContentPage>

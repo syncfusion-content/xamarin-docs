@@ -98,9 +98,8 @@ richtexteditor.PlaceHolder="Type something";
 this.Content = richtexteditor;
 {% endhighlight %}
 
-![Placeholder in Rich Text Editor](SfRichTextEditor_Images/Placeholder.png)
-
 {% endtabs %}
+![Placeholder in Rich Text Editor](SfRichTextEditor_Images/Placeholder.png)
 
 ## Read-only support
 

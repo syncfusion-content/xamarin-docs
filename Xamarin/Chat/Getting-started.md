@@ -103,7 +103,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     …
     global::Xamarin.Forms.Forms.Init ();
-    Syncfusion.SfChat.XForms.iOS.SfChatRenderer.Init();
+    Syncfusion.XForms.iOS.Chat.SfChatRenderer.Init();
     LoadApplication (new App ());
     …
 }
@@ -117,7 +117,7 @@ To launch the SfChat in UWP, call the `SfChatRenderer.Init()` in the `MainPage` 
 public MainPage()
 {
     …
-    Syncfusion.Sfchat.XForms.UWP.SfChatRenderer.Init();
+    Syncfusion.XForms.UWP.Chat.SfChatRenderer.Init();
     LoadApplication (new App ());
     …
 }

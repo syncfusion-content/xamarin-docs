@@ -71,5 +71,5 @@ LoadApplication (new App ());
 }
 {% endhighlight %}
 {% endtabs %}
-
+![RTL in Xamarin.Forms Rich Text Editor](SfRichTextEditor_Images/RTL.png)
 	

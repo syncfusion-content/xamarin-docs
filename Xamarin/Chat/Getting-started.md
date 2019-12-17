@@ -336,7 +336,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Binding Messages to SfChat 
 
-To bind the messages to SfChat, set the [SfChat.Messages](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~Messages.html) property as follows. You can bind the message collection of the SfChat either from XAML or in code. 
+To bind the messages to SfChat, set the `SfChat.Messages` property as follows. You can bind the message collection of the SfChat either from XAML or in code. 
 
 The following code example binds the collection created in previous step to `SfChat.Messages` property.
 
@@ -389,11 +389,11 @@ namespace GettingStarted
 
 Run the application to render the following output.
 
-![Xamarin Forms Chat](SfChat_images/xamarin-forms-chat-getting-started.jpg)
+![Xamarin Forms Chat](SfChat_images/xamarin-forms-chat-getting-started.png)
 
 ## Showing time break between messages
 
-Messages can be separated based on the date specified in the message and this can be achieved by setting the [SfChat.ShowTimeBreak](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowTimeBreak) property to true. It can be done from both XAML and code. The following code example illustrates this:
+Messages can be separated based on the date specified in the message and this can be achieved by setting the `SfChat.ShowTimeBreak` property to true. It can be done from both XAML and code. The following code example illustrates this:
 
 {% tabs %}
 {% highlight xaml %}
@@ -447,4 +447,4 @@ namespace GettingStarted
 
 Run the application to render the following output.
 
-![Xamarin Forms Chat time break mode](SfChat_images/xamarin-forms-chat-timebreak-mode.jpg)
+![Xamarin Forms Chat time break mode](SfChat_images/xamarin-forms-chat-timebreak-mode.png)

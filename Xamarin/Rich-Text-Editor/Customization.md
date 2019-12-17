@@ -87,7 +87,7 @@ Specifies the placeholder for the RichTextEditor’s content, which is displayed
 
 {% highlight xaml %} 
 <StackLayout>
-   <richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" PlaceHolder="Type something"/>
+	<richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" PlaceHolder="Type something"/>
 </StackLayout>   
 {% endhighlight %}
 
@@ -98,9 +98,8 @@ richtexteditor.PlaceHolder="Type something";
 this.Content = richtexteditor;
 {% endhighlight %}
 
-![Placeholder support in Rich Text Editor](SfRichTextEditor_Images/Placeholder.png)
-
 {% endtabs %}
+![Placeholder in Rich Text Editor](SfRichTextEditor_Images/Placeholder.png)
 
 ## Read-only support
 

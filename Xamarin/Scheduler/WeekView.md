@@ -488,6 +488,8 @@ schedule.WeekViewSettings = weekViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
+![Time ruler size customization in schedule xamarin forms](weekview_images/xamarin.forms-schedule-weekview-timerulersizecustomization.jpg)
+
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
 

@@ -503,6 +503,7 @@ schedule.TimelineViewSettings = timelineViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
+![Time ruler size in xamarin forms Timeline view](timeline-view-images/xamarin.forms-schedule-timelineview-timerulersizecustomization.jpg)
 
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.

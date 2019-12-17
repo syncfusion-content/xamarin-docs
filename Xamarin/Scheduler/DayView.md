@@ -477,6 +477,8 @@ schedule.dayViewSettings = dayViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
+![Schedule cusotomizing time ruler size day view](daymodule_images/xamarin.forms-schedule-dayview-timerulersizecustomization.jpg)
+
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.
 

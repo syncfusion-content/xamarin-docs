@@ -165,6 +165,7 @@ RightArrow
 </td>
 <td>
 Moves the selection to the next date of the date currently selected.
+</td>
 </tr>
 <tr>
 <td>
@@ -191,8 +192,8 @@ Description
 Shift + DownArrow
 </td>
 <td>
-If the `SelectionMode` is `Multiple`, the date directly below the last selected date on the next row will be selected along with the currently selected dates. 
-If the `SelectionMode` is `RangeSelection` and selecting dates using the keyboard, the range will be extended to the date directly below the last selected date.
+If the SelectionMode is Multiple, the date directly below the last selected date on the next row will be selected along with the currently selected dates. 
+If the SelectionMode is RangeSelection and selecting dates using the keyboard, the range will be extended to the date directly below the last selected date.
 </td>
 </tr>
 <tr>
@@ -200,8 +201,8 @@ If the `SelectionMode` is `RangeSelection` and selecting dates using the keyboar
 Shift + UpArrow
 </td>
 <td>
-If the `SelectionMode` is `Multiple`, the date directly above the last selected date on the previous row will be selected along with the currently selected dates.
-If the `SelectionMode` is `RangeSelection` and selecting dates using the keyboard, the range will be extended to the date directly above the last selected date.
+If the SelectionMode is Multiple, the date directly above the last selected date on the previous row will be selected along with the currently selected dates.
+If the SelectionMode is RangeSelection and selecting dates using the keyboard, the range will be extended to the date directly above the last selected date.
 </td>
 </tr>
 <tr>
@@ -209,8 +210,8 @@ If the `SelectionMode` is `RangeSelection` and selecting dates using the keyboar
 Shift + RightArrow
 </td>
 <td>
-If the `SelectionMode` is `Multiple`, the next date of the last selected date will be selected along with the currently selected dates. 
-If the `SelectionMode` is `RangeSelection` and selecting dates using the keyboard, the range will be extended to the next date of the last selected date.
+If the SelectionMode is Multiple, the next date of the last selected date will be selected along with the currently selected dates. 
+If the SelectionMode is RangeSelection and selecting dates using the keyboard, the range will be extended to the next date of the last selected date.
 </td>
 </tr>
 <tr>
@@ -218,8 +219,8 @@ If the `SelectionMode` is `RangeSelection` and selecting dates using the keyboar
 Shift + LeftArrow
 </td>
 <td>
-If the `SelectionMode` is `Multiple`, the previous date of the last selected date will be selected along with the currently selected dates.
-If the `SelectionMode` is `RangeSelection` and selecting dates using the keyboard, the range will be extended to the previous date of the last selected date.
+If the SelectionMode is Multiple, the previous date of the last selected date will be selected along with the currently selected dates.
+If the SelectionMode is RangeSelection and selecting dates using the keyboard, the range will be extended to the previous date of the last selected date.
 </td>
 </tr>
 </table>
@@ -239,7 +240,7 @@ Description
 Ctrl + Plus
 </td>
 <td>
-`SfCalendar` `ViewMode` changes in the order of `MonthView`, `YearView`, `DecadeView`, and `CenturyView`.
+View mode changes in the order of Month, Year, Decade, and Century.
 </td>
 </tr>
 <tr>
@@ -247,7 +248,7 @@ Ctrl + Plus
 Ctrl + Minus
 </td>
 <td>
-`SfCalendar` `ViewMode` changes in the order of `MonthView`, `CenturyView`, `DecadeView`, and `YearView`.
+View mode changes in the order of Month, Century, Decade, and Year.
 </td>
 </tr>
 </table>

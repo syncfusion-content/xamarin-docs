@@ -2,7 +2,7 @@
 
 layout: post
 title: Customize DayView at Syncfusion SfSchedule for Xamarin.Forms
-description: Learn how to Customize the schedule DayView in SfSchedule control in Xamarin.Forms
+description: Learn how to customize the scheduler day view settings and its appearance in SfSchedule control in Xamarin.Forms
 platform: xamarin
 control: SfSchedule
 documentation: ug
@@ -456,6 +456,28 @@ schedule.DayViewSettings = dayViewSettings;
 {% endtabs %}
 
 ![Schedule cusotomizing time label size day view](daymodule_images/xamarin.forms-schedule-timelabel-size.png)
+
+## Time ruler size customization
+
+You can customize the size of time ruler in `DayView` by setting the [TimeRulerSize](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.DayViewSettings~TimeRulerSize.html) property in `DayViewSettings`.
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="DayView">
+     <schedule:SfSchedule.DayViewSettings>
+          <schedule:DayViewSettings TimeRulerSize="0"/>
+     </schedule:SfSchedule.DayViewSettings>
+</schedule:SfSchedule>
+{% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.DayView;
+DayViewSettings dayViewSettings = new DayViewSettings();
+dayViewSettings.TimeRulerSize = 0;
+schedule.dayViewSettings = dayViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![Schedule cusotomizing time ruler size day view](daymodule_images/xamarin.forms-schedule-dayview-timerulersizecustomization.jpg)
 
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.

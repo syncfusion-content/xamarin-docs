@@ -200,7 +200,7 @@ The `SfSchedule` control has built-in `AutomationId` for inner elements. Please 
 >**NOTE**
 Keyboard interaction is applicable only for UWP and WPF platforms.
 
-### DayView, WeekView and WorkWeekView
+### Day, Week and WorkWeek views
 <table>
 <tr>
 <th>
@@ -244,7 +244,7 @@ Moves selection to the same time slot on the previous day.
 </tr>
 </table>
 
-### TimelineView
+### Timeline view
 <table>
 <tr>
 <th>
@@ -272,7 +272,7 @@ Moves selection to the previous time slot of the currently selected time slot.
 </tr>
 </table>
 
-### MonthView
+### Month view
 <table>
 <tr>
 <th>
@@ -367,7 +367,7 @@ Description
 Ctrl + Plus
 </td>
 <td>
-`SfSchedule` `ScheduleView` changes in the order of `DayView`, `WeekView`, `WorkWeekView`, `MonthView`, and `TimelineView`.
+Schedule view changes in the order of Day, Week, Work week, Month, and Timeline.
 </td>
 </tr>
 <tr>
@@ -375,7 +375,7 @@ Ctrl + Plus
 Ctrl + Minus
 </td>
 <td>
-`SfSchedule` `ScheduleView` changes in the order of `DayView`, `TimelineView`, `MonthView`, `WorkWeekView`, and `WeekView`.
+Schedule view changes in the order of Day, Timeline, Month, Work week, and Week.
 </td>
 </tr>
 </table>

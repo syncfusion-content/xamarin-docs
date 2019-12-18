@@ -243,6 +243,55 @@ schedule.MonthViewSettings = monthViewSettings;
 ![Month agenda item template in schedule xamarin forms](monthview_images/xamarin.forms-schedule-agendaview-itemtemplate.png)
 
 
+### Agenda item height
+You can customize the agenda view appointment height by setting the [ItemHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~ItemHeight.html) in [AgendaViewStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewStyle.html) property of `MonthViewSettings`.
+
+{% tabs %}
+{% highlight xaml %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="MonthView">
+    <schedule:SfSchedule.MonthViewSettings>
+       <schedule:MonthViewSettings ShowAgendaView="true">
+          <schedule:MonthViewSettings.AgendaViewStyle>
+                schedule:AgendaViewStyle ItemHeight="100"/>
+          </schedule:MonthViewSettings.AgendaViewStyle>
+       </schedule:MonthViewSettings>
+    </schedule:SfSchedule.MonthViewSettings>
+</schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.MonthView;
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.ShowAgendaView = true;
+schedule.MonthViewSettings = monthViewSettings;
+AgendaViewStyle agendaViewStyle = new AgendaViewStyle();
+agendaViewStyle.ItemHeight = 100;
+schedule.MonthViewSettings.AgendaViewStyle = agendaViewStyle;
+{% endhighlight %}
+{% endtabs %}
+
+![Month agenda item height in schedule xamarin forms](monthview_images/xamarin.forms-schedule-monthview-agendaviewitemheight.jpg)
+
+### Agenda view height
+You can customize the height of agenda view in `MonthView` by using the [AgendaViewHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewHeight.html) property in `MonthViewSettings`.
+
+{% tabs %}
+{% highlight xaml %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="MonthView">
+   <schedule:SfSchedule.MonthViewSettings>
+        <schedule:MonthViewSettings ShowAgendaView="True" AgendaViewHeight="300"/>
+   </schedule:SfSchedule.MonthViewSettings>
+</schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+schedule.ScheduleView = ScheduleView.MonthView;
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.AgendaViewHeight = 300;
+schedule.MonthViewSettings = monthViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![Month agenda view height in schedule xamarin forms](monthview_images/xamarin.forms-schedule-monthview-agendaviewheight.jpg)
+
 ### Agenda View Using Template Selector
 AgendaTemplateSelector can be used to choose a DataTemplate at runtime based on the value of a data-bound to agenda appointment property through `AgendaItemTemplate`. It lets you choose a different data template for each appointment, customizing the appearance of a particular inline appointment based on certain conditions. DataTemplateSelector for inline appointment includes `ScheduleAppointment` or custom appointment as `object` and `Schedule` as bindable object.
 
@@ -937,7 +986,7 @@ private void Schedule_OnMonthInlineAppointmentLoadedEvent(object sender, MonthIn
 ![Custom month inline appointment in schedule xamarin forms](monthview_images/xamarin.forms-schedule-inline-appointment-appearance.png)
 
 >**NOTE**
-Inline view customization - There is no support for inline view appointments customization using custom view, TimeTextSize, TimeTextFormat and TimeTextColor properties in XForms UWP and WPF platforms.
+Inline view customization - There is no support for inline view appointments customization using TimeTextSize, TimeTextFormat and TimeTextColor properties in XForms UWP and WPF platforms.
 
 ## Selection
 You can customize the default appearance of selection UI in the month cells.

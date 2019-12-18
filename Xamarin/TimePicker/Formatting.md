@@ -17,6 +17,7 @@ By default, the TimePicker’s format is "TimeFormat.HH_mm_ss".
 The following example demonstrates the TimePicker with the custom format TimeFormat.hh_mm_ss_tt
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -57,6 +58,7 @@ namespace TimePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![TimeFormat](images/TimeFormat.png)

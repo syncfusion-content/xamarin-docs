@@ -423,3 +423,105 @@ namespace CarouselSample
 ![Load more](images/LoadMore.png)
 
 You can find the complete Load More sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore1567166256.zip)
+
+## LoadMore method
+
+To load more items programmatically, LoadMore method can be called which loads the items dynamically to the UI based on the [`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms~Syncfusion.SfCarousel.XForms.SfCarousel~LoadMoreItemsCount.html) API value.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CarouselSample"
+             xmlns:carousel="clr-namespace:Syncfusion.SfCarousel.XForms;assembly=Syncfusion.SfCarousel.XForms"
+             x:Class="CarouselSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:CarouselViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="itemTemplate">
+                <Image Source="{Binding Image}" 
+                       Aspect="AspectFit"/>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            <carousel:SfCarousel x:Name="carousel"
+                                 ItemTemplate="{StaticResource itemTemplate}"
+                                 ItemsSource="{Binding ImageCollection}"
+                                 ItemWidth="150"
+                                 ViewMode="Default"
+                                 LoadMoreItemsCount="2"
+                                 ItemHeight="150"
+                              />
+            <Button Text="LoadMore Method" 
+                    Clicked="Button_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using System.Collections.Generic;
+using Xamarin.Forms;
+
+namespace CarouselSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+        }
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            carousel.LoadMore();
+        }
+    }
+
+    public class CarouselModel
+    {
+        public CarouselModel(string imagestr)
+        {
+            Image = imagestr;
+        }
+        private string _image;
+
+        public string Image
+        {
+            get { return _image; }
+            set { _image = value; }
+        }
+    }
+    public class CarouselViewModel
+    {
+        public CarouselViewModel()
+        {
+            ImageCollection.Add(new CarouselModel("image1.png"));
+            ImageCollection.Add(new CarouselModel("image2.png"));
+            ImageCollection.Add(new CarouselModel("image3.png"));
+            ImageCollection.Add(new CarouselModel("image4.png"));
+            ImageCollection.Add(new CarouselModel("image5.png"));
+        }
+        private List<CarouselModel> imageCollection = new List<CarouselModel>();
+        public List<CarouselModel> ImageCollection
+        {
+            get { return imageCollection; }
+            set { imageCollection = value; }
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+

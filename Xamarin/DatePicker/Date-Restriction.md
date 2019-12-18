@@ -13,6 +13,7 @@ documentation: ug
 DatePicker provides an option to select a date value within a specified range by using the MinimumDate and MaximumDate properties. Always the MinimumDate value has to be lesser than the MaximumDate value.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -54,6 +55,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![MinimumDate of SfDatePicker](images/MinimumDate_DatePicker.png)

@@ -71,4 +71,4 @@ You can rotate the custom view based on a particular angle using `Angle` propert
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/rotation.png)
+![SfImageEditor](ImageEditor_images/rotation.jpg)

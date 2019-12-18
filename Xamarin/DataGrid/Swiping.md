@@ -512,6 +512,32 @@ private void Datagrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-661295078).
 
+## How to load custom swipe buttons based on row data?
+
+The dataGrid allows to load the desired swipe template by using `DataTemplateSelector` to the `SfDataGrid.RightSwipeTemplate` and `SfDataGrid.LeftSwipeTemplate`. Refer the below code example to load the desired template using the RowData and the row element passed in the arguments.
+
+{% highlight c# %}
+
+    // Left swipe template selector
+  LeftTemplateSelector leftswipeTemplate = new LeftTemplateSelector();
+  DataTemplate leftdataTemplate = new DataTemplate(() =>
+  {
+        return leftswipeTemplate.SelectTemplate(0, dataGrid);
+  });
+  dataGrid.LeftSwipeTemplate = leftswipeTemplate;
+
+     // Right swipe template selector
+   RightTemplateSelector rightswipeTemplate = new RightTemplateSelector();
+   DataTemplate rightdataTemplate = new DataTemplate(() =>
+   {
+        return rightswipeTemplate.SelectTemplate(0, dataGrid);
+   });
+   dataGrid.RightSwipeTemplate = rightswipeTemplate;
+
+{% endhighlight %}
+
+You can download the sample [here]() to load custom swipe buttons based on row data
+
 ## Limitations
 
 When data grid is loaded in MasterDetailPage with `AllowSwiping` as true, it behaves as follows: 

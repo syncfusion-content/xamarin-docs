@@ -144,6 +144,8 @@ dataGrid.LoadMorePosition = LoadMoreViewPosition.Bottom;
 
 ## Customize LoadMoreView
 
+### Custom LoadMore View
+
 The data grid also customizes `LoadMoreView` based on the requirements. To do this, write custom `LoadMoreView` class inheriting from `LoadMoreView`, and perform the `LoadMoreOperation`.
 
 To customize `LoadMoreView`, follow the code example:
@@ -182,3 +184,24 @@ Running application renders the following output:
 ![DataGrid with LoadMore functionality](SfDataGrid_images/LoadMore.png)
 
 You can download a readily runnable sample that illustrates enabling and using the load more functionality, [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataGridSample733433326).
+
+### Customize size
+
+The data grid allows to customize the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) size by using HeightRequest and WidthRequest property of view. Refer the below code example to customize the `LoadMoreView` Width and Height. 
+
+{% highlight c# %}
+
+ dataGrid.LoadMoreView.HeightRequest = 105;
+ dataGrid.LoadMoreView.WidthRequest = 150;
+
+{% endhighlight %}
+
+### Customize opacity
+
+The data grid also allows to customize the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) opacity. Refer the below code example to customize the `LoadMoreView` opacity. Refer the below code example to customize the `LoadMoreView` opacity.
+
+{% highlight c# %}
+
+ dataGrid.LoadMoreView.Opacity = 0.3;
+
+{% endhighlight %}

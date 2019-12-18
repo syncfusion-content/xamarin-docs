@@ -48,7 +48,6 @@ You can customize the shimmer using your own view using the [`CustomView`](https
                     </Grid.RowDefinitions>
                     
                     <BoxView BackgroundColor="Gray"
-                             x:Name="shimmerView"
                              Grid.Row="0"
                              Grid.ColumnSpan="2"
                              HorizontalOptions="Start"
@@ -413,8 +412,7 @@ You can also customize the shimmer using `ShimmerView` using the [`CustomView`](
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
 
-                    <shimmer:ShimmerView x:Name="shimmerView"
-                                         Grid.Row="0"
+                    <shimmer:ShimmerView Grid.Row="0"
                                          Grid.ColumnSpan="2"
                                          HorizontalOptions="Start"
                                          WidthRequest="300" />

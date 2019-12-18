@@ -77,12 +77,12 @@ maskedEdit.WatermarkFontSize = 20;
 
 The appearance of the return key on the soft keyboard, which is displayed when an SfMaskedEdit has focus, can be customized by setting the [`ReturnType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ReturnType.html) property to a value of the ReturnType enumeration.
 
-Default – indicates that no specific return key is required and that the platform default is used.
-Done – indicates the return key "Done."
-Go – indicates the return key "Go".
-Next – indicates the return key "Next".
-Search – indicates the return key "Search".
-Send – indicates the return key "Send".
+* `Default` – indicates that no specific return key is required and that the platform default is used.
+* `Done` – indicates the return key "Done."
+* `Go` – indicates the return key "Go".
+* `Next` – indicates the return key "Next".
+* `Search` – indicates the return key "Search".
+* `Send` – indicates the return key "Send".
 
 {% tabs %}
 {% highlight xaml %}
@@ -160,11 +160,10 @@ N> The default value of the ReturnType property is Default.
 
 The property of [`ClearButtonVisibility`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ClearButtonVisibility.html) can be used to control whether a SfMaskedEdit displays a clear button allowing the user to clear the MaskedText. This property should be set to an enumeration member of [`ClearButtonVisibilityMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Editors.ClearButtonVisibilityMode.html).
 
-Never - indicate control will never display a clear button.
+* `Never` - indicate control will never display a clear button.
+* `WhileEditing` - indicates that the clear button will be displayed in the SfMaskedEdit, while it has focus and text.
 
-WhileEditing - indicates that the clear button will be displayed in the SfMaskedEdit, while it has focus and text.
-
-N> The default value of the property ClearButtonVisibility is [`Never`].
+N> The default value of the property ClearButtonVisibility is `Never`.
 
 N> This feature is supported from Android version 5.0 (API level 21 or higher) and is not supported in the UWP platform as it already has framework level supports.
 

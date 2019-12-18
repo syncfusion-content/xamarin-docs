@@ -187,7 +187,7 @@ You can download a readily runnable sample that illustrates enabling and using t
 
 ### Customize size
 
-The data grid allows to customize the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) size by using HeightRequest and WidthRequest property of view. Refer the below code example to customize the `LoadMoreView` Width and Height. 
+The data grid allows to customize the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) size by using [HeightRequest](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.heightrequest?view=xamarin-forms) and [WidthRequest](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.widthrequest?view=xamarin-forms) property of view. Refer the below code example to customize the `LoadMoreView` Width and Height. 
 
 {% highlight c# %}
 
@@ -198,7 +198,7 @@ The data grid allows to customize the [LoadMoreView](https://help.syncfusion.com
 
 ### Customize opacity
 
-The data grid also allows to customize the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) opacity. Refer the below code example to customize the `LoadMoreView` opacity.
+The data grid also allows to customize the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) opacity by using [Opacity](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.opacity?view=xamarin-forms) property of view. Refer the below code example to customize the `LoadMoreView` opacity.
 
 {% highlight c# %}
 

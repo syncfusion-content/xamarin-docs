@@ -9,7 +9,7 @@ documentation: ug
 
 # Shape type
 
-This feature provide supports to draw a polygon, polyline and point icon on the map. We can provide input as the geo points to draw shapes in two different ways. 
+This feature provide supports to draw a polygon, polyline and point icon on the map. We can provide input as the Geo points to draw shapes in two different ways. 
 
     1.Drawing shapes using point collection
     2.Drawing shapes using shape file
@@ -17,7 +17,7 @@ This feature provide supports to draw a polygon, polyline and point icon on the 
 
 ## Drawing shapes using point collection
 
-We can provide input as the geo point collection in sample to draw a shape. We can add more number of shapes using [`Sublayer`](https://help.syncfusion.com/xamarin/maps/sublayer) support of Maps. There are three type of shapes available in shape file layer and it can be changed by using [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeType.html) property.
+We can provide input as the Geo point collection in sample to draw a shape. We can add more number of shapes using [`Sublayer`](https://help.syncfusion.com/xamarin/maps/sublayer) support of Maps. There are three type of shapes available in shape file layer and it can be changed by using [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeType.html) property.
 
     1.Polyline
     2.Polygon

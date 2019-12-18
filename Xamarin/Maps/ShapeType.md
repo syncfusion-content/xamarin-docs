@@ -7,7 +7,7 @@ control: SfMaps
 documentation: ug
 ---
 
-# Shape Type
+# Shape type
 
 This feature provide supports to draw a polygon, polyline and point icon on the map. We can provide input as the Geo points to draw shapes in two different ways. 
 
@@ -21,7 +21,7 @@ We can provide input as the Geo point collection in sample to draw a shape. We c
 
     1.Polyline
     2.Polygon
-    3.PointIcon
+    3.Point icon
     
 ### Polygon
 
@@ -216,11 +216,11 @@ The polyline is a shape that has a dimension of 1. It is called a simple line if
 
 {% endtabs %}
 
-![PolyLine shape support in Xamarin.Forms Maps](Images/PolyLineShape.png)
+![Polyline shape support in Xamarin.Forms Maps](Images/PolyLineShape.png)
 
-### PointIcon
+### Point icon
 
-A PointIcon is shape with a dimension of 0 that occupies a single location in coordinate space. A PointIcon has a single x, y coordinate value. The PointIcon are often used to define features such as oil wells, landmarks, and elevations.
+A point icon is shape with a dimension of 0 that occupies a single location in coordinate space. A point icon has a single x, y coordinate value. The point icons are often used to define features such as oil wells, landmarks, and elevations.
 
 {% tabs %}
 {% highlight xaml %}
@@ -293,11 +293,11 @@ A PointIcon is shape with a dimension of 0 that occupies a single location in co
 
 {% endtabs %}
 
-![PointIcon shape support in Xamarin.Forms Maps](Images/PointShape.png)
+![Point icon shape support in Xamarin.Forms Maps](Images/PointShape.png)
 
-### Customization of Points
+### Customization of points
 
-The size, shape, and position of the map points can be customized using the MapPointIconSize, MapPointIcon, MapPointHorizontalAlignment and MapPointVerticalAlignment properties of shape file layer.
+The size, shape, and position of the map points can be customized using the `MapPointIconSize`(https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointIconSize.html), `MapPointIcon`(https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointIcon.html), `MapPointHorizontalAlignment`(https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointHorizontalAlignment.html) and `MapPointVerticalAlignment`(https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointVerticalAlignment.html) properties of shape file layer.
 
 ## Drawing shapes using shape file
 
@@ -469,7 +469,7 @@ this.Content = maps;
 
 ### Customization of Points
 
-The size, shape, and position of the map points can be customized using the [`MapPointIconSize`], [`MapPointIcon`], [`MapPointHorizontalAlignment`] and [`MapPointVerticalAlignment`] properties of shape file layer.
+The size, shape, and position of the map points can be customized using the  `MapPointIconSize`(https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointIconSize.html), `MapPointIcon`(https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointIcon.html), `MapPointHorizontalAlignment`(https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointHorizontalAlignment.html) and `MapPointVerticalAlignment`(https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointVerticalAlignment.html) properties of shape file layer.
 
 ### Map point icon
 

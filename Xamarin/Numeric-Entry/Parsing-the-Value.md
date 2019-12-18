@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Parsing in Syncfusion NumericTextBox control for Xamarin.Forms
-description: Learn how to enable the parser mode for NumericTextBox control.
+description: This section describes how to enable the parser mode for the NumericTextBox control.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
@@ -33,4 +33,4 @@ this.Content = numericTextBox;
 
 N>The default Value for `ParserMode` is Decimal.
 
-![](images/value.png)
+![Shows a parser mode behavior](images/value.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Shape type in Syncfusion SfMaps control for Xamarin.Forms
-description: This section describes the shape type of shape file layer on maps control.
+description: This section describes drawing polyline, polygon and point icon shapes on maps using shape file and point collection
 platform: xamarin
 control: SfMaps
 documentation: ug
@@ -9,17 +9,307 @@ documentation: ug
 
 # Shape Type
 
-[`SfMaps`](https://help.syncfusion.com/xamarin/sfmaps/getting-started) allows to provide various shape types in [`ShapeFileLayer`](https://help.syncfusion.com/xamarin/sfmaps/layers#shape-file-layer) such as Polygon, Polyline, and Points.
+This feature provide supports to draw a polygon, polyline and point icon on the map. We can provide input as the Geo points to draw shapes in two different ways. 
 
-## Polygon
+    1.Drawing shapes using point collection
+    2.Drawing shapes using shape file
+	
+
+## Drawing shapes using point collection
+
+We can provide input as the Geo point collection in sample to draw a shape. We can add more number of shapes using [`Sublayer feature`](https://help.syncfusion.com/xamarin/maps/sublayer) of Maps. There are three type of shapes available in shape file layer and it can be changed by using **ShapeType** property.
+
+    1.Polyline
+    2.Polygon
+    3.PointIcon
+    
+### Polygon
 
 Polygon is a two-dimensional surface stored as a sequence of points defining its exterior bounding ring and 0 or more interior rings. Polygons are always simple. Mostly the polygon shape type defines a group of land, water bodies, and other features that have a spatial extent.
 
+{% tabs %}
+{% highlight xaml %}
+
+      <maps:SfMaps x:Name="maps" ZoomLevel="4">
+        <maps:SfMaps.Layers>
+            <maps:ImageryLayer GeoCoordinates="30.9709225,-100.2187212" >
+                <maps:ImageryLayer.Sublayers>
+                    <maps:ShapeFileLayer x:Name="subLayer1" ShapeType="Polygon" >
+                        <maps:ShapeFileLayer.ShapeSettings>
+                            <maps:ShapeSetting ShapeFill="Blue" ShapeStroke="DarkBlue" 
+                                               ShapeStrokeThickness="4" />
+                        </maps:ShapeFileLayer.ShapeSettings>
+                    </maps:ShapeFileLayer>
+                    <maps:ShapeFileLayer x:Name="subLayer2" ShapeType="Polygon" >
+                        <maps:ShapeFileLayer.ShapeSettings>
+                            <maps:ShapeSetting ShapeFill="Orange" ShapeStroke="Red"
+                                               ShapeStrokeThickness="4" />
+                        </maps:ShapeFileLayer.ShapeSettings>
+                    </maps:ShapeFileLayer>
+                </maps:ImageryLayer.Sublayers>
+            </maps:ImageryLayer>
+        </maps:SfMaps.Layers>
+    </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMaps maps = new SfMaps();
+            maps.ZoomLevel = 4;
+            ImageryLayer layer = new ImageryLayer();
+            layer.GeoCoordinates = new Point(30.9709225, -100.2187212);
+            ShapeFileLayer subLayer1 = new ShapeFileLayer();
+            subLayer1.ShapeType = ShapeType.Polygon;
+            layer.Sublayers.Add(subLayer1);
+
+            ShapeFileLayer subLayer2 = new ShapeFileLayer();
+            subLayer2.ShapeType = ShapeType.Polygon;
+            layer.Sublayers.Add(subLayer2);
+
+            ShapeSetting subLayerSetting1 = new ShapeSetting();
+            subLayerSetting1.ShapeStrokeThickness = 4;
+            subLayerSetting1.ShapeFill = Color.Blue;
+            subLayerSetting1.ShapeStroke = Color.DarkBlue;
+            subLayer1.ShapeSettings = subLayerSetting1;
+            ShapeSetting subLayerSetting2 = new ShapeSetting();
+            subLayerSetting2.ShapeStrokeThickness = 4;
+            subLayerSetting2.ShapeFill = Color.Orange;
+            subLayerSetting2.ShapeStroke = Color.Red;
+            subLayer2.ShapeSettings = subLayerSetting2;
+
+            subLayer1.Points = new ObservableCollection<Point>()
+            {
+                new Point(37.042972,-109.085003),
+                new Point(40.992567,-109.021030),
+                new Point(40.968420,-102.048065),
+                new Point(36.991893,-102.144024),
+                new Point(37.042972,-109.085003)
+            };
+            subLayer2.Points = new ObservableCollection<Point>()
+            {
+              new Point(41.04621681452063, -104.0625),
+              new Point(41.04621681452063, -102.0849609375),
+              new Point(40.01078714046552, -102.041015625),
+              new Point(40.04443758460856, -95.44921875),
+              new Point(42.48830197960227, -96.3720703125),
+              new Point(43.03677585761058, -98.4375),
+              new Point(43.068887774169625, -104.0625),
+              new Point(41.04621681452063, -104.0625),
+            };
+            maps.Layers.Add(layer);
+            this.Content = maps;
+{% endhighlight %}
+
+{% endtabs %}
+
+![Polygon shape support in Xamarin.Forms Maps](Images/PolygonShape.png)
+
+### Polyline
+
+The polyline is a shape that has a dimension of 1. It is called a simple line if it does not intersect itself. The polylines are often used to define linear features such as roads, rivers, and power lines. 
+
+{% tabs %}
+{% highlight xaml %}
+
+            <maps:SfMaps x:Name="Maps" >
+                <maps:SfMaps.Layers>
+                    <maps:ImageryLayer  x:Name="layer">
+                        <maps:ImageryLayer.Sublayers>
+                            <maps:ShapeFileLayer x:Name="subLayer" ShapeType="Polyline">
+                                <maps:ShapeFileLayer.Points>
+                                   <Point>
+                                        <Point.X>39.6737</Point.X>
+                                        <Point.Y>-100.5</Point.Y>
+                                    </Point>
+                                    <Point>
+                                        <Point.X>61.35</Point.X>
+                                        <Point.Y>18.131</Point.Y>
+                                    </Point>
+                                    <Point>
+                                        <Point.X>-32.259</Point.X>
+                                        <Point.Y>145.4214</Point.Y>
+                                    </Point>
+                                    </maps:ShapeFileLayer.Points>
+                                        <maps:ShapeFileLayer.ShapeSettings>
+                                            <maps:ShapeSetting x:Name="settings" ShapeStrokeThickness="3" />
+                                        </maps:ShapeFileLayer.ShapeSettings>
+                                    <maps:ShapeFileLayer.Markers>
+                                        <local:ViewModel Latitude="39.6737" Longitude= "-100.5" />
+                                        <local:ViewModel Latitude="61.35" Longitude= "18.131"  />
+                                        <local:ViewModel Latitude="-32.259" Longitude= "145.4214" />
+                                    </maps:ShapeFileLayer.Markers>
+                                    <maps:ShapeFileLayer.MarkerTemplate>
+                                        <DataTemplate >
+                                            <Image Source="{Binding ImageName}" Aspect="AspectFit " HorizontalOptions="StartAndExpand" VerticalOptions="Center"  HeightRequest="30" WidthRequest="30"   />
+                                        </DataTemplate>
+                                    </maps:ShapeFileLayer.MarkerTemplate>
+                                </maps:ShapeFileLayer>
+                            </maps:ImageryLayer.Sublayers>
+                    </maps:ImageryLayer>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class MyPage : ContentPage
+    {
+        ViewModel obj = new ViewModel();
+        public MyPage()
+        {
+            InitializeComponent();
+            this.BindingContext = obj;
+            SfMaps maps = new SfMaps();
+            ImageryLayer layer = new ImageryLayer();
+            ShapeFileLayer subLayer = new ShapeFileLayer();
+            MapMarker marker = new MapMarker();
+            marker.Latitude = "39.6737";
+            marker.Longitude = "-100.5";
+            subLayer.Markers.Add(marker);
+            MapMarker marker1 = new MapMarker();
+            marker1.Latitude = "61.35";
+            marker1.Longitude = "18.131";
+            subLayer.Markers.Add(marker1);
+            MapMarker marker2 = new MapMarker();
+            marker2.Latitude = "-32.259";
+            marker2.Longitude = "145.4214";
+            subLayer.Markers.Add(marker2);
+            subLayer.Points = new ObservableCollection<Point>()
+            {
+            new Point(39.6737,-100.5),
+            new Point(61.35, 18.131),
+            new Point(-32.259, 145.4214),
+            };
+            DataTemplate dataTemplate = new DataTemplate(() =>
+            {
+            Image image = new Image();
+            image.Source = obj.ImageName;
+            image.Scale = 1;
+            image.Aspect = Aspect.AspectFit;
+            image.HorizontalOptions = LayoutOptions.StartAndExpand;
+            image.VerticalOptions = LayoutOptions.Center;
+            image.HeightRequest = 30;
+            image.WidthRequest = 30;
+            return image;
+            });
+            subLayer.MarkerTemplate = dataTemplate;
+            subLayer.ShapeType = ShapeType.Polyline;
+            ShapeSetting subLayerSetting = new ShapeSetting();
+            subLayerSetting.ShapeStrokeThickness = 3;
+            subLayer.ShapeSettings = subLayerSetting;
+            layer.Sublayers.Add(subLayer);
+            maps.Layers.Add(layer);
+            this.Content = maps;
+        }
+    }
+    public class ViewModel:MapMarker
+    {
+        public ImageSource ImageName { get; set; }
+        public ViewModel()
+        {
+            ImageName = ImageSource.FromResource("MapSample.pin.png");
+        }
+    }
+{% endhighlight %}
+
+{% endtabs %}
+
+![PolyLine shape support in Xamarin.Forms Maps](Images/PolyLineShape.png)
+
+### PointIcon
+
+A PointIcon is shape with a dimension of 0 that occupies a single location in coordinate space. A PointIcon has a single x, y coordinate value. The PointIcon are often used to define features such as oil wells, landmarks, and elevations.
+
+{% tabs %}
+{% highlight xaml %}
+
+            <maps:SfMaps x:Name="Maps" >
+                <maps:SfMaps.Layers>
+                    <maps:ImageryLayer  x:Name="layer">
+                        <maps:ImageryLayer.Sublayers>
+                             <maps:ShapeFileLayer x:Name="subLayer" MapPointIconSize="10"   ShapeType="PointIcon">
+                                  <maps:ShapeFileLayer.Points>
+                                       <Point>
+                                            <Point.X>48.95</Point.X>
+                                            <Point.Y>-122.68</Point.Y>
+                                        </Point>
+                                        <Point>
+                                            <Point.X>30.197</Point.X>
+                                            <Point.Y>-102.6564</Point.Y>
+                                        </Point>
+                                        <Point>
+                                            <Point.X>36.3305</Point.X>
+                                            <Point.Y>-77.5437</Point.Y>
+                                        </Point>
+                                        <Point>
+                                            <Point.X>47.2331</Point.X>
+                                            <Point.Y>-90.140212</Point.Y>
+                                        </Point>
+                                    </maps:ShapeFileLayer.Points>
+                                    <maps:ShapeFileLayer.ShapeSettings>
+                                            <maps:ShapeSetting ShapeFill="Red" ShapeStroke="Red"/>    
+                                    </maps:ShapeFileLayer.ShapeSettings>
+                                </maps:ShapeFileLayer>
+                            </maps:ImageryLayer.Sublayers>
+                       </maps:ImageryLayer>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class MyPage : ContentPage
+    {
+        ViewModel obj = new ViewModel();
+        public MyPage()
+        {
+            InitializeComponent();
+            this.BindingContext = obj;
+            SfMaps maps = new SfMaps();
+            ImageryLayer layer = new ImageryLayer();
+            ShapeFileLayer subLayer = new ShapeFileLayer();
+            subLayer.Points = new ObservableCollection<Point>()
+            {
+            new Point(48.95,-122.68),
+            new Point(30.197, -102.6564),
+            new Point(36.3305, -77.5437),
+            new Point(47.2331, -90.140212),
+            };
+            subLayer.MapPointIconSize = 10;
+            subLayer.ShapeType = ShapeType.PointIcon;
+            ShapeSetting subLayerSetting = new ShapeSetting();
+            subLayerSetting.ShapeFill = Color.Red;
+            subLayerSetting.ShapeStroke = Color.Red;
+            subLayer.ShapeSettings = subLayerSetting;
+            layer.Sublayers.Add(subLayer);
+            maps.Layers.Add(layer);
+            this.Content = maps;
+       }
+    }
+{% endhighlight %}
+
+{% endtabs %}
+
+![PointIcon shape support in Xamarin.Forms Maps](Images/PointShape.png)
+
+### Customization of Points
+
+The size, shape, and position of the map points can be customized using the MapPointIconSize, MapPointIcon, MapPointHorizontalAlignment and MapPointVerticalAlignment properties of shape file layer.
+
+## Drawing shapes using shape file
+
+[`SfMaps`](https://help.syncfusion.com/xamarin/sfmaps/getting-started) allows to provide various shape types in [`ShapeFileLayer`](https://help.syncfusion.com/xamarin/sfmaps/layers#shape-file-layer) such as Polygon, Polyline, and Points. Shape point collection and shape type should be add in shape file itself.
+
+### Polygon
+
 ![Single selection support in Xamarin.Forms Maps](Images/polygon.jpg)
 
-## Polyline
+### Polyline
 
-The polyline is a shape that has a dimension of 1. It is called a simple line if it does not intersect itself. The polylines are often used to define linear features such as roads, rivers, and power lines. Mostly the shape file layer with the polyline shape type is used as [`sublayer`](https://help.syncfusion.com/xamarin/sfmaps/sublayer#adding-sublayers-in-shapefilelayer).
+The shape file layer with the polyline shape type is used as [`sublayer`](https://help.syncfusion.com/xamarin/sfmaps/sublayer#adding-sublayers-in-shapefilelayer).
 
 The following code example demonstrates the sublayer with polyline shape type. The roads (sublayer) of Bahrain (base layer) is displayed using the shape file layer of maps.
 
@@ -99,9 +389,7 @@ this.Content = maps;
 
 ![Single selection support in Xamarin.Forms Maps](Images/polyline.jpg)
 
-## Points
-
-A point is shape with a dimension of 0 that occupies a single location in coordinate space. A point has a single x, y coordinate value. The points are often used to define features such as oil wells, landmarks, and elevations.
+### Points
 
 The following code example demonstrates the [`sublayer`](https://help.syncfusion.com/xamarin/sfmaps/sublayer#adding-sublayers-in-shapefilelayer) with the points shape type. The places (sublayer) of Australia (base layer) is displayed using the shape file layer of maps.
 

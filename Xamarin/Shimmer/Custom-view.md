@@ -604,6 +604,7 @@ You can customize the shimmer also using `ShimmerView` using the [`CustomView`](
                 HeightRequest = 10,
                 WidthRequest = 190
             };
+            
             var shimmerView8 = new ShimmerView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -611,6 +612,7 @@ You can customize the shimmer also using `ShimmerView` using the [`CustomView`](
                 HeightRequest = 10,
                 WidthRequest = 170
             };
+            
             var shimmerView9 = new ShimmerView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -618,6 +620,7 @@ You can customize the shimmer also using `ShimmerView` using the [`CustomView`](
                 HeightRequest = 10,
                 WidthRequest = 180
             };
+            
             var shimmerView10 = new ShimmerView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -633,6 +636,7 @@ You can customize the shimmer also using `ShimmerView` using the [`CustomView`](
                 HeightRequest = 10,
                 WidthRequest = 160
             };
+            
             var shimmerView12 = new ShimmerView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -640,10 +644,12 @@ You can customize the shimmer also using `ShimmerView` using the [`CustomView`](
                 HeightRequest = 10,
                 WidthRequest = 175
             };
+            
             var shimmerView13 = new ShimmerView
             {
                 Margin = new Thickness(0, 5, 0, 0)
             };
+            
             var shimmerView14 = new ShimmerView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -651,6 +657,7 @@ You can customize the shimmer also using `ShimmerView` using the [`CustomView`](
                 HeightRequest = 10,
                 WidthRequest = 150
             };
+            
             var shimmerView15 = new ShimmerView
             {
                 HorizontalOptions = LayoutOptions.Start,

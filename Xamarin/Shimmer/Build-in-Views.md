@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion.Xamarin.Forms Shimmer types
-description: Different built-in Shimmer types and custom view support available in Essential Xamarin.Forms Shimmer.
+description: Different built-in Shimmer types available in Essential Xamarin.Forms Shimmer.
 platform: xamarin
 control: SfShimmer
 documentation: ug
@@ -53,5 +53,5 @@ You can use the built-in shimmer types by setting the [`Type`](https://help.sync
 
 {% endtabs %}
 
-![The built-in shimmer types for Xamarin.Forms](Shimmer-Types_images/ShimmerTypes.gif)
+![The built-in shimmer types for Xamarin.Forms](Build-in-views_images/ShimmerTypes.gif)
 

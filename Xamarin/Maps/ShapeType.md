@@ -9,7 +9,7 @@ documentation: ug
 
 # Shape type
 
-This feature provide supports to draw a polygon, polyline and point icon on the map. We can provide input as the Geo points to draw shapes in two different ways. 
+This feature provide supports to draw a polygon, polyline and point icon on the map. We can provide input as the geo points to draw shapes in two different ways. 
 
     1.Drawing shapes using point collection
     2.Drawing shapes using shape file
@@ -17,7 +17,7 @@ This feature provide supports to draw a polygon, polyline and point icon on the 
 
 ## Drawing shapes using point collection
 
-We can provide input as the Geo point collection in sample to draw a shape. We can add more number of shapes using [`Sublayer feature`](https://help.syncfusion.com/xamarin/maps/sublayer) of Maps. There are three type of shapes available in shape file layer and it can be changed by using [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeType.html) property.
+We can provide input as the geo point collection in sample to draw a shape. We can add more number of shapes using [`Sublayer`](https://help.syncfusion.com/xamarin/maps/sublayer) support of Maps. There are three type of shapes available in shape file layer and it can be changed by using [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeType.html) property.
 
     1.Polyline
     2.Polygon
@@ -34,13 +34,13 @@ Polygon is a two-dimensional surface stored as a sequence of points defining its
         <maps:SfMaps.Layers>
             <maps:ImageryLayer GeoCoordinates="30.9709225,-100.2187212" >
                 <maps:ImageryLayer.Sublayers>
-                    <maps:ShapeFileLayer x:Name="subLayer1" ShapeType="Polygon" >
+                    <maps:ShapeFileLayer x:Name="sublayer1" ShapeType="Polygon" Points="{Binding SubLayer1}" >
                         <maps:ShapeFileLayer.ShapeSettings>
                             <maps:ShapeSetting ShapeFill="Blue" ShapeStroke="DarkBlue" 
                                                ShapeStrokeThickness="4" />
                         </maps:ShapeFileLayer.ShapeSettings>
                     </maps:ShapeFileLayer>
-                    <maps:ShapeFileLayer x:Name="subLayer2" ShapeType="Polygon" >
+                    <maps:ShapeFileLayer x:Name="subLayer2" ShapeType="Polygon" Points="{Binding SubLayer2}">
                         <maps:ShapeFileLayer.ShapeSettings>
                             <maps:ShapeSetting ShapeFill="Orange" ShapeStroke="Red"
                                                ShapeStrokeThickness="4" />
@@ -55,18 +55,25 @@ Polygon is a two-dimensional surface stored as a sequence of points defining its
 
 {% highlight c# %}
 
+    public partial class MainPage : ContentPage
+    {
+        ViewModel obj = new ViewModel();
+        public MainPage()
+        {
+            InitializeComponent();
+            this.BindingContext = obj;
             SfMaps maps = new SfMaps();
             maps.ZoomLevel = 4;
             ImageryLayer layer = new ImageryLayer();
             layer.GeoCoordinates = new Point(30.9709225, -100.2187212);
             ShapeFileLayer subLayer1 = new ShapeFileLayer();
             subLayer1.ShapeType = ShapeType.Polygon;
+            subLayer1.Points = obj.SubLayer1;
             layer.Sublayers.Add(subLayer1);
-
             ShapeFileLayer subLayer2 = new ShapeFileLayer();
             subLayer2.ShapeType = ShapeType.Polygon;
+            subLayer1.Points = obj.SubLayer2;
             layer.Sublayers.Add(subLayer2);
-
             ShapeSetting subLayerSetting1 = new ShapeSetting();
             subLayerSetting1.ShapeStrokeThickness = 4;
             subLayerSetting1.ShapeFill = Color.Blue;
@@ -77,8 +84,28 @@ Polygon is a two-dimensional surface stored as a sequence of points defining its
             subLayerSetting2.ShapeFill = Color.Orange;
             subLayerSetting2.ShapeStroke = Color.Red;
             subLayer2.ShapeSettings = subLayerSetting2;
+            subLayer1.Points = obj.SubLayer1;
+            subLayer2.Points = obj.SubLayer2;
+            maps.Layers.Add(layer);
+            this.Content = maps;
+        }
+    }
 
-            subLayer1.Points = new ObservableCollection<Point>()
+    public class ViewModel
+    {
+         public ObservableCollection<Point> SubLayer1
+        {
+            get;set;
+        }
+
+        public ObservableCollection<Point> SubLayer2
+        {
+            get; set;
+        }
+        public ViewModel()
+        {
+
+            SubLayer1 = new ObservableCollection<Point>()
             {
                 new Point(37.042972,-109.085003),
                 new Point(40.992567,-109.021030),
@@ -86,7 +113,7 @@ Polygon is a two-dimensional surface stored as a sequence of points defining its
                 new Point(36.991893,-102.144024),
                 new Point(37.042972,-109.085003)
             };
-            subLayer2.Points = new ObservableCollection<Point>()
+            SubLayer2 = new ObservableCollection<Point>()
             {
               new Point(41.04621681452063, -104.0625),
               new Point(41.04621681452063, -102.0849609375),
@@ -97,8 +124,8 @@ Polygon is a two-dimensional surface stored as a sequence of points defining its
               new Point(43.068887774169625, -104.0625),
               new Point(41.04621681452063, -104.0625),
             };
-            maps.Layers.Add(layer);
-            this.Content = maps;
+        }
+    }
 {% endhighlight %}
 
 {% endtabs %}
@@ -176,12 +203,9 @@ The polyline is a shape that has a dimension of 1. It is called a simple line if
             marker2.Latitude = "-32.259";
             marker2.Longitude = "145.4214";
             subLayer.Markers.Add(marker2);
-            subLayer.Points = new ObservableCollection<Point>()
-            {
-            new Point(39.6737,-100.5),
-            new Point(61.35, 18.131),
-            new Point(-32.259, 145.4214),
-            };
+            subLayer.Points.Add(new Point(39.6737,-100.5));
+            subLayer.Points.Add(new Point(61.35, 18.131));
+            subLayer.Points.Add(new Point(-32.259, 145.4214));
             DataTemplate dataTemplate = new DataTemplate(() =>
             {
             Image image = new Image();
@@ -271,13 +295,10 @@ A point icon is shape with a dimension of 0 that occupies a single location in c
             SfMaps maps = new SfMaps();
             ImageryLayer layer = new ImageryLayer();
             ShapeFileLayer subLayer = new ShapeFileLayer();
-            subLayer.Points = new ObservableCollection<Point>()
-            {
-            new Point(48.95,-122.68),
-            new Point(30.197, -102.6564),
-            new Point(36.3305, -77.5437),
-            new Point(47.2331, -90.140212),
-            };
+            subLayer.Points.Add(new Point(48.95,-122.68));
+            subLayer.Points.Add(new Point(30.197, -102.6564));
+            subLayer.Points.Add(new Point(36.3305, -77.5437));
+            subLayer.Points.Add(new Point(47.2331, -90.140212));
             subLayer.MapPointIconSize = 10;
             subLayer.ShapeType = ShapeType.PointIcon;
             ShapeSetting subLayerSetting = new ShapeSetting();

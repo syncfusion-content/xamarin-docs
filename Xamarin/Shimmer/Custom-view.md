@@ -265,6 +265,7 @@ You can customize the shimmer using your own view using the [`CustomView`](https
                 BackgroundColor = Color.Gray,
                 WidthRequest = 170
             };
+            
             var boxView9 = new BoxView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -273,6 +274,7 @@ You can customize the shimmer using your own view using the [`CustomView`](https
                 HeightRequest = 10,
                 WidthRequest = 180
             };
+            
             var boxView10 = new BoxView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -290,6 +292,7 @@ You can customize the shimmer using your own view using the [`CustomView`](https
                 HeightRequest = 10,
                 WidthRequest = 160
             };
+            
             var boxView12 = new BoxView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -298,11 +301,13 @@ You can customize the shimmer using your own view using the [`CustomView`](https
                 HeightRequest = 10,
                 WidthRequest = 175
             };
+            
             var boxView3 = new BoxView
             {
                 BackgroundColor = Color.Gray,
                 Margin = new Thickness(0, 5, 0, 0)
             };
+            
             var boxView14 = new BoxView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -311,6 +316,7 @@ You can customize the shimmer using your own view using the [`CustomView`](https
                 HeightRequest = 10,
                 WidthRequest = 150
             };
+            
             var boxView15 = new BoxView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -319,6 +325,7 @@ You can customize the shimmer using your own view using the [`CustomView`](https
                 HeightRequest = 10,
                 WidthRequest = 160
             };
+            
             var boxView16 = new BoxView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -595,6 +602,7 @@ You can also customize the shimmer using `ShimmerView` using the [`CustomView`](
                 HeightRequest = 10,
                 WidthRequest = 190
             };
+            
             var shimmerView8 = new ShimmerView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -602,6 +610,7 @@ You can also customize the shimmer using `ShimmerView` using the [`CustomView`](
                 HeightRequest = 10,
                 WidthRequest = 170
             };
+            
             var shimmerView9 = new ShimmerView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -609,6 +618,7 @@ You can also customize the shimmer using `ShimmerView` using the [`CustomView`](
                 HeightRequest = 10,
                 WidthRequest = 180
             };
+            
             var shimmerView10 = new ShimmerView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -624,6 +634,7 @@ You can also customize the shimmer using `ShimmerView` using the [`CustomView`](
                 HeightRequest = 10,
                 WidthRequest = 160
             };
+            
             var shimmerView12 = new ShimmerView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -631,10 +642,12 @@ You can also customize the shimmer using `ShimmerView` using the [`CustomView`](
                 HeightRequest = 10,
                 WidthRequest = 175
             };
+            
             var shimmerView13 = new ShimmerView
             {
                 Margin = new Thickness(0, 5, 0, 0)
             };
+            
             var shimmerView14 = new ShimmerView
             {
                 HorizontalOptions = LayoutOptions.Start,
@@ -642,6 +655,7 @@ You can also customize the shimmer using `ShimmerView` using the [`CustomView`](
                 HeightRequest = 10,
                 WidthRequest = 150
             };
+            
             var shimmerView15 = new ShimmerView
             {
                 HorizontalOptions = LayoutOptions.Start,

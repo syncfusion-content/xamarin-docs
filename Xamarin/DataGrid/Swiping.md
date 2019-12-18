@@ -534,6 +534,85 @@ The dataGrid allows to load the desired swipe template by using `DataTemplateSel
    });
    dataGrid.RightSwipeTemplate = rightswipeTemplate;
 
+
+   public class LeftTemplateSelector : DataTemplateSelector
+    {
+        protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+        {
+            var value = (item as OrderInfo).IsClosed;
+            if (value)
+            {
+                var dataTemplate = new DataTemplate(() =>
+                {
+                    Button button = new Button()
+                    {
+                        TextColor = Color.Green,
+                        VerticalOptions = LayoutOptions.Center,
+                        HorizontalOptions = LayoutOptions.Center,
+                        Text = "LeftSwipe IsClosed is true"
+                    };
+                    return button;
+                });
+                return dataTemplate;
+            }
+
+            else
+            {
+                var dataTemplate = new DataTemplate(() =>
+                {
+                    Button button = new Button()
+                    {
+                        TextColor = Color.Red,
+                        VerticalOptions = LayoutOptions.Center,
+                        HorizontalOptions = LayoutOptions.Center,
+                        Text = "LeftSwipe IsClosed is false"
+                    };
+                    return button;
+                });
+                return dataTemplate;
+            }
+        }
+    }
+
+    public class RightTemplateSelector : DataTemplateSelector
+    {
+        protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+        {
+            var value = (item as OrderInfo).IsClosed;
+            if (value)
+            {
+                var dataTemplate = new DataTemplate(() =>
+                {
+                    Button button = new Button()
+                    {
+                        TextColor = Color.Green,
+                        VerticalOptions = LayoutOptions.Center,
+                        HorizontalOptions = LayoutOptions.Center,
+                        Text = "RightSwipe IsClosed is true"
+                    };
+                    return button;
+                });
+                return dataTemplate;
+            }
+
+            else
+            {
+                var dataTemplate = new DataTemplate(() =>
+                {
+                    Button button = new Button()
+                    {
+                        TextColor = Color.Red,
+                        VerticalOptions = LayoutOptions.Center,
+                        HorizontalOptions = LayoutOptions.Center,
+                        Text = "RightSwipe IsClosed is false"
+                    };
+                    return button;
+                });
+                return dataTemplate;
+            }
+        }
+    }
+
 {% endhighlight %}
 
 You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DataGrid_TemplateSector-1591847721.zip) to load custom swipe buttons based on row data

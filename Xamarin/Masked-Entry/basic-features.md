@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic features in Syncfusion 'SfMaskedEdit'.
+title: Basic features in Syncfusion SfMaskedEdit control for Xamarin.Forms
 description: Learn how to customize SfMaskedEdit's value, PromptChar, Watermark text, Return key, and Clear button Visibility.
 platform: Xamarin
 control: SfMaskedEdit
@@ -75,7 +75,7 @@ maskedEdit.WatermarkFontSize = 20;
 
 ## Customize the return key
 
-The appearance of the return key on the soft keyboard, which is displayed when an `SfMaskedEdit` has focus, can be customized by setting the [`ReturnType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ReturnType.html) property to a value of the ReturnType enumeration.
+The appearance of the return key on the soft keyboard, which is displayed when `SfMaskedEdit` has focus, can be customized by setting the [`ReturnType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ReturnType.html) property to a value of the ReturnType enumeration.
 
 * `Default` – indicates that no specific return key is required and that the platform default is used.
 * `Done` – indicates the return key "Done."
@@ -110,7 +110,7 @@ N> The default value of the ReturnType property is Default.
 
 ## Return command and return command parameter
 
-[`ReturnCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ReturnCommand.html) is triggered by pressing the return key.Additionally, any object specified by the property [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ReturnCommandParameter.html) will be passed as a parameter to the ICommand. 
+[`ReturnCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ReturnCommand.html) is triggered by pressing the return key. Additionally, You can pass the parameter through the  [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ReturnCommandParameter.html) property to the ICommand. 
 
 {% tabs %}
 {% highlight xaml %}

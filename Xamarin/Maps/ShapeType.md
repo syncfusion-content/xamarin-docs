@@ -229,7 +229,7 @@ A point icon is shape with a dimension of 0 that occupies a single location in c
                 <maps:SfMaps.Layers>
                     <maps:ImageryLayer  x:Name="layer">
                         <maps:ImageryLayer.Sublayers>
-                             <maps:ShapeFileLayer x:Name="subLayer" MapPointIconSize="10"   ShapeType="PointIcon">
+                             <maps:ShapeFileLayer x:Name="subLayer" MapPointIconSize="10" ShapeType="PointIcon">
                                   <maps:ShapeFileLayer.Points>
                                        <Point>
                                             <Point.X>48.95</Point.X>
@@ -473,7 +473,7 @@ The size, shape, and position of the map points can be customized using the [`Ma
 
 ### Map point icon
 
-The shape of the map point is customized using the [`MapPointIcon`] property of ShapeFileLayer. SfMap supports the following map point icon types:
+The shape of the map point is customized using the [`MapPointIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointIcon.html)  property of ShapeFileLayer. SfMap supports the following map point icon types:
 
 *	Circle,
 *	Rectangle,
@@ -559,7 +559,7 @@ maps.Layers.Add(layer);
 
 ### Map point position
 
-The position of the map points can be customized using the [`MapPointHorizontalAlignment`] and [`MapPointVerticalAlignment`] properties of shape file layer. These properties allow to vary the position to Near, Far, and Center by considering the provided latitude, longitude, and the map point icon size.
+The position of the map points can be customized using the [`MapPointHorizontalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointHorizontalAlignment.html)  and [`MapPointVerticalAlignment`] (https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointVerticalAlignment.html) properties of shape file layer. These properties allow to vary the position to Near, Far, and Center by considering the provided latitude, longitude, and the map point icon size.
 
 {% tabs %}
 
@@ -645,7 +645,7 @@ maps.Layers.Add(layer);
 
 ### Map point size
 
-The size of the map points can be customized using the [`MapPointIconSize`] property of  ShapeFileLayer.
+The size of the map points can be customized using the [`MapPointIconSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointIconSize.html) property of  ShapeFileLayer.
 
 {% tabs %}
 

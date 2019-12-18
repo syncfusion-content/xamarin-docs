@@ -549,7 +549,7 @@ The dataGrid allows to load the desired swipe template by using `DataTemplateSel
                         TextColor = Color.Green,
                         VerticalOptions = LayoutOptions.Center,
                         HorizontalOptions = LayoutOptions.Center,
-                        Text = "LeftSwipe IsClosed is true"
+                        Text = "IsClosed is true"
                     };
                     return button;
                 });
@@ -565,7 +565,7 @@ The dataGrid allows to load the desired swipe template by using `DataTemplateSel
                         TextColor = Color.Red,
                         VerticalOptions = LayoutOptions.Center,
                         HorizontalOptions = LayoutOptions.Center,
-                        Text = "LeftSwipe IsClosed is false"
+                        Text = "IsClosed is false"
                     };
                     return button;
                 });
@@ -588,7 +588,7 @@ The dataGrid allows to load the desired swipe template by using `DataTemplateSel
                         TextColor = Color.Green,
                         VerticalOptions = LayoutOptions.Center,
                         HorizontalOptions = LayoutOptions.Center,
-                        Text = "RightSwipe IsClosed is true"
+                        Text = "IsClosed is true"
                     };
                     return button;
                 });
@@ -604,7 +604,7 @@ The dataGrid allows to load the desired swipe template by using `DataTemplateSel
                         TextColor = Color.Red,
                         VerticalOptions = LayoutOptions.Center,
                         HorizontalOptions = LayoutOptions.Center,
-                        Text = "RightSwipe IsClosed is false"
+                        Text = "IsClosed is false"
                     };
                     return button;
                 });

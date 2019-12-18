@@ -182,7 +182,7 @@ chart.Series.Add(stackingLineSeries4);
 
 {% endtabs %}
 
-![Stacked Line chart type in Xamarin.Forms](charttypes_images/StackedLine.png)
+
 
 ### Dashed Stacked Lines
 
@@ -297,7 +297,7 @@ chart.Series.Add(stackingLine100Series4);
 
 {% endtabs %}
 
-![100% Stacked Line chart type in Xamarin.Forms](charttypes_images/StackedLine100.png)
+
 
 ## Area Chart
 

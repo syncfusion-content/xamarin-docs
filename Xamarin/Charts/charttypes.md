@@ -52,7 +52,7 @@ chart.Series.Add(lineSeries);
 
 ### Dashed Lines
 
-[`StrokeDashArray`]() property of the [`LineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LineSeries.html) is used to render line series with dashes.
+[`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LineSeries~StrokeDashArray.html) property of the [`LineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LineSeries.html) is used to render line series with dashes.
 
 {% tabs %} 
 

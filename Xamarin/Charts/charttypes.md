@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion.Xamarin.Forms Chart types
-description: What are the different types of Charts available in Essential Xamarin.forms Chart.
+description: This section explains the different types of charts, including Cartesian, Financial, Accumulation, PolarRadar and its properties.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -112,6 +112,193 @@ fastLineSeries.StrokeDashArray = new double[2] { 2, 3 };
 ### EnableAntiAliasing 
 
 Since [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) can be loaded with a large number of points, the rendering of series should be smooth. This requirement can be achieved by setting [`EnableAntiAliasing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries~EnableAntiAliasing.html) property of [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) as false.
+
+## Stacked Line Chart
+To render a stacked line chart, create an instance of `StackingLineSeries` and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the stacked line appearance.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Color.html) – used to change the color of the line.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the line.
+* [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Opacity.html) - used to control the transparency of the chart series.
+
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+	<chart:StackingLineSeries ItemsSource ="{Binding Data1}" XBindingPath="XValue" YBindingPath="YValue"/>
+
+	<chart:StackingLineSeries ItemsSource ="{Binding Data2}" XBindingPath="XValue" YBindingPath="YValue"/>
+
+	<chart:StackingLineSeries ItemsSource ="{Binding Data3}" XBindingPath="XValue" YBindingPath="YValue"/>
+
+	<chart:StackingLineSeries ItemsSource ="{Binding Data4}" XBindingPath="XValue" YBindingPath="YValue"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+StackingLineSeries stackingLineSeries1 = new StackingLineSeries() 
+{ 
+	ItemsSource = Data1, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" 
+};
+
+StackingLineSeries stackingLineSeries2 = new StackingLineSeries() 
+{ 
+	ItemsSource = Data2, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" 
+};
+
+StackingLineSeries stackingLineSeries3 = new StackingLineSeries() 
+{ 
+	ItemsSource = Data3, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" 
+};
+
+StackingLineSeries stackingLineSeries4 = new StackingLineSeries() 
+{ 
+	ItemsSource = Data4, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" 
+};
+
+chart.Series.Add(stackingLineSeries1);
+chart.Series.Add(stackingLineSeries2);
+chart.Series.Add(stackingLineSeries3);
+chart.Series.Add(stackingLineSeries4);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Stacked Line chart type in Xamarin.Forms](charttypes_images/StackedLine.png)
+
+### Dashed Stacked Lines
+
+`StrokeDashArray` property of the `StackingLineSeries` is used to render stacked line series with dashes.
+
+{% highlight c# %}
+[C#]
+
+StackingLineSeries stackingLineSeries1 = new StackingLineSerie()
+{ 
+	ItemsSource = Data1, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" 
+};
+stackingLineSeries1.StrokeDashArray = new double[2] { 13, 4 };
+
+StackingLineSeries stackingLineSeries2 = new StackingLineSerie()
+{ 
+	ItemsSource = Data1, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" 
+};
+stackingLineSeries2.StrokeDashArray = new double[2] { 13, 4 };
+
+StackingLineSeries stackingLineSeries3 = new StackingLineSerie()
+{ 
+	ItemsSource = Data1, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" 
+};
+stackingLineSeries3.StrokeDashArray = new double[2] { 13, 4 };
+
+StackingLineSeries stackingLineSeries4 = new StackingLineSerie()
+{ 
+	ItemsSource = Data1, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" 
+};
+stackingLineSeries4.StrokeDashArray = new double[2] { 13, 4 };
+
+{% endhighlight %}
+
+![Dashed lines support for StackingLineSeries in Xamarin.Forms Chart](charttypes_images/StackingLine_Dashes.png)
+
+## 100% Stacked Line Chart
+
+To render a 100% stacked line chart, create an instance of `StackingLine100Series` and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the series appearance.
+
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Color.html) – used to change the color of the line.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the line.
+* [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Opacity.html) - used to control the transparency of the chart series.
+* `StrokeDashArray` - used to change the dashes of the stacked line series.
+
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+	<chart:StackingLine100Series ItemsSource ="{Binding Data1}" XBindingPath="XValue" YBindingPath="YValue"/>
+
+	<chart:StackingLine100Series ItemsSource ="{Binding Data2}" XBindingPath="XValue" YBindingPath="YValue"/>
+
+	<chart:StackingLine100Series ItemsSource ="{Binding Data3}" XBindingPath="XValue" YBindingPath="YValue"/>
+
+	<chart:StackingLine100Series ItemsSource ="{Binding Data4}" XBindingPath="XValue" YBindingPath="YValue"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+StackingLine100Series stackingLine100Series1 = new StackingLine100Series() 
+{ 
+	ItemsSource = Data1, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" 
+};
+
+StackingLine100Series stackingLine100Series2 = new StackingLine100Series() 
+{ 
+	ItemsSource = Data2, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" 
+};
+
+StackingLine100Series stackingLine100Series3 = new StackingLine100Series() 
+{ 
+	ItemsSource = Data3, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" 
+};
+
+StackingLine100Series stackingLine100Series4 = new StackingLine100Series() 
+{ 
+	ItemsSource = Data4, 
+	XBindingPath = "XValue", 
+	YBindingPath = "YValue" 
+};
+
+chart.Series.Add(stackingLine100Series1);
+chart.Series.Add(stackingLine100Series2);
+chart.Series.Add(stackingLine100Series3);
+chart.Series.Add(stackingLine100Series4);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![100% Stacked Line chart type in Xamarin.Forms](charttypes_images/StackedLine100.png)
 
 ## Area Chart
 

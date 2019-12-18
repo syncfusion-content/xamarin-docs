@@ -198,7 +198,7 @@ The data grid allows to customize the [LoadMoreView](https://help.syncfusion.com
 
 ### Customize opacity
 
-The data grid also allows to customize the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) opacity. Refer the below code example to customize the `LoadMoreView` opacity. Refer the below code example to customize the `LoadMoreView` opacity.
+The data grid also allows to customize the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) opacity. Refer the below code example to customize the `LoadMoreView` opacity.
 
 {% highlight c# %}
 

@@ -536,7 +536,7 @@ The dataGrid allows to load the desired swipe template by using `DataTemplateSel
 
 {% endhighlight %}
 
-You can download the sample [here]() to load custom swipe buttons based on row data
+You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DataGrid_TemplateSector-1591847721.zip) to load custom swipe buttons based on row data
 
 ## Limitations
 

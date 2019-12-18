@@ -225,7 +225,6 @@ stackingLineSeries4.StrokeDashArray = new double[2] { 13, 4 };
 
 {% endhighlight %}
 
-![Dashed lines support for StackingLineSeries in Xamarin.Forms Chart](charttypes_images/StackingLine_Dashes.png)
 
 ## 100% Stacked Line Chart
 

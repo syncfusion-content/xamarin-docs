@@ -134,7 +134,7 @@ Initialize a card view with [`Content`](https://help.syncfusion.com/cr/cref_file
 
 <cards:SfCardView>
 
-	<Label  Text="SfCardView"/>
+	<Label Text="SfCardView"/>
 
 </cards:SfCardView>
 
@@ -166,7 +166,7 @@ The [`SwipeToDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 {% highlight xaml %}
 
 <cards:SfCardView SwipeToDismiss="true">
-	<Label  Text="SfCardView"/>
+	<Label Text="SfCardView"/>
 </cards:SfCardView>
 
 {% endhighlight %}
@@ -193,7 +193,7 @@ We can get a view state of the card using the `IsDismissed` property, which also
 {% highlight xaml %}
 
 <cards:SfCardView IsDismissed="true">
-     <Label  Text="SfCardView"/>
+     <Label Text="SfCardView"/>
 </cards:SfCardView>
 
 {% endhighlight %}

@@ -514,7 +514,7 @@ You can download the source code of swiping sample [here](http://www.syncfusion.
 
 ## How to load custom swipe buttons based on row data?
 
-The dataGrid allows to load the desired swipe template by using `DataTemplateSelector` to the `SfDataGrid.RightSwipeTemplate` and `SfDataGrid.LeftSwipeTemplate`. Refer the below code example to load the desired template using the RowData and the row element passed in the arguments.
+Using `DataTemplateSelector` you can load specific views based on row data as `SfDataGrid.RightSwipeTemplate` and `SfDataGrid.LeftSwipeTemplate`. Refer the below code example to load the desired template based on the row data.
 
 {% highlight c# %}
 
@@ -617,7 +617,7 @@ The dataGrid allows to load the desired swipe template by using `DataTemplateSel
 
 You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DataGrid_TemplateSector240598909.zip) to load custom swipe buttons based on row data
 
-The following screenshot shows the custom swipe buttons based on row data
+The following screenshot shows the custom swipe buttons loaded based on the cell value of the Is Online switch column.
 
 ![Custom Swipe button for Online](SfDataGrid_images/Online.png)
 

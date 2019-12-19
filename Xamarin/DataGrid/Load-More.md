@@ -203,7 +203,7 @@ The following screenshot shows the customized LoadMoreView size
 
 ### Customize opacity
 
-The data grid also allows to customize the opacity of the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) by setting the [LoadMoreView.Opacity](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.opacity?view=xamarin-forms) property. Refer the below code example to customize the opcaity of the `LoadMoreView`.
+The data grid also allows to customize the opacity of the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) by setting the [LoadMoreView.Opacity](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.opacity?view=xamarin-forms) property. Refer the below code example to customize the opacity of the `LoadMoreView`.
 
 {% highlight c# %}
 

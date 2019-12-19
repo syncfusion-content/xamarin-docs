@@ -57,6 +57,7 @@ namespace GettingStarted
         }
     }
 
+
     public class GettingStattedViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<object> messages;
@@ -185,7 +186,6 @@ To add image in suggestion list in message, follow the code example:
     <ContentPage.Content>
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
-                       ShowTimeBreak="True"
                        CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
 </ContentPage>
@@ -547,8 +547,6 @@ namespace GettingStarted
         {
             this.messages = new ObservableCollection<object>();
             this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
-            
-            this.GenerateMessages();
         }
 
         /// <summary>
@@ -599,16 +597,6 @@ namespace GettingStarted
                 this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
             }
         }
-
-        private void GenerateMessages()
-        {
-            this.messages.Add(new TextMessage()
-            {
-                Author = currentUser,
-                Text = "Flight to USA",
-                ShowAvatar = true,
-            });
-        }
     }
 }
 
@@ -619,7 +607,7 @@ namespace GettingStarted
 
 The list of suggestions will be closed by default after the current user has selected the option. suggestion list closing can be cacelled using `SfChat.SuggestionItemSelected` event or `SfChat.SuggestionItemSelectedCommand` command.
 
-### SuggestionItemSelected event
+#### SuggestionItemSelected event
 
 {% tabs %}
 {% highlight c# %}

@@ -118,28 +118,8 @@ Sfchat allows to craete custom template for time break view using [SfChat.TimeBr
 To apply custom `TimeBreakTemplate` in the SfChat, follow the code example:
 
 {% tabs %}
-{% highlight xaml %}
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
-             xmlns:local="clr-namespace:GettingStarted"
-             x:Class="GettingStarted.MainPage">
-
-    <ContentPage.BindingContext>
-        <local:GettingStartedViewModel/>
-    </ContentPage.BindingContext>
-    
-    <ContentPage.Content>
-        <sfChat:SfChat x:Name="sfChat"
-                       Messages="{Binding Messages}"
-                       ShowTimeBreak="True"
-                       CurrentUser="{Binding CurrentUser}" />
-    </ContentPage.Content>
-</ContentPage>
-
-{% endhighlight %}
 {% highlight c# %}
+
 using Syncfusion.XForms.Chat;
 using Xamarin.Forms;
 
@@ -161,6 +141,7 @@ namespace GettingStarted
             this.Content = sfChat;
         }
     }
+}
 
 internal class TimeBreakTemplateSelector : DataTemplateSelector
 {
@@ -237,5 +218,3 @@ internal class TimeBreakTemplateSelector : DataTemplateSelector
 
 {% endhighlight %}
 {% endtabs %}
-
-![xamarin forms chat ui](SfChat_images/xamarin-forms-chat.png)

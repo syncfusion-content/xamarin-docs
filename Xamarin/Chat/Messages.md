@@ -13,25 +13,27 @@ documentation: ug
 ## Configuring common settings for the message
 
 <table>
-<td>{{'[Author](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Author.html)'| markdownify }}</td>
+<tr>
+<td>[Author](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Author.html)</td>
 <td>Author is used to specify message avatar and name.</td>
 </tr>
 <tr>
-<td>{{'[DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~DateTime.html)'| markdownify }}</td>
+<td>[DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~DateTime.html)</td>
 <td>To display switch in each row.</td>
 </tr>
 <tr>
-<td>{{'[TimestampFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~TimestampFormat.html)'| markdownify }}</td>
+<td>[TimestampFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~TimestampFormat.html)</td>
 <td>To display switch in each row.</td>
 </tr>
 </table>
 
-##Setting current user for conversation
+## Setting current user for conversation
 
 Based on the Current user incoming and outgoing messages are separated. Current user can be defined by setting the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html) property. It can be done from both XAML and code. The following code example illustrates this:
 
 {% tabs %}
 {% highlight xaml %}
+
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -47,10 +49,12 @@ Based on the Current user incoming and outgoing messages are separated. Current 
         <sfChat:SfChat x:Name="sfChat"
                        CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
-
 </ContentPage>
+
 {% endhighlight %}
+
 {% highlight c# %}
+
 using Syncfusion.XForms.Chat;
 using Xamarin.Forms;
 
@@ -74,53 +78,53 @@ namespace GettingStarted
 /// <summary>
 /// View model class for chat view.
 /// </summary>
-public class GettingStattedViewModel : INotifyPropertyChanged
+pubic class GettingStattedViewModel : INotifyPropertyChanged
+{
+    private ObservableCollection<object> messages;
+
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    public GettingStattedViewModel()
     {
-        private ObservableCollection<object> messages;
+        this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
+    }
 
-        /// <summary>
-        /// current user of chat.
-        /// </summary>
-        private Author currentUser;
-
-        public GettingStattedViewModel()
+    /// <summary>
+    /// Gets or sets the current author.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
         {
-            this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
+            return this.currentUser;
         }
-
-        /// <summary>
-        /// Gets or sets the current author.
-        /// </summary>
-        public Author CurrentUser
+        set
         {
-            get
-            {
-                return this.currentUser;
-            }
-            set
-            {
-                this.currentUser = value;
-                RaisePropertyChanged("CurrentUser");
-            }
-        }
-
-        /// <summary>
-        /// Property changed handler.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// Occurs when property is changed.
-        /// </summary>
-        /// <param name="propName">changed property name</param>
-        public void RaisePropertyChanged(string propName)
-        {
-            if (this.PropertyChanged != null)
-            {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-            }
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
         }
     }
+
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandlerPropertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name<param>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, newPropertyChangedEventArgs(propName));
+        }
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -177,101 +181,97 @@ namespace GettingStarted
 /// View model class for chat view.
 /// </summary>
 public class GettingStattedViewModel : INotifyPropertyChanged
+{
+    private ObservableCollection<object> messages;
+
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    public GettingStattedViewModel()
     {
-        private ObservableCollection<object> messages;
+        this.messages = new ObservableCollection<object>(;
+        this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
+        this.GenerateMessages();
+    }
 
-        /// <summary>
-        /// current user of chat.
-        /// </summary>
-        private Author currentUser;
-
-        public GettingStattedViewModel()
+    /// <summary>
+    /// Gets or sets the current author.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
         {
-            this.messages = new ObservableCollection<object>();
-            this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
-            this.GenerateMessages();
+            return this.currentUser;
         }
-
-        /// <summary>
-        /// Gets or sets the current author.
-        /// </summary>
-        public Author CurrentUser
+        set
         {
-            get
-            {
-                return this.currentUser;
-            }
-            set
-            {
-                this.currentUser = value;
-                RaisePropertyChanged("CurrentUser");
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the group message conversation.
-        /// </summary>
-        public ObservableCollection<object> Messages
-        {
-            get
-            {
-                return this.messages;
-            }
-
-            set
-            {
-                this.messages = value;
-            }
-        }
-
-        /// <summary>
-        /// Property changed handler.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// Occurs when property is changed.
-        /// </summary>
-        /// <param name="propName">changed property name</param>
-        public void RaisePropertyChanged(string propName)
-        {
-            if (this.PropertyChanged != null)
-            {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-            }
-        }
-
-        private void GenerateMessages()
-        {
-            this.messages.Add(new TextMessage()
-            {
-                Author = currentUser,
-                Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
-                ShowAvatar = true,
-            });
-
-            this.messages.Add(new TextMessage()
-            {
-                Author = new Author() { Name = "Andrea", Avatar = "People_Circle2.png" },
-                Text = "Oh! That's great.",
-                ShowAvatar = true,
-            });
-
-            this.messages.Add(new TextMessage()
-            {
-                Author = new Author() { Name = "Harrison", Avatar = "People_Circle14.png" },
-                Text = "That is good news.",
-                ShowAvatar = true,
-            });
-
-            this.messages.Add(new TextMessage()
-            {
-                Author = new Author() { Name = "Margaret", Avatar = "People_Circle7.png" },
-                Text = "What kind of application is it and when are we going to launch?",
-                ShowAvatar = true,
-            });
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
         }
     }
+
+    /// <summary>
+    /// Gets or sets the group message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
+        {
+            return this.messages;
+        }
+        set
+        {
+            this.messages = value;
+        }
+    }
+
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandlerPropertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name<param>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, newPropertyChangedEventArgs(propName));
+        }
+    }
+
+    private void GenerateMessages()
+    {
+        this.messages.Add(new TextMessage()
+        {
+            Author = currentUser,
+            Text = "Hi guys, good morning! I'm verydelighted to share with you the news that ourteam is going to launch a new mobileapplication.",
+            ShowAvatar = true,
+        });
+        this.messages.Add(new TextMessage()
+        {
+            Author = new Author() { Name = "Andrea",Avatar = "People_Circle2.png" },
+            Text = "Oh! That's great.",
+            ShowAvatar = true,
+        });
+        this.messages.Add(new TextMessage()
+        {
+            Author = new Author() { Name = "Harrison",Avatar = "People_Circle14.png" },
+            Text = "That is good news.",
+            ShowAvatar = true,
+        });
+        this.messages.Add(new TextMessage()
+        {
+            Author = new Author() { Name = "Margaret",Avatar = "People_Circle7.png" },
+            Text = "What kind of application is it andwhen are we going to launch?",
+            ShowAvatar = true,
+        });
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -303,6 +303,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
 
 {% endhighlight %}
 {% highlight c# %}
+
 using Syncfusion.XForms.Chat;
 using Xamarin.Forms;
 
@@ -339,88 +340,86 @@ namespace GettingStarted
 /// View model class for chat view.
 /// </summary>
 public class GettingStattedViewModel : INotifyPropertyChanged
+{
+    private ObservableCollection<object> messages;
+
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    public GettingStattedViewModel()
     {
-        private ObservableCollection<object> messages;
+        this.messages = new ObservableCollection<object>(;
+        this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
+        this.GenerateMessages();
+    }
 
-        /// <summary>
-        /// current user of chat.
-        /// </summary>
-        private Author currentUser;
-
-        public GettingStattedViewModel()
+    /// <summary>
+    /// Gets or sets the current author.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
         {
-            this.messages = new ObservableCollection<object>();
-            this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
-            this.GenerateMessages();
+            return this.currentUser;
         }
-
-        /// <summary>
-        /// Gets or sets the current author.
-        /// </summary>
-        public Author CurrentUser
+        set
         {
-            get
-            {
-                return this.currentUser;
-            }
-            set
-            {
-                this.currentUser = value;
-                RaisePropertyChanged("CurrentUser");
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the group message conversation.
-        /// </summary>
-        public ObservableCollection<object> Messages
-        {
-            get
-            {
-                return this.messages;
-            }
-
-            set
-            {
-                this.messages = value;
-            }
-        }
-
-        /// <summary>
-        /// Property changed handler.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// Occurs when property is changed.
-        /// </summary>
-        /// <param name="propName">changed property name</param>
-        public void RaisePropertyChanged(string propName)
-        {
-            if (this.PropertyChanged != null)
-            {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-            }
-        }
-
-        private void GenerateMessages()
-        {
-            this.messages.Add(new TextMessage()
-            {
-                Author = currentUser,
-                Text = "Flight to USA",
-                ShowAvatar = true,
-            });
-
-            this.messages.Add(new DatePickerMessage()
-            {
-                Author = new Author() { Name = "Travel Bot", Avatar = "Aeroplane.png" },
-                Text = "Select departure date",
-                ShowAvatar = true,
-                SelectedDate = DateTime.Now
-            });
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
         }
     }
+
+    /// <summary>
+    /// Gets or sets the group message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
+        {
+            return this.messages;
+        }
+        set
+        {
+            this.messages = value;
+        }
+    }
+
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandlerPropertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name<param>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, newPropertyChangedEventArgs(propName));
+        }
+    }
+
+    private void GenerateMessages()
+    {
+        this.messages.Add(new TextMessage()
+        {
+            Author = currentUser,
+            Text = "Flight to USA",
+            ShowAvatar = true,
+        });
+        this.messages.Add(new DatePickerMessage()
+        {
+            Author = new Author() { Name = "Travel Bot",Avatar = "Aeroplane.png" },
+            Text = "Select departure date",
+            ShowAvatar = true,
+            SelectedDate = DateTime.Now
+        });
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -488,88 +487,87 @@ namespace GettingStarted
 /// View model class for chat view.
 /// </summary>
 public class GettingStattedViewModel : INotifyPropertyChanged
+{
+    private ObservableCollection<object> messages;
+
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    public GettingStattedViewModel()
     {
-        private ObservableCollection<object> messages;
+        this.messages = new ObservableCollection<object>(;
+        this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
+        this.GenerateMessages();
+    }
 
-        /// <summary>
-        /// current user of chat.
-        /// </summary>
-        private Author currentUser;
-
-        public GettingStattedViewModel()
+    /// <summary>
+    /// Gets or sets the current author.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
         {
-            this.messages = new ObservableCollection<object>();
-            this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
-            this.GenerateMessages();
+            return this.currentUser;
         }
-
-        /// <summary>
-        /// Gets or sets the current author.
-        /// </summary>
-        public Author CurrentUser
+        set
         {
-            get
-            {
-                return this.currentUser;
-            }
-            set
-            {
-                this.currentUser = value;
-                RaisePropertyChanged("CurrentUser");
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the group message conversation.
-        /// </summary>
-        public ObservableCollection<object> Messages
-        {
-            get
-            {
-                return this.messages;
-            }
-
-            set
-            {
-                this.messages = value;
-            }
-        }
-
-        /// <summary>
-        /// Property changed handler.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// Occurs when property is changed.
-        /// </summary>
-        /// <param name="propName">changed property name</param>
-        public void RaisePropertyChanged(string propName)
-        {
-            if (this.PropertyChanged != null)
-            {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-            }
-        }
-
-        private void GenerateMessages()
-        {
-            this.messages.Add(new TextMessage()
-            {
-                Author = currentUser,
-                Text = "Flight to USA",
-                ShowAvatar = true,
-            });
-
-            this.messages.Add(new TimePickerMessage()
-            {
-                Author = new Author() { Name = "Health care", Avatar = "Healthcare.png" },
-                Text = "select convient time to meet Dr.Harry for health check up.",
-                ShowAvatar = true,
-                SelectedTime = new TimeSpan(8, 30, 00),
-            });
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
         }
     }
+
+    /// <summary>
+    /// Gets or sets the group message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
+        {
+            return this.messages;
+        }
+        set
+        {
+            this.messages = value;
+        }
+    }
+
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandlerPropertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name<param>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, newPropertyChangedEventArgs(propName));
+        }
+    }
+
+    private void GenerateMessages()
+    {
+        this.messages.Add(new TextMessage()
+        {
+            Author = currentUser,
+            Text = "Flight to USA",
+            ShowAvatar = true,
+        });
+
+        this.messages.Add(new TimePickerMessage()
+        {
+            Author = new Author() { Name = "Health care",Avatar = "Healthcare.png" },
+            Text = "select convient time to meet Dr.Harryfor health check up.",
+            ShowAvatar = true,
+            SelectedTime = new TimeSpan(8, 30, 00),
+        });
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -638,88 +636,87 @@ namespace GettingStarted
 /// View model class for chat view.
 /// </summary>
 public class GettingStattedViewModel : INotifyPropertyChanged
+{
+    private ObservableCollection<object> messages;
+
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    public GettingStattedViewModel()
     {
-        private ObservableCollection<object> messages;
+        this.messages = new ObservableCollection<object>();
+        this.currentUser = new Author() { Name = "Nancy", Avatar ="People_Circle16.png" };
+        this.GenerateMessages();
+    }
 
-        /// <summary>
-        /// current user of chat.
-        /// </summary>
-        private Author currentUser;
-
-        public GettingStattedViewModel()
+    /// <summary>
+    /// Gets or sets the current author.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
         {
-            this.messages = new ObservableCollection<object>();
-            this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
-            this.GenerateMessages();
+            return this.currentUser;
         }
-
-        /// <summary>
-        /// Gets or sets the current author.
-        /// </summary>
-        public Author CurrentUser
+        set
         {
-            get
-            {
-                return this.currentUser;
-            }
-            set
-            {
-                this.currentUser = value;
-                RaisePropertyChanged("CurrentUser");
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the group message conversation.
-        /// </summary>
-        public ObservableCollection<object> Messages
-        {
-            get
-            {
-                return this.messages;
-            }
-
-            set
-            {
-                this.messages = value;
-            }
-        }
-
-        /// <summary>
-        /// Property changed handler.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// Occurs when property is changed.
-        /// </summary>
-        /// <param name="propName">changed property name</param>
-        public void RaisePropertyChanged(string propName)
-        {
-            if (this.PropertyChanged != null)
-            {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-            }
-        }
-
-        private void GenerateMessages()
-        {
-            this.messages.Add(new TextMessage()
-            {
-                Author = currentUser,
-                Text = "Flight to USA",
-                ShowAvatar = true,
-            });
-
-            this.messages.Add(new CalendarMessage()
-            {
-                Author = new Author() { Name = "Health care", Avatar = "Healthcare.png" },
-                Text = "select convient time to meet Dr.Harry for health check up.",
-                ShowAvatar = true,
-                SelectedDate = DateTime.Now,
-            });
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
         }
     }
+
+    /// <summary>
+    /// Gets or sets the group message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
+        {
+            return this.messages;
+        }
+        set
+        {
+            this.messages = value;
+        }
+    }
+
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name</param>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, new PropertyChangedEventArg(propName));
+        }
+    }
+
+    private void GenerateMessages()
+    {
+        this.messages.Add(new TextMessage()
+        {
+            Author = currentUser,
+            Text = "Flight to USA",
+            ShowAvatar = true,
+        });
+
+        this.messages.Add(new CalendarMessage()
+        {
+            Author = new Author() { Name = "Health care", Avatar ="Healthcare.png" },
+            Text = "select convient time to meet Dr.Harry for healthcheck up.",
+            ShowAvatar = true,
+            SelectedDate = DateTime.Now,
+        });
+    }
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -727,7 +724,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
 
 ## Hyperlink message
 
-Hyper link message is used to share URL. link inforamtion is fetched automatically to display image, title and decription. The following code example illustrates this:
+[HyperlinkMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.HyperlinkMessage.html) is used to share URL. link inforamtion is fetched automatically to display image, title and decription. The following code example illustrates this:
 
 {% tabs %}
 {% highlight xaml %}
@@ -779,7 +776,7 @@ namespace GettingStarted
         /// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.</param>
         private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
         {
-            // e.Message.Text is selected date from calendar picker.
+            // e.Message.Text is selected date from calendar view.
         }
     }
 }
@@ -790,16 +787,19 @@ namespace GettingStarted
 public class GettingStattedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
+
     /// <summary>
     /// current user of chat.
     /// </summary>
     private Author currentUser;
+
     public GettingStattedViewModel()
     {
         this.messages = new ObservableCollection<object>();
         this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
         this.GenerateMessages();
     }
+
     /// <summary>
     /// Gets or sets the current author.
     /// </summary>
@@ -815,6 +815,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
             RaisePropertyChanged("CurrentUser");
         }
     }
+
     /// <summary>
     /// Gets or sets the group message conversation.
     /// </summary>
@@ -829,10 +830,12 @@ public class GettingStattedViewModel : INotifyPropertyChanged
             this.messages = value;
         }
     }
+
     /// <summary>
     /// Property changed handler.
     /// </summary>
     public event PropertyChangedEventHandler PropertyChanged;
+
     /// <summary>
     /// Occurs when property is changed.
     /// </summary>
@@ -844,6 +847,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
             this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
         }
     }
+
     private void GenerateMessages()
     {
         this.messages.Add(new TextMessage()
@@ -852,12 +856,14 @@ public class GettingStattedViewModel : INotifyPropertyChanged
             Text = "We should develop this app in Xamarin, since it provides native experience and performance.",
             ShowAvatar = true,
         });
+
         this.messages.Add(new TextMessage()
         {
             Author = currentUser,
             Text = "I haven't heard of Xamarin. What's Xamarin?",
             ShowAvatar = true,
         });
+
         this.Messages.Add(new HyperlinkMessage()
         {
             Author = new Author() { Name = "Michale", Avatar = "People_Circle23.png" },
@@ -884,17 +890,17 @@ Sending message can be canceled using `SendMessage` event and `SendMessageComman
 {% tabs %}
 {% highlight c# %}
  
-        this.sfChat.SendMessage += this.SfChat_SendMessage;
+this.sfChat.SendMessage += this.SfChat_SendMessage;
 
-        /// <summary>
-        /// Raised when current user sends message to bot using Chat UI.
-        /// </summary>
-        /// <param name="sender"><see cref="SfChat"/> as sender.</param>
-        /// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.</param>
-        private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
-        {
-            e.Handled = true;
-        }
+/// <summary>
+/// Raised when current user sends message to bot using Chat UI.
+/// </summary>
+/// <param name="sender"><see cref="SfChat"/> as sender.</param>
+/// <param name="e"><see cref="SendMessageEventArgs"/> asparameter.<param>
+private void SfChat_SendMessage(object sender, SendMessageEventArgse)
+{
+    e.Handled = true;
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -976,10 +982,12 @@ public class GettingStattedViewModel : INotifyPropertyChanged
 public class SendMessageCommandExt : ICommand
 {
     public event EventHandler CanExecuteChanged;
+
     public bool CanExecute(object parameter)
     {
         return true;
     }
+
     public void Execute(object parameter)
     {
         (parameter as SendMessageEventArgs).Handled = true;
@@ -1268,11 +1276,11 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-N> SfChat allows to change visibility of avatar and author name of a particular message using [SfChat.ShowAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~ShowAvatar.html) and [SfChat.ShowAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~ShowAuthorName.html) in the [MessageBase](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase.html).
+N> SfChat allows to change visibility of avatar and author name of a particular message using [MessageBase.ShowAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~ShowAvatar.html) and [MessageBase.ShowAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~ShowAuthorName.html) in the [MessageBase](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase.html).
 
 ## Template for message
 
-Sfchat allows to craete custom template for incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html). 
+Sfchat allows to craete custom template for incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) property. 
 
 To apply `MessageTemplate` in the SfChat, follow the code example:
 

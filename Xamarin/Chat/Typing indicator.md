@@ -12,7 +12,7 @@ documentation: ug
 Indicates the users who are currently typing for an interactive user experience. Typing indicator text and image can be defined by using [SfChat.TypingIndicator](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~TypingIndicator.html) property and Typing indicator visibility is changed by using [SfChat.ShowTypingIndicator](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowTypingIndicator.html) property.
 
 
-To define `TypingIndictor` in chat, follow the code example:
+To define `TypingIndictor` in SfChat, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}

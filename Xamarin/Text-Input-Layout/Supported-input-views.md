@@ -351,3 +351,5 @@ inputLayout.InputView = timePicker;
 {% endhighlight %}
 
 {% endtabs %}
+
+N> [Picker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/),[DatePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker) and [TimePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker) support `SfTextInputLayout` as input view only for Android and iOS.

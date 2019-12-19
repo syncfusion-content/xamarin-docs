@@ -187,7 +187,7 @@ You can download a readily runnable sample that illustrates enabling and using t
 
 ### Customize size
 
-The data grid allows to customize the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) size by using [HeightRequest](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.heightrequest?view=xamarin-forms) and [WidthRequest](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.widthrequest?view=xamarin-forms) property of view. Refer the below code example to customize the `LoadMoreView` Width and Height. 
+The data grid allows to customize the size of the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) by setting the [LoadMoreView.HeightRequest](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.heightrequest?view=xamarin-forms) and [LoadMoreView.WidthRequest](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.widthrequest?view=xamarin-forms) properties. Refer the below code example to customize the width and height of the `LoadMoreView`. 
 
 {% highlight c# %}
 
@@ -202,7 +202,7 @@ The following screenshot shows the customized LoadMoreView size
 
 ### Customize opacity
 
-The data grid also allows to customize the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) opacity by using [Opacity](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.opacity?view=xamarin-forms) property of view. Refer the below code example to customize the `LoadMoreView` opacity.
+The data grid also allows to customize the opacity of the [LoadMoreView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html) by setting the [LoadMoreView.Opacity](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.opacity?view=xamarin-forms) property. Refer the below code example to customize the opcaity of the `LoadMoreView`.
 
 {% highlight c# %}
 

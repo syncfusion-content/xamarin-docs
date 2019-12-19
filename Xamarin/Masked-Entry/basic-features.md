@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Basic features in SfMaskedEdit for Xamarin.Forms platform
-description: Learn how to customize the basic features of SfMaskedEdit
+title: Basic features in Syncfusion SfMaskedEdit control for Xamarin.Forms
+description: Learn how to customize SfMaskedEdit's value, PromptChar, Watermark text, Return key, and Clear button Visibility.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
 
-# Basic Features
+# Basic features
 
-## Setting Value
+## Setting value
 
-The SfMaskedEdit control displays the value that can be set using the `Value` property:
+The SfMaskedEdit control displays the value that can be set using the [`Value`] (https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Value.html) property:
 
 {% tabs %}
 {% highlight xaml %}
@@ -25,12 +25,12 @@ maskedEdit.Value =@"14/11/2014";
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/BF_SetValue.png)
+![Customize the value in Xamarin.Forms masked edit](SfMaskedEditImages/BF_SetValue.png)
 
 
-## Setting Prompt Character
+## Setting prompt character
 
-Displays prompt character for the absence of your input in Mask and its default value is ‘_’. You can set the custom prompt character using `PromptChar` property.
+Displays prompt character for the absence of your input in Mask and its default value is ‘_’. You can set the custom prompt character using [`PromptChar`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~PromptChar.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -43,11 +43,11 @@ maskedEdit.PromptChar = '*';
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/BF_Prompt.png)
+![Prompt character support in Xamarin.Forms masked edit](SfMaskedEditImages/BF_Prompt.png)
 
-## Setting Watermark
+## Setting watermark
 
-The watermark will prompt you with instructions or important information when it is not on focus and any valid characters are not entered. The `Watermark` property of `SfMaskedEdit` is used to set the watermark text for the control.
+The watermark will prompt you with instructions or important information when it is not on focus and any valid characters are not entered. The [`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Watermark.html) property of `SfMaskedEdit` is used to set the watermark text for the control.
 
 The following properties are used to customize its appearance:
 
@@ -71,6 +71,122 @@ maskedEdit.WatermarkFontSize = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/BF_Hint.png)
+![Watermark support in Xamarin.Forms masked edit](SfMaskedEditImages/BF_Hint.png)
+
+## Customize the return key
+
+The appearance of the return key on the soft keyboard, which is displayed when `SfMaskedEdit` has focus, can be customized by setting the [`ReturnType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ReturnType.html) property to a value of the ReturnType enumeration.
+
+* `Default` – indicates that no specific return key is required and that the platform default is used.
+* `Done` – indicates the return key "Done."
+* `Go` – indicates the return key "Go".
+* `Next` – indicates the return key "Next".
+* `Search` – indicates the return key "Search".
+* `Send` – indicates the return key "Send".
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfMaskedEdit x:Name="maskedEdit"  Mask="\w+@\w+\.\w+" MaskType="RegEx"  ReturnType="Search" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+
+maskedEdit.ReturnType = ReturnType.Search;
+
+maskededit.Mask = @"\w+@\w+\.\w+";
+
+maskededit.MaskType = Syncfusion.XForms.MaskedEdit.MaskType.RegEx;
+
+{% endhighlight %}
+{% endtabs %}
+
+![customize return key in Xamarin.Forms masked edit](SfMaskedEditImages/ReturnType.png)
+
+N> The default value of the ReturnType property is Default.
+
+
+## Return command and return command parameter
+
+[`ReturnCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ReturnCommand.html) is triggered by pressing the return key. Additionally, You can pass the parameter through the  [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ReturnCommandParameter.html) property to the ICommand. 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfMaskedEdit x:Name="maskedEdit" ReturnCommand="{Binding UpdateCommand}" ReturnCommandParameter="Parameter" />
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public class ViewModel 
+    {
+        private ICommand commandUpdater;
+        public ICommand UpdateCommand
+        {
+            get
+            {
+                if (commandUpdater == null)
+                    commandUpdater = new Updater();
+                return commandUpdater;
+            }
+            set
+            {
+                commandUpdater = value;
+            }
+        }
+    }
+
+    class Updater : ICommand
+    {
+        public event EventHandler CanExecuteChanged;
+        #region ICommand Members
+        public bool CanExecute(object parameter)
+        {
+            return true;
+        }
+        public void Execute(object parameter)
+        {
+
+        }
+        #endregion
+    }
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+## Clear button visibility
+
+The property of [`ClearButtonVisibility`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ClearButtonVisibility.html) can be used to control whether a `SfMaskedEdit` displays a clear button allowing the user to clear the MaskedText. This property should be set to an enumeration member of [`ClearButtonVisibilityMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Editors.ClearButtonVisibilityMode.html).
+
+* `Never` - indicate control will never display a clear button and that the platform default is used.
+* `WhileEditing` - indicates that the clear button will be displayed in the SfMaskedEdit, while it has focus and text.
+
+N> This feature is supported from Android version 5.0 (API level 21 or higher) and is not supported in the UWP platform as it already has framework level supports.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfMaskedEdit x:Name="maskedEdit"  Mask="\w+@\w+\.\w+" MaskType="RegEx" ClearButtonVisibility="WhileEditing" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+
+maskededit.ClearButtonVisibility = ClearButtonVisibilityMode.WhileEditing;
+
+maskededit.Mask = @"\w+@\w+\.\w+";
+
+maskededit.MaskType = MaskType.RegEx;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Clear button visibility support in Xamarin.Forms masked edit](SfMaskedEditImages/ClearButton.png)
 
 You can find the complete basic features sample from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_BasicFeatures.zip).

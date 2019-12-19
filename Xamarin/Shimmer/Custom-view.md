@@ -9,7 +9,7 @@ documentation: ug
 
 ## Custom view
 
-You can customize the shimmer using your own view using the [`CustomView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~CustomView.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html). The below code demonstrate how to customize the shimmer view using Xamarin.Forms frame work elements by [`CustomView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~CustomView.html).
+You can customize the shimmer using your own view using the [`CustomView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~CustomView.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html). The below code demonstrate how to customize the shimmer view using Xamarin.Forms framework elements by [`CustomView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~CustomView.html).
 
 {% tabs %} 
 

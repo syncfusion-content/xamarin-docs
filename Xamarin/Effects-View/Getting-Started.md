@@ -46,6 +46,10 @@ Location : {Installed location}/{version}/Xamarin/lib
 <td>iOS</td>
 <td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
 </table>
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
@@ -71,6 +75,27 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     LoadApplication(new App());
     return base.FinishedLaunching(app, options);
 } 
+
+{% endhighlight %}
+
+### Universal Windows Platform (UWP)
+
+To deploy the effects view in `Release` mode, initialize the core assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code samples.
+
+{% highlight C# %} 
+
+// In App.xaml.cs 
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{ 
+   … 
+   if (rootFrame == null) 
+   { 
+      List<Assembly> assembliesToInclude = new List<Assembly>();
+      assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.EffectsView.SfEffectsViewRenderer).GetTypeInfo().Assembly);
+      Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+   } 
+   … 
+}
 
 {% endhighlight %}
 

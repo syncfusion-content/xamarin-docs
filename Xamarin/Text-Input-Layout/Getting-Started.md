@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion Text Input Layout
-description: How to initialze a text input layout with floating label.
+description: This section describes how to initialze a Essential Xamarin.Forms TextInputLayout control with floating label.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
@@ -128,7 +128,7 @@ using Syncfusion.XForms.TextInputLayout;
 
 {% endtabs %}
 
-Add any input view control such as [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), [SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview), or [SfMaskedEdit](https://help.syncfusion.com/xamarin/sfmaskededit/overview), and add hint label (floating label).
+Add any input view control such as [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor), [SfNumericTextBox](https://help.syncfusion.com/xamarin/sfnumerictextbox/overview), [SfNumericUpDown](https://help.syncfusion.com/xamarin/numericupdown/overview), [SfMaskedEdit](https://help.syncfusion.com/xamarin/sfmaskededit/overview), [SfAutoComplete](https://help.syncfusion.com/xamarin/autocomplete/overview), [SfComboBox](https://help.syncfusion.com/xamarin/combobox/overview), [`Xamarin.Forms Picker`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/),[DatePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker) or [TimePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker) and add hint label (floating label).
 
 {% tabs %} 
 

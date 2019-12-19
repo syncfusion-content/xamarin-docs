@@ -528,7 +528,7 @@ Using `DataTemplateSelector` you can load specific views based on row data as `S
     {
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-            var value = (item as OrderInfo).IsClosed;
+            var value = (item as OrderInfo).IsOnline;
             if (value)
             {
                 var dataTemplate = new DataTemplate(() =>
@@ -567,7 +567,7 @@ Using `DataTemplateSelector` you can load specific views based on row data as `S
     {
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-            var value = (item as OrderInfo).IsClosed;
+            var value = (item as OrderInfo).IsOnline;
             if (value)
             {
                 var dataTemplate = new DataTemplate(() =>
@@ -604,7 +604,7 @@ Using `DataTemplateSelector` you can load specific views based on row data as `S
 
 {% endhighlight %}
 
-You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DataGrid_TemplateSector-942227262.zip) to load custom swipe buttons based on row data
+You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DataGrid_TemplateSector1402376153.zip) to load custom swipe buttons based on row data
 
 The following screenshot shows the custom swipe buttons loaded based on the cell value of the Is Online switch column.
 

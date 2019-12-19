@@ -207,7 +207,7 @@ The data grid also allows to customize the opacity of the [LoadMoreView](https:/
 
 {% highlight c# %}
 
- dataGrid.LoadMoreView.Opacity = 0.3;
+ dataGrid.LoadMoreView.Opacity = 0.9;
 
 {% endhighlight %}
 

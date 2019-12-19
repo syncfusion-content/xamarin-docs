@@ -519,21 +519,10 @@ Using `DataTemplateSelector` you can load specific views based on row data as `S
 {% highlight c# %}
 
     // Left swipe template selector
-  LeftTemplateSelector leftswipeTemplate = new LeftTemplateSelector();
-  DataTemplate leftdataTemplate = new DataTemplate(() =>
-  {
-        return leftswipeTemplate.SelectTemplate(0, dataGrid);
-  });
-  dataGrid.LeftSwipeTemplate = leftswipeTemplate;
+  dataGrid.LeftSwipeTemplate = new LeftTemplateSelector();
 
      // Right swipe template selector
-   RightTemplateSelector rightswipeTemplate = new RightTemplateSelector();
-   DataTemplate rightdataTemplate = new DataTemplate(() =>
-   {
-        return rightswipeTemplate.SelectTemplate(0, dataGrid);
-   });
-   dataGrid.RightSwipeTemplate = rightswipeTemplate;
-
+  dataGrid.RightSwipeTemplate = new RightTemplateSelector();
 
    public class LeftTemplateSelector : DataTemplateSelector
     {
@@ -615,7 +604,7 @@ Using `DataTemplateSelector` you can load specific views based on row data as `S
 
 {% endhighlight %}
 
-You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DataGrid_TemplateSector240598909.zip) to load custom swipe buttons based on row data
+You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DataGrid_TemplateSector-942227262.zip) to load custom swipe buttons based on row data
 
 The following screenshot shows the custom swipe buttons loaded based on the cell value of the Is Online switch column.
 

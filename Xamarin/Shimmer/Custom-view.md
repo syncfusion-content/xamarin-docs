@@ -77,8 +77,7 @@ You can customize the shimmer using your own view using the [`CustomView`](https
 
                     <BoxView BackgroundColor="Gray"
                              Grid.Row="5"
-                             Grid.RowSpan="8"
-                             CornerRadius="50" />
+                             Grid.RowSpan="8" />
                     
                     <BoxView BackgroundColor="Gray"
                              Grid.Row="5"
@@ -232,7 +231,6 @@ You can customize the shimmer using your own view using the [`CustomView`](https
 
             var boxView5 = new BoxView
             {
-                CornerRadius = 50,
                 BackgroundColor = Color.Gray
             };
 
@@ -437,8 +435,7 @@ You can also customize the shimmer using `ShimmerView` using the [`CustomView`](
                                          WidthRequest="260" />
 
                     <shimmer:ShimmerView Grid.Row="5"
-                                         Grid.RowSpan="8"
-                                         CornerRadius="50" />
+                                         Grid.RowSpan="8" />
 
                     <shimmer:ShimmerView Grid.Row="5"
                                          Grid.Column="1"
@@ -577,10 +574,7 @@ You can also customize the shimmer using `ShimmerView` using the [`CustomView`](
                 HeightRequest = 10,
             };
 
-            var shimmerView5 = new ShimmerView
-            {
-                CornerRadius = 50
-            };
+            var shimmerView5 = new ShimmerView();
 
             var shimmerView6 = new ShimmerView
             {

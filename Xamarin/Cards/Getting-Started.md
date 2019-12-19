@@ -166,9 +166,7 @@ The [`SwipeToDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 {% highlight xaml %}
 
 <cards:SfCardView SwipeToDismiss="true">
-
 	<Label  Text="SfCardView"/>
-
 </cards:SfCardView>
 
 {% endhighlight %}
@@ -185,6 +183,30 @@ this.Content = cardView;
 {% endtabs %}
 
 ![SwipeToDismiss in Xamarin.Forms SfCardView](getting-started_images/cardview.gif)
+
+## Dismiss the card programmatically
+
+We can get a view state of the card using the `IsDismissed` property, which also allows the user to programmatically alter the view state of the card.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<cards:SfCardView IsDismissed="true">
+     <Label  Text="SfCardView"/>
+</cards:SfCardView>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+SfCardView cardView = new SfCardView();
+cardView.IsDismissed = true;
+cardView.Content = new Label() { Text="SfCardView" };
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ### SfCardLayout
 

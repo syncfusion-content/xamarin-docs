@@ -289,7 +289,7 @@ inputLayout.InputView = picker;
 
 {% endtabs %}
 
-N> [Picker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/) support `SfTextInputLayout` as input view only for Android and iOS.
+N> UWP and WPF will not support [`Xamarin.Forms Picker`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/) as input view of the text input layout. 
 
 ## Date picker
 
@@ -325,7 +325,7 @@ inputLayout.InputView = datePicker;
 
 {% endtabs %}
 
-N> [DatePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker) support `SfTextInputLayout` as input view only for Android and iOS.
+N> UWP and WPF will not support [`Xamarin.Forms DatePicker`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker) as input view of the text input layout.
 
 ## Time picker
 
@@ -356,4 +356,4 @@ inputLayout.InputView = timePicker;
 
 {% endtabs %}
 
-N> [TimePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker) support `SfTextInputLayout` as input view only for Android and iOS.
+N> UWP and WPF will not support [`Xamarin.Forms TimePicker`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker as input view of the text input layout.

@@ -21,8 +21,6 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Add Packages](Getting-Started_images/Reference.png)
 
-N> SfEffectsView is supported in Android and iOS.
-
 **Method 2: Adding SfEffectsView reference from toolbox**
 
 Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfEffectsView control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).

@@ -242,7 +242,7 @@ customerID.LoadUIView = true;
 
 ### Padding
 
-SfDataGrid allows the users to set padding for the cells in both display mode and edit mode by using the property [GridColumn.Padding](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Padding.html). 
+SfDataGrid allows the users to set padding for the cells in both display and edit mode by using the property GridColumn.Padding [GridColumn.Padding](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Padding.html). 
 
 {% tabs %}
 {% highlight xaml %}    

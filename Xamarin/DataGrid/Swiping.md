@@ -512,6 +512,106 @@ private void Datagrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-661295078).
 
+## How to load custom swipe buttons based on row data?
+
+Using `DataTemplateSelector` you can load specific views based on row data as `SfDataGrid.RightSwipeTemplate` and `SfDataGrid.LeftSwipeTemplate`. Refer the below code example to load the desired template based on the row data.
+
+{% highlight c# %}
+
+    // Left swipe template selector
+  dataGrid.LeftSwipeTemplate = new LeftTemplateSelector();
+
+     // Right swipe template selector
+  dataGrid.RightSwipeTemplate = new RightTemplateSelector();
+
+   public class LeftTemplateSelector : DataTemplateSelector
+    {
+        protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+        {
+            var value = (item as OrderInfo).IsOnline;
+            if (value)
+            {
+                var dataTemplate = new DataTemplate(() =>
+                {
+                    Button button = new Button()
+                    {
+                        TextColor = Color.Green,
+                        VerticalOptions = LayoutOptions.Center,
+                        HorizontalOptions = LayoutOptions.Center,
+                        Text = "Online"
+                    };
+                    return button;
+                });
+                return dataTemplate;
+            }
+
+            else
+            {
+                var dataTemplate = new DataTemplate(() =>
+                {
+                    Button button = new Button()
+                    {
+                        TextColor = Color.Red,
+                        VerticalOptions = LayoutOptions.Center,
+                        HorizontalOptions = LayoutOptions.Center,
+                        Text = "Offline"
+                    };
+                    return button;
+                });
+                return dataTemplate;
+            }
+        }
+    }
+
+    public class RightTemplateSelector : DataTemplateSelector
+    {
+        protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+        {
+            var value = (item as OrderInfo).IsOnline;
+            if (value)
+            {
+                var dataTemplate = new DataTemplate(() =>
+                {
+                    Button button = new Button()
+                    {
+                        TextColor = Color.Green,
+                        VerticalOptions = LayoutOptions.Center,
+                        HorizontalOptions = LayoutOptions.Center,
+                        Text = "Online"
+                    };
+                    return button;
+                });
+                return dataTemplate;
+            }
+
+            else
+            {
+                var dataTemplate = new DataTemplate(() =>
+                {
+                    Button button = new Button()
+                    {
+                        TextColor = Color.Red,
+                        VerticalOptions = LayoutOptions.Center,
+                        HorizontalOptions = LayoutOptions.Center,
+                        Text = "Offline"
+                    };
+                    return button;
+                });
+                return dataTemplate;
+            }
+        }
+    }
+
+{% endhighlight %}
+
+You can download the sample [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DataGrid_TemplateSector1402376153.zip) to load custom swipe buttons based on row data
+
+The following screenshot shows the custom swipe buttons loaded based on the cell value of the Is Online switch column.
+
+![Custom Swipe button for Online](SfDataGrid_images/Online.png)
+
+![Custom Swipe button for Offline](SfDataGrid_images/Offline.png)
+
 ## Limitations
 
 When data grid is loaded in MasterDetailPage with `AllowSwiping` as true, it behaves as follows: 

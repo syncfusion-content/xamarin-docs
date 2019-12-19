@@ -192,7 +192,8 @@ The data grid allows to customize the [LoadMoreView](https://help.syncfusion.com
 {% highlight c# %}
 
  dataGrid.LoadMoreView.HeightRequest = 105;
- dataGrid.LoadMoreView.WidthRequest = 150;
+ // Below code changes the width of the LoadMoreView
+ // dataGrid.LoadMoreView.WidthRequest = 150;
 
 {% endhighlight %}
 

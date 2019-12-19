@@ -549,7 +549,7 @@ The dataGrid allows to load the desired swipe template by using `DataTemplateSel
                         TextColor = Color.Green,
                         VerticalOptions = LayoutOptions.Center,
                         HorizontalOptions = LayoutOptions.Center,
-                        Text = "IsClosed is true"
+                        Text = "Online"
                     };
                     return button;
                 });
@@ -565,7 +565,7 @@ The dataGrid allows to load the desired swipe template by using `DataTemplateSel
                         TextColor = Color.Red,
                         VerticalOptions = LayoutOptions.Center,
                         HorizontalOptions = LayoutOptions.Center,
-                        Text = "IsClosed is false"
+                        Text = "Offline"
                     };
                     return button;
                 });
@@ -588,7 +588,7 @@ The dataGrid allows to load the desired swipe template by using `DataTemplateSel
                         TextColor = Color.Green,
                         VerticalOptions = LayoutOptions.Center,
                         HorizontalOptions = LayoutOptions.Center,
-                        Text = "IsClosed is true"
+                        Text = "Online"
                     };
                     return button;
                 });
@@ -604,7 +604,7 @@ The dataGrid allows to load the desired swipe template by using `DataTemplateSel
                         TextColor = Color.Red,
                         VerticalOptions = LayoutOptions.Center,
                         HorizontalOptions = LayoutOptions.Center,
-                        Text = "IsClosed is false"
+                        Text = "Offline"
                     };
                     return button;
                 });
@@ -619,9 +619,9 @@ You can download the sample [here](https://www.syncfusion.com/downloads/support/
 
 The following screenshot shows the custom swipe buttons based on row data
 
-![Custom Swipe button for IsClosed value is true](SfDataGrid_images/IsClosedTrue.png)
+![Custom Swipe button for IsClosed value is true](SfDataGrid_images/Online.png)
 
-![Custom Swipe button for IsClosed value is false](SfDataGrid_images/IsClosedFalse.png)
+![Custom Swipe button for IsClosed value is false](SfDataGrid_images/Offline.png)
 
 ## Limitations
 

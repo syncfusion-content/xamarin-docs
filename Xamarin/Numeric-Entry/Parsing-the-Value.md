@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Parsing in Syncfusion NumericTextBox control for Xamarin.Forms
-description: This section describes how to enable the parser mode for the NumericTextBox control.
+description: This section describes how to change the parser mode for the NumericTextBox control. The default Value for the ParserMode is Decimal and it also accepts 'double'.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug

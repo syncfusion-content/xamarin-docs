@@ -97,7 +97,7 @@ xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart
 
 {% endtabs %}
 
-![Legend icons in Xamarin.Forms Chart](legend_images/legend_background.png)
+![Legend icons in Xamarin.Forms Chart](legend_images/legend_background.jpg)
 
 ## Customizing labels
 

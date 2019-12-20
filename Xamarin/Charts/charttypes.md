@@ -50,6 +50,41 @@ chart.Series.Add(lineSeries);
 
 ![Line chart type in Xamarin.Forms](charttypes_images/charttypes_img1.png)
 
+### Dashed Lines
+
+[`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LineSeries~StrokeDashArray.html) property of the [`LineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LineSeries.html) is used to render line series with dashes.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:LineSeries ItemsSource ="{Binding Data}" XBindingPath="Month" YBindingPath="Value">
+    <chart:LineSeries.StrokeDashArray>
+        <x:Array Type="{x:Type x:Double}">
+            <sys:Double>5</sys:Double>
+            <sys:Double>6</sys:Double>
+        </x:Array>
+    </chart:LineSeries.StrokeDashArray>
+</chart:LineSeries>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+LineSeries lineSeries = new LineSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Month",
+    YBindingPath = "Value"
+};
+
+lineSeries.StrokeDashArray = new double[2] { 5, 6 };
+chart.Series.Add(lineSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Fast Line Chart
 
 [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) is a line chart, but it loads faster than [`LineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LineSeries.html). You can use this when there are large number of points to be loaded in chart. To render a fast line chart, create an instance of [`FastLineSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.FastLineSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the fast line segment appearance.

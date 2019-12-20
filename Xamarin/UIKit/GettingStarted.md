@@ -58,6 +58,8 @@ This is the easiest way to add the pre-defined screens to your application. The 
 4.	Select the category and pages you need to add in your application and click Add. In the following screenshot, the Simple Login Page screen has been selected from the Forms category.
     
 	![Visual Studio UIkit Category](UI-Kit-images/MAC_UIKit_Category.png)
+	
+N> If you are getting any type of “not found” or "does not exist" error while building the project, then open the .NET Standard project file in edit mode and search for ItemGroup with the remove command. If you find it, then delete that item group from the project file and rebuild the project again. Reference https://github.com/mhutch/MonoDevelop.AddinMaker/issues/78.	
 
 ## How to render the added page
 

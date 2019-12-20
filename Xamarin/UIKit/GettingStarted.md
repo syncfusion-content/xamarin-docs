@@ -19,6 +19,8 @@ The UI Kit screens can be added in your application by the following two ways:
 
 This is the easiest way to add the pre-defined screens to your application. The following steps explain how to add screens to an application with our extension: 
 
+### Extension for Windows
+
 1. Open Visual Studio.
 
 2. Go to Extension, and then click Manage Extensions as shown in the following screenshot.
@@ -42,6 +44,22 @@ This is the easiest way to add the pre-defined screens to your application. The 
 8. Clicking the 'Add' button will include the selected page to your project. The necessary class files, resources, and NuGet package references will automatically be added to your project as shown in the following screenshot.
 
    ![Visual Studio Ui Kit nuget and files](UI-Kit-images/Kit_Nuget_Files.jpg)
+   
+### Extension for MAC
+
+1.	Download the UI Kit extension file from [here](https://cdn.syncfusion.com/essential-ui-kit-for-xamarin.forms/Syncfusion.Xamarin.Mac.UIKit_1.0.0.0.mpack).
+
+2.	Install the extension file in Visual Studio for MAC by following [this](https://www.syncfusion.com/kb/10877/how-to-install-extension-in-visual-studio-for-mac) article. 
+
+3.	Right-click the Xamarin.Forms [NETStandard] project, and you can see the Essential UI Kit for Xamarin.Forms option.
+
+	![Visual Studio UIkit Category](UI-Kit-images/MAC_Extension.png)
+
+4.	Select the category and pages you need to add in your application and click Add. In the following screenshot, the Simple Login Page screen has been selected from the Forms category.
+    
+	![Visual Studio UIkit Category](UI-Kit-images/MAC_UIKit_Category.png)
+	
+N> If you are getting any type of “not found” or "does not exist" error while building the project, then open the .NET Standard project file in edit mode and search for ItemGroup with the remove command. If you find it, then delete that item group from the project file and rebuild the project again. Reference https://github.com/mhutch/MonoDevelop.AddinMaker/issues/78.	
 
 ## How to render the added page
 

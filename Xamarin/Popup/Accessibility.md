@@ -30,7 +30,7 @@ The below table illustrates the predefined automation values set internally whic
 </tr>
 <tr>
 <td>PopupView content</td>
-<td>"Message"</td>
+<td>"MessageView"</td>
 </tr>
 <tr>
 <td>Accept button</td>
@@ -56,7 +56,11 @@ The following code snippet demonstrates how to set `AutomationId` to the SfPopup
              x:Class="GettingStarted.MainPage" 
              Padding="0,40,0,0"
              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
-<sfPopup:SfPopupLayout x:Name="popupLayout" AutomationId="SyncfusionPopup">
+<sfPopup:SfPopupLayout x:Name="popupLayout"
+<sfPopup:SfPopupLayout.PopupView>
+                    <sfPopup:PopupView AutomationId="SyncfusionPopup" AppearanceMode="TwoButton">
+                    </sfPopup:PopupView>
+                </sfPopup:SfPopupLayout.PopupView>>
    <sfPopup:SfPopupLayout.Content>
      <StackLayout x:Name="mainLayout">
        <Button x:Name="clickToShowPopup" Text="Click To Show Popup" 

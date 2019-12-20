@@ -60,7 +60,7 @@ The following code snippet demonstrates how to set `AutomationId` to the SfPopup
 <sfPopup:SfPopupLayout.PopupView>
                     <sfPopup:PopupView AutomationId="SyncfusionPopup" AppearanceMode="TwoButton">
                     </sfPopup:PopupView>
-                </sfPopup:SfPopupLayout.PopupView>>
+</sfPopup:SfPopupLayout.PopupView>
    <sfPopup:SfPopupLayout.Content>
      <StackLayout x:Name="mainLayout">
        <Button x:Name="clickToShowPopup" Text="Click To Show Popup" 

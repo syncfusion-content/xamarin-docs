@@ -182,8 +182,6 @@ chart.Series.Add(stackingLineSeries4);
 
 {% endtabs %}
 
-
-
 ### Dashed Stacked Lines
 
 `StrokeDashArray` property of the `StackingLineSeries` is used to render stacked line series with dashes.
@@ -225,7 +223,6 @@ stackingLineSeries4.StrokeDashArray = new double[2] { 13, 4 };
 
 {% endhighlight %}
 
-
 ## 100% Stacked Line Chart
 
 To render a 100% stacked line chart, create an instance of `StackingLine100Series` and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the series appearance.
@@ -234,7 +231,6 @@ To render a 100% stacked line chart, create an instance of `StackingLine100Serie
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) – used to change the stroke width of the line.
 * [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Opacity.html) - used to control the transparency of the chart series.
 * `StrokeDashArray` - used to change the dashes of the stacked line series.
-
 
 {% tabs %} 
 
@@ -296,8 +292,6 @@ chart.Series.Add(stackingLine100Series4);
 {% endhighlight %}
 
 {% endtabs %}
-
-
 
 ## Area Chart
 

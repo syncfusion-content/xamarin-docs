@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Input validation in SfMaskedEdit control for Xamarin.Forms platform
+title: Input validation in Syncfusion MaskedEdit control for Xamarin.Forms
 description: Learn how and when to validate the input characters with the given Mask of SfMaskedEdit control.
 platform: Xamarin
 control: SfMaskedEdit

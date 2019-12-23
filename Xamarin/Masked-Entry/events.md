@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Eevnts in SfMaskedEdit for Xamarin.Forms platform
+title: Events in Syncfusion MaskedEdit control for Xamarin.Forms platform
 description: Learn how to get the value changed and Mask input reject events in SfMaskedEdit
 platform: Xamarin
 control: SfMaskedEdit

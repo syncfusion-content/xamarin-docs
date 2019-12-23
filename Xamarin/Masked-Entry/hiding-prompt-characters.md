@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Hiding propmpt characters of SfMaskedEdit control for Xamarin.Forms paltform
+title: Hiding prompt character of Syncfusion MaskedEdit for Xamarin.Forms
 description: Learn how to hide the prompt characters of SfMasedEdit while control loses focus
 platform: Xamarin
 control: SfMaskedEdit

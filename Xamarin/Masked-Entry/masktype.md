@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mask Types of SfMaskedEdit control for Xamarin.Forms platform
+title: Mask Types of Syncfusion MaskedEdit control for Xamarin.Forms
 description: Learn the different types of mask characters available in SfMaskedEdit control to restrict the user input
 platform: Xamarin
 control: SfMaskedEdit

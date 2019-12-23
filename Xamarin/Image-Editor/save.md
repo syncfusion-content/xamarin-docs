@@ -19,6 +19,10 @@ The saved image will be added in default pictures library “C:\Users\your name\
 Android:
 The saved image will be added in default pictures library “Internal storage/Pictures/”.
 
+iOS:
+In iOS device, the saved image will be added in default pictures library
+In iOS simulator, the saved image will be added in (Library\developer\CoreSimulator\Devices) location. 
+
 {% tabs %}
 
 {% highlight C# %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual appearence customization of SfMaskedEdit control for Xamarin.Forms Platform
-description: Learn how to customize the visual appearence of SfMaskedEdit control
+title: Visual customization of Syncfusion MaskedEdit for Xamarin.Forms
+description: Learn how to customize the visual appearence of Syncfusion MaskedEdit control for Xamarin.Forms platform.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
@@ -27,7 +27,7 @@ maskedEdit.BorderColor = Color.Green;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/Visual_BorderColor.png)
+![BorderColor customization in Xamarin.Forms masked edit](SfMaskedEditImages/Visual_BorderColor.png)
 
 ## ErrorBorderColor
 
@@ -48,7 +48,7 @@ maskedEdit.ErrorBorderColor = Color.Yellow;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/Visual_ErrorBorderColor.png)
+![ErrorBorderColor customization in Xamarin.Forms masked edit](SfMaskedEditImages/Visual_ErrorBorderColor.png)
 
  
 ## Setting Appearance of Text
@@ -77,6 +77,4 @@ maskedEdit.FontSize = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/Visual_TextColor.png)
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_VisualCustomize.zip).
+![TextColor customization in Xamarin.Forms masked edit](SfMaskedEditImages/Visual_TextColor.png)

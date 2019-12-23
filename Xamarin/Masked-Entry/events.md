@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Eevnts in SfMaskedEdit for Xamarin.Forms platform
-description: Learn how to get the value changed and Mask input reject events in SfMaskedEdit
+title: Events in Syncfusion MaskedEdit control for Xamarin.Forms platform
+description: Learn how to get the value changed and Mask input reject events in SfMaskedEdit for Xamarin.Forms platform
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
@@ -70,7 +70,7 @@ private void MaskedEdit_OnValueChanged(object sender, Syncfusion.XForms.MaskedEd
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/ValueChangedevent.png)
+![ValueChanged event support in Xamarin.Forms masked edit](SfMaskedEditImages/ValueChangedevent.png)
 
 ## MaskInputRejected event
 
@@ -113,6 +113,4 @@ private void MaskedEdit_OnMaskInputRejected(object sender, MaskInputRejectedEven
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/MaskInputRejectedevent.png)
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_Events.zip).
+![MaskInputRejected event support in Xamarin.Forms masked edit](SfMaskedEditImages/MaskInputRejectedevent.png)

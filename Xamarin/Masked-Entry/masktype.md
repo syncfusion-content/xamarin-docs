@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mask Types of SfMaskedEdit control for Xamarin.Forms platform
+title: Mask Types of Syncfusion MaskedEdit control for Xamarin.Forms
 description: Learn the different types of mask characters available in SfMaskedEdit control to restrict the user input
 platform: Xamarin
 control: SfMaskedEdit
@@ -232,6 +232,4 @@ maskedEdit.Mask = @"+1(\d{3})\d{5}";
 
 This mask expression ’\d{3}’ and’ \d{5}’ allows only numeric, where {n} is the count that the input should be accepted.
 
-![](SfMaskedEditImages/MaskType.png)
-
-You can find the complete mask type sample from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_MaskType.zip).
+![MaskType support in Xamarin.Forms masked edit](SfMaskedEditImages/MaskType.png)

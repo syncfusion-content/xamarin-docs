@@ -137,6 +137,8 @@ cardView.FadeOutOnSwiping = true;
 
 {% endtabs %}
 
+N> This property won't work when adding the SfCardView as a child of SfCardLayout.
+
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/xamarin.forms-cards).
 
 

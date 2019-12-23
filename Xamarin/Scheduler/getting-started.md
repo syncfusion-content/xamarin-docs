@@ -138,7 +138,7 @@ public partial class MainWindow : FormsApplicationPage
 
 * Android
 * iOS
-* Windows (UWp and WPF)
+* Windows (UWP and WPF)
 
 
 ## Create a simple application with SfSchedule  

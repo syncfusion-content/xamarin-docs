@@ -110,7 +110,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 * Android
 * iOS
-* Windows (UWp and WPF)
+* Windows (UWP)
 
 ## Create a Simple SfCalendar
 

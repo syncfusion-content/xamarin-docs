@@ -150,7 +150,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 * Android
 * iOS
-* Windows (UWp and WPF)
+* Windows (UWP)
 
 ## Creating the data form
 

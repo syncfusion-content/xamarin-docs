@@ -122,6 +122,4 @@ private void MaskedEdit4_ValueChanged(object sender, Syncfusion.XForms.MaskedEdi
 
 Refer this [link](events.html#valuechanged-event) to know more about the `ValueChanged` event of SfMaskedEdit control.
 
-![](SfMaskedEditImages/FormattingValue.png)
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_FormattingValue.zip).
+![ValueFormat support in Xamarin.Forms masked edit](SfMaskedEditImages/FormattingValue.png)

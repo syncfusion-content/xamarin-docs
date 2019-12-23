@@ -59,6 +59,4 @@ private void MaskedEdit_ValueChanged(object sender, Syncfusion.XForms.MaskedEdit
 
 Refer this [link](events.html#valuechanged-event) to know more about the `ValueChanged` event of SfMaskedEdit control.
 
-![](SfMaskedEditImages/Validation.png)
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_Validation.zip).
+![ValidationMode support in Xamarin.Forms masked edit](SfMaskedEditImages/Validation.png)

@@ -23,6 +23,4 @@ maskedEdit.HidePromptOnLeave = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/HPL.png)
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_HidingPrompt.zip).
+![HidePromptOnLeave support in Xamarin.Forms masked edit](SfMaskedEditImages/HPL.png)

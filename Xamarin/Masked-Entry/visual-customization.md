@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual customization of Syncfusion MaskedEdit for Xamarin.Forms
-description: Learn how to customize the visual appearence of Syncfusion MaskedEdit control for Xamarin.Forms.
+description: Learn how to customize the visual appearence of Syncfusion MaskedEdit control for Xamarin.Forms platform.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 

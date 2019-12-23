@@ -146,6 +146,12 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+## Supported Platforms
+
+* Android
+* iOS
+* Windows (UWp and WPF)
+
 ## Creating the data form
 
 In this section, you will create Xamarin.Forms application with `SfDataForm`. The control should be configured entirely in C# code.

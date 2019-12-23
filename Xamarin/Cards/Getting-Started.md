@@ -182,6 +182,8 @@ this.Content = cardView;
 
 {% endtabs %}
 
+N> This property won't work when adding the SfCardView as a child of SfCardLayout.
+
 ![SwipeToDismiss in Xamarin.Forms SfCardView](getting-started_images/cardview.gif)
 
 ## Dismiss the card programmatically
@@ -207,6 +209,8 @@ cardView.Content = new Label() { Text="SfCardView" };
 {% endhighlight %}
 
 {% endtabs %}
+
+N> This property won't work when adding the SfCardView as a child of SfCardLayout.
 
 ### SfCardLayout
 

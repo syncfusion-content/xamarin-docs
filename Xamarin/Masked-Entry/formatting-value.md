@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Formatting Value property of Syncfusion MaskedEdit for Xamarin.Forms
-description: Learn how to format the characters in the Value property of SfMaskedEdit control
+description: Learn how to format the characters in the Value property of SfMaskedEdit control for Xamarin.Forms platform
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 

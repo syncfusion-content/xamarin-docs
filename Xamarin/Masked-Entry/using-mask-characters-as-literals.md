@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mask Characters as Literals in Syncfusion MaskedEdit for Xamarin.Forms
-description: Learn how to use mask characters as literals in SfMaskedEdit control for Xamarin.Forms platform
+description: Learn how to use the mask characters as literals in Syncfusion MaskedEdit control for Xamarin.Forms platform
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 

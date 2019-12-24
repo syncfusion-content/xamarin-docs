@@ -134,6 +134,13 @@ public partial class MainWindow : FormsApplicationPage
 {% endhighlight %}
 {% endtabs %}  
 
+## Supported platforms
+
+* Android
+* iOS
+* Windows (UWP and WPF)
+
+
 ## Create a simple application with SfSchedule  
     
 This section explains how to create a simple application using SfSchedule control. SfSchedule control can be configured entirely in C# code or by using XAML markup. This is how the final output will look like on iOS, Android and Windows Phone devices.  

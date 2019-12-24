@@ -21,8 +21,6 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 ![Add Packages](Getting-Started_images/Reference.png)
 
-N> SfShimmer supports for Android and iOS.
-
 **Method 2: Adding SfShimmer reference from toolbox**
 
 Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfShimmer control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
@@ -45,6 +43,10 @@ Location : {Installed location}/{version}/Xamarin/lib
 <tr>
 <td>iOS</td>
 <td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>UWP</td>
+<td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -71,6 +73,27 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     LoadApplication(new App());
     return base.FinishedLaunching(app, options);
 } 
+
+{% endhighlight %}
+
+### Universal Windows Platform (UWP)
+
+To deploy the shimmer in `Release` mode, initialize the core assemblies in the App.xaml.cs file in the UWP project as demonstrated in the following code samples.
+
+{% highlight C# %} 
+
+// In App.xaml.cs 
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{ 
+   … 
+   if (rootFrame == null) 
+   { 
+      List<Assembly> assembliesToInclude = new List<Assembly>();
+      assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Shimmer.SfShimmerRenderer).GetTypeInfo().Assembly);
+      Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+   } 
+   … 
+}
 
 {% endhighlight %}
 

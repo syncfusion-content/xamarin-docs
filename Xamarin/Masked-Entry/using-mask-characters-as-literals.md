@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Using Mask Characters as Literals in SfMaskedEdit control for Xamarin.Forms platform
-description: Learn how to use mask characters as literals in SfMaskedEdit control for Xamarin.Forms platform
+title: Mask Characters as Literals in Syncfusion MaskedEdit for Xamarin.Forms
+description: Learn how to use the mask characters as literals in Syncfusion MaskedEdit control for Xamarin.Forms platform
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
@@ -25,6 +25,4 @@ maskedEdit.Mask = @"\$ 0000";
 
 This will produce a mask that displays a dollar sign ($) followed by the prompt characters for entering numbers.
 
-![](SfMaskedEditImages/MaskAsLiterals.png)
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_UsingMaskCharactersAsLiterals.zip).
+![MaskAsLiterals support in Xamarin.Forms masked edit](SfMaskedEditImages/MaskAsLiterals.png)

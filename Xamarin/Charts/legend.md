@@ -46,8 +46,8 @@ The [`Legend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCh
 * [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~BackgroundColor.html) - used to change legend background color.
 * [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~StrokeColor.html) - used to change legend border color.
 * [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~StrokeWidth.html) - used to change legend border width 
-* [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~StrokeDashArray.html) - used to render legend border line with dashes
-* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~Margin.html) - used to change legend panel margin with legend border
+* [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~StrokeDashArray.html) - used to render legend border line with dashes.
+* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~Margin.html) - used to change legend panel margin with legend border.
 * [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~CornerRadius.html) - used to add the rounded corners to the legend border rectangle. The TopLeft, TopRight, BottomLeft and BottomRight of ChartCornerRadius properties are used to set the radius value for each corner.
 
 {% tabs %} 
@@ -98,7 +98,7 @@ xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart
 
 {% endtabs %}
 
-![Legend icons in Xamarin.Forms Chart](legend_images/legend_background.jpg)
+![Legend background and border customization in Xamarin.Forms Chart](legend_images/legend_background.jpg)
 
 ## Customizing labels
 

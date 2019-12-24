@@ -106,7 +106,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 }
 {% endhighlight %}
 
-## Supported Platforms
+## Supported platforms
 
 * Android
 * iOS

@@ -134,7 +134,7 @@ public partial class MainWindow : FormsApplicationPage
 {% endhighlight %}
 {% endtabs %}  
 
-## Supported Platforms
+## Supported platforms
 
 * Android
 * iOS

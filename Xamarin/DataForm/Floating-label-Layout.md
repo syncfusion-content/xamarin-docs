@@ -120,7 +120,7 @@ dataForm.LayoutOptions = ContainerType.None;
 
 ### Changing container type of the DataFormItem
 
-You can change the container type of the [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) by using the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~ContainerType.html) property in the [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings.html) of `DataFormItem` and it will be handled by the `AutoGeneratingDataFormItem` event.
+You can change the container type of the [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) by using the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.TextInputLayoutSettings~ContainerType.html) property in the [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~TextInputLayoutSettings.html) of `DataFormItem` and it will be handled by the `AutoGeneratingDataFormItem` event.
 
 {% tabs %}
 {% highlight xaml %}  
@@ -153,7 +153,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 ## Leading view
 Floating label layout supports leading view, which shows an icon view to the left of editor.
 
-Unicode or font icons for the labels can be displayed as icons. By setting the [LeadingView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~LeadingView.html) property in `TextInputLayoutSettings` of `DataFormItem`, a label can be added as a leading icon for editor view. By setting the [LeadingViewPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~LeadingViewPosition.html) property, it can be placed either inside or outside the container. It is positioned outside by default. 
+Unicode or font icons for the labels can be displayed as icons. By setting the [LeadingView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.TextInputLayoutSettings~LeadingView.html) property in `TextInputLayoutSettings` of `DataFormItem`, a label can be added as a leading icon for editor view. By setting the [LeadingViewPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.TextInputLayoutSettings~LeadingViewPosition.html) property, it can be placed either inside or outside the container. It is positioned outside by default. 
 
 N> Refer to the following links to learn more about font icons:
 * [How to create font icons using our metro studio and export as ttf?](https://help.syncfusion.com/metro-studio/export-icon-font)
@@ -196,7 +196,7 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
 ## Trailing view
 Floating label layout supports trailing view, which shows an icon view to the right of editor.
 
-Unicode or font icons for the labels can be displayed as icons.By setting the [TrailingView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~TrailingView.html) property in `TextInputLayoutSettings` of `DataFormItem`, a label can be added as a trailing icon for editor view. By setting the [TrailingViewPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~TrailingViewPosition.html) property, it can be placed either inside or outside the container. It is positioned outside by default. 
+Unicode or font icons for the labels can be displayed as icons.By setting the [TrailingView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.TextInputLayoutSettings~TrailingView.html) property in `TextInputLayoutSettings` of `DataFormItem`, a label can be added as a trailing icon for editor view. By setting the [TrailingViewPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.TextInputLayoutSettings~TrailingViewPosition.html) property, it can be placed either inside or outside the container. It is positioned outside by default. 
 
 N> Refer to the following links to learn more about font icons:
 * [How to create font icons using our metro studio and export as ttf?](https://help.syncfusion.com/metro-studio/export-icon-font)
@@ -263,7 +263,7 @@ Assistive labels comprise of floating label or hint label, helper label, counter
 
 ### Reserve space for assistive labels
 
-The reserved spaces for assistive labels can be removed by setting the [ReserveSpaceForAssistiveLabels](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~ReserveSpaceForAssistiveLabels.html) property to false or it can be set to false automatically if there is no prompt value or water mark provider for `DataformItem` and/or no counter label added.
+The reserved spaces for assistive labels can be removed by setting the [ReserveSpaceForAssistiveLabels](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.TextInputLayoutSettings~ReserveSpaceForAssistiveLabels.html) property to false or it can be set to false automatically if there is no prompt value or water mark provider for `DataformItem` and/or no counter label added.
 
 {% tabs %}
 {% highlight xaml %}  
@@ -296,7 +296,7 @@ The data field caption will be displayed as floating or hint label for the edito
 
 The helper label is used to display the water mark for the editor to provide hint for users and it can be set using [Prompt](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#setting-watermark).
 
-The visibility of helper text in DataForm floating label layout can be collapsed by setting [ShowHelperText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ShowHelperText.html) to false in `DataForm` or [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings.html). In this case, DataForm `Prompt` text will be displayed as editor view hint text if the hint label visibility is collapsed using the `ShowLabel` property of [DisplayOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute.html) or `DataFormItem`.
+The visibility of helper text in DataForm floating label layout can be collapsed by setting [ShowHelperText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ShowHelperText.html) to false in `DataForm` or [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.TextInputLayoutSettings.html). In this case, DataForm `Prompt` text will be displayed as editor view hint text if the hint label visibility is collapsed using the `ShowLabel` property of [DisplayOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute.html) or `DataFormItem`.
 
 {% tabs %}
 {% highlight xaml %}       
@@ -309,7 +309,7 @@ dataForm.ShowHelperText = false;
 {% endtabs %}
 
 ### Changing helper text visibility of DataFormItem
-You can remove the helper label of [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) by setting the [ShowHelperText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~ShowHelperText.html) property to false in [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings.html), and it will be handled using the `AutoGeneratingDataFormItem` event.
+You can remove the helper label of [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) by setting the [ShowHelperText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.TextInputLayoutSettings~ShowHelperText.html) property to false in [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.TextInputLayoutSettings.html), and it will be handled using the `AutoGeneratingDataFormItem` event.
 
 {% tabs %}
 {% highlight xaml %}  
@@ -384,7 +384,7 @@ public string Password
 The assistive labels and border color can be customized based on the editor view states and data validation.
 
 ### Changing outline corner radius
-When setting the [OutlineCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~OutlineCornerRadius.html) property to double value, the corner radius of the container will be changed.
+When setting the [OutlineCornerRadius](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.TextInputLayoutSettings~OutlineCornerRadius.html) property to double value, the corner radius of the container will be changed.
 
 {% tabs %}
 {% highlight xaml %}  
@@ -514,7 +514,7 @@ private void DataForm_AutoGeneratingDataFormItem1(object sender, AutoGeneratingD
 ![Arranging data form field in floating label layout with customized validation message color in Xamarin.Forms DataForm](SfDataForm_images/ValidationMessage_Color.png)
 
 ## Customize the background color of editor view
-The floating label layout editor view background color can be customized by setting the [ContainerBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerBackgroundColor.html) property of `DataForm` or [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings.html). It is applicable when the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerType.html) is set to `Filled` or `Outlined`.
+The floating label layout editor view background color can be customized by setting the [ContainerBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerBackgroundColor.html) property of `DataForm` or [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.TextInputLayoutSettings.html). It is applicable when the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ContainerType.html) is set to `Filled` or `Outlined`.
 
 {% tabs %}
 {% highlight xaml %}       
@@ -527,7 +527,7 @@ dataForm.ContainerBackgroundColor = Color.Silver;
 {% endtabs %}
 
 ### Customize the editor view background color of DataFormItem
-You can change the editor view background color of [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) using the [ContainerBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings~ContainerBackgroundColor.html) property in [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.SfDataForm.XForms.TextInputLayoutSettings.html), and it will be handled using the `AutoGeneratingDataFormItem` event.
+You can change the editor view background color of [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) using the [ContainerBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.TextInputLayoutSettings~ContainerBackgroundColor.html) property in [TextInputLayoutSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.TextInputLayoutSettings.html), and it will be handled using the `AutoGeneratingDataFormItem` event.
 
 {% tabs %}
 {% highlight xaml %}  

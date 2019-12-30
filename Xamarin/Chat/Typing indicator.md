@@ -176,12 +176,12 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endtabs %}
 
 
-## Customize type of avatar view
+## Customize avatar view of typing indicator
 
-Typing indicator avatar view type can be customized by using [ChatTypingIndicator.AvatarViewType](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatTypingIndicator~AvatarViewType.html) property.
+The avatar view in the typing indicator can be customized to show only starting alphabet of the user name or only image of the user as avatar by using [ChatTypingIndicator.AvatarViewType](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatTypingIndicator~AvatarViewType.html) property.
 
 
-To define `AvatarViewType` in typing indicator, follow the code example:
+To change the `AvatarViewType` in typing indicator, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -254,7 +254,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
         this.Messages = new ObservableCollection<object>();
         this.TypingIndicator = new ChatTypingIndicator();
         this.TypingIndicator = new ChatTypingIndicator();
-        this.TypingIndicator.Authors.Add(new Author() {  = "Harrison", Avatar = "People_Circle14.png" }        
+        this.TypingIndicator.Authors.Add(new Author() { Name = "Harrison", Avatar = "People_Circle14.png" }        
         **this.TypingIndicator.AvatarViewType = AvatarViewType.Text;**
         
         this.TypingIndicator.Text = "Harrison is typing";

@@ -58,7 +58,7 @@ namespace GettingStarted
     }
 
 
-public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStartedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
 
@@ -77,7 +77,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     /// </summary>
     private ObservableCollection<ISuggestion> suggestions;
 
-    public GettingStattedViewModel()
+    public GettingStartedViewModel()
     {
         this.messages = new ObservableCollection<object>();
         this.currentUser = new Author() { Name = "Nancy", Avatar = ple_Circle16.png" };
@@ -215,7 +215,7 @@ namespace GettingStarted
     }
 }
 
-public class GettingStattedViewModel :INotifyPropertyChanged
+public class GettingStartedViewModel :INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
 
@@ -234,7 +234,7 @@ public class GettingStattedViewModel :INotifyPropertyChanged
     /// </summary>
     private ObservableCollection<ISuggestion> suggestions;
 
-    public GettingStattedViewModel()
+    public GettingStartedViewModel()
     {
         this.messages = new ObservableCollection<object>();
         this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
@@ -373,7 +373,7 @@ namespace GettingStarted
     }
 }
 
-public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStartedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
     /// <summary>
@@ -391,7 +391,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     /// </summary>
     private ObservableCollection<ISuggestion> suggestions;
 
-    public GettingStattedViewModel()
+    public GettingStartedViewModel()
     {
         this.messages = new ObservableCollection<object>();
         this.currentUser = new Author() { Name = "Nancy", Avatar ="People_Circle16.png" };
@@ -542,7 +542,7 @@ namespace GettingStarted
     }
 }
 
-public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStartedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
     
@@ -551,7 +551,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     /// </summary>
     private Author currentUser;
 
-    public GettingStattedViewModel()
+    public GettingStartedViewModel()
     {
         this.messages = new ObservableCollection<object>();
         this.currentUser = new Author() { Name = "Nancy", Avatar = ple_Circle16.png" };
@@ -611,7 +611,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
 
 ## Cancel the suggestions from closing
 
-The list of suggestions will be closed by default after the current user has selected the option. suggestion list closing can be cacelled using `SfChat.SuggestionItemSelected` event or `SfChat.SuggestionItemSelectedCommand` command.
+The list of suggestions will be closed by default after the current user has selected the option. suggestion list closing can be cancelled using `SfChat.SuggestionItemSelected` event or `SfChat.SuggestionItemSelectedCommand` command.
 
 #### SuggestionItemSelected event
 
@@ -663,7 +663,7 @@ private void SfChat_SuggestionItemSelected(object sender, SuggestionItemSelected
 /// <summary>
 /// View model class for chat view.
 /// </summary>
-public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStartedViewModel : INotifyPropertyChanged
 {
     /// <summary>
     /// current user of chat.
@@ -672,7 +672,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     
     private ICommand suggestionItemSelectedCommand;
 
-    public GettingStattedViewModel()
+    public GettingStartedViewModel()
     {
         SuggestionItemSelectedCommand = new SuggestionItemSelectedCommandExt();
     }

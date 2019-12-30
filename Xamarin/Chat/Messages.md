@@ -18,7 +18,7 @@ documentation: ug
 </tr>
 <tr>
 <td>[DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~DateTime.html)</td>
-<td>To display message created or recieved time.</td>
+<td>To display message created or received time.</td>
 </tr>
 <tr>
 <td>[TimestampFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~TimestampFormat.html)</td>
@@ -77,7 +77,7 @@ namespace GettingStarted
 /// <summary>
 /// View model class for chat view.
 /// </summary>
-pubic class GettingStattedViewModel : INotifyPropertyChanged
+pubic class GettingStartedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
 
@@ -86,7 +86,7 @@ pubic class GettingStattedViewModel : INotifyPropertyChanged
     /// </summary>
     private Author currentUser;
 
-    public GettingStattedViewModel()
+    public GettingStartedViewModel()
     {
         this.messages = new ObservableCollection<object>();
         this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
@@ -206,7 +206,7 @@ namespace GettingStarted
 /// <summary>
 /// View model class for chat view.
 /// </summary>
-public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStartedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
 
@@ -215,7 +215,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     /// </summary>
     private Author currentUser;
 
-    public GettingStattedViewModel()
+    public GettingStartedViewModel()
     {
         this.messages = new ObservableCollection<object>(;
         this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
@@ -304,7 +304,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
 
 ## Date picker message
 
-[DatePcikerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.DatePickerMessage.html) is used to select date and selected date will be added as a text message. [SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event and [SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) will be raised after selecting date from date pciker.
+[DatePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.DatePickerMessage.html) is used to select date and selected date will be added as a text message. [SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event and [SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) will be raised after selecting date from date picker.
 
 {% tabs %}
 {% highlight xaml %}
@@ -365,7 +365,7 @@ namespace GettingStarted
 /// <summary>
 /// View model class for chat view.
 /// </summary>
-public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStartedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
 
@@ -374,7 +374,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     /// </summary>
     private Author currentUser;
 
-    public GettingStattedViewModel()
+    public GettingStartedViewModel()
     {
         this.messages = new ObservableCollection<object>(;
         this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
@@ -452,7 +452,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
 
 ##Time picker message
 
-[TimePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.TimePickerMessage.html) is used to select time interval and selected time span will be added as a text message. `SendMessage` event and `SendMessageCommand` will be raised after selecting date from date pciker.
+[TimePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.TimePickerMessage.html) is used to select time interval and selected time span will be added as a text message. `SendMessage` event and `SendMessageCommand` will be raised after selecting date from date picker.
 
 {% tabs %}
 {% highlight xaml %}
@@ -512,7 +512,7 @@ namespace GettingStarted
 /// <summary>
 /// View model class for chat view.
 /// </summary>
-public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStartedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
 
@@ -521,7 +521,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     /// </summary>
     private Author currentUser;
 
-    public GettingStattedViewModel()
+    public GettingStartedViewModel()
     {
         this.messages = new ObservableCollection<object>(;
         this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
@@ -601,7 +601,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
 
 ## Calendar picker message
 
-[CalendarMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CalendarMessage.html) is used to select date and selected date will be added as a text message. `SendMessage` event and `SendMessageCommand` will be raised after selecting date from date pciker.
+[CalendarMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CalendarMessage.html) is used to select date and selected date will be added as a text message. `SendMessage` event and `SendMessageCommand` will be raised after selecting date from date picker.
 
 {% tabs %}
 {% highlight xaml %}
@@ -661,7 +661,7 @@ namespace GettingStarted
 /// <summary>
 /// View model class for chat view.
 /// </summary>
-public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStartedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
 
@@ -670,7 +670,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     /// </summary>
     private Author currentUser;
 
-    public GettingStattedViewModel()
+    public GettingStaRtedViewModel()
     {
         this.messages = new ObservableCollection<object>();
         this.currentUser = new Author() { Name = "Nancy", Avatar ="People_Circle16.png" };
@@ -750,7 +750,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
 
 ## Hyperlink message
 
-[HyperlinkMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.HyperlinkMessage.html) is used to share URL. link inforamtion is fetched automatically to display image, title and decription. The following code example illustrates this:
+[HyperlinkMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.HyperlinkMessage.html) is used to share URL. link information is fetched automatically to display image, title and description. The following code example illustrates this:
 
 {% tabs %}
 {% highlight xaml %}
@@ -798,7 +798,7 @@ namespace GettingStarted
 /// <summary>
 /// View model class for chat view.
 /// </summary>
-public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStaRtedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
 
@@ -807,7 +807,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     /// </summary>
     private Author currentUser;
 
-    public GettingStattedViewModel()
+    public GettingStaRtedViewModel()
     {
         this.messages = new ObservableCollection<object>();
         this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
@@ -893,7 +893,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
 
 ## Sending message
 
-Send button will be enabled only if the editor has string charachter which is placed in message inuput area. after tapping send button or presssing enter key in UWP. textmessage will be created with text in the editor. `SendMessage` event and `SendMessageCommand`will be raised before adding textmessage to `SfChat.Messages` collection.
+Send button will be enabled only if the editor has string character which is placed in message input area. after tapping send button or pressing enter key in UWP. text message will be created with text in the editor. `SendMessage` event and `SendMessageCommand`will be raised before adding text message to `SfChat.Messages` collection.
 
 ### Cancel the message from sending
 
@@ -947,7 +947,7 @@ private void SfChat_SendMessage(object sender, SendMessageEventArgse)
 /// <summary>
 /// View model class for chat view.
 /// </summary>
-public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStartedViewModel : INotifyPropertyChanged
 {
     private ICommand sendMessageCommand;
 
@@ -956,7 +956,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     /// </summary>
     private Author currentUser;
     
-    public GettingStattedViewModel()
+    public GettingStartedViewModel()
     {
         SendMessageCommand = new SendMessageCommandExt();
     }
@@ -1065,7 +1065,7 @@ private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
 /// <summary>
 /// View model class for chat view.
 /// </summary>
-public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStaRtedViewModel : INotifyPropertyChanged
 {
     private ICommand sendMessageCommand;
 
@@ -1074,7 +1074,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     /// </summary>
     private Author currentUser;
     
-    public GettingStattedViewModel()
+    public GettingStaRtedViewModel()
     {
         SendMessageCommand = new SendMessageCommandExt();
     }
@@ -1337,7 +1337,7 @@ public class MyDataTemplateSelector : Xamarin.Forms.DataTemplateSelector
 
     public MyDataTemplateSelector()
     {
-        this.incomingDataTemplate = new DataTemplate(typeof(IncomingTempalte);
+        this.incomingDataTemplate = new DataTemplate(typeof(IncomingTemplate);
         this.outgoingDataTemplate = new DataTemplate(typeof(OutgoingTemplate);
     }
     

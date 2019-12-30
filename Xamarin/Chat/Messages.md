@@ -225,7 +225,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the current author.
+    /// Gets or sets the current user.
     /// </summary>
     public Author CurrentUser
     {
@@ -384,7 +384,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the current author.
+    /// Gets or sets the current user.
     /// </summary>
     public Author CurrentUser
     {
@@ -531,7 +531,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the current author.
+    /// Gets or sets the current user.
     /// </summary>
     public Author CurrentUser
     {
@@ -680,7 +680,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the current author.
+    /// Gets or sets the current user.
     /// </summary>
     public Author CurrentUser
     {
@@ -817,7 +817,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the current author.
+    /// Gets or sets the current user.
     /// </summary>
     public Author CurrentUser
     {

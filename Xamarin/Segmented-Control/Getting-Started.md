@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion segmented control for Xamarin.Forms 
-description: A quick tour to initial users on Syncfusion segmented control for Xamarin.Forms platform.
+description: A quick tour for the initial users of Xamarin.Forms SegmentedControl to find a way to create and populate a data source. 
 platform: Xamarin
 control: SfSegmentedControl
 documentation: ug
@@ -118,7 +118,7 @@ The above problem can be resolved by initializing the SfSegmentedControl assembl
         List<Assembly> assembliesToInclude = new List<Assembly>();
     
         //Now, add all the assemblies your app uses                 
-        assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfSegmentedControlRenderer()).GetTypeInfo().Assembly);
+        assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.Buttons.SfSegmentedControlRenderer).GetTypeInfo().Assembly);
     
         // replaces Xamarin.Forms.Forms.Init(e);        
         Xamarin.Forms.Forms.Init(e, assembliesToInclude);	

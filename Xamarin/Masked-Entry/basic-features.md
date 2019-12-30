@@ -188,5 +188,3 @@ maskededit.MaskType = MaskType.RegEx;
 {% endtabs %}
 
 ![Clear button visibility support in Xamarin.Forms masked edit](SfMaskedEditImages/ClearButton.png)
-
-You can find the complete basic features sample from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_BasicFeatures.zip).

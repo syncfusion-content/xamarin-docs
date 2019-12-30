@@ -356,4 +356,4 @@ inputLayout.InputView = timePicker;
 
 {% endtabs %}
 
-N> UWP and WPF will not support [`Xamarin.Forms TimePicker`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker as input view of the text input layout.
+N> UWP and WPF will not support [`Xamarin.Forms TimePicker`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker) as input view of the text input layout.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | SfChat | Xamarin | Syncfusion
-description: Describes about the typing indicator feature and its functionalities in forms chat.
+description: Describes about the typing indicator feature and its customizations in Xamarin.Forms chat.
 platform: xamarin
 control: SfChat
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Typing indicator
 
-Indicates the users who are currently typing for an interactive user experience. Typing indicator text and image can be defined by using [SfChat.TypingIndicator](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~TypingIndicator.html) property and Typing indicator visibility is changed by using [SfChat.ShowTypingIndicator](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowTypingIndicator.html) property.
+Indicates with an animation, that a user(or users) is currently typing, thereby providing an enhanced user experience. To show/hide the typing indicator set the [SfChat.ShowTypingIndicator](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowTypingIndicator.html) property to `true` or `false` respectively. To show user image and text in the typing indicator create a new instance of `SfChat.TypingIndicator`, set the [TypingIndicator.Authors](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~TypingIndicator.html) and [TypingIndicator.Text]() property and assign the typing indicator instance to the [SfChat.TypingIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~TypingIndicator.html) property.
 
 
 To define `TypingIndicator` in SfChat, follow the code example:
@@ -61,7 +61,7 @@ namespace GettingStarted
     }
 }
 
-public class GettingStattedViewModel : ifyPropertyChanged
+public class GettingStartedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
 
@@ -80,15 +80,15 @@ public class GettingStattedViewModel : ifyPropertyChanged
     /// </summary>
     private ChatTypingIndicator typingIndicator;
 
-    public GettingStattedViewModel()
+    public GettingStartedViewModel()
     {
-        this.messages = new ObservableCollection<object>();
+        this.Messages = new ObservableCollection<object>();
         this.TypingIndicator = new ChatTypingIndicator();
-        this.TypingIndicator = new ChatTypingIndicator();
-        this.TypingIndicator.Authors.Add(new Author() {  = "Harrison", Avatar = "People_Circle14.png" }        this.TypingIndicator.AvatarViewType = arViewType.Image;
+        this.TypingIndicator.Authors.Add(new Author() { Name = "Harrison", Avatar = "People_Circle14.png" }        
+        this.TypingIndicator.AvatarViewType = AvatarViewType.Image;
         this.TypingIndicator.Text = "Harrison is typing";
         this.ShowTypingIndicator = true;
-        this.currentUser = new Author() { Name = "Nancy", ar = "People_Circle16.png" };
+        this.CurrentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
     }
 
     /// <summary>

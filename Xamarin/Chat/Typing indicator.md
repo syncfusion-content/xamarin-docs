@@ -123,7 +123,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the value indicating whether the ng indicator is visible or not.
+    /// Gets or sets the value indicating whether the typing indicator is visible or not.
     /// </summary>
     public bool ShowTypingIndicator
     {
@@ -139,7 +139,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the current author.
+    /// Gets or sets the current user.
     /// </summary>
     public Author CurrentUser
     {
@@ -157,7 +157,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     /// <summary>
     /// Property changed handler.
     /// </summary>
-    public event PropertyChangedEventHandler ertyChanged;
+    public event PropertyChangedEventHandler PropertyChanged;
 
     /// <summary>
     /// Occurs when property is changed.
@@ -230,7 +230,7 @@ namespace GettingStarted
     }
 }
 
-public class GettingStattedViewModel : ifyPropertyChanged
+public class GettingStattedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
 
@@ -251,15 +251,15 @@ public class GettingStattedViewModel : ifyPropertyChanged
     
     public GettingStattedViewModel()
     {
-        this.messages = new ObservableCollection<object>();
+        this.Messages = new ObservableCollection<object>();
         this.TypingIndicator = new ChatTypingIndicator();
         this.TypingIndicator = new ChatTypingIndicator();
         this.TypingIndicator.Authors.Add(new Author() {  = "Harrison", Avatar = "People_Circle14.png" }        
-        **this.TypingIndicator.AvatarViewType = arViewType.Text;**
+        **this.TypingIndicator.AvatarViewType = AvatarViewType.Text;**
         
         this.TypingIndicator.Text = "Harrison is typing";
         this.ShowTypingIndicator = true;
-        this.currentUser = new Author() { Name = "Nancy", ar = "People_Circle16.png" };
+        this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
     }
 
     /// <summary>
@@ -294,7 +294,7 @@ public class GettingStattedViewModel : ifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the value indicating whether the ng indicator is visible or not.
+    /// Gets or sets the value indicating whether the typing indicator is visible or not.
     /// </summary>
     public bool ShowTypingIndicator
     {
@@ -310,7 +310,7 @@ public class GettingStattedViewModel : ifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the current author.
+    /// Gets or sets the current user.
     /// </summary>
     public Author CurrentUser
     {
@@ -328,7 +328,7 @@ public class GettingStattedViewModel : ifyPropertyChanged
     /// <summary>
     /// Property changed handler.
     /// </summary>
-    public event PropertyChangedEventHandler ertyChanged;
+    public event PropertyChangedEventHandler PropertyChanged;
 
     /// <summary>
     /// Occurs when property is changed.

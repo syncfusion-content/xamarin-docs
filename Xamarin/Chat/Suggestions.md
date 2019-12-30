@@ -611,7 +611,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Cancel the suggestions from closing
 
-The list of suggestions will be closed by default after the current user has selected the option. suggestion list closing can be cancelled using `SfChat.SuggestionItemSelected` event or `SfChat.SuggestionItemSelectedCommand` command.
+The list of suggestions will be closed by default after the current user has selected the option. suggestion list closing can be handled using `SfChat.SuggestionItemSelected` event or `SfChat.SuggestionItemSelectedCommand` command.
 
 #### SuggestionItemSelected event
 

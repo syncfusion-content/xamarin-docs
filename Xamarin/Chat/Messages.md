@@ -46,6 +46,7 @@ Based on the Current user incoming and outgoing messages are separated. Current 
     
     <ContentPage.Content>
         <sfChat:SfChat x:Name="sfChat"
+                       Messages="{Binding Messages}"
                        CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
 </ContentPage>
@@ -66,8 +67,9 @@ namespace GettingStarted
         public MainPage()
         {
             InitializeComponent();
-            sfChat = new SfChat();
-            viewModel = new GettingStartedViewModel();
+            this.sfChat = new SfChat();
+            this.viewModel = new GettingStartedViewModel();
+            this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
             this.Content = sfChat;
         }

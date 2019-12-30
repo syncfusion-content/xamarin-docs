@@ -670,7 +670,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     /// </summary>
     private Author currentUser;
 
-    public GettingStaRtedViewModel()
+    public GettingStartedViewModel()
     {
         this.messages = new ObservableCollection<object>();
         this.currentUser = new Author() { Name = "Nancy", Avatar ="People_Circle16.png" };
@@ -798,7 +798,7 @@ namespace GettingStarted
 /// <summary>
 /// View model class for chat view.
 /// </summary>
-public class GettingStaRtedViewModel : INotifyPropertyChanged
+public class GettingStartedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
 
@@ -807,7 +807,7 @@ public class GettingStaRtedViewModel : INotifyPropertyChanged
     /// </summary>
     private Author currentUser;
 
-    public GettingStaRtedViewModel()
+    public GettingStartedViewModel()
     {
         this.messages = new ObservableCollection<object>();
         this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
@@ -1065,7 +1065,7 @@ private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
 /// <summary>
 /// View model class for chat view.
 /// </summary>
-public class GettingStaRtedViewModel : INotifyPropertyChanged
+public class GettingStartedViewModel : INotifyPropertyChanged
 {
     private ICommand sendMessageCommand;
 
@@ -1074,7 +1074,7 @@ public class GettingStaRtedViewModel : INotifyPropertyChanged
     /// </summary>
     private Author currentUser;
     
-    public GettingStaRtedViewModel()
+    public GettingStartedViewModel()
     {
         SendMessageCommand = new SendMessageCommandExt();
     }

@@ -7,7 +7,6 @@ control: SfChat
 documentation: ug
 ---
 
-
 # Messages
 
 ## Configuring common settings for the message
@@ -15,15 +14,15 @@ documentation: ug
 <table>
 <tr>
 <td>[Author](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Author.html)</td>
-<td>Author is used to specify message avatar and name.</td>
+<td>To specify message avatar and name.</td>
 </tr>
 <tr>
 <td>[DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~DateTime.html)</td>
-<td>To display switch in each row.</td>
+<td>To display message created or recieved time.</td>
 </tr>
 <tr>
 <td>[TimestampFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~TimestampFormat.html)</td>
-<td>To display switch in each row.</td>
+<td>To format message display time.</td>
 </tr>
 </table>
 
@@ -89,11 +88,13 @@ pubic class GettingStattedViewModel : INotifyPropertyChanged
 
     public GettingStattedViewModel()
     {
+        this.messages = new ObservableCollection<object>();
         this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
+        this.GenerateMessages();
     }
 
     /// <summary>
-    /// Gets or sets the current author.
+    /// Gets or sets the current user.
     /// </summary>
     public Author CurrentUser
     {
@@ -109,6 +110,21 @@ pubic class GettingStattedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
+    /// Gets or sets the message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
+        {
+            return this.messages;
+        }
+        set
+        {
+            this.messages = value;
+        }
+    }
+        
+    /// <summary>
     /// Property changed handler.
     /// </summary>
     public event PropertyChangedEventHandlerPropertyChanged;
@@ -123,6 +139,16 @@ pubic class GettingStattedViewModel : INotifyPropertyChanged
         {
             this.PropertyChanged(this, newPropertyChangedEventArgs(propName));
         }
+    }
+
+    private void GenerateMessages()
+    {
+        this.messages.Add(new TextMessage()
+        {
+            Author = currentUser,
+            Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a newmobile application.",
+            ShowAvatar = true,
+        });
     }
 }
 
@@ -213,7 +239,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the group message conversation.
+    /// Gets or sets the message conversation.
     /// </summary>
     public ObservableCollection<object> Messages
     {
@@ -372,7 +398,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the group message conversation.
+    /// Gets or sets the message conversation.
     /// </summary>
     public ObservableCollection<object> Messages
     {
@@ -519,7 +545,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the group message conversation.
+    /// Gets or sets the message conversation.
     /// </summary>
     public ObservableCollection<object> Messages
     {
@@ -668,7 +694,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the group message conversation.
+    /// Gets or sets the message conversation.
     /// </summary>
     public ObservableCollection<object> Messages
     {
@@ -742,7 +768,6 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     <ContentPage.Content>
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
-                       SendMessage="SfChat_SendMessage"
                        CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
 </ContentPage>
@@ -765,18 +790,7 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
-            this.sfChat.SendMessage += this.SfChat_SendMessage;
             this.Content = sfChat;
-        }
-
-        /// <summary>
-        /// Raised when current user sends message to bot using Chat UI.
-        /// </summary>
-        /// <param name="sender"><see cref="SfChat"/> as sender.</param>
-        /// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.</param>
-        private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
-        {
-            // e.Message.Text is selected date from calendar view.
         }
     }
 }
@@ -817,7 +831,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the group message conversation.
+    /// Gets or sets the message conversation.
     /// </summary>
     public ObservableCollection<object> Messages
     {
@@ -935,8 +949,8 @@ private void SfChat_SendMessage(object sender, SendMessageEventArgse)
 /// </summary>
 public class GettingStattedViewModel : INotifyPropertyChanged
 {
-
     private ICommand sendMessageCommand;
+
     /// <summary>
     /// current user of chat.
     /// </summary>
@@ -948,7 +962,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the group message conversation.
+    /// Gets or sets the message conversation.
     /// </summary>
     public ICommand SendMessageCommand
     {
@@ -999,7 +1013,7 @@ public class SendMessageCommandExt : ICommand
 
 ## Show the avatar for outgoing message
 
-By default send message author name and avatar visibility is false, send message can be altered using `SendMessage` event and `SendMessageCommand`
+By default send message author name and avatar visibility is false, send message can be altered using `SendMessage` event or `SendMessageCommand`
 
 #### SendMessage Event handler
 
@@ -1007,6 +1021,7 @@ By default send message author name and avatar visibility is false, send message
 {% highlight c# %}
  
 this.sfChat.SendMessage += this.SfChat_SendMessage
+
 /// <summary>
 /// Raised when current user sends message to bot using Chat UI.
 /// </summary>
@@ -1046,13 +1061,14 @@ private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
 {% endhighlight %}
 
 {% highlight C# %}
+
 /// <summary>
 /// View model class for chat view.
 /// </summary>
 public class GettingStattedViewModel : INotifyPropertyChanged
 {
-
     private ICommand sendMessageCommand;
+
     /// <summary>
     /// current user of chat.
     /// </summary>
@@ -1306,49 +1322,48 @@ namespace GettingStarted
             this.Content = sfChat;
         }
     }
+}
 
-    public class MyDataTemplateSelector : Xamarin.Forms.DataTemplateSelector
+public class MyDataTemplateSelector : Xamarin.Forms.DataTemplateSelector
+{
+    private readonly DataTemplate incomingDataTemplate;
+    private readonly DataTemplate outgoingDataTemplate;
+
+    internal SfChat Chat
     {
-        private readonly DataTemplate incomingDataTemplate;
-        private readonly DataTemplate outgoingDataTemplate;
+        get;
+        set;
+    }
 
-        internal SfChat Chat
+    public MyDataTemplateSelector()
+    {
+        this.incomingDataTemplate = new DataTemplate(typeof(IncomingTempalte);
+        this.outgoingDataTemplate = new DataTemplate(typeof(OutgoingTemplate);
+    }
+    
+    protected override DataTemplate OnSelectTemplate(object item,BindableObject container)
+    {
+        var message = item as IMessage;
+        if (message == null)
+            return null;
+        if (message.Author == Chat.CurrentUser)
         {
-            get;
-            set;
+            return outgoingDataTemplate;
         }
-
-        public MyDataTemplateSelector()
+        else
         {
-            this.incomingDataTemplate = new DataTemplate(typeof(IncomingTempalte));
-            this.outgoingDataTemplate = new DataTemplate(typeof(OutgoingTemplate));
-        }
-
-        protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
-        {
-            var message = item as IMessage;
-            if (message == null)
-                return null;
-
-
-            if (message.Author == Chat.CurrentUser)
+            if (item as ITextMessage != null)
             {
-                return outgoingDataTemplate;
+                return incomingDataTemplate;
             }
             else
             {
-                if (item as ITextMessage != null)
-                {
-                    return incomingDataTemplate;
-                }
-                else
-                {
-                    return null;
-                }
+                return null;
             }
         }
     }
 }
+
 
 {% endhighlight %}
 {% endtabs %}

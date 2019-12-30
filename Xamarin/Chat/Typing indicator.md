@@ -59,119 +59,115 @@ namespace GettingStarted
             this.Content = sfChat;
         }
     }
+}
 
-    public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStattedViewModel : ifyPropertyChanged
+{
+    private ObservableCollection<object> messages;
+
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    /// <summary>
+    /// Indicates the typing indicator visibility. 
+    /// </summary>
+    private bool showTypingIndicator;
+
+    /// <summary>
+    /// Chat typing indicator.
+    /// </summary>
+    private ChatTypingIndicator typingIndicator;
+
+    public GettingStattedViewModel()
     {
-        private ObservableCollection<object> messages;
+        this.messages = new ObservableCollection<object>();
+        this.TypingIndicator = new ChatTypingIndicator();
+        this.TypingIndicator = new ChatTypingIndicator();
+        this.TypingIndicator.Authors.Add(new Author() {  = "Harrison", Avatar = "People_Circle14.png" }        this.TypingIndicator.AvatarViewType = arViewType.Image;
+        this.TypingIndicator.Text = "Harrison is typing";
+        this.ShowTypingIndicator = true;
+        this.currentUser = new Author() { Name = "Nancy", ar = "People_Circle16.png" };
+    }
 
-        /// <summary>
-        /// current user of chat.
-        /// </summary>
-        private Author currentUser;
-
-        /// <summary>
-        /// Indicates the typing indicator visibility. 
-        /// </summary>
-        private bool showTypingIndicator;
-
-        /// <summary>
-        /// Chat typing indicator.
-        /// </summary>
-        private ChatTypingIndicator typingIndicator;
-
-        public GettingStattedViewModel()
+    /// <summary>
+    /// Gets or sets the Chat typing indicator value.
+    /// </summary>
+    public ChatTypingIndicator TypingIndicator
+    {
+        get
         {
-            this.messages = new ObservableCollection<object>();
-            this.TypingIndicator = new ChatTypingIndicator();
-            this.TypingIndicator = new ChatTypingIndicator();
-            this.TypingIndicator.Authors.Add(new Author() { Name = "Harrison", Avatar = "People_Circle14.png" });
-            this.TypingIndicator.AvatarViewType = AvatarViewType.Image;
-            this.TypingIndicator.Text = "Harrison is typing";
-            this.ShowTypingIndicator = true;
-            this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
+            return this.typingIndicator;
         }
-
-        /// <summary>
-        /// Gets or sets the Chat typing indicator value.
-        /// </summary>
-        public ChatTypingIndicator TypingIndicator
+        private set
         {
-            get
-            {
-                return this.typingIndicator;
-            }
-
-            private set
-            {
-                this.typingIndicator = value;
-                RaisePropertyChanged("TypingIndicator");
-            }
+            this.typingIndicator = value;
+            RaisePropertyChanged("TypingIndicator");
         }
+    }
 
-        /// <summary>
-        /// Gets or sets the group message conversation.
-        /// </summary>
-        public ObservableCollection<object> Messages
+    /// <summary>
+    /// Gets or sets the message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
         {
-            get
-            {
-                return this.messages;
-            }
-
-            set
-            {
-                this.messages = value;
-            }
+            return this.messages;
         }
-
-        /// <summary>
-        /// Gets or sets the value indicating whether the typing indicator is visible or not.
-        /// </summary>
-        public bool ShowTypingIndicator
+        set
         {
-            get
-            {
-                return this.showTypingIndicator;
-            }
-
-            private set
-            {
-                this.showTypingIndicator = value;
-                RaisePropertyChanged("ShowTypingIndicator");
-            }
+            this.messages = value;
         }
+    }
 
-        /// <summary>
-        /// Gets or sets the current author.
-        /// </summary>
-        public Author CurrentUser
+    /// <summary>
+    /// Gets or sets the value indicating whether the ng indicator is visible or not.
+    /// </summary>
+    public bool ShowTypingIndicator
+    {
+        get
         {
-            get
-            {
-                return this.currentUser;
-            }
-            set
-            {
-                this.currentUser = value;
-                RaisePropertyChanged("CurrentUser");
-            }
+            return this.showTypingIndicator;
         }
-
-        /// <summary>
-        /// Property changed handler.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// Occurs when property is changed.
-        /// </summary>
-        /// <param name="propName">changed property name</param>
-        public void RaisePropertyChanged(string propName)
+        set
         {
-            if (this.PropertyChanged != null)
-            {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-            }
+            this.showTypingIndicator = value;
+            RaisePropertyChanged("ShowTypingIndicator");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the current author.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
+        {
+            return this.currentUser;
+        }
+        set
+        {
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
+        }
+    }
+
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandler ertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name</m>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, new ertyChangedEventArgs(propName));
         }
     }
 }
@@ -232,121 +228,117 @@ namespace GettingStarted
             this.Content = sfChat;
         }
     }
+}
 
-    public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStattedViewModel : ifyPropertyChanged
+{
+    private ObservableCollection<object> messages;
+
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    /// <summary>
+    /// Indicates the typing indicator visibility. 
+    /// </summary>
+    private bool showTypingIndicator;
+
+    /// <summary>
+    /// Chat typing indicator.
+    /// </summary>
+    private ChatTypingIndicator typingIndicator;
+    
+    public GettingStattedViewModel()
     {
-        private ObservableCollection<object> messages;
+        this.messages = new ObservableCollection<object>();
+        this.TypingIndicator = new ChatTypingIndicator();
+        this.TypingIndicator = new ChatTypingIndicator();
+        this.TypingIndicator.Authors.Add(new Author() {  = "Harrison", Avatar = "People_Circle14.png" }        
+        **this.TypingIndicator.AvatarViewType = arViewType.Text;**
+        
+        this.TypingIndicator.Text = "Harrison is typing";
+        this.ShowTypingIndicator = true;
+        this.currentUser = new Author() { Name = "Nancy", ar = "People_Circle16.png" };
+    }
 
-        /// <summary>
-        /// current user of chat.
-        /// </summary>
-        private Author currentUser;
-
-        /// <summary>
-        /// Indicates the typing indicator visibility. 
-        /// </summary>
-        private bool showTypingIndicator;
-
-        /// <summary>
-        /// Chat typing indicator.
-        /// </summary>
-        private ChatTypingIndicator typingIndicator;
-
-        public GettingStattedViewModel()
+    /// <summary>
+    /// Gets or sets the Chat typing indicator value.
+    /// </summary>
+    public ChatTypingIndicator TypingIndicator
+    {
+        get
         {
-            this.messages = new ObservableCollection<object>();
-            this.TypingIndicator = new ChatTypingIndicator();
-            this.TypingIndicator = new ChatTypingIndicator();
-            this.TypingIndicator.Authors.Add(new Author() { Name = "Harrison", Avatar = "People_Circle14.png" });
-            
-            **this.TypingIndicator.AvatarViewType = AvatarViewType.Text;**
-            
-            this.TypingIndicator.Text = "Harrison is typing";
-            this.ShowTypingIndicator = true;
-            this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
+            return this.typingIndicator;
         }
-
-        /// <summary>
-        /// Gets or sets the Chat typing indicator value.
-        /// </summary>
-        public ChatTypingIndicator TypingIndicator
+        private set
         {
-            get
-            {
-                return this.typingIndicator;
-            }
-
-            private set
-            {
-                this.typingIndicator = value;
-                RaisePropertyChanged("TypingIndicator");
-            }
+            this.typingIndicator = value;
+            RaisePropertyChanged("TypingIndicator");
         }
+    }
 
-        /// <summary>
-        /// Gets or sets the group message conversation.
-        /// </summary>
-        public ObservableCollection<object> Messages
+    /// <summary>
+    /// Gets or sets the message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
         {
-            get
-            {
-                return this.messages;
-            }
-
-            set
-            {
-                this.messages = value;
-            }
+            return this.messages;
         }
-
-        /// <summary>
-        /// Gets or sets the value indicating whether the typing indicator is visible or not.
-        /// </summary>
-        public bool ShowTypingIndicator
+        set
         {
-            get
-            {
-                return this.showTypingIndicator;
-            }
-
-            private set
-            {
-                this.showTypingIndicator = value;
-                RaisePropertyChanged("ShowTypingIndicator");
-            }
+            this.messages = value;
         }
+    }
 
-        /// <summary>
-        /// Gets or sets the current author.
-        /// </summary>
-        public Author CurrentUser
+    /// <summary>
+    /// Gets or sets the value indicating whether the ng indicator is visible or not.
+    /// </summary>
+    public bool ShowTypingIndicator
+    {
+        get
         {
-            get
-            {
-                return this.currentUser;
-            }
-            set
-            {
-                this.currentUser = value;
-                RaisePropertyChanged("CurrentUser");
-            }
+            return this.showTypingIndicator;
         }
-
-        /// <summary>
-        /// Property changed handler.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// Occurs when property is changed.
-        /// </summary>
-        /// <param name="propName">changed property name</param>
-        public void RaisePropertyChanged(string propName)
+        private set
         {
-            if (this.PropertyChanged != null)
-            {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-            }
+            this.showTypingIndicator = value;
+            RaisePropertyChanged("ShowTypingIndicator");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the current author.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
+        {
+            return this.currentUser;
+        }
+        set
+        {
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
+        }
+    }
+
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandler ertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name</m>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, new ertyChangedEventArgs(propName));
         }
     }
 }

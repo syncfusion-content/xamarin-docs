@@ -58,105 +58,107 @@ namespace GettingStarted
     }
 
 
-    public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStattedViewModel : INotifyPropertyChanged
+{
+    private ObservableCollection<object> messages;
+
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    /// <summary>
+    /// Chat suggestion
+    /// </summary>
+    private ChatSuggestions chatSuggestions;
+
+    /// <summary>
+    /// collection of suggestion items for chat suggestion.
+    /// </summary>
+    private ObservableCollection<ISuggestion> suggestions;
+
+    public GettingStattedViewModel()
     {
-        private ObservableCollection<object> messages;
+        this.messages = new ObservableCollection<object>();
+        this.currentUser = new Author() { Name = "Nancy", Avatar = ple_Circle16.png" };
+        
+        chatSuggestions = new ChatSuggestions();
+        
+        suggestions = new ObservableCollection<ISuggestion>();
+        suggestions.Add(new Suggestion() { Text = "Airways 1" });
+        suggestions.Add(new Suggestion() { Text = "Airways 2" });
+        suggestions.Add(new Suggestion() { Text = "Airways 3" });
+        suggestions.Add(new Suggestion() { Text = "Airways 4" });
+        suggestions.Add(new Suggestion() { Text = "Airways 5" });
+        suggestions.Add(new Suggestion() { Text = "Airways 6" });
+        chatSuggestions.Items = suggestions;
+        this.GenerateMessages();
+    }
 
-        /// <summary>
-        /// current user of chat.
-        /// </summary>
-        private Author currentUser;
-
-        private ChatSuggestions chatSuggestions;
-
-        private ObservableCollection<ISuggestion> suggestions;
-
-        public GettingStattedViewModel()
+    /// <summary>
+    /// Gets or sets the message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
         {
-            this.messages = new ObservableCollection<object>();
-            this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
-            
-            chatSuggestions = new ChatSuggestions();
-            
-            suggestions = new ObservableCollection<ISuggestion>();
-            suggestions.Add(new Suggestion() { Text = "Airways 1" });
-            suggestions.Add(new Suggestion() { Text = "Airways 2" });
-            suggestions.Add(new Suggestion() { Text = "Airways 3" });
-            suggestions.Add(new Suggestion() { Text = "Airways 4" });
-            suggestions.Add(new Suggestion() { Text = "Airways 5" });
-            suggestions.Add(new Suggestion() { Text = "Airways 6" });
-
-            chatSuggestions.Items = suggestions;
-
-            this.GenerateMessages();
+            return this.messages;
         }
-
-        /// <summary>
-        /// Gets or sets the group message conversation.
-        /// </summary>
-        public ObservableCollection<object> Messages
+        set
         {
-            get
-            {
-                return this.messages;
-            }
-
-            set
-            {
-                this.messages = value;
-            }
+            this.messages = value;
         }
+    }
 
-        /// <summary>
-        /// Gets or sets the current author.
-        /// </summary>
-        public Author CurrentUser
+    /// <summary>
+    /// Gets or sets the current author.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
         {
-            get
-            {
-                return this.currentUser;
-            }
-            set
-            {
-                this.currentUser = value;
-                RaisePropertyChanged("CurrentUser");
-            }
+            return this.currentUser;
         }
-
-        /// <summary>
-        /// Property changed handler.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// Occurs when property is changed.
-        /// </summary>
-        /// <param name="propName">changed property name</param>
-        public void RaisePropertyChanged(string propName)
+        set
         {
-            if (this.PropertyChanged != null)
-            {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-            }
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
         }
+    }
 
-        private void GenerateMessages()
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name</param>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
         {
-            this.messages.Add(new TextMessage()
-            {
-                Author = currentUser,
-                Text = "Flight to USA",
-                ShowAvatar = true,
-            });
-
-            this.messages.Add(new TextMessage()
-            {
-                Author = new Author() { Avatar = "Aeroplane.png", Name = "Travel Bot" },
-                Text = "Here's my suggestion",
-                Suggestions = chatSuggestions,
-                ShowAvatar = true,
-            });   
+            this.PropertyChanged(this, new PropertyChangedEventArgspName));
         }
+    }
+
+    private void GenerateMessages()
+    {
+        this.messages.Add(new TextMessage()
+        {
+            Author = currentUser,
+            Text = "Flight to USA",
+            ShowAvatar = true,
+        });
+
+        this.messages.Add(new TextMessage()
+        {
+            Author = new Author() { Avatar = "Aeroplane.png", Name = vel Bot" },
+            Text = "Here's my suggestion",
+            Suggestions = chatSuggestions,
+            ShowAvatar = true,
+        });   
     }
 }
 
@@ -211,108 +213,112 @@ namespace GettingStarted
             this.Content = sfChat;
         }
     }
+}
 
-    public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStattedViewModel :INotifyPropertyChanged
+{
+    private ObservableCollection<object> messages;
+
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    /// <summary>
+    /// Chat suggestion
+    /// </summary>
+    private ChatSuggestions chatSuggestions;
+
+    /// <summary>
+    /// collection of suggestion items for chat suggestion.
+    /// </summary>
+    private ObservableCollection<ISuggestion> suggestions;
+
+    public GettingStattedViewModel()
     {
-        private ObservableCollection<object> messages;
+        this.messages = new ObservableCollection<object>();
+        this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
+        
+        chatSuggestions = new ChatSuggestions();
+        
+        suggestions = new ObservableCollection<ISuggestion();
+        suggestions.Add(new Suggestion("Airways 1","Flight1.png"));
+        suggestions.Add(new Suggestion("Airways 2","Flight2.png"));
+        suggestions.Add(new Suggestion("Airways 3","Flight3.png"));
+        suggestions.Add(new Suggestion("Airways 4","Flight4.png"));
+        suggestions.Add(new Suggestion("Airways 5","Flight5.png"));
+        suggestions.Add(new Suggestion("Airways 6","Flight6.png"));
+        chatSuggestions.Items = suggestions;
+        this.GenerateMessages();
+    }
 
-        /// <summary>
-        /// current user of chat.
-        /// </summary>
-        private Author currentUser;
-
-        private ChatSuggestions chatSuggestions;
-
-        private ObservableCollection<ISuggestion> suggestions;
-
-        public GettingStattedViewModel()
+    /// <summary>
+    /// Gets or sets the message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
         {
-            this.messages = new ObservableCollection<object>();
-            this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
-            
-            chatSuggestions = new ChatSuggestions();
-            
-            suggestions = new ObservableCollection<ISuggestion>();
-            suggestions.Add(new Suggestion("Airways 1", "Flight1.png"));
-            suggestions.Add(new Suggestion("Airways 2", "Flight2.png"));
-            suggestions.Add(new Suggestion("Airways 3", "Flight3.png"));
-            suggestions.Add(new Suggestion("Airways 4", "Flight4.png"));
-            suggestions.Add(new Suggestion("Airways 5", "Flight5.png"));
-            suggestions.Add(new Suggestion("Airways 6", "Flight6.png"));
-
-            chatSuggestions.Items = suggestions;
-
-            this.GenerateMessages();
+            return this.messages;
         }
-
-        /// <summary>
-        /// Gets or sets the group message conversation.
-        /// </summary>
-        public ObservableCollection<object> Messages
+        set
         {
-            get
-            {
-                return this.messages;
-            }
-
-            set
-            {
-                this.messages = value;
-            }
-        }
-
-        /// <summary>
-        /// Gets or sets the current author.
-        /// </summary>
-        public Author CurrentUser
-        {
-            get
-            {
-                return this.currentUser;
-            }
-            set
-            {
-                this.currentUser = value;
-                RaisePropertyChanged("CurrentUser");
-            }
-        }
-
-        /// <summary>
-        /// Property changed handler.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// Occurs when property is changed.
-        /// </summary>
-        /// <param name="propName">changed property name</param>
-        public void RaisePropertyChanged(string propName)
-        {
-            if (this.PropertyChanged != null)
-            {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-            }
-        }
-
-        private void GenerateMessages()
-        {
-            this.messages.Add(new TextMessage()
-            {
-                Author = currentUser,
-                Text = "Flight to USA",
-                ShowAvatar = true,
-            });
-
-            this.messages.Add(new TextMessage()
-            {
-                Author = new Author() { Avatar = "Aeroplane.png", Name = "Travel Bot" },
-                Text = "Here's my suggestion",
-                Suggestions = chatSuggestions,
-                ShowAvatar = true,
-            });   
+            this.messages = value;
         }
     }
+
+    /// <summary>
+    /// Gets or sets the current author.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
+        {
+            return this.currentUser;
+        }
+        set
+        {
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
+        }
+    }
+
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandlerPropertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name<param>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, newPropertyChangedEventArgs(propName));
+        }
+    }
+
+    private void GenerateMessages()
+    {
+        this.messages.Add(new TextMessage()
+        {
+            Author = currentUser,
+            Text = "Flight to USA",
+            ShowAvatar = true,
+        });
+
+        this.messages.Add(new TextMessage()
+        {
+            Author = new Author() { Avatar ="Aeroplane.png", Name = "Travel Bot" },
+            Text = "Here's my suggestion",
+            Suggestions = chatSuggestions,
+            ShowAvatar = true,
+        });   
+    }
 }
+
 
 {% endhighlight %}
 {% endtabs %}
@@ -365,108 +371,109 @@ namespace GettingStarted
             this.Content = sfChat;
         }
     }
+}
 
-    public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStattedViewModel : INotifyPropertyChanged
+{
+    private ObservableCollection<object> messages;
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    /// <summary>
+    /// Chat suggestion
+    /// </summary>
+    private ChatSuggestions chatSuggestions;
+
+    /// <summary>
+    /// collection of suggestion items for chat suggestion.
+    /// </summary>
+    private ObservableCollection<ISuggestion> suggestions;
+
+    public GettingStattedViewModel()
     {
-        private ObservableCollection<object> messages;
+        this.messages = new ObservableCollection<object>();
+        this.currentUser = new Author() { Name = "Nancy", Avatar ="People_Circle16.png" };
+        
+        chatSuggestions = new ChatSuggestions();
+        
+        suggestions = new ObservableCollection<ISuggestion>();
+        suggestions.Add(new Suggestion("Airways 1", "Flight1.png"));
+        suggestions.Add(new Suggestion("Airways 2", "Flight2.png"));
+        suggestions.Add(new Suggestion("Airways 3", "Flight3.png"));
+        suggestions.Add(new Suggestion("Airways 4", "Flight4.png"));
+        suggestions.Add(new Suggestion("Airways 5", "Flight5.png"));
+        suggestions.Add(new Suggestion("Airways 6", "Flight6.png"));
+        **chatSuggestions.Orientation =SuggestionsOrientation.Vertical;**
+        chatSuggestions.Items = suggestions;
+        this.GenerateMessages();
+    }
 
-        /// <summary>
-        /// current user of chat.
-        /// </summary>
-        private Author currentUser;
-
-        private ChatSuggestions chatSuggestions;
-
-        private ObservableCollection<ISuggestion> suggestions;
-
-        public GettingStattedViewModel()
+    /// <summary>
+    /// Gets or sets the message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
         {
-            this.messages = new ObservableCollection<object>();
-            this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
-            
-            chatSuggestions = new ChatSuggestions();
-            
-            suggestions = new ObservableCollection<ISuggestion>();
-            suggestions.Add(new Suggestion("Airways 1", "Flight1.png"));
-            suggestions.Add(new Suggestion("Airways 2", "Flight2.png"));
-            suggestions.Add(new Suggestion("Airways 3", "Flight3.png"));
-            suggestions.Add(new Suggestion("Airways 4", "Flight4.png"));
-            suggestions.Add(new Suggestion("Airways 5", "Flight5.png"));
-            suggestions.Add(new Suggestion("Airways 6", "Flight6.png"));
-
-            **chatSuggestions.Orientation = SuggestionsOrientation.Vertical;**
-
-            chatSuggestions.Items = suggestions;
-
-            this.GenerateMessages();
+            return this.messages;
         }
-
-        /// <summary>
-        /// Gets or sets the group message conversation.
-        /// </summary>
-        public ObservableCollection<object> Messages
+        set
         {
-            get
-            {
-                return this.messages;
-            }
-
-            set
-            {
-                this.messages = value;
-            }
+            this.messages = value;
         }
+    }
 
-        /// <summary>
-        /// Gets or sets the current author.
-        /// </summary>
-        public Author CurrentUser
+    /// <summary>
+    /// Gets or sets the current author.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
         {
-            get
-            {
-                return this.currentUser;
-            }
-            set
-            {
-                this.currentUser = value;
-                RaisePropertyChanged("CurrentUser");
-            }
+            return this.currentUser;
         }
-
-        /// <summary>
-        /// Property changed handler.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// Occurs when property is changed.
-        /// </summary>
-        /// <param name="propName">changed property name</param>
-        public void RaisePropertyChanged(string propName)
+        set
         {
-            if (this.PropertyChanged != null)
-            {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-            }
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
         }
+    }
 
-        private void GenerateMessages()
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name</param>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
         {
-            this.messages.Add(new TextMessage()
-            {
-                Author = currentUser,
-                Text = "Flight to USA",
-                ShowAvatar = true,
-            });
-
-            this.messages.Add(new TextMessage()
-            {
-                Author = new Author() { Avatar = "Aeroplane.png", Name = "Travel Bot" },
-                Text = "Here's my suggestion",
-                Suggestions = chatSuggestions,
-                ShowAvatar = true,
-            });   
+            this.PropertyChanged(this, new PropertyChangedEventArg(propName));
         }
+    }
+
+    private void GenerateMessages()
+    {
+        this.messages.Add(new TextMessage()
+        {
+            Author = currentUser,
+            Text = "Flight to USA",
+            ShowAvatar = true,
+        });
+
+        this.messages.Add(new TextMessage()
+        {
+            Author = new Author() { Avatar = "Aeroplane.png", Name ="Travel Bot" },
+            Text = "Here's my suggestion",
+            Suggestions = chatSuggestions,
+            ShowAvatar = true,
+        });   
     }
 }
 
@@ -533,69 +540,68 @@ namespace GettingStarted
             this.Content = sfChat;
         }
     }
+}
 
-    public class GettingStattedViewModel : INotifyPropertyChanged
+public class GettingStattedViewModel : INotifyPropertyChanged
+{
+    private ObservableCollection<object> messages;
+    
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    public GettingStattedViewModel()
     {
-        private ObservableCollection<object> messages;
+        this.messages = new ObservableCollection<object>();
+        this.currentUser = new Author() { Name = "Nancy", Avatar = ple_Circle16.png" };
+    }
 
-        /// <summary>
-        /// current user of chat.
-        /// </summary>
-        private Author currentUser;
-
-        public GettingStattedViewModel()
+    /// <summary>
+    /// Gets or sets the message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
         {
-            this.messages = new ObservableCollection<object>();
-            this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
+            return this.messages;
         }
-
-        /// <summary>
-        /// Gets or sets the group message conversation.
-        /// </summary>
-        public ObservableCollection<object> Messages
+        set
         {
-            get
-            {
-                return this.messages;
-            }
-
-            set
-            {
-                this.messages = value;
-            }
+            this.messages = value;
         }
+    }
 
-        /// <summary>
-        /// Gets or sets the current author.
-        /// </summary>
-        public Author CurrentUser
+    /// <summary>
+    /// Gets or sets the current author.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
         {
-            get
-            {
-                return this.currentUser;
-            }
-            set
-            {
-                this.currentUser = value;
-                RaisePropertyChanged("CurrentUser");
-            }
+            return this.currentUser;
         }
-
-        /// <summary>
-        /// Property changed handler.
-        /// </summary>
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// Occurs when property is changed.
-        /// </summary>
-        /// <param name="propName">changed property name</param>
-        public void RaisePropertyChanged(string propName)
+        set
         {
-            if (this.PropertyChanged != null)
-            {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-            }
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
+        }
+    }
+
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name</param>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, new PropertyChangedEventArgspName));
         }
     }
 }

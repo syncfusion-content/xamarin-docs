@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion segmented control for Xamarin.Forms 
-description: A quick tour to initial users on Syncfusion segmented control for Xamarin.Forms platform.
+description: A quick tour for the initial users of Xamarin.Forms SegmentedControl to find a way to create and populate a data source. 
 platform: Xamarin
 control: SfSegmentedControl
 documentation: ug

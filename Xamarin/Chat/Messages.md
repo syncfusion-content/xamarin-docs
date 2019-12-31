@@ -532,7 +532,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
     public GettingStartedViewModel()
     {
-        this.Messages = new ObservableCollection<object>(;
+        this.Messages = new ObservableCollection<object>();
         this.CurrentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
         this.GenerateMessages();
     }
@@ -590,13 +590,13 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         this.Messages.Add(new TextMessage()
         {
             Author = CurrentUser,
-            Text = "Flight to USA",
+            Text = "Consultation with Dr.Harry tomorrow.",
             ShowAvatar = true,
         });
 
         this.Messages.Add(new TimePickerMessage()
         {
-            Author = new Author() { Name = "Health care",Avatar = "Healthcare.png" },
+            Author = new Author() { Name = "Health care", Avatar = "Healthcare.png" },
             Text = "Select convenient time to meet Dr.Harry for health check up.",
             ShowAvatar = true,
             // Time picker display time.
@@ -742,14 +742,14 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         this.Messages.Add(new TextMessage()
         {
             Author = CurrentUser,
-            Text = "Flight to USA",
+            Text = "Appointment with Dr.Harry.",
             ShowAvatar = true,
         });
 
         this.Messages.Add(new CalendarMessage()
         {
-            Author = new Author() { Name = "Health care", Avatar ="Healthcare.png" },
-            Text = "Select convenient time to meet Dr.Harry for health check up.",
+            Author = new Author() { Name = "Health care", Avatar = "Healthcare.png" },
+            Text = "Select convenient date to meet Dr.Harry for health check up.",
             ShowAvatar = true,
             SelectedDate = DateTime.Now,
         });

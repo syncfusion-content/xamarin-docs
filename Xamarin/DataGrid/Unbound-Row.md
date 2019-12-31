@@ -1,7 +1,7 @@
 ---
 layout: post
 title: UnboundRow | SfDataGrid | Xamarin | Syncfusion
-description: Create and use Unbound Rows in Xamarin.Forms DataGrid. Populate data for unbound rows using event.
+description: Create and use Unbound Rows in Xamarin.Forms DataGrid. Describes how to populate data for unbound rows using event.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -152,7 +152,7 @@ You can add or remove unbound rows using [SfDataGrid.UnboundRows](http://help.sy
  
 ### Trigger QueryUnboundRow event programmatically
  
-You can trigger the [QueryUnboundRow](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryUnboundRow_EV.html) event for the unbound row cells at runtime by calling [SfDataGrid.InValidateUnboundRow](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~InvalidateUnboundRow.html) method which invalidates the unbound row at the given index.
+You can trigger the [QueryUnboundRow](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryUnboundRow_EV.html) event for the unbound row cells at runtime by calling [SfDataGrid.InvalidateUnboundRow](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~InvalidateUnboundRow.html) method which invalidates the unbound row at the given index.
 
 Here in the below code example, we have invalidated the unbound rows whenever selection is changed in the DataGrid.
 
@@ -161,7 +161,7 @@ Here in the below code example, we have invalidated the unbound rows whenever se
 this.dataGrid.SelectionChanged += dataGrid_SelectionChanged;
 private void dataGrid_SelectionChanged(object sender, GridSelectionChangedEventArgs e)
 {
-    this.dataGrid.InValidateUnboundRow(this.dataGrid.UnboundRows[0]);
+    this.dataGrid.InvalidateUnboundRow(this.dataGrid.UnboundRows[0]);
 }
 {% endhighlight %}
 {% endtabs %}

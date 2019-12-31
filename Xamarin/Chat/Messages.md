@@ -14,7 +14,7 @@ documentation: ug
 <table>
 <tr>
 <td>[Message.Author](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Author.html)</td>
-<td>Specify the avatar and name of the message using [Author.Avatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Author~Avatar.html) and [Author.Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Author~Name.html) properties respectively.</td>
+<td>Specify the avatar and name of the message sender using [Author.Avatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Author~Avatar.html) and [Author.Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Author~Name.html) properties respectively.</td>
 </tr>
 <tr>
 <td>[Message.DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~DateTime.html)</td>
@@ -147,7 +147,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     {
         this.Messages.Add(new TextMessage()
         {
-            Author = currentUser,
+            Author = CurrentUser,
             Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
             ShowAvatar = true,
         });
@@ -362,7 +362,8 @@ namespace GettingStarted
         /// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.</param>
         private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
         {
-            // e.Message.Text contains the date selected from the date picker.
+            // Denotes the date selected from the date picker.
+            var selectedDate = e.Message.Text;
         }
     }
 }
@@ -459,7 +460,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ##Time picker message
 
-[TimePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.TimePickerMessage.html) is used to show a time picker as a message to let users select a time. Once time is selected, the selected time is added as a `TextMessage`. The`SfChat.SendMessage` event and `SfChat.SendMessageCommand` will be executed upon selecting a date from the date picker.
+[TimePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.TimePickerMessage.html) is used to show a time picker as a message to let users select time. Once time is selected, the selected time is added as a `TextMessage`. The`SfChat.SendMessage` event and `SfChat.SendMessageCommand` will be executed upon selecting a time from the time picker.
 
 {% tabs %}
 {% highlight xaml %}
@@ -511,7 +512,8 @@ namespace GettingStarted
         /// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.</param>
         private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
         {
-            // e.Message.Text is selected time from time picker.
+        // Denotes the time selected from the time picker.
+            var selectedTime =  e.Message.Text;
         }
     }
 }
@@ -609,7 +611,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Calendar message
 
-[CalendarMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CalendarMessage.html) is used to display a calendar as a message to let users select a date. The ate selected from the calendar will be added as a `TextMessage`. The `SendMessage` event and `SendMessageCommand` will be executed upon selecting a date from the calendar.
+[CalendarMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CalendarMessage.html) is used to display a calendar as a message to let users select a date. The date selected from the calendar will be added as a `TextMessage`. The `SendMessage` event and `SendMessageCommand` will be executed upon selecting a date from the calendar.
 
 {% tabs %}
 {% highlight xaml %}
@@ -661,7 +663,8 @@ namespace GettingStarted
         /// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.</param>
         private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
         {
-            // e.Message.Text is selected date from calendar picker.
+            // Denotes the date selected from the calendar.
+            var selectedDate = e.Message.Text;
         }
     }
 }
@@ -759,7 +762,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Hyperlink message
 
-[HyperlinkMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.HyperlinkMessage.html) is used to share URL as a message. Along with the link the thumbnail, title and description of the URL are automatically fetched and displayed. The following code example illustrates how to add a hyperlink message.
+[HyperlinkMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.HyperlinkMessage.html) is used to share URL as a message. Along with the link, the thumbnail, title and description of the URL are automatically fetched and displayed. The following code example illustrates how to add a hyperlink message.
 
 {% tabs %}
 {% highlight xaml %}
@@ -908,7 +911,7 @@ The `SfChat.CurrentUser` can send messages using the send button in the message 
 
 **Cancel the message from sending**
 
-The newly added message can be canceled from sending in the `SendMessage` event handler and `SendMessageCommand` by setting the `Handled` value as `true` in the provided [SendMessageEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SendMessageEventArgs.html).
+The newly added message can be canceled from sending, in the `SendMessage` event handler and `SendMessageCommand` by setting the `Handled` value as `true` in the provided [SendMessageEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SendMessageEventArgs.html).
 
 **SendMessage Event handler**
 
@@ -1098,7 +1101,7 @@ public class SendMessageCommandExt : ICommand
 
 The `SfChat` alllows to change the shape of the messages by using the [SfChat.MessageShape](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageShape.html) property.
 
-To apply `MessageShape` in the SfChat, follow the code example:
+To customize `MessageShape` in the SfChat, refer the below code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -1154,7 +1157,7 @@ namespace GettingStarted
 
 The SfChat allows to hide the message input view(editor) by setting false to [SfChat.ShowMessageInputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowMessageInputView.html) property.
 
-To hide `ShowMessageInputView` in the SfChat, follow the code example:
+To hide `ShowMessageInputView` in the SfChat, refer the below code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -1206,7 +1209,7 @@ namespace GettingStarted
 
 ## Hide avatar and author name for messages
 
-The message's avatar and author name visibility can be modified using [SfChat.ShowAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowAvatar.html) and [SfChat.ShowAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowAuthorName.html) property.
+The message's avatar and author name visibility can be hidden using [SfChat.ShowAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowAvatar.html) and [SfChat.ShowAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowAuthorName.html) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1264,9 +1267,9 @@ N> SfChat allows to change visibility of avatar and author name of a particular 
 
 ## Template for message
 
-Sfchat allows to load custom templates for incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) property. 
+SfChat allows to load custom templates for incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) property. 
 
-To apply `MessageTemplate` in the SfChat, refer the below code example:
+To load custom `MessageTemplate` in the SfChat, refer the below code example:
 
 {% tabs %}
 {% highlight c# %}

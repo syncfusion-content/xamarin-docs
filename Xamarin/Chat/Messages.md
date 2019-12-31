@@ -28,7 +28,7 @@ documentation: ug
 
 ## Setting current user for conversation
 
-The [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html) helps differentiate between the sender and reciever of the messages. On any given chat window, the `SfChat.CurrentUser` is meant to be the sender(author of outgoing messages). Refer the below code example to set up a current user in a chat.
+The [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html) helps differentiate between the sender and receiever of the messages. On any given chat window, the `SfChat.CurrentUser` is meant to be the sender(author of outgoing messages). Refer the below code example to set up a current user in a chat.
 
 {% tabs %}
 {% highlight xaml %}
@@ -908,7 +908,7 @@ The `SfChat.CurrentUser` can send messages using the send button in the message 
 
 **Cancel the message from sending**
 
-The newly addded message can be canceled from sending in the `SendMessage` event handler and `SendMessageCommand` by setting the `Handled` value as `true` in the provided [SendMessageEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SendMessageEventArgs.html).
+The newly added message can be canceled from sending in the `SendMessage` event handler and `SendMessageCommand` by setting the `Handled` value as `true` in the provided [SendMessageEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SendMessageEventArgs.html).
 
 **SendMessage Event handler**
 

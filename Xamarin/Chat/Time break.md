@@ -118,7 +118,7 @@ namespace GettingStarted
 
 `SfChat` allows to load custom template for time break view using the [SfChat.TimeBreakTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~TimeBreakTemplate.html) property. 
 
-To apply custom `TimeBreakTemplate` in the SfChat, follow the code example:
+To apply custom `TimeBreakTemplate` in the SfChat, refer the below code example:
 
 {% tabs %}
 {% highlight xaml %}

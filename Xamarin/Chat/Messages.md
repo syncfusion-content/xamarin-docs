@@ -362,7 +362,8 @@ namespace GettingStarted
         /// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.</param>
         private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
         {
-            // e.Message.Text contains the date selected from the date picker.
+            // Selected date from the date picker.
+            var selectedDate = e.Message.Text ;
         }
     }
 }
@@ -511,7 +512,8 @@ namespace GettingStarted
         /// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.</param>
         private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
         {
-            // e.Message.Text is selected time from time picker.
+            // Selected time from the picker.
+            var selectedTime = e.Message.Text ;
         }
     }
 }
@@ -597,6 +599,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
             Author = new Author() { Name = "Health care",Avatar = "Healthcare.png" },
             Text = "Select convenient time to meet Dr.Harry for health check up.",
             ShowAvatar = true,
+            // Time picker display time.
             SelectedTime = new TimeSpan(8, 30, 00),
         });
     }
@@ -661,7 +664,8 @@ namespace GettingStarted
         /// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.</param>
         private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
         {
-            // e.Message.Text is selected date from calendar picker.
+            // Selected date from the calendar.
+            var selectedDate = e.Message.Text ;
         }
     }
 }
@@ -1098,7 +1102,7 @@ public class SendMessageCommandExt : ICommand
 
 The `SfChat` alllows to change the shape of the messages by using the [SfChat.MessageShape](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageShape.html) property.
 
-To apply `MessageShape` in the SfChat, follow the code example:
+To apply `MessageShape` in the SfChat, refer the below code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -1154,7 +1158,7 @@ namespace GettingStarted
 
 The SfChat allows to hide the message input view(editor) by setting false to [SfChat.ShowMessageInputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowMessageInputView.html) property.
 
-To hide `ShowMessageInputView` in the SfChat, follow the code example:
+To hide `ShowMessageInputView` in the SfChat, refer the below code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -1264,7 +1268,7 @@ N> SfChat allows to change visibility of avatar and author name of a particular 
 
 ## Template for message
 
-Sfchat allows to load custom templates for incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) property. 
+SfChat allows to load custom templates for incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) property. 
 
 To apply `MessageTemplate` in the SfChat, refer the below code example:
 

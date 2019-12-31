@@ -62,7 +62,6 @@ namespace GettingStarted
 
 To stick the time break view, enable the property [SfChat.StickyTimeBreak](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~StickyTimeBreak.html). If `StickyTimeBreak` is true, the corresponding time break view will be displayed until the previous time break view goes out of view, and time break will move when another time break comes in while scrolling.
 
-
 {% tabs %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -108,6 +107,107 @@ namespace GettingStarted
             this.sfChat.StickyTimeBreak = true;
             this.Content = sfChat;
         }
+    }
+}
+
+public class GettingStartedViewModel : INotifyPropertyChanged
+{
+    /// <summary>
+    /// Collection of messages or conversation.
+    /// </summary>
+    private ObservableCollection<object> messages;
+
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    public GettingStartedViewModel()
+    {
+        this.messages = new ObservableCollection<object>();
+        this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
+        this.GenerateMessages();
+    }
+
+    /// <summary>
+    /// Gets or sets the message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
+        {
+            return this.messages;
+        }
+
+        set
+        {
+            this.messages = value;
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the current user.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
+        {
+        return this.currentUser;
+        }
+        set
+        {
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
+        }
+    }
+
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name</param>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+        }
+    }
+
+    private void GenerateMessages()
+    {
+        this.Messages.Add(new TextMessage()
+        {
+            Author = CurrentUser,
+            Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
+            ShowAvatar = true,
+            DateTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day - 1),
+        });
+
+        this.Messages.Add(new TextMessage()
+        {
+            Author = new Author() { Name = "Andrea", Avatar = "People_Circle2.png" },
+            Text = "Oh! That's great.",
+            ShowAvatar = true,
+        });
+
+        this.Messages.Add(new TextMessage()
+        {
+            Author = new Author() { Name = "Harrison", Avatar = "People_Circle14.png" },
+            Text = "That is good news.",
+            ShowAvatar = true,
+        });
+
+        this.Messages.Add(new TextMessage()
+        {
+            Author = new Author() { Name = "Margaret", Avatar = "People_Circle7.png" },
+            Text = "What kind of application is it and when are we going to launch?",
+            ShowAvatar = true,
+        });
     }
 }
 
@@ -227,6 +327,16 @@ internal class TimeBreakTemplateSelector : DataTemplateSelector
         {
             label.WidthRequest = 60;
             label.Text = "TODAY";
+            grid.Children.Add(border, 1, 0);
+            return new DataTemplate(() =>
+            {
+                return grid;
+            });
+        }
+        else if (groupedDate.Date == new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day - 1))
+        {
+            label.WidthRequest = 80;
+            label.Text = "Yesterday";
             grid.Children.Add(border, 1, 0);
             return new DataTemplate(() =>
             {

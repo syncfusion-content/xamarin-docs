@@ -50,11 +50,13 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
-            this.sfChat.ShowTimeBreak="True"
+            this.sfChat.ShowTimeBreak = true;
             this.Content = sfChat;
         }
     }
 }
+
+![Xamarin Forms chat time break](SfChat_images/xamarin-forms-chat-time-break.jpg)
 
 ## Stick time break view
 
@@ -85,6 +87,7 @@ To stick the time break view, enable the property [SfChat.StickyTimeBreak](https
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
+
 using Syncfusion.XForms.Chat;
 using Xamarin.Forms;
 
@@ -101,7 +104,7 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
-            this.sfChat.ShowTimeBreak="True"
+            this.sfChat.ShowTimeBreak = true;
             this.sfChat.StickyTimeBreak = true;
             this.Content = sfChat;
         }
@@ -118,6 +121,33 @@ namespace GettingStarted
 To apply custom `TimeBreakTemplate` in the SfChat, follow the code example:
 
 {% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage">
+
+    <ContentPage.Resources>
+        <local:TimeBreakTemplateSelector x:Key="timeBreakTemplateSelector"/>
+    </ContentPage.Resources>
+    
+    <ContentPage.BindingContext>
+        <local:GettingStartedViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <sfChat:SfChat x:Name="sfChat"
+                       ShowTimeBreak="True"
+                       TimeBreakTemplate="{StaticResource timeBreakTemplateSelector}"
+                       Messages="{Binding Messages}"
+                       CurrentUser="{Binding CurrentUser}" />
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+
 {% highlight c# %}
 
 using Syncfusion.XForms.Chat;
@@ -218,3 +248,5 @@ internal class TimeBreakTemplateSelector : DataTemplateSelector
 
 {% endhighlight %}
 {% endtabs %}
+
+![Xamarin Forms chat time break template](SfChat_images/xamarin-forms-chat-time-break-template.jpg)

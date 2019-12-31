@@ -86,7 +86,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         this.TypingIndicator = new ChatTypingIndicator();
         this.TypingIndicator.Authors.Add(new Author() { Name = "Harrison", Avatar = "People_Circle14.png" }        
         this.TypingIndicator.AvatarViewType = AvatarViewType.Image;
-        this.TypingIndicator.Text = "Harrison is typing";
+        this.TypingIndicator.Text = "Harrison is typing...";
         this.ShowTypingIndicator = true;
         this.CurrentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
     }
@@ -167,14 +167,46 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     {
         if (this.PropertyChanged != null)
         {
-            this.PropertyChanged(this, new ertyChangedEventArgs(propName));
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
         }
+    }
+
+    private void GenerateMessages()
+    {
+        this.Messages.Add(new TextMessage()
+        {
+            Author = CurrentUser,
+            Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
+            ShowAvatar = true,
+        });
+
+        this.Messages.Add(new TextMessage()
+        {
+            Author = new Author() { Name = "Andrea", Avatar = "People_Circle2.png" },
+            Text = "Oh! That's great.",
+            ShowAvatar = true,
+        });
+
+        this.Messages.Add(new TextMessage()
+        {
+            Author = new Author() { Name = "Harrison", Avatar = "People_Circle14.png" },
+            Text = "That is good news.",
+            ShowAvatar = true,
+        });
+
+        this.Messages.Add(new TextMessage()
+        {
+            Author = new Author() { Name = "Margaret", Avatar = "People_Circle7.png" },
+            Text = "What kind of application is it and when are we going to launch?",
+            ShowAvatar = true,
+        });
     }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
+![Xamarin Forms chat typing indicator with image](SfChat_images/xamarin-forms-chat-typing-Indicator-image.jpg)
 
 ## Customize avatar view of typing indicator
 
@@ -232,13 +264,6 @@ namespace GettingStarted
 
 public class GettingStattedViewModel : INotifyPropertyChanged
 {
-    private ObservableCollection<object> messages;
-
-    /// <summary>
-    /// current user of chat.
-    /// </summary>
-    private Author currentUser;
-
     /// <summary>
     /// Indicates the typing indicator visibility. 
     /// </summary>
@@ -251,15 +276,13 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     
     public GettingStattedViewModel()
     {
-        this.Messages = new ObservableCollection<object>();
-        this.TypingIndicator = new ChatTypingIndicator();
         this.TypingIndicator = new ChatTypingIndicator();
         this.TypingIndicator.Authors.Add(new Author() { Name = "Harrison", Avatar = "People_Circle14.png" }        
-        **this.TypingIndicator.AvatarViewType = AvatarViewType.Text;**
         
-        this.TypingIndicator.Text = "Harrison is typing";
+        this.TypingIndicator.AvatarViewType = AvatarViewType.Text;
+        
+        this.TypingIndicator.Text = "Harrison is typing...";
         this.ShowTypingIndicator = true;
-        this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
     }
 
     /// <summary>
@@ -279,21 +302,6 @@ public class GettingStattedViewModel : INotifyPropertyChanged
     }
 
     /// <summary>
-    /// Gets or sets the message conversation.
-    /// </summary>
-    public ObservableCollection<object> Messages
-    {
-        get
-        {
-            return this.messages;
-        }
-        set
-        {
-            this.messages = value;
-        }
-    }
-
-    /// <summary>
     /// Gets or sets the value indicating whether the typing indicator is visible or not.
     /// </summary>
     public bool ShowTypingIndicator
@@ -308,41 +316,9 @@ public class GettingStattedViewModel : INotifyPropertyChanged
             RaisePropertyChanged("ShowTypingIndicator");
         }
     }
-
-    /// <summary>
-    /// Gets or sets the current user.
-    /// </summary>
-    public Author CurrentUser
-    {
-        get
-        {
-            return this.currentUser;
-        }
-        set
-        {
-            this.currentUser = value;
-            RaisePropertyChanged("CurrentUser");
-        }
-    }
-
-    /// <summary>
-    /// Property changed handler.
-    /// </summary>
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    /// <summary>
-    /// Occurs when property is changed.
-    /// </summary>
-    /// <param name="propName">changed property name</m>
-    public void RaisePropertyChanged(string propName)
-    {
-        if (this.PropertyChanged != null)
-        {
-            this.PropertyChanged(this, new ertyChangedEventArgs(propName));
-        }
-    }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
+![Xamarin Forms chat typing indicator with text](SfChat_images/xamarin-forms-chat-typing-indicator-text.jpg)

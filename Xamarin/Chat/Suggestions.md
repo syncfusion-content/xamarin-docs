@@ -56,7 +56,7 @@ namespace GettingStarted
             this.Content = sfChat;
         }
     }
-
+}
 
 public class GettingStartedViewModel : INotifyPropertyChanged
 {
@@ -79,8 +79,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
     public GettingStartedViewModel()
     {
-        this.messages = new ObservableCollection<object>();
-        this.currentUser = new Author() { Name = "Nancy", Avatar = ple_Circle16.png" };
+        this.Messages = new ObservableCollection<object>();
+        this.CurrentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
         
         chatSuggestions = new ChatSuggestions();
         
@@ -139,20 +139,20 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     {
         if (this.PropertyChanged != null)
         {
-            this.PropertyChanged(this, new PropertyChangedEventArgspName));
+            this.PropertyChanged(this, new PropertyChangedEventArgs (propName));
         }
     }
 
     private void GenerateMessages()
     {
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
-            Author = currentUser,
+            Author = CurrentUser,
             Text = "Flight to USA",
             ShowAvatar = true,
         });
 
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Avatar = "Aeroplane.png", Name = "Travel Bot" },
             Text = "Here's my suggestion",
@@ -165,6 +165,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
+![Xamarin Forms chat suggestion with text](SfChat_images/xamarin-forms-chat-suggestion-text.jpg)
 
 ### Add an image in suggestion item
 
@@ -241,13 +242,13 @@ public class GettingStartedViewModel :INotifyPropertyChanged
         
         chatSuggestions = new ChatSuggestions();
         
-        suggestions = new ObservableCollection<ISuggestion();
-        suggestions.Add(new Suggestion("Airways 1","Flight1.png"));
-        suggestions.Add(new Suggestion("Airways 2","Flight2.png"));
-        suggestions.Add(new Suggestion("Airways 3","Flight3.png"));
-        suggestions.Add(new Suggestion("Airways 4","Flight4.png"));
-        suggestions.Add(new Suggestion("Airways 5","Flight5.png"));
-        suggestions.Add(new Suggestion("Airways 6","Flight6.png"));
+        suggestions = new ObservableCollection<ISuggestion>();
+        suggestions.Add(new Suggestion("Airways 1", "Flight1.png"));
+        suggestions.Add(new Suggestion("Airways 2", "Flight2.png"));
+        suggestions.Add(new Suggestion("Airways 3", "Flight3.png"));
+        suggestions.Add(new Suggestion("Airways 4", "Flight4.png"));
+        suggestions.Add(new Suggestion("Airways 5", "Flight5.png"));
+        suggestions.Add(new Suggestion("Airways 6", "Flight6.png"));
         chatSuggestions.Items = suggestions;
         this.GenerateMessages();
     }
@@ -286,7 +287,7 @@ public class GettingStartedViewModel :INotifyPropertyChanged
     /// <summary>
     /// Property changed handler.
     /// </summary>
-    public event PropertyChangedEventHandlerPropertyChanged;
+    public event PropertyChangedEventHandler PropertyChanged;
 
     /// <summary>
     /// Occurs when property is changed.
@@ -296,15 +297,15 @@ public class GettingStartedViewModel :INotifyPropertyChanged
     {
         if (this.PropertyChanged != null)
         {
-            this.PropertyChanged(this, newPropertyChangedEventArgs(propName));
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
         }
     }
 
     private void GenerateMessages()
     {
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
-            Author = currentUser,
+            Author = CurrentUser,
             Text = "Flight to USA",
             ShowAvatar = true,
         });
@@ -319,10 +320,10 @@ public class GettingStartedViewModel :INotifyPropertyChanged
     }
 }
 
-
 {% endhighlight %}
 {% endtabs %}
 
+![Xamarin Forms chat suggestion with image](SfChat_images/xamarin-forms-chat-suggestion-image.jpg)
 
 ### Change the orientation of suggestions
 
@@ -405,7 +406,9 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         suggestions.Add(new Suggestion("Airways 4", "Flight4.png"));
         suggestions.Add(new Suggestion("Airways 5", "Flight5.png"));
         suggestions.Add(new Suggestion("Airways 6", "Flight6.png"));
-        **chatSuggestions.Orientation =SuggestionsOrientation.Vertical;**
+
+        chatSuggestions.Orientation =SuggestionsOrientation.Vertical;
+
         chatSuggestions.Items = suggestions;
         this.GenerateMessages();
     }
@@ -454,22 +457,22 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     {
         if (this.PropertyChanged != null)
         {
-            this.PropertyChanged(this, new PropertyChangedEventArg(propName));
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
         }
     }
 
     private void GenerateMessages()
     {
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
-            Author = currentUser,
+            Author = CurrentUser,
             Text = "Flight to USA",
             ShowAvatar = true,
         });
 
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
-            Author = new Author() { Avatar = "Aeroplane.png", Name ="Travel Bot" },
+            Author = new Author() { Avatar = "Aeroplane.png", Name = "Travel Bot" },
             Text = "Here's my suggestion",
             Suggestions = chatSuggestions,
             ShowAvatar = true,
@@ -479,6 +482,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 {% endhighlight %}
 {% endtabs %}
+
+![Xamarin Forms chat suggestion orientation](SfChat_images/xamarin-forms-chat-suggestion-orientation.jpg)
 
 ## Showing suggestions at bottom of chat control
 
@@ -523,20 +528,7 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
-
-            chatSuggestions = new ChatSuggestions();
-            suggestions = new ObservableCollection<ISuggestion>();
-            suggestions.Add(new Suggestion("Airways 1", "Flight1.png"));
-            suggestions.Add(new Suggestion("Airways 2", "Flight2.png"));
-            suggestions.Add(new Suggestion("Airways 3", "Flight3.png"));
-            suggestions.Add(new Suggestion("Airways 4", "Flight4.png"));
-            suggestions.Add(new Suggestion("Airways 5", "Flight5.png"));
-            suggestions.Add(new Suggestion("Airways 6", "Flight6.png"));
-
-            chatSuggestions.Items = suggestions;
-
-            this.sfChat.Suggestions = chatSuggestions;
-
+            this.sfChat.Suggestions = viewModel.ChatSuggestions;
             this.Content = sfChat;
         }
     }
@@ -551,10 +543,35 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     /// </summary>
     private Author currentUser;
 
+    /// <summary>
+    /// Chat suggestion
+    /// </summary>
+    private ChatSuggestions chatSuggestions;
+
+    /// <summary>
+    /// collection of suggestion items for chat suggestion.
+    /// </summary>
+    private ObservableCollection<ISuggestion> suggestions;
+
     public GettingStartedViewModel()
     {
         this.messages = new ObservableCollection<object>();
-        this.currentUser = new Author() { Name = "Nancy", Avatar = ple_Circle16.png" };
+        this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
+
+        ChatSuggestions = new ChatSuggestions();
+
+        suggestions = new ObservableCollection<ISuggestion>();
+        suggestions.Add(new Suggestion("Airways 1", "Flight1.png"));
+        suggestions.Add(new Suggestion("Airways 2", "Flight2.png"));
+        suggestions.Add(new Suggestion("Airways 3", "Flight3.png"));
+        suggestions.Add(new Suggestion("Airways 4", "Flight4.png"));
+        suggestions.Add(new Suggestion("Airways 5", "Flight5.png"));
+        suggestions.Add(new Suggestion("Airways 6", "Flight6.png"));
+
+        ChatSuggestions.Orientation = SuggestionsOrientation.Vertical;
+
+        ChatSuggestions.Items = suggestions;
+        this.GenerateMessages();
     }
 
     /// <summary>
@@ -569,6 +586,21 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         set
         {
             this.messages = value;
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the chat suggestion.
+    /// </summary>
+    public ChatSuggestions ChatSuggestions
+    {
+        get
+        {
+            return this.chatSuggestions;
+        }
+        set
+        {
+            this.chatSuggestions = value;
         }
     }
 
@@ -601,19 +633,39 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     {
         if (this.PropertyChanged != null)
         {
-            this.PropertyChanged(this, new PropertyChangedEventArgspName));
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
         }
+    }
+
+    private void GenerateMessages()
+    {
+        this.Messages.Add(new TextMessage()
+        {
+            Author = CurrentUser,
+            Text = "Flight to USA",
+            ShowAvatar = true,
+        });
+
+        this.Messages.Add(new TextMessage()
+        {
+            Author = new Author() { Avatar = "Aeroplane.png", Name = "Travel Bot" },
+            Text = "Here's my suggestion",
+            Suggestions = chatSuggestions,
+            ShowAvatar = true,
+        });   
     }
 }
 
 {% endhighlight %}
 {% endtabs %}
 
+![Xamarin Forms chat suggestion at bottom of control](SfChat_images/xamarin-forms-chat-suggestion-at-bottom.jpg)
+
 ## Cancel the suggestions from closing
 
 The suggestions list will be closed by default after the user has selected an option from the list. To prevent it from closing set the [SuggestionItemSelectedEventArgs.HideAfterSelection](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SuggestionItemSelectedEventArgs~HideAfterSelection.html) as false in the `SfChat.SuggestionItemSelected` event handler or in the `SfChat.SuggestionItemSelectedCommand` command's execution.
 
-#### SuggestionItemSelected event
+**SuggestionItemSelected event**
 
 {% tabs %}
 {% highlight c# %}
@@ -634,7 +686,7 @@ private void SfChat_SuggestionItemSelected(object sender, SuggestionItemSelected
 {% endhighlight %}
 {% endtabs %}
 
-#### SuggestionItemSelectedCommand command
+**SuggestionItemSelectedCommand command**
 
 {% tabs %}
 {% highlight xaml %}
@@ -652,24 +704,19 @@ private void SfChat_SuggestionItemSelected(object sender, SuggestionItemSelected
     <ContentPage.Content>
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
-                       
+                       SendMessageCommand="{Binding SendMessageCommand}"
                        CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
 </ContentPage>
 
 {% endhighlight %}
-
 {% highlight C# %}
+
 /// <summary>
 /// View model class for chat view.
 /// </summary>
 public class GettingStartedViewModel : INotifyPropertyChanged
 {
-    /// <summary>
-    /// current user of chat.
-    /// </summary>
-    private Author currentUser;
-    
     private ICommand suggestionItemSelectedCommand;
 
     public GettingStartedViewModel()
@@ -691,23 +738,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
             this.suggestionItemSelectedCommand = value;
         }
     }
-
-    /// <summary>
-    /// Property changed handler.
-    /// </summary>
-    public event PropertyChangedEventHandler PropertyChanged;
-
-    /// <summary>
-    /// Occurs when property is changed.
-    /// </summary>
-    /// <param name="propName">changed property name</param>
-    public void RaisePropertyChanged(string propName)
-    {
-        if (this.PropertyChanged != null)
-        {
-            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-        }
-    }
 }
 
 public class SuggestionItemSelectedCommandExt : ICommand
@@ -722,6 +752,7 @@ public class SuggestionItemSelectedCommandExt : ICommand
     public void Execute(object parameter)
     {
         var args = parameter as SuggestionItemSelectedEventArgs;
+        // Suggestion list not closed after selection.
         args.HideAfterSelection = false;
     }
 }

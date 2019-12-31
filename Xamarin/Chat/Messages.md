@@ -79,7 +79,7 @@ namespace GettingStarted
 /// <summary>
 /// View model class for chat view.
 /// </summary>
-pubic class GettingStartedViewModel : INotifyPropertyChanged
+public class GettingStartedViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> messages;
 
@@ -90,8 +90,8 @@ pubic class GettingStartedViewModel : INotifyPropertyChanged
 
     public GettingStartedViewModel()
     {
-        this.messages = new ObservableCollection<object>();
-        this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
+        this.Messages = new ObservableCollection<object>();
+        this.CurrentUser = new Author() { Name = "Nancy" ,Avatar = "People_Circle16.png" };
         this.GenerateMessages();
     }
 
@@ -129,7 +129,7 @@ pubic class GettingStartedViewModel : INotifyPropertyChanged
     /// <summary>
     /// Property changed handler.
     /// </summary>
-    public event PropertyChangedEventHandlerPropertyChanged;
+    public event PropertyChangedEventHandler PropertyChanged;
 
     /// <summary>
     /// Occurs when property is changed.
@@ -139,16 +139,16 @@ pubic class GettingStartedViewModel : INotifyPropertyChanged
     {
         if (this.PropertyChanged != null)
         {
-            this.PropertyChanged(this, newPropertyChangedEventArgs(propName));
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
         }
     }
 
     private void GenerateMessages()
     {
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
             Author = currentUser,
-            Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a newmobile application.",
+            Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
             ShowAvatar = true,
         });
     }
@@ -157,6 +157,7 @@ pubic class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
+![Xamarin Forms chat current user](SfChat_images/xamarin-forms-chat-current-user.jpg)
 
 ##Text message
 
@@ -219,8 +220,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
     public GettingStartedViewModel()
     {
-        this.messages = new ObservableCollection<object>(;
-        this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
+        this.Messages = new ObservableCollection<object>();
+        this.CurrentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
         this.GenerateMessages();
     }
 
@@ -258,7 +259,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     /// <summary>
     /// Property changed handler.
     /// </summary>
-    public event PropertyChangedEventHandlerPropertyChanged;
+    public event PropertyChangedEventHandler PropertyChanged;
 
     /// <summary>
     /// Occurs when property is changed.
@@ -274,25 +275,25 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
     private void GenerateMessages()
     {
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
-            Author = currentUser,
+            Author = CurrentUser,
             Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
             ShowAvatar = true,
         });
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Andrea",Avatar = "People_Circle2.png" },
             Text = "Oh! That's great.",
             ShowAvatar = true,
         });
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Harrison",Avatar = "People_Circle14.png" },
             Text = "That is good news.",
             ShowAvatar = true,
         });
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Margaret",Avatar = "People_Circle7.png" },
             Text = "What kind of application is it and when are we going to launch?",
@@ -303,6 +304,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 {% endhighlight %}
 {% endtabs %}
+
+![Xamarin Forms chat text message](SfChat_images/xamarin-forms-chat-text-message.jpg)
 
 ## Date picker message
 
@@ -378,8 +381,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
     public GettingStartedViewModel()
     {
-        this.messages = new ObservableCollection<object>(;
-        this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
+        this.Messages = new ObservableCollection<object>();
+        this.CurrentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
         this.GenerateMessages();
     }
 
@@ -417,7 +420,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     /// <summary>
     /// Property changed handler.
     /// </summary>
-    public event PropertyChangedEventHandlerPropertyChanged;
+    public event PropertyChangedEventHandler PropertyChanged;
 
     /// <summary>
     /// Occurs when property is changed.
@@ -427,23 +430,23 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     {
         if (this.PropertyChanged != null)
         {
-            this.PropertyChanged(this, newPropertyChangedEventArgs(propName));
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
         }
     }
 
     private void GenerateMessages()
     {
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
             Author = currentUser,
             Text = "Flight to USA",
             ShowAvatar = true,
         });
-        this.messages.Add(new DatePickerMessage()
+        this.Messages.Add(new DatePickerMessage()
         {
             Author = new Author() { Name = "Travel Bot",Avatar = "Aeroplane.png" },
             Text = "Select departure date",
-            ShowAvatar = true,
+            ShowAvatar = true,  
             SelectedDate = DateTime.Now
         });
     }
@@ -451,6 +454,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 {% endhighlight %}
 {% endtabs %}
+
+![Xamarin Forms chat date picker message](SfChat_images/xamarin-forms-chat-date-picker.jpg)
 
 ##Time picker message
 
@@ -525,8 +530,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
     public GettingStartedViewModel()
     {
-        this.messages = new ObservableCollection<object>(;
-        this.currentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
+        this.Messages = new ObservableCollection<object>(;
+        this.CurrentUser = new Author() { Name = "Nancy",Avatar = "People_Circle16.png" };
         this.GenerateMessages();
     }
 
@@ -564,7 +569,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     /// <summary>
     /// Property changed handler.
     /// </summary>
-    public event PropertyChangedEventHandlerPropertyChanged;
+    public event PropertyChangedEventHandler PropertyChanged;
 
     /// <summary>
     /// Occurs when property is changed.
@@ -574,23 +579,23 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     {
         if (this.PropertyChanged != null)
         {
-            this.PropertyChanged(this, newPropertyChangedEventArgs(propName));
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
         }
     }
 
     private void GenerateMessages()
     {
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
-            Author = currentUser,
+            Author = CurrentUser,
             Text = "Flight to USA",
             ShowAvatar = true,
         });
 
-        this.messages.Add(new TimePickerMessage()
+        this.Messages.Add(new TimePickerMessage()
         {
             Author = new Author() { Name = "Health care",Avatar = "Healthcare.png" },
-            Text = "Select convient time to meet Dr.Harryfor health check up.",
+            Text = "Select convenient time to meet Dr.Harry for health check up.",
             ShowAvatar = true,
             SelectedTime = new TimeSpan(8, 30, 00),
         });
@@ -600,6 +605,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
+![Xamarin Forms chat time picker message](SfChat_images/xamarin-forms-chat-time-picker.jpg)
 
 ## Calendar message
 
@@ -674,8 +680,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
     public GettingStartedViewModel()
     {
-        this.messages = new ObservableCollection<object>();
-        this.currentUser = new Author() { Name = "Nancy", Avatar ="People_Circle16.png" };
+        this.Messages = new ObservableCollection<object>();
+        this.CurrentUser = new Author() { Name = "Nancy", Avatar ="People_Circle16.png" };
         this.GenerateMessages();
     }
 
@@ -723,23 +729,23 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     {
         if (this.PropertyChanged != null)
         {
-            this.PropertyChanged(this, new PropertyChangedEventArg(propName));
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
         }
     }
 
     private void GenerateMessages()
     {
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
-            Author = currentUser,
+            Author = CurrentUser,
             Text = "Flight to USA",
             ShowAvatar = true,
         });
 
-        this.messages.Add(new CalendarMessage()
+        this.Messages.Add(new CalendarMessage()
         {
             Author = new Author() { Name = "Health care", Avatar ="Healthcare.png" },
-            Text = "select convient time to meet Dr.Harry for healthcheck up.",
+            Text = "Select convenient time to meet Dr.Harry for health check up.",
             ShowAvatar = true,
             SelectedDate = DateTime.Now,
         });
@@ -749,6 +755,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
+![Xamarin Forms chat calendar message](SfChat_images/xamarin-forms-chat-calendar-message.jpg)
 
 ## Hyperlink message
 
@@ -811,8 +818,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
     public GettingStartedViewModel()
     {
-        this.messages = new ObservableCollection<object>();
-        this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
+        this.Messages = new ObservableCollection<object>();
+        this.CurrentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
         this.GenerateMessages();
     }
 
@@ -866,14 +873,14 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
     private void GenerateMessages()
     {
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Michale", Avatar = "People_Circle23.png" },
             Text = "We should develop this app in Xamarin, since it provides native experience and performance.",
             ShowAvatar = true,
         });
 
-        this.messages.Add(new TextMessage()
+        this.Messages.Add(new TextMessage()
         {
             Author = currentUser,
             Text = "I haven't heard of Xamarin. What's Xamarin?",
@@ -883,7 +890,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         this.Messages.Add(new HyperlinkMessage()
         {
             Author = new Author() { Name = "Michale", Avatar = "People_Circle23.png" },
-            Text = "Refer the following documentation \n link to learn more about xamarin.",
+            Text = "Refer the following documentation link to learn more about xamarin.",
             Url = "https://docs.microsoft.com/en-us/xamarin/get-started/what-is-xamarin",
             ShowAvatar = true
         });
@@ -893,15 +900,17 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
+![Xamarin Forms chat hyper link message](SfChat_images/xamarin-forms-chat-hyperlink-message.jpg)
+
 ## Sending message
 
 The `SfChat.CurrentUser` can send messages using the send button in the message input area at the bottom of the chat control. Tapping the send button or pressing <kbd>Enter</kbd> key (in UWP) will create a new text message with the text in the editor and add it to the [SfChat.Messages] collection. The `SendMessage` event and `SendMessageCommand`will be executed upon tapping the send button.
 
-### Cancel the message from sending
+**Cancel the message from sending**
 
 The newly addded message can be canceled from sending in the `SendMessage` event handler and `SendMessageCommand` by setting the `Handled` value as `true` in the provided [SendMessageEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SendMessageEventArgs.html).
 
-#### SendMessage Event handler
+**SendMessage Event handler**
 
 {% tabs %}
 {% highlight c# %}
@@ -921,7 +930,7 @@ private void SfChat_SendMessage(object sender, SendMessageEventArgse)
 {% endhighlight %}
 {% endtabs %}
 
-#### SendMessage command
+**SendMessage command**
 
 {% tabs %}
 {% highlight xaml %}
@@ -975,6 +984,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         set
         {
             this.sendMessageCommand = value;
+            RaisePropertyChanged("SendMessageCommand")
         }
     }
 
@@ -982,6 +992,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     /// Property changed handler.
     /// </summary>
     public event PropertyChangedEventHandler PropertyChanged;
+
     /// <summary>
     /// Occurs when property is changed.
     /// </summary>
@@ -1017,7 +1028,7 @@ public class SendMessageCommandExt : ICommand
 
 By default the author name and avatar are not displayed for the outgoing messages(messages sent by the `SfChat.CurrentUser`). This can be customized in the `SendMessage` event handler or `SendMessageCommand's` execution.
 
-#### SendMessage Event handler
+**SendMessage Event handler**
 
 {% tabs %}
 {% highlight c# %}
@@ -1037,7 +1048,7 @@ private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-#### SendMessage command
+**SendMessage command**
 
 {% tabs %}
 {% highlight xaml %}
@@ -1064,62 +1075,15 @@ private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
 
 {% highlight C# %}
 
-/// <summary>
-/// View model class for chat view.
-/// </summary>
-public class GettingStartedViewModel : INotifyPropertyChanged
-{
-    private ICommand sendMessageCommand;
-
-    /// <summary>
-    /// current user of chat.
-    /// </summary>
-    private Author currentUser;
-    
-    public GettingStartedViewModel()
-    {
-        SendMessageCommand = new SendMessageCommandExt();
-    }
-
-    /// <summary>
-    /// Gets or sets the send message command.
-    /// </summary>
-    public ICommand SendMessageCommand
-    {
-        get
-        {
-            return this.sendMessageCommand;
-        }
-        set
-        {
-            this.sendMessageCommand = value;
-        }
-    }
-
-    /// <summary>
-    /// Property changed handler.
-    /// </summary>
-    public event PropertyChangedEventHandler PropertyChanged;
-    /// <summary>
-    /// Occurs when property is changed.
-    /// </summary>
-    /// <param name="propName">changed property name</param>
-    public void RaisePropertyChanged(string propName)
-    {
-        if (this.PropertyChanged != null)
-        {
-            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-        }
-    }
-}
-
 public class SendMessageCommandExt : ICommand
 {
     public event EventHandler CanExecuteChanged;
+    
     public bool CanExecute(object parameter)
     {
         return true;
     }
+
     public void Execute(object parameter)
     {
         var args = parameter as SendMessageEventArgs;
@@ -1184,6 +1148,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
+![Xamarin Forms chat message shape](SfChat_images/xamarin-forms-chat-dual-tear.jpg)
 
 ## Hide the message input view
 
@@ -1243,7 +1208,6 @@ namespace GettingStarted
 
 The message's avatar and author name visibility can be modified using [SfChat.ShowAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowAvatar.html) and [SfChat.ShowAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowAuthorName.html) property.
 
-
 {% tabs %}
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1294,6 +1258,8 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
+![Xamarin Forms chat hiding avatar and author visibility](SfChat_images/xamarin-forms-chat-hide-avatar-name.jpg)
+
 N> SfChat allows to change visibility of avatar and author name of a particular message using [Message.ShowAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~ShowAvatar.html) and [Message.ShowAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~ShowAuthorName.html). By default the `Message.ShowAvatar` property has higher priority than the `SfChat.ShowAvatar` property.
 
 ## Template for message
@@ -1326,10 +1292,11 @@ namespace GettingStarted
     }
 }
 
-public class MyDataTemplateSelector : Xamarin.Forms.DataTemplateSelector
+public class ChatMessageTemplateSelector : DataTemplateSelector
 {
     private readonly DataTemplate incomingDataTemplate;
     private readonly DataTemplate outgoingDataTemplate;
+    private readonly DataTemplate ratingDataTemplate;
 
     internal SfChat Chat
     {
@@ -1337,17 +1304,20 @@ public class MyDataTemplateSelector : Xamarin.Forms.DataTemplateSelector
         set;
     }
 
-    public MyDataTemplateSelector()
+    public ChatMessageTemplateSelector()
     {
-        this.incomingDataTemplate = new DataTemplate(typeof(IncomingTemplate);
-        this.outgoingDataTemplate = new DataTemplate(typeof(OutgoingTemplate);
+        this.incomingDataTemplate = new DataTemplate(typeof(IncomingTemplate));
+        this.outgoingDataTemplate = new DataTemplate(typeof(OutgoingTemplate));
+        this.ratingDataTemplate = new DataTemplate(typeof(RatingTemplate));
     }
-    
-    protected override DataTemplate OnSelectTemplate(object item,BindableObject container)
+
+    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
     {
         var message = item as IMessage;
         if (message == null)
             return null;
+
+
         if (message.Author == Chat.CurrentUser)
         {
             return outgoingDataTemplate;
@@ -1356,7 +1326,14 @@ public class MyDataTemplateSelector : Xamarin.Forms.DataTemplateSelector
         {
             if (item as ITextMessage != null)
             {
-                return incomingDataTemplate;
+                if ((item as ITextMessage).Text == "How would you rate your interaction with our travel bot?")
+                {
+                    return ratingDataTemplate;
+                }
+                else
+                {
+                    return incomingDataTemplate;
+                }
             }
             else
             {
@@ -1366,8 +1343,9 @@ public class MyDataTemplateSelector : Xamarin.Forms.DataTemplateSelector
     }
 }
 
-
 {% endhighlight %}
 {% endtabs %}
+
+![Xamarin Forms chat message template](SfChat_images/xamarin-forms-chat-message-template.jpg)
 
 You can also download the entire source code of this demo [here]().

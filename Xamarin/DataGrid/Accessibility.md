@@ -24,7 +24,7 @@ The below table illustrates the predefined automation values set internally whic
 <tr>
 <td>Header Row</td>
 <td>"Row" + RowIndex</td>
-<td>R0</td>
+<td>Row0</td>
 </tr>
 <tr>
 <td>Header Cell</td>
@@ -34,7 +34,7 @@ The below table illustrates the predefined automation values set internally whic
 <tr>
 <td>Row</td>
 <td>"Row" + RowIndex</td>
-<td>R4</td>
+<td>Row4</td>
 </tr>
 <tr>
 <td>Grid Cell</td>
@@ -44,7 +44,7 @@ The below table illustrates the predefined automation values set internally whic
 <tr>
 <td>Group Header</td>
 <td>"Row" + RowIndex</td>
-<td>R5</td>
+<td>Row5</td>
 </tr>
 <tr>
 <td>LoadMore View</td>

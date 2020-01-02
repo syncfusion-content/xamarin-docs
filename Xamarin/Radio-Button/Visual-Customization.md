@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual customization for Syncfusion.Xamarin.Forms SfRadioButton
-description: Learn how to customize the basic features of SfRadioButton
+title: Visual customization | SfRadioButton | Syncfusion | Xamarin.Forms
+description: change the description Learn how to customize the SfRadioButton CheckedColor, UncheckedColor, BorderWidth, and Text in Xamarin.Forms.
 platform: Xamarin.Forms
 control: SfRadioButton
 documentation: ug 
@@ -36,7 +36,35 @@ radioGroup.Children.Add(uncheck);
 {% endhighlight %}
 {% endtabs %}
 
-![StateColor Image](Images/StateColor.png)
+![CheckedColor and UncheckedColor in RadioButton](Images/StateColor.png)
+
+## BorderWidth
+The border thickness of the circle in the RadioButton control can be customized with the `BorderWidth` property.  
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfRadioGroup >
+<syncfusion:SfRadioButton Text="Checked State" IsChecked="True" BorderWidth="3"/>
+<syncfusion:SfRadioButton Text="UnChecked State" BorderWidth="3"/>
+</syncfusion:SfRadioGroup>
+{% endhighlight %}
+{% highlight c# %}
+SfRadioGroup radioGroup = new SfRadioGroup();
+SfRadioButton check = new SfRadioButton();
+check.Text = "Checked State";
+check.IsChecked = true;
+check.BorderWidth = 3;
+SfRadioButton uncheck = new SfRadioButton();
+uncheck.Text = "UnChecked State";
+uncheck.BorderWidth = 3;
+radioGroup.Children.Add(check);
+radioGroup.Children.Add(uncheck);
+{% endhighlight %}
+{% endtabs %}
+
+![RadioButton BorderWidth](Images/BorderWidth.png)
+
+N> BorderWidth support has not been provided for Android Platform.
 
 ## Setting caption text appearance 
 
@@ -65,7 +93,7 @@ radioButton.FontSize = 20;
 {% endhighlight %}
 {% endtabs %}
 
-![CaptionAppereance Image](Images/CaptionAppereance.png)
+![RadioButton TextAppereance](Images/CaptionAppereance.png)
 
 ## LineBreakMode
 The `LineBreakMode` allows you to wrap or truncate the text. The default value of this property is `NoWrap`. The following other options are available in `LineBreakMode`:

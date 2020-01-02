@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Zooming and Panning in Syncfusion.Xamarin.Forms Chart
-description: How to add ZoomPan behavior in Essential Xamarin.Forms Chart
+description: This section explains how to add ZoomPanBehavior to the chart and its features such as zooming types, zooming modes, events, and methods.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -18,13 +18,8 @@ Following properties are used to configure the zooming feature,
 * [`EnableZooming`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~EnableZooming.html) – used to enable/disable the pinch zooming. Default value is true. 
 * [`EnableDirectionalZooming`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~EnableDirectionalZooming.html) - Enables or disables the pinch zooming based on pinch gesture direction. The default value of this property is false.
 * [`EnableDoubleTap`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~EnableDoubleTap.html) – when you enable this property, you can double tap on the chart to reset it to the original size or zoom in by one level.
-* [`EnableSelectionZooming`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~EnableSelectionZooming.html) – when this property is set to true, you can double tap and drag to select a range on the chart to be zoomed in.
 * [`EnablePanning`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~EnablePanning.html) – used to enable/disable the panning. Default value is true.
 * [`MaximumZoomLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~MaximumZoomLevel.html) - used to determine the maximum zoom level of the chart.
-* [`SelectionRectStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectStrokeWidth.html) - used to change the stoke width of selection rectangle 
-* [`SelectionRectStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectStrokeColor.html) - used to change the stroke color of selection rectangle.  
-* [`SelectionRectStrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectStrokeDashArray.html) - used to change the stroke dashes of selection rectangle. 
-* [`SelectionRectFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectFillColor.html) - used to change the stroke fill color of selection rectangle. 
 
 N> EnableDirectionalZooming is not supported in the macOS platform.
 
@@ -57,6 +52,10 @@ chart.ChartBehaviors.Add(zoomPanBehavior);
 {% endhighlight %}
 
 {% endtabs %}
+
+## Selection zooming
+
+By specifying [`EnableSelectionZooming`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~EnableSelectionZooming.html) property to true, you can double tap and drag to select a range on the chart to be zoomed in.
 
 Following code snippet illustrates how to enable the box selection zooming,
 
@@ -97,6 +96,104 @@ Following screenshot shows the box selection on chart area,
 Following screenshot shows the zoomed area,
 
 ![Panning support in Xamarin.Forms Chart](zoompan_images/zoompan_img2.png)
+
+### Selection rectangle customization
+
+You can customize the selection rectangle using the below properties.
+
+* [`SelectionRectStrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectStrokeWidth.html) - used to change the stroke width of selection rectangle 
+* [`SelectionRectStrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectStrokeColor.html) - used to change the stroke color of selection rectangle.  
+* [`SelectionRectStrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectStrokeDashArray.html) - used to change the stroke dashes of selection rectangle. 
+* [`SelectionRectFillColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartZoomPanBehavior~SelectionRectFillColor.html) - used to change the fill color of selection rectangle. 
+
+### Show axis tooltip
+
+The axis tooltip on selection zooming can be enabled using the [`ChartAxis.ShowTrackballInfo`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~ShowTrackballInfo.html) property. You can customize the appearance of the axis tooltip by the below properties of [`ChartAxis.TrackballLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~TrackballLabelStyle.html).
+
+* [`AxisLabelAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle~AxisLabelAlignment.html) - used to change the position of the axis label.
+* [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~TextColor.html) – used to change the label text color.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BackgroundColor.html) – used to change the label background color.
+* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BorderColor.html) – used to change the label border color.
+* [`BorderThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BorderThickness.html) – used to change the border width.
+* [`LabelFormat`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) - used to format the label.
+* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~FontFamily.html) - used to change the font family for the axis label.
+* [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~FontAttributes.html) - used to change the fontAttributes for the axis label.
+* [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~FontSize.html) - used to change the font size for the axis label.
+* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~Margin.html) - used to change the margin for axis label.
+
+You can customize the line color between the tooltip for the selected range while selection zooming using the chart axis [`TrackballAxisLabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballAxisLabelStyle.html) [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~BorderColor.html).
+
+N> Selection zooming show axis tooltip feature is not supported in `UWP` platform.
+
+Following code snippet illustrates how to enable axis tooltip while selection zooming.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+	<chart:NumericalAxis ShowTrackballInfo="True">
+
+        <chart:NumericalAxis.TrackballLabelStyle>
+
+            <chart:ChartTrackballAxisLabelStyle LabelFormat="##.##"/>
+
+        </chart:NumericalAxis.TrackballLabelStyle>
+
+    </chart:NumericalAxis>
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+	<chart:NumericalAxis ShowTrackballInfo="True">
+
+        <chart:NumericalAxis.TrackballLabelStyle>
+
+            <chart:ChartTrackballAxisLabelStyle LabelFormat="##.##"/>
+
+        </chart:NumericalAxis.TrackballLabelStyle>
+
+    </chart:NumericalAxis>
+
+</chart:SfChart.SecondaryAxis>
+
+<chart:SfChart.ChartBehaviors>
+
+	<chart:ChartZoomPanBehavior EnableSelectionZooming="True"/>
+
+</chart:SfChart.ChartBehaviors>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+
+NumericalAxis primaryAxis = new NumericalAxis() { ShowTrackballInfo = true};
+
+primaryAxis.TrackballLabelStyle = new ChartTrackballAxisLabelStyle() { LabelFormat = "##.##" };
+
+chart.PrimaryAxis = primaryAxis;
+
+NumericalAxis secondaryAxis = new NumericalAxis() { ShowTrackballInfo = true};
+
+secondaryAxis.TrackballLabelStyle = new ChartTrackballAxisLabelStyle() { LabelFormat = "##.##" };
+
+chart.SecondaryAxis = secondaryAxis;
+ 
+ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
+
+zoomPanBehavior.EnableSelectionZooming = true;
+
+chart.ChartBehaviors.Add(zoomPanBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Show axis tooltip on selection zooming in Xamarin.Forms Chart](zoompan_images/zoompan_img4.png)
 
 ## Zoom Mode
 

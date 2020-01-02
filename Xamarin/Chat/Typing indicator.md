@@ -206,7 +206,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat typing indicator with image](SfChat_images/xamarin-forms-chat-typing-Indicator-image.jpg)
+![Xamarin Forms chat typing indicator with image](SfChat_images/xamarin-forms-chat-typing-Indicator-image.png)
 
 ## Customize avatar view of typing indicator
 
@@ -321,4 +321,4 @@ public class GettingStattedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat typing indicator with text](SfChat_images/xamarin-forms-chat-typing-indicator-text.jpg)
+![Xamarin Forms chat typing indicator with text](SfChat_images/xamarin-forms-chat-typing-indicator-text.png)

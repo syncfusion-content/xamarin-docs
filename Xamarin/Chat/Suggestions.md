@@ -165,7 +165,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat suggestion with text](SfChat_images/xamarin-forms-chat-suggestion-text.jpg)
+![Xamarin Forms chat suggestion with text](SfChat_images/xamarin-forms-chat-suggestion-text.png)
 
 ### Add an image in suggestion item
 
@@ -323,7 +323,7 @@ public class GettingStartedViewModel :INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat suggestion with image](SfChat_images/xamarin-forms-chat-suggestion-image.jpg)
+![Xamarin Forms chat suggestion with image](SfChat_images/xamarin-forms-chat-suggestion-image.png)
 
 ### Change the orientation of suggestions
 
@@ -483,7 +483,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat suggestion orientation](SfChat_images/xamarin-forms-chat-suggestion-orientation.jpg)
+![Xamarin Forms chat suggestion orientation](SfChat_images/xamarin-forms-chat-suggestion-orientation.png)
 
 ## Showing suggestions at bottom of chat control
 
@@ -659,7 +659,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat suggestion at bottom of control](SfChat_images/xamarin-forms-chat-suggestion-at-bottom.jpg)
+![Xamarin Forms chat suggestion at bottom of control](SfChat_images/xamarin-forms-chat-suggestion-at-bottom.png)
 
 ## Cancel the suggestions from closing
 

@@ -157,7 +157,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat current user](SfChat_images/xamarin-forms-chat-current-user.jpg)
+![Xamarin Forms chat current user](SfChat_images/xamarin-forms-chat-current-user.png)
 
 ##Text message
 
@@ -305,7 +305,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat text message](SfChat_images/xamarin-forms-chat-text-message.jpg)
+![Xamarin Forms chat text message](SfChat_images/xamarin-forms-chat-text-message.png)
 
 ## Date picker message
 
@@ -456,7 +456,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat date picker message](SfChat_images/xamarin-forms-chat-date-picker.jpg)
+![Xamarin Forms chat date picker message](SfChat_images/xamarin-forms-chat-date-picker.png)
 
 ##Time picker message
 
@@ -608,7 +608,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat time picker message](SfChat_images/xamarin-forms-chat-time-picker.jpg)
+![Xamarin Forms chat time picker message](SfChat_images/xamarin-forms-chat-time-picker.png)
 
 ## Calendar message
 
@@ -759,7 +759,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat calendar message](SfChat_images/xamarin-forms-chat-calendar-message.jpg)
+![Xamarin Forms chat calendar message](SfChat_images/xamarin-forms-chat-calendar-message.png)
 
 ## Hyperlink message
 
@@ -904,7 +904,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat hyper link message](SfChat_images/xamarin-forms-chat-hyperlink-message.jpg)
+![Xamarin Forms chat hyper link message](SfChat_images/xamarin-forms-chat-hyperlink-message.png)
 
 ## Sending message
 
@@ -1156,7 +1156,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat message shape](SfChat_images/xamarin-forms-chat-dual-tear.jpg)
+![Xamarin Forms chat message shape](SfChat_images/xamarin-forms-chat-dual-tear.png)
 
 ## Hide the message input view
 
@@ -1266,7 +1266,7 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat hiding avatar and author visibility](SfChat_images/xamarin-forms-chat-hide-avatar-name.jpg)
+![Xamarin Forms chat hiding avatar and author visibility](SfChat_images/xamarin-forms-chat-hide-avatar-name.png)
 
 N> SfChat allows to change visibility of avatar and author name of a particular message using [Message.ShowAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~ShowAvatar.html) and [Message.ShowAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~ShowAuthorName.html). By default the `Message.ShowAvatar` property has higher priority than the `SfChat.ShowAvatar` property.
 
@@ -1354,6 +1354,6 @@ public class ChatMessageTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat message template](SfChat_images/xamarin-forms-chat-message-template.jpg)
+![Xamarin Forms chat message template](SfChat_images/xamarin-forms-chat-message-template.png)
 
 You can also download the entire source code of this demo [here]().

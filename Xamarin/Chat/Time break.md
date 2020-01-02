@@ -56,7 +56,7 @@ namespace GettingStarted
     }
 }
 
-![Xamarin Forms chat time break](SfChat_images/xamarin-forms-chat-time-break.jpg)
+![Xamarin Forms chat time break](SfChat_images/xamarin-forms-chat-time-break.png)
 
 ## Stick time break view
 
@@ -359,4 +359,4 @@ internal class TimeBreakTemplateSelector : DataTemplateSelector
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat time break template](SfChat_images/xamarin-forms-chat-time-break-template.jpg)
+![Xamarin Forms chat time break template](SfChat_images/xamarin-forms-chat-time-break-template.png)

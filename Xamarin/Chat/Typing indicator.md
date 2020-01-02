@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | SfChat | Xamarin | Syncfusion
-description: Describes about the typing indicator feature and its customizations in Xamarin.Forms chat.
+description: Describes about the typing indicator feature and its available customizations in Xamarin.Forms chat control.
 platform: xamarin
 control: SfChat
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview | SfChat | Xamarin | Syncfusion
-description: Describes about the suggestion feature and its functionalities in forms chat.
+description: Describes about the suggestion feature, its functionalities and customizations available in Xamarin.Forms chat control.
 platform: xamarin
 control: SfChat
 documentation: ug

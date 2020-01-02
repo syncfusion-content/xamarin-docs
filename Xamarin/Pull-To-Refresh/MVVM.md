@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with Xamarin.Forms SfPullToRefresh in MVVM | SfPullToRefresh | Xamarin | Syncfusion
-description: This topic describes about how to use Syncfusion Xamarin.Forms PullToRefresh in MVVM using commands.
+description: Describes about how to use Syncfusion Xamarin.Forms PullToRefresh in MVVM using commands and how to refresh from view model.
 platform: Xamarin.Forms 
 control: SfPullToRefresh 
 documentation: ug
@@ -118,4 +118,4 @@ namespace PullToRefresh_MVVM
 {% endhighlight %}
 {% endtabs %}
 
-You can download the sample from GitHub [here](https://github.com/SyncfusionExamples/DataGrid-GettingStarted-in-Xamarin-Forms).
+You can download the sample from GitHub [here](https://github.com/SyncfusionExamples/PullToRefresh-MVVM-ViewModel-Refresh-Xamarin.Forms).

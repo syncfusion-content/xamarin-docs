@@ -1102,11 +1102,7 @@ public class SendMessageCommandExt : ICommand
 
 The `SfChat` alllows to change the shape of the messages by using the [SfChat.MessageShape](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageShape.html) property.
 
-<<<<<<< HEAD
-To apply `MessageShape` in the SfChat, refer the below code example:
-=======
 To customize `MessageShape` in the SfChat, refer the below code example:
->>>>>>> a7ef53181ad721953bb211e8f27745859eac952d
 
 {% tabs %}
 {% highlight xaml %}

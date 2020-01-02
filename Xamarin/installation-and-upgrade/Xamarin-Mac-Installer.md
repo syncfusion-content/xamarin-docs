@@ -12,7 +12,7 @@ documentation: ug
 
 The following procedure illustrates how to install Xamarin Mac installer. 
 
-1. Double-click the Syncfusion Xamarin Mac Setup(.pkg) file. The Setup Wizard opens. Click Continue.
+1. Double-click the Syncfusion Xamarin Mac Installer(.pkg) file. The Installer Wizard opens. Click Continue.
 
    ![](Mac-Installer_images/Mac_Installer1.png)
    

@@ -1356,4 +1356,4 @@ public class ChatMessageTemplateSelector : DataTemplateSelector
 
 ![Xamarin Forms chat message template](SfChat_images/xamarin-forms-chat-message-template.png)
 
-You can also download the entire source code of this demo [here]().
+You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/Chat-Message-Template-Xamarin.Forms).

@@ -118,7 +118,9 @@ rootFrame = new Frame();
 
 rootFrame.NavigationFailed += OnNavigationFailed; List<System.Reflection.Assembly> assembliesToInclude = new List<System.Reflection.Assembly>(); 
 
-// Add all the renderer assemblies your app uses assembliesToInclude.Add(typeof(Syncfusion.SfNavigationDrawer.XForms.UWP.SfNavigationDrawerRenderer).GetTypeInfo().Assembly); 
+// Add all the renderer assemblies your app uses 
+
+assembliesToInclude.Add(typeof(Syncfusion.SfNavigationDrawer.XForms.UWP.SfNavigationDrawerRenderer).GetTypeInfo().Assembly); 
 
 // Replace the Xamarin.Forms.Forms.Init(e);
 

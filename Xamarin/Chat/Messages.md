@@ -958,6 +958,7 @@ private void SfChat_SendMessage(object sender, SendMessageEventArgse)
 </ContentPage>
 
 {% endhighlight %}
+{% highlight c# %}
 
 /// <summary>
 /// View model class for chat view.

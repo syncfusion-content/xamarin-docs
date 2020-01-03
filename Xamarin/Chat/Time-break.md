@@ -13,6 +13,7 @@ The chat control provides a convenient way to group messages based on the date a
 
 {% tabs %}
 {% highlight xaml %}
+
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -55,6 +56,9 @@ namespace GettingStarted
         }
     }
 }
+
+{% endhighlight %}
+{% endtabs %}
 
 ![Xamarin Forms chat time break](SfChat_images/xamarin-forms-chat-time-break.png)
 

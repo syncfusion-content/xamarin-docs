@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started for Syncfusion.Xamarin.Forms NavigationDrawer
-description: A quick tour to initial users on Syncfusion NavigationDrawer control for Xamarin.Android platform
+description: Getting started with Syncfusion NavigationDrawer control in Xamarin.Forms and walk through to create a demo application from the scratch. 
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
@@ -118,7 +118,9 @@ rootFrame = new Frame();
 
 rootFrame.NavigationFailed += OnNavigationFailed; List<System.Reflection.Assembly> assembliesToInclude = new List<System.Reflection.Assembly>(); 
 
-// Add all the renderer assemblies your app uses assembliesToInclude.Add(typeof(Syncfusion.SfNavigationDrawer.XForms.UWP.SfNavigationDrawerRenderer).GetTypeInfo().Assembly); 
+// Add all the renderer assemblies your app uses 
+
+assembliesToInclude.Add(typeof(Syncfusion.SfNavigationDrawer.XForms.UWP.SfNavigationDrawerRenderer).GetTypeInfo().Assembly); 
 
 // Replace the Xamarin.Forms.Forms.Init(e);
 

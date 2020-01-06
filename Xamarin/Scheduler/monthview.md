@@ -1243,6 +1243,6 @@ The following steps will explain how to configure the custom fonts:
 >**NOTE**
  No need to mention .ttf when set the custom font in iOS.
 
-### Custom ffont setting in Xamarin.Forms (UWP)
+### Custom font setting in Xamarin.Forms (UWP)
 * Add your custom font (e.g. Lobster-Regular.ttf) to the Assets folder of the Xamarin.Forms (UWP) project.
 * Then, use the custom font name as FontFamily. When Setting custom font in UWP, use the format (FontFamily = ” Assets/Lobster-Regular.ttf#Lobster”).

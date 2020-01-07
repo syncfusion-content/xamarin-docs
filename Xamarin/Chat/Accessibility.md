@@ -42,6 +42,7 @@ The following code snippet demonstrates how to set the `AutomationId` to chat.
  <sfChat:SfChat x:Name="sfChat"
                 Messages="{Binding Messages}"
                 CurrentUser="{Binding CurrentUser}" 
+                ShowTypingIndicator="True"
                 AutomationId="SyncfusionChat"/>
 
 {% endhighlight %}
@@ -52,6 +53,7 @@ SfChat sfChat = new SfChat();
 GettingStartedViewModel viewModel = new GettingStartedViewModel();
 sfChat.Messages = viewModel.Messages;
 sfChat.CurrentUser = viewModel.CurrentUser;
+sfChat.ShowTypingIndicator = true;
 sfChat.AutomationId = "SyncfusionChat";
 
 {% endhighlight %}

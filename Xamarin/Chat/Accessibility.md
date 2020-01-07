@@ -68,10 +68,10 @@ Refer to the following code snippet to access the inner elements of chat from th
 [Description("SfChat Automation Id")]
 public void SfChat_AutomationId()
 {
-   // To tap the MessageEditor View
+   // To tap the Message editor in the message input area
    App.Tap("SyncfusionChat MessageEditor");
 
-   // To tap SendMessage view 
+   // To tap Send button in the message input area
    App.Tap("SyncfusionChat SendMessage");
 }
 

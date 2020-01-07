@@ -10,7 +10,7 @@ documentation: ug
 
 # Time Picker
 
-This section explains the steps required to create custom TimePicker by using picker control.
+We recommend to use our standalone Time Picker component which is available from our Volume 4 2019 release and please have the documentation [`link`](https://help.syncfusion.com/xamarin/timepicker/overview). If you need further customisations, below steps explains how to create a custom TimePicker by using the Picker control.
 
 **Step** **1** **:** Create a custom class, and name it as “CustomTimePicker”. This class should be inherited from the picker control.
 

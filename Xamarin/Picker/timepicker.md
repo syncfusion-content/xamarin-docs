@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Demonstrate TimePicker using Syncfusion Picker for Xamarin.Forms
-description: Overview and key features of Picker control
+description: A quick tour to initial users for getting started with TimePicker control for Xamarin.Forms platform
 platform: Xamarin
 control: Picker
 documentation: ug

@@ -32,7 +32,7 @@ The below table illustrates the predefined automation values set internally whic
 
 The following screenshot illustrates the `AutomationId` values of the inner elements of SfChat.
 
-![Automation Id format for Chat inner element](SfChat_images/ChatAutomationID.png)
+![Automation Id format for Chat inner element](SfChat_images/ChatAutomationID.jpg)
 
 The following code snippet demonstrates how to set the `AutomationId` to chat.
 

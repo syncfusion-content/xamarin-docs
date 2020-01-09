@@ -11,11 +11,11 @@ documentation: ug
 
 This feature provide supports to draw a polygon, polyline and point icon on the map. We can provide input as the Geo points to draw shapes in two different ways. 
 
-    1.Drawing shapes using point collection
-    2.Drawing shapes using shape file
+    1.Add shapes using point collection
+    2.Add shapes using shape file
 	
 
-## Drawing shapes using point collection
+## Add shapes using point collection
 
 We can provide input as the Geo point collection in sample to draw a shape. We can add more number of shapes using [`Sublayer`](https://help.syncfusion.com/xamarin/maps/sublayer) support of Maps. There are three type of shapes available in shape file layer and it can be changed by using [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeType.html) property.
 
@@ -320,7 +320,7 @@ A point icon is shape with a dimension of 0 that occupies a single location in c
 
 The size, shape, and position of the map points can be customized using the [`MapPointIconSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointIconSize.html) , [`MapPointIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointIcon.html) , [`MapPointHorizontalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointHorizontalAlignment.html) and [`MapPointVerticalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~MapPointVerticalAlignment.html) properties of shape file layer.
 
-## Drawing shapes using shape file
+## Add shapes using shape file
 
 [`SfMaps`](https://help.syncfusion.com/xamarin/sfmaps/getting-started) allows to provide various shape types in [`ShapeFileLayer`](https://help.syncfusion.com/xamarin/sfmaps/layers#shape-file-layer) such as Polygon, Polyline, and Points. Shape point collection and shape type should be add in shape file itself.
 

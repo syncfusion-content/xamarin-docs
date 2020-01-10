@@ -336,3 +336,59 @@ Article Parallax Header Page<br/>
 </td>
 </tr>
 </table>
+
+## UI Kit 2.4.0.0
+
+The UI Kit version 2.4.0.0 has 4 new screens for the following categories.
+
+<table>
+<tr>
+<th align="center">S.No</th>
+<th align="center">Categories</th>
+<th align="center">Pages</th>
+</tr>
+<tr>
+<td align="center">
+1
+</td>
+<td>
+Dashboard
+</td>
+<td>
+Health Care Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+2
+</td>
+<td>
+Settings
+</td>
+<td>
+Help Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+3
+</td>
+<td>
+Navigation
+</td>
+<td>
+Songs Page<br/>
+</td>
+</tr>
+<tr>
+<td align="center">
+4
+</td>
+<td>
+Forms
+</td>
+<td>
+Business Registration Form Page<br/>
+</td>
+</tr>
+</table>

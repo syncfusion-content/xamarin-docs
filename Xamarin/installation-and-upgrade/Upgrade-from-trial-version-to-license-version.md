@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Install and Deployment process of Syncfusion Xamarin products
-description: Learn how to install and deploy the Syncfusion Xamarin component
+title: Upgrade from Trial Version to License Version| Syncfusion
+description: This section provides information about upgrading from trial Essential Studio version to a license version
 platform: Xamarin
 control: Installation and Deployment
 documentation: ug

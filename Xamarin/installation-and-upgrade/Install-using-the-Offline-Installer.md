@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Essential Studio Offline Installer
+title: Syncfusion Essential Studio Offline Installer
 description: this section provides information regarding the Syncfusion Xamarin Offline installer and steps for installing it
 platform: Xamarin
 control: Installation and Deployment

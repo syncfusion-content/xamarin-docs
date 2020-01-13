@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Installation and Deployment process for Syncfusion Essential Studio Xamarin
-description: Learn how to install and deploy the Syncfusion Xamarin component
+title: Essential Studio Mac Installer | Syncfusion
+description: this section provides the information about essential studio mac installer and steps for installation
 platform: Xamarin
 control: Installation and Deployment
 documentation: ug

@@ -2,7 +2,7 @@
 
 layout: post
 title: Customize WeekView at Syncfusion SfSchedule for Xamarin.Forms
-description: Learn how to Customize the schedule WeekView in SfSchedule control in Xamarin.Forms
+description: Learn how to customize the scheduler week view settings and its appearance in SfSchedule control in Xamarin.Forms
 platform: xamarin
 control: SfSchedule
 documentation: ug
@@ -467,6 +467,28 @@ schedule.WeekViewSettings = weekViewSettings;
 {% endtabs %}
 
 ![Time label size in schedule xamarin forms](weekview_images/xamarin.forms-schedule-timelabel-size.png)
+
+## Time ruler size customization
+
+You can customize the size of time ruler in `WeekView` by setting the [TimeRulerSize](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.WeekViewSettings~TimeRulerSize.html) property in `WeekViewSettings`.
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView="WeekView">
+   <schedule:SfSchedule.WeekViewSettings>
+        <schedule:WeekViewSettings TimeRulerSize="0"/>
+   </schedule:SfSchedule.WeekViewSettings>
+</schedule:SfSchedule>
+{% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WeekView;
+WeekViewSettings weekViewSettings = new WeekViewSettings();
+wayViewSettings.TimeRulerSize = 0;
+schedule.WeekViewSettings = weekViewSettings;
+{% endhighlight %}
+{% endtabs %}
+
+![Time ruler size customization in schedule xamarin forms](weekview_images/xamarin.forms-schedule-weekview-timerulersizecustomization.jpg)
 
 ## Selection
 You can customize the default appearance of selection UI in the timeslots.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hiding propmpt characters of SfMaskedEdit control for Xamarin.Forms paltform
-description: Learn how to hide the prompt characters of SfMasedEdit while control loses focus
+title: Hiding prompt character of Syncfusion MaskedEdit for Xamarin.Forms
+description: Learn how to hide the prompt characters of SfMasedEdit while control loses focus for Xamarin.Forms platform
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
@@ -23,6 +23,4 @@ maskedEdit.HidePromptOnLeave = true;
 {% endhighlight %}
 {% endtabs %}
 
-![](SfMaskedEditImages/HPL.png)
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_HidingPrompt.zip).
+![HidePromptOnLeave support in Xamarin.Forms masked edit](SfMaskedEditImages/HPL.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Formatting value of Value property of SfMaskedEdit control for Xamarin.Forms platform
-description: Learn how to format the characters in the Value property of SfMaskedEdit control
+title: Formatting Value property of Syncfusion MaskedEdit for Xamarin.Forms
+description: Learn how to format the characters in the Value property of SfMaskedEdit control for Xamarin.Forms platform
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
@@ -122,6 +122,4 @@ private void MaskedEdit4_ValueChanged(object sender, Syncfusion.XForms.MaskedEdi
 
 Refer this [link](events.html#valuechanged-event) to know more about the `ValueChanged` event of SfMaskedEdit control.
 
-![](SfMaskedEditImages/FormattingValue.png)
-
-This demo can be downloaded from this [link](http://files2.syncfusion.com/Xamarin.Forms/Samples/MaskedEdit_FormattingValue.zip).
+![ValueFormat support in Xamarin.Forms masked edit](SfMaskedEditImages/FormattingValue.png)

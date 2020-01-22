@@ -244,3 +244,116 @@ inputLayout.InputView = combobox;
 ![Combobox](Supported-input-views-images/textInput_input_img6.PNG)
 
 N> Entry and Editor are the only input views supported by [`SfTextInputLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html) in WPF platform.
+
+## Picker
+
+To pick an item from the list, add [Picker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<inputLayout:SfTextInputLayout Hint="Picker"
+                               HelperText="Select a color">
+<Picker>
+  <Picker.ItemsSource>
+     <x:Array Type="{x:Type x:String}">
+     <x:String>Red</x:String>
+     <x:String>Blue</x:String>
+     <x:String>Green</x:String>
+     <x:String>Purple</x:String>
+     <x:String>Yellow</x:String>
+     </x:Array>
+   </Picker.ItemsSource>
+</Picker>
+</inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var inputLayout = new SfTextInputLayout();
+inputLayout.Hint = "Picker"; 
+inputLayout.HelperText = "Select a color";
+var picker = new Picker();
+List<string> colors = new List<string>();
+colors.Add("Red");
+colors.Add("Blue");
+colors.Add("Green");
+colors.Add("Purple");
+colors.Add("Yellow");
+picker.ItemsSource = colors;
+inputLayout.InputView = picker; 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> UWP and WPF will not support [`Xamarin.Forms Picker`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/picker/) as input view of the text input layout. 
+
+## Date picker
+
+To select a date, add [DatePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<inputLayout:SfTextInputLayout ContainerType="None"
+                               Hint="Date" 
+                               HelperText="Select a date">
+<DatePicker MinimumDate="01/01/2019"
+            MaximumDate="12/31/2019" 
+            Date="11/12/2019"/>
+</inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var inputLayout = new SfTextInputLayout();
+var datePicker = new DatePicker();
+inputLayout.Hint = "Date";
+inputLayout.HelperText = "Select a date from a calender";
+datePicker.MinimumDate = new DateTime(2019, 1, 1);
+datePicker.MaximumDate = new DateTime(2019, 12, 31);
+datePicker.Date = new DateTime(2019, 11, 12);
+inputLayout.InputView = datePicker;
+         
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> UWP and WPF will not support [`Xamarin.Forms DatePicker`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/datepicker) as input view of the text input layout.
+
+## Time picker
+
+To select a time, add [TimePicker](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker).
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<inputLayout:SfTextInputLayout Hint="Time"
+                               HelperText="Select a time">
+<TimePicker Time="12:00:00"/>
+</inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var inputLayout = new SfTextInputLayout();
+var timePicker = new TimePicker();
+inputLayout.Hint = "Time";
+inputLayout.HelperText = "Select a time";
+timePicker.Time = new TimeSpan(12, 00, 00) 
+inputLayout.InputView = timePicker;
+         
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> UWP and WPF will not support [`Xamarin.Forms TimePicker`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/timepicker) as input view of the text input layout.

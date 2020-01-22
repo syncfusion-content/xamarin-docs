@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization for Syncfusion Xamarin.Forms Button
-description: Learn how to customize the appearance of Text, Image, Background, CornerRadius, and GradientBackground in Xamarin.Forms Button 
+title: Customization for Syncfusion Essential Xamarin.Forms SfButton
+description: This section describes how to customize the appearance of text, background and image for SfButton in Xamarin.Forms.
 platform: xamarin.forms
 control: sfbutton
 documentation: ug
@@ -294,12 +294,12 @@ button.ImageWidth = 50;
 
 The [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageAlignment.html) property is used to customize the alignment of icon image in SfButton. The following options are available in [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageAlignment.html):
 
-    * Start  - Places the image at the start if any flow direction is mentioned.
-    * End    - Places the image at the end if any flow direction is mentioned.
-    * Top    - Places the image at the top of the text.
-    * Bottom - Places the image at the bottom of the text.
-    * Left   - Places the image at the left of the text. 
-    * Right  - Places the image at the right of the text.
+* [`Start`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.Alignment.html) - Places the image at the start if any flow direction is mentioned.
+* [`End`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.Alignment.html) - Places the image at the end if any flow direction is mentioned.
+* [`Top`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.Alignment.html) - Places the image at the top of the text.
+* [`Bottom`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.Alignment.html) - Places the image at the bottom of the text.
+* [`Left`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.Alignment.html) - Places the image at the left of the text. 
+* [`Right`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.Alignment.html) - Places the image at the right of the text.
 
 N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ShowIcon.html) property to enable the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property. 
 
@@ -443,16 +443,17 @@ public class CommandDemoViewModel : INotifyPropertyChanged
 
     public CommandDemoViewModel()
     {
-        BackgroundColor();
+        SetBackgroundColor();
         this.Background=Color.Accent;
     }
 
-    private void BackgroundColor()
+    private void SetBackgroundColor()
     {
+	    //do whatever you want to do here
         this.Background = this.Background == Color.DeepSkyBlue ? Color.Accent : Color.DeepSkyBlue;
     }
 
-    public ICommand ButtonCommand => new Command(BackgroundColor);
+    public ICommand ButtonCommand => new Command(SetBackgroundColor);
 
 }
 

@@ -134,6 +134,13 @@ public partial class MainWindow : FormsApplicationPage
 {% endhighlight %}
 {% endtabs %}  
 
+## Supported platforms
+
+* Android
+* iOS
+* Windows (UWP and WPF)
+
+
 ## Create a simple application with SfSchedule  
     
 This section explains how to create a simple application using SfSchedule control. SfSchedule control can be configured entirely in C# code or by using XAML markup. This is how the final output will look like on iOS, Android and Windows Phone devices.  
@@ -141,7 +148,7 @@ This section explains how to create a simple application using SfSchedule contro
 ![GettingStarted](GettingStarted_images/xamarin.forms.-schedule-over-view.png)   
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted285067184.zip)
+here [ScheduleGettingStarted](https://github.com/SyncfusionExamples/xamarin-schedule-getting-started)
     
 This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.  
     

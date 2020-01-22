@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Demonstrate Date Picker using Syncfusion Picker for Xamarin.Forms
-description: Overview and key features of Picker control
+description: A quick tour to initial users for getting started with DatePicker control for Xamarin.Forms platform
 platform: Xamarin
 control: Picker
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 # Date Picker
 
-This section explains the steps required to create custom Date Picker by using picker control.
+We recommend to use our standalone Date Picker component which is available from our Volume 4 2019 release and please have the documentation [`link`](https://help.syncfusion.com/xamarin/datepicker/overview). If you need further customizations, below steps explains how to create a custom DatePicker by using the Picker control.
 
 **Step** **1** **:** Create a custom class, and named it as “CustomDatePicker”. This class should be inherited from picker control.
 

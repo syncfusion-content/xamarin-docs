@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SfCardLayout in Essential Syncfusion.Xamarin.Forms Cards
-description: Customization of SfCardLayout and SfCardView.
+description: This section describes about the Customization features of SfCardLayout and SfCardView in Xamarin.Forms.
 platform: xamarin
 control: Cards
 documentation: ug
@@ -136,6 +136,8 @@ cardView.FadeOutOnSwiping = true;
 {% endhighlight %}
 
 {% endtabs %}
+
+N> This property won't work when adding the SfCardView as a child of SfCardLayout.
 
 You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/xamarin.forms-cards).
 

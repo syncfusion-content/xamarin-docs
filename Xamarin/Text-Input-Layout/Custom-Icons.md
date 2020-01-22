@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom icons
-description: How to add custom icons for leading and trailing view.
+title: Custom icons support in Syncfusion TextInputLayout in Xamarin.Forms.
+description: This section describes how to add custom icons for leading and trailing view and how to customise the height and width of the leading and trailing view.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
@@ -50,8 +50,8 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Custom-Icons-images/textInput_icons_img1.png)
-![](Custom-Icons-images/textInput_icons_img2.png)
+![Leading view inside position](Custom-Icons-images/textInput_icons_img1.png)
+![Leading view outside position](Custom-Icons-images/textInput_icons_img2.png)
 
 ## Trailing  view
 
@@ -86,6 +86,58 @@ inputLayout.InputView = new Entry();
 
 {% endtabs %}
 
-![](Custom-Icons-images/textInput_icons_img3.png)
-![](Custom-Icons-images/textInput_icons_img4.png)
+![Trailing view inside position](Custom-Icons-images/textInput_icons_img3.png)
+![Trailing view outside position](Custom-Icons-images/textInput_icons_img4.png)
 
+## Leading and trailing view customization
+
+The height and width of the leading and trailing view's direct child can be customized inside the text input layout. The leading and trailing view's height can be customized up to 48px, but there is no limit on width.
+
+{% tabs %}
+
+{% highlight xaml %} 
+
+  <inputLayout:SfTextInputLayout Padding="15"
+                                 Hint="Password" 
+                                 TrailingViewPosition="Inside" 
+                                 EnablePasswordVisibilityToggle="false">
+   <Entry />
+   <inputLayout:SfTextInputLayout.TrailingView>
+      <border:SfBorder WidthRequest="130"
+                       CornerRadius="20" 
+                       HeightRequest="30"  
+                       BackgroundColor="#00619e">
+        <Label TextColor="White"
+               VerticalTextAlignment="Center" 
+               HorizontalTextAlignment="Center" 
+               Text="Show password"/>
+      </border:SfBorder>
+   </inputLayout:SfTextInputLayout.TrailingView>
+   </inputLayout:SfTextInputLayout>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+
+var inputLayout = new SfTextInputLayout();
+var border = new SfBorder();
+var label = new Label();
+inputLayout.Hint = "Password";
+inputLayout.EnablePasswordVisibilityToggle = false;
+border.WidthRequest = 130;
+border.HeightRequest = 30;
+border.CornerRadius = 20;
+border.BackgroundColor = Color.FromHex("#00619e");
+label.TextColor= Color.White;
+label.VerticalTextAlignment = TextAlignment.Center;
+label.HorizontalTextAlignment = TextAlignment.Center;
+label.Text = "Show password";
+border.Content = label;
+inputLayout.TrailingView = border;
+inputLayout.InputView = new Entry(); 
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![customisation](Custom-Icons-images/textInput_icons_img5.png)

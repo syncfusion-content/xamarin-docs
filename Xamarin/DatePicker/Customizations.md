@@ -20,6 +20,7 @@ SfDatePicker allows customizing the header's background, text color, and fonts.
 SfDatePicker allows enabling or disabling the header section by setting the `SfDatePicker.ShowHeader` property to True or False. Default value of `SfDatePicker.ShowHeader` property is "True".
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -59,6 +60,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Set custom header 
@@ -66,6 +68,7 @@ namespace DatePickerSample
 SfDatePicker allows providing custom text to its header by setting the `SfDatePicker.HeaderText` property. Default value of `SfDatePicker.HeaderText` property is "Date Picker".
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -105,6 +108,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Background
@@ -112,6 +116,7 @@ namespace DatePickerSample
 Background color of the header can be customized by setting the `SfDatePicker.HeaderBackgroundColor` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -127,7 +132,6 @@ Background color of the header can be customized by setting the `SfDatePicker.He
 </ContentPage>
 
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight c# %}
 
@@ -152,6 +156,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Text-Color 
@@ -159,6 +164,7 @@ namespace DatePickerSample
 Text color of the header can be customized by setting the `SfDatePicker.HeaderTextColor` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -177,9 +183,28 @@ Text color of the header can be customized by setting the `SfDatePicker.HeaderTe
 
 {% highlight c# %}
 
-picker.HeaderTextColor = Color.Red; 
+using Syncfusion.XForms.Pickers;
+using Xamarin.Forms;
+
+namespace DatePickerSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            SfDatePicker datePicker = new SfDatePicker()
+            {
+                HeaderTextColor = Color.Red; 
+            };
+
+            this.Content = datePicker;
+        }
+    }
+}
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Font 
@@ -191,6 +216,7 @@ This section explains about the Font customization of header text.
 FontFamily of the header text can be customized by setting the `SfDatePicker.HeaderFontFamily` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <<?xml version="1.0" encoding="utf-8" ?>
@@ -230,6 +256,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 #### FontSize
@@ -237,6 +264,7 @@ namespace DatePickerSample
 FontSize of the header text can be customized by setting the `SfDatePicker.HeaderFontSize` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -276,6 +304,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}   
 
 #### FontAttribute
@@ -283,6 +312,7 @@ namespace DatePickerSample
 FontAttribute of the header text can be customized by setting the `SfDatePicker.HeaderFontAttribute` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -322,6 +352,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## Column header customization
@@ -333,6 +364,7 @@ SfDatePicker allows customizing the column header's background, text color, and 
 SfDatePicker allows enabling or disabling the column header section by setting the `SfDatePicker.ShowColumnHeader` property to True or False. Default value of `SfDatePicker.ShowColumnHeader` property is "True".
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -372,6 +404,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Set custom column header 
@@ -379,6 +412,7 @@ namespace DatePickerSample
 SfDatePicker allows providing custom text to its column header by setting the `SfDatePicker.DayHeaderText`, `SfDatePicker.MonthHeaderText`, and `SfDatePicker.YearHeaderText` properties. Default value of `SfDatePicker.DayHeaderText` property is "Day", `SfDatePicker.MonthHeaderText` is "Month", and `SfDatePicker.YearHeaderText` is "Year".
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -421,11 +455,16 @@ namespace DatePickerSample
     }
 }
 
+{% endhighlight %}
+
+{% endtabs %}
+
 ### Background
 
 Background color of the column header can be customized by setting the `SfDatePicker.ColumnHeaderBackgroundColor` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -441,7 +480,6 @@ Background color of the column header can be customized by setting the `SfDatePi
 </ContentPage>
 
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight c# %}
 
@@ -466,6 +504,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Text-Color 
@@ -473,6 +512,7 @@ namespace DatePickerSample
 Text color of the column header can be customized by setting the `SfDatePicker.ColumnHeaderTextColor` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -512,6 +552,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Font 
@@ -523,6 +564,7 @@ This section explains about the Font customization of column header text.
 FontFamily of the column header text can be customized by setting the `SfDatePicker.ColumnHeaderFontFamily` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -562,6 +604,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 #### FontSize
@@ -569,6 +612,7 @@ namespace DatePickerSample
 FontSize of the column header text can be customized by setting the `SfDatePicker.ColumnHeaderFontSize` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -608,6 +652,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}   
 
 #### FontAttribute
@@ -615,6 +660,7 @@ namespace DatePickerSample
 FontAttribute of the column header text can be customized by setting the `SfDatePicker.ColumnHeaderFontAttribute` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -654,6 +700,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## Footer customization
@@ -665,6 +712,7 @@ SfDatePicker allows customizing background, text color of the OK and Cancel butt
 DatePicker allows enabling or disabling the footer section by setting the `SfDatePicker.ShowFooter` property to True or False. Default value of `SfDatePicker.ShowFooter` property is "False".
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -704,6 +752,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### OK and Cancel buttons customizations
@@ -713,6 +762,7 @@ namespace DatePickerSample
 Background colors of the OK and Cancel buttons can be customized by setting the `SfDatePicker.OKButtonBackgroundColor` and `SfDatePicker.CancelButtonBackgroundColor` properties.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -730,7 +780,6 @@ Background colors of the OK and Cancel buttons can be customized by setting the 
 </ContentPage>
 
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight c# %}
 
@@ -756,6 +805,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 #### Text-Color 
@@ -763,6 +813,7 @@ namespace DatePickerSample
 Text colors of the OK and Cancel buttons can be customized by setting the `SfDatePicker.OKButtonTextColor` and `SfDatePicker.CancelButtonTextColor` properties.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -805,6 +856,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Perform validation with default validation button
@@ -901,6 +953,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## Selected item customization
@@ -912,6 +965,7 @@ SfDatePicker allows customizing the SelectedItem's background, text color, and f
 The background color of the SelectedItem can be customized by setting the `SfDatePicker.SelectionBackgroundColor` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -927,7 +981,6 @@ The background color of the SelectedItem can be customized by setting the `SfDat
 </ContentPage>
 
 {% endhighlight %}
-{% endtabs %}
 
 {% highlight c# %}
 
@@ -952,6 +1005,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Text-Color 
@@ -959,6 +1013,7 @@ namespace DatePickerSample
 Text color of the SelectedItem can be customized by setting the `SfDatePicker.SelectedItemTextColor` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -998,6 +1053,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Font 
@@ -1009,6 +1065,7 @@ This section explains about the Font customization of SelectedItem text.
 FontFamily of the SelectedItem text can be customized by setting the `SfDatePicker.SelectedItemFontFamily` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1048,6 +1105,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 #### FontSize
@@ -1055,6 +1113,7 @@ namespace DatePickerSample
 FontSize of the SelectedItem text can be customized by setting the `SfDatePicker.SelectedItemFontSize` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1094,6 +1153,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}   
 
 #### FontAttribute
@@ -1101,6 +1161,7 @@ namespace DatePickerSample
 FontAttribute of the SelectedItem text can be customized by setting the `SfDatePicker.SelectedItemFontAttribute` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1140,6 +1201,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ## Unselected item customization
@@ -1151,6 +1213,7 @@ SfDatePicker allows customizing the Unselected item's text color, and fonts.
 Text color of the Unselected item can be customized by setting the `SfDatePicker.UnselectedItemTextColor` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1190,6 +1253,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ### Font 
@@ -1240,6 +1304,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 #### FontSize
@@ -1286,6 +1351,7 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}   
 
 #### FontAttribute
@@ -1293,6 +1359,7 @@ namespace DatePickerSample
 FontAttribute of the Unselected item text can be customized by setting the `SfDatePicker.UnselectedItemFontAttribute` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -1332,5 +1399,6 @@ namespace DatePickerSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 

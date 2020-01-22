@@ -9,6 +9,8 @@ documentation: ug
 
 # Handling Selected Items
 
+## Retriving selected  values in Xamarin SfAutoComplete 
+
 SfAutoComplete provides a way to handle the selected item using the following properties:
 
 * SelectedIndex
@@ -202,13 +204,23 @@ namespace AutocompleteSample
             stackLayout.Children.Add(autoComplete);
             this.Content = stackLayout;
         }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following codesnippet will handle the event
+
+{% tabs%}
+
+{% highlight C# %}
 
         private void autoComplete_SelectionChanged(object sender, Syncfusion.SfAutoComplete.XForms.SelectionChangedEventArgs e)
         {
             DisplayAlert("Selection Changed", "SelectedIndex: " + autoComplete.SelectedIndex, "OK");
         }
-    }
-}
 
 {% endhighlight %}
 
@@ -281,7 +293,33 @@ namespace AutocompleteSample
         {
             InitializeComponent();
             SelectedIndices = new List<int>() { 2, 4, 7 };
-            this.BindingContext = this;
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                MultiSelectMode = MultiSelectMode.Token,
+                SelectedIndices = this.SelectedIndices,
+                AutoCompleteSource = new List<string>()
+                {
+                    "Antigua and Barbuda",
+                    "American Samoa",
+                    "Afghanistan",
+                    "Antarctica",
+                    "Argentina",
+                    "Anguilla",
+                    "Albania",
+                    "Algeria",
+                    "Andorra",
+                    "Angola"
+                }
+            };
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
         }
     }
 }
@@ -357,15 +395,15 @@ using Xamarin.Forms;
 
 namespace AutocompleteSample
 {
-    public partial class MainPage : ContentPage, INotifyPropertyChanged
+ public partial class MainPage : ContentPage,INotifyPropertyChanged
     {
+
         public event PropertyChangedEventHandler PropertyChanged;
 
         protected virtual void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
 
         private object selectedIndices;
         public object SelectedIndices
@@ -378,10 +416,66 @@ namespace AutocompleteSample
 
             }
         }
+
         public MainPage()
         {
             InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                MultiSelectMode = MultiSelectMode.Token,
+                AutoCompleteSource = new List<string>()
+                {
+                    "Antigua and Barbuda",
+                    "American Samoa",
+                    "Afghanistan",
+                    "Antarctica",
+                    "Argentina",
+                    "Anguilla",
+                    "Albania",
+                    "Algeria",
+                    "Andorra",
+                    "Angola"
+                }
+            };
+            stackLayout.Children.Add(autoComplete);
+
+            ListView mainListView = new ListView()
+            {
+                RowHeight = 30,
+            };
+
+            Binding itemSource_Binding = new Binding();
+            itemSource_Binding.Source = autoComplete;
+            itemSource_Binding.Path = "SelectedIndices";
+            mainListView.SetBinding(ListView.ItemsSourceProperty, itemSource_Binding);
+
+           
+            DataTemplate itemTemplate = new DataTemplate(() =>
+            {
+                StackLayout layout = new StackLayout()
+                {
+                    Orientation = StackOrientation.Horizontal
+                };
+
+                Label nameLabel = new Label();
+                nameLabel.Text = "SelectedIndex : ";
+                layout.Children.Add(nameLabel);
+                Label selectedindexLabel = new Label();
+                selectedindexLabel.SetBinding(Label.TextProperty,".");
+                layout.Children.Add(selectedindexLabel);
+                return new ViewCell { View = layout };
+            });
+            mainListView.ItemTemplate = itemTemplate;
+            stackLayout.Children.Add(mainListView);
             this.BindingContext = this;
+            this.Content = stackLayout;
         }
     }
 }
@@ -575,12 +669,23 @@ namespace AutocompleteSample
             this.Content = stackLayout;
         }
 
-        private void autoComplete_SelectionChanged(object sender, Syncfusion.SfAutoComplete.XForms.SelectionChangedEventArgs e)
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following event will be triggered
+
+{% tabs %}
+
+{% highlight C# %}
+
+       private void autoComplete_SelectionChanged(object sender, Syncfusion.SfAutoComplete.XForms.SelectionChangedEventArgs e)
         {
             DisplayAlert("Selection Changed", "SelectedItem: " + autoComplete.SelectedItem, "OK");
         }
-    }
-}
 
 {% endhighlight %}
 

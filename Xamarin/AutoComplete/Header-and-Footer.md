@@ -6,7 +6,10 @@ platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
+
 # Header and Footer
+
+## Header and Footer in Xamarin SfAutoComplete
 
 We can provide Header and Footer view in the suggestion list in SfAutoComplete by enabling `ShowDropDownHeaderView` and `ShowDropDownFooterView`. 
 
@@ -125,14 +128,24 @@ namespace AutocompleteSample
             stackLayout.Children.Add(autoComplete);
             this.Content = stackLayout;
         }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Envets 
+
+{% tabs %}
+
+{% highlight C# %}
 
         private void SfAutoComplete_ValueChanged(object sender, Syncfusion.SfAutoComplete.XForms.ValueChangedEventArgs e)
         {
             SearchLabel.Text = "Search for " + e.Value;
         }
-    }
-}
-
+        
 {% endhighlight %}
 
 {% endtabs %}

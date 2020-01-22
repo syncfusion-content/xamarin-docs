@@ -8,6 +8,8 @@ documentation: ug
 ---
 # Maximum Display Item with Expander
 
+## Maximum display item with expander in Xamarin SfAutoComplete
+
 Restrict the number of suggestions displayed and have the remaining items loaded by selecting LoadMore.We can restrict maximum suggestion to be displayed with the `MaximumSuggestion` property. We can set the desire text for the displaying the Load more text with the property `LoadMoreText`.
 
 {% tabs %}
@@ -101,7 +103,7 @@ namespace AutocompleteSample
 
 ![Maximum display item with Expander](images/Maximum-display-item-with-Expander/LoadMore.png)
 
-### Restricting the maximum display of item dynamically
+## Restricting the maximum display of item dynamically
 
 We can restrict the maximum display of items dynamically by calling `LoadMore` method. The user can dynamically change the maximum suggestion count by calling LoadMore method by giving the maximum suggestion as the argument inside.
 

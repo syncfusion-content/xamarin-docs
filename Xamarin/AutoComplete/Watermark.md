@@ -9,6 +9,8 @@ documentation : ug
 
 # Watermark
 
+## WaterMark in Xamarin SfAutocomplete
+
 Watermark provides a short note about the type of input to enter in the editor control. Watermarks are visible only if the text is empty. Also it will reappear if the text is cleared.
 The following example, explains the usability of watermark which hints user to start with the character “U”.
 

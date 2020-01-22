@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual Style in Syncfusion AvatarView Xamarin.Forms.
-description: Explaining about visual styles in SfAvatarView.
+description: This section will explain about the different visual styles that exist in Xamarin.Forms SfAvatarView.
 platform: Xamarin
 control: AvatarView
 documentation: ug

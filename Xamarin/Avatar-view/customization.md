@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in Syncfusion AvatarView Xamarin.Forms
-description: This section will explain about how to customize the default View in Xamarin.Forms SfAvatarView.
+description: This section will explain about how to achieve the customization of default View in Xamarin.Forms SfAvatarView.
 platform: Xamarin
 control: AvatarView
 documentation: ug

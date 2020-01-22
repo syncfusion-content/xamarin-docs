@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion Xamarin.Forms AvatarView
-description: A quick tour to new users on Syncfusion AvatarView control for Xamarin.Forms
+description: This section will explain how to initialize and use Xamarin.Forms SfAvataView control in simple way.
 platform: xamarin
 control: SfAvatarView
 documentation: ug

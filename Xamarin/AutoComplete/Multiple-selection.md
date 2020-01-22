@@ -186,7 +186,7 @@ namespace AutocompleteSample
 
 ## Create and Initialize Business Models
 
-Define a simple model class Employee with with feils Name, Image and populate employee data in ViewModel.
+Define a simple model class `Employee` with the property of Name, Image and populate employee data in ViewModel.
 
 { % tabs %}
 

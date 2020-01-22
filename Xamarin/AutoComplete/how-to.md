@@ -90,6 +90,19 @@ namespace Events
             stack.Children.Add(autocomplete);
             this.Content = stack;
         }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following event will be fiered 
+
+{% tabs %}
+
+{% highlight C# %}
+
 
         void Handle_SelectionChanged(object sender, Syncfusion.SfAutoComplete.XForms.SelectionChangedEventArgs e)
         {
@@ -99,8 +112,6 @@ namespace Events
             string removedItems = removedEmployee != null ? removedEmployee.Name : "null";
             DisplayAlert("SelectionChanged", "AddedItems: " + addedItems + "\n" + "RemovedItems: " + removedItems, "Ok");
         }
-    }
-}
 
 {% endhighlight %}
 

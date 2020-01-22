@@ -13,7 +13,7 @@ documentation : ug
 
 Essential AutoComplete for Xamarin.Forms provides a simpler way to complete the text based on the characters that the user has entered before. It also provides option to choose a suggestion from drop down or append a suggestion to the text directly.
 
-![](images/Overview/overview.png)
+![SfAutocomplete OverView](images/Overview/overview.png)
 
 ## Key Features
 

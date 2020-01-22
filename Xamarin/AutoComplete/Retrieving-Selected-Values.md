@@ -9,7 +9,7 @@ documentation: ug
 
 # Handling Selected Items
 
-## Retriving selected  values in Xamarin SfAutoComplete 
+## Retrieving selected  values in Xamarin SfAutoComplete 
 
 SfAutoComplete provides a way to handle the selected item using the following properties:
 
@@ -211,7 +211,7 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-The following codesnippet will handle the event
+The following code snippet will handle the event
 
 {% tabs%}
 

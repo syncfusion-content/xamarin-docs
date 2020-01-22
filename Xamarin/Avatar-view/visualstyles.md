@@ -9,6 +9,7 @@ documentation: ug
 
 # Visual Style
 
+## Visual styles in Xamarin Avatar View(SfAvatarView)
 The `SfAvatarView` control supports customization using the following built-in visual styles:
 
 * Custom

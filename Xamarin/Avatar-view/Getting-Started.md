@@ -9,6 +9,8 @@ documentation : ug
 
 # Getting Started
 
+## Getting started with Xamarin Avatar View (SfAvatarView)
+
 This section explains the steps required to work with the SfAvatarView control for Xamarin.Forms.
 
 ## Adding SfAvatarView reference
@@ -70,7 +72,10 @@ The Android and UWP launch the SfAvatarView without any initialization, and it i
 
 To launch the SfAvatarView in iOS, call the `SfAvatarView.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called as demonstrated in the following code example.
 
+{% tabs %}
+
 {% highlight c# %}
+
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
     …
@@ -79,11 +84,16 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
     LoadApplication (new App ());
     …
 }
+
 {% endhighlight %} 
+
+{% endtabs %}
 
 ### Release mode issue in UWP platform
 
 The known Framework issue in UWP platform is that the custom controls will not be rendered when deploying an application in `Release Mode`. It can be resolved by initializing the SfBorder assemblies in the `App.xaml.cs` file in the UWP project as demonstrated in the following code example.
+
+{% tabs %}
 
 {% highlight c# %}
 // In App.xaml.cs
@@ -105,6 +115,8 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Creating an SfAvatarView control
 

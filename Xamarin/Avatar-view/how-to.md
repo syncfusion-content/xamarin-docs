@@ -54,7 +54,7 @@ xmlns:badge="clr-namespace:Syncfusion.XForms.BadgeView;assembly=Syncfusion.SfBad
             badge.BadgeSettings = new BadgeSetting();
             BadgeSetting badgeSetting = new BadgeSetting();
             badgeSetting.BadgeType = BadgeType.Success;
-            badgeSetting.BadgeIcon = BadgeIcon.Available;
+            badgeSetting.BadgeIcon = BadgeIcon.Away;
             badgeSetting.BadgePosition = BadgePosition.BottomRight;
             badgeSetting.BadgeAnimation = BadgeAnimation.Scale;
             badgeSetting.Offset = new Point(-10, -10);

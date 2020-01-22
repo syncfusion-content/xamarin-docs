@@ -9,6 +9,8 @@ documentation: ug
 
 # Customization 
 
+## Customization in Xamarin Avatar View(SfAvatarView)
+
 The SfAvatarView control provides options to customize the color and size. The control can be customized using the following properties:
 
 ## Colors
@@ -298,6 +300,7 @@ You can customize the thickness of the avatar view using the `BorderWidth` prope
             avatarview.AvatarShape = AvatarShape.Circle;
             avatarview.AvatarSize = AvatarSize.Large;
             avatarview.BorderWidth = 4;
+            avatarview.BorderColor = Color.Red,
             avatarview.ContentType = ContentType.Default;
             avatarview.ImageSource = "ellanaa.png";
             mainGrid.Children.Add(avatarview);

@@ -7,7 +7,9 @@ control: SfAvatarView
 documentation: ug
 ---
 
-# Avatar Types
+# Content Types
+
+## Avatar Types
 
 The `SfAvatarView` control provides the following five different ways to display the view:
 
@@ -107,7 +109,7 @@ The `SingleCharacter` is used for displaying the first character in the string y
             avatarview.HeightRequest = 50;
             avatarview.CornerRadius = 25;
             avatarview.ContentType = ContentType.Initials;
-            avatarview.AvatarName = "A";
+            avatarview.AvatarName = "Alex";
             avatarview.InitialsType = InitialsType.SingleCharacter;
             avatarview.InitialsColor = Color.Black;
             mainGrid.Children.Add(avatarview);
@@ -148,7 +150,7 @@ The `DoubleCharacter` is used for displaying a two-characters text you have set 
             avatarview.HeightRequest = 50;
             avatarview.CornerRadius = 25;
             avatarview.ContentType = ContentType.Initials;
-            avatarview.AvatarName = "AA";
+            avatarview.AvatarName = "Alex";
             avatarview.InitialsType = InitialsType.DoubleCharacter;
             avatarview.InitialsColor = Color.Black;
             mainGrid.Children.Add(avatarview);
@@ -188,7 +190,7 @@ You can set the default vector images that already present in avatar view by set
             avatarview.HorizontalOptions = LayoutOptions.Center;
             avatarview.WidthRequest = 50;
             avatarview.HeightRequest = 50;
-            avatarview.CornerRadius = 35;
+            avatarview.CornerRadius = 25;
             avatarview.ContentType = ContentType.AvatarCharacter;
             avatarview.AvatarCharacter = AvatarCharacter.Avatar10;
             mainGrid.Children.Add(avatarview);
@@ -330,6 +332,10 @@ You can set the initials only in the group view by setting the `InitialsMemberPa
 
 {% highlight xaml %}
 
+<ContentPage.BindingContext>
+        <local:EmployeeViewMdoel/>
+</ContentPage.BindingContext>
+
    <sfavatar:SfAvatarView ContentType="Group"                  
                           VerticalOptions="Center"
                           HorizontalOptions="Center"
@@ -342,9 +348,7 @@ You can set the initials only in the group view by setting the `InitialsMemberPa
                 </sfavatar:SfAvatarView>
 
 {% endhighlight %}
-{% endtabs %}
 
-{% tabs %}
 {% highlight c# %}
 
 public partial class MainPage : ContentPage, INotifyPropertyChanged

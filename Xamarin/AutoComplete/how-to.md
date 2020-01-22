@@ -97,7 +97,7 @@ namespace Events
 
 {% endtabs %}
 
-The following event will be fiered 
+The following event will be called. 
 
 {% tabs %}
 
@@ -189,7 +189,7 @@ Create simple `EmployeeViewModel` that contains the properties of  `Employee` cl
 
 {% endhighlight %}
 
-{% endtabs % }
+{% endtabs %}
 
 The following screenshot illustrates the result of adding the item.
 

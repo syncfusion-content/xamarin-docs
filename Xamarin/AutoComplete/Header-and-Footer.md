@@ -135,7 +135,7 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-## Evets 
+## Events 
 
 The following event will be hooked.
 

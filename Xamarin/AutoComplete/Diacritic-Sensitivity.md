@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Diacritic sensitivity in Syncfusion SfAutoComplete control 
-description: Learn how to enable and disable Diacritic sensitivity in SfAutoComplete
+description: This section will describes about how to enable and disable Diacritic sensitivity in Xamarin.Forms SfAutoComplete
 platform: xamarin
 control: SfAutoComplete
 documentation: ug

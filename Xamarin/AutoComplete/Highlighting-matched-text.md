@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MatchHighlighting in Syncfusion SfAutoComplete control 
-description: Learn how to highlight the matched text in SfAutoComplete
+description: This section will describe about how to highlight the matched characters in Xamarin.Forms SfAutoComplete.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug

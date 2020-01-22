@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NoResultsFoundText in Syncfusion SfAutoComplete control for Forms
-description: Learn how to display the no result found text in SfAutoComplete
+description: This section will describe about how to display the no result found text in Xamarin.Forms SfAutoComplete.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug

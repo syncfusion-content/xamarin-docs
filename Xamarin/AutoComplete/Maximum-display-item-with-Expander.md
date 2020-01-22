@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoadMore in Syncfusion SfAutoComplete control for Xamarin.Forms
-description: Learn how to restrict maximum suggestion to be displayed in SfAutoComplete
+description: This section will deswcribe about how to restrict maximum suggestion to be displayed in Xamarin.Forms SfAutoComplete.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug

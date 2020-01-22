@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Getting Started with Syncfusion Xamarin.Forms AvatarView
-description : A quick tour to new users on Syncfusion AvatarView control for Xamarin.Forms
-platform : xamarin
-control : SfAvatarView
-documentation : ug
+layout: post
+title: Getting Started with Syncfusion Xamarin.Forms AvatarView
+description: A quick tour to new users on Syncfusion AvatarView control for Xamarin.Forms
+platform: xamarin
+control: SfAvatarView
+documentation: ug
 ---
 
 # Getting Started

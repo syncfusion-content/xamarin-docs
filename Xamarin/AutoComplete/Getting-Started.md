@@ -9,6 +9,8 @@ documentation : ug
 
 # Getting Started
 
+## Getting started with SfAutoComplete
+
 This section explains the steps to create AutoComplete, populate it with data and filter the suggestions. This section covers only the minimal features that are needed to get started with the AutoComplete.
 
 To get start quickly with Xamarin.Forms SfAutoComplete, you can check on this video:
@@ -67,6 +69,8 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 Create an instance of `SfAutoCompleteRenderer` in FinishedLaunching overridden method of an AppDelegate class in iOS project as shown below:
 
+{% tabs %}
+
 {% highlight C# %}
 
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -82,9 +86,13 @@ return base.FinishedLaunching(app, options);
 
 {% endhighlight %}
 
+{% endtabs %}
+
 ### Additional Step for UWP
 
 This step is required only if the application is deployed in Release mode with .NET native tool chain enabled and it is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the SfAutoComplete assembly at OnLaunched overridden method of the App class in UWP project is the suggested workaround. And the code example is shown below:
+
+{% tabs %}
 
 {% highlight C# %}
 
@@ -126,6 +134,8 @@ Window.Current.Activate();
 }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Initializing AutoComplete 
 

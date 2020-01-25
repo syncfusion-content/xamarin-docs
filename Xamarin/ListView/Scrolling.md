@@ -68,9 +68,9 @@ listView.IsScrollBarVisible = false;
 {% endhighlight %}
 {% endtabs %}
 
-## Load without virtualization
+## ListView with full height
 
-The `SfListView` will load all of its items by setting the [IsScrollingEnabled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsScrollingEnabled.html) property to `false`. The default value of `IsScrollingEnabled` is `true`. If `IsScrollingEnabled` is set as `true` then `SfListView` loads its contents to view size and reuse the items while scrolling.
+The `SfListView` will load all of its items by setting the [IsScrollingEnabled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~IsScrollingEnabled.html) property to `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -80,6 +80,8 @@ The `SfListView` will load all of its items by setting the [IsScrollingEnabled](
 listView.IsScrollingEnabled = false; 
 {% endhighlight %}
 {% endtabs %}
+
+N> ListView's scrolling will not be enabled when `IsScrollingEnabled` is `false`. To enable scrolling, load ListView inside `ScrollView`.
 
 ## Identifying scroll state changes
 

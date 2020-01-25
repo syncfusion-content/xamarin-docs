@@ -363,7 +363,7 @@ public class CommandViewModel
   private void SelectionChagedCommandMethod(object obj)
   {
     var listView = obj as SfListView;
-    listView.SelectedItems.Clear();
+    DisplayAlert("Message", (listView.SelectedItem as Contacts).ContactName + " is selected", "OK");
   }
 }
 

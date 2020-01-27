@@ -9,6 +9,8 @@ documentation : ug
 
 # Customizing AutoComplete
 
+## Customizing AutoComplete in Xamarin AutoComplete (SfAutoComplete)
+
 AutoComplete provides user friendly customizing options for both entry part and drop down part. In this section, customizing entire AutoComplete control is explained.
 
 ## Customizing the Entry
@@ -131,11 +133,62 @@ namespace AutocompleteSample
 {
     public partial class MainPage : ContentPage
     {
+
+        PersonViewModel personViewModel = new PersonViewModel();
+
         public MainPage()
         {
             InitializeComponent();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                DisplayMemberPath="Name",
+                DataSource= personViewModel.PersonCollection,
+            };
+
+            DataTemplate itemTemplate = new DataTemplate(() =>
+            {
+                StackLayout layout = new StackLayout()
+                {
+                    Orientation = StackOrientation.Horizontal,
+                    Padding=new Thickness(2,0,0,0),
+                };
+
+                Image image = new Image();
+                image.WidthRequest = 12;
+                image.Source = ImageSource.FromFile("BackgroundColor.png");
+                layout.Children.Add(image);
+
+                Label nameLabel = new Label();
+                nameLabel.VerticalOptions = LayoutOptions.Center;
+                nameLabel.SetBinding(Label.TextProperty, "Name");
+                layout.Children.Add(nameLabel);
+                return new ViewCell { View = layout };
+            });
+            autoComplete.ItemTemplate = itemTemplate;
+
+            this.BindingContext = personViewModel;
+            stackLayout.Children.Add(autoComplete);
+            this.Content = stackLayout;
         }
     }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Following code contains the the ViewModel properties.
+
+{% tabs %}
+
+{% highlight C# %}
 
     public class Person
     {
@@ -176,11 +229,11 @@ namespace AutocompleteSample
             personCollection.Add(new Person() { Age = 22, Name = "Aaron" });
         }
     }
-}
 
 {% endhighlight %}
 
 {% endtabs %}
+
 
 ![AutoComplete item template](images/Customizing-AutoComplete/item-template.png)
 

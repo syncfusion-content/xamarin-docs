@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Multi Selection in Syncfusion SfAutoComplete control for Xamarin.Forms
-description: Learn how to restrict maximum suggestion to be displayed in SfAutoComplete
+description: This section will describe about how to restrict maximum suggestion to be displayed in Xamarin.Forms SfAutoComplete.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
 # Multiple Selection
 
+## Multiple Selection in Xamarin SfAutoComplete
 Select multiple items from a suggestion list. There are two ways to perform multi selection in autocomplete.
 
 * Token Representation
@@ -148,14 +149,51 @@ using Xamarin.Forms;
 
 namespace AutocompleteSample
 {
-    public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-    }
+	public partial class MainPage : ContentPage
+	{
+		public MainPage()
+		{
+			InitializeComponent();
+			EmployeeViewModel employeeViewModel = new EmployeeViewModel();
+			this.BindingContext = employeeViewModel;
+			StackLayout stackLayout = new StackLayout()
+			{
+				VerticalOptions = LayoutOptions.Start,
+				HorizontalOptions = LayoutOptions.Start,
+				Padding = new Thickness(30)
+			};
 
+            SfAutoComplete autoComplete = new SfAutoComplete()
+            {
+                HeightRequest = 40,
+                DropDownItemHeight = 50,
+                DataSource = employeeViewModel.EmployeeCollection,
+                DisplayMemberPath = "Name",
+                ImageMemberPath = "Image",
+                TokensWrapMode = TokensWrapMode.Wrap,
+                MultiSelectMode = MultiSelectMode.Token,
+            };
+
+			stackLayout.Children.Add(autoComplete);
+			this.Content = stackLayout;
+		}
+	}
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Create and Initialize Business Models
+
+Define a simple model class `Employee` with the property of Name, Image and populate employee data in ViewModel.
+
+{ % tabs %}
+
+{% hightlight C# %}
+
+namespace AutocompleteSample
+{
     public class Employee
     {
         private string image;
@@ -236,8 +274,7 @@ namespace AutocompleteSample
 
 {% endhighlight %}
 
-{% endtabs %}
-
+{ % endtabs %}
 
 ![token represents with image and text with wrap mode](images/MultiSelect/TokenRepresentation_Wrap.png)
  
@@ -343,68 +380,6 @@ namespace AutocompleteSample
             };
             stackLayout.Children.Add(autoComplete);
             this.Content = stackLayout;
-        }
-    }
-
-    public class Employee
-    {
-        private string image;
-
-        private string name;
-
-        public string Image
-        {
-            get
-            {
-                return image;
-            }
-
-            set
-            {
-                image = value;
-            }
-        }
-
-        public string Name
-        {
-            get
-            {
-                return name;
-            }
-
-            set
-            {
-                name = value;
-            }
-        }
-    }
-
-    public class EmployeeViewModel
-    {
-        private ObservableCollection<Employee> employeeCollection;
-
-        public ObservableCollection<Employee> EmployeeCollection
-        {
-            get
-            {
-                return employeeCollection;
-            }
-
-            set
-            {
-                employeeCollection = value;
-            }
-        }
-        public EmployeeViewModel()
-        {
-            employeeCollection.Add(new Employee() { Image = "John.png", Name = "John" });
-            employeeCollection.Add(new Employee() { Image = "James.png", Name = "James" });
-            employeeCollection.Add(new Employee() { Image = "Jacob.png", Name = "Jacob" });
-            employeeCollection.Add(new Employee() { Image = "Joy.png", Name = "Joy" });
-            employeeCollection.Add(new Employee() { Image = "Justin.png", Name = "Justin" });
-            employeeCollection.Add(new Employee() { Image = "Jerome.png", Name = "Jerome" });
-            employeeCollection.Add(new Employee() { Image = "Jessica.png", Name = "Jessica" });
-            employeeCollection.Add(new Employee() { Image = "Victoria.png", Name = "Victoria" });
         }
     }
 }
@@ -584,68 +559,6 @@ namespace AutocompleteSample
 
             stackLayout.Children.Add(autoComplete);
             this.Content = stackLayout;
-        }
-    }
-
-    public class Employee
-    {
-        private string image;
-
-        private string name;
-
-        public string Image
-        {
-            get
-            {
-                return image;
-            }
-
-            set
-            {
-                image = value;
-            }
-        }
-
-        public string Name
-        {
-            get
-            {
-                return name;
-            }
-
-            set
-            {
-                name = value;
-            }
-        }
-    }
-
-    public class EmployeeViewModel
-    {
-        private ObservableCollection<Employee> employeeCollection;
-
-        public ObservableCollection<Employee> EmployeeCollection
-        {
-            get
-            {
-                return employeeCollection;
-            }
-
-            set
-            {
-                employeeCollection = value;
-            }
-        }
-        public EmployeeViewModel()
-        {
-            employeeCollection.Add(new Employee() { Image = "John.png", Name = "John" });
-            employeeCollection.Add(new Employee() { Image = "James.png", Name = "James" });
-            employeeCollection.Add(new Employee() { Image = "Jacob.png", Name = "Jacob" });
-            employeeCollection.Add(new Employee() { Image = "Joy.png", Name = "Joy" });
-            employeeCollection.Add(new Employee() { Image = "Justin.png", Name = "Justin" });
-            employeeCollection.Add(new Employee() { Image = "Jerome.png", Name = "Jerome" });
-            employeeCollection.Add(new Employee() { Image = "Jessica.png", Name = "Jessica" });
-            employeeCollection.Add(new Employee() { Image = "Victoria.png", Name = "Victoria" });
         }
     }
 }

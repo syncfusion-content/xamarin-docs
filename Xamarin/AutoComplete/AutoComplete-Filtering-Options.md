@@ -9,6 +9,8 @@ documentation : ug
 
 # AutoComplete Filtering Options
 
+## AutoComplete filtering options in Xamarin SfAutoComplete
+
 The phenomenon of string comparison for filtering suggestions can be changed using the `SuggestionMode` property. The default filtering strategy is “StartsWith” and it is case insensitive. The available filtering modes are
 
 * StartsWith

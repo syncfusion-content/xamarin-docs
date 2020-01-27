@@ -7,7 +7,9 @@ control : AutoComplete
 documentation : ug
 ---
 
-# How to perform an operation when selecting an item from drop-down list?
+# How To
+
+## How to perform an operation when selecting an item from drop-down list?
 
 You can perform an operation when selecting an item among the filtered suggestions using the `SelectionChanged` event. The SelectionChanged event returns the following arguments:
 
@@ -30,9 +32,10 @@ You can perform an operation when selecting an item among the filtered suggestio
 </tr>
 </table>
 
+{% tabs %}
 
 {% highlight xaml %}
-[XAML]
+
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
@@ -55,7 +58,6 @@ You can perform an operation when selecting an item among the filtered suggestio
 {% endhighlight %}
 
 {% highlight c# %}
-[C#]
 	
 using System;
 using System.Collections;
@@ -68,7 +70,60 @@ using Xamarin.Forms;
 
 namespace Events
 {
-    public class Employee
+    public partial class MainPage : ContentPage
+    {
+         StackLayout stack;
+        EmployeeViewModel employeeViewModel;
+
+        public MainPage()
+        {
+            InitializeComponent();
+            stack = new StackLayout();
+            employeeViewModel = new EmployeeViewModel();
+            SfAutoComplete autocomplete = new SfAutoComplete()
+            {
+                DisplayMemberPath = "Name",
+                DataSource = employeeViewModel.EmployeeCollection,
+            };
+            autocomplete.BindingContext = employeeViewModel;
+            autocomplete.SelectionChanged += Handle_SelectionChanged;
+            stack.Children.Add(autocomplete);
+            this.Content = stack;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following event will be called. 
+
+{% tabs %}
+
+{% highlight C# %}
+
+
+        void Handle_SelectionChanged(object sender, Syncfusion.SfAutoComplete.XForms.SelectionChangedEventArgs e)
+        {
+            var addedEmployee = e.AddedItems as Employee;
+            string addedItems = addedEmployee != null ? addedEmployee.Name : "null";
+            var removedEmployee = e.RemovedItems as Employee;
+            string removedItems = removedEmployee != null ? removedEmployee.Name : "null";
+            DisplayAlert("SelectionChanged", "AddedItems: " + addedItems + "\n" + "RemovedItems: " + removedItems, "Ok");
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Create simple `EmployeeViewModel` that contains the properties of  `Employee` class 
+
+{% tabs %}
+
+{% highlight C# %}
+
+ public class Employee
     {
         private int id;
         private string name;
@@ -132,25 +187,9 @@ namespace Events
         }
     }
 
-    public partial class MainPage : ContentPage
-    {
-        void Handle_SelectionChanged(object sender, Syncfusion.SfAutoComplete.XForms.SelectionChangedEventArgs e)
-        {
-            var addedEmployee = e.AddedItems as Employee;
-            string addedItems =  addedEmployee != null ? addedEmployee.Name : "null";
-            var removedEmployee = e.RemovedItems as Employee;
-            string removedItems = removedEmployee != null ? removedEmployee.Name : "null";
-            DisplayAlert("SelectionChanged", "AddedItems: " + addedItems + "\n" + "RemovedItems: " + removedItems, "Ok");
-        }
-
-        public MainPage()
-        {
-            InitializeComponent();
-        }
-    }
-}
-
 {% endhighlight %}
+
+{% endtabs %}
 
 The following screenshot illustrates the result of adding the item.
 
@@ -159,5 +198,3 @@ The following screenshot illustrates the result of adding the item.
 The following screenshot illustrates the result of removing the item.
 
 ![removed item is shown in alert window](images/How-To/RemovingItem.png)
-
-

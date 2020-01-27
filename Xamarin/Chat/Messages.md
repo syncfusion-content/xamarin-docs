@@ -13,16 +13,16 @@ documentation: ug
 
 <table>
 <tr>
-<td>[Message.Author](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Author.html)</td>
-<td>Specify the avatar and name of the message sender using [Author.Avatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Author~Avatar.html) and [Author.Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Author~Name.html) properties respectively.</td>
+<td>{{'[Message.Author](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Author.html)'| markdownify }}</td>
+<td>Specify the avatar and name of the message sender using {{'[Author.Avatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Author~Avatar.html)'| markdownify }} and {{'[Author.Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Author~Name.html)'| markdownify }} properties respectively.</td>
 </tr>
 <tr>
-<td>[Message.DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~DateTime.html)</td>
+<td>{{'[Message.DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~DateTime.html)'| markdownify }}</td>
 <td>To display message created or received time.</td>
 </tr>
 <tr>
-<td>[Message.TimestampFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~TimestampFormat.html)</td>
-<td>To format the `Message.DateTime`.</td>
+<td>{{'[Message.TimestampFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~TimestampFormat.html)'| markdownify }}</td>
+<td>To format the Message.DateTime.</td>
 </tr>
 </table>
 
@@ -159,7 +159,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ![Xamarin Forms chat current user](SfChat_images/xamarin-forms-chat-current-user.png)
 
-##Text message
+## Text message
 
 [TextMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.TextMessage.html) is used to display plain text as a message. The following code example explains how to add a simple text message.
 
@@ -458,7 +458,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ![Xamarin Forms chat date picker message](SfChat_images/xamarin-forms-chat-date-picker.png)
 
-##Time picker message
+## Time picker message
 
 [TimePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.TimePickerMessage.html) is used to show a time picker as a message to let users select time. Once time is selected, the selected time is added as a `TextMessage`. The`SfChat.SendMessage` event and `SfChat.SendMessageCommand` will be executed upon selecting a time from the time picker.
 
@@ -912,7 +912,7 @@ The `SfChat.CurrentUser` can send messages using the send button in the message 
 
 **Cancel the message from sending**
 
-The newly added message can be canceled from sending, in the `SendMessage` event handler and `SendMessageCommand` by setting the `Handled` value as `true` in the provided [SendMessageEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SendMessageEventArgs.html).
+The newly added message can be canceled from sending, in the `SendMessage` event handler and `SendMessageCommand` by setting the [Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SendMessageEventArgs~Handled.html) value as `true` in the provided [SendMessageEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SendMessageEventArgs.html).
 
 **SendMessage Event handler**
 
@@ -958,6 +958,7 @@ private void SfChat_SendMessage(object sender, SendMessageEventArgse)
 </ContentPage>
 
 {% endhighlight %}
+{% highlight c# %}
 
 /// <summary>
 /// View model class for chat view.
@@ -1100,7 +1101,7 @@ public class SendMessageCommandExt : ICommand
 
 ## Customize the shape of the message
 
-The `SfChat` alllows to change the shape of the messages by using the [SfChat.MessageShape](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageShape.html) property.
+The `SfChat` allows to change the shape of the messages by using the [SfChat.MessageShape](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageShape.html) property.
 
 To customize `MessageShape` in the SfChat, refer the below code example:
 

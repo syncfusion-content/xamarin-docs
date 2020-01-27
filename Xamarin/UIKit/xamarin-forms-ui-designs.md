@@ -25,6 +25,7 @@ The Essential UI Kit includes 65 screens which is under the following categories
 * Tabbed Login Page
 * Add Card Page
 * Add Profile Page
+* Business Registration Form page
  
 ## Catalog	
 
@@ -72,6 +73,7 @@ The Essential UI Kit includes 65 screens which is under the following categories
 * Bottom Navigation Page
 * Navigation List Card Page
 * Navigation Tile Card Page
+* Songs Page
 
 ## Onboarding	
 
@@ -128,9 +130,9 @@ The Essential UI Kit includes 65 screens which is under the following categories
 ## Dashboard
 
 * Stock Overview Page
-
+* Health Care Page
 
 ## Settings
 
 * Setting Page
-
+* Help Page

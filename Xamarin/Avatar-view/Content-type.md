@@ -314,6 +314,7 @@ Set the `InitialsMemberPath` for displaying the initials in the group view. For 
             avatarview.InitialsMemberPath = "Name";
             avatarview.ImageSourceMemberPath = "ImageSource";
             avatarview.BackgroundColorMemberPath = "Colors";
+            this.BindingContext = emp;
             mainGrid.Children.Add(avatarview);
             this.Content = mainGrid;
             }
@@ -369,6 +370,7 @@ public partial class MainPage : ContentPage, INotifyPropertyChanged
             avatarview.GroupSource = emp.CollectionImage;
             avatarview.InitialsMemberPath = "Name";
             avatarview.BackgroundColorMemberPath = "Colors";
+            this.BindingContext = emp;
             mainGrid.Children.Add(avatarview);
             this.Content = mainGrid;
          }
@@ -525,7 +527,7 @@ Create model and view model for initializing and assigning a value for adding im
 {% highlight c# %}
 
 //MainPage.Xaml.cs
-            emp = new EmployeeViewMdoel();
+            avm = new AvatarViewModel();
             SfAvatarView avatarview = new SfAvatarView();
             avatarview.VerticalOptions = LayoutOptions.Center;
             avatarview.HorizontalOptions = LayoutOptions.Center;
@@ -533,7 +535,7 @@ Create model and view model for initializing and assigning a value for adding im
             avatarview.HeightRequest = 50;
             avatarview.CornerRadius = 25;
             avatarview.ContentType = ContentType.Group;
-            avatarview.GroupSource = emp.CollectionImage;
+            avatarview.GroupSource = avm.PeopleCollection;
             avatarview.InitialsMemberPath = "Name";
             avatarview.BackgroundColorMemberPath = "Colors";
             mainGrid.Children.Add(avatarview);

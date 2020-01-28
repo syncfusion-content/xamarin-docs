@@ -8,6 +8,8 @@ documentation: ug
 ---
 # Make Busy Animation Idle
 
+## Make Busy Animation Idle in Xamarin BusyIndicator(SfBusyIndicator)
+
 SfBusyIndicator control provides support to determine whether an animation needs to be executed or not. Setting the `IsBusy` property to false will stop the animation and removes the control from view.
 
 {% tabs %}

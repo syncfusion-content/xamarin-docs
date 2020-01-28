@@ -8,6 +8,8 @@ documentation: ug
 ---
 # Set Header
 
+## Set Header in Xamarin Busy Indicator  (SfBusyIndicator)
+
 ## Title
 
 SfBusyIndicator provides option to set the text that indicates the information related to loading. This can be done using `Title` property.
@@ -27,8 +29,7 @@ SfBusyIndicator provides option to set the text that indicates the information r
                                        AnimationType="Ball" 
                                        ViewBoxWidth = "150" 
                                        Title="Loading..."
-                                       ViewBoxHeight="150" 
-                                       TextColor="Maroon"/>
+                                       ViewBoxHeight="150"/>
     </ContentPage.Content>
 </ContentPage>
 
@@ -51,7 +52,6 @@ namespace GettingStarted
                 AnimationType = AnimationTypes.Ball,
                 ViewBoxHeight = 150,
                 ViewBoxWidth = 150,
-                TextColor = Color.Maroon,
                 Title = "Loading..."
             };
 
@@ -136,7 +136,7 @@ SfBusyIndicator provides options to change the size of the text. The size of the
              x:Class="GettingStarted.MainPage">
     <ContentPage.Content>
         <busyindicator:SfBusyIndicator x:Name="busyindicator" 
-                                       AnimationType="Battery" 
+                                       AnimationType="Ball" 
                                        ViewBoxWidth = "150" 
                                        Title="Loading..."
                                        TextSize="10"
@@ -224,7 +224,7 @@ namespace GettingStarted
                 ViewBoxWidth = 150,
                 TextColor = Color.Maroon,
                 Title = "Loading...",
-                TitlePlacement= TitlePlacement.Top
+                TitlePlacement= TitlePlacement.None
             };
 
             this.Content = busyIndicator;
@@ -237,5 +237,3 @@ namespace GettingStarted
 {% endtabs %}
 
 ![Title](images/Title.png) 
-
-

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started for Syncfusion.Xamarin.Forms BusyIndicator
-description: A quick tour to initial users on Syncfusion SfBusyIndicator control for Xamarin.Forms platform
+description: This section will explain how to initialize and use Syncfusion Xamarin.Forms SfBusyIndicator control.
 platform: Xamarin
 control: BusyIndicator
 documentation: ug

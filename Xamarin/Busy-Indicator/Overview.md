@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion BusyIndicator control for Xamarin.Forms
-description: Overview and key features of BusyIndicator control
+description: The following section will explain about the Overview and key features of Xamarin.Forms BusyIndicator control.
 platform: Xamarin
 control: BusyIndicator
 documentation: ug
@@ -13,7 +13,7 @@ documentation: ug
 
 The Essential Xamarin BusyIndicator control includes over 10 built-in animations that can be displayed within your applications. It can be used to indicate busy status during app loading, data processing, etc. 
 
-![](images/Overview.png)
+![SfBusyIndicator overview](images/Overview.png)
 
 ## Key Features
 

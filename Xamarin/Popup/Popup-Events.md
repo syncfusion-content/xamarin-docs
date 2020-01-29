@@ -144,10 +144,12 @@ To handle the Accept button, follow the procedure:
              xmlns:local="clr-namespace:PopupSample"
               xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
              x:Class="PopupSample.MainPage">
+             
     <ContentPage.BindingContext>
         <local:PopupViewModel/>
     </ContentPage.BindingContext>
-    <sfPopup:SfPopupLayout IsOpen="True">
+    
+     <sfPopup:SfPopupLayout IsOpen="{Binding Open}">
         <sfPopup:SfPopupLayout.PopupView>
             <sfPopup:PopupView AppearanceMode="TwoButton"
                               AcceptCommand="{Binding PopupAcceptCommand}"
@@ -160,14 +162,27 @@ To handle the Accept button, follow the procedure:
 
 {% highlight c# %}
 
-//PopupViewModel.cs
-
-    class PopupViewModel
+ //PopupViewModel.cs
+    class PopupViewModel:INotifyPropertyChanged
     {
+        bool open;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        void OnPorpertyChanged(string PropertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(PropertyName));
+        }
+
+        public bool Open { get { return open; }
+            set {
+                open = value;
+                OnPorpertyChanged(nameof(Open));
+            } }
         public ICommand PopupAcceptCommand { get; set; }
         public ICommand PopupDeclineCommand { get; set; }
         public PopupViewModel()
         {
+            Open = true;
             PopupAcceptCommand = new Command(() => {
                 //Excute() part
                 // You can write your set of codes that needs to be executed.
@@ -179,7 +194,6 @@ To handle the Accept button, follow the procedure:
             });
         }
     }
-
 
 {% endhighlight %}
 
@@ -208,7 +222,7 @@ To handle the Decline button, follow the procedure:
     <ContentPage.BindingContext>
         <local:PopupViewModel/>
     </ContentPage.BindingContext>
-    <sfPopup:SfPopupLayout IsOpen="True">
+    <sfPopup:SfPopupLayout IsOpen="{Binding Open}">
         <sfPopup:SfPopupLayout.PopupView>
             <sfPopup:PopupView AppearanceMode="TwoButton"
                               AcceptCommand="{Binding PopupAcceptCommand}"
@@ -222,14 +236,27 @@ To handle the Decline button, follow the procedure:
 
 {% highlight c# %}
 
-//PopupViewModel.cs
-    
-    class PopupViewModel
+ //PopupViewModel.cs
+    class PopupViewModel:INotifyPropertyChanged
     {
+        bool open;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+        void OnPorpertyChanged(string PropertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(PropertyName));
+        }
+
+        public bool Open { get { return open; }
+            set {
+                open = value;
+                OnPorpertyChanged(nameof(Open));
+            } }
         public ICommand PopupAcceptCommand { get; set; }
         public ICommand PopupDeclineCommand { get; set; }
         public PopupViewModel()
         {
+            Open = true;
             PopupAcceptCommand = new Command(() => {
                 //Excute() part
                 // You can write your set of codes that needs to be executed.
@@ -241,7 +268,6 @@ To handle the Decline button, follow the procedure:
             });
         }
     }
-
 {% endhighlight %}
 
 {% endtabs %}

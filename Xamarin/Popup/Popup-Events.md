@@ -130,9 +130,9 @@ The [SfPopupLayout.PopupView.AcceptCommand](https://help.syncfusion.com/cr/cref_
 
 To handle the Accept button, follow the procedure:
 
-* Derive a class from `ICommand`, and implement the necessary interface.
-* Return true in the `CanExecute()` override method to close the popup, and fire the `Execute()` method.
-* Return false to prevent popup from closing, and `Execute()` method is not fired.
+* Declare the `PopupAcceptCommand` Property in the view model.
+* In view model constructor `PopupAcceptCommand` was Implemented.
+* PopupAcceptCommand fire the `CanExecute()`.
 
 {% tabs %}
 
@@ -205,9 +205,9 @@ The [SfPopupLayout.PopupView.DeclineCommand](https://help.syncfusion.com/cr/cref
 
 To handle the Decline button, follow the procedure:
 
-* Derive a class from `ICommand`, and implement the necessary interface. 
-* Return true in the `CanExecute()` override method to close the popup, and fire the `Execute()` method. 
-* Return false to prevent popup from closing, and `Execute()` method is not fired.
+* Declare the `PopupDeclineCommand` Property in the view model.
+* In view model constructor `PopupDeclineCommand` was Implemented.
+* PopupDeclineCommand fire the `CanExecute()`.
 
 {% tabs %}
 

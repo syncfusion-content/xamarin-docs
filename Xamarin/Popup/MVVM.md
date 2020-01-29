@@ -92,4 +92,5 @@ The commanding interface provides an alternative approach to implementing comman
 In SfPopupLayout.PopupView we have two types of command:
 
 *[SfPopupLayout.PopupView.AcceptCommand](https://help.syncfusion.com/xamarin/popup/popup-events?cs-save-lang=1&cs-lang=csharp#accept-command)
+
 *[SfPopupLayout.PopupView.DeclineCommand](https://help.syncfusion.com/xamarin/popup/popup-events?cs-save-lang=1&cs-lang=csharp#decline-command)

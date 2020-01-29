@@ -6,9 +6,9 @@ platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
-#MVVM
+# MVVM
 
-##How to show Xamarin.Forms popup from ViewModel?
+## How to show Xamarin.Forms popup from ViewModel?
 
 SfPopup can be used in MVVM architecture applications easily. In the below example [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) property is binded to a property in the ViewModel based on which the popup is opened or closed. Refer the below code example to display popup in MVVM.
 
@@ -85,7 +85,7 @@ public class ViewModel : INotifyPropertyChanged
 
 {% endtabs %}
 
-##How to use commands for popup buttons?
+## How to use commands for popup buttons?
 
 The commanding interface provides an alternative approach to implementing commands that is much better suited to the MVVM architecture. The ViewModel itself can contain commands, which are methods that are executed in reaction to a specific activity in the View such as a Button click will be fired the command.
 

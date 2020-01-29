@@ -219,10 +219,12 @@ To handle the Decline button, follow the procedure:
              xmlns:local="clr-namespace:PopupSample"
               xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
              x:Class="PopupSample.MainPage">
+             
     <ContentPage.BindingContext>
         <local:PopupViewModel/>
     </ContentPage.BindingContext>
-    <sfPopup:SfPopupLayout IsOpen="{Binding Open}">
+    
+     <sfPopup:SfPopupLayout IsOpen="{Binding Open}">
         <sfPopup:SfPopupLayout.PopupView>
             <sfPopup:PopupView AppearanceMode="TwoButton"
                               AcceptCommand="{Binding PopupAcceptCommand}"
@@ -230,7 +232,6 @@ To handle the Decline button, follow the procedure:
         </sfPopup:SfPopupLayout.PopupView>
     </sfPopup:SfPopupLayout>
 </ContentPage>
-
 
 {% endhighlight %}
 
@@ -268,6 +269,7 @@ To handle the Decline button, follow the procedure:
             });
         }
     }
+
 {% endhighlight %}
 
 {% endtabs %}

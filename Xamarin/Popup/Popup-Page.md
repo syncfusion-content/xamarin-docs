@@ -22,7 +22,7 @@ We achieve popup as a page in Xamain.Forms by creating the SfPopupLayout as view
 
 In the below code snippet we created the sample for Popup as a page by simple login page:
 
-1. PopupPage.xaml and PopupPage.cs
+### 1. PopupPage.xaml and PopupPage.cs
 
 {% tabs %}
 
@@ -79,7 +79,7 @@ public partial class PopupPage : SfPopupLayout
 
 {% endtabs %}
 
-2.MainPage.xaml and PopupViewModel.cs.
+### 2.MainPage.xaml and PopupViewModel.cs.
 
 {% tabs %}
 

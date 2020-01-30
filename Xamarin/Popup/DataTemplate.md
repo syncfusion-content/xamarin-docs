@@ -169,14 +169,14 @@ class PopupViewModel : INotifyPropertyChanged
             if ((UserName == "Syncfusion") && (Password == "12345"))
             {
              ShowDetail = "Login Successfully...";
-               UserName = " ";
-                Password = " ";
+               UserName = "";
+                Password = "";
             }
             else
             {
                  ShowDetail = "Login Failed";
-                UserName = " ";
-                Password = " ";
+                UserName = "";
+                Password = "";
              }
         }
 

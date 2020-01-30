@@ -141,57 +141,73 @@ To handle the Accept button, follow the procedure:
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:PopupSample"
-              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
-             x:Class="PopupSample.MainPage">
-             
+             xmlns:local="clr-namespace:Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+             x:Class="Popup.MainPage">
     <ContentPage.BindingContext>
         <local:PopupViewModel/>
     </ContentPage.BindingContext>
-    
-     <sfPopup:SfPopupLayout IsOpen="{Binding Open}">
+    <sfPopup:SfPopupLayout IsOpen="{Binding PopupOpen}">
         <sfPopup:SfPopupLayout.PopupView>
             <sfPopup:PopupView AppearanceMode="TwoButton"
-                              AcceptCommand="{Binding PopupAcceptCommand}"
-                            DeclineCommand="{Binding PopupDeclineCommand}"   />
+                          AcceptCommand="{Binding PopupAcceptCommand}"
+                        DeclineCommand="{Binding PopupDeclineCommand}"   />
         </sfPopup:SfPopupLayout.PopupView>
-    </sfPopup:SfPopupLayout>
+        <sfPopup:SfPopupLayout.Content>
+            <StackLayout>
+                    <Button  Text="ClickToShowPopup" 
+               VerticalOptions="Center"   HorizontalOptions="Center" Command="{Binding PopupCommand}" />
+                </StackLayout>
+            </sfPopup:SfPopupLayout.Content>
+ </sfPopup:SfPopupLayout>
 </ContentPage>
+
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
  //PopupViewModel.cs
-    class PopupViewModel:INotifyPropertyChanged
-    {
-        bool open;
 
+ class PopupViewModel : INotifyPropertyChanged
+{
+        bool isOpen;
         public event PropertyChangedEventHandler PropertyChanged;
-        void OnPorpertyChanged(string PropertyName)
+        void OnPropertyChanged(string propertyName)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(PropertyName));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-        public bool Open { get { return open; }
-            set {
-                open = value;
-                OnPorpertyChanged(nameof(Open));
-            } }
         public ICommand PopupAcceptCommand { get; set; }
         public ICommand PopupDeclineCommand { get; set; }
+        public ICommand PopupCommand { get; set; }
+        public bool PopupOpen {
+            get { return isOpen; }
+            set
+            {
+                isOpen = value;
+                OnPropertyChanged(nameof(PopupOpen));
+            } }
         public PopupViewModel()
         {
-            Open = true;
-            PopupAcceptCommand = new Command(() => {
-                //Excute() part
-                // You can write your set of codes that needs to be executed.
+            PopupAcceptCommand = new Command(PopupAccept); //CanExecute() will be execute the PopupAccept method
+            PopupDeclineCommand = new Command(PopupDecline); //CanExecute() will be execute the PopupDecline method
+            PopupCommand = new Command(Popup);
+        }
 
-            });
-            PopupDeclineCommand = new Command(() => {
-                //Excute() part
-                // You can write your set of codes that needs to be executed.
-            });
+        private void Popup()
+        {
+            PopupOpen = true;
+        }
+
+        private void PopupAccept()
+        {
+// You can write your set of codes that needs to be executed.
+        }
+
+        private void PopupDecline()
+        {
+            // You can write your set of codes that needs to be executed.
         }
     }
 
@@ -216,60 +232,74 @@ To handle the Decline button, follow the procedure:
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:PopupSample"
-              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
-             x:Class="PopupSample.MainPage">
-             
+             xmlns:local="clr-namespace:Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+             x:Class="Popup.MainPage">
     <ContentPage.BindingContext>
         <local:PopupViewModel/>
     </ContentPage.BindingContext>
-    
-     <sfPopup:SfPopupLayout IsOpen="{Binding Open}">
+    <sfPopup:SfPopupLayout IsOpen="{Binding PopupOpen}">
         <sfPopup:SfPopupLayout.PopupView>
             <sfPopup:PopupView AppearanceMode="TwoButton"
-                              AcceptCommand="{Binding PopupAcceptCommand}"
-                            DeclineCommand="{Binding PopupDeclineCommand}"   />
+                          AcceptCommand="{Binding PopupAcceptCommand}"
+                        DeclineCommand="{Binding PopupDeclineCommand}"   />
         </sfPopup:SfPopupLayout.PopupView>
-    </sfPopup:SfPopupLayout>
+        <sfPopup:SfPopupLayout.Content>
+            <StackLayout>
+                    <Button  Text="ClickToShowPopup" 
+               VerticalOptions="Center"   HorizontalOptions="Center" Command="{Binding PopupCommand}" />
+                </StackLayout>
+            </sfPopup:SfPopupLayout.Content>
+ </sfPopup:SfPopupLayout>
 </ContentPage>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
  //PopupViewModel.cs
-    class PopupViewModel:INotifyPropertyChanged
-    {
-        bool open;
-
+ 
+     class PopupViewModel : INotifyPropertyChanged
+{
+        bool isOpen;
         public event PropertyChangedEventHandler PropertyChanged;
-        void OnPorpertyChanged(string PropertyName)
+        void OnPropertyChanged(string propertyName)
         {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(PropertyName));
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
-
-        public bool Open { get { return open; }
-            set {
-                open = value;
-                OnPorpertyChanged(nameof(Open));
-            } }
         public ICommand PopupAcceptCommand { get; set; }
         public ICommand PopupDeclineCommand { get; set; }
+        public ICommand PopupCommand { get; set; }
+        public bool PopupOpen {
+            get { return isOpen; }
+            set
+            {
+                isOpen = value;
+                OnPropertyChanged(nameof(PopupOpen));
+            } }
         public PopupViewModel()
         {
-            Open = true;
-            PopupAcceptCommand = new Command(() => {
-                //Excute() part
-                // You can write your set of codes that needs to be executed.
+            PopupAcceptCommand = new Command(PopupAccept); //CanExecute() will be execute the PopupAccept method
+            PopupDeclineCommand = new Command(PopupDecline); //CanExecute() will be execute the PopupDecline method
+            PopupCommand = new Command(Popup);
+        }
 
-            });
-            PopupDeclineCommand = new Command(() => {
-                //Excute() part
-                // You can write your set of codes that needs to be executed.
-            });
+        private void Popup()
+        {
+            PopupOpen = true;
+        }
+
+        private void PopupAccept()
+        {
+// You can write your set of codes that needs to be executed.
+        }
+
+        private void PopupDecline()
+        {
+            // You can write your set of codes that needs to be executed.
         }
     }
-
 {% endhighlight %}
 
 {% endtabs %}

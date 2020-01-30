@@ -90,7 +90,7 @@ N> The `Inline` view and `AgendaView` will be available only in month view with 
 You can customize the number of appointment indicators displayed in month cell using [MaximumEventIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaximumEventIndicatorCount.html) property of ‘SfCalendar’. The default value of `MaximumEventIndicatorCount` is 5.
 
 N> If appointments count are lesser than the Appointment Indicator count value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.
-N> Based on the appointments for the day, month cell size and indicator count appointment indicator will be displayed in the month cell.
+N> Appointment indicator will be displayed based on the appointments for the day, month cell size and indicator count.
 
 
 ## Customize inline/agenda view using DataTemplate

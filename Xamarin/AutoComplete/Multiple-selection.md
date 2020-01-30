@@ -274,7 +274,7 @@ namespace AutocompleteSample
 
 {% endhighlight %}
 
-{ % endtabs %}
+{% endtabs %}
 
 ![token represents with image and text with wrap mode](images/MultiSelect/TokenRepresentation_Wrap.png)
  

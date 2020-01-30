@@ -190,7 +190,7 @@ Define a simple model class `Employee` with the property of Name, Image and popu
 
 { % tabs %}
 
-{% hightlight C# %}
+{% highlight C# %}
 
 namespace AutocompleteSample
 {

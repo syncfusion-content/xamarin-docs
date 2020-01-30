@@ -28,16 +28,13 @@ In the below code snippet we created the sample for Popup as a page by simple lo
 
 {% highlight xaml %}
 
-<!--PopupPage.xaml  -->
-<!--In this  -->
-    <?xml version="1.0" encoding="utf-8" ?>
+ <?xml version="1.0" encoding="utf-8" ?>
 <sfPopup:SfPopupLayout xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
              xmlns:local="clr-namespace:Popup"
              x:Class="Popup.PopupPage"
-               IsOpen="True"    
-              x:Name="popup">
+               x:Name="popup">
     <sfPopup:PopupView AppearanceMode="OneButton" x:Name="popupview">
         <sfPopup:PopupView.HeaderTemplate>
             <DataTemplate x:Name="header">
@@ -85,7 +82,7 @@ public partial class PopupPage : SfPopupLayout
 
 {% highlight xaml %}
 
-<!--MainPage.xaml -->
+
 
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"

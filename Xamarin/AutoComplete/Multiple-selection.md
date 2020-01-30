@@ -190,7 +190,7 @@ Define a simple model class `Employee` with the property of Name, Image and popu
 
 { % tabs %}
 
-{% hightlight C# %}
+{% highlight C# %}
 
 namespace AutocompleteSample
 {
@@ -274,7 +274,7 @@ namespace AutocompleteSample
 
 {% endhighlight %}
 
-{ % endtabs %}
+{% endtabs %}
 
 ![token represents with image and text with wrap mode](images/MultiSelect/TokenRepresentation_Wrap.png)
  

@@ -133,11 +133,11 @@ To handle the Accept button, follow the procedure:
 * Declare the `PopupAcceptCommand` Property in the view model.
 * In view model constructor `PopupAcceptCommand` was Implemented.
 * PopupAcceptCommand fire the `CanExecute()`.
+* `CanExecute()` will be call the `PopupAccept()` method which has set of code to execute when popup was accept.
 
 {% tabs %}
 
 {% highlight xaml %}
-
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -161,13 +161,9 @@ To handle the Accept button, follow the procedure:
             </sfPopup:SfPopupLayout.Content>
  </sfPopup:SfPopupLayout>
 </ContentPage>
-
-
-
 {% endhighlight %}
 
 {% highlight c# %}
-
  //PopupViewModel.cs
 
  class PopupViewModel : INotifyPropertyChanged
@@ -190,8 +186,8 @@ To handle the Accept button, follow the procedure:
             } }
         public PopupViewModel()
         {
-            PopupAcceptCommand = new Command(PopupAccept); //CanExecute() will be execute the PopupAccept method
-            PopupDeclineCommand = new Command(PopupDecline); //CanExecute() will be execute the PopupDecline method
+            PopupAcceptCommand = new Command(PopupAccept); //CanExecute() will be call the PopupAccept method
+            PopupDeclineCommand = new Command(PopupDecline); //CanExecute() will be call the PopupDecline method
             PopupCommand = new Command(Popup);
         }
 
@@ -202,7 +198,7 @@ To handle the Accept button, follow the procedure:
 
         private void PopupAccept()
         {
-// You can write your set of codes that needs to be executed.
+             // You can write your set of codes that needs to be executed.
         }
 
         private void PopupDecline()
@@ -210,7 +206,6 @@ To handle the Accept button, follow the procedure:
             // You can write your set of codes that needs to be executed.
         }
     }
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -224,6 +219,7 @@ To handle the Decline button, follow the procedure:
 * Declare the `PopupDeclineCommand` Property in the view model.
 * In view model constructor `PopupDeclineCommand` was Implemented.
 * PopupDeclineCommand fire the `CanExecute()`.
+* `CanExecute()` will be call the `PopupDecline()` method which has set of code to execute when popup was decline.
 
 {% tabs %}
 
@@ -292,7 +288,7 @@ To handle the Decline button, follow the procedure:
 
         private void PopupAccept()
         {
-// You can write your set of codes that needs to be executed.
+             // You can write your set of codes that needs to be executed.
         }
 
         private void PopupDecline()

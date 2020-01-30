@@ -199,13 +199,13 @@ class PopupViewModel : INotifyPropertyChanged
             if ((UserName == "Syncfusion") && (Password == "12345"))
             {
                 PopupPage page = new PopupPage();  //Initialize the PopupPage class it will run the Popup as a page.
-                UserName = " ";
-                Password = " ";
+                UserName = "";
+                Password = "";
             }
             else
             {
-                UserName = " ";
-                Password = " ";
+                UserName = "";
+                Password = "";
             }
         }
 

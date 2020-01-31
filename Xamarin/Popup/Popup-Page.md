@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Popup page | Fullscreen | Auto-size | Popup | Xamarin | Syncfusion
-description: Display popup as a page increase the reusablility.
+description: Display popup as a page increase the reusablility. we can use the popup view or class in another page.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DataTemplete | SfPopupLayout |Xamarin | Syncfusion
-description: Retrieve text value from entry control in Xamarin.Forms popup content template.
+description: Retrieve text value from entry control in Xamarin.Forms popup content template. Binding the view model property to the entry. 
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug

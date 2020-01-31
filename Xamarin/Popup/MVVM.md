@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Popup using MVVM | SfPopupLayout |Xamarin | Syncfusion
-description: Show the Xamarin.Forms Popup view in the Model-View-ViewModel
+description: Show the Xamarin.Forms Popup view in the Model-View-ViewModel.We need to set the viewModel as a Binding context for the page.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Popup page | Fullscreen | Auto-size | Popup | Xamarin | Syncfusion
-description: Display popup as a page increase the reusablility. we can use the popup view or class in another page.
+description: Display popup as a page increase the reusable of the popup. we can use the popup view or class in another page.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 # How to use Xamarin.Forms popup as a page?
 
-We achieve popup as a page in Xamarin.Forms by creating the SfPopupLayout as view or class file. When we need it, we may call up the SfPopupLayout. Main purpose of Popup as page is its reusability. 
+We achieve popup as a page in Xamarin.Forms by creating the SfPopupLayout as view or class file. When we need it, we may call up the SfPopupLayout. Main purpose of Popup as page is its reusable.
 
 ## How to handle the Popup as page?
 

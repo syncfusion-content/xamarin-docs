@@ -1,12 +1,15 @@
 ---
 layout: post
 title: Header and Footer in Syncfusion SfAutoComplete control
-description: Learn how to enable Header and Footer in SfAutoComplete
+description: This section will describe about how to enable the Header and the Footer in Xamarin.Forms SfAutoComplete.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
+
 # Header and Footer
+
+## Header and Footer in Xamarin SfAutoComplete
 
 We can provide Header and Footer view in the suggestion list in SfAutoComplete by enabling `ShowDropDownHeaderView` and `ShowDropDownFooterView`. 
 
@@ -125,14 +128,26 @@ namespace AutocompleteSample
             stackLayout.Children.Add(autoComplete);
             this.Content = stackLayout;
         }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Events 
+
+The following event will be hooked.
+
+{% tabs %}
+
+{% highlight C# %}
 
         private void SfAutoComplete_ValueChanged(object sender, Syncfusion.SfAutoComplete.XForms.ValueChangedEventArgs e)
         {
             SearchLabel.Text = "Search for " + e.Value;
         }
-    }
-}
-
+        
 {% endhighlight %}
 
 {% endtabs %}

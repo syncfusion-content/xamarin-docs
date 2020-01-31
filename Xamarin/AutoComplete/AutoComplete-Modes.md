@@ -9,6 +9,8 @@ documentation : ug
 
 # AutoComplete Modes
 
+## AutoComplete Modes in Xamarin SfAutoComplete
+
 AutoComplete provides three different ways to display the filtered suggestions. They are 
 
 * Suggest - displaying suggestion in drop down list

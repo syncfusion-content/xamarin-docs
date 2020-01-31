@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Customization in Syncfusion AvatarView Xamarin.Forms
-description: Explaining about customization in SfAvatarView.
+description: This section will explain about how to achieve the customization of default View in Xamarin.Forms SfAvatarView.
 platform: Xamarin
 control: AvatarView
 documentation: ug
 ---
 
 # Customization 
+
+## Customization in Xamarin Avatar View(SfAvatarView)
 
 The SfAvatarView control provides options to customize the color and size. The control can be customized using the following properties:
 
@@ -23,6 +25,7 @@ The border color is used for setting color to the border of SfAvatarView using t
 
 {% highlight xaml %}
 
+   <Grid>
         <sfavatar:SfAvatarView  ContentType="Default"  
                                 AvatarShape="Circle"
                                 AvatarSize="Large"
@@ -31,6 +34,7 @@ The border color is used for setting color to the border of SfAvatarView using t
                                 ImageSource="ellanaa.png"
                                 BorderColor="Red">
         </sfavatar:SfAvatarView>
+   </Grid>
 
 {% endhighlight %}
 
@@ -62,6 +66,7 @@ The background color for the SfAvatarView control can be set using the `AvatarCo
 
 {% highlight xaml %}
 
+   <Grid>
         <sfavatar:SfAvatarView ContentType="Initials"
                                AvatarShape="Circle"
                                AvatarSize="Large"
@@ -72,6 +77,7 @@ The background color for the SfAvatarView control can be set using the `AvatarCo
                                AvatarColorMode="Default"
                                BorderColor="Black">
         </sfavatar:SfAvatarView>
+   </Grid>
       
 
 {% endhighlight %}
@@ -113,6 +119,7 @@ The dark background color can be set using `DarkBackground` in the `AvatarColorM
 
 {% highlight xaml %}
 
+   <Grid>
         <sfavatar:SfAvatarView ContentType="Initials"
                                InitialsType="DoubleCharacter"
                                AvatarShape="Circle"
@@ -123,6 +130,7 @@ The dark background color can be set using `DarkBackground` in the `AvatarColorM
                                AvatarColorMode="DarkBackground"
                                BorderColor="Black">
         </sfavatar:SfAvatarView>
+   </Grid>
 
 {% endhighlight %}
 
@@ -158,6 +166,7 @@ The light background color can be set using `LightBackground` in the `AvatarColo
 
 {% highlight xaml %}
 
+   <Grid>
         <sfavatar:SfAvatarView ContentType="Initials"
                                InitialsType="DoubleCharacter"
                                VerticalOptions="Center"
@@ -168,6 +177,7 @@ The light background color can be set using `LightBackground` in the `AvatarColo
                                BorderColor="Black"
                                HorizontalOptions="Center" >
         </sfavatar:SfAvatarView>
+   </Grid>
 
 {% endhighlight %}
 
@@ -277,6 +287,7 @@ You can customize the thickness of the avatar view using the `BorderWidth` prope
 
 {% highlight xaml %}
 
+   <Grid>
         <sfavatar:SfAvatarView ContentType="Default"
                                AvatarShape="Circle"
                                AvatarSize="Large"
@@ -286,6 +297,7 @@ You can customize the thickness of the avatar view using the `BorderWidth` prope
                                BorderWidth="4"
                                HorizontalOptions="Center" >
         </sfavatar:SfAvatarView>
+   </Grid>
 
 {% endhighlight %}
 
@@ -298,6 +310,7 @@ You can customize the thickness of the avatar view using the `BorderWidth` prope
             avatarview.AvatarShape = AvatarShape.Circle;
             avatarview.AvatarSize = AvatarSize.Large;
             avatarview.BorderWidth = 4;
+            avatarview.BorderColor = Color.Red,
             avatarview.ContentType = ContentType.Default;
             avatarview.ImageSource = "ellanaa.png";
             mainGrid.Children.Add(avatarview);
@@ -317,6 +330,7 @@ You can customize the corner radius of the avatar view using the `CornerRadius` 
 
 {% highlight xaml %}
 
+   <Grid>
         <sfavatar:SfAvatarView ContentType="Default"
                                ImageSource="ellanaa.png"
                                HorizontalOptions="Center"
@@ -325,6 +339,7 @@ You can customize the corner radius of the avatar view using the `CornerRadius` 
                                HeightRequest="60"
                                CornerRadius="20">
         </sfavatar:SfAvatarView>
+   </Grid>
 
 {% endhighlight %}
 

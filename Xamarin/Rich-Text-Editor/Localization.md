@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization | SfRichTextEditor | Xamarin | Syncfusion
-description: Set the localized text for the static texts used in Xamarin.Forms Rich Text Editor Control.
+description: Rich Text Editor in Xamarin.Forms supports to localize the static texts used within it to a specific language at the application level.
 platform: xamarin
 control: SfRichTextEditor
 documentation: UG

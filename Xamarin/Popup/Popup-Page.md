@@ -35,8 +35,7 @@ In the below code snippet we created the sample for Popup as a page by simple lo
              xmlns:local="clr-namespace:Popup"
              x:Class="Popup.PopupPage"
                x:Name="popup">
-    <sfPopup:PopupView AppearanceMode="OneButton"  AcceptButtonText="Ok" 
-                                    x:Name="popupview">
+    <sfPopup:PopupView>
         <sfPopup:PopupView.HeaderTemplate>
             <DataTemplate x:Name="header">
                 <StackLayout>
@@ -68,6 +67,7 @@ public partial class PopupPage : SfPopupLayout
 		{
             InitializeComponent();
             popup.IsOpen = true;
+            popup.PopupView.AcceptButtonText = "Ok";
             popup.PopupView.HeaderTemplate = header;   //Insert the header template into HeaderTemplate.header was created in the PopupPage.xaml.
             popup.PopupView.ContentTemplate = content; //Insert the content template into ContentTemplate.content was created in the PopupPage.xaml.
         }

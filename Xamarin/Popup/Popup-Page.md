@@ -35,7 +35,8 @@ In the below code snippet we created the sample for Popup as a page by simple lo
              xmlns:local="clr-namespace:Popup"
              x:Class="Popup.PopupPage"
                x:Name="popup">
-    <sfPopup:PopupView AppearanceMode="OneButton" x:Name="popupview">
+    <sfPopup:PopupView AppearanceMode="OneButton"  AcceptButtonText="Ok" 
+                                    x:Name="popupview">
         <sfPopup:PopupView.HeaderTemplate>
             <DataTemplate x:Name="header">
                 <StackLayout>
@@ -97,7 +98,8 @@ public partial class PopupPage : SfPopupLayout
     <sfPopup:SfPopupLayout IsOpen="{Binding  PopupOpen}">
         <sfPopup:SfPopupLayout.PopupView>
             <sfPopup:PopupView AppearanceMode="TwoButton"
-                              
+                    AcceptButtonText="Login" 
+                    DeclineButtonText="Exit"          
                     AcceptCommand="{Binding PopupAcceptCommand}"
                     DeclineCommand="{Binding PopupDeclineCommand}"
                                >

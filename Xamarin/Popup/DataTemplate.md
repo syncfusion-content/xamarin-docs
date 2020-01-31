@@ -8,7 +8,7 @@ documentation: ug
 ---
 # How to Retrieve text value from entry control in Xamarin.Forms popup content template?
 
-We can achieve this by Binding the Poperty of the ViewModel to the entry.
+We can achieve this by Binding the Property of the ViewModel to the entry.
 
 Refer to the following code example for Retrieve text value from entry control in Xamarin.Forms popup content template.
 

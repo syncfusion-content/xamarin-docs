@@ -11,7 +11,7 @@ documentation: ug
 
 # How to use Xamarin.Forms popup as a page?
 
-We achieve popup as a page in Xamain.Forms by creating the SfPopupLayout as view or class file. When we need it, we may call up the SfPopupLayout. Main purpose of Popup as page is reusability. 
+We achieve popup as a page in Xamarin.Forms by creating the SfPopupLayout as view or class file. When we need it, we may call up the SfPopupLayout. Main purpose of Popup as page is its reusablility. 
 
 ## How to handle the Popup as page?
 

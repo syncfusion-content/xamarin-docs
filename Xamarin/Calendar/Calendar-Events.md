@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating Events in Syncfusion Calendar control for Android
-description: Learn how to create appointments
+description: Learn about Appointments support in Syncfusion Xamarin calendar (SfCalendar) control and more details.
 platform: Xamarin
 control: Calendar
 documentation: ug
@@ -90,6 +90,7 @@ N> The `Inline` view and `AgendaView` will be available only in month view with 
 You can customize the number of appointment indicators displayed in month cell using [MaximumEventIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaximumEventIndicatorCount.html) property of ‘SfCalendar’. The default value of `MaximumEventIndicatorCount` is 5.
 
 N> If appointments count are lesser than the Appointment Indicator count value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.
+N> Appointment indicator will be shown on the basis of date meetings, usable month cell size and indicator count. For eg, if the month cell size is less (available for only 4 dots) and the indicator count is 10, then 4 indicators will be used.
 
 
 ## Customize inline/agenda view using DataTemplate

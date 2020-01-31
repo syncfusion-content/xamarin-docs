@@ -51,7 +51,8 @@ You can execute your own set of codes once the popup is opened, and visible in t
 
 {% tabs %}
 {%highlight Xaml%}
-<sfPopup:SfPopupLayout x:Name="popupLayout" Opened="PopupLayout_Opened"/>
+<sfPopup:SfPopupLayout x:Name="popupLayout" 
+Opened="PopupLayout_Opened"/>
 {%endhighlight%}
 
 {% highlight c# %}

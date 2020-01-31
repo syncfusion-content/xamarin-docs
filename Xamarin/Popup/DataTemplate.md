@@ -64,6 +64,8 @@ Refer to the following code example for Retrieve text value from entry control i
                VerticalOptions="Center"  
                HorizontalOptions="Center" Command="{Binding PopupCommand}" />
                 <Label Text="{Binding ShowDetail}"
+                VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="Center"
                LineBreakMode="NoWrap"
                BackgroundColor="Blue"
                TextColor="Red"

@@ -9,6 +9,8 @@ documentation: ug
 
 # Dealing with Suggestion Box
 
+## Dealing with Suggestion Box in Xamarin SfAutoComplete
+
 Suggestion box is the drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with drop-down list in the SfAutoComplete control.
 
 ## Suggestion box placement mode
@@ -704,6 +706,17 @@ namespace AutoComplete
             this.Content = stackLayout;
         }
     }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Create a `EmployeeViewModel` class with the `Employee` collection property, which is initialized with required number of data objects.
+
+{% tabs %}
+
+{% highlight C# %}
 
     public class Employee
     {
@@ -735,7 +748,6 @@ namespace AutoComplete
             }
         }
 
-
         public event PropertyChangedEventHandler PropertyChanged;
 
         private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
@@ -766,7 +778,6 @@ namespace AutoComplete
             employeeCollection.Add(new Employee() { ID = 9, Name = "Aaron" });
         }
     }
-}
 
 {% endhighlight %}
 
@@ -922,73 +933,6 @@ namespace AutoComplete
             stackLayout.Children.Add(stack);
             this.Content = stackLayout;
         }
-
-        private void AutoComplete_FilterCollectionChanged(object sender, FilterCollectionChangedEventArgs e)
-        {
-            MainListView.ItemsSource = (IEnumerable)e.Value;
-        }
-    }
-
-    public class Employee
-    {
-        private int id;
-        public int ID
-        {
-            get { return id; }
-            set { id = value; }
-        }
-        private string name;
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-    }
-
-    public class EmployeeViewModel : INotifyPropertyChanged
-    {
-        private IEnumerable<object> items;
-
-        public IEnumerable<object> Items
-        {
-            get { return items; }
-            set
-            {
-                items = value;
-                NotifyPropertyChanged();
-            }
-        }
-
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
-
-        private ObservableCollection<Employee> employeeCollection;
-        public ObservableCollection<Employee> EmployeeCollection
-        {
-            get { return employeeCollection; }
-            set { employeeCollection = value; }
-        }
-        public EmployeeViewModel()
-        {
-            employeeCollection = new ObservableCollection<Employee>();
-            employeeCollection.Add(new Employee() { ID = 1, Name = "Eric" });
-            employeeCollection.Add(new Employee() { ID = 2, Name = "James" });
-            employeeCollection.Add(new Employee() { ID = 3, Name = "Jacob" });
-            employeeCollection.Add(new Employee() { ID = 4, Name = "Lucas" });
-            employeeCollection.Add(new Employee() { ID = 5, Name = "Mark" });
-            employeeCollection.Add(new Employee() { ID = 6, Name = "Aldan" });
-            employeeCollection.Add(new Employee() { ID = 7, Name = "Aldrin" });
-            employeeCollection.Add(new Employee() { ID = 8, Name = "Alan" });
-            employeeCollection.Add(new Employee() { ID = 9, Name = "Aaron" });
-        }
     }
 }
 
@@ -996,4 +940,18 @@ namespace AutoComplete
 
 {% endtabs %}
 
+The following code snippet will handle the event.
+
+{% tabs %}
+
+{% highlight c# %}
+
+        private void AutoComplete_FilterCollectionChanged(object sender, FilterCollectionChangedEventArgs e)
+        {
+            MainListView.ItemsSource = (IEnumerable)e.Value;
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
 ![Filtered_Items_Image](images/AutoComplete-Filtering-Options/Filtered_Items_SfAutoComplete.png)

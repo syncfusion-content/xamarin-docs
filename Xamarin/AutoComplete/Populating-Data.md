@@ -9,6 +9,8 @@ documentation : ug
 
 # Populating Data
 
+## Populating Data in Xamarin AutoComplete
+
 SfAutoComplete control can be populated with a list of string or business objects, which assists the user while typing. Users can choose one item from the filtered suggestion list.
 
 [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~DataSource.html) property is used to populate data in SfAutoComplete control. This section explains populating AutoComplete with list of string and list of Employee details separately.
@@ -21,10 +23,17 @@ Create an instance of string list and populate items as shown below:
 
 {% highlight xaml %}
 
- <StackLayout 
-        VerticalOptions="Start" 
-        HorizontalOptions="Start"
-        Padding="30">
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start"
+                 Padding="30">
         <autocomplete:SfAutoComplete x:Name="autoComplete"
                                      HeightRequest="40">
             <autocomplete:SfAutoComplete.AutoCompleteSource>
@@ -44,6 +53,7 @@ Create an instance of string list and populate items as shown below:
             </autocomplete:SfAutoComplete.AutoCompleteSource>
         </autocomplete:SfAutoComplete>
     </StackLayout>
+</ContentPage>
 	
 {% endhighlight %}
 
@@ -234,6 +244,8 @@ N> Set the EmployeeViewModel instance as the BindingContext of your control; thi
 
 [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~ItemTemplate.html) property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -271,7 +283,11 @@ N> Set the EmployeeViewModel instance as the BindingContext of your control; thi
 
 {% endhighlight %}
 
+{% endtabs %}
+
 The ItemTemplate in above XAML code is translated to C# and given below:
+
+{% tabs %}
 
 {% highlight c# %}
 
@@ -328,6 +344,8 @@ namespace AutocompleteSample
 }
 
 {% endhighlight %}
+
+{% endtabs %}
 
 Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/customizing-autocomplete) link to learn more about the customizing options available in SfAutoComplete control.
 

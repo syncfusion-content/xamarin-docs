@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Title support in Syncfusion SfBusyIndicator control for Xamarin.Forms
-description: Learn how to add title description to SfBusyIndicator
+description: This section will explain how to add and customize title description on Xamarin.Forms SfBusyIndicator control.
 platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
 # Set Header
+
+## Set Header in Xamarin Busy Indicator  (SfBusyIndicator)
 
 ## Title
 
@@ -27,8 +29,7 @@ SfBusyIndicator provides option to set the text that indicates the information r
                                        AnimationType="Ball" 
                                        ViewBoxWidth = "150" 
                                        Title="Loading..."
-                                       ViewBoxHeight="150" 
-                                       TextColor="Maroon"/>
+                                       ViewBoxHeight="150"/>
     </ContentPage.Content>
 </ContentPage>
 
@@ -51,7 +52,6 @@ namespace GettingStarted
                 AnimationType = AnimationTypes.Ball,
                 ViewBoxHeight = 150,
                 ViewBoxWidth = 150,
-                TextColor = Color.Maroon,
                 Title = "Loading..."
             };
 
@@ -136,7 +136,7 @@ SfBusyIndicator provides options to change the size of the text. The size of the
              x:Class="GettingStarted.MainPage">
     <ContentPage.Content>
         <busyindicator:SfBusyIndicator x:Name="busyindicator" 
-                                       AnimationType="Battery" 
+                                       AnimationType="Ball" 
                                        ViewBoxWidth = "150" 
                                        Title="Loading..."
                                        TextSize="10"
@@ -224,7 +224,7 @@ namespace GettingStarted
                 ViewBoxWidth = 150,
                 TextColor = Color.Maroon,
                 Title = "Loading...",
-                TitlePlacement= TitlePlacement.Top
+                TitlePlacement= TitlePlacement.None
             };
 
             this.Content = busyIndicator;
@@ -237,5 +237,3 @@ namespace GettingStarted
 {% endtabs %}
 
 ![Title](images/Title.png) 
-
-

@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Colors in Syncfusion SfAutoComplete control for Xamarin.Forms
-description: Learn how to set minimum Prefix Characters in SfAutoComplete
+description: This section will describe about how to set minimum Prefix Characters in Xamarin.Forms SfAutoComplete.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
 # Prefix Characters Constraint
+
+## Prefix Characters Constraint in Xamarin SfAutoComplete
 
 Instead of displaying suggestion list on every character entry, matches can be filtered and displayed after a few character entries. This can be done by [`MinimumPrefixCharacters`] property and its default value is 1.
 

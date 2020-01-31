@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Getting Started for Syncfusion.Xamarin.Forms BusyIndicator
-description: A quick tour to initial users on Syncfusion SfBusyIndicator control for Xamarin.Forms platform
+description: This section will explain how to initialize and use Syncfusion Xamarin.Forms SfBusyIndicator control.
 platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
 
 # Getting Started
+
+## Getting started with Xamarin Busy Indicator(SfBusyIndicator)
 
 This section explains you the steps to configure a SfBusyIndicator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfBusyIndicator control.
 
@@ -95,6 +97,8 @@ There is a known Framework issue in UWP platform. The custom controls will not r
 
 The above problem can be resolved by initializing the SfBusyIndicator assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
 
+{% tabs %}
+
 {% highlight C# %}
 
 // In App.xaml.cs
@@ -117,6 +121,8 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 …     
 }
 {% endhighlight %}
+
+{% endtabs %}
 
 ## Create a Simple SfBusyIndicator 
 

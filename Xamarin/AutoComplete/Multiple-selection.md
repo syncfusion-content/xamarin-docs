@@ -188,7 +188,7 @@ namespace AutocompleteSample
 
 Define a simple model class `Employee` with the property of Name, Image and populate employee data in ViewModel.
 
-{ % tabs %}
+{% tabs %}
 
 {% highlight C# %}
 
@@ -385,6 +385,7 @@ namespace AutocompleteSample
 }
 
 {% endhighlight %}
+
 {% endtabs %}
 
 ![token represents the image and text with closebutton](images/MultiSelect/TokenRepresentation.png)
@@ -394,6 +395,7 @@ namespace AutocompleteSample
 When selecting the multiple items, the selected items can be divided with a desired character given for a delimiter. We can set delimiter character with the `Delimiter` property.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -482,6 +484,7 @@ The autocomplete enables the user to indicate the selected item from the datasou
 N> Selection Indicator support has enhanced only on iOS and Android platform.
 
 {% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -574,6 +577,7 @@ The autocomplete enables the user to provide padding for the items inside dropdo
 N> `ItemPadding` property is available only on iOS and Android platform.
 
 {% tabs %}
+
 {% highlight xaml %}
 
  <?xml version="1.0" encoding="utf-8" ?>

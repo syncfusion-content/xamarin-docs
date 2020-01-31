@@ -40,7 +40,7 @@ To localize the SfRichTextEditor, follow the steps in application level:
 
 In the portable project of your application, add a `.resx` file inside the resources folder with **Build Action -> EmbeddedResource**. File name should be `Syncfusion control's Namespace + language code` format.
 
-For example, to set the culture as French, the file should be named as **Syncfusion.SfRichTextEditor.XForms.fr-FR.resx**.
+For example, to set the culture to French, the file should be named as **Syncfusion.SfRichTextEditor.XForms.fr-FR.resx**.
 
 ![Adding resx file for RTE](SfRichTextEditor_Images/AddRichTextResxFile.png)
 
@@ -50,7 +50,7 @@ N> You should create and add separate .resx files for the individual languages.
 
 ![resx file of RTE](SfRichTextEditor_Images/RTEEquivalentText.png)
 
-Implementation of the interface is not required for UWP project, since the resources automatically recognizes the selected language.
+Implementation of the interface is not required for UWP project since the resources automatically recognizes the selected language.
 
 ## Apply the converted format 
 

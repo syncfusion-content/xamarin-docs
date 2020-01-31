@@ -29,7 +29,8 @@ Refer to the following code example for Retrieve text value from entry control i
     <sfPopup:SfPopupLayout IsOpen="{Binding  PopupOpen}">
         <sfPopup:SfPopupLayout.PopupView>
             <sfPopup:PopupView AppearanceMode="TwoButton"
-                              
+                    AcceptButtonText="Login" 
+                    DeclineButtonText="Exit"         
                     AcceptCommand="{Binding PopupAcceptCommand}"
                     DeclineCommand="{Binding PopupDeclineCommand}"
                                >

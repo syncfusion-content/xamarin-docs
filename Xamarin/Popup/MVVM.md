@@ -95,7 +95,7 @@ In SfPopupLayout.PopupView we have two types of command:
 
 *[SfPopupLayout.PopupView.DeclineCommand](https://help.syncfusion.com/xamarin/popup/popup-events?cs-save-lang=1&cs-lang=csharp#decline-command)
 
-# How to use Xamarin.Forms popup as a page?
+## How to use Xamarin.Forms popup as a page?
 
 We achieve popup as a page in Xamarin.Forms by creating the SfPopupLayout as view or class file. When we need it, we may call up the SfPopupLayout. Main purpose of Popup as page is its reusable.
 
@@ -311,7 +311,7 @@ class PopupViewModel : INotifyPropertyChanged
 
 {% endtabs %}
 
-# How to Retrieve text value from entry control in Xamarin.Forms popup content template?
+## How to Retrieve text value from entry control in Xamarin.Forms popup content template?
 
 We can accomplish this by binding ViewModel property to the entry.
 

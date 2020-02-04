@@ -1,7 +1,7 @@
 ---
 layout: post
-title: FAQ | Xamarin | Syncfusion
-description: FAQ in Xamarin
+title: FAQ in Xamarin Platform | Syncfusion
+description: Basic overview about the list of available features on Syncfusion Xamarin.Forms components and steps to use the guide.
 platform: Xamarin
 documentation: ug
 --- 

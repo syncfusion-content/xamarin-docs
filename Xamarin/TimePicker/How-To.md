@@ -9,7 +9,7 @@ documentation: ug
 
 # How to
 
-# How to show as a Dialog
+## How to show as a Dialog
 
 TimePicker can be rendered as a dialog by setting the`SfTimePicker.PickerMode` property to Dialog. Default value of the `SfTimePicker.PickerMode` property is "Default". 
 
@@ -112,7 +112,7 @@ namespace TimePickerSample
 
 {% endtabs %}
 
-# How to handle time changed using the TimeSelected event
+## How to handle time changed using the TimeSelected event
 You can perform an operation when selecting time using the `TimeSelected` event. The TimeSelected event returns the following arguments:
 
 <table>
@@ -179,9 +179,9 @@ namespace TimePickerSample
 
 ![Event](images/Event.png)
 
-# How to set an interval
+## How to set an interval
 
-## How to set an interval between hours
+### How to set an interval between hours
 
 TimePicker provides an option to give an interval between hours using the `SfTimePicker.HourInterval` property.
 
@@ -229,7 +229,7 @@ namespace TimePickerSample
 
 {% endtabs %}
 
-## How to set an interval between minutes
+### How to set an interval between minutes
 
 TimePicker provides an option to give an interval between minutes using the `SfTimePicker.MinuteInterval` property.
 
@@ -277,7 +277,7 @@ namespace TimePickerSample
 
 {% endtabs %}
 
-## How to set an interval between seconds
+### How to set an interval between seconds
 
 TimePicker provides an option to give an interval between seconds using the `SfTimePicker.SecondInterval` property.
 

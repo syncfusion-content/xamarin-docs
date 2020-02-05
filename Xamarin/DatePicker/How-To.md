@@ -9,7 +9,7 @@ documentation: ug
 
 # How to
 
-# How to show as a Dialog
+## How to show as a Dialog
 
 DatePicker can be rendered as a dialog by setting the`SfDatePicker.PickerMode` property to Dialog. The default value of `SfDatePicker.PickerMode` property is "Default". 
 
@@ -112,7 +112,7 @@ namespace DatePickerSample
 
 {% endtabs %}
 
-# How to handle date changed using the DateSelected event
+## How to handle date changed using the DateSelected event
 
 You can perform an operation when selecting a date using the `DateSelected` event. The DateSelected event returns the following arguments:
 

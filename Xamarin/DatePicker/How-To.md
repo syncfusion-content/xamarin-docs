@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date selected event using Syncfusion DatePicker for Xamarin.Forms
-description: Learn how to perform an operation while changing its date in syncfusion DatePicker for Xamarin.Forms.
+description: Learn how to show DatePicker as dialog using button and perform an operation while changing its date in syncfusion DatePicker for Xamarin.Forms.
 platform: Xamarin
 control: DatePicker
 documentation: ug

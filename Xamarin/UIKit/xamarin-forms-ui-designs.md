@@ -9,7 +9,7 @@ documentation: ug
 
 # Syncfusion Xamarin.Forms UI Designs 
 
-The Essential UI Kit includes 65 screens which is under the following categories. 
+The Essential UI Kit includes 82 screens which is under the following categories. 
 
 ## Forms	
 
@@ -74,6 +74,17 @@ The Essential UI Kit includes 65 screens which is under the following categories
 * Navigation List Card Page
 * Navigation Tile Card Page
 * Songs Page
+* FAQs Page
+* Contacts List
+* Songs Play List
+* Movies List
+* Names List
+* Restaurant Page
+* Icon Names List
+* Suggestion Page
+* App Usage Page
+* Documents List Page
+* Selectable Name Page
 
 ## Onboarding	
 
@@ -136,3 +147,8 @@ The Essential UI Kit includes 65 screens which is under the following categories
 
 * Setting Page
 * Help Page
+
+## Notification
+
+* Social Notification Page
+* Task Notification Page

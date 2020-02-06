@@ -392,3 +392,48 @@ Business Registration Form Page<br/>
 </td>
 </tr>
 </table>
+
+## UI Kit 2.5.0.0
+
+The UI Kit version 2.5.0.0 has 13 new screens for the following categories.
+
+<table>
+<tr>
+<th align="center">S.No</th>
+<th align="center">Categories</th>
+<th align="center">Pages</th>
+</tr>
+<tr>
+<td valign="top" align="center">
+1
+</td>
+<td valign="top" align="center">
+Navigation
+</td>
+<td>
+1. FAQs Page<br/>
+2. Contacts List<br/>
+3. Songs Play List<br/>
+4. Movies List<br/>
+5. Names List<br/>
+6. Restaurant Page<br/>
+7. Icon Names List<br/>
+8. Suggestion Page<br/>
+9. App Usage Page<br/>
+10. Documents List Page<br/>
+11. Selectable Name Page<br/>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+2
+</td>
+<td valign="top" align="center">
+Notification
+</td>
+<td>
+1. Social Notification Page<br/>
+2. Task Notification Page</br>
+</td>
+</tr>
+</table>

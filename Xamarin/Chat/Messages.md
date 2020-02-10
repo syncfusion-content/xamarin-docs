@@ -1029,6 +1029,18 @@ public class SendMessageCommandExt : ICommand
 {% endhighlight %}
 {% endtabs %}
 
+## Scroll down the chat control to bottom when new message is added
+
+The SfChat allows to scroll the messages programatically using the `ScrollToMessage(Object)` method by passing the message. By default the message is scrolled at end of chat.  
+
+{% tabs %}
+{% highlight C# %}
+
+ this.sfChat.ScrollToMessage(chatItem);
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Show the avatar for outgoing message
 
 By default the author name and avatar are not displayed for the outgoing messages(messages sent by the `SfChat.CurrentUser`). This can be customized in the `SendMessage` event handler or `SendMessageCommand's` execution.

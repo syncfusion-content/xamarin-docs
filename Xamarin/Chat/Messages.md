@@ -1031,15 +1031,81 @@ public class SendMessageCommandExt : ICommand
 
 ## Scroll down the chat control to bottom when new message is added
 
-The SfChat allows to scroll the messages programatically using the `ScrollToMessage(Object)` method by passing the message. By default the message is scrolled at end of chat.  
+The SfChat allows to scroll the messages programatically using the [SfChat.ScrollToMessage(Object)](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ScrollToMessage.html) method by passing the message. By default the message is scrolled at end of chat.  
 
 {% tabs %}
-{% highlight C# %}
+{% highlight xaml %}
 
- this.sfChat.ScrollToMessage(chatItem);
+    <ContentPage.BindingContext>
+        <local:GettingStattedViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+    <ContentPage.Behaviors>
+        <local:MainPageBehavior></local:MainPageBehavior>
+    </ContentPage.Behaviors>
+    
+    <ContentPage.Content>
+        <sfChat:SfChat x:Name="sfChat"
+                       Messages="{Binding Messages}"
+                       SendMessageCommand="{Binding SendMessage}"
+                       CurrentUser="{Binding CurrentUser}" />
+    </ContentPage.Content>
 
 {% endhighlight %}
+
+{% highlight C# %}
+ public class MainPageBehavior: Behavior<MainPage>
+    {
+
+       private GettingStattedViewModel viewModel;
+
+       private SfChat sfChat;
+        public MainPageBehavior()
+        {
+
+        }
+
+        protected override void OnAttachedTo(MainPage bindable)
+        {
+            this.sfChat = bindable.FindByName<SfChat>("sfChat");
+            this.viewModel = bindable.FindByName<GettingStattedViewModel>("viewModel");
+            this.viewModel.Messages.CollectionChanged += Messages_CollectionChanged;
+
+            base.OnAttachedTo(bindable);
+        }
+
+        private async void Messages_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            if (e.Action == NotifyCollectionChangedAction.Add)
+            {
+                foreach (var chatItem in e.NewItems)
+                {
+                    TextMessage textMessage = chatItem as TextMessage;
+                    if (textMessage != null && textMessage.Author == this.viewModel.CurrentUser)
+                    {
+                        textMessage.ShowAvatar = false;
+                    }
+                    else
+                    {
+                        await Task.Delay(50);
+                        this.sfChat.ScrollToMessage(chatItem);
+                    }
+                }
+            }
+
+        }
+
+        protected override void OnDetachingFrom(MainPage bindable)
+        {
+            this.viewModel.Messages.CollectionChanged -= Messages_CollectionChanged;
+            this.sfChat = null;
+            this.viewModel = null;
+            base.OnDetachingFrom(bindable);
+        }
+    }
+{% endhighlight %}
 {% endtabs %}
+
+You can also download the entire source code of this demo here.
 
 ## Show the avatar for outgoing message
 

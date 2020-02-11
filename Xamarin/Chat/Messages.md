@@ -7,7 +7,7 @@ control: SfChat
 documentation: ug
 ---
 
-# Messages
+# Messages in Xamarin Chat (SfChat)
 
 ## Configuring common settings for the message
 

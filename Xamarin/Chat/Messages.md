@@ -1031,10 +1031,18 @@ public class SendMessageCommandExt : ICommand
 
 ## Scroll down the chat control to bottom when new message is added
 
-The SfChat allows to scroll the messages programatically using the [SfChat.ScrollToMessage(Object)](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ScrollToMessage.html) method by passing the message. By default the message is scrolled at end of chat.  
+The SfChat allows to scroll down the chat control to bottom programatically by using the [SfChat.ScrollToMessage(Object)](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ScrollToMessage.html) method. By default the message is scrolled at end of chat.  
+In the below example, chat control is scrolled down to bottom when a new message is added in Messages collection.
 
 {% tabs %}
 {% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage">
 
     <ContentPage.BindingContext>
         <local:GettingStattedViewModel x:Name="viewModel"/>
@@ -1049,6 +1057,9 @@ The SfChat allows to scroll the messages programatically using the [SfChat.Scrol
                        SendMessageCommand="{Binding SendMessage}"
                        CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
+
+</ContentPage>
+
 
 {% endhighlight %}
 
@@ -1105,7 +1116,7 @@ The SfChat allows to scroll the messages programatically using the [SfChat.Scrol
 {% endhighlight %}
 {% endtabs %}
 
-You can also download the entire source code of this demo here.
+You can download the example from [here](https://github.com/SyncfusionExamples/How-to-scroll-down-the-chat-control-at-bottom-when-new-message-is-added).
 
 ## Show the avatar for outgoing message
 

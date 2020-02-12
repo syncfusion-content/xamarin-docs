@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin DataGrid (SfDataGrid)
 
 This section provides a quick overview for working with the SfDataGrid for Xamarin.Forms. Walk through the entire process of creating a real world of this control.
 
@@ -151,6 +151,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     //Now, add all the assemblies your app uses
     assembliesToInclude.Add(typeof(Syncfusion.SfDataGrid.XForms.UWP.SfDataGridRenderer).GetTypeInfo().Assembly);
     assembliesToInclude.Add(typeof(Syncfusion.SfNumericTextBox.XForms.UWP.SfNumericTextBoxRenderer).GetTypeInfo().Assembly);
+	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.ComboBox.SfComboBoxRenderer).GetTypeInfo().Assembly);
 
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
@@ -177,6 +178,7 @@ In this walk through, a new application can be created that contains the SfDataG
  * [Sorting](#sorting) 
  * [Grouping](#grouping) 
  * [Selection](#selection)
+ * [Editing](https://help.syncfusion.com/xamarin/datagrid/editing)
 
 ## Creating the project
 

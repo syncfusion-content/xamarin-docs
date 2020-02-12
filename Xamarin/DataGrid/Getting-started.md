@@ -178,6 +178,7 @@ In this walk through, a new application can be created that contains the SfDataG
  * [Sorting](#sorting) 
  * [Grouping](#grouping) 
  * [Selection](#selection)
+ * [Editing](https://help.syncfusion.com/xamarin/datagrid/editing)
 
 ## Creating the project
 

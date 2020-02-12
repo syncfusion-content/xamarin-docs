@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin DataGrid (SfDataGrid)
 
 This section provides a quick overview for working with the SfDataGrid for Xamarin.Forms. Walk through the entire process of creating a real world of this control.
 

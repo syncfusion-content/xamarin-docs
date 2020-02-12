@@ -1032,6 +1032,7 @@ public class SendMessageCommandExt : ICommand
 ## Scroll down the chat control to bottom when new message is added
 
 The SfChat allows to scroll down the chat control to bottom programmatically by using the [SfChat.ScrollToMessage(Object)](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ScrollToMessage.html) method. By default the message is scrolled at end of chat.  
+
 In the below example, chat control is scrolled down to bottom when a new message is added in Messages collection.
 
 {% tabs %}
@@ -1116,7 +1117,7 @@ In the below example, chat control is scrolled down to bottom when a new message
 {% endhighlight %}
 {% endtabs %}
 
-You can download the example from [here](https://github.com/SyncfusionExamples/How-to-scroll-down-the-chat-control-at-bottom-when-new-message-is-added).
+You can download the example from [Github](https://github.com/SyncfusionExamples/How-to-scroll-down-the-chat-control-at-bottom-when-new-message-is-added).
 
 ## Show the avatar for outgoing message
 

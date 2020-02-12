@@ -151,6 +151,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     //Now, add all the assemblies your app uses
     assembliesToInclude.Add(typeof(Syncfusion.SfDataGrid.XForms.UWP.SfDataGridRenderer).GetTypeInfo().Assembly);
     assembliesToInclude.Add(typeof(Syncfusion.SfNumericTextBox.XForms.UWP.SfNumericTextBoxRenderer).GetTypeInfo().Assembly);
+	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.ComboBox.SfComboBoxRenderer).GetTypeInfo().Assembly);
 
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);

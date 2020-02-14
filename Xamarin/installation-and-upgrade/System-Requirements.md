@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# System Requirements
+# System Requirements  
 
 ### Hardware Environment
 

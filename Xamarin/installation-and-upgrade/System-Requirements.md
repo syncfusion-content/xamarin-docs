@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# System Requirements
+# Xamarin.Forms System Requirements  
 
 ### Hardware Environment
 
@@ -57,7 +57,7 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
         <br/>
         </td>
         <td>
-            SfPdfViewer, SfCheckBox
+            SfPdfViewer, SfCheckBox and Material theme support
             <br/>
             <br/>
         </td>

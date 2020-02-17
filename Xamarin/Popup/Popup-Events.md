@@ -129,12 +129,13 @@ private void PopupLayout_Closed(object sender, EventArgs e)
 
 The [SfPopupLayout.PopupView.AcceptCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~AcceptCommand.html) will be fired when clicking the Accept button in the popup footer.
 
-To handle the Accept button, follow the procedure:
+To handle the Accept button,
 
-* Declare the `PopupAcceptCommand` Property in the view model.
-* In view model constructor `PopupAcceptCommand` was Implemented.
-* PopupAcceptCommand fire the `CanExecute()`.
-* `CanExecute()` will be call the `PopupAccept()` method which has set of code to execute when popup was accept.
+* Derive a class from `ICommand`, and implement the `ICommand` interface.
+* To prevent popup from closing, return false in the `CanExecute()` override method and the `Execute()` override method will not be fired.
+* Else return true in the `CanExecute()` override method and do the required operations in the `Execute()` method.
+* Now create a property of your custom command type in the view model class and initialize it.
+* Bind the property in the view model to the `SfPopupLayout.PopupView.AcceptCommand` in XAML.
 
 {% tabs %}
 
@@ -215,12 +216,13 @@ To handle the Accept button, follow the procedure:
 
 The [SfPopupLayout.PopupView.DeclineCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~DeclineCommand.html) will be fired when clicking the Decline button in the popup footer. 
 
-To handle the Decline button, follow the procedure:
+To handle the Decline button,
 
-* Declare the `PopupDeclineCommand` Property in the view model.
-* In view model constructor `PopupDeclineCommand` was Implemented.
-* PopupDeclineCommand fire the `CanExecute()`.
-* `CanExecute()` will be call the `PopupDecline()` method which has set of code to execute when popup was decline.
+* Derive a class from `ICommand`, and implement the `ICommand` interface.
+* To prevent popup from closing, return false in the `CanExecute()` override method and the `Execute()` override method will not be fired.
+* Else return true in the `CanExecute()` override method and do the required operations in the `Execute()` method.
+* Now create a property of your custom command type in the view model class and initialize it.
+* Bind the property in the view model to the `SfPopupLayout.PopupView.DeclineCommand` in XAML.
 
 {% tabs %}
 

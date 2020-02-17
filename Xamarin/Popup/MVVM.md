@@ -94,7 +94,7 @@ SfPopupLayout provides command support for the popup buttons,
 
 ## How to use Xamarin.Forms popup as a page?
 
-To use SfPopupLayout as a page, create a new XAML file with SfPopupLayout in it. You can use this XAML file instance (SfPopupLayout view), across any file in your project wherever you may want to display a popup, thus allowing you to reuse the same instance of the popup where you can modify or change the requried properties alone based on the current context to be displayed.
+To use SfPopupLayout as a page, create a new XAML file with SfPopupLayout in it. You can use this XAML file instance (SfPopupLayout view), across any file in your project wherever you may want to display a popup, thus allowing you to reuse the same instance of the popup where you can modify or change the required properties alone based on the current context to be displayed.
 
 The below code snippet shows how to create a popup in XAML file. We have created a simple popup to show error message popup to user on a unsuccessful login.
 

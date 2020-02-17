@@ -6,7 +6,7 @@ platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
-# MVVM
+
 
 ## How to show Xamarin.Forms popup from ViewModel?
 

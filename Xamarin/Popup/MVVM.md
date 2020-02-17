@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Popup using MVVM | SfPopupLayout |Xamarin | Syncfusion
-description: Show the Xamarin.Forms Popup view in the Model-View-ViewModel.We need to set the viewmodel as a page Binding context.
+title: Xamarin.Forms Popup MVVM| SfPopupLayout| Xamarin| Syncfusion
+description: Describes about how to use Syncfusion Xamarin.Forms Popup in MVVM and use commands to handle user responses.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
 
-
 ## How to show Xamarin.Forms popup from ViewModel?
 
-SfPopup can be used in MVVM architecture applications easily. In the below example [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) property is binded to a property in the ViewModel based on which the popup is opened or closed. Refer the below code example to display popup in MVVM.
+SfPopup can be used in MVVM architecture applications easily. In the below example [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) property is bound to a property in the ViewModel based on which the popup is opened or closed. Refer the below code example to display popup in MVVM.
 
-In the below code snippet, note that the Binding context is set for the page and the property (DisplayPopup) of the ViewModel is binded to the [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html).
+In the below code snippet, note that the Binding context is set for the page and the property (DisplayPopup) of the ViewModel is bound to the `SfPopupLayout.IsOpen`.
 
 {% tabs %}
 
@@ -87,9 +86,7 @@ public class ViewModel : INotifyPropertyChanged
 
 ## How to use commands for popup buttons?
 
-The commanding interface provides an alternative approach to implementing commands that is much better suited to the MVVM architecture. The ViewModel itself can contain commands, which are methods that are executed in reaction to a specific activity in the View such as a Button click will be fired the command.
-
-In SfPopupLayout.PopupView we have two types of command:
+SfPopupLayout provides command support for the popup buttons,
 
 *[SfPopupLayout.PopupView.AcceptCommand](https://help.syncfusion.com/xamarin/popup/popup-events?cs-save-lang=1&cs-lang=csharp#accept-command)
 
@@ -97,48 +94,40 @@ In SfPopupLayout.PopupView we have two types of command:
 
 ## How to use Xamarin.Forms popup as a page?
 
-We achieve popup as a page in Xamarin.Forms by creating the SfPopupLayout as view or class file. When we need it, we may call up the SfPopupLayout. Main purpose of Popup as page is its reusable.
+To use SfPopupLayout as a page, create a new XAML file with SfPopupLayout in it. You can use this XAML file instance (SfPopupLayout view), across any file in your project wherever you may want to display a popup, thus allowing you to reuse the same instance of the popup where you can modify or change the requried properties alone based on the current context to be displayed.
 
-## How to handle the Popup as page?
-
-* Set the view into SfPopupLayout and inside the SfPopupLayout we can create the PopupView.
-* In PopupPage.xaml.cs file we need to set SfPopupLayout.IsOpen=true to show the PopupView.
-* Add the template into SfPopupLayout.PopupView.ContentTemplate,SfPopupLayout.PopupView.HeaderTemplate.
-* Now we can used it in `MainPage` or where we needed.
-
-In the below code snippet we created the sample for Popup as a page by simple login page:
-
-
+The below code snippet shows how to create a popup in XAML file. We have created a simple popup to show error message popup to user on a unsuccessful login.
 
 {% tabs %}
 
 {% highlight xaml %}
   
-  //PopupPage.xaml
+//PopupPage.xaml
  
- <?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <sfPopup:SfPopupLayout xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-               xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
-             xmlns:local="clr-namespace:Popup"
-             x:Class="Popup.PopupPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+             x:Class="ControlsTest.PopupPage"
                x:Name="popup">
-    <sfPopup:PopupView>
-        <sfPopup:PopupView.HeaderTemplate>
-            <DataTemplate x:Name="header">
-                <StackLayout>
-                    <Label Text="Congratulation"/>
-                </StackLayout>
-            </DataTemplate>
-        </sfPopup:PopupView.HeaderTemplate>
-        <sfPopup:PopupView.ContentTemplate>
-            <DataTemplate x:Name="content">
-                <StackLayout>
-                    <Label Text="Login Successfully..." VerticalOptions="Center"/>
-                </StackLayout>
-            </DataTemplate>
-        </sfPopup:PopupView.ContentTemplate>
-    </sfPopup:PopupView>
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView>
+            <sfPopup:PopupView.HeaderTemplate>
+                <DataTemplate x:Name="header">
+                    <StackLayout>
+                        <Label Text="Login failed" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </DataTemplate>
+            </sfPopup:PopupView.HeaderTemplate>
+            <sfPopup:PopupView.ContentTemplate>
+                <DataTemplate x:Name="content">
+                    <StackLayout>
+                        <Label Text="Incorrect credentials" VerticalOptions="Center"/>
+                    </StackLayout>
+                </DataTemplate>
+            </sfPopup:PopupView.ContentTemplate>
+        </sfPopup:PopupView>
+    </sfPopup:SfPopupLayout.PopupView>
 </sfPopup:SfPopupLayout>
 
 
@@ -147,25 +136,22 @@ In the below code snippet we created the sample for Popup as a page by simple lo
 
 {% highlight c# %}
 
-//PopupPage.cs
+//PopupPage.XAML.cs
 
 public partial class PopupPage : SfPopupLayout
-    {
-        public PopupPage ()
-		{
-            InitializeComponent();
-            popup.IsOpen = true;
-            popup.PopupView.AcceptButtonText = "Ok";
-            popup.PopupView.HeaderTemplate = header;   //Insert the header template into HeaderTemplate.header was created in the PopupPage.xaml.
-            popup.PopupView.ContentTemplate = content; //Insert the content template into ContentTemplate.content was created in the PopupPage.xaml.
-        }
+{
+    public PopupPage ()
+	{
+        InitializeComponent();
     }
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
 
+The below code snippet shows how to consume the previously created SfPopupLayout page from inside a different content page.
 
 {% tabs %}
 
@@ -176,146 +162,146 @@ public partial class PopupPage : SfPopupLayout
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Popup"
-             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
-             x:Class="Popup.MainPage">
+             xmlns:local="clr-namespace:ControlsTest"
+             x:Class="ControlsTest.MainPage">
+    
     <ContentPage.BindingContext>
-        <local:PopupViewModel x:Name="view"/>
+        <local:PopupViewModel x:Name="viewModel"/>
     </ContentPage.BindingContext>
 
-    <sfPopup:SfPopupLayout IsOpen="{Binding  PopupOpen}">
-        <sfPopup:SfPopupLayout.PopupView>
-            <sfPopup:PopupView AppearanceMode="TwoButton"
-                    AcceptButtonText="Login" 
-                    DeclineButtonText="Exit"          
-                    AcceptCommand="{Binding PopupAcceptCommand}"
-                    DeclineCommand="{Binding PopupDeclineCommand}"
-                               >
-                <sfPopup:PopupView.HeaderTemplate>
-                    <DataTemplate>
-                        <Label  Text="{Binding LabelString}" HorizontalOptions="Center"/>
-                    </DataTemplate>
-                </sfPopup:PopupView.HeaderTemplate>
-                <sfPopup:PopupView.ContentTemplate>
-                    <DataTemplate>
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="50"/>
-                                <RowDefinition Height="50"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <Label Text="User Name:" Grid.Row="0" Grid.Column="0"/>
-                            <Entry Text="{Binding UserName}" Grid.Row="0" Grid.Column="1"/>
-                            <Label Text="Password:" Grid.Row="1" Grid.Column="0"/>
-                            <Entry Text="{Binding Password}" Grid.Row="1" Grid.Column="1"/>
-                        </Grid>
-                    </DataTemplate>
-                </sfPopup:PopupView.ContentTemplate>
-             </sfPopup:PopupView>
-            </sfPopup:SfPopupLayout.PopupView>
-         <sfPopup:SfPopupLayout.Content>
-            <StackLayout>
-                    <Button  Text="ClickToShowPopup" 
-               VerticalOptions="Center"  
-               HorizontalOptions="Center" Command="{Binding PopupCommand}" />
-                </StackLayout>
-            </sfPopup:SfPopupLayout.Content>
- </sfPopup:SfPopupLayout>
+        <local:PopupPage x:Name="test" IsOpen="{Binding OpenPopup}"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <local:PopupPage.Content>
+            <StackLayout Orientation="Vertical">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="User Name:" Grid.Row="0" Grid.Column="0"/>
+                    <Entry Text="{Binding UserName}" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="Password:" Grid.Row="1" Grid.Column="0"/>
+                    <Entry Text="{Binding Password}" Grid.Row="1" Grid.Column="1"/>
+                </Grid>
+                <Button x:Name="LoginButton" Text="Login" Command="{Binding LoginCommand}" HeightRequest="100" HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+        </local:PopupPage.Content>
+    </local:PopupPage>
 </ContentPage>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+// MainPage.Xaml.cs
+
+[XamlCompilation(XamlCompilationOptions.Compile)]
+public partial class UGPage : ContentPage
+{
+	public UGPage ()
+	{
+	    InitializeComponent ();
+	}
+}
+
 //PopupViewModel.cs
 
 class PopupViewModel : INotifyPropertyChanged
 {
-        bool isOpen;
-        string labelString,userName,password;
-        public event PropertyChangedEventHandler PropertyChanged;
-        void OnPropertyChanged(string propertyName)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
-        }
-        public ICommand PopupAcceptCommand { get; set; }
-        public ICommand PopupDeclineCommand { get; set; }
-        public ICommand PopupCommand { get; set; }
-         public string LabelString { get { return labelString; }
-            set
-            {
-                labelString = value;
-                OnPropertyChanged(nameof(LabelString));
-            } }
-        public string UserName { get { return userName; } //Gets or Sets the value for the UserName.
-            set {
-                userName = value;
-                OnPropertyChanged(nameof(UserName));
-            }}
-        public string Password { get { return password; } //Gets or Sets the value for the Password.
-            set
-            {
-                password = value;
-                OnPropertyChanged(nameof(Password));
-            }
-        }
-        public bool PopupOpen {
-            get { return isOpen; }
-            set
-            {
-                isOpen = value;
-                OnPropertyChanged(nameof(PopupOpen));
-            } }
-        public PopupViewModel() //Initialization of the PopupViewModel.
-        {
-            PopupAcceptCommand = new Command(PopupAccept); //CanExecute() will be call the PopupAccept method
-            PopupDeclineCommand = new Command(PopupDecline); //CanExecute() will be call the PopupDecline method
-            PopupCommand = new Command(Popup);  //CanExecute() will be call the Popup method.
-        }
+    #region Fields
 
-        private void Popup() //An action to perform when the PopupCommand fired and In this method was open the popupview
-                            //by set PopupOpen value is true.
-        {
-            PopupOpen = true;
-            LabelString = "User Login";
-        }
+    bool isOpen;
+    string labelString, userName, password;
 
-        private void PopupAccept()//An action to perform when the PopupAcceptCommand fired.
-        {
-            // You can write your set of codes that needs to be executed.
-            if ((UserName == "Syncfusion") && (Password == "12345"))
-            {
-                PopupPage page = new PopupPage();  //Initialize the PopupPage class it will run the Popup as a page.
-                UserName = "";
-                Password = "";
-            }
-            else
-            {
-                UserName = "";
-                Password = "";
-            }
-        }
+    #endregion
 
-        private void PopupDecline()//An action to perform when the PopupDeclineCommand fired.
-        {
-            // You can write your set of codes that needs to be executed.
-            PopupOpen = false;
+    #region PropertyChanged
+    void OnPropertyChanged(string propertyName)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
 
+    public event PropertyChangedEventHandler PropertyChanged;
+    #endregion
+
+    #region Properties
+
+    public ICommand LoginCommand { get; set; }
+
+    public string LabelString
+    {
+        get { return labelString; }
+        set
+        {
+            labelString = value;
+            OnPropertyChanged(nameof(LabelString));
         }
     }
+    public string UserName
+    {
+        get { return userName; }
+        set
+        {
+            userName = value;
+            OnPropertyChanged(nameof(UserName));
+        }
+    }
+    public string Password
+    {
+        get { return password; }
+        set
+        {
+            password = value;
+            OnPropertyChanged(nameof(Password));
+        }
+    }
+    public bool OpenPopup
+    {
+        get { return isOpen; }
+        set
+        {
+            isOpen = value;
+            OnPropertyChanged(nameof(OpenPopup));
+        }
+    }
+
+    #endregion
+
+    #region Constructor
+    public PopupViewModel()
+    {
+        LoginCommand = new Command(Login);
+    }
+    #endregion
+
+    #region Commands
+
+    // Executed when the login button is clicked.
+    private void Login()
+    {
+        // You can write your set of codes that needs to be executed.
+        if ((UserName != "Syncfusion") || (Password != "12345"))
+        {
+            // If credentials are incorrect show the error message as popup.
+            OpenPopup = true;
+        }
+    }
+
+    #endregion
+}
 
 {% endhighlight %}
 
 {% endtabs %}
 
-## How to Retrieve text value from entry control in Xamarin.Forms popup content template?
+## How to retrieve text value from entry control in Xamarin.Forms popup content template?
 
-We can accomplish this by binding ViewModel property to the entry.
+This can be done by binding the text property of the entry to a property in the view model class.
 
-Refer to the following code example for retrieve text value from entry control in Xamarin.Forms popup content template.
+Refer to the following code example to retrieve text value from entry control in Xamarin.Forms popup content template.
 
 {% tabs %}
 
@@ -336,9 +322,8 @@ Refer to the following code example for retrieve text value from entry control i
             <sfPopup:PopupView AppearanceMode="TwoButton"
                     AcceptButtonText="Login" 
                     DeclineButtonText="Exit"         
-                    AcceptCommand="{Binding PopupAcceptCommand}"
-                    DeclineCommand="{Binding PopupDeclineCommand}"
-                               >
+                    AcceptCommand="{Binding PopupAcceptCommand}">
+                    
                 <sfPopup:PopupView.HeaderTemplate>
                     <DataTemplate>
                         <Label  Text="{Binding LabelString}" HorizontalOptions="Center"/>
@@ -368,7 +353,7 @@ Refer to the following code example for retrieve text value from entry control i
             <StackLayout>
                     <Button  Text="ClickToShowPopup" 
                VerticalOptions="Center"  
-               HorizontalOptions="Center" Command="{Binding PopupCommand}" />
+               HorizontalOptions="Center" Command="{Binding ShowPopupCommand}" />
                 <Label Text="{Binding ShowDetail}"
                 VerticalOptions="CenterAndExpand"
                  HorizontalOptions="Center"
@@ -401,8 +386,7 @@ class PopupViewModel : INotifyPropertyChanged
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
         public ICommand PopupAcceptCommand { get; set; }
-        public ICommand PopupDeclineCommand { get; set; }
-        public ICommand PopupCommand { get; set; }
+        public ICommand ShowPopupCommand { get; set; }
         public string LabelString
         {
             get { return labelString; }
@@ -460,8 +444,7 @@ class PopupViewModel : INotifyPropertyChanged
         public PopupViewModel()
         {
             PopupAcceptCommand = new Command(PopupAccept); //CanExecute() will be call the PopupAccept method
-            PopupDeclineCommand = new Command(PopupDecline); //CanExecute() will be call the PopupDecline method
-            PopupCommand = new Command(Popup);  //CanExecute() will be call the Popup method.
+            ShowPopupCommand = new Command(Popup);  //CanExecute() will be call the Popup method.
         }
 
         private void Popup()
@@ -486,14 +469,6 @@ class PopupViewModel : INotifyPropertyChanged
                 UserName = "";
                 Password = "";
              }
-        }
-
-        private void PopupDecline()
-        {
-            // You can write your set of codes that needs to be executed.
-            PopupOpen = false;
-            Visible = false;
-
         }
     }
 

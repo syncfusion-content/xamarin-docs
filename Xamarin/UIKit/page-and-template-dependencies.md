@@ -646,7 +646,7 @@ This page list the dependencies ( converters, rendereres and NuGet packages) of 
 		Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView,<br/>  Syncfusion.Xamarin.DataSource<br/>
 		</td>
 		<td>
-		<b>PCL:</b><br/>  Views\Navigation\BottomNavigationPage.xaml<br/>  Views\Navigation\BottomNavigationPage.xaml.cs<br/>  Views\Navigation\PhotosPage.xaml<br/>  Views\Navigation\PhotosPage.xaml.cs<br/>  Views\Navigation\SettingsPage.xaml<br/>  Views\Navigation\SettingsPage.xaml.cs <br/>  Views\Navigation\AlbumPage.xaml<br/>  Views\Navigation\AlbumPage.xaml.cs<br/>  Views\Navigation\Styles.xaml<br/>  Views\Navigation\Styles.xaml.cs<br/>  ViewModels\Navigation\AlbumViewModel.cs<br/>  ViewModels\Navigation\NavigationViewModel.cs<br/>  ViewModels\Navigation\PhotosViewModel.cs<br/>  ViewModels\Navigation\SettingsViewModel.cs<br/>  Models\Navigation\Album.cs<br/>  Models\Navigation\NavigationModel.cs<br/>  Models\Navigation\Photo.cs<br/>  Data\navigation.json<br/>  DataService\NavigationDataService.cs<br/>  DataService\AlbumDataService.cs<br/>  DataService\PhotosDataService.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		<b>PCL:</b><br/>  Views\Navigation\BottomNavigationPage.xaml<br/>  Views\Navigation\BottomNavigationPage.xaml.cs<br/>  Views\Navigation\PhotosPage.xaml<br/>  Views\Navigation\PhotosPage.xaml.cs<br/>  Views\Navigation\SettingsPage.xaml<br/>  Views\Navigation\SettingsPage.xaml.cs <br/>  Views\Navigation\AlbumPage.xaml<br/>  Views\Navigation\AlbumPage.xaml.cs<br/>  Views\Navigation\Styles.xaml<br/>  Views\Navigation\Styles.xaml.cs<br/>  ViewModels\Navigation\AlbumViewModel.cs<br/>  ViewModels\Navigation\NavigationViewModel.cs<br/>  ViewModels\Navigation\PhotosViewModel.cs<br/>  ViewModels\Navigation\SettingsViewModel.cs<br/>  Models\Navigation\Album.cs<br/>  Models\Navigation\NavigationModel.cs<br/>  Models\Navigation\Photo.cs<br/>  Data\navigation.json<br/>  DataService\NavigationDataService.cs<br/>  DataService\AlbumDataService.cs<br/>  DataService\PhotosDataService.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  controls/BorderlessEntry.cs<br/>  Controls/TabAnimationGrid.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
 		</td>
 	</tr><tr valign="top">		
 		<td align="center">
@@ -659,7 +659,7 @@ This page list the dependencies ( converters, rendereres and NuGet packages) of 
 		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfComboBox,<br/>  Syncfusion.Xamarin.SfRating,<br/>  Syncfusion.Xamarin.SfListView<br/>
 		</td>
 		<td>
-		<b>PCL:</b><br/>  Views\Navigation\NavigationListCardPage.xaml <br/>  Views\Navigation\NavigationListCardPage.xaml.cs <br/>  Views\Navigation\Styles.xaml Views\Navigation\Styles.xaml.<br/>  Controls\CustomShadowFrame.cs<br/>  Controls\TitleView.cs<br/>  ViewModels\Navigation\NavigationViewModel.cs<br/>  Models\Navigation\NavigationModel.cs<br/>  Themes\LightTheme.xaml <br/>  Themes\LightTheme.xaml.<br/>  Data\navigation.json <br/>  DataService\NavigationDataService.cs<br/>  Views\Templates\NavigationListTemplate.xaml<br/>  Views\Templates\NavigationListTemplate.xaml.cs<br/>  Views\Templates\Styles.xaml<br/>  Views\Templates\Styles.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>
+		<b>PCL:</b><br/>  Views\Navigation\NavigationListCardPage.xaml <br/>  Views\Navigation\NavigationListCardPage.xaml.cs <br/>  Views\Navigation\Styles.xaml Views\Navigation\Styles.xaml.<br/>  Controls\CustomShadowFrame.cs<br/>  Controls\TitleView.cs<br/>  ViewModels\Navigation\NavigationViewModel.cs<br/>  Models\Navigation\NavigationModel.cs<br/>  Themes\LightTheme.xaml <br/>  Themes\LightTheme.xaml.<br/>  Data\navigation.json <br/>  DataService\NavigationDataService.cs<br/>  Views\Templates\NavigationListTemplate.xaml<br/>  Views\Templates\NavigationListTemplate.xaml.cs<br/>  Views\Templates\Styles.xaml<br/>  Views\Templates\Styles.xaml.cs<br/>  controls/BorderlessEntry.cs<br/>  Controls/TabAnimationGrid.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>
 		</td>
 	</tr>
 	<tr valign="top">		
@@ -673,7 +673,7 @@ This page list the dependencies ( converters, rendereres and NuGet packages) of 
 		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfComboBox,<br/>  Syncfusion.Xamarin.SfRating,<br/>  Syncfusion.Xamarin.SfListView<br/>
 		</td>
 		<td>
-		<b>PCL:</b><br/>  Views\Navigation\NavigationTileCardPage.xaml<br/>  Views\Navigation\NavigationTileCardPage.xaml.cs<br/>  Views\Navigation\Styles.xaml<br/>  Views\Navigation\Styles.xaml.cs<br/>  ViewModels\Navigation\NavigationViewModel.cs<br/>  Models\Navigation\NavigationModel.cs<br/>  Controls\CustomShadowFrame.cs<br/>  Controls\TitleView.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Data\navigation.json<br/>  DataService\NavigationDataService.cs<br/>  Views\Templates\NavigationTileTemplate.xaml <br/>  Views\Templates\NavigationTileTemplate.xaml.cs<br/>  Views\Templates\Styles.xaml<br/>  Views\Templates\Styles.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		<b>PCL:</b><br/>  Views\Navigation\NavigationTileCardPage.xaml<br/>  Views\Navigation\NavigationTileCardPage.xaml.cs<br/>  Views\Navigation\Styles.xaml<br/>  Views\Navigation\Styles.xaml.cs<br/>  ViewModels\Navigation\NavigationViewModel.cs<br/>  Models\Navigation\NavigationModel.cs<br/>  Controls\CustomShadowFrame.cs<br/>  Controls\TitleView.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Data\navigation.json<br/>  DataService\NavigationDataService.cs<br/>  Views\Templates\NavigationTileTemplate.xaml <br/>  Views\Templates\NavigationTileTemplate.xaml.cs<br/>  Views\Templates\Styles.xaml<br/>  Views\Templates\Styles.xaml.cs<br/>  controls/BorderlessEntry.cs<br/>  Controls/TabAnimationGrid.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
 		</td>
 	</tr>
 	<tr valign="top">		
@@ -687,7 +687,161 @@ This page list the dependencies ( converters, rendereres and NuGet packages) of 
 		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>
 		</td>
 		<td>
-		<b>PCL:</b><br/>  Views\Navigation\SongsPage.xaml<br/>  Views\Navigation\SongsPage.xaml.cs<br/>  Views\Navigation\Styles.xaml<br/>  Views\Navigation\Styles.xaml.cs<br/>  ViewModels\Navigation\NavigationViewModel.cs<br/>  Models\Navigation\NavigationModel.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Data\navigation.json<br/>  DataService\NavigationDataService.cs<br/>  controls/BorderlessEntry.cs<br/>  Controls/TabAnimationGrid.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		<b>PCL:</b><br/>  Views\Navigation\SongsPage.xaml<br/>  Views\Navigation\SongsPage.xaml.cs<br/>  Views\Navigation\Styles.xaml<br/>  Views\Navigation\Styles.xaml.cs<br/>  ViewModels\Navigation\SongsViewModel.cs<br/>  Models\Navigation\Song.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Data\navigation.json<br/>  DataService\SongsDataService.cs<br/>  controls/BorderlessEntry.cs<br/>  Controls/TabAnimationGrid.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		</td>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			5<br/>
+		</td>
+		<td>
+		FAQs Page<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>  Syncfusion.Xamarin.Expander<br/>
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views/Navigation/FAQPage.xaml<br/>  Views/Navigation/FAQPage.xaml.cs<br/>  Views/Navigation/Styles.xaml<br/>  Views/Navigation/Styles.xaml.cs<br/>  ViewModels/ Navigation/FAQPageViewModel.cs<br/>  ViewModels/BaseViewModel.cs<br/>  Model/Navigation/FAQ.cs<br/>  DataService/FAQDataService.cs<br/>  Data/navigation.json<br/>  controls/BorderlessEntry.cs<br/>  controls/SearchableFAQList.cs<br/>  controls/SearchableListView.cs<br/>  Controls/TapAnimationGrid.cs<br/>   <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		</td>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			6<br/>
+		</td>
+		<td>
+		Contacts List<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>  Syncfusion.Xamarin.DataSource<br/>
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views/Navigation/ContactsPage.xaml<br/>  Views/Navigation/ContactsPage.xaml.cs<br/>  Views/Navigation/Styles.xaml<br/>  Views/Navigation/Styles.xaml.cs<br/>  ViewModels/Navigation/ContactsViewModel.cs<br/>  ViewModels/BaseViewModel.cs<br/>  Models/Navigation/Contact.cs<br/>  DataService/ContactsDataService.cs<br/>  Data/navigation.json<br/>  Controls/BorderlessEntry.cs<br/>  Controls/SearchableContactList.cs<br/>  Controls/SearchableListView.cs<br/>  Controls/TapAnimationGrid.cs<br/>  Behaviors/Navigation/ContactsListViewBehavior.cs<br/>  Themes/LightTheme.xaml<br/>  Themes/LightTheme.xaml.cs<br/>   <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		</td>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			7<br/>
+		</td>
+		<td>
+		Songs Play List<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views/Navigation/SongsPlayListPage.xaml<br/>  Views/Navigation/SongsPlayListPage.cs<br/>  Views/Navigation/Styles.xaml<br/>  Views/Navigation/Styles.xaml.cs<br/>  ViewModels/ Navigation/SongsPlayListViewModel.cs<br/>  ViewModels/ BaseViewModel.cs<br/>  Model/Navigation/Song.cs<br/>  DataService/SongsPlayListDataService.cs<br/>  Data/navigation.json<br/>  controls/BorderlessEntry.cs<br/>  controls/SearchableContactsList.cs<br/>   controls/SearchableListView.cs<br/>  Controls/TapAnimationGrid.cs<br/>  Themes/LightTheme.xaml<br/>  Themes/LightTheme.xaml.cs<br/>   <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		</td>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			8<br/>
+		</td>
+		<td>
+		Movies List<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views/Navigation/MoviesListPage.xaml<br/>  Views/Navigation/MoviesListPage.xaml.cs<br/>  Views/Navigation/Styles.xaml<br/>  Views/Navigation/Styles.xaml.cs<br/>  ViewModels/ Navigation/MoviesPageViewModel.cs<br/>  Model/Navigation/Movie.cs<br/>  DataService/MoviesDataService.cs<br/>  Data/navigation.json<br/>  ViewModels/BaseViewModel.cs<br/>  controls/BorderlessEntry.cs<br/>  controls/SearchableMoviesList.cs<br/>  controls/SearchableListView.cs<br/>  controls/TapAnimationGrid.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>   <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		</td>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			9<br/>
+		</td>
+		<td>
+		Names List<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>  Syncfusion.Xamarin.DataSource<br/>
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views/Navigation/NamesListPage.xaml<br/>  Views/Navigation/NamesListPage.xaml.cs<br/>  Views/Navigation/Styles.xaml<br/>  Views/Navigation/Styles.xaml.cs<br/>  ViewModels/ Navigation/NamesListViewModel.cs<br/>  Model/Navigation/Contact.cs<br/>  DataService/NamesListDataService.cs<br/>  Data/navigation.json<br/>  VieModels/BaseViewModel.cs<br/>  controls/BorderlessEntry.cs<br/>  controls/SearchableContactList.cs<br/>  controls/SearchableListView.cs<br/>  controls/TapAnimationGrid.cs<br/>  Behaviors/ Navigation/ContactsListViewBehavior.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>   <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		</td>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			10<br/>
+		</td>
+		<td>
+		Restaurant Page<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>  
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views/Navigation/RestaurantPage.xaml<br/>  Views/Navigation/RestaurantPage..xaml.cs<br/>  Views/Navigation/Styles.xaml<br/>  Views/Navigation/Styles.xaml.cs<br/>  ViewModels/ Navigation/RestaurantViewModel.cs<br/>  ViewModels/BaseViewModel.cs<br/>  Model/Navigation/Restaurant.cs<br/>  DataService/RestaurantDataService.cs<br/>  Data/navigation.json<br/>  controls/BorderlessEntry.cs<br/>  controls/SearchableRestaurantPage.cs<br/>  controls/SearchableListView.cs<br/>  controls/CustomShadowFrame<br/>  Controls/TapAnimationGrid.cs<br/>  AppLayout\Themes\LightTheme.xaml<br/>  AppLayout\Themes\LightTheme.xaml.cs<br/>   <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		</td>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			11<br/>
+		</td>
+		<td>
+		Icon Names List<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>  Syncfusion.Xamarin.DataSource<br/>
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views/Navigation/IconNamesListPagePage.xaml<br/>  Views/Navigation/IconNamesListPagePage.xaml.cs<br/>  Views/Navigation/Styles.xaml<br/>  Views/Navigation/Styles.xaml.cs<br/>  ViewModels/ Navigation/IconNamesListViewModel.cs<br/>  Model/Navigation/Contact.cs<br/>  DataService/IconNamesListDataService.cs<br/>  Data/navigation.json<br/>  ViewModels/BaseViewModel.cs<br/>  controls/BorderlessEntry.cs<br/>  controls/SearchableContactsList.cs<br/>  controls/SearchableListView.cs<br/>  Behaviors/ Navigation/ContactsListViewBehavior.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  Controls/TapAnimationGrid.cs<br/>  Controls/TapAnimationGrid.cs<br/>   <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		</td>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			12<br/>
+		</td>
+		<td>
+		Suggestion Page<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>  
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views/Navigation/SuggestionPage.xaml<br/>  Views/Navigation/SuggestionPage.xaml.cs<br/>  Views/Navigation/Styles.xaml<br/>  Views/Navigation/Styles.xaml.cs<br/>  ViewModels/ Navigation/SuggestionViewModel.cs<br/>  ViewModels/BaseViewModel.cs<br/>  Model/Navigation/Suggestion.cs<br/>  DataService/SuggestionDataService.cs<br/>  Data/navigation.json<br/>  controls/SearchableSuggestionList.cs<br/>  controls/SearchableListView.cs<br/>  Controls/TapAnimationGrid.cs<br/>  Controls/BorderlessEntry.cs<br/>  AppLayout\Themes\LightTheme.xaml<br/>  AppLayout\Themes\LightTheme.xaml.cs<br/>   <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		</td>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			13<br/>
+		</td>
+		<td>
+		App Usage Page<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>  Syncfusion.Xamarin.SfProgressBar<br/>
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views/Navigation/AppUsagePage.xaml<br/>  Views/Navigation/AppUsagePage.xaml.cs<br/>  Views/Navigation/Styles.xaml<br/>  Views/Navigation/Styles.xaml.cs<br/>  ViewModels/Navigation/AppUsageViewModel.cs<br/>  ViewModels/BaseViewModel.cs<br/>  Models/Navigation/AppUsage.cs<br/>  DataService/AppUsageDataService.cs<br/>  Data/navigation.json<br/>  Controls/BorderlessEntry.cs<br/>  Controls/TapAnimationGrid.cs<br/>  Controls/TitleView.cs<br/>  Controls/TitleView.cs<br/>  Converters/StringToGlyphConverter.cs<br/>  Themes/LightTheme.xaml<br/>  Themes/LightTheme.xaml.cs<br/>  <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		</td>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			14<br/>
+		</td>
+		<td>
+		Documents List Page<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views/Navigation/DocumentsListPage.<br/>  Views/Navigation/DocumentsListPage.xaml.cs<br/>  Views/Navigation/Styles.xaml<br/>  Views/Navigation/Styles.xaml.cs<br/>  ViewModels/Navigation/DocumentsListViewModel.cs<br/>  ViewModels/BaseViewModel.cs<br/>  Models/Navigation/Document.cs<br/>  DataService/DocumentsListDataService.cs<br/>  Data/navigation.json<br/>  Controls/BorderlessEntry.cs<br/>  Controls/SearchableDocumentsList.cs<br/>  Controls/SearchableListView.cs<br/>  Controls/TapAnimationGrid.cs<br/>  Themes/LightTheme.xaml<br/>  Themes/LightTheme.xaml.cs<br/>   <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		</td>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			15<br/>
+		</td>
+		<td>
+		Selectable Name Page<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>  Syncfusion.Xamarin.DataSource<br/>
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views/Navigation/SelectableNamePage.xaml<br/>  Views/Navigation/SelectableNamePage.xaml.cs<br/>  Views/Navigation/Styles.xaml<br/>  Views/Navigation/Styles.xaml.cs<br/>  ViewModels/Navigation/SelectableNamePageViewModel.cs<br/>  ViewModels/BaseViewModel.cs<br/>  Models/Navigation/Contact.cs<br/>  DataService/SelectableNamePageDataService.cs<br/>  Data/navigation.json<br/>  Controls/BorderlessEntry.cs<br/>  Controls/SearchableContactsList.cs<br/>  Controls/SearchableListView.cs<br/>  Controls/TapAnimationGrid.cs<br/>  Behaviors/Navigation/ContactsListViewBehaviorContactsListView.cs<br/>  Themes/LightTheme.xaml<br/>  Themes/LightTheme.xaml.cs<br/>   <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b> <br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
 		</td>
 	</tr>
 </table>
@@ -1322,6 +1476,53 @@ This page list the dependencies ( converters, rendereres and NuGet packages) of 
 		</td>
 		<td>
 		<b>PCL:</b><br/>  Views\Settings\HelpPage.xaml<br/> Views\Settings\HelpPage.xaml.cs<br/> Views\Settings\Styles.xaml<br/> Views\Settings\Styles.xaml.cs<br/> ViewModels\Settings\HelpViewModel.cs<br/> ViewModels\BaseViewModel.cs<br/> Themes\LightTheme.xaml<br/> Themes\LightTheme.xaml.cs<br/> controls/BorderlessEntry.cs<br/> Controls\TapAnimationGrid.cs<br/>   <br/>  <b>Android:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer/BorderlessEntryRender.cs <br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>
+		</td>
+	</tr>
+</table>
+
+## Notification
+
+<table>
+	<tr>
+		<th>
+			S.No<br/>
+		</th>
+		<th>
+			Pages<br/>
+		</th>
+		<th>
+			Packages<br/>
+		</th>
+		<th>
+			Required Files<br/>
+		</th>
+	</tr>
+	<tr valign="top">		
+		<td align="center">
+			1<br/>
+		</td>
+		<td>
+		Social Notification Page<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views\Notification\SocialNotificationPage.xaml <br/>  Notification\SocialNotificationPage.xaml.cs<br/>  Views\Notification\Styles.xaml<br/>  Views\Notification\Styles.xaml.cs<br/>  Controls\TitleView.cs<br/>  Converters\BooleanToColorConverter.cs<br/>  Behaviors\SfListViewExtendHeightBehavior.cs<br/>  ViewModels\Notification\SocialNotificationViewModel.cs<br/>  Models\Notification\SocialNotificationModel.cs<br/>  Data\notification.json<br/>  DataService\SocialNotificationDataService.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  ViewModels\BaseViewModel.cs<br/>   <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b><br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		</td>
+	</tr>
+		<tr valign="top">		
+		<td align="center">
+			2<br/>
+		</td>
+		<td>
+		Task Notification Page<br/>
+		</td>
+		<td>
+		Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.SfListView<br/>
+		</td>
+		<td>
+		<b>PCL:</b><br/>  Views/Notification/TaskNotificationPage.xaml<br/>  Views/Notification/TaskNotificationPage.xaml.cs<br/>  Views/Notification/Styles.xaml<br/>  Views/Notification/Styles.xaml.cs<br/>  ViewModels/Notification/TaskNotificationViewModel.cs<br/>  ViewModels/BaseViewModel.cs<br/>  Models/Notification/TaskNotificationsListModel.cs<br/>  DataService/TaskNotificationDataService.cs<br/>  Data/notification.json<br/>  Controls/TitleView.cs<br/>  Converters/BooleanToColorConverter.cs<br/>  Themes/LightTheme.xaml<br/>  Themes/LightTheme.xaml.cs <br/>  <br/>  <b>Android:</b><br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b><br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>  
 		</td>
 	</tr>
 </table>

@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Header in Syncfusion LinearGauge control for Xamarin.Forms
-description:  Learn how to set header in LinearGauge
+title: Header in Syncfusion SfLinearGauge control for Xamarin.Forms
+description:  This section describes how to set the header and customize the header in SfLinearGauge control for Xamarin.Forms platform
 platform: Xamarin
 control: LinearGauge
 documentation: ug
 
 ---
 
-# Header
+# Header in SfLinearGauge
 
 You can add a title to gauge using the [`LinearHeader`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearHeader.html) option to provide information to users about the data that is being plotted in the linear gauge.
 

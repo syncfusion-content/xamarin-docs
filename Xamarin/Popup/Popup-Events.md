@@ -51,7 +51,8 @@ You can execute your own set of codes once the popup is opened, and visible in t
 
 {% tabs %}
 {%highlight Xaml%}
-<sfPopup:SfPopupLayout x:Name="popupLayout" Opened="PopupLayout_Opened"/>
+<sfPopup:SfPopupLayout x:Name="popupLayout" 
+Opened="PopupLayout_Opened"/>
 {%endhighlight%}
 
 {% highlight c# %}
@@ -128,53 +129,85 @@ private void PopupLayout_Closed(object sender, EventArgs e)
 
 The [SfPopupLayout.PopupView.AcceptCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~AcceptCommand.html) will be fired when clicking the Accept button in the popup footer.
 
-To handle the Accept button, follow the procedure:
+To handle the Accept button,
 
-* Derive a class from `ICommand`, and implement the necessary interface.
-* Return true in the `CanExecute()` override method to close the popup, and fire the `Execute()` method.
-* Return false to prevent popup from closing, and `Execute()` method is not fired.
+* Derive a class from `ICommand`, and implement the `ICommand` interface.
+* To prevent popup from closing, return false in the `CanExecute()` override method and the `Execute()` override method will not be fired.
+* Else return true in the `CanExecute()` override method and do the required operations in the `Execute()` method.
+* Now create a property of your custom command type in the view model class and initialize it.
+* Bind the property in the view model to the `SfPopupLayout.PopupView.AcceptCommand` in XAML.
 
 {% tabs %}
 
 {% highlight xaml %}
-
-<sfPopup:SfPopupLayout x:Name="popupLayout">
-    <sfPopup:SfPopupLayout.PopupView>
-        <sfPopup:PopupView AppearanceMode="TwoButton" />
-    </sfPopup:SfPopupLayout.PopupView>
-</sfPopup:SfPopupLayout>
-
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+             x:Class="Popup.MainPage">
+    <ContentPage.BindingContext>
+        <local:PopupViewModel/>
+    </ContentPage.BindingContext>
+    <sfPopup:SfPopupLayout IsOpen="{Binding PopupOpen}">
+        <sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:PopupView AppearanceMode="TwoButton"
+                          AcceptCommand="{Binding PopupAcceptCommand}"
+                        DeclineCommand="{Binding PopupDeclineCommand}"   />
+        </sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:SfPopupLayout.Content>
+            <StackLayout>
+                    <Button  Text="ClickToShowPopup" 
+               VerticalOptions="Center"   HorizontalOptions="Center" Command="{Binding PopupCommand}" />
+                </StackLayout>
+            </sfPopup:SfPopupLayout.Content>
+ </sfPopup:SfPopupLayout>
+</ContentPage>
 {% endhighlight %}
 
 {% highlight c# %}
+ //PopupViewModel.cs
 
-public MainPage()
+ class PopupViewModel : INotifyPropertyChanged
 {
-    ....
-    InitializeComponent();
-    popupLayout.PopupView.AppearanceMode = AppearanceMode.TwoButton;
-    popupLayout.PopupView.AcceptCommand = new AcceptButtonCustomCommand();
-    ....
-}
+        bool isOpen;
+        public event PropertyChangedEventHandler PropertyChanged;
+        void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+        public ICommand PopupAcceptCommand { get; set; }
+        public ICommand PopupDeclineCommand { get; set; }
+        public ICommand PopupCommand { get; set; }
+        public bool PopupOpen {
+            get { return isOpen; }
+            set
+            {
+                isOpen = value;
+                OnPropertyChanged(nameof(PopupOpen));
+            } }
+        public PopupViewModel()
+        {
+            PopupAcceptCommand = new Command(PopupAccept); //CanExecute() will be call the PopupAccept method
+            PopupDeclineCommand = new Command(PopupDecline); //CanExecute() will be call the PopupDecline method
+            PopupCommand = new Command(Popup);
+        }
 
-//Accept Button Event handler
+        private void Popup()
+        {
+            PopupOpen = true;
+        }
 
-public class AcceptButtonCustomCommand : ICommand
-{
-    public event EventHandler CanExecuteChanged;
+        private void PopupAccept()
+        {
+             // You can write your set of codes that needs to be executed.
+        }
 
-    public bool CanExecute(object parameter)
-    {
-        return false;
+        private void PopupDecline()
+        {
+            // You can write your set of codes that needs to be executed.
+        }
     }
-
-    public void Execute(object parameter)
-    {
-      // You can write your set of codes that needs to be executed
-    }
-}
-
-
 {% endhighlight %}
 
 {% endtabs %}
@@ -183,52 +216,89 @@ public class AcceptButtonCustomCommand : ICommand
 
 The [SfPopupLayout.PopupView.DeclineCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~DeclineCommand.html) will be fired when clicking the Decline button in the popup footer. 
 
-To handle the Decline button, follow the procedure:
+To handle the Decline button,
 
-* Derive a class from `ICommand`, and implement the necessary interface. 
-* Return true in the `CanExecute()` override method to close the popup, and fire the `Execute()` method. 
-* Return false to prevent popup from closing, and `Execute()` method is not fired.
+* Derive a class from `ICommand`, and implement the `ICommand` interface.
+* To prevent popup from closing, return false in the `CanExecute()` override method and the `Execute()` override method will not be fired.
+* Else return true in the `CanExecute()` override method and do the required operations in the `Execute()` method.
+* Now create a property of your custom command type in the view model class and initialize it.
+* Bind the property in the view model to the `SfPopupLayout.PopupView.DeclineCommand` in XAML.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-<sfPopup:SfPopupLayout x:Name="popupLayout">
-    <sfPopup:SfPopupLayout.PopupView>
-        <sfPopup:PopupView AppearanceMode="TwoButton" />
-    </sfPopup:SfPopupLayout.PopupView>
-</sfPopup:SfPopupLayout>
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Popup"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms"
+             x:Class="Popup.MainPage">
+    <ContentPage.BindingContext>
+        <local:PopupViewModel/>
+    </ContentPage.BindingContext>
+    <sfPopup:SfPopupLayout IsOpen="{Binding PopupOpen}">
+        <sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:PopupView AppearanceMode="TwoButton"
+                          AcceptCommand="{Binding PopupAcceptCommand}"
+                        DeclineCommand="{Binding PopupDeclineCommand}"   />
+        </sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:SfPopupLayout.Content>
+            <StackLayout>
+                    <Button  Text="ClickToShowPopup" 
+               VerticalOptions="Center"   HorizontalOptions="Center" Command="{Binding PopupCommand}" />
+                </StackLayout>
+            </sfPopup:SfPopupLayout.Content>
+ </sfPopup:SfPopupLayout>
+</ContentPage>
+
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-public MainPage()
+ //PopupViewModel.cs
+ 
+     class PopupViewModel : INotifyPropertyChanged
 {
-    ....
-    InitializeComponent();
-    popupLayout.PopupView.AppearanceMode = AppearanceMode.TwoButton;
-    popupLayout.PopupView.DeclineCommand = new DeclineButtonCustomCommand();
-    ....
-}
+        bool isOpen;
+        public event PropertyChangedEventHandler PropertyChanged;
+        void OnPropertyChanged(string propertyName)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+        public ICommand PopupAcceptCommand { get; set; }
+        public ICommand PopupDeclineCommand { get; set; }
+        public ICommand PopupCommand { get; set; }
+        public bool PopupOpen {
+            get { return isOpen; }
+            set
+            {
+                isOpen = value;
+                OnPropertyChanged(nameof(PopupOpen));
+            } }
+        public PopupViewModel()
+        {
+            PopupAcceptCommand = new Command(PopupAccept); //CanExecute() will be execute the PopupAccept method
+            PopupDeclineCommand = new Command(PopupDecline); //CanExecute() will be execute the PopupDecline method
+            PopupCommand = new Command(Popup);
+        }
 
-//Decline Button Event handler
+        private void Popup()
+        {
+            PopupOpen = true;
+        }
 
-public class DeclineButtonCustomCommand : ICommand
-{
-    public event EventHandler CanExecuteChanged;
+        private void PopupAccept()
+        {
+             // You can write your set of codes that needs to be executed.
+        }
 
-    public bool CanExecute(object parameter)
-    {
-        return false;
+        private void PopupDecline()
+        {
+            // You can write your set of codes that needs to be executed.
+        }
     }
-
-    public void Execute(object parameter)
-    {
-       // You can write your set of codes that needs to be executed
-    }
-}
-
 {% endhighlight %}
 
 {% endtabs %}

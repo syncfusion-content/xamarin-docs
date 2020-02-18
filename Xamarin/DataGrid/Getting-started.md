@@ -134,7 +134,7 @@ public MainPage()
 
 ### Release mode issue in UWP platform
 
-The known Framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode`. It can be resolved by initializing the SfDataGrid assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
+The known Framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode` or `.Net Native compilation`. It can be resolved by initializing the SfDataGrid assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
 
 {% highlight c# %}
 // In App.xaml.cs

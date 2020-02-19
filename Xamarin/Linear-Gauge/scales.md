@@ -2,14 +2,14 @@
 
 layout: post
 title: Scales in Syncfusion LinearGauge control for Xamarin.Forms
-description:  Learn how to set scales in in LinearGauge
+description:  This section describes how to set scales and customize the scales in the SfLinearGauge control for Xamarin.Forms
 platform: Xamarin
 control: LinearGauge
 documentation: ug
 
 ---
 
-# Scales
+# Scales in SfLinearGauge
 
 Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale.html), which integrates labels, tick marks, ranges, and pointers to customize the basic look and feel of the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html).
 
@@ -214,7 +214,7 @@ You can customize the color, length, size, and position of the [`LinearScale`](h
 ![Linear Gauge Scale Customization](scales_images/scale5.png)
 
 ## Scale Offset
-The space between the control and linear scale can be customized using the `ScaleOffset` property.
+The space between the control and linear scale can be customized using the [`ScaleOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ScaleOffset.html) property.
 {% tabs %}
 {% highlight XAML %}
 <gauge:SfLinearGauge>

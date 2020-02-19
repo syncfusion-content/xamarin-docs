@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Scales
+# Scales in SfCircularGauge
 
 Scales contain a collection of [`Scale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) elements, which integrates labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
 

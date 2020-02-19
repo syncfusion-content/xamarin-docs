@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize Character in Syncfusion DigitalGauge for Xamarin.Forms
-description: Learn how to customise the Character in DigitalGauge
+description: Learn how to customise the character, character segment stroke, disabled segment and background color in DigitalGauge for Xamarin.Forms
 platform: xamarin 
 control: DigitalGauge
 documentation: ug
@@ -17,7 +17,7 @@ The values of digital characters are scaled by altering the height and width of 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfDigitalGauge Value="SYNCFUSION" SegmentStrokeWidth="4" 
                           HeightRequest="120"  WidthRequest="330" BackgroundColor="Black"
@@ -70,7 +70,7 @@ The values of digital characters are spaced by altering the space of digital cha
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <gauge:SfDigitalGauge Value="01-01-18" SegmentStrokeWidth="3" 
                           HeightRequest="100"  WidthRequest="360" CharacterSpacing="10"
@@ -123,7 +123,7 @@ The values of digital characters color can be customized using the [`CharacterSt
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <gauge:SfDigitalGauge Value="1 2 3 4 5" SegmentStrokeWidth="3" 
                           HeightRequest="100"  WidthRequest="300"
@@ -174,7 +174,7 @@ You can customize the color and opacity of disabled segments using the [`Disable
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfDigitalGauge Value="1 2 3 4 5" SegmentStrokeWidth="5" 
                           HeightRequest="100"  WidthRequest="300"
@@ -227,7 +227,7 @@ You can customize the background color of the digital gauge using the [`Backgrou
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfDigitalGauge Value="1 2 3 4 5" SegmentStrokeWidth="5" 
                           HeightRequest="100"  WidthRequest="300"

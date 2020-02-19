@@ -1,15 +1,15 @@
 ---
-layout : post
-title : Shapes in Syncfusion SfImageEditor control in Xamarin.Forms
-description : Learn how to add shapes, text, and draw over an Image in ImageEditor for Xamarin.Forms
-platform : xamarin.forms
-control : ImageEditor
-documentation : ug
+layout: post
+title: Shapes in Syncfusion SfImageEditor control in Xamarin.Forms
+description: Learn how to add shapes, text, and draw over an Image in the SfImageEditor control for Xamarin.Forms platform
+platform: xamarin.forms
+control: ImageEditor
+documentation: ug
 ---
 
-## Shapes
+# Shapes in SfImageEditor
 
-You can annotate any shapes over an image using the `AddShape` method. The following shapes are available in image editor:
+You can annotate any shapes over an image using the [`AddShape`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~AddShape.html) method. The following shapes are available in image editor:
 
 * Circle
 * Rectangle
@@ -18,7 +18,7 @@ You can annotate any shapes over an image using the `AddShape` method. The follo
 
 ### Selecting a shape type
 
-The `ShapeType` is an enum property with values `Rectangle`, `Circle`, `Arrow`, and `Path`. You can give the desired shape type as an argument to the `AddShape` method.
+The [`ShapeType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ShapeType.html) is an enum property with values `Rectangle`, `Circle`, `Arrow`, and `Path`. You can give the desired shape type as an argument to the [`AddShape`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~AddShape.html) method.
 
 {% highlight C# %}
 
@@ -28,11 +28,11 @@ The `ShapeType` is an enum property with values `Rectangle`, `Circle`, `Arrow`, 
 
 ## Customizing a shape with pen settings
 
-You can customize the appearance of each shape using the `PenSettings` property:
+You can customize the appearance of each shape using the [`PenSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings.html) property:
 
 ## PenSettings
 
-The `PenSettings` property consists of the following properties:
+The [`PenSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings.html) property consists of the following properties:
 
 * [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings~Color.html): Specifies the desired stroke color to a shape.
 * [`FillColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings~FillColor.html): Specifies the desired fill color to a shape.
@@ -41,9 +41,9 @@ The `PenSettings` property consists of the following properties:
 * [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings~Opacity.html): Denotes opacity for the desired shapes.
 * [`Bounds`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings~Bounds.html): Allows to set frame for the newly added shapes (rectangle and circle). You can position the shapes wherever you want on the image.In percentage, the value of the shape frame should fall between 0 and 100.
 
-N> The `FillColor` property is applicable only if the ShapeType is `Rectangle` or `Circle`.
+N> The [`FillColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings~FillColor.html) property is applicable only if the ShapeType is `Rectangle` or `Circle`.
 
-* To add a rectangle, circle, or arrow over an image, specify the `ShapeType` and the desired `PenSettings` as shown in the following code snippet.
+* To add a rectangle, circle, or arrow over an image, specify the [`ShapeType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ShapeType.html) and the desired [`PenSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.PenSettings.html) as shown in the following code snippet.
 
 {% tabs %}
 
@@ -55,7 +55,7 @@ N> The `FillColor` property is applicable only if the ShapeType is `Rectangle` o
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/Shapes.gif)
+![SfImageEditor](ImageEditor_images/shapes.jpg)
 
 * You can annotate any path on an image using free hand drawing as shown in the following code snippet.
 
@@ -69,11 +69,11 @@ N> The `FillColor` property is applicable only if the ShapeType is `Rectangle` o
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/path.gif)
+![SfImageEditor](ImageEditor_images/path.jpg)
 
 ## Deleting a shape or text from view
 
-You can delete the selected shape by using the `Delete` method as shown in the following code snippet.
+You can delete the selected shape by using the [`Delete`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~Delete.html) method as shown in the following code snippet.
 
 
 {% tabs %}

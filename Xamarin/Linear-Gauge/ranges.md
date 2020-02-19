@@ -2,14 +2,14 @@
 
 layout: post
 title: Ranges in Syncfusion LinearGauge control for Xamarin.Forms
-description: Learn how to set ranges in LinearGauge
+description: This section describes how to set ranges and customize the range in the SfLinearGauge control for Xamarin.Forms
 platform: Xamarin
 control: LinearGauge
 documentation: ug
 
 ---
 
-# Ranges
+# Ranges in SfLinearGauge
 
 Range is a visual element, which begins and ends at specified values within a scale. You can add any number of range for a scale by using the array of range objects.
 

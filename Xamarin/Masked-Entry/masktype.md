@@ -7,8 +7,8 @@ control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
-# MaskType
-Each `MaskType` has different set of mask characters that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as:
+# MaskType in SfMaskedEdit
+Each [`MaskType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~MaskType.html) has different set of mask characters that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as:
 
 * Text
 * RegEx

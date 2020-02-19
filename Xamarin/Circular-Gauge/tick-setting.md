@@ -2,14 +2,14 @@
 
 layout: post
 title: Tick Setting in Syncfusion SfCircularGauge control for Xamarin.Forms
-description:  Learn how to set ticks in Syncfusion SfCircularGauge control
+description:  Learn how to set ticks, position the ticks and customize the ticks in Syncfusion CircularGauge control for Xamarin.Forms
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Tick Setting
+# Tick Settings in SfCircularGauge
 
 The `TickSettings` property helps you to identify the gauge’s data value by marking the gauge scale in regular increments.
 
@@ -144,8 +144,8 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
 
 The major and minor ticks can be positioned far away from the rim by using the following two ways:
 
-1.`Offset` property. 
-2.`StartOffset` and `EndOffset` properties.
+1.[`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~Offset.html) property. 
+2.[`StartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~StartOffset.html) and [`EndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~EndOffset.html) properties.
 
 ### Setting offset for scale
 

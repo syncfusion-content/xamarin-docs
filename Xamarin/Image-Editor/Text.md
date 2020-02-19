@@ -1,15 +1,15 @@
 ---
-layout : post
-title : Shapes in Syncfusion SfImageEditor control in Xamarin.Forms
-description : Learn how to add text in ImageEditor for Xamarin.Forms
-platform : xamarin.forms
-control : ImageEditor
-documentation : ug
+layout: post
+title: Shapes in Syncfusion SfImageEditor control in Xamarin.Forms
+description: Learn how to add the text and customize the text in SfImageEditor control for Xamarin.Forms platform.
+platform: xamarin.forms
+control: ImageEditor
+documentation: ug
 ---
 
-## Text
+# Text in SfImageEditor
 
-You can annotate the desired text elements to an image using the `AddText` method with customization options.
+You can annotate the desired text elements to an image using the [`AddText`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~AddText.html): method with customization options.
 
 {% highlight C# %}
 
@@ -19,7 +19,7 @@ You can annotate the desired text elements to an image using the `AddText` metho
 
 ## Customize text with TextSettings
 
-You can customize the appearance of the text using the `TextSettings` property.
+You can customize the appearance of the text using the [`TextSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings.html): property.
 
 The `TextSettings` property consists of the following properties:
 
@@ -103,7 +103,7 @@ with font family name.
 You can annotate multiple line text over an image with the help of text preview window.
 
 ### Text alignment
-`TextAlignment` is an enum type and text can be aligned with the help of text alignment enum values such as left, right and center. 
+[`TextAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextAlignment.html) is an enum type and text can be aligned with the help of text alignment enum values such as left, right and center. 
 
 N> The default text alignment is `Left` and text alignment is not applicable for single line text.
 
@@ -117,7 +117,7 @@ N> The default text alignment is `Left` and text alignment is not applicable for
 
 ## Text Rotation
 
-You can rotate and resize the text by enabling the `RotatableElements` property of image editor. `ImageEditorElements` is an enum type with values Text, CustomView and None as shown in the following code snippet.
+You can rotate and resize the text by enabling the [`RotatableElements`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~RotatableElements.html) property of image editor. [`ImageEditorElements`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ImageEditorElements.html) is an enum type with values Text, CustomView and None as shown in the following code snippet.
 
 {% tabs %}
 
@@ -131,7 +131,7 @@ You can rotate and resize the text by enabling the `RotatableElements` property 
 
 N> The default value for RotatableElements is `None`.
 
-You can rotate the text based on a particular angle using `Angle` property in `TextSettings` as shown in the following code snippet. 
+You can rotate the text based on a particular angle using [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Angle.html) property in [`TextSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings.html) as shown in the following code snippet. 
 
 {% tabs %}
 
@@ -147,7 +147,7 @@ You can rotate the text based on a particular angle using `Angle` property in `T
 
 ## Restricting the edit text box pop-up window
 
-You can restrict the edit text box pop-up window using the `IsEditable` property. By Default, the value of the IsEditable property is true, so you can edit the text in edit text box pop-up window. When setting the IsEditable property to false, the edit text box pop-up window will not be displayed, and you are restricted to edit the text in the edit text box. 
+You can restrict the edit text box pop-up window using the [`IsEditable`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~IsEditable.html) property. By Default, the value of the IsEditable property is true, so you can edit the text in edit text box pop-up window. When setting the IsEditable property to false, the edit text box pop-up window will not be displayed, and you are restricted to edit the text in the edit text box. 
 
 {% highlight c# %}
 

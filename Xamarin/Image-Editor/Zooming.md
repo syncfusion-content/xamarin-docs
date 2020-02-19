@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Zooming and Panning operations in Syncfusion SfImageEditor control in Xamarin.Forms
-description : Learn how to Zoom and pan the image in ImageEditor for Xamarin.Forms
-platform : xamarin.forms
-control : ImageEditor
-documentation : ug
+layout: post
+title: Zooming and Panning operations in Syncfusion SfImageEditor
+description: Learn how to perform Zooming and panning in the image in SfImageEditor control for Xamarin.Forms platform
+platform: xamarin.forms
+control: ImageEditor
+documentation: ug
 ---
 
-# Zooming
+# Zooming in SfImageEditor
 
 The image editor control provides support to zoom and pan actions over an image.
 
@@ -19,7 +19,7 @@ The following properties are used for zooming feature of the image editor contro
 
 ## Enable zooming
 
-You can enable or disable the zooming functionality by setting the `EnableZooming` value to true or false. By default, the `EnableZooming` value is set to true.
+You can enable or disable the zooming functionality by setting the [`EnableZooming`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~EnableZooming.html) value to true or false. By default, the `EnableZooming` value is set to true.
 
 {% tabs %}
 
@@ -39,7 +39,7 @@ You can enable or disable the zooming functionality by setting the `EnableZoomin
 
 ## Maximum zoom level
 
-You can set the maximum zoom level to image using the `MaximumZoomLevel` property.
+You can set the maximum zoom level to image using the [`MaximumZoomLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~MaximumZoomLevel.html) property.
 
 {% tabs %}
 
@@ -60,14 +60,14 @@ You can set the maximum zoom level to image using the `MaximumZoomLevel` propert
 
 ## Panning mode
 
-The image editor control provides support for panning and allows to pan the image with two fingers or single finger by setting the `PanningMode`.
+The image editor control provides support for panning and allows to pan the image with two fingers or single finger by setting the [`PanningMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~PanningMode.html).
 
 The following properties are used for panning:
 
 * `SingleFinger`: Zooms or pans the image with single finger, but shapes and text selection cannot be performed with this mode.
 * `TwoFinger`: Zooms or pans the image with two finger. The shapes and text selection can be performed with this mode.
 
-By default, the `PanningMode` value is set to `TwoFinger`.
+By default, the [`PanningMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~PanningMode.html) value is set to `TwoFinger`.
 
 {% tabs %}
 
@@ -84,6 +84,3 @@ editor.PanningMode = PanningMode.TwoFinger;
 {% endhighlight %}
 
 {% endtabs %}
-
-
-![SfImageEditor](ImageEditor_images/zoom.gif)

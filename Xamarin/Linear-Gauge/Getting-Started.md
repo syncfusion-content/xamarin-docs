@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion LinearGauge control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.Forms platform
+description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.Forms platform and also describes how to add pointers and ranges
 platform: Xamarin
 control: LinearGauge
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfLinearGauge
 
 This section explains the steps required to configure a [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) control.
 

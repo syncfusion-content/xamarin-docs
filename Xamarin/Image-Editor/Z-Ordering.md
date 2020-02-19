@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Shapes in Syncfusion SfImageEditor control in Xamarin.Forms
-description : Learn how to move shapes in ImageEditor for Xamarin.Forms
-platform : xamarin.forms
-control : ImageEditor
-documentation : ug
+layout: post
+title: Shapes in Syncfusion SfImageEditor control in Xamarin.Forms
+description: This section describes how to move shapes to front and back in SfImageEditor control for Xamarin.Forms
+platform: xamarin.forms
+control: ImageEditor
+documentation: ug
 ---
 
 # Moving shapes to front and back
@@ -18,7 +18,7 @@ The image editor control allows to change the position of shapes/edits that are 
 
 ## BringToFront
 
-The BringToFront method is used to bring the selected shapes/text to the front of a group of elements over an image.
+The [`BringToFront`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~BringToFront.html) method is used to bring the selected shapes/text to the front of a group of elements over an image.
 
 {% tabs %}
 
@@ -32,7 +32,7 @@ The BringToFront method is used to bring the selected shapes/text to the front o
 
 ## SendToBack
 
-The SendToBack method is used to send the selected shapes/text to the back of a group of elements over an image.
+The [`SendToBack`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~SendToBack.html) method is used to send the selected shapes/text to the back of a group of elements over an image.
 
 {% tabs %}
 
@@ -46,7 +46,7 @@ The SendToBack method is used to send the selected shapes/text to the back of a 
 
 ## BringForward
 
-The BringForward method is used to bring the selected shapes/text to one step front of a group of elements over an image.
+The [`BringForward`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~BringForward.html) method is used to bring the selected shapes/text to one step front of a group of elements over an image.
 
 {% tabs %}
 
@@ -60,7 +60,7 @@ The BringForward method is used to bring the selected shapes/text to one step fr
 
 ## SendBackward
 
-The SendBackward method is used to send the selected shapes/text to one step backward of a group of elements over an image.
+The [`SendBackward`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~SendBackward.html) method is used to send the selected shapes/text to one step backward of a group of elements over an image.
 
 {% tabs %}
 
@@ -72,4 +72,3 @@ The SendBackward method is used to send the selected shapes/text to one step bac
 
 {% endtabs %}
 
-![SfImageEditor](ImageEditor_images/BringToFront.gif)

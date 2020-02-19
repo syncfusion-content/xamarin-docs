@@ -7,9 +7,9 @@ control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
-# Localization
+# Localization in SfMaskedEdit
 
-The special symbols such as currency symbol, date separator, decimal separator etc., can be localized to any specific culture using the `Culture` property.
+The special symbols such as currency symbol, date separator, decimal separator etc., can be localized to any specific culture using the [`Culture`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Culture.html) property.
 
 <table>
 <tr>

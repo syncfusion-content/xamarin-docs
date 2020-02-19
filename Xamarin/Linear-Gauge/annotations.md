@@ -2,14 +2,14 @@
 
 layout: post
 title: Annotations in Syncfusion SfLinearGauge control for Xamarin.Forms
-description: Learn how to set annotations in LinearGauge
+description: This section describes how to set the annotations in SfLinearGauge control for Xamarin.Forms platform
 platform: Xamarin
 control: LinearGauge
 documentation: ug
 
 ---
 
-# Annotations
+# Annotations in SfLinearGauge
 
 [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge~Annotations.html), which is used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
 

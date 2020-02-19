@@ -1,9 +1,9 @@
 ---
-layout : post
-title : Toolbar Customization | SfImageEditor | Xamarin.Forms | Syncfusion
-description : This section describes how to customize the toolbar items appearance, height, colorpalette and visibility.
-platform : Xamarin.Forms
-control : ImageEditor
+layout: post
+title: Toolbar Customization | SfImageEditor | Xamarin.Forms | Syncfusion
+description: This section describes how to customize the toolbar items appearance, height, colorpalette and visibility
+platform: Xamarin.Forms
+control: ImageEditor
 documentation : ug
 ---
 
@@ -17,11 +17,11 @@ The image editor control provides support to customize and configure the appeara
 
 ### Toolbar item
 
-You can customize each toolbar item using the `Text` and `Icon` properties.
+You can customize each toolbar item using the [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarItem~Text.html) and [`Icon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarItem~Icon.html) properties.
 
 ### Name
 
-You can get or set the names of built-in toolbar and dynamically added toolbar items using the `Name` property.
+You can get or set the names of built-in toolbar and dynamically added toolbar items using the [`Name`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarItem~Name.html) property.
 
 {% highlight C# %}
 
@@ -46,7 +46,7 @@ The toolbar menu contains a set of header and footer menu items that help to per
 
 ## Adding HeaderToolbarItem
 
-The `HeaderToolbarItem` is placed on the top of the image editor, and you can customize the header toolbar item using the `Icon` and `Text` properties:
+The [`HeaderToolbarItem`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.HeaderToolbarItem.html) is placed on the top of the image editor, and you can customize the header toolbar item using the [`Icon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarItem~Icon.html) and [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarItem~Text.html) properties:
 
 {% highlight C# %}
 
@@ -56,7 +56,7 @@ The `HeaderToolbarItem` is placed on the top of the image editor, and you can cu
 
 ## Adding FooterToolbarItem   
 
-The `FooterToolbarItem` is placed on the bottom of the image editor, and you can customize the footer toolbar item using the `Icon` and `Text` properties.
+The [`FooterToolbarItem`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.FooterToolbarItem.html) is placed on the bottom of the image editor, and you can customize the footer toolbar item using the [`Icon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarItem~Icon.html) and [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarItem~Text.html) properties.
 
 Refer to the following code snippet to customize footer toolbar item.
 
@@ -69,7 +69,7 @@ Refer to the following code snippet to customize footer toolbar item.
 
 ## Adding SubItems to the FooterToolbarItem
 
-The `SubItems` is only applicable for `FooterToolbarItem`, and it represents grouped action of respective footer toolbar item. The SubItems will be placed above the footer toolbar item layout, and you can also customize the appearance of sub items as main toolbar items.
+The [`SubItems`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.FooterToolbarItem~SubItems.html) is only applicable for [`FooterToolbarItem`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.FooterToolbarItem.html), and it represents grouped action of respective footer toolbar item. The SubItems will be placed above the footer toolbar item layout, and you can also customize the appearance of sub items as main toolbar items.
 
 Refer to the following code snippet to customize sub items of footer toolbar item.
 
@@ -103,7 +103,7 @@ editor.ToolbarSettings.ToolbarItems[3].Icon = ImageSource.FromResource("ImageEdi
 
 ## ToolbarItemSelected event 
 
-Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be triggered, and you can get the respective tapped toolbar item as an argument as shown in the following code snippet. 
+Whenever you tap the toolbar menu item, the [`ToolbarItemSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarSettings~ToolbarItemSelected_EV.html) event will be triggered, and you can get the respective tapped toolbar item as an argument as shown in the following code snippet. 
 
 {% highlight C# %}
 
@@ -121,7 +121,7 @@ Whenever you tap the toolbar menu item, the `ToolbarItemSelected` event will be 
 
 ### MoveSubItemsToFooterToolbar 
 
-The `MoveSubItemsToFooterToolbar` is boolean property of the ToolbarItemSelected event argument; it decides the placement of each sub items of respective footer toolbar item. 
+The [`MoveSubItemsToFooterToolbar`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarItemSelectedEventArgs~MoveSubItemsToFooterToolbar.html) is boolean property of the ToolbarItemSelected event argument; it decides the placement of each sub items of respective footer toolbar item. 
 
 If you set the value to `true`, the respective sub items of footer item will be placed on footer toolbar layout. If you set `false`, then the sub items will be placed above the footer toolbar layout.
 
@@ -165,7 +165,7 @@ N> This is not applicable for built-in footer toolbar items.
 
 ## To hide/show toolbar
 
-To show or hide the toolbar, set the `IsVisible` property of toolbar to either true or false. By default, the `IsVisible` property is set to true.
+To show or hide the toolbar, set the [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarSettings~IsVisible.html) property of toolbar to either true or false. By default, the `IsVisible` property is set to true.
 
 {% tabs %}
 
@@ -211,7 +211,7 @@ N> You can customize an icon by specifying its [names](/xamarin/sfimageeditor/to
 
 ## To customize the ColorPalette
 
-You can change the default colors of the ColorPalette in toolbar.
+You can change the default colors of the [`ColorPalette`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~ColorPalette.html) in toolbar.
 
 {% tabs %}
 
@@ -270,9 +270,9 @@ You can customize `height of the toolbar` and toolbar items `icon` and `text`.
 
 The image editor control supports to customize the default height of the `Header`, `Footer`, and `Sub item` using the following properties:
 
-1. HeaderToolbarHeight
-2. FooterToolbarHeight 
-3. SubItemToolbarHeight
+1. [`HeaderToolbarHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarSettings~HeaderToolbarHeight.html)
+2. [`FooterToolbarHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarSettings~FooterToolbarHeight.html) 
+3. [`SubItemToolbarHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarSettings~SubItemToolbarHeight.html)
 
 The toolbar items will be resized based on the height. To change the height of the toolbar, refer to the following code snippet.
 
@@ -306,8 +306,8 @@ The toolbar items will be resized based on the height. To change the height of t
 
 You can arrange the toolbar items based on the toolbar height using the following properties:
 
-1.  TextHeight
-2.  IconHeight
+1.  [`TextHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarItem~TextHeight.html)
+2.  [`IconHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ToolbarItem~IconHeight.html)
 
 To change the toolbar item Text and Icon height, refer to the following code snippet.
 

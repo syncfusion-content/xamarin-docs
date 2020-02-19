@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Serialization in Syncfusion SfImageEditor control in Xamarin.Forms
-description : Learn how to serialize and deserialize edited shapes  in ImageEditor for Xamarin.Forms
-platform : xamarin.forms
-control : ImageEditor
-documentation : ug
+layout: post
+title: Serialization in Syncfusion SfImageEditor control in Xamarin.Forms
+description: Learn how to serialize and deserialize the edited shapes in SfImageEditor control for Xamarin.Forms platform
+platform: xamarin.forms
+control: ImageEditor
+documentation: ug
 ---
 
 # Serialization and Deserialization

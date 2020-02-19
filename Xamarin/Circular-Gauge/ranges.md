@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Ranges
+# Ranges in SfCircularGauge
 
 Range is a visual element, which begins and ends at specified values within a scale.
 
@@ -60,7 +60,7 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
 
 ## Range customization
 
-An UI of a range is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~Thickness.html) properties. First, you should set the `Offset` property for range, then increase the thickness of the range.
+An UI of a range is customized by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~Thickness.html) properties. First, you should set the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~Offset.html) property for range, then increase the thickness of the range.
 
 {% tabs %}
 

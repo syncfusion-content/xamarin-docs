@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Getting Started with Syncfusion DigitalGauge control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.Forms platform
+description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.Forms platform also describes how to set value for digitalGauge control
 platform: Xamarin
 control: DigitalGauge
 documentation: ug
 ---
-# Getting Started
+# Getting Started with SfDigitalGauge
 
 This section explains the steps required to configure the [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfDigitalGauge.html) and add basic elements to it using various APIs.
 
@@ -109,7 +109,7 @@ The Android platform does not require any additional configuration to render the
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"
 
@@ -130,7 +130,7 @@ You can initialize the [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_fi
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <gauge:SfDigitalGauge/> 
 
@@ -152,7 +152,7 @@ The [`SfDigitalGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgauge
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
       <gauge:SfDigitalGauge Value="1 2 3 4"/>
 
@@ -182,7 +182,7 @@ By using the [`CharacterType`](https://help.syncfusion.com/cr/cref_files/xamarin
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <gauge:SfDigitalGauge CharacterType="EightCrossEightDotMatrix"/>
 
@@ -204,7 +204,7 @@ The [`CharacterHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/sfgaug
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
        <gauge:SfDigitalGauge  CharacterHeight="60" CharacterWidth="25" 
                                                     
@@ -231,7 +231,7 @@ The following code example is the complete code of the previous configurations.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <?xml version="1.0" encoding="utf-8" ?>
        <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"

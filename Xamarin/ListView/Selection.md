@@ -7,7 +7,7 @@ control: SfListView
 documentation: ug
 ---
 
-# Selection
+# Selection in Xamarin ListView (SfListView)
 
 This section explains how to perform selection and its related operations in the SfListView.
 

@@ -2,6 +2,7 @@
 layout: post
 title: Data annotations | SfDataForm | Xamarin.Forms | Syncfusion
 description: Supported Data annotations in SfDataForm in Xamarin.Forms.
+description: This section explains about the display, validation, bindable, editable, read only, enum data type attributes in data annotations.
 platform: Xamarin
 control: SfDataForm
 documentation: UG

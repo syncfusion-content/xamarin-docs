@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Validation | SfDataForm | Xamarin.Forms | Syncfusion
-description: This section explains how to validate the data, custom validation in SfDataForm for Xamarin.Forms.
+description: This section explains how to validate the data, custom validation and other functionalities in SfDataForm for Xamarin.Forms.
 platform: xamarin
 control: SfDataForm
 documentation: UG

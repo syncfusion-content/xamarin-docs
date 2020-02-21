@@ -17,7 +17,7 @@ The SfDataForm control helps editing the data fields of any data object. It can 
 * Custom editor: Supports loading the custom editors.
 * Validation: Built-in support to validate the data based on the [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) and data annotations. It also programmatically supports validation handling.
 
-# Getting started
+# Getting Started with Xamarin DataForm (SfDataForm)
 
 This section explains the quick overview to use the [SfDataForm](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm.html) for Xamarin.Forms in your application.
 

@@ -7,7 +7,7 @@ control: SfDataForm
 documentation: UG
 ---
 
-# Validation 
+# Validation in Xamarin DataForm (SfDataForm)
 
 The data form validates the data and displays hints in the case of validation is not passed. In case of invalid data, the error message is shown at the bottom of the editor.
 

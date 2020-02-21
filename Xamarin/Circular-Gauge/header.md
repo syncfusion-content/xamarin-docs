@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Header
+# Header in SfCircularGauge
 
 The [`Header`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Header.html) support allows you to show text inside the gauge control. A circular gauge can be made self-descriptive about the data. It can be  measured with use of the header.
 

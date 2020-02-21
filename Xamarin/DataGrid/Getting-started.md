@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin DataGrid (SfDataGrid)
 
 This section provides a quick overview for working with the SfDataGrid for Xamarin.Forms. Walk through the entire process of creating a real world of this control.
 
@@ -134,7 +134,7 @@ public MainPage()
 
 ### Release mode issue in UWP platform
 
-The known Framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode`. It can be resolved by initializing the SfDataGrid assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
+The known Framework issue in UWP platform is the custom controls will not render when deployed the application in `Release Mode` or [.Net Native compilation](https://docs.microsoft.com/en-US/dotnet/framework/net-native/). It can be resolved by initializing the SfDataGrid assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
 
 {% highlight c# %}
 // In App.xaml.cs
@@ -151,6 +151,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
     //Now, add all the assemblies your app uses
     assembliesToInclude.Add(typeof(Syncfusion.SfDataGrid.XForms.UWP.SfDataGridRenderer).GetTypeInfo().Assembly);
     assembliesToInclude.Add(typeof(Syncfusion.SfNumericTextBox.XForms.UWP.SfNumericTextBoxRenderer).GetTypeInfo().Assembly);
+	assembliesToInclude.Add(typeof(Syncfusion.XForms.UWP.ComboBox.SfComboBoxRenderer).GetTypeInfo().Assembly);
 
     // replaces Xamarin.Forms.Forms.Init(e);        
     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
@@ -177,6 +178,7 @@ In this walk through, a new application can be created that contains the SfDataG
  * [Sorting](#sorting) 
  * [Grouping](#grouping) 
  * [Selection](#selection)
+ * [Editing](https://help.syncfusion.com/xamarin/datagrid/editing)
 
 ## Creating the project
 

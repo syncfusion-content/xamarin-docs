@@ -51,7 +51,7 @@ Syncfusion supports iOS, Android, UWP, macOS, and WPF. However, only select cont
 
 ## Why do I want to choose Syncfusion Xamarin controls?
 
-* Includes 145+ controls for all use cases
+* Includes 150+ controls for all use cases
 * Supports iOS, Android, UWP, macOS and WPF platforms
 * 24hrs support
 * MVVM support

@@ -47,7 +47,7 @@ This is the easiest way to add the pre-defined screens to your application. The 
    
 ### Extension for MAC
 
-1.	Download the UI Kit extension file from [here](https://cdn.syncfusion.com/essential-ui-kit-for-xamarin.forms/Syncfusion.Xamarin.Mac.UIKit_1.0.0.0.mpack).
+1.	Download the UI Kit extension file from [here](https://cdn.syncfusion.com/essential-ui-kit-for-xamarin.forms/Syncfusion.Xamarin.Mac.UIKit_2.5.0.0.mpack).
 
 2.	Install the extension file in Visual Studio for MAC by following [this](https://www.syncfusion.com/kb/10877/how-to-install-extension-in-visual-studio-for-mac) article. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Layout | SfDataForm | Xamarin.Forms | Syncfusion
-description: Different layouts and its customization  in SfDataForm for Xamarin.Forms.
+description: This section explains layouts and its customization and other functionalities in SfDataForm for Xamarin.Forms platform.
 platform: xamarin
 control: SfDataForm
 documentation: UG
 ---
 
-# Layout
+# Layout in Xamarin.Forms DataForm (SfDataForm)
 
 ## Overview
 

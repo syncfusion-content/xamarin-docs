@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Validation | SfDataForm | Xamarin.Forms | Syncfusion
-description: How to validate the data in SfDataForm for Xamarin.Forms.
+description: This section explains how to validate the data, custom validation and other functionalities in SfDataForm for Xamarin.Forms.
 platform: xamarin
 control: SfDataForm
 documentation: UG
 ---
 
-# Validation 
+# Validation in Xamarin DataForm (SfDataForm)
 
 The data form validates the data and displays hints in the case of validation is not passed. In case of invalid data, the error message is shown at the bottom of the editor.
 
@@ -105,7 +105,7 @@ public class EmployeeInfo : INotifyDataErrorInfo, INotifyPropertyChanged
 
 You can validate the data using data annotation attributes.
 
-The numeric type like Int, Double, Decimal properties can be validated using the [Range](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.RangeAttribute.html) attribute.
+The numeric type like Int, Double, Decimal properties can be validated using the [Range](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.rangeattribute?view=netframework-4.8) attribute.
 
 {% tabs %}
 {% highlight c# %}
@@ -123,7 +123,7 @@ public int EmployeeID
 {% endhighlight %}
 {% endtabs %}
 
-The String type property can be validated using [Required](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.RequiredAttribute.html) and [StringLength](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.StringLengthAttribute.html) attributes.
+The String type property can be validated using [Required](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.requiredattribute?view=netframework-4.8) and [StringLength](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.stringlengthattribute?view=netframework-4.8) attributes.
 
 {% tabs %}
 {% highlight c# %}

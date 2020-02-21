@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data annotations | SfDataForm | Xamarin.Forms | Syncfusion
-description: This section explains about the display, validation, bindable, editable, read only, enum data type attributes in data annotations.
+description: This section explains the display, validation, bindable, editable, read-only, enum data type attributes in data annotations.
 platform: Xamarin
 control: SfDataForm
 documentation: UG
@@ -20,7 +20,7 @@ The data form supports the following attribute, and these attributes can be acce
 </tr>
 <tr>
 <td>
-{{'[Name]https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8'| markdownify }}
+{{'[Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8')| markdownify }}
 </td>
 <td>
 Specifies the label text.

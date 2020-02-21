@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in Syncfusion SfDataForm for Xamairn.Forms
-description: Describes how to localize the  Xamairn.Forms SfDataForm display text and error messages based on culture.
+description: Describes how to localize the Xamairn.Forms SfDataForm display text and error messages based on culture.
 platform: xamarin
 control: SfDataForm
 documentation: ug

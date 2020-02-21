@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Localization in Syncfusion SfDataForm for Xamairn.Forms
-description: Describes how to localize the SfDataForm display text and error messages based on culture.
+description: Describes how to localize the Xamairn.Forms SfDataForm display text and error messages based on culture.
 platform: xamarin
 control: SfDataForm
 documentation: ug
 ---
 
-# Localization 
+# Localization in Xamarin DataForm (SfDataForm)
 
-You can localize the DataFormItem [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute) attribute values and validation ([Required](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.RequiredAttribute.html) ,[StringLength](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.StringLengthAttribute.html) ) attributes values by using `ResourceType` display attribute or using the `AutoGeneratingDataFormItem` event.
+You can localize the DataFormItem [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=netframework-4.8) attribute values and validation ([Required](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.RequiredAttribute.html) ,[StringLength](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.StringLengthAttribute.html) ) attributes values by using `ResourceType` display attribute or using the `AutoGeneratingDataFormItem` event.
  
 Please refer the [Localization]( https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/text?tabs=vswin) document  to localize the application.
  

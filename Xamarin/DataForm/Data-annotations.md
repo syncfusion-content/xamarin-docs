@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data annotations | SfDataForm | Xamarin.Forms | Syncfusion
-description: Supported Data annotations in SfDataForm in Xamarin.Forms.
+description: This section explains the display, validation, bindable, editable, read-only, enum data type attributes in data annotations.
 platform: Xamarin
 control: SfDataForm
 documentation: UG
 ---
 
-# Data Annotations
+# Data annotations in Xamarin DataForm (SfDataForm)
 
 The data form supports the following attribute, and these attributes can be accessible using `System.ComponentModel.DataAnnotation` assembly.
 
@@ -20,7 +20,7 @@ The data form supports the following attribute, and these attributes can be acce
 </tr>
 <tr>
 <td>
-{{'[Name](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~Name.html)'| markdownify }}
+{{'[Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8')| markdownify }}
 </td>
 <td>
 Specifies the label text.
@@ -28,7 +28,7 @@ Specifies the label text.
 </tr>
 <tr>
 <td>
-{{'[GroupName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~GroupName.html)'| markdownify }}
+{{'[GroupName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.groupname?view=netframework-4.8)'| markdownify }}
 </td>
 <td>
 Specifies the group name which groups the fields in the data form. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#grouping-data-fields)'| markdownify }} for more details.
@@ -36,7 +36,7 @@ Specifies the group name which groups the fields in the data form. Refer to {{'[
 </tr>
 <tr>
 <td>
-{{'[ShortName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~ShortName.html)'| markdownify }}
+{{'[ShortName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.shortname?view=netframework-4.8)'| markdownify }}
 </td>
 <td>
 Specifies the label text. It takes higher priority than Name.
@@ -44,7 +44,7 @@ Specifies the label text. It takes higher priority than Name.
 </tr>
 <tr>
 <td>
-{{'[AutoGenerateField](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~AutoGenerateField.html)'| markdownify }}
+{{'[AutoGenerateField](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.autogeneratefield?view=netframework-4.8)'| markdownify }}
 </td>
 <td>
 Specifies whether the field should be auto generated or not. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/working-with-dataform#cancel-dataformitem-generation-of-data-field)'| markdownify }} for more details.
@@ -60,7 +60,7 @@ Specifies watermark text for the editor. Refer to {{'[here](https://help.syncfus
 </tr>
 <tr>
 <td>
-{{'[Order](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~Order.html)'| markdownify }}
+{{'[Order](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.order?view=netframework-4.8)'| markdownify }}
 </td>
 <td>
 Specifies the order of field in the data form. Refer to {{'[here](https://help.syncfusion.com/xamarin/sfdataform/layout#changing-order-of-the-dataformitem	)'| markdownify }} for more details.

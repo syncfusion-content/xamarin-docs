@@ -27,6 +27,8 @@ editor.Rotate();
 
 {% endtabs %}
 
+![SfImageEditor](ImageEditor_images/rotate.jpeg)
+
 ## Flip
 
 The image editor control is capable of showing the mirror image. The [`Flip`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~Flip.html) method flips the image horizontally or vertically based on the [`FlipDirection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.FlipDirection.html) specified as argument of the flip method.
@@ -42,3 +44,5 @@ editor.Flip(FlipDirection.Horizontal);
 {% endhighlight %}
 
 {% endtabs %}
+
+![SfImageEditor](ImageEditor_images/flip.jpeg)

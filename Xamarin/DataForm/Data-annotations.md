@@ -20,7 +20,7 @@ The data form supports the following attribute, and these attributes can be acce
 </tr>
 <tr>
 <td>
-{{'[Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8')| markdownify }}
+{{'[Name](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.name?view=netframework-4.8)'| markdownify }}
 </td>
 <td>
 Specifies the label text.

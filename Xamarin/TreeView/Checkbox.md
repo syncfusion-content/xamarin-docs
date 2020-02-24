@@ -7,7 +7,7 @@ control: SfTreeView
 documentation: ug
 ---
 
-# Checkbox
+# Checkbox in Xamarin TreeView (SfTreeView)
 
 SfTreeView provides support for loading [CheckBox](https://help.syncfusion.com/xamarin/checkbox/getting-started) in each node, and allows users to check/uncheck the corresponding node. So, you should add checkbox in the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) of the `SfTreeView` and bind the [IsChecked](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~IsChecked.html) property of the [TreeViewNode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode.html).
 

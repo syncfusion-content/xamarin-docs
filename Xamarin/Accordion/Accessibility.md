@@ -6,7 +6,7 @@ platform: Xamarin
 control: Accordion
 documentation: ug
 ---
-# AutomationId
+# Accessibility in Xamarin Accordion (SfAccordion)
 
 The Accordion control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the Accordion control. To keep unique AutomationId, these inner element's AutomationIds are updated based on Accordion control `AutomationId`. 
 

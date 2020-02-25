@@ -7,7 +7,7 @@ control: SfExpander
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Xamarin Expander (SfExpander)
 
 The Expander allows customizing appearance of the Icon, and provides various functionalities to the end-user.
 
@@ -61,10 +61,14 @@ The appearance of the [SfExpander](https://help.syncfusion.com/cr/cref_files/xam
 {% highlight xaml %}
 <syncfusion:SfExpander x:Name="expander">
     <syncfusion:SfExpander.Header>
-        <Label  Text="Veg Pizza" VerticalTextAlignment="Center"/>
+        <Grid>
+            <Label  Text="Veg Pizza" VerticalTextAlignment="Center"/>
+        </Grid>
     </syncfusion:SfExpander.Header>
     <syncfusion:SfExpander.Content>
-        <Label HeightRequest="50" Text="Veg pizza is prepared with the items that meet vegetarian standards by not including any meat or animal tissue products." VerticalTextAlignment="Center"/>
+        <Grid>
+            <Label HeightRequest="50" Text="Veg pizza is prepared with the items that meet vegetarian standards by not including any meat or animal tissue products." VerticalTextAlignment="Center"/>
+        </Grid>
     </syncfusion:SfExpander.Content>
     <VisualStateManager.VisualStateGroups>
         <VisualStateGroupList>

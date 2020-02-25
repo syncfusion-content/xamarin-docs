@@ -7,7 +7,7 @@ control: SfAccordion
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Xamarin Accordion (SfAccordion)
 
 The Accordion allows customizing appearance of the Icon, and provides different functionalities to the end-user.
 
@@ -109,7 +109,9 @@ The appearance of the [SfAccordion](https://help.syncfusion.com/cr/cref_files/xa
     <syncfusion:SfAccordion.Items>
         <syncfusion:AccordionItem IconColor="Accent">
             <syncfusion:AccordionItem.Header>
-                <Label TextColor="#495F6E" Text="Cheese burger" HeightRequest="50" VerticalTextAlignment="Center"/>
+                <Grid>
+                    <Label TextColor="#495F6E" Text="Cheese burger" HeightRequest="50" VerticalTextAlignment="Center"/>
+                </Grid>
             </syncfusion:AccordionItem.Header>
             <syncfusion:AccordionItem.Content>
                 <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF">

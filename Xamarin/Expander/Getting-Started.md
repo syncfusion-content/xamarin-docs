@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started | SfExpander | Xamarin | Syncfusion
-description: Getting started with Xamarin Forms Expander.
+description: This section described about getting started with Xamarin Forms Expander (SfExpander) control and more details.
 platform: xamarin
 control: SfExpander
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Xamarin Expander (SfExpander)
 
 The Expander control provides a way to expand and collapse when tapping a header. This section provides a quick overview for working with the `SfExpander` for Xamarin.Forms. This section covers the minimal features that you need to know to get started with the Expander. 
 
@@ -204,7 +204,9 @@ namespace GettingStarted
 
 `SfExpander` is a layout control comprise of Header and Content. You can load any View in [Header](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Header.html) and [Content](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Content.html). Content visibility of expander can be set by using `IsExpanded` property of Expander. User can expand or collapse the Content view by tapping Header.
 
-Here, Labels are loaded in Header and Content of expander. 
+Here, Grid with Labels are loaded in Header and Content of expander. 
+
+N> When loading Label as direct children of Header/Content of Expander, then it will lead to exception in Forms 4.0 and above version. So, load Label inside Grid to overcome the crash.
 
 {% tabs %}
 {% highlight xaml %}
@@ -220,7 +222,9 @@ Here, Labels are loaded in Header and Content of expander.
                     <StackLayout> 
                         <syncfusion:SfExpander> 
                             <syncfusion:SfExpander.Header> 
-                                <Label TextColor="#495F6E" Text="Veg Pizza" VerticalTextAlignment="Center" /> 
+                                <Grid>
+                                    <Label TextColor="#495F6E" Text="Veg Pizza" VerticalTextAlignment="Center" /> 
+                                </Grid>
                             </syncfusion:SfExpander.Header> 
                             <syncfusion:SfExpander.Content> 
                                 <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF"> 
@@ -230,7 +234,9 @@ Here, Labels are loaded in Header and Content of expander.
                         </syncfusion:SfExpander> 
                         <syncfusion:SfExpander> 
                             <syncfusion:SfExpander.Header> 
-                                <Label TextColor="#495F6E" Text="Non-veg Pizza" VerticalTextAlignment="Center" /> 
+                                <Grid>
+                                    <Label TextColor="#495F6E" Text="Non-veg Pizza" VerticalTextAlignment="Center" /> 
+                                </Grid>
                             </syncfusion:SfExpander.Header> 
                             <syncfusion:SfExpander.Content> 
                                 <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF"> 

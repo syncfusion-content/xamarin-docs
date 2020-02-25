@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started | SfAccordion | Xamarin | Syncfusion
-description: Getting started with Xamarin Forms Accordion.
+description: This section described about getting started with Xamarin Forms Accordion (SfAccordion) control and more details.
 platform: xamarin
 control: SfAccordion
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Xamarin Accordion (SfAccordion)
 
 The Accordion control allows content to be organized in a vertically stacked list of items that is collapsible. Each item can also be expanded to reveal the content associated with that item. This section provides a quick overview for working with the `SfAccordion` for Xamarin.Forms.
 
@@ -205,7 +205,9 @@ namespace GettingStarted
 
 `SfAccordion` is a layout control with vertically stacked list of accordion [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Items.html) that comprise of [Header](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.AccordionItem~Header.html) and [Content](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.AccordionItem~Content.html). You can load any View in Header and Content. User can expand or collapse the Content view by tapping Header. 
 
-Here, Labels are loaded in Header and Content of accordion items. 
+Here, Grid is loaded in Header and Content of accordion items.
+
+N> When loading Label as direct children of Header/Content of AccordionItem, then it will lead to exception in Forms 4.0 and above version. So, load Label inside Grid to overcome the crash.
 
 {% tabs %}
 {% highlight xaml %}
@@ -221,7 +223,9 @@ Here, Labels are loaded in Header and Content of accordion items.
                     <syncfusion:SfAccordion.Items> 
                         <syncfusion:AccordionItem> 
                             <syncfusion:AccordionItem.Header> 
-                                <Label TextColor="#495F6E" Text="Cheese burger" HeightRequest="50" VerticalTextAlignment="Center"/> 
+                                <Grid>
+                                    <Label TextColor="#495F6E" Text="Cheese burger" HeightRequest="50" VerticalTextAlignment="Center"/>
+                                </Grid>
                             </syncfusion:AccordionItem.Header> 
                             <syncfusion:AccordionItem.Content> 
                                 <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF"> 
@@ -231,7 +235,9 @@ Here, Labels are loaded in Header and Content of accordion items.
                         </syncfusion:AccordionItem> 
                         <syncfusion:AccordionItem> 
                             <syncfusion:AccordionItem.Header> 
-                                <Label TextColor="#495F6E" Text="Veggie burger" HeightRequest="50" VerticalTextAlignment="Center"/> 
+                                <Grid>
+                                    <Label TextColor="#495F6E" Text="Veggie burger" HeightRequest="50" VerticalTextAlignment="Center"/>
+                                </Grid> 
                             </syncfusion:AccordionItem.Header> 
                             <syncfusion:AccordionItem.Content> 
                                 <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF"> 
@@ -241,7 +247,9 @@ Here, Labels are loaded in Header and Content of accordion items.
                         </syncfusion:AccordionItem> 
                         <syncfusion:AccordionItem> 
                             <syncfusion:AccordionItem.Header> 
-                                <Label TextColor="#495F6E" Text="Barbecue burger" HeightRequest="50" VerticalTextAlignment="Center"/> 
+                                <Grid>
+                                    <Label TextColor="#495F6E" Text="Barbecue burger" HeightRequest="50" VerticalTextAlignment="Center"/> 
+                                </Grid>
                             </syncfusion:AccordionItem.Header> 
                             <syncfusion:AccordionItem.Content> 
                                 <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF"> 
@@ -251,7 +259,9 @@ Here, Labels are loaded in Header and Content of accordion items.
                         </syncfusion:AccordionItem> 
                         <syncfusion:AccordionItem> 
                             <syncfusion:AccordionItem.Header> 
-                                <Label TextColor="#495F6E" Text="Chili burger" HeightRequest="50" VerticalTextAlignment="Center"/> 
+                                <Grid>
+                                    <Label TextColor="#495F6E" Text="Chili burger" HeightRequest="50" VerticalTextAlignment="Center"/> 
+                                </Grid>
                             </syncfusion:AccordionItem.Header> 
                             <syncfusion:AccordionItem.Content> 
                                 <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF"> 

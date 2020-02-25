@@ -1,13 +1,13 @@
 ---
 layout: post
 title: BindableLayout | Accordion for Xamarin.Forms | Syncfusion
-description: How to bind AccordionItem to Xamarin.Forms SfAccordion using BindableLayout
+description: This section described about how to bind AccordionItem to Xamarin.Forms Accordion (SfAccordion) using BindableLayout.
 platform: xamarin
 control: SfAccordion
 documentation: ug
 ---
 
-# Bindable Layout
+# BindableLayout in Xamarin Accordion (SfAccordion)
 
 The [SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows to set a collection of items by setting `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties. The Accordion supports Bindable Layout in Xamarin.Forms version 3.5 and above.
 
@@ -91,10 +91,14 @@ The [SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.E
         <DataTemplate>
             <syncfusion:AccordionItem>
                 <syncfusion:AccordionItem.Header>
-                    <Label Text="{Binding Name}"/>
+                    <Grid>
+                        <Label Text="{Binding Name}"/>
+                    </Grid>
                 </syncfusion:AccordionItem.Header>
                 <syncfusion:AccordionItem.Content>
-                    <Label Text="{Binding Description}"/>
+                    <Grid>
+                        <Label Text="{Binding Description}"/>
+                    </Grid>
                 </syncfusion:AccordionItem.Content>
             </syncfusion:AccordionItem>
         </DataTemplate>
@@ -106,12 +110,16 @@ SfAccordion Accordion = new SfAccordion();
 DataTemplate ItemTemplate = new DataTemplate(() =>
 {
     AccordionItem accordionItem = new AccordionItem();
+    var headerGrid = new Grid();
     var header = new Label();
     header.SetBinding(Label.TextProperty, new Binding("Name"));
-    accordionItem.Header = header;
+    headerGrid.Children.Add(header);
+    accordionItem.Header = headerGrid;
+    var contentGrid = new Grid();
     var content = new Label();
     content.SetBinding(Label.TextProperty, new Binding("Description"));
-    accordionItem.Content = content;
+    contentGrid.Children.Add(content);
+    accordionItem.Content = contentGrid;
     return accordionItem;
 });
 BindableLayout.SetItemTemplate(Accordion, ItemTemplate);

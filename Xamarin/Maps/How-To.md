@@ -16,7 +16,24 @@ SfMaps offers two utility methods to transform the pixel values to longitude and
 * `GeopointToViewPoint(double latitude, double longitude)` - Converts the latitude and longitude values to screen point. Here, pass the parameters as latitude and longitude values, from that values we can get screen points x and y.
 * `GetLatLonFromPoint(Point point)` - Converts the screen point to longitude and latitude values. Here, pass the parameters as screen points x and y, from that points we can get longitude(Point.X) and latitude(Point.Y) values.
 
-{% tabs %}
+
+
+{% highlight xml %}
+
+    <maps:SfMaps x:Name="sfmap"  >
+                <maps:SfMaps.Layers>
+                    <maps:ShapeFileLayer Uri="world-map.shp">
+                        <maps:ShapeFileLayer.Markers>
+                            <maps:MapMarker x:Name="marker" 
+                            ....
+                            />
+                        </maps:ShapeFileLayer.Markers>
+                    </maps:ShapeFileLayer>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
+
+{% endhighlight %}
+
 
 {% highlight c# %}
 
@@ -26,7 +43,5 @@ marker.Latitude = longitudeLatitude.Y.ToString();
 marker.Longitude = longitudeLatitude.X.ToString();
 
 {% endhighlight %}
-
-{% endtabs %}
 
 ![Latitude longitude to point and vice versa in Xamarin.Forms Maps](Images/PixelToLatLonViceVersa.png)

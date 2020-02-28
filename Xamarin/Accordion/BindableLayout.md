@@ -9,7 +9,7 @@ documentation: ug
 
 # BindableLayout in Xamarin Accordion (SfAccordion)
 
-The [SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows to set a collection of items by setting `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties. The Accordion supports Bindable Layout in Xamarin.Forms version 3.5 and above.
+The [SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows you to set a collection of items by setting the `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties. The Accordion supports Bindable Layout in Xamarin.Forms version 3.5 and above.
 
 ## Creating Data Model
 
@@ -25,7 +25,7 @@ public class ItemInfo
 {% endhighlight %}
 {% endtabs %}
 
-Create a model repository class with ItemInfo collection property initialized with required number of data objects in a new class file as shown in the following code example, and save it as ItemInfoRepository.cs file:
+Create a model repository class with the ItemInfo collection property initialized with required number of data objects in a new class file as shown in the following code example, and save it as ItemInfoRepository.cs file.
 
 {% tabs %}
 {% highlight c# %}
@@ -62,7 +62,7 @@ this.BindingContext = new ItemInfoRepository();
 
 `SfAccordion` can be bounded with data by setting the ItemsSource property of BindableLayout.
 
-The following code example binds the collection created in previous step to the `Bindable.ItemsSource` property:
+The following code example binds the collection created in previous step to the `Bindable.ItemsSource` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -129,4 +129,4 @@ BindableLayout.SetItemsSource(Accordion, viewModel.Info);
 
 ![Xamarin Forms Accordion with Bimdable Layout](accordion_images/xamarin-forms-accordion.png)
 
-You can download the entire source of this demo from [here](https://github.com/SyncfusionExamples/Xamarin-Populate-Accordion-Items-using-Bindable-Layout).
+You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/Xamarin-Populate-Accordion-Items-using-Bindable-Layout).

@@ -35,7 +35,7 @@ schemadotorg:
 	]
 --- 
 
-# FAQ
+# Frequently Asked Questions
 
 ## What are the platforms do Syncfusion Xamarin.Forms controls support?
 

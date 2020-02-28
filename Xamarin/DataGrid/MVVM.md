@@ -44,6 +44,7 @@ Refer the below code to bind the `SfDataGrid.SelectedIndex` from the ViewModel.
 
 {% endhighlight %}
 
+You can download the source code of binding the SfDataGrid.SelectedIndex properties sample [here]()
 
 ## Binding SfDataGrid.SelectedItem property
 
@@ -81,7 +82,7 @@ Refer the below code to bind the `SfDataGrid.SelectedItem` from the ViewModel.
 		
 {% endhighlight %}
 
-
+You can download the source code of binding the SfDataGrid.SelectedItem properties sample [here]()
 
 ## Binding SfDataGrid.SelectedItems property
 You can bind any object type collection to the bindable property SfDataGrid[SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html) which gets or sets the collection of `SelectedItems` collection in the SfDataGrid.
@@ -120,7 +121,7 @@ Refer the below code to bind the `SfDataGrid.SelectedItems` from the ViewModel.
 
 {% endhighlight %}
 
-
+You can download the source code of binding the SfDataGrid.SelectedItems properties sample [here]()
 
 ## Binding GridColumn properties
 
@@ -159,7 +160,7 @@ Refer the below code to bind the GridColumn properties from the ViewModel.
 
 {% endhighlight %}
 
-
+You can download the source code of binding the GridTextColumn.CellTextSize properties sample [here]()
 
 ## Binding GridPickerColumn ItemsSource from ViewModel
 
@@ -224,7 +225,7 @@ class ViewModel : INotifyPropertyChanged
 
 {% endhighlight %}
 
-
+You can download the source code of binding the GridPickerColumn.ItemsSource properties sample [here]()
 
 ## Binding the ItemsSource in ViewModel to the Picker loaded inside template
 
@@ -292,7 +293,7 @@ Refer the below code to bind the ItemsSource of Picker loaded inside the GridTem
 		}
 	}
 	
-
+You can download the source code of binding the Picker.ItemsSource properties sample [here]()
 
 {% endhighlight %}
 
@@ -421,11 +422,11 @@ Refer the below code snippet to bind `SfDataGrid.Columns` property from the view
 
 {% endtab %}
 
-
+You can download the source code of binding the SfDataGrid.Columns properties sample [here]()
 
 ## Binding the GridComboBoxColumn ItemSource from viewModel
 
-You can bind any object type collection property to the [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property to display a list of items in the `GridComboBoxColumn` when entering edit mode.
+You can bind any object type collection property to the [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property  to display a list of items in the `GridComboBoxColumn` when entering edit mode.
 
 Refer the below code snippet to bind `GridComboBoxColumn.ItemsSource` property from the viewmodel.
 
@@ -506,7 +507,7 @@ Refer the below code snippet to bind `GridComboBoxColumn.ItemsSource` property f
 
 {% endtab %}
 
-
+You can download the source code of binding the GridComboBoxColumn.ItemsSource  properties sample [here]()
 
 ## Binding the ItemsSource in ViewModel to the SfComboBox loaded inside the template
 
@@ -598,6 +599,7 @@ Refer the below code snippet to bind `SfComboBox.DataSource` property from the v
 
 {% endtab %}
 
+You can download the source code of binding the SfComboBox properties sample [here]()
 
 ## Hide column from DataGrid using Button Click in MVVM
 
@@ -671,6 +673,7 @@ Refer the below code snippet to Hide column from DataGrid using button click in 
 
 {% endtab %}
 
+You can download the source code of binding the GridTextColumn.IsHidden properties sample [here]()
 
 ## Filtering in DataGrid using MVVM
 
@@ -1039,3 +1042,5 @@ In ViewModel, filtering methods and properties was implemented and method will b
         }
 
 <% endtab %>
+
+You can download the source code of the filtering the records from [here] ()

@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Load More in Xamarin.Forms ListView | Syncfusion
-description: Load more with manual and automatic loading options in ListView.
+description: Load more with manual and automatic loading options in Xamarin.Forms ListView which loads the Items in On-Demand.
 platform: xamarin
 control: SfListView
 documentation: ug
 ---
-# Load More
+# Load More in Xamarin ListView (SfListView)
 
 The ListView enables `Load More` view by setting the [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) and [SfListView.LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) properties. This can be displayed either on the top or bottom of the view by setting the [SfListView.LoadMorePosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMorePosition.html) property. This view will be displayed when reaching the end of the list when the `LoadMorePosition` is bottom. This provides an option to add the items at runtime. If the `SfListView.LoadMorePosition` property is set as top, the items will be loaded only by using the `LoadMoreOption.Manual` mode.
 
@@ -483,6 +483,7 @@ private bool CanLoadMoreItems(object obj)
 
 ## Limitations
 
+* Must set minimum delay for `LoadMore` in Execute method.
 * SfListView does not support to set `Manual` in [SfListView.LoadMoreOption](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreOption.html) when [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
 * SfListView supports to set `Auto` and `AutoOnScroll` in `SfListView.LoadMoreOption` only when `SfListView.LoadMorePosition` is set to `Bottom`.
 * Handle [LoadMoreCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~LoadMoreCommand.html) execution by implementing `CanExecute` predicate of command. 

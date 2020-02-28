@@ -5,15 +5,15 @@ description: Basic overview about the list of available features on Syncfusion X
 platform: Xamarin
 documentation: ug
 schemadotorg:
-  "@context": http://schema.org/
-  "@type": FAQPage
-  mainEntity: [
+  "@context": "https://schema.org/"
+  "@type": "FAQPage"
+  "mainEntity": [
 	{
 		"@type": "Question",
 		"name": "What are the platforms do Syncfusion Xamarin.Forms controls support?",
 		"acceptedAnswer": {
 			"@type": "Answer",
-			text: "Syncfusion supports iOS, Android, UWP, macOS, and WPF. However, only select controls are supported in macOS and WPF."
+			"text": "Syncfusion supports iOS, Android, UWP, macOS, and WPF. However, only select controls are supported in macOS and WPF."
 		}
 	},
 	{
@@ -21,7 +21,7 @@ schemadotorg:
 		"name": "What are the most popular Syncfusion Xamarin controls?",
 		"acceptedAnswer": {
 			"@type": "Answer",
-			text: "<ul><li>ListView</li><li>Charts</li><li>DataGrid</li><li>PDF Viewer</li><li>Excel Library</li></ul>"
+			"text": "<ul><li>ListView</li><li>Charts</li><li>DataGrid</li><li>PDF Viewer</li><li>Excel Library</li></ul>"
 		}
 	},
 	{
@@ -29,7 +29,7 @@ schemadotorg:
 		"name": "Why do I want to choose Syncfusion Xamarin controls?",
 		"acceptedAnswer": {
 			"@type": "Answer",
-			text: "<ul><li>Includes 150+ controls for all use cases</li><li>Supports iOS, Android, UWP, macOS and WPF platforms</li><li>24hrs support</li><li>MVVM support</li><li>Supports phone, tablet and desktop form factors</li></ul>"
+			"text": "<ul><li>Includes 150+ controls for all use cases</li><li>Supports iOS, Android, UWP, macOS and WPF platforms</li><li>24hrs support</li><li>MVVM support</li><li>Supports phone, tablet and desktop form factors</li></ul>"
 		}
 	}
 	]

@@ -1,23 +1,23 @@
 ---
 layout: post
 title: Displaying Text in Syncfusion DigitalGauge control for Xamarin.Forms
-description: Learn how to set Display Text in DigitalGauge
+description: Learn how to set Display various type of Text such as numbers, alphabet and special character in DigitalGauge control for Xamarin.Forms
 platform: Xamarin
 control: DigitalGauge
 documentation: ug
 ---
 
-# Display value types
+# Display value types in SfDigitalGauge
 
 The digital gauge displays numbers, alphabet, and special characters, which are given in the value property.
 
 ## Setting value to number
 
-Numbers can be displayed in digital gauge in different formats using the `CharacterType` property.
+Numbers can be displayed in digital gauge in different formats using the [`CharacterType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfDigitalGauge~CharacterType.html) property.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfDigitalGauge Value="12 34 56" SegmentStrokeWidth="3" 
                           HeightRequest="100"  WidthRequest="330"
@@ -69,7 +69,7 @@ Alphabet can be displayed in digital gauge using any one of the character format
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfDigitalGauge Value="SYNCFUSION" SegmentStrokeWidth="3" 
                           HeightRequest="100"  WidthRequest="340"
@@ -121,7 +121,7 @@ Special characters can also be displayed in digital gauge using the EightCrossEi
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfDigitalGauge Value="@ # $ % *" SegmentStrokeWidth="3" 
                           HeightRequest="100"  WidthRequest="350"

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Character types in Syncfusion DigitalGauge control for Xamarin.Forms
-description: Learn how to define character type in DigitalGauge
+description: This section describes how to define the character type in DigitalGauge control for Xamarin.Forms platform
 platform: Xamarin
 control: DigitalGauge
 documentation: ug
 ---
 
-# Character types
+# Character types in SfDigitalGauge
 
 The digital characters can be drawn in the following four different segments:
 
@@ -25,7 +25,7 @@ The seven-segment type is capable of displaying numbers and a few uppercase lett
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <gauge:SfDigitalGauge Value="SYNCFUSION" SegmentStrokeWidth="4" 
                           HeightRequest="100"  WidthRequest="340"

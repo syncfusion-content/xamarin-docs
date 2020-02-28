@@ -922,3 +922,7 @@ public class ViewModel:INotifyPropertyChanged
 {% endtabs %}
 
 You can download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/xamarin-listview-loadmore).
+
+## See Also
+
+[How to bind command from ViewModel to external ItemTemplate of Xamarin.Forms ListView](https://www.syncfusion.com/kb/11029)

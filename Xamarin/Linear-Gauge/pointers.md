@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Pointers in Syncfusion LinearGauge control for Xamarin.Forms
-description: Learn how to define set pointers in LinearGauge
+description: This section describes how to define set pointers in the SfLinearGauge control for Xamarin.Forms platform
 platform: Xamarin
 control: LinearGauge
 documentation: ug
 ---
 
-# Pointers
+# Pointers in SfLinearGauge
 
 [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) provides support to mark the values using [`BarPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.BarPointer.html) and [`SymbolPointer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SymbolPointer.html).
 

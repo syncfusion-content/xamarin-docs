@@ -8,11 +8,11 @@ documentation: ug
 keywords: mask, SfMaskedEdit, maskededit
 ---
 
-# Basic features
+# Basic features in SfMaskedEdit control
 
 ## Setting value
 
-The SfMaskedEdit control displays the value that can be set using the [`Value`] (https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Value.html) property:
+The SfMaskedEdit control displays the value that can be set using the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Value.html) property:
 
 {% tabs %}
 {% highlight xaml %}
@@ -47,14 +47,14 @@ maskedEdit.PromptChar = '*';
 
 ## Setting watermark
 
-The watermark will prompt you with instructions or important information when it is not on focus and any valid characters are not entered. The [`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Watermark.html) property of `SfMaskedEdit` is used to set the watermark text for the control.
+The watermark will prompt you with instructions or important information when it is not on focus and any valid characters are not entered. The [`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Watermark.html) property of [`SfMaskedEdit`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) is used to set the watermark text for the control.
 
 The following properties are used to customize its appearance:
 
-* `WatermarkColor`: Sets text color for the watermark.
-* `WatermarkFontFamily`: Represents the font to be used in the watermark.
-* `WatermarkFontAttributes`: Sets font attributes(bold/italic/none) for the watermark.
-* `WatermarkFontSize`: Sets font size for the watermark.
+* [`WatermarkColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~WatermarkColor.html): Sets text color for the watermark.
+* [`WatermarkFontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~WatermarkFontFamily.html): Represents the font to be used in the watermark.
+* [`WatermarkFontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~WatermarkFontAttributes.html): Sets font attributes(bold/italic/none) for the watermark.
+* [`WatermarkFontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~WatermarkFontSize.html): Sets font size for the watermark.
 
 {% tabs %}
 {% highlight xaml %}

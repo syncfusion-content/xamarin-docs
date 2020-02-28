@@ -9,11 +9,11 @@ documentation: ug
 
 # Appearance in Xamarin Expander (SfExpander)
 
-The Expander allows customizing appearance of the Icon, and provides various functionalities to the end-user.
+The Expander allows customizing appearance of the Icon, and provides various functionalities to the users.
 
 ## Header icon position 
 
-The [SfExpander](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander.html) allows to customize the position of the header icon by using [HeaderIconPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~HeaderIconPosition.html) property. By default, the header icon position is `Start`. 
+The [SfExpander](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander.html) allows you to customize the position of the header icon by using the [HeaderIconPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~HeaderIconPosition.html) property. By default, the header icon position is `Start`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -26,7 +26,7 @@ The [SfExpander](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Ex
 
 ## Header background color customization
 
-The [SfExpander](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander.html) allows to customize the background color of the expander header by using [HeaderBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~HeaderBackgroundColor.html) property.
+The [SfExpander](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander.html) allows you to customize the background color of the expander header by using the [HeaderBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~HeaderBackgroundColor.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -39,7 +39,7 @@ The [SfExpander](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Ex
 
 ## Icon color customization
 
-The [SfExpander](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander.html) allows to customize the color of the expander icon by using [IconColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~IconColor.html) property. By default, `IconColor` is black.
+The [SfExpander](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander.html) allows you to customize the color of the expander icon by using the [IconColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~IconColor.html) property. By default, `IconColor` is black.
 
 {% tabs %}
 {% highlight xaml %}
@@ -127,4 +127,4 @@ this.Content = expander;
 
 ![Xamarin Forms Expander with VSM](expander_images/Expander_VSM.png)
 
-You can download the entire source of this demo from [here](https://github.com/SyncfusionExamples/Xamarin-Expander-VisualStateManager).
+You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/Xamarin-Expander-VisualStateManager).

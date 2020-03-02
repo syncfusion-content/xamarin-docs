@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizations in Syncfusion SfMaps
-description: This section explains how to transform the value of latitude and longitude to pixel value and vice versa
+description: This section explains how to transform the value of latitude and longitude to pixel value and vice versas
 platform: xamarin
 control: SfMaps
 documentation: ug
@@ -15,9 +15,8 @@ SfMaps offers two utility methods to transform the pixel values to longitude and
 * `GetLatLonFromPoint(Point point)` - Converts the screen point to longitude and latitude values. Here, pass the parameters as screen points x and y, from that points we can get longitude(Point.X) and latitude(Point.Y) values.
 
 
-{% tabs %}
 
-{% highlight xml %}
+{% highlight XAML %}
 
     <maps:SfMaps x:Name="sfmap"  >
                 <maps:SfMaps.Layers>
@@ -33,9 +32,6 @@ SfMaps offers two utility methods to transform the pixel values to longitude and
 
 {% endhighlight %}
 
-{% endtabs %}
-
-{% tabs %}
 
 {% highlight c# %}
 
@@ -45,8 +41,5 @@ marker.Latitude = longitudeLatitude.Y.ToString();
 marker.Longitude = longitudeLatitude.X.ToString();
 
 {% endhighlight %}
-
-
-{% endtabs %}
 
 ![Latitude longitude to point and vice versa in Xamarin.Forms Maps](Images/PixelToLatLonViceVersa.png)

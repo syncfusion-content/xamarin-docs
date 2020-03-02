@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizations in Syncfusion SfMaps
-description: This section explains about how to transform latitude and longitude value to pixel value and vice-versa
+description: This section explains how to transform the value of latitude and longitude to pixel value and vice versa
 platform: xamarin
 control: SfMaps
 documentation: ug

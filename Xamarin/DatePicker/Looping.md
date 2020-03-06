@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Looping support for Syncfusion.Xamarin.Forms SfDatePicker
-description:Enable Looping support in Syncfusion.Xamarin.Forms SfDatePicker control
+description: Enable Looping support in Syncfusion.Xamarin.Forms SfDatePicker control to repeat the list of items.
 platform: Xamarin
 control: SfDatePicker
 documentation: ug

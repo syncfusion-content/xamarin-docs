@@ -7,7 +7,7 @@ control: TimePicker
 documentation: ug
 ---
 
-# Customizations
+# Customization support in SfTimePicker
 
 You can customize the header, column header, footer, selected item, and unselected item of the SfTimePicker.
 

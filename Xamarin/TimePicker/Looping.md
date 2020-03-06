@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Looping support for Syncfusion.Xamarin.Forms SfTimePicker
-description: Looping support of SfTimePicker control
+description: Enable Looping support in Syncfusion.Xamarin.Forms SfTimePicker control
 platform: Xamarin
 control: SfTimePicker
 documentation: ug
 ---
 
-# Looping
+# Looping Support in SfTimePicker
 
 The Looping support is used to automatically navigate the first item to repeat the list of items after reached the last item. Each forward iteration is followed by a backward iteration in the time picker control. This can be achieved by `EnableLooping` property.
 

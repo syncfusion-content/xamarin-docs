@@ -7,7 +7,7 @@ control: TabView
 documentation: ug
 ---
 
-# Image Source in SfTabItem
+## Image Source in SfTabItem
 
 The `ImageSource` property customizes the icon image of SfTabView by adding a custom image.
 
@@ -107,13 +107,14 @@ namespace TabViewAutomationSample
 
 ![ImageSource](images/ImageSource/ImageSource.png)
 
-# FontImageSource in SfTabItem
+## FontImageSource in SfTabItem
 
 The `FontImageSource` property provide a custom font image source to the Image source of tab items headers in the Tab View control.
 
 {% tabs %}
 
 {% highlight xaml %}
+
   <ContentPage.Resources>
         <ResourceDictionary>
             <OnPlatform x:TypeArguments="x:String" x:Key="AwsomeIcon">
@@ -168,7 +169,6 @@ The `FontImageSource` property provide a custom font image source to the Image s
 using Syncfusion.XForms.TabView;
 using System;
 using Xamarin.Forms;
-
 namespace SfTabViewSample
 {
     public partial class MainPage : ContentPage

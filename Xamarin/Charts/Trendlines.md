@@ -11,7 +11,7 @@ documentation: ug
 
 The [`Trendline`]() is a line drawn over the chart to display the overall direction of the results. And it built on the assumption based on current and past beliefs. 
 
-N> We can draw trendlines for all type of cartesian series except bar type.
+N> We can draw trendlines for all type of Cartesian series except bar type.
 
 The following code examples shows how to add Trendlines in chart.
 
@@ -213,7 +213,7 @@ Chart.Series.Add(lineSeries);
 
 ### Polynomial
 
-The [`polynomial`]() trendline is a curved line that is used when there are more data fluctuations. By default, this trendline calculated with order of 2, it will be override by the property [`PolyomialOrder`]().
+The [`polynomial`]() trendline is a curved line that is used when there are more data fluctuations. By default, this trendline calculated with order of 2, it will be override by the property [`PolynomialOrder`]().
 
 The following is the code example of this trend line.
 

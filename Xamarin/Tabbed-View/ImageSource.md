@@ -7,7 +7,7 @@ control: TabView
 documentation: ug
 ---
 
-## Image Source in SfTabItem
+## Image source in SfTabItem
 
 The `ImageSource` property customizes the icon image of SfTabView by adding a custom image.
 
@@ -109,7 +109,7 @@ namespace TabViewAutomationSample
 
 ## FontImageSource in SfTabItem
 
-The `FontImageSource` property provide a custom font image source to the Image source of tab items headers in the Tab View control.
+The `FontImageSource` property provide a custom font image source to the image source of tab items headers in the Tab View control.
 
 {% tabs %}
 

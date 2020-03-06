@@ -196,7 +196,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## See Also
 
-[How to detect listview scrolling direction in xamarin.Forms](https://www.syncfusion.com/kb/11019)                                                                                
+[How to detect listview scrolling direction in Xamarin.Forms](https://www.syncfusion.com/kb/11019)                                                                                
 [How to maintain the same scroll position of ListView while updating ItemsSource at runtime](https://www.syncfusion.com/kb/8029)                                                                                
 [How to add a jump list with Xamarin.Forms ListView](https://www.syncfusion.com/kb/11021)                                                                                                   
 [How to load more items when scroll reached the end of list](https://www.syncfusion.com/kb/7792)                                                                                      

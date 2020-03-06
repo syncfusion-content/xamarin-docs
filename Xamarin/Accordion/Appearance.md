@@ -7,13 +7,13 @@ control: SfAccordion
 documentation: ug
 ---
 
-# Appearance
+# Appearance in Xamarin Accordion (SfAccordion)
 
-The Accordion allows customizing appearance of the Icon, and provides different functionalities to the end-user.
+The Accordion allows customizing appearance of the Icon, and provides different functionalities to the users.
 
 ## Header icon position 
 
-[SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows to customize the position of the header icon in accordion item by using [HeaderIconPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~HeaderIconPosition.html) property. By default, the header Icon position is `End`.  
+[SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the position of the header icon in accordion item by using the [HeaderIconPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~HeaderIconPosition.html) property. By default, the header Icon position is `End`.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -26,7 +26,7 @@ accordion.HeaderIconPosition = Syncfusion.XForms.Expander.IconPosition.Start;
 
 ## Header background color customization
 
-[SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows to customize the background color of the expander header by using [HeaderBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.AccordionItem~HeaderBackgroundColor.html) property.
+[SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the background color of the expander header by using the [HeaderBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.AccordionItem~HeaderBackgroundColor.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -62,7 +62,7 @@ public AccordionItem GenerateAccordionItem()
 
 ## Icon color customization
 
-[SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows to customize the color of the expander icon by using [IconColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.AccordionItem~IconColor.html) property. By default, `IconColor` is black.
+[SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the color of the expander icon by using the [IconColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.AccordionItem~IconColor.html) property. By default, `IconColor` is black.
 
 {% tabs %}
 {% highlight xaml %}
@@ -109,7 +109,9 @@ The appearance of the [SfAccordion](https://help.syncfusion.com/cr/cref_files/xa
     <syncfusion:SfAccordion.Items>
         <syncfusion:AccordionItem IconColor="Accent">
             <syncfusion:AccordionItem.Header>
-                <Label TextColor="#495F6E" Text="Cheese burger" HeightRequest="50" VerticalTextAlignment="Center"/>
+                <Grid>
+                    <Label TextColor="#495F6E" Text="Cheese burger" HeightRequest="50" VerticalTextAlignment="Center"/>
+                </Grid>
             </syncfusion:AccordionItem.Header>
             <syncfusion:AccordionItem.Content>
                 <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF">
@@ -184,4 +186,4 @@ public AccordionItem GenerateAccordionItem()
 
 ![Xamarin Forms Accordion with VSM](accordion_images/Accordion_VSM.png)
 
-You can download the entire source of this demo from [here](https://github.com/SyncfusionExamples/Xamarin-Accordion-VisualStateManager).
+You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/Xamarin-Accordion-VisualStateManager).

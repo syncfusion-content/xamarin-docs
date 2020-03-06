@@ -7,7 +7,7 @@ control: SfListView
 documentation: ug
 ---
 
-# Swiping
+# Swiping in Xamarin ListView (SfListView)
 
 ## Overview
 

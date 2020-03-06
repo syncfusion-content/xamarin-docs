@@ -982,6 +982,34 @@ chart.ChartAnnotations.Add(annotation);
 
 ![View annotation type in Xamarin.Forms Chart](chartannotation_images/img16.png)
 
+## Annotation Visibility
+
+The [`IsVisible`]() property of [`ChartAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~ChartAnnotations.html) is used to toggle the visibility of annotation.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.ChartAnnotations>
+    <chart:VerticalLineAnnotation IsVisible="False" X1="2" LineCap="Arrow" ShowAxisLabel="true" Text="Vertical Line" x:Name="verticalLineAnnotation" />
+</chart:SfChart.ChartAnnotations>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+VerticalLineAnnotation verticalLineAnnotation = new VerticalLineAnnotation()
+{
+    IsVisible = false
+};
+
+chart.ChartAnnotations.Add(verticalLineAnnotation);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Event
 
 **AnnotationClicked**

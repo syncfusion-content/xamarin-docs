@@ -6,11 +6,11 @@ platform: Xamarin
 control: Expander
 documentation: ug
 ---
-# AutomationId
+# Accessibility in Xamarin Expander (SfExpander)
 
-The Expander control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the Expander control. To keep unique AutomationId, these inner element's AutomationIds are updated based on Expander control `AutomationId`. 
+The Expander control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the Expander control. To keep unique AutomationId, these inner element's AutomationIds are updated based on the Expander control `AutomationId`. 
 
-For example, if we set Expander's AutomationId as "Automation" then Automation framework will interact with expander icon of Expander Header  as `Automation Expander`. 
+For example, if we set Expander's AutomationId as "Automation", then Automation framework will interact with expander icon of Expander Header  as `Automation Expander`. 
 
 <table>
 <tr>

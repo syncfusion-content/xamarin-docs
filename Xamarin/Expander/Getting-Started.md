@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started | SfExpander | Xamarin | Syncfusion
-description: Getting started with Xamarin Forms Expander.
+description: This section described about getting started with Xamarin Forms Expander (SfExpander) control and more details.
 platform: xamarin
 control: SfExpander
 documentation: ug
 ---
 
-# Getting started
+# Getting Started with Xamarin Expander (SfExpander)
 
 The Expander control provides a way to expand and collapse when tapping a header. This section provides a quick overview for working with the `SfExpander` for Xamarin.Forms. This section covers the minimal features that you need to know to get started with the Expander. 
 
@@ -81,9 +81,9 @@ Syncfusion.Licensing.dll<br/>
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To learn more about obtaining Syncfusion components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to learn about registering Syncfusion license key in your Xamarin application to use Syncfusion components.
 
 ## Launching the expander on each platform
 
@@ -97,7 +97,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 
-To launch the expander in iOS, call the `SfExpanderRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called, as demonstrated in the following code example: 
+To launch the expander in iOS, call the `SfExpanderRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called as demonstrated in the following code example. 
 
 {% tabs %}
 {% highlight c# %}
@@ -120,7 +120,7 @@ The UWP launches the expander without any initialization and is enough to only i
 
 The known Framework issue in UWP platform is that the custom controls will not render when deployed the application in `Release Mode`. 
 
-The above problem can be resolved by initializing the expander assemblies in `App.xaml.cs` file in UWP project as in the following code snippet: 
+The previous problem can be resolved by initializing the expander assemblies in `App.xaml.cs` file in UWP project as in the following code snippet. 
 
 {% tabs %}
 {% highlight c# %}
@@ -146,7 +146,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Creating the Expander 
+## Creating the expander 
 This section explains how to create a simple Xamarin.Forms application with [SfExpander](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander.html). The control should be configured entirely in C# code or by using XAML markup. 
 
 * Creating the project.
@@ -157,13 +157,13 @@ This section explains how to create a simple Xamarin.Forms application with [SfE
 
 Create a new blank (.Net Standard) application in Xamarin Studio or Visual Studio for Xamarin.Forms. 
 
-### Adding expander in Xamarin.Forms: 
+### Adding expander to Xamarin.Forms 
 
-To add the expander to your application, follow the steps: 
+To add the expander to your application, follow these steps: 
 
 1. Add required assemblies as discussed in assembly deployment section. 
-2.  Import the control namespace as `xmlns:syncfusion ="clr-namespace:Syncfusion.XForms. Expander;assembly=Syncfusion.Expander.XForms` in XAML Page. 
-3. Create an instance of expander control and add as content for content page.  
+2. Import the control namespace as `xmlns:syncfusion ="clr-namespace:Syncfusion.XForms. Expander;assembly=Syncfusion.Expander.XForms` in XAML Page. 
+3. Create an instance of expander control and add as content.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -202,9 +202,11 @@ namespace GettingStarted
 
 ### Defining expander 
 
-`SfExpander` is a layout control comprise of Header and Content. You can load any View in [Header](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Header.html) and [Content](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Content.html). Content visibility of expander can be set by using `IsExpanded` property of Expander. User can expand or collapse the Content view by tapping Header.
+`SfExpander` is a layout control comprise of Header and Content. You can load any View in [Header](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Header.html) and [Content](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Content.html). Content visibility of expander can be set by using the `IsExpanded` property of Expander. Users can expand or collapse the Content view by tapping Header.
 
-Here, Labels are loaded in Header and Content of expander. 
+Here, Grid with Labels are loaded in Header and Content of expander. 
+
+N> When loading Label as direct children of Header or Content of Expander, then it will lead to exception in Forms 4.0 and above version. So, load Label inside Grid to overcome the crash.
 
 {% tabs %}
 {% highlight xaml %}
@@ -220,7 +222,9 @@ Here, Labels are loaded in Header and Content of expander.
                     <StackLayout> 
                         <syncfusion:SfExpander> 
                             <syncfusion:SfExpander.Header> 
-                                <Label TextColor="#495F6E" Text="Veg Pizza" VerticalTextAlignment="Center" /> 
+                                <Grid>
+                                    <Label TextColor="#495F6E" Text="Veg Pizza" VerticalTextAlignment="Center" /> 
+                                </Grid>
                             </syncfusion:SfExpander.Header> 
                             <syncfusion:SfExpander.Content> 
                                 <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF"> 
@@ -230,7 +234,9 @@ Here, Labels are loaded in Header and Content of expander.
                         </syncfusion:SfExpander> 
                         <syncfusion:SfExpander> 
                             <syncfusion:SfExpander.Header> 
-                                <Label TextColor="#495F6E" Text="Non-veg Pizza" VerticalTextAlignment="Center" /> 
+                                <Grid>
+                                    <Label TextColor="#495F6E" Text="Non-veg Pizza" VerticalTextAlignment="Center" /> 
+                                </Grid>
                             </syncfusion:SfExpander.Header> 
                             <syncfusion:SfExpander.Content> 
                                 <Grid Padding="10,10,10,10" BackgroundColor="#FFFFFF"> 
@@ -250,11 +256,11 @@ Now, run the application to render the following output.
 
 ![Xamarin Forms Expander](expander_images/xamarin-forms-expander.png)
 
-You can download expander sample for Xamarin.Forms from here [ExpanderGettingStarted](https://github.com/SyncfusionExamples/xamarin_expander_getting_started).
+You can download expander sample for Xamarin.Forms here [ExpanderGettingStarted](https://github.com/SyncfusionExamples/xamarin_expander_getting_started).
 
 ## Animation duration
 
-`SfExpander` allows to customize the expanding and collapsing duration by using [AnimationDuration](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~AnimationDuration.html) property. By default, the animation duration is 150 milliseconds. 
+`SfExpander` allows you to customize the expanding and collapsing duration by using the [AnimationDuration](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~AnimationDuration.html) property. By default, the animation duration is 150 milliseconds. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -267,7 +273,7 @@ You can download expander sample for Xamarin.Forms from here [ExpanderGettingSta
 
 ## Animation easing
 
-`SfExpander` allows to customize the rate of change of parameter over time or animation style by using [AnimationEasing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~AnimationEasing.html) property. By default, the animation easing is `Linear`. 
+`SfExpander` allows you to customize the rate of change of parameter over time or animation style by using the [AnimationEasing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~AnimationEasing.html) property. By default, the animation easing is `Linear`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -280,7 +286,7 @@ You can download expander sample for Xamarin.Forms from here [ExpanderGettingSta
 
 ## Expand and Collapse 
 
-`SfExpander` allows to programmatically expand and collapse by using [IsExpanded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~IsExpanded.html) property of SfExpander.  Also, expand & collapse interaction by user can be control by handling `Expanding` and `Collapsing` events.  
+`SfExpander` allows you to programmatically expand and collapse by using the [IsExpanded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~IsExpanded.html) property of SfExpander.  Also, expand & collapse interaction by user can be control by handling `Expanding` and `Collapsing` events.  
 
 {% tabs %}
 {% highlight xaml %}

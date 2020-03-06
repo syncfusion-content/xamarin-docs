@@ -137,7 +137,7 @@ Chart.Series.Add(lineSeries);
 
 The [`Exponential`]() trendline is the curved line most useful for data values rise or fall at increasingly higher rates.
 
-Note: SfChart will not generate Exponential trendline when your data contains zero or negative values. 
+N> SfChart will not generate Exponential trendline when your data contains zero or negative values. 
 
 {% tabs %} 
 

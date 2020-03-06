@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion.Xamarin.Forms Chart trendline
-description: How to configure the chart trendlines and customize the appearance of the trendlines stroke color, width and Legend icon visibility in Essential Xamarin.Forms Chart.
+description: How to configure the chart trendlines and customize the appearance of the trendlines in Essential Xamarin.Forms Chart.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -331,7 +331,7 @@ Chart.Series.Add(lineSeries);
 
 {% endtabs %}
 
-# Customization
+## Customization
 
 We can customize the trendline appearance using [`StrokeWidth`](), [`StrokeColor`]() and [`StrokeDashArray`]() properties. 
 
@@ -372,7 +372,7 @@ lineSeries.Trendlines.Add(new ChartTrendline());
 
 {% endtabs %}
 
-# Legend Item Visibility
+## Legend Item Visibility
 
 We can able to control the visibility of the trendline legend items using [`IsVisibleOnLegend`]() property of the Trendline.
 

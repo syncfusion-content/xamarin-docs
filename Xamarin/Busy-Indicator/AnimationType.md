@@ -68,7 +68,7 @@ namespace GettingStarted
 
 ![ball](images/ball1.png)
 
-THe Busy Indicator with Ball type animation 
+The Busy Indicator with Ball type animation 
 {:.caption}
 
 ![HorizontalPulsingBox](images/HorizontalPulsingBox.png) 

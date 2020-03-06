@@ -63,7 +63,7 @@ namespace TimePickerSample
 
 {% endtabs %}
 
-### Set Header Text
+### Set header text
 
 SfTimePicker allows providing custom text to its header by setting the `SfTimePicker.HeaderText` property. The default value of the `SfTimePicker.HeaderText` property is "Time Picker".
 
@@ -111,7 +111,7 @@ namespace TimePickerSample
 
 {% endtabs %}
 
-### Customization of Header & Footer
+### Customization of header and footer
 
 This feature allows users to have a custom view in the header and footer part of the control in Date Picker.
 
@@ -218,7 +218,7 @@ namespace TimePickerSample
 
 {% endtabs %}
 
-### Text-Color 
+### Text color 
 
 Text color of the header can be customized by setting the `SfTimePicker.HeaderTextColor` property.
 
@@ -267,7 +267,7 @@ namespace TimePickerSample
 
 ### Font 
 
-This section explains about the Font customization of header text.
+This section explains the Font customization of header text.
 
 #### FontFamily
 
@@ -565,7 +565,7 @@ namespace TimePickerSample
 
 {% endtabs %}
 
-### Text-Color 
+### Text color 
 
 Text color of the column header can be customized by setting the `SfTimePicker.ColumnHeaderTextColor` property.
 
@@ -615,7 +615,7 @@ namespace TimePickerSample
 
 ### Font 
 
-This section explains about the Font customization of the column header text.
+This section explains the Font customization of the column header text.
 
 #### FontFamily
 
@@ -763,7 +763,7 @@ namespace TimePickerSample
 
 ## Footer customization
 
-SfTimePicker allows customizing background, text color of the OK and Cancel buttons of the footer.
+SfTimePicker allows customizing background and text color of the OK and Cancel buttons of the footer.
 
 ### Enable or disable footer 
 

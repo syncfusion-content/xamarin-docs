@@ -6,7 +6,7 @@ platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# Animation Type
+# Animation Type in SfBusyIndicator
 
 ## Animation Type in Xamarin BusyIndicator (SfBusyIndicator)
 

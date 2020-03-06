@@ -7,7 +7,7 @@ control: Picker
 documentation: ug
 ---
 
-# Customization
+# Customization of SfDatePicker
 
 You can customize the header, column header, footer, selected item, and unselected item of the SfDatePicker.
 

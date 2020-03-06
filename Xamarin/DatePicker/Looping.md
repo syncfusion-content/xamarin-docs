@@ -7,7 +7,7 @@ control: SfDatePicker
 documentation: ug
 ---
 
-# Looping
+# Looping support in SfDatePicker
 
 The Looping support is used to automatically navigate the first item to repeat the list of items after reached the last item. Each forward iteration is followed by a backward iteration in the picker control. This can be achieved by `EnableLooping` property.
 

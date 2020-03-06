@@ -120,28 +120,31 @@ This feature allows users to have a custom view in the header and footer part of
 {% highlight xaml %}
 
 <ContentPage.Content>
-        <datePicker:SfDatePicker
+        <StackLayout>
+            <datePicker:SfDatePicker
                 ShowFooter="True"
                 ShowHeader="True"
                 WidthRequest="350"
                 HeightRequest="350">
-            <datePicker:SfDatePicker.HeaderView>
-                <StackLayout>
-                    <Label Text="Select Date" FontSize="Medium" FontAttributes="Italic"/>
-                </StackLayout>
-            </datePicker:SfDatePicker.HeaderView>
-            <datePicker:SfDatePicker.FooterView>
-                <StackLayout>
-                    <Button Text="Accept" FontSize="Medium" FontAttributes="Bold"/>
-                </StackLayout>
-            </datePicker:SfDatePicker.FooterView>
-        </datePicker:SfDatePicker>
-    </ContentPage.Content>
+                <datePicker:SfDatePicker.HeaderView>
+                    <StackLayout>
+                        <Label Text="Select Date" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Italic"/>
+                    </StackLayout>
+                </datePicker:SfDatePicker.HeaderView>
+                <datePicker:SfDatePicker.FooterView>
+                    <StackLayout>
+                        <Button Text="Accept" FontSize="Medium" FontAttributes="Bold"/>
+                    </StackLayout>
+                </datePicker:SfDatePicker.FooterView>
+            </datePicker:SfDatePicker>
+        </StackLayout>
+</ContentPage.Content>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+using Syncfusion.XForms.Pickers;
 namespace Sample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -151,12 +154,14 @@ namespace Sample
         public DatePicker()
         {
             InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
             datePicker = new SfDatePicker();
             datePicker.ShowHeader = true;
             datePicker.ShowFooter = true;
-            datePicker.HeaderView = new Label() { Text = "Select Date" };
+            datePicker.HeaderView = new Label() { Text = "Select Date", HorizontalTextAlignment = TextAlignment.Center  };
             datePicker.FooterView = new Button() { Text = "Accept" };
-            this.Content = datePicker;
+            stackLayout.Children.Add(datePicker);
+            this.Content = stackLayout;
         }
     }
 }

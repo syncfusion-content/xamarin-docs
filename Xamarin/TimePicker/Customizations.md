@@ -63,7 +63,7 @@ namespace TimePickerSample
 
 {% endtabs %}
 
-### Set header Text
+### Set Header Text
 
 SfTimePicker allows providing custom text to its header by setting the `SfTimePicker.HeaderText` property. The default value of the `SfTimePicker.HeaderText` property is "Time Picker".
 
@@ -119,29 +119,32 @@ This feature allows users to have a custom view in the header and footer part of
 
 {% highlight xaml %}
 
-<ContentPage.Content>
-        <timePicker:SfTimePicker
+ <ContentPage.Content>
+        <StackLayout>
+            <timePicker:SfTimePicker
                 ShowFooter="True"
                 ShowHeader="True"
                 WidthRequest="350"
                 HeightRequest="350">
-            <timePicker:SfTimePicker.HeaderView>
-                <StackLayout>
-                    <Label Text="Select Date" FontSize="Medium" FontAttributes="Italic"/>
-                </StackLayout>
-            </timePicker:SfTimePicker.HeaderView>
-            <timePicker:SfTimePicker.FooterView>
-                <StackLayout>
-                    <Button Text="Accept" FontSize="Medium" FontAttributes="Bold"/>
-                </StackLayout>
-            </timePicker:SfTimePicker.FooterView>
-        </timePicker:SfTimePicker>
-    </ContentPage.Content>
+                <timePicker:SfTimePicker.HeaderView>
+                    <StackLayout>
+                        <Label Text="Select Date" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Italic"/>
+                    </StackLayout>
+                </timePicker:SfTimePicker.HeaderView>
+                <timePicker:SfTimePicker.FooterView>
+                    <StackLayout>
+                        <Button Text="Accept" FontSize="Medium" FontAttributes="Bold"/>
+                    </StackLayout>
+                </timePicker:SfTimePicker.FooterView>
+            </timePicker:SfTimePicker>
+        </StackLayout>
+</ContentPage.Content>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+using Syncfusion.XForms.Pickers;
 namespace Sample
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -151,12 +154,14 @@ namespace Sample
         public SfTimePicker()
         {
             InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
             timePicker = new SfTimePicker();
             timePicker.ShowHeader = true;
             timePicker.ShowFooter = true;
-            timePicker.HeaderView = new Label() { Text = "Select Date" };
+            timePicker.HeaderView = new Label() { Text = "Select Date" , HorizontalTextAlignment = TextAlignment.Center };
             timePicker.FooterView = new Button() { Text = "Accept" };
-            this.Content = timePicker;
+            stackLayout.Children.Add(timePicker);
+            this.Content = stackLayout;
         }
     }
 }

@@ -141,6 +141,12 @@ Busy Indicator with ZoomingTarget type animation
 Busy Indicator with RollingBall type animation 
 {:.caption}
 
+![Cupertino](images/Cupertino.png) 
+
+Busy Indicator with Cupertino type animation 
+{:.caption}
+
+
 
 
 

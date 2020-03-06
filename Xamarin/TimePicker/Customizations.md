@@ -63,7 +63,7 @@ namespace TimePickerSample
 
 {% endtabs %}
 
-### Set custom header 
+### Set header Text
 
 SfTimePicker allows providing custom text to its header by setting the `SfTimePicker.HeaderText` property. The default value of the `SfTimePicker.HeaderText` property is "Time Picker".
 
@@ -102,6 +102,60 @@ namespace TimePickerSample
                 HeaderText = "Select a time"
             };
 
+            this.Content = timePicker;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Customization of Header & Footer
+
+This feature allows users to have a custom view in the header and footer part of the control in Date Picker.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage.Content>
+        <timePicker:SfTimePicker
+                ShowFooter="True"
+                ShowHeader="True"
+                WidthRequest="350"
+                HeightRequest="350">
+            <timePicker:SfTimePicker.HeaderView>
+                <StackLayout>
+                    <Label Text="Select Date" FontSize="Medium" FontAttributes="Italic"/>
+                </StackLayout>
+            </timePicker:SfTimePicker.HeaderView>
+            <timePicker:SfTimePicker.FooterView>
+                <StackLayout>
+                    <Button Text="Accept" FontSize="Medium" FontAttributes="Bold"/>
+                </StackLayout>
+            </timePicker:SfTimePicker.FooterView>
+        </timePicker:SfTimePicker>
+    </ContentPage.Content>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+namespace Sample
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class SfTimePicker : ContentPage
+    {
+        SfTimePicker timePicker;
+        public SfTimePicker()
+        {
+            InitializeComponent();
+            timePicker = new SfTimePicker();
+            timePicker.ShowHeader = true;
+            timePicker.ShowFooter = true;
+            timePicker.HeaderView = new Label() { Text = "Select Date" };
+            timePicker.FooterView = new Button() { Text = "Accept" };
             this.Content = timePicker;
         }
     }

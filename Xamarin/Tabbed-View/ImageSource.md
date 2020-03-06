@@ -106,3 +106,128 @@ namespace TabViewAutomationSample
 {% endtabs %}
 
 ![ImageSource](images/ImageSource/ImageSource.png)
+
+# FontImageSource
+
+The `FontImageSource` property provide a custom font image source to the Image source of tab items headers in the Tab View control.
+
+{% tabs %}
+
+{% highlight xaml %}
+  <ContentPage.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="AwsomeIcon">
+                <On Platform="Android" Value="Sync FontIcons.ttf#" />
+                <On Platform="UWP" Value="Sync FontIcons.ttf#Sync FontIcons" />
+                <On Platform="iOS" Value="Sync FontIcons" />
+            </OnPlatform>
+            <FontImageSource x:Key="Icon_1"
+                             FontFamily="{StaticResource AwsomeIcon}" 
+                             Glyph="&#xe747;"
+                             Color="Red" />
+            <FontImageSource x:Key="Icon_2" 
+                             FontFamily="{StaticResource AwsomeIcon}" 
+                             Glyph="&#xe708;"
+                             Color="DarkViolet" />
+            <FontImageSource x:Key="Icon_3" 
+                             FontFamily="{StaticResource AwsomeIcon}" 
+                             Glyph="&#xe702;"
+                             Color="Blue" />
+      </ResourceDictionary>
+</ContentPage.Resources>
+    <StackLayout>
+        <tabView:SfTabView  
+                         x:Name="tabView"  
+                         DisplayMode="ImageWithText" 
+                         BackgroundColor="White" 
+                         VisibleHeaderCount="3"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand">
+            <tabView:SfTabItem Title="Mail" ImageSource="{StaticResource Icon_1}">
+                <tabView:SfTabItem.Content>
+                     <Grid BackgroundColor="Red" x:Name="AllContactsGrid" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Camera" ImageSource="{StaticResource Icon_2}">
+                <tabView:SfTabItem.Content>
+                     <Grid BackgroundColor="Green" x:Name="AllContactsGrid1" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Downloads" ImageSource="{StaticResource Icon_3}">
+                <tabView:SfTabItem.Content>
+                      <Grid BackgroundColor="Yellow" x:Name="AllContactsGrid2" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            </tabView:SfTabView>
+    </StackLayout>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+using Syncfusion.XForms.TabView;
+using System;
+using Xamarin.Forms;
+
+namespace SfTabViewSample
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            SfTabView tabView;
+            InitializeComponent();
+            tabView = new SfTabView();
+            tabView.VisibleHeaderCount = 3;
+            tabView.DisplayMode = TabDisplayMode.ImageWithText;
+            FontImageSource fontImageSource = new FontImageSource();
+            fontImageSource.FontFamily = Device.RuntimePlatform == Device.Android ? "Sync FontIcons.ttf#Sync FontIcons" : Device.RuntimePlatform == Device.iOS ? "Sync FontIcons" : "Sync FontIcons.ttf#Sync FontIcons";
+            fontImageSource.Color = Color.Red;
+            fontImageSource.Glyph = "\ue747";
+
+            FontImageSource fontImageSource1 = new FontImageSource();
+            fontImageSource1.FontFamily = Device.RuntimePlatform == Device.Android ? "Sync FontIcons.ttf#Sync FontIcons" : Device.RuntimePlatform == Device.iOS ? "Sync FontIcons" : "Sync FontIcons.ttf#Sync FontIcons";
+            fontImageSource1.Color = Color.Red;
+            fontImageSource1.Glyph = "\ue708";
+
+            FontImageSource fontImageSource2 = new FontImageSource();
+            fontImageSource2.FontFamily = Device.RuntimePlatform == Device.Android ? "Sync FontIcons.ttf#Sync FontIcons" : Device.RuntimePlatform == Device.iOS ? "Sync FontIcons" : "Sync FontIcons.ttf#Sync FontIcons";
+            fontImageSource2.Color = Color.Red;
+            fontImageSource2.Glyph = "\ue702";
+
+            var allContactsGrid = new Grid { BackgroundColor = Color.Red };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
+            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var emailGrid = new Grid { BackgroundColor = Color.Blue };
+            var tabItems = new TabItemCollection
+            {
+                new SfTabItem()
+                {
+                    Title = "Mail",
+                    Content = allContactsGrid,
+                    ImageSource = fontImageSource,
+                },
+                new SfTabItem()
+                {
+                    Title = "Camera",
+                    Content = favoritesGrid,
+                    ImageSource = fontImageSource1
+                },
+                new SfTabItem()
+                {
+                    Title = "Downloads",
+                    Content = contactsGrid,
+                    ImageSource = fontImageSource2,
+                },
+            };
+
+            tabView.Items = tabItems;
+            this.Content = tabView;
+        }
+    }
+}
+{% endhighlight %}
+
+{% endtabs %}
+
+![FontImageSource](images/ImageSource/FontImageSource.png)

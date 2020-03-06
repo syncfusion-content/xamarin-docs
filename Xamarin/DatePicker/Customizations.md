@@ -63,7 +63,7 @@ namespace DatePickerSample
 
 {% endtabs %}
 
-### Set custom header 
+### Set Header Text
 
 SfDatePicker allows providing custom text to its header by setting the `SfDatePicker.HeaderText` property. Default value of `SfDatePicker.HeaderText` property is "Date Picker".
 
@@ -102,6 +102,60 @@ namespace DatePickerSample
                 HeaderText = "Select a date"
             };
 
+            this.Content = datePicker;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Customization of Header & Footer
+
+This feature allows users to have a custom view in the header and footer part of the control in Date Picker.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage.Content>
+        <datePicker:SfDatePicker
+                ShowFooter="True"
+                ShowHeader="True"
+                WidthRequest="350"
+                HeightRequest="350">
+            <datePicker:SfDatePicker.HeaderView>
+                <StackLayout>
+                    <Label Text="Select Date" FontSize="Medium" FontAttributes="Italic"/>
+                </StackLayout>
+            </datePicker:SfDatePicker.HeaderView>
+            <datePicker:SfDatePicker.FooterView>
+                <StackLayout>
+                    <Button Text="Accept" FontSize="Medium" FontAttributes="Bold"/>
+                </StackLayout>
+            </datePicker:SfDatePicker.FooterView>
+        </datePicker:SfDatePicker>
+    </ContentPage.Content>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+namespace Sample
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class DatePicker : ContentPage
+    {
+        SfDatePicker datePicker;
+        public DatePicker()
+        {
+            InitializeComponent();
+            datePicker = new SfDatePicker();
+            datePicker.ShowHeader = true;
+            datePicker.ShowFooter = true;
+            datePicker.HeaderView = new Label() { Text = "Select Date" };
+            datePicker.FooterView = new Button() { Text = "Accept" };
             this.Content = datePicker;
         }
     }

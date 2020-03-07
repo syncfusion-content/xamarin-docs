@@ -7,7 +7,7 @@ control: SfListView
 documentation: ug
 ---
 
-# Swiping
+# Swiping in Xamarin ListView (SfListView)
 
 ## Overview
 
@@ -565,3 +565,9 @@ private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
 {% endtabs %}
 
 Download entire source code from GitHub [here](https://github.com/SyncfusionExamples/Edit-item-by-swipe-in-xamarin.forms-listview).
+## See Also
+
+[How to swipe an item programmatically in Xamarin.Forms ListView](https://www.syncfusion.com/kb/10021)                                        
+[How to swipe the item indefinitely and layout back on specified position when swipe end](https://www.syncfusion.com/kb/8026)                                                                           
+[How to swipe an item like Outlook or Gmail application in Xamarin.Forms listview](https://www.syncfusion.com/kb/9965)
+

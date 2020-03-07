@@ -13,7 +13,7 @@ The [`Trendline`]() is a line drawn over the chart to display the overall direct
 
 N> We can draw trendlines for all type of Cartesian series except bar type.
 
-The following code examples shows how to add Trendlines in chart.
+The following code examples shows how to add Trendline in Xamarin.Forms Chart.
 
 {% tabs %} 
 

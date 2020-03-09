@@ -231,4 +231,24 @@ namespace SfTabViewSample
 
 {% endtabs %}
 
+### How to set and customize the font icons' appearance in the header?
+
+You can refer this [link](https://help.syncfusion.com/metro-studio/export-font-icon) for getting the font icons. Add the font file to your application by using the following steps for each platform:
+
+**Adding font file for iOS**
+
+1. Add the font family inside `Resource` folder iOS project.
+2. Add the font file with the following build action: `BundleResource`.
+3. Update the `Info.plist` file (fonts that are provided by application, UIAppFonts, or key).
+
+**Adding font file for Android**
+
+Add the font file to the `Assets` folder in the application project, and set the following build action: `AndroidAsset`.
+
+**Adding font file for UWP**
+
+Add the font family inside the application project of UWP.
+
+N> For iOS alone, FontFamily property is declared without succeeding with .ttf and for android and UWP platform font family name is defined followed by .ttf.
+
 ![FontImageSource](images/ImageSource/FontImageSource.png)

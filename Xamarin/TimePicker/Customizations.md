@@ -111,65 +111,6 @@ namespace TimePickerSample
 
 {% endtabs %}
 
-### Customization of header and footer
-
-This feature allows users to have a custom view in the header and footer part of the control in Date Picker.
-
-{% tabs %}
-
-{% highlight xaml %}
-
- <ContentPage.Content>
-        <StackLayout>
-            <timePicker:SfTimePicker
-                ShowFooter="True"
-                ShowHeader="True"
-                WidthRequest="350"
-                HeightRequest="350">
-                <timePicker:SfTimePicker.HeaderView>
-                    <StackLayout>
-                        <Label Text="Select Date" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Italic"/>
-                    </StackLayout>
-                </timePicker:SfTimePicker.HeaderView>
-                <timePicker:SfTimePicker.FooterView>
-                    <StackLayout>
-                        <Button Text="Accept" FontSize="Medium" FontAttributes="Bold"/>
-                    </StackLayout>
-                </timePicker:SfTimePicker.FooterView>
-            </timePicker:SfTimePicker>
-        </StackLayout>
-</ContentPage.Content>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-using Syncfusion.XForms.Pickers;
-namespace Sample
-{
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SfTimePicker : ContentPage
-    {
-        SfTimePicker timePicker;
-        public SfTimePicker()
-        {
-            InitializeComponent();
-            StackLayout stackLayout = new StackLayout();
-            timePicker = new SfTimePicker();
-            timePicker.ShowHeader = true;
-            timePicker.ShowFooter = true;
-            timePicker.HeaderView = new Label() { Text = "Select Date" , HorizontalTextAlignment = TextAlignment.Center };
-            timePicker.FooterView = new Button() { Text = "Accept" };
-            stackLayout.Children.Add(timePicker);
-            this.Content = stackLayout;
-        }
-    }
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ### Background
 
 Background color of the header can be customized by setting the `SfTimePicker.HeaderBackgroundColor` property.
@@ -405,6 +346,57 @@ namespace TimePickerSample
             };
 
             this.Content = timePicker;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Customization of header
+
+This feature allows the users to have a custom view in the header part of the control in Date Picker.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage.Content>
+        <StackLayout>
+            <datePicker:SfDatePicker
+                ShowHeader="True"
+                WidthRequest="350"
+                HeightRequest="350">
+                <datePicker:SfDatePicker.HeaderView>
+                    <StackLayout>
+                        <Label Text="Select Date" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Italic"/>
+                    </StackLayout>
+                </datePicker:SfDatePicker.HeaderView>
+            </datePicker:SfDatePicker>
+        </StackLayout>
+</ContentPage.Content>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.Pickers;
+namespace Sample
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class DatePicker : ContentPage
+    {
+        SfDatePicker datePicker;
+        public DatePicker()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            datePicker = new SfDatePicker();
+            datePicker.ShowHeader = true;
+            datePicker.HeaderView = new Label() { Text = "Select Date", HorizontalTextAlignment = TextAlignment.Center  };
+            stackLayout.Children.Add(datePicker);
+            this.Content = stackLayout;
         }
     }
 }
@@ -1008,6 +1000,57 @@ namespace TimePickerSample
         public ICommand OkCommand => new Command(OkButton);
 
         public ICommand CancelCommand => new Command(CancelButton);
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Customization of footer
+
+This feature allows the users to have a custom view in the footer part of the control in Date Picker.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage.Content>
+        <StackLayout>
+            <datePicker:SfDatePicker
+                ShowFooter="True"
+                WidthRequest="350"
+                HeightRequest="350">                
+            <datePicker:SfDatePicker.FooterView>
+                    <StackLayout>
+                        <Button Text="Accept" FontSize="Medium" FontAttributes="Bold"/>
+                    </StackLayout>
+                </datePicker:SfDatePicker.FooterView>
+            </datePicker:SfDatePicker>
+        </StackLayout>
+</ContentPage.Content>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.Pickers;
+namespace Sample
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class DatePicker : ContentPage
+    {
+        SfDatePicker datePicker;
+        public DatePicker()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            datePicker = new SfDatePicker();
+            datePicker.ShowFooter = true;
+            datePicker.FooterView = new Button() { Text = "Accept" };
+            stackLayout.Children.Add(datePicker);
+            this.Content = stackLayout;
+        }
     }
 }
 

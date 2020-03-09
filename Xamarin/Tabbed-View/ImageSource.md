@@ -146,7 +146,9 @@ The `FontImageSource` property provide a custom font image source to the image s
                          VerticalOptions="FillAndExpand">
             <tabView:SfTabItem Title="Mail" ImageSource="{StaticResource Icon_1}">
                 <tabView:SfTabItem.Content>
-                     <Grid BackgroundColor="Red" x:Name="AllContactsGrid" />
+                      <StackLayout x:Name="AllContactsGrid" >
+                        <Image Source="mail.png" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+                    </StackLayout>
                 </tabView:SfTabItem.Content>
             </tabView:SfTabItem>
             <tabView:SfTabItem Title="Camera" ImageSource="{StaticResource Icon_2}">
@@ -195,7 +197,9 @@ namespace SfTabViewSample
             fontImageSource2.Color = Color.Red;
             fontImageSource2.Glyph = "\ue702";
 
-            var allContactsGrid = new Grid { BackgroundColor = Color.Red };
+            var allContactsGrid = new StackLayout();
+            var image = new Image { Source = "mail.png", HorizontalOptions = LayoutOptions.Center, VerticalOptions = LayoutOptions.CenterAndExpand };
+            allContactsGrid.Children.Add(image);
             var favoritesGrid = new Grid { BackgroundColor = Color.Green };
             var contactsGrid = new Grid { BackgroundColor = Color.Blue };
             var emailGrid = new Grid { BackgroundColor = Color.Blue };

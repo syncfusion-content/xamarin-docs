@@ -730,6 +730,8 @@ this.Content = map;
 
 N> The default marker icon position for VerticalAlignment and HorizontalAlignment is Center.
 
+N> This feature will applicable for custom marker also.
+
 ## Events
 
 The `MarkerSelected` event is fired when a marker is selected. The `CustomView` and `MapMarker` will be passed to `MarkerSelectedEventArgs`.
@@ -751,7 +753,9 @@ If you set any view for the `CustomView` property of MarkerSelectedEventArgs, th
         </ResourceDictionary>
     </ContentPage.Resources>
 
-     <maps:ImageryLayer MarkerSelected="Layer_MarkerSelected" >
+    <maps:SfMaps x:Name="Map" >
+        <maps:SfMaps.Layers >
+            <maps:ImageryLayer MarkerSelected="Layer_MarkerSelected" >
                 <maps:ImageryLayer.MarkerSettings>
                     <maps:MapMarkerSetting IconColor="Red" 
                                  IconSize="13" MarkerIcon="Diamond"/>
@@ -770,6 +774,7 @@ If you set any view for the `CustomView` property of MarkerSelectedEventArgs, th
                 </maps:ImageryLayer.Markers>
             </maps:ImageryLayer>
         </maps:SfMaps.Layers>
+     </maps:SfMaps>
 
 {% endhighlight %}
 
@@ -787,3 +792,59 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 
 ![Marker Selected Image](Images/MarkerSelected.png)
 
+## Reset the previously selected marker
+
+This feature allows users to reset the previously selected marker using the MarkerSelected event.
+
+If you set any view for the `CustomView` property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker. Custom view will add continuously for all the clicked marker, but don’t have option to reset the previous one. Now will create an argument ResetPreviousSelectedView in MarkerSelected event argument. If the Boolean set as true, then it should be removing the previous selected marker CustomView and load the initial rendered marker.
+
+{% tabs %}
+
+{% highlight xml %}
+       <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="selectedMarker">
+                <StackLayout >
+                    <Image Source="pin.png" Scale="1" Aspect="AspectFit "  
+                           HorizontalOptions="StartAndExpand" VerticalOptions="Center"   
+                           HeightRequest="15" WidthRequest="23"   />
+                </StackLayout>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <maps:SfMaps x:Name="Map" >
+        <maps:SfMaps.Layers >
+            <maps:ImageryLayer MarkerSelected="Layer_MarkerSelected" ResetOldSelectedView="True">
+                <maps:ImageryLayer.MarkerSettings>
+                    <maps:MapMarkerSetting IconColor="Red" IconSize="13" MarkerIcon="Diamond"/>
+                </maps:ImageryLayer.MarkerSettings>
+                <maps:ImageryLayer.Markers>
+                    <maps:MapMarker  Label="United States" 
+                                   Latitude="40" Longitude= "-101"/>
+                    <maps:MapMarker Label="Brazil"
+                                    Latitude="-15.7833" Longitude= "-52" />
+                    <maps:MapMarker Label="Congo" 
+                                    Latitude="-1.6" Longitude= "24.4" />
+                    <maps:MapMarker Label="Kazakhstan"
+                                    Latitude="49.9" Longitude= "72.23" />
+                    <maps:MapMarker Label="Australia" 
+                                    Latitude="-20.54" Longitude= "134.10" />
+                </maps:ImageryLayer.Markers>
+            </maps:ImageryLayer>
+        </maps:SfMaps.Layers>
+    </maps:SfMaps>
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
+        {
+            e.CustomView = this.Resources["selectedMarker"] as DataTemplate;
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Reset the previously selected marker](Images/ResetMarker.gif)

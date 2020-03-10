@@ -480,3 +480,136 @@ private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChang
 {% endhighlight %}
 
 {% endtabs %}
+
+## Calculate zoom level
+
+This feature allows users to set the initial zoom level automatically in two ways.
+
+* Distance Radius(KM/miles)
+* Geo-bounds(Northeast, Southwest)
+
+### Distance Radius 
+
+Calculate the initial zoom level automatically based on the `Radius` and `DistanceType` properties of ImageryLayer.
+
+{% tabs %}
+
+{% highlight xml %}
+
+    <maps:SfMaps>
+        <maps:SfMaps.Layers>
+            <maps:ImageryLayer x:Name="layer"  GeoCoordinates="30.9709225, -100.2187212" Radius="50" DistanceType="KiloMeter">
+            </maps:ImageryLayer>
+        </maps:SfMaps.Layers>
+    </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMaps maps = new SfMaps();
+            ImageryLayer layer = new ImageryLayer();
+            layer.GeoCoordinates = new Point(30.9709225, -100.2187212);
+            layer.Radius = 50;
+            layer.DistanceType = DistanceType.KiloMeter;
+            maps.Layers.Add(layer);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Geo-bounds
+
+Calculate the initial zoom level automatically based on the LatLngBounds of ImageryLayer.
+
+{% tabs %}
+
+{% highlight xml %}
+
+   <maps:SfMaps>
+        <maps:SfMaps.Layers>
+            <maps:ImageryLayer x:Name="layer">
+                <maps:ImageryLayer.LatLngBounds>
+                    <maps:LatLngBounds>
+                        <maps:LatLngBounds.Northeast>
+                            <maps:Position>
+                                <x:Arguments>
+                                    <x:Double>36.9628066</x:Double>
+                                    <x:Double>-122.0194722</x:Double>
+                                </x:Arguments>
+                            </maps:Position>
+                        </maps:LatLngBounds.Northeast>
+                        <maps:LatLngBounds.Southwest>
+                            <maps:Position>
+                                <x:Arguments>
+                                    <x:Double>36.9628066</x:Double>
+                                    <x:Double>-122.0194722</x:Double>
+                                </x:Arguments>
+                            </maps:Position>
+                        </maps:LatLngBounds.Southwest>
+                    </maps:LatLngBounds>
+                </maps:ImageryLayer.LatLngBounds>
+            </maps:ImageryLayer>
+        </maps:SfMaps.Layers>
+    </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMaps maps = new SfMaps();
+            ImageryLayer layer = new ImageryLayer();
+            LatLngBounds bounds = new LatLngBounds();
+            bounds.Northeast = new Position(36.9628066, -122.0194722);
+            bounds.Southwest = new Position(36.9628066, -122.0194722);
+            layer.LatLngBounds = bounds;
+            maps.Layers.Add(layer);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> When setting LatLngBounds and DistanceRadius at the same time, the priority is DistanceRadius and calculate zoom level based Radius value.
+
+![Xamarin SfMaps zoom level changed image](Images/ZoomLevel.png)
+
+## Calculate the map tile layer bounds
+
+Calculate imagery layer pixel bounds while zooming, panning and Geo-Coordinate value changing.
+
+{% tabs %}
+
+{% highlight xml %}
+
+      <maps:SfMaps >
+        <maps:SfMaps.Layers>
+            <maps:ImageryLayer x:Name="layer"  GeoCoordinates="30.9709225, -100.2187212" GeoCoordinateChanged="layer_GeoCoordinateChanged">
+            </maps:ImageryLayer>
+        </maps:SfMaps.Layers>
+    </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class MapBound : ContentPage
+    {
+        ImageryLayer layer = new ImageryLayer();
+        public MapBound()
+        {
+            InitializeComponent();
+            SfMaps maps = new SfMaps();
+            layer.GeoCoordinates = new Point(30.9709225, -100.2187212);
+            layer.GeoCoordinateChanged += Layer_GeoCoordinateChanged;
+            maps.Layers.Add(layer);
+            this.Content = maps;
+        }
+        private void Layer_GeoCoordinateChanged(object sender, GeoCoordinateChangedEventArgs e)
+        {
+            var pixelBounds = layer.MapBounds;
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}

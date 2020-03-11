@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Grid Events
+# Events and Commands in SfDataGrid
 
 ## GridTapped event
 

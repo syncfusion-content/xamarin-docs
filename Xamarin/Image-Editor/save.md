@@ -305,7 +305,7 @@ private void ImageEditor_ImageEdited(object sender, ImageEditedEventArgs e)
 
 ## File name support for saving image
 
-Allows the user to save the image in the specified name using ImageSaving event. 
+Using this feature we can save the image in the specified name using the ImageSaving event. 
 
 {% tabs %}
 

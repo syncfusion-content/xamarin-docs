@@ -356,3 +356,38 @@ Labels visibility can be customized using the [`ShowLabels`](https://help.syncfu
 {% endtabs %}
 
 ![Xamarin Label Visiblity Image](labels_images/label6.png)
+
+## Customize the scale labels format
+
+`LabelFormat` property allows the user to customize the scale labels format.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+         <gauge:SfLinearGauge>
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelFormat="c:{0:c2}" LabelColor="Black"  x:Name="scale" ScaleBarSize ="20" >
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+         SfLinearGauge linearGauge = new SfLinearGauge();
+         LinearScale linearScale = new LinearScale();
+         linearScale.ScaleBarSize = 20;
+         linearScale.LabelFormat = "{0:c}";
+         linearScale.ScaleBarColor = Color.LightGray;
+         linearScale.LabelColor = Color.Black;
+         linearScale.Culture = new System.Globalization.CultureInfo("fr-FR");
+         linearGauge.Scales.Add(linearScale);
+   
+    
+{% endhighlight %}
+
+{% endtabs %}
+
+![Xamarin Label format Image](labels_images/labelFormat.png)

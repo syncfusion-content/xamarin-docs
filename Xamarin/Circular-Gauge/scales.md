@@ -423,3 +423,110 @@ You can change the default label by hooking the [`LabelCreated`](https://help.sy
 {% endtabs %}
 
 ![Label Created Event Image](scales_images/labelcreated.png)
+
+## Center Aligned
+
+Adjust the radius and center of a circular gauge automatically based on the `SweepAngle` , `StartAngle` and `IsCenterAligned` property.
+
+N> Default value of the IsCenterAligned property is false. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <gauge:SfCircularGauge IsCenterAligned="True"  x:Name="circularGauge1">
+            <gauge:SfCircularGauge.Scales>
+                <gauge:Scale  x:Name="scale"
+                    LabelFontSize="20"
+                    EnableAutoAngle="True" 
+                    StartAngle="180" 
+                    SweepAngle="180" 
+                    StartValue="0" 
+                    EndValue="1000"
+                    Interval="500" 
+                    EnableAutoInterval="True"
+                    RimThickness="15"                  
+                    MinorTicksPerInterval="2">
+                    <gauge:Scale.MajorTickSettings>
+                        <gauge:TickSettings Color ="Gray" Thickness="2" Length="25" Offset="0.97"/>
+                    </gauge:Scale.MajorTickSettings>
+                    <gauge:Scale.MinorTickSettings>
+                        <gauge:TickSettings Color ="Gray" Thickness="2" Length="15" Offset = "0.97" />
+                    </gauge:Scale.MinorTickSettings>
+                    <gauge:Scale.Pointers>
+                        <gauge:MarkerPointer EnableAnimation="True" EnableDragging="True" MarkerShape="InvertedTriangle" x:Name="markerpointer1" Value="300" Color="Brown" MarkerHeight="30" MarkerWidth="30" Offset="1" />
+                        <gauge:RangePointer RangeCap="Both" EnableAnimation="True" x:Name="rangepointer1" Value="1000"  Color="Brown" Thickness="15" Offset="0.5"/>
+                        <gauge:NeedlePointer  EnableAnimation="True" x:Name="needlePointer1" Value="500" Color="#424242" Type="Triangle" LengthFactor="0.7" Thickness="10"   KnobRadius="15" KnobStrokeColor="#007DD1" KnobStrokeWidth="8" KnobColor="White" KnobRadiusFactor="0.1"/>
+                    </gauge:Scale.Pointers>
+                </gauge:Scale>
+            </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+   SfCircularGauge circularGauge = new SfCircularGauge();
+            circularGauge.IsCenterAligned = true;
+            ObservableCollection<Scale> scales = new ObservableCollection<Scale>();
+            Scale scale = new Scale();
+            scale.LabelFontSize = 20;
+            scale.EnableAutoAngle = true;
+            scale.StartAngle = 180;
+            scale.SweepAngle= 180;
+            scale.StartValue = 0;
+            scale.EndValue = 1000;
+            scale.Interval = 500;
+            scale.EnableAutoInterval = true;
+            scale.RimThickness = 15;
+            scale.MinorTicksPerInterval = 2;
+            NeedlePointer needlePointer = new NeedlePointer();
+            needlePointer.EnableAnimation = true;
+            needlePointer.Value = 500;
+            needlePointer.Color = Color.FromRgb(66, 66, 66);
+            needlePointer.Type = PointerType.Triangle;
+            needlePointer.LengthFactor = 0.7;
+            needlePointer.Thickness = 10;
+            needlePointer.KnobRadius = 15;
+            needlePointer.KnobStrokeColor = Color.FromHex("#007DD1");
+            needlePointer.KnobStrokeWidth = 8;
+            needlePointer.KnobColor = Color.White;
+            needlePointer.KnobRadiusFactor = 0.1;
+            scale.Pointers.Add(needlePointer);
+            MarkerPointer markerPointer = new MarkerPointer();
+            markerPointer.MarkerShape = MarkerShape.InvertedTriangle;
+            markerPointer.Value = 300;
+            markerPointer.Color = Color.Brown;
+            markerPointer.MarkerHeight = 30;
+            markerPointer.MarkerWidth = 30;
+            markerPointer.Offset = 1;
+            markerPointer.Value = 70;
+            scale.Pointers.Add(markerPointer);
+            RangePointer rangePointer = new RangePointer();
+            rangePointer.RangeCap = RangeCap.Both;
+            rangePointer.EnableAnimation = true;
+            rangePointer.Value = 1000;
+            rangePointer.Color = Color.Brown;
+            rangePointer.Thickness = 15;
+            rangePointer.Offset = 0.5;
+            scale.Pointers.Add(rangePointer);
+			TickSettings majorTicks = new TickSettings();
+            majorTicks.Color = Color.Gray;
+            majorTicks.Thickness = 2;
+            majorTicks.Length = 25;
+            majorTicks.Offset = 0.97;
+            scale.MajorTickSettings = majorTicks;
+			TickSettings minorTicks = new TickSettings();
+            minorTicks.Color = Color.Gray;
+            minorTicks.Thickness = 2;
+            minorTicks.Length = 15;
+            minorTicks.Offset = 0.97;
+            scale.MinorTickSettings = minorTicks;
+			scales.Add(scale);
+            circularGauge.Scales = scales;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Center Aligned SfCircularGauge image](scales_images/iscenteraligned.png)

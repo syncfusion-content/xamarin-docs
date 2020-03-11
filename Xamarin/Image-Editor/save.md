@@ -302,3 +302,26 @@ private void ImageEditor_ImageEdited(object sender, ImageEditedEventArgs e)
 }
 
 {% endhighlight %}
+
+## File name support for saving image
+
+Allows the user to save the image in the specified name using ImageSaving event. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+   <imageeditor:SfImageEditor Source="{Binding Image}" ImageSaving="SfImageEditor_ImageSaving" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+  private void SfImageEditor_ImageSaving(object sender, ImageSavingEventArgs args)
+  {
+     args.FileName = "SavedImage";
+  }
+
+{% endhighlight %}
+
+{% endtabs %}

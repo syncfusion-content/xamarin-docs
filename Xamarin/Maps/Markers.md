@@ -794,7 +794,7 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 
 ## Reset the previously selected marker
 
-This feature allows users to reset the previously selected marker using the MarkerSelected event.
+Reset the previously selected marker using the MarkerSelected event.
 
 If you set any view for the `CustomView` property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker. Custom view will add continuously for all the clicked marker, but don’t have option to reset the previous one. Now will create an argument ResetPreviousSelectedView in MarkerSelected event argument. If the Boolean set as true, then it should be removing the previous selected marker CustomView and load the initial rendered marker.
 

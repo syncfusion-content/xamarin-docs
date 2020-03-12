@@ -10,7 +10,7 @@ documentation: UG
 
 ## Xamarin.Forms DataGrid SelectedIndex binding
 
-Refer the below code to bind any int value to the [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html) property to apply selection to a row programmatically.
+You can bind any int value to the [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html) property to apply selection to a row programmatically.
 
 {% highlight xaml %}
 
@@ -44,17 +44,19 @@ Refer the below code to bind any int value to the [SfDataGrid.SelectedIndex](htt
         
         public void AddStateDetails()
         {
-            State.Add(new StateDetails("Andhra Pradesh", "Amaravati ", "Visakhapatnam", "Telugu", "Southern", 49506799));
-            State.Add(new StateDetails("Tamil Nadu", "Chennai", "Chennai", "Tamil", "Southern", 72147030));
-            State.Add(new StateDetails("Karnataka", "Bangalore", "Bangalore", "Kannada","Southern", 61095297));
-            State.Add(new StateDetails("Himachal Pradesh", "Shimla ", "Shimla ", "Hindi", "Northern", 6864602));
+            State.Add(new StateDetails("California", "Sacramento ", "Sacramento", "English", "Western", 49506799));
+            State.Add(new StateDetails("Florida", "Tallahassee", "Tallahassee", "English", "South Eastern", 72147030));
+            State.Add(new StateDetails("Texas", "Austin", "Austin", "English","South Central", 61095297));
+            State.Add(new StateDetails("New Jersey", "Trenton", "Trenton", "English", "North Eastern", 6864602));
 		}
 
 {% endhighlight %}
 
+You can download the source code of the entire sample from [here]().
+
 ## Xamarin.Forms DataGrid SelectedItem binding
 
-Refer the below code snippet to bind an object from the underlying source collection to the [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html) property to apply selection to a row programmatically.
+You can bind an object from the underlying source collection to the [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html) property to apply selection to a row programmatically.
 
 {% highlight xaml %}
 
@@ -87,17 +89,19 @@ Refer the below code snippet to bind an object from the underlying source collec
         
         public void AddStateDetails()
         {
-            State.Add(new StateDetails("Andhra Pradesh", "Amaravati ", "Visakhapatnam", "Telugu", "Southern", 49506799));
-            State.Add(new StateDetails("Tamil Nadu", "Chennai", "Chennai", "Tamil", "Southern", 72147030));
-            State.Add(new StateDetails("Karnataka", "Bangalore", "Bangalore", "Kannada","Southern", 61095297));
-            State.Add(new StateDetails("Himachal Pradesh", "Shimla ", "Shimla ", "Hindi", "Northern", 6864602));
+            State.Add(new StateDetails("California", "Sacramento ", "Sacramento", "English", "Western", 49506799));
+            State.Add(new StateDetails("Florida", "Tallahassee", "Tallahassee", "English", "South Eastern", 72147030));
+            State.Add(new StateDetails("Texas", "Austin", "Austin", "English","South Central", 61095297));
+            State.Add(new StateDetails("New Jersey", "Trenton", "Trenton", "English", "North Eastern", 6864602));
 		}
 		
 {% endhighlight %}
 
+You can download the source code of the entire sample from [here]().
+
 ## Xamarin.Forms DataGrid SelectedItems binding
 
-Refer the below code to bind any object type collection to the [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html) property to apply selection to multiple rows programmatically.
+You can bind any object type collection to the [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html) property to apply selection to multiple rows programmatically.
 
 {% highlight xaml %}
 
@@ -132,18 +136,19 @@ Refer the below code to bind any object type collection to the [SfDataGrid.Selec
         
         public void AddStateDetails()
         {
-            State.Add(new StateDetails("Andhra Pradesh", "Amaravati ", "Visakhapatnam", "Telugu", "Southern", 49506799));
-            State.Add(new StateDetails("Tamil Nadu", "Chennai", "Chennai", "Tamil", "Southern", 72147030));
-            State.Add(new StateDetails("Karnataka", "Bangalore", "Bangalore", "Kannada","Southern", 61095297));
-            State.Add(new StateDetails("Himachal Pradesh", "Shimla ", "Shimla ", "Hindi", "Northern", 6864602));
+            State.Add(new StateDetails("California", "Sacramento ", "Sacramento", "English", "Western", 49506799));
+            State.Add(new StateDetails("Florida", "Tallahassee", "Tallahassee", "English", "South Eastern", 72147030));
+            State.Add(new StateDetails("Texas", "Austin", "Austin", "English","South Central", 61095297));
+            State.Add(new StateDetails("New Jersey", "Trenton", "Trenton", "English", "North Eastern", 6864602));
 		}
 
 {% endhighlight %}
 
+You can download the source code of the entire sample from [here]().
+
 ## Xamarin.Forms DataGrid column properties binding
 
 SfDataGrid allows you to assign values via binding to the properties of the [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) such as [HeaderCellTextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderCellTextSize.html), [CellTextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CellTextSize.html), [FontAttribute](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~FontAttribute.html), [RecordFont](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~RecordFont.html), [HeaderFont](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFont.html) etc. 
-Refer the below code to bind the values to the `GridColumn` properties from the ViewModel.
 
 {% highlight xaml %}
 
@@ -180,9 +185,11 @@ Refer the below code to bind the values to the `GridColumn` properties from the 
 
 {% endhighlight %}
 
-## Binding PickerColumn ItemsSource from ViewModel in Xamarin.Forms DataGrid
+You can download the source code of the entire sample from [here]().
 
-Using the below code snippet, bind any collection to the [GridPickerColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSource.html) property to display a list of items in the `GridPickerColumn` when entering edit mode.
+## Binding Picker Column ItemsSource from ViewModel in Xamarin.Forms DataGrid
+
+You can bind any collection to the [GridPickerColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSource.html) property to display a list of items in the `GridPickerColumn` when entering edit mode.
 
 {% highlight xaml %}
 
@@ -230,29 +237,30 @@ Using the below code snippet, bind any collection to the [GridPickerColumn.Items
 		
 		private void AddProvince()
         {
-            StatesProvince.Add("Central");
+            StatesProvince.Add("South Central");
             StatesProvince.Add("Eastern");
-            StatesProvince.Add("NorthEastern");
+            StatesProvince.Add("North Eastern");
             StatesProvince.Add("Northern");
-            StatesProvince.Add("Southern");
+            StatesProvince.Add("South Eastern");
             StatesProvince.Add("Western");
         }
         
 		public void AddStateDetails()
         {
-            State.Add(new StateDetails("Andhra Pradesh", "Amaravati ", "Visakhapatnam", "Telugu", "Southern", 49506799));
-            State.Add(new StateDetails("Tamil Nadu", "Chennai", "Chennai", "Tamil", "Southern", 72147030));
-            State.Add(new StateDetails("Karnataka", "Bangalore", "Bangalore", "Kannada","Southern", 61095297));
-            State.Add(new StateDetails("Himachal Pradesh", "Shimla ", "Shimla ", "Hindi", "Northern", 6864602));
+            State.Add(new StateDetails("California", "Sacramento ", "Sacramento", "English", "Western", 49506799));
+            State.Add(new StateDetails("Florida", "Tallahassee", "Tallahassee", "English", "South Eastern", 72147030));
+            State.Add(new StateDetails("Texas", "Austin", "Austin", "English","South Central", 61095297));
+            State.Add(new StateDetails("New Jersey", "Trenton", "Trenton", "English", "North Eastern", 6864602));
 		}
 	}
 
 {% endhighlight %}
 
+You can download the source code of the entire sample from [here]().
+
 ## Binding the ItemsSource from ViewModel for the Picker loaded inside template column in Xamarin.Forms DataGrid
 
 The `ItemsSource` of a picker which is loaded inside the [GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html) can be assigned any value via binding by passing the binding context as the `Source` to the `ItemsSource` property.
-Refer the below code to bind the ItemsSource of Picker loaded inside the GridTemplateColumn from the ViewModel.
 
 {% highlight xaml %}
 
@@ -296,29 +304,33 @@ Refer the below code to bind the ItemsSource of Picker loaded inside the GridTem
 		     AddProvince();
              AddStateDetails();
 		}
-		 private void AddProvince()
+        
+        private void AddProvince()
         {
-            StatesProvince.Add("Central");
+            StatesProvince.Add("South Central");
             StatesProvince.Add("Eastern");
-            StatesProvince.Add("NorthEastern");
+            StatesProvince.Add("North Eastern");
             StatesProvince.Add("Northern");
-            StatesProvince.Add("Southern");
+            StatesProvince.Add("South Eastern");
             StatesProvince.Add("Western");
         }
-		 public void AddStateDetails()
+        
+		public void AddStateDetails()
         {
-            State.Add(new StateDetails("Andhra Pradesh", "Amaravati ", "Visakhapatnam", "Telugu", "Southern", 49506799));
-            State.Add(new StateDetails("Tamil Nadu", "Chennai", "Chennai", "Tamil", "Southern", 72147030));
-            State.Add(new StateDetails("Karnataka", "Bangalore", "Bangalore", "Kannada","Southern", 61095297));
-            State.Add(new StateDetails("Himachal Pradesh", "Shimla ", "Shimla ", "Hindi", "Northern", 6864602));
+            State.Add(new StateDetails("California", "Sacramento ", "Sacramento", "English", "Western", 49506799));
+            State.Add(new StateDetails("Florida", "Tallahassee", "Tallahassee", "English", "South Eastern", 72147030));
+            State.Add(new StateDetails("Texas", "Austin", "Austin", "English","South Central", 61095297));
+            State.Add(new StateDetails("New Jersey", "Trenton", "Trenton", "English", "North Eastern", 6864602));
 		}
 	}
 
 {% endhighlight %}
 
-## Binding commands for the button loaded inside template column in Xamarin.Forms.DataGrid
+You can download the source code of the entire sample from [here]().
 
-Refer the below code to provide custom actions to the `Command` property of a button loaded inside the GridTemplateColumn via binding.
+## Binding commands for the button loaded inside template column in Xamarin.Forms DataGrid
+
+You can provide custom actions to the `Command` property of a button loaded inside the GridTemplateColumn via binding.
 
 {% highlight xaml %}
 
@@ -363,9 +375,11 @@ Refer the below code to provide custom actions to the `Command` property of a bu
 
 {% endhighlight %}
 
-## Binding columns collection from ViewModel in Xamarin.Forms.Datagrid
+You can download the source code of the entire sample from [here]().
 
-Using the below code snippet, bind any `Columns` type collection in the view model to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Columns.html) property to load the necessary columns in the datagrid.
+## Binding columns collection from ViewModel in Xamarin.Forms DataGrid
+
+You can bind any `Columns` type collection in the view model to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Columns.html) property to load the necessary columns in the datagrid.
 
 {% tab %}
 
@@ -422,12 +436,13 @@ Using the below code snippet, bind any `Columns` type collection in the view mod
             SfGridColumns.Add(new GridTextColumn() {MappingName="LargestCity" });
             SfGridColumns.Add(new GridNumericColumn() {MappingName="Population" });
         }
-		 public void AddStateDetails()
+		
+		public void AddStateDetails()
         {
-            State.Add(new StateDetails("Andhra Pradesh", "Amaravati ", "Visakhapatnam", "Telugu", Province.Southern, 49506799));
-            State.Add(new StateDetails("Tamil Nadu", "Chennai", "Chennai", "Tamil", Province.Southern, 72147030));
-            State.Add(new StateDetails("Karnataka", "Bangalore", "Bangalore", "Kannada", Province.Southern, 61095297));
-            State.Add(new StateDetails("Himachal Pradesh", "Shimla ", "Shimla ", "Hindi", Province.Northern, 6864602));
+            State.Add(new StateDetails("California", "Sacramento ", "Sacramento", "English", "Western", 49506799));
+            State.Add(new StateDetails("Florida", "Tallahassee", "Tallahassee", "English", "South Eastern", 72147030));
+            State.Add(new StateDetails("Texas", "Austin", "Austin", "English","South Central", 61095297));
+            State.Add(new StateDetails("New Jersey", "Trenton", "Trenton", "English", "North Eastern", 6864602));
 		}
 	}
 		
@@ -437,9 +452,9 @@ Using the below code snippet, bind any `Columns` type collection in the view mod
 
 You can download the entire source code of binding the `SfDataGrid.Columns` properties [here]()
 
-## Binding ComboBoxColumn ItemSource from ViewModel in Xamarin.Forms DataGrid
+## Binding ComboBox Column ItemsSource from ViewModel in Xamarin.Forms DataGrid
 
-Using the below code snippet, bind any collection to the [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property  to display a list of items in the `GridComboBoxColumn` when entering edit mode.
+You can bind any collection to the [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property  to display a list of items in the `GridComboBoxColumn` when entering edit mode.
 
 {% tab %}
 
@@ -499,21 +514,22 @@ Using the below code snippet, bind any collection to the [GridComboBoxColumn.Ite
 		     AddProvince();
              AddStateDetails();
 	   }
-		 private void AddProvince()
+        private void AddProvince()
         {
-            StatesProvince.Add("Central");
+            StatesProvince.Add("South Central");
             StatesProvince.Add("Eastern");
-            StatesProvince.Add("NorthEastern");
+            StatesProvince.Add("North Eastern");
             StatesProvince.Add("Northern");
-            StatesProvince.Add("Southern");
+            StatesProvince.Add("South Eastern");
             StatesProvince.Add("Western");
         }
-		 public void AddStateDetails()
+        
+		public void AddStateDetails()
         {
-            State.Add(new StateDetails("Andhra Pradesh", "Amaravati ", "Visakhapatnam", "Telugu", "Southern", 49506799));
-            State.Add(new StateDetails("Tamil Nadu", "Chennai", "Chennai", "Tamil", "Southern", 72147030));
-            State.Add(new StateDetails("Karnataka", "Bangalore", "Bangalore", "Kannada","Southern", 61095297));
-            State.Add(new StateDetails("Himachal Pradesh", "Shimla ", "Shimla ", "Hindi", "Northern", 6864602));
+            State.Add(new StateDetails("California", "Sacramento ", "Sacramento", "English", "Western", 49506799));
+            State.Add(new StateDetails("Florida", "Tallahassee", "Tallahassee", "English", "South Eastern", 72147030));
+            State.Add(new StateDetails("Texas", "Austin", "Austin", "English","South Central", 61095297));
+            State.Add(new StateDetails("New Jersey", "Trenton", "Trenton", "English", "North Eastern", 6864602));
 		}
 	}
 		
@@ -521,9 +537,11 @@ Using the below code snippet, bind any collection to the [GridComboBoxColumn.Ite
 
 {% endtab %}
 
-## Binding the ItemsSource from ViewModel for the SfComboBox loaded inside the template column in Xamarin.Forms.DataGrid
+You can download the entire source code of binding the `SfDataGrid.Columns` properties [here]()
 
-Bind any collection property to the `SfComboBox.DataSource` property, which is loaded inside the [GridTemplateColumn] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html) using the below code snippet.
+## Binding the ItemsSource from ViewModel for the SfComboBox loaded inside the template column in Xamarin.Forms DataGrid
+
+You can bind any collection to the `SfComboBox.DataSource` property, which is loaded inside the [GridTemplateColumn] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html) using the below code snippet.
 
 {% tab %}
 
@@ -589,19 +607,20 @@ Bind any collection property to the `SfComboBox.DataSource` property, which is l
 		}
 		 private void AddProvince()
         {
-            StatesProvince.Add("Central");
+            StatesProvince.Add("South Central");
             StatesProvince.Add("Eastern");
-            StatesProvince.Add("NorthEastern");
+            StatesProvince.Add("North Eastern");
             StatesProvince.Add("Northern");
-            StatesProvince.Add("Southern");
+            StatesProvince.Add("South Eastern");
             StatesProvince.Add("Western");
         }
-		 public void AddStateDetails()
+        
+		public void AddStateDetails()
         {
-            State.Add(new StateDetails("Andhra Pradesh", "Amaravati ", "Visakhapatnam", "Telugu", "Southern", 49506799));
-            State.Add(new StateDetails("Tamil Nadu", "Chennai", "Chennai", "Tamil", "Southern", 72147030));
-            State.Add(new StateDetails("Karnataka", "Bangalore", "Bangalore", "Kannada","Southern", 61095297));
-            State.Add(new StateDetails("Himachal Pradesh", "Shimla ", "Shimla ", "Hindi", "Northern", 6864602));
+            State.Add(new StateDetails("California", "Sacramento ", "Sacramento", "English", "Western", 49506799));
+            State.Add(new StateDetails("Florida", "Tallahassee", "Tallahassee", "English", "South Eastern", 72147030));
+            State.Add(new StateDetails("Texas", "Austin", "Austin", "English","South Central", 61095297));
+            State.Add(new StateDetails("New Jersey", "Trenton", "Trenton", "English", "North Eastern", 6864602));
 		}
 	}
 		

@@ -298,6 +298,24 @@ public class CustomSelectionController : GridSelectionController
 {% endhighlight %}
 {% endtabs %}
 
+### Move Current Cell
+
+The 'CurrentCell' can be moved to a particular RowColumnIndex by using the `SfDataGrid.MoveCurrentCellTo` method. This method is not applicable when the `SfDataGrid.SelectionMode` is 'None' or 'NavigationMode' is 'Row'.
+
+{% tabs %}
+{% highlight c# %}
+dataGrid.MoveCurrentCellTo(new RowColumnIndex(3, 3),false);
+{% endhighlight %}
+{% endtabs %}
+
+when the `SfDataGrid.SelectionMode` is 'Multiple', If you want to clear the selection from all the selected items and apply selection to the passed 'RowColumnIndex' then 'needToClearSelection' is set as 'true'.
+ 
+ {% tabs %}
+{% highlight c# %}
+dataGrid.MoveCurrentCellTo(new RowColumnIndex(4, 3),true);
+{% endhighlight %}
+{% endtabs %}
+
 ### Scroll to selected item
 
 You can scroll programmatically to the selected item by passing the `SelectedIndex` to the [SfDataGrid.ScrollToRowIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollToRowIndex.html) method.

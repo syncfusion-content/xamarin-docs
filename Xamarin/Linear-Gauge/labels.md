@@ -359,7 +359,7 @@ Labels visibility can be customized using the [`ShowLabels`](https://help.syncfu
 
 ## Customize the scale labels format
 
-`LabelFormat` property allows the user to customize the scale labels format.
+`LabelFormat` property allows you to customize the scale labels format.
 
 {% tabs %}
 

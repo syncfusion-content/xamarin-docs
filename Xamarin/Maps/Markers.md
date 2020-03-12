@@ -792,11 +792,9 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 
 ![Marker Selected Image](Images/MarkerSelected.png)
 
-## Reset the previously selected marker
+## Reset the old custom view marker
 
-Reset the previously selected marker using the MarkerSelected event.
-
-If you set any view for the `CustomView` property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker. Custom view will add continuously for all the clicked marker, but don’t have option to reset the previous one. Now will create an argument ResetPreviousSelectedView in MarkerSelected event argument. If the Boolean set as true, then it should be removing the previous selected marker CustomView and load the initial rendered marker.
+If you add any `CustomView` for marker from `MarkerSelected` event, then the corresponding view will be applied to the selected marker. Custom view will be added continuously for all the clicked marker, but don’t have option to reset the old one. Now you can acheive this by using the ResetOldSelectedView property. If the Boolean set as true, then it will be removed the old `CustomView` of marker and load the initially rendered marker.
 
 {% tabs %}
 

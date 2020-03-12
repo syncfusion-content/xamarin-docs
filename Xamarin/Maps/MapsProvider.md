@@ -481,16 +481,16 @@ private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChang
 
 {% endtabs %}
 
-## Calculate zoom level
+## Calculate zoom level based on map geo-bounds or distance
 
-This feature allows set the initial zoom level automatically in two ways.
+This feature allows to calculate the initial zoom level automatically in two ways.
 
-* Distance Radius(KM/miles)
+* Distance in radius(Meters/KM/Mile)
 * Geo-bounds(Northeast, Southwest)
 
-### Distance Radius 
+### Distance in radius 
 
-Calculate the initial zoom level automatically based on the `Radius` and `DistanceType` properties of ImageryLayer.
+Calculate the initial zoom level automatically based on the `Radius` and `DistanceType` properties of imagery layer class.
 
 {% tabs %}
 
@@ -520,7 +520,7 @@ Calculate the initial zoom level automatically based on the `Radius` and `Distan
 
 ### Geo-bounds
 
-Calculate the initial zoom level automatically based on the LatLngBounds of ImageryLayer.
+Calculate the initial zoom level automatically based on the LatLngBounds(Northeast, Southwest) of imagery layer class.
 
 {% tabs %}
 
@@ -569,13 +569,13 @@ Calculate the initial zoom level automatically based on the LatLngBounds of Imag
 
 {% endtabs %}
 
-N> When setting LatLngBounds and DistanceRadius at the same time, the priority is DistanceRadius and calculate zoom level based Radius value.
+N> When setting LatLngBounds and DistanceRadius at the same time, the priority is `DistanceRadius` and calculate zoom level based radius value.
 
 ![Xamarin SfMaps zoom level changed image](Images/ZoomLevel.png)
 
-## Calculate the map tile layer bounds
+## Get the map tile layer bounds
 
-Calculate imagery layer pixel bounds while zooming, panning and Geo-Coordinate value changing.
+You can get imagery layer pixel bounds while zooming, panning and Geo-Coordinate value changing by using `MapBounds` property of imagery layer.
 
 {% tabs %}
 

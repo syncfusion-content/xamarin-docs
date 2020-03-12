@@ -424,9 +424,9 @@ You can change the default label by hooking the [`LabelCreated`](https://help.sy
 
 ![Label Created Event Image](scales_images/labelcreated.png)
 
-## Center Aligned
+## Calculate radius and center based on angle
 
-Adjust the radius and center of a circular gauge automatically based on the `SweepAngle` , `StartAngle` and `IsCenterAligned` property.
+This feature is used to automatically adjust the radius and center of a circular gauge based on the `StartAngle` and `SweepAngle` properties and enabling the `IsCenterAligned` property of gauge.
 
 N> Default value of the IsCenterAligned property is false. 
 

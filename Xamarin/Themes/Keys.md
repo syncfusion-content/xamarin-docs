@@ -943,7 +943,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>     
 
-     <tr>
+    <tr>
         <td>
             OutgoingMessageAuthorFontAttributes
             <br/>
@@ -968,20 +968,20 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>   
-     
-	<tr>
+ 
+    <tr>
         <td>
-            OutgoingMessageTimestampFontAttributes
+            OutgoingMessageTimestampFontSize
             <br/>
             <br/>
         </td>
         <td>
-            Font attributes of the timestamp in an outgoing message.
+            Font size of the timestamp in an outgoing message.
             <br/>
             <br/>
         </td>
-    </tr>   
-     
+    </tr>
+	
 	<tr>
         <td>
             OutgoingMessageTimestampFontSize
@@ -995,7 +995,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>  
 	
-	 <tr>
+	<tr>
         <td>
             EditorTextColor
             <br/>

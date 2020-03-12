@@ -971,7 +971,7 @@ This page lists the keys for each control and the element to which it is mapped 
  
     <tr>
         <td>
-            OutgoingMessageTimestampFontSize
+            OutgoingMessageTimestampFontAttributes
             <br/>
             <br/>
         </td>

@@ -31,7 +31,9 @@ Suggestions can be shown in a message by creating a [ChatSuggestion](https://hel
     <ContentPage.Content>
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+					   ShowOutgoingMessageAvatar="True"
+                       ShowIncomingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -53,6 +55,8 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+			this.sfChat.ShowOutgoingMessageAvatar=true;
+			this.sfChat.ShowIncomingMessageAvatar=true;
             this.Content = sfChat;
         }
     }
@@ -149,7 +153,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Flight to USA",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TextMessage()
@@ -157,7 +160,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
             Author = new Author() { Avatar = "Aeroplane.png", Name = "Travel Bot" },
             Text = "Here's my suggestion",
             Suggestions = chatSuggestions,
-            ShowAvatar = true,
         });   
     }
 }
@@ -189,7 +191,9 @@ To add image in suggestion list in message, refer the below the code example:
     <ContentPage.Content>
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+					   ShowOutgoingMessageAvatar="True"
+                       ShowIncomingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -211,6 +215,8 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+			this.sfChat.ShowOutgoingMessageAvatar=true;
+			this.sfChat.ShowIncomingMessageAvatar=true;
             this.Content = sfChat;
         }
     }
@@ -307,7 +313,6 @@ public class GettingStartedViewModel :INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Flight to USA",
-            ShowAvatar = true,
         });
 
         this.messages.Add(new TextMessage()
@@ -315,7 +320,6 @@ public class GettingStartedViewModel :INotifyPropertyChanged
             Author = new Author() { Avatar ="Aeroplane.png", Name = "Travel Bot" },
             Text = "Here's my suggestion",
             Suggestions = chatSuggestions,
-            ShowAvatar = true,
         });   
     }
 }
@@ -347,7 +351,9 @@ To change suggestion `ChatSuggestions.Orientation`, refer the below code example
     <ContentPage.Content>
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}" 
+					   ShowOutgoingMessageAvatar="True"
+                       ShowIncomingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -369,6 +375,8 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+			this.sfChat.ShowOutgoingMessageAvatar=true;
+			this.sfChat.ShowIncomingMessageAvatar=true;
             this.Content = sfChat;
         }
     }
@@ -467,7 +475,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Flight to USA",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TextMessage()
@@ -475,7 +482,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
             Author = new Author() { Avatar = "Aeroplane.png", Name = "Travel Bot" },
             Text = "Here's my suggestion",
             Suggestions = chatSuggestions,
-            ShowAvatar = true,
         });   
     }
 }
@@ -506,7 +512,9 @@ The SfChat allows to show a list of options as suggestions at the bottom of chat
     <ContentPage.Content>
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+					   ShowOutgoingMessageAvatar="True"
+                       ShowIncomingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -527,6 +535,8 @@ namespace GettingStarted
             sfChat = new SfChat();
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
+			this.sfChat.ShowOutgoingMessageAvatar=true;
+			this.sfChat.ShowIncomingMessageAvatar=true;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
             this.sfChat.Suggestions = viewModel.ChatSuggestions;
             this.Content = sfChat;
@@ -643,7 +653,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Flight to USA",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TextMessage()
@@ -651,7 +660,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
             Author = new Author() { Avatar = "Aeroplane.png", Name = "Travel Bot" },
             Text = "Here's my suggestion",
             Suggestions = chatSuggestions,
-            ShowAvatar = true,
         });   
     }
 }
@@ -705,7 +713,9 @@ private void SfChat_SuggestionItemSelected(object sender, SuggestionItemSelected
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        SendMessageCommand="{Binding SendMessageCommand}"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+					   ShowOutgoingMessageAvatar="True"
+                       ShowIncomingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 

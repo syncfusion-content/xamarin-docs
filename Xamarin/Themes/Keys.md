@@ -969,7 +969,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>   
      
-	 <tr>
+	<tr>
         <td>
             OutgoingMessageTimestampFontAttributes
             <br/>
@@ -982,7 +982,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>   
      
-	 <tr>
+	<tr>
         <td>
             OutgoingMessageTimestampFontSize
             <br/>
@@ -1008,7 +1008,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>   
 	
-	 <tr>
+	<tr>
         <td>
             EditorBackgroundColor
             <br/>
@@ -1021,7 +1021,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>     
 	
-	 <tr>
+	<tr>
         <td>
             EditorFontFamily
             <br/>
@@ -1034,7 +1034,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>   
 	
-	 <tr>
+	<tr>
         <td>
             EditorFontAttributes
             <br/>
@@ -1047,7 +1047,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>     
 	
-	 <tr>
+	<tr>
         <td>
             EditorFontSize
             <br/>
@@ -1060,7 +1060,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr> 
     
-	 <tr>
+	<tr>
         <td>
             SendButtonColor
             <br/>
@@ -1073,7 +1073,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>    
 	
-	 <tr>
+	<tr>
         <td>
             SendButtonDisabledColor
             <br/>
@@ -1086,7 +1086,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>     
 	
-	 <tr>
+	<tr>
         <td>
             TypingIndicatorTextColor
             <br/>
@@ -1099,7 +1099,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>
 	
-	 <tr>
+	<tr>
         <td>
             TypingIndicatorBackgroundColor
             <br/>
@@ -1112,7 +1112,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>     
 	
-	 <tr>
+	<tr>
         <td>
             TypingIndicatorFontFamily
             <br/>
@@ -1125,7 +1125,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>     
 	
-	 <tr>
+	<tr>
         <td>
             TypingIndicatorFontAttributes
             <br/>
@@ -1138,7 +1138,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr> 
     
-	 <tr>
+	<tr>
         <td>
             TypingIndicatorFontSize
             <br/>
@@ -1151,7 +1151,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>     
 	
-	 <tr>
+	<tr>
         <td>
             TimeBreakViewTextColor
             <br/>
@@ -1164,7 +1164,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>     
 	
-	 <tr>
+	<tr>
         <td>
             TimeBreakViewBackgroundColor
             <br/>
@@ -1177,7 +1177,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>    
 	
-	 <tr>
+	<tr>
         <td>
             TimeBreakViewFontFamily
             <br/>
@@ -1190,7 +1190,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>   
 	
-	 <tr>
+	<tr>
         <td>
             TimeBreakViewFontAttributes
             <br/>
@@ -1203,7 +1203,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>     
 	
-	 <tr>
+	<tr>
         <td>
             TimeBreakViewFontSize
             <br/>
@@ -1216,7 +1216,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>   
 	
-	 <tr>
+	<tr>
         <td>
             SuggestionListItemTextColor
             <br/>
@@ -1229,7 +1229,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr> 
     
-	 <tr>
+	<tr>
         <td>
             SuggestionListItemBackgroundColor
             <br/>
@@ -1242,7 +1242,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>  
 	
-	 <tr>
+	<tr>
         <td>
             SuggestionListBackgroundColor
             <br/>
@@ -1255,7 +1255,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>     
 	
-	 <tr>
+	<tr>
         <td>
             SuggestionListItemFontFamily
             <br/>
@@ -1268,7 +1268,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>   
 	
-	 <tr>
+	<tr>
         <td>
             SuggestionListItemFontAttributes
             <br/>
@@ -1279,8 +1279,9 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-    </tr>     
-	 <tr>
+    </tr>    
+	
+	<tr>
         <td>
             SuggestionListItemFontSize
             <br/>
@@ -1291,8 +1292,9 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-    </tr>     
-	 <tr>
+    </tr>  
+	
+	<tr>
         <td>
             SuggestionListItemBorderColor
             <br/>
@@ -1305,7 +1307,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>     
 	
-	 <tr>
+	<tr>
         <td>
             DatePickerIconColor
             <br/>
@@ -1318,7 +1320,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>   
 	
-	 <tr>
+	<tr>
         <td>
             TimePickerIconColor
             <br/>
@@ -1344,7 +1346,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>	
 	
-	 <tr>
+	<tr>
         <td>
             TimePickerTextColor
             <br/>
@@ -1357,7 +1359,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>	
 	
-	 <tr>
+	<tr>
         <td>
             DatePickerBackgroundColor
             <br/>
@@ -1370,7 +1372,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>	
 	
-	 <tr>
+	<tr>
         <td>
             TimePickerBackgroundColor
             <br/>
@@ -1383,7 +1385,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>	
 	
-	 <tr>
+	<tr>
         <td>
             DatePickerBorderColor
             <br/>
@@ -1396,7 +1398,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>	
 	
-	 <tr>
+	<tr>
         <td>
             TimePickerBorderColor
             <br/>
@@ -1409,7 +1411,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>	
 	
-	 <tr>
+	<tr>
         <td>
             EditorPlaceholderTextColor
             <br/>
@@ -1422,7 +1424,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>	
 	
-	 <tr>
+	<tr>
         <td>
             EditorBorderColor
             <br/>
@@ -1435,7 +1437,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>	
 	
-	 <tr>
+	<tr>
         <td>
             MessageInputViewBackgroundColor
             <br/>
@@ -1448,7 +1450,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>	
 	
-	 <tr>
+	<tr>
         <td>
             TimeBreakViewBorderColor
             <br/>
@@ -1461,7 +1463,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>	
 	
-	 <tr>
+	<tr>
         <td>
             HyperlinkColor
             <br/>
@@ -1474,7 +1476,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>	
 	
-	 <tr>
+	<tr>
         <td>
             HyperlinkDescriptionTextColor
             <br/>
@@ -1487,7 +1489,7 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>	
 	
-	 <tr>
+	<tr>
         <td>
             HyperlinkDescriptionBackgroundColor
             <br/>

@@ -810,7 +810,7 @@ The `SfDataGrid` allows you to load any custom view in edit mode using the [Edit
                                    Converter={StaticResource imageConverter}}" />
                             <Entry Grid.Column="1"
                                    Text="{Binding StockChange}">
-                            </Label>
+                            </Entry>
                         </Grid>
                     </DataTemplate>
                 </syncfusion:GridTemplateColumn.EditTemplate>

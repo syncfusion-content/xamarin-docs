@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Xamarin.Forms DataGrid MVVM | SfDataGrid | Xamarin | Syncfusion
-description: Describes about how to use the Syncfusion Xamarin.Forms DataGrid in MVVM and use binding and commands to SfDataGrid properties. 
+description: Describes about how to use the Syncfusion Xamarin.Forms DataGrid in MVVM, use binding and commands to SfDataGrid properties. 
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -10,8 +10,7 @@ documentation: UG
 
 ## Xamarin.Forms DataGrid SelectedIndex binding
 
-You can bind any int value to the [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html) to apply selection to a row programmatically.
-Refer the below code to bind the `SfDataGrid.SelectedIndex` from the ViewModel.
+Refer the below code to bind any int value to the [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html) property to apply selection to a row programmatically.
 
 {% highlight xaml %}
 
@@ -37,19 +36,25 @@ Refer the below code to bind the `SfDataGrid.SelectedIndex` from the ViewModel.
 			RaisePropertyChanged("SelectedIndex"); }
         }
 
-         public ViewModel()
+        public ViewModel()
         {
+           this.State = AddStateDetails();
            this.SelectedIndex = 5;
         }
+        
+        public void AddStateDetails()
+        {
+            State.Add(new StateDetails("Andhra Pradesh", "Amaravati ", "Visakhapatnam", "Telugu", "Southern", 49506799));
+            State.Add(new StateDetails("Tamil Nadu", "Chennai", "Chennai", "Tamil", "Southern", 72147030));
+            State.Add(new StateDetails("Karnataka", "Bangalore", "Bangalore", "Kannada","Southern", 61095297));
+            State.Add(new StateDetails("Himachal Pradesh", "Shimla ", "Shimla ", "Hindi", "Northern", 6864602));
+		}
 
 {% endhighlight %}
 
-You can download the source code of binding the SfDataGrid.SelectedIndex properties sample [here]()
-
 ## Xamarin.Forms DataGrid SelectedItem binding
 
-You can bind any object value to the [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html) to apply selection to a row programmatically.
-Refer the below code to bind the `SfDataGrid.SelectedItem` from the ViewModel.
+Refer the below code snippet to bind an object from the underlying source collection to the [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html) property to apply selection to a row programmatically.
 
 {% highlight xaml %}
 
@@ -68,25 +73,31 @@ Refer the below code to bind the `SfDataGrid.SelectedItem` from the ViewModel.
 
         private object _selectedItem;
 
-         public object SelectedItem
+        public object SelectedItem
         {
             get { return _selectedItem; }
             set { this._selectedItem = value; RaisePropertyChanged("SelectedItem"); }
         }
 
-         public ViewModel()
+        public ViewModel()
         {
-            this.SelectedItem = State[8];
+            this.State = this.AddStateDetails();
+            this.SelectedItem = State[3];
         }
+        
+        public void AddStateDetails()
+        {
+            State.Add(new StateDetails("Andhra Pradesh", "Amaravati ", "Visakhapatnam", "Telugu", "Southern", 49506799));
+            State.Add(new StateDetails("Tamil Nadu", "Chennai", "Chennai", "Tamil", "Southern", 72147030));
+            State.Add(new StateDetails("Karnataka", "Bangalore", "Bangalore", "Kannada","Southern", 61095297));
+            State.Add(new StateDetails("Himachal Pradesh", "Shimla ", "Shimla ", "Hindi", "Northern", 6864602));
+		}
 		
 {% endhighlight %}
 
-You can download the source code of binding the SfDataGrid.SelectedItem properties sample [here]()
-
 ## Xamarin.Forms DataGrid SelectedItems binding
 
-You can bind any object type collection to the [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html) to apply selection to multiple rows programmatically.
-Refer the below code to bind the `SfDataGrid.SelectedItems` from the ViewModel.
+Refer the below code to bind any object type collection to the [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html) property to apply selection to multiple rows programmatically.
 
 {% highlight xaml %}
 
@@ -111,21 +122,28 @@ Refer the below code to bind the `SfDataGrid.SelectedItems` from the ViewModel.
             set { this._selectedItems = value; RaisePropertyChanged("SelectedItems"); }
         }
 
-         public ViewModel()
+        public ViewModel()
         {
+          this.State = this.AddStateDetails();
           this.SelectedItems.Add(State[1]);
-          this.SelectedItems.Add(State[5]);
-          this.SelectedItems.Add(State[8]);
+          this.SelectedItems.Add(State[2]);
+          this.SelectedItems.Add(State[3]);
         }
+        
+        public void AddStateDetails()
+        {
+            State.Add(new StateDetails("Andhra Pradesh", "Amaravati ", "Visakhapatnam", "Telugu", "Southern", 49506799));
+            State.Add(new StateDetails("Tamil Nadu", "Chennai", "Chennai", "Tamil", "Southern", 72147030));
+            State.Add(new StateDetails("Karnataka", "Bangalore", "Bangalore", "Kannada","Southern", 61095297));
+            State.Add(new StateDetails("Himachal Pradesh", "Shimla ", "Shimla ", "Hindi", "Northern", 6864602));
+		}
 
 {% endhighlight %}
 
-You can download the source code of binding the SfDataGrid.SelectedItems properties sample [here]()
-
 ## Xamarin.Forms DataGrid column properties binding
 
-You can also assign value via binding to the properties of the [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) such as [HeaderCellTextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderCellTextSize.html),[CellTextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CellTextSize.html),[FontAttribute](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~FontAttribute.html),[RecordFont](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~RecordFont.html),[HeaderFont](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFont.html) etc. 
-Refer the below code to bind the GridColumn properties from the ViewModel.
+SfDataGrid allows you to assign values via binding to the properties of the [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) such as [HeaderCellTextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderCellTextSize.html), [CellTextSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~CellTextSize.html), [FontAttribute](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~FontAttribute.html), [RecordFont](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~RecordFont.html), [HeaderFont](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~HeaderFont.html) etc. 
+Refer the below code to bind the values to the `GridColumn` properties from the ViewModel.
 
 {% highlight xaml %}
 
@@ -148,19 +166,23 @@ Refer the below code to bind the GridColumn properties from the ViewModel.
         public double CellTextSize
         {
             get { return cellTextSize; }
-            set { this.TextSize = value; RaisePropertyChanged("CellTextSize"); }
+            set 
+            { 
+                this.TextSize = value;
+                RaisePropertyChanged("CellTextSize");
+            }
         }
 
-         public ViewModel()
+        public ViewModel()
         {
-          this.CellTextSize = 20;
+           this.CellTextSize = 20;
         }
 
 {% endhighlight %}
 
-## Binding PickerColumn ItemsSource from ViewModel
+## Binding PickerColumn ItemsSource from ViewModel in Xamarin.Forms DataGrid
 
-Bind any collection to the [GridPickerColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSource.html) to display a list of items in the `GridPickerColumn` when entering edit mode using the below code snippet.
+Using the below code snippet, bind any collection to the [GridPickerColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSource.html) property to display a list of items in the `GridPickerColumn` when entering edit mode.
 
 {% highlight xaml %}
 
@@ -178,12 +200,13 @@ Bind any collection to the [GridPickerColumn.ItemsSource](https://help.syncfusio
 
 {% highlight c# %}
 
-        //ViewModel.cs
+    //ViewModel.cs
     class ViewModel : INotifyPropertyChanged
     {  
-	   private ObservableCollection<StateDetails> states = new ObservableCollection<StateDetails>();
-	   private ObservableCollection<string> stateProvince = new ObservableCollection<string>();
-	   public ObservableCollection<string> StatesProvince
+	    private ObservableCollection<StateDetails> states = new ObservableCollection<StateDetails>();
+	    private ObservableCollection<string> stateProvince = new ObservableCollection<string>();
+	    
+	    public ObservableCollection<string> StatesProvince
         {
             get { return stateProvince; }
             set 
@@ -192,17 +215,20 @@ Bind any collection to the [GridPickerColumn.ItemsSource](https://help.syncfusio
                 OnPropertyChanged(nameof(StatesProvince));
             }
 		}
+		
 		public ObservableCollection<StateDetails> State
         {
             get { return states; }
-            set{states = value;}
+            set {states = value;}
         }
+        
 		public ViewModel()
 		{
 		     AddProvince();
              AddStateDetails();
 		}
-		 private void AddProvince()
+		
+		private void AddProvince()
         {
             StatesProvince.Add("Central");
             StatesProvince.Add("Eastern");
@@ -211,7 +237,8 @@ Bind any collection to the [GridPickerColumn.ItemsSource](https://help.syncfusio
             StatesProvince.Add("Southern");
             StatesProvince.Add("Western");
         }
-		 public void AddStateDetails()
+        
+		public void AddStateDetails()
         {
             State.Add(new StateDetails("Andhra Pradesh", "Amaravati ", "Visakhapatnam", "Telugu", "Southern", 49506799));
             State.Add(new StateDetails("Tamil Nadu", "Chennai", "Chennai", "Tamil", "Southern", 72147030));
@@ -222,12 +249,9 @@ Bind any collection to the [GridPickerColumn.ItemsSource](https://help.syncfusio
 
 {% endhighlight %}
 
-You can download the source code of binding the GridPickerColumn.ItemsSource properties sample [here]()
+## Binding the ItemsSource from ViewModel for the Picker loaded inside template column in Xamarin.Forms DataGrid
 
-## Binding the ItemsSource from ViewModel for the Picker loaded inside template
-
-The `ItemsSource` of a picker which is loaded inside the [GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html) can also be assigned any value via binding by passing the binding context as the `Source` to the `ItemsSource` property.
-
+The `ItemsSource` of a picker which is loaded inside the [GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html) can be assigned any value via binding by passing the binding context as the `Source` to the `ItemsSource` property.
 Refer the below code to bind the ItemsSource of Picker loaded inside the GridTemplateColumn from the ViewModel.
 
 {% highlight xaml %}
@@ -252,7 +276,7 @@ Refer the below code to bind the ItemsSource of Picker loaded inside the GridTem
 
         //ViewModel.cs code
 
-       class ViewModel : INotifyPropertyChanged
+    class ViewModel : INotifyPropertyChanged
     {  
 	   private ObservableCollection<StateDetails> states = new ObservableCollection<StateDetails>();
 	   private ObservableCollection<string> stateProvince = new ObservableCollection<string>();
@@ -289,15 +313,12 @@ Refer the below code to bind the ItemsSource of Picker loaded inside the GridTem
             State.Add(new StateDetails("Himachal Pradesh", "Shimla ", "Shimla ", "Hindi", "Northern", 6864602));
 		}
 	}
-	
-You can download the source code of binding the Picker.ItemsSource properties sample [here]()
 
 {% endhighlight %}
 
-## Binding the button command in template column to ViewModel
+## Binding commands for the button loaded inside template column in Xamarin.Forms.DataGrid
 
-You can provide custom actions to the `Command` property of a button loaded inside the GridTemplateColumn via binding.
-Refer the below code to achieve the same.
+Refer the below code to provide custom actions to the `Command` property of a button loaded inside the GridTemplateColumn via binding.
 
 {% highlight xaml %}
 
@@ -342,11 +363,9 @@ Refer the below code to achieve the same.
 
 {% endhighlight %}
 
-You can download the source code of binding the SfDataGrid properties sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGrid_Sample788022149)
-
 ## Binding columns collection from ViewModel in Xamarin.Forms.Datagrid
 
-Bind any `Columns` type collection to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Columns.html) property to load the necessary columns in the datagrid using the below code snippet.
+Using the below code snippet, bind any `Columns` type collection in the view model to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Columns.html) property to load the necessary columns in the datagrid.
 
 {% tab %}
 
@@ -416,11 +435,11 @@ Bind any `Columns` type collection to the [SfDataGrid.Columns](https://help.sync
 
 {% endtab %}
 
-You can download the source code of binding the SfDataGrid.Columns properties sample [here]()
+You can download the entire source code of binding the `SfDataGrid.Columns` properties [here]()
 
 ## Binding ComboBoxColumn ItemSource from ViewModel in Xamarin.Forms DataGrid
 
-Bind any collection to the [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property  to display a list of items in the `GridComboBoxColumn` when entering edit mode, using the below code snippet.
+Using the below code snippet, bind any collection to the [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property  to display a list of items in the `GridComboBoxColumn` when entering edit mode.
 
 {% tab %}
 
@@ -438,9 +457,9 @@ Bind any collection to the [GridComboBoxColumn.ItemsSource](https://help.syncfus
     <ContentPage.Content >
         <sfgrid:SfDataGrid ItemsSource="{Binding State}" 
                            NavigationMode="Cell"
-                               ColumnSizer="Auto"
-                               SelectionMode="Multiple"
-                            AutoGenerateColumns="True">
+                           ColumnSizer="Auto"
+                           SelectionMode="Multiple"
+                           AutoGenerateColumns="True">
             <sfgrid:SfDataGrid.Columns>
                 <sfgrid:GridComboBoxColumn AllowEditing="True"
                                            MappingName="Province"
@@ -457,26 +476,29 @@ Bind any collection to the [GridComboBoxColumn.ItemsSource](https://help.syncfus
 
 // ViewModel.cs
 
- class ViewModel : INotifyPropertyChanged
+    class ViewModel : INotifyPropertyChanged
     {  
 	   private ObservableCollection<StateDetails> states = new ObservableCollection<StateDetails>();
 	   private ObservableCollection<string> stateProvince = new ObservableCollection<string>();
 	   public ObservableCollection<string> StatesProvince
-        {
+       {
             get { return stateProvince; }
-            set {   stateProvince = value;
-                OnPropertyChanged(nameof(StatesProvince));}
-		}
-		public ObservableCollection<StateDetails> State
-        {
-            get { return states; }
-            set{states = value;}
-        }
-		public ViewModel()
-		{
+            set {   
+                   stateProvince = value;
+                   OnPropertyChanged(nameof(StatesProvince));
+                }
+	   }
+	   public ObservableCollection<StateDetails> State
+       {
+           get { return states; }
+           set{states = value;}
+       }
+       
+	   public ViewModel()
+	   {
 		     AddProvince();
              AddStateDetails();
-		}
+	   }
 		 private void AddProvince()
         {
             StatesProvince.Add("Central");
@@ -499,11 +521,9 @@ Bind any collection to the [GridComboBoxColumn.ItemsSource](https://help.syncfus
 
 {% endtab %}
 
-You can download the source code of binding the GridComboBoxColumn.ItemsSource  properties sample [here]()
+## Binding the ItemsSource from ViewModel for the SfComboBox loaded inside the template column in Xamarin.Forms.DataGrid
 
-## Binding the ItemsSource from ViewModel to the SfComboBox loaded inside the template column in Xamarin.Forms.DataGrid
-
-Bind any object type collection property to the `SfComboBox.DataSource` property, which is loaded inside the [GridTemplateColumn] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html) using the below code snippet.
+Bind any collection property to the `SfComboBox.DataSource` property, which is loaded inside the [GridTemplateColumn] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html) using the below code snippet.
 
 {% tab %}
 
@@ -589,13 +609,10 @@ Bind any object type collection property to the `SfComboBox.DataSource` property
 
 {% endtab %}
 
-You can download the source code of binding the SfComboBox properties sample [here]()
+## Hide column in button click using MVVM in Xamarin.Forms DataGrid
 
-## Hide column from DataGrid using Button Click in MVVM
-
-You can bind the bool property to the [GridColumn.IsHidden] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~IsHidden.html) property from the viewmodel. `IsHidden` was handled by button click command.
-
-Refer the below code snippet to Hide column from DataGrid using button click in MVVM
+Bind any bool property in the view model to the [GridColumn.IsHidden](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~IsHidden.html) property.
+Refer the below code snippet where we have bound a command to a button click where we change the value of the bound bool property to hide/unhide a column.
 
 {% tab %}
 
@@ -613,7 +630,7 @@ Refer the below code snippet to Hide column from DataGrid using button click in 
     </ContentPage.BindingContext>
     <ContentPage.Content >
         <StackLayout>
-            <Button Text="HidePopulationColumn" Command="{Binding HideColumnCommand}"/>
+            <Button Text="Hide Population Column" Command="{Binding HideColumnCommand}"/>
             <sfgrid:SfDataGrid ItemsSource="{Binding State}" 
                                NavigationMode="Cell"
                                ColumnSizer="Auto"
@@ -638,21 +655,23 @@ Refer the below code snippet to Hide column from DataGrid using button click in 
  class ViewModel : INotifyPropertyChanged
     {  
 	   
-	   public ICommand HideColumnCommand { get; set; }
-		 private bool isHidden;
-		  public bool IsHidden
+	    public ICommand HideColumnCommand { get; set; }
+		private bool isHidden;
+		public bool IsHidden
         {
             get { return isHidden; }
             set { isHidden = value;
                 OnPropertyChanged("IsHidden");
             }
         }
+        
 		public ViewModel()
 		{
-		       IsHidden = false;
+		    IsHidden = false;
             HideColumnCommand = new Command(HideOrUnHideColumn);
 		}
-		  private void HideOrUnHideColumnColumn()
+		
+		private void HideOrUnHideColumnColumn()
         {
             IsHidden = !IsHidden;
 			OnPropertyChanged(nameof(IsHidden));
@@ -663,17 +682,12 @@ Refer the below code snippet to Hide column from DataGrid using button click in 
 
 {% endtab %}
 
-You can download the source code of binding the GridTextColumn.IsHidden properties sample [here]()
+You can download the source code for binding the GridTextColumn.IsHidden from [here]()
 
 ## Filtering in DataGrid using MVVM
 
-In Model-View-ViewModel, SfDataGrid support to filtering the records by setting behavior for the `ContentPage`. In order to filter the records, assign the filtered strings to the viewmodel.FilterText property which will be later applied in FilterPredicate that is assigned to SfDataGrid.View.Filter in OnFilterChanged() method. Call the SfDataGrid.View.RefreshFilter() method after setting the filtered records to the SfDataGrid.View.Filter property.
-
-* To filter records in all the columns or in a particular column, use codes in `OnColumnsSelectionChanged` method.
-* In order to column based filtering, the records can be filtered based on `Equals`,`Not Equals`,`Contains` conditions.
-* To filter records in all the columns or particular column, use codes in `OnFilterOptionsChanged` method.
-
-Refer the below code snippet to filter the records in SfDataGrid from viewModel. ViewModel illustrates the method used to filter the records.
+Refer here[https://help.syncfusion.com/xamarin/datagrid/filtering#view-filtering], to know how to apply filtering in SfDataGrid. Upon referring, you might have noticed that we need the SfDataGrid instance to call the methods required for filtering. To achieve this in MVVM use `Xamarin.Forms.Behaviors` by assigning a behavior class to the page that contains SfDataGrid.
+Refer the below code snippet to create a behavior class, and use that behavior class to filter the records in SfDataGrid from viewModel.
 
 <% tab %>
 
@@ -767,10 +781,11 @@ Refer the below code snippet to filter the records in SfDataGrid from viewModel.
 
 <% endtab %>
 
-The Event and Binding properties of the SfDataGrid can be handled by the behavior.
+The filter events and the methods consuming SfDataGrid can be handled from the behavior as shown below.
 
 <% tab %>
 
+ // Behavior.cs
  public class FilterBehavior : Behavior<ContentPage>
     {
  public void OnColumnsSelectionChanged(object sender, EventArgs e)
@@ -889,10 +904,11 @@ The Event and Binding properties of the SfDataGrid can be handled by the behavio
 
 <% endtab %>
 
-In ViewModel, filtering methods and properties was implemented and method will be called when `OnFilterChanged` triggered.
+Refer the view model codes below, where the actual filtering takes place.
 
 <% tab %>
 
+   // ViewModel.cs
    public bool FilterRecords(object o)
         {
             double res;
@@ -1033,4 +1049,4 @@ In ViewModel, filtering methods and properties was implemented and method will b
 
 <% endtab %>
 
-You can download the source code of the filtering the records from [here] ()
+You can download the source code for filtering the records in MVVM from [here] ()

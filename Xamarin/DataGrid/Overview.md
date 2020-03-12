@@ -16,7 +16,7 @@ I> Xamarin.Forms is unique and offers a single language(C#) and runtime that wor
 <table>
 <tr>
 <th>Features</th>
-<th>Xamarin.Forms<br/>(Android, iOS ,UWP and MacOS)</th>
+<th>Xamarin.Forms<br/>(Android, iOS ,UWP ,WPF and MacOS)</th>
 <th>Xamarin.Android</th>
 <th>Xamarin.iOS</th>
 </tr>

@@ -7,7 +7,7 @@ control: SfChat
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfChat      
 
 
 ## Assembly deployment

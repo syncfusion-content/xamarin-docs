@@ -7,7 +7,7 @@ control: SfChat
 documentation: ug
 ---
 
-# Time break
+# Time break in Message
 
 The chat control provides a convenient way to group messages based on the date and time the messages were created. So, users can easily identify the messages in the order they were created. To enable time break view in `SfChat` set `true` to the [SfChat.ShowTimeBreak](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowTimeBreak.html) property.
 

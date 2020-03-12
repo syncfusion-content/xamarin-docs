@@ -7,7 +7,7 @@ control: SfChat
 documentation: ug
 ---
 
-# Getting Started with SfChat      
+# Getting Started with Xamarin.Forms Chat (SfChat)      
 
 
 ## Assembly deployment

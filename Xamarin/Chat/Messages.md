@@ -1104,7 +1104,7 @@ In the below example, chat control is scrolled down to bottom when a new message
                     TextMessage textMessage = chatItem as TextMessage;
                     if (textMessage != null && textMessage.Author == this.viewModel.CurrentUser)
                     {
-                        textMessage.ShowAvatar = false;
+                       (sender as SfChat).ShowOutgoingMessageAvatar = false;
                     }
                     else
                     {

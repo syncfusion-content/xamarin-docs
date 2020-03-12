@@ -1050,3 +1050,7 @@ Refer the view model codes below, where the actual filtering takes place.
 <% endtab %>
 
 You can download the source code for filtering the records in MVVM from [here] ()
+
+## Interaction commands in Xamarin.Forms DataGrid
+
+The SfDataGrid provides command support for all the intercations such as tap, double tap and long press to support MVVM. Refer [here](https://help.syncfusion.com/xamarin/datagrid/grid-events#commands) to know about the available interaction commands.

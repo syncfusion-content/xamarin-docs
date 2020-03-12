@@ -637,12 +637,12 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 		<td>
-           SfDataGridTheme 
+           SfChatTheme 
             <br/>
             <br/>
         </td>
         <td>    
-            By merging this key in application resources, it is possible to customize the appearance of the SfDataGrid without merging common theme resource and control style resource dictionaries.
+            By merging this key in application resources, it is possible to customize the appearance of the SfChat without merging common theme resource and control style resource dictionaries.
 			
 {% highlight xaml %}
 
@@ -672,7 +672,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
      <tr>
         <td>
-            IncomingMessageTextColor   
+            IncomingMessageTextColor
             <br/>
             <br/>
         </td>
@@ -685,7 +685,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 	<tr>
         <td>
-            IncomingMessageAuthorTextColor  
+            IncomingMessageAuthorTextColor 
             <br/>
             <br/>
         </td>
@@ -698,7 +698,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageTimestampTextColor   
+            IncomingMessageTimestampTextColor
             <br/>
             <br/>
         </td>
@@ -724,7 +724,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageFontFamily 
+            IncomingMessageFontFamily
             <br/>
             <br/>
         </td>
@@ -737,7 +737,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            IncomingMessageFontAttributes  
+            IncomingMessageFontAttributes
             <br/>
             <br/>
         </td>
@@ -750,7 +750,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageFontSize   
+            IncomingMessageFontSize
             <br/>
             <br/>
         </td>
@@ -763,7 +763,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            IncomingMessageAuthorFontFamily    
+            IncomingMessageAuthorFontFamily
             <br/>
             <br/>
         </td>
@@ -776,7 +776,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageAuthorFontAttributes     
+            IncomingMessageAuthorFontAttributes
             <br/>
             <br/>
         </td>
@@ -789,7 +789,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageAuthorFontSize      
+            IncomingMessageAuthorFontSize
             <br/>
             <br/>
         </td>
@@ -802,7 +802,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageTimestampFontFamily       
+            IncomingMessageTimestampFontFamily
             <br/>
             <br/>
         </td>
@@ -815,7 +815,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageTimestampFontAttributes           
+            IncomingMessageTimestampFontAttributes
             <br/>
             <br/>
         </td>
@@ -828,7 +828,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            IncomingMessageTimestampFontSize       
+            IncomingMessageTimestampFontSize
             <br/>
             <br/>
         </td>
@@ -841,7 +841,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            OutgoingMessageTextColor       
+            OutgoingMessageTextColor
             <br/>
             <br/>
         </td>
@@ -854,7 +854,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            OutgoingMessageAuthorTextColor       
+            OutgoingMessageAuthorTextColor
             <br/>
             <br/>
         </td>
@@ -867,7 +867,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            OutgoingMessageTimestampTextColor       
+            OutgoingMessageTimestampTextColor
             <br/>
             <br/>
         </td>
@@ -880,7 +880,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            OutgoingMessageBackgroundColor        
+            OutgoingMessageBackgroundColor
             <br/>
             <br/>
         </td>
@@ -893,7 +893,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            OutgoingMessageFontFamily         
+            OutgoingMessageFontFamily
             <br/>
             <br/>
         </td>
@@ -906,7 +906,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            OutgoingMessageFontAttributes          
+            OutgoingMessageFontAttributes
             <br/>
             <br/>
         </td>
@@ -919,7 +919,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            OutgoingMessageFontSize          
+            OutgoingMessageFontSize
             <br/>
             <br/>
         </td>
@@ -932,7 +932,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            OutgoingMessageAuthorFontFamily          
+            OutgoingMessageAuthorFontFamily
             <br/>
             <br/>
         </td>
@@ -945,7 +945,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
      <tr>
         <td>
-            OutgoingMessageAuthorFontAttributes          
+            OutgoingMessageAuthorFontAttributes
             <br/>
             <br/>
         </td>
@@ -958,7 +958,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            OutgoingMessageAuthorFontSize          
+            OutgoingMessageAuthorFontSize
             <br/>
             <br/>
         </td>
@@ -971,7 +971,7 @@ This page lists the keys for each control and the element to which it is mapped 
      
 	 <tr>
         <td>
-            OutgoingMessageTimestampFontAttributes          
+            OutgoingMessageTimestampFontAttributes
             <br/>
             <br/>
         </td>
@@ -984,7 +984,7 @@ This page lists the keys for each control and the element to which it is mapped 
      
 	 <tr>
         <td>
-            OutgoingMessageTimestampFontSize          
+            OutgoingMessageTimestampFontSize
             <br/>
             <br/>
         </td>
@@ -997,7 +997,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            EditorTextColor          
+            EditorTextColor
             <br/>
             <br/>
         </td>
@@ -1010,7 +1010,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            EditorBackgroundColor          
+            EditorBackgroundColor
             <br/>
             <br/>
         </td>
@@ -1023,7 +1023,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            EditorFontFamily          
+            EditorFontFamily
             <br/>
             <br/>
         </td>
@@ -1036,7 +1036,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            EditorFontAttributes          
+            EditorFontAttributes
             <br/>
             <br/>
         </td>
@@ -1049,7 +1049,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            EditorFontSize          
+            EditorFontSize
             <br/>
             <br/>
         </td>
@@ -1062,7 +1062,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
 	 <tr>
         <td>
-            SendButtonColor          
+            SendButtonColor
             <br/>
             <br/>
         </td>
@@ -1075,7 +1075,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            SendButtonDisabledColor          
+            SendButtonDisabledColor
             <br/>
             <br/>
         </td>
@@ -1088,7 +1088,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            TypingIndicatorTextColor          
+            TypingIndicatorTextColor
             <br/>
             <br/>
         </td>
@@ -1101,7 +1101,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            TypingIndicatorBackgroundColor          
+            TypingIndicatorBackgroundColor
             <br/>
             <br/>
         </td>
@@ -1114,7 +1114,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            TypingIndicatorFontFamily          
+            TypingIndicatorFontFamily
             <br/>
             <br/>
         </td>
@@ -1127,7 +1127,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            TypingIndicatorFontAttributes          
+            TypingIndicatorFontAttributes
             <br/>
             <br/>
         </td>
@@ -1140,7 +1140,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
 	 <tr>
         <td>
-            TypingIndicatorFontSize          
+            TypingIndicatorFontSize
             <br/>
             <br/>
         </td>
@@ -1153,7 +1153,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            TimeBreakViewTextColor          
+            TimeBreakViewTextColor
             <br/>
             <br/>
         </td>
@@ -1166,7 +1166,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            TimeBreakViewBackgroundColor          
+            TimeBreakViewBackgroundColor
             <br/>
             <br/>
         </td>
@@ -1179,7 +1179,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            TimeBreakViewFontFamily          
+            TimeBreakViewFontFamily
             <br/>
             <br/>
         </td>
@@ -1192,7 +1192,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            TimeBreakViewFontAttributes          
+            TimeBreakViewFontAttributes
             <br/>
             <br/>
         </td>
@@ -1205,7 +1205,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            TimeBreakViewFontSize          
+            TimeBreakViewFontSize
             <br/>
             <br/>
         </td>
@@ -1218,7 +1218,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            SuggestionListItemTextColor          
+            SuggestionListItemTextColor
             <br/>
             <br/>
         </td>
@@ -1231,7 +1231,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
 	 <tr>
         <td>
-            SuggestionListItemBackgroundColor          
+            SuggestionListItemBackgroundColor
             <br/>
             <br/>
         </td>
@@ -1244,7 +1244,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            SuggestionListBackgroundColor          
+            SuggestionListBackgroundColor
             <br/>
             <br/>
         </td>
@@ -1257,7 +1257,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            SuggestionListItemFontFamily          
+            SuggestionListItemFontFamily
             <br/>
             <br/>
         </td>
@@ -1270,7 +1270,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            SuggestionListItemFontAttributes          
+            SuggestionListItemFontAttributes
             <br/>
             <br/>
         </td>
@@ -1282,7 +1282,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>     
 	 <tr>
         <td>
-            SuggestionListItemFontSize          
+            SuggestionListItemFontSize
             <br/>
             <br/>
         </td>
@@ -1294,7 +1294,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>     
 	 <tr>
         <td>
-            SuggestionListItemBorderColor          
+            SuggestionListItemBorderColor
             <br/>
             <br/>
         </td>
@@ -1307,7 +1307,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            DatePickerIconColor          
+            DatePickerIconColor
             <br/>
             <br/>
         </td>
@@ -1320,7 +1320,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            TimePickerIconColor          
+            TimePickerIconColor
             <br/>
             <br/>
         </td>
@@ -1331,9 +1331,9 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>     
 	
-	 <tr>
+	<tr>
         <td>
-            DatePickerTextColor          
+            DatePickerTextColor
             <br/>
             <br/>
         </td>
@@ -1346,20 +1346,187 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	 <tr>
         <td>
-            DatePickerTextColor          
+            TimePickerTextColor
             <br/>
             <br/>
         </td>
         <td>
-            Color of the text in date picker.
+            Color of the text in time picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	 <tr>
+        <td>
+            DatePickerBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of date picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	 <tr>
+        <td>
+            TimePickerBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of time picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	 <tr>
+        <td>
+            DatePickerBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of date picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	 <tr>
+        <td>
+            TimePickerBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of time picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	 <tr>
+        <td>
+            EditorPlaceholderTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Place holder text color of the editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	 <tr>
+        <td>
+            EditorBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            The border color of editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	 <tr>
+        <td>
+            MessageInputViewBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Message input view background color.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	 <tr>
+        <td>
+            TimeBreakViewBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the time break view.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	 <tr>
+        <td>
+            HyperlinkColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the URL in a hyper link message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	 <tr>
+        <td>
+            HyperlinkDescriptionTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the URL's meta description in a hyper link message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	 <tr>
+        <td>
+            HyperlinkDescriptionBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the URL description area in a hyper link message.
             <br/>
             <br/>
         </td>
     </tr>	
 
+	<tr>
+        <td>
+            HyperlinkMetaTitleTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the URL's meta title in a hyper link message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            CalendarBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the calendar message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
 </table>
-
-
 
 ## SfDateTimeRangeNavigator
 

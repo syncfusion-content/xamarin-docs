@@ -28,8 +28,8 @@ The below table illustrates the predefined automation values set internally whic
 </tr>
 <tr>
 <td>Header Cell</td>
-<td>"R" + RowIndex + "C" + ColumnIndex</td>
-<td>R0C2</td>
+<td>"R" + RowIndex + "C" + ColumnIndex + " " + CellValue</td>
+<td>R0C2 Customer Name</td>
 </tr>
 <tr>
 <td>Row</td>
@@ -38,8 +38,8 @@ The below table illustrates the predefined automation values set internally whic
 </tr>
 <tr>
 <td>Grid Cell</td>
-<td>"R" + RowIndex + "C" + ColumnIndex</td>
-<td>R4C2</td>
+<td>"R" + RowIndex + "C" + ColumnIndex + " " + CellValue</td>
+<td>R4C2 Thomas</td>
 </tr>
 <tr>
 <td>Group Header</td>
@@ -127,13 +127,13 @@ Refer to the following code snippet to access the inner elements of data grid fr
 public void SfDataGrid_AutomationId()
 {
    // To enter edit mode for the grid cell at fourth row and second column.
-   App.DoubleTap("SyncfusionGrid R4C1");
+   App.DoubleTap("SyncfusionGrid R4C1 California");
 
    // To tap group expand and collapse icon
    App.Tap("SyncfusionGrid Row5");
 
    // To apply sorting 
-   App.Tap("SyncfusionGrid R2C1");
+   App.Tap("SyncfusionGrid R2C1 State Name");
 
    // To click LoadMoreView for loading more items
    App.Tap("SyncfusionGrid LOAD MORE ITEMS");

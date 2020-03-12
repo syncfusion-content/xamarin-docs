@@ -1147,7 +1147,7 @@ this.sfChat.SendMessage += this.SfChat_SendMessage
 /// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.</param>
 private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
 {
-    sfChat.ShowOutgoingMessageAvatar = true;
+    (sender as SfChat).ShowOutgoingMessageAvatar = true;
 }
 
 {% endhighlight %}
@@ -1191,8 +1191,7 @@ public class SendMessageCommandExt : ICommand
 
     public void Execute(object parameter)
     {
-        var args = parameter as SendMessageEventArgs;
-        args.Message.ShowAvatar = true;
+        (parameter as SfChat).ShowOutgoingMessageAvatar = true;
     }
 }
 

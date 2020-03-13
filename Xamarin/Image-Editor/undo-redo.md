@@ -9,7 +9,7 @@ documentation: ug
 
 # Undo and Redo operations in SfImageEditor
 
-One of the important features of the image editor control is to perform `Undo` and `Redo` operations for adding shapes, text, and drawing paths. 
+One of the important features of the image editor control is to perform `Undo` and `Redo` operations for adding shapes, text, effects and drawing paths. 
 
 ## Undo
 
@@ -21,6 +21,7 @@ Undo can be performed for the following operations:
 * Change positions.
 * Color/fill changes.
 * Path drawings.
+* Applying Effects.
 
 {% tabs %}
 

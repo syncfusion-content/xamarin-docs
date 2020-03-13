@@ -48,8 +48,7 @@ The [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCha
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        CurrentUser="{Binding CurrentUser}"
-					   ShowOutgoingMessageAvatar="True"
-                       ShowIncomingMessageAvatar="True" />
+					   ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -74,7 +73,6 @@ namespace GettingStarted
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
 			this.sfChat.ShowOutgoingMessageAvatar = true;
-            this.sfChat.ShowIncomingMessageAvatar = true;
             this.Content = sfChat;
         }
     }
@@ -183,8 +181,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        CurrentUser="{Binding CurrentUser}"
-					   ShowOutgoingMessageAvatar="True"
-                       ShowIncomingMessageAvatar="True" />
+					   ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -207,7 +204,6 @@ namespace GettingStarted
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
 			this.sfChat.ShowOutgoingMessageAvatar = true;
-            this.sfChat.ShowIncomingMessageAvatar = true;
             this.Content = sfChat;
         }
     }
@@ -332,8 +328,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
                        Messages="{Binding Messages}"
                        SendMessage="SfChat_SendMessage"
                        CurrentUser="{Binding CurrentUser}" 
-					   ShowOutgoingMessageAvatar="True"
-                       ShowIncomingMessageAvatar="True" />
+					   ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -357,7 +352,6 @@ namespace GettingStarted
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
 			this.sfChat.ShowOutgoingMessageAvatar = true;
-            this.sfChat.ShowIncomingMessageAvatar = true;
             this.sfChat.SendMessage += this.SfChat_SendMessage;
             this.Content = sfChat;
         }
@@ -485,8 +479,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
                        Messages="{Binding Messages}"
                        SendMessage="SfChat_SendMessage"
                        CurrentUser="{Binding CurrentUser}"
-					   ShowOutgoingMessageAvatar="True"
-                       ShowIncomingMessageAvatar="True" />
+					   ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -509,7 +502,6 @@ namespace GettingStarted
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
 			this.sfChat.ShowOutgoingMessageAvatar = true;
-            this.sfChat.ShowIncomingMessageAvatar = true;
             this.sfChat.SendMessage += this.SfChat_SendMessage;
             this.Content = sfChat;
         }
@@ -639,8 +631,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
                        Messages="{Binding Messages}"
                        SendMessage="SfChat_SendMessage"
                        CurrentUser="{Binding CurrentUser}"
-					   ShowOutgoingMessageAvatar="True"
-                       ShowIncomingMessageAvatar="True" />
+					   ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -663,7 +654,6 @@ namespace GettingStarted
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
 			this.sfChat.ShowOutgoingMessageAvatar = true;
-            this.sfChat.ShowIncomingMessageAvatar = true;
             this.sfChat.SendMessage += this.SfChat_SendMessage;
             this.Content = sfChat;
         }
@@ -791,8 +781,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        CurrentUser="{Binding CurrentUser}"
-					   ShowOutgoingMessageAvatar="True"
-                       ShowIncomingMessageAvatar="True" />
+					   ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -815,7 +804,6 @@ namespace GettingStarted
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
 			this.sfChat.ShowOutgoingMessageAvatar = true;
-            this.sfChat.ShowIncomingMessageAvatar = true;
             this.Content = sfChat;
         }
     }

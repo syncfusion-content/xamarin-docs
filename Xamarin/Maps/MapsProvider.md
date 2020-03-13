@@ -485,7 +485,7 @@ private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChang
 
 This feature is used to calculate the initial zoom level automatically in two ways.
 
-* Distance in radius(Meters/KiloMeters/Miles)
+* Distance in radius(Meter/KiloMeter/Mile)
 * Geo-bounds(Northeast, Southwest)
 
 ### Distance in radius 
@@ -611,7 +611,7 @@ N> When setting LatLngBounds and DistanceRadius at the same time, the priority i
 
 ## Get the map tile layer bounds
 
-You can get imagery layer pixel bounds while zooming, panning and Geo-Coordinate value changing by using `MapBounds` property of imagery layer.
+You can get imagery layer pixel bounds by using `MapBounds` property while zooming, panning and changing Geo-Coordinate value in imagery layer.
 
 {% tabs %}
 

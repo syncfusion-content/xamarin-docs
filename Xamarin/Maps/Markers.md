@@ -7,7 +7,7 @@ control: SfMaps
 documentation: ug
 ---
 
-# SfMaps control Markers support 
+# SfMaps control markers support 
 
 Markers are used to show some messages on maps.
 

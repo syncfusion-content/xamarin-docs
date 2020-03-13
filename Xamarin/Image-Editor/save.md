@@ -39,7 +39,7 @@ The SfImageEditor has events when performing save operation namely [`ImageSaving
 
 ### ImageSaving
 
-This event occurs before saving the image. 
+This event occurs before saving the image. Described the ImageSaving event arguments below.
 
 `Cancel` : You can control the save functionality using the `Cancel` argument.
 

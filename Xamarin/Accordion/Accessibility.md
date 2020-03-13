@@ -6,11 +6,11 @@ platform: Xamarin
 control: Accordion
 documentation: ug
 ---
-# AutomationId
+# Accessibility in Xamarin Accordion (SfAccordion)
 
-The Accordion control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the Accordion control. To keep unique AutomationId, these inner element's AutomationIds are updated based on Accordion control `AutomationId`. 
+The Accordion control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the Accordion control. To keep unique AutomationId, these inner element's AutomationIds are updated based on the Accordion control `AutomationId`. 
 
-For example, if we set Accordion's AutomationId as "Automation" then Automation framework will interact with expander icon of AccordionItem  as `AutomationItem1 Expander`. Here, along with the control's AutomationId, index of an item will also be added for differentiating each AccordionItem expander. 
+For example, if you set Accordion's AutomationId as "Automation", then Automation framework will interact with expander icon of AccordionItem  as `AutomationItem1 Expander`. Here, along with the control's AutomationId, index of an item will also be added for differentiating each AccordionItem expander. 
 
 <table>
 <tr>
@@ -29,6 +29,6 @@ where <b>Automation</b> represents Control AutomationId, <b>Item1</b> represents
 </tr>
 </table>
 
-The following image denotes the AutomationIds of inner elements.
+The following image shows the AutomationIds of inner elements.
 
 ![Automation id for accordion](accordion_images/AccordionAutomationImage.png)

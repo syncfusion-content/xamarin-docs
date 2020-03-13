@@ -52,7 +52,7 @@ You can bind any int value to the [SfDataGrid.SelectedIndex](http://help.syncfus
 
 {% endhighlight %}
 
-You can download the source code of the entire sample from [here]().
+View sample in [Github](https://github.com/SyncfusionExamples/Xamarin-DataGrid-SelectedIndex-Binding-MVVM/tree/master).
 
 ## Xamarin.Forms DataGrid SelectedItem binding
 
@@ -97,7 +97,7 @@ You can bind an object from the underlying source collection to the [SfDataGrid.
 		
 {% endhighlight %}
 
-You can download the source code of the entire sample from [here]().
+View sample in [Github](https://github.com/SyncfusionExamples/Xamarin-DataGrid-SelectedItem-Binding-MVVM).
 
 ## Xamarin.Forms DataGrid SelectedItems binding
 
@@ -144,7 +144,7 @@ You can bind any object type collection to the [SfDataGrid.SelectedItems](http:/
 
 {% endhighlight %}
 
-You can download the source code of the entire sample from [here]().
+View sample in [Github](https://github.com/SyncfusionExamples/Xamarin-DataGrid-SelectedItems-Binding-MVVM).
 
 ## Xamarin.Forms DataGrid column properties binding
 
@@ -185,7 +185,7 @@ SfDataGrid allows you to assign values via binding to the properties of the [Gri
 
 {% endhighlight %}
 
-You can download the source code of the entire sample from [here]().
+View sample in [Github]().
 
 ## Binding Picker Column ItemsSource from ViewModel in Xamarin.Forms DataGrid
 
@@ -256,7 +256,7 @@ You can bind any collection to the [GridPickerColumn.ItemsSource](https://help.s
 
 {% endhighlight %}
 
-You can download the source code of the entire sample from [here]().
+View sample in [Github]().
 
 ## Binding the ItemsSource from ViewModel for the Picker loaded inside template column in Xamarin.Forms DataGrid
 
@@ -326,7 +326,7 @@ The `ItemsSource` of a picker which is loaded inside the [GridTemplateColumn](ht
 
 {% endhighlight %}
 
-You can download the source code of the entire sample from [here]().
+View sample in [Github]().
 
 ## Binding commands for the button loaded inside template column in Xamarin.Forms DataGrid
 
@@ -375,7 +375,7 @@ You can provide custom actions to the `Command` property of a button loaded insi
 
 {% endhighlight %}
 
-You can download the source code of the entire sample from [here]().
+View sample in [Github]().
 
 ## Binding columns collection from ViewModel in Xamarin.Forms DataGrid
 
@@ -450,7 +450,7 @@ You can bind any `Columns` type collection in the view model to the [SfDataGrid.
 
 {% endtab %}
 
-You can download the entire source code of binding the `SfDataGrid.Columns` properties [here]()
+View sample in [Github](https://github.com/SyncfusionExamples/Binding-Columns-in-Xamarin-DataGrid).
 
 ## Binding ComboBox Column ItemsSource from ViewModel in Xamarin.Forms DataGrid
 
@@ -537,7 +537,7 @@ You can bind any collection to the [GridComboBoxColumn.ItemsSource](https://help
 
 {% endtab %}
 
-You can download the entire source code of binding the `SfDataGrid.Columns` properties [here]()
+View sample in [Github]().
 
 ## Binding the ItemsSource from ViewModel for the SfComboBox loaded inside the template column in Xamarin.Forms DataGrid
 
@@ -701,7 +701,7 @@ Refer the below code snippet where we have bound a command to a button click whe
 
 {% endtab %}
 
-You can download the source code for binding the GridTextColumn.IsHidden from [here]()
+View sample in [Github]().
 
 ## Filtering in DataGrid using MVVM
 
@@ -1068,8 +1068,8 @@ Refer the view model codes below, where the actual filtering takes place.
 
 <% endtab %>
 
-You can download the source code for filtering the records in MVVM from [here] ()
+View sample in [Github]().
 
 ## Interaction commands in Xamarin.Forms DataGrid
 
-The SfDataGrid provides command support for all the intercations such as tap, double tap and long press to support MVVM. Refer [here](https://help.syncfusion.com/xamarin/datagrid/grid-events#commands) to know about the available interaction commands.
+The SfDataGrid provides command support for all the interactions such as tap, double tap and long press to support MVVM. Refer [here](https://help.syncfusion.com/xamarin/datagrid/grid-events#commands) to know about the available interaction commands.

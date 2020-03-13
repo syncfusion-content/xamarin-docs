@@ -360,14 +360,22 @@ Labels visibility can be customized using the [`ShowLabels`](https://help.syncfu
 ## Customize the scale labels format
 
 `LabelFormat` property allows you to customize the scale labels format.
+`Culture` property is used to format the number group size and group separator of the value based on the respective culture.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-         <gauge:SfLinearGauge>
+       <gauge:SfLinearGauge>
             <gauge:SfLinearGauge.Scales>
-                <gauge:LinearScale ScaleBarColor="#e0e0e0" LabelFormat="c:{0:c2}" LabelColor="Black"  x:Name="scale" ScaleBarSize ="20" >
+                <gauge:LinearScale x:Name="scale" MaximumLabels="4"  ScaleOffset="50" MinimumValue="10" MaximumValue="50" Interval="10" ScaleBarColor="#E0E0E0" 
+                               MinorTicksPerInterval ="1" LabelColor="#000000" LabelFontSize="20" LabelFormat="c:{0:c}" LabelOffset="10">
+                    <gauge:LinearScale.Pointers>
+                        <gauge:BarPointer Value="35" Color="#DC3913" />
+                    </gauge:LinearScale.Pointers>
+                    <gauge:LinearScale.Ranges>
+                        <gauge:LinearRange  StartValue="10" EndValue="30" Color="#3267CC" Offset = "-55" />
+                    </gauge:LinearScale.Ranges>
                 </gauge:LinearScale>
             </gauge:SfLinearGauge.Scales>
         </gauge:SfLinearGauge>
@@ -376,15 +384,31 @@ Labels visibility can be customized using the [`ShowLabels`](https://help.syncfu
 
 {% highlight c# %}
 
-         SfLinearGauge linearGauge = new SfLinearGauge();
-         LinearScale linearScale = new LinearScale();
-         linearScale.ScaleBarSize = 20;
-         linearScale.LabelFormat = "{0:c}";
-         linearScale.ScaleBarColor = Color.LightGray;
-         linearScale.LabelColor = Color.Black;
-         linearScale.Culture = new System.Globalization.CultureInfo("fr-FR");
-         linearGauge.Scales.Add(linearScale);
-   
+            SfLinearGauge linearGauge = new SfLinearGauge();
+            LinearScale linearScale = new LinearScale();
+            linearScale.MaximumLabels = 4;
+            linearScale.ScaleOffset = 50;
+            linearScale.MinimumValue = 10;
+            linearScale.MaximumValue = 50;
+            linearScale.Interval = 10;
+            linearScale.ScaleBarColor = Color.FromHex("#E0E0E0");
+            linearScale.MinorTicksPerInterval = 1;
+            linearScale.LabelColor = Color.FromHex("#000000");
+            linearScale.LabelFontSize = 20;
+            linearScale.LabelFormat = "c:{0:c}";
+            linearScale.LabelOffset = 10;
+            BarPointer barPointer = new BarPointer();
+            barPointer.Value = 35;
+            barPointer.Color = Color.FromHex("#DC3913");
+            linearScale.Pointers.Add(barPointer);
+            LinearRange linearRange = new LinearRange();
+            linearRange.StartValue = 10;
+            linearRange.EndValue = 30;
+            linearRange.Color = Color.FromHex("#3267CC");
+            linearRange.Offset = -55;
+            linearScale.Ranges.Add(linearRange);
+            linearScale.Culture = new System.Globalization.CultureInfo("fr-FR");
+            linearGauge.Scales.Add(linearScale);
     
 {% endhighlight %}
 

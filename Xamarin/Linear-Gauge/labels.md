@@ -357,7 +357,9 @@ Labels visibility can be customized using the [`ShowLabels`](https://help.syncfu
 
 ![Xamarin Label Visiblity Image](labels_images/label6.png)
 
-## Customize the scale labels format
+## Customize the scale labels
+ 
+The scale label are customized by using `LabelFormat` and `Culture` properties of linear scale.
 
 `LabelFormat` property allows you to customize the scale labels format.
 `Culture` property is used to format the number group size and group separator of the value based on the respective culture.

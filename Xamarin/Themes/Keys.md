@@ -653,8 +653,8 @@ This page lists the keys for each control and the element to which it is mapped 
         <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
             <ResourceDictionary>
                 <x:String x:Key="SfChatTheme">CustomTheme</x:String> 
-                <Color x:Key="SfChatRecordBackgroundColor">Blue</Color> 
-                <Color x:Key="SfChatRecordForegroundColor">Green</Color> 
+                <Color x:Key="SfChatIncomingMessageTextColor">Blue</Color> 
+                <Color x:Key="SfChatIncomingMessageAuthorTextColor">Green</Color> 
             </ResourceDictionary>
         </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
     </syncCore:SyncfusionThemeDictionary>

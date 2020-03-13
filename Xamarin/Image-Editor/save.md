@@ -39,42 +39,50 @@ The SfImageEditor has events when performing save operation namely [`ImageSaving
 
 ### ImageSaving
 
-This event occurs before saving the image. You can control the save functionality using the `Cancel` argument.
+This event occurs before saving the image. 
 
-* Cancel: 
+`Cancel` : You can control the save functionality using the `Cancel` argument.
 
 It restricts saving image to the default location when set `Cancel` value to `true`.
 
+{% tabs %}
+
+{% highlight xaml %}
+
+            <imageeditor:SfImageEditor Source="{Binding Image}" ImageSaving="SfImageEditor_ImageSaving" />
+
+{% endhighlight %}
+
 {% highlight C# %}
-
-          public MainPage()
-            {               
-                            . . .
-
-                  editor.ImageSaving += editor_ImageSaving;
-
-                            . . .
-            }
-
-        private void editor_ImageSaving(object sender, ImageSavingEventArgs args)
+           
+  		    private void editor_ImageSaving(object sender, ImageSavingEventArgs args)
             {
                 args.Cancel = true;  
             }
 
-
 {% endhighlight %}
 
-* Stream
+{% endtabs %}
 
-You can get current image edits as stream using this argument.
+`Stream` : You can get current image edits as stream using this argument.
 
 {% highlight C# %}
-         
-        private void editor_ImageSaving(object sender, ImageSavingEventArgs args)
+           
+            private void editor_ImageSaving(object sender, ImageSavingEventArgs args)
             {
                 var stream = args.Stream;
             }
 
+{% endhighlight %}
+
+`FileName`: You can save the edited image in the specified name. 
+
+{% highlight c# %}
+
+          private void SfImageEditor_ImageSaving(object sender, ImageSavingEventArgs args)
+		  {
+             args.FileName = "SavedImage";
+          }
 
 {% endhighlight %}
 
@@ -303,25 +311,3 @@ private void ImageEditor_ImageEdited(object sender, ImageEditedEventArgs e)
 
 {% endhighlight %}
 
-## File name support for saving image
-
-Using `FileName` property, we can save the edited image in the specified name. 
-
-{% tabs %}
-
-{% highlight xaml %}
-
-   <imageeditor:SfImageEditor Source="{Binding Image}" ImageSaving="SfImageEditor_ImageSaving" />
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-  private void SfImageEditor_ImageSaving(object sender, ImageSavingEventArgs args)
-  {
-     args.FileName = "SavedImage";
-  }
-
-{% endhighlight %}
-
-{% endtabs %}

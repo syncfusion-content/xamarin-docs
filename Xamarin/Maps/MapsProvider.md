@@ -492,6 +492,8 @@ This feature allows to calculate the initial zoom level automatically in two way
 
 Calculate the initial zoom level automatically based on the `Radius` and `DistanceType` properties of imagery layer class.
 
+N> `DistanceType` property default value is KiloMeter.
+
 {% tabs %}
 
 {% highlight xml %}

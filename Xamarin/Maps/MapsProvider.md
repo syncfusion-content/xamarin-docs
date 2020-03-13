@@ -483,7 +483,7 @@ private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChang
 
 ## Calculate zoom level based on map geo-bounds or distance
 
-This feature allows to calculate the initial zoom level automatically in two ways.
+This feature is used to calculate the initial zoom level automatically in two ways.
 
 * Distance in radius(Meters/KM/Mile)
 * Geo-bounds(Northeast, Southwest)

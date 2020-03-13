@@ -631,7 +631,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="64">
+        <td rowspan="67">
             SfChatStyles  
             <br/>
             <br/>

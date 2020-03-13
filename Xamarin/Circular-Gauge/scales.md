@@ -426,7 +426,7 @@ You can change the default label by hooking the [`LabelCreated`](https://help.sy
 
 ## Calculate radius and center based on angle
 
-This feature is used to automatically adjust the radius and center of a circular gauge based on the `StartAngle` and `SweepAngle` properties and enabling the `IsCenterAligned` property of gauge.
+This feature is used to automatically adjust the radius and center of a circular gauge based on the `StartAngle` and `SweepAngle` properties by enable the `IsCenterAligned` property of gauge.
 
 N> Default value of the IsCenterAligned property is false. 
 

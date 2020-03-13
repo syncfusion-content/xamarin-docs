@@ -7,7 +7,7 @@ control: SfMaps
 documentation: ug
 ---
 
-# SfMaps control Map Providers
+# SfMaps control map Providers
 
 The maps control supports map providers such as OpenStreetMap and Bing Maps that can be added to an imagery layer in maps.
 
@@ -483,9 +483,9 @@ private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChang
 
 ## Calculate zoom level based on map geo-bounds or distance
 
-This feature allows to calculate the initial zoom level automatically in two ways.
+This feature is used to calculate the initial zoom level automatically in two ways.
 
-* Distance in radius(Meters/KM/Mile)
+* Distance in radius(Meter/KiloMeter/Mile)
 * Geo-bounds(Northeast, Southwest)
 
 ### Distance in radius 
@@ -611,7 +611,7 @@ N> When setting LatLngBounds and DistanceRadius at the same time, the priority i
 
 ## Get the map tile layer bounds
 
-You can get imagery layer pixel bounds while zooming, panning and Geo-Coordinate value changing by using `MapBounds` property of imagery layer.
+You can get imagery layer pixel bounds by using `MapBounds` property while zooming, panning and changing Geo-Coordinate value in imagery layer.
 
 {% tabs %}
 

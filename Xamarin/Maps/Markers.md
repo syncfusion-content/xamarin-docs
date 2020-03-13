@@ -7,7 +7,7 @@ control: SfMaps
 documentation: ug
 ---
 
-# SfMaps control Markers support 
+# SfMaps control markers support 
 
 Markers are used to show some messages on maps.
 
@@ -794,7 +794,7 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 
 ## Reset the old custom view marker
 
-If you add any `CustomView` for marker from `MarkerSelected` event, then the corresponding view will be applied to the selected marker. Custom view will be added continuously for all the clicked marker, but don’t have option to reset the old one. Now you can achieve this by using the ResetOldSelectedView property. If the Boolean set as true, then it will be removed the old `CustomView` of marker and load the initially rendered marker.
+If you add any `CustomView` for marker from `MarkerSelected` event, then the corresponding view will be applied to the selected marker. Custom view will be added continuously for all the selected marker, but don’t have option to reset the old one. Now you can achieve this by using the ResetOldSelectedView property. If the Boolean set as true, then it will be removed the old `CustomView` of marker and load the initially rendered marker.
 
 {% tabs %}
 

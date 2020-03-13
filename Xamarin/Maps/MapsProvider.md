@@ -595,7 +595,7 @@ Calculate the initial zoom level automatically based on the LatLngBounds(Northea
             bounds.Northeast = new Position(38.909804, -77.043442);
             bounds.Southwest = new Position(38.909804, -77.043442);
             layer.LatLngBounds = bounds;
-		MapMarker marker = new MapMarker();
+            MapMarker marker = new MapMarker();
             marker.Latitude = "38.909804";
             marker.Longitude = "-77.043442";
             layer.MarkerTemplate = this.Resources["markerTemplate"] as DataTemplate;

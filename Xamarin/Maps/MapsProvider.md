@@ -485,7 +485,7 @@ private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChang
 
 This feature is used to calculate the initial zoom level automatically in two ways.
 
-* Distance in radius(Meters/KM/Mile)
+* Distance in radius(Meters/KiloMeters/Miles)
 * Geo-bounds(Northeast, Southwest)
 
 ### Distance in radius 

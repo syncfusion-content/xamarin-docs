@@ -185,7 +185,7 @@ SfDataGrid allows you to assign values via binding to the properties of the [Gri
 
 {% endhighlight %}
 
-View sample in [Github]().
+View sample in [Github](https://github.com/SyncfusionExamples/Xamarin-DataGrid-Column-Properties-Binding-MVVM).
 
 ## Binding Picker Column ItemsSource from ViewModel in Xamarin.Forms DataGrid
 
@@ -256,7 +256,7 @@ You can bind any collection to the [GridPickerColumn.ItemsSource](https://help.s
 
 {% endhighlight %}
 
-View sample in [Github]().
+View sample in [Github](https://github.com/SyncfusionExamples/Binding-Picker-Column--ItemsSource-from-ViewModel-in-Xamarin.Forms-DataGrid).
 
 ## Binding the ItemsSource from ViewModel for the Picker loaded inside template column in Xamarin.Forms DataGrid
 
@@ -326,7 +326,7 @@ The `ItemsSource` of a picker which is loaded inside the [GridTemplateColumn](ht
 
 {% endhighlight %}
 
-View sample in [Github]().
+View sample in [Github](https://github.com/SyncfusionExamples/Binding-the-ItemsSource-from-ViewModel-for-the-Picker-loaded-inside-template-column-in-Xamarin.Forms).
 
 ## Binding commands for the button loaded inside template column in Xamarin.Forms DataGrid
 
@@ -375,7 +375,7 @@ You can provide custom actions to the `Command` property of a button loaded insi
 
 {% endhighlight %}
 
-View sample in [Github]().
+View sample in [Github](https://github.com/SyncfusionExamples/Binding-commands-for-the-button-loaded-inside-template-column-in-Xamarin.Forms-DataGrid).
 
 ## Binding columns collection from ViewModel in Xamarin.Forms DataGrid
 
@@ -537,7 +537,7 @@ You can bind any collection to the [GridComboBoxColumn.ItemsSource](https://help
 
 {% endtab %}
 
-View sample in [Github]().
+View sample in [Github](https://github.com/SyncfusionExamples/Binding-ComboBox-Column-ItemsSource-from-ViewModel-in-Xamarin.Forms-DataGrid).
 
 ## Binding the ItemsSource from ViewModel for the SfComboBox loaded inside the template column in Xamarin.Forms DataGrid
 
@@ -628,6 +628,8 @@ You can bind any collection to the `SfComboBox.DataSource` property, which is lo
 
 {% endtab %}
 
+View sample in [Github](https://github.com/SyncfusionExamples/Binding-ItemsSource-for-the-SfComboBox-inside-template-column-in-Xamarin-DataGrid).
+
 ## Hide column in button click using MVVM in Xamarin.Forms DataGrid
 
 Bind any bool property in the view model to the [GridColumn.IsHidden](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~IsHidden.html) property.
@@ -701,7 +703,7 @@ Refer the below code snippet where we have bound a command to a button click whe
 
 {% endtab %}
 
-View sample in [Github]().
+View sample in [Github](https://github.com/SyncfusionExamples/Hide-column-in-button-click-using-MVVM-in-Xamarin.Forms-DataGrid).
 
 ## Filtering in DataGrid using MVVM
 

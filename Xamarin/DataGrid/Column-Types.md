@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Column Types 
+# Column Types in Xamarin.Forms DataGrid (SfDataGrid) 
 
 The SfDataGrid contains different types of columns. The functionalities of the column can be implied by its name. Based on the requirements any column can be used. 
 

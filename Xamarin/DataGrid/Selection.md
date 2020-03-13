@@ -308,7 +308,7 @@ dataGrid.MoveCurrentCellTo(new RowColumnIndex(3, 3),false);
 {% endhighlight %}
 {% endtabs %}
 
-when the `SfDataGrid.SelectionMode` is 'Multiple', If you want to clear the selection from all the selected items and apply selection to the passed 'RowColumnIndex' then 'needToClearSelection' is set as 'true'.
+When the `SfDataGrid.SelectionMode` is 'Multiple', when moving the current cell, if you want to clear the selection of the currently selected items , pass true to the `needToClearSelection` parameter in the `MoveCurrentCellTo()` method.
  
  {% tabs %}
 {% highlight c# %}

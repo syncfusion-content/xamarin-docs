@@ -921,7 +921,7 @@ The filter events and the methods consuming SfDataGrid can be handled from the b
             this.optionsList.SelectedIndexChanged += this.OnFilterOptionsChanged;
             base.OnAttachedTo(bindAble);
         }
-		}
+	}
 
 <% endtab %>
 
@@ -1067,7 +1067,7 @@ Refer the view model codes below, where the actual filtering takes place.
 
             return false;
         }
-
+    }
 <% endtab %>
 
 View sample in [Github]().

@@ -352,8 +352,7 @@ The following code example binds the collection created in previous step to `SfC
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        CurrentUser="{Binding CurrentUser}"
-					   ShowOutgoingMessageAvatar="True"
-                       ShowIncomingMessageAvatar="True" />
+					   ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -376,7 +375,6 @@ namespace GettingStarted
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
 			this.sfChat.ShowOutgoingMessageAvatar=true;
-			this.sfChat.ShowIncomingMessageAvatar=true;
             this.Content = sfChat;
         }
     }

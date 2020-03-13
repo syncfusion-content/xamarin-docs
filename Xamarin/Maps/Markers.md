@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Markers in Syncfusion Map control
-description: This section describes about map marker in Xamarin Forms SfMaps control.
+description: This section describes about adding marker, customizing marker, custom marker support, marker alignment support in Xamarin Forms SfMaps control.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Xamarin Forms SfMaps control Markers
+# SfMaps control Markers support 
 
 Markers are used to show some messages on maps.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Maps provider of Syncfusion Maps control for Xamarin.Forms 
-description: Describes the maps provider support in SfMaps control
+description: Describes the maps provider support in Xamarin Forms SfMaps control
 platform: xamarin
 control: SfMaps 
 documentation: ug
 ---
 
-# Map Providers
+# SfMaps control Map Providers
 
 The maps control supports map providers such as OpenStreetMap and Bing Maps that can be added to an imagery layer in maps.
 

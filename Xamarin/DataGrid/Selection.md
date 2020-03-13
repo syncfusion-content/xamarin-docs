@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Selection
+# Selection in Xamarin.Forms.DataGrid (SfDataGrid)
 
 This section explains how to enable selection in the data grid; modes, properties, and events involved in selection; and customizations available for selection.
 

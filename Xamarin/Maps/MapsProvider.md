@@ -498,22 +498,39 @@ N> `DistanceType` property default value is KiloMeter.
 
 {% highlight xml %}
 
-    <maps:SfMaps>
-        <maps:SfMaps.Layers>
-            <maps:ImageryLayer x:Name="layer"  GeoCoordinates="30.9709225, -100.2187212" Radius="50" DistanceType="KiloMeter">
+        <ContentPage.Resources>
+            <ResourceDictionary>
+                <DataTemplate x:Key="markerTemplate">
+                    <StackLayout IsClippedToBounds="false" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="35">
+                    <Image Source="pin.png" Scale="1" Aspect="AspectFit " HorizontalOptions="StartAndExpand" VerticalOptions="Center"  HeightRequest="35" WidthRequest="25" />
+                    </StackLayout>
+                </DataTemplate>
+            </ResourceDictionary>
+        </ContentPage.Resources>
+
+    <maps:SfMaps  x:Name="Map" >
+        <maps:SfMaps.Layers >
+            <maps:ImageryLayer MarkerSelected="Layer_MarkerSelected" GeoCoordinates = "38.909804, -77.043442" Radius="5" MarkerTemplate="{StaticResource Key=markerTemplate}">
+                <maps:ImageryLayer.Markers>
+                    <maps:MapMarker Latitude= "38.909804" Longitude= "-77.043442"/>
+                </maps:ImageryLayer.Markers>
             </maps:ImageryLayer>
         </maps:SfMaps.Layers>
     </maps:SfMaps>
-
+	
 {% endhighlight %}
 
 {% highlight c# %}
 
             SfMaps maps = new SfMaps();
             ImageryLayer layer = new ImageryLayer();
-            layer.GeoCoordinates = new Point(30.9709225, -100.2187212);
-            layer.Radius = 50;
-            layer.DistanceType = DistanceType.KiloMeter;
+            layer.GeoCoordinates = new Point(38.909804, -77.043442);
+            layer.Radius = 5;
+            MapMarker marker = new MapMarker();
+            marker.Latitude = "38.909804";
+            marker.Longitude = "-77.043442";
+            layer.MarkerTemplate = this.Resources["markerTemplate"] as DataTemplate;
+            layer.Markers.Add(marker);
             maps.Layers.Add(layer);
 
 {% endhighlight %}
@@ -528,24 +545,37 @@ Calculate the initial zoom level automatically based on the LatLngBounds(Northea
 
 {% highlight xml %}
 
-   <maps:SfMaps>
+   <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="markerTemplate">
+                <StackLayout IsClippedToBounds="false" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="35">
+                    <Image Source="pin.png" Scale="1" Aspect="AspectFit " HorizontalOptions="StartAndExpand" VerticalOptions="Center"  HeightRequest="35" WidthRequest="25" />
+                </StackLayout>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <maps:SfMaps>
         <maps:SfMaps.Layers>
-            <maps:ImageryLayer x:Name="layer">
+            <maps:ImageryLayer MarkerTemplate="{StaticResource Key=markerTemplate}">
+                <maps:ImageryLayer.Markers>
+                    <maps:MapMarker Latitude= "38.909804" Longitude= "-77.043442"/>
+                </maps:ImageryLayer.Markers>
                 <maps:ImageryLayer.LatLngBounds>
                     <maps:LatLngBounds>
                         <maps:LatLngBounds.Northeast>
                             <maps:Position>
                                 <x:Arguments>
-                                    <x:Double>36.9628066</x:Double>
-                                    <x:Double>-122.0194722</x:Double>
+                                    <x:Double>38.909804</x:Double>
+                                    <x:Double>-77.043442</x:Double>
                                 </x:Arguments>
                             </maps:Position>
                         </maps:LatLngBounds.Northeast>
                         <maps:LatLngBounds.Southwest>
                             <maps:Position>
                                 <x:Arguments>
-                                    <x:Double>36.9628066</x:Double>
-                                    <x:Double>-122.0194722</x:Double>
+                                    <x:Double>38.909804</x:Double>
+                                    <x:Double>-77.043442</x:Double>
                                 </x:Arguments>
                             </maps:Position>
                         </maps:LatLngBounds.Southwest>
@@ -562,9 +592,13 @@ Calculate the initial zoom level automatically based on the LatLngBounds(Northea
             SfMaps maps = new SfMaps();
             ImageryLayer layer = new ImageryLayer();
             LatLngBounds bounds = new LatLngBounds();
-            bounds.Northeast = new Position(36.9628066, -122.0194722);
-            bounds.Southwest = new Position(36.9628066, -122.0194722);
+            bounds.Northeast = new Position(38.909804, -77.043442);
+            bounds.Southwest = new Position(38.909804, -77.043442);
             layer.LatLngBounds = bounds;
+			MapMarker marker = new MapMarker();
+            marker.Latitude = "38.909804";
+            marker.Longitude = "-77.043442";
+            layer.MarkerTemplate = this.Resources["markerTemplate"] as DataTemplate;
             maps.Layers.Add(layer);
 
 {% endhighlight %}

@@ -591,4 +591,17 @@ schedule.SelectedDate = null;
 ![Programatic selection in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-programatic-selection.png)
 
 >**NOTE**
-* `SfSchedule` does not support multiple selection. 
+* `SfSchedule` does not support multiple selection.
+
+## Current time indicator
+You can display the current time indicator in `TimelineView` by using the [ShowCurrentTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowCurrentTimeIndicator.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView = "TimelineView"      ShowCurrentTimeIndicator=true >
+{% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.TimelineView;
+schedule.ShowCurrentTimeIndicator = true;
+{% endhighlight %}
+{% endtabs %}

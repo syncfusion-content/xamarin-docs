@@ -581,3 +581,21 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 
 ![Selection in schedule xamarin forms](weekview_images/xamarin.forms-schedule-selection.png)
 
+## Current time indicator
+You can display the current time indicator in `WeekView` by using the [ShowCurrentTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowCurrentTimeIndicator.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView = "WeekView"      ShowCurrentTimeIndicator=true >
+{% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WeekView;
+schedule.ShowCurrentTimeIndicator = true;
+{% endhighlight %}
+{% endtabs %}
+
+
+
+
+
+

@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Selection
+# Selection in Xamarin.Forms.DataGrid (SfDataGrid)
 
 This section explains how to enable selection in the data grid; modes, properties, and events involved in selection; and customizations available for selection.
 
@@ -295,6 +295,24 @@ public class CustomSelectionController : GridSelectionController
             }
         }
     }
+{% endhighlight %}
+{% endtabs %}
+
+### Move Current Cell
+
+The 'CurrentCell' can be moved to a particular `RowColumnIndex` by using the `SfDataGrid.MoveCurrentCellTo()` method. This method is not applicable when the `SfDataGrid.SelectionMode` is 'None' or 'NavigationMode' is 'Row'.
+
+{% tabs %}
+{% highlight c# %}
+dataGrid.MoveCurrentCellTo(new RowColumnIndex(3, 3),false);
+{% endhighlight %}
+{% endtabs %}
+
+When the `SfDataGrid.SelectionMode` is 'Multiple', when moving the current cell, if you want to clear the selection of the currently selected items , pass true to the `needToClearSelection` parameter in the `MoveCurrentCellTo()` method.
+ 
+ {% tabs %}
+{% highlight c# %}
+dataGrid.MoveCurrentCellTo(new RowColumnIndex(4, 3),true);
 {% endhighlight %}
 {% endtabs %}
 

@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# WeekView
+# Week View in Xamarin Scheduler (SfSchedule)
 
 WeekView is to view all days of a particular week. Appointments will be arranged based on the dates on the week in respective timeslots.
 

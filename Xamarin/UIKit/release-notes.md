@@ -437,3 +437,124 @@ Notification
 </td>
 </tr>
 </table>
+
+## UI Kit 3.0.0.0
+
+The UI Kit version 3.0.0.0 has 19 new screens for the following categories.
+
+<table>
+<tr>
+<th align="center">S.No</th>
+<th align="center">Categories</th>
+<th align="center">Pages</th>
+</tr>
+<tr>
+<td valign="top" align="center">
+1
+</td>
+<td valign="top" align="center">
+Forms
+</td>
+<td>
+Login with Social Icon Page</br>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+2
+</td>
+<td valign="top" align="center">
+Catalog
+</td>
+<td>
+1. Event List Page</br>
+2. Article Card Page</br> 
+3. Navigation Travel Page</br> 
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+3
+</td>
+<td valign="top" align="center">
+Detail
+</td>
+<td>
+1. Event Detail Page</br>
+2. Data Table Page</br> 
+3. My Address Page</br> 
+4. Room Booking Page</br>
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+4
+</td>
+<td valign="top" align="center">
+Navigation
+</td>
+<td>
+1. Movies Page</br>
+2. File Explore List Page</br> 
+3. File Explore Grid Page</br> 
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+5
+</td>
+<td valign="top" align="center">
+Transaction
+</td>
+<td>
+Saved Cards Page</br> 
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+6
+</td>
+<td valign="top" align="center">
+Social
+</td>
+<td>
+Social Profile with Message Page</br> 
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+7
+</td>
+<td valign="top" align="center">
+Profile
+</td>
+<td>
+Health Profile Page</br> 
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+8
+</td>
+<td valign="top" align="center">
+Notification
+</td>
+<td>
+ECommerce Notification Page</br> 
+</td>
+</tr>
+<tr>
+<td valign="top" align="center">
+9
+</td>
+<td valign="top" align="center">
+Transaction
+</td>
+<td>
+1. Daily Calories Report Page</br> 
+2. Daily Timeline Page</br>
+3. Company History Page</br>
+4. My Wallet Page</br>
+</td>
+</tr>
+</table>

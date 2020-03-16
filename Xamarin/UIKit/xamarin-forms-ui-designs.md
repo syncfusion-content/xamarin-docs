@@ -9,7 +9,7 @@ documentation: ug
 
 # Syncfusion Xamarin.Forms UI Designs 
 
-The Essential UI Kit includes 82 screens which is under the following categories. 
+The Essential UI Kit includes 101 screens which is under the following categories. 
 
 ## Forms	
 
@@ -26,6 +26,7 @@ The Essential UI Kit includes 82 screens which is under the following categories
 * Add Card Page
 * Add Profile Page
 * Business Registration Form page
+* Login with Social Icon Page
  
 ## Catalog	
 
@@ -35,7 +36,10 @@ The Essential UI Kit includes 82 screens which is under the following categories
 * Article List Page
 * Article Tile Page
 * Product Home Page
-
+* Event List Page
+* Article Card Page
+* Navigation Travel Page
+ 
 ## Chat
 
 * Recent Chat Page
@@ -46,6 +50,10 @@ The Essential UI Kit includes 82 screens which is under the following categories
 * Product Detail Page
 * Feedback Detail Page
 * Article Detail Page
+* Event Detail Page
+* Data Table Page
+* My Address Page
+* Room Booking Page 
 
 ## Article	
 
@@ -85,6 +93,9 @@ The Essential UI Kit includes 82 screens which is under the following categories
 * App Usage Page
 * Documents List Page
 * Selectable Name Page
+* MoviesPage
+* File Explore List Page
+* File Explore Grid Page
 
 ## Onboarding	
 
@@ -109,6 +120,7 @@ The Essential UI Kit includes 82 screens which is under the following categories
 * Checkout Page
 * Payment Success Page
 * Payment Failure Page
+* Saved Cards Page
 
 ## Bookmark
 
@@ -126,6 +138,7 @@ The Essential UI Kit includes 82 screens which is under the following categories
 * Social Profile with Connections Page
 * Social Profile with Card Page
 * Social Profile with Interest Page
+* Social Profile with Message Page
 
 ## Profile
 
@@ -133,6 +146,7 @@ The Essential UI Kit includes 82 screens which is under the following categories
 * Contacts Page
 * Chat Profile Page
 * Master Page
+* Health Profile Page
 
 ## Tracking
 
@@ -142,6 +156,10 @@ The Essential UI Kit includes 82 screens which is under the following categories
 
 * Stock Overview Page
 * Health Care Page
+* Daily Calories Report Page
+* Daily Timeline Page
+* Company History Page
+* My Wallet Page
 
 ## Settings
 
@@ -152,3 +170,4 @@ The Essential UI Kit includes 82 screens which is under the following categories
 
 * Social Notification Page
 * Task Notification Page
+* ECommerce Notification Page

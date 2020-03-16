@@ -381,7 +381,7 @@ View sample in [Github](https://github.com/SyncfusionExamples/Binding-commands-f
 
 You can bind any `Columns` type collection in the view model to the [SfDataGrid.Columns](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Columns.html) property to load the necessary columns in the datagrid.
 
-{% tab %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -448,7 +448,7 @@ You can bind any `Columns` type collection in the view model to the [SfDataGrid.
 		
 {% endhighlight %}
 
-{% endtab %}
+{% endtabs %}
 
 View sample in [Github](https://github.com/SyncfusionExamples/Binding-Columns-in-Xamarin-DataGrid).
 
@@ -456,7 +456,7 @@ View sample in [Github](https://github.com/SyncfusionExamples/Binding-Columns-in
 
 You can bind any collection to the [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property  to display a list of items in the `GridComboBoxColumn` when entering edit mode.
 
-{% tab %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -535,7 +535,7 @@ You can bind any collection to the [GridComboBoxColumn.ItemsSource](https://help
 		
 {% endhighlight %}
 
-{% endtab %}
+{% endtabs %}
 
 View sample in [Github](https://github.com/SyncfusionExamples/Binding-ComboBox-Column-ItemsSource-from-ViewModel-in-Xamarin.Forms-DataGrid).
 
@@ -543,7 +543,7 @@ View sample in [Github](https://github.com/SyncfusionExamples/Binding-ComboBox-C
 
 You can bind any collection to the `SfComboBox.DataSource` property, which is loaded inside the [GridTemplateColumn] (https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html) using the below code snippet.
 
-{% tab %}
+{% tabs %}
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -626,7 +626,7 @@ You can bind any collection to the `SfComboBox.DataSource` property, which is lo
 		
 {% endhighlight %}
 
-{% endtab %}
+{% endtabs %}
 
 View sample in [Github](https://github.com/SyncfusionExamples/Binding-ItemsSource-for-the-SfComboBox-inside-template-column-in-Xamarin-DataGrid).
 
@@ -635,7 +635,7 @@ View sample in [Github](https://github.com/SyncfusionExamples/Binding-ItemsSourc
 Bind any bool property in the view model to the [GridColumn.IsHidden](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~IsHidden.html) property.
 Refer the below code snippet where we have bound a command to a button click where we change the value of the bound bool property to hide/unhide a column.
 
-{% tab %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -701,7 +701,7 @@ Refer the below code snippet where we have bound a command to a button click whe
 		
 {% endhighlight %}
 
-{% endtab %}
+{% endtabs %}
 
 View sample in [Github](https://github.com/SyncfusionExamples/Hide-column-in-button-click-using-MVVM-in-Xamarin.Forms-DataGrid).
 

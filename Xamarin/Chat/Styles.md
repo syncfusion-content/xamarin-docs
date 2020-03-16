@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  | Styling in Xamarin.Forms Chat | Xamarin | Syncfusion
-description: Style customization options available in Xamarin.Forms SfChat.
+description: Style customization Xamarin.Forms Chat elements and property. Styling was applies to chat through resource dictionary key and value pair.
 platform: xamarin
 control: SfChat
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 The SfChat applies style to its elements by using the ResourceDictionary key and values.
 
-## Default values of theme keys
+## Default values of our keys
 
 <table>
 <tr>
@@ -315,12 +315,57 @@ The SfChat applies style to its elements by using the ResourceDictionary key and
 
 ## Chat Background
 
-You can set Background for the Xamarin.Forms.SfChat by setting the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~BackgroundColor.html) as a Transparent and adding the Background to Grid first child and SfChat is second child to grid.
+You can set background for the Xamarin.Forms Chat by setting the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~BackgroundColor.html) property.
 
-### Set background Image
+{% tabs %}
 
-The SfChat allows customizing the Xamarin.Forms.SfChat Background element with various image background customizations.
+{% highlight xaml %}
 
+    <?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SampleBrowser.SfChat"
+             xmlns:chat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             x:Class="SfChat.MainPage">
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+       <chat:SfChat   CurrentUser="{Binding CurrentUser}" 
+                        BackgroundColor="Gray"
+                        Messages="{Binding Messages}">
+         </chat:SfChat>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//MainPage.cs
+
+    public partial class MainPage : ContentPage
+    {
+        Syncfusion.XForms.Chat.SfChat sfChat = new Syncfusion.XForms.Chat.SfChat();
+        ViewModel viewModel;
+        public MainPage()
+        {
+            this.InitializeComponent();
+            sfChat.BackgroundColor = Color.Gray;
+            this.viewModel = new ViewModel();
+            this.sfChat.Messages = viewModel.Messages;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.Content = sfChat;
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Set background image
+
+You can set the background image for the chat by setting the `SfChat.BackgroundColor` as a Transparent and adding the image to grid first child and chat to grid second child.
 
 
 {% tabs %}
@@ -380,8 +425,7 @@ The SfChat allows customizing the Xamarin.Forms.SfChat Background element with v
 
 ### Set gradient background
 
-The SfChat allows customizing the Xamarin.Forms.SfChat Background element with various gradient view as a background customizations.
-
+you can set the gradient as a background for chat by setting the `SfChat.BackgroundColor` property as a transparent. Add the gradient view to grid first child and chat is second child to grid.
 
 
 {% tabs %}
@@ -463,7 +507,7 @@ The SfChat allows customizing the Xamarin.Forms.SfChat Background element with v
 
 ## Incoming Message Styling
 
-The SfChat allows customizing the incoming message elements with various incoming message customizations as follows:
+You can applies the styling for the incoming message elements by setting the various incoming message key and values in resource dictionary.
 
 <table>
 <tr>
@@ -586,7 +630,7 @@ public MainPage()
 
 ## Outgoing message styling
 
-The SfChat allows customizing the outgoinging message elements with various outgoing message customizations as follows:
+You can applies the styling for the outgoing message elements by setting the various outgoinging message key and values in resource dictionary.
 
 <table>
 <tr>
@@ -698,7 +742,7 @@ public MainPage()
 
 ## Calendar Message styling
 
-The SfChat allows customizing the calendar message elements with various calendar message customizations as follows:
+You can applies the styling for the calendar message elements by setting the various calendar message key and values in resource dictionary.
 
 <table>
 <tr>
@@ -751,7 +795,7 @@ public MainPage()
 
 ## Hyperlink message styling
 
-The SfChat allows customizing the hyperlink message elements with various hyperlink message customizations as follows:
+You can applies the styling for the hyperlink message elements by setting the various hyperlink message key and values in resource dictionary.
 
 <table>
 <tr>
@@ -818,7 +862,7 @@ public MainPage()
 
 ## Date Picker message styling
 
-The SfChat allows customizing the date picker message elements with various date picker message customizations as follows:
+You can applies the styling for the date picker message elements by setting the various date picker message key and values in resource dictionary.
 
 <table>
 <tr>
@@ -885,7 +929,7 @@ public MainPage()
 
 ## Time Picker message styling
 
-The SfChat allows customizing the time picker message elements with various time picker message customizations as follows:
+You can applies the styling for the time picker message elements by setting the various time picker message key and values in resource dictionary.
 
 <table>
 <tr>
@@ -950,7 +994,7 @@ public MainPage()
 
 ## Message input view styling
 
-The SfChat allows customizing the message input view elements with various  message input view customizations as follows:
+You can applies the styling for the message input view elements by setting the various message input view key and values in resource dictionary.
 
 <table>
 <tr>
@@ -1002,7 +1046,7 @@ public MainPage()
 
 ## Editor styling
 
-The SfChat allows customizing the editor  elements with various editor customizations as follows:
+You can applies the styling for the editor elements by setting the various editor key and values in resource dictionary.
 
 <table>
 <tr>
@@ -1086,7 +1130,7 @@ public MainPage()
 
 ## Typing Indicator styling
 
-The SfChat allows customizing the typing indicator elements with various typing indicator customizations as follows:
+You can applies the styling for the typing indicator elements by setting the various typing indicator key and values in resource dictionary.
 
 <table>
 <tr>
@@ -1159,7 +1203,7 @@ public MainPage()
 
 ## Time break view styling
 
-The SfChat allows customizing the time break view elements with various time break view customizations as follows:
+You can applies the styling for the time break view elements by setting the various time break view key and values in resource dictionary.
 
 <table>
 <tr>
@@ -1238,7 +1282,7 @@ public MainPage()
 
 ## Suggestion styling
 
-The SfChat allows customizing the suggestion elements with various suggestion customizations as follows:
+You can applies the styling for the suggestion elements by setting the various suggestion key and values in resource dictionary.
 
 <table>
 <tr>
@@ -1320,7 +1364,7 @@ public MainPage()
 
 ## Send Button styling
 
-The SfChat allows customizing the send button elements with various send button customizations as follows:
+You can applies the styling for the send button elements by setting the various send button key and values in resource dictionary.
 
 <table>
 <tr>

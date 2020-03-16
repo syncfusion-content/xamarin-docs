@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Item Size Customization in Syncfusion ListView
-description: Describes the Item Size Customization in SfListView.
+description: Describes the Item Size Customization in SfListView using ItemSize property, QueryItemSize event and AutoFitMode property.
 platform: xamarin
 control: SfListView
 documentation: ug

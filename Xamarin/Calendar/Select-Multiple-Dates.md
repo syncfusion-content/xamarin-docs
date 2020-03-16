@@ -127,3 +127,9 @@ calendar.ClearSelection();
 {% endhighlight %}
 
 {% endtabs %}
+
+## See Also
+
+[How to use range selection on SfCalendar by using MVVM pattern] (https://www.syncfusion.com/kb/8591/how-to-use-range-selection-on-sfcalendar-by-using-mvvm-pattern)
+[How to handle the long press action on date selection in SfCalendar?] (https://www.syncfusion.com/kb/8608/how-to-handle-the-long-press-action-on-date-selection-in-sfcalendar)
+[How to select week in calendar xamarin.forms?] (https://www.syncfusion.com/kb/10600/how-to-select-week-in-calendar-xamarin-forms)

@@ -1,6 +1,6 @@
 ---
 title: Overview of Syncfusion SfSchedule control for Xamarin.Forms
-description: Overview of SfSchedule control
+description: Overview and Key features of Scehdule (SfSchedule) control in Xamarin.Forms.
 platform: xamarin
 control: SfSchedule
 documentation: ug

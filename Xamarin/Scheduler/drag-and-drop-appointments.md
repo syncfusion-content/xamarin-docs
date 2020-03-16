@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag and Drop Appointments
-description: How to drag and drop the appointments of Schedule control.
+title: Drag and Drop Appointments and its customization
+description: Describes how to drag and drop the appointments and its customization of Schedule (SfSchedule) control.
 platform: xamarin
 control: SfSchedule
 documentation: ug

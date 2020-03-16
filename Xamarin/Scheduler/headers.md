@@ -1,7 +1,7 @@
 ---     
 layout: post     
 title: Headers | SfSchedule | Xamarin | Syncfusion    
-description: Learn how to customize header in SfSchedule control 
+description: Describes how to customize appearance of header view in Schedule (SfSchedule) control in Xamarin.Forms. 
 platform: xamarin    
 control: SfSchedule     
 documentation: ug   

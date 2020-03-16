@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MVVM | Calendar for Xamarin.Forms | Syncfusion
-description: Describes how to use calendar in different cases of MVVM.
+description: Describes how to use Syncfusion calendar (SfCalendar) in different cases of MVVM and describes about the commands.
 platform: xamarin
 control: SfCalendar
 documentation: ug

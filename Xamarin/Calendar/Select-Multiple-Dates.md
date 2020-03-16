@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection Modes | SfCalendar | Xamarin.Forms | Syncfusion
-description: Select Multiple Dates
+description: Describes the different types of Selection modes and Clear selection method in Calendar (SfCalendar) control.
 platform: Xamarin
 control: Calendar
 documentation: ug

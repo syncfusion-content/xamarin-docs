@@ -9,7 +9,7 @@ documentation: ug
 
 # Styling in Xamarin.Forms Chat (SfChat)
 
-The SfPopupLayout applies style to its elements by using the ResourceDictionary key and values.
+The SfChat applies style to its elements by using the ResourceDictionary key and values.
 
 ## Default values of our keys
 
@@ -313,6 +313,154 @@ The SfPopupLayout applies style to its elements by using the ResourceDictionary 
 </tr>
 </table>
 
+## Chat Background
+
+You can set Background for the Xamarin.Forms.SfChat by setting the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~BackgroundColor.html) as a Transparent and adding the Background to Grid first child and SfChat is second child to grid.
+
+### Set background Image
+
+The SfChat allows customizing the Xamarin.Forms.SfChat Background element with various image background customizations.
+
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SampleBrowser.SfChat"
+             xmlns:chat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             x:Class="SfChat.MainPage">
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid>
+		 <Image Source="BackgroundImage.jpg" Aspect="AspectFill"/>
+         <chat:SfChat   CurrentUser="{Binding CurrentUser}" 
+                        BackgroundColor="Transparent"
+                        Messages="{Binding Messages}">
+        </chat:SfChat>
+            </Grid>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//MainPage.cs
+
+    public partial class MainPage : ContentPage
+    {
+       Grid grid = new Grid();
+       Syncfusion.XForms.Chat.SfChat sfChat = new Syncfusion.XForms.Chat.SfChat();
+        Image image = new Image();
+        ViewModel viewModel;
+        public MainPage()
+        {
+           this.InitializeComponent();
+            image.Source = "WallPaper.jpg";
+            image.Aspect = Aspect.AspectFill;
+            grid.Children.Add(image);
+            sfChat.BackgroundColor = Color.Transparent;
+            this.viewModel = new ViewModel();
+            this.sfChat.Messages = viewModel.Messages;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            grid.Children.Add(sfChat);
+            this.Content = grid;
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Set gradient background
+
+The SfChat allows customizing the Xamarin.Forms.SfChat Background element with various gradient view as a background customizations.
+
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SampleBrowser.SfChat"
+             xmlns:chat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:gradient ="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
+             x:Class="SfChat.MainPage">
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid>
+		 <gradient:SfGradientView>
+                <gradient:SfGradientView.BackgroundBrush>
+                    <gradient:SfLinearGradientBrush>
+                        <gradient:SfLinearGradientBrush.GradientStops>
+                            <gradient:SfGradientStop Color="SkyBlue" Offset="0.0" />
+							<gradient:SfGradientStop Color="LightCyan" Offset="0.25" />
+							<gradient:SfGradientStop Color="SteelBlue" Offset="0.5" />
+							<gradient:SfGradientStop Color="LightSkyBlue" Offset="0.75" />
+                            <gradient:SfGradientStop Color="LightGray" Offset="1.0" />
+                        </gradient:SfLinearGradientBrush.GradientStops>
+                    </gradient:SfLinearGradientBrush>
+                </gradient:SfGradientView.BackgroundBrush>
+            </gradient:SfGradientView>
+         <chat:SfChat   CurrentUser="{Binding CurrentUser}" 
+                        BackgroundColor="Transparent"
+                        Messages="{Binding Messages}">
+        </chat:SfChat>
+            </Grid>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//MainPage.cs
+
+    public partial class MainPage : ContentPage
+    {
+       Grid grid = new Grid();
+       Syncfusion.XForms.Chat.SfChat sfChat = new Syncfusion.XForms.Chat.SfChat();
+       
+        ViewModel viewModel;
+        public MainPage()
+        {
+           this.InitializeComponent();
+            SfGradientView gradientView = new SfGradientView();
+            SfLinearGradientBrush linearGradientBrush = new SfLinearGradientBrush();
+            linearGradientBrush.GradientStops = new GradientStopCollection()
+            {
+                new SfGradientStop(){Color = Color.SkyBlue, Offset=0.0},
+                new SfGradientStop(){Color = Color.LightCyan, Offset=0.25},
+                new SfGradientStop(){Color = Color.SteelBlue, Offset=0.5},
+                new SfGradientStop(){Color = Color.LightBlue, Offset=0.75},
+                new SfGradientStop(){Color = Color.LightGray, Offset=1.0},
+            };
+            gradientView.BackgroundBrush = linearGradientBrush;
+            grid.Children.Add(gradientView);
+            sfChat.BackgroundColor = Color.Transparent;
+            this.viewModel = new ViewModel();
+            this.sfChat.Messages = viewModel.Messages;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            grid.Children.Add(sfChat);
+            this.Content = grid;
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Incoming Message Styling
 
 The SfChat allows customizing the incoming message elements with various incoming message customizations as follows:
@@ -375,7 +523,7 @@ The SfChat allows customizing the incoming message elements with various incomin
 </tr>
 </table>
 
-Refer to the following code example for customizing the Incoming Message elements.
+
 
 {% tabs %}
 
@@ -486,7 +634,7 @@ The SfChat allows customizing the outgoinging message elements with various outg
 </tr>
 </table>
 
-Refer to the following code example for customizing the Outgoinging Message elements.
+
 
 {% tabs %}
 
@@ -563,7 +711,7 @@ The SfChat allows customizing the calendar message elements with various calenda
 </tr>
 </table>
 
-Refer to the following code example for customizing the Outgoinging Message elements.
+
 
 {% tabs %}
 
@@ -625,7 +773,6 @@ The SfChat allows customizing the hyperlink message elements with various hyperl
 </tr>
 </table>
 
-Refer to the following code example for customizing the Hyperlink Message elements.
 
 {% tabs %}
 
@@ -681,20 +828,20 @@ The SfChat allows customizing the date picker message elements with various date
 <tr>
 <td> SyncPrimaryColor </td>
 <td> Color of date picker icon. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SyncPrimaryLightColor </td>
 <td> Color of the text in date picker.  </td>
 </tr>
 <tr>
 <td> SfChatDatePickerBackgroundColor </td>
 <td> Background color of date picker. </td>
-</tr><tr>
+</tr>
 <tr>
 <td> SyncPrimaryColor </td>
 <td> Border color of date picker. </td>
 </tr>
 </table>
-Refer to the following code example for customizing the Date Picker Message elements.
 
 {% tabs %}
 
@@ -760,7 +907,6 @@ The SfChat allows customizing the time picker message elements with various time
 </tr>
 </table>
 
-Refer to the following code example for customizing the time picker Message elements.
 
 {% tabs %}
 
@@ -816,7 +962,7 @@ The SfChat allows customizing the message input view elements with various  mess
 <td> Message input view background color. </td>
 </tr>
 </table>
-Refer to the following code example for customizing the Message Input View elements.
+
 
 {% tabs %}
 
@@ -854,6 +1000,90 @@ public MainPage()
 
 {% endtabs %}
 
+## Editor styling
+
+The SfChat allows customizing the editor  elements with various editor customizations as follows:
+
+<table>
+<tr>
+<th> Key </th>
+<th> Description </th>
+</tr>
+<tr>
+<td> SfChatEditorTextColor </td>
+<td> Color of the text in the editor. </td>
+</tr>
+<td> SfChatEditorPlaceholderTextColor </td>
+<td> Color of the placeholder text in the editor. </td>
+</tr>
+<tr>
+<td> SfChatEditorBorderColor </td>
+<td> Color of the border in the editor. </td>
+</tr><tr>
+<td> SfChatEditorBackgroundColor </td>
+<td> Background color of the editor. </td>
+</tr><tr>
+<td> SfChatEditorFontFamily </td>
+<td> Font family of the text in the editor. </td>
+</tr><tr>
+<td> SfChatEditorFontAttributes </td>
+<td> Font attributes of the text in the editor. </td>
+</tr><tr>
+<td> SfChatEditorFontSize </td>
+<td> Font size of the text in the editor. </td>
+</tr><tr>
+</table>
+
+
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <ContentPage.Resources>
+        <syncTheme:SyncfusionThemeDictionary>
+            <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <x:String x:Key="SfChatTheme">CustomTheme</x:String>
+                    <Color x:Key="SfChatEditorPlaceholderTextColor">Blue</Color>
+                    <Color x:Key="SfChatEditorTextColor">Gray</Color>
+                    <Color x:Key="SfChatEditorBackgroundColor">Violet</Color>
+                    <Color x:Key="SfChatEditorBorderColor">Black</Color>
+                    <x:String x:Key="SfChatEditorFontFamily">Roboto-Medium</x:String>
+                    <FontAttributes x:Key="SfChatEditorFontAttributes">Bold</FontAttributes>
+                    <x:Double x:Key="SfChatEditorFontSize">16</x:Double>
+                </ResourceDictionary>
+            </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+        </syncTheme:SyncfusionThemeDictionary>
+    </ContentPage.Resources>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//MainPage.cs
+
+public MainPage()
+{
+    ....
+    InitializeComponent();
+    ResourceDictionary dictionary = new ResourceDictionary();
+            dictionary.Add("SfChatTheme", "CustomTheme");
+            dictionary.Add("SfChatEditorPlaceholderTextColor", Color.Blue);
+            dictionary.Add("SfChatEditorBackgroundColor", Color.Violet);
+            dictionary.Add("SfChatEditorTextColor", Color.Gray);
+			dictionary.Add("SfChatEditorBorderColor", Color.Black);
+            dictionary.Add("SfChatEditorFontFamily", "Roboto-Medium");
+            dictionary.Add("SfChatEditorFontAttributes", FontAttributes.Italic);
+            dictionary.Add("SfChatEditorFontSize", 16);
+			this.Resources.Add(dictionary);
+    ....
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Typing Indicator styling
 
 The SfChat allows customizing the typing indicator elements with various typing indicator customizations as follows:
@@ -881,7 +1111,7 @@ The SfChat allows customizing the typing indicator elements with various typing 
 </tr>
 </table>
 
-Refer to the following code example for customizing the Typing indicator elements.
+
 
 {% tabs %}
 
@@ -958,7 +1188,7 @@ The SfChat allows customizing the time break view elements with various time bre
 </tr>
 </table>
 
-Refer to the following code example for customizing the time break view elements.
+
 
 {% tabs %}
 
@@ -1039,7 +1269,7 @@ The SfChat allows customizing the suggestion elements with various suggestion cu
 </tr>
 </table>
 
-Refer to the following code example for customizing the Suggestion elements.
+
 
 {% tabs %}
 
@@ -1106,7 +1336,7 @@ The SfChat allows customizing the send button elements with various send button 
 </tr>
 </table>
 
-Refer to the following code example for customizing the Send Button elements.
+
 
 {% tabs %}
 
@@ -1146,234 +1376,7 @@ public MainPage()
 
 {% endtabs %}
 
-## Editor view styling
 
-The SfChat allows customizing the editor view elements with various editor view customizations as follows:
 
-<table>
-<tr>
-<th> Key </th>
-<th> Description </th>
-</tr>
-<td> SfChatEditorTextColor </td>
-<td> Color of the text in the editor. </td>
-</tr>
-<td> SfChatEditorPlaceholderTextColor </td>
-<td> Color of the placeholder text in the editor. </td>
-</tr>
-<tr>
-<td> SfChatEditorBorderColor </td>
-<td> Color of the border in the editor. </td>
-</tr><tr>
-<td> SfChatEditorBackgroundColor </td>
-<td> Background color of the editor. </td>
-</tr><tr>
-<td> SfChatEditorFontFamily </td>
-<td> Font family of the text in the editor. </td>
-</tr><tr>
-<td> SfChatEditorFontAttributes </td>
-<td> Font attributes of the text in the editor. </td>
-</tr><tr>
-<td> SfChatEditorFontSize </td>
-<td> Font size of the text in the editor. </td>
-</tr><tr>
-</table>
 
-Refer to the following code example for customizing the editor view elements.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-    <ContentPage.Resources>
-        <syncTheme:SyncfusionThemeDictionary>
-            <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
-                <ResourceDictionary>
-                    <x:String x:Key="SfChatTheme">CustomTheme</x:String>
-                    <Color x:Key="SfChatEditorPlaceholderTextColor">Blue</Color>
-                    <Color x:Key="SfChatEditorTextColor">Gray</Color>
-                    <Color x:Key="SfChatEditorBackgroundColor">Violet</Color>
-                    <Color x:Key="SfChatEditorBorderColor">Black</Color>
-                    <x:String x:Key="SfChatEditorFontFamily">Roboto-Medium</x:String>
-                    <FontAttributes x:Key="SfChatEditorFontAttributes">Bold</FontAttributes>
-                    <x:Double x:Key="SfChatEditorFontSize">16</x:Double>
-                </ResourceDictionary>
-            </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
-        </syncTheme:SyncfusionThemeDictionary>
-    </ContentPage.Resources>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-//MainPage.cs
-
-public MainPage()
-{
-    ....
-    InitializeComponent();
-    ResourceDictionary dictionary = new ResourceDictionary();
-            dictionary.Add("SfChatTheme", "CustomTheme");
-            dictionary.Add("SfChatEditorPlaceholderTextColor", Color.Blue);
-            dictionary.Add("SfChatEditorBackgroundColor", Color.Violet);
-            dictionary.Add("SfChatEditorTextColor", Color.Gray);
-			dictionary.Add("SfChatEditorBorderColor", Color.Black);
-            dictionary.Add("SfChatEditorFontFamily", "Roboto-Medium");
-            dictionary.Add("SfChatEditorFontAttributes", FontAttributes.Italic);
-            dictionary.Add("SfChatEditorFontSize", 16);
-			this.Resources.Add(dictionary);
-    ....
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Chat Background
-
-The SfChat allows customizing the Xamarin.Forms.SfChat Background element as follows:
-
-### Image background
-
-The SfChat allows customizing the Xamarin.Forms.SfChat Background element with various image background customizations.
-
-Refer to the following code example for customizing the SfChat Background element.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-    <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:SampleBrowser.SfChat"
-             xmlns:chat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
-             x:Class="SfChat.MainPage">
-    <ContentPage.BindingContext>
-        <local:ViewModel/>
-    </ContentPage.BindingContext>
-    <ContentPage.Content>
-        <Grid>
-		 <Image Source="BackgroundImage.jpg" Aspect="AspectFill"/>
-         <chat:SfChat   CurrentUser="{Binding CurrentUser}" 
-                        BackgroundColor="Transparent"
-                        Messages="{Binding Messages}">
-        </chat:SfChat>
-            </Grid>
-    </ContentPage.Content>
-</ContentPage>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-//MainPage.cs
-
-    public partial class MainPage : ContentPage
-    {
-       Grid grid = new Grid();
-       Syncfusion.XForms.Chat.SfChat sfChat = new Syncfusion.XForms.Chat.SfChat();
-        Image image = new Image();
-        ViewModel viewModel;
-        public MainPage()
-        {
-           this.InitializeComponent();
-            image.Source = "WallPaper.jpg";
-            image.Aspect = Aspect.AspectFill;
-            grid.Children.Add(image);
-            sfChat.BackgroundColor = Color.Transparent;
-            this.viewModel = new ViewModel();
-            this.sfChat.Messages = viewModel.Messages;
-            this.sfChat.CurrentUser = viewModel.CurrentUser;
-            grid.Children.Add(sfChat);
-            this.Content = grid;
-        }
-    }
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### Gradient view as a background
-
-The SfChat allows customizing the Xamarin.Forms.SfChat Background element with various gradient view as a background customizations.
-
-Refer to the following code example for customizing the SfChat Background element.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-    <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:SampleBrowser.SfChat"
-             xmlns:chat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
-             xmlns:gradient ="clr-namespace:Syncfusion.XForms.Graphics;assembly=Syncfusion.Core.XForms"
-             x:Class="SfChat.MainPage">
-    <ContentPage.BindingContext>
-        <local:ViewModel/>
-    </ContentPage.BindingContext>
-    <ContentPage.Content>
-        <Grid>
-		 <gradient:SfGradientView>
-                <gradient:SfGradientView.BackgroundBrush>
-                    <gradient:SfLinearGradientBrush>
-                        <gradient:SfLinearGradientBrush.GradientStops>
-                            <gradient:SfGradientStop Color="SkyBlue" Offset="0.0" />
-							<gradient:SfGradientStop Color="LightCyan" Offset="0.25" />
-							<gradient:SfGradientStop Color="SteelBlue" Offset="0.5" />
-							<gradient:SfGradientStop Color="LightSkyBlue" Offset="0.75" />
-                            <gradient:SfGradientStop Color="LightGray" Offset="1.0" />
-                        </gradient:SfLinearGradientBrush.GradientStops>
-                    </gradient:SfLinearGradientBrush>
-                </gradient:SfGradientView.BackgroundBrush>
-            </gradient:SfGradientView>
-         <chat:SfChat   CurrentUser="{Binding CurrentUser}" 
-                        BackgroundColor="Transparent"
-                        Messages="{Binding Messages}">
-        </chat:SfChat>
-            </Grid>
-    </ContentPage.Content>
-</ContentPage>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-//MainPage.cs
-
-    public partial class MainPage : ContentPage
-    {
-       Grid grid = new Grid();
-       Syncfusion.XForms.Chat.SfChat sfChat = new Syncfusion.XForms.Chat.SfChat();
-       
-        ViewModel viewModel;
-        public MainPage()
-        {
-           this.InitializeComponent();
-            SfGradientView gradientView = new SfGradientView();
-            SfLinearGradientBrush linearGradientBrush = new SfLinearGradientBrush();
-            linearGradientBrush.GradientStops = new GradientStopCollection()
-            {
-                new SfGradientStop(){Color = Color.SkyBlue, Offset=0.0},
-                new SfGradientStop(){Color = Color.LightCyan, Offset=0.25},
-                new SfGradientStop(){Color = Color.SteelBlue, Offset=0.5},
-                new SfGradientStop(){Color = Color.LightBlue, Offset=0.75},
-                new SfGradientStop(){Color = Color.LightGray, Offset=1.0},
-            };
-            gradientView.BackgroundBrush = linearGradientBrush;
-            grid.Children.Add(gradientView);
-            sfChat.BackgroundColor = Color.Transparent;
-            this.viewModel = new ViewModel();
-            this.sfChat.Messages = viewModel.Messages;
-            this.sfChat.CurrentUser = viewModel.CurrentUser;
-            grid.Children.Add(sfChat);
-            this.Content = grid;
-        }
-    }
-
-{% endhighlight %}
-
-{% endtabs %}
 

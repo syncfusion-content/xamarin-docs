@@ -358,7 +358,7 @@ We can customize the trendline appearance using [`StrokeWidth`](), [`StrokeColor
 <chart:ColumnSeries.Trendlines>
 
     <chart:ChartTrendlineCollection>
-        <chart:ChartTrendline StrokeWidth="3" StrokeColor="Red">
+        <chart:ChartTrendline StrokeWidth="3" StrokeColor="#404041">
             <chart:ChartTrendline.StrokeDashArray>
                 <x:Array Type="{x:Type x:Double}">
                     <sys:Double>5</sys:Double>
@@ -377,7 +377,7 @@ columnSeries.Trendlines = new ChartTrendlineCollection();
 
 ChartTrendline linearTrendline = new ChartTrendline()
 {
-   StrokeColor = Color.Red,
+   StrokeColor = Color.FromHex("#404041"),
    StrokeWidth = 3,
    StrokeDashArray = new double[] {5,6},
 };

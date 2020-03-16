@@ -630,7 +630,7 @@ public MainPage()
 
 ## Outgoing message styling
 
-You can applies the styling for the outgoing message elements by setting the various outgoinging message key and values in resource dictionary.
+You can applies the styling for the outgoing message elements by setting the various outgoing message key and values in resource dictionary.
 
 <table>
 <tr>

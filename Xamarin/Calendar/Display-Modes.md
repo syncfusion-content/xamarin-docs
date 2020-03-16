@@ -7,7 +7,7 @@ control: Calendar
 documentation: ug
 ---
 
-# Calendar views
+# Display Modes in Xamarin Calendar (SfCalendar)
 
 Xamarin.Forms calendar control provides 4 different types of views such month, year, decade and century. It allows users to easily select and navigate between all built-in views. This can be achieved by using [ViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ViewMode.html) property of SfCalendar.
 
@@ -523,3 +523,4 @@ this.Content = calendar;
 [How to customize the month cell border lines of SfCalendar?] (https://www.syncfusion.com/kb/8595/how-to-customize-the-month-cell-border-lines-of-sfcalendar)
 [How to restrict the year view move while tapping calendar’s month header?] (https://www.syncfusion.com/kb/8607/how-to-restrict-the-year-view-move-while-tapping-calendars-month-header)
 [How to change the selection shape of calendar’s date cell selection?] (https://www.syncfusion.com/kb/8610/how-to-change-the-selection-shape-of-calendars-date-cell-selection)
+[How to customize the selected month cell in Xamarin.Forms Calendar (SfCalendar)] (https://www.syncfusion.com/kb/11202/how-to-customize-the-selected-month-cell-in-xamarin-forms-calendar-sfcalendar)

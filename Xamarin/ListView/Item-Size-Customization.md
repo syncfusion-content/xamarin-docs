@@ -7,7 +7,7 @@ control: SfListView
 documentation: ug
 ---
 
-# Item Size Customization
+# Item Size Customization in Xamarin ListView (SfListView)
 
 This section explains how to customize the item size in the SfListView.
 
@@ -263,3 +263,8 @@ private void ListView_Loaded(object sender, Syncfusion.ListView.XForms.ListViewL
 
  * Defines the size of the image when loading image in the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html). Because, it does not return actual measured size when measuring before layout the item.
  * Avoids SfListView inside the SfListView if `SfListView.AutoFitMode` is `Height` or `DynamicHeight`. Because, the inner SfListView does not return actual measured size when measuring before layout the item.
+
+## See Also
+
+[How to autofit the content based on the property change in Xamarin.Forms listview using MVVM](https://www.syncfusion.com/kb/9856/)                                                                                            
+[How to set different row height for each row in listview](https://www.syncfusion.com/kb/9478/)                                                                                                                                                                    

@@ -730,7 +730,7 @@ this.Content = map;
 
 N> The default marker icon position for VerticalAlignment and HorizontalAlignment is Center.
 
-N> This feature will applicable for custom marker also.
+N> Alignment support provided to custom markers also.
 
 ## Events
 

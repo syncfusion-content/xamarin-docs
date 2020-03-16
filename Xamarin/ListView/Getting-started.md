@@ -738,7 +738,7 @@ listView.FooterTemplate = new DataTemplate(() =>
 
 ### Miscellaneous
 [How to create a application using Xamarin.Forms listview in Rider IDE?](https://www.syncfusion.com/kb/9833/)   
-[How to show empty message when listview has no items in xamarin.forms](https://www.syncfusion.com/kb/9956/)                                                                         
+[How to show empty message when listview has no items in Xamarin.Forms](https://www.syncfusion.com/kb/9956/)                                                                         
 [How to bind image and text in the listview?](https://www.syncfusion.com/kb/9636/)                                                                                                                      
 [How to load listview with background image?](https://www.syncfusion.com/kb/9479/)                                                                                                                                                                                                                          
 [How to resolve ItemTapped event not firing in Forms.Android when when MainActivity type is FormsApplicationActivity ?](https://www.syncfusion.com/kb/8996/)                                                                                                                                                            

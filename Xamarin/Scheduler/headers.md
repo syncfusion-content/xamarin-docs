@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug   
 ---  
 
-# Header
+# Headers in Xamarin Scheduler (SfSchedule)
 
 You can customize the header of the Schedule using [HeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~HeaderStyle.html) and [HeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~HeaderHeight.html) property in schedule.
 

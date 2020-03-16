@@ -6,7 +6,7 @@ control: SfSchedule
 documentation: ug
 ---
 
-# Overview
+# Xamarin Scheduler (SfSchedule) Overview
 
 Essential Schedule for Xamarin.Forms provides all the common scheduling functionalities to create and manage appointments as well as exposes a gesture friendly UI to perform all common operations likes selection, navigation, etc. **Essential** **Schedule** is a perfect solution for developers looking to add advanced, feature rich **Schedule** to their applications.
 

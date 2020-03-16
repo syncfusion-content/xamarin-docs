@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# DayView
+# Day View in Xamarin Scheduler (SfSchedule)
 
 DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
 

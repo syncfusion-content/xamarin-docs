@@ -7,7 +7,7 @@ control: SfScheduler
 documentation: ug
 ---
 
-# Resource view
+# Resource View in Xamarin Scheduler (SfSchedule)
 
 Resource view displays the resources as discrete views integrated with the scheduler to display appointments in all types of schedule views. It provides an intuitive user interface, which allows users to select single or multiple resources and display the events associated with the selected resources with efficient and effective utilization. Each resource can be assigned to a unique color to more easily identify the resource associated with an appointment. 
 

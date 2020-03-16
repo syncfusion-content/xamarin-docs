@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in Syncfusion ListView
-description: Describes about the grouping and its functionalities in SfListView.
+description: Describes about the grouping, goup header and its functionalities like custom comparer, multi grouping in SfListView.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -1219,7 +1219,7 @@ Download entire source code from GitHub [here](https://github.com/SyncfusionExam
 
 ## See Also
 
-### Customzie group header
+### Customize group header
 
 [How to customize Xamarin.Forms listview group header template in MVVM](https://www.syncfusion.com/kb/9663/)                                                
 [How to display the items count of group in the group header item in SfListView?](https://www.syncfusion.com/kb/8019/)                                                                                                                                                                                                                                                                                      

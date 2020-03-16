@@ -725,7 +725,7 @@ listView.FooterTemplate = new DataTemplate(() =>
 
 [How to bind data from the DataTable to ListView in Xamarin.Forms](https://www.syncfusion.com/kb/9697/)  
 [How to bind OData to Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11211/)                                                                                           
-[How to bind JSON data to xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11173/)                                                                                                                                  
+[How to bind JSON data to Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11173/)                                                                                                                                  
 [How to load the data from SQLite offline database in SfListView?](https://www.syncfusion.com/kb/7550/)                                                                                                                                                                         
 [How to load the data from SQLite online database in SfListView?](https://www.syncfusion.com/kb/7821/)                                                                                                                                                                                                                  
 

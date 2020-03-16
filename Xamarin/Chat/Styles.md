@@ -407,7 +407,7 @@ You can set the background image for the chat by setting the `SfChat.BackgroundC
         public MainPage()
         {
            this.InitializeComponent();
-            image.Source = "WallPaper.jpg";
+            image.Source = "BackgroundImage.jpg";
             image.Aspect = Aspect.AspectFill;
             grid.Children.Add(image);
             sfChat.BackgroundColor = Color.Transparent;
@@ -581,15 +581,15 @@ You can applies the styling for the incoming message elements by setting the var
                     <Color x:Key="SfChatIncomingMessageTextColor">SlateGray</Color>
                     <Color x:Key="SfChatIncomingMessageTimestampTextColor">White</Color>
                     <Color x:Key="SfChatIncomingMessageAuthorTextColor">Gray</Color>
-                    <Color x:Key="SfChatIncomingMessageBackgroundColor">LimeGreen</Color>
+                    <Color x:Key="SfChatIncomingMessageBackgroundColor">Blue</Color>
                     <x:String x:Key="SfChatIncomingMessageFontFamily">Roboto-Medium</x:String>
-                    <FontAttributes x:Key="SfChatIncomingMessageFontAttribute">Italic</FontAttributes>
+                    <FontAttributes x:Key="SfChatIncomingMessageFontAttributes">Italic</FontAttributes>
                     <x:Double x:Key="SfChatIncomingMessageFontSize"> 16</x:Double>
                     <x:String x:Key="SfChatIncomingMessageAuthorFontFamily">Roboto-Medium</x:String>
-                    <FontAttributes x:Key="SfChatIncomingMessageAuthorFontAttribute">Italic</FontAttributes>
+                    <FontAttributes x:Key="SfChatIncomingMessageAuthorFontAttributes">Italic</FontAttributes>
                     <x:Double x:Key="SfChatIncomingMessageAuthorFontSize">16</x:Double>
                     <x:String x:Key="SfChatIncomingMessageTimestampFontFamily">Roboto-Medium</x:String>
-                    <FontAttributes x:Key="SfChatIncomingMessageTimestampFontAttribute">Italic</FontAttributes>
+                    <FontAttributes x:Key="SfChatIncomingMessageTimestampFontAttributes">Italic</FontAttributes>
                     <x:Double x:Key="SfChatIncomingMessageTimestampFontSize">16</x:Double>
                 </ResourceDictionary>
             </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>

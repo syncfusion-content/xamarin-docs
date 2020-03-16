@@ -147,3 +147,10 @@ private void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}   
+
+## See Also
+
+[How to create custom header and view header in Xamarin.Forms Schedule?] (https://www.syncfusion.com/kb/10083/how-to-create-custom-header-and-view-header-in-xamarin-forms-schedule)
+
+
+

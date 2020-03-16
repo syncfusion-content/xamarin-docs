@@ -592,3 +592,8 @@ schedule.SelectedDate = null;
 
 >**NOTE**
 * `SfSchedule` does not support multiple selection. 
+
+## See Also
+
+[How to add multiple resource to Schedule (SfSchedule) in Xamarin.Forms] (https://www.syncfusion.com/kb/11210/how-to-add-multiple-resource-to-schedule-sfschedule-in-xamarin-forms)
+[How to customize time label of schedule in Xamarin.Forms?] (https://www.syncfusion.com/kb/10879/how-to-customize-time-label-of-schedule-in-xamarin-forms)

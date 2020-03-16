@@ -9,7 +9,7 @@ documentation: ug
 
 # Undo and Redo operations in SfImageEditor
 
-One of the important features of the image editor control is to perform `Undo` and `Redo` operations for adding shapes, text, and drawing paths. 
+One of the important features of the image editor control is to perform `Undo` and `Redo` operations for adding shapes, text, effects, and drawing paths. 
 
 ## Undo
 
@@ -17,10 +17,11 @@ The [`Undo`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImag
 
 Undo can be performed for the following operations:
 
-* Add/delete shapes or text.
-* Change positions.
-* Color/fill changes.
-* Path drawings.
+* Add or delete shapes or text
+* Change positions
+* Color or fill changes
+* Path drawings
+* Applying effects
 
 {% tabs %}
 

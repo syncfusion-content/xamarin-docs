@@ -315,7 +315,7 @@ The SfChat applies style to its elements by using the ResourceDictionary key and
 
 ## Chat Background
 
-You can set background for the Xamarin.Forms Chat by setting the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~BackgroundColor.html) property.
+You can set background color for the Xamarin.Forms Chat by setting the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~BackgroundColor.html) property.
 
 {% tabs %}
 

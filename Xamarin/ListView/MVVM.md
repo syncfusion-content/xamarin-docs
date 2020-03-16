@@ -7,7 +7,7 @@ control: SfListView
 documentation: ug
 ---
 
-# MVVM
+# Working with MVVM in Xamarin ListView (SfListView)
 
 ## Commands
 
@@ -925,4 +925,8 @@ You can download the entire sample from GitHub [here](https://github.com/Syncfus
 
 ## See Also
 
-[How to bind command from ViewModel to external ItemTemplate of Xamarin.Forms ListView](https://www.syncfusion.com/kb/11029)
+[How to bind command from ViewModel to external ItemTemplate of Xamarin.Forms ListView](https://www.syncfusion.com/kb/11029)                                                                                                                                        
+[Working with ListView in Reactive MVVM](https://www.syncfusion.com/kb/9319/)
+[Working with SfListView and Prism for Xamarin.Forms](https://www.syncfusion.com/kb/8763/)                                                                                                                                                             
+[How to navigate page from ViewModel using button in ListViewItem](https://www.syncfusion.com/kb/7520/)                                                                                                                                                                                                                            
+[How to turn Events into Commands with Behaviors in SfListView](https://www.syncfusion.com/kb/7523/)                                                                                                                                                                                                                               

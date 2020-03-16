@@ -321,6 +321,7 @@ The SfChat allows customizing the incoming message elements with various incomin
 <tr>
 <th>Key</th>
 <th>Description </th>
+<tr>
 <td> SfChatIncomingMessageTextColor </td>
 <td> Text color of the incoming message. </td>
 </tr>

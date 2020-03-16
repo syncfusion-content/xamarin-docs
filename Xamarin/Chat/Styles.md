@@ -11,7 +11,7 @@ documentation: ug
 
 The SfChat applies style to its elements by using the ResourceDictionary key and values.
 
-## Default values of our keys
+## Default values of theme keys
 
 <table>
 <tr>

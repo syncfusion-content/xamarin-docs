@@ -670,7 +670,7 @@ dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 {% endtabs %}
 
 ### Changing  padding
-You can change the editor padding by overriding the GetLeftPaddingForEditor and GetRightpaddingEditor methods, its
+You can change the editor padding by overriding the GetLeftPaddingForEditor and GetRightPaddingEditor methods, its
 applicable for both default and floating label layout.
 
 {% tabs %}

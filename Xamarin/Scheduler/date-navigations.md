@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dates, Navigations and Gestures in Syncfusion SfSchedule Xamarin.Forms
-description: Learn the complete navigation and gestures support
+description: Learn the complete navigation and gestures support in SfSchedule control in Xamarin.Forms
 platform: xamarin
 control: SfSchedule
 documentation: ug

@@ -485,5 +485,5 @@ public class DragDropControllerExt : DragDropController
 
 ## See Also
 
-[How to drag and drop an item from one to another listview in xamarin.forms](https://www.syncfusion.com/kb/11203/)                                                                                                                                                                                                                                                              
+[How to drag and drop an item from one to another listview in Xamarin.Forms](https://www.syncfusion.com/kb/11203/)                                                                                                                                                                                                                                                              
 [How to show or hide the drag indicator like iOS listview](https://www.syncfusion.com/kb/9981/)                                                                                              

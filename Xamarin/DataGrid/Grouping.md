@@ -194,7 +194,8 @@ public class GroupConverter : IValueConverter
 {% endhighlight %}
 
 ### Sorting the grouped column records
-In custom grouping, you can sort all the inner records of each group by setting [GroupColumnDescription.SortGroupRecords](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupColumnDescription~SortGroupRecords.html) property as 'true' to sort the records based on the 'GroupColumnDescription.ColumnName' property.
+In custom grouping, you can sort all the inner records of each group by setting [GroupColumnDescription.SortGroupRecords](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupColumnDescription~SortGroupRecords.html) property as `true` to sort the records based on the `GroupColumnDescription.ColumnName` property.
+
 {% tabs %}
 {% highlight xaml %}
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
@@ -225,73 +226,65 @@ In custom grouping, you can sort all the inner records of each group by setting 
 {% endhighlight %}
 
 {% highlight c# %}
- datagrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
-            {
-                ColumnName = "OrderNo",
-                Converter = new GroupOrderNoConverter(),
-                SortGroupRecords = true
-            }) ;
 datagrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
-            {
-                ColumnName = "Price",
-                Converter = new PriceConverter(),
-                SortGroupRecords = false
-            }) ;  
+{
+    ColumnName = "OrderNo",
+    Converter = new GroupOrderNoConverter(),
+    SortGroupRecords = true
+}) ;
+datagrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
+{
+    ColumnName = "Price",
+    Converter = new PriceConverter(),
+    SortGroupRecords = false
+}) ;  
 			
-{% endhighlight %}
-
-{% endtabs %}
-			
-{% highlight c# %}
-
- public class GroupOrderNoConvertor : IValueConverter
+public class GroupOrderNoConvertor : IValueConverter
+{
+	public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            var orderInfo = value as OrderInfo;
-            if (orderInfo.OrderNo < 10)
-                return "<10";
-            if (orderInfo.OrderNo >= 10 && orderInfo.OrderNo < 15)
-                return "Between 10 To 15";
-            if (orderInfo.OrderNo >= 15 && orderInfo.OrderNo <= 20)
-                return "Between 15 To 20";
-            else
-                return ">20";
-        }
+		var orderInfo = value as OrderInfo;
+        if (orderInfo.OrderNo < 10)
+            return "<10";
+        if (orderInfo.OrderNo >= 10 && orderInfo.OrderNo < 15)
+            return "Between 10 To 15";
+        if (orderInfo.OrderNo >= 15 && orderInfo.OrderNo <= 20)
+            return "Between 15 To 20";
+        else
+            return ">20";
+    }
 
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
-		
-{% endhighlight %}		
-
-{% highlight c# %}
-
- public class PriceConverter : IValueConverter
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            var orderInfo = value as OrderInfo;
-            if (orderInfo.Price < 300)
-                return "<300";
-            if (orderInfo.Price >= 300 && orderInfo.Price < 700)
-                return "Between 300 To 699";
-            if (orderInfo.Price >= 700 && orderInfo.Price <= 1000)
-                return "Between 700 To 1000";
-            return ">1000";
-        }
+        throw new NotImplementedException();
+    }
+}
 
-        public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
-        {
-            throw new NotImplementedException();
-        }
+public class PriceConverter : IValueConverter
+{
+	public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        var orderInfo = value as OrderInfo;
+        if (orderInfo.Price < 300)
+            return "<300";
+        if (orderInfo.Price >= 300 && orderInfo.Price < 700)
+            return "Between 300 To 699";
+        if (orderInfo.Price >= 700 && orderInfo.Price <= 1000)
+            return "Between 700 To 1000";
+        return ">1000";
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        throw new NotImplementedException();
     }
 }
 
 {% endhighlight %}
 
-As you can see in the below screenshot, the records are sorted based on the 'OrderNo' column, since 'SortGroupRecords' is set as 'true' and it is not sorted further based on 'Price' column since 'SortGroupRecords' is set as 'false'.
+{% endtabs %}
+
+As you can see in the below screenshot, the records are sorted based on the `OrderNo` column, since `SortGroupRecords` is set as `true` and it is not sorted further based on `Price` column since `SortGroupRecords` is set as `false`.
 
 ![SfDataGrid with SortGroupRecords](SfDataGrid_images/SortGroupRecords.png)
 

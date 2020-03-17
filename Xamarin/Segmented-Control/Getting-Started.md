@@ -7,7 +7,7 @@ control: SfSegmentedControl
 documentation: ug
 ---
 
-# Getting Started Xamarin Forms SegmentedControl (SfSegmentedControl)
+# Getting Started Xamarin.Forms SegmentedControl (SfSegmentedControl)
 
 This section provides an overview for working with the segmented control for Xamarin.Forms. Walk through the entire process of creating a real-world application with the SfSegmentedControl.
 

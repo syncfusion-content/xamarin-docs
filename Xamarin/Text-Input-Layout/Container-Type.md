@@ -137,6 +137,10 @@ inputLayout.InputView = new Entry();
 
 ![Padding customization around the input view](Container-Type-images/paddingCustomization.png)
 
+#### See Also
+
+[InputViewPadding](https://www.syncfusion.com/kb/11039/how-to-reduce-the-space-inside-sftextinputlayout)
+
 ## None
 
 When setting the [ContainerType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.SfTextInputLayout~ContainerType.html) property to [None](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html), the container will have empty background and enough spacing.

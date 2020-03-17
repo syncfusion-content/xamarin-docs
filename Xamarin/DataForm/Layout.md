@@ -672,7 +672,7 @@ dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 ### Changing  padding
 To customize the padding, override the below `DataFormLayoutManager` methods and assign to the `SfDataForm.LayoutManager` property.
 
-* You can change the editor padding by overriding the `GetLeftPaddingForEditor` and `GetRightPaddingEditor` methods,
+* You can change the editor padding by overriding the `GetLeftPaddingForEditor` and `GetRightPaddingForEditor` methods,
 
 * You can change the group header padding by overriding the `GetLeftPaddingForGroupHeader`  and `GetRightPaddingForGroupHeader` methods.
 

@@ -330,6 +330,16 @@ You can set background color for the Xamarin.Forms Chat by setting the [SfChat.B
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
+	<ContentPage.Resources>
+        <syncTheme:SyncfusionThemeDictionary>
+            <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <x:String x:Key="SfChatTheme">CustomTheme</x:String>
+                    <Color x:Key="SfChatMessageInputViewBackgroundColor">Transparent</Color>
+                </ResourceDictionary>
+            </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+        </syncTheme:SyncfusionThemeDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
        <chat:SfChat   CurrentUser="{Binding CurrentUser}" 
                         BackgroundColor="Gray"
@@ -385,6 +395,16 @@ You can set the background image for the chat by setting the `SfChat.BackgroundC
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
+	<ContentPage.Resources>
+        <syncTheme:SyncfusionThemeDictionary>
+            <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <x:String x:Key="SfChatTheme">CustomTheme</x:String>
+                    <Color x:Key="SfChatMessageInputViewBackgroundColor">Transparent</Color>
+                </ResourceDictionary>
+            </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+        </syncTheme:SyncfusionThemeDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
 		 <Image Source="BackgroundImage.jpg" Aspect="AspectFill"/>
@@ -450,6 +470,16 @@ you can set the gradient as a background for chat by setting the `SfChat.Backgro
     <ContentPage.BindingContext>
         <local:ViewModel/>
     </ContentPage.BindingContext>
+	<ContentPage.Resources>
+        <syncTheme:SyncfusionThemeDictionary>
+            <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <x:String x:Key="SfChatTheme">CustomTheme</x:String>
+                    <Color x:Key="SfChatMessageInputViewBackgroundColor">Transparent</Color>
+                </ResourceDictionary>
+            </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+        </syncTheme:SyncfusionThemeDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
 		 <gradient:SfGradientView>

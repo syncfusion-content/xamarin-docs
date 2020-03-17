@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# Appointments
+# Appointments in Xamarin Scheduler (SfSchedule)
 
 [SfSchedule](https://help.syncfusion.com/cr/xamarin/sfschedule) control has a built-in capability to handle the appointment arrangement internally based on the [ScheduleAppointmentCollection](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointmentCollection.html). [ScheduleAppointment](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment.html) is a class, which holds the details about the appointment to be rendered in schedule.
 
@@ -1316,3 +1316,14 @@ this.Content = schedule;
 * `MinHeight` has ScheduleAppointmentMapping Support.
 * All day Appointment does not support `MinHeight`.
 
+## See Also
+
+* [How to get visible appointments in Xamarin.Forms Schedule (SfSchedule)] (https://www.syncfusion.com/kb/11106/how-to-get-visible-appointments-in-xamarin-forms-schedule-sfschedule)
+* [How to add additional attributes for your appointments ?] (https://www.syncfusion.com/kb/6695/how-to-add-additional-attributes-for-your-appointments)
+* [How to design and configure your custom appointment editor ?] (https://www.syncfusion.com/kb/6696/how-to-design-and-configure-your-custom-appointment-editor)* 
+* [How to bind appointments in Xamarin.Forms Schedule (SfSchedule) using Prism framework] (https://www.syncfusion.com/kb/11038/how-to-bind-appointments-in-xamarin-forms-schedule-sfschedule-using-prism-framework)
+* [How to get visible appointments in Xamarin.Forms Schedule (SfSchedule)] (https://www.syncfusion.com/kb/11106/how-to-get-visible-appointments-in-xamarin-forms-schedule-sfschedule)
+* [How to import and export schedule appointments with Outlook calendar?] (https://www.syncfusion.com/kb/9311/how-to-import-and-export-schedule-appointments-with-outlook-calendar)
+* [How to load the data from SQLite offline database into SfSchedule?] (https://www.syncfusion.com/kb/9125/how-to-load-the-data-from-sqlite-offline-database-into-sfschedule)
+* [How to bind JSON data to Schedule?] (https://www.syncfusion.com/kb/9657/how-to-bind-json-data-to-schedule)
+* [How to bind appointments in Xamarin.Forms Schedule using MVVMCross	] (https://www.syncfusion.com/kb/10081/how-to-bind-appointments-in-xamarin-forms-schedule-using-mvvmcross)

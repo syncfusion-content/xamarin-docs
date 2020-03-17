@@ -607,7 +607,7 @@ Calculate the initial zoom level automatically based on the LatLngBounds(Northea
 
 N> When setting LatLngBounds and DistanceRadius at the same time, the priority is `DistanceRadius` and calculate zoom level based radius value.
 
-![Xamarin SfMaps zoom level changed image](Images/ZoomLevel.jpg)
+![Xamarin SfMaps zoom level changed image](Images/ZoomLevel.png)
 
 ## Get the map tile layer bounds
 

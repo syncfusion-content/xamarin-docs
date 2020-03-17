@@ -7,7 +7,7 @@ control: SfChat
 documentation: ug
 ---
 
-# Typing indicator
+# Typing indicator in Xamarin.Forms Chat (SfChat)
 
 Indicates with an animation, that a user(or users) is currently typing, thereby providing an enhanced user experience. To show/hide the typing indicator set the [SfChat.ShowTypingIndicator](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowTypingIndicator.html) property to `true` or `false` respectively. To show user image and text in the typing indicator create a new instance of `SfChat.TypingIndicator`, set the [TypingIndicator.Authors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatTypingIndicator~Authors.html) and [TypingIndicator.Text](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatTypingIndicator~Text.html) property and assign the typing indicator instance to the [SfChat.TypingIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~TypingIndicator.html) property.
 
@@ -32,7 +32,8 @@ To define `TypingIndicator` in SfChat, refer the below code example:
                        Messages="{Binding Messages}"
                        TypingIndicator="{Binding TypingIndicator}"
                        ShowTypingIndicator="{Binding ShowTypingIndicator}"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+					   ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -54,6 +55,7 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+			this.sfChat.ShowOutgoingMessageAvatar=true;
             this.sfChat.TypingIndicator = viewModel.TypingIndicator;
             this.sfChat.ShowTypingIndicator = viewModel.ShowTypingIndicator;
             this.Content = sfChat;
@@ -177,28 +179,24 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Andrea", Avatar = "People_Circle2.png" },
             Text = "Oh! That's great.",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Harrison", Avatar = "People_Circle14.png" },
             Text = "That is good news.",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Margaret", Avatar = "People_Circle7.png" },
             Text = "What kind of application is it and when are we going to launch?",
-            ShowAvatar = true,
         });
     }
 }

@@ -7,7 +7,7 @@ control: SfSegmentedControl
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started Xamarin Forms SegmentedControl (SfSegmentedControl)
 
 This section provides an overview for working with the segmented control for Xamarin.Forms. Walk through the entire process of creating a real-world application with the SfSegmentedControl.
 
@@ -621,7 +621,8 @@ In ViewModel add the below given code to get the respective items in SfSegmented
                 }
             }
     
-            private ObservableCollection<SfSegmentItem> itemCollection = new ObservableCollection<SfSegmentItem>();
+            private ObservableCollection<SfSegmentItem> itemCollection;
+
             public ObservableCollection<SfSegmentItem> ItemCollection
             {
                 get { return itemCollection; }

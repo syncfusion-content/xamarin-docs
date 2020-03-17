@@ -236,7 +236,7 @@ here [CalendarGettingStarted](https://github.com/SyncfusionExamples/xamarin-cale
 
 ## See Also
 
-[Feature comparison between Calendar and Schedule control] (https://www.syncfusion.com/kb/6976/feature-comparison-between-calendar-and-schedule-control)
-[How to customize the Header view of SfCalendar control?] (https://www.syncfusion.com/kb/8609/how-to-customize-the-header-view-of-sfcalendar-control)
-[How to refresh the Xamarin.Forms Calendar using MVVM pattern?] (https://www.syncfusion.com/kb/9754/how-to-refresh-the-xamarin-forms-calendar-using-mvvm-pattern)
-[How to restrict the year view move while tapping calendar’s month header?] (https://www.syncfusion.com/kb/8607/how-to-restrict-the-year-view-move-while-tapping-calendars-month-header)
+* [Feature comparison between Calendar and Schedule control] (https://www.syncfusion.com/kb/6976/feature-comparison-between-calendar-and-schedule-control)
+* [How to customize the Header view of SfCalendar control?] (https://www.syncfusion.com/kb/8609/how-to-customize-the-header-view-of-sfcalendar-control)
+* [How to refresh the Xamarin.Forms Calendar using MVVM pattern?] (https://www.syncfusion.com/kb/9754/how-to-refresh-the-xamarin-forms-calendar-using-mvvm-pattern)
+* [How to restrict the year view move while tapping calendar’s month header?] (https://www.syncfusion.com/kb/8607/how-to-restrict-the-year-view-move-while-tapping-calendars-month-header)

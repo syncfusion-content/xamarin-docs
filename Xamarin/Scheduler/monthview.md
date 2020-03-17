@@ -1249,7 +1249,7 @@ Following steps will explain how to configure the custom fonts.
 
 ## See Also
 
-[How to customize AgendaView height based on schedule height?] (https://www.syncfusion.com/kb/10913/how-to-customize-agendaview-height-based-on-schedule-height)
-[How to show a custom agenda view besides the Xamarin.Forms scheduler in landscape mode] (https://www.syncfusion.com/kb/10341/how-to-showa-custom-agenda-viewbesides-the-xamarin-forms-scheduler-in-landscape-mode)
-[How to customize the month inline appointments view in Xamarin.Forms scheduler?] (https://www.syncfusion.com/kb/10337/how-to-customize-the-month-inline-appointments-view-in-xamarin-forms-scheduler)
-[How to show appointments in month cell using custom view in Xamarin.Forms schedule?] (https://www.syncfusion.com/kb/10336/how-to-show-appointments-in-month-cell-using-custom-view-in-xamarin-forms-schedule)
+* [How to customize AgendaView height based on schedule height?] (https://www.syncfusion.com/kb/10913/how-to-customize-agendaview-height-based-on-schedule-height)
+* [How to show a custom agenda view besides the Xamarin.Forms scheduler in landscape mode] (https://www.syncfusion.com/kb/10341/how-to-showa-custom-agenda-viewbesides-the-xamarin-forms-scheduler-in-landscape-mode)
+* [How to customize the month inline appointments view in Xamarin.Forms scheduler?] (https://www.syncfusion.com/kb/10337/how-to-customize-the-month-inline-appointments-view-in-xamarin-forms-scheduler)
+* [How to show appointments in month cell using custom view in Xamarin.Forms schedule?] (https://www.syncfusion.com/kb/10336/how-to-show-appointments-in-month-cell-using-custom-view-in-xamarin-forms-schedule)

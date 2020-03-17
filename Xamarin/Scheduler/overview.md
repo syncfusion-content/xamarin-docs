@@ -24,4 +24,4 @@ Essential Schedule for Xamarin.Forms provides all the common scheduling function
 
 ## See Also
 
-[Feature comparison between Calendar and Schedule control] (https://www.syncfusion.com/kb/6977/feature-comparison-between-calendar-and-schedule-control)
+* [Feature comparison between Calendar and Schedule control] (https://www.syncfusion.com/kb/6977/feature-comparison-between-calendar-and-schedule-control)

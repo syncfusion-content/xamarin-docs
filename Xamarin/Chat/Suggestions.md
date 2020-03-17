@@ -32,8 +32,7 @@ Suggestions can be shown in a message by creating a [ChatSuggestion](https://hel
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        CurrentUser="{Binding CurrentUser}"
-					   ShowOutgoingMessageAvatar="True"
-                       ShowIncomingMessageAvatar="True" />
+					   ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -56,7 +55,6 @@ namespace GettingStarted
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
 			this.sfChat.ShowOutgoingMessageAvatar=true;
-			this.sfChat.ShowIncomingMessageAvatar=true;
             this.Content = sfChat;
         }
     }
@@ -192,8 +190,7 @@ To add image in suggestion list in message, refer the below the code example:
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        CurrentUser="{Binding CurrentUser}"
-					   ShowOutgoingMessageAvatar="True"
-                       ShowIncomingMessageAvatar="True" />
+					   ShowOutgoingMessageAvatar="True"/>
     </ContentPage.Content>
 </ContentPage>
 
@@ -216,7 +213,6 @@ namespace GettingStarted
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
 			this.sfChat.ShowOutgoingMessageAvatar=true;
-			this.sfChat.ShowIncomingMessageAvatar=true;
             this.Content = sfChat;
         }
     }
@@ -352,8 +348,7 @@ To change suggestion `ChatSuggestions.Orientation`, refer the below code example
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        CurrentUser="{Binding CurrentUser}" 
-					   ShowOutgoingMessageAvatar="True"
-                       ShowIncomingMessageAvatar="True" />
+					   ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -376,7 +371,6 @@ namespace GettingStarted
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
 			this.sfChat.ShowOutgoingMessageAvatar=true;
-			this.sfChat.ShowIncomingMessageAvatar=true;
             this.Content = sfChat;
         }
     }
@@ -513,8 +507,7 @@ The SfChat allows to show a list of options as suggestions at the bottom of chat
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        CurrentUser="{Binding CurrentUser}"
-					   ShowOutgoingMessageAvatar="True"
-                       ShowIncomingMessageAvatar="True" />
+					   ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -536,7 +529,6 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
 			this.sfChat.ShowOutgoingMessageAvatar=true;
-			this.sfChat.ShowIncomingMessageAvatar=true;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
             this.sfChat.Suggestions = viewModel.ChatSuggestions;
             this.Content = sfChat;
@@ -714,8 +706,7 @@ private void SfChat_SuggestionItemSelected(object sender, SuggestionItemSelected
                        Messages="{Binding Messages}"
                        SendMessageCommand="{Binding SendMessageCommand}"
                        CurrentUser="{Binding CurrentUser}"
-					   ShowOutgoingMessageAvatar="True"
-                       ShowIncomingMessageAvatar="True" />
+					   ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 

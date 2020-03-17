@@ -670,8 +670,17 @@ dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 {% endtabs %}
 
 ### Changing  padding
-You can change the editor padding by overriding the GetLeftPaddingForEditor and GetRightPaddingEditor methods, its
-applicable for both default and floating label layout.
+To customize the padding, override the below `DataFormLayoutManager` methods and assign to the `SfDataForm.LayoutManager` property.
+
+* You can change the editor padding by overriding the `GetLeftPaddingForEditor` and `GetRightPaddingEditor` methods,
+
+* You can change the group header padding by overriding the `GetLeftPaddingForGroupHeader`  and `GetRightPaddingForGroupHeader` methods.
+
+* You can change the group icon padding by overriding the `GetLeftPaddingForGroupIcon` and `GetRightPaddingForGroupIcon` methods.
+
+* You can change the label padding by overriding the `GetLeftPaddingForLabel` and `GetRightPaddingForLabel` methods, its applicable only for `DataForm.LayoutOptions` is Default.
+
+* You can change the validation label padding by overriding the `GetLeftPaddingForValidationLabel` and `GetRightPaddingForValidationLabel` methods, its applicable only for `DataForm.LayoutOptions` is `Default`.
 
 {% tabs %}
 {% highlight c# %}
@@ -686,28 +695,12 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
 
     protected override int GetLeftPaddingForEditor(DataFormItem dataFormItem)
     {
-        if (dataFormItem.Name == "FirstName")
-            return 20;
-        if (dataFormItem.Name == "MiddleName")
-            return 20;
-        if (dataFormItem.Name == "LastName")
-            return 20;
-        if (dataFormItem.Name == "Address")
-            return 20;
-        return base.GetLeftPaddingForEditor(dataFormItem);
+       return 20;
     }
     
     protected override int GetRightPaddingForEditor(DataFormItem dataFormItem)
     {
-        if (dataFormItem.Name == "FirstName")
-            return 50;
-        if (dataFormItem.Name == "MiddleName")
-            return 50;
-        if (dataFormItem.Name == "LastName")
-            return 50;
-        if (dataFormItem.Name == "Address")
-            return 50;
-        return base.GetRightPaddingForEditor(dataFormItem);
+       return 50;
     }
     protected override int GetLeftPaddingForGroupHeader(DataFormItem dataFormItem)
     {
@@ -884,7 +877,7 @@ public string FirstName
 
 ### Using event
 
-You can increase the row height of each DataFormItem using the [RowSpan](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~RowSpan.html) property and it will be handled in the `AutoGeneratingDataFormItem` event.
+You can increase the row height of each `DataFormItem` using the [RowSpan](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~RowSpan.html) property and it will be handled in the `AutoGeneratingDataFormItem` event.
 
 {% tabs %}
 {% highlight c# %}
@@ -932,7 +925,7 @@ public string FirstName
 
 ###Using event
 
-You can increase the column width of each DataFormItem using the [ColumnSpan](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~ColumnSpan.html)  property and it will be handled in the `AutoGeneratingDataFormItem` event.
+When the grid layout is used, you can increase the column width of each `DataFormItem` using the [ColumnSpan](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~ColumnSpan.html)  property and it will be handled in the `AutoGeneratingDataFormItem` event.
 
 {% tabs %}
 {% highlight c# %}

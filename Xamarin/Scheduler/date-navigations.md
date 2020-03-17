@@ -25,8 +25,8 @@ schedule.EnableNavigation = false;
 >**NOTE**
 **Move to time**:
 *   The scrolled position of timeslots will be maintained in day/week/work week view when swiping the next or previous views and switching between day, week or work week views,
-*   If view switch from month/timeline view to week/work/day week views, move to time will be considered if move time mentioned in `MoveToDate` otherwise, position scrolled to work start hour in day/week/work week views.
-*   If view switch from month/timeline view to day/week/work week views, move to time will be considered if move time mentioned in `MoveToDate` otherwise, position scrolled to work start hour in day/week/work week views.
+*   If view switch from month/timeline view to week/work/day week views, move to time will be considered if move time mentioned in `MoveToDate` otherwise, position scrolled to `work start hour` in day/week/work week views.
+
 
 ## Programmatically change to specific dates 
 Visible dates can be moved to specific date using [NavigateTo](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~NavigateTo.html) method and [MoveToDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MoveToDate.html) property available in SfSchedule. It will move to any specific date if the schedule view is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view

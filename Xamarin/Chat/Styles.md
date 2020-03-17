@@ -449,7 +449,7 @@ You can set the background image for the chat by setting the `SfChat.BackgroundC
 
 Run the application to render the following output.
 
-![Image Background](Sytles_images/ImageBackground.png)
+![Image Background](Styles_images/ImageBackground.png)
 
 ### Set gradient background
 
@@ -545,7 +545,7 @@ you can set the gradient as a background for chat by setting the `SfChat.Backgro
 
 Run the application to render the following output.
 
-![Gradient Background](Sytles_images/GradientBackground.png)
+![Gradient Background](Styles_images/GradientBackground.png)
 
 ## Incoming Message Styling
 
@@ -985,7 +985,7 @@ public MainPage()
 
 Run the application to render the following output.
 
-![Xamarin Forms Chat Date Picker Message](Sytles_images/DatePickerImage.png)
+![Xamarin Forms Chat Date Picker Message](Styles_images/DatePickerImage.png)
 
 ## Time Picker message styling
 
@@ -1054,7 +1054,7 @@ public MainPage()
 
 Run the application to render the following output.
 
-![Xamarin Forms Chat Time Picker Message](Sytles_images/TimePickerImage.png)
+![Xamarin Forms Chat Time Picker Message](Styles_images/TimePickerImage.png)
 
 ## Message input view styling
 

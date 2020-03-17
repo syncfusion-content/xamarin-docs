@@ -597,7 +597,7 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 ![Schedule customizing selection work week view](workweekview_images/xamarin.forms-schedule-selection.png)
 
 ## Current time indicator
-You can display the current time indicator in `WorkWeekView` by using the [ShowCurrentTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowCurrentTimeIndicator.html) property.And also you can customize the color of current time indicator by using the [CurrentTimeIndicatorColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CurrentTimeIndicatorColor.html) property
+You can display the current time indicator in `WorkWeekView` by using the [ShowCurrentTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowCurrentTimeIndicator.html) property.And you can also customize the color of current time indicator by using the [CurrentTimeIndicatorColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CurrentTimeIndicatorColor.html) property
 
 {% tabs %}
 {% highlight XAML %}

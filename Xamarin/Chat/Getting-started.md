@@ -352,7 +352,7 @@ The following code example binds the collection created in previous step to `SfC
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        CurrentUser="{Binding CurrentUser}"
-			ShowOutgoingMessageAvatar="True" />
+		ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -374,7 +374,7 @@ namespace GettingStarted
             this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
-	this.sfChat.ShowOutgoingMessageAvatar=true;
+		this.sfChat.ShowOutgoingMessageAvatar=true;
             this.Content = sfChat;
         }
     }
@@ -408,10 +408,10 @@ Messages can be separated based on the date specified in the message and this ca
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        ShowTimeBreak="True"
-				ShowIncomingMessageTimestamp="True"
-				ShowOutgoingMessageTimestamp="True"
-				IncomingMessageTimestampFormat="hh:mm tt"
-				OutgoingMessageTimestampFormat="hh:mm tt"
+		ShowIncomingMessageTimestamp="True"
+		ShowOutgoingMessageTimestamp="True"
+		IncomingMessageTimestampFormat="hh:mm tt"
+		OutgoingMessageTimestampFormat="hh:mm tt"
                        CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
 
@@ -433,10 +433,10 @@ namespace GettingStarted
             sfChat = new SfChat();
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
-	this.sfChat.IncomingMessageTimestampFormat = "hh:mm tt";
-	this.sfChat.OutgoingMessageTimestampFormat = "hh:mm tt";
-	this.sfChat.ShowIncomingMessageTimestamp = true;
-	his.sfChat.ShowOutgoingMessageTimestamp = true;
+		this.sfChat.IncomingMessageTimestampFormat = "hh:mm tt";
+		this.sfChat.OutgoingMessageTimestampFormat = "hh:mm tt";
+		this.sfChat.ShowIncomingMessageTimestamp = true;
+		this.sfChat.ShowOutgoingMessageTimestamp = true;
             this.sfChat.ShowTimeBreak = true;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
             this.Content = sfChat;

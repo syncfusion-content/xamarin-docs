@@ -410,7 +410,7 @@ Messages can be separated based on the date specified in the message and this ca
                        ShowTimeBreak="True"
 					   ShowIncomingMessageTimestamp="True"
 					   ShowOutgoingMessageTimestamp="True"
-                       IncomingMessageTimestampFormat="hh:mm tt"
+					   IncomingMessageTimestampFormat="hh:mm tt"
 					   OutgoingMessageTimestampFormat="hh:mm tt"
                        CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
@@ -433,7 +433,7 @@ namespace GettingStarted
             sfChat = new SfChat();
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
-            this.sfChat.IncomingMessageTimestampFormat = "hh:mm tt";
+			this.sfChat.IncomingMessageTimestampFormat = "hh:mm tt";
 			this.sfChat.OutgoingMessageTimestampFormat = "hh:mm tt";
 			this.sfChat.ShowIncomingMessageTimestamp = true;
 			this.sfChat.ShowOutgoingMessageTimestamp = true;

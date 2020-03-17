@@ -7,7 +7,7 @@ control: SfScheduler
 documentation: ug
 ---
 
-# Timeline view
+# Timeline View in Xamarin Scheduler (SfSchedule)
 
 `TimelineView` displays the dates in horizontal time axis with the desired day's count. You can see the past or future dates by scrolling to the right or left. Each view displays events accurately across the time slots with an intuitive drag-and-drop feature. It provides support to highlight the selected region of time slots and handle interaction.
 
@@ -592,3 +592,8 @@ schedule.SelectedDate = null;
 
 >**NOTE**
 * `SfSchedule` does not support multiple selection. 
+
+## See Also
+
+* [How to add multiple resource to Schedule (SfSchedule) in Xamarin.Forms] (https://www.syncfusion.com/kb/11210/how-to-add-multiple-resource-to-schedule-sfschedule-in-xamarin-forms)
+* [How to customize time label of schedule in Xamarin.Forms?] (https://www.syncfusion.com/kb/10879/how-to-customize-time-label-of-schedule-in-xamarin-forms)

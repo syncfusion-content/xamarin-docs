@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Drag and Drop Appointments
-description: How to drag and drop the appointments of Schedule control.
+title: Drag and Drop Appointments | Xamarin.Forms | Syncfusion
+description: Describes how to drag and drop the appointments and its customization of Schedule (SfSchedule) control.
 platform: xamarin
 control: SfSchedule
 documentation: ug
@@ -241,3 +241,8 @@ dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
 * While dropping appointment to `AllDay` panel from time slots, appointment start and end time will change to 12.00 AM.
 * While dropping appointment to time slots from `AllDay` panel, appointment duration will change as one (1) hour from the dropped time.
 * Doesn't support control to control drag and drop.
+
+## See Also
+
+* [How to get dropped resource in Xamarin.Forms Schedule (SfSchedule)] (https://www.syncfusion.com/kb/11179/how-to-get-dropped-resource-in-xamarin-forms-schedule-sfschedule)
+* [How to drag appointment to the exact hour in Schedule (SfSchedule) Xamarin.Forms] (https://www.syncfusion.com/kb/11081/how-to-drag-appointment-to-the-exact-hour-in-schedule-sfschedule-xamarin-forms)

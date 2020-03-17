@@ -572,4 +572,4 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 
 ## See Also
 
-* [How to get date and appointment details while tapping view header ?] (https://www.syncfusion.com/kb/6203/how-to-get-date-and-appointment-details-while-tapping-view-header)
+[How to get date and appointment details while tapping view header ?](https://www.syncfusion.com/kb/6203/how-to-get-date-and-appointment-details-while-tapping-view-header)

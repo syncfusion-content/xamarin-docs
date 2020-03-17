@@ -552,4 +552,4 @@ You can download the template selector demo for Xamarin.Forms from [here](https:
 
 ## See Also
 
-* [How to handle appointments for multiple resources in Schedule?] (https://www.syncfusion.com/kb/6694/how-to-handle-appointments-for-multiple-resources-in-schedule)
+[How to handle appointments for multiple resources in Schedule?](https://www.syncfusion.com/kb/6694/how-to-handle-appointments-for-multiple-resources-in-schedule)

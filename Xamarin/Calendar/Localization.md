@@ -107,4 +107,4 @@ You can download the entire source code of this demo for Xamarin.Forms from
 here [Localization](https://github.com/SyncfusionExamples/Localizing-the-custom-texts-using-platform-renderer-in-Xamarin.Forms-Calendar).
 
 ## See Also
-* [How to add new languages in SfCalendar control] (https://www.syncfusion.com/kb/7121/how-to-add-new-languages-in-sfcalendar-control)
+[How to add new languages in SfCalendar control](https://www.syncfusion.com/kb/7121/how-to-add-new-languages-in-sfcalendar-control)

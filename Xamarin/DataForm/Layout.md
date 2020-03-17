@@ -678,7 +678,7 @@ To customize the padding, override the below `DataFormLayoutManager` methods and
 
 * You can change the group icon padding by overriding the `GetLeftPaddingForGroupIcon` and `GetRightPaddingForGroupIcon` methods.
 
-* You can change the label padding by overriding the `GetLeftPaddingForLabel` and `GetRightPaddingForLabel` methods, its applicable only for `DataForm.LayoutOptions` is Default.
+* You can change the label padding by overriding the `GetLeftPaddingForLabel` and `GetRightPaddingForLabel` methods, its applicable only for `DataForm.LayoutOptions` is `Default`.
 
 * You can change the validation label padding by overriding the `GetLeftPaddingForValidationLabel` and `GetRightPaddingForValidationLabel` methods, its applicable only for `DataForm.LayoutOptions` is `Default`.
 

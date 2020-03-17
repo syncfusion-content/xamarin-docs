@@ -594,9 +594,3 @@ schedule.ShowCurrentTimeIndicator = true;
 schedule.CurrentTimeIndicatorColor = Color.Black;
 {% endhighlight %}
 {% endtabs %}
-
-
-
-
-
-

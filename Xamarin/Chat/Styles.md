@@ -1448,7 +1448,7 @@ You can applies the styling for the send button elements by setting the various 
                 <ResourceDictionary>
                     <x:String x:Key="SfChatTheme">CustomTheme</x:String>
                     <Color x:Key="SfChatSendButtonDisabledColor">Blue</Color>
-                    <Color x:Key="SfChatSendButtonColor">Black</Color>
+                    <Color x:Key="SfChatSendButtonColor">Orange</Color>
                 </ResourceDictionary>
             </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
         </syncTheme:SyncfusionThemeDictionary>
@@ -1467,7 +1467,7 @@ public MainPage()
        ResourceDictionary dictionary = new ResourceDictionary();
             dictionary.Add("SfChatTheme", "CustomTheme");
             dictionary.Add("SfChatSendButtonDisabledColor", Color.Blue);
-            dictionary.Add("SfChatSendButtonColor", Color.Black);
+            dictionary.Add("SfChatSendButtonColor", Color.Orange);
 			this.Resources.Add(dictionary);
     ....
 }

@@ -363,6 +363,10 @@ You can set background color for the Xamarin.Forms Chat by setting the [SfChat.B
 
 {% endtabs %}
 
+Run the application to render the following output.
+
+![Xamarin Forms Chat Background](Styles_images/ChatBackground.png)
+
 ### Set background image
 
 You can set the background image for the chat by setting the `SfChat.BackgroundColor` as a Transparent and adding the image to grid first child and chat to grid second child.
@@ -422,6 +426,10 @@ You can set the background image for the chat by setting the `SfChat.BackgroundC
 {% endhighlight %}
 
 {% endtabs %}
+
+Run the application to render the following output.
+
+![Image Background](Sytles_images/ImageBackground.png)
 
 ### Set gradient background
 
@@ -504,6 +512,10 @@ you can set the gradient as a background for chat by setting the `SfChat.Backgro
 {% endhighlight %}
 
 {% endtabs %}
+
+Run the application to render the following output.
+
+![Gradient Background](Sytles_images/GradientBackground.png)
 
 ## Incoming Message Styling
 
@@ -628,6 +640,10 @@ public MainPage()
 
 {% endtabs %}
 
+Run the application to render the following output.
+
+![Xamarin Forms Chat Incoming message](Styles_images/IncomingMessage.png)
+
 ## Outgoing message styling
 
 You can applies the styling for the outgoing message elements by setting the various outgoing message key and values in resource dictionary.
@@ -689,7 +705,7 @@ You can applies the styling for the outgoing message elements by setting the var
             <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
                 <ResourceDictionary>
                     <x:String x:Key="SfChatTheme">CustomTheme</x:String>
-                    <Color x:Key="SyncPrimaryForegroundColor">SlateGray</Color>
+                    <Color x:Key="SyncPrimaryForegroundColor">Blue</Color>
                     <Color x:Key="SyncPrimaryColor">Gray</Color>
                     <Color x:Key="SfChatOutgoingMessageTimestampTextColor">White</Color>
                     <Color x:Key="SfChatOutgoingMessageAuthorTextColor">Blue</Color>
@@ -719,7 +735,7 @@ public MainPage()
     InitializeComponent();
             ResourceDictionary dictionary = new ResourceDictionary();
             dictionary.Add("SfChatTheme", "CustomTheme");
-            dictionary.Add("SyncPrimaryForegroundColor", Color.SlateGray);
+            dictionary.Add("SyncPrimaryForegroundColor", Color.Blue);
             dictionary.Add("SfChatOutingMessageTimestampTextColor", Color.White);
             dictionary.Add("SfChatOutingMessageAuthorTextColor", Color.Gray);
             dictionary.Add("SyncPrimaryColor", Color.Blue);
@@ -739,6 +755,10 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
+
+Run the application to render the following output.
+
+![Xamarin Forms Chat Outgoing message](Styles_images/OutgoingMessage.png)
 
 ## Calendar Message styling
 
@@ -793,6 +813,8 @@ public MainPage()
 
 {% endtabs %}
 
+
+
 ## Hyperlink message styling
 
 You can applies the styling for the hyperlink message elements by setting the various hyperlink message key and values in resource dictionary.
@@ -827,7 +849,7 @@ You can applies the styling for the hyperlink message elements by setting the va
             <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
                 <ResourceDictionary>
                     <x:String x:Key="SfChatTheme">CustomTheme</x:String>
-                    <Color x:Key="SfChatHyperlinkColor">SlateGray</Color>
+                    <Color x:Key="SfChatHyperlinkColor">Gray</Color>
                     <Color x:Key="SfChatHyperlinkMetaTitleTextColor">Red</Color>
                     <Color x:Key="SfChatHyperlinkDescriptionTextColor">Blue</Color>
                     <Color x:Key="SfChatHyperlinkDescriptionBackgroundColor">Gray</Color>
@@ -848,7 +870,7 @@ public MainPage()
     InitializeComponent();
             ResourceDictionary dictionary = new ResourceDictionary();
             dictionary.Add("SfChatTheme", "CustomTheme");
-            dictionary.Add("SfChatHyperlinkColor", Color.SlateGray);
+            dictionary.Add("SfChatHyperlinkColor", Color.Gray);
             dictionary.Add("SfChatHyperlinkMetaTitleTextColor", Color.Red);
             dictionary.Add("SfChatHyperlinkDescriptionTextColor", Color.Blue);
             dictionary.Add("SfChatHyperlinkDescriptionBackgroundColor", Color.Gray);
@@ -859,6 +881,10 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
+
+Run the application to render the following output.
+
+![Xamarin Forms Chat Hyperlink message](Styles_images/HyperLinkMessageImage.png)
 
 ## Date Picker message styling
 
@@ -897,7 +923,7 @@ You can applies the styling for the date picker message elements by setting the 
                 <ResourceDictionary>
                     <x:String x:Key="SfChatTheme">CustomTheme</x:String>
                     <Color x:Key="SyncPrimaryColor">Blue</Color>
-                    <Color x:Key="SyncPrimaryLightColor">Gray</Color>
+                    <Color x:Key="SyncPrimaryLightColor">White</Color>
                     <Color x:Key="SfChatDatePickerBackgroundColor">SteelBlue</Color>
                 </ResourceDictionary>
             </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
@@ -917,7 +943,7 @@ public MainPage()
             ResourceDictionary dictionary = new ResourceDictionary();
             dictionary.Add("SfChatTheme", "CustomTheme");
             dictionary.Add("SfChatDatePickerBackgroundColor", Color.SteelBlue);
-            dictionary.Add("SyncPrimaryLightColor", Color.Gray);
+            dictionary.Add("SyncPrimaryLightColor", Color.White);
             dictionary.Add("SyncPrimaryColor", Color.Blue);
 			this.Resources.Add(dictionary);
     ....
@@ -926,6 +952,10 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
+
+Run the application to render the following output.
+
+![Xamarin Forms Chat Date Picker Message](Sytles_images/DatePickerImage.png)
 
 ## Time Picker message styling
 
@@ -962,7 +992,7 @@ You can applies the styling for the time picker message elements by setting the 
                 <ResourceDictionary>
                     <x:String x:Key="SfChatTheme">CustomTheme</x:String>
                     <Color x:Key="SyncPrimaryColor">Blue</Color>
-                    <Color x:Key="SyncPrimaryLightColor">Gray</Color>
+                    <Color x:Key="SyncPrimaryLightColor">White</Color>
                     <Color x:Key="SfChatTimePickerBackgroundColor">SteelBlue</Color>
                  </ResourceDictionary>
             </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
@@ -982,7 +1012,7 @@ public MainPage()
     ResourceDictionary dictionary = new ResourceDictionary();
             dictionary.Add("SfChatTheme", "CustomTheme");
             dictionary.Add("SfChatDatePickerBackgroundColor", Color.SteelBlue);
-            dictionary.Add("SyncPrimaryLightColor", Color.Gray);
+            dictionary.Add("SyncPrimaryLightColor", Color.White);
             dictionary.Add("SyncPrimaryColor", Color.Blue);
 			this.Resources.Add(dictionary);
     ....
@@ -991,6 +1021,10 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
+
+Run the application to render the following output.
+
+![Xamarin Forms Chat Time Picker Message](Sytles_images/TimePickerImage.png)
 
 ## Message input view styling
 
@@ -1043,6 +1077,10 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
+
+Run the application to render the following output.
+
+![Xamarin Forms Chat message input view](Styles_images/MessageInputViewImage.png)
 
 ## Editor styling
 
@@ -1128,6 +1166,12 @@ public MainPage()
 
 {% endtabs %}
 
+Run the application to render the following output.
+
+![Xamarin Forms Chat editor](Styles_images/EditorView.png)
+
+![Xamarin Forms Chat editor](Styles_images/EditorViewWithText.png)
+
 ## Typing Indicator styling
 
 You can applies the styling for the typing indicator elements by setting the various typing indicator key and values in resource dictionary.
@@ -1201,6 +1245,10 @@ public MainPage()
 
 {% endtabs %}
 
+Run the application to render the following output.
+
+![Xamarin Forms Chat Typing indicator](Styles_images/TypingIndicator.png)
+
 ## Time break view styling
 
 You can applies the styling for the time break view elements by setting the various time break view key and values in resource dictionary.
@@ -1244,7 +1292,7 @@ You can applies the styling for the time break view elements by setting the vari
                 <ResourceDictionary>
                     <x:String x:Key="SfChatTheme">CustomTheme</x:String>
                     <Color x:Key="SyncPrimaryLightColor">Blue</Color>
-                    <Color x:Key="SfChatTimeBreakViewBackgroundColor">Violet</Color>
+                    <Color x:Key="SfChatTimeBreakViewBackgroundColor">Gray</Color>
                     <Color x:Key="SfChatTimeBreakViewBorderColor">LimeGreen</Color>
                     <x:String x:Key="SfChatTimeBreakViewFontFamily">Roboto-Medium</x:String>
                     <FontAttributes x:Key="SfChatTimeBreakViewFontAttributes">Italic</FontAttributes>
@@ -1267,7 +1315,7 @@ public MainPage()
     ResourceDictionary dictionary = new ResourceDictionary();
             dictionary.Add("SfChatTheme", "CustomTheme");
             dictionary.Add("SyncPrimaryLightColor", Color.Blue);
-            dictionary.Add("SfChatTimeBreakViewBorderColor", Color.Violet);
+            dictionary.Add("SfChatTimeBreakViewBorderColor", Color.Gray);
             dictionary.Add("SfChatTimeBreakViewBackgroundColor", Color.Gray);
             dictionary.Add("SfChatTimeBreakViewFontFamily", "Roboto-Regular");
             dictionary.Add("SfChatTimeBreakViewFontAttributes", FontAttributes.Italic);
@@ -1279,6 +1327,10 @@ public MainPage()
 {% endhighlight %}
 
 {% endtabs %}
+
+Run the application to render the following output.
+
+![Xamarin Forms Chat Time break view](Styles_images/TimeBreakView.png)
 
 ## Suggestion styling
 
@@ -1362,6 +1414,10 @@ public MainPage()
 
 {% endtabs %}
 
+Run the application to render the following output.
+
+![Xamarin Forms Chat suggestion](Styles_images/Suggestion.png)
+
 ## Send Button styling
 
 You can applies the styling for the send button elements by setting the various send button key and values in resource dictionary.
@@ -1392,7 +1448,7 @@ You can applies the styling for the send button elements by setting the various 
                 <ResourceDictionary>
                     <x:String x:Key="SfChatTheme">CustomTheme</x:String>
                     <Color x:Key="SfChatSendButtonDisabledColor">Blue</Color>
-                    <Color x:Key="SfChatSendButtonColor">Violet</Color>
+                    <Color x:Key="SfChatSendButtonColor">Black</Color>
                 </ResourceDictionary>
             </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
         </syncTheme:SyncfusionThemeDictionary>
@@ -1411,7 +1467,7 @@ public MainPage()
        ResourceDictionary dictionary = new ResourceDictionary();
             dictionary.Add("SfChatTheme", "CustomTheme");
             dictionary.Add("SfChatSendButtonDisabledColor", Color.Blue);
-            dictionary.Add("SfChatSendButtonColor", Color.Violet);
+            dictionary.Add("SfChatSendButtonColor", Color.Black);
 			this.Resources.Add(dictionary);
     ....
 }
@@ -1421,6 +1477,8 @@ public MainPage()
 {% endtabs %}
 
 
+Run the application to render the following output.
 
+![Xamarin Forms Chat send button disable](Styles_images/SendIconDisable.png)
 
-
+![Xamarin Forms Chat send button Enable](Styles_images/SendIconEnable.png)

@@ -33,7 +33,7 @@ To define `TypingIndicator` in SfChat, refer the below code example:
                        TypingIndicator="{Binding TypingIndicator}"
                        ShowTypingIndicator="{Binding ShowTypingIndicator}"
                        CurrentUser="{Binding CurrentUser}"
-					   ShowOutgoingMessageAvatar="True"/>
+                       ShowOutgoingMessageAvatar="True"/>
     </ContentPage.Content>
 </ContentPage>
 
@@ -55,7 +55,7 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
-			this.sfChat.ShowOutgoingMessageAvatar=true;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.sfChat.TypingIndicator = viewModel.TypingIndicator;
             this.sfChat.ShowTypingIndicator = viewModel.ShowTypingIndicator;
             this.Content = sfChat;

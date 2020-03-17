@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Grid Events
+# Events and Commands in SfDataGrid
 
 ## GridTapped event
 
@@ -341,6 +341,8 @@ Refer to the following GIF for final rendering on execution of above code exampl
 
 The [SfDataGrid.GridTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTappedCommand.html) will be executed when tapping the SfDataGrid. You can directly assign any [ICommand](https://docs.microsoft.com/en-us/dotnet/api/system.windows.input.icommand?view=netframework-4.7.2) type property to the `SfDataGrid.GridTappedCommand` or write a class derived from `ICommand` interface, and assign your CustomClass type property to the `SfDataGrid.GridTappedCommand` property. By configuring this, the data grid comes handy if you have your own logics determining whether to execute the command or not.
 
+The parameter of command holds the value of [SfDataGrid.GridTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTappedEventArgs.html) through which you can get the value of tapped RowData and RowColumnIndex. 
+
 {% tabs %}
 {% highlight xaml %}
 
@@ -403,7 +405,9 @@ The [SfDataGrid.GridTappedCommand](https://help.syncfusion.com/cr/cref_files/xam
 
         public void Execute(object parameter)
         {
-            // your logics here.
+            var eventArgs = parameter as GridTappedEventArgs;
+            var rowData = eventArgs.RowData;
+            var rowColumnIndex = eventArgs.RowColumnIndex;
         }
     }
 

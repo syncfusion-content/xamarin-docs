@@ -7,7 +7,7 @@ control: SfTextInputLayout
 documentation: ug
 ---
 
-# Container type
+# Container Type in Xamarin Text Input Layout (SfTextInputLayout)
 
 Containers improve the discoverability of input view by creating a contrast between the input view and assistive elements.
 

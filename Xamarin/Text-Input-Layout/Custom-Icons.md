@@ -7,7 +7,7 @@ control: SfTextInputLayout
 documentation: ug
 ---
 
-# Adding custom icons
+# Custom Icons in Xamarin Text Input Layout (SfTextInputLayout)
 
 Any custom icons can be added to the leading edge or the trailing edge of input view in the text input layout control. The events and commands related to the custom icons should be handled at the application level.
 

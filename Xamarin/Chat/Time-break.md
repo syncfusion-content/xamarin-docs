@@ -85,8 +85,7 @@ To stick the time break view, enable the property [SfChat.StickyTimeBreak](https
                        StickyTimeBreak="True"
                        Messages="{Binding Messages}"
                        CurrentUser="{Binding CurrentUser}"
-					   ShowOutgoingMessageAvatar="True"
-                       ShowIncomingMessageAvatar="True" />
+					   ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 
 </ContentPage>
@@ -110,7 +109,6 @@ namespace GettingStarted
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
 			this.sfChat.ShowOutgoingMessageAvatar=true;
-			this.sfChat.ShowIncomingMessageAvatar=true;
             this.sfChat.ShowTimeBreak = true;
             this.sfChat.StickyTimeBreak = true;
             this.Content = sfChat;

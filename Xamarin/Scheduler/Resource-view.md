@@ -550,6 +550,6 @@ Used button to display the resources
 
 You can download the template selector demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/xamarin-schedule-templated-resource-view).
 
-## See Also
+## See also
 
-* [How to handle appointments for multiple resources in Schedule?] (https://www.syncfusion.com/kb/6694/how-to-handle-appointments-for-multiple-resources-in-schedule)
+[How to handle appointments for multiple resources in Schedule?](https://www.syncfusion.com/kb/6694/how-to-handle-appointments-for-multiple-resources-in-schedule)

@@ -367,6 +367,6 @@ Localize class for iOS project,
 >**NOTE**
 For UWP project, no sample level changes required.
 
-## See Also
+## See also
 
-* [How to localize inline strings in schedule month view without changing locale in device ?] (https://www.syncfusion.com/kb/9397/how-to-localize-inline-strings-in-schedule-month-view-without-changing-locale-in-device)
+[How to localize inline strings in schedule month view without changing locale in device ?](https://www.syncfusion.com/kb/9397/how-to-localize-inline-strings-in-schedule-month-view-without-changing-locale-in-device)

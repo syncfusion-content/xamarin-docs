@@ -194,7 +194,7 @@ public class GroupConverter : IValueConverter
 {% endhighlight %}
 
 ### Sorting the grouped column records
-In custom grouping, you can sort all the inner records of each group by setting [GroupColumnDescription.SortGroupRecords](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupColumnDescription~SortGroupRecords.html) property as `true` to sort the records based on the `GroupColumnDescription.ColumnName` property.
+In custom grouping, you can sort all the inner records of each group by setting `GroupColumnDescription.SortGroupRecords` property as `true` to sort the records based on the `GroupColumnDescription.ColumnName` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -226,6 +226,7 @@ In custom grouping, you can sort all the inner records of each group by setting 
 {% endhighlight %}
 
 {% highlight c# %}
+
 datagrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
 {
     ColumnName = "OrderNo",
@@ -256,7 +257,7 @@ public class GroupOrderNoConvertor : IValueConverter
 
     public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        throw new NotImplementedException();
+        return null;
     }
 }
 
@@ -276,7 +277,7 @@ public class PriceConverter : IValueConverter
 
     public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
     {
-        throw new NotImplementedException();
+        return null;
     }
 }
 

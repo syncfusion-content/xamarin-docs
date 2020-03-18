@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  | Styling in Xamarin.Forms Chat | Xamarin | Syncfusion
-description: Describes the available style customizations in Xamarin.Forms Chat(SfChat) control and how to apply styling and theming using resource dictionary and in-built keys.
+description: Describes the available style customizations in Xamarin.Forms Chat(SfChat) and how to apply styling and theming using resource dictionary and in-built keys.
 platform: xamarin
 control: SfChat
 documentation: ug

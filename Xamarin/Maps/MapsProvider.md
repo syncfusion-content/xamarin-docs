@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Maps provider of Syncfusion Maps control for Xamarin.Forms 
-description: Describes the adding OSM map, Bing map and other imagery layer support in Xamarin Forms SfMaps control
+description: Describes the adding OSM map, bing map and other imagery layer support in Xamarin Forms SfMaps control
 platform: xamarin
 control: SfMaps 
 documentation: ug

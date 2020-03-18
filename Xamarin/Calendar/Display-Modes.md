@@ -515,7 +515,7 @@ this.Content = calendar;
 
 ![Century view customization in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-centuryviewcustom.png)
 
-## See Also
+## See also
 
 [How to Identify the current month day cell in SfCalendar?](https://www.syncfusion.com/kb/8563/how-to-identify-the-current-month-day-cell-in-sfcalendar)
 

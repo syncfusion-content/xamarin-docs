@@ -329,6 +329,6 @@ public class CalendarViewModel
 {% endhighlight %}
 {% endtabs %} 
 
-## See Also
+## See also
 
 [How to bind SelectedDates of Calendar in MVVM?](https://www.syncfusion.com/kb/10087/how-to-bind-selecteddates-of-calendar-in-mvvm)

@@ -242,7 +242,7 @@ dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
 * While dropping appointment to time slots from `AllDay` panel, appointment duration will change as one (1) hour from the dropped time.
 * Doesn't support control to control drag and drop.
 
-## See Also
+## See also
 
 [How to get dropped resource in Xamarin.Forms Schedule (SfSchedule)](https://www.syncfusion.com/kb/11179/how-to-get-dropped-resource-in-xamarin-forms-schedule-sfschedule)
 

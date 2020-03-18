@@ -230,7 +230,7 @@ Agenda view mode
 
 ![SfCalendar Inline events](images/xamarin.forms-calendar-agendaappointmentdetails.png)
 
-## See Also
+## See also
 
 [How to filter the events in the Xamarin.Forms Calendar by searching the subject?](https://www.syncfusion.com/kb/10324/how-to-filter-the-events-in-the-xamarin-forms-calendar-by-searching-the-subject)
  

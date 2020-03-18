@@ -11,311 +11,10 @@ documentation: ug
 
 You can style the elements of the SfChat control by creating resource dictionaries and assigning values to the in-built keys assigned for each individual element.
 
-## Default values of our keys
-
-<table>
-<tr>
-<th> Key </th>
-<th> Description </th>
-<th> Default Value </th>
-</tr>
-<tr>
-<td> SfChatIncomingMessageTextColor </td>
-<td> Text color of the incoming message. </td>
-<td> #212121 </td>
-</tr>
-<tr>
-<td> SfChatIncomingMessageAuthorTextColor </td>
-<td> Text color of the author name in an incoming message. </td>
-<td> #5C5C5C </td>
-</tr>
-<tr>
-<td> SfChatIncomingMessageTimestampTextColor </td>
-<td> Text color of the timestamp in an incoming message. </td>
-<td> #5C5C5C </td>
-</tr>
-<tr>
-<td> SfChatIncomingMessageBackgroundColor </td>
-<td>  Background color of the incoming message. </td>
-<td> #FFFFFF </td>
-</tr>
-<tr>
-<td> SfChatIncomingMessageFontFamily </td>
-<td> Font family of the incoming message. </td>
-<td> Roboto-Regular </td>
-</tr>
-<tr>
-<td> SfChatIncomingMessageFontAttributes </td>
-<td> Font attributes of the incoming message. </td>
-<td> FontAttributes.None </td>
-</tr>
-<tr>
-<td> SfChatIncomingMessageFontSize </td>
-<td> Font size of the incoming message. </td>
-<td> 14 </td>
-</tr>
-<tr>
-<td> SfChatIncomingMessageAuthorFontFamily </td>
-<td> Font family of the author name in an incoming message. </td>
-<td> Roboto-Regular </td>
-</tr>
-<tr>
-<td> SfChatIncomingMessageAuthorFontAttributes </td>
-<td> Font attributes of the author name in an incoming message. </td>
-<td> FontAttributes.None </td>
-</tr>
-<tr>
-<td> SfChatIncomingMessageAuthorFontSize </td>
-<td> Font size of the author name in an incoming message. </td>
-<td> 12 </td>
-</tr>
-<tr>
-<td> SfChatIncomingMessageTimestampFontFamily </td>
-<td> Font family of the timestamp in an incoming message. </td>
-<td> Roboto-Regular </td>
-</tr>
-<tr>
-<td> SfChatIncomingMessageTimestampFontAttributes </td>
-<td> Font attributes of the timestamp in an incoming message. </td>
-<td> FontAttributes.None </td>
-</tr>
-<tr>
-<td> IncomingMessageTimestampFontSize </td>
-<td> Font size of the timestamp in an incoming message. </td>
-<td> 12 </td>
-</tr><tr>
-<td> OutgoingMessageTextColor </td>
-<td> Text color of outgoing message. </td>
-<td> #FFFFFF </td>
-</tr><tr>
-<td> OutgoingMessageAuthorTextColor </td>
-<td> Text color of the author name in an outgoing message. </td>
-<td> #D0E8FF </td>
-</tr><tr>
-<td> OutgoingMessageTimestampTextColor </td>
-<td> Text color of the timestamp in an outgoing message. </td>
-<td> #D0E8FF </td>
-</tr><tr>
-<td> OutgoingMessageBackgroundColor </td>
-<td> Background color of the outgoing message. </td>
-<td> #007AFF </td>
-</tr><tr>
-<td> OutgoingMessageFontFamily </td>
-<td> Font family of the outgoing message. </td>
-<td> Roboto-Regular </td>
-</tr><tr>
-<td> OutgoingMessageFontAttributes </td>
-<td> Font attributes of the outgoing message. </td>
-<td> FontAttributes.None </td>
-</tr><tr>
-<td> OutgoingMessageFontSize </td>
-<td> Font size of the outgoing message. </td>
-<td> 14 </td>
-</tr><tr>
-<td> OutgoingMessageAuthorFontFamily </td>
-<td> Font family of the author name in an outgoing message. </td>
-<td> Roboto-Regular </td>
-</tr><tr>
-<td> OutgoingMessageAuthorFontAttributes </td>
-<td> Font attributes of the author name in an outgoing message. </td>
-<td> FontAttributes.None </td>
-</tr><tr>
-<td> OutgoingMessageAuthorFontSize </td>
-<td> Font size of the author name in an outgoing message. </td>
-<td> 12 </td>
-</tr><tr>
-<td> OutgoingMessageTimestampFontFamily </td>
-<td> Font family of the timestamp in an outgoing message. </td>
-<td> Roboto-Regular </td>
-</tr><tr>
-<td> OutgoingMessageTimestampFontAttributes </td>
-<td>  Font attributes of the timestamp in an outgoing message. </td>
-<td>  FontAttributes.None </td>
-</tr><tr>
-<td> OutgoingMessageTimestampFontSize </td>
-<td> Font size of the timestamp in an outgoing message. </td>
-<td> 12 </td>
-</tr><tr>
-<td> EditorTextColor </td>
-<td> Color of the text in the editor. </td>
-<td> Color.Black </td>
-</tr>
-<tr>
-<td> EditorPlaceholderTextColor </td>
-<td> Color of the placeholder text in the editor. </td>
-<td> #ACACAC </td>
-</tr>
-<tr>
-<td> EditorBorderColor </td>
-<td> Color of the border in the editor. </td>
-<td> #D2D2D2 </td>
-</tr>
-<tr>
-<td> EditorBackgroundColor </td>
-<td> Background color of the editor. </td>
-<td> #FFFFFF </td>
-</tr><tr>
-<td> EditorFontFamily </td>
-<td> Font family of the text in the editor. </td>
-<td> Roboto-Regular </td>
-</tr><tr>
-<td> EditorFontAttributes </td>
-<td> Font attributes of the text in the editor. </td>
-<td> FontAttributes.None </td>
-</tr><tr>
-<td> EditorFontSize </td>
-<td> Font size of the text in the editor. </td>
-<td> 14 </td>
-</tr><tr>
-<td> SendButtonColor </td>
-<td> Color of the send button. </td>
-<td> #FF696969 </td>
-</tr><tr>
-<td> SendButtonDisabledColor </td>
-<td> Color of the send button when it is in 'Disabled' state. </td>
-<td> #FF696969 </td>
-</tr><tr>
-<td> TypingIndicatorTextColor </td>
-<td> Text color in the typing indicator. </td>
-<td> #5C5C5C </td>
-</tr><tr>
-<td> TypingIndicatorBackgroundColor </td>
-<td> Background color of the typing indicator. </td>
-<td> Color.Transparent </td>
-</tr><tr>
-<td> TypingIndicatorFontFamily </td>
-<td> Font family of the text in the typing indicator. </td>
-<td> Roboto-Italic </td>
-</tr><tr>
-<td> TypingIndicatorFontAttributes </td>
-<td> Font attributes of the text in the typing indicator. </td>
-<td> FontAttributes.None </td>
-</tr><tr>
-<td> TypingIndicatorFontSize </td>
-<td> Font size of the text in the typing indicator. </td>
-<td> 12 </td>
-</tr><tr>
-<td> TimeBreakViewTextColor </td>
-<td> Text color of the text in the time break view. </td>
-<td> #98770E </td>
-</tr><tr>
-<td> TimeBreakViewBackgroundColor </td>
-<td> Background color of the time break view. </td>
-<td> #FDF4D6 </td>
-</tr><tr>
-<td> TimeBreakViewFontFamily </td>
-<td> Font family of the text in the time break view. </td>
-<td> Roboto-Medium </td>
-</tr><tr>
-<td> TimeBreakViewFontAttributes </td>
-<td> Font attributes of the text in the time break view. </td>
-<td> FontAttributes.Bold </td>
-</tr><tr>
-<td> TimeBreakViewFontSize  </td>
-<td> Font size of the text in the time break view. </td>
-<td> 12 </td>
-</tr><tr>
-<td> SuggestionListItemTextColor </td>
-<td> Text color of an item in the list of suggestions. </td>
-<td> #0680F8 </td>
-</tr><tr>
-<td> SuggestionListItemBackgroundColor </td>
-<td> Background color of an item in the list of suggestions. </td>
-<td> Color.White </td>
-</tr><tr>
-<td> SuggestionListBackgroundColor </td>
-<td> Background color of the suggestion list view. </td>
-<td> Color.Transparent </td>
-</tr><tr>
-<td> SuggestionListItemFontFamily </td>
-<td> Font family of an item in the list of suggestions. </td>
-<td> Roboto-Regular </td>
-</tr><tr>
-<td> SuggestionListItemFontAttributes </td>
-<td> Font attributes of an item in the list of suggestions. </td>
-<td> FontAttributes.None </td>
-</tr><tr>
-<td> SuggestionListItemFontSize </td>
-<td> Font size of an item in the list of suggestions. </td>
-<td> 14 </td>
-</tr><tr>
-<td> SuggestionListItemBorderColor </td>
-<td> Border color of an item in the list of suggestions. </td>
-<td> #E1E1E1 </td>
-</tr><tr>
-<td> DatePickerIconColor </td>
-<td> Color of date picker icon. </td>
-<td> #FF007AFF </td>
-</tr><tr>
-<td> TimePickerIconColor </td>
-<td> Color of time picker icon. </td>
-<td> #FF007AFF </td>
-</tr><tr>
-<td> DatePickerTextColor </td>
-<td> Color of the text in date picker.  </td>
-<td> #007AFF </td>
-</tr><tr>
-<td> TimePickerTextColor </td>
-<td> Color of the text in time picker.  </td>
-<td> #007AFF </td>
-</tr><tr>
-<td> DatePickerBackgroundColor </td>
-<td> Background color of date picker. </td>
-<td> #FFFFFF </td>
-</tr><tr>
-<td> TimePickerBackgroundColor </td>
-<td> Background color of time picker. </td>
-<td> #FFFFFF </td>
-</tr><tr>
-<td> DatePickerBorderColor </td>
-<td> Border color of date picker. </td>
-<td> #007AFF </td>
-</tr><tr>
-<td> TimePickerBorderColor </td>
-<td> Border color of time picker. </td>
-<td> #007AFF </td>
-</tr><tr>
-<td> EditorPlaceholderTextColor </td>
-<td> Place holder text color of the editor. </td>
-<td> #ACACAC </td>
-</tr><tr>
-<td> EditorBorderColor </td>
-<td> The border color of editor. </td>
-<td> #D2D2D2 </td>
-</tr><tr>
-<td> MessageInputViewBackgroundColor </td>
-<td> Message input view background color. </td>
-<td> #F6F6F6 </td>
-</tr><tr>
-<td> TimeBreakViewBorderColor </td>
-<td> Border color of the time break view. </td>
-<td> #FDE490 </td>
-</tr><tr>
-<td> HyperlinkColor </td>
-<td> Text color of the URL in a hyper link message. </td>
-<td> #005DFF </td>
-</tr><tr>
-<td> HyperlinkDescriptionTextColor </td>
-<td> Text color of the URL's meta description in a hyper link message. </td>
-<td> #5C5C5C </td>
-</tr><tr>
-<td> HyperlinkDescriptionBackgroundColor </td>
-<td> Background color of the URL description area in a hyper link message. </td>
-<td> #F7F7F7 </td>
-</tr><tr>
-<td> HyperlinkMetaTitleTextColor </td>
-<td> Text color of the URL's meta title in a hyper link message. </td>
-<td> #212121 </td>
-</tr><tr>
-<td> CalendarBackgroundColor </td>
-<td> Background color of the calendar message. </td>
-<td> #FAFAFA </td>
-</tr>
-</table>
 
 ## Chat Background
 
-You can set any solid color as background for SfChat by setting the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~BackgroundColor.html) property.
+You can set any solid color as background for SfChat by setting any color to the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~BackgroundColor.html) property. However if you want the solid color to be applied to the message input view area also, set the background color of the message input view as transparent as shown in the below code snippet.
 
 {% tabs %}
 
@@ -373,13 +72,12 @@ You can set any solid color as background for SfChat by setting the [SfChat.Back
 
 {% endtabs %}
 
-Executing the above codes renders the following output.
 
 ![Xamarin Forms Chat Background](Styles_images/Xamarin-Forms-chat-background-color-style.jpg)
 
 ### Set background image
 
-You can set any image as background for the SfChat by setting the `SfChat.BackgroundColor` as `Color.Transparent` and adding an image below the SfChat control.
+You can set any image as background for the SfChat by setting the `SfChat.BackgroundColor` as `Color.Transparent` and adding an image below the SfChat control. However if you want the image to be applied to the message input view area also, set the background color of the message input view as transparent as shown in the below code snippet.
 
 {% tabs %}
 
@@ -446,13 +144,12 @@ You can set any image as background for the SfChat by setting the `SfChat.Backgr
 
 {% endtabs %}
 
-Executing the above codes render the following output.
 
 ![Image Background](Styles_images/Xamarin-Forms-chat-image-background-style.jpg)
 
 ### Set gradient background
 
-You can set the gradient view as a background for chat by setting the `SfChat.BackgroundColor` property as `Color.Transparent` and adding the gradient view below the SfChat control.
+You can set the gradient view as a background for chat by setting the `SfChat.BackgroundColor` property as `Color.Transparent` and adding the gradient view below the SfChat control. However if you want the gradient view to be applied to the message input view area also, set the background color of the message input view as transparent as shown in the below code snippet.
 
 {% tabs %}
 
@@ -541,7 +238,7 @@ You can set the gradient view as a background for chat by setting the `SfChat.Ba
 
 {% endtabs %}
 
-Run the application to render the following output.
+
 
 ![Gradient Background](Styles_images/Xamarin-Forms-chat-gradient-background-style.jpg)
 
@@ -553,6 +250,7 @@ You can style the elements of an incoming message by setting values to the in-bu
 <tr>
 <th>Key</th>
 <th>Description </th>
+</tr>
 <tr>
 <td> SfChatIncomingMessageTextColor </td>
 <td> Text color of the incoming message. </td>
@@ -667,7 +365,6 @@ public MainPage()
 
 {% endtabs %}
 
-Executing the above codes renders the following output.
 
 ![Xamarin Forms Chat Incoming message](Styles_images/Xamarin-Forms-chat-incoming-message-style.jpg)
 
@@ -781,7 +478,6 @@ public MainPage()
 
 {% endtabs %}
 
-Executing the above codes renders the following output.
 
 ![Xamarin Forms Chat Outgoing message](Styles_images/Xamarin-Forms-chat-outgoing-message-style.jpg)
 
@@ -907,7 +603,6 @@ public MainPage()
 
 {% endtabs %}
 
-Executing the above codes renders the following output.
 
 ![Xamarin Forms Chat Hyperlink message](Styles_images/Xamarin-Forms-chat-hyperlink-message-style.jpg)
 
@@ -978,7 +673,6 @@ public MainPage()
 
 {% endtabs %}
 
-Executing the above codes renders the following output.
 
 ![Xamarin Forms Chat Date Picker Message](Styles_images/Xamarin-Forms-chat-datepicker-message-style.jpg)
 
@@ -1047,7 +741,6 @@ public MainPage()
 
 {% endtabs %}
 
-Executing the above codes renders the following output.
 
 ![Xamarin Forms Chat Time Picker Message](Styles_images/Xamarin-Forms-chat-timepicker-message-style.jpg)
 
@@ -1103,7 +796,6 @@ public MainPage()
 
 {% endtabs %}
 
-Executing the above code renders the following output.
 
 ![Xamarin Forms Chat message input view](Styles_images/Xamarin-Forms-chat-message-inputview-style.jpg)
 
@@ -1191,8 +883,6 @@ public MainPage()
 
 {% endtabs %}
 
-Executing the above code renders the following output.
-
 ![Xamarin Forms Chat editor](Styles_images/Xamarin-Forms-chat-editor-style.jpg)
 
 ![Xamarin Forms Chat editor](Styles_images/Xamarin-Forms-chat-editor-withtext-style.jpg)
@@ -1270,7 +960,6 @@ public MainPage()
 
 {% endtabs %}
 
-Executing the above code renders the following output.
 
 ![Xamarin Forms Chat Typing indicator](Styles_images/Xamarin-Forms-chat-typingindicator-style.jpg)
 
@@ -1438,7 +1127,6 @@ public MainPage()
 
 {% endtabs %}
 
-Executing the above code renders the following output.
 
 ![Xamarin Forms Chat suggestion](Styles_images/Xamarin-Forms-chat-suggestion-style.jpg)
 
@@ -1500,8 +1188,6 @@ public MainPage()
 
 {% endtabs %}
 
-
-Executing the above code renders the following output.
 
 ![Xamarin Forms Chat send button disable](Styles_images/Xamarin-Forms-chat-sendicon-disable-style.jpg)
 

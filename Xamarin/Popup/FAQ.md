@@ -945,3 +945,40 @@ By default, the overlay background will not be shown around the Popup if all the
   popUpLayout.ShowOverlayAlways = true;
 {% endhighlight %}
 {% endtabs %}
+
+## How to disable the shadow around the popup view?
+
+By default, a shadow will be shown around the popup view. To disable this shadow around the popup set the `SfPopupLayout.PopupView.PopupStyle.HasShadow` to false.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView>
+            <sfPopup:PopupView.PopupStyle>
+                <sfPopup:PopupStyle HasShadow="False"
+            </sfPopup:PopupView.PopupStyle>
+        </sfPopup:PopupView>
+    </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//MainPage.cs
+
+public MainPage()
+{
+    ....
+    InitializeComponent();
+    popupLayout.PopupView.PopupStyle.HasShadow = false;
+    ....
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+

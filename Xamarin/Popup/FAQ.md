@@ -954,7 +954,7 @@ By default, a shadow will be shown around the popup view. To disable this shadow
 
 {% highlight xaml %}
 
-<sfPopup:SfPopupLayout x:Name="popUpLayout">
+<sfPopup:SfPopupLayout x:Name="popUpLayout" ShowOverlayAlways="False">
     <sfPopup:SfPopupLayout.PopupView>
         <sfPopup:PopupView>
             <sfPopup:PopupView.PopupStyle>
@@ -975,10 +975,13 @@ public MainPage()
     ....
     InitializeComponent();
     popupLayout.PopupView.PopupStyle.HasShadow = false;
+    popUpLayout.ShowOverlayAlways = false;
     ....
 }
 
 {% endhighlight %}
 
 {% endtabs %}
+
+![Popup with no shadow](PopupLayout_images/HasShadow.jpg)
 

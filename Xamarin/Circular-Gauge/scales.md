@@ -11,7 +11,7 @@ documentation: ug
 
 # Scales in SfCircularGauge
 
-Scales contain a collection of [`Scale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) elements, which integrates labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
+The scales contain a collection of [`Scale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) elements, which integrates labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
 
 ## Scale
 
@@ -47,9 +47,9 @@ A range is a visual element, which begins and ends at specified values within a 
 
 ![Xamarin Circular Scale Image](scales_images/scale.png)
 
-## Setting start and end values for scale
+## Setting the start and end values for scale
 
-The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~EndValue.html) properties allow  you to set the start and end values for scale.
+The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~EndValue.html) properties allow, you to set the start and end values for scale.
 
 {% tabs %}
 
@@ -82,9 +82,9 @@ The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 ![Circular Scale Start And End Image](scales_images/start-end-value.png)
 
-## Setting start and sweep angles for scale
+## Setting the start and sweep angles for scale
 
-The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~StartAngle.html) and [`SweepAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~SweepAngle.html) properties allow you to set the start and end angles for scale.
+The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~StartAngle.html) and [`SweepAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~SweepAngle.html) properties allow, you to set the start and end angles for scale.
 
 {% tabs %}
 
@@ -116,7 +116,7 @@ The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 ![Circular Scale Start And End Angle Image](scales_images/start-end-angle.png)
 
-## Setting interval for scale
+## Setting an interval for scale
 
 The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~Interval.html) property allows you to set the interval for scale.
 
@@ -152,9 +152,9 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 
 ![Circular Scale Interval Image](scales_images/interval.png)
 
-## Setting auto interval for scale
+## Setting an auto interval for scale
 
-By default, the interval value is calculated by 10. By using the [`EnableAutoInterval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~EnableAutoInterval.html) property, you can set auto interval based on the start and end values.
+By default, the interval value is calculated by 10. By the [`EnableAutoInterval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~EnableAutoInterval.html) property you can set an auto interval based on the start and end values.
 
 {% tabs %}
 
@@ -188,7 +188,7 @@ By default, the interval value is calculated by 10. By using the [`EnableAutoInt
 
 ![Circular Scale Auto Interval Image](scales_images/auto-interval.png)
 
-## Setting scale direction for scale
+## Setting a scale direction for scale
 
 The [`Direction`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~Direction.html) property allows you to render the gauge scale in either clockwise or counterclockwise direction.
 
@@ -222,9 +222,9 @@ The [`Direction`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.S
 
 ![Circular Scale Direction Image](scales_images/scale-direction.png)
 
-## Setting maximum labels
+## Setting the maximum labels
 
-The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~MaximumLabels.html) property defines the count of the scale labels in 100 pixels. By default, the count of maximum labels for 100 pixels is 3.
+The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~MaximumLabels.html) property, defines the count of the scale labels in 100 pixels. By default, the count of maximum labels for 100 pixels is 3.
 
 {% tabs %}
 
@@ -256,7 +256,7 @@ Content = sfCircularGauge;
 
 ![Circular Scale Maximum Labels Image](scales_images/maximumlabels.png)
 
-## Setting multiple scales for scale
+## Setting the multiple scales for scale
 
 It helps you to add multiple scales to the same circular gauge. You can customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Scales.html) collection.
 
@@ -368,7 +368,7 @@ It helps you to add multiple scales to the same circular gauge. You can customiz
 
 ## Events
 
-You can change the default label by hooking the [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelCreated_EV.html) event. Based on your requirements, the labels can be changed by using the `LabelContent` property of `LabelCreatedEventArgs`.
+You can change the default label by hooking the [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelCreated_EV.html) event. Based on your requirements, the labels can be changed using the `LabelContent` property of `LabelCreatedEventArgs`.
 
 {% tabs %}
 
@@ -424,9 +424,9 @@ You can change the default label by hooking the [`LabelCreated`](https://help.sy
 
 ![Label Created Event Image](scales_images/labelcreated.png)
 
-## Calculate radius and center based on angle
+## Calculate a radius and center based on angle
 
-This feature is used to automatically adjust the radius and center of a circular gauge based on the `StartAngle` and `SweepAngle` properties by enable the `IsCenterAligned` property of gauge.
+This feature is used to automatically adjust the radius and center of a circular gauge based on the `StartAngle` and `SweepAngle` properties by enabling the `IsCenterAligned` property of gauge.
 
 N> Default value of the IsCenterAligned property is false. 
 

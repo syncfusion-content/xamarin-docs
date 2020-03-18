@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  | Styling in Xamarin.Forms Chat | Xamarin | Syncfusion
-description: Style customization Xamarin.Forms Chat elements and property. Styling was applies to chat through resource dictionary key and value pair.
+description: Describes the available style customizations in Xamarin.Forms Chat(SfChat) control and how to apply styling and theming using resource dictionary and in-built keys.
 platform: xamarin
 control: SfChat
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Styling in Xamarin.Forms Chat (SfChat)
 
-The SfChat applies style to its elements by using the ResourceDictionary key and values.
+You can style the elements of the SfChat control by creating resource dictionaries and assigning values to the in-built keys assigned for each individual element.
 
 ## Default values of our keys
 
@@ -315,13 +315,13 @@ The SfChat applies style to its elements by using the ResourceDictionary key and
 
 ## Chat Background
 
-You can set background color for the Xamarin.Forms Chat by setting the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~BackgroundColor.html) property.
+You can set any solid color as background for SfChat by setting the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~BackgroundColor.html) property.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SampleBrowser.SfChat"
@@ -341,10 +341,10 @@ You can set background color for the Xamarin.Forms Chat by setting the [SfChat.B
         </syncTheme:SyncfusionThemeDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-       <chat:SfChat   CurrentUser="{Binding CurrentUser}" 
-                        BackgroundColor="Gray"
-                        Messages="{Binding Messages}">
-         </chat:SfChat>
+       <chat:SfChat CurrentUser="{Binding CurrentUser}" 
+                    BackgroundColor="Gray"
+                    Messages="{Binding Messages}">
+        </chat:SfChat>
     </ContentPage.Content>
 </ContentPage>
 
@@ -373,20 +373,19 @@ You can set background color for the Xamarin.Forms Chat by setting the [SfChat.B
 
 {% endtabs %}
 
-Run the application to render the following output.
+Executing the above codes renders the following output.
 
 ![Xamarin Forms Chat Background](Styles_images/ChatBackground.png)
 
 ### Set background image
 
-You can set the background image for the chat by setting the `SfChat.BackgroundColor` as a Transparent and adding the image to grid first child and chat to grid second child.
-
+You can set any image as background for the SfChat by setting the `SfChat.BackgroundColor` as `Color.Transparent` and adding an image below the SfChat control.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SampleBrowser.SfChat"
@@ -407,12 +406,12 @@ You can set the background image for the chat by setting the `SfChat.BackgroundC
     </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
-		 <Image Source="BackgroundImage.jpg" Aspect="AspectFill"/>
-         <chat:SfChat   CurrentUser="{Binding CurrentUser}" 
+		    <Image Source="BackgroundImage.jpg" Aspect="AspectFill"/>
+            <chat:SfChat   CurrentUser="{Binding CurrentUser}" 
                         BackgroundColor="Transparent"
                         Messages="{Binding Messages}">
-        </chat:SfChat>
-            </Grid>
+            </chat:SfChat>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
 
@@ -424,13 +423,13 @@ You can set the background image for the chat by setting the `SfChat.BackgroundC
 
     public partial class MainPage : ContentPage
     {
-       Grid grid = new Grid();
-       Syncfusion.XForms.Chat.SfChat sfChat = new Syncfusion.XForms.Chat.SfChat();
+        Grid grid = new Grid();
+        Syncfusion.XForms.Chat.SfChat sfChat = new Syncfusion.XForms.Chat.SfChat();
         Image image = new Image();
         ViewModel viewModel;
         public MainPage()
         {
-           this.InitializeComponent();
+            this.InitializeComponent();
             image.Source = "BackgroundImage.jpg";
             image.Aspect = Aspect.AspectFill;
             grid.Children.Add(image);
@@ -447,20 +446,19 @@ You can set the background image for the chat by setting the `SfChat.BackgroundC
 
 {% endtabs %}
 
-Run the application to render the following output.
+Executing the above codes render the following output.
 
 ![Image Background](Styles_images/ImageBackground.png)
 
 ### Set gradient background
 
-you can set the gradient as a background for chat by setting the `SfChat.BackgroundColor` property as a transparent. Add the gradient view to grid first child and chat is second child to grid.
-
+You can set the gradient view as a background for chat by setting the `SfChat.BackgroundColor` property as `Color.Transparent` and adding the gradient view below the SfChat control.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:SampleBrowser.SfChat"
@@ -482,7 +480,7 @@ you can set the gradient as a background for chat by setting the `SfChat.Backgro
     </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
-		 <gradient:SfGradientView>
+		    <gradient:SfGradientView>
                 <gradient:SfGradientView.BackgroundBrush>
                     <gradient:SfLinearGradientBrush>
                         <gradient:SfLinearGradientBrush.GradientStops>
@@ -495,11 +493,11 @@ you can set the gradient as a background for chat by setting the `SfChat.Backgro
                     </gradient:SfLinearGradientBrush>
                 </gradient:SfGradientView.BackgroundBrush>
             </gradient:SfGradientView>
-         <chat:SfChat   CurrentUser="{Binding CurrentUser}" 
-                        BackgroundColor="Transparent"
-                        Messages="{Binding Messages}">
-        </chat:SfChat>
-            </Grid>
+            <chat:SfChat CurrentUser="{Binding CurrentUser}" 
+                         BackgroundColor="Transparent"
+                         Messages="{Binding Messages}">
+            </chat:SfChat>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
 
@@ -517,7 +515,7 @@ you can set the gradient as a background for chat by setting the `SfChat.Backgro
         ViewModel viewModel;
         public MainPage()
         {
-           this.InitializeComponent();
+            this.InitializeComponent();
             SfGradientView gradientView = new SfGradientView();
             SfLinearGradientBrush linearGradientBrush = new SfLinearGradientBrush();
             linearGradientBrush.GradientStops = new GradientStopCollection()
@@ -549,7 +547,7 @@ Run the application to render the following output.
 
 ## Incoming Message Styling
 
-You can applies the styling for the incoming message elements by setting the various incoming message key and values in resource dictionary.
+You can style the elements of an incoming message by setting values to the in-built keys of an incoming message in resource dictionary.
 
 <table>
 <tr>
@@ -569,7 +567,7 @@ You can applies the styling for the incoming message elements by setting the var
 </tr>
 <tr>
 <td> SfChatIncomingMessageBackgroundColor </td>
-<td>  Background color of the incoming message. </td>
+<td> Background color of the incoming message. </td>
 </tr>
 <tr>
 <td> SfChatIncomingMessageFontFamily </td>
@@ -646,37 +644,36 @@ You can applies the styling for the incoming message elements by setting the var
 
 public MainPage()
 {
-    ....
     InitializeComponent();
-            ResourceDictionary dictionary = new ResourceDictionary();
-            dictionary.Add("SfChatTheme", "CustomTheme");
-            dictionary.Add("SfChatIncomingMessageTextColor", Color.SlateGray);
-            dictionary.Add("SfChatIncomingMessageTimestampTextColor", Color.White);
-            dictionary.Add("SfChatIncomingMessageAuthorTextColor", Color.Gray);
-            dictionary.Add("SfChatIncomingMessageBackgroundColor", Color.Blue);
-            dictionary.Add("SfChatIncomingMessageFontFamily", "Roboto-Regular");
-            dictionary.Add("SfChatIncomingMessageFontAttributes", FontAttributes.Italic);
-            dictionary.Add("SfChatIncomingMessageFontSize", 16);
-            dictionary.Add("SfChatIncomingAuthorFontFamily", "Roboto-Regular");
-            dictionary.Add("SfChatIncomingAuthorFontAttributes", FontAttributes.Italic);
-            dictionary.Add("SfChatIncomingAuthorFontSize", 16);
-            dictionary.Add("SfChatIncomingTimestampFontFamily", "Roboto-Regular");
-            dictionary.Add("SfChatIncomingTimestampFontAttributes", FontAttributes.Italic);
-            dictionary.Add("SfChatIncomingTimestampFontSize", 16);
-            this.Resources.Add(dictionary);
+    ResourceDictionary dictionary = new ResourceDictionary();
+    dictionary.Add("SfChatTheme", "CustomTheme");
+    dictionary.Add("SfChatIncomingMessageTextColor", Color.SlateGray);
+    dictionary.Add("SfChatIncomingMessageTimestampTextColor", Color.White);
+    dictionary.Add("SfChatIncomingMessageAuthorTextColor", Color.Gray);
+    dictionary.Add("SfChatIncomingMessageBackgroundColor", Color.Blue);
+    dictionary.Add("SfChatIncomingMessageFontFamily", "Roboto-Regular");
+    dictionary.Add("SfChatIncomingMessageFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatIncomingMessageFontSize", 16);
+    dictionary.Add("SfChatIncomingAuthorFontFamily", "Roboto-Regular");
+    dictionary.Add("SfChatIncomingAuthorFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatIncomingAuthorFontSize", 16);
+    dictionary.Add("SfChatIncomingTimestampFontFamily", "Roboto-Regular");
+    dictionary.Add("SfChatIncomingTimestampFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatIncomingTimestampFontSize", 16);
+    this.Resources.Add(dictionary);
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Run the application to render the following output.
+Executing the above codes renders the following output.
 
 ![Xamarin Forms Chat Incoming message](Styles_images/IncomingMessage.png)
 
 ## Outgoing message styling
 
-You can applies the styling for the outgoing message elements by setting the various outgoing message key and values in resource dictionary.
+You can style the elements of an outgoing message by setting values to the in-built keys of an outgoing message in resource dictionary.
 
 <table>
 <tr>
@@ -761,38 +758,36 @@ You can applies the styling for the outgoing message elements by setting the var
 
 public MainPage()
 {
-    ....
     InitializeComponent();
-            ResourceDictionary dictionary = new ResourceDictionary();
-            dictionary.Add("SfChatTheme", "CustomTheme");
-            dictionary.Add("SyncPrimaryForegroundColor", Color.Blue);
-            dictionary.Add("SfChatOutingMessageTimestampTextColor", Color.White);
-            dictionary.Add("SfChatOutingMessageAuthorTextColor", Color.Gray);
-            dictionary.Add("SyncPrimaryColor", Color.Blue);
-            dictionary.Add("SfChatOutgoingMessageFontFamily", "Roboto-Regular");
-            dictionary.Add("SfChatOutgoingMessageFontAttributes", FontAttributes.Italic);
-            dictionary.Add("SfChatOutgoingMessageFontSize", 16);
-            dictionary.Add("SfChatOutgoingAuthorFontFamily", "Roboto-Regular");
-            dictionary.Add("SfChatOutgoingAuthorFontAttributes", FontAttributes.Italic);
-            dictionary.Add("SfChatOutgoingAuthorFontSize", 16);
-            dictionary.Add("SfChatOutgoingTimestampFontFamily", "Roboto-Regular");
-            dictionary.Add("SfChatOutgoingTimestampFontAttributes", FontAttributes.Italic);
-            dictionary.Add("SfChatOutgoingTimestampFontSize", 16);
-            this.Resources.Add(dictionary);
-    ....
+    ResourceDictionary dictionary = new ResourceDictionary();
+    dictionary.Add("SfChatTheme", "CustomTheme");
+    dictionary.Add("SyncPrimaryForegroundColor", Color.Blue);
+    dictionary.Add("SfChatOutingMessageTimestampTextColor", Color.White);
+    dictionary.Add("SfChatOutingMessageAuthorTextColor", Color.Gray);
+    dictionary.Add("SyncPrimaryColor", Color.Blue);
+    dictionary.Add("SfChatOutgoingMessageFontFamily", "Roboto-Regular");
+    dictionary.Add("SfChatOutgoingMessageFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatOutgoingMessageFontSize", 16);
+    dictionary.Add("SfChatOutgoingAuthorFontFamily", "Roboto-Regular");
+    dictionary.Add("SfChatOutgoingAuthorFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatOutgoingAuthorFontSize", 16);
+    dictionary.Add("SfChatOutgoingTimestampFontFamily", "Roboto-Regular");
+    dictionary.Add("SfChatOutgoingTimestampFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatOutgoingTimestampFontSize", 16);
+    this.Resources.Add(dictionary);
 }
 
 {% endhighlight %}
 
 {% endtabs %}
 
-Run the application to render the following output.
+Executing the above codes renders the following output.
 
 ![Xamarin Forms Chat Outgoing message](Styles_images/OutgoingMessage.png)
 
 ## Calendar Message styling
 
-You can applies the styling for the calendar message elements by setting the various calendar message key and values in resource dictionary.
+You can style the elements of a calendar message by setting values to the in-built keys of a calendar message in resource dictionary.
 
 <table>
 <tr>
@@ -843,11 +838,11 @@ public MainPage()
 
 {% endtabs %}
 
-
+In addition to this you can write target style to SfCalendar control to style the inner elements of the calendar like selection bacground color, foreground color etc.
 
 ## Hyperlink message styling
 
-You can applies the styling for the hyperlink message elements by setting the various hyperlink message key and values in resource dictionary.
+You can style the elements of a hyperlink message by setting values to the in-built keys of a hyeprlink message in resource dictionary.
 
 <table>
 <tr>
@@ -898,13 +893,13 @@ public MainPage()
 {
     ....
     InitializeComponent();
-            ResourceDictionary dictionary = new ResourceDictionary();
-            dictionary.Add("SfChatTheme", "CustomTheme");
-            dictionary.Add("SfChatHyperlinkColor", Color.Gray);
-            dictionary.Add("SfChatHyperlinkMetaTitleTextColor", Color.Red);
-            dictionary.Add("SfChatHyperlinkDescriptionTextColor", Color.Blue);
-            dictionary.Add("SfChatHyperlinkDescriptionBackgroundColor", Color.Gray);
-			this.Resources.Add(dictionary);
+    ResourceDictionary dictionary = new ResourceDictionary();
+    dictionary.Add("SfChatTheme", "CustomTheme");
+    dictionary.Add("SfChatHyperlinkColor", Color.Gray);
+    dictionary.Add("SfChatHyperlinkMetaTitleTextColor", Color.Red);
+    dictionary.Add("SfChatHyperlinkDescriptionTextColor", Color.Blue);
+    dictionary.Add("SfChatHyperlinkDescriptionBackgroundColor", Color.Gray);
+	this.Resources.Add(dictionary);
     ....
 }
 
@@ -912,13 +907,13 @@ public MainPage()
 
 {% endtabs %}
 
-Run the application to render the following output.
+Exceuting the above codes renders the following output.
 
 ![Xamarin Forms Chat Hyperlink message](Styles_images/HyperLinkMessageImage.png)
 
 ## Date Picker message styling
 
-You can applies the styling for the date picker message elements by setting the various date picker message key and values in resource dictionary.
+You can style the elements of a date picker message by setting values to the in-built keys of a date picker message in resource dictionary.
 
 <table>
 <tr>
@@ -970,12 +965,12 @@ public MainPage()
 {
     ....
     InitializeComponent();
-            ResourceDictionary dictionary = new ResourceDictionary();
-            dictionary.Add("SfChatTheme", "CustomTheme");
-            dictionary.Add("SfChatDatePickerBackgroundColor", Color.SteelBlue);
-            dictionary.Add("SyncPrimaryLightColor", Color.White);
-            dictionary.Add("SyncPrimaryColor", Color.Blue);
-			this.Resources.Add(dictionary);
+    ResourceDictionary dictionary = new ResourceDictionary();
+    dictionary.Add("SfChatTheme", "CustomTheme");
+    dictionary.Add("SfChatDatePickerBackgroundColor", Color.SteelBlue);
+    dictionary.Add("SyncPrimaryLightColor", Color.White);
+    dictionary.Add("SyncPrimaryColor", Color.Blue);
+	this.Resources.Add(dictionary);
     ....
 }
 
@@ -983,13 +978,13 @@ public MainPage()
 
 {% endtabs %}
 
-Run the application to render the following output.
+Executing the above codes renders the following output.
 
 ![Xamarin Forms Chat Date Picker Message](Styles_images/DatePickerImage.png)
 
 ## Time Picker message styling
 
-You can applies the styling for the time picker message elements by setting the various time picker message key and values in resource dictionary.
+You can style the elements of a time picker message by setting values to the in-built keys of a time picker message in resource dictionary.
 
 <table>
 <tr>
@@ -1040,11 +1035,11 @@ public MainPage()
     ....
     InitializeComponent();
     ResourceDictionary dictionary = new ResourceDictionary();
-            dictionary.Add("SfChatTheme", "CustomTheme");
-            dictionary.Add("SfChatDatePickerBackgroundColor", Color.SteelBlue);
-            dictionary.Add("SyncPrimaryLightColor", Color.White);
-            dictionary.Add("SyncPrimaryColor", Color.Blue);
-			this.Resources.Add(dictionary);
+    dictionary.Add("SfChatTheme", "CustomTheme");
+    dictionary.Add("SfChatDatePickerBackgroundColor", Color.SteelBlue);
+    dictionary.Add("SyncPrimaryLightColor", Color.White);
+    dictionary.Add("SyncPrimaryColor", Color.Blue);
+	this.Resources.Add(dictionary);
     ....
 }
 
@@ -1052,13 +1047,13 @@ public MainPage()
 
 {% endtabs %}
 
-Run the application to render the following output.
+Exceuting the above codes renders the following output.
 
 ![Xamarin Forms Chat Time Picker Message](Styles_images/TimePickerImage.png)
 
 ## Message input view styling
 
-You can applies the styling for the message input view elements by setting the various message input view key and values in resource dictionary.
+You can style the elements of the message input view by setting values to the in-built keys of the message input view in resource dictionary.
 
 <table>
 <tr>
@@ -1098,9 +1093,9 @@ public MainPage()
     ....
     InitializeComponent();
     ResourceDictionary dictionary = new ResourceDictionary();
-            dictionary.Add("SfChatTheme", "CustomTheme");
-			dictionary.Add("SfChatMessageInputViewBackgroundColor", Color.Blue);
-			this.Resources.Add(dictionary);
+    dictionary.Add("SfChatTheme", "CustomTheme");
+	dictionary.Add("SfChatMessageInputViewBackgroundColor", Color.Blue);
+	this.Resources.Add(dictionary);
     ....
 }
 
@@ -1108,13 +1103,13 @@ public MainPage()
 
 {% endtabs %}
 
-Run the application to render the following output.
+Executing the above code renders the following output.
 
 ![Xamarin Forms Chat message input view](Styles_images/MessageInputViewImage.png)
 
 ## Editor styling
 
-You can applies the styling for the editor elements by setting the various editor key and values in resource dictionary.
+You can style the elements of the editor view by setting values to the in-built keys of the editor view in resource dictionary.
 
 <table>
 <tr>
@@ -1180,15 +1175,15 @@ public MainPage()
     ....
     InitializeComponent();
     ResourceDictionary dictionary = new ResourceDictionary();
-            dictionary.Add("SfChatTheme", "CustomTheme");
-            dictionary.Add("SfChatEditorPlaceholderTextColor", Color.Blue);
-            dictionary.Add("SfChatEditorBackgroundColor", Color.Violet);
-            dictionary.Add("SfChatEditorTextColor", Color.Gray);
-			dictionary.Add("SfChatEditorBorderColor", Color.Black);
-            dictionary.Add("SfChatEditorFontFamily", "Roboto-Medium");
-            dictionary.Add("SfChatEditorFontAttributes", FontAttributes.Italic);
-            dictionary.Add("SfChatEditorFontSize", 16);
-			this.Resources.Add(dictionary);
+    dictionary.Add("SfChatTheme", "CustomTheme");
+    dictionary.Add("SfChatEditorPlaceholderTextColor", Color.Blue);
+    dictionary.Add("SfChatEditorBackgroundColor", Color.Violet);
+    dictionary.Add("SfChatEditorTextColor", Color.Gray);
+	dictionary.Add("SfChatEditorBorderColor", Color.Black);
+    dictionary.Add("SfChatEditorFontFamily", "Roboto-Medium");
+    dictionary.Add("SfChatEditorFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatEditorFontSize", 16);
+	this.Resources.Add(dictionary);
     ....
 }
 
@@ -1196,7 +1191,7 @@ public MainPage()
 
 {% endtabs %}
 
-Run the application to render the following output.
+Executing the above code renders the following output.
 
 ![Xamarin Forms Chat editor](Styles_images/EditorView.png)
 
@@ -1204,7 +1199,7 @@ Run the application to render the following output.
 
 ## Typing Indicator styling
 
-You can applies the styling for the typing indicator elements by setting the various typing indicator key and values in resource dictionary.
+You can style the elements of the typing indicator view by setting values to the in-built keys of the typing indicator view in resource dictionary.
 
 <table>
 <tr>
@@ -1261,13 +1256,13 @@ public MainPage()
     ....
     InitializeComponent();
     ResourceDictionary dictionary = new ResourceDictionary();
-            dictionary.Add("SfChatTheme", "CustomTheme");
-            dictionary.Add("SfChatTypingIndicatorBackgroundColor", Color.Gray);
-            dictionary.Add("SfChatTypingIndicatorTextColor", Color.Blue);
-            dictionary.Add("SfChatTypingIndicatorFontFamily", "Roboto-Regular");
-            dictionary.Add("SfChatTypingIndicatorFontAttributes", FontAttributes.Italic);
-            dictionary.Add("SfChatTypingIndicatorFontSize", 16);
-			this.Resources.Add(dictionary);
+    dictionary.Add("SfChatTheme", "CustomTheme");
+    dictionary.Add("SfChatTypingIndicatorBackgroundColor", Color.Gray);
+    dictionary.Add("SfChatTypingIndicatorTextColor", Color.Blue);
+    dictionary.Add("SfChatTypingIndicatorFontFamily", "Roboto-Regular");
+    dictionary.Add("SfChatTypingIndicatorFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatTypingIndicatorFontSize", 16);
+	this.Resources.Add(dictionary);
     ....
 }
 
@@ -1275,13 +1270,13 @@ public MainPage()
 
 {% endtabs %}
 
-Run the application to render the following output.
+Executing the above code renders the following output.
 
 ![Xamarin Forms Chat Typing indicator](Styles_images/TypingIndicator.png)
 
 ## Time break view styling
 
-You can applies the styling for the time break view elements by setting the various time break view key and values in resource dictionary.
+You can style the elements of the time break view by setting values to the in-built keys of the time break view in resource dictionary.
 
 <table>
 <tr>
@@ -1343,14 +1338,14 @@ public MainPage()
     ....
     InitializeComponent();
     ResourceDictionary dictionary = new ResourceDictionary();
-            dictionary.Add("SfChatTheme", "CustomTheme");
-            dictionary.Add("SyncPrimaryLightColor", Color.Blue);
-            dictionary.Add("SfChatTimeBreakViewBorderColor", Color.Gray);
-            dictionary.Add("SfChatTimeBreakViewBackgroundColor", Color.Gray);
-            dictionary.Add("SfChatTimeBreakViewFontFamily", "Roboto-Regular");
-            dictionary.Add("SfChatTimeBreakViewFontAttributes", FontAttributes.Italic);
-            dictionary.Add("SfChatTimeBreakViewFontSize", 16);
-			this.Resources.Add(dictionary);
+    dictionary.Add("SfChatTheme", "CustomTheme");
+    dictionary.Add("SyncPrimaryLightColor", Color.Blue);
+    dictionary.Add("SfChatTimeBreakViewBorderColor", Color.Gray);
+    dictionary.Add("SfChatTimeBreakViewBackgroundColor", Color.Gray);
+    dictionary.Add("SfChatTimeBreakViewFontFamily", "Roboto-Regular");
+    dictionary.Add("SfChatTimeBreakViewFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatTimeBreakViewFontSize", 16);
+	this.Resources.Add(dictionary);
     ....
 }
 
@@ -1358,13 +1353,13 @@ public MainPage()
 
 {% endtabs %}
 
-Run the application to render the following output.
+Executing the above code renders the following output.
 
 ![Xamarin Forms Chat Time break view](Styles_images/TimeBreakView.png)
 
 ## Suggestion styling
 
-You can applies the styling for the suggestion elements by setting the various suggestion key and values in resource dictionary.
+You can style the elements of the suggestion view by setting values to the in-built keys of the suggestion view in resource dictionary.
 
 <table>
 <tr>
@@ -1428,15 +1423,14 @@ public MainPage()
     ....
     InitializeComponent();
     ResourceDictionary dictionary = new ResourceDictionary();
-            dictionary.Add("SfChatTheme", "CustomTheme");
-            dictionary.Add("SyncPrimaryLightColor", Color.Blue);
-            dictionary.Add("SfChatSuggestionListBackgroundColor", Color.Violet);
-            dictionary.Add("SfChatSuggestionListItemBackgroundColor", Color.Gray);
-            dictionary.Add("SfChatSuggestionListItemFontFamily", "Roboto-Medium");
-            dictionary.Add("SfChatSuggestionListItemFontAttributes", FontAttributes.Italic);
-            dictionary.Add("SfChatSuggestionListItemFontSize", 16);
-			this.Resources.Add(dictionary);
-    ....
+    dictionary.Add("SfChatTheme", "CustomTheme");
+    dictionary.Add("SyncPrimaryLightColor", Color.Blue);
+    dictionary.Add("SfChatSuggestionListBackgroundColor", Color.Violet);
+    dictionary.Add("SfChatSuggestionListItemBackgroundColor", Color.Gray);
+    dictionary.Add("SfChatSuggestionListItemFontFamily", "Roboto-Medium");
+    dictionary.Add("SfChatSuggestionListItemFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatSuggestionListItemFontSize", 16);
+	this.Resources.Add(dictionary);
     ....
 }
 
@@ -1444,13 +1438,13 @@ public MainPage()
 
 {% endtabs %}
 
-Run the application to render the following output.
+Executing the above code renders the following output.
 
 ![Xamarin Forms Chat suggestion](Styles_images/Suggestion.png)
 
 ## Send Button styling
 
-You can applies the styling for the send button elements by setting the various send button key and values in resource dictionary.
+You can style the send message button based on its state by setting values to the in-built keys of the send message button in resource dictionary.
 
 <table>
 <tr>
@@ -1494,11 +1488,11 @@ public MainPage()
 {
     ....
     InitializeComponent();
-       ResourceDictionary dictionary = new ResourceDictionary();
-            dictionary.Add("SfChatTheme", "CustomTheme");
-            dictionary.Add("SfChatSendButtonDisabledColor", Color.Blue);
-            dictionary.Add("SfChatSendButtonColor", Color.Orange);
-			this.Resources.Add(dictionary);
+    ResourceDictionary dictionary = new ResourceDictionary();
+    dictionary.Add("SfChatTheme", "CustomTheme");
+    dictionary.Add("SfChatSendButtonDisabledColor", Color.Blue);
+    dictionary.Add("SfChatSendButtonColor", Color.Orange);
+	this.Resources.Add(dictionary);
     ....
 }
 
@@ -1507,7 +1501,7 @@ public MainPage()
 {% endtabs %}
 
 
-Run the application to render the following output.
+Executing the above code renders the following output.
 
 ![Xamarin Forms Chat send button disable](Styles_images/SendIconDisable.png)
 

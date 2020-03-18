@@ -1080,7 +1080,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-            Color of the send button when it is in 'Disabled' state.
+            Color of the send button when it is in `Disabled` state.
             <br/>
             <br/>
         </td>

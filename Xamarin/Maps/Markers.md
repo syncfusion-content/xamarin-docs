@@ -730,8 +730,6 @@ this.Content = map;
 
 N> The default marker icon position for VerticalAlignment and HorizontalAlignment is Center.
 
-N> Alignment support provided to custom markers also.
-
 ## Events
 
 The `MarkerSelected` event is fired when a marker is selected. The `CustomView` and `MapMarker` will be passed to `MarkerSelectedEventArgs`.

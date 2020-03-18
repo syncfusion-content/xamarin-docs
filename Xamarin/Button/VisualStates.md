@@ -15,6 +15,7 @@ The button visual can be customized through `VisualStates`. The [`SfButton`](htt
 * Pressed
 * Checked
 * Unchecked
+* Disabled
 
 N>In addition, `MouseOver` VisualState is available only in the UWP platform.
 

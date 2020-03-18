@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# WorkWeekView
+# Work Week View in Xamarin Scheduler (SfSchedule)
 
 WorkWeekView is to view only working days of a particular week. By default, Saturday and Sunday are the non-working days. You can be customize it with any days of a Week. Appointments arranged in timeslots based on its duration with respective day of the week.
 
@@ -595,4 +595,18 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 * `SfSchedule` supports two-way binding of `SelectedDate` property.
 
 ![Schedule customizing selection work week view](workweekview_images/xamarin.forms-schedule-selection.png)
+
+## Current time indicator
+You can display the current time indicator in `WorkWeekView` by using the [ShowCurrentTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowCurrentTimeIndicator.html) property.And you can also customize the color of current time indicator by using the [CurrentTimeIndicatorColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CurrentTimeIndicatorColor.html) property
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule x:Name="schedule" ScheduleView = "WorkWeekView"  ShowCurrentTimeIndicator=true CurrentTimeIndicatorColor="Black" >
+{% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.WorkWeekView;
+schedule.ShowCurrentTimeIndicator = true;
+schedule.CurrentTimeIndicatorColor = Color.Black;
+{% endhighlight %}
+{% endtabs %}
 

@@ -493,7 +493,6 @@ N> Default value of the IsCenterAligned property is false.
             markerPointer.MarkerHeight = 30;
             markerPointer.MarkerWidth = 30;
             markerPointer.Offset = 1;
-            markerPointer.Value = 70;
             scale.Pointers.Add(markerPointer);
             RangePointer rangePointer = new RangePointer();
             rangePointer.RangeCap = RangeCap.Both;

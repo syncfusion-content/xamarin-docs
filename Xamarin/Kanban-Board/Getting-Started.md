@@ -160,7 +160,7 @@ public class ViewModel
 		{
 			ID = 1,
 			Title = "iOS - 1002",
-			ImageURL = "Image1.png",
+			ImageURL = "People_Circle1.png",
 			Category = "Open",
 			Description = "Analyze customer requirements",
 			ColorKey = "Red",
@@ -170,7 +170,7 @@ public class ViewModel
 		{
 			ID = 6,
 			Title = "Xamarin - 4576",
-			ImageURL = "Image2.png",
+			ImageURL = "People_Circle2.png",
 			Category = "Open",
 			Description = "Show the retrieved data from the server in grid control",
 			ColorKey = "Green",
@@ -180,7 +180,7 @@ public class ViewModel
 		{
 			ID = 13,
 			Title = "UWP - 13",
-			ImageURL = "Image4.png",
+			ImageURL = "People_Circle3.png",
 			Category = "In Progress",
 			Description = "Add responsive support to application",
 			ColorKey = "Brown",
@@ -189,7 +189,7 @@ public class ViewModel
 		Cards.Add(new KanbanModel()
 		{
 			ID = 2543,
-			Title = "Xamarin_iOS - 2543",
+			Title = "People_Circle4.png",
 			Category = "Code Review",
 			ImageURL = "Image3.png",
 			Description = "Check login page validation",
@@ -258,7 +258,7 @@ The columns are generated automatically based on the distinct values of ['Kanban
 
 {% highlight xaml %}
 
-<kanban:SfKanban x:Name="kanban" AutoGenerateColumns="False"> 
+<kanban:SfKanban x:Name="kanban" AutoGenerateColumns="False" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" ItemsSource="{Binding Cards}">
 
 	<kanban:SfKanban.Columns>
 
@@ -283,9 +283,10 @@ The columns are generated automatically based on the distinct values of ['Kanban
 {% highlight C# %}
 
 kanban.AutoGenerateColumns = false; 
+kanban.SetBinding(SfKanban.ItemsSourceProperty, "Cards");
 
 KanbanColumn openColumn = new KanbanColumn();
-openColumn.Title = "To Do";
+openColumn.Title = "Open";
 kanban.Columns.Add(openColumn);
 
 KanbanColumn progressColumn = new KanbanColumn();
@@ -315,6 +316,6 @@ doneColumn.Categories = new List<object>() { "Done" };
 
 {% endhighlight %}
 
-This is how the final output will look like on iOS, Android and Windows devices. You can download the entire source code of this demo from [here](http://files2.syncfusion.com/Xamarin.Forms/Samples/GettingStartedKanban.zip).
+This is how the final output will look like on iOS, Android and Windows devices. You can download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/Getting-started-sample-in-kanban-in-Xamarin).
 
-![Final output of SfKanban](SfKanban_images/GettingStarted.png)
+![Final output of SfKanban](SfKanban_images/SfKanban-gettingstartedImage.jpg)

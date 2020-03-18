@@ -838,11 +838,11 @@ public MainPage()
 
 {% endtabs %}
 
-In addition to this you can write target style to SfCalendar control to style the inner elements of the calendar like selection bacground color, foreground color etc.
+In addition to this you can write target style to SfCalendar control to style the inner elements of the calendar like selection background color, foreground color etc.
 
 ## Hyperlink message styling
 
-You can style the elements of a hyperlink message by setting values to the in-built keys of a hyeprlink message in resource dictionary.
+You can style the elements of a hyperlink message by setting values to the in-built keys of a hyperlink message in resource dictionary.
 
 <table>
 <tr>
@@ -907,7 +907,7 @@ public MainPage()
 
 {% endtabs %}
 
-Exceuting the above codes renders the following output.
+Executing the above codes renders the following output.
 
 ![Xamarin Forms Chat Hyperlink message](Styles_images/Xamarin-Forms-chat-hyperlink-message-style.jpg)
 
@@ -1047,7 +1047,7 @@ public MainPage()
 
 {% endtabs %}
 
-Exceuting the above codes renders the following output.
+Executing the above codes renders the following output.
 
 ![Xamarin Forms Chat Time Picker Message](Styles_images/Xamarin-Forms-chat-timepicker-message-style.jpg)
 

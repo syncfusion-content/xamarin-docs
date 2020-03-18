@@ -54,8 +54,8 @@ It restricts saving image to the default location when set `Cancel` value to `tr
 {% endhighlight %}
 
 {% highlight C# %}
-           
-  		    private void editor_ImageSaving(object sender, ImageSavingEventArgs args)
+            
+            private void editor_ImageSaving(object sender, ImageSavingEventArgs args)
             {
                 args.Cancel = true;  
             }
@@ -79,8 +79,8 @@ It restricts saving image to the default location when set `Cancel` value to `tr
 
 {% highlight c# %}
 
-private void SfImageEditor_ImageSaving(object sender, ImageSavingEventArgs args)
-{
+          private void SfImageEditor_ImageSaving(object sender, ImageSavingEventArgs args)
+          {
              args.FileName = "SavedImage";
           }
 

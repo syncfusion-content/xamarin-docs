@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Essential Syncfusion Xamarin.Forms Kanban to get overview for working with this control
-description: getting started
+title: Getting Started for Essential Syncfusion Xamarin.Forms Kanban
+description: Getting Started for Essential Syncfusion Xamarin.Forms Kanban to get overview for working with this control
 platform: xamarin
 control: Kanban
 documentation: ug

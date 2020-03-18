@@ -7,7 +7,7 @@ control: SfMaps
 documentation: ug
 ---
 
-# SfMaps control map Providers
+#Map providers in SfMaps control
 
 The maps control supports map providers such as OpenStreetMap and Bing Maps that can be added to an imagery layer in maps.
 

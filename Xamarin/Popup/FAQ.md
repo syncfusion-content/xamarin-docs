@@ -6,7 +6,7 @@ platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
-# FAQ
+# FAQ in Xamarin.Forms Popup (SfPopupLayout)
 
 ## Load the SfPopupLayout in GridTappedEvent of the SfDataGrid
 

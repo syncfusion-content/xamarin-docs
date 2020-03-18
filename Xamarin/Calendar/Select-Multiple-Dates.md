@@ -128,7 +128,7 @@ calendar.ClearSelection();
 
 {% endtabs %}
 
-## See Also
+## See also
 
 [How to use range selection on SfCalendar by using MVVM pattern](https://www.syncfusion.com/kb/8591/how-to-use-range-selection-on-sfcalendar-by-using-mvvm-pattern)
 

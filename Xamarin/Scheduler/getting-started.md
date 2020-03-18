@@ -544,7 +544,7 @@ schedule.DataSource = viewModel.Meetings;
 You can download the entire source code of this demo for Xamarin.Forms from
 here [ScheduleGettingStarted](https://github.com/SyncfusionExamples/xamarin-schedule-getting-started)
 
-## See Also
+## See also
 
 [How to resolve SfSchedule not rendering issue in iOS and UWP ?](https://www.syncfusion.com/kb/7202/how-to-resolve-sfschedule-not-rendering-issue-in-ios-and-uwp)
 

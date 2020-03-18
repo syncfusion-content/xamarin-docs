@@ -1316,7 +1316,7 @@ this.Content = schedule;
 * `MinHeight` has ScheduleAppointmentMapping Support.
 * All day Appointment does not support `MinHeight`.
 
-## See Also
+## See also
 
 [How to get visible appointments in Xamarin.Forms Schedule (SfSchedule)](https://www.syncfusion.com/kb/11106/how-to-get-visible-appointments-in-xamarin-forms-schedule-sfschedule)
 

@@ -669,46 +669,20 @@ dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 {% endhighlight %}
 {% endtabs %}
 
-### Changing editor padding
+### Changing  padding
+To customize the padding, override the below `DataFormLayoutManager` methods and assign to the `SfDataForm.LayoutManager` property.
 
-You can change the editor padding by overriding the `GetLeftPaddingForEditor` method.
+* You can change the editor padding by overriding the `GetLeftPaddingForEditor` and `GetRightPaddingForEditor` methods,
+
+* You can change the group header padding by overriding the `GetLeftPaddingForGroupHeader`  and `GetRightPaddingForGroupHeader` methods.
+
+* You can change the group icon padding by overriding the `GetLeftPaddingForGroupIcon` and `GetRightPaddingForGroupIcon` methods.
+
+* You can change the label padding by overriding the `GetLeftPaddingForLabel` and `GetRightPaddingForLabel` methods, its applicable only for `DataForm.LayoutOptions` is `Default`.
+
+* You can change the validation label padding by overriding the `GetLeftPaddingForValidationLabel` and `GetRightPaddingForValidationLabel` methods, its applicable only for `DataForm.LayoutOptions` is `Default`.
 
 {% tabs %}
-{% highlight c# %}
-public class ContactsInfo
-{
-    private string lastName;
-    public ContactsInfo()
-    {
-
-    }
-
-    private string firstName;
-    [DisplayOptions(ImageSource = Resource.Drawable.Name)]
-    public string FirstName
-    {
-        get { return this.firstName; }
-        set
-        {
-            this.firstName = value;
-        }
-    }
-
-
-    [Display(Prompt = "Enter last name")]
-    [DisplayOptions(ShowLabel = false)]
-    public string LastName
-    {
-        get { return this.lastName; }
-        set
-        {
-            this.lastName = value;
-        }
-    }
-
-
-}
-{% endhighlight %}
 {% highlight c# %}
 dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 
@@ -721,9 +695,52 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
 
     protected override int GetLeftPaddingForEditor(DataFormItem dataFormItem)
     {
-        if (dataFormItem.Name == "LastName")
-            return 35;
-        return base.GetLeftPaddingForEditor(dataFormItem);
+       return 20;
+    }
+    
+    protected override int GetRightPaddingForEditor(DataFormItem dataFormItem)
+    {
+       return 50;
+    }
+    protected override int GetLeftPaddingForGroupHeader(DataFormItem dataFormItem)
+    {
+        return 50;
+    }
+    protected override int GetLeftPaddingForGroupIcon(DataFormItem dataFormItem)
+    {
+        return 50;
+    }
+    protected override int GetLeftPaddingForLabel(DataFormItem dataFormItem)
+    {
+        if (dataFormItem.Name == "FirstName")
+            return 50;
+        return base.GetLeftPaddingForLabel(dataFormItem);
+    }
+    protected override int GetLeftPaddingForValidationLabel(DataFormItem dataFormItem)
+    {
+        if (dataFormItem.Name == "FirstName")
+            return 50;
+        return base.GetLeftPaddingForValidationLabel(dataFormItem);
+    }
+    protected override int GetRightPaddingForGroupHeader(DataFormItem dataFormItem)
+    {
+            return 50;
+    }
+    protected override int GetRightPaddingForGroupIcon(DataFormItem dataFormItem)
+    {
+            return 50;
+    }
+    protected override int GetRightPaddingForLabel(DataFormItem dataFormItem)
+    {
+            if (dataFormItem.Name == "FirstName")
+                return 50;
+            return base.GetLeftPaddingForLabel(dataFormItem);
+    }
+    protected override int GetRightPaddingForValidationLabel(DataFormItem dataFormItem)
+    {
+            if (dataFormItem.Name == "FirstName")
+                return 50;
+            return base.GetLeftPaddingForValidationLabel(dataFormItem);
     }
 }
 {% endhighlight %}
@@ -835,9 +852,11 @@ By default, the available width is divided equally for editor and label.
 
 ## Spanning rows and columns
 
-You can increase row height and column width by defining the `DisplayOptions` attribute.
+You can increase row height and column width by defining the `DisplayOptions` attribute or by handling `AutoGeneratingDataFormItem` event.
 
 ### Row span
+
+### Using attributes
 
 You can increase the row height by using the [RowSpan](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute~RowSpan.html) property in the`DisplayOptions` attribute.
 
@@ -856,11 +875,33 @@ public string FirstName
 {% endhighlight %}
 {% endtabs %}
 
+### Using event
+
+You can increase the row height of each `DataFormItem` using the [RowSpan](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~RowSpan.html) property and it will be handled in the `AutoGeneratingDataFormItem` event.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDataFormItemEventArgs e)
+{
+if (e.DataFormItem != null)
+{
+if (e.DataFormItem.Name == "FirstName" )
+{
+e.DataFormItem.RowSpan = 2;
+}
+}
+}
+{% endhighlight %}
+{% endtabs %}
+
 Here, `FirstName` field’s row height is increased.
 
 ![Setting row span to data form item in Xamarin.Forms DataForm](SfDataForm_images/Layout_RowSpan.png)
 
 ### Column span
+
+### Using attributes
 
 When the grid layout is used, you can increase the column width by using the [ColumnSpan](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute~ColumnSpan.html) property in the `DisplayOptions `attribute.
 
@@ -879,6 +920,27 @@ public string FirstName
         this.firstName = value;
     }
 }
+{% endhighlight %}
+{% endtabs %}
+
+###Using event
+
+When the grid layout is used, you can increase the column width of each `DataFormItem` using the [ColumnSpan](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~ColumnSpan.html)  property and it will be handled in the `AutoGeneratingDataFormItem` event.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
+private void DataForm_AutoGeneratingDataFormItem(object sender,AutoGeneratingDataFormItemEventArgs e)
+{
+if (e.DataFormItem != null)
+{
+if (e.DataFormItem.Name == "FirstName" )
+{
+e.DataFormItem.ColumnSpan = 2;
+}
+}
+}
+
 {% endhighlight %}
 {% endtabs %}
 

@@ -13,7 +13,7 @@ The maps control supports map providers such as OpenStreetMap and Bing Maps that
 
 ## OpenStreetMap
 
-The OpenStreetMap (OSM) is a world map; it was built by a community of mappers. It is free to use under an open license. This allows you view geographical data in a collaborative way from anywhere on the earth. The OSM provides small tile images based on your requests and combines them into a single image to display the map area in the maps control. 
+The OpenStreetMap (OSM) is a world map; it was built by a community of mappers. It is free to use under an open license. This allows you to view geographical data in a collaborative way from anywhere on the earth. The OSM provides small tile images based on your requests and combines them into a single image to display the map area in the maps control. 
 
 ### Adding OSM in maps
 
@@ -45,7 +45,7 @@ N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin
 
 ## Bing Maps
 
-The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides map tile images based on your requests and combines them into a single image to display the map area. To use `Bing maps`, set the `LayerType` property of ImageryLayer to “Bing”. Then, set the Bing Maps key, which is obtained from [Bing Maps Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key).
+The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides the map tile images based on your requests and combines them into a single image to display the map area. To use `Bing maps`, set the `LayerType` property of ImageryLayer to “Bing”. Then, set the Bing Maps key, which is obtained from [Bing Maps Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key).
 
 {% tabs %}
 
@@ -71,11 +71,11 @@ The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides
 
 ![Xamarin Bing road image](Images/Road.png)
 
-N> The `LayerType` property of `ImageryLayer` provides support to `OSM` and `Bing Maps`. The default value of the `LayerType` property is OSM.
+N> The `LayerType` property of `ImageryLayer` provides the support to `OSM` and `Bing Maps`. The default value of the `LayerType` property is OSM.
 
 ## Set different bing map style
 
-The ImageryLayer provides support to the following types of Bing Maps:
+The ImageryLayer provides the support to the following types of Bing Maps:
 
 * `Road`
 * `Aerial`
@@ -151,15 +151,15 @@ The AerialWithLabel view displays the Aerial map with labels for continent, coun
 
 ## Zooming and panning
 
-The maps control provides interactive zooming and panning supports to OSM and Bing Maps.
+The maps control provides the interactive zooming and panning supports to OSM and Bing Maps.
 
-Zooming helps you get a closer look of an area on maps for in-depth analysis. Panning helps you move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
+Zooming helps you to get a closer look of an area on maps for in-depth analysis. Panning helps you to move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
 
 ![Xamarin Zooming image](Images/zooming.jpg)
 
 ## Reset zooming
 
-The ImageryLayer provides support to reset the maps to the default view when you double tap the imagery layer by setting the `ResetOnDoubleTap` property to true. The default value of this property is true. This behavior can be restricted by setting the `ResetOnDoubleTap` property to false.
+The ImageryLayer provides the support to reset the maps to the default view when you double tap the imagery layer by setting the `ResetOnDoubleTap` property to true. The default value of this property is true. This behavior can be restricted by setting the `ResetOnDoubleTap` property to false.
 
 {% tabs %}
 
@@ -310,9 +310,9 @@ The detailed explanation of marker and its customization have been provided in M
 
 ![Xamarin Marker image](Images/Marker.png)
 
-## Custom map providers
+## Custom a map providers
 
-You can show the other map providers maps using imagery layer. First, initialize the map extension class, override the GetUri method of imagery layer extension class, and then pass the Map providers tile image Uri link like Google uri with corresponding x, y, and zoom level. Finally, add the imagery layer extension class to layers collection of native map control by overriding the OnElementChanged method of each platform’s (Xamarin.Android, Xamarin.iOS, and UWP) custom map renderer. For more information to add custom map provider, refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
+You can show the other map providers maps using the imagery layer. First, initialize the map extension class, override the GetURI method of imagery layer extension class, and then pass the map providers tile image URI link like Google URI with corresponding x, y, and zoom level. Finally, add the imagery layer extension class to layers collection of native map control by overriding the OnElementChanged method of each platform’s (Xamarin.Android, Xamarin.iOS, and UWP) custom map renderer. For more information to add custom map provider, refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
 
 {% highlight c# %}
 
@@ -367,7 +367,7 @@ public class ImageryLayerExt : NativeMap.ImageryLayer
 
 You can download the demo sample in this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Google_Sample992378333).
 
-## Cache tile images in application memory
+## Cache a tile images in application memory
 
 The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~CanCacheTiles.html) property used to decide whether the tile images should be cached in application memory or not.
 
@@ -383,7 +383,7 @@ The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% endtabs %}
 
-## Clear cached tile images from application memory
+## Clear a cached tile images from application memory
 
 The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~DeleteTilesFromCache.html) method used to clear the cached tile images from  application cache memory.
 
@@ -481,9 +481,9 @@ private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChang
 
 {% endtabs %}
 
-## Calculate zoom level based on map geo-bounds or distance
+## Calculate a zoom level based on map geo-bounds or distance
 
-This feature is used to calculate the initial zoom level automatically in two ways.
+This feature is used to calculate the initial zoom level automatically in two ways:
 
 * Distance in radius(Meter/KiloMeter/Mile)
 * Geo-bounds(Northeast, Southwest)
@@ -611,7 +611,7 @@ N> When setting LatLngBounds and DistanceRadius at the same time, the priority i
 
 ## Get the map tile layer bounds
 
-You can get imagery layer pixel bounds by using `MapBounds` property while zooming, panning and changing Geo-Coordinate value in imagery layer.
+You can get imagery layer pixel bounds by using `MapBounds` property while zooming, panning, and changing Geo-Coordinate value in imagery layer.
 
 {% tabs %}
 

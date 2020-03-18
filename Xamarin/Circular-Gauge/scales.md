@@ -439,7 +439,7 @@ N> Default value of the IsCenterAligned property is false.
                 <gauge:Scale
                     LabelFontSize="40"
                     EnableAutoAngle="True" 
-                    StartAngle="181" 
+                    StartAngle="180" 
                     SweepAngle="180" 
                     StartValue="0" 
                     EndValue="1000"

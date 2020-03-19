@@ -371,7 +371,7 @@ The scale labels are customized using the `LabelFormat` and `Culture` properties
        <gauge:SfLinearGauge>
             <gauge:SfLinearGauge.Scales>
                 <gauge:LinearScale x:Name="scale" MaximumLabels="4"  ScaleOffset="50" MinimumValue="10" MaximumValue="50" Interval="10" ScaleBarColor="#E0E0E0" 
-                               MinorTicksPerInterval ="1" LabelColor="#000000" LabelFontSize="20" LabelFormat="c:{0:c}" LabelOffset="10">
+                               MinorTicksPerInterval ="1" LabelColor="#000000" LabelFontSize="20" LabelFormat="{}{0:C}" LabelOffset="10">
                     <gauge:LinearScale.Pointers>
                         <gauge:BarPointer Value="35" Color="#DC3913" />
                     </gauge:LinearScale.Pointers>
@@ -397,7 +397,7 @@ The scale labels are customized using the `LabelFormat` and `Culture` properties
             linearScale.MinorTicksPerInterval = 1;
             linearScale.LabelColor = Color.FromHex("#000000");
             linearScale.LabelFontSize = 20;
-            linearScale.LabelFormat = "c:{0:c}";
+            linearScale.LabelFormat = "{0:C}";
             linearScale.LabelOffset = 10;
             BarPointer barPointer = new BarPointer();
             barPointer.Value = 35;

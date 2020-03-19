@@ -361,8 +361,8 @@ Labels visibility can be customized using the [`ShowLabels`](https://help.syncfu
  
 The scale labels are customized using the `LabelFormat` and `Culture` properties of linear scale.
 
-`LabelFormat` property is used to change the format of labels by setting a formatting string on the `LabelFormat` property.
-`Culture` property is used to format the group separator of the value based on the respective culture.
+`LabelFormat` property is used to change the format of labels.
+`Culture` property is used to set the default format of currency values, numbers, casing conventions, and string comparisons, etc.. to the scale labels.
 
 {% tabs %}
 

@@ -164,3 +164,24 @@ namespace CheckBoxCustomization
 N> The `TickColor` is not applicable for Android Platform. The default value of TickColor is [`Color.White`].
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_VisualCustomization881578223).
+
+## Change the check box size
+
+The `ControlSize` allows you to change the size of the control. Using this property, you can change the heigth and width of `CheckBox`. 
+
+{% tabs %}
+{% highlight xaml %}
+<StackLayout>
+    <syncfusion:SfCheckBox Text="CheckBox" ControlSize="60"/>
+</StackLayout>
+{% endhighlight %}
+{% highlight c# %}
+StackLayout stackLayout = new StackLayout();
+SfCheckBox  sfCheckBox  = new SfCheckBox();
+sfCheckBox.Text = "Radio Button";
+sfCheckBox.ControlSize = 60;
+stackLayout.Children.Add(sfCheckBox);
+{% endhighlight %}
+{% endtabs %}
+
+N>`ControlSize` is not applicable for Android Platform. The default value of the ControlSize is 0.

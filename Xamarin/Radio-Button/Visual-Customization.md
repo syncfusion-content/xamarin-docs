@@ -96,7 +96,7 @@ radioButton.FontSize = 20;
 ![RadioButton TextAppereance](Images/CaptionAppereance.png)
 
 ## LineBreakMode
-The `LineBreakMode` allows you to wrap or truncate the text. The default value of this property is `NoWrap`. The following other options are available in `LineBreakMode`:
+The [`LineBreakMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~LineBreakMode.html) allows you to wrap or truncate the text. The default value of this property is `NoWrap`. The following other options are available in `LineBreakMode`:
 
  * `NoWrap` - Avoids the text wrap. 
  * `WordWrap` - Wraps the text by words.
@@ -106,3 +106,24 @@ The `LineBreakMode` allows you to wrap or truncate the text. The default value o
  * `TailTruncation` - Truncates the text at the end.
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_VisualCustomization1644131704).
+
+## Change the radio button size
+
+The `ControlSize` allows you to change the size of the control. Using this property, you can change the heigth and width of `RadioButton`. 
+
+{% tabs %}
+{% highlight xaml %}
+<StackLayout>
+    <syncfusion:SfRadioButton Text="RadioButton" ControlSize="60"/>
+</StackLayout>
+{% endhighlight %}
+{% highlight c# %}
+StackLayout stackLayout = new StackLayout();
+SfRadioButton radioButton = new SfRadioButton();
+radioButton.Text = "Radio Button";
+radioButton.ControlSize = 60;
+stackLayout.Children.Add(radioButton);
+{% endhighlight %}
+{% endtabs %}
+
+N>`ControlSize` is not applicable for Android Platform. The default value of the ControlSize is 0.

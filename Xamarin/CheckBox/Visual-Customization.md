@@ -161,13 +161,11 @@ namespace CheckBoxCustomization
 
 ![SfCheckBox with TickColor](Images/TickColor.png)
 
-N> The `TickColor` is not applicable for Android Platform. The default value of TickColor is [`Color.White`].
-
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_VisualCustomization881578223).
 
-## Change the check box size
+## Size Customization
 
-The `ControlSize` allows you to change the size of the control. Using this property, you can change the heigth and width of `CheckBox`. 
+The `ControlSize` property used to customize the `CheckBox` control size.
 
 {% tabs %}
 {% highlight xaml %}
@@ -184,4 +182,4 @@ stackLayout.Children.Add(sfCheckBox);
 {% endhighlight %}
 {% endtabs %}
 
-N>`ControlSize` is not applicable for Android Platform. The default value of the ControlSize is 0.
+N>`ControlSize` is not applicable for Android Platform.

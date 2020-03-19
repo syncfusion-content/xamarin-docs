@@ -107,9 +107,9 @@ The [`LineBreakMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_VisualCustomization1644131704).
 
-## Change the radio button size
+## Size Customization
 
-The `ControlSize` allows you to change the size of the control. Using this property, you can change the heigth and width of `RadioButton`. 
+The `ControlSize` property used to customize the `RadioButton` control size. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -126,4 +126,4 @@ stackLayout.Children.Add(radioButton);
 {% endhighlight %}
 {% endtabs %}
 
-N>`ControlSize` is not applicable for Android Platform. The default value of the ControlSize is 0.
+N>`ControlSize` is not applicable for Android Platform.

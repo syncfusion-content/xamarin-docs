@@ -7,7 +7,7 @@ control: SfChat
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.Forms Chat (SfChat)      
 
 
 ## Assembly deployment
@@ -299,35 +299,30 @@ public class GettingStartedViewModel : INotifyPropertyChanged
             {
                 Author = currentAuthor,
                 Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
-                ShowAvatar = true,
             });
 
             this.messages.Add(new TextMessage()
             {
                 Author = new Author() { Name = "Andrea", Avatar = "Andrea.png" },
                 Text = "Oh! That's great.",
-                ShowAvatar = true,
             });
 
             this.messages.Add(new TextMessage()
             {
                 Author = new Author() { Name = "Harrison", Avatar = "Harrison.png" },
                 Text = "That is good news.",
-                ShowAvatar = true,
             });
 
             this.messages.Add(new TextMessage()
             {
                 Author = new Author() { Name = "Margaret", Avatar = "Margaret.png" },
                 Text = "What kind of application is it and when are we going to launch?",
-                ShowAvatar = true,
             });
 
             this.messages.Add(new TextMessage()
             {
                 Author = currentAuthor,
                 Text = "A kind of Emergency Broadcast App.",
-                ShowAvatar = true,
             });
         }
     }
@@ -354,10 +349,11 @@ The following code example binds the collection created in previous step to `SfC
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <sfChat:SfChat x:Name="sfChat"
-                       Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
-    </ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True" />
+	<ContentPage.Content>					   
 </ContentPage>
 
 {% endhighlight %}
@@ -378,6 +374,7 @@ namespace GettingStarted
             this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.Content = sfChat;
         }
     }
@@ -407,11 +404,14 @@ Messages can be separated based on the date specified in the message and this ca
         <local:GettingStartedViewModel/>
     </ContentPage.BindingContext>
     
-    <ContentPage.Content>
+       <ContentPage.Content>
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        ShowTimeBreak="True"
-                       TimestampFormat="hh:mm tt"
+                       ShowIncomingMessageTimestamp="True"
+                       ShowOutgoingMessageTimestamp="True"
+                       IncomingMessageTimestampFormat="hh:mm tt"
+                       OutgoingMessageTimestampFormat="hh:mm tt"
                        CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
 
@@ -433,7 +433,10 @@ namespace GettingStarted
             sfChat = new SfChat();
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
-            this.sfChat.TimestampFormat = "hh:mm tt";
+            this.sfChat.IncomingMessageTimestampFormat = "hh:mm tt";
+            this.sfChat.OutgoingMessageTimestampFormat = "hh:mm tt";
+            this.sfChat.ShowIncomingMessageTimestamp = true;
+            this.sfChat.ShowOutgoingMessageTimestamp = true;
             this.sfChat.ShowTimeBreak = true;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
             this.Content = sfChat;

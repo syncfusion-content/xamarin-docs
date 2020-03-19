@@ -7,7 +7,7 @@ control: SfChat
 documentation: ug
 ---
 
-# Suggestions
+# Suggestions in Xamarin.Forms Chat (SfChat)
 
 The `SfChat` control allows to show a list of options to choose from, as suggestions, below the actual message or at the bottom of the chat control. Suggestions can be shown for all the supported message types in `SfChat`. [SfChat.SuggestionItemSelected](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SuggestionItemSelected_EV.html) event and [SfChat.SuggestionItemSelectedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SuggestionItemSelectedCommand.html) will be executed when the user selects a suggestion item. Both the event and the command will provide the [SuggestionItemSelectedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SuggestionItemSelectedEventArgs.html) as arguments.
 
@@ -29,10 +29,11 @@ Suggestions can be shown in a message by creating a [ChatSuggestion](https://hel
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <sfChat:SfChat x:Name="sfChat"
-                       Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
-    </ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True" />
+	<ContentPage.Content>	
 </ContentPage>
 
 {% endhighlight %}
@@ -49,10 +50,11 @@ namespace GettingStarted
         public MainPage()
         {
             InitializeComponent();
-            sfChat = new SfChat();
-            viewModel = new GettingStartedViewModel();
+            this.sfChat = new SfChat();
+            this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.Content = sfChat;
         }
     }
@@ -149,7 +151,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Flight to USA",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TextMessage()
@@ -157,7 +158,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
             Author = new Author() { Avatar = "Aeroplane.png", Name = "Travel Bot" },
             Text = "Here's my suggestion",
             Suggestions = chatSuggestions,
-            ShowAvatar = true,
         });   
     }
 }
@@ -187,10 +187,11 @@ To add image in suggestion list in message, refer the below the code example:
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <sfChat:SfChat x:Name="sfChat"
-                       Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
-    </ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True" />
+	<ContentPage.Content>
 </ContentPage>
 
 {% endhighlight %}
@@ -207,10 +208,11 @@ namespace GettingStarted
         public MainPage()
         {
             InitializeComponent();
-            sfChat = new SfChat();
-            viewModel = new GettingStartedViewModel();
+            this.sfChat = new SfChat();
+            this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.Content = sfChat;
         }
     }
@@ -307,7 +309,6 @@ public class GettingStartedViewModel :INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Flight to USA",
-            ShowAvatar = true,
         });
 
         this.messages.Add(new TextMessage()
@@ -315,7 +316,6 @@ public class GettingStartedViewModel :INotifyPropertyChanged
             Author = new Author() { Avatar ="Aeroplane.png", Name = "Travel Bot" },
             Text = "Here's my suggestion",
             Suggestions = chatSuggestions,
-            ShowAvatar = true,
         });   
     }
 }
@@ -345,10 +345,11 @@ To change suggestion `ChatSuggestions.Orientation`, refer the below code example
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <sfChat:SfChat x:Name="sfChat"
-                       Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
-    </ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True" />
+	<ContentPage.Content>
 </ContentPage>
 
 {% endhighlight %}
@@ -365,10 +366,11 @@ namespace GettingStarted
         public MainPage()
         {
             InitializeComponent();
-            sfChat = new SfChat();
-            viewModel = new GettingStartedViewModel();
+            this.sfChat = new SfChat();
+            this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.Content = sfChat;
         }
     }
@@ -467,7 +469,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Flight to USA",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TextMessage()
@@ -475,7 +476,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
             Author = new Author() { Avatar = "Aeroplane.png", Name = "Travel Bot" },
             Text = "Here's my suggestion",
             Suggestions = chatSuggestions,
-            ShowAvatar = true,
         });   
     }
 }
@@ -504,10 +504,11 @@ The SfChat allows to show a list of options as suggestions at the bottom of chat
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <sfChat:SfChat x:Name="sfChat"
-                       Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
-    </ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True" />
+	<ContentPage.Content>
 </ContentPage>
 
 {% endhighlight %}
@@ -524,11 +525,11 @@ namespace GettingStarted
         public MainPage()
         {
             InitializeComponent();
-            sfChat = new SfChat();
-            viewModel = new GettingStartedViewModel();
+            this.sfChat = new SfChat();
+            this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
-            this.sfChat.Suggestions = viewModel.ChatSuggestions;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.Content = sfChat;
         }
     }
@@ -643,7 +644,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Flight to USA",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TextMessage()
@@ -651,7 +651,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
             Author = new Author() { Avatar = "Aeroplane.png", Name = "Travel Bot" },
             Text = "Here's my suggestion",
             Suggestions = chatSuggestions,
-            ShowAvatar = true,
         });   
     }
 }
@@ -705,9 +704,9 @@ private void SfChat_SuggestionItemSelected(object sender, SuggestionItemSelected
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        SendMessageCommand="{Binding SendMessageCommand}"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+                       ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
-</ContentPage>
 
 {% endhighlight %}
 {% highlight C# %}

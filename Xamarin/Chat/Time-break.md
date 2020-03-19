@@ -7,7 +7,7 @@ control: SfChat
 documentation: ug
 ---
 
-# Time break
+# Time break between Messages in Xamarin.Forms Chat (SfChat)
 
 The chat control provides a convenient way to group messages based on the date and time the messages were created. So, users can easily identify the messages in the order they were created. To enable time break view in `SfChat` set `true` to the [SfChat.ShowTimeBreak](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowTimeBreak.html) property.
 
@@ -84,7 +84,8 @@ To stick the time break view, enable the property [SfChat.StickyTimeBreak](https
                        ShowTimeBreak="True"
                        StickyTimeBreak="True"
                        Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+                       ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 
 </ContentPage>
@@ -107,6 +108,7 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.sfChat.ShowTimeBreak = true;
             this.sfChat.StickyTimeBreak = true;
             this.Content = sfChat;
@@ -188,7 +190,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
-            ShowAvatar = true,
             DateTime = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day - 1),
         });
 
@@ -196,21 +197,18 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = new Author() { Name = "Andrea", Avatar = "People_Circle2.png" },
             Text = "Oh! That's great.",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Harrison", Avatar = "People_Circle14.png" },
             Text = "That is good news.",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Margaret", Avatar = "People_Circle7.png" },
             Text = "What kind of application is it and when are we going to launch?",
-            ShowAvatar = true,
         });
     }
 }

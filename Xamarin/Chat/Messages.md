@@ -45,10 +45,11 @@ The [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCha
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <sfChat:SfChat x:Name="sfChat"
-                       Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
-    </ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True" />
+	<ContentPage.Content>	
 </ContentPage>
 
 {% endhighlight %}
@@ -71,6 +72,7 @@ namespace GettingStarted
             this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.Content = sfChat;
         }
     }
@@ -149,7 +151,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
-            ShowAvatar = true,
         });
     }
 }
@@ -177,10 +178,11 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <sfChat:SfChat x:Name="sfChat"
-                       Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
-    </ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True" />
+	<ContentPage.Content>	
 </ContentPage>
 
 {% endhighlight %}
@@ -197,10 +199,11 @@ namespace GettingStarted
         public MainPage()
         {
             InitializeComponent();
-            sfChat = new SfChat();
-            viewModel = new GettingStartedViewModel();
+            this.sfChat = new SfChat();
+            this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.Content = sfChat;
         }
     }
@@ -279,25 +282,21 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
-            ShowAvatar = true,
         });
         this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Andrea",Avatar = "People_Circle2.png" },
             Text = "Oh! That's great.",
-            ShowAvatar = true,
         });
         this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Harrison",Avatar = "People_Circle14.png" },
             Text = "That is good news.",
-            ShowAvatar = true,
         });
         this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Margaret",Avatar = "People_Circle7.png" },
             Text = "What kind of application is it and when are we going to launch?",
-            ShowAvatar = true,
         });
     }
 }
@@ -328,7 +327,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        SendMessage="SfChat_SendMessage"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+                       ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -351,6 +351,7 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.sfChat.SendMessage += this.SfChat_SendMessage;
             this.Content = sfChat;
         }
@@ -441,13 +442,11 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Flight to USA",
-            ShowAvatar = true,
         });
         this.Messages.Add(new DatePickerMessage()
         {
             Author = new Author() { Name = "Travel Bot",Avatar = "Aeroplane.png" },
             Text = "Select departure date",
-            ShowAvatar = true,  
             SelectedDate = DateTime.Now
         });
     }
@@ -479,7 +478,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        SendMessage="SfChat_SendMessage"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+                       ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -501,6 +501,7 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.sfChat.SendMessage += this.SfChat_SendMessage;
             this.Content = sfChat;
         }
@@ -591,14 +592,12 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Consultation with Dr.Harry tomorrow.",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TimePickerMessage()
         {
             Author = new Author() { Name = "Health care", Avatar = "Healthcare.png" },
             Text = "Select convenient time to meet Dr.Harry for health check up.",
-            ShowAvatar = true,
             // Time picker display time.
             SelectedTime = new TimeSpan(8, 30, 00),
         });
@@ -631,7 +630,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        SendMessage="SfChat_SendMessage"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+                       ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -653,6 +653,7 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.sfChat.SendMessage += this.SfChat_SendMessage;
             this.Content = sfChat;
         }
@@ -743,14 +744,12 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Appointment with Dr.Harry.",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new CalendarMessage()
         {
             Author = new Author() { Name = "Health care", Avatar = "Healthcare.png" },
             Text = "Select convenient date to meet Dr.Harry for health check up.",
-            ShowAvatar = true,
             SelectedDate = DateTime.Now,
         });
     }
@@ -779,10 +778,11 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <sfChat:SfChat x:Name="sfChat"
-                       Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
-    </ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True" />
+	<ContentPage.Content>
 </ContentPage>
 
 {% endhighlight %}
@@ -799,10 +799,11 @@ namespace GettingStarted
         public MainPage()
         {
             InitializeComponent();
-            sfChat = new SfChat();
-            viewModel = new GettingStartedViewModel();
+            this.sfChat = new SfChat();
+            this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.Content = sfChat;
         }
     }
@@ -881,14 +882,12 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = new Author() { Name = "Michale", Avatar = "People_Circle23.png" },
             Text = "We should develop this app in Xamarin, since it provides native experience and performance.",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TextMessage()
         {
             Author = CurrentUser,
             Text = "I haven't heard of Xamarin. What's Xamarin?",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new HyperlinkMessage()
@@ -896,7 +895,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
             Author = new Author() { Name = "Michale", Avatar = "People_Circle23.png" },
             Text = "Refer the following documentation link to learn more about xamarin.",
             Url = "https://docs.microsoft.com/en-us/xamarin/get-started/what-is-xamarin",
-            ShowAvatar = true
         });
     }
 }
@@ -1056,7 +1054,8 @@ In the below example, chat control is scrolled down to bottom when a new message
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        SendMessageCommand="{Binding SendMessage}"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+                       ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 
 </ContentPage>
@@ -1094,7 +1093,7 @@ In the below example, chat control is scrolled down to bottom when a new message
                     TextMessage textMessage = chatItem as TextMessage;
                     if (textMessage != null && textMessage.Author == this.viewModel.CurrentUser)
                     {
-                        textMessage.ShowAvatar = false;
+                       (sender as SfChat).ShowOutgoingMessageAvatar = false;
                     }
                     else
                     {
@@ -1137,7 +1136,7 @@ this.sfChat.SendMessage += this.SfChat_SendMessage
 /// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.</param>
 private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
 {
-    e.Message.ShowAvatar = true;
+    (sender as SfChat).ShowOutgoingMessageAvatar = true;
 }
 
 {% endhighlight %}
@@ -1181,8 +1180,7 @@ public class SendMessageCommandExt : ICommand
 
     public void Execute(object parameter)
     {
-        var args = parameter as SendMessageEventArgs;
-        args.Message.ShowAvatar = true;
+        (parameter as SfChat).ShowOutgoingMessageAvatar = true;
     }
 }
 
@@ -1319,8 +1317,10 @@ The message's avatar and author name visibility can be hidden using [SfChat.Show
     <ContentPage.Content>
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
-                       ShowAuthorName="False"
-                       ShowAvatar="False"
+                       ShowOutgoingMessageAvatar="False"
+                       ShowIncomingMessageAvatar="False"
+					   ShowOutgoingMessageAuthorName="False"
+                       ShowIncomingMessageAuthorName="False"
                        CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
 </ContentPage>
@@ -1343,8 +1343,10 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
-            this.sfChat.ShowAvatar = false;
-            this.sfChat.ShowAuthorName = false;
+            this.sfChat.ShowOutgoingMessageAvatar = false;
+            this.sfChat.ShowIncomingMessageAvatar = false;
+			this.sfChat.ShowOutgoingMessageAuthorName = false;
+            this.sfChat.ShowIncomingMessageAuthorName = false;
             this.Content = sfChat;
         }
     }

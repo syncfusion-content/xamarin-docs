@@ -611,6 +611,925 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 </table>
 
+
+## SfChat
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="67">
+            SfChatStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfChatTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfChat without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfChatTheme">CustomTheme</x:String> 
+                <Color x:Key="SfChatIncomingMessageTextColor">Blue</Color> 
+                <Color x:Key="SfChatIncomingMessageAuthorTextColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+
+     <tr>
+        <td>
+            IncomingMessageTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+
+	<tr>
+        <td>
+            IncomingMessageAuthorTextColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the author name in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+
+    <tr>
+        <td>
+            IncomingMessageTimestampTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the timestamp in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+    <tr>
+        <td>
+            IncomingMessageBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            IncomingMessageFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            IncomingMessageFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            IncomingMessageFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            IncomingMessageAuthorFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the author name in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            IncomingMessageAuthorFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+             Font attributes of the author name in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            IncomingMessageAuthorFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the author name in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            IncomingMessageTimestampFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the timestamp in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            IncomingMessageTimestampFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the timestamp in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            IncomingMessageTimestampFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the timestamp in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            OutgoingMessageTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            OutgoingMessageAuthorTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the author name in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            OutgoingMessageTimestampTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the timestamp in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            OutgoingMessageBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            OutgoingMessageFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            OutgoingMessageFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            OutgoingMessageFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            OutgoingMessageAuthorFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the author name in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+
+    <tr>
+        <td>
+            OutgoingMessageAuthorFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the author name in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            OutgoingMessageAuthorFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the author name in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+ 
+    <tr>
+        <td>
+            OutgoingMessageTimestampFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the timestamp in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+	<tr>
+        <td>
+            OutgoingMessageTimestampFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the timestamp in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+	
+	<tr>
+        <td>
+            EditorTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the text in the editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+	
+	<tr>
+        <td>
+            EditorBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            EditorFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the text in the editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+	
+	<tr>
+        <td>
+            EditorFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the text in the editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            EditorFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the text in the editor.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+	<tr>
+        <td>
+            SendButtonColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the send button.
+            <br/>
+            <br/>
+        </td>
+    </tr>    
+	
+	<tr>
+        <td>
+            SendButtonDisabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the send button when it is in `Disabled` state.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            TypingIndicatorTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color in the typing indicator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+	<tr>
+        <td>
+            TypingIndicatorBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the typing indicator.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            TypingIndicatorFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the text in the typing indicator.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            TypingIndicatorFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the text in the typing indicator.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+	<tr>
+        <td>
+            TypingIndicatorFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the text in the typing indicator.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            TimeBreakViewTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the text in the time break view.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            TimeBreakViewBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the time break view.
+            <br/>
+            <br/>
+        </td>
+    </tr>    
+	
+	<tr>
+        <td>
+            TimeBreakViewFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Font family of the text in the time break view.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+	
+	<tr>
+        <td>
+            TimeBreakViewFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the text in the time break view.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            TimeBreakViewFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the text in the time break view.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+	
+	<tr>
+        <td>
+            SuggestionListItemTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of an item in the list of suggestions.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+	<tr>
+        <td>
+            SuggestionListItemBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of an item in the list of suggestions.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+	
+	<tr>
+        <td>
+            SuggestionListBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the suggestion list view.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            SuggestionListItemFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of an item in the list of suggestions.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+	
+	<tr>
+        <td>
+            SuggestionListItemFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of an item in the list of suggestions.
+            <br/>
+            <br/>
+        </td>
+    </tr>    
+	
+	<tr>
+        <td>
+            SuggestionListItemFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of an item in the list of suggestions.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+	
+	<tr>
+        <td>
+            SuggestionListItemBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of an item in the list of suggestions.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            DatePickerIconColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of date picker icon.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+	
+	<tr>
+        <td>
+            TimePickerIconColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of time picker icon.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            DatePickerTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the text in date picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            TimePickerTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the text in time picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            DatePickerBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of date picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            TimePickerBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of time picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            DatePickerBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of date picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            TimePickerBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of time picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            EditorPlaceholderTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Place holder text color of the editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            EditorBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            The border color of editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            MessageInputViewBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Message input view background color.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            TimeBreakViewBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the time break view.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            HyperlinkColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the URL in a hyper link message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            HyperlinkDescriptionTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the URL's meta description in a hyper link message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            HyperlinkDescriptionBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the URL description area in a hyper link message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+
+	<tr>
+        <td>
+            HyperlinkMetaTitleTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the URL's meta title in a hyper link message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            CalendarBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the calendar message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+</table>
+
 ## SfDateTimeRangeNavigator
 
 <table>

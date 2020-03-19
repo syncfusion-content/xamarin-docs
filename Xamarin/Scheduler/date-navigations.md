@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Dates, Navigations and Gestures in Syncfusion SfSchedule Xamarin.Forms
-description: Learn the complete navigation and gestures support
+description: This section describes the complete navigation and gestures support in SfSchedule control in Xamarin.Forms
 platform: xamarin
 control: SfSchedule
 documentation: ug
 ---
 
-# Date Navigations
+# Date Navigations in Xamarin Scheduler (SfSchedule)
 
 ## Enabling Navigation 
 By default, Schedule views can be moved backwards and forwards using touch swipe gesture. This navigation gesture can be enabled or disabled by setting [EnableNavigation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~EnableNavigation.html) property of `SfSchedule`. By default, it is enabled.
@@ -20,7 +20,13 @@ By default, Schedule views can be moved backwards and forwards using touch swipe
 //disabling navigation gesture
 schedule.EnableNavigation = false;
 {% endhighlight %}   
-{% endtabs %}  
+{% endtabs %}
+
+>**NOTE**
+**Move to time**:
+*   The scrolled position of timeslots will be maintained in day/week/work week view when swiping the next or previous views and switching between day, week or work week views,
+*   If view switch from month/timeline view to week/work/day week views, move to time will be considered if move time mentioned in `MoveToDate` otherwise, position scrolled to `work start hour` in day/week/work week views.
+
 
 ## Programmatically change to specific dates 
 Visible dates can be moved to specific date using [NavigateTo](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~NavigateTo.html) method and [MoveToDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MoveToDate.html) property available in SfSchedule. It will move to any specific date if the schedule view is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view

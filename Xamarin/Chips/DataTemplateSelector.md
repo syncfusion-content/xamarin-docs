@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DataTemplateSelector of SfChipGroup | SfChipGroup | Syncfusion | Xamarin.Forms
-description: How to use the DataTemplateSelctor in Xamarin.Forms SfChipGroup.
+title: DataTemplateSelector | SfChipGroup | Syncfusion | Xamarin.Forms
+description: This page describes how to use the DataTemplateSelctor using ItemTemplate in Xamarin.Forms SfChipGroup.
 platform: Xamarin.Forms
 control: Chips
 documentation: ug

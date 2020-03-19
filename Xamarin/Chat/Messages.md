@@ -459,7 +459,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Time picker message
 
-[TimePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.TimePickerMessage.html) is used to show a time picker as a message to let users select time. Once time is selected, the selected time is added as a `TextMessage`. The`SfChat.SendMessage` event and `SfChat.SendMessageCommand` will be executed upon selecting a time from the time picker.
+[TimePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.TimePickerMessage.html) is used to show a time picker as a message to let users select time. Once time is selected, the selected time is added as a `TextMessage`. The [SfChat.SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event and [SfChat.SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) will be executed upon selecting a time from the time picker.
 
 {% tabs %}
 {% highlight xaml %}
@@ -611,7 +611,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Calendar message
 
-[CalendarMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CalendarMessage.html) is used to display a calendar as a message to let users select a date. The date selected from the calendar will be added as a `TextMessage`. The `SendMessage` event and `SendMessageCommand` will be executed upon selecting a date from the calendar.
+[CalendarMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CalendarMessage.html) is used to display a calendar as a message to let users select a date. The date selected from the calendar will be added as a `TextMessage`. The [SfChat.SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event and [SfChat.SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) will be executed upon selecting a date from the calendar.
 
 {% tabs %}
 {% highlight xaml %}
@@ -906,7 +906,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Sending message
 
-The `SfChat.CurrentUser` can send messages using the send button in the message input area at the bottom of the chat control. Tapping the send button or pressing <kbd>Enter</kbd> key (in UWP) will create a new text message with the text in the editor and add it to the [SfChat.Messages] collection. The `SendMessage` event and `SendMessageCommand`will be executed upon tapping the send button.
+The [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html) can send messages using the send button in the message input area at the bottom of the chat control. Tapping the send button or pressing <kbd>Enter</kbd> key (in UWP) will create a new text message with the text in the editor and add it to the [SfChat.Messages] collection. The [SfChat.SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event and [SfChat.SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) will be executed upon tapping the send button.
 
 **Cancel the message from sending**
 
@@ -1120,7 +1120,7 @@ You can download the example from [Github](https://github.com/SyncfusionExamples
 
 ## Show the avatar for outgoing message
 
-By default the author name and avatar are not displayed for the outgoing messages(messages sent by the `SfChat.CurrentUser`). This can be customized in the `SendMessage` event handler or `SendMessageCommand's` execution.
+By default the author name and avatar are not displayed for the outgoing messages(messages sent by the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html)). This can be customized in the [SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event handler or [SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) command's execution.
 
 **SendMessage Event handler**
 
@@ -1299,7 +1299,7 @@ namespace GettingStarted
 
 ## Hide avatar and author name for messages
 
-The message's avatar and author name visibility can be hidden using [SfChat.ShowAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowAvatar.html) and [SfChat.ShowAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowAuthorName.html) properties respectively.
+The message's avatar and author name visibility can be hidden using [SfChat.ShowOutgoingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowOutgoingMessageAvatar.html) ,[SfChat.ShowIncomingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowIncomingMessageAvatar.html) ,[SfChat.ShowOutgoingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowOutgoingMessageAuthorName.html) and [SfChat.ShowIncomingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowIncomingMessageAuthorName.html) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1319,7 +1319,7 @@ The message's avatar and author name visibility can be hidden using [SfChat.Show
                        Messages="{Binding Messages}"
                        ShowOutgoingMessageAvatar="False"
                        ShowIncomingMessageAvatar="False"
-					   ShowOutgoingMessageAuthorName="False"
+                       ShowOutgoingMessageAuthorName="False"
                        ShowIncomingMessageAuthorName="False"
                        CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
@@ -1345,7 +1345,7 @@ namespace GettingStarted
             this.sfChat.CurrentUser = viewModel.CurrentUser;
             this.sfChat.ShowOutgoingMessageAvatar = false;
             this.sfChat.ShowIncomingMessageAvatar = false;
-			this.sfChat.ShowOutgoingMessageAuthorName = false;
+            this.sfChat.ShowOutgoingMessageAuthorName = false;
             this.sfChat.ShowIncomingMessageAuthorName = false;
             this.Content = sfChat;
         }

@@ -575,7 +575,11 @@ You can display the current time indicator in DayView by using the [ShowCurrentT
 
 {% tabs %}
 {% highlight XAML %}
-<schedule:SfSchedule x:Name="schedule" ScheduleView = "DayView"   ShowCurrentTimeIndicator=true  CurrentTimeIndicatorColor="Black">
+<schedule:SfSchedule x:Name="schedule"
+                                     ScheduleView = "DayView"
+                                     ShowCurrentTimeIndicator="true"
+                                     CurrentTimeIndicatorColor="Black">
+</schedule:SfSchedule>
 {% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.DayView;

@@ -282,9 +282,9 @@ public class Localize : ILocalize
 {% endhighlight %}
 {% endtabs %}
 
-For Android and iOS, it is mandatory to implement the previous steps. However, to set a specific language to the application irrespective of the selected language in the device, use `CultureInfo.CurrentUICulture` in a specific project of UWP platform.
+### Localize the text in UWP platform
 
-Refer to the following code example to localize the text in UWP platform.
+Use `CultureInfo.CurrentUICulture` to set a specific language to the application in UWP platform.
 
 MainPage.Xaml.cs
 {% tabs %}

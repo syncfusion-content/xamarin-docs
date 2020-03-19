@@ -11,8 +11,8 @@ keywords: button, SfCheckBox, CheckBox
 
 # Visual Customization
 
-## Customizing shape
-The check box shape can be customized using the `CornerRadius` property. This property specifies uniform radius value for every corner of the check box.
+## Customizing a shape
+The check box shape can be customized using the `CornerRadius` property. This property specifies the uniform radius value to the every corner of the check box.
 
 {% tabs %}
 {% highlight xaml %}
@@ -28,8 +28,8 @@ checkBox.CornerRadius = 5.0f;
 
 ![CheckBox CornerRadius](Images/Radius.png)
 
-## Customizing state color
-The default state colors can be customized using the `CheckedColor` and `UncheckedColor` properties. The checked/indeterminate state color is updated to the `CheckedColor` property value when the state is changed to the checked/indeterminate.The unchecked state color is updated to `UncheckedColor` property value when the state is changed to unchecked. 
+## Customizing a state color
+The default state colors can be customized using the `CheckedColor` and `UncheckedColor` properties. The checked or indeterminate state color is updated to the `CheckedColor` property value when the state is changed to the checked or indeterminate.The unchecked state color is updated to `UncheckedColor` property value when the state is changed to unchecked. 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfCheckBox x:Name="check" Text="CheckBox" IsChecked="True" CheckedColor="Green"/>
@@ -55,7 +55,7 @@ indeterminate.CheckedColor = Color.Purple;
 ![CheckedColor and UncheckedColor in Checkbox](Images/StateColor.png)
 
 ## BorderWidth
-The tick box border thickness of the checkbox control can be customized with the `BorderWidth` property.  
+The tick box border thickness of the checkbox control can be customized using the `BorderWidth` property.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -84,7 +84,7 @@ check3.UncheckedColor = Color.Blue;
 
 ![CheckBox BorderWidth](Images/BorderWidth.png)
 
-## Setting caption text appearance 
+## Setting a caption text appearance 
 You can customize the display text appearance of the `SfCheckBox` control using the following properties:
 
 * `TextColor`: Changes the color of the text.
@@ -165,7 +165,7 @@ This demo can be downloaded from this [link](http://www.syncfusion.com/downloads
 
 ## Size Customization
 
-The `ControlSize` property used to customize the `CheckBox` control size.
+The `ControlSize` property is used to customize the `CheckBox` control size.
 
 {% tabs %}
 {% highlight xaml %}

@@ -394,7 +394,8 @@ You can style the elements of an outgoing message by setting values to the in-bu
 </tr><tr>
 <td> sfChatOutgoingMessageFontAttributes </td>
 <td> Font attributes of the outgoing message. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> sfChatOutgoingMessageFontSize </td>
 <td> Font size of the outgoing message. </td>
 </tr><tr>

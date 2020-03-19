@@ -122,5 +122,5 @@ this.Content = chipGroup;
 {% endhighlight %}
 {% endtabs %}
 
-![DataTemplateSelector support for cards in Xamarin.Forms SfChipGroup](images\customization-images/xamarin-forms-datatemplateselector.png)
+![DataTemplateSelector support for SfChipGroup in Xamarin.Forms](images\customization-images/xamarin-forms-datatemplateselector.png)
 

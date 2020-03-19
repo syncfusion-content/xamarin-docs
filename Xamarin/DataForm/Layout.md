@@ -685,7 +685,6 @@ To customize the padding, override the below `DataFormLayoutManager` methods and
 {% tabs %}
 {% highlight c# %}
 dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
-
 public class DataFormLayoutManagerExt : DataFormLayoutManager
 {
     public DataFormLayoutManagerExt(SfDataForm dataForm) : base(dataForm)

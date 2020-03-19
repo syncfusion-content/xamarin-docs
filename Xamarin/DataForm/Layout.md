@@ -704,43 +704,43 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
     }
     protected override int GetLeftPaddingForGroupHeader(DataFormItem dataFormItem)
     {
-        return 50;
+       return 50;
     }
     protected override int GetLeftPaddingForGroupIcon(DataFormItem dataFormItem)
     {
-        return 50;
+       return 50;
     }
     protected override int GetLeftPaddingForLabel(DataFormItem dataFormItem)
     {
-        if (dataFormItem.Name == "FirstName")
-            return 50;
-        return base.GetLeftPaddingForLabel(dataFormItem);
+       if (dataFormItem.Name == "FirstName")
+          return 50;
+       return base.GetLeftPaddingForLabel(dataFormItem);
     }
     protected override int GetLeftPaddingForValidationLabel(DataFormItem dataFormItem)
     {
-        if (dataFormItem.Name == "FirstName")
-            return 50;
-        return base.GetLeftPaddingForValidationLabel(dataFormItem);
+       if (dataFormItem.Name == "FirstName")
+          return 50;
+       return base.GetLeftPaddingForValidationLabel(dataFormItem);
     }
     protected override int GetRightPaddingForGroupHeader(DataFormItem dataFormItem)
     {
-            return 50;
+       return 50;
     }
     protected override int GetRightPaddingForGroupIcon(DataFormItem dataFormItem)
     {
-            return 50;
+       return 50;
     }
     protected override int GetRightPaddingForLabel(DataFormItem dataFormItem)
     {
-            if (dataFormItem.Name == "FirstName")
-                return 50;
-            return base.GetLeftPaddingForLabel(dataFormItem);
+       if (dataFormItem.Name == "FirstName")
+          return 50;
+       return base.GetLeftPaddingForLabel(dataFormItem);
     }
     protected override int GetRightPaddingForValidationLabel(DataFormItem dataFormItem)
     {
-            if (dataFormItem.Name == "FirstName")
-                return 50;
-            return base.GetLeftPaddingForValidationLabel(dataFormItem);
+       if (dataFormItem.Name == "FirstName")
+           return 50;
+       return base.GetLeftPaddingForValidationLabel(dataFormItem);
     }
 }
 {% endhighlight %}
@@ -923,7 +923,7 @@ public string FirstName
 {% endhighlight %}
 {% endtabs %}
 
-###Using event
+### Using event
 
 When the grid layout is used, you can increase the column width of each `DataFormItem` using the [ColumnSpan](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~ColumnSpan.html)  property and it will be handled in the `AutoGeneratingDataFormItem` event.
 

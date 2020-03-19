@@ -412,7 +412,7 @@ N> `DistanceType` property default value is KiloMeter.
 
     <maps:SfMaps  x:Name="Map" >
         <maps:SfMaps.Layers >
-            <maps:ImageryLayer MarkerSelected="Layer_MarkerSelected" GeoCoordinates = "38.909804, -77.043442" Radius="5" MarkerTemplate="{StaticResource Key=markerTemplate}">
+            <maps:ImageryLayer MarkerSelected="Layer_MarkerSelected" GeoCoordinates = "38.909804, -77.043442" Radius="5" DistanceType="KiloMeter" MarkerTemplate="{StaticResource Key=markerTemplate}">
                 <maps:ImageryLayer.Markers>
                     <maps:MapMarker Latitude= "38.909804" Longitude= "-77.043442"/>
                 </maps:ImageryLayer.Markers>
@@ -428,6 +428,7 @@ N> `DistanceType` property default value is KiloMeter.
             ImageryLayer layer = new ImageryLayer();
             layer.GeoCoordinates = new Point(38.909804, -77.043442);
             layer.Radius = 5;
+            layer.DistanceType = DistanceType.KiloMeter;
             MapMarker marker = new MapMarker();
             marker.Latitude = "38.909804";
             marker.Longitude = "-77.043442";

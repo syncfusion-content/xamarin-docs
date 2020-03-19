@@ -59,7 +59,7 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
 
 ## Label font customization
 
-The label font can be customized by using the [`LabelFontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelFontSize.html), [`FontAttribute`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~FontAttributes.html), and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~FontFamily.html) properties.
+The label font can be customized using the [`LabelFontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelFontSize.html), [`FontAttribute`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~FontAttributes.html), and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~FontFamily.html) properties.
 
 {% tabs %}
 
@@ -109,9 +109,9 @@ The label font can be customized by using the [`LabelFontSize`](https://help.syn
 
 ![Xamarin Label Font Customization Image](labels_images/label2.png)
 
-## Setting position for labels
+## Setting a position for labels
 
-The labels can be positioned far away from the ticks by using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelOffset.html) property in pixel.
+The labels can be positioned far away from the ticks using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelOffset.html) property in pixel.
 
 {% tabs %}
 
@@ -155,9 +155,9 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
 
 ### Setting postfix and prefix for labels
 
-You can  postfix/prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPostfix.html) and [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPrefix.html) properties, respectively.
+You can  postfix or prefix values to the scale labels using the [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPostfix.html) and [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPrefix.html) properties, respectively.
 
-### Setting label postfix
+### Setting a label postfix
 
 The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPostfix.html) property allows you to postfix the values to scale labels.
 
@@ -204,7 +204,7 @@ The [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 
 ![Xamarin Label Postfix Image](labels_images/label4.png)
 
-### Setting label prefix
+### Setting a label prefix
 
 The [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~LabelPrefix.html) property allows you to prefix the values to scale labels.
 
@@ -356,3 +356,64 @@ Labels visibility can be customized using the [`ShowLabels`](https://help.syncfu
 {% endtabs %}
 
 ![Xamarin Label Visiblity Image](labels_images/label6.png)
+
+## Customize the scale labels
+ 
+The scale labels are customized using the `LabelFormat` and `Culture` properties of linear scale.
+
+`LabelFormat` property is used to change the format of labels.
+`Culture` property is used to set the default format of currency values, numbers, casing conventions, and string comparisons, etc.. to the scale labels.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+       <gauge:SfLinearGauge>
+            <gauge:SfLinearGauge.Scales>
+                <gauge:LinearScale x:Name="scale" MaximumLabels="4"  ScaleOffset="50" MinimumValue="10" MaximumValue="50" Interval="10" ScaleBarColor="#E0E0E0" 
+                               MinorTicksPerInterval ="1" LabelColor="#000000" LabelFontSize="20" LabelFormat="{}{0:C}" LabelOffset="10">
+                    <gauge:LinearScale.Pointers>
+                        <gauge:BarPointer Value="35" Color="#DC3913" />
+                    </gauge:LinearScale.Pointers>
+                    <gauge:LinearScale.Ranges>
+                        <gauge:LinearRange  StartValue="10" EndValue="30" Color="#3267CC" Offset = "-55" />
+                    </gauge:LinearScale.Ranges>
+                </gauge:LinearScale>
+            </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfLinearGauge linearGauge = new SfLinearGauge();
+            LinearScale linearScale = new LinearScale();
+            linearScale.MaximumLabels = 4;
+            linearScale.ScaleOffset = 50;
+            linearScale.MinimumValue = 10;
+            linearScale.MaximumValue = 50;
+            linearScale.Interval = 10;
+            linearScale.ScaleBarColor = Color.FromHex("#E0E0E0");
+            linearScale.MinorTicksPerInterval = 1;
+            linearScale.LabelColor = Color.FromHex("#000000");
+            linearScale.LabelFontSize = 20;
+            linearScale.LabelFormat = "{0:C}";
+            linearScale.LabelOffset = 10;
+            BarPointer barPointer = new BarPointer();
+            barPointer.Value = 35;
+            barPointer.Color = Color.FromHex("#DC3913");
+            linearScale.Pointers.Add(barPointer);
+            LinearRange linearRange = new LinearRange();
+            linearRange.StartValue = 10;
+            linearRange.EndValue = 30;
+            linearRange.Color = Color.FromHex("#3267CC");
+            linearRange.Offset = -55;
+            linearScale.Ranges.Add(linearRange);
+            linearScale.Culture = new System.Globalization.CultureInfo("fr-FR");
+            linearGauge.Scales.Add(linearScale);
+    
+{% endhighlight %}
+
+{% endtabs %}
+
+![Xamarin Label format Image](labels_images/labelFormat.png)

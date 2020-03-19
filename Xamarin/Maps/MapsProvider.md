@@ -7,7 +7,7 @@ control: SfMaps
 documentation: ug
 ---
 
-#Map providers in SfMaps control
+# Map providers support in SfMaps
 
 The maps control supports map providers such as OpenStreetMap and Bing Maps that can be added to an imagery layer in maps.
 
@@ -21,7 +21,7 @@ The maps control uses `imagery layer` to display the tile images from the OSM se
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps.Layers>
             <maps:ImageryLayer/>
@@ -49,7 +49,7 @@ The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <maps:SfMaps.Layers>
         <maps:ImageryLayer LayerType="Bing" BingMapKey="Your bing map key"/>
@@ -93,7 +93,7 @@ The Aerial view displays the satellite images to highlight the roads and major l
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps.Layers>
             <maps:ImageryLayer LayerType="Bing" 
@@ -118,13 +118,13 @@ The Aerial view displays the satellite images to highlight the roads and major l
 
 ![Xamarin Bing aerial image](Images/aerial.jpg)
 
-## AerialWithLabel
+### AerialWithLabel
 
 The AerialWithLabel view displays the Aerial map with labels for continent, country, ocean, etc. This view can be applied to maps by setting the `BingMapStyle` to "AerialWithLabel".
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps.Layers>
             <maps:ImageryLayer LayerType="Bing" 
@@ -163,7 +163,7 @@ The ImageryLayer provides the support to reset the maps to the default view when
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps>
         <maps:SfMaps.Layers>
@@ -186,11 +186,11 @@ The ImageryLayer provides the support to reset the maps to the default view when
 
 ## Set Geo coordinates points(center position)
 
-The `GeoCoordinates` property allows you view the desired area at the center on loading. By default, the `GeoCoordinates` value is (0,0). So, the latitude value "0" and longitude value "0" are shown at the center.
+The `GeoCoordinates`(conter) property allows you view the desired area at the center on loading. By default, the `GeoCoordinates` value is (0,0). So, first parameter of the latitude value "0" and second parameter of the longitude value "0" are shown at the center.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps ZoomLevel="2">
                 <maps:SfMaps.Layers>
@@ -217,7 +217,7 @@ The `GeoCoordinates` property allows you view the desired area at the center on 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps ZoomLevel="2">
             <maps:SfMaps.Layers>
@@ -248,7 +248,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:ImageryLayer  >
             <maps:ImageryLayer.MarkerSettings>
@@ -310,9 +310,9 @@ The detailed explanation of marker and its customization have been provided in M
 
 ![Xamarin Marker image](Images/Marker.png)
 
-## Custom a map providers
+## Custom map providers
 
-You can show the other map providers maps using the imagery layer. First, initialize the map extension class, override the GetURI method of imagery layer extension class, and then pass the map providers tile image URI link like Google URI with corresponding x, y, and zoom level. Finally, add the imagery layer extension class to layers collection of native map control by overriding the OnElementChanged method of each platform’s (Xamarin.Android, Xamarin.iOS, and UWP) custom map renderer. For more information to add custom map provider, refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
+You can show the other map providers maps such as Google Maps, TomTom using the imagery layer. First, initialize the map extension class, override the GetURI method of imagery layer extension class, and then pass the map providers tile image URI link like Google URI with corresponding x, y, and zoom level. Finally, add the imagery layer extension class to layers collection of native map control by overriding the OnElementChanged method of each platform’s (Xamarin.Android, Xamarin.iOS, and UWP) custom map renderer. For more information to add custom map provider, refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
 
 {% highlight c# %}
 
@@ -383,104 +383,6 @@ The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% endtabs %}
 
-## Clear a cached tile images from application memory
-
-The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~DeleteTilesFromCache.html) method used to clear the cached tile images from  application cache memory.
-
-{% tabs %}
-
-{% highlight xml %}
-
-        <maps:SfMaps>
-            <maps:SfMaps.Layers>            
-                <maps:ImageryLayer x:Name="imageryLayer" />
-            </maps:SfMaps.Layers>
-        </maps:SfMaps>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-       imageryLayer.DeleteTilesFromCache();
-
-{% endhighlight %}
-
-{% endtabs %}
-
-## Events
-
-The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
-
-* [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~Cancel.html) : Used to cancel the zooming.
-
-* [`PreviousLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~PreviousLevel.html) : Returns the previous level after the zooming.
-
-* [`CurrentLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~CurrentLevel.html) : Returns the current level to be zoomed.
-
-{% tabs %}
-
-{% highlight xml %}
-
-        <maps:SfMaps>
-            <maps:SfMaps.Layers>            
-                <maps:ImageryLayer  ZoomLevelChanging="Layer_ZoomLevelChanging" />
-            </maps:SfMaps.Layers>
-        </maps:SfMaps>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-        private void Layer_ZoomLevelChanging(object sender, ZoomLevelChangingEventArgs e)
-        {
-           if(e.PreviousLevel == 10) // Returns the previous zoom level
-           {
-               e.Cancel = true; // Cancels the zooming event
-               var CurrentLevel = e.CurrentLevel; // Returns the current zoomed level
-           }
-        }
-
-{% endhighlight %}
-
-{% endtabs %}
-
-The [`GeoCoordinateChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~GeoCoordinateChanged_EV.html) event is triggered while zooming and panning the maps.
-
-The following arguments can be gotten from the `ImageryLayer_GeoCoordinateChanged` event: 
-
-* [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~Center.html): Returns the center Geo coordinate point of the visual tiles while zooming and panning.
-* [`TopLeft`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~TopLeft.html):  Returns the top-left Geo coordinate point of the visual tiles while zooming and panning.
-* [`TopRight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~TopRight.html): Returns the top-right Geo coordinate point of the visual tiles while zooming and panning.
-* [`BottomLeft`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~BottomLeft.html): Returns the bottom-left Geo coordinate point of the visual tiles while zooming and panning.
-* [`BottomRight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~BottomRight.html): Returns the bottom-right Geo coordinate point of the visual tiles while zooming and panning.
-
-{% tabs %}
-
-{% highlight xml %}
-
-<maps:SfMaps >
-    <maps:SfMaps.Layers >
-        <maps:ImageryLayer GeoCoordinateChanged="ImageryLayer_GeoCoordinateChanged"/>       
-    </maps:SfMaps.Layers>
-</maps:SfMaps>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChangedEventArgs e)
-{
-    var topLeft = e.TopLeft;
-    var topRight = e.TopRight;
-    var bottomLeft = e.BottomLeft;
-    var bottomRight = e.BottomRight;
-    var center = e.Center;
-}
-
-{% endhighlight %}
-
-{% endtabs %}
-
 ## Calculate a zoom level based on map geo-bounds or distance
 
 This feature is used to calculate the initial zoom level automatically in two ways:
@@ -496,7 +398,7 @@ N> `DistanceType` property default value is KiloMeter.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <ContentPage.Resources>
             <ResourceDictionary>
@@ -543,7 +445,7 @@ Calculate the initial zoom level automatically based on the LatLngBounds(Northea
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
    <ContentPage.Resources>
         <ResourceDictionary>
@@ -615,7 +517,7 @@ You can get imagery layer pixel bounds by using `MapBounds` property while zoomi
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
       <maps:SfMaps >
         <maps:SfMaps.Layers>
@@ -645,6 +547,104 @@ You can get imagery layer pixel bounds by using `MapBounds` property while zoomi
             var pixelBounds = layer.MapBounds;
         }
     }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Clear a cached tile images from application memory
+
+The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~DeleteTilesFromCache.html) method used to clear the cached tile images from  application cache memory.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <maps:SfMaps>
+            <maps:SfMaps.Layers>            
+                <maps:ImageryLayer x:Name="imageryLayer" />
+            </maps:SfMaps.Layers>
+        </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+       imageryLayer.DeleteTilesFromCache();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Events
+
+The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
+
+* [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~Cancel.html) : Used to cancel the zooming.
+
+* [`PreviousLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~PreviousLevel.html) : Returns the previous level after the zooming.
+
+* [`CurrentLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~CurrentLevel.html) : Returns the current level to be zoomed.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <maps:SfMaps>
+            <maps:SfMaps.Layers>            
+                <maps:ImageryLayer  ZoomLevelChanging="Layer_ZoomLevelChanging" />
+            </maps:SfMaps.Layers>
+        </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void Layer_ZoomLevelChanging(object sender, ZoomLevelChangingEventArgs e)
+        {
+           if(e.PreviousLevel == 10) // Returns the previous zoom level
+           {
+               e.Cancel = true; // Cancels the zooming event
+               var CurrentLevel = e.CurrentLevel; // Returns the current zoomed level
+           }
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The [`GeoCoordinateChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~GeoCoordinateChanged_EV.html) event is triggered while zooming and panning the maps.
+
+The following arguments can be gotten from the `ImageryLayer_GeoCoordinateChanged` event: 
+
+* [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~Center.html): Returns the center Geo coordinate point of the visual tiles while zooming and panning.
+* [`TopLeft`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~TopLeft.html):  Returns the top-left Geo coordinate point of the visual tiles while zooming and panning.
+* [`TopRight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~TopRight.html): Returns the top-right Geo coordinate point of the visual tiles while zooming and panning.
+* [`BottomLeft`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~BottomLeft.html): Returns the bottom-left Geo coordinate point of the visual tiles while zooming and panning.
+* [`BottomRight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~BottomRight.html): Returns the bottom-right Geo coordinate point of the visual tiles while zooming and panning.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<maps:SfMaps >
+    <maps:SfMaps.Layers >
+        <maps:ImageryLayer GeoCoordinateChanged="ImageryLayer_GeoCoordinateChanged"/>       
+    </maps:SfMaps.Layers>
+</maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChangedEventArgs e)
+{
+    var topLeft = e.TopLeft;
+    var topRight = e.TopRight;
+    var bottomLeft = e.BottomLeft;
+    var bottomRight = e.BottomRight;
+    var center = e.Center;
+}
 
 {% endhighlight %}
 

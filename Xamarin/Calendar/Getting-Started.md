@@ -48,7 +48,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfCalendar.XForms.UWP.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfCalendar.XForms.UWP.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 

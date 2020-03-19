@@ -194,7 +194,7 @@ public class GroupConverter : IValueConverter
 {% endhighlight %}
 
 ### Sorting the grouped column records
-In custom grouping, you can sort all the inner records of each group by setting `GroupColumnDescription.SortGroupRecords` property as `true` to sort the records based on the `GroupColumnDescription.ColumnName` property.
+In custom grouping, you can sort all the inner records of each group by setting [GroupColumnDescription.SortGroupRecords](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupColumnDescription~SortGroupRecords.html) property as `true` to sort the records based on the `GroupColumnDescription.ColumnName` property.
 
 {% tabs %}
 {% highlight xaml %}

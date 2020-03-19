@@ -16,7 +16,7 @@ Markers are set to the maps control using the following ways:
 * Adding marker objects
 * Defining custom markers
 
-## Adding marker objects
+## Adding a marker objects
 
 Any number of markers can be added to the shape file layers using the [`Markers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLayer~Markers.html) property. Each marker object contains the following properties:
 
@@ -84,7 +84,7 @@ The size and color of marker icons can be customized using the [`IconSize`](http
 
 ### Icon types
 
-The shape of a marker icon can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~MarkerIcon.html#) property. The maps control supports the following types of marker icons:
+The shape of a marker icons can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~MarkerIcon.html#) property. The maps control supports the following types of marker icons:
 
 * Circle
 * Diamond
@@ -156,9 +156,9 @@ The shape of a marker icon can be customized using the [`MarkerIcon`](https://he
 
 ![Marker Icon Image](Images/Marker_icon_type.png)
 
-### Setting contrast color
+### Setting a contrast color
 
-Based on the background color of the shapes, contrast color will be applied to marker icon.
+Based on the background color of the shapes, contrast color will be applied to marker icons.
 
 {% tabs %}
 
@@ -299,7 +299,7 @@ Based on the background color of the shapes, contrast color will be applied to m
 
 ![Marker icon color change based on background color support in Xamarin.Forms Maps](Images/MarkerIconContrastColor.jpg) 
 
-### Setting image marker icon
+### Setting a image marker icon
 
 You can pin an image as marker icon by setting the icon type as `Image`. Set [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~ImageSource.html) to get the image from local path.
 
@@ -455,9 +455,9 @@ SfMaps map = new SfMaps();
 
 ![Marker customization](Images/Markers_img4.jpeg)
 
-## Custom marker
+## Custom a marker
 
-The maps control provides support for defining custom markers using the [`MarkerTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLayer~MarkerTemplate.html) property.
+The maps control provides the support for defining the custom markers using the [`MarkerTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLayer~MarkerTemplate.html) property.
 
 {% tabs %}
 
@@ -612,7 +612,7 @@ ImageName = ImageSource.FromResource("MapsSample.pin.png");
 
 You can align the maps marker horizontally and vertically using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~HorizontalAlignmentProperty.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~VerticalAlignmentProperty.html) properties. 
 
-### Setting horizontal alignment
+### Setting a horizontal alignment
 
 The HorizontalAlignment property is used to position the marker icon in x-axis. The marker icon can be positioned using the following ways in x-axis:
 
@@ -670,7 +670,7 @@ this.Content = map;
 
 ![HorizontalAlignment](Images/Horizontal_Alignment.png)
 
-### Setting vertical alignment
+### Setting a vertical alignment
 
 The VerticalAlignment property is used to position the marker icon in y-axis. The marker icon can be positioned using the following ways in y-axis:
 
@@ -792,7 +792,7 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 
 ## Reset the old custom view marker
 
-If you add any view for marker by using `CustomView` property from `MarkerSelected` event, then the corresponding view will be applied to the selected marker. Custom view will be added continuously for all the selected marker, but don’t have option to reset the old one. Now you can achieve this by using the `ResetOldSelectedView` property. If the Boolean set as true, then it will be removed the old view of marker and load the initially rendered marker.
+If you add any view for marker using `CustomView` property from `MarkerSelected` event, then the corresponding view will be applied to the selected marker. Custom view will be added continuously for all the selected marker, but do not have option to reset the old one. Now, you can achieve this using the `ResetOldSelectedView` property. If the Boolean set as true, then it will be removed the old view of marker and load the initially rendered marker.
 
 {% tabs %}
 

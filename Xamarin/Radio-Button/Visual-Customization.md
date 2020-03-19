@@ -10,9 +10,9 @@ keywords: button, SfRadioButton, RadioButton
 ---
 
 
-# Visual Customization
+# Visual customization
 
-## Customizing state color
+## Customizing a state color
 The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked state color is updated to the `CheckedColor` property value when the state is changed to the checked. The unchecked state color is updated to the `UncheckedColor` property value when the state is changed to unchecked.
 
 {% tabs %}
@@ -39,7 +39,7 @@ radioGroup.Children.Add(uncheck);
 ![CheckedColor and UncheckedColor in RadioButton](Images/StateColor.png)
 
 ## BorderWidth
-The border thickness of the circle in the RadioButton control can be customized with the `BorderWidth` property.  
+The border thickness of the circle in the RadioButton control can be customized using the `BorderWidth` property.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -66,7 +66,7 @@ radioGroup.Children.Add(uncheck);
 
 N> BorderWidth support has not been provided for Android Platform.
 
-## Setting caption text appearance 
+## Setting a caption text appearance 
 
 You can customize the display text appearance of the `SfRadioButton` control using the following properties:
 
@@ -107,9 +107,9 @@ The [`LineBreakMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_VisualCustomization1644131704).
 
-## Size Customization
+## Size customization
 
-The `ControlSize` property used to customize the `RadioButton` control size. 
+The `ControlSize` property is used to customize the `RadioButton` control size. 
 
 {% tabs %}
 {% highlight xaml %}

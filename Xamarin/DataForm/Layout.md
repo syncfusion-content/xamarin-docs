@@ -692,12 +692,10 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
     {
 
     }
-
     protected override int GetLeftPaddingForEditor(DataFormItem dataFormItem)
     {
        return 20;
     }
-    
     protected override int GetRightPaddingForEditor(DataFormItem dataFormItem)
     {
        return 50;

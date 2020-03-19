@@ -812,25 +812,30 @@ You can style the elements of the editor view by setting values to the in-built 
 <td> SfChatEditorTextColor </td>
 <td> Color of the text in the editor. </td>
 </tr>
+<tr>
 <td> SfChatEditorPlaceholderTextColor </td>
 <td> Color of the placeholder text in the editor. </td>
 </tr>
 <tr>
 <td> SfChatEditorBorderColor </td>
 <td> Color of the border in the editor. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatEditorBackgroundColor </td>
 <td> Background color of the editor. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatEditorFontFamily </td>
 <td> Font family of the text in the editor. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatEditorFontAttributes </td>
 <td> Font attributes of the text in the editor. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatEditorFontSize </td>
 <td> Font size of the text in the editor. </td>
-</tr><tr>
+</tr>
 </table>
 
 
@@ -899,16 +904,20 @@ You can style the elements of the typing indicator view by setting values to the
 <tr>
 <td> SfChatTypingIndicatorTextColor </td>
 <td> Text color in the typing indicator. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatTypingIndicatorBackgroundColor </td>
 <td> Background color of the typing indicator. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatTypingIndicatorFontFamily </td>
 <td> Font family of the text in the typing indicator. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatTypingIndicatorFontAttributes </td>
 <td> Font attributes of the text in the typing indicator. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatTypingIndicatorFontSize </td>
 <td> Font size of the text in the typing indicator. </td>
 </tr>
@@ -975,16 +984,20 @@ You can style the elements of the time break view by setting values to the in-bu
 <tr>
 <td> SyncPrimaryLightColor </td>
 <td> Text color of the text in the time break view. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatTimeBreakViewBackgroundColor </td>
 <td> Background color of the time break view. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatTimeBreakViewFontFamily </td>
 <td> Font family of the text in the time break view. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatTimeBreakViewFontAttributes </td>
 <td> Font attributes of the text in the time break view. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatTimeBreakViewFontSize  </td>
 <td> Font size of the text in the time break view. </td>
 </tr>
@@ -1058,22 +1071,28 @@ You can style the elements of the suggestion view by setting values to the in-bu
 <tr>
 <td> SyncPrimaryLightColor </td>
 <td> Text color of an item in the list of suggestions. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatSuggestionListItemBackgroundColor </td>
 <td> Background color of an item in the list of suggestions. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatSuggestionListBackgroundColor </td>
 <td> Background color of the suggestion list view. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatSuggestionListItemFontFamily </td>
 <td> Font family of an item in the list of suggestions. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatSuggestionListItemFontAttributes </td>
 <td> Font attributes of an item in the list of suggestions. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatSuggestionListItemFontSize </td>
 <td> Font size of an item in the list of suggestions. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SuggestionListItemBorderColor </td>
 <td> Border color of an item in the list of suggestions. </td>
 </tr>
@@ -1142,7 +1161,8 @@ You can style the send message button based on its state by setting values to th
 <tr>
 <td> SfChatSendButtonColor </td>
 <td> Color of the send button. </td>
-</tr><tr>
+</tr>
+<tr>
 <td> SfChatSendButtonDisabledColor </td>
 <td> Color of the send button when it is in 'Disabled' state. </td>
 </tr>

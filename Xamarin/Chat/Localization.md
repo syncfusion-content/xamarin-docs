@@ -332,4 +332,4 @@ public partial class App : Application
 
 ![Chat with localized content](SfChat_images/ChatLocalization.png)
 
-You can download the sample [here]().
+You can download the sample from [GitHub](https://github.com/SyncfusionExamples/Localization-for-xamarin-forms-chat).

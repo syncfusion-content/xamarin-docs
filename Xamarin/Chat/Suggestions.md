@@ -662,7 +662,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Cancel the suggestions from closing
 
-The suggestions list will be closed by default after the user has selected an option from the list. To prevent it from closing set the [SuggestionItemSelectedEventArgs.HideAfterSelection](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SuggestionItemSelectedEventArgs~HideAfterSelection.html) as false in the `SfChat.SuggestionItemSelected` event handler or in the `SfChat.SuggestionItemSelectedCommand` command's execution.
+The suggestions list will be closed by default after the user has selected an option from the list. To prevent it from closing set the [SuggestionItemSelectedEventArgs.HideAfterSelection](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SuggestionItemSelectedEventArgs~HideAfterSelection.html) as false in the [SfChat.SuggestionItemSelected](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SuggestionItemSelected_EV.html) event handler or in the [SfChat.SuggestionItemSelectedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SuggestionItemSelectedCommand.html) command's execution.
 
 **SuggestionItemSelected event**
 

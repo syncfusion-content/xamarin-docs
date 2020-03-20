@@ -601,7 +601,11 @@ You can display the current time indicator in `WorkWeekView` by using the [ShowC
 
 {% tabs %}
 {% highlight XAML %}
-<schedule:SfSchedule x:Name="schedule" ScheduleView = "WorkWeekView"  ShowCurrentTimeIndicator=true CurrentTimeIndicatorColor="Black" >
+<schedule:SfSchedule x:Name="schedule"
+                                     ScheduleView = "WorkWeekView"
+                                     ShowCurrentTimeIndicator="true"
+                                     CurrentTimeIndicatorColor="Black">
+</schedule:SfSchedule>
 {% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.WorkWeekView;

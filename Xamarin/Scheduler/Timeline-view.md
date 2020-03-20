@@ -598,7 +598,11 @@ You can display the current time indicator in `TimelineView` by using the [ShowC
 
 {% tabs %}
 {% highlight XAML %}
-<schedule:SfSchedule x:Name="schedule" ScheduleView = "TimelineView"  ShowCurrentTimeIndicator=true  CurrentTimeIndicatorColor="Black">
+<schedule:SfSchedule x:Name="schedule"
+                                     ScheduleView = "TimelineView"
+                                     ShowCurrentTimeIndicator="true"
+                                     CurrentTimeIndicatorColor="Black">
+</schedule:SfSchedule>
 {% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.TimelineView;

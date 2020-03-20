@@ -300,7 +300,7 @@ public class CustomSelectionController : GridSelectionController
 
 ### Move Current Cell
 
-The `CurrentCell` can be moved to a particular `RowColumnIndex` by using the `SfDataGrid.MoveCurrentCellTo()` method. This method is not applicable when the `SfDataGrid.SelectionMode` is `None` or `NavigationMode` is `Row`.
+The `CurrentCell` can be moved to a particular `RowColumnIndex` by using the [SfDataGrid.MoveCurrentCellTo()](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~MoveCurrentCellTo.html) method. This method is not applicable when the `SfDataGrid.SelectionMode` is `None` or `NavigationMode` is `Row`.
 
 {% tabs %}
 {% highlight c# %}

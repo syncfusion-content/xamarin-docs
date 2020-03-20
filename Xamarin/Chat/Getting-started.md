@@ -240,7 +240,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         public GettingStartedViewModel()
         {
             this.messages = new ObservableCollection<object>();
-            this.currentAuthor = new Author() { Name = "Nancy", Avatar = "Nancy.png" };
+            this.currentUser = new Author() { Name = "Nancy", Avatar = "Nancy.png" };
             this.GenerateMessages();
         }
 
@@ -267,12 +267,12 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             get
             {
-                return this.currentAuthor;
+                return this.currentUser;
             }
             set
             {
-                this.currentAuthor = value;
-                RaisePropertyChanged("CurrentAuthor");
+                this.currentUser = value;
+                RaisePropertyChanged("CurrentUser");
             }
         }
 
@@ -297,7 +297,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             this.messages.Add(new TextMessage()
             {
-                Author = currentAuthor,
+                Author = currentUser,
                 Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
             });
 
@@ -321,7 +321,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
             this.messages.Add(new TextMessage()
             {
-                Author = currentAuthor,
+                Author = currentUser,
                 Text = "A kind of Emergency Broadcast App.",
             });
         }

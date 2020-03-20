@@ -586,7 +586,11 @@ You can display the current time indicator in `WeekView` by using the [ShowCurre
 
 {% tabs %}
 {% highlight XAML %}
-<schedule:SfSchedule x:Name="schedule" ScheduleView = "WeekView"      ShowCurrentTimeIndicator=true  CurrentTimeIndicatorColor="Black">
+<schedule:SfSchedule x:Name="schedule"
+                                     ScheduleView = "WeekView"
+                                     ShowCurrentTimeIndicator="true"
+                                     CurrentTimeIndicatorColor="Black">
+</schedule:SfSchedule>
 {% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.WeekView;

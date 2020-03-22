@@ -45,7 +45,7 @@ N>The event will also be raised when an encrypted PDF is loaded without providin
 
 ## Enable or disable the password protected view
 
-The SfPdfviewer has a built-in view for entering the password of encrypted PDF document before display. 
+The PDF viewer has a built-in view for entering the password of encrypted PDF document before display. 
 
 ** Password UI View **
 
@@ -57,7 +57,7 @@ The users can enable or disable the password UI view based on their requirement.
   
   
 //Disable the display of password UI view
-pdfViewer.IsPasswordViewEnabled = false;
+pdfViewerControl.IsPasswordViewEnabled = false;
 
 {% endhighlight %}
 
@@ -67,7 +67,7 @@ The event `PasswordViewCancelButtonClicked` will be raised when the user cancels
 
 {% highlight c# %}
 
-pdfViewer.PasswordViewCancelButtonClicked += PdfViewer_PasswordViewCancelButtonClicked;
+pdfViewerControl.PasswordViewCancelButtonClicked += PdfViewer_PasswordViewCancelButtonClicked;
 
 {% endhighlight %}
 

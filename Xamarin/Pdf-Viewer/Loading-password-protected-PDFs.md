@@ -45,7 +45,7 @@ N>The event will also be raised when an encrypted PDF is loaded without providin
 
 ## Enable or disable the password protected view
 
-The SfPdfviewer has a built-in view for entering the password of encrypted PDF document before display. 
+The PDF viewer has a built-in view for entering the password of encrypted PDF document before display. 
 
 ** Password UI View **
 

@@ -49,7 +49,7 @@ The PDF viewer has a built-in view for entering the password of encrypted PDF do
 
 ** Password UI View **
 
-![Password View] (pdfviewer_images/PasswordView.png)
+![Password View](pdfviewer_images/PasswordView.png)
 
 The users can enable or disable the password UI view based on their requirement. The password UI view can be disabled by setting the `IsPasswordViewEnabled` API to false. The default value of this API is true. The code snippet for disabling the view is as follows, 
 

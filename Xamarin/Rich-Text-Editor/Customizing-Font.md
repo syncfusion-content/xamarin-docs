@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizing Font | SfRichTextEditor | Xamarin | Syncfusion
-description: Rich Text Editor in Xamarin.Forms provides support to use custom font in the Rich Text Editor.
+description: Rich Text Editor in Xamarin.Forms provides support to use custom TTF fonts in the Rich Text Editor content.
 platform: xamarin
 control: SfRichTextEditor
 documentation: UG

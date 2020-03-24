@@ -9,11 +9,11 @@ documentation: UG
 
 # Image Insertion in Xamarin Rich Text Editor(SfRichTextEditor)
 
-SfRichTextEditor provides support to insert JPEG and PNG images from a photo gallery, embedded resource, or stream into the Rich Text Editor content. Image can be inserted in the `SfRichTextEditor` using [`ImageInsertCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor~ImageInsertCommand.html) property or [`ImageInserted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor~ImageInserted_EV.html) event.
+The SfRichTextEditor provides support to insert JPEG and PNG images from a photo gallery, embedded resource, or stream into the Rich Text Editor content. The image can be inserted in the `SfRichTextEditor` using the [`ImageInsertCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor~ImageInsertCommand.html) property or the [`ImageInserted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor~ImageInserted_EV.html) event.
 
 ## ImageInsertCommand command
 
-The following code example illustrates how to insert a image from a photo gallery using `ImageInsertCommand` property into the Rich Text Editor content.
+The following code example shows how to insert an image from a photo gallery using the `ImageInsertCommand` property into the Rich Text Editor content.
 
 {% tabs %}
 {% highlight xaml %} 
@@ -43,7 +43,7 @@ public partial class MainPage : ContentPage
 public class ViewModel : INotifyPropertyChanged
 {
     /// <summary>
-    /// Insert image command property
+    /// Insert the image command property
     /// </summary>
     public ICommand ImageInsertCommand { get; set; }
 
@@ -52,7 +52,7 @@ public class ViewModel : INotifyPropertyChanged
         ImageInsertCommand = new Command<object>(Load);
     }
     /// <summary>
-    /// Creates a event args for Image Insert
+    /// Creates an event args for Image Insert
     /// </summary>
     void Load(object obj)
     {
@@ -60,7 +60,7 @@ public class ViewModel : INotifyPropertyChanged
         this.GetImage(imageInsertedEventArgs);
     }
     /// <summary>
-    /// Gets image stream from picker using dependency service.
+    /// Gets image stream from picker using the dependency service.
     /// </summary>
     /// <param name="imageInsertedEventArgs">Event args to be passed for dependency service</param>
     async void GetImage(ImageInsertedEventArgs imageInsertedEventArgs)
@@ -71,12 +71,12 @@ public class ViewModel : INotifyPropertyChanged
         imageInsertedEventArgs.ImageSourceCollection.Add(imageSource);
     }
     /// <summary>
-    /// Property changed event of NotifyPropertyChanged interface
+    /// Property changed event of the NotifyPropertyChanged interface
     /// </summary>
     public event PropertyChangedEventHandler PropertyChanged;
 
     /// <summary>
-    ///  Property changed raise method of NotifyPropertyChanged interface
+    ///  Property changed raise method of the NotifyPropertyChanged interface
     /// </summary>
     /// <param name="propertyname">Property which has been changed</param>
     public void RaisePropertyChange([CallerMemberName] string propertyname = null)
@@ -90,7 +90,7 @@ public class ViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-To open a gallery, platform specific photo picker must be used. To achieve this, DependencyService for photo picker must be defined in all Xamarin.Forms platforms.
+To open a gallery, you must use the platform specific photo picker. To achieve this, the DependencyService for the photo picker must be defined in all Xamarin.Forms platforms.
 
 ### Xamarin.Forms
 {% tabs %} 
@@ -180,7 +180,7 @@ namespace Sample.iOS
             var viewController = window.RootViewController;
             viewController.PresentModalViewController(imagePicker, true);
 
-            // Return Task object
+            // Return to Task object
             taskCompletionSource = new TaskCompletionSource<Stream>();
             return taskCompletionSource.Task;
         }
@@ -204,7 +204,7 @@ namespace Sample.iOS
 
                 UnregisterEventHandlers();
 
-                // Set the Stream as the completion of the Task
+                // Set the Stream to the completion of the Task
                 taskCompletionSource.SetResult(stream);
             }
             else
@@ -288,7 +288,7 @@ You can download the sample [here](https://www.syncfusion.com/downloads/support/
 
 ## ImageInserted Event
 
-The following code example illustrates how to insert a image using `ImageInserted` event.
+The following code example shows how to insert an image using the `ImageInserted` event.
 
 {% tabs %} 
 

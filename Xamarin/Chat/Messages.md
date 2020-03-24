@@ -20,10 +20,6 @@ documentation: ug
 <td>{{'[Message.DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~DateTime.html)'| markdownify }}</td>
 <td>To display message created or received time.</td>
 </tr>
-<tr>
-<td>{{'[Message.TimestampFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~TimestampFormat.html)'| markdownify }}</td>
-<td>To format the Message.DateTime.</td>
-</tr>
 </table>
 
 ## Setting current user for conversation

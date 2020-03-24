@@ -6,7 +6,7 @@ platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
-# FAQ
+# FAQ in Xamarin.Forms Popup (SfPopupLayout)
 
 ## Load the SfPopupLayout in GridTappedEvent of the SfDataGrid
 
@@ -945,3 +945,43 @@ By default, the overlay background will not be shown around the Popup if all the
   popUpLayout.ShowOverlayAlways = true;
 {% endhighlight %}
 {% endtabs %}
+
+## How to disable the shadow around the Xamarin.Forms popup view?
+
+By default, a shadow will be shown around the popup view. To disable this shadow around the popup, set the [SfPopupLayout.PopupView.PopupStyle.HasShadow](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~HasShadow.html) to false.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout" ShowOverlayAlways="False">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView>
+            <sfPopup:PopupView.PopupStyle>
+                <sfPopup:PopupStyle HasShadow="False"
+            </sfPopup:PopupView.PopupStyle>
+        </sfPopup:PopupView>
+    </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//MainPage.cs
+
+public MainPage()
+{
+    ....
+    InitializeComponent();
+    popupLayout.PopupView.PopupStyle.HasShadow = false;
+    popUpLayout.ShowOverlayAlways = false;
+    ....
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Popup with no shadow](PopupLayout_images/HasShadow.jpg)
+

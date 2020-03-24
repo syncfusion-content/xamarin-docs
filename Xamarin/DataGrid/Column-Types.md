@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Column Types 
+# Column Types in Xamarin.Forms DataGrid (SfDataGrid) 
 
 The SfDataGrid contains different types of columns. The functionalities of the column can be implied by its name. Based on the requirements any column can be used. 
 
@@ -810,7 +810,7 @@ The `SfDataGrid` allows you to load any custom view in edit mode using the [Edit
                                    Converter={StaticResource imageConverter}}" />
                             <Entry Grid.Column="1"
                                    Text="{Binding StockChange}">
-                            </Label>
+                            </Entry>
                         </Grid>
                     </DataTemplate>
                 </syncfusion:GridTemplateColumn.EditTemplate>

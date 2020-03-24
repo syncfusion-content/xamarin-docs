@@ -10,9 +10,9 @@ keywords: button, SfRadioButton, RadioButton
 ---
 
 
-# Visual Customization
+# Visual customization
 
-## Customizing state color
+## Customizing a state color
 The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked state color is updated to the `CheckedColor` property value when the state is changed to the checked. The unchecked state color is updated to the `UncheckedColor` property value when the state is changed to unchecked.
 
 {% tabs %}
@@ -39,7 +39,7 @@ radioGroup.Children.Add(uncheck);
 ![CheckedColor and UncheckedColor in RadioButton](Images/StateColor.png)
 
 ## BorderWidth
-The border thickness of the circle in the RadioButton control can be customized with the `BorderWidth` property.  
+The border thickness of the circle in the RadioButton control can be customized using the `BorderWidth` property.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -66,7 +66,7 @@ radioGroup.Children.Add(uncheck);
 
 N> BorderWidth support has not been provided for Android Platform.
 
-## Setting caption text appearance 
+## Setting a caption text appearance 
 
 You can customize the display text appearance of the `SfRadioButton` control using the following properties:
 
@@ -96,7 +96,7 @@ radioButton.FontSize = 20;
 ![RadioButton TextAppereance](Images/CaptionAppereance.png)
 
 ## LineBreakMode
-The `LineBreakMode` allows you to wrap or truncate the text. The default value of this property is `NoWrap`. The following other options are available in `LineBreakMode`:
+The [`LineBreakMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~LineBreakMode.html) allows you to wrap or truncate the text. The default value of this property is `NoWrap`. The following other options are available in `LineBreakMode`:
 
  * `NoWrap` - Avoids the text wrap. 
  * `WordWrap` - Wraps the text by words.
@@ -106,3 +106,24 @@ The `LineBreakMode` allows you to wrap or truncate the text. The default value o
  * `TailTruncation` - Truncates the text at the end.
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_VisualCustomization1644131704).
+
+## Size customization
+
+The `ControlSize` property is used to customize the `RadioButton` control size. 
+
+{% tabs %}
+{% highlight xaml %}
+<StackLayout>
+    <syncfusion:SfRadioButton Text="RadioButton" ControlSize="60"/>
+</StackLayout>
+{% endhighlight %}
+{% highlight c# %}
+StackLayout stackLayout = new StackLayout();
+SfRadioButton radioButton = new SfRadioButton();
+radioButton.Text = "Radio Button";
+radioButton.ControlSize = 60;
+stackLayout.Children.Add(radioButton);
+{% endhighlight %}
+{% endtabs %}
+
+N>`ControlSize` is not applicable for Android Platform.

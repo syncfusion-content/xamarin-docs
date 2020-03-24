@@ -1,13 +1,13 @@
 ---     
 layout: post     
 title: Headers | SfSchedule | Xamarin | Syncfusion    
-description: Learn how to customize header in SfSchedule control 
+description: Describes how to customize appearance of header view in Schedule (SfSchedule) control in Xamarin.Forms. 
 platform: xamarin    
 control: SfSchedule     
 documentation: ug   
 ---  
 
-# Header
+# Headers in Xamarin Scheduler (SfSchedule)
 
 You can customize the header of the Schedule using [HeaderStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~HeaderStyle.html) and [HeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~HeaderHeight.html) property in schedule.
 
@@ -147,3 +147,10 @@ private void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}   
+
+## See also
+
+[How to create custom header and view header in Xamarin.Forms Schedule?](https://www.syncfusion.com/kb/10083/how-to-create-custom-header-and-view-header-in-xamarin-forms-schedule)
+
+
+

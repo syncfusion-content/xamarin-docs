@@ -310,4 +310,5 @@ private void rte_ImageInserted(object sender, ImageInsertedEventArgs e)
     imgSrc.ImageStream = image;            
     rte.InsertImage(imgSrc);
 }
+{% endhighlight %}
 {% endtabs %}

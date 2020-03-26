@@ -631,7 +631,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="67">
+        <td rowspan="60">
             SfChatStyles  
             <br/>
             <br/>
@@ -669,8 +669,34 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
 	</tr>
+	
+	<tr>
+        <td>
+            SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the outgoing message, color of the date picker icon, border color of date picker, color of time picker icon and the border color of time picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+	
+	<tr>
+        <td>
+            SyncPrimaryLightColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the text in the time break view, date picker, time picker and the item in the list of suggestions.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
 
-     <tr>
+    <tr>
         <td>
             SfChatIncomingMessageTextColor
             <br/>
@@ -873,19 +899,6 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Text color of the timestamp in an outgoing message.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-    
-    <tr>
-        <td>
-            SyncPrimaryColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Background color of the outgoing message.
             <br/>
             <br/>
         </td>
@@ -1166,19 +1179,6 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            SyncPrimaryLightColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Text color of the text in the time break view.
-            <br/>
-            <br/>
-        </td>
-    </tr>     
-	
-	<tr>
-        <td>
             SfChatTimeBreakViewBackgroundColor
             <br/>
             <br/>
@@ -1229,19 +1229,6 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
     </tr>   
 	
-	<tr>
-        <td>
-            SyncPrimaryLightColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Text color of an item in the list of suggestions.
-            <br/>
-            <br/>
-        </td>
-    </tr> 
-    
 	<tr>
         <td>
             SfChatSuggestionListItemBackgroundColor	
@@ -1306,59 +1293,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>     
-	
-	<tr>
-        <td>	
-            SyncPrimaryColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of date picker icon.
-            <br/>
-            <br/>
-        </td>
-    </tr>   
-	
-	<tr>
-        <td>
-            SyncPrimaryColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of time picker icon.
-            <br/>
-            <br/>
-        </td>
-    </tr>     
-	
-	<tr>
-        <td>
-            SyncPrimaryLightColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of the text in date picker.
-            <br/>
-            <br/>
-        </td>
-    </tr>	
-	
-	<tr>
-        <td>
-            SyncPrimaryLightColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Color of the text in time picker.
-            <br/>
-            <br/>
-        </td>
-    </tr>	
-	
+		
 	<tr>
         <td>
             SfChatDatePickerBackgroundColor
@@ -1380,32 +1315,6 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Background color of time picker.
-            <br/>
-            <br/>
-        </td>
-    </tr>	
-	
-	<tr>
-        <td>
-            SyncPrimaryColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Border color of date picker.
-            <br/>
-            <br/>
-        </td>
-    </tr>	
-	
-	<tr>
-        <td>
-            SyncPrimaryColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Border color of time picker.
             <br/>
             <br/>
         </td>

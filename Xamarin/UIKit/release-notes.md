@@ -467,9 +467,9 @@ Login with Social Icon Page</br>
 Catalog
 </td>
 <td>
-1. Event List Page</br>
-2. Article Card Page</br> 
-3. Navigation Travel Page</br> 
+1. Event List Page<br/>
+2. Article Card Page<br/> 
+3. Navigation Travel Page<br/> 
 </td>
 </tr>
 <tr>
@@ -480,10 +480,10 @@ Catalog
 Detail
 </td>
 <td>
-1. Event Detail Page</br>
-2. Data Table Page</br> 
-3. My Address Page</br> 
-4. Room Booking Page</br>
+1. Event Detail Page<br/>
+2. Data Table Page<br/> 
+3. My Address Page<br/> 
+4. Room Booking Page<br/>
 </td>
 </tr>
 <tr>
@@ -495,8 +495,8 @@ Navigation
 </td>
 <td>
 1. Movies Page</br>
-2. File Explore List Page</br> 
-3. File Explore Grid Page</br> 
+2. File Explorer List Page<br/> 
+3. File Explorer Grid Page<br/> 
 </td>
 </tr>
 <tr>
@@ -540,7 +540,7 @@ Health Profile Page</br>
 Notification
 </td>
 <td>
-ECommerce Notification Page</br> 
+E-commerce Notification Page</br> 
 </td>
 </tr>
 <tr>
@@ -551,10 +551,10 @@ ECommerce Notification Page</br>
 Transaction
 </td>
 <td>
-1. Daily Calories Report Page</br> 
-2. Daily Timeline Page</br>
-3. Company History Page</br>
-4. My Wallet Page</br>
+1. Daily Calories Report Page<br/> 
+2. Daily Timeline Page<br/>
+3. Company History Page<br/>
+4. My Wallet Page<br/>
 </td>
 </tr>
 </table>

@@ -978,7 +978,7 @@ This page list the dependencies ( converters, rendereres and NuGet packages) of 
 			17<br/>
 		</td>
 		<td>
-		File Explore List Page<br/>
+		File Explorer List Page<br/>
 		</td>
 		<td>
 		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>
@@ -992,7 +992,7 @@ This page list the dependencies ( converters, rendereres and NuGet packages) of 
 			18<br/>
 		</td>
 		<td>
-		File Explore Grid Page<br/>
+		File Explorer Grid Page<br/>
 		</td>
 		<td>
 		Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.SfListView<br/>
@@ -1275,7 +1275,7 @@ This page list the dependencies ( converters, rendereres and NuGet packages) of 
 		Syncfusion.Xamarin.Buttons<br/>  Syncfusion.Xamarin.Core<br/>  Syncfusion.Xamarin.SfListView<br/>  Syncfusion.Xamarin.Cards<br/>
 		</td>
 		<td>
-		<b>PCL:</b><br/>  Views/Transaction/MyCardsPage.xaml<br/>  Views/Transaction/MyCardsPage.xaml.cs<br/>  Views/Transaction/Styles.xaml<br/>  Views/Transaction/Styles.xaml.cs<br/>  ViewModels/Transaction/MyCardsViewModel.cs<br/>  Models/Transaction/Card.cs<br/>  ViewModels/BaseViewModel.cs<br/>  Controls/TitleView.cs<br/>  Converters/DynamicResourceToColorConverter.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  <br/>  <b>Android:</b><br/>  Renderer\BorderlessEntryRender.cs<br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   <br/>  <b>iOS:</b><br/>  Renderer\BorderlessEntryRender.cs<br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>   <br/>  <b>UWP:</b><br/>  Renderer\BorderlessEntryRender.cs<br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/> 
+		<b>PCL:</b><br/>  Views/Transaction/MyCardsPage.xaml<br/>  Views/Transaction/MyCardsPage.xaml.cs<br/>  Views/Transaction/Styles.xaml<br/>  Views/Transaction/Styles.xaml.cs<br/>  ViewModels/Transaction/MyCardsViewModel.cs<br/>  Models/Transaction/Card.cs<br/>  ViewModels/BaseViewModel.cs<br/>  Controls/TitleView.cs<br/>  Converters/DynamicResourceToColorConverter.cs<br/>  Themes\LightTheme.xaml<br/>  Themes\LightTheme.xaml.cs<br/>  <br/>  <b>Android:</b><br/>  Renderer\BorderlessEntryRender.cs<br/>  Assets\UIFontIcons.ttf <br/>  Assets\Montserrat-Bold.ttf <br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>  Resources\drawable\Card.png<br/>   Resources\drawable\Visa.png<br/>   <br/>  <b>iOS:</b><br/>  Renderer\BorderlessEntryRender.cs<br/>  Resources\UIFontIcons.ttf<br/>  Resources\Montserrat-Bold.ttf<br/>  Resources\Montserrat-Medium.ttf<br/>  Resources\Montserrat-Regular.ttf<br/>  Resources\Montserrat-SemiBold.ttf<br/>  Resources\Card.png<br/>   Resources\Visa.png<br/>   <br/>  <b>UWP:</b><br/>  Renderer\BorderlessEntryRender.cs<br/>  Assets\UIFontIcons.ttf<br/>  Assets\Montserrat-Bold.ttf<br/>  Assets\Montserrat-Medium.ttf<br/>  Assets\Montserrat-Regular.ttf<br/>  Assets\Montserrat-SemiBold.ttf<br/>   scale-100\Card.png<br/>   scale-100\Visa.png<br/>
 		</td>
 	</tr>
 </table>
@@ -1787,7 +1787,7 @@ This page list the dependencies ( converters, rendereres and NuGet packages) of 
 			3<br/>
 		</td>
 		<td>
-		E-Commerce Notification Page<br/>
+		E-commerce Notification Page<br/>
 		</td>
 		<td>
 		Syncfusion.Xamarin.Buttons,<br/>  Syncfusion.Xamarin.Core,<br/>  Syncfusion.Xamarin.SfListView<br/>

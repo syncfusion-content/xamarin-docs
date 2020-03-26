@@ -598,7 +598,11 @@ You can display the current time indicator in `TimelineView` by using the [ShowC
 
 {% tabs %}
 {% highlight XAML %}
-<schedule:SfSchedule x:Name="schedule" ScheduleView = "TimelineView"  ShowCurrentTimeIndicator=true  CurrentTimeIndicatorColor="Black">
+<schedule:SfSchedule x:Name="schedule"
+                                     ScheduleView = "TimelineView"
+                                     ShowCurrentTimeIndicator="true"
+                                     CurrentTimeIndicatorColor="Black">
+</schedule:SfSchedule>
 {% endhighlight %}
 {% highlight C# %}
 schedule.ScheduleView = ScheduleView.TimelineView;
@@ -607,8 +611,9 @@ schedule.CurrentTimeIndicatorColor = Color.Black;
 {% endhighlight %}
 {% endtabs %}
 
-## See Also
+## See also
 
-* [How to add multiple resource to Schedule (SfSchedule) in Xamarin.Forms] (https://www.syncfusion.com/kb/11210/how-to-add-multiple-resource-to-schedule-sfschedule-in-xamarin-forms)
-* [How to customize time label of schedule in Xamarin.Forms?] (https://www.syncfusion.com/kb/10879/how-to-customize-time-label-of-schedule-in-xamarin-forms)
+[How to add multiple resource to Schedule (SfSchedule) in Xamarin.Forms](https://www.syncfusion.com/kb/11210/how-to-add-multiple-resource-to-schedule-sfschedule-in-xamarin-forms)
+
+[How to customize time label of schedule in Xamarin.Forms?](https://www.syncfusion.com/kb/10879/how-to-customize-time-label-of-schedule-in-xamarin-forms)
 

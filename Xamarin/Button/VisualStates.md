@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual States for Syncfusion Essential Xamarin.Forms SfButton
-description: How to customize a visual states for Xamarin.Forms SfButton.
+description: How to customize the appearance of Xamarin.Forms Button(SfButton) according to its available visual states.
 platform: xamarin.forms
 control: sfbutton
 documentation: ug
@@ -15,6 +15,7 @@ The button visual can be customized through `VisualStates`. The [`SfButton`](htt
 * Pressed
 * Checked
 * Unchecked
+* Disabled
 
 N>In addition, `MouseOver` VisualState is available only in the UWP platform.
 

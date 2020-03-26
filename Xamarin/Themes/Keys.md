@@ -672,7 +672,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
      <tr>
         <td>
-            IncomingMessageTextColor
+            SfChatIncomingMessageTextColor
             <br/>
             <br/>
         </td>
@@ -685,7 +685,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 	<tr>
         <td>
-            IncomingMessageAuthorTextColor 
+            SfChatIncomingMessageAuthorTextColor 
             <br/>
             <br/>
         </td>
@@ -698,7 +698,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageTimestampTextColor
+            SfChatIncomingMessageTimestampTextColor
             <br/>
             <br/>
         </td>
@@ -711,7 +711,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            IncomingMessageBackgroundColor
+            SfChatIncomingMessageBackgroundColor
             <br/>
             <br/>
         </td>
@@ -724,7 +724,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageFontFamily
+            SfChatIncomingMessageFontFamily
             <br/>
             <br/>
         </td>
@@ -737,7 +737,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            IncomingMessageFontAttributes
+            SfChatIncomingMessageFontAttributes
             <br/>
             <br/>
         </td>
@@ -750,7 +750,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageFontSize
+            SfChatIncomingMessageFontSize
             <br/>
             <br/>
         </td>
@@ -763,7 +763,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            IncomingMessageAuthorFontFamily
+            SfChatIncomingMessageAuthorFontFamily
             <br/>
             <br/>
         </td>
@@ -776,7 +776,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageAuthorFontAttributes
+            SfChatIncomingMessageAuthorFontAttributes
             <br/>
             <br/>
         </td>
@@ -789,7 +789,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageAuthorFontSize
+            SfChatIncomingMessageAuthorFontSize
             <br/>
             <br/>
         </td>
@@ -802,7 +802,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageTimestampFontFamily
+            SfChatIncomingMessageTimestampFontFamily
             <br/>
             <br/>
         </td>
@@ -815,7 +815,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            IncomingMessageTimestampFontAttributes
+            SfChatIncomingMessageTimestampFontAttributes
             <br/>
             <br/>
         </td>
@@ -828,7 +828,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            IncomingMessageTimestampFontSize
+            SfChatIncomingMessageTimestampFontSize
             <br/>
             <br/>
         </td>
@@ -841,7 +841,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            OutgoingMessageTextColor
+            SyncPrimaryForegroundColor
             <br/>
             <br/>
         </td>
@@ -854,7 +854,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            OutgoingMessageAuthorTextColor
+            SfChatOutgoingMessageAuthorTextColor
             <br/>
             <br/>
         </td>
@@ -867,7 +867,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            OutgoingMessageTimestampTextColor
+            SfChatOutgoingMessageTimestampTextColor
             <br/>
             <br/>
         </td>
@@ -880,7 +880,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            OutgoingMessageBackgroundColor
+            SyncPrimaryColor
             <br/>
             <br/>
         </td>
@@ -893,7 +893,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            OutgoingMessageFontFamily
+            SfChatOutgoingMessageFontFamily
             <br/>
             <br/>
         </td>
@@ -906,7 +906,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            OutgoingMessageFontAttributes
+            SfChatOutgoingMessageFontAttributes
             <br/>
             <br/>
         </td>
@@ -919,7 +919,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            OutgoingMessageFontSize
+            SfChatOutgoingMessageFontSize
             <br/>
             <br/>
         </td>
@@ -932,7 +932,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            OutgoingMessageAuthorFontFamily
+            SfChatOutgoingMessageAuthorFontFamily
             <br/>
             <br/>
         </td>
@@ -945,7 +945,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
     <tr>
         <td>
-            OutgoingMessageAuthorFontAttributes
+            SfChatOutgoingMessageAuthorFontAttributes
             <br/>
             <br/>
         </td>
@@ -958,7 +958,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
     <tr>
         <td>
-            OutgoingMessageAuthorFontSize
+            SfChatOutgoingMessageAuthorFontSize
             <br/>
             <br/>
         </td>
@@ -971,7 +971,7 @@ This page lists the keys for each control and the element to which it is mapped 
  
     <tr>
         <td>
-            OutgoingMessageTimestampFontAttributes
+            SfChatOutgoingMessageTimestampFontSize
             <br/>
             <br/>
         </td>
@@ -984,12 +984,25 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            OutgoingMessageTimestampFontSize
+            SfChatOutgoingMessageTimestampFontFamily
             <br/>
             <br/>
         </td>
         <td>
-            Font size of the timestamp in an outgoing message.
+            Font family of the timestamp in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+	<tr>
+        <td>
+            SfChatOutgoingMessageTimestampFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the timestamp in an outgoing message.
             <br/>
             <br/>
         </td>
@@ -997,7 +1010,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            EditorTextColor
+            SfChatEditorTextColor
             <br/>
             <br/>
         </td>
@@ -1010,7 +1023,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            EditorBackgroundColor
+            SfChatEditorBackgroundColor
             <br/>
             <br/>
         </td>
@@ -1023,7 +1036,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            EditorFontFamily
+            SfChatEditorFontFamily
             <br/>
             <br/>
         </td>
@@ -1036,7 +1049,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            EditorFontAttributes
+            SfChatEditorFontAttributes
             <br/>
             <br/>
         </td>
@@ -1049,7 +1062,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            EditorFontSize
+            SfChatEditorFontSize
             <br/>
             <br/>
         </td>
@@ -1062,7 +1075,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
 	<tr>
         <td>
-            SendButtonColor
+            SfChatSendButtonColor
             <br/>
             <br/>
         </td>
@@ -1075,7 +1088,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            SendButtonDisabledColor
+            SfChatSendButtonDisabledColor
             <br/>
             <br/>
         </td>
@@ -1088,7 +1101,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TypingIndicatorTextColor
+            SfChatTypingIndicatorTextColor
             <br/>
             <br/>
         </td>
@@ -1101,7 +1114,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TypingIndicatorBackgroundColor
+            SfChatTypingIndicatorBackgroundColor
             <br/>
             <br/>
         </td>
@@ -1114,7 +1127,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TypingIndicatorFontFamily
+            SfChatTypingIndicatorFontFamily
             <br/>
             <br/>
         </td>
@@ -1127,7 +1140,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TypingIndicatorFontAttributes
+            SfChatTypingIndicatorFontAttributes
             <br/>
             <br/>
         </td>
@@ -1140,7 +1153,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
 	<tr>
         <td>
-            TypingIndicatorFontSize
+            SfChatTypingIndicatorFontSize
             <br/>
             <br/>
         </td>
@@ -1153,7 +1166,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TimeBreakViewTextColor
+            SyncPrimaryLightColor
             <br/>
             <br/>
         </td>
@@ -1166,7 +1179,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TimeBreakViewBackgroundColor
+            SfChatTimeBreakViewBackgroundColor
             <br/>
             <br/>
         </td>
@@ -1179,7 +1192,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TimeBreakViewFontFamily
+            SfChatTimeBreakViewFontFamily
             <br/>
             <br/>
         </td>
@@ -1192,7 +1205,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TimeBreakViewFontAttributes
+            SfChatTimeBreakViewFontAttributes
             <br/>
             <br/>
         </td>
@@ -1205,7 +1218,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TimeBreakViewFontSize
+            SfChatTimeBreakViewFontSize
             <br/>
             <br/>
         </td>
@@ -1218,7 +1231,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            SuggestionListItemTextColor
+            SyncPrimaryLightColor
             <br/>
             <br/>
         </td>
@@ -1231,7 +1244,7 @@ This page lists the keys for each control and the element to which it is mapped 
     
 	<tr>
         <td>
-            SuggestionListItemBackgroundColor
+            SuggestionListItemBackgroundColor	
             <br/>
             <br/>
         </td>
@@ -1240,24 +1253,11 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-    </tr>  
+    </tr>      
 	
 	<tr>
         <td>
-            SuggestionListBackgroundColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Background color of the suggestion list view.
-            <br/>
-            <br/>
-        </td>
-    </tr>     
-	
-	<tr>
-        <td>
-            SuggestionListItemFontFamily
+            SfChatSuggestionListItemFontFamily
             <br/>
             <br/>
         </td>
@@ -1270,7 +1270,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            SuggestionListItemFontAttributes
+            SfChatSuggestionListItemFontAttributes
             <br/>
             <br/>
         </td>
@@ -1283,7 +1283,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            SuggestionListItemFontSize
+            SfChatSuggestionListItemFontSize
             <br/>
             <br/>
         </td>
@@ -1296,7 +1296,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            SuggestionListItemBorderColor
+            SfChatSuggestionListItemBorderColor
             <br/>
             <br/>
         </td>
@@ -1308,8 +1308,8 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>     
 	
 	<tr>
-        <td>
-            DatePickerIconColor
+        <td>	
+            SyncPrimaryColor
             <br/>
             <br/>
         </td>
@@ -1322,7 +1322,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TimePickerIconColor
+            SyncPrimaryColor
             <br/>
             <br/>
         </td>
@@ -1335,7 +1335,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            DatePickerTextColor
+            SyncPrimaryLightColor
             <br/>
             <br/>
         </td>
@@ -1348,7 +1348,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TimePickerTextColor
+            SyncPrimaryLightColor
             <br/>
             <br/>
         </td>
@@ -1361,7 +1361,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            DatePickerBackgroundColor
+            SfChatDatePickerBackgroundColor
             <br/>
             <br/>
         </td>
@@ -1374,7 +1374,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TimePickerBackgroundColor
+            SfChatTimePickerBackgroundColor
             <br/>
             <br/>
         </td>
@@ -1387,7 +1387,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            DatePickerBorderColor
+            SyncPrimaryColor
             <br/>
             <br/>
         </td>
@@ -1400,7 +1400,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TimePickerBorderColor
+            SyncPrimaryColor
             <br/>
             <br/>
         </td>
@@ -1413,7 +1413,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            EditorPlaceholderTextColor
+            SfChatEditorPlaceholderTextColor
             <br/>
             <br/>
         </td>
@@ -1426,7 +1426,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            EditorBorderColor
+            SfChatEditorBorderColor
             <br/>
             <br/>
         </td>
@@ -1439,7 +1439,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            MessageInputViewBackgroundColor
+            SfChatMessageInputViewBackgroundColor
             <br/>
             <br/>
         </td>
@@ -1452,7 +1452,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            TimeBreakViewBorderColor
+            SfChatTimeBreakViewBorderColor
             <br/>
             <br/>
         </td>
@@ -1465,7 +1465,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            HyperlinkColor
+            SfChatHyperlinkColor
             <br/>
             <br/>
         </td>
@@ -1478,7 +1478,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            HyperlinkDescriptionTextColor
+            SfChatHyperlinkDescriptionTextColor
             <br/>
             <br/>
         </td>
@@ -1491,7 +1491,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            HyperlinkDescriptionBackgroundColor
+            SfChatHyperlinkDescriptionBackgroundColor
             <br/>
             <br/>
         </td>
@@ -1504,7 +1504,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 	<tr>
         <td>
-            HyperlinkMetaTitleTextColor
+            SfChatHyperlinkMetaTitleTextColor
             <br/>
             <br/>
         </td>
@@ -1517,7 +1517,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            CalendarBackgroundColor
+            SfChatCalendarBackgroundColor
             <br/>
             <br/>
         </td>

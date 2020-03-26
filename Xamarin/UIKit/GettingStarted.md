@@ -7,7 +7,7 @@ control: Xamarin UI Kit
 documentation: ug
 ---
 
-# Getting Started
+# Essential UI Kit Getting started
 
 The UI Kit screens can be added in your application by the following two ways:
 

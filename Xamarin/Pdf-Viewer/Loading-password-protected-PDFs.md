@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Loading encrypted PDFs using SfPdfViewer in Xamarin Forms | Syncfusion
-description: PDF Viewer allows the user to load and view the password protected PDF documents
+description: Describes how PDF Viewer allows the user to load and view the password protected PDF documents in Xamarin Forms
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
@@ -41,5 +41,33 @@ private void PdfViewerControl_PasswordErrorOccurred(object sender, PasswordError
 {% endhighlight %}
 {% endtabs %}
 
-N>The event will also be raised when an encrypted PDF is loaded without providing a password using the `LoadDocument(Stream pdfStream)` overload.        
+N>The event will also be raised when an encrypted PDF is loaded without providing a password using the `LoadDocument(Stream pdfStream)` overload.  
+
+## Enable or disable the password protected view
+
+The PDF viewer has a built-in view for entering the password of encrypted PDF document before display. 
+
+** Password UI View **
+
+![Password View](pdfviewer_images/PasswordView.png)
+
+The users can enable or disable the password UI view based on their requirement. The password UI view can be disabled by setting the `IsPasswordViewEnabled` API to false. The default value of this API is true. The code snippet for disabling the view is as follows, 
+
+{% highlight c# %}
+  
+  
+//Disable the display of password UI view
+pdfViewer.IsPasswordViewEnabled = false;
+
+{% endhighlight %}
+
+### Detecting the cancel operation of password view
+
+The event `PasswordViewCancelButtonClicked` will be raised when the user cancels the password entering process.
+
+{% highlight c# %}
+
+pdfViewer.PasswordViewCancelButtonClicked += PdfViewer_PasswordViewCancelButtonClicked;
+
+{% endhighlight %}      
 

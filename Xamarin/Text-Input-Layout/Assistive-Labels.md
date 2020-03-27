@@ -144,3 +144,7 @@ inputLayout.InputView = new Entry();
 {% endtabs %}
 
 ![Reserve space for assistive label img](Assistive-Labels-images/ReserveSpaceAPI.png)
+
+#### See Also
+
+[Remove bottom space](https://www.syncfusion.com/kb/11040/how-to-remove-the-space-at-the-bottom-of-textinputlayout)

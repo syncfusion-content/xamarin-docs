@@ -7,7 +7,7 @@ control: SfTextInputLayout
 documentation: ug
 ---
 
-# Container type
+# Container Type in Xamarin Text Input Layout (SfTextInputLayout)
 
 Containers improve the discoverability of input view by creating a contrast between the input view and assistive elements.
 
@@ -136,6 +136,10 @@ inputLayout.InputView = new Entry();
 {% endtabs %}
 
 ![Padding customization around the input view](Container-Type-images/paddingCustomization.png)
+
+#### See Also
+
+[InputViewPadding](https://www.syncfusion.com/kb/11039/how-to-reduce-the-space-inside-sftextinputlayout)
 
 ## None
 

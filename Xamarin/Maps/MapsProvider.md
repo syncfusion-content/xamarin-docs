@@ -1,19 +1,19 @@
 ---
 layout: post
 title: Maps provider of Syncfusion Maps control for Xamarin.Forms 
-description: Describes the maps provider support in SfMaps control
+description: Describes the adding OSM map, bing map and other imagery layer support in Xamarin Forms SfMaps control
 platform: xamarin
 control: SfMaps 
 documentation: ug
 ---
 
-# Map Providers
+# Map providers support in SfMaps
 
 The maps control supports map providers such as OpenStreetMap and Bing Maps that can be added to an imagery layer in maps.
 
 ## OpenStreetMap
 
-The OpenStreetMap (OSM) is a world map; it was built by a community of mappers. It is free to use under an open license. This allows you view geographical data in a collaborative way from anywhere on the earth. The OSM provides small tile images based on your requests and combines them into a single image to display the map area in the maps control. 
+The OpenStreetMap (OSM) is a world map; it was built by a community of mappers. It is free to use under an open license. This allows you to view geographical data in a collaborative way from anywhere on the earth. The OSM provides small tile images based on your requests and combines them into a single image to display the map area in the maps control. 
 
 ### Adding OSM in maps
 
@@ -21,7 +21,7 @@ The maps control uses `imagery layer` to display the tile images from the OSM se
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps.Layers>
             <maps:ImageryLayer/>
@@ -45,11 +45,11 @@ N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin
 
 ## Bing Maps
 
-The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides map tile images based on your requests and combines them into a single image to display the map area. To use `Bing maps`, set the `LayerType` property of ImageryLayer to “Bing”. Then, set the Bing Maps key, which is obtained from [Bing Maps Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key).
+The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides the map tile images based on your requests and combines them into a single image to display the map area. To use `Bing maps`, set the `LayerType` property of ImageryLayer to “Bing”. Then, set the Bing Maps key, which is obtained from [Bing Maps Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key).
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <maps:SfMaps.Layers>
         <maps:ImageryLayer LayerType="Bing" BingMapKey="Your bing map key"/>
@@ -71,11 +71,11 @@ The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides
 
 ![Xamarin Bing road image](Images/Road.png)
 
-N> The `LayerType` property of `ImageryLayer` provides support to `OSM` and `Bing Maps`. The default value of the `LayerType` property is OSM.
+N> The `LayerType` property of `ImageryLayer` provides the support to `OSM` and `Bing Maps`. The default value of the `LayerType` property is OSM.
 
 ## Set different bing map style
 
-The ImageryLayer provides support to the following types of Bing Maps:
+The ImageryLayer provides the support to the following types of Bing Maps:
 
 * `Road`
 * `Aerial`
@@ -93,7 +93,7 @@ The Aerial view displays the satellite images to highlight the roads and major l
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps.Layers>
             <maps:ImageryLayer LayerType="Bing" 
@@ -118,13 +118,13 @@ The Aerial view displays the satellite images to highlight the roads and major l
 
 ![Xamarin Bing aerial image](Images/aerial.jpg)
 
-## AerialWithLabel
+### AerialWithLabel
 
 The AerialWithLabel view displays the Aerial map with labels for continent, country, ocean, etc. This view can be applied to maps by setting the `BingMapStyle` to "AerialWithLabel".
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps.Layers>
             <maps:ImageryLayer LayerType="Bing" 
@@ -151,19 +151,19 @@ The AerialWithLabel view displays the Aerial map with labels for continent, coun
 
 ## Zooming and panning
 
-The maps control provides interactive zooming and panning supports to OSM and Bing Maps.
+The maps control provides the interactive zooming and panning supports to OSM and Bing Maps.
 
-Zooming helps you get a closer look of an area on maps for in-depth analysis. Panning helps you move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
+Zooming helps you to get a closer look of an area on maps for in-depth analysis. Panning helps you to move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
 
 ![Xamarin Zooming image](Images/zooming.jpg)
 
 ## Reset zooming
 
-The ImageryLayer provides support to reset the maps to the default view when you double tap the imagery layer by setting the `ResetOnDoubleTap` property to true. The default value of this property is true. This behavior can be restricted by setting the `ResetOnDoubleTap` property to false.
+The ImageryLayer provides the support to reset the maps to the default view when you double tap the imagery layer by setting the `ResetOnDoubleTap` property to true. The default value of this property is true. This behavior can be restricted by setting the `ResetOnDoubleTap` property to false.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps>
         <maps:SfMaps.Layers>
@@ -186,11 +186,11 @@ The ImageryLayer provides support to reset the maps to the default view when you
 
 ## Set Geo coordinates points(center position)
 
-The `GeoCoordinates` property allows you view the desired area at the center on loading. By default, the `GeoCoordinates` value is (0,0). So, the latitude value "0" and longitude value "0" are shown at the center.
+The `GeoCoordinates`(center) property allows you view the desired area at the center on loading. By default, the `GeoCoordinates` value is (0,0). So, first parameter of the latitude value "0" and second parameter of the longitude value "0" are shown at the center.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps ZoomLevel="2">
                 <maps:SfMaps.Layers>
@@ -217,7 +217,7 @@ The `GeoCoordinates` property allows you view the desired area at the center on 
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps ZoomLevel="2">
             <maps:SfMaps.Layers>
@@ -248,7 +248,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:ImageryLayer  >
             <maps:ImageryLayer.MarkerSettings>
@@ -312,7 +312,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 ## Custom map providers
 
-You can show the other map providers maps using imagery layer. First, initialize the map extension class, override the GetUri method of imagery layer extension class, and then pass the Map providers tile image Uri link like Google uri with corresponding x, y, and zoom level. Finally, add the imagery layer extension class to layers collection of native map control by overriding the OnElementChanged method of each platform’s (Xamarin.Android, Xamarin.iOS, and UWP) custom map renderer. For more information to add custom map provider, refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
+You can show the other map providers maps such as Google Maps, TomTom using the imagery layer. First, initialize the map extension class, override the GetURI method of imagery layer extension class, and then pass the map providers tile image URI link like Google URI with corresponding x, y, and zoom level. Finally, add the imagery layer extension class to layers collection of native map control by overriding the OnElementChanged method of each platform’s (Xamarin.Android, Xamarin.iOS, and UWP) custom map renderer. For more information to add custom map provider, refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
 
 {% highlight c# %}
 
@@ -367,7 +367,7 @@ public class ImageryLayerExt : NativeMap.ImageryLayer
 
 You can download the demo sample in this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Google_Sample992378333).
 
-## Cache tile images in application memory
+## Cache a tile images in application memory
 
 The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~CanCacheTiles.html) property used to decide whether the tile images should be cached in application memory or not.
 
@@ -383,13 +383,183 @@ The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 {% endtabs %}
 
-## Clear cached tile images from application memory
+## Calculate a zoom level based on map geo-bounds or distance
+
+This feature is used to calculate the initial zoom level automatically in two ways:
+
+* Distance in radius(Meter/KiloMeter/Mile)
+* Geo-bounds(Northeast, Southwest)
+
+### Distance in radius 
+
+Calculate the initial zoom level automatically based on the `Radius` and `DistanceType` properties of imagery layer class.
+
+N> `DistanceType` property default value is KiloMeter.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+        <ContentPage.Resources>
+            <ResourceDictionary>
+                <DataTemplate x:Key="markerTemplate">
+                    <StackLayout IsClippedToBounds="false" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="35">
+                    <Image Source="pin.png" Scale="1" Aspect="AspectFit " HorizontalOptions="StartAndExpand" VerticalOptions="Center"  HeightRequest="35" WidthRequest="25" />
+                    </StackLayout>
+                </DataTemplate>
+            </ResourceDictionary>
+        </ContentPage.Resources>
+
+    <maps:SfMaps  x:Name="Map" >
+        <maps:SfMaps.Layers >
+            <maps:ImageryLayer MarkerSelected="Layer_MarkerSelected" GeoCoordinates = "38.909804, -77.043442" Radius="5" DistanceType="KiloMeter" MarkerTemplate="{StaticResource Key=markerTemplate}">
+                <maps:ImageryLayer.Markers>
+                    <maps:MapMarker Latitude= "38.909804" Longitude= "-77.043442"/>
+                </maps:ImageryLayer.Markers>
+            </maps:ImageryLayer>
+        </maps:SfMaps.Layers>
+    </maps:SfMaps>
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMaps maps = new SfMaps();
+            ImageryLayer layer = new ImageryLayer();
+            layer.GeoCoordinates = new Point(38.909804, -77.043442);
+            layer.Radius = 5;
+            layer.DistanceType = DistanceType.KiloMeter;
+            MapMarker marker = new MapMarker();
+            marker.Latitude = "38.909804";
+            marker.Longitude = "-77.043442";
+            layer.MarkerTemplate = this.Resources["markerTemplate"] as DataTemplate;
+            layer.Markers.Add(marker);
+            maps.Layers.Add(layer);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### Geo-bounds
+
+Calculate the initial zoom level automatically based on the LatLngBounds(Northeast, Southwest) of imagery layer class.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+   <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="markerTemplate">
+                <StackLayout IsClippedToBounds="false" HorizontalOptions="StartAndExpand" VerticalOptions="Center" HeightRequest="35">
+                    <Image Source="pin.png" Scale="1" Aspect="AspectFit " HorizontalOptions="StartAndExpand" VerticalOptions="Center"  HeightRequest="35" WidthRequest="25" />
+                </StackLayout>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+    <maps:SfMaps>
+        <maps:SfMaps.Layers>
+            <maps:ImageryLayer MarkerTemplate="{StaticResource Key=markerTemplate}">
+                <maps:ImageryLayer.Markers>
+                    <maps:MapMarker Latitude= "38.909804" Longitude= "-77.043442"/>
+                </maps:ImageryLayer.Markers>
+                <maps:ImageryLayer.LatLngBounds>
+                    <maps:LatLngBounds>
+                        <maps:LatLngBounds.Northeast>
+                            <maps:Position>
+                                <x:Arguments>
+                                    <x:Double>38.909804</x:Double>
+                                    <x:Double>-77.043442</x:Double>
+                                </x:Arguments>
+                            </maps:Position>
+                        </maps:LatLngBounds.Northeast>
+                        <maps:LatLngBounds.Southwest>
+                            <maps:Position>
+                                <x:Arguments>
+                                    <x:Double>38.909804</x:Double>
+                                    <x:Double>-77.043442</x:Double>
+                                </x:Arguments>
+                            </maps:Position>
+                        </maps:LatLngBounds.Southwest>
+                    </maps:LatLngBounds>
+                </maps:ImageryLayer.LatLngBounds>
+            </maps:ImageryLayer>
+        </maps:SfMaps.Layers>
+    </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMaps maps = new SfMaps();
+            ImageryLayer layer = new ImageryLayer();
+            LatLngBounds bounds = new LatLngBounds();
+            bounds.Northeast = new Position(38.909804, -77.043442);
+            bounds.Southwest = new Position(38.909804, -77.043442);
+            layer.LatLngBounds = bounds;
+            MapMarker marker = new MapMarker();
+            marker.Latitude = "38.909804";
+            marker.Longitude = "-77.043442";
+            layer.MarkerTemplate = this.Resources["markerTemplate"] as DataTemplate;
+            maps.Layers.Add(layer);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> When setting LatLngBounds and DistanceRadius at the same time, the priority is `DistanceRadius` and calculate zoom level based radius value.
+
+![Xamarin SfMaps zoom level changed image](Images/ZoomLevel.png)
+
+## Get the map tile layer bounds
+
+You can get imagery layer pixel bounds by using `MapBounds` property while zooming, panning, and changing Geo-Coordinate value in imagery layer.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+      <maps:SfMaps >
+        <maps:SfMaps.Layers>
+            <maps:ImageryLayer x:Name="layer"  GeoCoordinates="30.9709225, -100.2187212" GeoCoordinateChanged="layer_GeoCoordinateChanged">
+            </maps:ImageryLayer>
+        </maps:SfMaps.Layers>
+    </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    public partial class MapBound : ContentPage
+    {
+        ImageryLayer layer = new ImageryLayer();
+        public MapBound()
+        {
+            InitializeComponent();
+            SfMaps maps = new SfMaps();
+            layer.GeoCoordinates = new Point(30.9709225, -100.2187212);
+            layer.GeoCoordinateChanged += Layer_GeoCoordinateChanged;
+            maps.Layers.Add(layer);
+            this.Content = maps;
+        }
+        private void Layer_GeoCoordinateChanged(object sender, GeoCoordinateChangedEventArgs e)
+        {
+            var pixelBounds = layer.MapBounds;
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Clear a cached tile images from application memory
 
 The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~DeleteTilesFromCache.html) method used to clear the cached tile images from  application cache memory.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps>
             <maps:SfMaps.Layers>            
@@ -419,7 +589,7 @@ The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Sync
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
         <maps:SfMaps>
             <maps:SfMaps.Layers>            
@@ -456,7 +626,7 @@ The following arguments can be gotten from the `ImageryLayer_GeoCoordinateChange
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <maps:SfMaps >
     <maps:SfMaps.Layers >

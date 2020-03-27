@@ -48,7 +48,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 <tr>
 <td>UWP</td>
-<td>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfCalendar.XForms.UWP.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfCalendar.XForms.UWP.dll<br/>Syncfusion.SfCalendar.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -234,9 +234,12 @@ this.Content = calendar;
 You can download the entire source code of this demo for Xamarin.Forms from
 here [CalendarGettingStarted](https://github.com/SyncfusionExamples/xamarin-calendar-getting-started)
 
-## See Also
+## See also
 
-* [Feature comparison between Calendar and Schedule control] (https://www.syncfusion.com/kb/6976/feature-comparison-between-calendar-and-schedule-control)
-* [How to customize the Header view of SfCalendar control?] (https://www.syncfusion.com/kb/8609/how-to-customize-the-header-view-of-sfcalendar-control)
-* [How to refresh the Xamarin.Forms Calendar using MVVM pattern?] (https://www.syncfusion.com/kb/9754/how-to-refresh-the-xamarin-forms-calendar-using-mvvm-pattern)
-* [How to restrict the year view move while tapping calendar’s month header?] (https://www.syncfusion.com/kb/8607/how-to-restrict-the-year-view-move-while-tapping-calendars-month-header)
+[Feature comparison between Calendar and Schedule control](https://www.syncfusion.com/kb/6976/feature-comparison-between-calendar-and-schedule-control)
+
+[How to customize the Header view of SfCalendar control?](https://www.syncfusion.com/kb/8609/how-to-customize-the-header-view-of-sfcalendar-control)
+
+[How to refresh the Xamarin.Forms Calendar using MVVM pattern?](https://www.syncfusion.com/kb/9754/how-to-refresh-the-xamarin-forms-calendar-using-mvvm-pattern)
+
+[How to restrict the year view move while tapping calendar’s month header?](https://www.syncfusion.com/kb/8607/how-to-restrict-the-year-view-move-while-tapping-calendars-month-header)

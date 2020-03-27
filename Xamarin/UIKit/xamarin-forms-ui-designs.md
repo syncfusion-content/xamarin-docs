@@ -94,8 +94,8 @@ The Essential UI Kit includes 101 screens which is under the following categorie
 * Documents List Page
 * Selectable Name Page
 * MoviesPage
-* File Explore List Page
-* File Explore Grid Page
+* File Explorer List Page
+* File Explorer Grid Page
 
 ## Onboarding	
 
@@ -170,4 +170,4 @@ The Essential UI Kit includes 101 screens which is under the following categorie
 
 * Social Notification Page
 * Task Notification Page
-* ECommerce Notification Page
+* E-commerce Notification Page

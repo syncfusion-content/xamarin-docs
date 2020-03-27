@@ -7,7 +7,7 @@ control: Picker
 documentation: ug
 ---
 
-# Customization
+# Customization of SfDatePicker
 
 You can customize the header, column header, footer, selected item, and unselected item of the SfDatePicker.
 
@@ -17,7 +17,7 @@ SfDatePicker allows customizing the header's background, text color, and fonts.
 
 ### Enable or disable header 
 
-SfDatePicker allows enabling or disabling the header section by setting the `SfDatePicker.ShowHeader` property to True or False. Default value of `SfDatePicker.ShowHeader` property is "True".
+SfDatePicker allows enabling or disabling the header section by setting the `SfDatePicker.ShowHeader` property to True or False. The default value of `SfDatePicker.ShowHeader` property is "True".
 
 {% tabs %}
 
@@ -63,9 +63,9 @@ namespace DatePickerSample
 
 {% endtabs %}
 
-### Set custom header 
+### Set header text
 
-SfDatePicker allows providing custom text to its header by setting the `SfDatePicker.HeaderText` property. Default value of `SfDatePicker.HeaderText` property is "Date Picker".
+SfDatePicker allows providing custom text to its header by setting the `SfDatePicker.HeaderText` property. The default value of `SfDatePicker.HeaderText` property is "Date Picker".
 
 {% tabs %}
 
@@ -159,7 +159,7 @@ namespace DatePickerSample
 
 {% endtabs %}
 
-### Text-Color 
+### Text color 
 
 Text color of the header can be customized by setting the `SfDatePicker.HeaderTextColor` property.
 
@@ -209,7 +209,7 @@ namespace DatePickerSample
 
 ### Font 
 
-This section explains about the Font customization of header text.
+This section explains the Font customization of header text.
 
 #### FontFamily
 
@@ -355,13 +355,64 @@ namespace DatePickerSample
 
 {% endtabs %}
 
+### Customization of header
+
+This feature allows the users to have a custom view in the header part of the control in Date Picker.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage.Content>
+        <StackLayout>
+            <datePicker:SfDatePicker
+                ShowHeader="True"
+                WidthRequest="350"
+                HeightRequest="350">
+                <datePicker:SfDatePicker.HeaderView>
+                    <StackLayout>
+                        <Label Text="Select Date" HorizontalTextAlignment="Center" FontSize="Medium" FontAttributes="Italic"/>
+                    </StackLayout>
+                </datePicker:SfDatePicker.HeaderView>
+            </datePicker:SfDatePicker>
+        </StackLayout>
+</ContentPage.Content>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.Pickers;
+namespace Sample
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class DatePicker : ContentPage
+    {
+        SfDatePicker datePicker;
+        public DatePicker()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            datePicker = new SfDatePicker();
+            datePicker.ShowHeader = true;
+            datePicker.HeaderView = new Label() { Text = "Select Date", HorizontalTextAlignment = TextAlignment.Center  };
+            stackLayout.Children.Add(datePicker);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Column header customization
 
 SfDatePicker allows customizing the column header's background, text color, and fonts.
 
 ### Enable or disable column header 
 
-SfDatePicker allows enabling or disabling the column header section by setting the `SfDatePicker.ShowColumnHeader` property to True or False. Default value of `SfDatePicker.ShowColumnHeader` property is "True".
+SfDatePicker allows enabling or disabling the column header section by setting the `SfDatePicker.ShowColumnHeader` property to True or False. The default value of `SfDatePicker.ShowColumnHeader` property is "True".
 
 {% tabs %}
 
@@ -507,7 +558,7 @@ namespace DatePickerSample
 
 {% endtabs %}
 
-### Text-Color 
+### Text color 
 
 Text color of the column header can be customized by setting the `SfDatePicker.ColumnHeaderTextColor` property.
 
@@ -557,7 +608,7 @@ namespace DatePickerSample
 
 ### Font 
 
-This section explains about the Font customization of column header text.
+This section explains the Font customization of column header text.
 
 #### FontFamily
 
@@ -709,7 +760,7 @@ SfDatePicker allows customizing background, text color of the OK and Cancel butt
 
 ### Enable or disable footer 
 
-DatePicker allows enabling or disabling the footer section by setting the `SfDatePicker.ShowFooter` property to True or False. Default value of `SfDatePicker.ShowFooter` property is "False".
+DatePicker allows enabling or disabling the footer section by setting the `SfDatePicker.ShowFooter` property to True or False. The default value of `SfDatePicker.ShowFooter` property is "False".
 
 {% tabs %}
 
@@ -861,7 +912,7 @@ namespace DatePickerSample
 
 ### Perform validation with default validation button
 
-DatePicker allows performing validation based on OK or Cancel button by using `SfDatePicker.OkCommand` and `SfDatePicker.CancelCommand`.
+DatePicker allows performing validation based on the OK or Cancel button by using `SfDatePicker.OkCommand` and `SfDatePicker.CancelCommand`.
 
 The following example shows how to use the OkCommand and the CancelCommand. When you click the OK button, the background color of the selected item will change to green. When you click the Cancel button, the background color of the selected item will change to red.
 
@@ -956,6 +1007,57 @@ namespace DatePickerSample
 
 {% endtabs %}
 
+### Customization of footer
+
+This feature allows the users to have a custom view in the footer part of the control in Date Picker.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage.Content>
+        <StackLayout>
+            <datePicker:SfDatePicker
+                ShowFooter="True"
+                WidthRequest="350"
+                HeightRequest="350">                
+            <datePicker:SfDatePicker.FooterView>
+                    <StackLayout>
+                        <Button Text="Accept" FontSize="Medium" FontAttributes="Bold"/>
+                    </StackLayout>
+                </datePicker:SfDatePicker.FooterView>
+            </datePicker:SfDatePicker>
+        </StackLayout>
+</ContentPage.Content>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.Pickers;
+namespace Sample
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class DatePicker : ContentPage
+    {
+        SfDatePicker datePicker;
+        public DatePicker()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            datePicker = new SfDatePicker();
+            datePicker.ShowFooter = true;
+            datePicker.FooterView = new Button() { Text = "Accept" };
+            stackLayout.Children.Add(datePicker);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Selected item customization
 
 SfDatePicker allows customizing the SelectedItem's background, text color, and fonts.
@@ -1008,7 +1110,7 @@ namespace DatePickerSample
 
 {% endtabs %}
 
-### Text-Color 
+### Text color 
 
 Text color of the SelectedItem can be customized by setting the `SfDatePicker.SelectedItemTextColor` property.
 
@@ -1058,7 +1160,7 @@ namespace DatePickerSample
 
 ### Font 
 
-This section explains about the Font customization of SelectedItem text.
+This section explains the Font customization of SelectedItem text.
 
 #### FontFamily
 
@@ -1206,7 +1308,7 @@ namespace DatePickerSample
 
 ## Unselected item customization
 
-SfDatePicker allows customizing the Unselected item's text color, and fonts.
+SfDatePicker allows customizing the Unselected item's text color and fonts.
 
 ### Text-Color 
 
@@ -1401,4 +1503,3 @@ namespace DatePickerSample
 {% endhighlight %}
 
 {% endtabs %}
-

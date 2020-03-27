@@ -1222,15 +1222,15 @@ Download entire source code from GitHub [here](https://github.com/SyncfusionExam
 ### Customize group header
 
 [How to customize Xamarin.Forms listview group header template in MVVM](https://www.syncfusion.com/kb/9663/)                                                
-[How to display the items count of group in the group header item in SfListView?](https://www.syncfusion.com/kb/8019/)                                                                                                                                                                                                                                                                                      
-[How to bind multiple field in the group header?](https://www.syncfusion.com/kb/9484/)    
-[How to display multiple data in the group header template using converter?](https://www.syncfusion.com/kb/9491/)                                                                                                                                                     
-[How to display group header without items and add items in the group at run-time?](https://www.syncfusion.com/kb/8491/)                                                                                                                                            
-[How to add expand or collapse icon in group header of SfListView?](https://www.syncfusion.com/kb/7518/)                                                                                                                
-[How to display the items count of group in the group header item in SfListView?](https://www.syncfusion.com/kb/8019/)                                                                                                              
+[How to display the items count of group in the group header item in SfListView](https://www.syncfusion.com/kb/8019/)                                                                                                                                                                                                                                                                                      
+[How to bind multiple field in the group header](https://www.syncfusion.com/kb/9484/)    
+[How to display multiple data in the group header template using converter](https://www.syncfusion.com/kb/9491/)                                                                                                                                                     
+[How to display group header without items and add items in the group at run-time](https://www.syncfusion.com/kb/8491/)                                                                                                                                            
+[How to add expand or collapse icon in group header of SfListView](https://www.syncfusion.com/kb/7518/)                                                                                                                
+[How to display the items count of group in the group header item in SfListView](https://www.syncfusion.com/kb/8019/)                                                                                                              
 
 ### Customize grouping
 
 [How to customize the ListView grouping with grid columns in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11172/)                                                                              
 [How to add a jump list with Xamarin.Forms ListView](https://www.syncfusion.com/kb/11021/)                                                                                                               
-[How to maintain only one group in expand state in SfListView?](https://www.syncfusion.com/kb/8495/)                                                                                                                                                
+[How to maintain only one group in expand state in SfListView](https://www.syncfusion.com/kb/8495/)                                                                                                                                                

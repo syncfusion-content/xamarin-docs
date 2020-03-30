@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion RangeSlider control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion RangeSlider control for Xamarin.Forms platform
+description: This section describes how to initialize a Syncfusion RangeSlider control for Xamarin.Forms platform
 platform: Xamarin
 control: RangeSlider
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Range Slider (SfRangeSlider)
 
 This section explains you the steps to configure a SfRangeSlider control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRangeSlider control.
 

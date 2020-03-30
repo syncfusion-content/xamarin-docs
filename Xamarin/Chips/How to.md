@@ -89,4 +89,4 @@ Create the instance for FontImageSource and set to ImageSource property of SfChi
 
 N> FontImageSource supported from Xamarin.Forms version 3.6 onwards.
 
-![ChipGroup FontIcon](images/How to/FontIcon.png)
+![ChipGroup FontIcon](images/How-to/FontIcon.png)

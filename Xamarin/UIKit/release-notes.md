@@ -494,7 +494,7 @@ Detail
 Navigation
 </td>
 <td>
-1. Movies Page</br>
+1. Movies Page<br/>
 2. File Explorer List Page<br/> 
 3. File Explorer Grid Page<br/> 
 </td>

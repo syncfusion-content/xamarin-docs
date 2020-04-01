@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AutoSize | SfRichTextEditor | Xamarin | Syncfusion
-description: how to use the AutoSize feature in the Syncfusion Rich Text Editor for Xamarin.Forms platform.
+description: This page explains how to use the AutoSize feature in the Syncfusion Rich Text Editor for Xamarin.Forms platform.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug

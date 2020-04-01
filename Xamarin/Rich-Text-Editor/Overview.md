@@ -7,7 +7,7 @@ control: Rich Text Editor
 documentation: ug
 ---
 
-# Overview
+# Xamarin Rich Text Editor (SfRichTextEditor) Overview
 
 The Xamarin Rich Text Editor control is a WYSIWYG editor that provides a great user experience for composing or editing rich text content from your Xamarin.Forms applications. Users can format their content using the standard toolbar commands.
 
@@ -37,7 +37,7 @@ The Xamarin Rich Text Editor control is a WYSIWYG editor that provides a great u
 ### iOS
  1. AutoFocus will not be working when `AutoSize` is enabled.
  2. Extra spaces will be added in the bottom of the RichTextEditor control.
- 3. Focus and UnFocus events will not triggered programatically until RichTextEditor is manually focused.
+ 3. Focus and UnFocus events will not triggered programmatically until RichTextEditor is manually focused.
  4. Custom toolbar will not working in the Xamarin RichTextEditor iOS because the control selection will be lost when clicking the elements in the custom toolbar.
  
 ### UWP

@@ -984,7 +984,7 @@ chart.ChartAnnotations.Add(annotation);
 
 ## Annotation Visibility
 
-The [`IsVisible`]() property of [`ChartAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~ChartAnnotations.html) is used to toggle the visibility of annotation.
+The [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAnnotation~IsVisible.html) property of [`ChartAnnotation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~ChartAnnotations.html) is used to toggle the visibility of annotation.
 
 {% tabs %} 
 

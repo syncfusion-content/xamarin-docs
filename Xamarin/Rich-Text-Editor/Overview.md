@@ -26,17 +26,12 @@ The Xamarin Rich Text Editor control is a WYSIWYG editor that provides a great u
 
 ### All platform
  1. RichTextEditor scroll view will not be working if the control is placed inside a ScrollView.
- 2. RichTextEditor will not rendered in the XAML Previewer for RichTextEditor. 
- 3. To avoid rendering of the RichTextEditor out of the screen, it is highly recommended to set the `MaximumHeightRequest` property when the `AutoSize` is enabled.
- 4. Toolbar will be hidden when the `MaximumHeightRequest` is beyond the keyboard region. 
+ 2. To avoid rendering of the RichTextEditor out of the screen, it is highly recommended to set the `MaximumHeightRequest` property when the `AutoSize` is enabled.
+ 3. Toolbar will be hidden when the `MaximumHeightRequest` is beyond the keyboard region. 
 
-### Android
- 1. By default, AutoFocus is disabled in the RichTextEditor Android. To enable this, the `SoftInputMode` must be set in MainActivity.cs as mentioned in our [`GettingStarted`](https://help.syncfusion.com/xamarin/rich-text-editor/gettingstarted#android) page.
- 2. AutoFocus will be triggered only when typing the content in the RichTextEditor.
- 
 ### iOS
  1. AutoFocus will not be working when `AutoSize` is enabled.
- 2. Extra spaces will be added in the bottom of the RichTextEditor control.
+ 2. Extra spaces will be added in the bottom of the RichTextEditor when the control is AutoSizing.
  3. Focus and UnFocus events will not triggered programmatically until RichTextEditor is manually focused.
  4. Custom toolbar will not working in the Xamarin RichTextEditor iOS because the control selection will be lost when clicking the elements in the custom toolbar.
  

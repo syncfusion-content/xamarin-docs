@@ -53,6 +53,8 @@ this.Content = richtexteditor;
 
 {% endtabs %}
 
+N> AutoSize will not be working when the application is in `AdjustResize` SoftInputMode.
+
 ## Limitations in AutoSize
 
  1. AutoFocus will not be working in the Xamarin RichTextEditor iOS.

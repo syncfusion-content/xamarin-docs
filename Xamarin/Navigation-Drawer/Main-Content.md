@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Main Content
+# Main Content of ContentView
 
 Main content of NavigationDrawer is always visible and it can be set using `ContentView` property. In the following code example, ContentView is switched when selection changes in ListView.
 
@@ -33,7 +33,7 @@ Main content of NavigationDrawer is always visible and it can be set using `Cont
                     <Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
                     <Label x:Name="headerLabel" HeightRequest="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Home" FontSize="16" TextColor="White" BackgroundColor="#1aa1d6"/>
                 </StackLayout>
-                <Label Grid.Row="1" x:Name="contentLabel" VerticalOptions="Center" HorizontalOptions="Center" Text="Content View" FontSize="14" TextColor="Black"/>
+                <Label Grid.Row="1" x:Name="contentLabel" VerticalOptions="Center" HorizontalOptions="Center" Text="The folder is empty" FontSize="14" TextColor="Black"/>
             </Grid>
         </navigationdrawer:SfNavigationDrawer.ContentView>
         <navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
@@ -42,7 +42,7 @@ Main content of NavigationDrawer is always visible and it can be set using `Cont
                     <RowDefinition Height="120"/>
                     <RowDefinition Height="40"/>
                 </Grid.RowDefinitions>
-                <Image Source="user.png" HeightRequest="110" Margin="0,10,0,0" BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center"/>
+                <Image Source="tab_feed.png" HeightRequest="110" Margin="0,10,0,0" BackgroundColor="#1aa1d6" VerticalOptions="Center" HorizontalOptions="Center"/>
                 <Label Text="James Pollock" Grid.Row="1" HorizontalTextAlignment="Center" HorizontalOptions="Center" FontSize="20" TextColor="White"/>
             </Grid>
         </navigationdrawer:SfNavigationDrawer.DrawerHeaderView>
@@ -133,7 +133,7 @@ namespace NaviSample
 
             var image = new Image
             {
-                Source = (FileImageSource)ImageSource.FromFile("user.png"),
+                Source = (FileImageSource)ImageSource.FromFile("tab_feed.png"),
                 HeightRequest = 110,
                 Margin = new Thickness(0, 10, 0, 0),
                 BackgroundColor = Color.FromHex("#1aa1d6"),
@@ -167,7 +167,7 @@ namespace NaviSample
             this.Content = navigationDrawer;
 
             navigationDrawer.DrawerWidth = 200;
-            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("hamburger_icon.png");
+            hamburgerButton.Image = (FileImageSource)ImageSource.FromFile("burgericon.png");
             List<string> list = new List<string>();
             list.Add("Home");
             list.Add("Profile");
@@ -209,3 +209,7 @@ namespace NaviSample
 N> It is mandatory to set ContentView for SfNavigationDrawer on initializing.
 
 ![contentview](Images/MainContent.png)
+
+
+
+You can find the complete Sample from this [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/NavigationDrawerMainContent-827989544)

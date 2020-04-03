@@ -7,7 +7,7 @@ control: SfSegmentedControl
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started Xamarin.Forms SegmentedControl (SfSegmentedControl)
 
 This section provides an overview for working with the segmented control for Xamarin.Forms. Walk through the entire process of creating a real-world application with the SfSegmentedControl.
 
@@ -66,9 +66,9 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To learn more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to learn about registering Syncfusion license key in your Xamarin application to use our components.
 
 ## Launching the SfSegmentedControl on each platform
 
@@ -103,7 +103,7 @@ To launch the segmented control in iOS, call the SfSegmentedControlRenderer.Ini
 
 There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
 
-The above problem can be resolved by initializing the SfSegmentedControl assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
+The above problem can be resolved by initializing the SfSegmentedControl assemblies in `App.xaml.cs` in UWP project as in the following code snippet.
 
 {% highlight C# %}
 
@@ -224,11 +224,11 @@ Set the control to content in `ContentPage`.
 
 {% endtabs %}
 
-### Adding supportive views to the application.
+### Adding supportive views to the application
  
-For the completeness of the ticket booking application, few framework controls are added to the application, to get the data from the user.
+For the completeness of the ticket booking application, few framework controls are added to the application to get the data from the user.
 
-ViewModel class for the Entry which we have used in our View.
+ViewModel class for the Entry, which we have used in our View.
 
 {% tabs %}
 
@@ -381,17 +381,17 @@ View can be created by the following code snippet.
 
 ## Adding data/Items to SfSegmentedControl
 
-We can add the data inside the segmented control in 3 different ways. 
+You can add the data inside the segmented control in three different ways: 
 
 1. String data
 2. SfSegmentItem
 3. Custom View
 
-Items inside the segmented control can be added through the `ItemsSource` property of `SfSegmentedControl`, which holds the collection/list of items.
+Items inside the segmented control can be added using the `ItemsSource` property of `SfSegmentedControl`, which holds the collection/list of items.
 
 ### Adding data as a String
 
-With the help of  Xamarin.Forms `System.Collections.Generic` we can add string data as `ItemsSource` to SfSegmentedControl.
+With the help of  Xamarin.Forms `System.Collections.Generic` you can add string data as `ItemsSource` to SfSegmentedControl.
 
 {% highlight c# %}
 
@@ -574,9 +574,9 @@ With the help of  Xamarin.Forms `System.Collections.Generic` we can add string d
 
 ### Adding data as a SfSegmentItem
 
-By using `SfSegmentItem` class, we can add data inside the segmented control.
+By using `SfSegmentItem` class, you can add data inside the segmented control.
 
-In ViewModel add the below given code to get the respective items in SfSegmentedControl.
+In ViewModel, add the following code to get the respective items in SfSegmentedControl.
 
 {% highlight C# %}
 
@@ -621,7 +621,8 @@ In ViewModel add the below given code to get the respective items in SfSegmented
                 }
             }
     
-            private ObservableCollection<SfSegmentItem> itemCollection = new ObservableCollection<SfSegmentItem>();
+            private ObservableCollection<SfSegmentItem> itemCollection;
+
             public ObservableCollection<SfSegmentItem> ItemCollection
             {
                 get { return itemCollection; }
@@ -802,9 +803,9 @@ In ViewModel add the below given code to get the respective items in SfSegmented
 
 
 
-### Adding data as Custom View.
+### Adding data as Custom View
 
-We can add any custom view to the segmented control
+You can add any custom view to the segmented control.
 
 In ViewModel add the below given code to get the respective items/collection in SfSegmentedControl.
 
@@ -1099,9 +1100,9 @@ In ViewModel add the below given code to get the respective items/collection in 
 
 ## Customizing segmented control appearance
 
-### Share space equally to all the items.
+### Share space equally to all the items
 
-To share the Item space equally to segmented control, set the number of segment item that has to be visible on the available screen width and that can be distributed in the available space though the `VisibleSegmentsCount` property of `SfSegmentedControl`.
+To share the item space equally to the segmented control, set the number of segment item that has to be visible on the available screen width and that can be distributed in the available space using the `VisibleSegmentsCount` property of `SfSegmentedControl`.
 
 {% tabs %}
 
@@ -1120,9 +1121,9 @@ To share the Item space equally to segmented control, set the number of segment 
 {% endtabs %}
 
 
-### Display Mode
+### Display mode
 
-We can change the appearance of the segmented control by using the `DisplayMode` property of SfSegmentedControl. We can set the `DisplayMode` to either Image or Text or ImageWithText.
+You can change the appearance of the segmented control by using the `DisplayMode` property of SfSegmentedControl. You can set the `DisplayMode` to either Image or Text or ImageWithText.
 
 {% tabs %}
 
@@ -1144,11 +1145,11 @@ We can change the appearance of the segmented control by using the `DisplayMode`
 
 The Selection indicator can be used to indicate the selected index of the segmented control. It can be customized with the built-in APIs that are available in the `SelectionIndicatorSettings` property of SfSegmentedControl.
 
-To know more about customizing selection indicator refer this [feature link](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/indicating-the-selected-item)
+To learn more about customizing selection indicator, refer to this [feature link](https://help.syncfusion.com/xamarin/sfsegmentedcontrol/indicating-the-selected-item)
 
 ## Handle click events
 
-SfSegmentedControl has SelectionChanged event, using this we can perform operation based on our needs.
+SfSegmentedControl has SelectionChanged event, using this, you can perform operation based on your needs.
 
 {% tabs %}
 
@@ -1181,7 +1182,7 @@ SfSegmentedControl has SelectionChanged event, using this we can perform operati
 
 {% endtabs %}
 
-N> For custom view user need to handle click event manually for the view which have been used.
+N> For custom view user, need to handle the click event manually for the view which have been used.
 eg. For Button we have to use its "Click" event.
 
 

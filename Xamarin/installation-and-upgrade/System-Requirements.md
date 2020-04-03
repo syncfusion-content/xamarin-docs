@@ -155,7 +155,7 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
             <br/>
         </td>
           <td>
-            SfChart, SfListView, SfSchedule, SfBorder, SfButton, SfChip, SfSwitch, SfRadioButton, SfCheckBox, SfGradientView, SfSegmentedControl, SfTextInputLayout
+            SfChart, SfDataGrid, SfListView, SfSchedule, SfBorder, SfButton, SfChip, SfSwitch, SfRadioButton, SfCheckBox, SfGradientView, SfSegmentedControl, SfTextInputLayout
             <br/>
             <br/>
         </td>

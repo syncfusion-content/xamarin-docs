@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Main Content
+# Main Content of ContentView
 
 Main content of NavigationDrawer is always visible and it can be set using `ContentView` property. In the following code example, ContentView is switched when selection changes in ListView.
 
@@ -209,3 +209,5 @@ namespace NaviSample
 N> It is mandatory to set ContentView for SfNavigationDrawer on initializing.
 
 ![contentview](Images/MainContent.png)
+
+You can find the complete Sample from this [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/NavigationDrawerMainContent2121112465)

@@ -348,16 +348,16 @@ public MainPage()
     dictionary.Add("SfChatIncomingMessageTextColor", Color.Gray);
     dictionary.Add("SfChatIncomingMessageTimestampTextColor", Color.White);
     dictionary.Add("SfChatIncomingMessageAuthorTextColor", Color.Gray);
-    dictionary.Add("SfChatIncomingMessageBackgroundColor", Color.FromHex("#eee479"););
+    dictionary.Add("SfChatIncomingMessageBackgroundColor", Color.FromHex("#eee479"));
     dictionary.Add("SfChatIncomingMessageFontFamily", "Roboto-Regular");
     dictionary.Add("SfChatIncomingMessageFontAttributes", FontAttributes.Italic);
     dictionary.Add("SfChatIncomingMessageFontSize", 16);
-    dictionary.Add("SfChatIncomingAuthorFontFamily", "Roboto-Regular");
-    dictionary.Add("SfChatIncomingAuthorFontAttributes", FontAttributes.Italic);
-    dictionary.Add("SfChatIncomingAuthorFontSize", 16);
-    dictionary.Add("SfChatIncomingTimestampFontFamily", "Roboto-Regular");
-    dictionary.Add("SfChatIncomingTimestampFontAttributes", FontAttributes.Italic);
-    dictionary.Add("SfChatIncomingTimestampFontSize", 16);
+    dictionary.Add("SfChatIncomingMessageAuthorFontFamily", "Roboto-Regular");
+    dictionary.Add("SfChatIncomingMessageAuthorFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatIncomingMessageAuthorFontSize", 16);
+    dictionary.Add("SfChatIncomingMessageTimestampFontFamily", "Roboto-Regular");
+    dictionary.Add("SfChatIncomingMessageTimestampFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatIncomingMessageTimestampFontSize", 16);
     this.Resources.Add(dictionary);
 }
 
@@ -460,18 +460,18 @@ public MainPage()
     ResourceDictionary dictionary = new ResourceDictionary();
     dictionary.Add("SfChatTheme", "CustomTheme");
     dictionary.Add("SyncPrimaryForegroundColor", Color.Gray);
-    dictionary.Add("SfChatOutingMessageTimestampTextColor", Color.White);
-    dictionary.Add("SfChatOutingMessageAuthorTextColor", Color.Gray);
-    dictionary.Add("SyncPrimaryColor", Color.FromHex("#eee479"););
+    dictionary.Add("SfChatOutgoingMessageTimestampTextColor", Color.White);
+    dictionary.Add("SfChatOutgoingMessageAuthorTextColor", Color.Gray);
+    dictionary.Add("SyncPrimaryColor", Color.FromHex("#eee479"));
     dictionary.Add("SfChatOutgoingMessageFontFamily", "Roboto-Regular");
     dictionary.Add("SfChatOutgoingMessageFontAttributes", FontAttributes.Italic);
     dictionary.Add("SfChatOutgoingMessageFontSize", 16);
-    dictionary.Add("SfChatOutgoingAuthorFontFamily", "Roboto-Regular");
-    dictionary.Add("SfChatOutgoingAuthorFontAttributes", FontAttributes.Italic);
-    dictionary.Add("SfChatOutgoingAuthorFontSize", 16);
-    dictionary.Add("SfChatOutgoingTimestampFontFamily", "Roboto-Regular");
-    dictionary.Add("SfChatOutgoingTimestampFontAttributes", FontAttributes.Italic);
-    dictionary.Add("SfChatOutgoingTimestampFontSize", 16);
+    dictionary.Add("SfChatOutgoingMessageAuthorFontFamily", "Roboto-Regular");
+    dictionary.Add("SfChatOutgoingMessageAuthorFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatOutgoingMessageAuthorFontSize", 16);
+    dictionary.Add("SfChatOutgoingMessageTimestampFontFamily", "Roboto-Regular");
+    dictionary.Add("SfChatOutgoingMessageTimestampFontAttributes", FontAttributes.Italic);
+    dictionary.Add("SfChatOutgoingMessageTimestampFontSize", 16);
     this.Resources.Add(dictionary);
 }
 

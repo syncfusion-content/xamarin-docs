@@ -33,7 +33,7 @@ Main content of NavigationDrawer is always visible and it can be set using `Cont
                     <Button x:Name="hamburgerButton" HeightRequest="50" WidthRequest="50" HorizontalOptions="Start" FontSize="20" BackgroundColor="#1aa1d6" Clicked="hamburgerButton_Clicked"/>
                     <Label x:Name="headerLabel" HeightRequest="50" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Home" FontSize="16" TextColor="White" BackgroundColor="#1aa1d6"/>
                 </StackLayout>
-                <Label Grid.Row="1" x:Name="contentLabel" VerticalOptions="Center" HorizontalOptions="Center" Text="Content View" FontSize="14" TextColor="Black"/>
+                <Label Grid.Row="1" x:Name="contentLabel" VerticalOptions="Center" HorizontalOptions="Center" Text="The folder is empty" FontSize="14" TextColor="Black"/>
             </Grid>
         </navigationdrawer:SfNavigationDrawer.ContentView>
         <navigationdrawer:SfNavigationDrawer.DrawerHeaderView>

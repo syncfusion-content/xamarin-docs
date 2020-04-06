@@ -29,6 +29,7 @@ The [Syncfusion Essential UI Kit](https://www.syncfusion.com/essential-xamarin-u
 * Tracking
 * Dashboard
 * Settings
+* Notification
 
 The screens are developed with MVVM pattern, which separates the UI and business logic results in a clean, professional, and scalable representation of user interface in your Xamarin.Forms applications. You can get the UI Kit application from [Google Play Store](https://play.google.com/store/apps/details?id=com.syncfusion.xamarin.uikit) and the complete source code is available in [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms)
 
@@ -38,6 +39,6 @@ The screens are developed with MVVM pattern, which separates the UI and business
 * iOS 9.0 and later versions.
 * UWP Build 17763 and later versions
 
-N> The required minimum version of Xamarin.Forms is 4.0.0.425677.
+N> The required minimum version of Xamarin.Forms is 4.3.0.991250.
 
 To get started with Syncfusion XAML Pages for Xamarin.Forms, refer to [Getting Started](https://help.syncfusion.com/xamarin/uikit/gettingstarted)

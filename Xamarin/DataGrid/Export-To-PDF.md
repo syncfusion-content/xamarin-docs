@@ -1249,3 +1249,7 @@ Refer the below code to export the selected rows alone to the PDF document.
 {% endhighlight %}
 
 ![Export selected items in a DataGrid to PDF format](SfDataGrid_images/PDF/SelectedItems_ExportToPdf.png)
+
+## See also
+
+[How to export Middle Eastern Languages (Arabic, Hebrew) from Xamarin.Forms DataGrid (SfDataGrid) to PDF](https://www.syncfusion.com/kb/11198)

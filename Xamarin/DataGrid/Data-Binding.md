@@ -543,3 +543,25 @@ You can download the source code of binding the SfDataGrid properties sample [he
 [How to bind a column collection from view model in SfDataGrid Xamarin.Forms](https://www.syncfusion.com/kb/9787)
 
 [How to resolve "Cannot resolve reference `Xamarin.Android.Support.Interpolate'" in Xamarin.Forms Android projects](https://www.syncfusion.com/kb/10934)
+
+[How to resolve SfDataGrid not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/8334)
+
+[How to configure and install SfDataGrid NuGet package in Visual Studio](https://www.syncfusion.com/kb/8333)
+
+[How to make Syncfusion.Xamarin.SfDataGrid to work in release mode in UWP when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/8332)
+
+[How to apply the custom assemblies when configured the project with Syncfusion NuGet packages](https://www.syncfusion.com/kb/8279)
+
+[How to bind button command to ViewModel from TemplateColumn of DataGrid](https://www.syncfusion.com/kb/9076)
+
+[How to update the modified GridCell value for Dictionary](https://www.syncfusion.com/kb/8172)
+
+[How to use SfDataGrid in Prism](https://www.syncfusion.com/kb/8061)
+
+[How to commit the edited values when binding Dictionary in SfDataGrid](https://www.syncfusion.com/kb/7853)
+
+[How to load SfDataGrid dynamically with JSON data without POCO classes](https://www.syncfusion.com/kb/7828)
+
+[How to retain the SfDataGrid properties when changing the data source](https://www.syncfusion.com/kb/7787)
+
+[How to bind a view model property to header template](https://www.syncfusion.com/kb/7815)

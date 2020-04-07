@@ -654,17 +654,7 @@ The following arguments can be obtained from the `RequestTileUri` event:
 <maps:SfMaps>
    <maps:SfMaps.Layers>
          <maps:ImageryLayer RequestTileUri="ImageryLayer_RequestTileUri">
-          <maps:ImageryLayer.MarkerSettings>
-                <maps:MapMarkerSetting MarkerIcon="Image" ImageSource="pin.png" IconSize="15"/>
-           </maps:ImageryLayer.MarkerSettings>
-                <maps:ImageryLayer.Markers>
-                    <maps:MapMarker Latitude="38.8833" Longitude= "-77.0167"/>
-                    <maps:MapMarker Latitude="-15.7833" Longitude= "-47.8667"/>
-                    <maps:MapMarker  Latitude="21.0000" Longitude= "78.0000"/>
-                    <maps:MapMarker Latitude="35.0000" Longitude= "103.0000" />
-                    <maps:MapMarker Latitude="-4.0383" Longitude= "21.7586" />
-             </maps:ImageryLayer.Markers>
-           </maps:ImageryLayer>
+          </maps:ImageryLayer>
     </maps:SfMaps.Layers>
 </maps:SfMaps>
 

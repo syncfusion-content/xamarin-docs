@@ -109,7 +109,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 
-To launch the SfDataGrid in iOS, call the `SfDataGridRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called as demonstrated in the following code example:
+To launch the SfDataGrid in iOS, call the `SfDataGridRenderer.Init()` in the `FinishedLaunching` override method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called as demonstrated in the following code example:
 
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -124,7 +124,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### macOS
 
-To launch the SfDataGrid in macOS, call the `SfDataGridRenderer.Init()` method in the `DidFinishLaunching` overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+To launch the SfDataGrid in macOS, call the `SfDataGridRenderer.Init()` method in the `DidFinishLaunching` override method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
 
 {% highlight C# %} 
 

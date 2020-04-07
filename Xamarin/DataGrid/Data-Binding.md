@@ -559,3 +559,9 @@ You can download the source code of binding the SfDataGrid properties sample [he
 [How to use SfDataGrid in Prism](https://www.syncfusion.com/kb/8061)
 
 [How to commit the edited values when binding Dictionary in SfDataGrid](https://www.syncfusion.com/kb/7853)
+
+[How to load SfDataGrid dynamically with JSON data without POCO classes](https://www.syncfusion.com/kb/7828)
+
+[How to retain the SfDataGrid properties when changing the data source](https://www.syncfusion.com/kb/7787)
+
+[How to bind a view model property to header template](https://www.syncfusion.com/kb/7815)

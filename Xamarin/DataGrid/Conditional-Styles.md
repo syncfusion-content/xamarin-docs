@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Conditional Styles
+# Conditional Styles in Xamarin DataGrid (SfDataGrid)
 
 The SfDataGrid allows to customize the style of the individual cells and rows based on the requirements. It can be customized in the following ways: 
 

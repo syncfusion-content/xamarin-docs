@@ -1749,6 +1749,6 @@ To bind a view model property inside `HeaderTemplate`, follow the code example:
 
 [How to enable the MultiSelection in GridComboBoxColumn of DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11045)
 
-[How to bind a column collection from view model in SfDataGrid Xamarin Forms](https://www.syncfusion.com/kb/9787)
+[How to bind a column collection from view model in SfDataGrid Xamarin.Forms](https://www.syncfusion.com/kb/9787)
 
 [How to create a custom GridColumn](https://www.syncfusion.com/kb/9533)

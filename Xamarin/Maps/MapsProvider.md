@@ -633,13 +633,13 @@ private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChang
 
 {% endtabs %}
 
-The [`RequestTileUriArgs`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs.html) event is triggered whenever new tile required for map(such as zooming, Panning and initial time).
+The [`RequestTileUriArgs`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs.html) event is triggered whenever new tile required for map(such as zooming, panning and initial time).
 
 The following arguments can be obtained from the `RequestTileUri` event:
 
-* [`Uri`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~Uri.html) – Return the used Uri and provide the option to set the desired Uri.
+* [`Uri`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~Uri.html) – Provide the option to set the desired Uri to load the custom map.
 
-* [`UriRequestTask`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~UriRequestTask.html) – Used to gets or sets the requested uri task asynchronously.
+* [`UriRequestTask`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~UriRequestTask.html) – Used to gets or sets the requested uri task asynchronously to load the custom map.
 
 * [`X`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~X.html) – Used to gets the X Co-ordinate value of the tile image.
 

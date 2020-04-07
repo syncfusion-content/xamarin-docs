@@ -1752,3 +1752,5 @@ To bind a view model property inside `HeaderTemplate`, follow the code example:
 [How to bind a column collection from view model in SfDataGrid Xamarin.Forms](https://www.syncfusion.com/kb/9787)
 
 [How to create a custom GridColumn](https://www.syncfusion.com/kb/9533)
+
+[How to bind button command to ViewModel from TemplateColumn of DataGrid](https://www.syncfusion.com/kb/9076)

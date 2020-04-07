@@ -7396,7 +7396,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 	<tr>
     <td>
-            SfImageEditorToolbarSelectionColor         
+            SfImageEditorToolbarPressedColor         
             <br/>
             <br/>
         </td>
@@ -7435,7 +7435,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 	<tr>
     <td>
-            SfImageEditorToolbarSliderProgressColor            
+            SyncPrimaryColor            
             <br/>
             <br/>
         </td>
@@ -7500,7 +7500,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 	<tr>
     <td>
-            SfImageEditorTextPreviewerButtonColor                 
+            SyncPrimaryLightColor                 
             <br/>
             <br/>
         </td>
@@ -7526,7 +7526,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 	<tr>
     <td>
-            SfImageEditorTextPreviewerButtonPressedColor                   
+            SyncPrimaryForegroundColor                   
             <br/>
             <br/>
         </td>
@@ -7552,7 +7552,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 	<tr>
     <td>
-            SfImageEditorCheckBoxStrokeColor                     
+            SyncPrimaryLightColor                     
             <br/>
             <br/>
         </td>

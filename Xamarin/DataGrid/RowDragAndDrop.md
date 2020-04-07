@@ -7,7 +7,7 @@ control: Data Grid
 documentation: UG
 ---
 
-# Row Drag and Drop
+# Row Drag and Drop in Xamarin DataGrid (SfDataGrid)
 
 The data grid allows you to drag and drop a row by setting the [SfDataGrid.AllowDraggingRow](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowDraggingRow.html) property to `true`. A customizable row drag-and-drop template is displayed while dragging a row. Drag-and-drop operations can be handled using the [SfDataGrid.QueryRowDragging](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowDragging_EV.html) event. 
 
@@ -455,3 +455,8 @@ private void SfGrid_QueryRowDragging(object sender, QueryRowDraggingEventArgs e)
 
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+[How to update the summaries when a row is dragged and dropped between groups](https://www.syncfusion.com/kb/7806)
+

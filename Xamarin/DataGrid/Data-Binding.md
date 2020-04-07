@@ -542,4 +542,4 @@ You can download the source code of binding the SfDataGrid properties sample [he
 
 [How to bind a column collection from view model in SfDataGrid Xamarin.Forms](https://www.syncfusion.com/kb/9787)
 
-[How to resolve "Cannot resolve reference `Xamarin.Android.Support.Interpolat'" in Xamarin.Forms Android projects](https://www.syncfusion.com/kb/10934)
+[How to resolve "Cannot resolve reference `Xamarin.Android.Support.Interpolate'" in Xamarin.Forms Android projects](https://www.syncfusion.com/kb/10934)

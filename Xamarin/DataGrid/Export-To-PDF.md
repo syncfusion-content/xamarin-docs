@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Export to PDF
+# Export To PDF in Xamarin DataGrid (SfDataGrid)
 
 The SfDataGrid supports exporting the data to PDF with several customization options like custom appearance, excluding specific columns, excluding headers, setting custom row height, setting custom column width, and so on.
 

@@ -583,3 +583,7 @@ this.dataGrid.ShowColumnWhenGrouped = false;
 
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+[How to customize the expander icon for each level of group in Xamarin.Forms DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11014)

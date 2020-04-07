@@ -310,9 +310,9 @@ The detailed explanation of marker and its customization have been provided in M
 
 ![Xamarin Marker image](Images/Marker.png)
 
-## Show Google Map
+## Load custom map
 
-You can show the Google Maps, TomTom using the `RequestTileUri` event of ImageryLayer. For more information refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
+You can load the Google Maps, TomTom using the `RequestTileUri` event of ImageryLayer. For more information refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
 
 {% highlight c# %}
 

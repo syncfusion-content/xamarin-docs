@@ -548,7 +548,7 @@ You can download the source code of binding the SfDataGrid properties sample [he
 
 [How to configure and install SfDataGrid NuGet package in Visual Studio](https://www.syncfusion.com/kb/8333)
 
-[How to make Syncfusion.Xamarin.SfDataGrid to work in release mode in UWP when .Net Native tool chain is enabled](https://www.syncfusion.com/kb/8332)
+[How to make Syncfusion.Xamarin.SfDataGrid to work in release mode in UWP when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/8332)
 
 [How to apply the custom assemblies when configured the project with Syncfusion NuGet packages](https://www.syncfusion.com/kb/8279)
 

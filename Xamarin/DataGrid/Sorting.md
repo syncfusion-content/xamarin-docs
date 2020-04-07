@@ -327,3 +327,7 @@ public MainPage()
     this.Content = dataGrid;          
 }
 {% endhighlight %}
+
+## See also
+
+[How to change the size of the sort icon in Xamarin DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11216)

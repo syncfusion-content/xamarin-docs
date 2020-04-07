@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Styles
+# Styles in Xamarin DataGrid (SfDataGrid)
 
 The data grid applies style for all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html), and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
   
@@ -406,3 +406,10 @@ Refer the below code snippet to customize the width of the grid cells and header
 
 {% endhighlight %}
 
+## See also
+
+[How to apply the row background color when mouse hover on SfDataGrid in UWP](https://www.syncfusion.com/kb/11230)
+
+[How to customize the expander icon for each level of group in Xamarin.Forms DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11014)
+
+[How to change header background dynamically in the SfDataGrid control](https://www.syncfusion.com/kb/9222)

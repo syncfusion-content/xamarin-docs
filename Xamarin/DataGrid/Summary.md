@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Summary
+# Summaries in Xamarin DataGrid (SfDataGrid)
 
 The data grid supports to display the concise information about the bound data objects using summaries. The control provides the following summary types:
 
@@ -1693,3 +1693,7 @@ public class GridGroupSummaryCellRendererExt : GridGroupSummaryCellRenderer
 ![Customize group summary using custom cell renderer](SfDataGrid_images/CustomizingGroupSummary.jpg)
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SummaryDemo_Forms1739363115) .
+
+## See also
+
+[How to update the summaries when a row is dragged and dropped between groups](https://www.syncfusion.com/kb/7806)

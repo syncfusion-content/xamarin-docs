@@ -1754,3 +1754,5 @@ To bind a view model property inside `HeaderTemplate`, follow the code example:
 [How to create a custom GridColumn](https://www.syncfusion.com/kb/9533)
 
 [How to bind button command to ViewModel from TemplateColumn of DataGrid](https://www.syncfusion.com/kb/9076)
+
+[How to get the row index of a row in SfDataGrid when using GridTemplateColumn](https://www.syncfusion.com/kb/7804)

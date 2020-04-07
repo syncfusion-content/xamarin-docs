@@ -312,7 +312,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 ## Load custom map
 
-You can load the Google Maps, TomTom using the `RequestTileUri` event of ImageryLayer. For more information refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
+You can load the Google Maps, TomTom using the `RequestTileUri` event of ImageryLayer. For more details about RequestTileUri arguments, refer the [ `Events` ](https://help.syncfusion.com/xamarin/maps/mapsprovider#events) of ImageryLayer.
 
 {% highlight c# %}
 
@@ -344,6 +344,8 @@ You can load the Google Maps, TomTom using the `RequestTileUri` event of Imagery
 {% endhighlight %}
 
 {% endtabs %}
+
+For more information refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
 
 ![Xamarin custom map provider image](Images/custom_map_provider.jpg)
 
@@ -561,6 +563,47 @@ The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
 ## Events
 
+The [`RequestTileUriArgs`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs.html) event is triggered whenever new tile required for map(such as zooming, panning and initial time).
+
+The following arguments can be obtained from the `RequestTileUri` event:
+
+* [`Uri`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~Uri.html) – Provide the option to set the desired Uri to load the custom map.
+
+* [`UriRequestTask`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~UriRequestTask.html) – Used to gets or sets the requested uri task asynchronously to load the custom map.
+
+* [`X`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~X.html) – Used to gets the X Co-ordinate value of the tile image.
+
+* [`Y`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~Y.html) – Used to gets the Y Co-ordinate value of the tile image.
+
+* [`ZoomLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~ZoomLevel.html) – Used to gets the current zoom level value of the tile image. 
+
+{% tabs %}
+
+{% highlight xml %}
+
+<maps:SfMaps>
+   <maps:SfMaps.Layers>
+         <maps:ImageryLayer RequestTileUri="ImageryLayer_RequestTileUri">
+          </maps:ImageryLayer>
+    </maps:SfMaps.Layers>
+</maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+
+private void ImageryLayer_RequestTileUri(object sender, Syncfusion.SfMaps.XForms.TileUriArgs e)
+        {
+            var link = "http://mt1.google.com/vt/lyrs=y&x=" + e.X.ToString() + "&y=" + e.Y.ToString() + "&z=" + e.ZoomLevel.ToString();
+            e.Uri = link;
+           
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
 The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
 
 * [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~Cancel.html) : Used to cancel the zooming.
@@ -633,43 +676,3 @@ private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChang
 
 {% endtabs %}
 
-The [`RequestTileUriArgs`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs.html) event is triggered whenever new tile required for map(such as zooming, panning and initial time).
-
-The following arguments can be obtained from the `RequestTileUri` event:
-
-* [`Uri`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~Uri.html) – Provide the option to set the desired Uri to load the custom map.
-
-* [`UriRequestTask`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~UriRequestTask.html) – Used to gets or sets the requested uri task asynchronously to load the custom map.
-
-* [`X`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~X.html) – Used to gets the X Co-ordinate value of the tile image.
-
-* [`Y`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~Y.html) – Used to gets the Y Co-ordinate value of the tile image.
-
-* [`ZoomLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~ZoomLevel.html) – Used to gets the current zoom level value of the tile image. 
-
-{% tabs %}
-
-{% highlight xml %}
-
-<maps:SfMaps>
-   <maps:SfMaps.Layers>
-         <maps:ImageryLayer RequestTileUri="ImageryLayer_RequestTileUri">
-          </maps:ImageryLayer>
-    </maps:SfMaps.Layers>
-</maps:SfMaps>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-
-private void ImageryLayer_RequestTileUri(object sender, Syncfusion.SfMaps.XForms.TileUriArgs e)
-        {
-            var link = "http://mt1.google.com/vt/lyrs=y&x=" + e.X.ToString() + "&y=" + e.Y.ToString() + "&z=" + e.ZoomLevel.ToString();
-            e.Uri = link;
-           
-        }
-
-{% endhighlight %}
-
-{% endtabs %}

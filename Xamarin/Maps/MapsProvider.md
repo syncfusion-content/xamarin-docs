@@ -312,7 +312,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 ## Show Google Map
 
-You can show the Google Maps using the `RequestTileUri` event of ImageryLayer. For more information refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
+You can show the Google Maps, TomTom using the `RequestTileUri` event of ImageryLayer. For more information refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
 
 {% highlight c# %}
 

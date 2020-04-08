@@ -714,3 +714,5 @@ The SfDataGrid allows you to bind the selection properties such as [SelectedInde
 [How to enable the MultiSelection in GridComboBoxColumn of DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11045)
 
 [How to apply animation for the selected rows in SfDataGrid](https://www.syncfusion.com/kb/7793)
+
+[How to change selected index of one picker in other pickers selection changed event in SfDataGrid](https://www.syncfusion.com/kb/7449)

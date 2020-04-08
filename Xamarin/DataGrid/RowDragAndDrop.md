@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Drag and Drop | SfDataGrid | Xamarin | Syncfusion
-description: Enable and perform row drag and drop operation and its customization in Xamarin.Forms DataGrid.
+description: Enable and perform row drag and drop operation and its customization in Xamarin.Forms DataGrid. The data grid allows you to drag and drop a row by setting the SfDataGrid.AllowDraggingRow.
 platform: xamarin
 control: Data Grid
 documentation: UG

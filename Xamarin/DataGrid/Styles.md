@@ -421,3 +421,5 @@ Refer the below code snippet to customize the width of the grid cells and header
 [How to modify the cell borders in SfDataGrid](https://www.syncfusion.com/kb/7803)
 
 [How to bind a view model property to header template](https://www.syncfusion.com/kb/7815)
+
+[How to load grid without borders](https://www.syncfusion.com/kb/7451)

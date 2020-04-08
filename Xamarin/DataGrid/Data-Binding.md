@@ -565,3 +565,5 @@ You can download the source code of binding the SfDataGrid properties sample [he
 [How to retain the SfDataGrid properties when changing the data source](https://www.syncfusion.com/kb/7787)
 
 [How to bind a view model property to header template](https://www.syncfusion.com/kb/7815)
+
+[How to overcome the DisplayBinding converter is not firing problem when XamlCompilation attribute is set as XamlCompilationOptions.Compile](https://www.syncfusion.com/kb/7561)

@@ -1756,3 +1756,11 @@ To bind a view model property inside `HeaderTemplate`, follow the code example:
 [How to bind button command to ViewModel from TemplateColumn of DataGrid](https://www.syncfusion.com/kb/9076)
 
 [How to get the row index of a row in SfDataGrid when using GridTemplateColumn](https://www.syncfusion.com/kb/7804)
+
+[How to display the DatePicker and TimePicker combined in a GridColumn in SfDataGrid](https://www.syncfusion.com/kb/7780)
+
+[How to set the different color for each column header in SfDataGrid](https://www.syncfusion.com/kb/7536)
+
+[How to customize the header text of a grid column with different colors](https://www.syncfusion.com/kb/7517)
+
+[How to create GridTemplateColumn in code-behind](https://www.syncfusion.com/kb/7521)

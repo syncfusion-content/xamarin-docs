@@ -1217,7 +1217,7 @@ Download entire source code from GitHub [here](https://github.com/SyncfusionExam
 
 ![Add item at specific index in a group](SfListView_images/SfListView-AddItem.png)
 
-## See Also
+## See also
 
 ### Customize group header
 

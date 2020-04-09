@@ -727,7 +727,8 @@ listView.FooterTemplate = new DataTemplate(() =>
 [How to bind OData to Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11211/)                                                                                           
 [How to bind JSON data to Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11173/)                                                                                                                                  
 [How to load the data from SQLite offline database in SfListView?](https://www.syncfusion.com/kb/7550/)                                                                                                                                                                         
-[How to load the data from SQLite online database in SfListView?](https://www.syncfusion.com/kb/7821/)                                                                                                                                                                                                                  
+[How to load the data from SQLite online database in SfListView?](https://www.syncfusion.com/kb/7821/)     
+[How to bind data using FreshMVVM in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11277)
 
 ### Resolve exception issues
 
@@ -742,4 +743,5 @@ listView.FooterTemplate = new DataTemplate(() =>
 [How to bind image and text in the listview](https://www.syncfusion.com/kb/9636/)                                                                                                                      
 [How to load listview with background image](https://www.syncfusion.com/kb/9479/)                                                                                                                                                                                                                          
 [How to resolve ItemTapped event not firing in Forms.Android when when MainActivity type is FormsApplicationActivity](https://www.syncfusion.com/kb/8996/)                                                                                                                                                            
-[How to use Xamarin.Forms ListView in Xamarin.Android and Xamarin.iOS platforms](https://www.syncfusion.com/kb/9392/)                                                                                                                                                      
+[How to use Xamarin.Forms ListView in Xamarin.Android and Xamarin.iOS platforms](https://www.syncfusion.com/kb/9392/)                                                                                                                                                   
+[How to resolve SfListView not rendering issue in iOS, macOS and UWP in Xamarin.Forms](https://www.syncfusion.com/kb/11292)

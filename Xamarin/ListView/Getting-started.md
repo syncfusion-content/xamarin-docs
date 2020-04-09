@@ -744,4 +744,4 @@ listView.FooterTemplate = new DataTemplate(() =>
 [How to load listview with background image](https://www.syncfusion.com/kb/9479/)                                                                                                                                                                                                                          
 [How to resolve ItemTapped event not firing in Forms.Android when when MainActivity type is FormsApplicationActivity](https://www.syncfusion.com/kb/8996/)                                                                                                                                                            
 [How to use Xamarin.Forms ListView in Xamarin.Android and Xamarin.iOS platforms](https://www.syncfusion.com/kb/9392/)                                                                                                                                                   
-[How to resolve SfListView not rendering issue in iOS, macOS and UWP in Xamarin Forms](https://www.syncfusion.com/kb/11292)
+[How to resolve SfListView not rendering issue in iOS, macOS and UWP in Xamarin.Forms](https://www.syncfusion.com/kb/11292)

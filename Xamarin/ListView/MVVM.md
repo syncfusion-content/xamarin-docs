@@ -923,10 +923,11 @@ public class ViewModel:INotifyPropertyChanged
 
 You can download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/xamarin-listview-loadmore).
 
-## See Also
+## See also
 
 [How to bind command from ViewModel to external ItemTemplate of Xamarin.Forms ListView](https://www.syncfusion.com/kb/11029)                                                                                                                                        
 [Working with ListView in Reactive MVVM](https://www.syncfusion.com/kb/9319/)
 [Working with SfListView and Prism for Xamarin.Forms](https://www.syncfusion.com/kb/8763/)                                                                                                                                                             
 [How to navigate page from ViewModel using button in ListViewItem](https://www.syncfusion.com/kb/7520/)                                                                                                                                                                                                                            
-[How to turn Events into Commands with Behaviors in SfListView](https://www.syncfusion.com/kb/7523/)                                                                                                                                                                                                                               
+[How to turn Events into Commands with Behaviors in SfListView](https://www.syncfusion.com/kb/7523/)          
+[How to handle touch interaction using MR.Gesture in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11351)

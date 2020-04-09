@@ -7,7 +7,7 @@ control: SfListView
 documentation: ug
 ---
 
-# Working with SfListView
+# Working with ListView in Xamarin ListView (SfListView)
 
 ## Interacting with ListView Items
 

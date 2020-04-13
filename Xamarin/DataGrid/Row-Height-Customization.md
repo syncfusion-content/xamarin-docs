@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Row Height Customization
+# Row Height Customization in Xamarin DataGrid (SfDataGrid)
 
 The data grid provides an option to customize the header row height and the row height of all the grid rows or a particular row. To achieve this customization, see the following sections:
 
@@ -251,3 +251,7 @@ private void DataGrid_QueryRowHeight (object sender, QueryRowHeightEventArgs
 ## Limitations
 
 When setting `SfDataGrid.ScrollingMode` to `ScrollingMode.Line`, the `SfDataGrid.QueryRowHeight` event is not supported.
+
+## See also
+
+[How to adjust row heights of each row based on their content](https://www.syncfusion.com/kb/7446)

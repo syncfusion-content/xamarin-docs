@@ -567,3 +567,9 @@ You can download the source code of binding the SfDataGrid properties sample [he
 [How to bind a view model property to header template](https://www.syncfusion.com/kb/7815)
 
 [How to overcome the DisplayBinding converter is not firing problem when XamlCompilation attribute is set as XamlCompilationOptions.Compile](https://www.syncfusion.com/kb/7561)
+
+[How to parse XML file and set as ItemsSource for SfDataGrid](https://www.syncfusion.com/kb/7439)
+
+[How to configure package source and install Syncfusion NuGet packages in an existing project](https://www.syncfusion.com/kb/7441)
+
+[How to render SfDataGrid for Xamarin.Forms.UWP in release mode](https://www.syncfusion.com/kb/7445)

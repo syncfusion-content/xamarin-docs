@@ -7,7 +7,7 @@ control: SfListView
 documentation: ug
 ---
 
-# Working with SfListView
+# Working with ListView in Xamarin ListView (SfListView)
 
 ## Interacting with ListView Items
 
@@ -1138,3 +1138,11 @@ protected override void OnDisappearing()
 }
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+[How to highlight the tapped view in ItemTemplate in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11235)                                                                                                                                                                                                                                                      
+[How to access a named ListView inside a XAML DataTemplate in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11287)                                                                                                                                                  
+[How to edit the ListView tapped item in Xamarin.Forms (SfListView) using DataForm](https://www.syncfusion.com/kb/11286)                                                                                                                                                                                            
+[How to add or remove an item from Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11275)                                                                                                                                                                                    
+[How to show Xamarin.Forms ListView (SfListView) in popup using Rg.Plugin.Popup framework](https://www.syncfusion.com/kb/11353)

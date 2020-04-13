@@ -634,3 +634,9 @@ The above exceptions can be resolved in two ways.
 [How to convert Point to Index and Index to Point in SfDataGrid](https://www.syncfusion.com/kb/7456)
 
 [How to load grid without borders](https://www.syncfusion.com/kb/7451)
+
+[How to parse XML file and set as ItemsSource for SfDataGrid](https://www.syncfusion.com/kb/7439)
+
+[How to configure package source and install Syncfusion NuGet packages in an existing project](https://www.syncfusion.com/kb/7441)
+
+[How to render SfDataGrid for Xamarin.Forms.UWP in release mode](https://www.syncfusion.com/kb/7445)

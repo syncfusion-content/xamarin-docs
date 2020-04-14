@@ -574,3 +574,9 @@ The [SfDataGrid.GridLongPressedCommand](https://help.syncfusion.com/cr/cref_file
 {% endtabs %}
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LongPressedCommand1698940749).
+
+## See also
+
+[How to navigate to an URL when tapping on a cell in SfDataGrid](https://www.syncfusion.com/kb/7443)
+
+[How to get the column name on tapping a row in SfDataGrid](https://www.syncfusion.com/kb/7432)

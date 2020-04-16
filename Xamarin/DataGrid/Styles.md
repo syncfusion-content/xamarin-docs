@@ -427,3 +427,9 @@ Refer the below code snippet to customize the width of the grid cells and header
 [How to load a button in Header using HeaderTemplate in code-behind](https://www.syncfusion.com/kb/7440)
 
 [How to add multiple views in a grid cell in SfDataGrid](https://www.syncfusion.com/kb/7438)
+
+[How to set different background color for each column header in SfDataGrid](https://www.syncfusion.com/kb/7421)
+
+[How to display an animation while loading the data in the SfDataGrid](https://www.syncfusion.com/kb/7393)
+
+[How to apply multiple selection colors in SfDataGrid](https://www.syncfusion.com/kb/7387)

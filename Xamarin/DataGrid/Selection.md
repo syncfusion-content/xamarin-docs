@@ -718,3 +718,7 @@ The SfDataGrid allows you to bind the selection properties such as [SelectedInde
 [How to change selected index of one picker in other pickers selection changed event in SfDataGrid](https://www.syncfusion.com/kb/7449)
 
 [How to get the cell value of specific row and column](https://www.syncfusion.com/kb/7435)
+
+[How to pass selected row's data to a command](https://www.syncfusion.com/kb/7388)
+
+[How to apply multiple selection colors in SfDataGrid](https://www.syncfusion.com/kb/7387)

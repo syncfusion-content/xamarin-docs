@@ -310,62 +310,42 @@ The detailed explanation of marker and its customization have been provided in M
 
 ![Xamarin Marker image](Images/Marker.png)
 
-## Custom map providers
+## Load custom map
 
-You can show the other map providers maps such as Google Maps, TomTom using the imagery layer. First, initialize the map extension class, override the GetURI method of imagery layer extension class, and then pass the map providers tile image URI link like Google URI with corresponding x, y, and zoom level. Finally, add the imagery layer extension class to layers collection of native map control by overriding the OnElementChanged method of each platform’s (Xamarin.Android, Xamarin.iOS, and UWP) custom map renderer. For more information to add custom map provider, refer to this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control).
+You can load the custom map providers map such as Google Maps, TomTom using the [ `RequestTileUri` ](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~RequestTileUri_EV.html) event of ImageryLayer. For more details about  [ `RequestTileUri` ](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~RequestTileUri_EV.html), refer the [ `Events` ](https://help.syncfusion.com/xamarin/maps/mapsprovider#events) of ImageryLayer.
 
-{% highlight c# %}
+{% tabs %}
 
-public partial class MainPage : ContentPage
-{
-	public MainPage()
-	{
-        InitializeComponent();
-        MapExt maps = new MapExt();
-        ImageryLayer layer = new ImageryLayer();
-        maps.Layers.Add(layer);
-        this.Content = maps;
-    }
-}
+{% highlight xaml %}
 
-public class MapExt : SfMaps
-{
-}
-
-public class CustomMapRenderer : SfMapsRenderer
-{
-    protected override void OnElementChanged(ElementChangedEventArgs<SfMaps> e)
-    {
-        base.OnElementChanged(e);
-        if (Control != null)
-                AddLayer();
-    }
-
-   
-    void AddLayer()
-    {
-        ImageryLayerExt layer = new ImageryLayerExt();
-        (Control as NativeMap.SfMaps).Layers.Clear();
-        (Control as NativeMap.SfMaps).Layers.Add(layer as NativeMap.ImageryLayer);
-    }
-}
-
-public class ImageryLayerExt : NativeMap.ImageryLayer
-{
- 
-    protected override string GetUri(int X, int Y, int Scale)
-    {
-        var link = "http://mt1.google.com/vt/lyrs=y&x=" + X.ToString()
-        + "&y=" + Y.ToString() + "&z=" + Scale.ToString();
-        return link;
-    }
-}
+<maps:SfMaps>
+   <maps:SfMaps.Layers>
+         <maps:ImageryLayer RequestTileUri="ImageryLayer_RequestTileUri">
+          </maps:ImageryLayer>
+    </maps:SfMaps.Layers>
+</maps:SfMaps>
 
 {% endhighlight %}
 
-![Xamarin custom map provider image](Images/custom_map_provider.jpg)
+{% highlight c# %}
 
-You can download the demo sample in this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Google_Sample992378333).
+        SfMaps maps = new SfMaps();
+        ImageryLayer layer = new ImageryLayer();
+        layer.RequestTileUri += ImageryLayer_RequestTileUri;
+        maps.Layers.Add(layer);
+        private void ImageryLayer_RequestTileUri(object sender, Syncfusion.SfMaps.XForms.TileUriArgs e)
+        {
+            var link = "http://mt1.google.com/vt/lyrs=y&x=" + e.X.ToString() + "&y=" + e.Y.ToString() + "&z=" + e.ZoomLevel.ToString();
+            e.Uri = link;
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+See also this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-map-in-xamarin-forms-sfmaps-control) to load the google map.
+
+![Xamarin custom map provider image](Images/custom_map_provider.jpg)
 
 ## Cache a tile images in application memory
 
@@ -440,6 +420,8 @@ N> `DistanceType` property default value is KiloMeter.
 
 {% endtabs %}
 
+![Xamarin SfMaps zoom level changed image](Images/ZoomLevel.png)
+
 ### Geo-bounds
 
 Calculate the initial zoom level automatically based on the LatLngBounds(Northeast, Southwest) of imagery layer class.
@@ -510,7 +492,7 @@ Calculate the initial zoom level automatically based on the LatLngBounds(Northea
 
 N> When setting LatLngBounds and DistanceRadius at the same time, the priority is `DistanceRadius` and calculate zoom level based radius value.
 
-![Xamarin SfMaps zoom level changed image](Images/ZoomLevel.png)
+![Xamarin SfMaps zoom level changed image](Images/NorthSouth_Image.jpg)
 
 ## Get the map tile layer bounds
 
@@ -578,6 +560,47 @@ The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 {% endtabs %}
 
 ## Events
+
+The [`RequestTileUriArgs`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs.html) event is triggered whenever new tile required for map(such as zooming, panning and initial time).
+
+The following arguments can be obtained from the  [ `RequestTileUri` ](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~RequestTileUri_EV.html) event:
+
+* [`Uri`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~Uri.html) – Provide the option to set the desired Uri to load the custom map.
+
+* [`UriRequestTask`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~UriRequestTask.html) – Used to gets or sets the requested uri task asynchronously to load the custom map.
+
+* [`X`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~X.html) – Used to gets the X Co-ordinate value of the tile image.
+
+* [`Y`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~Y.html) – Used to gets the Y Co-ordinate value of the tile image.
+
+* [`ZoomLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~ZoomLevel.html) – Used to gets the current zoom level value of the tile image. 
+
+{% tabs %}
+
+{% highlight xml %}
+
+<maps:SfMaps>
+   <maps:SfMaps.Layers>
+         <maps:ImageryLayer RequestTileUri="ImageryLayer_RequestTileUri">
+          </maps:ImageryLayer>
+    </maps:SfMaps.Layers>
+</maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+
+private void ImageryLayer_RequestTileUri(object sender, Syncfusion.SfMaps.XForms.TileUriArgs e)
+        {
+            var link = "http://mt1.google.com/vt/lyrs=y&x=" + e.X.ToString() + "&y=" + e.Y.ToString() + "&z=" + e.ZoomLevel.ToString();
+            e.Uri = link;
+           
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
 
 The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
 
@@ -650,3 +673,4 @@ private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChang
 {% endhighlight %}
 
 {% endtabs %}
+

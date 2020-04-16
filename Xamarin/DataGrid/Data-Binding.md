@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Data Binding | SfDataGrid | Xamarin | Syncfusion
-description: Data Binding and different sources that can be bound to Xamarin.Forms DataGrid.
+description: Data Binding and different sources that can be bound to Xamarin.Forms DataGrid. It supports data sources such as List, ObservableCollection and so on.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Data Binding
+# Data Binding in Xamarin DataGrid (SfDataGrid)
 
 The SfDataGrid is bound to an external data source to display the data. It supports data sources such as [List](https://msdn.microsoft.com/en-us/library/6sh2ey19(v=vs.110).aspx), [ObservableCollection](https://msdn.microsoft.com/en-us/library/ms668604(v=vs.110).aspx), and so on. The [SfDataGrid.ItemsSource](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ItemsSource.html) property helps to bind this control with collection of objects.
 
@@ -537,3 +537,45 @@ Refer the below code to bind the command property of Button loaded inside the Gr
 {% endhighlight %}
 
 You can download the source code of binding the SfDataGrid properties sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGrid_Sample788022149)
+
+## See also
+
+[How to bind a column collection from view model in SfDataGrid Xamarin.Forms](https://www.syncfusion.com/kb/9787)
+
+[How to resolve "Cannot resolve reference `Xamarin.Android.Support.Interpolate'" in Xamarin.Forms Android projects](https://www.syncfusion.com/kb/10934)
+
+[How to resolve SfDataGrid not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/8334)
+
+[How to configure and install SfDataGrid NuGet package in Visual Studio](https://www.syncfusion.com/kb/8333)
+
+[How to make Syncfusion.Xamarin.SfDataGrid to work in release mode in UWP when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/8332)
+
+[How to apply the custom assemblies when configured the project with Syncfusion NuGet packages](https://www.syncfusion.com/kb/8279)
+
+[How to bind button command to ViewModel from TemplateColumn of DataGrid](https://www.syncfusion.com/kb/9076)
+
+[How to update the modified GridCell value for Dictionary](https://www.syncfusion.com/kb/8172)
+
+[How to use SfDataGrid in Prism](https://www.syncfusion.com/kb/8061)
+
+[How to commit the edited values when binding Dictionary in SfDataGrid](https://www.syncfusion.com/kb/7853)
+
+[How to load SfDataGrid dynamically with JSON data without POCO classes](https://www.syncfusion.com/kb/7828)
+
+[How to retain the SfDataGrid properties when changing the data source](https://www.syncfusion.com/kb/7787)
+
+[How to bind a view model property to header template](https://www.syncfusion.com/kb/7815)
+
+[How to overcome the DisplayBinding converter is not firing problem when XamlCompilation attribute is set as XamlCompilationOptions.Compile](https://www.syncfusion.com/kb/7561)
+
+[How to parse XML file and set as ItemsSource for SfDataGrid](https://www.syncfusion.com/kb/7439)
+
+[How to configure package source and install Syncfusion NuGet packages in an existing project](https://www.syncfusion.com/kb/7441)
+
+[How to render SfDataGrid for Xamarin.Forms.UWP in release mode](https://www.syncfusion.com/kb/7445)
+
+[How to get the X and Y coordinates when interacting with SfDataGrid](https://www.syncfusion.com/kb/7392)
+
+[How to resolve "Expecting class path separator ';' before" error in Xamarin.Forms.Android](https://www.syncfusion.com/kb/7420)
+
+[How to display an animation while loading the data in the SfDataGrid](https://www.syncfusion.com/kb/7393)

@@ -719,7 +719,7 @@ listView.FooterTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-## See Also
+## See also
 
 ### Data binding
 

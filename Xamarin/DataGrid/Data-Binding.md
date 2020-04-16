@@ -573,3 +573,9 @@ You can download the source code of binding the SfDataGrid properties sample [he
 [How to configure package source and install Syncfusion NuGet packages in an existing project](https://www.syncfusion.com/kb/7441)
 
 [How to render SfDataGrid for Xamarin.Forms.UWP in release mode](https://www.syncfusion.com/kb/7445)
+
+[How to get the X and Y coordinates when interacting with SfDataGrid](https://www.syncfusion.com/kb/7392)
+
+[How to resolve "Expecting class path separator ';' before" error in Xamarin.Forms.Android](https://www.syncfusion.com/kb/7420)
+
+[How to display an animation while loading the data in the SfDataGrid](https://www.syncfusion.com/kb/7393)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export To Excel | SfDataGrid | Xamarin | Syncfusion
-description: How to export a SfDataGrid to Excel and it's customizations.
+description: The SfDataGrid supports exporting the data to Excel with several customization options like custom appearance, excluding specific columns,etc.
 platform: xamarin
 control: SfDataGrid
 documentation: ug

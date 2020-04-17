@@ -7,7 +7,7 @@ control: SfPopupLayout
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Popup (SfPopupLayout)
 
 This section provides a quick overview for working with the SfPopupLayout for Xamarin.Forms.
 

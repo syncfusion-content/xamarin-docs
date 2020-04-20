@@ -19,7 +19,7 @@ N> When [SfListView.AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamar
 
 N> When tap a swiped item, the [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanging_EV.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) events will not occur since the swiped item is reset at this time.
 
-N> When `Visual` is `Material`, we need to set `BackgroundColor` to `ItemTemplate` to show the slide swiping.
+N> When `Visual` is `Material`, you need to set `BackgroundColor` to `ItemTemplate` to show the slide swiping.
 
 ## Assigning left and right swipe templates
 

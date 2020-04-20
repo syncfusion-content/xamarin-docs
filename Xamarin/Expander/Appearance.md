@@ -128,3 +128,8 @@ this.Content = expander;
 ![Xamarin Forms Expander with VSM](expander_images/Expander_VSM.png)
 
 You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/Xamarin-Expander-VisualStateManager).
+
+## See also
+
+[How to customize header icon in Xamarin.Forms Expander (SfExpander)](https://www.syncfusion.com/kb/11378/)                                                                                                                                                                                                         
+[How to center align the Expander header text in Xamarin.Forms (SfExpander)](https://www.syncfusion.com/kb/11360/)                                                                                      

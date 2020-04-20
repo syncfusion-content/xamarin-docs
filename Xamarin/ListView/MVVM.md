@@ -931,3 +931,4 @@ You can download the entire sample from GitHub [here](https://github.com/Syncfus
 [How to navigate page from ViewModel using button in ListViewItem](https://www.syncfusion.com/kb/7520/)                                                                                                                                                                                                                            
 [How to turn Events into Commands with Behaviors in SfListView](https://www.syncfusion.com/kb/7523/)          
 [How to handle touch interaction using MR.Gesture in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11351)
+[How to update ListView on property change in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11419)

@@ -122,7 +122,7 @@ The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.S
 
 * To show the context menu.
 
-N> Interaction events of `SfListView` will be triggered for all `ListViewItems` like `HeaderItem`, `FooterItem`, `GroupHeaderItem`, `LoadMoreItem` and `RecordItem`. If you dont want the interaction event for any item then you can handle based on `ItemType` of the event args. 
+N> Interaction events of `SfListView` will be triggered for all `ListViewItems` like `HeaderItem`, `FooterItem`, `GroupHeaderItem`, `LoadMoreItem` and `RecordItem`. You can handle the interaction actions based on the `ItemType` of the event args. 
 
 ### ItemAppearing
 

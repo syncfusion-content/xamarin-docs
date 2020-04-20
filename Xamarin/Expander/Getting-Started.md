@@ -299,6 +299,6 @@ You can download expander sample for Xamarin.Forms here [ExpanderGettingStarted]
 
 ## See also
 
-[How to resolve SfExpander not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/11293/)                                                                                                                                   
+[How to resolve SfExpander not rendering issue in iOS and UWP?](https://www.syncfusion.com/kb/11293/)                                                                                                                                   
 [How to work with Expander using C# in Xamarin.Forms (SfExpander)](https://www.syncfusion.com/kb/11367)                                                                                                                                                                                                         
 

@@ -476,6 +476,8 @@ date.IsOpen = !date.IsOpen;
 {% endhighlight %}
 {% endtabs %}
 
+N> The default value is initial value in the collection.
+
 The following screenshot illustrates the output of the above codes.
 
 ![DateTimePicker image](images/datetimepicker_img1.jpeg)

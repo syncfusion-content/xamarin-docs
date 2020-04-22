@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Demonstrate DateTimePicker using Syncfusion Picker for Xamarin.Forms
-description: Overview and key features of Picker control
+description: Overview and key features of Date Time Picker and how to get started with the SfPicker Control in Xamarin.Forms
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
 
-# Date Time Picker
+# Date Time Picker of Picker Control
 
 In our Xamarin.Forms, picker control has multi column support. By using this, you we can populate day, month, year, hour, and minute values of collection in picker control. 
 
@@ -476,10 +476,11 @@ date.IsOpen = !date.IsOpen;
 {% endhighlight %}
 {% endtabs %}
 
+N> The default value is the initial value of the ItemsSource collection.
+
 The following screenshot illustrates the output of the above codes.
 
 ![DateTimePicker image](images/datetimepicker_img1.jpeg)
-
 
 You can download the DateTimePicker sample for reference from the following link.
 

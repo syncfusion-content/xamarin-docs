@@ -9,11 +9,11 @@ documentation: ug
 
 # Loading and saving RTF content in Xamarin Rich Text Editor
 
-The Xamarin Rich Text Editor control provides support to load and save RTF content with help of [`Essential DocIO`](https://help.syncfusion.com/file-formats/docio/overview).
+The Xamarin Rich Text Editor control provides support to load and save RTF content with help of [Essential DocIO](https://help.syncfusion.com/file-formats/docio/overview).
 
 ## Prerequisite
 
-To manipulate RTF content in your application, [`Syncfusion.Xamarin.DocIO.nupkg`](https://www.nuget.org/packages/Syncfusion.Xamarin.DocIO/) is must be referred. The installation procedure of this NuGet package is available [`here`](https://help.syncfusion.com/file-formats/docio/nuget-packages-required#installing-syncfusion-docio-through-nuget-packages).
+To manipulate RTF content in your application, [Syncfusion.Xamarin.DocIO.nupkg](https://www.nuget.org/packages/Syncfusion.Xamarin.DocIO/) is must be referred. The installation procedure of this NuGet package is available [here](https://help.syncfusion.com/file-formats/docio/nuget-packages-required#installing-syncfusion-docio-through-nuget-packages).
 
 ### Loading RTF content into Rich Text Editor.
 
@@ -114,6 +114,6 @@ private string IgnoreVoidElementsInHTML(string inputString)
 
 {% endtabs %}
 
-N> While loading HTML content in a Word document, DocIO will perform XHTML 1.0 validation and HTML will be loaded only if the validation is passed. Kindly refer [`this`](https://help.syncfusion.com/file-formats/docio/html) documentation to know about HTML Validation.
+N> While loading HTML content in a Word document, DocIO will perform XHTML 1.0 validation and HTML will be loaded only if the validation is passed. Kindly refer [this](https://help.syncfusion.com/file-formats/docio/html) documentation to know about HTML Validation.
 
-The sample illustrating loading and saving RTF content in RichTextEditor can be downloaded [`here`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/RTFManipulation-20682191.zip).
+The sample illustrating loading and saving RTF content in RichTextEditor can be downloaded [here](https://www.syncfusion.com/downloads/support/directtrac/general/ze/RTFManipulation-20682191.zip).

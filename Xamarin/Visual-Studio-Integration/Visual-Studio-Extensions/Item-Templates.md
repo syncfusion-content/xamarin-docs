@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Item Template | Xamarin | Syncfusion
-description: The Syncfusion Item Templates extension provides predefined design for the Xamarin.Forms.
+description: The Syncfusion Xamarin Item Templates extension provides the predefined design for the Xamarin.Forms.
 platform: xamarin
 control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Item Template
+# Xamarin Item Template
 
 The Syncfusion item templates extension provides a predefined design for the Xamarin.Forms. 
 

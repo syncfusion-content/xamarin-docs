@@ -7,7 +7,7 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Toolbox control
+# Xamarin Toolbox control
 
 Syncfusion provides the customized **Visual Studio Toolbox** for the Syncfusion Xamarin platform to add the Syncfusion Xamarin (Xamarin.Forms) controls in your project. It supports Microsoft Visual Studio 2017 and later. The Syncfusion Xamarin toolbox helps you use the Syncfusion controls without coding in the Visual Studio designer.
 

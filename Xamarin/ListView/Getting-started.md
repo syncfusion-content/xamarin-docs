@@ -728,7 +728,8 @@ listView.FooterTemplate = new DataTemplate(() =>
 [How to bind JSON data to Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11173/)                                                                                                                                  
 [How to load the data from SQLite offline database in SfListView?](https://www.syncfusion.com/kb/7550/)                                                                                                                                                                         
 [How to load the data from SQLite online database in SfListView?](https://www.syncfusion.com/kb/7821/)     
-[How to bind data using FreshMVVM in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11277)
+[How to bind data using FreshMVVM in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11277)                                                                                                                                                              
+[How to render ListView using RealmObject in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11445/)
 
 ### Resolve exception issues
 

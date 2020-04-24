@@ -187,3 +187,8 @@ public AccordionItem GenerateAccordionItem()
 ![Xamarin Forms Accordion with VSM](accordion_images/Accordion_VSM.png)
 
 You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/Xamarin-Accordion-VisualStateManager).
+
+## See also
+
+[How to customize the Accordion icon color in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11443/)                                                                                                                                        
+[How to work with RTL in Xamarin.Forms Accordion (SfAccordion)](https://www.syncfusion.com/kb/11444/)

@@ -122,6 +122,8 @@ The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.S
 
 * To show the context menu.
 
+N> Interaction events of the `SfListView` will be triggered for all the `ListViewItems` like `HeaderItem`, `FooterItem`, `GroupHeaderItem`, `LoadMoreItem`, and `RecordItem`. You can handle the interaction actions based on the `ItemType` of the event args. 
+
 ### ItemAppearing
 
 The [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) event is raised when the items are appearing in the view on scrolling, loading, and navigating from one page to another page. The [ItemAppearingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs.html) has the following member which provides the information of appearing Items.

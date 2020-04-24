@@ -32,3 +32,7 @@ where <b>Automation</b> represents Control AutomationId, <b>Item1</b> represents
 The following image shows the AutomationIds of inner elements.
 
 ![Automation id for accordion](accordion_images/AccordionAutomationImage.png)
+
+## See also
+
+[How to get an AccordionItem in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11439/)

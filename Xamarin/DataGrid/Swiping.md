@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Swiping
+# Swiping in Xamarin DataGrid (SfDataGrid)
 
 The [SfDataGrid](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid.html# “”) allows enabling the swiping option by setting the [SfDataGrid.AllowSwiping](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowSwiping.html# “”) property to `true`. Swipe views are displayed when swiping from ‘left to right’ or ‘right to left’ on a data row. The control provides customizable swipe templates for swiping on the left and right side. The swipe gesture can be restricted to a certain point on the row by setting the [SfDataGrid.MaxSwipeOffset](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~MaxSwipeOffset.html# “”) property.
 
@@ -617,3 +617,8 @@ The following screenshot shows the custom swipe buttons loaded based on the cell
 When data grid is loaded in MasterDetailPage with `AllowSwiping` as true, it behaves as follows: 
 
  * In iOS platform, when swiping a data row, touch and hold the row for some fraction of seconds (0.25 - 0.5 seconds) and then swipe. 
+ 
+
+## See also
+
+[How to cancel swipe programmatically](https://www.syncfusion.com/kb/7813)

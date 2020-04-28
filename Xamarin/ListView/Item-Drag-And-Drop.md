@@ -483,7 +483,10 @@ public class DragDropControllerExt : DragDropController
 {% endhighlight %}
 {% endtabs %}
 
-## See Also
+## See also
 
 [How to drag and drop an item from one to another listview in Xamarin.Forms](https://www.syncfusion.com/kb/11203/)                                                                                                                                                                                                                                                              
-[How to show or hide the drag indicator like iOS listview](https://www.syncfusion.com/kb/9981/)                                                                                              
+[How to show or hide the drag indicator like iOS listview](https://www.syncfusion.com/kb/9981/)                                                                                                                                                     
+[How to retrieve the dragged item index in ViewModel command with the Prism framework in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11371)                                                                                                                                                                                  
+[How to show or hide drag indicator based on the DragStartMode in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11425/)                                    
+[How to get the dropped item group in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11436)                                                                                         

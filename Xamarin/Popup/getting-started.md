@@ -7,7 +7,7 @@ control: SfPopupLayout
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Popup (SfPopupLayout)
 
 This section provides a quick overview for working with the SfPopupLayout for Xamarin.Forms.
 
@@ -357,7 +357,7 @@ Any view can be added as popup content by using the [SfPopupLayout.PopupView.Con
         <sfPopup:PopupView>
             <sfPopup:PopupView.ContentTemplate>
                 <DataTemplate>
-                    <Label Text="This is SfPopupLayout" BackgroundColor="SkyBlue"
+                    <Label Text="This is the Customized view for SfPopupLayout" BackgroundColor="SkyBlue"
                            HorizontalTextAlignment="Center"/>
                 </DataTemplate>
             </sfPopup:PopupView.ContentTemplate>
@@ -391,7 +391,7 @@ namespace GettingStarted
             templateView = new DataTemplate(() =>
             {
                 popupContent = new Label();
-                popupContent.Text = "This is the SfPopupLayout";
+                popupContent.Text = "This is the Customized view for SfPopupLayout";
                 popupContent.BackgroundColor = Color.LightSkyBlue;
                 popupContent.HorizontalTextAlignment = TextAlignment.Center;
                 return popupContent;

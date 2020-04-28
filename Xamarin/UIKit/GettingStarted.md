@@ -7,7 +7,7 @@ control: Xamarin UI Kit
 documentation: ug
 ---
 
-# Getting started
+# Essential UI Kit Getting started
 
 The UI Kit screens can be added in your application by the following two ways:
 
@@ -77,5 +77,3 @@ In real-world applications, you may need to do the following to use these XAML p
 ## Requesting Screens and Reporting Bugs
 
 If you would like to request a new screen or report a bug in existing screens, create a feature request or submit a bug through our [feedback portal](https://www.syncfusion.com/feedback/xamarin-forms?control=ui-kit)
-
-N> Now, **Essential UI Kit for Xamarin.Forms** Visual Studio extension is supported in the Windows operating system only.

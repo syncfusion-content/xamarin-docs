@@ -296,3 +296,10 @@ You can download expander sample for Xamarin.Forms here [ExpanderGettingStarted]
     expander.IsExpanded = true;
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+[How to resolve SfExpander not rendering issue in iOS and UWP?](https://www.syncfusion.com/kb/11293/)                                                                                                                                   
+[How to work with Expander using C# in Xamarin.Forms (SfExpander)](https://www.syncfusion.com/kb/11367)    
+[How to autofit the Expander content in Xamarin.Forms (SfExpander)](https://www.syncfusion.com/kb/11431/)
+

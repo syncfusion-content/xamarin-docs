@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Editing
+# Editing in Xamarin DataGrid (SfDataGrid)
 
 The SfDataGrid supports for editing the cell values by setting the [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditing.html) property, [SfDataGrid.NavigationMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~NavigationMode.html)  as `Cell` and setting the [SfDataGrid.SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) as any other than None. 
 
@@ -433,3 +433,9 @@ this.dataGrid.ImeOptions = GridImeOptions.NoExtractUi;
 {% endtabs %}
 
 ![DataGrid with ImeOptions is NoExtractUi ](SfDataGrid_images/ImeOptions_NoExtractUI.png)
+
+## See also
+
+[How to commit the Edited cell values in SfDataGrid view](https://www.syncfusion.com/kb/8223)
+
+[How to commit the edited values when binding Dictionary in SfDataGrid](https://www.syncfusion.com/kb/7853)

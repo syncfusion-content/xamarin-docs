@@ -583,3 +583,11 @@ this.dataGrid.ShowColumnWhenGrouped = false;
 
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+[How to customize the expander icon for each level of group in Xamarin.Forms DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11014)
+
+[How to group a column in the actual order without sorting the data in SfDataGrid](https://www.syncfusion.com/kb/7852)
+
+[How to group by a column that is not in Columns collection](https://www.syncfusion.com/kb/7396)

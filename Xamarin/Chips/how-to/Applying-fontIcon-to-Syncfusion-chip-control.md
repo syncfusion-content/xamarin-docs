@@ -1,17 +1,18 @@
 ---
 layout : post
-title : How to apply the FontIcon for Syncfusion Chip control in Xamarin.Forms
-description : Learn how to apply the FontIcon to the Sfchip and its customization options with its available basic features in Xamarin.Forms
+title : How to apply the font icon to the Syncfusion chip control in Xamarin.Forms
+description : Learn how to apply the font icon  to the Sfchip and its customization options with its available basic features in Xamarin.Forms
 platform : xamarin
 control : Chips
 documentation : ug
 ---
 
-# Setting the FontIcon to SfChip
+# Setting the font icon to chip control
 
-FontIcon can be set to SfChip using the ImageSource property as per below steps. 
+This section explains the way to add font icon with its available feature in chip control. SfChip control has ImageSource property itself can set FontImageSource with enabling ShowIcon property as follows
 
-## Custom font file should be added to all the platform projects in specific location.
+## Custom font file should be added to all the platform projects in specific location
+
 * `Android` - Add a custom font file in the Assets folder and set Build Action to AndroidAsset for the font file.
 * `iOS` - Add a custom font file in the Resources folder and set Build Action to BundleResource. Then, ensure that the copy to output directory is set to AlwaysCopy.
 * `UWP` - Add a custom font file in the Assets folder and set Build Action to Content.
@@ -89,4 +90,4 @@ Create the instance for FontImageSource and set to ImageSource property of SfChi
 
 N> FontImageSource supported from Xamarin.Forms version 3.6 onwards.
 
-![ChipGroup FontIcon](images/How-to/FontIcon.png)
+![Xamarin.Forms chip group icon font support](images/FontIcon.png)

@@ -164,7 +164,7 @@ public class CommandViewModel
 
     private void TappedCommandMethod(object obj)
     {
-            App.Current.MainPage.DisplayAlert("Alert", (obj.AddedItems[0] as Countries).Name + " is Tapped", "OK");            
+        App.Current.MainPage.DisplayAlert("Alert", ((obj as Syncfusion.XForms.TreeView.ItemTappedEventArgs).Node.Content as Countries).Name + " is Tapped", "OK");
     }   
 }
 {% endhighlight %}
@@ -195,8 +195,8 @@ public class CommandViewModel
     }
 
     private void HoldingCommandMethod(object obj)
-    {
-            App.Current.MainPage.DisplayAlert("Alert", (obj.AddedItems[0] as Countries).Name + " is Holding", "OK");            
+    {          
+        App.Current.MainPage.DisplayAlert("Alert", ((obj as Syncfusion.XForms.TreeView.ItemTappedEventArgs).Node.Content as Countries).Name + " is Holding", "OK");
     }   
 }
 {% endhighlight %}

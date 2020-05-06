@@ -1,13 +1,13 @@
 ---
 layout: post
 title: MVVM | TreeView for Xamarin.Forms | Syncfusion
-description: Describes how to use TreeView in different cases of MVVM.
+description: This topic describes about how to use Syncfusion Xamarin.Forms SfTreeView with Commands, Event to command behavior and different cases of MVVM.
 platform: xamarin
 control: SfTreeView
 documentation: ug
 ---
 
-# MVVM
+# MVVM in Xamarin TreeView (SfTreeView)
 
 This section explains about how to work with MVVM pattern in TreeView.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: MVVM | TreeView for Xamarin.Forms | Syncfusion
-description: Describes how to use TreeView in different cases of MVVM.
+description: This topic describes about how to use Syncfusion Xamarin.Forms SfTreeView with Commands, Event to command behavior and different cases of MVVM.
 platform: xamarin
 control: SfTreeView
 documentation: ug
 ---
 
-# MVVM
+# MVVM in Xamarin TreeView (SfTreeView)
 
 This section explains about how to work with MVVM pattern in TreeView.
 
@@ -164,7 +164,7 @@ public class CommandViewModel
 
     private void TappedCommandMethod(object obj)
     {
-            App.Current.MainPage.DisplayAlert("Alert", (obj.AddedItems[0] as Countries).Name + " is Tapped", "OK");            
+        App.Current.MainPage.DisplayAlert("Alert", ((obj as Syncfusion.XForms.TreeView.ItemTappedEventArgs).Node.Content as Countries).Name + " is Tapped", "OK");
     }   
 }
 {% endhighlight %}
@@ -195,8 +195,8 @@ public class CommandViewModel
     }
 
     private void HoldingCommandMethod(object obj)
-    {
-            App.Current.MainPage.DisplayAlert("Alert", (obj.AddedItems[0] as Countries).Name + " is Holding", "OK");            
+    {          
+        App.Current.MainPage.DisplayAlert("Alert", ((obj as Syncfusion.XForms.TreeView.ItemTappedEventArgs).Node.Content as Countries).Name + " is Holding", "OK");
     }   
 }
 {% endhighlight %}

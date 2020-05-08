@@ -1,13 +1,13 @@
 ---
 layout: post
 title: TreeView Item Height Customization | Xamarin.Forms | Syncfusion
-description: Customize the height of items in a Xamarin.Forms TreeView. Auto fit the items based on content
+description: Customize the height of the items in a Xamarin.Forms TreeView. Autofit the items based on node content.
 platform: xamarin
 control: SfTreeView
 documentation: ug
 ---
 
-# Item Height Customization
+# Item Height Customization in Xamarin TreeView (SfTreeView)
 
 The TreeView provides various options to customize the height of items. To achieve this customization, please walkthrough the below sections:
 
@@ -186,3 +186,7 @@ You can download the entire source code of this demo [here](https://github.com/S
 ## Limitations
 
  * Define the size of the image when loading image in the [SfTreeView.ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html). Because, it does not return actual measured size when measuring before item layout.
+ 
+## See also
+
+[How to AutoFit the nodes based on the content in Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11418/)

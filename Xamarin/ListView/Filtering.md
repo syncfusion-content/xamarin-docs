@@ -153,3 +153,6 @@ private void DataSource_FilterChanged(object sender, NotifyCollectionChangedEven
 {% endhighlight %}
 {% endtabs %}
 
+## See also
+
+[How to filter Xamarin.Forms ListView (SfListView) using MVVM](https://www.syncfusion.com/kb/11478/)

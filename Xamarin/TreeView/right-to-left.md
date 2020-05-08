@@ -75,3 +75,7 @@ N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is 
 ## Limitations
 
 * When you use custom [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) in `TreeView`, it does not respond to `FlowDirection` due to framework issue. To respond to `FlowDirection` changes, you need to set `FlowDirection` of `TreeView` to parent view of your custom `ItemTemplate`.
+
+## See also
+
+[How to work with RTL in Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11414/how-to-work-with-rtl-in-xamarin-forms-treeview-sftreeview)

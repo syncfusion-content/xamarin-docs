@@ -1,13 +1,13 @@
 ---
 layout: post
 title: ListView Right-to-left | Xamarin.Forms | Syncfusion
-description: Describes how Xamarin.Forms ListView works on right-to-left localization.
+description: Describes how Xamarin.Forms ListView works on right-to-left localization and its limitation, swiping with RTL.
 platform: xamarin
 control: SfListView
 documentation: ug
 ---
 
-# Right to left(RTL)
+# Right To Left in Xamarin ListView (SfListView)
 
 ListView supports to change the flow of text to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` in both `Vertical` and `Horizontal` orientations. ListView supports RTL in Xamarin.Forms version 3.0 and above. It also supports RTL when device's flow direction is changed.
 

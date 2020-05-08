@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with TreeView for Xamarin.Forms | Syncfusion
-description: User guide explains needed references, adding control to app, binding data etc. with demo app.
+description: The user guide explains needed references, adding control to the app, binding data, etc. with demo app.
 platform: xamarin
 control: SfTreeView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin TreeView (SfTreeView)
 
 This section provides a quick overview for getting started with the TreeView for Xamarin.Forms. Walk through the entire process of creating an app with TreeView.
 

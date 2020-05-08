@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Filtering in Xamarin.Forms ListView | Syncfusion
-description: Describes about the filtering functionality in SfListView.
+description: Describes how to filter the data and its related operations in the SfListView.
 platform: xamarin
 control: SfListView
 documentation: ug
 ---
 
-# Filtering
+# Filtering in Xamarin ListView (SfListView)
 
 This section explains how to filter the data and its related operations in the SfListView.
 

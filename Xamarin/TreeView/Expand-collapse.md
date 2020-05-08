@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expand and Collapse | TreeView for Xamarin.Forms | Syncfusion
-description: Describes expanding and collapsing treeview nodes in xamarin.forms. And also explains about events associated with expanding and collapsing, programmatically expand and collapse.
+description: Describes expanding and collapsing treeview nodes in xamarin.forms. And also explains about events associated with expanding and collapsing.
 platform: xamarin
 control: SfTreeView
 documentation: ug

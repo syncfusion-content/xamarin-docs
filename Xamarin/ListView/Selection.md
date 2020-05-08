@@ -542,4 +542,5 @@ public partial class MainPage : ContentPage
 [How to disable a selection in the Xamarin.Forms listview](https://www.syncfusion.com/kb/9982)                                                                                                                                                                                    
 [How to disable selection for particular items in SfListView](https://www.syncfusion.com/kb/8516)                                                                                        
 [How to notify item selection using MVVM in Xamarin.Forms ListView](https://www.syncfusion.com/kb/9961)
-[How to change the ListView selected item text color in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11363)
+[How to change the ListView selected item text color in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11363)                                                                                                                                                                                
+[How to change selected image in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11486/)

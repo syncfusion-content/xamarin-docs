@@ -1283,4 +1283,7 @@ N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is 
 
 ## See also
 
-[How to set background color alternatively in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11295)                                                                                                                                             
+[How to set background color alternatively in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11295)                                                                                                                                                                                                                                                                 
+[How to work with Material Visual for custom ListView in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11468/)                                                                                                                                                                                                                                      
+[How to display URI images in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11485/)                                                                                                                                                            
+[How to change selected image in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11486/)

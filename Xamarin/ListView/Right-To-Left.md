@@ -39,4 +39,4 @@ N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is 
 
 ## See also
 
-![How to work with swiping with RTL in Xamarin.Forms ListView (SfListview)](https://www.syncfusion.com/kb/11479/)
+[How to work with swiping with RTL in Xamarin.Forms ListView (SfListview)](https://www.syncfusion.com/kb/11479/)

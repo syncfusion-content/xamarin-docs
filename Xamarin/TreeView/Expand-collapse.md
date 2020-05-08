@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Expand and Collapse | TreeView for Xamarin.Forms | Syncfusion
-description: Describes about expanding and collapsing nodes of TreeView.
+description: Describes expanding and collapsing treeview nodes in xamarin.forms. And also explains about events associated with expanding and collapsing.
 platform: xamarin
 control: SfTreeView
 documentation: ug
 ---
 
-# Expand and Collapse
+# Expand and Collapse in Xamarin TreeView (SfTreeView)
 
 The TreeView allows you to expand and collapse the nodes either by user interaction on the nodes or by programmatically. 
 
@@ -97,3 +97,9 @@ TreeView exposes following events to handle expanding and collapsing of items.
 The expanding and collapsing interactions can be handled with the help of `NodeCollapsing` and `NodeExpanding` events and expanded and collapsed interactions can be handled with help of `NodeCollapsed` and `NodeExpanded` events.
 
 You can also achieve handle expand and collapse operation using `ExpandCommand` and `CollapseCommand`.
+
+## See also
+
+[How to expand and collapse TreeView node using image instead expander](https://www.syncfusion.com/kb/10289/)                                                                                                                                                                                           
+[How to expand the particular TreeView node in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11361/)                                                                                                                                                                                                                        
+[How to expand the TreeView node using MR.Gesture in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11368/)                                                                                                                                                                                                                                  

@@ -7,7 +7,7 @@ control: sfbutton
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started Xamarin Button (SfButton)
 
 This section explains the steps required to work with the button control for Xamarin.Forms.
 
@@ -277,5 +277,33 @@ button.CornerRadius = new Thickness(20);
 {% endtabs %}
 
 ![Button with background image](images/ButtonWithBackgroundImage.png)
+
+## Event
+When the [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html) is clicked the Click event will be raised.This case is generally used where no command name is connected to the [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html).
+
+{% tabs %}
+{% highlight xaml %}
+
+ <buttons:SfButton x:Name="SfButton" Text="Button" Clicked="Button_Clicked"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+public MainPage()
+        {
+            InitializeComponent();
+            SfButton button = new SfButton();
+            button.Text = "Button";
+            button.Clicked += Button_Clicked;
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+           // 
+        }
+
+{% endhighlight %}
+{% endtabs %}
+
 
 You can find the complete getting started sample here: [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Button_GettingStarted-1596781257.zip).

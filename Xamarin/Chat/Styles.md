@@ -1213,3 +1213,61 @@ public MainPage()
 ![Xamarin Forms Chat send button disable](Styles_images/Xamarin-Forms-chat-sendicon-disable-style.jpg)
 
 ![Xamarin Forms Chat send button Enable](Styles_images/Xamarin-Forms-chat-sendicon-enable-style.jpg)
+
+## Attachment Button styling
+
+You can style the attachment button by setting values to the in-built keys of the attachment button in resource dictionary.
+
+<table>
+<tr>
+<th> Key </th>
+<th> Description </th>
+</tr>
+<tr>
+<td> SfChatAttachmentButtonColor </td>
+<td> Color of the attachment button. </td>
+</tr>
+<tr>
+<td> SfChatAttachmentButtonEffectColor </td>
+<td> Color of the effect when attachment button is clicked. </td>
+</tr>
+</table>
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <ContentPage.Resources>
+        <syncTheme:SyncfusionThemeDictionary>
+            <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+                <ResourceDictionary>
+                    <x:String x:Key="SfChatTheme">CustomTheme</x:String>
+                    <Color x:Key="SfChatAttachmentButtonColor">Orange</Color>
+                </ResourceDictionary>
+            </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+        </syncTheme:SyncfusionThemeDictionary>
+    </ContentPage.Resources>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//MainPage.cs
+
+public MainPage()
+{
+    ....
+    InitializeComponent();
+    ResourceDictionary dictionary = new ResourceDictionary();
+    dictionary.Add("SfChatTheme", "CustomTheme");
+    dictionary.Add("SfChatAttachmentButtonColor", Color.Orange);
+	this.Resources.Add(dictionary);
+    ....
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+![Xamarin Forms Chat attachment button](Styles_images/Xamarin-Forms-chat-attachmentbutton-style.png)

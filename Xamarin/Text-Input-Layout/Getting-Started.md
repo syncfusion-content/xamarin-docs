@@ -7,7 +7,7 @@ control: SfTextInputLayout
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Text Input Layout (SfTextInputLayout)
 
 This section explains the steps required to configure the text input layout control with floating label.
 
@@ -214,4 +214,4 @@ inputLayout.InputView = new Entry() { Text = "John" };
 
 N> Password visibility toggle can be enabled only for [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry) control.
 
-You can find the complete getting started sample from this [link.]( https://s3.amazonaws.com/files2.syncfusion.com/Xamarin.Forms/Samples/TextInputLayout.zip)
+You can find the complete getting started sample from this [link.]( https://github.com/SyncfusionExamples/Getting-started-SfTextInputLayout-Xamarin)

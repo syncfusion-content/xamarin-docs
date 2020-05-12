@@ -7,7 +7,7 @@ control: SfTextInputLayout
 documentation: ug
 ---
 
-# Getting Started in Xamarin.Forms (SfTextInputLayout)
+# Getting Started with Xamarin Text Input Layout (SfTextInputLayout)
 
 This section explains the steps required to configure the text input layout control with floating label.
 

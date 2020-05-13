@@ -476,7 +476,7 @@ date.IsOpen = !date.IsOpen;
 {% endhighlight %}
 {% endtabs %}
 
-N> The default value is the initial value of the ItemsSource collection.
+N> The default value is the initial value of the ItemsSource collection. The default minimum year is 1990 and the maximum year is 2050 provided in the collection.
 
 The following screenshot illustrates the output of the above codes.
 

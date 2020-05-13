@@ -1159,9 +1159,13 @@ private void Tapped(object args)
 {% endhighlight %}
 {% endtabs %}
 
+You can download the complete project demo to show the tapped image in full screen from [here](https://github.com/SyncfusionExamples/How-to-display-the-tapped-image-in-full-screen-in-Xamarin.Forms-chat).
+
 ### Adding image message as an outgoing message
 
 Unlike the other messages, the `ImageMessage` can also be shown as an outgoing message. To add an `ImageMessage` as an outgoing message just set the `ImageMessage.Author` as `SfChat.CurrentUser`. You can also add an image message when clicking the attachment button as shown [here](https://help.syncfusion.com/xamarin/chat/attachment-button).
+
+![Send image message](SfChat_images/ImageMessage_Outgoing.png)
 
 ### Displaying a GIF as an image message
 
@@ -1283,12 +1287,13 @@ namespace GettingStarted
         public CustomImageView()
         {
             InitializeComponent();
-            imageWave.Source =  ImageSource.FromUri(new Uri("https://media.giphy.com/media/l0Hlyi4ZMJI9MpFUQ/giphy.gif"));
         }
     }
 }
 {% endhighlight %}
 {% endtabs %}
+
+You can download the complete project of this demo from [here](https://github.com/SyncfusionExamples/How-to-display-a-GIF-in-Xamarin.Forms-Chat).
 
 ## Sending message
 

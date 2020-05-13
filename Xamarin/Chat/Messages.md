@@ -902,7 +902,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Image message
 
-`ImageMessage` is used to display an image as a message. Using the `ImageMessage.Source`, `ImageMessage.Size`and `ImageMessage.Aspect` properties you can display the desired image in the desired height and width as a message in the chat control.
+[ImageMessage](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage.html) is used to display an image as a message. Using the [ImageMessage.Source](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage~Source.html), [ImageMessage.Size](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage~Size.html) and [ImageMessage.Aspect](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage~Aspect.html) properties you can display the desired image in the desired height and width as a message in the chat control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1059,7 +1059,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ### Event and command
 
-The `ImageMessage` comes with in-built `SfChat.ImageTapped` event and `SfChat.ImageTappedCommand` that will be fired upon tapping an image message. You can get the instance of the `ImageMessage` that was tapped in the `ImageTappedEventArgs` as `ImageTappedEventArgs.Message`. You can handle this event/command to achieve requirements like to show the image in full screen, or show options for sharing the image etc.
+The `ImageMessage` comes with in-built [SfChat.ImageTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ImageTapped_EV.html) event and [SfChat.ImageTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ImageTappedCommand.html) that will be fired upon tapping an image message. You can get the instance of the `ImageMessage` that was tapped in the [ImageTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageTappedEventArgs.html) as `ImageTappedEventArgs.Message`. You can handle this event/command to achieve requirements like to show the image in full screen, or show options for sharing the image etc.
 
 **ImageTapped event**
 
@@ -1159,13 +1159,17 @@ private void Tapped(object args)
 {% endhighlight %}
 {% endtabs %}
 
+You can download the complete project demo to show the tapped image in full screen from [here](https://github.com/SyncfusionExamples/How-to-display-the-tapped-image-in-full-screen-in-Xamarin.Forms-chat).
+
 ### Adding image message as an outgoing message
 
-Unlike the other messages, the `ImageMessage` can also be shown as an outgoing message. To add an `ImageMessage` as an outgoing message just set the `ImageMessage.Author` as `SfChat.CurrentUser`. You can also add an image message when clicking the attachment button as shown [here](https://help.syncfusion.com/xamarin/chat/attachment-button).
+Unlike the other messages, the `ImageMessage` can also be shown as an outgoing message. To add an `ImageMessage` as an outgoing message just set the [ImageMessage.Author](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Author.html) as [SfChat.CurrentUser](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html). You can also add an image message when clicking the attachment button as shown [here](https://help.syncfusion.com/xamarin/chat/attachment-button).
+
+![Send image message](SfChat_images/ImageMessage_Outgoing.png)
 
 ### Displaying a GIF as an image message
 
-You can write style targeting the `ControlTemplate` property of the `ChatImageView` and add it to the application's resources as shown below. You can assign your custom template view that is capable of loading a GIF image as the `ControlTemplate` of `ChatImageView` using `Style.Setter`. Here in the below code example we have loaded our `CustomImageView` as `ControlTemplate` of the `ChatImageView`.
+You can write style targeting the [ControlTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ControlTemplate.html) property of the [ChatImageView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatImageView.html) and add it to the application's resources as shown below. You can assign your custom template view that is capable of loading a GIF image as the `ControlTemplate` of `ChatImageView` using `Style.Setter`. Here in the below code example we have loaded our `CustomImageView` as `ControlTemplate` of the `ChatImageView`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1283,12 +1287,13 @@ namespace GettingStarted
         public CustomImageView()
         {
             InitializeComponent();
-            imageWave.Source =  ImageSource.FromUri(new Uri("https://media.giphy.com/media/l0Hlyi4ZMJI9MpFUQ/giphy.gif"));
         }
     }
 }
 {% endhighlight %}
 {% endtabs %}
+
+You can download the complete project of this demo from [here](https://github.com/SyncfusionExamples/How-to-display-a-GIF-in-Xamarin.Forms-Chat).
 
 ## Sending message
 

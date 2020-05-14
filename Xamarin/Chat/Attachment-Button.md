@@ -255,3 +255,7 @@ public partial class MainPage : ContentPage
 {% endtabs %}
 
 ![Custom attachment button in xamarin forms chat](SfChat_images/AttachmentButton_template.png)
+
+## Attach image from gallery in Xamarin.Forms chat (SfChat)
+
+You can add the desired image in to the chat by opening the device's gallery when `AttachmentButton` is tapped. You can download the entire project demo of adding an image from gallery in to SfChat from GitHub [here](https://github.com/SyncfusionExamples/How-to-attach-image-from-gallery-in-Xamarin.Forms-chat).

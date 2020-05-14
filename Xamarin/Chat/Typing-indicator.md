@@ -323,7 +323,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
 
 ## Notifications when user start/stop typing
  
-You can access the typing area in SfChat using `SfChat.Editor` property, listen to its focus change, text change, completed events etc to identify when the user starts/ends typing.
+You can access the typing area in SfChat using [SfChat.Editor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~Editor.html) property, listen to its focus change, text change, completed events etc to identify when the user starts/ends typing.
 
 {% tabs %}
 {% highlight xaml %}

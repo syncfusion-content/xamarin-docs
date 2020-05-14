@@ -1420,7 +1420,7 @@ public class SendMessageCommandExt : ICommand
 
 ## Scroll down the chat control to bottom when new message is added
 
-By default the SfChat control is scrolled to the bottom to show the newly added message. If you want to disable this auto scroll, set `SfChat.CanAutoScrollToBottom` as `false`. Additionally you can also scroll to a particular message programmatically using the [SfChat.ScrollToMessage(Object)](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ScrollToMessage.html) method.
+By default the SfChat control is scrolled to the bottom to show the newly added message. If you want to disable this auto scroll, set [SfChat.CanAutoScrollToBottom](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CanAutoScrollToBottom.html) as `false`. Additionally you can also scroll to a particular message programmatically using the [SfChat.ScrollToMessage(Object)](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ScrollToMessage.html) method.
 
 {% tabs %}
 {% highlight xaml %}

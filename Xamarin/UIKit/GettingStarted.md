@@ -37,7 +37,7 @@ This is the easiest way to add the pre-defined screens to your application. The 
  
 6. Right-click the Xamarin.Forms [NETStandard] project, and you can see the **Essential UI Kit for Xamarin.Forms** option.
 
-N> The **Essential UI Kit for Xamarin.Forms** add-in will be shown when the project have the **Xamarin.Forms** NuGet package as a referrence and also, Xamarin.Forms project should be a NETStandard project.
+N> The **Essential UI Kit for Xamarin.Forms** add-in will be shown when the project have the **Xamarin.Forms** NuGet package as a reference and also, Xamarin.Forms project should be a NETStandard project.
 
 7. Select the category and pages you need to add in your application. In the following screenshot, the **Login Page with Gradient** screen has been selected from the **Login** category. 
 

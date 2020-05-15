@@ -57,7 +57,7 @@ N> The **Essential UI Kit for Xamarin.Forms** add-in will be shown when the proj
 
 	![Visual Studio UIkit Category](UI-Kit-images/MAC_Extension.png)
 
-N> The **Essential UI Kit for Xamarin.Forms** add-in will be shown when the project have the **Xamarin.Forms** NuGet package as a referrence and also, Xamarin.Forms project should be a NETStandard project.
+N> The **Essential UI Kit for Xamarin.Forms** add-in will be shown when the project have the **Xamarin.Forms** NuGet package as a reference and also, Xamarin.Forms project should be a NETStandard project.
 
 4.	Select the category and pages you need to add in your application and click Add. In the following screenshot, the Simple Login Page screen has been selected from the Forms category.
     

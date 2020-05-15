@@ -277,3 +277,5 @@ button.CornerRadius = new Thickness(20);
 {% endtabs %}
 
 ![Button with background image](images/ButtonWithBackgroundImage.png)
+
+You can find the complete getting started sample here: [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Button_GettingStarted-1596781257.zip).

@@ -7,7 +7,7 @@ control: sfbutton
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Button (SfButton)
 
 This section explains the steps required to work with the button control for Xamarin.Forms.
 
@@ -277,5 +277,3 @@ button.CornerRadius = new Thickness(20);
 {% endtabs %}
 
 ![Button with background image](images/ButtonWithBackgroundImage.png)
-
-You can find the complete getting started sample here: [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Button_GettingStarted-1596781257.zip).

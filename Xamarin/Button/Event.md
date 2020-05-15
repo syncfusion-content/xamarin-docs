@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-# Event
+# Events in Xamarin Button (SfButton)
 
 ## Clicked event
 

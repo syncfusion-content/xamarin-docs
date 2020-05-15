@@ -7,7 +7,7 @@ control: sfbutton
 documentation: ug
 ---
 
-# Getting Started 
+# Getting Started with Xamarin Button (SfButton)
 
 This section explains the steps required to work with the button control for Xamarin.Forms.
 

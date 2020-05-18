@@ -72,3 +72,4 @@ public class PopulationViewModel
 
 {% endtabs %}  
 
+N> The SfTreeMap control also supports the binding of nested properties.

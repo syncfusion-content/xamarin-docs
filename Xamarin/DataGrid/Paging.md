@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Paging
+# Paging in Xamarin DataGrid (SfDataGrid)
 
 The data grid interactively supports manipulation of data using [SfDataPager](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataPager_namespace.html# “”) control. This provides built-in options to page data on demand when dealing with large volumes of data. `SfDataPager` can be placed above or below based on the requirement to easily manage data paging.
 
@@ -353,3 +353,7 @@ public class CustomAppearance : AppearanceManager
 
 ![DataPager with customized border color](SfDataGrid_images/DataPagerBorderColor.png)
 
+
+## See also
+
+[How to have different page size in SfDataPager with SfDataGrid when the device is in horizontal and vertical orientation mode](https://www.syncfusion.com/kb/9299)

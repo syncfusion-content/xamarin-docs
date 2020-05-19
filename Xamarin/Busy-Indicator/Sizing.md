@@ -1,12 +1,14 @@
 ---
 layout: post
 title: Sizing support in Syncfusion SfBusyIndicator control for Xamarin.Forms
-description: Learn how to customize the size of the control viewbox
+description: This section will explain about how to customize the size of the Xamarin.Forms SfBusyIndicator control viewbox.
 platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
 # Sizing
+
+## Sizing in Xamarin BusyIndicator (SfBusyIndicator)
 
 Drawing size can be customized in SfBusyIndicator. `ViewBoxHeight` and `ViewBoxWidth` properties can be used to set height and width of the Indicator.
 
@@ -61,6 +63,3 @@ namespace GettingStarted
 {% endtabs %}
 
 ![Height and width](images/heightand width.png)  
-
-
-

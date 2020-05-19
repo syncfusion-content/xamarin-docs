@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.Forms 
-description: A quick tour to initial users on Syncfusion SfMaskedEdit control for Xamarin.Forms platform
+description: A quick tour to initial users for getting started with Syncfusion SfMaskedEdit control for Xamarin.Forms
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
 
-# Getting Started
+# Getting Started with SfMaskedEdit 
 
-This section explains you the steps required to configure a `SfMaskedEdit` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfMaskedEdit` control.
+This section explains you the steps required to configure a [`SfMaskedEdit`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) control in a real-time scenario and provides a walk-through on some of the customization features available in [`SfMaskedEdit`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) control.
 
 ## Adding SfMaskedEdit reference
 
@@ -158,7 +158,7 @@ namespace GettingStarted
 
 ## Masking the input
 
-To mask the input, set the `Mask` property as follows:
+To mask the input, set the [`Mask`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Mask.html) property as follows:
 
 {% tabs %}
 {% highlight xaml %}

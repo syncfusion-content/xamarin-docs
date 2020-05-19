@@ -1,26 +1,27 @@
 ---
-layout : post
-title : Undo and Redo operations in Syncfusion SfImageEditor control in Xamarin.Forms
-description : Learn how to perform undo and redo operations in ImageEditor for Xamarin.Forms
-platform : xamarin.forms
-control : ImageEditor
-documentation : ug
+layout: post
+title: Undo and Redo operations in Syncfusion SfImageEditor in Xamarin.Forms
+description: Learn how to perform the undo and redo operations in SfImageEditor control for Xamarin.Forms platform
+platform: xamarin.forms
+control: ImageEditor
+documentation: ug
 ---
 
-# Undo and Redo
+# Undo and Redo operations in SfImageEditor
 
-One of the important features of the image editor control is to perform `Undo` and `Redo` operations for adding shapes, text, and drawing paths. 
+One of the important features of the image editor control is to perform `Undo` and `Redo` operations for adding shapes, text, effects, and drawing paths. 
 
 ## Undo
 
-The `Undo` method is used to revert the changes done previously over an image.
+The [`Undo`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~Undo.html) method is used to revert the changes done previously over an image.
 
 Undo can be performed for the following operations:
 
-* Add/delete shapes or text.
-* Change positions.
-* Color/fill changes.
-* Path drawings.
+* Add or delete shapes or text
+* Change positions
+* Color or fill changes
+* Path drawings
+* Applying effects
 
 {% tabs %}
 
@@ -34,7 +35,7 @@ editor.Undo();
 
 ## Redo
 
-The `Redo` method is used to redo the changes that are reverted by undo operation.
+The [`Redo`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~Redo.html) method is used to redo the changes that are reverted by undo operation.
 
 {% tabs %}
 
@@ -47,5 +48,3 @@ editor.Redo();
 {% endtabs %}
 
 N> Undo and redo cannot be applied for cropping and transformations.
-
-![SfImageEditor](ImageEditor_images/undoredo.gif)

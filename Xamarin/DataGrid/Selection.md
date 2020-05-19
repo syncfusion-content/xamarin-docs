@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Selection
+# Selection in Xamarin.Forms.DataGrid (SfDataGrid)
 
 This section explains how to enable selection in the data grid; modes, properties, and events involved in selection; and customizations available for selection.
 
@@ -295,6 +295,24 @@ public class CustomSelectionController : GridSelectionController
             }
         }
     }
+{% endhighlight %}
+{% endtabs %}
+
+### Move Current Cell
+
+The `CurrentCell` can be moved to a particular `RowColumnIndex` by using the [SfDataGrid.MoveCurrentCellTo()](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~MoveCurrentCellTo.html) method. This method is not applicable when the `SfDataGrid.SelectionMode` is `None` or `NavigationMode` is `Row`.
+
+{% tabs %}
+{% highlight c# %}
+dataGrid.MoveCurrentCellTo(new RowColumnIndex(3, 3),false);
+{% endhighlight %}
+{% endtabs %}
+
+When the `SfDataGrid.SelectionMode` is `Multiple`, when moving the current cell, if you want to clear the selection of the currently selected items , pass true to the `needToClearSelection` parameter in the `MoveCurrentCellTo()` method.
+ 
+ {% tabs %}
+{% highlight c# %}
+dataGrid.MoveCurrentCellTo(new RowColumnIndex(4, 3),true);
 {% endhighlight %}
 {% endtabs %}
 
@@ -690,3 +708,17 @@ The SfDataGrid allows you to bind the selection properties such as [SelectedInde
         }
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+[How to enable the MultiSelection in GridComboBoxColumn of DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11045)
+
+[How to apply animation for the selected rows in SfDataGrid](https://www.syncfusion.com/kb/7793)
+
+[How to change selected index of one picker in other pickers selection changed event in SfDataGrid](https://www.syncfusion.com/kb/7449)
+
+[How to get the cell value of specific row and column](https://www.syncfusion.com/kb/7435)
+
+[How to pass selected row's data to a command](https://www.syncfusion.com/kb/7388)
+
+[How to apply multiple selection colors in SfDataGrid](https://www.syncfusion.com/kb/7387)

@@ -6,7 +6,7 @@ platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
-# FAQ
+# FAQ in Xamarin.Forms Popup (SfPopupLayout)
 
 ## Load the SfPopupLayout in GridTappedEvent of the SfDataGrid
 
@@ -784,6 +784,8 @@ Sample Link: You can download the above sample code by clicking [here](https://g
 
 The [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) or [SfPopupLayout.IsVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsVisible.html) property is used to close the [SfPopupLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout.html)
 
+{% tabs %}
+
 {% highlight xaml %}
 
 <?xml version="1.0" encoding="utf-8" ?>
@@ -841,11 +843,14 @@ namespace Popup_Demo
 
 {% endhighlight %}
 
+{% endtabs %}
 
 ## How to change popup view background color 
 
 The background color of popup view can be customized by setting the [SfPopupLayout.PopupView.BackGroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~BackgroundColor.html)
 property.
+
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -908,6 +913,7 @@ namespace Popup_Demo
 
 {% endhighlight %}
 
+{% endtabs %}
 
 Sample Link: You can download the above sample code by clicking [here](https://github.com/SyncfusionExamples/how-to-set-background-color-for-popupview-in-xamarin-popup).
 
@@ -939,3 +945,43 @@ By default, the overlay background will not be shown around the Popup if all the
   popUpLayout.ShowOverlayAlways = true;
 {% endhighlight %}
 {% endtabs %}
+
+## How to disable the shadow around the Xamarin.Forms popup view?
+
+By default, a shadow will be shown around the popup view. To disable this shadow around the popup, set the [SfPopupLayout.PopupView.PopupStyle.HasShadow](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupStyle~HasShadow.html) to false.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<sfPopup:SfPopupLayout x:Name="popUpLayout" ShowOverlayAlways="False">
+    <sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:PopupView>
+            <sfPopup:PopupView.PopupStyle>
+                <sfPopup:PopupStyle HasShadow="False"
+            </sfPopup:PopupView.PopupStyle>
+        </sfPopup:PopupView>
+    </sfPopup:SfPopupLayout.PopupView>
+</sfPopup:SfPopupLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+//MainPage.cs
+
+public MainPage()
+{
+    ....
+    InitializeComponent();
+    popupLayout.PopupView.PopupStyle.HasShadow = false;
+    popUpLayout.ShowOverlayAlways = false;
+    ....
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Popup with no shadow](PopupLayout_images/HasShadow.jpg)
+

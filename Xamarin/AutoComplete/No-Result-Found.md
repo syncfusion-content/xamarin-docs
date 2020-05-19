@@ -1,12 +1,14 @@
 ---
 layout: post
 title: NoResultsFoundText in Syncfusion SfAutoComplete control for Forms
-description: Learn how to display the no result found text in SfAutoComplete
+description: This section will describe about how to display the no result found text in Xamarin.Forms SfAutoComplete.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
 # No Results Found
+
+## No Results found in Xamarin SfAutoComplete
 
 When the entered item is not in the suggestion list, SfAutoComplete displays a text indicating there is no search results found. We can set the desire text to be displayed for indicating no results found with the `NoResultsFoundText` property.
 

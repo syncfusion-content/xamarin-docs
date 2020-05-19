@@ -39,6 +39,67 @@ chart.Legend = new ChartLegend();
 
 ![Legend support in Xamarin.Forms Chart](legend_images/legend_img1.png)
 
+## Customizing background & border
+
+The [`Legend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend.html) provides following properties to customize the legend area border and background. 
+
+* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~BackgroundColor.html) - used to change legend background color.
+* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~StrokeColor.html) - used to change legend border color.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~StrokeWidth.html) - used to change legend border width 
+* [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~StrokeDashArray.html) - used to render legend border line with dashes.
+* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~Margin.html) - used to change legend panel margin with legend border.
+* [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~CornerRadius.html) - used to add the rounded corners to the legend border rectangle. The TopLeft, TopRight, BottomLeft and BottomRight of ChartCornerRadius properties are used to set the radius value for each corner.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+xmlns:sys="clr-namespace:System;assembly=mscorlib" 
+xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms" 
+
+...  
+
+<chart:SfChart>
+
+	<chart:SfChart.Legend>
+
+		 <chart:ChartLegend StrokeColor="Black" CornerRadius="5" StrokeWidth="2"
+                                    BackgroundColor="#f5f5f0" Margin="5">
+
+                        <chart:ChartLegend.StrokeDashArray>
+                            <x:Array Type="{x:Type sys:Double}">
+                                <sys:Double>3</sys:Double>
+                                <sys:Double>3</sys:Double>
+                            </x:Array>
+                        </chart:ChartLegend.StrokeDashArray>
+
+                    </chart:ChartLegend>
+
+	</chart:SfChart.Legend>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+ ChartLegend legend = new ChartLegend();
+ legend.BackgroundColor = Color.FromRgb(245, 245, 240);
+ legend.Stroke = Color.Black;
+ legend.StrokeWidth = 2;
+ legend.Margin = new Thickness(5);
+ legend.CornerRadius = new ChartCornerRadius(5);
+ legend.StrokeDashArray = new double[] { 3, 3 };
+
+ chart.Legend = legend;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Legend background and border customization in Xamarin.Forms Chart](legend_images/legend_background.jpg)
+
 ## Customizing labels
 
 The [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Label.html) property of [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html) is used to define the label for the corresponding series legend item. The appearance of the label can be customized using the [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegend~LabelStyle.html) property. 

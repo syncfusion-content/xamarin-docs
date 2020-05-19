@@ -611,6 +611,834 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 </table>
 
+
+## SfChat
+
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="60">
+            SfChatStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfChatTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfChat without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfChatTheme">CustomTheme</x:String> 
+                <Color x:Key="SfChatIncomingMessageTextColor">Blue</Color> 
+                <Color x:Key="SfChatIncomingMessageAuthorTextColor">Green</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	
+	<tr>
+        <td>
+            SyncPrimaryColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the outgoing message, color of the date picker icon, border color of date picker, color of time picker icon and the border color of time picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+	
+	<tr>
+        <td>
+            SyncPrimaryLightColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the text in the time break view, date picker, time picker and the item in the list of suggestions.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+
+    <tr>
+        <td>
+            SfChatIncomingMessageTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+
+	<tr>
+        <td>
+            SfChatIncomingMessageAuthorTextColor 
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the author name in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+
+    <tr>
+        <td>
+            SfChatIncomingMessageTimestampTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the timestamp in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+    
+    <tr>
+        <td>
+            SfChatIncomingMessageBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfChatIncomingMessageFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfChatIncomingMessageFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfChatIncomingMessageFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfChatIncomingMessageAuthorFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the author name in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfChatIncomingMessageAuthorFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+             Font attributes of the author name in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfChatIncomingMessageAuthorFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the author name in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfChatIncomingMessageTimestampFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the timestamp in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfChatIncomingMessageTimestampFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the timestamp in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfChatIncomingMessageTimestampFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the timestamp in an incoming message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SyncPrimaryForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfChatOutgoingMessageAuthorTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the author name in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfChatOutgoingMessageTimestampTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the timestamp in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+            SfChatOutgoingMessageFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfChatOutgoingMessageFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfChatOutgoingMessageFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfChatOutgoingMessageAuthorFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the author name in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+
+    <tr>
+        <td>
+            SfChatOutgoingMessageAuthorFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the author name in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+    
+    <tr>
+        <td>
+            SfChatOutgoingMessageAuthorFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the author name in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+ 
+    <tr>
+        <td>
+            SfChatOutgoingMessageTimestampFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the timestamp in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+	<tr>
+        <td>
+            SfChatOutgoingMessageTimestampFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the timestamp in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+	<tr>
+        <td>
+            SfChatOutgoingMessageTimestampFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the timestamp in an outgoing message.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+	
+	<tr>
+        <td>
+            SfChatEditorTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the text in the editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+	
+	<tr>
+        <td>
+            SfChatEditorBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            SfChatEditorFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the text in the editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+	
+	<tr>
+        <td>
+            SfChatEditorFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the text in the editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            SfChatEditorFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the text in the editor.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+	<tr>
+        <td>
+            SfChatSendButtonColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the send button.
+            <br/>
+            <br/>
+        </td>
+    </tr>    
+	
+	<tr>
+        <td>
+            SfChatSendButtonDisabledColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the send button when it is in `Disabled` state.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            SfChatTypingIndicatorTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color in the typing indicator.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+	<tr>
+        <td>
+            SfChatTypingIndicatorBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the typing indicator.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            SfChatTypingIndicatorFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the text in the typing indicator.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            SfChatTypingIndicatorFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the text in the typing indicator.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+    
+	<tr>
+        <td>
+            SfChatTypingIndicatorFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the text in the typing indicator.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            SfChatTimeBreakViewBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the time break view.
+            <br/>
+            <br/>
+        </td>
+    </tr>    
+	
+	<tr>
+        <td>
+            SfChatTimeBreakViewFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Font family of the text in the time break view.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+	
+	<tr>
+        <td>
+            SfChatTimeBreakViewFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the text in the time break view.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+	
+	<tr>
+        <td>
+            SfChatTimeBreakViewFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the text in the time break view.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+	
+	<tr>
+        <td>
+            SfChatSuggestionListItemBackgroundColor	
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of an item in the list of suggestions.
+            <br/>
+            <br/>
+        </td>
+    </tr>      
+	
+	<tr>
+        <td>
+            SfChatSuggestionListItemFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of an item in the list of suggestions.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+	
+	<tr>
+        <td>
+            SfChatSuggestionListItemFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of an item in the list of suggestions.
+            <br/>
+            <br/>
+        </td>
+    </tr>    
+	
+	<tr>
+        <td>
+            SfChatSuggestionListItemFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of an item in the list of suggestions.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+	
+	<tr>
+        <td>
+            SfChatSuggestionListItemBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of an item in the list of suggestions.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+		
+	<tr>
+        <td>
+            SfChatDatePickerBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of date picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatTimePickerBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of time picker.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatEditorPlaceholderTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Place holder text color of the editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatEditorBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            The border color of editor.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatMessageInputViewBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Message input view background color.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatTimeBreakViewBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Border color of the time break view.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatHyperlinkColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the URL in a hyper link message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatHyperlinkDescriptionTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the URL's meta description in a hyper link message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatHyperlinkDescriptionBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the URL description area in a hyper link message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+
+	<tr>
+        <td>
+            SfChatHyperlinkMetaTitleTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of the URL's meta title in a hyper link message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatCalendarBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the calendar message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+</table>
+
 ## SfDateTimeRangeNavigator
 
 <table>
@@ -6568,7 +7396,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 	<tr>
     <td>
-            SfImageEditorToolbarSelectionColor         
+            SfImageEditorToolbarPressedColor         
             <br/>
             <br/>
         </td>
@@ -6607,7 +7435,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 	<tr>
     <td>
-            SfImageEditorToolbarSliderProgressColor            
+            SyncPrimaryColor            
             <br/>
             <br/>
         </td>
@@ -6672,7 +7500,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 	<tr>
     <td>
-            SfImageEditorTextPreviewerButtonColor                 
+            SyncPrimaryLightColor                 
             <br/>
             <br/>
         </td>
@@ -6698,7 +7526,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 	<tr>
     <td>
-            SfImageEditorTextPreviewerButtonPressedColor                   
+            SyncPrimaryForegroundColor                   
             <br/>
             <br/>
         </td>
@@ -6724,7 +7552,7 @@ This page lists the keys for each control and the element to which it is mapped 
 
 	<tr>
     <td>
-            SfImageEditorCheckBoxStrokeColor                     
+            SyncPrimaryLightColor                     
             <br/>
             <br/>
         </td>

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Markers in Syncfusion Map control
-description: This section describes about map marker.
+description: This section describes about adding marker, customizing marker, custom marker support, marker alignment support in Xamarin Forms SfMaps control.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Markers
+# Markers support in SfMaps control
 
 Markers are used to show some messages on maps.
 
@@ -16,7 +16,7 @@ Markers are set to the maps control using the following ways:
 * Adding marker objects
 * Defining custom markers
 
-## Adding marker objects
+## Adding a marker objects
 
 Any number of markers can be added to the shape file layers using the [`Markers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLayer~Markers.html) property. Each marker object contains the following properties:
 
@@ -28,7 +28,7 @@ Any number of markers can be added to the shape file layers using the [`Markers`
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
                 <maps:SfMaps.Layers>
@@ -84,7 +84,7 @@ The size and color of marker icons can be customized using the [`IconSize`](http
 
 ### Icon types
 
-The shape of a marker icon can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~MarkerIcon.html#) property. The maps control supports the following types of marker icons:
+The shape of a marker icons can be customized using the [`MarkerIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~MarkerIcon.html#) property. The maps control supports the following types of marker icons:
 
 * Circle
 * Diamond
@@ -94,7 +94,7 @@ The shape of a marker icon can be customized using the [`MarkerIcon`](https://he
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <maps:SfMaps x:Name="sfmap">
 
@@ -156,13 +156,13 @@ The shape of a marker icon can be customized using the [`MarkerIcon`](https://he
 
 ![Marker Icon Image](Images/Marker_icon_type.png)
 
-### Setting contrast color
+### Setting a contrast color
 
-Based on the background color of the shapes, contrast color will be applied to marker icon.
+Based on the background color of the shapes, contrast color will be applied to marker icons.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
             <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
                 <maps:SfMaps.Layers >
@@ -299,13 +299,13 @@ Based on the background color of the shapes, contrast color will be applied to m
 
 ![Marker icon color change based on background color support in Xamarin.Forms Maps](Images/MarkerIconContrastColor.jpg) 
 
-### Setting image marker icon
+### Setting a image marker icon
 
 You can pin an image as marker icon by setting the icon type as `Image`. Set [`ImageSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~ImageSource.html) to get the image from local path.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
      <maps:SfMaps x:Name="sfmap">
         
@@ -389,7 +389,7 @@ The following code sample explains how to customize a marker.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
     <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
                 <maps:SfMaps.Layers>
@@ -455,13 +455,13 @@ SfMaps map = new SfMaps();
 
 ![Marker customization](Images/Markers_img4.jpeg)
 
-## Custom marker
+## Add custom marker
 
-The maps control provides support for defining custom markers using the [`MarkerTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLayer~MarkerTemplate.html) property.
+The maps control provides the support for defining the custom markers using the [`MarkerTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLayer~MarkerTemplate.html) property.
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
 
 <maps:SfMaps x:Name="sfmap"  BackgroundColor="White">
 
@@ -612,7 +612,7 @@ ImageName = ImageSource.FromResource("MapsSample.pin.png");
 
 You can align the maps marker horizontally and vertically using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~HorizontalAlignmentProperty.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapMarkerSetting~VerticalAlignmentProperty.html) properties. 
 
-### Setting horizontal alignment
+### Setting a horizontal alignment
 
 The HorizontalAlignment property is used to position the marker icon in x-axis. The marker icon can be positioned using the following ways in x-axis:
 
@@ -670,7 +670,7 @@ this.Content = map;
 
 ![HorizontalAlignment](Images/Horizontal_Alignment.png)
 
-### Setting vertical alignment
+### Setting a vertical alignment
 
 The VerticalAlignment property is used to position the marker icon in y-axis. The marker icon can be positioned using the following ways in y-axis:
 
@@ -730,6 +730,62 @@ this.Content = map;
 
 N> The default marker icon position for VerticalAlignment and HorizontalAlignment is Center.
 
+## Reset the old custom view marker
+
+If you add any view for marker using `CustomView` property from `MarkerSelected` event, then the corresponding view will be applied to the selected marker. Custom view will be added continuously for all the selected marker, but do not have option to reset the old one. Now, you can achieve this using the `ResetOldSelectedView` property. If the Boolean set as true, then it will be removed the old view of marker and load the initially rendered marker.
+
+{% tabs %}
+
+{% highlight xaml %}
+       <ContentPage.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="selectedMarker">
+                <StackLayout >
+                    <Image Source="pin.png" Scale="1" Aspect="AspectFit "  
+                           HorizontalOptions="StartAndExpand" VerticalOptions="Center"   
+                           HeightRequest="15" WidthRequest="23"   />
+                </StackLayout>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <maps:SfMaps x:Name="Map" >
+        <maps:SfMaps.Layers >
+            <maps:ImageryLayer MarkerSelected="Layer_MarkerSelected" ResetOldSelectedView="True">
+                <maps:ImageryLayer.MarkerSettings>
+                    <maps:MapMarkerSetting IconColor="Red" IconSize="13" MarkerIcon="Diamond"/>
+                </maps:ImageryLayer.MarkerSettings>
+                <maps:ImageryLayer.Markers>
+                    <maps:MapMarker  Label="United States" 
+                                   Latitude="40" Longitude= "-101"/>
+                    <maps:MapMarker Label="Brazil"
+                                    Latitude="-15.7833" Longitude= "-52" />
+                    <maps:MapMarker Label="Congo" 
+                                    Latitude="-1.6" Longitude= "24.4" />
+                    <maps:MapMarker Label="Kazakhstan"
+                                    Latitude="49.9" Longitude= "72.23" />
+                    <maps:MapMarker Label="Australia" 
+                                    Latitude="-20.54" Longitude= "134.10" />
+                </maps:ImageryLayer.Markers>
+            </maps:ImageryLayer>
+        </maps:SfMaps.Layers>
+    </maps:SfMaps>
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
+        {
+            e.CustomView = this.Resources["selectedMarker"] as DataTemplate;
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Reset the previously selected marker](Images/ResetMarker.gif)
+
+
 ## Events
 
 The `MarkerSelected` event is fired when a marker is selected. The `CustomView` and `MapMarker` will be passed to `MarkerSelectedEventArgs`.
@@ -738,7 +794,7 @@ If you set any view for the `CustomView` property of MarkerSelectedEventArgs, th
 
 {% tabs %}
 
-{% highlight xml %}
+{% highlight xaml %}
       <ContentPage.Resources>
         <ResourceDictionary>
             <DataTemplate x:Key="selectedMarker">
@@ -751,7 +807,9 @@ If you set any view for the `CustomView` property of MarkerSelectedEventArgs, th
         </ResourceDictionary>
     </ContentPage.Resources>
 
-     <maps:ImageryLayer MarkerSelected="Layer_MarkerSelected" >
+    <maps:SfMaps x:Name="Map" >
+        <maps:SfMaps.Layers >
+            <maps:ImageryLayer MarkerSelected="Layer_MarkerSelected" >
                 <maps:ImageryLayer.MarkerSettings>
                     <maps:MapMarkerSetting IconColor="Red" 
                                  IconSize="13" MarkerIcon="Diamond"/>
@@ -770,6 +828,7 @@ If you set any view for the `CustomView` property of MarkerSelectedEventArgs, th
                 </maps:ImageryLayer.Markers>
             </maps:ImageryLayer>
         </maps:SfMaps.Layers>
+     </maps:SfMaps>
 
 {% endhighlight %}
 
@@ -786,4 +845,3 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 {% endtabs %}
 
 ![Marker Selected Image](Images/MarkerSelected.png)
-

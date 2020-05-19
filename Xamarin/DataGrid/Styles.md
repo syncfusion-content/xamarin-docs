@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Styles
+# Styles in Xamarin DataGrid (SfDataGrid)
 
 The data grid applies style for all of its elements by writing a Style class overriding from [DataGridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html), and assigning it to the [SfDataGrid.GridStyle](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridStyle.html) property.
   
@@ -406,3 +406,30 @@ Refer the below code snippet to customize the width of the grid cells and header
 
 {% endhighlight %}
 
+## See also
+
+[How to apply the row background color when mouse hover on SfDataGrid in UWP](https://www.syncfusion.com/kb/11230)
+
+[How to customize the expander icon for each level of group in Xamarin.Forms DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11014)
+
+[How to change header background dynamically in the SfDataGrid control](https://www.syncfusion.com/kb/9222)
+
+[How to load multiple SfDataGrid's to a layout](https://www.syncfusion.com/kb/8078)
+
+[How to display custom font in GridCell](https://www.syncfusion.com/kb/7826)
+
+[How to modify the cell borders in SfDataGrid](https://www.syncfusion.com/kb/7803)
+
+[How to bind a view model property to header template](https://www.syncfusion.com/kb/7815)
+
+[How to load grid without borders](https://www.syncfusion.com/kb/7451)
+
+[How to load a button in Header using HeaderTemplate in code-behind](https://www.syncfusion.com/kb/7440)
+
+[How to add multiple views in a grid cell in SfDataGrid](https://www.syncfusion.com/kb/7438)
+
+[How to set different background color for each column header in SfDataGrid](https://www.syncfusion.com/kb/7421)
+
+[How to display an animation while loading the data in the SfDataGrid](https://www.syncfusion.com/kb/7393)
+
+[How to apply multiple selection colors in SfDataGrid](https://www.syncfusion.com/kb/7387)

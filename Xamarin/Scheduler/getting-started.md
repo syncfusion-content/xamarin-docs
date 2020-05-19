@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug   
 ---   
     
-# Getting Started   
+# Getting Started with Xamarin Scheduler (SfSchedule)   
     
 This section provides you an overview for working with SfSchedule for Xamarin.Forms and also provides a walk through to configure SfSchedule control in real time scenario.   
 
@@ -148,7 +148,7 @@ This section explains how to create a simple application using SfSchedule contro
 ![GettingStarted](GettingStarted_images/xamarin.forms.-schedule-over-view.png)   
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleGettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleGettingStarted285067184.zip)
+here [ScheduleGettingStarted](https://github.com/SyncfusionExamples/xamarin-schedule-getting-started)
     
 This section provides a walks through to create `MeetingRoomScheduler` using our Schedule control.  
     
@@ -544,3 +544,8 @@ schedule.DataSource = viewModel.Meetings;
 You can download the entire source code of this demo for Xamarin.Forms from
 here [ScheduleGettingStarted](https://github.com/SyncfusionExamples/xamarin-schedule-getting-started)
 
+## See also
+
+[How to resolve SfSchedule not rendering issue in iOS and UWP ?](https://www.syncfusion.com/kb/7202/how-to-resolve-sfschedule-not-rendering-issue-in-ios-and-uwp)
+
+[How to switch between schedule views ?](https://www.syncfusion.com/kb/8446/how-to-switch-between-schedule-views)

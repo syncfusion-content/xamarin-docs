@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Localization of Schedule | Syncfusion
-description: How to Localize the contents of Schedule control in Xamarin.Forms.
+description: Describes how to Localize the contents and custom texts of Schedule (SfSchedule) control in Xamarin.Forms platform.
 platform: xamarin
 control: SfSchedule
 documentation: ug
 ---
 
-# Localization
+# Localization in Xamarin Scheduler (SfSchedule)
 
 Schedule control is available with complete localization support. Localization can be specified by setting the [Locale](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~Locale.html) property of SfSchedule. In the format of `Language code`.
 
@@ -366,3 +366,7 @@ Localize class for iOS project,
 
 >**NOTE**
 For UWP project, no sample level changes required.
+
+## See also
+
+[How to localize inline strings in schedule month view without changing locale in device ?](https://www.syncfusion.com/kb/9397/how-to-localize-inline-strings-in-schedule-month-view-without-changing-locale-in-device)

@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Conditional Styles
+# Conditional Styles in Xamarin DataGrid (SfDataGrid)
 
 The SfDataGrid allows to customize the style of the individual cells and rows based on the requirements. It can be customized in the following ways: 
 
@@ -283,4 +283,8 @@ private void DataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
 {% endhighlight %}
 
 ![DataGrid with selection and styling applied together](SfDataGrid_images/ConditionalStyle_RowStyle_Selection.png)
+
+## See also
+
+[How to apply the row background color when mouse hover on SfDataGrid in UWP](https://www.syncfusion.com/kb/11230)
 

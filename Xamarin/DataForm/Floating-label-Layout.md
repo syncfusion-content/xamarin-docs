@@ -7,7 +7,7 @@ control: SfDataForm
 documentation: UG
 ---
 
-# Floating label layout
+# Floating label layout in Xamarin DataForm (SfDataForm)
 
 The Dataform supports floating label layout with support for assistive labels, leading and trailing icons, and a password toggle icon to show or hide a password. It provides three type of containers such as filled, outlined and none. Floating label layout can be enabled by setting `DataForm.LayoutOptions` to `TextInputLayout`.
 
@@ -22,7 +22,7 @@ By default, the dataform arranges the editors and their labels corresponding to 
  <dataForm:SfDataForm/>
 {% endhighlight %}
 {% highlight c# %}
-dataForm.LayoutOptions = LayoutOptions.TextInputLayout;
+dataForm.LayoutOptions = LayoutType.TextInputLayout;
 {% endhighlight %}
 {% endtabs %}
 
@@ -43,7 +43,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
     {
         if (e.DataFormItem.Name == "Name" || e.DataFormItem.Name == "PhoneNumber" || (e.DataFormItem.Name == "Address" || e.DataFormItem.Name == "City")
         {
-            e.DataFormItem.LayoutOptions = LayoutOptions.TextInputLayout;
+            e.DataFormItem.LayoutOptions = LayoutType.TextInputLayout;
         }
     }
 }

@@ -7,7 +7,7 @@ control: SfSchedule
 documentation: ug   
 ---   
     
-# Month View
+# Month View in Xamarin Scheduler (SfSchedule)
 `MonthView` of `SfSchedule` used to display entire dates of the specific month, current month will be displayed by default initially. Current date color is differentiated with other dates of the current month, also the color differentiation for dates will be applicable for previous and next month dates.
 
 {% tabs %}
@@ -155,6 +155,7 @@ schedule.MonthViewSettings = monthViewSettings;
 - An agenda view displays text as “No Selected Date” until no date is selected.
 - If there is no appointment in a selected day, agenda view displays the text as “No Events”.
 - If you enable ShowAgendaView and ShowAppointmentsInline properties together, both of the views (Agenda View and Appointment Inline View) will be displayed in schedule month view.
+- Agenda view appointments will be displayed in chronological order, such as spanning appointments, all day appointments and accompanied by regular appointments in chronological order.
 
 ### Agenda View Appearance
 You can customize the Agenda view appointment and Selected Date Text by setting [AgendaViewStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewStyle.html) property of `MonthViewSettings`. Agenda view [DateFontColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontColor.html) ,[HeaderHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~HeaderHeight.html), [DateFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFormat.html) , [DateFontAttributes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontAttributes.html) , [DateFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontSize.html) , [DateFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~DateFontFamily.html) , [TimeFontColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontColor.html) , [TimeFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontSize.html) , [TimeFontAttributes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontAttributes.html) , [TimeFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFontFamily.html) , [TimeFormat](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~TimeFormat.html) , [SubjectFontColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontColor.html) , [SubjectFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontSize.html) , [SubjectFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontFamily.html) , [SubjectFontAttributes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~SubjectFontAttributes.html) , [BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AgendaViewStyle~BackgroundColor.html) can be customized using AgendaViewStyle properties.
@@ -1245,3 +1246,13 @@ Following steps will explain how to configure the custom fonts.
 ### Custom Font Setting in Xamarin.Forms (UWP)
 * Add your custom Font (e.g. Lobster-Regular.ttf) to the Assets folder of the Xamarin.Forms (UWP) project.
 * Then, use the Custom Font name as FontFamily. When Setting custom font in UWP use the format (FontFamily = ” Assets/Lobster-Regular.ttf#Lobster”).
+
+## See also
+
+[How to customize AgendaView height based on schedule height?](https://www.syncfusion.com/kb/10913/how-to-customize-agendaview-height-based-on-schedule-height)
+
+[How to show a custom agenda view besides the Xamarin.Forms scheduler in landscape mode](https://www.syncfusion.com/kb/10341/how-to-showa-custom-agenda-viewbesides-the-xamarin-forms-scheduler-in-landscape-mode)
+
+[How to customize the month inline appointments view in Xamarin.Forms scheduler?](https://www.syncfusion.com/kb/10337/how-to-customize-the-month-inline-appointments-view-in-xamarin-forms-scheduler)
+
+[How to show appointments in month cell using custom view in Xamarin.Forms schedule?](https://www.syncfusion.com/kb/10336/how-to-show-appointments-in-month-cell-using-custom-view-in-xamarin-forms-schedule)

@@ -10,7 +10,7 @@ documentation: ug
 ---
 
 
-# DayView
+# Day View in Xamarin Scheduler (SfSchedule)
 
 DayView is used to display a single day, current day will be visible by default. Appointments on a specific day will be arranged in respective timeslots based on its duration.
 
@@ -570,3 +570,24 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 
 ![Schedule customizing selection day view](daymodule_images/xamarin.forms-schedule-selection.png)
 
+## Current time indicator
+You can display the current time indicator in DayView by using the [ShowCurrentTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowCurrentTimeIndicator.html) property. And you can also customize the color of current time indicator by using the [CurrentTimeIndicatorColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CurrentTimeIndicatorColor.html) property.
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule x:Name="schedule"
+                                     ScheduleView = "DayView"
+                                     ShowCurrentTimeIndicator="true"
+                                     CurrentTimeIndicatorColor="Black">
+</schedule:SfSchedule>
+{% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.DayView;
+schedule.ShowCurrentTimeIndicator = true;
+scheduleCurrentTimeIndicatorColor = Color.Black;
+{% endhighlight %}
+{% endtabs %}
+
+## See also
+
+[How to get date and appointment details while tapping view header ?](https://www.syncfusion.com/kb/6203/how-to-get-date-and-appointment-details-while-tapping-view-header)

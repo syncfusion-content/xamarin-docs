@@ -7,7 +7,7 @@ control: SfScheduler
 documentation: ug
 ---
 
-# Timeline view
+# Timeline View in Xamarin Scheduler (SfSchedule)
 
 `TimelineView` displays the dates in horizontal time axis with the desired day's count. You can see the past or future dates by scrolling to the right or left. Each view displays events accurately across the time slots with an intuitive drag-and-drop feature. It provides support to highlight the selected region of time slots and handle interaction.
 
@@ -591,4 +591,29 @@ schedule.SelectedDate = null;
 ![Programatic selection in xamarin forms Timeline view](timeline-view-images/xamarin-forms-timeline-view-programatic-selection.png)
 
 >**NOTE**
-* `SfSchedule` does not support multiple selection. 
+* `SfSchedule` does not support multiple selection.
+
+## Current time indicator
+You can display the current time indicator in `TimelineView` by using the [ShowCurrentTimeIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowCurrentTimeIndicator.html) property.And you can also customize the color of current time indicator by using the [CurrentTimeIndicatorColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~CurrentTimeIndicatorColor.html) property
+
+{% tabs %}
+{% highlight XAML %}
+<schedule:SfSchedule x:Name="schedule"
+                                     ScheduleView = "TimelineView"
+                                     ShowCurrentTimeIndicator="true"
+                                     CurrentTimeIndicatorColor="Black">
+</schedule:SfSchedule>
+{% endhighlight %}
+{% highlight C# %}
+schedule.ScheduleView = ScheduleView.TimelineView;
+schedule.ShowCurrentTimeIndicator = true;
+schedule.CurrentTimeIndicatorColor = Color.Black;
+{% endhighlight %}
+{% endtabs %}
+
+## See also
+
+[How to add multiple resource to Schedule (SfSchedule) in Xamarin.Forms](https://www.syncfusion.com/kb/11210/how-to-add-multiple-resource-to-schedule-sfschedule-in-xamarin-forms)
+
+[How to customize time label of schedule in Xamarin.Forms?](https://www.syncfusion.com/kb/10879/how-to-customize-time-label-of-schedule-in-xamarin-forms)
+

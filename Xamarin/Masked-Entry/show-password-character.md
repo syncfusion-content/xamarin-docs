@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show password character for Syncfusion SfMaskedEdit in Xamarin.Forms
-description: Learn how SfMaskedEdit work as password textbox
+description: Learn how the SfMaskedEdit control work as password textbox and how can we apply password delay with password delay duration.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
@@ -10,7 +10,7 @@ keywords: mask, SfMaskedEdit, maskededit
 
 # Show password character
 
-The SfMaskedEdit control supports to work as a password text box when setting a character to the `PasswordChar` property.
+The SfMaskedEdit control supports to work as a password text box when setting a character to the [`PasswordChar`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~PasswordChar.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -28,7 +28,7 @@ maskedEdit.PasswordChar = '*';
 
 ## Password Delay
 
-When providing password character, you can show the typed character with some delay using the `EnablePasswordDelay` property. When enabling the EnablePasswordDelay property, the typed character will be displayed for a few seconds before it is converted to the password character.  
+When providing password character, you can show the typed character with some delay using the [`EnablePasswordDelay`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~EnablePasswordDelay.html) property. When enabling the EnablePasswordDelay property, the typed character will be displayed for a few seconds before it is converted to the password character.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -49,7 +49,7 @@ N> The default value of the EnablePasswordDelay property is false.
 
 ## Password Delay Duration
 
-When “PasswordDelay” is enabled, you can handle the duration of the displaying typed character using the `PasswordDelayDuration` property.   
+When “PasswordDelay” is enabled, you can handle the duration of the displaying typed character using the [`PasswordDelayDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~PasswordDelayDuration.html) property.   
 
 {% tabs %}
 {% highlight xaml %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Populating Events in Syncfusion Calendar control for Android
-description: Learn how to create appointments
+description: Learn about Appointments support in Syncfusion Xamarin calendar (SfCalendar) control and more details.
 platform: Xamarin
 control: Calendar
 documentation: ug
@@ -90,6 +90,7 @@ N> The `Inline` view and `AgendaView` will be available only in month view with 
 You can customize the number of appointment indicators displayed in month cell using [MaximumEventIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaximumEventIndicatorCount.html) property of ‘SfCalendar’. The default value of `MaximumEventIndicatorCount` is 5.
 
 N> If appointments count are lesser than the Appointment Indicator count value in the particular day, then according to number of appointments available, indicator will be displayed in the month cell.
+N> Appointment indicator will be shown on the basis of date meetings, usable month cell size and indicator count. For eg, if the month cell size is less (available for only 4 dots) and the indicator count is 10, then 4 indicators will be used.
 
 
 ## Customize inline/agenda view using DataTemplate
@@ -228,3 +229,13 @@ Inline view mode
 Agenda view mode
 
 ![SfCalendar Inline events](images/xamarin.forms-calendar-agendaappointmentdetails.png)
+
+## See also
+
+[How to filter the events in the Xamarin.Forms Calendar by searching the subject?](https://www.syncfusion.com/kb/10324/how-to-filter-the-events-in-the-xamarin-forms-calendar-by-searching-the-subject)
+
+[How to show events in custom agenda view using list view in Xamarin.Forms Calendar?](https://www.syncfusion.com/kb/10325/how-to-show-events-in-custom-agenda-view-using-list-view-in-xamarin-forms-calendar)
+
+[How to show the calendar agenda view events using SfDataGrid in Xamarin.Forms?](https://www.syncfusion.com/kb/10323/how-to-show-the-calendar-agenda-view-events-using-sfdatagrid-in-xamarin-forms)
+
+[How to load the data from SQLite offline database into SfCalendar?](https://www.syncfusion.com/kb/9380/how-to-load-the-data-from-sqlite-offline-database-into-sfcalendar)

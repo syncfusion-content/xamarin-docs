@@ -1,13 +1,13 @@
 ---
 layout: post
 title: MVVM | TreeView for Xamarin.Forms | Syncfusion
-description: Describes how to use TreeView in different cases of MVVM.
+description: This topic describes about how to use Syncfusion Xamarin.Forms SfTreeView with Commands, Event to command behavior and different cases of MVVM.
 platform: xamarin
 control: SfTreeView
 documentation: ug
 ---
 
-# MVVM
+# MVVM in Xamarin TreeView (SfTreeView)
 
 This section explains about how to work with MVVM pattern in TreeView.
 
@@ -164,7 +164,7 @@ public class CommandViewModel
 
     private void TappedCommandMethod(object obj)
     {
-            App.Current.MainPage.DisplayAlert("Alert", (obj.AddedItems[0] as Countries).Name + " is Tapped", "OK");            
+        App.Current.MainPage.DisplayAlert("Alert", ((obj as Syncfusion.XForms.TreeView.ItemTappedEventArgs).Node.Content as Countries).Name + " is Tapped", "OK");
     }   
 }
 {% endhighlight %}
@@ -195,8 +195,8 @@ public class CommandViewModel
     }
 
     private void HoldingCommandMethod(object obj)
-    {
-            App.Current.MainPage.DisplayAlert("Alert", (obj.AddedItems[0] as Countries).Name + " is Holding", "OK");            
+    {          
+        App.Current.MainPage.DisplayAlert("Alert", ((obj as Syncfusion.XForms.TreeView.ItemTappedEventArgs).Node.Content as Countries).Name + " is Holding", "OK");
     }   
 }
 {% endhighlight %}
@@ -462,3 +462,9 @@ public class ViewModel
 {% endtabs %}
 
 You can download the entire source of this demo from [here](https://github.com/SyncfusionExamples/checkbox_bound_mode). To know more about usage of checkbox, you can refer the documentation from [here](https://help.syncfusion.com/xamarin/sftreeview/checkbox).
+
+## See also
+
+[How to bind data using FreshMVVM in Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11352)                                                                                                                                                                                                                                                                  
+[How to bind node data as CommandParameter for TreeView ItemTemplate content in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11406)                                                                                                                                                                                                                                                                                                                                                                                
+[How to add nodes to bound mode TreeView in Xamarin.Forms (SfTreeView)](https://www.syncfusion.com/kb/11487)

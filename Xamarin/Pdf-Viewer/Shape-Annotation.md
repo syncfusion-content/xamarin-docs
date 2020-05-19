@@ -16,6 +16,8 @@ PDF viewer allows you to include shape annotations in a PDF document and provide
 3. Line
 4. Arrow
 
+N>**Arrow** shape annotation is currently supported only in Android and iOS platforms.
+
 In all the code snippets, Rectangle shape annotation is used for illustration purpose.
 
 ## Adding shape annotations

@@ -1036,6 +1036,8 @@ The following  options are available in [`EdgeLabelsVisibilityMode`](https://hel
 * [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.EdgeLabelsVisibilityMode.html) - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
 * [`AlwaysVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.EdgeLabelsVisibilityMode.html) - used to always display the edge labels even while zooming the chart.
 
+N> The Category and DateTimeCategory axis does not provide support for EdgeLabelsVisibilityMode.
+
 The following code example demonstrates the AlwaysVisible option while zooming.
 
 {% tabs %} 
@@ -1057,7 +1059,6 @@ chart.SecondaryAxis.EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.AlwaysVi
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ### Label extent
 

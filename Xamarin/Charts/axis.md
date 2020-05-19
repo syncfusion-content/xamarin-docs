@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Syncfusion.Xamarin.Forms Chart Axis
-description: How to customize the grid lines, tick lines, labels and title of chart axis
+description: This section explains the different types of axis in chart and how to customize the grid lines, tick lines, labels and title of the chart axis.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Axis
+# Axis in Xamarin Charts (SfChart)
 
 Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis, and a horizontal (X) axis.
 
@@ -1036,6 +1036,8 @@ The following  options are available in [`EdgeLabelsVisibilityMode`](https://hel
 * [`Visible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.EdgeLabelsVisibilityMode.html) - used to display the edge labels (first and last label) irrespective of the auto interval calculation until zooming (i.e., in normal state).
 * [`AlwaysVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.EdgeLabelsVisibilityMode.html) - used to always display the edge labels even while zooming the chart.
 
+N> The Category and DateTimeCategory axis does not provide support for EdgeLabelsVisibilityMode.
+
 The following code example demonstrates the AlwaysVisible option while zooming.
 
 {% tabs %} 
@@ -1057,7 +1059,6 @@ chart.SecondaryAxis.EdgeLabelsVisibilityMode = EdgeLabelsVisibilityMode.AlwaysVi
 {% endhighlight %}
 
 {% endtabs %}
-
 
 ### Label extent
 

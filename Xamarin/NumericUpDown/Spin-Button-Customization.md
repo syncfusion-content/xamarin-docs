@@ -466,3 +466,53 @@ This property is used to change the text color of button when press the incremen
 {% endhighlight %}
 
 {% endtabs %}
+
+## Spin validation
+
+We can customize number increment/decrement mode in spin button interaction in two ways.
+
+ * Default
+ * Tapped
+
+### Default
+
+When [`SpinValidation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfNumericUpDown.XForms~Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown~SpinValidation.html) property is set to `Default`, the numeric up down value gets updated on long press till the increment or decrement button gets disabled.
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+numericUpDown.SpinValidation = SpinValidation.Default;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<numeric:SfNumericUpDown x:Name="numericUpDown" SpinValidation="Default" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+## Tapped
+
+When [`SpinValidation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfNumericUpDown.XForms~Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown~SpinValidation.html) property is set to `Tapped`, the numeric up down value gets updated on the increment or decrement button tap action.
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+numericUpDown.SpinValidation = SpinValidation.Tapped;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<numeric:SfNumericUpDown x:Name="numericUpDown" SpinValidation="Tapped" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+

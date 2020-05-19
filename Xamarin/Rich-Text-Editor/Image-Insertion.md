@@ -313,9 +313,9 @@ private void rte_ImageInserted(object sender, ImageInsertedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Save Image as Base64 in HtmlText
+## Save Image as Base64 in the HtmlText
 
-The following code example shows how to insert an image as base64 and retrieve in HtmlText.
+The following code example shows how to insert an image as base64 and retrieve in the HtmlText.
 
 {% tabs %} 
 

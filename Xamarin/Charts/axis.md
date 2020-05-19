@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Syncfusion.Xamarin.Forms Chart Axis
-description: How to customize the grid lines, tick lines, labels and title of chart axis
+description: This section explains the different types of axis in chart and how to customize the grid lines, tick lines, labels and title of the chart axis.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Axis
+# Axis in Xamarin Charts (SfChart)
 
 Charts typically have two axes that are used to measure and categorize data: a vertical (Y) axis, and a horizontal (X) axis.
 

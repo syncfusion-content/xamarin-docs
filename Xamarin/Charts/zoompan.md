@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Zooming and Panning
+# Zooming and Panning in Xamarin Charts (SfChart)
 
 ## Enable Zooming
 

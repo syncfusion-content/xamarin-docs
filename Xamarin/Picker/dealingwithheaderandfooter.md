@@ -95,7 +95,7 @@ picker.HeaderBackgroundColor = Color.SkyBlue;
 
 ## Customization for custom Header
 
-For custom Header, we need to provide the BackgroundColor for the Layout instead of Picker HeaderBackgroundColor.
+For custom header, you need to provide the BackgroundColor for the layout instead of Picker HeaderBackgroundColor.
 
 {% tabs %}
 {% highlight xaml %}

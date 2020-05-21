@@ -38,7 +38,7 @@ public class CommandViewModel
     private void TappedCommandMethod(object obj)
     {
         if ((obj as Syncfusion.ListView.XForms.ItemTappedEventArgs).ItemData == viewModel.InboxInfo[0])
-            viewModel.InboxInfo.Remove(e.ItemData as ListViewInboxInfo)
+            viewModel.InboxInfo.Remove((obj as Syncfusion.ListView.XForms.ItemTappedEventArgs).ItemData as ListViewInboxInfo)
     }   
 }
 
@@ -72,7 +72,7 @@ public class CommandViewModel
     private void HoldingCommandMethod(object obj)
     {
         if ((obj as Syncfusion.ListView.XForms.ItemHoldingEventArgs).ItemData == viewModel.InboxInfo[3])
-            viewModel.InboxInfo.Remove(e.ItemData as ListViewInboxInfo);
+            viewModel.InboxInfo.Remove((obj as Syncfusion.ListView.XForms.ItemHoldingEventArgs).ItemData as ListViewInboxInfo);
     }
 }
 

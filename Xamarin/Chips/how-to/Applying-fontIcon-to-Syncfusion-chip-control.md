@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting the FontIcon to SfChip
 
-FontIcon can be set to SfChip using the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property as shown in the following steps.
+SfChip also supported to display the font icon by setting `FontImageSource` to its [ImageSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property with following below steps
 
 ## Custom font file should be added to all the platform projects in specific location
 

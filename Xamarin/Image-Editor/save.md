@@ -19,6 +19,24 @@ The saved image will be added to default pictures library “C:\Users\your name\
 Android:
 The saved image will be added to default pictures library “Internal storage/Pictures/”.
 
+N> Set the requestLegacyExternalStorage value as true in your app's manifest file, if the target version is 10. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<manifest ...>
+
+  <application android:requestLegacyExternalStorage="true" ...>
+    ...
+  </application>
+  
+</manifest>
+
+{% endhighlight %}
+
+{% endtabs %}
+
 iOS:
 In iOS device, the saved image will be added to default pictures library.
 In iOS simulator, the saved image will be added to (Library\developer\CoreSimulator\Devices) location. 

@@ -23,11 +23,13 @@ N> For iOS, you should be added a custom font file in the info.plist file as dem
 
 {% highlight xaml %}
 
-<dict>……<key>UIAppFonts</key>
+<dict>
+...
+<key>UIAppFonts</key>
 <array>
 <string>chip_Segoe MDL2 Assets.ttf</string>
+...
 </array>
-……
 </dict>
 
 {% endhighlight %}

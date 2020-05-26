@@ -9,7 +9,7 @@ documentation: ug
 
 # Setting the FontIcon to SfChip
 
-SfChip also supported to display the font icon by setting `FontImageSource` to its [ImageSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property with following below steps
+SfChip is supported to display the font icon by setting `FontImageSource` to its [ImageSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property with following below steps
 
 ## Custom font file should be added to all the platform projects in specific location
 
@@ -17,7 +17,7 @@ SfChip also supported to display the font icon by setting `FontImageSource` to i
 * `iOS` - Add a custom font file in the `Resources` folder and set the `Build Action` to `BundleResource`. Then, ensure that the copy to output directory is set to `AlwaysCopy`.
 * `UWP` - Add a custom font file in the `Assets` folder and the set `Build Action` to `Content`.
 
-N> For iOS, you should be added a custom font file in the info.plist file as demonstrated in the following code sample.
+N> For iOS, you should be added a custom font file in the info.plist file as demonstrated in below.
 
 {% tabs %}
 
@@ -26,14 +26,16 @@ N> For iOS, you should be added a custom font file in the info.plist file as dem
 <dict>……<key>UIAppFonts</key>
 <array>
 <string>chip_Segoe MDL2 Assets.ttf</string>
-……</dict>
+</array>
+……
+</dict>
 
 {% endhighlight %}
 
 {% endtabs %}
 
 
-Create the instance for `FontImageSource` and set to [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property of SfChip as shown in the following code screenshot. 
+Create the instance for `FontImageSource` and set to [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~ImageSource.html) property of SfChip as shown in below code snippet.
 
 {% tabs %}
 

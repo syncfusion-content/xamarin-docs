@@ -1,0 +1,34 @@
+---
+layout: post
+title: License related query 
+description: How to resolve the License related query
+platform: xamarin
+control: UIKit
+documentation: ug
+---
+
+# Licensing
+
+We have published the Essential UI Kit source code in GitHub with an MIT license. You can use this UI Kit pages in your application for free without any restrictions. You can find the GitHub link as follows.
+
+[https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms](https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms)
+
+But for the pages that use Syncfusion controls, you must get the licenses to use those controls in your application to avoid the license validation pop-ups. The Syncfusion provides free community licenses that provide access to all the Syncfusion products for individual developers and small businesses. 
+(updated links are below to know more about the Syncfusion free community licenses).
+
+Alternatively, you can replace the Syncfusion controls with the framework controls and use them to avoid getting any license issues.
+
+For more details about the Essential UI Kit license, please refer to the following link.
+
+[https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms/blob/master/LICENSE](https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms/blob/master/LICENSE)
+
+Regarding the Syncfusion licenses, please refer to the following link.
+
+[https://www.syncfusion.com/sales/licensing](https://www.syncfusion.com/sales/licensing)
+
+To know more about the Syncfusion community licenses, please refer to the following link.
+
+[https://www.syncfusion.com/products/communitylicense](https://www.syncfusion.com/products/communitylicense)
+
+Please let us know if you need any further assistance in this.
+

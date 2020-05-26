@@ -1,13 +1,13 @@
 ---
 layout: post
-title: License related query 
-description: How to resolve the License related query
+title: License related query for ui-kit-for-xamarin
+description: How to resolve the License related query for xamarin.forms Syncfusion Essential UIKit screens.
 platform: xamarin
 control: UIKit
 documentation: ug
 ---
 
-# Licensing
+## Licensing
 
 We have published the Essential UI Kit source code in GitHub with an MIT license. You can use this UI Kit pages in your application for free without any restrictions. You can find the GitHub link as follows.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customizing the appearance of Essential Syncfusion.Xamarin.Forms Chart
-description: Learn how to customize the appearance of Xamarin.Forms Chart using with its available palettes options.
+description: This document explains how to customize the appearance of Xamarin.Forms chart using the available palettes options.
 platform: xamarin
 control: Chart
 documentation: ug

@@ -32,12 +32,10 @@ Following code illustrates how to set the custom colors.
 <ContentPage.Resources>
     <ResourceDictionary>
         <chart:ChartColorCollection x:Key="Colors">
-            <Color>Red</Color>
-            <Color>Gray</Color>
-            <Color>Blue</Color>
-            <Color>Maroon</Color>
-            <Color>Pink</Color>
-        </chart:ChartColorCollection>
+                <Color>Yellow</Color>
+                <Color>Gray</Color>
+                <Color>Maroon</Color>
+            </chart:ChartColorCollection>
     </ResourceDictionary>
 </ContentPage.Resources>
 
@@ -60,11 +58,9 @@ SfChart chart = new SfChart()
          Palette = ChartColorPalette.Custom,
          CustomBrushes = new ChartColorCollection()
          {
-             Color.Red,
+             Color.Yellow,
              Color.Gray,
-             Color.Blue,
-             Color.Maroon,
-             Color.Pink,
+             Color.Maroon
          }
      },
 	 ...

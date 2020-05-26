@@ -38,7 +38,7 @@ public class CommandViewModel
     private void TappedCommandMethod(object obj)
     {
         if ((obj as Syncfusion.ListView.XForms.ItemTappedEventArgs).ItemData == viewModel.InboxInfo[0])
-            viewModel.InboxInfo.Remove(e.ItemData as ListViewInboxInfo)
+            viewModel.InboxInfo.Remove((obj as Syncfusion.ListView.XForms.ItemTappedEventArgs).ItemData as ListViewInboxInfo)
     }   
 }
 
@@ -72,7 +72,7 @@ public class CommandViewModel
     private void HoldingCommandMethod(object obj)
     {
         if ((obj as Syncfusion.ListView.XForms.ItemHoldingEventArgs).ItemData == viewModel.InboxInfo[3])
-            viewModel.InboxInfo.Remove(e.ItemData as ListViewInboxInfo);
+            viewModel.InboxInfo.Remove((obj as Syncfusion.ListView.XForms.ItemHoldingEventArgs).ItemData as ListViewInboxInfo);
     }
 }
 
@@ -932,4 +932,5 @@ You can download the entire sample from GitHub [here](https://github.com/Syncfus
 [How to turn Events into Commands with Behaviors in SfListView](https://www.syncfusion.com/kb/7523/)          
 [How to handle touch interaction using MR.Gesture in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11351)                                                                                                                                                                                                                                                                                                                                                  
 [How to update ListView on property change in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11419)                                                                                                                                                                          
-[How to show time in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11438/)
+[How to show time in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11438/)                                                                                                                                                                     
+[How to filter Xamarin.Forms ListView (SfListView) using MVVM](https://www.syncfusion.com/kb/11478/)

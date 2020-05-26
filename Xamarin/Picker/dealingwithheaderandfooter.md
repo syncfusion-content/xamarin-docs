@@ -93,6 +93,44 @@ picker.HeaderBackgroundColor = Color.SkyBlue;
 {% endhighlight %}
 {% endtabs %}
 
+## Customization for custom Header
+
+For custom header, you need to provide the BackgroundColor for the layout instead of Picker HeaderBackgroundColor.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfPicker x:Name="picker" ShowHeader="True">
+
+<syncfusion:SfPicker.HeaderView>
+
+<Grid BackgroundColor="Purple">
+
+<Label Text="Cancel" TextColor="Red" />
+
+</Grid>
+
+</syncfusion:SfPicker.HeaderView>
+
+</syncfusion:SfPicker>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+picker.ShowHeader = true;
+
+picker.HeaderText = "Select a Date";
+
+Grid layout = new Grid();
+
+layout.BackgroundColor = Color.Red;
+
+picker.HeaderView = layout;
+
+{% endhighlight %}
+{% endtabs %}
+
 ### Text-Color 
 
 Header text's color can be customized by setting `SfPicker.HeaderTextColor` property.

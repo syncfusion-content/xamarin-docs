@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Export to PDF
+# Export To PDF in Xamarin DataGrid (SfDataGrid)
 
 The SfDataGrid supports exporting the data to PDF with several customization options like custom appearance, excluding specific columns, excluding headers, setting custom row height, setting custom column width, and so on.
 
@@ -1249,3 +1249,11 @@ Refer the below code to export the selected rows alone to the PDF document.
 {% endhighlight %}
 
 ![Export selected items in a DataGrid to PDF format](SfDataGrid_images/PDF/SelectedItems_ExportToPdf.png)
+
+## See also
+
+[How to export Middle Eastern Languages (Arabic, Hebrew) from Xamarin.Forms DataGrid (SfDataGrid) to PDF](https://www.syncfusion.com/kb/11198)
+
+[How to create Header and Footer in PDF document](https://www.syncfusion.com/kb/7386)
+
+[How to export a SfDataGrid to excel or PDF using ToolBarItems of a Page](https://www.syncfusion.com/kb/7395)

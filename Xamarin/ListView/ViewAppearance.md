@@ -7,7 +7,7 @@ control: SfListView
 documentation: ug
 ---
 
-# View Appearance
+# Appearance in Xamarin ListView (SfListView)
 
 The SfListView allows customizing appearance of the underlying data, and provides different functionalities to the end-user.
 
@@ -1280,3 +1280,10 @@ N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is 
 ### Limitations
 
 * ListView does not support the right-to-left(RTL) direction when [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
+
+## See also
+
+[How to set background color alternatively in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11295)                                                                                                                                                                                                                                                                 
+[How to work with Material Visual for custom ListView in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11468/)                                                                                                                                                                                                                                      
+[How to display URI images in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11485/)                                                                                                                                                            
+[How to change selected image in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11486/)

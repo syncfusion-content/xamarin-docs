@@ -62,7 +62,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 		Yes<br/>
 		</td>
 		<td>
-		No<br/>
+		Yes<br/>
 		</td>
 		<td>
 		Yes<br/>
@@ -1218,6 +1218,36 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 		No<br/>
 		</td>
 	</tr>
+	<tr>
+        <td>
+            CHAT
+            <br/>
+        </td>
+        <td>
+            <a href="/xamarin/chat/overview">Chat</a>
+            <br/>
+        </td>
+        <td>
+            Yes
+            <br/>
+        </td>
+        <td>
+            Yes
+            <br/>
+        </td>
+        <td>
+            Yes
+            <br/>
+        </td>
+        <td>
+            No
+            <br/>
+        </td>
+        <td>
+            No
+            <br/>
+        </td>
+    </tr>
 </table>
   
 

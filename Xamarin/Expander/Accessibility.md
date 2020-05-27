@@ -31,3 +31,7 @@ where <b>AutomationItem1</b> represents Control AutomationId and <b>Expander</b>
 The following image denotes the AutomationIds of inner elements.
 
 ![Automation id for expander](expander_images/ExpanderAutomationImage.png)
+
+## See also
+
+[How to access a named Expander inside a XAML DataTemplate in Xamarin.Forms (SfExpander)](https://www.syncfusion.com/kb/11374/)

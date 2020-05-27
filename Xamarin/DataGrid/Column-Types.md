@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Column Types 
+# Column Types in Xamarin.Forms DataGrid (SfDataGrid) 
 
 The SfDataGrid contains different types of columns. The functionalities of the column can be implied by its name. Based on the requirements any column can be used. 
 
@@ -810,7 +810,7 @@ The `SfDataGrid` allows you to load any custom view in edit mode using the [Edit
                                    Converter={StaticResource imageConverter}}" />
                             <Entry Grid.Column="1"
                                    Text="{Binding StockChange}">
-                            </Label>
+                            </Entry>
                         </Grid>
                     </DataTemplate>
                 </syncfusion:GridTemplateColumn.EditTemplate>
@@ -1744,3 +1744,23 @@ To bind a view model property inside `HeaderTemplate`, follow the code example:
 {% endhighlight %}
 
 ![Binding property in a HeaderTemplate with a property in ViewModel](SfDataGrid_images/ViewModelPropertyHeaderTemplate.png)
+
+## See also
+
+[How to enable the MultiSelection in GridComboBoxColumn of DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11045)
+
+[How to bind a column collection from view model in SfDataGrid Xamarin.Forms](https://www.syncfusion.com/kb/9787)
+
+[How to create a custom GridColumn](https://www.syncfusion.com/kb/9533)
+
+[How to bind button command to ViewModel from TemplateColumn of DataGrid](https://www.syncfusion.com/kb/9076)
+
+[How to get the row index of a row in SfDataGrid when using GridTemplateColumn](https://www.syncfusion.com/kb/7804)
+
+[How to display the DatePicker and TimePicker combined in a GridColumn in SfDataGrid](https://www.syncfusion.com/kb/7780)
+
+[How to set the different color for each column header in SfDataGrid](https://www.syncfusion.com/kb/7536)
+
+[How to customize the header text of a grid column with different colors](https://www.syncfusion.com/kb/7517)
+
+[How to create GridTemplateColumn in code-behind](https://www.syncfusion.com/kb/7521)

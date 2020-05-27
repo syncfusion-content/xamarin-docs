@@ -20,10 +20,6 @@ documentation: ug
 <td>{{'[Message.DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~DateTime.html)'| markdownify }}</td>
 <td>To display message created or received time.</td>
 </tr>
-<tr>
-<td>{{'[Message.TimestampFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~TimestampFormat.html)'| markdownify }}</td>
-<td>To format the Message.DateTime.</td>
-</tr>
 </table>
 
 ## Setting current user for conversation
@@ -45,10 +41,11 @@ The [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCha
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <sfChat:SfChat x:Name="sfChat"
-                       Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
-    </ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True" />
+	<ContentPage.Content>	
 </ContentPage>
 
 {% endhighlight %}
@@ -71,6 +68,7 @@ namespace GettingStarted
             this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.Content = sfChat;
         }
     }
@@ -149,7 +147,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
-            ShowAvatar = true,
         });
     }
 }
@@ -177,10 +174,11 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <sfChat:SfChat x:Name="sfChat"
-                       Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
-    </ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True" />
+	<ContentPage.Content>	
 </ContentPage>
 
 {% endhighlight %}
@@ -197,10 +195,11 @@ namespace GettingStarted
         public MainPage()
         {
             InitializeComponent();
-            sfChat = new SfChat();
-            viewModel = new GettingStartedViewModel();
+            this.sfChat = new SfChat();
+            this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.Content = sfChat;
         }
     }
@@ -279,25 +278,21 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
-            ShowAvatar = true,
         });
         this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Andrea",Avatar = "People_Circle2.png" },
             Text = "Oh! That's great.",
-            ShowAvatar = true,
         });
         this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Harrison",Avatar = "People_Circle14.png" },
             Text = "That is good news.",
-            ShowAvatar = true,
         });
         this.Messages.Add(new TextMessage()
         {
             Author = new Author() { Name = "Margaret",Avatar = "People_Circle7.png" },
             Text = "What kind of application is it and when are we going to launch?",
-            ShowAvatar = true,
         });
     }
 }
@@ -328,7 +323,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        SendMessage="SfChat_SendMessage"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+                       ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -351,6 +347,7 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.sfChat.SendMessage += this.SfChat_SendMessage;
             this.Content = sfChat;
         }
@@ -441,13 +438,11 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Flight to USA",
-            ShowAvatar = true,
         });
         this.Messages.Add(new DatePickerMessage()
         {
             Author = new Author() { Name = "Travel Bot",Avatar = "Aeroplane.png" },
             Text = "Select departure date",
-            ShowAvatar = true,  
             SelectedDate = DateTime.Now
         });
     }
@@ -460,7 +455,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Time picker message
 
-[TimePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.TimePickerMessage.html) is used to show a time picker as a message to let users select time. Once time is selected, the selected time is added as a `TextMessage`. The`SfChat.SendMessage` event and `SfChat.SendMessageCommand` will be executed upon selecting a time from the time picker.
+[TimePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.TimePickerMessage.html) is used to show a time picker as a message to let users select time. Once time is selected, the selected time is added as a `TextMessage`. The [SfChat.SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event and [SfChat.SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) will be executed upon selecting a time from the time picker.
 
 {% tabs %}
 {% highlight xaml %}
@@ -479,7 +474,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        SendMessage="SfChat_SendMessage"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+                       ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -501,6 +497,7 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.sfChat.SendMessage += this.SfChat_SendMessage;
             this.Content = sfChat;
         }
@@ -591,14 +588,12 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Consultation with Dr.Harry tomorrow.",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TimePickerMessage()
         {
             Author = new Author() { Name = "Health care", Avatar = "Healthcare.png" },
             Text = "Select convenient time to meet Dr.Harry for health check up.",
-            ShowAvatar = true,
             // Time picker display time.
             SelectedTime = new TimeSpan(8, 30, 00),
         });
@@ -612,7 +607,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Calendar message
 
-[CalendarMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CalendarMessage.html) is used to display a calendar as a message to let users select a date. The date selected from the calendar will be added as a `TextMessage`. The `SendMessage` event and `SendMessageCommand` will be executed upon selecting a date from the calendar.
+[CalendarMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CalendarMessage.html) is used to display a calendar as a message to let users select a date. The date selected from the calendar will be added as a `TextMessage`. The [SfChat.SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event and [SfChat.SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) will be executed upon selecting a date from the calendar.
 
 {% tabs %}
 {% highlight xaml %}
@@ -631,7 +626,8 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        SendMessage="SfChat_SendMessage"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+                       ShowOutgoingMessageAvatar="True" />
     </ContentPage.Content>
 </ContentPage>
 
@@ -653,6 +649,7 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.sfChat.SendMessage += this.SfChat_SendMessage;
             this.Content = sfChat;
         }
@@ -743,14 +740,12 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = CurrentUser,
             Text = "Appointment with Dr.Harry.",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new CalendarMessage()
         {
             Author = new Author() { Name = "Health care", Avatar = "Healthcare.png" },
             Text = "Select convenient date to meet Dr.Harry for health check up.",
-            ShowAvatar = true,
             SelectedDate = DateTime.Now,
         });
     }
@@ -779,10 +774,11 @@ public class GettingStartedViewModel : INotifyPropertyChanged
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <sfChat:SfChat x:Name="sfChat"
-                       Messages="{Binding Messages}"
-                       CurrentUser="{Binding CurrentUser}" />
-    </ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True" />
+	<ContentPage.Content>
 </ContentPage>
 
 {% endhighlight %}
@@ -799,10 +795,11 @@ namespace GettingStarted
         public MainPage()
         {
             InitializeComponent();
-            sfChat = new SfChat();
-            viewModel = new GettingStartedViewModel();
+            this.sfChat = new SfChat();
+            this.viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
             this.Content = sfChat;
         }
     }
@@ -881,14 +878,12 @@ public class GettingStartedViewModel : INotifyPropertyChanged
         {
             Author = new Author() { Name = "Michale", Avatar = "People_Circle23.png" },
             Text = "We should develop this app in Xamarin, since it provides native experience and performance.",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new TextMessage()
         {
             Author = CurrentUser,
             Text = "I haven't heard of Xamarin. What's Xamarin?",
-            ShowAvatar = true,
         });
 
         this.Messages.Add(new HyperlinkMessage()
@@ -896,7 +891,6 @@ public class GettingStartedViewModel : INotifyPropertyChanged
             Author = new Author() { Name = "Michale", Avatar = "People_Circle23.png" },
             Text = "Refer the following documentation link to learn more about xamarin.",
             Url = "https://docs.microsoft.com/en-us/xamarin/get-started/what-is-xamarin",
-            ShowAvatar = true
         });
     }
 }
@@ -906,9 +900,404 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ![Xamarin Forms chat hyper link message](SfChat_images/xamarin-forms-chat-hyperlink-message.png)
 
+## Image message
+
+[ImageMessage](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage.html) is used to display an image as a message. Using the [ImageMessage.Source](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage~Source.html), [ImageMessage.Size](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage~Size.html) and [ImageMessage.Aspect](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage~Aspect.html) properties you can display the desired image in the desired height and width as a message in the chat control.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:GettingStartedViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True" />
+	<ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# %}
+using Syncfusion.XForms.Chat;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        SfChat sfChat;
+        GettingStartedViewModel viewModel;
+        public MainPage()
+        {
+            InitializeComponent();
+            this.sfChat = new SfChat();
+            this.viewModel = new GettingStartedViewModel();
+            this.sfChat.Messages = viewModel.Messages;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
+            this.Content = sfChat;
+        }
+    }
+}
+
+/// <summary>
+/// View model class for chat view.
+/// </summary>
+public class GettingStartedViewModel : INotifyPropertyChanged
+{
+    private ObservableCollection<object> messages;
+
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    public GettingStartedViewModel()
+    {
+        this.Messages = new ObservableCollection<object>();
+        this.CurrentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
+        this.GenerateMessages();
+    }
+
+    private void GenerateMessages()
+    {
+        this.messages.Add(new TextMessage()
+        {
+            Author = CurrentUser,
+            Text = "I was delight to buy some sport cars can you suggest some cars",
+            DateTime = new DateTime(2020, 03, 15),
+        });
+
+        this.Messages.Add(new ImageMessage()
+        {
+            Aspect = Xamarin.Forms.Aspect.AspectFill,
+            Source = "Car1.jpeg",
+            Author = new Author() { Name = "Andrea", Avatar = "People_Circle23.png" },
+            Text = "",
+            DateTime = new DateTime(2020, 10, 02),
+        });
+
+        this.Messages.Add(new ImageMessage()
+        {
+            Aspect = Xamarin.Forms.Aspect.AspectFit,
+            Source = "Car2.jpg",
+            Text="LcMaren",
+            Author = new Author() { Name = "Andrea", Avatar = "People_Circle23.png" },
+        });
+
+        this.Messages.Add(new ImageMessage()
+        {
+            Aspect = Xamarin.Forms.Aspect.Fill,
+            Source = "Car3.jpg",
+            Text="Bugatti",
+            Author = new Author() { Name = "Andrea", Avatar = "People_Circle23.png" },
+        });
+    }
+
+    /// <summary>
+    /// Gets or sets the current user.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
+        {
+            return this.currentUser;
+        }
+        set
+        {
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
+        {
+            return this.messages;
+        }
+        set
+        {
+            this.messages = value;
+        }
+    }
+
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name</param>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin Forms chat image message](SfChat_images/Xamarin-Forms-chat-image-message.png)
+
+### Event and command
+
+The `ImageMessage` comes with in-built [SfChat.ImageTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ImageTapped_EV.html) event and [SfChat.ImageTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ImageTappedCommand.html) that will be fired upon tapping an image message. You can get the instance of the `ImageMessage` that was tapped in the [ImageTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageTappedEventArgs.html) as `ImageTappedEventArgs.Message`. You can handle this event/command to achieve requirements like to show the image in full screen, or show options for sharing the image etc.
+
+**ImageTapped event**
+
+{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:local="clr-namespace:ChatSample"
+             x:Class="ChatSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+            <sfChat:SfChat x:Name="chat" 
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True"
+                           ShowAttachmentButton="True"
+                           ImageTapped="chat_ImageTapped">
+        </sfChat:SfChat>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# %}
+
+//MainPage.cs
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+    }
+
+    private void sfChat_ImageTapped(object sender, ImageTappedEventArgs e)
+    {
+        // Check if a particular image message was tapped.
+        if(args.Message.Source == ImageSource.FromFile("car1.png"))
+        {
+            // Do desired actions like displaying the image in full screen.
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+**ImageTappedCommand**
+
+{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:local="clr-namespace:ChatSample"
+             x:Class="ChatSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+            <sfChat:SfChat x:Name="chat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True"
+                           ImageTappedCommand="{Binding Command}">
+        </sfChat:SfChat>
+    </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+
+//ViewModel.cs
+...
+public ViewModel()
+{
+    this.messages = new ObservableCollection<object>();
+    this.CurrentUser = new Author() { Name = "Nancy", Avatar = "Nancy.png" };
+    Command = new Command(Tapped);
+    this.GenerateMessages();
+}
+
+private void Tapped(object args)
+{
+    // Check if a particular image message was tapped.
+    if((args as ImageTappedEventArgs).Message.Source == ImageSource.FromFile("car1.png"))
+    {
+        // Do desired actions like displaying the image in full screen.
+    }
+}
+...
+{% endhighlight %}
+{% endtabs %}
+
+You can download the complete project demo to show the tapped image in full screen from [here](https://github.com/SyncfusionExamples/How-to-display-the-tapped-image-in-full-screen-in-Xamarin.Forms-chat).
+
+### Adding image message as an outgoing message
+
+Unlike the other messages, the `ImageMessage` can also be shown as an outgoing message. To add an `ImageMessage` as an outgoing message just set the [ImageMessage.Author](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Author.html) as [SfChat.CurrentUser](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html). You can also add an image message when clicking the attachment button as shown [here](https://help.syncfusion.com/xamarin/chat/attachment-button).
+
+![Send image message](SfChat_images/ImageMessage_Outgoing.png)
+
+### Displaying a GIF as an image message
+
+You can write style targeting the [ControlTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ControlTemplate.html) property of the [ChatImageView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatImageView.html) and add it to the application's resources as shown below. You can assign your custom template view that is capable of loading a GIF image as the `ControlTemplate` of `ChatImageView` using `Style.Setter`. Here in the below code example we have loaded our `CustomImageView` as `ControlTemplate` of the `ChatImageView`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:GettingStarted"
+             xmlns:sfchat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             mc:Ignorable="d"
+             x:Class="GettingStarted.ImageMessageCustomTemplate">
+    <ContentPage.BindingContext>
+        <local:ImageMessageViewModel x:Name="viewModel" />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="sfchat:ChatImageView">
+                <Setter Property="ControlTemplate">
+                    <Setter.Value>
+                        <ControlTemplate>
+                            <local:CustomImageView/>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <sfchat:SfChat x:Name="sfChat" 
+                           ShowOutgoingMessageAvatar="True"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}">
+        </sfchat:SfChat>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# %}
+
+namespace GettingStarted
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ImageMessageCustomTemplate : ContentPage
+    {
+        public ImageMessageCustomTemplate(bool HideAvatar = false)
+        {
+            InitializeComponent();
+            this.viewModel.Messages.Clear();
+            GenerateMessages();
+        }
+
+        private void GenerateMessages()
+        {
+            this.viewModel.Messages.Add(new ImageMessage()
+            {
+                Aspect = Xamarin.Forms.Aspect.AspectFill,
+                Source = "resource://GettingStarted.bird.gif",
+                Author = new Author() { Name = "Andrea", Avatar = "People_Circle2.png" },
+            });
+
+            this.viewModel.Messages.Add(new ImageMessage()
+            {
+                Aspect = Xamarin.Forms.Aspect.AspectFit,
+                Source = "Image1.jpg",
+                Author = new Author() { Name = "Andrea", Avatar = "People_Circle2.png" },
+            });
+
+            this.viewModel.Messages.Add(new ImageMessage()
+            {
+                Aspect = Xamarin.Forms.Aspect.Fill,
+                Source = "resource://GettingStarted.bird.gif",
+                Author = new Author() { Name = "Andrea", Avatar = "People_Circle2.png" },
+            });
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+**CustomImageView created in the sample level with `FFImageLoading` control loaded as its content to host the GIF** 
+{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ffimageloading="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+             mc:Ignorable="d"
+             x:Class="GettingStarted.CustomImageView">
+    <ffimageloading:SvgCachedImage 
+        HeightRequest="400"
+        WidthRequest="2300"
+        HorizontalOptions="StartAndExpand" 
+        VerticalOptions="Center" 
+        Aspect="AspectFit" 
+        x:Name="imageWave" 
+        Source="{TemplateBinding BindingContext.Source}"
+        Margin="0"/>
+</ContentView>
+
+{% endhighlight %}
+{% highlight c# %}
+
+namespace GettingStarted
+{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class CustomImageView : ContentView
+    {
+        public CustomImageView()
+        {
+            InitializeComponent();
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can download the complete project of this demo from [here](https://github.com/SyncfusionExamples/How-to-display-a-GIF-in-Xamarin.Forms-Chat).
+
 ## Sending message
 
-The `SfChat.CurrentUser` can send messages using the send button in the message input area at the bottom of the chat control. Tapping the send button or pressing <kbd>Enter</kbd> key (in UWP) will create a new text message with the text in the editor and add it to the [SfChat.Messages] collection. The `SendMessage` event and `SendMessageCommand`will be executed upon tapping the send button.
+The [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html) can send messages using the send button in the message input area at the bottom of the chat control. Tapping the send button or pressing <kbd>Enter</kbd> key (in UWP) will create a new text message with the text in the editor and add it to the [SfChat.Messages] collection. The [SfChat.SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event and [SfChat.SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) will be executed upon tapping the send button.
 
 **Cancel the message from sending**
 
@@ -1031,9 +1420,7 @@ public class SendMessageCommandExt : ICommand
 
 ## Scroll down the chat control to bottom when new message is added
 
-The SfChat allows to scroll down the chat control to bottom programmatically by using the [SfChat.ScrollToMessage(Object)](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ScrollToMessage.html) method. By default the message is scrolled at end of chat.  
-
-In the below example, chat control is scrolled down to bottom when a new message is added in Messages collection.
+By default the SfChat control is scrolled to the bottom to show the newly added message. If you want to disable this auto scroll, set [SfChat.CanAutoScrollToBottom](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CanAutoScrollToBottom.html) as `false`. Additionally you can also scroll to a particular message programmatically using the [SfChat.ScrollToMessage(Object)](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ScrollToMessage.html) method.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1048,80 +1435,46 @@ In the below example, chat control is scrolled down to bottom when a new message
     <ContentPage.BindingContext>
         <local:GettingStattedViewModel x:Name="viewModel"/>
     </ContentPage.BindingContext>
-    <ContentPage.Behaviors>
-        <local:MainPageBehavior></local:MainPageBehavior>
-    </ContentPage.Behaviors>
     
     <ContentPage.Content>
-        <sfChat:SfChat x:Name="sfChat"
+        <StackLayout x:Name="stack" Orientation="Vertical">
+            <Button x:Name="ScrollTo" Text="Scroll to message" HeightRequest="100" Clicked="ScrollTo_Clicked"/>
+            <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
                        SendMessageCommand="{Binding SendMessage}"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}"
+                       CanAutoScrollToBottom ="False"
+                       ShowOutgoingMessageAvatar="True" />
+        </StackLayout>
     </ContentPage.Content>
 
 </ContentPage>
 
 
 {% endhighlight %}
-
 {% highlight C# %}
- public class MainPageBehavior: Behavior<MainPage>
+
+//MainPage.Xaml.cs
+public partial class MainPage : ContentPage
+{
+    public MainPage()
     {
-
-       private GettingStattedViewModel viewModel;
-
-       private SfChat sfChat;
-        public MainPageBehavior()
-        {
-
-        }
-
-        protected override void OnAttachedTo(MainPage bindable)
-        {
-            this.sfChat = bindable.FindByName<SfChat>("sfChat");
-            this.viewModel = bindable.FindByName<GettingStattedViewModel>("viewModel");
-            this.viewModel.Messages.CollectionChanged += Messages_CollectionChanged;
-
-            base.OnAttachedTo(bindable);
-        }
-
-        private async void Messages_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-        {
-            if (e.Action == NotifyCollectionChangedAction.Add)
-            {
-                foreach (var chatItem in e.NewItems)
-                {
-                    TextMessage textMessage = chatItem as TextMessage;
-                    if (textMessage != null && textMessage.Author == this.viewModel.CurrentUser)
-                    {
-                        textMessage.ShowAvatar = false;
-                    }
-                    else
-                    {
-                        await Task.Delay(50);
-                        this.sfChat.ScrollToMessage(chatItem);
-                    }
-                }
-            }
-
-        }
-
-        protected override void OnDetachingFrom(MainPage bindable)
-        {
-            this.viewModel.Messages.CollectionChanged -= Messages_CollectionChanged;
-            this.sfChat = null;
-            this.viewModel = null;
-            base.OnDetachingFrom(bindable);
-        }
+        InitializeComponent ();
     }
+
+    private void ScrollTo_Clicked(object sender, EventArgs e)
+    {
+        // Scroll to the sixth message in the collection.
+        this.sfChat.ScrollToMessage(this.viewModel.Messages[5]);
+    }
+}
+
 {% endhighlight %}
 {% endtabs %}
 
-You can download the example from [Github](https://github.com/SyncfusionExamples/How-to-scroll-down-the-chat-control-at-bottom-when-new-message-is-added).
-
 ## Show the avatar for outgoing message
 
-By default the author name and avatar are not displayed for the outgoing messages(messages sent by the `SfChat.CurrentUser`). This can be customized in the `SendMessage` event handler or `SendMessageCommand's` execution.
+By default the author name and avatar are not displayed for the outgoing messages(messages sent by the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html)). This can be customized in the [SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event handler or [SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) command's execution.
 
 **SendMessage Event handler**
 
@@ -1137,7 +1490,7 @@ this.sfChat.SendMessage += this.SfChat_SendMessage
 /// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.</param>
 private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
 {
-    e.Message.ShowAvatar = true;
+    (sender as SfChat).ShowOutgoingMessageAvatar = true;
 }
 
 {% endhighlight %}
@@ -1181,8 +1534,7 @@ public class SendMessageCommandExt : ICommand
 
     public void Execute(object parameter)
     {
-        var args = parameter as SendMessageEventArgs;
-        args.Message.ShowAvatar = true;
+        (parameter as SfChat).ShowOutgoingMessageAvatar = true;
     }
 }
 
@@ -1301,7 +1653,7 @@ namespace GettingStarted
 
 ## Hide avatar and author name for messages
 
-The message's avatar and author name visibility can be hidden using [SfChat.ShowAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowAvatar.html) and [SfChat.ShowAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowAuthorName.html) properties respectively.
+The message's avatar and author name visibility can be hidden using [SfChat.ShowOutgoingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowOutgoingMessageAvatar.html) ,[SfChat.ShowIncomingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowIncomingMessageAvatar.html) ,[SfChat.ShowOutgoingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowOutgoingMessageAuthorName.html) and [SfChat.ShowIncomingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowIncomingMessageAuthorName.html) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1319,8 +1671,10 @@ The message's avatar and author name visibility can be hidden using [SfChat.Show
     <ContentPage.Content>
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
-                       ShowAuthorName="False"
-                       ShowAvatar="False"
+                       ShowOutgoingMessageAvatar="False"
+                       ShowIncomingMessageAvatar="False"
+                       ShowOutgoingMessageAuthorName="False"
+                       ShowIncomingMessageAuthorName="False"
                        CurrentUser="{Binding CurrentUser}" />
     </ContentPage.Content>
 </ContentPage>
@@ -1343,8 +1697,10 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
-            this.sfChat.ShowAvatar = false;
-            this.sfChat.ShowAuthorName = false;
+            this.sfChat.ShowOutgoingMessageAvatar = false;
+            this.sfChat.ShowIncomingMessageAvatar = false;
+            this.sfChat.ShowOutgoingMessageAuthorName = false;
+            this.sfChat.ShowIncomingMessageAuthorName = false;
             this.Content = sfChat;
         }
     }

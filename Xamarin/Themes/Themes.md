@@ -136,7 +136,7 @@ The theme resource dictionary contains the following set of primary keys that ar
 
 {% highlight xaml %}
 
-<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+<Application xmlns:syncCore="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
              ...>
 <Application.Resources>
     <syncCore:SyncfusionThemeDictionary>

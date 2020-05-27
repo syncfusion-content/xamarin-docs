@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Grouping | SfDataGrid | Xamarin | Syncfusion
-description: Grouping one or more columns and about the properties and events that involve in grouping in Xamarin.Forms DataGrid. Expanding or collapsing groups and using custom grouping logic if conventional grouping does not meet requirements.
+description: Describes how to group one or more columns, expand/collapse the groups, use custom grouping logic in Xamarin.Forms DataGrid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Grouping 
+# Grouping in Xamarin.Forms DataGrid (SfDataGrid)
 
 A group represents a collection of records that belongs to a particular category. When grouping, the data is organized into hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CaptionSummaryRowProperty.html) to get the underlying records in view.
 
@@ -192,6 +192,102 @@ public class GroupConverter : IValueConverter
     }
 }
 {% endhighlight %}
+
+### Sorting the grouped column records
+In custom grouping, you can sort all the inner records of each group by setting [GroupColumnDescription.SortGroupRecords](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupColumnDescription~SortGroupRecords.html) property as `true` to sort the records based on the `GroupColumnDescription.ColumnName` property.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             xmlns:local ="clr-namespace:DataGridSample;assembly=DataGridSample"
+             x:Class="DataGridSample.Sample">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:GroupOrderNoConverter x:Key="groupOrderNoConverter" />
+            <local:PriceConverter x:key="priceConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.BindingContext>
+        <local:ViewModel x:Name="viewModel" />
+    </ContentPage.BindingContext>
+
+    <syncfusion:SfDataGrid x:Name="dataGrid"
+                           ItemsSource="{Binding OrdersInfo}">
+        <Syncfusion:SfDataGrid.GroupColumnDescriptions>
+            <Syncfusion:GroupColumnDescription ColumnName="OrderNo" Converter="{StaticResource groupOrderNoConverter}" SortGroupRecords="True" />
+            <Syncfusion:GroupColumnDescription ColumnName="Price" Converter="{StaticResource priceConverter}" SortGroupRecords="False"/>
+        </Syncfusion:SfDataGrid.GroupColumnDescriptions>
+    </syncfusion:SfDataGrid>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+datagrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
+{
+    ColumnName = "OrderNo",
+    Converter = new GroupOrderNoConverter(),
+    SortGroupRecords = true
+}) ;
+datagrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
+{
+    ColumnName = "Price",
+    Converter = new PriceConverter(),
+    SortGroupRecords = false
+}) ;  
+			
+public class GroupOrderNoConvertor : IValueConverter
+{
+	public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+		var orderInfo = value as OrderInfo;
+        if (orderInfo.OrderNo < 10)
+            return "<10";
+        if (orderInfo.OrderNo >= 10 && orderInfo.OrderNo < 15)
+            return "Between 10 To 15";
+        if (orderInfo.OrderNo >= 15 && orderInfo.OrderNo <= 20)
+            return "Between 15 To 20";
+        else
+            return ">20";
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return null;
+    }
+}
+
+public class PriceConverter : IValueConverter
+{
+	public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        var orderInfo = value as OrderInfo;
+        if (orderInfo.Price < 300)
+            return "<300";
+        if (orderInfo.Price >= 300 && orderInfo.Price < 700)
+            return "Between 300 To 699";
+        if (orderInfo.Price >= 700 && orderInfo.Price <= 1000)
+            return "Between 700 To 1000";
+        return ">1000";
+    }
+
+    public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
+    {
+        return null;
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+As you can see in the below screenshot, the records are sorted based on the `OrderNo` column, since `SortGroupRecords` is set as `true` and it is not sorted further based on `Price` column since `SortGroupRecords` is set as `false`.
+
+![SfDataGrid with SortGroupRecords](SfDataGrid_images/SortGroupRecords.png)
 
 ## Expand groups while grouping
  
@@ -487,3 +583,11 @@ this.dataGrid.ShowColumnWhenGrouped = false;
 
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+[How to customize the expander icon for each level of group in Xamarin.Forms DataGrid(SfDataGrid)](https://www.syncfusion.com/kb/11014)
+
+[How to group a column in the actual order without sorting the data in SfDataGrid](https://www.syncfusion.com/kb/7852)
+
+[How to group by a column that is not in Columns collection](https://www.syncfusion.com/kb/7396)

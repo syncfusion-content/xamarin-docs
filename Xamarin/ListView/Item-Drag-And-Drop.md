@@ -7,7 +7,7 @@ control: SfListView
 documentation: ug
 ---
 
-# Item Drag and Drop
+# Item Reordering in Xamarin ListView (SfListView)
 
 The SfListView allows reordering by dragging and dropping items. It supports displaying the customized view in a template while dragging the item. It can be enabled by setting the [SfListView.DragStartMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~DragStartMode.html) property to `OnHold`. The drag and drop options are listed as follows:
 
@@ -482,3 +482,11 @@ public class DragDropControllerExt : DragDropController
 }
 {% endhighlight %}
 {% endtabs %}
+
+## See also
+
+[How to drag and drop an item from one to another listview in Xamarin.Forms](https://www.syncfusion.com/kb/11203/)                                                                                                                                                                                                                                                              
+[How to show or hide the drag indicator like iOS listview](https://www.syncfusion.com/kb/9981/)                                                                                                                                                     
+[How to retrieve the dragged item index in ViewModel command with the Prism framework in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11371)                                                                                                                                                                                  
+[How to show or hide drag indicator based on the DragStartMode in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11425/)                                    
+[How to get the dropped item group in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11436)                                                                                         

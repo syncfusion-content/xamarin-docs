@@ -84,6 +84,10 @@ Location: {Installed location}/{version}/Xamarin/lib
 <td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.UWP.dll<br/>Syncfusion.SfInput.UWP.dll<br/>Syncfusion.SfShared.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.UWP.dll<br/>Syncfusion.SfNumericTextBox.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/>Syncfusion.SfComboBox.XForms.dll<br/>Syncfusion.SfComboBox.XForms.UWP.dll<br/></td>
 </tr>
 <tr>
+<td>WPF</td>
+<td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.WPF.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.WPF.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
 <td>macOS</td>
 <td>Syncfusion.Data.Portable.dll<br/>Syncfusion.GridCommon.Portable.dll<br/>Syncfusion.SfDataGrid.XForms.dll<br/>Syncfusion.SfDataGrid.XForms.macOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.macOS.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
@@ -105,7 +109,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 
-To launch the SfDataGrid in iOS, call the `SfDataGridRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called as demonstrated in the following code example:
+To launch the SfDataGrid in iOS, call the `SfDataGridRenderer.Init()` in the `FinishedLaunching` override method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called as demonstrated in the following code example:
 
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -118,6 +122,23 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 }
 {% endhighlight %} 
 
+### macOS
+
+To launch the SfDataGrid in macOS, call the `SfDataGridRenderer.Init()` method in the `DidFinishLaunching` override method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+
+{% highlight C# %} 
+
+public override void DidFinishLaunching(NSNotification notification)
+{ 
+    … 
+    Forms.Init();
+    Syncfusion.SfDataGrid.XForms.MacOS.SfDataGridRenderer.Init();
+    LoadApplication(new App());          
+    …
+}
+
+{% endhighlight %}
+
 ### Universal Windows Platform (UWP)
 
 To launch the SfDataGrid in UWP, call the `SfDataGridRenderer.Init()` in the `MainPage` constructor before the LoadApplication is called as demonstrated in the following code example.
@@ -127,6 +148,20 @@ public MainPage()
 {
     …
     Syncfusion.SfDataGrid.XForms.UWP.SfDataGridRenderer.Init();
+    LoadApplication (new App ());
+    …
+}
+{% endhighlight %}
+
+### Windows Presentation Platform (WPF)
+
+To launch the SfDataGrid in WPF, call the `SfDataGridRenderer.Init()` in the `MainWindow` constructor before the LoadApplication is called as demonstrated in the following code example.
+
+{% highlight c# %}
+public MainWindow()
+{
+    …
+    Syncfusion.SfDataGrid.XForms.WPF.SfDataGridRenderer.Init();
     LoadApplication (new App ());
     …
 }
@@ -587,3 +622,21 @@ The above exceptions can be resolved in two ways.
 
 
 ![DataGrid with linker settings](SfDataGrid_images/GettingStarted_img1.png)
+
+## See also
+
+[How to overcome the DisplayBinding converter is not firing problem when XamlCompilation attribute is set as XamlCompilationOptions.Compile](https://www.syncfusion.com/kb/7561)
+
+[What will be the best practice way to update Xamarin controls in an existing project](https://www.syncfusion.com/kb/7519)
+
+[How to solve the Android resources issue in Xamarin.Forms](https://www.syncfusion.com/kb/7481)
+
+[How to convert Point to Index and Index to Point in SfDataGrid](https://www.syncfusion.com/kb/7456)
+
+[How to load grid without borders](https://www.syncfusion.com/kb/7451)
+
+[How to parse XML file and set as ItemsSource for SfDataGrid](https://www.syncfusion.com/kb/7439)
+
+[How to configure package source and install Syncfusion NuGet packages in an existing project](https://www.syncfusion.com/kb/7441)
+
+[How to render SfDataGrid for Xamarin.Forms.UWP in release mode](https://www.syncfusion.com/kb/7445)

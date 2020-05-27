@@ -537,8 +537,10 @@ public partial class MainPage : ContentPage
 * When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionBackgroundColor.html) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the ListView instead of `ItemTemplate`.
 * When the ListView contains duplicated items in the collection, only the first item whose instance was created initially will be selected or deselected.
 
-## See Also
+## See also
 [How to select ListView item using Enter key in Xamarin.Forms ListView (UWP)](https://www.syncfusion.com/kb/11042)                                                                         
 [How to disable a selection in the Xamarin.Forms listview](https://www.syncfusion.com/kb/9982)                                                                                                                                                                                    
 [How to disable selection for particular items in SfListView](https://www.syncfusion.com/kb/8516)                                                                                        
 [How to notify item selection using MVVM in Xamarin.Forms ListView](https://www.syncfusion.com/kb/9961)
+[How to change the ListView selected item text color in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11363)                                                                                                                                                                                
+[How to change selected image in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11486/)

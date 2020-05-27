@@ -128,8 +128,6 @@ SfPicker supports DataTemplateSelector which you can choose a DataTemplate based
 
 {% endtabs %}
 
-{% tabs %}
-
 ### OnSelectTemplate
 
  The OnSelectTemplate is a overridden method  to return a particular DataTemplate, which shown in the following code:
@@ -166,8 +164,6 @@ SfPicker supports DataTemplateSelector which you can choose a DataTemplate based
     }
   
 {% endhighlight %}
-
-{% endtabs %}
 
 The following screenshot illustrates the output of above code.
 

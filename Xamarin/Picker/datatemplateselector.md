@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DataTemplateSelector of Syncfusion Xamarin.Forms SfPicker
-description: This section provides the details about how to use a DataTemplateSelctor for Xamarin.Forms SfPicker
+description: This section provides the details about how to use a DataTemplateSelctor in Xamarin.Forms with Syncfusion SfPicker
 platform: Xamarin
 control: Picker
 documentation: ug

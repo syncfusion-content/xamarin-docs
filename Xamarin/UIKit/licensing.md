@@ -9,7 +9,7 @@ documentation: ug
 
 ## Licensing
 
-We have published the Essential UI Kit source code in GitHub with an MIT license. You can use this UI Kit pages in your application for free without any restrictions. You can find the GitHub link as follows.
+Essential UI Kit source code published in GitHub with an MIT license. You can use this UI Kit pages in your application for free without any restrictions. You can find the GitHub link as follows.
 
 [https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms](https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms)
 
@@ -30,5 +30,5 @@ To know more about the Syncfusion community licenses, please refer to the follow
 
 [https://www.syncfusion.com/products/communitylicense](https://www.syncfusion.com/products/communitylicense)
 
-Please let us know if you need any further assistance in this.
+
 

@@ -96,9 +96,9 @@ The data source of the segmented control can be set as follows.
 
 {% highlight c# %}
 
-public class ViewModel : INotifyPropertyChanged
+public class ViewModel
 {
-private ObservableCollection<SfSegmentItem> imageCollection = new ObservableCollection<SfSegmentItem>();
+private ObservableCollection<SfSegmentItem> imageCollection;
 public ObservableCollection<SfSegmentItem> ImageCollection
 {
 get { return imageCollection; }
@@ -106,7 +106,7 @@ set { imageCollection = value; }
 }
 public ViewModel()
 {
-ImageCollection = new ObservableCollection<SfSegmentItem>
+imageCollection = new ObservableCollection<SfSegmentItem>
 {
 new SfSegmentItem(){IconFont = "6", FontIconFontColor=Color.FromHex("#FFFFFF"), FontColor=Color.FromHex("#FFFFFF")},          
 new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.FromHex("#FFFFFF"),  FontColor=Color.FromHex("#FFFFFF")},     
@@ -140,7 +140,6 @@ SfSegmentedControl segmentedControl;
 public SegmentedControlSample()
 {
 segmentedControl = new SfSegmentedControl();
-segmentedControl.BindingContext = viewModel;
 segmentedControl.ItemsSource = viewModel.ImageCollection;
 segmentedControl.DisplayMode = SegmentDisplayMode.Image;
 segmentedControl.SelectedIndex = 1;
@@ -164,9 +163,9 @@ The data source of the segmented control can be set as follows.
 
 {% highlight c# %}
 
-public class ViewModel : INotifyPropertyChanged
+public class ViewModel 
 {
-private ObservableCollection<SfSegmentItem> imageTextCollection = new ObservableCollection<SfSegmentItem>();
+private ObservableCollection<SfSegmentItem> imageTextCollection;
 public ObservableCollection<SfSegmentItem> ImageTextCollection
 {
 get { return imageTextCollection; }
@@ -175,7 +174,7 @@ set { imageTextCollection = value; }
 public ViewModel()
 {
 
-ImageTextCollection = new ObservableCollection<SfSegmentItem>
+imageTextCollection = new ObservableCollection<SfSegmentItem>
 {
 new SfSegmentItem(){IconFont = "6", FontIconFontColor=Color.FromHex("#FFFFFF"), FontColor=Color.FromHex("#FFFFFF"), Text = "Day"},          
 new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.FromHex("#FFFFFF"),  FontColor=Color.FromHex("#FFFFFF"), Text = "Week"},     
@@ -214,7 +213,6 @@ private SfSegmentedControl segmentedControl;
 public SegmentedControlSample()
 {
 segmentedControl = new SfSegmentedControl();
-segmentedControl.BindingContext = viewModel;
 segmentedControl.ItemsSource = viewModel.ImageTextCollection;
 segmentedControl.DisplayMode = SegmentDisplayMode.ImageWithText;
 segmentedControl.SelectedIndex = 1;

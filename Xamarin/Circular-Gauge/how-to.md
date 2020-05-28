@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# How to
+# How to change the gauge size and alignment
 
 ## Changing the gauge size
 

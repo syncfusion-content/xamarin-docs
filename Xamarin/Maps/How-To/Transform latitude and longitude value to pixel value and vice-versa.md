@@ -43,4 +43,3 @@ marker.Longitude = longitudeLatitude.X.ToString();
 {% endhighlight %}
 
 ![Latitude longitude to point and vice versa in Xamarin.Forms Maps](Images/PixelToLatLonViceVersa.png)
-

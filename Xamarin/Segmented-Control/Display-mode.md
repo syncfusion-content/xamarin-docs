@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Display mode in Syncfusion segmented control for Xamarin.Forms
-description: This section describes about the display mode in the segmented control for effective communication.
+description: This section describes about the display mode in the segmented control for effective communications.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
 
-# Display mode
+# Display mode Xamarin Segmented Control(SfSegementedControl)
 
 Depending on application, different scenarios may require for effective communication. The segmented control supports these three options: icons, text, or a combination of both.
 
@@ -175,7 +175,7 @@ set { imageTextCollection = value; }
 public ViewModel()
 {
 
-Image_textCollection = new ObservableCollection<SfSegmentItem>
+ImageTextCollection = new ObservableCollection<SfSegmentItem>
 {
 new SfSegmentItem(){IconFont = "6", FontIconFontColor=Color.FromHex("#FFFFFF"), FontColor=Color.FromHex("#FFFFFF"), Text = "Day"},          
 new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.FromHex("#FFFFFF"),  FontColor=Color.FromHex("#FFFFFF"), Text = "Week"},     

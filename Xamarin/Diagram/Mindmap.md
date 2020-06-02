@@ -6,7 +6,7 @@ control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Mind map layout
+# Mind map layout in Xamarin Diagram
 
 A mind map is a diagram used to visually organize the information. It is hierarchical and shows relationship of the whole idea. It consists of a central ideas, related ideas, and lines connecting them together.  It is used for brainstorming, planning, and information gathering etc. The following code example illustrates how to create and mind map layout:
 {% tabs %}
@@ -33,7 +33,7 @@ FColor.Add(Color.FromHex("#E5FEE4"));
 //Add Root node
 var node = AddNode(300, 400, width, height, "Goals");
 AddNodeStyle(node, Color.FromHex("#d0ebff"), Color.FromHex("#81bfea"));
-RootNode = node;
+Node RootNode = node;
 diagram.AddNode(node);
 
 //Add child nodes for root node
@@ -108,7 +108,7 @@ private Connector AddConnector(Node node, Node BranchNode)
     connector.Style.StrokeStyle = StrokeStyle.Dashed;
     connector.Style.StrokeWidth = 3;
 if (Device.RuntimePlatform == Device.Android)
-    connector.TargetDecoratorStyle.Width = connector.TargetDecoratorStyle.Width * App.factor;
+    connector.TargetDecoratorStyle.Width = connector.TargetDecoratorStyle.Width;
     connector.TargetDecoratorStyle.Fill = (connector.TargetNode.Style.StrokeBrush as SolidBrush).FillColor;
     connector.TargetDecoratorStyle.Stroke = (connector.TargetNode.Style.StrokeBrush as SolidBrush).FillColor;
     connector.SegmentType = SegmentType.CurveSegment;
@@ -129,7 +129,7 @@ Node AddNode(int x, int y, int w, int h, string text)
             node.ShapeType = ShapeType.RoundedRectangle;
             node.Style.StrokeWidth = 3;
             if (Device.RuntimePlatform == Device.Android)
-                node.Annotations.Add(new Annotation() { Content = text, FontSize = 14 * App.factor, TextBrush = new SolidBrush(Color.Black) });
+                node.Annotations.Add(new Annotation() { Content = text, FontSize = 14, TextBrush = new SolidBrush(Color.Black) });
             else if (Device.RuntimePlatform == Device.iOS)
                 node.Annotations.Add(new Annotation() { Content = text, FontSize = 15, TextBrush = new SolidBrush(Color.Black) });
             return node;

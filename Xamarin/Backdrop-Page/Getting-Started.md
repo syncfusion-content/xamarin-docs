@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion Backdrop Page
-description: How to initialze a backdrop page.
+description: How to initialze the Syncfusion backdrop page control in Xamarin.Forms platform and it's customization.
 platform: xamarin
 control: SfBackdropPage
 documentation: ug
 ---
 
-# Getting Started
+## Getting Started
 
 This section explains the steps required to configure the backdrop page.
 
@@ -23,11 +23,7 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 N> Install the same version of SfBackdropPage NuGet in all the projects.
 
-**Method 2: Adding SfBackdropPage reference from toolbox**
-
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfBackdropPage control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
-
-**Method 3: Adding SfBackdropPage assemblies manually from the installed location**
+**Method 2: Adding SfBackdropPage assemblies manually from the installed location**
 
 If you prefer to manually reference the assemblies instead referencing from NuGet, add the following assemblies in respective projects.
 

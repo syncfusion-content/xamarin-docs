@@ -44,6 +44,16 @@ editor.ToggleCropping(float.NaN,float.NaN);
 
 {% endhighlight %}
 
+* The following code shows cropping an image in square format.
+
+{% highlight C# %}
+
+// To crop an image as a square dimension.
+
+editor.ToggleCropping(1,1);
+
+{% endhighlight %}
+
 * The following code shows cropping an image based on specific ratio.
 
 {% highlight C# %}

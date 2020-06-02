@@ -320,3 +320,64 @@ public class GettingStattedViewModel : INotifyPropertyChanged
 {% endtabs %}
 
 ![Xamarin Forms chat typing indicator with text](SfChat_images/xamarin-forms-chat-typing-indicator-text.png)
+
+## Notifications when user start/stop typing
+ 
+You can access the typing area in SfChat using [SfChat.Editor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~Editor.html) property, listen to its focus change, text change, completed events etc to identify when the user starts/ends typing.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:GettingStartedViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <sfChat:SfChat x:Name="sfChat"
+                       Messages="{Binding Messages}"
+                       TypingIndicator="{Binding TypingIndicator}"
+                       CurrentUser="{Binding CurrentUser}"
+                       ShowOutgoingMessageAvatar="True"/>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            // Notifies that user has started typing.
+            this.sfChat.Editor.TextChanged += Editor_TextChanged;
+            // Notifies that user has stopped typing.
+            this.sfChat.Editor.Unfocused += Editor_Unfocused;
+        }      
+
+        private void Editor_Unfocused(object sender, FocusEventArgs e)
+        {
+            // User has stopped typing
+            this.sfChat.ShowTypingIndicator = false;
+        }
+
+        private void Editor_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            // User has started typing
+            this.sfChat.ShowTypingIndicator = true;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 

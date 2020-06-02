@@ -7,7 +7,7 @@ control: SegmentedControl
 documentation: ug
 ---
 
-# Display mode 
+# Display mode
 
 Depending on application, different scenarios may require for effective communication. The segmented control supports these three options: icons, text, or a combination of both.
 

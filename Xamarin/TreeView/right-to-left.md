@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Right-to-left | TreeView for Xamarin.Forms | Syncfusion
-description: Describes how treeview works on right-to-left localization.
+description: Describes how to work with treeview on right-to-left on localization and in Xamarin.Forms platforms.
 platform: xamarin
 control: SfTreeView
 documentation: ug
 ---
 
-# Right to left(RTL)
+# Right to left(RTL) in Xamarin TreeView (SfTreeView)
 
 TreeView supports to change the flow of text to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft`. TreeView supports RTL in Xamarin.Forms version 3.0 and above.
 
@@ -75,3 +75,7 @@ N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is 
 ## Limitations
 
 * When you use custom [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemTemplate.html) in `TreeView`, it does not respond to `FlowDirection` due to framework issue. To respond to `FlowDirection` changes, you need to set `FlowDirection` of `TreeView` to parent view of your custom `ItemTemplate`.
+
+## See also
+
+[How to work with RTL in Xamarin.Forms TreeView (SfTreeView)](https://www.syncfusion.com/kb/11414/how-to-work-with-rtl-in-xamarin-forms-treeview-sftreeview)

@@ -132,4 +132,5 @@ You can download the entire source of this demo [here](https://github.com/Syncfu
 ## See also
 
 [How to customize header icon in Xamarin.Forms Expander (SfExpander)](https://www.syncfusion.com/kb/11378/)                                                                                                                                                                                                         
-[How to center align the Expander header text in Xamarin.Forms (SfExpander)](https://www.syncfusion.com/kb/11360/)                                                                                      
+[How to center align the Expander header text in Xamarin.Forms (SfExpander)](https://www.syncfusion.com/kb/11360/)                                                                                                                                                                                                                                                                                                                                                                                                      
+[How to use a custom font icon for Expander in Xamarin.Forms (SfExpander)](https://www.syncfusion.com/kb/11469/)

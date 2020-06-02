@@ -133,4 +133,5 @@ You can download the entire source of this demo [here](https://github.com/Syncfu
 
 ## See also
 
-[How to bind ViewModel data to Accordion in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11404/)                                                                                                                                                          
+[How to bind ViewModel data to Accordion in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11404/)                                                                                                                                                                                                                              
+[How to work with Accordion with SfListView in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11448/)`                                                                                                                                                             

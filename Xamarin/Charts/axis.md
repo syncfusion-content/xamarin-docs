@@ -1091,6 +1091,70 @@ Chart.PrimaryAxis.Title.Text = "Month";
 
 ![Axis label extent support in Xamarin.Forms Chart](axis_images/labelExtent.png)
 
+### LabelFormat
+
+**Format numeric labels**
+
+Numeric labels can be formatted by using the [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html)  property. Numeric values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
+
+% tabs %} 
+
+{% highlight xaml %}
+
+<chart:NumericalAxis >
+
+    <chart:NumericalAxis.LabelStyle>
+	
+        <chart:ChartAxisLabelStyle LabelFormat="$##.##"/>
+		
+    </chart:NumericalAxis.LabelStyle>
+	
+</chart:NumericalAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+NumericalAxis numerical = new NumericalAxis();
+
+numerical.LabelStyle.LabelFormat = "$##.##";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Format date time labels**
+
+Date time labels can be formatted by using the labelFormat([`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) ) property of the axis..
+
+% tabs %} 
+
+{% highlight xaml %}
+
+<chart:DateTimeAxis>
+
+    <chart:DateTimeAxis.LabelStyle>
+	
+        <chart:ChartAxisLabelStyle LabelFormat="dd/MMM/yyy"/>
+		
+    </chart:DateTimeAxis.LabelStyle>
+	
+</chart:DateTimeAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+DateTimeAxis primaryAxis = new DateTimeAxis();
+
+primaryAxis.LabelStyle.LabelFormat = "dd/MM/yyyy";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Axis LabelFormat support in Xamarin.Forms Chart](axis_images/LabelFormatter.png)
+
 
 ### Grid lines customization
 

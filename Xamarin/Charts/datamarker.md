@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Data Markers
+# Data Markers in Xamarin Charts (SfChart) 
 
 Data markers are used to provide information about the data points to the user. You can add a shape and label to adorn each data point. This can be enabled using following code snippet,
 
@@ -136,6 +136,41 @@ pieSeries.DataMarker.LabelContent = LabelContent.Percentage;
 {% endtabs %}
 
 ![Formatting the label content of data markers in Xamarin.Forms Chart](datamarker_images/datamarker_img3.png)
+
+### LabelFormat
+
+Data marker  labels can be formatted by using the[` LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) property. Data marker label values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:LineSeries.DataMarker>
+
+    <chart:ChartDataMarker ShowLabel="True">
+	
+        <chart:ChartDataMarker.LabelStyle>
+		
+            <chart:DataMarkerLabelStyle LabelFormat="$##.##"/>
+			
+        </chart:ChartDataMarker.LabelStyle>
+		
+    </chart:ChartDataMarker>	
+	
+</chart:LineSeries.DataMarker>
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+series.DataMarker.LabelStyle.LabelFormat = "$##.##";
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![LabelFormat support in Xamarin.Forms Chart](datamarker_images/DataMarkerLabelFormat.png)
+
 
 ## Label position
 

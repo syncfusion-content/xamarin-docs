@@ -7,7 +7,7 @@ control: SfPullToRefresh
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin PullToRefresh (SfPullToRefresh)
 
 This section provides a quick overview for working with SfPullToRefresh for Xamarin.Forms.
 

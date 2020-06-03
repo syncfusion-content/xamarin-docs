@@ -7,6 +7,8 @@ control: Cards
 documentation: ug
 ---
 
+#BindableLayout in Xamarin Cards
+
 From version 3.5, Xamarin.Forms has introduced a new approach, called BindableLayout, which works with all the layouts that are derived from Layout&lt;T&gt;. By simply setting ItemTemplate and ItemsSource, BindableLayout creates a group of UI (for the given ItemTemplate) for every data in the ItemsSource and add them as children.
 
 Since [`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout.html) is an extended class of Layout&lt;T&gt;, this approach is also possible for SfCardLayout.
@@ -150,3 +152,5 @@ this.Content = cardLayout;
 {% endhighlight %}
 
 {% endtabs %}
+
+N> Currently we don't have support for HasShadow property in SfCardView.

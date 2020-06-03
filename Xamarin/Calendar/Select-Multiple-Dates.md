@@ -116,13 +116,42 @@ calendar.SelectionMode = SelectionMode.SingleSelection;
 
 ## Programmatically clear the selected dates
       
-You can clear the calendar selected dates pragmatically by using `ClearSelection` method, which is applicable for calendar `SelectionMode` such as `SingleSelection`, `MultiSelection`, `RangeSelection`, and `MultiRangeSelection`.
+You can clear the calendar selected dates pragmatically by using [ClearSelection](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ClearSelection.html) method, which is applicable for calendar [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html) such as `SingleSelection`, `MultiSelection`, `RangeSelection`, and `MultiRangeSelection`.
 
 {% tabs %}
 
 {% highlight c# %}
 	
 calendar.ClearSelection();
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+## Programmatically Refresh the Calendar View
+      
+You can Refresh the calendar View programmatically by using [Refresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Refresh.html) method, which is applicable for all the `ViewModes` such as `MonthView`,`YearView`.
+
+{% tabs %}
+
+{% highlight c# %}
+	
+calendar.Refresh();
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+## Programmatically Dispose the Calendar View
+      
+You can Dispose the calendar View programmatically by using [Dispose](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Dispose.html) method, which is applicable for which is applicable for all the `ViewModes` such as `MonthView`,`YearView`.
+
+
+{% tabs %}
+
+{% highlight c# %}
+	
+calendar.Dispose();
 	
 {% endhighlight %}
 

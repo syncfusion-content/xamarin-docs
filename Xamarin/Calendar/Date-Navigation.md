@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Date Navigation and Gestures | SfCalendar | Xamarin.Forms | Syncfusion
-description: Learn the complete navigation and gestures support
+description: Learn the complete navigation and gestures support in Syncfusion Xamarin calendar (SfCalendar) control and more details.                                                           
 platform: Xamarin
 control: Calendar
 documentation: ug
 ---
 
-# Date Navigation
+# Date Navigation in Xamarin Calendar (SfCalendar)                  
 
 `SfCalendar` control provides option to navigate through items either programmatically or by using gesture.
 
@@ -85,3 +85,19 @@ Calendar.NavigationDirection = NavigationDirection.Vertical;
 {% endtabs %}
 
 ![YearView Navigation in Xamarin.Forms Calendar ](images/Xamarin.forms-Calendar-NavigationDirection.png)
+
+### NavigateTO
+
+Visible dates can be moved to specific date using [NavigateTo](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigateTO.html) method available in SfCalendar.It will move to any specific date of the month if the calendar view is Month View.
+
+{% tabs %}
+
+{% highlight c# %}
+
+DateTime currentDate = DateTime.Now;
+DateTime SpecificDate = new DateTime(currentDate.Year - 5,currentDate.Month - 3, currentDate.Day, 0, 0, 0);
+calendar.NavigateTo(SpecificDate);
+
+{% endhighlight %}
+
+{% endtabs %}

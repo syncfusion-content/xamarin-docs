@@ -144,7 +144,7 @@ calendar.Refresh();
 
 ## Programmatically Dispose the Calendar View
       
-You can Dispose the calendar View programmatically by using [Dispose](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Dispose.html) method, which is applicable for which is applicable for all the `ViewModes` such as `MonthView`,`YearView`.
+You can Dispose the calendar View programmatically by using [Dispose](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Dispose.html) method, which is applicable for all the `ViewModes` such as `MonthView`,`YearView`.
 
 
 {% tabs %}

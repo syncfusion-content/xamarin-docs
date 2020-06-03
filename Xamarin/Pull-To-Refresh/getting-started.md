@@ -281,4 +281,4 @@ If we run the above sample with `TransitionMode` as `Push`, the output will look
 
 ![PullToRefresh with push transition mode](overview_images/Push.png)
 
-N> PullToRefresh does not have a view. So it mandatory to specify size or LayoutOptions when loaded inside any layouts.
+N> PullToRefresh does not have a view. So it is mandatory to set size or LayoutOptions when loaded inside any layouts.

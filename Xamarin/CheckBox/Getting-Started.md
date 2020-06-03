@@ -9,7 +9,7 @@ keywords: button, SfCheckBox, CheckBox
 
 ---
 
-# Getting Started
+# Getting Started in Xamarin Checkbox (SfCheckbox)
 
 This section explains the steps required to configure the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html) control in a real-time scenario and provides a walk-through on some of the customization features available in [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html) control.
 

@@ -1095,7 +1095,7 @@ Chart.PrimaryAxis.Title.Text = "Month";
 
 **Format numeric labels**
 
-Numeric labels can be formatted by using the [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html)  property. Numeric values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
+The numeric labels can be formatted by using the [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html)  property. Numeric values can be formatted with n (number with decimal points), c (Currency) and p (percentage) commands.
 
 % tabs %} 
 
@@ -1119,13 +1119,15 @@ NumericalAxis numerical = new NumericalAxis();
 
 numerical.LabelStyle.LabelFormat = "$##.##";
 
+chart.SecondaryAxis = numerical;
+
 {% endhighlight %}
 
 {% endtabs %}
 
 **Format date time labels**
 
-Date time labels can be formatted by using the labelFormat([`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) ) property of the axis..
+The date time labels can be formatted by using the labelFormat([`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) ) property of the axis..
 
 % tabs %} 
 
@@ -1148,6 +1150,8 @@ Date time labels can be formatted by using the labelFormat([`LabelFormat`](http:
 DateTimeAxis primaryAxis = new DateTimeAxis();
 
 primaryAxis.LabelStyle.LabelFormat = "dd/MM/yyyy";
+
+chart.PrimaryAxis = primaryAxis;
 
 {% endhighlight %}
 

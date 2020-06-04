@@ -7,9 +7,9 @@ control: Calendar
 documentation: ug
 ---
 
-# Date Navigation in Xamarin Calendar (SfCalendar)                  
+# Date Navigation in the Xamarin Calendar (SfCalendar)                  
 
-`SfCalendar` control provides option to navigate through items either programmatically or by using gesture.
+The `SfCalendar` control provides the option to navigate through items either programmatically or by using gestures.
 
 ## Programmatic Navigation 
 
@@ -88,7 +88,7 @@ Calendar.NavigationDirection = NavigationDirection.Vertical;
 
 ### NavigateTo
 
-Visible dates can be moved to specific date using [NavigateTo](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigateTO.html) method available in SfCalendar.It will move to any specific date of the month if the calendar view is Month View.
+Visible dates can be moved to a specific date using the [NavigateTo](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigateTO.html) method available in SfCalendar.It will move to any specific date of the month if the calendar view is Month View.
 
 {% tabs %}
 

@@ -443,5 +443,5 @@ The following screenshot illustrates the result of the above codes.
  
 ![Linear Gauge Getting Started](getting-started_images/getting-started.png)
 
-You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge-GettingStarted1094113275).  
+You can find the complete getting started sample from this [`link`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge-GettingStarted323564295).  
 

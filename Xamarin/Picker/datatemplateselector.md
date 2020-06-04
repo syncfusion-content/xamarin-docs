@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DataTemplateSelector of Syncfusion Xamarin.Forms SfPicker
-description: How to use a DataTemplateSelctor  for Xamarin.Forms SfPicker
+description: This section provides the details about how to use a DataTemplateSelctor in Xamarin.Forms with Syncfusion SfPicker
 platform: Xamarin
 control: Picker
 documentation: ug
@@ -128,8 +128,6 @@ SfPicker supports DataTemplateSelector which you can choose a DataTemplate based
 
 {% endtabs %}
 
-{% tabs %}
-
 ### OnSelectTemplate
 
  The OnSelectTemplate is a overridden method  to return a particular DataTemplate, which shown in the following code:
@@ -166,8 +164,6 @@ SfPicker supports DataTemplateSelector which you can choose a DataTemplate based
     }
   
 {% endhighlight %}
-
-{% endtabs %}
 
 The following screenshot illustrates the output of above code.
 

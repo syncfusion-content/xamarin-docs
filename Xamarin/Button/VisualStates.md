@@ -21,6 +21,8 @@ N> In addition, `MouseOver` VisualState is available only in the UWP platform.
 
 N> The visual states `Checked` and `Unchecked` are only updated when enabling the [IsChecked] (https://help.syncfusion.com/xamarin/button/gettingstarted#toggle-button) property in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html).
 
+N>The visual states `Checked` and `Unchecked` are only updated when a [toggle type](https://help.syncfusion.com/xamarin/button/gettingstarted#toggle-button) is used for [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html).
+
 {% tabs %}
 {% highlight xaml %}
 

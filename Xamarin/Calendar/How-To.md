@@ -495,7 +495,7 @@ calendar.SelectedDate = null;
 {% endtabs %}
 
 
-## How to Perform an Operation when Navigating to Next Month?
+## How to perform an operation when navigating to next month?
 
 User defined operation can be performed using [MonthChanging](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MonthChanging_EV_.html) event while navigating to next month. This event returns the details about current value and previous value of month using the property of the [MonthChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthChangingEventArgs.html) .
 
@@ -536,7 +536,7 @@ void Calendar_MonthChanging(object sender, MonthChangingEventArgs e)
 {% endtabs %}
 
 
-## How to Perform an Operation when Changing the ViewMode?
+## How to perform an operation when changing the ViewMode?
 
 User Defined Operation can be performed using [OnViewModeChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnViewModeChanged.html) event while changing the `ViewMode`. This event returns the details about the different ViewMode of the `Calendar` using the Property of the [ViewModeChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.ViewModeChangedEventArgs.html) .
 <table>
@@ -574,7 +574,7 @@ void Handle_OnViewModeChanged(object sender, ViewModeChangedArgs e)
 {% endtabs %}
 
 
-## How To Perform an Operation when InlineAppointments are loaded ?
+## How to perform an operation when InlineAppointments are loaded ? 
 
 [OnInlineLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnInlineLoaded.html) event returns the selected date along with inline Appointments it holds. Using this you can perform operation related with Appointments in the Property of [InlineEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.InlineEventArgs.html) .
 
@@ -610,7 +610,7 @@ void Handle_OnInlineLoaded(object sender, InlineEventArgs e)
 {% endtabs %}
 
 
-## How To customize the calendar Header using OnHeaderLoaded event ?
+## How to customize the calendar header using OnHeaderLoaded event ?
 
 [OnHeaderLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnHeaderLoaded.html) event allows us to customize the HeaderView using the view Property of the [CalendarHeaderEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.CalendarHeaderEventArgs.html) .
 

@@ -86,7 +86,7 @@ Calendar.NavigationDirection = NavigationDirection.Vertical;
 
 ![YearView Navigation in Xamarin.Forms Calendar ](images/Xamarin.forms-Calendar-NavigationDirection.png)
 
-### NavigateTO
+### NavigateTo
 
 Visible dates can be moved to specific date using [NavigateTo](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigateTO.html) method available in SfCalendar.It will move to any specific date of the month if the calendar view is Month View.
 

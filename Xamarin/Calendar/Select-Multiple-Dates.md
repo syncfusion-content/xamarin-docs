@@ -128,7 +128,7 @@ calendar.ClearSelection();
 
 {% endtabs %}
 
-## Programmatically Refresh the Calendar View
+## Programmatically refresh the calendar view
       
 You can Refresh the calendar View programmatically by using [Refresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Refresh.html) method, which is applicable for all the `ViewModes` such as `MonthView`,`YearView`.
 
@@ -142,7 +142,7 @@ calendar.Refresh();
 
 {% endtabs %}
 
-## Programmatically Dispose the Calendar View
+## Programmatically dispose of the calendar view
       
 You can Dispose the calendar View programmatically by using [Dispose](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Dispose.html) method, which is applicable for all the `ViewModes` such as `MonthView`,`YearView`.
 

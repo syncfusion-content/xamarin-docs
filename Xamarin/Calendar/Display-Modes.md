@@ -525,7 +525,7 @@ this.Content = calendar;
 ![Century view customization in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-centuryviewcustom.png)
 
 
-## Programmatically Expand the InlineView
+## Programmatically expand the InlineView
 
 You can Programmatically Expand the InlineView using [ExpandInlineView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ExpandInlineView.html) method which Expands the Appointment details of the corresponding date. 
 
@@ -540,7 +540,7 @@ calendar.ExpandInlineView(DateTime.Now.Date);
 {% endtabs %}
 
 
-## Programmatically Collapse the InlineView
+## Programmatically collapse the InlineView
 
 You can Programmatically Collapsed the InlineView Using [CollapseInlineView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~CollapseInlineView.html) method which collapsed the Appointment details of the corresponding date. 
  

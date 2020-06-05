@@ -137,9 +137,9 @@ pieSeries.DataMarker.LabelContent = LabelContent.Percentage;
 
 ![Formatting the label content of data markers in Xamarin.Forms Chart](datamarker_images/datamarker_img3.png)
 
-### LabelFormat
+### DateMarker LabelFormat
 
-Data marker  labels can be formatted by using the[` LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) property. Data marker label values can be formatted with n (number with decimal points), c (currency) and p (percentage) commands.
+Data marker labels can be formatted by using the [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) property. Data marker label values can be formatted with n (number with decimal points), c (Currency) and p (percentage) commands.
 
 {% tabs %} 
 

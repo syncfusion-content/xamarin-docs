@@ -464,7 +464,7 @@ picker.ColumnHeaderFontAttribute = FontAttributes.Bold;
 
 ## Multi Column SelectedIndex
 
-Picker allows users to set selected index for particular column of picker or all columns of picker.To achievethis we need to set collection as Selected Index like below.
+Picker allows users to set selected index for particular column of picker or all columns of picker.To achieve this we need to set collection as Selected Index like below.
 
 {% tabs %}
 

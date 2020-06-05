@@ -569,3 +569,53 @@ namespace ComboBox
 {% endhighlight %}
 
 {% endtabs %}
+
+### Two-Way Bindings
+
+Most bindable properties have a default binding mode of OneWay but the following properties have a default binding mode of TwoWay:
+
+ * EnableAutoSize 
+ * SelectionType
+ * DropDownBackgroundColor
+ * ItemPadding
+ * ShowBorder
+ * Text
+ * DropDownItemHeight
+ * TextSize
+ * DropDownTextSize
+ * DropDownBorderColor
+ * SelectedItem
+
+
+When data bindings are used with the Model-View-ViewModel (MVVM) application architecture, the ViewModel class is the data-binding source, and the View, which consists of views such as Entry, are data-binding targets. It is very likely that you want each view on the page to be initialized with the value of the corresponding property in the ViewModel, but changes in the view should also affect the ViewModel property.
+
+The properties with default binding modes of TwoWay are those properties most likely to be used in MVVM scenarios.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:SfComboBoxTwoWaySample"
+             x:Class="SfComboBoxTwoWaySample.MainPage">
+    <StackLayout>
+        <Label Text="TwoWay Sample" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
+        <!-- Place new controls here -->
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Padding="30">
+            <Entry Text="{Binding Source={x:Reference comboBox},Path=Text,Mode=TwoWay}" HeightRequest="40" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+            <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DataSource="{Binding EmployeeCollection}" DisplayMemberPath="Name" />
+        </StackLayout>
+    </StackLayout>
+
+{% endhighlight %}
+
+{% endtabs %}
+
+We have attached sample for reference. You can download the sample from the following link.
+
+Sample Link: [`SfComboBoxsample_TwoWay`] (https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfComboBoxTwoWaySample-1633738651)

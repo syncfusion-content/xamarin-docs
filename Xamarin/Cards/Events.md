@@ -167,7 +167,7 @@ public partial class MainPage : ContentPage
 
 ## Dismissing Event
 
-The [`Dismissing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView~Dismissing_EV.html) event occurs swiping operation is being done. The argument contains the following information:
+The [`Dismissing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView~Dismissing_EV.html) event fires when dismissing the card by swiping with enabling SwipeToDismiss property. The argument contains the following information:
 
 * [`DismissDirection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.DismissingEventArgs~DismissDirection.html) - Gets a dismissing direction of the card view.
 
@@ -209,7 +209,7 @@ N> This event won't work when adding the SfCardView as a child of SfCardLayout.
 
 ## Dismissed Event
 
-The [`Dismissed`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView~Dismissed_EV.html) event Occurs when swiping operation is completed. The argument contains the following information:
+The [`Dismissed`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView~Dismissed_EV.html) event fires when dismiss the card by swiping with enabling SwipeToDismiss property. The argument contains the following information:
 
 * [`DismissDirection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.DismissedEventArgs~DismissDirection.html) - Gets a dismissed direction of the card view.
 

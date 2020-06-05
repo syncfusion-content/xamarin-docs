@@ -1093,7 +1093,7 @@ Chart.PrimaryAxis.Title.Text = "Month";
 
 ### LabelFormat
 
-**Format numeric labels**
+**Format numeric values**
 
 The numeric labels can be formatted by using the [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html)  property. Numeric values can be formatted with n (number with decimal points), c (Currency) and p (percentage) commands.
 
@@ -1125,7 +1125,7 @@ chart.SecondaryAxis = numerical;
 
 {% endtabs %}
 
-**Format date time labels**
+**Format date time values**
 
 The date time labels can be formatted by using the labelFormat([`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) ) property of the axis..
 

@@ -1,10 +1,10 @@
 ---
-layout : post
-title :  Syncfusion events in Xamarin.Forms Cards control
-description : Learn how to get the notification of CardTapped, VisibleCardIndexChanging, VisibleCardIndexChanged, Dismissing and Dismissed event in Xamarin.Cards (SfCards) control 
-platform : xamarin
-control : Cards
-documentation : ug
+layout: post
+title: Syncfusion events in Xamarin.Forms Cards control
+description: Learn how to get the notification of CardTapped, VisibleCardIndexChanging, VisibleCardIndexChanged, Dismissing and Dismissed event in Xamarin.Cards (SfCards) control 
+platform: xamarin
+control: Cards
+documentation: ug
 ---
 
 # Events in Xamarin cards (SfCards)

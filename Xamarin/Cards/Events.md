@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion events in Xamarin.Forms Cards control
-description: Learn how to get the notification of CardTapped, VisibleCardIndexChanging, VisibleCardIndexChanged, Dismissing and Dismissed event in Xamarin.Cards 
+description: Learn how to get the notification of CardTapped, VisibleCardIndexChanging, VisibleCardIndexChanged, Dismissing, and Dismissed event in Xamarin.Cards 
 platform: xamarin
 control: Cards
 documentation: ug
@@ -17,7 +17,7 @@ The [`CardTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForm
 
 ### Command
 
-The [`CardTappedCommand`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout~CardTappedCommand.html) property is used to associate a command with an instance of SfCardLayout. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+The [`CardTappedCommand`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout~CardTappedCommand.html) property is used to associate a command with an instance of `SfCardLayout`. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
 ### CommandParameter
 
@@ -165,9 +165,9 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-## Dismissing Event
+## Dismissing event
 
-The [`Dismissing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView~Dismissing_EV.html) event fires when dismissing the card by swiping with enabling SwipeToDismiss property. The argument contains the following information:
+The [`Dismissing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView~Dismissing_EV.html) event fires when dismissing the card by swiping with enables SwipeToDismiss property. The argument contains the following information:
 
 * [`DismissDirection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.DismissingEventArgs~DismissDirection.html) - Gets a dismissing direction of the card view.
 
@@ -205,11 +205,11 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-N> This event won't work when adding the SfCardView as a child of SfCardLayout.
+N> This event will not work when adding the `SfCardView` as a child of `SfCardLayout`.
 
-## Dismissed Event
+## Dismissed event
 
-The [`Dismissed`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView~Dismissed_EV.html) event fires when dismiss the card by swiping with enabling SwipeToDismiss property. The argument contains the following information:
+The [`Dismissed`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView~Dismissed_EV.html) event fires when dismisses the card by swiping with enables `SwipeToDismiss` property. The argument contains the following information.
 
 * [`DismissDirection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.DismissedEventArgs~DismissDirection.html) - Gets a dismissed direction of the card view.
 
@@ -245,4 +245,4 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-N> This event won't work when adding the SfCardView as a child of SfCardLayout.
+N> This event will not work when adding the `SfCardView` as a child of `SfCardLayout`.

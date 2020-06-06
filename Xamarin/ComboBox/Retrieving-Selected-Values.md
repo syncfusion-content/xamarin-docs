@@ -587,9 +587,10 @@ Most bindable properties have a default binding mode of OneWay but the following
  * SelectedItem
 
 
-When data bindings are used with the Model-View-ViewModel (MVVM) application architecture, the ViewModel class is the data-binding source, and the View, which consists of views such as Entry, are data-binding targets. It is very likely that you want each view on the page to be initialized with the value of the corresponding property in the ViewModel, but changes in the view should also affect the ViewModel property.
+When the data bindings are used with the Model-View-ViewModel (MVVM) application architecture, the ViewModel class is the data binding source, and the View that consists of views like Entry are data binding targets. It is very likely that you want each view on the page to be initialized with the value of the corresponding property in the ViewModel but changes in the view should also affect the ViewModel property.
+  
+The properties with default binding mode of TwoWay are those properties most likely to be used in MVVM scenarios.
 
-The properties with default binding modes of TwoWay are those properties most likely to be used in MVVM scenarios.
 
 {% tabs %}
 

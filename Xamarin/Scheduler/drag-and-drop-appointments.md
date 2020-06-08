@@ -242,7 +242,7 @@ dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
 * While dropping appointment to time slots from `AllDay` panel, appointment duration will change as one (1) hour from the dropped time.
 * Doesn't support control to control drag and drop.
 
-## Handle resourceitem dropping
+## Handle resource item dropping
 Using [DropResourceItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs~DropResourceItem.html) event you can get the dropping ResourceItem details. It will returns schedule resource item value for timeline view with resource view mode as Absolute using the property of [AppointmentDropEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs.html).
 
 {% tabs %}

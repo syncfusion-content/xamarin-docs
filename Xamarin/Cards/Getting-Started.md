@@ -257,3 +257,7 @@ this.Content = cardLayout;
 
 ![Initializing Xamarin.Forms SfCardLayout](getting-started_images/layout.gif)
 
+N> You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Getting-started-sample-of-cards).
+
+
+

@@ -85,27 +85,22 @@ The [`VisibleCardIndexChanging`](https://help.syncfusion.com/cr/cref_files/xamar
 
 {% highlight c# %}
 
-public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-			SfCardLayout cardLayout = new SfCardLayout();
-            cardLayout.VisibleCardIndexChanging += VisibleCardIndexChanging;
+...
+InitializeComponent();
+SfCardLayout cardLayout = new SfCardLayout();
+cardLayout.VisibleCardIndexChanging += VisibleCardIndexChanging;
 
-            //Add children for card layout. 
-            cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "Cyan", BackgroundColor = Color.Cyan }});
+//Add children for card layout. 
+cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "Cyan", BackgroundColor = Color.Cyan }});
+cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "Yellow", BackgroundColor = Color.Yellow }});
+cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text="Orange", BackgroundColor = Color.Orange }});
+...
 
-            cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text = "Yellow", BackgroundColor = Color.Yellow }});
-
-            cardLayout.Children.Add(new SfCardView() { Content = new Label() { Text="Orange", BackgroundColor = Color.Orange }});
-        }
-
-        private void VisibleCardIndexChanging(object sender, Syncfusion.XForms.Cards.VisibleCardIndexChangingEventArgs e)
-        {
-           // handle event action.
-        }
-	}
+private void VisibleCardIndexChanging(object sender, Syncfusion.XForms.Cards.VisibleCardIndexChangingEventArgs e)
+{
+// handle event action.
+}
+...
 
 
 {% endhighlight %}
@@ -139,27 +134,17 @@ The [`VisibleCardIndexChanged`](https://help.syncfusion.com/cr/cref_files/xamari
 
 {% highlight c# %}
 
-public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-			SfCardLayout cardLayout = new SfCardLayout();
-            cardLayout.VisibleCardIndexChanged += VisibleCardIndexChanged;
+...
+InitializeComponent();
+SfCardLayout cardLayout = new SfCardLayout();
+cardLayout.VisibleCardIndexChanged += VisibleCardIndexChanged;
+...
 
-            //Add children for card layout 
-            cardLayout.Children.Add( new SfCardView() { Content = new Label() { Text = "Cyan", BackgroundColor = Color.Cyan }});
-
-            cardLayout.Children.Add(new SfCardView() {Content = new Label() { Text="Yellow", BackgroundColor = Color.Yellow }});
-
-            cardLayout.Children.Add(new SfCardView() {Content = new Label() { Text="Orange", BackgroundColor  = Color.Orange }});
-        }
-
-        private void VisibleCardIndexChanged(object sender Syncfusion.XForms.Cards.VisibleCardIndexChangedEventArgs e)
-        {
-              // handle event action.
-        }
-	}
+private void VisibleCardIndexChanged(object sender Syncfusion.XForms.Cards.VisibleCardIndexChangedEventArgs e)
+{
+    // handle event action.
+}
+...
 
 
 {% endhighlight %}
@@ -167,7 +152,7 @@ public partial class MainPage : ContentPage
 
 ## Dismissing event
 
-The [`Dismissing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView~Dismissing_EV.html) event fires when dismissing the card by swiping with enables SwipeToDismiss property. The argument contains the following information:
+The [`Dismissing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView~Dismissing_EV.html) event fires when dismissing the card by swiping with enables `SwipeToDismiss` property. The argument contains the following information:
 
 * [`DismissDirection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.DismissingEventArgs~DismissDirection.html) - Gets a dismissing direction of the card view.
 
@@ -184,23 +169,18 @@ The [`Dismissing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 {% highlight c# %}
 
-public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-            SfCardView cardView = new SfCardView();
-            cardView.Dismissing += SfCardView_Dismissing;
-            cardView.SwipeToDismiss = true;
-            cardView.Content = new Label() { Text = "SfCardView" };
-            this.Content = cardView;
-        }
+...
+InitializeComponent();
+SfCardView cardView = new SfCardView() { SwipeToDismiss = true };
+cardView.Dismissing += SfCardView_Dismissing;
+cardView.Content = new Label() { Text = "SfCardView" };
+...
 
-        private void SfCardView_Dismissing(object sender, Syncfusion.XForms.Cards.DismissingEventArgs e)
-        {
-            e.Cancel = true;
-        }
-	}
+private void SfCardView_Dismissing(object sender, Syncfusion.XForms.Cards.DismissingEventArgs e)
+{
+    e.Cancel = true;
+}
+...
 
 {% endhighlight %}
 {% endtabs %}
@@ -224,23 +204,17 @@ The [`Dismissed`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.C
 
 {% highlight c# %}
 
-public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-			SfCardView cardView = new SfCardView();
-            cardView.Dismissed += SfCardView_Dismissed;
-            cardView.SwipeToDismiss = true;
-            cardView.Content = new Label() { Text = "SfCardView" };
-            this.Content = cardView;
-        }
+...
+InitializeComponent();
+SfCardView cardView = new SfCardView() { SwipeToDismiss = true };
+cardView.Dismissed += SfCardView_Dismissed;
 
-        private void SfCardView_Dismissed(object sender, Syncfusion.XForms.Cards.DismissedEventArgs e)
-        {
-            // handle event action.
-        }
-	}
+...
+private void SfCardView_Dismissed(object sender, Syncfusion.XForms.Cards.DismissedEventArgs e)
+{
+   // handle event action.
+}
+...
 
 {% endhighlight %}
 {% endtabs %}

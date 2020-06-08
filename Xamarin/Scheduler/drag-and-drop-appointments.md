@@ -243,7 +243,7 @@ dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
 * Doesn't support control to control drag and drop.
 
 ## Get resource item at appointment drop
-Using [DropResourceItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs~DropResourceItem.html) property you can get the dropping ResourceItem details. It will returns schedule resource item value for timeline view with resource view mode as Absolute using the property of [AppointmentDropEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs.html).
+Using [DropResourceItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs~DropResourceItem.html) property which is in [AppointmentDrop](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentDrop_EV.html) event you can get the dropping ResourceItem details. It will returns schedule resource item value for timeline view with resource view mode as Absolute using the property of [AppointmentDropEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs.html).
 
 {% tabs %}
 {% highlight c# %}

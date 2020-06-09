@@ -574,17 +574,9 @@ namespace ComboBox
 
 Most bindable properties have a default binding mode of OneWay but the following properties have a default binding mode of TwoWay:
 
- * EnableAutoSize 
- * SelectionType
- * DropDownBackgroundColor
- * ItemPadding
- * ShowBorder
  * Text
- * DropDownItemHeight
- * TextSize
- * DropDownTextSize
- * DropDownBorderColor
  * SelectedItem
+ * IsDropDownOpen
 
 
 When the data bindings are used with the Model-View-ViewModel (MVVM) application architecture, the ViewModel class is the data binding source, and the View that consists of views like Entry are data binding targets. It is very likely that you want each view on the page to be initialized with the value of the corresponding property in the ViewModel but changes in the view should also affect the ViewModel property.
@@ -604,14 +596,28 @@ The properties with default binding mode of TwoWay are those properties most lik
              mc:Ignorable="d"
              xmlns:local="clr-namespace:SfComboBoxTwoWaySample"
              x:Class="SfComboBoxTwoWaySample.MainPage">
+   <ScrollView>
     <StackLayout>
         <Label Text="TwoWay Sample" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
         <!-- Place new controls here -->
         <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Padding="30">
+            <Label Text="Text_Property" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium" FontAttributes="Bold"/>
             <Entry Text="{Binding Source={x:Reference comboBox},Path=Text,Mode=TwoWay}" HeightRequest="40" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
             <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DataSource="{Binding EmployeeCollection}" DisplayMemberPath="Name" />
         </StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Padding="30">
+                <Label Text="SelectedItem_Property" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium" FontAttributes="Bold"/>
+            <Picker SelectedItem="{Binding Source={x:Reference comboBox1},Path=SelectedItem,Mode=TwoWay}" ItemsSource="{Binding EmployeeCollection}" ItemDisplayBinding="{Binding Name}" HeightRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+
+            <combobox:SfComboBox HeightRequest="40" x:Name="comboBox1" DataSource="{Binding EmployeeCollection}" DisplayMemberPath="Name" />
+        </StackLayout>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Padding="30">
+                <Label Text="IsDropDownOpen_Property" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium" FontAttributes="Bold"/>
+            <Switch IsToggled="{Binding Source={x:Reference comboBox2},Path=IsDropDownOpen,Mode=TwoWay}" HeightRequest="40" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
+            <combobox:SfComboBox HeightRequest="40" x:Name="comboBox2" DataSource="{Binding EmployeeCollection}" DisplayMemberPath="Name" />
+        </StackLayout>
     </StackLayout>
+    </ScrollView>
 
 {% endhighlight %}
 
@@ -619,4 +625,4 @@ The properties with default binding mode of TwoWay are those properties most lik
 
 We have attached sample for reference. You can download the sample from the following link.
 
-Sample Link: [`SfComboBoxsample_TwoWay`] (https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfComboBoxTwoWaySample-1633738651)
+Sample Link: [`SfComboBoxsample_TwoWay`] (https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfComboBoxTwoWaySample_New1536124101)

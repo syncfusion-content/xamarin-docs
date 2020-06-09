@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started for Essential Syncfusion.Xamarin.Forms Cards
-description: How to create a SfCardView, SfCardLayout, and add contents in SfCardView and SfCardLayout.
+description: How to add cards reference, launch an application on each platform with SfCardLayout or SfCardView, initialize and load cards content.
 platform: xamarin
 control: Cards
 documentation: ug

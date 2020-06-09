@@ -7,7 +7,7 @@ control: Cards
 documentation: ug
 ---
 
-# Events in Xamarin cards (SfCards)
+# Events in Xamarin Cards (SfCards)
 
 ## CardTapped
 

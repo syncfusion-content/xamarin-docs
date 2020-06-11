@@ -919,8 +919,8 @@ N> By default, the pointer drag was disabled.
 
 The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~PointerPositionChanged_EV.html) event occurs when the pointer position was changed. The PointerPositionChangedArgs argument contains the following information:
 
-* [`Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer.html) - Get or set the pointer.
-* [`Scale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) - Get or set the scale.
+* [`Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer.html) - Gets the dragged pointer.
+* [`Scale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) - Gets the dragged pointer scale.
 * [`rangeStartValue'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~StartValue.html) - Gets or sets the start value of the range. It customizes the start value ranges.
 * ['pointerValue'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~Value.html) - Gets or sets the value of the pointer. It customizes the value for pointer.
 * rangeStartPosition - Get or set the range start position.

@@ -283,7 +283,7 @@ public partial class MainPage : ContentPage
 </updown:UpDownButtonSettings>
 </updown:SfNumericUpDown.IncrementButtonSettings>
 <updown:SfNumericUpDown.DecrementButtonSettings>
-<updown:UpDownButtonSettings ButtonFontIcon="&#xe700;" ButtonHeight="35" ButtonWidth="35" />
+<updown:UpDownButtonSettings ButtonFontIcon="&#xe700;" ButtonHeight="35" ButtonWidth="35" >
 <updown:UpDownButtonSettings.ButtonFontFamily>
 <OnPlatform
                 x:TypeArguments="x:String">

@@ -851,7 +851,7 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
 
 ## Setting pointer drag
 
-MarkerPointer and NeedlePointer can be touched and dragged over the scale value by setting the [`EnableDragging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~EnableDragging.html) property to true. Pointers can be moved to the respective touch position.
+MarkerPointer and NeedlePointer can be touched and dragged over the scale value by setting the [`EnableDragging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~EnableDragging.html) property as true. Pointers can be moved to the respective touch position.
 
 {% tabs %}
 
@@ -917,7 +917,7 @@ N> By default, the pointer drag was disabled.
 
 ## Event
 
-The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~PointerPositionChanged_EV.html) event occurs when the pointer position was changed. The PointerPositionChangedArgs argument contains the following information.
+The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~PointerPositionChanged_EV.html) event occurs when the pointer position was changed. The PointerPositionChangedArgs argument contains the following information:
 
 * [`Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer.html) - Get or set the pointer.
 * [`Scale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) - Get or set the scale.

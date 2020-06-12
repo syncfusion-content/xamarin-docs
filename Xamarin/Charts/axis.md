@@ -1631,7 +1631,7 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 * [`LabelContent`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LabelClickedEventArgs~LabelContent.html) - Used to get the text of label.
 * [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LabelClickedEventArgs~Position.html) - Used to get the position of label.
 
-**See Also:**
+## See Also
 
 [How to remove comma in CategoryAxis labels in Xamarin.Forms Chart](https://www.syncfusion.com/kb/11317/how-to-remove-comma-in-categoryaxis-labels-in-xamarin-forms-chart)
 

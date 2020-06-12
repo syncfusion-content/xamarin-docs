@@ -1149,7 +1149,7 @@ The date time values can be formatted by using the [`LabelFormat`](http://help.s
 
 DateTimeAxis primaryAxis = new DateTimeAxis();
 
-primaryAxis.LabelStyle.LabelFormat = "dd/MM/yyyy";
+primaryAxis.LabelStyle = new ChartAxisLabelStyle { LabelFormat = "dd/MM/yyyy" };
 
 chart.PrimaryAxis = primaryAxis;
 

@@ -1194,7 +1194,7 @@ chart.Series.Add(stackingColumn100Series3);
 
 ## BoxAndWhisker Chart
 
-To render a boxandwhisker(boxplot) chart, create an instance of [`BoxAndWhiskerSeries`] and add to the [`Series`] collection property of [`SfChart`].
+To render a box and whisker(box plot) chart, create an instance of [`BoxAndWhiskerSeries`] and add to the [`Series`] collection property of [`SfChart`].
 You can use the following properties to customize the appearance.
 
 * [`Color`]-used to change the color of the line.
@@ -1285,7 +1285,7 @@ chart.Series.Add(boxPlotSeries);
 
 ### ShowMedian
 
-The Median values of given data set is viewed by enabling the [`ShowMedian`] property of BoxAndWhiskerSeries. The following code demonstartes how to enable the [`ShowMedian`] property.
+The Median values of given data set is viewed by enabling the [`ShowMedian`] property of BoxAndWhiskerSeries. The following code demonstrates how to enable the [`ShowMedian`] property.
 
 {% tab %}
 

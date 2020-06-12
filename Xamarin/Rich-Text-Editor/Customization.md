@@ -101,6 +101,72 @@ this.Content = richtexteditor;
 {% endtabs %}
 ![Placeholder in Rich Text Editor](SfRichTextEditor_Images/Placeholder.png)
 
+## Placeholder Font Color
+
+Specifies the placeholder font color for the RichTextEditor’s content, which is displayed when the RichTextEditor text is empty. The following code example explains how to set a placeholder for Rich Text Editor.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+<StackLayout>
+	<richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" PlaceHolder="Type something" PlaceHolderFontColor="Red"/>
+</StackLayout>   
+{% endhighlight %}
+
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.PlaceHolder="Type something";
+richtexteditor.PlaceHolderFontColor="Red";
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+## Placeholder Font Size
+
+Specifies the placeholder font size for the RichTextEditor’s content, which is displayed when the RichTextEditor text is empty. The following code example explains how to set a placeholder for Rich Text Editor.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+<StackLayout>
+	<richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" PlaceHolder="Type something" PlaceHolderFontSize="30"/>
+</StackLayout>   
+{% endhighlight %}
+
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.PlaceHolder="Type something";
+richtexteditor.PlaceHolderFontSize="30";
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+## Placeholder Font Family
+
+Specifies the placeholder font family for the RichTextEditor’s content, which is displayed when the RichTextEditor text is empty. The following code example explains how to set a placeholder for Rich Text Editor.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+<StackLayout>
+	<richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" PlaceHolder="Type something" PlaceHolderFontFamily="cursive"/>
+</StackLayout>   
+{% endhighlight %}
+
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.PlaceHolder="Type something";
+richtexteditor.PlaceHolderFont="cursive";
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Read-only support
 
 Rich Text Editor provides read-only support, which allows the users to restrict editing. Rich Text Editor can be used as HTML Viewer using this feature. The following code example explains how to set read-only mode in Rich Text Editor.

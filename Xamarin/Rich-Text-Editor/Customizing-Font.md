@@ -173,7 +173,7 @@ this.Content = richtexteditor;
 
 ## DefaultFontSize
 
-The SfRichTextEditor provides support to modify the default font size used in the Rich text editor control.
+The SfRichTextEditor provides support to modify the default font size of the Rich Text Editor can be changed using the FontSize property.
 
 {% tabs %} 
 
@@ -199,7 +199,7 @@ this.Content = richtexteditor;
 
 ## DefaultFontColor
 
-The SfRichTextEditor provides support to modify the default font color used in the Rich text editor control.
+The SfRichTextEditor provides support to modify the default font color of the Rich Text Editor can be changed using the FontColor property.
 
 {% tabs %} 
 

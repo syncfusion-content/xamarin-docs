@@ -103,7 +103,7 @@ this.Content = richtexteditor;
 
 ## Placeholder Customization
 
-The appearance of the placeholder for the RichTextEditor’s content can be customized, which is displayed when the RichTextEditor text is empty. The following code example explains how to set a placeholder font color, placeholder font size, placeholder font family for Rich Text Editor.
+The placeholder style can be customized using the properties PlaceHolderFontFamily , PlaceHolderFontSize and PlacehHolderFontColor.
 
 {% tabs %} 
 

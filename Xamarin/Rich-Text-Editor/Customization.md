@@ -101,15 +101,15 @@ this.Content = richtexteditor;
 {% endtabs %}
 ![Placeholder in Rich Text Editor](SfRichTextEditor_Images/Placeholder.png)
 
-## Placeholder Font Color
+## Placeholder Customization
 
-Specifies the placeholder font color for the RichTextEditor’s content, which is displayed when the RichTextEditor text is empty. The following code example explains how to set a placeholder for Rich Text Editor.
+The appearance of the placeholder for the RichTextEditor’s content can be customized, which is displayed when the RichTextEditor text is empty. The following code example explains how to set a placeholder font color, placeholder font size, placeholder font family for Rich Text Editor.
 
 {% tabs %} 
 
 {% highlight xaml %} 
 <StackLayout>
-	<richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" PlaceHolder="Type something" PlaceHolderFontColor="Red"/>
+	<richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" PlaceHolder="Type something" PlaceHolderFontColor="Red" PlaceHolderFontSize="30" PlaceHolderFontFamily="cursive"/>
 </StackLayout>   
 {% endhighlight %}
 
@@ -118,50 +118,8 @@ richtexteditor = new SfRichTextEditor();
 richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
 richtexteditor.PlaceHolder="Type something";
 richtexteditor.PlaceHolderFontColor="Red";
-this.Content = richtexteditor;
-{% endhighlight %}
-
-{% endtabs %}
-
-## Placeholder Font Size
-
-Specifies the placeholder font size for the RichTextEditor’s content, which is displayed when the RichTextEditor text is empty. The following code example explains how to set a placeholder for Rich Text Editor.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-<StackLayout>
-	<richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" PlaceHolder="Type something" PlaceHolderFontSize="30"/>
-</StackLayout>   
-{% endhighlight %}
-
-{% highlight C# %} 
-richtexteditor = new SfRichTextEditor();
-richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
-richtexteditor.PlaceHolder="Type something";
 richtexteditor.PlaceHolderFontSize="30";
-this.Content = richtexteditor;
-{% endhighlight %}
-
-{% endtabs %}
-
-## Placeholder Font Family
-
-Specifies the placeholder font family for the RichTextEditor’s content, which is displayed when the RichTextEditor text is empty. The following code example explains how to set a placeholder for Rich Text Editor.
-
-{% tabs %} 
-
-{% highlight xaml %} 
-<StackLayout>
-	<richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" PlaceHolder="Type something" PlaceHolderFontFamily="cursive"/>
-</StackLayout>   
-{% endhighlight %}
-
-{% highlight C# %} 
-richtexteditor = new SfRichTextEditor();
-richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
-richtexteditor.PlaceHolder="Type something";
-richtexteditor.PlaceHolderFont="cursive";
+richtexteditor.PlaceHolderFontFamily="cursive";
 this.Content = richtexteditor;
 {% endhighlight %}
 

@@ -1117,7 +1117,7 @@ The numeric values can be formatted by using the [`LabelFormat`](http://help.syn
 
 NumericalAxis numerical = new NumericalAxis();
 
-numerical.LabelStyle.LabelFormat = "$##.##";
+numerical.LabelStyle = new ChartAxisLabelStyle { LabelFormat = "$##.##" };
 
 chart.SecondaryAxis = numerical;
 

@@ -27,14 +27,16 @@ Sorting the data by creating the [SortDescriptor](https://help.syncfusion.com/cr
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
-  <syncfusion:SfListView x:Name="listView">
-    <syncfusion:SfListView.DataSource>
-      <data:DataSource>
-        <data:DataSource.SortDescriptors>
-          <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/>
-        </data:DataSource.SortDescriptors>
-      </data:DataSource>
-    </syncfusion:SfListView.DataSource>
+  <syncfusion:SfListView x:Name="listView"  ItemsSource="{Binding ContactsInfo}" ItemSize="70" 
+					     FocusBorderThickness="0"
+                         SelectionBackgroundColor="#ECECEC" IsScrollBarVisible="True">
+        <syncfusion:SfListView.DataSource>
+            <data:DataSource>
+                <data:DataSource.SortDescriptors>
+                    <data:SortDescriptor PropertyName="ContactName" Direction="Ascending"/> 
+                </data:DataSource.SortDescriptors>
+            </data:DataSource>
+        </syncfusion:SfListView.DataSource>
   </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}

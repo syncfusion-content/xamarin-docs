@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Visual States in Xamarin Button (SfButton)
+title: Visual States in Syncfusion Xamarin Button (SfButton)
 description: How to customize the appearance of Xamarin.Forms Button(SfButton) according to its available visual states.
 platform: xamarin.forms
 control: sfbutton

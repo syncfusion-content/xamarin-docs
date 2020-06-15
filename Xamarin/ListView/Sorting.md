@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Sorting in Syncfusion ListView
-description: Describes about the sorting behavior in SfListView.
+description: This section describes about the sorting behavior in Syncfusion Xamarin.Forms ListView and its various customization features.
 platform: xamarin
 control: SfListView
 documentation: ug
 ---
 
-# Sorting 
+# Sorting in Xamarin ListView (SfListView)
 
 The SfListView supports sorting the data either in ascending or descending order by using [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property and by using the custom logic.
 

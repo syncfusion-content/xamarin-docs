@@ -4637,7 +4637,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-    </tr>>
+    </tr>
 	
 	<tr>
         <td>
@@ -4650,7 +4650,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-    </tr>>
+    </tr>
 	
 	<tr>
         <td>
@@ -4663,7 +4663,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-    </tr>>
+    </tr>
 	
 	<tr>
         <td>

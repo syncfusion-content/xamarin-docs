@@ -11,7 +11,7 @@ keywords: button, SfCheckBox, CheckBox
 
 # Getting Started in Xamarin CheckBox (SfCheckBox)
 
-This section explains the steps required to configure the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html) control in a real-time scenario and provides a walk-through on some of the customization features available in [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html) control.
+This section explains the steps required to configure the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) control in a real-time scenario and provides a walk-through on some of the customization features available in [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) control.
 
 ## Adding SfCheckBox reference
 
@@ -67,7 +67,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 N> If you are adding the references from toolbox, this step is not needed.
 
 ### Additional step for iOS
-To launch [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html) in iOS, call the `SfCheckBoxRenderer.Init()` in `FinishedLaunching` overridden method of `AppDelegate` class in iOS Project, as demonstrated in the following code example.
+To launch [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) in iOS, call the `SfCheckBoxRenderer.Init()` in `FinishedLaunching` overridden method of `AppDelegate` class in iOS Project, as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -82,7 +82,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endtabs %}
 
 ### Additional step for UWP
-This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html) assembly at `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around, as demonstrated in the following code example.
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) assembly at `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around, as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -126,7 +126,7 @@ public partial class MainWindow : FormsApplicationPage
 {% endtabs %}
 
 ## Create a Simple SfCheckBox
-The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html) control is configured entirely in C# code or by using XAML markup. The following steps explain how to create a [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html) and configure its elements.
+The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) control is configured entirely in C# code or by using XAML markup. The following steps explain how to create a [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) and configure its elements.
 
 ### Add namespace for referred assemblies
 
@@ -178,7 +178,7 @@ namespace GettingStarted
 {% endtabs %}
 
 ## Setting caption
-The check box caption can be defined using the [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~Text.html) property of [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html)`. This caption normally describes the meaning of the check box and it displays next to check box.
+The check box caption can be defined using the [`Text`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~Text.html) property of [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html). This caption normally describes the meaning of the check box and it displays next to check box.
 
 {% tabs %}
 {% highlight xaml %}
@@ -194,7 +194,7 @@ checkBox.Text = "CheckBox";
 ![Xamarin.Forms CheckBox caption](Images/Caption.png) 
 
 ## Change the check box state
-The three visual states of [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html)` are: 
+The three visual states of [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) are: 
 
 * Checked
 * Unchecked
@@ -202,7 +202,7 @@ The three visual states of [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin
 
 ![Xamarin.Forms CheckBox states](Images/States.png) 
 
-You can change the state of the check box using the [`IsChecked`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~IsChecked.html) property of [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html). In checked state, a tick mark is added to the visualization of check box.
+You can change the state of the check box using the [`IsChecked`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~IsChecked.html) property of [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html). In checked state, a tick mark is added to the visualization of check box.
 
 <table>
 <tr>
@@ -298,9 +298,9 @@ onion.IsChecked = true;
 
 ## Indeterminate
 
-The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html) allows an indeterminate state in addition to the checked and unchecked state. The indeterminate state of the check box is enabled by setting the [`IsThreeState`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~IsThreeState.html) property of the control to `True`.
+The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) allows an indeterminate state in addition to the checked and unchecked state. The indeterminate state of the check box is enabled by setting the [`IsThreeState`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~IsThreeState.html) property of the control to `True`.
 
-N>When the [`IsThreeState`]() property is set to `False` and [`IsChecked`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~IsChecked.html) property is set to `null` then the check box will be in unchecked state.
+N>When the [`IsThreeState`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~IsThreeState.html) property is set to `False` and [`IsChecked`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~IsChecked.html) property is set to `null` then the check box will be in unchecked state.
 
 The indeterminate state is used when a group of sub-choices has both checked and unchecked states. In the following example, the "Select all" checkbox has the [`IsThreeState`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~IsThreeState.html) property set to `true`. The "Select all" checkbox is checked if all child elements are checked, unchecked if all the child elements are unchecked, and indeterminate otherwise.
 

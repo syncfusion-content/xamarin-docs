@@ -85,7 +85,7 @@ check3.UncheckedColor = Color.Blue;
 ![CheckBox BorderWidth](Images/BorderWidth.png)
 
 ## Setting a caption text appearance 
-You can customize the display text appearance of the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html) control using the following properties:
+You can customize the display text appearance of the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) control using the following properties:
 
 * [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~TextColor.html): Changes the color of the text.
 * [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~HorizontalTextAlignment.html): Changes the horizontal alignment of the caption text.
@@ -163,7 +163,7 @@ namespace CheckBoxCustomization
 
 ## Size Customization
 
-The [`ControlSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~ControlSize.html) property is used to customize the [`CheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox_members.html) control size.
+The [`ControlSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~ControlSize.html) property is used to customize the [`CheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) control size.
 
 {% tabs %}
 {% highlight xaml %}

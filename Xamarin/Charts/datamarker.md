@@ -163,7 +163,9 @@ Data marker labels can be formatted by using the [`LabelFormat`](http://help.syn
 
 {% highlight xaml %}
 
-series.DataMarker.LabelStyle = new DataMarkerLabelStyle { LabelFormat = "$##.##" };
+ChartDataMarker chartDataMarker = new ChartDataMarker();
+chartDataMarker.LabelStyle = new DataMarkerLabelStyle { LabelFormat = "$##.##" };
+series.DataMarker = chartDataMarker;
 
 {% endhighlight %}
 

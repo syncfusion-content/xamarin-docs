@@ -3197,7 +3197,7 @@ The default value of this property is [`Both`].
 
 [`VerticalCapLineStyle`] – Customizes the appearance of Vertical cap line style.
 
-[`HorizontalDirection`] – Used to set  horizontal error value for the series in [`Both`],[ `Minus`] and [`Plus`]. The default vlaue of this property is [`Both`].
+[`HorizontalDirection`] – Used to set  horizontal error value for the series in [`Both`],[ `Minus`] and [`Plus`]. The default value of this property is [`Both`].
 
 [`VerticalDirection`] – Used to set vertical error value for the series in  [`Both`],
 [`Minus`] and [`Plus`]. The default value of this property is [`Both`].

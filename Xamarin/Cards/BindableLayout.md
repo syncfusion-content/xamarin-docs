@@ -152,5 +152,3 @@ this.Content = cardLayout;
 {% endhighlight %}
 
 {% endtabs %}
-
-N> Currently we don't have support for HasShadow property in SfCardLayout.

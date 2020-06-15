@@ -99,16 +99,19 @@ Indicators are used to indicate the state or level of something.
 
 {% highlight xaml %}
 
-    <cards:SfCardView IndicatorColor="Cyan" IndicatorThickness="12" IndicatorPosition="Left" />
+    <cards:SfCardView IndicatorColor="Cyan" HeightRequest="300" IndicatorThickness="12" IndicatorPosition="Left" >
+            <Label  Text="SfCardView" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        </cards:SfCardView>
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-SfCardView cardView = new SfCardView();
-cardView.IndicatorThickness = 12;
-cardView.IndicatorPosition = IndicatorPosition.Left;
-cardView.IndicatorColor = Color.Cyan;
+SfCardView cardView = new SfCardView() {Content = new Label() { Text = "SfCardView", HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center } };
+            cardView.IndicatorThickness = 12;
+            cardView.HeightRequest = 300;
+            cardView.IndicatorPosition = IndicatorPosition.Left;
+            cardView.IndicatorColor = Color.Cyan;
 
 {% endhighlight %}
 
@@ -139,7 +142,33 @@ cardView.FadeOutOnSwiping = true;
 
 N> This property won't work when adding the SfCardView as a child of SfCardLayout.
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/xamarin.forms-cards).
+## Shadow Effect
 
+The CardView control provides shadow effect support. To enable shadow effect, set the HasShadow property to true.
+
+You can customize the color of shadow using the ShadowColor property.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<cards:SfCardView HeightRequest="300" HasShadow="True" ShadowColor="Red">
+    <Label  Text="LightGray" BackgroundColor="LightGray"/>
+</cards:SfCardView>
+
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+ fCardView sfCardView = new SfCardView() { Content = new Label() { Text = "LightGray", BackgroundColor = Color.LightGray } };
+ sfCardView.HasShadow = true;
+ sfCardView.ShadowColor = Color.Red;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> This property won't work when adding the SfCardView as a child of SfCardLayout.
 
 

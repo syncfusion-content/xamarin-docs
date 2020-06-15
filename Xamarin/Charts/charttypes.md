@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Chart Types
+# Chart Types in Xamarin
 
 ## Line Chart
 

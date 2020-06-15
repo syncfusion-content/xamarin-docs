@@ -4517,7 +4517,181 @@ This page lists the keys for each control and the element to which it is mapped 
 
 </table>
 
+## SfDataPager
 
+<table>
+    <tr>
+        <th>Theme Dictionary<br/>
+            <br/></th>        
+        <th>
+          Keys
+            <br/>
+            <br/>
+        </th>
+        <th>
+            Description
+            <br/>
+            <br/>
+        </th>
+    </tr>
+
+    <tr>
+        <td rowspan="11">
+            SfDataPagerStyles  
+            <br/>
+            <br/>
+        </td>
+		<td>
+           SfDataPagerTheme 
+            <br/>
+            <br/>
+        </td>
+        <td>    
+            By merging this key in application resources, it is possible to customize the appearance of the SfDataPager without merging common theme resource and control style resource dictionaries.
+			
+{% highlight xaml %}
+
+<Application xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms"
+             ...>
+<Application.Resources>
+    <syncCore:SyncfusionThemeDictionary>
+        <syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+            <ResourceDictionary>
+                <x:String x:Key="SfDataPager">CustomTheme</x:String> 
+                <Color x:Key="SfDataPagerNumericButtonForegroundColor">White</Color> 
+                <Color x:Key="SfDataPagerNumericButtonBackgroundColor">Red</Color> 
+            </ResourceDictionary>
+        </syncCore:SyncfusionThemeDictionary.MergedDictionaries>
+    </syncCore:SyncfusionThemeDictionary>
+</Application.Resources>
+
+....
+
+</Application>
+
+{% endhighlight %}
+            <br/>
+            <br/>
+        </td>
+	</tr>
+	<tr>
+        <td>
+            SfDataPagerBackgroundColor  
+            <br/>
+            <br/>
+        </td>
+        <td>
+           Background color of the SfDataPager.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+
+    <tr>
+        <td>
+            SfDataPagerNumericButtonForegroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Foreground color of the numeric button.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+	
+	<tr>
+        <td>
+            SfDataPagerNumericButtonBackgroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Background color of the numeric button.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+	
+	<tr>
+        <td>
+            SfDataPagerButtonBorderColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Border color of all the pager buttons.
+            <br/>
+            <br/>
+        </td>
+    </tr>  
+	
+    <tr>
+        <td>
+            SfDataPagerNavigationButtonBackgroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Background color of the navigation button.
+            <br/>
+            <br/>
+        </td>
+    </tr>>
+	
+	<tr>
+        <td>
+            SfDataPagerEnabledNavigationButtonIconColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Color of the icon in the navigation button in enabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>>
+	
+	<tr>
+        <td>
+            SfDataPagerDisabledNavigationButtonIconColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Color of theicon in the navigation button in disabled state.
+            <br/>
+            <br/>
+        </td>
+    </tr>>
+	
+	<tr>
+        <td>
+            SyncPrimaryForegroundColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Foreground color of the selection numeric button.
+            <br/>
+            <br/>
+        </td>
+    </tr>
+	
+	<tr>
+        <td>
+            SyncPrimaryColor   
+            <br/>
+            <br/>
+        </td>
+        <td>
+          Background color of the selection numeric button.
+            <br/>
+            <br/>
+        </td>
+    </tr>   
+
+</table>
 
 
 ## SfPopupLayout

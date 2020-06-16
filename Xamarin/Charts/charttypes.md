@@ -1210,9 +1210,9 @@ BoxAndWhiskerSeries plots a combination of rectangles and lines to show the dist
 ...
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} 
-	                           XBindingPath="Department"
-	                           YBindingPath="Ages"
-	                           />
+								XBindingPath="Department"
+								YBindingPath="Ages"
+								/>
 
 </chart:SfChart>
 
@@ -1253,10 +1253,10 @@ The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
 ...
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} 
-	                           XBindingPath="Department"
-							   YBindingPath="Ages"
-							   BoxPlotMode="Inclusive"
-							   />
+								XBindingPath="Department"
+								YBindingPath="Ages"
+								BoxPlotMode="Inclusive"
+								/>
 
 </chart:SfChart>
 
@@ -1290,11 +1290,11 @@ The Median values of given data set is viewed by enabling the [`ShowMedian`] pro
 ...
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"}
-	                           XBindingPath="Department"
-							   YBindingPath="Ages"
-							   BoxPlotMode="Inclusive"
-							   ShowMedian="True"
-							   />
+								XBindingPath="Department"
+								YBindingPath="Ages"
+								BoxPlotMode="Inclusive"
+								ShowMedian="True"
+								/>
 
 </chart:SfChart>
 
@@ -1321,7 +1321,7 @@ chart.Series.Add(boxPlotSeries);
 
 The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default[`SymbolType`] value is [`Ellipse`].
 
-The following code shows how to set the [`SymbolType`] value as [`Cross`]
+The following code shows how to set the [`SymbolType`] value as [`Cross`].
 
 {% tab %}
 
@@ -1331,12 +1331,12 @@ The following code shows how to set the [`SymbolType`] value as [`Cross`]
 ...
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"}
-	                           XBindingPath="Department"
-							   YBindingPath="Ages"
-							   BoxPlotMode="Inclusive"
-							   ShowMedian="True"
-							   SymbolType="Cross"
-							   />
+								XBindingPath="Department"
+								YBindingPath="Ages"
+								BoxPlotMode="Inclusive"
+								ShowMedian="True"
+								SymbolType="Cross"
+								/>
 
 </chart:SfChart>
 

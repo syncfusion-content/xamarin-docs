@@ -1210,7 +1210,7 @@ BoxAndWhiskerSeries plots a combination of rectangles and lines to show the dist
 ...
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
-							   YBindingPath="Ages"
+							   YBindingPath="Ages" 
 							   />
 
 </chart:SfChart>
@@ -1252,8 +1252,8 @@ The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
 ...
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
-							   YBindingPath="Ages"
-							   BoxPlotMode="Inclusive"
+							   YBindingPath="Ages" 
+							   BoxPlotMode="Inclusive" 
 							   />
 
 </chart:SfChart>
@@ -1288,9 +1288,9 @@ The Median values of given data set is viewed by enabling the [`ShowMedian`] pro
 ...
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
-							   YBindingPath="Ages"
-							   BoxPlotMode="Inclusive"
-							   ShowMedian="True"
+							   YBindingPath="Ages" 
+							   BoxPlotMode="Inclusive" 
+							   ShowMedian="True" 
 							   />
 
 </chart:SfChart>
@@ -1328,10 +1328,10 @@ The following code shows how to set the [`SymbolType`] value as [`Cross`].
 ...
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
-							   YBindingPath="Ages"
-						       BoxPlotMode="Inclusive"
-							   ShowMedian="True"
-						       SymbolType="Cross"
+							   YBindingPath="Ages" 
+							   BoxPlotMode="Inclusive" 
+							   ShowMedian="True" 
+							   SymbolType="Cross"
 							   />
 
 </chart:SfChart>

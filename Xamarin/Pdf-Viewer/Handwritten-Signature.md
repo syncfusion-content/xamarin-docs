@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Handwritten signature in PDF Viewer Xamarin.Forms | Syncfusion
-description: Working with handwritten signatures
+description: Describes how PDF Viewer allows to add and customize handwritten signature in the PDF file.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug

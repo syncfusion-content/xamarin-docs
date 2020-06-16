@@ -7,7 +7,7 @@ control: SfPdfViewer
 documentation: ug
 ---
 
-# Getting started
+# Getting started with Xamarin PDF Viewer (SfPdfViewer)
 
 This section demonstrates how to create an application that displays a PDF file using SfPdfViewer control.
  

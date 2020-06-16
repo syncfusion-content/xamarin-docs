@@ -36,7 +36,7 @@ pdfViewerControl.LoadDocumentAsync(documentStream, password, cancellationTokenSo
 
 In the above code sample, `documentStream` is the Stream instance read from the encrypted PDF, and the `password` is the key with that the PDF is encrypted, and the `cancellationTokenSource` enables you to cancel the asynchronous PDF loading.
 
-For cancelling the asynchronous PDF loading and detecting the cancellation when it occurred, refer the `Loading a PDF asynchronously` section of [Getting Started](https://help.syncfusion.com/xamarin/pdf-viewer/getting-started).
+For canceling the asynchronous PDF loading and detecting the cancellation when it occurred, refer the `Loading a PDF asynchronously` section of [Getting Started](https://help.syncfusion.com/xamarin/pdf-viewer/getting-started).
 
 ## Handling invalid passwords
 

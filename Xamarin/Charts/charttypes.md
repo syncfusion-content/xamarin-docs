@@ -3172,7 +3172,7 @@ chart.Series.Add(waterfallSeries);
 
 ## ErrorBar Chart
 
-[`ErrorBarSeries`] are graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported measurement.You can use the following properties to customize the ErrorBarSeries appearance.
+[`ErrorBarSeries`] are graphical representations of the variability of data and used on graphs to indicate the error or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the ErrorBarSeries appearance.
 
 * [`StrokeColor`] - used to change the color of the series.
 * [`StrokeWidth`] - used to change the stroke width of the series.

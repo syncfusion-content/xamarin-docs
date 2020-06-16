@@ -3176,10 +3176,10 @@ chart.Series.Add(waterfallSeries);
 
 * [`StrokeColor`] - used to change the color of the series.
 * [`StrokeWidth`] - used to change the stroke width of the series.
-* [`StrokeCap`] - Specifie the shape for the stroke cap as [`Flat`], [`Round`], [`Square`]. The default  cap value is [`Flat`].
+* [`StrokeCap`] - Specifies the shape of the stroke cap as [`Flat`], [`Round`], [`Square`]. The default  cap value is [`Flat`].
 * [`StrokeDashArray`] - used to change the dashes of this series.
 * [`CapLineSize`] - used to set height for the stroke cap. 
-* [`IsVisibe`] - used to set visiblity for the stroke cap.The default value is [`true`]. 
+* [`IsVisibe`] - used to set visibility for the stroke cap.The default value is [`true`]. 
 
 ## Type
 

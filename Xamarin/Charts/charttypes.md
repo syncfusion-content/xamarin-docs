@@ -1194,10 +1194,10 @@ chart.Series.Add(stackingColumn100Series3);
 
 ## BoxAndWhisker Chart
 
-BoxAndWhiskerSeries plots a combination of rectangles and lines to show the distribution of data set. To render a box and whisker(box plot) chart, create an instance of [`BoxAndWhiskerSeries`] and add to the [`Series`] collection property of [`SfChart`]. You can use the following properties to customize the appearance.
+BoxAndWhiskerSeries plots a combination of rectangles and lines to show the distribution of data set. To render a box and whisker(box plot) chart, create an instance of [`BoxAndWhiskerSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the appearance.
 
-* [`Color`] - used to change the color of the series.
-* [`StrokeWidth`] - used to change the stroke width of the series.
+* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Color.html) - used to change the color of the series.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~StrokeWidth.html) - used to change the stroke width of the series.
 * [`StrokeColor`] - used to change the stroke color of the series.
 * [`Spacing`] - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available space, respectively.
 * [`Width`] - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available width, respectively.
@@ -1209,10 +1209,10 @@ BoxAndWhiskerSeries plots a combination of rectangles and lines to show the dist
 <chart:SfChart>
 ...
 
-    <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"}
+    <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} 
 	                           XBindingPath="Department"
-							   YBindingPath="Ages"
-							   />
+	                           YBindingPath="Ages"
+	                           />
 
 </chart:SfChart>
 
@@ -1235,15 +1235,15 @@ chart.Series.Add(boxPlotSeries);
 
 ### Customize the series box mode
 
-The series box plotting mode can be changed using the [`BoxPlotMode`] property of BoxAndWhiskerSeries. The plotting mode of series can be calculated as follows:
+The series box plotting mode can be changed using the [`BoxPlotMode`] property of [`BoxAndWhiskerSeries`]. The plotting mode of series can be calculated as follows:
 
 * [`Exclusive`] - The quartile values are calculated using the formula (N+1) * P (N count, P percentile), and its index value starts from 1 in the list.
 * [`Inclusive`] - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and its index value starts from 0 in the list.
 * [`Normal`] - The quartile values are calculated by splitting the list and getting the median values.
 
-By default [`BoxPlotMode`] value is [`Exclusive'].
+By default [`BoxPlotMode`] value is [`Exclusive`]. 
 
-The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`]
+The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
 
 {% tab %}
 
@@ -1280,7 +1280,7 @@ chart.Series.Add(boxPlotSeries);
 
 ### ShowMedian
 
-The Median values of given data set is viewed by enabling the [`ShowMedian`] property of BoxAndWhiskerSeries. The following code demonstrates how to enable the [`ShowMedian`] property.
+The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`BoxAndWhiskerSeries`]. The following code demonstrates how to enable the [`ShowMedian`] property.
 
 {% tab %}
 
@@ -1319,7 +1319,7 @@ chart.Series.Add(boxPlotSeries);
 
 ### SymbolType
 
-The [`SymbolType`] is  used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are [`Cross`], diamond, ellipse, hexagon, inverted triangle, pentagon, plus, rectangle and triangle. By default[`SymbolType`] value is [`Ellipse'].
+The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default[`SymbolType`] value is [`Ellipse`].
 
 The following code shows how to set the [`SymbolType`] value as [`Cross`]
 

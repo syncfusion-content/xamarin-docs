@@ -688,6 +688,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
+	<tr>
+	</tr>
 		<td>
              Color of time picker icon and the border color of time picker.
             <br/>
@@ -713,11 +715,15 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
+	</tr>
+	<tr>
 		<td>
              Color of the load more indicator, color of the text in the load more and the color of the load more border color.
             <br/>
             <br/>
         </td>
+	</tr>
+	<tr>
 		<td>
             Color of the text in card view action button in SfChat for the Xamarin.Forms.Android and Xamarin.Forms.iOS platform.
             <br/>

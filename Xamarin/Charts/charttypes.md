@@ -1222,7 +1222,7 @@ BoxAndWhiskerSeries plots a combination of rectangles and lines to show the dist
 SfChart chart = new SfChart();
 ...
 
-BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSerie() 
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries() 
 { 
 	ItemsSource = Data, 
 	XBindingPath = "Department", 
@@ -1302,7 +1302,7 @@ The Median values of given data set is viewed by enabling the [`ShowMedian`] pro
 SfChart chart = new SfChart();
 ...
 
-BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSerie()
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
 {
 	ItemsSource = Data,
 	XBindingPath = "Department",
@@ -1343,7 +1343,7 @@ The following code shows how to set the [`SymbolType`] value as [`Cross`].
 SfChart chart = new SfChart();
 ...
 
-BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSerie()
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
 {
 	ItemsSource = Data,
 	XBindingPath = "Department",

@@ -5014,7 +5014,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-          Color of theicon in the navigation button in disabled state.
+          Color of the icon in the navigation button in disabled state.
             <br/>
             <br/>
         </td>

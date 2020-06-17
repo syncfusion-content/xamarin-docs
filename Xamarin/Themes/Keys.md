@@ -1532,7 +1532,7 @@ This page lists the keys for each control and the element to which it is mapped 
 	</tr>
 	<tr>
 		<td>
-            Note : Background color of the card view action button in SfChat Xamarin.Forms.UWP platform will be set from `SyncPrimaryColor` key value.
+            Note : Background color of the card view action button in SfChat Xamarin.Forms.UWP platform will be set from `SyncPrimaryColor` key value and in SfChat Xamarin.Forms.Android platform card button background color will take up the color of 'Card background'.  
             <br/>
             <br/>
         </td>

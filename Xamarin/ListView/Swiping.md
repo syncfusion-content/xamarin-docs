@@ -578,7 +578,7 @@ Using the [SwipeItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListVi
 <th>Description</th>
 </tr>
 <tr>
-<td>itemdata</td>
+<td>item data</td>
 <td>Represents the item data of list view item.</td>
 </tr>
 <tr>

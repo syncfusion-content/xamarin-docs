@@ -681,6 +681,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
+    </tr>
+	<tr>
 		<td>
              Color of the date picker icon and the border color of date picker.
             <br/>
@@ -691,7 +693,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-    </tr>  
+	</tr>
 	
 	<tr>
         <td rowspan="4">
@@ -704,6 +706,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
+	</tr>
+	<tr>
 		<td>
             Text color of the URL in a incoming hyper link message.
             <br/>
@@ -719,8 +723,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-		
-    </tr> 
+	</tr>
 
     <tr>
         <td rowspan="2">
@@ -733,6 +736,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
+	</tr>
+	<tr>
 		<td>
             Color of the text in card view action button in SfChat for the Xamarin.Forms.UWP platform.
             <br/>
@@ -1518,7 +1523,9 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-		 <td>
+	</tr>
+	<tr>
+		<td>
             Note : Background color of the card view action button in SfChat Xamarin.Forms.UWP platform will be set from `SyncPrimaryColor` key value.
             <br/>
             <br/>
@@ -1536,6 +1543,8 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
+	</tr>
+	<tr>
 		 <td>
             Note : Color of the border in card view action button in SfChat for the Xamarin.Forms.iOS platform will be set from `SyncPrimaryLightColor` key value.
             <br/>

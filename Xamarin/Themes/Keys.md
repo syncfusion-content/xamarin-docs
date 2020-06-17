@@ -671,20 +671,30 @@ This page lists the keys for each control and the element to which it is mapped 
 	</tr>
 	
 	<tr>
-        <td>
+        <td rowspan="3">
             SyncPrimaryColor
             <br/>
             <br/>
         </td>
         <td>
-            Background color of the outgoing message, color of the date picker icon, border color of date picker, color of time picker icon and the border color of time picker.
+            Background color of the outgoing message.
+            <br/>
+            <br/>
+        </td>
+		<td>
+             Color of the date picker icon and the border color of date picker.
+            <br/>
+            <br/>
+        </td>
+		<td>
+             Color of time picker icon and the border color of time picker.
             <br/>
             <br/>
         </td>
     </tr>  
 	
 	<tr>
-        <td>
+        <td rowspan="4">
             SyncPrimaryLightColor
             <br/>
             <br/>
@@ -694,7 +704,41 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
             <br/>
         </td>
-    </tr>  
+		<td>
+            Text color of the URL in a incoming hyper link message.
+            <br/>
+            <br/>
+        </td>
+		<td>
+             Color of the load more indicator, color of the text in the load more and the color of the load more border color.
+            <br/>
+            <br/>
+        </td>
+		<td>
+            Color of the text in card view action button in SfChat for the Xamarin.Forms.Android and Xamarin.Forms.iOS platform.
+            <br/>
+            <br/>
+        </td>
+		
+    </tr> 
+
+    <tr>
+        <td rowspan="2">
+            SyncPrimaryForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Text color of outgoing message and the text color of the URL in a outgoing hyper link message.
+            <br/>
+            <br/>
+        </td>
+		<td>
+            Color of the text in card view action button in SfChat for the Xamarin.Forms.UWP platform.
+            <br/>
+            <br/>
+        </td>
+    </tr>
 
     <tr>
         <td>
@@ -860,19 +904,6 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Font size of the timestamp in an incoming message.
-            <br/>
-            <br/>
-        </td>
-    </tr>
-
-    <tr>
-        <td>
-            SyncPrimaryForegroundColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Text color of outgoing message.
             <br/>
             <br/>
         </td>
@@ -1374,19 +1405,6 @@ This page lists the keys for each control and the element to which it is mapped 
 	
 	<tr>
         <td>
-            SfChatHyperlinkColor
-            <br/>
-            <br/>
-        </td>
-        <td>
-            Text color of the URL in a hyper link message.
-            <br/>
-            <br/>
-        </td>
-    </tr>	
-	
-	<tr>
-        <td>
             SfChatHyperlinkDescriptionTextColor
             <br/>
             <br/>
@@ -1423,6 +1441,19 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
     </tr>	
+
+	<tr>
+        <td>
+            SfChatHyperlinkImageBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the image in a hyper link message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
 	
 	<tr>
         <td>
@@ -1432,6 +1463,289 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
             Background color of the calendar message.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatAttachmentButtonColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the attachment button.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatAttachmentButtonEffectColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the attachment button effect.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatCardBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the card view.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+		
+	<tr>
+        <td rowspan="2">
+            SfChatCardButtonBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the card view action button in SfChat Xamarin.Forms.iOS platform.
+            <br/>
+            <br/>
+        </td>
+		 <td>
+            Note : Background color of the card view action button in SfChat Xamarin.Forms.UWP platform will be set from `SyncPrimaryColor` key value.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+		
+	<tr>
+        <td rowspan="2">
+            SfChatCardButtonBorderColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the border in card view action button in SfChat for the Xamarin.Forms.Android platform.
+            <br/>
+            <br/>
+        </td>
+		 <td>
+            Note : Color of the border in card view action button in SfChat for the Xamarin.Forms.iOS platform will be set from `SyncPrimaryLightColor` key value.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatCardTitleTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the text in the card view title.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatCardSubtitleTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the text in the card view subtitle.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatCardDescriptionTextColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Color of the text in the card view description.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatCardTitleFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+             Font family of the text in the card view title.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatCardSubtitleFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the text in the card view subtitle.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+	
+	<tr>
+        <td>
+            SfChatCardDescriptionFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the text in the card view description.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+		
+	<tr>
+        <td>
+            SfChatCardButtonFontFamily
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font family of the text in the card view action button.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+		
+	<tr>
+        <td>
+            SfChatCardTitleFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the text in the card view title.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+			
+	<tr>
+        <td>
+            SfChatCardSubtitleFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the text in the card view subtitle.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+				
+	<tr>
+        <td>
+            SfChatCardDescriptionFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the text in the card view description.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+					
+	<tr>
+        <td>
+            SfChatCardButtonFontSize
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font size of the text in the card view action button.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+						
+	<tr>
+        <td>
+            SfChatCardTitleFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the text in the card view title.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+						
+	<tr>
+        <td>
+            SfChatCardSubtitleFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the text in the card view subtitle.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+							
+	<tr>
+        <td>
+            SfChatCardDescriptionFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the text in the card view description.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+							
+	<tr>
+        <td>
+            SfChatCardButtonFontAttributes
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Font attributes of the text in the card view action button.
+            <br/>
+            <br/>
+        </td>
+    </tr>	
+							
+	<tr>
+        <td>
+            SfChatLoadMoreBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the load more.
             <br/>
             <br/>
         </td>
@@ -4164,7 +4478,7 @@ This page lists the keys for each control and the element to which it is mapped 
     </tr>
 
     <tr>
-        <td rowspan="25">
+        <td rowspan="27">
             SfDataGridStyles  
             <br/>
             <br/>
@@ -4471,6 +4785,32 @@ This page lists the keys for each control and the element to which it is mapped 
         </td>
         <td>
               Foreground color of the `GroupSummaryRow` in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr> 
+
+    <tr>
+        <td>
+            SfDataGridUnboundRowBackgroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Background color of the 'UnboundRow' in SfDataGrid.
+            <br/>
+            <br/>
+        </td>
+    </tr>     
+
+     <tr>
+        <td>
+            SfDataGridUnboundRowForegroundColor
+            <br/>
+            <br/>
+        </td>
+        <td>
+            Foreground color of the 'UnboundRow' in SfDataGrid.
             <br/>
             <br/>
         </td>

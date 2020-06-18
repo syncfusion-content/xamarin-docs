@@ -3451,7 +3451,6 @@ To display vertical error value only, you can set the [`Mode`] as `Vertical` as 
 <chart:SfChart>
 ...
 
-
     <chart:ErrorBarSeries ItemsSource="{Binding CarDistributionDetails}"
 	XBindingPath = "Country"
 	YBindingPath = "Value"

@@ -3193,7 +3193,7 @@ chart.Series.Add(waterfallSeries);
 	Type = ErrorBarType.Fixed  
 	Mode = ErrorBarMode.Both
 	HorizontalErrorValue = 1
-    VerticalErrorValue = 3/>
+        VerticalErrorValue = 3/>
 
 </chart:SfChart>					  					  
 {% endhighlight %}
@@ -3224,8 +3224,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
     <chart:ErrorBarSeries ItemsSource = {Binding  CarDistributionDetails}"
 	XBindingPath = "Country"
-       YBindingPath = "Value" 
-       Type = ErrorBarType.Percentage 
+        YBindingPath = "Value" 
+        Type = ErrorBarType.Percentage 
 	Mode = ErrorBarMode.Both
 	HorizontalErrorValue = 1
 	VerticalErrorValue = 3/>
@@ -3298,7 +3298,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	XBindingPath = "Country" 
 	YBindingPath = "Value"
 	Type = ErrorBarType.StandardErrors
-         Mode = ErrorBarMode.Both
+        Mode = ErrorBarMode.Both
 	HorizontalErrorValue = 1
     VerticalErrorValue = 3/>
 

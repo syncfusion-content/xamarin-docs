@@ -3189,7 +3189,7 @@ chart.Series.Add(waterfallSeries);
 
     <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}"
 	XBindingPath = "Country"
-    YBindingPath = "Value"
+        YBindingPath = "Value"
 	Type = ErrorBarType.Fixed  
 	Mode = ErrorBarMode.Both
 	HorizontalErrorValue = 1
@@ -3224,8 +3224,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
     <chart:ErrorBarSeries ItemsSource = {Binding  CarDistributionDetails}"
 	XBindingPath = "Country"
-    YBindingPath = "Value" 
-    Type = ErrorBarType.Percentage 
+       YBindingPath = "Value" 
+       Type = ErrorBarType.Percentage 
 	Mode = ErrorBarMode.Both
 	HorizontalErrorValue = 1
 	VerticalErrorValue = 3/>
@@ -3298,7 +3298,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	XBindingPath = "Country" 
 	YBindingPath = "Value"
 	Type = ErrorBarType.StandardErrors
-    Mode = ErrorBarMode.Both
+         Mode = ErrorBarMode.Both
 	HorizontalErrorValue = 1
     VerticalErrorValue = 3/>
 
@@ -3334,11 +3334,11 @@ If [`Type`] is `Custom`, you have to bind [`HorizontalErrorPath`] and [`Vertical
 
     <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}"
 	XBindingPath = "Country"
-    YBindingPath = "Value"
+        YBindingPath = "Value"
 	Type=ErrorBarType.Custom
-    Mode = ErrorBarMode.Both
-    HorizontalErrorPath = "HorizontalErrorValues" 
-    VerticalErrorPath = "VerticalErrorValues"/>
+        Mode = ErrorBarMode.Both
+        HorizontalErrorPath = "HorizontalErrorValues" 
+        VerticalErrorPath = "VerticalErrorValues"/>
 
 </chart:SfChart>
 
@@ -3418,7 +3418,7 @@ To display horizontal error value only, you can set the [`Mode`] as `Horizontal`
 	YBindingPath = "Value"
 	Type = ErrorBarType.Fixed 
 	Mode = ErrorBarMode.Horizontal
-    HorizontalErrorValue = 1
+        HorizontalErrorValue = 1
 	VerticalErrorValue = 3/>
 
 </chart:SfChart>
@@ -3456,8 +3456,8 @@ To display vertical error value only, you can set the [`Mode`] as `Vertical` as 
 	XBindingPath = "Country"
 	YBindingPath = "Value"
 	Type = ErrorBarType.Fixed
-    Mode = ErrorBarMode.Vertical
-    HorizontalErrorValue = 1
+        Mode = ErrorBarMode.Vertical
+        HorizontalErrorValue = 1
 	VerticalErrorValue = 3/>
 
 </chart:SfChart>
@@ -3498,8 +3498,8 @@ The [`HorizontalDirection`] and[`VerticalDirection`] properties are used to set 
 	XBindingPath = "Country"
 	YBindingPath = "Value"
 	HorizontalDirection = ErrorBarDirection.Both
-    VerticalDirection = ErrorBarDirection.Both
-    HorizontalErrorValue = 1
+        VerticalDirection = ErrorBarDirection.Both
+        HorizontalErrorValue = 1
 	VerticalErrorValue = 3/>
 
 </chart:SfChart>
@@ -3514,7 +3514,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	XBindingPath = "Country",
 	YBindingPath = "Value",
 	HorizontalDirection = ErrorBarDirection.Plus,
-      VerticalDirection = ErrorBarDirection.Minus,
+       VerticalDirection = ErrorBarDirection.Minus,
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 3
 };
@@ -3537,22 +3537,30 @@ You can customize the [`ErrorBarSeries`] with the following style properties.
 <chart:SfChart>
 ...
 
-    <chart:ErrorBarSeries.HorizontalLineStyle>		
-    <chart:ErrorBarLineStyle StrokeColor= "Blue"   
+    <chart:ErrorBarSeries.HorizontalLineStyle>
+    <chart:ErrorBarLineStyle
+	StrokeColor= "Blue"
 	StrokeWidth = "4">
     </chart:ErrorBarSeries.HorizontalLineStyle>
 	
     <chart:ErrorBarSeries.VerticalLineStyle>       
-    <chart:ErrorBarLineStyle StrokeColor = "Blue" 
+    <chart:ErrorBarLineStyle
+	StrokeColor = "Blue" 
 	StrokeWidth = "4">
     </chart:ErrorBarSeries.VerticalLineStyle>
 
     <chart:ErrorBarSeries.HorizontalCapLineStyle>
-    <chart:ErrorBarCapLineStyle StrokeColor= "Blue" StrokeWidth= "4" IsVisible = "true">
+    <chart:ErrorBarCapLineStyle
+	StrokeColor= "Blue"
+	StrokeWidth= "4"
+	IsVisible = "true">
     </chart:ErrorBarSeries.HorizontalCapLineStyle>
 	
     <chart:ErrorBarSeries.VerticalCapLineStyle>    
-    <chart:ErrorBarCapLineStyle StrokeColor = "Blue" StrokeWidth = "1" IsVisible = "true">
+    <chart:ErrorBarCapLineStyle
+	StrokeColor = "Blue"
+	StrokeWidth = "1"
+	IsVisible = "true">
     </chart:ErrorBarSeries.VerticalCapLineStyle>
 
 </chart:SfChart>

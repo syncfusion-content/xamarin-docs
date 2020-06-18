@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-## DataTemplateSelector
+# DataTemplateSelector
 
 SfPicker supports DataTemplateSelector which you can choose a DataTemplate based on the data object.
 

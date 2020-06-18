@@ -7,7 +7,7 @@ control: SfCalendar
 documentation: UG
 ---
 
-## AutomationId
+# AutomationId
 
 The `SfCalendar` control has built-in `AutomationId` for inner elements. Please find the following table of Automation IDs for inner elements.
 

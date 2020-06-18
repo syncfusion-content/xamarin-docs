@@ -7,7 +7,7 @@ control : Chips
 documentation : ug
 ---
 
-## Customization of SfChip
+# Customization of SfChip
 
 The chip control supports to customize the background color, border color, close button color, and more. The chip control can be customized using the following properties:
 

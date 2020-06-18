@@ -7,7 +7,7 @@ control: Rotator
 documentation: ug
 ---
 
-## Customization
+# Customization
 
 The Rotator control supports to customize the dots border color, selected dots color and unselected dots color.
 

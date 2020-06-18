@@ -7,7 +7,7 @@ control: TabView
 documentation: ug
 ---
 
-## Positioning of header
+# Positioning of header
 
 Tab headers can be positioned either above the content or below the content. This can be done by setting the `TabHeaderPosition` property of `SfTabView`.
 

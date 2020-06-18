@@ -7,7 +7,7 @@ control: General
 documentation: ug
 ---
 
-## Switching between light theme and dark theme
+# Switching between light theme and dark theme
 
 To switch to light theme from dark theme, use the following code snippet.
 

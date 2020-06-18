@@ -3187,9 +3187,12 @@ chart.Series.Add(waterfallSeries);
 <chart:SfChart>
 ...
 
-    <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}" XBindingPath = "Country"
-    YBindingPath = "Value" Type = ErrorBarType.Fixed  
-	Mode = ErrorBarMode.Both HorizontalErrorValue = 1
+    <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}"
+	XBindingPath = "Country"
+    YBindingPath = "Value"
+	Type = ErrorBarType.Fixed  
+	Mode = ErrorBarMode.Both
+	HorizontalErrorValue = 1
     VerticalErrorValue = 3/>
 
 </chart:SfChart>					  					  
@@ -3219,11 +3222,13 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 <chart:SfChart>
 ...
 
-    <chart:ErrorBarSeries ItemsSource = {Binding  CarDistributionDetails}" XBindingPath = "Country"
+    <chart:ErrorBarSeries ItemsSource = {Binding  CarDistributionDetails}"
+	XBindingPath = "Country"
     YBindingPath = "Value" 
     Type = ErrorBarType.Percentage 
 	Mode = ErrorBarMode.Both
-	HorizontalErrorValue = 1 VerticalErrorValue = 3/>
+	HorizontalErrorValue = 1
+	VerticalErrorValue = 3/>
 
 </chart:SfChart>
 
@@ -3253,10 +3258,12 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 <chart:SfChart>
 ...
      
-	<chart:ErrorBarSeries ItemsSource = "{Binding  CarDistributionDetails}" XBindingPath = "Country" 
+	<chart:ErrorBarSeries ItemsSource = "{Binding  CarDistributionDetails}"
+	XBindingPath = "Country" 
 	YBindingPath = "Value" 
 	Type = ErrorBarType.StandardDeviation
-	Mode = ErrorBarMode.Both HorizontalErrorValue = 1
+	Mode = ErrorBarMode.Both
+	HorizontalErrorValue = 1
     VerticalErrorValue = 3/>
 
 </chart:SfChart>
@@ -3287,9 +3294,12 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 <chart:SfChart>
 ...
 
-    <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}" XBindingPath = "Country" 
-	YBindingPath ="Value" Type = ErrorBarType.StandardErrors
-    Mode = ErrorBarMode.Both HorizontalErrorValue = 1
+    <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}"
+	XBindingPath = "Country" 
+	YBindingPath = "Value"
+	Type = ErrorBarType.StandardErrors
+    Mode = ErrorBarMode.Both
+	HorizontalErrorValue = 1
     VerticalErrorValue = 3/>
 
 </chart:SfChart>
@@ -3313,7 +3323,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 ### Custom
 
-If the Type is Custom, you have to bind HorizontalErrorPath and VerticalErrorPath as shown in the below code snippet.
+If [`Type`] is `Custom`, you have to bind [`HorizontalErrorPath`] and [`VerticalErrorPath`] as shown in the below code snippet.
 
 {% tabs %}
 
@@ -3322,8 +3332,10 @@ If the Type is Custom, you have to bind HorizontalErrorPath and VerticalErrorPat
 <chart:SfChart>
 ...
 
-    <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}" XBindingPath = "Country"
-    YBindingPath = "Value" Type=ErrorBarType.Custom
+    <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}"
+	XBindingPath = "Country"
+    YBindingPath = "Value"
+	Type=ErrorBarType.Custom
     Mode = ErrorBarMode.Both
     HorizontalErrorPath = "HorizontalErrorValues" 
     VerticalErrorPath = "VerticalErrorValues"/>
@@ -3363,9 +3375,12 @@ To display horizontal and vertical error value, you can set the [`Mode`] as `Bot
 ...
 
  
-    <chart:ErrorBarSeries ItemsSource="{Binding CarDistributionDetails}" XBindingPath = "Country"
-    YBindingPath = "Value" Type = ErrorBarType.Fixed 
-    Mode = ErrorBarMode.Both HorizontalErrorValue=1
+    <chart:ErrorBarSeries ItemsSource="{Binding CarDistributionDetails}"
+	XBindingPath = "Country"
+    YBindingPath = "Value"
+	Type = ErrorBarType.Fixed 
+    Mode = ErrorBarMode.Both
+	HorizontalErrorValue=1
     VerticalErrorValue = 3/>
 
 </chart:SfChart>
@@ -3398,10 +3413,13 @@ To display horizontal error value only, you can set the [`Mode`] as `Horizontal`
 <chart:SfChart>
 ...
 
-    <chart:ErrorBarSeries ItemsSource="{Binding CarDistributionDetails}" XBindingPath = "Country"
-	YBindingPath = "Value" Type = ErrorBarType.Fixed 
+    <chart:ErrorBarSeries ItemsSource="{Binding CarDistributionDetails}"
+	XBindingPath = "Country"
+	YBindingPath = "Value"
+	Type = ErrorBarType.Fixed 
 	Mode = ErrorBarMode.Horizontal
-    HorizontalErrorValue = 1 VerticalErrorValue = 3/>
+    HorizontalErrorValue = 1
+	VerticalErrorValue = 3/>
 
 </chart:SfChart>
 
@@ -3436,9 +3454,11 @@ To display vertical error value only, you can set the [`Mode`] as `Vertical` as 
 
     <chart:ErrorBarSeries ItemsSource="{Binding CarDistributionDetails}"
 	XBindingPath = "Country"
-	YBindingPath = "Value" Type = ErrorBarType.Fixed
+	YBindingPath = "Value"
+	Type = ErrorBarType.Fixed
     Mode = ErrorBarMode.Vertical
-    HorizontalErrorValue = 1 VerticalErrorValue = 3/>
+    HorizontalErrorValue = 1
+	VerticalErrorValue = 3/>
 
 </chart:SfChart>
 
@@ -3474,9 +3494,13 @@ The [`HorizontalDirection`] and[`VerticalDirection`] properties are used to set 
 <chart:SfChart>
 ...
 
-    <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}" XBindingPath = "Country" YBindingPath = "Value"	HorizontalDirection = ErrorBarDirection.Both
+    <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}"
+	XBindingPath = "Country"
+	YBindingPath = "Value"
+	HorizontalDirection = ErrorBarDirection.Both
     VerticalDirection = ErrorBarDirection.Both
-    HorizontalErrorValue = 1 VerticalErrorValue = 3/>
+    HorizontalErrorValue = 1
+	VerticalErrorValue = 3/>
 
 </chart:SfChart>
 

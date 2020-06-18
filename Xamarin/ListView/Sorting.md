@@ -27,7 +27,7 @@ Sorting the data by creating the [SortDescriptor](https://help.syncfusion.com/cr
 {% highlight xaml %}
 <ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
              xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable">
-  <sync:SfListView x:Name="listView" ItemsSource="{Binding ContactsInfo}" ItemSize="70" FocusBorderThickness="0" SelectionBackgroundColor="#ECECEC" IsScrollBarVisible="True">
+  <sync:SfListView x:Name="listView">
             <sync:SfListView.DataSource>
                 <data:DataSource>
                     <data:DataSource.SortDescriptors>

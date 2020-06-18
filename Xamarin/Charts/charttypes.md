@@ -3176,9 +3176,9 @@ chart.Series.Add(waterfallSeries);
 
 ## Type
 
- The [`Type`] property is used to define the error bar type value in `Fixed` , `Custom`, `Percentage`, `StandardDeviation` and `StandErrors`. The default value of this property is [`Fixed`].
+The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation` and `StandardErrors`. The default value of this property is [`Fixed`]. You have to set value for [`HorizontalErrorValue`] and [`VerticalErrorValue`] properties for all types except [`Fixed`].
 
- ### Fixed
+### Fixed
 
 {% tabs %}
 
@@ -3249,7 +3249,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endhighlight %}
 
- ### Standard Deviation
+### Standard Deviation
 
 {% tabs %}
 
@@ -3323,7 +3323,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 ### Custom
 
-If [`Type`] is `Custom`, you have to bind [`HorizontalErrorPath`] and [`VerticalErrorPath`] as shown in the below code snippet.
+If the [`Type`] is `Custom`, you have to set value for [`HorizontalErrorPath`] and [`VerticalErrorPath`] as shown in the below code snippet.
 
 {% tabs %}
 
@@ -3361,7 +3361,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 ## Mode
 
-The [`Mode`] property is used to set  `Both`, `Horizontal` and `Vertical` error value in a particular direction. The default value of this property is [`Both`]. 
+The error value shown on the chart is based on the [`Mode`] property. It have the values of `Both`, `Horizontal` and `Vertical`. The default value of this property is [`Both`]. 
 
 ### Both
 
@@ -3481,7 +3481,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 ## Direction
 
-The [`HorizontalDirection`] and[`VerticalDirection`] properties are used to set the direction of error bar lines. The default value is [`Both`].
+The [`HorizontalDirection`] and [`VerticalDirection`] properties are used to set the direction of error bar lines. The default value is [`Both`].
 
 * [`Both`] - used to set error value in positive and negative direction.
 * [`Minus`] - used to set error value in negative direction.
@@ -3525,10 +3525,10 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 You can customize the [`ErrorBarSeries`] with the following style properties.
 
-* [`HorizontalLineStyle`] –used to customizes the appearance of horizontal error bar line style.
-* [`VerticalLineStyle`] – used to customizes the appearance of vertical error bar line style.
-* [`HorizontalCapLineStyle`] – used to customizes the appearance of horizontal error bar cap line style.
-* [`VerticalCapLineStyle`] – used to customizes the appearance of vertical error bar cap line style.
+* [`HorizontalLineStyle`] – used to customize the appearance of horizontal error bar line.
+* [`VerticalLineStyle`] – used to customize the appearance of vertical error bar line.
+* [`HorizontalCapLineStyle`] – used to customize the appearance of horizontal error bar cap line.
+* [`VerticalCapLineStyle`] – used to customize the appearance of vertical error bar cap line.
 
 {% tabs %}
 

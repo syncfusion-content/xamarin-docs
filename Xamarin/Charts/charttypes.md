@@ -1240,7 +1240,7 @@ The series box plotting mode can be changed using the [`BoxPlotMode`] property o
 * [`Inclusive`] - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
 * [`Normal`] - The quartile values are calculated by splitting the list and getting the median values.
 
-By default [`BoxPlotMode`] value is [`Exclusive`]. 
+By default,[`BoxPlotMode`] value is [`Exclusive`]. 
 
 The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
 
@@ -1316,7 +1316,7 @@ chart.Series.Add(boxPlotSeries);
 
 ### SymbolType
 
-The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default[`SymbolType`] value is [`Ellipse`].
+The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default,[`SymbolType`] value is [`Ellipse`].
 
 The following code shows how to set the [`SymbolType`] value as [`Cross`].
 

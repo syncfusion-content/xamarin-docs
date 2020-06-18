@@ -3233,7 +3233,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
 	YBindingPath = "Value",
-         Type = ErrorBarType.Percentage,
+        Type = ErrorBarType.Percentage,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 3
@@ -3265,7 +3265,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
 	YBindingPath = "Value",
-         Type = ErrorBarType.StandardDeviation,
+        Type = ErrorBarType.StandardDeviation,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 3
@@ -3451,7 +3451,7 @@ The [`HorizontalDirection`] and [`VerticalDirection`] properties are used to set
 
 * `Both` - used to set error value in positive and negative direction.
 * `Minus` - used to set error value in negative direction.
-*  `Plus` - used to set error value in positive direction.	
+* `Plus` - used to set error value in positive direction.	
 
 {% tabs %}
 

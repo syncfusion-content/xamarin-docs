@@ -3176,8 +3176,7 @@ chart.Series.Add(waterfallSeries);
 
 ## Type
 
- This [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`,
- `Percentage`, `StandardDeviation` and `StandErrors`. The default value of this property is [`Fixed`].
+ This [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation` and `StandErrors`. The default value of this property is [`Fixed`].
 
  `Fixed`
 
@@ -3186,14 +3185,13 @@ chart.Series.Add(waterfallSeries);
 {% highlight xaml %}
 
 <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}" 
-                      XBindingPath = "Country"
-                      YBindingPath = "Value" 
-                      Type = ErrorBarType.Fixed
-                      Mode = ErrorBarMode.Both
-                      HorizontalErrorValue = 1
-                      VerticalErrorValue = 3>
-</chart:ErrorBarSeries>					  
-
+XBindingPath = "Country"
+YBindingPath = "Value"
+Type = ErrorBarType.Fixed
+Mode = ErrorBarMode.Both
+HorizontalErrorValue = 1
+VerticalErrorValue = 3>
+</chart:SfChart>					  					  
 {% endhighlight %}
 
 {% highlight c# %}
@@ -3203,7 +3201,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
 	YBindingPath = "Value",
-      Type = ErrorBarType.Fixed,
+        Type = ErrorBarType.Fixed, 
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 3
@@ -3218,12 +3216,12 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 {% highlight xaml %}
 
 <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}" 
-                      XBindingPath = "Country"
-                      YBindingPath = "Value" 
-                      Type = ErrorBarType.Percentage
-                      Mode = ErrorBarMode.Both
-                      HorizontalErrorValue = 1
-                      VerticalErrorValue = 3
+XBindingPath = "Country"
+YBindingPath = "Value" 
+Type = ErrorBarType.Percentage
+Mode = ErrorBarMode.Both
+HorizontalErrorValue = 1
+VerticalErrorValue = 3
 </chart:ErrorBarSeries>
 
 {% endhighlight %}
@@ -3235,7 +3233,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
 	YBindingPath = "Value",
-       Type = ErrorBarType.Percentage,
+         Type = ErrorBarType.Percentage,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 3
@@ -3250,12 +3248,12 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 {% highlight xaml %}
 
 <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}" 
-                      XBindingPath = "Country"
-                      YBindingPath = "Value" 
-                      Type = ErrorBarType.StandardDeviation
-                      Mode = ErrorBarMode.Both
-                      HorizontalErrorValue = 1
-                      VerticalErrorValue = 3
+XBindingPath = "Country"
+YBindingPath = "Value" 
+Type = ErrorBarType.StandardDeviation
+Mode = ErrorBarMode.Both
+HorizontalErrorValue = 1
+VerticalErrorValue = 3
 </chart:ErrorBarSeries>
 
 {% endhighlight %}
@@ -3267,7 +3265,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
 	YBindingPath = "Value",
-       Type = ErrorBarType.StandardDeviation,
+         Type = ErrorBarType.StandardDeviation,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 3
@@ -3282,12 +3280,11 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 {% highlight xaml %}
 
 <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}" 
-                      XBindingPath = "Country"
-                      YBindingPath = "Value" 
-                      Type = ErrorBarType.StandardErrors
-                      Mode = ErrorBarMode.Both
-                      HorizontalErrorValue = 1
-                      VerticalErrorValue = 3
+XBindingPath = "Country"                      YBindingPath = "Value" 
+Type = ErrorBarType.StandardErrors
+Mode = ErrorBarMode.Both
+HorizontalErrorValue = 1
+VerticalErrorValue = 3
 </chart:ErrorBarSeries>
 
 {% endhighlight %}
@@ -3299,7 +3296,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
 	YBindingPath = "Value",
-      Type = ErrorBarType.StandardErrors,
+        Type = ErrorBarType.StandardErrors,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 3
@@ -3316,12 +3313,12 @@ If the Type is Custom, you have to bind HorizontalErrorPath and VerticalErrorPat
 {% highlight xaml %}
 
 <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}" 
-                      XBindingPath = "Country"
-                      YBindingPath = "Value" 
-                      Type = ErrorBarType.Custom
-                      Mode = ErrorBarMode.Both
-                      HorizontalErrorPath = "HorizontalErrorValues" 
-                      VerticalErrorPath = "VerticalErrorValues"
+XBindingPath = "Country"
+YBindingPath = "Value" 
+Type = ErrorBarType.Custom
+Mode = ErrorBarMode.Both
+HorizontalErrorPath = "HorizontalErrorValues" 
+VerticalErrorPath = "VerticalErrorValues"
 </chart:ErrorBarSeries>
 
 {% endhighlight %}
@@ -3333,7 +3330,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
 	YBindingPath = "Value",
-      Type = ErrorBarType.Custom,
+        Type = ErrorBarType.Custom,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorPath = "HorizontalErrorValues",
 	VerticalErrorValue = "VerticalErrorValues"
@@ -3355,12 +3352,12 @@ To display horizontal and vertical error value, you can set the [`Mode`] as `Bot
 {% highlight xaml %}
 
 <chart:ErrorBarSeries ItemsSource="{Binding CarDistributionDetails}" 
-                      XBindingPath="Country"
-                      YBindingPath="Value" 
-                      Type = ErrorBarType.Fixed 
-                      Mode=ErrorBarMode.Both
-                      HorizontalErrorValue= 1
-                      VerticalErrorValue = 3
+XBindingPath = "Country"
+YBindingPath = "Value" 
+Type = ErrorBarType.Fixed 
+Mode = ErrorBarMode.Both
+HorizontalErrorValue = 1
+VerticalErrorValue = 3
 </chart:ErrorBarSeries>
 
 {% endhighlight %}
@@ -3372,7 +3369,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
 	YBindingPath = "Value",
-      Type = ErrorBarType.Fixed,
+        Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Horizontal,
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 3
@@ -3389,12 +3386,12 @@ To display horizontal error value, you can set the [`Mode`] as `Horizontal` as s
 {% highlight xaml %}
 
 <chart:ErrorBarSeries ItemsSource="{Binding CarDistributionDetails}" 
-                      XBindingPath="Country"
-                      YBindingPath="Value" 
-                      Type = ErrorBarType.Fixed
-                      Mode=ErrorBarMode.Horizontal
-                      HorizontalErrorValue= 1
-                      VerticalErrorValue = 3
+XBindingPath = "Country"
+YBindingPath = "Value" 
+Type = ErrorBarType.Fixed
+Mode = ErrorBarMode.Horizontal
+HorizontalErrorValue = 1
+VerticalErrorValue = 3
 </chart:ErrorBarSeries>
 
 {% endhighlight %}
@@ -3406,7 +3403,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
 	YBindingPath = "Value",
-      Type = ErrorBarType.Fixed,
+        Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Horizontal,
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 3
@@ -3423,12 +3420,12 @@ To display vertical error value, you can set the [`Mode`] as `Vertical` as shown
 {% highlight xaml %}
 
 <chart:ErrorBarSeries ItemsSource="{Binding CarDistributionDetails}"  
-                      XBindingPath="Country"
-                      YBindingPath="Value" 
-                      Type = ErrorBarType.Fixed
-                      Mode=ErrorBarMode.Vertical
-                      HorizontalErrorValue= 1
-                      VerticalErrorValue = 3
+XBindingPath = "Country"
+YBindingPath = "Value" 
+Type = ErrorBarType.Fixed
+Mode = ErrorBarMode.Vertical
+HorizontalErrorValue = 1
+VerticalErrorValue = 3
 </chart:ErrorBarSeries>
 
 {% endhighlight %}
@@ -3440,7 +3437,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
 	YBindingPath = "Value",
-      Type = ErrorBarType.Fixed,
+        Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Vertical,
 	HorizontalErrorValue = 1,
 	VerticalErrorValue = 3
@@ -3461,14 +3458,14 @@ The [`HorizontalDirection`] and [`VerticalDirection`] properties are used to set
 {% highlight xaml %}
 
 <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}" 
-                      XBindingPath = "Country"
-                      YBindingPath = "Value" 
-                      Type = ErrorBarType.Fixed
-                      Mode = ErrorBarMode.Both
-                      HorizontalDirection = ErrorBarDirection.Both
-                      VerticalDirection = ErrorBarDirection.Both
-                      HorizontalErrorValue = 1
-                      VerticalErrorValue = 3
+XBindingPath = "Country"
+YBindingPath = "Value" 
+Type = ErrorBarType.Fixed
+Mode = ErrorBarMode.Both
+HorizontalDirection = ErrorBarDirection.Both
+VerticalDirection = ErrorBarDirection.Both
+HorizontalErrorValue = 1
+VerticalErrorValue = 3
 </chart:ErrorBarSeries>
 
 {% endhighlight %}
@@ -3480,7 +3477,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	ItemsSource = CarDistributionDetails,
 	XBindingPath = "Country",
 	YBindingPath = "Value",
-      Type = ErrorBarType.Fixed,
+        Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Both,
 	HorizontalDirection = ErrorBarDirection.Both,
     VerticalDirection = ErrorBarDirection.Both,

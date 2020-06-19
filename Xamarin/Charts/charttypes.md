@@ -3176,7 +3176,7 @@ chart.Series.Add(waterfallSeries);
 
 ## Type
 
-The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation` and `StandardErrors`. The default value of this property is [`Fixed`]. You have to set value for [`HorizontalErrorValue`] and [`VerticalErrorValue`] properties for all types except [`Fixed`].
+The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation` and `StandardErrors`. The default value of this property is [`Fixed`]. You have to set value for [`HorizontalErrorValue`] and [`VerticalErrorValue`] properties for all types except [`Custom`].
 
 ### Fixed
 
@@ -3192,8 +3192,8 @@ The [`Type`] property is used to define the error bar type value in `Fixed`, `Cu
         YBindingPath = "Value"
 	Type = ErrorBarType.Fixed  
 	Mode = ErrorBarMode.Both
-	HorizontalErrorValue = 1
-        VerticalErrorValue = 3/>
+	HorizontalErrorValue = 0.5
+        VerticalErrorValue = 4/>
 
 </chart:SfChart>					  					  
 {% endhighlight %}
@@ -3207,8 +3207,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
         Type = ErrorBarType.Fixed, 
 	Mode = ErrorBarMode.Both,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 {% endhighlight %}
@@ -3228,7 +3228,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
         Type = ErrorBarType.Percentage 
 	Mode = ErrorBarMode.Both
 	HorizontalErrorValue = 1
-	VerticalErrorValue = 3/>
+	VerticalErrorValue = 8/>
 
 </chart:SfChart>
 
@@ -3244,7 +3244,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
         Type = ErrorBarType.Percentage,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	VerticalErrorValue = 8
 };
 
 {% endhighlight %}
@@ -3263,8 +3263,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value" 
 	Type = ErrorBarType.StandardDeviation
 	Mode = ErrorBarMode.Both
-	HorizontalErrorValue = 1
-    VerticalErrorValue = 3/>
+	HorizontalErrorValue = 0.5
+    VerticalErrorValue = 4/>
 
 </chart:SfChart>
 
@@ -3280,7 +3280,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
         Type = ErrorBarType.StandardDeviation,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	VerticalErrorValue = 4
 };
 
 {% endhighlight %}
@@ -3300,7 +3300,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	Type = ErrorBarType.StandardErrors
         Mode = ErrorBarMode.Both
 	HorizontalErrorValue = 1
-    VerticalErrorValue = 3/>
+    VerticalErrorValue = 4/>
 
 </chart:SfChart>
 
@@ -3316,7 +3316,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
         Type = ErrorBarType.StandardErrors,
 	Mode = ErrorBarMode.Both,
 	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	VerticalErrorValue = 4
 };
 
 {% endhighlight %}
@@ -3377,11 +3377,11 @@ To display horizontal and vertical error value, you can set the [`Mode`] as `Bot
  
     <chart:ErrorBarSeries ItemsSource="{Binding CarDistributionDetails}"
 	XBindingPath = "Country"
-    YBindingPath = "Value"
+        YBindingPath = "Value"
 	Type = ErrorBarType.Fixed 
-    Mode = ErrorBarMode.Both
-	HorizontalErrorValue=1
-    VerticalErrorValue = 3/>
+        Mode = ErrorBarMode.Both
+	HorizontalErrorValue = 0.5
+    VerticalErrorValue = 4/>
 
 </chart:SfChart>
 
@@ -3396,8 +3396,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
         Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Horizontal,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 {% endhighlight %}
@@ -3418,8 +3418,8 @@ To display horizontal error value only, you can set the [`Mode`] as `Horizontal`
 	YBindingPath = "Value"
 	Type = ErrorBarType.Fixed 
 	Mode = ErrorBarMode.Horizontal
-        HorizontalErrorValue = 1
-	VerticalErrorValue = 3/>
+        HorizontalErrorValue = 0.5
+	VerticalErrorValue = 4/>
 
 </chart:SfChart>
 
@@ -3434,8 +3434,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
         Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Horizontal,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 {% endhighlight %}
@@ -3456,8 +3456,8 @@ To display vertical error value only, you can set the [`Mode`] as `Vertical` as 
 	YBindingPath = "Value"
 	Type = ErrorBarType.Fixed
         Mode = ErrorBarMode.Vertical
-        HorizontalErrorValue = 1
-	VerticalErrorValue = 3/>
+        HorizontalErrorValue = 0.5
+	VerticalErrorValue = 4/>
 
 </chart:SfChart>
 
@@ -3472,8 +3472,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
         Type = ErrorBarType.Fixed,
 	Mode = ErrorBarMode.Vertical,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 {% endhighlight %}
@@ -3496,10 +3496,10 @@ The [`HorizontalDirection`] and [`VerticalDirection`] properties are used to set
     <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}"
 	XBindingPath = "Country"
 	YBindingPath = "Value"
-	HorizontalDirection = ErrorBarDirection.Both
-        VerticalDirection = ErrorBarDirection.Both
-        HorizontalErrorValue = 1
-	VerticalErrorValue = 3/>
+	HorizontalDirection = ErrorBarDirection.Plus
+        VerticalDirection = ErrorBarDirection.Minus
+        HorizontalErrorValue = 0.5
+	VerticalErrorValue = 4/>
 
 </chart:SfChart>
 
@@ -3514,8 +3514,8 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	YBindingPath = "Value",
 	HorizontalDirection = ErrorBarDirection.Plus,
        VerticalDirection = ErrorBarDirection.Minus,
-	HorizontalErrorValue = 1,
-	VerticalErrorValue = 3
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
 };
 
 {% endhighlight %}
@@ -3538,27 +3538,27 @@ You can customize the [`ErrorBarSeries`] with the following style properties.
 
     <chart:ErrorBarSeries.HorizontalLineStyle>
     <chart:ErrorBarLineStyle
-	StrokeColor= "Blue"
+	StrokeColor= "Cyan"
 	StrokeWidth = "4">
     </chart:ErrorBarSeries.HorizontalLineStyle>
 	
     <chart:ErrorBarSeries.VerticalLineStyle>       
     <chart:ErrorBarLineStyle
-	StrokeColor = "Blue" 
+	StrokeColor = "Cyan" 
 	StrokeWidth = "4">
     </chart:ErrorBarSeries.VerticalLineStyle>
 
     <chart:ErrorBarSeries.HorizontalCapLineStyle>
     <chart:ErrorBarCapLineStyle
-	StrokeColor= "Blue"
+	StrokeColor= "Green"
 	StrokeWidth= "4"
 	IsVisible = "true">
     </chart:ErrorBarSeries.HorizontalCapLineStyle>
 	
     <chart:ErrorBarSeries.VerticalCapLineStyle>    
     <chart:ErrorBarCapLineStyle
-	StrokeColor = "Blue"
-	StrokeWidth = "1"
+	StrokeColor = "Green"
+	StrokeWidth = "4"
 	IsVisible = "true">
     </chart:ErrorBarSeries.VerticalCapLineStyle>
 
@@ -3569,20 +3569,20 @@ You can customize the [`ErrorBarSeries`] with the following style properties.
 {% highlight c# %}
 
  errorBarSeries.HorizontalLineStyle = new ErrorBarLineStyle();
- errorBarSeries.HorizontalLineStyle.StrokeColor = Color.Blue;
+ errorBarSeries.HorizontalLineStyle.StrokeColor = Color.Cyan;
  errorBarSeries.HorizontalLineStyle.StrokeWidth = 4;
  
  errorBarSeries.VerticalLineStyle = new ErrorBarLineStyle();
- errorBarSeries.VerticalLineStyle.StrokeColor = Color.Blue;
+ errorBarSeries.VerticalLineStyle.StrokeColor = Color.Cyan;
  errorBarSeries.VerticalLineStyle.StrokeWidth = 4;
  
  errorBarSeries.HorizontalCapLineStyle = new ErrorBarCapLineStyle();
- errorBarSeries.HorizontalCapLineStyle.StrokeColor = Color.Blue;
+ errorBarSeries.HorizontalCapLineStyle.StrokeColor = Color.Green;
  errorBarSeries.HorizontalCapLineStyle.StrokeWidth = 4;
  errorBarSeries.HorizontalCapLineStyle.IsVisible = true;
 
  errorBarSeries.VerticalCapLineStyle = new ErrorBarCapLineStyle();
- errorBarSeries.VerticalCapLineStyle.StrokeColor = Color.Blue;
+ errorBarSeries.VerticalCapLineStyle.StrokeColor = Color.Green;
  errorBarSeries.VerticalCapLineStyle.StrokeWidth = 4;
  errorBarSeries.VerticalCapLineStyle.IsVisible = true;
 

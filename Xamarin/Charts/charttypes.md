@@ -3422,7 +3422,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 <chart:SfChart>
 ...
      
-	<chart:ErrorBarSeries ItemsSource = "{Binding  CarDistributionDetails}"
+<chart:ErrorBarSeries ItemsSource = "{Binding  CarDistributionDetails}"
 	XBindingPath = "Country" 
 	YBindingPath = "Value" 
 	Type = ErrorBarType.StandardDeviation
@@ -3538,7 +3538,6 @@ To display horizontal and vertical error value, you can set the [`Mode`] as `Bot
 <chart:SfChart>
 ...
 
- 
     <chart:ErrorBarSeries ItemsSource="{Binding CarDistributionDetails}"
 	XBindingPath = "Country"
         YBindingPath = "Value"

@@ -518,7 +518,26 @@ N> Shadow support has not been provided for UWP Platform.
 
 ## Ripple Effect
 
-The button control provides Ripple effect support. To enable the Ripple effect, set the [`EnableRippleEffect`] property to true.
+The button control provides Ripple effect support. To enable the Ripple effect, set the [`EnableRippleEffect`] property to true. By default,[`EnableRippleEffect`] value is true.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<button:SfButton x:Name="button" Text="Button" EnableRippleEffect="false">
+</button:SfButton>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.EnableRippleEffect = false;
+
+{% endhighlight %}
+
+{% endtabs %}
 
 N> Ripple Effect support has not been provided for UWP and WPF Platform.
 

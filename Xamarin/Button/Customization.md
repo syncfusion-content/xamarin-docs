@@ -516,4 +516,12 @@ N> Shadow support has not been provided for UWP Platform.
 
 ![ShadowImage](images/Xamarin_Forms_Shadow.png)
 
+## Ripple Effect
+
+The button control provides Ripple effect support. To enable the Ripple effect, set the [`EnableRippleEffect`] property to true.
+
+N> Ripple Effect support has not been provided for UWP and WPF Platform.
+
 The complete customization sample:[Customization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Customization-1070507783)
+
+

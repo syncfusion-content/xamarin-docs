@@ -7,7 +7,7 @@ control: sfbutton
 documentation: ug
 ---
 
-# Customization
+# Customization in Xamarin
 
 The button control supports to customize the border color, image width, corner radius, background color, and more. The button control can be customized using the following properties:
 

@@ -3340,7 +3340,7 @@ chart.Series.Add(waterfallSeries);
 
 ## Type
 
-The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation`, and `StandardErrors`. The default value of this property is [`Fixed`].For all types, You have to set the values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
+The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation`, and `StandardErrors`. The default value of this property is [`Fixed`]. For all types, You have to set the values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
 
 ### Fixed
 
@@ -3377,7 +3377,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endhighlight %}
 
- ### Percentage
+### Percentage
 
 {% tabs %}
 

@@ -1289,7 +1289,6 @@ The Median values of given data set is viewed by enabling the [`ShowMedian`] pro
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
 							   YBindingPath="Ages" 
-							   BoxPlotMode="Inclusive" 
 							   ShowMedian="True" 
 							   />
 
@@ -1307,7 +1306,6 @@ BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
 	ItemsSource = Data,
 	XBindingPath = "Department",
 	YBindingPath = "Ages",
-	BoxPlotMode = BoxPlotMode.Inclusive,
 	ShowMedian = true
 } 
 chart.Series.Add(boxPlotSeries);
@@ -1329,8 +1327,6 @@ The following code shows how to set the [`SymbolType`] value as [`Cross`].
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
 							   YBindingPath="Ages" 
-							   BoxPlotMode="Inclusive" 
-							   ShowMedian="True" 
 							   SymbolType="Cross"
 							   />
 
@@ -1348,8 +1344,6 @@ BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
 	ItemsSource = Data,
 	XBindingPath = "Department",
 	YBindingPath = "Ages",
-	BoxPlotMode = BoxPlotMode.Inclusive,
-	ShowMedian = true,
 	SymbolType = ChartSymbolType.Cross
 } 
 chart.Series.Add(boxPlotSeries);

@@ -173,7 +173,7 @@ this.Content = richtexteditor;
 
 ## DefaultFontSize
 
-The SfRichTextEditor provides support to modify the default font size used in the Rich text editor control.The default font size of the Rich Text Editor can be changed using the FontSize property.
+The SfRichTextEditor provides support to modify the default font size used in the Rich text editor control.The default font size of the Rich Text Editor can be changed using the DefaultFontSize property.
 
 {% tabs %} 
 
@@ -181,7 +181,7 @@ The SfRichTextEditor provides support to modify the default font size used in th
 
 <ContentPage.Content>
     <StackLayout>
-        <richtexteditor:SfRichTextEditor x:Name="rte" FontSize="20" VerticalOptions="FillAndExpand"/>
+        <richtexteditor:SfRichTextEditor x:Name="rte" DefaultFontSize="20" VerticalOptions="FillAndExpand"/>
     </StackLayout>
 </ContentPage.Content>
  
@@ -191,7 +191,7 @@ The SfRichTextEditor provides support to modify the default font size used in th
 richtexteditor = new SfRichTextEditor()
 {
     VerticalOptions = LayoutOptions.FillAndExpand,
-    Fontsize = "20"
+    DefaultFontSize = "20"
 };
 this.Content = richtexteditor;
 {% endhighlight %}
@@ -199,7 +199,7 @@ this.Content = richtexteditor;
 
 ## DefaultFontColor
 
-The SfRichTextEditor provides support to modify the default font color used in the Rich text editor control.The default font color of the Rich Text Editor can be changed using the FontColor property.
+The SfRichTextEditor provides support to modify the default font color used in the Rich text editor control.The default font color of the Rich Text Editor can be changed using the DefaultFontColor property.
 
 {% tabs %} 
 
@@ -207,7 +207,7 @@ The SfRichTextEditor provides support to modify the default font color used in t
 
 <ContentPage.Content>
     <StackLayout>
-        <richtexteditor:SfRichTextEditor x:Name="rte" FontColor="Blue" VerticalOptions="FillAndExpand"/>
+        <richtexteditor:SfRichTextEditor x:Name="rte" DefaultFontColor="Blue" VerticalOptions="FillAndExpand"/>
     </StackLayout>
 </ContentPage.Content>
  
@@ -217,7 +217,7 @@ The SfRichTextEditor provides support to modify the default font color used in t
 richtexteditor = new SfRichTextEditor()
 {
     VerticalOptions = LayoutOptions.FillAndExpand,
-    FontColor = "Blue"
+    DefaultFontColor = "Blue"
 };
 this.Content = richtexteditor;
 {% endhighlight %}

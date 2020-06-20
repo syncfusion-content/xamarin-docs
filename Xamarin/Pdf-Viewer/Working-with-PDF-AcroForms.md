@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Filling PDF forms using PDF Viewer Xamarin.Forms | Syncfusion
-description: Filling and signing forms in the PDF document using Syncfusion PDF Viewer Xamarin.Forms.
+description: Describes the filling and signing forms in the PDF document using Syncfusion PDF Viewer Xamarin.Forms.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
@@ -11,7 +11,7 @@ documentation: ug
 
 PDF Viewer supports adding/modifying the existing forms fields content present in the PDF document. By default, it detects the form fields present in the PDF document and enables modifying or filling the values.
 
-N>PDF Viewer supports only Acroforms. PDF documents with XFA form fields cannot be viewed in PDF Viewer.
+N>PDF Viewer supports only Acroform. PDF documents with XFA form fields cannot be viewed in PDF Viewer.
 
 ## How to restrict editing the Acroform field values in the existing PDF document
 

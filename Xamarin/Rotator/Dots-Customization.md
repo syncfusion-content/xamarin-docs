@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization of Dots for Syncfusion Essential Xamarin.Forms SfRotator
-description: How to customize a appearance for Xamarin.Forms SfRotator
+description: Learn about Dots Customization support in Syncfusion Xamarin Rotator (SfRotator) control and more details.
 platform: xamarin 
 control: Rotator 
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Header Positioning for Syncfusion SfTabView Control
-description: Positioning of header in Syncfusion TabView control for Xamarin.Forms platform
+description: Learn about Position of Header support in Syncfusion Xamarin Tabbed View (SfTabView) control and more details.
 platform: Xamarin.Forms
 control: TabView
 documentation: ug

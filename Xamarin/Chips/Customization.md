@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Customization for Syncfusion Essential Xamarin.Forms SfChip.
-description : How to customize the appearance of Xamarin.Forms SfChips.
+title : Customization in Xamarin Chips control | Syncfusion
+description : Learn about Customization support in Syncfusion Xamarin Chips control and more details.
 platform : xamarin
 control : Chips
 documentation : ug
 ---
 
-## Customization of SfChip
+# Customization of SfChip
 
 The chip control supports to customize the background color, border color, close button color, and more. The chip control can be customized using the following properties:
 

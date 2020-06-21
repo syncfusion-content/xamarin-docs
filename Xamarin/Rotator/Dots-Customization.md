@@ -7,7 +7,7 @@ control: Rotator
 documentation: ug
 ---
 
-# Customization
+# Customization in Xamarin Rotator (SfRotator)
 
 The Rotator control supports to customize the dots border color, selected dots color and unselected dots color.
 

@@ -1,0 +1,24 @@
+---
+
+layout: post
+title: Overview of Syncfusion SfSignaturePad control for Xamarin.Forms
+description: This section explains the key features and quick overview about Syncfusion SfSignaturePad control for Xamarin.Forms
+platform: xamarin
+control: SfSignaturePad
+documentation: ug
+
+---
+
+# Overview
+
+SignaturePad is used for taking signatures in a digital way, i.e., through electronic devices like mobiles. This is a digital signature used on the docs like PDF, and Word. Now, we will see how to develop a SignaturePad.
+
+## Key features
+
+**StrokeColor**: Gets or Sets the stroke color for sign.
+
+**MinimumStrokeWidth**: The minimum width of the stroke to be drawn.
+
+**MaximumStrokeWidth**: The maximum width of the stroke to be drawn.
+
+![Xamarin signature view overview](images/overview.png)

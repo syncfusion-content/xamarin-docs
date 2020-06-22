@@ -11,9 +11,9 @@ documentation: ug
 
 # Export types in SfSignaturePad
 
-You can export the signature as a Image. You have to manually call `Save` method to export the sign as image.
+You can export the signature as an image. You have to manually call `Save` method to export the sign as an image.
 
-`Clear` method is used to clear the sign on the view.
+The `Clear` method is used to clear the sign on the view.
 
 {% tabs %}
 

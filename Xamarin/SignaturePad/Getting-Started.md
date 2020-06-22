@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfSignaturePad control for Xamarin.Forms
+title: Getting Started with Syncfusion SfSignaturePad control for Xamarin.Forms platforms
 description: This section explains the key features and quick overview about Syncfusion SfSignaturePad control for Xamarin.Forms
 platform: xamarin
 control: SfBadgeView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfSignaturePad
 
 This section explains the steps required to configure the [`SfSignaturePad`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.SfBadgeView.html) control and customize its elements.
 
@@ -124,7 +124,7 @@ Content = sign;
 
 {% endtabs %}
 
-## Creatting SfSignaturePad control
+## Creating SfSignaturePad control
 
 The SfSignaturePad control is configured entirely in C# code or in XAML markup. The following steps explain how to create a SfSignaturePad and configure its elements.
 

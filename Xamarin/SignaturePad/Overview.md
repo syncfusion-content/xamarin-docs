@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Overview
+# Overview with SignaturePad
 
 SignaturePad is used for taking signatures in a digital way, i.e., through electronic devices like mobiles. This is a digital signature used on the docs like PDF, and Word.
 
@@ -20,5 +20,3 @@ SignaturePad is used for taking signatures in a digital way, i.e., through elect
 **MinimumStrokeWidth**: The minimum width of the stroke to be drawn.
 
 **MaximumStrokeWidth**: The maximum width of the stroke to be drawn.
-
-![Xamarin signature view overview](images/overview.png)

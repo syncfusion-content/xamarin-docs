@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Syncfusion SfSignaturePad control for Xamarin.Forms platforms
 description: This section explains the key features and quick overview about Syncfusion SfSignaturePad control for Xamarin.Forms
 platform: xamarin
-control: SfBadgeView
+control: SfSignaturePad
 documentation: ug
 ---
 

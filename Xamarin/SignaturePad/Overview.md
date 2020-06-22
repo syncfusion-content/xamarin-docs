@@ -11,7 +11,7 @@ documentation: ug
 
 # Overview
 
-SignaturePad is used for taking signatures in a digital way, i.e., through electronic devices like mobiles. This is a digital signature used on the docs like PDF, and Word. Now, we will see how to develop a SignaturePad.
+SignaturePad is used for taking signatures in a digital way, i.e., through electronic devices like mobiles. This is a digital signature used on the docs like PDF, and Word.
 
 ## Key features
 

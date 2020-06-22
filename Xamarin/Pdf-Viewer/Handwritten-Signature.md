@@ -233,4 +233,29 @@ private void PdfViewer_InkSelected(object sender, Syncfusion.SfPdfViewer.XForms.
 {% endhighlight %}
 {% endtabs %}
  
+## How to enable or disable handwritten signature interaction?
 
+The interaction operation can be enabled or disabled for handwritten signature alone by setting the `IsLocked` API to `false` or `true` respectively.
+
+For example, the following code disables the interaction operations for all handwritten signatures in the PDF. But other annotation types can be selected, moved, resized, or removed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the handwritten signature annotation interaction
+pdfViewerControl.AnnotationSettings.HandwrittenSignature.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+The interaction with handwritten signatures will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code does not allow the interactions with handwritten signatures, although the `IsLocked` property of the handwritten signature is set to `false`. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disables the handwritten signature interaction, though its 'IsLocked' property is set to ‘false’ 
+pdfViewerControl.AnnotationSettings.IsLocked = true;
+pdfViewerControl.AnnotationSettings.HandwrittenSignature.IsLocked = false;
+
+{% endhighlight %}
+{% endtabs %}

@@ -154,3 +154,30 @@ pdfViewer.StampAnnotationRemoved += PdfViewer_StampAnnotationRemoved;
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to enable or disable custom stamp annotation interaction?
+
+The interaction operation can be enabled or disabled for custom stamp annotation alone by setting the `IsLocked` API to `false` or `true` respectively.
+
+For example, the following code disables the interaction operations for all custom stamp annotations in the PDF. But other annotation types can be selected, moved, resized, or removed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the custom stamp annotation interaction
+pdfViewerControl.AnnotationSettings.Stamp.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+The interaction with custom stamp annotation types will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code does not allow the interactions with custom stamp annotations, although the `IsLocked` property of the custom stamp annotation is set to `false`. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disables the custom stamp annotation interaction, though its 'IsLocked' property is set to ‘false’ 
+pdfViewerControl.AnnotationSettings.IsLocked = true;
+pdfViewerControl.AnnotationSettings.Stamp.IsLocked = false;
+
+{% endhighlight %}
+{% endtabs %}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfSignaturePad control for Xamarin.Forms platforms
+title: Getting Started with Syncfusion SfSignaturePad for Xamarin.Forms
 description: This section explains the key features and quick overview about Syncfusion SfSignaturePad control for Xamarin.Forms
 platform: xamarin
 control: SfSignaturePad
@@ -49,9 +49,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
-I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
-
-## Launching the application on each platform with badge view
+## Launching the application on each platform with Signature pad
 
 To use the SignaturePad in an application, each platform requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
 
@@ -59,7 +57,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 
-To launch the badge view in iOS, call the SfSignaturePadRenderer.Init() in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
+To launch the signature pad in iOS, call the SfSignaturePadRenderer.Init() in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
 
 {% highlight C# %} 
 

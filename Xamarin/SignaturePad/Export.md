@@ -9,7 +9,7 @@ documentation: ug
 
 ---
 
-# Export types
+# Export types in SfSignaturePad
 
 You can export the signature as a Image. You have to manually call `Save` method to export the sign as image.
 

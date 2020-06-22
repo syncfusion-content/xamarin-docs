@@ -11,11 +11,11 @@ documentation: ug
 
 # SfSignaturePad Customization
 
-The signaturepad control supports to customize the stroke color, stroke width using the following properties:
+The signature pad control supports to customize the stroke color, stroke width using the following properties:
 
 ## Stoke Color
 
-The stroke color of the signature can be customized using the [`Stroke`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~Stroke.html)
+The stroke color of the signature can be customized using the [`Stroke`]
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with SfSignaturePad
 
-This section explains the steps required to configure the [`SfSignaturePad`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.SfBadgeView.html) control and customize its elements.
+This section explains the steps required to configure the [`SfSignaturePad`].
 
 ## Adding SfSignaturePad reference
 

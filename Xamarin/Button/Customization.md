@@ -518,7 +518,7 @@ N> Shadow support has not been provided for UWP Platform.
 
 ## Ripple Effect
 
-The button control provides Ripple effect support. To enable the Ripple effect, set the [`EnableRippleEffect`] property to true. By default,[`EnableRippleEffect`] value is true.
+The button control provides ripple effect support. To enable the Ripple effect, set the [`EnableRippleEffect`] property to true. By default, [`EnableRippleEffect`] value is true.
 
 {% tabs %}
 

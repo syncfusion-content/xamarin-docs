@@ -1211,8 +1211,7 @@ BoxAndWhiskerSeries plots a combination of rectangles and lines to show the dist
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
 							   YBindingPath="Ages" 
-							   ShowMedian="True"
-							   />
+							   ShowMedian="True" />
 
 </chart:SfChart>
 
@@ -1234,7 +1233,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxPlotMode Exclsuive type support for BoxAndWhisker series in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
+![BoxAndWhiskerSeries chart type in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
 
 ### Customize the series box mode
 
@@ -1244,7 +1243,7 @@ The series box plotting mode can be changed using the [`BoxPlotMode`] property o
 * [`Inclusive`] - The quartile values are calculated using the formula (N−1) * P (N count, P percentile), and their index value starts from 0 in the list.
 * [`Normal`] - The quartile values are calculated by splitting the list and getting the median values.
 
-By default,[`BoxPlotMode`] value is [`Exclusive`]. 
+By default, [`BoxPlotMode`] value is [`Exclusive`]. 
 
 The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
 
@@ -1258,8 +1257,7 @@ The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
 							   YBindingPath="Ages" 
 							   BoxPlotMode="Inclusive"
-							   ShowMedian="True" 
-							   />
+							   ShowMedian="True" />
 
 </chart:SfChart>
 
@@ -1282,7 +1280,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxPlotMode Inclusive type support for BoxAndWhisker series in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Inclusive.png)
+![BoxPlotMode support for BoxAndWhiskerSeries in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Inclusive.png)
 
 ### ShowMedian
 
@@ -1297,8 +1295,7 @@ The Median values of given data set is viewed by enabling the [`ShowMedian`] pro
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
 							   YBindingPath="Ages" 
-							   ShowMedian="True" 
-							   />
+							   ShowMedian="True" />
 
 </chart:SfChart>
 
@@ -1320,11 +1317,11 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![ShowMedian support for BoxAndWhisker series in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
+![ShowMedian support for BoxAndWhiskerSeries in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
 
 ### SymbolType
 
-The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default,[`SymbolType`] value is [`Ellipse`].
+The [`SymbolType`] is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`] value is [`Ellipse`].
 
 The following code shows how to set the [`SymbolType`] value as [`Cross`].
 
@@ -1338,8 +1335,7 @@ The following code shows how to set the [`SymbolType`] value as [`Cross`].
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
 							   YBindingPath="Ages" 
 							   ShowMedian="True"
-							   SymbolType="Cross"
-							   />
+							   SymbolType="Cross" />
 
 </chart:SfChart>
 
@@ -1362,7 +1358,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![SymbolType support for BoxAndWhisker series in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Symbol.png)
+![Outlier for BoxAndWhiskerSeries in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Symbol.png)
 
 ## Bar Chart
 

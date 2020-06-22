@@ -1211,6 +1211,7 @@ BoxAndWhiskerSeries plots a combination of rectangles and lines to show the dist
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
 							   YBindingPath="Ages" 
+							   ShowMedian="True"
 							   />
 
 </chart:SfChart>
@@ -1226,7 +1227,8 @@ BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
 { 
 	ItemsSource = Data, 
 	XBindingPath = "Department", 
-	YBindingPath = "Ages" 
+	YBindingPath = "Ages",
+	ShowMedian = true;
 };
 chart.Series.Add(boxPlotSeries);
 
@@ -1255,7 +1257,8 @@ The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
 							   YBindingPath="Ages" 
-							   BoxPlotMode="Inclusive" 
+							   BoxPlotMode="Inclusive"
+							   ShowMedian="True" 
 							   />
 
 </chart:SfChart>
@@ -1272,7 +1275,8 @@ BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
 	ItemsSource = Data, 
 	XBindingPath = "Department", 
 	YBindingPath = "Ages",
-	BoxPlotMode = BoxPlotMode.Inclusive
+	BoxPlotMode = BoxPlotMode.Inclusive,
+	ShowMedian = true
 };
 chart.Series.Add(boxPlotSeries);
 
@@ -1282,7 +1286,7 @@ chart.Series.Add(boxPlotSeries);
 
 ### ShowMedian
 
-The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`BoxAndWhiskerSeries`]. The following code demonstrates how to enable the [`ShowMedian`] property.
+The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`BoxAndWhiskerSeries`].By default,[`ShowMedian`] value is false. The following code demonstrates how to enable the [`ShowMedian`] property.
 
 {% tab %}
 
@@ -1333,6 +1337,7 @@ The following code shows how to set the [`SymbolType`] value as [`Cross`].
 
     <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
 							   YBindingPath="Ages" 
+							   ShowMedian="True"
 							   SymbolType="Cross"
 							   />
 
@@ -1350,6 +1355,7 @@ BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
 	ItemsSource = Data,
 	XBindingPath = "Department",
 	YBindingPath = "Ages",
+	ShowMedian = true,
 	SymbolType = ChartSymbolType.Cross
 } 
 chart.Series.Add(boxPlotSeries);

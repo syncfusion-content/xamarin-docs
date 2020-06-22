@@ -7,7 +7,7 @@ control: sfbutton
 documentation: ug
 ---
 
-# Customization in Xamarin
+# Customization in Xamarin Buttons(SfButton)
 
 The button control supports to customize the border color, image width, corner radius, background color, and more. The button control can be customized using the following properties:
 
@@ -524,8 +524,7 @@ The button control provides Ripple effect support. To enable the Ripple effect, 
 
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" EnableRippleEffect="false">
-</button:SfButton>
+<button:SfButton x:Name="button" Text="Button" EnableRippleEffect="false" />
 
 {% endhighlight %}
 

@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Customization in Xamarin Chips control | Syncfusion
-description : Learn about Customization support in Syncfusion Xamarin Chips control and more details.
-platform : xamarin
-control : Chips
-documentation : ug
+layout: post
+title: Customization in Xamarin Chips control | Syncfusion
+description: Learn about Customization support in Syncfusion Xamarin Chips control and more details.
+platform: xamarin
+control: Chips
+documentation: ug
 ---
 
 # Customization of SfChip

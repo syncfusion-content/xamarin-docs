@@ -7,9 +7,9 @@ control: SfAvatarView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started With Xamarin AvatarView (SfAvatarView)
 
-## Getting started with Xamarin Avatar View (SfAvatarView)
+## Getting started with SfAvatarView
 
 This section explains the steps required to work with the SfAvatarView control for Xamarin.Forms.
 

@@ -11,11 +11,11 @@ documentation: ug
 
 # SfSignaturePad Customization
 
-The signature pad control supports to customize the stroke color, stroke width using the following properties:
+The `SignaturePad` control supports to customize the stroke color and stroke width using the following properties:
 
-## Stoke Color
+## Stroke color
 
-The stroke color of the signature can be customized using the [`Stroke`]
+The stroke color of the signature can be customized using the [`Stroke`].
 
 {% tabs %}
 
@@ -50,10 +50,10 @@ The stroke color of the signature can be customized using the [`Stroke`]
 
 ![stroke color](images/StrokeColor.png)
 
-## Stroke Width
+## Stroke width
 
-The stroke width of the signature can be customized using `MinimumStrokeWidth` & `MaximumStrokeWidth` properties, respectively.
-N> The default value of MinimumStrokeWidth is 0.08 and MaximumStrokeWidth is 5.
+The stroke width of the signature can be customized using the `MinimumStrokeWidth` and `MaximumStrokeWidth` properties, respectively.
+N> The default value of `MinimumStrokeWidth` is 0.08 and `MaximumStrokeWidth` is 5.
 
 {% tabs %}
 

@@ -1234,7 +1234,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhisker chart type in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Exclusive.png)
+![BoxAndWhisker chart type in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
 
 ### Customize the series box mode
 
@@ -1320,7 +1320,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endhighlight %}
 
-![BoxAndWhisker chart type in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Median.png)
+![BoxAndWhisker chart type in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
 
 ### SymbolType
 

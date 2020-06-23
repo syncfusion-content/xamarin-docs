@@ -11,7 +11,7 @@ documentation: ug
 
 # Overview with SignaturePad
 
-`SignaturePad` is used for taking signatures in a digital way, i.e. using the electronic devices like mobiles. This is a digital signature used on the docs like PDF and Word.
+The Xamarin.Forms `SignaturePad` control is used to capture, save, or export signature in a Xamarin.Forms application. This control will display the signature path that varies based on writing speed, which makes the user to feel the real pen effect.
 
 ## Key features
 

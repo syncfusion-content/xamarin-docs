@@ -77,7 +77,7 @@ To launch the `SignaturePad` in iOS, call the `SfSignaturePadRenderer.Init()` in
 The Android platform does not require any additional configurations to render the `SfSignaturePad`.
 
 N> `SignaturePad` support has not been provided for UWP Platform.
-N> User have to install the [SkiaSharp.Views.Form](https://www.nuget.org/packages/SkiaSharp.Views.Forms/2.80.0-preview.14) for `SignaturePad`.
+N> User have to install the `SkiaSharp.Views.Form` [Nuget](https://www.nuget.org/packages/SkiaSharp.Views.Forms/2.80.0-preview.14) for `SignaturePad`.
 
 ## Adding a namespace
 
@@ -142,7 +142,7 @@ The `SfSignaturePad` control is configured entirely in C# code or in XAML markup
     <StackLayout Padding="10,40,10,10">
         <Label Text="Input Your Signature"/>
         <Frame>
-            <sign:SfSignaturePad HeightRequest="100"/>
+            <sign:SfSignaturePad HeightRequest="250"/>
         </Frame>
     </StackLayout>
 
@@ -172,7 +172,7 @@ namespace SfSignaturePad1
             Label text = new Label() { Text = "Input Your Signature" };
             Frame frame = new Frame();
             SfSignaturePad sign = new SfSignaturePad();
-            sign.HeightRequest = 100;
+            sign.HeightRequest = 250;
             frame.Content = sign;
             stack.Children.Add(text);
             stack.Children.Add(frame);

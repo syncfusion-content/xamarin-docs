@@ -25,7 +25,7 @@ The `Clear` method is used to clear the sign on the view.
         <Button Text="Save" x:Name="save" Clicked="save_Clicked"/>
         <Frame>
             <sign:SfSignaturePad x:Name="signaturePad"
-                                 HeightRequest="100" 
+                                 HeightRequest="250" 
                                  StrokeColor="Red"
                                  MinimumStrokeWidth="1" 
                                  MaximumStrokeWidth="4"/>

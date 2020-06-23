@@ -20,3 +20,5 @@ SignaturePad is used for taking signatures in a digital way, i.e., through elect
 **MinimumStrokeWidth**: The minimum width of the stroke to be drawn.
 
 **MaximumStrokeWidth**: The maximum width of the stroke to be drawn.
+
+![SignaturePad Overview](images/overview.gif)

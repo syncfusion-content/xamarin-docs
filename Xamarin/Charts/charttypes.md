@@ -3394,12 +3394,13 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 	HorizontalErrorValue = 0.5,
 	VerticalErrorValue = 4
 };
+chart.Series.Add(errorBarSeries);
 
 {% endhighlight %}
 
 {% endtabs %}
 
-![Error Bar chart type in Xamarin.Forms](charttypes_images/ErrorBar.png)
+![ErrorBar chart type in Xamarin.Forms](charttypes_images/ErrorBar.png)
 
 ## Type
 
@@ -3442,7 +3443,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endtabs %}
 
-![ErrorBarType support in Xamarin.Forms Chart](charttypes_images/ErrorBar_Fixed.png)
+![Fixed type for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Fixed.png)
 
 ### Percentage
 
@@ -3482,7 +3483,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endtabs %}
 
-![ErrorBarType support in Xamarin.Forms Chart](charttypes_images/ErrorBar_Percentage.png)
+![Percentage type for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Percentage.png)
 
 ### Standard Deviation
 
@@ -3493,7 +3494,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 <chart:SfChart>
 ...
      
-<chart:ErrorBarSeries ItemsSource = "{Binding  CarDistributionDetails}"
+    <chart:ErrorBarSeries ItemsSource = "{Binding  CarDistributionDetails}"
 	XBindingPath = "Country" 
 	YBindingPath = "Value" 
 	Type = ErrorBarType.StandardDeviation
@@ -3522,7 +3523,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endtabs %}
 
-![ErrorBarType support in Xamarin.Forms Chart](charttypes_images/ErrorBar_StandardDeviation.png)
+![StandardDeviation type for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_StandardDeviation.png)
 
 ### Standard Errors
 
@@ -3562,7 +3563,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endtabs %}
 
-![ErrorBarType support in Xamarin.Forms Chart](charttypes_images/ErrorBar_StandardErrors.png)
+![StandardErrors type for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_StandardErrors.png)
 
 ### Custom
 
@@ -3604,7 +3605,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endtabs %}
 
-![ErrorBarType support in Xamarin.Forms Chart](charttypes_images/ErrorBar_Custom.png)
+![Custom type for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Custom.png)
 
 ## Mode
 
@@ -3650,7 +3651,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endtabs %}
 
-![ErrorBarMode support in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode-Both.png)
+![ErrorBarMode support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode-Both.png)
 
 ### Horizontal
 
@@ -3692,7 +3693,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endtabs %}
 
-![ErrorBarMode support in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode-Horizontal.png)
+![ErrorBarMode Horizontal support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode-Horizontal.png)
 
 ### Vertical
 
@@ -3734,7 +3735,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endtabs %}
 
-![ErrorBarMode support in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode-Vertical.png)
+![ErrorBarMode Vertical support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode-Vertical.png)
 
 ## Direction
 
@@ -3780,7 +3781,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endtabs %}
 
-![ErrorBarDirection support in Xamarin.Forms Chart](charttypes_images/ErrorBar_Direction.png)
+![ErrorBarDirection support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Direction.png)
 
 ## Customization
 
@@ -3852,4 +3853,4 @@ You can customize the [`ErrorBarSeries`] with the following style properties.
 
 {% endtabs %}
 
-![Customizing the appearance of ErrorBarSeries in Xamarin.Forms Chart](ChartTypes_images/ErrorBar_LineStyle.png)
+![Customization of ErrorBarSeries in Xamarin.Forms Chart](ChartTypes_images/ErrorBar_LineStyle.png)

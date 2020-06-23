@@ -65,7 +65,7 @@ N> The default value of `MinimumStrokeWidth` is 0.08 and `MaximumStrokeWidth` is
         <Frame>
             <sign:SfSignaturePad HeightRequest="250" 
                                  MinimumStrokeWidth="1" 
-                                 MaximumStrokeWidth="4"/>
+                                 MaximumStrokeWidth="15"/>
         </Frame>
     </StackLayout>
 

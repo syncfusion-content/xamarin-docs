@@ -3342,6 +3342,70 @@ chart.Series.Add(waterfallSeries);
 
 [`ErrorBarSeries`] is graphical representations of the variations of data and used on graphs to indicate the errors or uncertainty in a reported measurement. To render a error bar chart, create an instance of [`ErrorBarSeries`] and add to the [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~Series.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
 
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+    <chart:ScatterSeries ScatterHeight="20"
+	ScatterWidth="20"
+	ShapeType="Ellipse"
+	ItemsSource ="{Binding CarDistributionDetails}" 
+	XBindingPath="Country"
+	YBindingPath="Value">
+	<chart:ScatterSeries.ColorModel>
+		<chart:ChartColorModel Palette="Natural"/>
+        </chart:ScatterSeries.ColorModel>
+	</chart:ScatterSeries>	
+
+    <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}"
+	XBindingPath = "Country"
+        YBindingPath = "Value"
+	Type = ErrorBarType.Fixed  
+	Mode = ErrorBarMode.Both
+	HorizontalErrorValue = 0.5
+        VerticalErrorValue = 4/>
+
+</chart:SfChart>					  					  
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+ScatterSeries scatterSeries = new ScatterSeries ()
+{ 
+	ItemsSource = Data, 	
+	ScatterHeight = 20, 
+	ScatterWidth = 20, 
+	ShapeType = ChartScatterShapeType.Ellipse,
+	XBindingPath = "Year", 
+	YBindingPath = "Value" 
+};
+scatterSeries.ColorModel.Palette = ChartColorPalette.Natural;
+chart.Series.Add(scatterSeries);
+
+ErrorBarSeries errorBarSeries = new ErrorBarSeries()
+{
+	ItemsSource = CarDistributionDetails,
+	XBindingPath = "Country",
+	YBindingPath = "Value",
+        Type = ErrorBarType.Fixed, 
+	Mode = ErrorBarMode.Both,
+	HorizontalErrorValue = 0.5,
+	VerticalErrorValue = 4
+};
+chart.Series.Add(errorBarSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ErrorBar chart type in Xamarin.Forms](charttypes_images/ErrorBar.png)
+
 ## Type
 
 The [`Type`] property is used to define the error bar type value in `Fixed`, `Custom`, `Percentage`, `StandardDeviation`, and `StandardErrors`. The default value of this property is [`Fixed`]. For all types, You have to set the values for [`HorizontalErrorValue`] and [`VerticalErrorValue`] except [`Custom`].
@@ -3381,6 +3445,10 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endhighlight %}
 
+{% endtabs %}
+
+![Fixed type for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Fixed.png)
+
 ### Percentage
 
 {% tabs %}
@@ -3417,6 +3485,10 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endhighlight %}
 
+{% endtabs %}
+
+![Percentage type for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Percentage.png)
+
 ### Standard Deviation
 
 {% tabs %}
@@ -3426,12 +3498,12 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 <chart:SfChart>
 ...
      
-<chart:ErrorBarSeries ItemsSource = "{Binding  CarDistributionDetails}"
+    <chart:ErrorBarSeries ItemsSource = "{Binding  CarDistributionDetails}"
 	XBindingPath = "Country" 
 	YBindingPath = "Value" 
 	Type = ErrorBarType.StandardDeviation
 	Mode = ErrorBarMode.Both
-	HorizontalErrorValue = 0.5
+	HorizontalErrorValue = 1
     VerticalErrorValue = 4/>
 
 </chart:SfChart>
@@ -3452,6 +3524,10 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 };
 
 {% endhighlight %}
+
+{% endtabs %}
+
+![StandardDeviation type for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_StandardDeviation.png)
 
 ### Standard Errors
 
@@ -3488,6 +3564,10 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 };
 
 {% endhighlight %}
+
+{% endtabs %}
+
+![StandardErrors type for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_StandardErrors.png)
 
 ### Custom
 
@@ -3526,6 +3606,10 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 };
 
 {% endhighlight %}
+
+{% endtabs %}
+
+![Custom type for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Custom.png)
 
 ## Mode
 
@@ -3569,6 +3653,10 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endhighlight %}
 
+{% endtabs %}
+
+![ErrorBarMode support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode-Both.png)
+
 ### Horizontal
 
 To display horizontal error value only, you can set the [`Mode`] as `Horizontal` as shown in the following code.
@@ -3607,6 +3695,10 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endhighlight %}
 
+{% endtabs %}
+
+![ErrorBarMode Horizontal support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode-Horizontal.png)
+
 ### Vertical
 
 To display vertical error value only, you can set the [`Mode`] as `Vertical` as shown in the following code.
@@ -3644,6 +3736,10 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 };
 
 {% endhighlight %}
+
+{% endtabs %}
+
+![ErrorBarMode Vertical support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode-Vertical.png)
 
 ## Direction
 
@@ -3686,6 +3782,10 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 };
 
 {% endhighlight %}
+
+{% endtabs %}
+
+![ErrorBarDirection support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Direction.png)
 
 ## Customization
 
@@ -3754,3 +3854,7 @@ You can customize the [`ErrorBarSeries`] with the following style properties.
  errorBarSeries.VerticalCapLineStyle.IsVisible = true;
 
 {% endhighlight %}
+
+{% endtabs %}
+
+![Customization of ErrorBarSeries in Xamarin.Forms Chart](ChartTypes_images/ErrorBar_LineStyle.png)

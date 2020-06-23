@@ -83,6 +83,46 @@ listView.IsScrollingEnabled = false;
 
 N> ListView's scrolling will not be enabled when `IsScrollingEnabled` is `false`. To enable scrolling, load ListView inside `ScrollView`.
 
+## GetScrollView Method
+
+You can get the scroll view by using the [GetScrollView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Control.Helpers.SfListViewHelper~GetScrollView.html) method. It is a Helper method to get the Syncfusion.ListView.XForms.ExtendedScrollView class.
+
+{% tabs %}
+{% highlight c# %}
+using Syncfusion.ListView.XForms.Control.Helpers;
+public partial class MainPage : ContentPage
+{
+    ExtendedScrollView scrollView;
+
+    public MainPage()
+    {
+        InitializeComponent();
+        scrollView = listView.GetScrollView();
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+## GetVisualContainer Method
+
+You can get the item elements holded by a scrollable visual container using the [GetVisualContainer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Control.Helpers.SfListViewHelper~GetVisualContainer.html method. It is a helper method of SfListView control.
+
+{% tabs %}
+{% highlight c# %}
+using Syncfusion.ListView.XForms.Control.Helpers;
+public partial class MainPage : ContentPage
+{
+    VisualContainer visualContainer;
+	
+    public MainPage()
+    {
+        InitializeComponent();
+        visualContainer = listView.GetVisualContainer();
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Identifying scroll state changes
 
 The SfListView will notify the scrolling state changes by using the [ScrollStateChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollStateChanged_EV.html) event.

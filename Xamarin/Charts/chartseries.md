@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Multiple series in Syncfusion.Xamarin.Forms chart
-description: Learn how to render different types of series in a chart.
+description: Learn how to render different types of series in a chart
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Chart Series
+# Chart Series in Xamarin
 
 [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html) is the visual representation of the data. [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) offers many types of series ranging from line series to financial series like HiLo and Candle. Based on your requirements and specifications, any type of Series can be added for data visualization.
  

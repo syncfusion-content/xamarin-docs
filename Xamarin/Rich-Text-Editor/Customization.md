@@ -103,7 +103,7 @@ this.Content = richtexteditor;
 
 ## Placeholder Customization
 
-The placeholder style can be customized using the properties PlaceHolderFontColor, PlaceHolderFontSize and PlaceHolderFontFamily.
+The placeholder style can be customized using the properties PlaceHolderFontColor, PlaceHolderFontSize, and PlaceHolderFontFamily.
 
 N> The PlaceHolderFontFamily property accepts fonts as Embedded source, System Font Name, or Base64 TTF string.
 

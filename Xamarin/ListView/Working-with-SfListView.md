@@ -1157,7 +1157,7 @@ protected override void OnDisappearing()
 
 ## ForceUpdateItemSize Method
 
-You can refresh a particular item or entire listView items by using the [ForceUpdateItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ForceUpdateItemSize.html) method. The `ForceUpdateItemSize` is a depricated method instead of this you can use the [RefreshListViewItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshListViewItem.html) method.
+You can refresh a particular item or entire listView items by using the [ForceUpdateItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ForceUpdateItemSize.html) method. The `ForceUpdateItemSize` is a deprecated method instead of this you can use the [RefreshListViewItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshListViewItem.html) method.
  
 {% tabs %}
 {% highlight c# %}

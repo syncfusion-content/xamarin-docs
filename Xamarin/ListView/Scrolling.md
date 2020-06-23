@@ -105,7 +105,7 @@ public partial class MainPage : ContentPage
 
 ## GetVisualContainer Method
 
-You can get the item elements holded by a scrollable visual container using the [GetVisualContainer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Control.Helpers.SfListViewHelper~GetVisualContainer.html method. It is a helper method of SfListView control.
+You can get the item elements hold by a scrollable visual container using the [GetVisualContainer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Control.Helpers.SfListViewHelper~GetVisualContainer.html method. It is a helper method of SfListView control.
 
 {% tabs %}
 {% highlight c# %}

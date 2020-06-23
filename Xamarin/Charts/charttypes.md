@@ -3353,7 +3353,7 @@ chart.Series.Add(waterfallSeries);
 	YBindingPath="Value">
 	<chart:ScatterSeries.ColorModel>
 		<chart:ChartColorModel Palette="Natural"/>
-    </chart:ScatterSeries.ColorModel>
+        </chart:ScatterSeries.ColorModel>
 	</chart:ScatterSeries>	
 
     <chart:ErrorBarSeries ItemsSource = "{Binding CarDistributionDetails}"

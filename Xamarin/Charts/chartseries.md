@@ -430,3 +430,14 @@ int index = series.GetDataPointIndex(400, 400);
 {% endhighlight %}
 
 N> The output of this method will be -1 if there is no data point under the given x and y positions.
+
+### Animate()
+
+The [`Animate`] method is used to animate series when items source is dynamically changed.
+
+{% highlight c# %}
+
+ColumnSeries series = new ColumnSeries();
+series.Animate();
+
+{% endhighlight %}

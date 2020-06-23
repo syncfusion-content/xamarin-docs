@@ -550,3 +550,30 @@ private void PdfViewer_AnnotationMovedOrResized(object sender, AnnotationMovedOr
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to enable or disable ink annotation interaction?
+
+The interaction operation can be enabled or disabled for ink annotation alone by setting the `IsLocked` API to `false` or `true` respectively.
+
+For example, the following code disables the interaction operations for all ink annotations in the PDF. But other annotation types can be selected, moved, resized, or removed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the ink annotation interaction
+pdfViewerControl.AnnotationSettings.Ink.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+The interaction with ink annotation types will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code does not allow the interactions with ink annotations, although the `IsLocked` property of the ink annotation is set to `false`. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disables the ink annotation interaction, though its 'IsLocked' property is set to ‘false’ 
+pdfViewerControl.AnnotationSettings.IsLocked = true;
+pdfViewerControl.AnnotationSettings.Ink.IsLocked = false;
+
+{% endhighlight %}
+{% endtabs %}

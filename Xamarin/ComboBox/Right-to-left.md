@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Right-to-left | SfComboBox | Xamarin.Forms | Syncfusion
-description: Describes how ComboBox works on right-to-left localization.
+description: This section will explain how to use the Xamarin.Forms ComboBox works on right-to-left localization.
 platform: xamarin
 control: SfComboBox
 documentation: UG
 ---
 
-# Right to left(RTL)
+# SfComboBox supports Right to left(RTL)
 
 SfComboBox supports to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
 

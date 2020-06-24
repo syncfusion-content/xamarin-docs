@@ -6,9 +6,9 @@ platform: Xamarin
 control: SfNavigationDrawer
 documentation: ug
 ---
-# Animation duration
+# Animation duration in Xamarin NavigationDrawer (SfNavigationDrawer)
 
-## Animation Duration in Xamarin NavigationDrawer (SfNavigationDrawer)
+## Animation Duration in SfNavigationDrawer
 
 The `Duration` property of SfNavigationDrawer indicates timeline for completing one animation cycle. Setting smaller duration value accelerates animation speed.
 

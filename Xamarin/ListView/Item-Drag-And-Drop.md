@@ -248,6 +248,21 @@ private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 The underlying collection can be reordered directly by setting the [UpdateSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragDropController~UpdateSource.html) property to `true`. The default value is `false`. 
 
 {% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView" 
+                   ItemsSource="{Binding ToDoList}"
+                   DragStartMode="OnHold"
+                   BackgroundColor="#FFE8E8EC"
+                   ItemSize="60">
+  <syncfusion:SfListView.DragDropController>
+                <syncfusion:DragDropController
+                    UpdateSource="True">
+                </syncfusion:DragDropController>
+   </syncfusion:SfListView.DragDropController>
+</syncfusion:SfListView>                
+</ContentPage>
+{% endhighlight %}
 {% highlight c# %}
 this.listView.DragDropController.UpdateSource = true;
 {% endhighlight %}

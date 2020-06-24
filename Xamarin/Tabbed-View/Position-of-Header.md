@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Header Positioning for Syncfusion SfTabView Control
-description: Learn about Position of Header support in Syncfusion Xamarin Tabbed View (SfTabView) control and more details.
+description: Learn about position of header support in Syncfusion Xamarin Tabbed View (SfTabView) control and more details.
 platform: Xamarin.Forms
 control: TabView
 documentation: ug
 ---
 
-# Positioning of header
+# Positioning of header in Xamarin Tabbed View (SfTabView)
 
 Tab headers can be positioned either above the content or below the content. This can be done by setting the `TabHeaderPosition` property of `SfTabView`.
 

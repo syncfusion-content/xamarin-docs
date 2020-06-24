@@ -3655,7 +3655,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endtabs %}
 
-![ErrorBarMode support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode-Both.png)
+![ErrorBarMode support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode_Both.png)
 
 ### Horizontal
 
@@ -3697,7 +3697,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endtabs %}
 
-![ErrorBarMode Horizontal support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode-Horizontal.png)
+![ErrorBarMode Horizontal support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode_Horizontal.png)
 
 ### Vertical
 
@@ -3739,7 +3739,7 @@ ErrorBarSeries errorBarSeries = new ErrorBarSeries()
 
 {% endtabs %}
 
-![ErrorBarMode Vertical support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode-Vertical.png)
+![ErrorBarMode Vertical support for ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_Mode_Vertical.png)
 
 ## Direction
 

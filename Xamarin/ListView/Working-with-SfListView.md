@@ -1141,37 +1141,13 @@ protected override void OnDisappearing()
 {% endhighlight %}
 {% endtabs %}
 
-## RefreshView Method (SfListView)
+## Refresh view
 
 You can refreshes the view by using the [RefreshView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshView.html) method in SfListView.
 
 {% tabs %}
-{% highlight c# %}
-protected override void OnDisappearing()  
-{  
-   listview.RefreshView();  
-   base.OnDisappearing();  
-}
-{% endhighlight %}
-{% endtabs %}
-
-## ForceUpdateItemSize Method
-
-You can refresh a particular item or entire listView items by using the [ForceUpdateItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ForceUpdateItemSize.html) method. The `ForceUpdateItemSize` is a deprecated method instead of this you can use the [RefreshListViewItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshListViewItem.html) method.
- 
-{% tabs %}
-{% highlight c# %}
-using Syncfusion.ListView.XForms.Control.Helpers;
-public partial class MainPage : ContentPage
-    {
-        public MainPage()
-        {
-            InitializeComponent();
-            listView.ForceUpdateItemSize(-1);
-
-            listView.RefreshListViewItem(-1, -1, true);
-        }
-	}
+{% highlight c# %} 
+   listview.RefreshView();   
 {% endhighlight %}
 {% endtabs %}
 

@@ -515,6 +515,7 @@ The [DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.Po
  SfListView listView = new SfListView();
     DataSource dataSource = new DataSource();
     dataSource.Source = ViewModel.BookInfo;
+	listView.DataSource = dataSource;
     listView.DataSource.Refresh();
 {% endhighlight %}
 {% endtabs %}

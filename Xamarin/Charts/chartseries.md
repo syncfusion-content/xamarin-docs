@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiple series in Syncfusion.Xamarin.Forms chart
-description: Learn how to render different types of series in a chart
+description: Learn about the how to render the multiple series, combination series, transpose series, and grouping stacked series.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -433,7 +433,7 @@ N> The output of this method will be -1 if there is no data point under the give
 
 ### Animate()
 
-The [`Animate`] method is used to animate series when items source is dynamically changed.
+The [`Animate`] is a built-in method and a short way to play animation on a chart series.
 
 {% highlight c# %}
 

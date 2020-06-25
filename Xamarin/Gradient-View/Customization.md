@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Various customization in Syncfusion gradient view control
-description: Learn how to customize the gradient view control
+description: This section explains how to customize the SfLinearGradientBrush and SfRadialGradientBrush of Syncfusion gradient view control for Xamarin.Forms platform.
 platform: Xamarin
 control: SfGradientView
 documentation: ug
 ---
 
-# Customization
+# Customization of SfGradienView
 
 The SfGradientView control supports customizing the following properties:
 

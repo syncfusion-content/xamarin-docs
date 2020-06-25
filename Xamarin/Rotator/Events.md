@@ -69,6 +69,10 @@ namespace Rotator
         public MainPage()
         {
             InitializeComponent();
+            SfRotator rotator = new SfRotator();
+            rotator.ItemTapped += Rotator_ItemTapped;
+            rotator.SelectedIndexChanged += Rotator_SelectedIndexChanged;
+
         }
 
         private void Rotator_ItemTapped(object sender, EventArgs e)

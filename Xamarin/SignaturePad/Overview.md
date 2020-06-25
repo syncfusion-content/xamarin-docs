@@ -11,7 +11,7 @@ documentation: ug
 
 # Overview with SignaturePad
 
-The Xamarin.Forms `SignaturePad` control is used to capture, save, or export signature in a Xamarin.Forms application. This control will display the signature path that varies based on writing speed, which makes the user to feel the real pen effect.
+The Xamarin.Forms `SignaturePad` control is used to capture, save signature in a Xamarin.Forms application. This control will display the signature path that varies based on writing speed, which makes the user to feel the real pen effect.
 
 ## Key features
 

@@ -7,6 +7,8 @@ control: General
 documentation: ug
 ---
 
+# Applying Themes in Xamarin Controls
+
 Syncfusion themes allow you apply colors across all the Syncfusion controls with a uniform approach and provide consistent look and feel to your applications. This section covers the following topics: 
 
 * Applying light and dark themes

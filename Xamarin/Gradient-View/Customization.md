@@ -260,3 +260,5 @@ gradientView.BackgroundBrush = radialGradient;
 {% endtabs %}
 
 ![SfGradientView](images/Custom_Radius.jpg)
+
+You can find the sample from [this](https://github.com/SyncfusionExamples/SfGradientView_CustomizationSample) link.

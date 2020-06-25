@@ -7,7 +7,7 @@ control: SfGradientView
 documentation: ug
 ---
 
-# Customization of SfGradienView
+# Customization of SfGradientView
 
 The SfGradientView control supports customizing the following properties:
 

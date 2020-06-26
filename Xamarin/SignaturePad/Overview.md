@@ -5,7 +5,6 @@ description: This section explains the key features and quick overview about Syn
 platform: xamarin
 control: SfSignaturePad
 documentation: ug
-
 ---
 
 # Overview with SfSignaturePad

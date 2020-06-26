@@ -15,7 +15,7 @@ The `SignaturePad` control supports to customize the stroke color and stroke wid
 
 ## Stroke color
 
-The stroke color of the signature can be customized using the [`Stroke`].
+The color of the signature can be customized using the `StrokeColor` property.
 
 {% tabs %}
 

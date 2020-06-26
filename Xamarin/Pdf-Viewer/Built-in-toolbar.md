@@ -9,11 +9,11 @@ documentation: ug
 
 # Working with built-in toolbar
 
-The SfPdfViewer has a built-in toolbar that has provisions to perform majority of the operations in the PDF Viewer and that can be disabled or enabled. You  can disable the built-in toolbar and develop your own toolbar.
+The SfPdfViewer has a built-in toolbar that has provisions to perform majority of the operations in the PDF Viewer and that can be shown or hidden. You can hide the built-in toolbar and develop your own toolbar.
 
-## How to disable/enable built-in toolbar
+## How to show/hide built-in toolbar
 
-By default, the built-in toolbar will be enabled. It can be disabled by setting the Toolbar.Enabled property of PDF Viewer to false.
+By default, the built-in toolbar will be visible. It can be hidden by setting the `IsToolbarVisible` property of PDF Viewer to false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -24,17 +24,8 @@ By default, the built-in toolbar will be enabled. It can be disabled by setting 
              xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              x:Class=" PdfViewerGettingStarted.MainPage">
 
-  <ContentPage.Resources>
-        <ResourceDictionary>
-            <syncfusion:Toolbar x:Key="ToolbarSettings">
-                <syncfusion:Toolbar.Enabled>false
-                </syncfusion:Toolbar.Enabled>
-            </syncfusion:Toolbar>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
     <ContentPage.Content>
-        <syncfusion:SfPdfViewer x:Name="pdfViewerControl" Toolbar = "{StaticResource ToolbarSettings}"/>
+        <syncfusion:SfPdfViewer x:Name="pdfViewerControl" IsToolbarVisible="False" />
     </ContentPage.Content>
 
 </ContentPage>
@@ -45,14 +36,14 @@ By default, the built-in toolbar will be enabled. It can be disabled by setting 
 {% tabs %}
 {% highlight c# %}
 
-pdfViewerControl.Toolbar.Enabled = false;
+pdfViewerControl.IsToolbarVisible = false;
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Build-in-toolbar disable in PDF Viewer](pdfviewer_images/ToolbarDisabled.png)
 
-The toolbar can be enabled by setting the Toolbar.Enabled property to true.
+The toolbar can be shown by setting the `IsToolbarVisible` property to true.
 
 {% tabs %}
 {% highlight xaml %}
@@ -63,17 +54,8 @@ The toolbar can be enabled by setting the Toolbar.Enabled property to true.
              xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
              x:Class=" PdfViewerGettingStarted.MainPage">
 
-  <ContentPage.Resources>
-        <ResourceDictionary>
-            <syncfusion:Toolbar x:Key="ToolbarSettings">
-                <syncfusion:Toolbar.Enabled>true
-                </syncfusion:Toolbar.Enabled>
-            </syncfusion:Toolbar>
-        </ResourceDictionary>
-    </ContentPage.Resources>
-
     <ContentPage.Content>
-        <syncfusion:SfPdfViewer x:Name="pdfViewerControl" Toolbar = "{StaticResource ToolbarSettings}"/>
+        <syncfusion:SfPdfViewer x:Name="pdfViewerControl" IsToolbarVisible="True" />
     </ContentPage.Content>
 
 </ContentPage>
@@ -84,14 +66,40 @@ The toolbar can be enabled by setting the Toolbar.Enabled property to true.
 {% tabs %}
 {% highlight c# %}
 
-pdfViewerControl.Toolbar.Enabled = true;
+pdfViewerControl.IsToolbarVisible = true;
 
 {% endhighlight %}
 {% endtabs %}
 
 ![Build-in-toolbar enable in PDF Viewer](pdfviewer_images/ToolbarEnabled.png)
 
-N>By default, the built-in toolbar of SfPdfViewer is always visible.
+N>The older API `SfPdfViewer.Toolbar.Enabled` have been marked as obsolete. 
+
+## How to show/hide built-in toolbar dynamically using data binding
+
+The below code snippet illustrates how to show/hide the built-in toolbar dynamically at run time using data binding.
+
+{% tabs %}
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace: PdfViewerGettingStarted "
+             xmlns:syncfusion ="clr-namespace:Syncfusion.SfPdfViewer.XForms;assembly=Syncfusion.SfPdfViewer.XForms"
+             x:Class=" PdfViewerGettingStarted.MainPage">
+			 
+	<ContentPage.BindingContext>
+        <local:PdfViewerViewModel></local:PdfViewerViewModel>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <syncfusion:SfPdfViewer x:Name="pdfViewerControl" IsToolbarVisible={Binding ToolbarVisible} />
+    </ContentPage.Content>
+
+</ContentPage>          
+
+{% endhighlight %}
+{% endtabs %}
 
 ## How to disable/enable bookmark
 

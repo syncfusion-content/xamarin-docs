@@ -37,7 +37,7 @@ The color of the signature can be customized using the `StrokeColor` property.
     Label text = new Label() { Text = "Input Your Signature" };
     Frame frame = new Frame();
     SfSignaturePad sign = new SfSignaturePad();
-    sign.StrokeColor = Color.Brown;
+    sign.StrokeColor = Color.Green;
     sign.HeightRequest = 250;
     frame.Content = sign;
     stack.Children.Add(text);

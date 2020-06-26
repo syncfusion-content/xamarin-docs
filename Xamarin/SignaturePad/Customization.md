@@ -11,7 +11,7 @@ documentation: ug
 
 # SfSignaturePad Customization
 
-The `SignaturePad` control supports to customize the stroke color and stroke width using the following properties:
+The `SfSignaturePad` control supports to customize the stroke color and stroke width using the following properties:
 
 ## Stroke color
 
@@ -21,10 +21,10 @@ The color of the signature can be customized using the `StrokeColor` property.
 
 {% highlight xaml %}
 
-  <StackLayout Padding="10,40,10,10">
+  <StackLayout>
         <Label Text="Input Your Signature"/>
         <Frame>
-            <sign:SfSignaturePad HeightRequest="250" StrokeColor="Green"/>
+            <sign:SfSignaturePad HeightRequest="250" StrokeColor="Red"/>
         </Frame>
     </StackLayout>
 
@@ -33,11 +33,10 @@ The color of the signature can be customized using the `StrokeColor` property.
 {% highlight c# %}
 
     StackLayout stack = new StackLayout();
-    stack.Padding = new Thickness(10, 40, 10, 10);
     Label text = new Label() { Text = "Input Your Signature" };
     Frame frame = new Frame();
     SfSignaturePad sign = new SfSignaturePad();
-    sign.StrokeColor = Color.Green;
+    sign.StrokeColor = Color.Red;
     sign.HeightRequest = 250;
     frame.Content = sign;
     stack.Children.Add(text);
@@ -60,7 +59,7 @@ N> The default value of `MinimumStrokeWidth` is 0.08 and `MaximumStrokeWidth` is
 
 {% highlight xaml %}
 
-    <StackLayout Padding="10,40,10,10">
+    <StackLayout>
         <Label Text="Input Your Signature"/>
         <Frame>
             <sign:SfSignaturePad HeightRequest="250" 
@@ -74,7 +73,6 @@ N> The default value of `MinimumStrokeWidth` is 0.08 and `MaximumStrokeWidth` is
 {% highlight c# %}
 
     StackLayout stack = new StackLayout();
-    stack.Padding = new Thickness(10, 40, 10, 10);
     Label text = new Label() { Text = "Input Your Signature" };
     Frame frame = new Frame();
     SfSignaturePad sign = new SfSignaturePad();

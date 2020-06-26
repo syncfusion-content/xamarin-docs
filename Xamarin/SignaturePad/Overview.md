@@ -1,7 +1,6 @@
 ---
-
 layout: post
-title: Overview of Syncfusion SfSignaturePad control for Xamarin.Forms
+title: Overview | SfSignaturePad | Xamarin | Syncfusion
 description: This section explains the key features and quick overview about Syncfusion `SfSignaturePad` control for Xamarin.Forms
 platform: xamarin
 control: SfSignaturePad
@@ -9,9 +8,9 @@ documentation: ug
 
 ---
 
-# Overview with SignaturePad
+# Overview with SfSignaturePad
 
-The Xamarin.Forms `SignaturePad` control is used to capture, save signature in a Xamarin.Forms application. This control will display the signature path that varies based on writing speed, which makes the user to feel the real pen effect.
+The Xamarin.Forms `SfSignaturePad` control is used to capture, save signature in a Xamarin.Forms application. This control will display the signature path that varies based on writing speed, which makes the user to feel the real pen effect.
 
 ## Key features
 

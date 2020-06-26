@@ -17,8 +17,8 @@ The Xamarin.Forms `SignaturePad` control is used to capture, save signature in a
 
 **StrokeColor**: Used to change the color of the stroke to be drawn.
 
-**MinimumStrokeWidth**: The minimum width of the stroke to be drawn.
+**MinimumStrokeWidth**: The `MinimumStrokeWidth` defines the minimum thickness of the stroke that can be drawn.
 
-**MaximumStrokeWidth**: The maximum width of the stroke to be drawn.
+**MaximumStrokeWidth**: The `MaximumStrokeWidth` defines the maximum thickness the stroke can draw based on the speed and impression we provide through gesture.
 
 ![SignaturePad Overview](images/overview.gif)

@@ -188,4 +188,4 @@ namespace SfSignaturePad1
 
 ![Xamarin signature pad](images/signature.png)
 
-You can find the complete getting started sample from this [`link`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfSignaturePad594767553).
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/xamarin-sfsignaturepad-examples/tree/master/Samples/SfSignaturePadGettingStarted).

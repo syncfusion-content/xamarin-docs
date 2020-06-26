@@ -15,7 +15,7 @@ The Xamarin.Forms `SignaturePad` control is used to capture, save signature in a
 
 ## Key features
 
-**StrokeColor**: Gets or sets the stroke color for sign.
+**StrokeColor**: Used to change the color of the stroke to be drawn.
 
 **MinimumStrokeWidth**: The minimum width of the stroke to be drawn.
 

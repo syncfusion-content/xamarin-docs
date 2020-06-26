@@ -92,4 +92,4 @@ N> The default value of `MinimumStrokeWidth` is 0.08 and `MaximumStrokeWidth` is
 
 ![Stroke width](images/StrokeWidth.png)
 
-[Sample link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Customization1624062135)
+[Sample link](https://github.com/SyncfusionExamples/xamarin-sfsignaturepad-examples/tree/master/Samples/SfSignaturePadCustomization)

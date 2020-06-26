@@ -25,10 +25,10 @@ The color of the signature can be customized using the `StrokeColor` property.
 
 {% highlight c# %}
 
-    SfSignaturePad sign = new SfSignaturePad();
-    sign.StrokeColor = Color.Red;
-    sign.HeightRequest = 250;
-    this.Content = sign;
+    SfSignaturePad signature = new SfSignaturePad();
+    signature.StrokeColor = Color.Red;
+    signature.HeightRequest = 250;
+    this.Content = signature;
     
 {% endhighlight %}
 
@@ -54,11 +54,11 @@ N> The default value of `MinimumStrokeWidth` is 0.08 and `MaximumStrokeWidth` is
 
 {% highlight c# %}
 
-    SfSignaturePad sign = new SfSignaturePad();
-    sign.MinimumStrokeWidth = 1;
-    sign.MaximumStrokeWidth = 4;
-    sign.HeightRequest = 250;
-    this.Content = sign;
+    SfSignaturePad signature = new SfSignaturePad();
+    signature.MinimumStrokeWidth = 1;
+    signature.MaximumStrokeWidth = 4;
+    signature.HeightRequest = 250;
+    this.Content = signature;
     
 {% endhighlight %}
 

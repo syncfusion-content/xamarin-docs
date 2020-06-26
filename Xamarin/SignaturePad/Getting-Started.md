@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfSignaturePad for Xamarin.Forms
-description: This section explains the key features and quick overview about Syncfusion SfSignaturePad control for Xamarin.Forms
+title: Getting Started with Syncfusion Signature Pad for Xamarin.Forms
+description: This section explains the key features and quick overview about Syncfusion Signature Pad control for Xamarin.Forms
 platform: xamarin
 control: SfSignaturePad
 documentation: ug
 ---
 
-# Getting Started with SfSignaturePad
+# Getting Started with Xamarin Signature Pad (SfSignaturePad)
 
 This section explains the steps required to configure the Signature Pad.
 
@@ -49,7 +49,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
-## Launching the application on each platform with SignaturePad
+## Launching the application on each platform with SfSignaturePad
 
 To use the Signature Pad in an application, each platform requires some additional configurations. The configurations vary from platform to platform and is discussed in the following sections:
 
@@ -100,7 +100,7 @@ Add the following namespace.
 
 {% endtabs %}
 
-## Initializing a Signature Pad control
+## Creating an SfSignaturePad control
 
 Create an instance for the Signature Pad control, and add it as content.
 
@@ -115,7 +115,7 @@ Create an instance for the Signature Pad control, and add it as content.
 
 {% highlight c# %}
 
-// Initializing the Signature Pad.
+// Creating an Signature Pad control.
 SfSignaturePad signature = new SfSignaturePad();
 Content = signature;
 	

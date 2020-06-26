@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion SfSignaturePad for Xamarin.Forms
-description: This section explains the key features and quick overview about Syncfusion `SfSignaturePad` control for Xamarin.Forms
+title: Overview of Syncfusion Signature Pad for Xamarin.Forms
+description: This section explains the key features and quick overview about Syncfusion Signature Pad control for Xamarin.Forms
 platform: xamarin
 control: SfSignaturePad
 documentation: ug
@@ -13,10 +13,8 @@ The Xamarin.Forms `SfSignaturePad` control is used to capture, save signature in
 
 ## Key features
 
-**StrokeColor**: Used to change the color of the stroke to be drawn.
-
-**MinimumStrokeWidth**: The `MinimumStrokeWidth` defines the minimum thickness of the stroke that can be drawn.
-
-**MaximumStrokeWidth**: The `MaximumStrokeWidth` defines the maximum thickness the stroke can draw based on the speed and impression we provide through gesture.
+* Minimum and maximum width of a stroke can be customized.
+* Stroke color can be customized.
+* ImageSource format is supported.
 
 ![Signature Pad Overview](images/overview.gif)

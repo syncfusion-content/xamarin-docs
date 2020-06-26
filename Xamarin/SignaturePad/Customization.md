@@ -38,7 +38,7 @@ The color of the signature can be customized using the `StrokeColor` property.
 
 ## Stroke width
 
-The stroke width of the signature can be customized by setting the MinimumStrokeWidth and MaximumStrokeWidth API. The MinimumStrokeWidth defines the minimum thickness of the stroke that can be drawn and the MaximumStrokeWidth defines the maximum thickness the stroke can draw based on the speed and impression we provide through gesture.
+The width of the stroke drawn can be customized by setting the `MinimumStrokeWidth` and `MaximumStrokeWidth` API. The `MinimumStrokeWidth` defines the minimum thickness of the stroke that can be drawn and the `MaximumStrokeWidth` defines the maximum thickness the stroke can draw based on the speed and impression we provide through gesture.
 
 N> The default value of `MinimumStrokeWidth` is 0.08 and `MaximumStrokeWidth` is 5.
 

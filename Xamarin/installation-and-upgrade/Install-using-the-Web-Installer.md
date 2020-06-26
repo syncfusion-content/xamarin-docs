@@ -8,7 +8,7 @@ documentation: ug
 
 ---
 
-## Installation
+# Installation using the Web installer
 
 The following procedure illustrates how to install Essential Studio Xamarin Online Installer. 
 

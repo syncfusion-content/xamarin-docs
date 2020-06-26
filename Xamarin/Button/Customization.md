@@ -7,7 +7,7 @@ control: sfbutton
 documentation: ug
 ---
 
-# Customization
+# Customization in Xamarin Buttons(SfButton)
 
 The button control supports to customize the border color, image width, corner radius, background color, and more. The button control can be customized using the following properties:
 
@@ -516,4 +516,30 @@ N> Shadow support has not been provided for UWP Platform.
 
 ![ShadowImage](images/Xamarin_Forms_Shadow.png)
 
+## Ripple Effect
+
+The button control provides ripple effect support. To enable the ripple effect, set the [`EnableRippleEffect`] property to true. By default, [`EnableRippleEffect`] value is true.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<button:SfButton x:Name="button" Text="Button" EnableRippleEffect="false" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.EnableRippleEffect = false;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> Ripple Effect support has not been provided for UWP and WPF Platform.
+
 The complete customization sample:[Customization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Customization-1070507783)
+
+

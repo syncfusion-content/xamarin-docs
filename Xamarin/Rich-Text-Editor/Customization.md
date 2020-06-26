@@ -101,6 +101,32 @@ this.Content = richtexteditor;
 {% endtabs %}
 ![Placeholder in Rich Text Editor](SfRichTextEditor_Images/Placeholder.png)
 
+## Placeholder Customization
+
+The placeholder style can be customized using the properties PlaceHolderFontColor, PlaceHolderFontSize, and PlaceHolderFontFamily.
+
+N> The PlaceHolderFontFamily property accepts fonts as Embedded source, System Font Name, or Base64 TTF string.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+<StackLayout>
+	<richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" PlaceHolder="Type something" PlaceHolderFontColor="Red" PlaceHolderFontSize="30" PlaceHolderFontFamily="cursive"/>
+</StackLayout>   
+{% endhighlight %}
+
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.PlaceHolder="Type something";
+richtexteditor.PlaceHolderFontColor="Red";
+richtexteditor.PlaceHolderFontSize="30";
+richtexteditor.PlaceHolderFontFamily="cursive";
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Read-only support
 
 Rich Text Editor provides read-only support, which allows the users to restrict editing. Rich Text Editor can be used as HTML Viewer using this feature. The following code example explains how to set read-only mode in Rich Text Editor.

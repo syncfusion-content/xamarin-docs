@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with SfSignaturePad
 
-This section explains the steps required to configure the `Signature Pad`.
+This section explains the steps required to configure the Signature Pad.
 
 ## Adding SfSignaturePad reference
 
@@ -23,7 +23,7 @@ N> Install the same version of SfSignaturePad Nuget in all the projects.
 
 **Method 2: Adding SfSignaturePad reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the `SfSignaturePad` control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to this [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfSignaturePad control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to this [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
 
 **Method 3: Adding SfSignaturePad assemblies manually from the installed location**
 
@@ -76,7 +76,7 @@ To launch the SfSignaturePad in iOS, call the `SfSignaturePadRenderer.Init()` in
 
 The Android platform does not require any additional configurations to render the Signature Pad.
 
-N> `Signature Pad` support has not been provided for UWP Platform.
+N> Signature Pad support has not been provided for UWP Platform.
 
 N> User have to install the [Nuget](https://www.nuget.org/packages/SkiaSharp.Views.Forms/2.80.0-preview.14) for Signature Pad.
 
@@ -125,7 +125,7 @@ Content = signature;
 
 ## Getting Started with a Signature Pad control
 
-The `Signature Pad` control is configured entirely in C# code or in XAML markup. The following steps explain how to create a `Signature Pad` and configure their elements.
+The Signature Pad control is configured entirely in C# code or in XAML markup. The following steps explain how to create a Signature Pad and configure their elements.
 
 {% tabs %}
 

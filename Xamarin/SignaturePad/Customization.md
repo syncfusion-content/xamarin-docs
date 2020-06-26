@@ -9,7 +9,7 @@ documentation: ug
 
 # Customization in Signature Pad
 
-The `Signature Pad` control supports to customize the stroke color and stroke width using the following properties:
+The Signature Pad control supports to customize the stroke color and stroke width using the following properties:
 
 ## Stroke color
 

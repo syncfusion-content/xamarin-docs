@@ -13,13 +13,13 @@ The Signature Pad control supports to customize the stroke color and stroke widt
 
 ## Stroke color
 
-The color of the signature can be customized using the `StrokeColor` API.
+The color of the stroke drawn can be customized using the `StrokeColor` API.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <sign:SfSignaturePad HeightRequest="250" StrokeColor="Red"/>
+    <signature:SfSignaturePad HeightRequest="250" StrokeColor="Red"/>
 
 {% endhighlight %}
 
@@ -46,7 +46,7 @@ N> The default value of `MinimumStrokeWidth` is 0.08 and `MaximumStrokeWidth` is
 
 {% highlight xaml %}
 
-     <sign:SfSignaturePad HeightRequest="250" 
+     <signature:SfSignaturePad HeightRequest="250" 
                           MinimumStrokeWidth="1" 
                           MaximumStrokeWidth="15"/>
 
@@ -66,4 +66,4 @@ N> The default value of `MinimumStrokeWidth` is 0.08 and `MaximumStrokeWidth` is
 
 ![Stroke width](images/StrokeWidth.png)
 
-[Sample link](https://github.com/SyncfusionExamples/xamarin-sfsignaturepad-examples/tree/master/Samples/SfSignaturePadCustomization)
+N> View [sample](https://github.com/SyncfusionExamples/xamarin-sfsignaturepad-examples/tree/master/Samples/SfSignaturePadCustomization) in GitHub

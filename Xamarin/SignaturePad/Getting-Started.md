@@ -173,7 +173,7 @@ namespace SfSignaturePadGettingStarted
             Frame frame = new Frame();
             SfSignaturePad signature = new SfSignaturePad();
             signature.HeightRequest = 250;
-            frame.Content = sign;
+            frame.Content = signature;
             stack.Children.Add(text);
             stack.Children.Add(frame);
             this.Content = stack;
@@ -187,4 +187,4 @@ namespace SfSignaturePadGettingStarted
 
 ![Xamarin Signature Pad](images/signature.png)
 
-You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/xamarin-sfsignaturepad-examples/tree/master/Samples/SfSignaturePadGettingStarted).
+N> View [sample](https://github.com/SyncfusionExamples/xamarin-sfsignaturepad-examples/tree/master/Samples/SfSignaturePadGettingStarted) in GitHub

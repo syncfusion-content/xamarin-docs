@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | SfSignaturePad | Xamarin | Syncfusion
+title: Overview of Syncfusion SfSignaturePad for Xamarin.Forms
 description: This section explains the key features and quick overview about Syncfusion `SfSignaturePad` control for Xamarin.Forms
 platform: xamarin
 control: SfSignaturePad
@@ -19,4 +19,4 @@ The Xamarin.Forms `SfSignaturePad` control is used to capture, save signature in
 
 **MaximumStrokeWidth**: The `MaximumStrokeWidth` defines the maximum thickness the stroke can draw based on the speed and impression we provide through gesture.
 
-![SignaturePad Overview](images/overview.gif)
+![Signature Pad Overview](images/overview.gif)

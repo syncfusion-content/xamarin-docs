@@ -1,17 +1,15 @@
 ---
-
 layout: post
-title: Customization of Syncfusion SfSignaturePad control for Xamarin.Forms
-description: This section explains the details about the customization of Syncfusion SfSignaturePad control for Xamarin.Forms
+title: Customization in Syncfusion Signature Pad Xamarin.Forms
+description: This section explains the details about the customization of Syncfusion Signature Pad control for Xamarin.Forms
 platform: xamarin
 control: SfSignaturePad
 documentation: ug
-
 ---
 
-# SfSignaturePad Customization
+# Customization in Signature Pad
 
-The `SfSignaturePad` control supports to customize the stroke color and stroke width using the following properties:
+The `Signature Pad` control supports to customize the stroke color and stroke width using the following properties:
 
 ## Stroke color
 
@@ -21,27 +19,16 @@ The color of the signature can be customized using the `StrokeColor` property.
 
 {% highlight xaml %}
 
-  <StackLayout>
-        <Label Text="Input Your Signature"/>
-        <Frame>
-            <sign:SfSignaturePad HeightRequest="250" StrokeColor="Red"/>
-        </Frame>
-    </StackLayout>
+    <sign:SfSignaturePad HeightRequest="250" StrokeColor="Red"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    StackLayout stack = new StackLayout();
-    Label text = new Label() { Text = "Input Your Signature" };
-    Frame frame = new Frame();
     SfSignaturePad sign = new SfSignaturePad();
     sign.StrokeColor = Color.Red;
     sign.HeightRequest = 250;
-    frame.Content = sign;
-    stack.Children.Add(text);
-    stack.Children.Add(frame);
-    this.Content = stack;
+    this.Content = sign;
     
 {% endhighlight %}
 
@@ -59,30 +46,19 @@ N> The default value of `MinimumStrokeWidth` is 0.08 and `MaximumStrokeWidth` is
 
 {% highlight xaml %}
 
-    <StackLayout>
-        <Label Text="Input Your Signature"/>
-        <Frame>
-            <sign:SfSignaturePad HeightRequest="250" 
-                                 MinimumStrokeWidth="1" 
-                                 MaximumStrokeWidth="15"/>
-        </Frame>
-    </StackLayout>
+     <sign:SfSignaturePad HeightRequest="250" 
+                          MinimumStrokeWidth="1" 
+                          MaximumStrokeWidth="15"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
-    StackLayout stack = new StackLayout();
-    Label text = new Label() { Text = "Input Your Signature" };
-    Frame frame = new Frame();
     SfSignaturePad sign = new SfSignaturePad();
     sign.MinimumStrokeWidth = 1;
     sign.MaximumStrokeWidth = 4;
     sign.HeightRequest = 250;
-    frame.Content = sign;
-    stack.Children.Add(text);
-    stack.Children.Add(frame);
-    this.Content = stack;
+    this.Content = sign;
     
 {% endhighlight %}
 

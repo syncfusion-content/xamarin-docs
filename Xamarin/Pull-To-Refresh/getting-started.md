@@ -7,7 +7,7 @@ control: SfPullToRefresh
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin PullToRefresh (SfPullToRefresh)
 
 This section provides a quick overview for working with SfPullToRefresh for Xamarin.Forms.
 
@@ -280,3 +280,5 @@ public class WeatherData: INotifyPropertyChanged
 If we run the above sample with `TransitionMode` as `Push`, the output will look like on iOS, Android and Windows Phone devices as shown below.
 
 ![PullToRefresh with push transition mode](overview_images/Push.png)
+
+N> PullToRefresh does not have a view. So it is mandatory to set size or LayoutOptions when loaded inside any layouts.

@@ -24,7 +24,7 @@ The color of the signature can be customized using the `StrokeColor` property.
   <StackLayout Padding="10,40,10,10">
         <Label Text="Input Your Signature"/>
         <Frame>
-            <sign:SfSignaturePad HeightRequest="250" StrokeColor="Brown"/>
+            <sign:SfSignaturePad HeightRequest="250" StrokeColor="Green"/>
         </Frame>
     </StackLayout>
 

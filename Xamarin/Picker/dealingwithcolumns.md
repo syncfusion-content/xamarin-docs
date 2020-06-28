@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dealing with Columns of Syncfusion Picker control for Xamarin.Forms
-description: Dealing with Columns of Picker control
+description: This section will explain about how to customize the multiple columns of Xamarin.Forms Picker control 
 platform: Xamarin
 control: Picker
 documentation: ug
@@ -461,6 +461,28 @@ picker.ColumnHeaderFontAttribute = FontAttributes.Bold;
 
 {% endhighlight %}
 {% endtabs %}
+
+## Multi Column SelectedIndex
+
+Picker allows users to set selected index for particular column of picker or all columns of picker.To achieve this we need to set collection as Selected Index like below.
+
+{% tabs %}
+
+{% highlight c# %}
+
+ObservableCollection<int> selectedIndex = new ObservableCollection<int>() { 1, 2, 3 };
+selectedIndex[0] = 1;
+selectedIndex[1] = 1;
+selectedIndex[2] = 3;
+this.SelectedIndex = selectedIndex;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+You can get sample link from the following link
+
+Sample:[MultiColumn-SelectedIndex](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedPicker1710445816.zip) 
 
 ## Cascading
 

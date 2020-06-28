@@ -494,3 +494,153 @@ calendar.SelectedDate = null;
 {% endhighlight %}
 {% endtabs %}
 
+
+## How to perform an operation when navigating to next month?
+
+User-defined operation can be performed using the [MonthChanging](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MonthChanging_EV_.html) event when navigating to the next month. This event returns the details about the current value and the previous value of the month using the property of [MonthChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthChangingEventArgs.html) .
+
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>(sender as SfCalendar)</td>
+<td>Carries details about native control</td>
+</tr>
+<tr>
+<td>Args</td>
+<td>Carries details about MonthEventParameters</td>
+</tr>
+</table>
+                                    
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" MonthChanging="Calendar_MonthChanging"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+	
+void Calendar_MonthChanging(object sender, MonthChangingEventArgs e)
+{
+	 SfCalendar calendar = (sender as SfCalendar);
+     DateTime oldMonth = e.PreviousValue;
+     DateTime currentMonth = e.CurrentValue;
+}
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## How to perform an operation when changing the ViewMode?
+
+User-Defined Operation can be performed using the [OnViewModeChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnViewModeChanged.html) event when changing the `ViewMode`. This event returns the details about the different ViewMode of the `Calendar` using the Property of [ViewModeChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.ViewModeChangedEventArgs.html).
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>(sender as SfCalendar)</td>
+<td>Carries details about native control</td>
+</tr>
+<tr>
+<td>Args</td>
+<td>Carries details with ViewMode and Calendar</td>
+</tr>
+</table>
+                                    
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView" OnViewModeChanged="Handle_OnViewModeChanged"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+	
+void Handle_OnViewModeChanged(object sender, ViewModeChangedArgs e)
+{
+   // Do operation when ViewMode is changed.
+}
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## How to perform an operation when InlineAppointments are loaded ? 
+
+The [OnInlineLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnInlineLoaded.html) event returns the selected date along with the inline Appointments it holds. Using this you can perform an operation related to Appointments in the Property of [InlineEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.InlineEventArgs.html) .
+
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Args</td>
+<td>Carries details about InlineEventArgs</td>
+</tr>
+</table>
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView"  OnInlineLoaded="Handle_OnInlineLoaded" />
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+void Handle_OnInlineLoaded(object sender, InlineEventArgs e)
+{
+     var date = e.DateTime.ToString();
+     var appointmentsCount = e.Appointments.Count();
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## How to customize the calendar header using the OnHeaderLoaded event ?
+
+The [OnHeaderLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnHeaderLoaded.html) event allows you to customize the HeaderView using the view Property of [CalendarHeaderEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.CalendarHeaderEventArgs.html).
+<table>
+<tr>
+<th>Members</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Args</td>
+<td>Carries details about CalendarHeaderEventArgs</td>
+</tr>
+</table>
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<syncfusion:SfCalendar  x:Name="calendar" ViewMode="MonthView"  OnHeaderLoaded="Handle_OnHeaderLoaded"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+void Handle_OnHeaderLoaded(object sender, CalendarHeaderEventArgse)
+{
+     var button = new Button();
+     button.Text = "Header";
+     e.View = button;
+}
+
+{% endhighlight %}
+
+{% endtabs %}

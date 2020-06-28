@@ -113,6 +113,10 @@ The following screenshot shows localizing the text to Japanese language.
 
 ![SfImageEditor](ImageEditor_images/ResourcesFileForms.png)
 
+Please refer the KB from this [`link`](https://www.syncfusion.com/kb/10602/how-to-set-localized-string-to-xamarin-forms-sfimageeditor).
+
+You can download complete sample [`here`](https://github.com/SyncfusionExamples/How-to-set-localizad-string-to-SfImageEditor).
+
 ## From platform-specific projects
 
 You can localize the text from different platforms by adding equivalent localized strings in resource file. For localizing text, configure it to each platform separately.

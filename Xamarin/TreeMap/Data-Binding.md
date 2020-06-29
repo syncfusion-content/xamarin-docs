@@ -1,13 +1,13 @@
 ---
 layout: post
 title: DataBinding in Syncfusion TreeMap control for Xamarin.Forms
-description: Learn how to add data source in Syncfusion TreeMap control
+description: This section explains how to add data source using DataBinding in Syncfusion TreeMap control Xamarin.Forms
 platform:  xamarin
 control: TreeMap
 documentation: ug
 ---
 
-# DataBinding
+# DataBinding in Syncfusion TreeMap control for Xamarin.Forms
 
 The TreeMap control supports data binding, and it can be achieved using the [`DataSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~DataSource.html) property.
 
@@ -72,3 +72,4 @@ public class PopulationViewModel
 
 {% endtabs %}  
 
+N> The SfTreeMap control also supports the binding of nested properties.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance and styling in Syncfusion NumericUpDown  for Xamarin.Forms
-description: Learn how to add customize spin buttons position in NumericUpDown.
+title: Appearance and styling in Syncfusion NumericUpDown for Xamarin.Forms
+description: Learn spin buttons position customization, UpDownButtonSetting customization, and spin button validation customization in NumericUpDown.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
@@ -9,13 +9,13 @@ documentation: ug
 
 # Spin Button Alignment
 
-Spin Button position in the SfNumericUpDown control can be changed relative to the TextBox based on `SpinButtonAlignment` property. 
+Spin button position in the `SfNumericUpDown` control can be changed relative to the TextBox based on `SpinButtonAlignment` property. 
 
-There are three built-in modes.
+There are three built-in modes:
 
 ### Right
 
-Spin Buttons will get aligned to the right side of the control.
+Spin buttons will get aligned to the right side of the control.
 
 {% tabs %}
 
@@ -38,7 +38,7 @@ Spin Buttons will get aligned to the right side of the control.
 
 ### Left
 
-Spin Buttons will get aligned to the left side of the control.
+Spin buttons will get aligned to the left side of the control.
 
 {% tabs %}
 
@@ -61,7 +61,7 @@ Spin Buttons will get aligned to the left side of the control.
 
 ### Both
 
-Spin Buttons will get aligned to the both side of the control.
+Spin buttons will get aligned to the both side of the control.
 
 {% tabs %}
 
@@ -84,20 +84,20 @@ Spin Buttons will get aligned to the both side of the control.
 
 N> By default the property value is Right.
 
-## UpDownButtonSetting Customization
+## UpDownButtonSetting customization
 
-We can set the Up Down button of SfNumericUpDown control by using any of the below given ways.
+You can set the UpDownButton of `SfNumericUpDown` control by using any of the following ways:
 
 1. View
 2. Image
 3. FontIconText
 
-N> For image and Font icon we need to add the the respective image and TTF file.
-		For android: Add image at Resource/Drawable/{Image} and .ttf file at Asserts/{.ttf}
-		For iOS: Add image and .ttf file to Resource/{Image/.ttf} and To use FontIcons, add respective FontFamily name in info.plist file under Fonts provided by application category.
+N> For image and Font icon, you need to add the respective image and TTF file.
+		For Android: Add the image at Resource/Drawable/{Image} and .ttf file at Asserts/{.ttf}.
+		For iOS: Add the image and .ttf file to Resource/{Image/.ttf} and to use FontIcons, add respective FontFamily name in info.plist file under Fonts provided by application category.
 		For UWP: Add the image and .ttf file directly to the project.
 
-### By using View
+### By using the View
 
 
 {% tabs %}
@@ -196,7 +196,7 @@ N> For image and Font icon we need to add the the respective image and TTF file.
 
 {% endtabs %}
 
-### By using Image with Button Height & Width
+### By using the Image with ButtonHeight and ButtonWidth
 
 {% tabs %}
 
@@ -257,7 +257,7 @@ public partial class MainPage : ContentPage
 ![Display SfNumericUpDown control with Button properties](images/image.png)
 
 
-### By using FontIconText
+### By using the FontIconText
 
 {% tabs %}
 
@@ -266,6 +266,7 @@ public partial class MainPage : ContentPage
 
 <updown:SfNumericUpDown x:Name="upDown" SpinButtonAlignment="Both" TextAlignment="Center">
 <updown:SfNumericUpDown.IncrementButtonSettings>
+<updown:UpDownButtonSettings ButtonFontIcon="&#xe701;" ButtonHeight="35" ButtonWidth="35">
 <updown:UpDownButtonSettings.ButtonFontFamily>
 <OnPlatform
                 x:TypeArguments="x:String">
@@ -279,9 +280,10 @@ public partial class MainPage : ContentPage
                 </On>
             </OnPlatform>
 </updown:UpDownButtonSettings.ButtonFontFamily>
-<updown:UpDownButtonSettings ButtonFontIcon="&#xe701;" ButtonHeight="35" ButtonWidth="35" />
+</updown:UpDownButtonSettings>
 </updown:SfNumericUpDown.IncrementButtonSettings>
 <updown:SfNumericUpDown.DecrementButtonSettings>
+<updown:UpDownButtonSettings ButtonFontIcon="&#xe700;" ButtonHeight="35" ButtonWidth="35" >
 <updown:UpDownButtonSettings.ButtonFontFamily>
 <OnPlatform
                 x:TypeArguments="x:String">
@@ -295,7 +297,7 @@ public partial class MainPage : ContentPage
                 </On>
             </OnPlatform>
 </updown:UpDownButtonSettings.ButtonFontFamily>
-<updown:UpDownButtonSettings ButtonFontIcon="&#xe700;" ButtonHeight="35" ButtonWidth="35" />
+</updown:UpDownButtonSettings>
 </updown:SfNumericUpDown.DecrementButtonSettings>
 </updown:SfNumericUpDown> 
 
@@ -335,7 +337,7 @@ this.Content = upDown;
 
 ### BackgroundColor
 
-This property is used to change the background color of increment and decrement buttons.
+This property is used to change the background color of the increment and decrement buttons.
 
 {% tabs %}
 
@@ -370,7 +372,7 @@ This property is used to change the background color of increment and decrement 
 
 ### HighlightedBackgroundColor
 
-This property is used to change the background color of when press the increment or decrement button.
+This property is used to change the background color of the increment or decrement button.
 
 {% tabs %}
 
@@ -403,7 +405,7 @@ This property is used to change the background color of when press the increment
 
 ### ButtonFontColor
 
-This property is used to change the text color of increment and decrement buttons.
+This property is used to change the text color of the increment and decrement buttons.
 
 {% tabs %}
 
@@ -436,7 +438,7 @@ This property is used to change the text color of increment and decrement button
 
 ### HighlightedButtonFontColor
 
-This property is used to change the text color of button when press the increment or decrement button.
+This property is used to change the text color of the button by clicking the increment or decrement button.
 
 {% tabs %}
 
@@ -466,3 +468,53 @@ This property is used to change the text color of button when press the incremen
 {% endhighlight %}
 
 {% endtabs %}
+
+## Spin validation
+
+You can customize number increment and decrement mode in spin button interaction in two ways:
+
+ * Default
+ * Tapped
+
+### Default
+
+When [`SpinValidation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfNumericUpDown.XForms~Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown~SpinValidation.html) property is set as `Default`, the `NumericUpDown` value gets updated on long press till the increment or decrement button gets disabled.
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+numericUpDown.SpinValidation = SpinValidation.Default;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<numeric:SfNumericUpDown x:Name="numericUpDown" SpinValidation="Default" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+## Tapped
+
+When [`SpinValidation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfNumericUpDown.XForms~Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown~SpinValidation.html) property is set as `Tapped`, the `NumericUpDown` value gets updated on the increment or decrement button tap action.
+
+{% tabs %}
+
+{% highlight C# %}
+
+SfNumericUpDown numericUpDown=new SfNumericUpDown();
+numericUpDown.SpinValidation = SpinValidation.Tapped;
+
+{% endhighlight %}
+
+{% highlight xaml %}
+
+<numeric:SfNumericUpDown x:Name="numericUpDown" SpinValidation="Tapped" />
+	
+{% endhighlight %}
+
+{% endtabs %}
+

@@ -1616,8 +1616,8 @@ this.sfChat.SendMessage += this.SfChat_SendMessage;
 /// Raised when current user sends message to bot using Chat UI.
 /// </summary>
 /// <param name="sender"><see cref="SfChat"/> as sender.</param>
-/// <param name="e"><see cref="SendMessageEventArgs"/> asparameter.<param>
-private void SfChat_SendMessage(object sender, SendMessageEventArgse)
+/// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.<param>
+private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
 {
     e.Handled = true;
 }

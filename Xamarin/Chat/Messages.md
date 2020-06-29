@@ -904,7 +904,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 Unlike the other messages, the `HyperlinkMessage` can also be shown as an outgoing message. To add an `HyperlinkMessage` as an outgoing message just set the [HyperlinkMessage.Author](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Author.html) as [SfChat.CurrentUser](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html).
 
-![Send hyper link message]()
+![Send hyper link message](SfChat_images/xamarin-forms-chat-outgoing-hyperlink-message.png)
 
 ## Image message
 
@@ -1946,3 +1946,69 @@ public class MyCustomMessageTemplateSelector : ChatMessageTemplateSelector
 ![Xamarin Forms chat message template](SfChat_images/xamarin-forms-chat-message-template.png)
 
 You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/Chat-Message-Template-Xamarin.Forms).
+
+## Messages without author (System Generated Messages / Admin messages)
+You can also create a custom template for messages without author.
+We have loaded a custom template if the message's Author is null in the below code example.
+
+{% tabs %}
+{% highlight c# %}
+using Syncfusion.XForms.Chat;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        SfChat sfChat;
+        GettingStartedViewModel viewModel;
+        public MainPage()
+        {
+            InitializeComponent();
+            sfChat = new SfChat();
+            viewModel = new GettingStartedViewModel();
+            this.sfChat.Messages = viewModel.Messages;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.MessageTemplate = new CustomMessageTemplateSelector() { Chat = this.sfChat };
+            this.Content = sfChat;
+        }
+    }
+}
+
+public class MessageTemplateSelector : ChatMessageTemplateSelector
+{
+	private readonly DataTemplate customMessageTemplate;
+	public MessageTemplateSelector(SfChat sfChat):base(sfChat)
+	{
+		this.customMessageTemplate = new DataTemplate(typeof(CustomMessageTemplate));
+	}
+
+	protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+	{
+		var message = item as IMessage;
+		if (message == null)
+		return null;
+
+		if (item as ITextMessage != null)
+		{
+			if ((item as ITextMessage).Author == null)
+			{
+				return customMessageTemplate;
+			}
+			else
+			{
+				return base.OnSelectTemplate(item,container);
+			}
+		}
+		else
+		{
+			return null;
+		}
+	}
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin Forms chat message template](SfChat_images/xamarin-forms-chat-systemGenerated-custom-messageTemplate.png)
+
+You can also download the entire source code of this demo [here]()

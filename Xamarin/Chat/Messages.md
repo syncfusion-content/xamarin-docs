@@ -1495,11 +1495,15 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat image message](SfChat_images/xamarin-forms-chat-card-message.png)
+**Card message with button**
+![Xamarin Forms chat card message](SfChat_images/xamarin-forms-chat-card-message.png)
+
+**Card message without button**
+![Xamarin Forms chat card message](SfChat_images/xamarin-forms-chat-card-message1.png)
 
 ### Event and Command
 
-The CardMessage comes with built-in `SfChat.CardTapped` event and `SfChat.CardCommand` that will be fired upon tapping a buton in a card or tapping any card in the message . You can get the selected `Card`, the clicked `CardButton` and the actual `CardMessage` via the `CardTappedEventArgs` as `CardTappedEventArgs.Card`, `CardTappedEventArgs.Action` and `CardTappedEventArgs.Message` respectively, in both the `CardTapped` event handler and action of `CardCommand`. Handling this event/command by setting `CardTappedEventArgs.Handled` prevents the `Card.Title` or `CardButton.Value` from getting added as a new message.
+The CardMessage comes with built-in `SfChat.CardTapped` event and `SfChat.CardCommand` that will be fired upon tapping a button in a card or tapping any card in the message . You can get the selected `Card`, the clicked `CardButton` and the actual `CardMessage` via the `CardTappedEventArgs` as `CardTappedEventArgs.Card`, `CardTappedEventArgs.Action` and `CardTappedEventArgs.Message` respectively, in both the `CardTapped` event handler and action of `CardCommand`. Handling this event/command by setting `CardTappedEventArgs.Handled` prevents the `Card.Title` or `CardButton.Value` from getting added as a new message.
 
 N> The `Action` argument in `CardTappedEventArgs` holds a valid value only only when clicking the `CardButton` in a card. Tapping elsewhere inside the card fires the `CardTapped` event and `CardCommand` with `Action` as null in the `CardTappedEventArgs`. If the `CardTappedEventArgs.Action` is null, the `CardTappedEventArgs.Card.Title` is added as a new message, else the `CardTappedEventArgs.Action.Value` is added as a new message.
 
@@ -1595,6 +1599,65 @@ private void CardTapped(object args)
 ...
 {% endhighlight %}
 {% endtabs %}
+
+## Template for message
+
+SfChat allows to load custom templates for all incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) property. You can customize the message views as per your liking with the support to load template for each individual message by using a custom template selector derived from `ChatMessageTemplateSelector` and assigning it to `SfChat.MessageTemplate` as shown below. Load custom templates based on the message type, text, author, etc. The limits are endless.
+
+We have loaded a custom template if the message's text contains a particular text value in the below code example.
+
+{% tabs %}
+{% highlight c# %}
+using Syncfusion.XForms.Chat;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        SfChat sfChat;
+        GettingStartedViewModel viewModel;
+        public MainPage()
+        {
+            InitializeComponent();
+            sfChat = new SfChat();
+            viewModel = new GettingStartedViewModel();
+            this.sfChat.Messages = viewModel.Messages;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.MessageTemplate = new MyCustomMessageTemplateSelector() { Chat = this.sfChat };
+            this.Content = sfChat;
+        }
+    }
+}
+
+public class MyCustomMessageTemplateSelector : ChatMessageTemplateSelector
+{
+    private readonly DataTemplate ratingDataTemplate;
+    public MyCustomMessageTemplateSelector(SfChat chat) : base(chat)
+    {
+        this.ratingDataTemplate = new DataTemplate(typeof(RatingTemplate));
+    }
+
+    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+    {
+        if (item as ITextMessage != null && item as ITextMessage.Text == "How would you rate your interaction with our travel bot?")
+        {
+            // returns a custom rating template for this messages.
+            return this.ratingDataTemplate; 
+        }
+        else
+        {
+            // returns default template for all other messages.
+            return base.OnSelectTemplate(item, container);
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin Forms chat message template](SfChat_images/xamarin-forms-chat-message-template.png)
+
+You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/Chat-Message-Template-Xamarin.Forms).
 
 
 ## Sending message
@@ -1719,6 +1782,86 @@ public class SendMessageCommandExt : ICommand
 
 {% endhighlight %}
 {% endtabs %}
+
+## Show keyboard always
+
+By default the keyboard will be open in view, even after a message is sent or focus is lost just like in most mainstream chat applications. To hide the keyboard after the message has been sent or lost focus set the `SfChat.ShowKeyboardAlways` property to `false`.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:GettingStartedViewModel/>
+    </ContentPage.BindingContext>
+    
+       <ContentPage.Content>
+        <sfChat:SfChat x:Name="sfChat"
+                       Messages="{Binding Messages}"
+                       ShowKeyboardAlways="False"/> />
+    </ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+{% endtabs %}
+
+N> This property is not applicable for Android platform and the keyboard will be hidden after a message is sent or when focus is lost. Refer the below work around to show the keyboard always in android platform.
+
+In the MainActivity.cs of your Xamarin.Forms.Android project, override the `CurrentFocus` property and in its getter, if `SfChatRenderer.IsChatEditorFocused()` method returns true, then return null, else return `base.CurrentFocus` as shown below.
+
+{% tabs %}
+{% highlight c# %}
+ public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+ {
+   ...
+   public override View CurrentFocus
+        {
+            get
+            {
+                if (SfChatRenderer.IsChatEditorFocused(base.CurrentFocus))
+                {
+                    return null;
+                }
+
+                return base.CurrentFocus;
+            }
+        }
+	...
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Restricting multi-line input in editor (single line messages) in Xamarin.Forms chat
+
+By default the user can type multi-line messages by inserting new lines using the editor in the chat control for outgoing messages. However, you can restrict multi-line input from the users and show a send button in the keyboard so that users can no longer insert a new line in messages by setting the `SfChat.AllowMultilineInput` property as false.
+
+{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns = "http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Sample.AutoScroll_ToBottom.ViewModel"
+            xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+            x:Class="MultilineMessages">
+   <ContentPage.BindingContext>
+       <local:ViewModel/>
+   </ContentPage.BindingContext>
+   <ContentPage.Content>
+       <sfChat:SfChat x:Name="sfChat"                    
+                      Messages="{Binding Messages}"
+                      CurrentUser="{Binding CurrentUser}"
+                      AllowMultilineInput="False"/>
+   </ContentPage.Content>
+
+{% endhighlight %}
+{% endtabs %}
+
+N> In iOS you cannot scroll horizontally on the editor when `AllowMultilineInput` is set as `false`.
 
 ## Show avatar and author name for outgoing message
 
@@ -1888,68 +2031,11 @@ By default the author name and avatar are displayed for the incoming messages(me
 
 ![Xamarin Forms chat hiding avatar and author visibility](SfChat_images/xamarin-forms-chat-hide-avatar-name.png)
 
-## Template for message
 
-SfChat allows to load custom templates for all incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) property. You can customize the message views as per your liking with the support to load template for each individual message by using a custom template selector derived from `ChatMessageTemplateSelector` and assigning it to `SfChat.MessageTemplate` as shown below. Load custom templates based on the message type, text, author, etc. The limits are endless.
+## Messages without author (System Generated Messages / Admin messages) in Xamarin chat
 
-We have loaded a custom template if the message's text contains a particular text value in the below code example.
-
-{% tabs %}
-{% highlight c# %}
-using Syncfusion.XForms.Chat;
-using Xamarin.Forms;
-
-namespace GettingStarted
-{
-    public partial class MainPage : ContentPage
-    {
-        SfChat sfChat;
-        GettingStartedViewModel viewModel;
-        public MainPage()
-        {
-            InitializeComponent();
-            sfChat = new SfChat();
-            viewModel = new GettingStartedViewModel();
-            this.sfChat.Messages = viewModel.Messages;
-            this.sfChat.CurrentUser = viewModel.CurrentUser;
-            this.sfChat.MessageTemplate = new MyCustomMessageTemplateSelector() { Chat = this.sfChat };
-            this.Content = sfChat;
-        }
-    }
-}
-
-public class MyCustomMessageTemplateSelector : ChatMessageTemplateSelector
-{
-    private readonly DataTemplate ratingDataTemplate;
-    public MyCustomMessageTemplateSelector(SfChat chat) : base(chat)
-    {
-        this.ratingDataTemplate = new DataTemplate(typeof(RatingTemplate));
-    }
-
-    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
-    {
-        if (item as ITextMessage != null && item as ITextMessage.Text == "How would you rate your interaction with our travel bot?")
-        {
-            // returns a custom rating template for this messages.
-            return this.ratingDataTemplate; 
-        }
-        else
-        {
-            // returns default template for all other messages.
-            return base.OnSelectTemplate(item, container);
-        }
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-![Xamarin Forms chat message template](SfChat_images/xamarin-forms-chat-message-template.png)
-
-You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/Chat-Message-Template-Xamarin.Forms).
-
-## Messages without author (System Generated Messages / Admin messages)
-You can also create a custom template for messages without author.
-We have loaded a custom template if the message's Author is null in the below code example.
+With the help of templates, you can also display messages showing any piece of information, like the security messages in whatsapp or any other admin messages. These messages can be added to the `SfChat.Messages` collection without any value for `Message.Author`.
+In the below code example, we have loaded a custom template if the message's author is null to show a security message from admin.
 
 {% tabs %}
 {% highlight c# %}
@@ -2011,4 +2097,4 @@ public class MessageTemplateSelector : ChatMessageTemplateSelector
 
 ![Xamarin Forms chat message template](SfChat_images/xamarin-forms-chat-systemGenerated-custom-messageTemplate.png)
 
-You can also download the entire source code of this demo [here]()
+You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/Chat-System-Generated-Message-Template)

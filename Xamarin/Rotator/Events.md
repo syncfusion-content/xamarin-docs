@@ -66,15 +66,28 @@ namespace Rotator
     public partial class MainPage : ContentPage
     {
 
+       RotatorViewModel viewmodel = new RotatorViewModel();
         public MainPage()
         {
             InitializeComponent();
             StackLayout layout = new StackLayout();
-            SfRotator rotator = new SfRotator();
+            SfRotator rotator = new SfRotator();
             rotator.ItemTapped += Rotator_ItemTapped;
             rotator.SelectedIndexChanged += Rotator_SelectedIndexChanged;
+            rotator.ItemsSource = viewmodel.ImageCollection;
+            var itemTemplate = new DataTemplate(() =>
+            {
+                var grid = new Grid();
+                var nameLabel = new Image();
+                nameLabel.SetBinding(Image.SourceProperty, "Image");
+                grid.Children.Add(nameLabel);
+                return grid;
+            });
+            rotator.ItemTemplate = itemTemplate;
             layout.Children.Add(rotator);
             this.Content = layout;
+            this.BindingContext = viewmodel;
+
         }
 
         private void Rotator_ItemTapped(object sender, EventArgs e)

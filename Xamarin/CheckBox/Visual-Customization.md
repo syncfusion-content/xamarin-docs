@@ -12,7 +12,7 @@ keywords: button, SfCheckBox, CheckBox
 # Visual Customization
 
 ## Customizing a shape
-The check box shape can be customized using the `CornerRadius` property. This property specifies the uniform radius value to the every corner of the check box.
+The check box shape can be customized using the [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox~CornerRadius.html) property. This property specifies the uniform radius value to the every corner of the check box.
 
 {% tabs %}
 {% highlight xaml %}
@@ -29,7 +29,7 @@ checkBox.CornerRadius = 5.0f;
 ![CheckBox CornerRadius](Images/Radius.png)
 
 ## Customizing a state color
-The default state colors can be customized using the `CheckedColor` and `UncheckedColor` properties. The checked or indeterminate state color is updated to the `CheckedColor` property value when the state is changed to the checked or indeterminate.The unchecked state color is updated to `UncheckedColor` property value when the state is changed to unchecked. 
+The default state colors can be customized using the [`CheckedColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~CheckedColor.html) and [`UncheckedColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~UncheckedColor.html) properties. The checked or indeterminate state color is updated to the [`CheckedColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~CheckedColor.html) property value when the state is changed to the checked or indeterminate.The unchecked state color is updated to [`UncheckedColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~UncheckedColor.html) property value when the state is changed to unchecked. 
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfCheckBox x:Name="check" Text="CheckBox" IsChecked="True" CheckedColor="Green"/>
@@ -55,7 +55,7 @@ indeterminate.CheckedColor = Color.Purple;
 ![CheckedColor and UncheckedColor in Checkbox](Images/StateColor.png)
 
 ## BorderWidth
-The tick box border thickness of the checkbox control can be customized using the `BorderWidth` property.  
+The tick box border thickness of the checkbox control can be customized using the [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~BorderWidth.html) property.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -85,13 +85,13 @@ check3.UncheckedColor = Color.Blue;
 ![CheckBox BorderWidth](Images/BorderWidth.png)
 
 ## Setting a caption text appearance 
-You can customize the display text appearance of the `SfCheckBox` control using the following properties:
+You can customize the display text appearance of the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) control using the following properties:
 
-* `TextColor`: Changes the color of the text.
-* `HorizontalTextAlignment`: Changes the horizontal alignment of the caption text.
-* `FontFamily`: Changes the font family of the caption text.
-* `FontAttributes`: Sets font attributes(bold/italic/none) of the caption text.
-* `FontSize`: Sets font size of the caption text.
+* [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~TextColor.html): Changes the color of the text.
+* [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~HorizontalTextAlignment.html): Changes the horizontal alignment of the caption text.
+* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~FontFamily.html): Changes the font family of the caption text.
+* [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~FontAttributes.html): Sets font attributes(bold/italic/none) of the caption text.
+* [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~FontSize.html): Sets font size of the caption text.
 
 {% tabs %}
 {% highlight xaml %}
@@ -112,7 +112,7 @@ caption.FontSize = 20;
 ![CheckBox TextAppearance](Images/CaptionAppearance.png)
 
 ## LineBreakMode
-The `LineBreakMode` allows you to wrap or truncate the text. The default value of this property is `NoWrap`. The following other options are available in `LineBreakMode`:
+The [`LineBreakMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~LineBreakMode.html) allows you to wrap or truncate the text. The default value of this property is [`NoWrap`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.LineBreakMode.html). The following other options are available in [`LineBreakMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~LineBreakMode.html):
 
  * `NoWrap` - Avoids the text wrap. 
  * `WordWrap` - Wraps the text by words.
@@ -122,7 +122,7 @@ The `LineBreakMode` allows you to wrap or truncate the text. The default value o
  * `TailTruncation` - Truncates the text at the end.
  
 ## TickColor Customization
-The `TickColor` property customizes the color of the tick in SfCheckBox.
+The [`TickColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox~TickColor.html) property customizes the color of the tick in SfCheckBox.
 
 {% tabs %}
 {% highlight xaml %}
@@ -161,11 +161,9 @@ namespace CheckBoxCustomization
 
 ![SfCheckBox with TickColor](Images/TickColor.png)
 
-This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_VisualCustomization881578223).
-
 ## Size Customization
 
-The `ControlSize` property is used to customize the `CheckBox` control size.
+The [`ControlSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~ControlSize.html) property is used to customize the [`CheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) control size.
 
 {% tabs %}
 {% highlight xaml %}
@@ -182,4 +180,4 @@ stackLayout.Children.Add(sfCheckBox);
 {% endhighlight %}
 {% endtabs %}
 
-N>`ControlSize` is not applicable for Android Platform.
+N>[`ControlSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~ControlSize.html) is not applicable for Android Platform.

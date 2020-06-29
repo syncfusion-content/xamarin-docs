@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Multiple series in Syncfusion.Xamarin.Forms chart
-description: Learn how to render different types of series in a chart.
+description: Learn about the how to render the multiple series, combination series, transpose series, and grouping stacked series.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Chart Series
+# Chart Series in Xamarin
 
 [`ChartSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries.html) is the visual representation of the data. [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) offers many types of series ranging from line series to financial series like HiLo and Candle. Based on your requirements and specifications, any type of Series can be added for data visualization.
  
@@ -430,3 +430,14 @@ int index = series.GetDataPointIndex(400, 400);
 {% endhighlight %}
 
 N> The output of this method will be -1 if there is no data point under the given x and y positions.
+
+### Animate()
+
+The [`Animate`] is a built-in method and a short way to play animation on a chart series.
+
+{% highlight c# %}
+
+ColumnSeries series = new ColumnSeries();
+series.Animate();
+
+{% endhighlight %}

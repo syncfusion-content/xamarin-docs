@@ -99,9 +99,13 @@ You can customize the calendar month view by using [MonthViewSettings](https://h
 
 * Current day text color can be modified using [TodayTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~TodayTextColor.html).
 * The day header format, day font size, day header font size, day header font family, header font family, day cell font family can be modified using [DayHeaderFormat](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFormat.html), [DayFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayFontSize.html), [DayHeaderFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFontSize.html), [DayHeaderFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeaderFontFamily.html)
-[HeaderFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~HeaderFontFamily.html), [DayCellFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayCellFontFamily.html)
+[HeaderFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~HeaderFontFamily.html), [DayCellFontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayCellFontFamily.html),[DayHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayHeight.html),[DayLabelTextAlignment](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DayLabelTextAlignment.html),[DisabledTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DisabledTextColor.html) Properties.
 * The background color of the inline view can be modified using [InlineBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~InlineBackgroundColor.html) property.
+* The text color of the inline view can be modified using [InlineTexColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~InlineTextColor.html) property.
 * In AgendaView the selected date color can be modified using [AgendaSelectedDateColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~AgendaSelectedDateColor.html)
+* The Calendar Header text color, Background color and font can be modified using the [HeaderTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~HeaderTextColor.html), [HeaderBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~HeaderBackgroundColor.html),[HeaderFont](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~HeaderFont.html) Properties.
+* The date text can be Aligned using the [DateTextAlignment](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DateTextAlignment.html).
+* The Radius of the Selection shape can be modified by [SelectionRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~SelectionRadius.html).
 
 {% tabs %}
 
@@ -184,7 +188,7 @@ this.Content = calendar;
 
 N>
 * To disable the current day selection, use `TodaySelectionBackgroundColor` color as Transparent.
-* `DisabledBackgroundColor` added while calendar using MinDate, MaxDate and EnableDatesInPast properties.
+* [DisabledBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~DisabledBackgroundColor.html) added while calendar using MinDate, MaxDate and EnableDatesInPast properties.
 
 ### Month view border color customization
 
@@ -219,7 +223,7 @@ this.Content = calendar;
 
 ### Today border color customization
 
-You can customize the today border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html). The border color of current day can be customized using the [TodayBorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~TodayBorderColor.html) property and it is applicable for both `Fill` and `Circle` `SelectionShape`.
+You can customize the today border color of calendar month cell using [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html). The border color of current day can be customized using the [TodayBorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~TodayBorderColor.html) property and it is applicable for both `Fill` and `Circle` [SelectionShape](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SelectionShape.html). 
 
 {% tabs %}	
 	
@@ -334,7 +338,7 @@ N>
 
 ## Year view customization
 
-We can customize the calendar view in yearView mode by using [YearViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings.html) property of SfCalendar. Date text color can be modified using [DateTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~DateTextColor.html). You can also customize the header, month layout in year view's text color and background color by using the [HeaderBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~HeaderBackground.html), [LayoutBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~LayoutBackground.html), [YearHeaderTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~YearHeaderTextColor.html) properties.
+We can customize the calendar view in yearView mode by using [YearViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings.html) property of SfCalendar. Date text color can be modified using [DateTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~DateTextColor.html). You can also customize the header, month layout in year view's text color and background color and LabelAlignment by using the [HeaderBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~HeaderBackground.html), [LayoutBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~LayoutBackground.html), [YearHeaderTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearViewSettings~YearHeaderTextColor.html),[MonthHeaderBackground](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthHeaderBackground.html) and [LabelAlignment](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.LabelAlignment.html) properties.
 
 {% tabs %}
 
@@ -346,7 +350,10 @@ We can customize the calendar view in yearView mode by using [YearViewSettings](
 			LayoutBackground="#ffe4b5"
 			DateTextColor="#E6E6FA"
 			HeaderBackground="#8B4513"
-			YearHeaderTextColor="#FFFFFF"/>
+			YearHeaderTextColor="#FFFFFF"
+			MonthHeaderBackground="#bfff00"
+			LabelAlignment="Centre"
+			/>
 	</syncfusion:SfCalendar.YearViewSettings>
 </syncfusion:SfCalendar>    
 
@@ -359,6 +366,8 @@ YearViewSettings yearViewSettings = new YearViewSettings();
 yearViewSettings.LayoutBackground = Color.FromHex("#ffe4b5");
 yearViewSettings.DateTextColor = Color.FromHex("#008000");
 yearViewSettings.YearHeaderTextColor = Color.FromHex("#ff0000");
+yearViewSettings.MonthHeaderBackground = Color.FromHex("#bfff00");
+yearViewSettings.LabelAlignment = LabelAlignment.Centre;
 calendar.YearViewSettings = yearViewSettings;
 this.Content = calendar;
 
@@ -514,6 +523,37 @@ this.Content = calendar;
 {% endtabs %}
 
 ![Century view customization in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-centuryviewcustom.png)
+
+
+## Programmatically expand the InlineView
+
+You can Programmatically Expand the InlineView using [ExpandInlineView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ExpandInlineView.html) method which Expands the Appointment details of the corresponding date. 
+
+{% tabs %}
+
+{% highlight c# %}
+	
+calendar.ExpandInlineView(DateTime.Now.Date);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+## Programmatically collapse the InlineView
+
+You can Programmatically Collapsed the InlineView Using [CollapseInlineView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~CollapseInlineView.html) method which collapsed the Appointment details of the corresponding date. 
+ 
+{% tabs %}
+
+{% highlight c# %}
+	
+calendar.CollapseInlineView(DateTime.Now.Date);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 
 ## See also
 

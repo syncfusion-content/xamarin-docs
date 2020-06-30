@@ -2,14 +2,14 @@
 
 layout: post
 title: TimeZone support in Syncfusion SfSchedule control for Xamarin.Forms
-description: Learn how to Use TimeZone in SfSchedule control
+description: This topic explains how to Use various TimeZones for Appointments and other functionalities in SfSchedule control in Xamarin.Forms
 platform: xamarin
 control: SfSchedule
 documentation: ug
 
 ---
 
-# Time Zone
+# Time Zone in Xamarin Schedule (SfSchedule)
 
 Schedule allows you create appointments in various time zones and display them in users’ time zone or any other time zone. You can use a time zone in the following four different ways:
 * Create appointments in different  time zones

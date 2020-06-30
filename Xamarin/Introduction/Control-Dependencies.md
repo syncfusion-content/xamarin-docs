@@ -172,6 +172,10 @@ Syncfusion.Licensing.dll<br/>
 <td>UWP</td>
 <td>Syncfusion.SfBadgeView.XForms.dll<br/>Syncfusion.SfBadgeView.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/></td>
 </tr>
+<tr>
+<td>WPF</td>
+<td>Syncfusion.SfBadgeView.XForms.dll<br/>Syncfusion.SfBadgeView.XForms.WPF.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.WPF.dll<br/></td>
+</tr>
 </table>
 
 ## SfBarcode

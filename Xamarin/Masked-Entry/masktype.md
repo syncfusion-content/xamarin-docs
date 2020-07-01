@@ -219,6 +219,8 @@ Accepts any character between[A-F]/[a-f] and numbers between [0-9].
 </tr>
 </table>
 
+N> SfMaskedEdit control only supports the above listed regex mask characters.
+
 {% tabs %}
 {% highlight xaml %}
 <syncmaskededit:SfMaskedEdit x:Name="maskedEdit" MaskType="RegEx" Mask="+1(\d{3})\d{5}"/>

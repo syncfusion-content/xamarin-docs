@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Overview | SfChat | Xamarin | Syncfusion
+title: Time break view in Xamarin.Forms Chat | SfChat | Xamarin | Syncfusion
 description: Describes about the time break view and its functionalities and customization in xamarin.forms chat.
 platform: xamarin
 control: SfChat

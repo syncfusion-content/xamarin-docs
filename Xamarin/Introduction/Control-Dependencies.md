@@ -1517,7 +1517,7 @@ Syncfusion.Licensing.dll<br/>
 </tr>
 </table>
 
-## SfSiganaturePad
+## SfSignaturePad
 
 <dl>
 <dt>NuGet</dt>

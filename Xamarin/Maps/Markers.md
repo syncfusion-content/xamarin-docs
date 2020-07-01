@@ -785,6 +785,7 @@ If you add any view for marker using `CustomView` property from `MarkerSelected`
 
 ![Reset the previously selected marker](Images/ResetMarker.gif)
 
+N> You can use `MarkerItemsSource` property when using the custom map markers that are inherited from `MapMarker` and can only be used to assign markers in code behind. We have recommended using `Markers` property for the layer to add markers from XAML page.
 
 ## Events
 

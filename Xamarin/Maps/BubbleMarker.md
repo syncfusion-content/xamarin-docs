@@ -411,4 +411,146 @@ The following code sample demonstrates how to add bubbles to maps and customize 
 
 ![Bubble marker customization](Images/RangeColorMapping_Bubble.jpg)
 
+## Showing label on bubble marker.
+
+To display the label on bubble marker by The [`ShowMapItems`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShowMapItems.html) property, which is a boolean property, displays or hides the labels. Set the [`ShapeValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeValuePath.html) property to get the labels.
+
+{% tabs %}
+
+{% highlight xml %}
+
+            <maps:SfMaps>
+                <maps:SfMaps.Layers>
+                    <maps:ShapeFileLayer x:Name="layer" Uri="usa_state.shp" ShapeIDPath="Name" ShapeIDTableField="STATE_NAME" 
+                                        ShowMapItems="True"  ItemsSource="{Binding DataSource}">
+                        <maps:ShapeFileLayer.BubbleMarkerSettings>
+                            <maps:BubbleMarkerSetting ValuePath="index" ColorValuePath="index"  MinSize="20" MaxSize="30">
+                                <maps:BubbleMarkerSetting.ColorMappings>
+                                    <maps:RangeColorMapping Color="#2E769F" From="0" To="15" />
+                                    <maps:RangeColorMapping Color="#D84444" To="30" From="15" />
+                                    <maps:RangeColorMapping Color="#816F28" To="45" From="30" />
+                                    <maps:RangeColorMapping Color="#7F38A0" To="50" From="45" />
+                                </maps:BubbleMarkerSetting.ColorMappings>
+                            </maps:BubbleMarkerSetting>
+                        </maps:ShapeFileLayer.BubbleMarkerSettings>
+                        <maps:ShapeFileLayer.ShapeSettings>
+                            <maps:ShapeSetting ShapeFill="LightBlue" ShapeValuePath="index"/>
+                        </maps:ShapeFileLayer.ShapeSettings>
+                    </maps:ShapeFileLayer>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            ViewModel viewModel = new ViewModel();
+
+            SfMaps map = new SfMaps();
+
+            map.BackgroundColor = Color.White;
+
+            ShapeFileLayer layer = new ShapeFileLayer();
+
+            layer.Uri = "usa_state.shp";
+
+            layer.ItemsSource = viewModel.DataSource;
+
+            layer.ShapeIDTableField = "STATE_NAME";
+
+            layer.ShapeIDPath = "Name";
+
+            layer.ShowMapItems = true;               
+
+            BubbleMarkerSetting bubbleSetting = new BubbleMarkerSetting();
+
+            bubbleSetting.ValuePath = "index";
+
+            bubbleSetting.ColorValuePath = "index";
+
+            bubbleSetting.MinSize = 20;
+
+            bubbleSetting.MaxSize = 30;
+
+            RangeColorMapping colorMapping1 = new RangeColorMapping() { Color = Color.FromHex("#2E769F"), From = 0, To = 15 };
+            RangeColorMapping colorMapping2 = new RangeColorMapping() { Color = Color.FromHex("#D84444"), From = 15, To = 30 };
+            RangeColorMapping colorMapping3 = new RangeColorMapping() { Color = Color.FromHex("#816F28"), From = 30, To = 45 };
+            RangeColorMapping colorMapping4 = new RangeColorMapping() { Color = Color.FromHex("#7F38A0"), From = 45, To = 50 };
+
+            bubbleSetting.ColorMappings.Add(colorMapping1);
+            bubbleSetting.ColorMappings.Add(colorMapping2);
+            bubbleSetting.ColorMappings.Add(colorMapping3);
+            bubbleSetting.ColorMappings.Add(colorMapping4);
+
+            layer.BubbleMarkerSettings = bubbleSetting;
+
+            ShapeSetting shapeSetting = new ShapeSetting();
+
+            shapeSetting.ShapeFill = Color.LightBlue;
+
+            shapeSetting.ShapeValuePath = "index";
+
+            layer.ShapeSettings = shapeSetting;
+
+            map.Layers.Add(layer);
+
+            this.Content = map;
+
+
+    public class AgricultureData
+    {
+        public AgricultureData(string name, string type, int count)
+        {
+            Name = name;
+            Type = type;
+            index = count;
+        }
+
+        public string Name
+        {
+            get;
+            set;
+        }
+
+        public string Type
+        {
+            get;
+            set;
+        }
+
+        public int index
+        {
+            get;
+            set;
+        }
+    }
+
+    public class ViewModel
+    {
+        public ViewModel()
+        {
+            DataSource = new ObservableCollection<AgricultureData>();
+          
+            DataSource.Add(new AgricultureData("Alaska", "Vegetables", 0));
+            DataSource.Add(new AgricultureData("Arizona", "Rice", 36));
+            DataSource.Add(new AgricultureData("California", "Wheat", 24));
+            DataSource.Add(new AgricultureData("Colorado", "Rice", 31));
+            DataSource.Add(new AgricultureData("North Dakota", "Grains", 4));
+            DataSource.Add(new AgricultureData("Connecticut", "Wheat", 18));
+            DataSource.Add(new AgricultureData("District of Columbia", "Grains", 27));
+            DataSource.Add(new AgricultureData("Florida", "Wheat", 48));
+            DataSource.Add(new AgricultureData("New Mexico", "Vegetables", 41));
+            DataSource.Add(new AgricultureData("Idaho", "Rice", 8));
+          
+        }
+        public ObservableCollection<AgricultureData> DataSource { get; set; }
+
+    }
+   
+{% endhighlight %}
+
+{% endtabs %}
+
+![Bubble marker with label](Images/BubbleMarker_withlabel.jpg)
+
 

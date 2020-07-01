@@ -109,6 +109,8 @@ You can customize the position of [`Scales`](https://help.syncfusion.com/cr/cref
 
 ### Setting radius factor for rim
 
+The [`RadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RadiusFactor.html) specifies where the rim position starts and ends. It ranges from 0 to 1.
+
 {% tabs %}
 
 {% highlight xaml %}
@@ -145,6 +147,8 @@ You can customize the position of [`Scales`](https://help.syncfusion.com/cr/cref
 ![Circular Gauge Rim Offset](rim_images/rim-offset.png)
 
 ### Setting scale start and end offsets for rim
+
+The [`ScaleStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ScaleStartOffset.html) and [`ScaleEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ScaleEndOffset.html) properties are used to define where the scale position starts and ends. 
 
 {% tabs %}
 

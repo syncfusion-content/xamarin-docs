@@ -286,7 +286,7 @@ public partial class LoadMoreViewModel : INotifyPropertyChanged
 
 You can customize the load more view to display any view as the load more button and busy indicator view when load more operation is performed. Its built-in auto sizing capabilities displays the load more view based on the width/height of the view loaded inside the template.
 
-Based on the value of `SfChat.IsBusy` property you can show different views for the load more button and the busy indicator. In the below code snippet a label and busy indicator are added as children of a grid and this grid is set as the `SfChat.LoadMoreTemplate`. When the `SfChat.IsBusy` is `false`, the label is made visible and the busy indicator is hidden. When the `SfChat.IsBusy` is `true` the label is hidden and the busy indicator is made visible. All this can be achieved in MVVM as shown below.
+Based on the value of `SfChat.IsBusy` property you can show different views for the load more button and the busy indicator. In the below code snippet a custom view and busy indicator are added as children of a grid and this grid is set as the `SfChat.LoadMoreTemplate`. When the `SfChat.IsBusy` is `false`, the custom view is made visible and the busy indicator is hidden. When the `SfChat.IsBusy` is `true` the custom view is hidden and the busy indicator is made visible. All this can be achieved in MVVM as shown below.
 
 {% tabs %}
 {% highlight xaml %}
@@ -310,27 +310,39 @@ Based on the value of `SfChat.IsBusy` property you can show different views for 
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-
-        <sfChat:SfChat x:Name="sfChat" 
-                       LoadMoreCommand="{Binding LoadMoreCommand}" 
-                       LoadMoreBehavior="Manual"
-                       IsBusy="{Binding IsBusy}" 
-                       Messages="{Binding Messages}" 
-                 CurrentUser="{Binding CurrentUser}" >
-            
+        <sfchat:SfChat x:Name="sfChat"
+                        LoadMoreCommand="{Binding LoadMoreCommand}"
+                        LoadMoreCommandParameter="{x:Reference sfChat}"
+                        IsBusy="{Binding IsBusy}"
+                        LoadMoreBehavior="Manual"
+                        Messages="{Binding Messages}"                      
+                        CurrentUser="{Binding CurrentUser}">
             <sfchat:SfChat.LoadMoreTemplate>
-                    <DataTemplate>
-                        <Grid  HeightRequest="50" WidthRequest="75" HorizontalOptions="Center" VerticalOptions="Center">
-                            <border:SfBorder WidthRequest="1" CornerRadius="4" BorderColor="Black" IsVisible="{Binding IsBusy, Converter={StaticResource inverseBoolConverter}, Source={x:Reference Name=sfChat}}">
-                                <Label Text="Load More" TextColor="Black" BackgroundColor="AliceBlue"
-                           HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HeightRequest="50" WidthRequest="75" 
-                           IsVisible="{Binding IsBusy, Converter={StaticResource inverseBoolConverter}, Source={x:Reference Name=sfChat}}" />
-                            </border:SfBorder>
+                <DataTemplate>
+                    <Grid  HeightRequest="50" HorizontalOptions="Center" VerticalOptions="Center">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="40" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Image  Source="Cloud.png"
+                                Grid.Row="0" Grid.Column="0"
+                                VerticalOptions="Center"
+                                HorizontalOptions="End"
+                                IsVisible="{Binding IsBusy, Converter={StaticResource inverseBoolConverter}, Source={x:Reference Name=sfChat}}"/>
+                        <Label Text="Fetch Older Messages"
+                                BackgroundColor="Transparent"
+                                VerticalOptions="Center"
+                                HorizontalOptions="Start"
+                                Grid.Row="0" Grid.Column="1"
+                                IsVisible="{Binding IsBusy, Converter={StaticResource inverseBoolConverter}, Source={x:Reference Name=sfChat}}"/>
                             <sync:LoadMoreIndicator Color="Red" IsRunning="{Binding IsBusy, Source={x:Reference Name=sfChat}}" IsVisible="{Binding IsBusy, Source={x:Reference Name=sfChat}}" VerticalOptions="Center"/>
-                        </Grid>
-                    </DataTemplate>
+                    </Grid>
+                </DataTemplate>
             </sfchat:SfChat.LoadMoreTemplate>
-        </sfChat:SfChat>
+        </sfchat:SfChat>
     </ContentPage.Content>
 </ContentPage>
 
@@ -341,44 +353,49 @@ Based on the value of `SfChat.IsBusy` property you can show different views for 
 
 public partial class MainPage : ContentPage
 {
-    SfChat sfChat;
-    ViewModel viewModel = new ViewModel();
     public MainPage()
     {
         InitializeComponent();
         sfChat.Messages = viewModel.Messages;
         sfChat.CurrentUser = viewModel.CurrentUser;
-        SfBorder loadMoreBorder;
         Label LoadMoreLabel;
+        Image LoadMoreImage;
         sfChat.LoadMoreTemplate = new DataTemplate(() =>
         {
-            Grid grid = new Grid();
-            loadMoreBorder = new SfBorder();
+            Grid grid = new Grid
+            {
+                RowDefinitions =
+                {
+                    new RowDefinition { Height = 50 },
+                },
+                ColumnDefinitions =
+                {
+                    new ColumnDefinition { Width = 40 },
+                    new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) },
+                }
+            };
+            LoadMoreImage = new Image();
             LoadMoreLabel = new Label()
             {
-                Text = "Load More",
-                HorizontalTextAlignment = TextAlignment.Center,
-                VerticalTextAlignment = TextAlignment.Center,
-                WidthRequest = 75,
-                HeightRequest = 50,
-            };
-            loadMoreBorder.Content = LoadMoreLabel;
-            loadMoreBorder.BorderWidth = 1;
-            LoadMoreLabel.TextColor = Color.Black;
-            LoadMoreLabel.BackgroundColor = Color.AliceBlue;
-            loadMoreBorder.BorderColor = Color.Black;
-            loadMoreBorder.CornerRadius = 4;
-            loadMoreBorder.SetBinding(SfBorder.IsVisibleProperty, new Binding("IsBusy", BindingMode.Default, new InverseBoolConverter(), null, null, viewModel));
+                Text = "Fetch Older Messages",
+            };                    
+            LoadMoreLabel.BackgroundColor = Color.Transparent;
+            LoadMoreLabel.VerticalOptions = LayoutOptions.Center;
+            LoadMoreLabel.HorizontalOptions = LayoutOptions.Start;
+            LoadMoreImage.VerticalOptions = LayoutOptions.Center;
+            LoadMoreImage.HorizontalOptions = LayoutOptions.End;
+            LoadMoreImage.Source = "Cloud.png";
+            LoadMoreImage.SetBinding(Image.IsVisibleProperty, new Binding("IsBusy", BindingMode.Default, new InverseBoolConverter(), null, null, viewModel));
             LoadMoreLabel.SetBinding(Label.IsVisibleProperty, new Binding("IsBusy", BindingMode.Default, new InverseBoolConverter(), null, null, viewModel));
             LoadMoreIndicator indicator = new LoadMoreIndicator();
             indicator.Color = Color.Red;
             indicator.SetBinding(LoadMoreIndicator.IsRunningProperty, new Binding("IsBusy", BindingMode.Default, null, null, null, viewModel));
             indicator.SetBinding(LoadMoreIndicator.IsVisibleProperty, new Binding("IsBusy", BindingMode.Default, null, null, null, viewModel));
-            grid.WidthRequest = 75;
             grid.HeightRequest = 50;
             grid.VerticalOptions = LayoutOptions.Center;
             grid.HorizontalOptions = LayoutOptions.Center;
-            grid.Children.Add(loadMoreBorder);
+            grid.Children.Add(LoadMoreImage,0,0);
+            grid.Children.Add(LoadMoreLabel,0,1);
             grid.Children.Add(indicator);
             return grid;
         });

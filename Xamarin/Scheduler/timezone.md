@@ -1210,6 +1210,41 @@ You can display the appointments based on the client’s local time zone in sche
 {% endhighlight %}  
 {% endtabs %} 
 
+You can set the appointment’s time zone to `Eastern Standard Time (North Carolina)` by using the `StartTimeZone` and `EndTimeZone` properties.
+
+{% tabs %}   
+{% highlight c# %}
+namespace ScheduleXamarin
+{
+    public class Meeting
+    {
+        public string StartTimeZone { get; set; }
+        public string EndTimeZone { get; set; }
+    }
+}
+{% endhighlight %}  
+{% endtabs %}
+
+{% tabs %}   
+{% highlight c# %}
+namespace ScheduleXamarin
+{
+    public class SchedulerViewModel : INotifyPropertyChanged
+    {
+		private void AddAppointments()
+        {
+		   var meeting = new Meeting();
+           meeting.StartTimeZone = "W. Europe Standard Time";
+           meeting.EndTimeZone = "W. Europe Standard Time";
+           this.Meetings.Add(meeting);
+		}
+	}
+}
+{% endhighlight %}  
+{% endtabs %}
+
+You can download the example demo here
+
 ## Display appointments based on schedule time zone
 You can set specific time zone to schedule using the [TimeZone](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeZone.html) property of schedule. On this scenario, the appointments will be displayed in UTC time when the `StartTimeZone` and `EndTimeZone` properties of `ScheduleAppointment` are set to null. The appointments will be displayed in UTC time based on the given schedule time zone.
 

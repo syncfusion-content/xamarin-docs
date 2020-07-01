@@ -78,7 +78,7 @@ The Android platform does not require any additional configurations to render th
 
 N> Signature Pad support has not been provided for UWP Platform.
 
-N> User have to install the [Nuget](https://www.nuget.org/packages/SkiaSharp.Views.Forms/2.80.0-preview.14) for Signature Pad.
+N> User have to install the [Nuget](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.68.0) for Signature Pad.
 
 ## Adding a namespace
 

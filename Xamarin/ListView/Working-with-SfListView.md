@@ -1143,7 +1143,7 @@ protected override void OnDisappearing()
 
 ## Refresh view
 
-You can refreshes the view by using the [RefreshView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshView.html) method in SfListView.
+You can refresh the view by using the [RefreshView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshView.html) method. It will be used to refresh the items in the listview at runtime while updating the view.
 
 {% tabs %}
 {% highlight c# %} 

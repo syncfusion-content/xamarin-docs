@@ -1224,7 +1224,6 @@ namespace ScheduleXamarin
         public string EndTimeZone { get; set; }
         ........
         ........
-
     }
 }
 {% endhighlight %}  

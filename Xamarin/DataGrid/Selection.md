@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection | SfDataGrid | Xamarin | Syncfusion
-description: How to enable selection, about the selection modes, properties, events, and customizations available for selection in a data grid.
+description: How to enable selection for rows and cells, the selection modes, properties, events, and customizations available for selection in a data grid.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
@@ -11,13 +11,45 @@ documentation: UG
 
 This section explains how to enable selection in the data grid; modes, properties, and events involved in selection; and customizations available for selection.
 
-The data grid allows you to select a specific row or group of rows either programmatically or by touch interactions. To enable selection, set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) property to a value other than `None`. This control has different selection modes to perform the selection operation as follows:
+The data grid allows you to select one or more rows or cells. The `SfDataGrid.SelectionUnit` and [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) properties together defines the behavior of selection in data grid.
 
-### Disable selection for rows and columns
+## Selection unit
 
-You can disable selection and navigation in a particular column using the [GridColumn.AllowFocus](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowFocus.html) property. You can disable selection in a particular row or cell or column by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentCellActivating_EV.html)  event. 
+<table>
+<tr>
+<th> Unit </th>
+<th> Description </th>
+</tr>
+<tr>
+<td> Row </td>
+<td> Allows selection of a specific row or group of rows either programmatically or by touch interactions. Tapping on a cell selects the entire row. This is the default value. </td>
+</tr>
+<tr>
+<td> Cell </td>
+<td> Allows selection of a specific cell or group of cells either programmatically or by touch interactions. Tapping on a cell selects only that particular cell and not the entire row. </td>
+</tr>
+<tr>
+<td> Any </td>
+<td> Allows selection of both rows and cells. Tapping on the row header selects the entire row. Tapping on a cell selects only that particular cell. </td>
+</tr>
+</table>
 
-N> It is not possible to select header rows, table summary rows, and unbound rows that are above the table summary row when they are placed at the top and the unbound rows that are placed are below table summary rows when they placed at the bottom of SfDataGrid.
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       ColumnSizer="Star"
+                       AutoGenerateColumns="True"
+                       SelectionUnit="Cell" 
+                       ItemsSource="{Binding OrdersInfo}"/>
+{% endhighlight %}
+{% highlight c# %}
+dataGrid.SelectionUnit = SelectionUnit.Cell; 
+{% endhighlight %}
+{% endtabs %}
+
+![DataGrid with multiple cell selection](SfDataGrid_images/Cell-Selection-Xamarin-Forms-DataGrid.png)
+
+N> It is not possible to set `NavigationMode.Row` when cell selection is enabled (SelectionUnit is Cell or Any).
 
 ## Selection modes 
 
@@ -28,23 +60,21 @@ N> It is not possible to select header rows, table summary rows, and unbound row
 </tr>
 <tr>
 <td> {{'[None](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SelectionMode.html)'| markdownify }} </td>
-<td>Disables selection, and no rows can be selected. This is the default value.</td>
+<td>Disables selection, and no rows or cells can be selected. This is the default value.</td>
 </tr>
 <tr>
 <td> {{'[Single](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SelectionMode.html)'| markdownify }} </td>
-<td> Allows selection of a single row only. Upon selecting the next row, the selection in the previous row is cleared. </td>
+<td> Allows selection of a single row or cell only. Upon selecting the next row or cell, the selection in the previous row or cell is cleared. </td>
 </tr>
 <tr>
 <td> {{'[Multiple](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SelectionMode.html)'| markdownify }}  </td>
-<td> Allows selection of more than one row. Selection is not cleared when selecting more than one record. When you click on a selected row for the second time, the selection is cleared. </td>
+<td> Allows selection of more than one row or cell. Selection is not cleared when selecting more than one row or cell. When you click on an already selected row or cell for the second time, the selection is cleared. </td>
 </tr>
 <tr>
 <td>  {{'[SingleDeselect](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SelectionMode.html)'| markdownify }}  </td>
-<td> Allows selection of only a single row. However, upon tapping the row again, the selection is cleared. Similar to single mode, upon selecting the next row, the selection in the previous row is cleared. </td>
+<td> Allows selection of a single row or cell only. However, upon tapping the row or cell again, the selection is cleared. Similar to single mode, upon selecting the next row or cell, the selection in the previous row or cell is cleared. </td>
 </tr>
 </table>
-
-To set the selection mode, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,13 +91,19 @@ dataGrid.SelectionMode = SelectionMode.Multiple;
 
 ![DataGrid with multiple selection](SfDataGrid_images/MultipleSelection.jpg)
 
-## Getting selected rows 
+### Disable selection for rows and columns
 
-The SfDataGrid provides `SelectedIndex`, `SelectedItem`, and `CurrentItem` properties to get details of the selected rows when the selection mode is `Single`, `Multiple`, and `SingleDeselect`.
+You can disable selection and navigation for an entire column using the [GridColumn.AllowFocus](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowFocus.html) property. You can disable selection in a particular row or cell or column by handling the [CurrentCellActivating](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentCellActivating_EV.html)  event. 
 
-* [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html): Provides the underlying data object of the selected row. Denotes the first selected row in multiple selection.
-* [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html): Provides the index of `SfDataGrid.SelectedItem`.
-* [SfDataGrid.CurrentItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentItem.html): Provides the underlying data object of the currently selected row in the data grid. Denotes the first selected row in multiple selection.
+N> It is not possible to select caption summary rows, group summary rows, table summary rows, and unbound rows that are above the table summary row when they are placed at the top and the unbound rows that are below table summary rows when they placed at the bottom of SfDataGrid.
+
+## Getting selected rows and cells
+
+The SfDataGrid provides `SelectedIndex`, `SelectedItem`, and `CurrentItem` properties to get details of the selected rows or cells when the selection mode is `Single`, `Multiple`, and `SingleDeselect`.
+
+* [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html): Provides the underlying data object of the selected row or cell. Denotes the underlying data object of the first selected row or cell in multiple selection.
+* [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html): Provides the row index of `SfDataGrid.SelectedItem`. Denotes the index of first selected row or cell in multiple selection.
+* [SfDataGrid.CurrentItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentItem.html): Provides the underlying data object of the currently selected row or cell in the data grid. Denotes the underlying data object of lastly selected row or cell in multiple selection.
 
 ### Row selection
 
@@ -76,18 +112,31 @@ When multiple rows are selected, the `SelectedItems` and `SelectionController.Se
 * [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html): Provides all the selected records of the selected items when multiple selection is enabled.
 * [SfDataGrid.SelectionController.SelectedRows](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html): Provides collection of the underlying model object(row data) of all the selected items.
 
+### Cell selection
+
+When multiple cells are selected, call the `SfDataGrid.GetSelectedCells()` method to get information of all the selected cells.
+
+{% tabs %}
+{% highlight c# %}
+var selectedCells = this.dataGrid.GetSelectedCells();
+{% endhighlight %}
+{% endtabs %}
+
 ### CurrentItem vs SelectedItem
 
-Both the [SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html) and [CurrentItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentItem.html) returns the same data object when the selection mode is single. When multiple selection is enabled, the initially selected row will be maintained in the `SelectedItem` and the currently selected row will be maintained in the `CurrentItem`.
+Both the [SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html) and [CurrentItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CurrentItem.html) returns the same data object when the selection mode is single. When multiple selection is enabled, the initially selected record will be maintained in the `SelectedItem` and the currently selected record will be maintained in the `CurrentItem`.
 
 ## Programmatic selection
 
-When `SfDataGrid.SelectionMode` is set a value other than `None`, select row/rows from the code by setting the [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html), [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html), or [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html) property based on the selection mode. To enable selection from code, follow the code example:
+### Process selection using properties
 
-When the selection mode is `Single`, programmatically select a row in two ways either by setting the row index to the `SfDataGrid.SelectedIndex` property, or by setting the underlying object to be selected to the `SfDataGrid.SelectedItem` property. 
+When the selection mode is set a value other than `None`, programmatically select a row or cell in two ways either by setting the row index to the [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html) property or by setting the underlying object to be selected to the [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html) property.
+
+If `SfDataGrid.SelectionUnit` is `Cell` or `Any` setting `SelectedIndex` or `SelectedItem` selects the first cell in the provided row index or row data respectively. If a cell is already selected, setting `SelectedIndex` or `SelectedItem` selects the same column in the newly provided row index or row data.
+
+When `SelectionMode` is set as `Multiple`, select more than one row by setting the [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html) property. The `SfDataGrid.SelectedItems` property cannot be used to select multiple cells.
 
 To programmatically select a row from the code, follow the code example:
-
 {% tabs %}
 {% highlight c# %}
 //Perform selection using selected index
@@ -115,6 +164,37 @@ dataGrid.SelectedItems.Add (viewModel.OrdersInfo [11]);
 The following screenshot shows the selection functionality in the data grid:
 
 ![DataGrid with multiple selection](SfDataGrid_images/MultipleSelection.jpg)
+
+### Process selection using methods
+
+You can select a particular cell using the `SfDataGrid.SelectCell(rowData, gridColumn)` method.
+
+{% tabs %}
+{% highlight c# %} 
+// Selects the cell at the given row and column.
+this.sfDataGrid.SelectCell(this.dataGrid.GetRecordAtRowIndex(3), this.dataGrid.Columns[1]);
+{% endhighlight %}
+{% endtabs %}
+
+![Select a particular cell in datagrid](SfDataGrid_images/ProgrammaticSelectionCell.png)
+
+When the selection mode is multiple you can select a range of cells using the `SfDataGrid.SelectCells(startRowData, startColumn, endRowData, endColumn)` method.
+
+{% tabs %}
+{% highlight c# %} 
+// Selects the range of cells that falls between the specified start/end row data and start/end column.
+this.sfDataGrid.SelectCells(this.dataGrid.GetRecordAtRowIndex(3), this.dataGrid.Columns[1], this.dataGrid.GetRecordAtRowIndex(7), this.dataGrid.Columns[1]);
+{% endhighlight %}
+{% endtabs %}
+
+![Select a range of cells in datagrid](SfDataGrid_images/ProgrammaticSelectionCells.png)
+
+You can select all the cells and rows in the datagrid using `SfDataGrid.SelectAll()` method.
+{% tabs %}
+{% highlight c# %} 
+this.sfDataGrid.SelectAll();
+{% endhighlight %}
+{% endtabs %}
 
 ## Keyboard behavior
 
@@ -328,7 +408,7 @@ dataGrid.ScrollToRowIndex((int)dataGrid.SelectedIndex);
 
 ## Clear selection
 
-Data grid allows you to clear the selection applied in the grid rows either by setting the `SfDataGrid.SelectionMode` to `None` or by calling the [SfDataGrid.SelectionController.ClearSelection ()](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController~ClearSelection.html) method.
+Data grid allows you to clear the selection applied in the grid rows and columns either by setting the `SfDataGrid.SelectionMode` to `None` or by calling the [SfDataGrid.SelectionController.ClearSelection()](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController~ClearSelection.html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -342,13 +422,31 @@ dataGrid.SelectionController.ClearSelection ();
 
 N> Selected items and selections will be cleared whenever the ItemsSource is changed at runtime.
 
+You can un-select a particular cell using the `SfDataGrid.UnselectCell(rowData, gridColumn)` method.
+
+{% tabs %}
+{% highlight c# %} 
+// Un-selects the cell at the given row and column.
+this.sfDataGrid.UnselectCell(this.dataGrid.GetRecordAtRowIndex(3), this.dataGrid.Columns[1]);
+{% endhighlight %}
+{% endtabs %}
+
+Similarly, you can un-select a range of cells using the `SfDataGrid.UnselectCells(startRowData, startColumn, endRowData, endColumn)` method.
+
+{% tabs %}
+{% highlight c# %} 
+// Un-selects the range of cells that falls between the specified start/end row data and start/end column.
+this.sfDataGrid.UnselectCells(this.dataGrid.GetRecordAtRowIndex(3), this.dataGrid.Columns[1], this.dataGrid.GetRecordAtRowIndex(7), this.dataGrid.Columns[1]);
+{% endhighlight %}
+{% endtabs %}
+
 ## Row header selection
 
-Data grid allows you to select the grid row(s) upon tapping them over the grid cells. It also allows you to select the grid rows when you tap the row header cells. To enable selection in the data grid, set the [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) property to a value other than `None`.
+By default, data grid allows you to select the grid row(s) upon tapping the row header if `SfDataGrid.SelectionUnit` is `Any`. You can  also follow the below solution to select the grid rows when you tap the row header cells if [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) is a value other than `None`.
 
 ### Select records in the data grid when tapping only on the row header cells
 
-The data grid allows you to select a specific row or group of rows by touching the grid cells. However, to select the record only when tapping the row header cells, use the `SfDataGrid.SelectionChanging` event. 
+Use the `SfDataGrid.SelectionChanging` event as shown below to achieve this behavior. 
 
 {% tabs %}
 {% highlight c# %}
@@ -375,11 +473,9 @@ N> To enable the row header in the data grid, set the `SfDataGrid.ShowRowHeader`
 
 ## Selection animation
 
-The data grid supports selecting one or more rows programmatically or by touch interactions. In addition, the control also provides extensibility to animate the selected rows. 
+The data grid provides extensibility to animate the selected rows or cells upon selection. It can be done by extending the [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController.html#) or `GridCellSelectionController` if `SelectionUnit` is `Row` or `Cell` respectively.
 
-It can be done by extending the [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController.html# ).
-
-Refer to the following example in which a CustomSelectionController is derived from `GridSelectionController` and an instance of it is assigned to the [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html ) property to perform selection animation.
+Refer to the following example in which a CustomSelectionController is derived from `GridSelectionController` and an instance of it is assigned to the [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html ) property to perform selection animation when a row is selected.
 
 {% tabs %}
 {% highlight xaml %}
@@ -430,8 +526,8 @@ public class CustomSelectionController : GridSelectionController
 
 The data grid provides the following events for selection:
 
- * [SelectionChanging](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionChanging_EV.html): This event is raised while selecting a row at the execution time before the row is selected. So it allows canceling the selection action by setting the Cancel property of `GridSelectionChangingEventArgs`.
- * [SelectionChanged](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionChanged_EV.html): This event is raised after the column is selected.
+ * [SelectionChanging](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionChanging_EV.html): This event is raised while selecting a row or cell at the execution time before the row or cell is selected. So it allows canceling the selection action by setting the `Cancel` property of `GridSelectionChangingEventArgs`.
+ * [SelectionChanged](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionChanged_EV.html): This event is raised after a row or cell is selected.
 
 These two events are triggered with `GridSelectionChangingEventArgs` and [GridSelectionChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionChangedEventArgs.html) that contain the following properties:
 
@@ -490,7 +586,7 @@ void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
 
 ### Adding multiple selection color
 
-The data grid supports selecting one or more rows either programmatically or by touch interactions. By default, the control applies a common background color for the selected rows based on the current theme. However, it also provides extensibility to have multiple selection colors when touching the rows by writing a custom SelectionController derived from [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController.html# ""), and assigning it to the [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html# "") property. Override the GetSelectionColor() method to apply different colors for selection at runtime.
+The data grid supports selecting one or more rows or cells either programmatically or by touch interactions. By default, the control applies a common background color for the selected rows or cells based on the current theme. However, it also provides extensibility to have multiple selection colors when touching the rows or cells by writing a custom SelectionController derived from [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController.html#) or `GridCellSelectionController` if `SelectionUnit` is `Row` and `Cell` respectively and assigning it to the [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html# "") property. Override the `GetSelectionColor()` method to apply different colors for selection at runtime.
 
 To set different colors for the selected rows in the data grid, follow the code example:
 

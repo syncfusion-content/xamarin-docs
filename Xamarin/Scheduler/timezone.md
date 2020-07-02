@@ -1218,8 +1218,13 @@ namespace ScheduleXamarin
 {
     public class Meeting
     {
+		........
+        ........
         public string StartTimeZone { get; set; }
         public string EndTimeZone { get; set; }
+        ........
+        ........
+
     }
 }
 {% endhighlight %}  
@@ -1236,6 +1241,8 @@ namespace ScheduleXamarin
 		   var meeting = new Meeting();
            meeting.StartTimeZone = "W. Europe Standard Time";
            meeting.EndTimeZone = "W. Europe Standard Time";
+		   .......
+           .......
            this.Meetings.Add(meeting);
 		}
 	}

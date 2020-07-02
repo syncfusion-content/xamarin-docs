@@ -495,3 +495,8 @@ You can give smooth color transition to range by specifying the different colors
 {% endtabs %}
 
 ![Range with gradient color in Xamarin.Forms Circular Gauge](ranges_images/gradient.png)
+
+**See Also:**
+
+[How to apply gradient color for ranges in Xamarin.Forms SfCircularGauge] (https://www.syncfusion.com/kb/10505/how-to-apply-gradient-color-for-ranges-in-xamarin-forms-sfcirculargauge)
+[How to bind range collection to scale in Xamarin.Forms SfCircularGauge](https://www.syncfusion.com/kb/10506/how-to-bind-range-collection-to-scale-in-xamarin-forms-sfcirculargauge)

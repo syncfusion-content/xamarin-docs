@@ -1250,7 +1250,7 @@ namespace ScheduleXamarin
 {% endhighlight %}  
 {% endtabs %}
 
-Download the entire source code form GitHub [here](https://github.com/SyncfusionExamples/timezone-schedule-xamarin).
+You can download the entire source code from [here](https://github.com/SyncfusionExamples/timezone-schedule-xamarin).
 
 ## Display appointments based on schedule time zone
 You can set specific time zone to schedule using the [TimeZone](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~TimeZone.html) property of schedule. On this scenario, the appointments will be displayed in UTC time when the `StartTimeZone` and `EndTimeZone` properties of `ScheduleAppointment` are set to null. The appointments will be displayed in UTC time based on the given schedule time zone.

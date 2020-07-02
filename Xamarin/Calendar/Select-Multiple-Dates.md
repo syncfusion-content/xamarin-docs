@@ -52,6 +52,8 @@ this.Content = calendar;
 
 ![MultiSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-multiselection.png)
 
+You can download the entire source code from GitHub
+
 N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of `SfCalendar` control.
 
 ## Range selection mode
@@ -74,6 +76,8 @@ calendar.SelectionMode=SelectionMode.RangeSelection;
 
 ![RangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-rangeslection.png)
 
+You can download the entire source code from GitHub
+
 ## Multi range selection mode
 
 {% tabs %}
@@ -94,6 +98,8 @@ calendar.SelectionMode=SelectionMode.MultiRangeSelection;
 
 ![MultiRangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-multirange.png)
 
+You can download the entire source code from GitHub
+
 ## Single selection mode
  
 {% tabs %}
@@ -113,6 +119,8 @@ calendar.SelectionMode = SelectionMode.SingleSelection;
 {% endtabs %}
 
 ![SingleSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-singleselectionmonth.png)
+
+You can download the entire source code from GitHub
 
 ## Programmatically clear the selected dates
       

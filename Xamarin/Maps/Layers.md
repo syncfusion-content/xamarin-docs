@@ -356,3 +356,7 @@ In the ShapeSelected event, the *BaseMapIndex* property has been used to change 
 {% endtabs %}
 
 ![Drilldown support in Xamarin.Forms Maps](Images/Drilldown1.jpg)  ![](Images/Drilldown_Asia.jpg) 
+
+[How to load shape files as stream in maps] (https://www.syncfusion.com/kb/10555/how-to-load-shape-files-as-stream-in-maps)
+[How to add sub shape file layer for ImageryLayer in Xamarin.Forms SfMaps] (https://www.syncfusion.com/kb/10579/how-to-add-sub-shape-file-layer-for-imagerylayer-in-xamarin-forms-sfmaps)
+[How to draw a line (route) between two terminals in SfMaps] (https://www.syncfusion.com/kb/10619/how-to-draw-a-line-route-between-two-terminals-in-sfmaps)

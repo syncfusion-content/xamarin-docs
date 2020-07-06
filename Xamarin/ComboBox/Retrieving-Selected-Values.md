@@ -570,13 +570,7 @@ namespace ComboBox
 
 {% endtabs %}
 
-### Two-Way Bindings
-
-Most bindable properties have a default binding mode of OneWay but the following properties have a default binding mode of TwoWay:
-
- * Text
- * SelectedItem
- * IsDropDownOpen
+### Two-Way Binding in SelectedItem
 
 
 When the data bindings are used with the Model-View-ViewModel (MVVM) application architecture, the ViewModel class is the data binding source, and the View that consists of views like Entry are data binding targets. It is very likely that you want each view on the page to be initialized with the value of the corresponding property in the ViewModel but changes in the view should also affect the ViewModel property.
@@ -596,33 +590,79 @@ The properties with default binding mode of TwoWay are those properties most lik
              mc:Ignorable="d"
              xmlns:local="clr-namespace:SfComboBoxTwoWaySample"
              x:Class="SfComboBoxTwoWaySample.MainPage">
-   <ScrollView>
+
     <StackLayout>
         <Label Text="TwoWay Sample" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
         <!-- Place new controls here -->
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Padding="30">
-            <Label Text="Text_Property" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium" FontAttributes="Bold"/>
-            <Entry Text="{Binding Source={x:Reference comboBox},Path=Text,Mode=TwoWay}" HeightRequest="40" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
-            <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" DataSource="{Binding EmployeeCollection}" DisplayMemberPath="Name" />
-        </StackLayout>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Padding="30">
-                <Label Text="SelectedItem_Property" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium" FontAttributes="Bold"/>
+       
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
+            <Label Text="SelectedItem_Property" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium" FontAttributes="Bold"/>
+         
             <Picker SelectedItem="{Binding Source={x:Reference comboBox1},Path=SelectedItem,Mode=TwoWay}" ItemsSource="{Binding EmployeeCollection}" ItemDisplayBinding="{Binding Name}" HeightRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
 
-            <combobox:SfComboBox HeightRequest="40" x:Name="comboBox1" DataSource="{Binding EmployeeCollection}" DisplayMemberPath="Name" />
-        </StackLayout>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Padding="30">
-                <Label Text="IsDropDownOpen_Property" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium" FontAttributes="Bold"/>
-            <Switch IsToggled="{Binding Source={x:Reference comboBox2},Path=IsDropDownOpen,Mode=TwoWay}" HeightRequest="40" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
-            <combobox:SfComboBox HeightRequest="40" x:Name="comboBox2" DataSource="{Binding EmployeeCollection}" DisplayMemberPath="Name" />
-        </StackLayout>
+            <combobox:SfComboBox HeightRequest="40" x:Name="comboBox1" DataSource="{Binding EmployeeCollection}" SelectedItem="{Binding SelectedItem,Mode=TwoWay}" DisplayMemberPath="Name" />
+
+            </StackLayout>
+        
     </StackLayout>
-    </ScrollView>
 
 {% endhighlight %}
 
+{% highlight c# %}
+
+   public class EmployeeViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<Employee> employeeCollection;
+        public ObservableCollection<Employee> EmployeeCollection
+        {
+            get { return employeeCollection; }
+            set 
+            { 
+                employeeCollection = value; 
+
+
+            }
+        }
+
+        private object selectedItem;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+
+        public object SelectedItem
+        {
+            get { return selectedItem; }
+            set
+            { 
+                selectedItem = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        public EmployeeViewModel()
+        {
+            employeeCollection = new ObservableCollection<Employee>();
+            employeeCollection.Add(new Employee() { ID = 1, Name = "Frank" });
+            employeeCollection.Add(new Employee() { ID = 2, Name = "James" });
+            employeeCollection.Add(new Employee() { ID = 3, Name = "Steve" });
+            employeeCollection.Add(new Employee() { ID = 4, Name = "Lucas" });
+            employeeCollection.Add(new Employee() { ID = 5, Name = "Mark" });
+            employeeCollection.Add(new Employee() { ID = 6, Name = "Michael" });
+            employeeCollection.Add(new Employee() { ID = 7, Name = "Aldrin" });
+            employeeCollection.Add(new Employee() { ID = 8, Name = "Jack" });
+            employeeCollection.Add(new Employee() { ID = 9, Name = "Howard" });
+
+            SelectedItem = EmployeeCollection[2];
+        }
+    }
+{% endhighlight %}
 {% endtabs %}
 
 We have attached sample for reference. You can download the sample from the following link.
 
-Sample Link: [`SfComboBoxsample_TwoWay`] (https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfComboBoxTwoWaySample_New1536124101)
+Sample Link: [`SfComboBoxsample_TwoWay`] (https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfComboBoxTwoWaySample_Updated-1947496042)

@@ -7,7 +7,7 @@ control: SfAutoComplete
 documentation: ug
 ---
 
-## DataTemplateSelector
+# DataTemplateSelector in Xamarin AutoComplete (SfAutoComplete)
 
 SfAutoComplete supports DataTemplateSelector, which is used to choose a DataTemplate based on data object.
  

@@ -368,3 +368,42 @@ private void PdfViewer_ShapeAnnotationRemoved(object sender, ShapeAnnotationRemo
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to enable or disable shape annotation interaction?
+
+The interaction operation can be enabled or disabled for shape annotation alone by setting the `IsLocked` API to `false` or `true` respectively.
+
+For example, the following code disables the interaction operations for all shape annotations in the PDF. But other annotation types can be selected, moved, resized, or removed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the arrow annotation interaction
+pdfViewerControl.AnnotationSettings.Arrow.IsLocked = true;
+
+//Disable the line annotation interaction
+pdfViewerControl.AnnotationSettings.Line.IsLocked = true;
+
+//Disable the rectangle annotation interaction
+pdfViewerControl.AnnotationSettings.Rectangle.IsLocked = true;
+
+//Disable the circle annotation interaction
+pdfViewerControl.AnnotationSettings.Circle.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+The interaction with shape annotation types will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code does not allow the interactions with shape annotations, although the `IsLocked` property of the shape annotation is set to `false`. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disables the shape annotation interaction, though its 'IsLocked' property is set to ‘false’ 
+pdfViewerControl.AnnotationSettings.IsLocked = true;
+pdfViewerControl.AnnotationSettings.Arrow.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Line.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Rectangle.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Circle.IsLocked = false;
+
+{% endhighlight %}
+{% endtabs %}

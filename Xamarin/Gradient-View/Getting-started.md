@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting started | SfGradientView | Xamarin | Syncfusion
-description: A quick tour to initial users on Syncfusion border control for Xamarin.Forms platform.
+description: A quick tour to initial users on Syncfusion gradient view control for Xamarin.Forms platform and also explains about the GradientBrush.
 platform: xamarin
 control: SfGradientView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfGradientView
 
 This section explains the steps required to work with the gradient view control for Xamarin.Forms.
 

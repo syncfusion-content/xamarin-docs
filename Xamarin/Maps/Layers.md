@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Layers in Syncfusion Maps control for Xamarin.Forms
-description: This section describes about the layers in maps
+description: This section describes about the imagery layer, shape file layer, shape settings, customize the shapes and events in maps
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Layers
+# Layers in Syncfusion Map control
 
 The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.SfMaps~LayersProperty.html); a map can accommodate one or more layers.
 

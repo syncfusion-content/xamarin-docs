@@ -493,6 +493,33 @@ listView.LayoutManager = new GridLayout() { SpanCount = 3 };
 {% endhighlight%}
 {% endtabs %}
 
+## DataSource
+
+The [DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource.html) gets the raw data and processes data operations such as sorting, filtering, and grouping in SfListView. The data source of the ListView is set using the `ItemsSource` attribute.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms"
+             xmlns:data="clr-namespace:Syncfusion.DataSource;assembly=Syncfusion.DataSource.Portable"             
+             xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
+             x:Class="GettingStarted.MainPage">             
+             
+  <syncfusion:SfListView x:Name="listView"  ItemsSource="{Binding BookInfo}" >
+  </syncfusion:SfListView>
+</ContentPage>
+{% endhighlight %}
+{% highlight c# %}
+ SfListView listView = new SfListView();
+    DataSource dataSource = new DataSource();
+    dataSource.Source = ViewModel.BookInfo;
+	listView.DataSource = dataSource;
+    listView.DataSource.Refresh();
+{% endhighlight %}
+{% endtabs %}
+
 ## Sorting
 
 The SfListView allows sorting on its data by using the [SfListView.DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. Create [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) for the property to be sorted, and add it into the `DataSource.SortDescriptors` collection.

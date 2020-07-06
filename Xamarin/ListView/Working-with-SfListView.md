@@ -1141,6 +1141,16 @@ protected override void OnDisappearing()
 {% endhighlight %}
 {% endtabs %}
 
+## Refresh view
+
+You can refresh the view by using the [RefreshView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshView.html) method. It will be used to refresh the items in the listview at runtime while updating the view.
+
+{% tabs %}
+{% highlight c# %} 
+   listview.RefreshView();   
+{% endhighlight %}
+{% endtabs %}
+
 ## See also
 
 [How to highlight the tapped view in ItemTemplate in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11235)                                                                                                                                                                                                                                                      

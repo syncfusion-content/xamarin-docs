@@ -46,6 +46,10 @@ The Content of the `SfExpander` gets re-measured and layout when its size is upd
 {% endhighlight %}
 {% endtabs %}
 
+![Xamarin Forms Expander with Content](expander_images/Dynamic_size_content.png)
+
+![Xamarin Forms Expander DynamicSizeMode as Content](expander_images/Dynamic_size_content_Ex.png)
+
 ### DynamicSizeMode as Header
 
 The Header of the `SfExpander` gets re-measured and layout when its size is updated at runtime. You can add the `Editor` control to Expander header and set DynamicSizeMode to `Header` to change the header size dynamically.
@@ -70,3 +74,7 @@ The Header of the `SfExpander` gets re-measured and layout when its size is upda
      expander.DynamicSizeMode = DynamicSizeMode.Header;
 {% endhighlight %}
 {% endtabs %}	
+
+![Xamarin Forms Expander with Header](expander_images/Dynamic_size_Header.png)
+
+![Xamarin Forms Expander DynamicSizeMode as Header](expander_images/Dynamic_size_Header_Ex.png)

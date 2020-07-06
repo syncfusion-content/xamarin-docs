@@ -1556,6 +1556,8 @@ namespace GettingStarted
         }
     }
 }
+{% endhighlight %}
+{% endtabs %}
 
 **Card Command**
 {% tabs %}

@@ -158,7 +158,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can get the item elements hold by a scrollable visual container using the [GetVisualContainer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Control.Helpers.SfListViewHelper~GetVisualContainer.html method. It is a helper method of SfListView control.
+You can get the item elements to hold by a scrollable visual container using the [GetVisualContainer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Control.Helpers.SfListViewHelper~GetVisualContainer.html) method. It is a helper method of SfListView control.
 
 {% tabs %}
 {% highlight c# %}
@@ -210,7 +210,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can get the scroll view by using the [GetScrollView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Control.Helpers.SfListViewHelper~GetScrollView.html) method. It is a Helper method to get the Syncfusion.ListView.XForms.ExtendedScrollView class.
+You can get the scroll view by using the [GetScrollView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Control.Helpers.SfListViewHelper~GetScrollView.html) method. It is a helper method to get the Syncfusion.ListView.XForms.ExtendedScrollView class.
 
 {% tabs %}
 {% highlight c# %}

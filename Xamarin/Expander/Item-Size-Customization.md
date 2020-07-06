@@ -58,7 +58,7 @@ The Header of the `SfExpander` gets re-measured and layout when its size is upda
 {% highlight xaml %}
 <syncfusion:SfExpander DynamicSizeMode="Content" IsExpanded="True">
                     <syncfusion:SfExpander.Header>
-                        <Grid HeightRequest="50">
+                        <Grid>
                             <Editor Text="Veggie burger" AutoSize="TextChanges" FontSize="Large"/>
                         </Grid>
                     </syncfusion:SfExpander.Header>

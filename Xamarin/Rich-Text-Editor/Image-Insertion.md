@@ -313,7 +313,7 @@ private void rte_ImageInserted(object sender, ImageInsertedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-## Save Image as base64 in the HtmlText
+## Save Image as Base64 in the HtmlText
 
 The following code example shows how to insert an image as base64 and retrieve in the HtmlText.
 
@@ -323,7 +323,7 @@ The following code example shows how to insert an image as base64 and retrieve i
 <ContentPage.Content>
     <StackLayout>
         <richtexteditor:SfRichTextEditor x:Name="rte" VerticalOptions="FillAndExpand" ImageInserted="rte_ImageInserted"/>
-		<richtexteditor:SfRichTextEditor Text="{Binding Source= {x:Reference rte}, Path=HtmlText}" />
+        <richtexteditor:SfRichTextEditor Text="{Binding Source= {x:Reference rte}, Path=HtmlText}" />
     </StackLayout>
 </ContentPage.Content>
 {% endhighlight %}
@@ -335,10 +335,9 @@ private void rte_ImageInserted(object sender, ImageInsertedEventArgs e)
     Assembly assembly = typeof(MainPage).GetTypeInfo().Assembly;
     Stream image = assembly.GetManifestResourceStream("Sample.InsertImage.png");
 
-    imgSrc.ImageStream = image;
-    imgSrc.SaveOption = ImageSaveOption.Base64;		
+    imgSrc.ImageStream = image;     
+    imgSrc.SaveOption = ImageSaveOption.Base64;	
     rte.InsertImage(imgSrc);
 }
 {% endhighlight %}
 {% endtabs %}
-

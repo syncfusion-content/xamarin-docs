@@ -2036,7 +2036,7 @@ By default the author name and avatar are displayed for the incoming messages(me
 
 ## Messages without author (System Generated Messages / Admin messages) in Xamarin chat
 
-With the help of templates, you can also display messages showing any piece of information, like the security messages in whatsapp or any other admin messages. These messages can be added to the `SfChat.Messages` collection without any value for `Message.Author`.
+With the help of templates, you can also display messages showing any piece of information, like the security messages in WhatsApp or any other admin messages. These messages can be added to the `SfChat.Messages` collection without any value for `Message.Author`.
 In the below code example, we have loaded a custom template if the message's author is null to show a security message from admin.
 
 {% tabs %}

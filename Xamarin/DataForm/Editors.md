@@ -268,6 +268,11 @@ Enum and List type property.
 
 In the text editor, the [Entry](https://developer.xamarin.com/guides/xamarin-forms/user-interface/text/entry/) is loaded.
 
+### See also
+
+[How to change the text color of the editor in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11264/)                                                                                                                                                                           
+[How to programmatically set focus to editor in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11311/)
+
 ## Multiline Text editor
 
 In the `MultilineText` editor, the [Editor](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.editor?view=xamarin-forms) is loaded.
@@ -305,6 +310,11 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 }
 {% endhighlight %}
 {% endtabs %}
+
+### See also
+
+[How to remove a thousand separators in the numeric text field in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11527/)                                                                                                                                                                                                
+[How to resolve missing decimal point issue on Samsung Devices (S6, S8) numeric keyboard in DataForm ?](https://www.syncfusion.com/kb/10068/)
 
 ## Date editor
 
@@ -825,6 +835,11 @@ public class Address
 
 ![Loading complex type property values for drop down editor in Xamarin.Forms DataForm](SfDataForm_images/ComplexPropertyComboBox.jpg)
 
+### See also
+
+[How to make editable drop down in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11272/)                                                                                                                                                                                                                                                                                                                                                                           
+[How to add entered text to the dropdown collection in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11402/)
+
 ## Picker editor
 
 In the picker editor, the [Picker](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/) will be loaded.
@@ -1335,6 +1350,10 @@ When `PasswordDelay` is enabled, you can handle the duration of the displaying t
 (e.DataFormItem as DataFormMaskedEditTextItem).PasswordDelayDuration  = 2; 
 {% endhighlight %}
 {% endtabs %}
+
+### See also
+
+[How to mask credit card number in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11542/)
 
 ## AutoComplete editor
 
@@ -1969,3 +1988,11 @@ dataForm.RegisterEditor("ContactName", "CustomTextEditor");
 {% endtabs %}
 
 You should manually commit and validate the editor value of custom DataFormItem. Refer to this [link](https://help.syncfusion.com/xamarin/sfdataform/editing#creating-new-custom-editor) to know more about custom editor. 
+
+### See also
+
+[How to commit and validate the custom editor value to corresponding DataObject property in Xamarin.Forms SfDataForm](https://www.syncfusion.com/kb/10224/)                                                                                                                                                                                                                                                                                                                                    
+[How to add custom image editor in Xamarin.Forms DataForm](https://www.syncfusion.com/kb/10104/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+[How to add floating label text editor in DataForm Xamarin.Forms](https://www.syncfusion.com/kb/10051/)                                                                                                                                                                                                                                                     
+[How to raise dataform editor Touch event in Xamarin.Forms SfDataForm](https://www.syncfusion.com/kb/10227/)                                                                                                                                                                                                                                                                                                            
+[How to add custom text editor in Xamarin.Forms DataForm and customize the default appearance in platform renderer](https://www.syncfusion.com/kb/9756/)

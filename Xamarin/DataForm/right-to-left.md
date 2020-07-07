@@ -7,7 +7,7 @@ control: SfDataForm
 documentation: UG
 ---
 
-# Right to left (RTL)
+# Right to left (RTL) in Xamarin DataForm (SfDataForm)
 
 SfDataForm supports to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
 
@@ -72,3 +72,7 @@ LoadApplication (new App ());
 {% endtabs %}
 
 ![RTL in Xamarin.Forms DataForm](SfDataForm_images/DataForm_RTL.png)
+
+## See also
+
+[How to customize the input direction of custom text editor in platform renderer](https://www.syncfusion.com/kb/9043/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

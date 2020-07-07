@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing | SfDataForm | Xamarin.Forms | Syncfusion
-description: Editing in SfDataForm for Xamarin.Forms.
+description: Describes editing, number of editor types, converter, and commit mode of SfDataForm for Xamarin.Forms
 platform: xamarin
 control: SfDataForm
 documentation: UG

@@ -1129,7 +1129,7 @@ chart.SecondaryAxis = numerical;
 
 The date time values can be formatted by using the [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) property of the axis.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight xaml %}
 

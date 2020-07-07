@@ -1137,7 +1137,7 @@ The date time values can be formatted by using the [`LabelFormat`](http://help.s
 
     <chart:DateTimeAxis.LabelStyle>
 	
-        <chart:ChartAxisLabelStyle LabelFormat="dd/MMM/yyy"/>
+        <chart:ChartAxisLabelStyle LabelFormat="dd/MMM/yyyy"/>
 		
     </chart:DateTimeAxis.LabelStyle>
 	

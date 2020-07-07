@@ -7,7 +7,7 @@ control: SfDataForm
 documentation: UG
 ---
 
-# Editing 
+# Editing in Xamarin DataForm (SfDataForm)
 
 The data form supports several built-in editors. 
 

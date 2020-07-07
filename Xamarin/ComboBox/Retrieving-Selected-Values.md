@@ -490,21 +490,8 @@ The following code sample demonstrates how to retrieve [`SelectedItem`](https://
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None"  SelectionChanged="ComboBox_SelectionChanged">
-            <comboBox:SfComboBox.ComboBoxSource>
-                <ListCollection:List x:TypeArguments="x:String">
-                    <x:String>Antigua and Barbuda</x:String>
-                    <x:String>American Samoa</x:String>
-                    <x:String>Afghanistan</x:String>
-                    <x:String>Antarctica</x:String>
-                    <x:String>Argentina</x:String>
-                    <x:String>Anguilla</x:String>
-                    <x:String>Albania</x:String>
-                    <x:String>Algeria</x:String>
-                    <x:String>Andorra</x:String>
-                    <x:String>Angola</x:String>
-                </ListCollection:List>
-            </comboBox:SfComboBox.ComboBoxSource>
+        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None" DataSource="{Binding EmployeeCollection}" SelectedItem="{Binding SelectedItem,Mode=TwoWay}"  SelectionChanged="ComboBox_SelectionChanged">
+           
         </comboBox:SfComboBox>
     </StackLayout> 
 </ContentPage>
@@ -521,96 +508,49 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace ComboBox
-{
+{  
     public partial class MainPage : ContentPage
-     {
-        SfComboBox comboBox;
+    {
+   
         public MainPage()
         {
             InitializeComponent();
-            StackLayout stackLayout = new StackLayout()
-            {
-                VerticalOptions = LayoutOptions.Start,
-                HorizontalOptions = LayoutOptions.Start,
-                Padding = 30
-            };
-
-            comboBox = new SfComboBox()
-            {
-                HeightRequest = 40,
-                MultiSelectMode = MultiSelectMode.None,
-                DataSource = new List<string>()
-                {
-                    "Antigua and Barbuda",
-                    "American Samoa",
-                    "Afghanistan",
-                    "Antarctica",
-                    "Argentina",
-                    "Anguilla",
-                    "Albania",
-                    "Algeria",
-                    "Andorra",
-                    "Angola"
-                }
-            };
-
-            comboBox.SelectionChanged += ComboBox_SelectionChanged;
-            stackLayout.Children.Add(comboBox);
-            this.Content = stackLayout;
+            this.BindingContext = new ViewModel();
         }
-
+          
         private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
         {
             DisplayAlert("Selection Changed", "SelectedItem: " + comboBox.SelectedItem, "OK");
         }
-  }
+    }
 }
-
+       
 {% endhighlight %}
-
 {% endtabs %}
 
-### Two-Way Binding in SelectedItem
-
-
-When the data bindings are used with the Model-View-ViewModel (MVVM) application architecture, the ViewModel class is the data binding source, and the View that consists of views like Entry are data binding targets. It is very likely that you want each view on the page to be initialized with the value of the corresponding property in the ViewModel but changes in the view should also affect the ViewModel property.
-  
-The properties with default binding mode of TwoWay are those properties most likely to be used in MVVM scenarios.
-
+Define a simple model class employee with fields ID and name, and then populate employee data and `SelectedItem` in ViewModel.
 
 {% tabs %}
-
-{% highlight xaml %}
-
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
-             mc:Ignorable="d"
-             xmlns:local="clr-namespace:SfComboBoxTwoWaySample"
-             x:Class="SfComboBoxTwoWaySample.MainPage">
-
-    <StackLayout>
-        <Label Text="TwoWay Sample" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
-        <!-- Place new controls here -->
-       
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
-            <Label Text="SelectedItem_Property" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Medium" FontAttributes="Bold"/>
-         
-            <Picker SelectedItem="{Binding Source={x:Reference comboBox1},Path=SelectedItem,Mode=TwoWay}" ItemsSource="{Binding EmployeeCollection}" ItemDisplayBinding="{Binding Name}" HeightRequest="100" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"/>
-
-            <combobox:SfComboBox HeightRequest="40" x:Name="comboBox1" DataSource="{Binding EmployeeCollection}" SelectedItem="{Binding SelectedItem,Mode=TwoWay}" DisplayMemberPath="Name" />
-
-            </StackLayout>
-        
-    </StackLayout>
-
-{% endhighlight %}
-
 {% highlight c# %}
 
-   public class EmployeeViewModel : INotifyPropertyChanged
+    public class Employee
+    {
+         private int id;
+         public int ID
+         {
+	      get { return id; }
+	      set { id = value; }
+         }
+
+         private string name;
+         public string Name
+         {
+	      get { return name; }
+	      set { name = value; }
+         }
+     }
+
+    public class EmployeeViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<Employee> employeeCollection;
         public ObservableCollection<Employee> EmployeeCollection
@@ -660,9 +600,6 @@ The properties with default binding mode of TwoWay are those properties most lik
             SelectedItem = EmployeeCollection[2];
         }
     }
+
 {% endhighlight %}
 {% endtabs %}
-
-We have attached sample for reference. You can download the sample from the following link.
-
-Sample Link: [`SfComboBoxsample_TwoWay`] (https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfComboBoxTwoWaySample_Updated-1947496042)

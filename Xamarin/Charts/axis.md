@@ -1097,7 +1097,7 @@ Chart.PrimaryAxis.Title.Text = "Month";
 
 The numeric values can be formatted by using the [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) property. Numeric values can be formatted with n (number with decimal points), c (Currency) and p (percentage) commands.
 
-% tabs %} 
+{% tabs %} 
 
 {% highlight xaml %}
 

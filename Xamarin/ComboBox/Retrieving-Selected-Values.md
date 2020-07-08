@@ -490,7 +490,7 @@ The following code sample demonstrates how to retrieve [`SelectedItem`](https://
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None" DataSource="{Binding EmployeeCollection}" SelectedItem="{Binding SelectedItem,Mode=TwoWay}"  SelectionChanged="ComboBox_SelectionChanged">
+        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None" DataSource="{Binding EmployeeCollection}" DisplayMemberPath ="Name" SelectedItem="{Binding SelectedItem,Mode=TwoWay}"  SelectionChanged="ComboBox_SelectionChanged">
            
         </comboBox:SfComboBox>
     </StackLayout> 
@@ -528,7 +528,7 @@ namespace ComboBox
 {% endhighlight %}
 {% endtabs %}
 
-Define a simple model class employee with fields ID and name, and then populate employee data and `SelectedItem` in ViewModel.
+Define a simple model class employee with fields ID and Name, and then populate employee data and `SelectedItem` in ViewModel.
 
 {% tabs %}
 {% highlight c# %}
@@ -559,8 +559,6 @@ Define a simple model class employee with fields ID and name, and then populate 
             set 
             { 
                 employeeCollection = value; 
-
-
             }
         }
 

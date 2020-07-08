@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Events in Syncfusion Xamarin.Forms SfRotator
-description: How to use a ItemTapped for Xamarin.Forms SfRotator
+description: This section shows how to use a ItemTapped and SelectedIndexChanged events of Xamarin.Forms SfRotator
 platform: xamarin 
 control: Rotator 
 documentation: ug
 ---
 
-# Events
+# Events in Xamarin Rotator (SfRotator)
 
 ## Selection Changed
 
@@ -66,9 +66,28 @@ namespace Rotator
     public partial class MainPage : ContentPage
     {
 
+       RotatorViewModel viewmodel = new RotatorViewModel();
         public MainPage()
         {
             InitializeComponent();
+            StackLayout layout = new StackLayout();
+            SfRotator rotator = new SfRotator();
+            rotator.ItemTapped += Rotator_ItemTapped;
+            rotator.SelectedIndexChanged += Rotator_SelectedIndexChanged;
+            rotator.ItemsSource = viewmodel.ImageCollection;
+            var itemTemplate = new DataTemplate(() =>
+            {
+                var grid = new Grid();
+                var nameLabel = new Image();
+                nameLabel.SetBinding(Image.SourceProperty, "Image");
+                grid.Children.Add(nameLabel);
+                return grid;
+            });
+            rotator.ItemTemplate = itemTemplate;
+            layout.Children.Add(rotator);
+            this.Content = layout;
+            this.BindingContext = viewmodel;
+
         }
 
         private void Rotator_ItemTapped(object sender, EventArgs e)

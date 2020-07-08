@@ -900,6 +900,12 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ![Xamarin Forms chat hyper link message](SfChat_images/xamarin-forms-chat-hyperlink-message.png)
 
+### Adding hyperlink message as an outgoing message
+
+Unlike the other messages, the `HyperlinkMessage` can also be shown as an outgoing message. To add an `HyperlinkMessage` as an outgoing message just set the [HyperlinkMessage.Author](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Author.html) as [SfChat.CurrentUser](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html).
+
+![Send hyper link message](SfChat_images/xamarin-forms-chat-outgoing-hyperlink-message.png)
+
 ## Image message
 
 [ImageMessage](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage.html) is used to display an image as a message. Using the [ImageMessage.Source](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage~Source.html), [ImageMessage.Size](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage~Size.html) and [ImageMessage.Aspect](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage~Aspect.html) properties you can display the desired image in the desired height and width as a message in the chat control.
@@ -1295,6 +1301,367 @@ namespace GettingStarted
 
 You can download the complete project of this demo from [here](https://github.com/SyncfusionExamples/How-to-display-a-GIF-in-Xamarin.Forms-Chat).
 
+## Card Message
+
+You can show a list of interactive cards with each card containing an image, list of buttons and text (title, subtitle and description) to tie in with the cards of popular bot frameworks. Use the `Card.Image`, `Card.Title`, `Card.Subtitle` and `Card.Description` properties to display image, title, subtitle and description in a card respectively.
+
+You can also show one or more buttons in a card as options to choose from. Create the `CardButton` with necessary `CardButton.Title`(the text to be displayed in the button) and `CardButton.Value`(the text value that should be added as response message when button is clicked, usually the title of the card) and add it to the `CardMessage.Buttons` collection.
+
+Upon creating the individual cards, add them to a `Card` typed collection and assign this collection of cards to the `CardMessage.Cards` property. The card message auto-sizes itself in height based on the card contents(the text and button count) of the largest card in the list of cards.
+
+If you dont want to display images, buttons or text(title, subtitle, description) in a card simply do not set values to the required properties. For example if you dont want to display image in a card, do no set any value to the `Card.Image` property.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:GettingStartedViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           ShowOutgoingMessageAvatar="True" />
+	<ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# %}
+using Syncfusion.XForms.Chat;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        SfChat sfChat;
+        GettingStartedViewModel viewModel;
+        public MainPage()
+        {
+            InitializeComponent();
+            this.sfChat = new SfChat();
+            this.viewModel = new GettingStartedViewModel();
+            this.sfChat.Messages = viewModel.Messages;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.ShowOutgoingMessageAvatar = true;
+            this.Content = sfChat;
+        }
+    }
+}
+
+/// <summary>
+/// View model class for chat view.
+/// </summary>
+public class GettingStartedViewModel : INotifyPropertyChanged
+{
+    private ObservableCollection<object> messages;
+	private ObservableCollection<Card> cardsCollection;
+
+    /// <summary>
+    /// current user of chat.
+    /// </summary>
+    private Author currentUser;
+
+    public GettingStartedViewModel()
+    {
+        this.Messages = new ObservableCollection<object>();
+        this.CurrentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
+		this.GenerateCards();
+        this.GenerateMessages();
+    }
+
+	private void GenerateCards()
+    {
+		cardsCollection = new ObservableCollection<Card>();
+		Card card1 = new Card()
+		{
+			Title = "San Francisco",
+            Description = "A popular tourist destination, San Francisco is known for its cool summers, fog, steep rolling hills, eclectic mix of architecture, and landmarks, including the Golden Gate Bridge, cable cars, the former Alcatraz Federal Penitentiary, Fisherman's Wharf, and its Chinatown district.",
+			Image = "SanFrancisco.png",
+		};
+		card1.Buttons.Add(new CardButton() { Title = "Choose", Value = "San Francisco" });
+
+		Card card2 = new Card()
+		{
+			Title = "Miami",
+			Description = " Miami, officially the City of Miami, is the seat of Miami-Dade County, and the cultural, economic and financial center of South Florida in the United States. The city covers an area of about 56 square miles between the Everglades to the west and Biscayne Bay to the east.",
+			Image = "Miami.png",
+		};
+		card2.Buttons.Add(new CardButton() { Title = "Choose", Value = "Miammi" });
+
+		Card card3 = new Card()
+		{
+			Title = "Las Vegas",
+			Description = "Las Vegas is an internationally renowned major resort city, known primarily for its gambling, shopping, fine dining, entertainment, and nightlife. The Las Vegas Valley as a whole serves as the leading financial, commercial, and cultural center for Nevada.",
+			Image = "LasVegas.png",
+		};
+		card3.Buttons.Add(new CardButton() { Title = "Choose", Value = "Las Vegas" });
+
+		Card card4 = new Card()
+		{
+			Title = "Dallas",
+			Description = "Dallas, a modern metropolis in north Texas, is a commercial and cultural hub of the region. Downtowns Sixth Floor Museum at Dealey Plaza commemorates the site of President John F. Kennedys assassination in 1963. In the Arts District, the Dallas Museum of Art and the Crow Collection of Asian Art cover thousands of years of art. The sleek Nasher Sculpture Center showcases contemporary sculpture.",
+			Image = "Dallas.png",
+		};
+		card4.Buttons.Add(new CardButton() { Title = "Choose", Value = "Dallas" });
+
+		this.CardsCollection.Add(card1);
+		this.CardsCollection.Add(card2);
+		this.CardsCollection.Add(card3);
+		this.CardsCollection.Add(card4);
+    }	
+	
+    private void GenerateMessages()
+    {
+        Messages.Add(new CardMessage()
+        {
+			Cards = CardsCollection,
+            Author = new Author(){Name="Stacy", Avatar= ImageSource.FromResource("Stacy.png")}
+		});
+    }
+
+    /// <summary>
+    /// Gets or sets the current user.
+    /// </summary>
+    public Author CurrentUser
+    {
+        get
+        {
+            return this.currentUser;
+        }
+        set
+        {
+            this.currentUser = value;
+            RaisePropertyChanged("CurrentUser");
+        }
+    }
+
+    /// <summary>
+    /// Gets or sets the message conversation.
+    /// </summary>
+    public ObservableCollection<object> Messages
+    {
+        get
+        {
+            return this.messages;
+        }
+        set
+        {
+            this.messages = value;
+        }
+    }
+	
+	/// <summary>
+    /// Gets or sets the Collection of type <see cref="Card"/>.
+    // </summary>
+    public ObservableCollection<Card> CardsCollection
+    {
+		get
+		{
+			return cardsCollection;
+		}
+		set
+		{
+			cardsCollection = value;
+			RaiseNotifyPropertyChanged(nameof(CardsCollection));
+		}
+	}
+
+    /// <summary>
+    /// Property changed handler.
+    /// </summary>
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    /// <summary>
+    /// Occurs when property is changed.
+    /// </summary>
+    /// <param name="propName">changed property name</param>
+    public void RaisePropertyChanged(string propName)
+    {
+        if (this.PropertyChanged != null)
+        {
+            this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+**Card message with button**
+![Xamarin Forms chat card message](SfChat_images/xamarin-forms-chat-card-message.png)
+
+**Card message without button**
+![Xamarin Forms chat card message](SfChat_images/xamarin-forms-chat-card-message1.png)
+
+### Event and Command
+
+The CardMessage comes with built-in `SfChat.CardTapped` event and `SfChat.CardCommand` that will be fired upon tapping a button in a card or tapping any card in the message . You can get the selected `Card`, the clicked `CardButton` and the actual `CardMessage` via the `CardTappedEventArgs` as `CardTappedEventArgs.Card`, `CardTappedEventArgs.Action` and `CardTappedEventArgs.Message` respectively, in both the `CardTapped` event handler and action of `CardCommand`. Handling this event/command by setting `CardTappedEventArgs.Handled` prevents the `Card.Title` or `CardButton.Value` from getting added as a new message.
+
+N> The `Action` argument in `CardTappedEventArgs` holds a valid value only only when clicking the `CardButton` in a card. Tapping elsewhere inside the card fires the `CardTapped` event and `CardCommand` with `Action` as null in the `CardTappedEventArgs`. If the `CardTappedEventArgs.Action` is null, the `CardTappedEventArgs.Card.Title` is added as a new message, else the `CardTappedEventArgs.Action.Value` is added as a new message.
+
+**Card Tapped Event**
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:GettingStartedViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           CardTapped="ChatCardTapped"/>
+	<ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# %}
+using Syncfusion.XForms.Chat;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        SfChat sfChat;
+        GettingStartedViewModel viewModel;
+        public MainPage()
+        {
+            InitializeComponent();
+            this.sfChat = new SfChat();
+            this.viewModel = new GettingStartedViewModel();
+            this.sfChat.Messages = viewModel.Messages;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.Content = sfChat;
+        }
+		
+		private void ChatCardTapped(object sender, Syncfusion.XForms.Chat.CardTappedEventArgs e)
+        {
+             e.Message.HideAfterSelection = false;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+**Card Command**
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:GettingStartedViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           CardCommand="{Binding CardTappedCommand}"/>
+	<ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# %}
+//ViewModel.cs
+public class GettingStartedViewModel : INotifyPropertyChanged
+...
+public GettingStartedViewModel()
+{
+	this.Messages = new ObservableCollection<object>();
+	this.CurrentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
+	this.GenerateCards();
+	this.GenerateMessages();
+	this.CardTappedCommand = new Command(CardTapped);
+}
+private void CardTapped(object args)
+{
+	(args as CardTappedEventArgs).Handled = true;
+}
+...
+{% endhighlight %}
+{% endtabs %}
+
+## Template for message
+
+SfChat allows to load custom templates for all incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) property. You can customize the message views as per your liking with the support to load template for each individual message by using a custom template selector derived from `ChatMessageTemplateSelector` and assigning it to `SfChat.MessageTemplate` as shown below. Load custom templates based on the message type, text, author, etc. The limits are endless.
+
+We have loaded a custom template if the message's text contains a particular text value in the below code example.
+
+{% tabs %}
+{% highlight c# %}
+using Syncfusion.XForms.Chat;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        SfChat sfChat;
+        GettingStartedViewModel viewModel;
+        public MainPage()
+        {
+            InitializeComponent();
+            sfChat = new SfChat();
+            viewModel = new GettingStartedViewModel();
+            this.sfChat.Messages = viewModel.Messages;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.MessageTemplate = new MyCustomMessageTemplateSelector() { Chat = this.sfChat };
+            this.Content = sfChat;
+        }
+    }
+}
+
+public class MyCustomMessageTemplateSelector : ChatMessageTemplateSelector
+{
+    private readonly DataTemplate ratingDataTemplate;
+    public MyCustomMessageTemplateSelector(SfChat chat) : base(chat)
+    {
+        this.ratingDataTemplate = new DataTemplate(typeof(RatingTemplate));
+    }
+
+    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+    {
+        if (item as ITextMessage != null && item as ITextMessage.Text == "How would you rate your interaction with our travel bot?")
+        {
+            // returns a custom rating template for this messages.
+            return this.ratingDataTemplate; 
+        }
+        else
+        {
+            // returns default template for all other messages.
+            return base.OnSelectTemplate(item, container);
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin Forms chat message template](SfChat_images/xamarin-forms-chat-message-template.png)
+
+You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/Chat-Message-Template-Xamarin.Forms).
+
+
 ## Sending message
 
 The [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html) can send messages using the send button in the message input area at the bottom of the chat control. Tapping the send button or pressing <kbd>Enter</kbd> key (in UWP) will create a new text message with the text in the editor and add it to the [SfChat.Messages] collection. The [SfChat.SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event and [SfChat.SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) will be executed upon tapping the send button.
@@ -1314,8 +1681,8 @@ this.sfChat.SendMessage += this.SfChat_SendMessage;
 /// Raised when current user sends message to bot using Chat UI.
 /// </summary>
 /// <param name="sender"><see cref="SfChat"/> as sender.</param>
-/// <param name="e"><see cref="SendMessageEventArgs"/> asparameter.<param>
-private void SfChat_SendMessage(object sender, SendMessageEventArgse)
+/// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.<param>
+private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
 {
     e.Handled = true;
 }
@@ -1418,13 +1785,12 @@ public class SendMessageCommandExt : ICommand
 {% endhighlight %}
 {% endtabs %}
 
-## Scroll down the chat control to bottom when new message is added
+## Show keyboard always
 
-By default the SfChat control is scrolled to the bottom to show the newly added message. If you want to disable this auto scroll, set [SfChat.CanAutoScrollToBottom](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CanAutoScrollToBottom.html) as `false`. Additionally you can also scroll to a particular message programmatically using the [SfChat.ScrollToMessage(Object)](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ScrollToMessage.html) method.
+By default the keyboard will be open in view, even after a message is sent or focus is lost just like in most mainstream chat applications. To hide the keyboard after the message has been sent or lost focus set the `SfChat.ShowKeyboardAlways` property to `false`.
 
 {% tabs %}
 {% highlight xaml %}
-
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
@@ -1433,70 +1799,75 @@ By default the SfChat control is scrolled to the bottom to show the newly added 
              x:Class="GettingStarted.MainPage">
 
     <ContentPage.BindingContext>
-        <local:GettingStattedViewModel x:Name="viewModel"/>
+        <local:GettingStartedViewModel/>
     </ContentPage.BindingContext>
     
-    <ContentPage.Content>
-        <StackLayout x:Name="stack" Orientation="Vertical">
-            <Button x:Name="ScrollTo" Text="Scroll to message" HeightRequest="100" Clicked="ScrollTo_Clicked"/>
-            <sfChat:SfChat x:Name="sfChat"
+       <ContentPage.Content>
+        <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
-                       SendMessageCommand="{Binding SendMessage}"
-                       CurrentUser="{Binding CurrentUser}"
-                       CanAutoScrollToBottom ="False"
-                       ShowOutgoingMessageAvatar="True" />
-        </StackLayout>
+                       ShowKeyboardAlways="False"/> />
     </ContentPage.Content>
-
 </ContentPage>
-
-
-{% endhighlight %}
-{% highlight C# %}
-
-//MainPage.Xaml.cs
-public partial class MainPage : ContentPage
-{
-    public MainPage()
-    {
-        InitializeComponent ();
-    }
-
-    private void ScrollTo_Clicked(object sender, EventArgs e)
-    {
-        // Scroll to the sixth message in the collection.
-        this.sfChat.ScrollToMessage(this.viewModel.Messages[5]);
-    }
-}
-
 {% endhighlight %}
 {% endtabs %}
 
-## Show the avatar for outgoing message
+N> This property is not applicable for Android platform and the keyboard will be hidden after a message is sent or when focus is lost. Refer the below work around to show the keyboard always in android platform.
 
-By default the author name and avatar are not displayed for the outgoing messages(messages sent by the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html)). This can be customized in the [SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event handler or [SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) command's execution.
-
-**SendMessage Event handler**
+In the MainActivity.cs of your Xamarin.Forms.Android project, override the `CurrentFocus` property and in its getter, if `SfChatRenderer.IsChatEditorFocused()` method returns true, then return null, else return `base.CurrentFocus` as shown below.
 
 {% tabs %}
 {% highlight c# %}
- 
-this.sfChat.SendMessage += this.SfChat_SendMessage
+ public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
+ {
+   ...
+   public override View CurrentFocus
+        {
+            get
+            {
+                if (SfChatRenderer.IsChatEditorFocused(base.CurrentFocus))
+                {
+                    return null;
+                }
 
-/// <summary>
-/// Raised when current user sends message to bot using Chat UI.
-/// </summary>
-/// <param name="sender"><see cref="SfChat"/> as sender.</param>
-/// <param name="e"><see cref="SendMessageEventArgs"/> as parameter.</param>
-private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
-{
-    (sender as SfChat).ShowOutgoingMessageAvatar = true;
+                return base.CurrentFocus;
+            }
+        }
+	...
 }
+{% endhighlight %}
+{% endtabs %}
+
+## Restricting multi-line input in editor (single line messages) in Xamarin.Forms chat
+
+By default the user can type multi-line messages by inserting new lines using the editor in the chat control for outgoing messages. However, you can restrict multi-line input from the users and show a send button in the keyboard so that users can no longer insert a new line in messages by setting the `SfChat.AllowMultilineInput` property as false.
+
+{% tabs %}
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns = "http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:Sample.AutoScroll_ToBottom.ViewModel"
+            xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+            x:Class="MultilineMessages">
+   <ContentPage.BindingContext>
+       <local:ViewModel/>
+   </ContentPage.BindingContext>
+   <ContentPage.Content>
+       <sfChat:SfChat x:Name="sfChat"                    
+                      Messages="{Binding Messages}"
+                      CurrentUser="{Binding CurrentUser}"
+                      AllowMultilineInput="False"/>
+   </ContentPage.Content>
 
 {% endhighlight %}
 {% endtabs %}
 
-**SendMessage command**
+N> In iOS you cannot scroll horizontally on the editor when `AllowMultilineInput` is set as `false`.
+
+## Show avatar and author name for outgoing message
+
+By default the author name and avatar are not displayed for the outgoing messages(messages sent by the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html)). You can choose to either show or hide the avatar and name for all outgoing messages using the [SfChat.ShowOutgoingMessageAvatar](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowOutgoingMessageAvatar.html) and [SfChat.ShowOutgoingMessageAuthorName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowOutgoingMessageAuthorName.html) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1514,30 +1885,11 @@ private void SfChat_SendMessage(object sender, SendMessageEventArgs e)
     <ContentPage.Content>
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
-                       SendMessageCommand="{Binding SendMessageCommand}"
-                       CurrentUser="{Binding CurrentUser}" />
+                       CurrentUser="{Binding CurrentUser}" 
+                       ShowOutgoingMessageAvatar="True"
+                       ShowOutgoingMessageAuthorName="True"/>
     </ContentPage.Content>
 </ContentPage>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-public class SendMessageCommandExt : ICommand
-{
-    public event EventHandler CanExecuteChanged;
-    
-    public bool CanExecute(object parameter)
-    {
-        return true;
-    }
-
-    public void Execute(object parameter)
-    {
-        (parameter as SfChat).ShowOutgoingMessageAvatar = true;
-    }
-}
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -1651,9 +2003,9 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %}
 
-## Hide avatar and author name for messages
+## Hide avatar and author name for incoming messages
 
-The message's avatar and author name visibility can be hidden using [SfChat.ShowOutgoingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowOutgoingMessageAvatar.html) ,[SfChat.ShowIncomingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowIncomingMessageAvatar.html) ,[SfChat.ShowOutgoingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowOutgoingMessageAuthorName.html) and [SfChat.ShowIncomingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowIncomingMessageAuthorName.html) properties respectively.
+By default the author name and avatar are displayed for the incoming messages(messages sent by users other than the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html)). You can choose to either show or hide the avatar and name for all incoming messages using the [SfChat.ShowIncomingMessageAvatar](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowIncomingMessageAvatar.html) and [SfChat.ShowIncomingMessageAuthorName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowIncomingMessageAuthorName.html) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1671,53 +2023,21 @@ The message's avatar and author name visibility can be hidden using [SfChat.Show
     <ContentPage.Content>
         <sfChat:SfChat x:Name="sfChat"
                        Messages="{Binding Messages}"
-                       ShowOutgoingMessageAvatar="False"
+                       CurrentUser="{Binding CurrentUser}" 
                        ShowIncomingMessageAvatar="False"
-                       ShowOutgoingMessageAuthorName="False"
-                       ShowIncomingMessageAuthorName="False"
-                       CurrentUser="{Binding CurrentUser}" />
+                       ShowIncomingMessageAuthorName="False"/>
     </ContentPage.Content>
 </ContentPage>
-
-{% endhighlight %}
-{% highlight c# %}
-using Syncfusion.XForms.Chat;
-using Xamarin.Forms;
-
-namespace GettingStarted
-{
-    public partial class MainPage : ContentPage
-    {
-        SfChat sfChat;
-        GettingStartedViewModel viewModel;
-        public MainPage()
-        {
-            InitializeComponent();
-            sfChat = new SfChat();
-            viewModel = new GettingStartedViewModel();
-            this.sfChat.Messages = viewModel.Messages;
-            this.sfChat.CurrentUser = viewModel.CurrentUser;
-            this.sfChat.ShowOutgoingMessageAvatar = false;
-            this.sfChat.ShowIncomingMessageAvatar = false;
-            this.sfChat.ShowOutgoingMessageAuthorName = false;
-            this.sfChat.ShowIncomingMessageAuthorName = false;
-            this.Content = sfChat;
-        }
-    }
-}
-
 {% endhighlight %}
 {% endtabs %}
 
 ![Xamarin Forms chat hiding avatar and author visibility](SfChat_images/xamarin-forms-chat-hide-avatar-name.png)
 
-N> SfChat allows to change visibility of avatar and author name of a particular message using [Message.ShowAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~ShowAvatar.html) and [Message.ShowAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~ShowAuthorName.html). By default the `Message.ShowAvatar` property has higher priority than the `SfChat.ShowAvatar` property.
 
-## Template for message
+## Messages without author (System Generated Messages / Admin messages) in Xamarin chat
 
-SfChat allows to load custom templates for incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) property. 
-
-To load custom `MessageTemplate` in the SfChat, refer the below code example:
+With the help of templates, you can also display messages showing any piece of information, like the security messages in WhatsApp or any other admin messages. These messages can be added to the `SfChat.Messages` collection without any value for `Message.Author`.
+In the below code example, we have loaded a custom template if the message's author is null to show a security message from admin.
 
 {% tabs %}
 {% highlight c# %}
@@ -1737,66 +2057,46 @@ namespace GettingStarted
             viewModel = new GettingStartedViewModel();
             this.sfChat.Messages = viewModel.Messages;
             this.sfChat.CurrentUser = viewModel.CurrentUser;
-            this.sfChat.MessageTemplate = new MyDataTemplateSelector() { Chat = this.sfChat };
+            this.sfChat.MessageTemplate = new CustomMessageTemplateSelector() { Chat = this.sfChat };
             this.Content = sfChat;
         }
     }
 }
 
-public class ChatMessageTemplateSelector : DataTemplateSelector
+public class MessageTemplateSelector : ChatMessageTemplateSelector
 {
-    private readonly DataTemplate incomingDataTemplate;
-    private readonly DataTemplate outgoingDataTemplate;
-    private readonly DataTemplate ratingDataTemplate;
+	private readonly DataTemplate customMessageTemplate;
+	public MessageTemplateSelector(SfChat sfChat):base(sfChat)
+	{
+		this.customMessageTemplate = new DataTemplate(typeof(CustomMessageTemplate));
+	}
 
-    internal SfChat Chat
-    {
-        get;
-        set;
-    }
+	protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
+	{
+		var message = item as IMessage;
+		if (message == null)
+		return null;
 
-    public ChatMessageTemplateSelector()
-    {
-        this.incomingDataTemplate = new DataTemplate(typeof(IncomingTemplate));
-        this.outgoingDataTemplate = new DataTemplate(typeof(OutgoingTemplate));
-        this.ratingDataTemplate = new DataTemplate(typeof(RatingTemplate));
-    }
-
-    protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
-    {
-        var message = item as IMessage;
-        if (message == null)
-            return null;
-
-
-        if (message.Author == Chat.CurrentUser)
-        {
-            return outgoingDataTemplate;
-        }
-        else
-        {
-            if (item as ITextMessage != null)
-            {
-                if ((item as ITextMessage).Text == "How would you rate your interaction with our travel bot?")
-                {
-                    return ratingDataTemplate;
-                }
-                else
-                {
-                    return incomingDataTemplate;
-                }
-            }
-            else
-            {
-                return null;
-            }
-        }
-    }
+		if (item as ITextMessage != null)
+		{
+			if ((item as ITextMessage).Author == null)
+			{
+				return customMessageTemplate;
+			}
+			else
+			{
+				return base.OnSelectTemplate(item,container);
+			}
+		}
+		else
+		{
+			return null;
+		}
+	}
 }
-
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms chat message template](SfChat_images/xamarin-forms-chat-message-template.png)
+![Xamarin Forms chat message template](SfChat_images/xamarin-forms-chat-systemGenerated-custom-messageTemplate.png)
 
-You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/Chat-Message-Template-Xamarin.Forms).
+You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/Chat-System-Generated-Message-Template)

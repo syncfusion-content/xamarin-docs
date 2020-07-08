@@ -7,7 +7,7 @@ control: SfCheckBox
 documentation: ug
 ---
 
-## Visual States
+# Visual States
 
 The visual of CheckBox can be customized using `VisualStates`. The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) control contains the following three visual states:
 

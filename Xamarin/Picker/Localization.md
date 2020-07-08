@@ -7,7 +7,7 @@ control: SfPicker
 documentation: ug
 ---
 
-## Localization 
+# Localization 
 
 You can localize `Picker` in all the platforms by adding a.resx file in a.NET Standard project alone. The following steps describe how to localize SfPicker in a project and you can download the complete sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/PickerLocalization868148122.zip).
 

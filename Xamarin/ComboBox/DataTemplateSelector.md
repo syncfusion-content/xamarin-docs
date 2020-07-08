@@ -7,7 +7,7 @@ control: SfComboBox
 documentation: ug
 ---
 
-## DataTemplateSelector
+# DataTemplateSelector
 
 SfComboBox supports DataTemplateSelector, which is used to choose a DataTemplate based on data object.
  
@@ -100,7 +100,7 @@ SfComboBox supports DataTemplateSelector, which is used to choose a DataTemplate
 
 {% endtabs %}
 
-### Create and Initialize Business Models 
+## Create and Initialize Business Models 
 
 Define a simple model class MobileDetail with fields IsAvailableInStock, Mobile and populate mobile detail in ViewModel.
 

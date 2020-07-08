@@ -17,7 +17,7 @@ The data grid allows you to select one or more rows or cells. The 'SfDataGrid.Se
 
 <table>
 <tr>
-<th> [Unit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SelectionUnit.html) </th>
+<th> `Unit1` </th>
 <th> Description </th>
 </tr>
 <tr>
@@ -529,7 +529,7 @@ The data grid provides the following events for selection:
  * [SelectionChanging](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionChanging_EV.html): This event is raised while selecting a row or cell at the execution time before the row or cell is selected. So it allows canceling the selection action by setting the `Cancel` property of `GridSelectionChangingEventArgs`.
  * [SelectionChanged](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionChanged_EV.html): This event is raised after a row or cell is selected.
 
-These two events are triggered with 'GridSelectionChangingEventArgs' and [GridSelectionChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionChangedEventArgs.html) that contain the following properties:
+These two events are triggered with `GridSelectionChangingEventArgs` and [GridSelectionChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionChangedEventArgs.html) that contain the following properties:
 
  * AddedItems: Gets collection of the underlying data objects added for selection.
  * RemovedItems: Gets collection of the underlying data objects removed from selection.

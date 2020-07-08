@@ -170,3 +170,55 @@ richtexteditor = new SfRichTextEditor()
 this.Content = richtexteditor;
 {% endhighlight %}
 {% endtabs %}
+
+## DefaultFontSize
+
+The SfRichTextEditor provides support to modify the default font size used in the Rich text editor control.The default font size of the Rich Text Editor can be changed using the DefaultFontSize property.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<ContentPage.Content>
+    <StackLayout>
+        <richtexteditor:SfRichTextEditor x:Name="rte" DefaultFontSize="20" VerticalOptions="FillAndExpand"/>
+    </StackLayout>
+</ContentPage.Content>
+ 
+{% endhighlight %}
+
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor()
+{
+    VerticalOptions = LayoutOptions.FillAndExpand,
+    DefaultFontSize = "20"
+};
+this.Content = richtexteditor;
+{% endhighlight %}
+{% endtabs %}
+
+## DefaultFontColor
+
+The SfRichTextEditor provides support to modify the default font color used in the Rich text editor control.The default font color of the Rich Text Editor can be changed using the DefaultFontColor property.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<ContentPage.Content>
+    <StackLayout>
+        <richtexteditor:SfRichTextEditor x:Name="rte" DefaultFontColor="Blue" VerticalOptions="FillAndExpand"/>
+    </StackLayout>
+</ContentPage.Content>
+ 
+{% endhighlight %}
+
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor()
+{
+    VerticalOptions = LayoutOptions.FillAndExpand,
+    DefaultFontColor = "Blue"
+};
+this.Content = richtexteditor;
+{% endhighlight %}
+{% endtabs %}

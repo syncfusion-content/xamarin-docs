@@ -655,5 +655,5 @@ Download entire source code from GitHub [here](https://github.com/SyncfusionExam
 
 [How to swipe an item programmatically in Xamarin.Forms ListView](https://www.syncfusion.com/kb/10021)                                        
 [How to swipe the item indefinitely and layout back on specified position when swipe end](https://www.syncfusion.com/kb/8026)                                                                           
-[How to swipe an item like Outlook or Gmail application in Xamarin.Forms listview](https://www.syncfusion.com/kb/9965)
-
+[How to swipe an item like Outlook or Gmail application in Xamarin.Forms listview](https://www.syncfusion.com/kb/9965)                                                                                                                                                                                                                          
+[How to conditionally handle the swiping in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11669/)

@@ -242,6 +242,24 @@ dragDropSettings.TimeIndicatorStyle = timeIndicatorStyle;
 * While dropping appointment to time slots from `AllDay` panel, appointment duration will change as one (1) hour from the dropped time.
 * Doesn't support control to control drag and drop.
 
+## Get resource item at appointment drop
+Using the [DropResourceItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs~DropResourceItem.html) property that is in the [AppointmentDrop](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~AppointmentDrop_EV.html) event, you can get the dropping ResourceItem details. It will return schedule resource item value for timeline view with resource view mode as Absolute using the property of [AppointmentDropEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs.html).
+
+{% tabs %}
+{% highlight c# %}
+schedule.AppointmentDrop += Schedule_AppointmentDrop;
+
+...
+
+private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
+{
+        var changedResource = e.DropResourceItem;
+        App.Current.MainPage.DisplayAlert("", "Resorce change into " + (changedResource as Employee).Name, "ok");
+}
+{% endhighlight %}
+{% endtabs %}
+
+
 ## See also
 
 [How to get dropped resource in Xamarin.Forms Schedule (SfSchedule)](https://www.syncfusion.com/kb/11179/how-to-get-dropped-resource-in-xamarin-forms-schedule-sfschedule)

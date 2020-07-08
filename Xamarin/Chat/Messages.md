@@ -1303,13 +1303,13 @@ You can download the complete project of this demo from [here](https://github.co
 
 ## Card Message
 
-You can show a list of interactive cards with each card containing an image, list of buttons and text (title, subtitle and description) to tie in with the cards of popular bot frameworks. Use the `Card.Image`, `Card.Title`, `Card.Subtitle` and `Card.Description` properties to display image, title, subtitle and description in a card respectively.
+You can show a list of interactive cards with each card containing an image, list of buttons and text (title, subtitle and description) to tie in with the cards of popular bot frameworks. Use the [Card.Image](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card~Image.html), [Card.Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card~Title.html), [Card.Subtitle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card~Subtitle.html) and [Card.Description](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card~Description.html) properties to display image, title, subtitle and description in a card respectively.
 
-You can also show one or more buttons in a card as options to choose from. Create the `CardButton` with necessary `CardButton.Title`(the text to be displayed in the button) and `CardButton.Value`(the text value that should be added as response message when button is clicked, usually the title of the card) and add it to the `CardMessage.Buttons` collection.
+You can also show one or more buttons in a card as options to choose from. Create the [CardButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card~Buttons.html) with necessary [CardButton.Title](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardButton~Title.html)(the text to be displayed in the button) and [CardButton.Value](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardButton~Value.html)(the text value that should be added as response message when button is clicked, usually the title of the card) and add it to the [Card.Buttons](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card~Buttons.html) collection.
 
-Upon creating the individual cards, add them to a `Card` typed collection and assign this collection of cards to the `CardMessage.Cards` property. The card message auto-sizes itself in height based on the card contents(the text and button count) of the largest card in the list of cards.
+Upon creating the individual cards, add them to a [Card](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card.html) typed collection and assign this collection of cards to the [CardMessage.Cards](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardMessage~Cards.html) property. The card message auto-sizes itself in height based on the card contents(the text and button count) of the largest card in the list of cards.
 
-If you dont want to display images, buttons or text(title, subtitle, description) in a card simply do not set values to the required properties. For example if you dont want to display image in a card, do no set any value to the `Card.Image` property.
+If you dont want to display images, buttons or text(title, subtitle, description) in a card simply do not set values to the required properties. For example if you dont want to display image in a card, do no set any value to the [Card.Image](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card~Image.html) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1503,9 +1503,9 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ### Event and Command
 
-The CardMessage comes with built-in `SfChat.CardTapped` event and `SfChat.CardCommand` that will be fired upon tapping a button in a card or tapping any card in the message . You can get the selected `Card`, the clicked `CardButton` and the actual `CardMessage` via the `CardTappedEventArgs` as `CardTappedEventArgs.Card`, `CardTappedEventArgs.Action` and `CardTappedEventArgs.Message` respectively, in both the `CardTapped` event handler and action of `CardCommand`. Handling this event/command by setting `CardTappedEventArgs.Handled` prevents the `Card.Title` or `CardButton.Value` from getting added as a new message.
+The CardMessage comes with built-in [SfChat.CardTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CardTapped_EV.html) event and [SfChat.CardCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CardCommand.html) that will be fired upon tapping a button in a card or tapping any card in the message . You can get the selected `Card`, the clicked `CardButton` and the actual [CardMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardMessage.html) via the [CardTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardTappedEventArgs.html) as [CardTappedEventArgs.Card](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardTappedEventArgs~Card.html), [CardTappedEventArgs.Action](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardTappedEventArgs~Action.html) and [CardTappedEventArgs.Message](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardTappedEventArgs~Message.html) respectively, in both the `CardTapped` event handler and action of `CardCommand`. Handling this event/command by setting [CardTappedEventArgs.Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardTappedEventArgs~Handled.html) prevents the `Card.Title` or `CardButton.Value` from getting added as a new message.
 
-N> The `Action` argument in `CardTappedEventArgs` holds a valid value only only when clicking the `CardButton` in a card. Tapping elsewhere inside the card fires the `CardTapped` event and `CardCommand` with `Action` as null in the `CardTappedEventArgs`. If the `CardTappedEventArgs.Action` is null, the `CardTappedEventArgs.Card.Title` is added as a new message, else the `CardTappedEventArgs.Action.Value` is added as a new message.
+N> The `Action` argument in `CardTappedEventArgs` holds a valid value only only when clicking the `CardButton` in a card. Tapping elsewhere inside the card fires the `CardTapped` event and `CardCommand` with `Action` as null in the `CardTappedEventArgs`. If the `CardTappedEventArgs.Action` is null, the `CardTappedEventArgs.Card.Title is added as a new message, else the `CardTappedEventArgs.Action.Value` is added as a new message.
 
 **Card Tapped Event**
 {% tabs %}
@@ -1604,7 +1604,7 @@ private void CardTapped(object args)
 
 ## Template for message
 
-SfChat allows to load custom templates for all incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) property. You can customize the message views as per your liking with the support to load template for each individual message by using a custom template selector derived from `ChatMessageTemplateSelector` and assigning it to `SfChat.MessageTemplate` as shown below. Load custom templates based on the message type, text, author, etc. The limits are endless.
+SfChat allows to load custom templates for all incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) property. You can customize the message views as per your liking with the support to load template for each individual message by using a custom template selector derived from [ChatMessageTemplateSelector](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatMessageTemplateSelector.html) and assigning it to [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) as shown below. Load custom templates based on the message type, text, author, etc. The limits are endless.
 
 We have loaded a custom template if the message's text contains a particular text value in the below code example.
 
@@ -1787,7 +1787,7 @@ public class SendMessageCommandExt : ICommand
 
 ## Show keyboard always
 
-By default the keyboard will be open in view, even after a message is sent or focus is lost just like in most mainstream chat applications. To hide the keyboard after the message has been sent or lost focus set the `SfChat.ShowKeyboardAlways` property to `false`.
+By default the keyboard will be open in view, even after a message is sent or focus is lost just like in most mainstream chat applications. To hide the keyboard after the message has been sent or lost focus set the `[SfChat.ShowKeyboardAlways](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowKeyboardAlways.html) property to `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1839,7 +1839,7 @@ In the MainActivity.cs of your Xamarin.Forms.Android project, override the `Curr
 
 ## Restricting multi-line input in editor (single line messages) in Xamarin.Forms chat
 
-By default the user can type multi-line messages by inserting new lines using the editor in the chat control for outgoing messages. However, you can restrict multi-line input from the users and show a send button in the keyboard so that users can no longer insert a new line in messages by setting the `SfChat.AllowMultilineInput` property as false.
+By default the user can type multi-line messages by inserting new lines using the editor in the chat control for outgoing messages. However, you can restrict multi-line input from the users and show a send button in the keyboard so that users can no longer insert a new line in messages by setting the [SfChat.AllowMultilineInput](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~AllowMultilineInput.html) property as false.
 
 {% tabs %}
 {% highlight xaml %}

@@ -11,25 +11,25 @@ documentation: UG
 
 This section explains how to enable selection in the data grid; modes, properties, and events involved in selection; and customizations available for selection.
 
-The data grid allows you to select one or more rows or cells. The [SfDataGrid.SelectionUnit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionUnit.html) and [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) properties together defines the behavior of selection in data grid.
+The data grid allows you to select one or more rows or cells. The 'SfDataGrid.SelectionUnit' and [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) properties together defines the behavior of selection in data grid.
 
 ## Selection unit
 
 <table>
 <tr>
-<th> Unit </th>
+<th> [Unit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SelectionUnit.html) </th>
 <th> Description </th>
 </tr>
 <tr>
-<td> Row </td>
+<td> [Row](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SelectionUnit.html) </td>
 <td> Allows selection of a specific row or group of rows either programmatically or by touch interactions. Tapping on a cell selects the entire row. This is the default value. </td>
 </tr>
 <tr>
-<td> Cell </td>
+<td> [Cell](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SelectionUnit.html) </td>
 <td> Allows selection of a specific cell or group of cells either programmatically or by touch interactions. Tapping on a cell selects only that particular cell and not the entire row. </td>
 </tr>
 <tr>
-<td> Any </td>
+<td> [Any](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SelectionUnit.html) </td>
 <td> Allows selection of both rows and cells. Tapping on the row header selects the entire row. Tapping on a cell selects only that particular cell. </td>
 </tr>
 </table>
@@ -442,7 +442,7 @@ this.sfDataGrid.UnselectCells(this.dataGrid.GetRecordAtRowIndex(3), this.dataGri
 
 ## Row header selection
 
-By default, data grid allows you to select the grid row(s) upon tapping the row header if [SfDataGrid.SelectionUnit]](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionUnit.html) is `Any`. You can  also follow the below solution to select the grid rows when you tap the row header cells if [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) is a value other than `None`.
+By default, data grid allows you to select the grid row(s) upon tapping the row header if 'SfDataGrid.SelectionUnit' is `Any`. You can  also follow the below solution to select the grid rows when you tap the row header cells if [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) is a value other than `None`.
 
 ### Select records in the data grid when tapping only on the row header cells
 
@@ -529,7 +529,7 @@ The data grid provides the following events for selection:
  * [SelectionChanging](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionChanging_EV.html): This event is raised while selecting a row or cell at the execution time before the row or cell is selected. So it allows canceling the selection action by setting the `Cancel` property of `GridSelectionChangingEventArgs`.
  * [SelectionChanged](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionChanged_EV.html): This event is raised after a row or cell is selected.
 
-These two events are triggered with [GridSelectionChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionChangingEventHandler.html) and [GridSelectionChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionChangedEventArgs.html) that contain the following properties:
+These two events are triggered with 'GridSelectionChangingEventArgs' and [GridSelectionChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionChangedEventArgs.html) that contain the following properties:
 
  * AddedItems: Gets collection of the underlying data objects added for selection.
  * RemovedItems: Gets collection of the underlying data objects removed from selection.
@@ -586,7 +586,7 @@ void DataGrid_SelectionChanged (object sender, GridSelectionChangedEventArgs e)
 
 ### Adding multiple selection color
 
-The data grid supports selecting one or more rows or cells either programmatically or by touch interactions. By default, the control applies a common background color for the selected rows or cells based on the current theme. However, it also provides extensibility to have multiple selection colors when touching the rows or cells by writing a custom SelectionController derived from [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController.html#) or `GridCellSelectionController` if `SelectionUnit` is `Row` and `Cell` respectively and assigning it to the [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html# "") property. Override the `GetSelectionColor()` method to apply different colors for selection at runtime.
+The data grid supports selecting one or more rows or cells either programmatically or by touch interactions. By default, the control applies a common background color for the selected rows or cells based on the current theme. However, it also provides extensibility to have multiple selection colors when touching the rows or cells by writing a custom SelectionController derived from [GridSelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController.html#) or `GridCellSelectionController` if `SelectionUnit` is `Row` and `Cell` respectively and assigning it to the [SfDataGrid.SelectionController](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionController.html# "") property. Override the [GetSelectionColor()](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSelectionController~GetSelectionColor.html) method to apply different colors for selection at runtime.
 
 To set different colors for the selected rows in the data grid, follow the code example:
 

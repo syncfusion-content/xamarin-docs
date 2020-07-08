@@ -152,9 +152,9 @@ public partial class LoadMoreViewModel : INotifyPropertyChanged
 
 ## Load more automatically
 
-By default, upon reaching the top of the chat list, a busy indicator will be displayed, if `SfChat.LoadMoreBehavior` is set as `LoadMoreOption.Auto`. Unlike the `LoadMoreOption.Manual` the `SfChat.LoadMoreCommand` executes automatically upon reaching the top of the chat list, without any additional click. 
+By default, upon reaching the top of the chat list, a busy indicator will be displayed, if `SfChat.LoadMoreBehavior` is set as [LoadMoreOption.Auto](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMoreOption.html). Unlike the [LoadMoreOption.Manual](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMoreOption.html) the [SfChat.LoadMoreCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMoreOption.html) executes automatically upon reaching the top of the chat list, without any additional click. 
 
-N> The `SfChat.IsBusy` will always be `true` if `SfChat.LoadMoreBehavior` is `Auto`. So to cancel the load more operation and remove the load more view from the chat, set the `SfChat.LoadMoreBehavior` as `LoadMoreOption.None`. All this can be achieved in MVVM using binding as shown below.
+N> The `SfChat.IsBusy` will always be `true` if `SfChat.LoadMoreBehavior` is `Auto`. So to cancel the load more operation and remove the load more view from the chat, set the `SfChat.LoadMoreBehavior` as [LoadMoreOption.None](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LoadMoreOption.html). All this can be achieved in MVVM using binding as shown below.
 
 {% tabs %}
 

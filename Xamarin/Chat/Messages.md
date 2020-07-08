@@ -1787,7 +1787,7 @@ public class SendMessageCommandExt : ICommand
 
 ## Show keyboard always
 
-By default the keyboard will be open in view, even after a message is sent or focus is lost just like in most mainstream chat applications. To hide the keyboard after the message has been sent or lost focus set the `[SfChat.ShowKeyboardAlways](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowKeyboardAlways.html) property to `false`.
+By default the keyboard will be open in view, even after a message is sent or focus is lost just like in most mainstream chat applications. To hide the keyboard after the message has been sent or lost focus set the [SfChat.ShowKeyboardAlways](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowKeyboardAlways.html) property to `false`.
 
 {% tabs %}
 {% highlight xaml %}

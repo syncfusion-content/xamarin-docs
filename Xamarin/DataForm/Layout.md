@@ -741,7 +741,7 @@ dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 
 You can customize the group collapse icon using the [GetGroupCollapseIcon](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormLayoutManager~GetGroupCollapseIcon.html) method.
 
-{% endtabs %}
+{% tabs %}
 {% highlight c# %}
 dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
  public class DataFormLayoutManagerExt : DataFormLayoutManager
@@ -762,7 +762,7 @@ dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 
 You can customize the group expander icon using the [GetGroupExpanderIcon](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormLayoutManager~GetGroupExpanderIcon.html) method.
 
-{% endtabs %}
+{% tabs %}
 {% highlight c# %}
  dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
  public class DataFormLayoutManagerExt : DataFormLayoutManager

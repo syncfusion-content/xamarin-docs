@@ -172,6 +172,10 @@ Syncfusion.Licensing.dll<br/>
 <td>UWP</td>
 <td>Syncfusion.SfBadgeView.XForms.dll<br/>Syncfusion.SfBadgeView.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/></td>
 </tr>
+<tr>
+<td>WPF</td>
+<td>Syncfusion.SfBadgeView.XForms.dll<br/>Syncfusion.SfBadgeView.XForms.WPF.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.WPF.dll<br/></td>
+</tr>
 </table>
 
 ## SfBarcode
@@ -1514,6 +1518,31 @@ Syncfusion.Licensing.dll<br/>
 <tr>
 <td>UWP</td>
 <td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+</table>
+
+## SfSignaturePad
+
+<dl>
+<dt>NuGet</dt>
+<dd>Syncfusion.Xamarin.SfSignaturePad</dd>
+<dd>In addition, you need to install the 1.68.0 version of [Nuget](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.68.0) in all projects</dd>
+</dl>
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfSignaturePad.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfSignaturePad.XForms.dll<br/>Syncfusion.SfSignaturePad.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfSignaturePad.XForms.dll<br/>Syncfusion.SfSignaturePad.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/></td>
 </tr>
 </table>
 

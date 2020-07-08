@@ -1526,8 +1526,9 @@ Syncfusion.Licensing.dll<br/>
 <dl>
 <dt>NuGet</dt>
 <dd>Syncfusion.Xamarin.SfSignaturePad</dd>
-<dd>In addition, you need to install the 1.68.0 version of [Nuget](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.68.0) in all projects</dd>
 </dl>
+
+N> In addition, you need to install the 1.68.0 version of [SkiaSharp](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.68.0) in all projects.
 
 **Assemblies**
 

@@ -1,7 +1,7 @@
 ---
 layout : post
-title : AutomationId support for Syncfusion NavigationDrawer control in Forms
-description : AutomationId to find and interact with inner elements in NavigationDrawer.The SfNavigationDrawer control has built-in `AutomationId` for inner elements.
+title: AutomationId support for Syncfusion NavigationDrawer control in Forms
+description: AutomationId to find and interact with inner elements in NavigationDrawer.The SfNavigationDrawer control has built-in `AutomationId` for inner elements.
 platform : Xamarin.Forms
 control : SfNavigationDrawer
 documentation : ug

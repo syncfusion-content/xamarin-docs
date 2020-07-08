@@ -11,13 +11,13 @@ documentation: UG
 
 This section explains how to enable selection in the data grid; modes, properties, and events involved in selection; and customizations available for selection.
 
-The data grid allows you to select one or more rows or cells. The 'SfDataGrid.SelectionUnit' and [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) properties together defines the behavior of selection in data grid.
+The data grid allows you to select one or more rows or cells. The `SfDataGrid.SelectionUnit` and [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) properties together defines the behavior of selection in data grid.
 
 ## Selection unit
 
 <table>
 <tr>
-<th> `Unit1` </th>
+<th> `Unit` </th>
 <th> Description </th>
 </tr>
 <tr>
@@ -442,7 +442,7 @@ this.sfDataGrid.UnselectCells(this.dataGrid.GetRecordAtRowIndex(3), this.dataGri
 
 ## Row header selection
 
-By default, data grid allows you to select the grid row(s) upon tapping the row header if 'SfDataGrid.SelectionUnit' is `Any`. You can  also follow the below solution to select the grid rows when you tap the row header cells if [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) is a value other than `None`.
+By default, data grid allows you to select the grid row(s) upon tapping the row header if `SfDataGrid.SelectionUnit` is `Any`. You can  also follow the below solution to select the grid rows when you tap the row header cells if [SfDataGrid.SelectionMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectionMode.html) is a value other than `None`.
 
 ### Select records in the data grid when tapping only on the row header cells
 

@@ -46,9 +46,7 @@ The Content of the `SfExpander` gets re-measured and layout when its size is upd
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms Expander with Content](expander_images/Dynamic_size_content.png)
-
-![Xamarin Forms Expander DynamicSizeMode as Content](expander_images/Dynamic_size_content_Ex.png)
+![Xamarin Forms Expander DynamicSizeMode as Content](expander_images/Dynamic_size_content.gif)
 
 ### DynamicSizeMode as Header
 
@@ -75,6 +73,4 @@ The Header of the `SfExpander` gets re-measured and layout when its size is upda
 {% endhighlight %}
 {% endtabs %}	
 
-![Xamarin Forms Expander with Header](expander_images/Dynamic_size_Header.png)
-
-![Xamarin Forms Expander DynamicSizeMode as Header](expander_images/Dynamic_size_Header_Ex.png)
+![Xamarin Forms Expander DynamicSizeMode as Header](expander_images/Dynamic_size_Header.gif)

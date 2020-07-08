@@ -188,6 +188,8 @@ public AccordionItem GenerateAccordionItem()
 
 You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/Xamarin-Accordion-VisualStateManager).
 
+>N When effects view is applied to accordion by adding Visual as "Material", it is necessary to initialize the `Xamarin.Forms.FormsMaterial.Init` in iOS and Android.
+
 ## See also
 
 [How to customize the Accordion icon color in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11443/)                                                                                                                                        

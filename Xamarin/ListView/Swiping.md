@@ -295,7 +295,7 @@ private void ListView_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 ## Programmatic swiping
 
-Using the [SwipeItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SwipeItem.html) method you can swipe an item programmatically based on the given offset value. You need to pass the item to be swiped and `SwipeOffset` as parameter in the `SwipeItem` method.
+Using the [SwipeItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SwipeItem.html) method, you can swipe an item programmatically based on the given offset value. You need to pass the item to be swiped and `SwipeOffset` as a parameter in the `SwipeItem` method.
 
 <table>
 <tr>
@@ -350,7 +350,7 @@ Using the [SwipeItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListVi
 {% endhighlight %}
 {% endtabs %}
 
-The `SwipeOffset` value should be positive for left swiping of listview item.
+The `SwipeOffset` value should be positive for the left swiping of the listview item.
  
 {% tabs %}
 {% highlight c# %}
@@ -361,7 +361,7 @@ private void LeftSwipeButton_Clicked(object sender, EventArgs e)
 {% endhighlight%}
 {% endtabs %}
 
-The `SwipeOffset` value should be negative for right swiping of listview item.
+The `SwipeOffset` value should be negative for the right-swiping of the listview item.
 
 {% tabs %}
 {% highlight c# %}

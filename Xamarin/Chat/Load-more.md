@@ -9,7 +9,7 @@ documentation: ug
 
 # Load more messages in Xamarin Chat (SfChat)
 
-In SfChat you can scroll to the top of the message list to fetch the old messages on demand, in run-time either automatically or manually(by tapping the load more button) by setting the `SfChat.LoadMoreBehavior` as `LoadMoreOption.Auto` or `LoadMoreOption.Manual` respectively. Assign the desired action to be triggered when load more is performed using the `SfChat.LoadMoreCommand` property. You can also pass the desired parameter to the `SfChat.LoadMoreCommand` using the `SfChat.LoadMoreCommandParameter` property. Use the `SfChat.IsBusy` property to show the busy indicator denoting the loading operation in SfChat.
+In SfChat you can scroll to the top of the message list to fetch the old messages on demand, in run-time either automatically or manually(by tapping the load more button) by setting the [SfChat.LoadMoreBehavior](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~LoadMoreBehavior.html) as `LoadMoreOption.Auto` or `LoadMoreOption.Manual` respectively. Assign the desired action to be triggered when load more is performed using the [SfChat.LoadMoreCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~LoadMoreCommand.html) property. You can also pass the desired parameter to the `SfChat.LoadMoreCommand` using the [SfChat.LoadMoreCommandParameter](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~LoadMoreCommandParameter.html) property. Use the [SfChat.IsBusy](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~IsBusy.html) property to show the busy indicator denoting the loading operation in SfChat.
 
 ## Load more manually
 
@@ -148,7 +148,7 @@ public partial class LoadMoreViewModel : INotifyPropertyChanged
 
 {% endtabs %}
 
-![Xamarin Forms Chat manual load more](SfChat_images/xamarin-forms-chat-loadmore-default-template.png)
+![Xamarin Forms Chat manual load more](SfChat_images/Load-more-default-template.gif)
 
 ## Load more automatically
 
@@ -286,7 +286,7 @@ public partial class LoadMoreViewModel : INotifyPropertyChanged
 
 You can customize the load more view to display any view as the load more button and busy indicator view when load more operation is performed. Its built-in auto sizing capabilities displays the load more view based on the width/height of the view loaded inside the template.
 
-Based on the value of `SfChat.IsBusy` property you can show different views for the load more button and the busy indicator. In the below code snippet a custom view and busy indicator are added as children of a grid and this grid is set as the `SfChat.LoadMoreTemplate`. When the `SfChat.IsBusy` is `false`, the custom view is made visible and the busy indicator is hidden. When the `SfChat.IsBusy` is `true` the custom view is hidden and the busy indicator is made visible. All this can be achieved in MVVM as shown below.
+Based on the value of `SfChat.IsBusy` property you can show different views for the load more button and the busy indicator. In the below code snippet a custom view and busy indicator are added as children of a grid and this grid is set as the [SfChat.LoadMoreTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~LoadMoreTemplate.html). When the `SfChat.IsBusy` is `false`, the custom view is made visible and the busy indicator is hidden. When the `SfChat.IsBusy` is `true` the custom view is hidden and the busy indicator is made visible. All this can be achieved in MVVM as shown below.
 
 {% tabs %}
 {% highlight xaml %}

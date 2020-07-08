@@ -497,7 +497,7 @@ Refer to the following example in which a CustomSelectionController is derived f
 {% endhighlight %}
 {% highlight c# %}
 this.dataGrid.ItemsSource = viewModel.OrdersInfo;
-this.dataGrid.SelectionController = new CustomSelectionController();
+this.dataGrid.SelectionController = new CustomSelectionController(dataGrid);
 this.dataGrid.SelectionMode = SelectionMode.Multiple;
 SelectionPicker.SelectedIndex = 1;
 {% endhighlight %}
@@ -507,7 +507,7 @@ SelectionPicker.SelectedIndex = 1;
 {% highlight c# %}
 public class CustomSelectionController : GridSelectionController
 {
-    public CustomSelectionController()
+    public CustomSelectionController(SfDataGrid dataGrid) : base(dataGrid)
     {
         this.SelectedRows = new GridSelectedRowsCollection();
     }

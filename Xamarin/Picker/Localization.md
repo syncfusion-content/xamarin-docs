@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization of Syncfusion.Xamarin.Forms Picker
-description: How to Localize the contents of Picker control.
+description: How to Localize the contents of Picker control.You can localize `Picker` in all the platforms by adding a.resx file.
 platform: xamarin
 control: SfPicker
 documentation: ug

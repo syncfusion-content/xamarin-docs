@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual States for Syncfusion Essential Xamarin.Forms SfRadioButton
-description: How to customize RadioButton based on its visual state changes in Xamarin.Forms SfRadioButton.
+description: How to customize RadioButton based on its visual state changes in Xamarin.Forms SfRadioButton which can be customized using `VisualStates`. 
 platform: xamarin.forms
 control: SfRadioButton
 documentation: ug

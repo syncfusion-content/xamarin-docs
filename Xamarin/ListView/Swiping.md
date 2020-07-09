@@ -293,6 +293,89 @@ private void ListView_SwipeEnded(object sender, SwipeEndedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+## Programmatic swiping
+
+Using the [SwipeItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SwipeItem.html) method, you can swipe an item programmatically based on the given offset value. You need to pass the item to be swiped and `SwipeOffset` as a parameter in the `SwipeItem` method.
+
+<table>
+<tr>
+<th>Parameters</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>item data</td>
+<td>Represents the item data of list view item.</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>Represents the value that how much the item need to swipe.</td>
+</tr>
+</table>
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.Content>
+    <StackLayout>
+        <Grid HeightRequest="50">
+            <Button x:Name="RightSwipe" Text="Right Swipe Button" />
+            <Button x:Name="LeftSwipe" Text="Left Swipe Button" Grid.Column="1"/>
+        </Grid>
+        <listView:SfListView x:Name="listView" ItemSize="70" SelectionMode="Single" AllowSwiping="True"
+    ItemSpacing="0,0,5,0" >
+            <listView:SfListView.LeftSwipeTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Grid BackgroundColor="SlateBlue"  HorizontalOptions="Fill" VerticalOptions="Fill">
+                                <Label Text="Left Swipe Template" TextColor="White" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            </Grid>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </listView:SfListView.LeftSwipeTemplate>
+            <listView:SfListView.RightSwipeTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.View>
+                            <Grid BackgroundColor="SlateBlue" HorizontalOptions="Fill" VerticalOptions="Fill">
+                                <Label Text="Right Swipe Template" TextColor="White" VerticalOptions="Center"/>
+                            </Grid>
+                        </ViewCell.View>
+                    </ViewCell>
+                </DataTemplate>
+            </listView:SfListView.RightSwipeTemplate>
+        </listView:SfListView>
+    </StackLayout>
+</ContentPage.Content>
+{% endhighlight %}
+{% endtabs %}
+
+The `SwipeOffset` value should be positive for the left swiping of the listview item.
+ 
+{% tabs %}
+{% highlight c# %}
+private void LeftSwipeButton_Clicked(object sender, EventArgs e)
+{
+    ListView.SwipeItem(viewModel.contactsinfo[1], 200);
+}
+{% endhighlight%}
+{% endtabs %}
+
+The `SwipeOffset` value should be negative for the right-swiping of the listview item.
+
+{% tabs %}
+{% highlight c# %}
+private void RightSwipeButton_Clicked(object sender, EventArgs e)
+{
+    ListView.SwipeItem(viewModel.contactsinfo[1], -150);
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Programmatic Right and left swiping in listview](SfListView_images/SfListView-Left-Right-Swiping.gif)
+
+
+
 ## Events
 
 ### SwipeStarted Event
@@ -567,6 +650,7 @@ private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
 {% endtabs %}
 
 Download entire source code from GitHub [here](https://github.com/SyncfusionExamples/Edit-item-by-swipe-in-xamarin.forms-listview).
+
 ## See Also
 
 [How to swipe an item programmatically in Xamarin.Forms ListView](https://www.syncfusion.com/kb/10021)                                        

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion Badge View control for Xamarin.Forms
-description: A quick tour about Syncfusion badge view control in Xamarin.Forms platform
+description: This section explains how to add SfBadgeView reference, lanching the control in each platform, and initializing the control
 platform: xamarin
 control: SfBadgeView
 documentation: ug
 ---
 
-# Getting Started
+# SfBadgeView Getting Started
 
 This section explains the steps required to configure the [`SfBadgeView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.SfBadgeView.html) control and customize its elements.
 
@@ -50,6 +50,10 @@ Location: {Installed location}/{version}/Xamarin/lib
 <tr>
 <td>UWP</td>
 <td>Syncfusion.SfBadgeView.XForms.dll<br/>Syncfusion.SfBadgeView.XForms.UWP.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/></td>
+</tr>
+<tr>
+<td>WPF</td>
+<td>Syncfusion.SfBadgeView.XForms.dll<br/>Syncfusion.SfBadgeView.XForms.WPF.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.WPF.dll<br/></td>
 </tr>
 </table>
 
@@ -104,6 +108,27 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
    } 
   … 
 }
+
+{% endhighlight %}
+
+### WPF
+
+To launch the badge view in WPF, call the SfBadgeViewRenderer.Init() in the constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication is called as demonstrated in the following code sample.
+
+{% highlight C# %} 
+
+        public MainWindow()
+        {
+            InitializeComponent();
+            
+            Forms.Init();
+            
+            // Add the below line if you are using SfBadgeView.
+            
+            SfBadgeViewRenderer.Init();
+            
+            LoadApplication(new GettingStartedSample.App());
+        }
 
 {% endhighlight %}
 

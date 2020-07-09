@@ -621,6 +621,74 @@ In this case, the group will be shown without expander.
 
 ![Expand and collapse the data form fields in Xamarin.Forms DataForm](SfDataForm_images/AllowExpandCollapse.png)
 
+### Restricting the group expanding and collapsing using events
+
+You can set restrict the group being collapsed by the [GroupItemCollapsing](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~GroupItemCollapsing_EV.html) event. The event occurs when a user tries to collapse a group. You can cancel the user action using the `Cancel` property of [GroupItemCollapsingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.GroupItemCollapsingEventArgs.html).
+
+{% tabs %}
+{% highlight xaml %}
+<dataForm:SfDataForm x:Name="dataForm" GroupItemCollapsing="DataForm_GroupItemCollapsing"/>
+</dataForm:SfDataForm>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.GroupItemCollapsing += DataForm_GroupItemCollapsing;
+private void DataForm_GroupItemCollapsing(object sender, GroupItemCollapsingEventArgs e)
+        {
+            e.Cancel = true;
+        }
+{% endhighlight %}
+{% endtabs %}
+
+You can set restrict the group being expanded by the [GroupItemExpanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~GroupItemExpanding_EV.html) event. The event occurs when a user tries to expand a group. You can cancel the user action using the `Cancel` property of [GroupItemExpandingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.GroupItemExpandingEventArgs.html).
+
+{% tabs %}
+{% highlight xaml %}
+<dataForm:SfDataForm x:Name="dataForm" GroupItemExpanding="DataForm_GroupItemExpanding"/>
+</dataForm:SfDataForm>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.GroupItemExpanding += DataForm_GroupItemExpanding;
+private void DataForm_GroupItemExpanding(object sender, GroupItemExpandingEventArgs e)
+        {
+            e.Cancel = true;
+        }
+{% endhighlight %}
+{% endtabs %}
+
+### Customize the group name when collapsing/expanding the group
+
+You can customize the group name when you collapse the group using the [GroupItemCollapsed](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~GroupItemCollapsed_EV.html) event. It will be triggered when a group gets collapsed by the user. It will provide information about the collapsed group by using the [GroupItemCollapsedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.GroupItemCollapsedEventArgs.html) of the `GroupItemCollapsed` event.
+
+{% tabs %}
+{% highlight xaml %}
+<dataForm:SfDataForm x:Name="dataForm" GroupItemCollapsed="DataForm_GroupItemCollapsed"/>
+</dataForm:SfDataForm>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.GroupItemCollapsed += DataForm_GroupItemCollapsed;
+private void DataForm_GroupItemCollapsed(object sender, GroupItemCollapsedEventArgs e)
+        {
+            e.DataFormGroupItem.GroupName = "City";
+        }
+{% endhighlight %}
+{% endtabs %}
+
+You can customize the group name when expanding the group using the [GroupItemExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~GroupItemExpanded_EV.html) event. It will be triggered when a group gets expanded by the user. It will provide information about the expanded group by using the [GroupItemExpandedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.GroupItemExpandedEventArgs.html) of the `GroupItemExpanded` event.
+
+{% tabs %}
+{% highlight xaml %}
+<dataForm:SfDataForm x:Name="dataForm" GroupItemCollapsed="DataForm_GroupItemExpanded"/>
+</dataForm:SfDataForm>
+{% endhighlight %}
+{% highlight c# %}
+dataForm.GroupItemExpanded += DataForm_GroupItemExpanded;
+private void DataForm_GroupItemExpanded(object sender, GroupItemExpandedEventArgs e)
+        {
+            e.DataFormGroupItem.GroupName = "Country";
+        }
+{% endhighlight %}
+{% endtabs %}
+
 ### Programmatically expand or collapse group
 
 You can expand or collapse the group programmatically by using [ExpandGroup](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ExpandGroup.html) and [CollapseGroup](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~CollapseGroup.html) methods respectively.
@@ -666,6 +734,48 @@ public class DataFormLayoutManagerExt : DataFormLayoutManager
     }
 }
 dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
+{% endhighlight %}
+{% endtabs %}
+
+### Customize group collapse icon
+
+You can customize the group collapse icon using the [GetGroupCollapseIcon](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormLayoutManager~GetGroupCollapseIcon.html) method.
+
+{% tabs %}
+{% highlight c# %}
+dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
+ public class DataFormLayoutManagerExt : DataFormLayoutManager
+    {
+        public DataFormLayoutManagerExt(SfDataForm dataForm) : base(dataForm)
+        {
+             
+        }
+        protected internal ImageSource  GetGroupCollapseIcon()
+        {
+          return null;
+        }
+    }
+{% endhighlight %}
+{% endtabs %}
+
+### Customize group expander icon
+
+You can customize the group expander icon using the [GetGroupExpanderIcon](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormLayoutManager~GetGroupExpanderIcon.html) method.
+
+{% tabs %}
+{% highlight c# %}
+ dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
+ public class DataFormLayoutManagerExt : DataFormLayoutManager
+    {
+        public DataFormLayoutManagerExt(SfDataForm dataForm) : base(dataForm)
+        {
+             
+        }
+        protected internal ImageSource  GetGroupExpanderIcon()
+        {
+          return null;
+        }
+    }
 {% endhighlight %}
 {% endtabs %}
 

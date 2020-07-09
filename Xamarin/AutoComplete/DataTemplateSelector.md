@@ -115,7 +115,7 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-### Create and Initialize Business Models 
+## Create and Initialize Business Models 
 
 Define a simple model class MobileDetail with fields IsAvailableInStock, Mobile and populate mobile detail in ViewModel.
 

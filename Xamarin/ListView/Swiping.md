@@ -372,7 +372,7 @@ private void RightSwipeButton_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Programmatic Right and left swiping in listview](SfListView_images/SfListView-Left and Right Swiping.gif)
+![Programmatic Right and left swiping in listview](SfListView_images/SfListView-Left-Right-Swiping.gif)
 
 
 

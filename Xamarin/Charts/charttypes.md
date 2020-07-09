@@ -3180,7 +3180,7 @@ BoxAndWhiskerSeries plots a combination of rectangles and lines to show the dist
 * [`Spacing`] - used to change the spacing between two segments. The default value of spacing is 0, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available space, respectively.
 * [`Width`] - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 corresponds to 100% and 0% of the available width, respectively.
 
-{% tab %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -3227,7 +3227,7 @@ By default, [`BoxPlotMode`] value is [`Exclusive`].
 
 The following code shows how to set the [`BoxPlotMode`] value as [`Inclusive`].
 
-{% tab %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -3268,7 +3268,7 @@ chart.Series.Add(boxPlotSeries);
 
 The Median values of given data set is viewed by enabling the [`ShowMedian`] property of [`BoxAndWhiskerSeries`].By default,[`ShowMedian`] value is false. The following code demonstrates how to enable the [`ShowMedian`] property.
 
-{% tab %}
+{% tabs %}
 
 {% highlight xaml %}
 
@@ -3309,7 +3309,7 @@ The [`SymbolType`] is used to display the outlier point that lie either below th
 
 The following code shows how to set the [`SymbolType`] value as [`Cross`].
 
-{% tab %}
+{% tabs %}
 
 {% highlight xaml %}
 

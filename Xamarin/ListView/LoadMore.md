@@ -660,7 +660,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin-listview-loadmore).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/load-more-automatic-up-direction-listview-xamarin)
 
 ![Loadmore automatic](SfListView_images/SfListView-LoadMoreAutomaticallyUpDirection.png)
 

@@ -7,7 +7,7 @@ control: TabView
 documentation: ug
 ---
 
-## Image source in SfTabItem
+# Image source in SfTabItem
 
 The `ImageSource` property customizes the icon image of SfTabView by adding a custom image.
 

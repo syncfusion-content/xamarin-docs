@@ -413,7 +413,9 @@ The following code sample demonstrates how to add bubbles to maps and customize 
 
 ## Showing label on bubble marker.
 
-To display the label on bubble marker by The [`ShowMapItems`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShowMapItems.html) property, which is a boolean property, displays or hides the labels. Set the [`ShapeValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeValuePath.html) property to get the labels.
+The [`ShowMapItems`](https://helpsyncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShowMapItems.html) property determines whether the label should be displayed on the bubble marker or not. Set the [`ShapeValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeSetting~ShapeValuePath.html) property to get the labels.
+
+N> The default value of [`ShowMapItems`](https://helpsyncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShowMapItems.html) property is true
 
 {% tabs %}
 
@@ -496,34 +498,41 @@ To display the label on bubble marker by The [`ShowMapItems`](https://help.syncf
 
             this.Content = map;
 
+{% endhighlight %}
 
-    public class AgricultureData
-    {
-        public AgricultureData(string name, string type, int count)
-        {
-            Name = name;
-            Type = type;
-            index = count;
-        }
+{% highlight Model %}
 
-        public string Name
+         public class AgricultureData
         {
-            get;
-            set;
-        }
+            public AgricultureData(string name, string type, int count)
+            {
+                Name = name;
+                Type = type;
+                index = count;
+            }
 
-        public string Type
-        {
-            get;
-            set;
-        }
+            public string Name
+            {
+                get;
+                set;
+            }
 
-        public int index
-        {
-            get;
-            set;
+            public string Type
+            {
+                get;
+                set;
+            }
+
+            public int index
+            {
+                get;
+                set;
+            }
         }
-    }
+        
+{% endhighlight %}
+ 
+{% highlight ViewModel %}
 
     public class ViewModel
     {

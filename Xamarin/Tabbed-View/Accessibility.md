@@ -7,7 +7,7 @@ control : SfTabView
 documentation : ug
 ---
 
-# AutomationId for SfTabView
+# AutomationId for Xamarin.Forms TabView
 
 The SfTabView control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the SfTabView control. To keep unique AutomationId, these inner elements' AutomationIds are updated based on the control's `AutomationId`. 
 

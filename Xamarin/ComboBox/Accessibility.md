@@ -1,7 +1,7 @@
 ---
 layout : post
 title: AutomationId support for Syncfusion ComboBox control in Xamarin.Forms
-description: Set AutomationId to find and interact with inner elements in ComboBox.The SfComboBox control has built-in `AutomationId` for inner elements.  
+description: This topic describes about the support to set AutomationId to find and interact with inner elements in Xamarin.Forms ComboBox.  
 platform : Xamarin.Forms
 control : SfComboBox
 documentation : ug

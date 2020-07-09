@@ -33,36 +33,36 @@ For example, if we set ListView’s AutomationId as “Automation” then the Au
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
- public class ContactsViewModel : INotifyPropertyChanged
+public class ContactsViewModel : INotifyPropertyChanged
+{
+    public Command<object> TapCommand { get; set; }
+    public ObservableCollection<Contacts> contactsinfo { get; set; }
+
+    public ContactsViewModel()
     {
-        public Command<object> TapCommand { get; set; }
-        public ObservableCollection<Contacts> contactsinfo { get; set; }
+        contactsinfo = new ObservableCollection<Contacts>();
+        TapCommand = new Command<object>(OnTapped);
+        GenerateInfo();
+    }
 
-        public ContactsViewModel()
-        {
-            contactsinfo = new ObservableCollection<Contacts>();
-            TapCommand = new Command<object>(OnTapped);
-            GenerateInfo();
-        }
+    private void OnTapped(object obj)
+    {
+        var item = obj as Contacts;
+        App.Current.MainPage.DisplayAlert("Item tapped", "Automation ID is " + item.AutomationID, "Ok");
+    }
 
-        private void OnTapped(object obj)
+    public void GenerateInfo()
+    {
+        Random r = new Random();
+        for (int i = 0; i < 50; i++)
         {
-            var item = obj as Contacts;
-            App.Current.MainPage.DisplayAlert("Item tapped", "Automation ID is " + item.AutomationID, "Ok");
+            var contact = new Contacts(CustomerNames[i], r.Next(720, 799).ToString() + " - " + r.Next(3010, 3999).ToString());
+            contact.ContactImage = ImageSource.FromResource("ListViewXamarin.Images.Image" + r.Next(0, 28) + ".png");
+            contact.AutomationID = "Automation" + CustomerNames[i];
+            contactsinfo.Add(contact);
         }
-
-        public void GenerateInfo()
-        {
-            Random r = new Random();
-            for (int i = 0; i < 50; i++)
-            {
-                var contact = new Contacts(CustomerNames[i], r.Next(720, 799).ToString() + " - " + r.Next(3010, 3999).ToString());
-                contact.ContactImage = ImageSource.FromResource("ListViewXamarin.Images.Image" + r.Next(0, 28) + ".png");
-                contact.AutomationID = "Automation" + CustomerNames[i];
-                contactsinfo.Add(contact);
-            }
-        }
-	}
+    }
+}
 {% endhighlight %}
 {% endtabs %}
 

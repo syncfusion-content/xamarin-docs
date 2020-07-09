@@ -423,8 +423,7 @@ N> The default value of [`ShowMapItems`](https://helpsyncfusion.com/cr/cref_file
 
             <maps:SfMaps>
                 <maps:SfMaps.Layers>
-                    <maps:ShapeFileLayer x:Name="layer" Uri="usa_state.shp" ShapeIDPath="Name" ShapeIDTableField="STATE_NAME" 
-                                        ShowMapItems="True"  ItemsSource="{Binding DataSource}">
+                    <maps:ShapeFileLayer x:Name="layer" Uri="usa_state.shp" ShapeIDPath="Name" ShapeIDTableField="STATE_NAME" ShowMapItems="True"  ItemsSource="{Binding DataSource}">
                         <maps:ShapeFileLayer.BubbleMarkerSettings>
                             <maps:BubbleMarkerSetting ValuePath="index" ColorValuePath="index"  MinSize="20" MaxSize="30">
                                 <maps:BubbleMarkerSetting.ColorMappings>

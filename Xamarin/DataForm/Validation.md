@@ -539,3 +539,8 @@ Used **Button** inside a **Grid** to display the valid and invalid message in th
 {% endtabs %}
 
 ![Customize validation message using DataTemplateSelector in Xamarin.Forms DataForm](SfDataForm_images/Validation_Message_Customization.png)
+
+## See also
+
+[How to validate SfDataForm on page loading](https://www.syncfusion.com/kb/9058/)                                                                                                                                                                                                                       
+[How to commit and validate the custom editor value to corresponding DataObject property in Xamarin.Forms SfDataForm](https://www.syncfusion.com/kb/10224/)

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: DataTemplateSelector of Syncfusion Xamarin.Forms SfComboBox
-description: How to use a DataTemplateSelctor  for Xamarin.Forms SfComboBox
+description: SfComboBox supports DataTemplateSelector, DataTemplateSelector for Xamarin.Forms SfComboBox is used to choose a DataTemplate based on data object.
 platform: Xamarin
 control: SfComboBox
 documentation: ug
 ---
 
-## DataTemplateSelector
+# DataTemplateSelector for Xamarin.Forms ComboBox
 
 SfComboBox supports DataTemplateSelector, which is used to choose a DataTemplate based on data object.
  
@@ -100,7 +100,7 @@ SfComboBox supports DataTemplateSelector, which is used to choose a DataTemplate
 
 {% endtabs %}
 
-### Create and Initialize Business Models 
+## Create and Initialize Business Models 
 
 Define a simple model class MobileDetail with fields IsAvailableInStock, Mobile and populate mobile detail in ViewModel.
 

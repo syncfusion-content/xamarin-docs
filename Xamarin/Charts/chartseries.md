@@ -433,7 +433,7 @@ N> The output of this method will be -1 if there is no data point under the give
 
 ### Animate()
 
-The [`Animate`] is a built-in method and a short way to play animation on a chart series.
+The [`Animate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartSeries~Animate.html) is a built-in method and a short way to play animation on a chart series.
 
 {% highlight c# %}
 

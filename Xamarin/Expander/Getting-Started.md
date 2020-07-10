@@ -337,7 +337,7 @@ private void Expander_Expanded(object sender, ExpandedAndCollapsedEventArgs e)
 
 ### Restricting the Expander while expanding and collapsing 
 
-You can set restrict the Expander being collapsed by the [Collapsing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Collapsing_EV.html) event. This event occurs when an user tries to collapse the SfExpander when tapping on the Header. You can cancel the user action using the `Cancel` property of [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.ExpandingAndCollapsingEventArgs.html). 
+You can restrict the Expander being collapsed by the [Collapsing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Collapsing_EV.html) event. This event occurs when an user tries to collapse the SfExpander when tapping on the Header. You can cancel the user action using the `Cancel` property of [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.ExpandingAndCollapsingEventArgs.html). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -354,7 +354,7 @@ private void Expander_Collapsing(object sender, ExpandingAndCollapsingEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-You can set restrict the Expander being expanded by the [Expanding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Expanding_EV.html) event. This event occurs when an user tries to expand the SfExpander when tapping on the Header. You can cancel the user action using the `Cancel` property of [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.ExpandingAndCollapsingEventArgs.html). 
+You can restrict the Expander being expanded by the [Expanding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Expanding_EV.html) event. This event occurs when an user tries to expand the SfExpander when tapping on the Header. You can cancel the user action using the `Cancel` property of [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.ExpandingAndCollapsingEventArgs.html). 
 
 {% tabs %}
 {% highlight xaml %}

@@ -505,4 +505,4 @@ public class DragDropControllerExt : DragDropController
 [How to retrieve the dragged item index in ViewModel command with the Prism framework in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11371)                                                                                                                                                                                  
 [How to show or hide drag indicator based on the DragStartMode in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11425/)                                    
 [How to get the dropped item group in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11436)                                                                                                                                                                                                                         
-[How to handle button action of ListView item when dragging in Xamarin.Forms (SflistView)?](https://www.syncfusion.com/kb/11686/)
+[How to handle button action of ListView item when dragging in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11686/)

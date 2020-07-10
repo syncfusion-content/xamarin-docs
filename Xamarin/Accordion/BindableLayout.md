@@ -145,8 +145,8 @@ You can get the index of the interacted `AccordionItem` by using the [Collapsed]
 Accordion.Collapsed += Accordion_Collapsed;
 private void Accordion_Collapsed(object sender, Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs e)
 {
-    var msg = e.Index.ToString();
-    DisplayAlert("Index", msg, "ok");
+    var value = e.Index.ToString();
+    DisplayAlert("Index", value, "ok");
 }
 {% endhighlight %}
 {% endtabs %}		
@@ -161,8 +161,8 @@ Using the [Expanded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 Accordion.Expanded += Accordion_Expanded;
 private void Accordion_Expanded(object sender, Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs e)
 {
-    var msg = e.Index.ToString();
-    DisplayAlert("Index", msg, "ok");
+    var value = e.Index.ToString();
+    DisplayAlert("Index", value, "ok");
 }
 {% endhighlight %}
 {% endtabs %}
@@ -190,8 +190,8 @@ You can also get the index of the interacted `AccordionItem` by using the `index
 {% highlight c# %}
 private void Accordion_Collapsing(object sender, ExpandingAndCollapsingEventArgs e)
 {
-    var msg = e.Index.ToString();
-    DisplayAlert("Index", msg, "ok");
+    var value = e.Index.ToString();
+    DisplayAlert("Index", value, "ok");
 }
 {% endhighlight %}
 {% endtabs %}
@@ -215,8 +215,8 @@ You can also get the index of the interacted `AccordionItem` by using the `index
 
 private void Accordion_Expanding(object sender, ExpandingAndCollapsingEventArgs e)
 {
-    var msg = e.Index.ToString();
-    DisplayAlert("Index", msg, "ok");
+    var value = e.Index.ToString();
+    DisplayAlert("Index",value, "ok");
 }
 {% endhighlight %}
 {% endtabs %}

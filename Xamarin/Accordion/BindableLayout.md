@@ -133,7 +133,7 @@ You can download the entire source of this demo [here](https://github.com/Syncfu
 
 ## Events
 
-### How to perform an operation when accordionItem is collapsed
+### Get the index of expanded/collapsed accordion item.
 
 You can get the index of the interacted `AccordionItem` by using the [Collapsed](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Collapsed_EV.html). It will occur after an AccordionItem is collapsed when tapping on the Header. The [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) properties provides data for the `collapsed` event.  
 
@@ -151,8 +151,6 @@ private void Accordion_Collapsed(object sender, Syncfusion.XForms.Accordion.Expa
 {% endhighlight %}
 {% endtabs %}		
 
-### How to perform an operation when accordionItem is expanded
-
 Using the [Expanded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Expanded_EV.html) event you can get the index of the interacted `AccordionItem`. It will occur after an AccordionItem is expanded when tapping on the Header. The [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) properties provides data for the `expanded` event.  
 
 {% tabs %}
@@ -169,7 +167,7 @@ private void Accordion_Expanded(object sender, Syncfusion.XForms.Accordion.Expan
 {% endhighlight %}
 {% endtabs %}
 
-### How to perform an operation while collapsing the accordionItem 
+### Restricting the accordion item expanding and collapsing 
 
 The [Collapsing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Collapsing_EV.html) event occurs while collapsing an `AccordionItem` when tapping on the Header. You can get the index of the interacted `AccordionItem` by using the `index` property of the [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) . You can cancel the collapsing action by using the `Cancel` property in the event args. 
 
@@ -187,8 +185,6 @@ private void Accordion_Collapsing(object sender, Syncfusion.XForms.Accordion.Exp
         }
 {% endhighlight %}
 {% endtabs %}
-
-### How to perform an operation while expanding the accordionItem 
 
 The [Expanding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Expanding_EV.html) event occurs while expanding an `AccordionItem` when tapping on the Header. You can get the index of the interacted `AccordionItem` by using the `index` property of the [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) . You can cancel the expanding action by using the `Cancel` property in the event args. 
 

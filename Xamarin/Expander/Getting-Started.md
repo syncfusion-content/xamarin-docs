@@ -311,7 +311,8 @@ expander.Collapsed += Expander_Collapsed;
             
 private void Expander_Collapsed(object sender, ExpandedAndCollapsedEventArgs e)
 {
-//Write here the logic to be done when the control is collapsed.
+    edi.Text = "Burger and Pizza";
+    expander.Header.BackgroundColor = Color.Aqua;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -328,7 +329,8 @@ expander.Expanded += Expander_Expanded;
             
 private void Expander_Expanded(object sender, ExpandedAndCollapsedEventArgs e)
 {
-//Write here the logic to be done when the control is expanded.
+    edi.Text = "Burger";
+    expander.Header.BackgroundColor = Color.YellowGreen;
 }
 {% endhighlight %}
 {% endtabs %}
@@ -347,7 +349,7 @@ expander.Collapsing += Expander_Collapsing;
 
 private void Expander_Collapsing(object sender, ExpandingAndCollapsingEventArgs e)
 {
-    e.Cancel = true;
+   e.Cancel = true;
 }
 {% endhighlight %}
 {% endtabs %}

@@ -144,10 +144,10 @@ You can get the index of the interacted `AccordionItem` by using the [Collapsed]
 {% highlight c# %}
 Accordion.Collapsed += Accordion_Collapsed;
 private void Accordion_Collapsed(object sender, Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs e)
-        {
-            var msg = e.Index.ToString();
-            DisplayAlert("Index", msg, "ok");
-        }
+{
+    var msg = e.Index.ToString();
+    DisplayAlert("Index", msg, "ok");
+}
 {% endhighlight %}
 {% endtabs %}		
 
@@ -160,16 +160,16 @@ Using the [Expanded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 {% highlight c# %}
 Accordion.Expanded += Accordion_Expanded;
 private void Accordion_Expanded(object sender, Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs e)
-        {
-            var msg = e.Index.ToString();
-            DisplayAlert("Index", msg, "ok");
-        }
+{
+    var msg = e.Index.ToString();
+    DisplayAlert("Index", msg, "ok");
+}
 {% endhighlight %}
 {% endtabs %}
 
 ### Restricting the accordion item expanding and collapsing 
 
-The [Collapsing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Collapsing_EV.html) event occurs while collapsing an `AccordionItem` when tapping on the Header. You can get the index of the interacted `AccordionItem` by using the `index` property of the [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) . You can cancel the collapsing action by using the `Cancel` property in the event args. 
+The [Collapsing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Collapsing_EV.html) event occurs while collapsing an `AccordionItem` when tapping on the Header. You can cancel the collapsing action by using the `Cancel` property in the event args. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -177,16 +177,26 @@ The [Collapsing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Ex
 {% endhighlight %}
 {% highlight c# %}
 Accordion.Collapsing += Accordion_Collapsing;
-private void Accordion_Collapsing(object sender, Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs e)
-        {
-            var msg = e.Index.ToString();
-            DisplayAlert("Index", msg, "ok");
-			e.cancel = true;
-        }
+private void Accordion_Collapsing(object sender, ExpandingAndCollapsingEventArgs e)
+{
+   e.cancel = true;
+}
 {% endhighlight %}
 {% endtabs %}
 
-The [Expanding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Expanding_EV.html) event occurs while expanding an `AccordionItem` when tapping on the Header. You can get the index of the interacted `AccordionItem` by using the `index` property of the [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) . You can cancel the expanding action by using the `Cancel` property in the event args. 
+You can also get the index of the interacted `AccordionItem` by using the `index` property of the [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandingAndCollapsingEventArgs.html) .
+
+{% tabs %}
+{% highlight c# %}
+private void Accordion_Collapsing(object sender, ExpandingAndCollapsingEventArgs e)
+{
+    var msg = e.Index.ToString();
+    DisplayAlert("Index", msg, "ok");
+}
+{% endhighlight %}
+{% endtabs %}
+
+The [Expanding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Expanding_EV.html) event occurs while expanding an `AccordionItem` when tapping on the Header. You can cancel the expanding action by using the `Cancel` property in the event args. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -195,13 +205,22 @@ The [Expanding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Exp
 {% highlight c# %}
 Accordion.Expanding += Accordion_Expanding;
 private void Accordion_Expanding(object sender, ExpandingAndCollapsingEventArgs e)
-        {
-            var msg = e.Index.ToString();
-             DisplayAlert("Index", msg, "ok");
-            e.Cancel = true;
-        }
+{
+    e.Cancel = true;
+}
 {% endhighlight %}
 {% endtabs %}
+
+You can also get the index of the interacted `AccordionItem` by using the `index` property of the [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandingAndCollapsingEventArgs.html) .
+
+private void Accordion_Expanding(object sender, ExpandingAndCollapsingEventArgs e)
+{
+    var msg = e.Index.ToString();
+    DisplayAlert("Index", msg, "ok");
+}
+{% endhighlight %}
+{% endtabs %}
+
 
 ## See also
 

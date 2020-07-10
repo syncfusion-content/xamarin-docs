@@ -7,9 +7,9 @@ control: SfAvatarView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started With Xamarin AvatarView (SfAvatarView)
 
-## Getting started with Xamarin Avatar View (SfAvatarView)
+## Getting started with SfAvatarView
 
 This section explains the steps required to work with the SfAvatarView control for Xamarin.Forms.
 
@@ -51,6 +51,10 @@ Location: {Installed location}/{version}/Xamarin/lib
 <tr>
 <td>UWP</td>
 <td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.UWP.dll<br/>Syncfusion.Licensing.dll<br/></td>
+</tr>
+<tr>
+<td>WPF</td>
+<td>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.WPF.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 </table>
 
@@ -117,6 +121,28 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 {% endhighlight %}
 
 {% endtabs %}
+
+### Windows Presentation Foundation (WPF)
+
+To launch the border in WPF, call the SfBorderRenderer.Init() method in the MainWindow constructor of the MainWindow class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample.
+
+{% highlight C# %} 
+
+public partial class MainWindow : FormsApplicationPage
+{
+     public MainWindow()
+     { 
+            InitializeComponent();
+
+            Forms.Init();
+
+            Syncfusion.XForms.WPF.Border.SfBorderRenderer.Init();
+
+            LoadApplication(new App());
+     }
+}
+
+{% endhighlight %}
 
 ## Creating an SfAvatarView control
 
@@ -191,4 +217,4 @@ namespace AvatarViewGettingStarted
 
 ![SfAvatarView](images/Getting_Started_Ssample.png)
 
-The Getting Started sample is available in this following link: [Getting Started](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1355304957).
+The Getting Started sample is available in this following link: [Getting Started](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Getting_started-732039602).

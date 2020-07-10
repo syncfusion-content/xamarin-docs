@@ -489,8 +489,11 @@ The following code sample demonstrates how to retrieve [`SelectedItem`](https://
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
+   <ContentPage.BindingContext>
+      <local:EmployeeViewModel/>
+   </ContentPage.BindingContext>
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None" DataSource="{Binding EmployeeCollection}" DisplayMemberPath ="Name" SelectedItem="{Binding SelectedItem,Mode=TwoWay}"  SelectionChanged="ComboBox_SelectionChanged">
+        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None"  DisplayMemberPath ="Name" DataSource="{Binding EmployeeCollection}" SelectedItem="{Binding SelectedItem,Mode=TwoWay}"  SelectionChanged="ComboBox_SelectionChanged">
            
         </comboBox:SfComboBox>
     </StackLayout> 
@@ -512,12 +515,36 @@ namespace ComboBox
     public partial class MainPage : ContentPage
     {
    
+       SfComboBox comboBox;
+       EmployeeViewModel ViewModel;
         public MainPage()
         {
             InitializeComponent();
-            this.BindingContext = new ViewModel();
+            StackLayout stackLayout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = 30
+            };
+            
+            comboBox = new SfComboBox();
+            ViewModel = new EmployeeViewModel();
+            comboBox.HeightRequest = 40
+            comboBox.DisplayMemberPath = "Name";
+            comboBox.DataSource = ViewModel.EmployeeCollection
+            Binding selectedItem = new Binding("SelectedItem");
+            selectedItem.Source = ViewModel;
+            selectedItem.Mode = BindingMode.TwoWay;
+            BindingOperations.SetBinding(comboBox, comboBox.SelectedItemProperty, selectedItem);
+            comboBox.MultiSelectMode = MultiSelectMode.None
+            comboBox.SelectionChanged += ComboBox_SelectionChanged;
+            stackLayout.Children.Add(comboBox);
+            this.BindingContext = ViewModel;
+            this.Content = stackLayout;
+
         }
           
+        //ComboBox SelectionChangedEvent has been created here
         private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
         {
             DisplayAlert("Selection Changed", "SelectedItem: " + comboBox.SelectedItem, "OK");

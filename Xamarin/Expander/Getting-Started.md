@@ -297,6 +297,78 @@ You can download expander sample for Xamarin.Forms here [ExpanderGettingStarted]
 {% endhighlight %}
 {% endtabs %}
 
+### Customize the expander when collapsing/expanding the SfExpander
+
+You can customize the expander by using the [Collapsed](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Collapsed_EV.html) event. It will occurs after an SfExpander is collapsed when tapping on the Header. It will provide information related to the `collapsed` event by using the [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.ExpandedAndCollapsedEventArgs.html).
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfExpander x:Name ="expander" Collapsed="Expander_Collapsed" >
+</syncfusion:SfExpander> 
+{% endhighlight %}
+{% highlight c# %}
+expander.Collapsed += Expander_Collapsed;
+            
+private void Expander_Collapsed(object sender, ExpandedAndCollapsedEventArgs e)
+{
+//Write here the logic to be done when the control is collapsed.
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can customize the expander by using the [Expanded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Expanded_EV.html) event. It will occurs after an SfExpander is expanded when tapping on the Header. It will provide information related to the `Expanded` event by using the [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.ExpandedAndCollapsedEventArgs.html).
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfExpander x:Name ="expander" Expanded="Expander_Expanded" >
+</syncfusion:SfExpander>
+{% endhighlight %}
+{% highlight c# %}
+expander.Expanded += Expander_Expanded;
+            
+private void Expander_Expanded(object sender, ExpandedAndCollapsedEventArgs e)
+{
+//Write here the logic to be done when the control is expanded.
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Restricting the Expander while expanding and collapsing 
+
+You can set restrict the Expander being collapsed by the [Collapsing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Collapsing_EV.html) event. This event occurs when an user tries to collapse the SfExpander when tapping on the Header. You can cancel the user action using the `Cancel` property of [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.ExpandingAndCollapsingEventArgs.html). 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfExpander x:Name ="expander" Collapsing="Expander_Collapsing" >
+</syncfusion:SfExpander>
+{% endhighlight %}
+{% highlight c# %}
+expander.Collapsing += Expander_Collapsing;
+
+private void Expander_Collapsing(object sender, ExpandingAndCollapsingEventArgs e)
+{
+    e.Cancel = true;
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can set restrict the Expander being expanded by the [Expanding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.SfExpander~Expanding_EV.html) event. This event occurs when an user tries to expand the SfExpander when tapping on the Header. You can cancel the user action using the `Cancel` property of [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.ExpandingAndCollapsingEventArgs.html). 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfExpander x:Name ="expander" Expanding="Expander_Expanding" >
+</syncfusion:SfExpander>
+{% endhighlight %}
+{% highlight c# %}
+expander.Expanding += Expander_Expanding;
+            
+private void Expander_Expanding(object sender, ExpandingAndCollapsingEventArgs e)
+{
+   e.Cancel = true;
+}
+{% endhighlight %}
+{% endtabs %} 
+
 ## See also
 
 [How to resolve SfExpander not rendering issue in iOS and UWP?](https://www.syncfusion.com/kb/11293/)                                                                                                                                   

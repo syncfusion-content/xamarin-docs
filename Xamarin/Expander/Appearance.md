@@ -127,7 +127,9 @@ this.Content = expander;
 
 ![Xamarin Forms Expander with VSM](expander_images/Expander_VSM.png)
 
-You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/Xamarin-Expander-VisualStateManager).
+You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/Xamarin-Expander-VisualStateManager). 
+
+>N When effects view is applied to `Expander` by adding Visual as "Material", it is necessary to initialize the `Xamarin.Forms.FormsMaterial.Init` in iOS and Android.
 
 ## See also
 

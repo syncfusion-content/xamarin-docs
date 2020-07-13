@@ -133,7 +133,7 @@ You can download the entire source of this demo [here](https://github.com/Syncfu
 
 ## Events
 
-### Get the index of expanded/collapsed accordion item.
+### Get the index of expanded or collapsed accordion item.
 
 You can get the index of the interacted `AccordionItem` by using the [Collapsed](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Collapsed_EV.html). It will occur after an AccordionItem is collapsed when tapping on the Header. The [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) properties provides data for the `collapsed` event.  
 
@@ -151,7 +151,7 @@ private void Accordion_Collapsed(object sender, Syncfusion.XForms.Accordion.Expa
 {% endhighlight %}
 {% endtabs %}		
 
-Using the [Expanded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Expanded_EV.html) event you can get the index of the interacted `AccordionItem`. It will occur after an AccordionItem is expanded when tapping on the Header. The [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) properties provides data for the `expanded` event.  
+Using the [Expanded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Expanded_EV.html) event, you can get the index of the interacted `AccordionItem.` It will occur after an AccordionItem is expanded when tapping on the Header. The [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) properties provides data for the `expanded` event.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -184,7 +184,7 @@ private void Accordion_Collapsing(object sender, ExpandingAndCollapsingEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-You can also get the index of the interacted `AccordionItem` by using the `index` property of the [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandingAndCollapsingEventArgs.html) .
+You can also get the index of the interacted `AccordionItem` by using the `index` property of the [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandingAndCollapsingEventArgs.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -211,7 +211,7 @@ private void Accordion_Expanding(object sender, ExpandingAndCollapsingEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-You can also get the index of the interacted `AccordionItem` by using the `index` property of the [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandingAndCollapsingEventArgs.html) .
+You can also get the index of the interacted `AccordionItem` by using the `index` property of the [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandingAndCollapsingEventArgs.html).
 
 {% tabs %}
 {% highlight c# %}

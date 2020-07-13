@@ -303,7 +303,18 @@ You can customize the expander by using the [Collapsed](https://help.syncfusion.
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfExpander x:Name ="expander" Collapsed="Expander_Collapsed" >
+<syncfusion:SfExpander x:Name ="expander" Collapsed="Expander_Collapsed">
+    <syncfusion:SfExpander.Header>
+        <Grid >
+            <Label x:Name="label"  Text="Veggie burger" FontSize="Large"/>
+        </Grid>
+    </syncfusion:SfExpander.Header>
+	
+    <syncfusion:SfExpander.Content>
+        <Grid>
+            <Label Text="Veggie burger, garden burger, or tofu burger uses a meat analogue, a meat substitute such as tofu, textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties."/>
+        </Grid>
+    </syncfusion:SfExpander.Content>
 </syncfusion:SfExpander> 
 {% endhighlight %}
 {% highlight c# %}
@@ -311,7 +322,7 @@ expander.Collapsed += Expander_Collapsed;
             
 private void Expander_Collapsed(object sender, ExpandedAndCollapsedEventArgs e)
 {
-    edi.Text = "Burger and Pizza";
+    label.Text = "Burger and Pizza";
     expander.Header.BackgroundColor = Color.Aqua;
 }
 {% endhighlight %}
@@ -321,7 +332,18 @@ You can customize the expander by using the [Expanded](https://help.syncfusion.c
 
 {% tabs %}
 {% highlight xaml %}
-<syncfusion:SfExpander x:Name ="expander" Expanded="Expander_Expanded" >
+<syncfusion:SfExpander x:Name ="expander" Expanded="Expander_Expanded">
+    <syncfusion:SfExpander.Header>
+        <Grid >
+            <Label x:Name="label"  Text="Veggie burger" FontSize="Large"/>
+        </Grid>
+    </syncfusion:SfExpander.Header>
+	
+    <syncfusion:SfExpander.Content>
+        <Grid>
+            <Label Text="Veggie burger, garden burger, or tofu burger uses a meat analogue, a meat substitute such as tofu, textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties."/>
+        </Grid>
+    </syncfusion:SfExpander.Content>
 </syncfusion:SfExpander>
 {% endhighlight %}
 {% highlight c# %}
@@ -329,7 +351,7 @@ expander.Expanded += Expander_Expanded;
             
 private void Expander_Expanded(object sender, ExpandedAndCollapsedEventArgs e)
 {
-    edi.Text = "Burger";
+    label.Text = "Burger";
     expander.Header.BackgroundColor = Color.YellowGreen;
 }
 {% endhighlight %}

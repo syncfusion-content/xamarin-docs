@@ -27,22 +27,27 @@ The Content of the `SfExpander` gets re-measured and layout when its size is upd
 
 {% tabs %}
 {% highlight xaml %}
-  <syncfusion:SfExpander DynamicSizeMode="Content" IsExpanded="True">
-                    <syncfusion:SfExpander.Header>
-                        <Grid HeightRequest="50">
-                            <Label Text="Veggie burger" VerticalTextAlignment="Center"/>
-                        </Grid>
-                    </syncfusion:SfExpander.Header>
+<syncfusion:SfExpander DynamicSizeMode="Content" IsExpanded="True">
+    <syncfusion:SfExpander.Header>
+        <Grid>
+            <Label Text="Veggie burger" x:Name="label" FontSize="Large"/>
+        </Grid>
+    </syncfusion:SfExpander.Header>
 
-                    <syncfusion:SfExpander.Content>
-                        <Grid>
-                            <Editor AutoSize="TextChanges" Text="Veggie burger, garden burger, or tofu burger uses a meat analogue, a meat substitute such as tofu, textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties."/>
-                        </Grid>
-                    </syncfusion:SfExpander.Content>
-    </syncfusion:SfExpander>      
+    <syncfusion:SfExpander.Content>
+        <Grid>
+		    <Button Text="Change Content Text" TextColor="Black" x:Name="button1" BackgroundColor="BlueViolet" Clicked="button1_Clicked"/>
+            <Label x:Name="label1" Text="Veggie burger, garden burger, or tofu burger uses a meat analogue, a meat substitute such as tofu, textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties."/>
+        </Grid>
+    </syncfusion:SfExpander.Content>
+</syncfusion:SfExpander>      
 {% endhighlight %}
 {% highlight c# %}
-     expander.DynamicSizeMode = DynamicSizeMode.Content;
+expander.DynamicSizeMode = DynamicSizeMode.Content;
+private void button1_Clicked(object sender, EventArgs e)
+{
+   label1.Text = "Veggie burger, garden burger, or tofu burger uses a meat analogue, a meat substitute such as tofu, textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties.It comes with the cheesiness of a pizza within a burger, instead of a regular patty. Basically, they look like a burger and taste like a pizza! The three main burger pizza options available in the store are: Classic Veg Burger Pizza , Premium Veg Burger Pizza , Classic Non-Veg.";
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -55,21 +60,26 @@ The Header of the `SfExpander` gets re-measured and layout when its size is upda
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfExpander DynamicSizeMode="Content" IsExpanded="True">
-                    <syncfusion:SfExpander.Header>
-                        <Grid>
-                            <Editor Text="Veggie burger" AutoSize="TextChanges" FontSize="Large"/>
-                        </Grid>
-                    </syncfusion:SfExpander.Header>
+    <syncfusion:SfExpander.Header>
+        <Grid>
+		    <Button Text="Change Header Text" TextColor="Black" x:Name="button" BackgroundColor="BlueViolet" Clicked="button_Clicked"/>
+            <Label Text="Veggie burger" x:Name="label" FontSize="Large"/>
+        </Grid>
+    </syncfusion:SfExpander.Header>
 
-                    <syncfusion:SfExpander.Content>
-                        <Grid>
-                            <Label Text="Veggie burger, garden burger, or tofu burger uses a meat analogue, a meat substitute such as tofu, textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties."/>
-                        </Grid>
-                    </syncfusion:SfExpander.Content>
+    <syncfusion:SfExpander.Content>
+        <Grid>
+            <Label x:Name="label1" Text="Veggie burger, garden burger, or tofu burger uses a meat analogue, a meat substitute such as tofu, textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties."/>
+        </Grid>
+    </syncfusion:SfExpander.Content>
 </syncfusion:SfExpander> 
 {% endhighlight %}
 {% highlight c# %}
-     expander.DynamicSizeMode = DynamicSizeMode.Header;
+expander.DynamicSizeMode = DynamicSizeMode.Header;
+private void button_Clicked(object sender, EventArgs e)
+{
+   label.Text = "Veggie burger, garden burger, or tofu burger";
+}
 {% endhighlight %}
 {% endtabs %}	
 

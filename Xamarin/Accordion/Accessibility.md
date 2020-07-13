@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Accessibility in Xamarin Accordion (SfAccordion)
 
-The Accordion control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the Accordion control. To keep unique AutomationId, these inner element's AutomationIds are updated based on the Accordion control `AutomationId`. 
+The Accordion control has built-in `AutomationId` for inner elements. The [AutomationId](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~AutomationId.html) API allows the automation framework to find and interact with the inner elements of the Accordion control. To keep unique AutomationId, these inner element's AutomationIds are updated based on the Accordion control `AutomationId`. 
 
 For example, if you set Accordion's AutomationId as "Automation", then Automation framework will interact with expander icon of AccordionItem  as `AutomationItem1 Expander`. Here, along with the control's AutomationId, index of an item will also be added for differentiating each AccordionItem expander. 
 

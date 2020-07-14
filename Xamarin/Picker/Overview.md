@@ -78,8 +78,8 @@ The picker control allows you to pick an item among a list of items that can be 
 
 The following screenshot illustrates picker’s color selection
 
-![](images/forms_picker.png)
+![Xamarin SfPicker](images/forms_picker.png)
 
 The following screenshot illustrates picker’s multicolumn
 
-![](images/multicolumn.png)
+![Xamarin SfPicker](images/multicolumn.png)

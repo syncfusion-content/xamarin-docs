@@ -11,7 +11,7 @@ documentation : ug
 
 The combo box is a textbox component that allows users to type a value or choose an option from the list of predefined options. This control has several out of box features such as data binding, filtering, UI customization, and more.
 
-![](images/Overview/overview.png)
+![Xamarin ComboBox](images/Overview/overview.png)
 
 ## Key features
 

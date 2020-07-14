@@ -11,7 +11,7 @@ documentation: ug
 
 The Essential Xamarin.Forms NumericUpDown control provides up and down repeat buttons to increase and decrease values. The control respects UI culture and can be configured to display different formats like currency, scientific, etc.
 
-![](images/overview.png)
+![Xamarin  SfNumericUpDown](images/overview.png)
 
 ## Key Features
 

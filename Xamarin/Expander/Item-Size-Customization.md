@@ -13,17 +13,17 @@ This section explains how to customize the item size in the SfExpander.
 
 ## AutoFit the expander based on content
 
-You can dynamically resize the `SfExpander` content based on the content size by using the [DynamicSizeMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.DynamicSizeMode.html) property.
+You can dynamically resize the `SfExpander` content based on the content size using the [DynamicSizeMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.DynamicSizeMode.html) property.
 
-The control contains the following three types of `DynamicSizeMode`:
+The control contains three types of `DynamicSizeMode,` they are:
 
  * Content: Autofit the content based on the content size.
  * Header: Autofit the header based on the header content size.
- * None: The dynamic changes of header and content of a `SfExpander` will not be considered. It is a default value of `DynamicSizeMode`.
+ * None: The dynamic changes of header and the content of a `SfExpander` will not be considered. It is a default value of `DynamicSizeMode`.
  
 ### DynamicSizeMode as Content
  
-The Content of the `SfExpander` gets re-measured and layout when its size is updated at runtime. You can add the `Editor` control to Expander content and set DynamicSizeMode to `Content` to change the content size dynamically.
+The content and layout of `SfExpander` get re-measured when its size is updated at runtime. You can add the `Label` control to expander content and set the DynamicSizeMode to `Content` to change the content size dynamically.
 
 {% tabs %}
 {% highlight xaml %}
@@ -55,7 +55,7 @@ private void button1_Clicked(object sender, EventArgs e)
 
 ### DynamicSizeMode as Header
 
-The Header of the `SfExpander` gets re-measured and layout when its size is updated at runtime. You can add the `Editor` control to Expander header and set DynamicSizeMode to `Header` to change the header size dynamically.
+The header and layout of the `SfExpander` get re-measured when its size is updated at runtime. You can add the `Label` control to the expander header and set the DynamicSizeMode to `Header` to change the header size dynamically.
 
 {% tabs %}
 {% highlight xaml %}

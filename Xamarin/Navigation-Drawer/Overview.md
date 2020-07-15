@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview of Syncfusion NavigationDrawer control for Xamarin.Forms
-description: Overview and key features of NavigationDrawer control
+description: Overview and key features like pane positions, Animated transitions and changeable swipe sensitivity of NavigationDrawer control
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Overview
+# Overview with Xamarin NavigationDrawer
 
 Essential NavigationDrawer for Xamarin.Forms is a simpler component to create navigation pane in application. It has a content area and a sliding pane that slides out from the edge of the page. The pane can be opened by swiping the edges of the screen or programmatically.
 

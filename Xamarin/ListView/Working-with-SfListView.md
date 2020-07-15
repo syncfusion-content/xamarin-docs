@@ -1127,7 +1127,7 @@ private bool FilterDepartures(object obj)
 
  Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Filter-xamarin.forms-listview-based-on-swiped-items-in-another-listview).
 
- ## Dispose listview
+## Dispose listview
 
 You can dispose and release resources used by ListView by calling the [ListView.Dispose](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Dispose().html) method.
 

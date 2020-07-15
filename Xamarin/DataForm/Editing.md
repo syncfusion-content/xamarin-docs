@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Editing | SfDataForm | Xamarin.Forms | Syncfusion
-description: Editing in SfDataForm for Xamarin.Forms.
+description: Describes editing, number of editor types, converter, and commit mode of SfDataForm for Xamarin.Forms
 platform: xamarin
 control: SfDataForm
 documentation: UG
 ---
 
-# Editing 
+# Editing in Xamarin DataForm (SfDataForm)
 
 The data form supports several built-in editors. 
 
@@ -716,3 +716,11 @@ dataForm.NotifyPropertyChanges = true;
 {% endtabs %}
 
 You can download the entire source code of this demo from here [Two-wayDataBinding](https://github.com/SyncfusionExamples/two-way-data-binding-support-in-xamarin.forms-dataform)
+
+## See also
+
+[How to save or cancel the edited DataForm data in Xamarin.Forms (SfDataForm)](https://www.syncfusion.com/kb/11312/)                                                                                                                                                                                                                                                                    
+[How to programmatically implement converter to Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11541/)                                                                                                                                                                                          
+[How to register common editor for same data type properties in Xamarin.Forms DataForm business object](https://www.syncfusion.com/kb/10322/)                                                                                                                                                                                   
+[How to change the editor visibility based on another editor in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11189/)                                                                                                                                                                  
+[How to update editor value based on another editor in Xamarin.Forms DataForm (SfDataForm)](https://www.syncfusion.com/kb/11192/)

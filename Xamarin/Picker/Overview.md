@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview of Syncfusion Picker control for Xamarin.Forms
-description: Overview and key features comparisions across IOS, Andriod and UMPO of  Xamarine Picker control
+description: This section explains about Overview and key features comparisions across IOS, Andriod and UMP of Xamarine Picker control
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
-# Overview
+# Overview with Xamarin Picker
 
 The picker control allows you to pick an item among a list of items that can be customized with custom view. This control can be opened as dialog. Its rich feature set includes functionalities such as data binding, multi column, header/footer, custom view on header/footer, and default validation buttons.
 
@@ -78,8 +78,8 @@ The picker control allows you to pick an item among a list of items that can be 
 
 The following screenshot illustrates picker’s color selection
 
-![Xamarin SfPicker](images/forms_picker.png)
+![Xamarin SfPicker with color selection](images/forms_picker.png)
 
 The following screenshot illustrates picker’s multicolumn
 
-![Xamarin SfPicker](images/multicolumn.png)
+![Xamarin SfPicker with multicolumn](images/multicolumn.png)

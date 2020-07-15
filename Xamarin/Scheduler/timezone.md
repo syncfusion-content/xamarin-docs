@@ -1240,8 +1240,9 @@ namespace ScheduleXamarin
 		   var meeting = new Meeting();
            meeting.StartTimeZone = "W. Europe Standard Time";
            meeting.EndTimeZone = "W. Europe Standard Time";
-		   .......
-           .......
+		   
+           ...
+		   
            this.Meetings.Add(meeting);
 		}
 	}

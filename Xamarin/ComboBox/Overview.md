@@ -1,7 +1,7 @@
 ---
 layout : post
 title: Overview of Syncfusion ComboBox control for Xamarin.Forms
-description: Overview and key features like  editable,filtering, suggestion,multiselection with Xamarin ComboBox control
+description: Overview and key features like editable, filtering, suggestion, multiselection with Xamarin ComboBox control
 platform : xamarin
 control : SfComboBox
 documentation : ug

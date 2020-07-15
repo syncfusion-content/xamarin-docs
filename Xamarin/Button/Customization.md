@@ -518,7 +518,7 @@ N> Shadow support has not been provided for UWP Platform.
 
 ## Ripple Effect
 
-The button control provides ripple effect support. To enable the ripple effect, set the [`EnableRippleEffect`] property to true. By default, [`EnableRippleEffect`] value is true.
+The button control provides ripple effect support. To enable the ripple effect, set the [`EnableRippleEffect`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~EnableRippleEffect.html) property to true. By default, [`EnableRippleEffect`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~EnableRippleEffect.html) value is true.
 
 {% tabs %}
 

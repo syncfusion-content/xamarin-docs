@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview | SfListView | Xamarin | Syncfusion
-description: Describes about quick overview for ListView features sets and advantages in Xamarin.Forms.
+description:This topic describes about the quick overview of ListView features sets and its advantages in Xamarin.Forms.
 platform: xamarin
 control: SfListView
 documentation: ug
 ---
 
-# SfListView
+# Xamarin ListView (SfListView) Overview
 
 The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views or custom templates. Data can be grouped, sorted, and filtered with ease.
 
@@ -77,6 +77,7 @@ The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms vi
 <td><i class="fa fa-check"></i></td>
 </tr>
 </table>
+
 
 ## Key features
 

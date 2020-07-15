@@ -11,6 +11,73 @@ documentation: ug
 
 The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views or custom templates. Data can be grouped, sorted, and filtered with ease.
 
+<table>
+<tr>
+<th>Features</th>
+<th>Xamarin.Forms<br/>(Android, iOS ,UWP ,WPF and MacOS)</th>
+</tr>
+<tr>
+<td>scrolling</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Sorting</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Grouping</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Item Reordering</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Linear layout</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Grid layout</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Filtering</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Item Size Customization</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Selection</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Load more</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Pull to refresh</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Swiping</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Custom Group Header</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Item Templating</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Header and Footer</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+</table>
+
 ## Key features
 
  * Optimized view reusing strategy for enhanced performance.

@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Syncfusion SfChart Getting Started
+# Getting Started with Xamarin Charts (SfChart)
 
 This section explains you the steps required to populate the Chart with data, title, add data labels and tooltips to the Chart. This section covers only the minimal features that you need to know to get started with the Chart.
 

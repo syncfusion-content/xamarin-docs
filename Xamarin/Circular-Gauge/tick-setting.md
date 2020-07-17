@@ -247,7 +247,7 @@ The major and minor ticks can be positioned far away from the rim by using the f
 
 ![Tick offset support in Xamarin.Forms Circular Gauge](tick-setting_images/start-end-offset.png)
 
-**See Also:**
+## See Also
 
 [How to show labels and ticks outside the rim in Xamarin.Forms Radial Gauge] (https://www.syncfusion.com/kb/11283/how-to-show-labels-and-ticks-outside-the-rim-in-xamarin-forms-radial-gauge)
 

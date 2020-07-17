@@ -109,7 +109,7 @@ You can customize the position of [`Scales`](https://help.syncfusion.com/cr/cref
 
 ### Setting radius factor for rim
 
-The [`RadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RadiusFactor.html) specifies where the rim position starts and ends. It ranges from 0 to 1.
+This approach is used to define the rim size from its starting location in logical pixels. The [`RadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RadiusFactor.html) property is used to define the start position of the scale rim in factor value (between 0 to 1). Rim position is determined by multiplying this factor value to the gauge circle radius size. The [`RimThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RimThickness.html) property is used to define the rim size in logical pixels. 
 
 {% tabs %}
 
@@ -148,7 +148,7 @@ The [`RadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 
 ### Setting scale start and end offsets for rim
 
-The [`ScaleStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ScaleStartOffset.html) and [`ScaleEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ScaleEndOffset.html) properties are used to define where the scale position starts and ends. 
+The properties ScaleStartOffset and ScaleStartOffset[`ScaleStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ScaleStartOffset.html) and [`ScaleEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ScaleEndOffset.html) are used to define the scale rim position and size in the factor value (between 0 and 1) for the responsive size (size will be responsive in all the layout). Rim position and size is determined by multiplying this factor value to the radius size of the gauge circle. 
 
 {% tabs %}
 

@@ -23,7 +23,7 @@ You can change the badge icon using the [`BadgeIcon`](https://help.syncfusion.co
 * Prohibit1
 * Prohibit2
 
-N> The badge view will display with both icon and text while setting BadgeType to None.
+N> When both the [`BadgeIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~BadgeIcon.html) and [`BadgeText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.SfBadgeView~BadgeText.html) are set for badge view, then badge text has a higher priority. The badge text will be rendered in output.
 
 {% tabs %}
 

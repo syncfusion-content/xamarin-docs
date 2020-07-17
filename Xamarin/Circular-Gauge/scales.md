@@ -510,7 +510,7 @@ N> Default value of the IsCenterAligned property is false.
 
 ![Center Aligned SfCircularGauge image](scales_images/iscenteraligned.png)
 
-**See Also:**
+## See Also
 
 [How to bind scale collection to SfCircularGauge] (https://www.syncfusion.com/kb/10578/how-to-bind-scale-collection-to-sfcirculargauge)
 

@@ -2,16 +2,16 @@
 
 layout: post
 title: Predefined symbols of Syncfusion Badge view control for Xamarin.Forms
-description: Learn how to set Syncfusion badge view predefined symbols in Xamarin.Forms platform
+description: Learn how to set Syncfusion badge view predefined symbols and types of badge icons in Xamarin.Forms platform
 platform: xamarin
 control: SfBadgeView
 documentation: ug
 
 ---
 
-# Predefined symbols
+# Predefined symbols in Xamarin.Forms BadgeView (SfBadgeView)
 
-You can change the badge icon using the [`BadgeIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~BadgeIcon.html) property. Badge icons will be visible, when you won't set the badge text. The badge supports the following types of [`BadgeIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~BadgeIcon.html):
+You can change the badge icon using the [`BadgeIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~BadgeIcon.html) property. Badge icons will be visible when you do not set the badge text. The badge supports the following types of [`BadgeIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~BadgeIcon.html):
 
 * Add
 * Available
@@ -22,6 +22,8 @@ You can change the badge icon using the [`BadgeIcon`](https://help.syncfusion.co
 * None
 * Prohibit1
 * Prohibit2
+
+N> When both the [`BadgeIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~BadgeIcon.html) and [`BadgeText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.SfBadgeView~BadgeText.html) are set for badge view, then badge text has a higher priority. The badge text will be rendered in output.
 
 {% tabs %}
 
@@ -61,3 +63,4 @@ Content = sfBadgeView;
 {% endtabs %}
 
 ![Xamarin BadgeView Badge Icon](predefined-symbols_images/predefinedsymbols.png)
+

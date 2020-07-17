@@ -68,4 +68,4 @@ namespace GettingStarted
 
 The following gif image contains the types of animation in BusyIndicator
 
-![AnimationTypes](images/animationtypes)
+![AnimationTypes](images/animationtypes.gif)

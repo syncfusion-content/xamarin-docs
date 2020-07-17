@@ -1521,6 +1521,32 @@ Syncfusion.Licensing.dll<br/>
 </tr>
 </table>
 
+## SfSignaturePad
+
+<dl>
+<dt>NuGet</dt>
+<dd>Syncfusion.Xamarin.SfSignaturePad</dd>
+</dl>
+
+N> In addition, you need to install the 1.68.0 version of [SkiaSharp](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.68.0) in all projects.
+
+**Assemblies**
+
+<table>
+<tr>
+<td>PCL</td>
+<td>Syncfusion.SfSignaturePad.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/></td>
+</tr>
+<tr>
+<td>Android</td>
+<td>Syncfusion.SfSignaturePad.XForms.dll<br/>Syncfusion.SfSignaturePad.XForms.Android.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/></td>
+</tr>
+<tr>
+<td>iOS</td>
+<td>Syncfusion.SfSignaturePad.XForms.dll<br/>Syncfusion.SfSignaturePad.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/></td>
+</tr>
+</table>
+
 ## SfSparkline
 
 <dl>

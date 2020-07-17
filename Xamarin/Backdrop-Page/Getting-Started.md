@@ -7,7 +7,7 @@ control: SfBackdropPage
 documentation: ug
 ---
 
-## Getting Started
+# Getting Started with Xamarin.Forms Backdrop Page
 
 This section explains the steps required to configure the backdrop page.
 

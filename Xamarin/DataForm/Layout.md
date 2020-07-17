@@ -615,7 +615,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Restricting the group expanding and collapsing
 
-You can set restrict the group being expanded or collapsed by setting the [AllowExpandCollapse](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormGroupItem~AllowExpandCollapse.html) to `false` in the [DataFormGroupItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormGroupItem.html).
+You can restrict the group being expanded or collapsed by setting the [AllowExpandCollapse](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormGroupItem~AllowExpandCollapse.html) to `false` in the [DataFormGroupItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormGroupItem.html).
 
 In this case, the group will be shown without expander.
 
@@ -623,7 +623,7 @@ In this case, the group will be shown without expander.
 
 ### Restricting the group expanding and collapsing using events
 
-You can set restrict the group being collapsed by the [GroupItemCollapsing](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~GroupItemCollapsing_EV.html) event. The event occurs when a user tries to collapse a group. You can cancel the user action using the `Cancel` property of [GroupItemCollapsingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.GroupItemCollapsingEventArgs.html).
+You can restrict the group being collapsed by the [GroupItemCollapsing](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~GroupItemCollapsing_EV.html) event. The event occurs when a user tries to collapse a group. You can cancel the user action using the `Cancel` property of [GroupItemCollapsingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.GroupItemCollapsingEventArgs.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -639,7 +639,7 @@ private void DataForm_GroupItemCollapsing(object sender, GroupItemCollapsingEven
 {% endhighlight %}
 {% endtabs %}
 
-You can set restrict the group being expanded by the [GroupItemExpanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~GroupItemExpanding_EV.html) event. The event occurs when a user tries to expand a group. You can cancel the user action using the `Cancel` property of [GroupItemExpandingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.GroupItemExpandingEventArgs.html).
+You can restrict the group being expanded by the [GroupItemExpanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~GroupItemExpanding_EV.html) event. The event occurs when a user tries to expand a group. You can cancel the user action using the `Cancel` property of [GroupItemExpandingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.GroupItemExpandingEventArgs.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -741,7 +741,7 @@ dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 
 You can customize the group collapse icon using the [GetGroupCollapseIcon](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormLayoutManager~GetGroupCollapseIcon.html) method.
 
-{% endtabs %}
+{% tabs %}
 {% highlight c# %}
 dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
  public class DataFormLayoutManagerExt : DataFormLayoutManager
@@ -762,7 +762,7 @@ dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
 
 You can customize the group expander icon using the [GetGroupExpanderIcon](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormLayoutManager~GetGroupExpanderIcon.html) method.
 
-{% endtabs %}
+{% tabs %}
 {% highlight c# %}
  dataForm.LayoutManager = new DataFormLayoutManagerExt(dataForm);
  public class DataFormLayoutManagerExt : DataFormLayoutManager

@@ -1127,7 +1127,7 @@ private bool FilterDepartures(object obj)
 
  Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Filter-xamarin.forms-listview-based-on-swiped-items-in-another-listview).
 
- ## Dispose listview
+## Dispose listview
 
 You can dispose and release resources used by ListView by calling the [ListView.Dispose](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Dispose().html) method.
 
@@ -1141,6 +1141,16 @@ protected override void OnDisappearing()
 {% endhighlight %}
 {% endtabs %}
 
+## Refresh view
+
+You can refresh the view by using the [RefreshView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshView.html) method. It will be used to refresh the items in the listview at runtime while updating the view.
+
+{% tabs %}
+{% highlight c# %} 
+   listview.RefreshView();   
+{% endhighlight %}
+{% endtabs %}
+
 ## See also
 
 [How to highlight the tapped view in ItemTemplate in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11235)                                                                                                                                                                                                                                                      
@@ -1150,4 +1160,6 @@ protected override void OnDisappearing()
 [How to show Xamarin.Forms ListView (SfListView) in popup using Rg.Plugin.Popup framework](https://www.syncfusion.com/kb/11353)                                                                                                                                                                                                                                                                                                                                                                                             
 [How to set the font size for Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11403)                                                                                                                                                                         
 [How to improve performance when doing bulk changes in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11395/)                                                                                                                                                                                                                                                                                                                                                                                                           
-[How to dispose of children of ListView in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11417/)
+[How to dispose of children of ListView in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11417/)                                                                                                                                                                                                                                                                                        
+[How to make sound on tapping an item in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11687/)                                                                                                                                 
+[How to apply the ListView item text color in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11699/)

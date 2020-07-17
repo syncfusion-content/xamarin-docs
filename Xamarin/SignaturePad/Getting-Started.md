@@ -21,6 +21,8 @@ Syncfusion Xamarin components are available in [nuget.org](https://www.nuget.org
 
 N> Install the same version of `SfSignaturePad` Nuget in all the projects.
 
+![Adding Signature Pad reference from nuget](images/NugetPackage.png)
+
 **Method 2: Adding SfSignaturePad reference from toolbox**
 
 Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the `SfSignaturePad` control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to this [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox).
@@ -46,6 +48,10 @@ Location: {Installed location}/{version}/Xamarin/lib
 <td>Syncfusion.SfSignaturePad.XForms.dll<br/>Syncfusion.SfSignaturePad.XForms.iOS.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.iOS.dll<br/></td>
 </tr>
 </table>
+
+**Method 4: Adding SfSignaturePad dependency package**
+
+In addition, you need to install the 1.68.0 version of [SkiaSharp](https://www.nuget.org/packages/SkiaSharp.Views.Forms/1.68.0) nuget in all projects
 
 N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
@@ -77,8 +83,6 @@ To launch the SfSignaturePad in iOS, call the `SfSignaturePadRenderer.Init()` in
 The Android platform does not require any additional configurations to render the Signature Pad.
 
 N> Signature Pad support has not been provided for UWP Platform.
-
-N> User have to install the [Nuget](https://www.nuget.org/packages/SkiaSharp.Views.Forms/2.80.0-preview.14) for Signature Pad.
 
 ## Adding a namespace
 

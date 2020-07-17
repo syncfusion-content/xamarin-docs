@@ -926,7 +926,7 @@ The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion
 * rangeStartPosition - Gets or sets the range start position.
 * pointerValuePosition - Gets or sets the pointer value position.
 
-**See Also:**
+## See Also
 
 [How to set RangeCap to RangePointer in Xamarin.Forms SfCircularGauge] (https://www.syncfusion.com/kb/10580/how-to-set-rangecap-to-rangepointer-in-xamarin-forms-sfcirculargauge)
 

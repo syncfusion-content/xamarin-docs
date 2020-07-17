@@ -233,7 +233,7 @@ using Syncfusion.SfChart.XForms;
 
 {% endtabs %} 
 
-I>To render chart inside the StackLayout/ScrollView, please refer this [KB] (https://www.syncfusion.com/kb/5722/how-to-add-the-chart-inside-stacklayout-scrollview).
+I>To render chart inside the StackLayout/ScrollView, please refer this [KB](https://www.syncfusion.com/kb/5722/how-to-add-the-chart-inside-stacklayout-scrollview).
 
 Then initialize an empty chart with [`PrimaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~PrimaryAxis.html) and [`SecondaryAxis`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SecondaryAxis.html) as shown below,
 

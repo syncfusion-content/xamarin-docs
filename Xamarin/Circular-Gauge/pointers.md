@@ -925,3 +925,17 @@ The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion
 * ['pointerValue'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~Value.html) - Gets or sets the value of the pointer. It customizes the value for pointer.
 * rangeStartPosition - Gets or sets the range start position.
 * pointerValuePosition - Gets or sets the pointer value position.
+
+## See Also
+
+[How to set RangeCap to RangePointer in Xamarin.Forms SfCircularGauge] (https://www.syncfusion.com/kb/10580/how-to-set-rangecap-to-rangepointer-in-xamarin-forms-sfcirculargauge)
+
+[How to design a compass that always points to a specific place in Xamarin.Forms circular gauge](https://www.syncfusion.com/kb/11426/how-to-design-a-compass-that-always-points-to-a-specific-place-in-xamarin-forms-circular)
+
+[How to show the direction by latitude and longitude values in SfCircularGauge using direction compass] (https://www.syncfusion.com/kb/10606/how-to-show-the-direction-by-latitude-and-longitude-values-in-sfcirculargauge-using)
+
+[How to animate circular gauge pointer when switching between tabs] (https://www.syncfusion.com/kb/9022/how-to-animate-circular-gauge-pointer-when-switching-between-tabs)
+
+[How to enable dragging support for pointer] (https://www.syncfusion.com/kb/8292/how-to-enable-dragging-support-for-pointer)
+
+[Rounded corner support for RangePointer] (https://www.syncfusion.com/kb/8291/rounded-corner-support-for-rangepointer)

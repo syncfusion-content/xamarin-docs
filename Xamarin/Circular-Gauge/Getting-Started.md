@@ -482,7 +482,7 @@ The following circular gauge is created as a result of the above codes.
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge-GettingStarted-768663630).
 
-**See Also:**
+## See Also
 
 [How to use a circular gauge control as a circular progress bar] (https://www.syncfusion.com/kb/6620/how-to-use-a-circular-gauge-control-as-a-circular-progress-bar)
 

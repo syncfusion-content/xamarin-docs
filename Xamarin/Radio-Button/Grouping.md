@@ -37,21 +37,11 @@ The [`GroupKey`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Bu
 
 SfRadioGroupKey carBrand = new SfRadioGroupKey();
 
-SfRadioButton honda = new SfRadioButton();
-honda.Text = "Honda";
-honda.GroupKey = carBrand;
-SfRadioButton hyundai = new SfRadioButton();
-hyundai.Text = "Hyundai";
-hyundai.GroupKey = carBrand;
-SfRadioButton volkswagen = new SfRadioButton();
-volkswagen.Text = "Volkswagen";
-volkswagen.GroupKey = carBrand;
-SfRadioButton toyota = new SfRadioButton();
-toyota.Text = "Toyota";
-toyota.GroupKey = carBrand;
-SfRadioButton volvo = new SfRadioButton();
-volvo.Text = "Volvo";
-volvo.GroupKey = carBrand;
+SfRadioButton honda = new SfRadioButton(){Text = "Honda", GroupKey = carBrand};
+SfRadioButton hyundai = new SfRadioButton(){Text = "Hyundai", GroupKey = carBrand};
+SfRadioButton volkswagen = new SfRadioButton(){Text = "Volkswagen", GroupKey = carBrand};
+SfRadioButton toyota = new SfRadioButton(){Text = "Toyota", GroupKey = carBrand};
+SfRadioButton volvo = new SfRadioButton(){Text = "Volvo", GroupKey = carBrand};
 
 FlexLayout flexLayout = new FlexLayout()
 {
@@ -94,12 +84,9 @@ The [`CheckedChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 {% highlight c# %}
 
 SfRadioGroup radioGroup = new SfRadioGroup();
-SfRadioButton netBanking = new SfRadioButton();
-netBanking.Text = "Net banking";
-SfRadioButton debitCard = new SfRadioButton();
-debitCard.Text = "Debit card";
-SfRadioButton creditCard = new SfRadioButton();
-creditCard.Text = "Credit card";
+SfRadioButton netBanking = new SfRadioButton() {Text = "Net banking"};
+SfRadioButton debitCard = new SfRadioButton() {Text = "Debit card"};
+SfRadioButton creditCard = new SfRadioButton() {Text = "Credit card"};
 
 radioGroup.Children.Add(netBanking);
 radioGroup.Children.Add(debitCard);
@@ -109,3 +96,33 @@ radioGroup.Children.Add(creditCard);
 {% endtabs %}
 
 ![RadioGroup Image](Images/RadioGroup.png)
+
+### Orientation in SfRadioGroup
+
+`SfRadioGroup` supports horizontal and vertical orientations. By default, SfRadioGroup is rendered with vertical orientation. You can the change the orientation by using the `Orientation` property.
+
+{% tabs %}
+{% highlight xaml %}
+
+<SyncfusionButton:SfRadioGroup Orientation="Horizontal">
+    <SyncfusionButton:SfRadioButton Text="Net banking" />
+    <SyncfusionButton:SfRadioButton Text="Debit card" />
+    <SyncfusionButton:SfRadioButton Text="Credit card" />
+</SyncfusionButton:SfRadioGroup>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfRadioGroup radioGroup = new SfRadioGroup(){Orientation = StackOrientation.Horizontal};
+SfRadioButton netBanking = new SfRadioButton() {Text = "Net banking"};
+SfRadioButton debitCard = new SfRadioButton() {Text = "Debit card"};
+SfRadioButton creditCard = new SfRadioButton() {Text = "Credit card"};
+
+radioGroup.Children.Add(netBanking);
+radioGroup.Children.Add(debitCard);
+radioGroup.Children.Add(creditCard);
+
+{% endhighlight %}
+{% endtabs %}
+
+![RadioGroup horizontal orientation](Images/Orientation.png)

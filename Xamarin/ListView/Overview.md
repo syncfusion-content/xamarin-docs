@@ -17,7 +17,7 @@ The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms vi
 <th>Xamarin.Forms<br/>(Android, iOS ,UWP ,WPF and MacOS)</th>
 </tr>
 <tr>
-<td>scrolling</td>
+<td>Scrolling</td>
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
@@ -25,7 +25,19 @@ The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms vi
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
+<td>Custom Sorting</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
 <td>Grouping</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Custom Grouping</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Filtering</td>
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
@@ -38,10 +50,6 @@ The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms vi
 </tr>
 <tr>
 <td>Grid layout</td>
-<td><i class="fa fa-check"></i></td>
-</tr>
-<tr>
-<td>Filtering</td>
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
@@ -65,11 +73,11 @@ The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms vi
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Custom Group Header</td>
+<td>Item Templating</td>
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Item Templating</td>
+<td>Custom Group Header</td>
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>

@@ -57,6 +57,14 @@ The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms vi
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
+<td>Auto Sizing</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Caching</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
 <td>Selection</td>
 <td><i class="fa fa-check"></i></td>
 </tr>

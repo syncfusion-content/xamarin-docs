@@ -657,6 +657,26 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 		No<br/>
 		</td>
 	</tr>
+	<tr>
+		<td>
+			<a href="/xamarin/signaturepad/overview">Signature Pad</a><br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		Yes<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+		<td>
+		No<br/>
+		</td>
+	</tr>
     <tr>
 	    <td rowspan="2" valign="top">
 		CALENDAR<br/>
@@ -1212,7 +1232,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 		Yes<br/>
 		</td>
 		<td>
-		No<br/>
+		Yes<br/>
 		</td>
 		<td>
 		No<br/>

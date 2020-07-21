@@ -1,18 +1,15 @@
 ---
 layout: post
 title: Overview of Syncfusion SfSwitch for Xamarin.Forms
-description: Overview and key features of switch control
+description: This section will explain about Overview and available key features of Syncfusion switch control in Xamarin.Forms.
 platform: Xamarin
 control: Switch
 documentation: ug
 ---
 
+# Xamarin Switch (SfSwitch) Overview
 
-# SfSwitch
-
-## Overview
-
-Essential SfSwitch for Xamarin.Forms provides an efficient way to select between the states based on the toggled value.
+The Switch control for Xamarin.Forms provides an efficient way to select between the states based on the toggled value.
 
 ![Xamarin.Forms switch overview.](images/overview.png)
 

@@ -1,17 +1,17 @@
 ---
-layout : post
-title : Overview of Syncfusion Segmented control for Xamarin.Forms
-description : A quick go through to learn about the Segmented control and the key features available in it.
-platform : xamarin
-control : SfSegmentedControl
-documentation : ug
+layout: post
+title: Overview of Syncfusion Segmented control for Xamarin.Forms
+description: This section will explain about Overview and available key features in Syncfusion Segmented control in Xamarin.Forms.
+platform: xamarin
+control: SfSegmentedControl
+documentation: ug
 ---
 
-# Overview
+# Xamarin Segmented Control (SfSegmentedControl) Overview
 
-The segmented control for Xamarin.Forms provides a simple way to choose from a linear set of two or more segments, each of which functions as a mutually exclusive button.
+The Segmented Control for Xamarin.Forms provides a simple way to choose from a linear set of two or more segments, each of which functions as a mutually exclusive button.
 
-![](images/overview/Xamarin_Forms_Overview.png)
+![Segmented control overview](images/overview/Xamarin_Forms_Overview.png)
 
 ## Key Features
 

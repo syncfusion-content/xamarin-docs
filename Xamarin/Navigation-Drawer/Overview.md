@@ -7,7 +7,7 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-# Overview with Xamarin NavigationDrawer
+# Xamarin Navigation Drawer (SfNavigationDrawer) Overview
 
 Essential NavigationDrawer for Xamarin.Forms is a simpler component to create navigation pane in application. It has a content area and a sliding pane that slides out from the edge of the page. The pane can be opened by swiping the edges of the screen or programmatically.
 

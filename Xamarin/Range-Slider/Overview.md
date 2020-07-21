@@ -11,7 +11,7 @@ documentation: ug
 
 The Range Slider control for Xamarin.Forms allows you select a range of values within the specified minimum and maximum limits. The range can be selected by moving the thumb along track.
 
-![](images/overview.png)
+![RangeSlider OverView](images/overview.png)
 
 ## Key features
 

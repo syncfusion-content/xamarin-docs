@@ -7,9 +7,9 @@ control : SfSegmentedControl
 documentation : ug
 ---
 
-# Overview
+# Xamarin Segmented Control (SfSegmentedControl) Overview
 
-The segmented control for Xamarin.Forms provides a simple way to choose from a linear set of two or more segments, each of which functions as a mutually exclusive button.
+The Segmented Control for Xamarin.Forms provides a simple way to choose from a linear set of two or more segments, each of which functions as a mutually exclusive button.
 
 ![](images/overview/Xamarin_Forms_Overview.png)
 

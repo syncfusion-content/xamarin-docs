@@ -11,7 +11,7 @@ documentation : ug
 
 The Segmented Control for Xamarin.Forms provides a simple way to choose from a linear set of two or more segments, each of which functions as a mutually exclusive button.
 
-![](images/overview/Xamarin_Forms_Overview.png)
+![Segmented control overview](images/overview/Xamarin_Forms_Overview.png)
 
 ## Key Features
 

@@ -7,9 +7,9 @@ control : SfTabView
 documentation : ug
 ---
 
-# Overview
+# Xamarin Tabbed View (SfTabView) Overview
 
-The tab view control is available in Xamarin.Forms, Xamarin.Android, Xamarin.iOS and Xamarin.UWP. It helps you to create the customizable features that are used to explore and switch among the different views. The key features of tab view control in Xamarin.Forms, Xamarin.Android, Xamarin.iOS and Xamarin.UWP are given as follows.
+The Tabbed View control is available in Xamarin.Forms, Xamarin.Android, Xamarin.iOS and Xamarin.UWP. It helps you to create the customizable features that are used to explore and switch among the different views. The key features of tab view control in Xamarin.Forms, Xamarin.Android, Xamarin.iOS and Xamarin.UWP are given as follows.
 
 ## Key features
 

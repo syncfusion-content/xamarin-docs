@@ -7,9 +7,9 @@ control: SfSignaturePad
 documentation: ug
 ---
 
-# Overview with SfSignaturePad
+# Xamarin Signature Pad (SfSignaturePad) Overview
 
-The Xamarin.Forms `SfSignaturePad` control is used to capture, save signature in a Xamarin.Forms application. This control will display the signature path that varies based on writing speed, which makes the user to feel the real pen effect.
+The Xamarin.Forms Signature Pad is used to capture and save signature in a Xamarin.Forms application. This control will display the signature path that varies based on writing speed, which makes the user to feel the real pen effect.
 
 ## Key features
 

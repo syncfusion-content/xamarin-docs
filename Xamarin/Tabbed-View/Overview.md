@@ -18,4 +18,4 @@ The Tabbed View control is available in Xamarin.Forms, Xamarin.Android, Xamarin.
 * Top and bottom placements of header.
 * Layout option for overflow tabs.
 
-![](images/Overview/xamarin_forms_tabview.png)
+![Tabbed View overview](images/Overview/xamarin_forms_tabview.png)

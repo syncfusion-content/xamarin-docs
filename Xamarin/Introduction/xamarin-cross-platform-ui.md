@@ -395,7 +395,7 @@ You can find the platforms supported by each Xamarin.Forms UI control as below.
 		</td>
 	</tr>
 	<tr>
-	    <td rowspan="13" valign="top">
+	    <td rowspan="14" valign="top">
 			EDITORS<br/>
 		</td>	
 		<td>

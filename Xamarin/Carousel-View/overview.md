@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Overview of Syncfusion Carousel control for Xamarin.Forms
-description : A quick go through to learn about the Carousel control and the key features available in it. 
-platform : Xamarin
-control : Carousel
-documentation : ug
+layout: post
+title: Overview of Syncfusion Carousel control for Xamarin.Forms
+description: This section will explain about Overview and available key features of Syncfusion carousel view in xamarin.forms. 
+platform: Xamarin
+control: Carousel
+documentation: ug
 ---
 
 # Xamarin Carousel (SfCarousel) Overview

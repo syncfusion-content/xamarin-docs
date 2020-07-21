@@ -2,7 +2,7 @@
 
 layout: post
 title: Overview of Syncfusion Rating control for Xamarin.Forms
-description: Overview and key features of Rating control
+description: This section will explain about Overview and key features of Syncfusion Rating control in Xamarin.Forms.
 platform: Xamarin
 control: Rating
 documentation: ug

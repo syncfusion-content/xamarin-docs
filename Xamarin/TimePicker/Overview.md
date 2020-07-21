@@ -7,9 +7,9 @@ control: TimePicker
 documentation: ug
 ---
 
-# Overview
+# Xamarin Time Picker (SfTimePicker) Overview
 
-The TimePicker control allows you to select a list of time. This control can be opened as dialog. Its rich feature set includes functionalities such as time format, header, footer, and default validation buttons.
+The Time Picker control allows you to pick a time. This control can be opened as dialog. Its rich feature set includes functionalities such as time format, header, footer, and default validation buttons.
 
 ![OverView of SfTimePicker](images/GettingStarted_TimePicker.png)
 

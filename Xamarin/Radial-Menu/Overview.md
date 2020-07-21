@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview of Syncfusion RadialMenu control for Xamarin.Forms
-description: Overview and key features of RadialMenu control in Xamarin.Forms
+description: This section will explain about OverView and available key features of RadialMenu control in Xamarin.Forms
 platform: Xamarin
 control: SfRadialMenu
 documentation: ug
 ---
 
-# Overview
+# Xamarin Radial Menu (SfRadialMenu) Overview
 
 The Essential Xamarin SfRadialMenu displays a hierarchical menu in a circular layout, which is optimized for touch enabled devices. Typically, it is used as a context menu, and it can expose more menu items in the same space than traditional menus.
 

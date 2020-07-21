@@ -7,7 +7,7 @@ control: Picker
 documentation: ug
 ---
 
-# Overview with Xamarin Picker
+# Xamarin Picker (SfPicker) Overview
 
 The picker control allows you to pick an item among a list of items that can be customized with custom view. This control can be opened as dialog. Its rich feature set includes functionalities such as data binding, multi column, header/footer, custom view on header/footer, and default validation buttons.
 

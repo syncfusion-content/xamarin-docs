@@ -12,7 +12,7 @@ documentation : ug
 The Essential Xamarin Carousel control allows navigating through image data in an interactive way so that they can be viewed or selected. Also, provides various customization options for its item arrangements.
 It has been available in Xamarin.Forms,Xamarin.Android and Xamarin.iOS platforms also.
 
-![](images/carousel.png)
+![Carousel OverView](images/carousel.png)
 
 ## Key Features:
 

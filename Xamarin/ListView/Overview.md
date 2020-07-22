@@ -1,15 +1,98 @@
 ---
 layout: post
 title: Overview | SfListView | Xamarin | Syncfusion
-description: Describes about quick overview for ListView features sets and advantages in Xamarin.Forms.
+description: This topic describes about the quick overview of ListView features sets and its advantages in Xamarin.Forms.
 platform: xamarin
 control: SfListView
 documentation: ug
 ---
 
-# SfListView
+# Xamarin ListView (SfListView) Overview
 
-The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views or custom templates. Data can be grouped, sorted, and filtered with ease.
+The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views or custom templates. Data can be grouped, sorted, and filtered with ease. The following table lists the key features of the Treeview control in Xamarin.Forms.
+
+<table>
+<tr>
+<th>Features</th>
+<th>Xamarin.Forms<br/>(Android, iOS ,UWP ,WPF, and MacOS)</th>
+</tr>
+<tr>
+<td>Scrolling</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Sorting</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Custom Sorting</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Grouping</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Custom Grouping</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Filtering</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Item Reordering</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Linear layout</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Grid layout</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Item Size Customization</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Auto Sizing</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Caching</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Selection</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Load more</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Pull to refresh</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Swiping</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Item Templating</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Custom Group Header</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+<tr>
+<td>Header and footer</td>
+<td><i class="fa fa-check"></i></td>
+</tr>
+</table>
 
 ## Key features
 

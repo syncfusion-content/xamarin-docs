@@ -9,12 +9,12 @@ documentation: ug
 
 # Xamarin ListView (SfListView) Overview
 
-The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views or custom templates. Data can be grouped, sorted, and filtered with ease.
+The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views or custom templates. Data can be grouped, sorted, and filtered with ease. The following table lists the key features of the Treeview control in Xamarin.Forms.
 
 <table>
 <tr>
 <th>Features</th>
-<th>Xamarin.Forms<br/>(Android, iOS ,UWP ,WPF and MacOS)</th>
+<th>Xamarin.Forms<br/>(Android, iOS ,UWP ,WPF, and MacOS)</th>
 </tr>
 <tr>
 <td>Scrolling</td>
@@ -89,11 +89,10 @@ The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms vi
 <td><i class="fa fa-check"></i></td>
 </tr>
 <tr>
-<td>Header and Footer</td>
+<td>Header and footer</td>
 <td><i class="fa fa-check"></i></td>
 </tr>
 </table>
-
 
 ## Key features
 

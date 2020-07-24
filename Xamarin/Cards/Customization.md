@@ -173,7 +173,7 @@ You can customize the color of shadow using the ShadowColor property.
 
 {% highlight C# %}
 
- fCardView sfCardView = new SfCardView() 
+ SfCardView sfCardView = new SfCardView() 
  { 
    Content = new Label() { Text = "LightGray", BackgroundColor = Color.LightGray },
    HasShadow = true,

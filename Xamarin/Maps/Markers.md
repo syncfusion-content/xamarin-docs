@@ -785,6 +785,7 @@ If you add any view for marker using `CustomView` property from `MarkerSelected`
 
 ![Reset the previously selected marker](Images/ResetMarker.gif)
 
+N> You can use `MarkerItemsSource` property when using the custom map markers that are inherited from `MapMarker` and can only be used to assign markers in code behind. We have recommended using `Markers` property for the layer to add markers from XAML page.
 
 ## Events
 
@@ -845,3 +846,9 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 {% endtabs %}
 
 ![Marker Selected Image](Images/MarkerSelected.png)
+
+## See Also
+
+[How to add different style marker pins to Xamarin.Forms SfMaps] (https://www.syncfusion.com/kb/11372/how-to-add-different-style-marker-pins-to-xamarin-forms-maps-sfmaps)
+[How to add SfMap markers dynamically to the tapped location] (https://www.syncfusion.com/kb/10550/how-to-add-map-markers-dynamically-to-the-tapped-location)
+[How to group the markers based on zoom level in the imagery layer of the SfMaps control] (https://www.syncfusion.com/kb/10200/how-to-group-the-markers-based-on-zoom-level-in-the-imagery-layer-of-the-sfmaps-control)

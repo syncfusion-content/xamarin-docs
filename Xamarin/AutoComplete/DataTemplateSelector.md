@@ -7,7 +7,7 @@ control: SfAutoComplete
 documentation: ug
 ---
 
-## DataTemplateSelector
+# DataTemplateSelector in Xamarin AutoComplete (SfAutoComplete)
 
 SfAutoComplete supports DataTemplateSelector, which is used to choose a DataTemplate based on data object.
  
@@ -115,7 +115,7 @@ namespace AutocompleteSample
 
 {% endtabs %}
 
-### Create and Initialize Business Models 
+## Create and Initialize Business Models 
 
 Define a simple model class MobileDetail with fields IsAvailableInStock, Mobile and populate mobile detail in ViewModel.
 

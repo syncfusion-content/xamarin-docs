@@ -23,7 +23,7 @@ Calendar's events can be added to `SfCalendar` using the following ways. [Calend
 
 Finally add this collection of `CalendarInlineEvents` into [DataSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~DataSource.html) of `SfCalendar`. The following code example will help to create an appointments on calendar's date. For events to be listed for a particular day, enable the inline feature in month view cell.
 
-I> Inline event support can be toggled on / off with `ShowInlineEvents` property.
+I> Inline event support can be toggled on or off with the [ShowInlineEvents](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowInlineEvents.html) property.
 
 ## Month Appointment Display
  

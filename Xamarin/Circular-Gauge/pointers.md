@@ -692,7 +692,7 @@ The marker can be customized in terms of color, width, and height by using the [
 
 ![Circular Gauge Marker Customization](pointers_images/marker-pointer/markerpointer-customization.png)
 
-### Setting multiple pointers
+## Setting multiple pointers
 
 In addition to the default pointer, you can add n number of pointers to a scale by using the [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer.html) property.
 
@@ -761,7 +761,7 @@ In addition to the default pointer, you can add n number of pointers to a scale 
 
 ![Circular Gauge Multiple Pointers](pointers_images/marker-pointer/multiple-pointers.png)
 
-### Setting animation for pointer
+## Setting animation for pointer
 
 The [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~EnableAnimation.html) property is a Boolean property that enables or disables the animation of the pointers in circular gauge.
 
@@ -849,9 +849,9 @@ The [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
 
 ![Circular Gauge Pointer Animation](pointers_images/marker-pointer/animation.gif)
 
-### Setting pointer drag
+## Setting pointer drag
 
-Pointers can be dragged over the scale value. It can be achieved by clicking and dragging the pointer. To enable or disable the pointer drag, use the [`EnableDragging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~EnableDragging.html) property.
+MarkerPointer and NeedlePointer can be touched and dragged over the scale value by setting the [`EnableDragging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.MarkerPointer~EnableDragging.html) property as true. Pointers can be moved to the respective touch position.
 
 {% tabs %}
 
@@ -911,4 +911,31 @@ Pointers can be dragged over the scale value. It can be achieved by clicking and
 
 {% endtabs %}
 
+N> By default, the pointer drag was disabled.
+
 ![Circular Gauge Pointer Drag](pointers_images/marker-pointer/pointer-interaction.gif)
+
+## Event
+
+The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~PointerPositionChanged_EV.html) event occurs when the pointer position was changed. The PointerPositionChangedArgs argument contains the following information:
+
+* [`Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer.html) - Gets the dragged pointer.
+* [`Scale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) - Gets the dragged pointer scale.
+* [`rangeStartValue'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Range~StartValue.html) - Gets or sets the start value of the range. It customizes the start value ranges.
+* ['pointerValue'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Pointer~Value.html) - Gets or sets the value of the pointer. It customizes the value for pointer.
+* rangeStartPosition - Gets or sets the range start position.
+* pointerValuePosition - Gets or sets the pointer value position.
+
+## See Also
+
+[How to set RangeCap to RangePointer in Xamarin.Forms SfCircularGauge] (https://www.syncfusion.com/kb/10580/how-to-set-rangecap-to-rangepointer-in-xamarin-forms-sfcirculargauge)
+
+[How to design a compass that always points to a specific place in Xamarin.Forms circular gauge](https://www.syncfusion.com/kb/11426/how-to-design-a-compass-that-always-points-to-a-specific-place-in-xamarin-forms-circular)
+
+[How to show the direction by latitude and longitude values in SfCircularGauge using direction compass] (https://www.syncfusion.com/kb/10606/how-to-show-the-direction-by-latitude-and-longitude-values-in-sfcirculargauge-using)
+
+[How to animate circular gauge pointer when switching between tabs] (https://www.syncfusion.com/kb/9022/how-to-animate-circular-gauge-pointer-when-switching-between-tabs)
+
+[How to enable dragging support for pointer] (https://www.syncfusion.com/kb/8292/how-to-enable-dragging-support-for-pointer)
+
+[Rounded corner support for RangePointer] (https://www.syncfusion.com/kb/8291/rounded-corner-support-for-rangepointer)

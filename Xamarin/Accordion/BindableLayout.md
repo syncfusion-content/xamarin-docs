@@ -131,6 +131,98 @@ BindableLayout.SetItemsSource(Accordion, viewModel.Info);
 
 You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/Xamarin-Populate-Accordion-Items-using-Bindable-Layout).
 
+## Events
+
+### Get the index of expanded or collapsed accordion item.
+
+You can get the index of the interacted `AccordionItem` by using the [Collapsed](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Collapsed_EV.html). It will occur after an AccordionItem is collapsed when tapping on the Header. The [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) properties provides data for the `collapsed` event.  
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfAccordion x:Name="Accordion" Collapsed="Accordion_Collapsed">
+{% endhighlight %}
+{% highlight c# %}
+Accordion.Collapsed += Accordion_Collapsed;
+private void Accordion_Collapsed(object sender, Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs e)
+{
+    var value = e.Index.ToString();
+    DisplayAlert("Index", value, "ok");
+}
+{% endhighlight %}
+{% endtabs %}		
+
+Using the [Expanded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Expanded_EV.html) event, you can get the index of the interacted `AccordionItem.` It will occur after an AccordionItem is expanded when tapping on the Header. The [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) properties provides data for the `expanded` event.  
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfAccordion x:Name="Accordion" Expanded="Accordion_Expanded">
+{% endhighlight %}
+{% highlight c# %}
+Accordion.Expanded += Accordion_Expanded;
+private void Accordion_Expanded(object sender, Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs e)
+{
+    var value = e.Index.ToString();
+    DisplayAlert("Index", value, "ok");
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Restricting the accordion item expanding and collapsing 
+
+The [Collapsing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Collapsing_EV.html) event occurs while collapsing an `AccordionItem` when tapping on the Header. You can cancel the collapsing action by using the `Cancel` property in the event args. 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfAccordion x:Name="Accordion" Collapsing="Accordion_Collapsing">
+{% endhighlight %}
+{% highlight c# %}
+Accordion.Collapsing += Accordion_Collapsing;
+private void Accordion_Collapsing(object sender, ExpandingAndCollapsingEventArgs e)
+{
+   e.cancel = true;
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can also get the index of the interacted `AccordionItem` by using the `index` property of the [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandingAndCollapsingEventArgs.html).
+
+{% tabs %}
+{% highlight c# %}
+private void Accordion_Collapsing(object sender, ExpandingAndCollapsingEventArgs e)
+{
+    var value = e.Index.ToString();
+    DisplayAlert("Index", value, "ok");
+}
+{% endhighlight %}
+{% endtabs %}
+
+The [Expanding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Expanding_EV.html) event occurs while expanding an `AccordionItem` when tapping on the Header. You can cancel the expanding action by using the `Cancel` property in the event args. 
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfAccordion x:Name="Accordion" Expanding="Accordion_Expanding">
+{% endhighlight %}
+{% highlight c# %}
+Accordion.Expanding += Accordion_Expanding;
+private void Accordion_Expanding(object sender, ExpandingAndCollapsingEventArgs e)
+{
+    e.Cancel = true;
+}
+{% endhighlight %}
+{% endtabs %}
+
+You can also get the index of the interacted `AccordionItem` by using the `index` property of the [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.ExpandingAndCollapsingEventArgs.html).
+
+{% tabs %}
+{% highlight c# %}
+private void Accordion_Expanding(object sender, ExpandingAndCollapsingEventArgs e)
+{
+    var value = e.Index.ToString();
+    DisplayAlert("Index",value, "ok");
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## See also
 
 [How to bind ViewModel data to Accordion in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11404/)                                                                                                                                                                                                                              

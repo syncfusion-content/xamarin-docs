@@ -266,6 +266,7 @@ public partial class MainPage : ContentPage
 
 <updown:SfNumericUpDown x:Name="upDown" SpinButtonAlignment="Both" TextAlignment="Center">
 <updown:SfNumericUpDown.IncrementButtonSettings>
+<updown:UpDownButtonSettings ButtonFontIcon="&#xe701;" ButtonHeight="35" ButtonWidth="35">
 <updown:UpDownButtonSettings.ButtonFontFamily>
 <OnPlatform
                 x:TypeArguments="x:String">
@@ -279,9 +280,10 @@ public partial class MainPage : ContentPage
                 </On>
             </OnPlatform>
 </updown:UpDownButtonSettings.ButtonFontFamily>
-<updown:UpDownButtonSettings ButtonFontIcon="&#xe701;" ButtonHeight="35" ButtonWidth="35" />
+</updown:UpDownButtonSettings>
 </updown:SfNumericUpDown.IncrementButtonSettings>
 <updown:SfNumericUpDown.DecrementButtonSettings>
+<updown:UpDownButtonSettings ButtonFontIcon="&#xe700;" ButtonHeight="35" ButtonWidth="35" >
 <updown:UpDownButtonSettings.ButtonFontFamily>
 <OnPlatform
                 x:TypeArguments="x:String">
@@ -295,7 +297,7 @@ public partial class MainPage : ContentPage
                 </On>
             </OnPlatform>
 </updown:UpDownButtonSettings.ButtonFontFamily>
-<updown:UpDownButtonSettings ButtonFontIcon="&#xe700;" ButtonHeight="35" ButtonWidth="35" />
+</updown:UpDownButtonSettings>
 </updown:SfNumericUpDown.DecrementButtonSettings>
 </updown:SfNumericUpDown> 
 

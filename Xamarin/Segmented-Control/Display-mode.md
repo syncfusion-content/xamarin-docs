@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Display mode in Syncfusion segmented control for Xamarin.Forms
-description: This section describes about the display mode in the segmented control for effective communication.
+description: This section describes about the display mode in the segmented control for effective communications.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
 
-# Display mode
+# Display mode in Xamarin Segmented Control (SfSegmentedControl)
 
 Depending on application, different scenarios may require for effective communication. The segmented control supports these three options: icons, text, or a combination of both.
 
@@ -60,6 +60,7 @@ public SegmentedControlSample()
 {
     InitializeComponent();
     segmentedControl = new SfSegmentedControl();
+
     List<String> periodsList = new List<String>
     {
            "Day","Week","Month"
@@ -96,24 +97,24 @@ The data source of the segmented control can be set as follows.
 
 {% highlight c# %}
 
-public class ViewModel : INotifyPropertyChanged
+public class ViewModel
 {
-private ObservableCollection<SfSegmentItem> imageCollection = new ObservableCollection<SfSegmentItem>();
-public ObservableCollection<SfSegmentItem> ImageCollection
-{
-get { return imageCollection; }
-set { imageCollection = value; }
-}
-public ViewModel()
-{
-ImageCollection = new ObservableCollection<SfSegmentItem>
-{
-new SfSegmentItem(){IconFont = "6", FontIconFontColor=Color.FromHex("#FFFFFF"), FontColor=Color.FromHex("#FFFFFF")},          
-new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.FromHex("#FFFFFF"),  FontColor=Color.FromHex("#FFFFFF")},     
-new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.FromHex("#FFFFFF"),  FontColor=Color.FromHex("#FFFFFF")},          
-};
-}
-}
+    private ObservableCollection<SfSegmentItem> imageCollection;
+    public ObservableCollection<SfSegmentItem> ImageCollection
+    {
+        get { return imageCollection; }
+        set { imageCollection = value; }
+    }
+
+    public ViewModel()
+    {
+        ImageCollection = new ObservableCollection<SfSegmentItem>
+        {
+            new SfSegmentItem(){IconFont = "6", FontIconFontColor=Color.FromHex("#FFFFFF"),  FontColor=Color.FromHex     ("#FFFFFF")},          
+            new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.FromHex("#FFFFFF"),          FontColor=Color.FromHex   ("#FFFFFF")},     
+            new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.FromHex("#FFFFFF"),          FontColor=Color.FromHex   ("#FFFFFF")},          
+        };
+    }
 }
 {% endhighlight %}
 
@@ -133,21 +134,22 @@ new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.FromHex("#FFFF
 {% endhighlight %}
 
 {% highlight c# %}
+
 public partial class SegmentedControlSample : ContentPage
 {
-private ViewModel viewModel = new ViewModel();
-SfSegmentedControl segmentedControl;
-public SegmentedControlSample()
-{
-segmentedControl = new SfSegmentedControl();
-segmentedControl.BindingContext = viewModel;
-segmentedControl.ItemsSource = viewModel.ImageCollection;
-segmentedControl.DisplayMode = SegmentDisplayMode.Image;
-segmentedControl.SelectedIndex = 1;
-segmentedControl.VisibleSegmentsCount = 3;
-segmentedControl.SelectionTextColor = Color.FromHex("#FFFFFF");
-this.Content = segmentedControl;
-}
+    private ViewModel viewModel = new ViewModel();
+    SfSegmentedControl segmentedControl;
+
+    public SegmentedControlSample()
+    {
+        segmentedControl = new SfSegmentedControl();
+        segmentedControl.ItemsSource = viewModel.ImageCollection;
+        segmentedControl.DisplayMode = SegmentDisplayMode.Image;
+        segmentedControl.SelectedIndex = 1;
+        segmentedControl.VisibleSegmentsCount = 3;
+        segmentedControl.SelectionTextColor = Color.FromHex("#FFFFFF");
+        this.Content = segmentedControl;
+    }
 }
 
 {% endhighlight %}
@@ -164,25 +166,24 @@ The data source of the segmented control can be set as follows.
 
 {% highlight c# %}
 
-public class ViewModel : INotifyPropertyChanged
+public class ViewModel 
 {
-private ObservableCollection<SfSegmentItem> imageTextCollection = new ObservableCollection<SfSegmentItem>();
-public ObservableCollection<SfSegmentItem> ImageTextCollection
-{
-get { return imageTextCollection; }
-set { imageTextCollection = value; }
-}
-public ViewModel()
-{
+    private ObservableCollection<SfSegmentItem> imageTextCollection;
+    public ObservableCollection<SfSegmentItem> ImageTextCollection
+    {
+        get { return imageTextCollection; }
+        set { imageTextCollection = value; }
+    }
 
-Image_textCollection = new ObservableCollection<SfSegmentItem>
-{
-new SfSegmentItem(){IconFont = "6", FontIconFontColor=Color.FromHex("#FFFFFF"), FontColor=Color.FromHex("#FFFFFF"), Text = "Day"},          
-new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.FromHex("#FFFFFF"),  FontColor=Color.FromHex("#FFFFFF"), Text = "Week"},     
-new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.FromHex("#FFFFFF"),  FontColor=Color.FromHex("#FFFFFF"), Text = "Month"          
-};
-}
-}
+    public ViewModel()
+    {
+        imageTextCollection = new ObservableCollection<SfSegmentItem>
+        {
+            new SfSegmentItem(){IconFont = "6", FontIconFontColor=Color.FromHex("#FFFFFF"),  FontColor=Color.FromHex     ("#FFFFFF"), Text = "Day"},          
+            new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.FromHex("#FFFFFF"),          FontColor=Color.FromHex   ("#FFFFFF"), Text = "Week"},     
+            new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.FromHex("#FFFFFF"),          FontColor=Color.FromHex   ("#FFFFFF"), Text = "Month"          
+        };
+    }
 }
 
 {% endhighlight %}
@@ -209,20 +210,20 @@ new SfSegmentItem(){IconFont = "6",  FontIconFontColor=Color.FromHex("#FFFF
 
 public partial class SegmentedControlSample : ContentPage
 {
-private ViewModel viewModel = new ViewModel();
-private SfSegmentedControl segmentedControl;
-public SegmentedControlSample()
-{
-segmentedControl = new SfSegmentedControl();
-segmentedControl.BindingContext = viewModel;
-segmentedControl.ItemsSource = viewModel.ImageTextCollection;
-segmentedControl.DisplayMode = SegmentDisplayMode.ImageWithText;
-segmentedControl.SelectedIndex = 1;
-segmentedControl.VisibleSegmentsCount = 3;
-segmentedControl.SelectionTextColor = Color.FromHex("#FFFFFF");
-segmentedControl.FontIconFontFamily = "segment.ttf";
-this.Content = segmentedControl;
-}
+    private ViewModel viewModel = new ViewModel();
+    private SfSegmentedControl segmentedControl;
+
+    public SegmentedControlSample()
+    {
+        segmentedControl = new SfSegmentedControl();
+        segmentedControl.ItemsSource = viewModel.ImageTextCollection;
+        segmentedControl.DisplayMode = SegmentDisplayMode.ImageWithText;
+        segmentedControl.SelectedIndex = 1;
+        segmentedControl.VisibleSegmentsCount = 3;
+        segmentedControl.SelectionTextColor = Color.FromHex("#FFFFFF");
+        segmentedControl.FontIconFontFamily = "segment.ttf";
+        this.Content = segmentedControl;
+    }
 }
 
 {% endhighlight %}

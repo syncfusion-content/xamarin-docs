@@ -248,6 +248,21 @@ private void ListView_ItemDragging(object sender, ItemDraggingEventArgs e)
 The underlying collection can be reordered directly by setting the [UpdateSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.DragDropController~UpdateSource.html) property to `true`. The default value is `false`. 
 
 {% tabs %}
+{% highlight xaml %}
+<ContentPage xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">
+  <syncfusion:SfListView x:Name="listView" 
+                   ItemsSource="{Binding ToDoList}"
+                   DragStartMode="OnHold"
+                   BackgroundColor="#FFE8E8EC"
+                   ItemSize="60">
+  <syncfusion:SfListView.DragDropController>
+                <syncfusion:DragDropController
+                    UpdateSource="True">
+                </syncfusion:DragDropController>
+   </syncfusion:SfListView.DragDropController>
+</syncfusion:SfListView>                
+</ContentPage>
+{% endhighlight %}
 {% highlight c# %}
 this.listView.DragDropController.UpdateSource = true;
 {% endhighlight %}
@@ -489,4 +504,5 @@ public class DragDropControllerExt : DragDropController
 [How to show or hide the drag indicator like iOS listview](https://www.syncfusion.com/kb/9981/)                                                                                                                                                     
 [How to retrieve the dragged item index in ViewModel command with the Prism framework in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11371)                                                                                                                                                                                  
 [How to show or hide drag indicator based on the DragStartMode in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11425/)                                    
-[How to get the dropped item group in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11436)                                                                                         
+[How to get the dropped item group in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11436)                                                                                                                                                                                                                         
+[How to handle button action of ListView item when dragging in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11686/)

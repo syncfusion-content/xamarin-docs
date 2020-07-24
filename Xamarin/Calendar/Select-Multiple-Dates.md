@@ -52,6 +52,8 @@ this.Content = calendar;
 
 ![MultiSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-multiselection.png)
 
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/multi-selection-calendar-xamarin).
+
 N> In range selection, navigation through swipe will be restricted and moving between months can be done by clicking on navigation button available at the top corner of `SfCalendar` control.
 
 ## Range selection mode
@@ -74,6 +76,8 @@ calendar.SelectionMode=SelectionMode.RangeSelection;
 
 ![RangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-rangeslection.png)
 
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/range-selection-calendar-xamarin).
+
 ## Multi range selection mode
 
 {% tabs %}
@@ -93,6 +97,8 @@ calendar.SelectionMode=SelectionMode.MultiRangeSelection;
 {% endtabs %}
 
 ![MultiRangeSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-multirange.png)
+
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/multirange-selection-sample-calendar-xamarin).
 
 ## Single selection mode
  
@@ -114,15 +120,45 @@ calendar.SelectionMode = SelectionMode.SingleSelection;
 
 ![SingleSelection support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-singleselectionmonth.png)
 
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/single-selection-calendar-xamarin).
+
 ## Programmatically clear the selected dates
       
-You can clear the calendar selected dates pragmatically by using `ClearSelection` method, which is applicable for calendar `SelectionMode` such as `SingleSelection`, `MultiSelection`, `RangeSelection`, and `MultiRangeSelection`.
+You can clear the calendar selected dates programmatically by using the [ClearSelection](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ClearSelection.html) method that is applicable for the calendar [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html) such as `SingleSelection`, `MultiSelection`, `RangeSelection`, and `MultiRangeSelection`.
 
 {% tabs %}
 
 {% highlight c# %}
 	
 calendar.ClearSelection();
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+## Programmatically refresh the calendar view
+      
+You can Refresh the calendar View programmatically by using the [Refresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Refresh.html) method that is applicable for all the `ViewModes` such as `MonthView`,and `YearView`.
+
+{% tabs %}
+
+{% highlight c# %}
+	
+calendar.Refresh();
+	
+{% endhighlight %}
+
+{% endtabs %}
+
+## Programmatically dispose of the calendar view
+      
+You can dispose of the calendar View programmatically by using the [Dispose](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Dispose.html) method that is applicable for all the `ViewModes` such as `MonthView`, and `YearView`.
+
+{% tabs %}
+
+{% highlight c# %}
+	
+calendar.Dispose();
 	
 {% endhighlight %}
 

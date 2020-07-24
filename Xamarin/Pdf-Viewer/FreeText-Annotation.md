@@ -324,3 +324,30 @@ private void PdfViewer_FreeTextAnnotationRemoved(object sender, FreeTextAnnotati
 }
 {% endhighlight %}
 {% endtabs %}
+
+## How to enable or disable free text annotation interaction?
+
+The interaction operation can be enabled or disabled for free text annotation alone by setting the `IsLocked` API to `false` or `true` respectively.
+
+For example, the following code disables the interaction operations for all free text annotations in the PDF. But other annotation types can be selected, moved, resized, or removed. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the free text annotation interaction
+pdfViewerControl.AnnotationSettings.FreeText.IsLocked = true;
+
+{% endhighlight %}
+{% endtabs %}
+
+The interaction with free text annotation types will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code does not allow the interactions with free text annotations, although the `IsLocked` property of the free text annotation is set to `false`. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disables the free text annotation interaction, though its 'IsLocked' property is set to ‘false’ 
+pdfViewerControl.AnnotationSettings.IsLocked = true;
+pdfViewerControl.AnnotationSettings.FreeText.IsLocked = false;
+
+{% endhighlight %}
+{% endtabs %}

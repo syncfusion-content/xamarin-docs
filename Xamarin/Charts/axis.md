@@ -1091,6 +1091,74 @@ Chart.PrimaryAxis.Title.Text = "Month";
 
 ![Axis label extent support in Xamarin.Forms Chart](axis_images/labelExtent.png)
 
+### LabelFormat
+
+**Format numeric values**
+
+The numeric values can be formatted by using the [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) property. Numeric values can be formatted with n (number with decimal points), c (Currency) and p (percentage) commands.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:NumericalAxis >
+
+    <chart:NumericalAxis.LabelStyle>
+	
+        <chart:ChartAxisLabelStyle LabelFormat="$##.##"/>
+		
+    </chart:NumericalAxis.LabelStyle>
+	
+</chart:NumericalAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+NumericalAxis numerical = new NumericalAxis();
+
+numerical.LabelStyle = new ChartAxisLabelStyle { LabelFormat = "$##.##" };
+
+chart.SecondaryAxis = numerical;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**Format date time values**
+
+The date time values can be formatted by using the [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) property of the axis.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:DateTimeAxis>
+
+    <chart:DateTimeAxis.LabelStyle>
+	
+        <chart:ChartAxisLabelStyle LabelFormat="dd/MMM/yyyy"/>
+		
+    </chart:DateTimeAxis.LabelStyle>
+	
+</chart:DateTimeAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+DateTimeAxis primaryAxis = new DateTimeAxis();
+
+primaryAxis.LabelStyle = new ChartAxisLabelStyle { LabelFormat = "dd/MMM/yyyy" };
+
+chart.PrimaryAxis = primaryAxis;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Axis LabelFormat support in Xamarin.Forms Chart](axis_images/LabelFormatter.png)
+
 
 ### Grid lines customization
 
@@ -1630,3 +1698,21 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 
 * [`LabelContent`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LabelClickedEventArgs~LabelContent.html) - Used to get the text of label.
 * [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LabelClickedEventArgs~Position.html) - Used to get the position of label.
+
+## See Also
+
+[How to remove comma in CategoryAxis labels in Xamarin.Forms Chart](https://www.syncfusion.com/kb/11317/how-to-remove-comma-in-categoryaxis-labels-in-xamarin-forms-chart)
+
+[How to customize the axis label format based on the culture in Xamarin.Forms SfChart](https://www.syncfusion.com/kb/11289/how-to-customize-the-axis-label-format-based-on-the-culture-in-xamarin-forms-chart-sfchart)
+
+[How to view corner segments without cutting in edge of Xamarin.Forms Chart](https://www.syncfusion.com/kb/10785/how-to-view-corner-segments-without-cutting-in-edge-of-xamarin-forms-chart)
+
+[How to replace the axis labels with image in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10676/how-to-replace-the-axis-labels-with-image-in-xamarin-forms-chart)
+
+[How to add prefix and suffix for axis labels in Chart](https://www.syncfusion.com/kb/5925/how-to-add-prefix-and-suffix-for-axis-labels-in-chart)
+
+[How to show all the axis labels](https://www.syncfusion.com/kb/8242/how-to-show-all-the-axis-labels)
+
+[How to customize each label of the axis in different format](https://www.syncfusion.com/kb/5560/how-to-customize-each-label-of-the-axis-in-different-format)
+
+[How to change the position of the axis](https://www.syncfusion.com/kb/4814/how-to-change-the-position-of-the-axis)

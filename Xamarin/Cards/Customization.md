@@ -156,9 +156,9 @@ N> This property won't work when adding the SfCardView as a child of SfCardLayou
 
 ## Shadow Effect
 
-The CardView control provides shadow effect support. To enable shadow effect, set the HasShadow property to true.
+The `CardView` control provides shadow effect support. To enable shadow effect, set the `HasShadow` property to `true`.
 
-You can customize the color of shadow using the ShadowColor property.
+You can customize the color of shadow using the `ShadowColor` property.
 
 {% tabs %} 
 
@@ -185,6 +185,6 @@ You can customize the color of shadow using the ShadowColor property.
 
 {% endtabs %}
 
-N> This property won't work when adding the SfCardView as a child of SfCardLayout.
+N> This property will not work when adding the `SfCardView` as a child of `SfCardLayout`.
 
 

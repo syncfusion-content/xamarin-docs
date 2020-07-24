@@ -24,10 +24,10 @@ ShowSwipedCard can be enabled to show the swiped cards at the edge of card layou
 
 {% highlight C# %}
 
-SfCardLayout cardLayout = new SfCardLayout();
-cardLayout.ShowSwipedCard = true;
-
-this.Content = cardLayout;
+SfCardLayout cardLayout = new SfCardLayout()
+{
+  ShowSwipedCard = true
+};
 
 {% endhighlight %}
 
@@ -50,10 +50,10 @@ VisibleCardIndex is used when given index of the card to be displayed in front o
 
 {% highlight C# %}
 
-SfCardLayout cardLayout = new SfCardLayout();
-cardLayout.VisibleCardIndex = 1;
-
-this.Content = cardLayout;
+SfCardLayout cardLayout = new SfCardLayout()
+{
+  VisibleCardIndex = 1
+};
 
 {% endhighlight %}
 
@@ -76,10 +76,11 @@ The SwipeDirection property indicates the swiping direction (left or right).
 
 {% highlight C# %}
 
-SfCardLayout cardLayout = new SfCardLayout();
-cardLayout.SwipeDirection = CardSwipeDirection.Right;
+SfCardLayout cardLayout = new SfCardLayout()
+{
+    SwipeDirection = CardSwipeDirection.Right
+};
 
-this.Content = cardLayout;
 
 {% endhighlight %}
 
@@ -107,11 +108,20 @@ Indicators are used to indicate the state or level of something.
 
 {% highlight C# %}
 
-SfCardView cardView = new SfCardView() {Content = new Label() { Text = "SfCardView", HorizontalTextAlignment = TextAlignment.Center, VerticalTextAlignment = TextAlignment.Center } };
-            cardView.IndicatorThickness = 12;
-            cardView.HeightRequest = 300;
-            cardView.IndicatorPosition = IndicatorPosition.Left;
-            cardView.IndicatorColor = Color.Cyan;
+SfCardView cardView = new SfCardView() 
+{     
+    Content = new Label() 
+    { 
+        Text = "SfCardView", 
+        HorizontalTextAlignment = TextAlignment.Center, 
+        VerticalTextAlignment =  TextAlignment.Center
+    },
+    IndicatorThickness = 12,
+    HeightRequest = 300,
+    IndicatorPosition = IndicatorPosition.Left,
+    IndicatorColor = Color.Cyan
+};
+           
 
 {% endhighlight %}
 
@@ -133,8 +143,10 @@ FadeOutOnSwiping can be enabled when the card view needs to be faded with respec
 
 {% highlight C# %}
 
-SfCardView cardView = new SfCardView(); 
-cardView.FadeOutOnSwiping = true;
+SfCardView cardView = new SfCardView()
+{
+  FadeOutOnSwiping = true
+};
 
 {% endhighlight %}
 
@@ -161,9 +173,13 @@ You can customize the color of shadow using the ShadowColor property.
 
 {% highlight C# %}
 
- fCardView sfCardView = new SfCardView() { Content = new Label() { Text = "LightGray", BackgroundColor = Color.LightGray } };
- sfCardView.HasShadow = true;
- sfCardView.ShadowColor = Color.Red;
+ fCardView sfCardView = new SfCardView() 
+ { 
+   Content = new Label() { Text = "LightGray", BackgroundColor = Color.LightGray },
+   HasShadow = true,
+   ShadowColor = Color.Red
+ };
+
 
 {% endhighlight %}
 

@@ -58,7 +58,7 @@ N> Add namespace of ViewModel class in your XAML page if you prefer to set Bindi
 
 <ContentPage.BindingContext>
 
-        <local:ViewModel></local:ViewModel>
+<local:ViewModel></local:ViewModel>
 
 </ContentPage.BindingContext>
 

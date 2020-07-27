@@ -359,6 +359,8 @@ In the ShapeSelected event, the *BaseMapIndex* property has been used to change 
 
 ## See Also
 
-[How to load shape files as stream in maps] (https://www.syncfusion.com/kb/10555/how-to-load-shape-files-as-stream-in-maps)
-[How to add sub shape file layer for ImageryLayer in Xamarin.Forms SfMaps] (https://www.syncfusion.com/kb/10579/how-to-add-sub-shape-file-layer-for-imagerylayer-in-xamarin-forms-sfmaps)
-[How to draw a line (route) between two terminals in SfMaps] (https://www.syncfusion.com/kb/10619/how-to-draw-a-line-route-between-two-terminals-in-sfmaps)
+[How to load shape files as stream in maps](https://www.syncfusion.com/kb/10555/how-to-load-shape-files-as-stream-in-maps)
+
+[How to add sub shape file layer for ImageryLayer in Xamarin.Forms SfMaps](https://www.syncfusion.com/kb/10579/how-to-add-sub-shape-file-layer-for-imagerylayer-in-xamarin-forms-sfmaps)
+
+[How to draw a line (route) between two terminals in SfMaps](https://www.syncfusion.com/kb/10619/how-to-draw-a-line-route-between-two-terminals-in-sfmaps)

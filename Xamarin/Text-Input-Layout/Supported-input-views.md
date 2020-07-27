@@ -170,7 +170,7 @@ To initialize the Autocomplete control and launch it in each platform, refer to 
 
 {% highlight xaml %} 
 
-<inputLayout:SfTextInputLayout Hint="Country">
+<inputLayout:SfTextInputLayout Hint="Country" ContainerType="Outlined">
    <autocomplete:SfAutoComplete  AutoCompleteMode="SuggestAppend">
       <autocomplete:SfAutoComplete.AutoCompleteSource>
          <ListCollection:List x:TypeArguments="x:String">
@@ -189,6 +189,7 @@ To initialize the Autocomplete control and launch it in each platform, refer to 
 var autoComplete = new SfAutoComplete();
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Country"; 
+inputLayout.ContainerType = ContainerType.Outlined;
 List<String> countryNames = new List<String>();
 countryNames.Add("United Kingdom");
 countryNames.Add("United States");
@@ -211,7 +212,7 @@ To initialize the ComboBox control and launch it in each platform, refer to the 
 
 {% highlight xaml %} 
 
-<inputLayout:SfTextInputLayout Hint="Country">
+<inputLayout:SfTextInputLayout Hint="Country" ContainerType="Outlined">
    <combobox:SfComboBox>
       <combobox:SfComboBox.ComboBoxSource>
          <ListCollection:List x:TypeArguments="x:String">
@@ -230,6 +231,7 @@ To initialize the ComboBox control and launch it in each platform, refer to the 
 var combobox = new SfComboBox();
 var inputLayout = new SfTextInputLayout();
 inputLayout.Hint = "Country"; 
+inputLayout.ContainerType = ContainerType.Outlined;
 List<String> countryNames = new List<String>();
 countryNames.Add("Afghanistan");
 countryNames.Add("Akrotiri");

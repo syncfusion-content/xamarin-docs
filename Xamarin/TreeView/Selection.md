@@ -71,6 +71,19 @@ The selected items can be cleared by calling the `SelectedItems.Clear()` method.
 treeView.SelectedItems.Clear();
 {% endhighlight %}
 {% endtabs %}
+ 
+## FullRowSelect
+
+By default, the selection start from indent level only. To select the full row, enable the [FullRowSelect](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~FullRowSelect.html) property. By setting the `FullRowSelect` to `true` the selection spans the width of tree view control.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeView x:Name="TreeView" FullRowSelect="True" />
+{% endhighlight %}
+{% highlight c# %}
+TreeView.FullRowSelect = true;
+{% endhighlight %}
+{% endtabs %}
 
 ### CurrentItem vs SelectedItem
 

@@ -539,7 +539,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ### Expand groups while grouping
 
-You can expand all the groups while grouping by setting the [DataSource.AutoExpandGroups](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~AutoExpandGroups.html) to true. So, when grouping any item, all groups will be automatically expanded.
+You can expand all the groups while grouping by setting the [DataSource.AutoExpandGroups](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~AutoExpandGroups.html) to true. So, when grouping any item, all the groups will be automatically expanded.
 
 {% tabs %}
 {% highlight xaml %}

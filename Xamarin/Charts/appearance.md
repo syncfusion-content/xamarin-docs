@@ -128,6 +128,10 @@ chart.Series.Add(columnSeries);
 
 ![Predefined palettes support in Xamarin.Forms Chart](appearance_images/appearance_img3.png)
 
+N> Line series to draw need two data points, to apply the color to consider only the first data point, Last data point to draw in line series is not required.
+
+![Predefined palettes support in Xamarin.Forms Chart](LineSeriesColor/appearance_img3.png)
+
 **Custom Palette**
 
 Series will use the colors from [`CustomBrushes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomBrushes.html) property if the [`ColorModel.Palette`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html) property of series is set to [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).

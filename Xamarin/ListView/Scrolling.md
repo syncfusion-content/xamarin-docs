@@ -238,5 +238,6 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 [How to load more items when scroll reached the end of list](https://www.syncfusion.com/kb/7792)                                                                                      
 [How to automatically scroll to bring a selected item into the view](https://www.syncfusion.com/kb/8190)                                                                                
 [How to maintain the scroll position of ListView after clearing the filter at runtime](https://www.syncfusion.com/kb/9535)                                                                                                                          
-[How to bring the item into view when adding at runtime in the listview](https://www.syncfusion.com/kb/9957)
+[How to bring the item into view when adding at runtime in the listview](https://www.syncfusion.com/kb/9957)                                                                                                                                                                                                                                                            
+[How to update the header height on scrolling in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11830/)
 

@@ -125,7 +125,7 @@ public class MainPage : ContentPage
 
 ## Autofit item height on dynamic changes
 
-The Treeview supports autofit the item based on dynamic change in item size. It is enabled by setting `NodeSizeMode` property to `NodeSizeMode.Dynamic`. The default value is `NodeSizeMode.None`.
+The Treeview supports autofit the item based on dynamic change in item size. It is enabled by setting [NodeSizeMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~NodeSizeMode.html) property to `NodeSizeMode.Dynamic`. The default value is `NodeSizeMode.None`.
 
 * `None`: The item height does not autofit for dynamic changes.
 * `Dynamic`: The item height responds for dynamic changes and the size is recalculated.

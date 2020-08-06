@@ -740,7 +740,7 @@ public class FileManagerViewModel
 
 ## Bind to a Hierarchy Property Descriptors data source - Bound mode
 
-You can create a tree view by binding the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemsSource.html) to a hierarchy property descriptors data source. To create a tree view using hierarchical data binding, set a hierarchical collection to the `ItemsSource` property, and then set the `TargetType` and [ChildPropertyName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ChildPropertyName.html) property values in `HierarchyPropertyDescriptors`.
+You can create a tree view by binding the [ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemsSource.html) to a hierarchy property descriptors data source. To create a tree view using hierarchical data binding, set a hierarchical collection to the `ItemsSource` property, and then set the `TargetType` and [ChildPropertyName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ChildPropertyName.html) property values in [HierarchyPropertyDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~HierarchyPropertyDescriptors.html) .
 
 >**Important** 
 `ItemsSource` is an alternative mechanism to [Nodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~Nodes.html) for adding content into the TreeView control. You cannot set both `ItemsSource` and `Nodes` at the same time. When you use `ItemsSource`, nodes are created internally, but you cannot access them from the `Nodes` property.
@@ -946,6 +946,26 @@ namespace GettingStarted
         }
     }
 } 
+{% endhighlight %}
+{% endtabs %}
+
+## Reset tree view items 
+
+You can reset the visible treeview items by using the [ResetTreeViewItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ResetTreeViewItems.html) method. If parameter is null, all the visible treeview items will reset. If you are passing the `data object` as parameter, particular treeview item will reset.
+
+{% tabs %}
+{% highlight c# %}
+treeView.ResetTreeViewItems();
+{% endhighlight %}
+{% endtabs %}
+
+## Refresh view
+
+You can refresh the view by using the [RefreshView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~RefreshView.html) method. It will be used to refresh the items in the treeview at runtime while updating the view.
+
+{% tabs %}
+{% highlight c# %}
+treeView.RefreshView();
 {% endhighlight %}
 {% endtabs %}
 

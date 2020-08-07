@@ -13,6 +13,8 @@ A group represents a collection of items belongs to a category. When grouping is
 
 N> When ItemsSource changed for ListView, [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) will be cleared by default. You need to add `DataSource.GroupDescriptors` again after changing ItemsSource if you want to retain grouping in listview.
 
+N> To update grouping for the newly added listview items at runtime, set the `listView.DataSource.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`. To learn more details about the [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.LiveDataUpdateMode.html), refer to [here](https://help.syncfusion.com/xamarin/datasource/datasource-gettingstarted#defining-the-livedataupdatemode).
+
 ## Programmatic grouping
 
 The SfListView allows programmatic grouping by defining the [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) object, and adding it into the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) collection. The `GroupDescriptor` object holds the following properties:
@@ -537,6 +539,27 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ![Expand one group in listview](SfListView_images/SfListView-OneGroupExpanded.png)
 
+### Expand groups while grouping
+
+You can expand all the groups while grouping by setting the [DataSource.AutoExpandGroups](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~AutoExpandGroups.html) to true. So, when grouping any item, all the groups will be automatically expanded.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfListView x:Name="listView"> 
+    <syncfusion:SfListView.DataSource> 
+        <data:DataSource AutoExpandGroups="true"> 
+            <data:DataSource.GroupDescriptors> 
+                <data:GroupDescriptor PropertyName="BookName"/> 
+            </data:DataSource.GroupDescriptors> 
+        </data:DataSource> 
+    </syncfusion:SfListView.DataSource> 
+</syncfusion:SfListView> 
+{% endhighlight %}
+{% highlight c# %}
+listView.DataSource.AutoExpandGroups = true;
+{% endhighlight %}
+{% endtabs %}
+ 
 ### Events
 
 ### GroupExpanding Event
@@ -1234,4 +1257,5 @@ Download entire source code from GitHub [here](https://github.com/SyncfusionExam
 [How to add a jump list with Xamarin.Forms ListView](https://www.syncfusion.com/kb/11021/)                                                                                                               
 [How to maintain only one group in expand state in SfListView](https://www.syncfusion.com/kb/8495/)  
 [How to show group and grouped items within a frame Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11274/)                                                                                                                                                                                                                                                                                                                                                                                                                          
-[How to format the group header for different levels of grouping in Xamarin.Forms ListView(SfListView)?](https://www.syncfusion.com/kb/11685/)
+[How to format the group header for different levels of grouping in Xamarin.Forms ListView(SfListView)?](https://www.syncfusion.com/kb/11685/)                                                                                                                                                                                                                                                                                                                                                          
+[How to hide the line separator in Xamarin.Forms ListView with grouping (SfListView)](https://www.syncfusion.com/kb/11707/)

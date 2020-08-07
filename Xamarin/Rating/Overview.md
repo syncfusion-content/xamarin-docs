@@ -2,17 +2,17 @@
 
 layout: post
 title: Overview of Syncfusion Rating control for Xamarin.Forms
-description: Overview and key features of Rating control
+description: This section will explain about Overview and key features of Syncfusion Rating control in Xamarin.Forms.
 platform: Xamarin
 control: Rating
 documentation: ug
 
 ---
-# Overview
+# Xamarin Rating (SfRating) Overview
 
 The Essential Xamarin Rating control provides the number of stars that represents a rating. And also used to configure the item size, item spacing and the number of displayed items in the SfRating control. Essential Xamarin Rating control can be used in various scenarios like movie rating, rating the application etc.
 
-![](images/overview.png)
+![Rating OverView](images/overview.png)
 
 ## Key Features
 

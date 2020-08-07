@@ -489,22 +489,12 @@ The following code sample demonstrates how to retrieve [`SelectedItem`](https://
              xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
              xmlns:comboBox="clr namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
              x:Class="ComboBox.MainPage">
+   <ContentPage.BindingContext>
+      <local:EmployeeViewModel/>
+   </ContentPage.BindingContext>
     <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None"  SelectionChanged="ComboBox_SelectionChanged">
-            <comboBox:SfComboBox.ComboBoxSource>
-                <ListCollection:List x:TypeArguments="x:String">
-                    <x:String>Antigua and Barbuda</x:String>
-                    <x:String>American Samoa</x:String>
-                    <x:String>Afghanistan</x:String>
-                    <x:String>Antarctica</x:String>
-                    <x:String>Argentina</x:String>
-                    <x:String>Anguilla</x:String>
-                    <x:String>Albania</x:String>
-                    <x:String>Algeria</x:String>
-                    <x:String>Andorra</x:String>
-                    <x:String>Angola</x:String>
-                </ListCollection:List>
-            </comboBox:SfComboBox.ComboBoxSource>
+        <comboBox:SfComboBox x:Name="comboBox" HeightRequest="40" MultiSelectMode="None"  DisplayMemberPath ="Name" DataSource="{Binding EmployeeCollection}" SelectedItem="{Binding SelectedItem,Mode=TwoWay}"  SelectionChanged="ComboBox_SelectionChanged">
+           
         </comboBox:SfComboBox>
     </StackLayout> 
 </ContentPage>
@@ -521,10 +511,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace ComboBox
-{
+{  
     public partial class MainPage : ContentPage
-     {
-        SfComboBox comboBox;
+    {
+   
+       SfComboBox comboBox;
+       EmployeeViewModel ViewModel;
         public MainPage()
         {
             InitializeComponent();
@@ -534,38 +526,105 @@ namespace ComboBox
                 HorizontalOptions = LayoutOptions.Start,
                 Padding = 30
             };
-
-            comboBox = new SfComboBox()
-            {
-                HeightRequest = 40,
-                MultiSelectMode = MultiSelectMode.None,
-                DataSource = new List<string>()
-                {
-                    "Antigua and Barbuda",
-                    "American Samoa",
-                    "Afghanistan",
-                    "Antarctica",
-                    "Argentina",
-                    "Anguilla",
-                    "Albania",
-                    "Algeria",
-                    "Andorra",
-                    "Angola"
-                }
-            };
-
+            
+            comboBox = new SfComboBox();
+            ViewModel = new EmployeeViewModel();
+            comboBox.HeightRequest = 40
+            comboBox.DisplayMemberPath = "Name";
+            comboBox.DataSource = ViewModel.EmployeeCollection
+            Binding selectedItem = new Binding("SelectedItem");
+            selectedItem.Source = ViewModel;
+            selectedItem.Mode = BindingMode.TwoWay;
+            BindingOperations.SetBinding(comboBox, comboBox.SelectedItemProperty, selectedItem);
+            comboBox.MultiSelectMode = MultiSelectMode.None
             comboBox.SelectionChanged += ComboBox_SelectionChanged;
             stackLayout.Children.Add(comboBox);
+            this.BindingContext = ViewModel;
             this.Content = stackLayout;
-        }
 
+        }
+          
+        //ComboBox SelectionChangedEvent has been created here
         private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox.SelectionChangedEventArgs e)
         {
             DisplayAlert("Selection Changed", "SelectedItem: " + comboBox.SelectedItem, "OK");
         }
-  }
+    }
 }
+       
+{% endhighlight %}
+{% endtabs %}
+
+Define a simple model class employee with fields ID and Name, and then populate employee data and `SelectedItem` in ViewModel.
+
+{% tabs %}
+{% highlight c# %}
+
+    public class Employee
+    {
+         private int id;
+         public int ID
+         {
+	      get { return id; }
+	      set { id = value; }
+         }
+
+         private string name;
+         public string Name
+         {
+	      get { return name; }
+	      set { name = value; }
+         }
+     }
+
+    public class EmployeeViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<Employee> employeeCollection;
+        public ObservableCollection<Employee> EmployeeCollection
+        {
+            get { return employeeCollection; }
+            set 
+            { 
+                employeeCollection = value; 
+            }
+        }
+
+        private object selectedItem;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+
+
+        public object SelectedItem
+        {
+            get { return selectedItem; }
+            set
+            { 
+                selectedItem = value;
+                NotifyPropertyChanged();
+            }
+        }
+
+        public EmployeeViewModel()
+        {
+            employeeCollection = new ObservableCollection<Employee>();
+            employeeCollection.Add(new Employee() { ID = 1, Name = "Frank" });
+            employeeCollection.Add(new Employee() { ID = 2, Name = "James" });
+            employeeCollection.Add(new Employee() { ID = 3, Name = "Steve" });
+            employeeCollection.Add(new Employee() { ID = 4, Name = "Lucas" });
+            employeeCollection.Add(new Employee() { ID = 5, Name = "Mark" });
+            employeeCollection.Add(new Employee() { ID = 6, Name = "Michael" });
+            employeeCollection.Add(new Employee() { ID = 7, Name = "Aldrin" });
+            employeeCollection.Add(new Employee() { ID = 8, Name = "Jack" });
+            employeeCollection.Add(new Employee() { ID = 9, Name = "Howard" });
+
+            SelectedItem = EmployeeCollection[2];
+        }
+    }
 
 {% endhighlight %}
-
 {% endtabs %}

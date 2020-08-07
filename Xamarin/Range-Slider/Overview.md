@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Overview of Syncfusion RangeSlider control for Xamarin.Forms
-description: Overview and key features of RangeSlider control in Xamarin.Forms
+description: This section will explain about the Overview and key features of RangeSlider control in Xamarin.Forms
 platform: Xamarin
 control: RangeSlider
 documentation: ug
 ---
 
-# Overview
+# Xamarin Range Slider (SfRangeSlider) Overview
 
-The range slider control for Xamarin.Forms allows you select a range of values within the specified minimum and maximum limits. The range can be selected by moving the thumb along track.
+The Range Slider control for Xamarin.Forms allows you select a range of values within the specified minimum and maximum limits. The range can be selected by moving the thumb along track.
 
-![](images/overview.png)
+![RangeSlider OverView](images/overview.png)
 
 ## Key features
 

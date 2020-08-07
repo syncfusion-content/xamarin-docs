@@ -509,3 +509,13 @@ N> Default value of the IsCenterAligned property is false.
 {% endtabs %}
 
 ![Center Aligned SfCircularGauge image](scales_images/iscenteraligned.png)
+
+## See Also
+
+[How to bind scale collection to SfCircularGauge](https://www.syncfusion.com/kb/10578/how-to-bind-scale-collection-to-sfcirculargauge)
+
+[How to set start and sweep angles for scale](https://www.syncfusion.com/kb/10567/how-to-set-start-and-sweep-angles-for-scale)
+
+[How to bind scale collection to SfCircularGauge](https://www.syncfusion.com/kb/10578/how-to-bind-scale-collection-to-sfcirculargauge)
+
+[How to customize Rim position for Scale](https://www.syncfusion.com/kb/8296/how-to-customize-rim-position-for-scale)

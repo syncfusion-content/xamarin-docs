@@ -27,26 +27,52 @@ The content and layout of `SfExpander` get re-measured when its size is updated 
 
 {% tabs %}
 {% highlight xaml %}
+<StackLayout>
+<Button Text="DynamicSizeMode as Content" FontAttributes="Bold" Clicked="Button_Clicked"/>
 <syncfusion:SfExpander DynamicSizeMode="Content" IsExpanded="True">
     <syncfusion:SfExpander.Header>
         <Grid>
-            <Label Text="Veggie burger" x:Name="label" FontSize="Large"/>
+            <Image Source="menu.png" Margin="3" Aspect="AspectFit"/>
+            <Label x:Name="label1" TextColor="#495F6E" Text="Items" FontSize="16" VerticalOptions="CenterAndExpand"/>
         </Grid>
     </syncfusion:SfExpander.Header>
 
     <syncfusion:SfExpander.Content>
         <Grid>
-		    <Button Text="Change Content Text" TextColor="Black" x:Name="button1" BackgroundColor="BlueViolet" Clicked="button1_Clicked"/>
-            <Label x:Name="label1" Text="Veggie burger, garden burger, or tofu burger uses a meat analogue, a meat substitute such as tofu, textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties."/>
+		    <Label x:Name="veg" TextColor="#303030" FontSize="16" Text="Veggie burger" IsVisible="True"/>
+            <Label x:Name="garden"  TextColor="#303030" FontSize="16" Text="Garden burger" Grid.Row="1" IsVisible="True"/>
+			<Label x:Name="tofu" TextColor="#303030" FontSize="16" Text="Tofu burger" IsVisible="False" Grid.Row="2"/>
+            <Label x:Name="total" TextColor="#303030" FontSize="16" Text="Total Amount Paid" IsVisible="False"  FontAttributes="Bold" Grid.Row="3"/>
+			<Label x:Name="vegrate"  TextColor="#303030" FontSize="16" HorizontalOptions="End" Text="₹200.00" Grid.Column="1" IsVisible="True"/>
+            <Label x:Name="gardenrate" TextColor="#303030" FontSize="16" HorizontalOptions="End" Text="₹300.00" Grid.Row="1" IsVisible="True" Grid.Column="1"/>
+			<Label x:Name="tofurate"  TextColor="#303030" FontSize="16" HorizontalOptions="End" IsVisible="False" Text="₹450.00" Grid.Row="2" Grid.Column="1"/>
+            <Label x:Name="amount"  TextColor="#303030" FontSize="16" HorizontalOptions="End" IsVisible="False" Text="₹950.00" FontAttributes="Bold" Grid.Row="3" Grid.Column="1"/>
         </Grid>
     </syncfusion:SfExpander.Content>
-</syncfusion:SfExpander>      
+</syncfusion:SfExpander>  
+</StackLayout>    
 {% endhighlight %}
 {% highlight c# %}
 expander.DynamicSizeMode = DynamicSizeMode.Content;
-private void button1_Clicked(object sender, EventArgs e)
+private void Button_Clicked(object sender, EventArgs e)
 {
-   label1.Text = "Veggie burger, garden burger, or tofu burger uses a meat analogue, a meat substitute such as tofu, textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties.It comes with the cheesiness of a pizza within a burger, instead of a regular patty. Basically, they look like a burger and taste like a pizza! The three main burger pizza options available in the store are: Classic Veg Burger Pizza , Premium Veg Burger Pizza , Classic Non-Veg.";
+    if (!tofu.IsVisible)
+    {
+        tofu.IsVisible = true;
+        tofurate.IsVisible = true;
+    }
+    else if (!total.IsVisible)
+    {
+        total.IsVisible = true;
+        amount.IsVisible = true;
+    }
+    else
+    {
+        total.IsVisible = false;
+        amount.IsVisible = false;
+        tofu.IsVisible = false;
+        tofurate.IsVisible = false;
+    }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -59,26 +85,39 @@ The header and layout of the `SfExpander` get re-measured when its size is updat
 
 {% tabs %}
 {% highlight xaml %}
+<StackLayout>
+<Button Text="DynamicSizeMode as Header" FontAttributes="Bold" Clicked="Button_Clicked"/>
 <syncfusion:SfExpander DynamicSizeMode="Content" IsExpanded="True">
     <syncfusion:SfExpander.Header>
         <Grid>
-		    <Button Text="Change Header Text" TextColor="Black" x:Name="button" BackgroundColor="BlueViolet" Clicked="button_Clicked"/>
-            <Label Text="Veggie burger" x:Name="label" FontSize="Large"/>
+            <Image Source="menu.png" Margin="3" Aspect="AspectFit"/>
+            <Label x:Name="label1" TextColor="#495F6E" Text="Items" FontSize="16" VerticalOptions="CenterAndExpand"/>
         </Grid>
     </syncfusion:SfExpander.Header>
 
     <syncfusion:SfExpander.Content>
         <Grid>
-            <Label x:Name="label1" Text="Veggie burger, garden burger, or tofu burger uses a meat analogue, a meat substitute such as tofu, textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties."/>
+		    <Label x:Name="veg" TextColor="#303030" FontSize="16" Text="Veggie burger" IsVisible="True"/>
+            <Label x:Name="garden"  TextColor="#303030" FontSize="16" Text="Garden burger" Grid.Row="1" IsVisible="True"/>
+			<Label x:Name="vegrate"  TextColor="#303030" FontSize="16" HorizontalOptions="End" Text="₹200.00" Grid.Column="1" IsVisible="True"/>
+            <Label x:Name="gardenrate" TextColor="#303030" FontSize="16" HorizontalOptions="End" Text="₹300.00" Grid.Row="1" IsVisible="True" Grid.Column="1"/>
         </Grid>
     </syncfusion:SfExpander.Content>
-</syncfusion:SfExpander> 
+</syncfusion:SfExpander>  
+</StackLayout>    
 {% endhighlight %}
 {% highlight c# %}
 expander.DynamicSizeMode = DynamicSizeMode.Header;
-private void button_Clicked(object sender, EventArgs e)
+private void Button_Clicked(object sender, EventArgs e)
 {
-   label.Text = "Veggie burger, garden burger, or tofu burger";
+    if (label1.FontSize == 16)
+    {
+        label1.FontSize = 28;
+    }
+    else if (label1.FontSize == 28)
+    {
+        label1.FontSize = 35;
+    }
 }
 {% endhighlight %}
 {% endtabs %}	

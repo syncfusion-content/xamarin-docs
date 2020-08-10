@@ -539,6 +539,27 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ![Expand one group in listview](SfListView_images/SfListView-OneGroupExpanded.png)
 
+### Expand groups while grouping
+
+You can expand all the groups while grouping by setting the [DataSource.AutoExpandGroups](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~AutoExpandGroups.html) to true. So, when grouping any item, all the groups will be automatically expanded.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfListView x:Name="listView"> 
+    <syncfusion:SfListView.DataSource> 
+        <data:DataSource AutoExpandGroups="true"> 
+            <data:DataSource.GroupDescriptors> 
+                <data:GroupDescriptor PropertyName="BookName"/> 
+            </data:DataSource.GroupDescriptors> 
+        </data:DataSource> 
+    </syncfusion:SfListView.DataSource> 
+</syncfusion:SfListView> 
+{% endhighlight %}
+{% highlight c# %}
+listView.DataSource.AutoExpandGroups = true;
+{% endhighlight %}
+{% endtabs %}
+ 
 ### Events
 
 ### GroupExpanding Event

@@ -60,51 +60,49 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 N> Currently an additional step is required for iOS project. You need to create an instance of the rating custom renderer. If you are adding the references from toolbox, this step is not needed.
 
-Create an instance of SfRatingRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below
+
+
+### Additional step for iOS
+
+To launch [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms~Syncfusion.SfRating.XForms.SfRating.html) in iOS, call `SfRatingRenderer.Init()` in the `FinishedLaunching` overridden method of the `AppDelegate` class in iOS Project as demonstrated in the following code example.
 
 {% tabs %}
-
-{% highlight C# %}
-
+{% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
-	...
-    new SfRatingRenderer ();
-	...
-}	
-
-{% endhighlight %}
-
-{% endtabs %}
-
-### ReleaseMode issue in UWP platform
-
-There is a known Framework issue in UWP platform. The custom controls will not render when deployed the application in `Release Mode`.
-
-The above problem can be resolved by initializing the SfRating assemblies in `App.xaml.cs` in UWP project as like in below code snippet.
-
-{% highlight C# %}
-
-// In App.xaml.cs
-
-protected override void OnLaunched(LaunchActivatedEventArgs e)
-{
-…
-
-	rootFrame.NavigationFailed += OnNavigationFailed;
-		
-	// you'll need to add `using System.Reflection;`
-	List<Assembly> assembliesToInclude = new List<Assembly>();
-
-	//Now, add all the assemblies your app uses
-	assembliesToInclude.Add(typeof(SfRatingRenderer).GetTypeInfo().Assembly);
-
-	// replaces Xamarin.Forms.Forms.Init(e);        
-	Xamarin.Forms.Forms.Init(e, assembliesToInclude);
-		
-…     
+    global::Xamarin.Forms.Forms.Init();
+    LoadApplication(new App());
+    Syncfusion.SfRating.XForms.iOS.SfRatingRenderer.Init();
+    return base.FinishedLaunching(app, options);
 }
 {% endhighlight %}
+{% endtabs %}
+
+
+
+### Additional step for UWP
+
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms~Syncfusion.SfRating.XForms.SfRating.html) assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around. The following code example demonstrates initializing the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms~Syncfusion.SfRating.XForms.SfRating.html) assembly.
+
+
+{% tabs %}
+{% highlight c# %}
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+    ..... 
+    rootFrame.NavigationFailed += OnNavigationFailed;
+    // Add `using System.Reflection;` 
+    List<Assembly> assembliesToInclude = new List<Assembly>();
+	
+    //Now, add all the assemblies that your app uses 
+    assembliesToInclude.Add(typeof(SfRatingRenderer).GetTypeInfo().Assembly);
+	
+    // replaces Xamarin.Forms.Forms.Init(e);
+    Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+    ..... 
+}
+{% endhighlight %}
+{% endtabs %}
 
 The SfRating control is configured entirely in C# code or by using XAML markup. The following steps explains how to create a SfRating and configure its elements.
 

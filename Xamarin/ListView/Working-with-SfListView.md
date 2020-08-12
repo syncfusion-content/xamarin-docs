@@ -1068,6 +1068,30 @@ The options are as follows:
 * Creates the measurement and layout similar to Xamarin.Forms ListView, when the ListView is loaded inside the layouts such as StackLayout, ScrollView, and Grid, in which the RowDefinition or ColumnDefinition is set to 'Auto'. In all other layouts, the ListView size will be allocated from the framework.
 * Sets the value of total extend to the HeightRequest of ListView, since the scrolling will be handled by the parent ScrollView, when ListView is loaded inside the StackLayout with base parent as ScrollView having multiple elements inside the StackLayout.
 
+## Dispose listview
+
+You can dispose and release resources used by ListView by calling the [ListView.Dispose](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Dispose().html) method.
+
+{% tabs %}
+{% highlight c# %}
+protected override void OnDisappearing()  
+{  
+   listview.Dispose();  
+   base.OnDisappearing();  
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Refresh view
+
+You can refresh the view by using the [RefreshView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshView.html) method. It will be used to refresh the items in the listview at runtime while updating the view.
+
+{% tabs %}
+{% highlight c# %} 
+   listview.RefreshView();   
+{% endhighlight %}
+{% endtabs %}
+
 ## How to
 
 ### Swipe and move an item to another listview on swipe item tapped action
@@ -1127,30 +1151,6 @@ private bool FilterDepartures(object obj)
 
  Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Filter-xamarin.forms-listview-based-on-swiped-items-in-another-listview).
 
-## Dispose listview
-
-You can dispose and release resources used by ListView by calling the [ListView.Dispose](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Dispose().html) method.
-
-{% tabs %}
-{% highlight c# %}
-protected override void OnDisappearing()  
-{  
-   listview.Dispose();  
-   base.OnDisappearing();  
-}
-{% endhighlight %}
-{% endtabs %}
-
-## Refresh view
-
-You can refresh the view by using the [RefreshView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshView.html) method. It will be used to refresh the items in the listview at runtime while updating the view.
-
-{% tabs %}
-{% highlight c# %} 
-   listview.RefreshView();   
-{% endhighlight %}
-{% endtabs %}
-
 ## See also
 
 [How to highlight the tapped view in ItemTemplate in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11235)                                                                                                                                                                                                                                                      
@@ -1162,4 +1162,6 @@ You can refresh the view by using the [RefreshView](https://help.syncfusion.com/
 [How to improve performance when doing bulk changes in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11395/)                                                                                                                                                                                                                                                                                                                                                                                                           
 [How to dispose of children of ListView in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11417/)                                                                                                                                                                                                                                                                                        
 [How to make sound on tapping an item in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11687/)                                                                                                                                 
-[How to apply the ListView item text color in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11699/)
+[How to apply the ListView item text color in Xamarin.Forms (SfListView)](https://www.syncfusion.com/kb/11699/)                                                                                                                                                                             
+[How to share items source among Xamarin.Forms ListView with carousel page (SfListView)](https://www.syncfusion.com/kb/11789/)                                                                                                                                                                                                                                                          
+[How to enable compiled binding for Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11807/)

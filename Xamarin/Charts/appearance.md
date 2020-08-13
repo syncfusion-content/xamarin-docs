@@ -128,7 +128,7 @@ chart.Series.Add(columnSeries);
 
 ![Predefined palettes support in Xamarin.Forms Chart](appearance_images/appearance_img3.png)
 
-N> Line series to draw need two data points, to apply the color to consider only the first data point, Last data point to draw in line series is not required.
+N> The line that exists between two data points, considered as a single data point for its color customization for line kind of series.
 
 **Custom Palette**
 

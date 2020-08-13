@@ -128,7 +128,7 @@ chart.Series.Add(columnSeries);
 
 ![Predefined palettes support in Xamarin.Forms Chart](appearance_images/appearance_img3.png)
 
-N> The line that exists between two data points, considered as a single data point for its color customization for line kind of series.
+N> The line exists between two data points. It considered as a single data point for its color customization. This is the default behaviour of line kind of series.
 
 **Custom Palette**
 

@@ -442,7 +442,7 @@ series.Animate();
 
 {% endhighlight %}
 
-## See Also
+## See also
 
 [How to group stacking series in the Xamarin.Forms Chart](https://www.syncfusion.com/kb/11724/how-to-group-stacking-series-in-the-xamarin-forms-chart)
 

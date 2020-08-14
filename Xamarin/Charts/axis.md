@@ -1699,7 +1699,7 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 * [`LabelContent`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LabelClickedEventArgs~LabelContent.html) - Used to get the text of label.
 * [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LabelClickedEventArgs~Position.html) - Used to get the position of label.
 
-## See Also
+## See also
 
 [How to remove comma in CategoryAxis labels in Xamarin.Forms Chart](https://www.syncfusion.com/kb/11317/how-to-remove-comma-in-categoryaxis-labels-in-xamarin-forms-chart)
 
@@ -1717,26 +1717,26 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 
 [How to change the position of the axis](https://www.syncfusion.com/kb/4814/how-to-change-the-position-of-the-axis)
 
-[How to localize the labels in Xamarin.Forms Chart?](https://www.syncfusion.com/kb/9415/how-to-localize-the-labels-in-xamarin-forms-chart)
+[How to localize the labels in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9415/how-to-localize-the-labels-in-xamarin-forms-chart)
 
-[How to plot date-time values in vertical axes?](https://www.syncfusion.com/kb/8732/how-to-plot-date-time-values-in-vertical-axes)
+[How to plot date-time values in vertical axes](https://www.syncfusion.com/kb/8732/how-to-plot-date-time-values-in-vertical-axes)
 
-[How to show all the axis labels?](https://www.syncfusion.com/kb/8242/how-to-show-all-the-axis-labels)
+[How to show all the axis labels](https://www.syncfusion.com/kb/8242/how-to-show-all-the-axis-labels)
 
-[How to change the color of axis elements?](https://www.syncfusion.com/kb/5780/how-to-change-the-color-of-axis-elements)
+[How to change the color of axis elements](https://www.syncfusion.com/kb/5780/how-to-change-the-color-of-axis-elements)
 
 [How to inverse the chart axis](https://www.syncfusion.com/kb/5742/how-to-inverse-the-chart-axis)
 
-[How to customize the data label's font?](https://www.syncfusion.com/kb/5865/how-to-customize-the-data-labels-font)
+[How to customize the data label's font](https://www.syncfusion.com/kb/5865/how-to-customize-the-data-labels-font)
 
-[How to add custom axis labels in numerical axis?](https://www.syncfusion.com/kb/5926/how-to-add-custom-axis-labels-in-numerical-axis)
+[How to add custom axis labels in numerical axis](https://www.syncfusion.com/kb/5926/how-to-add-custom-axis-labels-in-numerical-axis)
 
-[How to zoom y axis or x axis alone?](https://www.syncfusion.com/kb/5549/how-to-zoom-y-axis-or-x-axis-alone)
+[How to zoom y axis or x axis alone](https://www.syncfusion.com/kb/5549/how-to-zoom-y-axis-or-x-axis-alone)
 
 [How to customize the axis range based on condition](https://www.syncfusion.com/kb/5546/how-to-customize-the-axis-range-based-on-condition)
 
-[How to customize the axis labels?](https://www.syncfusion.com/kb/5545/how-to-customize-the-axis-labels)
+[How to customize the axis labels](https://www.syncfusion.com/kb/5545/how-to-customize-the-axis-labels)
 
-[How to customize the range of chart axis?](https://www.syncfusion.com/kb/4811/how-to-customize-the-range-of-chart-axis)
+[How to customize the range of chart axis](https://www.syncfusion.com/kb/4811/how-to-customize-the-range-of-chart-axis)
 
-[How to display chart axis labels between the ticks?](https://www.syncfusion.com/kb/5037/how-to-display-chart-axis-labels-between-the-ticks)
+[How to display chart axis labels between the ticks](https://www.syncfusion.com/kb/5037/how-to-display-chart-axis-labels-between-the-ticks)

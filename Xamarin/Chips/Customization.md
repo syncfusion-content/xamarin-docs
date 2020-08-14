@@ -2607,7 +2607,7 @@ namespace ChipCustomization
 
 N> The default value of ChipImageWidth is [`26`].
 
-## See Also
+## See also
 
 [How to customize the corner radius of ChipGroup items in Xamarin.Forms](https://www.syncfusion.com/kb/11282/how-to-customize-the-corner-radius-of-chipgroup-items-in-xamarin-forms)
 
@@ -2617,4 +2617,4 @@ N> The default value of ChipImageWidth is [`26`].
 
 [How to select a multiple chips from the Xamarin ChipGroup [SfChipGroup]](https://www.syncfusion.com/kb/11155/how-to-select-a-multiple-chips-from-the-xamarin-chipgroup-sfchipgroup)
 
-[How to display each chip in different colors in the Xamarin.Forms ChipGroup?](https://www.syncfusion.com/kb/10940/how-to-display-each-chip-in-different-colors-in-the-xamarin-forms-chipgroup)
+[How to display each chip in different colors in the Xamarin.Forms ChipGroup](https://www.syncfusion.com/kb/10940/how-to-display-each-chip-in-different-colors-in-the-xamarin-forms-chipgroup)

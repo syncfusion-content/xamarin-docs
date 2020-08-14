@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Syncfusion.Xamarin.Froms Chart Tooltip
-description: How to enable, customize the tooltip and tooltip template in Essential Xamarin.Forms Chart
+description: description: This section explains how to enable, customize the tooltip and tooltip template in Essential Xamarin.Forms Chart.
 platform: xamarin
 control: Chart
 documentation: ug

@@ -561,3 +561,13 @@ The [`TrackballCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCha
 * [`XPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPointInfo~XPosition.html) -  Gets the x-position of trackball label.
 * [`YPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPointInfo~YPosition.html) - Gets the y-position of trackball label.
 * [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPointInfo~BackgroundColor.html) - Gets the default background color of trackball label.
+
+## See Also
+
+[How to add multiple trackballs in Xamarin.Forms Chart?](https://www.syncfusion.com/kb/10400/how-to-add-multiple-trackballs-in-xamarin-forms-chart)
+
+[How to activate the trackball on touch?](https://www.syncfusion.com/kb/8620/how-to-activate-the-trackball-on-touch)
+
+[How to format the trackball labels?](https://www.syncfusion.com/kb/5779/how-to-format-the-trackball-labels)
+
+[How to set the milliseconds label format for axis and trackball label in Xamarin.Forms Chart?](https://www.syncfusion.com/kb/10812/how-to-set-the-milliseconds-label-format-for-axis-and-trackball-label-in-xamarin-forms)

@@ -77,3 +77,9 @@ var stream = await chart.GetStreamAsync();
 {% endhighlight %}
 
 {% endtabs %}
+
+## See Also
+
+[How to export the Chart to the PDF document in Xamarin.Forms?](https://www.syncfusion.com/kb/9404/how-to-export-the-chart-to-the-pdf-document-in-xamarin-forms)
+
+[How to apply the PDF document size to Xamarin.Forms Chart?](https://www.syncfusion.com/kb/8705/how-to-apply-the-pdf-document-size-to-xamarin-forms-chart)

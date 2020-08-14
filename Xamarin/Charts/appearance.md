@@ -363,4 +363,17 @@ chart.AreaBorderWidth = 3;
 
 {% endtabs %}
 
+## See Also
+
+[How to navigate to other page with data point information of selected data in Xamarin.Forms Chart?](https://www.syncfusion.com/kb/8704/how-to-navigate-to-other-page-with-data-point-information-of-selected-data-in-xamarin-forms)
+
+[How to show the fixed number of data points?](https://www.syncfusion.com/kb/8621/how-to-show-the-fixed-number-of-data-points)
+
+[How to update an existing data point in Xamarin.Forms Chart?](https://www.syncfusion.com/kb/7731/how-to-update-an-existing-data-point-in-xamarin-forms-chart)
+
+[How to display fixed number of data points in Chart](https://www.syncfusion.com/kb/7721/how-to-display-fixed-number-of-data-points-in-chart)
+
+[How to customize the minor gridline style](https://www.syncfusion.com/kb/5720/how-to-customize-the-minor-gridline-style)
+
+[How to change the data point selection color?](https://www.syncfusion.com/kb/4957/how-to-change-the-data-point-selection-color)
 

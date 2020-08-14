@@ -226,3 +226,6 @@ tooltip.Hide(true);
 
 {% endhighlight %}
 
+## See Also
+
+[How to bind the Xamarin.Forms pie chart tooltip to “Others” category values](https://www.syncfusion.com/kb/11861/how-to-bind-the-xamarin-forms-pie-chart-tooltip-to-others-category-values)

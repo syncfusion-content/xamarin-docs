@@ -624,3 +624,17 @@ You can customize the legend item using following properties of [`ChartLegendIte
 * [`IsEnabled`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItem~IsEnabled.html) – Gets the visibility of the series if the series is the type of [`CartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries.html) and get the visibility of the data point if the series is type of [`AccumulationSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries.html).
 * [`DataPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItem~DataPoint.html) – Gets the legend item data point for accumulation series only.
 * [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItem~Series.html) – Gets respective chart series.
+
+## See Also
+
+[How to apply custom fonts in Xamarin.Forms Chart?](https://www.syncfusion.com/kb/9388/how-to-apply-custom-fonts-in-xamarin-forms-chart)
+
+[How to customize the individual legend item based on a condition in Xamarin.Forms Chart?](https://www.syncfusion.com/kb/9375/how-to-customize-the-individual-legend-item-based-on-a-condition-in-xamarin-forms-chart)
+
+[How to collapse the series through legend?](https://www.syncfusion.com/kb/5724/how-to-collapse-the-series-through-legend)
+
+[How to float the legend on chart?](https://www.syncfusion.com/kb/5723/how-to-float-the-legend-on-chart)
+
+[How to change the legend icons?](https://www.syncfusion.com/kb/5528/how-to-change-the-legend-icons)
+
+[How to change the legend position?](https://www.syncfusion.com/kb/5527/how-to-change-the-legend-position)

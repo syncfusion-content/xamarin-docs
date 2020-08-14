@@ -499,3 +499,7 @@ numericalAxis.StripLines.Add(stripLine);
 {% endtabs %}
 
 ![Segmented support for DateTime strip lines in Xamarin.Forms Chart](striplines_images/stripline_img6.png)
+
+## See Also
+
+[How to add benchmark line in Xamarin.Forms Chart?](https://www.syncfusion.com/kb/9304/how-to-add-benchmark-line-in-xamarin-forms-chart)

@@ -441,3 +441,17 @@ ColumnSeries series = new ColumnSeries();
 series.Animate();
 
 {% endhighlight %}
+
+## See Also
+
+[How to group stacking series in the Xamarin.Forms Chart?](https://www.syncfusion.com/kb/11724/how-to-group-stacking-series-in-the-xamarin-forms-chart)
+
+[How to add content in the center of DoughnutSeries?](https://www.syncfusion.com/kb/7778/how-to-add-content-in-the-center-of-doughnutseries)
+
+[How to explode the pie series slice on touch ?](https://www.syncfusion.com/kb/5923/how-to-explode-the-pie-series-slice-on-touch)
+
+[How to set the opacity of the chart series?](https://www.syncfusion.com/kb/5741/how-to-set-the-opacity-of-the-chart-series)
+
+[How to show indicator when loading the large number of data points to series in Xamarin.Forms Chart?](https://www.syncfusion.com/kb/10680/how-to-show-indicator-when-loading-the-large-number-of-data-points-to-series-in-xamarin)
+
+[How to increase or decrease the width of Column series?](https://www.syncfusion.com/kb/5104/how-to-increase-or-decrease-the-width-of-column-series)

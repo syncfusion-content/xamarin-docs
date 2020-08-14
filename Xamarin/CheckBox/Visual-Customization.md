@@ -181,3 +181,7 @@ stackLayout.Children.Add(sfCheckBox);
 {% endtabs %}
 
 N>[`ControlSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.ToggleButton~ControlSize.html) is not applicable for Android Platform.
+
+## See Also
+
+[How to get the values of selected checkboxes in a group using Xamarin.Forms?](https://www.syncfusion.com/kb/10915/how-to-get-the-values-of-selected-checkboxes-in-a-group-using-xamarin-forms)

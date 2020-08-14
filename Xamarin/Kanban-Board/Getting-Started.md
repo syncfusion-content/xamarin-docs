@@ -319,3 +319,9 @@ doneColumn.Categories = new List<object>() { "Done" };
 This is how the final output will look like on iOS, Android and Windows devices. You can download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/Getting-started-sample-in-kanban-in-Xamarin).
 
 ![Final output of SfKanban](SfKanban_images/SfKanban-gettingstartedImage.jpg)
+
+## See Also
+
+[How to resolve SfKanban not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/7171/how-to-resolve-sfkanban-not-rendering-issue-in-ios-and-uwp)
+
+[How to make Syncfusion Xamarin.Forms SfKanban to work in UWP in release mode when .Net Native tool chain is enabled?](https://www.syncfusion.com/kb/7170/how-to-make-syncfusion-xamarin-forms-sfkanban-to-work-in-uwp-in-release-mode-when-net) 

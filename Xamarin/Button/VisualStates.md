@@ -90,3 +90,9 @@ this.Content = stackLayout;
 
 **Normal visual state:**
 ![SfButton with visual state](images/VisualState_NormalState.png)
+
+## See Also
+
+[How to change Xamarin.Forms button style using its visual states](https://www.syncfusion.com/kb/11003/how-to-change-xamarin-forms-button-style-using-its-visual-states)
+
+[How to disable Xamarin.Forms button](https://www.syncfusion.com/kb/11036/how-to-disable-xamarin-forms-button)

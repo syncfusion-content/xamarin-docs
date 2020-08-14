@@ -76,3 +76,8 @@ namespace Chips
 {% endtabs %}
 
 ![Collection of items to chip group](images/items/chips_items.png)
+
+## See Also
+
+[How to bind remote JSON data to Xamarin.Forms chip group (SfChipGroup)](https://www.syncfusion.com/kb/11370/how-to-bind-remote-json-data-to-xamarin-forms-chip-group-sfchipgroup)
+

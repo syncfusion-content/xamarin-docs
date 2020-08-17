@@ -230,7 +230,7 @@ public partial class MainPage : ContentPage
 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Maintaing-scroll-position-on-changing-itemssource-xamarin.forms-listview).
 
-## How to handle the recycle of the ListViewItems
+## How to handle the recycle of the ListView Items
 
 By default, Listview reuses items on scrolling and source collection change. You can skip reusing while scrolling by setting the [ListViewCachingStrategy](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ListViewCachingStrategy.html) property to `CreateNewTemplate` for the ListView. It Creates a new element for every data in ItemsSource. The default value is `ListViewCachingStrategy.RecycleTemplate` where the data template gets reused while the data object associated with the listview item gets changed.
 

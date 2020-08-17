@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Interacting with TreeView for Xamarin.Forms | Syncfusion
-description: Describes about the different interactions on TreeView.
+description: This section explains about how to interact with TreeView and the different interactions on TreeView items.
 platform: xamarin
 control: SfTreeView
 documentation: ug
 ---
 
-# Interactivity
+# Interactivity in Xamarin TreeView (SfTreeView)
 
  This section explains about how to interact with `TreeView` and its items.
 

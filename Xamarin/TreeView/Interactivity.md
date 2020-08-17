@@ -41,6 +41,9 @@ The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
  * `Handled`: Gets or sets whether the event is handled or not.
 
 {% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeView x:Name="treeView" ItemTapped="TreeView_ItemTapped" />
+{% endhighlight %}
 {% highlight c# %}
 
 treeView.ItemTapped += TreeView_ItemTapped;
@@ -52,6 +55,15 @@ private void TreeView_ItemTapped(object sender, ItemTappedEventArgs e)
 
 {% endhighlight %}
 {% endtabs %}
+
+The `ItemTapped` event is used for the following use cases:
+
+* To show the context menu.
+* To navigate to another page.
+* To delete the item in the treeview at runtime.
+* To display the item details into another view.
+* To change the underlying bound data.
+* To skip other events like selection events if the Handled property set to true.
 
 ### ItemDoubleTapped event
 

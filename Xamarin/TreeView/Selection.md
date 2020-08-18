@@ -71,10 +71,25 @@ The selected items can be cleared by calling the `SelectedItems.Clear()` method.
 treeView.SelectedItems.Clear();
 {% endhighlight %}
 {% endtabs %}
-
+ 
 ### CurrentItem vs SelectedItem
 
 The TreeView gets the selected item by using the [SelectedItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~SelectedItem.html) and [CurrentItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~CurrentItem.html) properties. Both `SelectedItem` and `CurrentItem` returns the same data object when selecting single item. When selecting more than one item, the `SelectedItem` property returns the first selected item, and the `CurrentItem` property returns the last selected item.
+
+## Select an entire row
+
+By default, the selection starts from the indent level only. You can select the full row by enabling the [FullRowSelect](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~FullRowSelect.html) property. By setting the `FullRowSelect` to `true` the selection spans the width of tree view control.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeView x:Name="TreeView" FullRowSelect="True" />
+{% endhighlight %}
+{% highlight c# %}
+TreeView.FullRowSelect = true;
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin Forms TreeView with FullRowSelect](TreeView_images/Treeview-Fullrowselect.png)
 
 ## Selected item style
 

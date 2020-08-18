@@ -232,7 +232,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## How to handle the recycle of the ListView Items
 
-By default, Listview reuses items on scrolling and source collection change. You can skip reusing while scrolling by setting the [ListViewCachingStrategy](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ListViewCachingStrategy.html) property to `CreateNewTemplate` for the ListView. It Creates a new element for every data in ItemsSource. The default value is `ListViewCachingStrategy.RecycleTemplate` where the data template gets reused while the data object associated with the listview item gets changed.
+By default, the Listview reuses items on scrolling and source collection change. You can skip the reusing while scrolling by setting the [ListViewCachingStrategy](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ListViewCachingStrategy.html) property to `CreateNewTemplate` for the ListView. It creates a new element for every data in the ItemsSource. The default value is `ListViewCachingStrategy.RecycleTemplate` where the data template gets reused while the data object associated with the listview item gets changed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -243,7 +243,7 @@ listView.ListViewCachingStrategy = ListViewCachingStrategy.CreateNewTemplate;
 {% endhighlight %}
 {% endtabs %}
 
-You can skip the reusing of list items on ItemsSource property changed by setting the [ItemsSourceChangeCachingStrategy](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSourceChangeCachingStrategy.html) property to `ClearItems` for the listview. Here, the existing ListView items will be cleared and create a new list items when ItemsSource changed. The default value is `ItemsSourceChangeCachingStrategy.RecycleItems` where the listView items will be recycled on ItemsSource changes.
+You can skip the reusing of list items on the `ItemsSourcePropertyChanged` by setting the [ItemsSourceChangeCachingStrategy](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSourceChangeCachingStrategy.html) property to `ClearItems` for the listview. Here, the existing ListView items will be cleared and create a new list of items when the ItemsSource changed. The default value is `ItemsSourceChangeCachingStrategy.RecycleItems` where the listView items will be recycled in the ItemsSource changes.
 
 {% tabs %}
 {% highlight xaml %}

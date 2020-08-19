@@ -12,7 +12,6 @@ documentation: ug
 This section covers the features of `SfCalendar` specific to Android,iOS and UWP platforms. The following comparison table help to find available features are in different platforms.
 
 <table>
-
 <tr>
 <th style="color: #ffffff;background-color: #08838C;" align="center" >Features are in SfCalendar</th>
 <th style="color: #ffffff;background-color: #08838C;" align="center" >Android</th>
@@ -20,29 +19,28 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <th style="color: #ffffff;background-color: #08838C;" align="center" >UWP</th>
 <th style="color: #ffffff;background-color: #08838C;" align="center" >Achieved By</th>
 </tr>
-
 <tr style="background-color: #ffefd5;color: #000000;">
 <td>View of  SfCalendar</td>
 <td align="center" >
 <p>MonthView</p><br> 
 <p>YearView</p><br> 
 <p>Decade</p><br> 
-<p>Century/p><br> 
+<p>Century</p><br> 
 </td>
 <td align="center">
 <p>MonthView</p><br> 
 <p>YearView</p><br> 
 <p>Decade</p><br> 
-<p>Century/p><br> 
+<p>Century</p><br> 
 </td>
 <td align="center">
 <p>MonthView</p><br>
 <p>YearView</p><br>
 <p>Decade</p><br> 
-<p>Century/p><br> 
+<p>Century</p><br> 
 </td>
 <td align="center">
-<p>ViewMode</p>
+<p>[ViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ViewMode.html)</p>
 </td>
 </tr>
 
@@ -67,7 +65,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>MultiRange</p><br>
 </td>
 <td align="center">
-<p>SelectionMode</p>
+<p>[SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html)</p>
 </td>
 </tr>
 
@@ -83,7 +81,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>BlackoutDates</p>
+<p>[BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html)</p>
 </td>
 </tr>
 
@@ -99,7 +97,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>FirstDayofWeek</p>
+<p>[FirstDayofWeek](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~FirstDayofWeek.html)</p>
 </td>
 </tr>
 
@@ -115,7 +113,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>DataSource</p>
+<p>[DataSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~DataSource.html)</p>
 </td>
 </tr>
 
@@ -131,7 +129,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>IsVisible</p>
+<p>[IsVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~IsVisible.html)</p>
 </td>
 </tr>
 
@@ -147,7 +145,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>Locale</p>
+<p>[Locale](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Locale.html)</p>
 </td>
 </tr>
 
@@ -163,7 +161,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>ShowInlineEvents</p>
+<p>[ShowInlineEvents](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowInlineEvents.html)</p>
 </td>
 </tr>
 
@@ -179,7 +177,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>MoveToDate and MoveToDate(DateTime datetime)</p>
+<p>[MoveToDate and MoveToDate(DateTime datetime)](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MoveToDate.html)</p>
 </td>
 </tr>
 
@@ -195,7 +193,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>Forward() and Backward()</p>
+<p>[Forward()](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Forward.html) and [Backward()](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Backward.html)</p>
 </td>
 </tr>
 
@@ -211,7 +209,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>CustomDayLabels</p>
+<p>[CustomDayLabels](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~CustomDayLabels.html)</p>
 </td>
 </tr>
 
@@ -227,7 +225,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>MinDate and MaxDate</p>
+<p>[MinDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaxDate.html)</p>
 </td>
 </tr>
 
@@ -243,7 +241,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>SelectedDates</p>
+<p>[SelectedDates](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedDates.html)</p>
 </td>
 </tr>
 
@@ -259,7 +257,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>HeaderHeight</p>
+<p>[HeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~HeaderHeight.html)</p>
 </td>
 </tr>
 
@@ -275,7 +273,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>ShowHeader</p>
+<p>[ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowHeader.html)</p>
 </td>
 </tr>
 
@@ -291,9 +289,9 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>NavigationButtonHeight</p><br> 
-<p>NavigationButtonWidth</p><br> 
-<p>NavigationArrowThickness</p><br> 
+<p>[NavigationButtonHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationButtonHeight.html)</p><br> 
+<p>[NavigationButtonWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationButtonWidth.html)</p><br> 
+<p>[NavigationArrowThickness](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationArrowThickness.html)</p><br> 
 </td>
 </tr>
 
@@ -309,7 +307,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>ShowNavigationButtons</p>
+<p>[ShowNavigationButtons](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowNavigationButtons.html)</p>
 </td>
 </tr>
 
@@ -325,7 +323,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>MonthViewSettings</p>
+<p>[MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MonthViewSettings.html)</p>
 </td>
 </tr>
 
@@ -341,7 +339,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>No</p>
 </td>
 <td align="center">
-<p>YearViewSettings</p>
+<p>[YearViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~YearViewSettings.html)</p>
 </td>
 </tr>
 
@@ -357,8 +355,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>No</p>
 </td>
 <td align="center">
-<p>ToggleDaySelection
-</p>
+<p>[ToggleDaySelection](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ToggleDaySelection.html)</p>
 </td>
 </tr>
 
@@ -374,7 +371,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>MonthViewSettings</p>
+<p>[MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MonthViewSettings.html)</p>
 </td>
 </tr>
 
@@ -391,8 +388,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>NavigateToMonthOn<p>
-<p>-InActiveDatesSelection</p>
+<p>[NavigateToMonthOnInActiveDatesSelection](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigateToMonthOnInActiveDatesSelection.html)</p>
 </td>
 </tr>
 
@@ -427,7 +423,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p align="center">Yes</p>
 </td>
 <td align="center">
-<p>EnableSwiping</p>
+<p>[EnableSwiping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~EnableSwiping.html)</p>
 </td>
 </tr>
 
@@ -443,7 +439,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>No</p>
 </td>
 <td align="center">
-<p>MaximumEventIndicatorCount</p>
+<p>[MaximumEventIndicatorCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaximumEventIndicatorCount.html)</p>
 </td>
 </tr>
 
@@ -461,7 +457,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>SelectedRange</p>
+<p>[SelectedRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedRange.html)</p>
 </td>
 </tr>
 <tr>
@@ -485,7 +481,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>None</p><br> 
 </td>
 <td align="center">
-<p>CellGridOptions</p>
+<p>[CellGridOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellGridOptions.html)</p>
 </td>
 </tr>
 
@@ -504,7 +500,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Vertical</p><br>
 </td>
 <td align="center">
-<p>NavigationDirection</p>
+<p>[NavigationDirection](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationDirection.html)</p>
 </td>
 </tr>
 
@@ -520,7 +516,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>ShowYearView</p>
+<p>[ShowYearView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowYearView.html)</p>
 </td>
 </tr>
 
@@ -536,7 +532,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>HeaderView</p>
+<p>[HeaderView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~HeaderView.html)</p>
 </td>
 </tr>
 
@@ -552,7 +548,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>CellTemplate</p>
+<p>[CellTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellTemplateProperty.html)</p>
 </td>
 </tr>
 
@@ -568,7 +564,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-<p>CellTemplate and CellBindingContext in an argument of OnMonthCellLoaded</p>
+<p>[CellTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellTemplateProperty.html) and [CellBindingContext](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthCell~CellBindingContext.html) in an argument of [OnMonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnMonthCellLoaded_EV.html)</p>
 </td>
 </tr>
 

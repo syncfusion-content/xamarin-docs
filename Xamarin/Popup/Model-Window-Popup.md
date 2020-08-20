@@ -7,7 +7,7 @@ control: SfPopupLayout
 documentation: ug
 --- 
 
-# Modal Window Popup
+# Modal Window Popup in Xamarin.Forms
 
 You can use popup layout as modal window by using the built-in Close icon and the [SfPopupLayout.StaysOpen](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~StaysOpenProperty.html) property prevents interaction with your application until you close the window.
 
@@ -28,7 +28,7 @@ Refer to the following code example in which the popup will close only if you cl
              x:Class="GettingStarted.MainPage" 
              Padding="0,40,0,0"
              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
- <sfPopup:SfPopupLayout x:Name="popUpLayout">
+ <sfPopup:SfPopupLayout x:Name="popUpLayout" StaysOpen="True">
     <sfPopup:SfPopupLayout.PopupView>
         <sfPopup:PopupView HeightRequest="230"
                            HeaderTitle="Modal Window"

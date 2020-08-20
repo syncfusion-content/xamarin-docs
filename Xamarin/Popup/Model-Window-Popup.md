@@ -28,7 +28,7 @@ Refer to the following code example in which the popup will close only if you cl
              x:Class="GettingStarted.MainPage" 
              Padding="0,40,0,0"
              xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
- <sfPopup:SfPopupLayout x:Name="popUpLayout" IsOpen="True">
+ <sfPopup:SfPopupLayout x:Name="popUpLayout" StaysOpen="True">
     <sfPopup:SfPopupLayout.PopupView>
         <sfPopup:PopupView HeightRequest="230"
                            HeaderTitle="Modal Window"

@@ -53,7 +53,7 @@ The `Pulling` event will be notified whenever the swipe gesture is started. This
 
 {%highlight Xaml%}
 
-    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" RefreshingEvent="PullToRefresh_Refreshing" />
+    <syncfusion:SfPullToRefresh x:Name="pullToRefresh" Refreshing="PullToRefresh_Refreshing" />
 
 {%endhighlight%}
 
@@ -79,7 +79,7 @@ The `Pulling` event will be notified whenever the swipe gesture is started. This
 
 {%highlight Xaml%}
 
-    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" RefreshedEvent="PullToRefresh_Refreshed" />
+    <syncfusion:SfPullToRefresh x:Name=" pullToRefresh" Refreshed="PullToRefresh_Refreshed" />
 
 {%endhighlight%}
 

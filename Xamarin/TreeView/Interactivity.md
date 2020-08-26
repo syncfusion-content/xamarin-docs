@@ -56,7 +56,7 @@ private void TreeView_ItemTapped(object sender, ItemTappedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can also download the entire source code of this demo from here
+You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/item-tapped-treeview-xamarin)
 
 ### ItemDoubleTapped event
 
@@ -79,7 +79,7 @@ private void TreeView_ItemDoubleTapped(object sender, ItemDoubleTappedEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-You can also download the entire source code of this demo from here
+You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/item-double-tapped-treeview-xamarin)
 
 ### ItemHolding event
 
@@ -102,4 +102,4 @@ private void TreeView_ItemHolding(object sender, ItemHoldingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can also download the entire source code of this demo from here
+You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/item-hold-treeview-xamarin)

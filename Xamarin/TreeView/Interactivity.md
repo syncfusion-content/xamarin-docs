@@ -67,6 +67,9 @@ The [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
  * `Handled`: Gets or sets whether the event is handled or not.
 
 {% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeView x:Name="treeView" ItemDoubleTapped="TreeView_ItemDoubleTapped" />
+{% endhighlight %}
 {% highlight c# %}
 
 treeView.ItemDoubleTapped += TreeView_ItemDoubleTapped;
@@ -91,6 +94,9 @@ The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.S
  * `Handled`: Gets or sets whether the event is handled or not.
 
 {% tabs %}
+{% highlight xaml %}
+<syncfusion:SfTreeView x:Name="treeView" ItemHolding="TreeView_ItemHolding" />
+{% endhighlight %}
 {% highlight c# %}
 
 treeView.ItemHolding += TreeView_ItemHolding;

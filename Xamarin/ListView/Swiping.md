@@ -76,7 +76,7 @@ N> Swipe Template is mandatory to perform swiping in the SfListView.
 
 ![Left swiping functionalities](SfListView_images/SfListView-Swiping--1.png)
 
-Download the entire source code from GitHub[here](https://github.com/SyncfusionExamples/Customize-swipe-view-in-xamarin-forms-listview-). 
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Customize-swipe-view-in-xamarin-forms-listview-). 
 
 ![Right swiping functionalities](SfListView_images/SfListView-Swiping--2.png)
 

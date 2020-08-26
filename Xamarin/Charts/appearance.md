@@ -128,6 +128,8 @@ chart.Series.Add(columnSeries);
 
 ![Predefined palettes support in Xamarin.Forms Chart](appearance_images/appearance_img3.png)
 
+N> The single line segment rendered based on the two data points. Since, each color in the ColorModel has been applied to their segments by combining it with two data points for all types of line series.
+
 **Custom Palette**
 
 Series will use the colors from [`CustomBrushes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~CustomBrushes.html) property if the [`ColorModel.Palette`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorModel~Palette.html) property of series is set to [`Custom`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartColorPalette.html).

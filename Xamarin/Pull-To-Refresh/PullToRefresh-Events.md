@@ -7,7 +7,7 @@ control: SfPullToRefresh
 documentation: ug
 ---
 
-# Events
+# PullToRefresh Events in Xamarin Pull To Refresh (SfPullToRefresh)
 
 There are three built-in events in the PullToRefresh control namely:
 

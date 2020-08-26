@@ -289,9 +289,9 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[NavigationButtonHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationButtonHeight.html)'| markdownify }} <br> 
-{{'[NavigationButtonWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationButtonWidth.html)'| markdownify }} <br> 
-{{'[NavigationArrowThickness](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationArrowThickness.html)'| markdownify }} <br> 
+{{'[NavigationButtonHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationButtonHeight.html)'| markdownify }} 
+{{'[NavigationButtonWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationButtonWidth.html)'| markdownify }}  
+{{'[NavigationArrowThickness](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationArrowThickness.html)'| markdownify }} 
 </td>
 </tr>
 

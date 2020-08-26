@@ -56,14 +56,7 @@ private void TreeView_ItemTapped(object sender, ItemTappedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-The `ItemTapped` event is used for the following use cases:
-
-* To show the context menu.
-* To navigate to another page.
-* To delete the item in the treeview at runtime.
-* To display the item details into another view.
-* To change the underlying bound data.
-* To skip other events like selection events if the Handled property set to true.
+You can also download the entire source code of this demo from here
 
 ### ItemDoubleTapped event
 
@@ -86,6 +79,8 @@ private void TreeView_ItemDoubleTapped(object sender, ItemDoubleTappedEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
+You can also download the entire source code of this demo from here
+
 ### ItemHolding event
 
 The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~ItemHolding_EV.html) event will be triggered whenever the item is long pressed.
@@ -106,3 +101,5 @@ private void TreeView_ItemHolding(object sender, ItemHoldingEventArgs e)
 
 {% endhighlight %}
 {% endtabs %}
+
+You can also download the entire source code of this demo from here

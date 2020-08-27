@@ -87,7 +87,7 @@ public class MainViewModel
 >**NOTE**
 * You can bind the `SelectedDates` property only when `SelectionMode` is set to `MultiSelection` in calendar.
 
-## Binding SelectedRangeCalendar supports selecting a range of dates programmatically by binding the [SelectedRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedRange.html) property with [SelectionRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionRange.html) type from your view model.
+## Binding SelectedRange
 The calendar supports selecting a range of dates programmatically by binding the [SelectedRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedRange.html) property with the [SelectionRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionRange.html) type from your view model.
 
 {% tabs %}

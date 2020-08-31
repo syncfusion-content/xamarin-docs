@@ -7,7 +7,7 @@ control: SfEffectsView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin EffectsView  (SfEffectsView)
 
 This section explains the steps required to configure the SfEffectsView control.
 
@@ -143,3 +143,5 @@ effectsView.CornerRadius = new Thickness(0, 25, 0, 25);
 {% endtabs %}
 
 ![EffectsView Initialization](Getting-Started_images/RippleEffect.gif)
+
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-started-of-SfEffectsView-in-Xamarin.Forms)

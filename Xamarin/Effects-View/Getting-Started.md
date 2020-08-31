@@ -144,4 +144,4 @@ effectsView.CornerRadius = new Thickness(0, 25, 0, 25);
 
 ![EffectsView Initialization](Getting-Started_images/RippleEffect.gif)
 
-You can find the complete getting started sample from this [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2042830402)
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-started-of-SfEffectsView-in-Xamarin.Forms)

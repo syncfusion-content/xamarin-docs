@@ -353,6 +353,8 @@ public class CustomAppearance : AppearanceManager
 
 ![DataPager with customized border color](SfDataGrid_images/DataPagerBorderColor.png)
 
+### Limitations
+1. Data processing operations (Sorting, Grouping) are done only in the current page. 
 
 ## See also
 

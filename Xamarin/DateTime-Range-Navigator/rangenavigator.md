@@ -171,11 +171,11 @@ Following code example illustrates this,
 {% highlight c# %}
 [C#]
 
-SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
-
-rangeNavigator.Minimum = new DateTime(2015, 01, 01);
-
-rangeNavigator.Maximum = new DateTime(2016, 01, 01);
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator()
+{
+	Minimum = new DateTime(2015, 01, 01),
+	Maximum = new DateTime(2016, 01, 01)
+};
 
 {% endhighlight %}
 
@@ -192,9 +192,9 @@ Next, create a data model representing the list of sample data.
 
 public class DataModel
 {
-	public ObservableCollection<Model> DateTimeData;
+	public ObservableCollection<Model> DateTimeData {get; set;}
 	
-	DataModel()
+	public DataModel()
 	{ 		
 		DateTimeData = new ObservableCollection<Model>()
 		{ 
@@ -247,7 +247,7 @@ N> By default, data is visualized using line series. You can change the chart ty
 
 SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator() 
 { 
-	rangeNavigator.ItemsSource = dataModel.DateTimeData, 
+	rangeNavigator.ItemsSource = new DataModel().DateTimeData, 
 	rangeNavigator.XBindingPath = "Date", 
 	rangeNavigator.YBindingPath = "Value" 
 };  
@@ -270,7 +270,7 @@ Following code example illustrates how to handle range selection and update char
 [C#]
 
 rangeNavigator.RangeChanged += rangeNavigator_RangeChanged;  
-
+...
 
 private void rangeNavigator_RangeChanged(object sender, RangeChangedEventArgs e) 
 { 
@@ -281,6 +281,6 @@ private void rangeNavigator_RangeChanged(object sender, RangeChangedEventArgs e)
 
 {% endhighlight %}
 
-You can find the complete getting started sample from this [link.](http://files2.syncfusion.com/Xamarin.Forms/Samples/RangeNavigatorGettingStarted.zip)
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting_started_of_SfDateTimeRangeNavigator_in_Xamarin.Forms)
 
 ![Range selection in Xamarin.Forms DateTime range navigator](gettingstarted_images/gettingstarted_img3.jpeg)

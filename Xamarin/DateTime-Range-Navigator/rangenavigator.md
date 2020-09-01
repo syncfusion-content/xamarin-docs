@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started | SfDateTimeRangeNavigator | Xamarin | Syncfusion
-description: getting started
+description:  How to create a date time range navigator, adding reference details, customization options in Xamarin.Forms SfDateTimeRangeNavigator
 platform: xamarin
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Getting started
+# Getting Started in Xamarin.Forms SfDateTimeRangeNavigator
 
 This section walks you through the steps required to add [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) and populate it with data, and also explains how to respond to range selection performed in the control. 
 
@@ -275,8 +275,6 @@ rangeNavigator.RangeChanged += rangeNavigator_RangeChanged;
 private void rangeNavigator_RangeChanged(object sender, RangeChangedEventArgs e) 
 { 
 	//Updating chart's date time range 
-	dateTimeAxis.Minimum = e.ViewRangeStartDate; 
-	dateTimeAxis.Maximum = e.ViewRangeEndDate; 
 }  
 
 {% endhighlight %}

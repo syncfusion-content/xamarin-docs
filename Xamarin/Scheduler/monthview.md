@@ -243,8 +243,41 @@ schedule.MonthViewSettings = monthViewSettings;
 
 ![Month agenda item template in schedule xamarin forms](monthview_images/xamarin.forms-schedule-agendaview-itemtemplate.png)
 
->**NOTE**
-You can Customize inline items using the AgendaItemTemplate property by setting the ShowAppointmentsInline property as true
+### Customize inline items using AgendaView
+
+You can customize the inline items using the [AgendaItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaItemTemplate.html) property of the [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MonthViewSettings.html) in schedule. You can show the inline view by setting the `ShowAppointmentsInline` property as true.
+
+{% tabs %}
+{% highlight xaml %}
+<schedule:SfSchedule x:Name="Schedule" DataSource="{Binding Meetings}" ScheduleView="MonthView" ShowAppointmentsInline="True">                                
+    <schedule:SfSchedule.MonthViewSettings>
+		<schedule:MonthViewSettings>
+			<schedule:MonthViewSettings.AgendaItemTemplate>
+				<DataTemplate>
+					<Button BackgroundColor="Purple" Text="Template" TextColor="White" />
+				</DataTemplate>
+			</schedule:MonthViewSettings.AgendaItemTemplate>
+		</schedule:MonthViewSettings>
+	</schedule:SfSchedule.MonthViewSettings>
+</schedule:SfSchedule>
+{% endhighlight %}
+{% highlight c# %}
+SfSchedule Schedule = new SfSchedule();
+schedule.ScheduleView = ScheduleView.MonthView;
+Schedule.ShowAppointmentsInline = true;
+MonthViewSettings monthViewSettings = new MonthViewSettings();
+monthViewSettings.AgendaItemTemplate = new DataTemplate(() =>
+{
+    return new Button
+    {
+        Text = "Template",
+        TextColor = Color.White,
+        BackgroundColor = Color.Purple
+    };
+});
+Schedule.MonthViewSettings = monthViewSettings;
+{% endhighlight %}
+{% endtabs %}
 
 ### Agenda item height
 You can customize the agenda view appointment height by setting the [ItemHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~ItemHeight.html) in [AgendaViewStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewStyle.html) property of `MonthViewSettings`.

@@ -270,8 +270,8 @@ monthViewSettings.AgendaItemTemplate = new DataTemplate(() =>
 {
     var label = new Label();
     label.SetBinding(Label.TextProperty, "EventName");
-    TextColor = Color.White,
-    BackgroundColor = Color.Purple
+    TextColor = Color.White;
+    BackgroundColor = Color.Purple;
 	return label;
 });
 Schedule.MonthViewSettings = monthViewSettings;

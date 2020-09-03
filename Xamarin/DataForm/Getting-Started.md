@@ -19,7 +19,7 @@ The SfDataForm control helps editing the data fields of any data object. It can 
 
 # Getting Started with Xamarin DataForm (SfDataForm)
 
-This section explains the quick overview to use the [SfDataForm](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm.html) for Xamarin.Forms in your application.
+This section explains the quick overview to use the [SfDataForm](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) for Xamarin.Forms in your application.
 
 ## Assembly deployment
 
@@ -333,7 +333,7 @@ public class ViewModel
 
 ## Setting data object
 
-To populate the labels and editors in the data form, set the [DataObject](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~DataObject.html) property.
+To populate the labels and editors in the data form, set the [DataObject](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_DataObject) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -367,7 +367,7 @@ You can download the entire source code of this demo for Xamarin.Forms from here
 
 ## Defining editors
 
-The data form control automatically generates [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~DataFormItems.html) (which has UI settings of data field) when the data object set to the `SfDataForm.DataObject` property. The [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) encapsulates the layout and editor setting for the data field appearing in the data form. When the `DataFormItems` are generated, you can handle the SfDataForm.AutoGeneratingDataFormItem event to customize or cancel the `DataFormItem`. 
+The data form control automatically generates [DataFormItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItemManager.html#Syncfusion_XForms_DataForm_DataFormItemManager_DataFormItems) (which has UI settings of data field) when the data object set to the `SfDataForm.DataObject` property. The [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html) encapsulates the layout and editor setting for the data field appearing in the data form. When the `DataFormItems` are generated, you can handle the SfDataForm.AutoGeneratingDataFormItem event to customize or cancel the `DataFormItem`. 
 
 The type of input editor generated for the data field depends on the type and attribute settings of the property. The following table lists the `DataFormItem` and its constraints for generation:
 
@@ -378,7 +378,7 @@ The type of input editor generated for the data field depends on the type and at
 </tr>
 <tr>
 <td>
-{{'[DataFormTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTextItem.html)'| markdownify }}
+{{'[DataFormTextItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormTextItem.html)'| markdownify }}
 </td>
 <td>
 Default DataFormItem generated for the String type and the properties with [DataType(DataType.Text)], [DataType(DataType.MultilineText)] and [DataType(DataType.Password)] attributes.
@@ -386,7 +386,7 @@ Default DataFormItem generated for the String type and the properties with [Data
 </tr>
 <tr>
 <td>
-{{'[DataFormNumericItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormNumericItem.html)'| markdownify }}
+{{'[DataFormNumericItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormNumericItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the Int or Double type property.
@@ -396,7 +396,7 @@ Generated for the Int or Double type property.
 </tr>
 <tr>
 <td>
-{{'[DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html)'| markdownify }}
+{{'[DataFormDateItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormDateItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the DateTime type property.
@@ -406,7 +406,7 @@ Generated for the DateTime type property.
 </tr>
 <tr>
 <td>
-{{'[DataFormTimeItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem.html)'| markdownify }}
+{{'[DataFormTimeItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormTimeItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the DataTime type property.
@@ -415,7 +415,7 @@ Generated for the DataTime type property.
 </tr>
 <tr>
 <td>
-{{'[DataFormPickerItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormPickerItem.html)'| markdownify }}
+{{'[DataFormPickerItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormPickerItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the Enum type property.
@@ -424,7 +424,7 @@ Generated for the Enum type property.
 </tr>
 <tr>
 <td>
-{{'[DataFormSegmentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormSegmentItem.html)'| markdownify }}
+{{'[DataFormSegmentItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormSegmentItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the Enum type property.
@@ -433,7 +433,7 @@ Generated for the Enum type property.
 </tr>
 <tr>
 <td>
-{{'[DataFormCheckBoxItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormCheckBoxItem.html)'| markdownify }}
+{{'[DataFormCheckBoxItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormCheckBoxItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the Bool type property.
@@ -442,7 +442,7 @@ Generated for the Bool type property.
 </tr>
 <tr>
 <td>
-{{'[DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html)'| markdownify }}
+{{'[DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the PhoneNumber type property.
@@ -451,7 +451,7 @@ Generated for the PhoneNumber type property.
 </tr>
 <tr>
 <td>
-{{'[DataFormAutoCompleteItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem.html)'| markdownify }}
+{{'[DataFormAutoCompleteItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormAutoCompleteItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the Enum type property.
@@ -460,7 +460,7 @@ Generated for the Enum type property.
 </tr>
 <tr>
 <td>
-{{'[DataFormDropDowneItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem.html)'| markdownify }}
+{{'[DataFormDropDowneItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormDropDownItem.html)'| markdownify }}
 </td>
 <td>
 Generated for the Enum type property.
@@ -659,7 +659,7 @@ Enum and List type property.
 [EnumDataTypeAttribute]
 </td>
 <td>
-{{'[SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfRadioGroup.html)'| markdownify }}
+{{'[SfRadioGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfRadioGroup.html)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -670,7 +670,7 @@ MaskedEditText
 Property with [DataType(DataType.PhoneNumber)] attribute.
 </td>
 <td>
-{{'[SfMaskedEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit_namespace.html)'| markdownify }}
+{{'[SfMaskedEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.html)'| markdownify }}
 </td>
 </tr>
 </table>
@@ -679,7 +679,7 @@ Property with [DataType(DataType.PhoneNumber)] attribute.
 
 ### Label position
 
-By default, the data form arranges the label at left side and input control at the right side. You can change the label position by setting the [SfDataForm.LabelPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~LabelPosition.html) property. You can position the label from left to top of the input control by setting the `LabelPosition` as Top.
+By default, the data form arranges the label at left side and input control at the right side. You can change the label position by setting the [SfDataForm.LabelPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_LabelPosition) property. You can position the label from left to top of the input control by setting the `LabelPosition` as Top.
 
 {% tabs %}
 {% highlight xaml %}
@@ -698,7 +698,7 @@ dataForm.LabelPosition = LabelPosition.Top;
 
 ### Grid layout
 
-By default, the data form arranges one data field per row. It is possible to have more than one date field per row by setting the [ColumnCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ColumnCount.html) property which provides grid like layout for the data form.
+By default, the data form arranges one data field per row. It is possible to have more than one date field per row by setting the [ColumnCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_ColumnCount) property which provides grid like layout for the data form.
 
 {% tabs %}
 {% highlight xaml %}
@@ -719,7 +719,7 @@ dataForm.ColumnCount = 2;
 
 StackLayout positions the child elements one after another either horizontally or vertically. Space of the [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms) depends on the HorizontalOptions and VerticalOptions properties. Views in a stack layout can be sized based on space in the layout using layout options.
 
-The DataForm control can be loaded inside any layout such as [Grid](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.Grid?view=xamarin-forms), [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms), etc. When loading DataForm inside a `StackLayout`, set the [HorizontalOptions](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~HorizontalOptions.html) and [VerticalOptions](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~VerticalOptions.html) properties of DataForm, and set parent(StackLayout) of DataForm to `LayoutOptions.FillAndExpand`.
+The DataForm control can be loaded inside any layout such as [Grid](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.Grid?view=xamarin-forms), [StackLayout](https://docs.microsoft.com/en-us/dotnet/api/Xamarin.Forms.StackLayout?view=xamarin-forms), etc. When loading DataForm inside a `StackLayout`, set the [HorizontalOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) and [VerticalOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) properties of DataForm, and set parent(StackLayout) of DataForm to `LayoutOptions.FillAndExpand`.
 
 Refer to the following code example to load the DataForm control inside a `StackLayout`. Set the VerticalOptions and HorizontalOptions of the `StackLayout` and DataForm to `FillAndExpand`.
 
@@ -759,7 +759,7 @@ public partial class MainPage : ContentPage
 
 ## Loading DataForm with customized height and width
 
-The DataForm can be loaded with specific height and width inside different layouts using the [SfDataForm.HeightRequest](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~HeightRequest.html) and [SfDataForm.WidthRequest](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~WidthRequest.html) properties.
+The DataForm can be loaded with specific height and width inside different layouts using the [SfDataForm.HeightRequest](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) and [SfDataForm.WidthRequest](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -784,7 +784,7 @@ dataForm.HorizontalOptions = LayoutOptions.Center;
 
 ## Editing
 
-By default, the data form enables editing of the data field. You can disable editing by setting the [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~IsReadOnly.html) property of the data form. You can enable or disable editing for a particular data field by setting the [IsReadOnly](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~IsReadOnly.html) property of [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) in the `AutoGeneratingDataFormItem` event. The data field editing behavior can also be defined by using [EditableAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.editableattribute?view=netframework-4.8Dip)
+By default, the data form enables editing of the data field. You can disable editing by setting the [IsReadOnly](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_IsReadOnly) property of the data form. You can enable or disable editing for a particular data field by setting the [IsReadOnly](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html#Syncfusion_XForms_DataForm_DataFormItem_IsReadOnly) property of [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html) in the `AutoGeneratingDataFormItem` event. The data field editing behavior can also be defined by using [EditableAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.editableattribute?view=netframework-4.8Dip)
 
 ## See also
 

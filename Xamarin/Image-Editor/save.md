@@ -9,7 +9,7 @@ documentation: ug
 
 # Save in SfImageEditor
 
-You can save the image along with the current edits to the device using the [`Save`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~Save.html) method.
+You can save the image along with the current edits to the device using the [`Save`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_Save_System_String_Xamarin_Forms_Size_) method.
 
 The saved image will be added to the device for each platform in the following locations:
 
@@ -53,7 +53,7 @@ In iOS simulator, the saved image will be added to (Library\developer\CoreSimula
 
 ## Save events
 
-The SfImageEditor has events when performing the save operation namely [`ImageSaving`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~ImageSaving_EV.html) and [`ImageSaved`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~ImageSaved_EV.html).
+The SfImageEditor has events when performing the save operation namely [`ImageSaving`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html) and [`ImageSaved`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html).
 
 ### ImageSaving
 
@@ -129,7 +129,7 @@ This event occurs after the image has been saved. To get the location of the sav
 
 ## Saving Image with Custom Size and Format
 
-The [`Save`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~Save.html) method in the SfImageEditor control allows user to save an image in different format such as `png`, `jpg`, and `bmp`.
+The [`Save`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_Save_System_String_Xamarin_Forms_Size_) method in the SfImageEditor control allows user to save an image in different format such as `png`, `jpg`, and `bmp`.
 
 To choose the format while Saving the image.
 
@@ -159,7 +159,7 @@ N> Supported formats are `.png`, `.jpg`, and `.bmp`.
 
 ## Reset
 
-The [`Reset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~Reset.html) method, resets the complete set of changes made in image and also resets the image to original loaded image.
+The [`Reset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_Reset) method, resets the complete set of changes made in image and also resets the image to original loaded image.
 
 {% tabs %}
 
@@ -173,7 +173,7 @@ The [`Reset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfIma
 
 ## Reset events
 
-The SfImageEditor has events when performing reset operation namely [`BeginReset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~BeginReset_EV.html) and [`EndReset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~EndReset_EV.html).
+The SfImageEditor has events when performing reset operation namely [`BeginReset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html) and [`EndReset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html).
 
 ### BeginReset
 

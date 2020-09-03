@@ -478,7 +478,7 @@ You can customize number increment and decrement mode in spin button interaction
 
 ### Default
 
-When [`SpinValidation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfNumericUpDown.XForms~Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown~SpinValidation.html) property is set as `Default`, the `NumericUpDown` value gets updated on long press till the increment or decrement button gets disabled.
+When [`SpinValidation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_SpinValidation) property is set as `Default`, the `NumericUpDown` value gets updated on long press till the increment or decrement button gets disabled.
 
 {% tabs %}
 
@@ -499,7 +499,7 @@ numericUpDown.SpinValidation = SpinValidation.Default;
 
 ## Tapped
 
-When [`SpinValidation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfNumericUpDown.XForms~Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown~SpinValidation.html) property is set as `Tapped`, the `NumericUpDown` value gets updated on the increment or decrement button tap action.
+When [`SpinValidation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_SpinValidation) property is set as `Tapped`, the `NumericUpDown` value gets updated on the increment or decrement button tap action.
 
 {% tabs %}
 

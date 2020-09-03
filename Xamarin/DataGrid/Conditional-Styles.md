@@ -98,14 +98,14 @@ public class CellStyleConverter : IValueConverter
 
 ## Styling cells using QueryCellStyle event
 
-The conditional style can be applied for any cell using the [QueryCellStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryCellStyle_EV.html) event based on any condition. This event will be fired for each cell. It provides the following properties through the [QueryCellStyleEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html) in its `EventHandler`:
+The conditional style can be applied for any cell using the [QueryCellStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event based on any condition. This event will be fired for each cell. It provides the following properties through the [QueryCellStyleEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html) in its `EventHandler`:
   
- * [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryConditionalStyleEventArgs~RowIndex.html): Provides the row index of current cell in iteration. 
- * [ColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs~ColumnIndex.html): Provides the column index of current cell in iteration. 
- * [CellValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs~CellValue.html): Provides the cell value of current cell in iteration.
- * [Column](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs~Column.html): Provides the [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) which belongs to current cell in iteration. 
- * [e.Handled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridHandledEventArgs~Handled.html): Should set to true to apply the changes.
- * [Style](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs~Style.html): Sets style to the current cell in iteration.
+ * [RowIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryConditionalStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryConditionalStyleEventArgs_RowIndex): Provides the row index of current cell in iteration. 
+ * [ColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryCellStyleEventArgs_ColumnIndex): Provides the column index of current cell in iteration. 
+ * [CellValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryCellStyleEventArgs_CellValue): Provides the cell value of current cell in iteration.
+ * [Column](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryCellStyleEventArgs_Column): Provides the [GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) which belongs to current cell in iteration. 
+ * [e.Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridHandledEventArgs.html#Syncfusion_SfDataGrid_XForms_GridHandledEventArgs_Handled): Should set to true to apply the changes.
+ * [Style](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryCellStyleEventArgs_Style): Sets style to the current cell in iteration.
  
 {% highlight c# %}
 this.dataGrid.QueryCellStyle += DataGrid_QueryCellStyle;
@@ -199,12 +199,12 @@ private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
 
 ## Styling cells using RowStyle event
 
-The Conditional style can be applied for an entire row based on any condition using the [QueryRowStyle](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowStyle_EV.html) event. This event will be fired for each row. It provides the following properties through the [QueryRowStyleEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowStyleEventArgs.html) in its `EventHandler`:
+The Conditional style can be applied for an entire row based on any condition using the [QueryRowStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event. This event will be fired for each row. It provides the following properties through the [QueryRowStyleEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowStyleEventArgs.html) in its `EventHandler`:
 
- * [RowData](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryConditionalStyleEventArgs~RowData.html): Provides the row data of current row in iteration.
- * [RowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryConditionalStyleEventArgs~RowIndex.html): Provides the row index of current row in iteration.
- * [e.Handled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridHandledEventArgs~Handled.html): Should set to true to apply the changes.
- * [Style](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.QueryRowStyleEventArgs~Style.html): Sets style to the current row in iteration.
+ * [RowData](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryConditionalStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryConditionalStyleEventArgs_RowData): Provides the row data of current row in iteration.
+ * [RowIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryConditionalStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryConditionalStyleEventArgs_RowIndex): Provides the row index of current row in iteration.
+ * [e.Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridHandledEventArgs.html#Syncfusion_SfDataGrid_XForms_GridHandledEventArgs_Handled): Should set to true to apply the changes.
+ * [Style](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowStyleEventArgs_Style): Sets style to the current row in iteration.
 
 {% highlight c# %}
 this.dataGrid.QueryRowStyle += DataGrid_QueryRowStyle;

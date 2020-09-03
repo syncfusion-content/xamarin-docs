@@ -11,7 +11,7 @@ documentation: ug
 
 ## ItemTapped
 
-[`ItemTapped`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ItemTapped_EV.html) event is triggered when you tap on any card. The argument contains the following information.
+[`ItemTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) event is triggered when you tap on any card. The argument contains the following information.
 
 * [`Column`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanTappedEventArgs~Column.html)          - Used to get the column of the card.
 * [`Data`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanTappedEventArgs~Data.html) 			- Used to get the underlying model of the card.
@@ -57,7 +57,7 @@ The default value of the `CardTappedCommandParameter` is `null`.
 
 ## DragStart
 
-[`DragStart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~DragStart_EV.html) event is triggered when you start to drag a card. The argument contains the following information.
+[`DragStart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) event is triggered when you start to drag a card. The argument contains the following information.
 
 * [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanDragStartEventArgs~Cancel.html)			- Used to cancel the drag action.
 * [`Data`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanDragEventArgs~Data.html)			- Used to get the underlying model of the card.
@@ -67,7 +67,7 @@ The default value of the `CardTappedCommandParameter` is `null`.
 
 ## DragEnd  
 
-[`DragEnd`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~DragEnd_EV.html) event is triggered whenever the card is dropped or dragging action is canceled. The argument contains the following information.
+[`DragEnd`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) event is triggered whenever the card is dropped or dragging action is canceled. The argument contains the following information.
 
 * [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanDragEndEventArgs~Cancel.html)			- Used to cancel the drag action.
 * [`Data`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanDragEventArgs~Data.html)			- Used to get the underlying model of the card.
@@ -79,7 +79,7 @@ The default value of the `CardTappedCommandParameter` is `null`.
 
 ## DragEnter 
 
-[`DragEnter`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~DragEnter_EV.html) event is triggered when a card enters into a column while dragging. The argument contains the following information.
+[`DragEnter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) event is triggered when a card enters into a column while dragging. The argument contains the following information.
 
 * [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanDragEnterEventArgs~Cancel.html)				- Used to cancel the drag action.
 * [`Data`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanDragEventArgs~Data.html)				- Used to get the underlying model of the card.
@@ -91,7 +91,7 @@ The default value of the `CardTappedCommandParameter` is `null`.
 
 ## DragLeave 
 
-[`DragLeave`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~DragLeave_EV.html) event is triggered when a card leaves a column while dragging. The argument contains the following information.
+[`DragLeave`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) event is triggered when a card leaves a column while dragging. The argument contains the following information.
 
 * [`Data`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanDragEventArgs~Data.html)                - Used to get the underlying model of the card.
 * [`IsBelowMinimumLimit`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanDragLeaveEventArgs~IsBelowMinimumLimit.html) - Used to know whether the total cards count of the target column will be below the minimum limit if you remove the card from target column. You can define the minimum limit of the cards using KanbanColumn.MinimumLimit.
@@ -101,7 +101,7 @@ The default value of the `CardTappedCommandParameter` is `null`.
 
 ## DragOver
 
-[`DragOver`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~DragOver_EV.html) event is triggered when a card is dragged to a new index within a column. The argument contains the following information.
+[`DragOver`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) event is triggered when a card is dragged to a new index within a column. The argument contains the following information.
 
 * [`Cancel`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanDragOverEventArgs~Cancel.html)			- Used to cancel the drag action.
 * [`Data`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanDragEventArgs~Data.html)			- Used to get the underlying model of the card.
@@ -112,4 +112,4 @@ The default value of the `CardTappedCommandParameter` is `null`.
 
 ## ColumnsGenerated 
 
-[`ColumnsGenerated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ColumnsGenerated_EV.html) event will be fired after the columns are generated automatically. You can access the auto-generated columns using [`SfKanban.ActualColumns`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ActualColumns.html) property.
+[`ColumnsGenerated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html) event will be fired after the columns are generated automatically. You can access the auto-generated columns using [`SfKanban.ActualColumns`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.SfKanban~ActualColumns.html) property.

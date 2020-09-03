@@ -13,7 +13,7 @@ The combo box control  provides user friendly customizing options for both entry
 
 ## Customizing the entry
 
-The [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~TextColor.html), [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~TextSize.html), [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FontAttributes.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FontFamily.html) and [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~BorderColor.html) properties are used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
+The [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextColor), [`TextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextSize), [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_FontAttributes), [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_FontFamily) and [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_BorderColor) properties are used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
 
 ### Text color
 
@@ -21,19 +21,19 @@ The combo box control provides the user to customize the foreground color of the
 
 ### Text size
 
-The combo box control provides the user to customize the text size of the text inside the entry part using [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~TextSize.html) property.
+The combo box control provides the user to customize the text size of the text inside the entry part using [`TextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextSize) property.
 
 ### Font attributes
 
-The combo box control provides the user to customize the font attribute of the text inside the entry part using [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FontAttributes.html) property.
+The combo box control provides the user to customize the font attribute of the text inside the entry part using [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_FontAttributes) property.
 
 ### Font family
 
-The combo box control provides the user to customize the font family of the text inside the entry part using [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FontFamily.html) property.
+The combo box control provides the user to customize the font family of the text inside the entry part using [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_FontFamily) property.
 
 ### Border color
 
-The combo box control provides the user to customize the border color of the entry box using [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~BorderColor.html) property.
+The combo box control provides the user to customize the border color of the entry box using [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_BorderColor) property.
 
 {% tabs %}
 
@@ -75,7 +75,7 @@ this.Content = stackLayout;
 
 ### Changing delete button color
 
-The [`ClearButtonColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~ClearButtonColor.html) property is used to modify the delete button color. The following code example shows changing delete button color. 
+The [`ClearButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ClearButtonColor) property is used to modify the delete button color. The following code example shows changing delete button color. 
 
 {% tabs %}
 
@@ -127,7 +127,7 @@ The [`ClearButtonColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 
 ### Changing delete button visibility
 
-The [`ShowClearButton`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~ShowClearButton.html) property is used to modify the visibility of delete button. The following code example shows changing delete button visibility.
+The [`ShowClearButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ShowClearButton) property is used to modify the visibility of delete button. The following code example shows changing delete button visibility.
 {% tabs %}
 
 {% highlight xaml %}
@@ -178,7 +178,7 @@ The [`ShowClearButton`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfu
 
 ### Changing border visibility
 
-The [`ShowBorder`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~ShowBorder.html) property is used to modify the visibility of border. The following code example shows changing border visibility. 
+The [`ShowBorder`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ShowBorder) property is used to modify the visibility of border. The following code example shows changing border visibility. 
 
 {% tabs %}
 
@@ -401,7 +401,7 @@ Content = layout;
 
 ### Changing suggestion item height
 
-The [`DropDownItemHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownItemHeight.html) property is used to modify the height of suggestion items in drop-down list. The following code example shows changing suggestion item height.
+The [`DropDownItemHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownItemHeight) property is used to modify the height of suggestion items in drop-down list. The following code example shows changing suggestion item height.
 
 {% tabs %}
 
@@ -452,7 +452,7 @@ The [`DropDownItemHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syn
 
 ### Changing suggestion box width
 
-The [`DropDownWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownWidth.html) property is used to modify the width of suggestion box. The following code example shows changing suggestion box width.
+The [`DropDownWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownWidth) property is used to modify the width of suggestion box. The following code example shows changing suggestion box width.
 
 {% tabs %}
 
@@ -503,7 +503,7 @@ The [`DropDownWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 ### Changing suggestion box corner radius
 
-The [`DropDownCornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownCornerRadius.html) property is used to modify the corner radius of suggestion box. The following code example shows changing suggestion box corner radius. 
+The [`DropDownCornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownCornerRadius) property is used to modify the corner radius of suggestion box. The following code example shows changing suggestion box corner radius. 
 
 {% tabs %}
 
@@ -554,7 +554,7 @@ The [`DropDownCornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
 ### Changing suggestion box background color
 
-The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownBackgroundColor.html) property is used to modify the background color of suggestion box. The following code example shows changing suggestion box background color. 
+The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownBackgroundColor) property is used to modify the background color of suggestion box. The following code example shows changing suggestion box background color. 
 
 {% tabs %}
 
@@ -683,7 +683,7 @@ The DropDownBorderColor property is used to change the border color of suggestio
 
 ### Customizing suggestion items
 
-Suggestion box items can be customized using the [`DropDownItemFontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownItemFontAttributes.html), [`DropDownItemFontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownItemFontFamily.html), [`DropDownTextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownTextSize.html) and [`DropDownTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~DropDownTextColor.html) properties.
+Suggestion box items can be customized using the [`DropDownItemFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownItemFontAttributes), [`DropDownItemFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownItemFontFamily), [`DropDownTextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownTextSize) and [`DropDownTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownTextColor) properties.
 
 {% tabs %}
 
@@ -736,7 +736,7 @@ Suggestion box items can be customized using the [`DropDownItemFontAttributes`](
 
 ### Changing selected item color in suggestion box 
 
-The [`SelectedDropDownItemColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~SelectedDropDownItemColor.html) property is used to modify text color of selected item in drop down. The following code example shows changing the selected item text color in drop down.
+The [`SelectedDropDownItemColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedDropDownItemColor) property is used to modify text color of selected item in drop down. The following code example shows changing the selected item text color in drop down.
 
 {% tabs %}
 
@@ -953,7 +953,7 @@ Watermark provides a short note about the type of input to enter in the editor c
 
 ## Changing Watermark Text Color
 
-Text color of watermark can be customized using [`WatermarkColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~WatermarkColor.html) property.
+Text color of watermark can be customized using [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_WatermarkColor) property.
 
 {% tabs %}
 

@@ -11,14 +11,14 @@ documentation: ug
 
 # Annotations in SfCircularGauge
 
-[`SfCircularGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Annotations.html), which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images also can be added by using [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Annotations.html) property.
+[`SfCircularGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html#Syncfusion_SfGauge_XForms_SfCircularGauge_Annotations), which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images also can be added by using [`Annotations`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html#Syncfusion_SfGauge_XForms_SfCircularGauge_Annotations) property.
 
 ##  Setting view annotation
 
 When the annotation allows you to place custom elements, a gauge can be initialized to the element, and this can be used to place the annotation in another gauge. The Following properties are used to customize the `Annotations`:
 
-* [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~Angle.html): Used to place the `View` at the given `Angle`. 
-* [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~Offset.html): Used to move the `View` from the center to edge of the circular gauge. The value should be range from 0 to 1.
+* [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.GaugeAnnotation.html#Syncfusion_SfGauge_XForms_GaugeAnnotation_Angle): Used to place the `View` at the given `Angle`. 
+* [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.GaugeAnnotation.html#Syncfusion_SfGauge_XForms_GaugeAnnotation_Offset): Used to move the `View` from the center to edge of the circular gauge. The value should be range from 0 to 1.
 
 The following code is used to create the `Annotations`.
 
@@ -630,7 +630,7 @@ You can add any text over the gauge control to enhance the readability. You can 
 
 ## Set margin to annotation
 
-You can adjust annotation by specifying the [`ViewMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~ViewMargin.html) property in pixel, which adjusts annotation elements from their current position.
+You can adjust annotation by specifying the [`ViewMargin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.GaugeAnnotation.html#Syncfusion_SfGauge_XForms_GaugeAnnotation_ViewMargin) property in pixel, which adjusts annotation elements from their current position.
 
 {% tabs %}
 
@@ -700,7 +700,7 @@ Content = gauge;
 
 ## Alignment of annotation
 
-You can align annotations to the `Start`, `Center` and `End` using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~HorizontalAlignment.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.GaugeAnnotation~VerticalAlignment.html) properties.
+You can align annotations to the `Start`, `Center` and `End` using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.GaugeAnnotation.html#Syncfusion_SfGauge_XForms_GaugeAnnotation_HorizontalAlignment) and [`VerticalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.GaugeAnnotation.html#Syncfusion_SfGauge_XForms_GaugeAnnotation_VerticalAlignment) properties.
 
 ### Setting horizontal alignment
 

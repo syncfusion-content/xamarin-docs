@@ -106,7 +106,7 @@ The Android platform does not require any additional configuration to render the
 
 ## Initialize cards
 
-Import the [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardView.html) namespace as shown in the following code in your respective page.
+Import the [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html) namespace as shown in the following code in your respective page.
 
 {% tabs %} 
 
@@ -126,7 +126,7 @@ Import the [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusio
 
 ### SfCardView
 
-Initialize a card view with [`Content`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~Content.html) as shown in the following code.
+Initialize a card view with [`Content`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_Content) as shown in the following code.
 
 {% tabs %} 
 
@@ -153,13 +153,13 @@ this.Content = cardView;
 
 {% endtabs %} 
 
-Run the project and check if you get following output to make sure that you have configured your project properly to add [`Cards`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.SfCardLayout.html).
+Run the project and check if you get following output to make sure that you have configured your project properly to add [`Cards`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html).
 
 ![Initializing Xamarin.Forms SfCardView](getting-started_images/img1.png)
 
 ## SwipeToDismiss
 
-The [`SwipeToDismiss`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.Cards.XForms.Cards~SwipeToDismiss.html) property is used to enable or disable swiping in SfCardView.
+The [`SwipeToDismiss`](https://help.syncfusion.com/cr/xamarin/) property is used to enable or disable swiping in SfCardView.
 
 {% tabs %} 
 

@@ -20,23 +20,23 @@ The following table describes the types of columns and its usage:
 <th>Description</th>
 </tr>
 <tr>
-<td>{{'[GridTextColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTextColumn.html)'| markdownify }}</td>
-<td>{{'[GridCellTextViewRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCellTextViewRenderer.html)'| markdownify }}</td>
+<td>{{'[GridTextColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridTextColumn.html)'| markdownify }}</td>
+<td>{{'[GridCellTextViewRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCellTextViewRenderer.html)'| markdownify }}</td>
 <td>To display string or numbers in each row.</td>
 </tr>
 <tr>
-<td>{{'[GridSwitchColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridSwitchColumn.html)'| markdownify }}</td>
-<td>{{'[GridCellSwitchRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCellSwitchRenderer.html)'| markdownify }}</td>
+<td>{{'[GridSwitchColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridSwitchColumn.html)'| markdownify }}</td>
+<td>{{'[GridCellSwitchRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCellSwitchRenderer.html)'| markdownify }}</td>
 <td>To display switch in each row.</td>
 </tr>
 <tr>
-<td>{{'[GridImageColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridImageColumn.html)'| markdownify }}</td>
-<td>{{'[GridImageCellRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridImageCellRenderer.html)'| markdownify }}</td>
+<td>{{'[GridImageColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridImageColumn.html)'| markdownify }}</td>
+<td>{{'[GridImageCellRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridImageCellRenderer.html)'| markdownify }}</td>
 <td>To display an image in each row.</td>
 </tr>
 <tr>
-<td>{{'[GridTemplateColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html)'| markdownify }}</td>
-<td>{{'[GridCellTemplateRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCellTemplateRenderer.html)'| markdownify }}</td>
+<td>{{'[GridTemplateColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html)'| markdownify }}</td>
+<td>{{'[GridCellTemplateRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCellTemplateRenderer.html)'| markdownify }}</td>
 <td>To customize the column based on the requirements.</td>
 </tr>
 <tr>
@@ -45,23 +45,23 @@ The following table describes the types of columns and its usage:
 <td>To display a numeric data.</td>
 </tr>
 <tr>
-<td>{{'[GridPickerColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn.html)'| markdownify }}</td>
+<td>{{'[GridPickerColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridPickerColumn.html)'| markdownify }}</td>
 <td>{{'[GridCellPickerRenderer](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Renderers.GridCellPickerRenderer.html)'| markdownify }}</td>
 <td>To display the IEnumerable data using Picker.</td>
 </tr>
 <tr>
-<td>{{'[GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html)'| markdownify }}</td>
-<td>{{'[GridCellComboBoxRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCellComboBoxRenderer.html)'| markdownify }}</td>
+<td>{{'[GridComboBoxColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html)'| markdownify }}</td>
+<td>{{'[GridCellComboBoxRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCellComboBoxRenderer.html)'| markdownify }}</td>
 <td>To display the IEnumerable data using Picker.</td>
 </tr>
 <tr>
-<td>{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html)'| markdownify }}</td>
+<td>{{'[GridDateTimeColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html)'| markdownify }}</td>
 <td>{{'[GridDateTimeColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.Renderers.GridCellDateTimeRenderer.html)'| markdownify }}</td>
 <td>To display the date and time value.</td>
 </tr>
 <tr>
-<td>{{'[GridUnboundColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html)'| markdownify }}</td>
-<td>{{'[GridUnboundCellTextBoxRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundCellTextBoxRenderer.html)'| markdownify }}</td>
+<td>{{'[GridUnboundColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html)'| markdownify }}</td>
+<td>{{'[GridUnboundCellTextBoxRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundCellTextBoxRenderer.html)'| markdownify }}</td>
 <td>To add additional columns that are not bound with data object from the underlying data source.</td>
 </tr>
 </table>
@@ -69,7 +69,7 @@ The following table describes the types of columns and its usage:
 
 ## GridColumn
 
-The [GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html) is the base column types of all columns. Hence its properties are used by all the columns. The following sub-sections explain the properties and customizations of GridColumn:
+The [GridColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html) is the base column types of all columns. Hence its properties are used by all the columns. The following sub-sections explain the properties and customizations of GridColumn:
 
 ### Binding options
 
@@ -352,7 +352,7 @@ dataGrid.Columns.Add (new GridTextColumn () { 
 }); 
 {% endhighlight %}
 
-For auto generated columns, this is achievable by handling the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGeneratingColumn_EV.html) event. To apply different cultures for auto generated GridColumns, follow the code example:
+For auto generated columns, this is achievable by handling the [SfDataGrid.AutoGeneratingColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event. To apply different cultures for auto generated GridColumns, follow the code example:
 
 {% highlight c# %}
 void GridAutoGeneratingColumns(object sender, AutoGeneratingColumnArgs e)
@@ -765,7 +765,7 @@ The following screenshot shows the different types of columns in the SfDataGrid:
 
 ### Edit template
 
-The `SfDataGrid` allows you to load any custom view in edit mode using the [EditTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTemplateColumn~EditTemplate.html) property.
+The `SfDataGrid` allows you to load any custom view in edit mode using the [EditTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridTemplateColumn.html#Syncfusion_SfDataGrid_XForms_GridTemplateColumn_EditTemplate) property.
 
 {% highlight xaml %}
 <ContentPage.Resources>
@@ -922,7 +922,7 @@ public partial class MainPage : ContentPage
 }
 {% endhighlight %}
 
-N> The row index of the row can also be retrieved by using the [GridTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridTapped_EV.html), [GridDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridDoubleTapped_EV.html), and [GridLongPressed events](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridLongPressed_EV.html). When using complex layout in a `DataTemplate`, set the `InputTransparent` property of the views loaded in the `DataTemplate` of the GridTemplateColumn to `True`.
+N> The row index of the row can also be retrieved by using the [GridTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html), [GridDoubleTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html), and [GridLongPressed events](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html). When using complex layout in a `DataTemplate`, set the `InputTransparent` property of the views loaded in the `DataTemplate` of the GridTemplateColumn to `True`.
 
 ### Loading DatePicker and TimePicker together
 
@@ -951,7 +951,7 @@ The following screenshot shows that how `DatePicker` and `TimePicker` are viewed
 
 ## GridDateTimeColumn
 
-The [SfDataGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html) inherits all the properties of the [SfDataGrid.GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html). It displays the date information as the content of a column. To create the `SfDataGrid.GridDateTimeColumn`, the property corresponding to the column in the underlying collection must be of type DateTime. To enable or disable editing for the particular column, set the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays a customized `DatePicker` element which is derived from the [Xamarin.Forms.DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/). The `SfDatePicker` enables to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn~MinimumDate.html) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridDateTimeColumn~MaximumDate.html) and selects one from it.
+The [SfDataGrid.GridDateTimeColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html) inherits all the properties of the [SfDataGrid.GridColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html). It displays the date information as the content of a column. To create the `SfDataGrid.GridDateTimeColumn`, the property corresponding to the column in the underlying collection must be of type DateTime. To enable or disable editing for the particular column, set the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_AllowEditing) property to true or false. In the editing mode it displays a customized `DatePicker` element which is derived from the [Xamarin.Forms.DatePicker](https://developer.xamarin.com/api/type/Xamarin.Forms.DatePicker/). The `SfDatePicker` enables to scroll through a list of dates between the [GridDateTimeColumn.MinimumDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html#Syncfusion_SfDataGrid_XForms_GridDateTimeColumn_MinimumDate) and [GridDateTimeColumn.MaximumDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridDateTimeColumn.html#Syncfusion_SfDataGrid_XForms_GridDateTimeColumn_MaximumDate) and selects one from it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1062,7 +1062,7 @@ public class ViewModel
 
 ## GridPickerColumn
 
-The [GridPickerColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn.html) inherits all the properties of the `SfDataGrid.GridColumn`. It displays a list of items in the form of a picker as the content of a column. To enable or disable editing for the particular column, set the GridColumn.AllowEditing property to true or false. In the editing mode it displays a customized `Picker` element which is derived from the [Xamarin.Forms.Picker](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/). The data source to `Picker` can be set by using the [GridPickerColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSource.html) property. The picker column can be populated with data by the following ways:
+The [GridPickerColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridPickerColumn.html) inherits all the properties of the `SfDataGrid.GridColumn`. It displays a list of items in the form of a picker as the content of a column. To enable or disable editing for the particular column, set the GridColumn.AllowEditing property to true or false. In the editing mode it displays a customized `Picker` element which is derived from the [Xamarin.Forms.Picker](https://developer.xamarin.com/api/type/Xamarin.Forms.Picker/). The data source to `Picker` can be set by using the [GridPickerColumn.ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridPickerColumn.html#Syncfusion_SfDataGrid_XForms_GridPickerColumn_ItemsSource) property. The picker column can be populated with data by the following ways:
 
  * Collection of primitive types
  * Collection of user-defined types (Custom objects)
@@ -1124,7 +1124,7 @@ public class ViewModel
 
 ### Collection of user-defined types
 
-To display a list of user-defined items in the picker drop down, create a `SfDataGrid.GridPickerColumn` and set its `ItemsSource` property to a user-defined collection. Initially, the picker column will be displayed with the values from the [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) property of the column if the [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ValueMemberPath.html) are not set.
+To display a list of user-defined items in the picker drop down, create a `SfDataGrid.GridPickerColumn` and set its `ItemsSource` property to a user-defined collection. Initially, the picker column will be displayed with the values from the [GridColumn.MappingName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_MappingName) property of the column if the [DisplayMemberPath](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridPickerColumn.html#Syncfusion_SfDataGrid_XForms_GridPickerColumn_DisplayMemberPath) and [ValueMemberPath](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridPickerColumn.html#Syncfusion_SfDataGrid_XForms_GridPickerColumn_ValueMemberPath) are not set.
 
 #### DisplayMemberPath
  
@@ -1270,11 +1270,11 @@ When edit mode is exited by selecting a value(9) from the Picker pop up, the `Gr
 
 ### Loading Different ItemSource for each row of GridPickerColumn
 
-You can load the different ItemsSource to each row of GridPickerColumn by setting [GridPickerColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSourceSelector.html) property.
+You can load the different ItemsSource to each row of GridPickerColumn by setting [GridPickerColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridPickerColumn.html#Syncfusion_SfDataGrid_XForms_GridPickerColumn_ItemsSourceSelector) property.
 
 ### Implementing IItemsSourceSelector
 
-[GridPickerColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridPickerColumn~ItemsSourceSelector.html) needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
+[GridPickerColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridPickerColumn.html#Syncfusion_SfDataGrid_XForms_GridPickerColumn_ItemsSourceSelector) needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
 
 * Record – data object associated with row.
 * Data Context – Binding context of data grid.
@@ -1343,7 +1343,7 @@ public class ItemSourceSelector : IItemsSourceSelector
 
 ## GridComboBoxColumn
 
-The [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) inherits all the properties of the [SfDataGrid.GridColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn.html). It displays a list of items in the form of a `SfComboBox` as the content of a column. To enable or disable editing for the particular column, set the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays a [SfComboBox](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox_namespace.html) element. The data source to SfComboBox can be set by using the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~AllowEditing.html) property to true or false. In the editing mode it displays a [SfComboBox](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox_namespace.html)  element. The data source to SfComboBox can be set by using the [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property. The combobox column can be populated with data by the following ways:
+The [GridComboBoxColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) inherits all the properties of the [SfDataGrid.GridColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html). It displays a list of items in the form of a `SfComboBox` as the content of a column. To enable or disable editing for the particular column, set the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_AllowEditing) property to true or false. In the editing mode it displays a [SfComboBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.html) element. The data source to SfComboBox can be set by using the [GridColumn.AllowEditing](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_AllowEditing) property to true or false. In the editing mode it displays a [SfComboBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.html)  element. The data source to SfComboBox can be set by using the [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_ItemsSource) property. The combobox column can be populated with data by the following ways:
 
 * Collection of primitive types
 * Collection of user-defined types (Custom objects)
@@ -1352,7 +1352,7 @@ The [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 
 ### Collection of primitive types
 
-To display the collection of items in the comboBox drop down, create a [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) and set its [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property to a simple collection. 
+To display the collection of items in the comboBox drop down, create a [GridComboBoxColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) and set its [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_ItemsSource) property to a simple collection. 
 
 To load the `GridComboBoxColumn` with a simple string collection, follow the code example:
 
@@ -1405,13 +1405,13 @@ public class ViewModel
 
 ### Collection of user-defined types
 
-To display a list of user-defined items in the combo-box drop down, create a [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) and set its [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSource.html) property to a user-defined collection. Initially, the combo-box column will be displayed with the values from the [GridColumn.MappingName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MappingName.html) property of the column if the [DisplayMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~DisplayMemberPath.html) and [ValueMemberPath](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ValueMemberPath.html) are not set.
+To display a list of user-defined items in the combo-box drop down, create a [GridComboBoxColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) and set its [GridComboBoxColumn.ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_ItemsSource) property to a user-defined collection. Initially, the combo-box column will be displayed with the values from the [GridColumn.MappingName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_MappingName) property of the column if the [DisplayMemberPath](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_DisplayMemberPath) and [ValueMemberPath](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_ValueMemberPath) are not set.
 
 For more details about the DisplayMemberPath and ValueMemberPath, Please refer [here](https://help.syncfusion.com/xamarin/sfdatagrid/column-types#collection-of-user-defined-types).
 
 ### Customizing GridComboBoxColumn
 
-Editable element of the [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) can be Customizing by using the custom [GridCellComboBoxRenderer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCellComboBoxRenderer.html).
+Editable element of the [GridComboBoxColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) can be Customizing by using the custom [GridCellComboBoxRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCellComboBoxRenderer.html).
 
 Replace the default renderer with custom renderer in the SfDataGrid.CellRenderers collection.
 
@@ -1435,11 +1435,11 @@ public class CustomComboBoxRenderer : GridCellComboBoxRenderer
 
 ### Loading Different ItemSource for each row of GridComboBoxColumn
 
-You can load the different ItemsSource to each row of GridComboBoxColumn by setting [GridComboBoxColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSourceSelector.html) property.
+You can load the different ItemsSource to each row of GridComboBoxColumn by setting [GridComboBoxColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_ItemsSourceSelector) property.
 
 ### Implementing IItemsSourceSelector
 
-[GridComboBoxColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~ItemsSourceSelector.html) needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
+[GridComboBoxColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_ItemsSourceSelector) needs to implement IItemsSourceSelector interface which requires you to implement GetItemsSource method which receives the below parameters,
 
 * Record – data object associated with row.
 * Data Context – Binding context of data grid.
@@ -1507,9 +1507,9 @@ public class ItemSourceSelector : IItemsSourceSelector
 ![DataGrid with Customizing comboBox column](SfDataGrid_images/GridItemsSourceSelector.png)
 
 ### Editing the combo box
-The [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) supports both editable and non-editable text box to choose selected items in given data source. Users can select one item from the suggestion list.
+The [GridComboBoxColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) supports both editable and non-editable text box to choose selected items in given data source. Users can select one item from the suggestion list.
 
-[IsEditableMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~IsEditableMode.html) property is used to enable the user input in [GridComboBoxColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html). The default value is `false`.
+[IsEditableMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_IsEditableMode) property is used to enable the user input in [GridComboBoxColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html). The default value is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1548,7 +1548,7 @@ dataGrid.Columns.Add(comboBoxColumn);
 
 ### Auto completing on edit mode
 
-The auto completion on the edit mode can be enabled by using the [GridComboBoxColumn.AutoCompleteMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~AutoCompleteMode.html) property. Default value is Suggest. Following types of auto complete modes are available,
+The auto completion on the edit mode can be enabled by using the [GridComboBoxColumn.AutoCompleteMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_AutoCompleteMode) property. Default value is Suggest. Following types of auto complete modes are available,
 
 * Append
 * Suggest
@@ -1593,7 +1593,7 @@ dataGrid.Columns.Add(comboBoxColumn);
 
 ### Auto suggesting on edit mode
 
-By default, auto suggestion in the dropdown will display the value based on the [StartsWith](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SuggestionMode.html) filter condition. This can be changed to retrieve the matches with the Contains condition by using the [SuggestionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridComboBoxColumn~SuggestionMode.html) property.
+By default, auto suggestion in the dropdown will display the value based on the [StartsWith](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionMode.html) filter condition. This can be changed to retrieve the matches with the Contains condition by using the [SuggestionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_SuggestionMode) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1638,7 +1638,7 @@ dataGrid.Columns.Add(comboBoxColumn);
 
 ## GridNumericColumn
 
-The [GridNumericColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn.html) inherits all the properties of `GridColumn`. It is used to display numeric data. To create `GridNumericColumn`, the property corresponding to the column in the underlying collection must be a numeric type(int, double, float, etc.). To enable or disable editing a particular column, set the [GridColumn.AllowEditing](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditingProperty.html) property to true or false. In the editing mode it displays the [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/sfnumerictextbox) element from the [View](https://developer.xamarin.com/api/type/Xamarin.Forms.View/). To create a `GridNumericColumn`, follow the code example:
+The [GridNumericColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridNumericColumn.html) inherits all the properties of `GridColumn`. It is used to display numeric data. To create `GridNumericColumn`, the property corresponding to the column in the underlying collection must be a numeric type(int, double, float, etc.). To enable or disable editing a particular column, set the [GridColumn.AllowEditing](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowEditingProperty.html) property to true or false. In the editing mode it displays the [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/sfnumerictextbox) element from the [View](https://developer.xamarin.com/api/type/Xamarin.Forms.View/). To create a `GridNumericColumn`, follow the code example:
 
 {% tabs %}
 {% highlight xaml %}
@@ -1673,13 +1673,13 @@ dataGrid.Columns.Add(numericColumn);
 
 The`GridNumericColumn` allows formatting the numeric data with culture-specific information.
 
-* [NumberDecimalDigits](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberDecimalDigits.html): To change the number of decimal digits to be displayed after the decimal point, use the `GridNumericColumn.NumberDecimalDigits` property.
-* [NumberDecimalSeparator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberDecimalSeparator.html): By default, the dot(.) operator separates the decimal part of numeric value. Any operator can be used as decimal separator using the `GridNumericColumn.NumberDecimalSeparator` property.
-* [NumberGroupSeparator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberGroupSeparator.html): By default, the comma(,) separates group of digits before the decimal point. Any operator can be used as group separator using the `GridNumericColumn.NumberGroupSeparator` property.
-* [NumberGroupSizes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberGroupSizes.html): To change the number of digits in each group before the decimal point on numeric values, use the `GridNumericColumn.NumberGroupSizes` property.
-* [NumberNegativePattern](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn~NumberNegativePattern.html): To format the pattern of negative numeric values, use `GridNumericColumn.NumberNegativePattern`.
-* [MinValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridEditorColumn~MinValue.html): To set the minimum value for the numeric column, use the `GridNumericColumn.MinValue` property.
-* [MaxValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridEditorColumn~MaxValue.html): To set the maximum value for the numeric column, use the `GridNumericColumn.MaxValue` property.
+* [NumberDecimalDigits](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridNumericColumn.html#Syncfusion_SfDataGrid_XForms_GridNumericColumn_NumberDecimalDigits): To change the number of decimal digits to be displayed after the decimal point, use the `GridNumericColumn.NumberDecimalDigits` property.
+* [NumberDecimalSeparator](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridNumericColumn.html#Syncfusion_SfDataGrid_XForms_GridNumericColumn_NumberDecimalSeparator): By default, the dot(.) operator separates the decimal part of numeric value. Any operator can be used as decimal separator using the `GridNumericColumn.NumberDecimalSeparator` property.
+* [NumberGroupSeparator](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridNumericColumn.html#Syncfusion_SfDataGrid_XForms_GridNumericColumn_NumberGroupSeparator): By default, the comma(,) separates group of digits before the decimal point. Any operator can be used as group separator using the `GridNumericColumn.NumberGroupSeparator` property.
+* [NumberGroupSizes](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridNumericColumn.html#Syncfusion_SfDataGrid_XForms_GridNumericColumn_NumberGroupSizes): To change the number of digits in each group before the decimal point on numeric values, use the `GridNumericColumn.NumberGroupSizes` property.
+* [NumberNegativePattern](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridNumericColumn.html#Syncfusion_SfDataGrid_XForms_GridNumericColumn_NumberNegativePattern): To format the pattern of negative numeric values, use `GridNumericColumn.NumberNegativePattern`.
+* [MinValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridEditorColumn.html#Syncfusion_SfDataGrid_XForms_GridEditorColumn_MinValue): To set the minimum value for the numeric column, use the `GridNumericColumn.MinValue` property.
+* [MaxValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridEditorColumn.html#Syncfusion_SfDataGrid_XForms_GridEditorColumn_MaxValue): To set the maximum value for the numeric column, use the `GridNumericColumn.MaxValue` property.
 
 
 ![DataGrid with editing in numeric column](SfDataGrid_images/Editing_NumericColumn_Forms.png)

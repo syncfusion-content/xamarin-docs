@@ -11,9 +11,9 @@ documentation: UG
 
 ## Auto-generating DataFormItems for the data field
 
-By default, the [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItems.html) will be generated based on the property type. For example, the [DataFormNumericItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormNumericItem.html) will be created for the `int` type property. 
+By default, the [DataFormItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItems.html) will be generated based on the property type. For example, the [DataFormNumericItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormNumericItem.html) will be created for the `int` type property. 
 
-The [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) generation depends on the type and attribute defined for the property.
+The [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html) generation depends on the type and attribute defined for the property.
 The following tables lists the several types of `DataFormItem` and its constraints for auto generation:
 
 <table>
@@ -24,7 +24,7 @@ The following tables lists the several types of `DataFormItem` and its constrain
 </tr>
 <tr>
 <td>
-{{'[DataFormTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTextItem.html)'| markdownify }}
+{{'[DataFormTextItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormTextItem.html)'| markdownify }}
 </td>
 <td>
 Text
@@ -36,7 +36,7 @@ Default DataFormItem generated for the String type and the properties with [Data
 </tr>
 <tr>
 <td>
-{{'[DataFormNumericItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormNumericItem.html)'| markdownify }}
+{{'[DataFormNumericItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormNumericItem.html)'| markdownify }}
 </td>
 <td>
 Numeric
@@ -48,7 +48,7 @@ Generated for Int, Double, Float, Decimal, Long types and also its nullable prop
 </tr>
 <tr>
 <td>
-{{'[DataFormDateItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDateItem.html)'| markdownify }}
+{{'[DataFormDateItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormDateItem.html)'| markdownify }}
 </td>
 <td>
 Date
@@ -60,7 +60,7 @@ Generated for DateTime type and properties with [DataType(DataType.Date)] and [D
 </tr>
 <tr>
 <td>
-{{'[DataFormTimeItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTimeItem.html)'| markdownify }}
+{{'[DataFormTimeItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormTimeItem.html)'| markdownify }}
 </td>
 <td>
 Time
@@ -72,7 +72,7 @@ Generated for the property with [DataType(DataType.Time)] attribute.
 </tr>
 <tr>
 <td>
-{{'[DataFormPickerItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormPickerItem.html)'| markdownify }}
+{{'[DataFormPickerItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormPickerItem.html)'| markdownify }}
 </td>
 <td>
 Picker
@@ -83,7 +83,7 @@ Generated for Enum type property and the property with [EnumDataTypeAttribute] a
 </tr>
 <tr>
 <td>
-{{'[DataFormDropDownItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormDropDownItem.html)'| markdownify }}
+{{'[DataFormDropDownItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormDropDownItem.html)'| markdownify }}
 </td>
 <td>
 DropDown
@@ -93,7 +93,7 @@ Generated for Enum type property and the property with [EnumDataTypeAttribute] a
 </td>
 </tr><tr>
 <td>
-{{'[DataFormAutoCompleteItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormAutoCompleteItem.html)'| markdownify }}
+{{'[DataFormAutoCompleteItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormAutoCompleteItem.html)'| markdownify }}
 </td>
 <td>
 AutoComplete
@@ -104,7 +104,7 @@ Generated for Enum type property and the property with [EnumDataTypeAttribute] a
 </tr>
 <tr>
 <td>
-{{'[DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html)'| markdownify }}
+{{'[DataFormMaskedEditTextItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html)'| markdownify }}
 </td>
 <td>
 MaskedEditText
@@ -116,7 +116,7 @@ Generated for the PhoneNumber type property.
 </tr>
 <tr>
 <td>
-{{'[DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html)'| markdownify }}
+{{'[DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html)'| markdownify }}
 </td>
 <td>
 CheckBox
@@ -127,11 +127,11 @@ Bool type
 </tr>
 </table>
 
-You can customize the property settings or cancel the generation of `DataFormItem` by handling the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~AutoGeneratingDataFormItem_EV.html) event.
+You can customize the property settings or cancel the generation of `DataFormItem` by handling the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) event.
 
 ## Customize auto generated fields
 
-You can customize or cancel the generated `DataFormItem` by handling the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~AutoGeneratingDataFormItem_EV.html) event. This event occurs when the field is auto-generated for public and non-static property of the data object.
+You can customize or cancel the generated `DataFormItem` by handling the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) event. This event occurs when the field is auto-generated for public and non-static property of the data object.
 
 {% tabs %}
 {% highlight xaml %}
@@ -158,11 +158,11 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
-[AutoGeneratingDataFormItemEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.AutoGeneratingDataFormItemEventArgs.html) provides the information about the auto-generated.  [AutoGeneratingDataFormItemEventArgs.DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.AutoGeneratingDataFormItemEventArgs~DataFormItem.html)  property returns the newly created `DataFormItem`.
+[AutoGeneratingDataFormItemEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.AutoGeneratingDataFormItemEventArgs.html) provides the information about the auto-generated.  [AutoGeneratingDataFormItemEventArgs.DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.AutoGeneratingDataFormItemEventArgs.html#Syncfusion_XForms_DataForm_AutoGeneratingDataFormItemEventArgs__ctor_Syncfusion_XForms_DataForm_DataFormItem_)  property returns the newly created `DataFormItem`.
 
 ## Cancel DataFormItem generation of the data field
 
-You can cancel the specific [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) adding to the data form by handling the `AutoGeneratingDataFormItem` event or by defining display attribute to avoid the particular data field being displayed.
+You can cancel the specific [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html) adding to the data form by handling the `AutoGeneratingDataFormItem` event or by defining display attribute to avoid the particular data field being displayed.
 
 ### Using attributes
 
@@ -205,7 +205,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Changing editor type
 
-You can change the editor of the [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) in the `AutoGeneratingDataFormItem` event.
+You can change the editor of the [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html) in the `AutoGeneratingDataFormItem` event.
 
 In the following code, the editor is changed for `IsAvailable` field from `Bool` to `Switch`.
 
@@ -223,7 +223,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Changing property settings
 
-You can change the property of [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) in the `AutoGeneratingDataFormItem` event.
+You can change the property of [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html) in the `AutoGeneratingDataFormItem` event.
 
 Here, `Salary` data field is restricted from being edited in the data form.
 
@@ -244,7 +244,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Changing DataFormItem visibility
 
-You can change the [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) visibility by using the [IsVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~IsVisible.html) property in the `DataFormItem`.
+You can change the [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html) visibility by using the [IsVisible](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItemBase.html#Syncfusion_XForms_DataForm_DataFormItemBase_IsVisible) property in the `DataFormItem`.
 
 Here, `Salary` data field will be hidden.
 
@@ -265,7 +265,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ### Changing DataFormItem FontSize
 
-Using the [EditorFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~EditorFontSize.html), [LabelFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemBase~LabelFontSize.html), and [ValidationLabelFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~ValidationLabelFontSize.html) properties from `DataFormItem`, you can define the font size of the `Editor`, `Label`, and `ValidationLabel`. Changing the font size will be handled in the `AutoGeneratingDataFormItem` event.
+Using the [EditorFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html#Syncfusion_XForms_DataForm_DataFormItem_EditorFontSize), [LabelFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItemBase.html#Syncfusion_XForms_DataForm_DataFormItemBase_LabelFontSize), and [ValidationLabelFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html#Syncfusion_XForms_DataForm_DataFormItem_ValidationLabelFontSize) properties from `DataFormItem`, you can define the font size of the `Editor`, `Label`, and `ValidationLabel`. Changing the font size will be handled in the `AutoGeneratingDataFormItem` event.
 
 You can define the font size as described as follows.
       
@@ -300,7 +300,7 @@ You can display the watermark in the editor by defining the display attribute or
 
 ### Using attribute
 
-You can show the watermark in the editor by setting the [Prompt](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayAttribute~Prompt.html) in display attribute.
+You can show the watermark in the editor by setting the [Prompt](https://help.syncfusion.com/cr/xamarin/) in display attribute.
 
 {% tabs %}
 {% highlight c# %}
@@ -319,7 +319,7 @@ public string MiddleName
 
 ### Using event
 
-You can show the watermark in the editor by using the [PlaceHolderText](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~PlaceHolderText.html) property in [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html).
+You can show the watermark in the editor by using the [PlaceHolderText](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html#Syncfusion_XForms_DataForm_DataFormItem_PlaceHolderText) property in [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html).
 
 {% tabs %}
 {% highlight c# %}
@@ -338,9 +338,9 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Changing DataFormItem
 
-You can change the created [DataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem.html) and assign new `DataFormItem` in the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~AutoGeneratingDataFormItem_EV.html) event.
+You can change the created [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html) and assign new `DataFormItem` in the [AutoGeneratingDataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html) event.
 
-Here, [DataFormTextItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormTextItem.html) with number keyboard is loaded for numeric value instead of `DataFormNumericItem`.
+Here, [DataFormTextItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormTextItem.html) with number keyboard is loaded for numeric value instead of `DataFormNumericItem`.
 
 {% highlight c# %}
 dataForm.AutoGeneratingDataFormItem += DataForm_AutoGeneratingDataFormItem;
@@ -357,7 +357,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ## Adding or removing the data field displayed in the dataForm at runtime
 
-If you want to remove or add data fields item at runtime, you can use the [RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RefreshLayout.html) method which auto-generates the DataFormItem where you can skip certain item from display. By default, it will generate the canceled items initially. If you want to regenerate all the items, you should pass argument as `true`.
+If you want to remove or add data fields item at runtime, you can use the [RefreshLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_RefreshLayout_System_Boolean_) method which auto-generates the DataFormItem where you can skip certain item from display. By default, it will generate the canceled items initially. If you want to regenerate all the items, you should pass argument as `true`.
 
 In the following code snippet, items are auto generated based on `refreshLayout` flag where you can change flag at runtime and call `RefreshLayout` method to add or remove items being displayed in the data form at runtime.
 
@@ -409,7 +409,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ![Initial rendering of data form items in Xamarin.Forms DataForm](SfDataForm_images/MoreFieldsOnLoad.png)
 
-If you want to generate the MiddleName and LastName fields at runtime, you should set `refreshLayout` flag to `true` and call the [RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RefreshLayout.html) method which triggers `AutoGeneratingDataFormItem` event again and generates the items based on `refreshLayout` flag.
+If you want to generate the MiddleName and LastName fields at runtime, you should set `refreshLayout` flag to `true` and call the [RefreshLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_RefreshLayout_System_Boolean_) method which triggers `AutoGeneratingDataFormItem` event again and generates the items based on `refreshLayout` flag.
 
 {% tabs %}
 {% highlight c# %}
@@ -425,7 +425,7 @@ Here, the MiddleName and LastName fields are generated at runtime after clicking
 
 ![Adding data form fields at run time in Xamarin.Forms DataForm](SfDataForm_images/MoreFieldsAdd.png)
 
-The`GroupName`field is displayed initially in the data form. If you want to remove it at runtime, you should set refreshLayout flag to true and pass the argument as true in[RefreshLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~RefreshLayout.html) method. It triggers `AutoGeneratingDataFormItem` event for all the fields where you can cancel `GroupName’ field item generation.
+The`GroupName`field is displayed initially in the data form. If you want to remove it at runtime, you should set refreshLayout flag to true and pass the argument as true in[RefreshLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_RefreshLayout_System_Boolean_) method. It triggers `AutoGeneratingDataFormItem` event for all the fields where you can cancel `GroupName’ field item generation.
 
 {% tabs %}
 {% highlight c# %}
@@ -445,13 +445,13 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ## DataFormItemManager
 
-The [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager.html) creates [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItems.html) collection and handles value reflection and validation. It also overrides to handle the get and set property values from and to the data object.
+The [DataFormItemManager](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItemManager.html) creates [DataFormItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItems.html) collection and handles value reflection and validation. It also overrides to handle the get and set property values from and to the data object.
 
 ### Manually generate DataFormItems for DataObject
 
-By default, [DataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItems.html) will be generated based on DataObject. If you need to generate `DataFormItems` manually, override the [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ItemManager.html).
+By default, [DataFormItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItems.html) will be generated based on DataObject. If you need to generate `DataFormItems` manually, override the [DataFormItemManager](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItemManager.html) class and set it to [SfDataForm.ItemManager](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_ItemManager).
 
-To create `DataFormItems`, override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~GenerateDataFormItems.html) method.
+To create `DataFormItems`, override the [GenerateDataFormItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItemManager.html#Syncfusion_XForms_DataForm_DataFormItemManager_GenerateDataFormItems_Syncfusion_XForms_DataForm_PropertyInfoCollection_System_Collections_Generic_List_Syncfusion_XForms_DataForm_DataFormItemBase__) method.
 
 {% highlight c# %}
 
@@ -492,7 +492,7 @@ You can download the source code of this demo from [GenerateDataFormItemsForData
 
 ### Manually generate DataFormItems for data dictionary
 
-You can load the dataform with custom dictionary by generating DataFormItems manually. To create `DataFormItems` from dictionary, override the [GenerateDataFormItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~GenerateDataFormItems.html) method.
+You can load the dataform with custom dictionary by generating DataFormItems manually. To create `DataFormItems` from dictionary, override the [GenerateDataFormItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItemManager.html#Syncfusion_XForms_DataForm_DataFormItemManager_GenerateDataFormItems_Syncfusion_XForms_DataForm_PropertyInfoCollection_System_Collections_Generic_List_Syncfusion_XForms_DataForm_DataFormItemBase__) method.
 
 {% highlight c# %}
 
@@ -535,7 +535,7 @@ public class DataFormItemManagerExt : DataFormItemManager
 
 #### Handling reading and writing values to and from the dictionary
 
-By default, the dictionary value will be shown in corresponding editor and value changes in editor will be committed again in dictionary value by using the [GetValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~GetValue.html) and [SetValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager~SetValue.html) override methods in [DataFormItemManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItemManager.html).
+By default, the dictionary value will be shown in corresponding editor and value changes in editor will be committed again in dictionary value by using the [GetValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItemManager.html#Syncfusion_XForms_DataForm_DataFormItemManager_GetValue_Syncfusion_XForms_DataForm_DataFormItem_) and [SetValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItemManager.html#Syncfusion_XForms_DataForm_DataFormItemManager_SetValue_Syncfusion_XForms_DataForm_DataFormItem_System_Object_) override methods in [DataFormItemManager](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItemManager.html).
 
 Here, the value is read and written from/to dictionary instead of the data object.
 
@@ -721,7 +721,7 @@ You can download the sample from [here](http://www.syncfusion.com/downloads/supp
 
 ## Adding custom DataFormItems
 
-Support has been provided to generate custom DataFormItems for the defined business model using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of the `SfDataForm` class. You need to set the [AutoGenerateItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~AutoGenerateItems.html) property to false to restrict the auto generation of DataFormItems. 
+Support has been provided to generate custom DataFormItems for the defined business model using the [Items](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Items) property of the `SfDataForm` class. You need to set the [AutoGenerateItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_AutoGenerateItems) property to false to restrict the auto generation of DataFormItems. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -811,7 +811,7 @@ dataForm.Items = items;
 {% endtabs %}
 
 ### Dynamically add custom dataform items
-Support has been provided to dynamically add the dataform items to collections using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+Support has been provided to dynamically add the dataform items to collections using the [Items](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Items) property of `SfDataForm`.
 
 {% tabs %}
 {% highlight c# %}
@@ -832,7 +832,7 @@ dataForm.Items.Add(new DataFormItem()
 ![Adding data form items in Xamarin.Forms DataForm](SfDataForm_images/AddCustomItems.gif)
 
 ### Dynamically remove custom dataform items
-Support has been provided to dynamically remove the dataform items from collections using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+Support has been provided to dynamically remove the dataform items from collections using the [Items](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Items) property of `SfDataForm`.
 
 {% tabs %}
 {% highlight c# %}
@@ -843,7 +843,7 @@ dataForm.Items.RemoveAt(2);
 ![Removing data form items in Xamarin.Forms DataForm](SfDataForm_images/RemoveCustomItems.gif)
 
 ### Dynamically clear custom dataform items
-Support has been provided to dynamically clear the dataform items using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+Support has been provided to dynamically clear the dataform items using the [Items](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Items) property of `SfDataForm`.
 
 {% tabs %}
 {% highlight c# %}
@@ -854,7 +854,7 @@ dataForm.Items.Clear();
 ![Clear data form items in Xamarin.Forms DataForm](SfDataForm_images/ClearCustomItems.gif)
 
 ### Dynamically reset custom dataform items
-Support has been provided to reset the dataform items using the [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+Support has been provided to reset the dataform items using the [Items](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Items) property of `SfDataForm`.
 
 {% tabs %}
 {% highlight c# %}
@@ -866,7 +866,7 @@ dataForm.Items[2] = item;
 
 
 ### Dynamically add custom dataform group items
-Support has been provided to dynamically add custom group items using [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Items.html) property of `SfDataForm`.
+Support has been provided to dynamically add custom group items using [Items](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Items) property of `SfDataForm`.
 {% tabs %}
 {% highlight c# %}
 DataFormGroupItem dataFormGroupItem = new DataFormGroupItem();

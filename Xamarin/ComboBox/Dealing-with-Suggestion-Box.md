@@ -343,7 +343,7 @@ Content = layout;
 ## Retrieve the filter suggestion items
 
 There are two ways to get the filtered suggestion items from SfComboBox. 
-You can use the [`FilteredItems`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FilteredItems.html) API in SfComboBox to access filtered suggestions items. You can get the filtered items when [`IsEditableMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~IsEditableMode.html) is true and [`AllowFiltering`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~AllowFiltering.html) is true.
+You can use the [`FilteredItems`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_FilteredItems) API in SfComboBox to access filtered suggestions items. You can get the filtered items when [`IsEditableMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_IsEditableMode) is true and [`AllowFiltering`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_AllowFiltering) is true.
 
 {% tabs %}
 
@@ -555,7 +555,7 @@ namespace SfComboBox_Sample
 {% endhighlight %}
 {% endtabs %}
 
-The other way to get a filtered suggestion item is an event called [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FilterCollectionChanged_EV.html). This event is triggered when the SfComboBox suggestions have been changed. You can get the filtered items from the [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FilterCollectionChanged_EV.html)   event value argument.
+The other way to get a filtered suggestion item is an event called [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html). This event is triggered when the SfComboBox suggestions have been changed. You can get the filtered items from the [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html)   event value argument.
 
 <table>
 <tr>
@@ -568,7 +568,7 @@ The other way to get a filtered suggestion item is an event called [`FilterColle
 </tr>
 </table>
 
-The following code snippet describes how to trigger an event called [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfComboBox.XForms~Syncfusion.XForms.ComboBox.SfComboBox~FilterCollectionChanged_EV.html).
+The following code snippet describes how to trigger an event called [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html).
 
 {% tabs %}
 

@@ -9,7 +9,7 @@ keywords: mask, SfMaskedEdit, maskededit
 ---
 # Hiding Prompt Characters
 
-When the [`HidePromptOnLeave`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~HidePromptOnLeave.html) property is set to true, prompt characters are ignored when control loses focus. Again, the prompt characters are restored when the control is focused.
+When the [`HidePromptOnLeave`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_HidePromptOnLeave) property is set to true, prompt characters are ignored when control loses focus. Again, the prompt characters are restored when the control is focused.
 
 {% tabs %}
 {% highlight xaml %}

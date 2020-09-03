@@ -266,14 +266,14 @@ SfSchedule Schedule = new SfSchedule();
 schedule.ScheduleView = ScheduleView.MonthView;
 Schedule.ShowAppointmentsInline = true;
 MonthViewSettings monthViewSettings = new MonthViewSettings();
-    monthViewSettings.AgendaItemTemplate = new DataTemplate(() =>
-    {
-        var label = new Label();
-        label.SetBinding(Label.TextProperty, "EventName");
-        label.TextColor = Color.White;
-        label.BackgroundColor = Color.Purple;
-        return label;
-    });
+monthViewSettings.AgendaItemTemplate = new DataTemplate(() =>
+{
+    var label = new Label();
+    label.SetBinding(Label.TextProperty, "EventName");
+    label.TextColor = Color.White;
+    label.BackgroundColor = Color.Purple;
+    return label;
+});
 Schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}

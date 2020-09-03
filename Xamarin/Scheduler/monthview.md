@@ -254,7 +254,7 @@ You can customize the inline items using the [AgendaItemTemplate](https://help.s
 		<schedule:MonthViewSettings>
 			<schedule:MonthViewSettings.AgendaItemTemplate>
 				<DataTemplate>
-					<Button BackgroundColor="Purple" Text="Template" TextColor="White" />
+					<Label BackgroundColor="Purple" Text="{Binding EventName}" TextColor="White" />
 				</DataTemplate>
 			</schedule:MonthViewSettings.AgendaItemTemplate>
 		</schedule:MonthViewSettings>
@@ -278,6 +278,8 @@ monthViewSettings.AgendaItemTemplate = new DataTemplate(() =>
 Schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
+
+Download the entire source code from GitHub here.
 
 ### Agenda item height
 You can customize the agenda view appointment height by setting the [ItemHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~ItemHeight.html) in [AgendaViewStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewStyle.html) property of `MonthViewSettings`.

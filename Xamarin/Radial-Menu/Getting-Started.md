@@ -58,7 +58,7 @@ I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the tria
 
 ### Additional step for iOS
 
-To launch [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) in iOS, call `SfRadialMenuRenderer.Init()` in the `FinishedLaunching` overridden method of the `AppDelegate` class in the iOS project as demonstrated in the following code example.
+To launch [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) in iOS, call `SfRadialMenuRenderer.Init()` in the `FinishedLaunching` overridden method of the `AppDelegate` class in the iOS project as demonstrated in the following code example.
 
 {% highlight c# %}
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
@@ -73,7 +73,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Additional step for UWP 
 
-This step is required only if the application is deployed in release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested workaround. The following code example demonstrates how to initialize the [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) assembly.
+This step is required only if the application is deployed in release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested workaround. The following code example demonstrates how to initialize the [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) assembly.
 
 {% highlight c# %}
 
@@ -99,7 +99,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Creating a simple radial menu
 
-The [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) control is configured entirely in C# code or in XAML markup. The following steps explain how to create [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) and configure its elements:
+The [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) control is configured entirely in C# code or in XAML markup. The following steps explain how to create [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) and configure its elements:
 
 ### Create the project
 

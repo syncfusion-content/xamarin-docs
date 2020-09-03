@@ -15,7 +15,7 @@ The `TickSettings` property helps you to identify the gauge’s data value by ma
 
 ## Show ticks for scale
 
-The [`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ShowTicks.html) property allows you to enable or disable the ticks of circular gauge.
+The [`ShowTicks`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_ShowTicks) property allows you to enable or disable the ticks of circular gauge.
 
 {% tabs %}
 
@@ -48,9 +48,9 @@ The [`ShowTicks`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.S
 
 ## Ticks customization 
 
-The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~Interval.html) property is used to calculate the tick counts for a scale. Similar to ticks, minor ticks are calculated by using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~MinorTicksPerInterval.html) property.
+The [`Interval`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_Interval) property is used to calculate the tick counts for a scale. Similar to ticks, minor ticks are calculated by using the [`MinorTicksPerInterval`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_MinorTicksPerInterval) property.
 
-Color and thickness of the tick are set by using the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~Color.html) and [`Thickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~Thickness.html) UI properties. You can also customize the length of the ticks by using the  [`Length`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~Length.html) property. First, you should set the `Offset` property for ticks, then increase the length of the ticks.
+Color and thickness of the tick are set by using the [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.TickSettings.html#Syncfusion_SfGauge_XForms_TickSettings_Color) and [`Thickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.TickSettings.html#Syncfusion_SfGauge_XForms_TickSettings_Thickness) UI properties. You can also customize the length of the ticks by using the  [`Length`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.TickSettings.html#Syncfusion_SfGauge_XForms_TickSettings_Length) property. First, you should set the `Offset` property for ticks, then increase the length of the ticks.
 
 ## Customize major ticks for scale
 
@@ -144,8 +144,8 @@ Color and thickness of the tick are set by using the [`Color`](https://help.sync
 
 The major and minor ticks can be positioned far away from the rim by using the following two ways:
 
-1.[`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~Offset.html) property. 
-2.[`StartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~StartOffset.html) and [`EndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.TickSettings~EndOffset.html) properties.
+1.[`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.TickSettings.html#Syncfusion_SfGauge_XForms_TickSettings_Offset) property. 
+2.[`StartOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.TickSettings.html#Syncfusion_SfGauge_XForms_TickSettings_StartOffset) and [`EndOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.TickSettings.html#Syncfusion_SfGauge_XForms_TickSettings_EndOffset) properties.
 
 ### Setting offset for scale
 

@@ -12,7 +12,7 @@ documentation: ug
 
 ## Clicked event
 
-The click event occurs when the [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html) is clicked. The event argument is of type `EventArgs`.
+The click event occurs when the [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html) is clicked. The event argument is of type `EventArgs`.
 
 {% tabs %}
 {% highlight xaml %}

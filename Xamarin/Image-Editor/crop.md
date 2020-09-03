@@ -22,7 +22,7 @@ Cropping operation can be done in the following two ways:
 
 ### Handling the cropping tool
 
-The [`ToggleCropping`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~ToggleCropping.html) method in the image editor control allows users to enable or disable the cropping region placed over the image to visually choose the area for cropping.
+The [`ToggleCropping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ToggleCropping) method in the image editor control allows users to enable or disable the cropping region placed over the image to visually choose the area for cropping.
 
 * The following code shows cropping the image to any desired size.
 
@@ -74,7 +74,7 @@ editor.ToggleCropping(rect);
 
 {% endhighlight %} 
 
-After the cropping area has been selected, the [`Crop`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~Crop.html) method is called, which in turn crops the selected region and displays the cropped image on the image editor.
+After the cropping area has been selected, the [`Crop`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_Crop_Xamarin_Forms_Rectangle_) method is called, which in turn crops the selected region and displays the cropped image on the image editor.
 
 {% highlight C# %}
 

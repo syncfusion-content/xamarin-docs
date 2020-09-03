@@ -13,14 +13,14 @@ This section explains how to perform selection and its related operations in the
 
 ## UI selection
 
-The SfListView allows selecting items either programmatically or touch interactions by setting the [SfListView.SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionMode.html) property value to other than `None`. The control has different selection modes to perform selection operations listed as follows:
+The SfListView allows selecting items either programmatically or touch interactions by setting the [SfListView.SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionMode) property value to other than `None`. The control has different selection modes to perform selection operations listed as follows:
 
  * None: Allows disabling selection.
  * Single: Allows selecting single item only. When clicking the selected item, selection not will not be cleared. This is the default value for `SfListView.SelectionMode`.
  * SingleDeselect: Allows selecting single item only. When clicking the selected item, selection gets cleared.
  * Multiple: Allows selecting more than one item. Selection is not cleared when selecting more than one items. When clicking the selected item, selection gets cleared.
 
-The SfListView allows selecting items on different gestures such as tap, double tap, and hold by setting the [SfListView.SelectionGesture](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionGesture.html). The default value for the `SfListView.SelectionGesture` is [TouchGesture.Tap](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.TouchGesture.html).
+The SfListView allows selecting items on different gestures such as tap, double tap, and hold by setting the [SfListView.SelectionGesture](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionGesture). The default value for the `SfListView.SelectionGesture` is [TouchGesture.Tap](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.TouchGesture.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -38,7 +38,7 @@ listView.SelectionGesture = TouchGesture.Hold;
 
 ## Programmatic selection
 
-When the [SfListView.SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionMode.html) is other than `None`, the item or items in the SfListView can be selected from the code by setting the [SfListView.SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html), or adding items to the [SfListView.SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property based on the `SfListView.SelectionMode`.
+When the [SfListView.SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionMode) is other than `None`, the item or items in the SfListView can be selected from the code by setting the [SfListView.SelectedItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectedItem), or adding items to the [SfListView.SelectedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectedItems) property based on the `SfListView.SelectionMode`.
 
 When the selection mode is `Single`, programmatically select an item by setting the underlying object to the `SfListView.SelectedItem` property. 
 
@@ -59,7 +59,7 @@ listView.SelectedItems.Add (viewModel.Items[5]);
 {% endhighlight %}
 {% endtabs %}
 
-All items of the SfListView can be selected using the [SelectAll](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectAll.html) method.
+All items of the SfListView can be selected using the [SelectAll](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectAll) method.
 
 {% tabs %}
 {% highlight c# %} 
@@ -74,11 +74,11 @@ However, get the notification from the SelectedItems collection changed event, w
 
 ### Get selected items
 
-The SfListView gets all the selected items through the [SfListView.SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) property  and gets the single item by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) property.
+The SfListView gets all the selected items through the [SfListView.SelectedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectedItems) property  and gets the single item by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectedItem) property.
 
 ### Clear selected items
 
-The selected items can be cleared by calling the [SelectedItems.Clear()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) method.
+The selected items can be cleared by calling the [SelectedItems.Clear()](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectedItems) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -88,13 +88,13 @@ listView.SelectedItems.Clear();
 
 ### CurrentItem vs SelectedItem
 
-The SfListView gets the selected item by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) and [SfListView.CurrentItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~CurrentItem.html) properties. Both `SfListView.SelectedItem` and `SfListView.CurrentItem` returns the same data object when selecting single item. When selecting more than one item, the `SfListView.SelectedItem` property returns the first selected item, and the `SfListView.CurrentItem` property returns the last selected item.
+The SfListView gets the selected item by using the [SfListView.SelectedItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectedItem) and [SfListView.CurrentItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_CurrentItem) properties. Both `SfListView.SelectedItem` and `SfListView.CurrentItem` returns the same data object when selecting single item. When selecting more than one item, the `SfListView.SelectedItem` property returns the first selected item, and the `SfListView.CurrentItem` property returns the last selected item.
 
-W> If you select an item when [SfListView.SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionMode.html) is none or if you select multiple items when `SfListView.SelectionMode` is single, exception will be thrown.
+W> If you select an item when [SfListView.SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionMode) is none or if you select multiple items when `SfListView.SelectionMode` is single, exception will be thrown.
 
 ## Selected item customization 
 
-The SfListView supports customizing the selection background color for the selected items by using the [SfListView.SelectedItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItemTemplate.html) if the background color is set to view loaded in the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html).
+The SfListView supports customizing the selection background color for the selected items by using the [SfListView.SelectedItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectedItemTemplate) if the background color is set to view loaded in the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate).
 
 {% tabs %}
 {% highlight xaml %}
@@ -148,7 +148,7 @@ Download the entire sample from GitHub [here](https://github.com/SyncfusionExamp
 
 ### Show checked circle on selected items 
 
-To customize the appearance of the selected item or items by using the appearance of [SfListView.SelectedItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItemTemplate.html). The following customizations should give an idea to customize the appearance of selected items in the control.
+To customize the appearance of the selected item or items by using the appearance of [SfListView.SelectedItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectedItemTemplate). The following customizations should give an idea to customize the appearance of selected items in the control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -232,7 +232,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ### Selection background
 
-The SfListView allows changing the selection background color for the selected items by using the [SfListView.SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionBackgroundColor.html) property. You can also change the selection background color at runtime.
+The SfListView allows changing the selection background color for the selected items by using the [SfListView.SelectionBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionBackgroundColor) property. You can also change the selection background color at runtime.
 
 {% tabs %}
 {% highlight c# %}
@@ -248,7 +248,7 @@ listView.SelectionBackgroundColor = Color.Khaki;
 
 ### Programmatic animation
 
-The SfListView allows programmatic animation in selection at runtime by using the virtual method [AnimateSelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SelectionController~AnimateSelectedItem.html) of [SelectionController](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionController.html) class.
+The SfListView allows programmatic animation in selection at runtime by using the virtual method [AnimateSelectedItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SelectionController.html#Syncfusion_ListView_XForms_SelectionController_AnimateSelectedItem_Syncfusion_ListView_XForms_ListViewItem_) of [SelectionController](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionController) class.
 
 {% tabs %}
 {% highlight c# %}
@@ -278,10 +278,10 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ### SelectionChanging event
 
-The [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanging_EV.html) event is raised while selecting an item at the execution time. [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.html) has the following members which provides the information for `SelectionChanging` event:
+The [SelectionChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event is raised while selecting an item at the execution time. [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.html) has the following members which provides the information for `SelectionChanging` event:
 
- * [AddedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs~AddedItems.html): Gets collection of the underlying data objects where the selection is going to be processed.
- * [RemovedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs~RemovedItems.html): Gets collection of the underlying data objects where the selection is going to be removed.
+ * [AddedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.html#Syncfusion_ListView_XForms_ItemSelectionChangingEventArgs_AddedItems): Gets collection of the underlying data objects where the selection is going to be processed.
+ * [RemovedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.html#Syncfusion_ListView_XForms_ItemSelectionChangingEventArgs_RemovedItems): Gets collection of the underlying data objects where the selection is going to be removed.
 
 You can cancel the selection process within this event by setting the `ItemSelectionChangingEventArgs.Cancel` property to true.
 
@@ -303,10 +303,10 @@ private void ListView_SelectionChanging(object sender, ItemSelectionChangingEven
 
 ### SelectionChanged event
 
-The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) event will occur once selection process has been completed for the selected item in the SfListView. [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemSelectionChangedEventArgs.html) has the following members which, provides information for `SelectionChanged` event:
+The [SelectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event will occur once selection process has been completed for the selected item in the SfListView. [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemSelectionChangedEventArgs.html) has the following members which, provides information for `SelectionChanged` event:
 
- * [AddedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemSelectionChangedEventArgs~AddedItems.html): Gets collection of the underlying data objects where the selection has been processed.
- * [RemovedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemSelectionChangedEventArgs~RemovedItems.html): Gets collection of the underlying data objects where the selection has been removed.
+ * [AddedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemSelectionChangedEventArgs.html#Syncfusion_ListView_XForms_ItemSelectionChangedEventArgs_AddedItems): Gets collection of the underlying data objects where the selection has been processed.
+ * [RemovedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemSelectionChangedEventArgs.html#Syncfusion_ListView_XForms_ItemSelectionChangedEventArgs_RemovedItems): Gets collection of the underlying data objects where the selection has been removed.
 
  The `SelectionChanged` event used for the following use cases:
  
@@ -325,13 +325,13 @@ private void ListView_OnSelectionChanged(object sender, ItemSelectionChangedEven
 {% endhighlight %}
 {% endtabs %}
 
-N> [SelectionChanging](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanging_EV.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) events will be triggered only on UI interactions.
+N> [SelectionChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) and [SelectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) events will be triggered only on UI interactions.
 
 ## Commands
 
 ### SelectionChangedCommand
 
-The [SelectionChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChangedCommand.html) will be triggered when the selection is changed and passing the [SelectionChangedCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChangedCommandParameterProperty.html) as parameter. The default value of `SelectionChangedCommandParameter` is null. If `SelectionChangedCommandParameter` is not defined then `ItemSelectionChangedEventArgs` will be passed as argument.
+The [SelectionChangedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionChangedCommand) will be triggered when the selection is changed and passing the [SelectionChangedCommandParameter](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionChangedCommandParameterProperty) as parameter. The default value of `SelectionChangedCommandParameter` is null. If `SelectionChangedCommandParameter` is not defined then `ItemSelectionChangedEventArgs` will be passed as argument.
 
 {% tabs %}
 {% highlight xaml %}
@@ -372,21 +372,21 @@ public class CommandViewModel
 
 ## Key navigation
 
-The [AllowKeyNavigation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowKeyboardNavigation.html) property enables navigation through keyboard buttons. When the `AllowKeyNavigation` property is `true`, navigation gets enabled. Otherwise, set to `false`. Behavior of key navigation in UWP and macOS are explained as follows :
+The [AllowKeyNavigation](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AllowKeyboardNavigation) property enables navigation through keyboard buttons. When the `AllowKeyNavigation` property is `true`, navigation gets enabled. Otherwise, set to `false`. Behavior of key navigation in UWP and macOS are explained as follows :
 
-* When the [SfListView.SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SelectionMode.html) is `Single`, the selected item is highlighted with `FocusBorderColor` around the item while key navigation.
-* When the `SelectionMode` is `SingleDeSelect` or `Multiple`, the [FocusBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FocusBorderColor.html) will set to the `CurrentItem` only on key navigation. 
-* If focusable elements i.e. `Entry`, `SearchBar`, etc. are loaded in the page, the `Focus` will not be changed either to other elements in the view or to the next [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) when `Tab` or `Shift+Tab` key is pressed in the [LinearLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LinearLayout.html).
-* In the [GridLayout](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.GridLayout.html) with span count greater than 1, the `FocusBorderColor` will navigate to the next or previous `ListViewItem` when pressing `Tab` or `Shift+Tab` key.
+* When the [SfListView.SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SelectionMode.html) is `Single`, the selected item is highlighted with `FocusBorderColor` around the item while key navigation.
+* When the `SelectionMode` is `SingleDeSelect` or `Multiple`, the [FocusBorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_FocusBorderColor) will set to the `CurrentItem` only on key navigation. 
+* If focusable elements i.e. `Entry`, `SearchBar`, etc. are loaded in the page, the `Focus` will not be changed either to other elements in the view or to the next [ListViewItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ListViewItem.html) when `Tab` or `Shift+Tab` key is pressed in the [LinearLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.LinearLayout.html).
+* In the [GridLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GridLayout.html) with span count greater than 1, the `FocusBorderColor` will navigate to the next or previous `ListViewItem` when pressing `Tab` or `Shift+Tab` key.
 * In macOS, need to move the focus manually to perform key navigation.
 
 ### FocusBorderColor
 
-[FocusBorderColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FocusBorderColor.html) used to set the border color for the current focused item. For Android and iOS platform, the default color is `Color.Transparent` and for macOS and UWP platform, the default color is `Color.FromRgb(76, 161, 254)`.
+[FocusBorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_FocusBorderColor) used to set the border color for the current focused item. For Android and iOS platform, the default color is `Color.Transparent` and for macOS and UWP platform, the default color is `Color.FromRgb(76, 161, 254)`.
 
 ### FocusBorderThickness
 
-[FocusBorderThickness](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~FocusBorderThickness.html) used to set the border thickness for the current focused item. For Android and iOS platform, the default thickness is 0 and for macOS and UWP platform, the default thickness is 1.
+[FocusBorderThickness](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_FocusBorderThickness) used to set the border thickness for the current focused item. For Android and iOS platform, the default thickness is 0 and for macOS and UWP platform, the default thickness is 1.
 
 ## MacOS support
 
@@ -395,20 +395,20 @@ The [AllowKeyNavigation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 * If `SfListView` flings with more `inertia` or the scrollbar reaches either the bottom or top of the view, the listview items will not layout properly. Since, it occurs in simple custom control and `Xamarin.Forms.ListView`. So, a defect report is logged to `Bugzilla` team. Find the bug report: https://github.com/xamarin/Xamarin.Forms/issues/2403
 * When `Grouping` is enabled, the listview items and group header items will not layout properly while scrolling the `SfListView`.
 * Application will get crash when `Linker` option is set to `Link All`.
-* If an `Image` is loaded in the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) property, it is necessary to define a definite size for the `Image`.
+* If an `Image` is loaded in the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate) property, it is necessary to define a definite size for the `Image`.
 
 ### Not yet implemented
 
 The following features are not yet implemented due to some limitations in the `Xamarin.Forms.macOS` platform:
 
-* [ScrollStateChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollStateChanged_EV.html) event
-* [Pull-To-Refresh](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html)
+* [ScrollStateChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event
+* [Pull-To-Refresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html)
 
 ## How to
 
 ### Disable selection on particular item 
 
-The selection of a particular set of items can be disabled based on the [SfListView.SelectedItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItems.html) of the underlying collections. 
+The selection of a particular set of items can be disabled based on the [SfListView.SelectedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectedItems) of the underlying collections. 
 
 {% tabs %}
 {% highlight c# %}
@@ -432,7 +432,7 @@ Download the entire sample from GitHub [here](https://github.com/SyncfusionExamp
 
 ### Automatically scroll to bring a selected item into the view
 
-To bring the [SfListView.SelectedItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectedItem.html) automatically into the view when it changed at runtime by calling the [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html) method.  
+To bring the [SfListView.SelectedItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectedItem) automatically into the view when it changed at runtime by calling the [ScrollToRowIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.LayoutBase.html#Syncfusion_ListView_XForms_LayoutBase_ScrollToRowIndex_System_Int32_Syncfusion_ListView_XForms_ScrollToPosition_System_Boolean_) method.  
 
 In linear layout, you can get the row index of `SfListView.SelectedItem` and resolve if header and group header are used. 
 
@@ -464,7 +464,7 @@ Download the entire sample from GitHub [here](https://github.com/SyncfusionExamp
 
 ### Gets the index of selected item
 
-When performing selection, you can get the index of the selected item by using the [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionChanged_EV.html) event from the [DataSource.DisplayItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DisplayItems.html). 
+When performing selection, you can get the index of the selected item by using the [SelectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event from the [DataSource.DisplayItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DisplayItems.html). 
 
 {% tabs %}
 {% highlight c# %}
@@ -490,7 +490,7 @@ Download the entire sample from GitHub [here](https://github.com/SyncfusionExamp
 
 ### Display selection when ItemTemplate contains image
 
-When [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) contains only image, then the selection color will not be visible in the view when select an image. To see selection, add any layout such as Grid or StackLayout above the image, and set margin or padding to it.
+When [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate) contains only image, then the selection color will not be visible in the view when select an image. To see selection, add any layout such as Grid or StackLayout above the image, and set margin or padding to it.
 
 {% tabs %}
 {% highlight xaml %}
@@ -534,7 +534,7 @@ public partial class MainPage : ContentPage
 
 ## Limitation
 
-* When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~SelectionBackgroundColor.html) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the ListView instead of `ItemTemplate`.
+* When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionBackgroundColor) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the ListView instead of `ItemTemplate`.
 * When the ListView contains duplicated items in the collection, only the first item whose instance was created initially will be selected or deselected.
 
 ## See also

@@ -12,7 +12,7 @@ keywords: mask, SfMaskedEdit, maskededit
 
 ## Setting value
 
-The SfMaskedEdit control displays the value that can be set using the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Value.html) property:
+The SfMaskedEdit control displays the value that can be set using the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property:
 
 {% tabs %}
 {% highlight xaml %}
@@ -30,7 +30,7 @@ maskedEdit.Value =@"14/11/2014";
 
 ## Setting prompt character
 
-Displays prompt character for the absence of your input in Mask and its default value is ‘_’. You can set the custom prompt character using [`PromptChar`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~PromptChar.html) property.
+Displays prompt character for the absence of your input in Mask and its default value is ‘_’. You can set the custom prompt character using [`PromptChar`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_PromptChar) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -47,14 +47,14 @@ maskedEdit.PromptChar = '*';
 
 ## Setting watermark
 
-The watermark will prompt you with instructions or important information when it is not on focus and any valid characters are not entered. The [`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Watermark.html) property of [`SfMaskedEdit`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) is used to set the watermark text for the control.
+The watermark will prompt you with instructions or important information when it is not on focus and any valid characters are not entered. The [`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Watermark) property of [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) is used to set the watermark text for the control.
 
 The following properties are used to customize its appearance:
 
-* [`WatermarkColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~WatermarkColor.html): Sets text color for the watermark.
-* [`WatermarkFontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~WatermarkFontFamily.html): Represents the font to be used in the watermark.
-* [`WatermarkFontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~WatermarkFontAttributes.html): Sets font attributes(bold/italic/none) for the watermark.
-* [`WatermarkFontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~WatermarkFontSize.html): Sets font size for the watermark.
+* [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_WatermarkColor): Sets text color for the watermark.
+* [`WatermarkFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_WatermarkFontFamily): Represents the font to be used in the watermark.
+* [`WatermarkFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_WatermarkFontAttributes): Sets font attributes(bold/italic/none) for the watermark.
+* [`WatermarkFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_WatermarkFontSize): Sets font size for the watermark.
 
 {% tabs %}
 {% highlight xaml %}
@@ -75,7 +75,7 @@ maskedEdit.WatermarkFontSize = 20;
 
 ## Customize the return key
 
-The appearance of the return key on the soft keyboard, which is displayed when `SfMaskedEdit` has focus, can be customized by setting the [`ReturnType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ReturnType.html) property to a value of the ReturnType enumeration.
+The appearance of the return key on the soft keyboard, which is displayed when `SfMaskedEdit` has focus, can be customized by setting the [`ReturnType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ReturnType) property to a value of the ReturnType enumeration.
 
 * `Default` – indicates that no specific return key is required and that the platform default is used.
 * `Done` – indicates the return key "Done."
@@ -110,7 +110,7 @@ N> The default value of the ReturnType property is Default.
 
 ## Return command and return command parameter
 
-[`ReturnCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ReturnCommand.html) is triggered by pressing the return key. Additionally, You can pass the parameter through the  [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ReturnCommandParameter.html) property to the ICommand. 
+[`ReturnCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ReturnCommand) is triggered by pressing the return key. Additionally, You can pass the parameter through the  [`ReturnCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ReturnCommandParameter) property to the ICommand. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -158,7 +158,7 @@ N> The default value of the ReturnType property is Default.
 
 ## Clear button visibility
 
-The property of [`ClearButtonVisibility`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ClearButtonVisibility.html) can be used to control whether a `SfMaskedEdit` displays a clear button allowing the user to clear the MaskedText. This property should be set to an enumeration member of [`ClearButtonVisibilityMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Editors.ClearButtonVisibilityMode.html).
+The property of [`ClearButtonVisibility`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ClearButtonVisibility) can be used to control whether a `SfMaskedEdit` displays a clear button allowing the user to clear the MaskedText. This property should be set to an enumeration member of [`ClearButtonVisibilityMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Editors.ClearButtonVisibilityMode.html).
 
 * `Never` - indicate control will never display a clear button and that the platform default is used.
 * `WhileEditing` - indicates that the clear button will be displayed in the SfMaskedEdit, while it has focus and text.

@@ -13,7 +13,7 @@ The CenterButton or BackButton in radial menu is a view in the center of the rad
 
 ## CenterButtonText and CenterButtonBackText
 
-The [`CenterButtonText`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonTextProperty.html) changes the text of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html), and the [`CenterButtonBackText`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonBackTextProperty.html) changes the text of the center back button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
+The [`CenterButtonText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonTextProperty) changes the text of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html), and the [`CenterButtonBackText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonBackTextProperty) changes the text of the center back button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
 
 {% tabs %}
 
@@ -76,7 +76,7 @@ namespace RadialSample
 
 ## CenterButtonTextColor and CenterButtonBackTextColor
 
-The [`CenterButtonTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonTextColorProperty.html) changes the text color of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html), and the [`CenterButtonBackTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonBackTextColorProperty.html) changes the text color of the center back button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
+The [`CenterButtonTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonTextColorProperty) changes the text color of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html), and the [`CenterButtonBackTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonBackTextColorProperty) changes the text color of the center back button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
 
 {% tabs %}
 
@@ -144,7 +144,7 @@ namespace RadialSample
 
 ## CenterButtonBackgroundColor
 
-The [`CenterButtonBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonBackgroundColorProperty.html) changes the background color of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
+The [`CenterButtonBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonBackgroundColorProperty) changes the background color of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
 
 {% tabs %}
 
@@ -205,7 +205,7 @@ namespace RadialSample
 
 ## CenterButtonRadius
 
-The [`CenterButtonRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonRadiusProperty.html) changes the radius of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
+The [`CenterButtonRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonRadiusProperty) changes the radius of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
 
 {% tabs %}
 
@@ -266,7 +266,7 @@ namespace RadialSample
 
 ## CenterButtonFontFamily and CenterButtonBackFontFamily
 
-The [`CenterButtonFontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonFontFamilyProperty.html) changes the font family of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html), and the [`CenterButtonBackFontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonBackFontFamilyProperty.html) changes the font family of the center back button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
+The [`CenterButtonFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonFontFamilyProperty) changes the font family of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html), and the [`CenterButtonBackFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonBackFontFamilyProperty) changes the font family of the center back button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
 
 {% tabs %}
 
@@ -346,7 +346,7 @@ namespace RadialSample
 
 ## CenterButtonFontSize and CenterButtonBackFontSize
 
-The [`CenterButtonFontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonFontSizeProperty.html) changes the font size of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html), and the [`CenterButtonBackFontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonBackFontSizeProperty.html) changes the font size of the center back button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
+The [`CenterButtonFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonFontSizeProperty) changes the font size of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html), and the [`CenterButtonBackFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonBackFontSizeProperty) changes the font size of the center back button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
 
 {% tabs %}
 
@@ -430,7 +430,7 @@ namespace RadialSample
 
 ## CenterButtonFontAttributes
 
-The [`CenterButtonFontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonFontAttributesProperty.html) changes the font attributes of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
+The [`CenterButtonFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonFontAttributesProperty) changes the font attributes of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
 
 {% tabs %}
 
@@ -516,7 +516,7 @@ namespace RadialSample
 
 ## CenterButtonBorderColor
 
-The [`CenterButtonBorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonBorderColorProperty.html) changes the border color of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
+The [`CenterButtonBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonBorderColorProperty) changes the border color of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
 
 {% tabs %}
 
@@ -604,7 +604,7 @@ namespace RadialSample
 
 ## CenterButtonBorderThickness
 
-The [`CenterButtonBorderThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonBorderThicknessProperty.html) changes the border thickness of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
+The [`CenterButtonBorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonBorderThicknessProperty) changes the border thickness of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
 
 {% tabs %}
 
@@ -694,7 +694,7 @@ namespace RadialSample
 
 ## CenterButtonPlacement
 
-The [`CenterButtonPlacement`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonPlacementProperty.html) changes the placement of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html)
+The [`CenterButtonPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonPlacementProperty) changes the placement of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html)
 
 {% tabs %}
 
@@ -755,7 +755,7 @@ namespace RadialSample
 
 ## Center button view and center back button view
 
-You can customize the center button using [`CenterButtonView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonViewProperty.html)and center back button using [`CenterButtonBackView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~CenterButtonBackViewProperty.html) in  [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
+You can customize the center button using [`CenterButtonView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonViewProperty)and center back button using [`CenterButtonBackView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_CenterButtonBackViewProperty) in  [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
 
 {% tabs %}
 
@@ -831,7 +831,7 @@ namespace RadialSample
 
 ## EnableCenterButtonAnimation
 
-The [`EnableCenterButtonAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~EnableCenterButtonAnimationProperty.html) is used to either enable or disable animation of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
+The [`EnableCenterButtonAnimation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_EnableCenterButtonAnimationProperty) is used to either enable or disable animation of the center button in [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html).
 
 {% tabs %}
 

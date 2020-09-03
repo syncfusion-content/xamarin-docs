@@ -218,7 +218,7 @@ Moves focus to the previous editor from currently focused editor.
 </table>
 
 ### Customize key functionalities
-To perform custom actions apart from the functions listed in the above table for keyboard keypress actions, implement your custom actions in the `MoveToNextFocusableEditor` and `MoveToPreviousFocusableEditor` overrides of custom layout manager class derived from the [DataFormLayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormLayoutManager.html) class and assign it to the [SfDataForm.LayoutManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~LayoutManager.html) property.
+To perform custom actions apart from the functions listed in the above table for keyboard keypress actions, implement your custom actions in the `MoveToNextFocusableEditor` and `MoveToPreviousFocusableEditor` overrides of custom layout manager class derived from the [DataFormLayoutManager](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormLayoutManager.html) class and assign it to the [SfDataForm.LayoutManager](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_LayoutManager) property.
 
 The `Tab`, `DownArrow`, and `RightArrow` key pressed actions will call `MoveToNextFocusableEditor`. For `Shift + Tab`, `LeftArrow`, and `UpArrow` key pressed actions, `MoveToPreviousFocusableEditor` will be called. Keyboard behaviors can be restricted in override methods by returning false.
 

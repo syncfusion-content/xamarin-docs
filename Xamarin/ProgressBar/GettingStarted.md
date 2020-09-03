@@ -169,7 +169,7 @@ Run the project, and check if you get following output to make sure that the pro
 
 ## Enabling indeterminate state
 
-When the progress of a task cannot be shown determinately, you can enable the indeterminate state using the [IsIndeterminate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~IsIndeterminate.html) property to know that any progress is happening in the background.
+When the progress of a task cannot be shown determinately, you can enable the indeterminate state using the [IsIndeterminate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.ProgressBarBase.html#Syncfusion_XForms_ProgressBar_ProgressBarBase_IsIndeterminate) property to know that any progress is happening in the background.
 
 {% tabs %} 
 
@@ -196,7 +196,7 @@ SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { IsIndete
 
 ## Enable segments
 
-To visualize the progress of a multiple sequential task, split the progress bar into the multiple segments by defining the [SegmentCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~SegmentCount.html) property as demonstrated in the following code sample.
+To visualize the progress of a multiple sequential task, split the progress bar into the multiple segments by defining the [SegmentCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.ProgressBarBase.html#Syncfusion_XForms_ProgressBar_ProgressBarBase_SegmentCount) property as demonstrated in the following code sample.
 
 {% tabs %} 
 
@@ -222,7 +222,7 @@ SfCircularProgressBar circularProgressBar = new SfCircularProgressBar { Progress
 
 ## Apply colors
 
-You can customize the color of the progress indicator and track by defining the [ProgressColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~ProgressColor.html) and [TrackColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfProgressBar.XForms~Syncfusion.XForms.ProgressBar.ProgressBarBase~TrackColor.html) properties, respectively.
+You can customize the color of the progress indicator and track by defining the [ProgressColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.ProgressBarBase.html#Syncfusion_XForms_ProgressBar_ProgressBarBase_ProgressColor) and [TrackColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.ProgressBarBase.html#Syncfusion_XForms_ProgressBar_ProgressBarBase_TrackColor) properties, respectively.
 
 {% tabs %} 
 

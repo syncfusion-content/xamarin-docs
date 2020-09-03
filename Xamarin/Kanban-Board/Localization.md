@@ -32,7 +32,7 @@ Provide the French values for each key in the respective .resx files. Here, “I
 
 {% endhighlight %} 
 
-4. Set the resource manager to [‘KanbanResourceManager.Manager’](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfKanban.XForms~Syncfusion.SfKanban.XForms.KanbanResourceManager~Manager.html) as demonstrated in the following code to get the resource manager from the users. For more details, refer [`Localization`](https://blog.syncfusion.com/post/localization-made-easy-for-syncfusion-xamarin-forms-components.aspx).
+4. Set the resource manager to [‘KanbanResourceManager.Manager’](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanResourceManager.html#Syncfusion_SfKanban_XForms_KanbanResourceManager_Manager) as demonstrated in the following code to get the resource manager from the users. For more details, refer [`Localization`](https://blog.syncfusion.com/post/localization-made-easy-for-syncfusion-xamarin-forms-components.aspx).
 
 {% highlight C# %}
 

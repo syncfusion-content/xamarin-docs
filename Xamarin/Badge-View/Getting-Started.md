@@ -9,7 +9,7 @@ documentation: ug
 
 # SfBadgeView Getting Started
 
-This section explains the steps required to configure the [`SfBadgeView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.SfBadgeView.html) control and customize its elements.
+This section explains the steps required to configure the [`SfBadgeView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.SfBadgeView.html) control and customize its elements.
 
 ## Adding SfBadgeView reference
 
@@ -181,7 +181,7 @@ Content = sfBadgeView;
 
 ## Adding badge text
 
-You can add text to badge view using the [`BadgeText`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.SfBadgeView~BadgeText.html) property.
+You can add text to badge view using the [`BadgeText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.SfBadgeView.html#Syncfusion_XForms_BadgeView_SfBadgeView_BadgeText) property.
 
 {% tabs %}
 
@@ -208,7 +208,7 @@ Content = sfBadgeView;
 
 ## Adding content
 
-You can add an image, button, or label to the badge view using the [`Content`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.SfBadgeView~Content.html) property.
+You can add an image, button, or label to the badge view using the [`Content`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.SfBadgeView.html) property.
 
 {% tabs %}
 

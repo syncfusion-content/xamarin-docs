@@ -127,6 +127,8 @@ dataForm.LabelPosition = LabelPosition.Top;
 
 ![Arranging data form field when label position as top in Xamarin.Forms DataForm](SfDataForm_images/Layout_LabelPosition.png)
 
+N> You cannot customize the `DataForm` Items height in TextInputLayout
+
 ### Changing label position of the DataFormItem
 
 You can change the label position using the [LabelPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DataFormItem~LabelPosition.html) property in `DataFormItem`, and it will be handled in the `AutoGeneratingDataFormItem` event.

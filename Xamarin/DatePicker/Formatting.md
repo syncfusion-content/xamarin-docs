@@ -14,6 +14,18 @@ Format is a way to represent the value of the date in a different string format.
 
 By default, the DatePicker’s format is "DateFormat.M_d_yyyy".
 
+The different types of Format tyeps are.
+
+M_d_yyyy - Represents the month day year in m/d/yyyy format.
+
+MM_dd_yyyy - Represents the month day year in mm/dd/yyyy format.
+
+yyyy_MM_dd - Represents the year month day in yyyy/mm/dd format.
+
+dd_MMM_yyyy - Represents the day month year in dd/mmm/yyyy format.
+
+dd_MM_yyyy - Represents the day month year in dd/MM/yyyy format.
+
 The following example demonstrates the DatePicker with the custom format DateFormat.yyyy-MM-dd.
 
 {% tabs %}

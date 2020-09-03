@@ -268,12 +268,11 @@ Schedule.ShowAppointmentsInline = true;
 MonthViewSettings monthViewSettings = new MonthViewSettings();
 monthViewSettings.AgendaItemTemplate = new DataTemplate(() =>
 {
-    return new Button
-    {
-        Text = "Template",
-        TextColor = Color.White,
-        BackgroundColor = Color.Purple
-    };
+    var label = new Label();
+    label.SetBinding(Label.TextProperty, "EventName");
+    TextColor = Color.White,
+    BackgroundColor = Color.Purple
+	return label;
 });
 Schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}

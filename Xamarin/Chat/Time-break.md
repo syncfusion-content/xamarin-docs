@@ -9,7 +9,7 @@ documentation: ug
 
 # Time break between Messages in Xamarin.Forms Chat (SfChat)
 
-The chat control provides a convenient way to group messages based on the date and time the messages were created. So, users can easily identify the messages in the order they were created. To enable time break view in `SfChat` set `true` to the [SfChat.ShowTimeBreak](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowTimeBreak.html) property.
+The chat control provides a convenient way to group messages based on the date and time the messages were created. So, users can easily identify the messages in the order they were created. To enable time break view in `SfChat` set `true` to the [SfChat.ShowTimeBreak](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowTimeBreak) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -64,7 +64,7 @@ namespace GettingStarted
 
 ## Stick time break view
 
-To stick the time break view, enable the property [SfChat.StickyTimeBreak](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~StickyTimeBreak.html). If `StickyTimeBreak` is true, the corresponding time break view will be displayed until the previous time break view goes out of view, and time break will move when another time break comes in while scrolling.
+To stick the time break view, enable the property [SfChat.StickyTimeBreak](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_StickyTimeBreak). If `StickyTimeBreak` is true, the corresponding time break view will be displayed until the previous time break view goes out of view, and time break will move when another time break comes in while scrolling.
 
 {% tabs %}
 {% highlight xaml %}
@@ -218,7 +218,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Template for time break view
 
-`SfChat` allows to load custom template for time break view using the [SfChat.TimeBreakTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~TimeBreakTemplate.html) property. 
+`SfChat` allows to load custom template for time break view using the [SfChat.TimeBreakTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_TimeBreakTemplate) property. 
 
 To apply custom `TimeBreakTemplate` in the SfChat, refer the below code example:
 

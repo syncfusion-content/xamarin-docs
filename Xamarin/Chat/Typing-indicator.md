@@ -9,7 +9,7 @@ documentation: ug
 
 # Typing indicator in Xamarin.Forms Chat (SfChat)
 
-Indicates with an animation, that a user(or users) is currently typing, thereby providing an enhanced user experience. To show/hide the typing indicator set the [SfChat.ShowTypingIndicator](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowTypingIndicator.html) property to `true` or `false` respectively. To show user image and text in the typing indicator create a new instance of `SfChat.TypingIndicator`, set the [TypingIndicator.Authors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatTypingIndicator~Authors.html) and [TypingIndicator.Text](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatTypingIndicator~Text.html) property and assign the typing indicator instance to the [SfChat.TypingIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~TypingIndicator.html) property.
+Indicates with an animation, that a user(or users) is currently typing, thereby providing an enhanced user experience. To show/hide the typing indicator set the [SfChat.ShowTypingIndicator](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowTypingIndicator) property to `true` or `false` respectively. To show user image and text in the typing indicator create a new instance of `SfChat.TypingIndicator`, set the [TypingIndicator.Authors](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ChatTypingIndicator.html#Syncfusion_XForms_Chat_ChatTypingIndicator_Authors) and [TypingIndicator.Text](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ChatTypingIndicator.html#Syncfusion_XForms_Chat_ChatTypingIndicator_Text) property and assign the typing indicator instance to the [SfChat.TypingIndicator](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_TypingIndicator) property.
 
 
 To define `TypingIndicator` in SfChat, refer the below code example:
@@ -208,7 +208,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Customize avatar view of typing indicator
 
-The avatar view in the typing indicator can be customized to show only starting alphabet of the user name or only image of the user as avatar by using [ChatTypingIndicator.AvatarViewType](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatTypingIndicator~AvatarViewType.html) property.
+The avatar view in the typing indicator can be customized to show only starting alphabet of the user name or only image of the user as avatar by using [ChatTypingIndicator.AvatarViewType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ChatTypingIndicator.html#Syncfusion_XForms_Chat_ChatTypingIndicator_AvatarViewType) property.
 
 
 To change the `AvatarViewType` in typing indicator, refer the below code example:
@@ -323,7 +323,7 @@ public class GettingStattedViewModel : INotifyPropertyChanged
 
 ## Notifications when user start/stop typing
  
-You can access the typing area in SfChat using [SfChat.Editor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~Editor.html) property, listen to its focus change, text change, completed events etc to identify when the user starts/ends typing.
+You can access the typing area in SfChat using [SfChat.Editor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_Editor) property, listen to its focus change, text change, completed events etc to identify when the user starts/ends typing.
 
 {% tabs %}
 {% highlight xaml %}

@@ -9,7 +9,7 @@ documentation: ug
 
 # Animation
 
-The sunburst chart provides animation on loading and whenever the item source changes. Animation can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~EnableAnimation.html) property to true.
+The sunburst chart provides animation on loading and whenever the item source changes. Animation can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html#Syncfusion_SfSunburstChart_XForms_SfSunburstChart_EnableAnimation) property to true.
 
 The following code shows enabling animation.
 
@@ -40,7 +40,7 @@ The following code shows enabling animation.
 
 ## Duration
 
-Animation duration can be controlled using the [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~AnimationDuration.html) property.
+Animation duration can be controlled using the [`AnimationDuration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html#Syncfusion_SfSunburstChart_XForms_SfSunburstChart_AnimationDuration) property.
 
 {% tabs %} 
 

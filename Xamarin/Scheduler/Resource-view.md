@@ -11,7 +11,7 @@ documentation: ug
 
 Resource view displays the resources as discrete views integrated with the scheduler to display appointments in all types of schedule views. It provides an intuitive user interface, which allows users to select single or multiple resources and display the events associated with the selected resources with efficient and effective utilization. Each resource can be assigned to a unique color to more easily identify the resource associated with an appointment. 
 
-You can add resources that can be assigned to appointments using the [ScheduleResources](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ScheduleResources.html) property of `SfSchedule`. You need to set the [Name](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResource~Name.html), [Id](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResource~Id.html), and [Color](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResource~Color.html) properties of [ScheduleResource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResource.html) to create a resource.
+You can add resources that can be assigned to appointments using the [ScheduleResources](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_ScheduleResources) property of `SfSchedule`. You need to set the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleResource.html#Syncfusion_SfSchedule_XForms_ScheduleResource_Name), [Id](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleResource.html#Syncfusion_SfSchedule_XForms_ScheduleResource_Id), and [Color](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleResource.html#Syncfusion_SfSchedule_XForms_ScheduleResource_Color) properties of [ScheduleResource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleResource.html) to create a resource.
 
 {% tabs %}
 {% highlight xaml %}
@@ -50,7 +50,7 @@ You can download the custom resource demo for Xamarin.Forms from [here](https://
 
 ## Resource view visibility
 
-You can handle the visibility of resource view using the [ShowResourceView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ShowResourceView.html) bool property of `SfSchedule`. By default, value of this property is set to false.
+You can handle the visibility of resource view using the [ShowResourceView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_ShowResourceView) bool property of `SfSchedule`. By default, value of this property is set to false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -64,7 +64,7 @@ schedule.ShowResourceView = true;
 
 ## Assigning events for resources
 
-You can associate `Resources` to the appointments by adding `Id` of resource in the [ResourceIds](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleAppointment~ResourceIds.html) property of `ScheduleAppointment`. Appointments associated with the selected resources will be displayed in the `SfSchedule` views. 
+You can associate `Resources` to the appointments by adding `Id` of resource in the [ResourceIds](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointment.html#Syncfusion_SfSchedule_XForms_ScheduleAppointment_ResourceIds) property of `ScheduleAppointment`. Appointments associated with the selected resources will be displayed in the `SfSchedule` views. 
 
 {% tabs %}
 {% highlight c# %}
@@ -164,14 +164,14 @@ meeting.Resources = new ObservableCollection<object> () {5601, 5604};
 
 ## Mapping
 
-Schedule supports full data binding to any type of `IEnumerable` source. Specify the [ResourceMapping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ResourceMapping.html) attribute to map the properties in the underlying data source to the schedule resource.
+Schedule supports full data binding to any type of `IEnumerable` source. Specify the [ResourceMapping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_ResourceMapping) attribute to map the properties in the underlying data source to the schedule resource.
 
 | Property Name | Description |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| [Name](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceMapping~Name.html) | Maps the property name of custom class, which is equivalent to Name in ScheduleResource. |
-| [Id](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceMapping~Id.html) | Maps the property name of custom class, which is equivalent to Id in ScheduleResource. |
-| [Image](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceMapping~Image.html) | Maps the property name of custom class, which is equivalent to Image in ScheduleResource. |
-| [Color](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceMapping~Color.html) | Maps the property name of custom class, which is equivalent to Color in ScheduleResource. |
+| [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ResourceMapping.html#Syncfusion_SfSchedule_XForms_ResourceMapping_Name) | Maps the property name of custom class, which is equivalent to Name in ScheduleResource. |
+| [Id](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ResourceMapping.html#Syncfusion_SfSchedule_XForms_ResourceMapping_Id) | Maps the property name of custom class, which is equivalent to Id in ScheduleResource. |
+| [Image](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ResourceMapping.html#Syncfusion_SfSchedule_XForms_ResourceMapping_Image) | Maps the property name of custom class, which is equivalent to Image in ScheduleResource. |
+| [Color](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ResourceMapping.html#Syncfusion_SfSchedule_XForms_ResourceMapping_Color) | Maps the property name of custom class, which is equivalent to Color in ScheduleResource. |
 
 >**NOTE**
 Custom resource class should contain a mandatory field for resource `Id`.
@@ -251,7 +251,7 @@ schedule.ScheduleResources = Employees;
 
 ## Resource view mode
 
-The `SfSchedule` control provides support to view the appointments of either selected resource or entire resource in timeline view using the [ResourceViewMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ResourceViewMode.html) property of `SfSchedule`.
+The `SfSchedule` control provides support to view the appointments of either selected resource or entire resource in timeline view using the [ResourceViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_ResourceViewMode) property of `SfSchedule`.
 
 `Selection`: Displays the appointments of selected resource.
 `Absolute`: Displays the appointments of entire resource.
@@ -274,7 +274,7 @@ schedule.ResourceViewMode = ResourceViewMode.Absolute;
 
 ## Selection mode
 
-The `SfSchedule` control provides support to select single or multiple resources using the [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceViewSettings~SelectionMode.html) property of [ResourceViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ResourceViewSettings.html) in `SfSchedule`.
+The `SfSchedule` control provides support to select single or multiple resources using the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ResourceViewSettings.html#Syncfusion_SfSchedule_XForms_ResourceViewSettings_SelectionMode) property of [ResourceViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_ResourceViewSettings) in `SfSchedule`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -296,11 +296,11 @@ schedule.ResourceViewSettings = resourceViewSettings;
 ![Selection mode in xamarin forms Resource view](resource-view-images/xamarin-forms-resource-view-selection-mode.png)
 
 >**NOTE**
-In timeline view, [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceViewSettings~SelectionMode.html) is applicable only when the `ResourceViewMode` is `Selection`.
+In timeline view, [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ResourceViewSettings.html#Syncfusion_SfSchedule_XForms_ResourceViewSettings_SelectionMode) is applicable only when the `ResourceViewMode` is `Selection`.
 
 ## Programmatic resource selection
 
-You can programmatically select single or multiple resources by adding resources to the [SelectedResources](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~SelectedResources.html) property of `SfSchedule`.
+You can programmatically select single or multiple resources by adding resources to the [SelectedResources](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_SelectedResources) property of `SfSchedule`.
 
 {% tabs %}
 {% highlight c# %}
@@ -330,7 +330,7 @@ schedule.SelectedResources.Remove(selectedResource);
 
 ## Changing resource view height
 
-You can customize the height of the resource view using the [ResourceViewHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ResourceViewHeight.html) property of `SfSchedule`.
+You can customize the height of the resource view using the [ResourceViewHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_ResourceViewHeight) property of `SfSchedule`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -352,7 +352,7 @@ The `ResourceViewHeight` property functions as width when `ResourceViewMode` is 
 
 ## Visible resource count
 
-You can customize the number of visible resources in the current view using the [VisibleResourceCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceViewSettings~VisibleResourceCount.html) property of `ResourceViewSettings` in `SfSchedule`. By default, value of this property is set to -1. 
+You can customize the number of visible resources in the current view using the [VisibleResourceCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ResourceViewSettings.html#Syncfusion_SfSchedule_XForms_ResourceViewSettings_VisibleResourceCount) property of `ResourceViewSettings` in `SfSchedule`. By default, value of this property is set to -1. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -380,7 +380,7 @@ schedule.ResourceViewSettings = resourceViewSettings;
 
 ## Resource item tapped event
 
-You can handle the single tap action of resource view using the [ResourceItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ResourceItemTapped_EV.html) event of `SfSchedule`. This event occurs when a resource item is tapped. This event contains [ResourceItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceItemTappedEventArgs.html) argument, which holds the details of [SelectedResource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceItemTappedEventArgs~SelectedResource.html) and [SelectedResources](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceItemTappedEventArgs~SelectedResources.html) in it.
+You can handle the single tap action of resource view using the [ResourceItemTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html) event of `SfSchedule`. This event occurs when a resource item is tapped. This event contains [ResourceItemTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ResourceItemTappedEventArgs.html) argument, which holds the details of [SelectedResource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ResourceItemTappedEventArgs.html#Syncfusion_SfSchedule_XForms_ResourceItemTappedEventArgs_SelectedResource) and [SelectedResources](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ResourceItemTappedEventArgs.html#Syncfusion_SfSchedule_XForms_ResourceItemTappedEventArgs_SelectedResources) in it.
 
 {% tabs %}
 {% highlight c# %}
@@ -399,7 +399,7 @@ In timeline view, the `SelectedResources` becomes null on tapping an item when t
 
 ### Changing resource name label text color
 
-You can customize the text color of the resource name using the [DisplayLabelTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ResourceViewSettings~DisplayLabelTextColor.html) property of `ResourceViewSettings` in `SfSchedule`.
+You can customize the text color of the resource name using the [DisplayLabelTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ResourceViewSettings.html#Syncfusion_SfSchedule_XForms_ResourceViewSettings_DisplayLabelTextColor) property of `ResourceViewSettings` in `SfSchedule`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -418,7 +418,7 @@ schedule.ResourceViewSettings = resourceViewSettings;
 
 ### Data template
 
-The default appearance of the resource can be customized using the [ResourceItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~ResourceItemTemplate.html) property of the schedule. You can handle the default touch action such as selection of resource item using the `InputTransparent` property of the `Xamarin.Forms.VisualElement`.
+The default appearance of the resource can be customized using the [ResourceItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_ResourceItemTemplate) property of the schedule. You can handle the default touch action such as selection of resource item using the `InputTransparent` property of the `Xamarin.Forms.VisualElement`.
 
 {% tabs %}
 {% highlight xaml %}

@@ -11,11 +11,11 @@ documentation: ug
 
 # Labels in SfCircularGauge
 
-The [`Scale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) labels associate a numeric value with major scale tick marks.
+The [`Scale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html) labels associate a numeric value with major scale tick marks.
 
 ## Label color customization
 
-The label color can be changed using the [`LabelColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelColor.html) property.
+The label color can be changed using the [`LabelColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_LabelColor) property.
 
 {% tabs %}
 
@@ -51,7 +51,7 @@ The label color can be changed using the [`LabelColor`](https://help.syncfusion.
 
 ## Label font customization
 
-The label font can be customized by using the [`LabelFontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelFontSize.html), [`FontAttribute`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~FontAttributes.html), and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~FontFamily.html) properties. 
+The label font can be customized by using the [`LabelFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_LabelFontSize), [`FontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_FontAttributes), and [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_FontFamily) properties. 
 
 {% tabs %}
 
@@ -93,7 +93,7 @@ The label font can be customized by using the [`LabelFontSize`](https://help.syn
 
 ## Setting position for labels
 
-The labels can be positioned far away from the ticks by using the [`LabelOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelOffset.html) property.
+The labels can be positioned far away from the ticks by using the [`LabelOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_LabelOffset) property.
 
 {% tabs %}
 
@@ -127,7 +127,7 @@ The labels can be positioned far away from the ticks by using the [`LabelOffset`
 
 ## Setting number of decimal digits for labels
 
-The [`NumberOfDecimalDigits`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~NumberOfDecimalDigits.html) property is used to set the number of decimal digits to be displayed in the scale labels.
+The [`NumberOfDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_NumberOfDecimalDigits) property is used to set the number of decimal digits to be displayed in the scale labels.
 
 {% tabs %}
 
@@ -162,7 +162,7 @@ The [`NumberOfDecimalDigits`](https://help.syncfusion.com/cr/cref_files/xamarin/
 
 ## Setting postfix and prefix for labels
 
-You can postfix/prefix values to the scale labels by using the [`LabelPostfix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelPostfix.html) and [`LabelPrefix`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelPrefix.html) properties, respectively.
+You can postfix/prefix values to the scale labels by using the [`LabelPostfix`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_LabelPostfix) and [`LabelPrefix`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_LabelPrefix) properties, respectively.
 
 ### Label postfix
 
@@ -234,7 +234,7 @@ You can postfix/prefix values to the scale labels by using the [`LabelPostfix`](
 
 ## Edge label customization
 
-You can customize the edge label by using the [`ShowFirstLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ShowFirstLabel.html) and [`ShowLastLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ShowLastLabel.html) properties, which are Boolean properties. The [`ShowFirstLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ShowFirstLabel.html) property is used to enable or disable first label, and the [`ShowLastLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ShowLastLabel.html) property is used to enable or disable the last label in circular gauge.
+You can customize the edge label by using the [`ShowFirstLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_ShowFirstLabel) and [`ShowLastLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_ShowLastLabel) properties, which are Boolean properties. The [`ShowFirstLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_ShowFirstLabel) property is used to enable or disable first label, and the [`ShowLastLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_ShowLastLabel) property is used to enable or disable the last label in circular gauge.
 
 {% tabs %}
 
@@ -274,7 +274,7 @@ You can customize the edge label by using the [`ShowFirstLabel`](https://help.sy
 
 ## Show labels
 
-The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ShowLabels.html) property is a Boolean property, which is used to enable or disable the labels in circular gauge.
+The [`ShowLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_ShowLabels) property is a Boolean property, which is used to enable or disable the labels in circular gauge.
 
 {% tabs %}
 
@@ -308,7 +308,7 @@ The [`ShowLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 ## Setting auto angle for label
 
-Scale labels can be rotated automatically based on the current angle. To enable or disable the auto angle, use the [`EnableAutoAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~EnableAutoAngle.html) property.
+Scale labels can be rotated automatically based on the current angle. To enable or disable the auto angle, use the [`EnableAutoAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_EnableAutoAngle) property.
 
 {% tabs %}
 
@@ -342,7 +342,7 @@ Scale labels can be rotated automatically based on the current angle. To enable 
 
 ## Custom labels for circular gauge
 
-Circular scale also supports custom label format using the [`CustomLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~CustomLabels.html) property. 
+Circular scale also supports custom label format using the [`CustomLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_CustomLabels) property. 
 You can give labels in an array that you want to place in scale.
 
 {% tabs %}

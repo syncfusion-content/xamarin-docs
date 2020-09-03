@@ -9,12 +9,12 @@ documentation: ug
 
 # Sparkline Axis
 
-Axis of the sparkline can be configured and customized using following properties. This feature is applicable for all the sparkline types except [`SfWinLossSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfWinLossSparkline.html).
+Axis of the sparkline can be configured and customized using following properties. This feature is applicable for all the sparkline types except [`SfWinLossSparkline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfWinLossSparkline.html).
 
-* [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SparklineAxis~IsVisible.html) - used to change the visibility of the axis.
-* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SparklineAxis~StrokeColor.html) - used to change the color of the axis.
-* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SparklineAxis~StrokeWidth.html) - used to change the width of the axis.
-* [`AxisOrigin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SparklineAxis~AxisOrigin.html) - used to change the origin (positive or negative) of the axis.
+* [`IsVisible`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SparklineAxis.html#Syncfusion_SfSparkline_XForms_SparklineAxis_IsVisible) - used to change the visibility of the axis.
+* [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SparklineAxis.html#Syncfusion_SfSparkline_XForms_SparklineAxis_StrokeColor) - used to change the color of the axis.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SparklineAxis.html#Syncfusion_SfSparkline_XForms_SparklineAxis_StrokeWidth) - used to change the width of the axis.
+* [`AxisOrigin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SparklineAxis.html#Syncfusion_SfSparkline_XForms_SparklineAxis_AxisOrigin) - used to change the origin (positive or negative) of the axis.
 
 {% tabs %} 
 

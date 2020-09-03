@@ -8,7 +8,7 @@ documentation: ug
 ---
 # AutomationId in Xamarin Treeview (SfTreeView)
 
-The TreeView control has built-in `AutomationId` for inner elements. The [AutomationId](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.XForms.TreeView.SfTreeView~AutomationId.html) API allows the automation framework to find and interact with the inner elements of the TreeView control. To keep unique AutomationId, these inner element's AutomationIds are updated based on TreeView control `AutomationId`. 
+The TreeView control has built-in `AutomationId` for inner elements. The [AutomationId](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html) API allows the automation framework to find and interact with the inner elements of the TreeView control. To keep unique AutomationId, these inner element's AutomationIds are updated based on TreeView control `AutomationId`. 
 
 For example, if we set TreeView's AutomationId as "Automation" then Automation framework will interact with expander icon of TreeNodeItem  as `AutomationItem1 Expander`. Here, along with the control's AutomationId, index of an item will also be added for differentiating each TreeNodeItem expander. 
 

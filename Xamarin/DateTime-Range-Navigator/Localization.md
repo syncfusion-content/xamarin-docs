@@ -9,7 +9,7 @@ documentation: ug
 
 ## Localization 
 
-You can localize [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) in all the platforms by adding a .resx file in a .NET Standard project alone. The following steps describe how to localize SfDateTimeRangeNavigator in a project.
+You can localize [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) in all the platforms by adding a .resx file in a .NET Standard project alone. The following steps describe how to localize SfDateTimeRangeNavigator in a project.
 
 N> Here, the resources have been already created for some cultures and shared them on [`Syncfusion GitHub`](https://github.com/syncfusion/xamarin-localized-texts) for your convenience.
 
@@ -32,7 +32,7 @@ N> Here, the resources have been already created for some cultures and shared th
 
 {% endhighlight %} 
 
-4. Set resource manager to [‘RangeNavigatorResourceManager.Manager’](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.RangeNavigatorResourceManager~Manager.html) to get the resource manager from users as demonstrated in the following code sample. For more details, please refer [`Localization`](https://blog.syncfusion.com/post/localization-made-easy-for-syncfusion-xamarin-forms-components.aspx).
+4. Set resource manager to [‘RangeNavigatorResourceManager.Manager’](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RangeNavigatorResourceManager.html#Syncfusion_SfChart_XForms_RangeNavigatorResourceManager_Manager) to get the resource manager from users as demonstrated in the following code sample. For more details, please refer [`Localization`](https://blog.syncfusion.com/post/localization-made-easy-for-syncfusion-xamarin-forms-components.aspx).
 
 {% highlight C# %}
 

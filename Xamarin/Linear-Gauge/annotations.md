@@ -11,11 +11,11 @@ documentation: ug
 
 # Annotations in SfLinearGauge
 
-[`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge~Annotations.html), which is used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
+[`SfLinearGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html#Syncfusion_SfGauge_XForms_SfLinearGauge_Annotations), which is used to mark the specific area of interest in the gauge area with texts, shapes, or images. You can add any number of annotations to the gauge.
 
 ##  Annotation
 
-By using the [`View`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~View.html) property of annotation object, you can specify the new element that needs to be displayed in the gauge area.
+By using the [`View`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearGaugeAnnotation.html#Syncfusion_SfGauge_XForms_LinearGaugeAnnotation_View) property of annotation object, you can specify the new element that needs to be displayed in the gauge area.
 
 {% tabs %}
 
@@ -78,7 +78,7 @@ You can place the annotation anywhere in gauge area by using the `Offset` or `Sc
 
 ### Change annotation position by using offset
 
-You can position the annotation anywhere in the linear gauge by using the [`OffsetX`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~OffsetX.html) and [`OffsetY`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~OffsetY.html) properties. It ranges from 0 to 1.
+You can position the annotation anywhere in the linear gauge by using the [`OffsetX`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearGaugeAnnotation.html#Syncfusion_SfGauge_XForms_LinearGaugeAnnotation_OffsetX) and [`OffsetY`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearGaugeAnnotation.html#Syncfusion_SfGauge_XForms_LinearGaugeAnnotation_OffsetY) properties. It ranges from 0 to 1.
 
 {% tabs %}
 
@@ -137,7 +137,7 @@ You can position the annotation anywhere in the linear gauge by using the [`Offs
 
 ### Change annotation position by using scale value
 
-You can also place the annotation by specifying the [`ScaleValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~ScaleValue.html) property.
+You can also place the annotation by specifying the [`ScaleValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearGaugeAnnotation.html#Syncfusion_SfGauge_XForms_LinearGaugeAnnotation_ScaleValue) property.
 
 {% tabs %}
 
@@ -207,7 +207,7 @@ You can also place the annotation by specifying the [`ScaleValue`](https://help.
 
 ## Set margin to the annotation
 
-You can adjust the annotation by specifying the [`ViewMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~ViewMargin.html) property in pixel, which adjusts the annotation element from its current position. 
+You can adjust the annotation by specifying the [`ViewMargin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearGaugeAnnotation.html#Syncfusion_SfGauge_XForms_LinearGaugeAnnotation_ViewMargin) property in pixel, which adjusts the annotation element from its current position. 
 
 {% tabs %}
 
@@ -278,7 +278,7 @@ You can adjust the annotation by specifying the [`ViewMargin`](https://help.sync
 
 ## Alignment of annotation
 
-You can align the annotation using the [`HorizontalViewAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~HorizontalViewAlignment.html) and [`VerticalViewAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~VerticalViewAlignment.html) properties.
+You can align the annotation using the [`HorizontalViewAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearGaugeAnnotation.html#Syncfusion_SfGauge_XForms_LinearGaugeAnnotation_HorizontalViewAlignment) and [`VerticalViewAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearGaugeAnnotation.html#Syncfusion_SfGauge_XForms_LinearGaugeAnnotation_VerticalViewAlignment) properties.
 
 ### Setting horizontal view alignment
 
@@ -424,7 +424,7 @@ You can align the annotation using the [`HorizontalViewAlignment`](https://help.
 
 ## Setting scale index for annotation
 
-You can set the index for the scale by using [`ScaleIndex`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearGaugeAnnotation~ScaleIndex.html)
+You can set the index for the scale by using [`ScaleIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearGaugeAnnotation.html#Syncfusion_SfGauge_XForms_LinearGaugeAnnotation_ScaleIndex)
 
 {% tabs %}
 

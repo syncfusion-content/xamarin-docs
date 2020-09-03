@@ -16,7 +16,7 @@ The default value of the `IsHintAlwaysFloated` is `false`.
 
 ## Filled
 
-The hint label position of the input view will be set always at the top for the [Filled](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html) container type. 
+The hint label position of the input view will be set always at the top for the [Filled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) container type. 
 
 {% tabs %} 
 
@@ -49,7 +49,7 @@ inputLayout.InputView = new Entry();
 
 ## Outlined
 
-The hint label position of the input view will be set always at the top for the [Outlined](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html) container type.
+The hint label position of the input view will be set always at the top for the [Outlined](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) container type.
 
 {% tabs %} 
 
@@ -82,7 +82,7 @@ inputLayout.InputView = new Entry();
 
 ## None
 
-The hint label position of the input view will be set always at the top for the [None](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.TextInputLayout.ContainerType.html) container type.
+The hint label position of the input view will be set always at the top for the [None](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.ContainerType.html) container type.
 
 {% tabs %} 
 

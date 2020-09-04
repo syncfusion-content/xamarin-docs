@@ -9,7 +9,7 @@ documentation: ug
 
 # Add the custom view for button
 
-You can customize the appearance of the button by adding your custom view in the [`Content`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton~Content.html) property. The following code sample demonstrates how to apply the busy indicator control as custom view for a button.
+You can customize the appearance of the button by adding your custom view in the [`Content`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Content) property. The following code sample demonstrates how to apply the busy indicator control as custom view for a button.
 
 {% tabs %}
 {% highlight xaml %}

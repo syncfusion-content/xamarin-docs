@@ -41,7 +41,7 @@ The maps control uses `imagery layer` to display the tile images from the OSM se
 
 ![Xamarin OSM image](Images/OSM.png)
 
-N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer.html) and `ImageryLayer` have been derived commonly from MapsLayer.
+N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html) and `ImageryLayer` have been derived commonly from MapsLayer.
 
 ## Bing Maps
 
@@ -243,7 +243,7 @@ The `GeoCoordinates`(center) property allows you view the desired area at the ce
 
 ## Set markers in imagery layer
 
-As [`ShapeFileLayer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer.html), markers also can be added to imagery layer. Markers can be customized using the `MarkerSettings` property in imagery layer.
+As [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html), markers also can be added to imagery layer. Markers can be customized using the `MarkerSettings` property in imagery layer.
 The detailed explanation of marker and its customization have been provided in Markers section.
 
 {% tabs %}
@@ -312,7 +312,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 ## Load custom map
 
-You can load the custom map providers map such as Google Maps, TomTom using the [ `RequestTileUri` ](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~RequestTileUri_EV.html) event of ImageryLayer. For more details about  [ `RequestTileUri` ](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~RequestTileUri_EV.html), refer the [ `Events` ](https://help.syncfusion.com/xamarin/maps/mapsprovider#events) of ImageryLayer.
+You can load the custom map providers map such as Google Maps, TomTom using the [ `RequestTileUri` ](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) event of ImageryLayer. For more details about  [ `RequestTileUri` ](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html), refer the [ `Events` ](https://help.syncfusion.com/xamarin/maps/mapsprovider#events) of ImageryLayer.
 
 {% tabs %}
 
@@ -349,7 +349,7 @@ See also this [`KB article`](https://www.syncfusion.com/kb/8913/display-google-m
 
 ## Cache a tile images in application memory
 
-The [`CanCacheTiles`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~CanCacheTiles.html) property used to decide whether the tile images should be cached in application memory or not.
+The [`CanCacheTiles`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_CanCacheTiles) property used to decide whether the tile images should be cached in application memory or not.
 
 {% tabs %}
 
@@ -537,7 +537,7 @@ You can get imagery layer pixel bounds by using `MapBounds` property while zoomi
 
 ## Clear a cached tile images from application memory
 
-The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~DeleteTilesFromCache.html) method used to clear the cached tile images from  application cache memory.
+The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_DeleteTilesFromCache) method used to clear the cached tile images from  application cache memory.
 
 {% tabs %}
 
@@ -561,19 +561,19 @@ The [`DeleteTilesFromCache`](https://help.syncfusion.com/cr/cref_files/xamarin/S
 
 ## Events
 
-The [`RequestTileUriArgs`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs.html) event is triggered whenever new tile required for map(such as zooming, panning and initial time).
+The [`RequestTileUriArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TileUriArgs.html) event is triggered whenever new tile required for map(such as zooming, panning and initial time).
 
-The following arguments can be obtained from the  [ `RequestTileUri` ](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~RequestTileUri_EV.html) event:
+The following arguments can be obtained from the  [ `RequestTileUri` ](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) event:
 
-* [`Uri`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~Uri.html) – Provide the option to set the desired Uri to load the custom map.
+* [`Uri`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TileUriArgs.html#Syncfusion_SfMaps_XForms_TileUriArgs_Uri) – Provide the option to set the desired Uri to load the custom map.
 
-* [`UriRequestTask`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~UriRequestTask.html) – Used to gets or sets the requested uri task asynchronously to load the custom map.
+* [`UriRequestTask`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TileUriArgs.html#Syncfusion_SfMaps_XForms_TileUriArgs_UriRequestTask) – Used to gets or sets the requested uri task asynchronously to load the custom map.
 
-* [`X`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~X.html) – Used to gets the X Co-ordinate value of the tile image.
+* [`X`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TileUriArgs.html#Syncfusion_SfMaps_XForms_TileUriArgs_X) – Used to gets the X Co-ordinate value of the tile image.
 
-* [`Y`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~Y.html) – Used to gets the Y Co-ordinate value of the tile image.
+* [`Y`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TileUriArgs.html#Syncfusion_SfMaps_XForms_TileUriArgs_Y) – Used to gets the Y Co-ordinate value of the tile image.
 
-* [`ZoomLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TileUriArgs~ZoomLevel.html) – Used to gets the current zoom level value of the tile image. 
+* [`ZoomLevel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TileUriArgs.html#Syncfusion_SfMaps_XForms_TileUriArgs_ZoomLevel) – Used to gets the current zoom level value of the tile image. 
 
 {% tabs %}
 
@@ -602,13 +602,13 @@ private void ImageryLayer_RequestTileUri(object sender, Syncfusion.SfMaps.XForms
 
 {% endtabs %}
 
-The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
+The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html) event triggers when zoom level changed. Following arguments can be get from the ZoomLevelChanging event .
 
-* [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~Cancel.html) : Used to cancel the zooming.
+* [`Cancel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html#Syncfusion_SfMaps_XForms_ZoomLevelChangingEventArgs_Cancel) : Used to cancel the zooming.
 
-* [`PreviousLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~PreviousLevel.html) : Returns the previous level after the zooming.
+* [`PreviousLevel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html#Syncfusion_SfMaps_XForms_ZoomLevelChangingEventArgs_PreviousLevel) : Returns the previous level after the zooming.
 
-* [`CurrentLevel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs~CurrentLevel.html) : Returns the current level to be zoomed.
+* [`CurrentLevel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ZoomLevelChangingEventArgs.html#Syncfusion_SfMaps_XForms_ZoomLevelChangingEventArgs_CurrentLevel) : Returns the current level to be zoomed.
 
 {% tabs %}
 
@@ -637,15 +637,15 @@ The [`ZoomLevelChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Sync
 
 {% endtabs %}
 
-The [`GeoCoordinateChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ImageryLayer~GeoCoordinateChanged_EV.html) event is triggered while zooming and panning the maps.
+The [`GeoCoordinateChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) event is triggered while zooming and panning the maps.
 
 The following arguments can be gotten from the `ImageryLayer_GeoCoordinateChanged` event: 
 
-* [`Center`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~Center.html): Returns the center Geo coordinate point of the visual tiles while zooming and panning.
-* [`TopLeft`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~TopLeft.html):  Returns the top-left Geo coordinate point of the visual tiles while zooming and panning.
-* [`TopRight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~TopRight.html): Returns the top-right Geo coordinate point of the visual tiles while zooming and panning.
-* [`BottomLeft`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~BottomLeft.html): Returns the bottom-left Geo coordinate point of the visual tiles while zooming and panning.
-* [`BottomRight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs~BottomRight.html): Returns the bottom-right Geo coordinate point of the visual tiles while zooming and panning.
+* [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs.html#Syncfusion_SfMaps_XForms_GeoCoordinateChangedEventArgs_Center): Returns the center Geo coordinate point of the visual tiles while zooming and panning.
+* [`TopLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs.html#Syncfusion_SfMaps_XForms_GeoCoordinateChangedEventArgs_TopLeft):  Returns the top-left Geo coordinate point of the visual tiles while zooming and panning.
+* [`TopRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs.html#Syncfusion_SfMaps_XForms_GeoCoordinateChangedEventArgs_TopRight): Returns the top-right Geo coordinate point of the visual tiles while zooming and panning.
+* [`BottomLeft`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs.html#Syncfusion_SfMaps_XForms_GeoCoordinateChangedEventArgs_BottomLeft): Returns the bottom-left Geo coordinate point of the visual tiles while zooming and panning.
+* [`BottomRight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.GeoCoordinateChangedEventArgs.html#Syncfusion_SfMaps_XForms_GeoCoordinateChangedEventArgs_BottomRight): Returns the bottom-right Geo coordinate point of the visual tiles while zooming and panning.
 
 {% tabs %}
 

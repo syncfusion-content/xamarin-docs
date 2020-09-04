@@ -11,7 +11,7 @@ documentation: ug
 
 ## Scroll to message
 
-You can scroll to a particular message programmatically using the [SfChat.ScrollToMessage(Object)](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ScrollToMessage.html) method.
+You can scroll to a particular message programmatically using the [SfChat.ScrollToMessage(Object)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ScrollToMessage_System_Object_) method.
 
 {% tabs %}
 {% highlight xaml %}
@@ -61,7 +61,7 @@ public partial class MainPage : ContentPage
 
 ## Auto scroll chat control to bottom when new message is added
 
-By default the SfChat control is scrolled to the bottom to show the newly added message. If you want to disable this auto scroll, set [SfChat.CanAutoScrollToBottom](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CanAutoScrollToBottom.html) as `false`.
+By default the SfChat control is scrolled to the bottom to show the newly added message. If you want to disable this auto scroll, set [SfChat.CanAutoScrollToBottom](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CanAutoScrollToBottom) as `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -88,7 +88,7 @@ By default the SfChat control is scrolled to the bottom to show the newly added 
 
 ## Scrolled event
 
-The `SfChat` control comes with built-in [SfChat.Scrolled](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~Scrolled_EV.html) event that will be fired whenever the chat control is scrolled. You can get the current scroll offset, whether scrolling has reached the top or bottom of the message list in the [ChatScrolledEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatScrolledEventArgs.html). You can handle this event to restrict the auto-scroll in chat for newly added messages, if the user had already scrolled up manually and was currently not at the bottom of the chat when the new message was added. 
+The `SfChat` control comes with built-in [SfChat.Scrolled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) event that will be fired whenever the chat control is scrolled. You can get the current scroll offset, whether scrolling has reached the top or bottom of the message list in the [ChatScrolledEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ChatScrolledEventArgs.html). You can handle this event to restrict the auto-scroll in chat for newly added messages, if the user had already scrolled up manually and was currently not at the bottom of the chat when the new message was added. 
 
 {% tabs %}
 {% highlight xaml %}

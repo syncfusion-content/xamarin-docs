@@ -9,7 +9,7 @@ documentation: ug
 
 # Trendlines in Xamarin Charts (SfChart)
 
-The [`Trendline`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendline.html) is a line drawn over the chart to display the overall direction of the results. And it built on the assumption based on current and past beliefs. 
+The [`Trendline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendline.html) is a line drawn over the chart to display the overall direction of the results. And it built on the assumption based on current and past beliefs. 
 
 N> We can draw trendlines for all type of Cartesian series except bar type.
 
@@ -49,7 +49,7 @@ columnSeries.Trendlines.Add(new ChartTrendline());
 
 ## Types of Trendline
 
-SfChart support following types of [`Trendlines`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendline.html).
+SfChart support following types of [`Trendlines`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendline.html).
 
 * [`Linear`](https://help.syncfusion.com/xamarin/charts/trendlines#linear)
 * [`Exponential`](https://help.syncfusion.com/xamarin/charts/trendlines#exponential)
@@ -60,7 +60,7 @@ SfChart support following types of [`Trendlines`](https://help.syncfusion.com/cr
 
 ### Linear
 
-[`Linear`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendlineType.html) trendline was best-fit straight line for simple linear datasets. A linear trend line usually shows that something is increasing or decreasing at a steady rate. This is the default trendline to be drawn for the SfChart.
+[`Linear`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendlineType.html) trendline was best-fit straight line for simple linear datasets. A linear trend line usually shows that something is increasing or decreasing at a steady rate. This is the default trendline to be drawn for the SfChart.
 
 The following is the code example of linear trend line.
 
@@ -101,7 +101,7 @@ Chart.Series.Add(columnSeries);
 
 ### Logarithmic
 
-A [`Logarithmic`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendlineType.html) trendline is the strongest-fit curved line, that is most effective when the data change rate increases or decreases rapidly. Logarithmic trends may use negative and/or positive values as well. 
+A [`Logarithmic`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendlineType.html) trendline is the strongest-fit curved line, that is most effective when the data change rate increases or decreases rapidly. Logarithmic trends may use negative and/or positive values as well. 
 
 The following is the code example of logarithmic trend line.
 
@@ -141,7 +141,7 @@ Chart.Series.Add(columnSeries);
 
 ### Exponential
 
-The [`Exponential`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendlineType.html) trendline is the curved line most useful for data values rise or fall at increasingly higher rates.
+The [`Exponential`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendlineType.html) trendline is the curved line most useful for data values rise or fall at increasingly higher rates.
 
 N> SfChart will not generate Exponential trendline when your data contains zero or negative values. 
 
@@ -182,7 +182,7 @@ Chart.Series.Add(columnSeries);
 
 ### Power
 
-The [`Power`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendlineType.html) trendline is typically used with data sets to compare measurements that grow at a specific rate.
+The [`Power`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendlineType.html) trendline is typically used with data sets to compare measurements that grow at a specific rate.
 
 The following is the code example of power trend line.
 
@@ -223,7 +223,7 @@ Chart.Series.Add(columnSeries);
 
 ### Polynomial
 
-The [`polynomial`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendlineType.html) trendline is a curved line that is used when there are more data fluctuations. By default, this trendline calculated with order of 2, it will be override by the property [`PolynomialOrder`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendline~PolynomialOrder.html).
+The [`polynomial`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendlineType.html) trendline is a curved line that is used when there are more data fluctuations. By default, this trendline calculated with order of 2, it will be override by the property [`PolynomialOrder`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendline.html#Syncfusion_SfChart_XForms_ChartTrendline_PolynomialOrder).
 
 The following is the code example of polynomial trend line.
 
@@ -275,7 +275,7 @@ The following two types of forecasting are available in SfChart:
 ### Forward Forecasting
 
 For determining the future trends (in forward direction). The 
-following code example explains the how to set the value for [`ForwardForecast`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendline~ForwardForecast.html).
+following code example explains the how to set the value for [`ForwardForecast`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendline.html#Syncfusion_SfChart_XForms_ChartTrendline_ForwardForecast).
 
 {% tabs %} 
 
@@ -312,7 +312,7 @@ columnSeries.Trendlines.Add(new ChartTrendline());
 
 ### Backward Forecasting
 
-For determining the future trends (in backward direction). The following code example explains the how to set the value for [`BackwardForecast`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendline~BackwardForecast.html).
+For determining the future trends (in backward direction). The following code example explains the how to set the value for [`BackwardForecast`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendline.html#Syncfusion_SfChart_XForms_ChartTrendline_BackwardForecast).
 
 {% tabs %} 
 
@@ -349,7 +349,7 @@ Chart.Series.Add(columnSeries);
 
 ## Customization
 
-We can customize the trendline appearance using [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendline~StrokeWidth.html), [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendline~StrokeColor.html) and [`StrokeDashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendline~StrokeDashArray.html) properties. 
+We can customize the trendline appearance using [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendline.html#Syncfusion_SfChart_XForms_ChartTrendline_StrokeWidth), [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendline.html#Syncfusion_SfChart_XForms_ChartTrendline_StrokeColor) and [`StrokeDashArray`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendline.html#Syncfusion_SfChart_XForms_ChartTrendline_StrokeDashArray) properties. 
 
 {% tabs %} 
 
@@ -392,7 +392,7 @@ columnSeries.Trendlines.Add(new ChartTrendline());
 
 ## Legend Item Visibility
 
-We can able to control the visibility of the trendline legend items using [`IsVisibleOnLegend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrendline~IsVisibleOnLegend.html) property of the Trendline.
+We can able to control the visibility of the trendline legend items using [`IsVisibleOnLegend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrendline.html#Syncfusion_SfChart_XForms_ChartTrendline_IsVisibleOnLegend) property of the Trendline.
 
 {% tabs %} 
 

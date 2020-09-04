@@ -11,7 +11,7 @@ keywords: mask, SfMaskedEdit, maskededit
 
 ## Validation Mode
 
-Input validation happens based on the value of the [`ValidationMode`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ValidationMode.html) property. The enum values of this property are:
+Input validation happens based on the value of the [`ValidationMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ValidationMode) property. The enum values of this property are:
 
 * KeyPress
 * LostFocus
@@ -34,7 +34,7 @@ When the ValidationMode is LostFocus, the validation takes place when the contro
 
 ## HasError
 
-This read only property is used to check whether the validation succeeds or not. It returns true once validation succeeds or else returns false. The following code example shows the usage of [`HasError`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~HasError.html) property.
+This read only property is used to check whether the validation succeeds or not. It returns true once validation succeeds or else returns false. The following code example shows the usage of [`HasError`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_HasError) property.
 
 {% tabs %}
 {% highlight c# %}

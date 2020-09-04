@@ -15,7 +15,7 @@ Range is a visual element, which begins and ends at specified values within a sc
 
 ## Setting start and end values for range
 
-Start and end values of ranges are set by using the [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearRange~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearRange~EndValue.html) properties.
+Start and end values of ranges are set by using the [`StartValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearRange.html#Syncfusion_SfGauge_XForms_LinearRange_StartValue) and [`EndValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearRange.html#Syncfusion_SfGauge_XForms_LinearRange_EndValue) properties.
 
 {% tabs %}
 
@@ -69,7 +69,7 @@ Start and end values of ranges are set by using the [`StartValue`](https://help.
 
 ## Range customization
 
-To change the range’s background color, use the [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearRange~Color.html) property of linear range. The thickness of the range can be changed using the [`StartWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearRange~StartWidth.html) and [`EndWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearRange~EndWidth.html) properties. 
+To change the range’s background color, use the [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearRange.html#Syncfusion_SfGauge_XForms_LinearRange_Color) property of linear range. The thickness of the range can be changed using the [`StartWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearRange.html#Syncfusion_SfGauge_XForms_LinearRange_StartWidth) and [`EndWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearRange.html#Syncfusion_SfGauge_XForms_LinearRange_EndWidth) properties. 
 
 {% tabs %}
 
@@ -126,7 +126,7 @@ To change the range’s background color, use the [`Color`](https://help.syncfus
 
 ## Setting position for range
 
-The range can be adjusted above or below the scale by using the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearRange~Offset.html) value in pixels.
+The range can be adjusted above or below the scale by using the [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearRange.html#Syncfusion_SfGauge_XForms_LinearRange_Offset) value in pixels.
 
 {% tabs %}
 
@@ -186,7 +186,7 @@ The range can be adjusted above or below the scale by using the [`Offset`](https
 
 ## Setting multiple ranges
 
-You can add n number of ranges to a scale by using the [`LinearRange`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearRange.html) property of range as demonstrated below.
+You can add n number of ranges to a scale by using the [`LinearRange`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearRange.html) property of range as demonstrated below.
 
 {% tabs %}
 
@@ -263,7 +263,7 @@ You can add n number of ranges to a scale by using the [`LinearRange`](https://h
 
 ## Setting gradient color for range
 
-You can give smooth color transition to range to specifying the different colors based on range value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearRange~GradientStops.html) property.   
+You can give smooth color transition to range to specifying the different colors based on range value by using [`GradientStops`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearRange.html#Syncfusion_SfGauge_XForms_LinearRange_GradientStops) property.   
 
 {% tabs %}
 

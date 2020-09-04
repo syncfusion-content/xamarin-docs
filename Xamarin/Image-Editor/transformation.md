@@ -13,7 +13,7 @@ The image editor control is capable of performing the image transformations such
 
 ## Rotation
 
-You can use the [`Rotate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~Rotate.html) method of the image editor to rotate a image. For each rotation, image will be rotated to 90 degrees towards clockwise direction.
+You can use the [`Rotate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_Rotate) method of the image editor to rotate a image. For each rotation, image will be rotated to 90 degrees towards clockwise direction.
 
 N> Angle cannot be specified in code to alter the rotation angle of the image.
 
@@ -31,7 +31,7 @@ editor.Rotate();
 
 ## Flip
 
-The image editor control is capable of showing the mirror image. The [`Flip`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~Flip.html) method flips the image horizontally or vertically based on the [`FlipDirection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.FlipDirection.html) specified as argument of the flip method.
+The image editor control is capable of showing the mirror image. The [`Flip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_Flip_Syncfusion_SfImageEditor_XForms_FlipDirection_) method flips the image horizontally or vertically based on the [`FlipDirection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.FlipDirection.html) specified as argument of the flip method.
 
 N> The default flip direction is horizontal.
 

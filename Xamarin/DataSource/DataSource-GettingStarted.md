@@ -143,7 +143,7 @@ public class ContactsList : ObservableCollection<Contacts>, INotifyPropertyChang
 {% endhighlight %}
 {% endtabs %}
 
-* You can set the source for the DataSource by using the [DataSource.Source](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~Source.html) property. You can bind the [DataSource.DisplayItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~DisplayItems.html) as `ItemsSource` for any data bound control.
+* You can set the source for the DataSource by using the [DataSource.Source](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Source) property. You can bind the [DataSource.DisplayItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_DisplayItems) as `ItemsSource` for any data bound control.
 
 {% tabs %}
 {% highlight c# %}
@@ -157,11 +157,11 @@ public App()
 
 ## Sorting
 
-DataSource allows sorting the bound source by using the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SortDescriptors.html) property. You can create a [SortDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.SortDescriptor.html) for the property to be sorted and add it in the `DataSource.SortDescriptors` collection. 
+DataSource allows sorting the bound source by using the [DataSource.SortDescriptors](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SortDescriptors) property. You can create a [SortDescriptor](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.SortDescriptor.html) for the property to be sorted and add it in the `DataSource.SortDescriptors` collection. 
 The `SortDescriptor` object holds following three properties:
 
 * PropertyName: Specifies name of the sorted property.
-* Direction: Specifies an object of type [ListSortDirection](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.ListSortDirection.html) that defines the sorting direction.
+* Direction: Specifies an object of type [ListSortDirection](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.ListSortDirection.html) that defines the sorting direction.
 * Comparer: Specifies a comparer to be applied when sorting take place.
 
  The following code illustrates this.
@@ -174,11 +174,11 @@ dataSource.SortDescriptors.Add(new SortDescriptor("ContactName"));
 
 ## Grouping
 
-DataSource allows sorting the bound source by using the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~GroupDescriptors.html) property. You can create a [GroupDescriptor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor.html) for the property to be grouped and add it in the `DataSource.GroupDescriptors` collection.
+DataSource allows sorting the bound source by using the [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupDescriptors) property. You can create a [GroupDescriptor](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.GroupDescriptor.html) for the property to be grouped and add it in the `DataSource.GroupDescriptors` collection.
 `GroupDescriptor` object holds following two properties:
 
 * PropertyName: Specifies name of the grouped property.
-* KeySelector: Sets the [KeySelector](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.GroupDescriptor~KeySelector.html) for grouping.
+* KeySelector: Sets the [KeySelector](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.GroupDescriptor.html#Syncfusion_DataSource_GroupDescriptor_KeySelector) for grouping.
 * Comparer: Comparer to be applied in when sorting take place
 
 The following code example illustrates this without `KeySelector`.
@@ -286,7 +286,7 @@ private void ViewCell_BindingContextChanged(object sender, EventArgs e)
 
 ## Defining the LiveDataUpdateMode
 
-`DataSource` listens manipulation operations such as add, delete, and data update (property change) at runtime and responds based on the [LiveDataUpdateMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.LiveDataUpdateMode.html) property. Default value is `LiveDataUpdateMode.Default`. The `LiveDataUpdateMode` property holds the following two enumeration values:
+`DataSource` listens manipulation operations such as add, delete, and data update (property change) at runtime and responds based on the [LiveDataUpdateMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.LiveDataUpdateMode.html) property. Default value is `LiveDataUpdateMode.Default`. The `LiveDataUpdateMode` property holds the following two enumeration values:
 
 * Default: Refreshes an item in view when the underlying property is changed.
 * AllowDataShaping: Refreshes an item in view and also updates the collection when the underlying property is changed.
@@ -301,7 +301,7 @@ private void UpdateData_Clicked(object sender, EventArgs e)
 
 ## Defining the source data type
 
-When the [Source](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~Source.html) property binds with different types of underlying collection derived from the same type, set the [SourceType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~SourceType.html) as base type for all different types.
+When the [Source](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_Source) property binds with different types of underlying collection derived from the same type, set the [SourceType](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_SourceType) as base type for all different types.
 
 {% highlight c# %}
 DataSource.SourceType = typeof(Contacts);

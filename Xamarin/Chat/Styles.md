@@ -14,7 +14,7 @@ You can style the elements of the SfChat control by creating resource dictionari
 
 ## Chat Background
 
-You can set any solid color as background for SfChat by setting any color to the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~BackgroundColor.html) property. However if you want the solid color to be applied to the message input view area also, set the background color of the message input view as transparent as shown in the below code snippet.
+You can set any solid color as background for SfChat by setting any color to the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) property. However if you want the solid color to be applied to the message input view area also, set the background color of the message input view as transparent as shown in the below code snippet.
 
 {% tabs %}
 
@@ -77,7 +77,7 @@ You can set any solid color as background for SfChat by setting any color to the
 
 ### Set background image
 
-You can set any image as background for the SfChat by setting the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~BackgroundColor.html) as `Color.Transparent` and adding an image below the SfChat control. However if you want the image to be applied to the message input view area also, set the background color of the message input view as transparent as shown in the below code snippet.
+You can set any image as background for the SfChat by setting the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) as `Color.Transparent` and adding an image below the SfChat control. However if you want the image to be applied to the message input view area also, set the background color of the message input view as transparent as shown in the below code snippet.
 
 {% tabs %}
 
@@ -149,7 +149,7 @@ You can set any image as background for the SfChat by setting the [SfChat.Backgr
 
 ### Set gradient background
 
-You can set the gradient view as a background for chat by setting the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~BackgroundColor.html) property as `Color.Transparent` and adding the gradient view below the SfChat control. However if you want the gradient view to be applied to the message input view area also, set the background color of the message input view as transparent as shown in the below code snippet.
+You can set the gradient view as a background for chat by setting the [SfChat.BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) property as `Color.Transparent` and adding the gradient view below the SfChat control. However if you want the gradient view to be applied to the message input view area also, set the background color of the message input view as transparent as shown in the below code snippet.
 
 {% tabs %}
 

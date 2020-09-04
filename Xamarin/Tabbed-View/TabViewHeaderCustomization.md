@@ -93,7 +93,7 @@ namespace TabViewAutomationSample
 
 ## Share the header space equally
 
-To share the header space to the tabs equally, set the number of tabs that can be distributed in the available space though the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTabView.XForms~Syncfusion.XForms.TabView.SfTabView~VisibleHeaderCount.html) of SfTabView.
+To share the header space to the tabs equally, set the number of tabs that can be distributed in the available space though the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) of SfTabView.
 
 {% tabs %}
 
@@ -189,7 +189,7 @@ namespace TabViewAutomationSample
 
 ## Add all tab items in a single view 
 
-When you set the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTabView.XForms~Syncfusion.XForms.TabView.SfTabView~VisibleHeaderCount.html) to -1, you get all the tab items in a single view based on the width of the visible area in the control and tab count.
+When you set the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) to -1, you get all the tab items in a single view based on the width of the visible area in the control and tab count.
 
 {% tabs %}
 
@@ -299,6 +299,6 @@ namespace TabViewAutomationSample
 
 {% endtabs %}
 
-N> The nullable support for [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTabView.XForms~Syncfusion.XForms.TabView.SfTabView~VisibleHeaderCount.html) only works when [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTabView.XForms~Syncfusion.XForms.TabView.SfTabView~OverflowMode.html) is set to `Scroll` or `DropDown`. 
+N> The nullable support for [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) only works when [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to `Scroll` or `DropDown`. 
 
 ![VisibleHeaderCount](images/TabItems/NullVisibleHeaderCount.jpg)

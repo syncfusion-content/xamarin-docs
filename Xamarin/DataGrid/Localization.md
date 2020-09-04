@@ -285,7 +285,7 @@ Implementation of the interface is not required for UWP project, since the resou
 
 ## Apply the converted format 
 
-After setting the root/main page of the application in your App.Xaml.cs file of the PCL project, initialize a new instance of the `ResourceManager` class and set it to the [DataGridResourceManager.Manager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.XForms.DataGridResourceManager~Manager.html) property to look up into the resources with specified root name in the given assembly. Using `DependencyService`, call `SetLocale()` of the implemented interface with necessary language code as parameter.
+After setting the root/main page of the application in your App.Xaml.cs file of the PCL project, initialize a new instance of the `ResourceManager` class and set it to the [DataGridResourceManager.Manager](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataGridResourceManager.html#Syncfusion_XForms_DataGridResourceManager_Manager) property to look up into the resources with specified root name in the given assembly. Using `DependencyService`, call `SetLocale()` of the implemented interface with necessary language code as parameter.
 
 {% tabs %}
 {% highlight c# %}

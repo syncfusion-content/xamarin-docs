@@ -73,7 +73,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 #### For SfChip
 
-To launch the [SfChip](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChip.html) in iOS, call the `SfChipRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample:
+To launch the [SfChip](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) in iOS, call the `SfChipRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample:
 
 {% highlight c# %}
 
@@ -92,7 +92,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 #### For SfChipGroup
 
-To launch the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup.html) in iOS, call the `SfChipGroupRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample:
+To launch the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html) in iOS, call the `SfChipGroupRenderer.Init()` method in the FinishedLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework has been initialized and before the LoadApplication method is called as demonstrated in the following code sample:
 
 {% highlight c# %}
 
@@ -113,7 +113,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 #### For SfChip
 
-To deploy the [SfChip](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChip.html) in `Release` mode, you need to initialize the SfChip assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
+To deploy the [SfChip](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChip.html) in `Release` mode, you need to initialize the SfChip assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
 
 {% highlight c# %}
 
@@ -141,7 +141,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 #### For SfChipGroup
 
-To deploy the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup.html) in `Release` mode, you need to initialize the SfChipGroup assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
+To deploy the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html) in `Release` mode, you need to initialize the SfChipGroup assemblies in the App.xaml.cs file in the UWP project as shown in the following code sample.
 
 {% highlight c# %}
 
@@ -199,7 +199,7 @@ The Android platform does not require any additional configuration to render the
 
 ## Initialize chips
 
-Import the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons_namespace.html) namespace in respective page.
+Import the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.html) namespace in respective page.
 
 {% tabs %}
 

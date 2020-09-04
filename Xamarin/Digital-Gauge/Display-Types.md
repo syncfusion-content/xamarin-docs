@@ -13,7 +13,7 @@ The digital gauge displays numbers, alphabet, and special characters, which are 
 
 ## Setting value to number
 
-Numbers can be displayed in digital gauge in different formats using the [`CharacterType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfDigitalGauge~CharacterType.html) property.
+Numbers can be displayed in digital gauge in different formats using the [`CharacterType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfDigitalGauge.html#Syncfusion_SfGauge_XForms_SfDigitalGauge_CharacterType) property.
 
 {% tabs %}
 

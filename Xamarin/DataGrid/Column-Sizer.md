@@ -174,7 +174,7 @@ public MainPage()
 
 ### Refreshing ColumnSizer at runtime
 
-To refresh the column sizing for `SfDataGrid.Columns` at runtime, use the [SfDataGrid.GridColumnSizer.Refresh](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer~Refresh(Boolean).html)() method.
+To refresh the column sizing for `SfDataGrid.Columns` at runtime, use the [SfDataGrid.GridColumnSizer.Refresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumnSizer.html#Syncfusion_SfDataGrid_XForms_GridColumnSizer_Refresh_System_Boolean_)() method.
 
 Consider that `ColumnSizer.Auto` is applied to the SfDataGrid. If the underlying values are changed at run time, refresh the column sizer as follows:
 
@@ -259,8 +259,8 @@ private void ResetColumnsWidth()
 
 ### Customize auto width calculation for a column
 
-For cases, where a column might require more width than the applied auto width or if you want to apply your own custom logic to calculate the auto width of a column, return a desired width in the [GetColumnAutoSizeWidth()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer~GetColumnAutoSizeWidth.html) override of the custom written column-sizer class derived from [GridColumnSizer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer.html#) and assign it to the [SfDataGrid.GridColumnSizer](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GridColumnSizer.html) property.
-If in case you want to modify the auto calculations of a column's header cell alone, return a desired width in the [GetHeaderCellWidth()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumnSizer~GetHeaderCellWidth.html) override of your custom column-sizer class.
+For cases, where a column might require more width than the applied auto width or if you want to apply your own custom logic to calculate the auto width of a column, return a desired width in the [GetColumnAutoSizeWidth()](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumnSizer.html#Syncfusion_SfDataGrid_XForms_GridColumnSizer_GetColumnAutoSizeWidth_Syncfusion_SfDataGrid_XForms_GridColumn_) override of the custom written column-sizer class derived from [GridColumnSizer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumnSizer.html#) and assign it to the [SfDataGrid.GridColumnSizer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_GridColumnSizer) property.
+If in case you want to modify the auto calculations of a column's header cell alone, return a desired width in the [GetHeaderCellWidth()](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumnSizer.html#Syncfusion_SfDataGrid_XForms_GridColumnSizer_GetHeaderCellWidth_Syncfusion_SfDataGrid_XForms_GridColumn_) override of your custom column-sizer class.
 
 {% tabs %}
 {% highlight c# %}

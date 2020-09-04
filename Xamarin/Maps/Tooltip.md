@@ -9,7 +9,7 @@ documentation: ug
 
 # Tooltip
 
-Tooltip provides additional information about the shapes in the maps. To enable tooltip, set the [`ShowTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~ShowTooltip.html) property to true, and set the [`ValuePath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~ValuePath.html) property of tooltip.
+Tooltip provides additional information about the shapes in the maps. To enable tooltip, set the [`ShowTooltip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_ShowTooltip) property to true, and set the [`ValuePath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_ValuePath) property of tooltip.
 
 Tooltip is displayed by tapping the following elements:
 •	Shapes
@@ -57,12 +57,12 @@ Content = sfMaps;
 ## Tooltip customization
 
 The appearance of the tooltip can be customized using the following properties:
-*	[`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~TextColor.html): Customizes the text color of tooltip.
-*	[`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~BackgroundColor.html): Customizes the background color of tooltip.
-* [`StrokeColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~StrokeColor.html): Customizes the stroke color of tooltip.
-* [`StrokeWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~StrokeWidth.html): Customizes the stroke width of tooltip.
-* [`Duration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~Duration.html): Specifies the duration of tooltip to be displayed.
-* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~Margin.html): Sets the margin for tooltip.
+*	[`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_TextColor): Customizes the text color of tooltip.
+*	[`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_BackgroundColor): Customizes the background color of tooltip.
+* [`StrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_StrokeColor): Customizes the stroke color of tooltip.
+* [`StrokeWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_StrokeWidth): Customizes the stroke width of tooltip.
+* [`Duration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_Duration): Specifies the duration of tooltip to be displayed.
+* [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_Margin): Sets the margin for tooltip.
 
 The following code sample shows all the above customizations.
 
@@ -110,7 +110,7 @@ Content = sfMaps;
 
 ## Tooltip font customization
 
-The font can be customized using the [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~FontSize.html), [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~FontAttributes.html), and [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~FontFamily.html) properties of tooltip.
+The font can be customized using the [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_FontSize), [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_FontAttributes), and [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_FontFamily) properties of tooltip.
 
 {% tabs %} 
 
@@ -157,7 +157,7 @@ Content = sfMaps;
 
 ## Custom template for tooltip
 
-The maps control provides options to design your own template for tooltip using the [`TooltipTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~TooltipTemplate.html) property.
+The maps control provides options to design your own template for tooltip using the [`TooltipTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_TooltipTemplate) property.
 
 {% tabs %} 
 
@@ -265,7 +265,7 @@ Content = sfMaps;
 
 ## Setting animation for tooltip
 
-You can enable or disable the animation of tooltip using the [`EnableAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~EnableAnimation.html) property.
+You can enable or disable the animation of tooltip using the [`EnableAnimation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_EnableAnimation) property.
 
 {% tabs %} 
 
@@ -290,7 +290,7 @@ sfMaps.Layers.Add(shapeFileLayer);
 
 ## Setting pointer length for tooltip
 
-You can customize the pointer length of the tooltip using the [`PointerLength`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipSetting~PointerLength.html) property.
+You can customize the pointer length of the tooltip using the [`PointerLength`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_PointerLength) property.
 
 {% tabs %} 
 
@@ -333,7 +333,7 @@ Content = sfMaps;
 
 ### Tooltip opening event
 
-This event occurs whenever you select a shape, bubble, or marker. You will get the [`Data`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipOpeningEventArgs~Data.html) and [`TooltipType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipOpeningEventArgs~TooltipType.html) properties as arguments from [`TooltipOpeningEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipOpeningEventArgs~_ctor.html) handler, and you can cancel the event for a particular shape using the [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.TooltipOpeningEventArgs~Cancel.html) property.
+This event occurs whenever you select a shape, bubble, or marker. You will get the [`Data`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipOpeningEventArgs.html#Syncfusion_SfMaps_XForms_TooltipOpeningEventArgs_Data) and [`TooltipType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipOpeningEventArgs.html#Syncfusion_SfMaps_XForms_TooltipOpeningEventArgs_TooltipType) properties as arguments from [`TooltipOpeningEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipOpeningEventArgs.html#Syncfusion_SfMaps_XForms__ctor) handler, and you can cancel the event for a particular shape using the [`Cancel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipOpeningEventArgs.html#Syncfusion_SfMaps_XForms_TooltipOpeningEventArgs_Cancel) property.
 
 {% tabs %} 
 

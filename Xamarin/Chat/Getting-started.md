@@ -331,7 +331,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Binding Messages to SfChat 
 
-To bind the messages to SfChat, set the [SfChat.Messages](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~Messages.html) property as follows. You can bind the message collection of the SfChat either from XAML or in code. 
+To bind the messages to SfChat, set the [SfChat.Messages](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_Messages) property as follows. You can bind the message collection of the SfChat either from XAML or in code. 
 
 The following code example binds the collection created in previous step to `SfChat.Messages` property.
 
@@ -389,7 +389,7 @@ Run the application to render the following output.
 
 ## Showing time break between messages
 
-Messages can be separated based on the date specified in the message and this can be achieved by setting the [SfChat.ShowTimeBreak](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowTimeBreak.html) property to true. It can be done from both XAML and code. The following code example illustrates this:
+Messages can be separated based on the date specified in the message and this can be achieved by setting the [SfChat.ShowTimeBreak](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowTimeBreak) property to true. It can be done from both XAML and code. The following code example illustrates this:
 
 {% tabs %}
 {% highlight xaml %}

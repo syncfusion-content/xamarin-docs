@@ -11,7 +11,7 @@ documentation: ug
 
 ## Export as an image
 
-You can export the Chart as a JPG image using [`SaveAsImage`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~SaveAsImage.html#) method of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html#).
+You can export the Chart as a JPG image using [`SaveAsImage`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_SaveAsImage_System_String_) method of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#).
 
 {% tabs %} 
 
@@ -38,11 +38,11 @@ N> In order to save the image in Android and Windows Phone, you have to enable t
 
 ## Get the stream of Chart
 
-['SfChart'](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html) contains the following methods to get the chart stream.
+['SfChart'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) contains the following methods to get the chart stream.
 
 ## GetStream
 
-The [`GetStream`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~GetStream.html) method of SfChart is used to get the chart as stream. The output stream can be passed as an input of any other components which accept the stream such as pdf, excel, word etc. This method is only applicable for Android and iOS platforms only.
+The [`GetStream`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_GetStream) method of SfChart is used to get the chart as stream. The output stream can be passed as an input of any other components which accept the stream such as pdf, excel, word etc. This method is only applicable for Android and iOS platforms only.
 
 {% tabs %} 
 
@@ -59,7 +59,7 @@ chart.GetStream();
 
 ## GetStreamAsync
 
-The [`GetStreamAsync`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~GetStreamAsync.html) method of SfChart is used to get the chart as stream asynchronously. 
+The [`GetStreamAsync`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_GetStreamAsync) method of SfChart is used to get the chart as stream asynchronously. 
 
 N> This method will work only when the SfChart view in UI.
 

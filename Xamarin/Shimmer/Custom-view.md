@@ -9,7 +9,7 @@ documentation: ug
 
 ## Custom view
 
-You can customize the shimmer using your own view using the [`CustomView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~CustomView.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html). The below code demonstrate how to customize the shimmer view using Xamarin.Forms framework elements by [`CustomView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~CustomView.html).
+You can customize the shimmer using your own view using the [`CustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_CustomView) property of [`SfShimmer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html). The below code demonstrate how to customize the shimmer view using Xamarin.Forms framework elements by [`CustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_CustomView).
 
 {% tabs %} 
 
@@ -376,11 +376,11 @@ You can customize the shimmer using your own view using the [`CustomView`](https
 
 N> The custom view of shimmer will support any kind of views in Android and iOS but UWP will only support `ShimmerView`.
 
-For using [`CustomView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~CustomView.html) in iOS, set [`WaveColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~WaveColor.html) as the [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~BackgroundColor.html) of Shimmer.
+For using [`CustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_CustomView) in iOS, set [`WaveColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_WaveColor) as the [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html) of Shimmer.
 
 ## Shimmer view
 
-You can also customize the shimmer using `ShimmerView` using the [`CustomView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~CustomView.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html) in all the three platforms on Xamarin.Forms (Android, iOS and UWP).
+You can also customize the shimmer using `ShimmerView` using the [`CustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_CustomView) property of [`SfShimmer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html) in all the three platforms on Xamarin.Forms (Android, iOS and UWP).
 
 {% tabs %} 
 

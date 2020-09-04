@@ -9,12 +9,12 @@ documentation: ug
 
 # Markers
 
-[`Markers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfLineSparkline~Marker.html) are used to highlight the data point in [`SfLineSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfLineSparkline.html) and [`SfAreaSparkline`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.SfAreaSparkline.html). You can use the following properties to customize the appearance.
+[`Markers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfLineSparkline.html#Syncfusion_SfSparkline_XForms_SfLineSparkline_Marker) are used to highlight the data point in [`SfLineSparkline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfLineSparkline.html) and [`SfAreaSparkline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfAreaSparkline.html). You can use the following properties to customize the appearance.
 
-* [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.MarkerBase~IsVisible.html) - used to change the visibility of the marker.
-* [`Width`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.MarkerBase~Width.html) - used to change the width of the marker.
-* [`Height`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.MarkerBase~Height.html) - used to change the height of the marker.
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSparkline.XForms~Syncfusion.SfSparkline.XForms.MarkerBase~Color.html) - used to change the color of the marker.
+* [`IsVisible`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.MarkerBase.html#Syncfusion_SfSparkline_XForms_MarkerBase_IsVisible) - used to change the visibility of the marker.
+* [`Width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.MarkerBase.html#Syncfusion_SfSparkline_XForms_MarkerBase_Width) - used to change the width of the marker.
+* [`Height`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.MarkerBase.html#Syncfusion_SfSparkline_XForms_MarkerBase_Height) - used to change the height of the marker.
+* [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.MarkerBase.html#Syncfusion_SfSparkline_XForms_MarkerBase_Color) - used to change the color of the marker.
 
 {% tabs %} 
 

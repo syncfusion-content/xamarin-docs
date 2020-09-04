@@ -9,7 +9,7 @@ documentation: ug
 
 # Text in SfImageEditor
 
-You can annotate the desired text elements to an image using the [`AddText`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~AddText.html): method with customization options.
+You can annotate the desired text elements to an image using the [`AddText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_AddText_System_String_Syncfusion_SfImageEditor_XForms_TextSettings_): method with customization options.
 
 {% highlight C# %}
 
@@ -19,17 +19,17 @@ You can annotate the desired text elements to an image using the [`AddText`](htt
 
 ## Customize text with TextSettings
 
-You can customize the appearance of the text using the [`TextSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings.html): property.
+You can customize the appearance of the text using the [`TextSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html): property.
 
 The `TextSettings` property consists of the following properties:
 
-* [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Color.html): Defines the color of the desired text.
-* [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~FontSize.html): Specifies the desired font size of the text under text settings.
-* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~FontFamily.html): Specifies the desired font family for text. Six types of font families are available in toolbar: `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`, `Bradley Hand`, `Snell Round hand`.
-* [`Bounds`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Bounds.html): Allows to set frame for the newly added `Text`. You can position the text wherever you want on the image. In percentage, the value of the text frame should fall between 0 and 100.
-* [`Opacity`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Opacity.html): Changes the opacity of text.
-* [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Angle.html): Changes the angle of text.
-* [`TextEffects`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~TextEffects.html): Changes the effects of the text such as `Bold`, `Italic` and `Underline`.
+* [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_Color): Defines the color of the desired text.
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_FontSize): Specifies the desired font size of the text under text settings.
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_FontFamily): Specifies the desired font family for text. Six types of font families are available in toolbar: `Arial`, `Noteworthy`, `Marker Felt`, `SignPainter`, `Bradley Hand`, `Snell Round hand`.
+* [`Bounds`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_Bounds): Allows to set frame for the newly added `Text`. You can position the text wherever you want on the image. In percentage, the value of the text frame should fall between 0 and 100.
+* [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_Opacity): Changes the opacity of text.
+* [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_Angle): Changes the angle of text.
+* [`TextEffects`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_TextEffects): Changes the effects of the text such as `Bold`, `Italic` and `Underline`.
 
 
 {% tabs %}
@@ -103,7 +103,7 @@ with font family name.
 You can annotate multiple line text over an image with the help of text preview window.
 
 ### Text alignment
-[`TextAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextAlignment.html) is an enum type and text can be aligned with the help of text alignment enum values such as left, right and center. 
+[`TextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextAlignment.html) is an enum type and text can be aligned with the help of text alignment enum values such as left, right and center. 
 
 N> The default text alignment is `Left` and text alignment is not applicable for single line text.
 
@@ -117,7 +117,7 @@ N> The default text alignment is `Left` and text alignment is not applicable for
 
 ## Text Rotation
 
-You can rotate and resize the text by enabling the [`RotatableElements`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~RotatableElements.html) property of image editor. [`ImageEditorElements`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.ImageEditorElements.html) is an enum type with values Text, CustomView and None as shown in the following code snippet.
+You can rotate and resize the text by enabling the [`RotatableElements`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_RotatableElements) property of image editor. [`ImageEditorElements`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ImageEditorElements.html) is an enum type with values Text, CustomView and None as shown in the following code snippet.
 
 {% tabs %}
 
@@ -131,7 +131,7 @@ You can rotate and resize the text by enabling the [`RotatableElements`](https:/
 
 N> The default value for RotatableElements is `None`.
 
-You can rotate the text based on a particular angle using [`Angle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~Angle.html) property in [`TextSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings.html) as shown in the following code snippet. 
+You can rotate the text based on a particular angle using [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_Angle) property in [`TextSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html) as shown in the following code snippet. 
 
 {% tabs %}
 
@@ -147,7 +147,7 @@ You can rotate the text based on a particular angle using [`Angle`](https://help
 
 ## Restricting the edit text box pop-up window
 
-You can restrict the edit text box pop-up window using the [`IsEditable`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.TextSettings~IsEditable.html) property. By Default, the value of the IsEditable property is true, so you can edit the text in edit text box pop-up window. When setting the IsEditable property to false, the edit text box pop-up window will not be displayed, and you are restricted to edit the text in the edit text box. 
+You can restrict the edit text box pop-up window using the [`IsEditable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_IsEditable) property. By Default, the value of the IsEditable property is true, so you can edit the text in edit text box pop-up window. When setting the IsEditable property to false, the edit text box pop-up window will not be displayed, and you are restricted to edit the text in the edit text box. 
 
 {% highlight c# %}
 

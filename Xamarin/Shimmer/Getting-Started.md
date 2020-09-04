@@ -103,7 +103,7 @@ Android platform does not require any additional configuration to render the shi
 
 ## Initializing shimmer
 
-Import the [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html) control namespace in respective page as demonstrated in the following code sample.
+Import the [`SfShimmer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html) control namespace in respective page as demonstrated in the following code sample.
 
 {% tabs %} 
 
@@ -165,7 +165,7 @@ N> The SfShimmer has different shimmer types. The default shimmer type is `Perso
 
 ## Loading shimmer content
 
-By disabling the [`IsActive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~IsActive.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html), shimmer content is loaded.
+By disabling the [`IsActive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_IsActive) property of [`SfShimmer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html), shimmer content is loaded.
 
 {% tabs %} 
 

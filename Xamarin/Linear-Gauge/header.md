@@ -11,7 +11,7 @@ documentation: ug
 
 # Header in SfLinearGauge
 
-You can add a title to gauge using the [`LinearHeader`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearHeader.html) option to provide information to users about the data that is being plotted in the linear gauge.
+You can add a title to gauge using the [`LinearHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearHeader.html) option to provide information to users about the data that is being plotted in the linear gauge.
 
 ## Adding header to linear gauge
 
@@ -69,7 +69,7 @@ You can add a title to gauge using the [`LinearHeader`](https://help.syncfusion.
 
 ##  Positioning the header
 
-To change the position of header, use the [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearHeader~Offset.html)  property in the linear header. It ranges from 0 to 1. By default, the header will be positioned on the top of linear gauge.
+To change the position of header, use the [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearHeader.html#Syncfusion_SfGauge_XForms_LinearHeader_Offset)  property in the linear header. It ranges from 0 to 1. By default, the header will be positioned on the top of linear gauge.
 
 {% tabs %}
 
@@ -122,7 +122,7 @@ To change the position of header, use the [`Offset`](https://help.syncfusion.com
 
 ##  Customizing header text
 
-You can customize the text of [`LinearHeader`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearHeader.html) by using the [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearHeader~FontFamily.html), [`FontAttribute`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearHeader~FontAttributes.html), [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearHeader~TextSize.html), and [`ForegroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearHeader~ForegroundColor.html) properties as shown in the following code snippet.
+You can customize the text of [`LinearHeader`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearHeader.html) by using the [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearHeader.html#Syncfusion_SfGauge_XForms_LinearHeader_FontFamily), [`FontAttribute`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearHeader.html#Syncfusion_SfGauge_XForms_LinearHeader_FontAttributes), [`TextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearHeader.html#Syncfusion_SfGauge_XForms_LinearHeader_TextSize), and [`ForegroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearHeader.html#Syncfusion_SfGauge_XForms_LinearHeader_ForegroundColor) properties as shown in the following code snippet.
 
 {% tabs %}
 

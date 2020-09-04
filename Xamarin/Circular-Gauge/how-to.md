@@ -13,7 +13,7 @@ documentation: ug
 
 ## Changing the gauge size
 
-The [`CircularCoefficient`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~CircularCoefficient.html) property is used to change the diameter of the gauge.
+The [`CircularCoefficient`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html#Syncfusion_SfGauge_XForms_SfCircularGauge_CircularCoefficient) property is used to change the diameter of the gauge.
 It ranges from 0 to 1, and the default value is 1.
 
 {% tabs %}
@@ -77,7 +77,7 @@ Content = sfCircularGauge;
 
 ## Gauge alignment
 
-The [`IsCenterAligned`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~IsCenterAligned.html) property is used to align the gauge to the center. In semi-circular gauge, bottom space will be removed using the [`IsCenterAligned`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~IsCenterAligned.html) property.
+The [`IsCenterAligned`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html#Syncfusion_SfGauge_XForms_SfCircularGauge_IsCenterAligned) property is used to align the gauge to the center. In semi-circular gauge, bottom space will be removed using the [`IsCenterAligned`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html#Syncfusion_SfGauge_XForms_SfCircularGauge_IsCenterAligned) property.
 
 {% tabs %}
 

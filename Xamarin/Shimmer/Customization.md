@@ -13,7 +13,7 @@ The Shimmer control supports options to customize the wave color, shimmer color,
 
 ## WaveDirection
 
-The [`WaveDirection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.WaveDirection.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html) is used to change the direction of shimmer wave. The following different wave directions are available in [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html):
+The [`WaveDirection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.WaveDirection.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html) is used to change the direction of shimmer wave. The following different wave directions are available in [`SfShimmer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html):
 
 * `Default`
 * `LeftToRight`
@@ -54,7 +54,7 @@ The [`WaveDirection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 ## Color
 
-The [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~Color.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html) is used to customize the color of shimmer.
+The [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_Color) property of [`SfShimmer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html) is used to customize the color of shimmer.
 
 {% tabs %} 
 
@@ -91,7 +91,7 @@ The [`Color`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.
 
 ## WaveColor
 
-The [`WaveColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~WaveColor.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html) is used to customize the color of wave.
+The [`WaveColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_WaveColor) property of [`SfShimmer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html) is used to customize the color of wave.
 
 {% tabs %} 
 
@@ -128,7 +128,7 @@ The [`WaveColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.C
 
 ## WaveWidth
 
-The [`WaveWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~WaveWidth.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html) is used to customize the width of wave.
+The [`WaveWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_WaveWidth) property of [`SfShimmer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html) is used to customize the width of wave.
 
 {% tabs %} 
 
@@ -166,7 +166,7 @@ The [`WaveWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.C
 
 ## AnimationDuration
 
-You can control the duration of wave animation using the [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~AnimationDuration.html) property of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html). The default value of [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~AnimationDuration.html) is 1000 ms.
+You can control the duration of wave animation using the [`AnimationDuration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_AnimationDuration) property of [`SfShimmer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html). The default value of [`AnimationDuration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_AnimationDuration) is 1000 ms.
 
 {% tabs %} 
 

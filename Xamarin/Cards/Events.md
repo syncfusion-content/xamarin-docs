@@ -11,20 +11,20 @@ documentation: ug
 
 ## CardTapped
 
-The [`CardTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout~CardTapped_EV.html) event occurs when any card view is tapped. The argument contains the following information:
+The [`CardTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html) event occurs when any card view is tapped. The argument contains the following information:
 
-* [`CardView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView.html) - Gets the details of a particular card view.
+* [`CardView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html) - Gets the details of a particular card view.
 
 ### Command
 
-The [`CardTappedCommand`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout~CardTappedCommand.html) property is used to associate a command with an instance of `SfCardLayout`. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+The [`CardTappedCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html#Syncfusion_XForms_Cards_SfCardLayout_CardTappedCommand) property is used to associate a command with an instance of `SfCardLayout`. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
 ### CommandParameter
 
-The [`CardTappedCommandParameter`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout~CardTappedCommandParameter.html) property is used to set the parameter reference, based on which the event argument is shown.
+The [`CardTappedCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html#Syncfusion_XForms_Cards_SfCardLayout_CardTappedCommandParameter) property is used to set the parameter reference, based on which the event argument is shown.
 
 >**NOTE**
-The default value of the [`CardTappedCommandParameter`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout~CardTappedCommandParameter.html) is `null`.
+The default value of the [`CardTappedCommandParameter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html#Syncfusion_XForms_Cards_SfCardLayout_CardTappedCommandParameter) is `null`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -57,13 +57,13 @@ The default value of the [`CardTappedCommandParameter`](https://help.syncfusion.
 
 ## VisibleCardIndexChanging
 
-The [`VisibleCardIndexChanging`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout~VisibleCardIndexChanging_EV.html) event occurs when the visible card index is changing. The argument contains the following information:
+The [`VisibleCardIndexChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html) event occurs when the visible card index is changing. The argument contains the following information:
 
-* [`OldCard`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.VisibleCardIndexChangingEventArgs~OldCard.html) - Gets the details of the previous index card.
+* [`OldCard`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.VisibleCardIndexChangingEventArgs.html#Syncfusion_XForms_Cards_VisibleCardIndexChangingEventArgs_OldCard) - Gets the details of the previous index card.
 
-* [`NewCard`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.VisibleCardIndexChangingEventArgs~NewCard.html) - Gets the details of the next possible index card.
+* [`NewCard`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.VisibleCardIndexChangingEventArgs.html#Syncfusion_XForms_Cards_VisibleCardIndexChangingEventArgs_NewCard) - Gets the details of the next possible index card.
 
-* [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Core.CancelEventArgs~Cancel.html) - Gets or sets a value indicating whether the event should be canceled.
+* [`Cancel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Core.CancelEventArgs.html#Syncfusion_XForms_Core_CancelEventArgs_Cancel) - Gets or sets a value indicating whether the event should be canceled.
 
 {% tabs %}
 {% highlight xaml %}
@@ -108,11 +108,11 @@ private void VisibleCardIndexChanging(object sender, Syncfusion.XForms.Cards.Vis
 
 ## VisibleCardIndexChanged
 
-The [`VisibleCardIndexChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout~VisibleCardIndexChanged_EV.html) event occurs when the visible card index is changed. The argument contains the following information:
+The [`VisibleCardIndexChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html) event occurs when the visible card index is changed. The argument contains the following information:
 
-* [`OldCard`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.VisibleCardIndexChangedEventArgs~OldCard.html) - Gets the details of the previous card.
+* [`OldCard`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.VisibleCardIndexChangedEventArgs.html#Syncfusion_XForms_Cards_VisibleCardIndexChangedEventArgs_OldCard) - Gets the details of the previous card.
 
-* [`NewCard`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.VisibleCardIndexChangedEventArgs~NewCard.html) - Gets the details of the current card.
+* [`NewCard`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.VisibleCardIndexChangedEventArgs.html#Syncfusion_XForms_Cards_VisibleCardIndexChangedEventArgs_NewCard) - Gets the details of the current card.
 
 {% tabs %}
 {% highlight xaml %}
@@ -152,11 +152,11 @@ private void VisibleCardIndexChanged(object sender Syncfusion.XForms.Cards.Visib
 
 ## Dismissing event
 
-The [`Dismissing`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView~Dismissing_EV.html) event fires when dismissing the card by swiping with enables `SwipeToDismiss` property. The argument contains the following information:
+The [`Dismissing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html) event fires when dismissing the card by swiping with enables `SwipeToDismiss` property. The argument contains the following information:
 
-* [`DismissDirection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.DismissingEventArgs~DismissDirection.html) - Gets a dismissing direction of the card view.
+* [`DismissDirection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.DismissingEventArgs.html#Syncfusion_XForms_Cards_DismissingEventArgs_DismissDirection) - Gets a dismissing direction of the card view.
 
-* [`Cancel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Core.CancelEventArgs~Cancel.html) - Gets or sets a value indicating whether the event should be canceled.
+* [`Cancel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Core.CancelEventArgs.html#Syncfusion_XForms_Core_CancelEventArgs_Cancel) - Gets or sets a value indicating whether the event should be canceled.
 
 {% tabs %}
 {% highlight xaml %}
@@ -189,9 +189,9 @@ N> This event will not work when adding the `SfCardView` as a child of `SfCardLa
 
 ## Dismissed event
 
-The [`Dismissed`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView~Dismissed_EV.html) event fires when dismisses the card by swiping with enables `SwipeToDismiss` property. The argument contains the following information.
+The [`Dismissed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html) event fires when dismisses the card by swiping with enables `SwipeToDismiss` property. The argument contains the following information.
 
-* [`DismissDirection`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.DismissedEventArgs~DismissDirection.html) - Gets a dismissed direction of the card view.
+* [`DismissDirection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.DismissedEventArgs.html#Syncfusion_XForms_Cards_DismissedEventArgs_DismissDirection) - Gets a dismissed direction of the card view.
 
 {% tabs %}
 {% highlight xaml %}

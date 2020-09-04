@@ -9,7 +9,7 @@ documentation: ug
 
 # Selection Indicator Strip
 
-The selection indicator strip can be used to indicate the selected index of the tab view control. It can be customized with the built-in APIs that are available in the [SelectionIndicatorSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTabView.XForms~Syncfusion.XForms.TabView.SfTabView~SelectionIndicatorSettings.html) property of [SfTabView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTabView.XForms~Syncfusion.XForms.TabView.SfTabView.html).
+The selection indicator strip can be used to indicate the selected index of the tab view control. It can be customized with the built-in APIs that are available in the [SelectionIndicatorSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_SelectionIndicatorSettings) property of [SfTabView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
 
 ![Selection Indicator Strip](images/Selection-Indicator/tabstyle02.png)
 
@@ -131,7 +131,7 @@ N> Stroke thickness will not be applicable when the selection indicator’s posi
 
 ## AnimationDuration
 
-When the selected index of the control is changed, you can set the speed of the animation of SelectionIndicator by setting the `AnimationDuration` property in the [SelectionIndicatorSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTabView.XForms~Syncfusion.XForms.TabView.SelectionIndicatorSettings.html).
+When the selected index of the control is changed, you can set the speed of the animation of SelectionIndicator by setting the `AnimationDuration` property in the [SelectionIndicatorSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SelectionIndicatorSettings.html).
 
 {% tabs %}
 

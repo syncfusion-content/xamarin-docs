@@ -35,7 +35,7 @@ The following code explains how to initialize the legends.
 
 ## Visibility
 
-The visibility of legends can be controlled using the [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartLegend~IsVisible.html) property.
+The visibility of legends can be controlled using the [`IsVisible`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.html#Syncfusion_SfSunburstChart_XForms_SunburstChartLegend_IsVisible) property.
 
 The following code shows how to control the visibility of legend.
 
@@ -64,7 +64,7 @@ The following code shows how to control the visibility of legend.
 
 ## Position
 
-Legends can be docked at the top, right, left, or bottom position using the [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartLegend~LegendPosition.html) property.
+Legends can be docked at the top, right, left, or bottom position using the [`LegendPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.html#Syncfusion_SfSunburstChart_XForms_SunburstChartLegend_LegendPosition) property.
 
 The following code shows customizing the legend position.
 
@@ -95,7 +95,7 @@ The following code shows customizing the legend position.
 
 ## Legend icon types
 
-Legend icon shapes can be customized using the [`IconType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartLegend~IconType.html) property. The IconType property provides several predefined shapes. The default legend icon type is circle.
+Legend icon shapes can be customized using the [`IconType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.html#Syncfusion_SfSunburstChart_XForms_SunburstChartLegend_IconType) property. The IconType property provides several predefined shapes. The default legend icon type is circle.
 
 The following predefined shapes are available in the IconType property:
 
@@ -134,7 +134,7 @@ The following predefined shapes are available in the IconType property:
 
 ## Icon size customization
 
-The size of the legend icon can be customized using the [`IconHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartLegend~IconHeight.html) and [`IconWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartLegend~IconWidth.html) properties.
+The size of the legend icon can be customized using the [`IconHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.html#Syncfusion_SfSunburstChart_XForms_SunburstChartLegend_IconHeight) and [`IconWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.html#Syncfusion_SfSunburstChart_XForms_SunburstChartLegend_IconWidth) properties.
 
 {% tabs %} 
 
@@ -165,13 +165,13 @@ The size of the legend icon can be customized using the [`IconHeight`](https://h
 
 ## Label style
 
-Legend label can be customized using the following properties available in [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartLegend~LabelStyle.html):
+Legend label can be customized using the following properties available in [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.html#Syncfusion_SfSunburstChart_XForms_SunburstChartLegend_LabelStyle):
 
-* [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle~TextColor.html): Customizes the text color of the label.
-* [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle~FontSize.html): Customizes the font size of the label.
-* [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle~FontAttributes.html): Customizes the font attributes such as Bold or Italic.
-* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle~Margin.html): Sets the specified margin for legend labels.
-* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle~FontFamily.html): Sets the specified font family for labels.
+* [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.html#Syncfusion_SfSunburstChart_XForms_SunburstLegendLabelStyle_TextColor): Customizes the text color of the label.
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.html#Syncfusion_SfSunburstChart_XForms_SunburstLegendLabelStyle_FontSize): Customizes the font size of the label.
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.html#Syncfusion_SfSunburstChart_XForms_SunburstLegendLabelStyle_FontAttributes): Customizes the font attributes such as Bold or Italic.
+* [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.html#Syncfusion_SfSunburstChart_XForms_SunburstLegendLabelStyle_Margin): Sets the specified margin for legend labels.
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstLegendLabelStyle.html#Syncfusion_SfSunburstChart_XForms_SunburstLegendLabelStyle_FontFamily): Sets the specified font family for labels.
 
 
 {% tabs %} 
@@ -214,7 +214,7 @@ Legend label can be customized using the following properties available in [`Lab
 
 ## Item margin
 
-Margin can be set to individual legend items using the [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstChartLegend~ItemMargin.html) property.
+Margin can be set to individual legend items using the [`ItemMargin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstChartLegend.html#Syncfusion_SfSunburstChart_XForms_SunburstChartLegend_ItemMargin) property.
 
 {% tabs %} 
 

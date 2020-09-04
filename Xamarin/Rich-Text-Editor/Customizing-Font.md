@@ -9,7 +9,7 @@ documentation: UG
 
 # Font Customization in Xamarin Rich Text Editor(SfRichTextEditor)
 
-The SfRichTextEditor allows you to use TTF fonts in the Rich Text Editor content. The font can be included in the `SfRichTextEditor` using the [`FontButtonCommand`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor~FontButtonCommand.html) property or the [`FontButtonClicked`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor~FontButtonClicked_EV.html) event.
+The SfRichTextEditor allows you to use TTF fonts in the Rich Text Editor content. The font can be included in the `SfRichTextEditor` using the [`FontButtonCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_FontButtonCommand) property or the [`FontButtonClicked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html) event.
 
 ## FontButtonCommand command
 
@@ -145,7 +145,7 @@ public partial class MainPage : ContentPage
 
 ## DefaultFont
 
-The SfRichTextEditor provides support to modify the default font used in the Rich text editor control. The default font of the Rich Text Editor can be changed using the [`DefaultFont`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor~DefaultFont.html) property.
+The SfRichTextEditor provides support to modify the default font used in the Rich text editor control. The default font of the Rich Text Editor can be changed using the [`DefaultFont`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_DefaultFont) property.
 
 N> The DefaultFont property accepts fonts as Embedded source, System Font Name, or Base64 TTF string.
 

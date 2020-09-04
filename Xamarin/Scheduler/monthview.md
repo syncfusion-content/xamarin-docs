@@ -280,6 +280,8 @@ Schedule.MonthViewSettings = monthViewSettings;
 
 Download the entire source code from GitHub here.
 
+![Inline Item Template customization](monthview_images/InlineItem_Template_customization.png)
+
 ### Agenda item height
 You can customize the agenda view appointment height by setting the [ItemHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~ItemHeight.html) in [AgendaViewStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaViewStyle.html) property of `MonthViewSettings`.
 

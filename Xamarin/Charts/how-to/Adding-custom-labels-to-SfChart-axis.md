@@ -9,7 +9,7 @@ documentation: ug
 
 # Adding custom labels to SfChart axis
 
-To add a custom label to chart axis, write a class derived from NumericalAxis class. You need to override the [`OnCreatedLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~OnCreateLabels.html) method, which will be called whenever new labels are generated, and add, remove, or modify the labels using the [`VisibleLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~VisibleLabels.html) property.
+To add a custom label to chart axis, write a class derived from NumericalAxis class. You need to override the [`OnCreatedLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_OnCreateLabels) method, which will be called whenever new labels are generated, and add, remove, or modify the labels using the [`VisibleLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_VisibleLabels) property.
 
 The following code sample demonstrates this.
 
@@ -40,4 +40,4 @@ public class NumericalAxisExt : NumericalAxis
 N>
 - This is applicable for all types of axis.
 - Labels are rendered only if the label position presents within the visible range.
-- The labels should be created only if users call the base of [`OnCreateLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartAxis~OnCreateLabels.html).
+- The labels should be created only if users call the base of [`OnCreateLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_OnCreateLabels).

@@ -262,7 +262,7 @@ namespace RadialSample
 
 ## Animation duration
 
-Duration of animation in radial menu can be changed using the [`AnimationDuration`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~AnimationDurationProperty.html) property. It is used to change the speed of opening and closing of radial menu.
+Duration of animation in radial menu can be changed using the [`AnimationDuration`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_AnimationDurationProperty) property. It is used to change the speed of opening and closing of radial menu.
 
 {% tabs %}
 
@@ -322,7 +322,7 @@ namespace RadialSample
 
 ## IsOpen
 
-The [`IsOpen`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~IsOpenProperty.html) property indicates whether the radial menu is in open or close state.
+The [`IsOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_IsOpenProperty) property indicates whether the radial menu is in open or close state.
 
 {% tabs %}
 
@@ -382,7 +382,7 @@ namespace RadialSample
 
 ## Selection color of radial menu
 
-Selection color of an item can be changed using the [`SelectionColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~SelectionColorProperty.html) property of radial menu.
+Selection color of an item can be changed using the [`SelectionColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_SelectionColorProperty) property of radial menu.
 
 {% tabs %}
 
@@ -442,7 +442,7 @@ namespace RadialSample
 
 ## Separator thickness and color in radial menu
 
-Thickness of strip between the two items can be changed using the [`SeparatorThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~SeparatorThicknessProperty.html) property and the color of strip can be changed using the [`SeparatorColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~SeparatorColorProperty.html) property.
+Thickness of strip between the two items can be changed using the [`SeparatorThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_SeparatorThicknessProperty) property and the color of strip can be changed using the [`SeparatorColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_SeparatorColorProperty) property.
 
 {% tabs %}
 
@@ -505,7 +505,7 @@ namespace RadialSample
 
 ## Rim color and rim radius in radial menu
 
-The radius of rim can be changed using the [`RimRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~RimRadiusProperty.html) property and the color of rim can be changed using the [`RimColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~RimColorProperty.html) property.
+The radius of rim can be changed using the [`RimRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_RimRadiusProperty) property and the color of rim can be changed using the [`RimColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_RimColorProperty) property.
 
 {% tabs %}
 
@@ -568,7 +568,7 @@ namespace RadialSample
 
 ## DisplayMemberPath
 
-The control is populated with a list of employees, and the employee model contains two properties: ID and EmployeeName. So, it is necessary to intimate by which property it should display to the items. The [`DisplayMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRadialMenu.XForms~Syncfusion.SfRadialMenu.XForms.SfRadialMenu~DisplayMemberPathProperty.html) property specifies the property path.
+The control is populated with a list of employees, and the employee model contains two properties: ID and EmployeeName. So, it is necessary to intimate by which property it should display to the items. The [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html#Syncfusion_SfRadialMenu_XForms_SfRadialMenu_DisplayMemberPathProperty) property specifies the property path.
 
 {% tabs %}
 

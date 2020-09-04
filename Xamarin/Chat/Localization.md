@@ -303,7 +303,7 @@ public MainPage()
 {% endtabs %}
 ## Apply the converted format 
 
-After setting the root/main page of the application in your App.Xaml.cs file of the PCL project, initialize a new instance of the `ResourceManager` class and set it to the [ChatResourceManager.Manager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.ChatResourceManager~Manager.html) property to look up into the resources with specified root name in the given assembly. Using `DependencyService`, call `SetLocale()` of the implemented interface with necessary language code as parameter.
+After setting the root/main page of the application in your App.Xaml.cs file of the PCL project, initialize a new instance of the `ResourceManager` class and set it to the [ChatResourceManager.Manager](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ChatResourceManager.html#Syncfusion_XForms_ChatResourceManager_Manager) property to look up into the resources with specified root name in the given assembly. Using `DependencyService`, call `SetLocale()` of the implemented interface with necessary language code as parameter.
 
 {% tabs %}
 {% highlight c# %}

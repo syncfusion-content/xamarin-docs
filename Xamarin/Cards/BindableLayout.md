@@ -11,11 +11,11 @@ documentation: ug
 
 From version 3.5, Xamarin.Forms has introduced a new approach, called BindableLayout, which works with all the layouts that are derived from Layout&lt;T&gt;. By simply setting ItemTemplate and ItemsSource, BindableLayout creates a group of UI (for the given ItemTemplate) for every data in the ItemsSource and add them as children.
 
-Since [`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout.html) is an extended class of Layout&lt;T&gt;, this approach is also possible for SfCardLayout.
+Since [`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html) is an extended class of Layout&lt;T&gt;, this approach is also possible for SfCardLayout.
 
 ## Initialize view model
 
-Define a simple data model that represents data to be populated for [`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout.html).
+Define a simple data model that represents data to be populated for [`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html).
 
 {% highlight c# %}
 
@@ -48,7 +48,7 @@ public class ViewModel
 
 {% endhighlight %} 
 
-Set the ViewModel instance as BindingContext of your page to bind properties of ViewModel to [`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout.html). 
+Set the ViewModel instance as BindingContext of your page to bind properties of ViewModel to [`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html). 
 
 N> Add namespace of ViewModel class in your XAML page if you prefer to set BindingContext in XAML. 
 
@@ -74,7 +74,7 @@ this.BindingContext = new ViewModel();
 
 ## Populate CardLayout with data
 
-[`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout.html) can be populated with data by setting the ItemSource property of BindableLayout to a collection of items that can be used in [`SfCardView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView.html).
+[`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html) can be populated with data by setting the ItemSource property of BindableLayout to a collection of items that can be used in [`SfCardView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html).
 
 {% tabs %} 
 
@@ -97,7 +97,7 @@ BindableLayout.SetItemsSource(cardLayout, viewModel.Model.Colors);
 
 ## Define the appearance of SfCardView
 
-[`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardLayout.html) accepts only [`SfCardView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView.html) as its child. The appearance of each [`SfCardView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Cards.XForms~Syncfusion.XForms.Cards.SfCardView.html) can be defined by setting the BindableLayout.ItemTemplate property.
+[`SfCardLayout`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardLayout.html) accepts only [`SfCardView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html) as its child. The appearance of each [`SfCardView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html) can be defined by setting the BindableLayout.ItemTemplate property.
 
 {% tabs %} 
 

@@ -11,9 +11,9 @@ documentation: ug
 
 # Rim in SfCircularGauge
 
-Scale determines the structure of a circular gauge by using the circular rim. By setting the [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~StartAngle.html) and [`SweepAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~SweepAngle.html) properties, you can change the shape of the circular gauge into a full circular gauge, half circular gauge, or quarter circular gauge.
+Scale determines the structure of a circular gauge by using the circular rim. By setting the [`StartAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_StartAngle) and [`SweepAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_SweepAngle) properties, you can change the shape of the circular gauge into a full circular gauge, half circular gauge, or quarter circular gauge.
 
-The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~EndValue.html) properties will determine the overall range of the circular rim.
+The [`StartValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_StartValue) and [`EndValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_EndValue) properties will determine the overall range of the circular rim.
 
 {% tabs %}
 
@@ -53,7 +53,7 @@ The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 ## Rim customization
 
-The color and thickness of rim can be set by using the [`RimColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RimColor.html) and [`RimThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RimThickness.html) properties. To increase the [`RimThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RimThickness.html), set the [`RadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RadiusFactor.html).
+The color and thickness of rim can be set by using the [`RimColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_RimColor) and [`RimThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_RimThickness) properties. To increase the [`RimThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_RimThickness), set the [`RadiusFactor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_RadiusFactor).
 
 {% tabs %}
 
@@ -103,13 +103,13 @@ The color and thickness of rim can be set by using the [`RimColor`](https://help
 
 ## Setting position for rim
 
-You can customize the position and size of [`Scales`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Scales.html) rim in the following two ways:
-1. [`RadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RadiusFactor.html) with the [`RimThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RimThickness.html) property - To applying rim size in logical pixels. 
-2. The [`ScaleStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ScaleStartOffset.html) and [`ScaleEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ScaleEndOffset.html) properties - To applying rim size in factor(0 to 1). 
+You can customize the position and size of [`Scales`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html#Syncfusion_SfGauge_XForms_SfCircularGauge_Scales) rim in the following two ways:
+1. [`RadiusFactor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_RadiusFactor) with the [`RimThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_RimThickness) property - To applying rim size in logical pixels. 
+2. The [`ScaleStartOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_ScaleStartOffset) and [`ScaleEndOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_ScaleEndOffset) properties - To applying rim size in factor(0 to 1). 
 
 ### Setting radius factor for rim
 
-This approach is used to define the rim size from its starting location in logical pixels. The [`RadiusFactor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RadiusFactor.html) property is used to define the start position of the scale rim in factor value (between 0 to 1). Rim position is determined by multiplying this factor value to the gauge circle radius size. The [`RimThickness`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~RimThickness.html) property is used to define the rim size in logical pixels. 
+This approach is used to define the rim size from its starting location in logical pixels. The [`RadiusFactor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_RadiusFactor) property is used to define the start position of the scale rim in factor value (between 0 to 1). Rim position is determined by multiplying this factor value to the gauge circle radius size. The [`RimThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_RimThickness) property is used to define the rim size in logical pixels. 
 
 {% tabs %}
 
@@ -148,7 +148,7 @@ This approach is used to define the rim size from its starting location in logic
 
 ### Setting scale start and end offsets for rim
 
-The [`ScaleStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ScaleStartOffset.html) and [`ScaleEndOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ScaleEndOffset.html) properties are used to define the scale rim position and size in the factor value (between 0 and 1) for the responsive size (size will be responsive in all the layout). Rim position and size is determined by multiplying this factor value to the radius size of the gauge circle. 
+The [`ScaleStartOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_ScaleStartOffset) and [`ScaleEndOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_ScaleEndOffset) properties are used to define the scale rim position and size in the factor value (between 0 and 1) for the responsive size (size will be responsive in all the layout). Rim position and size is determined by multiplying this factor value to the radius size of the gauge circle. 
 
 {% tabs %}
 
@@ -187,7 +187,7 @@ The [`ScaleStartOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncf
 
 ## Show rim
 
-The [`ShowRim`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~ShowRim.html) property is a Boolean property, which is used to enable or disable the rim in circular gauge.
+The [`ShowRim`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_ShowRim) property is a Boolean property, which is used to enable or disable the rim in circular gauge.
 
 {% tabs %}
 

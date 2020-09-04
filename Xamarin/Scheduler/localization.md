@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in Xamarin Scheduler (SfSchedule)
 
-Schedule control is available with complete localization support. Localization can be specified by setting the [Locale](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~Locale.html) property of SfSchedule. In the format of `Language code`.
+Schedule control is available with complete localization support. Localization can be specified by setting the [Locale](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_Locale) property of SfSchedule. In the format of `Language code`.
 
 ## Change default control language
 
@@ -110,7 +110,7 @@ The procedure for creating Resources(.resw) file is as follows:
 ![Localization UWP](Localization_images/xamarin.forms-schedule-localization-uwp-renderer.png)
 
 ## Localizing custom strings from PCL
-You can localize the custom strings (No SelectedDate, No Events, and No Resources) used in the schedule control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale using DependencyService instead of device language. Create a new resource manager based on the resources, and set it to the [Manager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResourceManager~Manager.html) property of [ScheduleResourceManager](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.ScheduleResourceManager.html). In the following code, French has been set as Schedule locale as well as custom strings.
+You can localize the custom strings (No SelectedDate, No Events, and No Resources) used in the schedule control from PCL. It can be achieved by providing the custom strings to the specific language resx file and handling the required culture with the locale using DependencyService instead of device language. Create a new resource manager based on the resources, and set it to the [Manager](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleResourceManager.html#Syncfusion_SfSchedule_XForms_ScheduleResourceManager_Manager) property of [ScheduleResourceManager](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleResourceManager.html). In the following code, French has been set as Schedule locale as well as custom strings.
 
 {% tabs %}
 {% highlight c# %}

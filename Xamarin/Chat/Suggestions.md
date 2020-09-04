@@ -9,11 +9,11 @@ documentation: ug
 
 # Suggestions in Xamarin.Forms Chat (SfChat)
 
-The `SfChat` control allows to show a list of options to choose from, as suggestions, below the actual message or at the bottom of the chat control. Suggestions can be shown for all the supported message types in `SfChat`. [SfChat.SuggestionItemSelected](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SuggestionItemSelected_EV.html) event and [SfChat.SuggestionItemSelectedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SuggestionItemSelectedCommand.html) will be executed when the user selects a suggestion item. Both the event and the command will provide the [SuggestionItemSelectedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SuggestionItemSelectedEventArgs.html) as arguments.
+The `SfChat` control allows to show a list of options to choose from, as suggestions, below the actual message or at the bottom of the chat control. Suggestions can be shown for all the supported message types in `SfChat`. [SfChat.SuggestionItemSelected](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) event and [SfChat.SuggestionItemSelectedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_SuggestionItemSelectedCommand) will be executed when the user selects a suggestion item. Both the event and the command will provide the [SuggestionItemSelectedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SuggestionItemSelectedEventArgs.html) as arguments.
 
 ## Showing suggestions in message
 
-Suggestions can be shown in a message by creating a [ChatSuggestion](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatSuggestions.html) instance and setting it to the desired message's [Message.Suggestions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Suggestions.html) property.
+Suggestions can be shown in a message by creating a [ChatSuggestion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ChatSuggestions.html) instance and setting it to the desired message's [Message.Suggestions](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageBase.html#Syncfusion_XForms_Chat_MessageBase_Suggestions) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -169,7 +169,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ### Add an image in suggestion item
 
-`SfChat` allows to add image in suggestion list by setting image source to the [Suggestion.Image](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Suggestion~Image.html) property.
+`SfChat` allows to add image in suggestion list by setting image source to the [Suggestion.Image](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.Suggestion.html#Syncfusion_XForms_Chat_Suggestion_Image) property.
 
 To add image in suggestion list in message, refer the below the code example:
 
@@ -327,7 +327,7 @@ public class GettingStartedViewModel :INotifyPropertyChanged
 
 ### Change the orientation of suggestions
 
-You can choose to show the suggestion items in horizontal or vertical orientation using the [ChatSuggestions.Orientation](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatSuggestions~Orientation.html) property.
+You can choose to show the suggestion items in horizontal or vertical orientation using the [ChatSuggestions.Orientation](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ChatSuggestions.html#Syncfusion_XForms_Chat_ChatSuggestions_Orientation) property.
 
 To change suggestion `ChatSuggestions.Orientation`, refer the below code example:
 
@@ -487,7 +487,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Showing suggestions at bottom of chat control
 
-The SfChat allows to show a list of options as suggestions at the bottom of chat control by creating a [ChatSuggestion](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatSuggestions.html) instance and setting it to the [SfChat.Suggestions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~Suggestions.html) property.
+The SfChat allows to show a list of options as suggestions at the bottom of chat control by creating a [ChatSuggestion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ChatSuggestions.html) instance and setting it to the [SfChat.Suggestions](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_Suggestions) property.
 
 
 {% tabs %}
@@ -662,7 +662,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Cancel the suggestions from closing
 
-The suggestions list will be closed by default after the user has selected an option from the list. To prevent it from closing set the [SuggestionItemSelectedEventArgs.HideAfterSelection](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SuggestionItemSelectedEventArgs~HideAfterSelection.html) as false in the [SfChat.SuggestionItemSelected](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SuggestionItemSelected_EV.html) event handler or in the [SfChat.SuggestionItemSelectedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SuggestionItemSelectedCommand.html) command's execution.
+The suggestions list will be closed by default after the user has selected an option from the list. To prevent it from closing set the [SuggestionItemSelectedEventArgs.HideAfterSelection](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SuggestionItemSelectedEventArgs.html#Syncfusion_XForms_Chat_SuggestionItemSelectedEventArgs_HideAfterSelection) as false in the [SfChat.SuggestionItemSelected](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) event handler or in the [SfChat.SuggestionItemSelectedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_SuggestionItemSelectedCommand) command's execution.
 
 **SuggestionItemSelected event**
 

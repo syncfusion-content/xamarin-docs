@@ -9,7 +9,7 @@ documentation: ug
 
 # Customize the SfChart padding
 
-By default, padding is applied to all the sides of chart to avoid the cropping of axis labels and leaving some space between nearby views and chart. However, it can be removed or changed using the [`ChartPadding`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~ChartPadding.html) property of [`SfChart`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart.html).
+By default, padding is applied to all the sides of chart to avoid the cropping of axis labels and leaving some space between nearby views and chart. However, it can be removed or changed using the [`ChartPadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_ChartPadding) property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
 
 The following code example shows how to customize the padding of chart. 
 

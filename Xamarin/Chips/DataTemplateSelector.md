@@ -73,7 +73,7 @@ public class ChipDataTemplateSelector : DataTemplateSelector
 
 ### Applying the data template selector
 
-Assign the already defined `DataTemplateSelector` to the [`ItemTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfChipGroup~ItemTemplate.html) of the SfChipGroup in either XAML or C#.
+Assign the already defined `DataTemplateSelector` to the [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ItemTemplate) of the SfChipGroup in either XAML or C#.
 
 {% tabs %}
 {% highlight xaml %}

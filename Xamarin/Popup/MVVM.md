@@ -9,7 +9,7 @@ documentation: ug
 
 ## How to show Xamarin.Forms popup from ViewModel?
 
-SfPopup can be used in MVVM architecture applications easily. In the below example [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/sfpopuplayout/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html) property is bound to a property in the ViewModel based on which the popup is opened or closed. Refer the below code example to display popup in MVVM.
+SfPopup can be used in MVVM architecture applications easily. In the below example [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_IsOpen) property is bound to a property in the ViewModel based on which the popup is opened or closed. Refer the below code example to display popup in MVVM.
 
 In the below code snippet, note that the Binding context is set for the page and the property (DisplayPopup) of the ViewModel is bound to the `SfPopupLayout.IsOpen`.
 

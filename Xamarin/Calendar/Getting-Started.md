@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with Xamarin Calendar (SfCalendar)
 
-This section explains how to implement simple holiday indicator application which allows user to select working days using [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar.html) control.
+This section explains how to implement simple holiday indicator application which allows user to select working days using [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html) control.
 
 ## Adding SfCalendar reference
 
@@ -175,7 +175,7 @@ public partial class CalendarPage : ContentPage
 
 ## Set Blackout Dates
 
-`SfCalendar` control provides option to black out the desired date which is in disabled state among the visible dates. Here, holidays are blacked out in the form which cannot be selected by the user. To black out the holiday, add them into [BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~BlackoutDates.html) list. 
+`SfCalendar` control provides option to black out the desired date which is in disabled state among the visible dates. Here, holidays are blacked out in the form which cannot be selected by the user. To black out the holiday, add them into [BlackoutDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_BlackoutDates) list. 
 
 {% highlight c# %}
 
@@ -217,7 +217,7 @@ calendar.SelectionMode=SelectionMode.MultiSelection;
 
 `SfCalendar` allows to select dates that falls between certain range of dates. Here, restrict user to select dates only in current year.
 
-N> To specify the range, set start date and end date to [MinDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MinDate.html) and [MaxDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaxDate.html) properties respectively.
+N> To specify the range, set start date and end date to [MinDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MinDate) and [MaxDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MaxDate) properties respectively.
 
 {% highlight c# %}
 

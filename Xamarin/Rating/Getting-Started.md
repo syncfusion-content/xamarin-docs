@@ -65,7 +65,7 @@ N> Currently an additional step is required for iOS project. You need to create 
 
 ### Additional step for iOS
 
-To launch [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms~Syncfusion.SfRating.XForms.SfRating.html) in iOS, call `SfRatingRenderer.Init()` in the `FinishedLaunching` overridden method of the `AppDelegate` class in iOS Project as demonstrated in the following code example.
+To launch [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) in iOS, call `SfRatingRenderer.Init()` in the `FinishedLaunching` overridden method of the `AppDelegate` class in iOS Project as demonstrated in the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -83,7 +83,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### Additional step for UWP
 
-This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms~Syncfusion.SfRating.XForms.SfRating.html) assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around. The following code example demonstrates initializing the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms~Syncfusion.SfRating.XForms.SfRating.html) assembly.
+This step is required only if the application is deployed in Release mode with .NET native tool chain enabled. It is needed for resolving the known Framework issue “Custom controls not rendering in Release mode” in UWP platform. Initializing the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) assembly at the `OnLaunched` overridden method of the `App` class in UWP project is the suggested work around. The following code example demonstrates initializing the [`SfRating`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRating.XForms.SfRating.html) assembly.
 
 
 {% tabs %}

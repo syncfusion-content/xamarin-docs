@@ -9,11 +9,11 @@ documentation: ug
 
 # Tooltip
 
-The tooltip is used to show the selected range start and end value of the [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html).
+The tooltip is used to show the selected range start and end value of the [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html).
 
 ## Tooltip Visibility
 
-The [`EnableTooltip`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~EnableTooltip.html) property of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) is used to control the visibility of the left and right tooltip. It is true by default.
+The [`EnableTooltip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_EnableTooltip) property of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) is used to control the visibility of the left and right tooltip. It is true by default.
 
 {% tabs %}
 {% highlight xaml %}
@@ -32,7 +32,7 @@ dateTimeRangeNavigator.EnableTooltip = false;
 
 ## Tooltip Format
 
-You can format the date value of the tooltip using [`TooltipFormat`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~TooltipFormat.html) property of **SfDateTimeRangeNavigator**.
+You can format the date value of the tooltip using [`TooltipFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_TooltipFormat) property of **SfDateTimeRangeNavigator**.
 
 {% tabs %}
 {% highlight xaml %}
@@ -48,16 +48,16 @@ dateTimeRangeNavigator.TooltipFormat = "yyyy/MM";
 
 ## Appearance Customization
 
-The [`LeftTooltipStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~LeftTooltipStyle.html) and [`RightTooltipStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator~RightTooltipStyle.html) properties of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) are used to customize the left and right tooltip. Following properties are available in each tooltip style to customize the appearance of the tooltip.
+The [`LeftTooltipStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_LeftTooltipStyle) and [`RightTooltipStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_RightTooltipStyle) properties of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) are used to customize the left and right tooltip. Following properties are available in each tooltip style to customize the appearance of the tooltip.
 
-* [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.TooltipStyle~TextColor.html) – used to change the color of the tooltip text.
-* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.TooltipStyle~BackgroundColor.html) – used to change the background color of the tooltip.
-* [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.TooltipStyle~BorderColor.html) – used to change the border color of the tooltip.
-* [`BorderWidth`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.TooltipStyle~BorderWidth.html) – used to change the width of the tooltip border.
-* [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.TooltipStyle~FontFamily.html) – used to change the font family of the tooltip text.
-* [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.TooltipStyle~FontSize.html) – used to change the font size of the tooltip text.
-* [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.TooltipStyle~FontAttributes.html) – used to change the font attribute of the tooltip text.
-* [`Margin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.RangeNavigator.XForms.TooltipStyle~Margin.html) - used to change the margin size of the tooltip text.
+* [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.TooltipStyle.html#Syncfusion_RangeNavigator_XForms_TooltipStyle_TextColor) – used to change the color of the tooltip text.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.TooltipStyle.html#Syncfusion_RangeNavigator_XForms_TooltipStyle_BackgroundColor) – used to change the background color of the tooltip.
+* [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.TooltipStyle.html#Syncfusion_RangeNavigator_XForms_TooltipStyle_BorderColor) – used to change the border color of the tooltip.
+* [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.TooltipStyle.html#Syncfusion_RangeNavigator_XForms_TooltipStyle_BorderWidth) – used to change the width of the tooltip border.
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.TooltipStyle.html#Syncfusion_RangeNavigator_XForms_TooltipStyle_FontFamily) – used to change the font family of the tooltip text.
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.TooltipStyle.html#Syncfusion_RangeNavigator_XForms_TooltipStyle_FontSize) – used to change the font size of the tooltip text.
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.TooltipStyle.html#Syncfusion_RangeNavigator_XForms_TooltipStyle_FontAttributes) – used to change the font attribute of the tooltip text.
+* [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.TooltipStyle.html#Syncfusion_RangeNavigator_XForms_TooltipStyle_Margin) - used to change the margin size of the tooltip text.
 
 {% tabs %}
 {% highlight xaml %}

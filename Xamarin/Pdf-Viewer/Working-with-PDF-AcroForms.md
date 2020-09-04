@@ -45,7 +45,7 @@ pdfViewerControl.SaveDocument(true);
 
 PDF documents that contain XFA form fields cannot be viewed in PDF Viewer since they can be viewed only in Adobe reader. When a PDF with XFA form is loaded, its original contents may not be rendered as expected. 
 
-The value of the [IsXFAForm](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPdfViewer.XForms~Syncfusion.SfPdfViewer.XForms.SfPdfViewer~IsXFAForm.html) property indicates whether the PDF loaded contains XFA form. 
+The value of the [IsXFAForm](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_IsXFAForm) property indicates whether the PDF loaded contains XFA form. 
 
 {% tabs %}
 {% highlight c# %}

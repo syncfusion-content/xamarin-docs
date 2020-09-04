@@ -105,7 +105,7 @@ this.Content = border;
 
 ## Dashed border
 
-You can render the border with dashes using the [`DashArray`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Border.SfBorder~DashArray.html) property.
+You can render the border with dashes using the [`DashArray`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_DashArray) property.
 
 {% tabs %}
 {% highlight xaml %}

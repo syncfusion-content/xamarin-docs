@@ -9,7 +9,7 @@ keywords: mask, SfMaskedEdit, maskededit
 ---
 # Formatting Value in SfImageEditor
 
-SfMaskedEdit allows you to format the characters in the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Value.html) property in a mask scenario (when the Mask property is set). By default, the Value property holds your input characters, prompt characters and the literals defined in the mask. You can modify this and allow the `Value` property to hold the characters without prompt and literals by setting the [`ValueMaskFormat`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ValueMaskFormat.html) property of the control. The `Value` in the `SfMaskedEdit` is formatted by any one of the following formatting enum values:
+SfMaskedEdit allows you to format the characters in the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property in a mask scenario (when the Mask property is set). By default, the Value property holds your input characters, prompt characters and the literals defined in the mask. You can modify this and allow the `Value` property to hold the characters without prompt and literals by setting the [`ValueMaskFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ValueMaskFormat) property of the control. The `Value` in the `SfMaskedEdit` is formatted by any one of the following formatting enum values:
 
 * ExcludePromptAndLiterals
 * IncludePrompt

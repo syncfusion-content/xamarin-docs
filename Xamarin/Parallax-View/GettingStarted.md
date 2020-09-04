@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started
 
-This section explains the steps required to configure the [`SfParallaxView`](https://help.syncfusion.com/cr/cref_files/xamarin/sfparallaxview/Syncfusion.SfParallaxView.XForms~Syncfusion.SfParallax.XForms.SfParallaxView.html) control and add basic elements to it using various APIs.
+This section explains the steps required to configure the [`SfParallaxView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ParallaxView.SfParallaxView.html) control and add basic elements to it using various APIs.
 
 ## Adding SfParallaxView reference
 

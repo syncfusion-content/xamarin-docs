@@ -20,7 +20,7 @@ The following different built-in shimmer types are available in Shimmer:
 * `Feed`
 * `Shopping`
 
-You can use the built-in shimmer types by setting the [`Type`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer~Type.html) of [`SfShimmer`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.Shimmer.SfShimmer.html).
+You can use the built-in shimmer types by setting the [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_Type) of [`SfShimmer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html).
 
 {% tabs %} 
 

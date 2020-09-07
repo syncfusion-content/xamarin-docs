@@ -395,16 +395,16 @@ The [SelectionChangedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.
 public class CommandViewModel
 {
   private Command<Object> selectionChangedCommand;
-  public Command<object> ListViewSelectionChagedCommand
+  public Command<object> ListViewSelectionChangedCommand
   {
     get { return selectionChangedCommand; }
     set { selectionChangedCommand = value; }
   }
   public CommandViewModel()
   {
-    ListViewSelectionChagedCommand = new Command<object>(SelectionChagedCommandMethod);
+    ListViewSelectionChangedCommand = new Command<object>(SelectionChangedCommandMethod);
   }
-  private void SelectionChagedCommandMethod(object obj)
+  private void SelectionChangedCommandMethod(object obj)
   {
     var listView = obj as SfListView;
     DisplayAlert("Message", (listView.SelectedItem as Contacts).ContactName + " is selected", "OK");

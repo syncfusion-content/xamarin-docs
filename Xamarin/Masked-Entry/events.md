@@ -10,14 +10,14 @@ keywords: mask, SfMaskedEdit, maskededit
 # Events in SfMaskedEdit
 The SfMaskedEdit exposes the following events:
 
-* [`ValueChanged`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~ValueChanged_EV.html): Occurs when the value of [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Value.html) property is changed.
-* [`MaskInputRejected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~MaskInputRejected_EV.html): Occurs when a character is rejected by the input mask.
+* [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html): Occurs when the value of [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property is changed.
+* [`MaskInputRejected`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html): Occurs when a character is rejected by the input mask.
 
 ## ValueChanged event
 
-Occurs when the value of the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Value.html) property is changed by either entering the valid input character or setting the value to the `Value` property through XAML or C# code. The event arguments are of type [`ValueChangedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.ValueChangedEventArgs.html) and expose the following property:
+Occurs when the value of the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property is changed by either entering the valid input character or setting the value to the `Value` property through XAML or C# code. The event arguments are of type [`ValueChangedEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.ValueChangedEventArgs.html) and expose the following property:
 
-* [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.ValueChangedEventArgs~Value.html): The read only property contains the updated value of the [`Value`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.SfMaskedEdit~Value.html) property of SfMaskedEdit.
+* [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.ValueChangedEventArgs.html#Syncfusion_XForms_MaskedEdit_ValueChangedEventArgs_Value): The read only property contains the updated value of the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property of SfMaskedEdit.
 
 > Your valid input character is updated to `Value` property based on the `ValidationMode` property.
 > Refer to this [link](validation.html#validation-mode) to know more about the `ValidationMode` property of `SfMaskedEdit` control.
@@ -74,12 +74,12 @@ private void MaskedEdit_OnValueChanged(object sender, Syncfusion.XForms.MaskedEd
 
 ## MaskInputRejected event
 
-Occurs when your input or assigned character does not match the corresponding format element of the input mask. The event arguments are type of [`MaskInputRejectedEventArgs`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.MaskInputRejectedEventArgs.html) and expose the following properties:
+Occurs when your input or assigned character does not match the corresponding format element of the input mask. The event arguments are type of [`MaskInputRejectedEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.MaskInputRejectedEventArgs.html) and expose the following properties:
 
-* [`Position`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.MaskInputRejectedEventArgs~Position.html): The position in the mask corresponding to the invalid input character.
-* [`RejectionHint`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.MaskInputRejectedEventArgs~RejectionHint.html): The enumerated value that describes why the input character was rejected.
+* [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.MaskInputRejectedEventArgs.html#Syncfusion_XForms_MaskedEdit_MaskInputRejectedEventArgs_Position): The position in the mask corresponding to the invalid input character.
+* [`RejectionHint`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.MaskInputRejectedEventArgs.html#Syncfusion_XForms_MaskedEdit_MaskInputRejectedEventArgs_RejectionHint): The enumerated value that describes why the input character was rejected.
 
-[`MaskInputRejected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaskedEdit.XForms~Syncfusion.XForms.MaskedEdit.MaskInputRejectedEventArgs.html) event is raised in the following situations:
+[`MaskInputRejected`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.MaskInputRejectedEventArgs.html) event is raised in the following situations:
 
 * An input character does not match the corresponding format element. For example, if you enter an alphabetic character when a digit is required. This is probably the most common reason why this event is raised.
 * When you try to input extraneous characters beyond the end of the mask.

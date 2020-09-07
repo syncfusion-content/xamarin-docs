@@ -9,9 +9,9 @@ documentation: ug
 
 # Scroll Buttons on Tab Header
 
-Buttons can be used to scroll the items in the header of the tab view by setting the `IsScrollEnabled` property of [SfTabView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTabView.XForms~Syncfusion.XForms.TabView.SfTabView.html). This also helps to indicate that there are tabs beyond the visible area if more tabs are present.
+Buttons can be used to scroll the items in the header of the tab view by setting the `IsScrollEnabled` property of [SfTabView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html). This also helps to indicate that there are tabs beyond the visible area if more tabs are present.
 
-N> The `IsScrollEnabled` is working only when [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTabView.XForms~Syncfusion.XForms.TabView.SfTabView~OverflowMode.html) is set to `Scroll`.
+N> The `IsScrollEnabled` is working only when [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to `Scroll`.
 
 {% tabs %}
 

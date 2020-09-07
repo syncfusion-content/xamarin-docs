@@ -13,7 +13,7 @@ documentation: ug
 
 ### Loaded event
 
-The [Loaded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Loaded_EV.html) event is raised when the SfListView is loading in view for the first time.
+The [Loaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event is raised when the SfListView is loading in view for the first time.
 
 {% tabs %}
 {% highlight c# %}
@@ -30,17 +30,17 @@ private void ListView_Loaded(object sender, ListViewLoadedEventArgs e)
 
 The `Loaded` event used for the following use cases:
 
-* To scroll the desired position or index by using the [ScrollTo](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ScrollTo.html) or [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ScrollToRowIndex.html).
+* To scroll the desired position or index by using the [ScrollTo](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ScrollTo_System_Double_System_Boolean_) or [ScrollToRowIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.LayoutBase.html#Syncfusion_ListView_XForms_LayoutBase_ScrollToRowIndex_System_Int32_Syncfusion_ListView_XForms_ScrollToPosition_System_Boolean_).
 * To collapse all the groups.
-* To find the sorted or grouped [DataSource.DisplayItems](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~DisplayItems.html) of underlying bound data to SfListView.
+* To find the sorted or grouped [DataSource.DisplayItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_DisplayItems) of underlying bound data to SfListView.
 
 ### Tapped event
 
-The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event will be triggered whenever tapping the item. Here, [TapCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommandParameter.html) property sets the parameter for [SfListView.TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~TapCommand.html) and its default value is [ItemTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs.html). `ItemTappedEventArgs` has the following members which provides the information for `ItemTapped` event:
+The [ItemTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event will be triggered whenever tapping the item. Here, [TapCommandParameter](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_TapCommandParameter) property sets the parameter for [SfListView.TapCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_TapCommand) and its default value is [ItemTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemTappedEventArgs.html). `ItemTappedEventArgs` has the following members which provides the information for `ItemTapped` event:
 
- * [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs~ItemType.html): It gets the type of the tapped item.
- * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs~ItemData.html): The underlying data associated with the tapped item as its arguments.
- * [Position](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemTappedEventArgs~Position.html): Gets the touch position in the tapped item.
+ * [ItemType](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemTappedEventArgs.html#Syncfusion_ListView_XForms_ItemTappedEventArgs__ctor_Syncfusion_ListView_XForms_ItemType_System_Object_Xamarin_Forms_Point_): It gets the type of the tapped item.
+ * [ItemData](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemTappedEventArgs.html#Syncfusion_ListView_XForms_ItemTappedEventArgs_ItemData): The underlying data associated with the tapped item as its arguments.
+ * [Position](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemTappedEventArgs.html#Syncfusion_ListView_XForms_ItemTappedEventArgs_Position): Gets the touch position in the tapped item.
 
 {% tabs %}
 {% highlight c# %}
@@ -56,7 +56,7 @@ private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemT
 {% endhighlight %}
 {% endtabs %}
 
-The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event is used for the following use cases:
+The [ItemTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event is used for the following use cases:
 
 * To show the context menu.
 * To navigate to another page.
@@ -68,11 +68,11 @@ The [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 
 ### ItemDoubleTapped event
 
-The [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDoubleTapped_EV.html) event will be triggered whenever double tapping the item. The [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs.html) has the following members providing information for the `ItemDoubleTapped` event:
+The [ItemDoubleTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event will be triggered whenever double tapping the item. The [ItemDoubleTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs.html) has the following members providing information for the `ItemDoubleTapped` event:
 
- * [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs~ItemType.html): It gets the type of double tapped item.
- * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs~ItemData.html): The underlying data associated with the double tapped item as its arguments.
- * [Position](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs~Position.html): Gets the touch position in the double tapped item.
+ * [ItemType](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs.html#Syncfusion_ListView_XForms_ItemDoubleTappedEventArgs__ctor_Syncfusion_ListView_XForms_ItemType_System_Object_Xamarin_Forms_Point_): It gets the type of double tapped item.
+ * [ItemData](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs.html#Syncfusion_ListView_XForms_ItemDoubleTappedEventArgs_ItemData): The underlying data associated with the double tapped item as its arguments.
+ * [Position](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemDoubleTappedEventArgs.html#Syncfusion_ListView_XForms_ItemDoubleTappedEventArgs_Position): Gets the touch position in the double tapped item.
 
 {% tabs %}
 {% highlight c# %}
@@ -90,7 +90,7 @@ private void ListView_ItemDoubleTapped(object sender, ItemDoubleTappedEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-The [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDoubleTapped_EV.html) event is used for the following use cases:
+The [ItemDoubleTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event is used for the following use cases:
 
 * To show the context menu.
 * To delete the item in the list view at runtime.
@@ -98,11 +98,11 @@ The [ItemDoubleTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 
 ### ItemHolding event
 
-The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event will be triggered whenever long pressing the item. Here, [HoldCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommandParameter.html) sets the parameter for [SfListView.HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~HoldCommand.html) and its default value is [ItemHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs.html). `ItemHoldingEventArgs` has the following members which provides the information for `ItemHolding` event:
+The [ItemHolding](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event will be triggered whenever long pressing the item. Here, [HoldCommandParameter](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_HoldCommandParameter) sets the parameter for [SfListView.HoldCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_HoldCommand) and its default value is [ItemHoldingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemHoldingEventArgs.html). `ItemHoldingEventArgs` has the following members which provides the information for `ItemHolding` event:
 
- * [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs~ItemType.html): It gets the type of the long pressed item.
- * [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs~ItemData.html): The underlying data associated with the holding item as its arguments.
- * [Position](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs~Position.html): Gets the touch position in the holding item.
+ * [ItemType](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemHoldingEventArgs.html#Syncfusion_ListView_XForms_ItemHoldingEventArgs__ctor_Syncfusion_ListView_XForms_ItemType_System_Object_Xamarin_Forms_Point_): It gets the type of the long pressed item.
+ * [ItemData](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemHoldingEventArgs.html#Syncfusion_ListView_XForms_ItemHoldingEventArgs_ItemData): The underlying data associated with the holding item as its arguments.
+ * [Position](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemHoldingEventArgs.html#Syncfusion_ListView_XForms_ItemHoldingEventArgs_Position): Gets the touch position in the holding item.
 
 {% tabs %}
 {% highlight c# %}
@@ -118,7 +118,7 @@ private void ListView_ItemHolding(object sender, ItemHoldingEventArgs e)
 {% endhighlight %}
 {% endtabs%}
 
-The [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event is used for the following use cases:
+The [ItemHolding](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event is used for the following use cases:
 
 * To show the context menu.
 
@@ -126,9 +126,9 @@ N> Interaction events of the `SfListView` will be triggered for all the `ListVie
 
 ### ItemAppearing
 
-The [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) event is raised when the items are appearing in the view on scrolling, loading, and navigating from one page to another page. The [ItemAppearingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs.html) has the following member which provides the information of appearing Items.
+The [ItemAppearing](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event is raised when the items are appearing in the view on scrolling, loading, and navigating from one page to another page. The [ItemAppearingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemAppearingEventArgs.html) has the following member which provides the information of appearing Items.
 
-* [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemAppearingEventArgs~ItemData.html): The underlying data associated with the appearing item.
+* [ItemData](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemAppearingEventArgs.html#Syncfusion_ListView_XForms_ItemAppearingEventArgs_ItemData): The underlying data associated with the appearing item.
 
 {% tabs %}
 {% highlight c# %}
@@ -148,16 +148,16 @@ private void listView_ItemAppearing(object sender, Syncfusion.ListView.XForms.It
 {% endhighlight %}
 {% endtabs %}
 
-The [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) event used for the following use cases:
+The [ItemAppearing](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event used for the following use cases:
 
 * To find the item appears in the view.
 * To customize the appearing item to change the background color using converter.
 
 ### ItemDisappearing
 
-The [ItemDisappearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDisappearing_EV.html) event is raised when the items disappearing in the view on scrolling, disposing, and navigating from one page to another page. The [ItemDisappearingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDisappearingEventArgs.html) has the following member which provides the information on disappearing Items:
+The [ItemDisappearing](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event is raised when the items disappearing in the view on scrolling, disposing, and navigating from one page to another page. The [ItemDisappearingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemDisappearingEventArgs.html) has the following member which provides the information on disappearing Items:
 
-* [ItemData](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemDisappearingEventArgs~ItemData.html): The underlying data associated with the disappearing item.
+* [ItemData](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemDisappearingEventArgs.html#Syncfusion_ListView_XForms_ItemDisappearingEventArgs_ItemData): The underlying data associated with the disappearing item.
 
 {% tabs %}
 {% highlight c# %}
@@ -177,7 +177,7 @@ private void listView_ItemDisappearing(object sender, Syncfusion.ListView.XForms
 {% endhighlight %}
 {% endtabs %}
 
-The [ItemDisappearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDisappearing_EV.html) event used for the following use cases:
+The [ItemDisappearing](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event used for the following use cases:
 
 * To find the item disappears in the view.
 
@@ -186,7 +186,7 @@ The [ItemDisappearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 The SfListView has been built from the ground up with an optimized view reuse strategy for the best possible performance on the Xamarin platform even when loading large data sets. Following techniques are used to improve performance of the SfListView:
 
  * Bind the ItemsSource property to an IList<T> collection instead of an IEnumerable<T> collection because IEnumerable<T> collection do not support random access.
- * The `SfListView` gets refreshed each and every time a new item added into the underlying collection. Because, when adding items at runtime, the `DataSource` gets refreshed. To avoid this behavior, use [BeginInit()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~BeginInit.html) to stop the RefreshView() calling in each time, and use [EndInit()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.DataSource.Portable~Syncfusion.DataSource.DataSource~EndInit.html) to start the RefreshView() calling when adding number of finished items.
+ * The `SfListView` gets refreshed each and every time a new item added into the underlying collection. Because, when adding items at runtime, the `DataSource` gets refreshed. To avoid this behavior, use [BeginInit()](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_BeginInit) to stop the RefreshView() calling in each time, and use [EndInit()](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_EndInit) to start the RefreshView() calling when adding number of finished items.
  * Avoid loading complex layout in template of listview. For example, loading large-size images or nested containers degrades the scrolling performance. This practice commonly degrades performance in all platforms, and particularly more in Android version API level 19. So, use fewer elements and images with small size and resolution to achieve the maximum performance.
  * Avoid placing the SfListView inside ScrollView for the following reasons:
     * The SfListView implement its own scrolling.
@@ -197,7 +197,7 @@ The SfListView has been built from the ground up with an optimized view reuse st
 
 ## Loading ListView inside ScrollView
 
-When the `SfListView` is loaded inside the `ScrollView` with the height of total items, scrolling will not occur in the SfListView only when [AllowSwiping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowSwiping.html) is set to `true`. The SfListView does not pass touch to the parent ScrollView in UWP, because swiping is handled in it. 
+When the `SfListView` is loaded inside the `ScrollView` with the height of total items, scrolling will not occur in the SfListView only when [AllowSwiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AllowSwiping) is set to `true`. The SfListView does not pass touch to the parent ScrollView in UWP, because swiping is handled in it. 
 
 When the SfListView is loaded inside the ScrollView the following scenarios, the height of the total items is set to `HeightRequest` of the SfListView.
 
@@ -231,7 +231,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## Loading ListView inside CarouselPage/Master detail page
 
-When the SfListView is loaded in CarouselView with [SfListView.AllowSwiping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AllowSwiping.html) as false, it behaves in UWP platform as follows:
+When the SfListView is loaded in CarouselView with [SfListView.AllowSwiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AllowSwiping) as false, it behaves in UWP platform as follows:
  
  * When performing first swipe on the view, it will be handled by ScrollView to ensure whether scrolling is happened or not. If not means the manipulation to parent cannot be passed immediately due to UWP platform behavior. The second swipe will be listened by CarouselView, and the view gets swiped. This is the behavior of the SfListView. 
 
@@ -244,7 +244,7 @@ When the SfListView is loaded in CarouselView with `SfListView.AllowSwiping` as 
 
 ## Context menu on items
 
-The SfListView allows displaying a pop-up menu with different menu items to an item when it is long pressed by customizing the SfListView and by using custom view in it. For UWP platform, you can also display the pop-up menu when pressing right click button over the item. Display the pop-up menu by accessed the touch position in the item based on [Position](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemHoldingEventArgs~Position.html) property from [ItemHolding](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemHolding_EV.html) event.
+The SfListView allows displaying a pop-up menu with different menu items to an item when it is long pressed by customizing the SfListView and by using custom view in it. For UWP platform, you can also display the pop-up menu when pressing right click button over the item. Display the pop-up menu by accessed the touch position in the item based on [Position](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemHoldingEventArgs.html#Syncfusion_ListView_XForms_ItemHoldingEventArgs_Position) property from [ItemHolding](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event.
 
 Defining SfPopUpView
 
@@ -538,7 +538,7 @@ The SfListView allows binding the data from online database with the help of `Az
 Step 1: Get URL to store the data online.
 Step 2: Create table using `AppServiceHelpers`.
 Step 3: Populate the data into the table using the ObservableCollection `Items`.
-Step 4: Bind it to SfListView using [SfListView.ItemSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html) property.
+Step 4: Bind it to SfListView using [SfListView.ItemSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemsSource) property.
 Step 5: Refer to the following link to know more about working with `Azure App Service`.
         https://blog.xamarin.com/add-a-backend-to-your-app-in-10-minutes/ 
 
@@ -710,7 +710,7 @@ The SfListView allows binding the data from local database by using SQLite. To p
 Step 1: Create a `SQLite database table`
 Step 2: Populate the data into the table
 Step 3: Store them as an `IEnumerable` collection
-Step 4: Bind it to SfListView using [SfListView.ItemSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html) property.
+Step 4: Bind it to SfListView using [SfListView.ItemSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemsSource) property.
 Step 5: Refer to the following link to know how to create SQLite connection,
 http://developer.xamarin.com/guides/xamarin-forms/working-with/databases/
 
@@ -903,7 +903,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## Scrolling ListView without virtualization
 
-ListView allows you to scroll by loading the entire collection of items inside the ScrollView and defining the total extend of its container to `HeightRequest` in the [Loaded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Loaded_EV.html) event.
+ListView allows you to scroll by loading the entire collection of items inside the ScrollView and defining the total extend of its container to `HeightRequest` in the [Loaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event.
 
 {% tabs %}
 {% highlight xaml %}
@@ -932,7 +932,7 @@ public partial class MainPage : ContentPage
 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/How-to-load-xamarin.forms-listview-for-full-height-without-virtualization).
 
-When ListView is in [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) as 'Height', the extend of the ListView will be updated only while scrolling. So you can resize the ListView in `VisualContainer` [PropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.VisualContainer~PropertyChanged_EV.html) method as like below.
+When ListView is in [AutoFitMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AutoFitMode) as 'Height', the extend of the ListView will be updated only while scrolling. So you can resize the ListView in `VisualContainer` [PropertyChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.VisualContainer.html) method as like below.
 
 {% tabs %}
 {% highlight xaml %}
@@ -972,25 +972,25 @@ public partial class MainPage : ContentPage
 
 You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample_(2)1126902862).
 
-N> While loading in `AutoFitMode` make sure that the [ItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemSize.html) property value is not specified, to avoid extra space below the list. Update the size of the container after ListView loaded to render all the list items in the view.
+N> While loading in `AutoFitMode` make sure that the [ItemSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemSize) property value is not specified, to avoid extra space below the list. Update the size of the container after ListView loaded to render all the list items in the view.
 
 The following limitations should be noted when using the previous approaches:
 
-* As the entire list items are loaded inside the parent `ScrollView` element, the [ItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemAppearing_EV.html) and [ItemDisappearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemDisappearing_EV.html) events will not be fired when scrolling.
+* As the entire list items are loaded inside the parent `ScrollView` element, the [ItemAppearing](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) and [ItemDisappearing](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) events will not be fired when scrolling.
 * When performing keyboard navigation, the view cannot be scrolled automatically while navigating out of view.
 * Scrolling through the touch action will be handled in all platforms and ListView scrolling will be handled by the parent ScrollView.
 
 
 ## Working with nested ListView
  
-ListView allows you to load another ListView inside its [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html). When the [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitMode.html) of the outer ListView is height, the size of the inner ListView will be allocated from the maximum screen size. Since the exact size for the inner list cannot not be obtained before loading the view. 
+ListView allows you to load another ListView inside its [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate). When the [AutoFitMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AutoFitMode) of the outer ListView is height, the size of the inner ListView will be allocated from the maximum screen size. Since the exact size for the inner list cannot not be obtained before loading the view. 
  
 To get a fixed height for the inner ListView, define a value in its `HeightRequest`. If the items inside the inner ListView are less, allocate the total extend of the inner list to its `HeightRequest`.
  
 Follow the steps to set the size for the outer ListView based on the extend of inner ListView:
 
 1. Define a property in the Model class and bind it to the HeightRequest of inner ListView, as the height for various inner ListView has to be identified while scrolling.
-2. Hook the container's [PropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.VisualContainer~PropertyChanged_EV.html) event. When the height of the container changes, set the value of `TotalExtent` to the property bound to the HeightRequest.
+2. Hook the container's [PropertyChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.VisualContainer.html) event. When the height of the container changes, set the value of `TotalExtent` to the property bound to the HeightRequest.
 3. Call the `RefreshView` method asynchronously with few seconds delay in the `Loaded` event of the outer SfListView. The height requested for each inner SfListView will be set but the outer SfListView will not get any notification regarding the size change. So, call the RefreshView method asynchronously after loading the view.
 
 {% tabs %}
@@ -1070,7 +1070,7 @@ The options are as follows:
 
 ## Dispose listview
 
-You can dispose and release resources used by ListView by calling the [ListView.Dispose](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Dispose().html) method.
+You can dispose and release resources used by ListView by calling the [ListView.Dispose](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_Dispose().html) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -1084,7 +1084,7 @@ protected override void OnDisappearing()
 
 ## Refresh view
 
-You can refresh the view by using the [RefreshView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~RefreshView.html) method. It will be used to refresh the items in the listview at runtime while updating the view.
+You can refresh the view by using the [RefreshView](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_RefreshView) method. It will be used to refresh the items in the listview at runtime while updating the view.
 
 {% tabs %}
 {% highlight c# %} 

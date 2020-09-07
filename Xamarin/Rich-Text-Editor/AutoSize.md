@@ -9,7 +9,7 @@ documentation: ug
 
 # AutoSize in Xamarin Rich Text Editor (SfRichTextEditor)
 
-The Xamarin Rich Text Editor control provides support to dynamically change the height of the control based on the input text's height. This feature can be enabled by setting the `AutoSizeOption.TextChanges` to [`AutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor~AutoSize.html) property. By default, AutoSize feature will be disabled in RichTextEditor. The following code example shows how to enable AutoSize in Rich Text Editor control.
+The Xamarin Rich Text Editor control provides support to dynamically change the height of the control based on the input text's height. This feature can be enabled by setting the `AutoSizeOption.TextChanges` to [`AutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_AutoSize) property. By default, AutoSize feature will be disabled in RichTextEditor. The following code example shows how to enable AutoSize in Rich Text Editor control.
 
 {% tabs %} 
 
@@ -31,7 +31,7 @@ this.Content = richtexteditor;
 
 ## MaximumHeightRequest and MinimumHeightRequest
 
-AutoSize feature in the Xamarin Rich Text Editor control can be controlled by setting the [`MaximumHeightRequest`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor~MaximumHeightRequest.html) and [`MinimumHeightRequest`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfRichTextEditor.XForms~Syncfusion.XForms.RichTextEditor.SfRichTextEditor~MinimumHeightRequest.html) properties. The following code example shows how to set the MaximumHeightRequest and MinimumHeightRequest for RichTextEditor control.
+AutoSize feature in the Xamarin Rich Text Editor control can be controlled by setting the [`MaximumHeightRequest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_MaximumHeightRequest) and [`MinimumHeightRequest`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_MinimumHeightRequest) properties. The following code example shows how to set the MaximumHeightRequest and MinimumHeightRequest for RichTextEditor control.
 
 {% tabs %} 
 

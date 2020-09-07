@@ -9,7 +9,7 @@ documentation: ug
 
 # PullToRefresh
 
-The [SfPullToRefresh](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html) refreshing control allows interacting and refreshing the loaded view. When the SfListView is loaded inside the `SfPullToRefresh`, it refreshes the item when performing the pull-to-refresh action.
+The [SfPullToRefresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html) refreshing control allows interacting and refreshing the loaded view. When the SfListView is loaded inside the `SfPullToRefresh`, it refreshes the item when performing the pull-to-refresh action.
 
 Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sfpulltorefresh) section to get the list of assemblies or NuGet package needs to be added as reference to use the SfPullToRefresh control.
 
@@ -17,7 +17,7 @@ Refer [initializing pull-to-refresh](https://help.syncfusion.com/xamarin/sfpullt
 
 ## SfListView inside the SfPullToRefresh 
 
-The SfListView supports refreshing the data in view when performing the pull-to-refresh action at runtime by loading it directly into the [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullableContent.html) of the [SfPullToRefresh](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html).
+The SfListView supports refreshing the data in view when performing the pull-to-refresh action at runtime by loading it directly into the [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html#Syncfusion_SfPullToRefresh_XForms_SfPullToRefresh_PullableContent) of the [SfPullToRefresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html).
 
 N> You should load the SfListView as first children of `PullableContent` for the `SfPullToRefresh`.
 
@@ -60,7 +60,7 @@ public ListViewPullToRefresh()
 
 ### Loading data when refreshing
 
-To refresh the data in view at runtime, use the [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~Refreshing_EV.html) event. The `Refreshing` event gets triggered once the progress bar meets 100 %. The data can be added into the underlying collection, and the data gets updated in view once the `Refreshing` event gets completed.
+To refresh the data in view at runtime, use the [SfPullToRefresh.Refreshing](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html) event. The `Refreshing` event gets triggered once the progress bar meets 100 %. The data can be added into the underlying collection, and the data gets updated in view once the `Refreshing` event gets completed.
 
 {% tabs %}
 {% highlight c# %}
@@ -95,7 +95,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## SfListView inside the SfPullToRefresh with ScrollView 
 
-The SfListView allows loading as a [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullableContent.html) of the [SfPullToRefresh](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html) with ScrollView and refresh the data in view at runtime.
+The SfListView allows loading as a [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html#Syncfusion_SfPullToRefresh_XForms_SfPullToRefresh_PullableContent) of the [SfPullToRefresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html) with ScrollView and refresh the data in view at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -150,13 +150,13 @@ public App()
 
 ## Limitation
 
-The horizontal ListView does not support the [SfPullToRefresh](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html).
+The horizontal ListView does not support the [SfPullToRefresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html).
 
 ## How To
 
 ### Pull-to-refresh with SearchBar at Top
 
-When the SearchBar or any view placed above the [SfPullToRefresh](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html) control, pulling action does not work on the SfListView because touches directly passed to the SfListView instead of SfPullToRefresh control. You can overcome this problem by placing the SfListView inside the Grid and place that Grid as [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh~PullableContent.html).
+When the SearchBar or any view placed above the [SfPullToRefresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html) control, pulling action does not work on the SfListView because touches directly passed to the SfListView instead of SfPullToRefresh control. You can overcome this problem by placing the SfListView inside the Grid and place that Grid as [SfPullToRefresh.PullableContent](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html#Syncfusion_SfPullToRefresh_XForms_SfPullToRefresh_PullableContent).
 
 {% tabs %}
 {% highlight xaml %}
@@ -220,7 +220,7 @@ Download entire source code from GitHub [here](https://github.com/SyncfusionExam
 
 ### Pull-to-refresh with Grouping
 
-The [SfPullToRefresh](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPullToRefresh.XForms~Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html) has its pullable content as SfListView along with [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~GroupHeaderTemplate.html). When refreshing the items in the listview, the newly added item loads directly into respective groups.
+The [SfPullToRefresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html) has its pullable content as SfListView along with [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupHeaderTemplate). When refreshing the items in the listview, the newly added item loads directly into respective groups.
 
 {% tabs %}
 {% highlight xaml %}

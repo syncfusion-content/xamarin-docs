@@ -9,7 +9,7 @@ documentation: ug
 
 # Layout Customizations
 
-The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html). By default, the `AppearanceMode.OneButton` is set. You can change the appearance by using the `SfPopupLayout.PopupView.AppearanceMode` property.
+The SfPopupLayout supports two types of [SfPopupLayout.PopupView.AppearanceMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AppearanceMode.html). By default, the `AppearanceMode.OneButton` is set. You can change the appearance by using the `SfPopupLayout.PopupView.AppearanceMode` property.
 
 The two different appearance modes in the SfPopupLayout are as follows:
 
@@ -19,11 +19,11 @@ The two different appearance modes in the SfPopupLayout are as follows:
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'[OneButton](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html)'| markdownify }} </td>
+<td> {{'[OneButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AppearanceMode.html)'| markdownify }} </td>
 <td> Shows the SfPopupLayout with one button in the footer view. This is the default value.</td>
 </tr>
 <tr>
-<td> {{'[TwoButton](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.AppearanceMode.html)'| markdownify }} </td>
+<td> {{'[TwoButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.AppearanceMode.html)'| markdownify }} </td>
 <td> Shows the SfPopupLayout with two buttons in the footer view.</td>
 </tr>
 </table>
@@ -136,7 +136,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ## Popup without header
 
-You can display the Popup without header by using the property, [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowHeader.html), find the code example of the same below.
+You can display the Popup without header by using the property, [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupView.html#Syncfusion_XForms_PopupLayout_PopupView_ShowHeader), find the code example of the same below.
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -186,7 +186,7 @@ namespace GettingStarted
 
 ## Popup without Footer
 
-You can display the Popup without footer by using the property, [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowFooter.html), find the code example of the same below.
+You can display the Popup without footer by using the property, [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupView.html#Syncfusion_XForms_PopupLayout_PopupView_ShowFooter), find the code example of the same below.
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -235,7 +235,7 @@ namespace GettingStarted
 
 ## Popup without header and footer
 
-You can display only the content of the SfPopupLayout, by removing the header and footer by using [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowHeader.html) and [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ShowFooter.html), code example of the same below.
+You can display only the content of the SfPopupLayout, by removing the header and footer by using [SfPopupLayout.PopupView.ShowHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupView.html#Syncfusion_XForms_PopupLayout_PopupView_ShowHeader) and [SfPopupLayout.PopupView.ShowFooter](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupView.html#Syncfusion_XForms_PopupLayout_PopupView_ShowFooter), code example of the same below.
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -283,7 +283,7 @@ namespace GettingStarted
 
 ## Customizing popup header
 
-Any view can be added as the header content using the [SfPopupLayout.PopupView.HeaderTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~HeaderTemplate.html) property. Refer to the following code example in which a label is added as a header content.
+Any view can be added as the header content using the [SfPopupLayout.PopupView.HeaderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupView.html#Syncfusion_XForms_PopupLayout_PopupView_HeaderTemplate) property. Refer to the following code example in which a label is added as a header content.
 
 {% tabs %}
 
@@ -371,7 +371,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ## Customizing popup footer
 
-Any view can be added as the footer content using the [SfPopupLayout.PopupView.FooterTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property. Refer to the following code example in which a label is added as a footer content.
+Any view can be added as the footer content using the [SfPopupLayout.PopupView.FooterTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupView.html#Syncfusion_XForms_PopupLayout_PopupView_ContentTemplate) property. Refer to the following code example in which a label is added as a footer content.
 
 {% tabs %}
 
@@ -458,7 +458,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ## Customizing popup content
 
-Any view can be added as popup content by using the [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~ContentTemplate.html) property. Refer to the following code example in which a label is added as a popup content.
+Any view can be added as popup content by using the [SfPopupLayout.PopupView.ContentTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupView.html#Syncfusion_XForms_PopupLayout_PopupView_ContentTemplate) property. Refer to the following code example in which a label is added as a popup content.
 
 {% tabs %}
 

@@ -13,7 +13,7 @@ One of the important features of the image editor control is to perform `Undo` a
 
 ## Undo
 
-The [`Undo`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~Undo.html) method is used to revert the changes done previously over an image.
+The [`Undo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_Undo) method is used to revert the changes done previously over an image.
 
 Undo can be performed for the following operations:
 
@@ -35,7 +35,7 @@ editor.Undo();
 
 ## Redo
 
-The [`Redo`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfImageEditor.XForms~Syncfusion.SfImageEditor.XForms.SfImageEditor~Redo.html) method is used to redo the changes that are reverted by undo operation.
+The [`Redo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_Redo) method is used to redo the changes that are reverted by undo operation.
 
 {% tabs %}
 

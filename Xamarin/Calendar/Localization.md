@@ -9,7 +9,7 @@ documentation: ug
 
 # Localization in Xamarin Calendar (SfCalendar)
 
-`SfCalendar` control is available with complete localization support. Localization can be specified by setting the [Locale](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~Locale.html) property of the control using the format of Language code followed by Country code. 
+`SfCalendar` control is available with complete localization support. Localization can be specified by setting the [Locale](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_Locale) property of the control using the format of Language code followed by Country code. 
 
 ## Change default control language
 

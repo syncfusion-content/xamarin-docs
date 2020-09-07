@@ -23,15 +23,15 @@ The following properties in shape layers are used for binding data in the maps c
 
 ### ItemsSource
 
-The [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ItemsSource.html) property accepts the collection values as input. 
+The [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_ItemsSource) property accepts the collection values as input. 
 
 ### ShapeIDPath
 
-The [`ShapeIDPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDPath.html) property refers the data ID in `ItemsSource`.
+The [`ShapeIDPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_ShapeIDPath) property refers the data ID in `ItemsSource`.
 
 ### ShapeIDTableField
 
-The [`ShapeIDTableField`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShapeIDTableField.html) property is similar to the `ShapeIdPath`; it refers to the column name in the data property of shape layers to identify the shape. When the values of the `ShapeIdPath` property in the `ItemsSource` property and the values of `ShapeIdTableField` in the data property match, the associated object from the ItemsSource will be bound to the corresponding shape.
+The [`ShapeIDTableField`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_ShapeIDTableField) property is similar to the `ShapeIdPath`; it refers to the column name in the data property of shape layers to identify the shape. When the values of the `ShapeIdPath` property in the `ItemsSource` property and the values of `ShapeIdTableField` in the data property match, the associated object from the ItemsSource will be bound to the corresponding shape.
 
 {% tabs %}
 

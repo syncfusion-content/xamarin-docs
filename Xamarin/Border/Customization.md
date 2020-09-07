@@ -269,3 +269,32 @@ SfBorder border = new SfBorder()
 N> Shadow support has not been provided for UWP Platform.
 
 ![ShadowImage](images/Xamarin_Forms_Shadow.png)
+
+## Border Thickness
+
+You can customize the border thickness of the border on four sides using the `BorderThickness` property with type as `Thickness`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<border:SfBorder x:Name="border" BorderColor = "Red" BorderThickness="5,1,5,1" >
+ <Label Text="James Williamson" 
+ TextColor="Black"/>
+</border:SfBorder>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfBorder border = new SfBorder();
+border.BorderThickness =  new Thickness (5,1,5,1);
+border.BorderColor = Color.Red;
+Label label = new Label();
+label.Text = "James Williamson";
+label.TextColor = Color.Black;
+border.Content = label;
+this.Content = border;
+
+{% endhighlight %}
+{% endtabs %}
+
+![borderthickness](images/Xamarin_Forms_BorderThickness.png)

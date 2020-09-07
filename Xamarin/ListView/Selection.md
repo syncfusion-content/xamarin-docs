@@ -54,10 +54,54 @@ When the selection mode is `Multiple`, programmatically select more than one ite
 {% tabs %}
 {% highlight c# %} 
 //Perform multiple selection using selected items
+public class SelectionViewModel : INotifyPropertyChanged
+{
+    private ObservableCollection<object> selectedItems;
+    
+    public SelectionViewModel()
+    {
+        GenerateSource();
+        SelectedItems = new ObservableCollection<object>();
+    }
+	
+    public ObservableCollection<object> SelectedItems
+    {
+        get { return selectedItems; }
+        set { this.selectedItems = value; }
+    }
+	private async void GenerateSource()
+    {
+        var random = new Random();
+        musicInfo = new ObservableCollection<MusicInfo>();
+
+        for (int i = 0; i < SongsNames.Count(); i++)
+        {
+            var info = new MusicInfo()
+            {
+                SongTitle = SongsNames[i],
+                SongAuther = SongAuthers[i],
+                SongSize = random.Next(50, 600).ToString() + "." + random.Next(1, 10) / 2 + "KB",
+                SongThumbnail = ImageSource.FromResource("CustomSelection.Images.SongThumbnail.png"),
+                SelectedImage = ImageSource.FromResource("CustomSelection.Images.Selected.png"),
+                NotSelectedImage = ImageSource.FromResource("CustomSelection.Images.NotSelected.png"),
+            };
+            musicInfo.Add(info);
+        }
+        SelectedItems.Add(MusicInfo[0]);
+	}
+}
+
 listView.SelectedItems.Add (viewModel.Items [4]);
 listView.SelectedItems.Add (viewModel.Items[5]);
 {% endhighlight %}
 {% endtabs %}
+
+N> SfListView.SelectedItems property type is of type ObservableCollection<Object> and you should use generic type as object for collection type.
+
+{% tabs %}
+{% highlight xaml %}
+<sync:SfListView x:Name="listView" SelectedItems="{Binding SelectedItems}">
+</sync:SfListView>
 
 All items of the SfListView can be selected using the [SelectAll](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectAll) method.
 

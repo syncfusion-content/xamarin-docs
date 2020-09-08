@@ -235,6 +235,10 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 * Round
 * Additional
 * Normal
+* RoundStart
+* RoundEnd
+* PrependInterval
+* AppendInterval
 
 **None**
 
@@ -339,6 +343,102 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Norm
 {% endtabs %}
 
 ![NumericalAxis range padding support in Xamarin.Forms Chart](axis_images/axis_img10.png)
+
+**RoundStart**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_RangePadding) property is [`RoundStart`], axis range will be rounded in the start to the nearest possible value divided by the interval.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.SecondaryAxis>
+
+	<chart:NumericalAxis RangePadding="RoundStart"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.RoundStart };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**RoundEnd**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_RangePadding) property is [`RoundEnd`], axis range will be rounded in the end to the nearest possible value divided by the interval.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.SecondaryAxis>
+
+	<chart:NumericalAxis RangePadding="RoundEnd"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.RoundEnd };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**PrependInterval**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_RangePadding) property is [`PrependInterval`], axis range will be rounded and an interval of the axis will be added in the start as padding to the minimum and maximum values of the range.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.SecondaryAxis>
+
+	<chart:NumericalAxis RangePadding="PrependInterval"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.PrependInterval };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+**AppendInterval**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_RangePadding) property is [`AppendInterval`], axis range will be rounded and an interval of the axis will be added in the end as padding to the minimum and maximum values of the range.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.SecondaryAxis>
+
+	<chart:NumericalAxis RangePadding="AppendInterval"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.AppendInterval };
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## Date Time Axis
 

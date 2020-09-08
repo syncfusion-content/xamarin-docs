@@ -245,7 +245,7 @@ schedule.MonthViewSettings = monthViewSettings;
 
 ### Customize inline items using AgendaView
 
-You can customize the inline items using the [AgendaItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaItemTemplate.html) property of the [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MonthViewSettings.html) in schedule. You can show the inline view by setting the `ShowAppointmentsInline` property as true.
+You can customize the inline items using the [AgendaItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.MonthViewSettings~AgendaItemTemplate.html) property of the [MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~MonthViewSettings.html) in schedule. You can show the inline view by setting the `ShowAppointmentsInline` property to true.
 
 {% tabs %}
 {% highlight xaml %}

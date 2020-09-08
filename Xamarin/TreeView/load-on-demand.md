@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Load On-demand | TreeView for Xamarin.Forms | Syncfusion
-description: Describes about loading nodes on demand for TreeView.
+description: This topic explains about how to load the child nodes on demand for treeview in SfTreeView Xamarin.Forms
 platform: xamarin
 control: SfTreeView
 documentation: ug
 ---
 
-# Load on demand
+# Load on demand in Xamarin TreeView (SfTreeView)
 
 TreeView allows you to load child items only when they are requested using Load on-demand(Lazy load). It helps to load the child items from services when end-user expands the node. Initially populate the root [Nodes](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_Nodes) by assigning [ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ItemsSource) and then when any node is expanded, child items can be loaded using [LoadOnDemandCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_LoadOnDemandCommand). Load on-demand is applicable for bound mode only.
 
@@ -247,6 +247,8 @@ You can load child items for the node in [Execute](https://docs.microsoft.com/en
 * Once data fetched, you can populate the child nodes by calling [TreeViewNode.PopulateChildNodes](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_PopulateChildNodes_System_Collections_IEnumerable_) method by passing the child items collection. 
 * When load on-demand command executes expanding operation will not be handled by `TreeView`. So, you have to set [TreeViewNode.IsExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_IsExpanded) property to `true` to expand the tree node after populating child nodes.
 * You can skip population of child items again and again when every time the node expands, based on [TreeViewNode.ChildNodes](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_ChildNodes) count. 
+* You can get the number of child nodes displayed in the view by using the [TreeViewNode.VisibleNodesCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~VisibleNodesCount.html) property.
+* The child nodes of the treeView node can be indicated based upon the return value of [HasChildNodes](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~HasChildNodes.html) property. If the node has any child nodes, it returns `true` otherwise it returns `false`.
 
 {% tabs %}
 {% highlight c# %}
@@ -265,6 +267,21 @@ private void ExecuteOnDemandLoading(object obj)
         node.IsExpanded = true;
         return;
     }
+}
+    /// <summary>
+    /// CanExecute method is called before expanding and initialization of node. Returns whether the node has child nodes or not.
+    /// Based on return value, expander visibility of the node is handled.  
+    /// </summary>
+    /// <param name="sender">TreeViewNode is passed as default parameter </param>
+    /// <returns>Returns true, if the specified node has child items to load on demand and expander icon is displayed for that node, else returns false and icon is not displayed.</returns>
+    private bool CanExecuteOnDemandLoading(object sender)
+    {
+    var hasChildNodes = ((sender as TreeViewNode).Content as MusicInfo).HasChildNodes;
+    if (hasChildNodes)
+        return true;
+    else
+        return false;
+    }
 
     //Animation starts for expander to show progressing of load on demand
     node.ShowExpanderAnimation = true;
@@ -282,7 +299,10 @@ private void ExecuteOnDemandLoading(object obj)
             //Expand the node after child items are added.
             node.IsExpanded = true;
 
-        //Stop the animation after load on demand is executed, if animation not stopped, it remains still after execution of load on demand.
+        	//Get the VisibleNodesCount
+			var count = node.VisibleNodesCount;
+
+		//Stop the animation after load on demand is executed, if animation not stopped, it remains still after execution of load on demand.
         node.ShowExpanderAnimation = false;
     });
 }

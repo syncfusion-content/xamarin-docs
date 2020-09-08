@@ -13,7 +13,7 @@ documentation: ug
 
 ### PropertyChanged
 
-The [PropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~PropertyChanged_EV.html) event will be triggered whenever a properties in TreeViewNode is changed. You can get the name of the property that changed by using the `PropertyName` property of the `PropertyChangedEventArgs`. [RaisedOnPropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~RaisedOnPropertyChanged.html) is a helper method used to raise the `PropertyChanged` event in TreeViewNode.
+The [PropertyChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~PropertyChanged_EV.html) event will be triggered whenever a properties in TreeViewNode is changed. You can get the name of the property that changed by using the `PropertyName` property of the `PropertyChangedEventArgs`.
 
 {% tabs %}
 {% highlight c# %}
@@ -28,7 +28,7 @@ private void Treeviewnode_PropertyChanged(object sender, PropertyChangedEventArg
 
 ## SetDirty
 
-Using this [SetDirty](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~SetDirty.html) method, you can recomputed the amount of cache for the whole node.
+Using this [SetDirty](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeView.XForms~Syncfusion.TreeView.Engine.TreeViewNode~SetDirty.html) method, you can recompute the amount of cache for the whole node which helps to update the changes in TreeViewNode engine to refresh the UI.
 
 {% endhighlight %}
 {% highlight c# %}

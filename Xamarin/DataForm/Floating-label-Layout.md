@@ -53,7 +53,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 
 ![Arranging data form field in different layouts in Xamarin.Forms DataForm](SfDataForm_images/DataFormItem_LayoutOptions.png)
 
-N> You cannot customize the `DataForm` Items height in TextInputLayout
+N> TextInputLayout does not support item height customization using DataFormItem.Height
 
 ## Supported editors
 Dataform supports the floating label layout for the following editors.

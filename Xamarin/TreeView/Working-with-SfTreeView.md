@@ -18,10 +18,13 @@ The [PropertyChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView
 {% tabs %}
 {% highlight c# %}
 treeviewnode.PropertyChanged += Treeviewnode_PropertyChanged;
+
 private void Treeviewnode_PropertyChanged(object sender, PropertyChangedEventArgs e)
 {
-    var name = e.PropertyName;
-    DisplayAlert("Name", name , "ok");
+    if (treeviewnode.IsExpanded)
+        DisplayAlert("treeview", "nodeexpanded", "ok");
+    else
+        DisplayAlert("treeview", "nodecollapsed", "ok");
 }
 {% endhighlight %}
 {% endtabs %}

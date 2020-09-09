@@ -278,7 +278,7 @@ Schedule.MonthViewSettings = monthViewSettings;
 {% endhighlight %}
 {% endtabs %}
 
-Download the entire source code from GitHub here.
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/inline-item-customization-schedule) 
 
 ![Inline Item Template customization](monthview_images/InlineItem_Template_customization.png)
 

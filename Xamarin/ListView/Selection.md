@@ -71,22 +71,7 @@ public class SelectionViewModel : INotifyPropertyChanged
     }
 	private async void GenerateSource()
     {
-        var random = new Random();
-        musicInfo = new ObservableCollection<MusicInfo>();
-
-        for (int i = 0; i < SongsNames.Count(); i++)
-        {
-            var info = new MusicInfo()
-            {
-                SongTitle = SongsNames[i],
-                SongAuther = SongAuthers[i],
-                SongSize = random.Next(50, 600).ToString() + "." + random.Next(1, 10) / 2 + "KB",
-                SongThumbnail = ImageSource.FromResource("CustomSelection.Images.SongThumbnail.png"),
-                SelectedImage = ImageSource.FromResource("CustomSelection.Images.Selected.png"),
-                NotSelectedImage = ImageSource.FromResource("CustomSelection.Images.NotSelected.png"),
-            };
-            musicInfo.Add(info);
-        }
+        var random = new Random();        
         SelectedItems.Add(MusicInfo[0]);
 	}
 }
@@ -96,7 +81,7 @@ listView.SelectedItems.Add (viewModel.Items[5]);
 {% endhighlight %}
 {% endtabs %}
 
-N> SfListView.SelectedItems property type is of type ObservableCollection<Object> and you should use generic type as object for collection type.
+N> SfListView.SelectedItems property type is of type ObservableCollection<Object>. So, you should use generic type as an object for ViewModel binding in the collection property type. 
 
 {% tabs %}
 {% highlight xaml %}

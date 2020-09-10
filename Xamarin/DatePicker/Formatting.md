@@ -7,14 +7,13 @@ control: Picker
 documentation: ug
 ---
 
-
-# Format
+# Date Format in Syncfusion DatePicker 
 
 Format is a way to represent the value of the date in a different string format.
 
 By default, the DatePicker’s format is "DateFormat.M_d_yyyy".
 
-The different types of Format tyeps are.
+The different types of Formats are.
 
 M_d_yyyy - Represents the month day year in m/d/yyyy format.
 

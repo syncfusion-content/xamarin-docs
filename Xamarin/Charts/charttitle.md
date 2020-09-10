@@ -107,7 +107,7 @@ You can wrap chart title text content using the LineBreakMode property. The defa
 
 SfChart sfChart = new SfChart();
 
-sfChart.Title.Text = "Efficiency of oil-fired power production";
+sfChart.Title.Text = "Percentage change in efficiency of oil-fired power production in Russia for six months;
 
 sfChart.Title.TextColor = Color.Blue;
 
@@ -116,3 +116,5 @@ sfChart.Title.LineBreakMode = LineBreakMode.TailTruncation;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Text wrap support for title in Xamarin.Forms Chart](charttitle_images/charttitle_img3.png)

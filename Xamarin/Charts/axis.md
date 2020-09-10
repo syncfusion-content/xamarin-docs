@@ -368,6 +368,8 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Roun
 
 {% endtabs %}
 
+![NumericalAxis range padding support in Xamarin.Forms Chart](axis_images/NumericalAxis_range_padding_RoundStart.png)
+
 **RoundEnd**
 
 When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_RangePadding) property is [`RoundEnd`], axis range will be rounded in the end to the nearest possible value divided by the interval.
@@ -391,6 +393,8 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Roun
 {% endhighlight %}
 
 {% endtabs %}
+
+![NumericalAxis range padding support in Xamarin.Forms Chart](axis_images/NumericalAxis_range_padding_RoundEnd.png)
 
 **PrependInterval**
 
@@ -416,6 +420,8 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Prep
 
 {% endtabs %}
 
+![NumericalAxis range padding support in Xamarin.Forms Chart](axis_images/NumericalAxis_range_padding_PrependInterval.png)
+
 **AppendInterval**
 
 When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_RangePadding) property is [`AppendInterval`], axis range will be rounded and an interval of the axis will be added in the end as padding to the minimum and maximum values of the range.
@@ -439,6 +445,8 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Appe
 {% endhighlight %}
 
 {% endtabs %}
+
+![NumericalAxis range padding support in Xamarin.Forms Chart](axis_images/NumericalAxis_range_padding_AppendInterval.png)
 
 ## Date Time Axis
 

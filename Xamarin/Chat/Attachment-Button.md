@@ -9,7 +9,7 @@ documentation: ug
 
 # Attachment Button in Xamarin.Forms Chat (SfChat)
 
-You can show the attachment button in SfChat by setting the [SfChat.ShowAttachmentButton](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowAttachmentButton.html) to `true`.
+You can show the attachment button in SfChat by setting the [SfChat.ShowAttachmentButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowAttachmentButton) to `true`.
 
 {% tabs %}
 
@@ -62,7 +62,7 @@ public partial class MainPage : ContentPage
 
 ## Event and command
 
-The [SfChat.AttachmentButtonClicked](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~AttachmentButtonClicked_EV.html) event and [SfChat.AttachmentButtonCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~AttachmentButtonCommand.html) will be executed upon tapping the attachment button. You can pass the desired object as parameter to the `SfChat.AttachmentButtonCommand` using the [SfChat.AttachmentButtonCommandParameter](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~AttachmentButtonCommandParameter.html). You can provide options for the users to upload files, images, pdf and other media as messages in SfChat from the event handler and action of the `SfChat.AttachmentButtonClicked` event and `SfChat.AttachmentButtonCommand` respectively.
+The [SfChat.AttachmentButtonClicked](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) event and [SfChat.AttachmentButtonCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_AttachmentButtonCommand) will be executed upon tapping the attachment button. You can pass the desired object as parameter to the `SfChat.AttachmentButtonCommand` using the [SfChat.AttachmentButtonCommandParameter](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_AttachmentButtonCommandParameter). You can provide options for the users to upload files, images, pdf and other media as messages in SfChat from the event handler and action of the `SfChat.AttachmentButtonClicked` event and `SfChat.AttachmentButtonCommand` respectively.
 
 **AttachmentButtonClicked Event**
 
@@ -173,7 +173,7 @@ private void Tapped(object args)
 
 ## Attachment button template 
 
-You can load custom view/buttons as attachment button using [SfChat.AttachmentButtonTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~AttachmentButtonTemplate.html) property. You can also specify the width of your template view to load more than one button as shown below.
+You can load custom view/buttons as attachment button using [SfChat.AttachmentButtonTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_AttachmentButtonTemplate) property. You can also specify the width of your template view to load more than one button as shown below.
 
 {% tabs %}
 {% highlight xaml %}

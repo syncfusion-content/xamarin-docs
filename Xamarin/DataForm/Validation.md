@@ -170,7 +170,7 @@ public DateTime JoinDate
 
 ## Validation mode
 
-The [ValidationMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationMode.html) determines when the value should be validated.
+The [ValidationMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_ValidationMode) determines when the value should be validated.
 
 The supported validation modes are as follows:
 
@@ -207,7 +207,7 @@ The value will be validated immediately when it is changed.
 
 ### Explicit
 
-The value should be validated manually by calling the [SfDataForm.Validate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Validate().html) or [SfDataForm.Validate (propertyName)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Validate(String).html) method.
+The value should be validated manually by calling the [SfDataForm.Validate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Validate().html) or [SfDataForm.Validate (propertyName)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Validate(String).html) method.
 
 The following code validates the value of all the properties in the data object:
 
@@ -240,7 +240,7 @@ N> For validating value, the new value should be committed in data object. So, `
 
 #### Custom validation through events
 
-You can validate the data using the [Validating](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Validating_EV.html) event of the data form.
+You can validate the data using the [Validating](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Validating) event of the data form.
 
 {% tabs %}
 {% highlight xaml %}
@@ -272,7 +272,7 @@ private void DataForm_Validating(object sender, ValidatingEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can get the notification after completing validation using the [Validated](https://help.syncfusion.com/cr/cref_files/xamarin-android/Syncfusion.SfDataForm.Android~Syncfusion.Android.DataForm.SfDataForm~Validated_EV.html) event of the data form.
+You can get the notification after completing validation using the [Validated](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Validated) event of the data form.
 
 {% tabs %}
 {% highlight xaml %}
@@ -298,7 +298,7 @@ private void DataForm_Validated(object sender, ValidatedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can get the details of invalid DataFormItems when validating the data form as `Explicit` validation mode using [ValidationCompleted](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationCompleted_EV.html) event. This event contains [ValidationCompletedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.ValidationCompletedEventArgs.html) argument, which holds a list of DataFormItem as errors. 
+You can get the details of invalid DataFormItems when validating the data form as `Explicit` validation mode using [ValidationCompleted](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_ValidationCompleted) event. This event contains [ValidationCompletedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.ValidationCompletedEventArgs.html) argument, which holds a list of DataFormItem as errors. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -327,7 +327,7 @@ private void DataForm_ValidationCompleted(object sender, ValidationCompletedEven
 
 ## Valid or positive message
 
-If the value meets the desired criteria, you can show the [valid or positive message](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.DisplayOptionsAttribute~ValidMessage.html). As error message, the valid message will also be displayed at the bottom of the editor.
+If the value meets the desired criteria, you can show the [valid or positive message](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DisplayOptionsAttribute.html#Syncfusion_XForms_DataForm_DisplayOptionsAttribute_ValidMessage). As error message, the valid message will also be displayed at the bottom of the editor.
 
 {% tabs %}
 {% highlight c# %}
@@ -350,7 +350,7 @@ public string Name
 
 ## How to validate the property value based on another value
 
-To validate one property value based on another property value, use the [property changed event](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.propertychanged.aspx) and [Validate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~Validate(String).html) methods.
+To validate one property value based on another property value, use the [property changed event](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.propertychanged.aspx) and [Validate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Validate(String).html) methods.
 
 Here, AccountNumber and AccountNumber1 fields are validated.
 
@@ -379,7 +379,7 @@ private void DataFormGettingStarted_PropertyChanged(object sender, PropertyChang
 
 ## Customize validation message using DataTemplate
 
-The default appearance of the validation message can be customized by using the [ValidationTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationTemplate.html) property of the `DataForm`.
+The default appearance of the validation message can be customized by using the [ValidationTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_ValidationTemplate) property of the `DataForm`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -423,7 +423,7 @@ public class ValidationDataTemplate :DataTemplate
 
 ## Customize validation message using DataTemplateSelector
 
-You can use `DataTemplateSelector` to choose a `DataTemplate` at runtime based on the value of a data-bound to [ValidationTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataForm.XForms~Syncfusion.XForms.DataForm.SfDataForm~ValidationTemplate.html) property of DataForm. It lets you choose a different data template for each validation message, customizing the appearance of a particular validation message based on certain conditions.
+You can use `DataTemplateSelector` to choose a `DataTemplate` at runtime based on the value of a data-bound to [ValidationTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_ValidationTemplate) property of DataForm. It lets you choose a different data template for each validation message, customizing the appearance of a particular validation message based on certain conditions.
 
 {% tabs %}
 {% highlight xaml %}

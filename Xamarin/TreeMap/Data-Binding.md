@@ -9,9 +9,9 @@ documentation: ug
 
 # DataBinding in Syncfusion TreeMap control for Xamarin.Forms
 
-The TreeMap control supports data binding, and it can be achieved using the [`DataSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~DataSource.html) property.
+The TreeMap control supports data binding, and it can be achieved using the [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeMap.XForms.SfTreeMap.html#Syncfusion_SfTreeMap_XForms_SfTreeMap_DataSource) property.
 
-The [`DataSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfTreeMap.XForms~Syncfusion.SfTreeMap.XForms.SfTreeMap~DataSource.html) property accepts a collection of values as input. The following code sample demonstrates how to bind a flat collection as data source to TreeMap.
+The [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeMap.XForms.SfTreeMap.html#Syncfusion_SfTreeMap_XForms_SfTreeMap_DataSource) property accepts a collection of values as input. The following code sample demonstrates how to bind a flat collection as data source to TreeMap.
 
 {% tabs %}  
 

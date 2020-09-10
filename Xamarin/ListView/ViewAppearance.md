@@ -13,13 +13,13 @@ The SfListView allows customizing appearance of the underlying data, and provide
 
 ## Item template
 
-A template can be used to present the data in a way that makes sense for the application by using different controls. SfListView allows customizing appearance of view by setting the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) property.
+A template can be used to present the data in a way that makes sense for the application by using different controls. SfListView allows customizing appearance of view by setting the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate) property.
 
 ## Data template selector
 
 The SfListView allows customizing appearance of each item with different templates based on specific constraints by using the [DataTemplateSelector](https://developer.xamarin.com/api/type/Xamarin.Forms.DataTemplateSelector/). You can choose a `DataTemplate` for each item at runtime based on the value of data-bound property using `DataTemplateSelector`.
 
-Here, an [ItemsCacheLimit](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.LayoutBase~ItemsCacheLimit.html) property maintains number of items reusing in the view. This cache limit is used to create and reuse the [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) if different templates are used in `DataTemplateSelector` for better scrolling performance. Based on this value, `SfListView` creates number of `ListViewItem` for different templates in the view if new template is created while scrolling, and reuses it if same template is used for improving the scrolling performance.
+Here, an [ItemsCacheLimit](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.LayoutBase.html#Syncfusion_ListView_XForms_LayoutBase_ItemsCacheLimit) property maintains number of items reusing in the view. This cache limit is used to create and reuse the [ListViewItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ListViewItem.html) if different templates are used in `DataTemplateSelector` for better scrolling performance. Based on this value, `SfListView` creates number of `ListViewItem` for different templates in the view if new template is created while scrolling, and reuses it if same template is used for improving the scrolling performance.
 
 ### Create a data template selector
 
@@ -55,7 +55,7 @@ class MyDataTemplateSelector : Xamarin.Forms.DataTemplateSelector
 
 ### Applying the data template selector
 
-Assign custom `DataTemplateSelector` to the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) of the SfListView either in XAML or C#.
+Assign custom `DataTemplateSelector` to the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate) of the SfListView either in XAML or C#.
 
 {% tabs %}
 {% highlight xaml %}
@@ -102,7 +102,7 @@ You can also download the entire source code of this demo [here](http://www.sync
 
 ## Horizontal ListView
 
-The SfListView allows you to layout every item in the [SfListView.ItemsSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemsSource.html) property either in vertical or horizontal orientation by setting the [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html). The default orientation is `Vertical`.
+The SfListView allows you to layout every item in the [SfListView.ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemsSource) property either in vertical or horizontal orientation by setting the [SfListView.Orientation](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_Orientation). The default orientation is `Vertical`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -117,7 +117,7 @@ listView.Orientation = Orientation.Horizontal;
 
 ### Navigate across views (like TabView)
 
-The SfListView allows you to layout the items like `TabView` in the horizontal direction by setting the [Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~Orientation.html) property as `Horizontal` using the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event. It brings any desired view above the horizontal list as follows.
+The SfListView allows you to layout the items like `TabView` in the horizontal direction by setting the [Orientation](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_Orientation) property as `Horizontal` using the [ItemTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event. It brings any desired view above the horizontal list as follows.
 
 {% tabs %}
 {% highlight xaml %}
@@ -201,9 +201,9 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## Horizontal list inside vertical list
 
-The SfListView allows you to layout the items in horizontal list inside the vertical list. You can load the nested SfListView by customizing the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) of outer SfListView. 
+The SfListView allows you to layout the items in horizontal list inside the vertical list. You can load the nested SfListView by customizing the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate) of outer SfListView. 
 
-You should define the size for each inner SfListView or set the [AutoFitMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~AutoFitModeProperty.html) of inner SfListView as `Height`, and define the [ItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemSize.html) for outer SfListView.
+You should define the size for each inner SfListView or set the [AutoFitMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AutoFitModeProperty) of inner SfListView as `Height`, and define the [ItemSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemSize) for outer SfListView.
 
 {% tabs %}
 {% highlight xaml %}
@@ -277,7 +277,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## Item size
 
-The SfListView allows customizing the size of items by setting the [ItemSize](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemSize.html) property. The default value of this property is 40. This property can be customized at runtime.
+The SfListView allows customizing the size of items by setting the [ItemSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemSize) property. The default value of this property is 40. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -292,7 +292,7 @@ N> For vertical orientation, the item size is considered as height. For horizont
 
 ## Item spacing
 
-The SfListView allows specifying space between each item in the list by setting the [ItemSpacing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemSpacing.html) property. Generate the space around the item. The default value of this property is 0. This property can be customized at runtime.
+The SfListView allows specifying space between each item in the list by setting the [ItemSpacing](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemSpacing) property. Generate the space around the item. The default value of this property is 0. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -383,7 +383,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## Rounded corner on items
 
-The SfListView allows customizing the item appearance like rounded corner by using the [Frame](https://developer.xamarin.com/api/type/Xamarin.Forms.Frame/) layout in the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) property. By defining the CornerRadius property of frame layout, you can perform the rounded corner for items. 
+The SfListView allows customizing the item appearance like rounded corner by using the [Frame](https://developer.xamarin.com/api/type/Xamarin.Forms.Frame/) layout in the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate) property. By defining the CornerRadius property of frame layout, you can perform the rounded corner for items. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -444,7 +444,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## Drop shadow effect on items
 
-The SfListView allows customizing the item appearance like shadow effect for items by setting the shadow property of frame as true in [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) property.
+The SfListView allows customizing the item appearance like shadow effect for items by setting the shadow property of frame as true in [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate) property.
 
 N> Define the frame within any view inside `ItemTemplate` with around some margin. 
 
@@ -515,7 +515,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## ListViewItem customization
 
-The SfListView allows customizing the [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html) based on the [ItemType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ItemType.html). To customize the Header, Footer, GroupHeader, LoadMore, and ListViewItem follow the code example.
+The SfListView allows customizing the [ListViewItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ListViewItem.html) based on the [ItemType](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemType.html). To customize the Header, Footer, GroupHeader, LoadMore, and ListViewItem follow the code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -761,7 +761,7 @@ The SfListView supports accordion view to display a list of items. Each item can
 {% endhighlight %}
 {% endtabs %}
 
-Accordion view can be displayed by defining two different ItemTemplates. The ItemTemplates can be enabled or disabled in the [ItemTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTapped_EV.html) event.
+Accordion view can be displayed by defining two different ItemTemplates. The ItemTemplates can be enabled or disabled in the [ItemTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -856,7 +856,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## show busy indicator on list view
 
-The SfListView allows displaying the [SfBusyIndicator](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBusyIndicator.XForms~Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) when loading the bounded items. The busy indicator can be enabled and disabled by using [IsBusy](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBusyIndicator.XForms~Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator~IsBusy.html) property.
+The SfListView allows displaying the [SfBusyIndicator](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html) when loading the bounded items. The busy indicator can be enabled and disabled by using [IsBusy](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_IsBusy) property.
 
 Create a IsLoading boolean property in view model and bind it to the IsBusy property. By setting the value to IsLoading property, the busy indicator will be enabled and disabled into the view till the items loaded in the SfListView.
 
@@ -917,7 +917,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## show busy indicator on list view items
 
-The SfListView allows displaying an activity indicator for an item when its data is being loaded in the background. To perform this, load both `ActivityIndicator` and a `Button` in the same row of a `Grid` element inside the [ItemTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.SfListView~ItemTemplate.html) of the SfListView. The busy indicator and button can be enabled and disabled by using properties IsButtonVisible and IsIndicatorVisible respectively in the model class.
+The SfListView allows displaying an activity indicator for an item when its data is being loaded in the background. To perform this, load both `ActivityIndicator` and a `Button` in the same row of a `Grid` element inside the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate) of the SfListView. The busy indicator and button can be enabled and disabled by using properties IsButtonVisible and IsIndicatorVisible respectively in the model class.
 
 {% tabs %}
 {% highlight c# %}
@@ -1165,7 +1165,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## Item animation on appearing
 
-The SfListView supports animating the items by using an [OnItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem~OnItemAppearing.html) virtual method. It is raised when the items appearing in the view on scrolling, loading, and navigating from one page to another page. To apply the animation effect for items, follow the steps:
+The SfListView supports animating the items by using an [OnItemAppearing](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ListViewItem.html#Syncfusion_ListView_XForms_ListViewItem_OnItemAppearing) virtual method. It is raised when the items appearing in the view on scrolling, loading, and navigating from one page to another page. To apply the animation effect for items, follow the steps:
 
 ### Extension of ItemGenerator
 
@@ -1211,7 +1211,7 @@ public partial class MainPage : ContentPage
 
 ### Extension of ListViewItem
  
-To apply the animation for items while appearing, override the [OnItemAppearing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem~OnItemAppearing.html) method.
+To apply the animation for items while appearing, override the [OnItemAppearing](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ListViewItem.html#Syncfusion_ListView_XForms_ListViewItem_OnItemAppearing) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -1236,7 +1236,7 @@ public class ListViewItemExt : ListViewItem
 {% endhighlight %}
 {% endtabs %}
 
-Here `FadeTo` animation is applied for [ListViewItem](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.ListViewItem.html), when comes in the view. 
+Here `FadeTo` animation is applied for [ListViewItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ListViewItem.html), when comes in the view. 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/how-to-animate-xamarin-listview-items).
 
 ![Xamarin.Forms listview with animation](SfListView_images/SfListView-ItemAppearingAnimation.gif)
@@ -1279,7 +1279,7 @@ N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is 
 
 ### Limitations
 
-* ListView does not support the right-to-left(RTL) direction when [SfListView.Orientation](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfListView.XForms~Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
+* ListView does not support the right-to-left(RTL) direction when [SfListView.Orientation](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
 
 ## See also
 

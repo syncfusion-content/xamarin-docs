@@ -11,11 +11,11 @@ documentation: ug
 
 # Scales in SfLinearGauge
 
-Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale.html), which integrates labels, tick marks, ranges, and pointers to customize the basic look and feel of the [`SfLinearGauge`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge.html).
+Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html), which integrates labels, tick marks, ranges, and pointers to customize the basic look and feel of the [`SfLinearGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html).
 
 ## Linear scale
 
-[`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale.html) contains sub elements such as ticks, labels, [`Ranges`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~Ranges.html), and [`Pointers`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~Pointers.html). 
+[`LinearScale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html) contains sub elements such as ticks, labels, [`Ranges`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_Ranges), and [`Pointers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_Pointers). 
 
 {% tabs %}
 
@@ -48,7 +48,7 @@ Scales is a collection of [`LinearScale`](https://help.syncfusion.com/cr/cref_fi
 
 ## Setting minimum and maximum values for scale
 
-To change minimum and maximum values of linear scale, use the [`MinimumValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~MinimumValue.html) and [`MaximumValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~MaximumValue.html) properties as shown in the following code snippet.
+To change minimum and maximum values of linear scale, use the [`MinimumValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_MinimumValue) and [`MaximumValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_MaximumValue) properties as shown in the following code snippet.
 
 {% tabs %}
 
@@ -83,7 +83,7 @@ To change minimum and maximum values of linear scale, use the [`MinimumValue`](h
 
 ## Setting interval for scale
 
-The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~Interval.html) property allows  you to set the intervals for scale. The default [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~Interval.html) property of scale is auto interval. Auto interval defines the count of the scale labels as 3 for 100 pixels.
+The [`Interval`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_Interval) property allows  you to set the intervals for scale. The default [`Interval`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_Interval) property of scale is auto interval. Auto interval defines the count of the scale labels as 3 for 100 pixels.
 
 {% tabs %}
 
@@ -119,7 +119,7 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 
 ## Setting maximum labels
 
-The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~MaximumLabels.html) property defines the count of the scale labels in the 100 pixels. By default, the maximum labels for 100 pixels is 3.
+The [`MaximumLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_MaximumLabels) property defines the count of the scale labels in the 100 pixels. By default, the maximum labels for 100 pixels is 3.
 
 {% tabs %}
 
@@ -166,7 +166,7 @@ The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusi
 
 ## Scale customization
 
-You can customize the color, length, size, and position of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale.html) by using the [`ScaleBarColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ScaleBarColor.html), [`ScaleBarLength`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ScaleBarLength.html), [`ScaleBarSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ScaleBarSize.html), and [`Offset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~Offset.html) properties, respectively.
+You can customize the color, length, size, and position of the [`LinearScale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html) by using the [`ScaleBarColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_ScaleBarColor), [`ScaleBarLength`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_ScaleBarLength), [`ScaleBarSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_ScaleBarSize), and [`Offset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_Offset) properties, respectively.
 
 {% tabs %}
 
@@ -214,7 +214,7 @@ You can customize the color, length, size, and position of the [`LinearScale`](h
 ![Linear Gauge Scale Customization](scales_images/scale5.png)
 
 ## Scale Offset
-The space between the control and linear scale can be customized using the [`ScaleOffset`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ScaleOffset.html) property.
+The space between the control and linear scale can be customized using the [`ScaleOffset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_ScaleOffset) property.
 {% tabs %}
 {% highlight XAML %}
 <gauge:SfLinearGauge>
@@ -256,7 +256,7 @@ public MainPage()
 
 ## Setting opposite position
 
-To place the scale at opposite to its original position, set the [`OpposedPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~OpposedPosition.html) property to true in the scale.
+To place the scale at opposite to its original position, set the [`OpposedPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_OpposedPosition) property to true in the scale.
 
 {% tabs %}
 
@@ -303,7 +303,7 @@ To place the scale at opposite to its original position, set the [`OpposedPositi
 
 ## Setting scale direction
 
-You can set the scale position to its forward and backward using the [`ScalePosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~ScalePosition.html) property.
+You can set the scale position to its forward and backward using the [`ScalePosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_ScalePosition) property.
 
 {% tabs %}
 
@@ -350,8 +350,8 @@ You can set the scale position to its forward and backward using the [`ScalePosi
 
 ## Setting corner radius type for scale
 
-Corners of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale.html) can be customized by setting the value to the [`CornerRadiusType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~CornerRadiusType.html) property. All corners of linear scale can be customized using the `Start`, `End`, `Both`, and `None` options.
- [`CornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~CornerRadius.html) property used to reduce the radius of the corners.
+Corners of the [`LinearScale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html) can be customized by setting the value to the [`CornerRadiusType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_CornerRadiusType) property. All corners of linear scale can be customized using the `Start`, `End`, `Both`, and `None` options.
+ [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_CornerRadius) property used to reduce the radius of the corners.
 
 {% tabs %}
 
@@ -400,7 +400,7 @@ Corners of the [`LinearScale`](https://help.syncfusion.com/cr/cref_files/xamarin
 
 ## Multiple scales 
 
-It helps you to add multiple scales to the same linear gauge and customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfLinearGauge~Scales.html) collection.
+It helps you to add multiple scales to the same linear gauge and customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html#Syncfusion_SfGauge_XForms_SfLinearGauge_Scales) collection.
 
 {% tabs %}
 
@@ -523,7 +523,7 @@ It helps you to add multiple scales to the same linear gauge and customize all t
 
 ## Setting gradient color for scale
 
-You can give smooth color transition to scale to specifying the different colors based on scale value by using [`GradientStops`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.LinearScale~GradientStops.html) property.
+You can give smooth color transition to scale to specifying the different colors based on scale value by using [`GradientStops`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.LinearScale.html#Syncfusion_SfGauge_XForms_LinearScale_GradientStops) property.
 
 {% tabs %}
 

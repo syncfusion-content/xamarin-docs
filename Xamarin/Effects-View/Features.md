@@ -9,11 +9,11 @@ documentation: ug
 
 # Features in SfEffectsView
 
-The [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides the following additional features to enhance the effects:
+The [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides the following additional features to enhance the effects:
 
 ## FadeOutRipple
 
-By enabling the [`FadeOutRipple`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~FadeOutRipple.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html), the growable circle will lose its opacity to 0 on growing.
+By enabling the [`FadeOutRipple`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_FadeOutRipple) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html), the growable circle will lose its opacity to 0 on growing.
 
 {% tabs %} 
 
@@ -43,7 +43,7 @@ var effectsView = new SfEffectsView
 
 ## IsSelected
 
-Enabling the [`IsSelected`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~IsSelected.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) sets the view state as selected.
+Enabling the [`IsSelected`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_IsSelected) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) sets the view state as selected.
 
 {% tabs %} 
 
@@ -71,7 +71,7 @@ var effectsView = new SfEffectsView
 
 ## ShouldIgnoreTouches
 
-Enabling the [`ShouldIgnoreTouches`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~ShouldIgnoreTouches.html) property of [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) cancels the direct interaction of the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html).
+Enabling the [`ShouldIgnoreTouches`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_ShouldIgnoreTouches) property of [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) cancels the direct interaction of the [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html).
 
 {% tabs %} 
 
@@ -94,4 +94,4 @@ var effectsView = new SfEffectsView
 
 {% endtabs %}
 
-N> On enabling [`ShouldIgnoreTouches`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView~ShouldIgnoreTouches.html) property in iOS, the child view will not get interaction.
+N> On enabling [`ShouldIgnoreTouches`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_ShouldIgnoreTouches) property in iOS, the child view will not get interaction.

@@ -125,7 +125,7 @@ N> Programmatic scrolling is not applicable for rows and columns that are frozen
 
 ## Diagonal scrolling 
 
-By default, `SfDataGrid` supports diagonal scrolling(both vertical and horizontal scrolling simultaneously). Setting false to [SfDataGrid.AllowDiagonalScrolling](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowDiagonalScrolling.html) disables diagonal scrolling and scrolls the data grid in either horizontal or vertical direction but not simultaneously.
+By default, `SfDataGrid` supports diagonal scrolling(both vertical and horizontal scrolling simultaneously). Setting false to [SfDataGrid.AllowDiagonalScrolling](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AllowDiagonalScrolling) disables diagonal scrolling and scrolls the data grid in either horizontal or vertical direction but not simultaneously.
 
 {% tabs %}
 {% highlight xaml %}
@@ -201,14 +201,14 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
 
 ## Identifying scroll state changes
 
-The `SfDataGrid` will notify the scrolling state changes via the [ScrollStateChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollStateChanged_EV.html) event.
+The `SfDataGrid` will notify the scrolling state changes via the [ScrollStateChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event.
 
-Following states will be notified through the [ScrollState](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.ScrollStateChangedEventArgs~ScrollState.html) property in the event argument.
+Following states will be notified through the [ScrollState](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.ScrollStateChangedEventArgs.html#Syncfusion_SfDataGrid_XForms_ScrollStateChangedEventArgs__ctor_Syncfusion_SfDataGrid_XForms_ScrollState_) property in the event argument.
 
 * Dragging: Specifies that `SfDataGrid` is currently being dragged in the view.
 * Fling: Specifies that fling action is performed on the `SfDataGrid`.
 * Idle: Specifies that `SfDataGrid` is not scrolling currently.
-* Programmatic: Specifies that scrolling is performed by using [ScrollToColumnIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollToColumnIndex.html) or [ScrollToRowIndex](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollToRowIndex.html) method.
+* Programmatic: Specifies that scrolling is performed by using [ScrollToColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ScrollToColumnIndex_System_Int32_System_Boolean_Xamarin_Forms_ScrollToPosition_) or [ScrollToRowIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ScrollToRowIndex_System_Int32_System_Boolean_Xamarin_Forms_ScrollToPosition_) method.
 
 {% tabs %}
 {% highlight c# %}

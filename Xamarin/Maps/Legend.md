@@ -10,11 +10,11 @@ documentation: ug
 # Legend
 
 Legends are keys used on maps; they contain swatches of symbols with descriptions. A legend interprets what the map displays; it can be represented in various colors, shapes, or other identifiers based on the data. It gives a breakdown on what each symbol represents throughout the map.
-Legends can be added using the [`LegendSettings`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~LegendSettings.html) in the shape file layer.
+Legends can be added using the [`LegendSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_LegendSettings) in the shape file layer.
 
 ## Visibility
 
-The legends can be made visible by setting the [`ShowLegend`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~ShowLegend.html#) property in [`MapLegendSetting`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting.html#) to true.
+The legends can be made visible by setting the [`ShowLegend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_ShowLegend) property in [`MapLegendSetting`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#) to true.
 
 {% tabs %}
 
@@ -43,7 +43,7 @@ The legends can be made visible by setting the [`ShowLegend`](https://help.syncf
 
 ## Legend type
 
-The [`LegendType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~LegendTypeProperty.html) property is used to display the shapes and bubble legends in maps.
+The [`LegendType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_LegendTypeProperty) property is used to display the shapes and bubble legends in maps.
 
 * Layers
 * Bubbles
@@ -51,7 +51,7 @@ The [`LegendType`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 ## Legend position
 
-Based on the values of x (in the range of 0 to 100) and y (in the range of 0 to 100), the legends can be positioned using the  [`LegendPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~LegendPosition.html#)property of the [`MapLegendSetting`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting.html#) class. Legends will be positioned in the range of 0 to 100 (screen size ratio). By default, the *LegendPosition* is (50,10).
+Based on the values of x (in the range of 0 to 100) and y (in the range of 0 to 100), the legends can be positioned using the  [`LegendPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_LegendPosition)property of the [`MapLegendSetting`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#) class. Legends will be positioned in the range of 0 to 100 (screen size ratio). By default, the *LegendPosition* is (50,10).
 
 The legend items will be placed in multiple rows if size of the total legend exceeds the available size. 
 
@@ -91,7 +91,7 @@ The legend items will be placed in multiple rows if size of the total legend exc
 
 ## Legend alignment
 
-Legends can be aligned using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~HorizontalAlignmentProperty.html) and [`VerticalAlignment`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~VerticalAlignmentProperty.html)Properties. By default, the legends will be aligned to  the center.
+Legends can be aligned using the [`HorizontalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_HorizontalAlignmentProperty) and [`VerticalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_VerticalAlignmentProperty)Properties. By default, the legends will be aligned to  the center.
 
 {% tabs %}
 
@@ -129,7 +129,7 @@ Legends can be aligned using the [`HorizontalAlignment`](https://help.syncfusion
 
 ## Icon customization
 
-The icon size of a legend can be customized using the [`IconSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~IconSize.html#) property.
+The icon size of a legend can be customized using the [`IconSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_IconSize) property.
 
 {% tabs %}
 
@@ -167,7 +167,7 @@ The icon size of a legend can be customized using the [`IconSize`](https://help.
 
 {% endtabs %}
 
-The icon shape can be customized using the [`LegendIcon`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.LegendIcon.html) property. By default, this property is set to circle for bubbles and rectangle for shapes.
+The icon shape can be customized using the [`LegendIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LegendIcon.html) property. By default, this property is set to circle for bubbles and rectangle for shapes.
 
 {% tabs %}
 
@@ -203,7 +203,7 @@ The icon shape can be customized using the [`LegendIcon`](https://help.syncfusio
 
 ## Item margin
 
-The [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~ItemMarginProperty.html) property is used to set spacing between the legend items.
+The [`ItemMargin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_ItemMarginProperty) property is used to set spacing between the legend items.
 
 {% tabs %}
 
@@ -237,17 +237,17 @@ The [`ItemMargin`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 ## Legend label
 
-The [`LegendLabel`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ColorMapping~LegendLabel.html) provides information about the maps. It is specified under color mapping. If *LegendLabel* is not specified, ColorMapping values will be applied as legend label.
+The [`LegendLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ColorMapping.html#Syncfusion_SfMaps_XForms_ColorMapping_LegendLabel) provides information about the maps. It is specified under color mapping. If *LegendLabel* is not specified, ColorMapping values will be applied as legend label.
 
 The following properties are used to customize the label of the legends:
 
- * [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~TextColorProperty.html) : Changes the color of the legend text.
+ * [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_TextColorProperty) : Changes the color of the legend text.
 
- * [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~FontAttributesProperty.html) : Changes the font weight of the legend label.
+ * [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_FontAttributesProperty) : Changes the font weight of the legend label.
 
- * [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~FontFamilyProperty.html) : Changes the font family of the legend label.
+ * [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_FontFamilyProperty) : Changes the font family of the legend label.
 
- * [`FontSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.MapLegendSetting~FontSizeProperty.html) : Changes the text size of the legend label.
+ * [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLegendSetting.html#Syncfusion_SfMaps_XForms_MapLegendSetting_FontSizeProperty) : Changes the text size of the legend label.
 {% tabs %}
 
 {% highlight xml %}

@@ -13,7 +13,7 @@ The Accordion allows customizing appearance of the Icon, and provides different 
 
 ## Header icon position 
 
-[SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the position of the header icon in accordion item by using the [HeaderIconPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~HeaderIconPosition.html) property. By default, the header Icon position is `End`.  
+[SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the position of the header icon in accordion item by using the [HeaderIconPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_HeaderIconPosition) property. By default, the header Icon position is `End`.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -26,7 +26,7 @@ accordion.HeaderIconPosition = Syncfusion.XForms.Expander.IconPosition.Start;
 
 ## Header background color customization
 
-[SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the background color of the expander header by using the [HeaderBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.AccordionItem~HeaderBackgroundColor.html) property.
+[SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the background color of the expander header by using the [HeaderBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.AccordionItem.html#Syncfusion_XForms_Accordion_AccordionItem_HeaderBackgroundColor) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -62,7 +62,7 @@ public AccordionItem GenerateAccordionItem()
 
 ## Icon color customization
 
-[SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the color of the expander icon by using the [IconColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.AccordionItem~IconColor.html) property. By default, `IconColor` is black.
+[SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the color of the expander icon by using the [IconColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.AccordionItem.html#Syncfusion_XForms_Accordion_AccordionItem_IconColor) property. By default, `IconColor` is black.
 
 {% tabs %}
 {% highlight xaml %}
@@ -98,7 +98,7 @@ public AccordionItem GenerateAccordionItem()
 
 ## Visual State Manager
 
-The appearance of the [SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html) can be customized using the following two `VisualStates`:
+The appearance of the [SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) can be customized using the following two `VisualStates`:
 
 * Expanded
 * Collapsed

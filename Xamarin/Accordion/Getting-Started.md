@@ -148,7 +148,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 ## Creating the accordion 
 
-This section explains how to create a simple Xamarin.Forms application with [SfAccordion](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion.html). The control should be configured entirely in C# code or by using XAML markup. 
+This section explains how to create a simple Xamarin.Forms application with [SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html). The control should be configured entirely in C# code or by using XAML markup. 
 
 * Creating the project.
 * Adding accordion to Xamarin.Forms. 
@@ -203,7 +203,7 @@ namespace GettingStarted
 
 ### Defining accordion items 
 
-`SfAccordion` is a layout control with vertically stacked list of accordion [Items](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~Items.html) that comprise of [Header](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.AccordionItem~Header.html) and [Content](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.AccordionItem~Content.html). You can load any View in Header and Content. Users can expand or collapse the Content view by tapping Header. 
+`SfAccordion` is a layout control with vertically stacked list of accordion [Items](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_Items) that comprise of [Header](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.AccordionItem.html#Syncfusion_XForms_Accordion_AccordionItem_Header) and [Content](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.AccordionItem.html#Syncfusion_XForms_Accordion_AccordionItem_Content). You can load any View in Header and Content. Users can expand or collapse the Content view by tapping Header. 
 
 Here, Grid is loaded in Header and Content of accordion items.
 
@@ -395,7 +395,7 @@ You can download accordion sample for Xamarin.Forms here [AccordionGettingStarte
 
 ## Animation duration
 
-`SfAccordion` allows you to customize the expanding and collapsing of accordion item by using the [AnimationDuration](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~AnimationDuration.html) property. By default, the animation duration is 250 milliseconds. 
+`SfAccordion` allows you to customize the expanding and collapsing of accordion item by using the [AnimationDuration](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_AnimationDuration) property. By default, the animation duration is 250 milliseconds. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -408,7 +408,7 @@ You can download accordion sample for Xamarin.Forms here [AccordionGettingStarte
 
 ## Animation easing
 
-`SfAccordion` allows you to customize the rate of change of parameter over time or animation style of accordion item by using the [AnimationEasing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~AnimationEasing.html) property. By default, the animation easing is `Linear`.  
+`SfAccordion` allows you to customize the rate of change of parameter over time or animation style of accordion item by using the [AnimationEasing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_AnimationEasing) property. By default, the animation easing is `Linear`.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -421,7 +421,7 @@ You can download accordion sample for Xamarin.Forms here [AccordionGettingStarte
 
 ## Auto scroll position
 
-`SfAccordion` allows you to customize the scroll position of the expanded accordion item by using the [AutoScrollPosition](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~AutoScrollPosition.html) property. By default, the auto scroll position is `MakeVisible`.  
+`SfAccordion` allows you to customize the scroll position of the expanded accordion item by using the [AutoScrollPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_AutoScrollPosition) property. By default, the auto scroll position is `MakeVisible`.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -434,7 +434,7 @@ You can download accordion sample for Xamarin.Forms here [AccordionGettingStarte
 
 ## Expand mode
 
-`SfAccordion` allows you to expand single or multiple items by using the [ExpandMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~ExpandMode.html) property. By default, the expand mode is `Single`.  
+`SfAccordion` allows you to expand single or multiple items by using the [ExpandMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_ExpandMode) property. By default, the expand mode is `Single`.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -447,7 +447,7 @@ You can download accordion sample for Xamarin.Forms here [AccordionGettingStarte
 
 ## Item spacing
 
-`SfAccordion` allows you to customize the vertical spacing between the accordion items by using the [ItemSpacing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Accordion.SfAccordion~ItemSpacing.html) property. The default value is `6.0d`. 
+`SfAccordion` allows you to customize the vertical spacing between the accordion items by using the [ItemSpacing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_ItemSpacing) property. The default value is `6.0d`. 
 
 {% tabs %}
 {% highlight xaml %}

@@ -13,7 +13,7 @@ This section explains how to customize the item size in the SfExpander.
 
 ## AutoFit the expander based on content
 
-You can dynamically resize the `SfExpander` content based on the content size using the [DynamicSizeMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.DynamicSizeMode.html) property.
+You can dynamically resize the `SfExpander` content based on the content size using the [DynamicSizeMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.DynamicSizeMode.html) property.
 
 The control contains three types of `DynamicSizeMode,` they are:
 

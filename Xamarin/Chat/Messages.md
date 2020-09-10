@@ -13,18 +13,18 @@ documentation: ug
 
 <table>
 <tr>
-<td>{{'[Message.Author](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Author.html)'| markdownify }}</td>
-<td>Specify the avatar and name of the message sender using {{'[Author.Avatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Author~Avatar.html)'| markdownify }} and {{'[Author.Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Author~Name.html)'| markdownify }} properties respectively.</td>
+<td>{{'[Message.Author](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageBase.html#Syncfusion_XForms_Chat_MessageBase_Author)'| markdownify }}</td>
+<td>Specify the avatar and name of the message sender using {{'[Author.Avatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.Author.html#Syncfusion_XForms_Chat_Author_Avatar)'| markdownify }} and {{'[Author.Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.Author.html#Syncfusion_XForms_Chat_Author_Name)'| markdownify }} properties respectively.</td>
 </tr>
 <tr>
-<td>{{'[Message.DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~DateTime.html)'| markdownify }}</td>
+<td>{{'[Message.DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageBase.html#Syncfusion_XForms_Chat_MessageBase_DateTime)'| markdownify }}</td>
 <td>To display message created or received time.</td>
 </tr>
 </table>
 
 ## Setting current user for conversation
 
-The [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html) helps differentiate between the sender and receiver of the messages. On any given chat window, the `SfChat.CurrentUser` is meant to be the sender(author of outgoing messages). Refer the below code example to set up a current user in a chat.
+The [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser) helps differentiate between the sender and receiver of the messages. On any given chat window, the `SfChat.CurrentUser` is meant to be the sender(author of outgoing messages). Refer the below code example to set up a current user in a chat.
 
 {% tabs %}
 {% highlight xaml %}
@@ -158,7 +158,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Text message
 
-[TextMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.TextMessage.html) is used to display plain text as a message. The following code example explains how to add a simple text message.
+[TextMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.TextMessage.html) is used to display plain text as a message. The following code example explains how to add a simple text message.
 
 {% tabs %}
 {% highlight xaml %}
@@ -304,7 +304,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Date picker message
 
-[DatePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.DatePickerMessage.html) is used to show a date picker as a message to let users select a date. Once a date is selected, the selected date will be added as a `TextMessage` in the chat window. The [SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event and [SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) will be executed upon selecting a date from the date picker.
+[DatePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.DatePickerMessage.html) is used to show a date picker as a message to let users select a date. Once a date is selected, the selected date will be added as a `TextMessage` in the chat window. The [SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) event and [SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_SendMessageCommand) will be executed upon selecting a date from the date picker.
 
 {% tabs %}
 {% highlight xaml %}
@@ -455,7 +455,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Time picker message
 
-[TimePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.TimePickerMessage.html) is used to show a time picker as a message to let users select time. Once time is selected, the selected time is added as a `TextMessage`. The [SfChat.SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event and [SfChat.SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) will be executed upon selecting a time from the time picker.
+[TimePickerMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.TimePickerMessage.html) is used to show a time picker as a message to let users select time. Once time is selected, the selected time is added as a `TextMessage`. The [SfChat.SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) event and [SfChat.SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_SendMessageCommand) will be executed upon selecting a time from the time picker.
 
 {% tabs %}
 {% highlight xaml %}
@@ -607,7 +607,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Calendar message
 
-[CalendarMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CalendarMessage.html) is used to display a calendar as a message to let users select a date. The date selected from the calendar will be added as a `TextMessage`. The [SfChat.SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event and [SfChat.SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) will be executed upon selecting a date from the calendar.
+[CalendarMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.CalendarMessage.html) is used to display a calendar as a message to let users select a date. The date selected from the calendar will be added as a `TextMessage`. The [SfChat.SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) event and [SfChat.SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_SendMessageCommand) will be executed upon selecting a date from the calendar.
 
 {% tabs %}
 {% highlight xaml %}
@@ -758,7 +758,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ## Hyperlink message
 
-[HyperlinkMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.HyperlinkMessage.html) is used to share URL as a message. Along with the link, the thumbnail, title and description of the URL are automatically fetched and displayed. The following code example illustrates how to add a hyperlink message.
+[HyperlinkMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.HyperlinkMessage.html) is used to share URL as a message. Along with the link, the thumbnail, title and description of the URL are automatically fetched and displayed. The following code example illustrates how to add a hyperlink message.
 
 {% tabs %}
 {% highlight xaml %}
@@ -902,13 +902,13 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ### Adding hyperlink message as an outgoing message
 
-Unlike the other messages, the `HyperlinkMessage` can also be shown as an outgoing message. To add an `HyperlinkMessage` as an outgoing message just set the [HyperlinkMessage.Author](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Author.html) as [SfChat.CurrentUser](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html).
+Unlike the other messages, the `HyperlinkMessage` can also be shown as an outgoing message. To add an `HyperlinkMessage` as an outgoing message just set the [HyperlinkMessage.Author](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageBase.html#Syncfusion_XForms_Chat_MessageBase_Author) as [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser).
 
 ![Send hyper link message](SfChat_images/xamarin-forms-chat-outgoing-hyperlink-message.png)
 
 ## Image message
 
-[ImageMessage](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage.html) is used to display an image as a message. Using the [ImageMessage.Source](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage~Source.html), [ImageMessage.Size](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage~Size.html) and [ImageMessage.Aspect](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageMessage~Aspect.html) properties you can display the desired image in the desired height and width as a message in the chat control.
+[ImageMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ImageMessage.html) is used to display an image as a message. Using the [ImageMessage.Source](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ImageMessage.html#Syncfusion_XForms_Chat_ImageMessage_Source), [ImageMessage.Size](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ImageMessage.html#Syncfusion_XForms_Chat_ImageMessage_Size) and [ImageMessage.Aspect](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ImageMessage.html#Syncfusion_XForms_Chat_ImageMessage_Aspect) properties you can display the desired image in the desired height and width as a message in the chat control.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1065,7 +1065,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ### Event and command
 
-The `ImageMessage` comes with in-built [SfChat.ImageTapped](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ImageTapped_EV.html) event and [SfChat.ImageTappedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ImageTappedCommand.html) that will be fired upon tapping an image message. You can get the instance of the `ImageMessage` that was tapped in the [ImageTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ImageTappedEventArgs.html) as `ImageTappedEventArgs.Message`. You can handle this event/command to achieve requirements like to show the image in full screen, or show options for sharing the image etc.
+The `ImageMessage` comes with in-built [SfChat.ImageTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) event and [SfChat.ImageTappedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ImageTappedCommand) that will be fired upon tapping an image message. You can get the instance of the `ImageMessage` that was tapped in the [ImageTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ImageTappedEventArgs.html) as `ImageTappedEventArgs.Message`. You can handle this event/command to achieve requirements like to show the image in full screen, or show options for sharing the image etc.
 
 **ImageTapped event**
 
@@ -1169,13 +1169,13 @@ You can download the complete project demo to show the tapped image in full scre
 
 ### Adding image message as an outgoing message
 
-Unlike the other messages, the `ImageMessage` can also be shown as an outgoing message. To add an `ImageMessage` as an outgoing message just set the [ImageMessage.Author](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.MessageBase~Author.html) as [SfChat.CurrentUser](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html). You can also add an image message when clicking the attachment button as shown [here](https://help.syncfusion.com/xamarin/chat/attachment-button).
+Unlike the other messages, the `ImageMessage` can also be shown as an outgoing message. To add an `ImageMessage` as an outgoing message just set the [ImageMessage.Author](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageBase.html#Syncfusion_XForms_Chat_MessageBase_Author) as [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser). You can also add an image message when clicking the attachment button as shown [here](https://help.syncfusion.com/xamarin/chat/attachment-button).
 
 ![Send image message](SfChat_images/ImageMessage_Outgoing.png)
 
 ### Displaying a GIF as an image message
 
-You can write style targeting the [ControlTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ControlTemplate.html) property of the [ChatImageView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatImageView.html) and add it to the application's resources as shown below. You can assign your custom template view that is capable of loading a GIF image as the `ControlTemplate` of `ChatImageView` using `Style.Setter`. Here in the below code example we have loaded our `CustomImageView` as `ControlTemplate` of the `ChatImageView`.
+You can write style targeting the [ControlTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) property of the [ChatImageView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ChatImageView.html) and add it to the application's resources as shown below. You can assign your custom template view that is capable of loading a GIF image as the `ControlTemplate` of `ChatImageView` using `Style.Setter`. Here in the below code example we have loaded our `CustomImageView` as `ControlTemplate` of the `ChatImageView`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1303,13 +1303,13 @@ You can download the complete project of this demo from [here](https://github.co
 
 ## Card Message
 
-You can show a list of interactive cards with each card containing an image, list of buttons and text (title, subtitle and description) to tie in with the cards of popular bot frameworks. Use the [Card.Image](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card~Image.html), [Card.Title](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card~Title.html), [Card.Subtitle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card~Subtitle.html) and [Card.Description](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card~Description.html) properties to display image, title, subtitle and description in a card respectively.
+You can show a list of interactive cards with each card containing an image, list of buttons and text (title, subtitle and description) to tie in with the cards of popular bot frameworks. Use the [Card.Image](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.Card.html#Syncfusion_XForms_Chat_Card_Image), [Card.Title](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.Card.html#Syncfusion_XForms_Chat_Card_Title), [Card.Subtitle](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.Card.html#Syncfusion_XForms_Chat_Card_Subtitle) and [Card.Description](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.Card.html#Syncfusion_XForms_Chat_Card_Description) properties to display image, title, subtitle and description in a card respectively.
 
-You can also show one or more buttons in a card as options to choose from. Create the [CardButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardButton.html) with necessary [CardButton.Title](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardButton~Title.html)(the text to be displayed in the button) and [CardButton.Value](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardButton~Value.html)(the text value that should be added as response message when button is clicked, usually the title of the card) and add it to the [Card.Buttons](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card~Buttons.html) collection.
+You can also show one or more buttons in a card as options to choose from. Create the [CardButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.CardButton.html) with necessary [CardButton.Title](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.CardButton.html#Syncfusion_XForms_Chat_CardButton_Title)(the text to be displayed in the button) and [CardButton.Value](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.CardButton.html#Syncfusion_XForms_Chat_CardButton_Value)(the text value that should be added as response message when button is clicked, usually the title of the card) and add it to the [Card.Buttons](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.Card.html#Syncfusion_XForms_Chat_Card_Buttons) collection.
 
-Upon creating the individual cards, add them to a [Card](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card.html) typed collection and assign this collection of cards to the [CardMessage.Cards](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardMessage~Cards.html) property. The card message auto-sizes itself in height based on the card contents(the text and button count) of the largest card in the list of cards.
+Upon creating the individual cards, add them to a [Card](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.Card.html) typed collection and assign this collection of cards to the [CardMessage.Cards](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.CardMessage.html#Syncfusion_XForms_Chat_CardMessage_Cards) property. The card message auto-sizes itself in height based on the card contents(the text and button count) of the largest card in the list of cards.
 
-If you dont want to display images, buttons or text(title, subtitle, description) in a card simply do not set values to the required properties. For example if you dont want to display image in a card, do no set any value to the [Card.Image](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.Card~Image.html) property.
+If you dont want to display images, buttons or text(title, subtitle, description) in a card simply do not set values to the required properties. For example if you dont want to display image in a card, do no set any value to the [Card.Image](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.Card.html#Syncfusion_XForms_Chat_Card_Image) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1503,7 +1503,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 
 ### Event and Command
 
-The CardMessage comes with built-in [SfChat.CardTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CardTapped_EV.html) event and [SfChat.CardCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CardCommand.html) that will be fired upon tapping a button in a card or tapping any card in the message . You can get the selected `Card`, the clicked `CardButton` and the actual [CardMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardMessage.html) via the [CardTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardTappedEventArgs.html) as [CardTappedEventArgs.Card](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardTappedEventArgs~Card.html), [CardTappedEventArgs.Action](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardTappedEventArgs~Action.html) and [CardTappedEventArgs.Message](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardTappedEventArgs~Message.html) respectively, in both the `CardTapped` event handler and action of `CardCommand`. Handling this event/command by setting [CardTappedEventArgs.Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.CardTappedEventArgs~Handled.html) prevents the `Card.Title` or `CardButton.Value` from getting added as a new message.
+The CardMessage comes with built-in [SfChat.CardTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) event and [SfChat.CardCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CardCommand) that will be fired upon tapping a button in a card or tapping any card in the message . You can get the selected `Card`, the clicked `CardButton` and the actual [CardMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.CardMessage.html) via the [CardTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.CardTappedEventArgs.html) as [CardTappedEventArgs.Card](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.CardTappedEventArgs.html#Syncfusion_XForms_Chat_CardTappedEventArgs_Card), [CardTappedEventArgs.Action](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.CardTappedEventArgs.html#Syncfusion_XForms_Chat_CardTappedEventArgs_Action) and [CardTappedEventArgs.Message](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.CardTappedEventArgs.html#Syncfusion_XForms_Chat_CardTappedEventArgs_Message) respectively, in both the `CardTapped` event handler and action of `CardCommand`. Handling this event/command by setting [CardTappedEventArgs.Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.CardTappedEventArgs.html#Syncfusion_XForms_Chat_CardTappedEventArgs_Handled) prevents the `Card.Title` or `CardButton.Value` from getting added as a new message.
 
 N> The `Action` argument in `CardTappedEventArgs` holds a valid value only only when clicking the `CardButton` in a card. Tapping elsewhere inside the card fires the `CardTapped` event and `CardCommand` with `Action` as null in the `CardTappedEventArgs`. If the `CardTappedEventArgs.Action` is null, the `CardTappedEventArgs.Card.Title` is added as a new message, else the `CardTappedEventArgs.Action.Value` is added as a new message.
 
@@ -1604,7 +1604,7 @@ private void CardTapped(object args)
 
 ## Template for message
 
-SfChat allows to load custom templates for all incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) property. You can customize the message views as per your liking with the support to load template for each individual message by using a custom template selector derived from [ChatMessageTemplateSelector](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.ChatMessageTemplateSelector.html) and assigning it to [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageTemplate.html) as shown below. Load custom templates based on the message type, text, author, etc. The limits are endless.
+SfChat allows to load custom templates for all incoming and outgoing message using [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MessageTemplate) property. You can customize the message views as per your liking with the support to load template for each individual message by using a custom template selector derived from [ChatMessageTemplateSelector](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ChatMessageTemplateSelector.html) and assigning it to [SfChat.MessageTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MessageTemplate) as shown below. Load custom templates based on the message type, text, author, etc. The limits are endless.
 
 We have loaded a custom template if the message's text contains a particular text value in the below code example.
 
@@ -1664,11 +1664,11 @@ You can also download the entire source code of this demo [here](https://github.
 
 ## Sending message
 
-The [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html) can send messages using the send button in the message input area at the bottom of the chat control. Tapping the send button or pressing <kbd>Enter</kbd> key (in UWP) will create a new text message with the text in the editor and add it to the [SfChat.Messages] collection. The [SfChat.SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessage_EV.html) event and [SfChat.SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~SendMessageCommand.html) will be executed upon tapping the send button.
+The [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser) can send messages using the send button in the message input area at the bottom of the chat control. Tapping the send button or pressing <kbd>Enter</kbd> key (in UWP) will create a new text message with the text in the editor and add it to the [SfChat.Messages] collection. The [SfChat.SendMessage](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) event and [SfChat.SendMessageCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_SendMessageCommand) will be executed upon tapping the send button.
 
 **Cancel the message from sending**
 
-The newly added message can be canceled from sending, in the `SendMessage` event handler and `SendMessageCommand` by setting the [Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SendMessageEventArgs~Handled.html) value as `true` in the provided [SendMessageEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SendMessageEventArgs.html).
+The newly added message can be canceled from sending, in the `SendMessage` event handler and `SendMessageCommand` by setting the [Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SendMessageEventArgs.html#Syncfusion_XForms_Chat_SendMessageEventArgs_Handled) value as `true` in the provided [SendMessageEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SendMessageEventArgs.html).
 
 **SendMessage Event handler**
 
@@ -1787,7 +1787,7 @@ public class SendMessageCommandExt : ICommand
 
 ## Show keyboard always
 
-By default the keyboard will be open in view, even after a message is sent or focus is lost just like in most mainstream chat applications. To hide the keyboard after the message has been sent or lost focus set the [SfChat.ShowKeyboardAlways](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowKeyboardAlways.html) property to `false`.
+By default the keyboard will be open in view, even after a message is sent or focus is lost just like in most mainstream chat applications. To hide the keyboard after the message has been sent or lost focus set the [SfChat.ShowKeyboardAlways](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowKeyboardAlways) property to `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1839,7 +1839,7 @@ In the MainActivity.cs of your Xamarin.Forms.Android project, override the `Curr
 
 ## Restricting multi-line input in editor (single line messages) in Xamarin.Forms chat
 
-By default the user can type multi-line messages by inserting new lines using the editor in the chat control for outgoing messages. However, you can restrict multi-line input from the users and show a send button in the keyboard so that users can no longer insert a new line in messages by setting the [SfChat.AllowMultilineInput](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~AllowMultilineInput.html) property as false.
+By default the user can type multi-line messages by inserting new lines using the editor in the chat control for outgoing messages. However, you can restrict multi-line input from the users and show a send button in the keyboard so that users can no longer insert a new line in messages by setting the [SfChat.AllowMultilineInput](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_AllowMultilineInput) property as false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1867,7 +1867,7 @@ N> In iOS you cannot scroll horizontally on the editor when `AllowMultilineInput
 
 ## Show avatar and author name for outgoing message
 
-By default the author name and avatar are not displayed for the outgoing messages(messages sent by the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html)). You can choose to either show or hide the avatar and name for all outgoing messages using the [SfChat.ShowOutgoingMessageAvatar](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowOutgoingMessageAvatar.html) and [SfChat.ShowOutgoingMessageAuthorName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowOutgoingMessageAuthorName.html) properties respectively.
+By default the author name and avatar are not displayed for the outgoing messages(messages sent by the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser)). You can choose to either show or hide the avatar and name for all outgoing messages using the [SfChat.ShowOutgoingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowOutgoingMessageAvatar) and [SfChat.ShowOutgoingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowOutgoingMessageAuthorName) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1895,7 +1895,7 @@ By default the author name and avatar are not displayed for the outgoing message
 
 ## Customize the shape of the message
 
-The `SfChat` allows to change the shape of the messages by using the [SfChat.MessageShape](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~MessageShape.html) property.
+The `SfChat` allows to change the shape of the messages by using the [SfChat.MessageShape](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MessageShape) property.
 
 To customize `MessageShape` in the SfChat, refer the below code example:
 
@@ -1951,7 +1951,7 @@ namespace GettingStarted
 
 ## Hide the message input view
 
-The SfChat allows to hide the message input view(editor) by setting false to [SfChat.ShowMessageInputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowMessageInputView.html) property.
+The SfChat allows to hide the message input view(editor) by setting false to [SfChat.ShowMessageInputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowMessageInputView) property.
 
 To hide `ShowMessageInputView` in the SfChat, refer the below code example:
 
@@ -2005,7 +2005,7 @@ namespace GettingStarted
 
 ## Hide avatar and author name for incoming messages
 
-By default the author name and avatar are displayed for the incoming messages(messages sent by users other than the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~CurrentUser.html)). You can choose to either show or hide the avatar and name for all incoming messages using the [SfChat.ShowIncomingMessageAvatar](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowIncomingMessageAvatar.html) and [SfChat.ShowIncomingMessageAuthorName](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChat.XForms~Syncfusion.XForms.Chat.SfChat~ShowIncomingMessageAuthorName.html) properties respectively.
+By default the author name and avatar are displayed for the incoming messages(messages sent by users other than the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser)). You can choose to either show or hide the avatar and name for all incoming messages using the [SfChat.ShowIncomingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowIncomingMessageAvatar) and [SfChat.ShowIncomingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowIncomingMessageAuthorName) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}

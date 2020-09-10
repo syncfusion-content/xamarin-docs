@@ -11,7 +11,7 @@ documentation: ug
 
 # Animation
 
-You can enable or disable the animation of the badge text using `Scale` or `None` properties of   [`BadgeAnimation`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBadgeView.XForms~Syncfusion.XForms.BadgeView.BadgeSetting~BadgeAnimation.html) property. You can see the animation when we change the badge text.
+You can enable or disable the animation of the badge text using `Scale` or `None` properties of   [`BadgeAnimation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_BadgeAnimation) property. You can see the animation when we change the badge text.
 
 {% tabs %}
 

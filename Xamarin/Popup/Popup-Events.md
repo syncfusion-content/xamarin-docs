@@ -18,7 +18,7 @@ There are four built-in events in the SfPopupLayout control namely:
 
 ## Opening event
 
-The [SfPopupLayout.Opening](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opening_EV.html) event will be fired whenever opening the PopupView in the application. It can cancel popup opening with `CancelEventArgs` that contains the following property:
+The [SfPopupLayout.Opening](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html) event will be fired whenever opening the PopupView in the application. It can cancel popup opening with `CancelEventArgs` that contains the following property:
 
 * [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Popup opening is based on this value.
 
@@ -45,7 +45,7 @@ private void PopupLayout_Opening(object sender, System.ComponentModel.CancelEven
 
 ## Opened event
 
-The [SfPopupLayout.Opened](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opened_EV.html) event will be fired whenever displaying the PopupView in the application.
+The [SfPopupLayout.Opened](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html) event will be fired whenever displaying the PopupView in the application.
 
 You can execute your own set of codes once the popup is opened, and visible in the application in its respective event handler.
 
@@ -73,7 +73,7 @@ private void PopupLayout_Opened(object sender, EventArgs e)
 
 ## Closing event
 
-The [SfPopupLayout.Closing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Opening_EV.html) event will be fired whenever closing the PopupView in the application. It can cancel popup closing with `CancelEventArgs` that contains the following property:
+The [SfPopupLayout.Closing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html) event will be fired whenever closing the PopupView in the application. It can cancel popup closing with `CancelEventArgs` that contains the following property:
 
 * [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Popup opening is based on this value.
 
@@ -100,7 +100,7 @@ private void PopupLayout_Closing(object sender, System.ComponentModel.CancelEven
 
 ## Closed event
 
-The [SfPopupLayout.Closed](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Closed_EV.html) event will be fired whenever dismissing the PopupView from the view.
+The [SfPopupLayout.Closed](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html) event will be fired whenever dismissing the PopupView from the view.
 
 You can execute your own set of codes once the popup is completely closed in its respective event handler.
 
@@ -127,7 +127,7 @@ private void PopupLayout_Closed(object sender, EventArgs e)
 
 ## Accept command
 
-The [SfPopupLayout.PopupView.AcceptCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~AcceptCommand.html) will be fired when clicking the Accept button in the popup footer.
+The [SfPopupLayout.PopupView.AcceptCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupView.html#Syncfusion_XForms_PopupLayout_PopupView_AcceptCommand) will be fired when clicking the Accept button in the popup footer.
 
 To handle the Accept button,
 
@@ -214,7 +214,7 @@ To handle the Accept button,
 
 ## Decline command
 
-The [SfPopupLayout.PopupView.DeclineCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~DeclineCommand.html) will be fired when clicking the Decline button in the popup footer. 
+The [SfPopupLayout.PopupView.DeclineCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupView.html#Syncfusion_XForms_PopupLayout_PopupView_DeclineCommand) will be fired when clicking the Decline button in the popup footer. 
 
 To handle the Decline button,
 

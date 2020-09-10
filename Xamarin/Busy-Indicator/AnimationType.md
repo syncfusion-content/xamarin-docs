@@ -12,7 +12,7 @@ documentation: ug
 
 The `AnimationType` property for the SfBusyIndicator allows the users to set one of the 17 animations from the built-in animations. The different types of Animations are `Ball`, `HorizontalPulsingBox`, `Rectangle`, `Battery`, `Globe`, `SingleCircle`, `SlicedCircle`, `DoubleCircle`, `ECG`, `Print`, `Box`, `Gear`, `Movie Timer`, `ZoomingTarget`, `RollingBall`, `Cupertino` and `Material`.
 
-N> `Material` support has not been provided for UWP Platform.
+N> `Material` animation support has not been provided for UWP Platform.
 
 {% tabs %}
 

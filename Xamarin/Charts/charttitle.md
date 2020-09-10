@@ -82,3 +82,37 @@ sfChart.Title.TextColor = Color.Blue;
 {% endtabs %}
 
 ![Text alignment support for title in Xamarin.Forms Chart](charttitle_images/charttitle_img2.png)
+
+## Text Wrap
+
+You can wrap chart title text content using the LineBreakMode property. The default value of this property is NoWrap.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+
+	<chart:SfChart.Title>
+
+	<chart:ChartTitle Text="Efficiency of oil-fired power production" TextColor="Blue" LineBreakMode="TailTruncation"/>
+
+	</chart:SfChart.Title>  
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart sfChart = new SfChart();
+
+sfChart.Title.Text = "Efficiency of oil-fired power production";
+
+sfChart.Title.TextColor = Color.Blue;
+
+sfChart.Title.LineBreakMode = LineBreakMode.TailTruncation;
+
+{% endhighlight %}
+
+{% endtabs %}

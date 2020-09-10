@@ -1501,7 +1501,7 @@ Chart.SecondaryAxis = new NumericalAxis()
 
 {% endtabs %}
 
-![PlotOffsetEnd support for axis in Xamarin.Forms Chart](axis_images/PlotOffset_End.png)
+![PlotOffsetEnd support for axis in Xamarin.Forms Chart](axis_images/plotOffset_end.png)
 
 ### Maximum number of labels per 100 pixels
 

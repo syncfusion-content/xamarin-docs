@@ -251,7 +251,7 @@ this.Content = calendar;
 
 ![Month view today border color in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-todaybordercolor.png)
 
-## How to customize day header text
+## Customize day header text
 
 You can customize the day header text by adding the custom day labels in the `CustomDayLabels` collection by using the [CustomDayLabels](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~CustomDayLabels.html) collection of SfCalendar.
 

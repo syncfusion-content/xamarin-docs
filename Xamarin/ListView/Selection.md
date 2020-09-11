@@ -54,10 +54,39 @@ When the selection mode is `Multiple`, programmatically select more than one ite
 {% tabs %}
 {% highlight c# %} 
 //Perform multiple selection using selected items
+public class SelectionViewModel : INotifyPropertyChanged
+{
+    private ObservableCollection<object> selectedItems;
+    
+    public SelectionViewModel()
+    {
+        GenerateSource();
+        SelectedItems = new ObservableCollection<object>();
+    }
+	
+    public ObservableCollection<object> SelectedItems
+    {
+        get { return selectedItems; }
+        set { this.selectedItems = value; }
+    }
+	private async void GenerateSource()
+    {
+        var random = new Random();        
+        SelectedItems.Add(MusicInfo[0]);
+	}
+}
+
 listView.SelectedItems.Add (viewModel.Items [4]);
 listView.SelectedItems.Add (viewModel.Items[5]);
 {% endhighlight %}
 {% endtabs %}
+
+N> The SfListView.SelectedItems property type is a type of ObservableCollection<Object>. So, you should use generic type as an object for the ViewModel collection property type.
+
+{% tabs %}
+{% highlight xaml %}
+<sync:SfListView x:Name="listView" SelectedItems="{Binding SelectedItems}">
+</sync:SfListView>
 
 All items of the SfListView can be selected using the [SelectAll](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectAll) method.
 
@@ -351,16 +380,16 @@ The [SelectionChangedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.
 public class CommandViewModel
 {
   private Command<Object> selectionChangedCommand;
-  public Command<object> ListViewSelectionChagedCommand
+  public Command<object> ListViewSelectionChangedCommand
   {
     get { return selectionChangedCommand; }
     set { selectionChangedCommand = value; }
   }
   public CommandViewModel()
   {
-    ListViewSelectionChagedCommand = new Command<object>(SelectionChagedCommandMethod);
+    ListViewSelectionChangedCommand = new Command<object>(SelectionChangedCommandMethod);
   }
-  private void SelectionChagedCommandMethod(object obj)
+  private void SelectionChangedCommandMethod(object obj)
   {
     var listView = obj as SfListView;
     DisplayAlert("Message", (listView.SelectedItem as Contacts).ContactName + " is selected", "OK");

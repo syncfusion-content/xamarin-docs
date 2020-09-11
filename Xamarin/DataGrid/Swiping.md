@@ -692,11 +692,13 @@ The SfDataGrid allow to enabling swiping in summary row and unbound row by setti
 
 {% highlight c# %}
 
-private void Datagrid_SwipeStarted(object sender, SwipeStarteddEventArgs e)
-{   
- if(e.RowData == typeof(TableSummaryRowControl) || e.RowData == typeof(GroupSummaryRowControl)|| e.RowData == typeof(CaptionSummaryRowControl)|| e.RowData == typeof(UnboundRowControl))
-          e.Cancel = false;
-} 
+ private void DataGrid_SwipeStarted(object sender, Syncfusion.SfDataGrid.XForms.SwipeStartedEventArgs e)
+        {
+            if (e.RowData == null || e.RowData.GetType() == typeof(Syncfusion.Data.Group) || e.RowData.GetType() == typeof(Syncfusion.Data.SummaryRecordEntry))
+            {
+                e.Cancel = false;
+            }
+        }
 
 {% endhighlight %}
 

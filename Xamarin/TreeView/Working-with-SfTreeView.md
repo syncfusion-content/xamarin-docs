@@ -21,17 +21,20 @@ treeviewnode.PropertyChanged += Treeviewnode_PropertyChanged;
 
 private void Treeviewnode_PropertyChanged(object sender, PropertyChangedEventArgs e)
 {
-    if (treeviewnode.IsExpanded)
-        DisplayAlert("treeview", "nodeexpanded", "ok");
-    else
-        DisplayAlert("treeview", "nodecollapsed", "ok");
+    if (e.PropertyName == "IsExpanded")
+    {
+        if (treeviewnode.IsExpanded)
+            DisplayAlert("treeview", "nodeexpanded", "ok");
+        else
+            DisplayAlert("treeview", "nodecollapsed", "ok");
+    }
 }
 {% endhighlight %}
 {% endtabs %}
 
 ## Refresh layout
 
-[SetDirty](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_SetDirty) notifies the TreeViewNode to recalculate the child collection update mechanism to invalidate that node which helps to update the engine and refresh the UI.
+You can refresh the TreeViewNode from the root node and update all layout by using the [SetDirty](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_SetDirty) method which notifies the tree view layout mechanism to invalidate nodes.
 
 {% endhighlight %}
 {% highlight c# %}

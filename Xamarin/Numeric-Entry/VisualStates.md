@@ -15,7 +15,7 @@ The button visual can be customized through `VisualStates`. The [`SfNumericTextB
 * Focused
 * Disabled
 
-N> The Focused VisualState only availble in Android and iOS platforms.
+N> The Focused VisualState only available in Android and iOS platforms.
 
 {% tabs %}
 {% highlight xaml %}

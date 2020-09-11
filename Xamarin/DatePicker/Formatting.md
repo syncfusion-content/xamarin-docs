@@ -13,7 +13,7 @@ Format is a way to represent the value of the date in a different string format.
 
 By default, the DatePicker’s format is "DateFormat.M_d_yyyy".
 
-The different types of formats are.
+The different types of formats are:
 
 M_d_yyyy - Represents the month day year in m/d/yyyy format.
 

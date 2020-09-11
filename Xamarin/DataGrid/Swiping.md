@@ -612,6 +612,94 @@ The following screenshot shows the custom swipe buttons loaded based on the cell
 
 ![Custom Swipe button for Offline](SfDataGrid_images/Offline.png)
 
+## Enable swiping for summary row and unbound row.
+
+The SfDataGrid allow to enabling swiping in summary row and unbound row by setting `e.Cancel` as false from SfDataGrid.SwipeStarted event.
+
+{% highlight xaml %}
+
+ <syncfusion:SfDataGrid        
+            x:Name="dataGrid"     
+            ItemsSource="{Binding OrderInfoCollection}"     
+            AutoGenerateColumns="False"
+            AllowSwiping="True" 
+            GroupingMode="Multiple"  
+            ColumnSizer="Auto" 
+			SwipeStarted="DataGrid_SwipeStarted"
+            AllowGroupExpandCollapse="True" >
+                <syncfusion:SfDataGrid.UnboundRows>
+                    <syncfusion:GridUnboundRow Position="FixedTop"/>
+                    <syncfusion:GridUnboundRow Position="Top"/>
+                    <syncfusion:GridUnboundRow Position="Bottom"/>
+                    <syncfusion:GridUnboundRow Position="FixedBottom"/>
+                </syncfusion:SfDataGrid.UnboundRows>
+                <syncfusion:SfDataGrid.TableSummaryRows>
+                    <syncfusion:GridTableSummaryRow Title="Total Count : {ProductCount} members"              
+                                                ShowSummaryInRow="True">
+                        <syncfusion:GridTableSummaryRow.SummaryColumns>
+                            <syncfusion:GridSummaryColumn Name="ProductCount" 
+                                                      Format="{}{Count}"                        
+                                                      MappingName="ShipCity"          
+                                                      SummaryType="CountAggregate" />
+                        </syncfusion:GridTableSummaryRow.SummaryColumns>
+                    </syncfusion:GridTableSummaryRow>
+                </syncfusion:SfDataGrid.TableSummaryRows>
+                <syncfusion:SfDataGrid.GroupColumnDescriptions>
+                    <syncfusion:GroupColumnDescription  ColumnName="ShipCity" />
+                    <syncfusion:GroupColumnDescription ColumnName="ShipCountry" />
+                </syncfusion:SfDataGrid.GroupColumnDescriptions>
+                <syncfusion:SfDataGrid.GroupSummaryRows>
+                    <syncfusion:GridGroupSummaryRow ShowSummaryInRow="True" Title="Total Salary: {Salary} for {customerID} members">
+                        <syncfusion:GridGroupSummaryRow.SummaryColumns>
+                            <syncfusion:GridSummaryColumn Name="customerID"  
+                                                      MappingName="CustomerID"                                             
+                                                      Format="{}{Count}"                                              
+                                                      SummaryType="CountAggregate"></syncfusion:GridSummaryColumn>
+                        </syncfusion:GridGroupSummaryRow.SummaryColumns>
+                    </syncfusion:GridGroupSummaryRow>
+                </syncfusion:SfDataGrid.GroupSummaryRows>
+                <syncfusion:SfDataGrid.CaptionSummaryRow>
+                    <syncfusion:GridGroupSummaryRow Title="Total Count :{TotalCount}  members"        
+                                                ShowSummaryInRow="True">
+                        <syncfusion:GridGroupSummaryRow.SummaryColumns>
+                            <syncfusion:GridSummaryColumn Name="TotalCount"   
+                                                      Format="{}{Count}"     
+                                                      MappingName="ShipCity"          
+                                                      SummaryType="CountAggregate" />
+                        </syncfusion:GridGroupSummaryRow.SummaryColumns>
+                    </syncfusion:GridGroupSummaryRow>
+                </syncfusion:SfDataGrid.CaptionSummaryRow>
+                <syncfusion:SfDataGrid.Columns>
+                    <syncfusion:GridTextColumn HeaderText="Order ID" MappingName="OrderID"/>
+                    <syncfusion:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />
+                    <syncfusion:GridTextColumn HeaderText="City" MappingName="ShipCity" />
+                    <syncfusion:GridTextColumn HeaderText="Ship Country" MappingName="ShipCountry" AllowEditing="False"/>
+
+                </syncfusion:SfDataGrid.Columns>
+                <syncfusion:SfDataGrid.LeftSwipeTemplate>
+                    <DataTemplate>
+                        <Button Text="Delete" ></Button>
+                    </DataTemplate>
+                </syncfusion:SfDataGrid.LeftSwipeTemplate>
+                <syncfusion:SfDataGrid.RightSwipeTemplate>
+                    <DataTemplate>
+                        <Button Text="Edit"/>
+                    </DataTemplate>
+                </syncfusion:SfDataGrid.RightSwipeTemplate>
+            </syncfusion:SfDataGrid>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+private void Datagrid_SwipeStarted(object sender, SwipeStarteddEventArgs e)
+{   
+ if(e.RowData == typeof(TableSummaryRowControl) || e.RowData == typeof(GroupSummaryRowControl)|| e.RowData == typeof(CaptionSummaryRowControl)|| e.RowData == typeof(UnboundRowControl))
+          e.Cancel = false;
+} 
+
+{% endhighlight %}
+
 ## Limitations
 
 When data grid is loaded in MasterDetailPage with `AllowSwiping` as true, it behaves as follows: 

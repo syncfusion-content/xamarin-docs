@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion NumericTextBox for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion NumericTextBox control for Xamarin.Forms platform to create a simple NumericTextBox and customize visual states.
+description: A quick tour to initial users on Syncfusion NumericTextBox control for Xamarin.Forms platform to create a simple SfNumericTextBox and customize visual states.
 platform: Xamarin.Forms
 control: SfNumericTextBox
 documentation: ug
@@ -208,15 +208,17 @@ this.Content = numericTextBox;
 
 ![Xamarin.Forms Numeric TextBox with value](images/value.png)
 	
-## Visual States
+## Visual states
 
-The [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) background color can be changed through [`VisualStates`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/visual-state-manager). The Xamarin.Forms [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) allows to do that with the help of [`global styles in Xamarin.Forms`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/styles/xaml/application). The [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) control have the following visual states:
+The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) has been customized based on the visual states [VisualStates`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/visual-state-manager). 
+
+The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) control has the following three basic visual states:
 
 * Normal
 * Focused
 * Disabled
 
-N> The Focused VisualState only available in Android and iOS platforms.
+N> The Focused visual state is only available in Android and iOS platforms.
 
 {% tabs %}
 

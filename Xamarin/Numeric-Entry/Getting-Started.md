@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion NumericTextBox for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion NumericTextBox control for Xamarin.Forms platform
-platform: Xamarin
-control: NumericTextBox
+description: A quick tour to initial users on Syncfusion NumericTextBox control for Xamarin.Forms platform to create a simple NumericTextBox and customize visual states.
+platform: Xamarin.Forms
+control: SfNumericTextBox
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin.Forms SfNumericTextBox
 
 This section explains you the steps to configure a SfNumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in SfNumericTextBox control.
 
@@ -309,8 +309,8 @@ N> The Focused VisualState only available in Android and iOS platforms.
 
 [How to change the Xamarin.Forms numeric textbox style using its visual states (SfNumericTextBox)](https://www.syncfusion.com/kb/11785/how-to-change-the-xamarin-forms-numeric-textbox-style-using-its-visual-states)
 
-[How to bind value in NumerictextBox](https://www.syncfusion.com/kb/7064/how-to-bind-value-in-numerictextbox)
+[How to bind value in numeric textbox](https://www.syncfusion.com/kb/7064/how-to-bind-value-in-numerictextbox)
 
-[How to create a NumericTextBox control sample using Xaml](https://www.syncfusion.com/kb/7631/how-to-create-a-numerictextbox-control-sample-using-xaml)
+[How to create a numeric textbox control sample using Xaml](https://www.syncfusion.com/kb/7631/how-to-create-a-numerictextbox-control-sample-using-xaml)
 
-[How to create NumericTextBox sample in Xamarin.Forms.Android platform](https://www.syncfusion.com/kb/7632/how-to-create-numerictextbox-sample-in-xamarin-forms-android-platform)
+[How to create numeric textbox sample in Xamarin.Forms.Android platform](https://www.syncfusion.com/kb/7632/how-to-create-numerictextbox-sample-in-xamarin-forms-android-platform)

@@ -81,7 +81,7 @@ listView.SelectedItems.Add (viewModel.Items[5]);
 {% endhighlight %}
 {% endtabs %}
 
-N> SfListView.SelectedItems property type is of type ObservableCollection<Object>. So, you should use generic type as an object for ViewModel binding in the collection property type. 
+N> The SfListView.SelectedItems property type is a type of ObservableCollection<Object>. So, you should use generic type as an object for the ViewModel binding in the collection property type.
 
 {% tabs %}
 {% highlight xaml %}

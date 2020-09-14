@@ -210,7 +210,7 @@ this.Content = numericTextBox;
 	
 ## Visual states
 
-The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) has been customized based on the visual states [VisualStates`](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/visual-state-manager). 
+The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) has been customized based on the visual states [VisualStates](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/visual-state-manager). 
 
 The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) control has the following three basic visual states:
 
@@ -218,7 +218,7 @@ The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumer
 * Focused
 * Disabled
 
-N> The Focused visual state is only available in Android and iOS platforms.
+N> The focused visual state is only available in Android and iOS platforms.
 
 {% tabs %}
 
@@ -298,13 +298,13 @@ N> The Focused visual state is only available in Android and iOS platforms.
 
 {% endtabs %}
 
-**Normal visual state:**
+**Normal visual state**
 ![SfNumericTextBox with normal visual state](images/NormalState.jpg)
 
-**Disabled visual state:**
+**Disabled visual state**
 ![SfNumericTextBox with focused visual state](images/FocusState.jpg)
 
-**Focused visual state:**
+**Focused visual state**
 ![SfNumericTextBox with disabled visual state](images/DisabledState.jpg)
 
 ## See also

@@ -87,6 +87,8 @@ N> The SfListView.SelectedItems property type is a type of ObservableCollection<
 {% highlight xaml %}
 <sync:SfListView x:Name="listView" SelectedItems="{Binding SelectedItems}">
 </sync:SfListView>
+{% endhighlight %}
+{% endtabs %}
 
 All items of the SfListView can be selected using the [SelectAll](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectAll) method.
 

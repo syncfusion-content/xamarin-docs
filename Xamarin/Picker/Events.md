@@ -7,7 +7,7 @@ control: SfPicker
 documentation: ug
 ---
 
-# Events
+# Events in Syncfusion Picker
 
 Three events have been used for a picker when it is in the `Dialog` mode. They are,
 

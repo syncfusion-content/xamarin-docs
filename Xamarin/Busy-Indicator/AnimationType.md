@@ -10,7 +10,7 @@ documentation: ug
 
 ## Animation Type in Xamarin BusyIndicator (SfBusyIndicator)
 
-The `AnimationType` property for the SfBusyIndicator allows the users to set one of the 16 animations from the built-in animations. The different types of Animations are `Ball`, `HorizontalPulsingBox`, `Rectangle`, `Battery`, `Globe`, `SingleCircle`, `SlicedCircle`, `DoubleCircle`, `ECG`, `Print`, `Box`, `Gear`, `Movie Timer`, `ZoomingTarget`, `RollingBall` and `Cupertino`.
+The `AnimationType` property for the SfBusyIndicator allows the users to set one of the 16 animations from the built-in animations. The different types of Animations are `Ball`, `Battery`, `Box`, `Cupertino` `DoubleCircle`,  `ECG`, `Gear`,  `Globe`, `HorizontalPulsingBox`, `Movie Timer`,  `Print`, `Rectangle`, `RollingBall`, `SingleCircle`, `SlicedCircle`, `ZoomingTarget`.
 
 {% tabs %}
 
@@ -24,12 +24,12 @@ The `AnimationType` property for the SfBusyIndicator allows the users to set one
              x:Class="GettingStarted.MainPage">
     <ContentPage.Content>
         <busyindicator:SfBusyIndicator x:Name="busyindicator" 
-                                       Title="Loading..."
+                                       Title="Ball"
                                        AnimationType="Ball" 
-                                       ViewBoxHeight="100"
-                                       ViewBoxWidth="100"
-                                       BackgroundColor="Blue"
-                                       TextColor="White"/>
+                                       ViewBoxHeight="150"
+                                       ViewBoxWidth="150"
+                                       BackgroundColor="LightGray"
+                                       TextColor="Blue"/>
     </ContentPage.Content>
 </ContentPage>
 
@@ -50,11 +50,11 @@ namespace GettingStarted
             SfBusyIndicator busyIndicator = new SfBusyIndicator()
             {
                 AnimationType = AnimationTypes.Ball,
-                ViewBoxWidth = 100,
-                ViewBoxHeight = 100,
-                Title = "Loading...",
-                BackgroundColor="Blue",
-                TextColor = Color.White
+                ViewBoxWidth = 150,
+                ViewBoxHeight = 150,
+                Title = "Ball",
+                BackgroundColor="LightGray",
+                TextColor = Color.Blue
             };
 
             this.Content = busyIndicator;
@@ -66,6 +66,66 @@ namespace GettingStarted
 
 {% endtabs %}
 
-The following gif image contains the types of animation in BusyIndicator
+"Ball"
 
-![AnimationTypes](images/animationtypes.gif)
+![Ball](images/Ball.JPG)
+
+"Battery"
+
+![Battery](images/Battery.JPG)
+
+"Box"
+
+![Box](images/Box.JPG)
+
+"Cupertino"
+
+![Cupertino](images/Cupertino.JPG)
+
+"DoubleCircle"
+
+![DoubleCircle](images/DoubleCircle.JPG)
+
+"ECG"
+
+![ECG](images/ECG.JPG)
+
+"Gear"
+
+![Gear](images/Gear.JPG)
+
+"Globe"
+
+![Globe](images/Globe.JPG)
+
+"HorizontalPulsingBox"
+
+![HorizontalPulsingBox](images/HorizontalPulsingBox.JPG)
+
+"MovieTimer"
+
+![MovieTimer](images/MovieTimer.JPG)
+
+"Print"
+
+![Print](images/Print.JPG)
+
+"Rectangle"
+
+![Rectangle](images/Rectangle.JPG)
+
+"RollingBall"
+
+![RollingBall](images/RollingBall.JPG)
+
+"SingleCircle"
+
+![SingleCircle](images/SingleCircle.JPG)
+
+"SlicedCircle"
+
+![SlicedCircle](images/SlicedCircle.JPG)
+
+"ZoomingTarget"
+
+![ZoomingTarget](images/ZoomingTarget.JPG)

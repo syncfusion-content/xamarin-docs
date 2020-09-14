@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events of Syncfusion Picker control
-description: How to hook the event when picker is open and closed.
+title: Events of Syncfusion Picker control for Xamarin.Forms
+description: How to hook the events when picker is open and closed in the Dialog mode in Picker conrol for Xamarin.Forms.
 platform: xamarin
 control: SfPicker
 documentation: ug

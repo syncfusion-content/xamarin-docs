@@ -24,6 +24,65 @@ Arranges the chips in a layout and enables the close button for each chip. Using
 
 Allows users to select a single chip from a group of items. Selecting a chip will automatically deselect the previously selected chips. The selected chip color can be customized using the `SelectedChipBackgroundColor` and `SelectedChipTextColor` properties. The `SelectedItem` property holds the instance of recently selected chip.
 
+`IsSelectionRequired` property allows user to deselect the chip item from the chip group. To enable the deselection feature, set IsSelectionRequired property as false. The default value of IsSelectionRequired property is true.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Chips"
+    x:Class="Chips.GettingStarted">
+	<ContentPage.Content>
+		<buttons:SfChipGroup Type="Choice" IsSelectionRequired="False">
+			<buttons:SfChipGroup.Items>
+				<buttons:SfChip Text="Extra Small"/>
+				<buttons:SfChip Text="Small"/>
+				<buttons:SfChip Text="Medium"/>
+				<buttons:SfChip Text="Large"/>
+				<buttons:SfChip Text="Extra Large"/>
+			</buttons:SfChipGroup.Items>
+		</buttons:SfChipGroup>
+	</ContentPage.Content>
+</ContentPage>
+
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace Chips
+{
+	public partial class GettingStarted: ContentPage
+	{
+		public GettingStarted()
+		{
+			InitializeComponent();
+			Grid grid = new Grid();
+			var chipGroup = new SfChipGroup(){Type = SfChipsType.Action, IsSelectionRequired = false};
+			grid.Children.Add(chipGroup);
+			chipGroup.Items.Add(new SfChip(){Text="Extra Small"});
+			chipGroup.Items.Add(new SfChip(){Text="Small"});
+			chipGroup.Items.Add(new SfChip(){Text="Medium"});
+			chipGroup.Items.Add(new SfChip(){Text="Large"});
+			chipGroup.Items.Add(new SfChip(){Text="Extra Large"});
+			this.Content = grid;
+		}
+	}
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> IsSelectionRequired property is applicable for `Choice` type chip group only.
+
 ## Filter
 
 Allows users to select more than one chip in a group of chips. The selected chips are indicated by selection indicator in this type. The selection indicator can be customized using the `SelectionIndicatorColor` property. Use the `SelectedItems` property to get the list of selected chips.

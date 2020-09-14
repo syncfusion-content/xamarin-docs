@@ -26,8 +26,6 @@ The `AnimationType` property for the SfBusyIndicator allows the users to set one
         <busyindicator:SfBusyIndicator x:Name="busyindicator" 
                                        Title="Ball"
                                        AnimationType="Ball" 
-                                       ViewBoxHeight="150"
-                                       ViewBoxWidth="150"
                                        BackgroundColor="LightGray"
                                        TextColor="Blue"/>
     </ContentPage.Content>
@@ -50,8 +48,6 @@ namespace GettingStarted
             SfBusyIndicator busyIndicator = new SfBusyIndicator()
             {
                 AnimationType = AnimationTypes.Ball,
-                ViewBoxWidth = 150,
-                ViewBoxHeight = 150,
                 Title = "Ball",
                 BackgroundColor="LightGray",
                 TextColor = Color.Blue
@@ -66,66 +62,6 @@ namespace GettingStarted
 
 {% endtabs %}
 
-"Ball"
+The following gif image contains the types of animation in BusyIndicator.
 
-![Ball](images/Ball.JPG)
-
-"Battery"
-
-![Battery](images/Battery.JPG)
-
-"Box"
-
-![Box](images/Box.JPG)
-
-"Cupertino"
-
-![Cupertino](images/Cupertino.JPG)
-
-"DoubleCircle"
-
-![DoubleCircle](images/DoubleCircle.JPG)
-
-"ECG"
-
-![ECG](images/ECG.JPG)
-
-"Gear"
-
-![Gear](images/Gear.JPG)
-
-"Globe"
-
-![Globe](images/Globe.JPG)
-
-"HorizontalPulsingBox"
-
-![HorizontalPulsingBox](images/HorizontalPulsingBox.JPG)
-
-"MovieTimer"
-
-![MovieTimer](images/MovieTimer.JPG)
-
-"Print"
-
-![Print](images/Print.JPG)
-
-"Rectangle"
-
-![Rectangle](images/Rectangle.JPG)
-
-"RollingBall"
-
-![RollingBall](images/RollingBall.JPG)
-
-"SingleCircle"
-
-![SingleCircle](images/SingleCircle.JPG)
-
-"SlicedCircle"
-
-![SlicedCircle](images/SlicedCircle.JPG)
-
-"ZoomingTarget"
-
-![ZoomingTarget](images/ZoomingTarget.JPG)
+![AnimationTypes](images/animationtypes.gif)

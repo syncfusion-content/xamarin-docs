@@ -108,7 +108,7 @@ private void TreeView_ItemHolding(object sender, ItemHoldingEventArgs e)
 
 You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/item-hold-treeview-xamarin)
 
-### To update the Runtime changes
+### Update the Runtime changes
 
 The [PropertyChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_PropertyChanged) event will be triggered whenever a properties in TreeViewNode is changed. You can get the name of the property that changed by using the `PropertyName` property of the `PropertyChangedEventArgs`.
 

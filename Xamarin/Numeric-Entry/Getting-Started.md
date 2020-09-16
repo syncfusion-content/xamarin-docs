@@ -302,10 +302,10 @@ N> The focused visual state is only available in Android and iOS platforms.
 ![SfNumericTextBox with normal visual state](images/NormalState.jpg)
 
 **Disabled visual state**
-![SfNumericTextBox with focused visual state](images/FocusState.jpg)
+![SfNumericTextBox with focused visual state](images/DisabledState.jpg)
 
 **Focused visual state**
-![SfNumericTextBox with disabled visual state](images/DisabledState.jpg)
+![SfNumericTextBox with disabled visual state](images/FocusState.jpg)
 
 ## See also
 

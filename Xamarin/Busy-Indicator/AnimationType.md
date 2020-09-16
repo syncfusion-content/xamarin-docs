@@ -24,12 +24,10 @@ The `AnimationType` property for the SfBusyIndicator allows the users to set one
              x:Class="GettingStarted.MainPage">
     <ContentPage.Content>
         <busyindicator:SfBusyIndicator x:Name="busyindicator" 
-                                       Title="Loading..."
+                                       Title="Ball"
                                        AnimationType="Ball" 
-                                       ViewBoxHeight="100"
-                                       ViewBoxWidth="100"
-                                       BackgroundColor="Blue"
-                                       TextColor="White"/>
+                                       BackgroundColor="LightGray"
+                                       TextColor="Blue"/>
     </ContentPage.Content>
 </ContentPage>
 
@@ -50,11 +48,9 @@ namespace GettingStarted
             SfBusyIndicator busyIndicator = new SfBusyIndicator()
             {
                 AnimationType = AnimationTypes.Ball,
-                ViewBoxWidth = 100,
-                ViewBoxHeight = 100,
-                Title = "Loading...",
-                BackgroundColor="Blue",
-                TextColor = Color.White
+                Title = "Ball",
+                BackgroundColor="LightGray",
+                TextColor = Color.Blue
             };
 
             this.Content = busyIndicator;

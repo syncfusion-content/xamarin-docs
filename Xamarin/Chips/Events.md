@@ -1,9 +1,9 @@
 ---
 layout : post
 title : Events for Syncfusion ChipGroup control in Xamarin.Forms
-description : Learn more about SfChipGroup events SelectionChanging and SelectionChanged
+description : This section describes the events in the Xamarin.Forms Syncfusion SfChipGroup Such as SelectionChanging and SelectionChanged
 platform : Xamarin.Forms
-control : Chips
+control : SfChip
 documentation : ug
 ---
 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Localization of Syncfusion.Xamarin.Forms Chart
-description: Set localized text for the labels in Xamarin.Forms Chart.
-platform: xamarin
-control: Chart
+description: How to set the localize text for the labels in Xamarin.Forms Syncfusion SfChart.
+platform: Xamarin.Forms
+control: SfChart
 documentation: ug
 ---
 

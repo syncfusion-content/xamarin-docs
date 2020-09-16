@@ -9,7 +9,7 @@ keywords: button, SfRadioButton, RadioButton
 
 ---
 
-# Event
+# Event of SfRadioButton
 
 ## StateChanged event
 

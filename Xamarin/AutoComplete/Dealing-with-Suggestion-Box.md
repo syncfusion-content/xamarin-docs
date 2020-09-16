@@ -565,7 +565,7 @@ namespace AutocompleteSample
 ## Retrieve the filter suggestion items
 
 There are two ways to get the filtered suggestion items from SfAutoComplete. 
-You can use the [`FilteredItems`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~FilteredItems.html)  API in SfAutoComplete to access filtered suggestions items.
+You can use the [`FilteredItems`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_FilteredItems)  API in SfAutoComplete to access filtered suggestions items.
 
 {% tabs %}
 
@@ -783,7 +783,7 @@ Create a `EmployeeViewModel` class with the `Employee` collection property, whic
 
 {% endtabs %}
 
-The other way to get a filtered suggestion item is an event called [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~FilterCollectionChanged_EV.html). This event is triggered when the SfAutoComplete suggestions have changed. You can get the filtered items from the [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~FilterCollectionChanged_EV.html) event value argument.
+The other way to get a filtered suggestion item is an event called [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html). This event is triggered when the SfAutoComplete suggestions have changed. You can get the filtered items from the [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html) event value argument.
 
 <table>
 <tr>
@@ -796,7 +796,7 @@ The other way to get a filtered suggestion item is an event called [`FilterColle
 </tr>
 </table>
 
-The following code snippet describes how to trigger an event called [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~FilterCollectionChanged_EV.html).
+The following code snippet describes how to trigger an event called [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html).
 
 {% tabs %}
 

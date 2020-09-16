@@ -9,7 +9,7 @@ documentation: ug
 
 # Visual States in Xamarin Button (SfButton)
 
-The button visual can be customized through `VisualStates`. The [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html) control have the following four visual states:
+The button visual can be customized through `VisualStates`. The [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html) control have the following four visual states:
 
 * Normal
 * Pressed
@@ -19,7 +19,7 @@ The button visual can be customized through `VisualStates`. The [`SfButton`](htt
 
 N>
 * In addition, `MouseOver` VisualState is available only in the UWP platform. 
-* The visual states `Checked` and `Unchecked` are only updated when enabling the [`IsChecked`](https://help.syncfusion.com/xamarin/button/gettingstarted#toggle-button) property in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfButton.html).
+* The visual states `Checked` and `Unchecked` are only updated when enabling the [`IsChecked`](https://help.syncfusion.com/xamarin/button/gettingstarted#toggle-button) property in [`SfButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html).
 
 {% tabs %}
 {% highlight xaml %}

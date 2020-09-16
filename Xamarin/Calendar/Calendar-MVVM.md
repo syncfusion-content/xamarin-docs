@@ -10,7 +10,7 @@ documentation: ug
 # Binding Properties in MVVM Pattern
 ## Binding SelectedDate
 
-Calendar supports selecting a date programmatically by binding the [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedDate.html) property from your view model.
+Calendar supports selecting a date programmatically by binding the [SelectedDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectedDate) property from your view model.
 
 {% tabs %}
 {% highlight c# %} 
@@ -43,11 +43,11 @@ public class MainViewModel
 {% endtabs %}
 
 >**NOTE**
-* You can bind the `SelectedDate` property only when the [SelectionMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html) is set to SingleSelection in calendar.
+* You can bind the `SelectedDate` property only when the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectionMode) is set to SingleSelection in calendar.
 
 ## Binding SelectedDates
 
-Calendar supports selecting dates programmatically by binding the [SelectedDates](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedDates.html) property from your view model with the `List<DateTime>` type.
+Calendar supports selecting dates programmatically by binding the [SelectedDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectedDates) property from your view model with the `List<DateTime>` type.
 
 {% tabs %}
 {% highlight c# %} 
@@ -87,8 +87,8 @@ public class MainViewModel
 >**NOTE**
 * You can bind the `SelectedDates` property only when `SelectionMode` is set to `MultiSelection` in calendar.
 
-## Binding SelectedRangeCalendar supports selecting a range of dates programmatically by binding the [SelectedRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedRange.html) property with [SelectionRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionRange.html) type from your view model.
-The calendar supports selecting a range of dates programmatically by binding the [SelectedRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedRange.html) property with the [SelectionRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionRange.html) type from your view model.
+## Binding SelectedRange
+The calendar supports selecting a range of dates programmatically by binding the [SelectedRange](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectedRange) property with the [SelectionRange](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html) type from your view model.
 
 {% tabs %}
 {% highlight c# %}
@@ -172,7 +172,7 @@ public class MainViewModel
  
 ### Tap command
  
-The [TapCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~TapCommand.html) will be triggered whenever tapping the calendar cell and passing the [CalendarTappedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs.html) as parameter.
+The [TapCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_TapCommand) will be triggered whenever tapping the calendar cell and passing the [CalendarTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.CalendarTappedEventArgs.html) as parameter.
 
 {% tabs %}
 {% highlight xaml %} 
@@ -211,7 +211,7 @@ public class CalendarViewModel
 
 ### Hold command
 
-The [HoldCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~HoldCommand.html) will be triggered whenever the calendar cell is long pressed and passing the [DayCellHoldingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.DayCellHoldingEventArgs.html) as parameter.
+The [HoldCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_HoldCommand) will be triggered whenever the calendar cell is long pressed and passing the [DayCellHoldingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.DayCellHoldingEventArgs.html) as parameter.
 
 {% tabs %}
 {% highlight xaml %} 
@@ -250,7 +250,7 @@ public class CalendarViewModel
 
 ### Month changed command
 
-The [MonthChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MonthChangedCommand.html) will be triggered whenever the navigating between month and Forward()/backward() is called in calendar and passing the [MonthChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthChangedEventArgs.html) as parameter.
+The [MonthChangedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MonthChangedCommand) will be triggered whenever the navigating between month and Forward()/backward() is called in calendar and passing the [MonthChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthChangedEventArgs.html) as parameter.
 
 {% tabs %}
 {% highlight xaml %} 
@@ -287,7 +287,7 @@ public class CalendarViewModel
 
 ### Selection changed command
 
-The [SelectionChangedCommand](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionChangedCommand.html) will be triggered whenever the selection is changed in calendar for the following selections and passing the [SelectionChangedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs.html) as parameter.
+The [SelectionChangedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectionChangedCommand) will be triggered whenever the selection is changed in calendar for the following selections and passing the [SelectionChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SelectionChangedEventArgs.html) as parameter.
 
 * SingleSelection - A single date can be selected in a month view which can be equipped when user needs to select one date at a time.
 * MultiSelection - More than one date can be selected.

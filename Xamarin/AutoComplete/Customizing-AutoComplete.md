@@ -15,7 +15,7 @@ AutoComplete provides user friendly customizing options for both entry part and 
 
 ## Customizing the Entry
 
-[`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~TextColor.html), [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~TextSize.html), [`FontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~FontAttributes.html), [`FontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~FontFamily.html) and [`BorderColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~BorderColor.html) are the properties used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
+[`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_TextColor), [`TextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_TextSize), [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_FontAttributes), [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_FontFamily) and [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_BorderColor) are the properties used to customize the foreground color, font size, font attribute, font family and border color of the entry part.
 
 {% tabs %}
 
@@ -83,7 +83,7 @@ namespace AutocompleteSample
 
 ## Custom Template for Suggestion Items
 
-[`ItemTemplate`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~ItemTemplate.html) property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
+[`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ItemTemplate) property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
 
 {% tabs %}
 
@@ -241,7 +241,7 @@ Following code contains the the ViewModel properties.
 
 ### Changing suggestion item height
 
-[`DropDownItemHeight`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~DropDownItemHeight.html) property is used to modify the height of suggestion items in drop down list. The code example is given below:
+[`DropDownItemHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownItemHeight) property is used to modify the height of suggestion items in drop down list. The code example is given below:
 
 {% tabs %}
 
@@ -326,7 +326,7 @@ namespace AutocompleteSample
 
 ### Changing suggestion box corner radius
 
-The [`DropDownCornerRadius`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~DropDownCornerRadius.html) property is used to modify the corner radius of suggestion box. The following code example demonstrates how to change the suggestion box corner radius. 
+The [`DropDownCornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownCornerRadius) property is used to modify the corner radius of suggestion box. The following code example demonstrates how to change the suggestion box corner radius. 
 
 {% tabs %}
 
@@ -411,7 +411,7 @@ namespace AutocompleteSample
 
 ### Changing suggestion box background color
 
-The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~DropDownBackgroundColor.html) property is used to modify the background color of suggestion box. The following code example demonstrates how to change the suggestion box background color. 
+The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownBackgroundColor) property is used to modify the background color of suggestion box. The following code example demonstrates how to change the suggestion box background color. 
 
 {% tabs %}
 
@@ -599,7 +599,7 @@ namespace AutocompleteSample
 
 ### Customizing suggestion items
 
-Suggestion box items can be customized using [`DropDownItemFontAttributes`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~DropDownItemFontAttributes.html), [`DropDownItemFontFamily`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~DropDownItemFontFamily.html), [`DropDownTextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~DropDownTextSize.html) and [`DropDownTextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~DropDownTextColor.html) properties.
+Suggestion box items can be customized using [`DropDownItemFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownItemFontAttributes), [`DropDownItemFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownItemFontFamily), [`DropDownTextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownTextSize) and [`DropDownTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DropDownTextColor) properties.
 
 {% tabs %}
 
@@ -686,7 +686,7 @@ namespace AutocompleteSample
 
 ### Show clear button
 
-The autocomplete provided the user to show or hide the clear button using [`ShowClearButton`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~ShowClearButton.html) property.
+The autocomplete provided the user to show or hide the clear button using [`ShowClearButton`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ShowClearButton) property.
 
 {% tabs %}
 
@@ -769,7 +769,7 @@ namespace AutocompleteSample
 
 ### Customizing clear button
 
-The user can customize the clear button color in the autocomplete using [`ClearButtonColor`]( https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~ClearButtonColor.html) Property.
+The user can customize the clear button color in the autocomplete using [`ClearButtonColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ClearButtonColor) Property.
 
 N> `ClearButtonColor` property is available only on iOS and Android platform.
 
@@ -854,7 +854,7 @@ namespace AutocompleteSample
 
 ### Changing border visibility
 
-The [`ShowBorder`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfAutoComplete.XForms~Syncfusion.SfAutoComplete.XForms.SfAutoComplete~ShowBorder.html) property is used to modify the visibility of border. The following code example demonstrates how to change the border visibility. 
+The [`ShowBorder`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ShowBorder) property is used to modify the visibility of border. The following code example demonstrates how to change the border visibility. 
 
 {% tabs %}
 

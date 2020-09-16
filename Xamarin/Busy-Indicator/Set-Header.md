@@ -66,7 +66,7 @@ namespace GettingStarted
 
 ## TextColor
 
-SfBusyIndicator provides options to change the color of the text. The color of the text can be changed using the [`TextColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBusyIndicator.XForms~Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator~TextColorProperty.html) property.
+SfBusyIndicator provides options to change the color of the text. The color of the text can be changed using the [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_TextColorProperty) property.
 
 {% tabs %}
 
@@ -122,7 +122,7 @@ namespace GettingStarted
 
 ## TextSize
 
-SfBusyIndicator provides options to change the size of the text. The size of the text can be changed using the [`TextSize`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfBusyIndicator.XForms~Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator~TextSizeProperty.html) property.
+SfBusyIndicator provides options to change the size of the text. The size of the text can be changed using the [`TextSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_TextSizeProperty) property.
 
 {% tabs %}
 
@@ -180,7 +180,7 @@ namespace GettingStarted
 
 ## TitlePlacement
 
-SfBusyIndicator provides options to set the `Title` at the top or bottom of the Busy Indicator. The `Title` can be set using the [`TitlePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms~Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator~TitlePlacementProperty.html) property. When the `Title` is not needed, set the `TitlePlacement` property of SfBusyIndicator to None.
+SfBusyIndicator provides options to set the `Title` at the top or bottom of the Busy Indicator. The `Title` can be set using the [`TitlePlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator.html#Syncfusion_SfBusyIndicator_XForms_SfBusyIndicator_TitlePlacementProperty) property. When the `Title` is not needed, set the `TitlePlacement` property of SfBusyIndicator to None.
 
 {% tabs %}
 

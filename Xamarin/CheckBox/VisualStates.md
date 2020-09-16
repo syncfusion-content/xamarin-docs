@@ -9,7 +9,7 @@ documentation: ug
 
 # Visual States for Xamarin.Forms CheckBox
 
-The visual of CheckBox can be customized using `VisualStates`. The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms~Syncfusion.XForms.Buttons.SfCheckBox.html) control contains the following three visual states:
+The visual of CheckBox can be customized using `VisualStates`. The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) control contains the following three visual states:
 
 * Checked
 * Unchecked

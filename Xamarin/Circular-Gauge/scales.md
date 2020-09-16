@@ -11,13 +11,13 @@ documentation: ug
 
 # Scales in SfCircularGauge
 
-The scales contain a collection of [`Scale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) elements, which integrates labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
+The scales contain a collection of [`Scale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html) elements, which integrates labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
 
 ## Scale
 
-[`Scale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html) contains the sub elements such as rim, ticks, labels, ranges, and pointers. It defines the radius, start angle, sweep direction, sweep angle, overall minimum and maximum values, frequency of labels, and tick marks. It will have multiple ranges.
+[`Scale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html) contains the sub elements such as rim, ticks, labels, ranges, and pointers. It defines the radius, start angle, sweep direction, sweep angle, overall minimum and maximum values, frequency of labels, and tick marks. It will have multiple ranges.
 
-A range is a visual element, which begins and ends at specified values within a [`Scale`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale.html). It will have one or more pointers to point out the values in scale.
+A range is a visual element, which begins and ends at specified values within a [`Scale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html). It will have one or more pointers to point out the values in scale.
 
 {% tabs %}
 
@@ -49,7 +49,7 @@ A range is a visual element, which begins and ends at specified values within a 
 
 ## Setting the start and end values for scale
 
-The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~StartValue.html) and [`EndValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~EndValue.html) properties allow, you to set the start and end values for scale.
+The [`StartValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_StartValue) and [`EndValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_EndValue) properties allow, you to set the start and end values for scale.
 
 {% tabs %}
 
@@ -84,7 +84,7 @@ The [`StartValue`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 ## Setting the start and sweep angles for scale
 
-The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~StartAngle.html) and [`SweepAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~SweepAngle.html) properties allow, you to set the start and end angles for scale.
+The [`StartAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_StartAngle) and [`SweepAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_SweepAngle) properties allow, you to set the start and end angles for scale.
 
 {% tabs %}
 
@@ -118,7 +118,7 @@ The [`StartAngle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.
 
 ## Setting an interval for scale
 
-The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~Interval.html) property allows you to set the interval for scale.
+The [`Interval`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_Interval) property allows you to set the interval for scale.
 
 {% tabs %}
 
@@ -154,7 +154,7 @@ The [`Interval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Sf
 
 ## Setting an auto interval for scale
 
-By default, the interval value is calculated by 10. By the [`EnableAutoInterval`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~EnableAutoInterval.html) property you can set an auto interval based on the start and end values.
+By default, the interval value is calculated by 10. By the [`EnableAutoInterval`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_EnableAutoInterval) property you can set an auto interval based on the start and end values.
 
 {% tabs %}
 
@@ -190,7 +190,7 @@ By default, the interval value is calculated by 10. By the [`EnableAutoInterval`
 
 ## Setting a scale direction for scale
 
-The [`Direction`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~Direction.html) property allows you to render the gauge scale in either clockwise or counterclockwise direction.
+The [`Direction`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_Direction) property allows you to render the gauge scale in either clockwise or counterclockwise direction.
 
 {% tabs %}
 
@@ -224,7 +224,7 @@ The [`Direction`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.S
 
 ## Setting the maximum labels
 
-The [`MaximumLabels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~MaximumLabels.html) property, defines the count of the scale labels in 100 pixels. By default, the count of maximum labels for 100 pixels is 3.
+The [`MaximumLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_MaximumLabels) property, defines the count of the scale labels in 100 pixels. By default, the count of maximum labels for 100 pixels is 3.
 
 {% tabs %}
 
@@ -258,7 +258,7 @@ Content = sfCircularGauge;
 
 ## Setting the multiple scales for scale
 
-It helps you to add multiple scales to the same circular gauge. You can customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.SfCircularGauge~Scales.html) collection.
+It helps you to add multiple scales to the same circular gauge. You can customize all the scales in a [`Scales`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html#Syncfusion_SfGauge_XForms_SfCircularGauge_Scales) collection.
 
 {% tabs %}
 
@@ -368,7 +368,7 @@ It helps you to add multiple scales to the same circular gauge. You can customiz
 
 ## Events
 
-You can change the default label by hooking the [`LabelCreated`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfGauge.XForms~Syncfusion.SfGauge.XForms.Scale~LabelCreated_EV.html) event. Based on your requirements, the labels can be changed using the `LabelContent` property of `LabelCreatedEventArgs`.
+You can change the default label by hooking the [`LabelCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html) event. Based on your requirements, the labels can be changed using the `LabelContent` property of `LabelCreatedEventArgs`.
 
 {% tabs %}
 

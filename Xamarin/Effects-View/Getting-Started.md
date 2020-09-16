@@ -7,7 +7,7 @@ control: SfEffectsView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin EffectsView  (SfEffectsView)
 
 This section explains the steps required to configure the SfEffectsView control.
 
@@ -103,7 +103,7 @@ Android platform does not require any additional configuration to render the SfE
 
 ## Initializing SfEffectsView
 
-Import the [`SfEffectsView`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Core.XForms~Syncfusion.XForms.EffectsView.SfEffectsView.html) control namespace in respective page as demonstrated in the following code sample.
+Import the [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) control namespace in respective page as demonstrated in the following code sample.
 
 {% tabs %} 
 
@@ -143,3 +143,5 @@ effectsView.CornerRadius = new Thickness(0, 25, 0, 25);
 {% endtabs %}
 
 ![EffectsView Initialization](Getting-Started_images/RippleEffect.gif)
+
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-started-of-SfEffectsView-in-Xamarin.Forms)

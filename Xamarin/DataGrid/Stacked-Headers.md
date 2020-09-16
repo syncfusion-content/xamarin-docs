@@ -9,16 +9,16 @@ documentation: UG
 
 # Stacked Headers in SfDataGrid
 
-The SfDataGrid supports displaying additional unbound, multiple/multilevel header rows known as [StackedHeaderRows](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~StackedHeaderRows.html) that spans across the DataGrid columns. You can group one or more columns under each stacked header.
+The SfDataGrid supports displaying additional unbound, multiple/multilevel header rows known as [StackedHeaderRows](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_StackedHeaderRows) that spans across the DataGrid columns. You can group one or more columns under each stacked header.
 
-Each [StackedHeaderRow](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.StackedHeaderRow.html) contains [StackedColumns](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.StackedHeaderRow~StackedColumns.html), which contains a number of child columns. The [StackedColumn.ChildColumns](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.StackedColumn~ChildColumns.html) property contains the columns grouped under the stacked header row. The [StackedColumn.MappingName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.StackedColumn~MappingName.html) is a unique name used for mapping a specific child column grouped under the same stacked header row, whereas the [StackedColumn.Text](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.StackedColumn~Text.html) contains the text displayed in the stacked header row.
+Each [StackedHeaderRow](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.StackedHeaderRow.html) contains [StackedColumns](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.StackedHeaderRow.html#Syncfusion_SfDataGrid_XForms_StackedHeaderRow_StackedColumns), which contains a number of child columns. The [StackedColumn.ChildColumns](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.StackedColumn.html#Syncfusion_SfDataGrid_XForms_StackedColumn_ChildColumns) property contains the columns grouped under the stacked header row. The [StackedColumn.MappingName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.StackedColumn.html#Syncfusion_SfDataGrid_XForms_StackedColumn_MappingName) is a unique name used for mapping a specific child column grouped under the same stacked header row, whereas the [StackedColumn.Text](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.StackedColumn.html#Syncfusion_SfDataGrid_XForms_StackedColumn_Text) contains the text displayed in the stacked header row.
 
 ### Adding stacked header
 
 The stacked headers can be added using the following steps:
 
 1. Create an object of `StackedHeaderRow` for adding stacked columns.
-2. Add the columns using the `ChildColumns` property of [StackedColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.StackedColumn.html).
+2. Add the columns using the `ChildColumns` property of [StackedColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.StackedColumn.html).
 3. Add the `StackedColumn` to `StackedColumns` collection.
 4. Finally, add the `StackedHeaderRow` to `StackedHeaderRows` collection of the SfDataGrid. 
 
@@ -131,7 +131,7 @@ dataGrid.StackedHeaderRows[0].StackedColumns[0].ChildColumns = childColumns;
 
 ## Changing stacked header row height
 
-You can change the height of StackedHeaderRows using the [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~HeaderRowHeight.html) property.
+You can change the height of StackedHeaderRows using the [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_HeaderRowHeight) property.
 
 {% tabs %}
 {% highlight c# %}
@@ -139,7 +139,7 @@ dataGrid.HeaderRowHeight = 50;
 {% endhighlight %}
 {% endtabs %}
 
-You can also change the height of stacked header rows using the [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryRowHeight_EV.html) event.
+You can also change the height of stacked header rows using the [SfDataGrid.QueryRowHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -162,7 +162,7 @@ void dataGrid_QueryRowHeight(object sender, QueryRowHeightEventArgs  e)
 
 ### Font customization
 
-Customize the font's size, family and attribute of the text displayed in stacked header column using the [StackedColumn.TextSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.StackedColumn~TextSize.html), [StackedColumn.Font](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.StackedColumn~Font.html), and [StackedColumn.FontAttribute](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.StackedColumn~FontAttribute.html) properties, respectively. The default font size and font attribute are 14 and normal, respectively.
+Customize the font's size, family and attribute of the text displayed in stacked header column using the [StackedColumn.TextSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.StackedColumn.html#Syncfusion_SfDataGrid_XForms_StackedColumn_TextSize), [StackedColumn.Font](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.StackedColumn.html#Syncfusion_SfDataGrid_XForms_StackedColumn_Font), and [StackedColumn.FontAttribute](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.StackedColumn.html#Syncfusion_SfDataGrid_XForms_StackedColumn_FontAttribute) properties, respectively. The default font size and font attribute are 14 and normal, respectively.
 
 {% tabs %}
 {% highlight xaml %}
@@ -196,7 +196,7 @@ dataGrid.StackedHeaderRows.Add(stackedHeaderRow);
 
 ###	Foreground and background customization
 
-The appearance of stacked header row can be customized by returning a desired color in the [GetStackedHeaderBackgroundColor()](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetStackedHeaderBackgroundColor.html) and [GetStackedHeaderForegroundColor()](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle~GetStackedHeaderForegroundColor.html) overrides of the  custom written style class derived from [DataGridStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.DataGridStyle.html) and assigning it to the `SfDataGrid.GridStyle` property. 
+The appearance of stacked header row can be customized by returning a desired color in the [GetStackedHeaderBackgroundColor()](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataGridStyle.html#Syncfusion_SfDataGrid_XForms_DataGridStyle_GetStackedHeaderBackgroundColor_System_Int32_) and [GetStackedHeaderForegroundColor()](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataGridStyle.html#Syncfusion_SfDataGrid_XForms_DataGridStyle_GetStackedHeaderForegroundColor_System_Int32_) overrides of the  custom written style class derived from [DataGridStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataGridStyle.html) and assigning it to the `SfDataGrid.GridStyle` property. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -288,7 +288,7 @@ public class Dark : DataGridStyle
 
 ## Loading template in stacked column
 
-The SfDataGrid allows you to load any desired view inside a [StackedColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.StackedColumn.html) using the [StackedColumn.Template](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.StackedColumn~Template.html) property.
+The SfDataGrid allows you to load any desired view inside a [StackedColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.StackedColumn.html) using the [StackedColumn.Template](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.StackedColumn.html#Syncfusion_SfDataGrid_XForms_StackedColumn_Template) property.
 
 {% tabs %}
 {% highlight xaml %}

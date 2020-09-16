@@ -9,7 +9,7 @@ documentation: ug
 
 # Levels
 
-The sunburst chart is used to display hierarchical data. More than one hierarchical data can be added to the [`Levels`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~Levels.html) collection of the sunburst chart. Each level of the hierarchy is represented by a circle.
+The sunburst chart is used to display hierarchical data. More than one hierarchical data can be added to the [`Levels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html#Syncfusion_SfSunburstChart_XForms_SfSunburstChart_Levels) collection of the sunburst chart. Each level of the hierarchy is represented by a circle.
 
 The following code shows how to add hierarchical levels in the Levels collection.
 
@@ -35,7 +35,7 @@ The following code shows how to add hierarchical levels in the Levels collection
 
 ## Group member path
 
-The [`GroupMemberPath`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel~GroupMemberPath.html) is a string property that is used to map the group category value in the sunburst [`ItemsSource`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSunburstChart.XForms~Syncfusion.SfSunburstChart.XForms.SfSunburstChart~ItemsSource.html).
+The [`GroupMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstHierarchicalLevel.html#Syncfusion_SfSunburstChart_XForms_SunburstHierarchicalLevel_GroupMemberPath) is a string property that is used to map the group category value in the sunburst [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html#Syncfusion_SfSunburstChart_XForms_SfSunburstChart_ItemsSource).
 
 The following code shows how to map the group member path.
 

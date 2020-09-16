@@ -11,7 +11,7 @@ documentation: ug
 
 ## How to Perform an Operation while a Calendar Cell is Tapped?
 
-We can perform operation while the Calendar cell is Tapped using [CalendarTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnCalendarTapped_EV.html) event. CalendarTapped event returns the date selected and the Appointments that are associated with the date selected.
+We can perform operation while the Calendar cell is Tapped using [CalendarTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html) event. CalendarTapped event returns the date selected and the Appointments that are associated with the date selected.
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ void Handle_OnCalendarTapped(object sender, CalendarTappedEventArgs e)
 
 ## How to get the selected date range from the calendar?
 
-We can perform an operation when the selected date get changed using [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionChanged_EV.html) event which returns the dates selected and dates deselected from the `SfCalendar`.
+We can perform an operation when the selected date get changed using [SelectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html) event which returns the dates selected and dates deselected from the `SfCalendar`.
 
 <table>
 <tr>
@@ -106,7 +106,7 @@ void Handle_SelectionChanged(object sender, SelectionChangedEventArgs e)
 
 ## How to Perform an Operation when Navigate to Next Month?
 
-User defined operation can be performed using [MonthChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MonthChanged_EV.html) event when navigating to next month. This event returns the details about current value and previous value of month.
+User defined operation can be performed using [MonthChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html) event when navigating to next month. This event returns the details about current value and previous value of month.
 
 <table>
 <tr>
@@ -147,7 +147,7 @@ void Handle_MonthChanged(object sender, MonthChangedEventArgs e)
 
 ## How to Perform an Operation while Dealing with Appointments?
 
-[InlineToggled](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~InlineToggled_EV.html) event returns the selected date along with the appointments it carries. Using this event user can perform operation while dealing with appointments.
+[InlineToggled](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html) event returns the selected date along with the appointments it carries. Using this event user can perform operation while dealing with appointments.
 
 <table>
 <tr>
@@ -192,7 +192,7 @@ void Handle_InlineToggled(object sender, InlineToggledEventArgs e)
 
 ## How to Customize Cell or Month View?
 
-[OnMonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnMonthCellLoaded_EV.html) event allows us to customize `SfCalendar` control. It returns MonthCell args
+[OnMonthCellLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html) event allows us to customize `SfCalendar` control. It returns MonthCell args
 
 <table>
 <tr>
@@ -252,7 +252,7 @@ private void Calendar_OnMonthCellLoaded(object sender, MonthCellLoadedEventArgs 
 
 ## How to customize month view cell using a template?
 
-You can customize the month cell of the `SfCalendar` using [CellTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellTemplate.html) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
+You can customize the month cell of the `SfCalendar` using [CellTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthViewSettings.html#Syncfusion_SfCalendar_XForms_MonthViewSettings_CellTemplate) property of [MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthViewSettings.html).
 
 {% tabs %}
 
@@ -302,7 +302,7 @@ xmlns:calendar="clr-namespace:Syncfusion.SfCalendar.XForms;assembly=Syncfusion.S
 
 ## How to Perform the Operation while long pressing the dateCell?
 
-[OnDateCellHolding](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnDateCellHolding_EV.html) event returns the long pressed date along with the `SfCalendar` it carries. Using this event user can perform operation while long pressing the date.
+[OnDateCellHolding](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html) event returns the long pressed date along with the `SfCalendar` it carries. Using this event user can perform operation while long pressing the date.
 
 
 <table>
@@ -349,7 +349,7 @@ calendar.HeightRequest = 200;
 
 ## How to Customize the SfCalendar Header?
 
-[HeaderView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~HeaderView.html) property of SfCalendar allows us to customize `SfCalendar` Header. It returns custom view for SfCalendarHeader
+[HeaderView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_HeaderView) property of SfCalendar allows us to customize `SfCalendar` Header. It returns custom view for SfCalendarHeader
 
 <table>
 <tr>
@@ -380,7 +380,7 @@ calendar.HeightRequest = 200;
 
 ## How to enable or disable the YearView in SfCalendar?
 
-[ShowYearView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowYearView.html) property of `SfCalendar` allows us to enable and disable the  YearView of `SfCalendar`. The default value of ShowYearView is true.
+[ShowYearView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_ShowYearView) property of `SfCalendar` allows us to enable and disable the  YearView of `SfCalendar`. The default value of ShowYearView is true.
 
 <table>
 <tr>
@@ -405,7 +405,7 @@ calendar.HeightRequest = 200;
 
 ## How to enable or disable the Horizontal and Vertical cell grid lines in SfCalendar?
 
-[CellGridOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellGridOptions.html) property of MonthViewSettings allows us to enable and disable the horizontal and vertical border lines of `SfCalendar`. 
+[CellGridOptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthViewSettings.html#Syncfusion_SfCalendar_XForms_MonthViewSettings_CellGridOptions) property of MonthViewSettings allows us to enable and disable the horizontal and vertical border lines of `SfCalendar`. 
 
 <table>
 <tr>
@@ -452,7 +452,7 @@ calendar.HeightRequest = 200;
 ![CellGridOptions support support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-gridlines.png)
 
 ## Customize the year cell or year view
-You can customize the year cell of the `SfCalendar` control using the [OnYearCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnYearCellLoaded_EV.html) event, which returns `YearCellLoadedEventArgs`. The [YearCellLoadedEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCellLoadedEventArgs.html) has the following properties to customize the year view: [BackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~BackgroundColor.html), [Font](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~Font.html), [FontFamily](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~FontAttribute.html), [Month](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~Month.html), [MonthHeaderBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~MonthHeaderBackgroundColor.html), [MonthHeaderTextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~MonthHeaderTextColor.html), [MonthLayoutBackgroundColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~MonthLayoutBackgroundColor.html), [TextColor](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~TextColor.html), and [View](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.YearCell~View.html).
+You can customize the year cell of the `SfCalendar` control using the [OnYearCellLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html) event, which returns `YearCellLoadedEventArgs`. The [YearCellLoadedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.YearCellLoadedEventArgs.html) has the following properties to customize the year view: [BackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.YearCell.html#Syncfusion_SfCalendar_XForms_YearCell_BackgroundColor), [Font](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.YearCell.html#Syncfusion_SfCalendar_XForms_YearCell_Font), [FontFamily](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.YearCell.html#Syncfusion_SfCalendar_XForms_YearCell_FontAttribute), [Month](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.YearCell.html#Syncfusion_SfCalendar_XForms_YearCell_Month), [MonthHeaderBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.YearCell.html#Syncfusion_SfCalendar_XForms_YearCell_MonthHeaderBackgroundColor), [MonthHeaderTextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.YearCell.html#Syncfusion_SfCalendar_XForms_YearCell_MonthHeaderTextColor), [MonthLayoutBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.YearCell.html#Syncfusion_SfCalendar_XForms_YearCell_MonthLayoutBackgroundColor), [TextColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.YearCell.html#Syncfusion_SfCalendar_XForms_YearCell_TextColor), and [View](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.YearCell.html#Syncfusion_SfCalendar_XForms_YearCell_View).
 
 {% tabs %}
 {% highlight c# %}
@@ -486,7 +486,7 @@ private void Calendar_OnYearCellLoaded(object sender, YearCellLoadedEventArgs e)
 
 
 ## Deselect today selection on initial load
-Initially, the calendar is loaded with the current day as selected date in `MonthView` when the SelectionMode is set to SingleSelection, but you can deselect the date on initial loading in `SfCalendar` by set the [SelectedDate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedDate.html) property as null.
+Initially, the calendar is loaded with the current day as selected date in `MonthView` when the SelectionMode is set to SingleSelection, but you can deselect the date on initial loading in `SfCalendar` by set the [SelectedDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectedDate) property as null.
 
 {% tabs %}
 {% highlight c# %}
@@ -497,7 +497,7 @@ calendar.SelectedDate = null;
 
 ## How to perform an operation when navigating to next month?
 
-User-defined operation can be performed using the [MonthChanging](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MonthChanging_EV_.html) event when navigating to the next month. This event returns the details about the current value and the previous value of the month using the property of [MonthChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthChangingEventArgs.html) .
+User-defined operation can be performed using the [MonthChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html) event when navigating to the next month. This event returns the details about the current value and the previous value of the month using the property of [MonthChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthChangingEventArgs.html) .
 
 <table>
 <tr>
@@ -538,7 +538,7 @@ void Calendar_MonthChanging(object sender, MonthChangingEventArgs e)
 
 ## How to perform an operation when changing the ViewMode?
 
-User-Defined Operation can be performed using the [OnViewModeChanged](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnViewModeChanged.html) event when changing the `ViewMode`. This event returns the details about the different ViewMode of the `Calendar` using the Property of [ViewModeChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.ViewModeChangedEventArgs.html).
+User-Defined Operation can be performed using the [OnViewModeChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_OnViewModeChanged) event when changing the `ViewMode`. This event returns the details about the different ViewMode of the `Calendar` using the Property of [ViewModeChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.ViewModeChangedEventArgs.html).
 <table>
 <tr>
 <th>Members</th>
@@ -576,7 +576,7 @@ void Handle_OnViewModeChanged(object sender, ViewModeChangedArgs e)
 
 ## How to perform an operation when InlineAppointments are loaded ? 
 
-The [OnInlineLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnInlineLoaded.html) event returns the selected date along with the inline Appointments it holds. Using this you can perform an operation related to Appointments in the Property of [InlineEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.InlineEventArgs.html) .
+The [OnInlineLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_OnInlineLoaded) event returns the selected date along with the inline Appointments it holds. Using this you can perform an operation related to Appointments in the Property of [InlineEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.InlineEventArgs.html) .
 
 <table>
 <tr>
@@ -612,7 +612,7 @@ void Handle_OnInlineLoaded(object sender, InlineEventArgs e)
 
 ## How to customize the calendar header using the OnHeaderLoaded event ?
 
-The [OnHeaderLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/sfcalendar/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnHeaderLoaded.html) event allows you to customize the HeaderView using the view Property of [CalendarHeaderEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.CalendarHeaderEventArgs.html).
+The [OnHeaderLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_OnHeaderLoaded) event allows you to customize the HeaderView using the view Property of [CalendarHeaderEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.CalendarHeaderEventArgs.html).
 <table>
 <tr>
 <th>Members</th>

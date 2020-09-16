@@ -19,34 +19,34 @@ Following are the list of options available to show SfPopupLayout at various pos
 <th> Description </th>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_IsOpen)'| markdownify }} </td>
 <td> Shows the `SfPopupLayout` at center.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.Show](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.Show](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_Show_System_Boolean_)'| markdownify }} </td>
 <td> Similar as <code>SfPopupLayout.IsOpen</code> property.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.Show(x-position, y-position)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_Show_System_Boolean_)'| markdownify }} </td>
 <td> Shows the `SfPopupLayout` at the specified X and y positions.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.ShowAtTouchPoint()](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_ShowAtTouchPoint)'| markdownify }} </td>
 <td> Shows the `SfPopupLayout` at the touch point.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowRelativeToView.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_ShowRelativeToView_Xamarin_Forms_View_Syncfusion_XForms_PopupLayout_RelativePosition_System_Double_System_Double_)'| markdownify }} </td>
 <td> Shows the `SfPopupLayout` at the position relative to the specified view.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowRelativeToView.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.ShowRelativeToView(View, RelativePosition,x-position,y-position)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_ShowRelativeToView_Xamarin_Forms_View_Syncfusion_XForms_PopupLayout_RelativePosition_System_Double_System_Double_)'| markdownify }} </td>
 <td> Shows the `SfPopupLayout` at an absolute x, y coordinate from the relative position of the specified view.</td>
 </tr>
 <tr>
-<td> {{'[SfPopupLayout.PopupView.IsFullScreen](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.PopupView~IsFullScreen.html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.PopupView.IsFullScreen](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupView.html#Syncfusion_XForms_PopupLayout_PopupView_IsFullScreen)'| markdownify }} </td>
 <td> Shows the `SfPopupLayout` in full width and height of the screen.</td>
 </tr>
-<td> {{'[SfPopupLayout.Show(bool)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show(Boolean).html)'| markdownify }} </td>
+<td> {{'[SfPopupLayout.Show(bool)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_Show_System_Boolean_)'| markdownify }} </td>
 <td> Similar as <code>SfPopupLayout.PopupView.IsFullScreen</code> property. </td>
 </tr>
 </table>
@@ -55,8 +55,8 @@ Following are the list of options available to show SfPopupLayout at various pos
 
 SfPopupLayout can be shown at the center by using the following options.
 
-  * [IsOpen property](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~IsOpen.html)
-  * [SfPopupLayout.Show](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html)
+  * [IsOpen property](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_IsOpen)
+  * [SfPopupLayout.Show](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_Show_System_Boolean_)
 
 To open the SfPopupLayout, use the `SfPopupLayout.IsOpen` property as in the following code sample.
 
@@ -105,7 +105,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ![Popup with center positioning](GettingStarted_images/IsOpen_Property.png)
 
-To open the SfPopupLayout, use the [SfPopupLayout.Show](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show.html) method as in the following code sample.
+To open the SfPopupLayout, use the [SfPopupLayout.Show](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_Show_System_Boolean_) method as in the following code sample.
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -203,7 +203,7 @@ Executing the above codes renders the following output in iOS, Android and Windo
 
 ## Position popup at touch point
 
-To open the SfPopupLayout from the touch point in the screen, use the [SfPopupLayout.ShowAtTouchPoint](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~ShowAtTouchPoint.html) method as in the following code sample.
+To open the SfPopupLayout from the touch point in the screen, use the [SfPopupLayout.ShowAtTouchPoint](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_ShowAtTouchPoint) method as in the following code sample.
 
 {% highlight xaml %}
 <?xml version="1.0" encoding="utf-8" ?>
@@ -455,7 +455,7 @@ Executing the above codes renders the following output in Android device respect
 
 ## Display the popup with Padding
 
-The SfPopupLayout allows users to set padding for the PopupView when the space between the popup and the screen is less than the minimum padding value of 5 pixels. The custom padding value set in the sample will not apply when the space between the popup and the screen is already greater than 5 pixels. For cases where you want to position your popup farther away from the screen use the [SfPopupLayout.Show(double,double)](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfPopupLayout.XForms~Syncfusion.XForms.PopupLayout.SfPopupLayout~Show(Double,Double).html) as shown [here](https://help.syncfusion.com/xamarin/sfpopuplayout/popup-positioning#absolute-positioning).
+The SfPopupLayout allows users to set padding for the PopupView when the space between the popup and the screen is less than the minimum padding value of 5 pixels. The custom padding value set in the sample will not apply when the space between the popup and the screen is already greater than 5 pixels. For cases where you want to position your popup farther away from the screen use the [SfPopupLayout.Show(double,double)](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_Show_System_Double_System_Double_) as shown [here](https://help.syncfusion.com/xamarin/sfpopuplayout/popup-positioning#absolute-positioning).
 
 {% tabs %}
 {% highlight xaml %}

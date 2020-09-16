@@ -129,7 +129,7 @@ To keep unique `AutomationId`, these inner elements’ AutomationIds are updated
 ![Century view AutomationId support in Xamarin.Forms Calendar](images/xamarin.forms-calendar-century-view.png)
 
 ## Keyboard
-`SfCalendar` supports selection in `MonthView` using keyboard interactions. Keyboard interaction will not have any effect when the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectionMode.html) is set to `SelectionMode.MultiRangeSelection`.
+`SfCalendar` supports selection in `MonthView` using keyboard interactions. Keyboard interaction will not have any effect when the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectionMode) is set to `SelectionMode.MultiRangeSelection`.
 
 >**NOTE**
 Keyboard interaction is applicable only for UWP platform.

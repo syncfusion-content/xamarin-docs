@@ -426,7 +426,7 @@ You can find the complete Load More sample from this [link.](http://www.syncfusi
 
 ## LoadMore method
 
-To load more items programmatically, LoadMore method can be called which loads the items dynamically to the UI based on the [`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms~Syncfusion.SfCarousel.XForms.SfCarousel~LoadMoreItemsCount.html) API value.
+To load more items programmatically, LoadMore method can be called which loads the items dynamically to the UI based on the [`LoadMoreItemsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCarousel.XForms.SfCarousel.html#Syncfusion_SfCarousel_XForms_SfCarousel_LoadMoreItemsCount) API value.
 
 {% tabs %}
 

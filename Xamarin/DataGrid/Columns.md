@@ -16,7 +16,7 @@ The SfDatagrid allows to create and add columns in the following two ways:
 
 ## Automatic columns generation
 
-The SfDataGrid creates columns automatically based on the bindable property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumns.html).Columns are generated based on type of individual properties in the underlying collection which is set as ItemsSource. For example, [GridNumericColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn.html) is added for int type property. Below table shows the column type created for the respective data type. For remaining types, [GridTextColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTextColumn.html) will be created. 
+The SfDataGrid creates columns automatically based on the bindable property [SfDataGrid.AutoGenerateColumns](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumns.html).Columns are generated based on type of individual properties in the underlying collection which is set as ItemsSource. For example, [GridNumericColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridNumericColumn.html) is added for int type property. Below table shows the column type created for the respective data type. For remaining types, [GridTextColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridTextColumn.html) will be created. 
 
 <table>
 <tr>
@@ -94,8 +94,8 @@ N> When you change items source for the SfDatagrid during run time, then the col
 
 ### Auto generate columns for custom type
 
-By default columns are also auto generated for custom type properties and for parent properties of complex properties in the data object. To prevent such columns from being auto generated set the [SfDataGrid.AutoGenerateColumnsForCustomType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumnsForCustomType.html) property as `False`.
-In case of complex properties, use the [SfDataGrid.AutoGenerateColumnsModeForCustomType](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoGenerateColumnsModeForCustomType.html) to auto generate columns for either parent property, inner properties of the parent or both parent and inner properties.
+By default columns are also auto generated for custom type properties and for parent properties of complex properties in the data object. To prevent such columns from being auto generated set the [SfDataGrid.AutoGenerateColumnsForCustomType](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AutoGenerateColumnsForCustomType) property as `False`.
+In case of complex properties, use the [SfDataGrid.AutoGenerateColumnsModeForCustomType](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AutoGenerateColumnsModeForCustomType) to auto generate columns for either parent property, inner properties of the parent or both parent and inner properties.
 
 {% tabs %}
 {% highlight xaml %}
@@ -220,9 +220,9 @@ dataGrid.Columns.Add (countryColumn);
 
 ## Resizing columns
 
-The SfDataGrid allows to resize the columns by tapping and dragging the right border of the column headers. Resizing can be enabled or disabled by setting the [SfDataGrid.AllowResizingColumn](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowResizingColumn.html) property. A resizing indicator is displayed while resizing a column.
+The SfDataGrid allows to resize the columns by tapping and dragging the right border of the column headers. Resizing can be enabled or disabled by setting the [SfDataGrid.AllowResizingColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AllowResizingColumn) property. A resizing indicator is displayed while resizing a column.
 
-N> Resizing considers [GridColumn.MinimumWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MinimumWidth.html) and [GridColumn.MaximumWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~MaximumWidth.html) of the column and will not resize the minimum and maximum width constraints.
+N> Resizing considers [GridColumn.MinimumWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_MinimumWidth) and [GridColumn.MaximumWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_MaximumWidth) of the column and will not resize the minimum and maximum width constraints.
 
 {% tabs %}
 {% highlight xaml %}
@@ -247,7 +247,7 @@ To interactively hide a column, set the `GridColumn.MinimumWidth` property to ze
 
 ### Resizing modes
 
-The SfDataGrid allows two modes of resizing by setting the [SfDataGrid.ResizingMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ResizingMode.html) property. The resizing modes are as follows:
+The SfDataGrid allows two modes of resizing by setting the [SfDataGrid.ResizingMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ResizingMode) property. The resizing modes are as follows:
 
  * OnMoved: The resizing indicator is moved based on the touch point. The width of the column is updated as the resizing indicator moves.
  * OnTouchUp: The resizing indicator is moved based on the touch point. However the width of the column is updated only on a touch up operation.
@@ -262,15 +262,15 @@ The following image shows resizing mode OnTouchUp:
 
 ### Resizing events
 
-Based on the requirement resizing operation can be handled using the [SfDataGrid.ColumnResizing](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ColumnResizing_EV.html) event. The `SfDataGrid.ColumnResizing` event is fired while resizing a column. It will be continuously fired till the resizing operation ends.
+Based on the requirement resizing operation can be handled using the [SfDataGrid.ColumnResizing](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event. The `SfDataGrid.ColumnResizing` event is fired while resizing a column. It will be continuously fired till the resizing operation ends.
 
 By handling the `SfDataGrid.ColumnResizing` event, the resizing of a particular column can be canceled.
 
-The `SfDataGrid.ColumnResizing` event provides the following properties through [GridResizingEventArgs](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridResizingEventArgs.html).
+The `SfDataGrid.ColumnResizing` event provides the following properties through [GridResizingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridResizingEventArgs.html).
 
-* [Index](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridResizingEventArgs~Index.html) - Returns the index of the column currently being resized.
-* [NewValue](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridResizingEventArgs~NewValue.html) - Returns the current width of the column being resized.
-* [ResizingState](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridResizingEventArgs~ResizingState.html) - Returns the current state of the user-interaction through a value from the ProgressStates enum.
+* [Index](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridResizingEventArgs.html#Syncfusion_SfDataGrid_XForms_GridResizingEventArgs_Index) - Returns the index of the column currently being resized.
+* [NewValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridResizingEventArgs.html#Syncfusion_SfDataGrid_XForms_GridResizingEventArgs_NewValue) - Returns the current width of the column being resized.
+* [ResizingState](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridResizingEventArgs.html#Syncfusion_SfDataGrid_XForms_GridResizingEventArgs_ResizingState) - Returns the current state of the user-interaction through a value from the ProgressStates enum.
 * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) - A Boolean property to cancel the event and the resizing operation. 
 
 

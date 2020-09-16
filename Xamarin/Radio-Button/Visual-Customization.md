@@ -132,6 +132,3 @@ N>`ControlSize` is not applicable for Android Platform.
 
 [How to wrap text in Xamarin.Forms radio button (SfRadioButton)](https://www.syncfusion.com/kb/11871/how-to-wrap-text-in-xamarin-forms-radiobutton)
 
-[How to notify the selection changes in Xamarin.Forms radio button (SfRadioButton)](https://www.syncfusion.com/kb/11037/how-to-notify-the-selection-changes-in-xamarin-forms-radiobutton-sfradiobutton)
- 
-[How to get the selected Xamarin.Forms radio button (SfRadioButton)](https://www.syncfusion.com/kb/10914/how-to-get-the-selected-xamarin-forms-radiobutton)

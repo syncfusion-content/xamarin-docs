@@ -40,3 +40,7 @@ The following code example shows how to customize the padding of chart.
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to remove the default padding of Xamarin.Forms Chart](https://www.syncfusion.com/kb/9606/how-to-remove-the-default-padding-of-xamarin-forms-chart)

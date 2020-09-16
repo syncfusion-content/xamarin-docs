@@ -455,4 +455,3 @@ series.Animate();
 [How to show indicator when loading the large number of data points to series in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10680/how-to-show-indicator-when-loading-the-large-number-of-data-points-to-series-in-xamarin)
 
 [How to increase or decrease the width of Column series](https://www.syncfusion.com/kb/5104/how-to-increase-or-decrease-the-width-of-column-series)
-

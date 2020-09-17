@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Types of Syncfusion ChipGroup control for Xamarin.Forms
-description: This section describes about the available types of chips in Syncfusion Xamarin.Forms SfChipGroup.
+description: This section describes about the available types of chips and its behavior in Syncfusion Xamarin.Forms SfChipGroup.
 platform: Xamarin.Forms
 control: Chips
 documentation: ug

@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Getting Started with Syncfusion Chips Control for Xamarin.Forms
-description : A quick tour to initial users on Syncfusion chips control for Xamarin.Forms platform and explains the types of chip group.
-platform : Xamarin.Forms
-control : SfChip
-documentation : ug
+layout: post
+title: Getting Started with Syncfusion Chips Control for Xamarin.Forms
+description: A quick tour to initial users on Syncfusion chips control for Xamarin.Forms platform and explains the types of chip group.
+platform: Xamarin.Forms
+control: Chips
+documentation: ug
 ---
 
 # Getting started with the Syncfusion chips

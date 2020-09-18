@@ -1,13 +1,14 @@
 ---
 layout: post
 title:  Exporting options in Essential Syncfusion.Xamarin.Forms Chart 
-description: How to export the Chart as an image
+description: This section describes how to export the Chart as an image and get the stream of Syncfusion.Xamarin.Forms Chart.
+
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Exporting
+# Exporting in Xamarin Charts (SfChart)
 
 ## Export as an image
 
@@ -77,3 +78,10 @@ var stream = await chart.GetStreamAsync();
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to export the Chart to the PDF document in Xamarin.Forms](https://www.syncfusion.com/kb/9404/how-to-export-the-chart-to-the-pdf-document-in-xamarin-forms)
+
+[How to apply the PDF document size to Xamarin.Forms Chart](https://www.syncfusion.com/kb/8705/how-to-apply-the-pdf-document-size-to-xamarin-forms-chart)
+

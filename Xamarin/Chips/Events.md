@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Events for Syncfusion ChipGroup control in Xamarin.Forms
-description : Learn more about SfChipGroup events SelectionChanging and SelectionChanged
-platform : xamarin
-control : Chips
-documentation : ug
+layout: post
+title: Events for Syncfusion ChipGroup control in Xamarin.Forms
+description: This section describes the events in the Xamarin.Forms Syncfusion SfChipGroup Such as SelectionChanging and SelectionChanged
+platform: Xamarin.Forms
+control: Chips
+documentation: ug
 ---
 
-# Event
+# Event of SfChipGroup
 
 ## SelectionChanging Event
 The [SelectionChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms.SfChip.SelectionChangingEventArgs.html) event is triggered before the Chip is selected. You can restrict a chip from being selected, by canceling this event, by setting Cancel property in the event argument to true. The argument contains the following information,
@@ -28,3 +28,8 @@ The [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfus
 N>  Currently, `Choice` and `Filter` types are only supported for [SelectionChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms.SfChip.SelectionChangingEventArgs.html) and [SelectionChanged](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Buttons.XForms~Syncfusion.Buttons.XForms.SfChip.SelectionChangedEventArgs.html
 ) events.
 
+## See also
+
+[How to remove the indicator icon from Xamarin.Forms chip group (SfChipGroup)](https://www.syncfusion.com/kb/11270/how-to-remove-the-indicator-icon-from-xamarin-forms-chip-group-sfchipgroup)
+
+[How to restrict chip selection in Xamarin](https://www.syncfusion.com/kb/11205/how-to-restrict-chip-selection-in-xamarin)

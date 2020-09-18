@@ -133,7 +133,7 @@ private void Treeviewnode_PropertyChanged(object sender, PropertyChangedEventArg
 
 You can refresh the TreeViewNode from the root node and update all layout by using the [SetDirty](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_SetDirty) method that notifies the tree view layout mechanism to invalidate nodes.
 
-{% endhighlight %}
+{% tabs %}
 {% highlight c# %}
 node.SetDirty();
 {% endhighlight %}

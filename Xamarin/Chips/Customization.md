@@ -2606,3 +2606,15 @@ namespace ChipCustomization
 ![SfChipGroup with ChipImageWidth](images/customization-images/chipgroup_chipimagewidth_image.png)
 
 N> The default value of ChipImageWidth is [`26`].
+
+## See also
+
+[How to customize the corner radius of ChipGroup items in Xamarin.Forms](https://www.syncfusion.com/kb/11282/how-to-customize-the-corner-radius-of-chipgroup-items-in-xamarin-forms)
+
+[How to remove the indicator icon from Xamarin.Forms chip group (SfChipGroup)](https://www.syncfusion.com/kb/11270/how-to-remove-the-indicator-icon-from-xamarin-forms-chip-group-sfchipgroup)
+
+[How to restrict chip selection in Xamarin](https://www.syncfusion.com/kb/11205/how-to-restrict-chip-selection-in-xamarin)
+
+[How to select a multiple chips from the Xamarin ChipGroup [SfChipGroup]](https://www.syncfusion.com/kb/11155/how-to-select-a-multiple-chips-from-the-xamarin-chipgroup-sfchipgroup)
+
+[How to display each chip in different colors in the Xamarin.Forms ChipGroup](https://www.syncfusion.com/kb/10940/how-to-display-each-chip-in-different-colors-in-the-xamarin-forms-chipgroup)

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Syncfusion.Xamarin.Froms Chart Tooltip
-description: How to enable and customize the tooltip in Essential Xamarin.Forms Chart
+description: description: This section explains how to enable, customize the tooltip and tooltip template in Essential Xamarin.Forms Chart.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in Xamarin Charts (SfChart)
 
 [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) provides tooltip support for all series. It is used to show information about the segment, when you tap on the segment. To enable the tooltip, you need to set [`EnableTooltip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_EnableTooltipProperty) property as `true`.
 
@@ -226,3 +226,8 @@ tooltip.Hide(true);
 
 {% endhighlight %}
 
+## See also
+
+[How to bind the Xamarin.Forms pie chart tooltip to “Others” category values](https://www.syncfusion.com/kb/11861/how-to-bind-the-xamarin-forms-pie-chart-tooltip-to-others-category-values) 
+
+[How to show tooltip on Xamarin.Forms Chart axis label click](https://www.syncfusion.com/kb/11644/how-to-show-tooltip-on-xamarin-forms-chart-axis-label-click) 

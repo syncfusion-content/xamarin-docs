@@ -7,7 +7,7 @@ control: Chart
 documentation: ug
 ---
 
-# Legend
+# Legend in Xamarin Charts (SfChart)
 
 The [`Legend`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html) contains list of chart series/data points in chart. The information provided in each legend item helps to identify the corresponding data series in chart.
 
@@ -617,10 +617,24 @@ The [`LegendItemCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCh
 
 You can customize the legend item using following properties of [`ChartLegendItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendItem.html):
 
-* [`Label`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendItem.html#Syncfusion_SfChart_XForms_ChartLegendItem_Label) – Get or sets the legend item label.
-* [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendItem.html#Syncfusion_SfChart_XForms_ChartLegendItem_LabelStyle) – Customizes the appearance of legend labels. The properties listed in [`customizing label`](https://help.syncfusion.com/xamarin/sfchart/legend#customizing-labels) can be customized using the `LabelStyle` property.
-* [`IconColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendItem.html#Syncfusion_SfChart_XForms_ChartLegendItem_IconColor) – Gets or sets the legend icon color.
-* [`Index`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendItem.html#Syncfusion_SfChart_XForms_ChartLegendItem_Index) – Gets the legend item index.
-* [`IsEnabled`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendItem.html#Syncfusion_SfChart_XForms_ChartLegendItem_IsEnabled) – Gets the visibility of the series if the series is the type of [`CartesianSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.CartesianSeries.html) and get the visibility of the data point if the series is type of [`AccumulationSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.AccumulationSeries.html).
-* [`DataPoint`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendItem.html#Syncfusion_SfChart_XForms_ChartLegendItem_DataPoint) – Gets the legend item data point for accumulation series only.
-* [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendItem.html#Syncfusion_SfChart_XForms_ChartLegendItem_Series) – Gets respective chart series.
+* [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItem~Label.html) – Get or sets the legend item label.
+* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItem~LabelStyle.html) – Customizes the appearance of legend labels. The properties listed in [`customizing label`](https://help.syncfusion.com/xamarin/sfchart/legend#customizing-labels) can be customized using the `LabelStyle` property.
+* [`IconColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItem~IconColor.html) – Gets or sets the legend icon color.
+* [`Index`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItem~Index.html) – Gets the legend item index.
+* [`IsEnabled`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItem~IsEnabled.html) – Gets the visibility of the series if the series is the type of [`CartesianSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.CartesianSeries.html) and get the visibility of the data point if the series is type of [`AccumulationSeries`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.AccumulationSeries.html).
+* [`DataPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItem~DataPoint.html) – Gets the legend item data point for accumulation series only.
+* [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLegendItem~Series.html) – Gets respective chart series.
+
+## See also
+
+[How to apply custom fonts in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9388/how-to-apply-custom-fonts-in-xamarin-forms-chart)
+
+[How to customize the individual legend item based on a condition in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9375/how-to-customize-the-individual-legend-item-based-on-a-condition-in-xamarin-forms-chart)
+
+[How to collapse the series through legend](https://www.syncfusion.com/kb/5724/how-to-collapse-the-series-through-legend)
+
+[How to float the legend on chart](https://www.syncfusion.com/kb/5723/how-to-float-the-legend-on-chart)
+
+[How to change the legend icons](https://www.syncfusion.com/kb/5528/how-to-change-the-legend-icons)
+
+[How to change the legend position](https://www.syncfusion.com/kb/5527/how-to-change-the-legend-position)

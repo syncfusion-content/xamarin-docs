@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Populating data in Syncfusion.Xamarin.Forms Chart
-description: How to add data point to series in  Essential Xamarin.forms Chart.
+description: This section describes how to add data point to series in  Essential Syncfusion.Xamarin.Forms Chart.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Populating Data
+# Populating Data in Xamarin Charts (SfChart)
 
 [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) control can be configured with data points using [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_ItemsSource) property of [`ChartSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html). There are two ways, you can create data points for chart.
 
@@ -174,3 +174,15 @@ chart.Series.Add (new ColumnSeries () {
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to bind the Xamarin.Forms pie chart tooltip to “Others” category values](https://www.syncfusion.com/kb/11861/how-to-bind-the-xamarin-forms-pie-chart-tooltip-to-others-category-values)
+
+[How to pass a JSON array to Xamarin.Forms Chart](https://www.syncfusion.com/kb/10727/how-to-pass-a-json-array-to-xamarin-forms-chart)
+
+[How to bind Series from MVVM pattern in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10702/how-to-bind-series-from-mvvm-pattern-in-xamarin-forms-chart)
+
+[How to bind array collection to Xamarin.Forms Chart](https://www.syncfusion.com/kb/10599/how-to-bind-array-collection-to-xamarin-forms-chart)
+
+[How to bind the SQLite Database to the Xamarin.Forms Chart](https://www.syncfusion.com/kb/11267/how-to-bind-the-sqlite-database-to-the-xamarin-forms-chart)

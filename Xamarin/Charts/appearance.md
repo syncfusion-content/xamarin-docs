@@ -367,6 +367,4 @@ chart.AreaBorderWidth = 3;
 
 ## See also
 
-[How to visualize the Xamarin.Forms Pie Chart in linear form](https://www.syncfusion.com/kb/11285/how-to-visualize-the-xamarin-forms-pie-chart-in-linear-form)
-
-[How to customize the minor gridline style](https://www.syncfusion.com/kb/5720/how-to-customize-the-minor-gridline-style)
+[How to apply custom fonts in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9388/how-to-apply-custom-fonts-in-xamarin-forms-chart)

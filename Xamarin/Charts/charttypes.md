@@ -3878,5 +3878,3 @@ You can customize the [`ErrorBarSeries`](https://help.syncfusion.com/cr/xamarin/
 [How to use the drill-down functionality in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10662/how-to-use-the-drill-down-functionality-in-xamarin-forms-chart)
 
 [How to set size of pie/doughnut](https://www.syncfusion.com/kb/5525/how-to-set-size-of-pie-doughnut)
-
-[How to show/hide grid lines](https://www.syncfusion.com/kb/5520/how-to-show-hide-grid-lines)

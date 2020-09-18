@@ -1736,3 +1736,7 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.X
 [How to customize the range of chart axis](https://www.syncfusion.com/kb/4811/how-to-customize-the-range-of-chart-axis)
 
 [How to display chart axis labels between the ticks](https://www.syncfusion.com/kb/5037/how-to-display-chart-axis-labels-between-the-ticks)
+
+[How to show/hide grid lines](https://www.syncfusion.com/kb/5520/how-to-show-hide-grid-lines)
+
+[How to customize the minor gridline style](https://www.syncfusion.com/kb/5720/how-to-customize-the-minor-gridline-style)

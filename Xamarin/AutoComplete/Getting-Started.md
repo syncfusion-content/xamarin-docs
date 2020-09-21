@@ -47,7 +47,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfAutoComplete.Android.dll<br/>Syncfusion.SfAutoComplete.XForms.Android.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfAutoComplete.XForms.Android.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>

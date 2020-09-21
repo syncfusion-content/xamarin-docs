@@ -40,7 +40,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfCarousel.Android.dll<br/>Syncfusion.SfCarousel.XForms.Android.dll<br/>Syncfusion.SfCarousel.XForms.dll<br/>Xamarin.Android.Support.v17.Leanback (from NuGet Packages)<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfCarousel.XForms.Android.dll<br/>Syncfusion.SfCarousel.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>

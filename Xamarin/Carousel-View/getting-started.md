@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Getting Started with Syncfusion Carousel control for Xamarin.Forms
-description : A quick tour to initial users on Syncfusion Carousel control for Xamarin.Forms platform.
-platform : Xamarin
-control : Carousel
-documentation : ug
+layout: post
+title: Getting Started with Syncfusion Carousel control for Xamarin.Forms
+description: A quick tour to initial users on Syncfusion Carousel control for Xamarin.Forms platform.
+platform: Xamarin
+control: Carousel
+documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Carousel (SfCarousel)
 
 This section explains how to showcase a Gallery of photos along with a Title using SfCarousel Control.
 

@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Getting Started for Syncfusion Xamarin.Forms AutoComplete
-description : A quick tour to initial users on Syncfusion autocomplete control for Xamarin.Forms platform
-platform : xamarin
-control : SfAutoComplete
-documentation : ug
+layout: post
+title: Getting Started for Syncfusion Xamarin.Forms AutoComplete
+description: A quick tour to initial users on Syncfusion autocomplete control for Xamarin.Forms platform
+platform: xamarin
+control: SfAutoComplete
+documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin AutoComplete (SfAutoComplete)
 
 ## Getting started with SfAutoComplete
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with Syncfusion Carousel control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion Carousel control for Xamarin.Forms platform.
+description: A quick tour to initial users on Syncfusion Carousel control and explain about how to use it for Xamarin.Forms platform.
 platform: Xamarin
 control: Carousel
 documentation: ug

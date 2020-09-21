@@ -319,6 +319,8 @@ TreeView.CheckBoxMode = CheckBoxMode.Recursive;
 
 N> In recursive mode, the parent nodes checkbox state or `IsChecked` property value is updated only in UI interaction.
 
+N> When CheckBoxMode is enabled, then the `ItemTapped` and `ItemDoubleTapped` event will not be triggered in SfTreeView, since the CheckBox will handle the touch interaction and only the `NodeChecked` event is triggered.
+
 ## Get or Set Checked Items
 
 ### Get or Set Checked Items in Bound Mode

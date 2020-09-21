@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Types of Syncfusion ChipGroup control for Xamarin.Forms
-description : A quick go through to learn about available types of chips.
-platform : xamarin
-control : Chips
-documentation : ug
+layout: post
+title: Types of Syncfusion ChipGroup control for Xamarin.Forms
+description: This section describes about the available types of chips and its behavior in Syncfusion Xamarin.Forms SfChipGroup.
+platform: Xamarin.Forms
+control: Chips
+documentation: ug
 ---
 
 # Set the type for chip group
@@ -145,4 +145,12 @@ namespace Chips
 {% endhighlight %}
 
 N> The `InputView` is visible only in Input type.
+
+## See also
+
+[How to remove the indicator icon from Xamarin.Forms chip group (SfChipGroup)](https://www.syncfusion.com/kb/11270/how-to-remove-the-indicator-icon-from-xamarin-forms-chip-group-sfchipgroup)
+
+[How to restrict chip selection in Xamarin](https://www.syncfusion.com/kb/11205/how-to-restrict-chip-selection-in-xamarin)
+
+[How to select a multiple chips from the Xamarin ChipGroup [SfChipGroup]](https://www.syncfusion.com/kb/11155/how-to-select-a-multiple-chips-from-the-xamarin-chipgroup-sfchipgroup)
 

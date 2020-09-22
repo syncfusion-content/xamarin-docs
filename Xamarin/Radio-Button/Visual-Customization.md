@@ -127,3 +127,8 @@ stackLayout.Children.Add(radioButton);
 {% endtabs %}
 
 N>`ControlSize` is not applicable for Android Platform.
+
+## See also
+
+[How to wrap text in Xamarin.Forms radio button (SfRadioButton)](https://www.syncfusion.com/kb/11871/how-to-wrap-text-in-xamarin-forms-radiobutton)
+

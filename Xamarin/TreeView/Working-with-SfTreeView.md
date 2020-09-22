@@ -1,17 +1,15 @@
 ---
 layout: post
-title: Interacting with TreeView for Xamarin.Forms | Syncfusion
-description: This section explains about how to interact with TreeView and the different interactions on TreeView items.
+title: Working with Xamarin.Forms TreeView | Syncfusion
+description: This topic describes how to use Syncfusion Xamarin.Forms TreeView along with interacting events and other different functionalities
 platform: xamarin
 control: SfTreeView
 documentation: ug
 ---
 
-# Interactivity in Xamarin TreeView (SfTreeView)
+# Working with TreeView in Xamarin TreeView (SfTreeView)
 
- This section explains about how to interact with `TreeView` and its items.
-
-## Interacting with TreeView items
+## Interacting with TreeView Items
 
 ### Loaded event
 
@@ -109,3 +107,35 @@ private void TreeView_ItemHolding(object sender, ItemHoldingEventArgs e)
 {% endtabs %}
 
 You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/item-hold-treeview-xamarin)
+
+### Update the runtime changes
+
+The [PropertyChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_PropertyChanged) event will be triggered whenever a property in the customized TreeViewNode is changed. You can get the name of the property that changed by using the `PropertyName` property of the `PropertyChangedEventArgs`.
+
+{% tabs %}
+{% highlight c# %}
+treeviewnode.PropertyChanged += Treeviewnode_PropertyChanged;
+
+private void Treeviewnode_PropertyChanged(object sender, PropertyChangedEventArgs e)
+{
+    if (e.PropertyName == "IsExpanded")
+    {
+        if (treeviewnode.IsExpanded)
+            DisplayAlert("treeview", "nodeexpanded", "ok");
+        else
+            DisplayAlert("treeview", "nodecollapsed", "ok");
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Refresh layout
+
+You can refresh the TreeViewNode from the root node and update all layout by using the [SetDirty](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_SetDirty) method that notifies the tree view layout mechanism to invalidate nodes.
+
+{% tabs %}
+{% highlight c# %}
+node.SetDirty();
+{% endhighlight %}
+{% endtabs %}
+

@@ -251,6 +251,29 @@ this.Content = calendar;
 
 ![Month view today border color in Xamarin.Forms Calendar ](images/xamarin.forms-calendar-todaybordercolor.png)
 
+## Customize day header text
+
+You can customize the day header text by adding the custom day labels in the `CustomDayLabels` collection by using the [CustomDayLabels](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~CustomDayLabels.html) collection of SfCalendar.
+
+{% tabs %}
+{% highlight c# %}
+List<string> customDayLabels = new List<string>() 
+{ 
+    "Off", 
+    "Mon(D1)", 
+    "Tue(D2)", 
+    "Wed(D3)", 
+    "Thu(D3)", 
+    "Fri(D4)", 
+    "Off", 
+}; 
+ 
+calendar.CustomDayLabels = customDayLabels; 
+{% endhighlight %}
+{% endtabs %}
+
+![CustomDayLabels in Xamarin.Forms Calendar ](images/CustomDayLabels.png)
+
 ## Week view
 
 The number of weeks in the month view can be changed by setting the [NumberOfWeeksInView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_NumberOfWeeksInView) property in SfCalendar. By default, `NumberOfWeeksInView` starts from current week, and this can be modified using the [MoveToDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MoveToDate) property of calendar. It also supports all existing features such as [FirstDayOfWeek](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_FirstDayofWeek), [MinDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MinDate), [MaxDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MaxDate), and [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectionMode).

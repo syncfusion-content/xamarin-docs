@@ -1049,3 +1049,7 @@ public class TextAnnotationExt : TextAnnotation
 }
 
 {% endhighlight  %}
+
+## See also
+
+[How to add benchmark line in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9304/how-to-add-benchmark-line-in-xamarin-forms-chart)

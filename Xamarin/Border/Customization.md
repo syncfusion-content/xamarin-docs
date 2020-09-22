@@ -277,20 +277,26 @@ You can customize the border thickness of the border on four sides using the `Bo
 {% tabs %}
 {% highlight xaml %}
 
-<border:SfBorder x:Name="border" BorderColor = "Red" BorderThickness="5,1,5,1" >
- <Label Text="James Williamson" 
- TextColor="Black"/>
+<border:SfBorder x:Name="border" HorizontalOptions="Center" 
+ VerticalOptions="Center" BorderColor = "#5534eb" BackgroundColor="#f6f6f6"
+ BorderThickness="0,0,0,1" >
+ <Label Text="James Williamson" TextColor="#5534eb" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
 </border:SfBorder>
 
 {% endhighlight %}
 {% highlight c# %}
 
 SfBorder border = new SfBorder();
-border.BorderThickness =  new Thickness (5,1,5,1);
-border.BorderColor = Color.Red;
+border.BorderColor = Color.FromHex("#5534eb");
+border.BackgroundColor= Color.FromHex("#f6f6f6");
+border.BorderThickness =  new Thickness (0,0,0,1);
+border.HorizontalOptions = LayoutOptions.Center;
+border.VerticalOptions = LayoutOptions.Center;
 Label label = new Label();
 label.Text = "James Williamson";
-label.TextColor = Color.Black;
+label.TextColor = Color.FromHex("#5534eb");
+label.HorizontalTextAlignment = TextAlignment.Center;
+label.VerticalTextAlignment = TextAlignment.Center;
 border.Content = label;
 this.Content = border;
 

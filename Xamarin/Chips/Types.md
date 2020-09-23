@@ -65,7 +65,7 @@ namespace Chips
 		{
 			InitializeComponent();
 			Grid grid = new Grid();
-			var chipGroup = new SfChipGroup(){Type = SfChipsType.Action, ChoiceMode=ChoiceMode.SingleOrNone };
+			var chipGroup = new SfChipGroup(){Type = SfChipsType.Action, ChoiceMode = ChoiceMode.SingleOrNone};
 			grid.Children.Add(chipGroup);
 			chipGroup.Items.Add(new SfChip(){Text="Extra Small"});
 			chipGroup.Items.Add(new SfChip(){Text="Small"});

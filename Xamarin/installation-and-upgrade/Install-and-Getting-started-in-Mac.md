@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Installation and Getting Started Xamarin application in Mac for Syncfusion component
+title: Install and Getting Started Syncfusion component in Mac.
 description: The following section will explain about the Overview and Installation process of Xamarin application in Visual Studio for Mac.
 platform: Xamarin
 control: Syncfusion Controls
 documentation: ug
 ---
 
-# Overview
+# Overview of Syncfusion components Installation and Getting started in Mac
 
 The Syncfusion Essential Studio allows you to create the Xamarin application in Visual Studio for Mac with the Syncfusion components.
 
@@ -19,7 +19,7 @@ To create a Syncfusion Xamarin application by adding the required Syncfusion NuG
 
 In Visual Studio MAC, Go to File-> New Project
 
-# Mac Build and Instalation
+## Mac Build and Installation
 
 The following procedure illustrates how to install Xamarin Mac installer.
 
@@ -37,7 +37,7 @@ The following procedure illustrates how to install Xamarin Mac installer.
 
 > Note
 
-unlock key is not required forinstalling the Mac installer. Syncfusion Mac installer can be used for developing purposes without registering the Unlock key.
+unlock key is not required for installing the Mac installer. Syncfusion Mac installer can be used for developing purposes without registering the Unlock key.
 
 4.Destination Select windows opens. Click Continue.
 
@@ -85,11 +85,11 @@ Add reference to the project
 You can then add the assembly references to the respective projects such as PCL, XForms.Droid, XForms.iOS. You can find the dependencies for each control from this following [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies) link.
 
 
-# Creating a New Xamarin Visual Studio MAC project for a Control 
+## Creating a New Xamarin Visual Studio MAC project for a Control 
 
 1.Firstly, create a new project in Visual Studio MAC, using File-> New Project.
 
-2.Choose Blank Forms App under Xamarin.Forms category under the Multiplatform sub-heading.
+2.Choose Blank Forms App under Xamarin.Forms category under the Multi platform sub-heading.
 
 ![Blank Forms App](Images/blank-forms-app.PNG)
 
@@ -133,7 +133,7 @@ You can find the Syncfusion libraries, samples and NuGet from the installed loca
 It contains all the required libraries for Xamarin.iOS, Xamarin.Android, and Xamarin.Forms projects.
 
 
-# Deploying a new control in a created project in MAC
+## Deploying a new control in a created project in MAC
 
 1.Add the required code for control in PCL project.
 
@@ -153,7 +153,7 @@ We need to add Renderer for each control added in our project by adding Renderer
 
 If you are adding the reference from toolbox, this step is not needed.
 
-Here, Create an instance of `SfAutocompleteRenderer` in FinishedLaunching overriden method of an AppDelegate class in iOS project as shown below:
+Here, Create an instance of `SfAutocompleteRenderer` in FinishedLaunching overridden method of an AppDelegate class in iOS project as shown below:
 
 ![Renderer Code](Images/renderer-code.PNG)
 
@@ -161,4 +161,4 @@ The complete Getting Started sample is available in [this](http://www.syncfusion
 
 3.Right click the iOS/ Android project-> Select Set As Startup Project in Debug/Release mode. Build and Run the project in any platform as desired.	
 
-Thus, you can create Xamarin visual Studio MAC project for any Syncfusion Xamarin control using the above guidelines.
+Thus, you can create Xamarin Visual Studio MAC project for any Syncfusion Xamarin control using the above guidelines.

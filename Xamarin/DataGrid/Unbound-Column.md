@@ -9,7 +9,7 @@ documentation: ug
 
 # Unbound Column
 
-The data grid allows adding additional columns which are not bound with data object from the underlying data source. The unbound column can be added using the [SfDataGrid.GridUnboundColumn](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html) class.
+The data grid allows adding additional columns which are not bound with data object from the underlying data source. The unbound column can be added using the [SfDataGrid.GridUnboundColumn](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html) class.
 
 {% tabs %}
 {% highlight xaml %}
@@ -46,11 +46,11 @@ N> It is mandatory to specify the [GridColumn.MappingName](https://help.syncfusi
 
 ## Populating data for the unbound column
 
-Data for the unbound column can be populated by setting the [Expression](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumn~Expression.html) or [Format](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridColumn~Format.html) property.
+Data for the unbound column can be populated by setting the [Expression](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html#Syncfusion_SfDataGrid_XForms_GridUnboundColumn_Expression) or [Format](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_Format) property.
 
 ### Using expression
 
-The arithmetic or logic expression can be specified by using the `Expression` property to compute the display value. By default, `GridUnboundColumn` evaluates the expression with casing. The casing will be disabled while evaluating the expression by setting the [CaseSensitive](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumn~CaseSensitive.html) property to `false`.
+The arithmetic or logic expression can be specified by using the `Expression` property to compute the display value. By default, `GridUnboundColumn` evaluates the expression with casing. The casing will be disabled while evaluating the expression by setting the [CaseSensitive](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html#Syncfusion_SfDataGrid_XForms_GridUnboundColumn_CaseSensitive) property to `false`.
 
 List of supported arithmetic and logical operations are as follows:
 
@@ -248,15 +248,15 @@ this.dataGrid.Columns.Add(DiscountColumn);
 
 ### Using QueryUnboundColumnValue event
 
-The [QueryUnboundColumnValue](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~QueryUnboundColumnValue_EV.html) event is fired when value for the unbound column is queried. It provides the information about the cell that triggered this event. So, you can set the desired value for the grid cells of the unbound column. This event is triggered with the [GridUnboundColumnEventsArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs.html).
+The [QueryUnboundColumnValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event is fired when value for the unbound column is queried. It provides the information about the cell that triggered this event. So, you can set the desired value for the grid cells of the unbound column. This event is triggered with the [GridUnboundColumnEventsArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs.html).
 
 The `GridUnboundColumnEventsArgs` provides the following properties:
 
- * [Column](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs~Column.html): Gets GridColumn of the cell that triggers this event.  
- * [OriginalSender](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridEventArgs~OriginalSender.html): Gets the data grid raising this event.
- * [Record](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs~Record.html): Gets the underlying row data.  
- * [UnboundAction](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs~UnboundAction.html): Defines the action for triggering this event.
- * [Value](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs~Value.html): Gets or sets the value for GridUnboundColumn cell based on UnboundAction.
+ * [Column](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs.html#Syncfusion_SfDataGrid_XForms_GridUnboundColumnEventsArgs_Column): Gets GridColumn of the cell that triggers this event.  
+ * [OriginalSender](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridEventArgs.html#Syncfusion_SfDataGrid_XForms_GridEventArgs_OriginalSender): Gets the data grid raising this event.
+ * [Record](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs.html#Syncfusion_SfDataGrid_XForms_GridUnboundColumnEventsArgs_Record): Gets the underlying row data.  
+ * [UnboundAction](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs.html#Syncfusion_SfDataGrid_XForms_GridUnboundColumnEventsArgs_UnboundAction): Defines the action for triggering this event.
+ * [Value](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumnEventsArgs.html#Syncfusion_SfDataGrid_XForms_GridUnboundColumnEventsArgs_Value): Gets or sets the value for GridUnboundColumn cell based on UnboundAction.
 
 N> `UnboundActions.CommitData` and `UnboundActions.PasteData` are currently not supported, and likely to be supported in future.    
 

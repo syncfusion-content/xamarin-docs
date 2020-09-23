@@ -365,4 +365,6 @@ chart.AreaBorderWidth = 3;
 
 {% endtabs %}
 
+## See also
 
+[How to apply custom fonts in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9388/how-to-apply-custom-fonts-in-xamarin-forms-chart)

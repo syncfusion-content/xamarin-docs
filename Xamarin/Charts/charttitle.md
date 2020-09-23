@@ -95,7 +95,7 @@ You can wrap chart title text content using the `LineBreakMode` property. The de
 
 	<chart:SfChart.Title>
 
-	<chart:ChartTitle Text="Efficiency of oil-fired power production" TextColor="Blue" LineBreakMode="TailTruncation"/>
+	<chart:ChartTitle Text="Percentage change in efficiency of oil-fired power production in Russia for six months" TextColor="Blue" LineBreakMode="TailTruncation"/>
 
 	</chart:SfChart.Title>  
 

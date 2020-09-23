@@ -10,7 +10,7 @@ documentation: ug
 
 ## Scrolling mode
 
-The data grid provides three types of scrolling mode that can be customized by using the [SfDataGrid.ScrollingMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollingMode.html) property. By default, the control will scroll the content based on pixel values. The scrolling modes are as follows: 
+The data grid provides three types of scrolling mode that can be customized by using the [SfDataGrid.ScrollingMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ScrollingMode) property. By default, the control will scroll the content based on pixel values. The scrolling modes are as follows: 
 
  * PixelLine
  * Line
@@ -54,7 +54,7 @@ The data grid scrolls to a particular row and column index programmatically.
 
 ### Scroll to row and column index
 
-Scroll programmatically to a particular row and column using the [SfDataGrid.ScrollToRowColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollToRowColumnIndex.html) method by passing row and column indexes.
+Scroll programmatically to a particular row and column using the [SfDataGrid.ScrollToRowColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ScrollToRowColumnIndex_System_Int32_System_Int32_System_Boolean_Xamarin_Forms_ScrollToPosition_Xamarin_Forms_ScrollToPosition_) method by passing row and column indexes.
 
 {% highlight C# %}
 
@@ -69,7 +69,7 @@ dataGrid.ScrollToRowColumnIndex(20, 6);
 
 ### Scroll to row index
 
-Scroll programmatically to a particular row using the [SfDataGrid.ScrollToRowIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollToRowIndex.html) method by passing the row index.
+Scroll programmatically to a particular row using the [SfDataGrid.ScrollToRowIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ScrollToRowIndex_System_Int32_System_Boolean_Xamarin_Forms_ScrollToPosition_) method by passing the row index.
 
 {% highlight C# %}
 
@@ -84,7 +84,7 @@ dataGrid.ScrollToRowIndex(20);
 
 ### Scroll to column index
 
-Scroll programmatically to a particular column using the [SfDataGrid.ScrollToColumnIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ScrollToColumnIndex.html) method by passing the column index.
+Scroll programmatically to a particular column using the [SfDataGrid.ScrollToColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ScrollToColumnIndex_System_Int32_System_Boolean_Xamarin_Forms_ScrollToPosition_) method by passing the column index.
 
 {% highlight C# %}
 
@@ -142,9 +142,9 @@ this.dataGrid.AllowDiagonalScrolling = false;
 
 ## Vertical Over Scroll Mode
 
-The [SfDataGrid.VerticalOverScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOverScrollMode.html) property customizes the bouncing behavior of the data grid.
+The [SfDataGrid.VerticalOverScrollMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_VerticalOverScrollMode) property customizes the bouncing behavior of the data grid.
 
-The `SfDataGrid.VerticalOverScrollMode` is of [VerticalScrollMode](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~VerticalOverScrollMode.html) type having the following two modes: 
+The `SfDataGrid.VerticalOverScrollMode` is of [VerticalScrollMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_VerticalOverScrollMode) type having the following two modes: 
 
  * Bounce
  * None

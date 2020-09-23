@@ -277,3 +277,9 @@ button.CornerRadius = new Thickness(20);
 {% endtabs %}
 
 ![Button with background image](images/ButtonWithBackgroundImage.png)
+
+## See also
+
+[How to create Xamarin.Forms image button](https://www.syncfusion.com/kb/10808/how-to-create-xamarin-forms-image-button)
+
+[How to disable Xamarin.Forms button](https://www.syncfusion.com/kb/11036/how-to-disable-xamarin-forms-button)

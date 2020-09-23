@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize the Syncfusion SfChart padding
-description: Customize the SfChart padding
+description: This section describes how to customize the Xamarin.Forms Syncfusion SfChart by applying padding to avoid crossing of axis labels.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -40,3 +40,7 @@ The following code example shows how to customize the padding of chart.
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to remove the default padding of Xamarin.Forms Chart](https://www.syncfusion.com/kb/9606/how-to-remove-the-default-padding-of-xamarin-forms-chart)

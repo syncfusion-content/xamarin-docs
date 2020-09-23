@@ -393,7 +393,7 @@ Now, run the application to render the following output.
 
 You can download accordion sample for Xamarin.Forms here [AccordionGettingStarted](https://github.com/SyncfusionExamples/xamarin_accordion_getting_started).
 
-N> When adding the template control inside the StackLayout or Grid with the height as Auto, the child element will not get the height at run time changes. Since the SfAccordion is entirely a template-based control, we cannot determine the default height value to the control. So it is recommended to provide the `HorizontalOptions` and `VerticalOptions` as `FillAndExpand` options for the control.
+N> When adding the template control inside the `StackLayout` or `Grid` with the height as `Auto`, the child element will not get the height at run time changes. Since the `SfAccordion` is entirely a template-based control, we cannot determine the default height value to the control. So it is recommended to provide the `HorizontalOptions` and `VerticalOptions` as `FillAndExpand` options for the control.
 
 ## Animation duration
 

@@ -272,7 +272,7 @@ N> Shadow support has not been provided for UWP Platform.
 
 ## Border Thickness
 
-You can customize the border thickness of the border on four sides using the `BorderThickness` property with type as `Thickness`.
+You can customize the border thickness of the border on four sides using the `BorderThickness` property.
 
 {% tabs %}
 {% highlight xaml %}

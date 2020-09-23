@@ -270,9 +270,9 @@ N> Shadow support has not been provided for UWP Platform.
 
 ![ShadowImage](images/Xamarin_Forms_Shadow.png)
 
-## Border Thickness
+## BorderThickness
 
-You can customize the border thickness of the border on four sides using the `BorderThickness` property.
+By using the `BorderThickness` property,you can customize the border thickness of the border on four sides.
 
 {% tabs %}
 {% highlight xaml %}

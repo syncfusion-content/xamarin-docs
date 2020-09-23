@@ -24,6 +24,8 @@ Arranges the chips in a layout and enables the close button for each chip. Using
 
 Allows users to select a single chip from a group of items. Selecting a chip will automatically deselect the previously selected chips. The selected chip color can be customized using the `SelectedChipBackgroundColor` and `SelectedChipTextColor` properties. The `SelectedItem` property holds the instance of recently selected chip.
 
+### ChoiceMode
+
 `ChoiceMode` property allows user to deselect the chip item from the chip group. To enable the deselection feature, set ChoiceMode property as `SingleOrNone`. The default value of ChoiceMode property is `Single`.
 
 {% tabs %}
@@ -65,7 +67,7 @@ namespace Chips
 		{
 			InitializeComponent();
 			Grid grid = new Grid();
-			var chipGroup = new SfChipGroup(){Type = SfChipsType.Action, ChoiceMode = ChoiceMode.SingleOrNone};
+			var chipGroup = new SfChipGroup(){Type = SfChipsType.Choice, ChoiceMode = ChoiceMode.SingleOrNone};
 			grid.Children.Add(chipGroup);
 			chipGroup.Items.Add(new SfChip(){Text="Extra Small"});
 			chipGroup.Items.Add(new SfChip(){Text="Small"});
@@ -80,8 +82,6 @@ namespace Chips
 {% endhighlight %}
 
 {% endtabs %}
-
-N> IsSelectionRequired property is applicable for `Choice` type chip group only.
 
 ## Filter
 

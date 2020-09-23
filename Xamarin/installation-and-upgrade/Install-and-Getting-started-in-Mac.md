@@ -7,7 +7,7 @@ control: Syncfusion Controls
 documentation: ug
 ---
 
-# Overview of Syncfusion components Installation and Getting started in Mac
+# Overview of Syncfusion components Installation in Mac
 
 The Syncfusion Essential Studio allows you to create the Xamarin application in Visual Studio for Mac with the Syncfusion components.
 

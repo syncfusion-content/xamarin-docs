@@ -7,7 +7,7 @@ control: SfBorder
 documentation: ug
 ---
 
-# Customization
+# Customization in Xamarin.Forms Border (SfBorder)
 
 The border control supports customizing the border color, width, corner radius, background color, and more. The border can be customized using the following properties.
 

@@ -117,4 +117,6 @@ sfChart.Title.LineBreakMode = LineBreakMode.TailTruncation;
 
 {% endtabs %}
 
+N> HeadTruncation and MiddleTruncation is not supported in UWP and WPF platforms.
+
 ![Text wrap support for title in Xamarin.Forms Chart](charttitle_images/charttitle_img3.png)

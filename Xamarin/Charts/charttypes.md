@@ -3866,3 +3866,15 @@ You can customize the [`ErrorBarSeries`](https://help.syncfusion.com/cr/xamarin/
 {% endtabs %}
 
 ![Customization of ErrorBarSeries in Xamarin.Forms Chart](charttypes_images/ErrorBar_LineStyle.png)
+
+## See also
+
+[How to draw dotted line using FastLineSeries in Chart](https://www.syncfusion.com/kb/5924/how-to-draw-dotted-line-using-fastlineseries-in-chart)
+
+[How to visualize the Xamarin.Forms Pie Chart in linear form](https://www.syncfusion.com/kb/11285/how-to-visualize-the-xamarin-forms-pie-chart-in-linear-form)
+
+[How to achieve the Tornado chart in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10684/how-to-achieve-the-tornado-chart-in-xamarin-forms-chart)
+
+[How to use the drill-down functionality in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10662/how-to-use-the-drill-down-functionality-in-xamarin-forms-chart)
+
+[How to set size of pie/doughnut](https://www.syncfusion.com/kb/5525/how-to-set-size-of-pie-doughnut)

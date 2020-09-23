@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Event for Syncfusion.Xamarin.Forms SfRadioButton
-description: Learn how to customize the basic features of SfRadioButton
+description: This section describes event for the Xamarin.Forms Syncfusion SfRadioButton to notify the control is checked. 
 platform: Xamarin.Forms
 control: SfRadioButton
 documentation: ug 
@@ -9,7 +9,7 @@ keywords: button, SfRadioButton, RadioButton
 
 ---
 
-# Event
+# Event of SfRadioButton
 
 ## StateChanged event
 
@@ -67,3 +67,9 @@ private void RadioButton_StateChanged(object sender, StateChangedEventArgs e)
 ![StateChanged event 2](Images/Event2.png)
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_Event1787482656 ).
+
+## See also
+
+[How to notify the selection changes in Xamarin.Forms radio button (SfRadioButton)](https://www.syncfusion.com/kb/11037/how-to-notify-the-selection-changes-in-xamarin-forms-radiobutton-sfradiobutton)
+ 
+[How to get the selected Xamarin.Forms radio button (SfRadioButton)](https://www.syncfusion.com/kb/10914/how-to-get-the-selected-xamarin-forms-radiobutton)

@@ -1417,6 +1417,92 @@ Chart.SecondaryAxis = new NumericalAxis()
 
 ![PlotOffset support for axis in Xamarin.Forms Chart](axis_images/PlotOffset.png)
 
+#### PlotOffsetStart
+
+The [`PlotOffsetStart`] property is used to offset the rendering of the axis at start position. The following code snippet demonstrates to apply the plot offset start to both x and y axes.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+      <chart:CategoryAxis PlotOffsetStart="30" />
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+      <chart:NumericalAxis PlotOffsetStart="30"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new CategoryAxis()
+{
+
+     PlotOffsetStart = 30
+};
+
+Chart.SecondaryAxis = new NumericalAxis()
+{
+
+     PlotOffsetStart = 30
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![PlotOffsetStart support for axis in Xamarin.Forms Chart](axis_images/PlotOffset_start.png)
+
+#### PlotOffsetEnd
+
+The [`PlotOffsetEnd`] property is used to offset the rendering of the axis at end position. The following code snippet demonstrates to apply the plot offset end to both x and y axes.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+      <chart:CategoryAxis PlotOffsetEnd="30" />
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+      <chart:NumericalAxis PlotOffsetEnd="30"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new CategoryAxis()
+{
+
+     PlotOffsetEnd = 30
+};
+
+Chart.SecondaryAxis = new NumericalAxis()
+{
+
+     PlotOffsetEnd = 30
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![PlotOffsetEnd support for axis in Xamarin.Forms Chart](axis_images/plotOffset_end.png)
+
 ### Maximum number of labels per 100 pixels
 
 By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The maximum number of labels that should be present within 100 pixels length can be customized using the [`MaximumLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_MaximumLabels) property of an axis. This property is applicable only for automatic range calculation and will not work if you set value for [`Interval`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_Interval) property of an axis.

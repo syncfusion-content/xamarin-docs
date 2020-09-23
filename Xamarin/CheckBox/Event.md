@@ -56,3 +56,8 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 ![Checked state image](Images/Event1.png)
 ![Unchecked state image](Images/Event2.png)
 ![Indeterminate state image ](Images/Event3.png)
+
+## See also
+
+[How to get the values of selected checkboxes in a group using Xamarin.Forms](https://www.syncfusion.com/kb/10915/how-to-get-the-values-of-selected-checkboxes-in-a-group-using-xamarin-forms)
+

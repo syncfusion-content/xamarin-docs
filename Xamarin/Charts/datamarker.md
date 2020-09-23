@@ -139,7 +139,7 @@ pieSeries.DataMarker.LabelContent = LabelContent.Percentage;
 
 ### DataMarker LabelFormat
 
-Data marker labels can be formatted by using the [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) property. Data marker label values can be formatted with n (number with decimal points), c (Currency) and p (percentage) commands.
+Data marker labels can be formatted by using the [`LabelFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_LabelFormat) property. Data marker label values can be formatted with n (number with decimal points), c (Currency) and p (percentage) commands.
 
 {% tabs %} 
 
@@ -469,7 +469,7 @@ N> For Pie and Doughnut series, you can set different connector line types such 
 
 You can customize the appearance of the data marker label with your own template using the [`LabelTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html#Syncfusion_SfChart_XForms_ChartDataMarker_LabelTemplate) property of [`ChartDataMarker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html).
 
-N> The BindingContext of template is the corresponding underlying model provided in the items source of chart series.You can also bind the corresponding [`ChartDataMarkerLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html) class object using the [`LabelContent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html#Syncfusion_SfChart_XForms_ChartDataMarker_LabelContent) property set as [`DataMarkerLabel`](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.LabelContent.html).
+N> The BindingContext of template is the corresponding underlying model provided in the items source of chart series.You can also bind the corresponding [`ChartDataMarkerLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html) class object using the [`LabelContent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarker.html#Syncfusion_SfChart_XForms_ChartDataMarker_LabelContent) property set as [`DataMarkerLabel`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LabelContent.html).
 
 {% tabs %} 
 

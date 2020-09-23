@@ -4734,7 +4734,7 @@ This page lists the keys for each control and the element to which it is mapped 
             <br/>
         </td>
         <td>
-             Background color of the [TableSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridTableSummaryRow.html) in SfDataGrid.
+             Background color of the [TableSummaryRow](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridTableSummaryRow.html) in SfDataGrid.
             <br/>
             <br/>
         </td>

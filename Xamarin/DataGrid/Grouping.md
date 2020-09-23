@@ -9,7 +9,7 @@ documentation: UG
 
 # Grouping in Xamarin.Forms DataGrid (SfDataGrid)
 
-A group represents a collection of records that belongs to a particular category. When grouping, the data is organized into hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CaptionSummaryRowProperty.html) to get the underlying records in view.
+A group represents a collection of records that belongs to a particular category. When grouping, the data is organized into hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_CaptionSummaryRowProperty) to get the underlying records in view.
 
 N> To update grouping for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 
@@ -17,7 +17,7 @@ N> When `BeginInit` method is called, it suspends all the updates until `EndInit
 
 ## Programmatic grouping
 
-The SfDataGrid also allows to perform grouping from the code by defining the [GroupColumnDescription](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html) object and adding it in the [SfDataGrid.GroupColumnDescriptions](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupColumnDescriptions.html) collection. It groups the data based on the `GroupColumnDescription` object added to this collection.
+The SfDataGrid also allows to perform grouping from the code by defining the [GroupColumnDescription](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html) object and adding it in the [SfDataGrid.GroupColumnDescriptions](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_GroupColumnDescriptions) collection. It groups the data based on the `GroupColumnDescription` object added to this collection.
 
 `GroupColumnDescription` object holds following two properties:
 
@@ -123,7 +123,7 @@ public class CustomStyle : DataGridStyle
 
 ## Custom grouping
 
-The SfDataGrid allows to group a column based on custom logic when the standard grouping techniques do not meet the requirements. To achieve this, write a converter that implements `IValueConverter` with custom grouping logic. Assign that converter to the [GroupColumnDescription.Converter](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupColumnDescription~Converter.html) property.
+The SfDataGrid allows to group a column based on custom logic when the standard grouping techniques do not meet the requirements. To achieve this, write a converter that implements `IValueConverter` with custom grouping logic. Assign that converter to the [GroupColumnDescription.Converter](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html#Syncfusion_SfDataGrid_XForms_GroupColumnDescription_Converter) property.
 
 To set custom grouping converter for the group description that is added to group the freight column, follow the code example:
 
@@ -291,7 +291,7 @@ As you can see in the below screenshot, the records are sorted based on the `Ord
 
 ## Expand groups while grouping
  
-To expand all groups while grouping, set the [SfDataGrid.AutoExpandGroups](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AutoExpandGroups.html) to `true`. While grouping any column, all groups will be in expanded state. 
+To expand all groups while grouping, set the [SfDataGrid.AutoExpandGroups](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AutoExpandGroups) to `true`. While grouping any column, all groups will be in expanded state. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -308,7 +308,7 @@ this.dataGrid.AllowGroupExpandCollapse = true;
 
 ## Expand or collapse the groups
 
-By default, the groups will be in expanded state. However expand or collapse a group in runtime by setting the [SfDataGrid.AllowGroupExpandCollapse](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowGroupExpandCollapse.html) to `true`.
+By default, the groups will be in expanded state. However expand or collapse a group in runtime by setting the [SfDataGrid.AllowGroupExpandCollapse](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AllowGroupExpandCollapse) to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -325,7 +325,7 @@ this.dataGrid.AllowGroupExpandCollapse = true;
 
 ### Expand or collapse all the groups
 
-Programmatically expand or collapse all the groups at runtime using the [SfDataGrid.ExpandAllGroup](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ExpandAllGroup.html) and [SfDataGrid.CollapseAllGroup](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CollapseAllGroup.html) methods.
+Programmatically expand or collapse all the groups at runtime using the [SfDataGrid.ExpandAllGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ExpandAllGroup) and [SfDataGrid.CollapseAllGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_CollapseAllGroup) methods.
 
 {% tabs %}
 {% highlight c# %}
@@ -336,7 +336,7 @@ this.dataGrid.CollapseAllGroup();
 
 ### Expand or collapse a specific group
 
-Expand or collapse specific group by using the [SfDataGrid.ExpandGroup](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~ExpandGroup.html) and [SfDataGrid.CollapseGroup](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~CollapseGroup.html) methods.
+Expand or collapse specific group by using the [SfDataGrid.ExpandGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ExpandGroup_Syncfusion_Data_Group_) and [SfDataGrid.CollapseGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_CollapseGroup_Syncfusion_Data_Group_) methods.
 
 
 {% tabs %}
@@ -351,7 +351,7 @@ this.dataGrid.CollapseGroup(group);
 
 ## Display based grouping using GroupMode property
 
-By default, column grouping occurs based on the value in the underlying collection thereby creating a new group for each new value of that column. However, a column can also be grouped based on the Display value by setting the [GridColumn.GroupMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_GroupMode) property as `Display`. In the following code example, set the [GridColumn.Format](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_Format) property as "#" which displays only the rounded off value in the [GridCell](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GridCell.html): 
+By default, column grouping occurs based on the value in the underlying collection thereby creating a new group for each new value of that column. However, a column can also be grouped based on the Display value by setting the [GridColumn.GroupMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_GroupMode) property as `Display`. In the following code example, set the [GridColumn.Format](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html#Syncfusion_SfDataGrid_XForms_GridColumn_Format) property as "#" which displays only the rounded off value in the [GridCell](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCell.html): 
 
 {% tabs %}
 {% highlight xaml %}
@@ -472,9 +472,9 @@ N> Clear or remove grouping on [GridTapped event](https://help.syncfusion.com/cr
 
 ### GroupExpanding event
 
-The [SfDataGrid.GroupExpanding](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupExpanding_EV.html) event occurs when group is being expanded.
+The [SfDataGrid.GroupExpanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event occurs when group is being expanded.
  
-The [GroupChangingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members:
+The [GroupChangingEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members:
 
  `Syncfusion.Data.Group`: Gets expanded group.
 
@@ -496,17 +496,17 @@ void dataGrid_GroupExpanding(object sender, Syncfusion.SfDataGrid.XForms.GroupCh
 
 ### GroupExpanded event
 
-The [SfDataGrid.GroupExpanded](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupExpanded_EV.html) event occurs after group is expanded.
+The [SfDataGrid.GroupExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event occurs after group is expanded.
 
-The [GroupChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupChangedEventArgs.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member:
+The [GroupChangedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupChangedEventArgs.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member:
 
  `Syncfusion.Data.Group`: Gets the expanded group.
 
 ### GroupCollapsing event 
 
-The [SfDataGrid.GroupCollapsing](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupCollapsing_EV.html) event occurs when group is being collapsed.
+The [SfDataGrid.GroupCollapsing](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event occurs when group is being collapsed.
 
-The [GroupChangingEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs.html)  of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following member:
+The [GroupChangingEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupChangingEventArgs.html)  of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following member:
 
  `Syncfusion.Data.Group`: Gets collapsed group.
 
@@ -528,9 +528,9 @@ void dataGrid_GroupCollapsing(object sender, Syncfusion.SfDataGrid.XForms.GroupC
 
 ### GroupCollapsed event
  
-The [SfDataGrid.GroupCollapsed](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~GroupCollapsed_EV.html) event occurs after group collapsed.
+The [SfDataGrid.GroupCollapsed](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event occurs after group collapsed.
  
-The [GroupChangedEventArgs](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.GroupChangedEventArgs.html) of the `GroupCollapsed` event provides the information about collapsed group and it contains the following member:
+The [GroupChangedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupChangedEventArgs.html) of the `GroupCollapsed` event provides the information about collapsed group and it contains the following member:
 
  `Syncfusion.Data.Group`: Gets the collapsed group.
 

@@ -111,7 +111,7 @@ private void ListView_ScrollStateChanged(object sender, ScrollStateChangedEventA
 
 ## Identify when end of the list is reached on scrolling
 
-The SfListView allows notifying when scrolling using the [Changed](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase.html) event of [ScrollAxisBase](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.ScrollAxis.ScrollAxisBase.html) in [VisualContainer](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.VisualContainer.html) of the SfListView. By using this event, you can find whether reached the last item in the list in the SfListView based on the [LastBodyVisibleLineIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase.html#Syncfusion_GridCommon_ScrollAxis_ScrollAxisBase_LastBodyVisibleLineIndex) property and underlying collection count.
+The SfListView allows notifying when scrolling using the [Changed](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase.html) event of [ScrollAxisBase](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ScrollAxis.ScrollAxisBase.html) in [VisualContainer](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.VisualContainer.html) of the SfListView. By using this event, you can find whether reached the last item in the list in the SfListView based on the [LastBodyVisibleLineIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase.html#Syncfusion_GridCommon_ScrollAxis_ScrollAxisBase_LastBodyVisibleLineIndex) property and underlying collection count.
 
 {% tabs %}
 {% highlight c# %}

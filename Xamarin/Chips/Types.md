@@ -28,7 +28,7 @@ Allows users to select a single chip from a group of items. Selecting a chip wil
 
 The `ChoiceMode` property allows user to set the selection mode for Choice type `SfChipGroup`. The default value of ChoiceMode property is `Single`.
 
-Single - Atleast, one item must be in selected state and the selected item cannot be deselect with `ChoiceMode` is Single.
+Single - At least, one item must be in selected state and the selected item cannot be deselect with `ChoiceMode` is Single.
 
 SingleOrNone - Unlike `Single`, it is possible to deselect the selected item and keep all the items in deselected state.
 

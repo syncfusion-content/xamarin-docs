@@ -303,4 +303,4 @@ this.Content = border;
 {% endhighlight %}
 {% endtabs %}
 
-![borderthickness](images/Xamarin_Forms_BorderThickness.png)
+![BorderThickness in Xamarin.Forms SfBorder](images/Xamarin_Forms_BorderThickness.png)

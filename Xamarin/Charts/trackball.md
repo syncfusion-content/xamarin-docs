@@ -550,17 +550,17 @@ trackball.HitTest(pointX, pointY);
 
 ### TrackballCreated
 
-The [`TrackballCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~TrackballCreated_EV.html) event occurs when the trackball moves from one data point to another. This argument contains object of [`ChartPointsInfo`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartTrackballCreatedEventArgs~ChartPointsInfo.html). The following properties are available in ChartPointInfo class to customize the appearance of trackball label based on condition.
+The [`TrackballCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~TrackballCreated_EV.html) event occurs when the trackball moves from one data point to another. This argument contains object of [`ChartPointsInfo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballCreatedEventArgs.html#Syncfusion_SfChart_XForms_ChartTrackballCreatedEventArgs_ChartPointsInfo). The following properties are available in ChartPointInfo class to customize the appearance of trackball label based on condition.
 
-* [`Label`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPointInfo~Label.html) - Gets or sets the text of trackball label.
-* [`IsVisible`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPointInfo~IsVisible.html) - Gets or sets the visibility of trackball.
-* [`Series`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPointInfo~Series.html) - Gets the series of the data point in which trackball is activated.
-* [`LabelStyle`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPointInfo~LabelStyle.html) - Customizes the appearance of trackball label.
-* [`DataPoint`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPointInfo~DataPoint.html) - Gets the respective underlying object of the data in which trackball is activated.
-* [`DataPointIndex`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPointInfo~DataPointIndex.html) - Gets the index of the selected data point.
-* [`XPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPointInfo~XPosition.html) -  Gets the x-position of trackball label.
-* [`YPosition`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPointInfo~YPosition.html) - Gets the y-position of trackball label.
-* [`BackgroundColor`](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartPointInfo~BackgroundColor.html) - Gets the default background color of trackball label.
+* [`Label`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_Label) - Gets or sets the text of trackball label.
+* [`IsVisible`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_IsVisible) - Gets or sets the visibility of trackball.
+* [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_Series) - Gets the series of the data point in which trackball is activated.
+* [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_LabelStyle) - Customizes the appearance of trackball label.
+* [`DataPoint`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_DataPoint) - Gets the respective underlying object of the data in which trackball is activated.
+* [`DataPointIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_DataPointIndex) - Gets the index of the selected data point.
+* [`XPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_XPosition) -  Gets the x-position of trackball label.
+* [`YPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_YPosition) - Gets the y-position of trackball label.
+* [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_BackgroundColor) - Gets the default background color of trackball label.
 
 ## See also
 

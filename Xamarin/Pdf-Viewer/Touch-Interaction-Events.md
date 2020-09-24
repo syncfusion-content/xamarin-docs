@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Touch interaction events in Xamarin Pdf Viewer | Syncfusion
-description: Touch interaction events
+description: Learn about Touch interaction events support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more details.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug

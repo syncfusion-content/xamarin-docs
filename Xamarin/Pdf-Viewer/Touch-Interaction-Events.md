@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Touch interaction events | Syncfusion
+title: Touch interaction events in Xamarin Pdf Viewer | Syncfusion
 description: Touch interaction events
 platform: Xamarin
 control: SfPdfViewer

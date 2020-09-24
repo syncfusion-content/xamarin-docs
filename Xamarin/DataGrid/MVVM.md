@@ -10,7 +10,7 @@ documentation: UG
 
 ## Xamarin.Forms DataGrid SelectedIndex binding
 
-You can bind any int value to the [SfDataGrid.SelectedIndex](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedIndex.html) property to apply selection to a row programmatically.
+You can bind any int value to the [SfDataGrid.SelectedIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_SelectedIndex) property to apply selection to a row programmatically.
 
 {% tabs %}
 
@@ -60,7 +60,7 @@ View sample in [Github](https://github.com/SyncfusionExamples/Xamarin-DataGrid-S
 
 ## Xamarin.Forms DataGrid SelectedItem binding
 
-You can bind an object from the underlying source collection to the [SfDataGrid.SelectedItem](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItem.html) property to apply selection to a row programmatically.
+You can bind an object from the underlying source collection to the [SfDataGrid.SelectedItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_SelectedItem) property to apply selection to a row programmatically.
 
 {% tabs %}
 
@@ -109,7 +109,7 @@ View sample in [Github](https://github.com/SyncfusionExamples/Xamarin-DataGrid-S
 
 ## Xamarin.Forms DataGrid SelectedItems binding
 
-You can bind any object type collection to the [SfDataGrid.SelectedItems](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~SelectedItems.html) property to apply selection to multiple rows programmatically.
+You can bind any object type collection to the [SfDataGrid.SelectedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_SelectedItems) property to apply selection to multiple rows programmatically.
 
 {% tabs %}
 

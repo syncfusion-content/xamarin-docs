@@ -8,7 +8,7 @@ documentation: UG
 ---
 # Load More
 
-The data grid enables `LoadMore` option when the [SfDataGrid.AllowLoadMore](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~AllowLoadMore.html) property is set to `true`, and also by setting the [SfDataGrid.LoadMoreCommand](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~LoadMoreCommand.html) property. When `LoadMore` is enabled, the control loads a subset of data to its data source at runtime using [LoadMoreView](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.LoadMoreView.html). 
+The data grid enables `LoadMore` option when the [SfDataGrid.AllowLoadMore](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AllowLoadMore) property is set to `true`, and also by setting the [SfDataGrid.LoadMoreCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_LoadMoreCommand) property. When `LoadMore` is enabled, the control loads a subset of data to its data source at runtime using [LoadMoreView](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.LoadMoreView.html). 
 
 When the grid reaches maximum offset while scrolling down, an interactive load more view is displayed. Tapping the load more view triggers a command to add more data to the data source of the grid at runtime.
 
@@ -16,7 +16,7 @@ When the grid reaches maximum offset while scrolling down, an interactive load m
 
 The data grid load records to its data source at runtime by triggering an `ICommand` bound to the `SfDataGrid.LoadMoreCommand` property. When the load more view is tapped, the `CanExecute` of the `ICommand` returns `true`, and this command is triggered to load the records at runtime.
  
-Set the [SfDataGrid.IsBusy](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~IsBusy.html) property to `true` before loading items to notify the grid that more items are to be loaded. Set the property to `false` after loading items to the grid. When loading items, alter the time for the `LoadMore` animation from the sample by setting a delay based on the requirement.
+Set the [SfDataGrid.IsBusy](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_IsBusy) property to `true` before loading items to notify the grid that more items are to be loaded. Set the property to `false` after loading items to the grid. When loading items, alter the time for the `LoadMore` animation from the sample by setting a delay based on the requirement.
 
 To enable and load items at runtime, follow the code example:
 
@@ -126,7 +126,7 @@ string[] CustomerID = new string[] {
 
 ## Customize load more display text
 
-Customize the text displayed in the `LoadMoreView` by setting the [SfDataGrid.LoadMoreText](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfDataGrid.XForms~Syncfusion.SfDataGrid.XForms.SfDataGrid~LoadMoreText.html) property as follows:
+Customize the text displayed in the `LoadMoreView` by setting the [SfDataGrid.LoadMoreText](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_LoadMoreText) property as follows:
 
 {% highlight c# %}
 //setting load more text in SfDataGrid

@@ -7,7 +7,7 @@ control: Cards
 documentation: ug
 ---
 
-## Customization in CardLayout
+# Customization in CardLayout
 
 ### ShowSwipedCard
 

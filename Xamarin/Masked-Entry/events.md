@@ -114,3 +114,38 @@ private void MaskedEdit_OnMaskInputRejected(object sender, MaskInputRejectedEven
 {% endtabs %}
 
 ![MaskInputRejected event support in Xamarin.Forms masked edit](SfMaskedEditImages/MaskInputRejectedevent.png)
+
+## CursorPositionChanging event
+
+Invoked whenever the cursor position gets changed on the entry.
+
+`CursorPositionChanging` event has the following arguments.
+
+`NewValue` : Gets the current cursor index.
+`OldValue` : Gets the previous cursor index.
+`Cancel` : Gets or sets a value indicating whether to restrict the cursor movement.
+
+{% tabs %}
+{% highlight xaml %}
+
+         <edit:SfMaskedEdit x:Name="maskedEdit" Mask="+1 000 000 0000"  
+                  CursorPositionChanging="maskedEdit_CursorPositionChanging"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+        SfMaskedEdit maskedEdit = new SfMaskedEdit();
+        maskedEdit.Mask = "+1 000 000 0000";
+        maskedEdit.CursorPositionChanging += maskedEdit_CursorPositionChanging;
+        this.Content = maskedEdit;
+
+        private void maskedEdit_CursorPositionChanging(object sender, Syncfusion.XForms.MaskedEdit.CursorPositionChangingEventArgs e)
+        {
+            if (e.NewValue <= 2)
+                e.Cancel = true;
+        }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Cursor position changing event support in Xamarin.Forms masked edit](SfMaskedEditImages/CursorPosition.png)

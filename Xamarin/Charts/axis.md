@@ -235,6 +235,10 @@ Padding can be applied to the minimum and maximum extremes of the axis range by 
 * Round
 * Additional
 * Normal
+* RoundStart
+* RoundEnd
+* PrependInterval
+* AppendInterval
 
 **None**
 
@@ -264,7 +268,7 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.None
 
 **Round**
 
-When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_RangePadding) property is [`Round`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalPadding.html), axis range will be rounded to the nearest possible value divided by the interval.
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_RangePadding) property is [`Round`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalPadding.html), axis range will be rounded to the nearest possible value by the interval.
 
 {% tabs %} 
 
@@ -339,6 +343,110 @@ chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.Norm
 {% endtabs %}
 
 ![NumericalAxis range padding support in Xamarin.Forms Chart](axis_images/axis_img10.png)
+
+**RoundStart**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_RangePadding) property is [`RoundStart`], axis range will be rounded in the start to the nearest possible value by the interval.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.SecondaryAxis>
+
+	<chart:NumericalAxis RangePadding="RoundStart"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.RoundStart };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![NumericalAxis range padding support in Xamarin.Forms Chart](axis_images/NumericalAxis_range_padding_RoundStart.png)
+
+**RoundEnd**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_RangePadding) property is [`RoundEnd`], axis range will be rounded in the end to the nearest possible value by the interval.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.SecondaryAxis>
+
+	<chart:NumericalAxis RangePadding="RoundEnd"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.RoundEnd };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![NumericalAxis range padding support in Xamarin.Forms Chart](axis_images/NumericalAxis_range_padding_RoundEnd.png)
+
+**PrependInterval**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_RangePadding) property is [`PrependInterval`], axis range will be rounded and an interval of the axis will be added in the start as padding to the minimum values of the range.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.SecondaryAxis>
+
+	<chart:NumericalAxis RangePadding="PrependInterval"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.PrependInterval };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![NumericalAxis range padding support in Xamarin.Forms Chart](axis_images/NumericalAxis_range_padding_PrependInterval.png)
+
+**AppendInterval**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_RangePadding) property is [`AppendInterval`], axis range will be rounded and an interval of the axis will be added in the end as padding to the maximum values of the range.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.SecondaryAxis>
+
+	<chart:NumericalAxis RangePadding="AppendInterval"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.SecondaryAxis = new NumericalAxis() { RangePadding = NumericalPadding.AppendInterval };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![NumericalAxis range padding support in Xamarin.Forms Chart](axis_images/NumericalAxis_range_padding_AppendInterval.png)
 
 ## Date Time Axis
 
@@ -497,6 +605,10 @@ Padding can be applied to the minimum and maximum extremes of range by using the
 * None
 * Round
 * Additional
+* RoundStart
+* RoundEnd
+* PrependInterval
+* AppendInterval
 
 **None**
 
@@ -575,6 +687,110 @@ chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.Add
 {% endtabs %}
 
 ![DateTimeAxis range padding support in Xamarin.Forms Chart](axis_images/axis_img16.png)
+
+**RoundStart**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DateTimeAxis.html#Syncfusion_SfChart_XForms_DateTimeAxis_RangePadding) property is [`RoundStart`], axis range will be rounded in the start to the nearest possible date time value.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis >
+
+	<chart:DateTimeAxis RangePadding="RoundStart"/>
+
+</chart:SfChart.PrimaryAxis >
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.RoundStart };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DateTimeAxis range padding support in Xamarin.Forms Chart](axis_images/DateTimeAxis_range_padding_RoundStart.png)
+
+**RoundEnd**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DateTimeAxis.html#Syncfusion_SfChart_XForms_DateTimeAxis_RangePadding) property is [`RoundEnd`], axis range will be rounded in the end to the nearest possible date time value.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis >
+
+	<chart:DateTimeAxis RangePadding="RoundEnd"/>
+
+</chart:SfChart.PrimaryAxis >
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.RoundEnd };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DateTimeAxis range padding support in Xamarin.Forms Chart](axis_images/DateTimeAxis_range_padding_RoundEnd.png)
+
+**PrependInterval**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DateTimeAxis.html#Syncfusion_SfChart_XForms_DateTimeAxis_RangePadding) property is [`PrependInterval`], range will be rounded and date time interval of the axis will be added in the start as padding to the minimum extremes of the range.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis >
+
+	<chart:DateTimeAxis RangePadding="PrependInterval"/>
+
+</chart:SfChart.PrimaryAxis >
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.PrependInterval };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DateTimeAxis range padding support in Xamarin.Forms Chart](axis_images/DateTimeAxis_range_padding_PrependInterval.png)
+
+**AppendInterval**
+
+When the value of [`RangePadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DateTimeAxis.html#Syncfusion_SfChart_XForms_DateTimeAxis_RangePadding) property is [`AppendInterval`], range will be rounded and date time interval of the axis will be added in the end as padding to the maximum extremes of the range.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis >
+
+	<chart:DateTimeAxis RangePadding="AppendInterval"/>
+
+</chart:SfChart.PrimaryAxis >
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+chart.PrimaryAxis = new DateTimeAxis() { RangePadding = DateTimeRangePadding.AppendInterval };
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DateTimeAxis range padding support in Xamarin.Forms Chart](axis_images/DateTimeAxis_range_padding_AppendInterval.png)
 
 ## Date-time category axis
 
@@ -1095,7 +1311,7 @@ Chart.PrimaryAxis.Title.Text = "Month";
 
 **Format numeric values**
 
-The numeric values can be formatted by using the [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) property. Numeric values can be formatted with n (number with decimal points), c (Currency) and p (percentage) commands.
+The numeric values can be formatted by using the [`LabelFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_LabelFormat) property. Numeric values can be formatted with n (number with decimal points), c (Currency) and p (percentage) commands.
 
 {% tabs %} 
 
@@ -1127,7 +1343,7 @@ chart.SecondaryAxis = numerical;
 
 **Format date time values**
 
-The date time values can be formatted by using the [`LabelFormat`](http://help.syncfusion.com/cr/cref_files/xamarin/sfchart/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.ChartLabelStyle~LabelFormat.html) property of the axis.
+The date time values can be formatted by using the [`LabelFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_LabelFormat) property of the axis.
 
 {% tabs %} 
 
@@ -1417,6 +1633,92 @@ Chart.SecondaryAxis = new NumericalAxis()
 
 ![PlotOffset support for axis in Xamarin.Forms Chart](axis_images/PlotOffset.png)
 
+#### PlotOffsetStart
+
+The [`PlotOffsetStart`] property is used to offset the rendering of the axis at start position. The following code snippet demonstrates to apply the plot offset start to both x and y axes.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+      <chart:CategoryAxis PlotOffsetStart="30" />
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+      <chart:NumericalAxis PlotOffsetStart="30"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new CategoryAxis()
+{
+
+     PlotOffsetStart = 30
+};
+
+Chart.SecondaryAxis = new NumericalAxis()
+{
+
+     PlotOffsetStart = 30
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![PlotOffsetStart support for axis in Xamarin.Forms Chart](axis_images/PlotOffset_start.png)
+
+#### PlotOffsetEnd
+
+The [`PlotOffsetEnd`] property is used to offset the rendering of the axis at end position. The following code snippet demonstrates to apply the plot offset end to both x and y axes.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.PrimaryAxis>
+
+      <chart:CategoryAxis PlotOffsetEnd="30" />
+
+</chart:SfChart.PrimaryAxis>
+
+<chart:SfChart.SecondaryAxis>
+
+      <chart:NumericalAxis PlotOffsetEnd="30"/>
+
+</chart:SfChart.SecondaryAxis>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+Chart.PrimaryAxis = new CategoryAxis()
+{
+
+     PlotOffsetEnd = 30
+};
+
+Chart.SecondaryAxis = new NumericalAxis()
+{
+
+     PlotOffsetEnd = 30
+
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![PlotOffsetEnd support for axis in Xamarin.Forms Chart](axis_images/plotOffset_end.png)
+
 ### Maximum number of labels per 100 pixels
 
 By default, a maximum of 3 labels are displayed for each 100 pixels in axis. The maximum number of labels that should be present within 100 pixels length can be customized using the [`MaximumLabels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_MaximumLabels) property of an axis. This property is applicable only for automatic range calculation and will not work if you set value for [`Interval`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.NumericalAxis.html#Syncfusion_SfChart_XForms_NumericalAxis_Interval) property of an axis.
@@ -1699,7 +2001,7 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.X
 * [`LabelContent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LabelClickedEventArgs.html#Syncfusion_SfChart_XForms_LabelClickedEventArgs_LabelContent) - Used to get the text of label.
 * [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LabelClickedEventArgs.html#Syncfusion_SfChart_XForms_LabelClickedEventArgs_Position) - Used to get the position of label.
 
-## See Also
+## See also
 
 [How to remove comma in CategoryAxis labels in Xamarin.Forms Chart](https://www.syncfusion.com/kb/11317/how-to-remove-comma-in-categoryaxis-labels-in-xamarin-forms-chart)
 
@@ -1716,3 +2018,27 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.X
 [How to customize each label of the axis in different format](https://www.syncfusion.com/kb/5560/how-to-customize-each-label-of-the-axis-in-different-format)
 
 [How to change the position of the axis](https://www.syncfusion.com/kb/4814/how-to-change-the-position-of-the-axis)
+
+[How to plot date-time values in vertical axes](https://www.syncfusion.com/kb/8732/how-to-plot-date-time-values-in-vertical-axes)
+
+[How to show all the axis labels](https://www.syncfusion.com/kb/8242/how-to-show-all-the-axis-labels)
+
+[How to change the color of axis elements](https://www.syncfusion.com/kb/5780/how-to-change-the-color-of-axis-elements)
+
+[How to inverse the chart axis](https://www.syncfusion.com/kb/5742/how-to-inverse-the-chart-axis)
+
+[How to add custom axis labels in numerical axis](https://www.syncfusion.com/kb/5926/how-to-add-custom-axis-labels-in-numerical-axis)
+
+[How to zoom y axis or x axis alone](https://www.syncfusion.com/kb/5549/how-to-zoom-y-axis-or-x-axis-alone)
+
+[How to customize the axis range based on condition](https://www.syncfusion.com/kb/5546/how-to-customize-the-axis-range-based-on-condition)
+
+[How to customize the axis labels](https://www.syncfusion.com/kb/5545/how-to-customize-the-axis-labels)
+
+[How to customize the range of chart axis](https://www.syncfusion.com/kb/4811/how-to-customize-the-range-of-chart-axis)
+
+[How to display chart axis labels between the ticks](https://www.syncfusion.com/kb/5037/how-to-display-chart-axis-labels-between-the-ticks)
+
+[How to show/hide grid lines](https://www.syncfusion.com/kb/5520/how-to-show-hide-grid-lines)
+
+[How to customize the minor gridline style](https://www.syncfusion.com/kb/5720/how-to-customize-the-minor-gridline-style)

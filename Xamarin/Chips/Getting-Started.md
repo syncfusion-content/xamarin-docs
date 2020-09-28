@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Getting Started with Syncfusion Chips Control for Xamarin.Forms
-description : A quick tour to initial users on Syncfusion chips control for Xamarin.Forms platform
-platform : xamarin
-control : Chips
-documentation : ug
+layout: post
+title: Getting Started with Syncfusion Chips Control for Xamarin.Forms
+description: A quick tour to initial users on Syncfusion chips control for Xamarin.Forms platform and explains the types of chip group.
+platform: Xamarin.Forms
+control: Chips
+documentation: ug
 ---
 
-# Getting started
+# Getting started with the Syncfusion chips
 
 This section explains the steps required to create chips and arrange them in a layout for performing action. This section covers only the minimal features that you needed to know to get started with the chips.
 
@@ -611,3 +611,9 @@ namespace Chips
 ![action typed chip group](images/action-type-chip/action_type_chip.png)
 
 You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1258894659.zip)
+
+## See also
+
+[How to select a multiple chips from the Xamarin ChipGroup [SfChipGroup]](https://www.syncfusion.com/kb/11155/how-to-select-a-multiple-chips-from-the-xamarin-chipgroup-sfchipgroup)
+
+[How to display each chip in different colors in the Xamarin.Forms ChipGroup](https://www.syncfusion.com/kb/10940/how-to-display-each-chip-in-different-colors-in-the-xamarin-forms-chipgroup)

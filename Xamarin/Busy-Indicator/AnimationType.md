@@ -10,7 +10,9 @@ documentation: ug
 
 ## Animation Type in Xamarin BusyIndicator (SfBusyIndicator)
 
-The `AnimationType` property for the SfBusyIndicator allows the users to set one of the 16 animations from the built-in animations. The different types of Animations are `Ball`, `HorizontalPulsingBox`, `Rectangle`, `Battery`, `Globe`, `SingleCircle`, `SlicedCircle`, `DoubleCircle`, `ECG`, `Print`, `Box`, `Gear`, `Movie Timer`, `ZoomingTarget`, `RollingBall` and `Cupertino`.
+The `AnimationType` property for the SfBusyIndicator allows the users to set one of the 17 animations from the built-in animations. The different types of animations are `Ball`, `HorizontalPulsingBox`, `Rectangle`, `Battery`, `Globe`, `SingleCircle`, `SlicedCircle`, `DoubleCircle`, `ECG`, `Print`, `Box`, `Gear`, `Movie Timer`, `ZoomingTarget`, `RollingBall`, `Cupertino` and `Material`.
+
+N> `Material` animation support has not been provided for UWP Platform.
 
 {% tabs %}
 
@@ -24,12 +26,10 @@ The `AnimationType` property for the SfBusyIndicator allows the users to set one
              x:Class="GettingStarted.MainPage">
     <ContentPage.Content>
         <busyindicator:SfBusyIndicator x:Name="busyindicator" 
-                                       Title="Loading..."
+                                       Title="Ball"
                                        AnimationType="Ball" 
-                                       ViewBoxHeight="100"
-                                       ViewBoxWidth="100"
-                                       BackgroundColor="Blue"
-                                       TextColor="White"/>
+                                       BackgroundColor="LightGray"
+                                       TextColor="Blue"/>
     </ContentPage.Content>
 </ContentPage>
 
@@ -50,11 +50,9 @@ namespace GettingStarted
             SfBusyIndicator busyIndicator = new SfBusyIndicator()
             {
                 AnimationType = AnimationTypes.Ball,
-                ViewBoxWidth = 100,
-                ViewBoxHeight = 100,
-                Title = "Loading...",
-                BackgroundColor="Blue",
-                TextColor = Color.White
+                Title = "Ball",
+                BackgroundColor="LightGray",
+                TextColor = Color.Blue
             };
 
             this.Content = busyIndicator;
@@ -66,6 +64,6 @@ namespace GettingStarted
 
 {% endtabs %}
 
-The following gif image contains the types of animation in BusyIndicator
+The following gif image contains the types of animation in BusyIndicator.
 
 ![AnimationTypes](images/animationtypes.gif)

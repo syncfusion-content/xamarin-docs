@@ -614,13 +614,12 @@ The following screenshot shows the custom swipe buttons loaded based on the cell
 
 ## How to enable swiping on Summaries and Unbound row.
 
-The SfDataGrid allows to swipe `UnboundRow`, `CaptionSummayRow`, `GroupSummaryRow` and `TableSummaryRow` by setting `e.Cancel` as false in the `SfDataGrid.SwipeStarted` event.
+The SfDataGrid allows to swipe `UnboundRow`, `CaptionSummaryRow`, `GroupSummaryRow` and `TableSummaryRow` by setting `e.Cancel` as false in the `SfDataGrid.SwipeStarted` event.
 
 {% highlight c# %}
 
 private void DataGrid_SwipeStarted(object sender, Syncfusion.SfDataGrid.XForms.SwipeStartedEventArgs e)
-{
-    
+{   
     if (this.dataGrid.IsUnboundRow(e.RowIndex))
     {
         e.Cancel = false;

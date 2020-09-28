@@ -57,3 +57,19 @@ private void PdfViewerControl_PageViewModeChanged1(object sender, PageViewModeCh
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to disable the page navigation by flipping in a single page view mode
+
+The page navigation by flipping the pages in a single page view mode can be enabled or disabled by setting the `IsPageFlipEnabled` API to `true` or `false` respectively.
+
+N>The default value of the `IsPageFlipEnabled` API is set to `true`. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the page navigation by flipping pages
+pdfViewer.IsPageFlipEnabled= false;
+
+{% endhighlight %}
+{% endtabs %}
+

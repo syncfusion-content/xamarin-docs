@@ -84,3 +84,19 @@ pdfViewerControl.MinimumZoomPercentage = 10;
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to enable or disable the double-tap zoom
+
+You can enable or disable the zooming of a PDF document on double-tap by setting the `EnableDoubleTapZooming` property of the PDF viewer to `true` or `false` respectively.
+
+N>The default value of the `EnableDoubleTapZooming` API is set to `true`. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the double-tap zoom
+pdfViewer.EnableDoubleTapZooming = false;
+
+{% endhighlight %}
+{% endtabs %}
+

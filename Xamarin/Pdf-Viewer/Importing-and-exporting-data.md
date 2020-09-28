@@ -81,12 +81,12 @@ The PDF Viewer allows you to export the current annotations added to the documen
 {% highlight c# %}
 
 //Export the annotations asynchronously to the "fdf" data format 
-Stream fdfStreamToSave = pdfViewerControl.ExportAnnotations(AnnotationDataFormat.Fdf, cancellationTokenSource);
+Stream fdfStreamToSave = await pdfViewerControl.ExportAnnotationsAsync(AnnotationDataFormat.Fdf, cancellationTokenSource);
 
 {% endhighlight %}
 {% endtabs %}
 
-In the above code sample, the cancellationTokenSource enables you to cancel the asynchronous annotation exporting when it is in progress.
+In the above code sample, the `cancellationTokenSource` enables you to cancel the asynchronous annotation exporting when it is in progress.
 
 N>While saving the stream returned by the [`ExportAnnotations`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ExportAnnotations_Syncfusion_Pdf_Parsing_AnnotationDataFormat_) and [`ExportAnnotationsAsync`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ExportAnnotationsAsync_Syncfusion_Pdf_Parsing_AnnotationDataFormat_System_Threading_CancellationToken_) method, the file name must have the same extension as the file type that was given as the first argument. e.g. In the above case the file type provided is `fdf`, so the saved file extension should be `.fdf`.
 

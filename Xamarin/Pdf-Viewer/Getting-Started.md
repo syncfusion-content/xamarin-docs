@@ -340,6 +340,19 @@ pdfViewer.Dispose();
 {% endhighlight %}
 {% endtabs %}
 
+## How to clear the undo and redo stack
+
+The [`SfPdfViewer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html) control allows you to clear the undo and redo stacks that contain the changes that are made to the annotations in the PDF document, by calling the `ClearUndoRedoStack` API. When this method is called, the `CanUndo` and `CanRedo` properties will be set to `false`.
+
+{% tabs %}
+{% highlight c# %}
+
+//To clear the undo and redo stack 
+pdfViewer.ClearUndoRedoStack();
+
+{% endhighlight %}
+{% endtabs %}
+
 ## How to get & set the current page number?
 
 PDF viewer has a BindableProperty “PageNumber” using which the current page number can be retrieved and it can be set. 

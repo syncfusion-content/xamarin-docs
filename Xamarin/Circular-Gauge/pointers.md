@@ -917,6 +917,8 @@ N> By default, the pointer drag was disabled.
 
 ## Event
 
+### PointerPositionChanged event
+
 The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html) event occurs when the pointer position was changed. The PointerPositionChangedArgs argument contains the following information:
 
 * [`Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Pointer.html) - Gets the dragged pointer.
@@ -925,6 +927,144 @@ The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion
 * ['pointerValue'](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Pointer.html#Syncfusion_SfGauge_XForms_Pointer_Value) - Gets or sets the value of the pointer. It customizes the value for pointer.
 * rangeStartPosition - Gets or sets the range start position.
 * pointerValuePosition - Gets or sets the pointer value position.
+
+### ValueChangeStarted event
+
+Invoked when the user starts selecting a new value of pointer by initiating the dragging. While dragging the pointer, other events (ValueChanging, ValueChanged and ValueChangeCompleted) will be followed after this event.
+
+The `ValueChangeStarted` event contains the following arguments.
+
+* `Value` : This value will be the last value the pointer had before the changes began.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+     <gauge:SfCircularGauge>
+                <gauge:SfCircularGauge.Scales>
+                    <gauge:Scale RimColor="DeepSkyBlue" RimThickness="20" RadiusFactor="1" ShowTicks="False"
+                                 StartValue="0" EndValue="100" Interval="10" LabelOffset="0.75" LabelColor="#424242"
+                                 LabelFontSize ="15">
+
+                        <gauge:Scale.Pointers>
+                            <gauge:MarkerPointer MarkerShape="InvertedTriangle" MarkerHeight="18" MarkerWidth="18"
+                                                 Value="30" EnableAnimation="False" EnableDragging="True"
+                                                 ValueChangeStarted="MarkerPointer_ValueChangeStarted"/>
+                        </gauge:Scale.Pointers>
+
+                    </gauge:Scale>
+                </gauge:SfCircularGauge.Scales>
+            </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void MarkerPointer_ValueChangeStarted(object sender, Syncfusion.SfGauge.XForms.PointerValueChangedEventArgs e)
+        {
+
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### ValueChanging event
+
+Invoked during a drag prior to select a new value for the pointer.
+
+The `ValueChanging` event contains the following arguments.
+
+* `NewValue` : Gets the new pointer value which is updated while dragging.
+* `OldValue` : Gets the old value of pointer which is updated by pointer dragging.
+* `Cancel` : Used to restrict the updating pointer value and cancel dragging.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+                        <gauge:Scale.Pointers>
+                            <gauge:MarkerPointer MarkerShape="InvertedTriangle" MarkerHeight="18" MarkerWidth="18"
+                                                 Value="30" EnableAnimation="False" EnableDragging="True"
+                                                 ValueChanging="MarkerPointer_ValueChanging"/>
+                        </gauge:Scale.Pointers>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void MarkerPointer_ValueChanging(object sender, Syncfusion.SfGauge.XForms.PointerValueChangingEventArgs e)
+        {
+
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### ValueChanged event
+
+Invoked when the user is selecting a new value for the pointer by dragging.
+
+The `ValueChanged` event contains the following arguments.
+
+* `Value` : Gets the updated value of pointer.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+       <gauge:Scale.Pointers>
+                            <gauge:MarkerPointer MarkerShape="InvertedTriangle" MarkerHeight="18" MarkerWidth="18"
+                                                 Value="30" EnableAnimation="False" EnableDragging="True"
+                                                 ValueChanged="MarkerPointer_ValueChanged"/>
+                        </gauge:Scale.Pointers>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void MarkerPointer_ValueChanged(object sender, Syncfusion.SfGauge.XForms.PointerValueChangedEventArgs e)
+        {
+
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+### ValueChangeCompleted event
+
+Invoked after a new value has been selected by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging and ValueChanged) will be called prior to the `ValueChangeCompleted` event.
+
+This event will notify the completion of dragging with a new value being selected.
+
+The `ValueChangeCompleted` event contains the following arguments.
+
+* `Value` : Gets the updated value of pointer.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+            <gauge:Scale.Pointers>
+                            <gauge:MarkerPointer MarkerShape="InvertedTriangle" MarkerHeight="18" MarkerWidth="18"
+                                                 Value="30" EnableAnimation="False" EnableDragging="True"
+                                                 ValueChangeCompleted="MarkerPointer_ValueChangeCompleted"/>
+                        </gauge:Scale.Pointers>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void MarkerPointer_ValueChangeCompleted(object sender, Syncfusion.SfGauge.XForms.PointerValueChangedEventArgs e)
+        {
+
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
 
 ## See Also
 

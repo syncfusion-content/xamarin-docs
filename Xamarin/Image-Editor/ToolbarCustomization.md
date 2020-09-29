@@ -394,3 +394,35 @@ To change the toolbar item Text and Icon height, refer to the following code sni
 {% endhighlight %}
 
 {% endtabs %}
+
+## Toolbar color customization
+
+Border color of the toolbar can be customized with the help of  `BorderColor` property in toolbar settings.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+    <editor:SfImageEditor x:Name="editor" Source="{Binding Image}" >
+                <editor:SfImageEditor.ToolbarSettings>
+                    <editor:ToolbarSettings BorderColor="Red"></editor:ToolbarSettings>
+                </editor:SfImageEditor.ToolbarSettings>        
+            </editor:SfImageEditor>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+         SfImageEditor editor = new SfImageEditor();
+            editor.Source = ImageSource.FromResource("XFormsUG.RoadView.jpeg");
+            editor.ToolbarSettings = new ToolbarSettings()
+            {
+                BorderColor = Color.Red,
+            };
+            this.Content = editor;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfImageEditor](ImageEditor_images/BorderColor.png)

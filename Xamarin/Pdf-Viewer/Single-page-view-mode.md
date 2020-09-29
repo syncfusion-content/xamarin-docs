@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Single page view mode in PDF Viewer Xamarin Forms | Syncfusion
-description: PDF Viewer provides option to view PDFs page by page with horizontal navigation support
+description: The Syncfusion Xamarin.Forms PDF Viewer provides option to view the PDF documents page by page with horizontal navigation support.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
@@ -57,3 +57,19 @@ private void PdfViewerControl_PageViewModeChanged1(object sender, PageViewModeCh
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to disable the page navigation by flipping in a single page view mode
+
+The page navigation by flipping the pages in a single page view mode can be enabled or disabled by setting the `IsPageFlipEnabled` API to `true` or `false` respectively.
+
+N>The default value of the `IsPageFlipEnabled` API is set to `true`. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Disable the page navigation by flipping pages
+pdfViewer.IsPageFlipEnabled= false;
+
+{% endhighlight %}
+{% endtabs %}
+

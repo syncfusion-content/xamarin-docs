@@ -242,3 +242,108 @@ Panning feature allows you move the visible area of the maps when it is zoomed i
 {% endhighlight %}
 
 {% endtabs %}
+
+## Events
+
+### Tapped event
+
+Invoked when tapped on the maps. `Tapped` event has the following arguments.
+
+* `Position` : Gets the screen point (x, y) coordinates of maps on tapped. The following code snippet adds the marker at the tapped location.
+
+{% tabs %}
+
+{% highlight xml %}
+
+       <maps:SfMaps Tapped="SfMaps_Tapped" >
+                <maps:SfMaps.Layers>
+                    <maps:ImageryLayer x:Name="layer"/>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+        private void SfMaps_Tapped(object sender, Syncfusion.SfMaps.XForms.MapTappedEventArgs e)
+        {
+            var screenPoint = e.Position;
+            var geoPoint = layer.GetLatLonFromPoint(screenPoint);
+            MapMarker marker = new MapMarker();
+            marker.Latitude = geoPoint.Y.ToString();
+            marker.Longitude = geoPoint.X.ToString();
+            layer.Markers.Add(marker);
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Adding markers on tap](Images/TappedEvent.png)
+
+### Panning event
+
+Invoked while performing panning in the maps. `Panning` event has the following arguments.
+
+* `Position` : Gets the screen point (x, y) coordinates of maps on panning.
+* `Started` : Gets the boolean value whether the control started panning action or not.  
+* `Completed` : Gets the boolean value whether the control has completed panning action or not.
+
+N> If when both `Started` and `Completed` are in false state it indicates that the panning is in progress state.
+
+By following the below code snippet we can add a sample flight route by dragging on the map.
+
+Using this pan event we can add a sublayer to draw polyline.
+
+{% tabs %}
+
+{% highlight xml %}
+
+     <maps:SfMaps EnablePanning="False" Panning="SfMaps_Panning" >
+                <maps:SfMaps.Layers>
+                    <maps:ImageryLayer x:Name="layer">
+                        <maps:ImageryLayer.Markers>
+                            <maps:MapMarker Label="US" Latitude="37.0902" Longitude="-95.7129"></maps:MapMarker>
+                            <maps:MapMarker Label="India" Latitude="20.5937" Longitude="78.9629"></maps:MapMarker>
+                        </maps:ImageryLayer.Markers>
+                    </maps:ImageryLayer>
+                </maps:SfMaps.Layers>
+            </maps:SfMaps>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+       private int layerCount = -1;
+
+       private void SfMaps_Panning(object sender, MapPanUpdatedEventArgs e)
+        {
+            var maps = (sender as SfMaps);
+            if (maps.EnablePanning) return;
+            var screenPoint = e.Position;
+            var geoPoint = layer.GetLatLonFromPoint(screenPoint);
+
+            if (e.Started)
+            {
+                layerCount++;
+                ShapeFileLayer fileLayer = new ShapeFileLayer();
+                fileLayer.ShapeType = ShapeType.Polyline;
+                fileLayer.ShapeSettings = new ShapeSetting()
+                {
+                    ShapeFill = Xamarin.Forms.Color.Red,
+                    ShapeStrokeThickness = 2
+                };
+
+                layer.Sublayers.Add(fileLayer);
+            }
+            if (!e.Started && !e.Completed)
+            {
+                layer.Sublayers[layerCount].Points.Add(new Point(geoPoint.Y, geoPoint.X));
+            }
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Route map](Images/PanningEvent.png)

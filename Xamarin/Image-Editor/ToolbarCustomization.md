@@ -208,6 +208,40 @@ N> You can customize an icon by specifying its [names](/xamarin/sfimageeditor/to
 
 ![SfImageEditor](ImageEditor_images/Toolbaritemvisibiliy.png)
 
+## To hide/show the delete button
+
+You can show or hide the delete button which employed in deleting the selected shapes added in image editor with the help of `IsDeleteButtonVisible` property in ToolbarSettings.
+
+Setting false to this property will never show the delete button. On setting true, delete button will get enabled on selecting the shapes.
+
+{% tabs %}
+
+{% highlight XAML %}
+
+       <editor:SfImageEditor Source="{Binding Image}">
+                <editor:SfImageEditor.ToolbarSettings>
+                    <editor:ToolbarSettings IsDeleteButtonVisible="True"></editor:ToolbarSettings>
+                </editor:SfImageEditor.ToolbarSettings>                
+            </editor:SfImageEditor>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+            SfImageEditor editor = new SfImageEditor();
+            editor.Source = ImageSource.FromResource("XFormsUG.RoadView.jpeg");
+            editor.ToolbarSettings = new ToolbarSettings()
+            {
+                IsDeleteButtonVisible = true,
+            };
+            this.Content = editor;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
+![SfImageEditor](ImageEditor_images/DeleteIcon.PNG)
 
 ## To customize the ColorPalette
 

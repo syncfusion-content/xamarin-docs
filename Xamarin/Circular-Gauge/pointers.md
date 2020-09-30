@@ -930,9 +930,9 @@ The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion
 
 ### ValueChangeStarted event
 
-Invoked when the user starts selecting a new value of pointer by initiating the dragging. While dragging the pointer, other events (ValueChanging, ValueChanged and ValueChangeCompleted) will be followed after this event.
+Invoked when the user starts selecting a new value of the pointer by initiating the dragging. While dragging the pointer, other events (ValueChanging, ValueChanged, and ValueChangeCompleted) will be followed after this event.
 
-The `ValueChangeStarted` event contains the following arguments.
+The `ValueChangeStarted` event contains the following argument.
 
 * `Value` : This value will be the last value the pointer had before the changes began.
 
@@ -973,10 +973,10 @@ The `ValueChangeStarted` event contains the following arguments.
 
 Invoked during a drag prior to select a new value for the pointer.
 
-The `ValueChanging` event contains the following arguments.
+The `ValueChanging` event contains the following argument.
 
-* `NewValue` : Gets the new pointer value which is updated while dragging.
-* `OldValue` : Gets the old value of pointer which is updated by pointer dragging.
+* `NewValue` : Gets the new pointer value, which is updated while dragging.
+* `OldValue` : Gets the old value of the pointer, which is updated by pointer dragging.
 * `Cancel` : Used to restrict the updating pointer value and cancel dragging.
 
 {% tabs %}
@@ -1006,9 +1006,9 @@ The `ValueChanging` event contains the following arguments.
 
 Invoked when the user is selecting a new value for the pointer by dragging.
 
-The `ValueChanged` event contains the following arguments.
+The `ValueChanged` event contains the following argument.
 
-* `Value` : Gets the updated value of pointer.
+* `Value` : Gets the updated value of the pointer.
 
 {% tabs %}
 
@@ -1035,13 +1035,13 @@ The `ValueChanged` event contains the following arguments.
 
 ### ValueChangeCompleted event
 
-Invoked after a new value has been selected by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging and ValueChanged) will be called prior to the `ValueChangeCompleted` event.
+Invoked after a new value has been selected by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging, and ValueChanged) will be called prior to the `ValueChangeCompleted` event.
 
 This event will notify the completion of dragging with a new value being selected.
 
-The `ValueChangeCompleted` event contains the following arguments.
+The `ValueChangeCompleted` event contains the following argument.
 
-* `Value` : Gets the updated value of pointer.
+* `Value` : Gets the updated value of the pointer.
 
 {% tabs %}
 
@@ -1066,7 +1066,7 @@ The `ValueChangeCompleted` event contains the following arguments.
 
 {% endtabs %}
 
-## See Also
+## See also
 
 [How to set RangeCap to RangePointer in Xamarin.Forms SfCircularGauge](https://www.syncfusion.com/kb/10580/how-to-set-rangecap-to-rangepointer-in-xamarin-forms-sfcirculargauge)
 

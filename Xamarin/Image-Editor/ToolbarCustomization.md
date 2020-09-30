@@ -208,11 +208,11 @@ N> You can customize an icon by specifying its [names](/xamarin/sfimageeditor/to
 
 ![SfImageEditor](ImageEditor_images/Toolbaritemvisibiliy.png)
 
-## To hide/show the delete button
+## To hide or show the delete button
 
-You can show or hide the delete button which employed in deleting the selected shapes added in image editor with the help of `IsDeleteButtonVisible` property in ToolbarSettings.
+You can show or hide the delete button, which employed in deleting the selected shapes added in image editor with the help of IsDeleteButtonVisible property in ToolbarSettings.
 
-Setting false to this property will never show the delete button. On setting true, delete button will get enabled on selecting the shapes.
+Setting false for this property will never show the delete button. On setting true, delete button will get enabled by selecting the shapes.
 
 {% tabs %}
 
@@ -276,7 +276,7 @@ You can change the default colors of the [`ColorPalette`](https://help.syncfusio
 
 ### Customize color palette size.
 
-Size of the toolbar color palette can be customized using the `ColorPaletteItemSize` property in ToolbarSettings. Its minimum size is 10 and it will consider the FooterToolbarHeight as the maximum value.
+Size of the toolbar color palette can be customized using the `ColorPaletteItemSize` property in ToolbarSettings. The minimum size is 10 and it will consider the FooterToolbarHeight as the maximum value.
 
 {% tabs %}
 
@@ -397,7 +397,7 @@ To change the toolbar item Text and Icon height, refer to the following code sni
 
 ## Toolbar color customization
 
-Border color of the toolbar can be customized with the help of  `BorderColor` property in toolbar settings.
+Border color of the toolbar can be customized with the help of  `BorderColor` property in ToolbarSettings.
 
 {% tabs %}
 

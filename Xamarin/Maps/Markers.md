@@ -849,9 +849,9 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 
 ### Marker z ordering
 
-MarkerSelected event has the below argument which involve in z order change of the selected marker.
+MarkerSelected event has the following argument, which involves in z order change of the selected marker.
 
-* `CanBringToTop` : When set to true the selected marker will be the top of all other markers.
+* `CanBringToTop` : When set to true the selected marker will be on the top of all other markers.
 
 {% tabs %}
 

@@ -1,13 +1,13 @@
 ---
 layout: post
 title: User Interaction in Syncfusion SfMaps control for Xamarin.Forms
-description: This section describes the user interaction on maps control such as selection, zooming and panning.
+description: This section describes the user interaction such as selection, zooming, and panning in SfMaps.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# User interaction
+# User interaction features in SfMaps control
 
 Options such as zooming, panning, and selection enable effective interaction on map elements.
 
@@ -247,9 +247,9 @@ Panning feature allows you move the visible area of the maps when it is zoomed i
 
 ### Tapped event
 
-Invoked when tapped on the maps. `Tapped` event has the following arguments.
+Invoked when tapped on the maps. `Tapped` event has the following argument.
 
-* `Position` : Gets the screen point (x, y) coordinates of maps on tapped. The following code snippet adds the marker at the tapped location.
+* `Position` : Gets the screen point (x, y) coordinates of maps on tapping. The following code sample adds the marker at the tapped location.
 
 {% tabs %}
 
@@ -289,11 +289,11 @@ Invoked while performing panning in the maps. `Panning` event has the following 
 * `Started` : Gets the boolean value whether the control started panning action or not.  
 * `Completed` : Gets the boolean value whether the control has completed panning action or not.
 
-N> If when both `Started` and `Completed` are in false state it indicates that the panning is in progress state.
+N> If both `Started` and `Completed` are in false state, it indicates that the panning is in progress state.
 
-By following the below code snippet we can add a sample flight route by dragging on the map.
+By the following code sample, you can add a sample flight route by dragging on the map.
 
-Using this pan event we can add a sublayer to draw polyline.
+Using this pan event, you can add a sublayer to draw the polyline.
 
 {% tabs %}
 

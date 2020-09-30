@@ -191,5 +191,5 @@ maskededit.MaskType = MaskType.RegEx;
 
 ## Cursor position
 
-Cursor position in the entry can either be obtained or updated using `CursorPosition` property in  masked edit.
+Cursor position in the entry can either be obtained or updated using `CursorPosition` property in masked edit.
 

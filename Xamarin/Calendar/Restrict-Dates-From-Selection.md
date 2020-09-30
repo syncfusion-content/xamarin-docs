@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Blackout dates | SfCalendar | Xamarin.Forms | Syncfusion
-description: Learn how to set min and max date in calendar
+title: Restrict Dates From Selection in Xamarin Calendar | Syncfusion
+description: This section explains on how to set min and max date in calendar (SfCalendar) control for Xamarin platforms.
 platform: Xamarin
 control: Calendar
 documentation: ug

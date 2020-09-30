@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Drag and Drop Appointments | Xamarin.Forms | Syncfusion
+title: Appointment Drag and Drop in Xamarin Scheduler | Syncfusion
 description: Describes how to drag and drop the appointments and its customization of Schedule (SfSchedule) control.
 platform: xamarin
 control: SfSchedule
@@ -150,7 +150,7 @@ if (schedule.WorkWeekViewSettings.NonAccessibleBlocks[0].StartTime == e.DropTime
 {% endtabs %}
 
 ## Customizing the Drag and Drop environment
-Using [DragDropSettings](http://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfSchedule.XForms~Syncfusion.SfSchedule.XForms.SfSchedule~DragDropSettings.html) property of schedule, you can handle the behavior of drag and drop in Schedule.
+Using [DragDropSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_DragDropSettings) property of schedule, you can handle the behavior of drag and drop in Schedule.
 
 {% tabs %}
 {% highlight xaml %}

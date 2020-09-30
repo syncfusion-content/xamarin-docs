@@ -400,9 +400,9 @@ public class ViewModel
 
 ## Showing label on bubble marker.
 
-The [`ShowMapItems`](https://helpsyncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShowMapItems.html) property determines whether the label should be displayed on the bubble marker or not. Set the [`ShapeValuePath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeSetting.html#Syncfusion_SfMaps_XForms_ShapeSetting_ShapeValuePath) property to get the labels.
+The [`ShowMapItems`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_ShowMapItems) property determines whether the label should be displayed on the bubble marker or not. Set the [`ShapeValuePath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeSetting.html#Syncfusion_SfMaps_XForms_ShapeSetting_ShapeValuePath) property to get the labels.
 
-N> The default value of [`ShowMapItems`](https://helpsyncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShowMapItems.html) property is true
+N> The default value of [`ShowMapItems`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_ShowMapItems) property is true
 
 {% tabs %}
 

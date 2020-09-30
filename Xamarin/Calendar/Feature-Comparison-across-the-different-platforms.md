@@ -113,7 +113,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[DataSource](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~DataSource.html)'| markdownify }}
+{{'[DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_DataSource)'| markdownify }}
 </td>
 </tr>
 
@@ -129,7 +129,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[IsVisible](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~IsVisible.html)'| markdownify }}
+{{'[IsVisible](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html)'| markdownify }}
 </td>
 </tr>
 
@@ -241,7 +241,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[SelectedDates](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedDates.html)'| markdownify }}
+{{'[SelectedDates](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectedDates)'| markdownify }}
 </td>
 </tr>
 
@@ -257,7 +257,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[HeaderHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~HeaderHeight.html)'| markdownify }}
+{{'[HeaderHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_HeaderHeight)'| markdownify }}
 </td>
 </tr>
 
@@ -273,7 +273,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[ShowHeader](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowHeader.html)'| markdownify }}
+{{'[ShowHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_ShowHeader)'| markdownify }}
 </td>
 </tr>
 
@@ -289,9 +289,9 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[NavigationButtonHeight](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationButtonHeight.html)'| markdownify }} 
-{{'[NavigationButtonWidth](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationButtonWidth.html)'| markdownify }}  
-{{'[NavigationArrowThickness](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationArrowThickness.html)'| markdownify }} 
+{{'[NavigationButtonHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_NavigationButtonHeight)'| markdownify }} 
+{{'[NavigationButtonWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_NavigationButtonWidth)'| markdownify }}  
+{{'[NavigationArrowThickness](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_NavigationArrowThickness)'| markdownify }} 
 </td>
 </tr>
 
@@ -307,7 +307,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[ShowNavigationButtons](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowNavigationButtons.html)'| markdownify }}
+{{'[ShowNavigationButtons](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_ShowNavigationButtons)'| markdownify }}
 </td>
 </tr>
 
@@ -323,7 +323,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MonthViewSettings.html)'| markdownify }}
+{{'[MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MonthViewSettings)'| markdownify }}
 </td>
 </tr>
 
@@ -339,7 +339,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>No</p>
 </td>
 <td align="center">
-{{'[YearViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~YearViewSettings.html)'| markdownify }}
+{{'[YearViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_YearViewSettings)'| markdownify }}
 </td>
 </tr>
 
@@ -355,7 +355,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>No</p>
 </td>
 <td align="center">
-{{'[ToggleDaySelection](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ToggleDaySelection.html)'| markdownify }}
+{{'[ToggleDaySelection](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_ToggleDaySelection)'| markdownify }}
 </td>
 </tr>
 
@@ -371,7 +371,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[MonthViewSettings](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MonthViewSettings.html)'| markdownify }}
+{{'[MonthViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MonthViewSettings)'| markdownify }}
 </td>
 </tr>
 
@@ -388,7 +388,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[NavigateToMonthOnInActiveDatesSelection](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigateToMonthOnInActiveDatesSelection.html)'| markdownify }}
+{{'[NavigateToMonthOnInActiveDatesSelection](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_NavigateToMonthOnInActiveDatesSelection)'| markdownify }}
 </td>
 </tr>
 
@@ -423,7 +423,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p align="center">Yes</p>
 </td>
 <td align="center">
-{{'[EnableSwiping](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~EnableSwiping.html)'| markdownify }}
+{{'[EnableSwiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_EnableSwiping)'| markdownify }}
 </td>
 </tr>
 
@@ -439,7 +439,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>No</p>
 </td>
 <td align="center">
-{{'[MaximumEventIndicatorCount](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~MaximumEventIndicatorCount.html)'| markdownify }}
+{{'[MaximumEventIndicatorCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_MaximumEventIndicatorCount)'| markdownify }}
 </td>
 </tr>
 
@@ -457,7 +457,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[SelectedRange](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~SelectedRange.html)'| markdownify }}
+{{'[SelectedRange](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectedRange)'| markdownify }}
 </td>
 </tr>
 <tr>
@@ -500,7 +500,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Vertical</p><br>
 </td>
 <td align="center">
-{{'[NavigationDirection](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~NavigationDirection.html)'| markdownify }}
+{{'[NavigationDirection](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_NavigationDirection)'| markdownify }}
 </td>
 </tr>
 
@@ -516,7 +516,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[ShowYearView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~ShowYearView.html)'| markdownify }}
+{{'[ShowYearView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_ShowYearView)'| markdownify }}
 </td>
 </tr>
 
@@ -532,7 +532,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[HeaderView](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~HeaderView.html)'| markdownify }}
+{{'[HeaderView](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_HeaderView)'| markdownify }}
 </td>
 </tr>
 
@@ -548,7 +548,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[CellTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellTemplateProperty.html)'| markdownify }}
+{{'[CellTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthViewSettings.html#Syncfusion_SfCalendar_XForms_MonthViewSettings_CellTemplateProperty)'| markdownify }}
 </td>
 </tr>
 
@@ -564,8 +564,8 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[CellTemplate](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthViewSettings~CellTemplateProperty.html)'| markdownify }} and 
-{{'[CellBindingContext](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthCell~CellBindingContext.html)'| markdownify }} in an argument of {{'[OnMonthCellLoaded](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~OnMonthCellLoaded_EV.html)'| markdownify }}
+{{'[CellTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthViewSettings.html#Syncfusion_SfCalendar_XForms_MonthViewSettings_CellTemplateProperty)'| markdownify }} and 
+{{'[CellBindingContext](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthCell~CellBindingContext.html)'| markdownify }} in an argument of {{'[OnMonthCellLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html)'| markdownify }}
 </td>
 </tr>
 

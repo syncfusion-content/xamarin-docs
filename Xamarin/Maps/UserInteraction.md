@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User Interaction in Syncfusion SfMaps control for Xamarin.Forms
-description: This section describes the user interaction on maps control.
+description: This section describes the user interaction on maps control such as selection, zooming and panning.
 platform: xamarin
 control: SfMaps
 documentation: ug

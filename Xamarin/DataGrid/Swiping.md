@@ -612,9 +612,9 @@ The following screenshot shows the custom swipe buttons loaded based on the cell
 
 ![Custom Swipe button for Offline](SfDataGrid_images/Offline.png)
 
-## How to enable swiping on Summaries and Unbound row.
+## How to swipe Summary and Unbound rows.
 
-The SfDataGrid allows to swipe `UnboundRow`, `CaptionSummaryRow`, `GroupSummaryRow` and `TableSummaryRow` by setting `e.Cancel` as false in the `SfDataGrid.SwipeStarted` event.
+To swipe the `UnboundRow`, `CaptionSummaryRow`, `GroupSummaryRow` and `TableSummaryRow` set `Cancel` of the `SwipeStartedEventArgs` as false in the `SfDataGrid.SwipeStarted` event handler. By default `Cancel` is true for all non data rows.
 
 {% highlight c# %}
 

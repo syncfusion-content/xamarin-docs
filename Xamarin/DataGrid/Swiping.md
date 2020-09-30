@@ -612,6 +612,39 @@ The following screenshot shows the custom swipe buttons loaded based on the cell
 
 ![Custom Swipe button for Offline](SfDataGrid_images/Offline.png)
 
+## How to swipe Summary and Unbound rows in Xamarin.Forms DataGrid(SfDataGrid).
+
+To swipe the `UnboundRow`, `CaptionSummaryRow`, `GroupSummaryRow` and `TableSummaryRow` set `Cancel` of the `SwipeStartedEventArgs` as false in the `SfDataGrid.SwipeStarted` event handler. By default `Cancel` is true for all non data rows.
+
+{% highlight c# %}
+
+private void DataGrid_SwipeStarted(object sender, Syncfusion.SfDataGrid.XForms.SwipeStartedEventArgs e)
+{   
+    if (this.dataGrid.IsUnboundRow(e.RowIndex))
+    {
+        e.Cancel = false;
+    }
+    else if (this.dataGrid.IsCaptionSummaryRow(e.RowIndex))
+    {
+        e.Cancel = false;
+    }
+    else if(e.RowData.GetType() == typeof(SummaryRecordEntry) )
+    {
+        if((e.RowData as SummaryRecordEntry).Parent?.GetType() == typeof(Group))
+        {
+            //// Enable swiping for group summary row.
+            e.Cancel = false;
+        }
+        else
+        {
+            //// Enable swiping for table summary row.
+            e.Cancel = false;
+        }
+    }
+}
+
+{% endhighlight %}
+
 ## Limitations
 
 When data grid is loaded in MasterDetailPage with `AllowSwiping` as true, it behaves as follows: 

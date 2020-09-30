@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TreeMapLevels in Syncfusion TreeMap control for Xamarin.Forms
-description: This section describes on how to categorize the levels and its usage in Syncfusion TreeMap control.
+description: This section describes on how to categorize the levels and populate data for each level with their features in Syncfusion TreeMap control.
 platform: xamarin
 control: TreeMap
 documentation: ug

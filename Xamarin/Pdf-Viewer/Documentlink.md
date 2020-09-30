@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Document link in PDF Viewer Xamarin.Forms | Syncfusion
+title:  Table of content navigation in Xamarin Pdf Viewer | Syncfusion
 description: Document Link Annotation or Table of content support in PDF Viewer Xamarin.Forms allows the user to navigate to specific destination within PDF document.
 platform: Xamarin
 control: SfPdfViewer

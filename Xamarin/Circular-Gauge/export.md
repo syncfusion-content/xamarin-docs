@@ -33,7 +33,7 @@ The exported image will be saved in the different location across the platforms.
 
 **iOS** – The image will be saved inside the "Photos/Album" directory.
 
-**Windows Phone** – The image will be saved inside the "/Pictures/Saved Pictures" directory.
+**UWP** – The image will be saved inside the "/Pictures/Saved Pictures" directory.
 
 N> In order to save the image, you have to enable the permission to write the file in device storage.
 

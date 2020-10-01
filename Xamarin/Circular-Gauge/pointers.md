@@ -917,7 +917,7 @@ N> By default, the pointer drag was disabled.
 
 ## Event
 
-### PointerPositionChanged event
+### Pointer position changed event
 
 The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html) event occurs when the pointer position was changed. The PointerPositionChangedArgs argument contains the following information:
 
@@ -928,9 +928,9 @@ The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion
 * rangeStartPosition - Gets or sets the range start position.
 * pointerValuePosition - Gets or sets the pointer value position.
 
-### ValueChangeStarted event
+### Value change started event
 
-Invoked when the user starts selecting a new value of the pointer by initiating the dragging. While dragging the pointer, other events (ValueChanging, ValueChanged, and ValueChangeCompleted) will be followed after this event.
+Invoked when the user starts updating a new value of the pointer by initiating the dragging. While dragging the pointer, other events (ValueChanging, ValueChanged, and ValueChangeCompleted) will be followed after this event.
 
 The `ValueChangeStarted` event contains the following argument.
 
@@ -969,9 +969,9 @@ The `ValueChangeStarted` event contains the following argument.
 
 {% endtabs %}
 
-### ValueChanging event
+### Value changing event
 
-Invoked during a drag prior to select a new value for the pointer.
+Invoked during a drag when the user is updating before a new value for the pointer by dragging
 
 The `ValueChanging` event contains the following argument.
 
@@ -1002,9 +1002,9 @@ The `ValueChanging` event contains the following argument.
 
 {% endtabs %}
 
-### ValueChanged event
+### Value changed event
 
-Invoked when the user is selecting a new value for the pointer by dragging.
+Invoked during a drag when the user is updating a new value for the pointer by dragging.
 
 The `ValueChanged` event contains the following argument.
 
@@ -1033,11 +1033,11 @@ The `ValueChanged` event contains the following argument.
 
 {% endtabs %}
 
-### ValueChangeCompleted event
+### Value change completed event
 
-Invoked after a new value has been selected by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging, and ValueChanged) will be called prior to the `ValueChangeCompleted` event.
+Invoked after a new value has been updated by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging, and ValueChanged) will be called prior to the `ValueChangeCompleted` event.
 
-This event will notify the completion of dragging with a new value being selected.
+This event will notify the completion of dragging with a new value being updated.
 
 The `ValueChangeCompleted` event contains the following argument.
 

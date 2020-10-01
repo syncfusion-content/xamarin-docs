@@ -919,7 +919,7 @@ N> By default, the pointer drag was disabled.
 
 ### Pointer position changed event
 
-The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html) event occurs when the pointer position was changed. The PointerPositionChangedArgs argument contains the following information:
+The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html#Syncfusion_SfGauge_XForms_SfCircularGauge_PointerPositionChanged) event occurs when the pointer position was changed. The PointerPositionChangedArgs argument contains the following information:
 
 * [`Pointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Pointer.html) - Gets the dragged pointer.
 * [`Scale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html) - Gets the dragged pointer scale.
@@ -930,9 +930,9 @@ The [`PointerPositionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion
 
 ### Value change started event
 
-Invoked when the user starts updating a new value of the pointer by initiating the dragging. While dragging the pointer, other events (ValueChanging, ValueChanged, and ValueChangeCompleted) will be followed after this event.
+Called when the user starts updating a new value of the pointer by initiating the dragging. While dragging the pointer, other events ([`ValueChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Pointer.html#Syncfusion_SfGauge_XForms_Pointer_ValueChanging), [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Pointer.html#Syncfusion_SfGauge_XForms_Pointer_ValueChanged), and [`ValueChangeCompleted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Pointer.html#Syncfusion_SfGauge_XForms_Pointer_ValueChangeCompleted)) will be followed after this event.
 
-The `ValueChangeStarted` event contains the following argument.
+The [`ValueChangeStarted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Pointer.html#Syncfusion_SfGauge_XForms_Pointer_ValueChangeStarted) event contains the following argument.
 
 * `Value` : This value will be the last value the pointer had before the changes began.
 
@@ -971,9 +971,9 @@ The `ValueChangeStarted` event contains the following argument.
 
 ### Value changing event
 
-Invoked during a drag when the user is updating before a new value for the pointer by dragging
+Called during a drag when the user is updating before a new value for the pointer by dragging
 
-The `ValueChanging` event contains the following argument.
+The [`ValueChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Pointer.html#Syncfusion_SfGauge_XForms_Pointer_ValueChanging) event contains the following argument.
 
 * `NewValue` : Gets the new pointer value, which is updated while dragging.
 * `OldValue` : Gets the old value of the pointer, which is updated by pointer dragging.
@@ -1004,9 +1004,9 @@ The `ValueChanging` event contains the following argument.
 
 ### Value changed event
 
-Invoked during a drag when the user is updating a new value for the pointer by dragging.
+Called during a drag when the user is updating a new value for the pointer by dragging.
 
-The `ValueChanged` event contains the following argument.
+The [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Pointer.html#Syncfusion_SfGauge_XForms_Pointer_ValueChanged) event contains the following argument.
 
 * `Value` : Gets the updated value of the pointer.
 
@@ -1035,11 +1035,11 @@ The `ValueChanged` event contains the following argument.
 
 ### Value change completed event
 
-Invoked after a new value has been updated by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging, and ValueChanged) will be called prior to the `ValueChangeCompleted` event.
+Called after a new value has been updated by terminating the dragging of the pointer. While dragging the pointer, other events (ValueChangeStarted, ValueChanging, and ValueChanged) will be called prior to the `ValueChangeCompleted` event.
 
 This event will notify the completion of dragging with a new value being updated.
 
-The `ValueChangeCompleted` event contains the following argument.
+The [`ValueChangeCompleted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Pointer.html#Syncfusion_SfGauge_XForms_Pointer_ValueChangeCompleted) event contains the following argument.
 
 * `Value` : Gets the updated value of the pointer.
 

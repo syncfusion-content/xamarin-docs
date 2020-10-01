@@ -191,5 +191,5 @@ maskededit.MaskType = MaskType.RegEx;
 
 ## Cursor position
 
-Cursor position in the entry can either be obtained or updated using `CursorPosition` property in masked edit.
+Cursor position in the entry can either be obtained or updated using [`CursorPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_CursorPosition) property in masked edit.
 

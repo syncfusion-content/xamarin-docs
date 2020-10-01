@@ -39,7 +39,7 @@ You can enable or disable the zooming functionality by setting the [`EnableZoomi
 
 ### Zoom level
 
-Programmatically, you can zoom the loaded image without any interaction by setting a value to `ZoomLevel` property. At the same time, you can get the information about whether the image is zoomed or not by accessing the `IsImageZoomed` property in image editor.
+Programmatically, you can zoom the loaded image without any interaction by setting a value to [`ZoomLevel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ZoomLevel) property. At the same time, you can get the information about whether the image is zoomed or not by accessing the [`IsImageZoomed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_IsImageZoomed) property in image editor.
 
 {% tabs %}
 

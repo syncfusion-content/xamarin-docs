@@ -247,7 +247,7 @@ Panning feature allows you move the visible area of the maps when it is zoomed i
 
 ### Tapped event
 
-Invoked when tapped on the maps. `Tapped` event has the following argument.
+Called when tapped on the maps. [`Tapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.SfMaps.html#Syncfusion_SfMaps_XForms_SfMaps_Tapped) event has the following argument.
 
 * `Position` : Gets the screen point (x, y) coordinates of maps on tapping. The following code sample adds the marker at the tapped location.
 
@@ -281,13 +281,13 @@ Invoked when tapped on the maps. `Tapped` event has the following argument.
 
 ### Panning event
 
-Invoked while performing panning in the maps. `Panning` event has the following arguments.
+Called while performing panning in the maps. [`Panning`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.SfMaps.html#Syncfusion_SfMaps_XForms_SfMaps_Panning) event has the following arguments.
 
 * `Position` : Gets the screen point (x, y) coordinates of maps on panning.
 * `Started` : Gets the boolean value whether the control started panning action or not.  
 * `Completed` : Gets the boolean value whether the control has completed panning action or not.
 
-N> If both `Started` and `Completed` are in false state, it indicates that the panning is in progress state.
+N> If both [`Started`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapPanUpdatedEventArgs.html#Syncfusion_SfMaps_XForms_MapPanUpdatedEventArgs_Started) and [`Completed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapPanUpdatedEventArgs.html#Syncfusion_SfMaps_XForms_MapPanUpdatedEventArgs_Completed) are in false state, it indicates that the panning is in progress state.
 
 By the following code sample, you can add a sample flight route by dragging on the map.
 

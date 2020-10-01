@@ -210,7 +210,7 @@ N> You can customize an icon by specifying its [names](/xamarin/sfimageeditor/to
 
 ## To hide or show the delete button
 
-You can show or hide the delete button, which employed in deleting the selected shapes added in image editor with the help of `IsDeleteButtonVisible` property in [`ToolbarSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ToolbarSettings.html).
+You can show or hide the delete button, which employed in deleting the selected shapes added in image editor with the help of [`IsDeleteButtonVisible`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ToolbarSettings.html#Syncfusion_SfImageEditor_XForms_ToolbarSettings_IsDeleteButtonVisible) property in [`ToolbarSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ToolbarSettings.html).
 
 Setting false for this property will never show the delete button. On setting true, delete button will get enabled by selecting the shapes.
 
@@ -365,7 +365,7 @@ To change the toolbar item Text and Icon height, refer to the following code sni
 
 ## Toolbar color customization
 
-Border color of the toolbar can be customized with the help of `BorderColor` property in [`ToolbarSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ToolbarSettings.html).
+Border color of the toolbar can be customized with the help of [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ToolbarSettings.html#Syncfusion_SfImageEditor_XForms_ToolbarSettings_BorderColor) property in [`ToolbarSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ToolbarSettings.html).
 
 {% tabs %}
 

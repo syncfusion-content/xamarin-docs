@@ -117,13 +117,13 @@ private void MaskedEdit_OnMaskInputRejected(object sender, MaskInputRejectedEven
 
 ## Cursor position changing event
 
-Invoked whenever the cursor position gets changed on the entry.
+Called whenever the cursor position gets changed on the entry.
 
-`CursorPositionChanging` event has the following arguments.
+[`CursorPositionChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_CursorPositionChanging) event has the following arguments.
 
-`NewValue` : Gets the current cursor index.
-`OldValue` : Gets the previous cursor index.
-`Cancel` : Gets or sets a value indicating whether to restrict the cursor movement.
+[`NewValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.CursorPositionChangingEventArgs.html#Syncfusion_XForms_MaskedEdit_CursorPositionChangingEventArgs_NewValue) : Gets the current cursor index.
+[`OldValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.CursorPositionChangingEventArgs.html#Syncfusion_XForms_MaskedEdit_CursorPositionChangingEventArgs_OldValue) : Gets the previous cursor index.
+[`Cancel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.CursorPositionChangingEventArgs.html#Syncfusion_XForms_MaskedEdit_CursorPositionChangingEventArgs_Cancel) : Gets or sets a value indicating whether to restrict the cursor movement.
 
 {% tabs %}
 {% highlight xaml %}

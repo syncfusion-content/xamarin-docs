@@ -279,8 +279,6 @@ Invoked when tapped on the maps. `Tapped` event has the following argument.
 
 {% endtabs %}
 
-![Adding markers on tap](Images/TappedEvent.png)
-
 ### Panning event
 
 Invoked while performing panning in the maps. `Panning` event has the following arguments.

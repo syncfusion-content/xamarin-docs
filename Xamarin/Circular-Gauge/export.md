@@ -21,7 +21,7 @@ You can export the circular gauge as an image using [`SaveAsImage`](https://help
 SfCircularGauge circularGauge = new SfCircularGauge();
 ...
 
-circularGauge.SaveAsImage("circularGaugeSample.jpg");
+circularGauge.SaveAsImage("circularGauge.jpg");
 
 {% endhighlight %}
 

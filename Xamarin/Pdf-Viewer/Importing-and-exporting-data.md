@@ -73,7 +73,41 @@ Stream fdfStreamToSave = pdfViewerControl.ExportAnnotations(AnnotationDataFormat
 {% endhighlight %}
 {% endtabs %}
 
-N>While saving the stream returned by the `ExportAnnotations` method, the file name must have the same extension as the file type that was given as the first argument. e.g. In the above case the file type provided is `fdf`, so the saved file extension should be `.fdf`.
+### Export annotations asynchronously
+
+The PDF Viewer allows you to export the current annotations added to the document into a stream asynchronously using the [`ExportAnnotationsAsync`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ExportAnnotationsAsync_Syncfusion_Pdf_Parsing_AnnotationDataFormat_System_Threading_CancellationToken_) method. You can also cancel the asynchronous annotation exporting when it is in progress.
+
+{% tabs %}
+{% highlight c# %}
+
+//Export the annotations asynchronously to the "fdf" data format 
+Stream fdfStreamToSave = await pdfViewerControl.ExportAnnotationsAsync(AnnotationDataFormat.Fdf, cancellationTokenSource);
+
+{% endhighlight %}
+{% endtabs %}
+
+In the above code sample, the `cancellationTokenSource` enables you to cancel the asynchronous annotation exporting when it is in progress.
+
+N>While saving the stream returned by the [`ExportAnnotations`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ExportAnnotations_Syncfusion_Pdf_Parsing_AnnotationDataFormat_) and [`ExportAnnotationsAsync`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ExportAnnotationsAsync_Syncfusion_Pdf_Parsing_AnnotationDataFormat_System_Threading_CancellationToken_) method, the file name must have the same extension as the file type that was given as the first argument. e.g. In the above case the file type provided is `fdf`, so the saved file extension should be `.fdf`.
+
+### Cancel the asynchronous annotations exporting
+
+You can raise the cancel request when the annotations exporting is in progress
+
+{% tabs %}
+{% highlight c# %}
+
+private void cancelButton_Clicked(object sender, EventArgs e)
+ { 
+   cancellationTokenSource.Cancel();
+ }
+
+{% endhighlight %}
+{% endtabs %}
+
+In the above code sample, the `cancellationTokenSource` instance is the same as the one given as the argument when exporting the annotations asynchronously.
+
+N>Calling the above method will not have any effect once the annotations are completely exported. It will stop the exporting process only when it is in progress.
 
 ### Importing annotations
 

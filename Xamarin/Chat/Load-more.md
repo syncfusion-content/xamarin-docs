@@ -148,7 +148,7 @@ public partial class LoadMoreViewModel : INotifyPropertyChanged
 
 {% endtabs %}
 
-![Xamarin Forms Chat manual load more](SfChat_images/xamarin-forms-chat-loadmore-default-template.png)
+![Xamarin Forms Chat manual load more](SfChat_images/Load-more-default-template.gif)
 
 ## Load more automatically
 

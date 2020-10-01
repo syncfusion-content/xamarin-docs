@@ -115,7 +115,7 @@ private void MaskedEdit_OnMaskInputRejected(object sender, MaskInputRejectedEven
 
 ![MaskInputRejected event support in Xamarin.Forms masked edit](SfMaskedEditImages/MaskInputRejectedevent.png)
 
-## CursorPositionChanging event
+## Cursor position changing event
 
 Invoked whenever the cursor position gets changed on the entry.
 

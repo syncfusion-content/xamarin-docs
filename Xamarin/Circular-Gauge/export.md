@@ -8,7 +8,7 @@ control: SfCircularGauge
 documentation: ug
 ---
 
-# Exporting SfCircularGauge as an image and get the stream
+# Export SfCircularGauge as an image and get the stream
 
 ## Export as an image
 

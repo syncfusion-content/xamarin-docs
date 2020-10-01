@@ -791,7 +791,11 @@ N> You can use `MarkerItemsSource` property when using the custom map markers th
 
 The `MarkerSelected` event is fired when a marker is selected. The `CustomView` and `MapMarker` will be passed to `MarkerSelectedEventArgs`.
 
-If you set any view for the `CustomView` property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker.
+The `MarkerSelected` event has the following arguments.
+
+* `MapMarker` : Gets the selected marker.
+* `CustomView` : If you set any view for the `CustomView` property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker.
+* `CanBringToTop` : When set to true the selected marker will be on the top of all other markers.
 
 {% tabs %}
 
@@ -846,46 +850,6 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 {% endtabs %}
 
 ![Marker Selected Image](Images/MarkerSelected.png)
-
-### Marker z ordering
-
-MarkerSelected event has the following argument, which involves in z order change of the selected marker.
-
-* `CanBringToTop` : When set to true the selected marker will be on the top of all other markers.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-       <maps:SfMaps ZoomLevel="2">
-                <maps:SfMaps.Layers>
-                    <maps:ImageryLayer MarkerSelected="ImageryLayer_MarkerSelected">                      
-                        <maps:ImageryLayer.Markers>
-                            <maps:MapMarker Label="DRC"  Latitude="4.0383" Longitude="21.7587"></maps:MapMarker>
-                            <maps:MapMarker Label="Tanzaniya" Latitude="6.3690" Longitude="34.8888"></maps:MapMarker>
-                        </maps:ImageryLayer.Markers>
-                        <maps:ImageryLayer.MarkerSettings>
-                            <maps:MapMarkerSetting IconSize="25" 
-                                                   IconColor="Red" LabelColor="Green" LabelSize="20" ></maps:MapMarkerSetting>
-                        </maps:ImageryLayer.MarkerSettings>
-                    </maps:ImageryLayer>
-                </maps:SfMaps.Layers>
-            </maps:SfMaps>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
- private void ImageryLayer_MarkerSelected(object sender, Syncfusion.SfMaps.XForms.MarkerSelectedEventArgs e)
-        {
-            e.CanBringToTop = true;
-        }
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![Marker Selected Image](Images/ZIndex.png)
 
 ## See Also
 

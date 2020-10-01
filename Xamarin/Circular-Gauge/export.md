@@ -41,7 +41,7 @@ N> In order to save the image, you have to enable the permission to write the fi
 
 ## GetStream
 
-The [`GetStream`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html#Syncfusion_SfGauge_XForms_SfCircularGauge_GetStream) method is used to get the circular gauge as stream asynchronously. The output stream can be passed as an input of any other components which accept the stream such as pdf, excel, word etc.
+The [`GetStream`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html#Syncfusion_SfGauge_XForms_SfCircularGauge_GetStream) method is used to get the circular gauge as stream asynchronously. The output stream can be passed as an input of any other components which accept the stream such as pdf, image etc.
 
 {% tabs %}
 

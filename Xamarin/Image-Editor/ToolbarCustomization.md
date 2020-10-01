@@ -274,38 +274,6 @@ You can change the default colors of the [`ColorPalette`](https://help.syncfusio
 
 {% endtabs %}
 
-### Customize color palette size.
-
-Size of the toolbar color palette can be customized using the `ColorPaletteCircleSize` property in ToolbarSettings. The minimum size is 10 and it will consider the  [`FooterToolbarHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ToolbarSettings.html#Syncfusion_SfImageEditor_XForms_ToolbarSettings_FooterToolbarHeight) as the maximum value.
-
-{% tabs %}
-
-{% highlight XAML %}
-
-     <editor:SfImageEditor x:Name="editor" Source="{Binding Image}" >
-                <editor:SfImageEditor.ToolbarSettings>
-                    <editor:ToolbarSettings ColorPaletteCircleSize="15"></editor:ToolbarSettings>
-                </editor:SfImageEditor.ToolbarSettings>        
-            </editor:SfImageEditor>
-
-{% endhighlight %}
-
-{% highlight C# %}
-
-            SfImageEditor editor = new SfImageEditor();
-            editor.Source = ImageSource.FromResource("XFormsUG.RoadView.jpeg");
-            editor.ToolbarSettings = new ToolbarSettings()
-            {
-                ColorPaletteCircleSize = 15,
-            };
-            this.Content = editor;
-
-{% endhighlight %}
-
-{% endtabs %}
-  
-![SfImageEditor](ImageEditor_images/ColorPalette.PNG)
-
 ## Default Color Selected Index
 
 You can change the default index of the color palette in toolbar. By default, color palette index value is 2.

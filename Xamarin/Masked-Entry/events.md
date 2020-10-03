@@ -114,3 +114,38 @@ private void MaskedEdit_OnMaskInputRejected(object sender, MaskInputRejectedEven
 {% endtabs %}
 
 ![MaskInputRejected event support in Xamarin.Forms masked edit](SfMaskedEditImages/MaskInputRejectedevent.png)
+
+## Cursor position changing event
+
+Called whenever the cursor position gets changed on the entry.
+
+[`CursorPositionChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_CursorPositionChanging) event has the following arguments.
+
+[`NewValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.CursorPositionChangingEventArgs.html#Syncfusion_XForms_MaskedEdit_CursorPositionChangingEventArgs_NewValue) : Gets the current cursor index.
+[`OldValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.CursorPositionChangingEventArgs.html#Syncfusion_XForms_MaskedEdit_CursorPositionChangingEventArgs_OldValue) : Gets the previous cursor index.
+[`Cancel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.CursorPositionChangingEventArgs.html#Syncfusion_XForms_MaskedEdit_CursorPositionChangingEventArgs_Cancel) : Gets or sets a value indicating whether to restrict the cursor movement.
+
+{% tabs %}
+{% highlight xaml %}
+
+         <edit:SfMaskedEdit x:Name="maskedEdit" Mask="+1 000 000 0000"  
+                  CursorPositionChanging="maskedEdit_CursorPositionChanging"/>
+
+{% endhighlight %}
+{% highlight c# %}
+
+        SfMaskedEdit maskedEdit = new SfMaskedEdit();
+        maskedEdit.Mask = "+1 000 000 0000";
+        maskedEdit.CursorPositionChanging += maskedEdit_CursorPositionChanging;
+        this.Content = maskedEdit;
+
+        private void maskedEdit_CursorPositionChanging(object sender, Syncfusion.XForms.MaskedEdit.CursorPositionChangingEventArgs e)
+        {
+            if (e.NewValue <= 2)
+                e.Cancel = true;
+        }
+
+{% endhighlight %}
+{% endtabs %}
+
+![Cursor position changing event support in Xamarin.Forms masked edit](SfMaskedEditImages/CursorPosition.png)

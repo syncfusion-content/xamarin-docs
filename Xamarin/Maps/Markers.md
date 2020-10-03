@@ -791,7 +791,11 @@ N> You can use `MarkerItemsSource` property when using the custom map markers th
 
 The `MarkerSelected` event is fired when a marker is selected. The `CustomView` and `MapMarker` will be passed to `MarkerSelectedEventArgs`.
 
-If you set any view for the `CustomView` property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker.
+The `MarkerSelected` event has the following arguments.
+
+* `MapMarker` : Gets the selected marker.
+* `CustomView` : If you set any view for the `CustomView` property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker.
+* `CanBringToTop` : When set to true the selected marker will be on the top of all other markers.
 
 {% tabs %}
 

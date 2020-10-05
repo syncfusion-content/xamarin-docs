@@ -793,9 +793,9 @@ The `MarkerSelected` event is fired when a marker is selected. The `CustomView` 
 
 The `MarkerSelected` event has the following arguments.
 
-* `MapMarker` : Gets the selected marker.
-* `CustomView` : If you set any view for the `CustomView` property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker.
-* `CanBringToTop` : When set to true the selected marker will be on the top of all other markers.
+* [`MapMarker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MarkerSelectedEventArgs.html#Syncfusion_SfMaps_XForms_MarkerSelectedEventArgs_MapMarker) : Gets the selected marker.
+* [`CustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MarkerSelectedEventArgs.html#Syncfusion_SfMaps_XForms_MarkerSelectedEventArgs_CustomView) : If you set any view for the `CustomView` property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker.
+* [`CanBringToTop`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MarkerSelectedEventArgs.html#Syncfusion_SfMaps_XForms_MarkerSelectedEventArgs_CanBringToTop) : When set to true the selected marker will be on the top of all other markers.
 
 {% tabs %}
 

@@ -785,13 +785,13 @@ If you add any view for marker using `CustomView` property from `MarkerSelected`
 
 ![Reset the previously selected marker](Images/ResetMarker.gif)
 
-N> You can use `MarkerItemsSource` property when using the custom map markers that are inherited from `MapMarker` and can only be used to assign markers in code behind. We have recommended using `Markers` property for the layer to add markers from XAML page.
+N> You can use [`MarkerItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLayer.html#Syncfusion_SfMaps_XForms_MapLayer_MarkerItemsSource) property when using the custom map markers that are inherited from [`MapMarker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapMarker.html) and can only be used to assign markers in code behind. We have recommended using [`Markers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLayer.html#Syncfusion_SfMaps_XForms_MapLayer_Markers) property for the layer to add markers from XAML page.
 
 ## Events
 
-The `MarkerSelected` event is fired when a marker is selected. The `CustomView` and `MapMarker` will be passed to `MarkerSelectedEventArgs`.
+The [`MarkerSelected`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLayer.html#Syncfusion_SfMaps_XForms_MapLayer_MarkerSelected) event is fired when a marker is selected. The `CustomView` and [`MapMarker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapMarker.html) will be passed to [`MarkerSelectedEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MarkerSelectedEventArgs.html).
 
-The `MarkerSelected` event has the following arguments.
+The [`MarkerSelected`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapLayer.html#Syncfusion_SfMaps_XForms_MapLayer_MarkerSelected) event has the following arguments.
 
 * [`MapMarker`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MarkerSelectedEventArgs.html#Syncfusion_SfMaps_XForms_MarkerSelectedEventArgs_MapMarker) : Gets the selected marker.
 * [`CustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MarkerSelectedEventArgs.html#Syncfusion_SfMaps_XForms_MarkerSelectedEventArgs_CustomView) : If you set any view for the `CustomView` property of MarkerSelectedEventArgs, then the corresponding view will be applied to the selected marker.

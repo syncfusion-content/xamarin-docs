@@ -150,7 +150,7 @@ this.Content = richtexteditor;
 
 ## ToolbarPosition
 
-Rich Text Editor provides toolbar position support, which allows the users to switch the position of the toolbar to horizontal top position and horizonal bottom position. The following code example explains how to switch toolbar position in Rich Text Editor.
+Rich Text Editor provides toolbar position support, which allows the users to switch the position of the toolbar to horizontal top position and horizontal bottom position. The following code example explains how to switch toolbar position in Rich Text Editor.
 
 {% tabs %} 
 
@@ -165,16 +165,6 @@ richtexteditor = new SfRichTextEditor();
 richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
 richtexteditor.ToolbarPosition = Syncfusion.XForms.RichTextEditor.ToolbarPosition.Top;
 this.Content = richtexteditor;
-{% endhighlight %}
-
-{% endtabs %}
-
-## InsertHTMLText
-
-Rich Text Editor provides support to insert text at current selection point in the editor.The support allows the users to insert any new text content at the current cursor point in the editor control. The following code example explains how to insert text in Rich Text Editor.
-
-{% highlight C# %} 
-richtexteditor.InsertHTMLText("New text content");
 {% endhighlight %}
 
 {% endtabs %}

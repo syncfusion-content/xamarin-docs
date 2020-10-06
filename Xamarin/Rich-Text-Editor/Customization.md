@@ -147,3 +147,34 @@ this.Content = richtexteditor;
 {% endhighlight %}
 
 {% endtabs %}
+
+## ToolbarPosition
+
+Rich Text Editor provides toolbar position support, which allows the users to switch the position of the toolbar to horizontal top position and horizonal bottom position. The following code example explains how to set read-only mode in Rich Text Editor.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+<StackLayout>
+   <richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" ToolbarPosition="Top" />
+</StackLayout>   
+{% endhighlight %}
+
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToolbarPosition = Syncfusion.XForms.RichTextEditor.ToolbarPosition.Top;
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+## InsertHTMLText
+
+Rich Text Editor provides support to insert text at current selection point in the editor.The support allows the users to insert any new text content at the current cursor point in the editor control. The following code example explains how to set read-only mode in Rich Text Editor.
+
+{% highlight C# %} 
+richtexteditor.InsertHTMLText("New text content");
+{% endhighlight %}
+
+{% endtabs %}

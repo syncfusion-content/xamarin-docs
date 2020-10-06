@@ -7,7 +7,7 @@ control: Rich Text Editor
 documentation: ug
 ---
 
-# Basic Features
+# Basic Features of Rich Text Editor
 
 ## Setting Text
 

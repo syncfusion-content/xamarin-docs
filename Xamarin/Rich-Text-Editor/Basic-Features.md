@@ -48,7 +48,7 @@ string HTMLText = richtexteditor.HtmlText;
 
 ## InsertHTMLText
 
-Rich Text Editor provides support to insert text at current selection point in the editor.The support allows the users to insert any new text content at the current cursor point in the editor control. The following code example explains how to insert text in Rich Text Editor.
+Rich Text Editor provides support to insert HTML text or raw text at the current cursor position. The following code example explains how to insert text in Rich Text Editor.
 
 {% highlight C# %} 
 richtexteditor.InsertHTMLText("New text content");

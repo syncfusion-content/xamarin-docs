@@ -303,4 +303,6 @@ this.Content = border;
 {% endhighlight %}
 {% endtabs %}
 
+N> There is a limitation with `BorderThickness` property while using the `CornerRadius` property in Android and iOS.
+
 ![BorderThickness in Xamarin.Forms SfBorder](images/Xamarin_Forms_BorderThickness.png)

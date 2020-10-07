@@ -272,7 +272,7 @@ N> Shadow support has not been provided for UWP Platform.
 
 ## BorderThickness
 
-By using the `BorderThickness` property, you can customize the border thickness of the border on four sides.
+By using the [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_BorderThickness) property, you can customize the border thickness of the border on four sides.
 
 {% tabs %}
 {% highlight xaml %}
@@ -302,5 +302,7 @@ this.Content = border;
 
 {% endhighlight %}
 {% endtabs %}
+
+N> There is a limitation with `BorderThickness` property while using the `CornerRadius` property in Android and iOS.
 
 ![BorderThickness in Xamarin.Forms SfBorder](images/Xamarin_Forms_BorderThickness.png)

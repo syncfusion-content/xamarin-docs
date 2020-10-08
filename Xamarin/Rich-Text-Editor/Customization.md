@@ -150,7 +150,7 @@ this.Content = richtexteditor;
 
 ## ToolbarPosition
 
-Rich Text Editor provides support to switch the position of a toolbar to the top or bottom of the screen. The following code example explains how to switch toolbar position in Rich Text Editor.
+Rich Text Editor provides the support to switch the position of a toolbar to the top or bottom of the screen. The following code example explains how to switch the toolbar position in the Rich Text Editor.
 
 {% tabs %} 
 

@@ -34,7 +34,7 @@ this.Content = richtexteditor;
 
 ## Retrieving HTML text
 
-The formatted text of Rich Text Editor can be retrieved using [`HtmlText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_HtmlText) property of [`SfRichTextEditor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html).
+The formatted text of Rich Text Editor can be retrieved using the [`HtmlText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_HtmlText) property of [`SfRichTextEditor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html).
 
 {% tabs %} 
 
@@ -48,7 +48,7 @@ string HTMLText = richtexteditor.HtmlText;
 
 ## InsertHTMLText
 
-Rich Text Editor provides support to insert HTML text or raw text at the current cursor position. The following code example explains how to insert text in Rich Text Editor.
+Rich Text Editor provides the support to insert the HTML text or raw text at the current cursor position. The following code example explains how to insert a text in the Rich Text Editor.
 
 {% highlight C# %} 
 richtexteditor.InsertHTMLText("New text content");

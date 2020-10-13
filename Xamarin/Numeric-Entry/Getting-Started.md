@@ -308,6 +308,7 @@ N> The focused visual state is only available in Android and iOS platforms.
 ![SfNumericTextBox with disabled visual state](images/FocusState.jpg)
 
 ## See also
+
 [How to disable the clear button in numeric textbox]( https://www.syncfusion.com/kb/11874/how-to-disable-the-clear-button-in-numeric-textbox-in-xamarin-forms)
 
 [How to change the Xamarin.Forms numeric textbox style using its visual states (SfNumericTextBox)]( https://www.syncfusion.com/kb/11785/how-to-change-the-xamarin-forms-numeric-textbox-style-using-its-visual-states)
@@ -317,8 +318,6 @@ N> The focused visual state is only available in Android and iOS platforms.
 [How to resolve the issue with decimal point and minus key on Samsung devices in SfNumericTextBox](https://www.syncfusion.com/kb/10419/how-to-resolve-the-issue-with-decimal-point-and-minus-key-on-samsung-devices-in) 
 
 [How to create NumericTextBox sample in Xamarin.Forms.Android platform](https://www.syncfusion.com/kb/7632/how-to-create-numerictextbox-sample-in-xamarin-forms-android-platform)
-
-[How to create a NumericTextbox in .axml in Xamarin.Android](https://www.syncfusion.com/kb/7634/how-to-create-a-numerictextbox-in-axml-in-xamarin-android)
 
 [How to create a NumericTextBox control sample using Xaml](https://www.syncfusion.com/kb/7631/how-to-create-a-numerictextbox-control-sample-using-xaml)
 

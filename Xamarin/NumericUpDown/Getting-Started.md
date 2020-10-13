@@ -190,7 +190,7 @@ this.Content = numericUpDown;
 
 [How to get the dynamic theme change effect in numeric control inside the text input layout](https://www.syncfusion.com/kb/11909/how-to-get-the-dynamic-theme-change-effect-in-numeric-control-inside-the-xamarin-forms-text)
 
-[How to create a borderless numeric up down](https://www.syncfusion.com/kb/11873/how-to-create-a-borderless-xamarin-forms-numeric-control-sfnumericupdown)
+[How to create a border less numeric up down](https://www.syncfusion.com/kb/11873/how-to-create-a-borderless-xamarin-forms-numeric-control-sfnumericupdown)
 
 [How to hide the increment or decrement button in numeric up down](https://www.syncfusion.com/kb/11647/how-to-hide-the-increment-or-decrement-button-in-xamarin-forms-numeric-control)
 

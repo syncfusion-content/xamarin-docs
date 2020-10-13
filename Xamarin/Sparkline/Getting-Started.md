@@ -212,3 +212,7 @@ lineSparkline.SetBinding(SfSparklineBase.ItemsSourceProperty, "Data");
 ![Xamarin forms Sparkline getting started](Getting-Started-image/LineSparkline.png)
 
 You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SparkLineSample295325469)
+
+## See also
+
+[How to resolve SfSparkline not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/7713/how-to-resolve-sfsparkline-not-rendering-issue-in-ios-and-uwp)

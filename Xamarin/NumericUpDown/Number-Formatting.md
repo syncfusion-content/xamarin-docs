@@ -159,3 +159,7 @@ this.Content = NumericUpDown;
 {% endtabs %}
 
 ![Display the SfNumericUpDown control with EnableGroupSeparator](images/enablegroupseparator.png)
+
+## See also
+
+[How to provide string formats support in NumericUpDown](https://www.syncfusion.com/kb/7690/does-sfnumericupdown-supports-other-formats)

@@ -301,3 +301,9 @@ var effectsView = new SfEffectsView
 {% endtabs %}
 
 ![Rotation Angle customization](Customization_images/EffectsView_Rotation.png)
+
+## See also
+
+[How to get the selected item from ListView while using EffectsView within ItemTemplate](https://www.syncfusion.com/kb/11661/how-to-get-the-selected-item-from-listview-while-using-effectsview-within-itemtemplate)
+
+[How to use effects view in ListView (SfListView) Xamarin.Forms](https://www.syncfusion.com/kb/11030/how-to-use-effects-view-in-listview-sflistview-xamarin-forms)

@@ -145,6 +145,12 @@ inputLayout.InputView = new Entry();
 
 ![Reserve space for assistive label img](Assistive-Labels-images/ReserveSpaceAPI.png)
 
-#### See Also
+## See Also
 
-[Remove bottom space](https://www.syncfusion.com/kb/11040/how-to-remove-the-space-at-the-bottom-of-textinputlayout)
+[How to remove the space at the bottom of TextInputLayout](https://www.syncfusion.com/kb/11040/how-to-remove-the-space-at-the-bottom-of-textinputlayout)
+
+[How to apply LineBreakMode for labels in SfTextInputLayout](https://www.syncfusion.com/kb/11043/how-to-apply-linebreakmode-for-labels-in-sftextinputlayout)
+
+[How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://www.syncfusion.com/kb/11659/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
+
+[How to customize the color of border and labels in SfTextInputLayout](https://www.syncfusion.com/kb/10466/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)

@@ -197,3 +197,7 @@ By disabling the [`IsActive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to set the custom view in Xamarin.Forms shimmer using style](https://www.syncfusion.com/kb/11851/how-to-set-the-custom-view-in-xamarin-forms-shimmer-using-style)

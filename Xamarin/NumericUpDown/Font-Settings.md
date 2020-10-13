@@ -54,3 +54,7 @@ this.Content = NumericUpDown;
 {% endtabs %}
 
 ![Display the NumericUpDown control with FontCustomization](images/textformatend.png)
+
+## See also
+
+[How to customize the text in the SfNumericUpDown](https://www.syncfusion.com/kb/7672/how-to-customise-the-text-present-in-the-sfnumericupdown)

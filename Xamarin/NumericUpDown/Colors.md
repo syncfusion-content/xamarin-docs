@@ -118,3 +118,7 @@ this.Content = NumericUpDown;
 {% endtabs %}
 
 ![Display the NumericUpDown with WatermarkColor](images/watermarkcolor.png)
+
+## See also
+
+[How to customize the color appearance of numeric controls in Xamarin.Forms](https://www.syncfusion.com/kb/11610/how-to-customize-the-color-appearance-of-numeric-controls-in-xamarin-forms)

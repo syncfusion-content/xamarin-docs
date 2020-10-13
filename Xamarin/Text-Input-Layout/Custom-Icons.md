@@ -142,6 +142,6 @@ inputLayout.InputView = new Entry();
 
 ![customisation](Custom-Icons-images/textInput_icons_img5.png)
 
-#### See Also
+## See Also
 
-[Align Leading and Trailing Views](http://www.syncfusion.com/support/kb/11046/how-to-vertically-center-align-icons-in-leading-and-trailing-views)
+[How to align Leading and Trailing Views](http://www.syncfusion.com/support/kb/11046/how-to-vertically-center-align-icons-in-leading-and-trailing-views)

@@ -172,3 +172,12 @@ inputLayout.InputView = new Entry() { Text = "John" };
 ![None type](Container-Type-images/textInput_None_Type.png)
 
 
+## See also
+
+[How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://www.syncfusion.com/kb/11659/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
+
+[How to create a rounded corner SfTextInputLayout in Xamarin.Forms](https://www.syncfusion.com/kb/11649/how-to-create-a-rounded-corner-sftextinputlayout-in-xamarin-forms)
+
+[How to reduce the inner padding of Xamarin.Forms text input layout](https://www.syncfusion.com/kb/11039/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout)
+
+[How to customize the color of border and labels in SfTextInputLayout](https://www.syncfusion.com/kb/10466/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)

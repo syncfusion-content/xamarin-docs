@@ -78,3 +78,7 @@ The `ReturnCommandParameter` property is used to set the parameter that is sent 
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to get the localized return key on the iOS keyboard in Xamarin.Forms numeric controls](https://www.syncfusion.com/kb/11630/how-to-get-the-localized-return-key-on-the-ios-keyboard-in-xamarin-forms-numeric-controls)

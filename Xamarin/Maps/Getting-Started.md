@@ -500,3 +500,8 @@ The following screenshot illustrates the result of the above code sample.
 You can download the complete [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Maps_GettingStarted182763643) sample.
 
 
+## See also
+
+[How to make Syncfusion Xamarin.Forms SfMaps to work in UWP in release mode when .NET Native tool chain is enabled?](https://www.syncfusion.com/kb/8604/how-to-make-syncfusion-xamarin-forms-sfmaps-to-work-in-uwp-in-release-mode-when-net-native)
+
+[How to resolve SfMaps not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/8603/how-to-resolve-sfmaps-not-rendering-issue-in-ios-and-uwp)

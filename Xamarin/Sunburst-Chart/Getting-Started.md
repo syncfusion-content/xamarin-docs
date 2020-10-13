@@ -885,3 +885,8 @@ The following screenshot depicts the final output.
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sunburst_Sample-1965856985).
 
+## See also
+
+[How to make Syncfusion Xamarin.Forms SfSunburstChart to work in UWP in release mode when .NET Native tool chain is enabled?](https://www.syncfusion.com/kb/7715/how-to-make-syncfusion-xamarin-forms-sfsunburstchart-to-work-in-uwp-in-release-mode-when)
+
+[How to resolve SfSunburstChart not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/7714/how-to-resolve-sfsunburstchart-not-rendering-issue-in-ios-and-uwp)

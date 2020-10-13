@@ -114,4 +114,9 @@ inputLayout.InputView = new Entry();
 
 ![None type](Hint-Position-images/HintPosition_none.jpg)
 
+## See Also
+
+[How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://www.syncfusion.com/kb/11659/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
+
+[How to customize the color of border and labels in SfTextInputLayout](https://www.syncfusion.com/kb/10466/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)
 

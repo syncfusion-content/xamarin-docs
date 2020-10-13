@@ -189,6 +189,12 @@ this.Content = numericTextBox;
 
 ![Display the value with enable group separator](images/enablegroupseparator.png)
 
+## See also
 
+[How to truncate the trailing zero's in Xamarin.Forms numeric control (SfNumericTextBox)]( https://www.syncfusion.com/kb/11749/how-to-truncate-the-trailing-zeros-in-xamarin-forms-numeric-control-sfnumerictextbox)
+
+[How to set customized currency symbol in Xamarin.Forms numeric controls](https://www.syncfusion.com/kb/10445/how-to-set-customized-currency-symbol-in-xamarin-forms-numeric-controls)
+
+[How to display the value with currency symbol in Xamarin.Forms numeric controls](https://www.syncfusion.com/kb/10443/how-to-display-the-value-with-currency-symbol-in-xamarin-forms-numeric-controls)
 
 

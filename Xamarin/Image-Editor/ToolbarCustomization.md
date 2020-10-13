@@ -394,3 +394,15 @@ Border color of the toolbar can be customized with the help of [`BorderColor`](h
 {% endtabs %}
 
 ![SfImageEditor](ImageEditor_images/BorderColor.png)
+
+## See Also
+
+[How to add custom toolbar to add shapes or text dynamically in Xamarin.Forms SfImageEditor](https://www.syncfusion.com/kb/10621/how-to-add-custom-toolbar-to-add-shapes-or-text-dynamically-in-xamarin-forms-sfimageeditor)
+
+[How to get toolbar item and change icon using name in SfImageEditor?](https://www.syncfusion.com/kb/9367/how-to-get-toolbar-item-and-change-icon-using-name-in-sfimageeditor)
+	
+[How to disable toolbar menu?](https://www.syncfusion.com/kb/8277/how-to-disable-toolbar-menu)
+
+[How to change colors in toolbar menu?](https://www.syncfusion.com/kb/8273/how-to-change-colors-in-toolbar-menu)
+
+[How to show or hide Image Editor toolbar items?](https://www.syncfusion.com/kb/8258/how-to-show-or-hide-image-editor-toolbar-items)

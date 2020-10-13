@@ -744,3 +744,8 @@ maps.Layers.Add(layer);
 
 ![Multiple selection in Xamarin.Forms Maps](Images/size.jpg)
 
+## See also
+
+[How to add Polygon shape in Xamarin.Forms maps (SfMaps)](https://www.syncfusion.com/kb/11783/how-to-add-ploygon-shape-in-xamarin-forms-maps-sfmaps)
+
+[How to draw a line (route) between two terminals in SfMaps](https://www.syncfusion.com/kb/10619/how-to-draw-a-line-route-between-two-terminals-in-sfmaps)

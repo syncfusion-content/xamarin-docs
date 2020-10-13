@@ -325,3 +325,7 @@ Content = sfBadgeView;
 {% endtabs %}
 
 ![Xamarin BadgeView Alignment](badge-customization_images/badge_alignment.png)
+
+## See also
+
+[How to add a custom icon to the badge in Xamarin.Forms badge view (SfBadgeView)](https://www.syncfusion.com/kb/11338/how-to-add-a-custom-icon-to-the-badge-in-xamarin-forms-badge-view-sfbadgeview)

@@ -328,7 +328,7 @@ N> The focused visual state is only available in Android and iOS platforms.
 
 [How to bind the values of NumericTextBox with an Entry control in Xamarin.Forms](https://www.syncfusion.com/kb/7588/how-to-bind-the-values-of-numerictextbox-with-an-entry-control-in-xamarin-forms)
 
-[How to bind two Numerictext boxes in Xamarin.Forms](https://www.syncfusion.com/kb/7584/how-to-bind-two-numerictextboxes-in-xamarin-forms)
+[How to bind two NumericTextBox in Xamarin.Forms](https://www.syncfusion.com/kb/7584/how-to-bind-two-numerictextboxes-in-xamarin-forms)
 
 [What are the assemblies needed for NumericTextBox and how to add reference](https://www.syncfusion.com/kb/7583/what-are-the-assemblies-needed-for-numerictextbox-and-how-to-add-reference)
 

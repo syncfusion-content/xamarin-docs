@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Syncfusion NumericTextBox for Xamarin.Forms
-description: Learn how to get the value changed event and some interactivity in  NumericTextBox
+description: Learn how to get the value changed event and some interactivity in Syncfusion NumericTextBox for Xamarin.Forms.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug

@@ -7,7 +7,7 @@ control: SfTextInputLayout
 documentation: ug
 ---
 
-# Fixed hint position
+# Fixed Hint Position in Xamarin Text Input Layout (SfTextInputLayout)
 
 Hint label for the text input layout is fixed always at the top position. This helps users make the hint label floating even when the input view is not focused. It can be enabled by setting the `IsHintAlwaysFloated` property.
 

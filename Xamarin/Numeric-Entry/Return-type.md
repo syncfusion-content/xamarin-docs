@@ -6,7 +6,7 @@ platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Return Type
+# Return Type in Xamarin Numeric Entry (SfNumericTextBox)
 
 We can able to define the return key type of NumericTextBox by using the `ReturnType` property of the type [Xamarin.Forms ReturnType](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.returntype?view=xamarin-forms).
 

@@ -6,7 +6,7 @@ platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
-# Number Formatting
+# Number Formatting in Xamarin NumericUpDown (SfNumericUpDown)
 
 The Values of the SfNumericUpDown can be configured to display different formats like currency format, percent format etc. 
 

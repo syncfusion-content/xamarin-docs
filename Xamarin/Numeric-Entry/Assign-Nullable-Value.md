@@ -30,7 +30,7 @@ this.Content = numericTextBox;
 
 {% endtabs %}
 
-![](images/allownull.png)
+![Display nullable value image](images/allownull.png)
 
 ## Set Hint Text
 
@@ -55,6 +55,12 @@ this.Content=numericTextBox;
 
 {% endtabs %}
 
-![](images/gettingstarted1.png)
+![Display watermark text image](images/gettingstarted1.png)
 
 For customizing the color of NumericTextBox's Watermark [refer](https://help.syncfusion.com/xamarin/sfnumerictextbox/colors)
+
+## See also
+
+[How to have null values in NumericTextBox](https://www.syncfusion.com/kb/7594/how-to-have-null-values-in-numerictextbox)
+
+[How to provide null value to NumericTextBox?](https://www.syncfusion.com/kb/7061/how-to-provide-null-value-to-numerictextbox)

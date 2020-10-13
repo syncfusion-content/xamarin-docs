@@ -51,3 +51,8 @@ this.Content = numericTextBox;
 {% endtabs %}
 
 ![Display SfNumericTextBox control with TextAlignment](images/textformatend.png)
+
+## See also
+
+[How to custom the Font in NumericTextBox](https://www.syncfusion.com/kb/7585/how-to-custom-the-font-in-numerictextbox)
+

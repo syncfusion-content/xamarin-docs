@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization of Syncfusion Shimmer
-description: How to customize shimmer.
+description: This section explain how to customize Syncfusion Xamarin.Forms shimmer based on wave direction, wave color, wave direction, anumation.
 platform: xamarin
 control: SfShimmer
 documentation: ug

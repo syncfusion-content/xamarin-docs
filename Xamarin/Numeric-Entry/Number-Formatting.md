@@ -6,7 +6,7 @@ platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Number Formatting
+# Number Formatting in Xamarin Numeric Entry (SfNumericTextBox)
 
 The Values of the SfNumericTextBox can be configured to display different formats like currency format, percent format etc. 
 

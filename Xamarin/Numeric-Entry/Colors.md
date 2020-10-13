@@ -119,3 +119,9 @@ this.Content = numericTextBox;
 {% endtabs %}
 
 ![Display SfNumericTextBox with WatermarkColor](images/watermarkcolor.png)
+
+## See also
+
+[How to custom the Border of NumericTextBox](https://www.syncfusion.com/kb/7587/how-to-custom-the-border-of-numerictextbox)
+
+[How to customize the color appearance of numeric controls in Xamarin.Forms](syncfusion.com/kb/7586/how-to-customize-the-color-appearance-of-numeric-controls-in-xamarin-forms)

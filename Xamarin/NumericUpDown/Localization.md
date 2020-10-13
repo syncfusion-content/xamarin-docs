@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Localization in Syncfusion NumericUpDown control for Xamarin.Forms
-description: Learn how to localize the NumericUpDown control
+description: This scetion expalin how to Localize the Syncfusion Xamarin.Forms SfNumericUpDown value and Change localization of return key text.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
-# Localization
+# Localization in Xamarin NumericUpDown (SfNumericUpDown)
 
 The SfNumericUpDown value can be localized to any specific culture. It can be specified by setting the `Culture` property with `System.Globalization.CultureInfo` object instance.
 

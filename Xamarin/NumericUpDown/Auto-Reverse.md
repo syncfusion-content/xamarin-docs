@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Watermark support in Syncfusion NumericUpDown for Xamarin.Forms
-description: Learn how to add water mark text to NumericUpDown.
+description: This section explain how to set the auto reverse, continuous spinning between ranges for Syncfusion NumericUpDown.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
-# Auto Reverse
+# Auto Reverse in Xamarin NumericUpDown (SfNumericUpDown)
 
 While incrementing, the control will start from Minimum value once it reaches the Maximum value and vice-versa.
 

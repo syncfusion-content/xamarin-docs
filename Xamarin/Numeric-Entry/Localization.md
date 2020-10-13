@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Localization in Syncfusion NumericTextBox control for Xamarin.Forms
-description: Learn how to localize the  NumericTextBox
+description: This scetion expalin how to Localize the Syncfusion Xamarin.Forms SfNumericTextBox value and Change localization of return key text.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Localization
+# Localization in Xamarin Numeric Entry (SfNumericTextBox)
 
 The SfNumericTextBox value can be localized to any specific culture. It can be specified by setting the `Culture` property with `System.Globalization.CultureInfo` object instance.
 

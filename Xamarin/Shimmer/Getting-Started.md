@@ -7,7 +7,7 @@ control: SfShimmer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Shimmer (SfShimmer)
 
 This section explains the steps required to configure the shimmer.
 

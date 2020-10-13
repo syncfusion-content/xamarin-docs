@@ -7,7 +7,7 @@ control: SfTextInputLayout
 documentation: ug
 ---
 
-# Font Customization
+# Font Customization in Xamarin Text Input Layout (SfTextInputLayout)
 
 You can customize the appearance (size, attributes, and family) of font by setting the FontFamily, FontSize, and FontAttributes properties of the LabelStyle property.
 

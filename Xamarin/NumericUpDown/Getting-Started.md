@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion NumericUpDown for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion NumericUpDown control for Xamarin.Forms platform
+description: This section explain how to initialize the control, add the reference for Syncfusion Xamarin.Forms NumericUpDown control.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin NumericUpDown (SfNumericUpDown)
 
 This section provides overview for working with Essential SfNumericUpDown for Xamarin.Forms. You can walk through the entire process of creating a SfNumericUpDown.
 

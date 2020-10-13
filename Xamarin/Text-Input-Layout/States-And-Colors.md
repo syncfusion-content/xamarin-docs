@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Syncfusion TextInputLayout States and Colors
-description: How to customize the colors based on states.
+description: This section explain how to customize the colors based on states in Syncfusion Xamarin.Forms SfTextInputLayout
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# States and Colors
+# States and Colors in Xamarin Text Input Layout (SfTextInputLayout)
 
 Based on the states, the colors will be applied to the hint labels and borders. So, when the input view is in focused state, the focused color will be applied; it is similar to other states also. The current hint color or active color can be obtained from the [CurrentActiveColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_CurrentActiveColor) property.
 

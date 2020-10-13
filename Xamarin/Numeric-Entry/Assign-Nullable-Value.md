@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Various features in Syncfusion NumericTextBox control for Xamarin.Forms
+title: Various features in Syncfusion NumericTextBox control.
 description: Learn how to decide maximum decimal digits to be displayed and nullable value support in NumericTextBox.
 platform: Xamarin
 control: NumericTextBox

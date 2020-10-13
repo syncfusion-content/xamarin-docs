@@ -6,7 +6,7 @@ platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Events and Interactivity
+# Events and Interactivity in Xamarin Numeric Entry (SfNumericTextBox)
 
 ## Events
 

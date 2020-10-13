@@ -7,7 +7,7 @@ control: SfSunburstChart
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Sunburst Chart (SfSunburstChart)
 
 This section explains the steps required to configure the [`SfSunburstChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html) and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
 

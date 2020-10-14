@@ -155,6 +155,8 @@ calendar.AgendaViewHeight = 300;
 {% endhighlight %}
 {% endtabs %} 
 
+![SfCalendar AgendaViewHeight](images/AgendaViewHeight.png)
+
 ### Creating a DataTemplateSelector
 {% tabs %}
 {% highlight c# %}

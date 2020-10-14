@@ -147,3 +147,24 @@ this.Content = richtexteditor;
 {% endhighlight %}
 
 {% endtabs %}
+
+## ToolbarPosition
+
+Rich Text Editor provides the support to switch the position of a toolbar to the top or bottom of the screen. The following code example explains how to switch the toolbar position in the Rich Text Editor.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+<StackLayout>
+   <richtexteditor:SfRichTextEditor VerticalOptions="FillAndExpand" ToolbarPosition="Top" />
+</StackLayout>   
+{% endhighlight %}
+
+{% highlight C# %} 
+richtexteditor = new SfRichTextEditor();
+richtexteditor.VerticalOptions = LayoutOptions.FillAndExpand;
+richtexteditor.ToolbarPosition = Syncfusion.XForms.RichTextEditor.ToolbarPosition.Top;
+this.Content = richtexteditor;
+{% endhighlight %}
+
+{% endtabs %}

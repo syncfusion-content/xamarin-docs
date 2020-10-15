@@ -50,6 +50,8 @@ string HTMLText = richtexteditor.HtmlText;
 
 Rich Text Editor provides the support to insert the HTML text or raw text at the current cursor position. The following code example explains how to insert a text in the Rich Text Editor.
 
+{% tabs %} 
+
 {% highlight C# %} 
 richtexteditor.InsertHTMLText("New text content");
 {% endhighlight %}

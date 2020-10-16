@@ -145,3 +145,9 @@ effectsView.CornerRadius = new Thickness(0, 25, 0, 25);
 ![EffectsView Initialization](Getting-Started_images/RippleEffect.gif)
 
 You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-started-of-SfEffectsView-in-Xamarin.Forms)
+
+## See also
+
+[How to get the selected item from ListView while using SfEffectsView within ItemTemplate](https://www.syncfusion.com/kb/11661/how-to-get-the-selected-item-from-listview-while-using-effectsview-within-itemtemplate)
+
+[How to use effects view in SfListView](https://www.syncfusion.com/kb/11030/how-to-use-effects-view-in-listview-sflistview-xamarin-forms)

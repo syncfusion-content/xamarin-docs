@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization of Syncfusion Shimmer
-description: How to customize shimmer.
+description: This section explain how to customize Syncfusion Xamarin.Forms shimmer based on wave direction, wave color, wave direction, anumation.
 platform: xamarin
 control: SfShimmer
 documentation: ug
@@ -198,3 +198,7 @@ You can control the duration of wave animation using the [`AnimationDuration`](h
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to set the custom view in SfShimmer using style](https://www.syncfusion.com/kb/11851/how-to-set-the-custom-view-in-xamarin-forms-shimmer-using-style)

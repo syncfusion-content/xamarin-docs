@@ -121,4 +121,4 @@ this.Content = NumericUpDown;
 
 ## See also
 
-[How to customize the color appearance of numeric controls in Xamarin.Forms](https://www.syncfusion.com/kb/11610/how-to-customize-the-color-appearance-of-numeric-controls-in-xamarin-forms)
+[How to customize the color appearance of SfNumericUpDown](https://www.syncfusion.com/kb/11610/how-to-customize-the-color-appearance-of-numeric-controls-in-xamarin-forms)

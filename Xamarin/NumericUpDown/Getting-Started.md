@@ -194,4 +194,4 @@ this.Content = numericUpDown;
 
 [How to hide the increment or decrement button in SfNumericUpDown](https://www.syncfusion.com/kb/11647/how-to-hide-the-increment-or-decrement-button-in-xamarin-forms-numeric-control)
 
-[How to resolve the issue with decimal point and minus key on Samsung devices in SfNumericUpDown](https://www.syncfusion.com/kb/10435/how-to-resolve-the-issue-with-decimal-point-and-minus-key-on-samsung-devices-in)
+[How to resolve the issue with decimal point and minus key on samsung devices in SfNumericUpDown](https://www.syncfusion.com/kb/10435/how-to-resolve-the-issue-with-decimal-point-and-minus-key-on-samsung-devices-in)

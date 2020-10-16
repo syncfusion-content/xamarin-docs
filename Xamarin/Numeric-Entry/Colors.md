@@ -122,6 +122,6 @@ this.Content = numericTextBox;
 
 ## See also
 
-[How to custom the Border of SfNumericTextBox](https://www.syncfusion.com/kb/7587/how-to-custom-the-border-of-numerictextbox)
+[How to customize the Bbrder of SfNumericTextBox](https://www.syncfusion.com/kb/7587/how-to-custom-the-border-of-numerictextbox)
 
 [How to customize the color appearance of SfNumericTextBox](syncfusion.com/kb/7586/how-to-customize-the-color-appearance-of-numeric-controls-in-xamarin-forms)

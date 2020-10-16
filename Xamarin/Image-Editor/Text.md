@@ -155,7 +155,7 @@ You can restrict the edit text box pop-up window using the [`IsEditable`](https:
 
 {% endhighlight %}
 
-## See Also
+## See also
 
 [How to add text after image is loaded in SfImageEditor](https://www.syncfusion.com/kb/10034/how-to-add-text-after-image-is-loaded-in-sfimageeditor)
 

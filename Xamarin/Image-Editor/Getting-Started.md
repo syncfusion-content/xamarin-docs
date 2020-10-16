@@ -235,7 +235,7 @@ N> Refer to this [link](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/u
 
 You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IESample-621789615)
 
-## See Also
+## See also
 
 [How to create signature pad using SfImageEditor](https://www.syncfusion.com/kb/9811/how-to-create-signature-pad-using-imageeditor)
 

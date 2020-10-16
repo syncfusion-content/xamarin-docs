@@ -482,7 +482,7 @@ The following circular gauge is created as a result of the above codes.
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge-GettingStarted-768663630).
 
-## See Also
+## See also
 
 [How to achieve doughnut chart requirement in circular gauge](https://www.syncfusion.com/kb/8295/how-to-achieve-doughnut-chart-requirement-in-circulargauge)
 

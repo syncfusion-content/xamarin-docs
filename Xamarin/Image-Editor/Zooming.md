@@ -113,6 +113,6 @@ editor.PanningMode = PanningMode.TwoFinger;
 
 {% endtabs %}
 
-## See Also
+## See also
 
 [How to create zoom able image in Xamarin.Forms using SfImageEditor](https://www.syncfusion.com/kb/9379/how-to-create-zoomable-image-in-xamarin-forms-using-sfimageeditor)

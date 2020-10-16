@@ -395,7 +395,7 @@ Border color of the toolbar can be customized with the help of [`BorderColor`](h
 
 ![SfImageEditor](ImageEditor_images/BorderColor.png)
 
-## See Also
+## See also
 
 [How to add custom toolbar to add shapes or text dynamically in SfImageEditor](https://www.syncfusion.com/kb/10621/how-to-add-custom-toolbar-to-add-shapes-or-text-dynamically-in-xamarin-forms-sfimageeditor)
 

@@ -510,7 +510,7 @@ N> Default value of the IsCenterAligned property is false.
 
 ![Center Aligned SfCircularGauge image](scales_images/iscenteraligned.png)
 
-## See Also
+## See also
 
 [How to design a compass that always points to a specific place in SfCircularGauge](https://www.syncfusion.com/kb/11426/how-to-design-a-compass-that-always-points-to-a-specific-place-in-xamarin-forms-circular)
 

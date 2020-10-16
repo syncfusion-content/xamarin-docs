@@ -145,7 +145,7 @@ inputLayout.InputView = new Entry();
 
 ![Reserve space for assistive label img](Assistive-Labels-images/ReserveSpaceAPI.png)
 
-## See Also
+## See also
 
 [How to remove the space at the bottom of SfTextInputLayout](https://www.syncfusion.com/kb/11040/how-to-remove-the-space-at-the-bottom-of-textinputlayout)
 

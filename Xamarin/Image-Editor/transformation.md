@@ -47,6 +47,6 @@ editor.Flip(FlipDirection.Horizontal);
 
 ![SfImageEditor](ImageEditor_images/flip.jpeg)
 
-## See Also
+## See also
 
 [How to resolve image rotated when loading image / after saving image in iOS device](https://www.syncfusion.com/kb/9632/how-to-resolve-image-rotated-when-loading-image-after-saving-image-in-ios-device)

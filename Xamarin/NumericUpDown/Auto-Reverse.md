@@ -110,5 +110,3 @@ numericUpDown.IsEditable = true;
 [How to restrict the values of SfNumericUpDown within certain range](https://www.syncfusion.com/kb/7687/how-to-restrict-the-values-of-sfnumericupdown-within-certain-range)
 
 [How to set AutoReverse property in SfNumericUpDown](https://www.syncfusion.com/kb/7686/how-to-set-autoreverse-property-in-sfnumericupdown)
-
-[How to change the increment and decrement value of SfNumericUpDown](https://www.syncfusion.com/kb/7685/how-to-change-the-increment-and-decrement-value-of-sfnumericupdown)

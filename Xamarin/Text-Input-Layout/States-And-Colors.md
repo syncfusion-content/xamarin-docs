@@ -207,7 +207,7 @@ inputLayout.InputView = new Entry();
 
 ![Disabled state](States-And-Colors-images/textInput_colors_img5.PNG)
 
-## See Also
+## See also
 
 [How to validate with required verification in SfTextInputLayout](https://www.syncfusion.com/kb/11788/how-to-validate-with-required-verification-in-text-input-layout-in-xamarin-forms)
 

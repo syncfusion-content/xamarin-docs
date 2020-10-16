@@ -171,6 +171,6 @@ The following screenshot shows localizing the text to French language in image e
 
 ![SfImageEditor](ImageEditor_images/imageframe.png)
 
-## See Also
+## See also
 
 [How to set localized string to Xamarin.Forms SfImageEditor](https://www.syncfusion.com/kb/10602/how-to-set-localized-string-to-xamarin-forms-sfimageeditor)

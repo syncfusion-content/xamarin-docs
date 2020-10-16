@@ -98,7 +98,7 @@ editor.Crop(new Rectangle(100,100,150,200));
 
 ![SfImageEditor](ImageEditor_images/cropaspect.png)
 
-## See Also
+## See also
 
 [How to detect cropping window is enabled or not](https://www.syncfusion.com/kb/9750/how-to-detect-cropping-window-is-enabled-or-not)
 

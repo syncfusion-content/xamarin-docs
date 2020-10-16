@@ -30,7 +30,7 @@ The SfNumericUpDown provides the Localization support for the Return Key in soft
 
 ## See also
 
-[How to change the Culture of SfNumericUpDown](https://www.syncfusion.com/kb/7689/does-sfnumericupdown-responds-change-in-culture)
+[How to change the culture of SfNumericUpDown](https://www.syncfusion.com/kb/7689/does-sfnumericupdown-responds-change-in-culture)
 
 [How to set customized currency symbol in SfNumericUpDown](https://www.syncfusion.com/kb/10446/how-to-set-customized-currency-symbol-in-xamarin-forms-numeric-controls)
 

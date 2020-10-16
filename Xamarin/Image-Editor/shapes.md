@@ -88,7 +88,7 @@ You can delete the selected shape by using the [`Delete`](https://help.syncfusio
 
 N> You cannot delete the path.
 
-## See Also
+## See also
 
 [How to add shapes to the image editor on initial loading](https://www.syncfusion.com/kb/11273/how-to-add-shapes-to-the-xamarin-forms-image-editor-on-initial-loading)
 

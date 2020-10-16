@@ -36,5 +36,3 @@ this.Content = numericTextBox;
 ## See also
 
 [How to set the MaximumDecimalDigits in SfNumericTextBox](https://www.syncfusion.com/kb/7593/how-to-set-the-maximumdecimaldigits-in-numerictextbox)
-
-[How to modify number of decimal digits display](https://www.syncfusion.com/kb/7059/how-to-modify-number-of-decimal-digits-display)

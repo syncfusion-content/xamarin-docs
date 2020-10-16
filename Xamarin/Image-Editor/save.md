@@ -329,7 +329,7 @@ private void ImageEditor_ImageEdited(object sender, ImageEditedEventArgs e)
 
 {% endhighlight %}
 
-## See Also
+## See also
 
 [How to import and export image from SQL DB](https://www.syncfusion.com/kb/9633/how-to-import-and-export-image-from-sql-db)
 

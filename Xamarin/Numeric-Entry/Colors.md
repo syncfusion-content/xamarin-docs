@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Colors in Syncfusion NumericTextBox control for Xamarin.Forms
-description: Learn what are the color properties in  NumericTextBox
+description: This section explain, color customizationin properties in Syncfusion NumericTextBox control for Xamarin.Forms.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Colors
+# Colors in Xamarin Numeric Entry (SfNumericTextBox)
 
 SfNumericTextBox can be set to use a custom background,text and border colors via the following bindable properties:
 
@@ -119,3 +119,9 @@ this.Content = numericTextBox;
 {% endtabs %}
 
 ![Display SfNumericTextBox with WatermarkColor](images/watermarkcolor.png)
+
+## See also
+
+[How to customize the border of SfNumericTextBox](https://www.syncfusion.com/kb/7587/how-to-custom-the-border-of-numerictextbox)
+
+[How to customize the color appearance of SfNumericTextBox](syncfusion.com/kb/7586/how-to-customize-the-color-appearance-of-numeric-controls-in-xamarin-forms)

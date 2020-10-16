@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Events in Syncfusion NumericTextBox for Xamarin.Forms
-description: Learn how to get the value changed event and some interactivity in  NumericTextBox
+description: Learn how to get the value changed event and some interactivity in Syncfusion NumericTextBox for Xamarin.Forms.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Events and Interactivity
+# Events and Interactivity in Xamarin Numeric Entry (SfNumericTextBox)
 
 ## Events
 
@@ -128,3 +128,9 @@ void Handle_Completed(object sender, System.EventArgs e)
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to change the SfNumericTextBox style using its visual states]( https://www.syncfusion.com/kb/11785/how-to-change-the-xamarin-forms-numeric-textbox-style-using-its-visual-states)
+
+[How to define and apply a common style for SfNumericTextBox]( https://www.syncfusion.com/kb/11670/how-to-define-and-apply-a-common-style-for-sfnumerictextbox-in-xamarin-forms)

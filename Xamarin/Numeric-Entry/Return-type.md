@@ -6,7 +6,7 @@ platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Return Type
+# Return Type in Xamarin Numeric Entry (SfNumericTextBox)
 
 We can able to define the return key type of NumericTextBox by using the `ReturnType` property of the type [Xamarin.Forms ReturnType](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.returntype?view=xamarin-forms).
 
@@ -78,3 +78,7 @@ The `ReturnCommandParameter` property is used to set the parameter that is sent 
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to get the localized return key on the iOS keyboard in SfNumericTextBox](https://www.syncfusion.com/kb/11630/how-to-get-the-localized-return-key-on-the-ios-keyboard-in-xamarin-forms-numeric-controls)

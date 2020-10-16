@@ -54,5 +54,5 @@ this.Content = numericTextBox;
 
 ## See also
 
-[How to custom the Font in NumericTextBox](https://www.syncfusion.com/kb/7585/how-to-custom-the-font-in-numerictextbox)
+[How to custom the Font in SfNumericTextBox](https://www.syncfusion.com/kb/7585/how-to-custom-the-font-in-numerictextbox)
 

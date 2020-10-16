@@ -144,4 +144,4 @@ inputLayout.InputView = new Entry();
 
 ## See Also
 
-[How to align Leading and Trailing Views](http://www.syncfusion.com/support/kb/11046/how-to-vertically-center-align-icons-in-leading-and-trailing-views)
+[How to align leading and trailing views](http://www.syncfusion.com/support/kb/11046/how-to-vertically-center-align-icons-in-leading-and-trailing-views)

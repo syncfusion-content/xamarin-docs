@@ -131,6 +131,6 @@ void Handle_Completed(object sender, System.EventArgs e)
 
 ## See also
 
-[How to change the Xamarin.Forms numeric textbox style using its visual states (SfNumericTextBox)]( https://www.syncfusion.com/kb/11785/how-to-change-the-xamarin-forms-numeric-textbox-style-using-its-visual-states)
+[How to change the SfNumericTextBox style using its visual states]( https://www.syncfusion.com/kb/11785/how-to-change-the-xamarin-forms-numeric-textbox-style-using-its-visual-states)
 
-[How to define and apply a common style for SfNumericTextBox in Xamarin.Forms]( https://www.syncfusion.com/kb/11670/how-to-define-and-apply-a-common-style-for-sfnumerictextbox-in-xamarin-forms)
+[How to define and apply a common style for SfNumericTextBox]( https://www.syncfusion.com/kb/11670/how-to-define-and-apply-a-common-style-for-sfnumerictextbox-in-xamarin-forms)

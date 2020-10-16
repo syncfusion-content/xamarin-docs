@@ -853,7 +853,7 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 
 ## See Also
 
-[How to add different style marker pins to Xamarin.Forms SfMaps](https://www.syncfusion.com/kb/11372/how-to-add-different-style-marker-pins-to-xamarin-forms-maps-sfmaps)
+[How to add different style marker pins to SfMaps](https://www.syncfusion.com/kb/11372/how-to-add-different-style-marker-pins-to-xamarin-forms-maps-sfmaps)
 
 [How to add SfMap markers dynamically to the tapped location](https://www.syncfusion.com/kb/10550/how-to-add-map-markers-dynamically-to-the-tapped-location)
 

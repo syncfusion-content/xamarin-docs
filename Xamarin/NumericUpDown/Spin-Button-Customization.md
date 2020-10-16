@@ -520,9 +520,9 @@ numericUpDown.SpinValidation = SpinValidation.Tapped;
 
 ## See also
 
-[How to change the Spinner button position](https://www.syncfusion.com/kb/7669/how-to-change-the-spinner-button-position)
+[How to change the Spinner button position in SfNumericUpDown](https://www.syncfusion.com/kb/7669/how-to-change-the-spinner-button-position)
 
-[How to hide the increment or decrement button in numeric up down](https://www.syncfusion.com/kb/11647/how-to-hide-the-increment-or-decrement-button-in-xamarin-forms-numeric-control)
+[How to hide the increment or decrement button in SfNumericUpDown](https://www.syncfusion.com/kb/11647/how-to-hide-the-increment-or-decrement-button-in-xamarin-forms-numeric-control)
 
-[How to customize the spin button of the NumericUpDown](https://www.syncfusion.com/kb/10156/how-to-customise-the-spin-button-of-the-numericupdown)
+[How to customize the spin button of the SfNumericUpDown](https://www.syncfusion.com/kb/10156/how-to-customise-the-spin-button-of-the-numericupdown)
 

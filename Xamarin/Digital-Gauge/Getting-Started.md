@@ -318,4 +318,4 @@ You can find the complete getting started sample from this [`link`](http://www.
 
 ## See also
 
-[How to resolve SfGauge not rendering issue in Xamarin.Forms for iOS](https://www.syncfusion.com/kb/7993/how-to-resolve-sfgauge-not-rendering-issue-in-xamarin-forms-for-ios)
+[How to resolve SfCircularGauge not rendering issue in Xamarin.Forms for iOS](https://www.syncfusion.com/kb/7993/how-to-resolve-sfgauge-not-rendering-issue-in-xamarin-forms-for-ios)

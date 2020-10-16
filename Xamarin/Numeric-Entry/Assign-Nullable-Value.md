@@ -61,6 +61,6 @@ For customizing the color of NumericTextBox's Watermark [refer](https://help.syn
 
 ## See also
 
-[How to have null values in NumericTextBox](https://www.syncfusion.com/kb/7594/how-to-have-null-values-in-numerictextbox)
+[How to have null values in SfNumericTextBox](https://www.syncfusion.com/kb/7594/how-to-have-null-values-in-numerictextbox)
 
-[How to provide null value to NumericTextBox?](https://www.syncfusion.com/kb/7061/how-to-provide-null-value-to-numerictextbox)
+[How to provide null value to SfNumericTextBox](https://www.syncfusion.com/kb/7061/how-to-provide-null-value-to-numerictextbox)

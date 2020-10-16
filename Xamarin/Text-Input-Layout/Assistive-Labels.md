@@ -147,7 +147,7 @@ inputLayout.InputView = new Entry();
 
 ## See Also
 
-[How to remove the space at the bottom of TextInputLayout](https://www.syncfusion.com/kb/11040/how-to-remove-the-space-at-the-bottom-of-textinputlayout)
+[How to remove the space at the bottom of SfTextInputLayout](https://www.syncfusion.com/kb/11040/how-to-remove-the-space-at-the-bottom-of-textinputlayout)
 
 [How to apply LineBreakMode for labels in SfTextInputLayout](https://www.syncfusion.com/kb/11043/how-to-apply-linebreakmode-for-labels-in-sftextinputlayout)
 

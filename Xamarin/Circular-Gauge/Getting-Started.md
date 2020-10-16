@@ -484,22 +484,22 @@ You can find the complete getting started sample from this [`link`](http://www.s
 
 ## See Also
 
-[How to achieve Doughnut Chart requirement in CircularGauge](https://www.syncfusion.com/kb/8295/how-to-achieve-doughnut-chart-requirement-in-circulargauge)
+[How to achieve doughnut chart requirement in circular gauge](https://www.syncfusion.com/kb/8295/how-to-achieve-doughnut-chart-requirement-in-circulargauge)
 
-[How to customize a circular gauge control as a TimeLine gauge?](https://www.syncfusion.com/kb/8294/how-to-customize-a-circular-gauge-control-as-a-timeline-gauge)
+[How to customize a circular gauge control as a time line gauge](https://www.syncfusion.com/kb/8294/how-to-customize-a-circular-gauge-control-as-a-timeline-gauge)
 	
-[How to make Syncfusion Xamarin.Forms SfCircularGauge to work in UWP in release mode when .NET Native tool chain is enabled?](https://www.syncfusion.com/kb/8272/how-to-make-syncfusion-xamarin-forms-sfcirculargauge-to-work-in-uwp-in-release-mode-when)
+[How to make circular gauge to work in UWP in release mode when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/8272/how-to-make-syncfusion-xamarin-forms-sfcirculargauge-to-work-in-uwp-in-release-mode-when)
 
-[How to resolve SfCircularGauge not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/8271/how-to-resolve-sfcirculargauge-not-rendering-issue-in-ios-and-uwp)
+[How to resolve circular gauge not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/8271/how-to-resolve-sfcirculargauge-not-rendering-issue-in-ios-and-uwp)
 
-[How to resolve SfGauge not rendering issue in Xamarin.Forms for iOS](https://www.syncfusion.com/kb/7992/how-to-resolve-sfgauge-not-rendering-issue-in-xamarin-forms-for-ios)
+[How to resolve circular gauge not rendering issue in Xamarin.Forms for iOS](https://www.syncfusion.com/kb/7992/how-to-resolve-sfgauge-not-rendering-issue-in-xamarin-forms-for-ios)
 
-[How to use a circular gauge control as a Quarter Gauge?](https://www.syncfusion.com/kb/7873/how-to-use-a-circular-gauge-control-as-a-quarter-gauge)
+[How to use a circular gauge control as a quarter gauge](https://www.syncfusion.com/kb/7873/how-to-use-a-circular-gauge-control-as-a-quarter-gauge)
 
-[How to use a circular gauge control as a circular progress bar?](https://www.syncfusion.com/kb/6620/how-to-use-a-circular-gauge-control-as-a-circular-progress-bar)
+[How to use a circular gauge control as a circular progress bar](https://www.syncfusion.com/kb/6620/how-to-use-a-circular-gauge-control-as-a-circular-progress-bar)
 
-[How to design a fuel meter using Circular Gauge?](https://www.syncfusion.com/kb/6617/how-to-design-a-fuel-meter-using-circular-gauge)
+[How to design a fuel meter using circular gauge](https://www.syncfusion.com/kb/6617/how-to-design-a-fuel-meter-using-circular-gauge)
 
-[How to create SfCircularGauge with a Graphical image as the background?](https://www.syncfusion.com/kb/4958/how-to-create-sfcirculargauge-with-a-graphical-image-as-the-background)
+[How to create circular gauge with a graphical image as the background](https://www.syncfusion.com/kb/4958/how-to-create-sfcirculargauge-with-a-graphical-image-as-the-background)
 
-[How can you use data binding in Gauge with the MVVM pattern?](syncfusion.com/kb/4138/how-can-you-use-data-binding-in-gauge-with-the-mvvm-pattern)
+[How can you use data binding in gauge with the MVVM pattern](syncfusion.com/kb/4138/how-can-you-use-data-binding-in-gauge-with-the-mvvm-pattern)

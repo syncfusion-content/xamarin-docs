@@ -7,7 +7,7 @@ control: SfSunburstChart
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Sunburst Chart (SfSunburstChart)
 
 This section explains the steps required to configure the [`SfSunburstChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html) and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
 
@@ -885,3 +885,8 @@ The following screenshot depicts the final output.
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sunburst_Sample-1965856985).
 
+## See also
+
+[How to make SfSunburstChart to work in UWP in release mode when .NET Native tool chain is enabled](https://www.syncfusion.com/kb/7715/how-to-make-syncfusion-xamarin-forms-sfsunburstchart-to-work-in-uwp-in-release-mode-when)
+
+[How to resolve SfSunburstChart not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/7714/how-to-resolve-sfsunburstchart-not-rendering-issue-in-ios-and-uwp)

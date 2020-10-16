@@ -316,3 +316,6 @@ The following screenshot illustrates the result of the previous codes.
 
 You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge-GettingStarted-72347847).
 
+## See also
+
+[How to resolve SfCircularGauge not rendering issue in Xamarin.Forms for iOS](https://www.syncfusion.com/kb/7993/how-to-resolve-sfgauge-not-rendering-issue-in-xamarin-forms-for-ios)

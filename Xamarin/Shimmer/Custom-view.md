@@ -708,3 +708,7 @@ You can also customize the shimmer using `ShimmerView` using the [`CustomView`](
 {% endtabs %}
 
 ![Custom View](CustomView_images/customview.gif)
+
+## See also
+
+[How to set the custom view in SfShimmer using style](https://www.syncfusion.com/kb/11851/how-to-set-the-custom-view-in-xamarin-forms-shimmer-using-style)

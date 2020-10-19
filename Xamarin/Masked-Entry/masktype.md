@@ -219,7 +219,7 @@ Accepts any character between[A-F]/[a-f] and numbers between [0-9].
 </tr>
 </table>
 
-N> SfMaskedEdit control only supports the above listed regex mask characters.
+N> SfMaskedEdit control only supports the above listed regex mask characters. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -235,3 +235,18 @@ maskedEdit.Mask = @"+1(\d{3})\d{5}";
 This mask expression ’\d{3}’ and’ \d{5}’ allows only numeric, where {n} is the count that the input should be accepted.
 
 ![MaskType support in Xamarin.Forms masked edit](SfMaskedEditImages/MaskType.png)
+
+N> If your requirement to type special character such as _ and @. In this case, you can specify that special character directly to the Mask as per your required order. By default, the PromptChar value is _ (underscore). So, if you use mask with "_" then type character _ (underscore) will not accepted. It replaced by the character when you enter. To avoid this, you can set the PromptChar text other than _ (underscore) as per in the below code sample.  
+
+{% tabs %}
+{% highlight xaml %}
+<syncmaskededit:SfMaskedEdit x:Name="maskedEdit" MaskType="RegEx" Mask="[a-z0-9A-Z@_#*()-/$]*" PromptChar="*"/>
+{% endhighlight %}
+{% highlight c# %}
+SfMaskedEdit maskedEdit = new SfMaskedEdit();
+maskedEdit.MaskType = MaskType.RegEx;
+maskedEdit.Mask = @"[a-z0-9A-Z@_#*()-/$]*";
+maskedEdit.PromptChar="*";
+{% endhighlight %}
+{% endtabs %}
+

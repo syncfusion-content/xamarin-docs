@@ -101,6 +101,8 @@ public class EmployeeInfo : INotifyDataErrorInfo, INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
+You can download the entire source code here.
+
 ### Data annotations
 
 You can validate the data using data annotation attributes.
@@ -165,6 +167,8 @@ public DateTime JoinDate
 }
 {% endhighlight %}
 {% endtabs %}
+
+You can download the entire source code here.
 
 ![validation in Xamarin.Forms DataForm](SfDataForm_images/Validation.png)
 

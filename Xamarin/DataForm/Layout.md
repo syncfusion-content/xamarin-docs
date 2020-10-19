@@ -183,6 +183,8 @@ public string FirstName
 {% endhighlight %}
 {% endtabs %}
 
+You can download the entire source code here.
+
 ### Using event
 
 By using the [ImageSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html#Syncfusion_XForms_DataForm_DataFormItem_ImageSource) property in the `DataFormItem`, you can load the image as label.
@@ -200,6 +202,8 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 }
 {% endhighlight %}
 {% endtabs %}
+
+You can download the entire source code here.
 
 ![Setting image to data form field in Xamarin.Forms DataForm](SfDataForm_images/LabelCustomized.png)
 

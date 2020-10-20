@@ -236,7 +236,11 @@ This mask expression ’\d{3}’ and’ \d{5}’ allows only numeric, where {n} 
 
 ![MaskType support in Xamarin.Forms masked edit](SfMaskedEditImages/MaskType.png)
 
-N> If your requirement to type special character such as _ and @. In this case, you can specify that special character directly to the Mask as per your required order. The default value of PromptChar is _ (underscore). So, if you use mask with "_" then type character _ (underscore) will not accepted. It will be replaced by the character when you enter. To avoid this, you can set the PromptChar text other than _ (underscore) as per in the below code sample.  
+## Troubleshooting
+
+In case of having the requirement is to type the special characters such as _ and @, you can specify that directly in Mask as per your required order. 
+
+If you use the mask with "_" then typed character _ (underscore) will not be accepted since the default value of PromptChar is _ (underscore). Hence, it will be replaced by the character when you enter. To avoid this, you can set the PromptChar text other than _ (underscore) as shown in below
 
 {% tabs %}
 {% highlight xaml %}

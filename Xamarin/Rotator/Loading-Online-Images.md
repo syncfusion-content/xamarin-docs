@@ -93,6 +93,7 @@ public class RotatorViewModel
     {
         public RotatorViewModel()
         {
+            ImageCollection= = new ObservableCollection<RotatorModel>();
             ImageCollection.Add(new RotatorModel("https://cdn.syncfusion.com/content/images/Images/Camtasia_Succinctly.png?v=22022017060923"));
             ImageCollection.Add(new RotatorModel("https://cdn.syncfusion.com/content/images/Images/SQL_Queries_Succinctly.png?v=04022017014551"));
             ImageCollection.Add(new RotatorModel("https://upload.wikimedia.org/wikipedia/commons/0/0c/Cow_female_black_white.jpg"));
@@ -101,7 +102,7 @@ public class RotatorViewModel
             ImageCollection.Add(new RotatorModel("https://cdn.syncfusion.com/content/images/Images/sql_server_for_c_sharp_developers_succinctly_cover_img.png?v=22022017060923"));
         }
 
-        private ObservableCollection<RotatorModel> imageCollection = new ObservableCollection<RotatorModel>();
+        private ObservableCollection<RotatorModel> imageCollection;
         public ObservableCollection<RotatorModel> ImageCollection
         {
             get { return imageCollection; }

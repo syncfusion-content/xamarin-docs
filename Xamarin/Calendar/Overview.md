@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview of Syncfusion Calendar control for Xamarin.Forms
-description: Overview and key features of Calendar control
+description: Describes the quick Overview and key features of Calendar (SfCalendar) control in Xamarin.Forms platform.
 platform: Xamarin
 control: Calendar
 documentation: ug
 ---
 
-# Overview
+# Xamarin Calendar (SfCalendar) Overview
 
 The Essential Xamarin Calendar widget provides the multi-view representation to display and select one or more dates within specified ranges. Also provides a gesture friendly UI to perform operations like navigations, events, etc.
 Calendar supports addition of events for specific dates.It also shows event details of the selected date in inline or agenda view.The Xamarin.Forms Calendar supports right to left (RTL) direction for users working in right-to-left languages like Hebrew, Arabic, or Persian.

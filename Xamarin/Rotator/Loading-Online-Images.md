@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Loading URL Images in Syncfusion Rotator control for Xamarin.Forms.
-description: Loading URL Images in Rotator control in Xamarin.Forms
+description: This section describes how to load URL Images in Syncfusion Rotator control in Xamarin.Forms
 platform: xamarin 
 control: Rotator 
 documentation: ug
 ---
 
-# Loading URL Images
+# Loading URL Images in SfRotator
 
 This section describes how to load the online images in SfRotator Control.
 

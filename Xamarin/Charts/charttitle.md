@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Chart Title
+title: Syncfusion.Xamarin.Forms Chart Title
 description: How to add chart title and customize the appearance of the chart title in the Essential Xamarin.Forms.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Title
+# Title in Xamarin Charts (SfChart)
 
 You can define and customize the Chart title using [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Title) property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). The [`Text`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTitle.html#Syncfusion_SfChart_XForms_ChartTitle_Text) property of [`ChartTitle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTitle.html) is used to set the text for the title. 
 
@@ -82,3 +82,41 @@ sfChart.Title.TextColor = Color.Blue;
 {% endtabs %}
 
 ![Text alignment support for title in Xamarin.Forms Chart](charttitle_images/charttitle_img2.png)
+
+## Text Wrap
+
+By using the [`LineBreakMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTitle.html#Syncfusion_SfChart_XForms_ChartTitle_LineBreakMode) property, You can wrap the chart title text content. The default value of this property is `NoWrap`.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+
+	<chart:SfChart.Title>
+
+	<chart:ChartTitle Text="Percentage change in efficiency of oil-fired power production in Russia for six months" TextColor="Blue" LineBreakMode="TailTruncation"/>
+
+	</chart:SfChart.Title>  
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart sfChart = new SfChart();
+
+sfChart.Title.Text = "Percentage change in efficiency of oil-fired power production in Russia for six months;
+
+sfChart.Title.TextColor = Color.Blue;
+
+sfChart.Title.LineBreakMode = LineBreakMode.TailTruncation;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> HeadTruncation and MiddleTruncation is not supported in UWP and WPF platforms.
+
+![Text wrap support for title in Xamarin.Forms Chart](charttitle_images/charttitle_img3.png)

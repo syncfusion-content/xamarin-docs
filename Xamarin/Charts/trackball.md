@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Syncfusion.Xamarin.Forms Chart Trackball
-description: How to enable and customize the trackball behavior in Essential Xamarin.Forms Chart
+description: How to enable, customize the trackball, show/hide the trackball label behavior in Essential Xamarin.Forms Chart
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Trackball
+# Trackball in Xamarin Charts (SfChart)
 
 Trackball feature displays the tooltip for the data points that are closer to the point where you touch on the chart area. This feature, especially, can be used instead of data label feature when you cannot show data labels for all data points due to space constraint. To enable this feature, add an instance of [`ChartTrackballBehavior`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballBehavior.html#) to the [`ChartBehaviors`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartBehavior.html#) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#). Trackball will be activated once you long-press anywhere on the chart area. Once it is activated, it will appear in the UI and move based on your touch movement until you stop touching on the chart.
 
@@ -550,7 +550,7 @@ trackball.HitTest(pointX, pointY);
 
 ### TrackballCreated
 
-The [`TrackballCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) event occurs when the trackball moves from one data point to another. This argument contains object of [`ChartPointsInfo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballCreatedEventArgs.html#Syncfusion_SfChart_XForms_ChartTrackballCreatedEventArgs_ChartPointsInfo). The following properties are available in ChartPointInfo class to customize the appearance of trackball label based on condition.
+The [`TrackballCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms~Syncfusion.SfChart.XForms.SfChart~TrackballCreated_EV.html) event occurs when the trackball moves from one data point to another. This argument contains object of [`ChartPointsInfo`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTrackballCreatedEventArgs.html#Syncfusion_SfChart_XForms_ChartTrackballCreatedEventArgs_ChartPointsInfo). The following properties are available in ChartPointInfo class to customize the appearance of trackball label based on condition.
 
 * [`Label`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_Label) - Gets or sets the text of trackball label.
 * [`IsVisible`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_IsVisible) - Gets or sets the visibility of trackball.
@@ -561,3 +561,13 @@ The [`TrackballCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCha
 * [`XPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_XPosition) -  Gets the x-position of trackball label.
 * [`YPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_YPosition) - Gets the y-position of trackball label.
 * [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartPointInfo.html#Syncfusion_SfChart_XForms_ChartPointInfo_BackgroundColor) - Gets the default background color of trackball label.
+
+## See also
+
+[How to add multiple trackballs in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10400/how-to-add-multiple-trackballs-in-xamarin-forms-chart)
+
+[How to activate the trackball on touch in Xamarin.Forms](https://www.syncfusion.com/kb/8620/how-to-activate-the-trackball-on-touch)
+
+[How to format the trackball labels](https://www.syncfusion.com/kb/5779/how-to-format-the-trackball-labels)
+
+[How to set the milliseconds label format for axis and trackball label in Xamarin.Forms Chart](https://www.syncfusion.com/kb/10812/how-to-set-the-milliseconds-label-format-for-axis-and-trackball-label-in-xamarin-forms)

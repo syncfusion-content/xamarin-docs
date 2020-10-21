@@ -400,9 +400,9 @@ public class ViewModel
 
 ## Showing label on bubble marker.
 
-The [`ShowMapItems`](https://helpsyncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShowMapItems.html) property determines whether the label should be displayed on the bubble marker or not. Set the [`ShapeValuePath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeSetting.html#Syncfusion_SfMaps_XForms_ShapeSetting_ShapeValuePath) property to get the labels.
+The [`ShowMapItems`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_ShowMapItems) property determines whether the label should be displayed on the bubble marker or not. Set the [`ShapeValuePath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeSetting.html#Syncfusion_SfMaps_XForms_ShapeSetting_ShapeValuePath) property to get the labels.
 
-N> The default value of [`ShowMapItems`](https://helpsyncfusion.com/cr/cref_files/xamarin/Syncfusion.SfMaps.XForms~Syncfusion.SfMaps.XForms.ShapeFileLayer~ShowMapItems.html) property is true
+N> The default value of [`ShowMapItems`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_ShowMapItems) property is true
 
 {% tabs %}
 
@@ -482,4 +482,12 @@ map.Layers.Add(shapeLayer);
 
 ![Bubble marker with label](Images/BubbleMarker_withlabel.jpg)
 
+## See also
 
+[How to group the markers based on zoom level in the imagery layer of the SfMaps](https://www.syncfusion.com/kb/10200/how-to-group-the-markers-based-on-zoom-level-in-the-imagery-layer-of-the-sfmaps-control)
+
+[How to show the bubble markers in the specific latitude and longitude in SfMaps](https://www.syncfusion.com/kb/11910/how-to-show-the-bubble-markers-in-the-specific-latitude-and-longitude-in-xamarin-forms-map)
+
+[How to add different style marker pins to SfMaps](https://www.syncfusion.com/kb/11372/how-to-add-different-style-marker-pins-to-xamarin-forms-maps-sfmaps)
+
+[How to add map markers dynamically to the tapped location](https://www.syncfusion.com/kb/10550/how-to-add-map-markers-dynamically-to-the-tapped-location)

@@ -126,3 +126,7 @@ radioGroup.Children.Add(creditCard);
 {% endtabs %}
 
 ![RadioGroup horizontal orientation](Images/Orientation.png)
+
+## See also
+
+[How to get the selected Xamarin.Forms radio button (SfRadioButton)](https://www.syncfusion.com/kb/10914/how-to-get-the-selected-xamarin-forms-radiobutton)

@@ -53,27 +53,28 @@ When the selection mode is `Multiple`, programmatically select more than one ite
 
 {% tabs %}
 {% highlight c# %} 
+
 //Perform multiple selection using selected items
 public class SelectionViewModel : INotifyPropertyChanged
 {
     private ObservableCollection<object> selectedItems;
-    
+
     public SelectionViewModel()
     {
         GenerateSource();
         SelectedItems = new ObservableCollection<object>();
     }
-	
+
     public ObservableCollection<object> SelectedItems
     {
         get { return selectedItems; }
         set { this.selectedItems = value; }
     }
-	private async void GenerateSource()
+    private async void GenerateSource()
     {
-        var random = new Random();        
+        var random = new Random();
         SelectedItems.Add(MusicInfo[0]);
-	}
+    }
 }
 
 listView.SelectedItems.Add (viewModel.Items [4]);

@@ -2,14 +2,14 @@
 
 layout: post
 title: Customization of Syncfusion Badge View control for Xamarin.Forms
-description: Learn how to set Syncfusion badge view customization in Xamarin.Forms platform
+description: This section explain font, stroke, Text customization in the Syncfusion SfBadgeView control in Xamarin.Forms platform
 platform: xamarin
 control: SfBadgeView
 documentation: ug
 
 ---
 
-# Badge Settings
+# Badge Customization in Xamarin Badge View (SfBadgeView)
 
 The [`BadgeSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.SfBadgeView.html#Syncfusion_XForms_BadgeView_SfBadgeView_BadgeSettings) property helps you customize the basic look and feel of the badge view. 
 [`BadgeSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.SfBadgeView.html#Syncfusion_XForms_BadgeView_SfBadgeView_BadgeSettings) contains the sub elements such as badge types, positions, icons, colors, and alignments. You can customize the background color, text color, stroke color, width, offset, and font attributes.
@@ -325,3 +325,7 @@ Content = sfBadgeView;
 {% endtabs %}
 
 ![Xamarin BadgeView Alignment](badge-customization_images/badge_alignment.png)
+
+## See also
+
+[How to add a custom icon to the badge in Xamarin.Forms badge view (SfBadgeView)](https://www.syncfusion.com/kb/11338/how-to-add-a-custom-icon-to-the-badge-in-xamarin-forms-badge-view-sfbadgeview)

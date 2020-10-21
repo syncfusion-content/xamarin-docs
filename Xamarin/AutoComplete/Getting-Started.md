@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Getting Started for Syncfusion Xamarin.Forms AutoComplete
-description : A quick tour to initial users on Syncfusion autocomplete control for Xamarin.Forms platform
-platform : xamarin
-control : SfAutoComplete
-documentation : ug
+layout: post
+title: Getting Started for Syncfusion Xamarin.Forms AutoComplete
+description: A quick tour to initial users on Syncfusion autocomplete control and explain about how to use it for Xamarin.Forms platform
+platform: xamarin
+control: SfAutoComplete
+documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin AutoComplete (SfAutoComplete)
 
 ## Getting started with SfAutoComplete
 
@@ -47,7 +47,7 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 <tr>
 <td>Android</td>
-<td>Syncfusion.SfAutoComplete.Android.dll<br/>Syncfusion.SfAutoComplete.XForms.Android.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
+<td>Syncfusion.SfAutoComplete.XForms.Android.dll<br/>Syncfusion.SfAutoComplete.XForms.dll<br/>Syncfusion.Core.XForms.dll<br/>Syncfusion.Core.XForms.Android.dll<br/>Syncfusion.Licensing.dll<br/></td>
 </tr>
 <tr>
 <td>iOS</td>

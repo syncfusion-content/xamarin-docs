@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Colors in Syncfusion NumericUpDown control for Xamarin.Forms
-description: Learn what are the color properties in  NumericUpDown
+description: This section explain, color customizationin properties in Syncfusion NumericUpDown control for Xamarin.Forms.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
-# Colors
+# Colors in Xamarin NumericUpDown (SfNumericUpDown)
 
 SfNumericUpDown is used to set custom background, text, and border colors through the following bindable properties:
 
@@ -118,3 +118,7 @@ this.Content = NumericUpDown;
 {% endtabs %}
 
 ![Display the NumericUpDown with WatermarkColor](images/watermarkcolor.png)
+
+## See also
+
+[How to customize the color appearance of SfNumericUpDown](https://www.syncfusion.com/kb/11610/how-to-customize-the-color-appearance-of-numeric-controls-in-xamarin-forms)

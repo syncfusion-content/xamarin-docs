@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Font Settings in Syncfusion NumericUpDown control for Xamarin.Forms
-description: Learn how to set the Font style in  NumericUpDown
+description: This section explain, how to set the Font style in  Syncfusion NumericUpDown control for Xamarin.Forms.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
-# Font Customization
+# Font Settings in Xamarin NumericUpDown (SfNumericUpDown)
 
 You can customize the font style of NumericUpDown using the following font-related properties that display the value's text:
 
@@ -54,3 +54,7 @@ this.Content = NumericUpDown;
 {% endtabs %}
 
 ![Display the NumericUpDown control with FontCustomization](images/textformatend.png)
+
+## See also
+
+[How to customize the text in the SfNumericUpDown](https://www.syncfusion.com/kb/7672/how-to-customise-the-text-present-in-the-sfnumericupdown)

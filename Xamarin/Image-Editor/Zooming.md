@@ -37,6 +37,34 @@ You can enable or disable the zooming functionality by setting the [`EnableZoomi
 
 {% endtabs %}
 
+### Zoom level
+
+Programmatically, you can zoom the loaded image without any interaction by setting a value to [`ZoomLevel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ZoomLevel) property. At the same time, you can get the information about whether the image is zoomed or not by accessing the [`IsImageZoomed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_IsImageZoomed) property in image editor.
+
+{% tabs %}
+
+{% highlight XAML %}
+  
+    <editor:SfImageEditor x:Name="editor" Source="{Binding Image}" ImageLoaded="SfImageEditor_ImageLoaded"/>
+     
+{% endhighlight %}
+
+{% highlight C# %}
+
+            SfImageEditor editor = new SfImageEditor();
+            editor.Source = ImageSource.FromResource("XFormsUG.RoadView.jpeg");
+            editor.ImageLoaded += SfImageEditor_ImageLoaded;
+            this.Content = editor;
+   
+        private void SfImageEditor_ImageLoaded(object sender, ImageLoadedEventArgs args)
+        {
+            editor.ZoomLevel = 3;
+        }
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Maximum zoom level
 
 You can set the maximum zoom level to image using the [`MaximumZoomLevel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_MaximumZoomLevel) property.
@@ -84,3 +112,7 @@ editor.PanningMode = PanningMode.TwoFinger;
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to create zoom able image in Xamarin.Forms using SfImageEditor](https://www.syncfusion.com/kb/9379/how-to-create-zoomable-image-in-xamarin-forms-using-sfimageeditor)

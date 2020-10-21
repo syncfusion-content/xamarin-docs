@@ -510,12 +510,28 @@ N> Default value of the IsCenterAligned property is false.
 
 ![Center Aligned SfCircularGauge image](scales_images/iscenteraligned.png)
 
-## See Also
+## See also
+
+[How to design a compass that always points to a specific place in SfCircularGauge](https://www.syncfusion.com/kb/11426/how-to-design-a-compass-that-always-points-to-a-specific-place-in-xamarin-forms-circular)
+
+[How to show the direction by latitude and longitude values in SfCircularGauge using direction compass](https://www.syncfusion.com/kb/10606/how-to-show-the-direction-by-latitude-and-longitude-values-in-sfcirculargauge-using)
 
 [How to bind scale collection to SfCircularGauge](https://www.syncfusion.com/kb/10578/how-to-bind-scale-collection-to-sfcirculargauge)
 
 [How to set start and sweep angles for scale](https://www.syncfusion.com/kb/10567/how-to-set-start-and-sweep-angles-for-scale)
 
-[How to bind scale collection to SfCircularGauge](https://www.syncfusion.com/kb/10578/how-to-bind-scale-collection-to-sfcirculargauge)
+[How to bind range collection to scale in Xamarin.Forms SfCircularGauge](https://www.syncfusion.com/kb/10506/how-to-bind-range-collection-to-scale-in-xamarin-forms-sfcirculargauge)
 
-[How to customize Rim position for Scale](https://www.syncfusion.com/kb/8296/how-to-customize-rim-position-for-scale)
+[How to customize rim position for Scale](https://www.syncfusion.com/kb/8296/how-to-customize-rim-position-for-scale)
+
+[How to achieve doughnut chart requirement in SfCircularGauge](https://www.syncfusion.com/kb/8295/how-to-achieve-doughnut-chart-requirement-in-circulargauge)
+
+[How to customize a circular gauge control as a time line gauge](https://www.syncfusion.com/kb/8294/how-to-customize-a-circular-gauge-control-as-a-timeline-gauge)
+
+[How to use a circular gauge control as a quarter gauge](https://www.syncfusion.com/kb/7873/how-to-use-a-circular-gauge-control-as-a-quarter-gauge)
+
+[How to use a circular gauge control as a circular progress bar](https://www.syncfusion.com/kb/6620/how-to-use-a-circular-gauge-control-as-a-circular-progress-bar)
+
+[How to design a fuel meter using SfCircularGauge](https://www.syncfusion.com/kb/6617/how-to-design-a-fuel-meter-using-circular-gauge)
+
+[How to create SfCircularGauge with a graphical image as the background](https://www.syncfusion.com/kb/4958/how-to-create-sfcirculargauge-with-a-graphical-image-as-the-background)

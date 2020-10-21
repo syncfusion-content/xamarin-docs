@@ -1,10 +1,10 @@
 ---
-layout: post
+layout : post
 title: AutomationId support for Syncfusion Carousel control in Xamarin.Forms
-description: Learn how to use the AutomationId and set AutomationId to find and interact with inner elements in Carousel View(SfCarousel)
-platform: Xamarin.Forms
-control: SfCarousel
-documentation: ug
+description: Know about setting AutomationId to find and interact with inner elements in Carousel for Xamarin.Forms Carousel View.
+platform : Xamarin.Forms
+control : SfCarousel
+documentation : ug
 ---
 
 # AutomationId API in Carousel View(SfCarousel)

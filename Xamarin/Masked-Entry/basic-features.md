@@ -188,3 +188,8 @@ maskededit.MaskType = MaskType.RegEx;
 {% endtabs %}
 
 ![Clear button visibility support in Xamarin.Forms masked edit](SfMaskedEditImages/ClearButton.png)
+
+## Cursor position
+
+Cursor position in the entry can either be obtained or updated using [`CursorPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_CursorPosition) property in masked edit.
+

@@ -59,7 +59,19 @@ You can rotate and resize the custom view by enabling the [`RotatableElements`](
 
 N> The default value for RotatableElements is `None`.
 
-You can rotate the custom view based on a particular angle using [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.CustomViewSettings.html#Syncfusion_SfImageEditor_XForms_CustomViewSettings_Angle) property in [`CustomViewSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.CustomViewSettings.html) as shown in the following code snippet. 
+You can rotate both the text and the custom view by enabling the [`RotatableElements`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_RotatableElements) property of image editor as shown in the following code sample.
+
+{% tabs %}
+
+{% highlight C# %}
+
+    editor.RotatableElements = ImageEditorElements.Text | ImageEditorElements.CustomView;   
+
+{% endhighlight %}
+
+{% endtabs %}
+
+You can rotate the custom view based on a particular angle using the [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.CustomViewSettings.html#Syncfusion_SfImageEditor_XForms_CustomViewSettings_Angle) property in [`CustomViewSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.CustomViewSettings.html) as shown in the following code sample. 
 
 {% tabs %}
 
@@ -72,3 +84,7 @@ You can rotate the custom view based on a particular angle using [`Angle`](https
 {% endtabs %}
 
 ![SfImageEditor](ImageEditor_images/rotation.jpg)
+
+## See also
+
+[How to add custom view with bounds in the Xamarin.Forms SfImageEditor control](https://www.syncfusion.com/kb/10620/how-to-add-custom-view-with-bounds-in-the-xamarin-forms-sfimageeditor-control)

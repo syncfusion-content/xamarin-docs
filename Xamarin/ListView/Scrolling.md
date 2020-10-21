@@ -52,6 +52,7 @@ listView.LayoutManager.ScrollToRowIndex(index, true);
  * If the [ScrollToRowIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.LayoutBase.html#Syncfusion_ListView_XForms_LayoutBase_ScrollToRowIndex_System_Int32_Syncfusion_ListView_XForms_ScrollToPosition_System_Boolean_) method is called when loading the `SfListView`, set `disableAnimation` to `true` to scroll to the appropriate row index, or else view does not scrolled in Android.
  * If the `ScrollToRowIndex` method is applied to a particular item index while the item is in Grouping or AutoFit mode, the particular item will get displayed in view but not in the exact position when the [ScrollToPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ScrollToPosition.html) property is set as `MakeVisible` or `Center` for first time.
 * In UWP platform, when you hover and scroll the inner listview, the outer listview will not be scrolled by default. To overcome this, set the `InputTransparent` to `True` for the parent element loaded in the `ItemTemplate`. If you set InputTransparent, then the inner listview scroll will not work. This is the default behavior of the listview.
+* The programmatic scrolling is not supported when the `QueryItemSize` event is handled.
 
 ## Scrollbar visibility
 
@@ -111,7 +112,7 @@ private void ListView_ScrollStateChanged(object sender, ScrollStateChangedEventA
 
 ## Identify when end of the list is reached on scrolling
 
-The SfListView allows notifying when scrolling using the [Changed](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase.html) event of [ScrollAxisBase](http://help.syncfusion.com/cr/cref_files/wpf/Syncfusion.SfGrid.WPF~Syncfusion.UI.Xaml.ScrollAxis.ScrollAxisBase.html) in [VisualContainer](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.VisualContainer.html) of the SfListView. By using this event, you can find whether reached the last item in the list in the SfListView based on the [LastBodyVisibleLineIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase.html#Syncfusion_GridCommon_ScrollAxis_ScrollAxisBase_LastBodyVisibleLineIndex) property and underlying collection count.
+The SfListView allows notifying when scrolling using the [Changed](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase.html) event of [ScrollAxisBase](http://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.ScrollAxis.ScrollAxisBase.html) in [VisualContainer](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.VisualContainer.html) of the SfListView. By using this event, you can find whether reached the last item in the list in the SfListView based on the [LastBodyVisibleLineIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.ScrollAxisBase.html#Syncfusion_GridCommon_ScrollAxis_ScrollAxisBase_LastBodyVisibleLineIndex) property and underlying collection count.
 
 {% tabs %}
 {% highlight c# %}

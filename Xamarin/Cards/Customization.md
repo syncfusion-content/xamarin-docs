@@ -7,7 +7,7 @@ control: Cards
 documentation: ug
 ---
 
-## Customization in CardLayout
+# Customization in CardLayout
 
 ### ShowSwipedCard
 
@@ -188,3 +188,16 @@ You can customize the color of shadow using the `ShadowColor` property.
 N> This property will not work when adding the `SfCardView` as a child of `SfCardLayout`.
 
 
+## See also
+
+[How to remove cards from card view collection in Xamarin.Forms](https://www.syncfusion.com/kb/11655/how-to-remove-cards-from-card-view-collection-in-xamarin-forms)
+
+[How to add multicolored stack of cards in Xamarin.Forms](https://www.syncfusion.com/kb/11660/how-to-add-multicolored-stack-of-cards-in-xamarin-forms)
+
+[How to set shadow effect to the cards in Xamarin.Forms](https://www.syncfusion.com/kb/11651/how-to-set-shadow-effect-to-the-cards-in-xamarin-forms)
+
+[How to add cards to the ListView in Xamarin.Forms](https://www.syncfusion.com/kb/11650/how-to-add-cards-to-the-listview-in-xamarin-forms)
+
+[How to set the border color and width of a card within the SfCardLayout](https://www.syncfusion.com/kb/11634/how-to-set-the-border-color-and-width-of-a-card-within-the-cardlayout)
+
+[How to reuse the dismissed cards in Xamarin.Forms SfCardView](https://www.syncfusion.com/kb/11648/how-to-reuse-the-dismissed-cards-in-xamarin-forms-sfcardview)

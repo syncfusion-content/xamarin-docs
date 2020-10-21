@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Font Settings in Syncfusion NumericTextBox control for Xamarin.Forms
-description: Learn how to set the Font style in  NumericTextBox
+description: This section explains how to set the Font style in Syncfusion NumericTextBox control for Xamarin.Forms.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Font Settings
+# Font Settings in Xamarin Numeric Entry (SfNumericTextBox)
 
 NumericTextBox has the following two font-related properties that display the value's text:
 We can customize the font style of NumericTextBox by using the following properties.
@@ -51,3 +51,8 @@ this.Content = numericTextBox;
 {% endtabs %}
 
 ![Display SfNumericTextBox control with TextAlignment](images/textformatend.png)
+
+## See also
+
+[How to customize the font in SfNumericTextBox](https://www.syncfusion.com/kb/7585/how-to-custom-the-font-in-numerictextbox)
+

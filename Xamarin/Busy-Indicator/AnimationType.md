@@ -26,12 +26,10 @@ N> `Material` animation support has not been provided for UWP Platform.
              x:Class="GettingStarted.MainPage">
     <ContentPage.Content>
         <busyindicator:SfBusyIndicator x:Name="busyindicator" 
-                                       Title="Loading..."
+                                       Title="Ball"
                                        AnimationType="Ball" 
-                                       ViewBoxHeight="100"
-                                       ViewBoxWidth="100"
-                                       BackgroundColor="Blue"
-                                       TextColor="White"/>
+                                       BackgroundColor="LightGray"
+                                       TextColor="Blue"/>
     </ContentPage.Content>
 </ContentPage>
 
@@ -52,11 +50,9 @@ namespace GettingStarted
             SfBusyIndicator busyIndicator = new SfBusyIndicator()
             {
                 AnimationType = AnimationTypes.Ball,
-                ViewBoxWidth = 100,
-                ViewBoxHeight = 100,
-                Title = "Loading...",
-                BackgroundColor="Blue",
-                TextColor = Color.White
+                Title = "Ball",
+                BackgroundColor="LightGray",
+                TextColor = Color.Blue
             };
 
             this.Content = busyIndicator;
@@ -68,6 +64,6 @@ namespace GettingStarted
 
 {% endtabs %}
 
-The following gif image contains the types of animation in BusyIndicator
+The following gif image contains the types of animation in BusyIndicator.
 
 ![AnimationTypes](images/animationtypes.gif)

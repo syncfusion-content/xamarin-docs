@@ -9,7 +9,7 @@ keywords: button, SfRadioButton, RadioButton
 
 ---
 
-# Getting Started
+# Getting Started in Xamarin Charts (SfRadioButton)
 
 This section explains the steps required to configure the `SfRadioButton` control in a real-time scenario and provides a walk-through on some of the customization features available in `SfRadioButton` control.
 
@@ -229,3 +229,7 @@ N>`SfRadioButtons` are mutually exclusive among them when they are defined withi
 ![Xamarin.Forms Radio Button states](Images/StateChage.png)
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RadioButton_StateChanging-1078509445).
+
+## See also
+
+[How to create a Xamarin.Forms radio button (SfRadioButton)](https://www.syncfusion.com/kb/10918/how-to-create-a-xamarin-forms-radiobutton)

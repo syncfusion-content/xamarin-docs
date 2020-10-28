@@ -265,3 +265,7 @@ public BackdropSamplePage()
 {% endtabs %}
 
 You can find the complete getting started sample from this [link.]( http://files2.syncfusion.com/Xamarin.Forms/Samples/BackdropGettingStarted.zip)
+
+## See also
+
+[How to reveal a back layer based on a gesture in a Xamarin.Forms application]( https://www.syncfusion.com/kb/11658/how-to-reveal-a-back-layer-based-on-a-gesture-in-a-xamarin-forms-application)

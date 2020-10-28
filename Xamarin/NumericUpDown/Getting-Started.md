@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion NumericUpDown for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion NumericUpDown control for Xamarin.Forms platform
+description: This section explain how to initialize the control, add the reference for Syncfusion Xamarin.Forms NumericUpDown control.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin NumericUpDown (SfNumericUpDown)
 
 This section provides overview for working with Essential SfNumericUpDown for Xamarin.Forms. You can walk through the entire process of creating a SfNumericUpDown.
 
@@ -184,3 +184,14 @@ this.Content = numericUpDown;
 
 {% endtabs %}
 
+## See also
+
+[How to change border width of SfNumericUpDown by using custom renderer](https://www.syncfusion.com/kb/7633/how-to-change-borderwidth-of-numericupdown-by-using-custom-renderer)
+
+[How to get the dynamic theme change effect in SfNumericUpDown inside the SfTextInputLayout](https://www.syncfusion.com/kb/11909/how-to-get-the-dynamic-theme-change-effect-in-numeric-control-inside-the-xamarin-forms-text)
+
+[How to create a border less SfNumericUpDown](https://www.syncfusion.com/kb/11873/how-to-create-a-borderless-xamarin-forms-numeric-control-sfnumericupdown)
+
+[How to hide the increment or decrement button in SfNumericUpDown](https://www.syncfusion.com/kb/11647/how-to-hide-the-increment-or-decrement-button-in-xamarin-forms-numeric-control)
+
+[How to resolve the issue with decimal point and minus key on Samsung devices in SfNumericUpDown](https://www.syncfusion.com/kb/10435/how-to-resolve-the-issue-with-decimal-point-and-minus-key-on-samsung-devices-in)

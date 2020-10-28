@@ -215,3 +215,13 @@ inputLayout.InputView = new Entry() { Text = "John" };
 N> Password visibility toggle can be enabled only for [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry) control.
 
 You can find the complete getting started sample from this [link.]( https://github.com/SyncfusionExamples/Getting-started-SfTextInputLayout-Xamarin)
+
+## See also
+
+[How to reduce the inner padding of SfTextInputLayout](https://www.syncfusion.com/kb/11039/how-to-reduce-the-inner-padding-of-xamarin-forms-text-input-layout)
+
+[How to switch the focus from SfTextInputLayout to the next focusable control](https://www.syncfusion.com/kb/11786/how-to-switch-the-focus-from-xamarin-forms-text-input-layout-to-the-next-focusable-control) 
+
+[How to create a rounded corner SfTextInputLayout](https://www.syncfusion.com/kb/11649/how-to-create-a-rounded-corner-sftextinputlayout-in-xamarin-forms)
+
+[How to change the cursor color in SfTextInputLayout](https://www.syncfusion.com/kb/11608/how-to-change-the-cursor-color-in-xamarin-forms-text-input-layout)

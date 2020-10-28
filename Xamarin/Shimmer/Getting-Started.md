@@ -7,7 +7,7 @@ control: SfShimmer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Shimmer (SfShimmer)
 
 This section explains the steps required to configure the shimmer.
 
@@ -197,3 +197,7 @@ By disabling the [`IsActive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.
 {% endhighlight %}
 
 {% endtabs %}
+
+## See also
+
+[How to set the custom view in SfShimmer using style](https://www.syncfusion.com/kb/11851/how-to-set-the-custom-view-in-xamarin-forms-shimmer-using-style)

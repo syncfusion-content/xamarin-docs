@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Syncfusion TextInputLayout States and Colors
-description: How to customize the colors based on states.
+description: This section explain how to customize the colors based on states in Syncfusion Xamarin.Forms SfTextInputLayout
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# States and Colors
+# States and Colors in Xamarin Text Input Layout (SfTextInputLayout)
 
 Based on the states, the colors will be applied to the hint labels and borders. So, when the input view is in focused state, the focused color will be applied; it is similar to other states also. The current hint color or active color can be obtained from the [CurrentActiveColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_CurrentActiveColor) property.
 
@@ -206,3 +206,13 @@ inputLayout.InputView = new Entry();
 {% endtabs %}
 
 ![Disabled state](States-And-Colors-images/textInput_colors_img5.PNG)
+
+## See also
+
+[How to validate with required verification in SfTextInputLayout](https://www.syncfusion.com/kb/11788/how-to-validate-with-required-verification-in-text-input-layout-in-xamarin-forms)
+
+[How to customize the properties of outline border colors, hint name, helper text, error text, and char count](https://www.syncfusion.com/kb/11659/how-to-customize-the-properties-of-outline-border-colors-hint-name-helper-text-error-text)
+
+[How to change the cursor color in SfTextInputLayout](https://www.syncfusion.com/kb/11608/how-to-change-the-cursor-color-in-xamarin-forms-text-input-layout)
+
+[How to customize the color of border and labels in SfTextInputLayout](https://www.syncfusion.com/kb/10466/how-to-customize-the-color-of-border-and-labels-in-sftextinputlayout)

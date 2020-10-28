@@ -84,3 +84,7 @@ You can rotate the custom view based on a particular angle using the [`Angle`](h
 {% endtabs %}
 
 ![SfImageEditor](ImageEditor_images/rotation.jpg)
+
+## See also
+
+[How to add custom view with bounds in the Xamarin.Forms SfImageEditor control](https://www.syncfusion.com/kb/10620/how-to-add-custom-view-with-bounds-in-the-xamarin-forms-sfimageeditor-control)

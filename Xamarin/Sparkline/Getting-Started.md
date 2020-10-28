@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started for Essential Syncfusion.Xamarin.Forms Sparkline
-description: How to create a sparkline, initialize view model, paopulate data in sparkline.
+description: How to create a Syncfusion.Xamarin.Forms Sparkline, initialize view model, paopulate data in sparkline.
 platform: xamarin
 control: Sparkline
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Sparkline (SfSparkline)
 
 This section explains you the steps required to populate the Sparkline with data. 
 
@@ -212,3 +212,7 @@ lineSparkline.SetBinding(SfSparklineBase.ItemsSourceProperty, "Data");
 ![Xamarin forms Sparkline getting started](Getting-Started-image/LineSparkline.png)
 
 You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SparkLineSample295325469)
+
+## See also
+
+[How to resolve SfSparkline not rendering issue in iOS and UWP](https://www.syncfusion.com/kb/7713/how-to-resolve-sfsparkline-not-rendering-issue-in-ios-and-uwp)

@@ -101,7 +101,7 @@ public class EmployeeInfo : INotifyDataErrorInfo, INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code here.
+You can download the entire source code [here](https://github.com/SyncfusionExamples/validation-inotifyerrorinfo-dataform-xamarin)
 
 ### Data annotations
 
@@ -168,7 +168,7 @@ public DateTime JoinDate
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code here.
+You can download the entire source code [here](https://github.com/SyncfusionExamples/validation-dataannotations-dataform-xamarin)
 
 ![validation in Xamarin.Forms DataForm](SfDataForm_images/Validation.png)
 

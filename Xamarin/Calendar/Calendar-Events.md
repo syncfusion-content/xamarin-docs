@@ -139,6 +139,24 @@ Inline template selector can be used to choose a `DataTemplate` at runtime based
 {% endhighlight %}
 {% endtabs %} 
 
+### Customize agenda view height
+
+You can customize the agenda view appointment height by setting the [AgendaViewHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_AgendaViewHeight) property in Calendar.
+
+{% tabs %}
+{% highlight xaml %}
+<syncfusion:SfCalendar x:Name="calendar" InlineViewMode="Agenda" AgendaViewHeight="300" ShowInlineEvents="True">
+</syncfusion:SfCalendar>
+{% endhighlight %}
+{% highlight c# %}
+calendar.ShowInlineEvents = true;
+calendar.InlineViewMode = InlineViewMode.Agenda;
+calendar.AgendaViewHeight = 300;
+{% endhighlight %}
+{% endtabs %} 
+
+![SfCalendar AgendaViewHeight](images/AgendaViewHeight.png)
+
 ### Creating a DataTemplateSelector
 {% tabs %}
 {% highlight c# %}

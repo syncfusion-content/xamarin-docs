@@ -786,6 +786,12 @@ dataForm.HorizontalOptions = LayoutOptions.Center;
 
 By default, the data form enables editing of the data field. You can disable editing by setting the [IsReadOnly](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_IsReadOnly) property of the data form. You can enable or disable editing for a particular data field by setting the [IsReadOnly](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html#Syncfusion_XForms_DataForm_DataFormItem_IsReadOnly) property of [DataFormItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormItem.html) in the `AutoGeneratingDataFormItem` event. The data field editing behavior can also be defined by using [EditableAttribute](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.editableattribute?view=netframework-4.8Dip)
 
+## Additional Help Resources
+
+The [`Xamarin.Forms SfDataForm`](https://www.syncfusion.com/kb/xamarin.forms/sfdataform) Knowledge Base section contains responses to some of the most common questions that other customers have asked us before. So this will be a good place to search for topics that are not covered in the user guide.
+
+Similar to the [`Knowledge Base`](https://www.syncfusion.com/kb/xamarin.forms/sfdataform), the [`forum`](https://www.syncfusion.com/forums/xamarin.forms) section also contains responses to questions that other customers have asked us in the past.
+
 ## See also
 
 [How to render DataForm using MVVMCross in Xamarin.Forms](https://www.syncfusion.com/kb/10321/)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

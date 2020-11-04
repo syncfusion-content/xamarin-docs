@@ -87,7 +87,7 @@ namespace Rotator
 }
 
 
-ViewModel Class:
+// ViewModel Class:
 
 public class RotatorViewModel
     {
@@ -110,7 +110,7 @@ public class RotatorViewModel
         }
     }
 
-Model Class:
+// Model Class:
 
   public class RotatorModel
     {
@@ -125,9 +125,6 @@ Model Class:
             set { _image = value; }
         }
     }
-
-{% endhighlight %}
-{% endtabs %}
 
 // Custom Data 
 

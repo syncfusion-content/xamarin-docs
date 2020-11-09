@@ -25,7 +25,7 @@ private void BringIntoView_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Scrolling-37722442).
+You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/bring-to-view-treeview-xamarin).
 
 The `BringIntoView` method comprises of other optional parameters to decide on the way in which the child item should come into view. 
 

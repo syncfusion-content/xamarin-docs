@@ -106,6 +106,9 @@ The [`Label`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.C
 
 * [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_TextColor) – used to change the color of the label.
 * [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_Font) – used to change the text size, font family, and font weight.
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_FontFamily) - used to change the font family for the legend label. 
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_FontAttributes) - used to change the font style for the legend label. 
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_FontSize) - used to change the font size for the legend label.
 * [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_Margin) - used to change the margin size of labels.
 
 {% tabs %} 

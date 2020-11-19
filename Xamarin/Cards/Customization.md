@@ -92,6 +92,44 @@ You can find the complete getting started sample from this [link](https://github
 
 ## Customization in CardView
 
+You can customize the border color, thickness, card corner radius by using following properties.
+
+[BorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_BorderColor) - Used to customize the card view border color.
+
+[BorderWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_BorderWidth) - Used to customize the card view border thickness.
+
+[CornerRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_CornerRadius) - Used to customize the card view corner radius.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+    <cards:SfCardView BorderColor="Red" BorderWidth="10" CornerRadius="5">
+        <Label  Text="Cyan" BackgroundColor="Cyan" />
+    </cards:SfCardView>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+   SfCardView cardView = new SfCardView()
+   {
+       Content = new Label()
+       {
+           Text = "Cyan",
+           BackgroundColor = Color.Cyan
+       },
+       BorderColor = Color.Red,
+       BorderWidth=10,
+       CornerRadius=5
+   };
+           
+{% endhighlight %}
+
+{% endtabs %}
+
+![Card customization in Xamarin.Forms SfCardLayout](cardview-customization_images/card_Customization.PNG)
+
 ### Indicator customization
 
 Indicators are used to indicate the state or level of something.

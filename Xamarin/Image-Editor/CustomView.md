@@ -103,7 +103,7 @@ You can rotate the custom view based on a particular angle using the [`Angle`](h
 
 ## Restricting the custom view resize
 
-You can restrict the custom view resizing using the [`IsResizable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.CustomViewSettings.html#Syncfusion_SfImageEditor_XForms_CustomViewSettings_IsResizable) property. By default, the value of the IsResizable property is true, so you can resize the custom view added on an image. When disable the IsResizable property, custom view added on an image will not be resize and you can only drag the custom view over an image as per in the below code sample.
+You can restrict the custom view resizing using the [`IsResizable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.CustomViewSettings.html#Syncfusion_SfImageEditor_XForms_CustomViewSettings_IsResizable) property. By default, the value of the IsResizable property is true, so you can resize the custom view added on an image. When disable the IsResizable property, custom view added on an image will not be resized and you can only drag the custom view over an image as per in the below code sample.
 
 {% highlight c# %}
 

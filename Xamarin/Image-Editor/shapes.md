@@ -101,7 +101,7 @@ N> You cannot delete the path.
 
 ## Restricting the shape resize
 
-You can restrict the shape resizing using the [`IsResizable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.PenSettings.html#Syncfusion_SfImageEditor_XForms_PenSettings_IsResizable) property. By default, the value of the IsResizable property is true, so you can resize the shape added on an image. When disable the IsResizable property, shape added on an image will not be resize and you can only drag the shape over an image as per in the below code sample.
+You can restrict the shape resizing using the [`IsResizable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.PenSettings.html#Syncfusion_SfImageEditor_XForms_PenSettings_IsResizable) property. By default, the value of the IsResizable property is true, so you can resize the shape added on an image. When disable the IsResizable property, shape added on an image will not be resized and you can only drag the shape over an image as per in the below code sample.
 
 {% highlight c# %}
 

@@ -168,7 +168,7 @@ You can restrict the edit text box pop-up window using the [`IsEditable`](https:
 
 ## Restricting the text resize
 
-You can restrict the text resizing using the [`IsResizable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_IsResizable) property. By default, the value of the IsResizable property is true, so you can resize the text added on an image. When disable the IsResizable property, text added on an image will not be resize and you can only drag the text over an image as per in the below code sample.
+You can restrict the text resizing using the [`IsResizable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_IsResizable) property. By default, the value of the IsResizable property is true, so you can resize the text added on an image. When disable the IsResizable property, text added on an image will not be resized and you can only drag the text over an image as per in the below code sample.
 
 {% highlight c# %}
 

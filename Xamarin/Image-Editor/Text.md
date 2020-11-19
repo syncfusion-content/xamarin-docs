@@ -17,6 +17,17 @@ You can annotate the desired text elements to an image using the [`AddText`](htt
 
 {% endhighlight %}
 
+N> If you add the text when the SfImageEditor loaded in a view without image, you need to call the [`AddText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_AddText_System_String_Syncfusion_SfImageEditor_XForms_TextSettings_) method after some time delay. If you add the text when the SfImageEditor loaded in a view without image then you need to call the [`AddText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_AddText_System_String_Syncfusion_SfImageEditor_XForms_TextSettings_) method in the [`ImageLoaded`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ImageLoaded) event as like in the below code sample.
+
+{% highlight C# %}
+
+        editor.ImageLoaded += (Object sender, ImageLoadedEventArgs args) =>
+            {
+                  editor.AddText("New Text", new TextSettings());
+            };
+
+{% endhighlight %}
+
 ## Customize text with TextSettings
 
 You can customize the appearance of the text using the [`TextSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html): property.
@@ -152,6 +163,16 @@ You can restrict the edit text box pop-up window using the [`IsEditable`](https:
 {% highlight c# %}
 
  editor.AddText("text", new TextSettings { IsEditable=false });
+
+{% endhighlight %}
+
+## Restricting the text resize
+
+You can restrict the text resizing using the [`IsResizable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_IsResizable) property. By default, the value of the IsResizable property is true, so you can resize the text added on an image. When disable the IsResizable property, text added on an image will not be resize and you can only drag the text over an image as per in the below code sample.
+
+{% highlight c# %}
+
+ editor.AddText("Enter Text", new TextSettings { IsResizable = false });
 
 {% endhighlight %}
 

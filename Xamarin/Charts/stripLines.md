@@ -240,6 +240,7 @@ The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XFo
 * [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BackgroundColor) – used to change the label background color.
 * [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderColor) – used to change the border color.
 * [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderThickness) – used to change the thickness of the border.
+* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) – used to change the text size, font family, and font weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
 * [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontFamily) - used to change the font family for the text.
 * [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontAttributes) - used to change the font style for the text.
 * [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontSize) - used to change the font size for the text.
@@ -247,8 +248,6 @@ The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XFo
 * [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartStripLineLabelStyle.html#Syncfusion_SfChart_XForms_ChartStripLineLabelStyle_Angle) – used to rotate the text.
 * [`HorizontalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartStripLineLabelStyle.html#Syncfusion_SfChart_XForms_ChartStripLineLabelStyle_HorizontalAlignment) – used to change the horizontal alignment of text.
 * [`VerticalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartStripLineLabelStyle.html#Syncfusion_SfChart_XForms_ChartStripLineLabelStyle_VerticalAlignment)  - used to change the vertical alignment of text.
-
- N> A [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) is the obsolete API. Use such properties as FontSize, FontFamily, and FontAttributes instead.
 
 {% tabs %} 
 

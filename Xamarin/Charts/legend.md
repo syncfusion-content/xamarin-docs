@@ -105,12 +105,11 @@ xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart
 The [`Label`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Label) property of [`ChartSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html) is used to define the label for the corresponding series legend item. The appearance of the label can be customized using the [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegend.html#Syncfusion_SfChart_XForms_ChartLegend_LabelStyle) property. 
 
 * [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_TextColor) – used to change the color of the label.
+* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_Font) – used to change the text size, font family, and font weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
 * [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_FontFamily) - used to change the font family for the legend label. 
 * [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_FontAttributes) - used to change the font style for the legend label. 
 * [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_FontSize) - used to change the font size for the legend label.
 * [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_Margin) - used to change the margin size of labels.
-
-N> A [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_Font) is the obsolete API. Use such properties as FontSize, FontFamily, and FontAttributes instead.
 
 {% tabs %} 
 
@@ -196,6 +195,7 @@ The following properties are used to define and customize the [`Title`](https://
 
 * [`Text`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTitle.html#Syncfusion_SfChart_XForms_ChartTitle_Text) – used to change the text of the title.
 * [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTitle.html#Syncfusion_SfChart_XForms_ChartTitle_TextColor) – used to change the color of the title text.
+* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_Font) – used to change the text size, font family, and font weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
 * [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_FontFamily) - used to change the font family for the legend label. 
 * [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_FontAttributes) - used to change the font style for the legend label. 
 * [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_FontSize) - used to change the font size for the legend label.
@@ -204,8 +204,6 @@ The following properties are used to define and customize the [`Title`](https://
 * [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTitle.html#Syncfusion_SfChart_XForms_ChartTitle_BackgroundColor) – used to change the title background color.
 * [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTitle.html#Syncfusion_SfChart_XForms_ChartTitle_BorderColor) – used to change the border color.
 * [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTitle.html#Syncfusion_SfChart_XForms_ChartTitle_BorderWidth) – used to adjust the border width of title.
-
-N> A [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLegendLabelStyle.html#Syncfusion_SfChart_XForms_ChartLegendLabelStyle_Font) is the obsolete API. Use such properties as FontSize, FontFamily, and FontAttributes instead.
 
 {% tabs %} 
 

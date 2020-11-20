@@ -26,6 +26,17 @@ The [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEdito
 
 {% endhighlight %}
 
+N> If you add the shape when the SfImageEditor loaded in a view without image, then you need to call the [`AddShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_AddShape_Syncfusion_SfImageEditor_XForms_ShapeType_Syncfusion_SfImageEditor_XForms_PenSettings_) method after some time delay. If you add the shape when the SfImageEditor loaded in a view with image, then you need to call the [`AddShape`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_AddShape_Syncfusion_SfImageEditor_XForms_ShapeType_Syncfusion_SfImageEditor_XForms_PenSettings_) method in the [`ImageLoaded`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ImageLoaded) event as shown in the following code sample.
+
+{% highlight C# %}
+
+        editor.ImageLoaded += (Object sender, ImageLoadedEventArgs args) =>
+            {
+                  editor.AddShape(ShapeType.Circle);
+            };
+
+{% endhighlight %}
+
 ## Customizing a shape with pen settings
 
 You can customize the appearance of each shape using the [`PenSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.PenSettings.html) property:
@@ -87,6 +98,16 @@ You can delete the selected shape by using the [`Delete`](https://help.syncfusio
 {% endtabs %}
 
 N> You cannot delete the path.
+
+## Restricting the shape resize
+
+You can restrict the shape resizing using the [`IsResizable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.PenSettings.html#Syncfusion_SfImageEditor_XForms_PenSettings_IsResizable) property. By default, the value of the IsResizable property is true, so you can resize the shape added on an image. When the [`IsResizable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.PenSettings.html#Syncfusion_SfImageEditor_XForms_PenSettings_IsResizable) property is disabled, shape added on an image cannot be resized and you can only drag the shape over an image as shown in the following code sample.
+
+{% highlight c# %}
+
+ editor.AddShape(ShapeType.Circle, new PenSettings() { IsResizable=false });
+
+{% endhighlight %}
 
 ## See also
 

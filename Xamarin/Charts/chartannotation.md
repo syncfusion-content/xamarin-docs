@@ -300,7 +300,10 @@ The [`TextAnnotation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart
 *   [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Margin) - Used to set the margin for text.
 *   [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderThickness) - Used to change the text border thickness.
 *   [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderColor) - Used to change the border color of the text.
-*   [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) - Used to change text font size, family and weight.
+* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) – used to change the text size, font family, and font weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontFamily) - used to change the font family of the text.
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontAttributes) - used to change the font style of the text.
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontSize) - used to change the font size of the text.
 *   [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationLabelStyle.html#Syncfusion_SfChart_XForms_ChartAnnotationLabelStyle_HorizontalTextAlignment) - Used to align the text horizontally at the [`Start`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html), [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html) and [`End`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html).
 *   [`VerticalTextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationLabelStyle.html#Syncfusion_SfChart_XForms_ChartAnnotationLabelStyle_VerticalTextAlignment) - Used to align the text vertically at the [`Start`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html), [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html) and [`End`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationAlignment.html).
 
@@ -317,7 +320,7 @@ The [`TextAnnotation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart
 
             <chart:TextAnnotation.LabelStyle>
 
-                <chart:ChartAnnotationLabelStyle Margin="5" Font="Italic,16" BorderColor="Red" BorderThickness="2" BackgroundColor="Teal" TextColor="White" VerticalTextAlignment="Start"/>
+                <chart:ChartAnnotationLabelStyle Margin="5" FontSize="16" FontAttributes="Italic" BorderColor="Red" BorderThickness="2" BackgroundColor="Teal" TextColor="White" VerticalTextAlignment="Start"/>
 
             </chart:TextAnnotation.LabelStyle>
 
@@ -347,7 +350,9 @@ annotation.LabelStyle = new ChartAnnotationLabelStyle()
 {
     Margin = new Thickness(5),
 
-    Font = Font.SystemFontOfSize(16, FontAttributes.Italic),
+    FontSize = 16,
+
+    FontAttributes = FontAttributes.Italic,
 
     BorderColor = Color.Red,
 
@@ -682,7 +687,10 @@ The default appearance of the axis label also can be customized by using the [`A
 *   [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Margin) - Used to set the margin for text.
 *   [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderThickness) - Used to change the text border thickness.
 *   [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderColor) - Used to change the border color of the text.
-*   [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) - Used to change text font size, family, and weight.
+* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) – used to change the text size, font family, and font weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontFamily) - used to change the font family for the text.
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontAttributes) - used to change the font style for the text.
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontSize) - used to change the font size for the text.
 
 {% tabs %} 
 
@@ -697,7 +705,7 @@ The default appearance of the axis label also can be customized by using the [`A
 
             <chart:VerticalLineAnnotation.AxisLabelStyle>
 
-                <chart:ChartLabelStyle Margin="5" Font="Italic,12" BorderColor="Blue" BorderThickness="2" BackgroundColor="Red" TextColor="White"/>
+                <chart:ChartLabelStyle Margin="5" FontSize="12" FontAttributes="Italic" BorderColor="Blue" BorderThickness="2" BackgroundColor="Red" TextColor="White"/>
 
             </chart:VerticalLineAnnotation.AxisLabelStyle>
 
@@ -707,7 +715,7 @@ The default appearance of the axis label also can be customized by using the [`A
 
             <chart:HorizontalLineAnnotation.AxisLabelStyle>
 
-                <chart:ChartLabelStyle Margin="5" Font="Italic,12" BorderColor="Blue" BorderThickness="2" BackgroundColor="Red" TextColor="White"/>
+                <chart:ChartLabelStyle Margin="5" FontSize="12" FontAttributes="Italic" BorderColor="Blue" BorderThickness="2" BackgroundColor="Red" TextColor="White"/>
 
             </chart:HorizontalLineAnnotation.AxisLabelStyle>
 
@@ -735,7 +743,9 @@ vertical.AxisLabelStyle = new ChartLabelStyle()
 {
     Margin = new Thickness(5),
 
-    Font = Font.SystemFontOfSize(12, FontAttributes.Italic),
+     FontSize = 12,
+
+    FontAttributes = FontAttributes.Italic,
 
     BorderColor = Color.Blue,
 
@@ -759,7 +769,9 @@ horizontal.AxisLabelStyle = new ChartLabelStyle()
 {
     Margin = new Thickness(5),
 
-    Font = Font.SystemFontOfSize(12, FontAttributes.Italic),
+    FontSize = 12,
+
+    FontAttributes = FontAttributes.Italic,
 
     BorderColor = Color.Blue,
 
@@ -843,7 +855,10 @@ The [`Text`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.Sh
 *   [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Margin) - Used to set the margin for text.
 *   [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderThickness) - Used to change the text border thickness.
 *   [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderColor) - Used to change the text border color.
-*   [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) - Used to change text font size, family, and weight.
+* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) – used to change the text size, font family, and font weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontFamily) - used to change the font family for the text.
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontAttributes) - used to change the font style for the text.
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontSize) - used to change the font size for the text.
 *   [`HorizontalTextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationLabelStyle.html#Syncfusion_SfChart_XForms_ChartAnnotationLabelStyle_HorizontalTextAlignment) - Used to align the text horizontally.
 *   [`VerticalTextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAnnotationLabelStyle.html#Syncfusion_SfChart_XForms_ChartAnnotationLabelStyle_VerticalTextAlignment) - Used to align the text vertically.
 
@@ -860,7 +875,7 @@ The [`Text`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.Sh
 
             <chart:EllipseAnnotation.LabelStyle>
 
-                <chart:ChartAnnotationLabelStyle Margin="5" Font="Italic,16" BorderColor="Red" BorderThickness="2" BackgroundColor="Blue" TextColor="White"/>
+                <chart:ChartAnnotationLabelStyle Margin="5" FontSize="16" FontAttributes="Italic" BorderColor="Red" BorderThickness="2" BackgroundColor="Blue" TextColor="White"/>
 
             </chart:EllipseAnnotation.LabelStyle>
 
@@ -894,7 +909,9 @@ annotation.LabelStyle = new ChartAnnotationLabelStyle()
 {
     Margin = new Thickness(5),
 
-    Font = Font.SystemFontOfSize(16, FontAttributes.Italic),
+    FontSize = 16,
+
+    FontAttributes = FontAttributes.Italic,
 
     BorderColor = Color.Red,
 

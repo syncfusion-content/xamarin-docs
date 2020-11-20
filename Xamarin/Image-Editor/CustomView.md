@@ -20,6 +20,22 @@ You can add any custom shapes or views to an image using the [`AddCustomView`](h
   
 {% endhighlight %}
 
+N> If you add the custom view when the SfImageEditor loaded in a view without image, then you need to call the [`AddCustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_AddCustomView_System_Object_Syncfusion_SfImageEditor_XForms_CustomViewSettings_) method after some time delay. If you add the custom view when the SfImageEditor loaded in a view with image, then you need to call the [`AddCustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_AddCustomView_System_Object_Syncfusion_SfImageEditor_XForms_CustomViewSettings_) method in the [`ImageLoaded`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ImageLoaded) event as shown in the following code sample.
+
+{% highlight C# %}
+
+        imageEditor.ImageLoaded += (Object sender, ImageLoadedEventArgs args) =>
+          {
+              
+            Image customImage = new Image() { HeightRequest = 200, WidthRequest = 200  };
+            Assembly assembly = Assembly.GetAssembly(typeof(Sample));
+            customImage.Source = ImageSource.FromResource("sample_namespace.CustomImage.png", assembly);
+            imageEditor.AddCustomView(customImage, new CustomViewSettings());
+    
+          };
+
+{% endhighlight %}
+
 ## CustomViewSettings
 
 The CustomViewSettings is defined to set the values for [`CanMaintainAspectRatio`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.CustomViewSettings.html#Syncfusion_SfImageEditor_XForms_CustomViewSettings_CanMaintainAspectRatio), [`Bounds`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.CustomViewSettings.html#Syncfusion_SfImageEditor_XForms_CustomViewSettings_Bounds) and [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.CustomViewSettings.html#Syncfusion_SfImageEditor_XForms_CustomViewSettings_Angle).
@@ -84,6 +100,19 @@ You can rotate the custom view based on a particular angle using the [`Angle`](h
 {% endtabs %}
 
 ![SfImageEditor](ImageEditor_images/rotation.jpg)
+
+## Restricting the custom view resize
+
+You can restrict the custom view resizing using the [`IsResizable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.CustomViewSettings.html#Syncfusion_SfImageEditor_XForms_CustomViewSettings_IsResizable) property. By default, the value of the IsResizable property is true, so you can resize the custom view added on an image. When the [`IsResizable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.CustomViewSettings.html#Syncfusion_SfImageEditor_XForms_CustomViewSettings_IsResizable) property is disabled, custom view added on an image cannot be resized and you can only drag the custom view over an image as shown in the following code sample.
+
+{% highlight c# %}
+
+        Image customImage = new Image() { HeightRequest = 200, WidthRequest = 200  };
+        Assembly assembly = Assembly.GetAssembly(typeof(Sample));
+        customImage.Source = ImageSource.FromResource("sample_namespace.CustomImage.png", assembly);
+        imageEditor.AddCustomView(customImage, new CustomViewSettings() { IsResizable = false });
+
+{% endhighlight %}
 
 ## See also
 

@@ -234,17 +234,21 @@ numericalAxis.StripLines.Add(stripLine);
 
 ## Customize Text
 
-The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartStripLine.html#Syncfusion_SfChart_XForms_ChartStripLine_LabelStyle) property provide options to customize the font-family, color, size and font-weight of strip line text. Following are the options available,
+The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartStripLine.html#Syncfusion_SfChart_XForms_ChartStripLine_LabelStyle) property provide options to customize the font family, color, font size and font attributes of strip line text. Following are the options available,
 
 * [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_TextColor) – used to change the color of the text.
 * [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BackgroundColor) – used to change the label background color.
 * [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderColor) – used to change the border color.
 * [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderThickness) – used to change the thickness of the border.
-* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font)– used to change the text size, font family and font weight.
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontFamily) - used to change the font family for the text.
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontAttributes) - used to change the font style for the text.
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontSize) - used to change the font size for the text.
 * [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Margin) - used to change the margin size for text.
 * [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartStripLineLabelStyle.html#Syncfusion_SfChart_XForms_ChartStripLineLabelStyle_Angle) – used to rotate the text.
 * [`HorizontalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartStripLineLabelStyle.html#Syncfusion_SfChart_XForms_ChartStripLineLabelStyle_HorizontalAlignment) – used to change the horizontal alignment of text.
 * [`VerticalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartStripLineLabelStyle.html#Syncfusion_SfChart_XForms_ChartStripLineLabelStyle_VerticalAlignment)  - used to change the vertical alignment of text.
+
+ N> A [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) is the obsolete API. Use such properties as FontSize, FontFamily, and FontAttributes instead.
 
 {% tabs %} 
 
@@ -260,7 +264,7 @@ The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XFo
 
 				<chart:NumericalStripLine.LabelStyle>
 
-					<chart:ChartStripLineLabelStyle HorizontalAlignment="Near" VerticalAlignment="Center" TextColor="Blue" Font="20"/>
+					<chart:ChartStripLineLabelStyle HorizontalAlignment="Near" VerticalAlignment="Center" TextColor="Blue" FontSize="20" FontAttributes="Bold"/>
        
 				</chart:NumericalStripLine.LabelStyle>
 
@@ -300,7 +304,9 @@ NumericalStripLine stripLine = new NumericalStripLine()
 
 stripLine.LabelStyle.TextColor = Color.Blue;
 
-stripLine.LabelStyle.Font = Font.SystemFontOfSize(20);    
+stripLine.LabelStyle.FontSize = 20;
+
+stripLine.LabelStyle.FontAttributes = FontAttributes.Bold;
 
 stripLine.LabelStyle.HorizontalAlignment = ChartLabelAlignment.Near;
 

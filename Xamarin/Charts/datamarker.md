@@ -45,10 +45,14 @@ Data labels are enabled by default but you can also change the visibility of the
 * [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BackgroundColor) – used to change the label background color.
 * [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderColor) – used to change the border color.
 * [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderThickness) – used to change the thickness of the border.
-* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) – used to change the text size, font family and font weight.
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontFamily) - used to change the font family of the label.
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontAttributes) - used to change the font style of the label.
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontSize) - used to change the font size of the label.
 * [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Margin) - used to change the margin size for labels.
 * [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelStyle.html#Syncfusion_SfChart_XForms_DataMarkerLabelStyle_Angle) – used to rotate the labels.
 * [`LabelPadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerLabelStyle.html#Syncfusion_SfChart_XForms_DataMarkerLabelStyle_LabelPadding) - used to move the data label in the respective direction. For example, the positive labels in column series will be moved upwards and negative labels in column series will be moved downwards.
+
+N> A [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) is the obsolete API. Use such properties as FontSize, FontFamily, and FontAttributes instead.
 
 Following code snippet illustrates the customization of label and its background,
 
@@ -68,7 +72,8 @@ Following code snippet illustrates the customization of label and its background
 										BackgroundColor="Aqua"
 										Angle="315"
 										Margin="5"
-										Font="Italic,18"/>
+										FontSize="18"
+                                        FontAttributes="Italic"/>
 
 		</chart:ChartDataMarker.LabelStyle>
 
@@ -96,7 +101,9 @@ lineSeries.DataMarker.LabelStyle.Angle = 315;
 
 lineSeries.DataMarker.LabelStyle.Margin = 5;
 
-lineSeries.DataMarker.LabelStyle.Font = Font.SystemFontOfSize(18, FontAttributes.Italic);
+lineSeries.DataMarker.LabelStyle.FontSize = 18;
+
+lineSeries.DataMarker.LabelStyle.FontAttributes = FontAttributes.Italic;
 
 {% endhighlight %}
 

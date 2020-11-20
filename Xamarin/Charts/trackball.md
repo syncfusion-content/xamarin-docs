@@ -107,10 +107,11 @@ The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XFo
 * [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BackgroundColor) – used to change the label background color.
 * [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderThickness) – used to change label border thickness.
 * [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_TextColor) – used to change the text color.
-* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) – used to change label font size, family and weight.
 * [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontFamily) - used to change the font family for the trackball label. 
 * [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontAttributes) - used to change the font style for the trackball label. 
 * [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontSize) - used to change the font size for the trackball label.
+
+N> A [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) is the obsolete API. Use such properties as FontSize, FontFamily, and FontAttributes instead.
 
 {% tabs %} 
 
@@ -125,7 +126,7 @@ The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XFo
 
 			<chart:ChartTrackballBehavior.LabelStyle>
 
-				<chart:ChartTrackballLabelStyle BorderColor="Maroon" BackgroundColor="Aqua" BorderThickness="2" TextColor="Red" Font="Italic,18"/>
+				<chart:ChartTrackballLabelStyle BorderColor="Maroon" BackgroundColor="Aqua" BorderThickness="2" TextColor="Red" FontSize="18" FontAttributes="Italic"/>
 
 			</chart:ChartTrackballBehavior.LabelStyle>
 
@@ -148,7 +149,9 @@ trackBallBehavior.LabelStyle.BorderColor = Color.Maroon;
 
 trackBallBehavior.LabelStyle.BorderThickness = 2;
 
-trackBallBehavior.LabelStyle.Font = Font.SystemFontOfSize(18, FontAttributes.Italic);
+trackBallBehavior.LabelStyle.FontSize = 18;
+
+trackBallBehavior.LabelStyle.FontAttributes = FontAttributes.Italic;
 
 trackBallBehavior.LabelStyle.BackgroundColor = Color.Aqua;
 

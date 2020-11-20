@@ -216,7 +216,7 @@ The following properties are used to define and customize the [`Title`](https://
 		<chart:ChartLegend.Title >
 
 			<chart:ChartTitle Text="Years" TextColor="Maroon" TextAlignment="Center" 
-							  BackgroundColor="Silver" BorderWidth="3" BorderColor="Blue" FontSize="18"
+							  BackgroundColor="Silver" BorderWidth="3" BorderColor="Blue" FontSize="20"
                                         FontAttributes="Bold"/>
 
 			</chart:ChartTitle>

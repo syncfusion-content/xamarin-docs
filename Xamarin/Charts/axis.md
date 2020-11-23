@@ -954,7 +954,7 @@ The [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.C
 * [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisTitle.html#Syncfusion_SfChart_XForms_ChartAxisTitle_BackgroundColor) – used to change the label background color.
 * [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisTitle.html#Syncfusion_SfChart_XForms_ChartAxisTitle_BorderColor) – used to change the border color.
 * [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisTitle.html#Syncfusion_SfChart_XForms_ChartAxisTitle_BorderWidth) – used to change the width of the border.
-* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisTitle.html#Syncfusion_SfChart_XForms_ChartAxisTitle_Font) – used to change the text size, font family, and font weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
+[`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisTitle.html#Syncfusion_SfChart_XForms_ChartAxisTitle_Font) – used to change the text size, font family, and font weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
 * [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisTitle.html#Syncfusion_SfChart_XForms_ChartAxisTitle_FontFamily) - used to change the font family for the axis title.
 * [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisTitle.html#Syncfusion_SfChart_XForms_ChartAxisTitle_FontAttributes) - used to change the font style for the axis title.
 * [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisTitle.html#Syncfusion_SfChart_XForms_ChartAxisTitle_FontSize) - used to change the font size for the axis title.
@@ -972,7 +972,7 @@ Following code snippet illustrates how to enable and customize the axis title.
 
 		<chart:CategoryAxis.Title>
 
-			<chart:ChartAxisTitle Text="Month" TextColor="Blue" Font="Bold,20"/>
+			<chart:ChartAxisTitle Text="Month" TextColor="Blue" FontSize="20" FontAttributes="Bold"/>
 
 		</chart:CategoryAxis.Title>
 
@@ -988,7 +988,9 @@ chart.PrimaryAxis.Title.Text = "Month";
 
 chart.PrimaryAxis.Title.TextColor = Color.Blue;
 
-chart.PrimaryAxis.Title.Font = Font.SystemFontOfSize(20, FontAttributes.Bold);
+chart.PrimaryAxis.Title.FontSize = 20;
+
+chart.PrimaryAxis.Title.FontAttributes = FontAttributes.Bold;
 
 {% endhighlight %}
 
@@ -1139,15 +1141,18 @@ chart.PrimaryAxis = primaryAxis;
 
 ### Label customization
 
-The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_LabelStyle) property of axis provides options to customize the font-family, color, size and font-weight of axis labels. The axis labels can be customized using following properties:
+The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxis.html#Syncfusion_SfChart_XForms_ChartAxis_LabelStyle) property of axis provides options to customize the font-family, font-size, font-attributes and text color of axis labels. The axis labels can be customized using following properties:
 
 * [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_TextColor) – used to change the color of the labels.
 * [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BackgroundColor) – used to change the label background color.
 * [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderColor) – used to change the border color.
 * [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BorderThickness) – used to change the thickness of the border.
-* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) – used to change the text size, font family and font weight.
 * [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Margin) - used to change the margin size for labels.
 * [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisLabelStyle.html#Syncfusion_SfChart_XForms_ChartAxisLabelStyle_CornerRadius) - Used to change the corner radius of the background of labels.
+[`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_Font) – used to change the text size, font family, and font weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontFamily) - used to change the font family for the axis label.
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontAttributes) - used to change the font style for the axis label.
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_FontSize) - used to change the font size for the axis label.
 * [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisLabelStyle.html#Syncfusion_SfChart_XForms_ChartAxisLabelStyle_LabelAlignment) - Used to align the label at the [`Start`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html), [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html), or [`End`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisLabelAlignment.html).
 * [`LabelFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_LabelFormat) -  used to set numeric or date time format to the chart axis label.
 * [`MaxWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisLabelStyle.html#Syncfusion_SfChart_XForms_ChartAxisLabelStyle_MaxWidth) - Provides the maximum text width of the axis label and wraps into the next line when exceeds the maximum width.
@@ -1163,7 +1168,7 @@ The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XFo
 
 		<chart:CategoryAxis.LabelStyle>
 
-			<chart:ChartAxisLabelStyle TextColor="Red" Font="Bold,20"/>
+			<chart:ChartAxisLabelStyle TextColor="Red" FontSize="20" FontAttributes="Bold"/>
 
 		</chart:CategoryAxis.LabelStyle>
 
@@ -1175,7 +1180,9 @@ The [`LabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XFo
 
 {% highlight c# %}
 
-chart.PrimaryAxis.LabelStyle.Font = Font.SystemFontOfSize(20, FontAttributes.Bold);
+ chart.PrimaryAxis.LabelStyle.FontSize = 20;
+
+ chart.PrimaryAxis.LabelStyle.FontAttributes = FontAttributes.Bold;
 
 chart.PrimaryAxis.LabelStyle.TextColor = Color.Red;
 

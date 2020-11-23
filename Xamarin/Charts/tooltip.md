@@ -51,8 +51,8 @@ You can customize the tooltip label. For customizing, you need to add an instanc
 * [`BorderWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_BorderWidth) – used to change the label border width
 * [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_BackgroundColor) – used to change the label background color
 * [`Margin`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_Margin) – used to change label border thickness
-* [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_TextColor) – used to change the text color
-* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_FontProperty) – used to change the label font size, family, and weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
+* [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_TextColor) – used to change the text color.
+* [`Font`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_FontProperty) – used to change the text size, font family, and font weight. (This is deprecated API. Use FontSize, FontFamily, and FontAttributes properties instead of this.)
 * [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_FontFamily)- used to change the font family for the tooltip text.
 * [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_FontAttributes) - used to change the font style for the tooltip text.
 * [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTooltipBehavior.html#Syncfusion_SfChart_XForms_ChartTooltipBehavior_FontSize) - used to change the font size for the tooltip text.
@@ -67,7 +67,7 @@ You can customize the tooltip label. For customizing, you need to add an instanc
 
 <chart:SfChart.ChartBehaviors>
 
-	<chart:ChartTooltipBehavior BackgroundColor="Blue" BorderWidth="3" BorderColor="Aqua" TextColor="White" Margin="5" Duration="10" Font="Times New Roman, 15"/>
+	<chart:ChartTooltipBehavior BackgroundColor="Blue" BorderWidth="3" BorderColor="Aqua" TextColor="White" Margin="5" Duration="10"  FontSize="15" FontFamily="Times New Roman"/>
 
 	</chart:ChartTooltipBehavior>
 
@@ -88,7 +88,8 @@ tool.BorderColor = Color.Aqua;
 tool.TextColor = Color.White;
 tool.Margin = new Thickness(5, 5, 5, 5);
 tool.Duration = 10;
-tool.Font = Font.OfSize(“Times New Roman”,15);	
+tool.FontSize = 15;	
+tool.FontFamily = "Times New Roman";	
 chart.ChartBehaviors.Add(tool);
 
 {% endhighlight %}

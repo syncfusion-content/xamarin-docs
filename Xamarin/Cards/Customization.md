@@ -121,52 +121,38 @@ You can customize the border color, thickness, card corner radius by using follo
 
 {% highlight C# %}
 
-  StackLayout mainStack = new StackLayout();
-  mainStack.HorizontalOptions = LayoutOptions.Center;
-  mainStack.VerticalOptions = LayoutOptions.Center;
-
-  StackLayout stack1 = new StackLayout();
-  stack1.Padding = new Thickness(10, 10, 0, 0);
-  Label label1 = new Label();
-  label1.Text = "New York";
-  label1.FontSize = 25;
-
-  Label label2 = new Label();
-  label2.Text = "Mon 3.00PM, Sunny";
-  label2.TextColor = Color.Gray;
-
-
-  StackLayout stack2 = new StackLayout();
-  stack2.Orientation = StackOrientation.Horizontal;
-  Label label3 = new Label();
-  label3.Text = "31°";
-  label3.FontSize = 70;
-  label3.Padding = new Thickness(0, 0, 10, 0);
-
-  Image image = new Image();
-  image.Source = "Sun.png";
-  image.HeightRequest = 100;
-  image.WidthRequest = 100;
-
-  stack2.Children.Add(label3);
-  stack2.Children.Add(image);
-
-  stack1.Children.Add(label1);
-  stack1.Children.Add(label2);
-  stack1.Children.Add(stack2);
-
-  SfCardView cardView = new SfCardView()
-  {
-
-      Content = stack1,
-      BorderColor = Color.Black,
-      BorderWidth = 5,
-      CornerRadius = new Thickness(30, 0, 30, 0),
-      BackgroundColor = Color.LightPink
-
-  };
-
-  mainStack.Children.Add(cardView);
+        StackLayout mainStack = new StackLayout()
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                Children =
+                {
+                    new SfCardView(){
+                    Content =  new StackLayout()
+                    {
+                        Padding = new Thickness(10, 10, 0, 0),
+                        Children =
+                        {
+                            new Label(){Text = "New York" , FontSize = 25},
+                            new Label(){Text = "Mon 3.00PM, Sunny" , TextColor = Color.Gray},
+                            new StackLayout()
+                            {
+                                Orientation  = StackOrientation.Horizontal,
+                                Children =
+                                {
+                                    new Label(){Text = "31°" , FontSize = 70, Padding = new Thickness(0,0,10,0) },
+                                    new Image(){Source = "Sun.png", HeightRequest = 100, WidthRequest = 100}
+                                }
+                            }
+                        }
+                    },
+                    BorderColor = Color.Black,
+                    BorderWidth = 5,
+                    CornerRadius = new Thickness(30, 0, 30, 0),
+                    BackgroundColor = Color.LightPink
+                    }
+                }
+            };
            
 {% endhighlight %}
 

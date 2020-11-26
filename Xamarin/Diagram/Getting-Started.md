@@ -280,6 +280,22 @@ diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
 
 User can change node content using [BeginNodeRender](https://help.syncfusion.com/xamarin/diagram/layout#beginnoderender) event of the SfDiagram. This event will fire for each Node added in Layout when the layout is getting updated.
 
+{% tabs %}
+{% highlight c# %}
+// Registering an event
+diagram.BeginNodeRender += Diagram_BeginNodeRender;
+
+private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs args)
+        {
+            Node node = args.Item;
+            node.ShapeType = ShapeType.RoundedRectangle;
+            node.Width = 150;
+            node.Height = 60;
+            node.Annotations.Add(new Annotation() { Content = (node.Content as Employee).Name });
+        }
+{% endhighlight %}
+{% endtabs %}
+
 The Employee data is displayed in the SfDiagram as follows
 
 ![Organizational chart demo in Xamarin.Forms diagram](Getting-Started_images/Getting-Started_img3.jpeg)

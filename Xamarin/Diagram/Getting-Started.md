@@ -275,8 +275,13 @@ DirectedTreeLayout treeLayout = new DirectedTreeLayout() { HorizontalSpacing = 8
 diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
 {% endhighlight %}
 {% endtabs %}
+
+**BeginNodeRender**
+
+User can change node content using [BeginNodeRender](https://help.syncfusion.com/xamarin/diagram/layout#beginnoderender) event of the SfDiagram. This event will fire for each Node added in Layout when the layout is getting updated.
+
 The Employee data is displayed in the SfDiagram as follows
 
 ![Organizational chart demo in Xamarin.Forms diagram](Getting-Started_images/Getting-Started_img3.jpeg)
 
-This demo project can be downloaded from the following link [OrganizationalChart_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/OrganizationalChart_SfDiagram.zip)
+This demo project can be downloaded from the following link [OrganizationalChart_Demo.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/OrganizationalChart2088885274.zip)

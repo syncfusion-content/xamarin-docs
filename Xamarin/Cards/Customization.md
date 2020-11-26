@@ -92,7 +92,7 @@ You can find the complete getting started sample from this [link](https://github
 
 ## Customization in CardView
 
-You can customize the border color, thickness, card corner radius by using following properties.
+You can customize the border color, thickness, and card corner radius by using the following properties:
 
 [BorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_BorderColor) - Used to customize the card view border color.
 

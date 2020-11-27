@@ -1,13 +1,13 @@
 ---
 layout: post
 title: ItemTapped event for Syncfusion Essential SfTabView.
-description: Learn how to perform an operation while tapping an item, and learn about Events in Behavior Commands in SfTabView Xamarin.Forms.
+description: Learn how to perform an operation while tapping an item, and also about Events in Behavior Commands in SfTabView Xamarin.Forms.
 platform: Xamarin.Forms
 control: TabView
 documentation: ug
 ---
 
-# How to perform an operation when tapping an item in SfTabView?
+# How to perform an operation when tapping an item in SfTabView
 
 Whenever the TabItem is tapped, the `TabItemTapped` event will occur. Using this event, you can Modify the selected Tab Item properties.
 
@@ -58,4 +58,4 @@ private void TabView_TabItemTapped(object sender, Syncfusion.XForms.TabView.TabI
 
 {% endtabs %}
 
-Note: Please refer to the [Link](https://www.syncfusion.com/kb/11562/how-to-turn-events-into-commands-with-behaviors-in-xamarin-forms-tabbed-view) for how to turn Events into Commands with Behaviors in Xamarin.Forms Tabbed View.
+Note: Please refer to this [Link](https://www.syncfusion.com/kb/11562/how-to-turn-events-into-commands-with-behaviors-in-xamarin-forms-tabbed-view) for how to turn Events into Commands with Behaviors in Xamarin.Forms Tabbed View.

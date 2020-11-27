@@ -8,7 +8,7 @@ keywords:
 
 ---
 
-# Getting started
+# Getting started with Xamarin Diagram (SfDiagram)
 
 This section provides a quick overview for working with Diagram for Xamarin.Forms. This walkthrough demonstrates that, how to create a simple flow chart and an organization chart.
 

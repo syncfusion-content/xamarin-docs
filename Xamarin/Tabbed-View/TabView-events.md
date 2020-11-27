@@ -57,3 +57,5 @@ private void TabView_TabItemTapped(object sender, Syncfusion.XForms.TabView.TabI
 {% endhighlight %}
 
 {% endtabs %}
+
+Note: Please refer to the [Link](https://www.syncfusion.com/kb/11562/how-to-turn-events-into-commands-with-behaviors-in-xamarin-forms-tabbed-view) for how to turn Events into Commands with Behaviors in Xamarin.Forms Tabbed View.

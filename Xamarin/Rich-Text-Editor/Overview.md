@@ -32,9 +32,9 @@ The Xamarin Rich Text Editor control is a WYSIWYG editor that provides a great u
 ### iOS
  1. AutoFocus will not be working when `AutoSize` is enabled.
  2. Extra spaces will be added in the bottom of the RichTextEditor when the control is AutoSizing.
- 3. Focus and UnFocus events will not triggered programmatically in RichTextEditor.
+ 3. The Focus and UnFocus events will not be triggered programmatically in the RichTextEditor.
  4. Custom toolbar will not working in the Xamarin RichTextEditor iOS because the control selection will be lost when clicking the elements in the custom toolbar.
- 5. Set CursorPosition based on the character count will not working in the Xamarin RichTextEditor iOS due to the control focus limitation.
+ 5. Set the CursorPosition based on the character count will not working in the Xamarin RichTextEditor iOS due to the control focus limitation.
  
 ### UWP
  1. ScrollBar will be visible by default.

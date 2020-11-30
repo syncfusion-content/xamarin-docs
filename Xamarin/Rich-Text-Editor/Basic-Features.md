@@ -57,3 +57,67 @@ richtexteditor.InsertHTMLText("New text content");
 {% endhighlight %}
 
 {% endtabs %}
+
+## TextChanged 
+
+TextChanged event will trigger in the Rich Text Editor for every text change action in the content.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+ <rte:SfRichTextEditor x:Name="richtexteditor" TextChanged="Richtexteditor_TextChanged" VerticalOptions="FillAndExpand"/>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+			SfRichTextEditor richtexteditor = new SfRichTextEditor();
+			richtexteditor.TextChanged += Richtexteditor_TextChanged;
+			this.Content = richtexteditor;
+			
+			private void Richtexteditor_TextChanged(object sender, Syncfusion.XForms.RichTextEditor.TextChangedEventArgs e)
+			{
+			}
+{% endhighlight %}
+
+{% endtabs %}
+
+## FormatChanged 
+
+FormatChanged event will trigger in the Rich Text Editor if any format change occurs in the content such as bold, italic, underline and other formatting supports provided in the toolbar.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+ <rte:SfRichTextEditor x:Name="richtexteditor" FormatChanged="Richtexteditor_FormatChanged" VerticalOptions="FillAndExpand"/>
+
+{% endhighlight %}
+
+{% highlight C# %} 
+            SfRichTextEditor richtexteditor = new SfRichTextEditor();
+            richtexteditor.FormatChanged += Richtexteditor_FormatChanged;
+            this.Content = richtexteditor;
+			
+			private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs e)
+			{
+			}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+## Cursor Position
+
+ Rich Text Editor provides the support to get or set the current cursor position in the editor page. The following code example explains how to insert a text in the Rich Text Editor.
+ 
+ {% tabs %} 
+
+{% highlight C# %} 
+
+int CurrentPosition = richtexteditor.CursorPosition;
+
+{% endhighlight %}
+
+{% endtabs %}
+ 

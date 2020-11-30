@@ -109,7 +109,7 @@ FormatChanged event will trigger in the Rich Text Editor if any format change oc
 
 ## Cursor Position
 
- Rich Text Editor provides the support to get or set the current cursor position in the editor page. The following code example explains how to insert a text in the Rich Text Editor.
+ Rich Text Editor provides the support to get or set the current cursor position based on the character count in the rich text editor. The following code example explains how to get / set a cursor position in the Rich Text Editor.
  
  {% tabs %} 
 

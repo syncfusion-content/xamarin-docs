@@ -60,7 +60,7 @@ richtexteditor.InsertHTMLText("New text content");
 
 ## TextChanged 
 
-TextChanged event will trigger in the Rich Text Editor for every text change action in the content.
+The TextChanged event will trigger in the Rich Text Editor for every text change action in the content.
 
 {% tabs %} 
 
@@ -84,7 +84,7 @@ TextChanged event will trigger in the Rich Text Editor for every text change act
 
 ## FormatChanged 
 
-FormatChanged event will trigger in the Rich Text Editor if any format change occurs in the content such as bold, italic, underline and other formatting supports provided in the toolbar.
+The FormatChanged event will trigger in the Rich Text Editor if any format change occurs in the content such as bold, italic, underline, and other formatting supports provided in the toolbar.
 
 {% tabs %} 
 
@@ -109,7 +109,7 @@ FormatChanged event will trigger in the Rich Text Editor if any format change oc
 
 ## Cursor Position
 
- Rich Text Editor provides the support to get or set the current cursor position based on the character count in the rich text editor. The following code example explains how to get / set a cursor position in the Rich Text Editor.
+ Rich Text Editor provides the support to get or set the current cursor position based on the character count in the rich text editor. The following code example explains how to get or set a cursor position in the Rich Text Editor.
  
  {% tabs %} 
 

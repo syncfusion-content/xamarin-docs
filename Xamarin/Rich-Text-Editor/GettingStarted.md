@@ -7,7 +7,7 @@ control: Rich Text Editor
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin RichTextEditor (SfRichTextEditor)
 
 This section explains the steps required to work with the Rich Text Editor control for Xamarin.Forms.
 

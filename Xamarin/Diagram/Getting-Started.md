@@ -278,7 +278,7 @@ diagram.LayoutManager = new LayoutManager() { Layout = treeLayout };
 
 **BeginNodeRender**
 
-User can change node content using [BeginNodeRender](https://help.syncfusion.com/xamarin/diagram/layout#beginnoderender) event of the SfDiagram. This event will fire for each Node added in Layout when the layout is getting updated.
+An user can change the node content using the [BeginNodeRender](https://help.syncfusion.com/xamarin/diagram/layout#beginnoderender) event of the SfDiagram. This event will fire for each node added in the Layout when the layout is getting updated.
 
 {% tabs %}
 {% highlight c# %}

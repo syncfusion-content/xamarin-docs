@@ -92,6 +92,74 @@ You can find the complete getting started sample from this [link](https://github
 
 ## Customization in CardView
 
+You can customize the border color, thickness, and card corner radius by using the following properties:
+
+[BorderColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_BorderColor) - Used to customize the card view border color.
+
+[BorderWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_BorderWidth) - Used to customize the card view border thickness.
+
+[CornerRadius](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Cards.SfCardView.html#Syncfusion_XForms_Cards_SfCardView_CornerRadius) - Used to customize the card view corner radius.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+    <StackLayout  HorizontalOptions="Center" VerticalOptions="Center">
+        <cards:SfCardView BorderColor="Black" BorderWidth="5" CornerRadius="30,0,30,0" BackgroundColor="LightPink"  >
+            <StackLayout Padding="10, 10, 0, 0" >
+             <Label  Text="New York" FontSize="25" />
+            <Label Text="Mon 3.00PM, Sunny" TextColor="Gray"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="31°" FontSize="70" Padding="0, 0, 10,0"/>
+                <Image  Source="Sun.png" HeightRequest="100" WidthRequest="100"/>
+            </StackLayout>
+        </StackLayout>
+     </cards:SfCardView>
+  </StackLayout>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+        StackLayout mainStack = new StackLayout()
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center,
+                Children =
+                {
+                    new SfCardView(){
+                    Content =  new StackLayout()
+                    {
+                        Padding = new Thickness(10, 10, 0, 0),
+                        Children =
+                        {
+                            new Label(){Text = "New York" , FontSize = 25},
+                            new Label(){Text = "Mon 3.00PM, Sunny" , TextColor = Color.Gray},
+                            new StackLayout()
+                            {
+                                Orientation  = StackOrientation.Horizontal,
+                                Children =
+                                {
+                                    new Label(){Text = "31°" , FontSize = 70, Padding = new Thickness(0,0,10,0) },
+                                    new Image(){Source = "Sun.png", HeightRequest = 100, WidthRequest = 100}
+                                }
+                            }
+                        }
+                    },
+                    BorderColor = Color.Black,
+                    BorderWidth = 5,
+                    CornerRadius = new Thickness(30, 0, 30, 0),
+                    BackgroundColor = Color.LightPink
+                    }
+                }
+            };
+           
+{% endhighlight %}
+
+{% endtabs %}
+
+![Card customization in Xamarin.Forms SfCardLayout](cardview-customization_images/card_Customization.PNG)
+
 ### Indicator customization
 
 Indicators are used to indicate the state or level of something.

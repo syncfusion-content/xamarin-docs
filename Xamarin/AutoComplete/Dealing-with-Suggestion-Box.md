@@ -14,8 +14,15 @@ documentation: ug
 Suggestion box is the drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with drop-down list in the SfAutoComplete control.
 
 ## Suggestion box placement mode
+ 
+Suggestion box placement mode has three options and it can be used by the `SuggestionBoxPlacement` property.
+ 
+`Top` - It will place the suggestion box at the top position.
+ 
+`Bottom` - It will place the suggestion box at the bottom position and also it is the default value.
 
-Suggestion box can be placed either at the top or bottom using the `SuggestionBoxPlacement` property. By default, it is placed at the bottom.
+`Auto` - It will be placed based on the `SfAutoComplete` position. When the auto complete is at the top, then the suggestion box will change to bottom and vice versa.
+
 
 {% tabs %}
 

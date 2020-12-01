@@ -12,8 +12,14 @@ documentation: ug
 Suggestion box is a drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with the drop-down list in SfComboBox control.
 
 ## Suggestion box placement mode
+ 
+Suggestion box placement mode has three options and it can be used by the `SuggestionBoxPlacement` property.
+ 
+`Top` - It will place the suggestion box at the top position.
+ 
+`Bottom` - It will place the suggestion box at the bottom position and also it is the default value.
 
-Suggestion Box can be placed either at the top or bottom using the `SuggestionBoxPlacement` property. By default, it is placed at the bottom.
+`Auto` - It will be placed based on the `ComboBox` position. When the combo box is at the top, then the suggestion box will change to bottom and vice versa.
 
 {% tabs %}
 

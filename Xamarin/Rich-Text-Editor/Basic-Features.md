@@ -77,6 +77,7 @@ The TextChanged event will trigger in the Rich Text Editor for every text change
 			
 			private void Richtexteditor_TextChanged(object sender, Syncfusion.XForms.RichTextEditor.TextChangedEventArgs e)
 			{
+				string text = e.Text;
 			}
 {% endhighlight %}
 
@@ -101,6 +102,7 @@ The FormatChanged event will trigger in the Rich Text Editor if any format chang
 			
 			private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs e)
 			{
+				bool isBold = e.bold;
 			}
 
 {% endhighlight %}
@@ -115,9 +117,15 @@ The FormatChanged event will trigger in the Rich Text Editor if any format chang
 
 {% highlight C# %} 
 
+//To get current cursor position
 int CurrentPosition = richtexteditor.CursorPosition;
+
+//To set current cursor position
+richtexteditor.CursorPosition = 10;
 
 {% endhighlight %}
 
 {% endtabs %}
+
+N> Set the CursorPosition based on the character count will not working in the Xamarin RichTextEditor iOS due to the control focus limitation.
  

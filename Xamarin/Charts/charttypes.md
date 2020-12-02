@@ -3385,7 +3385,7 @@ chart.Series.Add(boxPlotSeries);
 
 {% endtabs %}
 
-[Outlier for BoxAndWhiskerSeries in Xamarin.Forms Chart]
+![ShowOutlier support for BoxAndWhiskerSeries in Xamarin.Forms Chart](charttypes_images/ShowOutlier.png)
 
 ## Error Bar Chart
 

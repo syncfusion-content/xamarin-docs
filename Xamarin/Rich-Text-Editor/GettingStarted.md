@@ -7,7 +7,7 @@ control: Rich Text Editor
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin RichTextEditor (SfRichTextEditor)
 
 This section explains the steps required to work with the Rich Text Editor control for Xamarin.Forms.
 
@@ -194,7 +194,7 @@ public MainPage()
 
 {% endtabs %} 
 
-N> SfRichTextEditor is implemented in WebView. So, SfRichTextEditor should be nested inside a ScrollView as mentioned [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/scroll-view#usage).
+N> SfRichTextEditor is implemented in a WebView. So, the SfRichTextEditor should not be nested inside a ScrollView as mentioned [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/scroll-view#usage).
 
 
 The complete Getting Started sample is available in this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1569261313)

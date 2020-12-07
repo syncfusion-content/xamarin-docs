@@ -353,24 +353,23 @@ When you set the `IsAutoTabWidth` property as true, tab width gets the auto size
 {% endhighlight %}
 
 {% highlight C# %}
-
 using Syncfusion.XForms.TabView;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace TabViewAutomationSample
 {
-	public partial class TabView : ContentPage
-	{
+    public partial class TabView : ContentPage
+    {
         SfTabView tabView;
-		public TabView ()
-		{
-			InitializeComponent ();
+        public TabView()
+        {
+            InitializeComponent();
             var tabView = new SfTabView();
-            var allContactsGrid = new Grid {BackgroundColor = Color.Red};
-            var favoritesGrid = new Grid {BackgroundColor = Color.Green};
-            var contactsGrid = new Grid {BackgroundColor = Color.Blue};
-            var emailGrid = new Grid {BackgroundColor = Color.Olive};
+            var allContactsGrid = new Grid { BackgroundColor = Color.Red };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
+            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var emailGrid = new Grid { BackgroundColor = Color.Olive };
             tabView.IsAutoTabWidth = true;
             var tabItems = new TabItemCollection
             {
@@ -405,10 +404,11 @@ namespace TabViewAutomationSample
                     Content = allContactsGrid
                 }
             };
+
             tabView.Items = tabItems;
             this.Content = tabView;
-		}
-	}
+        }
+    }
 }
 
 {% endhighlight %}

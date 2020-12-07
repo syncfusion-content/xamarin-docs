@@ -7,7 +7,7 @@ control: TabView
 documentation: ug
 ---
 
-# Tab Items
+# TabView Header Customization in Xamarin Tabbed View (SfTabView)
 
 Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
 

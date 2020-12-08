@@ -96,8 +96,8 @@ The [SfListView](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XFor
 
 The `StickyFooterPosition` property has two options:
 
-* Body: The footer item will be positioned inside the body of the ListView when the items are less than the view size.
-* Default: The footer item will be positioned at the bottom of the ListView.
+* [Body](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.FooterPosition.html#Syncfusion_ListView_XForms_FooterPosition_Body): The footer item will be positioned inside the body of the ListView when the items are less than the view size.
+* [Default](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.FooterPosition.html#Syncfusion_ListView_XForms_FooterPosition_Default): The footer item will be positioned at the bottom of the ListView.
 
 {% tabs %}
 {% highlight xaml %}

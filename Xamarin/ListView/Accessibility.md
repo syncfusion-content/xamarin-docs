@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Accessibility in Xamarin ListView (SfListView)
 
-The ListView control has built-in [AutomationId](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) for all their inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the ListView control. To keep unique `AutomationId`, these inner element's AutomationIds are updated based on ListView control AutomationId.
+The ListView control has built-in `AutomationId` for all their inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the ListView control. To keep unique `AutomationId`, these inner element's AutomationIds are updated based on ListView control AutomationId.
 
 For example, if we set ListView’s AutomationId as “Automation” then the Automation framework will interact with items of the ListView as `AutomationItem1`. You can get the `AutomationId` of the ListView items by tapping the items using the `TappedCommand` property.
 

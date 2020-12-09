@@ -11,13 +11,13 @@ documentation: ug
 
 ## Overview
 
-The SfListView allows swiping items to do custom actions such as deleting the data, adding the data, editing the data, etc. To enable swiping, set the [SfListView.AllowSwiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AllowSwiping) property to `true`. Swipe views are displayed when swiping from left to right or right to left (for horizontal orientation, top to bottom or bottom to top) on the item. 
+The `SfListView` allows swiping items to do custom actions such as deleting the data, adding the data, editing the data, etc. To enable swiping, set the [SfListView.AllowSwiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AllowSwiping) property to `true`. Swipe views are displayed when swiping from left to right or right to left (for `Horizontal` orientation, top to bottom or bottom to top) on the item. 
 
 It provides customizable swipe templates for swiping on left and right sides. You can restrict the layout of swipe view up to a certain position when swiping the item by setting the [SfListView.SwipeThreshold](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SwipeThreshold) property. You can set size of the swipe views by setting the [SfListView.SwipeOffset](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SwipeOffset) property.
 
 N> When [SfListView.AutoFitMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AutoFitMode) is `AutoFitMode.Height` for main listview, the height of inner listview will change while scrolling the view and items will be refreshed.
 
-N> When tap a swiped item, the [SelectionChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) and [SelectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) events will not occur since the swiped item is reset at this time.
+N> When tap a swiped item, the [SelectionChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionChanging) and [SelectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionChanged) events will not occur since the swiped item is reset at this time.
 
 N> When the `Visual` is `Material`, you need to set the `BackgroundColor` to `ItemTemplate` to show the slide swiping.
 
@@ -72,7 +72,7 @@ listView.LeftSwipeTemplate = new DataTemplate(() =>
 
 N> Similarly, the UI for swiping towards left can be customized by using the [SfListView.RightSwipeTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_RightSwipeTemplate).
 
-N> Swipe Template is mandatory to perform swiping in the SfListView.
+N> Swipe Template is mandatory to perform swiping in the `SfListView`.
 
 ![Left swiping functionalities](SfListView_images/SfListView-Swiping--1.png)
 
@@ -225,7 +225,7 @@ private void rightImage_BindingContextChanged(object sender, EventArgs e)
 
 ## Performing swipe delete operation
 
-To delete an item in view while swiping the item from one extent to other by using [SfListView.SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event. By setting the [SfListView.SwipeOffset](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SwipeOffset) value to the view size to swipe the item upto end of the item.
+To delete an item in view while swiping the item from one extent to other by using [SfListView.SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SwipeEnded) event. By setting the [SfListView.SwipeOffset](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SwipeOffset) value to the view size to swipe the item upto end of the item.
 
 {% tabs %}
 {% highlight xaml %}
@@ -380,7 +380,7 @@ private void RightSwipeButton_Clicked(object sender, EventArgs e)
 
 ### SwipeStarted Event
 
-The [SfListView.SwipeStarted](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event is raised when the swipe offset changes from its initial value. 
+The [SfListView.SwipeStarted](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SwipeStarted) event is raised when the swipe offset changes from its initial value. 
 
 The `SwipeStarted` event provides the following properties in their arguments:
 
@@ -414,7 +414,7 @@ private void ListView_SwipeStarted(object sender, SwipeStartedEventArgs e)
 
 ### Swiping Event
  
-The [SfListView.Swiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event is raised while swiping an item is in progress. This event is triggered with [SwipingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipingEventArgs.html).
+The [SfListView.Swiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_Swiping) event is raised while swiping an item is in progress. This event is triggered with [SwipingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipingEventArgs.html).
 
 The `Swiping` event provides the following properties in their arguments:
 
@@ -422,12 +422,12 @@ The `Swiping` event provides the following properties in their arguments:
  * [ItemData](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipingEventArgs.html#Syncfusion_ListView_XForms_SwipingEventArgs_ItemData): Defines the underlying data associated with the swiped item as its arguments.
  * [SwipeDirection](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipingEventArgs.html#Syncfusion_ListView_XForms_SwipingEventArgs_SwipeDirection): Defines the swipe direction of the swiped item.
  * [SwipeOffSet](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipingEventArgs.html#Syncfusion_ListView_XForms_SwipingEventArgs_SwipeOffSet): Defines the current swipe offset of the item being swiped.
- * [Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipingEventArgs.html#Syncfusion_ListView_XForms_SwipingEventArgs_Handled): Defines that if it is true, current swipe offset value remains same for the swiped item until the [SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event is raised.
+ * [Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipingEventArgs.html#Syncfusion_ListView_XForms_SwipingEventArgs_Handled): Defines that if it is `true`, current swipe offset value remains same for the swiped item until the [SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SwipeEnded) event is raised.
 
 The `Swiping` event used for the following use cases:
 
 * To maintain the current offset value for the swiped item till the `SwipeEnded` event gets called.
-* To hold the swipe view being swiping by setting the `Handled` property if swipe offset meet certain position.
+* To hold the swipe view being swiping by setting the `Handled` property to `true` if swipe offset meet certain position.
 
 {% tabs %}
 {% highlight xaml %}
@@ -451,7 +451,7 @@ private void ListView_Swiping(object sender, SwipingEventArgs e)
 
 ### SwipeEnded Event
 
-The [SfListView.SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event is fired when completing the swipe action. This event is triggered with [SwipeEndedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipeEndedEventArgs.html).
+The [SfListView.SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SwipeEnded) event is fired when completing the swipe action. This event is triggered with [SwipeEndedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipeEndedEventArgs.html).
 
 The `SwipeEnded` event provides the following properties in their arguments: 
 
@@ -488,13 +488,13 @@ private void ListView_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 ### SwipeReset Event
 
-The [SfListView.SwipeReset](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event is fired when swiping gets reset. The SwipeReset action can be canceled by setting the Cancel property of the ResetSwipeEventArgs to true. This event is triggered with [ResetSwipeEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ResetSwipeEventArgs.html).
+The [SfListView.SwipeReset](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SwipeReset) event is fired when swiping gets reset. The `SwipeReset` action can be canceled by setting the Cancel property of the [ResetSwipeEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ResetSwipeEventArgs.html) to `true`. This event is triggered with `ResetSwipeEventArgs`.
 
 `SwipeReset` event provides the following properties in their arguments:
 
- * [ItemIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipeEndedEventArgs.html#Syncfusion_ListView_XForms_SwipeEndedEventArgs_ItemIndex): Defines the swiping item index.
- * [ItemData](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipeEndedEventArgs.html#Syncfusion_ListView_XForms_SwipeEndedEventArgs_ItemData): Defines the underlying data associated with the swiped item as its arguments. 
- * [SwipeOffSet](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipeEndedEventArgs.html#Syncfusion_ListView_XForms_SwipeEndedEventArgs_SwipeOffset): Defines the current swipe offset of the item being swiped.
+ * [ItemIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ResetSwipeEventArgs.html#Syncfusion_ListView_XForms_ResetSwipeEventArgs_ItemIndex): Defines the swiping item index.
+ * [ItemData](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ResetSwipeEventArgs.html#Syncfusion_ListView_XForms_ResetSwipeEventArgs_ItemData): Defines the underlying data associated with the swiped item as its arguments. 
+ * [SwipeOffSet](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ResetSwipeEventArgs.html#Syncfusion_ListView_XForms_ResetSwipeEventArgs_SwipeOffSet): Defines the current swipe offset of the item being swiped.
  
 The `SwipeReset` event used for the following use case:
 
@@ -522,22 +522,22 @@ private void ListView_SwipeReset(object sender, ResetSwipeEventArgs e)
 
 ## Limitations
 
-When ListView is loaded in CarouselView with [SfListView.AllowSwiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AllowSwiping) as false, it behaves in UWP platform as follows:
+When `SfListView` is loaded in `CarouselView` with [SfListView.AllowSwiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AllowSwiping) as `false`, it behaves in UWP platform as follows:
  
- * While performing first swipe on the view, it will be handled by ScrollView to ensure whether scrolling is happened or not. If not means the manipulation to parent cannot be passed immediately due to UWP platform behavior. The second swipe will be listened by CarouselView, and the view gets swiped. This is the behavior of the SfListView. 
+ * While performing first swipe on the view, it will be handled by `ScrollView` to ensure whether scrolling is happened or not. If not means the manipulation to parent cannot be passed immediately due to UWP platform behavior. The second swipe will be listened by `CarouselView`, and the view gets swiped. This is the behavior of the `SfListView`. 
 
-When ListView is loaded in CarouselView with `AllowSwiping` as true, it behaves as follows:  
+When `SfListView` is loaded in `CarouselView` with `AllowSwiping` as `true`, it behaves as follows:  
  
- * When swiping in iOS, suddenly carousel swipe happened. To swipe ListViewItem, touch and hold the item for some fraction of seconds (0.25 - 0.5 seconds) and then swipe. 
- * When swiping any Item, the SfListView handles the touch and swipe the ListViewItem.  
- * After swiping on ListViewItem, SwipeView will load along with it. If you swipe SwipeView element, Carousel view is swiped. Or else swipe on ListViewItem, control handles touching and swiping the item as usual. 
- * If you swipe header, footer, or group header elements, Carousel view will swipe in Android platform. But in UWP, first swipe on those elements will be handled by SfListView itself, because manipulation to parent cannot be passed immediately. The second swipe will be listened by CarouselView.
+ * When swiping in iOS, suddenly carousel swipe happened. To swipe `ListViewItem`, touch and hold the item for some fraction of seconds (0.25 - 0.5 seconds) and then swipe. 
+ * When swiping any Item, the `SfListView` handles the touch and swipe the `ListViewItem`.  
+ * After swiping on `ListViewItem`, `SwipeView` will load along with it. If you swipe `SwipeView` element, Carousel view is swiped. Or else swipe on `ListViewItem`, control handles touching and swiping the item as usual. 
+ * If you swipe header, footer, or group header elements, Carousel view will swipe in Android platform. But in UWP, first swipe on those elements will be handled by `SfListView` itself, because manipulation to parent cannot be passed immediately. The second swipe will be listened by `CarouselView`.
 
-When ListView is loaded in MasterDetailPage with `AllowSwiping` as true, it behaves as follows: 
+When ListView is loaded in `MasterDetailPage` with `AllowSwiping` as `true`, it behaves as follows: 
 
- * In iOS platform, when swiping a ListViewItem, touch and hold the item for some fraction of seconds (0.25 - 0.5 seconds) and then swipe. 
+ * In iOS platform, when swiping a `ListViewItem`, touch and hold the item for some fraction of seconds (0.25 - 0.5 seconds) and then swipe. 
 
-When ListView [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate) contains button with `AllowSwiping` as true, it behaves as follows:
+When [SfListView.ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate) contains button with `AllowSwiping` as `true`, it behaves as follows:
 
 * While swiping in Android and UWP, button click event executes after swiping.
 * While swiping in iOS, swipe action does not happened when clicking and swiping a button.
@@ -545,7 +545,7 @@ When ListView [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.L
 
 ## How to reset swipe view automatically?
 
-Swiped item can be reset by defining the [SfListView.SwipeOffSet](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipeEndedEventArgs.html#Syncfusion_ListView_XForms_SwipeEndedEventArgs_SwipeOffset) argument of [SfListView.SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event to 0 when the swiping action is completed.
+Swiped item can be reset by defining the [SfListView.SwipeOffSet](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipeEndedEventArgs.html#Syncfusion_ListView_XForms_SwipeEndedEventArgs_SwipeOffset) argument of [SfListView.SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SwipeEnded) event to `0` when the swiping action is completed.
 
 {% tabs %}
 {% highlight c# %}
@@ -581,7 +581,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## How to edit data by swiping?
 
-The SfListView allows editing the item data using either [SfListView.RightSwipeTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_RightSwipeTemplate) or [SfListView.LeftSwipeTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_LeftSwipeTemplate) by loading edit view into the respective template after swiping the item.
+The `SfListView` allows editing the item data using either [SfListView.RightSwipeTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_RightSwipeTemplate) or [SfListView.LeftSwipeTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_LeftSwipeTemplate) by loading edit view into the respective template after swiping the item.
 
 {% tabs %}
 {% highlight xaml %}

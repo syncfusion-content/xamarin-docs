@@ -1,13 +1,13 @@
 ---
 layout: post
-title: RealTimeUpdates in SfListView
-description: Describes about the grouping and its functionalities in SfListView.
+title: RealTimeUpdates in Syncfusion SfListView
+description: Describes about refreshing the items like ListViewItem and GroupHeader at run time in Xamarin.Forms SfListView.
 platform: xamarin
 control: SfListView
 documentation: ug
 ---
 
-# Real Time Updates
+# Real Time Updates in Xamarin.Forms (SfListView)
 
 This section explains how to update the items at runtime.
 
@@ -19,7 +19,7 @@ Here, you can refresh the item template by passing the `canReload` boolean param
 
 {% tabs %}
 {% highlight c# %}
-listView.RefreshListViewItem(0, 22, false);
+listView.RefreshListViewItem(0, 22, true);
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,7 +68,7 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 private void Button_Clicked(object sender, EventArgs e)
 {
      ViewModel.Items[0].ContactNumber = "5555";
-     listView.RefreshListViewItem(0, 0,true);
+     listView.RefreshListViewItem(0, 0, true);
 }
 {% endhighlight %}
 {% endtabs %}

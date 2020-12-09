@@ -13,7 +13,7 @@ The `SfListView` supports sorting the data either in ascending or descending ord
 
 N> When `ItemsSource` changed for ListView, `DataSource.SortDescriptors` will be cleared by default. You need to add `DataSource.SortDescriptors` again after changing `ItemsSource` if you want to retain sorting in listview.
 
-N> To sort the newly added listview items at runtime, set the [LiveDalistView.DataSource.LiveDataUpdateModetaUpdateMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.LiveDataUpdateMode.html) to [LiveDataUpdateMode.AllowDataShaping](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.LiveDataUpdateMode.html#Syncfusion_DataSource_LiveDataUpdateMode_AllowDataShaping). To learn more details about the `LiveDataUpdateModetaUpdateMode`, refer to [here](https://help.syncfusion.com/xamarin/datasource/datasource-gettingstarted#defining-the-livedataupdatemode).
+N> To sort the newly added listview items at runtime, set the [SfListView.DataSource.LiveDataUpdateMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.LiveDataUpdateMode.html) to [LiveDataUpdateMode.AllowDataShaping](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.LiveDataUpdateMode.html#Syncfusion_DataSource_LiveDataUpdateMode_AllowDataShaping). To learn more details about the `LiveDataUpdateMode`, refer to [here](https://help.syncfusion.com/xamarin/datasource/datasource-gettingstarted#defining-the-livedataupdatemode).
 
 ## Programmatic sorting
 

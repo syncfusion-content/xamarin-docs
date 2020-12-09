@@ -1,13 +1,13 @@
 ---
 layout: post
 title: ListView Header and Footer | Xamarin.Forms | Syncfusion
-description: Describes the Header and Footer features in Xamarin.Forms ListView.
+description: Describes the Header and Footer, Header and Footer customization, appearance and sticky behavior in Xamarin.Forms SfListView.
 platform: xamarin
 control: SfListView
 documentation: ug
 ---
 
-# Header and Footer
+# Header and Footer in Xamarin ListView (SfListView)
 
 This section explains how to define and customize the header and footer in the SfListView.
 

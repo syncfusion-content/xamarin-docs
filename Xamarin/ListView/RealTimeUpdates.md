@@ -1,31 +1,31 @@
 ---
 layout: post
-title: RealTimeUpdates in SfListView
-description: Describes about the grouping and its functionalities in SfListView.
+title: RealTimeUpdates in Syncfusion SfListView
+description: Describes about refreshing the items like ListViewItem and GroupHeader at run time in Xamarin.Forms SfListView.
 platform: xamarin
 control: SfListView
 documentation: ug
 ---
 
-# Real Time Updates
+# Real Time Updates in Xamarin.Forms (SfListView)
 
 This section explains how to update the items at runtime.
 
 ## Refreshing a particular item or a range of items
 
-ListView allows you to refresh all the items or a particular range or item by calling the [RefreshListViewItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_RefreshListViewItem_System_Int32_System_Int32_System_Boolean_) method by providing the items range. To refresh a particular item, pass the particular item index alone in both the first and last index.
+`SfListView` allows you to refresh all the items or a particular range or item by calling the [RefreshListViewItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_RefreshListViewItem_System_Int32_System_Int32_System_Boolean_) method by providing the items range. To refresh a particular item, pass the particular item index alone in both the first and last index.
 
 Here, you can refresh the item template by passing the `canReload` boolean parameter as `true`.
 
 {% tabs %}
 {% highlight c# %}
-listView.RefreshListViewItem(0, 22, false);
+listView.RefreshListViewItem(0, 22, true);
 {% endhighlight %}
 {% endtabs %}
 
 ## Refreshing group header item when listview item value is changed
 
-ListView allows you to refresh the group header when changing the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupHeaderTemplate) content by the listview item value. It can be refreshed with its template by passing the GroupHeader item index in the `RefreshListViewItem` method and `canReload` parameter as true.
+`SfListView` allows you to refresh the group header when changing the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupHeaderTemplate) content by the listview item value. It can be refreshed with its template by passing the `GroupHeader` item index in the `RefreshListViewItem` method and `canReload` parameter as `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -68,7 +68,7 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 private void Button_Clicked(object sender, EventArgs e)
 {
      ViewModel.Items[0].ContactNumber = "5555";
-     listView.RefreshListViewItem(0, 0,true);
+     listView.RefreshListViewItem(0, 0, true);
 }
 {% endhighlight %}
 {% endtabs %}

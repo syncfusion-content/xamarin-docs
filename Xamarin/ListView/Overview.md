@@ -9,7 +9,7 @@ documentation: ug
 
 # Xamarin ListView (SfListView) Overview
 
-The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms views or custom templates. Data can be grouped, sorted, and filtered with ease. The following table lists the key features of the Listview control in Xamarin.Forms.
+The `SfListView` for Xamarin.Forms renders set of data items with Xamarin.Forms views or custom templates. Data can be grouped, sorted, and filtered with ease. The following table lists the key features of the Listview control in Xamarin.Forms.
 
 <table>
 <tr>
@@ -102,7 +102,7 @@ The SfListView for Xamarin.Forms renders set of data items with Xamarin.Forms vi
 
  * Supports dynamic selection of UI for each item using the `DataTemplateSelector`.
 
- * AutoFit items based on the content of 'ItemTemplate'.
+ * AutoFit items based on the content of `ItemTemplate`.
 
  * Supports linear layout and grid layout.
 

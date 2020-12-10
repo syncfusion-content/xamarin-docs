@@ -53,7 +53,7 @@ Connector1.Annotations.Add(new Annotation() { Content = "Label" });diagram.AddCo
 
 {% endhighlight %}
 {% endtabs %}
-![Annotation in Xamarin.Forms diagram](Annotation_images/Annotation_img1.jpeg)
+![Annotation in Xamarin.Forms diagram](Annotation_images/Annotation_img1.jpg)
 
 ## Accessing an annotation form node and connector instance
 User can able to access the node or connector annotation using annotation name. The following code illustrates how to access an Annotation.
@@ -201,5 +201,5 @@ diagram.AddConnector(Connector1);
 {% endhighlight %}
 {% endtabs %}
 The following output is displayed as result of the above code example.
-![Annotation alignment in Xamarin.Forms diagram](Annotation_images/Annotation_img3.jpeg)
+![Annotation alignment in Xamarin.Forms diagram](Annotation_images/Annotation_img3.jpg)
 

@@ -1,13 +1,13 @@
 ---
 title: Annotation for Essential Xamarin.Forms Diagram | Syncfusion
-description: Learn how to add annotation in node and connector for Xamarin.Forms
+description: Learn how to add annotation in node and connector for Essential Xamarin.Forms
 platform: Xamarin
 control: Diagram
 documentation: ug
 keywords: 
 ---
 
-# Annotations
+# Annotations in Xamarin Diagram (SfDiagram)
 Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time. 
 You can add Multiple Labels to a Node/Connector.
 

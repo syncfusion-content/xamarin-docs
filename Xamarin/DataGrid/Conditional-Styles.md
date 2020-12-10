@@ -105,7 +105,7 @@ The conditional style can be applied for any cell using the [QueryCellStyle](htt
  * [CellValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryCellStyleEventArgs_CellValue): Provides the cell value of current cell in iteration.
  * [Column](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryCellStyleEventArgs_Column): Provides the [GridColumn](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html) which belongs to current cell in iteration. 
  * [e.Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridHandledEventArgs.html#Syncfusion_SfDataGrid_XForms_GridHandledEventArgs_Handled): Should set to true to apply the changes.
- * [Style](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryCellStyleEventArgs_Style): Sets style to the current cell in iteration.
+ * [Style](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryCellStyleEventArgs_Style): Sets style such as Foreground color, Background color, Font, Font attributes, Font size, Border color and Border thickness to the current cell in iteration.
  
 {% highlight c# %}
 this.dataGrid.QueryCellStyle += DataGrid_QueryCellStyle;
@@ -204,7 +204,7 @@ The Conditional style can be applied for an entire row based on any condition us
  * [RowData](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryConditionalStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryConditionalStyleEventArgs_RowData): Provides the row data of current row in iteration.
  * [RowIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryConditionalStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryConditionalStyleEventArgs_RowIndex): Provides the row index of current row in iteration.
  * [e.Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridHandledEventArgs.html#Syncfusion_SfDataGrid_XForms_GridHandledEventArgs_Handled): Should set to true to apply the changes.
- * [Style](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowStyleEventArgs_Style): Sets style to the current row in iteration.
+ * [Style](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowStyleEventArgs_Style): Sets style such as Foreground color, Background color, Font, Font attributes and Font size to the current row in iteration.
 
 {% highlight c# %}
 this.dataGrid.QueryRowStyle += DataGrid_QueryRowStyle;
@@ -214,6 +214,9 @@ private void DataGrid_QueryRowStyle(object sender, QueryRowStyleEventArgs e)
     {
         e.Style.ForegroundColor = Color.White;
         e.Style.BackgroundColor = Color.BlueViolet;
+        e.Style.Font = "Samantha.ttf";
+        e.Style.FontAttributes = FontAttributes.Bold;
+        e.Style.FontSize = 15;
     }
     else if (e.RowData  == viewModel.OrdersInfo[7])
     {

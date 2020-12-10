@@ -408,14 +408,7 @@ Refer the below code snippet to customize the width of the grid cells and header
 
 ## Customize border of a particular cell
 
-SfDataGrid allows you to customize the border color and border thickness of a particular cell using the [QueryCellStyleEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html). This event will be fired for each cell. It provides the following properties through the [QueryCellStyleEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html) in its `EventHandler`:
-  
- * [RowIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryConditionalStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryConditionalStyleEventArgs_RowIndex): Provides the row index of current cell in iteration. 
- * [ColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryCellStyleEventArgs_ColumnIndex): Provides the column index of current cell in iteration. 
- * [CellValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryCellStyleEventArgs_CellValue): Provides the cell value of current cell in iteration.
- * [Column](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryCellStyleEventArgs_Column): Provides the [GridColumn](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html) which belongs to current cell in iteration. 
- * [e.Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridHandledEventArgs.html#Syncfusion_SfDataGrid_XForms_GridHandledEventArgs_Handled): Should set to true to apply the changes.
- * [Style](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryCellStyleEventArgs_Style): Sets style such as Foreground color, Background color, Font, Font attributes, Font size, Border color and Border thickness to the current cell in iteration.
+SfDataGrid allows you to customize the border color and border thickness of a particular cell using the [QueryCellStyleEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html). This event will be fired for each cell. Using the `Style.BorderColor` and `Style.BorderThickness` properties through the [QueryCellStyleEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html) in its `EventHandler` you can customize borders of an individual cell.
 
 {% highlight c# %}
 this.dataGrid.QueryCellStyle += DataGrid_QueryCellStyle;

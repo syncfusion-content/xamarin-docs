@@ -1,13 +1,13 @@
 ---
 layout: post
 title: ListView Header and Footer | Xamarin.Forms | Syncfusion
-description: Describes the Header and Footer features in Xamarin.Forms ListView.
+description: Describes the Header and Footer, Header and Footer customization, appearance and sticky behavior in Xamarin.Forms SfListView.
 platform: xamarin
 control: SfListView
 documentation: ug
 ---
 
-# Header and Footer
+# Header and Footer in Xamarin ListView (SfListView)
 
 This section explains how to define and customize the header and footer in the SfListView.
 
@@ -96,8 +96,8 @@ The [SfListView](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XFor
 
 The `StickyFooterPosition` property has two options:
 
-* Body: The footer item will be positioned inside the body of the ListView when the items are less than the view size.
-* Default: The footer item will be positioned at the bottom of the ListView.
+* [Body](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.FooterPosition.html#Syncfusion_ListView_XForms_FooterPosition_Body): The footer item will be positioned inside the body of the ListView when the items are less than the view size.
+* [Default](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.FooterPosition.html#Syncfusion_ListView_XForms_FooterPosition_Default): The footer item will be positioned at the bottom of the ListView.
 
 {% tabs %}
 {% highlight xaml %}

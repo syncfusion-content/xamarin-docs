@@ -3305,7 +3305,7 @@ chart.Series.Add(boxPlotSeries);
 
 ### Outlier
 
-The Outlier is used to display the outlier point that lie either below the lower whisker or above the upper whisker line.
+The outlier is used to display the outlier point that lie either below the lower whisker or above the upper whisker line.
 
 ### ShowOutlier
 

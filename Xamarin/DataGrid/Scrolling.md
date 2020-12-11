@@ -245,3 +245,11 @@ private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
 
 
 ![DataGrid with programmatic scrolling using a slider](SfDataGrid_images/Slider.gif)
+
+## Retain scroll position
+
+To retain the scroll position when `ItemsSource` changes set the `DataGrid.CanMaintainScrollPosition` to true. If you set `DataGrid.CanMaintainScrollPosition` to true then on changing `ItemsSource` the newly added `ItemsSource` will be loaded with the previous ItemsSource's `ScrollOffset`.
+
+{% highlight C# %}
+dataGrid.CanMaintainScrollPosition = true;
+{% endhighlight %}

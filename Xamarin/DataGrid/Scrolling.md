@@ -6,7 +6,7 @@ platform: xamarin
 control: SfDataGrid
 documentation: ug
 ---
-# Scrolling 
+# Scrolling in Xamarin.Forms DataGrid(SfDataGrid)
 
 ## Scrolling mode
 

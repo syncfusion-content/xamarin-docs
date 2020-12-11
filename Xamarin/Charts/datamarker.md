@@ -566,7 +566,7 @@ The [`DataMarkerLabelCreated`](https://help.syncfusion.com/cr/xamarin/Syncfusion
 * [`MarkerColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html#Syncfusion_SfChart_XForms_ChartDataMarkerLabel_MarkerColor) – Gets or sets the marker color.
 * [`MarkerType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html#Syncfusion_SfChart_XForms_ChartDataMarkerLabel_MarkerType) – Gets or sets the shape type of marker. The available shapes are ellipse, diamond, hexagon, cross, HorizontalLine, VerticalLine, InvertedTriangle, triangle, pentagon, plus, and square.
 * [`Data`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html#Syncfusion_SfChart_XForms_ChartDataMarkerLabel_Data) - Gets the underlying data of data marker label.
-* [`GrandTotal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html#Syncfusion_SfChart_XForms_ChartDataMarkerLabel_GrandTotal) - Gets the sum value of all data.
+* [`GrandTotal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartDataMarkerLabel.html#Syncfusion_SfChart_XForms_ChartDataMarkerLabel_GrandTotal) - Gets the sum of y-values data.
 
 ## See also
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Working with Chat | SfChat | Xamarin | Syncfusion
-description: This topic describes how to use the interacting Events and Commands on messages in syncfusion Xamarin.Forms chat control.
+description: This topic describes how to interact with Xamarin.Forms Chat(SfChat) using events and Commands.
 platform: xamarin
 control: SfChat
 documentation: ug

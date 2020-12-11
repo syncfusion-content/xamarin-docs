@@ -3303,9 +3303,54 @@ chart.Series.Add(boxPlotSeries);
 
 ![ShowMedian support for BoxAndWhiskerSeries in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Exclusive_Median.png)
 
+### Outlier
+
+The Outlier is used to display the outlier point that lie either below the lower whisker or above the upper whisker line.
+
+### ShowOutlier
+
+The [`ShowOutlier`] Property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html) are used to customize the visible of the outlier. By default, [ShowOutlier] value is true. The following code demonstrates how to enable the [`ShowOutlier`] property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+    <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
+                               YBindingPath="Ages" 
+                               ShowMedian="True"
+                               ShowOutlier="False" />
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
+{
+    ItemsSource = Data,
+    XBindingPath = "Department",
+    YBindingPath = "Ages",
+    ShowMedian = true,
+    ShowOutlier = false
+} 
+chart.Series.Add(boxPlotSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ShowOutlier support for BoxAndWhiskerSeries in Xamarin.Forms Chart](charttypes_images/ShowOutlier.png)
+
 ### SymbolType
 
-The [`SymbolType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_SymbolType) is used to display the outlier point that lie either below the lower whisker or above the upper whisker line. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSymbolType.html).
+The [`SymbolType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_SymbolType) is used to display the outlier point with different type of symbol. The available symbols are Cross, Diamond, Ellipse, Hexagon, InvertedTriangle, Pentagon, Plus, Rectangle and Triangle. By default, [`SymbolType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_SymbolType) value is [`Ellipse`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSymbolType.html).
 
 The following code shows how to set the [`SymbolType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html#Syncfusion_SfChart_XForms_BoxAndWhiskerSeries_SymbolType) value as [`Cross`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSymbolType.html).
 
@@ -3345,47 +3390,6 @@ chart.Series.Add(boxPlotSeries);
 {% endtabs %}
 
 ![Outlier for BoxAndWhiskerSeries in Xamarin.Forms Chart](charttypes_images/BoxAndWhisker_Symbol.png)
-
-### ShowOutlier
-
-The Outlier value of given data set is viewed by enabling the [`ShowOutlier`] Property of [`BoxAndWhiskerSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BoxAndWhiskerSeries.html). By default, [ShowOutlier] value is true. The following code demonstrates how to enable the [`ShowOutlier`] property.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-<chart:SfChart>
-...
-
-    <chart:BoxAndWhiskerSeries ItemSource ="{Binding Data"} XBindingPath="Department" 
-                               YBindingPath="Ages" 
-                               ShowMedian="True"
-                               ShowOutlier="False" />
-
-</chart:SfChart>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-SfChart chart = new SfChart();
-...
-
-BoxAndWhiskerSeries boxPlotSeries = new BoxAndWhiskerSeries()
-{
-    ItemsSource = Data,
-    XBindingPath = "Department",
-    YBindingPath = "Ages",
-    ShowMedian = true,
-    ShowOutlier = false
-} 
-chart.Series.Add(boxPlotSeries);
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![ShowOutlier support for BoxAndWhiskerSeries in Xamarin.Forms Chart](charttypes_images/ShowOutlier.png)
 
 ## Error Bar Chart
 

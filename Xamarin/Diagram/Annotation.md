@@ -1,13 +1,13 @@
 ---
 title: Annotation for Essential Xamarin.Forms Diagram | Syncfusion
-description: Learn how to add annotation in node and connector for Xamarin.Forms
+description: Learn how to add annotation in node and connector and customize the appearance of the annotation for Xamarin.Forms
 platform: Xamarin
 control: Diagram
 documentation: ug
 keywords: 
 ---
 
-# Annotations
+# Annotations in Xamarin Diagram (SfDiagram)
 Annotation is a block of text that can be displayed over a Node or Connector. Annotation is used to textually represent an object with a string that can be edited at run time. 
 You can add Multiple Labels to a Node/Connector.
 
@@ -53,7 +53,7 @@ Connector1.Annotations.Add(new Annotation() { Content = "Label" });diagram.AddCo
 
 {% endhighlight %}
 {% endtabs %}
-![Annotation in Xamarin.Forms diagram](Annotation_images/Annotation_img1.jpeg)
+![Annotation in Xamarin.Forms diagram](Annotation_images/Annotation_img1.jpg)
 
 ## Accessing an annotation form node and connector instance
 User can able to access the node or connector annotation using annotation name. The following code illustrates how to access an Annotation.
@@ -201,5 +201,5 @@ diagram.AddConnector(Connector1);
 {% endhighlight %}
 {% endtabs %}
 The following output is displayed as result of the above code example.
-![Annotation alignment in Xamarin.Forms diagram](Annotation_images/Annotation_img3.jpeg)
+![Annotation alignment in Xamarin.Forms diagram](Annotation_images/Annotation_img3.jpg)
 

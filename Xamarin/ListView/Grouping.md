@@ -13,7 +13,7 @@ A group represents a collection of items belongs to a category. When grouping is
 
 N> When ItemsSource changed for ListView, [DataSource.GroupDescriptors](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_GroupDescriptors) will be cleared by default. You need to add `DataSource.GroupDescriptors` again after changing ItemsSource if you want to retain grouping in listview.
 
-N> To update grouping for the newly added listview items at runtime, set the `listView.DataSource.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`. To learn more details about the [LiveDataUpdateMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.LiveDataUpdateMode.html), refer to [here](https://help.syncfusion.com/xamarin/datasource/datasource-gettingstarted#defining-the-livedataupdatemode).
+N> To update grouping for the newly added listview items at runtime, set the [listView.DataSource.LiveDataUpdateMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.LiveDataUpdateMode.html) to [LiveDataUpdateMode.AllowDataShaping](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.LiveDataUpdateMode.html#Syncfusion_DataSource_LiveDataUpdateMode_AllowDataShaping). To learn more details about the `LiveDataUpdateMode`, refer to [here](https://help.syncfusion.com/xamarin/datasource/datasource-gettingstarted#defining-the-livedataupdatemode).
 
 ## Programmatic grouping
 
@@ -274,7 +274,7 @@ Download the entire sample code [here](https://github.com/SyncfusionExamples/Dis
 
 ### Displaying items count
 
-The total number of items in each group will be displayed in the group header by binding the [Count](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.Extensions.GroupResult.html#Syncfusion_DataSource_Extensions_GroupResult_Count) property in the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.Extensions.GroupResult.html#Syncfusion_DataSource_Extensions_GroupResult_Count).
+The total number of items in each group will be displayed in the group header by binding the [Count](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.Extensions.GroupResult.html#Syncfusion_DataSource_Extensions_GroupResult_Count) property in the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupHeaderTemplate).
 
 {% tabs %}
 {% highlight xaml %}
@@ -449,7 +449,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## Group expand and collapse
 
-By default, the groups will be in expanded state in the SfListView. You can expand or collapse the group at runtime by setting the [SfListView.AllowGroupExpandCollapse](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AllowGroupExpandCollapse) to true. So, when tapping the group header, the group gets collapse if the group is in expand state and vice-versa. 
+By default, the groups will be in expanded state in the SfListView. You can expand or collapse the group at runtime by setting the [SfListView.AllowGroupExpandCollapse](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AllowGroupExpandCollapse) to `true`. So, when tapping the group header, the group gets collapse if the group is in expand state and vice-versa. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -492,7 +492,7 @@ listView.CollapseGroup(group);
 
 #### Expand or collapse all groups by default
 
-Expand or collapse all the groups by default using the [SfListView.Loaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ListViewLoadedEventArgs.html) event.
+Expand or collapse all the groups by default using the [SfListView.Loaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_Loaded) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -508,7 +508,7 @@ private void ListView_Loaded(object sender, ListViewLoadedEventArgs e)
 
 ### Keeping only one group in expanded state
 
-To keep any one specific group alone in the expanded state, use the [SfListView.GroupExpanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event. The particular selected group can be get from [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventHandler.html), by which you can compare and collapse all other groups, and expand the particular selected group. 
+To keep any one specific group alone in the expanded state, use the [SfListView.GroupExpanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupExpanding) event. The particular selected group can be get from [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html), by which you can compare and collapse all other groups, and expand the particular selected group. 
 
 {% tabs %}
 {% highlight c# %}
@@ -541,7 +541,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ### Expand groups while grouping
 
-You can expand all the groups while grouping by setting the [DataSource.AutoExpandGroups](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_AutoExpandGroups) to true. So, when grouping any item, all the groups will be automatically expanded.
+You can expand all the groups while grouping by setting the [DataSource.AutoExpandGroups](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html#Syncfusion_DataSource_DataSource_AutoExpandGroups) to `true`. So, when grouping any item, all the groups will be automatically expanded.
 
 {% tabs %}
 {% highlight xaml %}
@@ -564,9 +564,9 @@ listView.DataSource.AutoExpandGroups = true;
 
 ### GroupExpanding Event
 
-The [SfListView.GroupExpanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event occurs when the group is being expanded.
+The [SfListView.GroupExpanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupExpanding) event occurs when the group is being expanded.
  
-The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventHandler.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members:
+The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members:
 
 [Groups](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html#Syncfusion_ListView_XForms_GroupExpandCollapseChangingEventArgs_Groups): Gets a list of groups being expanded.
 [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Decides whether to cancel the group expansion or not.
@@ -575,7 +575,7 @@ The `GroupExpanding` event used for the following use case.
 
 * Keeps any one specific group in the expanded state by comparing and collapsing all other groups.
 
-You can cancel the group expansion by setting `GroupExpandCollapseChangingEventArgs.Cancel` to true.
+You can cancel the group expansion by setting `GroupExpandCollapseChangingEventArgs.Cancel` to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -599,22 +599,22 @@ private void ListView_GroupExpanding(object sender, GroupExpandCollapseChangingE
 
 ### GroupExpanded Event
 
-The [SfListView.GroupExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event occurs after expanding the group.
+The [SfListView.GroupExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupExpanded) event occurs after expanding the group.
 
-The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventHandler.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member:
+The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs.html) of the `GroupExpanded` event provides the information about the expanded group and it has the following member:
 
 [Groups](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs.html#Syncfusion_ListView_XForms_GroupExpandCollapseChangedEventArgs_Groups): Gets a list of expanded groups.
 
 ### GroupCollapsing Event 
 
-The [SfListView.GroupCollapsing](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event occurs when the group is being collapsed.
+The [SfListView.GroupCollapsing](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupCollapsing) event occurs when the group is being collapsed.
 
-The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventHandler.html) of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following members:
+The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html) of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following members:
 
 [Groups](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html#Syncfusion_ListView_XForms_GroupExpandCollapseChangingEventArgs_Groups): Gets a list of groups being collapsed.
 [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Decides whether to cancel the group collapsing or not.
 
-You can cancel the group is being collapsed by using the `GroupExpandCollapseChangingEventArgs.Cancel` of `GroupCollapsing` event.
+You can cancel the group is being collapsed by setting the `GroupExpandCollapseChangingEventArgs.Cancel` to `true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -638,19 +638,19 @@ private void ListView_GroupCollapsing(object sender, GroupExpandCollapseChanging
 
 ### GroupCollapsed Event
  
-The [SfListView.GroupCollapsed](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html) event occurs after the group is collapsed.
+The [SfListView.GroupCollapsed](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupCollapsed) event occurs after the group is collapsed.
  
-The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventHandler.html) of the `GroupCollapsed` event provides the information about collapsed group and it contains the following member.
+The [GroupExpandCollapseChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs.html) of the `GroupCollapsed` event provides the information about collapsed group and it contains the following member.
 
 [Groups](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangedEventArgs.html#Syncfusion_ListView_XForms_GroupExpandCollapseChangedEventArgs_Groups): Gets a list of collapsed groups.
 
 ## Stick group header
 
-To stick the group header to view, enable the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_IsStickyGroupHeader). If `IsStickyGroupHeader` is true, the corresponding group header will be in view until the last item of the group goes out of view, and sticky group header will move when another group header leads while scrolling.
+To stick the group header to view, enable the property [SfListView.IsStickyGroupHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_IsStickyGroupHeader). If `IsStickyGroupHeader` is `true`, the corresponding group header will be in view until the last item of the group goes out of view, and sticky group header will move when another group header leads while scrolling.
 
 I> If sticky group header is enabled and `AutoFitMode` is `Height`, the panning experience will not be smooth or item's layout will not work as expected. To make the panning experience smooth, set the same size for all group header items by handling the `QueryItemSize` event.
 
-N> When the `IsStickyGroupHeader` is set to true, the [IsStickyHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_IsStickyHeader) property will be changed to true because the header item can not be scrolled. When the `IsStickyHeader` is set to false, if `IsStickyGroupHeader` is true then it will be changed to false because the group header item cannot be sticky.
+N> When the `IsStickyGroupHeader` is set to `true`, the [IsStickyHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_IsStickyHeader) property will be changed to `true` because the header item can not be scrolled. When the `IsStickyHeader` is set to `false`, if `IsStickyGroupHeader` is ``true` then it will be changed to `false` because the group header item cannot be sticky.
 
 {% tabs %}
 {% highlight xaml %}
@@ -797,7 +797,7 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 {% endhighlight %}
 {% endtabs %}
 
-You can switch the expand or collapse group icon based on `IsExpand` property using the converter.
+You can switch the expand or collapse group icon based on [IsExpand](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.Extensions.GroupResult.html#Syncfusion_DataSource_Extensions_GroupResult_IsExpand) property using the converter.
 
 {% tabs %}
 {% highlight c# %}
@@ -827,7 +827,7 @@ Download entire source code from GitHub [here](https://github.com/SyncfusionExam
 
 ### Height customization
 
-The size of the group header items can be customized by setting the [SfListView.GroupHeaderSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupHeaderSize) property. The default value of this property is 40. This property responds to runtime changes.
+The size of the group header items can be customized by setting the [SfListView.GroupHeaderSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupHeaderSize) property. The default value of this property is `40`. This property responds to runtime changes.
 
 {% tabs %}
 {% highlight xaml %}
@@ -842,7 +842,7 @@ N> For Vertical orientation, the group header size is considered as height and f
 
 ### CheckBox in group header
 
-ListView supports selecting each group and items in the group like a checkBox selection by customizing the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupHeaderTemplate) and the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupHeaderTemplate) respectively. The checkbox state will be update by using converter.
+ListView supports selecting each group and items in the group like a checkBox selection by customizing the [SfListView.GroupHeaderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupHeaderTemplate) and the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate) respectively. The checkbox state will be update by using converter.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1099,7 +1099,7 @@ ListView allows you to provide space between the group header items by using the
 
 ### Allow to select only one item in a group at a time
 
-To select only one item in a group at a time, use the [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.html) event. If more than one item in the same group gets selected, already selected item will be removed from ListView’s SelectedItems. 
+To select only one item in a group at a time, use the [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.ItemSelectionChangingEventArgs.html) event. If more than one item in the same group gets selected, already selected item will be removed from `ListView.SelectedItems`. 
 
 {% tabs %}
 {% highlight c# %}

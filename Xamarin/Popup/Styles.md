@@ -276,3 +276,83 @@ Refer to the following code example for customizing the overlay opacity and the 
 Executing the above codes renders the following output in Android devices.
 
 ![Popup with overlay customization](PopupLayout_images/PopupView_Overlay.png)
+
+### Blurred background
+
+The SfPopupLayout allows to blur the background using SfPoupLayout.OverlayMode and SfPopupLayout.PopupView.PopupStyle.BlurIntensity properties, respectively.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GettingStarted.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+
+    <sfPopup:SfPopupLayout x:Name="popupLayout" OverlayMode="Blur">
+        <sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:PopupView>
+                <sfPopup:PopupView.PopupStyle>
+                    <sfPopup:PopupStyle HeaderBackgroundColor="DimGray"
+                                        BlurIntensity="ExtraLight" />
+                </sfPopup:PopupView.PopupStyle>
+            </sfPopup:PopupView>
+        </sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:SfPopupLayout.Content>
+            <StackLayout x:Name="layout">
+                <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" 
+                        HorizontalOptions="FillAndExpand" Clicked="ClickToShowPopup_Clicked"  />
+            </StackLayout>
+        </sfPopup:SfPopupLayout.Content>
+    </sfPopup:SfPopupLayout>
+
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.PopupLayout;
+using System;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        SfPopupLayout popupLayout;
+        public MainPage()
+        {
+            InitializeComponent();
+            popupLayout = new SfPopupLayout();
+            popupLayout.OverlayMode = OverlayMode.Blur;
+            popupLayout.PopupView.PopupStyle.BlurIntensity = BlurIntensity.ExtraLight;
+            var layout = new StackLayout();
+            var clickToShowPopup = new Button()
+            {
+                Text = "ClickToShowPopup",
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.FillAndExpand
+            };
+            layout.Children.Add(clickToShowPopup);
+            Content = popupLayout;
+            popupLayout.Content = layout;
+            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
+        }
+
+        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        {
+            popupLayout.Show();
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Executing the above codes renders the following output in Android devices
+
+![Blurred background](PopupLayout_images/Blurred Background.png)

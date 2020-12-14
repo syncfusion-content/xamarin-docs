@@ -302,7 +302,7 @@ The SfPopupLayout allows to blur the background using SfPopupLayout.OverlayMode 
         </sfPopup:SfPopupLayout.PopupView>
         <sfPopup:SfPopupLayout.Content>
             <StackLayout x:Name="layout">
-               <Image Source="Blurred_Background.png" Aspect="Fill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+               <Image Source="Blurred_Background.png" Aspect="AspectFit" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
                     <Image.GestureRecognizers>
                         <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
                     </Image.GestureRecognizers>
@@ -334,7 +334,7 @@ namespace GettingStarted
             popupLayout.PopupView.PopupStyle.BlurIntensity = BlurIntensity.ExtraLight;
             popupLayout.PopupView.PopupStyle.HeaderBackgroundColor = Color.DimGray;
             var layout = new StackLayout();
-            var image = new Image() { Source = "Blurred_Background.png", Aspect = Aspect.Fill, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand };
+            var image = new Image() { Source = "Blurred_Background.png", Aspect = Aspect.AspectFit, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand };
             TapGestureRecognizer tapGestureRecognizer = new TapGestureRecognizer();
             tapGestureRecognizer.Tapped += TapGestureRecognizer_Tapped;
             image.GestureRecognizers.Add(tapGestureRecognizer);

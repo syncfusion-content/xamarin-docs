@@ -302,8 +302,11 @@ The SfPopupLayout allows to blur the background using SfPopupLayout.OverlayMode 
         </sfPopup:SfPopupLayout.PopupView>
         <sfPopup:SfPopupLayout.Content>
             <StackLayout x:Name="layout">
-                <Button x:Name="clickToShowPopup" Text="ClickToShowPopup" VerticalOptions="Start" 
-                        HorizontalOptions="FillAndExpand" Clicked="ClickToShowPopup_Clicked"  />
+               <Image Source="Blurred_Background.png" Aspect="Fill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
             </StackLayout>
         </sfPopup:SfPopupLayout.Content>
     </sfPopup:SfPopupLayout>
@@ -329,20 +332,18 @@ namespace GettingStarted
             popupLayout = new SfPopupLayout();
             popupLayout.OverlayMode = OverlayMode.Blur;
             popupLayout.PopupView.PopupStyle.BlurIntensity = BlurIntensity.ExtraLight;
+            popupLayout.PopupView.PopupStyle.HeaderBackgroundColor = Color.DimGray;
             var layout = new StackLayout();
-            var clickToShowPopup = new Button()
-            {
-                Text = "ClickToShowPopup",
-                VerticalOptions = LayoutOptions.Start,
-                HorizontalOptions = LayoutOptions.FillAndExpand
-            };
-            layout.Children.Add(clickToShowPopup);
+            var image = new Image() { Source = "Blurred_Background.png", Aspect = Aspect.Fill, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand };
+            TapGestureRecognizer tapGestureRecognizer = new TapGestureRecognizer();
+            tapGestureRecognizer.Tapped += TapGestureRecognizer_Tapped;
+            image.GestureRecognizers.Add(tapGestureRecognizer);
+            layout.Children.Add(image);
             Content = popupLayout;
             popupLayout.Content = layout;
-            clickToShowPopup.Clicked += ClickToShowPopup_Clicked;
         }
 
-        private void ClickToShowPopup_Clicked(object sender, EventArgs e)
+        private void TapGestureRecognizer_Tapped(object sender, System.EventArgs e)
         {
             popupLayout.Show();
         }

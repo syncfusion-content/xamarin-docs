@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Styles | SfPopupLayout |Xamarin | Syncfusion
-description: Style customization options available in Xamarin.Forms PopupLayout.
+description: Apply style for all the elements in Xamarin.Forms PopupLayout(SfPopupLayout). Customize the Border, popup Header, popup Footer and Overlay Background in the PopupLayout.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Styles
+# Styling in Xamarin.Forms Popup(SfPopupLayout)
 
 The SfPopupLayout applies style to all of its elements by using the [SfPopupLayout.PopupView.PopupStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupView.html#Syncfusion_XForms_PopupLayout_PopupView_PopupStyle) property.
 
@@ -279,7 +279,7 @@ Executing the above codes renders the following output in Android devices.
 
 ### Blurred background
 
-The SfPopupLayout allows to blur the background using SfPoupLayout.OverlayMode and SfPopupLayout.PopupView.PopupStyle.BlurIntensity properties, respectively.
+The SfPopupLayout allows to blur the background using SfPopupLayout.OverlayMode and SfPopupLayout.PopupView.PopupStyle.BlurIntensity properties, respectively.
 
 {% tabs %}
 

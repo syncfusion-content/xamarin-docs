@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Styles | SfPopupLayout |Xamarin | Syncfusion
-description: Apply style for all the elements in Xamarin.Forms PopupLayout(SfPopupLayout). Customize the Border, popup Header, popup Footer and Overlay Background in the PopupLayout.
+description: Apply styles for all the elements in Xamarin.Forms PopupLayout(SfPopupLayout). Customize the Border, Popup Header and  Footer in the PopupLayout.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
@@ -355,4 +355,4 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in Android devices
 
-![Blurred background](PopupLayout_images/Blurred Background.png)
+![Blurred background](PopupLayout_images/BlurredBackground.jpg)

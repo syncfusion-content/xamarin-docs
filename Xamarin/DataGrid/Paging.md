@@ -216,8 +216,8 @@ N> The size of the `SfDataPager` is adjusted automatically based on the availabl
 {% tabs %}
 {% highlight xaml %}
 <sfDataPager:SfDataPager x:Name="sfDataPager"
-                         ButtonSize="50"
-                         ButtonFontSize="16"
+                         ButtonSize="60"
+                         ButtonFontSize="21"
                          Source="{Binding OrdersInfo}">
 </sfDataPager:SfDataPager>
 {% endhighlight %}
@@ -227,8 +227,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
-        sfDataPager.ButtonSize = 50;
-        sfDataPager.ButtonFontSize = 16;
+        sfDataPager.ButtonSize = 60;
+        sfDataPager.ButtonFontSize = 21;
     }
 }
 {% endhighlight %}

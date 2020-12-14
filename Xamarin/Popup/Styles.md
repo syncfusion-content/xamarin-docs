@@ -356,4 +356,4 @@ namespace GettingStarted
 
 Executing the above codes renders the following output in Android devices
 
-![Blurred background](PopupLayout_images/BlurredBackground.jpg)
+![Blurred background](PopupLayout_images/Blurred_Background.jpg)

@@ -305,7 +305,9 @@ N> The nullable support for [VisibleHeaderCount](https://help.syncfusion.com/cr/
 
 ## Add tab items at auto size
 
-When you set the `IsAutoTabWidth` property as true, tab width gets the auto size based on the length of the tab item `Title` string.
+When you set the `TabWidthMode` property as `BasedOnText` option, tab width gets the auto size based on the length of the tab item `Title` string.
+
+The default option of `TabWidthMode` property is `Default`. 
 
 {% tabs %}
 
@@ -316,7 +318,7 @@ When you set the `IsAutoTabWidth` property as true, tab width gets the auto size
              xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
              x:Class="TabViewAutomationSample.TabViewAutomationSample">
     <ContentPage.Content>
-        <tabView:SfTabView BackgroundColor="White" IsAutoTabWidth="True">
+        <tabView:SfTabView BackgroundColor="White" TabWidthMode="BasedOnText">
             <tabView:SfTabItem Title="Call">
                 <tabView:SfTabItem.Content>
                     <Grid BackgroundColor="Gray"/>
@@ -370,7 +372,7 @@ namespace TabViewAutomationSample
             var favoritesGrid = new Grid { BackgroundColor = Color.Green };
             var contactsGrid = new Grid { BackgroundColor = Color.Blue };
             var emailGrid = new Grid { BackgroundColor = Color.Olive };
-            tabView.IsAutoTabWidth = true;
+            tabView.TabWidthMode = TabWidthMode.BasedOnText ;
             var tabItems = new TabItemCollection
             {
                 new SfTabItem()
@@ -418,4 +420,4 @@ namespace TabViewAutomationSample
 ![TabItems](images/TabItems/IsAutoTabWidth.gif)
 
 
-N> The IsAutoTabWidth is supported only when the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) is not set and [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to `Scroll`. 
+N> The `TabWidthMode` for `BasedOnText` is supported only when the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) is not set and [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to `Scroll`. 

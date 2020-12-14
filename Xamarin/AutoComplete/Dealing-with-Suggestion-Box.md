@@ -23,6 +23,7 @@ Suggestion box placement mode has three options and it can be used by the `Sugge
 
 `Auto` - It will be placed based on the `SfAutoComplete` position. When the auto complete is at the top, then the suggestion box will change to bottom and vice versa.
 
+`None` - If you select the `None` option, it will hide the suggestion box. 
 
 {% tabs %}
 

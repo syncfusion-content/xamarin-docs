@@ -1433,6 +1433,24 @@ public class CustomComboBoxRenderer : GridCellComboBoxRenderer
 
 ![DataGrid with Customizing comboBox column](SfDataGrid_images/CustomizingGridComboBox.png)
 
+### Customizing drop down width
+
+To customize the drop down width of [GridComboBoxColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) set `GridComboBoxColumn.DropDownWidth` property to a desired value.
+
+{% highlight c# %}
+GridComboBoxColumn comboBoxColumn = new GridComboBoxColumn()
+{
+    MappingName = "OrderID",
+    DisplayMemberPath = "EmployeeID",
+    ValueMemberPath = "OrderID",
+    ItemsSource = viewmodel.comboBoxInfo,
+    CanFilterSuggestions = true,
+    DropDownWidth = 100,
+};
+dataGrid.Columns.Add(comboBoxColumn);
+
+{% endhighlight %}
+
 ### Loading Different ItemSource for each row of GridComboBoxColumn
 
 You can load the different ItemsSource to each row of GridComboBoxColumn by setting [GridComboBoxColumn.ItemsSourceSelector](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_ItemsSourceSelector) property.

@@ -209,6 +209,33 @@ public partial class MainPage : ContentPage
 
 N> The size of the `SfDataPager` is adjusted automatically based on the available screen size if the view couldn't hold the numeric buttons specified in the `NumericButtonCount` property.
 
+## Customizing button size and font size of pager buttons
+
+`SfDataPager` button will be loaded with default width and height of size 40 for mobile platforms and 35 for desktop platforms. Default button font size of `SfDataPager` is 14. You can customize the button size and button font size of `SfDataPager` by setting desired value to `SfDataPager.ButtonSize` and `SfDataPager.ButtonFontSize` properties respectively.
+
+{% tabs %}
+{% highlight xaml %}
+<sfDataPager:SfDataPager x:Name="sfDataPager"
+                         ButtonSize="50"
+                         ButtonFontSize="16"
+                         Source="{Binding OrdersInfo}">
+</sfDataPager:SfDataPager>
+{% endhighlight %}
+{% highlight c# %}
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        sfDataPager.ButtonSize = 50;
+        sfDataPager.ButtonFontSize = 16;
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![DataGrid with customized pager buttons](SfDataGrid_images/CustomizedPagerButtons.png)
+
 ## AppearanceManager
 
 The data grid allows changing the appearance by writing a style class overriding from the `AppearanceManager`, and assigning it to the [SfDataPager.AppearanceManager](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html#Syncfusion_SfDataGrid_XForms_DataPager_SfDataPager_AppearanceManager) property.

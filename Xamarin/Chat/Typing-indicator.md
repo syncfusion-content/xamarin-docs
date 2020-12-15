@@ -382,9 +382,9 @@ namespace GettingStarted
 {% endhighlight %}
 {% endtabs %} 
 
-## Customize height of the typing indictor view area
+## Customize height of the typing indicator view area
  
-The SfChat allows to customizing the height of the typing indictor view area by using SfChat.TypingIndicatorViewHeight property.To hide the typing indicator view area by setting SfChat.TypingIndicatorViewHeight property value as 0.
+The SfChat allows to customizing the height of the typing indicator view area by using SfChat.TypingIndicatorViewHeight property.To hide the typing indicator view area by setting SfChat.TypingIndicatorViewHeight property value as 0.
 
 {% tabs %}
 {% highlight xaml %}

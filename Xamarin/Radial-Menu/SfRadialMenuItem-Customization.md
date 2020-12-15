@@ -852,7 +852,7 @@ namespace RadialSample
 
 The `Command` property is used to associate a command with an instance of SfRadialMenu. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
-The following example shows how the command should be used. When you click SfRadialMenu , the text color of the SfRadialMenuItem and the center button will be changed to green.
+The following example shows how the command should be used. When you click [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) , the text color of the [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html) and the center button will be changed to green.
 
 {% tabs %}
 {% highlight xaml %}
@@ -956,9 +956,9 @@ namespace RadialMenuCommandSample
 
 ### Command for SfRadialMenuItem
 
-The `Command` property is used to associate a command with an instance of `SfRadialMenuItem`. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+The `Command` property is used to associate a command with an instance of [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html). This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
-When you click `SfRadialMenuItem`, the tapped item will be displayed. The following example shows how the command should be used.
+When clicking the [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html), the tapped item will be displayed. The following example shows how the command should be used.
 
 {% tabs %}
 {% highlight xaml %}

@@ -296,7 +296,7 @@ The SfPopupLayout allows to blur the background using SfPopupLayout.OverlayMode 
             <sfPopup:PopupView>
                 <sfPopup:PopupView.PopupStyle>
                     <sfPopup:PopupStyle HeaderBackgroundColor="DimGray"
-                                        BlurIntensity="ExtraLight" />
+                                        BlurIntensity="ExtraDark" />
                 </sfPopup:PopupView.PopupStyle>
             </sfPopup:PopupView>
         </sfPopup:SfPopupLayout.PopupView>
@@ -331,7 +331,7 @@ namespace GettingStarted
             InitializeComponent();
             popupLayout = new SfPopupLayout();
             popupLayout.OverlayMode = OverlayMode.Blur;
-            popupLayout.PopupView.PopupStyle.BlurIntensity = BlurIntensity.ExtraLight;
+            popupLayout.PopupView.PopupStyle.BlurIntensity = BlurIntensity.ExtraDark;
             popupLayout.PopupView.PopupStyle.HeaderBackgroundColor = Color.DimGray;
             var layout = new StackLayout();
             var image = new Image() { Source = "Blurred_Background.png", Aspect = Aspect.AspectFit, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand };

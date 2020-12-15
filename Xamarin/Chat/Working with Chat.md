@@ -11,12 +11,9 @@ documentation: ug
 
 ## Message Tapped Event and Command
 
+The SfChat control comes with built-in SfChat.MessageTapped event and SfChat.MessageTappedCommand that will be fired upon tapping a message. You can get the tapped Message, and the interacted(tapped) Point via the MessageTappedEventArgs as MessageTappedEventArgs.Message and MessageTappedEventArgs.Point respectively, in both the MessageTapped event handler and action of MessageTappedCommand.
+
 ### MessageTapped Event
-
-The SfChat. MessageTapped event will be triggered while tapping on the messages with MessageTappedEventArgs properties as follows.
-
-*Message  : Gets the instance of the IMessage that was interacted with.
-*Position : Gets the touch position as point on the tapped message. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -67,8 +64,6 @@ namespace ChatInteraction
 
 ### MessageTapped Command
 
-The SfChat.MessageTappedCommand will be executed when tapping on the messages in SfChat. You can directly assign any ICommand type property to the SfChat.MessageTappedCommand. By configuring this, the chat comes handy if you have your own logics determining whether to execute the command or not.
-
 {% tabs %}
 {% highlight xaml %}
 <ContentPage.BindingContext>
@@ -110,12 +105,9 @@ public class ViewModel : INotifyPropertyChanged
 
 ## Message DoubleTapped Event and Command
 
+The SfChat control comes with built-in SfChat.MessageDoubleTapped event and SfChat.MessageDoubleTappedCommand that will be fired upon double tapping a message. You can get the double tapped Message, and the interacted(double tapped) Point via the MessageDoubleTappedEventArgs as MessageDoubleTappedEventArgs.Message and MessageDoubleTappedEventArgs.Point respectively, in both the MessageDoubleTapped event handler and action of MessageDoubleTappedCommand.
+
 ### MessageDoubleTapped Event
-
-The SfChat.MessageDoubleTapped event will be triggered while double tapping on the messages with MessageDoubleTappedEventArgs properties as follows.
-
-*Message  : Gets the instance of the IMessage that was interacted with.
-*Position : Gets the touch position as point on the tapped message. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -166,8 +158,6 @@ namespace ChatInteraction
 
 ### MessageDoubleTapped Command
 
-The SfChat.MessageDoubleTappedCommand will be executed when double tapping on the messages in SfChat. You can directly assign any ICommand type property to the SfChat.MessageDoubleTappedCommand. By configuring this, the chat comes handy if you have your own logics determining whether to execute the command or not.
-
 {% tabs %}
 {% highlight xaml %}
 <ContentPage.BindingContext>
@@ -209,12 +199,9 @@ public class ViewModel : INotifyPropertyChanged
 
 ## Message LongPressed Event and Command
 
+The SfChat control comes with built-in SfChat.MessageLongPressed event and SfChat.MessageLongPressedCommand that will be fired upon long pressing a message. You can get the long pressed Message, and the interacted(long pressed) Point via the MessageLongPressedEventArgs as MessageLongPressedEventArgs.Message and MessageLongPressedEventArgs.Point respectively, in both the MessageLongPressed event handler and action of MessageLongPressedCommand.
+
 ### MessageLongPressed Event
-
-The SfChat.MessageLongPressed event will be triggered while long pressing on the messages with MessageLongPressedEventArgs properties as follows.
-
-*Message  : Gets the instance of the IMessage that was interacted with.
-*Position : Gets the touch position as point on the tapped message. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -265,8 +252,6 @@ namespace ChatInteraction
 {% endtabs %}
 
 ### MessageLongPressed Command
-
-The SfChat.MessageLongPressedCommand will be executed when double tapping on the messages in SfChat. You can directly assign any ICommand type property to the SfChat.MessageLongPressedCommand. By configuring this, the chat comes handy if you have your own logics determining whether to execute the command or not.
 
 {% tabs %}
 {% highlight xaml %}

@@ -13,13 +13,15 @@ Suggestion box is a drop-down list box, which displays the filtered suggestions 
 
 ## Suggestion box placement mode
  
-Suggestion box placement mode has three options and it can be used by the `SuggestionBoxPlacement` property.
+The drop-down that shows the filtered items will be placed automatically based on the available space and can also be customized using the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html) property.
  
-`Top` - It will place the suggestion box at the top position.
+`Top` - Drop-down will be placed above the text box.
  
-`Bottom` - It will place the suggestion box at the bottom position and also it is the default value.
+`Bottom` - Drop-down will be placed below the text box.
 
-`Auto` - It will be placed based on the `ComboBox` position. When the combo box is at the top, then the suggestion box will change to bottom and vice versa.
+`Auto` - Drop-down will be placed based on the available space either top or bottom of the text box.
+
+`None` -  Drop-down will not be shown with the filtered items. 
 
 {% tabs %}
 

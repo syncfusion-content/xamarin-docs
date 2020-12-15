@@ -71,14 +71,14 @@ The TextChanged event will trigger in the Rich Text Editor for every text change
 {% endhighlight %}
 
 {% highlight C# %} 
-			SfRichTextEditor richtexteditor = new SfRichTextEditor();
-			richtexteditor.TextChanged += Richtexteditor_TextChanged;
-			this.Content = richtexteditor;
+SfRichTextEditor richtexteditor = new SfRichTextEditor();
+richtexteditor.TextChanged += Richtexteditor_TextChanged;
+this.Content = richtexteditor;
 			
-			private void Richtexteditor_TextChanged(object sender, Syncfusion.XForms.RichTextEditor.TextChangedEventArgs e)
-			{
-				string text = e.Text;
-			}
+private void Richtexteditor_TextChanged(object sender, Syncfusion.XForms.RichTextEditor.TextChangedEventArgs e)
+{
+	string text = e.Text;
+}
 {% endhighlight %}
 
 {% endtabs %}
@@ -96,14 +96,14 @@ The FormatChanged event will trigger in the Rich Text Editor if any format chang
 {% endhighlight %}
 
 {% highlight C# %} 
-            SfRichTextEditor richtexteditor = new SfRichTextEditor();
-            richtexteditor.FormatChanged += Richtexteditor_FormatChanged;
-            this.Content = richtexteditor;
+SfRichTextEditor richtexteditor = new SfRichTextEditor();
+richtexteditor.FormatChanged += Richtexteditor_FormatChanged;
+this.Content = richtexteditor;
 			
-			private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs e)
-			{
-				bool isBold = e.bold;
-			}
+private void Richtexteditor_FormatChanged(object sender, FormatChangedEventArgs e)
+{
+	bool isBold = e.bold;
+}
 
 {% endhighlight %}
 

@@ -381,3 +381,65 @@ namespace GettingStarted
 
 {% endhighlight %}
 {% endtabs %} 
+
+## Customize height of the typing indictor view area
+ 
+The SfChat allows to customizing the height of the typing indictor view area by using SfChat.TypingIndicatorViewHeight property.To hide the typing indicator view area by setting SfChat.TypingIndicatorViewHeight property value as 0.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App7"                   
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             x:Class="App7.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:GettingStartedViewModel x:Name="viewModel"/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+
+        <sfChat:SfChat x:Name="sfChat"
+                       TypingIndicatorViewHeight="0"
+                       ShowOutgoingMessageAvatar="True" 
+                       Messages="{Binding Messages}"
+                       CurrentUser="{Binding CurrentUser}" >
+        </sfChat:SfChat>
+        
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.XForms.Chat;
+using Xamarin.Forms;
+
+namespace App7
+{
+    public partial class MainPage : ContentPage
+    {
+        SfChat sfChat;
+        GettingStartedViewModel viewModel;
+        public MainPage()
+        {
+            InitializeComponent();
+            sfChat = new SfChat();
+            viewModel = new GettingStartedViewModel();
+            sfChat.TypingIndicatorViewHeight = 0;
+            sfChat.ShowOutgoingMessageAvatar = true;
+            sfChat.Messages = viewModel.Messages;
+            sfChat.CurrentUser = viewModel.CurrentUser;
+            this.Content = sfChat;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %} 
+
+Executing the above codes renders the following output in Android devices.
+
+![Customize height of the typing indictor view area](SfChat_images/Hidden_TypingIndicatorViewArea.jpg)
+

@@ -218,3 +218,9 @@ When this property is set to true, content of the masked edit will be in selecte
 {% endtabs %}
 
 ![Clear button visibility support in Xamarin.Forms masked edit](SfMaskedEditImages/SelectOnFocus.png)
+
+## Restrict editing
+
+You can restict the editing of the masked entry using the `IsReadOnly` property.
+
+When this property is set to true, content of the masked entry cannot be modified and it is read only.

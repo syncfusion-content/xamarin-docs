@@ -207,6 +207,12 @@ this.Content = numericTextBox;
 {% endtabs %}
 
 ![Xamarin.Forms Numeric TextBox with value](images/value.png)
+
+## Restrict editing
+
+You can restict the editing of the numeric entry using the `IsReadOnly` property.
+
+When this property is set to true, content of the numeric entry cannot be modified and it is read only.
 	
 ## Visual states
 

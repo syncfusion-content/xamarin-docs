@@ -163,7 +163,7 @@ pdfViewer.AnnotationSettings.FreeTextAnnotationSettings.TextSize = 4;
 
 ### Setting the default background-color
 
-You can set the background color for the free text annotations using the `SfPdfViewer.AnnotationSettings.FreeText.FillColor` property. The default value is set to `Transparent`.
+You can set the background color for the free text annotations using the `SfPdfViewer.AnnotationSettings.FreeText.FillColor` property. The default value is set to `Color.Transparent`.
 
 {% tabs %}
 {% highlight c# %}

@@ -406,6 +406,30 @@ Refer the below code snippet to customize the width of the grid cells and header
 
 {% endhighlight %}
 
+## Customize border of a particular cell
+
+SfDataGrid allows you to customize the border color and border thickness of a particular cell using the [QueryCellStyleEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html). This event will be fired for each cell. Using the `Style.BorderColor` and `Style.BorderThickness` properties through the [QueryCellStyleEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryCellStyleEventArgs.html) in its `EventHandler` you can customize borders of an individual cell.
+
+{% highlight c# %}
+this.dataGrid.QueryCellStyle += DataGrid_QueryCellStyle;
+private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
+{
+    if (e.ColumnIndex == 1 && e.RowIndex == 1)
+    {
+        e.Style.BorderColor = Color.Red;
+        e.Style.BorderThickness = new Thickness(10);
+    }
+    else if (e.ColumnIndex == 3 && e.RowIndex == 5)
+    {
+        e.Style.BorderColor = Color.Blue;
+        e.Style.BorderThickness = new Thickness(0, 10, 0, 10);
+    }
+    e.Handled = true;
+}
+{% endhighlight %}
+
+![DataGrid with border customized](SfDataGrid_images/BorderCustomization.png)
+
 ## See also
 
 [How to apply the row background color when mouse hover on SfDataGrid in UWP](https://www.syncfusion.com/kb/11230)

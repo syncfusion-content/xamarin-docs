@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Styles | SfPopupLayout |Xamarin | Syncfusion
-description: Style customization options available in Xamarin.Forms PopupLayout.
+description: Apply styles for all the elements in Xamarin.Forms PopupLayout(SfPopupLayout). Customize the Border, Popup Header and  Footer in the PopupLayout.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Styles
+# Styling in Xamarin.Forms Popup(SfPopupLayout)
 
 The SfPopupLayout applies style to all of its elements by using the [SfPopupLayout.PopupView.PopupStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupView.html#Syncfusion_XForms_PopupLayout_PopupView_PopupStyle) property.
 
@@ -276,3 +276,84 @@ Refer to the following code example for customizing the overlay opacity and the 
 Executing the above codes renders the following output in Android devices.
 
 ![Popup with overlay customization](PopupLayout_images/PopupView_Overlay.png)
+
+### Blurred background
+
+The SfPopupLayout allows to blur the background using SfPopupLayout.OverlayMode and SfPopupLayout.PopupView.PopupStyle.BlurIntensity properties, respectively.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GettingStarted.MainPage"
+             xmlns:sfPopup="clr-namespace:Syncfusion.XForms.PopupLayout;assembly=Syncfusion.SfPopupLayout.XForms">
+
+    <sfPopup:SfPopupLayout x:Name="popupLayout" OverlayMode="Blur">
+        <sfPopup:SfPopupLayout.PopupView>
+            <sfPopup:PopupView>
+                <sfPopup:PopupView.PopupStyle>
+                    <sfPopup:PopupStyle HeaderBackgroundColor="DimGray"
+                                        BlurIntensity="ExtraDark" />
+                </sfPopup:PopupView.PopupStyle>
+            </sfPopup:PopupView>
+        </sfPopup:SfPopupLayout.PopupView>
+        <sfPopup:SfPopupLayout.Content>
+            <StackLayout x:Name="layout">
+               <Image Source="Blurred_Background.png" Aspect="AspectFit" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </StackLayout>
+        </sfPopup:SfPopupLayout.Content>
+    </sfPopup:SfPopupLayout>
+
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.XForms.PopupLayout;
+using System;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        SfPopupLayout popupLayout;
+        public MainPage()
+        {
+            InitializeComponent();
+            popupLayout = new SfPopupLayout();
+            popupLayout.OverlayMode = OverlayMode.Blur;
+            popupLayout.PopupView.PopupStyle.BlurIntensity = BlurIntensity.ExtraDark;
+            popupLayout.PopupView.PopupStyle.HeaderBackgroundColor = Color.DimGray;
+            var layout = new StackLayout();
+            var image = new Image() { Source = "Blurred_Background.png", Aspect = Aspect.AspectFit, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand };
+            TapGestureRecognizer tapGestureRecognizer = new TapGestureRecognizer();
+            tapGestureRecognizer.Tapped += TapGestureRecognizer_Tapped;
+            image.GestureRecognizers.Add(tapGestureRecognizer);
+            layout.Children.Add(image);
+            Content = popupLayout;
+            popupLayout.Content = layout;
+        }
+
+        private void TapGestureRecognizer_Tapped(object sender, System.EventArgs e)
+        {
+            popupLayout.Show();
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Executing the above codes renders the following output in Android devices
+
+![Blurred background](PopupLayout_images/Blurred_Background.jpg)

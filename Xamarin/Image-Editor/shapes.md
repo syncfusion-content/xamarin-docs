@@ -109,6 +109,18 @@ You can restrict the shape resizing using the [`IsResizable`](https://help.syncf
 
 {% endhighlight %}
 
+## Restricting the shape dragging
+
+You can restrict the shape dragging using the `EnableDrag` property. By default, value of this property is true, so you can drag the selected shape anywhere on the image.
+
+When the `EnableDrag` property is disabled, shape added on the image cannot be dragged instead it can only be resized as in the following code snippet.
+
+{% highlight c# %}
+
+editor.AddShape(ShapeType.Rectangle, new PenSettings() { EnableDrag = false });
+
+{% endhighlight %}
+
 ## See also
 
 [How to add shapes to the image editor on initial loading](https://www.syncfusion.com/kb/11273/how-to-add-shapes-to-the-xamarin-forms-image-editor-on-initial-loading)

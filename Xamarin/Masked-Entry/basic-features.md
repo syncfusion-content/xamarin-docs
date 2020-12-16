@@ -193,3 +193,28 @@ maskededit.MaskType = MaskType.RegEx;
 
 Cursor position in the entry can either be obtained or updated using [`CursorPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_CursorPosition) property in masked edit.
 
+## Select on focus
+
+You can control the selection of the entire text when the masked edit control gets the focus using the `SelectAllOnFocus` property.
+When this property is set to true, content of the masked edit will be in selected state when it receives the focus.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <edit:SfMaskedEdit x:Name="maskedEdit" Value="Enter Description"  SelectAllOnFocus="False"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMaskedEdit maskedEdit = new SfMaskedEdit();
+            maskedEdit.Value = "Enter Description";
+            maskedEdit.SelectAllOnFocus = true;
+            this.Content = maskedEdit;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Clear button visibility support in Xamarin.Forms masked edit](SfMaskedEditImages/SelectOnFocus.png)

@@ -382,7 +382,7 @@ recurrenceProperties.WeekDays = WeekDays.Monday|WeekDays.Wednesday|WeekDays.Frid
 recurrenceProperties.RecurrenceCount = 10;
 recurrenceProperties.RecurrenceRule = schedule.RRuleGenerator(recurrenceProperties, meeting.From, Meeting.To);
 
-// Setting The recursive rule for an event
+// Setting the recursive rule for an event
 meeting.RecurrenceRule = recurrenceProperties.RecurrenceRule;
 
 // Creating an instance for collection of custom appointments
@@ -514,7 +514,7 @@ recurrenceAppointment.RecurrenceExceptionDates.Clear();
 #### Add exception appointment to recurrence pattern
 
 You can change any occurrence appointment which is an exception from the recurrence pattern appointment by using the `RecurrenceId` property which is used to map the exception appointment with recurrence pattern appointment and `ExceptionOccurrenceActualDate` property which is used to mention the actual pattern occurrence date of exception appointment of `ScheduleAppointment`.
-The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern `Id` of the appointment.
+The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment `Id`.
 You should add the created exception recurrence appointment to the schedule [DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_DataSource).
 {% tabs %}
 {% highlight c# %}
@@ -546,7 +546,7 @@ var exceptionAppointment = new ScheduleAppointment()
 	EndTime = new DateTime(2017, 09, 07, 14, 0, 0),
 	Subject = "Meeting",
 	Color = Color.Red,
-	// Id should be a parent appointment object
+	// Recurrence Id should be a parent appointment object Id
 	RecurrenceId = recurrenceAppointment.Id, 
 	//Actual occurrence date
 	ExceptionOccurrenceActualDate = exceptionDate
@@ -555,11 +555,10 @@ var exceptionAppointment = new ScheduleAppointment()
 {% endtabs %}
 
 >**NOTE**
-•	The `Id` should be a recurrence pattern appointment object.
-•	The `RecurrenceId` of an exception appointment and the `Id` of its pattern appointment should have the same value. 
-•   Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
-• 	The Exception recurrence appointment does not have the `RecurrenceRule`, so for an exception appointment, it will be reset to empty.
-•	`ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
+•	The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment `Id`.
+•   The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
+• 	The exception recurrence appointment does not have the `RecurrenceRule`, so for an exception appointment, it will be reset to empty.
+•	The `ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
 
 ![Recurrence Exception appointment support in schedule Xamarin Forms](PopulatingAppointments_images/exception_appointment.png)
 
@@ -588,8 +587,7 @@ scheduleAppointmentCollection.Add(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 >**NOTE**
-•	The `Id` should be a recurrence pattern appointment object.
-•   The `RecurrenceId` of an exception appointment and the `Id` of its pattern appointment should have the same value. 
+•	The exception appointment should have different `Id` with original pattern appointment `Id`.
 • 	The exception recurrence appointment does not have the `RecurrenceRule`, so for an exception appointment, it will be reset to empty.
 •	The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
 •	The `ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
@@ -743,8 +741,8 @@ var exceptionAppointment = new Meeting()
 {% endtabs %}
 
 >**NOTE**
-•	The `RecurrenceId` of exception appointment and the `Id` of its pattern appointment should have same value. 
-•	The `Id` should be a recurrence pattern appointment object.
+•	The `RecurrenceId` of changed occurrence should holds the exact recurrence pattern appointment `Id`. 
+•	The exception appointment should have different `Id` with original pattern appointment `Id`.
 •	The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
 •	The `ActualDate` should be in Universal Time Coordinates (UTC) time zone.
 
@@ -766,7 +764,7 @@ var exceptionAppointment = new Meeting()
 	To = new DateTime(2017, 09, 07, 14, 0, 0),
 	EventName = "Meeting",
 	EventColor = Color.Red,
-	RecurrenceID = recurrenceAppointment, // set the parent appointment object to recurrence Id.
+	RecurrenceID = (recurrenceAppointment as Meeting).Id, // set the parent appointment object to recurrence Id.
 	//Actual occurrence date
 	ActualDate = exceptionDate
 };
@@ -775,7 +773,8 @@ eventCollection.Add(exceptionAppointment);
 {% endtabs %}
 
 >**NOTE**
-•	The `Id` should be a recurrence pattern appointment object.
+•	The exception appointment should have different `Id` with original pattern appointment `Id`.
+•	The `RecurrenceId` should be a recurrence pattern appointment `Id`.
 •	The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
 •	The `ActualDate` should be in Universal Time Coordinates (UTC) time zone.
 

@@ -700,7 +700,7 @@ public object Id { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
-You should map this custom property `RecurrenceId` of `Meeting` with the `IdMapping` property of `ScheduleAppointmentMapping` class which is used to map the exception appointment with schedule recurrence series appointment `Meeting`.
+You should map this custom property `RecurrenceId` of `Meeting` with the `RecurrenceIdMapping` property of `ScheduleAppointmentMapping` class which is used to map the exception appointment with schedule recurrence series appointment `Meeting`.
 You should also map this custom property `ActualDate` of `Meeting` with the `ExceptionOccurrenceActualDateMapping` property of `ScheduleAppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment with schedule recurrence appointment.
 You should add the created exception recurrence appointment to the schedule `DataSource`.
 

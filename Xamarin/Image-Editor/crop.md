@@ -13,7 +13,7 @@ You can crop the desired portion of an image using the cropping tool.
 
 ## Image cropping ratio
 
-You can crop the image with various aspect ratios. The following cropping ratios are available in built-in toolbar: "`Free`, `Original`, `Square`, `Circular`, `Ellipse`, `3:1`, `1:3`, `3:2`, `2:3`, `4:3`, `3:4`, `5:4`, `4:5`, `16:9`, `9:16`".
+You can crop the image to various aspect ratios. The following cropping ratios are available in built-in toolbar: "`Free`, `Original`, `Square`, `Circular`, `Ellipse`, `3:1`, `1:3`, `3:2`, `2:3`, `4:3`, `3:4`, `5:4`, `4:5`, `16:9`, `9:16`".
 
 Cropping operation can be done in the following two ways:
 
@@ -84,9 +84,8 @@ editor.Crop();
 
 ### Circle cropping
 
-Images can be cropped in circle or elliptical format which would be perfect for using as a profile picture.
-
-Specify the `ToggleCropping` parameter as in the below code snippet.
+An image can be cropped in circle or elliptical format, which could be perfect for using it as a profile picture.
+Specify the [`ToggleCropping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ToggleCropping_Xamarin_Forms_Rectangle_System_Boolean_) parameter as shown in the below code sample.
 
 N> When an empty rect is specified in the parameter, a rounded rect will be formed covering the entire image and it will be either in circle or ellipse shape based on the image bounds.
 
@@ -142,9 +141,9 @@ editor.Crop(new Rectangle(100,100,150,200));
 
 ### Selecting the cropping ratio programmatically
 
-Programmatically you can select the desired cropping ratio by specifying its corresponding index in the built-in cropping toolbar.
+Programmatically, you can select the desired cropping ratio from the various aspect ratios available in the built-in cropping toolbar by specifying the corresponding index of the toolbar item using the [`ToggleCropping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ToggleCropping_System_Boolean_System_Int32_) method.
 
-The following code snippet will add the cropping preview on the image in square shape.
+The following code sample will add the cropping preview on the image in square shape.
 
 {% tabs %}
 

@@ -195,7 +195,7 @@ Cursor position in the entry can either be obtained or updated using [`CursorPos
 
 ## Select text on focus
 
-You can control the selection of masked edit [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) when the control gets its focus using the `SelectAllOnFocus` property.
+You can control the selection of masked edit [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) when the control gets its focus using the [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_SelectAllOnFocus) property.
 
 {% tabs %}
 
@@ -220,4 +220,4 @@ You can control the selection of masked edit [`Value`](https://help.syncfusion.c
 
 ## Restrict editing
 
-You can restict the dynamic editing of the masked entry using the `IsReadOnly` property. But you can change the control text programmatically by using the bindable [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property of the masked edit.
+You can restict the dynamic editing of the masked entry using the [`IsReadOnly`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_IsReadOnly) property. But, you can change the control text programmatically by using the bindable [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property of the masked edit.

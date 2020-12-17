@@ -200,14 +200,14 @@ N> [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
 {% highlight xaml %}
  
-   <numeric:SfNumericTextBox Value="100" FormatString="n" GroupSeparatorMode="Always" EnableGroupSeparator="True"/>
+   <numeric:SfNumericTextBox Value="123456" FormatString="n" GroupSeparatorMode="Always" EnableGroupSeparator="True"/>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
       SfNumericTextBox numericTextBox = new SfNumericTextBox();
-            numericTextBox.Value = 100;
+            numericTextBox.Value = 123456;
             numericTextBox.FormatString = "n";
             numericTextBox.GroupSeparatorMode = GroupSeparatorMode.Always;
             numericTextBox.EnableGroupSeparator = true;

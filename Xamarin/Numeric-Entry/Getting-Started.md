@@ -210,9 +210,7 @@ this.Content = numericTextBox;
 
 ## Restrict editing
 
-You can restict the editing of the numeric entry using the `IsReadOnly` property.
-
-When this property is set to true, content of the numeric entry cannot be modified and it is read only.
+You can restict the dynamic editing of the numeric entry using the `IsReadOnly` property. But you can change the control text programmatically by using the bindable  [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Value) property of the numeric entry.
 	
 ## Visual states
 

@@ -41,6 +41,7 @@ The `TextSettings` property consists of the following properties:
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_Opacity): Changes the opacity of text.
 * [`Angle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_Angle): Changes the angle of text.
 * [`TextEffects`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.TextSettings.html#Syncfusion_SfImageEditor_XForms_TextSettings_TextEffects): Changes the effects of the text such as `Bold`, `Italic` and `Underline`.
+* `EnableDrag` - Controls the dragging of selected shape over the image.
 
 
 {% tabs %}

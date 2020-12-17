@@ -142,7 +142,7 @@ editor.Crop(new Rectangle(100,100,150,200));
 
 ### Selecting the cropping ratio programmatically
 
-Programmatically you can select the desired cropping ratio by specifying its corresponding index in the toolbar.
+Programmatically you can select the desired cropping ratio by specifying its corresponding index in the built-in cropping toolbar.
 
 The following code snippet will add the cropping preview on the image in square shape.
 

@@ -98,6 +98,7 @@ public class ViewModel : INotifyPropertyChanged
     private void MessageTapped(object args)
     {
           var MessageTappedArgs = args as MessageTappedEventArgs;
+          App.Current.MainPage.DisplayAlert("Message", "Tapped on Message :" + MessageTappedArgs.Message.Author.Name, "Ok");
     }
 }
 {% endhighlight %}
@@ -192,6 +193,7 @@ public class ViewModel : INotifyPropertyChanged
     private void MessageDoubleTapped(object args)
     {
         var MessageDoubleTappedArgs = args as MessageDoubleTappedEventArgs;
+        App.Current.MainPage.DisplayAlert("Message", "DoubleTapped on Message :" + MessageDoubleTappedArgs.Message.Author.Name, "Ok");
     }
 }
 {% endhighlight %}
@@ -287,6 +289,7 @@ public class ViewModel : INotifyPropertyChanged
     private void MessageLongPressed(object args)
     {
         var MessageLongPressedArgs = args as MessageLongPressedEventArgs;
+        App.Current.MainPage.DisplayAlert("Message", "LongPressed on Message :" + MessageLongPressedArgs.Message.Author.Name, "Ok");
     }
 }
 {% endhighlight %}

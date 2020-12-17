@@ -546,7 +546,7 @@ var exceptionAppointment = new ScheduleAppointment()
 	Subject = "Meeting",
 	Color = Color.Red,
 	// Id should be a parent appointment object
-	RecurrenceId = 1, 
+	RecurrenceId = recurrenceAppointment.Id, 
 	//Actual occurrence date
 	ExceptionOccurrenceActualDate = exceptionDate
 };
@@ -554,7 +554,7 @@ var exceptionAppointment = new ScheduleAppointment()
 {% endtabs %}
 
 >**NOTE**
-•	`Id` should be a recurrence pattern appointment object.
+•	The `Id` should be a recurrence pattern appointment object.
 •	The `RecurrenceId` of an exception appointment and the `Id` of its pattern appointment should have the same value. 
 •   Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
 • 	The Exception recurrence appointment does not have the `RecurrenceRule`, so for an exception appointment, it will be reset to empty.
@@ -587,11 +587,11 @@ scheduleAppointmentCollection.Add(exceptionAppointment);
 {% endhighlight %}
 {% endtabs %}
 >**NOTE**
-•	`Id` should be a recurrence pattern appointment object.
-•    The `RecurrenceId` of an exception appointment and the `Id` of its pattern appointment should have the same value. 
-• The Exception recurrence appointment does not have the `RecurrenceRule`, so for an exception appointment, it will be reset to empty.
-•	Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
-•	`ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
+•	The `Id` should be a recurrence pattern appointment object.
+•   The `RecurrenceId` of an exception appointment and the `Id` of its pattern appointment should have the same value. 
+• 	The exception recurrence appointment does not have the `RecurrenceRule`, so for an exception appointment, it will be reset to empty.
+•	The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
+•	The `ExceptionOccurrenceActualDate` should be in Universal Time Coordinates (UTC) time zone.
 
 #### Remove exception appointment from recurrence pattern
 You can directly remove the added exception appointment for recurrence pattern by removing it from schedule `DataSource`.
@@ -690,13 +690,14 @@ recurrenceAppointment.RecurrenceExceptionDates.Clear();
 
 #### Add exception appointment to recurrence pattern
 You can change any occurrence appointment which is exception from the recurrence pattern appointment by using the [RecurrenceIdMapping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html#Syncfusion_SfSchedule_XForms_ScheduleAppointmentMapping_RecurrenceIdMapping) property of `ScheduleAppointmentMapping` class which is used to map the custom exception appointment with schedule recurrence series appointment and [ExceptionOccurrenceActualDateMapping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html#Syncfusion_SfSchedule_XForms_ScheduleAppointmentMapping_ExceptionOccurrenceActualDateMapping) property of `ScheduleAppointmentMapping` class which is used to mention the actual series occurrence date of exception appointment of schedule recurrence appointment.
- The `RecurrenceId` of changed occurrence should holds the exact `Id` recurrence pattern appointment.
+The `RecurrenceId` of changed occurrence should holds the exact `Id` recurrence pattern appointment.
 For adding custom exception appointment to the recurrence series, add the `ActualDate` and `RecurrenceID` properties to custom class `Meeting`.
 
 {% tabs %}
 {% highlight c# %}
 public DateTime ActualDate { get; set; }
 public object RecurrenceId { get; set; }
+public object Id { get; set; }
 {% endhighlight %}
 {% endtabs %}
 
@@ -773,9 +774,9 @@ eventCollection.Add(exceptionAppointment);
 {% endtabs %}
 
 >**NOTE**
-•	`Id` should be a recurrence pattern appointment object.
-•	Exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
-•	`ActualDate` should be in Universal Time Coordinates (UTC) time zone.
+•	The `Id` should be a recurrence pattern appointment object.
+•	The exception appointment should be a normal appointment and should not be created as recurring appointment, since its occurrence from recurrence pattern.
+•	The `ActualDate` should be in Universal Time Coordinates (UTC) time zone.
 
 
 #### Remove exception appointment from recurrence pattern

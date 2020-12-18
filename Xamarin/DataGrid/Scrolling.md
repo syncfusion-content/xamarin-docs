@@ -248,7 +248,7 @@ private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
 
 ## Retain scroll position
 
-To retain the scroll position when `ItemsSource` changes set the `DataGrid.CanMaintainScrollPosition` to true. If you set `DataGrid.CanMaintainScrollPosition` to true then on changing `ItemsSource` the newly added `ItemsSource` will be loaded with the previous ItemsSource's `ScrollOffset`.
+To retain the scroll position when [ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ItemsSource) changes set the [SfDataGrid.CanMaintainScrollPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_CanMaintainScrollPosition) to true. If you set [SfDataGrid.CanMaintainScrollPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_CanMaintainScrollPosition) to true then on changing `ItemsSource` the newly added `ItemsSource` will be loaded with the previous ItemsSource's [ScrollOffset](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.VisibleLineInfo.html#Syncfusion_GridCommon_ScrollAxis_VisibleLineInfo_ScrollOffset).
 
 {% highlight C# %}
 dataGrid.CanMaintainScrollPosition = true;

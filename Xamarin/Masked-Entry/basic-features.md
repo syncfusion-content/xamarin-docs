@@ -193,3 +193,31 @@ maskededit.MaskType = MaskType.RegEx;
 
 Cursor position in the entry can either be obtained or updated using [`CursorPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_CursorPosition) property in masked edit.
 
+## Select text on focus
+
+You can control the selection of masked edit [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) when the control gets its focus using the [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_SelectAllOnFocus) property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <edit:SfMaskedEdit x:Name="maskedEdit" Value="Enter Description"  SelectAllOnFocus="True"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfMaskedEdit maskedEdit = new SfMaskedEdit();
+            maskedEdit.Value = "Enter Description";
+            maskedEdit.SelectAllOnFocus = true;
+            this.Content = maskedEdit;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Clear button visibility support in Xamarin.Forms masked edit](SfMaskedEditImages/SelectOnFocus.png)
+
+## Restrict editing
+
+You can restrict the dynamic editing of the masked entry using the [`IsReadOnly`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_IsReadOnly) property. But, you can change the control text programmatically by using the bindable [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property of the masked edit.

@@ -12,7 +12,7 @@ documentation: ug
 The SfChat control allows to bind any existing collection of data objects as message collection using the [SfChat.ItemSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ItemsSource) and [SfChat.ItemsSourceConverter](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ItemsSourceConverter) property as follows.
 First, bind the existing collection of data objects to the `SfChat.ItemsSource` property. Next, create a class derived from `IChatMessageConverter` interface and set it to the `SfChat.ItemsSourceConverter` property as shown below. The `IChatMessageConverter` interface provides the methods `ConvertToChatMessage` and `ConvertToData` to convert an item of an existing collection to a chat message and to convert a chat message to an item of the existing data collection respectively. Similarly these two methods `ConvertToChatMessage` and `ConvertToData` will be fired whenever a new item is added/removed/replaced in the existing data collection or in the chat message collection respectively.
 
-Implentation of a custom message converter class with conversion logics to convert from data to message and vice versa.
+Implementation of a custom message converter class with conversion logics to convert from data to message and vice versa.
 {% tabs %}
 {% highlight c# %}
 

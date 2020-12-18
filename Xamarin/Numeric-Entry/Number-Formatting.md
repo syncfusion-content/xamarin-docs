@@ -189,6 +189,36 @@ this.Content = numericTextBox;
 
 ![Display the value with enable group separator](images/enablegroupseparator.png)
 
+## Group separator modes
+
+[`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_GroupSeparatorMode) provides 2 states to display the group separator. 
+When the mode is set as `Always`, it will display separator while typing itself on the other hand when the mode is set as `LostFocus` it will enable the separator when the control lost its focus.
+
+N> [`EnableGroupSeparator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_EnableGroupSeparator) property must be enabled to use the [`GroupSeparatorMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_GroupSeparatorMode).
+
+{% tabs %}
+
+{% highlight xaml %}
+ 
+   <numeric:SfNumericTextBox Value="123456" FormatString="n" GroupSeparatorMode="Always" EnableGroupSeparator="True"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+      SfNumericTextBox numericTextBox = new SfNumericTextBox();
+            numericTextBox.Value = 123456;
+            numericTextBox.FormatString = "n";
+            numericTextBox.GroupSeparatorMode = GroupSeparatorMode.Always;
+            numericTextBox.EnableGroupSeparator = true;
+            this.Content = numericTextBox;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Display the value with enable group separator](images/SeparatorMode.png)
+
 ## See also
 
 [How to truncate the trailing zero's in SfNumericTextBox]( https://www.syncfusion.com/kb/11749/how-to-truncate-the-trailing-zeros-in-xamarin-forms-numeric-control-sfnumerictextbox)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding | SfChat | Xamarin | Syncfusion
-description:Data binding in Xamarin.Forms Chat(SfChat) using ItemsSource & ItemsSourceConverter property for using existing data collections as message collection in SfChat
+description: Data binding in Xamarin.Forms Chat(SfChat) using ItemsSource & ItemsSourceConverter property for using existing data collections as message collection in SfChat
 platform: xamarin
 control: SfChat
 documentation: ug

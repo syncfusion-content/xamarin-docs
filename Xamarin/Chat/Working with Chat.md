@@ -11,7 +11,7 @@ documentation: ug
 
 ## Message Tapped Event and Command
 
-The SfChat control comes with built-in SfChat.MessageTapped event and SfChat.MessageTappedCommand that will be fired upon tapping a message. You can get the tapped Message, and the interacted(tapped) Point via the MessageTappedEventArgs as MessageTappedEventArgs.Message and MessageTappedEventArgs.Point respectively, in both the MessageTapped event handler and action of MessageTappedCommand.
+The SfChat control comes with built-in [SfChat.MessageTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MessageTapped) event and [SfChat.MessageTappedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MessageTappedCommand) that will be fired upon tapping a message. You can get the tapped Message, and the interacted(tapped) Point via the [MessageTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageTappedEventArgs.html) as [MessageTappedEventArgs.Message](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageInteractedEventArgs.html#Syncfusion_XForms_Chat_MessageInteractedEventArgs_Message) and [MessageTappedEventArgs.Point](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageInteractedEventArgs.html#Syncfusion_XForms_Chat_MessageInteractedEventArgs_Position) respectively, in both the `MessageTapped` event handler and action of `MessageTappedCommand`.
 
 ### MessageTapped Event
 
@@ -106,7 +106,7 @@ public class ViewModel : INotifyPropertyChanged
 
 ## Message DoubleTapped Event and Command
 
-The SfChat control comes with built-in SfChat.MessageDoubleTapped event and SfChat.MessageDoubleTappedCommand that will be fired upon double tapping a message. You can get the double tapped Message, and the interacted(double tapped) Point via the MessageDoubleTappedEventArgs as MessageDoubleTappedEventArgs.Message and MessageDoubleTappedEventArgs.Point respectively, in both the MessageDoubleTapped event handler and action of MessageDoubleTappedCommand.
+The SfChat control comes with built-in [SfChat.MessageDoubleTapped](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MessageDoubleTapped) event and [SfChat.MessageDoubleTappedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MessageDoubleTappedCommand) that will be fired upon double tapping a message. You can get the double tapped Message, and the interacted(double tapped) Point via the [MessageDoubleTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageDoubleTappedEventArgs.html) as [MessageDoubleTappedEventArgs.Message](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageInteractedEventArgs.html#Syncfusion_XForms_Chat_MessageInteractedEventArgs_Message) and [MessageDoubleTappedEventArgs.Point](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageInteractedEventArgs.html#Syncfusion_XForms_Chat_MessageInteractedEventArgs_Position) respectively, in both the `MessageDoubleTapped` event handler and action of `MessageDoubleTappedCommand`.
 
 ### MessageDoubleTapped Event
 
@@ -201,7 +201,7 @@ public class ViewModel : INotifyPropertyChanged
 
 ## Message LongPressed Event and Command
 
-The SfChat control comes with built-in SfChat.MessageLongPressed event and SfChat.MessageLongPressedCommand that will be fired upon long pressing a message. You can get the long pressed Message, and the interacted(long pressed) Point via the MessageLongPressedEventArgs as MessageLongPressedEventArgs.Message and MessageLongPressedEventArgs.Point respectively, in both the MessageLongPressed event handler and action of MessageLongPressedCommand.
+The SfChat control comes with built-in [SfChat.MessageLongPressed](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MessageLongPressed) event and [SfChat.MessageLongPressedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MessageLongPressedCommand) that will be fired upon long pressing a message. You can get the long pressed Message, and the interacted(long pressed) Point via the [MessageLongPressedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageLongPressedEventArgs.html) as [MessageLongPressedEventArgs.Message](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageInteractedEventArgs.html#Syncfusion_XForms_Chat_MessageInteractedEventArgs_Message) and [MessageLongPressedEventArgs.Point](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageInteractedEventArgs.html#Syncfusion_XForms_Chat_MessageInteractedEventArgs_Position) respectively, in both the `MessageLongPressed` event handler and action of `MessageLongPressedCommand`.
 
 ### MessageLongPressed Event
 

@@ -129,9 +129,9 @@ richtexteditor.CursorPosition = 10;
 
 N> Set the CursorPosition based on the character count will not working in the Xamarin RichTextEditor iOS due to the control focus limitation.
  
-## RichTextEditor scrolls in scrollview layout
+## RichTextEditor scrolls in scroll view layout
 
-RichTextEditor relies on WebView for rendering HTML content and, as there is a limitation for placing WebView inside ScrollView control. As in MSDN, ScrollViews should not be nested with other controls that provide scrolling, like ListView and WebView. So, the scrolling is not working in SfRichTextEditor which is inside ScrollView in android. This is a known as limitation of WebView. 
+RichTextEditor relies on WebView for rendering HTML content and, as there is a limitation for placing WebView inside ScrollView control. As in MSDN (i.e, https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/scrollview#usage), ScrollViews should not be nested with other controls that provide scrolling, like ListView and WebView. So, the scrolling is not working in SfRichTextEditor which is inside ScrollView in android. This is a known as limitation of WebView. 
 https://help.syncfusion.com/xamarin/rich-text-editor/overview#limitations 
 
 To overcome this issue, you can scroll either parent layout or RichTextEditor but not both. This can be done by enabling `ScrollOrientation` property to `None` (i.e., RichTextEditor will not scroll). The default value is `Vertical` (i.e., RichTextEditor scrolls vertically). 

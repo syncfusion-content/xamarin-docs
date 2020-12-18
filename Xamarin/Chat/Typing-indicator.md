@@ -384,7 +384,7 @@ namespace GettingStarted
 
 ## Customize height of the typing indicator view area
  
-The SfChat allows customizing the height or remove the static area above the message editor, that displays the typing indicator using the SfChat.TypingIndicatorViewHeight property. To hide the typing indicator view area set SfChat.TypingIndicatorViewHeight property value as 0.
+The SfChat allows customizing the height or remove the static area above the message editor, that displays the typing indicator using the [SfChat.TypingIndicatorViewHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_TypingIndicatorViewHeight) property. To hide the typing indicator view area set [SfChat.TypingIndicatorViewHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_TypingIndicatorViewHeight) property value as 0.
 
 {% tabs %}
 {% highlight xaml %}

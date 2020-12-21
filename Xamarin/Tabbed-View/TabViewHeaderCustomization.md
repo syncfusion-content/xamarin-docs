@@ -305,7 +305,7 @@ N> The nullable support for [VisibleHeaderCount](https://help.syncfusion.com/cr/
 
 ## Add tab items at auto size
 
-When setting the `TabWidthMode` property as `BasedOnText` option, tab width gets the auto size based on the length of the tab item `Title` string.
+When setting the `TabWidthMode` property as `BasedOnText` option, tab width is calculated based on the length of the tab item `Title` string.
 
 The default option of `TabWidthMode` property is `Default`. 
 

@@ -17,11 +17,11 @@ To apply style in xaml, follow the code example:
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding OrdersInfo}" >
     <syncfusion:SfDataGrid.GridStyle>
-        <syncfusion:DefaultStyle HeaderBackgroundColor="Black" HeaderForegroundColor="White"
+        <syncfusion:DefaultStyle HeaderBackgroundColor="{Binding BackgroundColor}" HeaderForegroundColor="White"
                                  RowBackgroundColor="Black" RowForegroundColor="White"
                                  SelectionBackgroundColor="LightSkyBlue" SelectionForegroundColor="White"
                                  CaptionSummaryRowBackgroundColor="Black" CaptionSummaryRowForegroundColor="White"
-                                 GridCellBorderColor="LightGray" LoadMoreViewBackgroundColor="Gray"
+                                 GridCellBorderColor="{Binding BorderColor}" LoadMoreViewBackgroundColor="Gray"
                                  LoadMoreViewForegroundColor="Black" AlternatingRowColor="Yellow"/>
     </syncfusion:SfDataGrid.GridStyle>
 </syncfusion:SfDataGrid>
@@ -153,6 +153,68 @@ The following picture shows the grid loaded in a different style:
 
 N> Xamarin.Forms.Style which has specified target type, that will not be applied to the internal components used in the SfDataGrid.
 
+## Set datagrid style from application resources
+
+You can write custom style for the properties in `SfDataGrid.GridStyle` class using application resource. To consume the custom style, set style target type as `DataGrid`, setter property as `GridStyle` and use custom style as static resource for the setter value. By consuming custom style like this will commonly change the `GridStyle` of all the DataGrid used in the application.
+
+To apply custom style from application resources, follow the code example:
+
+{% highlight xaml %}
+<Application.Resources>
+    <ResourceDictionary>
+        <!--Global Styles-->
+        <Color x:Key="NavigationPrimary">#2196F3</Color>
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
+            <Setter Property="BarTextColor" Value="White" />
+        </Style>
+
+        <syncfusion:DefaultStyle x:Key="customStyle" 
+                                 CurrentCellBorderColor="Green" 
+                                 CaptionSummaryRowForegroundColor="BlueViolet"
+                                 AlternatingRowColor="Yellow"
+                                 SelectionBackgroundColor="LightBlue"
+                                 SelectionForegroundColor="Black"
+                                 StackedHeaderBackgroundColor="Teal"
+                                 StackedHeaderForegroundColor="White"/>
+
+        <Style TargetType="syncfusion:SfDataGrid">
+            <Setter Property="GridStyle" Value="{StaticResource customStyle}"/>
+        </Style>
+    </ResourceDictionary>
+</Application.Resources>
+{% endhighlight %}
+
+## Set datagrid style from page resources
+
+You can write custom style for the properties in `SfDataGrid.GridStyle` class using page resource and consume the custom style as static resource to the `GridStyle` property for the required DataGrid used in that page. 
+
+To apply custom style from page resources, follow the code example:
+
+{% highlight xaml %}
+<ContentPage.Resources>
+    <ResourceDictionary>
+        <syncfusion:DefaultStyle x:Key="customStyle"
+                                 CurrentCellBorderColor="Green"
+                                 CaptionSummaryRowForegroundColor="BlueViolet"
+                                 AlternatingRowColor="Yellow"
+                                 SelectionBackgroundColor="LightBlue"
+                                 SelectionForegroundColor="Black"
+                                 StackedHeaderBackgroundColor="Teal"
+                                 StackedHeaderForegroundColor="White"/>
+    </ResourceDictionary>
+</ContentPage.Resources>
+
+<ContentPage.Content>
+    <syncfusion:SfDataGrid x:Name="dataGrid1"
+                           SelectionMode="Single"
+                           AllowDraggingColumn="True"
+                           AutoGenerateColumns="False"
+                           ItemsSource="{Binding OrdersInfo}"
+                           GridStyle="{StaticResource customStyle}"/>
+</ContentPage.Content>
+{% endhighlight %}
+
 ## Applying alternate row style
 
 The SfDataGrid applies the alternative row style by setting desired color to the `AlternatingRowColor` property in `DataGrid.GridStyle` or by writing a Style class deriving from `DataGridStyle`, and assigning it to the [SfDataGrid.GridStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_GridStyle) property.
@@ -163,7 +225,7 @@ To customize the alternate row style in xaml, follow the code example:
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding OrdersInfo}" >
     <syncfusion:SfDataGrid.GridStyle>
-        <syncfusion:DefaultStyle AlternatingRowColor="Gray"/>
+        <syncfusion:DefaultStyle AlternatingRowColor="{Binding RowColor}"/>
     </syncfusion:SfDataGrid.GridStyle>
 </syncfusion:SfDataGrid>
 {% endhighlight %}
@@ -412,7 +474,7 @@ To customize the header border color in xaml, follow the code example:
 {% highlight xaml %}
 <syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding OrdersInfo}" >
     <syncfusion:SfDataGrid.GridStyle>
-        <syncfusion:DefaultStyle HeaderCellBorderColor="Red"/>
+        <syncfusion:DefaultStyle HeaderCellBorderColor="{Binding BorderColor}"/>
     </syncfusion:SfDataGrid.GridStyle>
 </syncfusion:SfDataGrid>
 {% endhighlight %}

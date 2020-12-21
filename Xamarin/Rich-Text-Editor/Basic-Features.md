@@ -128,4 +128,44 @@ richtexteditor.CursorPosition = 10;
 {% endtabs %}
 
 N> Set the CursorPosition based on the character count will not working in the Xamarin RichTextEditor iOS due to the control focus limitation.
- 
+
+## Content Height
+
+Rich Text Editor provides the support to get the height of the rendered content. The following code example explains how to get the rendered content height in the Rich Text Editor. 
+
+{% tabs %} 
+
+{% highlight C# %} 
+
+//To get height of the rendered content.
+int ContentHeight = richtexteditor.ContentHeightRequest;
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> This is a readonly property.
+
+## RichTextEditor scrolls in scroll view layout
+
+RichTextEditor relies on WebView for rendering the HTML content and, as there is a limitation for placing the WebView inside the ScrollView control. As in MSDN (i.e, https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/scrollview#usage), the ScrollViews should not be nested with other controls that provide scrolling like ListView and WebView. So, the scrolling is not working in the SfRichTextEditor, which is inside the ScrollView in Android. This is known as the limitation of WebView. 
+https://help.syncfusion.com/xamarin/rich-text-editor/overview#limitations 
+
+To overcome this issue, you can scroll either parent layout or RichTextEditor but not both. This can be done by enabling the `ScrollOrientation` property to `None` (i.e., RichTextEditor will not scroll). The default value is `Vertical` (i.e., RichTextEditor scrolls vertically). 
+
+N> It applies to android only. Since iOS and UWP do not have the limitation in a scroll view. It can scroll either in scroll layout or within the control but not both due to the WebView limitation.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+<ScrollView>
+    <StackLayout>
+        <richtexteditor:SfRichTextEditor ScrollOrientation="None" HeightRequest="500" Text="The rich text editor component is WYSIWYG editor that provides the best user experience to create and update the content." />
+        <richtexteditor:SfRichTextEditor ScrollOrientation="None" HeightRequest="500" Text="The rich text editor component allows Applies formatting such as bold, italics, and underline." />
+    </StackLayout>
+</ScrollView>
+
+{% endhighlight %}
+
+{% endtabs %}

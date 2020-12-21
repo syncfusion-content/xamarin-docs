@@ -211,7 +211,7 @@ N> The size of the `SfDataPager` is adjusted automatically based on the availabl
 
 ## Customizing button size and font size of pager buttons
 
-`SfDataPager` button will be loaded with default width and height of size 40 for mobile platforms and 35 for desktop platforms. Default button font size of `SfDataPager` is 14. You can customize the button size and button font size of `SfDataPager` by setting desired value to `SfDataPager.ButtonSize` and `SfDataPager.ButtonFontSize` properties respectively.
+`SfDataPager` button will be loaded with default width and height of size 40 for mobile platforms and 35 for desktop platforms. Default button font size of `SfDataPager` is 14. You can customize the button size and button font size of `SfDataPager` by setting desired value to [SfDataPager.ButtonSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html#Syncfusion_SfDataGrid_XForms_DataPager_SfDataPager_ButtonSize) and [SfDataPager.ButtonFontSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html#Syncfusion_SfDataGrid_XForms_DataPager_SfDataPager_ButtonFontSize) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}

@@ -1435,7 +1435,7 @@ public class CustomComboBoxRenderer : GridCellComboBoxRenderer
 
 ### Customizing drop down width
 
-To customize the drop down width of [GridComboBoxColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) set `GridComboBoxColumn.DropDownWidth` property to a desired value.
+To customize the drop down width of [GridComboBoxColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) set [GridComboBoxColumn.DropDownWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_DropDownWidth) property to a desired value.
 
 {% highlight c# %}
 GridComboBoxColumn comboBoxColumn = new GridComboBoxColumn()

@@ -77,7 +77,7 @@ public class GettingStartedViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-Now, bind the existing collection of data objects to the `SfChat.ItemsSource` property, in our case it is `MessageCollection`. 
+Now, bind the existing collection of data objects to the `SfChat.ItemsSource` property, in our case it is `viewModel.MessageCollection`. 
 
 {% tabs %}
 {% highlight xaml %}

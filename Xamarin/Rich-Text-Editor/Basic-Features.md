@@ -148,8 +148,7 @@ N> This is a readonly property.
 
 ## RichTextEditor scrolls in scroll view layout
 
-RichTextEditor relies on WebView for rendering the HTML content and, as there is a limitation for placing the WebView inside the ScrollView control. As in MSDN (i.e, https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/scrollview#usage), the ScrollViews should not be nested with other controls that provide scrolling like ListView and WebView. So, the scrolling is not working in the SfRichTextEditor, which is inside the ScrollView in Android. This is known as the limitation of WebView. 
-https://help.syncfusion.com/xamarin/rich-text-editor/overview#limitations 
+RichTextEditor relies on WebView for rendering the HTML content and, as there is a limitation for placing the WebView inside the ScrollView control. As in [MSDN](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/scrollview#usage), the ScrollViews should not be nested with other controls that provide scrolling like ListView and WebView. So, the scrolling is not working in the SfRichTextEditor, which is inside the ScrollView in Android. This is known as the [LimitationOfWebView](https://help.syncfusion.com/xamarin/rich-text-editor/overview#limitations).
 
 To overcome this issue, you can scroll either parent layout or RichTextEditor but not both. This can be done by enabling the `ScrollOrientation` property to `None` (i.e., RichTextEditor will not scroll). The default value is `Vertical` (i.e., RichTextEditor scrolls vertically). 
 

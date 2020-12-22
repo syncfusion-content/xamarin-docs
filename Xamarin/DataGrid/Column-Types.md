@@ -1435,7 +1435,23 @@ public class CustomComboBoxRenderer : GridCellComboBoxRenderer
 
 ### Customizing drop down width
 
-To customize the drop down width of [GridComboBoxColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html) set [GridComboBoxColumn.DropDownWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_DropDownWidth) property to a desired value.
+To customize the drop down width of ComboBox editor of [GridComboBoxColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html), set [GridComboBoxColumn.DropDownWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridComboBoxColumn.html#Syncfusion_SfDataGrid_XForms_GridComboBoxColumn_DropDownWidth) property to a desired value.
+
+{% tabs %}
+{% highlight xaml %}
+<sfgrid:SfDataGrid x:Name="dataGrid"                   
+                   ItemsSource="{Binding OrdersInfo}">
+    <sfgrid:SfDataGrid.Columns>
+        <sfgrid:GridComboBoxColumn BindingContext="{x:Reference viewmodel}"
+                                   MappingName="OrderID" 
+                                   DisplayMemberPath="EmployeeID" 
+                                   ValueMemberPath="OrderID"
+                                   ItemsSource="{Binding comboBoxInfo}" 
+                                   CanFilterSuggestions="True" 
+                                   DropDownWidth="100" />
+    </sfgrid:SfDataGrid.Columns>
+</sfgrid:SfDataGrid>
+{% endhighlight %}
 
 {% highlight c# %}
 GridComboBoxColumn comboBoxColumn = new GridComboBoxColumn()
@@ -1448,8 +1464,8 @@ GridComboBoxColumn comboBoxColumn = new GridComboBoxColumn()
     DropDownWidth = 100,
 };
 dataGrid.Columns.Add(comboBoxColumn);
-
 {% endhighlight %}
+{% endtabs %}
 
 ### Loading Different ItemSource for each row of GridComboBoxColumn
 

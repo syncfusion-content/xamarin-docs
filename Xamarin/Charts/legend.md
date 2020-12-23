@@ -542,27 +542,24 @@ N> The BindingContext of the template is the corresponding underlying legend ite
     ....                 
 </chart:PieSeries>
 
-<chart:SfChart.Legend>
+ <chart:SfChart.Legend>
+    <chart:ChartLegend>
+        <chart:ChartLegend.ItemTemplate>
+		
+            <DataTemplate>
+                <StackLayout Orientation="Horizontal" WidthRequest="143">
 
-    ....
-    <chart:ChartLegend.ItemTemplate>
-                    
-        <DataTemplate>
-            
-			<StackLayout Orientation="Horizontal" WidthRequest="143">
+                    <BoxView Color="{Binding IconColor}" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="13" WidthRequest="13" />
 
-                <BoxView Color="{Binding IconColor}" HorizontalOptions="Center" VerticalOptions="Center" HeightRequest="13" WidthRequest="13" />
+                    <Label FontSize="13" VerticalTextAlignment="Center" Text="{Binding DataPoint.Name}"/>
 
-                <Label FontSize="13" VerticalTextAlignment="Center" Text="{Binding DataPoint.Name}"/>
+                    <Label HorizontalTextAlignment="End" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" FontSize="13" Text="{Binding DataPoint.Value}"/>
+					
+                </StackLayout>
+            </DataTemplate>
 
-                <Label HorizontalTextAlignment="End" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand" FontSize="13" Text="{Binding DataPoint.Value}"/>
-
-            </StackLayout>
-
-        </DataTemplate>
-                    
-    </chart:ChartLegend.ItemTemplate>
-
+        </chart:ChartLegend.ItemTemplate>
+    </chart:ChartLegend>
 </chart:SfChart.Legend>
 		
 {% endhighlight %}

@@ -12,8 +12,16 @@ documentation: ug
 Suggestion box is a drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with the drop-down list in SfComboBox control.
 
 ## Suggestion box placement mode
+ 
+The drop-down that shows the filtered items will be placed automatically based on the available space and can also be customized using the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SuggestionBoxPlacement.html) property.
+ 
+`Top` - Drop-down will be placed above the text box.
+ 
+`Bottom` - Drop-down will be placed below the text box.
 
-Suggestion Box can be placed either at the top or bottom using the `SuggestionBoxPlacement` property. By default, it is placed at the bottom.
+`Auto` - Drop-down will be placed based on the available space either top or bottom of the text box.
+
+`None` -  Drop-down will not be shown with the filtered items. 
 
 {% tabs %}
 

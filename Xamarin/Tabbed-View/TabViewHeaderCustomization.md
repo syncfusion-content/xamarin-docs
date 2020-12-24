@@ -7,7 +7,7 @@ control: TabView
 documentation: ug
 ---
 
-# Tab Items
+# TabView Header Customization in Xamarin Tabbed View (SfTabView)
 
 Tab items can be configured in tab view through the `Items` property of `SfTabView`, which holds the collection of `SfTabItem` through `TabItemsCollection`.
 
@@ -302,3 +302,122 @@ namespace TabViewAutomationSample
 N> The nullable support for [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) only works when [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to `Scroll` or `DropDown`. 
 
 ![VisibleHeaderCount](images/TabItems/NullVisibleHeaderCount.jpg)
+
+## Add tab items at auto size
+
+When setting the `TabWidthMode` property as `BasedOnText` option, tab width is calculated based on the length of the tab item `Title` string.
+
+The default option of `TabWidthMode` property is `Default`. 
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:tabView="clr-namespace:Syncfusion.XForms.TabView;assembly=Syncfusion.SfTabView.XForms"
+             x:Class="TabViewAutomationSample.TabViewAutomationSample">
+    <ContentPage.Content>
+        <tabView:SfTabView BackgroundColor="White" TabWidthMode="BasedOnText">
+            <tabView:SfTabItem Title="Call">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Gray"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Favorites">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Green" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Contacts">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Blue"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+             <tabView:SfTabItem Title="Location">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Aqua"/>
+                </tabView:SfTabItem.Content>
+            <tabView:SfTabItem Title="Email">
+                <tabView:SfTabItem.Content>
+                    <Grid BackgroundColor="Olive"/>
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+            <tabView:SfTabItem Title="Alternative">
+                <tabView:SfTabItem.Content>
+                     <Grid BackgroundColor="Blue" />
+                </tabView:SfTabItem.Content>
+            </tabView:SfTabItem>
+        </tabView:SfTabView>
+    </ContentPage.Content>
+</ContentPage>
+	
+{% endhighlight %}
+
+{% highlight C# %}
+using Syncfusion.XForms.TabView;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace TabViewAutomationSample
+{
+    public partial class TabView : ContentPage
+    {
+        SfTabView tabView;
+        public TabView()
+        {
+            InitializeComponent();
+            var tabView = new SfTabView();
+            var allContactsGrid = new Grid { BackgroundColor = Color.Red };
+            var favoritesGrid = new Grid { BackgroundColor = Color.Green };
+            var contactsGrid = new Grid { BackgroundColor = Color.Blue };
+            var emailGrid = new Grid { BackgroundColor = Color.Olive };
+            tabView.TabWidthMode = TabWidthMode.BasedOnText ;
+            var tabItems = new TabItemCollection
+            {
+                new SfTabItem()
+                {
+                    Title = "Calls",
+                    Content = allContactsGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Favorites",
+                    Content = favoritesGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Contacts",
+                    Content = contactsGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Location",
+                    Content = favoritesGrid
+                },
+                new SfTabItem()
+                {
+                    Title = "Email",
+                    Content = emailGrid
+                },
+                new tabview.SfTabItem()
+                {
+                    Title = "Alternative",
+                    Content = allContactsGrid
+                }
+            };
+
+            tabView.Items = tabItems;
+            this.Content = tabView;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![TabItems](images/TabItems/IsAutoTabWidth.gif)
+
+
+N> The `TabWidthMode` for `BasedOnText` is supported only when the [VisibleHeaderCount](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_VisibleHeaderCount) is not set and [OverFlowMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_OverflowMode) is set to `Scroll`. 

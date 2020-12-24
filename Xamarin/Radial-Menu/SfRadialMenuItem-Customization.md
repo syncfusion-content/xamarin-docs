@@ -848,9 +848,11 @@ namespace RadialSample
 
 ## Command
 
+### Command for SfRadialMenu
+
 The `Command` property is used to associate a command with an instance of SfRadialMenu. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
-The following example shows how the command should be used. When you click SfRadialMenuItem, the text color of the SfRadialMenuItem and the center button will be changed to green.
+The following example shows how the command should be used. When you click [`SfRadialMenu`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenu.html) , the text color of the [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html) and the center button will be changed to green.
 
 {% tabs %}
 {% highlight xaml %}
@@ -951,3 +953,191 @@ namespace RadialMenuCommandSample
 
 {% endhighlight %}
 {% endtabs %}
+
+### Command for SfRadialMenuItem
+
+The `Command` property is used to associate a command with an instance of [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html). This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+
+When clicking the [`SfRadialMenuItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfRadialMenu.XForms.SfRadialMenuItem.html), the tapped item will be displayed. The following example shows how the command should be used.
+
+{% tabs %}
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+              xmlns:radialMenu="clr-namespace:Syncfusion.SfRadialMenu.XForms;assembly=Syncfusion.SfRadialMenu.XForms"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:RadailCommandSample"
+             mc:Ignorable="d"
+             x:Class="RadailCommandSample.MainPage">
+    <ContentPage.Content>
+        <Grid>
+            <radialMenu:SfRadialMenu x:Name="radialMenu"                              
+                             CenterButtonText="Edit"
+                             CenterButtonFontSize="15">
+                <radialMenu:SfRadialMenu.Items>
+                    <radialMenu:SfRadialMenuItem  Command="{Binding Item1Command}" CommandParameter="Bold is tapped"  Text="Bold"
+                                         FontSize="15"/>
+                    <radialMenu:SfRadialMenuItem Command="{Binding Item2Command}" CommandParameter="Copy is tapped"  Text="Copy"
+                                         FontSize="15"/>
+                    <radialMenu:SfRadialMenuItem Command="{Binding Item3Command}" CommandParameter="Paste is tapped" Text="Paste"
+                                         FontSize="15"/>
+                    <radialMenu:SfRadialMenuItem Command="{Binding Item4Command}" CommandParameter="Crop is tapped" Text="Crop"
+                                         FontSize="15"/>
+                    <radialMenu:SfRadialMenuItem Command="{Binding Item5Command}" CommandParameter="Paint is tapped" Text="Paint"
+                                         FontSize="15"/>
+                </radialMenu:SfRadialMenu.Items>
+            </radialMenu:SfRadialMenu>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c#%}
+
+using Syncfusion.SfRadialMenu.XForms;
+using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Input;
+using Xamarin.Forms;
+
+namespace RadailCommandSample
+{
+
+    [DesignTimeVisible(false)]
+    public partial class MainPage : ContentPage
+    {
+        ViewModel viewModel;
+        public MainPage()
+        {
+            InitializeComponent();
+            viewModel= new ViewModel(this);
+            SfRadialMenu radialMenu = new SfRadialMenu();
+            ObservableCollection<SfRadialMenuItem> itemCollection = new ObservableCollection<SfRadialMenuItem>();
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Bold", FontSize = 12 , Command = viewModel.Item1Command , CommandParameter = "Bold is tapped"});
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Copy", FontSize = 12 , Command =viewModel.Item2Command, CommandParameter = "Copy is tapped" });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Paste", FontSize = 12, Command = viewModel.Item3Command , CommandParameter = "Paste is tapped" });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Crop", FontSize = 12, Command = viewModel.Item4Command, CommandParameter = "Crop is tapped" });
+            itemCollection.Add(new SfRadialMenuItem() { Text = "Paint", FontSize = 12, Command = viewModel.Item5Command, CommandParameter = "Paint is tapped" });
+            radialMenu.Items = itemCollection;
+            this.Content = radialMenu;
+        }
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+Define the `Command` in the RadialMenuItem, and then populate the action in ViewModel.
+
+{% highlight c#%}
+
+using Syncfusion.SfRadialMenu.XForms;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Text;
+using System.Windows.Input;
+using Xamarin.Forms;
+
+namespace RadailCommandSample
+{
+
+     // View Model
+ public  class ViewModel : INotifyPropertyChanged
+    { 
+        private ICommand item1Command;
+        public ICommand Item1Command
+        {
+            get { return item1Command; }
+            set
+            {
+                item1Command = value;
+                OnPropertyRaised("Item1Command");
+            }
+        }
+
+        private ICommand item2Command;
+        public ICommand Item2Command
+        {
+            get { return item2Command; }
+            set
+            {
+                item2Command = value;
+                OnPropertyRaised("Item2Command");
+            }
+        }
+
+        private ICommand item3Command;
+        public ICommand Item3Command
+        {
+            get { return item3Command; }
+            set
+            {
+                item3Command = value;
+                OnPropertyRaised("Item3Command");
+            }
+        }
+
+        private ICommand item4Command;
+        public ICommand Item4Command
+        {
+            get { return item4Command; }
+            set
+            {
+                item4Command = value;
+                OnPropertyRaised("Item4Command");
+            }
+        }
+
+        private ICommand item5Command;
+        public ICommand Item5Command
+        {
+            get { return item5Command; }
+            set
+            {
+                item5Command = value;
+                OnPropertyRaised("Item5Command");
+            }
+        }
+
+        Page page;
+
+        public ViewModel(Page page)
+        {
+            this.page = page;
+            Item1Command = new Command(ButtonClicked);
+            Item2Command = new Command(ButtonClicked);
+            Item3Command = new Command(ButtonClicked);
+            Item4Command = new Command(ButtonClicked);
+            Item5Command = new Command(ButtonClicked);
+        }
+
+        private async void ButtonClicked(object sender)
+        {
+            var text = (sender as string).ToString();
+            await page.DisplayAlert("Alert", text, "OK");
+        }
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private void OnPropertyRaised(string propertyname)
+        {
+            if (PropertyChanged != null)
+            {
+                PropertyChanged(this, new PropertyChangedEventArgs(propertyname));
+            }
+
+        }
+    }
+}
+
+{% endhighlight %}
+
+N> View [sample](https://github.com/SyncfusionExamples/xamarin-sfradialmenu-examples/tree/main/Samples/CommandSample)  in GitHub

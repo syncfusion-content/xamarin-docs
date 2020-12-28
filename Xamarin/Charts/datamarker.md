@@ -349,7 +349,8 @@ The following code sample illustrates data marker symbol at default position [`T
 								   ShowMarker="True" 	
                                    MarkerType="Diamond" 	
                                    ShowLabel="False"/>	
-    </chart:ColumnSeries.DataMarker>
+        </chart:ColumnSeries.DataMarker>
+    </chart:ColumnSeries>
 </chart:SfChart.Series> 
 
 {% endhighlight %}

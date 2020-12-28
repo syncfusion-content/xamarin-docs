@@ -279,7 +279,7 @@ Executing the above codes renders the following output in Android devices.
 
 ### Blurred background
 
-The SfPopupLayout allows to blur the background using SfPopupLayout.OverlayMode and SfPopupLayout.PopupView.PopupStyle.BlurIntensity properties, respectively.
+The SfPopupLayout allows to blur the background using [SfPopupLayout.OverlayMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_OverlayMode) and [SfPopupLayout.PopupView.PopupStyle.BlurIntensity](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupStyle.html#Syncfusion_XForms_PopupLayout_PopupStyle_BlurIntensity) properties, respectively.
 
 {% tabs %}
 

@@ -740,3 +740,7 @@ You can refer [here](https://help.syncfusion.com/xamarin/datagrid/filtering#view
 ## Interaction commands in Xamarin.Forms DataGrid
 
 The SfDataGrid provides command support for all the interactions such as tap, double tap and long press to support MVVM. Refer [here](https://help.syncfusion.com/xamarin/datagrid/grid-events#commands) to know about the available interaction commands.
+
+## Binding values to grid style in MVVM
+
+SfDatagrid allows you to bind values to the properties of grid style class from view model or directly set from application resources as shown [here](https://help.syncfusion.com/xamarin/datagrid/styles#set-datagrid-style-from-application-resources).

@@ -46,6 +46,8 @@ The CustomViewSettings is defined to set the values for [`CanMaintainAspectRatio
 
 * Angle property is used to set the angle of the custom view. Using this property, you can rotate the custom view at desired angle.
 
+* [`EnableDrag`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.CustomViewSettings.html#Syncfusion_SfImageEditor_XForms_CustomViewSettings_EnableDrag) - Controls the dragging of selected view over the image.
+
 {% highlight C# %}
 
 CustomViewSettings customViewSettings = new CustomViewSettings()

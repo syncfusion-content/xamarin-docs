@@ -206,7 +206,7 @@ namespace BorderGettingStarted
 
             border.Content = label;
             mainGrid.Children.Add(border);
-            this.Content = stack;
+            this.Content = mainGrid;
         }
     }
 }

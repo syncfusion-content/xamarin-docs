@@ -442,4 +442,3 @@ namespace App7
 Executing the above codes renders the following output in Android devices.
 
 ![Customize height of the typing indictor view area](SfChat_images/Hidden_TypingIndicatorViewArea.jpg)
-

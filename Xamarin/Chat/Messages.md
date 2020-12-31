@@ -2103,15 +2103,13 @@ You can also download the entire source code of this demo [here](https://github.
 
 ## Assign unique color to each user and user message in a group chat
 
-You can assign unique color to each user and user message in a group chat by writing converter and custom control templates to OutgoingMessageAuthorView, IncomingMessageAuthorView, OutgoingMessageTextView and IncomingMessageTextView using TargetStyle.
-
-![Assign unique color to each user and user message in a group chat](SfChat_images/assign-unique-color-to-each-user-and-user-message-in-a-group-chat.png)
+You can assign unique color to each user in a group chat by writing converter and custom control templates to OutgoingMessageAuthorView and IncomingMessageAuthorViewusing TargetStyle.
 
 You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/assign-unique-color-to-each-user-name-and-message-in-a-group-chat-in-Xamarin.Forms.Chat)
 
 ## Show drop down menu on tapping a message in Xamarin.Forms.Chat (SfChat)
 
-You can show drop down menu on tapping a message in Xamarin.Forms.Chat by writing custom control template to the IncomingMessageAuthorView using TargetStyle and show drop down menu using tap gestures to the custom template.
+You can add drop down icon to the incoming messages in SfChat by writing custom control template to IncomingMessageAuthorView using TargetStyle. Using [SfPopupLayout](https://help.syncfusion.com/xamarin/popup/overview), you can display the drop down menu by adding tap gestures to drop down icon.
 
 ![Show drop down menu on tapping a message](SfChat_images/show-drop-down-menu-on-tapping-a-message.png)
 

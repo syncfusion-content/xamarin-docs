@@ -266,4 +266,4 @@ You can display attachments in left and editor in right like Facebook messenger 
 
 ![Display attachments in left and editor in right like facebook messenger](SfChat_images/display-attachments-in-left-and-editor-in-right-like-facebook-messenger.png)
 
-You can download the entire project demo of displaying attachments in left and editor in right like Facebook messenger in SfChat from GitHub [here](https://github.com/SyncfusionExamples/show-attachment-button-in-left-and-editor-in-right-like-facebook-messenger-in-Xamarin.Forms.Chat)
+You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/show-attachment-button-in-left-and-editor-in-right-like-facebook-messenger-in-Xamarin.Forms.Chat)

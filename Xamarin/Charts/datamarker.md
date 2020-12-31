@@ -332,7 +332,7 @@ chart.Series.Add(pieSeries);
 
 ## DataMarker Position
 
-The [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_DataMarkerPosition) support only in Bar type chart like [`ColumnSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html), [`BarSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BarSeries.html), [`StackingColumnSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumnSeries.html), [`StackingBarSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingBarSeries.html), [`StackingColumn100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumn100Series.html) and [`StackingBar100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingBar100Series.html). The [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_DataMarkerPosition) property is used to positioning the data marker symbol & Label at [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top), [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Center) and [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Bottom) of the segment. By default, [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_DataMarkerPosition) is [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top).
+The [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_DataMarkerPosition) support only in Bar type chart like [`ColumnSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html), [`BarSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BarSeries.html), [`StackingColumnSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumnSeries.html), [`StackingBarSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingBarSeries.html), [`StackingColumn100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumn100Series.html) and [`StackingBar100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingBar100Series.html). The [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_DataMarkerPosition) property is used to position the data marker symbol & Label at [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top), [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Center) and [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Bottom) of the segment. By default, [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_DataMarkerPosition) is [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top).
 
 The following code sample illustrates data marker symbol at default position [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top).
 
@@ -375,7 +375,7 @@ ColumnSeries series = new ColumnSeries()
 
 {% endtabs %}
 
-![DataMarkerPosition support for positioning the data markers in Xamarin.Forms Chart](datamarker_images/DataMarkerPosition_Symbol.png)
+![DataMarkerPosition support for positioning the data marker symbol at Top of the series in Xamarin.Forms Chart](datamarker_images/DataMarkerPosition_Symbol.png)
 
 The following code sample illustrates data marker label at default position [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top).
 
@@ -416,7 +416,7 @@ ColumnSeries series = new ColumnSeries()
 
 {% endtabs %}
 
-![DataMarkerPosition support for positioning the data markers in Xamarin.Forms Chart](datamarker_images/DataMarkerPosition_Top.png)
+![DataMarkerPosition support for positioning the data marker label at Top of the series in Xamarin.Forms Chart](datamarker_images/DataMarkerPosition_Top.png)
 
 The following code sample illustrates data marker label at [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Center) position.
 
@@ -457,7 +457,7 @@ ColumnSeries series = new ColumnSeries()
 
 {% endtabs %}
 
-![DataMarkerPosition support for positioning the data markers in Xamarin.Forms Chart](datamarker_images/DataMarkerPosition_Center.png)
+![DataMarkerPosition support for positioning the data marker label at center of the series in Xamarin.Forms Chart](datamarker_images/DataMarkerPosition_Center.png)
 
 The following code sample illustrates data marker label at [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Bottom) position.
 
@@ -498,7 +498,7 @@ ColumnSeries series = new ColumnSeries()
 
 {% endtabs %}
 
-![DataMarkerPosition support for positioning the data markers in Xamarin.Forms Chart](datamarker_images/DataMarkerPosition_Bottom.png)
+![DataMarkerPosition support for positioning the data marker label at bootom of the series in Xamarin.Forms Chart](datamarker_images/DataMarkerPosition_Bottom.png)
 
 ## Customizing marker shapes
 

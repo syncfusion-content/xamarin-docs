@@ -259,3 +259,11 @@ public partial class MainPage : ContentPage
 ## Attach image from gallery in Xamarin.Forms chat (SfChat)
 
 You can add the desired image in to the chat by opening the device's gallery when `AttachmentButton` is tapped. You can download the entire project demo of adding an image from gallery in to SfChat from GitHub [here](https://github.com/SyncfusionExamples/How-to-attach-image-from-gallery-in-Xamarin.Forms-chat).
+
+## Display attachments in left and editor in right like Facebook messenger
+
+You can display attachments in left and editor in right like Facebook messenger by writing custom control template to [MessageInputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageInputView.html) using TargetStyle.
+
+![Display attachments in left and editor in right like facebook messenger](SfChat_images/display-attachments-in-left-and-editor-in-right-like-facebook-messenger.png)
+
+You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/show-attachment-button-in-left-and-editor-in-right-like-facebook-messenger-in-Xamarin.Forms.Chat)

@@ -262,7 +262,7 @@ You can add the desired image in to the chat by opening the device's gallery whe
 
 ## Display attachments in left and editor in right like Facebook messenger
 
-You can display attachments in left and editor in right like Facebook messenger by writing custom control template to MessageInputView using TargetStyle.
+You can display attachments in left and editor in right like Facebook messenger by writing custom control template to [MessageInputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageInputView.html) using TargetStyle.
 
 ![Display attachments in left and editor in right like facebook messenger](SfChat_images/display-attachments-in-left-and-editor-in-right-like-facebook-messenger.png)
 

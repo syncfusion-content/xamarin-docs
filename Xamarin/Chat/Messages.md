@@ -2100,3 +2100,19 @@ public class MessageTemplateSelector : ChatMessageTemplateSelector
 ![Xamarin Forms chat message template](SfChat_images/xamarin-forms-chat-systemGenerated-custom-messageTemplate.png)
 
 You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/Chat-System-Generated-Message-Template)
+
+## Assign unique color to each user and user message in a group chat
+
+You can assign unique color to each user and user message in a group chat by writing converter and custom control templates to OutgoingMessageAuthorView, IncomingMessageAuthorView, OutgoingMessageTextView and IncomingMessageTextView using TargetStyle.
+
+![Assign unique color to each user and user message in a group chat](SfChat_images/assign-unique-color-to-each-user-and-user-message-in-a-group-chat.png)
+
+You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/assign-unique-color-to-each-user-name-and-message-in-a-group-chat-in-Xamarin.Forms.Chat)
+
+## Show drop down menu on tapping a message in Xamarin.Forms.Chat (SfChat)
+
+You can show drop down menu on tapping a message in Xamarin.Forms.Chat by writing custom control template to the IncomingMessageAuthorView using TargetStyle and show drop down menu using tap gestures to the custom template.
+
+![Show drop down menu on tapping a message](SfChat_images/show-drop-down-menu-on-tapping-a-message.png)
+
+You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/show-drop-down-menu-on-tapping-a-message-in-Xamarin.Forms.Chat)

@@ -334,49 +334,6 @@ chart.Series.Add(pieSeries);
 
 The [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_DataMarkerPosition) is supported only in Bar type chart like [`ColumnSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html), [`BarSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.BarSeries.html), [`StackingColumnSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumnSeries.html), [`StackingBarSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingBarSeries.html), [`StackingColumn100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingColumn100Series.html) and [`StackingBar100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingBar100Series.html). The [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_DataMarkerPosition) property is used to position the DataMarker symbol and label at [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top), [`Center`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Center) and [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Bottom) of the segment. By default, [`DataMarkerPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ColumnSeries.html#Syncfusion_SfChart_XForms_ColumnSeries_DataMarkerPosition) will be at the [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top).
 
-The following code sample illustrates the DataMarker symbol at default position [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top).
-
-{% tabs %} 
-
-{% highlight xaml %}
-
-<chart:SfChart.Series>
-	<chart:ColumnSeries XBindingPath="XValue" 
-                        YBindingPath="YValue"	
-                        ItemsSource="{Binding Data}">	
-		<chart:ColumnSeries.DataMarker>	
-			<chart:ChartDataMarker MarkerColor="Blue" 	
-								   ShowMarker="True" 	
-                                   MarkerType="Diamond" 	
-                                   ShowLabel="False"/>	
-        </chart:ColumnSeries.DataMarker>
-    </chart:ColumnSeries>
-</chart:SfChart.Series> 
-
-{% endhighlight %}
-
-{% highlight c# %}        
-
-ColumnSeries series = new ColumnSeries()
-{
-    XBindingPath = "XValue",
-    YBindingPath = "YValue",
-    ItemsSource = Data,
-    DataMarker = new ChartDataMarker()
-    {
-        ShowLabel = false,
-        ShowMarker = true,
-        MarkerType = DataMarkerType.Diamond,
-        MarkerColor = Color.Blue,
-    }
-};
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![DataMarkerPosition support for positioning the data marker symbol at Top of the series in Xamarin.Forms Chart](datamarker_images/DataMarkerPosition_Symbol.png)
-
 The following code sample illustrates DataMarker label at default position [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top).
 
 {% tabs %} 
@@ -499,6 +456,49 @@ ColumnSeries series = new ColumnSeries()
 {% endtabs %}
 
 ![DataMarkerPosition support for positioning the data marker label at bootom of the series in Xamarin.Forms Chart](datamarker_images/DataMarkerPosition_Bottom.png)
+
+The following code sample illustrates the DataMarker symbol at default position [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.DataMarkerPosition.html#Syncfusion_SfChart_XForms_DataMarkerPosition_Top).
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Series>
+	<chart:ColumnSeries XBindingPath="XValue" 
+                        YBindingPath="YValue"	
+                        ItemsSource="{Binding Data}">	
+		<chart:ColumnSeries.DataMarker>	
+			<chart:ChartDataMarker MarkerColor="Blue" 	
+								   ShowMarker="True" 	
+                                   MarkerType="Diamond" 	
+                                   ShowLabel="False"/>	
+        </chart:ColumnSeries.DataMarker>
+    </chart:ColumnSeries>
+</chart:SfChart.Series> 
+
+{% endhighlight %}
+
+{% highlight c# %}        
+
+ColumnSeries series = new ColumnSeries()
+{
+    XBindingPath = "XValue",
+    YBindingPath = "YValue",
+    ItemsSource = Data,
+    DataMarker = new ChartDataMarker()
+    {
+        ShowLabel = false,
+        ShowMarker = true,
+        MarkerType = DataMarkerType.Diamond,
+        MarkerColor = Color.Blue,
+    }
+};
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![DataMarkerPosition support for positioning the data marker symbol at Top of the series in Xamarin.Forms Chart](datamarker_images/DataMarkerPosition_Symbol.png)
 
 ## Customizing marker shapes
 

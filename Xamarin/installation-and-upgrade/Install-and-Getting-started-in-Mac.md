@@ -35,9 +35,7 @@ The following procedure illustrates how to install Xamarin Mac installer.
 
 ![License Confirmation](Images/license-confirmation.JPG)
 
-> Note
-
-unlock key is not required for installing the Mac installer. Syncfusion Mac installer can be used for developing purposes without registering the Unlock key.
+>N Unlock key is not required for installing the Mac installer. Syncfusion Mac installer can be used for developing purposes without registering the Unlock key.
 
 4.Destination Select windows opens. Click Continue.
 
@@ -95,9 +93,7 @@ You can then add the assembly references to the respective projects such as PCL,
 
 3.Enter the Application Name as required and click Next.
 
-> Note
-
-Make sure both Android and iOS target platforms are clicked and shared code is .NETStandard.
+>N Make sure both Android and iOS target platforms are clicked and shared code is .NETStandard.
 
 ![Application Name](Images/application-name.PNG)
 
@@ -107,9 +103,7 @@ Make sure both Android and iOS target platforms are clicked and shared code is .
 
 5.Option 1: Right click solution -> Click Manage NuGet packages.
 
-> Note
-
-You can follow the [NuGet Packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) to use the NuGet-Syncfusion Xamarin Controls/Components.
+>N You can follow the [NuGet Packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) to use the NuGet-Syncfusion Xamarin Controls/Components.
 
 
 ![Add Package](Images/addpackages.PNG)
@@ -149,9 +143,7 @@ refer [this](https://help.syncfusion.com/xamarin/autocomplete/populating-data) l
 
 We need to add Renderer for each control added in our project by adding Renderer in AppDelegate class in  iOS project
 
-> Note
-
-If you are adding the reference from toolbox, this step is not needed.
+>N If you are adding the reference from toolbox, this step is not needed.
 
 Here, Create an instance of `SfAutocompleteRenderer` in FinishedLaunching overridden method of an AppDelegate class in iOS project as shown below:
 

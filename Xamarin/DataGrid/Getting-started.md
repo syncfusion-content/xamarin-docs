@@ -124,7 +124,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### macOS
 
-To launch the SfDataGrid in macOS, call the `SfDataGridRenderer.Init()` method in the `DidFinishLaunching` override method of the AppDelegate class after the Xamarin.Forms framework initialization and before the LoadApplication method is called as demonstrated in the following code sample:
+To launch the SfDataGrid in macOS, call the `SfDataGridRenderer.Init()` method in the `DidFinishLaunching` override method of the AppDelegate class after the Xamarin.Forms framework and LoadApplication initialization as demonstrated in the following code sample:
 
 {% highlight C# %} 
 
@@ -132,8 +132,8 @@ public override void DidFinishLaunching(NSNotification notification)
 { 
     … 
     Forms.Init();
-    Syncfusion.SfDataGrid.XForms.MacOS.SfDataGridRenderer.Init();
     LoadApplication(new App());          
+    Syncfusion.SfDataGrid.XForms.MacOS.SfDataGridRenderer.Init();
     …
 }
 

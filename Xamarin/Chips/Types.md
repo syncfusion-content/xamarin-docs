@@ -9,20 +9,278 @@ documentation: ug
 
 # Set the type for chip group
 
-The functionality of chips control differ based on its `Type` property.No operation can be performed in a chip group unless the Type property is set. The chips control provides four different types, and each has its own functionality. The types are,
+The functionality of chips control differ based on its `Type`(https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property.No operation can be performed in a chip group unless the `Type`(https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property is set. The chips control provides four different types, and each has its own functionality. The types are,
 
-* Action
-* Choice
-* Filter 
 * Input
+* Choice
+* Filter
+* Action
+
+N> Default [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) is `Input`.
+
+N> Chips are arranged in [ChipLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipLayout) which is type of [layout](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/controls/layouts#layouts-with-multiple-children). StackLayout with horizontal orientation is a default type of [ChipLayout](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipLayout).
 
 ## Input
 
-Arranges the chips in a layout and enables the close button for each chip. Using the close button, a chip can be removed from children and layout as well. It additionally has support to add an optional `InputView` at the end of the layout, from which users can obtain the chip text for creating a chip at run time.
+Arranges the chips in a layout and enables the close button for each chip. Using the close button, a chip can be removed from children and layout as well. It additionally has support to add an optional [`InputView`](https://help.syncfusion.com/xamarin/chips/customization#inputview) at the end of the layout, from which users can obtain the chip text for creating a chip at run time.
+
+N> The [`InputView`](https://help.syncfusion.com/xamarin/chips/customization#inputview) is visible only in Input type.
+
+The following code illustrates how to get input type chip.
+
+{% highlight xaml %}
+<buttons:SfChipGroup 
+		VerticalOptions="Center" 
+		x:Name="inputChipGroup" ChipImageWidth="35" 
+		ItemsSource="{Binding InputItems,Mode=TwoWay}"
+		DisplayMemberPath="PersonName" 
+		ImageMemberPath="PersonImage" 
+		ShowIcon="True"
+		Type="Input" 
+		ChipPadding="8,8,0,0">
+		<buttons:SfChipGroup.InputView>
+			<Entry x:Name="entry"
+			VerticalOptions="Center" HeightRequest="40"
+			FontSize="15" 
+			WidthRequest="110" 
+			Completed="Entry_Completed"
+			Margin="10,10,0,0">
+			</Entry>
+		</buttons:SfChipGroup.InputView>
+		<buttons:SfChipGroup.ChipLayout>
+			<FlexLayout 
+			HorizontalOptions="Start" 
+			VerticalOptions="Center" 
+			Direction="Row" 
+			Wrap="Wrap" 
+			JustifyContent="Start" 
+			AlignContent="Start" 
+			AlignItems="Start"/>
+	</buttons:SfChipGroup.ChipLayout>
+</buttons:SfChipGroup>
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+[MainPage.cs]
+...
+private void Entry_Completed(object sender, EventArgs e)
+{
+	var viewModel = this.BindingContext as ViewModel;
+	var image = random.Next(1,20);
+	var name = (sender as InputView).Text;
+	viewModel.InputItems.Add(new Model() {PersonName=name, PersonImage=Images[image]});
+	entry.Text = "";
+}
+..
+
+[ViewModel]
+
+public class ViewModel
+{
+	public ViewModel()
+	{
+		InputItems = new ObservableCollection<Model>();
+		InputItems.Add(new Model() { PersonName = "John", PersonImage = ImageSource.FromResource("ChipType_Sample.Image21.png") });
+		InputItems.Add(new Model() {PersonName="Rose", PersonImage = ImageSource.FromResource("ChipType_Sample.Image22.png") });
+		InputItems.Add(new Model() {PersonName="Michael", PersonImage = ImageSource.FromResource("ChipType_Sample.Image23.png") });
+
+	}
+	public ObservableCollection<Model> InputItems
+	{
+		get;set;
+	}
+}
+
+[Model]
+
+public class Model:INotifyPropertyChanged
+{
+	private string personName;
+	public string PersonName
+	{
+		get { return personName; }
+		set { personName = value; OnPropertyChanged("PersonName"); }
+	}
+
+	private ImageSource personImage;
+	public ImageSource PersonImage
+	{
+		get { return personImage; }
+		set { personImage = value; OnPropertyChanged("PersonImage"); }
+	}
+	
+	public event PropertyChangedEventHandler PropertyChanged;
+	protected void OnPropertyChanged(string propertyName)
+	{
+		if (PropertyChanged != null)
+		{
+			PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+		}
+	}
+}
+
+{% endhighlight %}
+
+![Input type in Xamarin.Forms SfChipGroup](images/items/Input.gif)
+
+Download the complete sample [here](https://github.com/SyncfusionExamples/How-to-create-input-typed-chip-example-in-Xamarin.Forms).
 
 ## Choice
 
-Allows users to select a single chip from a group of items. Selecting a chip will automatically deselect the previously selected chips. The selected chip color can be customized using the `SelectedChipBackgroundColor` and `SelectedChipTextColor` properties. The `SelectedItem` property holds the instance of recently selected chip.
+Allows users to select a single chip from a group of items. Selecting a chip will automatically deselect the previously selected chips. The selected chip color can be customized using the [`SelectedChipBackgroundColor`](https://help.syncfusion.com/xamarin/chips/customization#selectedchipbackgroundcolor) and [`SelectedChipTextColor`](https://help.syncfusion.com/xamarin/chips/customization#selectedchiptextcolor) properties. The `SelectedItem` property holds the instance of recently selected chip.
+
+This selection changes are notified by using [SelectionChanging](https://help.syncfusion.com/xamarin/chips/events#selectionchanging-event) and [SelectionChanged](https://help.syncfusion.com/xamarin/chips/events#selectionchanged-event) events.
+
+You can customize the chip view using [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ItemTemplate) of SfChipGroup.
+
+The following code illustrates how to get choice typed chipgroup.
+
+{% highlight xaml %}
+<buttons:SfChipGroup 
+	VerticalOptions="Center" 
+	ChipImageWidth="40" x:Name="choiceType"
+	ItemsSource="{Binding ChoiceItems,Mode=TwoWay}" 
+	ChipBackgroundColor="Transparent" 
+	SelectedChipBackgroundColor="Transparent" 
+	Type="Choice" 
+	ChipPadding="8,8,0,0">
+	<buttons:SfChipGroup.ItemTemplate>
+		<DataTemplate>
+			<StackLayout>
+				<border:SfBorder CornerRadius="20" WidthRequest="40" HeightRequest="40" BorderColor="Transparent" >
+					<Image Source="{Binding PersonImage}" Aspect="Fill" VerticalOptions="Center" HorizontalOptions="Center"/>
+				</border:SfBorder>
+				<Label Text="{ Binding PersonName}" VerticalOptions="Center" HorizontalOptions="Center"/>
+			</StackLayout>
+		</DataTemplate>
+	</buttons:SfChipGroup.ItemTemplate>
+	<buttons:SfChipGroup.ChipLayout>
+		<FlexLayout 
+						HorizontalOptions="Start" 
+						VerticalOptions="Center" 
+						Direction="Row" 
+						Wrap="Wrap" 
+						JustifyContent="Start" 
+						AlignContent="Start" 
+						AlignItems="Start"/>
+	</buttons:SfChipGroup.ChipLayout>
+</buttons:SfChipGroup>
+{% endhighlight %}
+
+{% highlight c# %}
+
+[Model]
+public class Model : INotifyPropertyChanged
+{
+	private string personName;
+	public string PersonName
+	{
+		get { return personName; }
+		set { personName = value; OnPropertyChanged("PersonName"); }
+	}
+
+	private ImageSource personImage;
+	public ImageSource PersonImage
+	{
+		get { return personImage; }
+		set { personImage = value; OnPropertyChanged("PersonImage"); }
+	}
+
+	private ObservableCollection<ImageSource> categoryImage;
+	public ObservableCollection<ImageSource> CategoryImage
+	{
+		get { return categoryImage; }
+		set { categoryImage = value;
+
+			PropertyChanged?.Invoke(this,new PropertyChangedEventArgs("CategoryImage"));
+		}
+	}
+
+	public event PropertyChangedEventHandler PropertyChanged;
+	protected void OnPropertyChanged(string propertyName)
+	{
+		if (PropertyChanged != null)
+		{
+			PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+		}
+	}
+}
+
+[ViewModel]
+
+public class ViewModel
+{
+	public ViewModel()
+	{
+		ChoiceItems = new ObservableCollection<Model>()
+		{
+			new Model()
+			{
+				PersonName = "MEN",
+				PersonImage = ImageSource.FromResource("ChipType_Sample.Mens.Image2.jpg"),
+				CategoryImage = new ObservableCollection<ImageSource>()
+				{
+					ImageSource.FromResource("ChipType_Sample.Mens.Image1.jpg"),
+					ImageSource.FromResource("ChipType_Sample.Mens.Image2.jpg"),
+					ImageSource.FromResource("ChipType_Sample.Mens.Image3.jpg"),
+					ImageSource.FromResource("ChipType_Sample.Mens.Image4.jpg")
+				}
+			},
+			new Model()
+			{
+				PersonName = "WOMEN",
+				PersonImage = ImageSource.FromResource("ChipType_Sample.Girls.Image2.png"),
+				CategoryImage = new ObservableCollection<ImageSource>()
+				{
+					ImageSource.FromResource("ChipType_Sample.Girls.Image1.png"),
+					ImageSource.FromResource("ChipType_Sample.Girls.Image2.png"),
+					ImageSource.FromResource("ChipType_Sample.Girls.Image3.png"),
+					ImageSource.FromResource("ChipType_Sample.Girls.Image4.png"),
+					ImageSource.FromResource("ChipType_Sample.Girls.Image5.png")
+				}
+			},
+			new Model()
+			{
+				PersonName = "KIDS",
+				PersonImage = ImageSource.FromResource("ChipType_Sample.Kids.download.jpg"),
+				CategoryImage=new ObservableCollection<ImageSource>
+				{
+					ImageSource.FromResource("ChipType_Sample.Kids.Kid1.jpg"),
+					ImageSource.FromResource("ChipType_Sample.Kids.Kid2.jpg"),
+					ImageSource.FromResource("ChipType_Sample.Kids.Kid3.jpg"),
+					ImageSource.FromResource("ChipType_Sample.Kids.Kid4.jpg"),
+					ImageSource.FromResource("ChipType_Sample.Kids.Kid5.jpg"),
+					ImageSource.FromResource("ChipType_Sample.Kids.Kid6.jpg")
+				}
+			},
+			new Model()
+			{
+				PersonName = "BEAUTY",
+				PersonImage = ImageSource.FromResource("ChipType_Sample.Makeup.4.jpg"),
+				CategoryImage=new ObservableCollection<ImageSource>()
+				{
+					ImageSource.FromResource("ChipType_Sample.Makeup.1.jpg"),
+					ImageSource.FromResource("ChipType_Sample.Makeup.2.jpg"),
+					ImageSource.FromResource("ChipType_Sample.Makeup.3.jpg"),
+					ImageSource.FromResource("ChipType_Sample.Makeup.4.jpg")
+				}
+			}
+		};
+	}
+	
+	public ObservableCollection<Model> ChoiceItems
+	{
+		get; set;
+	}
+}
+
+{% endhighlight %}
+![Choice typed in Xamarin.Forms SfChipGroup](images/items/Choice.gif)
+
+Download the complete sample [here](https://github.com/SyncfusionExamples/How-to-create-choice-typed-chip-in-Xamarin.Forms).
+
 
 ### ChoiceMode
 
@@ -88,125 +346,113 @@ namespace Chips
 
 ## Filter
 
-Allows users to select more than one chip in a group of chips. The selected chips are indicated by selection indicator in this type. The selection indicator can be customized using the `SelectionIndicatorColor` property. Use the `SelectedItems` property to get the list of selected chips.
+Allows users to select more than one chip in a group of chips. The selected chips are indicated by selection indicator in this type. The selection indicator can be customized using the [`SelectionIndicatorColor`](https://help.syncfusion.com/xamarin/chips/customization#selectionindicatorcolor-1)property. Use the [`SelectedItems`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_SelectedItems) property to get the list of selected chips.
+
+This selection changes are notified by using [SelectionChanging](https://help.syncfusion.com/xamarin/chips/events#selectionchanging-event) and [SelectionChanged](https://help.syncfusion.com/xamarin/chips/events#selectionchanged-event) events.
+
+The following code illustrates how to get filter typed chipgroup.
+{% highlight xaml %}
+{% endhighlight %}
+{% highlight c# %}
+{% endhighlight %}
+
+![Filter typed in Xamarin.Forms SfChipGroup](images/items/Filter.gif)
+
+Download the complete sample [here](https://github.com/SyncfusionExamples/How-to-create-filter-typed-chip-in-Xamarin.Forms).
 
 ## Action
 
-Executes the `Command` of ChipGroup and raises the Clicked event when a chip is clicked.
+Action type of SfChipGroup, executes the [`Command`](https://help.syncfusion.com/xamarin/chips/customization#command) when clicking the chip in SfChipGroup. On its [`Command`](https://help.syncfusion.com/xamarin/chips/customization#command) action, we can do our desired action.
 
-In this example, the Input chip is used to add an employee at run time. To get the employee name as input, an entry is added as `InputView`.
+[`Command`](https://help.syncfusion.com/xamarin/chips/customization#command) will execute only for Action typed SfChipGroup.
 
-{% tabs %}
+The following code illustrates how to get action typed chipgroup.
 
 {% highlight xaml %}
-
-<ContentPage
-xmlns="http://xamarin.com/schemas/2014/forms"
-xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
-xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-xmlns:local="clr-namespace:Chips"
-x:Class="Chips.GettingStarted">
-	<ContentPage.BindingContext>
-		<local:ViewModel x:Name="viewModel"/>
-	</ContentPage.BindingContext>
-	<ContentPage.Content>
-	<buttons:SfChipGroup 
-		x:Name="chipGroup" 
-		ItemsSource="{Binding Employees}"
-		ChipPadding="8,8,0,0" 
-		DisplayMemberPath="Name">
-		<buttons:SfChipGroup.ChipLayout>
-				<FlexLayout 
+<buttons:SfChipGroup 
+		VerticalOptions="Center" 
+		ChipImageWidth="60" 
+		ItemsSource="{Binding InputItems,Mode=TwoWay}" 
+		DisplayMemberPath="PersonName" 
+		ImageMemberPath="PersonImage"
+		ShowIcon="True"
+		Type="Action" Command="{Binding ActionCommand}" 
+		ChipPadding="8,8,0,0">
+	<buttons:SfChipGroup.ChipLayout>
+		<FlexLayout 
 				HorizontalOptions="Start" 
-				VerticalOptions="Center"
-				Direction="Row"
+				VerticalOptions="Center" 
+				Direction="Row" 
 				Wrap="Wrap" 
 				JustifyContent="Start" 
 				AlignContent="Start" 
 				AlignItems="Start"/>
-		</buttons:SfChipGroup.ChipLayout>
-		<buttons:SfChipGroup.InputView>
-			<Entry 
-				Margin="10,10,0,0" 
-				WidthRequest="110"
-				Completed="Entry_Completed"/>
-		</buttons:SfChipGroup.InputView>
-	</buttons:SfChipGroup>
-	</ContentPage.Content>
-</ContentPage>
-
+	</buttons:SfChipGroup.ChipLayout>
+</buttons:SfChipGroup>
 {% endhighlight %}
 
 {% highlight c# %}
-
-using Syncfusion.XForms.Buttons;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-namespace Chips
+[Model]
+public class Model:INotifyPropertyChanged
 {
-	public partial class GettingStarted: ContentPage
+	private string personName;
+	public string PersonName
 	{
-		public GettingStarted()
-		{
-			InitializeComponent();
-			Grid grid = new Grid();
-			SfChipGroup chipGroup = new SfChipGroup();
-			grid.Children.Add(chipGroup);
-			FlexLayout layout = new FlexLayout()
-			{
-				Direction = FlexDirection.Row,
-				Wrap = FlexWrap.Wrap,
-				HorizontalOptions = LayoutOptions.Start,
-				VerticalOptions = LayoutOptions.Center,
-				AlignContent = FlexAlignContent.Start,
-				JustifyContent = FlexJustify.Start,
-				AlignItems = FlexAlignItems.Start,
-			};
-			var entry= new Entry { Margin = new Thickness(10, 10, 0, 0), WidthRequest = 110 };
-			entry.Completed += Entry_Completed;
-			chipGroup.InputView = entry;
-			chipGroup.ChipLayout = layout;
-			this.BindingContext = new ViewModel();
-			chipGroup.SetBinding(SfChipGroup.ItemsSourceProperty, "Employees");
-			chipGroup.DisplayMemberPath = "Name";
-			chipGroup.ChipPadding = new Thickness(8, 8, 0, 0);
-			this.Content = grid;
-		}
+		get { return personName; }
+		set { personName = value; OnPropertyChanged("PersonName"); }
 	}
+
+	private ImageSource personImage;
+	public ImageSource PersonImage
+	{
+		get { return personImage; }
+		set { personImage = value; OnPropertyChanged("PersonImage"); }
+	}
+
+	private string personMailId;
+
+	public string PersonMailId
+	{
+		get { return personMailId; }
+		set { personMailId = value; OnPropertyChanged("PersonMailId"); }
+	}
+
+	...
 }
-{% endhighlight %}
 
-{% endtabs %}
-
-The following code example demonstrates the dynamic addition of chips into a chip group with the completed event in entry.
-
-{% highlight c# %}
-
-using Xamarin.Forms;
-using Syncfusion.XForms.Buttons;
-
-namespace Chips
+[ViewModel]
+public class ViewModel:INotifyPropertyChanged
 {
-	public partial class GettingStarted : ContentPage
-	{ 
-		public GettingStarted()
-		{
-			InitializeComponent();
-		}
-		private void Entry_Completed(object sender, System.EventArgs e)
-		{
-			Entry entry = sender as Entry;
-			if (entry != null && !string.IsNullOrEmpty(entry.Text))
-			{
-				viewModel.Employees.Add(new Person() { Name = entry.Text });
-			}
-		}
+	...
+	public event PropertyChangedEventHandler PropertyChanged;
+	...
+	public ObservableCollection<Model> InputItems
+	{
+		get; set;
+	}
+
+	public Command ActionCommand { get; set; }
+
+	private void ShowPopup(Object obj)
+	{
+	    //to your desired action
+	}
+
+	public ViewModel()
+	{
+		InputItems = new ObservableCollection<Model>();
+		InputItems.Add(new Model() { PersonName = "John", PersonImage = ImageSource.FromResource("ChipType_Sample.Image1.png"), PersonMailId = "john@emil.com" });
+		InputItems.Add(new Model() { PersonName = "Rose", PersonImage = ImageSource.FromResource("ChipType_Sample.Image2.png"), PersonMailId = "rose@emil.com" });
+		ActionCommand = new Command(ShowPopup);
 	}
 }
 
 {% endhighlight %}
 
-N> The `InputView` is visible only in Input type.
+![Action typed in Xamarin.Forms SfChipGroup](images/items/Action.gif)
+
+Download the complete sample [here](https://github.com/SyncfusionExamples/How-to-create-action-typed-chip-in-Xamarin.Forms).
+
 
 ## See also
 

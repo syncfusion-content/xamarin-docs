@@ -352,8 +352,68 @@ This selection changes are notified by using [SelectionChanging](https://help.sy
 
 The following code illustrates how to get filter typed chip group.
 {% highlight xaml %}
+<buttons:SfChipGroup 
+	Type="Filter"   
+	ItemsSource="{Binding Languages}"
+	SelectedChipBackgroundColor="Red"
+	ChipPadding="8,8,0,0" 
+	SelectionIndicatorColor="White"
+	DisplayMemberPath="Name">
+	<buttons:SfChipGroup.ChipLayout>
+		<FlexLayout 
+			HorizontalOptions="Start" 
+			VerticalOptions="Center" 
+			Direction="Row" 
+			Wrap="Wrap"
+			JustifyContent="Start"
+			AlignContent="Start" 
+			AlignItems="Start"/>
+	</buttons:SfChipGroup.ChipLayout>
+</buttons:SfChipGroup>
 {% endhighlight %}
 {% highlight c# %}
+[ViewModel]
+public class ViewModel : INotifyPropertyChanged
+{
+	private ObservableCollection<Language> languages;
+
+	...
+
+	public event PropertyChangedEventHandler PropertyChanged;
+
+	public ObservableCollection<Language> Languages
+	{
+		get
+		{
+			return languages;
+		}
+		set
+		{
+			languages = value;
+			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Languages"));
+		}
+	}
+	
+	...
+
+	public ViewModel()
+	{
+		Languages = new ObservableCollection<Language>();
+		Languages.Add(new Language() { Name = "C#" });
+		Languages.Add(new Language() { Name = "HTML" });
+		Languages.Add(new Language() { Name = "Java" });
+		Languages.Add(new Language() { Name = "JS" });
+      ...
+	}
+}
+
+[Language Model]
+
+public class Language
+{
+	public string Name { get; set; }
+}
+
 {% endhighlight %}
 
 ![Filter typed in Xamarin.Forms SfChipGroup](images/items/Filter.png)

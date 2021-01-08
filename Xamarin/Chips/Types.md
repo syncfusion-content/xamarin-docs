@@ -135,7 +135,7 @@ This selection changes are notified by using [SelectionChanging](https://help.sy
 
 You can customize the chip view using [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ItemTemplate) of SfChipGroup.
 
-The following code illustrates how to get choice typed chipgroup.
+The following code illustrates how to get choice typed chip group.
 
 {% highlight xaml %}
 <buttons:SfChipGroup 
@@ -350,13 +350,13 @@ Allows users to select more than one chip in a group of chips. The selected chip
 
 This selection changes are notified by using [SelectionChanging](https://help.syncfusion.com/xamarin/chips/events#selectionchanging-event) and [SelectionChanged](https://help.syncfusion.com/xamarin/chips/events#selectionchanged-event) events.
 
-The following code illustrates how to get filter typed chipgroup.
+The following code illustrates how to get filter typed chip group.
 {% highlight xaml %}
 {% endhighlight %}
 {% highlight c# %}
 {% endhighlight %}
 
-![Filter typed in Xamarin.Forms SfChipGroup](images/items/Filter.gif)
+![Filter typed in Xamarin.Forms SfChipGroup](images/items/Filter.png)
 
 Download the complete sample [here](https://github.com/SyncfusionExamples/How-to-create-filter-typed-chip-in-Xamarin.Forms).
 
@@ -366,7 +366,7 @@ Action type of SfChipGroup, executes the [`Command`](https://help.syncfusion.com
 
 [`Command`](https://help.syncfusion.com/xamarin/chips/customization#command) will execute only for Action typed SfChipGroup.
 
-The following code illustrates how to get action typed chipgroup.
+The following code illustrates how to get action typed chip group.
 
 {% highlight xaml %}
 <buttons:SfChipGroup 

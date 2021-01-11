@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion.Xamarin.Forms Custom view
+title: Xamarin.Forms Custom view in Shimmer control
 description: This section describes how to add custom view support using different views and ShimmerView in Essential Xamarin.Forms Shimmer control.
 platform: xamarin
 control: SfShimmer
 documentation: ug
 ---
 
-## Custom view
+# Custom view
 
 You can customize the shimmer using your own view using the [`CustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_CustomView) property of [`SfShimmer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html). The below code demonstrate how to customize the shimmer view using Xamarin.Forms framework elements by [`CustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Shimmer.SfShimmer.html#Syncfusion_XForms_Shimmer_SfShimmer_CustomView).
 

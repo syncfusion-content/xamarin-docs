@@ -132,8 +132,8 @@ public override void DidFinishLaunching(NSNotification notification)
 { 
     … 
     Forms.Init();
-    LoadApplication(new App());          
     Syncfusion.SfDataGrid.XForms.MacOS.SfDataGridRenderer.Init();
+    LoadApplication(new App());          
     …
 }
 

@@ -275,6 +275,7 @@ public class ViewModel
 }
 
 {% endhighlight %}
+
 ![Choice typed in Xamarin.Forms SfChipGroup](images/items/Choice.gif)
 
 Download the complete sample [here](https://github.com/SyncfusionExamples/How-to-create-choice-typed-chip-in-Xamarin.Forms).

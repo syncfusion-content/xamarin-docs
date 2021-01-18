@@ -498,8 +498,8 @@ To host SfListView inside the SfPullToRefresh which is used to update items in t
 
 {% tabs %}
 {% highlight Xaml %}
-<xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XFormsassembly=Syncfusion.SfListView.XForms">      
-<xmlns:pull="clr-namespace:Syncfusion.SfPullToRefresh.XFormsassembly=Syncfusion.SfPullToRefreshXForms">
+<xmlns:syncfusion="clr-namespace:Syncfusion.ListView.XForms;assembly=Syncfusion.SfListView.XForms">      
+<xmlns:pull="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms">
 {% endhighlight %}
 {% highlight c# %}
 using Syncfusion.SfPullToRefresh.XForms;

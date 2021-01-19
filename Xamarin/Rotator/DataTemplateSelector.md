@@ -7,7 +7,7 @@ control: Rotator
 documentation: ug
 ---
 
-## DataTemplateSelector
+# DataTemplateSelector
 
 SfRotator supports DataTemplateSelector which you can choose a DataTemplate based on the data object.
 

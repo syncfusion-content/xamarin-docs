@@ -24,7 +24,7 @@ SfRotator supports DataTemplateSelector which you can choose a DataTemplate base
             </DataTemplate>
             <DataTemplate x:Key="SpecificTemplate">
                 <Grid>
-                <Label Text="Not Available" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Italic" FontFamily="Calbiri"/>
+                <Label Text="Not Available" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center" FontAttributes="Italic" FontFamily="Calibri"/>
                 <Image Source="{Binding Image}" Opacity="0.5" HorizontalOptions="Center" VerticalOptions="Center"/>
                 </Grid>
             </DataTemplate>

@@ -9,6 +9,8 @@ documentation: UG
 
 # Features
 
+The PullToRefresh control supports customizing the TransitionMode, PullingThreshold, ProgressBackgroundColor, ProgressStrokeColor and more. The PullToRefresh can be customized using the following properties.
+
 ## PullableContent
 
 Gets or sets the content of the refresh view. `PullableContent` is the main view of the `SfPullToRefresh` control on which the desired items can be placed.

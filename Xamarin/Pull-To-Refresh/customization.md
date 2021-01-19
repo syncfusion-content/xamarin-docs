@@ -9,7 +9,7 @@ documentation: UG
 
 # Features
 
-The PullToRefresh view can be customized using the following properties.
+The PullToRefresh can be customized using the following properties.
 
 ## PullableContent
 

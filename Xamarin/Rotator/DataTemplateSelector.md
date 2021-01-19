@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DataTemplateSelector of Syncfusion Xamarin.Forms SfRotator
-description: How to use a DataTemplateSelctor  for Xamarin.Forms SfRotator
+description: How to use DataTemplateSelctor for Xamarin.Forms SfRotator
 platform: xamarin 
 control: Rotator 
 documentation: ug

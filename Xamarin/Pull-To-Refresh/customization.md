@@ -7,9 +7,9 @@ control: SfPullToRefresh
 documentation: UG
 ---
 
-# Features
+# Customization in Xamarin.Forms PullToRefresh (SfPullToRefresh)
 
-The PullToRefresh can be customized using the following properties.
+The PullToRefresh control supports customizing the TransitionMode, PullingThreshold, ProgressBackgroundColor, ProgressStrokeColor and more. The PullToRefresh control can be customized using the following properties.
 
 ## PullableContent
 

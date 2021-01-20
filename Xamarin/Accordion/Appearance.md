@@ -13,7 +13,7 @@ The Accordion allows customizing appearance of the Icon, and provides different 
 
 ## Header icon position 
 
-[SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the position of the header icon in accordion item by using the [HeaderIconPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_HeaderIconPosition) property. By default, the header Icon position is `End`.  
+The [SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the position of the header icon in accordion item by using the [HeaderIconPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_HeaderIconPosition) property. By default, the header Icon position is [End](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.IconPosition.html#Syncfusion_XForms_Expander_IconPosition_End).  
 
 {% tabs %}
 {% highlight xaml %}
@@ -26,7 +26,7 @@ accordion.HeaderIconPosition = Syncfusion.XForms.Expander.IconPosition.Start;
 
 ## Header background color customization
 
-[SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the background color of the expander header by using the [HeaderBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.AccordionItem.html#Syncfusion_XForms_Accordion_AccordionItem_HeaderBackgroundColor) property.
+The [SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the background color of the expander header by using the [HeaderBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.AccordionItem.html#Syncfusion_XForms_Accordion_AccordionItem_HeaderBackgroundColor) property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -62,7 +62,7 @@ public AccordionItem GenerateAccordionItem()
 
 ## Icon color customization
 
-[SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the color of the expander icon by using the [IconColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.AccordionItem.html#Syncfusion_XForms_Accordion_AccordionItem_IconColor) property. By default, `IconColor` is black.
+The [SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) allows you to customize the color of the expander icon by using the [IconColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.AccordionItem.html#Syncfusion_XForms_Accordion_AccordionItem_IconColor) property. By default, the `IconColor` is `Black`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -188,7 +188,7 @@ public AccordionItem GenerateAccordionItem()
 
 You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/Xamarin-Accordion-VisualStateManager).
 
->N When effects view is applied to the accordion by adding Visual as "Material", it is necessary to initialize the `Xamarin.Forms.FormsMaterial.Init` in iOS and Android.
+N> When effects view is applied to the accordion by adding Visual as `Material`, it is necessary to initialize the `Xamarin.Forms.FormsMaterial.Init` in iOS and Android.
 
 ## See also
 

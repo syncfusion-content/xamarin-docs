@@ -203,11 +203,11 @@ namespace GettingStarted
 
 ### Defining accordion items 
 
-`SfAccordion` is a layout control with vertically stacked list of accordion [Items](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_Items) that comprise of [Header](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.AccordionItem.html#Syncfusion_XForms_Accordion_AccordionItem_Header) and [Content](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.AccordionItem.html#Syncfusion_XForms_Accordion_AccordionItem_Content). You can load any View in Header and Content. Users can expand or collapse the Content view by tapping Header. 
+`SfAccordion` is a layout control with vertically stacked list of accordion [Items](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_Items) that comprise of [Header](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.AccordionItem.html#Syncfusion_XForms_Accordion_AccordionItem_Header) and [Content](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.AccordionItem.html#Syncfusion_XForms_Accordion_AccordionItem_Content). You can load any View in `Header` and `Content`. Users can expand or collapse the Content view by tapping `Header`. 
 
 Here, Grid is loaded in Header and Content of accordion items.
 
-N> When loading Label as direct children of Header or Content of AccordionItem, then it will lead to exception in Forms 4.0 and above version. So, load Label inside Grid to overcome the crash.
+N> When loading Label as direct children of `Header` or `Content` of `AccordionItem`, then it will lead to exception in Forms 4.0 and above version. So, load `Label` inside `Grid` to overcome the crash.
 
 {% tabs %}
 {% highlight xaml %}
@@ -397,7 +397,7 @@ N> When adding the template control inside the `StackLayout` or `Grid` with the 
 
 ## Animation duration
 
-`SfAccordion` allows you to customize the expanding and collapsing of accordion item by using the [AnimationDuration](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_AnimationDuration) property. By default, the animation duration is 250 milliseconds. 
+The `SfAccordion` allows you to customize the expanding and collapsing of accordion item by using the [AnimationDuration](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_AnimationDuration) property. By default, the animation duration is `250 milliseconds`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -410,7 +410,7 @@ N> When adding the template control inside the `StackLayout` or `Grid` with the 
 
 ## Animation easing
 
-`SfAccordion` allows you to customize the rate of change of parameter over time or animation style of accordion item by using the [AnimationEasing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_AnimationEasing) property. By default, the animation easing is `Linear`.  
+The `SfAccordion` allows you to customize the rate of change of parameter over time or animation style of accordion item by using the [AnimationEasing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_AnimationEasing) property. By default, the animation easing is `Linear`.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -423,7 +423,7 @@ N> When adding the template control inside the `StackLayout` or `Grid` with the 
 
 ## Auto scroll position
 
-`SfAccordion` allows you to customize the scroll position of the expanded accordion item by using the [AutoScrollPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_AutoScrollPosition) property. By default, the auto scroll position is `MakeVisible`.  
+The `SfAccordion` allows you to customize the scroll position of the expanded accordion item by using the [AutoScrollPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_AutoScrollPosition) property. By default, the auto scroll position is `MakeVisible`.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -436,7 +436,7 @@ N> When adding the template control inside the `StackLayout` or `Grid` with the 
 
 ## Expand mode
 
-`SfAccordion` allows you to expand single or multiple items by using the [ExpandMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_ExpandMode) property. By default, the expand mode is `Single`.  
+The `SfAccordion` allows you to expand single or multiple items by using the [ExpandMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_ExpandMode) property. By default, the expand mode is `Single`.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -449,7 +449,7 @@ N> When adding the template control inside the `StackLayout` or `Grid` with the 
 
 ## Item spacing
 
-`SfAccordion` allows you to customize the vertical spacing between the accordion items by using the [ItemSpacing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_ItemSpacing) property. The default value is `6.0d`. 
+The `SfAccordion` allows you to customize the vertical spacing between the accordion items by using the [ItemSpacing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_ItemSpacing) property. The default value is `6.0d`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -470,4 +470,4 @@ N> When adding the template control inside the `StackLayout` or `Grid` with the 
 [How to expand or collapse Accordion programmatically in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11314/)                                                                                                                                                                                                                                                                 
 [How to access a named Accordion inside a XAML DataTemplate in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11375/)                                                                                                                                                               
 [How to overcome the crash Java.Lang.NullPointerException in Xamarin.Forms Accordion (SfAccordion)](https://www.syncfusion.com/kb/11432/)                                                                                                                                                                                           
-[How to work with Accordion using C# in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11437/)                                                                                                                                                                                                                  
+[How to work with Accordion using C# in Xamarin.Forms (SfAccordion)](https://www.syncfusion.com/kb/11437/)  

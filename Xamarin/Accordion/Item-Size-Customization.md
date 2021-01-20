@@ -13,17 +13,17 @@ This section explains how to customize the item size in the SfAccordion.
 
 ## AutoFit the accordion based on content
 
-You can dynamically resize the `SfAccordion` content based on the content size using the [DynamicSizeMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.DynamicSizeMode.html) property.
+You can dynamically resize the [SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) content based on the content size using the [DynamicSizeMode](https://help.syncfusion.com/cr/cref_files/xamarin/Syncfusion.Expander.XForms~Syncfusion.XForms.Expander.DynamicSizeMode.html) property.
 
 The control contains three types of `DynamicSizeMode,` they are:
 
- * Content: Autofit the content based on the content size.
- * Header: Autofit the header based on the header content size.
- * None: The dynamic changes of header and the content of a `SfAccordion` will not be considered. It is a default value of the `DynamicSizeMode.`
+ * [Content](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.DynamicSizeMode.html#Syncfusion_XForms_Accordion_DynamicSizeMode_Content): Autofit the content based on the content size.
+ * [Header](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.DynamicSizeMode.html#Syncfusion_XForms_Accordion_DynamicSizeMode_Header): Autofit the header based on the header content size.
+ * [None](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.DynamicSizeMode.html#Syncfusion_XForms_Accordion_DynamicSizeMode_None): The dynamic changes of header and the content of a `SfAccordion` will not be considered. It is a default value of the `DynamicSizeMode`.
  
 ### DynamicSizeMode as Content
  
-The content and layout of the `SfAccordion` get re-measured when its size is updated at runtime. You can add the `Label` control to the accordion content and set the DynamicSizeMode to `Content` to change the content size dynamically.
+The content and layout of the `SfAccordion` get re-measured when its size is updated at runtime. You can add the `Label` control to the accordion content and set the `DynamicSizeMode` to `Content` to change the content size dynamically.
 
 {% tabs %}
 {% highlight xaml %}
@@ -83,7 +83,7 @@ private void Button_Clicked(object sender, EventArgs e)
 
 ### DynamicSizeMode as Header
 
-The header and layout of the `SfAccordion` get re-measured when its size is updated at runtime. You can add the `Label` control to the accordion header and set the DynamicSizeMode to `Header` to change the header size dynamically.
+The header and layout of the `SfAccordion` get re-measured when its size is updated at runtime. You can add the `Label` control to the accordion header and set the `DynamicSizeMode` to `Header` to change the header size dynamically.
 
 {% tabs %}
 {% highlight xaml %}

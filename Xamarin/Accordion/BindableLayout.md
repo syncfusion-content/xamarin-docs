@@ -9,11 +9,11 @@ documentation: ug
 
 # BindableLayout in Xamarin Accordion (SfAccordion)
 
-The [SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) allows you to set a collection of items by setting the `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties. The Accordion supports Bindable Layout in Xamarin.Forms version 3.5 and above.
+The [SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) allows you to set a collection of items by setting the `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties. The Accordion supports BindableLayout in Xamarin.Forms version 3.5 and above.
 
 ## Creating Data Model
 
-Create a simple data model to bind the data for `SfAccordion` as shown in the following code example in a new class file, and save it as ItemInfo.cs file:
+Create a simple data model to bind the data for `SfAccordion` as shown in the following code example in a new class file, and save it as `ItemInfo.cs` file:
 
 {% tabs %}
 {% highlight c# %}
@@ -25,7 +25,7 @@ public class ItemInfo
 {% endhighlight %}
 {% endtabs %}
 
-Create a model repository class with the ItemInfo collection property initialized with required number of data objects in a new class file as shown in the following code example, and save it as ItemInfoRepository.cs file.
+Create a model repository class with the ItemInfo collection property initialized with required number of data objects in a new class file as shown in the following code example, and save it as `ItemInfoRepository.cs` file.
 
 {% tabs %}
 {% highlight c# %}
@@ -45,7 +45,7 @@ public class ItemInfoRepository
 {% endhighlight %}
 {% endtabs %}
 
-Set the ViewModel instance as BindingContext of your page to bind properties of ViewModel to `SfAccordion`.
+Set the ViewModel instance as `BindingContext` of your page to bind properties of ViewModel to `SfAccordion`.
 
 {% tabs %} 
 {% highlight xaml %}
@@ -82,7 +82,7 @@ BindableLayout.SetItemsSource(Accordion, viewModel.Info);
 
 ## Defining the AccordionItem
 
-The [SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) accepts `AccordionItem` as its child element. The appearance of each `AccordionItem` can be defined by setting the `BindableLayout.ItemTemplate` property.
+The [SfAccordion](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) accepts [AccordionItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.AccordionItem.html) as its child element. The appearance of each `AccordionItem` can be defined by setting the `BindableLayout.ItemTemplate` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -135,7 +135,7 @@ You can download the entire source of this demo [here](https://github.com/Syncfu
 
 ### Get the index of expanded or collapsed accordion item.
 
-You can get the index of the interacted `AccordionItem` by using the [Collapsed](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html). It will occur after an AccordionItem is collapsed when tapping on the Header. The [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) properties provides data for the `collapsed` event.  
+You can get the index of the interacted `AccordionItem` by using the [Collapsed](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_Collapsed). It will occur after an `AccordionItem` is collapsed when tapping on the Header. The [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) properties provides data for the `Collapsed` event.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -151,7 +151,7 @@ private void Accordion_Collapsed(object sender, Syncfusion.XForms.Accordion.Expa
 {% endhighlight %}
 {% endtabs %}		
 
-Using the [Expanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) event, you can get the index of the interacted `AccordionItem.` It will occur after an AccordionItem is expanded when tapping on the Header. The [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) properties provides data for the `expanded` event.  
+Using the [Expanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_Expanded) event, you can get the index of the interacted `AccordionItem.` It will occur after an `AccordionItem` is expanded when tapping on the `Header`. The [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.ExpandedAndCollapsedEventArgs.html) properties provides data for the `Expanded` event.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -169,7 +169,7 @@ private void Accordion_Expanded(object sender, Syncfusion.XForms.Accordion.Expan
 
 ### Restricting the accordion item expanding and collapsing 
 
-The [Collapsing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) event occurs while collapsing an `AccordionItem` when tapping on the Header. You can cancel the collapsing action by using the `Cancel` property in the event args. 
+The [Collapsing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_Collapsing) event occurs while collapsing an `AccordionItem` when tapping on the `Header`. You can cancel the collapsing action by using the `Cancel` property in the event args. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -196,7 +196,7 @@ private void Accordion_Collapsing(object sender, ExpandingAndCollapsingEventArgs
 {% endhighlight %}
 {% endtabs %}
 
-The [Expanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html) event occurs while expanding an `AccordionItem` when tapping on the Header. You can cancel the expanding action by using the `Cancel` property in the event args. 
+The [Expanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Accordion.SfAccordion.html#Syncfusion_XForms_Accordion_SfAccordion_Expanding) event occurs while expanding an `AccordionItem` when tapping on the `Header`. You can cancel the expanding action by using the `Cancel` property in the event args. 
 
 {% tabs %}
 {% highlight xaml %}

@@ -303,7 +303,7 @@ The [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.
 
 N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to enable the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property. 
 
-*End image alignment in SfButton*
+*End image alignment in `SfButton`*
 
 {% tabs %}
 {% highlight xaml %}
@@ -342,7 +342,7 @@ SfButton button = new SfButton()
 
 ![SfButton with image with icon image with end alignment](images/Button_imagealignment_end.png)
 
-*Start image alignment in SfButton*
+**Start image alignment in `SfButton`**
 
 {% tabs %}
 {% highlight xaml %}
@@ -382,7 +382,7 @@ SfButton button = new SfButton()
 
 ![SfButton with image with icon image with start alignment](images/Button_imagealignment_start.png)
 
-*Top image alignment in SfButton*
+**Top image alignment in `SfButton`**
 
 {% tabs %}
 {% highlight xaml %}
@@ -422,7 +422,7 @@ SfButton button = new SfButton()
 
 ![SfButton with image with icon image with top alignment](images/Button_imagealignment_top.png)
 
-*Bottom image alignment in SfButton*
+**Bottom image alignment in `SfButton`**
 
 {% tabs %}
 {% highlight xaml %}
@@ -462,9 +462,9 @@ SfButton button = new SfButton()
 
 ![SfButton with image with icon image with top alignment](images/Button_imagealignment_bottom.png)
 
-*Left image alignment in SfButton*
+**Left image alignment in `SfButton`**
 
-With RTL flow direction, image alignment with `Start` will change its direction of placing image to right. To keep that in same `Left` position, set as per in below
+In RTL flow direction, image alignment with `Start` will change its direction of placing image to the right. To keep that in same left position, set `Left` alignment as shown in the following code sample.
 
 {% tabs %}
 {% highlight xaml %}
@@ -504,9 +504,9 @@ SfButton button = new SfButton()
 
 ![SfButton with image with icon image with left alignment](images/Button_imagealignment_left.png)
 
-*Right image alignment in SfButton*
+**Right image alignment in `SfButton`**
 
-With RTL flow direction, image alignment with `End` will change its direction of placing image to left. To keep that in same `Right` position, set as per in below
+In RTL flow direction, image alignment with `End` will change its direction of placing image to the left. To keep that in same right position, set `Right` alignment as shown in the following code sample.
 
 {% tabs %}
 {% highlight xaml %}

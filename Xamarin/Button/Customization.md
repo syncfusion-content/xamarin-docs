@@ -294,34 +294,257 @@ button.ImageWidth = 50;
 
 The [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageAlignment) property is used to customize the alignment of icon image in SfButton. The following options are available in [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageAlignment):
 
-* [`Start`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html) - Places the image at the start if any flow direction is mentioned.
-* [`End`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html) - Places the image at the end if any flow direction is mentioned.
-* [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html) - Places the image at the top of the text.
-* [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html) - Places the image at the bottom of the text.
-* [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html) - Places the image at the left of the text. 
-* [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html) - Places the image at the right of the text.
+* [`Start`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Start) - Places the image at the left most of SfButton.
+* [`End`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_End) - Places the image at the right most of SfButton.
+* [`Top`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Top) - Places the image at the top of the text.
+* [`Bottom`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Bottom) - Places the image at the bottom of the text.
+* [`Left`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Left) - Although the flow direction has been applied, it always places the image in the left part of SfButton. For example, in the direction of the RTL flow, the image setting will move to the right. Use ['Left'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion XForms Buttons Alignment Left) alignment to show this in the same left position.
+* [`Right`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion_XForms_Buttons_Alignment_Right) - Although flow direction has been applied, the image is always located in the right part of SfButton. For example, in the direction of the RTL flow, the image setting will move to the left. But use ['Right'](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.Alignment.html#Syncfusion XForms Buttons Alignment Right) alignment to show this in the same right position.
 
 N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to enable the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property. 
+
+*End image alignment in SfButton*
 
 {% tabs %}
 {% highlight xaml %}
 
-<button:SfButton x:Name="button" Text="Button" ImageSource="Heart.png" ShowIcon="True" ImageAlignment="End">
-</button:SfButton>
+   <buttons:SfButton  
+            Text="Shopping"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            ImageSource="add_to_card.png"
+            ShowIcon="True" 
+            ImageWidth="50"
+            BorderWidth="2"
+            BorderColor="Black"
+            BackgroundColor="White"
+            ImageAlignment="End"/>
 
 {% endhighlight %}
-{% highlight c# %}
 
-SfButton button = new SfButton();
-button.Text = "Button";
-button.ImageSource = "Heart.png";
-button.ShowIcon = true;
-button.ImageAlignment = Alignment.End;
+{% highlight c# %}
+SfButton button = new SfButton()
+{
+    Text = "Shopping",
+    TextColor = Color.Black,
+    HorizontalOptions = LayoutOptions.Center,
+    ImageSource = "add_to_card.png",
+    ShowIcon = true,
+    ImageWidth = 50,
+    BorderWidth = 2,
+    BorderColor = Color.Black,
+    BackgroundColor = Color.White,
+    ImageAlignment = Alignment.End
+};
 
 {% endhighlight %}
 {% endtabs %}
 
-![SfButton with image with icon image alignment](images/Button_iconalignment.png)
+![SfButton with image with icon image with end alignment](images/Button_imagealignment_end.png)
+
+*Start image alignment in SfButton*
+
+{% tabs %}
+{% highlight xaml %}
+
+      <buttons:SfButton  
+            Text="Shopping"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            ImageSource="add_to_card.png"
+            ShowIcon="True" 
+            ImageWidth="50"
+            BorderWidth="2"
+            BorderColor="Black"
+            BackgroundColor="White"
+            ImageAlignment="Start"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+SfButton button = new SfButton()
+{
+    Text = "Shopping",
+    TextColor = Color.Black,
+    HorizontalOptions = LayoutOptions.Center,
+    ImageSource = "add_to_card.png",
+    ShowIcon = true,
+    ImageWidth = 50,
+    BorderWidth = 2,
+    BorderColor = Color.Black,
+    BackgroundColor = Color.White,
+    ImageAlignment = Alignment.Start
+};
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with image with icon image with start alignment](images/Button_imagealignment_start.png)
+
+*Top image alignment in SfButton*
+
+{% tabs %}
+{% highlight xaml %}
+
+      <buttons:SfButton  
+            Text="Shopping"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            ImageSource="add_to_card.png"
+            ShowIcon="True" 
+            ImageWidth="50"
+            BorderWidth="2"
+            BorderColor="Black"
+            BackgroundColor="White"
+            ImageAlignment="Top"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+SfButton button = new SfButton()
+{
+    Text = "Shopping",
+    TextColor = Color.Black,
+    HorizontalOptions = LayoutOptions.Center,
+    ImageSource = "add_to_card.png",
+    ShowIcon = true,
+    ImageWidth = 50,
+    BorderWidth = 2,
+    BorderColor = Color.Black,
+    BackgroundColor = Color.White,
+    ImageAlignment = Alignment.Top
+};
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with image with icon image with top alignment](images/Button_imagealignment_top.png)
+
+*Bottom image alignment in SfButton*
+
+{% tabs %}
+{% highlight xaml %}
+
+      <buttons:SfButton  
+            Text="Shopping"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            ImageSource="add_to_card.png"
+            ShowIcon="True" 
+            ImageWidth="50"
+            BorderWidth="2"
+            BorderColor="Black"
+            BackgroundColor="White"
+            ImageAlignment="Bottom"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+SfButton button = new SfButton()
+{
+    Text = "Shopping",
+    TextColor = Color.Black,
+    HorizontalOptions = LayoutOptions.Center,
+    ImageSource = "add_to_card.png",
+    ShowIcon = true,
+    ImageWidth = 50,
+    BorderWidth = 2,
+    BorderColor = Color.Black,
+    BackgroundColor = Color.White,
+    ImageAlignment = Alignment.Bottom
+};
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with image with icon image with top alignment](images/Button_imagealignment_bottom.png)
+
+*Left image alignment in SfButton*
+
+With RTL flow direction, image alignment with `Start` will change its direction of placing image to right. To keep that in same `Left` position, set as per in below
+
+{% tabs %}
+{% highlight xaml %}
+
+      <buttons:SfButton  
+            Text="Shopping"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            ImageSource="add_to_card.png"
+            ShowIcon="True" 
+            ImageWidth="50"
+            BorderWidth="2"
+            BorderColor="Black"
+            BackgroundColor="White"
+            ImageAlignment="Left"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfButton button = new SfButton()
+{
+    Text = "Shopping",
+    TextColor = Color.Black,
+    HorizontalOptions = LayoutOptions.Center,
+    ImageSource = "add_to_card.png",
+    ShowIcon = true,
+    ImageWidth = 50,
+    BorderWidth = 2,
+    BorderColor = Color.Black,
+    BackgroundColor = Color.White,
+    ImageAlignment = Alignment.Left
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with image with icon image with left alignment](images/Button_imagealignment_left.png)
+
+*Right image alignment in SfButton*
+
+With RTL flow direction, image alignment with `End` will change its direction of placing image to left. To keep that in same `Right` position, set as per in below
+
+{% tabs %}
+{% highlight xaml %}
+
+      <buttons:SfButton  
+            Text="Shopping"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            ImageSource="add_to_card.png"
+            ShowIcon="True" 
+            ImageWidth="50"
+            BorderWidth="2"
+            BorderColor="Black"
+            BackgroundColor="White"
+            ImageAlignment="Right"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+SfButton button = new SfButton()
+{
+    Text = "Shopping",
+    TextColor = Color.Black,
+    HorizontalOptions = LayoutOptions.Center,
+    ImageSource = "add_to_card.png",
+    ShowIcon = true,
+    ImageWidth = 50,
+    BorderWidth = 2,
+    BorderColor = Color.Black,
+    BackgroundColor = Color.White,
+    ImageAlignment = Alignment.Right
+};
+
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with image with icon image with right alignment](images/Button_imagealignment_right.png)
 
 ## Gradient background
 

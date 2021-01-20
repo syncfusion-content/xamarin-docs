@@ -303,7 +303,7 @@ The [`ImageAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.
 
 N> Enable the [`ShowIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ShowIcon) property to enable the [`ImageSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_ImageSource) property. 
 
-*End image alignment in `SfButton`*
+**End image alignment in `SfButton`**
 
 {% tabs %}
 {% highlight xaml %}

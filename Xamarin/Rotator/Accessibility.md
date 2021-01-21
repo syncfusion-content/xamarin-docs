@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in Xamarin Rotator control | Syncfusion
 description: Learn about accessibility support in Syncfusion Xamarin Rotator (SfRotator) control and more details.
-platform: Xamarin.Forms
+platform: Xamarin
 control: SfRotator
 documentation: ug
 ---

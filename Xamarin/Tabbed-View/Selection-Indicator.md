@@ -2,7 +2,7 @@
 layout: post
 title: Selection Indicator strip for Syncfusion TabView control.
 description: Selection Indicator customization by using the stroke thickenss,color, animation duration in TabView control for Xamarin.Forms platform
-platform: Xamarin.Forms
+platform: Xamarin
 control: TabView
 documentation: ug
 ---

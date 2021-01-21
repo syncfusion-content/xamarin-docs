@@ -39,7 +39,7 @@ The [SfExpander](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expand
 
 ## Icon color customization
 
-The [SfExpander](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html) allows you to customize the color of the expander icon by using the [IconColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_IconColor) property. By default, `IconColor` is black.
+The [SfExpander](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html) allows you to customize the color of the expander icon by using the [IconColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_IconColor) property. By default, tje icon color is `Black`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -129,7 +129,7 @@ this.Content = expander;
 
 You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/Xamarin-Expander-VisualStateManager). 
 
-N> When effects view is applied to `Expander` by adding Visual as "Material", it is necessary to initialize the `Xamarin.Forms.FormsMaterial.Init` in iOS and Android.
+N> When effects view is applied to `Expander` by adding Visual as `Material`, it is necessary to initialize the `Xamarin.Forms.FormsMaterial.Init` in iOS and Android.
 
 ## See also
 

@@ -2,7 +2,7 @@
 layout: post
 title: Handling Tabs with Syncfusion OverFlowButton.
 description: Handling of Overflow tabs in Syncfusion TabView control for Xamarin.Forms platform
-platform: Xamarin.Forms
+platform: Xamarin
 control: TabView
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: NestedTab with Syncfusion TabView control for Xamarin.Forms 
 description: About Nested Tab in TabView control for Xamarin.Forms platform
-platform: Xamarin.Forms
+platform: Xamarin
 control: TabView
 documentation: ug
 ---

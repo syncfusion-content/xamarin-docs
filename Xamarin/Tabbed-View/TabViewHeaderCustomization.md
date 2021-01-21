@@ -2,7 +2,7 @@
 layout: post
 title: Header Customization for Syncfusion SfTabView control.
 description: About customization of header by using the Header content, visible header count options in Syncfusion TabView control for Xamarin.Forms platform
-platform: Xamarin.Forms
+platform: Xamarin
 control: TabView
 documentation: ug
 ---

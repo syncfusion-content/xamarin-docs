@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Display Type for Syncfusion Essential Xamarin.Forms SfTabView.
-description: Different display types available in Syncfusion TabView control for Xamarin.Forms platform
-platform: Xamarin.Forms
+description: This section shows a different display types available in Syncfusion TabView control for Xamarin.Forms platform
+platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# Display Type
+# Display Type in Xamarin Tabbed View (SfTabView)
 
 By default, the tab view control displays the title of each tab item. It can be changed to any of the following types:
 

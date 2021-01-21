@@ -2,7 +2,7 @@
 layout: post
 title: Scroll Buttons for Syncfusion SfTabView Control
 description: Add the Scroll Buttons on both sides of the tab header in Syncfusion TabView control for Xamarin.Forms platform
-platform: Xamarin.Forms
+platform: Xamarin
 control: TabView
 documentation: ug
 ---

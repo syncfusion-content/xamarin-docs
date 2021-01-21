@@ -2,7 +2,7 @@
 layout : post
 title: AutomationId support for Syncfusion TabView Control in Xamarin.Forms
 description: This topic describes about the support to set AutomationId to find and interact with inner elements in Xamarin.Forms TabView.
-platform : Xamarin.Forms
+platform : Xamarin
 control : SfTabView
 documentation : ug
 ---

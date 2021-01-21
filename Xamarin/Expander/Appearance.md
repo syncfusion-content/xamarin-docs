@@ -39,7 +39,7 @@ The [SfExpander](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expand
 
 ## Icon color customization
 
-The [SfExpander](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html) allows you to customize the color of the expander icon by using the [IconColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_IconColor) property. By default, tje icon color is `Black`.
+The [SfExpander](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html) allows you to customize the color of the expander icon by using the [IconColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_IconColor) property. By default, the icon color is `Black`.
 
 {% tabs %}
 {% highlight xaml %}

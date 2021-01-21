@@ -69,7 +69,7 @@ this.Content = calendar;
 ![BlackoutDate support in Xamarin.Forms Calendar](images/Xamarin.forms-Calendar-BlackoutDates.png)
 
 ### Dynamic Blackout dates rendering
-Using[OnMonthCellLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html) event you can render the black out dates.
+Using[OnMonthCellLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_OnMonthCellLoaded) event you can render the black out dates.
 
 {% tabs %}
 {% highlight c# %}

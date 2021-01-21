@@ -33,7 +33,7 @@ N> Install the same version of Expander NuGet in all the projects.
 
 **Method 2: Adding SfExpander reference from toolbox**
 
-Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the SfExpander control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox). 
+Syncfusion also provides Xamarin Toolbox. Using this toolbox, you can drag the `SfExpander` control to the XAML page. It will automatically install the required NuGet packages and add the namespace to the page. To install Syncfusion Xamarin Toolbox, refer to [Toolbox](https://help.syncfusion.com/xamarin/utility#toolbox). 
 
 **Method 3: Adding SfExpander assemblies manually from the installed location**
 
@@ -97,7 +97,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 
-To launch the expander in iOS, call the `SfExpanderRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework initialization and before the LoadApplication is called as demonstrated in the following code example. 
+To launch the expander in iOS, call the `SfExpanderRenderer.Init()` in the `FinishedLaunching` overridden method of the `AppDelegate` class after the Xamarin.Forms Framework initialization and before the LoadApplication is called as demonstrated in the following code example. 
 
 {% tabs %}
 {% highlight c# %}
@@ -202,11 +202,11 @@ namespace GettingStarted
 
 ### Defining expander 
 
-`SfExpander` is a layout control comprise of Header and Content. You can load any View in [Header](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_Header) and [Content](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_Content). Content visibility of expander can be set by using the `IsExpanded` property of Expander. Users can expand or collapse the Content view by tapping Header.
+The `SfExpander` is a layout control comprise of Header and Content. You can load any View in [Header](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_Header) and [Content](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_Content). Content visibility of expander can be set by using the [IsExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_IsExpanded) property of `Expander`. Users can expand or collapse the Content view by tapping Header.
 
 Here, Grid with Labels are loaded in Header and Content of expander. 
 
-N> When loading Label as direct children of Header or Content of Expander, then it will lead to exception in Forms 4.0 and above version. So, load Label inside Grid to overcome the crash.
+N> When loading `Label` as direct children of `Header` or `Content` of Expander, then it will lead to exception in Forms 4.0 and above version. So, load `Label` inside `Grid` to overcome the crash.
 
 {% tabs %}
 {% highlight xaml %}
@@ -260,7 +260,7 @@ You can download expander sample for Xamarin.Forms here [ExpanderGettingStarted]
 
 ## Animation duration
 
-`SfExpander` allows you to customize the expanding and collapsing duration by using the [AnimationDuration](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_AnimationDuration) property. By default, the animation duration is 150 milliseconds. 
+The `SfExpander` allows you to customize the expanding and collapsing duration by using the [AnimationDuration](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_AnimationDuration) property. By default, the animation duration is `150 milliseconds`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -273,7 +273,7 @@ You can download expander sample for Xamarin.Forms here [ExpanderGettingStarted]
 
 ## Animation easing
 
-`SfExpander` allows you to customize the rate of change of parameter over time or animation style by using the [AnimationEasing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_AnimationEasing) property. By default, the animation easing is `Linear`. 
+The `SfExpander` allows you to customize the rate of change of parameter over time or animation style by using the [AnimationEasing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_AnimationEasing) property. By default, the animation easing is `Linear`. 
 
 {% tabs %}
 {% highlight xaml %}
@@ -286,7 +286,7 @@ You can download expander sample for Xamarin.Forms here [ExpanderGettingStarted]
 
 ## Expand and Collapse 
 
-`SfExpander` allows you to programmatically expand and collapse by using the [IsExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_IsExpanded) property of SfExpander.  Also, expand & collapse interaction by user can be control by handling `Expanding` and `Collapsing` events.  
+The `SfExpander` allows you to programmatically expand and collapse by using the [IsExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_IsExpanded) property of SfExpander.  Also, expand & collapse interaction by user can be control by handling `Expanding` and `Collapsing` events.  
 
 {% tabs %}
 {% highlight xaml %}
@@ -299,7 +299,7 @@ You can download expander sample for Xamarin.Forms here [ExpanderGettingStarted]
 
 ### Customize the expander when collapsing or expanding the SfExpander
 
-You can customize the expander by using the [Collapsed](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html) event. It will occur after a SfExpander is collapsed when tapping on the header. It will provide information related to the `collapsed` event by using the [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.ExpandedAndCollapsedEventArgs.html).
+You can customize the expander by using the [Collapsed](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_Collapsed) event. It will occur after a `SfExpander` is collapsed when tapping on the header. It will provide information related to the `collapsed` event by using the [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.ExpandedAndCollapsedEventArgs.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -328,7 +328,7 @@ private void Expander_Collapsed(object sender, ExpandedAndCollapsedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can customize the expander by using the [Expanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html) event. It will occur after a SfExpander is expanded when tapping on the header. It will provide the information related to the `Expanded` event by using the [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.ExpandedAndCollapsedEventArgs.html).
+You can customize the expander by using the [Expanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_Expanded) event. It will occur after a `SfExpander` is expanded when tapping on the header. It will provide the information related to the `Expanded` event by using the [ExpandedAndCollapsedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.ExpandedAndCollapsedEventArgs.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -359,7 +359,7 @@ private void Expander_Expanded(object sender, ExpandedAndCollapsedEventArgs e)
 
 ### Restricting the Expander while expanding and collapsing 
 
-You can restrict the Expander being collapsed by the [Collapsing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html) event. This event occurs when an user tries to collapse the SfExpander while tapping on the header. You can cancel the user action using the `Cancel` property of [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.ExpandingAndCollapsingEventArgs.html). 
+You can restrict the Expander being collapsed by the [Collapsing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_Collapsing) event. This event occurs when an user tries to collapse the `SfExpander` while tapping on the header. You can cancel the user action using the `Cancel` property of [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.ExpandingAndCollapsingEventArgs.html). 
 
 {% tabs %}
 {% highlight xaml %}
@@ -376,7 +376,7 @@ private void Expander_Collapsing(object sender, ExpandingAndCollapsingEventArgs 
 {% endhighlight %}
 {% endtabs %}
 
-You can restrict the Expander being expanded by the [Expanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html) event. This event occurs when an user tries to expand the SfExpander while tapping on the header. You can cancel the user action using the `Cancel` property of [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.ExpandingAndCollapsingEventArgs.html).
+You can restrict the Expander being expanded by the [Expanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_Expanding) event. This event occurs when an user tries to expand the `SfExpander` while tapping on the header. You can cancel the user action using the `Cancel` property of [ExpandingAndCollapsingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.ExpandingAndCollapsingEventArgs.html).
 
 {% tabs %}
 {% highlight xaml %}

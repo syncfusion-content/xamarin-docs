@@ -2,7 +2,7 @@
 layout: post
 title: Overview for Syncfusion Essential Xamarin.Forms SfButton
 description: What are the key features available in SfButton
-platform: xamarin.forms
+platform: xamarin
 control: sfbutton
 documentation: ug
 ---

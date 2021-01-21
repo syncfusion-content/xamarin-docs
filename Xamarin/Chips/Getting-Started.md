@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion Chips Control for Xamarin.Forms
 description: A quick tour to initial users on Syncfusion chips control for Xamarin.Forms platform and explains the types of chip group.
-platform: Xamarin.Forms
+platform: xamarin
 control: Chips
 documentation: ug
 ---

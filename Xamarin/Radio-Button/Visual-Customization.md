@@ -2,7 +2,7 @@
 layout: post
 title: Visual customization | SfRadioButton | Syncfusion | Xamarin.Forms
 description: change the description Learn how to customize the SfRadioButton CheckedColor, UncheckedColor, BorderWidth, and Text in Xamarin.Forms.
-platform: Xamarin.Forms
+platform: xamarin
 control: SfRadioButton
 documentation: ug 
 keywords: button, SfRadioButton, RadioButton

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview for Syncfusion Essential Xamarin.Forms SfButton
-description: What are the key features available in SfButton
+description: A quick overview of SfButton's key features that show user interactions along with UI customizations, support for the theme, and toggle actions.
 platform: xamarin
 control: sfbutton
 documentation: ug

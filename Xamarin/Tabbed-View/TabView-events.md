@@ -2,7 +2,7 @@
 layout: post
 title: ItemTapped event for Syncfusion Essential SfTabView.
 description: Learn how to perform an operation while tapping an item, and also about Events in Behavior Commands in SfTabView Xamarin.Forms.
-platform: Xamarin.Forms
+platform: Xamarin
 control: TabView
 documentation: ug
 ---

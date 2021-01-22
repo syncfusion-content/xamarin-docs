@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started for Syncfusion Essential Xamarin.Forms SfButton
 description: How to create a simple button view, add caption, background image, icon, enable toggle view and customize visual states.
-platform: xamarin.forms
+platform: xamarin
 control: sfbutton
 documentation: ug
 ---

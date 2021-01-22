@@ -2,7 +2,7 @@
 layout: post
 title: How to get the notification by clicking the Syncfusion SfButton
 description: How to get the notification of click event action in Syncfusion Xamarin.Forms Button(SfButton) control
-platform: Xamarin.Forms
+platform: xamarin
 control: SfButton
 documentation: ug 
 

@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Overview for Syncfusion.Xamarin.Forms SfCheckBox
-description: Learn how to customize the basic features of SfCheckBox
-platform: Xamarin.Forms
+description: A quick overview of SfCheckBox key features that allow users to select one or more options from a set.
+platform: xamarin
 control: SfCheckBox
 documentation: ug 
 keywords: button, SfCheckBox, CheckBox
 
 ---
 
-# Overview
+# Xamarin CheckBox (SfCheckBox) Overview
 The check box is a selection control that allows users to select one or more options from a set. The three states of check box are checked, unchecked and indeterminate.
 
 ##  Key features

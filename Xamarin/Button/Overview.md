@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview for Syncfusion Essential Xamarin.Forms SfButton
-description: What are the key features available in SfButton
-platform: xamarin.forms
+description: A quick overview of SfButton's key features that show user interactions along with UI customizations, support for the theme, and toggle actions.
+platform: xamarin
 control: sfbutton
 documentation: ug
 ---
 
-# Overview
+# Xamarin Button (SfButton) Overview
 
 The Xamarin.Forms Button is a custom button control with UI customization, toggle states, and theme support. You can set icons, background images, and corner edge radii and customize the appearance for different visual states using the visual state manager.
 

@@ -2,7 +2,7 @@
 layout: post
 title: Getting started in Syncfusion Radio Button for Xamarin.Forms platform
 description: Learn how to create a simple radio button and its customization options with its available basic features
-platform: Xamarin.Forms
+platform: xamarin
 control: SfRadioButton
 documentation: ug 
 keywords: button, SfRadioButton, RadioButton

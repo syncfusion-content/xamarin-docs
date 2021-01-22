@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Selection Changed event for Syncfusion Essential SfTabView.
-description: Selection changed event in TabView control for Xamarin.Forms platform
+description: This section shows how to use a Selection changed event in TabView control for Xamarin.Forms platform
 platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# Selection Changed
+# Selection Changed in Xamarin Tabbed View (SfTabView)
 
 The `SelectionChanged` event is used to notify when the selection is changed by swiping or dynamically setting the `SelectedIndex` property of `SfTabView`.
 

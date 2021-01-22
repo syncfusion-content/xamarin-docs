@@ -1,13 +1,13 @@
 ---
 layout: post
 title:  Custom Header for Syncfusion Essential Xamarin.Forms SfTabView.
-description: Custom Header in Syncfusion TabView control for Xamarin.Forms platform
+description: This section shows how to use a Custom Header in Syncfusion TabView control for Xamarin.Forms platform
 platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# Custom Header 
+# Custom Header in Xamarin Tabbed View (SfTabView)
 
 When built-in view is not needed, it can be overridden by adding custom views to the header in tabs. The tab view header can be customized by adding different views such as image, button, and label inside the header content. The following code sample demonstrates how to customize the header content as needed.
 

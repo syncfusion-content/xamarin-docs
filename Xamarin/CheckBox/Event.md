@@ -2,7 +2,7 @@
 layout: post
 title: Event for Syncfusion.Xamarin.Forms SfCheckBox
 description: How to get the notification of StateChanged event action in Syncfusion Xamarin.Forms CheckBox (SfCheckBox) control.
-platform: Xamarin.Forms
+platform: xamarin
 control: SfCheckBox
 documentation: ug 
 keywords: button, SfCheckBox, CheckBox

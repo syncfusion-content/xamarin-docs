@@ -209,7 +209,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 <p>Yes</p>
 </td>
 <td align="center">
-{{'[CustomDayLabels](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~CustomDayLabels.html)'| markdownify }}
+{{'[CustomDayLabels](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_CustomDayLabels)'| markdownify }}
 </td>
 </tr>
 
@@ -565,7 +565,7 @@ This section covers the features of `SfCalendar` specific to Android,iOS and UWP
 </td>
 <td align="center">
 {{'[CellTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthViewSettings.html#Syncfusion_SfCalendar_XForms_MonthViewSettings_CellTemplateProperty)'| markdownify }} and 
-{{'[CellBindingContext](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.MonthCell~CellBindingContext.html)'| markdownify }} in an argument of {{'[OnMonthCellLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html)'| markdownify }}
+{{'[CellBindingContext](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.MonthCell.html#Syncfusion_SfCalendar_XForms_MonthCell_CellBindingContext)'| markdownify }} in an argument of {{'[OnMonthCellLoaded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_OnMonthCellLoaded)'| markdownify }}
 </td>
 </tr>
 

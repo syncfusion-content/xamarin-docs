@@ -253,7 +253,7 @@ this.Content = calendar;
 
 ## Customize day header text
 
-You can customize the day header text by adding the custom day labels in the `CustomDayLabels` collection by using the [CustomDayLabels](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms~Syncfusion.SfCalendar.XForms.SfCalendar~CustomDayLabels.html) collection of SfCalendar.
+You can customize the day header text by adding the custom day labels in the `CustomDayLabels` collection by using the [CustomDayLabels](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_CustomDayLabels) collection of SfCalendar.
 
 {% tabs %}
 {% highlight c# %}

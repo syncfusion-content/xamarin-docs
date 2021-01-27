@@ -2,7 +2,7 @@
 layout: post
 title: Toolbar Customization | SfImageEditor | Xamarin.Forms | Syncfusion
 description: This section describes how to customize the toolbar items appearance, height, colorpalette and visibility
-platform: Xamarin.Forms
+platform: xamarin
 control: ImageEditor
 documentation : ug
 ---

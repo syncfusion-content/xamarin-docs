@@ -2,7 +2,7 @@
 layout: post
 title: ImageFilter in Syncfusion SfImageEditor control in Xamarin.Forms
 description: This section describes how the apply image filter support in SfImageEditor control for Xamarin.Forms platform
-platform: xamarin.forms
+platform: xamarin
 control: ImageEditor
 documentation: ug
 ---

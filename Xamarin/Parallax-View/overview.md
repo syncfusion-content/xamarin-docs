@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Essential Xamarin.Forms SfParallaxView
-description: Overview and Key features of SfParallaxView control such as speed of the parallax scroll and support for horizontal and vertical orientation.
+description: Overview and Key features of SfParallaxView control such as speed of the parallax scroll, support for horizontal and vertical orientation, etc.
 platform: xamarin
 control: SfParallaxView
 documentation: ug

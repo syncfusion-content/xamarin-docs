@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Overview of Syncfusion Essential Xamarin.Forms SfParallaxView
-description: What are the key features available in SfIParallaxView.
-platform: xamarin.forms
+description: Overview and Key features of SfParallaxView control such as speed of the parallax scroll, support for horizontal and vertical orientation, etc.
+platform: xamarin
 control: SfParallaxView
 documentation: ug
 ---
 
-# Overview
+# Xamarin ParallaxView (SfParallaxView) Overview
 
 SfParallaxView for Xamarin.Forms provides a perfect way for scrolling any control that implements the IParallaxView interface with a background element that translates slower than the foreground element. The SfParallaxView control binds the scroll position of a foreground element (e.g., list) to a background element and moves the background element at different speeds.
 

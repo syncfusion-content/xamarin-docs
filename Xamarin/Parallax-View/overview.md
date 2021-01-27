@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Essential Xamarin.Forms SfParallaxView
-description: Overview and Key features of SfImageEditor control in Xamarin.Forms
+description: Overview and Key features of SfParallaxView control such as speed of the parallax scroll, support for horizontal and vertical orientation and built-in integration with SfListView and SfRotator.
 platform: xamarin
 control: SfParallaxView
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started for Syncfusion Essential Xamarin.Forms SfParallaxView
-description: A quick tour to initial users on Syncfusion parallax view control for Xamarin.Forms platform and Learn how to create a simple parallax view by adding content and source.
+description: A quick tour to initial users on Syncfusion parallax view control and Learn how to create a simple parallax view by adding content and source.
 platform: xamarin
 control: SfParallaxView
 documentation: ug

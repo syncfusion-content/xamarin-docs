@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Essential Xamarin.Forms SfImageEditor
-description:  Overview and Key features of SfImageEditor control in Xamarin.Forms
+description:  A quick overview about SfImageEditor control and Key features such as adding text, path and shapes, localization, and etc.
 platform: xamarin
 control: SfImageEditor
 documentation: ug

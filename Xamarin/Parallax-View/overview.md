@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Overview of Syncfusion Essential Xamarin.Forms SfParallaxView
-description: A quick overview and the key features available in SfIParallaxView.
+description: Overview and Key features of SfImageEditor control in Xamarin.Forms
 platform: xamarin
 control: SfParallaxView
 documentation: ug

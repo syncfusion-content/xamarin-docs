@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Syncfusion ImageEditor control for Xamarin.Forms
 description: Image editor has a built-in toolbar, which has options to edit the image with shapes, path, text, crop, and flip.
-platform: xamarin.forms
+platform: xamarin
 control: SfImageEditor
 documentation: ug
 ---

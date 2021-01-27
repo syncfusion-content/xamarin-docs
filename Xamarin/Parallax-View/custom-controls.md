@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Syncfusion ParallaxView scrolling support in Xamarin.Forms
-description: Parallax view provides scrolling support for custom controls.
-platform: xamarin.forms
+description: This section describes how the Syncfusion parallax view provides scrolling support for custom controls.
+platform: xamarin
 control: SfParallaxView
 documentation: ug
 ---

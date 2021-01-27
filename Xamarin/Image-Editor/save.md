@@ -2,7 +2,7 @@
 layout: post
 title: Save image in Syncfusion SfImageEditor control in Xamarin.Forms
 description: Learn how to save the image in different ways as well as the use of different events in ImageEditor for Xamarin.Forms
-platform: xamarin.forms
+platform: xamarin
 control: ImageEditor
 documentation: ug
 ---

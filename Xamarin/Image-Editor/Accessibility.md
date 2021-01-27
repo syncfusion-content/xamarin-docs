@@ -2,7 +2,7 @@
 layout: post
 title: Automation ID in Syncfusion SfImageEditor control in Xamarin.Forms
 description: Learn how to use the automation ID in SfImageEditor control for running the test cases in Xamarin.Forms
-platform: xamarin.forms
+platform: xamarin
 control: SfImageEditor
 documentation : ug
 ---

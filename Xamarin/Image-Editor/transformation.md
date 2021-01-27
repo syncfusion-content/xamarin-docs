@@ -2,7 +2,7 @@
 layout: post
 title: Transformation in Syncfusion SfImageEditor control in Xamarin.Forms
 description: Learn how to perform transformations such as rotation and flip in SfImageEditor control for Xamarin.Forms
-platform: xamarin.forms
+platform: xamarin
 control: ImageEditor
 documentation: ug
 ---

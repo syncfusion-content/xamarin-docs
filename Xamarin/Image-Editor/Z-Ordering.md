@@ -2,7 +2,7 @@
 layout: post
 title: Shapes in Syncfusion SfImageEditor control in Xamarin.Forms
 description: This section describes how to move shapes to front and back in SfImageEditor control for Xamarin.Forms
-platform: xamarin.forms
+platform: xamarin
 control: ImageEditor
 documentation: ug
 ---

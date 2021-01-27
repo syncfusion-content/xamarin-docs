@@ -2,7 +2,7 @@
 layout: post
 title: Custom view of Syncfusion SfImageEditor control in Xamarin.Forms
 description: This section describes how to add custom shapes or views in SfImageEditor control for Xamarin.Forms patform
-platform: xamarin.forms
+platform: xamarin
 control: ImageEditor
 documentation: ug
 ---

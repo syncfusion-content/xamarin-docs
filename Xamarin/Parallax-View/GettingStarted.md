@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started for Syncfusion Essential Xamarin.Forms SfParallaxView
-description: How to create a parallax view, add content and source, speed and orientation.
+description: Learn how to create a simple parallax view by adding content and source, speed and orientation.
 platform: xamarin
 control: SfParallaxView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin ParallaxView (SfParallaxView)
 
 This section explains the steps required to configure the [`SfParallaxView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ParallaxView.SfParallaxView.html) control and add basic elements to it using various APIs.
 

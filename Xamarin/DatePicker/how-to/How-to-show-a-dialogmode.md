@@ -7,7 +7,7 @@ control: DatePicker
 documentation: ug
 ---
 
-# How to show as a Dialog in Xamarin Forms DatePicker(SfPicker)
+# How to show as a Dialog in Xamarin.Forms DatePicker(SfPicker)
 
 DatePicker can be rendered as a dialog by setting the`SfDatePicker.PickerMode` property to Dialog. The default value of `SfDatePicker.PickerMode` property is "Default". 
 

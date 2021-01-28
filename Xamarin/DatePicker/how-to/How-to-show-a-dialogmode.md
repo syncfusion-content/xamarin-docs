@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Show a dialog using Syncfusion DatePicker for Xamarin.Forms
-description: Learn how to show DatePicker as dialog using button in syncfusion DatePicker for Xamarin.Forms.
+description: Learn how to show the DatePicker as dialog mode using button click in syncfusion DatePicker for Xamarin.Forms (SfDatePicker)
 platform: Xamarin
 control: DatePicker
 documentation: ug
 ---
 
-# How to show as a Dialog in Xamarin Forms Picker(SfPicker)
+# How to show as a Dialog in Xamarin Forms DatePicker(SfPicker)
 
 DatePicker can be rendered as a dialog by setting the`SfDatePicker.PickerMode` property to Dialog. The default value of `SfDatePicker.PickerMode` property is "Default". 
 

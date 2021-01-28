@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Date selected event using Syncfusion DatePicker for Xamarin.Forms
-description: Learn how to handle date selected event in syncfusion DatePicker for Xamarin.Forms.
+description: Learn how to handle date selected event with old and new values in syncfusion DatePicker for Xamarin.Forms (SfDatePicker)
 platform: Xamarin
 control: DatePicker
 documentation: ug

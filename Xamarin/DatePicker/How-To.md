@@ -122,11 +122,11 @@ You can perform an operation when selecting a date using the `DateSelected` even
 <th>Description</th>
 </tr>
 <tr>
-<td>NewDate</td>
+<td>NewValue</td>
 <td>Shows recently selected date in DatePicker.</td>
 </tr>
 <tr>
-<td>OldDate</td>
+<td>OldValue</td>
 <td>Shows previously selected date in DatePicker.</td>
 </tr>
 </table>
@@ -169,7 +169,7 @@ namespace DatePickerSample
 
         private void Datepicker_DateSelected(object sender, Syncfusion.XForms.Pickers.DateChangedEventArgs e)
         {
-            DisplayAlert("DateChanged", "NewDate: " + e.NewDate + "\n" + "OldDate: " + e.OldDate, "Ok");
+            DisplayAlert("DateChanged", "NewDate: " + e.NewValue + "\n" + "OldDate: " + e.OldValue, "Ok");
         }
     }
 }

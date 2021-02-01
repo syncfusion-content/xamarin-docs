@@ -60,21 +60,17 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 ### Additional Step for iOS
 
-Create an instance of the `SfComboBoxRenderer` in FinishedLaunching overridden method of an AppDelegate class in iOS project as shown in the following codes:
+To launch the SfComboBox in iOS, call the `SfComboBoxRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called, as demonstrated in the following code example.
 
 {% highlight c# %}
-
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
-new Syncfusion.XForms.iOS.ComboBox.SfComboBoxRenderer();
-
-global::Xamarin.Forms.Forms.Init();
-
-LoadApplication(new App());
-
-return base.FinishedLaunching(app, options);
-}	
-
+    …
+    global::Xamarin.Forms.Forms.Init ();
+    Syncfusion.XForms.iOS.ComboBox.SfComboBoxRenderer.Init();
+    LoadApplication (new App ());
+    …
+}
 {% endhighlight %}
 
 ### Additional step for UWP

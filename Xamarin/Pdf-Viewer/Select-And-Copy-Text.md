@@ -130,3 +130,70 @@ The completion of the text selection action would trigger TextSelectionCompleted
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to get the start index and end index of the selected text?
+
+The completion of the text selection action would trigger the [TextSelectionCompleted](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_TextSelectionCompleted) event. The event argument would contain details about the start index and end index of the selected text. 
+
+{% tabs %}
+{% highlight c# %}
+
+private void PdfViewerControl_TextSelectionCompleted(object sender, TextSelectionCompletedEventArgs args) 
+{
+	//Starting index of the selected text on the page. 
+	int startIndex = args.SelectedTextStartIndex; 
+
+	//Ending index of the selected text on the page.
+	int endIndex= args.SelectedTextEndIndex; 
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The values of [SelectedTextStartIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TextSelectionCompletedEventArgs.html#Syncfusion_SfPdfViewer_XForms_TextSelectionCompletedEventArgs_SelectedTextStartIndex) and [SelectedTextEndIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TextSelectionCompletedEventArgs.html#Syncfusion_SfPdfViewer_XForms_TextSelectionCompletedEventArgs_SelectedTextEndIndex) properties correspond only to the text present in the page on which the text is selected. 
+
+## How to customize the text selection context menu?
+
+By default, the text selection context menu contains built-in menu items such as Copy, Highlight, Underline, and Strikethrough. You can add additional items in the text selection context menu by creating an instance of type [TextSelectionMenuItem](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TextSelectionMenuItem.html) and add the item to the [TextSelectionSettings.MenuOptions.Items](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TextSelectionMenu.html#Syncfusion_SfPdfViewer_XForms_TextSelectionMenu_Items) property. 
+As the type of this property is ObservableCollection, the following operations can be performed on the text selection context menu items. 
+
+1.	Adding a new item
+2.	Clearing the menu items
+3.	Inserting a new item
+4.	Removing an existing item
+
+Below code illustrates adding a new menu item to the text selection context menu.
+
+{% tabs %}
+{% highlight c# %}
+
+        TextSelectionMenuItem menuItem = new TextSelectionMenuItem();
+
+		//The text to display on the menu item
+		menuItem.Text = “Find text”;
+
+		//The ID to uniquely identify the menu item. 
+		menuItem.Id = "find_text";
+		pdfViewer.TextSelectionSettings.MenuOptions.Items.Add(menuItem);
+
+{% endhighlight %}
+{% endtabs %}
+
+### How to handle the click event of the menu item?
+
+The [TextSelectionMenuItemClicked](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.TextSelectionMenu.html#Syncfusion_SfPdfViewer_XForms_TextSelectionMenu_TextSelectionMenuItemClicked) event is raised when any menu item is clicked. While performing the intended operation when a menu item is clicked, the selected text can be obtained as described in the [above](https://help.syncfusion.com/xamarin/pdf-viewer/select-and-copy-text#how-to-acquire-selected-text) section. 
+
+{% tabs %}
+{% highlight c# %}
+
+private void PdfViewerControl_TextSelectionMenuItemClicked(object sender, TextSelectionMenuItemClickedEventArgs args) 
+{
+	TextSelectionMenuItem menuItem = sender as TextSelectionMenuItem;
+	switch(menuItem.Id)
+	{
+		//Perform the intended operation after identifying the menu item from its ‘Id’ value. 
+	}
+}
+
+{% endhighlight %}
+{% endtabs %}

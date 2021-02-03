@@ -7,13 +7,15 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Create project 
+# Create Xamarin application 
 
 Syncfusion provides the Visual Studio Project Templates for the Syncfusion Xamarin platform to create the Syncfusion Xamarin Application by adding the required Syncfusion NuGet packages for the control chosen.
 
 I> The Syncfusion Xamarin Project Templates are available from v16.2.0.41.
 
 Use the following steps to create the **Syncfusion** **Xamarin** **Application** through the **Visual** **Studio** **2017:**
+
+> Before use the Syncfusion Xamarin Project Template, check whether the **Xamarin Extensions - Syncfusion** installed or not in Visual Studio Extension Manager by clicking on the Tools -> Extensions and Updates -> Installed for Visual Studio 2017 or lower and for Visual Studio 2019 by clicking on the Extensions -> Manage Extensions -> Installed.
 
 1. To create a Syncfusion Xamarin project, follow either one of the options below:
 

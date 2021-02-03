@@ -7,7 +7,7 @@ control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Create project 
+# Create Xamarin application 
 
 Syncfusion provides the Visual Studio Project Templates for the Syncfusion Xamarin platform to create the Syncfusion Xamarin Application by adding the required Syncfusion NuGet packages for the control chosen.
 

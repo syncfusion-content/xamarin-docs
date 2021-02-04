@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Getting Started with Syncfusion ComboBox Control for Xamarin.Forms
-description : A quick tour to initial users on Syncfusion combobox control for Xamarin.Forms platform
-platform : xamarin
-control : SfComboBox
-documentation : ug
+layout: post
+title: Getting Started with Syncfusion ComboBox Control for Xamarin.Forms
+description: This section describes about quick tour to initial users on Syncfusion SfComboBox control for Xamarin.Forms platforms
+platform: xamarin
+control: SfComboBox
+documentation: ug
 ---
 
-# Getting Started
+# Getting started with SfComboBox
 
 This section explains the steps required to create the combo box control, populate it with data and filter the suggestions. This section covers only the minimal features that are needed to get started with the control.
 
@@ -60,21 +60,17 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 ### Additional Step for iOS
 
-Create an instance of the `SfComboBoxRenderer` in FinishedLaunching overridden method of an AppDelegate class in iOS project as shown in the following codes:
+To launch the SfComboBox in iOS, call the `SfComboBoxRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called, as demonstrated in the following code example.
 
 {% highlight c# %}
-
 public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
-new Syncfusion.XForms.iOS.ComboBox.SfComboBoxRenderer();
-
-global::Xamarin.Forms.Forms.Init();
-
-LoadApplication(new App());
-
-return base.FinishedLaunching(app, options);
-}	
-
+    …
+    global::Xamarin.Forms.Forms.Init ();
+    Syncfusion.XForms.iOS.ComboBox.SfComboBoxRenderer.Init();
+    LoadApplication (new App ());
+    …
+}
 {% endhighlight %}
 
 ### Additional step for UWP

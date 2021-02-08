@@ -441,7 +441,7 @@ Here, the GroupName field is removed at runtime.
 
 ![Removing data form fields at run time in Xamarin.Forms DataForm](SfDataForm_images/MoreFieldsRemove.png)
 
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/MoreFields1624183179.zip).
+You can download the sample from here
 
 ## DataFormItemManager
 
@@ -488,7 +488,7 @@ public class DataFormItemManagerExt : DataFormItemManager
 
 {% endhighlight %}
 
-You can download the source code of this demo from [GenerateDataFormItemsForDataObject](https://github.com/SyncfusionExamples/generate-dataformitems-for-dataobject-in-xamarin-dataform)
+You can download the source code of this demo from GenerateDataFormItemsForDataObjects
 
 ### Manually generate DataFormItems for data dictionary
 
@@ -565,7 +565,7 @@ public class DataFormItemManagerExt : DataFormItemManager
 
 Here, the dataform is loaded with field from dictionary.
 
-You can download the source code of this demo from [GenerateDataFormItemsForDictionary](https://github.com/SyncfusionExamples/generate-dataformitems-for-dictionary-loaded-in-xamarin-dataform)
+You can download the source code of this demo from GenerateDataFormItemsForDictionary
 
 ## Binding with dynamic data object
 
@@ -717,7 +717,7 @@ public class Data : DynamicObject, IDictionary<string, object>
 
 ![Binding with dynamic data object in Xamarin.Forms DataForm](SfDataForm_images/DynamicObject.png)
 
-You can download the sample from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComplexProperty-1726015503.zip)
+You can download the sample from here
 
 ## Adding custom DataFormItems
 

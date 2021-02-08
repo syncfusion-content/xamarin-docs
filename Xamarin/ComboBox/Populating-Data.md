@@ -21,6 +21,12 @@ Create an instance of string list and populate items as shown in the following c
 
 {% highlight xaml %}
 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:combobox="clr-namespace:Syncfusion.XForms.ComboBox;assembly=Syncfusion.SfComboBox.XForms"
+             xmlns:local="clr-namespace:NamespaceName"     
+            xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"       
+             x:Class="NamespaceName.ClassName">
 <StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30"> 
     <combobox:SfComboBox HeightRequest="40" x:Name="comboBox"> 
         <combobox:SfComboBox.ComboBoxSource>
@@ -37,8 +43,8 @@ Create an instance of string list and populate items as shown in the following c
             </ListCollection:List>
         </combobox:SfComboBox.ComboBoxSource>
     </combobox:SfComboBox>
-</StackLayout>
-
+ </StackLayout>
+</ContentPage>
 	
 {% endhighlight %}
 

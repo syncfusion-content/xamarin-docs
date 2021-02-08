@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Getting Started with Syncfusion ComboBox Control for Xamarin.Forms
-description : A quick tour to initial users on Syncfusion combobox control for Xamarin.Forms platform
-platform : xamarin
-control : SfComboBox
-documentation : ug
+layout: post
+title: Getting Started with Syncfusion ComboBox Control for Xamarin.Forms
+description: This section describes about quick tour to initial users on Syncfusion SfComboBox control for Xamarin.Forms platforms
+platform: xamarin
+control: SfComboBox
+documentation: ug
 ---
 
-# Getting Started
+# Getting started with SfComboBox
 
 This section explains the steps required to create the combo box control, populate it with data and filter the suggestions. This section covers only the minimal features that are needed to get started with the control.
 

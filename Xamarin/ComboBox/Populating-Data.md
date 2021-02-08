@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding  in Syncfusion ComboBox control for Xamarin.Forms
-description: This section provides the information about how to perfoming a DataBinding in ComboBox Xamarin
+description: This section provides the information about how to perfoming a DataBinding & Populating data items using ComboBox Xamarin
 platform: xamarin
 control: SfComboBox
 documentation: ug

@@ -9,7 +9,7 @@ documentation: ug
 
 # Getting Started with SfLinearGauge
 
-This section explains the steps required to configure a [`SfLinearGauge`](https://github.com/SyncfusionExamples/GettingStarted_LinearGauge) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfLinearGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html) control.
+This section explains the steps required to configure a [`SfLinearGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.htm) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfLinearGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html) control.
 
 ## Adding SfLinearGauge reference
 

@@ -497,7 +497,7 @@ The following screenshot illustrates the result of the above code sample.
 
 ![Xamarin maps getting started](Images/GettingStartedimg2.PNG) 
 
-You can download the complete [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Maps_GettingStarted182763643) sample.
+You can download the complete [Getting started](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) sample.
 
 
 ## See also

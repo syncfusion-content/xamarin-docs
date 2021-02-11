@@ -546,7 +546,7 @@ private void ExpenseInfo_PropertyChanged(object sender, PropertyChangedEventArgs
 
 Here, the Balance property value is updated based on Budget and Expense properties. For updating value in editor, the `UpdateEditor` method is called.
 
-You can download the sample from here
+You can download the sample from [here](https://github.com/SyncfusionExamples/update-editor-value-based-on-another-editor-dataform-xamarin)
 
 ## Converter
 

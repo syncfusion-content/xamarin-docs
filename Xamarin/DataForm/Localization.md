@@ -113,4 +113,4 @@ private void DataForm_Validating(object sender, ValidatingEventArgs e)
 
 ![Localization in DataForm for Xamarin.Forms](SfDataForm_images/DataFormLocalization.png)
 
-You can download the entire source code of this demo for Xamarin.Forms using attributes from here LocalizationThroughAttribute and using event from here LocalizationThroughEvent.
+You can download the entire source code of this demo for Xamarin.Forms using attributes from here [LocalizationThroughAttribute](https://github.com/SyncfusionExamples/localization-using-attribute-dataform-xamarin) and using event from here [LocalizationThroughEvent](https://github.com/SyncfusionExamples/localization-using-event-dataform-xamarin).

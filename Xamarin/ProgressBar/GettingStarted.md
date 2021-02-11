@@ -7,7 +7,7 @@ control: ProgressBar
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Progress Bar (SfProgressBar)
 
 This section explains the steps required to work with the progress bar control for Xamarin.Forms.
 

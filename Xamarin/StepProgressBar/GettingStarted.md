@@ -7,7 +7,7 @@ control: StepProgressBar
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin StepProgressBar (SfStepProgressBar)
 
 This section explains the steps required to work with the StepProgressBar control for Xamarin.Forms.
 

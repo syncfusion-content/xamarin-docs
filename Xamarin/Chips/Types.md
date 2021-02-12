@@ -127,13 +127,13 @@ Download the complete sample [here](https://github.com/SyncfusionExamples/How-to
 
 ### CloseCommand
 
-The CloseCommand property is used to associate a command with an instance of SfChip CloseButton. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+The [`CloseCommand`] property is used to associate a command with an instance of SfChip CloseButton. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
 N> The [`CloseCommand`] is supported only in `Input` type.. The default value of [`CloseCommand`] is [null].
 
 ### CloseButtonClicked
 
-The CloseButtonClicked event is triggered after a close button is clicked. You can get the current chip of removing chip.
+The [`CloseButtonClicked`] event is triggered after a close button is clicked. You can get the current chip of removing chip.
 
 N> The [`CloseButtonClicked`] is supported only in `Input` type.
 

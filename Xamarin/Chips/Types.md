@@ -175,7 +175,6 @@ public class Model:INotifyPropertyChanged
 	}
 
 	private string personMailId;
-
 	public string PersonMailId
 	{
 		get { return personMailId; }
@@ -245,13 +244,12 @@ N> The [`CloseButtonClicked`] is supported only in `Input` type.
 {% endhighlight %}
 {% highlight c# %}
 
-       public MainPage()
+        public MainPage()
         {
             InitializeComponent();
             SfChipGroup chipGroup = new SfChipGroup();
-			chipGroup.Type = SfChipsType.Input;
-			....
-            chipGroup.CloseButtonClicked += ChipGroup_CloseButtonClicked;
+            chipGroup.Type = SfChipsType.Input;
+            CloseButtonClicked.Clicked += ChipGroup_CloseButtonClicked;
             ....
         }
 

@@ -125,6 +125,18 @@ public class Model:INotifyPropertyChanged
 
 Download the complete sample [here](https://github.com/SyncfusionExamples/How-to-create-input-typed-chip-example-in-Xamarin.Forms).
 
+### CloseCommand
+
+The CloseCommand property is used to associate a command with an instance of SfChip CloseButton. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+
+N> The [`CloseCommand`] is supported only in `Input` type.. The default value of [`CloseCommand`] is [null].
+
+### CloseButtonClicked
+
+The CloseButtonClicked event is triggered after a close button is clicked. You can get the current chip of removing chip.
+
+N> The [`CloseButtonClicked`] is supported only in `Input` type.
+
 ## Choice
 
 Allows users to select a single chip from a group of items. Selecting a chip will automatically deselect the previously selected chips. The selected chip color can be customized using the [`SelectedChipBackgroundColor`](https://help.syncfusion.com/xamarin/chips/customization#selectedchipbackgroundcolor) and [`SelectedChipTextColor`](https://help.syncfusion.com/xamarin/chips/customization#selectedchiptextcolor) properties. The `SelectedItem` property holds the instance of recently selected chip.

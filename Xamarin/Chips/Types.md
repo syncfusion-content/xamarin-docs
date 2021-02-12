@@ -127,15 +127,142 @@ Download the complete sample [here](https://github.com/SyncfusionExamples/How-to
 
 ### CloseCommand
 
-The [`CloseCommand`] property is used to associate a command with an instance of SfChip CloseButton. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
+The [`CloseCommand`] property is used to associate a command with an instance of each chip close button in ChipGroup. This property is most often set with MVVM pattern to bind callbacks back into the ViewModel.
 
-N> The [`CloseCommand`] is supported only in `Input` type.. The default value of [`CloseCommand`] is [null].
+N> The [`CloseCommand`] is supported only in `Input` type. The default value of [`CloseCommand`] is [null].
+
+The following code illustrates how to get input typed ChipGroup.
+
+{% highlight xaml %}
+<buttons:SfChipGroup 
+		VerticalOptions="Center" 
+		ItemsSource="{Binding InputItems,Mode=TwoWay}" 
+		DisplayMemberPath="PersonName" 
+		ImageMemberPath="PersonImage"
+		ShowIcon="True"
+		Type="Input" 
+		CloseCommand="{Binding CloseButtonCommand}" 
+		ChipPadding="8,8,0,0">
+	<buttons:SfChipGroup.ChipLayout>
+		<FlexLayout 
+				HorizontalOptions="Start" 
+				VerticalOptions="Center" 
+				Direction="Row" 
+				Wrap="Wrap" 
+				JustifyContent="Start" 
+				AlignContent="Start" 
+				AlignItems="Start"/>
+	</buttons:SfChipGroup.ChipLayout>
+</buttons:SfChipGroup>
+{% endhighlight %}
+
+{% highlight c# %}
+[Model]
+public class Model:INotifyPropertyChanged
+{
+	private string personName;
+	public string PersonName
+	{
+		get { return personName; }
+		set { personName = value; OnPropertyChanged("PersonName"); }
+	}
+
+	private ImageSource personImage;
+	public ImageSource PersonImage
+	{
+		get { return personImage; }
+		set { personImage = value; OnPropertyChanged("PersonImage"); }
+	}
+
+	private string personMailId;
+
+	public string PersonMailId
+	{
+		get { return personMailId; }
+		set { personMailId = value; OnPropertyChanged("PersonMailId"); }
+	}
+
+	...
+}
+
+[ViewModel]
+public class ViewModel:INotifyPropertyChanged
+{
+	...
+	public event PropertyChangedEventHandler PropertyChanged;
+	...
+	public ObservableCollection<Model> InputItems
+	{
+		get; set;
+	}
+
+	public Command CloseButtonCommand { get; set; }
+
+	private void ShowPopup(Object obj)
+	{
+	    //to your desired action
+	}
+
+	public ViewModel()
+	{
+		InputItems = new ObservableCollection<Model>();
+		InputItems.Add(new Model() { PersonName = "John", PersonImage = ImageSource.FromResource("ChipType_Sample.Image1.png"), PersonMailId = "john@emil.com" });
+		InputItems.Add(new Model() { PersonName = "Rose", PersonImage = ImageSource.FromResource("ChipType_Sample.Image2.png"), PersonMailId = "rose@emil.com" });
+		CloseButtonCommand = new Command(ShowPopup);
+	}
+}
+
+{% endhighlight %}
 
 ### CloseButtonClicked
 
 The [`CloseButtonClicked`] event is triggered after a close button is clicked. You can get the current chip of removing chip.
 
 N> The [`CloseButtonClicked`] is supported only in `Input` type.
+
+{% tabs %}
+{% highlight xaml %}
+<buttons:SfChipGroup 
+		VerticalOptions="Center" 
+		ItemsSource="{Binding InputItems,Mode=TwoWay}" 
+		DisplayMemberPath="PersonName" 
+		ImageMemberPath="PersonImage"
+		ShowIcon="True"
+		Type="Input" 
+		CloseButtonClicked ="ChipGroup_CloseButtonClicked"
+		ChipPadding="8,8,0,0">
+	<buttons:SfChipGroup.ChipLayout>
+		<FlexLayout 
+				HorizontalOptions="Start" 
+				VerticalOptions="Center" 
+				Direction="Row" 
+				Wrap="Wrap" 
+				JustifyContent="Start" 
+				AlignContent="Start" 
+				AlignItems="Start"/>
+	</buttons:SfChipGroup.ChipLayout>
+</buttons:SfChipGroup>
+{% endhighlight %}
+{% highlight c# %}
+
+       public MainPage()
+        {
+            InitializeComponent();
+            SfChipGroup chipGroup = new SfChipGroup();
+			chipGroup.Type = SfChipsType.Input;
+			....
+            chipGroup.CloseButtonClicked += ChipGroup_CloseButtonClicked;
+            ....
+        }
+
+        ...
+        private void ChipGroup_CloseButtonClicked(object sender, EventArgs e)
+        {
+            //to your desired action
+        }
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Choice
 

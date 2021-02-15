@@ -104,7 +104,7 @@ private void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChange
 {% endhighlight %}
 {% endtabs %}   
 
-You can get the complete sample for customizing the Header of Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Sample-1251673941.zip)
+You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/loading-custom-headers-schedule-xamarin)
 
 ## Header Date Format
 

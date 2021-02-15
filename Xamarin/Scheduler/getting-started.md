@@ -204,8 +204,7 @@ namespace GettingStarted
 {% endhighlight %}   
 {% endtabs %}   
 
-You can download the source code for rendering of schedule for Xamarin.Forms from
-here [ScheduleProject](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleSample933334592.zip)
+You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/getting-started-schedule-xamarin)
 
 ## Changing Schedule Views   
     
@@ -334,8 +333,7 @@ schedule.DataSource = appointmentCollection;
 {% endhighlight %}   
 {% endtabs %}   
 
-You can download the source code for rendering of schedule appointment using `ScheduleAppointmentCollection` for Xamarin.Forms from
-here [ScheduleAppointment](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleAppointment-62423344.zip)
+You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/adding-appointments-schedule-xamarin)
 
 ### Adding Custom Appointments   
   

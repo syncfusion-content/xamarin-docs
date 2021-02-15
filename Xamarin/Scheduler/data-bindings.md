@@ -396,7 +396,7 @@ schedule.DataSource = Meetings;
 {% endtabs %}
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [Recurrence_Appointment](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Recurrence_Appointment-1708142299.zip).
+[here](https://github.com/SyncfusionExamples/create-custom-recurrence-appointment-using-recurrence-builder-schedule-xamarin)
 
 >**NOTE**
 In Schedule "Xamarin.Forms UWP", there is no need to set IsRecursive property for recurrence appointments. When a RecurrenceRule is set to schedule appointment, value of IsRecursive property will be set as true automatically for these appointments. So even if IsRecursive is set as false, there will be no effect on recurring appointments.

@@ -588,7 +588,7 @@ schedule.SelectedDate = null;
 {% endhighlight %}
 {% endtabs %} 
 
-You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
+You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/work-week-view-programmatic-selection-schedule-xamarin)
 
 >**NOTE**
 * `SfSchedule` does not support multiple selection.

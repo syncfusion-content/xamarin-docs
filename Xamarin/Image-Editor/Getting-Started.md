@@ -233,7 +233,7 @@ N> Refer to this [link](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/u
 
 ![SfImageEditor](ImageEditor_images/Gettingstarted.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/IESample-621789615)
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Gettting-Started-Xamarin-Image-Editor)
 
 ## See also
 

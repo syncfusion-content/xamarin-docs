@@ -1636,6 +1636,72 @@ Following properties are used to customize the bubble segment appearance.
 
 ![Bubble chart type in Xamarin.Forms](charttypes_images/charttypes_img16.png)
 
+### Show Indication For zero size bubbles
+
+The zero size bubble segments can be enabled or disabled by using the [`ShowIndicationForZeroValue`] property. By default, the property value is True.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Series>
+...
+
+	<chart:BubbleSeries ShowIndicationForZeroValue = "True"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+BubbleSeries bubbleSeries = new BubbleSeries() 
+{ 
+   ShowIndicationForZeroValue = true;
+};
+chart.Series.Add(bubbleSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ShowIndicationForZeroValue support in Xamarin.Forms](charttypes_images/ShowIndicationForZeroValueTrue.png)
+
+The following code example and screenshots describes when [`ShowIndicationForZeroValue`] value is false.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Series>
+...
+
+	<chart:BubbleSeries ShowIndicationForZeroValue = "False"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+BubbleSeries bubbleSeries = new BubbleSeries() 
+{ 
+   ShowIndicationForZeroValue = false;
+};
+chart.Series.Add(bubbleSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![ShowIndicationForZeroValue support in Xamarin.Forms](charttypes_images/ShowIndicationForZeroValueFalse.png)
+
 ## Scatter Chart	
 
 To render a [`Scatter chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/scatter-chart), create an instance of [`ScatterSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ScatterSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the scatter segment appearance.

@@ -311,6 +311,8 @@ N> The focused visual state is only available in Android and iOS platforms.
 **Focused visual state**
 ![SfNumericTextBox with disabled visual state](images/FocusState.jpg)
 
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Textbox)
+
 ## See also
 
 [How to disable the clear button in SfNumericTextBox]( https://www.syncfusion.com/kb/11874/how-to-disable-the-clear-button-in-numeric-textbox-in-xamarin-forms)

@@ -264,7 +264,7 @@ public BackdropSamplePage()
 
 {% endtabs %}
 
-You can find the complete getting started sample from this [link.]( http://files2.syncfusion.com/Xamarin.Forms/Samples/BackdropGettingStarted.zip)
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-started-Xamarin-backdrop-page)
 
 ## See also
 

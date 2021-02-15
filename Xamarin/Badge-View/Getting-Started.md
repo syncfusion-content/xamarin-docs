@@ -297,7 +297,7 @@ The following screenshot illustrates the result of the above code sample.
 
 ![Xamarin badge view getting started](getting-started_images/Badgeview.png) 
 
-You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-377507016).
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/Getting-started-xamarin-badge-view).
 
 ## See also
 

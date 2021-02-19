@@ -245,7 +245,9 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 
    return grid;
  });
+ {% endhighlight %}
 
+{% highlight c# %}
  public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
  {
     int result = 0;
@@ -413,7 +415,9 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 
   return stack;
 });
+{% endhighlight %}
 
+{% highlight c# %}
 public class GroupHeaderConverter : IValueConverter
 {
   public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -1054,7 +1058,9 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
    grid.Children.Add(stack);
    return grid;
  });
+{% endhighlight %}
 
+{% highlight c# %}
  public class SelectionBoolToBackgroundColorConverter : IValueConverter 
  { 
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture) 

@@ -507,16 +507,16 @@ The [DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.Da
              xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
              x:Class="GettingStarted.MainPage">             
              
-  <syncfusion:SfListView x:Name="listView"  ItemsSource="{Binding BookInfo}" >
+  <syncfusion:SfListView x:Name="listView"  ItemsSource="{Binding DataSource.DisplayItems}" >
   </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
  SfListView listView = new SfListView();
-    DataSource dataSource = new DataSource();
-    dataSource.Source = ViewModel.BookInfo;
-	listView.DataSource = dataSource;
-    listView.DataSource.Refresh();
+ DataSource dataSource = new DataSource();
+ dataSource.Source = ViewModel.BookInfo;
+ listView.DataSource = dataSource;
+ listView.DataSource.Refresh();
 {% endhighlight %}
 {% endtabs %}
 

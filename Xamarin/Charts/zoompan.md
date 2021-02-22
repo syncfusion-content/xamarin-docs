@@ -449,5 +449,8 @@ The following override methods are available in ChartZoomPanBehavior to customiz
 
 {% endhighlight %}
 
+## See also
+
+[How to perform zooming and panning in Xamarin.Forms Chart](https://github.com/SyncfusionExamples/How-to-perform-zooming-and-panning-in-Xamarin.Forms-Charts)
 
 

@@ -269,12 +269,18 @@ namespace SfListViewSample
 
         private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
         {
-            popupLayout.Dismiss();
+            if (popupLayout != null)
+            {
+                popupLayout.Dismiss();
+            }
         }
 
         private void ListView_ScrollStateChanged(object sender, ScrollStateChangedEventArgs e)
         {
-            popupLayout.Dismiss();
+            if (popupLayout != null)
+            {
+                popupLayout.Dismiss();
+            }
         }
 
         private void ListView_ItemHolding(object sender, ItemHoldingEventArgs e)
@@ -970,7 +976,7 @@ public partial class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ListViewSample_(2)1126902862).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/scrolling-listview-without-virtualization-xamarin).
 
 N> While loading in `AutoFitMode` make sure that the [ItemSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemSize) property value is not specified, to avoid extra space below the list. Update the size of the container after `ListView` loaded to render all the list items in the view.
 

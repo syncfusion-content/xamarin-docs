@@ -1081,7 +1081,7 @@ Download entire source code from GitHub [here](https://github.com/SyncfusionExam
 
 ![Group header appearance while expand listview](SfListView_images/SfListView-GroupHeaderAppearence.png)
 
-N> The grouping result is the binding context of the GroupHeaderTemplate.
+N> The `GroupResult` is the binding context of the `GroupHeaderTemplate`.
 
 ### Providing Indentation for GroupHeader items
 

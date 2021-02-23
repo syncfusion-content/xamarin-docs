@@ -1081,6 +1081,8 @@ Download entire source code from GitHub [here](https://github.com/SyncfusionExam
 
 ![Group header appearance while expand listview](SfListView_images/SfListView-GroupHeaderAppearence.png)
 
+N> The grouping result is the binding context of the GroupHeaderTemplate.
+
 ### Providing Indentation for GroupHeader items
 
 ListView allows you to provide space between the group header items by using the [Margin](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.view.margin?view=xamarin-forms#Xamarin_Forms_View_Margin) property of parent view in the [GroupHeaderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_GroupHeaderTemplate) property. For example, in the following code snippet, StackLayout is considered as parent view and spacing is provided by setting its margin.

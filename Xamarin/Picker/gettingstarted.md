@@ -416,7 +416,7 @@ picker.PickerMode = PickerMode.Dialog;
 
 The picker can be opened programmatically by setting  `SfPicker.IsOpen` property to true. Default value of `SfPicker.IsOpen` is false.
 
-Note: This property is automatically changed to false when you close the dialog by click outside of dialog.
+Note: This property is automatically changed to false when you close the dialog by clicking outside of dialog.
 
 {% tabs %}
 {% highlight xaml %}

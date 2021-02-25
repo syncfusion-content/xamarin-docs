@@ -654,7 +654,7 @@ To stick the group header to view, enable the property [SfListView.IsStickyGroup
 
 I> If sticky group header is enabled and `AutoFitMode` is `Height`, the panning experience will not be smooth or item's layout will not work as expected. To make the panning experience smooth, set the same size for all group header items by handling the `QueryItemSize` event.
 
-N> When the `IsStickyGroupHeader` is set to `true`, the [IsStickyHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_IsStickyHeader) property will be changed to `true` because the header item can not be scrolled. When the `IsStickyHeader` is set to `false`, if `IsStickyGroupHeader` is ``true` then it will be changed to `false` because the group header item cannot be sticky.
+N> When the `IsStickyGroupHeader` is set to `true`, the [IsStickyHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_IsStickyHeader) property will be changed to `true` because the header item can not be scrolled. When the `IsStickyHeader` is set to `false`, if `IsStickyGroupHeader` is `true` then it will be changed to `false` because the group header item cannot be sticky.
 
 {% tabs %}
 {% highlight xaml %}

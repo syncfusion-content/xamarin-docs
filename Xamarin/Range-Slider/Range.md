@@ -150,3 +150,26 @@ Gets or sets the range value, which ranges between Minimum and Maximum. The defa
 {% endtabs %}
 
 ![Range value in SfRangeSlider in Xamarin.Forms](images/Value.jpg)
+
+
+## Allow drag range.
+
+Enable or disable the drag options to change a value of the ranges by using `AllowDragRange` property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<range:SfRangeSlider x:Name="rangeslider" AllowDragRange = "True" ShowRange = "True"  Minimum="0" Maximum="100" Value="30"/>
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+rangeslider.AllowDragRange = true;
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![Allow Drag Range in SfRangeSlider in Xamarin.Forms](images/AllowDragRangeImage.gif)

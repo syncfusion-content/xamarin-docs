@@ -352,3 +352,153 @@ Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/customizing-auto
 N> Add the required image in drawable folder(Android), Resources folder(iOS) and at project location for UWP.
 
 ![Item template](images/Populating-Data/item-template.png)
+
+## Poupulate particular column of the items in DataTable through ItemsSource.
+
+[`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ItemsSource) property helps to populate the DataTable items by using the [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DisplayMemberPath) property. The following code explains the steps to add the data table items.
+
+
+### Create , initialize and add items in DataTable 
+
+Define a data table with Order details data in ViewModel.
+
+{% tabs %}
+
+{% highlight C# %}
+public class ViewModel
+{
+    public ViewModel()
+    {
+        DataTableCollection = GetDataTable();
+    }
+    public DataTable DataTableCollection { get; set; }
+ 
+    private DataTable GetDataTable()
+    {
+        DataTable dataTable = new DataTable();
+        dataTable.Columns.Add("Order ID", typeof(double));
+        dataTable.Columns.Add("Customer Name", typeof(string));
+        dataTable.Columns.Add("Customer ID", typeof(string));
+        dataTable.Columns.Add("Country", typeof(string));
+        dataTable.Rows.Add(1001, "Maria Anders", "ALFKI", "Germany");
+        dataTable.Rows.Add(1002, "Ana Trujilo", "ANATR", "Mexico");
+        dataTable.Rows.Add(1003, "Antonio Moreno","ENDGY", "Mexico");
+        dataTable.Rows.Add(1004, "Thomas Hardy", "ANTON", "UK");
+        dataTable.Rows.Add(1005, "Christina Berglund", "BERGS", "Sweden");
+        dataTable.Rows.Add(1006, "Hanna Moos", "BLAUS", "Germany");
+        dataTable.Rows.Add(1007, "Frederique Citeaux", "BLONP", "France");
+        dataTable.Rows.Add(1008, "Martin Sommer", "BOLID", "Spain");
+        dataTable.Rows.Add(1009, "Laurence Lebihan", "BONAP", "France");
+        dataTable.Rows.Add(1010, "Kathryn", "BOTTM", "Canada");
+        dataTable.Rows.Add(1011, "Tamer", "XDKLF", "UK");
+        dataTable.Rows.Add(1012, "Martin", "QEUDJ", "US");
+        dataTable.Rows.Add(1013, "Nancy", "ALOPS", "France");
+        dataTable.Rows.Add(1014, "Janet", "KSDIO", "Canada");
+        dataTable.Rows.Add(1015, "Dodsworth", "AWSDE", "Canada");
+        dataTable.Rows.Add(1016, "Buchanan", "CDFKL", "Germany");
+        dataTable.Rows.Add(1017, "Therasa", "WSCJD", "Canada");
+        dataTable.Rows.Add(1018, "Margaret", "PLSKD", "UK");
+        dataTable.Rows.Add(1019, "Anto", "CCDSE", "Sweden");
+        dataTable.Rows.Add(1020, "Edward", "EWUJG", "Germany");
+        dataTable.Rows.Add(1021, "Anne", "AWSDK", "US");
+        dataTable.Rows.Add(1022, "Callahan", "ODKLF", "UK");
+        dataTable.Rows.Add(1023, "Vinet", "OEDKL", "France"); 
+        return dataTable;
+    }
+}
+{% endhighlight %}
+
+{% endtabs %}
+
+Add the column name in the `DisplayMemberPath` property to display all the data's of the corresponding column which is given as following code.   
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:autocomplete="clr-namespace:Syncfusion.SfAutoComplete.XForms;assembly=Syncfusion.SfAutoComplete.XForms"
+             xmlns:ListCollection="clr-namespace:System.Collections.Generic;assembly=netstandard"
+             xmlns:local="clr-namespace:AutocompleteSample"
+             x:Class="AutocompleteSample.MainPage">
+    <ContentPage.BindingContext>
+        <local:EmployeeViewModel/>
+    </ContentPage.BindingContext>
+    <StackLayout VerticalOptions="Start" 
+                 HorizontalOptions="Start" 
+                 Padding="30">
+        <autocomplete:SfAutoComplete x:Name="autocomplete"  
+                                     SelectedIndex="2" 
+                                     DisplayMemberPath="CustomerID" 
+                                     ItemsSource="{Binding DataTableCollection}">
+            <autocomplete:SfAutoComplete.ItemTemplate>
+                <DataTemplate>
+                     <DataTemplate>
+                        <Grid>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="{Binding}" HeightRequest="200" WidthRequest="200"></Label>
+                            </StackLayout>
+                        </Grid>
+                    </DataTemplate>
+                </DataTemplate>
+            </autocomplete:SfAutoComplete.ItemTemplate>
+        </autocomplete:SfAutoComplete>
+    </StackLayout>
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using Syncfusion.SfAutoComplete.XForms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms;
+
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        SfAutoComplete autoComplete;
+        public MainPage()
+        {
+            InitializeComponent();
+            autoComplete = new SfAutoComplete();
+            autoComplete.HeightRequest = 40;
+            autoComplete.SelectedIndex = 2;
+            autoComplete.DisplayMemberPath="CustomerID"; 
+            ViewModel viewModel = new ViewModel();
+
+            StackLayout layout = new StackLayout()
+            {
+                VerticalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.Start,
+                Padding = new Thickness(30)
+            };
+
+            DataTemplate itemTemplate = new DataTemplate(() =>
+            {
+                Grid grid;
+                Label label;
+                grid = new Grid();
+                label = new Label();
+                label.SetBinding(Label.TextProperty, ".");
+                label.WidthRequest = 200;
+                label.HeightRequest = 200;
+                grid.Children.Add(label);
+                return new ViewCell { View = grid };
+            });
+            autoComplete.ItemTemplate = itemTemplate;
+            autoComplete.ItemsSource = viewModel.DataTableCollection;
+            layout.Children.Add(autoComplete);
+            this.BindingContext = viewModel;
+            this.Content = layout;
+        }
+
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}

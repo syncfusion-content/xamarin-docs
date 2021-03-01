@@ -1,15 +1,14 @@
 ---
-layout : post
-title : Data Binding  in Syncfusion AutoComplete control for Xamarin.Forms
-description : This section decribes how to populate the strings or objects in the autocomplete for the filtering suggestion list. 
-platform : xamarin
-control : SfAutoComplete
-documentation : ug
+layout: post
+title: Data Binding  in Syncfusion AutoComplete control for Xamarin.Forms
+description: This section decribes how to populate the strings or objects in the autocomplete for the filtering suggestion list. 
+platform: xamarin
+control: SfAutoComplete
+documentation: ug
 ---
 
-# Populating Data
 
-## Populating Data in Xamarin AutoComplete
+# Populating Data in Xamarin AutoComplete
 
 SfAutoComplete control can be populated with a list of string or business objects, which assists the user while typing. Users can choose one item from the filtered suggestion list.
 
@@ -353,7 +352,7 @@ N> Add the required image in drawable folder(Android), Resources folder(iOS) and
 
 ![Item template](images/Populating-Data/item-template.png)
 
-## Poupulate particular column of the items in DataTable through ItemsSource.
+## Populate particular column of the items in DataTable through ItemsSource.
 
 [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ItemsSource) property helps to populate the DataTable items by using the [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DisplayMemberPath) property. The following code explains the steps to add the data table items.
 

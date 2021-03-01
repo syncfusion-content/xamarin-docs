@@ -259,7 +259,7 @@ N> Add the required image in drawable folder(Android), Resources folder(iOS) and
 
 ![ItemTemplateImage](images/Populating-Data/item-template.png)
 
-## Poupulate particular column of the items in DataTable through ItemsSource.
+## Populate particular column of the items in DataTable through ItemsSource.
 
 [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ItemsSource) property helps to populate the DataTable items by using the [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DisplayMemberPath) property. The following code explains the steps to add the data table items.
 

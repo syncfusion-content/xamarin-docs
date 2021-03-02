@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in Xamarin Expander (SfExpander)
 
-The Expander allows customizing appearance of the Icon, and provides various functionalities to the users.
+The Expander allows to customize appearance of the Icon, and provides various functionalities to the users.
 
 ## Header icon position 
 

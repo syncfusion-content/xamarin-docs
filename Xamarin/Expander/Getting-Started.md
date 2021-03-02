@@ -286,7 +286,7 @@ The `SfExpander` allows you to customize the rate of change of parameter over ti
 
 ## Expand and Collapse 
 
-The `SfExpander` allows you to programmatically expand and collapse by using the [IsExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_IsExpanded) property of SfExpander.  Also, expand & collapse interaction by user can be control by handling `Expanding` and `Collapsing` events.  
+The `SfExpander` allows you to programmatically expand and collapse by using the [IsExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Expander.SfExpander.html#Syncfusion_XForms_Expander_SfExpander_IsExpanded) property of SfExpander. The user can control the expand and collapse interactions by handling the `Expanding` and `Collapsing` events.
 
 {% tabs %}
 {% highlight xaml %}

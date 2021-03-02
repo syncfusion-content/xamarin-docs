@@ -190,6 +190,8 @@ calendar.BlackoutDates = black_dates;
 
 {% endhighlight %}
 
+![Blackout Dates](images/Calendar-Blackoutdates.png)
+
 ## Enable Multiple Selection
 
 `SfCalendar` control allows user to select one or more dates at a time among the non black out dates.
@@ -212,6 +214,8 @@ calendar.SelectionMode=SelectionMode.MultiSelection;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Multiple Selection](images/Calendar - Multiselection.png)
 
 ## Restrict Dates
 

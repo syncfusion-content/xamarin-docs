@@ -465,7 +465,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
->N `Title` property is applicable only for XForms UWP platform.
+N>`Title` property is applicable only for XForms UWP platform.
 
 ## Segment editor
 

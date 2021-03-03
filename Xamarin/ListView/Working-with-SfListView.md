@@ -408,7 +408,7 @@ You can download the entire source code of this demo [here](https://github.com/S
 
 ## Paging
 
-The `SfListView` allows displaying paging using the [SfDataPager](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.html) control. It can be performed through loading data dynamically into ItemsSource of the SfListView using OnDemandLoading event for the current page by setting the [SfDataPager.UseOnDemandPaging](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html#Syncfusion_SfDataGrid_XForms_DataPager_SfDataPager_UseOnDemandPaging) to `True`. By using the [SfDataPager.PageSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html#Syncfusion_SfDataGrid_XForms_DataPager_SfDataPager_PageSize) property, you can define the number of list items to be displayed in each page.
+The `SfListView` allows displaying the paging by using the [SfDataPager](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.html) control. It can be performed through loading data dynamically into ItemsSource of the SfListView using OnDemandLoading event for the current page by setting the [SfDataPager.UseOnDemandPaging](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html#Syncfusion_SfDataGrid_XForms_DataPager_SfDataPager_UseOnDemandPaging) to `True`. By using the [SfDataPager.PageSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataPager.SfDataPager.html#Syncfusion_SfDataGrid_XForms_DataPager_SfDataPager_PageSize) property, you can define the number of list items to be displayed in each page.
 
 N> For more details about paging refer to [here](https://help.syncfusion.com/xamarin/sfdatagrid/paging).
 
@@ -989,7 +989,7 @@ The following limitations should be noted when using the previous approaches:
 
 ## Working with nested ListView
  
-`ListView` allows you to load another `ListView` inside its [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate). When the [AutoFitMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AutoFitMode) of the outer ListView is `Height`, the size of the inner ListView will be allocated from the maximum screen size. Since the exact size for the inner list cannot not be obtained before loading the view. 
+`ListView` allows you to load another `ListView` inside its [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate). When the [AutoFitMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_AutoFitMode) of the outer ListView is `Height`, the size of the inner ListView will be allocated from the maximum screen size. Since the exact size for the inner list cannot be obtained before loading the view. 
  
 To get a fixed height for the inner ListView, define a value in its `HeightRequest`. If the items inside the inner ListView are less, allocate the total extend of the inner list to its `HeightRequest`.
  

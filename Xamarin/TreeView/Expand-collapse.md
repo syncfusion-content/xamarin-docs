@@ -67,7 +67,7 @@ treeView.CollapseNode(node);
 
 ### Expand and Collapse all the nodes
 
-Expand and Collapse all the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html) programmatically at runtime by using the [SfTreeView.ExpandAll](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ExpandAll) method and [SfTreeView.CollapseAll](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_CollapseAll) method.
+You can expand and collapse all the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html) programmatically at runtime by using the [SfTreeView.ExpandAll](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ExpandAll) method and [SfTreeView.CollapseAll](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_CollapseAll) method.
 
 {% tabs %}
 {% highlight c# %}

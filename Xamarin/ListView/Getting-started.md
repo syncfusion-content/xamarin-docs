@@ -495,7 +495,7 @@ listView.LayoutManager = new GridLayout() { SpanCount = 3 };
 
 ## DataSource
 
-The [DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html) gets the raw data and processes data operations such as sorting, filtering, and grouping in SfListView. The data source of the ListView is set using the `ItemsSource` attribute.
+The [DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html) gets the raw data and processes data operations such as sorting, filtering, and grouping in SfListView. The data source of the ListView is set by using the `ItemsSource` attribute.
 
 {% tabs %}
 {% highlight xaml %}

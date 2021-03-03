@@ -190,7 +190,7 @@ calendar.BlackoutDates = black_dates;
 
 {% endhighlight %}
 
-![Blackout Dates](images/Calendar-Blackoutdates.png)
+![Xamarin Calendar Blackout Dates](images/Calendar-Blackoutdates.png)
 
 ## Enable Multiple Selection
 
@@ -215,7 +215,7 @@ calendar.SelectionMode=SelectionMode.MultiSelection;
 
 {% endtabs %}
 
-![Multiple Selection](images/Calendar - Multiselection.png)
+![Xamarin Calendar Multiple Selection](images/Calendar - Multiselection.png)
 
 ## Restrict Dates
 
@@ -233,7 +233,7 @@ this.Content = calendar;
 {% endhighlight %}
 
 
-![Resrict Dates](images/xamarin.forms-calendar-restrictdates.png)
+![Xamarin Calendar Resrict Dates](images/xamarin.forms-calendar-restrictdates.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [CalendarGettingStarted](https://github.com/SyncfusionExamples/xamarin-calendar-getting-started)

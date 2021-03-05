@@ -166,7 +166,7 @@ N> The [`ItemRemoved`] is supported only in `Input` type.
         }
 
         ...
-        private void ChipGroup_ItemRemoved(object sender, EventArgs e)
+        private void ChipGroup_ItemRemoved(object sender, Syncfusion.Buttons.XForms.SfChip.ItemRemovedEventArgs e)
         {
             //to your desired action
         }

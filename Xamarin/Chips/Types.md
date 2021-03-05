@@ -127,7 +127,7 @@ Download the complete sample [here](https://github.com/SyncfusionExamples/How-to
 
 ### ItemRemoved
 
-The [`ItemRemoved`] event is triggered after a close button is clicked. You can get the current chip of removing chip.
+The [`ItemRemoved`] event is triggered after a close button is clicked. You can get the current removing chip item.
 
 N> The [`ItemRemoved`] is supported only in `Input` type.
 

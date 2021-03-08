@@ -133,7 +133,8 @@ public class CountriesViewModel
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection148873057).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/binding-selected-items-treeview-xamarin).
+
 ![Xamarin Forms TreeView with selection](TreeView_images/TreeView_Selection.png)
 
 ## Commands
@@ -401,9 +402,9 @@ public class CountriesViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the example sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EventToCommand839299289.zip).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/event-to-command-treeview-xamarin).
 
-For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
+For more information regarding the EventToCommand behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
 
 ## Checkbox items binding in MVVM
 
@@ -461,7 +462,9 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source of this demo from [here](https://github.com/SyncfusionExamples/checkbox_bound_mode). To know more about usage of checkbox, you can refer the documentation from [here](https://help.syncfusion.com/xamarin/sftreeview/checkbox).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/checkbox_bound_mode). 
+
+To know more about usage of checkbox, you can refer the documentation from [here](https://help.syncfusion.com/xamarin/sftreeview/checkbox).
 
 ## See also
 

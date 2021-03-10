@@ -123,7 +123,7 @@ autoComplete.LoadMore(5);
 
 ## Load More Button Tapped Event
 
-The `LoadMoreButtonTapped` can be triggered only when tap on the load more button.
+The `LoadMoreButtonTapped` can be triggered only when you tap on the load more button.
 
 {% tabs %}
 

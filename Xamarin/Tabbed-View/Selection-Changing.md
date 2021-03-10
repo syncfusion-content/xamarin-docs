@@ -11,13 +11,13 @@ documentation: ug
 
 ## SelectionChanging event
 
-The `SelectionChanging` event is used to notify before the selection is going to change by swiping, tapping the tab header and dynamically setting the `SelectedIndex` property of `SfTabView`.
+The `SelectionChanging` event is used to notify, before the selection is going to change by swiping, tapping the tab header, and dynamically setting the `SelectedIndex` property of `SfTabView`.
 
 ## SelectionChanging event args
 
-`Index` - Gets the value of the index which going to be selected
+`Index` - Gets the value of the index, which is going to be selected.
 
-`Cancel` - Gets or sets the bool value of the tab item which is going to be selected or not.
+`Cancel` - Gets or sets the bool value of the tab item, which is going to be selected or not.
 
 {% tabs %}
 

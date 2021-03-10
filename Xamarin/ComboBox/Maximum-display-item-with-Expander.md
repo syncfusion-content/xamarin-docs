@@ -1,7 +1,7 @@
 ---
 layout: post
 title: LoadMore in Syncfusion SfComboBox control for Xamarin.Forms
-description: This section will deswcribe about how to restrict maximum suggestion to be displayed in Xamarin.Forms SfComboBox.
+description: This section describes how to restrict the maximum suggestion to be displayed in Xamarin.Forms SfComboBox.
 platform: xamarin
 control: SfComboBox
 documentation: ug
@@ -10,7 +10,7 @@ documentation: ug
 
 ## Maximum display item with expander in Xamarin SfComboBox
 
-Restrict the number of suggestions displayed and have the remaining items loaded by selecting LoadMore.We can restrict maximum suggestion to be displayed with the `MaximumSuggestion` property. We can set the desire text for the displaying the Load more text with the property `LoadMoreText`.
+Restrict the number of suggestions displayed and have the remaining items loaded by selecting the LoadMore. you can restrict the maximum suggestion to be displayed with the `MaximumSuggestion` property and also you can set the desire text for displaying the LoadMore text with the LoadMoreText` property.
 
 {% tabs %}
 
@@ -104,9 +104,9 @@ namespace ComboBoxSample
 
 ![Maximum display item with Expander](images/Maximum-display-item-with-Expander/LoadMore.png)
 
-## Restricting the maximum display of item dynamically
+## Restricting the maximum display of items dynamically
 
-We can restrict the maximum display of items dynamically by calling `LoadMore` method. The user can dynamically change the maximum suggestion count by calling LoadMore method by giving the maximum suggestion as the argument inside.
+You can restrict the maximum display of items dynamically by calling the `LoadMore` method. The user can dynamically change the maximum suggestion count by calling the LoadMore method by giving the maximum suggestion as the argument inside.
 
 N> LoadMore method has enhanced only on iOS and Android platform.
 
@@ -124,7 +124,7 @@ comboBox.LoadMore(5);
 
 ## Load More Button Tapped Event
 
-The `LoadMoreButtonTapped` can be triggered only when tap on the load more button.
+The `LoadMoreButtonTapped` can be triggered only when you tap on the load more button.
 
 {% tabs %}
 

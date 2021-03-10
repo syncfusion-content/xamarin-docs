@@ -154,7 +154,7 @@ Gets or sets the range value, which ranges between Minimum and Maximum. The defa
 
 ## Allow drag range.
 
-Enable or disable the drag options to change a value of the ranges by using `AllowDragRange` property.
+Enable or disable the drag options to change a value of the ranges by using the `AllowDragRange` property.
 
 {% tabs %}
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding  in Syncfusion AutoComplete control for Xamarin.Forms
-description: This section decribes how to populate the strings or objects in the autocomplete for the filtering suggestion list. 
+title: Data Binding in Syncfusion AutoComplete control for Xamarin.Forms.
+description: This section describes how to populate the strings or objects in the autocomplete for the filtering suggestion list. 
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
@@ -352,14 +352,14 @@ N> Add the required image in drawable folder(Android), Resources folder(iOS) and
 
 ![Item template](images/Populating-Data/item-template.png)
 
-## Populate particular column of the items in DataTable through ItemsSource.
+## Populate a particular column of the items in DataTable using ItemsSource.
 
-[`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ItemsSource) property helps to populate the DataTable items by using the [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DisplayMemberPath) property. The following code explains the steps to add the data table items.
+The [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_ItemsSource) property helps to populate the DataTable items by using the [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_DisplayMemberPath) property. The following code explains the steps to add the data table items.
 
 
-### Create , initialize and add items in DataTable 
+### Create, initialize, and add items in DataTable
 
-Define a data table with Order details data in ViewModel.
+Define a DataTable with order details data in ViewModel.
 
 {% tabs %}
 
@@ -409,7 +409,7 @@ public class ViewModel
 
 {% endtabs %}
 
-Add the column name in the `DisplayMemberPath` property to display all the data's of the corresponding column which is given as following code.   
+Add the column name in the DisplayMemberPath property, to display all the data of the corresponding column, which is given as following code.   
 
 {% tabs %}
 

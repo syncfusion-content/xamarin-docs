@@ -1151,7 +1151,7 @@ These events will be triggered while perform respective touch actions in timeslo
 • [DateTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.CellTappedEventArgs.html#Syncfusion_SfSchedule_XForms_CellTappedEventArgs_Datetime) - Contains selected time slot DateTime value.
 • [Resource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.CellTappedEventArgs.html#Syncfusion_SfSchedule_XForms_CellTappedEventArgs_Resource) - Contains the resource value of the selected time slot when the `ScheduleView` is `TimelineView` and the `ResourceViewMode` is `Absolute`. Otherwise, it returns null.
 
->N Occurrences can be handled from tapped event when single occurrence remains unmodified.
+N> Occurrences can be handled from tapped event when single occurrence remains unmodified.
 
 {% tabs %}
 {% highlight c# %}
@@ -1329,7 +1329,7 @@ this.Content = schedule;
  ![Minimum Appointment height support in schedule Xamarin Forms](PopulatingAppointments_images/minheight.png)
 
 >**NOTE**
-* `MinHeight` value will be set, when the an appointment height (duration) value lesser than MinHeight. 
+* `MinHeight` value will be set, when the appointment height (duration) value lesser than MinHeight. 
 * Appointment height (duration) value will be set, when the appointment height (duration) value greater than `MinHeight`.
 * TimeInterval value will be set, when Minimum Height greater than TimeInterval with lesser appointment height (duration).
 * `MinHeight` has ScheduleAppointmentMapping Support.

@@ -309,6 +309,6 @@ private void ExecuteOnDemandLoading(object obj)
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire [source code](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-in-Xamarin.Forms-TreeView) here.
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/How-to-load-data-on-demand-in-Xamarin.Forms-TreeView).
 
 ![Xamarin Forms TreeView with Load On-Demand](TreeView_images/LoadOnDemand-Xamarin-Forms-TreeView.gif)

@@ -20,20 +20,20 @@ TreeView can be populated either with the data source by using a [ItemsSource](h
 
 To update the collection changes in UI, it is necessary to define [NotificationSubscriptionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.NotificationSubscriptionMode.html) to Treeview as CollectionChanged/PropertyChanged. 
 `NotificationSubscriptionMode` enum has following members:
-* CollectionChange - Updates its tree structure when child items collection gets changed.
-* PropertyChange - Updates its ChildItems when associated collection property gets changed.
-* None - It is a default mode and it doesn't reflect collection/property changes in UI.
+* [CollectionChange](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.NotificationSubscriptionMode.html#Syncfusion_TreeView_Engine_NotificationSubscriptionMode_CollectionChange) - Updates its tree structure when the child items collection is changed.
+* [PropertyChange](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.NotificationSubscriptionMode.html#Syncfusion_TreeView_Engine_NotificationSubscriptionMode_PropertyChange) - Updates its ChildItems when the associated collection property is changed.
+* [None](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.NotificationSubscriptionMode.html#Syncfusion_TreeView_Engine_NotificationSubscriptionMode_None) - It is a default mode and it doesn't reflect collection/property changes in UI.
 
 To decide how to populate the nodes, it is necessary to set this [NodePopulationMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_NodePopulationMode) API to Treeview. 
 
 The `NodePopulationMode` API has following enum values:
 
-* OnDemand - Populate the child nodes only when parent nodes is expanded. It is the default value.
-* Instant - Populates all the child nodes when Treeview control is initially loaded.
+* [OnDemand](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeNodePopulationMode.html#Syncfusion_TreeView_Engine_TreeNodePopulationMode_OnDemand) - Populate the child nodes only when parent nodes is expanded. It is the default value.
+* [Instant](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeNodePopulationMode.html#Syncfusion_TreeView_Engine_TreeNodePopulationMode_Instant) - Populates all the child nodes when Treeview control is initially loaded.
 
 ### Create Data Model for treeview
 
-Create a simple data source as shown in the following code example in a new class file, and save it as FileManager.cs file: 
+Create a simple data source as shown in the following code example in a new class file, and save it as `FileManager.cs` file: 
 
 {% tabs %}
 {% highlight c# %}
@@ -89,7 +89,7 @@ public class FileManager : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-Create a model repository class with ImageNodeInfo collection property initialized with required number of data objects in a new class file as shown in the following code example, and save it as FileManagerViewModel.cs file:
+Create a model repository class with ImageNodeInfo collection property initialized with required number of data objects in a new class file as shown in the following code example, and save it as `FileManagerViewModel.cs` file:
 
 {% tabs %}
 {% highlight c# %}
@@ -224,13 +224,13 @@ MainPage = new ContentPage { Content = treeView };
 {% endhighlight %}
 {% endtabs %}
 
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedBound1582736825).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin-treeview-databinding).
 
 ![Xamarin Forms TreeView in bound mode](TreeView_images/TreeView_Templating.png)
 
 ## Populating Nodes without data binding - Unbound Mode
 
-You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html) objects by yourself to display the data in a hierarchical view. Create the node hierarchy by adding one or more root nodes to the [Nodes](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_Nodes) collection. Each `TreeViewNode` can then have more nodes added to its Children collection. You can nest tree view nodes to whatever depth you require. By using the [Content](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_Content) property, you can get the data object associated with the tree view node. For the Bound mode, you can bind the data object using the `Content` property by setting the `ItemTemplateContextType` to `Node`. For Unbound mode, you can directly set the `Content` value. You can get the parent node of the treeview nodes by using the [ParentNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_ParentNode) property of the `TreeViewNode`. By using the [Level](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_Level) property of the TreeViewNode, you can get the zero-based depth of the tree node in the TreeView control. For the `Level` property, the root node is considered the first level of nesting and returns 0.
+You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html) objects by yourself to display the data in a hierarchical view. Create the node hierarchy by adding one or more root nodes to the [Nodes](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_Nodes) collection. Each `TreeViewNode` can then have more nodes added to its Children collection. You can nest the tree view nodes to any depth you need. By using the [Content](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_Content) property, you can get the data object associated with the tree view node. For the Bound mode, you can bind the data object using the `Content` property by setting the `ItemTemplateContextType` to `Node`. For Unbound mode, you can directly set the `Content` value. You can get the parent node of the treeview nodes by using the [ParentNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_ParentNode) property of the `TreeViewNode`. By using the [Level](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_Level) property of the TreeViewNode, you can get the zero-based depth of the tree node in the TreeView control. For the `Level` property, the root node is considered the first level of nesting and returns 0.
 
 {% tabs %}
 {% highlight xaml %}
@@ -298,8 +298,6 @@ You can create and manage the [TreeViewNode](https://help.syncfusion.com/cr/xama
 {% endhighlight %}
 {% endtabs %}
 
-Now, run the application to render the below output:
-
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedUnbound1766363128).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/xamarin-treeview-unbound-mode).
 
 ![Xamarin Forms TreeView in unbound mode](TreeView_images/TreeView_UnBound.png)

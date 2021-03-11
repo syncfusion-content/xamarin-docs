@@ -214,7 +214,7 @@ On changing the `GeoCoordinates` point dynamically, map will provide transition 
 
 {% endtabs %}
 
-![Xamarin Coordinate image](Images/Coordinate.png)
+![Xamarin Coordinate image](Images/MapsAnimation.gif)
 
 {% tabs %}
 

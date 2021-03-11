@@ -188,7 +188,7 @@ The ImageryLayer provides the support to reset the maps to the default view when
 
 The `GeoCoordinates`(center) property allows you view the desired area at the center on loading. By default, the `GeoCoordinates` value is (0,0). So, first parameter of the latitude value "0" and second parameter of the longitude value "0" are shown at the center.
 
-On changing the `GeoCoordinates` point dynamically, map will provide transition animation from the previous geocoordinates to the new geocoordinates value.
+On changing the `GeoCoordinates` point dynamically, map will provide transition animation from the previous geo coordinates to the new geo coordinates value.
 
 {% tabs %}
 

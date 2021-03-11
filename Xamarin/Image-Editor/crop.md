@@ -159,7 +159,9 @@ The following code sample will add the cropping preview on the image in square s
 
 ## Tilt the image
 
-You can tilt the image from -45 to 45 degree by using the Tilt method in the SfImageEditor. To apply this effect to the image you can call the Crop method after applying the Tilt method. 
+You can tilt the image from -45 to +45 degree by using the `Tilt()` method. It will be in preview state and to apply this effect to the image you can call the `Crop()` method.
+
+N> Any action performed when the image is in Tilt preview state will reset the tilt effect of that image.
 
 {% tabs %}
 
@@ -173,6 +175,14 @@ editor.Tilt(30);
 {% endhighlight %}
 
 {% endtabs %}
+
+Below screenshot depicts the tilt preview state.
+
+![Tilt preview](ImageEditor_images/TiltPreview.png)
+
+After tilt preview, cropping can be performed using the available cropping options.
+
+![Tilt crop](ImageEditor_images/TiltCrop.png)
 
 
 ## See also

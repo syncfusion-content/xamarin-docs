@@ -254,7 +254,7 @@ The following screenshot shows the output when items are sorted by year. Downloa
 
 ## Sorting with grouping by month and year
 
-Sorting the items along with grouping by using `KeySelector` based on retuning the month and year value of the data-time property.
+Sorting the items along with grouping by using `KeySelector` based on returning the month and year value of the data-time property.
 
 {% tabs %}
 {% highlight xaml %}

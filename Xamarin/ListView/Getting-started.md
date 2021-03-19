@@ -495,7 +495,7 @@ listView.LayoutManager = new GridLayout() { SpanCount = 3 };
 
 ## DataSource
 
-The [DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html) gets the raw data and processes data operations such as sorting, filtering, and grouping in SfListView. The data source of the ListView is set using the `ItemsSource` attribute.
+The [DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html) gets the raw data and processes data operations such as sorting, filtering, and grouping in SfListView. The data source of the ListView is set by using the `ItemsSource` attribute.
 
 {% tabs %}
 {% highlight xaml %}
@@ -507,16 +507,16 @@ The [DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.Da
              xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
              x:Class="GettingStarted.MainPage">             
              
-  <syncfusion:SfListView x:Name="listView"  ItemsSource="{Binding BookInfo}" >
+  <syncfusion:SfListView x:Name="listView"  ItemsSource="{Binding DataSource.DisplayItems}" >
   </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
  SfListView listView = new SfListView();
-    DataSource dataSource = new DataSource();
-    dataSource.Source = ViewModel.BookInfo;
-	listView.DataSource = dataSource;
-    listView.DataSource.Refresh();
+ DataSource dataSource = new DataSource();
+ dataSource.Source = ViewModel.BookInfo;
+ listView.DataSource = dataSource;
+ listView.DataSource.Refresh();
 {% endhighlight %}
 {% endtabs %}
 

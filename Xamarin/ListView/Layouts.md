@@ -127,7 +127,7 @@ public partial class GridLayoutPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SpanCount-1456879973).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/change-span-count-based-on-screen-size-listview-xamarin).
 
 ## See also
 

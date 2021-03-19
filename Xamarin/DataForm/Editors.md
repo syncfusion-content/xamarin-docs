@@ -465,7 +465,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
->N `Title` property is applicable only for XForms UWP platform.
+N>`Title` property is applicable only for XForms UWP platform.
 
 ## Segment editor
 
@@ -1006,7 +1006,7 @@ public class Address
 
 ![Loading complex type property values in picker in Xamarin.Forms DataForm](SfDataForm_images/ComplexPropertyPicker.png)
 
-You can download the entire source code of this demo for Xamarin.Forms from here [DataFormPickerEditor](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfDataForm_Picker-2009667790.zip)
+You can download the entire source code of this demo for Xamarin.Forms from here [DataFormPickerEditor](https://github.com/SyncfusionExamples/dataform-picker-editor-xamarin)
 
 N> `PickerEditor` not supported in `Xamarin.Forms.UWP`.
 
@@ -1300,7 +1300,7 @@ By default, when you perform cut or copy operation, the clipboard text will be i
 
 ### Mask and mask types 
 
-The mask and mask type of input can be customized using the [Mask](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html#Syncfusion_XForms_DataForm_DataFormMaskedEditTextItem_Mask) and [MaskType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html#Syncfusion_XForms_DataForm_DataFormMaskedEditTextItem_MaskType) properties of DataFormMaskedEditTextItem. Refer to this [link](https://help.syncfusion.com/xamarin/sfmaskededit/masktype.html) to know more about the mask characters and mask types available in the masked editor. 
+The mask and mask type of input can be customized using the [Mask](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html#Syncfusion_XForms_DataForm_DataFormMaskedEditTextItem_Mask) and [MaskType](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html#Syncfusion_XForms_DataForm_DataFormMaskedEditTextItem_MaskType) properties of DataFormMaskedEditTextItem. Refer to this [link](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.DataFormMaskedEditTextItem.html#Syncfusion_XForms_DataForm_DataFormMaskedEditTextItem_MaskType) to know more about the mask characters and mask types available in the masked editor. 
 
 {% tabs %}
 {% highlight c# %}

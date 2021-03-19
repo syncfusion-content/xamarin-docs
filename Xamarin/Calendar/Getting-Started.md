@@ -190,6 +190,8 @@ calendar.BlackoutDates = black_dates;
 
 {% endhighlight %}
 
+![Xamarin Calendar Blackout Dates](images/Calendar-Blackoutdates.png)
+
 ## Enable Multiple Selection
 
 `SfCalendar` control allows user to select one or more dates at a time among the non black out dates.
@@ -213,6 +215,8 @@ calendar.SelectionMode=SelectionMode.MultiSelection;
 
 {% endtabs %}
 
+![Xamarin Calendar Multiple Selection](images/Calendar - Multiselection.png)
+
 ## Restrict Dates
 
 `SfCalendar` allows to select dates that falls between certain range of dates. Here, restrict user to select dates only in current year.
@@ -229,7 +233,7 @@ this.Content = calendar;
 {% endhighlight %}
 
 
-![Resrict Dates](images/xamarin.forms-calendar-restrictdates.png)
+![Xamarin Calendar Resrict Dates](images/xamarin.forms-calendar-restrictdates.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [CalendarGettingStarted](https://github.com/SyncfusionExamples/xamarin-calendar-getting-started)

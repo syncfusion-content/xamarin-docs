@@ -623,7 +623,6 @@ public partial class MainPage : ContentPage
     //To get the current first item which is visible in the View.
     var firstItem = ListView.DataSource.DisplayItems[0];
     ViewModel.IndicatorIsVisible = true;
-    await Task.Delay(4000);
     var r = new Random();
 
     //To avoid layout calls for arranging each and every items to be added in the View. 
@@ -637,7 +636,7 @@ public partial class MainPage : ContentPage
       ViewModel.Messages.Insert(0, collection);
     }
     ListView.DataSource.EndInit();
-
+    await Task.Delay(4000);
     var firstItemIndex = ListView.DataSource.DisplayItems.IndexOf(firstItem);
     var header = (ListView.HeaderTemplate != null && !ListView.IsStickyHeader) ? 1 : 0;
     var totalItems = firstItemIndex + header;
@@ -652,7 +651,7 @@ public partial class MainPage : ContentPage
     //To avoid loading items initially when page loaded.
     if (!isScrolled)
       (ListView.LayoutManager as LinearLayout).ScrollToRowIndex(ViewModel.Messages.Count - 1, true);
-    headerItem = visualContainer.Children[0] as HeaderItem;
+    headerItem = visualContainer.Children.FirstOrDefault(obj => obj.GetType() == typeof(HeaderItem)) as HeaderItem;
     headerItem.PropertyChanged += HeaderItem_PropertyChanged;
     isScrolled = true;
   }
@@ -759,7 +758,6 @@ public partial class MainPage : ContentPage
     var firstItem = ListView.DataSource.DisplayItems[0];
     ViewModel.GridIsVisible = false;
     ViewModel.IndicatorIsVisible = true;
-    await Task.Delay(2000);
     var r = new Random();
 
     //To avoid layout calls for arranging each and every items to be added in the View. 
@@ -773,6 +771,7 @@ public partial class MainPage : ContentPage
       ViewModel.Messages.Insert(0, collection);
     }
     ListView.DataSource.EndInit();
+    await Task.Delay(2000);
     var firstItemIndex = ListView.DataSource.DisplayItems.IndexOf(firstItem);
     var header = (ListView.HeaderTemplate != null && !ListView.IsStickyHeader) ? 1 : 0;
     var totalItems = firstItemIndex + header;

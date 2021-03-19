@@ -178,4 +178,4 @@ Run the project and check if you get the following output to make sure that you 
 
 ![Xamarin.Forms masked edit](SfMaskedEditImages/GettingStarted.png)
 
-You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted449308990).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Masted-edit).

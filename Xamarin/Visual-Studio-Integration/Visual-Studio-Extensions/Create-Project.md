@@ -52,7 +52,9 @@ Use the following steps to create the **Syncfusion** **Xamarin** **Application**
    1. **Target Device:**  Select the device of Xamarin.iOS project either Unified, iPhone/iPod, or iPad.
    2.	**Target Version:** Choose the version of Xamarin.iOS Project.
 
-   **Choose controls:** Choose the Xamarin application needs to create with the Syncfusion controls. 
+   **Choose controls:** Choose at least one Syncfusion control to create the Syncfusion Xamarin application. 
+
+   N> If you want to add other Syncfusion Xamarin controls in the created Syncfusion Xamarin application, you can use our [Syncfusion Xamarin toolbox](https://help.syncfusion.com/xamarin/visual-studio-integration/visual-studio-extensions/toolbox-control)
 
    ![Choose Syncfusion Xamarin control](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates-img4.png)
 

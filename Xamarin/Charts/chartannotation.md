@@ -813,7 +813,7 @@ The [`ChartAxisLabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
             <chart:VerticalLineAnnotation.AxisLabelStyle>
 
-                <chart:ChartAxisLabelStyle Margin="5" FontSize="12" FontAttributes="Italic" BorderColor="Blue" BorderThickness="2" BackgroundColor="Red" TextColor="White" LabelAlignment="Start"/>
+                <chart:ChartAxisLabelStyle Margin="5" FontSize="12" FontAttributes="Italic" BorderColor="Blue" BorderThickness="2" BackgroundColor="Red" TextColor="White" CornerRadius="5"/>
 
             </chart:VerticalLineAnnotation.AxisLabelStyle>
 
@@ -823,7 +823,7 @@ The [`ChartAxisLabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
             <chart:HorizontalLineAnnotation.AxisLabelStyle>
 
-                <chart:ChartAxisLabelStyle Margin="5" FontSize="12" FontAttributes="Italic" BorderColor="Blue" BorderThickness="2" BackgroundColor="Red" TextColor="White" CornerRadius="20"/>
+                <chart:ChartAxisLabelStyle Margin="5" FontSize="12" FontAttributes="Italic" BorderColor="Blue" BorderThickness="2" BackgroundColor="Red" TextColor="White" LabelAlignment="Start"/>
 
             </chart:HorizontalLineAnnotation.AxisLabelStyle>
 
@@ -863,7 +863,7 @@ vertical.AxisLabelStyle = new ChartAxisLabelStyle()
 
     TextColor = Color.White,
 
-    LabelAlignment = ChartAxisLabelAlignment.Start    
+    CornerRadius = new ChartCornerRadius(5) 
 };
 
 chart.ChartAnnotations.Add(vertical);
@@ -891,7 +891,7 @@ horizontal.AxisLabelStyle = new ChartAxisLabelStyle()
 
     TextColor = Color.White,
 
-    CornerRadius = new ChartCornerRadius(20)
+    LabelAlignment = ChartAxisLabelAlignment.Start   
 };
 
 chart.ChartAnnotations.Add(horizontal);

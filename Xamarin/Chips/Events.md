@@ -26,9 +26,9 @@ N>  Currently, `Choice` and `Filter` types are only supported for [SelectionChan
 
 ## ItemRemoved Event
 
-The [`ItemRemoved`] event is triggered after a close button is clicked. You can get the currently removed chip item. The argument contains the following information,
+The [`ItemRemoved`] event is triggered after removed the chip from [`SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html). The argument contains the following information,
 
-* [`RemovedItem`] - Get the previous selected or deselected chip from [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
+* [`RemovedItem`] - Get the removed chip item from [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html).
 
 N> The [`ItemRemoved`] event is supported only in `Input` type.
 

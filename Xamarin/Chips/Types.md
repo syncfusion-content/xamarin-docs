@@ -125,55 +125,6 @@ public class Model:INotifyPropertyChanged
 
 Download the complete sample [here](https://github.com/SyncfusionExamples/How-to-create-input-typed-chip-example-in-Xamarin.Forms).
 
-### ItemRemoved
-
-The [`ItemRemoved`] event is triggered after a close button is clicked. You can get the current removing chip item.
-
-N> The [`ItemRemoved`] is supported only in `Input` type.
-
-{% tabs %}
-{% highlight xaml %}
-<buttons:SfChipGroup 
-		VerticalOptions="Center" 
-		ItemsSource="{Binding InputItems,Mode=TwoWay}" 
-		DisplayMemberPath="PersonName" 
-		ImageMemberPath="PersonImage"
-		ShowIcon="True"
-		Type="Input" 
-		ItemRemoved ="ChipGroup_ItemRemoved"
-		ChipPadding="8,8,0,0">
-	<buttons:SfChipGroup.ChipLayout>
-		<FlexLayout 
-				HorizontalOptions="Start" 
-				VerticalOptions="Center" 
-				Direction="Row" 
-				Wrap="Wrap" 
-				JustifyContent="Start" 
-				AlignContent="Start" 
-				AlignItems="Start"/>
-	</buttons:SfChipGroup.ChipLayout>
-</buttons:SfChipGroup>
-{% endhighlight %}
-{% highlight c# %}
-
-        public MainPage()
-        {
-            InitializeComponent();
-            SfChipGroup chipGroup = new SfChipGroup();
-            chipGroup.Type = SfChipsType.Input;
-            ItemRemoved.Clicked += ChipGroup_ItemRemoved;
-            ....
-        }
-
-        ...
-        private void ChipGroup_ItemRemoved(object sender, Syncfusion.Buttons.XForms.SfChip.ItemRemovedEventArgs e)
-        {
-            //to your desired action
-        }
-
-{% endhighlight %}
-{% endtabs %}
-
 ## Choice
 
 Allows users to select a single chip from a group of items. Selecting a chip will automatically deselect the previously selected chips. The selected chip color can be customized using the [`SelectedChipBackgroundColor`](https://help.syncfusion.com/xamarin/chips/customization#selectedchipbackgroundcolor) and [`SelectedChipTextColor`](https://help.syncfusion.com/xamarin/chips/customization#selectedchiptextcolor) properties. The `SelectedItem` property holds the instance of recently selected chip.

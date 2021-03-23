@@ -144,3 +144,5 @@ namespace CarouselSample
 {% endhighlight %}
 
 {% endtabs %}
+
+N> The `SwipeStarted` and `SwipeEnded` events are supported only on the Android and iOS platforms.

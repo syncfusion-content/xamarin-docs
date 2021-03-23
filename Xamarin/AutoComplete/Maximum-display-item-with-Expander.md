@@ -161,3 +161,5 @@ namespace AutocompleteSample
 {% endhighlight %}
 
 {% endtabs %}
+
+N> The `LoadMoreButtonTapped` event is supported only on the Android and iOS platforms.

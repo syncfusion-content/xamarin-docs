@@ -236,8 +236,7 @@ dataGrid.AllowResizingColumn = true;
 {% endhighlight %}
 {% endtabs %}
 
-![DataGrid with hit test representation when resizing a column](SfDataGrid_images/Resizing_HitTest_Forms.png)
-![DataGrid with column resizing](SfDataGrid_images/Resizing_Forms.png)
+![DataGrid with column resizing](SfDataGrid_images/Resizing_OnMoved.gif)
 
 The column width can be changed by tapping and dragging the resizing indicator.
 
@@ -255,10 +254,10 @@ The SfDataGrid allows two modes of resizing by setting the [SfDataGrid.ResizingM
 N> The default resizing mode is OnMoved.
 
 The following image shows resizing mode OnMoved:
-![DataGrid with column resizing on the move](SfDataGrid_images/Resizing_OnMoved.png)
+![DataGrid with column resizing on the move](SfDataGrid_images/Resizing_OnMoved.gif)
 
 The following image shows resizing mode OnTouchUp:
-![DataGrid with column resizing on touch up](SfDataGrid_images/Resizing_OnTouchUp.png)
+![DataGrid with column resizing on touch up](SfDataGrid_images/Resizing_OnTouchUp.gif)
 
 ### Resizing events
 

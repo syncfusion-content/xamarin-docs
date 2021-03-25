@@ -31,9 +31,20 @@ The [`ShapeType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEdito
 
 {% endhighlight %}
 
-By default, the toolbar contains the`Rectangle`, `Circle`, `Arrow`, and `Path` shapes. You can add other shapes to the toolbar items by using the `VisibleShapesItems` in [`ToolbarSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ToolbarSettings.html).
+By default, the toolbar contains the `Rectangle`, `Circle`, `Arrow`, and `Path` shapes. You can add other shapes to the toolbar items by using the `VisibleShapesItems` in [`ToolbarSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ToolbarSettings.html).
 
-[`VisibleShapesItems`] is an enum property with values of `Rectangle`, `Circle`, `Arrow`, `Path`, `Line`, `Dotted`, `DoubleArrow`, `DottedArrow`, and `DottedDoubleArrow`. You can specify one or more shapes in the property to add shapes into the toolbar.
+[`VisibleShapesItems`] is a flagged enum property with values of `Rectangle`, `Circle`, `Arrow`, `Path`, `Line`, `Dotted`, `DoubleArrow`, `DottedArrow`, and `DottedDoubleArrow`. You can specify one or more shapes in the property to add shapes into the toolbar.
+
+{% tabs %} 
+
+{% highlight xaml %} 
+
+           <editor:SfImageEditor.ToolbarSettings>
+              <editor:ToolbarSettings VisibleShapesItems="Line,Dotted,   DottedArrow,DottedDoubleArrow,DoubleArrow"  >
+                    </editor:ToolbarSettings>
+           </editor:SfImageEditor.ToolbarSettings>  
+
+{% endhighlight %}
 
 {% highlight C# %}
 
@@ -43,6 +54,8 @@ By default, the toolbar contains the`Rectangle`, `Circle`, `Arrow`, and `Path` s
                                                   ImageEditorShapes.DoubleArrow;
 
 {% endhighlight %}
+
+{% endtabs %} 
 
 ![Shape types](ImageEditor_images/ShapeTypes.png)
 

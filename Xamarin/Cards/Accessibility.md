@@ -9,7 +9,7 @@ documentation : ug
 
 # AutomationId in SfCardLayout
 
-The `SfCardLayout` control has built-in automation Id for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the `SfCardLayout` control. To keep unique AutomationId, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`.
+The [SfCardLayout`](https://help.syncfusion.com/xamarin/cards/getting-started#sfcardlayout) control has built-in automation Id for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the [SfCardLayout`](https://help.syncfusion.com/xamarin/cards/getting-started#sfcardlayout) control. To keep unique AutomationId, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`.
 
 For example, if you set SfCardLayouts' AutomationId as "CardLayout" and also enable the accessibility option in mobile device to read text, then the automation framework will interact with [SfCardLayout`](https://help.syncfusion.com/xamarin/cards/getting-started#sfcardlayout) inner elements and voice over the text like "CardLayout SfCardLayoutItem 2 of 3" (2 denotes the current item and 3 denotes the total count) when you swipe the card.
 

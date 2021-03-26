@@ -159,7 +159,7 @@ The following code sample will add the cropping preview on the image in square s
 
 ## Tilt the image
 
-You can tilt the image from -45 to +45 degree by using the `Tilt()` method. When call the tilt method, image will be in preview state. You can zoom and pan the image in preview state. To apply this effect to the image, you can call the `Crop()` method programmatically or can crop from footer toolbar cropping options.
+You can tilt the image from -45 to +45 degree by using the `Tilt()` method. When calling the tilt method, the image will be in preview state. You can zoom and pan the image in preview state. To apply this effect to the image, you can call the `Crop()` method programmatically or can crop from footer toolbar cropping options.
 
 N> Any action performed when the image is in Tilt preview state will reset the tilt effect of that image.
 
@@ -176,7 +176,7 @@ editor.Tilt(30);
 
 {% endtabs %}
 
-Below screenshot depicts the tilt preview state.
+The following screenshot depicts the tilt preview state.
 
 ![Tilt preview](ImageEditor_images/TiltPreview.png)
 

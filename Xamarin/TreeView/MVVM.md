@@ -141,7 +141,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ### Tap command
 
-The [TapCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_TapCommand) will be triggered whenever tapping the item and passing the [ItemTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.ItemTappedEventArgs.html) as parameter.
+The [TapCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_TapCommand) will be triggered whenever tapping the item and passing the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html) as command parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -173,7 +173,7 @@ public class CommandViewModel
 
 ### Hold command
 
-The [HoldCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_HoldCommand) will be triggered whenever an item is long pressed and passing the [ItemHoldingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.ItemHoldingEventArgs.html) as parameter.
+The [HoldCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_HoldCommand) will be triggered whenever an item is long pressed and passing the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html) as command parameter.
  
 {% tabs %}
 {% highlight c# %}

@@ -171,3 +171,30 @@ this.Content = richtexteditor;
 {% endhighlight %}
 
 {% endtabs %}
+
+##Custom Toolbar
+
+Rich Text Editor provides custom toolbar support, which allows the users to add custom toolbar items to the toolbar in the editor. The following code example explains how to set read-only mode in Rich Text Editor.
+
+{% tabs %} 
+
+{% highlight C# %} 
+SfRichTextEditor richTextEditor = new SfRichTextEditor();
+richTextEditor.PlaceHolder = "Type something";
+ObservableCollection<object> collection = new ObservableCollection<object>();
+collection.Add(ToolbarOptions.Bold);
+collection.Add(ToolbarOptions.Italic);
+collection.Add(ToolbarOptions.Underline);
+collection.Add(ToolbarOptions.NumberList);
+collection.Add(ToolbarOptions.BulletList);
+Button emojiButton = new Button();
+emojiButton.BackgroundColor = Color.Transparent;
+emojiButton.HeightRequest = 50;
+emojiButton.WidthRequest = 50;
+emojiButton.Text = "\U0001F642";
+collection.Add(emojiButton);
+richTextEditor.ToolbarItems = collection;
+this.Content = richTextEditor;
+{% endhighlight %}
+
+{% endtabs %}

@@ -34,6 +34,11 @@ schedule.DataSource=scheduleAppointmentCollection;
 
 ![Creating Appointment in schedule Xamarin Forms](PopulatingAppointments_images/appointment.png)
 
+N> 
+* The Scheduler supports the functionality that arranges the appointments based on their start time and duration for the normal appointments in a day, week and work week views.
+* In an all day panel of the day, week and work week views, span and all day appointments are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned,` `IsAllDay,` appointments respectively.
+* In Timeline views, all the appointments (span, all day and normal) are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned,` `IsAllDay,` and normal appointments respectively.
+
 ## Mapping
 Schedule supports full data binding to any type of IEnumerable source. Specify the [ScheduleAppointmentMapping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.ScheduleAppointmentMapping.html) attributes to map the properties in the underlying data source to the schedule appointments.
 
@@ -152,6 +157,9 @@ schedule.DataSource= Meetings ;
 
 ![spanning or multiday appointments in schedule Xamarin Forms](PopulatingAppointments_images/span.png)
 
+N> 
+* In an all day panel of the day, week and work week views, span and all day appointments are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned`, `IsAllDay`, appointments respectively.
+
 ## All Day Appointments
 All-Day appointment is an appointment which is scheduled for a whole day. It can be set by using `IsAllDay` property in the `ScheduleAppointment`.
 
@@ -174,7 +182,8 @@ schedule.DataSource=scheduleAppointmentCollection;
 {% endtabs %}
 
 >**NOTE**
-Appointment which lasts through an entire day (exact 24 hours) will be considered as all day appointment without setting `IsAllDay` property. For example  06/09/2018 12:00AM to 06/10/2018 12:00AM.
+* Appointment that lasts for an entire day (exact 24 hours) will be considered as an all-day appointment without setting the `IsAllDay` property. For example: From 06/29/2020 12:00AM to 06/30/2020 12:00AM.
+* In an all day panel of the day, week and work week views, span and all day appointments are ordered and rendered based on the start date-time of appointment that consists time duration of an appointment, followed by `IsSpanned`, `IsAllDay`, appointments respectively.
 
 ### All-Day Appointment Panel
 The all-day appointment and spanned appointment does not block out an entire-time slot in SfSchedule, rather it will render in separate layout exclusively for the all-day appointment. It can be enabled by setting the [ShowAllDay](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayViewSettings.html#Syncfusion_SfSchedule_XForms_DayViewSettings_ShowAllDay) property of [DayViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DayViewSettings.html), [WeekViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.WeekViewSettings.html), and [WorkWeekViewSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.WorkWeekViewSettings.html) of `DayView`, `WeekView`, and `WorkWeekView` respectively.

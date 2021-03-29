@@ -30,7 +30,7 @@ https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-libr
 
 Refer to the created binding library in your android project. 
 
-Add a new class named “CustomPdfRenderer” to the android application project. This class must implement the ICustomPdfRenderer interface defined in the Syncfusion.SfPdfViewer.XForms.Droid and Syncfusion.SfPdfViewer.XForms namespace.
+Add a new class named `CustomPdfRenderer` to the android application project. This class must implement the `ICustomPdfRenderer` interface defined in the Syncfusion.SfPdfViewer.XForms.Droid and Syncfusion.SfPdfViewer.XForms namespace.
 
 The entire CustomPdfRenderer class is given as follows. 
 
@@ -258,7 +258,7 @@ internal class CustomPdfRenderer : ICustomPdfRenderer
 {% endhighlight %}
 {% endtabs %}
 
-Regarding the above code example, there are two overloads of the Render method.
+Regarding the above code example, there are two overloads of the `Render` method.
 
 <table>
 <tr>
@@ -271,7 +271,7 @@ Regarding the above code example, there are two overloads of the Render method.
 </tr>
 </table>
 
-The CustomPdfRenderer property should be assigned to the AlternatePdfRenderer property of the CustomPdfRenderer class as like in the following code sample,
+The [CustomPdfRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_CustomPdfRenderer) property should be assigned to the `AlternatePdfRenderer` property of the `CustomPdfRenderer` class as like in the following code sample,
 
 {% tabs %}
 {% highlight c# %}

@@ -474,7 +474,7 @@ pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset+10, m_currentVerticalO
 
 ##How to modify the width of the vertical scrollbar in the UWP platform?
 
-The PDF viewer uses the ScrollViewer control to scroll the pages of the PDF. The width of the vertical scrollbar of the ScrollViewer can be modified by using the VerticalScrollBarWidth property. The default value of the API is the default width of the ScrollViewer control.
+The PDF viewer uses the `ScrollViewer` control to scroll the pages of the PDF. The width of the vertical scrollbar of the `ScrollViewer` can be modified by using the `VerticalScrollBarWidth` property. The default value of the API is the default width of the `ScrollViewer` control.
 
 {% tabs %}
 {% highlight c# %}
@@ -492,7 +492,7 @@ N>This API is only applicable for UWP desktop. Changing the value of this API do
 
 ##Rendering the appearance content of annotations
 
-By  default,  the  PDF  viewer  does  not  render  the  appearance  content  of annotations. But the appearance can be rendered by flattening the annotations before loading the PDF. This can be achieved by setting the Flatten API to true. The default value of the API is set to false.
+By  default,  the  PDF  viewer  does  not  render  the  appearance  content  of annotations. But the appearance can be rendered by flattening the annotations before loading the PDF. This can be achieved by setting the `Flatten` API to true. The default value of the API is set to false.
 
 {% tabs %}
 {% highlight c# %}

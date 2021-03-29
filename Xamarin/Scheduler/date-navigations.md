@@ -27,35 +27,6 @@ schedule.EnableNavigation = false;
 *   The scrolled position of timeslots will be maintained in day/week/work week view when swiping the next or previous views and switching between day, week or work week views,
 *   If view switch from month/timeline view to week/work/day week views, move to time will be considered if move time mentioned in `MoveToDate` otherwise, position scrolled to `work start hour` in day/week/work week views.
 
-## Programmatic date navigation
-You can programmatically navigate dates in `scheduler` by using the `DisplayDate` property of [SfSchedule](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html).
-
-{% tabs %}
-{% highlight xaml %}
-<schedule:SfSchedule DisplayDate="2021-03-05 9:0:0"/>
-{% endhighlight %}
-{% highlight c#%}
-this.Schedule.DisplayDate = new DateTime(2021, 03, 05, 9, 0, 0);
-{% endhighlight %}
-{% endtabs %}
-
-Note>
-Date navigation before the minimum date will be reset to the scheduler minimum date and date navigation beyond the maximum date will be rest to the scheduler maximum date.
-
-## Programmatic date selection
-You can programmatically select the dates in `scheduler` by using the `SelectedDate` property of [SfSchedule](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Schedule.SfSchedule.html#properties).
-
-{% tabs %}
-{% highlight xaml %}
-<schedule:SfSchedule SelectedDate="2021-03-05 9:0:0"/>
-{% endhighlight %}
-{% highlight c#%}
-this.Schedule.SelectedDate = new DateTime(2021, 03, 05, 9, 0, 0);
-{% endhighlight %}
-{% endtabs %}
-
-Note>
-Selection before minimum dates and beyond maximum dates using the `SelectedDate` is not possible.
 
 ## Programmatically change to specific dates 
 Visible dates can be moved to specific date using [NavigateTo](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_NavigateTo_System_DateTime_) method and [MoveToDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_MoveToDate) property available in SfSchedule. It will move to any specific date if the schedule view is Day View, similarly it will move to the specific week if it is week view and to specific month if it is month view

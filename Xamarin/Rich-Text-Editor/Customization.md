@@ -174,7 +174,7 @@ this.Content = richtexteditor;
 
 ##Custom Toolbar
 
-Rich Text Editor provides custom toolbar support, which allows the users to add custom toolbar items to the toolbar in the editor. The following code example explains how to set read-only mode in Rich Text Editor.
+The Rich Text Editor provides a custom toolbar support, which allows the users to add custom toolbar items to the toolbar in the editor. The following code example explains how to set custom toolbar in Rich Text Editor.
 
 {% tabs %} 
 

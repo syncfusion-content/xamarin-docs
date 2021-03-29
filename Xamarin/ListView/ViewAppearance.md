@@ -392,11 +392,11 @@ The `SfListView` allows customizing the item appearance like rounded corner by u
         <syncfusion:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
             <syncfusion:SfListView.ItemTemplate>
                 <DataTemplate>
-                    <Frame x:Name="frame" CornerRadius="10" >
+                    <Frame x:Name="frame" CornerRadius="10" HasShadow="False">
                         <StackLayout>
-                                <Label Text="{Binding ContactName}" />
-                                <Label Text="{Binding ContactNumber}" />
-                                <Label Text="{Binding ContactType}" />
+                            <Label Text="{Binding ContactName}" />
+                            <Label Text="{Binding ContactNumber}" />
+                            <Label Text="{Binding ContactType}" />
                         </StackLayout>
                     </Frame>
                 </DataTemplate>

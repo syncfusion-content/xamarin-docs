@@ -20,6 +20,8 @@ Cropping operation can be done in the following two ways:
 * Enabling cropping and selecting the crop region visually.
 * Entering the cropping area manually.
 
+N> You can enable the cropping in the zoomed area and crop the specific position from the zoomed area. 
+
 ### Handling the cropping tool
 
 The [`ToggleCropping`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ToggleCropping) method in the image editor control allows users to enable or disable the cropping region placed over the image to visually choose the area for cropping.
@@ -154,6 +156,33 @@ The following code sample will add the cropping preview on the image in square s
 {% endhighlight %}
 
 {% endtabs %}
+
+## Tilt the image
+
+You can tilt the image from -45 to +45 degree by using the `Tilt()` method. When calling the tilt method, the image will be in preview state. You can zoom and pan the image in preview state. To apply this effect to the image, you can call the `Crop()` method programmatically or can crop from footer toolbar cropping options.
+
+N> Any action performed when the image is in Tilt preview state will reset the tilt effect of that image.
+
+{% tabs %}
+
+{% highlight C# %}
+
+editor.Tilt(30);
+
+ // To apply the tilt effect to the image.
+ editor.Crop();
+
+{% endhighlight %}
+
+{% endtabs %}
+
+The following screenshot depicts the tilt preview state.
+
+![Tilt preview](ImageEditor_images/TiltPreview.png)
+
+After tilt preview, cropping can be performed using the available cropping options from footer toolbar.
+
+![Tilt crop](ImageEditor_images/TiltCrop.png)
 
 
 ## See also

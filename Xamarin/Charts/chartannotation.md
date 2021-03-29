@@ -680,7 +680,9 @@ chart.ChartAnnotations.Add(horizontal);
 
 **Customizing axis label**
 
-The default appearance of the axis label also can be customized by using the [`AxisLabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.VerticalLineAnnotation.html#Syncfusion_SfChart_XForms_VerticalLineAnnotation_AxisLabelStyle) property. The following properties are used to customize the axis label:
+The default appearance of the axis label also can be customized by using the [`AxisLabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.VerticalLineAnnotation.html#Syncfusion_SfChart_XForms_VerticalLineAnnotation_AxisLabelStyle) property. The following 2 types of styles are used to customize the axis label.
+
+The [`ChartLabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html) property allows you to customize the axis labels by changing the font family, font size, font attributes, and text color. It is the [`AxisLabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.VerticalLineAnnotation.html#Syncfusion_SfChart_XForms_VerticalLineAnnotation_AxisLabelStyle) property's default style. The following properties can be used to customize the axis label:
 
 *   [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_TextColor) - Used to change the text color.
 *   [`BackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartLabelStyle.html#Syncfusion_SfChart_XForms_ChartLabelStyle_BackgroundColor) - Used to change the background color of the text.
@@ -789,6 +791,116 @@ chart.ChartAnnotations.Add(horizontal);
 {% endtabs %}
 
 ![Customizing axis label in Xamarin.Forms Chart](chartannotation_images/img13.png)
+
+The [`ChartAxisLabelStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisLabelStyle.html) allows you to customize axis label by changing the label alignment, label position, corner radius, and max width. And also, customizing the Font family, font size, font attributes, and text color are all included in the ChartLabelStyle properties. The following properties can be used to customize the axis label:
+
+* [`LabelAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisLabelStyle.html#Syncfusion_SfChart_XForms_ChartAxisLabelStyle_LabelAlignment) - Used to align the label at the start, center, or end.
+* [`LabelsPosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisLabelStyle.html#Syncfusion_SfChart_XForms_ChartAxisLabelStyle_LabelsPosition) - Used to position the text at [`Inside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.AxisElementPosition.html#Syncfusion_SfChart_XForms_AxisElementPosition_Inside) or [`Outside`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.AxisElementPosition.html#Syncfusion_SfChart_XForms_AxisElementPosition_Outside) of the chart axis. By default, the text will be positioned outside the chart axis.
+* [`CornerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisLabelStyle.html#Syncfusion_SfChart_XForms_ChartAxisLabelStyle_CornerRadius) - Used to change the corner radius of the background.
+* [`MaxWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisLabelStyle.html#Syncfusion_SfChart_XForms_ChartAxisLabelStyle_MaxWidth) - Provides the maximum text width of the axis label and wraps to the next line when exceeds the maximum width.
+* [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisLabelStyle.html#Syncfusion_SfChart_XForms_ChartAxisLabelStyle_WrappedLabelAlignment) - Positions the wrapped text at the start, center, or end. The default value of the [`WrappedLabelAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartAxisLabelStyle.html#Syncfusion_SfChart_XForms_ChartAxisLabelStyle_WrappedLabelAlignment) property is set to `Start.`
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+    <chart:SfChart.ChartAnnotations>
+
+        <chart:VerticalLineAnnotation X1="6" ShowAxisLabel="true">
+
+            <chart:VerticalLineAnnotation.AxisLabelStyle>
+
+                <chart:ChartAxisLabelStyle Margin="5" FontSize="12" FontAttributes="Italic" BorderColor="Blue" BorderThickness="2" BackgroundColor="Red" TextColor="White" CornerRadius="5"/>
+
+            </chart:VerticalLineAnnotation.AxisLabelStyle>
+
+        </chart:VerticalLineAnnotation>
+                
+        <chart:HorizontalLineAnnotation Y1="35" ShowAxisLabel="true">
+
+            <chart:HorizontalLineAnnotation.AxisLabelStyle>
+
+                <chart:ChartAxisLabelStyle Margin="5" FontSize="12" FontAttributes="Italic" BorderColor="Blue" BorderThickness="2" BackgroundColor="Red" TextColor="White" LabelAlignment="Start"/>
+
+            </chart:HorizontalLineAnnotation.AxisLabelStyle>
+
+        </chart:HorizontalLineAnnotation>
+
+    </chart:SfChart.ChartAnnotations>
+      
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+VerticalLineAnnotation vertical = new VerticalLineAnnotation()
+{
+    X1 = 6,
+
+    ShowAxisLabel = true
+};
+
+vertical.AxisLabelStyle = new ChartAxisLabelStyle()
+{
+    Margin = new Thickness(5),
+
+     FontSize = 12,
+
+    FontAttributes = FontAttributes.Italic,
+
+    BorderColor = Color.Blue,
+
+    BorderThickness = new Thickness(2),
+
+    BackgroundColor = Color.Red,
+
+    TextColor = Color.White,
+
+    CornerRadius = new ChartCornerRadius(5) 
+};
+
+chart.ChartAnnotations.Add(vertical);
+
+HorizontalLineAnnotation horizontal = new HorizontalLineAnnotation()
+{
+    Y1 = 35,
+
+    ShowAxisLabel = true
+};
+
+horizontal.AxisLabelStyle = new ChartAxisLabelStyle()
+{
+    Margin = new Thickness(5),
+
+    FontSize = 12,
+
+    FontAttributes = FontAttributes.Italic,
+
+    BorderColor = Color.Blue,
+
+    BorderThickness = new Thickness(2),
+
+    BackgroundColor = Color.Red,
+
+    TextColor = Color.White,
+
+    LabelAlignment = ChartAxisLabelAlignment.Start   
+};
+
+chart.ChartAnnotations.Add(horizontal);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Customizing axis label in Xamarin.Forms Chart](chartannotation_images/ChartAxisLabelStyleImages.png)
 
 **Adding arrow to vertical and horizontal line annotations**
 

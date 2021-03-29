@@ -198,3 +198,5 @@ this.Content = richTextEditor;
 {% endhighlight %}
 
 {% endtabs %}
+
+![Rich Text Editor custom toolbar support](SfRichTextEditor_Images/CustomToolbar.png)

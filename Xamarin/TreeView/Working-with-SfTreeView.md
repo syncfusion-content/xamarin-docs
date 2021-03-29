@@ -108,7 +108,7 @@ private void TreeView_ItemHolding(object sender, ItemHoldingEventArgs e)
 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/item-hold-treeview-xamarin)
 
-### Update the runtime changes
+## Update the runtime changes
 
 The [PropertyChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_PropertyChanged) event will be triggered whenever a property in the customized TreeViewNode is changed. You can get the name of the property that changed by using the `PropertyName` property of the `PropertyChangedEventArgs`.
 
@@ -129,7 +129,7 @@ private void Treeviewnode_PropertyChanged(object sender, PropertyChangedEventArg
 {% endhighlight %}
 {% endtabs %}
 
-### Refresh layout
+## Refresh layout
 
 You can refresh the TreeViewNode from the root node and update all layout by using the [SetDirty](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html#Syncfusion_TreeView_Engine_TreeViewNode_SetDirty) method that notifies the tree view layout mechanism to invalidate nodes.
 

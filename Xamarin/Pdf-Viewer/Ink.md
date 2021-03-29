@@ -622,3 +622,26 @@ private void PdfViewerControl_InkAdded(object sender, InkAddedEventArgs args)
 {% endtabs %}
 
 N> The strokes cannot be smoothened when the user is drawing the strokes as the points are still being recorded. They can be smoothened only after the user confirms the end of the ink session. 
+
+##How to get and set the name of the annotations?
+
+The PDF Viewer allows the users to get and set the name of annotations through the `Name` API.
+
+The following code sample explains modifying the name of the annotation in the `InkAdded` event. 
+
+{% tabs %}
+{% highlight c# %}
+private void PdfViewerControl_InkAdded(object sender, InkAddedEventArgs args)
+{
+   if(sender is InkAnnotation)
+    {
+    (sender as InkAnnotation).Name = "Ink1";
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the `InkAdded` event. But this can be done in all other events as well. 
+
+

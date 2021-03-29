@@ -365,3 +365,23 @@ pdfViewerControl.AnnotationSettings.FreeText.IsLocked = false;
 
 {% endhighlight %}
 {% endtabs %}
+
+##How to get and set the name of the annotations?
+
+The PDF Viewer allows the users to get and set the name of annotations through the `Name` API.
+
+The following code sample explains modifying the name of the annotation in the `FreeTextAnnotationAdded` event. 
+
+{% tabs %}
+{% highlight c# %}
+
+private void PdfViewerControl_ FreeTextAnnotationAdded (object sender, FreeTextAnnotationAddedEventArgs args)
+{
+//Sets the name for the annotation.
+(sender as FreeTextAnnotation).Name = "FreeText1";           
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the `FreeTextAnnotationAdded` event. But this can be done in all other events as well. 

@@ -197,4 +197,4 @@ public MainPage()
 N> SfRichTextEditor is implemented in a WebView. So, the SfRichTextEditor should not be nested inside a ScrollView as mentioned [here](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/layouts/scroll-view#usage).
 
 
-The complete Getting Started sample is available in this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-1569261313)
+The complete Getting Started sample is available in this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/RTE-206415396.zip)

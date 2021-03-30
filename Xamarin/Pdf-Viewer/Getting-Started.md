@@ -508,3 +508,20 @@ pdfViewerControl.LoadDocument(stream);
 
 N>Annotations are only flattened when the page is rendered in the viewer only  for  viewing  the  appearance  of  annotations.  Once,  the  annotations  have flattened  the  interactions  such  as  select,  edit,  resize,  and  remove  cannot  be performed.  Setting  the  Flatten  API  to  true  does  not  affect  the  save  and annotation export operations and the annotations will not be flattened in these operations.
 
+##Rendering the appearance content of annotations
+
+By  default,  the  PDF  viewer  does  not  render  the  appearance  content  of annotations. But the appearance can be rendered by flattening the annotations before loading the PDF. This can be achieved by setting the `Flatten` API to true. The default value of the API is set to false.
+
+{% tabs %}
+{% highlight c# %}
+
+//Sets a value whether the annotations should be flattened when the PDF is loaded or not.
+pdfViewerControl.AnnotationSettings.Flatten = true;
+
+//Loads the PDF. 
+pdfViewerControl.LoadDocument(stream);
+
+{% endhighlight %}
+{% endtabs %}
+
+N>Annotations are only flattened when the page is rendered in the viewer only  for  viewing  the  appearance  of  annotations.  Once,  the  annotations  have flattened  the  interactions  such  as  select,  edit,  resize,  and  remove  cannot  be performed.  Setting  the  Flatten  API  to  true  does  not  affect  the  save  and annotation export operations and the annotations will not be flattened in these operations.

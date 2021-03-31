@@ -512,7 +512,7 @@ private void Datagrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-661295078).
 
-## How to set auto max swipe offset based on the content of swipe template.
+## How to set the maximum swipe offset based on the content of the swipe template.
 
 The user can restrict the layout of swipeView based on the size of the content loaded inside the swiping template by setting SfDataGrid.SwipeOffsetMode as Auto. The default value of the SwipeOffsetMode is Custom.
 
@@ -534,7 +534,6 @@ The user can restrict the layout of swipeView based on the size of the content l
                VerticalTextAlignment="Center"
                LineBreakMode ="NoWrap"
                BackgroundColor="Transparent"
-			   WidthRequest="130"
                TextColor ="White" />
       </Grid>
     </DataTemplate>
@@ -570,9 +569,7 @@ The user can restrict the layout of swipeView based on the size of the content l
         label.LineBreakMode = LineBreakMode.NoWrap;
         label.BackgroundColor = Color.Transparent;
         label.TextColor = Color.White;
-        label.WidthRequest = 130;
-
-        myGrid.Children.Add(image);
+        myGrid.Children.Add(label);
         return myGrid;
     });
 
@@ -581,6 +578,8 @@ The user can restrict the layout of swipeView based on the size of the content l
 
 {% endhighlight %}
 {% endtabs %}
+
+![Maximum swipe offset based on the content of the swipe template](SfDataGrid_images/SwipeOffsetMode.png)
 
 ## How to load custom swipe buttons based on row data?
 

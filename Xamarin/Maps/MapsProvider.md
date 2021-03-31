@@ -9,7 +9,7 @@ documentation: ug
 
 # Map providers support in SfMaps
 
-The maps control supports map providers such as OpenStreetMap and Bing Maps that can be added to an imagery layer in maps.
+The maps control supports map providers such as [`OpenStreetMap`]([`OSM`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_OSM)) and [`Bing Maps`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_Bing) that can be added to an imagery layer in maps.
 
 ## OpenStreetMap
 
@@ -17,7 +17,7 @@ The OpenStreetMap (OSM) is a world map; it was built by a community of mappers. 
 
 ### Adding OSM in maps
 
-The maps control uses `imagery layer` to display the tile images from the OSM service. To use `OSM`, add an imagery layer in maps’ layers collection.
+The maps control uses [`ImageryLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) to display the tile images from the [`OSM`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_OSM) service. To use [`OSM`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_OSM), add an [`ImageryLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) in maps’ layers collection.
 
 {% tabs %}
 
@@ -41,11 +41,11 @@ The maps control uses `imagery layer` to display the tile images from the OSM se
 
 ![Xamarin OSM image](Images/OSM.png)
 
-N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html) and `ImageryLayer` have been derived commonly from MapsLayer.
+N> Both the [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html) and [`ImageryLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) have been derived commonly from MapsLayer.
 
 ## Bing Maps
 
-The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides the map tile images based on your requests and combines them into a single image to display the map area. To use `Bing maps`, set the `LayerType` property of ImageryLayer to “Bing”. Then, set the Bing Maps key, which is obtained from [Bing Maps Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key).
+The [`Bing Maps`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_Bing) is a world map owned by Microsoft. As OSM, Bing Maps also provides the map tile images based on your requests and combines them into a single image to display the map area. To use [`Bing maps`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_Bing), set the [`LayerType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html) property of ImageryLayer to “Bing”. Then, set the Bing Maps key, which is obtained from [Bing Maps Key](https://www.microsoft.com/en-us/maps/create-a-bing-maps-key).
 
 {% tabs %}
 
@@ -71,7 +71,7 @@ The Bing Maps is a world map owned by Microsoft. As OSM, Bing Maps also provides
 
 ![Xamarin Bing road image](Images/Road.png)
 
-N> The `LayerType` property of `ImageryLayer` provides the support to `OSM` and `Bing Maps`. The default value of the `LayerType` property is OSM.
+N> The [`LayerType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html) property of `ImageryLayer` provides the support to [`OSM`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_OSM) and [`Bing Maps`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_Bing). The default value of the [`LayerType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html) property is OSM.
 
 ## Set different bing map style
 
@@ -81,15 +81,15 @@ The ImageryLayer provides the support to the following types of Bing Maps:
 * `Aerial`
 * `AerialWithLabels`
 
-The desired style for the Bing Maps can be set using the `BingMapStyle` property of ImageryLayer. The default value of `BingMapStyle` is "Road".
+The desired style for the Bing Maps can be set using the [`BingMapStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.BingMapStyle.html) property of ImageryLayer. The default value of [`BingMapStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.BingMapStyle.html) is [`Road`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.BingMapStyle.html#Syncfusion_SfMaps_XForms_BingMapStyle_Road).
 
 ### Road
 
-The Road view displays the default map view of roads, buildings, and geography. The default value of the `BingMapStyle` property of imagery layer is "Road".
+The Road view displays the default map view of roads, buildings, and geography. The default value of the [`BingMapStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.BingMapStyle.html) property of imagery layer is [`Road`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.BingMapStyle.html#Syncfusion_SfMaps_XForms_BingMapStyle_Road).
 
 ### Aerial
 
-The Aerial view displays the satellite images to highlight the roads and major landmarks for easy identification. The aerial view can be applied to maps by setting the `BingMapStyle` to "Aerial".
+The Aerial view displays the satellite images to highlight the roads and major landmarks for easy identification. The aerial view can be applied to maps by setting the [`BingMapStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.BingMapStyle.html) to [`Aerial`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.BingMapStyle.html#Syncfusion_SfMaps_XForms_BingMapStyle_Aerial).
 
 {% tabs %}
 
@@ -120,7 +120,7 @@ The Aerial view displays the satellite images to highlight the roads and major l
 
 ### AerialWithLabel
 
-The AerialWithLabel view displays the Aerial map with labels for continent, country, ocean, etc. This view can be applied to maps by setting the `BingMapStyle` to "AerialWithLabel".
+The AerialWithLabel view displays the Aerial map with labels for continent, country, ocean, etc. This view can be applied to maps by setting the [`BingMapStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.BingMapStyle.html) to [`AerialWithLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.BingMapStyle.html#Syncfusion_SfMaps_XForms_BingMapStyle_AerialWithLabels).
 
 {% tabs %}
 
@@ -151,7 +151,7 @@ The AerialWithLabel view displays the Aerial map with labels for continent, coun
 
 ## Zooming and panning
 
-The maps control provides the interactive zooming and panning supports to OSM and Bing Maps.
+The maps control provides the interactive zooming and panning supports to [`OSM`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_OSM) and [`Bing Maps`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_Bing).
 
 Zooming helps you to get a closer look of an area on maps for in-depth analysis. Panning helps you to move a map around to focus the targeted area. You can perform zooming and panning with the pinching gesture in a map area.
 
@@ -159,7 +159,7 @@ Zooming helps you to get a closer look of an area on maps for in-depth analysis.
 
 ## Reset zooming
 
-The ImageryLayer provides the support to reset the maps to the default view when you double tap the imagery layer by setting the `ResetOnDoubleTap` property to true. The default value of this property is true. This behavior can be restricted by setting the `ResetOnDoubleTap` property to false.
+The ImageryLayer provides the support to reset the maps to the default view when you double tap the imagery layer by setting the [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_ResetOnDoubleTap) property to true. The default value of this property is true. This behavior can be restricted by setting the [`ResetOnDoubleTap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_ResetOnDoubleTap) property to false.
 
 {% tabs %}
 
@@ -244,7 +244,7 @@ On changing the [`GeoCoordinates`](https://help.syncfusion.com/cr/xamarin/Syncfu
 
 ## Set markers in imagery layer
 
-As [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html), markers also can be added to imagery layer. Markers can be customized using the `MarkerSettings` property in imagery layer.
+As [`ShapeFileLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html), markers also can be added to imagery layer. Markers can be customized using the [`MarkerSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.MapMarkerSetting.html) property in [`ImageryLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html).
 The detailed explanation of marker and its customization have been provided in Markers section.
 
 {% tabs %}
@@ -313,7 +313,7 @@ The detailed explanation of marker and its customization have been provided in M
 
 ## Load custom map
 
-You can load the custom map providers map such as Google Maps, TomTom using the [ `RequestTileUri` ](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) event of ImageryLayer. For more details about  [ `RequestTileUri` ](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html), refer the [ `Events` ](https://help.syncfusion.com/xamarin/maps/mapsprovider#events) of ImageryLayer.
+You can load the custom map providers map such as Google Maps, TomTom using the [`RequestTileUri`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) event of ImageryLayer. For more details about  [`RequestTileUri`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html), refer the [`Events`](https://help.syncfusion.com/xamarin/maps/mapsprovider#events) of ImageryLayer.
 
 {% tabs %}
 
@@ -373,9 +373,9 @@ This feature is used to calculate the initial zoom level automatically in two wa
 
 ### Distance in radius 
 
-Calculate the initial zoom level automatically based on the `Radius` and `DistanceType` properties of imagery layer class.
+Calculate the initial zoom level automatically based on the [`Radius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_Radius) and [`DistanceType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_DistanceType) properties of imagery layer class.
 
-N> `DistanceType` property default value is KiloMeter.
+N> [`DistanceType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_DistanceType) property default value is KiloMeter.
 
 {% tabs %}
 
@@ -425,7 +425,7 @@ N> `DistanceType` property default value is KiloMeter.
 
 ### Geo-bounds
 
-Calculate the initial zoom level automatically based on the LatLngBounds(Northeast, Southwest) of imagery layer class.
+Calculate the initial zoom level automatically based on the [`LatLngBounds(Northeast, Southwest)`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_LatLngBounds) of [`ImageryLayer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html) class.
 
 {% tabs %}
 
@@ -491,13 +491,13 @@ Calculate the initial zoom level automatically based on the LatLngBounds(Northea
 
 {% endtabs %}
 
-N> When setting LatLngBounds and DistanceRadius at the same time, the priority is `DistanceRadius` and calculate zoom level based radius value.
+N> When setting [`LatLngBounds`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_LatLngBounds) and [`DistanceRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_Radius) at the same time, the priority is [`DistanceRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_Radius) and calculate zoom level based radius value.
 
 ![Xamarin SfMaps zoom level changed image](Images/NorthSouth_Image.jpg)
 
 ## Get the map tile layer bounds
 
-You can get imagery layer pixel bounds by using `MapBounds` property while zooming, panning, and changing Geo-Coordinate value in imagery layer.
+You can get imagery layer pixel bounds by using [`MapBounds`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ImageryLayer.html#Syncfusion_SfMaps_XForms_ImageryLayer_MapBounds) property while zooming, panning, and changing Geo-Coordinate value in imagery layer.
 
 {% tabs %}
 

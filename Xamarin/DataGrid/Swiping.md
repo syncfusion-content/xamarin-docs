@@ -552,8 +552,8 @@ The user can restrict the layout of swipeView based on the size of the content l
     dataGrid = new SfDataGrid();   
     dataGrid.AllowSwiping = true;
     dataGrid.AutoGenerateColumns = true;
-	dataGrid.SwipeOffsetMode=SwipeOffsetMode.Auto;
-	dataGrid.ItemsSource = viewModel.OrdersInfo;
+    dataGrid.SwipeOffsetMode=SwipeOffsetMode.Auto;
+    dataGrid.ItemsSource = viewModel.OrdersInfo;         
          
     dataGrid.LeftSwipeTemplate = new DataTemplate(() =>
     {

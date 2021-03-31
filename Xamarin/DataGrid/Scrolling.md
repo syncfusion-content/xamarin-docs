@@ -253,3 +253,109 @@ To retain the scroll position when [ItemsSource](https://help.syncfusion.com/cr/
 {% highlight C# %}
 dataGrid.CanMaintainScrollPosition = true;
 {% endhighlight %}
+
+## Customize Horizontal ScrollBar Visibility
+
+You can change the visibility of the horizontal scrollbar using SfDataGrid.HorizontalScrollBarVisibility property. By default, the visibility of the horizontal Scrollbar is true.
+
+{% tabs %}
+{% highlight xaml %}
+
+using Syncfusion.SfDataGrid.XForms;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class DataGridPage : ContentPage
+    {
+        ViewModel viewModel;
+        SfDataGrid dataGrid;
+        public DataGridPage()
+        {
+            InitializeComponent();
+            viewModel = new ViewModel();
+            dataGrid = new SfDataGrid();
+            dataGrid.DefaultColumnWidth = 100;
+            dataGrid.HorizontalScrollBarVisibility = false;
+            dataGrid.ItemsSource = viewModel.OrdersInfo;   
+            this.Content = dataGrid;
+        }
+    }
+}
+
+{% endhighlight %}
+{% highlight C# %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             x:Class="GettingStarted.DataGridPage">
+
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    
+    <sfgrid:SfDataGrid x:Name="dataGrid"                                      
+                       DefaultColumnWidth="100"                    
+                       HorizontalScrollBarVisibility="False"
+                       ItemsSource="{Binding OrdersInfo}">   
+        </sfgrid:SfDataGrid> 
+</ContentPage>
+
+{% endhighlight %}
+{% endtabs %}
+
+## Customize Vertical ScrollBar Visibility 
+
+You can change the visibility of the vertical scrollbar using SfDataGrid.VerticalScrollBarVisibility property. By default, the visibility of the Vertical Scrollbar is true. 
+
+{% tabs %}
+{% highlight xaml %}
+
+using Syncfusion.SfDataGrid.XForms;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class DataGridPage : ContentPage
+    {
+        ViewModel viewModel;
+        SfDataGrid dataGrid;
+        public DataGridPage()
+        {
+            InitializeComponent();
+            viewModel = new ViewModel();
+            dataGrid = new SfDataGrid();
+            dataGrid.DefaultColumnWidth = 100;
+            dataGrid.VerticalScrollBarVisibility = false;
+            dataGrid.ItemsSource = viewModel.OrdersInfo;   
+            this.Content = dataGrid;
+        }
+    }
+}
+
+{% endhighlight %}
+{% highlight C# %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             x:Class="GettingStarted.DataGridPage">
+
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    
+    <sfgrid:SfDataGrid x:Name="dataGrid"                                      
+                       DefaultColumnWidth="100"                    
+                       VerticalScrollBarVisibility="False"
+                       ItemsSource="{Binding OrdersInfo}">   
+        </sfgrid:SfDataGrid> 
+</ContentPage>
+
+{% endhighlight %}
+{% endtabs %}

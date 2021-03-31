@@ -30,7 +30,7 @@ https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-libr
 
 Refer to the created binding library in your android project. 
 
-Add a new class named `CustomPdfRenderer` to the android application project. This class must implement the `ICustomPdfRenderer` interface defined in the Syncfusion.SfPdfViewer.XForms.Droid and Syncfusion.SfPdfViewer.XForms namespace.
+Add a new class named `CustomPdfRenderer` to the android application project. This class must implement the `ICustomPdfRenderer` interface defined in the `Syncfusion.SfPdfViewer.XForms.Droid` and `Syncfusion.SfPdfViewer.XForms` namespace.
 
 The entire CustomPdfRenderer class is given as follows. 
 

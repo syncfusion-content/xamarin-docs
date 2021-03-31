@@ -512,6 +512,76 @@ private void Datagrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-661295078).
 
+## How to set auto max swipe offset based on the content of swipe template.
+
+The user can restrict the layout of swipeView based on the size of the content loaded inside the swiping template by setting SfDataGrid.SwipeOffsetMode as Auto. The default value of the SwipeOffsetMode is Custom.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid x:Name="datagrid"
+                       ColumnSizer="Star"
+                       AutoGenerateColumns="True"
+                       AllowSwiping="True"
+					   SwipeOffsetMode="Auto"
+                       ItemsSource="{Binding OrdersInfo}">
+
+  <syncfusion:SfDataGrid.LeftSwipeTemplate>
+    <DataTemplate>
+      <Grid BackgroundColor="Blue" Padding="9">
+        <Label Text ="EDIT"
+               HorizontalTextAlignment="Start"
+               VerticalTextAlignment="Center"
+               LineBreakMode ="NoWrap"
+               BackgroundColor="Transparent"
+			   WidthRequest="130"
+               TextColor ="White" />
+      </Grid>
+    </DataTemplate>
+  </syncfusion:SfDataGrid.LeftSwipeTemplate>
+
+</syncfusion:SfDataGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+
+ public MainPage()
+ {
+    InitializeComponent();
+    viewModel = new ViewModel();
+    dataGrid = new SfDataGrid();   
+    dataGrid.AllowSwiping = true;
+    dataGrid.AutoGenerateColumns = true;
+	dataGrid.SwipeOffsetMode=SwipeOffsetMode.Auto;
+	dataGrid.ItemsSource = viewModel.OrdersInfo;
+         
+    dataGrid.LeftSwipeTemplate = new DataTemplate(() =>
+    {
+        Grid myGrid = new Grid();
+        myGrid.HorizontalOptions = LayoutOptions.FillAndExpand;
+        myGrid.BackgroundColor = Color.FromHex("#009EDA");
+        myGrid.Padding = 9;
+
+        var label = new Label();
+        label.Text = "EDIT";
+        label.HorizontalTextAlignment = TextAlignment.Start;
+        label.VerticalTextAlignment = TextAlignment.Center;
+        label.LineBreakMode = LineBreakMode.NoWrap;
+        label.BackgroundColor = Color.Transparent;
+        label.TextColor = Color.White;
+        label.WidthRequest = 130;
+
+        myGrid.Children.Add(image);
+        return myGrid;
+    });
+
+    this.Content = dataGrid;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## How to load custom swipe buttons based on row data?
 
 Using `DataTemplateSelector` you can load specific views based on row data as `SfDataGrid.RightSwipeTemplate` and `SfDataGrid.LeftSwipeTemplate`. Refer the below code example to load the desired template based on the row data.

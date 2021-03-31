@@ -201,4 +201,4 @@ this.Content = richTextEditor;
 
 ![Rich Text Editor custom toolbar support](SfRichTextEditor_Images/CustomToolbar.png)
 
-N> The custom toolbar will not support sub toolbar in Xamarin RichTextEditor iOS because the control selection will be lost when clicking the elements in the sub toolbar.
+N> The custom toolbar will not support the sub toolbar in the Xamarin RichTextEditor iOS because the control selection will be lost when clicking the elements in the sub toolbar.

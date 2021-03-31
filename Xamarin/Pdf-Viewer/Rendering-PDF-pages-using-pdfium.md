@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 title: PDFium rendering in PDF Viewer Xamarin.Forms Android | Syncfusion
-description: PDF Viewer in Xamarin.Forms Android supports rendering the PDF pages using pdfium.
+description: Render PDF pages using PDFium rendering engine in PDF viewer Xamarin.Forms Android.
 platform: xamarin
 control: SfPdfViewer
 documentation: UG
@@ -22,7 +22,7 @@ https://mvnrepository.com/artifact/com.github.barteksc/pdfium-android/1.7.0
 2.To create the binding project from this archive file refer to this link. 
 https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-library/binding-an-aar/ 
 
-3.Install the Xamarin.Android.Support.Compat dependency package in the project.
+3.Install the `Xamarin.Android.Support.Compat` dependency package in the project.
 
 4.Compile the project to generate the Pdfium library.
 

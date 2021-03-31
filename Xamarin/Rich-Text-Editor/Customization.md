@@ -172,7 +172,7 @@ this.Content = richtexteditor;
 
 {% endtabs %}
 
-##Custom Toolbar
+## Custom Toolbar
 
 The Rich Text Editor provides a custom toolbar support, which allows the users to add custom toolbar items to the toolbar in the editor. The following code example explains how to set custom toolbar in Rich Text Editor.
 
@@ -200,3 +200,5 @@ this.Content = richTextEditor;
 {% endtabs %}
 
 ![Rich Text Editor custom toolbar support](SfRichTextEditor_Images/CustomToolbar.png)
+
+N> The custom toolbar will not support sub toolbar in Xamarin RichTextEditor iOS because the control selection will be lost when clicking the elements in the sub toolbar.

@@ -523,7 +523,7 @@ The user can restrict the layout of swipeView based on the size of the content l
                        ColumnSizer="Star"
                        AutoGenerateColumns="True"
                        AllowSwiping="True"
-					   SwipeOffsetMode="Auto"
+                       SwipeOffsetMode="Auto"
                        ItemsSource="{Binding OrdersInfo}">
 
   <syncfusion:SfDataGrid.LeftSwipeTemplate>

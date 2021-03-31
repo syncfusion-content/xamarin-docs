@@ -368,9 +368,9 @@ pdfViewerControl.AnnotationSettings.FreeText.IsLocked = false;
 
 ##How to get and set the name of the annotations?
 
-The PDF Viewer allows the users to get and set the name of annotations through the `Name` API.
+The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API.
 
-The following code sample explains modifying the name of the annotation in the `FreeTextAnnotationAdded` event. 
+The following code sample explains modifying the name of the annotation in the [FreeTextAnnotationAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_FreeTextAnnotationAdded) event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -384,4 +384,4 @@ private void PdfViewerControl_ FreeTextAnnotationAdded (object sender, FreeTextA
 {% endhighlight %}
 {% endtabs %}
 
-N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the `FreeTextAnnotationAdded` event. But this can be done in all other events as well. 
+N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [FreeTextAnnotationAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_FreeTextAnnotationAdded) event. But this can be done in all other events as well. 

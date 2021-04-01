@@ -512,9 +512,9 @@ private void Datagrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
 
 You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-661295078).
 
-## How to set the maximum swipe offset based on the content of the swipe template.
+## How to set MaxSwipeOffset based on content size
 
-The user can restrict the layout of swipeView based on the size of the content loaded inside the swiping template by setting SfDataGrid.SwipeOffsetMode as Auto. The default value of the SwipeOffsetMode is Custom.
+Users can restrict the max swipe offset of a row to the width of the content loaded inside the swipe template by setting the [SfDataGrid.SwipeOffsetMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_SwipeOffsetMode) as [SwipeOffsetMode.Auto](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipeOffsetMode.html#Syncfusion_SfDataGrid_XForms_SwipeOffsetMode_Auto). The default value of the `SwipeOffsetMode` is `SwipeOffsetMode.Custom`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -581,6 +581,8 @@ The user can restrict the layout of swipeView based on the size of the content l
 {% endtabs %}
 
 ![Maximum swipe offset based on the content of the swipe template](SfDataGrid_images/SwipeOffsetMode.png)
+
+N> The `SfDataGrid.MaxSwipeOffset` property's value will not be considered when the `SfDataGrid.SwipeOffsetMode` is set as `SwipeOffsetMode.Auto`.
 
 ## How to load custom swipe buttons based on row data?
 

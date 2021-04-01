@@ -94,6 +94,42 @@ this.dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.MoveLast;
 
 N> Editing supports for GridTemplateColumn and GridUnboundColumn are not provided yet.
 
+## Focus behavior
+
+The editing of current cell will be ended by default while the focus is moving from DataGrid to another control. You can set the LostFocusBehavior property to LostFocusBehavior.Default if you want to retain the editing of the current cell even when focus is moved to another control.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AllowEditing="True"
+                       SelectionMode="Multiple"    
+                       NavigationMode="Cell" 
+                       AutoGenerateColumns="True"
+                       LostFocusBehavior="Default"
+                       ItemsSource="{Binding Orders}" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+ ViewModel viewModel;
+ SfDataGrid dataGrid;
+ public MainPage()
+ {
+    InitializeComponent();
+    viewModel = new ViewModel();
+    dataGrid = new SfDataGrid();   
+    dataGrid.AllowEditing = true;
+    dataGrid.SelectionMode = SelectionMode.Multiple;
+    dataGrid.NavigationMode = NavigationMode.Cell;
+    dataGrid.LostFocusBehavior = LostFocusBehavior.Default;
+    dataGrid.ItemsSource = viewModel.OrdersInfo;         
+    this.Content = dataGrid;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Support for IEditableObject
 
 The SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements the [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.

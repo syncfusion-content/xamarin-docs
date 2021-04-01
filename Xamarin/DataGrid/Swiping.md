@@ -544,7 +544,8 @@ The user can restrict the layout of swipeView based on the size of the content l
 {% endhighlight %}
 {% highlight C# %}
 
-
+ ViewModel viewModel;
+ SfDataGrid dataGrid;
  public MainPage()
  {
     InitializeComponent();

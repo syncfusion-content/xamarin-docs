@@ -13,7 +13,7 @@ This section provides a quick overview for working with SfPullToRefresh for Xama
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+After installing (Essential Studio for Xamarin)[https://www.syncfusion.com/downloads/xamarin], you can find all the required assemblies in the installation folders,
 
 {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 

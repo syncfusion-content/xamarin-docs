@@ -108,7 +108,7 @@ Components/syncfusionessentialstudio-version/lib/pcl/
 
 Alternatively if you had downloaded Essential Studio from Syncfusion.com or through the Xamarin store web interface then all assembly references need to be added manually.
 
-After installing Essential Studio for Xamarin, all the required assemblies can be found in the installation folders, typically
+After installing (Essential Studio for Xamarin)[https://www.syncfusion.com/downloads/xamarin], all the required assemblies can be found in the installation folders, typically
 
 {Syncfusion Installed location}\Essential Studio\12.2.0.40\lib
 
@@ -851,7 +851,7 @@ December</td><td>
 
 ### Reference Essential Studio components in your solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, 
+After installing (Essential Studio for Xamarin)[https://www.syncfusion.com/downloads/xamarin], you can find all the required assemblies in the installation folders, 
 
 {Syncfusion Installed location}\Essential Studio\12.4.0.24\lib
 
@@ -1228,7 +1228,7 @@ This is how the final output looks like on iOS devices.
 
 ### Reference Essential Studio Components in your Solution
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders, typically:
+After installing (Essential Studio for Xamarin)[https://www.syncfusion.com/downloads/xamarin], you can find all the required assemblies in the installation folders, typically:
 
 {Syncfusion Installed location}\Essential Studio\{version number}\lib
 

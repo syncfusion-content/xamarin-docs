@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting-Started
-description: getting started
+title: Getting Started with Essential chart | Syncfusion
+description: This section provides a quick overview for working with Syncfusion Essential Chart for Xamarin.Forms.
 platform: xamarin
 control: Essential-Chart
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Essential chart
 
 This section provides a quick overview for working with Essential Chart for Xamarin.Forms. You can walk through the entire process of creating a real world chart.
 

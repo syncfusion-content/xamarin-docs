@@ -1,13 +1,13 @@
 ---
 layout: post
 title: GettingStarted | DataSource | Xamarin | Syncfusion
-description: How to create a sample in DataSource with sorting and grouping.
+description: DataSource is a non UI component that consumes raw data and processes data operations such as sorting, filtering and grouping saving developers’ time.
 platform: xamarin
 control: DataSource
 documentation: UG
 ---
 
-# DataSource
+# Getting started with Xamarin DataSource
 
 ## Overview
 

@@ -212,7 +212,7 @@ The flow chart will get displayed in the SfDiagram as follows
 
 ![Getting started demo in Xamarin.Forms diagram](Getting-Started_images/Getting-Started_img2.jpeg)
 
-This demo project can be downloaded from the following link [GettingStarted_Demo.](http://files2.syncfusion.com/Xamarin.Forms/Samples/Gettingstarted_SfDiagram.zip)
+This demo project can be downloaded from the following link [GettingStarted_Demo.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Diagram246576052.zip)
 
 ## Create a simple organizational chart
 SfDiagram provides support to auto-arrange the nodes based on hierarchical relation. Organization chart is an example of displaying hierarchical information.
@@ -300,4 +300,4 @@ The Employee data is displayed in the SfDiagram as follows
 
 ![Organizational chart demo in Xamarin.Forms diagram](Getting-Started_images/Getting-Started_img3.jpeg)
 
-This demo project can be downloaded from the following link [OrganizationalChart_Demo.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/OrganizationalChart2088885274.zip)
+This demo project can be downloaded from the following link [OrganizationalChart_Demo.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/OrganizationalChart1297437028.zip)

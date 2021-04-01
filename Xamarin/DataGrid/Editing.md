@@ -94,7 +94,7 @@ this.dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.MoveLast;
 
 N> Editing supports for GridTemplateColumn and GridUnboundColumn are not provided yet.
 
-## Focus behavior
+## Lost Focus behavior
 
 The editing of current cell will be ended by default while the focus is moving from DataGrid to another control. You can set the LostFocusBehavior property to LostFocusBehavior.Default if you want to retain the editing of the current cell even when focus is moved to another control.
 

@@ -199,6 +199,61 @@ dataGrid.VerticalOverScrollMode = VerticalOverScrollMode.None;
 
 ![DataGrid without bouncing effect](SfDataGrid_images/VerticalOverScrollMode_none.gif)
 
+## Scrollbar Visibility
+
+You can change the visibility of the horizontal and vertical scrollbar using [SfDataGrid.HorizontalScrollBarVisibility](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_HorizontalScrollBarVisibility) and [SfDataGrid.VerticalScrollBarVisibility](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_VerticalScrollBarVisibility) properties respectively. By default, the visibility of both the horizontal and vertical scrollbar is `true`.
+
+{% tabs %}
+{% highlight xaml %}
+
+using Syncfusion.SfDataGrid.XForms;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class DataGridPage : ContentPage
+    {
+        ViewModel viewModel;
+        SfDataGrid dataGrid;
+        public DataGridPage()
+        {
+            InitializeComponent();
+            viewModel = new ViewModel();
+            dataGrid = new SfDataGrid();
+            dataGrid.ItemsSource = viewModel.OrdersInfo;   
+            dataGrid.HorizontalScrollBarVisibility = false;
+            dataGrid.VerticalScrollBarVisibility = false;
+            this.Content = dataGrid;
+        }
+    }
+}
+
+{% endhighlight %}
+{% highlight C# %}
+
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:GettingStarted"
+             xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
+             x:Class="GettingStarted.DataGridPage">
+
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    
+    <sfgrid:SfDataGrid x:Name="dataGrid"                                       
+                       ItemsSource="{Binding OrdersInfo}"         
+                       HorizontalScrollBarVisibility="False"
+                       VerticalScrollBarVisibility="False">   
+        </sfgrid:SfDataGrid> 
+</ContentPage>
+
+{% endhighlight %}
+{% endtabs %}
+
+N> These properties does not have any effect when the datagrid has no scrollable content in its respective direction. In such cases scroll bar will not be displayed
+
 ## Identifying scroll state changes
 
 The `SfDataGrid` will notify the scrolling state changes via the [ScrollStateChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event.
@@ -253,109 +308,3 @@ To retain the scroll position when [ItemsSource](https://help.syncfusion.com/cr/
 {% highlight C# %}
 dataGrid.CanMaintainScrollPosition = true;
 {% endhighlight %}
-
-## Customize Horizontal ScrollBar Visibility
-
-You can change the visibility of the horizontal scrollbar using SfDataGrid.HorizontalScrollBarVisibility property. By default, the visibility of the horizontal Scrollbar is true.
-
-{% tabs %}
-{% highlight xaml %}
-
-using Syncfusion.SfDataGrid.XForms;
-using Xamarin.Forms;
-
-namespace GettingStarted
-{
-    public partial class DataGridPage : ContentPage
-    {
-        ViewModel viewModel;
-        SfDataGrid dataGrid;
-        public DataGridPage()
-        {
-            InitializeComponent();
-            viewModel = new ViewModel();
-            dataGrid = new SfDataGrid();
-            dataGrid.DefaultColumnWidth = 100;
-            dataGrid.HorizontalScrollBarVisibility = false;
-            dataGrid.ItemsSource = viewModel.OrdersInfo;   
-            this.Content = dataGrid;
-        }
-    }
-}
-
-{% endhighlight %}
-{% highlight C# %}
-
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:GettingStarted"
-             xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
-             x:Class="GettingStarted.DataGridPage">
-
-    <ContentPage.BindingContext>
-        <local:ViewModel/>
-    </ContentPage.BindingContext>
-    
-    <sfgrid:SfDataGrid x:Name="dataGrid"                                      
-                       DefaultColumnWidth="100"                    
-                       HorizontalScrollBarVisibility="False"
-                       ItemsSource="{Binding OrdersInfo}">   
-        </sfgrid:SfDataGrid> 
-</ContentPage>
-
-{% endhighlight %}
-{% endtabs %}
-
-## Customize Vertical ScrollBar Visibility 
-
-You can change the visibility of the vertical scrollbar using SfDataGrid.VerticalScrollBarVisibility property. By default, the visibility of the Vertical Scrollbar is true. 
-
-{% tabs %}
-{% highlight xaml %}
-
-using Syncfusion.SfDataGrid.XForms;
-using Xamarin.Forms;
-
-namespace GettingStarted
-{
-    public partial class DataGridPage : ContentPage
-    {
-        ViewModel viewModel;
-        SfDataGrid dataGrid;
-        public DataGridPage()
-        {
-            InitializeComponent();
-            viewModel = new ViewModel();
-            dataGrid = new SfDataGrid();
-            dataGrid.DefaultColumnWidth = 100;
-            dataGrid.VerticalScrollBarVisibility = false;
-            dataGrid.ItemsSource = viewModel.OrdersInfo;   
-            this.Content = dataGrid;
-        }
-    }
-}
-
-{% endhighlight %}
-{% highlight C# %}
-
-<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:GettingStarted"
-             xmlns:sfgrid="clr-namespace:Syncfusion.SfDataGrid.XForms;assembly=Syncfusion.SfDataGrid.XForms"
-             x:Class="GettingStarted.DataGridPage">
-
-    <ContentPage.BindingContext>
-        <local:ViewModel/>
-    </ContentPage.BindingContext>
-    
-    <sfgrid:SfDataGrid x:Name="dataGrid"                                      
-                       DefaultColumnWidth="100"                    
-                       VerticalScrollBarVisibility="False"
-                       ItemsSource="{Binding OrdersInfo}">   
-        </sfgrid:SfDataGrid> 
-</ContentPage>
-
-{% endhighlight %}
-{% endtabs %}

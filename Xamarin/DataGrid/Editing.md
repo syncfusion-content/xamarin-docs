@@ -94,6 +94,44 @@ this.dataGrid.EditorSelectionBehavior = EditorSelectionBehavior.MoveLast;
 
 N> Editing supports for GridTemplateColumn and GridUnboundColumn are not provided yet.
 
+## Lost Focus behavior
+
+By default, the current cell value will not be committed when the focus is moving from the datagrid to another control. You can set the [SfDataGrid.LostFocusBehavior](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_LostFocusBehavior) property to [LostFocusBehavior.EndEditCurrentCell](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.LostFocusBehavior.html#Syncfusion_SfDataGrid_XForms_LostFocusBehavior_EndEditCurrentCell) if you want to commit the values of the current cell when focus is moved to another control.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid x:Name="dataGrid"
+                       AllowEditing="True"
+                       SelectionMode="Multiple"    
+                       NavigationMode="Cell" 
+                       AutoGenerateColumns="True"
+                       LostFocusBehavior="EndEditCurrentCell"
+                       ItemsSource="{Binding Orders}" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+ ViewModel viewModel;
+ SfDataGrid dataGrid;
+ public MainPage()
+ {
+    InitializeComponent();
+    viewModel = new ViewModel();
+    dataGrid = new SfDataGrid();   
+    dataGrid.AllowEditing = true;
+    dataGrid.SelectionMode = SelectionMode.Multiple;
+    dataGrid.NavigationMode = NavigationMode.Cell;
+    dataGrid.LostFocusBehavior = LostFocusBehavior.EndEditCurrentCell;
+    dataGrid.ItemsSource = viewModel.OrdersInfo;         
+    this.Content = dataGrid;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Currently this property is only applicable to the [GridNumericColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridNumericColumn.html) and [GridTextColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridTextColumn.html).
+
 ## Support for IEditableObject
 
 The SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements the [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.

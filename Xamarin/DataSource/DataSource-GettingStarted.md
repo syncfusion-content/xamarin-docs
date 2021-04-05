@@ -1,13 +1,13 @@
 ---
 layout: post
 title: GettingStarted | DataSource | Xamarin | Syncfusion
-description: How to create a sample in DataSource with sorting and grouping.
+description: DataSource is a non UI component that consumes raw data and processes data operations such as sorting, filtering and grouping saving developers’ time.
 platform: xamarin
 control: DataSource
 documentation: UG
 ---
 
-# DataSource
+# Getting started with Xamarin DataSource
 
 ## Overview
 
@@ -19,7 +19,7 @@ DataSource is a non UI component that consumes raw data and processes data opera
 
 ### Assembly deployment
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the following installation folders,
+After installing (Essential Studio for Xamarin)[https://www.syncfusion.com/downloads/xamarin], you can find all the required assemblies in the following installation folders,
 {Syncfusion Essential Studio Installed location}\Essential Studio\{Syncfusion release version}\lib
 
 Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/control-dependencies#datasource) section to get the list of assemblies or NuGet package needs to be added as reference to use the DataSource control in any application.

@@ -9,11 +9,11 @@ documentation: ug
 
 # Swiping Messages in Xamarin.Forms Chat(SfChat)
 
-The SfChat allows to enabling the swiping option by setting the SfChat.AllowSwiping property to true. Swipe views are displayed when swiping from ‘left to right’ or ‘right to left’ on a message. The control provides customizable swipe templates for swiping on the left and right side. The swipe gesture can be restricted to a certain point on the message by setting the SfChat.MaxSwipeOffset property.
+The [SfChat](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) allows to enabling the swiping option by setting the [SfChat.AllowSwiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_AllowSwiping) property to `true`. Swipe views are displayed when swiping from ‘left to right’ or ‘right to left’ on a message. The control provides customizable swipe templates for swiping on the left and right side. The swipe gesture can be restricted to a certain point on the message by setting the [SfChat.MaxSwipeOffset](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MaxSwipeOffset) property.
 
 ### Swipe templates
 
-The Swiping can be customized by using the SfChat.LeftSwipeViewTemplate when swiping towards right and SfListView.RightSwipeViewTemplate when swiping towards left. The content inside the swipe template is arranged based on the offset values when swiping a message.
+The Swiping can be customized by using the [SfChat.LeftSwipeViewTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_LeftSwipeViewTemplate) when swiping towards right and [SfListView.RightSwipeViewTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_RightSwipeViewTemplate) when swiping towards left. The content inside the swipe template is arranged based on the offset values when swiping a message.
 
 {% tabs %}
 {% highlight xaml %}
@@ -193,13 +193,13 @@ namespace GettingStarted
 
 ### SwipeStarted Event
 
-The SfChat.SwipeStarted event is raised when the swipe offset changes from its initial value. This event is triggered with MessageSwipeStartedEventArgs.
+The [SfChat.SwipeStarted](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_SwipeStarted) event is raised when the swipe offset changes from its initial value. This event is triggered with [MessageSwipeStartedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipeStartedEventArgs.html).
 
-The SwipeStarted event provides the following properties in their arguments:
+The `SwipeStarted` event provides the following properties in their arguments:
 
-* Message: Defines the underlying data associated with the swiped message.
-* SwipeDirection: Defines the swipe direction of the message is being swiped.
-* Cancel : Defines that the swipe action can be canceled by setting the 'Cancel' property of the MessageSwipeStartedEventArgs to true.
+* [Message](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipeEventArgs.html#Syncfusion_XForms_Chat_MessageSwipeEventArgs_Message) : Defines the underlying data associated with the swiped message.
+* [SwipeDirection](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipeEventArgs.html#Syncfusion_XForms_Chat_MessageSwipeEventArgs_SwipeDirection) : Defines the swipe direction of the message is being swiped.
+* [Cancel](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipeStartedEventArgs.html#Syncfusion_XForms_Chat_MessageSwipeStartedEventArgs_Cancel) : Defines that the swipe action can be canceled by setting the 'Cancel' property of the [MessageSwipeStartedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipeStartedEventArgs.html) to true.
 
 
 {% tabs %}
@@ -324,14 +324,14 @@ namespace GettingStarted
 
 ### Swiping Event
 
-The SfChat.Swiping event is raised while swiping a message is in progress. This event is triggered with MessageSwipingEventArgs.
+The [SfChat.Swiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_Swiping) event is raised while swiping a message is in progress. This event is triggered with [MessageSwipingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipingEventArgs.html).
 
-The Swiping event provides the following properties in their arguments:
+The `Swiping` event provides the following properties in their arguments:
 
-* Message : Defines the underlying data associated with the swiped message.
-* SwipeDirection: Defines the swipe direction of the message is being swiped.
-* SwipeOffSet: Defines the current swipe offset of the message that is being swiped.
-* Handled: Defines that if it is true, current swipe offset value remains same for the swiped message until the SwipeEnded event is raised.
+* [Message](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipeEventArgs.html#Syncfusion_XForms_Chat_MessageSwipeEventArgs_Message) : Defines the underlying data associated with the swiped message.
+* [SwipeDirection](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipeEventArgs.html#Syncfusion_XForms_Chat_MessageSwipeEventArgs_SwipeDirection) : Defines the swipe direction of the message is being swiped.
+* [SwipeOffSet](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipingEventArgs.html#Syncfusion_XForms_Chat_MessageSwipingEventArgs_SwipeOffSet) : Defines the current swipe offset of the message that is being swiped.
+* [Handled](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipingEventArgs.html#Syncfusion_XForms_Chat_MessageSwipingEventArgs_Handled) : Defines that if it is true, current swipe offset value remains same for the swiped message until the `SwipeEnded` event is raised.
 
 {% tabs %}
 {% highlight xaml %}
@@ -459,13 +459,13 @@ namespace GettingStarted
 
 ### SwipeEnded Event
 
-The SfChat.SwipeEnded event is fired when the swipe offset value reaches the SfChat.MaxSwipeOffset value indicating that the swipe action is completed. This event is triggered with MessageSwipeEndedEventArgs.
+The [SfChat.SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_SwipeEnded) event is fired when the swipe offset value reaches the [SfChat.MaxSwipeOffset](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MaxSwipeOffset) value indicating that the swipe action is completed. This event is triggered with [MessageSwipeEndedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipeEndedEventArgs.html).
 
-The SwipeEnded event provides the following properties in their arguments:
+The `SwipeEnded` event provides the following properties in their arguments:
 
-* Message : Defines the underlying data associated with the swiped message.
-* SwipeDirection: Defines the swipe direction of the message is being swiped.
-* SwipeOffSet : Defines the current swipe offset of the message that is being swiped
+* [Message](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipeEventArgs.html#Syncfusion_XForms_Chat_MessageSwipeEventArgs_Message) : Defines the underlying data associated with the swiped message.
+* [SwipeDirection](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipeEventArgs.html#Syncfusion_XForms_Chat_MessageSwipeEventArgs_SwipeDirection) : Defines the swipe direction of the message is being swiped.
+* [SwipeOffSet](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.MessageSwipeEndedEventArgs.html#Syncfusion_XForms_Chat_MessageSwipeEndedEventArgs_SwipeOffSet) : Defines the current swipe offset of the message that is being swiped
 
 {% tabs %}
 {% highlight xaml %}
@@ -590,7 +590,7 @@ namespace GettingStarted
 
 ## Reset Swipe view Programmatically 
 
-The SfChat allows to canceling the swipe programmatically by calling the SfChat.ResetSwipeOffset method in SfChat.SwipeEnded event.
+The `SfChat` allows to canceling the swipe programmatically by calling the [SfChat.ResetSwipeOffset](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ResetSwipeOffset) method in [SfChat.SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_SwipeEnded) event.
 
 {% tabs %}
 {% highlight xaml %}

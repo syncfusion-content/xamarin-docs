@@ -202,3 +202,89 @@ this.Content = richTextEditor;
 ![Rich Text Editor custom toolbar support](SfRichTextEditor_Images/CustomToolbar.png)
 
 N> The custom toolbar will not support the sub toolbar in the Xamarin RichTextEditor iOS because the control selection will be lost when clicking the elements in the sub toolbar.
+
+### Insert new item to the custom toolbar collection
+
+The following code example explains how to insert new item to the existing custom toolbar in Rich Text Editor.
+
+{% highlight C# %} 
+
+SfRichTextEditor richTextEditor = new SfRichTextEditor();
+richTextEditor.PlaceHolder = "Type something";
+ObservableCollection<object> collection = new ObservableCollection<object>();
+collection.Add(ToolbarOptions.Bold);
+collection.Add(ToolbarOptions.Italic);
+collection.Add(ToolbarOptions.Underline);
+collection.Add(ToolbarOptions.NumberList);
+collection.Add(ToolbarOptions.BulletList);
+richTextEditor.ToolbarItems = collection;
+this.Content = richTextEditor;
+
+//Insert new item to the custom toolbar collection.
+Button emojiButton = new Button();
+emojiButton.BackgroundColor = Color.Transparent;
+emojiButton.HeightRequest = 50;
+emojiButton.WidthRequest = 50;
+emojiButton.Text = "\U0001F642";
+collection.Insert(1, emojiButton);
+collection.Insert(2, ToolbarOptions.FontColor);
+
+{% endhighlight %}
+
+### Remove an item from the custom toolbar collection
+
+The following code example explains how to remove an existing item from the custom toolbar in Rich Text Editor.
+
+{% highlight C# %} 
+
+SfRichTextEditor richTextEditor = new SfRichTextEditor();
+richTextEditor.PlaceHolder = "Type something";
+ObservableCollection<object> collection = new ObservableCollection<object>();
+collection.Add(ToolbarOptions.Bold);
+collection.Add(ToolbarOptions.Italic);
+collection.Add(ToolbarOptions.Underline);
+collection.Add(ToolbarOptions.NumberList);
+collection.Add(ToolbarOptions.BulletList);
+Button emojiButton = new Button();
+emojiButton.BackgroundColor = Color.Transparent;
+emojiButton.HeightRequest = 50;
+emojiButton.WidthRequest = 50;
+emojiButton.Text = "\U0001F642";
+collection.Add(emojiButton);
+richTextEditor.ToolbarItems = collection;
+this.Content = richTextEditor;
+
+//Remove an item from the custom toolbar collection.
+collection.RemoveAt(0);
+collection.Remove(emojiButton);
+
+{% endhighlight %}
+
+### Reorder the custom toolbar collection
+
+The following code example explains how to reorder the custom toolbar in Rich Text Editor.
+
+{% highlight C# %} 
+
+SfRichTextEditor richTextEditor = new SfRichTextEditor();
+richTextEditor.PlaceHolder = "Type something";
+ObservableCollection<object> collection = new ObservableCollection<object>();
+collection.Add(ToolbarOptions.Bold);
+collection.Add(ToolbarOptions.Italic);
+collection.Add(ToolbarOptions.Underline);
+collection.Add(ToolbarOptions.NumberList);
+collection.Add(ToolbarOptions.BulletList);
+Button emojiButton = new Button();
+emojiButton.BackgroundColor = Color.Transparent;
+emojiButton.HeightRequest = 50;
+emojiButton.WidthRequest = 50;
+emojiButton.Text = "\U0001F642";
+collection.Add(emojiButton);
+richTextEditor.ToolbarItems = collection;
+this.Content = richTextEditor;
+
+//Reorder the custom toolbar collection.
+collection.Move(0, collection.Count - 1);
+collection.Move(1, collection.Count - 2);
+
+{% endhighlight %}

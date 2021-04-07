@@ -205,7 +205,7 @@ N> The custom toolbar will not support the sub toolbar in the Xamarin RichTextEd
 
 ### Insert new item to the custom toolbar collection
 
-The following code example explains how to insert new item to the existing custom toolbar in Rich Text Editor.
+The following code example explains how to insert a new item to the existing custom toolbar in the Rich Text Editor.
 
 {% highlight C# %} 
 
@@ -220,7 +220,7 @@ collection.Add(ToolbarOptions.BulletList);
 richTextEditor.ToolbarItems = collection;
 this.Content = richTextEditor;
 
-//Insert new item to the custom toolbar collection.
+//Insert a new item to the custom toolbar collection.
 Button emojiButton = new Button();
 emojiButton.BackgroundColor = Color.Transparent;
 emojiButton.HeightRequest = 50;
@@ -233,7 +233,7 @@ collection.Insert(2, ToolbarOptions.FontColor);
 
 ### Remove an item from the custom toolbar collection
 
-The following code example explains how to remove an existing item from the custom toolbar in Rich Text Editor.
+The following code example explains how to remove an existing item from the custom toolbar in the Rich Text Editor.
 
 {% highlight C# %} 
 
@@ -262,7 +262,7 @@ collection.Remove(emojiButton);
 
 ### Reorder the custom toolbar collection
 
-The following code example explains how to reorder the custom toolbar in Rich Text Editor.
+The following code example explains how to reorder the custom toolbar in the Rich Text Editor.
 
 {% highlight C# %} 
 

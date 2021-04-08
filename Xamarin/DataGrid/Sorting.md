@@ -11,6 +11,10 @@ documentation: UG
 
 The data grid sorts the data by setting the [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AllowSorting) property to `true`. It allows sorting the data against one or more columns. When sorting is applied, the control automatically rearranges the data to match with the current sort criteria. When `SfDataGrid.AllowSorting` is `true`, you can sort the data simply by tapping the column header. Once sorting is applied, the control shows a sort icon in the respective column header indicating the direction of sorting.
 
+To get started quickly with sorting in Xamarin.Forms DataGrid, you can check out this video:
+<style>#XamarinDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
+<iframe id='XamarinDataGridVideoTutorial' src='https://www.youtube.com/watch?v=NtXzsvz4pQk'></iframe>
+
 N> To update sorting for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 
 ## Programmatic sorting

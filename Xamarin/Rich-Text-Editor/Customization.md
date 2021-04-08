@@ -271,15 +271,15 @@ richTextEditor.PlaceHolder = "Type something";
 ObservableCollection<object> collection = new ObservableCollection<object>();
 collection.Add(ToolbarOptions.Bold);
 collection.Add(ToolbarOptions.Italic);
-collection.Add(ToolbarOptions.Underline);
-collection.Add(ToolbarOptions.NumberList);
-collection.Add(ToolbarOptions.BulletList);
 Button emojiButton = new Button();
 emojiButton.BackgroundColor = Color.Transparent;
 emojiButton.HeightRequest = 50;
 emojiButton.WidthRequest = 50;
 emojiButton.Text = "\U0001F642";
 collection.Add(emojiButton);
+collection.Add(ToolbarOptions.NumberList);
+collection.Add(ToolbarOptions.BulletList);
+collection.Add(ToolbarOptions.Underline);
 richTextEditor.ToolbarItems = collection;
 this.Content = richTextEditor;
 

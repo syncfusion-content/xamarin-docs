@@ -212,23 +212,19 @@ The following code example explains how to insert a new item to the existing cus
 SfRichTextEditor richTextEditor = new SfRichTextEditor();
 richTextEditor.PlaceHolder = "Type something";
 ObservableCollection<object> collection = new ObservableCollection<object>();
-collection.Add(ToolbarOptions.Bold);
-collection.Add(ToolbarOptions.Italic);
-collection.Add(ToolbarOptions.Underline);
-collection.Add(ToolbarOptions.NumberList);
-collection.Add(ToolbarOptions.BulletList);
 richTextEditor.ToolbarItems = collection;
 this.Content = richTextEditor;
 
 //Insert a new item to the custom toolbar collection.
+collection.Insert(0, ToolbarOptions.Underline);
 Button emojiButton = new Button();
 emojiButton.BackgroundColor = Color.Transparent;
 emojiButton.HeightRequest = 50;
 emojiButton.WidthRequest = 50;
 emojiButton.Text = "\U0001F642";
-collection.Insert(1, emojiButton);
-collection.Insert(2, ToolbarOptions.FontColor);
-
+collection.Insert(0, emojiButton);
+collection.Insert(0, ToolbarOptions.Italic);
+collection.Insert(0, ToolbarOptions.Bold);
 {% endhighlight %}
 
 ### Remove an item from the custom toolbar collection
@@ -269,8 +265,8 @@ The following code example explains how to reorder the custom toolbar in the Ric
 SfRichTextEditor richTextEditor = new SfRichTextEditor();
 richTextEditor.PlaceHolder = "Type something";
 ObservableCollection<object> collection = new ObservableCollection<object>();
-collection.Add(ToolbarOptions.Bold);
 collection.Add(ToolbarOptions.Italic);
+collection.Add(ToolbarOptions.Bold);
 Button emojiButton = new Button();
 emojiButton.BackgroundColor = Color.Transparent;
 emojiButton.HeightRequest = 50;

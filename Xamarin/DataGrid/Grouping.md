@@ -11,6 +11,11 @@ documentation: UG
 
 A group represents a collection of records that belongs to a particular category. When grouping, the data is organized into hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_CaptionSummaryRowProperty) to get the underlying records in view.
 
+To get started quickly with grouping in Xamarin.Forms DataGrid, you can check out this video:
+<style>#XamarinDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
+<iframe id='XamarinDataGridVideoTutorial' src='https://www.youtube.com/watch?v=Z2JidYmNDYk'></iframe>
+
+
 N> To update grouping for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 
 N> When `BeginInit` method is called, it suspends all the updates until `EndInit` method is called.  

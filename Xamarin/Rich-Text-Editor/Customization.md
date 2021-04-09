@@ -216,15 +216,15 @@ richTextEditor.ToolbarItems = collection;
 this.Content = richTextEditor;
 
 //Insert a new item to the custom toolbar collection.
-collection.Insert(0, ToolbarOptions.Underline);
 Button emojiButton = new Button();
 emojiButton.BackgroundColor = Color.Transparent;
 emojiButton.HeightRequest = 50;
 emojiButton.WidthRequest = 50;
 emojiButton.Text = "\U0001F642";
-collection.Insert(0, emojiButton);
-collection.Insert(0, ToolbarOptions.Italic);
-collection.Insert(0, ToolbarOptions.Bold);
+collection.Add(ToolbarOptions.Bold);
+collection.Add(ToolbarOptions.Italic);
+collection.Add(emojiButton);
+collection.Add(ToolbarOptions.Underline);
 {% endhighlight %}
 
 ### Remove an item from the custom toolbar collection
@@ -266,6 +266,7 @@ SfRichTextEditor richTextEditor = new SfRichTextEditor();
 richTextEditor.PlaceHolder = "Type something";
 ObservableCollection<object> collection = new ObservableCollection<object>();
 collection.Add(ToolbarOptions.Italic);
+collection.Add(ToolbarOptions.Underline);
 collection.Add(ToolbarOptions.Bold);
 Button emojiButton = new Button();
 emojiButton.BackgroundColor = Color.Transparent;
@@ -275,12 +276,7 @@ emojiButton.Text = "\U0001F642";
 collection.Add(emojiButton);
 collection.Add(ToolbarOptions.NumberList);
 collection.Add(ToolbarOptions.BulletList);
-collection.Add(ToolbarOptions.Underline);
 richTextEditor.ToolbarItems = collection;
 this.Content = richTextEditor;
-
-//Reorder the custom toolbar collection.
-collection.Move(0, collection.Count - 1);
-collection.Move(1, collection.Count - 2);
 
 {% endhighlight %}

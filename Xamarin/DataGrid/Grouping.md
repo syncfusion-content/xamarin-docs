@@ -15,7 +15,6 @@ To get started quickly with grouping in Xamarin.Forms DataGrid, you can check ou
 <style>#XamarinDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
 <iframe id='XamarinDataGridVideoTutorial' src='https://www.youtube.com/watch?v=Z2JidYmNDYk'></iframe>
 
-
 N> To update grouping for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 
 N> When `BeginInit` method is called, it suspends all the updates until `EndInit` method is called.  

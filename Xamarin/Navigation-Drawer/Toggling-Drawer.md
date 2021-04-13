@@ -62,13 +62,13 @@ navigationDrawer.ToggleDrawer();
 
 {% endhighlight %}
 
-Toggling drawer through swipe gesture is explained in `Swipe Gesture and Sensitivity` section.
+Toggling drawer by swipe gesture is explained in `Swipe Gesture and Sensitivity` section.
 
-## Opening Drawer via Binding.
+## Opening Drawer via Binding
 
-SfNavigationDrawer can be used in MVVM architecture applications easily. In the below example SfNavigationDrawer.IsOpen property is bound to a property in the ViewModel based on which the drawer is opened or closed. Refer the below code example to display drawer in MVVM.
+SfNavigationDrawer can be used in any MVVM architecture application easily. In the below example, `SfNavigationDrawer.IsOpen` property is bound to a property in the ViewModel, based on which the drawer is opened or closed. Refer the below code example to display drawer in MVVM.
 
-In the below code snippet, note that the Binding context is set for the page and the property (OpenDrawer) of the ViewModel is bound to the SfNavigationDrawer.IsOpen.
+In the following code sample, note that the Binding context is set for the page and the property (OpenDrawer) of the ViewModel is bound to the SfNavigationDrawer.IsOpen.
 
 {% tabs %}
 

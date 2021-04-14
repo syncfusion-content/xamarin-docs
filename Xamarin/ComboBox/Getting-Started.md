@@ -178,7 +178,7 @@ Content = layout;
 
 ## Populating ComboBox with data
 
-Now, a list of string with resolution list is created and added to the SfComboBox data source property. This list is populated as suggestion list by setting the 'DataSource' property based on text entry. You can customize the drop-down height using the MaximumDropDownHeight property. Add the DataSource for the SfComboBox as shown in the following code.
+Now, a list of string with resolution list is created and added to the SfComboBox data source property. This list is populated as suggestion list by setting the [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSourceProperty) property based on text entry. You can customize the drop-down height using the MaximumDropDownHeight property. Add the DataSource for the SfComboBox as shown in the following code.
 
 {% tabs %}
 
@@ -199,18 +199,18 @@ Now, a list of string with resolution list is created and added to the SfComboBo
                 	<x:String> 1600 x 900 </x:String>
                 	<x:String> 1440 x 900 </x:String>
                 	<x:String> 1400 x 1050 </x:String>
-                       <x:String> 1366 x 768 </x:String>
+                    <x:String> 1366 x 768 </x:String>
                 	<x:String> 1360 x 768 </x:String>
                 	<x:String> 1280 x 1024 </x:String>
-                       <x:String> 1280 x 960 </x:String>
+                    <x:String> 1280 x 960 </x:String>
                 	<x:String> 1280 x 720 </x:String>
                 	<x:String> 854 x 480 </x:String>
-                       <x:String> 800 x 480 </x:String>
+                    <x:String> 800 x 480 </x:String>
                 	<x:String> 480 X 640 </x:String>
                 	<x:String> 480 x 320 </x:String>
-                       <x:String> 432 x 240 </x:String>
-                       <x:String> 360 X 640 </x:String>
-                       <x:String> 320 x 240 </x:String>
+                    <x:String> 432 x 240 </x:String>
+                    <x:String> 360 X 640 </x:String>
+                    <x:String> 320 x 240 </x:String>
             	</ListCollection:List>
             </combobox:SfComboBox.ComboBoxSource>
         </combobox:SfComboBox>              
@@ -263,170 +263,13 @@ Refer [this](https://help.syncfusion.com/xamarin/sfcombobox/populating-data) lin
 
 ## ComboBox modes
 
-The combo box control supports both editable and non-editable text boxes to choose selected items in given data source. You can select an item from the suggestion list.
+The combo box control supports both editable and non-editable text boxes to choose selected items in given data source. You can select an item from the suggestion list. Refer this [`link]`(https://help.syncfusion.com/xamarin/combobox/editable-modes) for more information reagrding this.
 
-N > The default value of the IsEditableMode property is false. 
-
-### Non-editable combo box
-
-Non-editable mode prevents users from typing and allows them to select items from the drop-down list. In non-editable mode, the suggestion box can be displayed by clicking the control or drop-down button.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="false">
-            <combobox:SfComboBox.ComboBoxSource>
-                <ListCollection:List x:TypeArguments="x:String">
-                    <x:String> 1920 x 1080 </x:String>
-                    <x:String> 1680 x 1050 </x:String>
-                    <x:String> 1600 x 900 </x:String>
-                    <x:String> 1440 x 900 </x:String>
-                    <x:String> 1400 x 1050 </x:String>
-                    <x:String> 1366 x 768 </x:String>
-                    <x:String> 1360 x 768 </x:String>
-                    <x:String> 1280 x 1024 </x:String>
-                    <x:String> 1280 x 960 </x:String>
-                    <x:String> 1280 x 720 </x:String>
-                    <x:String> 854 x 480 </x:String>
-                    <x:String> 800 x 480 </x:String>
-                    <x:String> 480 X 640 </x:String>
-                    <x:String> 480 x 320 </x:String>
-                    <x:String> 432 x 240 </x:String>
-                    <x:String> 360 X 640 </x:String>
-                    <x:String> 320 x 240 </x:String>
-                </ListCollection:List>
-            </combobox:SfComboBox.ComboBoxSource>
-	 	</combobox:SfComboBox>              
-	</StackLayout> 
-	
-{% endhighlight %}
-
-{% highlight c# %}
-
-StackLayout layout = new StackLayout() 
-{ 
-    VerticalOptions = LayoutOptions.Start, 
-    HorizontalOptions = LayoutOptions.Start, 
-    Padding = new Thickness(30) 
-};	    
-List<String> resolutionList = new List<String>();
-resolutionList.Add("1920 x 1080");
-resolutionList.Add("1680 x 1050");
-resolutionList.Add("1600 x 900");
-resolutionList.Add("1440 x 900");
-resolutionList.Add("1400 x 1050");
-resolutionList.Add("1366 x 768");
-resolutionList.Add("1360 x 768");
-resolutionList.Add("1280 x 1024");
-resolutionList.Add("1280 x 960");
-resolutionList.Add("1280 x 720");
-resolutionList.Add("854 x 480");
-resolutionList.Add("800 x 480");
-resolutionList.Add("480 X 640");
-resolutionList.Add("480 x 320");
-resolutionList.Add("432 x 240");
-resolutionList.Add("360 X 640");
-resolutionList.Add("320 x 240");
-
-SfComboBox comboBox = new SfComboBox();
-comboBox.HeightRequest = 40;
-comboBox.MaximumDropDownHeight = 200;
-comboBox.IsEditableMode = false;
-comboBox.ComboBoxSource = resolutionList;
-
-layout.Children.Add(comboBox); 
-Content = layout;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![noneditabl](images/Getting-Started/non-editableModeComboBox.png)
-
-### Editable combo box
-
-In editable mode, the combo box allows users to edit in the text box that shows suggestions in drop-down list based on the input. With the previous codes, the ‘IsEditableMode’ property can be set to true. This helps users to edit the combo box control.
-
-
-{% tabs %}
-
-{% highlight xaml %}
-
-	<StackLayout VerticalOptions="Start" HorizontalOptions="Start" Padding="30">
-        <combobox:SfComboBox HeightRequest="40" x:Name="comboBox" MaximumDropDownHeight="200" IsEditableMode="true">
-            <combobox:SfComboBox.ComboBoxSource>
-                <ListCollection:List x:TypeArguments="x:String">
-                    <x:String> 1920 x 1080 </x:String>
-                    <x:String> 1680 x 1050 </x:String>
-                    <x:String> 1600 x 900 </x:String>
-                    <x:String> 1440 x 900 </x:String>
-                    <x:String> 1400 x 1050 </x:String>
-                    <x:String> 1366 x 768 </x:String>
-                    <x:String> 1360 x 768 </x:String>
-                    <x:String> 1280 x 1024 </x:String>
-                    <x:String> 1280 x 960 </x:String>
-                    <x:String> 1280 x 720 </x:String>
-                    <x:String> 854 x 480 </x:String>
-                    <x:String> 800 x 480 </x:String>
-                    <x:String> 480 X 640 </x:String>
-                    <x:String> 480 x 320 </x:String>
-                    <x:String> 432 x 240 </x:String>
-                    <x:String> 360 X 640 </x:String>
-                    <x:String> 320 x 240 </x:String>
-                </ListCollection:List>
-            </combobox:SfComboBox.ComboBoxSource>
-        </combobox:SfComboBox>              
-	</StackLayout> 
-	
-{% endhighlight %}
-
-{% highlight c# %}
-
-StackLayout layout = new StackLayout() 
-{ 
-    VerticalOptions = LayoutOptions.Start, 
-    HorizontalOptions = LayoutOptions.Start, 
-    Padding = new Thickness(30) 
-};	    
-List<String> resolutionList = new List<String>();
-resolutionList.Add("1920 x 1080");
-resolutionList.Add("1680 x 1050");
-resolutionList.Add("1600 x 900");
-resolutionList.Add("1440 x 900");
-resolutionList.Add("1400 x 1050");
-resolutionList.Add("1366 x 768");
-resolutionList.Add("1360 x 768");
-resolutionList.Add("1280 x 1024");
-resolutionList.Add("1280 x 960");
-resolutionList.Add("1280 x 720");
-resolutionList.Add("854 x 480");
-resolutionList.Add("800 x 480");
-resolutionList.Add("480 X 640");
-resolutionList.Add("480 x 320");
-resolutionList.Add("432 x 240");
-resolutionList.Add("360 X 640");
-resolutionList.Add("320 x 240");
-
-SfComboBox comboBox = new SfComboBox();
-comboBox.HeightRequest = 40;
-comboBox.MaximumDropDownHeight = 200;
-comboBox.IsEditableMode = true;
-comboBox.ComboBoxSource = resolutionList;
-
-layout.Children.Add(comboBox); 
-Content = layout;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-![editableMode](images/Getting-Started/editableModeComboBox.png)
+N> The default value of the IsEditableMode property is false. 
 
 ## Retrieving selected values
 
-When selecting an item from the drop-down list, the selection changed event will be called. Using the following code snippet, a dialogue box will be displayed when a new item is selected from the suggestion box.
+When selecting an item from the drop-down list, the selection changed event will be called and you can retrieving a selected item using [`SelectionChangedEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.SelectionChangedEventHandler.html) arguments. Using the following code snippet, a dialogue box will be displayed when a new item is selected from the suggestion box.
 
 {% tabs %}
 

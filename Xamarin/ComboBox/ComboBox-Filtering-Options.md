@@ -7,8 +7,8 @@ control : SfComboBox
 documentation : ug
 ---
 
-# Filtering 
-The combo box enables the filer option for filtering the suggestions in the drop-down. 
+# Filtering in SfComboBox
+The combo box enables the filer option [`AllowFiltering`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_AllowFilteringProperty) for filtering the suggestions in the drop-down. 
 
 {% tabs %}	
 
@@ -73,7 +73,7 @@ Content = layout;
 
 ## Filtering types
 
-The string comparison for filtering suggestions can be changed using the `SuggestionMode` property. The default filtering type is “StartsWith”, and it is case insensitive. The available filtering modes are,
+The string comparison for filtering suggestions can be changed by using the [`SuggestionMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionModeProperty) property. The default filtering type is `StartsWith`, and it is case insensitive. The available filtering modes are,
 
 * StartsWith
 
@@ -95,7 +95,7 @@ The string comparison for filtering suggestions can be changed using the `Sugges
 
 ### Filtering words that starts with input text
 
-Displays all the matches that start with the typed characters in control. This strategy is case in-sensitive.
+Displays all the matches that start with the typed characters in control by using `StartsWith`. This strategy is case in-sensitive.
 	
 {% tabs %}	
 
@@ -150,7 +150,7 @@ Content = layout;
 
 #### Filtering words that starts with input text - case sensitive
 
-Displays all the matches that start with the typed characters in control. This strategy is case sensitive.
+Displays all the matches that start with the typed characters in control by using `StartsWithCaseSensitive`. This strategy is case sensitive.
 
 {% tabs %}
 
@@ -205,7 +205,7 @@ Content = layout;
 
 ### Filtering words that contain input text
 
-Displays all the matches that contain the typed characters in control. This strategy is case in-sensitive.
+Displays all the matches that contain the typed characters in control by using `Contains`. This strategy is case in-sensitive.
 	
 {% tabs %}
 
@@ -262,7 +262,7 @@ Content = layout;
 
 #### Filtering words that contain input text - case sensitive
 
-Displays all the matches that contains the typed characters in control. This strategy is case sensitive.
+Displays all the matches that contains the typed characters in control by using `ContainsWithCaseSensitive`. This strategy is case sensitive.
 
 {% tabs %}
 
@@ -319,7 +319,7 @@ Content = layout;
 
 ### Filtering words that equals the input text
 
-Displays all the words that completely match with the typed characters in control. This strategy is case in-sensitive.
+Displays all the words that completely match with the typed characters in control by using `Equals`. This strategy is case in-sensitive.
 	
 {% tabs %}
 
@@ -373,7 +373,7 @@ Content = layout;
 
 #### Filtering words that equals input text - case sensitive
 
-Displays all the words that completely match with the typed characters in control. This strategy is case sensitive.
+Displays all the words that completely match with the typed characters in control by using `EqualsWithCaseSensitive`. This strategy is case sensitive.
 	
 {% tabs %}
 
@@ -426,7 +426,7 @@ Content = layout;
 
 ### Custom
 
-Filters items in the suggestion list based on a custom search by user. This helps to apply our typo toleration functionality to the control.
+Filters items in the suggestion list based on a custom search by user by using `Custom`. This helps to apply our typo toleration functionality to the control.
 
 ![Custom filter image](images/ComboBox-Filtering-Options/custom_filter.png)
 
@@ -511,7 +511,7 @@ Filters items in the suggestion list based on a custom search by user. This help
 
 ### Filtering words that end with input text
 
-Displays all the matches that end with the typed characters in control. This strategy is case in-sensitive.
+Displays all the matches that end with the typed characters in control using `EndsWith`. This strategy is case in-sensitive.
 
 {% tabs %}
 	
@@ -567,7 +567,7 @@ Content = layout;
 
 #### Filtering words that end with input text - case sensitive 
 
-Displays all the matches that ends with the typed characters in control. This strategy is case sensitive.
+Displays all the matches that ends with the typed characters in control using `EndsWithCaseSensitive`. This strategy is case sensitive.
 	
 {% tabs %}
 
@@ -631,11 +631,11 @@ The combo box provides three different ways to display the filtered suggestions.
 
 * SuggestAppend - Both suggests and appends.
 
-The `ComboBoxMode` property is used to choose the suggestion display mode in SfComboBox control. The default value is Suggest.
+The [`ComboBoxMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ComboBoxModeProperty) property is used to choose the suggestion display mode in SfComboBox control. The default value is Suggest.
 
 ## Suggesting choices in List
 
-The filtered suggestions are displayed in a drop-down list. User can pick an item from the list.
+The filtered suggestions are displayed in a drop-down list by using ComboBoxMode `Suggest`. User can pick an item from the list.
 
 {% tabs %}
 
@@ -689,7 +689,7 @@ Content = layout;
 
 ## Appending suggestions to text
 
-The first item in filtered suggestions is appended to SfComboBox text. In this mode, drop down remains closed.
+The first item in filtered suggestions is appended to SfComboBox text by using ComboBoxMode `Append`. In this mode, drop down remains closed.
 
 {% tabs %}
 
@@ -744,7 +744,7 @@ Content = layout;
 
 ## Suggesting choices and appending suggestions to text
 
-The text is appended to the first matched item in the suggestions collection, and filtered suggestions are displayed in a drop-down list. Users can pick an item from a list directly or use up and down keys for browsing the list.
+The text is appended to the first matched item in the suggestions collection, and filtered suggestions are displayed in a drop-down list by using ComboBoxMode `SuggestAppend`. Users can pick an item from a list directly or use up and down keys for browsing the list.
 	
 {% tabs %}	
 

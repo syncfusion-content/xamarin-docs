@@ -11,7 +11,7 @@ documentation: ug
 
 AutoSizing can be enabled in SfComboBox control so that the control will extend its layout based on the text input.
 
-`EnableAutoSize` property is used to enable the autoSizing in `SfComboBox` control. To enable the API, you need to set the `MultiSelectMode` as `Token` and `TokensWrapMode` as `Wrap`. The default value of `EnableAutoSize` is false.
+[`EnableAutoSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_EnableAutoSizeProperty) property is used to enable the autoSizing in `SfComboBox` control. To enable the API, you need to set the `MultiSelectMode` as `Token` and `TokensWrapMode` as `Wrap`. The default value of `EnableAutoSize` is false.
 
 {% tabs %}
 {% highlight xaml %}

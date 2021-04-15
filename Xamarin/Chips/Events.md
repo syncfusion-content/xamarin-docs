@@ -26,7 +26,7 @@ N>  Currently, `Choice` and `Filter` types are only supported for [SelectionChan
 
 ##  ChipClicked
 
-The [`ChipClicked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipClicked) event occurs when the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html) is clicked. The event argument is of type EventArgs.
+The [`ChipClicked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_ChipClicked) event is triggered when a chip clicked in the [SfChipGroup](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html). The event argument is of type `EventArgs`.
 
 ## ItemRemoved Event
 

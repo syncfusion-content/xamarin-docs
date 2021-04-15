@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customization of SfComboBox in xamarin.Forms
+title: Customization of Syncfusion SfComboBox in xamarin.Forms
 description: This section describes about the visual customization of entry, suggestion box and suggestion items in the ComboBox
 platform: Xamarin
 control: SfComboBox

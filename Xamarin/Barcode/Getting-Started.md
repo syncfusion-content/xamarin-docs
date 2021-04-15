@@ -17,6 +17,14 @@ This section explains how to configure a Barcode for Xamarin.Forms application. 
 
 To get started with Essential Barcode, go through the following steps.
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
+
+Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location in Mac.
+
 ## Adding SfBarcode reference
 
 You can add SfBarcode reference using one of the following methods:

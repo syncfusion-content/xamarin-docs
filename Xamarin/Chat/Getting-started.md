@@ -12,11 +12,11 @@ documentation: ug
 
 ## Assembly deployment
 
-After installing (Essential Studio for Xamarin)[https://www.syncfusion.com/downloads/xamarin], find all the required assemblies in the installation folders {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
+Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
 
-N> Assemblies can be found in an unzipped package location in Mac.
+N> Assemblies can be found in unzipped package location in Mac.
 
 ## NuGet configuration
 

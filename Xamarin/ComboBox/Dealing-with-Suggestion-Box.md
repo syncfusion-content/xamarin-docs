@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Suggestion DropDown in Syncfusion SfComboBox control for Xamarin.Forms
-description: This section describes about the placement of the drop-down suggestion and how to get the filtered SfComboBox items.
+description: This section describes about the placement of the drop-down suggestion and how to get the filtered SfComboBox items
 platform: xamarin
 control: SfComboBox
 documentation: ug

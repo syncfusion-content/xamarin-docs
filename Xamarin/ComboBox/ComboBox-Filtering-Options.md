@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Filter Suggestions for Syncfusion ComboBox Control in Xamarin.Forms
-description: Learn how to filter the suggestions in ComboBox 
-platform: Xamarin.Forms
+description: This section describe about how the Filter Suggestions works in Syncfusion ComboBox Control in Xamarin.Forms
+platform: xamarin
 control: SfComboBox
 documentation: ug
 ---

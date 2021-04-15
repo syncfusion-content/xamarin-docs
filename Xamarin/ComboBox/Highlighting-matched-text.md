@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MatchHighlighting in Syncfusion SfComboBox control for Xamarin.Forms
-description: In this section describes about how to highlight the matched text in SfComboBox suggestion list
+description: In this section describe the details about how to highlight the matched text in SfComboBox suggestion list using TextHighlightMode
 platform: xamarin
 control: SfComboBox
 documentation: ug

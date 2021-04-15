@@ -7,7 +7,7 @@ control: SfComboBox
 documentation: ug
 ---
 
-# ComboBox modes
+# ComboBox modes in SfComboBox
 
 The combo box control supports both editable and non-editable text box to choose selected items in given data source. Users can select one item from the suggestion list. 
 

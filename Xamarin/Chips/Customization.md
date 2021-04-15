@@ -484,7 +484,7 @@ namespace ChipCustomization
 
 ## BorderThickness
 
-The [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_BorderThickness) property customizes the border thickness of the SfChip on four sides.
+The [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_BorderThickness) property is used to customizes the border thickness of the SfChip on four sides.
 
 {% tabs %}
 
@@ -1046,7 +1046,7 @@ N> The default value of ShowIcon is [`false`].
 
 ## Image
 
-The [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Image) property customizes the image of SfChipGroup.
+The [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Image) property is used to customize the height, width, image source and aspect for the image of SfChip.
 
 {% tabs %}
 

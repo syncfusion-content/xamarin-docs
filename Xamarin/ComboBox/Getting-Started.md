@@ -263,7 +263,7 @@ Refer [this](https://help.syncfusion.com/xamarin/sfcombobox/populating-data) lin
 
 ## ComboBox modes
 
-The combo box control supports both editable and non-editable text boxes to choose selected items in given data source. You can select an item from the suggestion list. Refer this [`link]`(https://help.syncfusion.com/xamarin/combobox/editable-modes) for more information reagrding this.
+The combo box control supports both editable and non-editable text boxes to choose selected items in given data source. You can select an item from the suggestion list. Refer this [`link]`(https://help.syncfusion.com/xamarin/combobox/editable-modes) for more information regarding this.
 
 N> The default value of the IsEditableMode property is false. 
 

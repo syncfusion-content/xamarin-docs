@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Syncfusion SfComboBox control in Xamarin.Forms
-description: In this section explains about how to use events in SfComboBox control (Xamarin.Forms)
+description: In this section describes about how to use events and interactvity in SfComboBox control (Xamarin.Forms)
 platform: Xamarin
 control: SfComboBox
 documentation: ug
@@ -28,7 +28,7 @@ The ValueChanged event returns the following argument:
 
 ## SelectionChanged Event
 
-The [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.SelectionChangedEventHandler.html) event is used to notify when an item is selected from the suggestion list or dynamically setting the SelectedIndex property of SfComboBox, the event is triggered. For more information regarding this refer [`this`](https://help.syncfusion.com/xamarin/combobox/retrieving-selected-values?cs-save-lang=1&cs-lang=csharp) link. The SelectionChanged event returns the following argument.
+The [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.SelectionChangedEventHandler.html) event is used to notify when an item is selected from the suggestion list or dynamically setting the SelectedIndex property of SfComboBox, the event is triggered. For more information regarding this refer [`this`](https://help.syncfusion.com/xamarin/combobox/retrieving-selected-values) link. The SelectionChanged event returns the following argument.
 
 <table>
 <tr>
@@ -79,7 +79,7 @@ The [`FocusChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Co
 
 The [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.FilterCollectionChangedEventHandler.html) event is triggered whenever the items gets filtered in the suggestion.
 
-For more information regarding this refer [`this`](https://help.syncfusion.com/xamarin/combobox/dealing-with-suggestion-box?cs-save-lang=1&cs-lang=csharp) link. The FilterCollectionChanged event returns the following argument:
+For more information regarding this refer [`this`](https://help.syncfusion.com/xamarin/combobox/dealing-with-suggestion-box) link. The FilterCollectionChanged event returns the following argument:
 
 <table>
 <tr>

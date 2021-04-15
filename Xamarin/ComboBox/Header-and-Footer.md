@@ -6,7 +6,7 @@ platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
-# Header and Footer
+# Header and Footer in SfComboBox
 
 You can provide header and footer views in the suggestion list in SfComboBox by enabling the [`ShowDropDownHeaderView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ShowDropDownHeaderViewProperty) and the [`ShowDropDownFooterView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ShowDropDownFooterViewProperty) properties. 
 

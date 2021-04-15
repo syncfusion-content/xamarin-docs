@@ -1,10 +1,10 @@
 ---
-layout : post
-title : Customizations in ComboBox
-description : This section describes about the visual customization of entry, suggestion box and suggestion items in the ComboBox
-platform : Xamarin
-control : SfComboBox
-documentation : ug
+layout: post
+title: Customizations in ComboBox
+description: This section describes about the visual customization of entry, suggestion box and suggestion items in the ComboBox
+platform: Xamarin
+control: SfComboBox
+documentation: ug
 ---
 
 # Customizing ComboBox

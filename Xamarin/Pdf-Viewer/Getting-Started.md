@@ -471,3 +471,39 @@ pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset+10, m_currentVerticalO
 
 {% endhighlight %}
 {% endtabs %}
+
+##How to modify the width of the vertical scrollbar in the UWP platform?
+
+The PDF viewer uses the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) control to scroll the pages of the PDF. The width of the vertical scrollbar of the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) can be modified by using the [VerticalScrollBarWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_VerticalScrollBarWidth) property. The default value of the API is the default width of the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) control.
+
+{% tabs %}
+{% highlight c# %}
+
+//Sets the width of the vertical scrollbar in the PDF Viewer.
+pdfViewerControl.VerticalScrollBarWidth = 50;
+
+//Gets the width of the vertical scrollbar in the PDF Viewer.
+int verticalScrollBarWidth = pdfViewerControl.VerticalScrollBarWidth;
+
+{% endhighlight %}
+{% endtabs %}
+
+N>This API is only applicable for UWP desktop. Changing the value of this API does not affect Android and iOS devices.
+
+##Rendering the appearance content of annotations
+
+By  default,  the  PDF  viewer  does  not  render  the  appearance  content  of annotations. But the appearance can be rendered by flattening the annotations before loading the PDF. This can be achieved by setting the [Flatten](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.AnnotationSettings.html#Syncfusion_SfPdfViewer_XForms_AnnotationSettings_Flatten) API to true. The default value of the API is set to false.
+
+{% tabs %}
+{% highlight c# %}
+
+//Sets a value whether the annotations should be flattened when the PDF is loaded or not.
+pdfViewerControl.AnnotationSettings.Flatten = true;
+
+//Loads the PDF. 
+pdfViewerControl.LoadDocument(stream);
+
+{% endhighlight %}
+{% endtabs %}
+
+N>Annotations are only flattened when the page is rendered in the viewer only  for  viewing  the  appearance  of  annotations.  Once,  the  annotations  have flattened  the  interactions  such  as  select,  edit,  resize,  and  remove  cannot  be performed.  Setting  the  [Flatten](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.AnnotationSettings.html#Syncfusion_SfPdfViewer_XForms_AnnotationSettings_Flatten)  API  to  true  does  not  affect  the  save  and annotation export operations and the annotations will not be flattened in these operations.

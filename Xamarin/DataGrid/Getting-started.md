@@ -17,7 +17,7 @@ To get start quickly with Xamarin.Forms DataGrid, you can check on this video:
 
 ## Assembly deployment
 
-After installing (Essential Studio for Xamarin)[https://www.syncfusion.com/downloads/xamarin], find all the required assemblies in the installation folders {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), find all the required assemblies in the installation folders {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
 
 Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
 

@@ -10,6 +10,14 @@ documentation: ug
 
 This section explains the steps required to configure the [`SfDigitalGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfDigitalGauge.html) and add basic elements to it using various APIs.
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
+
+Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location in Mac.
+
 ## Adding SfDigitalGauge reference
 
 You can add SfDigitalGauge reference using one of the following methods:

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Syncfusion SfComboBox control in Xamarin.Forms
-description: This section describes how to use events and interactvity in SfComboBox control (Xamarin.Forms)
+description: This section describes how to use different types of events and interactvity in SfComboBox control (Xamarin.Forms)
 platform: Xamarin
 control: SfComboBox
 documentation: ug

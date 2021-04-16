@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Multi Selection in Syncfusion SfComboBox control for Xamarin.Forms
-description: In this section describe the details about how to select multiple items from SfComboBox dropdown using MultiSelectMode
+description: This section describes the details about how to select multiple items from SfComboBox drop-down using the MultiSelectMode
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
 # Multiple selection in SfComboBox
 
-Select multiple items from a suggestion list by using [`MultiSelectMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MultiSelectModeProperty) property. There are two ways to perform multi selection in the combo box control.
+Select multiple items from a suggestion list by using the [`MultiSelectMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MultiSelectModeProperty) property. There are two ways to perform multiselection in the combo box control.
 
 * Token Representation
 
@@ -53,9 +53,9 @@ Selected items will be displayed with a customizable token representation. Users
 
 The selected item can be displayed as token inside the SfComboBox in two ways. They are
 
-* `Wrap` - When the [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokensWrapModeProperty) is set to `Wrap` the selected items will be wrapped to the next line of the SfComboBox.
+* `Wrap` - When the [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokensWrapModeProperty) is set to `Wrap`, the selected items will be wrapped to the next line of the SfComboBox.
 
-* `None` - When the [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokensWrapModeProperty) is set to `None` the selected item will be wrapped in horizontal orientation.
+* `None` - When the [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokensWrapModeProperty) is set to `None`, the selected item will be wrapped in horizontal orientation.
 
 Define a simple model class Employee with fields ID, Name and populate employee data in ViewModel.
 
@@ -162,7 +162,7 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
  
 ### Token customization
 
-Token can be customized in the following ways by using [`TokenSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokenSettingsProperty) class. 
+Token can be customized in the following ways by using the [`TokenSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokenSettingsProperty) class. 
 
 * `TextColor` - Sets the color of the text inside the token.
 

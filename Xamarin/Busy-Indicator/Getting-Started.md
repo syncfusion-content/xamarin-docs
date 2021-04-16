@@ -7,7 +7,7 @@ control: BusyIndicator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfBusyIndicator
 
 ## Getting started with Xamarin Busy Indicator(SfBusyIndicator)
 

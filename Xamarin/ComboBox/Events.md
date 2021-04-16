@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Syncfusion SfComboBox control in Xamarin.Forms
-description: In this section describes about how to use events and interactvity in SfComboBox control (Xamarin.Forms)
+description: This section describes how to use events and interactvity in SfComboBox control (Xamarin.Forms)
 platform: Xamarin
 control: SfComboBox
 documentation: ug
@@ -11,9 +11,9 @@ documentation: ug
 
 ## ValueChanged Event
 
-We can perform operation while changing the value of SfComboBox Text using ValueChanged event. [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.ValueChangedEventHandler.html) event returns the changed value in SfComboBox.
+You can perform operation, while changing the value of SfComboBox Text using the ValueChanged event. [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.ValueChangedEventHandler.html) event returns the changed value in SfComboBox.
 
-The ValueChanged event returns the following argument:
+The ValueChanged event returns the following argument.
 
 <table>
 <tr>
@@ -28,7 +28,7 @@ The ValueChanged event returns the following argument:
 
 ## SelectionChanged Event
 
-The [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.SelectionChangedEventHandler.html) event is used to notify when an item is selected from the suggestion list or dynamically setting the SelectedIndex property of SfComboBox, the event is triggered. For more information regarding this refer [`this`](https://help.syncfusion.com/xamarin/combobox/retrieving-selected-values) link. The SelectionChanged event returns the following argument.
+The [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.SelectionChangedEventHandler.html) event is used to notify when an item is selected from the suggestion list or when dynamically setting the SelectedIndex property of SfComboBox, the event is triggered. For more information, refer to [`this`](https://help.syncfusion.com/xamarin/combobox/retrieving-selected-values) link. The SelectionChanged event returns the following argument.
 
 <table>
 <tr>
@@ -79,7 +79,7 @@ The [`FocusChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Co
 
 The [`FilterCollectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.FilterCollectionChangedEventHandler.html) event is triggered whenever the items gets filtered in the suggestion.
 
-For more information regarding this refer [`this`](https://help.syncfusion.com/xamarin/combobox/dealing-with-suggestion-box) link. The FilterCollectionChanged event returns the following argument:
+For more information regarding this refer to [`this`](https://help.syncfusion.com/xamarin/combobox/dealing-with-suggestion-box) link. The FilterCollectionChanged event returns the following argument.
 
 <table>
 <tr>
@@ -94,15 +94,15 @@ For more information regarding this refer [`this`](https://help.syncfusion.com/x
 
 ## DropDownOpen Event
 
-The [`DropDownOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.DropDownOpenEventHandler.html) event occurs when the SfComboBox dropdown is opened.
+The [`DropDownOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.DropDownOpenEventHandler.html) event occurs when the SfComboBox drop-down is opened.
 
 ## DropDownClosed Event
 
-The [`DropDownClosed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.DropDownClosedEventHandler.html) event occurs when the SfComboBox dropdown is closed.
+The [`DropDownClosed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.DropDownClosedEventHandler.html) event occurs when the SfComboBox drop-down is closed.
 
 ## Completed Event
 
-The [`Completed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.CompletedEventHandler.html) Raised when the user finalizes the text in the SfComboBox with editable mode by pressing return key on the keyboard.
+The [`Completed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.CompletedEventHandler.html) event is raised when the user finalizes the text in the SfComboBox editable mode by pressing return key on the keyboard.
 
 ## Tapped Event
 
@@ -110,4 +110,4 @@ The [`Tapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox
 
 ## LoadMoreButtonTapped Event
 
-The [`LoadMoreButtonTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_LoadMoreButtonTapped) can be triggered only when you tap on the load more button. For more information refer [`this`](https://help.syncfusion.com/xamarin/combobox/maximum-display-item-with-expander#load-more-button-tapped-event) link.
+The [`LoadMoreButtonTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_LoadMoreButtonTapped) can be triggered only when you tap on the load more button. For more information, refer to [`this`](https://help.syncfusion.com/xamarin/combobox/maximum-display-item-with-expander#load-more-button-tapped-event) link.

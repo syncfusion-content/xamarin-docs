@@ -1,14 +1,14 @@
 ---
 layout: post
 title: MatchHighlighting in Syncfusion SfComboBox control for Xamarin.Forms
-description: In this section describe the details about how to highlight the matched text in SfComboBox suggestion list using TextHighlightMode
+description: This section describes the details about how to highlight the matched text in SfComboBox suggestion list using the TextHighlightMode
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
 # Highlighting matched text
 
-You can highlight matching characters in a suggestion list to pick an item with more clarity by using [`TextHighlightMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextHighlightModeProperty) as like following two ways:
+You can highlight matching characters in a suggestion list to pick an item with more clarity by using [`TextHighlightMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextHighlightModeProperty) as shown in the following two ways.
 
 * First Occurrence
 
@@ -18,7 +18,7 @@ N> The default value of TextHighlightMode is None.
 
 Highlighting can be indicated with various customizing styles by enabling the following properties.
 
-* [`HighlightedTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_HighlightedTextColorProperty) -  Sets the color of the highlighted text for differentiating the highlighted characters.
+* [`HighlightedTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_HighlightedTextColorProperty) - Sets the color of the highlighted text for differentiating the highlighted characters.
 
 * [`HighlightTextFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_HighlightedTextFontAttributesProperty) - Sets the FontAttributes of the highlighted text.
 

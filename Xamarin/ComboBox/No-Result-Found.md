@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NoResultsFoundText in Syncfusion SfComboBox control for Forms
-description: In this section describes about how to display the no result found text and it's Customizing in SfComboBox 
+description: This section describes how to display the no result found text and it's customizing in SfComboBox
 platform: xamarin
 control: SfComboBox
 documentation: ug

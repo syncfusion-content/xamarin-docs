@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Filter Suggestions for Syncfusion ComboBox Control in Xamarin.Forms
-description: This section describe about how the Filter Suggestions works in Syncfusion ComboBox Control in Xamarin.Forms
+description: This section describes how the Filter Suggestions works when enable filter in Xamarin.Forms Syncfusion ComboBox Control
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
 
 # Filtering in SfComboBox
-The combo box enables the filer option [`AllowFiltering`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_AllowFilteringProperty) for filtering the suggestions in the drop-down. 
+The combo box enables the [AllowFiltering] option (https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_AllowFilteringProperty) for filtering the suggestions in the drop-down. 
 
 {% tabs %}	
 
@@ -95,7 +95,7 @@ The string comparison for filtering suggestions can be changed by using the [`Su
 
 ### Filtering words that starts with input text
 
-Displays all the matches that start with the typed characters in control by using `StartsWith`. This strategy is case in-sensitive.
+Displays all the matches that starts with the typed characters in control by using StartsWith. This strategy is case insensitive.
 	
 {% tabs %}	
 
@@ -205,7 +205,7 @@ Content = layout;
 
 ### Filtering words that contain input text
 
-Displays all the matches that contain the typed characters in control by using `Contains`. This strategy is case in-sensitive.
+Displays all the matches that contains the typed characters in control by using Contains. This strategy is case insensitive.
 	
 {% tabs %}
 
@@ -319,7 +319,7 @@ Content = layout;
 
 ### Filtering words that equals the input text
 
-Displays all the words that completely match with the typed characters in control by using `Equals`. This strategy is case in-sensitive.
+Displays all the words that completely matches with the typed characters in control by using Equals. This strategy is case insensitive.
 	
 {% tabs %}
 
@@ -426,7 +426,7 @@ Content = layout;
 
 ### Custom
 
-Filters items in the suggestion list based on a custom search by user by using `Custom`. This helps to apply our typo toleration functionality to the control.
+Filters' items in the suggestion list are based on a custom search by user using Custom.
 
 ![Custom filter image](images/ComboBox-Filtering-Options/custom_filter.png)
 
@@ -511,7 +511,7 @@ Filters items in the suggestion list based on a custom search by user by using `
 
 ### Filtering words that end with input text
 
-Displays all the matches that end with the typed characters in control using `EndsWith`. This strategy is case in-sensitive.
+Displays all the matches that ends with the typed characters in control using EndsWith. This strategy is case insensitive.
 
 {% tabs %}
 	
@@ -635,7 +635,7 @@ The [`ComboBoxMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Co
 
 ## Suggesting choices in List
 
-The filtered suggestions are displayed in a drop-down list by using ComboBoxMode `Suggest`. User can pick an item from the list.
+The filtered suggestions are displayed in a drop-down list by using the ComboBoxMode Suggest.
 
 {% tabs %}
 
@@ -689,7 +689,7 @@ Content = layout;
 
 ## Appending suggestions to text
 
-The first item in filtered suggestions is appended to SfComboBox text by using ComboBoxMode `Append`. In this mode, drop down remains closed.
+The first item in filtered suggestions is appended to SfComboBox text by using the ComboBoxMode `Append`. In this mode, drop-down remains closed.
 
 {% tabs %}
 

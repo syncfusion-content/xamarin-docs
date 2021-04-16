@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization of Syncfusion SfComboBox in xamarin.Forms
-description: This section describes about the visual customization of entry, suggestion box and suggestion items in the ComboBox
+description: This section describes about the visual customization of entry, suggestion box, and suggestion items in the ComboBox
 platform: Xamarin
 control: SfComboBox
 documentation: ug
@@ -17,7 +17,7 @@ The [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Combo
 
 ### Text color
 
-The combo box control provides the user to customize the foreground color of the text inside the entry part using [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextColorProperty)
+The combo box control provides the user to customize the foreground color of the text inside the entry part using the [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TextColorProperty)
 
 ### Text size
 
@@ -230,7 +230,7 @@ The [`ShowBorder`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Comb
 
 ## CustomView for ComboBox
 
-[`CustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_CustomViewProperty) property has used to provide the custom view instead of entry in ComboBox. It's default height and width has control height and width.
+The [`CustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_CustomViewProperty) property is used to provide the custom view instead of entry in ComboBox. The default height and width of CustomView is control height and width.
 
 {% tabs %}
 
@@ -605,7 +605,7 @@ The [`DropDownBackgroundColor`](https://help.syncfusion.com/cr/xamarin/Syncfusio
 
 ### Changing the border color of suggestion box
 
-The [`DropDownBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownBorderColorProperty) property is used to change the border color of suggestion box. The following code example demonstrates how to change the border color of suggestion box.
+The [`DropDownBorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownBorderColorProperty) property is used to change the border color of the suggestion box. The following code example demonstrates how to change the border color of the suggestion box.
 
 {% tabs %}
 
@@ -787,7 +787,7 @@ The [`SelectedDropDownItemColor`](https://help.syncfusion.com/cr/xamarin/Syncfus
 
 ## DropDown button customization
 
-This section explains various DropDown button settings customization available in SfComboBox control using [`DropDownButtonSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownButtonSettingsProperty) class.
+This section explains various DropDown button settings customization, available in SfComboBox control using the [`DropDownButtonSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DropDownButtonSettingsProperty) class.
 {% tabs %}
 
 {% highlight xaml %}
@@ -918,7 +918,7 @@ Content = layout;
 
 ## Watermark
 
-[`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_WatermarkProperty) provides a short note about the type of input to enter in the editor control. Watermarks are visible only if the text is empty. It will reappear if the text is cleared. The following example, explains the usability of watermark that hints users to start with the character “U”.
+[`Watermark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_WatermarkProperty) provides a short note about the type of input to enter in the editor control. Watermarks are visible only, if the text is empty. It will reappear, if the text is cleared. The following example, explains the usability of watermark that hints users to start with the character “U”.
 
 {% tabs %}
 

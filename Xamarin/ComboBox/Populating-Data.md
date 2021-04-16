@@ -11,11 +11,11 @@ documentation: ug
 
 SfComboBox control can be populated with a list of string or business objects, which assists the users when typing. Users can choose one item from the filtered suggestion list.
 
-The [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSourceProperty) property is used to populate data in the combo box control. This section explains how to populate the combo box control with list of string and list of employee details separately.
+The [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSourceProperty) property is used to populate data in the combo box control. This section explains how to populate the combo box control with list of strings and employees details, separately.
 
 ## Populating string data
 
-Create an instance of string list and populate items by using [`ComboBoxSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ComboBoxSourceProperty) property as shown in the following codes. 
+Create an instance of string list and populate items by using the [`ComboBoxSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ComboBoxSourceProperty) property as shown in the following codes. 
 
 {% tabs %}
 
@@ -134,7 +134,7 @@ public EmployeeViewModel()
 
 ### Populate data in ComboBox
 
-Now populate this EmployeeViewModel data in SfComboBox control by binding with [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSourceProperty) property. 
+Now, populate this EmployeeViewModel data in SfComboBox control by binding with [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSourceProperty) property. 
 
 {% tabs %}
 

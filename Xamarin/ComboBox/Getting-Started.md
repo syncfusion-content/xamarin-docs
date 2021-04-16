@@ -178,7 +178,7 @@ Content = layout;
 
 ## Populating ComboBox with data
 
-Now, a list of string with resolution list is created and added to the SfComboBox data source property. This list is populated as suggestion list by setting the [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSourceProperty) property based on text entry. You can customize the drop-down height using the MaximumDropDownHeight property. Add the DataSource for the SfComboBox as shown in the following code.
+Now, a list of string with resolution list is created and added to the SfComboBox data source property. This list is populated as suggestion list by setting the [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSourceProperty) property based on text entry. You can customize the drop-down height using the `MaximumDropDownHeight` property. Add the DataSource for the SfComboBox as shown in the following code.
 
 {% tabs %}
 
@@ -257,19 +257,19 @@ Content = layout;
 
 {% endtabs %}
 
-Refer [this](https://help.syncfusion.com/xamarin/sfcombobox/populating-data) link to learn more about the options available in SfComboBox to populate data.
+Refer to [`this`](https://help.syncfusion.com/xamarin/sfcombobox/populating-data) link, for more information to learn more about the options available in SfComboBox to populate data.
 
 ![populate](images/Getting-Started/populateData.png)
 
 ## ComboBox modes
 
-The combo box control supports both editable and non-editable text boxes to choose selected items in given data source. You can select an item from the suggestion list. Refer this [`link]`(https://help.syncfusion.com/xamarin/combobox/editable-modes) for more information regarding this.
+The combo box control supports both editable and non-editable text boxes to choose selected items in given data source. You can select an item from the suggestion list. Refer to this [`link`](https://help.syncfusion.com/xamarin/combobox/editable-modes) for more information.
 
 N> The default value of the IsEditableMode property is false. 
 
 ## Retrieving selected values
 
-When selecting an item from the drop-down list, the selection changed event will be called and you can retrieving a selected item using [`SelectionChangedEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.SelectionChangedEventHandler.html) arguments. Using the following code snippet, a dialogue box will be displayed when a new item is selected from the suggestion box.
+When selecting an item from the drop-down list, the selection changed event will be called and you can retrieving a selected item using the [`SelectionChangedEventArgs`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.SelectionChangedEventHandler.html) arguments. Using the following code snippet, a dialogue box will be displayed when a new item is selected from the suggestion box.
 
 {% tabs %}
 

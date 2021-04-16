@@ -136,7 +136,7 @@ Content = layout;
 
 ## Opening suggestion box on focus
 
-Suggestion box can be shown whenever the control receives focus using the [`ShowSuggestionsOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ShowSuggestionsOnFocusProperty) property. Suggestion list is the complete list of data source.
+Suggestion box can be shown whenever the control receives focus using the [`ShowSuggestionsOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ShowSuggestionsOnFocusProperty) property. Suggestion list is the complete list of data sources.
 
 {% tabs %}
 
@@ -299,7 +299,7 @@ In this example, a time duration of 3 seconds is set to search delay.
 
 ## Avoid opening suggestion box
 
-To avoid the drop down open, you can set the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionBoxPlacementProperty) API to None.
+To avoid the drop-down open, you can set the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionBoxPlacementProperty) API to None.
 
 {% tabs %}
 

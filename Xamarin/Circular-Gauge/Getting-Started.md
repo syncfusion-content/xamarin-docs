@@ -18,6 +18,14 @@ To get start quickly with Xamarin Circular Gauge control, you can check on this 
 <style>#XamarinGaugeVideoTutorial{width : 90% !important; height: 300px !important }</style>
 <iframe id='XamarinGaugeVideoTutorial' src='https://www.youtube.com/embed/Rjd9NxDFoWo'></iframe>
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
+
+Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location in Mac.
+
 ## Adding SfCircularGauge reference
 
 You can add SfCircularGauge reference using one of the following methods:

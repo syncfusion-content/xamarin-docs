@@ -16,6 +16,14 @@ To get start quickly with Xamarin.Forms SfChart, you can check on this video:
 <style>#XamarinChartVideoTutorial{width : 90% !important; height: 400px !important }</style>
 <iframe id='XamarinChartVideoTutorial' src='https://www.youtube.com/embed/CLE6qhIS9vM'></iframe>
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
+
+Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location in Mac.
+
 ## Adding SfChart reference
 
 You can add SfChart reference using one of the following methods:

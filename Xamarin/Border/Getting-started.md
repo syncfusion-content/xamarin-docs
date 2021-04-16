@@ -1,15 +1,23 @@
 ---
 layout: post
 title: Getting started | SfBorder | Xamarin | Syncfusion
-description: A quick tour to initial users on Syncfusion border control for Xamarin.Forms platform.
+description: This section describes about quick tour to initial users on Syncfusion Border control for Xamarin.Forms platform.
 platform: xamarin
 control: SfBorder
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with SfBorder
 
 This section provides an overview for working with the SfBorder control for Xamarin.Forms and explains the entire process of creating a real-world application.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
+
+Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location in Mac.
 
 ## Adding SfBorder reference
 

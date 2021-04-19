@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with Xamarin DatePicker(SfDatePicker)
 
 This section explains the steps required to work with the DatePicker control for Xamarin.Forms.
 

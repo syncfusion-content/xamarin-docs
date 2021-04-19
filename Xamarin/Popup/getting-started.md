@@ -13,7 +13,7 @@ This section provides a quick overview for working with the SfPopupLayout for Xa
 
 ## Assembly deployment
 
-After installing (Essential Studio for Xamarin)[https://www.syncfusion.com/downloads/xamarin], you can get all the required assemblies in the {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib installation folder. 
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can get all the required assemblies in the {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib installation folder. 
 
 E.g.  C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
 

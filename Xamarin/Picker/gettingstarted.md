@@ -12,6 +12,14 @@ documentation: ug
 
 This section explains the steps required to configure a picker control in a real-time scenario, and provides a walk-through on some of the customization features available in picker control.
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
+
+Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location in Mac.
+
 ## Adding SfPicker reference
 
 You can add SfPicker reference using one of the following methods:

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Getting Started of Syncfusion Picker control for Xamarin.Forms
-description: Getting Started of Picker control
+description: This section describes about quick tour to initial users on Syncfusion Picker control for Xamarin.Forms platform.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with Xamarin Picker(SfPicker)
 
 This section explains the steps required to configure a picker control in a real-time scenario, and provides a walk-through on some of the customization features available in picker control.
 

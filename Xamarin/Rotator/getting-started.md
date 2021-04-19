@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with syncfusion Rotator control for Xamarin.Forms 
-description:  A quick tour to initial users on Syncfusion Rotator control for Xamarin.Forms platform
+description: This section provides a quick tour to initial users of the Syncfusion Rotator control for Xamarin.Forms platform.
 platform: xamarin 
 control: Rotator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Rotator(SfRotator)
 
 This section explains you the steps to configure a SfRotator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRotator control.
 

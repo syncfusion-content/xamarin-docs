@@ -8,9 +8,17 @@ documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with Xamarin DatePicker(SfDatePicker)
 
 This section explains the steps required to work with the DatePicker control for Xamarin.Forms.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
+
+Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location in Mac.
 
 ## Adding SfDatePicker reference
 

@@ -23,7 +23,7 @@ This section explains the quick overview to use the [SfDataForm](https://help.sy
 
 ## Assembly deployment
 
-After installing (Essential Studio for Xamarin)[https://www.syncfusion.com/downloads/xamarin], you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
 
 Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
 

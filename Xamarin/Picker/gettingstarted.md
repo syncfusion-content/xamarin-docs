@@ -1,16 +1,24 @@
 ---
 layout: post
 title: Getting Started of Syncfusion Picker control for Xamarin.Forms
-description: Getting Started of Picker control
+description: This section describes about quick tour to initial users on Syncfusion Picker control for Xamarin.Forms platform.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with Xamarin Picker(SfPicker)
 
 This section explains the steps required to configure a picker control in a real-time scenario, and provides a walk-through on some of the customization features available in picker control.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
+
+Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location in Mac.
 
 ## Adding SfPicker reference
 

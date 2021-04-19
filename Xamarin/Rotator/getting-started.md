@@ -1,15 +1,23 @@
 ---
 layout: post
 title: Getting Started with syncfusion Rotator control for Xamarin.Forms 
-description:  A quick tour to initial users on Syncfusion Rotator control for Xamarin.Forms platform
+description: This section provides a quick tour to initial users of the Syncfusion Rotator control for Xamarin.Forms platform.
 platform: xamarin 
 control: Rotator
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Rotator(SfRotator)
 
 This section explains you the steps to configure a SfRotator control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRotator control.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
+
+Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location in Mac.
 
 ## Adding SfRotator reference
 

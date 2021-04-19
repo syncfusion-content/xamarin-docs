@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Getting Started with Syncfusion TabView control for Xamarin.Forms 
-description: A quick tour to initial users on Syncfusion TabView control for Xamarin.Forms platform
+description: This section provides a quick tour to initial users of the Syncfusion TabView control for Xamarin.Forms platform.
 platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin TabView(SfTabView)
 
 This section provides an overview for working with the tab view control for Xamarin.Forms. Walk through the entire process of creating a real-world application with the tab view.
 

@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Getting Started with Xamarin TimePicker (SfTimePIcker`)
+# Getting Started with Xamarin TimePicker (SfTimePicker`)
 
 This section explains the steps required to work with the TimePicker control for Xamarin.Forms.
 

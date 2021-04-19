@@ -13,11 +13,11 @@ This section provides an overview for working with the tab view control for Xama
 
 ## Assembly deployment
 
-After installing the Essential Studio for Xamarin, find all the required assemblies in installation folders, {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib}.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
 
-E.g., C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
 
-N> In Mac, assemblies can be found in unzipped package location.
+N> Assemblies can be found in unzipped package location in Mac.
 
 ## Adding SfTabView reference
 

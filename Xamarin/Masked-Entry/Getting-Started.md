@@ -12,6 +12,14 @@ keywords: mask, SfMaskedEdit, maskededit
 
 This section explains you the steps required to configure a [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) control in a real-time scenario and provides a walk-through on some of the customization features available in [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) control.
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\16.x.x.x\Xamarin\lib
+
+Eg: C:\Program Files (x86) \Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location in Mac.
+
 ## Adding SfMaskedEdit reference
 
 You can add SfMaskedEdit reference using one of the following methods:

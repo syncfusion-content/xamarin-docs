@@ -12,7 +12,7 @@ documentation: ug
 
 ## Installing with UI   
 
-The following procedure illustrates how to install (Essential Studio Xamarin platform)[https://www.syncfusion.com/downloads/xamarin].
+The following procedure illustrates how to install [Essential Studio Xamarin platform](https://www.syncfusion.com/downloads/xamarin).
 
 1. Close all the running Visual Studio instances.
 

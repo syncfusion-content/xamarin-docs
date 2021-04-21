@@ -13,11 +13,11 @@ This section provides an overview for working with the segmented control for Xam
 
 ## Assembly deployment
 
-After installing the [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), find all the required assemblies in installation folders, {Syncfusion Essential Studio Installed location}\Essential Studio\16.2.0.41\Xamarin\lib}.
+After installing [Essential Studio for Xamarin] (https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\{Version #}\Xamarin\lib.
 
-E.g., C:\Program Files (x86)\Syncfusion\Essential Studio\16.2.0.41\Xamarin\lib
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> Assemblies can be found in an unzipped package location in Mac.
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfSegmentedControl reference
 

@@ -15,6 +15,14 @@ The UI Kit screens can be added in your application by the following two ways:
 
 2. Copying the files from our open source [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms).
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin] (https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Essential UI Kit for Xamarin.Forms Extension
 
 This is the easiest way to add the pre-defined screens to your application. The following steps explain how to add screens to an application with our extension: 

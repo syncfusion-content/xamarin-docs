@@ -355,7 +355,7 @@ In the ShapeSelected event, the *BaseMapIndex* property has been used to change 
 
 {% endtabs %}
 
-![Drilldown support in Xamarin.Forms Maps](Images/Drilldown1.jpg)  ![](Images/Drilldown_Asia.jpg) 
+![Drilldown support in Xamarin.Forms Maps](Images/Drilldown1.jpg)  ![Xamarin Maps DrilldownAsia Image](Images/Drilldown_Asia.jpg) 
 
 ## See Also
 

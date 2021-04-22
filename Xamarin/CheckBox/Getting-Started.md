@@ -370,7 +370,7 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin.Forms CheckBox intermediate state](Images/Inter1.jpg) ![](Images/Inter2.jpg)
+![Xamarin.Forms CheckBox intermediate state](Images/Inter1.jpg) ![Xamarin.Forms CheckBox intermediate Image2](Images/Inter2.jpg)
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_IndeterminateState-1420370588).
 

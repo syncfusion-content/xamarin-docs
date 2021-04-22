@@ -15,7 +15,7 @@ This section explains the steps required to configure the [`SfCheckBox`](https:/
 
 ## Assembly deployment
 
-After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\{Version #}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
 E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
@@ -370,7 +370,7 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin.Forms CheckBox intermediate state](Images/Inter1.jpg) ![](Images/Inter2.jpg)
+![Xamarin.Forms CheckBox intermediate state](Images/Inter1.jpg) ![Xamarin.Forms CheckBox intermediate Image2](Images/Inter2.jpg)
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_IndeterminateState-1420370588).
 

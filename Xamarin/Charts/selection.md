@@ -202,6 +202,36 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
 
 {% endhighlight %}
 
+To enable this feature, add an instance of ChartSelectionBehaviorExt by extending [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html) to the [`ChartBehaviors`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartBehavior.html#) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#). 
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+	<chart:SfChart.ChartBehaviors>
+        <local:ChartSelectionBehaviorExt/>
+    </chart:SfChart.ChartBehaviors>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+ChartSelectionBehaviorExt selectionBehavior = new ChartSelectionBehaviorExt();
+
+chart.ChartBehaviors.Add(selectionBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 **OnSelectionChanged**
 
 The [`OnSelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html#Syncfusion_SfChart_XForms_ChartSelectionBehavior_OnSelectionChanged_Syncfusion_SfChart_XForms_ChartSelectionEventArgs_) method of the[`ChartSelectionBehavior`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html) is used to perform the operations after a data point is selected. This method argument contains the following information:

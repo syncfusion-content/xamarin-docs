@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Syncfusion.Xamarin.Forms Chart Data Point Selection
-description: How to select the data point in Essential Xamarin.Forms Chart
+description: This section describes how to enable SeriesSelection and SegmentSelection in Essential Xamarin.Forms Chart.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Selection
+# Selection in Xamarin Charts (SfChart)
 
 [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) supports selection that enables you to select a segment in a series or series itself.
 

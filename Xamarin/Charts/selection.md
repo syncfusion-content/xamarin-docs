@@ -179,7 +179,7 @@ The [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCha
 
 **OnSelectionChanging**
 
-The [`OnSelectionChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html#Syncfusion_SfChart_XForms_ChartSelectionBehavior_OnSelectionChanging_Syncfusion_SfChart_XForms_ChartSelectionChangingEventArgs_) method of chart selection behavior is used to perform the operations, before the data point is selected, by extending the [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html) class. This method argument contains the following information:
+The [`OnSelectionChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html#Syncfusion_SfChart_XForms_ChartSelectionBehavior_OnSelectionChanging_Syncfusion_SfChart_XForms_ChartSelectionChangingEventArgs_) method of chart selection behavior is used to perform the operations, before the data point is selected, by extending the [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html) class to the ChartBehaviors collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#). This method argument contains the following information:
 
 * [`SelectedSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionEventArgs.html#Syncfusion_SfChart_XForms_ChartSelectionEventArgs_SelectedSeries) - Gets the series of selected data point.
 * [`SelectedDataPointIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionEventArgs.html#Syncfusion_SfChart_XForms_ChartSelectionEventArgs_SelectedDataPointIndex) - Gets the selected data point index.
@@ -201,8 +201,6 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
 }
 
 {% endhighlight %}
-
-To enable this feature, add an instance of ChartSelectionBehaviorExt by extending [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html) to the [`ChartBehaviors`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartBehavior.html#) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#). 
 
 {% tabs %} 
 
@@ -256,3 +254,31 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
 }
 
 {% endhighlight %}
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+	<chart:SfChart.ChartBehaviors>
+        <local:ChartSelectionBehaviorExt/>
+    </chart:SfChart.ChartBehaviors>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+ChartSelectionBehaviorExt selectionBehavior = new ChartSelectionBehaviorExt();
+
+chart.ChartBehaviors.Add(selectionBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}

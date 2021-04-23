@@ -480,7 +480,7 @@ pdfViewerControl.ScrollToOffset(m_currentHorizontalOffset+10, m_currentVerticalO
 {% endhighlight %}
 {% endtabs %}
 
-##How to modify the width of the vertical scrollbar in the UWP platform?
+## How to modify the width of the vertical scrollbar in the UWP platform?
 
 The PDF viewer uses the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) control to scroll the pages of the PDF. The width of the vertical scrollbar of the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) can be modified by using the [VerticalScrollBarWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_VerticalScrollBarWidth) property. The default value of the API is the default width of the [ScrollViewer](https://docs.microsoft.com/en-us/uwp/api/windows.ui.xaml.controls.scrollviewer?view=winrt-19041) control.
 
@@ -498,7 +498,7 @@ int verticalScrollBarWidth = pdfViewerControl.VerticalScrollBarWidth;
 
 N>This API is only applicable for UWP desktop. Changing the value of this API does not affect Android and iOS devices.
 
-##Rendering the appearance content of annotations
+## Rendering the appearance content of annotations
 
 By  default,  the  PDF  viewer  does  not  render  the  appearance  content  of annotations. But the appearance can be rendered by flattening the annotations before loading the PDF. This can be achieved by setting the [Flatten](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.AnnotationSettings.html#Syncfusion_SfPdfViewer_XForms_AnnotationSettings_Flatten) API to true. The default value of the API is set to false.
 

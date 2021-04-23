@@ -202,7 +202,7 @@ private void PdfViewerControl_StampAnnotationSelected(object sender, StampAnnota
 {% endhighlight %}
 {% endtabs %}
 
-##How to get and set the name of the annotations?
+## How to get and set the name of the annotations?
 
 The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API.
 

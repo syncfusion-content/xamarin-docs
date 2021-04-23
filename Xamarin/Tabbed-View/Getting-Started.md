@@ -1,23 +1,23 @@
 ---
 layout: post
 title: Getting Started with Syncfusion TabView control for Xamarin.Forms 
-description: A quick tour to initial users on Syncfusion TabView control for Xamarin.Forms platform
+description: This section provides a quick tour to initial users of the Syncfusion TabView control for Xamarin.Forms platform.
 platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin TabView(SfTabView)
 
 This section provides an overview for working with the tab view control for Xamarin.Forms. Walk through the entire process of creating a real-world application with the tab view.
 
 ## Assembly deployment
 
-After installing the Essential Studio for Xamarin, find all the required assemblies in installation folders, {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib}.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
-E.g., C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> In Mac, assemblies can be found in unzipped package location.
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfTabView reference
 

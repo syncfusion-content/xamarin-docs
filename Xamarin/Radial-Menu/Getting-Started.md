@@ -1,15 +1,23 @@
 ---
 layout: post
 title: Getting Started with Syncfusion RadialMenu control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion RadialMenu control for Xamarin.Forms platform
+description: This section describes about quick tour to initial users on Syncfusion RadialMenu control for Xamarin.Forms platform.
 platform: Xamarin
 control: SfRadialMenu
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin RadialMenu(SfRadialMenu)
 
 This section explains the steps required to launch the radial menu with hierarchical items that can be used as mobile phone system settings. This section covers only the minimal features that needed to get started with the radial menu.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfRadialMenu reference
 

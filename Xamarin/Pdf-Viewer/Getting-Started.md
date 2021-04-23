@@ -11,6 +11,14 @@ documentation: ug
 
 This section demonstrates how to create an application that displays a PDF file using SfPdfViewer control.
  
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfPdfViewer reference
 
 You can add SfPdfViewer reference using one of the following methods:

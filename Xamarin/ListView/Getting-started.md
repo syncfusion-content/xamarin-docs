@@ -13,13 +13,13 @@ This section provides a quick overview for getting started with the SfListView f
 
 ## Assembly Deployment
 
-After installing (Essential Studio for Xamarin)[https://www.syncfusion.com/downloads/xamarin], you can find all the required assemblies in the {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib installation folder.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
 Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sflistview) section to get the list of assemblies or NuGet package needs to be added as reference to use the SfListView control in any application.
 
-N> Assemblies can be found in an unzipped package location in Mac.
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfListView reference
 

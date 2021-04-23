@@ -1,16 +1,24 @@
 ---
 layout: post
 title: Getting Started for Syncfusion SfSwitch Xamarin.Forms conrol.
-description: Getting Started of switch control
+description: This section provides a quick tour for initial users of the Syncfusion Switch control for Xamarin.Forms platform. 
 platform: Xamarin
 control: Switch
 documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with Xamarin Switch (SfSwitch)
 
 This section explains you the steps to add the SfSwitch control with basic functionalities in Xamarin.Forms.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfSwitch reference
 

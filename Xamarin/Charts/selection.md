@@ -179,7 +179,7 @@ The [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCha
 
 **OnSelectionChanging**
 
-The [`OnSelectionChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html#Syncfusion_SfChart_XForms_ChartSelectionBehavior_OnSelectionChanging_Syncfusion_SfChart_XForms_ChartSelectionChangingEventArgs_) method of chart selection behavior is used to perform the operations, before the data point is selected, by extending the [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html) class to the ChartBehaviors collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#). This method argument contains the following information:
+The [`OnSelectionChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html#Syncfusion_SfChart_XForms_ChartSelectionBehavior_OnSelectionChanging_Syncfusion_SfChart_XForms_ChartSelectionChangingEventArgs_) method of chart selection behavior is used to perform the operations, before the data point is selected, by extending the [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html) class and adding to the ChartBehaviors collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#). This method argument contains the following information:
 
 * [`SelectedSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionEventArgs.html#Syncfusion_SfChart_XForms_ChartSelectionEventArgs_SelectedSeries) - Gets the series of selected data point.
 * [`SelectedDataPointIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionEventArgs.html#Syncfusion_SfChart_XForms_ChartSelectionEventArgs_SelectedDataPointIndex) - Gets the selected data point index.
@@ -211,9 +211,9 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
 
 	<chart:SfChart.ChartBehaviors>
         <local:ChartSelectionBehaviorExt/>
-    </chart:SfChart.ChartBehaviors>
+    </chart:SfChart.ChartBehaviors>  
 
-</chart:SfChart>
+</chart:SfChart>  
 
 {% endhighlight %}
 
@@ -242,15 +242,14 @@ The [`OnSelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfC
 {% highlight c# %}
 
 public class ChartSelectionBehaviorExt : ChartSelectionBehavior
-{
-        
-        protected override void OnSelectionChanged(ChartSelectionEventArgs args)
-        {
-            var selectedSeries = args.SelectedSeries;
-            var dataPointIndex = args.SelectedDataPointIndex;
-            var previousSelectedIndex = args.PreviousSelectedIndex;
+{    
+   protected override void OnSelectionChanged(ChartSelectionEventArgs args)
+    {
+        var selectedSeries = args.SelectedSeries;
+        var dataPointIndex = args.SelectedDataPointIndex;
+        var previousSelectedIndex = args.PreviousSelectedIndex;
 	    var previousSelectedSeries = args.PreviousSelectedSeries;	
-        }
+    }
 }
 
 {% endhighlight %}
@@ -264,7 +263,7 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
 
 	<chart:SfChart.ChartBehaviors>
         <local:ChartSelectionBehaviorExt/>
-    </chart:SfChart.ChartBehaviors>
+    </chart:SfChart.ChartBehaviors>  
 
 </chart:SfChart>
 

@@ -211,9 +211,9 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
 
 	<chart:SfChart.ChartBehaviors>
         <local:ChartSelectionBehaviorExt/>
-    </chart:SfChart.ChartBehaviors>  
+    </chart:SfChart.ChartBehaviors>
 
-</chart:SfChart>  
+</chart:SfChart>
 
 {% endhighlight %}
 
@@ -243,13 +243,13 @@ The [`OnSelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfC
 
 public class ChartSelectionBehaviorExt : ChartSelectionBehavior
 {    
-   protected override void OnSelectionChanged(ChartSelectionEventArgs args)
-    {
-        var selectedSeries = args.SelectedSeries;
-        var dataPointIndex = args.SelectedDataPointIndex;
-        var previousSelectedIndex = args.PreviousSelectedIndex;
+        protected override void OnSelectionChanged(ChartSelectionEventArgs args)
+        {
+            var selectedSeries = args.SelectedSeries;
+            var dataPointIndex = args.SelectedDataPointIndex;
+            var previousSelectedIndex = args.PreviousSelectedIndex;
 	    var previousSelectedSeries = args.PreviousSelectedSeries;	
-    }
+        }
 }
 
 {% endhighlight %}
@@ -261,9 +261,9 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
 <chart:SfChart>
 ...
 
-<chart:SfChart.ChartBehaviors>
+	<chart:SfChart.ChartBehaviors>
         <local:ChartSelectionBehaviorExt/>
-    </chart:SfChart.ChartBehaviors>  
+    </chart:SfChart.ChartBehaviors>
 
 </chart:SfChart>
 

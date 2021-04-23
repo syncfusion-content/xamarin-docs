@@ -210,8 +210,8 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
 ...
 
 	<chart:SfChart.ChartBehaviors>
-        <local:ChartSelectionBehaviorExt/>
-    </chart:SfChart.ChartBehaviors>
+            <local:ChartSelectionBehaviorExt/>
+        </chart:SfChart.ChartBehaviors>
 
 </chart:SfChart>
 

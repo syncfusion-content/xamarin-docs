@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: PDFium rendering in PDF Viewer Xamarin.Forms Android | Syncfusion
 description: Describes how PDF Viewer in Xamarin.Forms Android supports rendering the PDF pages using pdfium rendering engine.
@@ -7,26 +7,26 @@ control: SfPdfViewer
 documentation: UG
 ---
 
-#Rendering PDF pages using pdfium in PDF Viewer Xamarin.Forms Android Platform
+# Rendering PDF pages using pdfium in PDF Viewer Xamarin.Forms Android
 
 The PdfViewer allows using Pdfium to render the pages of a PDF document, which is a third-party open-source PDF rendering engine. By default, the PdfViewer uses native Android PDF rendering. However, using the Pdfium rendering engine will overcome the defects in the native Android PDF rendering.
 
-##Creating Pdfium binding library
+## Creating Pdfium binding library
 
 To use Pdfium in your application, the Pdfium binding library is needed. The Pdfium binding project can be created from the scratch using the following steps.
 
 1.Download the pdfium-android-1.7.0.aar Android archive file from this link.
  
-https://mvnrepository.com/artifact/com.github.barteksc/pdfium-android/1.7.0 
+<https://mvnrepository.com/artifact/com.github.barteksc/pdfium-android/1.7.0>
 
 2.To create the binding project from this archive file refer to this link. 
-https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-library/binding-an-aar/ 
+<https://developer.xamarin.com/guides/android/advanced_topics/binding-a-java-library/binding-an-aar/>
 
 3.Install the `Xamarin.Android.Support.Compat` dependency package in the project.
 
 4.Compile the project to generate the Pdfium library.
 
-##Using Pdfium binding library in the application project
+## Using Pdfium binding library in the application project
 
 Refer to the created binding library in your android project. 
 
@@ -263,15 +263,15 @@ Regarding the above code example, there are two overloads of the `Render` method
 <table>
 <tr>
 <td>Render(Bitmap bitmap, int pageIndex, int pageWidth, int pageHeight)</td>
-<td/>This overload renders the entire page specified by the pageIndex parameter. This method will be called when the page is not zoomed in. </td>
+<td>This overload renders the entire page specified by the pageIndex parameter. This method will be called when the page is not zoomed in.</td>
 </tr>
 <tr>
 <td>Render(Bitmap bitmap, int pageIndex, int pageWidth, int pageHeight,  float xOffset = 0, float yOffset = 0)</td>
-<td>When the page is zoomed in, the tile rendering is used in the PDF viewer to conserve memory. When the page is rendered using the tile rendering, this method will be called which renders only the portion of the page visible in the viewport of the device. </td>
+<td>When the page is zoomed in, the tile rendering is used in the PDF viewer to conserve memory. When the page is rendered using the tile rendering, this method will be called which renders only the portion of the page visible in the viewport of the device.</td>
 </tr>
 </table>
 
-The [CustomPdfRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_CustomPdfRenderer) property should be assigned to the [AlternatePdfRenderer] (https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.ICustomPdfRendererService.html#Syncfusion_SfPdfViewer_XForms_ICustomPdfRendererService_AlternatePdfRenderer) property of the `CustomPdfRenderer` class as like in the following code sample,
+The [CustomPdfRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_CustomPdfRenderer) property should be assigned to the [AlternatePdfRenderer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.ICustomPdfRendererService.html#Syncfusion_SfPdfViewer_XForms_ICustomPdfRendererService_AlternatePdfRenderer) property of the `CustomPdfRenderer` class as like in the following code sample,
 
 {% tabs %}
 {% highlight c# %}

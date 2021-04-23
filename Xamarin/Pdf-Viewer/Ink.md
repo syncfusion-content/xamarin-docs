@@ -623,7 +623,7 @@ private void PdfViewerControl_InkAdded(object sender, InkAddedEventArgs args)
 
 N> The strokes cannot be smoothened when the user is drawing the strokes as the points are still being recorded. They can be smoothened only after the user confirms the end of the ink session. 
 
-##How to get and set the name of the annotations?
+## How to get and set the name of the annotations?
 
 The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API.
 

@@ -21,48 +21,54 @@ In Visual Studio MAC, Go to File-> New Project
 
 ## Mac Build and Installation
 
-The following procedure illustrates how to install Xamarin Mac installer.
+The steps below show how to install the Xamarin Mac installer. 
 
-1.Double-click the Syncfusion Xamarin Mac Installer(.pkg) file. The Installer Wizard opens. Click Continue.
+1. Open Syncfusion Xamarin Mac Installer(.pkg) file. The Installer Wizard opens. Click Continue.
 
-![continue](Images/continue.JPG)
+   ![continue](Images/continue.JPG)
 
-2.Software License Agreement window opens. Click Continue.
+2. The Software License Agreement wizard will appear. Click the Continue button.
 
-![License Agreement](Images/license-agreement.JPG)
+   ![License Agreement](Images/license-agreement.JPG)
 
-3.Confirmation window will be displayed for the License Agreement. Click Agree.
+3. The License Agreement's Confirmation window will appear. If you have read the Software License Agreement, click **Agree**.
 
-![License Confirmation](Images/license-confirmation.JPG)
+   ![License Confirmation](Images/license-confirmation.JPG)
 
->N Unlock key is not required for installing the Mac installer. Syncfusion Mac installer can be used for developing purposes without registering the Unlock key.
+   >N The Unlock key is not required to install the Mac installer. The Syncfusion Mac installer can be used for development purposes without registering the Unlock key.
 
-4.Destination Select windows opens. Click Continue.
+4. The Destination select wizard will appear. You can choose which disc to install the Syncfusion Essential Studio for Xamarin installer on here.
 
-![Destination](Images/destination.JPG)
+   ![Destination](Images/destination.JPG)
 
-5.Installation Type window opens. Click Install.
+5. The Installation Type wizard will appear. Click Install to begin the standard installation of the Syncfusion Xamarin Mac installer.
 
-![Install Location](Images/install-location.JPG)
+   ![Install Location](Images/install-location.JPG)
 
-6.Authentication window opens. Provide the password and click Install Software.
+6. The Authentication window will appear. To begin the installation, enter the Mac machine's password and click **Install Software**.
 
-![Install Software](Images/install-software.PNG)
+   ![Install Software](Images/install-software.PNG)
 
-7.Installation will be started in your machine.
+7. The installation process will begin on your machine. 
 
-![Installation Progress](Images/installation-progress.JPG)
+   ![Installation Progress](Images/installation-progress.JPG)
 
 
-8.Completed screen will be displayed once the installation is finished. Click Close to exit the installation wizard.
+8. Once the installation is complete, the completed screen will be displayed. To exit the installation wizard, click Close. 
 
-![Installation Completed](Images/installation-completed.JPG)
+   ![Installation Completed](Images/installation-completed.JPG)
 
-By default, Mac installer will install the files in following location.
+   By default, Mac installer will install the files in following location.
 
-Location: {Documents}\Syncfusion\ {version}\ {platform}
+   Location: {Documents}\Syncfusion\ {version}\ {platform}
 
-![Default Location](Images/default-location.PNG)
+   ![Default Location](Images/default-location.PNG)
+   
+### Add reference to the project
+
+You can then add the assembly references to the respective projects such as PCL, XForms.Droid, XForms.iOS. You can find the dependencies for each control from this [link](https://help.syncfusion.com/xamarin/introduction/control-dependencies).
+
+I> After adding the reference, currently, an additional step is required for iOS and UWP projects. For example, if we are using SfKanban, we need to call the Init method of SfKanbanRenderer as shown in this [KB article](https://www.syncfusion.com/kb/7171).
 
 ### Explore the libraries package
 

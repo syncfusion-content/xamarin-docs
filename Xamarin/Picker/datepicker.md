@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Date Picker
+# Date Picker using SfPicker
 
 We recommend to use our standalone Date Picker component which is available from our Volume 4 2019 release and please have the documentation [`link`](https://help.syncfusion.com/xamarin/datepicker/overview). If you need further customizations, below steps explains how to create a custom DatePicker by using the Picker control.
 

@@ -380,4 +380,4 @@ Similarly, content region for other tabs also can be configured.
 
 By default, both the vertical swiping for list view and horizontal swiping for tab view will work. If it is not required, it can be customized by using the `EnableSwiping` property of `SfTabView`.
 
-Note: Getting started sample can be downloaded from [this link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1726376415.zip).
+Note: Getting started sample can be downloaded from this [link](https://github.com/SyncfusionExamples/xamarin-forms-sftabview).

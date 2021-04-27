@@ -13,39 +13,7 @@ You can refer to the [**Download**](https://help.syncfusion.com/xamarin/installa
 
 ### Overview
 
-For the Essential Studio Xamarin product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). The products listed below are included in the Essential Studio Web Installer. 
-
-
-**Web (Essential JS 2)**
-
-* ASP.NET MVC
-* ASP.NET Core
-* JavaScript
-
-**Mobile**
-
-* Xamarin
-* Flutter
-
-**Desktop**
-
-* Windows Forms
-* WPF
-* Universal Windows Platform
-* WinUI(Preview)
-
-**FileFormats**
-
-* Read and Write Excel, Word, PDF and PowerPoint files
-
-**Web (Essential JS 1)**
-
-* ASP.NET Web Forms
-* ASP.NET MVC
-* ASP.NET Core
-* JavaScript
-* PHP
-* JSP
+For the Essential Studio Xamarin product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). 
 
 ## Installation
 

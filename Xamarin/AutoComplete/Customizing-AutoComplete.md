@@ -936,3 +936,5 @@ namespace AutocompleteSample
 {% endtabs %}
 
 ![Border visibility](images/Customizing-AutoComplete/show-border.png)
+
+N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.

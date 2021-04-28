@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add theming support in syncfusion schedule control
-description: Learn about Theming support in Syncfusion Xamarin Scheduler (SfSchedule) control and more details.
+description: Learn how to provide Theming support  in Syncfusion Xamarin Scheduler (SfSchedule) control and more details.
 platform: Xamarin
 control: SfSchedule
 documentation: ug

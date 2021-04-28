@@ -73,4 +73,4 @@ LoadApplication (new App ());
 
 ![RTL in Xamarin.Forms ComboBox](images/RTL/Xamarin.Forms-ComboBox-rtl.png)
 
-The complete RTL sample is available in [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/RTL_ComboBoxSample_(2)-1702766460) link.
+The complete RTL sample is available in this [link](https://github.com/SyncfusionExamples/rtl-sample-combobox).

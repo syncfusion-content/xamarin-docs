@@ -517,4 +517,4 @@ private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox
 
 ![selectionChanged](images/Getting-Started/selectionChangedComboBxo.png)
 
-The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxSample10986657571610417339.zip) link.
+The complete Getting Started sample is available in this [link](https://github.com/SyncfusionExamples/xamarin-forms-sfcombobox).

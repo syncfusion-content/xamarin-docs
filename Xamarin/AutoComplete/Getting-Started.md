@@ -413,4 +413,4 @@ Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/autocomplete-fil
 
 ![Image-casesensitive](images/Getting-Started/contains-casesensitive.png)
 
-The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete312348434.zip) link.
+The complete Getting Started sample is available in [this](https://github.com/SyncfusionExamples/xamarin.forms-sfautocomplete) link.

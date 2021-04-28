@@ -484,4 +484,4 @@ The following screenshot illustrates the output of the above codes.
 
 You can download the DateTimePicker sample for reference from the following link.
 
-Sample link: [DateTimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedPicker1526116181)
+Sample link: [DateTimePicker](https://github.com/SyncfusionExamples/xamarin-sfpicker-examples/tree/master/Samples/DateTimePickerSample)

@@ -196,4 +196,4 @@ The following screenshot illustrates the output of above code.
 
 We have attached sample for reference. You can download the sample from the following link.
 
-Sample Link: [SfAutoComplete_DataTemplateSelector](https://www.syncfusion.com/downloads/support/directtrac/general/ze/SfAutoComplete_DataTemplateSelector1077321876.zip)
+Sample Link: [SfAutoComplete_DataTemplateSelector](https://github.com/SyncfusionExamples/autocomplete-datatemplate-selector)

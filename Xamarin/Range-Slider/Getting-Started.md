@@ -228,4 +228,4 @@ SfRangeSlider rangeSlider=new SfRangeSlider();
 
 ![SfRangeSlider in Xamarin.Forms](images/RangeSlider_GettingStarted.png)
                                     
-The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RangeSliderSample1051483242.zip) link.
+The complete Getting Started sample is available in this [link](https://github.com/SyncfusionExamples/xamarin-forms-range-slider).

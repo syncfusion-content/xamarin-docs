@@ -41,7 +41,7 @@ public App()
 If you are developing an application using Gorilla Player SDK, it is must to register the Syncfusion license key in Xamarin.Forms.Android, Xamarin.Forms.iOS, and Xamarin.Forms.UWP.
 
 
-### Xamarin.Android
+### Xamarin.Forms.Android
 
 Register the license key in **OnCreate** override method of your main activity class before initializing any Syncfusion control.
 
@@ -61,7 +61,7 @@ protected override void OnCreate(Bundle savedInstanceState)
 {% endtabs %}
  
 
-### Xamarin.iOS
+### Xamarin.Forms.iOS
 
 Register the license key in **FinishedLaunching** override method of **AppDelegate.cs**
 
@@ -86,7 +86,7 @@ public override bool FinishedLaunching(UIApplication application, NSDictionary l
 {% endhighlight %}
 {% endtabs %}
 
-### Xamarin.UWP
+### Xamarin.Forms.UWP
 
 Register the license key in **App.xaml.cs** constructor before InitializeComponent() in C#. If App constructor not available in **App.xaml.cs**, create the "App()" constructor in **App.xaml.cs** and register the license key inside the constructor. In Visual Basic, register the licensing code in **App.xaml.vb** file before OnLaunched event.
 

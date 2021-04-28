@@ -22,6 +22,8 @@ Essential Schedule for Xamarin.Forms provides all the common scheduling function
 
 **Localization** — The built-in content of the user interface can be changed according to culture that is needed. Also, it has built-in culture support for basic items such us day and month text representations.
 
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.
+
 ## See also
 
 [Feature comparison between Calendar and Schedule control](https://www.syncfusion.com/kb/6977/feature-comparison-between-calendar-and-schedule-control)

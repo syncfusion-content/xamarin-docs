@@ -1285,6 +1285,8 @@ Following steps will explain how to configure the custom fonts.
 * Add your custom Font (e.g. Lobster-Regular.ttf) to the Assets folder of the Xamarin.Forms (UWP) project.
 * Then, use the Custom Font name as FontFamily. When Setting custom font in UWP use the format (FontFamily = ” Assets/Lobster-Regular.ttf#Lobster”).
 
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.
+
 ## See also
 
 [How to customize AgendaView height based on schedule height?](https://www.syncfusion.com/kb/10913/how-to-customize-agendaview-height-based-on-schedule-height)

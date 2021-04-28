@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Right-to-left | Schedule for Xamarin.Forms | Syncfusion
-description: Describes how schedule works on right-to-left localization.
+description: Learn about Right to left(RTL) support in Syncfusion Xamarin Scheduler (SfSchedule) control and more details.
 platform: xamarin
 control: SfSchedule
 documentation: ug
 ---
 
-# Right to left(RTL)
+# Right to left(RTL) in Xamarin Scheduler (SfSchedule)
 
 SfSchedule supports to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
 
@@ -70,3 +70,5 @@ LoadApplication (new App ());
 }
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.

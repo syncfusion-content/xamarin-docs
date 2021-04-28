@@ -367,6 +367,8 @@ Localize class for iOS project,
 >**NOTE**
 For UWP project, no sample level changes required.
 
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.
+
 ## See also
 
 [How to localize inline strings in schedule month view without changing locale in device ?](https://www.syncfusion.com/kb/9397/how-to-localize-inline-strings-in-schedule-month-view-without-changing-locale-in-device)

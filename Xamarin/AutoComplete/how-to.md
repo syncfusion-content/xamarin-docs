@@ -7,7 +7,7 @@ control : AutoComplete
 documentation : ug
 ---
 
-# How to perform an operation when selecting an item from drop-downlist?
+# How to perform an operation when selecting an item from drop-down list?
 
 ## How to perform an operation when selecting an item from drop-down list?
 

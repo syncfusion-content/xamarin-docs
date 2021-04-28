@@ -10,6 +10,8 @@ documentation: ug
 
 # System Requirements for Xamarin.Forms
 
+The system requirements for using our Syncfusion Xamarin platform are as follows
+
 ### Operating Systems
 
 * Windows XP
@@ -28,7 +30,7 @@ documentation: ug
 
 ### Development Environment
 
-For a recommended development environment in Xamarin, see the links below.
+See the link below for the recommended Xamarin development environments
 
 [https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements)
 

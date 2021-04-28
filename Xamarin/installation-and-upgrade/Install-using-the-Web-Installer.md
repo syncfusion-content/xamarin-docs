@@ -13,39 +13,7 @@ You can refer to the [**Download**](https://help.syncfusion.com/xamarin/installa
 
 ### Overview
 
-For the Essential Studio Xamarin product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). The products listed below are included in the Essential Studio Web Installer. 
-
-
-**Web (Essential JS 2)**
-
-* ASP.NET MVC
-* ASP.NET Core
-* JavaScript
-
-**Mobile**
-
-* Xamarin
-* Flutter
-
-**Desktop**
-
-* Windows Forms
-* WPF
-* Universal Windows Platform
-* WinUI(Preview)
-
-**FileFormats**
-
-* Read and Write Excel, Word, PDF and PowerPoint files
-
-**Web (Essential JS 1)**
-
-* ASP.NET Web Forms
-* ASP.NET MVC
-* ASP.NET Core
-* JavaScript
-* PHP
-* JSP
+For the Essential Studio Xamarin product, Syncfusion offers a Web Installer. This installer alleviates the burden of downloading a larger installer. You can simply download and run the online installer, which will be smaller in size and will download and install the Essential Studio products you have chosen. You can get the most recent version of Essential Studio Web Installer [here](https://www.syncfusion.com/downloads/latest-version). 
 
 ## Installation
 
@@ -65,13 +33,13 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
   
 3.  The Platform Selection Wizard will appear. From the **Available** tab, select the products to be installed. Select the **Install All** checkbox to install all products. 
     
-	**Available**
+	<em>**Available**</em>
 	
 	![Platform Selection wizard Available](WebInstaller/Step-by-Step-Installation_img3.png)
 	
 	If you have multiple products installed in the same version, they will be listed under the **Installed** tab. You can also select which products to uninstall from the same version. Click the Next button.
 	
-	**Installed**
+	<em>**Installed**</em>
 	
     ![Platform Selection wizard Installed](WebInstaller/Step-by-Step-Installation_img24.png)
 	
@@ -108,6 +76,8 @@ The steps below show how to install Essential Studio Xamarin Web Installer.
 	**Additional settings**
 	
     * Select the **Install Demos** check box to install Syncfusion samples, or leave the check box unchecked, if you do not want to install Syncfusion samples.
+    * Select the **Configure Syncfusion controls in Visual Studio** check box to configure the Syncfusion controls in the Visual Studio toolbox, or clear this check box when you do not want to configure the Syncfusion controls in the Visual Studio toolbox during installation. Note that you must also select the Register Syncfusion assemblies in GAC check box when you select this check box.
+    * Select the **Configure Syncfusion Extensions controls in Visual Studio** checkbox to configure the Syncfusion Extensions in Visual Studio or clear this check box when you do not want to configure the Syncfusion Extensions in Visual Studio.
     * Check the **Create Desktop Shortcut** checkbox to add a desktop shortcut for Syncfusion Control Panel.
     * Check the **Create Start Menu Shortcut** checkbox to add a shortcut to the start menu for Syncfusion Control Panel.
 
@@ -168,13 +138,13 @@ N> If the **Syncfusion Essential Studio for Xamarin {version}** entry is selecte
 
 1.  The Platform Selection Wizard will appear. From the **Installed** tab, select the products to be uninstalled. To select all products, check the **Uninstall All** checkbox. Click the Next button.
     
-	**Installed**
+	<em>**Installed**</em>
 	
 	![Platform Selection wizard Installed](WebInstaller/Step-by-Step-Installation_img4.png)
 	
 	You can also select the products to be installed from the **Available** tab.Click the Next button.
 	
-	**Available**
+	<em>**Available**</em>
 	
 	![Platform Selection wizard Available](WebInstaller/Step-by-Step-Installation_img25.png)
 	

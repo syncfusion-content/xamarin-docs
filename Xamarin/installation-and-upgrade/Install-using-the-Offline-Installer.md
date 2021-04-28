@@ -12,13 +12,9 @@ documentation: ug
 
 You can refer to the [**Download**](https://help.syncfusion.com/xamarin/installation-and-upgrade/download) section to learn how to get the Xamarin trial or licensed installer.
 
-<<<<<<< HEAD
 ## Installing with UI   
-=======
-The following procedure illustrates how to install [Essential Studio Xamarin platform](https://www.syncfusion.com/downloads/xamarin).
->>>>>>> 0fac14e44654836506bd4f8d3f243685b5db6afe
 
-The steps below show how to install the Essential Studio Xamarin product.
+The steps below show how to install the Essential Studio Xamarin installer.
 
 1.	Open the Syncfusion Xamarin offline installer file from downloaded location by double-clicking it. The Installer Wizard automatically opens and extracts the package
 
@@ -44,7 +40,7 @@ The steps below show how to install the Essential Studio Xamarin product.
 
     **Use Unlock Key**
    
-    Unlock keys are used to unlock the Syncfusion offline installer, and they are product and version specific. You should use either Syncfusion licensed or trial Unlock key to unlock Syncfusion Xamarin installer.
+    Unlock keys are used to unlock the Syncfusion offline installer, and they are platform and version specific. You should use either Syncfusion licensed or trial Unlock key to unlock Syncfusion Xamarin installer.
    
     The trial unlock key is only valid for 30 days, and the installer will not accept an expired trial key. 
    
@@ -63,9 +59,11 @@ The steps below show how to install the Essential Studio Xamarin product.
 
     **Additional Settings**
     
-	* Select the **Install Demos** check box to install Syncfusion samples, or leave the check box unchecked, if you do not want to install Syncfusion samples.
-    * Check the **Create Desktop Shortcut** checkbox to add a desktop shortcut for Syncfusion Control Panel.
-    * Check the **Create Start Menu Shortcut** checkbox to add a shortcut to the start menu for Syncfusion Control Panel.
+	* Select the **Install Demos** check box to install Syncfusion samples, or leave the check box unchecked, if you do not want to install Syncfusion samples
+    * Select the **Configure Syncfusion controls in Visual Studio** check box to configure the Syncfusion controls in the Visual Studio toolbox, or clear this check box when you do not want to configure the Syncfusion controls in the Visual Studio toolbox during installation. Note that you must also select the Register Syncfusion assemblies in GAC check box when you select this check box.
+    * Select the **Configure Syncfusion Extensions controls in Visual Studio** checkbox to configure the Syncfusion Extensions in Visual Studio or clear this check box when you do not want to configure the Syncfusion Extensions in Visual Studio.
+	* Check the **Create Desktop Shortcut** checkbox to add a desktop shortcut for Syncfusion Control Panel
+    * Check the **Create Start Menu Shortcut** checkbox to add a shortcut to the start menu for Syncfusion Control Panel
 
 
 
@@ -104,81 +102,51 @@ The steps below show how to install the Essential Studio Xamarin product.
 
 ## Installing in silent mode
 
-The Syncfusion Essential Studio Xamarin Installer supports installation and uninstallation via the command line. The sections that follow demonstrate this ability.
+The Syncfusion Essential Studio Xamarin Installer supports installation and uninstallation via the command line.
 
 ### Command Line Installation
 
 To install through the Command Line in Silent mode, follow the steps below.
 
-1.	Run the Syncfusion Flutter installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+1.	Run the Syncfusion Xamarin installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 2.	The file syncfusionessentialxamarin_(version).exe file will be extracted into the Temp directory.
 3.	Run %temp%. The Temp folder will be opened. The syncfusionessentialxamarin_(version).exe file will be located in one of the folders.
 4.	Copy the extracted syncfusionessentialxamarin_(version).exe file in local drive.
 5.	Exit the Wizard.
 6.	Run Command Prompt in administrator mode and enter the following arguments.
 
-   
-    **Arguments:** “Installer file path\SyncfusionEssentialStudio(platform)_(version).exe” /Install silent /PIDKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/InstallAssemblies:{true/false}] [/UninstallExistAssemblies:{true/false}] [/InstallToolbox:{true/false}]
+
+    **Arguments:** “installer file path\SyncfusionEssentialStudio(product)_(version).exe” /Install silent /UNLOCKKEY:“(product unlock key)” [/log “{Log file path}”] [/InstallPath:{Location to install}] [/InstallSamples:{true/false}] [/InstallAssemblies:{true/false}] [/UninstallExistAssemblies:{true/false}] [/InstallToolbox:{true/false}] [/CreateShortcut:{true/false}] [/CreateStartMenuShortcut:{true/false}]
 
 
     N> [..] – Arguments inside the square brackets are optional.
 
-    **Example:** “D:\Temp\syncfusionessentialxamarin_x.x.x.x.exe” /Install silent /PIDKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Platform.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true
+    **Example:** “D:\Temp\syncfusionessentialxamarin_x.x.x.x.exe” /Install silent /UNLOCKKEY:“product unlock key” /log “C:\Temp\EssentialStudio_Product.log” /InstallPath:C:\Syncfusion\x.x.x.x /InstallSamples:true /InstallAssemblies:true /UninstallExistAssemblies:true /InstallToolbox:true /CreateShortcut:true /CreateStartMenuShortcut:true
 
 	
 7.  Essential Studio for Xamarin is installed.
 
-   N> x.x.x.x should be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
+    N> x.x.x.x should be replaced with the Essential Studio version and the Product Unlock Key needs to be replaced with the Unlock Key for that version.
    
 
 ### Command Line Uninstallation
 
 Syncfusion Essential Xamarin can be uninstalled silently using the Command Line.
 
-1.	Run the Syncfusion Flutter installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
+1.	Run the Syncfusion Xamarin installer by double-clicking it. The Installer Wizard automatically opens and extracts the package.
 2.	The file syncfusionessentialxamarin_(version).exe file will be extracted into the Temp directory.
 3.	Run %temp%. The Temp folder will be opened. The syncfusionessentialxamarin_(version).exe file will be located in one of the folders.
 4.	Copy the extracted syncfusionessentialxamarin_(version).exe file in local drive.
 5.	Exit the Wizard.
 6.	Run Command Prompt in administrator mode and enter the following arguments.
 
+   
     **Arguments:** “Copied installer file path\syncfusionessentialxamarin_(version).exe” /uninstall silent 
 
     **Example:** “D:\Temp\syncfusionessentialxamarin_x.x.x.x.exe" /uninstall silent
 
 
-8.  Essential Studio for Xamarin is uninstalled.
-   
-   
-## Explore the libraries package
-
-The Syncfusion libraries, samples, and NuGet packages can be found installed location.
-
-{Essential Studio installed location}\Syncfusion\Essential Studio\{version}\Xamarin
-
-**Example:** C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\19.1.0.54
-
-* **"lib"** directory - e.g., C:\Program Files (x86)\Syncfusion\Essential Studio\Xamarin\19.1.0.54\lib
-
-   It includes all of the libraries needed for the Xamarin.iOS, Xamarin.Android, and Xamarin.Forms projects.
-   
-* **"nuget"** directory - e.g., C:\Users\Public\Documents\Syncfusion\Xamarin\19.1.0.54\nuget
-
-   It includes NuGet packages for the Syncfusion libraries. The same NuGet packages can also be configured via nuget.org.
-   
-* **"sample"** directory - e.g., C:\Users\Public\Documents\Syncfusion\Xamarin\19.1.0.54\sample
-
-   It includes sample applications for our controls in the Xamarin.iOS, Xamarin.Android, and Xamarin.Forms products, which are located in the iOS, Android, and Forms folders, respectively.
-
-The "Forms" directory includes,
-
-* Individual control sample folders: These folders contain samples for individual controls such as SfChart, SfDataGrid, and so on. These samples are light in weight because they represent individual controls. You can check the samples for your required controls on your own faster and with less deployment time.
-
-* “nuget” folder: It contains the compiled assemblies of the above samples as NuGet package. As explained in the following step, it is referred to in the common sample browser.
-
-* “SampleBrowser” folder: It includes a common sample browser that refers to the samples of individual controls as a NuGet package. Run this to view demo samples of all controls in a single application.
-
-* It also includes sample applications such as Patient Monitor, Server Monitor, and Invoice.
+7.  Essential Studio for Xamarin is uninstalled.
 
 ### Add reference to the project
 

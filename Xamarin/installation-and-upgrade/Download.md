@@ -51,7 +51,7 @@ You should initiate an evaluation if you have already obtained our components th
    ![Trial and downloads of Syncfusion Essential Studio](download-images/start-trial-download.png)
    
 2. To access this page, you must sign up\log in with your Syncfusion account.
-3. Begin your trial by selecting the WinUI product. 
+3. Begin your trial by selecting the Xamarin product. 
 
    N> If you've already used the trial products and they haven't expired, you won't be able to start the trial for the same product again.
 

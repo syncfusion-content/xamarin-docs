@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Major Version to Service Pack Version| Xamarin | Syncfusion
-description: this section provides the information about upgrading the WinUI projects from major version to service pack version
+description: this section provides the information about upgrading the Xamarin projects from major version to service pack version
 platform: xamarin
 control: Essential Studio
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Upgrading Syncfusion Xamarin
 
-Syncfusion releases new volumes once every three months, with exciting new features. There may be one or two Service Pack releases for this volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
+Syncfusion releases new volumes once every three months, with exciting new features. There will be one Service Pack releases for this volume releases. Service Pack releases are provided to address major bug fixes in the volume releases.
 
 You can upgrade to our latest version from any installed Syncfusion version.
 
@@ -32,5 +32,5 @@ It is not required to install the Volume release before installing the Service P
 
 Uninstall the trial version and install the fully licensed installer from the [License and Downloads](https://www.syncfusion.com/account/downloads) section of our website to upgrade from the trial version.
 
-N> License key registration is not required, if you are upgrading Syncfusion controls from trial version to licensed version.
+N> License key registration is not required, if you are upgrading Syncfusion Xamarin controls from trial version to licensed version.
 

@@ -11,14 +11,6 @@ documentation: ug
 
 The Syncfusion Essential Studio allows you to create the Xamarin application in Visual Studio for Mac with the Syncfusion components.
 
-## Create a new project
-
-To create a Syncfusion Xamarin application by adding the required Syncfusion NuGet based on the control chosen.
-
-![Project Creation](Images/project-creation.png)
-
-In Visual Studio MAC, Go to File-> New Project
-
 ## Mac Build and Installation
 
 The steps below show how to install the Xamarin Mac installer. 
@@ -35,7 +27,7 @@ The steps below show how to install the Xamarin Mac installer. 
 
    ![License Confirmation](Images/license-confirmation.JPG)
 
-   >N The Unlock key is not required to install the Mac installer. The Syncfusion Mac installer can be used for development purposes without registering the Unlock key.
+   N> The Unlock key is not required to install the Mac installer. The Syncfusion Mac installer can be used for development purposes without registering the Unlock key.
 
 4. The Destination select wizard will appear. You can choose which disc to install the Syncfusion Essential Studio for Xamarin installer on here.
 
@@ -73,90 +65,103 @@ I> After adding the reference, currently, an additional step is required for iOS
 ### Explore the libraries package
 
 You can find the Syncfusion libraries, samples and NuGet from the installed location in Mac.
+
 {Essential Studio installed location}\Syncfusion\Essential Studio{version}\Xamarin
-•	“ Lib ” folder - eg, /Users/labuser/Documents/Syncfusion/16.2.0.41/Xamarin/lib
+
+* “ Lib ” folder - eg, /Users/labuser/Documents/Syncfusion/16.2.0.41/Xamarin/lib
 It contains all the required libraries for Xamarin.iOS, Xamarin.Android, and Xamarin.Forms projects.
-•	“Nuget” folder - eg, /Users/labuser/Documents/Syncfusion/16.2.0.41/nuget
+
+* “Nuget” folder - eg, /Users/labuser/Documents/Syncfusion/16.2.0.41/nuget
 It contains the above libraries as NuGet packages. The same NuGet packages also can be configured from online nuget.org.
-•	“sample” folder - e.g., /Users/labuser/Documents/Syncfusion/16.2.0.41/sample
+
+* “sample” folder - e.g., /Users/labuser/Documents/Syncfusion/16.2.0.41/sample
 It contains the sample applications for our controls in Xamarin.iOS, Xamarin.Android, and Xamarin.Forms platforms in iOS, Android, and Forms folders, respectively.
-The “Forms” directory includes,
-•	Individual control sample folders: It contains the samples for individual controls such as SfChart, SfDataGrid, etc. Since they represent the individual controls, these samples are light-weighted. You can check the samples for your required controls alone faster with minimum deployment time.
-•	“nuget” folder: It contains the compiled assemblies of the above samples as NuGet package. It is referred in the common sample browser as explained in the next step.
-•	“SampleBrowser” folder: It contains common sample browser, which refers the individual control’s samples as NuGet package. Run this to see the demo samples of all the controls in single application.
-•	It also contains showcase samples such as Patient Monitor, Server Monitor, and Invoice.
-Add reference to the project
-You can then add the assembly references to the respective projects such as PCL, XForms.Droid, XForms.iOS. You can find the dependencies for each control from this following [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies) link.
+
+The **“Forms”** directory includes,
+
+* **Individual control sample folders:** It contains the samples for individual controls such as SfChart, SfDataGrid, etc. Since they represent the individual controls, these samples are light-weighted. You can check the samples for your required controls alone faster with minimum deployment time.
+* **“nuget” folder:** It contains the compiled assemblies of the above samples as NuGet package. It is referred in the common sample browser as explained in the next step.
+* **“SampleBrowser” folder:** It contains common sample browser, which refers the individual control’s samples as NuGet package. Run this to see the demo samples of all the controls in single application.
+* It also contains showcase samples such as Patient Monitor, Server Monitor, and Invoice.
+
+### Add reference to the project
+
+You can then add the assembly references to the respective projects such as PCL, XForms.Droid, XForms.iOS. You can find the dependencies for each control from [this](https://help.syncfusion.com/xamarin/introduction/control-dependencies) link.
 
 
 ## Creating a New Xamarin Visual Studio MAC project for a Control 
 
-1.Firstly, create a new project in Visual Studio MAC, using File-> New Project.
+1. Firstly, create a new project in Visual Studio MAC, using File-> New Project.
 
-2.Choose Blank Forms App under Xamarin.Forms category under the Multi platform sub-heading.
+2. Choose Blank Forms App under Xamarin.Forms category under the Multi platform sub-heading.
 
-![Blank Forms App](Images/blank-forms-app.PNG)
+   ![Blank Forms App](Images/blank-forms-app.PNG)
 
-3.Enter the Application Name as required and click Next.
+3. Enter the Application Name as required and click Next.
 
->N Make sure both Android and iOS target platforms are clicked and shared code is .NETStandard.
+   N> Make sure both Android and iOS target platforms are clicked and shared code is .NETStandard.
 
-![Application Name](Images/application-name.PNG)
+   ![Application Name](Images/application-name.PNG)
 
-4.Choose the location where the created project needs to be stored for future reference and then Click Create.
+4. Choose the location where the created project needs to be stored for future reference and then Click Create.
 
-![Select Location](Images/select-location.PNG)
+   ![Select Location](Images/select-location.PNG)
 
-5.Option 1: Right click solution -> Click Manage NuGet packages.
+5. **Option 1:** Right click solution -> Click Manage NuGet packages.
 
->N You can follow the [NuGet Packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) to use the NuGet-Syncfusion Xamarin Controls/Components.
+   N> You can follow the [NuGet Packages](https://help.syncfusion.com/xamarin/visual-studio-integration/nuget-packages) to use the NuGet-Syncfusion Xamarin Controls/Components.
 
 
-![Add Package](Images/addpackages.PNG)
+   ![Add Package](Images/addpackages.PNG)
 
-Select the packages required to be added and click Add Packages
-Now select all projects in the solution in the appeared dialog box and Click OK.
+   Select the packages required to be added and click Add Packages
+   
+   Now select all projects in the solution in the appeared dialog box and Click OK.
 
-![Select Package](Images/select-package.PNG)
+   ![Select Package](Images/select-package.PNG)
 
-To successfully add the packages, Click Accept for the license acceptance for the added packages in solution
+   To successfully add the packages, Click Accept for the license acceptance for the added packages in solution
 
-![Accept NuGet Package](Images/accept-nuget-package.PNG)
+   ![Accept NuGet Package](Images/accept-nuget-package.PNG)
 
-Now, your new project with required packages have been created successfully.
-6.Option 2: 
-You can add the assembly references to the respective projects such as PCL, XForms.Droid, XForms.iOS from the MAC build installed location in your machine. You can find the dependencies for each control from this link.
-You can find the Syncfusion libraries, samples and NuGet from the installed location in Mac.
+   Now, your new project with required packages have been created successfully.
 
-{Essential Studio installed location}\Syncfusion\Essential Studio{version}\Xamarin
-•	“Lib ” folder - e.g., /Users/labuser/Documents/Syncfusion/16.2.0.41/Xamarin/lib
-It contains all the required libraries for Xamarin.iOS, Xamarin.Android, and Xamarin.Forms projects.
+6. **Option 2:** 
+   You can add the assembly references to the respective projects such as PCL, XForms.Droid, XForms.iOS from the MAC build installed location in your machine. You can find the dependencies for each control from this link.
+   
+   You can find the Syncfusion libraries, samples and NuGet from the installed location in Mac.
+
+   {Essential Studio installed location}\Syncfusion\Essential Studio{version}\Xamarin
+
+   “Lib ” folder - e.g., /Users/labuser/Documents/Syncfusion/16.2.0.41/Xamarin/lib
+
+   It contains all the required libraries for Xamarin.iOS, Xamarin.Android, and Xamarin.Forms projects.
 
 
 ## Deploying a new control in a created project in MAC
 
-1.Add the required code for control in PCL project.
+1. Add the required code for control in PCL project.
 
-For example, For SfAutocomplete, refer  [this](https://help.syncfusion.com/xamarin/autocomplete/getting-started#initializing-autocomplete) link.
+   For example, For SfAutocomplete, refer  [this](https://help.syncfusion.com/xamarin/autocomplete/getting-started#initializing-autocomplete) link.
 
-Import the SfAutocomplete namespace in respective page and initialize the autocomplete using the code below.
+   Import the SfAutocomplete namespace in respective page and initialize the autocomplete using the code below.
 
-![Autocomplete Code](Images/autocomplete-code.PNG)
+   ![Autocomplete Code](Images/autocomplete-code.PNG)
 
-refer [this](https://help.syncfusion.com/xamarin/autocomplete/populating-data) link to learn more about the options available in SfAutocomplete to populate data.
+   refer [this](https://help.syncfusion.com/xamarin/autocomplete/populating-data) link to learn more about the options available in SfAutocomplete to populate data.
 
-2.Additional step for iOS
+2. Additional step for iOS
 
-We need to add Renderer for each control added in our project by adding Renderer in AppDelegate class in  iOS project
+   We need to add Renderer for each control added in our project by adding Renderer in AppDelegate class in  iOS project
 
->N If you are adding the reference from toolbox, this step is not needed.
+   N> If you are adding the reference from toolbox, this step is not needed.
 
-Here, Create an instance of `SfAutocompleteRenderer` in FinishedLaunching overridden method of an AppDelegate class in iOS project as shown below:
+   Here, Create an instance of `SfAutocompleteRenderer` in FinishedLaunching overridden method of an AppDelegate class in iOS project as shown below:
 
-![Renderer Code](Images/renderer-code.PNG)
+   ![Renderer Code](Images/renderer-code.PNG)
 
-The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete312348434.zip) link.
+   The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete312348434.zip) link.
 
-3.Right click the iOS/ Android project-> Select Set As Startup Project in Debug/Release mode. Build and Run the project in any platform as desired.	
+3. Right click the iOS/ Android project-> Select Set As Startup Project in Debug/Release mode. Build and Run the project in any platform as desired.	
 
-Thus, you can create Xamarin Visual Studio MAC project for any Syncfusion Xamarin control using the above guidelines.
+   Thus, you can create Xamarin Visual Studio MAC project for any Syncfusion Xamarin control using the above guidelines.

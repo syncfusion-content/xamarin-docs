@@ -432,4 +432,4 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ![Horizontal listview with vertical header and footer](SfListView_images/Vertical_Header_Horizontal_ListView.jpg)
 
-N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to knows  render set of data items with Xamarin.Forms views or custom templates.
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to know how to render set of data items with Xamarin.Forms views or custom templates.

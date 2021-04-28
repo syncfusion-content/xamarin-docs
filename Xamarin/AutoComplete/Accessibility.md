@@ -1,13 +1,13 @@
 ---
 layout : post
-title : AutomationId support for Syncfusion AutoComplete control in Xamarin.Forms
-description : Set AutomationId to find and interact with inner elements in AutoComplete
-platform : Xamarin.Forms
+title : Accessibility in Xamarin AutoComplete control | Syncfusion
+description : Learn about Accessibility support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
+platform : xamarin
 control : SfAutoComplete
 documentation : ug
 ---
 
-# Accessibility
+# Accessibility in Xamarin AutoComplete (SfAutoComplete)
 
 ## AutomationId
 

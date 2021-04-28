@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Multi Selection in Syncfusion SfAutoComplete control for Xamarin.Forms
-description: This section will describe about how to restrict maximum suggestion to be displayed in Xamarin.Forms SfAutoComplete.
+title: Multiple Selection in Xamarin AutoComplete control | Syncfusion
+description: Learn about Multiple Selection support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
-# Multiple Selection
+# Multiple Selection in Xamarin AutoComplete (SfAutoComplete)
 
 ## Multiple Selection in Xamarin SfAutoComplete
 Select multiple items from a suggestion list. There are two ways to perform multi selection in autocomplete.

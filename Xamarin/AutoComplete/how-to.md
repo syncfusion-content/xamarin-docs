@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Interaction in Syncfusion AutoComplete Control in Xamarin.
-description : Learn how to perform an operation while changing its selection from dropdown list in Xamarin.
-platform : Xamarin
+title : Interaction in Xamarin AutoComplete Control | Syncfusion
+description : Learn how to perform an operation while changing its selection from dropdown list in Xamarin AutoComplete.
+platform : xamarin
 control : AutoComplete
 documentation : ug
 ---
 
-# How To
+# How to perform an operation when selecting an item from drop-downlist?
 
 ## How to perform an operation when selecting an item from drop-down list?
 

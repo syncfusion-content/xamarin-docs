@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Watermark support of Syncfusion SfAutoComplete control for Xamarin.Forms
-description : Learn about Watermark support in autocomplete control
+title : Watermark in Xamarin AutoComplete control | Syncfusion
+description : Learn about Watermark support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
 platform : xamarin
 control : SfAutoComplete
 documentation : ug
 ---
 
-# Watermark
+# Watermark in Xamarin AutoComplete (SfAutoComplete)
 
 ## WaterMark in Xamarin SfAutocomplete
 

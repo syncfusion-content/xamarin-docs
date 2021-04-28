@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Suggestion mode for Syncfusion AutoComplete Control in Xamarin.Forms
-description : This section describes about the different filtering modes to define filtering strategy.
-platform : Xamarin.Forms
+title : AutoComplete Filtering Options in Xamarin AutoComplete | Syncfusion
+description : Learn about AutoComplete Filtering Options support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
+platform : xamarin
 control : AutoComplete
 documentation : ug
 ---
 
-# AutoComplete Filtering Options
+# AutoComplete Filtering Options - Xamarin AutoComplete (SfAutoComplete)
 
 ## AutoComplete filtering options in Xamarin SfAutoComplete
 

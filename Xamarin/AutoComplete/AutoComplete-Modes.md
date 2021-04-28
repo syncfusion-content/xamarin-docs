@@ -1,13 +1,13 @@
 ---
 layout : post
-title : AutoComplete mode for Syncfusion AutoComplete control in Xamarin.Forms
-description : Learn how to change the AutoComplete mode in AutoComplete
-platform : Xamarin
+title : AutoComplete Modes in Xamarin AutoComplete control | Syncfusion
+description : Learn about AutoComplete Modes support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
+platform : xamarin
 control : AutoComplete
 documentation : ug
 ---
 
-# AutoComplete Modes
+# AutoComplete Modes in Xamarin AutoComplete (SfAutoComplete)
 
 ## AutoComplete Modes in Xamarin SfAutoComplete
 

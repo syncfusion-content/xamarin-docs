@@ -7,9 +7,17 @@ control: NavigationDrawer
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin NavigationDrawer(SfNavigationDrawer)
 
 This section explains you the steps required to create a navigation DrawerPanel with content area and data filled drawer and it covers only the minimal features that you need to know to get started with the NavigationDrawer.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfNavigationDrawer reference
 

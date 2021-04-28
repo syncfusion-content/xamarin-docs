@@ -18,6 +18,14 @@ To get start quickly with Xamarin.Forms SfAutoComplete, you can check on this vi
 <style>#XamarinAutoCompleteVideoTutorial{width : 90% !important; height: 400px !important }</style>
 <iframe id='XamarinAutoCompleteVideoTutorial' src='https://www.youtube.com/embed/XT5-CKZCiH8'></iframe>
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfAutoComplete reference
 
 You can add SfAutoComplete reference using one of the following methods:

@@ -498,6 +498,8 @@ public class DragDropControllerExt : DragDropController
 {% endhighlight %}
 {% endtabs %}
 
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to knows  render set of data items with Xamarin.Forms views or custom templates.
+
 ## See also
 
 [How to drag and drop an item from one to another listview in Xamarin.Forms](https://www.syncfusion.com/kb/11203/)                                                                                                                                                                                                                                                              

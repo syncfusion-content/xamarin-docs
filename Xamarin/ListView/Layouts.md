@@ -129,6 +129,8 @@ public partial class GridLayoutPage : ContentPage
 
 Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/change-span-count-based-on-screen-size-listview-xamarin).
 
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to knows  render set of data items with Xamarin.Forms views or custom templates.
+
 ## See also
 
 [How to display each row with different columns in Xamarin.Forms ListView (SfListView)](https://www.syncfusion.com/kb/11236)                                                                                                                                                                                        

@@ -263,6 +263,8 @@ private void ListView_Loaded(object sender, Syncfusion.ListView.XForms.ListViewL
 
  * Defines the size of the image when loading image in the [SfListView.ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate). Because, it does not return actual measured size when measuring before layout the item.
  * Avoids `SfListView` inside the `SfListView` if `SfListView.AutoFitMode` is `Height` or `DynamicHeight`. Because, the inner `SfListView` does not return actual measured size when measuring before layout the item.
+ 
+ N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to knows  render set of data items with Xamarin.Forms views or custom templates.
 
 ## See Also
 

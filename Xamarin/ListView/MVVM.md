@@ -923,6 +923,8 @@ public class ViewModel:INotifyPropertyChanged
 
 You can download the entire sample from GitHub [here](https://github.com/SyncfusionExamples/xamarin-listview-loadmore).
 
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to knows  render set of data items with Xamarin.Forms views or custom templates.
+
 ## See also
 
 [How to bind command from ViewModel to external ItemTemplate of Xamarin.Forms ListView](https://www.syncfusion.com/kb/11029)                                                                                                                                        

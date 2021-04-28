@@ -836,6 +836,8 @@ private void AddProducts(int index, int count)
 
 Download the GitHub sample from GitHub [here](https://github.com/SyncfusionExamples/How-to-disable-LoadMoreCommand-execution-when-ListView-is-Empty)
 
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to knows  render set of data items with Xamarin.Forms views or custom templates.
+
 ## See Also
 
 [How to enable load more after loading in Xamarin.Forms listview](https://www.syncfusion.com/kb/9953/)                                                                           

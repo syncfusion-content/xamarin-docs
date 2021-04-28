@@ -1,13 +1,13 @@
 ---
-layout : post
-title : AutoComplete mode for Syncfusion AutoComplete control in Xamarin.Forms
-description : Learn how to change the AutoComplete mode in AutoComplete
-platform : Xamarin
-control : AutoComplete
-documentation : ug
+layout: post
+title: AutoComplete Modes in Xamarin AutoComplete control | Syncfusion
+description: Learn about AutoComplete Modes support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
+platform: xamarin
+control: AutoComplete
+documentation: ug
 ---
 
-# AutoComplete Modes
+# AutoComplete Modes in Xamarin AutoComplete (SfAutoComplete)
 
 ## AutoComplete Modes in Xamarin SfAutoComplete
 
@@ -308,3 +308,5 @@ namespace AutocompleteSample
 {% endtabs %}
 
 ![suggest append](images/AutoComplete-Suggesting-Modes/suggest-append.png)
+
+N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.

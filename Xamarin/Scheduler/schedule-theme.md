@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Add theming support in syncfusion schedule control
-description: Learn how to add the theme.
+description: Learn about Theming support in Syncfusion Xamarin Scheduler (SfSchedule) control and more details.
 platform: Xamarin
 control: SfSchedule
 documentation: ug
 ---
 
-# Theming
+# Theming in Xamarin Scheduler (SfSchedule)
 
 Theming is a set of resources which are used to provide the consistency look for schedule.
 You can modify the default appearance of schedule using this support. By default schedule have default theme resources and it’s located in `Syncfusion.Xamarin.Core` assembly. You need to merge them in your application’s resource to apply the theme.

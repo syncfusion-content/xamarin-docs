@@ -414,3 +414,5 @@ Refer [this](https://help.syncfusion.com/xamarin/sfautocomplete/autocomplete-fil
 ![Image-casesensitive](images/Getting-Started/contains-casesensitive.png)
 
 The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/AutoComplete312348434.zip) link.
+
+N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.

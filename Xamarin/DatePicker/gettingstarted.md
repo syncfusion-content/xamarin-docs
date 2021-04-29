@@ -373,4 +373,5 @@ namespace DatePickerSample
 
 ![OverView of SfDatePicker](images/GettingStatrted_DatePicker.png)
 
-You can find the complete getting started sample here: [GettingStarted](https://www.syncfusion.com/downloads/support/directtrac/general/ze/DatePickerSample-472749877)
+
+You can find the complete getting started sample here: [GettingStarted](https://github.com/SyncfusionExamples/xamarin-forms-datepicker)

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Demonstrate TimePicker using Syncfusion Picker for Xamarin.Forms
-description: A quick tour to initial users for getting started with TimePicker control for Xamarin.Forms platform
+description: Learn here all about  how to create Time Picker using Syncfusion Xamarin Picker (SfPicker) control and it contains sample and code snippet for this.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
 
-# Time Picker
+# Time Picker in Xamarin Picker (SfPicker)
 
 We recommend to use our standalone Time Picker component which is available from our Volume 4 2019 release and please have the documentation [`link`](https://help.syncfusion.com/xamarin/timepicker/overview). If you need further customizations, below steps explains how to create a custom TimePicker by using the Picker control.
 
@@ -343,4 +343,4 @@ The following screenshot illustrates the output of the above code snippets.
 
 You can download the TimePicker sample for reference from the following link.
 
-Sample link: [TimePicker](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePicker2023840373)
+Sample link: [TimePicker](https://github.com/SyncfusionExamples/xamarin-sfpicker-examples/tree/master/Samples/TimePicker)

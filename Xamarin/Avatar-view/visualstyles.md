@@ -7,7 +7,7 @@ control: AvatarView
 documentation: ug
 ---
 
-# Visual Style
+# Visual Style in Xamarin Avatar View(SfAvatarView) 
 
 ## Visual styles in Xamarin Avatar View(SfAvatarView)
 The `SfAvatarView` control supports customization using the following built-in visual styles:
@@ -393,4 +393,4 @@ The following code sample demonstrates how to define visual style of square Avat
 
 ![SfAvatarView control with square visual style](images/VisualSquare_AvatarView.png)
 
-The visual style sample is available in the following link: [Sample](https://www.syncfusion.com/downloads/support/directtrac/general/ze/VisualStyles-180489920).
+The visual style sample is available in the following link: [Sample](https://github.com/SyncfusionExamples/avatarview-visual-style).

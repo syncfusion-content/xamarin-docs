@@ -211,4 +211,4 @@ sfSwitch.StateChanged += SfSwitch_StateChanged;
 
 {% endtabs %}
 
-You can find the complete getting started sample from this [link](https://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStartedSample1199686003).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/xamarin-forms-sfswitch).

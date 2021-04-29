@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Customizations in AutoComplete
-description : This section describes about the visual customization of entry, suggestion box and suggestion items in the AutoComplete. 
-platform : Xamarin
-control : AutoComplete
-documentation : ug
+layout: post
+title: Customizing AutoComplete in Xamarin AutoComplete control | Syncfusion
+description: Learn about Customizing AutoComplete support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
+platform: xamarin
+control: AutoComplete
+documentation: ug
 ---
 
-# Customizing AutoComplete
+# Customizing AutoComplete in Xamarin AutoComplete (SfAutoComplete)
 
 ## Customizing AutoComplete in Xamarin AutoComplete (SfAutoComplete)
 
@@ -936,3 +936,5 @@ namespace AutocompleteSample
 {% endtabs %}
 
 ![Border visibility](images/Customizing-AutoComplete/show-border.png)
+
+N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.

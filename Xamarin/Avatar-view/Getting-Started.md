@@ -225,4 +225,4 @@ namespace AvatarViewGettingStarted
 
 ![SfAvatarView](images/Getting_Started_Ssample.png)
 
-The Getting Started sample is available in this following link: [Getting Started](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Getting_started-732039602).
+The Getting Started sample is available in this following link: [Getting Started](https://github.com/SyncfusionExamples/xamarin.forms-sfavatarview).

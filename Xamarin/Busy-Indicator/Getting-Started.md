@@ -307,4 +307,4 @@ namespace GettingStarted
 
 ![OverView image for BusyIndicator](images/Busyindicator.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted232240292.zip)
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/xamarin.forms-busyindicator)

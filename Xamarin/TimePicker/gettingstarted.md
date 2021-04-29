@@ -378,4 +378,4 @@ namespace TimePickerSample
 
 We have attached sample for reference. You can download the sample from the following link.
 
-You can find the complete getting started sample here: [GettingStarted](https://www.syncfusion.com/downloads/support/directtrac/general/ze/TimePickerSample211616816)
+You can find the complete getting started sample here: [GettingStarted](https://github.com/SyncfusionExamples/xamarin-forms-sftimepicker)

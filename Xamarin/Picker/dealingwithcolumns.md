@@ -645,4 +645,4 @@ The following screenshot illustrates the output of above code example.
 
 You can download the sample for reference from the following link.
 
-Sample link:[Cascading](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Cascading370076787)
+Sample link:[Cascading](https://github.com/SyncfusionExamples/xamarin-sfpicker-examples/tree/master/Samples/Cascading)

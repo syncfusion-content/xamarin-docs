@@ -259,6 +259,6 @@ namespace RadialSample
 
 We have attached sample for reference. You can download the sample from the following link.
 
-Sample link:[GettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted472180230.zip)
+Sample link:[GettingStarted](https://github.com/SyncfusionExamples/xamarin-forms-radial-menu)
 
 

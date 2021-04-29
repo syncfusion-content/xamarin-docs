@@ -652,4 +652,4 @@ namespace Rotator
 
 ![NavigationStripPosition](images/NavigationStripPosition.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1493259513.zip)
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/xamarin-forms-rotator)

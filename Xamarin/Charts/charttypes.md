@@ -50,7 +50,7 @@ chart.Series.Add(lineSeries);
 
 ![Line chart type in Xamarin.Forms](charttypes_images/charttypes_img1.png)
 
-N> You can also explore our [Xamarin Line Chart Example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/LineChart) to knows how to represent time-dependent data, showing trends in data at equal intervals.
+N> You can also explore our [Xamarin Line Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/LineChart) to knows how to represent time-dependent data, showing trends in data at equal intervals.
 
 ### Dashed Lines
 
@@ -582,7 +582,7 @@ You can use the following properties to customize the appearance.
 
 ![RangeArea chart type in Xamarin.Forms](charttypes_images/RangeArea.png)
 
-N> You can also explore our [Xamarin Range Area Chart Example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/RangeAreaChart) to know how to show variations in the data values for a given time.
+N> You can also explore our [Xamarin Range Area Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/RangeAreaChart) to know how to show variations in the data values for a given time.
 
 ## Spline Range Area Chart
 
@@ -978,7 +978,7 @@ chart.Series.Add(histogramSeries);
 
 ![Histogram chart type in Xamarin.Forms](charttypes_images/charttypes_img42.png)
 
-N> You can also explore our [Xamarin Histogram Chart Example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/HistogramChart) to knows how to represent time-dependent data, showing trends in data at equal intervals.
+N> You can also explore our [Xamarin Histogram Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/HistogramChart) to knows how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Range Column Chart
 
@@ -1836,7 +1836,7 @@ You can use the following properties to customize the [`HiLoOpenCloseSeries`](ht
 
 ![HiLoOpenClose chart type in Xamarin.Forms](charttypes_images/charttypes_img18.png)
 
-N> You can also explore our [Xamarin OHLC Chart Example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/OHLCChart) to knows how to represent time-dependent data, showing trends in data at equal intervals.
+N> You can also explore our [Xamarin OHLC Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/OHLCChart) to knows how to represent time-dependent data, showing trends in data at equal intervals.
 
 ### Bull and Bear Color	
 
@@ -2220,7 +2220,7 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 {% endtabs %}
 ![Radar start angle support for both axes in Xamarin.Forms Chart](charttypes_images/radarangle_img3.png)
 
-N> You can also explore our [Xamarin Radar Chart Example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/RadarChart) to knows how to represent time-dependent data, showing trends in data at equal intervals.
+N> You can also explore our [Xamarin Radar Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/RadarChart) to knows how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Polar Chart
 
@@ -2402,7 +2402,7 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 
 ![Polar start angle support for both axes in Xamarin.Forms Chart](charttypes_images/polarangle_img3.png)
 
-N>You can also explore our [Xamarin Polar Chart Example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/PolarChart) to knows how to render and configure the polar line type charts.
+N>You can also explore our [Xamarin Polar Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/PolarChart) to knows how to render and configure the polar line type charts.
 
 ## Pie Chart
 
@@ -2922,8 +2922,7 @@ chart.Series.Add(pyramidSeries);
 
 ![Pyramid chart type in Xamarin.Forms](charttypes_images/charttypes_img33.png)
 
-
-N> . You can also explore our [Xamarin Pyramid Chart Example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/PyramidChart) to know how to render a pyramid series.
+N> . You can also explore our [Xamarin Pyramid Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/PyramidChart) to know how to render a pyramid series.
 
 ### Pyramid Mode
 

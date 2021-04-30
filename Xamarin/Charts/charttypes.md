@@ -11,7 +11,7 @@ documentation: ug
 
 ## Line Chart
 
-To render a [`Line chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/line-chart), create an instance of [`LineSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LineSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the appearance.
+To render a [`Xamarin Line chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/line-chart), create an instance of [`LineSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LineSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the line.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -49,6 +49,8 @@ chart.Series.Add(lineSeries);
 {% endtabs %}
 
 ![Line chart type in Xamarin.Forms](charttypes_images/charttypes_img1.png)
+
+N> You can also explore our [Xamarin Line Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/LineChart) to know how to represent time-dependent data, showing trends in data at equal intervals.
 
 ### Dashed Lines
 
@@ -374,7 +376,7 @@ N> You can also explore our [Xamarin Area Chart example](https://github.com/sync
 
 ## Spline Area Chart
 
-To render a [`Spline Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/spline-area-chart), create an instance of [`SplineAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineAreaSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the spline area appearance.
+To render a [`Xamarin Spline Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/spline-area-chart), create an instance of [`SplineAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineAreaSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the spline area appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -413,6 +415,8 @@ chart.Series.Add(splineAreaSeries);
 {% endtabs %}
 
 ![SplineArea chart type in Xamarin.Forms](charttypes_images/charttypes_img3.png)
+
+N> You can also explore our [Xamarin Spline Area Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/SplineAreaChart) to knows how to represent time-dependent data and show trends in data at equal intervals.
 
 ### Spline Rendering Types
 
@@ -505,7 +509,7 @@ chart.Series.Add(stepAreaSeries);
 
 ## Range Area Chart
 
-To render a [`Range Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/range-area-chart), create an instance of [`RangeAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RangeAreaSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
+To render a [`Xamarin Range Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/range-area-chart), create an instance of [`RangeAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RangeAreaSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
 
 Since the [`RangeAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RangeAreaSeries.html) requires two Y values for a point, your data should contain high and low values. High and low value specifies the maximum and minimum range of the point.
 
@@ -580,9 +584,11 @@ You can use the following properties to customize the appearance.
 
 ![RangeArea chart type in Xamarin.Forms](charttypes_images/RangeArea.png)
 
+N> You can also explore our [Xamarin Range Area Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/RangeAreaChart) to know how to show variations in the data values for a given time.
+
 ## Spline Range Area Chart
 
-To render a [`Spline Range Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/spline-range-area-chart), create an instance of the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html), and add that instance to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
+To render a [`Xamarin Spline Range Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/spline-range-area-chart), create an instance of the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html), and add that instance to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
 
 Since the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html) requires two Y values for a point, data should contain high and low values. The high and low values specify the maximum and minimum ranges of a point.
 
@@ -651,6 +657,9 @@ chart.Series.Add(splineRangeAreaSeries);
 
 ![SplineRangeArea chart type in Xamarin.Forms](charttypes_images/SplineRangeArea.png)
 
+N> You can also explore our [Xamarin Spline Range Area Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/SplineRangeAreaChart) to knows how to display continuous data points as a set of splines that vary between high and low values.
+
+
 ### Spline Rendering Types
 
 [`SplineType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html#Syncfusion_SfChart_XForms_SplineRangeAreaSeries_SplineType) property allows you to change the spline range area curve in series.
@@ -696,7 +705,7 @@ SplineRangeAreaSeries splineRangeAreaSeries = new SplineRangeAreaSeries
 
 ## Stacked Area Chart
 
-To render a [`Stacked Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/stacked-area-chart), create an instance of [`StackingAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingAreaSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the stacked area appearance.
+To render a [`Xamarin Stacked Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/stacked-area-chart), create an instance of [`StackingAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingAreaSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the stacked area appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -759,9 +768,11 @@ chart.Series.Add(stackingAreaSeries3);
 
 ![StackedArea chart type in Xamarin.Forms](charttypes_images/charttypes_img4.png)
 
+N> You can also explore our [Xamarin Stacked Area Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/StackedAreaChart) to knows how to visualizes data with y-values stacked one over another in a series order.
+
 ## 100% Stacked Area Chart
 
-To render a [`100% Stacked Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/stacked-area-100-chart), create an instance of [`StackingArea100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingArea100Series.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the 100% stacked area appearance.
+To render a [`Xamarin.Forms 100% Stacked Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/stacked-area-100-chart), create an instance of [`StackingArea100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingArea100Series.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the 100% stacked area appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -823,6 +834,8 @@ chart.Series.Add(stackingArea100Series3);
 {% endtabs %}
 
 ![StackingArea100 chart type in Xamarin.Forms](charttypes_images/charttypes_img5.png)
+
+N> You can also explore our [Xamarin.Forms Stacked Area 100% Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/StackedArea100Chart) to knows how to displays multiple series of data as stacked areas, ensuring that the cumulative proportion of each stacked element always totals 100%.
 
 ## Column Chart
 
@@ -928,7 +941,7 @@ chart.Series.Add(series2);
 
 ## Histogram Chart
 
-To render a [`Histogram chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/histogram-chart), create an instance of [`HistogramSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.HistogramSeries.html), and add it to the series collection of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
+To render a [`Xamarin Histogram chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/histogram-chart), create an instance of [`HistogramSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.HistogramSeries.html), and add it to the series collection of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
 
 Histogram chart provides a visual display of large amount of data that are difficult to understand in a tabular or data grid form.
 
@@ -974,9 +987,11 @@ chart.Series.Add(histogramSeries);
 
 ![Histogram chart type in Xamarin.Forms](charttypes_images/charttypes_img42.png)
 
+N> You can also explore our [Xamarin Histogram Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/HistogramChart) to know how to represent time-dependent data, showing trends in data at equal intervals.
+
 ## Range Column Chart
 
-To render a [`Range Column chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/range-column-chart), create an instance of [`RangeColumnSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RangeColumnSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). 
+To render a [`Xamarin Range Column chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/range-column-chart), create an instance of [`RangeColumnSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RangeColumnSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). 
 
 Since the [`RangeColumnSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RangeColumnSeries.html) requires two Y values for a point, your data should contain high and low values. High and low value specifies the maximum and minimum range of the point. 
 
@@ -1057,6 +1072,8 @@ Following properties are used to customize the range column segment appearance,
 * [`Width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RangeColumnSeries.html#Syncfusion_SfChart_XForms_RangeColumnSeries_Width) - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available width, respectively. 
 
 ![RangeColumn chart type in Xamarin.Forms](charttypes_images/charttypes_img7.png)
+
+N> You can also explore our [Xamarin Range Column Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/RangeColumnChart) to knows how to display a range of data by plotting two y-values per data point.
 
 ## Stacked Column Chart
 
@@ -1315,7 +1332,7 @@ chart.Series.Add(stackingBarSeries3);
 
 ## 100% Stacked Bar Chart
 
-To render a [`100% Stacked Bar chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/stacked-bar-100-chart), create an instance of [`StackingBar100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingBar100Series.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the series appearance.
+To render a [`Xamarin 100% Stacked Bar chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/stacked-bar-100-chart), create an instance of [`StackingBar100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingBar100Series.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the series appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -1382,9 +1399,11 @@ chart.Series.Add(stackingBar100Series3);
 
 ![StackingBar100 chart type in Xamarin.Forms](charttypes_images/charttypes_img12.png)
 
+N> You can also explore our [Xamarin Stacked Bar 100% Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/StackedBar100Chart) to knows how to displays multiple series of data as stacked bars.
+
 ## Spline Chart
 
-To render a [`Spline chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/spline-chart), create an instance of [`SplineSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the spline segment appearance.
+To render a [`Xamarin Spline chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/spline-chart), create an instance of [`SplineSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the spline segment appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -1422,6 +1441,8 @@ chart.Series.Add(splineSeries);
 {% endtabs %}
 
 ![Spline chart type in Xamarin.Forms](charttypes_images/charttypes_img13.png)
+
+N> You can also explore our [Xamarin Spline Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/SplineChart) to knows how to connecting the data points with straight lines.
 
 ### Dashed Lines
 
@@ -1646,7 +1667,7 @@ N> You can also explore our [Xamarin Bubble Chart example](https://github.com/sy
 
 ## Scatter Chart	
 
-To render a [`Scatter chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/scatter-chart), create an instance of [`ScatterSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ScatterSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the scatter segment appearance.
+To render a [`Xamarin Scatter chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/scatter-chart), create an instance of [`ScatterSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ScatterSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the scatter segment appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -1695,6 +1716,8 @@ chart.Series.Add(scatterSeries);
 {% endtabs %}
 
 ![Scatter chart type in Xamarin.Forms](charttypes_images/charttypes_img17.png)
+
+N> You can also explore our [Xamarin Scatter Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/ScatterChart) to knows how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Fast Scatter Chart
 
@@ -1751,7 +1774,7 @@ chart.Series.Add(fastScatterSeries);
 
 ## OHLC Chart
 
-To render an [`OHLC chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/ohlc-chart), create an instance of [`HiLoOpenCloseSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.HiLoOpenCloseSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
+To render an [`Xamarin OHLC chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/ohlc-chart), create an instance of [`HiLoOpenCloseSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.HiLoOpenCloseSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
 
 OHLC chart requires five values (X, Open, High, Low and Close) to plot a point. 
 
@@ -1829,6 +1852,8 @@ You can use the following properties to customize the [`HiLoOpenCloseSeries`](ht
 * [`Width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.HiLoOpenCloseSeries.html#Syncfusion_SfChart_XForms_HiLoOpenCloseSeries_Width) - used to change the width of the rectangle.
 
 ![HiLoOpenClose chart type in Xamarin.Forms](charttypes_images/charttypes_img18.png)
+
+N> You can also explore our [Xamarin OHLC Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/OHLCChart) to know how to represent time-dependent data, showing trends in data at equal intervals.
 
 ### Bull and Bear Color	
 
@@ -2036,7 +2061,7 @@ SfChart chart = new SfChart()
 
 ## Radar Chart
 
-To render a [`Radar chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/radar-chart), create an instance of [`RadarSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RadarSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).  
+To render a [`Xamarin Radar chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/radar-chart), create an instance of [`RadarSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RadarSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).  
 
 ### Draw type
 
@@ -2212,9 +2237,11 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 {% endtabs %}
 ![Radar start angle support for both axes in Xamarin.Forms Chart](charttypes_images/radarangle_img3.png)
 
+N> You can also explore our [Xamarin Radar Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/RadarChart) to know how to represent time-dependent data, showing trends in data at equal intervals.
+
 ## Polar Chart
 
-To render a [`Polar chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/polar-chart), create an instance of [`PolarSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). 
+To render a [`Xamarin Polar chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/polar-chart), create an instance of [`PolarSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PolarSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). 
  
 
 ### Draw type
@@ -2241,7 +2268,7 @@ polar.DrawType = PolarRadarSeriesDrawType.Line;
 {% endtabs %}
 
 ![Draw type support for polar series in Xamarin.Forms Chart](ChartTypes_images/Polar.png)
-
+ 
 ### Customize the appearance
 
 You can use the following properties to customize the appearance.
@@ -2392,9 +2419,11 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 
 ![Polar start angle support for both axes in Xamarin.Forms Chart](charttypes_images/polarangle_img3.png)
 
+N>You can also explore our [Xamarin Polar Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/PolarChart) to know how to render and configure the polar line type charts.
+
 ## Pie Chart
 
-To render a [`Pie chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/pie-chart), create an instance of [`PieSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PieSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the pie segment appearance.
+To render a [`Xamarin Pie chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/pie-chart), create an instance of [`PieSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PieSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the pie segment appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -2437,6 +2466,8 @@ chart.Series.Add(pieSeries);
 {% endtabs %}
 
 ![Pie chart type in Xamarin.Forms](charttypes_images/charttypes_img22.png)
+
+N> You can also explore our [Xamarin Pie Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/PieChart) to know how to render and configure the pie chart.
 
 ### Changing the pie size
 
@@ -2868,7 +2899,7 @@ The [`InnerRadius`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XF
 
 ## Pyramid Chart
 
-To render a [`Pyramid chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/pyramid-chart), create an instance of [`PyramidSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PyramidSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the pyramid segment appearance.
+To render a [`Xamarin Pyramid chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/pyramid-chart), create an instance of [`PyramidSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.PyramidSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the pyramid segment appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -2907,6 +2938,8 @@ chart.Series.Add(pyramidSeries);
 {% endtabs %}
 
 ![Pyramid chart type in Xamarin.Forms](charttypes_images/charttypes_img33.png)
+
+N> . You can also explore our [Xamarin Pyramid Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/PyramidChart) to know how to render a pyramid series.
 
 ### Pyramid Mode
 

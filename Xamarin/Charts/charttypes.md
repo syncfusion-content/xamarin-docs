@@ -374,7 +374,7 @@ N> You can also explore our [Xamarin Area Chart example](https://github.com/sync
 
 ## Spline Area Chart
 
-To render a [`Spline Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/spline-area-chart), create an instance of [`SplineAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineAreaSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the spline area appearance.
+To render a [`Xamarin Spline Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/spline-area-chart), create an instance of [`SplineAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineAreaSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the spline area appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -413,6 +413,8 @@ chart.Series.Add(splineAreaSeries);
 {% endtabs %}
 
 ![SplineArea chart type in Xamarin.Forms](charttypes_images/charttypes_img3.png)
+
+N> You can also explore our [Xamarin Spline Area Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/SplineAreaChart) to knows how to represent time-dependent data and show trends in data at equal intervals.
 
 ### Spline Rendering Types
 
@@ -582,7 +584,7 @@ You can use the following properties to customize the appearance.
 
 ## Spline Range Area Chart
 
-To render a [`Spline Range Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/spline-range-area-chart), create an instance of the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html), and add that instance to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
+To render a [`Xamarin Spline Range Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/spline-range-area-chart), create an instance of the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html), and add that instance to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html).
 
 Since the [`SplineRangeAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html) requires two Y values for a point, data should contain high and low values. The high and low values specify the maximum and minimum ranges of a point.
 
@@ -651,6 +653,9 @@ chart.Series.Add(splineRangeAreaSeries);
 
 ![SplineRangeArea chart type in Xamarin.Forms](charttypes_images/SplineRangeArea.png)
 
+N> You can also explore our [Xamarin Spline Range Area Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/SplineRangeAreaChart) to knows how to display continuous data points as a set of splines that vary between high and low values.
+
+
 ### Spline Rendering Types
 
 [`SplineType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineRangeAreaSeries.html#Syncfusion_SfChart_XForms_SplineRangeAreaSeries_SplineType) property allows you to change the spline range area curve in series.
@@ -696,7 +701,7 @@ SplineRangeAreaSeries splineRangeAreaSeries = new SplineRangeAreaSeries
 
 ## Stacked Area Chart
 
-To render a [`Stacked Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/stacked-area-chart), create an instance of [`StackingAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingAreaSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the stacked area appearance.
+To render a [`Xamarin Stacked Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/stacked-area-chart), create an instance of [`StackingAreaSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingAreaSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the stacked area appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -759,9 +764,11 @@ chart.Series.Add(stackingAreaSeries3);
 
 ![StackedArea chart type in Xamarin.Forms](charttypes_images/charttypes_img4.png)
 
+N> You can also explore our [Xamarin Stacked Area Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/StackedAreaChart) to knows how to visualizes data with y-values stacked one over another in a series order.
+
 ## 100% Stacked Area Chart
 
-To render a [`100% Stacked Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/stacked-area-100-chart), create an instance of [`StackingArea100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingArea100Series.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the 100% stacked area appearance.
+To render a [`Xamarin.Forms 100% Stacked Area chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/stacked-area-100-chart), create an instance of [`StackingArea100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingArea100Series.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the 100% stacked area appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -823,6 +830,8 @@ chart.Series.Add(stackingArea100Series3);
 {% endtabs %}
 
 ![StackingArea100 chart type in Xamarin.Forms](charttypes_images/charttypes_img5.png)
+
+N> You can also explore our [Xamarin.Forms Stacked Area 100% Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/StackedArea100Chart) to knows how to displays multiple series of data as stacked areas, ensuring that the cumulative proportion of each stacked element always totals 100%.
 
 ## Column Chart
 
@@ -1646,7 +1655,7 @@ N> You can also explore our [Xamarin Bubble Chart example](https://github.com/sy
 
 ## Scatter Chart	
 
-To render a [`Scatter chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/scatter-chart), create an instance of [`ScatterSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ScatterSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the scatter segment appearance.
+To render a [`Xamarin Scatter chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/scatter-chart), create an instance of [`ScatterSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ScatterSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the scatter segment appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -1695,6 +1704,8 @@ chart.Series.Add(scatterSeries);
 {% endtabs %}
 
 ![Scatter chart type in Xamarin.Forms](charttypes_images/charttypes_img17.png)
+
+N> You can also explore our [Xamarin Scatter Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/ScatterChart) to knows how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Fast Scatter Chart
 

@@ -985,7 +985,7 @@ chart.Series.Add(histogramSeries);
 
 ## Range Column Chart
 
-To render a [`Range Column chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/range-column-chart), create an instance of [`RangeColumnSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RangeColumnSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). 
+To render a [`Xamarin Range Column chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/range-column-chart), create an instance of [`RangeColumnSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RangeColumnSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). 
 
 Since the [`RangeColumnSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RangeColumnSeries.html) requires two Y values for a point, your data should contain high and low values. High and low value specifies the maximum and minimum range of the point. 
 
@@ -1066,6 +1066,8 @@ Following properties are used to customize the range column segment appearance,
 * [`Width`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.RangeColumnSeries.html#Syncfusion_SfChart_XForms_RangeColumnSeries_Width) - used to change the width of the rectangle. The default value of the width is 0.8, and the value ranges from 0 to 1. Here, 1 and 0 correspond to 100% and 0% of the available width, respectively. 
 
 ![RangeColumn chart type in Xamarin.Forms](charttypes_images/charttypes_img7.png)
+
+N> You can also explore our [Xamarin Range Column Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/RangeColumnChart) to knows how to display a range of data by plotting two y-values per data point.
 
 ## Stacked Column Chart
 
@@ -1324,7 +1326,7 @@ chart.Series.Add(stackingBarSeries3);
 
 ## 100% Stacked Bar Chart
 
-To render a [`100% Stacked Bar chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/stacked-bar-100-chart), create an instance of [`StackingBar100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingBar100Series.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the series appearance.
+To render a [`Xamarin 100% Stacked Bar chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/stacked-bar-100-chart), create an instance of [`StackingBar100Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.StackingBar100Series.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the series appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -1391,9 +1393,11 @@ chart.Series.Add(stackingBar100Series3);
 
 ![StackingBar100 chart type in Xamarin.Forms](charttypes_images/charttypes_img12.png)
 
+N> You can also explore our [Xamarin Stacked Bar 100% Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/StackedBar100Chart) to knows how to displays multiple series of data as stacked bars.
+
 ## Spline Chart
 
-To render a [`Spline chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/spline-chart), create an instance of [`SplineSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the spline segment appearance.
+To render a [`Xamarin Spline chart`](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts/chart-types/spline-chart), create an instance of [`SplineSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SplineSeries.html) and add to the [`Series`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Series) collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). You can use the following properties to customize the spline segment appearance.
 
 * [`Color`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Color) – used to change the color of the series.
 * [`Opacity`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSeries.html#Syncfusion_SfChart_XForms_ChartSeries_Opacity) - used to control the transparency of the chart series.
@@ -1431,6 +1435,8 @@ chart.Series.Add(splineSeries);
 {% endtabs %}
 
 ![Spline chart type in Xamarin.Forms](charttypes_images/charttypes_img13.png)
+
+N> You can also explore our [Xamarin Spline Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/SplineChart) to knows how to connecting the data points with straight lines.
 
 ### Dashed Lines
 

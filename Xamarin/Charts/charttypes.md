@@ -978,7 +978,7 @@ chart.Series.Add(histogramSeries);
 
 ![Histogram chart type in Xamarin.Forms](charttypes_images/charttypes_img42.png)
 
-N> You can also explore our [Xamarin Histogram Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/HistogramChart) to knows how to represent time-dependent data, showing trends in data at equal intervals.
+N> You can also explore our [Xamarin Histogram Chart Example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/HistogramChart) to knows how to represent time-dependent data, showing trends in data at equal intervals.
 
 ## Range Column Chart
 
@@ -1837,6 +1837,7 @@ You can use the following properties to customize the [`HiLoOpenCloseSeries`](ht
 ![HiLoOpenClose chart type in Xamarin.Forms](charttypes_images/charttypes_img18.png)
 
 N> You can also explore our [Xamarin OHLC Chart Example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/OHLCChart) to knows how to represent time-dependent data, showing trends in data at equal intervals.
+
 ### Bull and Bear Color	
 
 In OHLC chart, [`BullFillColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.FinancialSeriesBase.html#Syncfusion_SfChart_XForms_FinancialSeriesBase_BullFillColor) property is used to specify a fill color for the segments that indicates an increase in stock price in the measured time interval and [`BearFillColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.FinancialSeriesBase.html#Syncfusion_SfChart_XForms_FinancialSeriesBase_BearFillColor) property is used to specify a fill color for the segments that indicates a decrease in stock price in the measured time interval.
@@ -2401,7 +2402,7 @@ chart.SecondaryAxis =  new NumericalAxis() { PolarAngle = ChartPolarAngle.Rotate
 
 ![Polar start angle support for both axes in Xamarin.Forms Chart](charttypes_images/polarangle_img3.png)
 
-N>You can also explore our [Xamarin Polar Chart example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/PolarChart) to knows how to render and configure the polar line type charts.
+N>You can also explore our [Xamarin Polar Chart Example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart/Chart/Samples/PolarChart) to knows how to render and configure the polar line type charts.
 
 ## Pie Chart
 

@@ -9,7 +9,7 @@ documentation: ug
 
 # Xamarin AutoComplete (SfAutoComplete) Overview
 
-Essential AutoComplete for Xamarin.Forms provides a simpler way to complete the text based on the characters that the user has entered before. It also provides option to choose a suggestion from drop down or append a suggestion to the text directly.
+Essential [AutoComplete for Xamarin.Forms](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) provides a simpler way to complete the text based on the characters that the user has entered before. It also provides option to choose a suggestion from drop down or append a suggestion to the text directly.
 
 ![SfAutocomplete OverView](images/Overview/overview.png)
 
@@ -36,3 +36,5 @@ Essential AutoComplete for Xamarin.Forms provides a simpler way to complete the 
 * Highlighting Text - AutoComplete provides highlighting the matching text in the Suggestion list based on the input given in it.
 
 * Custom filter - AutoComplete provides the user to filter the item in the Suggestion list based on their filtering condition.
+
+N> You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.

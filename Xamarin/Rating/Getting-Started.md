@@ -245,4 +245,4 @@ public MainPage()
 
 ![SfRating Getting Started ](images/gettingstarted.png)
 
-The complete Getting Started sample is available in this [documentation](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfRating_GettingStarted419194381.zip).
+The complete Getting Started sample is available in this [documentation](https://github.com/SyncfusionExamples/xamarin-forms-rating).

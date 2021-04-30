@@ -1,12 +1,12 @@
 ---
 layout: post
-title: NoResultsFoundText in Syncfusion SfAutoComplete control for Forms
-description: This section will describe about how to display the no result found text in Xamarin.Forms SfAutoComplete.
+title: No Result Found in Xamarin AutoComplete control | Syncfusion
+description: Learn about No Result Found support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
-# No Results Found
+# No Result Found in Xamarin AutoComplete (SfAutoComplete)
 
 ## No Results found in Xamarin SfAutoComplete
 
@@ -188,3 +188,5 @@ namespace AutocompleteSample
 N> https://xamarinhelp.com/custom-fonts-xamarin-forms/ provides how to add the ttf file in each platform
 
 ![NoResultsFoundText_Customization](images/Maximum-display-item-with-Expander/NoResultsFoundText_Customization.jpg)
+
+N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.

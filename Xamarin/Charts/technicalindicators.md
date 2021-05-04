@@ -777,3 +777,5 @@ SfChart chart = new SfChart()
 {% endtabs %}
 
 ![MACD indicator type in Xamarin.Forms Chart](technicalindicators_images/macd.png)
+
+N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Charts example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.  

@@ -694,6 +694,8 @@ The following chart is created as a result of the above codes.
 
 You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/xamarin.forms-sfchart)
 
+N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Charts example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.  
+
 ## See also
 
 [How to resolve the rendering issue with chart in iOS and macOS](https://www.syncfusion.com/kb/7144/how-to-resolve-chart-not-rendering-issue-in-ios-and-macos)

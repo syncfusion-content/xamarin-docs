@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Technical Indicators in Syncfusion.Xamarin.Forms Chart
-description: How to enable and customize the technical indicator behavior in Essential Xamarin.Forms Chart
+title: Technical Indicators | Syncfusion | Xamarin.Forms Chart
+description: This section describes about how to enable and customize the technical indicator in Xamarin.Forms Charts
 platform: xamarin
 control: Chart
 documentation: ug

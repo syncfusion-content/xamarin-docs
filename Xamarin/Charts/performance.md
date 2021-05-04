@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance Line Syncfusion.Xamarin.Forms Chart
-description: Performance in Essential Xamarin.Forms Chart
+title: Performance | Syncfusion | Xamarin.Forms Chart
+description: This section describes about the how to improve the performance of chart series in Xamarin.Forms Charts (SfChart)
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Performance
+# Performance in Xamarin Charts (SfChart)
 
 Following are the key points that can be used to boost the performance of the chart when there is a need to plot high volume data.
 

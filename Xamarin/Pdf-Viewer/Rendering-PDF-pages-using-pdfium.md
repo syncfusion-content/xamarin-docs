@@ -9,7 +9,7 @@ documentation: UG
 
 # Rendering PDF pages using pdfium in PDF Viewer Xamarin.Forms Android
 
-The PdfViewer allows using Pdfium to render the pages of a PDF document, which is a third-party open-source PDF rendering engine. By default, the PdfViewer uses native Android PDF rendering. However, using the Pdfium rendering engine will overcome the defects in the native Android PDF rendering.
+The [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows using Pdfium to render the pages of a PDF document, which is a third-party open-source PDF rendering engine. By default, the PdfViewer uses native Android PDF rendering. However, using the Pdfium rendering engine will overcome the defects in the native Android PDF rendering.
 
 ## Creating Pdfium binding library
 
@@ -280,3 +280,5 @@ pdfViewer.CustomPdfRenderer = DependencyService.Get<ICustomPdfRendererService>()
 {% endtabs %}
 
 N>At present, this feature is available only on the Android Platform.
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

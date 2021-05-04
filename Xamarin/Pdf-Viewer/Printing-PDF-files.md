@@ -9,7 +9,7 @@ documentation: UG
 
 # Printing PDF files
 
-PDF Viewer allows printing the loaded PDF documents using the Print button in the built-in toolbar. 
+[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows printing the loaded PDF documents using the Print button in the built-in toolbar. 
 
 ![Print PDF file using SfPdfViewer](pdfviewer_images/print.png)
 
@@ -42,3 +42,5 @@ private void Button_Clicked(object sender, EventArgs e)
 {% endtabs %}
 
 N>The default file name of the printed document will be “SavedDocument.pdf”.
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

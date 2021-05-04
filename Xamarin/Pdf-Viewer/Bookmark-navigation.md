@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with Bookmark Navigation
 
-PDF viewer allows users to view the bookmarks present in the loaded PDF document and navigate to the destination saved in the bookmarks. 
+[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows users to view the bookmarks present in the loaded PDF document and navigate to the destination saved in the bookmarks. 
 
 ## Enabling and disabling bookmark feature
 
@@ -136,3 +136,5 @@ private void PdfViewerControl_BookmarkNavigationOccurred(object sender, Syncfusi
 {% endtabs %}
 
 ![SfPdfViewer](pdfviewer_images/bookmark.png)
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with ScrollHead
 
-The scroll head in the PDF Viewer allows users to easily scroll through and navigate to destination page in the PDF document. ScrollHead always appears on the right side of PDF Viewer.
+The scroll head in the [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows users to easily scroll through and navigate to destination page in the PDF document. ScrollHead always appears on the right side of PDF Viewer.
 
 ## Enabling and disabling ScrollHead
 
@@ -49,3 +49,5 @@ pdfViewerControl.EnableScrollHead = false;
 ## Navigate to a desired page using ScrollHead
 
 PDF Viewer allows users to navigate to a desired destination page using ScrollHead. On tapping the ScrollHead of PDF Viewer, a page navigation pop-up will appear and users can navigate to the destination page by entering a valid page number.
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

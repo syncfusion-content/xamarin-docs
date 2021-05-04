@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with Document Link Annotation (Table of content)
 
-The PDF viewer navigates to a specific destination within the PDF document.
+The [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) navigates to a specific destination within the PDF document.
 
 
 ## How to disable document link navigation in PDF document using PDF viewer control?
@@ -25,3 +25,5 @@ Set the “EnableDocumentLinkAnnotation” property to false to disable the docu
 {% endtabs %}
 
 N>By default, the EnableDocumentLinkAnnotation property is set to true.
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

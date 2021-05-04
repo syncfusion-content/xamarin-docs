@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with free text annotations
 
-PDF viewer allows you to include free text annotations in a PDF document and provides options to modify or remove the existing ones.
+[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to include free text annotations in a PDF document and provides options to modify or remove the existing ones.
 
 ## Adding free text annotations
 
@@ -385,3 +385,5 @@ private void PdfViewerControl_ FreeTextAnnotationAdded (object sender, FreeTextA
 {% endtabs %}
 
 N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [FreeTextAnnotationAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_FreeTextAnnotationAdded) event. But this can be done in all other events as well. 
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

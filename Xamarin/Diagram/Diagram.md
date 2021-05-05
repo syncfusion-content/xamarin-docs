@@ -8,7 +8,7 @@ keywords:
 ---
 
 # Diagram
-Diagram control allows to create different types of diagrams such as flow charts, use case diagrams, workflow process diagrams, and more.
+[Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) allows to create different types of diagrams such as flow charts, use case diagrams, workflow process diagrams, and more.
 
 ## Page settings
 Page settings enable to customize the appearance, width, and height of the Diagram page. The size and appearance of the Diagram pages can be customized with the PageSettings property.
@@ -138,4 +138,6 @@ Supports customizing the zoom levels. You can set minimum zoom level value to 0.
 {% endtabs %}
 
 N> Diagram supports zooming with custom option in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
+
+N> You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.
 

@@ -24,7 +24,7 @@ In the above code snippet, `pdfStream` is the Stream instance read from the encr
 
 ## Loading password-protected PDF asynchronously
 
-PDF Viewer allows you to load the PDF document from the specified stream with password asynchronously using the `LoadDocumentAsync` method. You can also cancel the asynchronous PDF loading when it is in progress.
+[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to load the PDF document from the specified stream with password asynchronously using the `LoadDocumentAsync` method. You can also cancel the asynchronous PDF loading when it is in progress.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,3 +86,4 @@ pdfViewer.PasswordViewCancelButtonClicked += PdfViewer_PasswordViewCancelButtonC
 
 {% endhighlight %}      
 
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

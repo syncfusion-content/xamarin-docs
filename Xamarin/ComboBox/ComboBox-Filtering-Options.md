@@ -426,7 +426,7 @@ Content = layout;
 
 ### Custom
 
-Filters' items in the suggestion list are based on a custom search by user using Custom.
+Filters items in the suggestion list are based on a custom search by user using Custom.
 
 ![Custom filter image](images/ComboBox-Filtering-Options/custom_filter.png)
 

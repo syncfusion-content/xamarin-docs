@@ -6,7 +6,7 @@ control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# User handles
+# User handles in Xamarin Diagram (SfDiagram)
 
 User handles are customizable handles which can be used to perform custom actions and also default clipboard actions. You can able to customize the user handles using:
 * SfGraphicPath

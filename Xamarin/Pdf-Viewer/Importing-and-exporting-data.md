@@ -9,7 +9,7 @@ documentation: ug
 
 # Importing and exporting data
 
-PDF Viewer provides options to import and export data like form fields and annotations in the PDF document.
+[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) provides options to import and export data like form fields and annotations in the PDF document.
 
 ## Importing and exporting form data
 
@@ -122,3 +122,5 @@ pdfViewerControl.ImportAnnotations(fdfStreamToImport, AnnotationDataFormat.Fdf);
 
 {% endhighlight %}
 {% endtabs %}
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

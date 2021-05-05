@@ -9,7 +9,7 @@ documentation: ug
 
 # Select and copy text
 
-The PDF viewer supports text selection and copy feature, which allows user to select the text in the PDF document and copy it to the clipboard. This section illustrates about how to use this feature.
+The [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) supports text selection and copy feature, which allows user to select the text in the PDF document and copy it to the clipboard. This section illustrates about how to use this feature.
 
 <table>
 
@@ -197,3 +197,5 @@ private void PdfViewerControl_TextSelectionMenuItemClicked(object sender, TextSe
 
 {% endhighlight %}
 {% endtabs %}
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

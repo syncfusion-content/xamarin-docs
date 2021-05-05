@@ -56,6 +56,8 @@ CultureInfo.CurrentUICulture = new CultureInfo("fr-FR");
 
 ![Localization support in Xamarin.Forms Chart](localization_images/ChartLocalization.png)
 
+N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Charts example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.  
+
 ## See also
 
 [How to localize the labels in Xamarin.Forms Chart](https://www.syncfusion.com/kb/9415/how-to-localize-the-labels-in-xamarin-forms-chart)

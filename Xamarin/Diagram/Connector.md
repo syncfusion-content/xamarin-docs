@@ -1,6 +1,6 @@
 ---
 title: Adding connectors in diagram control for Xamarin.Forms | Syncfusion
-description: Learn about Connector support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
+description: Learn here all about Connector support in Syncfusion Xamarin Diagram (SfDiagram) control and more details."
 platform: Xamarin
 control: Diagram
 documentation: UG

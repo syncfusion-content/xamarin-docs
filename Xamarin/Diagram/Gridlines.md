@@ -1,6 +1,6 @@
 ---
 title: Adding Gridlines in Diagram control for Xamarin.Forms | Syncfusion
-description: Learn about Gridlines support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
+description: Learn here all about Gridlines support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
 platform: Xamarin
 control: Diagram
 documentation: ug

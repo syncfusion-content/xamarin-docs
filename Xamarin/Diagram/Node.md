@@ -1,6 +1,6 @@
 ---
 title: Node in Xamarin.Forms Diagram control | Syncfusion
-description: Learn about Node support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
+description: Learn here all about Node support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
 platform: xamarin
 control: SfDiagram
 documentation: ug

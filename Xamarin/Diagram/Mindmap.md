@@ -1,6 +1,6 @@
 ---
 title: Mindmap for Essential Xamarin.Forms Diagram | Syncfusion
-description: Learn about Mindmap support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
+description: Learn here all about Mindmap support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
 platform: xamarin
 control: SfDiagram
 documentation: UG

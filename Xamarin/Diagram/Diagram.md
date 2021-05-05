@@ -1,6 +1,6 @@
 ---
 title: Diagram control for Xamarin.Forms | Syncfusion
-description: Learn about Connector support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
+description: Learn here all about Diagram support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
 platform: xamarin
 control: SfDiagram
 documentation: ug

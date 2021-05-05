@@ -507,6 +507,7 @@ The following screenshot illustrates the result of the above code sample.
 
 You can download the complete [Getting started](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) sample.
 
+N> You can refer to our [Xamarin Maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) feature tour page for its groundbreaking feature representations.
 
 ## See also
 

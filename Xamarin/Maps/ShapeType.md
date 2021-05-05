@@ -744,6 +744,9 @@ maps.Layers.Add(layer);
 
 ![Multiple selection in Xamarin.Forms Maps](Images/size.jpg)
 
+N> You can refer to our [Xamarin Maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) feature tour page for its groundbreaking feature representations.
+You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.
+
 ## See also
 
 [How to add Polygon shape in SfMaps](https://www.syncfusion.com/kb/11783/how-to-add-ploygon-shape-in-xamarin-forms-maps-sfmaps)

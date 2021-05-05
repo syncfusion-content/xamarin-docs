@@ -9,7 +9,7 @@ documentation: ug
 
 # Sublayer
 
-Sublayer in the maps control allows to load multiple shape files in a single container and enables maps to display more information.
+Sublayer in the [Xamarin maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) control allows to load multiple shape files in a single container and enables maps to display more information.
 
 ## Adding sublayers in ShapeFileLayer
 
@@ -225,3 +225,5 @@ Sublayer is a type of shapefile layer. You can add all the elements such as mark
 * [`Adding legend`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#adding-legends)
 * [`Adding bubbles`](https://help.syncfusion.com/xamarin/sfmaps/bubblemarker#adding-bubbles)
 * [`Adding data labels`](https://help.syncfusion.com/xamarin/sfmaps/datalabels#adding-data-labels)
+
+N> You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.

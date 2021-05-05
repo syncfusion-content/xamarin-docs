@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  ScrollHead in PDF Viewer Xamarin.Forms | Syncfusion
-description: 	
-Learn about Working with ScrollHead support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more details.
+title: ScrollHead in PDF Viewer Xamarin.Forms | Syncfusion
+description: Learn about Working with ScrollHead support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more details.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
@@ -33,7 +32,7 @@ By setting the `EnableScrollHead` property of the PdfViewerControl instance to f
 {% tabs %}
 {% highlight xaml %}
 
-<pdfviewer:SfPdfViewer x:Name="pdfViewerControl" EnableScrollHead="False"/>               
+<pdfviewer:SfPdfViewer x:Name="pdfViewerControl" EnableScrollHead="False"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -42,7 +41,7 @@ By setting the `EnableScrollHead` property of the PdfViewerControl instance to f
 {% highlight c# %}
 
 //Disables the scroll head
-pdfViewerControl.EnableScrollHead = false;             
+pdfViewerControl.EnableScrollHead = false;
 
 {% endhighlight %}
 {% endtabs %}

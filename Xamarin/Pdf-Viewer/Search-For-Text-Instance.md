@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Search for a Text Instance in Xamarin Pdf Viewer | Syncfusion
+title: Search for a Text Instance in Xamarin Pdf Viewer | Syncfusion
 description: Search text support allows the user to locate and highlight text instances in the PDF document using PDF Viewer Xamarin.Forms
 platform: Xamarin
 control: SfPdfViewer

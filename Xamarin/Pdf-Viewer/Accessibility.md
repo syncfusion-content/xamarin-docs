@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Accessibility support for SfPdfViewer in Xamarin.Forms | Syncfusion
+title: Accessibility support for SfPdfViewer in Xamarin.Forms | Syncfusion
 description: Know about Setting AutomationId to find and interact with inner elements in Xamarin.Forms Pdf Viewer(SfPdfViewer).
 platform: Xamarin
 control: SfPdfViewer

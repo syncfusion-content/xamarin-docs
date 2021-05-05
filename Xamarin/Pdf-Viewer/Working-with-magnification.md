@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with magnification in PDF Viewer Xamarin.Forms | Syncfusion
+title: Working with magnification in PDF Viewer Xamarin.Forms | Syncfusion
 description: The PDF Viewer Xamarin.Forms allows the users to magnify the PDF documents in multiple ways like setting maximum, minimum and custom zoom percentage.
 platform: Xamarin
 control: SfPdfViewer

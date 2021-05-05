@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with Built-In Toolbar in Xamarin Pdf Viewer | Syncfusion
+title: Working with Built-In Toolbar in Xamarin Pdf Viewer | Syncfusion
 description: The PDF Viewer Xamarin.Forms allows the users to perform almost all operations in PDF Viewer using the built-in toolbar.
 platform: Xamarin
 control: SfPdfViewer

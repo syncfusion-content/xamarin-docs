@@ -7,7 +7,7 @@ control: SfMaps
 documentation: ug
 ---
 
-# Populate Data
+# Populate Data in Xamarin Maps(SfMaps)
 
 This section explains how to populate shape data for providing data input to the maps control and usage of the `ItemsSource` property.
 

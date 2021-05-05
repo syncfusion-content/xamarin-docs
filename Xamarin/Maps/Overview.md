@@ -7,7 +7,7 @@ control: SfMaps
 documentation: ug
 ---
 
-# Overview
+# Xamarin Maps Overview
 
 [Xamarin maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) control for Xamarin.Forms provides a graphical representation of geographical data. It is used to represent the statistical data of a particular geographical area on earth by panning and zooming. The maps control supports enhanced data visualization with bubbles and labels using data bound to map.
 

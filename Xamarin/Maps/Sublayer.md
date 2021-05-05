@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Sublayer in Syncfusion Maps control for Xamarin.Forms
-description: This section describes about sublayer.
+description: Learn here all about Sublayer feature in Syncfusion Xamarin.Forms Maps(SfMaps) control with custom support and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Sublayer
+# Sublayer in Xamarin Maps(SfMaps)
 
 Sublayer in the [Xamarin maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) control allows to load multiple shape files in a single container and enables maps to display more information.
 

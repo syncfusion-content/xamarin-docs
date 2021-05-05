@@ -7,7 +7,7 @@ control: SfMaps
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in Xamarin Maps(SfMaps)
 
 Tooltip provides additional information about the shapes in the maps. To enable tooltip, set the [`ShowTooltip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_ShowTooltip) property to true, and set the [`ValuePath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.TooltipSetting.html#Syncfusion_SfMaps_XForms_TooltipSetting_ValuePath) property of tooltip.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Working with magnification in PDF Viewer Xamarin.Forms | Syncfusion
+title: Working with magnification in PDF Viewer Xamarin.Forms | Syncfusion
 description: The PDF Viewer Xamarin.Forms allows the users to magnify the PDF documents in multiple ways like setting maximum, minimum and custom zoom percentage.
 platform: Xamarin
 control: SfPdfViewer
@@ -51,7 +51,7 @@ On binding entry control to the ZoomPercentage property of the PDF Viewer instan
 
 ## Set maximum zoom percentage
 
-The PDF Viewer control allows you to set the maximum zoom percentage value for the PDF document being displayed. The following code example will set the maximum zoom percentage of PDF Viewer instance to 200.
+The [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) control allows you to set the maximum zoom percentage value for the PDF document being displayed. The following code example will set the maximum zoom percentage of PDF Viewer instance to 200.
 
 {% tabs %}
 {% highlight xaml %}
@@ -101,3 +101,5 @@ pdfViewer.EnableDoubleTapZooming = false;
 {% endtabs %}
 
 N>At present, this feature is available only in iOS
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

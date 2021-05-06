@@ -190,3 +190,7 @@ public class MessageConverter : IChatMessageConverter
 {% endtabs %}
 
 You can download the entire working sample from [here](https://github.com/SyncfusionExamples/How-to-convert-data-objects-to-messages-in-MVVM-in-Xamarin.Forms-chat-SfChat-).
+
+## See also
+
+[How to connect Azure Bot Service to Xamarin Forms Chat Control](https://www.syncfusion.com/blogs/post/how-to-connect-azure-bot-service-to-xamarin-forms-chat-control.aspx)

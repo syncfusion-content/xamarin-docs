@@ -6,7 +6,7 @@ control: Diagram
 documentation: ug
 keywords: 
 ---
-# Stencil
+# Stencil in Xamarin Diagram (SfDiagram)
 Stencil has a collection of Symbols. Stencil is used to clone the desired symbol by dragging it from the Stencil and dropping it into the SfDiagram. Each symbol can be grouped together by using the SymbolGroup .
 {% tabs %}
 {% highlight xml %}
@@ -213,3 +213,4 @@ diagram.Stencil=stencil;
 {% endtabs %}
 ![Category heading text in Xamarin.Forms diagram](Stencil_images/Stencil_img3.jpeg)
 
+N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

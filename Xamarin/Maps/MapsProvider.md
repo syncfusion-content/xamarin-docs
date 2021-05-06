@@ -9,7 +9,7 @@ documentation: ug
 
 # Map providers support in SfMaps
 
-The maps control supports map providers such as [`OpenStreetMap`]([`OSM`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_OSM)) and [`Bing Maps`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_Bing) that can be added to an imagery layer in maps.
+[Xamarin maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) control supports map providers such as [`OpenStreetMap`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_OSM) and [`Bing Maps`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.LayerType.html#Syncfusion_SfMaps_XForms_LayerType_Bing) that can be added to an imagery layer in maps.
 
 ## OpenStreetMap
 
@@ -674,6 +674,8 @@ private void ImageryLayer_GeoCoordinateChanged(object sender, GeoCoordinateChang
 {% endhighlight %}
 
 {% endtabs %}
+
+N> You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.
 
 ## See Also
 

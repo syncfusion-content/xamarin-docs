@@ -9,7 +9,7 @@ documentation: ug
 
 # Layers in Maps (SfMaps)
 
-The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.SfMaps.html#Syncfusion_SfMaps_XForms_SfMaps_LayersProperty); a map can accommodate one or more layers.
+[Xamarin maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) control is maintained through [`Layers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.SfMaps.html#Syncfusion_SfMaps_XForms_SfMaps_LayersProperty); a map can accommodate one or more layers.
 
 The maps control consists the following two layers:
 
@@ -356,6 +356,8 @@ In the ShapeSelected event, the *BaseMapIndex* property has been used to change 
 {% endtabs %}
 
 ![Drilldown support in Xamarin.Forms Maps](Images/Drilldown1.jpg)  ![Xamarin Maps DrilldownAsia Image](Images/Drilldown_Asia.jpg) 
+
+N> You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.
 
 ## See Also
 

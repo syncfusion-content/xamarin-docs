@@ -453,4 +453,4 @@ Run the application to render the following output.
 
 ## See also
 
-[How to connect Azure Bot Service to Xamarin Forms Chat Control](https://www.syncfusion.com/blogs/post/how-to-connect-azure-bot-service-to-xamarin-forms-chat-control.aspx)
+[How to connect Azure Bot Service to Xamarin.Forms Chat Control](https://www.syncfusion.com/blogs/post/how-to-connect-azure-bot-service-to-xamarin-forms-chat-control.aspx)

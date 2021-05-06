@@ -193,4 +193,4 @@ You can download the entire working sample from [here](https://github.com/Syncfu
 
 ## See also
 
-[How to connect Azure Bot Service to Xamarin Forms Chat Control](https://www.syncfusion.com/blogs/post/how-to-connect-azure-bot-service-to-xamarin-forms-chat-control.aspx)
+[How to connect Azure Bot Service to Xamarin.Forms Chat Control](https://www.syncfusion.com/blogs/post/how-to-connect-azure-bot-service-to-xamarin-forms-chat-control.aspx)

@@ -450,3 +450,7 @@ namespace GettingStarted
 Run the application to render the following output.
 
 ![Xamarin Forms Chat time break mode](SfChat_images/xamarin-forms-chat-timebreak-mode.png)
+
+## See also
+
+[How to connect Azure Bot Service to Xamarin.Forms Chat Control](https://www.syncfusion.com/blogs/post/how-to-connect-azure-bot-service-to-xamarin-forms-chat-control.aspx)

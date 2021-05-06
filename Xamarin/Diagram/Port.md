@@ -1,13 +1,13 @@
 ---
 title: Port for Essential Xamarin.Forms Diagram | Syncfusion
-description: Briefs about port ,connection with node and its cutomization in SfDiagram for Xamarin.Forms
+description: Learn here all about Port support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
 platform: Xamarin
 control: SfDiagram
 documentation: UG
 keywords: 
 ---
 
-# Port
+# Port in Xamarin Diagram (SfDiagram)
 SfDiagram provides support to define custom ports for making connections. When a Connector is connected between two Nodes, its end points are automatically docked to Node’s nearest boundary, Port act as the connection points of node and allows to create connections with only specific points.
 
 ## Create ports for a node
@@ -117,3 +117,5 @@ style.Brush = new SolidBrush(Color.Black);
 port.Style = style;
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

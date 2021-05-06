@@ -345,3 +345,6 @@ Using this pan event, you can add a sublayer to draw the polyline.
 {% endtabs %}
 
 ![Route map](Images/PanningEvent.png)
+
+N> You can refer to our [Xamarin Maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) feature tour page for its groundbreaking feature representations.
+You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.

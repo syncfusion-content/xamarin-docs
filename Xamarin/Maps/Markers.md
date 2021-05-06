@@ -851,6 +851,9 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 
 ![Marker Selected Image](Images/MarkerSelected.png)
 
+N> You can refer to our [Xamarin Maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) feature tour page for its groundbreaking feature representations.
+You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.
+
 ## See also
 
 [How to add different style marker pins to SfMaps](https://www.syncfusion.com/kb/11372/how-to-add-different-style-marker-pins-to-xamarin-forms-maps-sfmaps)

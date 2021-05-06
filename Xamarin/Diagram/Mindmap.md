@@ -1,12 +1,12 @@
 ---
 title: Mindmap for Essential Xamarin.Forms Diagram | Syncfusion
-description: Describes how to add mindmap,free form layout and mindmap layout style in diagram control for Xamarin.Forms
+description: Learn here all about Mindmap support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
 platform: xamarin
 control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# Mind map layout in Xamarin Diagram
+# Mind map in Xamarin Diagram (SfDiagram)
 
 A mind map is a diagram used to visually organize the information. It is hierarchical and shows relationship of the whole idea. It consists of a central ideas, related ideas, and lines connecting them together.  It is used for brainstorming, planning, and information gathering etc. The following code example illustrates how to create and mind map layout:
 {% tabs %}
@@ -237,3 +237,4 @@ The mind map free form layout provides an option to rearrange nodes in a layout.
 
 N> Diagram supports mind map layout in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
 
+N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

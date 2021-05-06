@@ -1,13 +1,13 @@
 ---
 title: Adding Layout in Diagram control for Xamarin.Forms | Syncfusion
-description: Describes how to add layout,data source setting ,drag & drop support in layout and expand & collapse in diagram control for Xamarin.Forms
+description: Learn here all about Layout support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
 platform: xamarin
 control: Diagram
 documentation: ug
 keywords: 
 ---
 
-# Layouts
+# Layout in Xamarin Diagram (SfDiagram)
 SfDiagram provides support to auto-arrange the nodes in the Diagram area that is referred as **Layout.**
 We have explained the Automatic Layout with Employee class and DataSourceSettings.The followings are initial steps for all the Layout.
 
@@ -310,3 +310,4 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
 
 N> Diagram supports layout sibling with spacing in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
 
+N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

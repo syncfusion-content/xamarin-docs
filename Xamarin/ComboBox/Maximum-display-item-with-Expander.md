@@ -10,7 +10,7 @@ documentation: ug
 
 ## Maximum display item with expander in Xamarin SfComboBox
 
-Restrict the number of suggestions displayed and have the remaining items loaded by selecting the LoadMore. you can restrict the maximum suggestion to be displayed with the `MaximumSuggestion` property and also you can set the desire text for displaying the LoadMore text with the LoadMoreText` property.
+Restrict the number of suggestions displayed and have the remaining items loaded by selecting the LoadMore. you can restrict the maximum suggestion to be displayed with the [`MaximumSuggestion`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MaximumSuggestionProperty) property and also you can set the desire text for displaying the LoadMore text with the [`LoadMoreText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_LoadMoreTextProperty) property.
 
 {% tabs %}
 
@@ -124,7 +124,7 @@ comboBox.LoadMore(5);
 
 ## Load More Button Tapped Event
 
-The `LoadMoreButtonTapped` can be triggered only when you tap on the load more button.
+The [`LoadMoreButtonTapped`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_LoadMoreButtonTapped) can be triggered only when you tap on the load more button.
 
 {% tabs %}
 

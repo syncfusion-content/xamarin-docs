@@ -377,7 +377,7 @@ namespace ComboBox
 
 ## SelectedItem
 
-The `SelectedItem` property is used to select a particular item from the suggestion list. You can either get or set the SelectedItem.
+The [`SelectedItem`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SelectedItemProperty) property is used to select a particular item from the suggestion list. You can either get or set the SelectedItem.
 
 ### How to set the SelectedItem
 

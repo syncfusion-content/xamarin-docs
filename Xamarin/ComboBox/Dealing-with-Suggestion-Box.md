@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Suggestion DropDown in Syncfusion SfComboBox control for Xamarin.Forms
-description: This section describes about the placement of the drop-down suggestion and how to get the filtered SfComboBox items.
+description: This section describes about the placement of the drop-down suggestion and how to get the filtered SfComboBox items
 platform: xamarin
 control: SfComboBox
 documentation: ug
@@ -73,7 +73,7 @@ Content = layout;
 
 ## Maximum suggestion box height
 
-The maximum height of the suggestion box in the SfComboBox control can be varied using the `MaximumDropDownHeight` property.
+The maximum height of the suggestion box in the SfComboBox control can be varied using the [`MaximumDropDownHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MaximumDropDownHeightProperty) property.
 
 {% tabs %}
 
@@ -136,7 +136,7 @@ Content = layout;
 
 ## Opening suggestion box on focus
 
-Suggestion box can be shown whenever the control receives focus using the `ShowSuggestionsOnFocus` property. Suggestion list is the complete list of data source.
+Suggestion box can be shown whenever the control receives focus using the [`ShowSuggestionsOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ShowSuggestionsOnFocusProperty) property. Suggestion list is the complete list of data sources.
 
 {% tabs %}
 
@@ -194,7 +194,7 @@ Content = layout;
 
 ## Delay opening suggestion box
 
-The `PopupDelay` property is used to delay the suggestion box opening process. It gets milliseconds as input in integer data type.
+The [`PopupDelay`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_PopupDelayProperty) property is used to delay the suggestion box opening process. It gets milliseconds as input in integer data type.
 In this example, a time duration of 3 seconds is set to popup delay.
 
 {% tabs %}
@@ -246,7 +246,7 @@ Content = layout;
 
 ## Delay before searching algorithm starts
 
-The `SearchDelay` property is used to delay the searching algorithm process. It gets milliseconds as input in integer data type.
+The [`SearchDelay`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SearchDelayProperty) property is used to delay the searching algorithm process. It gets milliseconds as input in integer data type.
 
 In this example, a time duration of 3 seconds is set to search delay.
 
@@ -299,7 +299,7 @@ In this example, a time duration of 3 seconds is set to search delay.
 
 ## Avoid opening suggestion box
 
-To avoid the drop down open, you can set the `SuggestionBoxPlacement` API to None.
+To avoid the drop-down open, you can set the [`SuggestionBoxPlacement`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_SuggestionBoxPlacementProperty) API to None.
 
 {% tabs %}
 

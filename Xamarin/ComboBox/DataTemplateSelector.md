@@ -11,7 +11,6 @@ documentation: ug
 
 SfComboBox supports DataTemplateSelector, which is used to choose a DataTemplate based on data object.
  
-
 {% tabs %}
 
 {% highlight xaml %}

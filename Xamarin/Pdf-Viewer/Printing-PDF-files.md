@@ -123,7 +123,7 @@ e.PrintTask = printTask;
 
 The PDF Viewer allows the users to hide the PDF pages and enable only the print options. This can be done by disabling the print preview.
 
-![Diable the Print Previewer](pdfviewer_images/DisablePrintPreview.png)
+![Disable the Print Previewer](pdfviewer_images/DisablePrintPreview.png)
 
 Refer to the following code example.
 

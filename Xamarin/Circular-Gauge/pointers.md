@@ -915,6 +915,81 @@ N> By default, the pointer drag was disabled.
 
 ![Circular Gauge Pointer Drag](pointers_images/marker-pointer/pointer-interaction.gif)
 
+## Step frequency
+
+`StepFrequency` property will be considered as an interval and based on this value needle and marker pointer will gets updated to the next value while dragging.
+For example when the value of step frequency is of 20 then while dragging, pointer will not move continuosly instaed it will update in terms of 20.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+          <gauge:SfCircularGauge>
+
+                <gauge:SfCircularGauge.Scales>
+
+                    <gauge:Scale   RimColor="DeepSkyBlue" RimThickness="20" RadiusFactor="1" ShowTicks="False"
+                               StartValue="0" EndValue="100" Interval="10" LabelOffset="0.75" LabelColor="#424242"
+                              LabelFontSize ="15">
+
+                        <gauge:Scale.Pointers>
+                            <gauge:MarkerPointer MarkerShape="InvertedTriangle" MarkerHeight="18" MarkerWidth="18"
+                                                 Value="30" EnableAnimation="False" EnableDragging="True"
+                                                 StepFrequency="20"/>
+                            <gauge:NeedlePointer StepFrequency="5" EnableAnimation="False" EnableDragging="True"
+                                                 Value="40">
+                                
+                            </gauge:NeedlePointer>
+                        </gauge:Scale.Pointers>
+
+                    </gauge:Scale>
+
+                </gauge:SfCircularGauge.Scales>
+
+            </gauge:SfCircularGauge>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfCircularGauge circularGauge = new SfCircularGauge();
+            Syncfusion.SfGauge.XForms.Scale scale = new Syncfusion.SfGauge.XForms.Scale();
+            scale.RimColor = Color.DeepSkyBlue;
+            scale.RimThickness = 20;
+            scale.RadiusFactor = 1;
+            scale.ShowTicks = false;
+            scale.StartValue = 0;
+            scale.EndValue = 100;
+            scale.Interval = 10;
+            scale.LabelOffset = 0.75;
+            scale.LabelColor = Color.FromHex("#424242");
+            scale.LabelFontSize = 15;
+
+            MarkerPointer pointer1 = new MarkerPointer();
+            pointer1.MarkerShape = MarkerShape.InvertedTriangle;
+            pointer1.Color = Color.DarkBlue;
+            pointer1.MarkerHeight = 18;
+            pointer1.MarkerWidth = 18;
+            pointer1.Value = 30;
+            pointer1.EnableAnimation = false;
+            pointer1.EnableDragging = true;
+            pointer1.StepFrequency = 20;
+            scale.Pointers.Add(pointer1);
+
+            NeedlePointer pointer2 = new NeedlePointer();
+            pointer2.Value = 40;
+            pointer2.EnableDragging = true;
+            pointer2.EnableAnimation = false;
+            pointer2.StepFrequency = 5;
+            scale.Pointers.Add(pointer2);
+
+            circularGauge.Scales.Add(scale);
+            this.Content = circularGauge;
+
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Event
 
 ### Pointer position changed event

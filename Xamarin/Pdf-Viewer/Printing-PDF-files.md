@@ -45,7 +45,7 @@ N>The default file name of the printed document will be “SavedDocument.pdf”.
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.
 
-## How to get and set the quality factor for print
+## How to get and set the quality factor for print in the UWP platform
 
 The PDF Viewer allows the user to set and retrieve the quality factor for print by using the `QualityFactor` API. The default value of this API is set to 1, and the values are restricted between 1 and 5. The values falling below the range are taken as 1, which represents the lowest page quality, and those above the range are taken as 5, which represents the highest page quality.
 
@@ -75,7 +75,7 @@ pdfViewer.PrintTaskRequested += PdfViewer_PrintTaskRequested;
 {% endhighlight %}
 {% endtabs %}
 
-The print previewer can be customized on desktop using the native UWP APIs such as `PrintTask`, `PrintDocumentSource`, and `Request`. So, the `PrintTaskRequested` event in the Forms.UWP project must be handled using the dependency service.
+The print previewer can be customized on desktop using the native UWP APIs such as `PrintTask`, `PrintDocumentSource`, and `Request`. So, the `PrintTaskRequested` event must be handled in the Xamarin.Forms.UWP platform using dependency service.
 
 {% tabs %}
 {% highlight c# %}
@@ -88,11 +88,7 @@ private void PdfViewer_PrintTaskRequested(object sender, SfPdfViewerPrintTaskReq
 {% endhighlight %}
 {% endtabs %}
 
-In the `PrintTaskRequested` event handler, you can include the required print options such as the number of copies, collation, duplex, and more by creating a `PrintTask` using the properties `Request` and `PrintDocumentSource`. 
-
-![Customize the Print Previewer](pdfviewer_images/PrintPreviewCustomization.png)
-
-Refer to the following code example.
+In the `PrintTaskRequested` event handler, you can include the required print options such as the number of copies, collation, duplex, and more by creating a `PrintTask` using the properties `Request` and `PrintDocumentSource`. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -121,11 +117,9 @@ e.PrintTask = printTask;
 {% endhighlight %}
 {% endtabs %}
 
-The PDF Viewer allows the users to hide the PDF pages and enable only the print options. This can be done by disabling the print preview.
+![Customize the Print Previewer](pdfviewer_images/PrintPreviewCustomization.png)
 
-![Disable the Print Previewer](pdfviewer_images/DisablePrintPreview.png)
-
-Refer to the following code example.
+The PDF Viewer allows the users to hide the preview of the pages and enable only the print options. This can be done by disabling the print preview. Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
@@ -146,4 +140,6 @@ printTask.IsPreviewEnabled = false;
 
 {% endhighlight %}
 {% endtabs %}
+
+![Disable the Print Previewer](pdfviewer_images/DisablePrintPreview.png)
 

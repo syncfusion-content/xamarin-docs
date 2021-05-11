@@ -918,7 +918,7 @@ N> By default, the pointer drag was disabled.
 ## Step frequency
 
 `StepFrequency` property will be considered as an interval and based on this value needle and marker pointer will gets updated to the next value while dragging.
-For example when the value of step frequency is of 20 then while dragging, pointer will not move continuosly instaed it will update in terms of 20.
+For example when the value of step frequency is of 20 then while dragging, pointer will not move continuously instead it will update in terms of 20.
 
 {% tabs %}
 

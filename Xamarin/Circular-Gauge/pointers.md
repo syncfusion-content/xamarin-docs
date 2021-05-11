@@ -917,8 +917,11 @@ N> By default, the pointer drag was disabled.
 
 ## Step frequency
 
-`StepFrequency` property will be considered as an interval and based on this value needle and marker pointer will gets updated to the next value while dragging.
+The `StepFrequency` property is used to specify the interval between snap points while dragging the [`MarkerPointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.MarkerPointer.html) or [`NeedlePointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.NeedlePointer.html).
+
 For example when the value of step frequency is of 20 then while dragging, pointer will not move continuously instead it will update in terms of 20.
+
+N> Enable pointer dragging support to work with step frequency value.
 
 {% tabs %}
 

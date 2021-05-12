@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MVVM | Calendar for Xamarin.Forms | Syncfusion
-description: Describes how to use Syncfusion calendar (SfCalendar) in different cases of MVVM and describes about the commands.
+title: MVVM in Xamarin Calendar control | Syncfusion
+description: Learn here all about MVVM support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
 platform: xamarin
 control: SfCalendar
 documentation: ug
 ---
 
-# Binding Properties in MVVM Pattern
+# MVVM in Xamarin Calendar (SfCalendar)
 ## Binding SelectedDate
 
 Calendar supports selecting a date programmatically by binding the [SelectedDate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectedDate) property from your view model.

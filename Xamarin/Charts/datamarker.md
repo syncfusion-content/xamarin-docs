@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Markers and data labels in Essential Syncfusion.Xamarin.Forms Chart
-description: Learn how to add markers and data point labels, connector lines, event, formatting label content, configure the data marker label template to the Chart series.
+title: Data Markers in Xamarin Charts control | Syncfusion
+description: Learn here all about Data Markers support in Syncfusion Xamarin Charts (SfChart) control and more.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Data Markers in Xamarin Charts (SfChart) 
+# Data Markers in Xamarin Charts (SfChart)
 
 The data markers are used to provide information about the data points to the user. You can add a shape and label to adorn each data point. This can be enabled using the following code snippet,
 

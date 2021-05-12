@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion.Xamarin.Forms Chart types
-description: This section explains the different types of charts, including Cartesian, Financial, Accumulation, PolarRadar and its properties.
+title: Chart Types in Xamarin Charts control | Syncfusion
+description: Learn here all about Chart Types support in Syncfusion Xamarin Charts (SfChart) control and more.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Chart Types in Xamarin
+# Chart Types in Xamarin Charts (SfChart)
 
 ## Line Chart
 

@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Transformation in Syncfusion Carousel control in Xamarin.Forms
-description : Learn how to set the Rotation Angle and Offset in Carousel for Xamarin.Forms
+title: Animation in Xamarin Carousel View control | Syncfusion
+description: Learn here all about Animation support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
 platform : Xamarin
 control : Carousel
 documentation : ug
 ---
 
-# Animation
+# Animation in Xamarin Carousel View (SfCarousel)
 
 The `Duration` property of the SfCarousel control is used to specify the time taken to move an item to the selected item position. The duration is specified in seconds.  The default value is 300 ms.
 

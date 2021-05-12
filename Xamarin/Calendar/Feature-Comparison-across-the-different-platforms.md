@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Feature comparison | SfCalendar | Xamarin.Forms | Syncfusion
-description: The Feature comparison table helps to find the available features of `SfCalendar` in different platforms.
+title: Feature Comparison in Xamarin Calendar control | Syncfusion
+description: Learn here all about Feature Comparison support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
 platform: Xamarin
 control: Calendar
 documentation: ug
 ---
 
-# Feature Comparison across the different platforms in Xamarin.
+# Feature Comparison in Xamarin Calendar (SfCalendar)
 
 This section covers the features of `SfCalendar` specific to Android,iOS and UWP platforms. The following comparison table help to find available features are in different platforms.
 

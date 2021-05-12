@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Right-to-left | SfCalendar | Xamarin.Forms | Syncfusion
-description: Describes how Calendar works on right-to-left localization.
+title: Right to left(RTL) in Xamarin Calendar control | Syncfusion
+description: Learn here all about Right to left(RTL) support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
 platform: xamarin
 control: SfCalendar
 documentation: UG
 ---
 
-# Right to left(RTL)
+# Right to left(RTL) in Xamarin Calendar (SfCalendar)
 
 SfCalendar supports to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
 

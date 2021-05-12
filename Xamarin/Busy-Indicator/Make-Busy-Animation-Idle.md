@@ -1,12 +1,12 @@
 ---
 layout: post
-title: IsBusy support in Syncfusion SfBusyIndicator control for Xamarin.Forms
-description: This section will explain how to enable and disable Animation in Xamarin.Forms SfBusyIndicator control.
+title: Make Busy Animation Idle in Xamarin Busy Indicator control | Syncfusion
+description: Learn here all about Make Busy Animation Idle support in Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control and more.
 platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# Make Busy Animation Idle
+# Make Busy Animation Idle in Xamarin Busy Indicator (SfBusyIndicator)
 
 ## Make Busy Animation Idle in Xamarin BusyIndicator(SfBusyIndicator)
 

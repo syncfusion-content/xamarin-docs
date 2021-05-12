@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add theming support in syncfusion calendar control
-description: Learn how to add the theme.
+title: Theming in Xamarin Calendar control | Syncfusion
+description: Learn here all about Theming support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
 platform: Xamarin
 control: Calendar
 documentation: ug
 ---
 
-# Theming
+# Theming in Xamarin Calendar (SfCalendar)
 
 Theming is a set of resources which are used to provide the consistency look for calendar.
 You can modify the default appearance of calendar using this support. By default calendar have default theme resources and it’s located in `Syncfusion.Xamarin.Core` assembly. You need to merge them in your application’s resource to apply the theme.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Xamarin Syncfusion calendar month, year, decade and century view. 
-description: Calendar Xamarin.Forms displays month, year, decade and century views which allows users to easily select and navigate between all built-in views.
+title: Display Modes  in Xamarin Calendar control | Syncfusion
+description: Learn here all about Display Modes  support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
 platform: Xamarin
 control: Calendar
 documentation: ug
 ---
 
-# Display Modes in Xamarin Calendar (SfCalendar)
+# Display Modes  in Xamarin Calendar (SfCalendar)
 
 Xamarin.Forms calendar control provides 4 different types of views such month, year, decade and century. It allows users to easily select and navigate between all built-in views. This can be achieved by using [ViewMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_ViewMode) property of SfCalendar.
 

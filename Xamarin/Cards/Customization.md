@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SfCardLayout in Essential Syncfusion.Xamarin.Forms Cards
-description: This section describes about the Customization features of SfCardLayout and SfCardView in Xamarin.Forms.
+title: Customization in Xamarin Cards control | Syncfusion
+description: Learn about Customization support in Syncfusion Xamarin Cards control and more.
 platform: xamarin
 control: Cards
 documentation: ug
 ---
 
-# Customization in CardLayout
+# Customization in Xamarin Cards
 
 ### ShowSwipedCard
 

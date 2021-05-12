@@ -21,7 +21,7 @@ Here, the display attributes or data form item display values get localized base
 
 ### Using attribute
 
-`ResourceType` [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute ) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of `Name`, `ShortName`, `GroupName` and `Prompt` values.
+`ResourceType` [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=net-5.0 ) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of `Name`, `ShortName`, `GroupName` and `Prompt` values.
 
 {% tabs %}
 {% highlight c# %}

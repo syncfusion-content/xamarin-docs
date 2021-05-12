@@ -796,3 +796,5 @@ Content = layout;
 {% endtabs %}
 
 ![Suggest append image](images/ComboBox-Filtering-Options/suggest-append.png)
+
+N> The deletion of a character will not work on some Android devices due to a framework issue.

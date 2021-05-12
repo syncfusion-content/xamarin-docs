@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visual Style in Syncfusion AvatarView Xamarin.Forms.
-description: This section will explain about the different visual styles that exist in Xamarin.Forms SfAvatarView.
+title: Visual Style in Xamarin Avatar View control | Syncfusion
+description: Learn here all about Visual Style support in Syncfusion Xamarin Avatar View (SfAvatarView) control and more.
 platform: Xamarin
 control: AvatarView
 documentation: ug
 ---
 
-# Visual Style in Xamarin Avatar View(SfAvatarView) 
+# Visual Style in Xamarin Avatar View (SfAvatarView)
 
 ## Visual styles in Xamarin Avatar View(SfAvatarView)
 The `SfAvatarView` control supports customization using the following built-in visual styles:

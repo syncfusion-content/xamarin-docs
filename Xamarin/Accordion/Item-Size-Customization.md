@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Item Size Customization in Syncfusion Accordion
-description: Describes the Item Size Customization in SfAccordion using ItemSize property and DynamicSizeMode property.
+title: Item Size Customization in Xamarin Accordion control | Syncfusion
+description: Learn here all about Item Size Customization support in Syncfusion Xamarin Accordion (SfAccordion) control and more.
 platform: xamarin
 control: SfAccordion
 documentation: ug

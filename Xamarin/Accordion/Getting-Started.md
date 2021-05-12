@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | SfAccordion | Xamarin | Syncfusion
-description: This section described about getting started with Xamarin Forms Accordion (SfAccordion) control and more details.
+title: Getting Started with Xamarin Accordion control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Accordion (SfAccordion) control, its elements and more.
 platform: xamarin
 control: SfAccordion
 documentation: ug

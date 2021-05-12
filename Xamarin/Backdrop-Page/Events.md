@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Reveal and conceal event of Syncfusion Backdrop Page
-description: How to hook the event when backdrop page is revealed and concealed.
+title: Events in Xamarin Backdrop Page control | Syncfusion
+description: Learn here all about Events support in Syncfusion Xamarin Backdrop Page (SfBackdropPage) control and more.
 platform: xamarin
 control: SfBackdropPage
 documentation: ug
 ---
 
-# Events
+# Events in Xamarin Backdrop Page (SfBackdropPage)
 
 ## BackLayerStateChanged event
 

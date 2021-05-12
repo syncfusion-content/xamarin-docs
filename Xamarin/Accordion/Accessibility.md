@@ -1,7 +1,7 @@
 ---
 layout: post 
-title: Automation in Xamarin Accordion Control | Syncfusion
-description: Describes about setting automation id to accordion for automation framework to find and interact with control inner elements.
+title: Accessibility in Xamarin Accordion control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin Accordion (SfAccordion) control and more.
 platform: Xamarin
 control: Accordion
 documentation: ug

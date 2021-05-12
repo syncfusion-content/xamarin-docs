@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Barcode Customization in Syncfusion SfBarcode control for Xamarin.Forms
-description: Learn how to Customize Barcode in SfBarcode control
+title: Barcode Customization in Xamarin Barcode control | Syncfusion
+description: Learn here all about Barcode Customization support in Syncfusion Xamarin Barcode (SfBarcode) control and more.
 platform: xamarin
 control: SfBarcode
 documentation: ug
 
 ---
 
-# BARCODE CUSTOMIZATION
+# Barcode Customization in Xamarin Barcode (SfBarcode)
 
 ## Bar Customization
 
@@ -29,7 +29,7 @@ The DarkBarBrush represents the Color of the dark bar (Black color by default) a
     
 {% endhighlight %}
 
-![](barcode-customization_images/color-customization/color.png)
+![color](barcode-customization_images/color-customization/color.png)
 
   _Barcode_ _with_ _bar_ _color_ _customization_
 
@@ -76,7 +76,7 @@ The text representing the Barcode can be customized by using the following prope
 
 {% endhighlight %}
 
-![](barcode-customization_images/text-customization/text.png)
+![text](barcode-customization_images/text-customization/text.png)
 
   _Barcode_ _with_ _text_ _customization_
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion Backdrop Page for Xamarin.Forms
-description: What are the key features available in backdrop page.
+title: About Xamarin Backdrop Page control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Backdrop Page (SfBackdropPage) control, its elements and more.
 platform: xamarin
 control: SfBackdropPage
 documentation: ug
 ---
 
-# Overview
+# Xamarin Backdrop Page (SfBackdropPage) Overview
 
 The backdrop page is composed of two surfaces, a back layer and a front layer. The back layer holds actionable content (like navigation or filtration), which is relevant to the front layer.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multiple Selection in Xamarin AutoComplete control | Syncfusion
-description: Learn about Multiple Selection support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
+description: Learn here all about Multiple Selection support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug

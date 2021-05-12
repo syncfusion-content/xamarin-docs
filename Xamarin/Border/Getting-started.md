@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started | SfBorder | Xamarin | Syncfusion
-description: This section describes about quick tour to initial users on Syncfusion Border control for Xamarin.Forms platform.
+title: Getting Started with Xamarin Border control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Border (SfBorder) control, its elements and more.
 platform: xamarin
 control: SfBorder
 documentation: ug
 ---
 
-# Getting Started with SfBorder
+# Getting Started with Xamarin Border (SfBorder)
 
 This section provides an overview for working with the SfBorder control for Xamarin.Forms and explains the entire process of creating a real-world application.
 

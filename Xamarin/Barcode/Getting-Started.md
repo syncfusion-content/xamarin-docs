@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Syncfusion SfBarcode control Getting Started for Xamarin.Forms
-description: This section describes about quick tour to initial users on Syncfusion Barcode control for Xamarin.Forms platform
+title: Getting Started with Xamarin Barcode control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Barcode (SfBarcode) control, its elements and more.
 platform: xamarin
 control: SfBarcode
 documentation: ug
 
 ---
 
-# Getting Started with SfBarCode
+# Getting Started with Xamarin Barcode (SfBarcode)
 
 This section explains how to configure a Barcode for Xamarin.Forms application. The following screenshot illustrates the final output of barcode on iOS, Android and Windows Phone devices.
 

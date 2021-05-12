@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Overview of Syncfusion Badge View control for Xamarin.Forms
-description: This section explains the key features and quick overview about Syncfusion Badge view control for Xamarin.Forms
+title: About Xamarin Badge View control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Badge View (SfBadgeView) control, its elements and more.
 platform: xamarin
 control: SfBadgeView
 documentation: ug
 
 ---
 
-# Overview
+# Xamarin Badge View (SfBadgeView) Overview
 
 Badges are used to notify users of new or unread messages, notifications, or the status of something.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: BindableLayout | Accordion for Xamarin.Forms | Syncfusion
-description: This section described about how to bind AccordionItem to Xamarin.Forms Accordion (SfAccordion) using BindableLayout.
+title: BindableLayout in Xamarin Accordion control | Syncfusion
+description: Learn here all about BindableLayout support in Syncfusion Xamarin Accordion (SfAccordion) control and more.
 platform: xamarin
 control: SfAccordion
 documentation: ug

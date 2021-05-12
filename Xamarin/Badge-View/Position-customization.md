@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Position customization of Syncfusion Badge view for Xamarin.Forms
-description: Learn how to set Syncfusion badge view position customization in Xamarin.Forms platform
+title: Position Customization in Xamarin Badge View control | Syncfusion
+description: Learn here all about Position Customization support in Syncfusion Xamarin Badge View (SfBadgeView) control and more.
 platform: xamarin
 control: SfBadgeView
 documentation: ug
 
 ---
 
-# Position customization
+# Position Customization in Xamarin Badge View (SfBadgeView)
 
 The default position of notification is `TopRight`. You can change the position to the `TopLeft`, `BottomLeft`, and `BottomRight` using the [`BadgePosition`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_BadgePosition) properties. 
 

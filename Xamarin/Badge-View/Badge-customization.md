@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Customization of Syncfusion Badge View control for Xamarin.Forms
-description: This section explain font, stroke, Text customization in the Syncfusion SfBadgeView control in Xamarin.Forms platform
+title: Badge Customization in Xamarin Badge View control | Syncfusion
+description: Learn here all about Badge Customization support in Syncfusion Xamarin Badge View (SfBadgeView) control and more.
 platform: xamarin
 control: SfBadgeView
 documentation: ug

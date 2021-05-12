@@ -11,6 +11,14 @@ documentation: ug
 
 This section explains the steps required to configure the backdrop page.
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfBackdropPage reference
 
 You can add SfBackdropPage reference using one of the following methods:
@@ -264,7 +272,7 @@ public BackdropSamplePage()
 
 {% endtabs %}
 
-You can find the complete getting started sample from this [link.]( http://files2.syncfusion.com/Xamarin.Forms/Samples/BackdropGettingStarted.zip)
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-started-Xamarin-backdrop-page)
 
 ## See also
 

@@ -11,6 +11,14 @@ documentation: ug
 
 This section explains you the steps to configure a SfRangeSlider control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRangeSlider control.
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfRangeSlider reference
 
 You can add SfRangeSlider reference using one of the following methods:
@@ -220,4 +228,4 @@ SfRangeSlider rangeSlider=new SfRangeSlider();
 
 ![SfRangeSlider in Xamarin.Forms](images/RangeSlider_GettingStarted.png)
                                     
-The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/RangeSliderSample1051483242.zip) link.
+The complete Getting Started sample is available in this [link](https://github.com/SyncfusionExamples/xamarin-forms-range-slider).

@@ -12,11 +12,11 @@ documentation: ug
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, find all the required assemblies in the installation folders {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> Assemblies can be found in an unzipped package location in Mac.
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## NuGet configuration
 
@@ -450,3 +450,7 @@ namespace GettingStarted
 Run the application to render the following output.
 
 ![Xamarin Forms Chat time break mode](SfChat_images/xamarin-forms-chat-timebreak-mode.png)
+
+## See also
+
+[How to connect Azure Bot Service to Xamarin.Forms Chat Control](https://www.syncfusion.com/blogs/post/how-to-connect-azure-bot-service-to-xamarin-forms-chat-control.aspx)

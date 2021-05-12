@@ -573,7 +573,7 @@ schedule.SelectedDate = null;
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo for Xamarin.Forms from here [Date_Selection](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Date_Selection1072247797.zip)
+You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/week-view-programmatic-selection-schedule-xamarin)
 
 >**NOTE**
 * `SfSchedule` does not support multiple selection.
@@ -598,3 +598,5 @@ schedule.ShowCurrentTimeIndicator = true;
 schedule.CurrentTimeIndicatorColor = Color.Black;
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.

@@ -11,6 +11,14 @@ documentation: ug
 
 This section explains how to showcase a Gallery of photos along with a Title using SfCarousel Control.
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfCarousel reference
 
 You can add SfCarousel reference using one of the following methods:
@@ -582,4 +590,4 @@ N> The `SelectedIndex` property will be 0 by default.
 
 ![OverView image for Carousel](images/gettingstarted.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted982303964.zip)
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/xamarin-forms-sfcarousel)

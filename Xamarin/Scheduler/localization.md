@@ -46,7 +46,7 @@ You can localize the custom strings used in the schedule control. For that you n
 *	Localizing custom text in UWP renderer.
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [Localization](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Localization_Forms-1564080177.zip).
+[here](https://github.com/SyncfusionExamples/localize-custom-texts-schedule-xamarin)
 
 ### Localizing custom text in Android renderer.
 
@@ -136,7 +136,7 @@ if (schedule.Locale == "fr")
 ![Localization All Day](Localization_images/xamarin.forms-schedule-localization-from-pcl.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [LocaleFromPCL](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LocaleFromPCL635946080.zip).
+[here](https://github.com/SyncfusionExamples/localizing-custom-strings-from-pcl-schedule-xamarin)
 
 ### Adding resx file
 You need to add the required resx files under the Resources folder in the PCL project and the filename should be `Syncfusion.SfSchedule.Forms.LanguageCode.resx`.
@@ -366,6 +366,8 @@ Localize class for iOS project,
 
 >**NOTE**
 For UWP project, no sample level changes required.
+
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.
 
 ## See also
 

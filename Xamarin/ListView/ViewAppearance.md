@@ -96,7 +96,7 @@ public class MainPageCs : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can also download the entire source code of this demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataTemplate1985610922).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/itemtemplate-selector-listview-xamarin).
 
 ![Xamarin.Forms listview with item template customize](SfListView_images/DataTemplateSelector.jpg)
 
@@ -277,7 +277,7 @@ Download the entire source code from GitHub [here](https://github.com/Syncfusion
 
 ## Item size
 
-The `SfListView` allows customizing the size of items by setting the [ItemSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemSize) property. The default value of this property is `40`. This property can be customized at runtime.
+The `SfListView` allows customizing the size of items by setting the [ItemSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemSize) property. The default value of this property is `40d`. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -392,11 +392,11 @@ The `SfListView` allows customizing the item appearance like rounded corner by u
         <syncfusion:SfListView x:Name="listView" ItemSize="60" ItemsSource="{Binding customerDetails}">
             <syncfusion:SfListView.ItemTemplate>
                 <DataTemplate>
-                    <Frame x:Name="frame" CornerRadius="10" >
+                    <Frame x:Name="frame" CornerRadius="10" HasShadow="False">
                         <StackLayout>
-                                <Label Text="{Binding ContactName}" />
-                                <Label Text="{Binding ContactNumber}" />
-                                <Label Text="{Binding ContactType}" />
+                            <Label Text="{Binding ContactName}" />
+                            <Label Text="{Binding ContactNumber}" />
+                            <Label Text="{Binding ContactType}" />
                         </StackLayout>
                     </Frame>
                 </DataTemplate>
@@ -684,7 +684,7 @@ The `SfListView` supports accordion view to display a list of items. Each item c
   </ContentPage.Behaviors>
   <ContentPage.Content>
     <Grid x:Name="mainGrid" BackgroundColor="#F0F0F0" Padding="4">
-      <syncfusion:SfListView x:Name="listView" AutoFitMode="Height" SelectionMode ="None" IsScrollBarVisible="False" ItemSpacing="0">
+      <syncfusion:SfListView x:Name="listView" AutoFitMode="DynamicHeight" SelectionMode ="None" IsScrollBarVisible="False" ItemSpacing="0">
         <syncfusion:SfListView.ItemTemplate>
           <DataTemplate>
             <ViewCell>
@@ -798,43 +798,20 @@ internal class SfListViewAccordionBehavior : Behavior<ContentPage>
     using Syncfusion.ListView.XForms.Control.Helpers;
     private void ListView_ItemTapped(object sender, Syncfusion.ListView.XForms.ItemTappedEventArgs e)
     {
+        var tappedItemData = obj as Contact;
         if (tappedItem != null && tappedItem.IsVisible)
         {
-            var previousIndex = listview.DataSource.DisplayItems.IndexOf(tappedItem);
-
             tappedItem.IsVisible = false;
-
-            if (Device.RuntimePlatform != Device.macOS)
-                Device.BeginInvokeOnMainThread(() => { listview.RefreshListViewItem(previousIndex, previousIndex, false); });
         }
 
-        if (tappedItem == (e.ItemData as Contact))
+        if (tappedItem == tappedItemData)
         {
-            if (Device.RuntimePlatform == Device.macOS)
-            {
-                var previousIndex = listview.DataSource.DisplayItems.IndexOf(tappedItem);
-                Device.BeginInvokeOnMainThread(() => { listview.RefreshListViewItem(previousIndex, previousIndex, false); });
-            }
-
             tappedItem = null;
             return;
         }
 
-        tappedItem = e.ItemData as Contact;
+        tappedItem = tappedItemData;
         tappedItem.IsVisible = true;
-
-        if (Device.RuntimePlatform == Device.macOS)
-        {
-            var visibleLines = this.listview.GetVisualContainer().ScrollRows.GetVisibleLines();
-            var firstIndex = visibleLines[visibleLines.FirstBodyVisibleIndex].LineIndex;
-            var lastIndex = visibleLines[visibleLines.LastBodyVisibleIndex].LineIndex;
-            Device.BeginInvokeOnMainThread(() => { listview.RefreshListViewItem(firstIndex, lastIndex, false); });
-        }
-        else
-        {
-            var currentIndex = listview.DataSource.DisplayItems.IndexOf(e.ItemData);
-            Device.BeginInvokeOnMainThread(() => { listview.RefreshListViewItem(currentIndex, currentIndex, false); });
-        }
     }
 
     #endregion
@@ -867,7 +844,7 @@ Create a `IsLoading` boolean property in view model and bind it to the `IsBusy` 
     <Grid>
         <syncfusion:SfListView x:Name="listView" 
                              ItemsSource="{Binding ContactInfo}" 
-                             ItemSize="110">
+                             AutoFitMode="Height">
         </syncfusion:SfListView>
         <busyIndicator:SfBusyIndicator x:Name="busyIndicator" InputTransparent="True"
                                        AnimationType="SingleCircle" 
@@ -1280,6 +1257,8 @@ N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is 
 ### Limitations
 
 * `SfListView` does not support the right-to-left(RTL) direction when [SfListView.Orientation](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.Orientation.html) is `Horizontal`.
+
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to know how to render set of data items with Xamarin.Forms views or custom templates.
 
 ## See also
 

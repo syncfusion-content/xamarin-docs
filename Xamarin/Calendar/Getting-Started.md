@@ -11,6 +11,14 @@ documentation: ug
 
 This section explains how to implement simple holiday indicator application which allows user to select working days using [SfCalendar](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html) control.
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfCalendar reference
 
 You can add SfCalendar reference using one of the following methods:
@@ -190,6 +198,8 @@ calendar.BlackoutDates = black_dates;
 
 {% endhighlight %}
 
+![Xamarin Calendar Blackout Dates](images/Calendar-Blackoutdates.png)
+
 ## Enable Multiple Selection
 
 `SfCalendar` control allows user to select one or more dates at a time among the non black out dates.
@@ -213,6 +223,8 @@ calendar.SelectionMode=SelectionMode.MultiSelection;
 
 {% endtabs %}
 
+![Xamarin Calendar Multiple Selection](images/Calendar - Multiselection.png)
+
 ## Restrict Dates
 
 `SfCalendar` allows to select dates that falls between certain range of dates. Here, restrict user to select dates only in current year.
@@ -229,7 +241,7 @@ this.Content = calendar;
 {% endhighlight %}
 
 
-![Resrict Dates](images/xamarin.forms-calendar-restrictdates.png)
+![Xamarin Calendar Resrict Dates](images/xamarin.forms-calendar-restrictdates.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [CalendarGettingStarted](https://github.com/SyncfusionExamples/xamarin-calendar-getting-started)

@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Suggestion mode for Syncfusion AutoComplete Control in Xamarin.Forms
-description : This section describes about the different filtering modes to define filtering strategy.
-platform : Xamarin.Forms
-control : AutoComplete
-documentation : ug
+layout: post
+title: AutoComplete Filtering Options in Xamarin AutoComplete | Syncfusion
+description: Learn about AutoComplete Filtering Options support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
+platform: xamarin
+control: AutoComplete
+documentation: ug
 ---
 
-# AutoComplete Filtering Options
+# AutoComplete Filtering Options - Xamarin AutoComplete (SfAutoComplete)
 
 ## AutoComplete filtering options in Xamarin SfAutoComplete
 
@@ -894,3 +894,4 @@ namespace AutocompleteSample
 
 ![ends with case sensitive](images/AutoComplete-Filtering-Options/ends-with-case-sensitive.png)
 
+N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.

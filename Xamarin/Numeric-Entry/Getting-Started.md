@@ -11,6 +11,14 @@ documentation: ug
 
 This section explains you the steps to configure a SfNumericTextBox control in a real-time scenario and also provides a walk-through on some of the customization features available in SfNumericTextBox control.
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfNumericTextBox reference
 
 You can add SfNumericTextBox reference using one of the following methods:
@@ -310,6 +318,8 @@ N> The focused visual state is only available in Android and iOS platforms.
 
 **Focused visual state**
 ![SfNumericTextBox with disabled visual state](images/FocusState.jpg)
+
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Textbox)
 
 ## See also
 

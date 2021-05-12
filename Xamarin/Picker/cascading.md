@@ -1,14 +1,13 @@
 ---
 layout: post
 title: Demonstrate CascadingPicker using Syncfusion Picker for Xamarin.Forms
-description: Overview and key features of Picker control
+description: Learn here all about cascading in Syncfusion Xamarin Picker (SfPicker) control and it contains sample and code snippet for this. 
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
-
-# Cascading
+# Cascading in Xamarin Picker (SfPicker)
 
 This section explains the steps required to create custom cascading sample by using picker control.
 
@@ -349,4 +348,4 @@ The following screenshot illustrates the output of above code snippets.
 
 You can download the sample for reference from the following link.
 
-Sample link: [CascadingSample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CascadingPicker773245392)
+Sample link: [CascadingSample](https://github.com/SyncfusionExamples/xamarin-sfpicker-examples/tree/master/Samples/Cascading)

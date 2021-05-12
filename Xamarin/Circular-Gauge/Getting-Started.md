@@ -18,6 +18,14 @@ To get start quickly with Xamarin Circular Gauge control, you can check on this 
 <style>#XamarinGaugeVideoTutorial{width : 90% !important; height: 300px !important }</style>
 <iframe id='XamarinGaugeVideoTutorial' src='https://www.youtube.com/embed/Rjd9NxDFoWo'></iframe>
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfCircularGauge reference
 
 You can add SfCircularGauge reference using one of the following methods:
@@ -480,7 +488,7 @@ The following circular gauge is created as a result of the above codes.
  
 ![Getting Started in Xamarin.Forms Circular Gauge](getting-started_images/default.png)
 
-You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge-GettingStarted-768663630).
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Circular-Gauge).
 
 ## See also
 

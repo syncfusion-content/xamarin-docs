@@ -10,6 +10,14 @@ documentation: ug
 
 This section explains the steps required to configure the [`SfDigitalGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfDigitalGauge.html) and add basic elements to it using various APIs.
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfDigitalGauge reference
 
 You can add SfDigitalGauge reference using one of the following methods:
@@ -314,7 +322,7 @@ The following screenshot illustrates the result of the previous codes.
 ![Xamarin digital gauge getting started](Getting-Started_images/Getting_Started_img1.png)
 
 
-You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge-GettingStarted-72347847).
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Digital-Gauge).
 
 ## See also
 

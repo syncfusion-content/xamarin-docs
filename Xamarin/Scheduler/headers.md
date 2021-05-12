@@ -104,7 +104,7 @@ private void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChange
 {% endhighlight %}
 {% endtabs %}   
 
-You can get the complete sample for customizing the Header of Schedule [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Header_Sample-1251673941.zip)
+You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/loading-custom-headers-schedule-xamarin)
 
 ## Header Date Format
 
@@ -147,6 +147,8 @@ private void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}   
+
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.
 
 ## See also
 

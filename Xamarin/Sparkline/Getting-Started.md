@@ -11,6 +11,14 @@ documentation: ug
 
 This section explains you the steps required to populate the Sparkline with data. 
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfSparkline reference
 
 You can add SfSparkline reference using one of the following methods:
@@ -211,7 +219,7 @@ lineSparkline.SetBinding(SfSparklineBase.ItemsSourceProperty, "Data");
 
 ![Xamarin forms Sparkline getting started](Getting-Started-image/LineSparkline.png)
 
-You can find the complete getting started sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SparkLineSample295325469)
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Sparkline)
 
 ## See also
 

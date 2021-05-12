@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Add freehand scribble in PDF using Syncfusion PDF Viewer Xamarin.Forms
+title: Add freehand scribble in PDF using Syncfusion PDF Viewer Xamarin.Forms
 description: PDF Viewer Xamarin.Forms allows user to add ink annotation and provides options to edit or remove an existing ink annotation in the PDF file
 platform: Xamarin
 control: SfPdfViewer
@@ -9,7 +9,7 @@ documentation: ug
 
 # Working with ink annotation
 
-PDF viewer allows you to include ink annotation in the PDF document and provides options to edit or remove the existing ink annotation in the PDF document.
+[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to include ink annotation in the PDF document and provides options to edit or remove the existing ink annotation in the PDF document.
 
 ## Inclusion of ink annotation
 
@@ -622,3 +622,26 @@ private void PdfViewerControl_InkAdded(object sender, InkAddedEventArgs args)
 {% endtabs %}
 
 N> The strokes cannot be smoothened when the user is drawing the strokes as the points are still being recorded. They can be smoothened only after the user confirms the end of the ink session. 
+
+## How to get and set the name of the annotations?
+
+The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API.
+
+The following code sample explains modifying the name of the annotation in the [InkAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_InkAdded) event. 
+
+{% tabs %}
+{% highlight c# %}
+private void PdfViewerControl_InkAdded(object sender, InkAddedEventArgs args)
+{
+   if(sender is InkAnnotation)
+    {
+    (sender as InkAnnotation).Name = "Ink1";
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [InkAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_InkAdded) event. But this can be done in all other events as well. 
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

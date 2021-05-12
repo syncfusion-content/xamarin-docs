@@ -11,6 +11,14 @@ documentation: ug
     
 This section provides you an overview for working with SfSchedule for Xamarin.Forms and also provides a walk through to configure SfSchedule control in real time scenario.   
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfSchedule reference
 
 You can add SfSchedule reference using one of the following methods:
@@ -204,8 +212,7 @@ namespace GettingStarted
 {% endhighlight %}   
 {% endtabs %}   
 
-You can download the source code for rendering of schedule for Xamarin.Forms from
-here [ScheduleProject](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleSample933334592.zip)
+You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/getting-started-schedule-xamarin)
 
 ## Changing Schedule Views   
     
@@ -334,8 +341,7 @@ schedule.DataSource = appointmentCollection;
 {% endhighlight %}   
 {% endtabs %}   
 
-You can download the source code for rendering of schedule appointment using `ScheduleAppointmentCollection` for Xamarin.Forms from
-here [ScheduleAppointment](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ScheduleAppointment-62423344.zip)
+You can download the entire source code of this demo for Xamarin.Forms from [here](https://github.com/SyncfusionExamples/adding-appointments-schedule-xamarin)
 
 ### Adding Custom Appointments   
   
@@ -543,6 +549,8 @@ schedule.DataSource = viewModel.Meetings;
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [ScheduleGettingStarted](https://github.com/SyncfusionExamples/xamarin-schedule-getting-started)
+
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.
 
 ## See also
 

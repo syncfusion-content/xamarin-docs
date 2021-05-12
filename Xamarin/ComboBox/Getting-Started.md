@@ -11,6 +11,14 @@ documentation: ug
 
 This section explains the steps required to create the combo box control, populate it with data and filter the suggestions. This section covers only the minimal features that are needed to get started with the control.
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfComboBox reference
 
 You can add SfComboBox reference using one of the following methods:
@@ -509,4 +517,4 @@ private void ComboBox_SelectionChanged(object sender, Syncfusion.XForms.ComboBox
 
 ![selectionChanged](images/Getting-Started/selectionChangedComboBxo.png)
 
-The complete Getting Started sample is available in [this](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ComboBoxSample10986657571610417339.zip) link.
+The complete Getting Started sample is available in this [link](https://github.com/SyncfusionExamples/xamarin-forms-sfcombobox).

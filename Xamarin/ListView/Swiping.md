@@ -390,7 +390,7 @@ The `SwipeStarted` event provides the following properties in their arguments:
  
 The `SwipeStarted` event is used for the following use case:
 
- * To cancel the swipe action for a particular item by setting the Cancel property of the [SwipeStartedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipeStartedEventArgs.html).
+ * You can cancel the swipe action for a particular item by setting the `Cancel` property of the [SwipeStartedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SwipeStartedEventArgs.html).
 
 {% tabs %}
 {% highlight xaml %}
@@ -650,6 +650,8 @@ private void TapGestureRecognizer_Tapped(object sender, EventArgs e)
 {% endtabs %}
 
 Download entire source code from GitHub [here](https://github.com/SyncfusionExamples/Edit-item-by-swipe-in-xamarin.forms-listview).
+
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to know how to render set of data items with Xamarin.Forms views or custom templates.
 
 ## See Also
 

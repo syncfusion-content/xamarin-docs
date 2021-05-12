@@ -558,3 +558,14 @@ Transaction
 </td>
 </tr>
 </table>
+
+## UI Kit 4.0.0.0
+
+The UI Kit version 4.0.0.0 has the below updates.
+
+* Added dark theme support
+* Added new credit card payment page
+* Added ripple effects for touch interaction
+* Improved the styles applied in pages
+* Embedded fonts support
+* Thumbnail view for viewing/selecting the XAML pages.

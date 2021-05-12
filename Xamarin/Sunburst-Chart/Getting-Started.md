@@ -11,6 +11,14 @@ documentation: ug
 
 This section explains the steps required to configure the [`SfSunburstChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html) and populate it with data, data labels, legends, and title. This section covers only the minimal features that needed to get started with the sunburst chart. 
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfSunburstChart reference
 
 You can add SfSunburstChart reference using one of the following methods:
@@ -883,7 +891,7 @@ The following screenshot depicts the final output.
 
 ![SfSunburstChart with data label and legend](Getting-Started_images/gettingstarted.png)
 
-You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Sunburst_Sample-1965856985).
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/Getting-Started-Sunburst-Chart-Xamarin).
 
 ## See also
 

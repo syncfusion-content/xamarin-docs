@@ -198,7 +198,7 @@ this.sfDataGrid.SelectAll();
 
 ## Keyboard behavior
 
-`SfDataGrid` supports selection via keyboard interaction for the Xamarin.Forms.macOS and Xamarin.Forms.UWP platforms. Keyboard interaction will not have any effect when the `SfDataGrid.SelectionMode` is set as `SelectionMode.None`.
+`SfDataGrid` supports selection via keyboard interaction for the Xamarin.Forms.iOS, Xamarin.Forms.macOS and Xamarin.Forms.UWP platforms. Keyboard interaction will not have any effect when the `SfDataGrid.SelectionMode` is set as `SelectionMode.None`.
 
 <table>
 <tr>

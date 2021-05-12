@@ -11,6 +11,14 @@ documentation: ug
 
 This section explains the steps required to configure a [`SfLinearGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfLinearGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html) control.
 
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
+
 ## Adding SfLinearGauge reference
 
 You can add SfLinearGauge reference using one of the following methods:
@@ -443,7 +451,7 @@ The following screenshot illustrates the result of the above codes.
  
 ![Linear Gauge Getting Started](getting-started_images/getting-started.png)
 
-You can find the complete getting started sample from this [`link`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge-GettingStarted323564295).  
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/GettingStarted_LinearGauge).  
 
 ## See also
 

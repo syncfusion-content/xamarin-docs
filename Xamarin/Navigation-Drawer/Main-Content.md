@@ -210,4 +210,4 @@ N> It is mandatory to set ContentView for SfNavigationDrawer on initializing.
 
 ![contentview](Images/MainContent.png)
 
-You can find the complete Sample from this [link.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/NavigationDrawerMainContent-827989544)
+You can find the complete Sample from this [link.](https://github.com/SyncfusionExamples/navigation-drawer-main-content)

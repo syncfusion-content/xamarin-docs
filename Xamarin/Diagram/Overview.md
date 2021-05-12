@@ -1,15 +1,15 @@
 ---
 title: Overview of Diagram control for Xamarin.Forms | Syncfusion
-description: Diagram overview and the key features are available in Xamarin.Forms
+description: Learn here all about introduction of Syncfusion Xamarin Diagram (SfDiagram) control, it's key features and more.
 platform: Xamarin
 control: SfDiagram
 documentation: Ug
 keywords: Diagram, org chart, flowchart, shape, use case, workflow.
 ---
 
-# Overview
+# Xamarin Diagram (SfDiagram) Overview
 
-The diagram control allows to create different types of diagrams such as flowcharts, use case diagrams, workflow process diagrams, etc.
+The [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) allows to create different types of diagrams such as flowcharts, use case diagrams, workflow process diagrams, etc.
 
 ![Overview in Xamarin.Forms diagram](Overview_images/img1.png)
 
@@ -23,3 +23,5 @@ The diagram control allows to create different types of diagrams such as flowcha
 * **Undo/Redo:** Performs correction in the recent changes.
 * **Serialization:** Save the current state of the diagram, and load it back when needed.
 * **Stencil:** It holds a list of symbols that is dropped over the diagram.
+
+N> You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

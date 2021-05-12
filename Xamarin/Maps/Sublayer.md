@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Sublayer in Syncfusion Maps control for Xamarin.Forms
-description: This section describes about sublayer.
+description: Learn here all about Sublayer feature in Syncfusion Xamarin.Forms Maps(SfMaps) control with custom support and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Sublayer
+# Sublayer in Xamarin Maps(SfMaps)
 
-Sublayer in the maps control allows to load multiple shape files in a single container and enables maps to display more information.
+Sublayer in the [Xamarin maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) control allows to load multiple shape files in a single container and enables maps to display more information.
 
 ## Adding sublayers in ShapeFileLayer
 
@@ -220,8 +220,10 @@ You can add multiple shape files in the `ImageryLayer` using the `Sublayers` pro
 
 Sublayer is a type of shapefile layer. You can add all the elements such as markers, bubbles, color mapping, and legends to sublayer. Please refer to the following links to add the sublayer properties.
 
-* [`Adding markers`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#adding-markers)
-* [`Color mapping`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#color-mapping)
-* [`Adding legend`](https://help.syncfusion.com/xamarin/sfmaps/getting-started?cs-save-lang=1&cs-lang=xaml#adding-legends)
+* [`Adding markers`](https://help.syncfusion.com/xamarin/sfmaps/getting-started#adding-markers)
+* [`Color mapping`](https://help.syncfusion.com/xamarin/sfmaps/getting-started#color-mapping)
+* [`Adding legend`](https://help.syncfusion.com/xamarin/sfmaps/getting-started#adding-legends)
 * [`Adding bubbles`](https://help.syncfusion.com/xamarin/sfmaps/bubblemarker#adding-bubbles)
 * [`Adding data labels`](https://help.syncfusion.com/xamarin/sfmaps/datalabels#adding-data-labels)
+
+N> You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Labels
-description: This section describes about data labels.
+title: Data Labels in Syncfusion Xamarin.Forms Maps control
+description: Learn here all about data labels feature in Syncfusion Xamarin.Forms Maps control with custom support and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Data Labels
+# Data Labels in Xamarin.Forms Maps
 
 Data labels are used to display the values of shapes.
 
@@ -406,4 +406,6 @@ The [`IntersectionAction`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfM
 {% endtabs %}
 
 ![DataLabel Image](Images/DataLabel_intersection_action_hide.png)
+
+N> You can refer to our [Xamarin Maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.
 

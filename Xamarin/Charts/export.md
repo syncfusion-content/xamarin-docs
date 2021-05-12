@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Exporting in Xamarin Charts control | Syncfusion
-description: Learn here all about Exporting support in Syncfusion Xamarin Charts (SfChart) control and more.
+description: Learn here all about Exporting support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 
 platform: xamarin
 control: Chart

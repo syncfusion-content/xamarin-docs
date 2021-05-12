@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customization in Xamarin Cards control | Syncfusion
-description: Learn about Customization support in Syncfusion Xamarin Cards control and more.
+description: Learn about Customization support in Syncfusion Essential Studio Xamarin Cards control, its elements and more.
 platform: xamarin
 control: Cards
 documentation: ug

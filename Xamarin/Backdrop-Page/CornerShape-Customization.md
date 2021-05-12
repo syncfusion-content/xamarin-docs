@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Corner Shape Customization in Xamarin Backdrop Page control | Syncfusion
+title: Corner Shape Customization in Xamarin Backdrop Page | Syncfusion
 description: Learn here all about Corner Shape Customization support in Syncfusion Xamarin Backdrop Page (SfBackdropPage) control and more.
 platform: xamarin
 control: SfBackdropPage

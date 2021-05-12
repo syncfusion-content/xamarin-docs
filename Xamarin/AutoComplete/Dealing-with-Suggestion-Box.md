@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dealing with Suggestion Box in Xamarin AutoComplete control | Syncfusion
+title: Dealing with Suggestion Box in Xamarin AutoComplete | Syncfusion
 description: Learn here all about Dealing with Suggestion Box support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more.
 platform: xamarin
 control: SfAutoComplete

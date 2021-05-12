@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Prefix Characters Constraint in Xamarin AutoComplete control | Syncfusion
+title: Prefix Characters Constraint in Xamarin AutoComplete | Syncfusion
 description: Learn here all about Prefix Characters Constraint support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more.
 platform: xamarin
 control: SfAutoComplete

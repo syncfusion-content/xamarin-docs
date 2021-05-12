@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Maximum display item with Expander in Xamarin AutoComplete control | Syncfusion
+title: Maximum display item in Xamarin AutoComplete | Syncfusion
 description: Learn here all about Maximum display item with Expander support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
-# Maximum display item with Expander in Xamarin AutoComplete (SfAutoComplete)
+# Maximum display item with Expander in Xamarin AutoComplete
 
 ## Maximum display item with expander in Xamarin SfAutoComplete
 

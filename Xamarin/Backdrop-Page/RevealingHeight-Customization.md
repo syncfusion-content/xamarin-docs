@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reveal Height Customization in Xamarin Backdrop Page control | Syncfusion
+title: Reveal Height Customization in Xamarin Backdrop Page | Syncfusion
 description: Learn here all about Reveal Height Customization support in Syncfusion Xamarin Backdrop Page (SfBackdropPage) control and more.
 platform: xamarin
 control: SfBackdropPage

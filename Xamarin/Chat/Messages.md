@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Messages | SfChat | Xamarin | Syncfusion
-description: Describes about the available message types that comes built-in and how to create different types of messages in Xamarin.Forms chat control.
+title: Messages in Xamarin Chat control | Syncfusion
+description: Learn here all about Messages support in Syncfusion Xamarin Chat (SfChat) control and more.
 platform: xamarin
 control: SfChat
 documentation: ug

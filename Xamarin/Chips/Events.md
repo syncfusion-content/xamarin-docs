@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events for Syncfusion ChipGroup control in Xamarin.Forms
-description: This section describes the events in the Xamarin.Forms Syncfusion SfChipGroup Such as SelectionChanging and SelectionChanged
+title: Events in Xamarin Chips control | Syncfusion
+description: Learn about Events support in Syncfusion Xamarin Chips control and more.
 platform: xamarin
 control: Chips
 documentation: ug
 ---
 
-# Event of SfChipGroup
+# Events in Xamarin Chips
 
 ## SelectionChanging Event
 The [SelectionChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.Buttons.XForms.SfChip.SelectionChangingEventArgs.html) event is triggered before the Chip is selected. You can restrict a chip from being selected, by canceling this event, by setting Cancel property in the event argument to true. The argument contains the following information,

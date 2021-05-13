@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Customization in Xamarin Chips control | Syncfusion
-description: Learn about customization support for background color, border color, close button color etc in Syncfusion Xamarin Chips control and more details.
+description: Learn about Customization support in Syncfusion Xamarin Chips control and more.
 platform: xamarin
 control: Chips
 documentation: ug
 ---
 
-# Customization in Xamarin Chips (SfChip)
+# Customization in Xamarin Chips
 
 The chip control supports to customize the background color, border color, close button color, and more. The chip control can be customized using the following properties:
 

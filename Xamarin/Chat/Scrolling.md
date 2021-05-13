@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrolling | SfChat | Xamarin | Syncfusion
-description: Describes about the auto-scroll capabilities, events and methods to handle scrolling in Xamarin.Forms chat control.
+title: Scrolling in Xamarin Chat control | Syncfusion
+description: Learn here all about Scrolling support in Syncfusion Xamarin Chat (SfChat) control and more.
 platform: xamarin
 control: SfChat
 documentation: ug

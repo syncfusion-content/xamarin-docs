@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Swiping messages in Xamarin.Forms Chat| SfChat | Xamarin | Syncfusion
-description: This topic describes how to swipe the messages in Xamarin.Forms Chat(SfChat) for custom actions such as deleting, replying, editing etc.
+title: Swiping in Xamarin Chat control | Syncfusion
+description: Learn here all about Swiping support in Syncfusion Xamarin Chat (SfChat) control and more.
 platform: xamarin
 control: SfChat
 documentation: ug
 ---
 
-# Swiping Messages in Xamarin.Forms Chat(SfChat)
+# Swiping in Xamarin Chat (SfChat)
 
 The [SfChat](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) allows to enabling the swiping option by setting the [SfChat.AllowSwiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_AllowSwiping) property to `true`. Swipe views are displayed when swiping from ‘left to right’ or ‘right to left’ on a message. The control provides customizable swipe templates for swiping on the left and right side. The swipe gesture can be restricted to a certain point on the message by setting the [SfChat.MaxSwipeOffset](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MaxSwipeOffset) property.
 

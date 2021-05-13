@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with DataForm | SfDataForm | Xamarin.Forms | Syncfusion
-description: This section explains how to use Syncfusion Xamarin.Forms DataForm along with interacting events and other different functionalities.
+title: Working with DataForm in Xamarin DataForm control | Syncfusion
+description: Learn here all about Working with DataForm support in Syncfusion Xamarin DataForm (SfDataForm) control and more.
 platform: xamarin
 control: SfDataForm
 documentation: UG
 ---
 
-# Working with the data form
+# Working with DataForm in Xamarin DataForm (SfDataForm)
 
 ## Auto-generating DataFormItems for the data field
 

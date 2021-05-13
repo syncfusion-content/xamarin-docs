@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Pointers in Syncfusion SfCircularGauge control for Xamarin.Forms
-description: This section explains the steps required to add and customize pointers in Syncfusion Circular Gauge control for Xamarin.Forms
+title: Pointers in Xamarin Circular Gauge control | Syncfusion
+description: Learn here all about Pointers support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Pointers in SfCircularGauge
+# Pointers in Xamarin Circular Gauge (SfCircularGauge)
 
 You can add multiple pointers to the gauge to point multiple values on the same scale. It is used to show low and high values at the same time. The value of the pointer is set by using the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Pointer.html#Syncfusion_SfGauge_XForms_Pointer_Value) property.
 

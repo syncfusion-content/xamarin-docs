@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Typing indicator in Xamarin.Forms Chat | SfChat | Xamarin | Syncfusion
-description: Describes about the typing indicator feature and its available customizations in Xamarin.Forms chat control.
+title: Typing indicator in Xamarin Chat control | Syncfusion
+description: Learn here all about Typing indicator support in Syncfusion Xamarin Chat (SfChat) control and more.
 platform: xamarin
 control: SfChat
 documentation: ug
 ---
 
-# Typing indicator in Xamarin.Forms Chat (SfChat)
+# Typing indicator in Xamarin Chat (SfChat)
 
 Indicates with an animation, that a user(or users) is currently typing, thereby providing an enhanced user experience. To show/hide the typing indicator set the [SfChat.ShowTypingIndicator](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowTypingIndicator) property to `true` or `false` respectively. To show user image and text in the typing indicator create a new instance of `SfChat.TypingIndicator`, set the [TypingIndicator.Authors](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ChatTypingIndicator.html#Syncfusion_XForms_Chat_ChatTypingIndicator_Authors) and [TypingIndicator.Text](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.ChatTypingIndicator.html#Syncfusion_XForms_Chat_ChatTypingIndicator_Text) property and assign the typing indicator instance to the [SfChat.TypingIndicator](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_TypingIndicator) property.
 

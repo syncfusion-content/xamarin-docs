@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Overview of Syncfusion Chips control for Xamarin.Forms
-description : A quick go through to learn about the Chips control and the key features available in it. 
+title: About Xamarin Chips control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio Xamarin Chips control, its elements and more.
 platform : xamarin
 control : Chips
 documentation : ug
 ---
 
-# Overview
+# Xamarin Chips Overview
 
 The chips control for Xamarin.Forms presents information in an interactive and customizable layout. It also arranges multiple chips in a user-preferred layout and groups them to make selections. 
 

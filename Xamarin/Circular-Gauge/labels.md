@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Labels in Syncfusion SfCircularGauge control for Xamarin.Forms
-description:  Learn how to set labels and customize the labels in Syncfusion CircularGauge control for Xamarin.Forms
+title: Labels in Xamarin Circular Gauge control | Syncfusion
+description: Learn here all about Labels support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Labels in SfCircularGauge
+# Labels in Xamarin Circular Gauge (SfCircularGauge)
 
 The [`Scale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html) labels associate a numeric value with major scale tick marks.
 

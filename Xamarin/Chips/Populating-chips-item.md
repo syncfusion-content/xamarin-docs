@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating the chip item in Syncfusion Chips control in Xamarin.Forms.
-description: This section describes how to bind the item sources to populate items in the chips and populating collection of SfChip in chips.
+title: Populating Items in Xamarin Chips control | Syncfusion
+description: Learn about Populating Items support in Syncfusion Xamarin Chips control and more.
 platform: xamarin
 control: Chips
 documentation: ug
 ---
 
-# Populating chips in Xamarin Charts (SfChip)
+# Populating Items in Xamarin Chips
 
 Chips can be populated with either business objects and SfChip. This section explain how to populate the chips control with business objects and SfChip.
 

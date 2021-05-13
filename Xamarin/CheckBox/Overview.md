@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview for Syncfusion.Xamarin.Forms SfCheckBox
-description: A quick overview of SfCheckBox key features that allow users to select one or more options from a set.
+title: About Xamarin CheckBox control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin CheckBox (SfCheckBox) control, its elements and more.
 platform: xamarin
 control: SfCheckBox
 documentation: ug 

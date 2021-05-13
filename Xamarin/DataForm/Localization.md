@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Syncfusion SfDataForm for Xamairn.Forms
-description: Describes how to localize the Xamairn.Forms SfDataForm display text and error messages based on culture.
+title: Localization in Xamarin DataForm control | Syncfusion
+description: Learn here all about Localization support in Syncfusion Xamarin DataForm (SfDataForm) control and more.
 platform: xamarin
 control: SfDataForm
 documentation: ug
@@ -21,7 +21,7 @@ Here, the display attributes or data form item display values get localized base
 
 ### Using attribute
 
-`ResourceType` [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=net-5.0 ) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of `Name`, `ShortName`, `GroupName` and `Prompt` values.
+`ResourceType` [Display](https://apisof.net/catalog/System.ComponentModel.DataAnnotations.DisplayAttribute ) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of `Name`, `ShortName`, `GroupName` and `Prompt` values.
 
 {% tabs %}
 {% highlight c# %}

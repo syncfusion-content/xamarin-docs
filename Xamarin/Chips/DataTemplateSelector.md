@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DataTemplateSelector in Xamarin Chips control | Syncfusion
-description: Learn about DataTemplateSelector support in Syncfusion Xamarin Chips control and more.
+description: Learn about DataTemplateSelector support in Syncfusion Xamarin Chips control, its elements and more.
 platform: xamarin
 control: Chips
 documentation: ug

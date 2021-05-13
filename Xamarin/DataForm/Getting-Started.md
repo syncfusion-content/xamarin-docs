@@ -15,7 +15,7 @@ The SfDataForm control helps editing the data fields of any data object. It can 
 * Caption customization: Supports loading the image as caption for the editor.
 * Editors: Built-in support for text, numeric, numeric up-down, picker, date picker, time picker, switch,drop-down,autoComplete and checkbox editors. 
 * Custom editor: Supports loading the custom editors.
-* Validation: Built-in support to validate the data based on the [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) and data annotations. It also programmatically supports validation handling.
+* Validation: Built-in support to validate the data based on the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) and data annotations. It also programmatically supports validation handling.
 
 # Getting Started with Xamarin DataForm (SfDataForm)
 

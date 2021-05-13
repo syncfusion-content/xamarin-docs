@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time break in Xamarin Chat control | Syncfusion
-description: Learn here all about Time break support in Syncfusion Xamarin Chat (SfChat) control and more.
+description: Learn here all about Time break support in Syncfusion Xamarin Chat (SfChat) control, its elements and more.
 platform: xamarin
 control: SfChat
 documentation: ug

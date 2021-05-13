@@ -166,7 +166,7 @@ You can cancel the specific [DataFormItem](https://help.syncfusion.com/cr/xamari
 
 ### Using attributes
 
-You can set [AutoGenerateField](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute.autogeneratefield.aspx) to `false` for canceling the `DataFormItem` generation.
+You can set [AutoGenerateField](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.autogeneratefield?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_DataAnnotations_DisplayAttribute_AutoGenerateField) to `false` for canceling the `DataFormItem` generation.
 
 {% tabs %}
 {% highlight c# %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Events in Xamarin Chips control | Syncfusion
-description: Learn about Events support in Syncfusion Xamarin Chips control and more.
+description: Learn about Events support in Syncfusion Essential Studio Xamarin Chips control, its elements and more.
 platform: xamarin
 control: Chips
 documentation: ug

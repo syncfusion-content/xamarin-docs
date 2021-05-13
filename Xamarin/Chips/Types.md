@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Chips Types in Xamarin Chips control | Syncfusion
-description: Learn about Chips Types support in Syncfusion Xamarin Chips control and more.
+description: Learn about Chips Types support in Syncfusion Essential Studio Xamarin Chips control, its elements and more.
 platform: xamarin
 control: Chips
 documentation: ug

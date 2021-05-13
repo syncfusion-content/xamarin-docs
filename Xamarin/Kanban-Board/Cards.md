@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cards in Xamarin Kanban Board control | Syncfusion
-description: Learn here all about Cards support in Syncfusion Xamarin Kanban Board (SfKanban) control and more.
+description: Learn here all about Cards support in Syncfusion Xamarin Kanban Board (SfKanban) control, its elements and more.
 platform: xamarin
 control: Kanban
 documentation: ug

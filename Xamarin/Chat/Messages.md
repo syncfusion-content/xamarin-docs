@@ -1867,7 +1867,7 @@ N> In iOS you cannot scroll horizontally on the editor when `AllowMultilineInput
 
 ## Show avatar and author name for outgoing message
 
-By default the author name and avatar are not displayed for the outgoing messages(messages sent by the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser)). You can choose to either show or hide the avatar and name for all outgoing messages using the [SfChat.ShowOutgoingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowOutgoingMessageAvatar) and [SfChat.ShowOutgoingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowOutgoingMessageAuthorName) properties respectively.
+By default the author name and avatar are not displayed for the outgoing messages sent by the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser). You can choose to either show or hide the avatar and name for all outgoing messages using the [SfChat.ShowOutgoingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowOutgoingMessageAvatar) and [SfChat.ShowOutgoingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowOutgoingMessageAuthorName) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}
@@ -2005,7 +2005,7 @@ namespace GettingStarted
 
 ## Hide avatar and author name for incoming messages
 
-By default the author name and avatar are displayed for the incoming messages(messages sent by users other than the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser)). You can choose to either show or hide the avatar and name for all incoming messages using the [SfChat.ShowIncomingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowIncomingMessageAvatar) and [SfChat.ShowIncomingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowIncomingMessageAuthorName) properties respectively.
+By default the author name and avatar are displayed for the incoming messages sent by users other than the [SfChat.CurrentUser](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_CurrentUser). You can choose to either show or hide the avatar and name for all incoming messages using the [SfChat.ShowIncomingMessageAvatar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowIncomingMessageAvatar) and [SfChat.ShowIncomingMessageAuthorName](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowIncomingMessageAuthorName) properties respectively.
 
 {% tabs %}
 {% highlight xaml %}

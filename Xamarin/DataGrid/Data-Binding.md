@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding | SfDataGrid | Xamarin | Syncfusion
-description: Data Binding and different sources that can be bound to Xamarin.Forms DataGrid. It supports data sources such as List, ObservableCollection and so on.
+title: Data Binding in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Data Binding support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

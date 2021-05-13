@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection | SfDataGrid | Xamarin | Syncfusion
-description: How to enable selection for rows and cells, the selection modes, properties, events, and customizations available for selection in a data grid.
+title: Selection in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Selection support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Selection in Xamarin.Forms.DataGrid (SfDataGrid)
+# Selection in Xamarin DataGrid (SfDataGrid)
 
 This section explains how to enable selection in the data grid; modes, properties, and events involved in selection; and customizations available for selection.
 

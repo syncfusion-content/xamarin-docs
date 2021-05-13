@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping | SfDataGrid | Xamarin | Syncfusion
-description: Describes how to group one or more columns, expand/collapse the groups, use custom grouping logic in Xamarin.Forms DataGrid.
+title: Grouping in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Grouping support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Grouping in Xamarin.Forms DataGrid (SfDataGrid)
+# Grouping in Xamarin DataGrid (SfDataGrid)
 
 A group represents a collection of records that belongs to a particular category. When grouping, the data is organized into hierarchical structure based on matching field values. The records having identical values in the grouped column are combined to form a group. Each group is identified by its [CaptionSummaryRow](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_CaptionSummaryRowProperty) to get the underlying records in view.
 

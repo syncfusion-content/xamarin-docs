@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging | SfDataGrid | Xamarin | Syncfusion
-description: Enable paging and use its properties. Usage and advantages of on demand paging. Options to customize the appreance of the SfDataPager.
+title: Paging in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Paging support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug

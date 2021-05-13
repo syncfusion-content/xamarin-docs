@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion minor and major scale customization 
-description: Minor and Major scales
+title: Major and Minor scales in Xamarin DateTime Range Navigator control | Syncfusion
+description: Learn here all about Major and Minor scales support in Syncfusion Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Major and Minor Scales
+# Major and Minor scales in Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator)
 
 The SfDateTimeRangeNavigator control displays major and minor scales at the top and bottom position of the control. 
 

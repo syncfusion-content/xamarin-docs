@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Displaying Text in Syncfusion DigitalGauge control for Xamarin.Forms
-description: Learn how to set Display various type of Text such as numbers, alphabet and special character in DigitalGauge control for Xamarin.Forms
+title: Display Types in Xamarin Digital Gauge control | Syncfusion
+description: Learn here all about Display Types support in Syncfusion Xamarin Digital Gauge (SfDigitalGauge) control and more.
 platform: Xamarin
 control: DigitalGauge
 documentation: ug
 ---
 
-# Display value types in SfDigitalGauge
+# Display Types in Xamarin Digital Gauge (SfDigitalGauge)
 
 The digital gauge displays numbers, alphabet, and special characters, which are given in the value property.
 

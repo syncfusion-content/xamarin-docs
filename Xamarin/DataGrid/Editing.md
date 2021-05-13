@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing | SfDataGrid | Xamarin | Syncfusion
-description: Edit the cell values in the columns of the DataGrid using the built-in editors. Programmatically edit the data and use the events to customize the editing. 
+title: Editing in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Editing support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug

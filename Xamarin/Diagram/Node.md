@@ -1,6 +1,6 @@
 ---
-title: Node in Xamarin.Forms Diagram control | Syncfusion
-description: Learn here all about Node support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
+title: Node in Xamarin Diagram control | Syncfusion
+description: Learn here all about Node support in Syncfusion Xamarin Diagram (SfDiagram) control and more.
 platform: xamarin
 control: SfDiagram
 documentation: ug
@@ -125,5 +125,3 @@ The following code illustrates how to disable node dragging.
 Node node = new Node() {EnableDrag = false;, Width = 50, Height = 50, OffsetX = 100, OffsetY = 100};
 {% endhighlight %}
 {% endtabs %}
-
-N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

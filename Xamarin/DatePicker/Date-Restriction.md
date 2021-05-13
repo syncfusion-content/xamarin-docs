@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Date restriction of Syncfusion DatePicker control for Xamarin.Forms
-description: This section explains the way to give the minimum and maximum date range to the SfDatePicker control.  
+title: Date Restriction in Xamarin DatePicker control | Syncfusion
+description: Learn here all about Date Restriction support in Syncfusion Xamarin DatePicker (SfDatePicker) control and more.
 platform: Xamarin
 control: SfdatePicker
 documentation: ug
 ---
 
 
-# Date Restriction
+# Date Restriction in Xamarin DatePicker (SfDatePicker)
 
 DatePicker provides an option to select a date value within a specified range by using the MinimumDate and MaximumDate properties. Always the MinimumDate value has to be lesser than the MaximumDate value.
 

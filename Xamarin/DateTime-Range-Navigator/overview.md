@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | SfDateTimeRangeNavigator | Xamarin | Syncfusion
-description: Overview
+title: About Xamarin DateTime Range Navigator control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Overview
+# Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) Overview
 
 The DateTime Range Navigator control provides an intuitive interface for selecting a smaller date range from a larger collection. It is commonly used in financial dashboards to filter the date range for which the data needs to be visualized.
 
@@ -19,4 +19,4 @@ Main capabilities of the control are listed below
 * Visualize data with the available built-in chart types.
 * Intuitive user interface to select a particular time range.
 
-![](overview_images/overview_img1.jpeg)
+![overview_img1](overview_images/overview_img1.jpeg)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting SfChart as content of SfDateTimeRangeNavigator
-description: Content
+title: Content in Xamarin DateTime Range Navigator control | Syncfusion
+description: Learn here all about Content support in Syncfusion Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Content
+# Content in Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator)
 
 [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) allows you to set `SfChart` as its content, explicitly, using [`Content`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_Content) property. However, if you provide data source using [`ItemsSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_ItemsSource) property, the Chart with line series will be created for the provided ItemsSource and will be set as the content of range navigator internally, by default. But, if you configure the range navigator using [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_Maximum) properties, you have to manually configure the Chart with data source.
 
@@ -148,4 +148,4 @@ rangeNavigator.Content = chart;
 {% endhighlight %}
 {% endtabs %}
 
-![](content_images/content_img1.png)
+![content_img1](content_images/content_img1.png)

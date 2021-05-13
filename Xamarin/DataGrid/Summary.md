@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Summary | SfDataGrid | Xamarin | Syncfusion
-description: Apply summary for the caption, group and table row. Customize its format, aggregate. Use custom summaries/override summary renderers to modify the summary data.
+title: Summaries in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Summaries support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

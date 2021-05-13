@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid lines customization for SfDateTimeRangeNavigator
-description: Grid Lines
+title: Grid Lines in Xamarin DateTime Range Navigator control | Syncfusion
+description: Learn here all about Grid Lines support in Syncfusion Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Grid Lines
+# Grid Lines in Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator)
 
 The [`MinorScaleStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_MinorScaleStyle) and [`MajorScaleStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_MajorScaleStyle) properties of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) used to customize the minor and major grid lines. Following properties are available in each scale style to configure the grid lines.
 
@@ -58,4 +58,4 @@ rangeNavigator.MinorScaleStyle.GridLineDashArray = new double[2] { 4, 4 };
 {% endhighlight %}
 {% endtabs %}
 
-![](gridLine_images/gridline_img1.png)
+![gridline_img1](gridLine_images/gridline_img1.png)

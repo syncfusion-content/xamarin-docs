@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Select the Range of SfDateTimeRangeNavigator
-description: Selecting Range
+title: Range in Xamarin DateTime Range Navigator control | Syncfusion
+description: Learn here all about Range support in Syncfusion Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Selecting Range
+# Range in Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator)
 
 The left and right thumb of [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) are used to indicate the selected range in the large collection of data. Following are the ways you can select a range.
 
@@ -32,7 +32,7 @@ dateTime.ViewRangeEnd = new DateTime(2016, 10, 1);
 {% endhighlight %}
 {% endtabs %}
 
-![](range_images/range_img1.png)
+![range_img1](range_images/range_img1.png)
 
 ## Selected Data
 

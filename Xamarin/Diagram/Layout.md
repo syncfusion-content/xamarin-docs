@@ -1,6 +1,6 @@
 ---
-title: Adding Layout in Diagram control for Xamarin.Forms | Syncfusion
-description: Learn here all about Layout support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
+title: Layout in Xamarin Diagram control | Syncfusion
+description: Learn here all about Layout support in Syncfusion Xamarin Diagram (SfDiagram) control and more.
 platform: xamarin
 control: Diagram
 documentation: ug
@@ -310,4 +310,3 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
 
 N> Diagram supports layout sibling with spacing in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
 
-N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

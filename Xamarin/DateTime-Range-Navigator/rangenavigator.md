@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started | SfDateTimeRangeNavigator | Xamarin | Syncfusion
-description:  How to create a date time range navigator, adding reference details, customization options in Xamarin.Forms SfDateTimeRangeNavigator
+title: Getting Started in Xamarin DateTime Range Navigator control | Syncfusion
+description: Learn here all about Getting Started support in Syncfusion Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Getting Started in Xamarin.Forms SfDateTimeRangeNavigator
+# Getting Started in Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator)
 
 This section walks you through the steps required to add [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html) and populate it with data, and also explains how to respond to range selection performed in the control. 
 

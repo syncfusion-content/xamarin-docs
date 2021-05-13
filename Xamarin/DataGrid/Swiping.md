@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Swiping| SfDataGrid | Xamarin | Syncfusion
-description: Load custom view with actions on both the sides of a data row and perform swiping. Use the swiping events to customize or cancel the swiping operations. 
+title: Swiping in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Swiping support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug

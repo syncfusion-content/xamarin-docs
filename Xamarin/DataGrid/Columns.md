@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns | SfDataGrid | Xamarin | Syncfusion
-description: Creating and adding columns, different ways to create columns, features and customizations available in columns in Xamarin.Forms DataGrid.
+title: Columns in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Columns support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Columns in Xamarin DataGrid (SfDataGrid) 
+# Columns in Xamarin DataGrid (SfDataGrid)
 
 The SfDatagrid allows to create and add columns in the following two ways:
 

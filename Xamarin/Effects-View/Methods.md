@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Methods in Syncfusion EffectsView control in Xamarin.Forms
-description: This section describes how to call the methods to apply and reset effects programatically in EffectsView control.
+title: Methods in Xamarin Effects View control | Syncfusion
+description: Learn here all about Methods support in Syncfusion Xamarin Effects View (SfEffectsView) control and more.
 platform: xamarin
 control: SfEffectsView
 documentation: ug
 ---
 
-# Methods
+# Methods in Xamarin Effects View (SfEffectsView)
 
 You can add or remove effect programmatically using the [`ApplyEffects`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_ApplyEffects_Syncfusion_XForms_EffectsView_SfEffects_Syncfusion_XForms_EffectsView_RippleStartPosition_System_Nullable_System_Drawing_Point__System_Boolean_) or [`Reset`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html#Syncfusion_XForms_EffectsView_SfEffectsView_Reset) method.
 

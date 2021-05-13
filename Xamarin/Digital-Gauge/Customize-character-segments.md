@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize Character in Syncfusion DigitalGauge for Xamarin.Forms
-description: Learn how to customise the character, character segment stroke, disabled segment and background color in DigitalGauge for Xamarin.Forms
+title: Customize Character Segments in Xamarin Digital Gauge control | Syncfusion
+description: Learn here all about Customize Character Segments support in Syncfusion Xamarin Digital Gauge (SfDigitalGauge) control and more.
 platform: xamarin 
 control: DigitalGauge
 documentation: ug
 ---
 
-# Customize character segments
+# Customize Character Segments in Xamarin Digital Gauge (SfDigitalGauge)
 
 The characters of a digital gauge can be customized in terms of [`CharacterWidth`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfDigitalGauge.html#Syncfusion_SfGauge_XForms_SfDigitalGauge_CharacterWidth), [`CharacterHeight`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfDigitalGauge.html#Syncfusion_SfGauge_XForms_SfDigitalGauge_CharacterHeight), [`CharacterSpacing`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfDigitalGauge.html#Syncfusion_SfGauge_XForms_SfDigitalGauge_CharacterSpacing), and [`CharacterStrokeColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfDigitalGauge.html#Syncfusion_SfGauge_XForms_SfDigitalGauge_CharacterStrokeColor).
 

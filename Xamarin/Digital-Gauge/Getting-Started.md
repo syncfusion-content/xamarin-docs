@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Getting Started with Syncfusion DigitalGauge control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.Forms platform also describes how to set value for digitalGauge control
+title: Getting Started with Xamarin Digital Gauge control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Digital Gauge (SfDigitalGauge) control, its elements and more.
 platform: Xamarin
 control: DigitalGauge
 documentation: ug
 ---
-# Getting Started with SfDigitalGauge
+# Getting Started with Xamarin Digital Gauge (SfDigitalGauge)
 
 This section explains the steps required to configure the [`SfDigitalGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfDigitalGauge.html) and add basic elements to it using various APIs.
 

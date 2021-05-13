@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Effects in Syncfusion EffectsView control in Xamarin.Forms
-description: This section describes the different effects available in Syncfusion EffectsView control in Xamarin.Forms.
+title: Effects in Xamarin Effects View control | Syncfusion
+description: Learn here all about Effects support in Syncfusion Xamarin Effects View (SfEffectsView) control and more.
 platform: xamarin
 control: SfEffectsView
 documentation: ug
 ---
 
-# Effects
+# Effects in Xamarin Effects View (SfEffectsView)
 
 The [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides modern effects such as highlight, ripple, selection, scaling, and rotation. This section explains about these effects.
 

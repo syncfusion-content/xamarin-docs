@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cards for Essential Xamarin.Forms Kanban | Syncfusion
-description: Kanban Cards
+title: Cards in Xamarin Kanban Board control | Syncfusion
+description: Learn here all about Cards support in Syncfusion Xamarin Kanban Board (SfKanban) control and more.
 platform: xamarin
 control: Kanban
 documentation: ug
 ---
 
-# Cards
+# Cards in Xamarin Kanban Board (SfKanban)
 
 The default elements of a card can be customized using the below properties of [`KanbanModel`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanModel.html).
 

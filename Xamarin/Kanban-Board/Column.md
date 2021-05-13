@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column in Xamarin.Forms Kanban control
-description: Kanban Column
+title: Column in Xamarin Kanban Board control | Syncfusion
+description: Learn here all about Column support in Syncfusion Xamarin Kanban Board (SfKanban) control and more.
 platform: xamarin
 control: Kanban
 documentation: ug
 ---
 
-# Column
+# Column in Xamarin Kanban Board (SfKanban)
 
 ## Customizing Column Size
 

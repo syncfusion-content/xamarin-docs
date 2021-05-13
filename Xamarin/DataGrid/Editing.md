@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Editing support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+description: Learn here all about Editing support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -134,15 +134,15 @@ N> Currently this property is only applicable to the [GridNumericColumn](https:/
 
 ## Support for IEditableObject
 
-The SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements the [IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.aspx) interface.
+The SfDataGrid supports to commit and roll back the changes in row level when underlying data object implements the [IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0) interface.
 
 The editing changes in a row will be committed only when tapping on next row.
 
 The `IEditableObject` has the following methods to capture editing:
 
- * [BeginEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.beginedit.aspx): Gets called to begin edit on underlying data object when cells in a row enters into edit mode.
- * [CancelEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.canceledit.aspx): Gets called when you cancel editing to discard the changes in a row since last BeginEdit call.
- * [EndEdit](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject.endedit.aspx): Gets called when you move to the next row by tapping to commit changes in underlying data object since last BeginEdit call.
+ * [BeginEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.beginedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_BeginEdit): Gets called to begin edit on underlying data object when cells in a row enters into edit mode.
+ * [CancelEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.canceledit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_CancelEdit): Gets called when you cancel editing to discard the changes in a row since last BeginEdit call.
+ * [EndEdit](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject.endedit?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_IEditableObject_EndEdit): Gets called when you move to the next row by tapping to commit changes in underlying data object since last BeginEdit call.
 
 The following code snippet explains the simple implementation of `IEditableObject`:
 

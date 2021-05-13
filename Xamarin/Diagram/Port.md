@@ -1,6 +1,6 @@
 ---
 title: Port in Xamarin Diagram control | Syncfusion
-description: Learn here all about Port support in Syncfusion Xamarin Diagram (SfDiagram) control and more.
+description: Learn here all about Port support in Syncfusion Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: Xamarin
 control: SfDiagram
 documentation: UG

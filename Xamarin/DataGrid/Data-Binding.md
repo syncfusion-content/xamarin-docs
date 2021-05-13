@@ -47,7 +47,7 @@ N> The SfDataGrid does not supports `DataTable` binding in `Xamarin.Forms` since
 
 ## Binding with IEnumerable
 
-The SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://msdn.microsoft.com/en-us/library/system.collections.ienumerable) interface. All the data operations such as sorting, grouping, and filtering are supported when binding collection derived from `IEnumerable`.
+The SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?redirectedfrom=MSDN&view=net-5.0) interface. All the data operations such as sorting, grouping, and filtering are supported when binding collection derived from `IEnumerable`.
 
 ## Binding with DataTable
 `SfDataGrid` control supports to bind the [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=netframework-4.8). SfDataGrid control automatically refresh the UI when binding DataTable as `ItemsSource` when rows are added, removed or cleared.
@@ -70,9 +70,9 @@ Below are the limitations when binding DataTable as `ItemsSource` to SfDataGrid.
 * Custom sorting is not supported.
 * [SfDataGrid.View.Filter](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_Filter) is not supported.
 * Advanced Filtering does not support Case Sensitive filtering.
-* [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html#Syncfusion_SfDataGrid_XForms_GridUnboundColumn_Expression) is not supported. This can be achieved by using the [DataColumn](https://msdn.microsoft.com/en-us/library/System.Data.DataColumn) of DataTable by setting [DataColumn.Expression](https://msdn.microsoft.com/en-us/library/system.data.datacolumn.expression) property.
+* [GridUnboundColumn.Expression](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html#Syncfusion_SfDataGrid_XForms_GridUnboundColumn_Expression) is not supported. This can be achieved by using the [DataColumn](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn?redirectedfrom=MSDN&view=net-5.0) of DataTable by setting [DataColumn.Expression](https://docs.microsoft.com/en-us/dotnet/api/system.data.datacolumn.expression?redirectedfrom=MSDN&view=net-5.0#System_Data_DataColumn_Expression) property.
 * [SfDataGrid.LiveDataUpdateMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.CollectionViewAdv.html#Syncfusion_Data_CollectionViewAdv_LiveDataUpdateMode) is not supported.
-* Filtering with [TimeSpan](https://msdn.microsoft.com/en-us/library/system.timespan) values is not supported.
+* Filtering with [TimeSpan](https://docs.microsoft.com/en-us/dotnet/api/system.timespan?redirectedfrom=MSDN&view=net-5.0) values is not supported.
 * Filtering with sub second components in `DateTime` values is not supported.
 
 ## Binding complex properties
@@ -148,7 +148,7 @@ The [RecordPropertyChanged](https://help.syncfusion.com/cr/xamarin/) event is ra
 
 `PropertyChangedEventArgs` has the following property:
 
- [PropertyName](https://msdn.microsoft.com/en-us/library/system.componentmodel.propertychangedeventargs.propertyname): It denotes the `PropertyName` of the changed value.
+ [PropertyName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs.propertyname?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_PropertyChangedEventArgs_PropertyName): It denotes the `PropertyName` of the changed value.
 
 ### CollectionChanged
 

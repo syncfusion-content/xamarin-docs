@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize Character Segments in Xamarin Digital Gauge control | Syncfusion
+title: Customize Character Segments in Xamarin Digital Gauge | Syncfusion
 description: Learn here all about Customize Character Segments support in Syncfusion Xamarin Digital Gauge (SfDigitalGauge) control and more.
 platform: xamarin 
 control: DigitalGauge

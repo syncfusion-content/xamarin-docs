@@ -1,6 +1,6 @@
 ---
 title: Layout in Xamarin Diagram control | Syncfusion
-description: Learn here all about Layout support in Syncfusion Xamarin Diagram (SfDiagram) control and more.
+description: Learn here all about Layout support in Syncfusion Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: xamarin
 control: Diagram
 documentation: ug

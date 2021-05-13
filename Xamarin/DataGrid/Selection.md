@@ -278,7 +278,7 @@ If the active current cell is in edit mode, changes will be committed and select
 <kbd>Esc</kbd>
 </td>
 <td>
-If the current cell is in edit mode, reverts the changes done in the current cell. If the underlying source implements the {{'[IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject#"")'| markdownify }}, pressing Esc key for the second time will cancel the edit mode for the entire row.
+If the current cell is in edit mode, reverts the changes done in the current cell. If the underlying source implements the {{'[IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0#"")'| markdownify }}, pressing Esc key for the second time will cancel the edit mode for the entire row.
 </td>
 </tr>
 <tr>

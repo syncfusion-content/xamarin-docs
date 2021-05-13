@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Sorting support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+description: Learn here all about Sorting support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in Xamarin DataGrid control | Syncfusion
-description: Learn here all about Grouping support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
+description: Learn here all about Grouping support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

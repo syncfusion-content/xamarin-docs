@@ -88,7 +88,7 @@ SfCardLayout cardLayout = new SfCardLayout()
 
 ![SwipeDirection in Xamarin.Forms SfCardLayout](cardlayout-customization_images/swipedirection.png)
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/xamarin.forms-cards).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Getting-started-sample-of-cards).
 
 ## Customization in CardView
 

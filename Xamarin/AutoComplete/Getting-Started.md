@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Xamarin.Forms AutoComplete
-description: A quick tour to initial users on Syncfusion autocomplete control and explain about how to use it for Xamarin.Forms platform
+title: Getting Started with Xamarin AutoComplete control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin AutoComplete (SfAutoComplete) control, its elements and more.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Header Configuration with Syncfusion Backdrop Page
-description: How to configure a header in backdrop page.
+title: Header Configuration in Xamarin Backdrop Page control | Syncfusion
+description: Learn here all about Header Configuration support in Syncfusion Xamarin Backdrop Page (SfBackdropPage) control and more.
 platform: xamarin
 control: SfBackdropPage
 documentation: ug
 ---
 
-# Header Configuration
+# Header Configuration in Xamarin Backdrop Page (SfBackdropPage)
 
 Add backdrop page as a children of [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) in App.xaml.cs class. Also, [`BarBackgroundColor`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage.barbackgroundcolor?view=xamarin-forms), [`BarTextColor`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage.bartextcolor?view=xamarin-forms) and other properties of [`NavigationPage`](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.navigationpage?view=xamarin-forms) can be set to customize the default appearance of header.
  

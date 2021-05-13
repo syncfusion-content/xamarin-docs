@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Supported Symbologies in Syncfusion SfBarcode control for Xamarin.Forms
-description: Different Symbologies supported in SfBarcode control
+title: Supported Symbologies in Xamarin Barcode control | Syncfusion
+description: Learn here all about Supported Symbologies support in Syncfusion Xamarin Barcode (SfBarcode) control and more.
 platform: xamarin
 control: SfBarcode
 documentation: ug
 
 ---
 
-# SUPPORTED SYMBOLOGIES
+# Supported Symbologies in Xamarin Barcode (SfBarcode)
 
  Essential Barcode supports 10 variants of one dimensional and 2 variants of two dimensional Barcodes that are illustrated as follows.
 
@@ -42,7 +42,7 @@ One dimensional Barcode is also called as linear Barcode. The bars and spaces si
 
 {% endhighlight %}
 
-![](supported-symbologies_images/codabar/CodaBar.png)
+![CodaBar](supported-symbologies_images/codabar/CodaBar.png)
 
 Codabar barcode
 
@@ -62,7 +62,7 @@ Codabar barcode
 
 {% endhighlight %}
 
-![](supported-symbologies_images/code11/Code11.png)
+![Code11](supported-symbologies_images/code11/Code11.png)
 
 Code 11 barcode
 
@@ -83,7 +83,7 @@ Code 11 barcode
 
 {% endhighlight %}
 
-![](supported-symbologies_images/code32/Code32.png)
+![Code32](supported-symbologies_images/code32/Code32.png)
 
 Code32 barcode
 
@@ -103,7 +103,7 @@ Code32 barcode
 
 {% endhighlight %}
 
-![](supported-symbologies_images/code39/Code39.png)
+![Code39](supported-symbologies_images/code39/Code39.png)
 
 Code 39 barcode
 
@@ -118,7 +118,7 @@ Code 39 barcode
 
 {% endhighlight %}
 
-![](supported-symbologies_images/code39Extended/Code39Extended.png)
+![Code39Extended](supported-symbologies_images/code39Extended/Code39Extended.png)
 
 Extended Code 39 barcode
 
@@ -137,7 +137,7 @@ Extended Code 39 barcode
 
 {% endhighlight %}
 
-![](supported-symbologies_images/code93/Code93.png)
+![Code93](supported-symbologies_images/code93/Code93.png)
 
 Code93 barcode 
 
@@ -157,7 +157,7 @@ Code93 barcode
 
 {% endhighlight %}
 
-![](supported-symbologies_images/code93Extended/Code93Extended.png)
+![Code93Extended](supported-symbologies_images/code93Extended/Code93Extended.png)
 
 Code93 Extended barcode
 
@@ -177,7 +177,7 @@ Code93 Extended barcode
 
 {% endhighlight %}
 
-![](supported-symbologies_images/code128A/Code128A.png)
+![Code128A](supported-symbologies_images/code128A/Code128A.png)
 
 Code128A barcode
 
@@ -193,7 +193,7 @@ Code128A barcode
 
 {% endhighlight %}
 
-![](supported-symbologies_images/code128B/Code128B.png)
+![Code128B](supported-symbologies_images/code128B/Code128B.png)
 
 Code128B barcode
 
@@ -209,7 +209,7 @@ Code128B barcode
 
 {% endhighlight %}
 
-![](supported-symbologies_images/code128C/Code128C.png)
+![Code128C](supported-symbologies_images/code128C/Code128C.png)
 
 Code128C barcode
 
@@ -239,7 +239,7 @@ QR Code is a two dimensional symbology that is popularly used in automotive indu
 
 {% endhighlight %}
 
-![](supported-symbologies_images/qr-code/QRCode.png)
+![QRCode](supported-symbologies_images/qr-code/QRCode.png)
 
 QR bar code
 
@@ -255,7 +255,7 @@ DataMatrix symbology is widely used in printed media such as labels and letters.
 
 {% endhighlight %}
 
-![](supported-symbologies_images/data-matrix/DataMatrix.png)
+![DataMatrix](supported-symbologies_images/data-matrix/DataMatrix.png)
 
 Data Matrix bar code
 

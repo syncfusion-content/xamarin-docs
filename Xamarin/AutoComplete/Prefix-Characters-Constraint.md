@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Colors in Syncfusion SfAutoComplete control for Xamarin.Forms
-description: This section will describe about how to set minimum Prefix Characters in Xamarin.Forms SfAutoComplete.
+title: Prefix Characters Constraint in Xamarin AutoComplete | Syncfusion
+description: Learn here all about Prefix Characters Constraint support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
-# Prefix Characters Constraint
+# Prefix Characters Constraint in Xamarin AutoComplete (SfAutoComplete)
 
 ## Prefix Characters Constraint in Xamarin SfAutoComplete
 

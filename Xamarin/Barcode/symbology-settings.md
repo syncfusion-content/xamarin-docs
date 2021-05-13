@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Symbology settings in Syncfusion SfBarcode control for Xamarin.Forms
-description: Learn about Symbology settings in SfBarcode control
+title: Symbology Settings in Xamarin Barcode control | Syncfusion
+description: Learn here all about Symbology Settings support in Syncfusion Xamarin Barcode (SfBarcode) control and more.
 platform: xamarin
 control: SfBarcode
 documentation: ug
 
 ---
 
-# SYMBOLOGY SETTINGS
+# Symbology Settings in Xamarin Barcode (SfBarcode)
 
 Each and every Barcode `Symbology` can be personalized with optional settings that may affect the appearance of specific Barcode.
 

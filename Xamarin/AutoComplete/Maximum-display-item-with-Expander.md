@@ -1,12 +1,12 @@
 ---
 layout: post
-title: LoadMore in Syncfusion SfAutoComplete control for Xamarin.Forms
-description: This section will deswcribe about how to restrict maximum suggestion to be displayed in Xamarin.Forms SfAutoComplete.
+title: Maximum display item in Xamarin AutoComplete | Syncfusion
+description: Learn here all about Maximum display item with Expander support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
-# Maximum Display Item with Expander
+# Maximum display item with Expander in Xamarin AutoComplete
 
 ## Maximum display item with expander in Xamarin SfAutoComplete
 

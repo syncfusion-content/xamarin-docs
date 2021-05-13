@@ -1,7 +1,7 @@
 ---
 layout: post
-title: DataTemplateSelector of Syncfusion Xamarin.Forms SfAutoComplete
-description: This section will discribes about how to use a DataTemplateSelctor  for Xamarin.Forms SfAutoComplete
+title: DataTemplateSelector in Xamarin AutoComplete control | Syncfusion
+description: Learn here all about DataTemplateSelector support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more.
 platform: Xamarin
 control: SfAutoComplete
 documentation: ug

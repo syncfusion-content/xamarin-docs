@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Predefined symbols of Syncfusion Badge view control for Xamarin.Forms
-description: Learn how to set Syncfusion badge view predefined symbols and types of badge icons in Xamarin.Forms platform
+title: Predefined Symbols in Xamarin Badge View control | Syncfusion
+description: Learn here all about Predefined Symbols support in Syncfusion Xamarin Badge View (SfBadgeView) control and more.
 platform: xamarin
 control: SfBadgeView
 documentation: ug
 
 ---
 
-# Predefined symbols in Xamarin.Forms BadgeView (SfBadgeView)
+# Predefined Symbols in Xamarin Badge View (SfBadgeView)
 
 You can change the badge icon using the [`BadgeIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_BadgeIcon) property. Badge icons will be visible when you do not set the badge text. The badge supports the following types of [`BadgeIcon`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.BadgeView.BadgeSetting.html#Syncfusion_XForms_BadgeView_BadgeSetting_BadgeIcon):
 

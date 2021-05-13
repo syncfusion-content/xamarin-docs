@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Various customization in Syncfusion border control for Xamarin.Forms
-description: This section describes how to provide various customization to the Syncfusion Border control in Xamarin.Forms.
+title: Customization in Xamarin Border control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Xamarin Border (SfBorder) control and more.
 platform: Xamarin
 control: SfBorder
 documentation: ug
 ---
 
-# Customization in Xamarin.Forms Border (SfBorder)
+# Customization in Xamarin Border (SfBorder)
 
 The border control supports customizing the border color, width, corner radius, background color, and more. The border can be customized using the following properties.
 

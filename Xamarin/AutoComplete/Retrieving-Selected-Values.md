@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Retrieving selected value in Syncfusion SfAutoComplete control.
-description: This section describes how to get the selected value and set the selected value in the SfAutoComplete control.
+title: Retrieving Selected Values in Xamarin AutoComplete | Syncfusion
+description: Learn here all about Retrieving Selected Values support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more.
 platform: xamarin
 control: SfAutoComplete
 documentation: ug
 ---
 
-# Handling Selected Items
+# Retrieving Selected Values in Xamarin AutoComplete (SfAutoComplete)
 
 ## Retrieving selected  values in Xamarin SfAutoComplete 
 

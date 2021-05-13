@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Various customization in Syncfusion AvatarView control.  
-description: Learn what are the types in AvatarType and how to set value for the Avatartype in xamarin forms AvatarView.
+title: Content Type in Xamarin Avatar View control | Syncfusion
+description: Learn here all about Content Type support in Syncfusion Xamarin Avatar View (SfAvatarView) control and more.
 platform: Xamarin
 control: SfAvatarView
 documentation: ug
 ---
 
-# Content Types
+# Content Type in Xamarin Avatar View (SfAvatarView)
 
 ## Avatar Types
 

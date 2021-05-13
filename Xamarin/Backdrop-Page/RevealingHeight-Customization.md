@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Reveal height customization of Syncfusion Backdrop Page
-description: How to customize a reveal height
+title: Reveal Height Customization in Xamarin Backdrop Page | Syncfusion
+description: Learn here all about Reveal Height Customization support in Syncfusion Xamarin Backdrop Page (SfBackdropPage) control and more.
 platform: xamarin
 control: SfBackdropPage
 documentation: ug
 ---
 
-# Reveal Height Customization
+# Reveal Height Customization in Xamarin Backdrop Page (SfBackdropPage)
 
 When revealing the [`back layer`](https://help.syncfusion.com/xamarin/sfbackdroppage/getting-started#reveal-and-conceal-the-back-layer), the front layer will be moved downwards. By setting the [`BackLayerRevealOption`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Backdrop.SfBackdropPage.html#Syncfusion_XForms_Backdrop_SfBackdropPage_BackLayerRevealOption) property of backdrop, you can customize how far the front layer can be moved from the header when revealing the back layer.
 

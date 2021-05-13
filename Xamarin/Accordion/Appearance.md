@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance | Accordion for Xamarin.Forms | Syncfusion
-description: Learn about Appearance support in Syncfusion Xamarin Accordion (SfAccordion) control and more details.
+title: Appearance in Xamarin Accordion control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion Xamarin Accordion (SfAccordion) control and more.
 platform: xamarin
 control: SfAccordion
 documentation: ug

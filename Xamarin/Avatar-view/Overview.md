@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Avatarview control for Xamarin.Forms
-description: A quick go through to learn about the Xamarin.Forms SfAvatarView control and the key features available in it. 
+title: About Xamarin Avatar View control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Avatar View (SfAvatarView) control, its elements and more.
 platform: xamarin
 control: SfAvatarView
 documentation: ug

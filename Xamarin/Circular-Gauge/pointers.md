@@ -917,7 +917,7 @@ N> By default, the pointer drag was disabled.
 
 ## Step frequency
 
-The `StepFrequency` property is used to specify the interval between snap points while dragging the [`MarkerPointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.MarkerPointer.html) or [`NeedlePointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.NeedlePointer.html).
+The [`StepFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.MarkerPointer.html#Syncfusion_SfGauge_XForms_MarkerPointer_StepFrequency) property is used to specify the interval between snap points while dragging the [`MarkerPointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.MarkerPointer.html) or [`NeedlePointer`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.NeedlePointer.html).
 
 For example, when the value of [`StepFrequency`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.MarkerPointer.html#Syncfusion_SfGauge_XForms_MarkerPointer_StepFrequency) is 20, then while dragging, the pointer will not move continuously, instead it will update in terms of 20.
 

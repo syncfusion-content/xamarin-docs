@@ -1,6 +1,6 @@
 ---
 layout: post
-title: SfRadialMenuItems Customization in Xamarin Radial Menu control | Syncfusion
+title: SfRadialMenuItems Customization in Xamarin Radial Menu | Syncfusion
 description: Learn here all about SfRadialMenuItems Customization support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
 platform: Xamarin
 control: SfRadialMenu

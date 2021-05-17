@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FAQ in Xamarin Popup control | Syncfusion
-description: Learn here all about FAQ support in Syncfusion Xamarin Popup (SfPopupLayout) control and more.
+description: Learn here all about FAQ support in Syncfusion Xamarin Popup (SfPopupLayout) control, its elements and more.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug

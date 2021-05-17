@@ -56,7 +56,7 @@ public MainPage()
 
 {% endtabs %}
 
-![Popup with zoom animation](GettingStarted_images/ZoomAnimation.gif)
+![Popup with zoom animation](GettingStarted_images/ZoomAnimation.png)
 
 ### Fade 
 

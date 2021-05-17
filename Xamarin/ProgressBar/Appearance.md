@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Appearance in Xamarin ProgressBar control | Syncfusion
+description: Learn here all about appearance support in Syncfusion Xamarin ProgressBar control, its elements and more.
 platform: xamarin
 control: ProgressBar
 documentation: ug

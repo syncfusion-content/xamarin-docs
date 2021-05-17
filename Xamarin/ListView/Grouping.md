@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in Xamarin ListView control | Syncfusion
-description: Learn here all about Grouping support in Syncfusion Xamarin ListView (SfListView) control and more.
+description: Learn here all about Grouping support in Syncfusion Xamarin ListView (SfListView) control, its elements and more.
 platform: xamarin
 control: SfListView
 documentation: ug

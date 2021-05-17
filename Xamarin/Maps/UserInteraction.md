@@ -1,7 +1,7 @@
 ---
 layout: post
 title: User Interaction in Xamarin Maps control | Syncfusion
-description: Learn here all about User Interaction support in Syncfusion Xamarin Maps (SfMaps) control and more.
+description: Learn here all about User Interaction support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug

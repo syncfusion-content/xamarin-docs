@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Setting Toggle Animations in Xamarin Navigation Drawer control | Syncfusion
+title: Setting Toggle Animations in Xamarin Navigation Drawer | Syncfusion
 description: Learn here all about Setting Toggle Animations support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
-# Setting Toggle Animations in Xamarin Navigation Drawer (SfNavigationDrawer)
+# Setting Toggle Animations in Xamarin Navigation Drawer
 
 The drawer toggling animation can be changed using Transition property and it can be set to three different values. They are
 

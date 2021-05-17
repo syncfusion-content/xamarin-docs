@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Mask Characters as Literals in Xamarin Masked Entry control | Syncfusion
+title: Using Mask Characters as Literals in Xamarin Masked Entry | Syncfusion
 description: Learn here all about Using Mask Characters as Literals support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
@@ -8,7 +8,7 @@ documentation: ug
 keywords: mask, SfMaskedEdit, maskededit
 ---
 
-# Using Mask Characters as Literals in Xamarin Masked Entry (SfMaskedEdit)
+# Using Mask Characters as Literals in Xamarin Masked Entry
 
 To use mask character as a literal, precede the mask character with a backslash (\\). For example, to display the dollar sign ($), then set the mask as follows:
 

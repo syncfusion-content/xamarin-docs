@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Setting Sliding Panel Content in Xamarin Navigation Drawer control | Syncfusion
+title: Setting Sliding Panel Content in Xamarin NavigationDrawer | Syncfusion
 description: Learn here all about Setting Sliding Panel Content support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Setting Sliding Panel Content in Xamarin Navigation Drawer (SfNavigationDrawer)
+# Setting Sliding Panel Content in Xamarin Navigation Drawer
 
 The drawer pane content is viewable only if drawer is in open state. Its content can be set as
 

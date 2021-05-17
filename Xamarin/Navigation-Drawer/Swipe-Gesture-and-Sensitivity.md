@@ -1,12 +1,12 @@
 ---
 layout: post
-title: SwipGesture and its Sensitivity in Xamarin Navigation Drawer control | Syncfusion
+title: SwipGesture and Sensitivity in Xamarin Navigation Drawer | Syncfusion
 description: Learn here all about SwipGesture and its Sensitivity support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
-# SwipGesture and its Sensitivity in Xamarin Navigation Drawer (SfNavigationDrawer)
+# SwipeGesture and its Sensitivity in Xamarin Navigation Drawer
 
 NavigationDrawer supports swipe gesture for opening and closing the drawer. 
 

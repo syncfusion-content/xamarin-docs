@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Configuring The Drawer In Different Sides in Xamarin Navigation Drawer control | Syncfusion
+title: Configuring The Drawer In Xamarin Navigation Drawer | Syncfusion
 description: Learn here all about Configuring The Drawer In Different Sides support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
-# Configuring The Drawer In Different Sides in Xamarin Navigation Drawer (SfNavigationDrawer)
+# Configuring The Drawer In Different Sides in Xamarin Navigation Drawer
 
 The supplemental pane can be drawn in and out from all four sides. `Position` property is used to change the side of pane and the values are
 

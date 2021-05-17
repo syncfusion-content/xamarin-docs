@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion RadialMenu item customization in Xamarin.Forms
-description: This section explains how to use the various properties available in Syncfusion Xamarin.Forms SfRadialMenuItem
+title: SfRadialMenuItems Customization in Xamarin Radial Menu control | Syncfusion
+description: Learn here all about SfRadialMenuItems Customization support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
 platform: Xamarin
 control: SfRadialMenu
 documentation: ug
 ---
 
-# SfRadialMenuItem Customization
+# SfRadialMenuItems Customization in Xamarin Radial Menu (SfRadialMenu)
 
 The `SfRadialMenuItem` class provides various options to customize the items by giving `Custom Views`, `FontIcons`, and `Images`. You can add radial menu items by hierarchy. To add a SfRadialMenuItem with SfRadialMenu, create an instance of SfRadialMenuItem, and add it to the `Items` property, which is available in SfRadialMenu.
 

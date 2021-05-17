@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Popup Events| SfPopupLayout |Xamarin| Syncfusion
-description: Use the built-in events available in Xamarin.Forms PopupLayout to control the opening and closing of popup based on conditions or requirements.
+title: Popup Events And Commands in Xamarin Popup control | Syncfusion
+description: Learn here all about Popup Events And Commands support in Syncfusion Xamarin Popup (SfPopupLayout) control and more.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Popup Events And Commands
+# Popup Events And Commands in Xamarin Popup (SfPopupLayout)
 
 There are four built-in events in the SfPopupLayout control namely:
 

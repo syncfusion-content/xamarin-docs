@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Events
+title: Events in Xamarin ProgressBar control | Syncfusion
 platform: xamarin
 control: ProgressBar
 documentation: ug
 ---
 
-# Events
+# Events in Xamarin ProgressBar (Progress Bar)
 
 ## ValueChanged
 

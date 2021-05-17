@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Styles | SfPopupLayout |Xamarin | Syncfusion
-description: Apply styles for all the elements in Xamarin.Forms PopupLayout(SfPopupLayout). Customize the Border, Popup Header and  Footer in the PopupLayout.
+title: Styles in Xamarin Popup control | Syncfusion
+description: Learn here all about Styles support in Syncfusion Xamarin Popup (SfPopupLayout) control and more.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Styling in Xamarin.Forms Popup(SfPopupLayout)
+# Styles in Xamarin Popup (SfPopupLayout)
 
 The SfPopupLayout applies style to all of its elements by using the [SfPopupLayout.PopupView.PopupStyle](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.PopupView.html#Syncfusion_XForms_PopupLayout_PopupView_PopupStyle) property.
 

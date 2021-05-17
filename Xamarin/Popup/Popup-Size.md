@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Popup size | Fullscreen | Auto-size | Popup | Xamarin | Syncfusion
-description: Display popup at a desired size, or show popup in full screen or Auto-size/Auto-fit Popup's content in Xamarin.Forms Popup.
+title: Popup Size in Xamarin Popup control | Syncfusion
+description: Learn here all about Popup Size support in Syncfusion Xamarin Popup (SfPopupLayout) control and more.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 ---
 
-# Popup Size
+# Popup Size in Xamarin Popup (SfPopupLayout)
 
 SfPopupLayout allows displaying the Popup at any desired width and height by setting the `SfPopupLayout.PopupView.WidthRequest` and `SfPopupLayout.PopupView.HeightRequest`. The Popup size can also be changed by setting width request and height request to the views loaded inside the templates of the Popup.
 

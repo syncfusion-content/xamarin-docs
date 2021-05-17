@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Animation
+title: Animation in Xamarin ProgressBar control | Syncfusion
 platform: xamarin
 control: ProgressBar
 documentation: ug
 ---
 
-# Animation
+# Animation in Xamarin ProgressBar (Progress Bar)
 
 The progress bar provides animation support to visualize the progress value changes in an interactive way. 
 

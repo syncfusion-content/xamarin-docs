@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | SfPopupLayout | Xamarin | Syncfusion
-description: Getting started with Xamarin.Forms Popup or Dialog and walk through to create a demo application from the scratch. 
+title: Getting Started with Xamarin Popup control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Popup (SfPopupLayout) control, its elements and more.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug

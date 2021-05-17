@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Segments
+title: Segments in Xamarin ProgressBar control | Syncfusion
 platform: xamarin
 control: ProgressBar
 documentation: ug
 ---
 
-# Segments
+# Segments in Xamarin ProgressBar (Progress Bar)
 
 To visualize the progress of multiple sequential tasks, split the progress bar into multiple segments by setting the [`SegmentsCount`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.ProgressBarBase.html#Syncfusion_XForms_ProgressBar_ProgressBarBase_SegmentCount) property as demonstrated in the following code sample.
 
@@ -37,7 +37,7 @@ this.CircularProgressBar.SegmentCount = 7;
 
 {% endtabs %} 
 
-![](overview_images/Segment.png)
+![Segment](overview_images/Segment.png)
 
 **Gap customization**
 
@@ -68,4 +68,4 @@ this.CircularProgressBar.GapWidth = 10;
 
 {% endtabs %} 
 
-![](overview_images/Gap.png)
+![Gap](overview_images/Gap.png)

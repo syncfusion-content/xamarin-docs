@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Custom Content for Syncfusion Essential Xamarin.Forms Progress Bar
+title: Custom Content in Xamarin ProgressBar control | Syncfusion
 platform: xamarin
 control: ProgressBar
 documentation: ug
 ---
 
-# Custom Content
+# Custom Content in Xamarin ProgressBar (Progress Bar)
 
 In the circular progress bar, you can add any view to the center using the [`Content`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfCircularProgressBar.html#Syncfusion_XForms_ProgressBar_SfCircularProgressBar_Content) property. 
 

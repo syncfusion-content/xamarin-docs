@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Events in Syncfusion RadialMenu control for Xamarin.Forms
-description : Learn how to perform events in RadialMenu
+title: Events in Xamarin Radial Menu control | Syncfusion
+description: Learn here all about Events support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
 platform : xamarin
 control : SfRadialMenu
 documentation : ug
 ---
 
-# Events
+# Events in Xamarin Radial Menu (SfRadialMenu)
 
 ## Perform an action while navigating to next level
 

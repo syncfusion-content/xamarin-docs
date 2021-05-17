@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in Syncfusion ListView
-description: Describes about the grouping, goup header and its functionalities like custom comparer, multi grouping in SfListView.
+title: Grouping in Xamarin ListView control | Syncfusion
+description: Learn here all about Grouping support in Syncfusion Xamarin ListView (SfListView) control and more.
 platform: xamarin
 control: SfListView
 documentation: ug

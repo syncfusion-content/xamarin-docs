@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layouts in Xamarin.Forms ListView | Syncfusion
-description: Describes about the different layouts such as Linear and GridLayout, its functionalities in SfListView.
+title: Layouts in Xamarin ListView control | Syncfusion
+description: Learn here all about Layouts support in Syncfusion Xamarin ListView (SfListView) control and more.
 platform: xamarin
 control: SfListView
 documentation: ug

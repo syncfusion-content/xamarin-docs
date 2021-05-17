@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Handling Syncfusion ListView Scrolling
-description: This section describes about the scrolling behavior of SfListView control and how it can be handled and customized.
+title: Scrolling in Xamarin ListView control | Syncfusion
+description: Learn here all about Scrolling support in Syncfusion Xamarin ListView (SfListView) control and more.
 platform: xamarin
 control: SfListView
 documentation: ug

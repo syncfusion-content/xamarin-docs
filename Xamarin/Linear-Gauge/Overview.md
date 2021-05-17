@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion LinearGauge control for Xamarin.Forms
-description: Overview and key features of LinearGauge control
+title: About Xamarin Linear Gauge control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Linear Gauge (SfLinearGauge) control, its elements and more.
 platform: Xamarin
 control: LinearGauge
 documentation: ug
 ---
 
-# Overview
+# Xamarin Linear Gauge (SfLinearGauge) Overview
 
 [`SfLinearGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html) displays a range of values graphically along the linear scale, which is considered as the linear form of the linear gauge. It measures the values of the scale and it is present in the horizontal, vertical sliding, or meter. 
 

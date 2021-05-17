@@ -8,22 +8,35 @@ documentation: ug
 
 ---
 
-# Xamarin.Forms System Requirements  
+# System Requirements for Xamarin.Forms
+
+The system requirements for using our Syncfusion Xamarin platform are as follows
+
+### Operating Systems
+
+* Windows XP
+* Windows Vista SP2
+* Windows 7 SP1
+* Windows 8, 8.1
+* Windows 10
+* Android 4.1 & later
+* iOS 9 & later
 
 ### Hardware Environment
 
 * Processor: x86 or x64
 * RAM : 512 MB (minimum), 1 GB (recommended)
-* Hard disk: up to 1.5 GB of available space may be required. However, 250 MB free space is required in boot drive even if you are installing in other drive.
+* Hard disc: up to 3 GB of free space will be required.
 
 ### Development Environment
-Please find the recommended development environment for Xamarin platform in the following link. 
+
+See the link below for the recommended Xamarin development environments
 
 [https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements](https://docs.microsoft.com/en-us/xamarin/cross-platform/get-started/requirements)
 
 ### Supported Platforms
 
-The following table lists the platforms supported by our Xamarin.Forms controls.
+The platforms supported by our Xamarin.Forms controls are listed in the table below.
 
 <table>
     <tr>
@@ -170,6 +183,6 @@ The following table lists the platforms supported by our Xamarin.Forms controls.
 
 ### Target Framework (Compile SDK Version) for Android
 
-For Android platform, the target framework or compile SDK version of the application should be equal or greater than the latest API available at the time of our release. Please find more details about setting the target framework in the following link.
+The target framework or compile SDK version of the application for the Android platform should be equal to or greater than the latest API available at the time of our release. More information on setting the target framework can be found at the following link.
 
  [https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework](https://docs.microsoft.com/en-us/xamarin/android/app-fundamentals/android-api-levels?tabs=windows#target-framework)

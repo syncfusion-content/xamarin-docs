@@ -1,7 +1,7 @@
 ---     
 layout: post     
 title: Headers in Xamarin Scheduler control | Syncfusion
-description: Learn here all about Headers support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
+description: Learn here all about Headers support in Syncfusion Xamarin Scheduler (SfSchedule) control, its elements and more.
 platform: xamarin    
 control: SfSchedule     
 documentation: ug   

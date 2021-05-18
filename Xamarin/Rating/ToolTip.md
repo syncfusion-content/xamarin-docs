@@ -2,7 +2,7 @@
 
 layout: post
 title: ToolTip in Xamarin Rating control | Syncfusion
-description: Learn here all about ToolTip support in Syncfusion Xamarin Rating (SfRating) control and more.
+description: Learn here all about ToolTip support in Syncfusion Xamarin Rating (SfRating) control, its elements and more.
 platform: Xamarin
 control: Rating
 documentation: ug

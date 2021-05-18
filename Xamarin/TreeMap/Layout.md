@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Layout in Xamarin TreeMap control | Syncfusion
-description: Learn here all about Layout support in Syncfusion Xamarin TreeMap (SfTreeMap) control and more.
+description: Learn here all about Layout support in Syncfusion Xamarin TreeMap (SfTreeMap) control, its elements and more.
 platform: xamarin
 control: TreeMap
 documentation: ug

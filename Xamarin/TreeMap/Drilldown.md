@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drilldown in Xamarin TreeMap control | Syncfusion
-description: Learn here all about Drilldown support in Syncfusion Xamarin TreeMap (SfTreeMap) control and more.
+description: Learn here all about Drilldown support in Syncfusion Xamarin TreeMap (SfTreeMap) control, its elements and more.
 platform: xamarin
 control: SfTreeMap
 documentation: ug

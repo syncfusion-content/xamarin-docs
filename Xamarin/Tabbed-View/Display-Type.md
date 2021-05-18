@@ -444,7 +444,7 @@ namespace TabView
 
 ## How to set and customize the font icons' appearance in the header?
 
-You can refer this [link](https://help.syncfusion.com/metro-studio/export-font-icon) for getting the font icons. Add the font file to your application by using the following steps for each platform:
+You can refer this [link](https://help.syncfusion.com/metro-studio/export-icon-font) for getting the font icons. Add the font file to your application by using the following steps for each platform:
 
 **Adding font file for iOS**
 

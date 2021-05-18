@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TabView Header Customization in Xamarin Tabbed View control | Syncfusion
+title: TabView Header Customization in Xamarin Tabbed View | Syncfusion
 description: Learn here all about TabView Header Customization support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView

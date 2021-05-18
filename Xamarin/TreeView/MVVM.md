@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MVVM in Xamarin TreeView control | Syncfusion
-description: Learn here all about MVVM support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
+description: Learn here all about MVVM support in Syncfusion Xamarin TreeView (SfTreeView) control, its elements and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug

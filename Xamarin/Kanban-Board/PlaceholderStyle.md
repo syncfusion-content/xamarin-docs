@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PlaceholderStyle for Essential Xamarin.Forms Kanban
-description: Kanban Placeholder style
+title: Placeholder in Xamarin Kanban Board control | Syncfusion
+description: Learn here all about Placeholder support in Syncfusion Xamarin Kanban Board (SfKanban) control and more.
 platform: xamarin
 control: Kanban
 documentation: ug
 ---
 
-# Placeholder
+# Placeholder in Xamarin Kanban Board (SfKanban)
 
 The placeholder is to denote a card's new position in the [`KanbanColumn`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanColumn.html). It will appear while dragging a card over the column.
 

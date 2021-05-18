@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Zooming and Panning operations in Syncfusion SfImageEditor
-description: Learn how to perform Zooming and panning in the image in SfImageEditor control for Xamarin.Forms platform
+title: Zooming in Xamarin Image Editor control | Syncfusion
+description: Learn here all about Zooming support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
 ---
 
-# Zooming in SfImageEditor
+# Zooming in Xamarin Image Editor (SfImageEditor)
 
 The image editor control provides support to zoom and pan actions over an image.
 

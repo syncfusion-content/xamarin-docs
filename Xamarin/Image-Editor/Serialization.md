@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization in Syncfusion SfImageEditor control in Xamarin.Forms
-description: Learn how to serialize and deserialize the edited shapes in SfImageEditor control for Xamarin.Forms platform
+title: Serialization in Xamarin Image Editor control | Syncfusion
+description: Learn here all about Serialization support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
 ---
 
-# Serialization and Deserialization
+# Serialization in Xamarin Image Editor (SfImageEditor)
 
 The image editor control provides support to serialize and deserialize the shapes (circle, arrow, and rectangle), free hand drawing, text and toolbar settings. You can save the current state of the image editor and load it back when it is needed.
 

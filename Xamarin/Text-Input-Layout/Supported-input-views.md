@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion supported input views
-description: This section describes how to add supported input views in Syncfusion TextInputLayout control in Xamarin.Forms.
+title: Supported Input Views in Xamarin Text Input Layout control | Syncfusion
+description: Learn here all about Supported Input Views support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Supported input views
+# Supported Input Views in Xamarin Text Input Layout (SfTextInputLayout)
 
 Input views can be added to the text input layout control by setting the [InputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_InputView) property. To reduce the XAML syntax, [InputView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TextInputLayout.SfTextInputLayout.html#Syncfusion_XForms_TextInputLayout_SfTextInputLayout_InputView) property is applied with [ContentPropertyAttribute](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.contentpropertyattribute?view=xamarin-forms).
 

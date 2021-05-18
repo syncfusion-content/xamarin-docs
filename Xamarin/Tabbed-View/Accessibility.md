@@ -1,13 +1,13 @@
 ---
 layout : post
-title: AutomationId support for Syncfusion TabView Control in Xamarin.Forms
-description: This topic describes about the support to set AutomationId to find and interact with inner elements in Xamarin.Forms TabView.
+title: Accessibility in Xamarin Tabbed View control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 platform : Xamarin
 control : SfTabView
 documentation : ug
 ---
 
-# AutomationId for Xamarin.Forms TabView
+# Accessibility in Xamarin Tabbed View (SfTabView)
 
 The SfTabView control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the SfTabView control. To keep unique AutomationId, these inner elements' AutomationIds are updated based on the control's `AutomationId`. 
 

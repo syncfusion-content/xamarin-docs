@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion Overview of Syncfusion TreeMap control for Xamarin.Forms
-description: Overview and key features of TreeMap control
+title: About Xamarin TreeMap control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin TreeMap (SfTreeMap) control, its elements and more.
 platform: xamarin
 control: SfTreeMap
 documentation: ug
 ---
 
-# Overview
+# Xamarin TreeMap (SfTreeMap) Overview
 
 The TreeMap control for Xamarin.Forms provides a simple yet effective way to visualize flat or hierarchical data as clustered rectangles with a specific weighted attribute determining the size of the rectangle.
 

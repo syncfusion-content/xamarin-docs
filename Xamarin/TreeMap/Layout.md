@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layout in Syncfusion TreeMap control for Xamarin.Forms
-description: Learn how to add and customize the layout in Syncfusion TreeMap control
+title: Layout in Xamarin TreeMap control | Syncfusion
+description: Learn here all about Layout support in Syncfusion Xamarin TreeMap (SfTreeMap) control and more.
 platform: xamarin
 control: TreeMap
 documentation: ug
 ---
 
-# Layout
+# Layout in Xamarin TreeMap (SfTreeMap)
 
 You can decide the visual representation of nodes belonging to all the TreeMap levels using the [`LayoutType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfTreeMap.XForms.SfTreeMap.html#Syncfusion_SfTreeMap_XForms_SfTreeMap_LayoutType) property of TreeMap.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Image Source Support for Syncfusion TabView Control
-description: Provides support for Image Source & Font Image Source support in SfTabItem headers for adding custom images. 
+title: ImageSource in Xamarin Tabbed View control | Syncfusion
+description: Learn here all about ImageSource support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# Image source in SfTabItem
+# ImageSource in Xamarin Tabbed View (SfTabView)
 
 The `ImageSource` property customizes the icon image of SfTabView by adding a custom image.
 

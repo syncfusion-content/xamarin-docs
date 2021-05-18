@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Custom view of Syncfusion SfImageEditor control in Xamarin.Forms
-description: This section describes how to add custom shapes or views in SfImageEditor control for Xamarin.Forms patform
+title: Custom View in Xamarin Image Editor control | Syncfusion
+description: Learn here all about Custom View support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
 ---
 
-# CustomView in SfImageEditor
+# Custom View in Xamarin Image Editor (SfImageEditor)
 
 You can add any custom shapes or views to an image using the [`AddCustomView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_AddCustomView_System_Object_Syncfusion_SfImageEditor_XForms_CustomViewSettings_) method in the image editor control. To add a custom view, specify the view and its desired [`CustomViewSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.CustomViewSettings.html) as shown in the following code snippet.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Syncfusion SfSwitch Xamarin.Forms conrol.
-description: This section provides a quick tour for initial users of the Syncfusion Switch control for Xamarin.Forms platform. 
+title: Getting Started with Xamarin Switch control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Switch (SfSwitch) control, its elements and more.
 platform: Xamarin
 control: Switch
 documentation: ug

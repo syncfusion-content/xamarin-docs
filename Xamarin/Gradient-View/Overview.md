@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Overview of Syncfusion gradient view control for Xamarin.Forms
-description : A quick go through to learn about the gradient view control and the key features available in it.
+title: About Xamarin Gradient View control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Gradient View (SfGradientView) control, its elements and more.
 platform : xamarin
 control : SfGradientView
 documentation : ug
 ---
 
-# Overview
+# Xamarin Gradient View (SfGradientView) Overview
 
 The Xamarin.Forms SfGradientView control provides the gradient background to various views of applications. The SfGradientView control supports the following two types of gradient:
 

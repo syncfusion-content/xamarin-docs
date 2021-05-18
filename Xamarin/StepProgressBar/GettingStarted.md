@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Xamarin.Forms StepProgressBar
-description: A quick tour to initial users for getting started with Syncfusion StepProgressBar control for Xamarin.Forms platform.
+title: Getting Started with Xamarin StepProgressBar control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin StepProgressBar (Step Progress Bar) control, its elements and more.
 platform: xamarin
 control: StepProgressBar
 documentation: ug
 ---
 
-# Getting Started with Xamarin StepProgressBar (SfStepProgressBar)
+# Getting Started with Xamarin StepProgressBar (Step Progress Bar)
 
 This section explains the steps required to work with the StepProgressBar control for Xamarin.Forms.
 

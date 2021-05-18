@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection feature of Syncfusion Xamarin.Forms SfSunburstChart
-description: This section describes the segment selection.
+title: Selection in Xamarin Sunburst Chart control | Syncfusion
+description: Learn here all about Selection support in Syncfusion Xamarin Sunburst Chart (SfSunburstChart) control and more.
 platform: xamarin
 control: SfSunburstChart
 documentation: ug
 ---
 
-# Selection
+# Selection in Xamarin Sunburst Chart (SfSunburstChart)
 
 The sunburst chart provides support to select or highlight the segments. Selection can be enabled with the help of [`EnableSelection`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SelectionSettings.html#Syncfusion_SfSunburstChart_XForms_SelectionSettings_EnableSelection) property.
 

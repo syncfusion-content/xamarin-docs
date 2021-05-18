@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | SfExpander | Xamarin | Syncfusion
-description: This section described about getting started with Xamarin Forms Expander (SfExpander) control and more details.
+title: Getting Started with Xamarin Expander control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Expander (SfExpander) control, its elements and more.
 platform: xamarin
 control: SfExpander
 documentation: ug

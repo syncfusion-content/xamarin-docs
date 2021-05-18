@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion Xamarin.Forms StepProgressBar
-description: What are the key features available in StepProgressBar.
+title: About Xamarin StepProgressBar control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin StepProgressBar (Step Progress Bar) control, its elements and more.
 platform: xamarin
 control: StepProgressBar
 documentation: ug
 ---
 
-# Overview
+# Xamarin StepProgressBar (Step Progress Bar) Overview
 
 The Xamarin StepProgressBar is a control that indicates the progress of a multiple step (state) process. This control can be used to track the progress of an online purchase, new user registration, live location tracking of buses, trains, flights, and more. 
 

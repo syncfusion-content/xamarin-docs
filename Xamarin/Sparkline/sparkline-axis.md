@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sparkline Axis in Syncfusion Sparkline control for Xamarin.Forms
-description: How to customize Axis in Essential Xamarin.Forms Sparkline
+title: Sparkline Axis in Xamarin Sparkline control | Syncfusion
+description: Learn here all about Sparkline Axis support in Syncfusion Xamarin Sparkline (SfSparkline) control and more.
 platform: xamarin
 control: Sparkline
 documentation: ug
 ---
 
-# Sparkline Axis
+# Sparkline Axis in Xamarin Sparkline (SfSparkline)
 
 Axis of the sparkline can be configured and customized using following properties. This feature is applicable for all the sparkline types except [`SfWinLossSparkline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfWinLossSparkline.html).
 

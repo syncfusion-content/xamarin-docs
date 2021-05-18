@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for Essential Syncfusion Xamarin.Forms Kanban
-description: Getting Started for Essential Syncfusion Xamarin.Forms Kanban to get overview for working with this control
+title: Getting Started with Xamarin Kanban Board control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Kanban Board (SfKanban) control, its elements and more.
 platform: xamarin
 control: Kanban
 documentation: ug
 ---
 
-# Getting Started for Essential Syncfusion Xamarin.Forms Kanban
+# Getting Started with Xamarin Kanban Board (SfKanban)
 
 This section provides a quick overview for working with Essential Kanban for Xamarin.Forms. It is an efficient way to visualize the workflow at each stage along its path to completion.
 

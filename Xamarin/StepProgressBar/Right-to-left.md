@@ -22,7 +22,7 @@ stepProgressBar.FlowDirection = FlowDirection.RightToLeft;
 {% endtabs %}
 
 >**Note**
-For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Refer to [RightToLeft](https://blog.xamarin.com/right-to-left-localization-xamarin-forms) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
+For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Refer to [RightToLeft](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/right-to-left) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
 
 ### Android
 For Android, add `android:supportsRtl="true"` to your application tag of `AndroidManifest.xml` file, and make sure your `MinSDKVersion` is 17+. By changing the device language or enabling the device's `Force RTL layout`, you can achieve the `RightToLeft` layout direction in StepProgressBar.

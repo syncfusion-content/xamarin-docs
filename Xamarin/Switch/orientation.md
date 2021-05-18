@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Orientation in Xamarin Switch control | Syncfusion
-description: Learn here all about Orientation support in Syncfusion Xamarin Switch (SfSwitch) control and more.
+description: Learn here all about Orientation support in Syncfusion Xamarin Switch (SfSwitch) control, its elements and more.
 platform: Xamarin
 control: Switch
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customization in Xamarin Segmented Control control | Syncfusion
-description: Learn here all about Customization support in Syncfusion Xamarin Segmented Control (SfSegmentedControl) control and more.
+title: Customization in Xamarin Segmented Control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Xamarin Segmented Control (SfSegmentedControl) and more.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug

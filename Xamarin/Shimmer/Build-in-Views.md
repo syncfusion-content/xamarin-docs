@@ -7,7 +7,7 @@ control: SfShimmer
 documentation: ug
 ---
 
-# Build-in Views in Xamarin Shimmer (SfShimmer)
+# Built-in Views in Xamarin Shimmer (SfShimmer)
 
 ## Built-in types
 

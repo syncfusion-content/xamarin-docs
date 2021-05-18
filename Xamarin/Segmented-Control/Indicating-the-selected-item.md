@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Indicating the selected item in Xamarin Segmented Control control | Syncfusion
-description: Learn here all about Indicating the selected item support in Syncfusion Xamarin Segmented Control (SfSegmentedControl) control and more.
+title: Indicating the selected item in Xamarin Segmented Control | Syncfusion
+description: Learn here all about Indicating the selected item support in Syncfusion Xamarin Segmented Control (SfSegmentedControl) and more.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
 
-# Indicating the selected item in Xamarin Segmented Control (SfSegmentedControl)
+# Indicating the selected item in Xamarin Segmented Control
 
 The segmented control indicates the selected item by differentiating it with text color of the item or using selection strip.
 

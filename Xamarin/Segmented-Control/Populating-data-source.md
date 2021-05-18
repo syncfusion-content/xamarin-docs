@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating data source in Xamarin Segmented Control control | Syncfusion
-description: Learn here all about Populating data source support in Syncfusion Xamarin Segmented Control (SfSegmentedControl) control and more.
+title: Populating data source in Xamarin Segmented Control | Syncfusion
+description: Learn here all about Populating data source support in Syncfusion Xamarin Segmented Control (SfSegmentedControl) and more.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
 
-# Populating data source in Xamarin Segmented Control (SfSegmentedControl)
+# Populating data source in Xamarin Segmented Control
 
 The segmented control can be populated from a collection of strings, views, or a collection of objects in a built-in class.
 

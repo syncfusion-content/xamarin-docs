@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection | TreeView for Xamarin.Forms | Syncfusion
-description: Describes the TreeView selection and its related operations by interacting UI or manually using methods..
+title: Selection in Xamarin TreeView control | Syncfusion
+description: Learn here all about Selection support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug

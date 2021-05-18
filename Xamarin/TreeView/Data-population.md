@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating data | TreeView for Xamarin.Forms | Syncfusion
-description: This topic explains how to populate the data and treeview nodes in bound mode in SfTreeView Xamarin.Forms
+title: Data Population in Xamarin TreeView control | Syncfusion
+description: Learn here all about Data Population support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug

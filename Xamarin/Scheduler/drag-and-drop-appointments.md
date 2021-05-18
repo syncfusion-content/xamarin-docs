@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appointment Drag and Drop in Xamarin Scheduler | Syncfusion
-description: Describes how to drag and drop the appointments and its customization of Schedule (SfSchedule) control.
+title: Appointment Drag and Drop in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Appointment Drag and Drop support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfSchedule
 documentation: ug
 ---
 
-# Appointment Drag and Drop
+# Appointment Drag and Drop in Xamarin Scheduler (SfSchedule)
 Appointments can be rescheduled using the drag and drop operation. To perform drag-and-drop operations within the schedule, enable the [AllowAppointmentDrag](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_AllowAppointmentDrag) property of `SfSchedule`.
 
 {% tabs %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization of Schedule | Syncfusion
-description: Describes how to Localize the contents and custom texts of Schedule (SfSchedule) control in Xamarin.Forms platform.
+title: Localization in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Localization support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfSchedule
 documentation: ug

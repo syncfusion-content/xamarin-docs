@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of Syncfusion Xamarin.Forms Rich Text Editor
-description: This page explains how to customize the appearance of Syncfusion Rich Text Editor for Xamarin.Forms platform.
+title: Customization in Xamarin Rich Text Editor control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug
 ---
 
-# Customization of Rich Text Editor
+# Customization in Xamarin Rich Text Editor (SfRichTextEditor)
 
 The Xamarin Rich Text Editor control provides support for customizing the toolbar items and toolbar appearance.
 

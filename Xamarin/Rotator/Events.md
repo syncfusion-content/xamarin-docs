@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Events in Syncfusion Xamarin.Forms SfRotator
-description: This section shows how to use a ItemTapped and SelectedIndexChanged events of Xamarin.Forms SfRotator
+title: Events in Xamarin Rotator control | Syncfusion
+description: Learn here all about Events support in Syncfusion Xamarin Rotator (SfRotator) control and more.
 platform: xamarin 
 control: Rotator 
 documentation: ug

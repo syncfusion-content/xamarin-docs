@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right-to-left | Schedule for Xamarin.Forms | Syncfusion
-description: Learn about Right to left(RTL) support in Syncfusion Xamarin Scheduler (SfSchedule) control and more details.
+title: Right to left(RTL) in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Right to left(RTL) support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfSchedule
 documentation: ug

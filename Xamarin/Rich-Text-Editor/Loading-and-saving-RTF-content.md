@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Load and save RTF content | SfRichTextEditor | Xamarin | Syncfusion
-description: This page explains how to load and save the Rich Text Format content in the Syncfusion Rich Text Editor for Xamarin.Forms platform.
+title: Loading and saving RTF content in Xamarin Rich Text Editor control | Syncfusion
+description: Learn here all about Loading and saving RTF content support in Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug
 ---
 
-# Loading and saving the RTF content in Xamarin Rich Text Editor
+# Loading and saving RTF content in Xamarin Rich Text Editor (SfRichTextEditor)
 
 The Xamarin Rich Text Editor control provides support to load and save RTF content with help of [Essential DocIO](https://help.syncfusion.com/file-formats/docio/overview).
 

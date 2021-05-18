@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Markers in Syncfusion Sparkline control for Xamarin.Forms
-description: How to customize markers in Essential Xamarin.Forms Sparkline
+title: Markers in Xamarin Sparkline control | Syncfusion
+description: Learn here all about Markers support in Syncfusion Xamarin Sparkline (SfSparkline) control and more.
 platform: xamarin
 control: Sparkline
 documentation: ug
 ---
 
-# Markers
+# Markers in Xamarin Sparkline (SfSparkline)
 
 [`Markers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfLineSparkline.html#Syncfusion_SfSparkline_XForms_SfLineSparkline_Marker) are used to highlight the data point in [`SfLineSparkline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfLineSparkline.html) and [`SfAreaSparkline`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSparkline.XForms.SfAreaSparkline.html). You can use the following properties to customize the appearance.
 

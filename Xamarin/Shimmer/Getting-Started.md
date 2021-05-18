@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Shimmer
-description: How to add shimmer reference, launch an application on each platform with SfShimmer, initialize and load shimmer content.
+title: Getting Started with Xamarin Shimmer control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Shimmer (SfShimmer) control, its elements and more.
 platform: xamarin
 control: SfShimmer
 documentation: ug

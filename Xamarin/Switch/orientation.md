@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Orientation in Syncfusion SfSwitch Xamarin.Forms.
-description: Explaining about types of orientation in SfSwitch.
+title: Orientation in Xamarin Switch control | Syncfusion
+description: Learn here all about Orientation support in Syncfusion Xamarin Switch (SfSwitch) control and more.
 platform: Xamarin
 control: Switch
 documentation: ug
 ---
 
-# Orientation
+# Orientation in Xamarin Switch (SfSwitch)
 
 The switch control provides options to change the default orientation.
 

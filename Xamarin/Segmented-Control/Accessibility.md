@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Automation in Syncfusion segmented control for Xamarin.Forms
-description: Learn how to automate the segmented control
+title: Accessibility in Xamarin Segmented Control control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin Segmented Control (SfSegmentedControl) control and more.
 platform: Xamarin
 control: SfSegmentedControl
 documentation: ug
 ---
 
-# AutomationId
+# Accessibility in Xamarin Segmented Control (SfSegmentedControl)
 
 The segmented control supports automating each segment item in control using the  `AutomationId` property. The AutomationId value given for control will be appended with each segment item's text value, and it can be used for writing automation scripts. The following code snippet explains how to set AutomationId value to the segmented control.
 

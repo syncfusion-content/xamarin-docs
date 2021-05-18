@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display mode in Syncfusion segmented control for Xamarin.Forms
-description: This section describes about the display mode in the segmented control for effective communications.
+title: Display mode in Xamarin Segmented Control control | Syncfusion
+description: Learn here all about Display mode support in Syncfusion Xamarin Segmented Control (SfSegmentedControl) control and more.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug

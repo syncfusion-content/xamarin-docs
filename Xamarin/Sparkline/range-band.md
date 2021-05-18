@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Range Band in Syncfusion Sparkline control for Xamarin.Forms
-description: How to highlight particualr region in Essential Xamarin.Forms Sparkline
+title: Range Band in Xamarin Sparkline control | Syncfusion
+description: Learn here all about Range Band support in Syncfusion Xamarin Sparkline (SfSparkline) control and more.
 platform: xamarin
 control: Sparkline
 documentation: ug
 ---
 
-# Range Band
+# Range Band in Xamarin Sparkline (SfSparkline)
 
 This feature is used to highlight a particular region in the sparkline along Y axis.
 

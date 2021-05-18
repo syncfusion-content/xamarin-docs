@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion Xamarin.Forms SfSunburstChart
-description: Key features available in SfSunburstChart.
+title: About Xamarin Sunburst Chart control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Sunburst Chart (SfSunburstChart) control and more.
 platform: xamarin
 control: SfSunburstChart
 documentation: ug
 ---
 
-# Overview
+# Xamarin Sunburst Chart (SfSunburstChart) Overview
 
 The sunburst chart is used for visualizing hierarchical data. The circle at the center represents the root level of hierarchy, and the outer circles represent the higher levels of hierarchy.
 

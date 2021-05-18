@@ -1,13 +1,13 @@
 ---
 layout: post
-title: States in Syncfusion SfSwitch Xamarin.Forms
-description: Explaining about states in SfSwitch
+title: States in Xamarin Switch control | Syncfusion
+description: Learn here all about States support in Syncfusion Xamarin Switch (SfSwitch) control and more.
 platform: Xamarin
 control: Switch
 documentation: ug
 ---
 
-# States
+# States in Xamarin Switch (SfSwitch)
 
 Switch allows you to configure the states as explained in the following sections.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: selection indicator in Syncfusion segmented control for Xamarin.Forms
-description: Learn how to handle selection indicator settings in segmented control
+title: Indicating the selected item in Xamarin Segmented Control control | Syncfusion
+description: Learn here all about Indicating the selected item support in Syncfusion Xamarin Segmented Control (SfSegmentedControl) control and more.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
 
-# Indicating the selected item
+# Indicating the selected item in Xamarin Segmented Control (SfSegmentedControl)
 
 The segmented control indicates the selected item by differentiating it with text color of the item or using selection strip.
 
@@ -31,7 +31,7 @@ segmentedControl.SelectionTextColor = Color.FromHex("#02A0AE");
 
 {% endtabs %}
 
-![](images/Selection-indicator/Xamarin_Forms_selectiontextcolor.png)
+![Xamarin_Forms_selectiontextcolor](images/Selection-indicator/Xamarin_Forms_selectiontextcolor.png)
 
 ## Selection strip
 
@@ -67,7 +67,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 {% endtabs %}
 
-![](images/Selection-indicator/Xamarin_Forms_Top.png)
+![Xamarin_Forms_Top](images/Selection-indicator/Xamarin_Forms_Top.png)
 
 ##### Bottom
 
@@ -95,7 +95,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 {% endtabs %}
 
-![](images/Selection-indicator/Xamarin_Forms_Bottom.png)
+![Xamarin_Forms_Bottom](images/Selection-indicator/Xamarin_Forms_Bottom.png)
 
 ##### Fill
 
@@ -123,7 +123,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 {% endtabs %}
 
-![](images/Selection-indicator/Xamarin_Forms_Fill.png)
+![Xamarin_Forms_Fill](images/Selection-indicator/Xamarin_Forms_Fill.png)
 
 ##### Border
 
@@ -151,7 +151,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 {% endtabs %}
 
-![](images/Selection-indicator/Xamarin_Forms_Border.png)
+![Xamarin_Forms_Border](images/Selection-indicator/Xamarin_Forms_Border.png)
 
 #### Color
 
@@ -179,7 +179,7 @@ segmentedControl.SelectionIndicatorSettings = selectionIndicator;
 
 {% endtabs %}
 
-![](images/Selection-indicator/Xamarin_Forms_stripcolor.png)
+![Xamarin_Forms_stripcolor](images/Selection-indicator/Xamarin_Forms_stripcolor.png)
 
 #### Thickness
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visual types in Syncfusion SfSwitch Xamarin.Forms.
-description: Explaining about visual types in SfSwitch.
+title: Visual Types in Xamarin Switch control | Syncfusion
+description: Learn here all about Visual Types support in Syncfusion Xamarin Switch (SfSwitch) control and more.
 platform: Xamarin
 control: Switch
 documentation: ug
 ---
 
-# Visual Types
+# Visual Types in Xamarin Switch (SfSwitch)
 
 SfSwitch supports customization using built-in visual types. The visual types based on device platform are listed as follows.
 

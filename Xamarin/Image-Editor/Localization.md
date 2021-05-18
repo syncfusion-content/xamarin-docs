@@ -117,6 +117,8 @@ Please refer the KB from this [`link`](https://www.syncfusion.com/kb/10602/how-t
 
 You can download complete sample [`here`](https://github.com/SyncfusionExamples/How-to-set-localizad-string-to-SfImageEditor).
 
+Please find a different culture .resx file [`here`](https://github.com/syncfusion/xamarin-localized-texts).
+
 ## From platform-specific projects
 
 You can localize the text from different platforms by adding equivalent localized strings in resource file. For localizing text, configure it to each platform separately.

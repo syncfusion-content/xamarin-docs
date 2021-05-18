@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display mode in Syncfusion segmented control for Xamarin.Forms
-description: This section describes about the display mode in the segmented control for effective communications.
+title: Display mode in Xamarin Segmented Control | Syncfusion
+description: Learn here all about Display mode support in Syncfusion Xamarin Segmented Control (SfSegmentedControl) and more.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
@@ -246,7 +246,7 @@ public partial class SegmentedControlSample : ContentPage
 
 ## How to set the font icons using ttf file?
 
-You can refer this [link](https://help.syncfusion.com/metro-studio/export-font-icon) for getting the font icons. Add the font file to your application by using the following steps for each platform:
+You can refer this [link](https://help.syncfusion.com/metro-studio/export-icon-font) for getting the font icons. Add the font file to your application by using the following steps for each platform:
 
 **Adding font file for iOS**
 

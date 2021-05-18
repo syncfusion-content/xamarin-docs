@@ -1,7 +1,7 @@
 ---
 layout: post
-title: BindableLayout in Syncfusion.Xamarin.Forms StepProgressBar.
-description: How to bind (ItemSource data) StepView to Syncfusion.Xamarin.Forms StepProgressBar using BindableLayout.
+title: Bindable Layout in Xamarin StepProgressBar control | Syncfusion
+description: Learn here all about Bindable Layout support in Syncfusion Xamarin StepProgressBar (Step Progress Bar) control and more.
 platform: xamarin
 control: StepProgressBar
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 From version 3.5, Xamarin.Forms has introduced a new approach called BindableLayout that works with all the layouts derived from Layout&lt;T&gt;. By simply setting ItemTemplate and ItemsSource, BindableLayout will create a group of UI (for the given ItemTemplate) for every data in the ItemsSource and add them as children.
 
-# Bindable Layout
+# Bindable Layout in Xamarin StepProgressBar (Step Progress Bar)
 
 The [SfStepProgressBar](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.SfStepProgressBar.html) allows to set a collection of items by setting `BindableLayout.ItemsSource` and `BindableLayout.ItemTemplate` properties. The StepProgressBar supports Bindable Layout in Xamarin.Forms version 3.5 and above.
 

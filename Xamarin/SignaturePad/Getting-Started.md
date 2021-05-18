@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Signature Pad for Xamarin.Forms
-description: This section explains the key features and quick overview about Syncfusion Signature Pad control for Xamarin.Forms
+title: Getting Started with Xamarin SignaturePad control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin SignaturePad (SfSignaturePad) control, its elements and more.
 platform: xamarin
 control: SfSignaturePad
 documentation: ug
 ---
 
-# Getting Started with Xamarin Signature Pad (SfSignaturePad)
+# Getting Started with Xamarin SignaturePad (SfSignaturePad)
 
 This section explains the steps required to configure the Signature Pad.
 

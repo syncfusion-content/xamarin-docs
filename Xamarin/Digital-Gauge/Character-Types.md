@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Character types in Syncfusion DigitalGauge control for Xamarin.Forms
-description: This section describes how to define the character type in DigitalGauge control for Xamarin.Forms platform
+title: Character Types in Xamarin Digital Gauge control | Syncfusion
+description: Learn here all about Character Types support in Syncfusion Xamarin Digital Gauge (SfDigitalGauge) control and more.
 platform: Xamarin
 control: DigitalGauge
 documentation: ug
 ---
 
-# Character types in SfDigitalGauge
+# Character Types in Xamarin Digital Gauge (SfDigitalGauge)
 
 The digital characters can be drawn in the following four different segments:
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Levels of Syncfusion Xamarin.Forms SfSunburstChart
-description: This section describes the hierarchical levels in SfSunburstChart.
+title: Levels in Xamarin Sunburst Chart control | Syncfusion
+description: Learn here all about Levels support in Syncfusion Xamarin Sunburst Chart (SfSunburstChart) control and more.
 platform: xamarin
 control: SfSunburstChart
 documentation: ug
 ---
 
-# Levels
+# Levels in Xamarin Sunburst Chart (SfSunburstChart)
 
 The sunburst chart is used to display hierarchical data. More than one hierarchical data can be added to the [`Levels`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html#Syncfusion_SfSunburstChart_XForms_SfSunburstChart_Levels) collection of the sunburst chart. Each level of the hierarchy is represented by a circle.
 

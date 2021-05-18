@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Orientation in Syncfusion Xamarin.Forms StepProgressBar
-description: Explaining about types of orientation in StepProgressBar.
+title: Orientation in Xamarin StepProgressBar control | Syncfusion
+description: Learn here all about Orientation support in Syncfusion Xamarin StepProgressBar (Step Progress Bar) control and more.
 platform: Xamarin
 control: StepProgressBar
 documentation: ug
 ---
 
-# Orientation
+# Orientation in Xamarin StepProgressBar (Step Progress Bar)
 
 The StepProgressBar control provides options to change the default orientation, so a multi-step process can be visualized in horizontal or vertical orientation.
 

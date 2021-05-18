@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Right-to-left | StepProgressBar | Xamarin.Forms | Syncfusion
-description: Describes how Syncfusion StepProgressBar control works on right-to-left localization in Xamarin.Forms platform.
+title: Right to left(RTL) in Xamarin StepProgressBar control | Syncfusion
+description: Learn here all about Right to left(RTL) support in Syncfusion Xamarin StepProgressBar (Step Progress Bar) control and more.
 platform: xamarin
 control: StepProgressBar
 documentation: UG
 ---
 
-# Right to left (RTL)
+# Right to left(RTL) in Xamarin StepProgressBar (Step Progress Bar)
 
 StepProgressBar provides support to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
 
@@ -22,7 +22,7 @@ stepProgressBar.FlowDirection = FlowDirection.RightToLeft;
 {% endtabs %}
 
 >**Note**
-For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Refer to [RightToLeft](https://blog.xamarin.com/right-to-left-localization-xamarin-forms) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
+For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Refer to [RightToLeft](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/right-to-left) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
 
 ### Android
 For Android, add `android:supportsRtl="true"` to your application tag of `AndroidManifest.xml` file, and make sure your `MinSDKVersion` is 17+. By changing the device language or enabling the device's `Force RTL layout`, you can achieve the `RightToLeft` layout direction in StepProgressBar.

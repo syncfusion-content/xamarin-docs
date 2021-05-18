@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of Syncfusion EffectsView control in Xamarin.Forms
-description: This section describes how to provide various customisation of the Syncfusion EffectsView control in Xamarin.Forms. 
+title: Customization in Xamarin Effects View control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Xamarin Effects View (SfEffectsView) control and more.
 platform: xamarin
 control: SfEffectsView
 documentation: ug
 ---
 
-# Customization of SfEffectsView
+# Customization in Xamarin Effects View (SfEffectsView)
 
 The [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides support to customize the corner radius, animation duration, color, and more. This section explains how to customize the effects view control.
 

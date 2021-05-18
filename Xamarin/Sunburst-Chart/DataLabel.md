@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Data labels of Syncfusion Xamarin.Forms SfSunburstChart
-description: This section describes the data label and its customization.
+title: Data Label in Xamarin Sunburst Chart control | Syncfusion
+description: Learn here all about Data Label support in Syncfusion Xamarin Sunburst Chart (SfSunburstChart) control and more.
 platform: xamarin
 control: SfSunburstChart
 documentation: ug
 ---
 
-# Data label
+# Data Label in Xamarin Sunburst Chart (SfSunburstChart)
 
 Data labels are used to display information about segments. Data labels are enabled and disabled using the [`ShowLabel`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstChartDataLabel.html#Syncfusion_SfSunburstChart_XForms_SunburstChartDataLabel_ShowLabel) property. The default value of the ShowLabel property is true.
 

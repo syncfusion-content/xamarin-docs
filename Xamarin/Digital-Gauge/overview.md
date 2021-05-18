@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Overview of Syncfusion DigitalGauge control for Xamarin.Forms
-description: Overview and key features of DigitalGauge control
+title: About Xamarin Digital Gauge control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Digital Gauge (SfDigitalGauge) control, its elements and more.
 platform: Xamarin
 control: DigitalGauge
 documentation: ug
 ---
-# Overview
+# Xamarin Digital Gauge (SfDigitalGauge) Overview
 
 The digital gauge control is used to display alphanumeric characters in digital (LED display) mode. This control displays a range of values that uses character in combination with numbers.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AutomationId support for Syncfusion Picker Control in Xamarin.Forms
-description: Learn about Accessibility support for inner elements in Syncfusion Xamarin Picker (SfPicker) control and more details. 
+title: Accessibility in Xamarin Picker control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin Picker (SfPicker) control and more.
 platform: Xamarin
 control: SfPicker
 documentation: ug
 ---
 
-# AutomationId support for Picker Control in Xamarin.Forms
+# Accessibility in Xamarin Picker (SfPicker)
 
 The SfPicker control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the `SfPicker` control. To keep unique AutomationId, these inner elements' AutomationIds are updated based on the control's `AutomationId`. 
 

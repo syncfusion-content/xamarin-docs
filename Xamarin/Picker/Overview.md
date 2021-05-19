@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Picker control for Xamarin.Forms
-description: This section explains about Overview and key features comparisions across IOS, Andriod and UMP of Xamarine Picker control
+title: About Xamarin Picker control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
 platform: Xamarin
 control: Picker
 documentation: ug

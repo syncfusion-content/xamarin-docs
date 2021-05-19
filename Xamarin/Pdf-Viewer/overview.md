@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of PDF Viewer for Xamarin.Forms | Syncfusion
-description: Learn about introduction of Syncfusion Xamarin.Forms Pdf Viewer (SfPdfViewer) control and more details.
+title: About Xamarin Pdf Viewer control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control, its elements and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug

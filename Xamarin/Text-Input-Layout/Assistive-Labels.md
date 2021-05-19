@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion Text Input Layout Assitive Labels.
-description: How to add assistive labels like helper text, error label, character counter to the text input layout.
+title: Assistive Labels in Xamarin Text Input Layout control | Syncfusion
+description: Learn here all about Assistive Labels support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Adding assistive labels
+# Assistive Labels in Xamarin Text Input Layout (SfTextInputLayout)
 
 Assistive labels provide additional information about text entered in the input view controls.
 

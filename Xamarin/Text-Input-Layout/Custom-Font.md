@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion TextInputLayout Font Customization.
-description: How to customize the font family, font size, and font attributes for hint, error, helper text, and the counter label.
+title: Font Customization  in Xamarin Text Input Layout control | Syncfusion
+description: Learn here all about Font Customization  support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Font Customization in Xamarin Text Input Layout (SfTextInputLayout)
+# Font Customization  in Xamarin Text Input Layout (SfTextInputLayout)
 
 You can customize the appearance (size, attributes, and family) of font by setting the FontFamily, FontSize, and FontAttributes properties of the LabelStyle property.
 

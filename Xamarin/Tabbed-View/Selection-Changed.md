@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection Changed event for Syncfusion Essential SfTabView.
-description: This section shows how to use a Selection changed event in TabView control for Xamarin.Forms platform
+title: Selection Changed in Xamarin Tabbed View control | Syncfusion
+description: Learn here all about Selection Changed support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug

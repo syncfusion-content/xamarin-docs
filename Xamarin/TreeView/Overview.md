@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of TreeView Conrol for Xamarin.Forms | Syncfusion
-description: Provides features overview of treeview control in Xamarin.Forms. 
+title: About Xamarin TreeView control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin TreeView (SfTreeView) control, its elements and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug
 ---
 
-# SfTreeView
+# Xamarin TreeView (SfTreeView) Overview
 
 The Syncfusion TreeView for Xamarin.Forms is a data-oriented control that displays data in a hierarchical structure with expanding and collapsing nodes. It is commonly used to illustrate a folder structure, or nested relationships in an application. 
 

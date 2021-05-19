@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Format using Syncfusion TimePicker for Xamarin.Forms
-description: This section explains the way to give the different time formats to the Syncfusion TimePicker control for Xamarin.Forms  
+title: Formatting in Xamarin TimePicker control | Syncfusion
+description: Learn here all about Formatting support in Syncfusion Xamarin TimePicker (SfTimePicker) control and more.
 platform: Xamarin
 control: TimePicker
 documentation: ug
 ---
 
 
-# Format
+# Formatting in Xamarin TimePicker (SfTimePicker)
 
 Format is a way to represent the value of the time in a different string format.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion ParallaxView customization in Xamarin.Forms
-description: How to customize the scrolling speed of the content added as a background view and content orientation.
+title: Customization in Xamarin Parallax View control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Xamarin Parallax View (SfParallaxView) control and more.
 platform: xamarin
 control: SfParallaxView
 documentation: ug

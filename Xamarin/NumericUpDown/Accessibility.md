@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AutomationId for inner elements of Syncfusion NumericUpDown
-description: How to set AutomationId for inner elements(up and down buttons) of essential Xamarin.Forms numeric up down control.
+title: Accessibility in Xamarin NumericUpDown control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug

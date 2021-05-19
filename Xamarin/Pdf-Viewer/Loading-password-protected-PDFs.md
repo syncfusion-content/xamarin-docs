@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Loading encrypted PDFs using SfPdfViewer in Xamarin Forms | Syncfusion
-description: Describes how PDF Viewer allows the user to load and view the password protected PDF documents in Xamarin Forms
+title: Loading password protected PDFs in Xamarin Pdf Viewer | Syncfusion
+description: Learn here all about Loading password protected PDFs support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Loading password-protected PDFs
+# Loading password protected PDFs in Xamarin Pdf Viewer (SfPdfViewer)
 
 Password protected PDFs can be loaded using the `LoadDocument(Stream pdfStream, string password)` method. 
 

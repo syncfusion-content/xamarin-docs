@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bookmark Navigation in PDF Viewer Xamarin.Forms | Syncfusion
-description: Bookmark navigation allows users to view the bookmarks and navigate to the destination saved in the bookmarks in PDF Viewer Xamarin.Forms.
+title: Bookmark Navigation in Xamarin Pdf Viewer control | Syncfusion
+description: Learn here all about Bookmark Navigation support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Working with Bookmark Navigation
+# Bookmark Navigation in Xamarin Pdf Viewer (SfPdfViewer)
 
 [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows users to view the bookmarks present in the loaded PDF document and navigate to the destination saved in the bookmarks. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Demonstrate TimePicker using Syncfusion Picker for Xamarin.Forms
-description: Learn here all about  how to create Time Picker using Syncfusion Xamarin Picker (SfPicker) control and it contains sample and code snippet for this.
+title: Time Picker in Xamarin Picker control | Syncfusion
+description: Learn here all about Time Picker support in Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
 platform: Xamarin
 control: Picker
 documentation: ug

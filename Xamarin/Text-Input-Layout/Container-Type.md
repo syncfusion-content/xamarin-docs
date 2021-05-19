@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion TextInputLayout Container Type
-description: It describes that the background of the input view for text input layout can be changed by setting the ContainerType property.
+title: Container Type in Xamarin Text Input Layout control | Syncfusion
+description: Learn here all about Container Type support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug

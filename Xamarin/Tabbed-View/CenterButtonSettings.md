@@ -1,12 +1,12 @@
 ---
 layout: post
-title: CenterButtonSettings in Syncfusion TabView control for Xamarin.Forms
-description: Learn here all about center button feature of Syncfusion Xamarin TabView (SfTabView) control and more.
+title: CenterButton Customization in Xamarin Tabbed View control | Syncfusion
+description: Learn here all about CenterButton Customization support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 control: TabView
 documentation: ug
 ---
 
-# CenterButtonSettings 
+# CenterButton Customization in Xamarin Tabbed View (SfTabView)
 
 This section explains how to create and customize The Xamarin.Forms SfTabView CenterButton. To enable CenterButton, set the `OverFlowMode` of Xamarin.Forms SfTabView to `CenterButton`.
 

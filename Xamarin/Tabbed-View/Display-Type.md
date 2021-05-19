@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display Type for Syncfusion Essential Xamarin.Forms SfTabView.
-description: This section shows a different display types available in Syncfusion TabView control for Xamarin.Forms platform
+title: Display Type in Xamarin Tabbed View control | Syncfusion
+description: Learn here all about Display Type support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug
@@ -444,7 +444,7 @@ namespace TabView
 
 ## How to set and customize the font icons' appearance in the header?
 
-You can refer this [link](https://help.syncfusion.com/metro-studio/export-font-icon) for getting the font icons. Add the font file to your application by using the following steps for each platform:
+You can refer this [link](https://help.syncfusion.com/metro-studio/export-icon-font) for getting the font icons. Add the font file to your application by using the following steps for each platform:
 
 **Adding font file for iOS**
 

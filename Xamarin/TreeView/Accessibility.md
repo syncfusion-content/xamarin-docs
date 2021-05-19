@@ -1,12 +1,12 @@
 ---
 layout: post 
-title: Automation in Xamarin TreeView Control | Syncfusion
-description: Describes about setting automation id to TreeView for automation framework to find and interact with control inner elements.
+title: Accessibility in Xamarin TreeView control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: Xamarin
 control: TreeView
 documentation: ug
 ---
-# AutomationId in Xamarin Treeview (SfTreeView)
+# Accessibility in Xamarin TreeView (SfTreeView)
 
 The TreeView control has built-in `AutomationId` for inner elements. The [AutomationId](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html) API allows the automation framework to find and interact with the inner elements of the TreeView control. To keep unique AutomationId, these inner element's AutomationIds are updated based on TreeView control `AutomationId`. 
 

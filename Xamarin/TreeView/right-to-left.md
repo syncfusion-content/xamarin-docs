@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right-to-left | TreeView for Xamarin.Forms | Syncfusion
-description: Describes how to work with treeview on right-to-left on localization and in Xamarin.Forms platforms.
+title: Right to left(RTL) in Xamarin TreeView control | Syncfusion
+description: Learn here all about Right to left(RTL) support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug

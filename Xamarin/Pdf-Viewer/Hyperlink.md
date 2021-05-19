@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hyperlink navigation in PDF Viewer Xamarin.Forms | Syncfusion
-description: Hyperlink navigation support in PDF Viewer Xamarin.Forms detects hyperlinks present in PDF and on tapping it, will open the URL in the browser.
+title: Hyperlink Navigation in Xamarin Pdf Viewer control | Syncfusion
+description: Learn here all about Hyperlink Navigation support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Working with Hyperlink navigation
+# Hyperlink Navigation in Xamarin Pdf Viewer (SfPdfViewer)
 
 [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) supports hyperlink navigation that detects hyperlinks and tapping on the hyperlink will open the URL in the browser.
 

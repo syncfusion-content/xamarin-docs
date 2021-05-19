@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Demonstrate DateTimePicker using Syncfusion Picker for Xamarin.Forms
-description: Overview and key features of Date Time Picker and how to get started with the SfPicker Control in Xamarin.Forms
+title: DateTime Picker in Xamarin Picker control | Syncfusion
+description: Learn here all about DateTime Picker support in Syncfusion Xamarin Picker (SfPicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
 
-# Date Time Picker of Picker Control
+# DateTime Picker in Xamarin Picker (SfPicker)
 
 In our Xamarin.Forms, picker control has multi column support. By using this, you we can populate day, month, year, hour, and minute values of collection in picker control. 
 

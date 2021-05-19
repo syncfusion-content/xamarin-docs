@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Xamarin UI Kit Overview | Syncfusion
-description: Essential UI Kit contains elegantly designed XAML templates for Xamarin.Forms apps. These templates are compatible with Android, iOS, and UWP platforms.
+title: About Xamarin UI Kit control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio Xamarin UI Kit control, its elements and more.
 platform: xamarin
 control: Xamarin UI Kit
 documentation: ug
 ---
 
-# Syncfusion XAML Pages for Xamarin.Forms
+# Xamarin UI Kit Overview
 
 The [Syncfusion Essential UI Kit](https://www.syncfusion.com/essential-xamarin-ui-kit) is a collection of easy-to-use, extendable, and adaptable XAML pages that allows you to quickly create a Xamarin.Forms application by providing generic pre-defined screens. Now, the UI Kit has screens for the following categories:
 

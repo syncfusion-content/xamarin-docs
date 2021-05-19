@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Text Input Layout
-description: This section describes how to initialze a Essential Xamarin.Forms TextInputLayout control with floating label.
+title: Getting Started with Xamarin Text Input Layout control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control, its elements and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug

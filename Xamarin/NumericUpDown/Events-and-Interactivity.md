@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Events and Interactivity in Syncfusion NumericUpDown for Xamarin.Forms
-description: Learn how to get the value changed event and some interactivity in  NumericUpDown
+title: Events and Interactivity in Xamarin NumericUpDown control | Syncfusion
+description: Learn here all about Events and Interactivity support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
-# Events and Interactivity
+# Events and Interactivity in Xamarin NumericUpDown (SfNumericUpDown)
 
 ## Events
 

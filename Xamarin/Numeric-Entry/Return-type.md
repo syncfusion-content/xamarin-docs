@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Return key types and command support in Syncfusion NumericTextBox.
-description: This section describes how to customise the retun key and set command for return key in NumericTextBox
+title: Return Type in Xamarin Numeric Entry control | Syncfusion
+description: Learn here all about Return Type support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug

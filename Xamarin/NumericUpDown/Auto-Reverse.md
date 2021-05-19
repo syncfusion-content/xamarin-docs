@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Watermark support in Syncfusion NumericUpDown for Xamarin.Forms
-description: This section explain how to set the auto reverse, continuous spinning between ranges for Syncfusion NumericUpDown.
+title: Auto Reverse in Xamarin NumericUpDown control | Syncfusion
+description: Learn here all about Auto Reverse support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug

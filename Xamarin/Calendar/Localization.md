@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization | Globalization | SfCalendar | Xamarin.Forms | Syncfusion
-description: Learn how to Globalize and localize the static text in Calendar (SfCalendar) control in Xamarin.Forms.
+title: Localization in Xamarin Calendar control | Syncfusion
+description: Learn here all about Localization support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
 platform: xamarin
 control: SfCalendar
 documentation: ug

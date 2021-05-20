@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in Xamarin.Forms Chart control | Syncfusion
-description: This section describes about how to enable series selection and segment selection feature of Xamarin.Forms Chart (SfChart) control.
+title: Selection in Xamarin Charts control | Syncfusion
+description: Learn here all about Selection support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug

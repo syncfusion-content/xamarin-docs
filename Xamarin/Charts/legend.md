@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion.Xamarin.Forms Chart legend
-description: How to configure the chart legend and customize the appearance of the legend title, Icons, labels, and ItemTemplate in Essential Xamarin.Forms Chart.
+title: Legend in Xamarin Charts control | Syncfusion
+description: Learn here all about Legend support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug

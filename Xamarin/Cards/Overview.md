@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Overview of Syncfusion Cards control for Xamarin.Forms
-description : A quick go through to learn about the Cards control and the key features available in it.
+title: About Xamarin Cards control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio Xamarin Cards control, its elements and more.
 platform : xamarin
 control : Cards
 documentation : ug
 ---
 
-# Overview
+# Xamarin Cards Overview
 
 The new Cards control allows you to create a dismissible card or a stack of cards where one card is visible at a time until you swipe to see the next card.
 

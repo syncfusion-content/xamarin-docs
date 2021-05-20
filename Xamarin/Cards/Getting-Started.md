@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Essential Syncfusion.Xamarin.Forms Cards
-description: How to add cards reference, launch an application on each platform with SfCardLayout or SfCardView, initialize and load cards content.
+title: Getting Started with Xamarin Cards control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio Xamarin Cards control, its elements and more.
 platform: xamarin
 control: Cards
 documentation: ug

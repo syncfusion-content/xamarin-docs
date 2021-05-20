@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Calendar control for Xamarin.Forms
-description: Describes the quick Overview and key features of Calendar (SfCalendar) control in Xamarin.Forms platform.
+title: About Xamarin Calendar control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Calendar (SfCalendar) control, its elements and more.
 platform: Xamarin
 control: Calendar
 documentation: ug

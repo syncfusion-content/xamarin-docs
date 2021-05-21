@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation | SfDataForm | Xamarin.Forms | Syncfusion
-description: This section explains how to validate the data, custom validation and other functionalities in SfDataForm for Xamarin.Forms.
+title: Validation in Xamarin DataForm control | Syncfusion
+description: Learn here all about Validation support in Syncfusion Xamarin DataForm (SfDataForm) control and more.
 platform: xamarin
 control: SfDataForm
 documentation: UG
@@ -20,7 +20,7 @@ The supported built in validations are as follows:
 
 ### Using INotifyDataErrorInfo
 
-You can validate the data by implementing the [INotifyDataErrorInfo](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifydataerrorinfo.aspx) interface in the data object class.
+You can validate the data by implementing the [INotifyDataErrorInfo](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifydataerrorinfo?redirectedfrom=MSDN&view=net-5.0) interface in the data object class.
 
 {% tabs %}
 {% highlight c# %}
@@ -354,7 +354,7 @@ public string Name
 
 ## How to validate the property value based on another value
 
-To validate one property value based on another property value, use the [property changed event](https://msdn.microsoft.com/en-us/library/system.componentmodel.inotifypropertychanged.propertychanged.aspx) and [Validate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Validate(String).html) methods.
+To validate one property value based on another property value, use the [property changed event](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged?redirectedfrom=MSDN&view=net-5.0) and [Validate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.DataForm.SfDataForm.html#Syncfusion_XForms_DataForm_SfDataForm_Validate(String).html) methods.
 
 Here, AccountNumber and AccountNumber1 fields are validated.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visual States for Syncfusion Essential Xamarin.Forms SfCheckBox
-description: How to customize SfCheckBox based on its visual state changes(Checked state, UnChecked state, Intermediate state) in Xamarin.Forms SfCheckBox.
+title: Visual States in Xamarin CheckBox control | Syncfusion
+description: Learn here all about Visual States support in Syncfusion Xamarin CheckBox (SfCheckBox) control and more.
 platform: xamarin
 control: SfCheckBox
 documentation: ug
 ---
 
-# Visual States for Xamarin.Forms CheckBox
+# Visual States in Xamarin CheckBox (SfCheckBox)
 
 The visual of CheckBox can be customized using `VisualStates`. The [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) control contains the following three visual states:
 

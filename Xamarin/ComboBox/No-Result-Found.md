@@ -1,12 +1,12 @@
 ---
 layout: post
-title: NoResultsFoundText in Syncfusion SfComboBox control for Forms
-description: This section describes how to display the no result found text and it's customizing in Syncfusion Xamarin.Forms SfComboBox
+title: No Results Found in Xamarin ComboBox control | Syncfusion
+description: Learn here all about No Results Found support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
-# No Results Found in SfComboBox
+# No Results Found in Xamarin ComboBox (SfComboBox)
 
 When the entered item is not in the suggestion list, SfComboBox displays a text that indicates no search results found. You can set the desire text to be displayed for indicating no results found using the [`NoResultsFoundText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundText) property.
 
@@ -81,7 +81,7 @@ namespace ComboBox_Sample
 
 ## Customizing NoResultsFoundText
 
-The [`NoResultsFoundTextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundTextColorProperty), [`NoResultsFoundFontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundFontSizeProperty), [`NoResultsFoundFontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundFontAttributesProperty), and [`NoResultsFoundFontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_NoResultsFoundFontFamilyProperty) properties are used to customize the foreground color, font size, font attribute, and font family of NoResultsFoundText.
+The `NoResultsFoundTextColor`, `NoResultsFoundFontSize`, `NoResultsFoundFontAttributes`, and `NoResultsFoundFontFamily` properties are used to customize the foreground color, font size, font attribute, and font family of NoResultsFoundText.
 {% tabs %}
 
 {% highlight xaml %}

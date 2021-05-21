@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Rim in Syncfusion SfCircularGauge control for Xamarin.Forms
-description: Learn how to access rim and customize the rim in Syncfusion CircularGauge control for Xamarin.Forms Platform
+title: Rim in Xamarin Circular Gauge control | Syncfusion
+description: Learn here all about Rim support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Rim in SfCircularGauge
+# Rim in Xamarin Circular Gauge (SfCircularGauge)
 
 Scale determines the structure of a circular gauge by using the circular rim. By setting the [`StartAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_StartAngle) and [`SweepAngle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html#Syncfusion_SfGauge_XForms_Scale_SweepAngle) properties, you can change the shape of the circular gauge into a full circular gauge, half circular gauge, or quarter circular gauge.
 

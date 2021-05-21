@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AutomationId | SfDataForm | Xamarin.Forms | Syncfusion
-description: Set Automation Id to SfDataForm for automation framework to find and interact with control inner elements.
+title: Accessibility in Xamarin DataForm control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin DataForm (SfDataForm) control and more.
 platform: Xamarin
 control: SfDataForm
 documentation: UG

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of Dots for Syncfusion Essential Xamarin.Forms SfRotator
-description: Learn about dots customization support in Syncfusion Xamarin Rotator (SfRotator) control and more details.
+title: Dots Customization in Xamarin Rotator control | Syncfusion
+description: Learn here all about Dots Customization support in Syncfusion Xamarin Rotator (SfRotator) control and more.
 platform: xamarin 
 control: Rotator 
 documentation: ug
 ---
 
-# Customization in Xamarin Rotator (SfRotator)
+# Dots Customization in Xamarin Rotator (SfRotator)
 
 The Rotator control supports to customize the dots border color, selected dots color and unselected dots color.
 

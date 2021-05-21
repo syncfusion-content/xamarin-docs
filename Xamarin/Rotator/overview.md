@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Rotator control for Xamarin.Forms.
-description: This section will explain about Overview and key features of Syncfusion Rotator control in Xamarin.Forms
+title: About Xamarin Rotator control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Rotator (SfRotator) control, its elements and more.
 platform: xamarin 
 control: Rotator 
 documentation: ug

@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Annotations in Syncfusion SfCircularGauge for Xamarin.Forms
-description: This section explains the steps required to set annotations in Syncfusion Circular Gauge control for Xamarin.Forms
+title: Annotations in Xamarin Circular Gauge control | Syncfusion
+description: Learn here all about Annotations support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Annotations in SfCircularGauge
+# Annotations in Xamarin Circular Gauge (SfCircularGauge)
 
 [`SfCircularGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html) supports [`Annotations`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html#Syncfusion_SfGauge_XForms_SfCircularGauge_Annotations), which allows you to mark the specific area of interest in circular gauge. You can place custom views as annotations. The text and images also can be added by using [`Annotations`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfCircularGauge.html#Syncfusion_SfGauge_XForms_SfCircularGauge_Annotations) property.
 

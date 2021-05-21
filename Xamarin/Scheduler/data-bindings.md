@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Appointments | SfSchedule | Xamarin | Syncfusion
-description: Learn how to schedule and customize different kinds of appointments in Xamarin.Forms SfSchedule control.
+title: Appointments in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Appointments support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfSchedule
 documentation: ug

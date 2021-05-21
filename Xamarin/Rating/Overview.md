@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Overview of Syncfusion Rating control for Xamarin.Forms
-description: This section will explain about Overview and key features of Syncfusion Rating control in Xamarin.Forms.
+title: About Xamarin Rating control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Rating (SfRating) control, its elements and more.
 platform: Xamarin
 control: Rating
 documentation: ug

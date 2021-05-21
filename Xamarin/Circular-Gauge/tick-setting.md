@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Tick Setting in Syncfusion SfCircularGauge control for Xamarin.Forms
-description:  Learn how to set ticks, position the ticks and customize the ticks in Syncfusion CircularGauge control for Xamarin.Forms
+title: Tick Setting in Xamarin Circular Gauge control | Syncfusion
+description: Learn here all about Tick Setting support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Tick Settings in SfCircularGauge
+# Tick Setting in Xamarin Circular Gauge (SfCircularGauge)
 
 The `TickSettings` property helps you to identify the gauge’s data value by marking the gauge scale in regular increments.
 

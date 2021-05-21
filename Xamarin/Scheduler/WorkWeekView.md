@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Customize WorkWeekView at Syncfusion SfSchedule for Xamarin.Forms
-description: Learn how to customize the scheduler work week view settings and its appearance in SfSchedule control in Xamarin.Forms
+title: Work Week View in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Work Week View support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfSchedule
 documentation: ug

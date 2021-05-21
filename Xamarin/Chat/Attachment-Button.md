@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Attachment Button in Xamarin.Forms Chat| SfChat | Xamarin | Syncfusion
-description: Describes about attachment button, its template support and how to upload media/files as messages using the built-in events and command in Xamarin.Forms Chat.
+title: Attachment button in Xamarin Chat control | Syncfusion
+description: Learn here all about Attachment button support in Syncfusion Xamarin Chat (SfChat) control and more.
 platform: xamarin
 control: SfChat
 documentation: ug
 ---
 
-# Attachment Button in Xamarin.Forms Chat (SfChat)
+# Attachment button in Xamarin Chat (SfChat)
 
 You can show the attachment button in SfChat by setting the [SfChat.ShowAttachmentButton](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowAttachmentButton) to `true`.
 

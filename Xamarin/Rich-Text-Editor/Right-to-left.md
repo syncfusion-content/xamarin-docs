@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Right-to-left | Rich Text Editor | Xamarin.Forms | Syncfusion
-description: Describes how Syncfusion Rich Text Editor control works on right-to-left localization in Xamarin.Forms platform.
+title: Right to left(RTL) in Xamarin Rich Text Editor control | Syncfusion
+description: Learn here all about Right to left(RTL) support in Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: UG
 ---
 
-# Right to left(RTL)
+# Right to left(RTL) in Xamarin Rich Text Editor (SfRichTextEditor)
 
 Rich Text Editor provides support to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
 
@@ -23,7 +23,7 @@ Rich Text Editor provides support to change the layout direction of the control 
 {% endtabs %}
 
 >**Note**
-For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Refer to [RightToLeft](https://blog.xamarin.com/right-to-left-localization-xamarin-forms) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
+For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Refer to [RightToLeft](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/app-fundamentals/localization/right-to-left) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
 
 ### Android
 For Android, add `android:supportsRtl="true"` to your application tag of `AndroidManifest.xml` file, and make sure your `MinSDKVersion` is 17+. By changing the device language or enabling the device's `Force RTL layout`, you can achieve the `RightToLeft` layout direction in Rich Text Editor.

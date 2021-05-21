@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dot Placement of Syncfusion Rotator control for Xamarin.Forms.
-description: Placement of Dots in Rotator control in Xamarin.Forms
+title: Placement Modes in Xamarin Rotator control | Syncfusion
+description: Learn here all about Placement Modes support in Syncfusion Xamarin Rotator (SfRotator) control and more.
 platform: xamarin 
 control: Rotator 
 documentation: ug
 ---
 
-# Placement Modes
+# Placement Modes in Xamarin Rotator (SfRotator)
 
 By default, the rotator control displays the dots of each rotator item. It can be changed to any of the following types:
 

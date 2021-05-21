@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Diacritic sensitivity in Syncfusion ComboBox control
-description: Learn how to enable and disable Diacritic sensitivity in SfComboBox
+title: Diacritic Sensitivity in Xamarin ComboBox control | Syncfusion
+description: Learn here all about Diacritic Sensitivity support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
-# Diacritic Sensitivity
+# Diacritic Sensitivity in Xamarin ComboBox (SfComboBox)
 
 The control does not stick with one type of keyboard, so you can populate items from a language with letters containing diacritics, and search for them with English characters from an en-US keyboard. Users can enable or disable the diacritic sensitivity with the [`IgnoreDiacritic`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_IgnoreDiacritic) property. In the below code example we have illustrate how to enables the diacritic sensitivity so that items in the suggestion list get populated by entering any diacritic character of that alphabet.
 

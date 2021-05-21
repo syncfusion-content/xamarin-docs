@@ -1,7 +1,7 @@
 ---
 layout: post   
-title: Month View | SfSchedule | Xamarin | Syncfusion   
-description: This section describes how to set the month view in sfschdule and also how to customize the month view appearance.
+title: Month View in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Month View support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin   
 control: SfSchedule   
 documentation: ug   

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Load more in Xamarin.Forms Chat | SfChat | Xamarin | Syncfusion
-description: Describes about the load more or dynamic loading or lazy loading of messages in Xamarin.Forms chat control.
+title: Load More in Xamarin Chat control | Syncfusion
+description: Learn here all about Load More support in Syncfusion Xamarin Chat (SfChat) control, its elements and more.
 platform: xamarin
 control: SfChat
 documentation: ug
 ---
 
-# Load more messages in Xamarin Chat (SfChat)
+# Load More in Xamarin Chat (SfChat)
 
 In SfChat you can scroll to the top of the message list to fetch the old messages on demand, in run-time either automatically or manually(by tapping the load more button) by setting the [SfChat.LoadMoreBehavior](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_LoadMoreBehavior) as `LoadMoreOption.Auto` or `LoadMoreOption.Manual` respectively. Assign the desired action to be triggered when load more is performed using the [SfChat.LoadMoreCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_LoadMoreCommand) property. You can also pass the desired parameter to the `SfChat.LoadMoreCommand` using the [SfChat.LoadMoreCommandParameter](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_LoadMoreCommandParameter) property. Use the [SfChat.IsBusy](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_IsBusy) property to show the busy indicator denoting the loading operation in SfChat.
 

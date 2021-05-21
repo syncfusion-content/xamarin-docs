@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resource view scheduler | Xamarin.Forms | Syncfusion
-description: xamarin.forms scheduler resource view allows users to select resources and display with efficient use of the events associated with the selected resources.
+title: Resource View in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Resource View support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfScheduler
 documentation: ug

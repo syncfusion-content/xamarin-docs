@@ -797,4 +797,4 @@ Content = layout;
 
 ![Suggest append image](images/ComboBox-Filtering-Options/suggest-append.png)
 
-N> The deletion of a character will not work on some Android devices due to a framework issue.
+N> The deletion of a character is not support in this mode which is a known framework issue.

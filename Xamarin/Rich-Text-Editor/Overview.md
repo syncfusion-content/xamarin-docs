@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Xamarin.Forms Rich Text Editor
-description: What are the key features available in Syncfusion Rich Text Editor control for Xamarin.Forms platform.
+title: About Xamarin Rich Text Editor control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control, its elements and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug

@@ -156,7 +156,7 @@ The `QueryRowDragging` event provides the following properties in [QueryRowDragg
  * [RowData](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowDraggingEventArgs_RowData): Returns the underlying data associated with the dragged row.
  * [CurrentRowData](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowDraggingEventArgs_CurrentRowData): Returns the corresponding row data over which the row drag view is currently placed.
   * [CanAutoScroll](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryRowDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryRowDraggingEventArgs_CanAutoScroll): Returns whether auto-scrolling should happen when row drag view reaches the top or bottom of the `SfDataGrid`.
- * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx): Returns the Boolean property to cancel the event.
+ * [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?redirectedfrom=MSDN&view=net-5.0#properties): Returns the Boolean property to cancel the event.
 
 ## Cancel dragging of a particular row
 

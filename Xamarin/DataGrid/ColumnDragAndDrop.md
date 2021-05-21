@@ -35,7 +35,7 @@ The `QueryColumnDragging` event is fired while dragging a column. It will be con
  * [Reason](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryColumnDraggingEventArgs_Reason): Returns the column dragging details as the [QueryColumnDraggingReason](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryColumnDraggingReason.html).
  * [DraggingPosition](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryColumnDraggingEventArgs_DraggingPosition): Returns positions of the drag view during column drag and drop operations.
  * [CanAutoScroll](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.QueryColumnDraggingEventArgs.html#Syncfusion_SfDataGrid_XForms_QueryColumnDraggingEventArgs_CanAutoScroll): Returns whether auto-scrolling should happen when column drag view reaches the left or right ends of the `SfDataGrid`.
- * [Cancel](https://msdn.microsoft.com/en-us/library/system.componentmodel.canceleventargs_properties(v=vs.110).aspx): Returns the boolean property to cancel the event.
+ * [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs?redirectedfrom=MSDN&view=net-5.0#properties): Returns the boolean property to cancel the event.
 
 ## Cancel dragging of a particular column
 

@@ -284,7 +284,7 @@ To format values displayed in the GridColumn, use the [GridColumn.Format](https:
 
 #### Format column using StringFormat
 
-Assign the format of string to the `GridColumn.Format` property based on the bound data type of the property, the GridColumn is associated to format the value. You can use different [StringFormats](http://msdn.microsoft.com/en-us/library/fbxft59x(v=vs.90).aspx) to customize values displayed in the record cells.
+Assign the format of string to the `GridColumn.Format` property based on the bound data type of the property, the GridColumn is associated to format the value. You can use different [StringFormats](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/fbxft59x(v=vs.90)?redirectedfrom=MSDN) to customize values displayed in the record cells.
 
 To apply formatting for a GridTextColumn, follow the code example:
 

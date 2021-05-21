@@ -484,7 +484,7 @@ The [GroupChangingEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
  `Cancel`: Decides to cancel group expansion.
  
-Cancel group expansion by setting [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) to `true`.
+Cancel group expansion by setting [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0) to `true`.
 
 {% tabs %}
 {% highlight c# %}
@@ -516,7 +516,7 @@ The [GroupChangingEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.Sf
 
  `Cancel`: Decides to cancel the group collapsing.
 
-Cancel the group is being collapsed by using the [GroupChangingEventArgs.Cancel](http://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) of `GroupCollapsing` event.
+Cancel the group is being collapsed by using the [GroupChangingEventArgs.Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0) of `GroupCollapsing` event.
 
 {% tabs %}
 {% highlight c# %}

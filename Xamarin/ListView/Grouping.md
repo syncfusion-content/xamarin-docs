@@ -573,7 +573,7 @@ The [SfListView.GroupExpanding](https://help.syncfusion.com/cr/xamarin/Syncfusio
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members:
 
 [Groups](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html#Syncfusion_ListView_XForms_GroupExpandCollapseChangingEventArgs_Groups): Gets a list of groups being expanded.
-[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Decides whether to cancel the group expansion or not.
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev14IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0): Decides whether to cancel the group expansion or not.
 
 The `GroupExpanding` event used for the following use case.
 
@@ -616,7 +616,7 @@ The [SfListView.GroupCollapsing](https://help.syncfusion.com/cr/xamarin/Syncfusi
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html) of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following members:
 
 [Groups](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html#Syncfusion_ListView_XForms_GroupExpandCollapseChangingEventArgs_Groups): Gets a list of groups being collapsed.
-[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Decides whether to cancel the group collapsing or not.
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev14IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0): Decides whether to cancel the group collapsing or not.
 
 You can cancel the group is being collapsed by setting the `GroupExpandCollapseChangingEventArgs.Cancel` to `true`.
 

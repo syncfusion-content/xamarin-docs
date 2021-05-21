@@ -185,7 +185,7 @@ The `SfListView` have scrolled to top automatically when changing the `ItemsSour
 
 For `Horizontal` orientation, use the `ScrollX` value of `ExtendedScrollView`.
 
- By using [Reflection](https://msdn.microsoft.com/en-us/library/system.reflection(v=vs.110).aspx), get the value of `ScrollOwner` from `VisualContainer` and use it.
+ By using [Reflection](https://docs.microsoft.com/en-us/dotnet/api/system.reflection?redirectedfrom=MSDN&view=net-5.0), get the value of `ScrollOwner` from `VisualContainer` and use it.
 
 {% tabs %}
 {% highlight c# %}

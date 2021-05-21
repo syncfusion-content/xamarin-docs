@@ -322,7 +322,7 @@ The size, shape, and position of the map points can be customized using the [`Ma
 
 ## Add shapes using shape file
 
-[`SfMaps`](https://help.syncfusion.com/xamarin/sfmaps/getting-started) allows to provide various shape types in [`ShapeFileLayer`](https://help.syncfusion.com/xamarin/sfmaps/layers#shape-file-layer) such as Polygon, Polyline, and Points. Shape point collection and shape type should be add in shape file itself.
+[`SfMaps`](https://help.syncfusion.com/xamarin/maps/getting-started) allows to provide various shape types in [`ShapeFileLayer`](https://help.syncfusion.com/xamarin/maps/layers#shape-file-layer) such as Polygon, Polyline, and Points. Shape point collection and shape type should be add in shape file itself.
 
 ### Polygon
 

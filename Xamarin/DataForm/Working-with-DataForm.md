@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with DataForm | SfDataForm | Xamarin.Forms | Syncfusion
-description: This section explains how to use Syncfusion Xamarin.Forms DataForm along with interacting events and other different functionalities.
+title: Working with DataForm in Xamarin DataForm control | Syncfusion
+description: Learn here all about Working with DataForm support in Syncfusion Xamarin DataForm (SfDataForm) control and more.
 platform: xamarin
 control: SfDataForm
 documentation: UG
 ---
 
-# Working with the data form
+# Working with DataForm in Xamarin DataForm (SfDataForm)
 
 ## Auto-generating DataFormItems for the data field
 
@@ -166,7 +166,7 @@ You can cancel the specific [DataFormItem](https://help.syncfusion.com/cr/xamari
 
 ### Using attributes
 
-You can set [AutoGenerateField](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.displayattribute.autogeneratefield.aspx) to `false` for canceling the `DataFormItem` generation.
+You can set [AutoGenerateField](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute.autogeneratefield?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_DataAnnotations_DisplayAttribute_AutoGenerateField) to `false` for canceling the `DataFormItem` generation.
 
 {% tabs %}
 {% highlight c# %}

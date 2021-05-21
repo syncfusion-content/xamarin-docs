@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ListView Right-to-left | Xamarin.Forms | Syncfusion
-description: Describes how Xamarin.Forms ListView works on right-to-left localization and its limitation, swiping with RTL.
+title: Right To Left in Xamarin ListView control | Syncfusion
+description: Learn here all about Right To Left support in Syncfusion Xamarin ListView (SfListView) control and more.
 platform: xamarin
 control: SfListView
 documentation: ug

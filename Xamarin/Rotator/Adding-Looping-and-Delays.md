@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Looping and Delays in Syncfusion Rotator control. 
-description: Learn how to set the autoplay option, loop the items, enable Text Area  and choose the navigation direction in Rotator control for Xamarin.Forms
+title: Adding Looping and Delays in Xamarin Rotator control | Syncfusion
+description: Learn here all about Adding Looping and Delays support in Syncfusion Xamarin Rotator (SfRotator) control and more.
 platform: xamarin 
 control: Rotator
 documentation: ug
 ---
 
-# Adding Looping and Delays
+# Adding Looping and Delays in Xamarin Rotator (SfRotator)
 
 Looping and delay can be enabled in SfRotator control and also we can customize the Text and Navigation direction.
 

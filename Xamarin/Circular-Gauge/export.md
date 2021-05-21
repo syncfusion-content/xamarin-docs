@@ -1,14 +1,14 @@
 ---
 layout: post
-title:  Exporting options in Syncfusion.Xamarin.Forms SfCircularGauge
-description: This section describes how to export the SfCircularGauge as an image and get the stream of Syncfusion.Xamarin.Forms SfCircularGauge.
+title: Exporting in Xamarin Circular Gauge control | Syncfusion
+description: Learn here all about Exporting support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
 
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
 ---
 
-# Export SfCircularGauge as an image and get the stream
+# Exporting in Xamarin Circular Gauge (SfCircularGauge)
 
 ## Export as an image
 

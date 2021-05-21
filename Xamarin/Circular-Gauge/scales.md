@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Scales in Syncfusion SfCircularGauge control for Xamarin.Forms
-description: This section explains the steps required to add and customize scales in Syncfusion Circular Gauge control for Xamarin.Forms
+title: Scales in Xamarin Circular Gauge control | Syncfusion
+description: Learn here all about Scales support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Scales in SfCircularGauge
+# Scales in Xamarin Circular Gauge (SfCircularGauge)
 
 The scales contain a collection of [`Scale`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Scale.html) elements, which integrates labels, tick marks, and a rim to customize the basic look and feel of the circular gauge.
 

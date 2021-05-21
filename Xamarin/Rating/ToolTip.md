@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Tooltip in Syncfusion SfRating control for Xamarin.Forms
-description: Learn how to change the Tooltip of rating control
+title: ToolTip in Xamarin Rating control | Syncfusion
+description: Learn here all about ToolTip support in Syncfusion Xamarin Rating (SfRating) control, its elements and more.
 platform: Xamarin
 control: Rating
 documentation: ug
 
 ---
 
-# Tooltip
+# ToolTip in Xamarin Rating (SfRating)
 
 Tooltip provides additional information about objects that are unfamiliar to users and are not directly displayed in UI. In the Xamarin.Forms SfRating control, tooltip shows the data of `Value`. It will be displayed when the mouse is hovered over the rating items and will be disappeared when a rating item is selected.
 

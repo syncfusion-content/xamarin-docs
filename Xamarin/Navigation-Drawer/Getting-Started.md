@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for Syncfusion.Xamarin.Forms NavigationDrawer
-description: Getting started with Syncfusion NavigationDrawer control in Xamarin.Forms and walk through to create a demo application from the scratch. 
+title: Getting Started with Xamarin Navigation Drawer control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control, its elements and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
 
-# Getting Started with Xamarin NavigationDrawer(SfNavigationDrawer)
+# Getting Started with Xamarin Navigation Drawer (SfNavigationDrawer)
 
 This section explains you the steps required to create a navigation DrawerPanel with content area and data filled drawer and it covers only the minimal features that you need to know to get started with the NavigationDrawer.
 

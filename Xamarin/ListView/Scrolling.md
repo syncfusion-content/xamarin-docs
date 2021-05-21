@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Handling Syncfusion ListView Scrolling
-description: This section describes about the scrolling behavior of SfListView control and how it can be handled and customized.
+title: Scrolling in Xamarin ListView control | Syncfusion
+description: Learn here all about Scrolling support in Syncfusion Xamarin ListView (SfListView) control and more.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -185,7 +185,7 @@ The `SfListView` have scrolled to top automatically when changing the `ItemsSour
 
 For `Horizontal` orientation, use the `ScrollX` value of `ExtendedScrollView`.
 
- By using [Reflection](https://msdn.microsoft.com/en-us/library/system.reflection(v=vs.110).aspx), get the value of `ScrollOwner` from `VisualContainer` and use it.
+ By using [Reflection](https://docs.microsoft.com/en-us/dotnet/api/system.reflection?redirectedfrom=MSDN&view=net-5.0), get the value of `ScrollOwner` from `VisualContainer` and use it.
 
 {% tabs %}
 {% highlight c# %}

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Timeline view scheduler | Xamarin.Forms | Syncfusion
-description: Xamarin.Forms scheduler timeline view displays the dates in a horizontal time axis with desired days count, displays events accurately across the time slots.
+title: Timeline View in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Timeline View support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfScheduler
 documentation: ug

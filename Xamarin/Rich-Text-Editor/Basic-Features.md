@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Basic features in Syncfusion Xamarin.Forms Rich Text Editor
-description: This page explains how to basic features available in Syncfusion Rich Text Editor for Xamarin.Forms platform.
+title: Basic Features in Xamarin Rich Text Editor control | Syncfusion
+description: Learn here all about Basic Features support in Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug
 ---
 
-# Basic Features of Rich Text Editor
+# Basic Features in Xamarin Rich Text Editor (SfRichTextEditor)
 
 ## Setting Text
 

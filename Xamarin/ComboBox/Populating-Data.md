@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Data Binding  in Syncfusion ComboBox control for Xamarin.Forms
-description: This section provides the information about how to perfoming a DataBinding & Populating data items using ComboBox Xamarin
+title: Populating Data  in Xamarin ComboBox control | Syncfusion
+description: Learn here all about Populating Data  support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
 
-# Populating data in SfComboBox
+# Populating Data  in Xamarin ComboBox (SfComboBox)
 
 SfComboBox control can be populated with a list of string or business objects, which assists the users when typing. Users can choose one item from the filtered suggestion list.
 
-The [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSourceProperty) property is used to populate data in the combo box control. This section explains how to populate the combo box control with list of strings and employees details, separately.
+The [`DataSource`] property is used to populate data in the combo box control. This section explains how to populate the combo box control with list of string and list of employee details separately.
 
 ## Populating string data
 
-Create an instance of string list and populate items by using the [`ComboBoxSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ComboBoxSourceProperty) property as shown in the following codes. 
+Create an instance of string list and populate items as shown in the following codes. 
 
 {% tabs %}
 
@@ -134,7 +134,7 @@ public EmployeeViewModel()
 
 ### Populate data in ComboBox
 
-Now, populate this EmployeeViewModel data in SfComboBox control by binding with [`DataSource`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DataSourceProperty) property. 
+Now populate this EmployeeViewModel data in SfComboBox control by binding with [`DataSource`] property. 
 
 {% tabs %}
 
@@ -181,7 +181,7 @@ N> Set the EmployeeViewModel instance as the BindingContext of your control; thi
 
 ### Setting DisplayMemberPath
 
-The combo box control is populated with a list of employees. But the employee model contains two properties ID and Name, So it is necessary to intimate by which property it should filter suggestions. The [`DisplayMemberPath`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DisplayMemberPathProperty) property specifies the property path with type of filtering is done on business objects.
+The combo box control is populated with a list of employees. But the employee model contains two properties ID and Name, So it is necessary to intimate by which property it should filter suggestions. The [`DisplayMemberPath`] property specifies the property path with type of filtering is done on business objects.
 
 {% highlight c# %}
 	
@@ -193,7 +193,7 @@ comboBox.DisplayMemberPath = "Name";
 
 ### Setting ItemTemplate
 
-The [`ItemTemplate`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ItemTemplateProperty) property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
+The [`ItemTemplate`] property helps to decorate suggestion items with custom templates. The following code explains the steps to add an image to the suggestion list item.
 
 {% tabs %}
 {% highlight xaml %}

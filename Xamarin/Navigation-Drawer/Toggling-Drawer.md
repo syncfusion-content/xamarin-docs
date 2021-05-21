@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Toggling drawer in Syncfusion NavigationDrawer control
-description: In this section learn how to toggle the DrawerView panel in Syncfusion NavigationDrawer control in Xamarin.Forms
+title: Toggle methods in Xamarin Navigation Drawer control | Syncfusion
+description: Learn here all about Toggle methods support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Various features of Syncfusion NavigationDrawer control.
-description: Learn how to set content view, drawer content view, footer view, header view, drawer size in NavigationDrawer.
+title: Setting Main Content in Xamarin Navigation Drawer control | Syncfusion
+description: Learn here all about Setting Main Content support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
 
 
-# Main Content of ContentView
+# Setting Main Content in Xamarin Navigation Drawer (SfNavigationDrawer)
 
 Main content of NavigationDrawer is always visible and it can be set using `ContentView` property. In the following code example, ContentView is switched when selection changes in ListView.
 

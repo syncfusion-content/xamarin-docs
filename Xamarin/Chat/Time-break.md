@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Time break view in Xamarin.Forms Chat | SfChat | Xamarin | Syncfusion
-description: Describes about the time break view and its functionalities and customization in xamarin.forms chat.
+title: Time break in Xamarin Chat control | Syncfusion
+description: Learn here all about Time break support in Syncfusion Xamarin Chat (SfChat) control, its elements and more.
 platform: xamarin
 control: SfChat
 documentation: ug
 ---
 
-# Time break between Messages in Xamarin.Forms Chat (SfChat)
+# Time break in Xamarin Chat (SfChat)
 
 The chat control provides a convenient way to group messages based on the date and time the messages were created. So, users can easily identify the messages in the order they were created. To enable time break view in `SfChat` set `true` to the [SfChat.ShowTimeBreak](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ShowTimeBreak) property.
 

@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Overview of Syncfusion SfCircularGauge control for Xamarin.Forms
-description: This section explains the key features and quick overview about Syncfusion Circular Gauge control for Xamarin.Forms
+title: About Xamarin Circular Gauge control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Circular Gauge (SfCircularGauge) control, its elements and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Overview
+# Xamarin Circular Gauge (SfCircularGauge) Overview
 
 Essential Gauge for Xamarin.Forms helps you to visualize the numeric values over a circular scale. The appearance of the gauge is fully customized to integrate your applications without fault.
 

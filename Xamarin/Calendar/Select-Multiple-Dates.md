@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection Modes | SfCalendar | Xamarin.Forms | Syncfusion
-description: Describes the different types of Selection modes and Clear selection method in Calendar (SfCalendar) control.
+title: Select Multiple Dates in Xamarin Calendar control | Syncfusion
+description: Learn here all about Select Multiple Dates support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
 platform: Xamarin
 control: Calendar
 documentation: ug
 ---
 
-# Select Multiple Dates
+# Select Multiple Dates in Xamarin Calendar (SfCalendar)
 
 Dates can be selected by making a touch on month view cells. The default [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCalendar.XForms.SfCalendar.html#Syncfusion_SfCalendar_XForms_SfCalendar_SelectionMode) is Single which allows user to select one date at a time. `SfCalendar` provides support to select dates in two modes such as Single and Multiple selection.
 

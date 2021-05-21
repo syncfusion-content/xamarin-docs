@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Exporting options in Essential Syncfusion.Xamarin.Forms Chart 
-description: This section describes how to export the Chart as an image and get the stream of Syncfusion.Xamarin.Forms Chart.
+title: Exporting in Xamarin Charts control | Syncfusion
+description: Learn here all about Exporting support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 
 platform: xamarin
 control: Chart

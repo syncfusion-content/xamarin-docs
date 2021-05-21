@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion TabView control for Xamarin.Forms
-description: This section will explain about Overview and available key features of Syncfusion tab view control in xamarin.forms.
+title: About Xamarin Tabbed View control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Tabbed View (SfTabView) control, its elements and more.
 platform: xamarin
 control: SfTabView
 documentation: ug

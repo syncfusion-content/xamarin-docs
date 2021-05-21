@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Syncfusion NumericTextBox control for Xamarin.Forms
-description: This scetion expalin how to Localize the Syncfusion Xamarin.Forms SfNumericTextBox value and Change localization of return key text.
+title: Localization in Xamarin Numeric Entry control | Syncfusion
+description: Learn here all about Localization support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
@@ -27,7 +27,7 @@ this.Content = numericTextBox;
 
 ## Change Localization of Return key text
 
-The SfNumericTextBox provides the Localization support for the Return Key in soft keypad of iOS. We have provided the knowledge base document for the same. Please refer the Knowledge Base document from this [link.](https://www.syncfusion.com/kb/8075/how-to-localize-the-return-buttons-text-in-sfnumerictextbox-in-xforms-ios)
+The SfNumericTextBox provides the Localization support for the Return Key in soft keypad of iOS. We have provided the knowledge base document for the same. Please refer the Knowledge Base document from this [link.](https://www.syncfusion.com/kb/11630/how-to-get-the-localized-return-key-on-the-ios-keyboard-in-xamarin-forms-numeric-controls)
 
 ## See also
 

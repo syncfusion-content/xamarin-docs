@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Load On-demand | TreeView for Xamarin.Forms | Syncfusion
-description: This topic explains about how to load the child nodes on demand for treeview in SfTreeView Xamarin.Forms
+title: Load on Demand in Xamarin TreeView control | Syncfusion
+description: Learn here all about Load on Demand support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug
 ---
 
-# Load on demand in Xamarin TreeView (SfTreeView)
+# Load on Demand in Xamarin TreeView (SfTreeView)
 
 TreeView allows you to load child items only when they are requested using Load on-demand(Lazy load). It helps to load the child items from services when end-user expands the node. Initially populate the root [Nodes](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_Nodes) by assigning [ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ItemsSource) and then when any node is expanded, child items can be loaded using [LoadOnDemandCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_LoadOnDemandCommand). Load on-demand is applicable for bound mode only.
 

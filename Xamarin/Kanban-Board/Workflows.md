@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Workflows for Essential Xamarin.Forms Kanban
-description: Kanban Workflows
+title: Workflows in Xamarin Kanban Board control | Syncfusion
+description: Learn here all about Workflows support in Syncfusion Xamarin Kanban Board (SfKanban) control and more.
 platform: xamarin
 control: Kanban
 documentation: ug
 ---
 
-# Workflows
+# Workflows in Xamarin Kanban Board (SfKanban)
 
 This feature is used to define the flow of the card transitions from one state to another state. You need to create an instance of [`KanbanWorkflow`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanWorkflow.html) class and add it to [`SfKanban.Workflows`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.SfKanban.html#Syncfusion_SfKanban_XForms_SfKanban_Workflows) property to define the workflow for each column.  The [`KanbanWorkflow`](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfKanban.XForms.KanbanWorkflow.html) contains the following properties to define the source category and target categories.
 
@@ -40,4 +40,4 @@ kanban.Workflows = workflows;
 In the below output, you can see the card which was picked from Open state is not allowed to drop on “Code Review” and "Done" state, because we have defined to move the card from Open to “In Progress” state only and not to any other states.
 
 
-![](SfKanban_images/Workflows.png)
+![Workflows](SfKanban_images/Workflows.png)

@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Transformation in Syncfusion Carousel control in Xamarin.Forms
-description : Learn how to set the Rotation Angle and Offset in Carousel for Xamarin.Forms
+title: Transformation in Xamarin Carousel View control | Syncfusion
+description: Learn here all about Transformation support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
 platform : Xamarin
 control : Carousel
 documentation : ug
 ---
 
-# Transformation
+# Transformation in Xamarin Carousel View (SfCarousel)
 
 The Offset between selected and unselected item can be customized in SfCarousel control. And also the items can be scaled to the specified value.
 

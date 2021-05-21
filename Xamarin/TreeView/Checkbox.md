@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TreeView Checkbox | TreeNode Checkbox | Xamarin.Forms | Syncfusion
-description: The Xamarin.Forms TreeView provides support for loading Checkbox in each node and allows users to check/uncheck the corresponding node.
+title: Checkbox in Xamarin TreeView control | Syncfusion
+description: Learn here all about Checkbox support in Syncfusion Xamarin TreeView (SfTreeView) control, its elements and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug

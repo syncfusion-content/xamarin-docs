@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in Syncfusion Signature Pad Xamarin.Forms
-description: This section explains the details about the customization of Syncfusion Signature Pad control for Xamarin.Forms
+title: Customization in Xamarin SignaturePad control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Xamarin SignaturePad (SfSignaturePad) control and more.
 platform: xamarin
 control: SfSignaturePad
 documentation: ug
 ---
 
-# Customization in Signature Pad
+# Customization in Xamarin SignaturePad (SfSignaturePad)
 
 The Signature Pad control supports to customize the stroke color and stroke width using the following API.
 

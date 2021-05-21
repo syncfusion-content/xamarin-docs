@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization for Syncfusion Essential Xamarin.Forms SfButton
-description: This section describes how to customize the appearance of text, background and image for SfButton in Xamarin.Forms.
+title: Customization in Xamarin Button control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Xamarin Button (SfButton) control and more.
 platform: xamarin
 control: sfbutton
 documentation: ug
 ---
 
-# Customization in Xamarin Buttons(SfButton)
+# Customization in Xamarin Button (SfButton)
 
 The button control supports to customize the border color, image width, corner radius, background color, and more. The button control can be customized using the following properties:
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Features in Syncfusion EffectsView control in Xamarin.Forms
-description: This section describes how to use the additional features in Syncfusion EffectsView control in Xamarin.Forms
+title: Features in Xamarin Effects View control | Syncfusion
+description: Learn here all about Features support in Syncfusion Xamarin Effects View (SfEffectsView) control and more.
 platform: xamarin
 control: SfEffectsView
 documentation: ug
 ---
 
-# Features in SfEffectsView
+# Features in Xamarin Effects View (SfEffectsView)
 
 The [`SfEffectsView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.EffectsView.SfEffectsView.html) control provides the following additional features to enhance the effects:
 

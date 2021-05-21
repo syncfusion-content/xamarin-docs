@@ -1,12 +1,12 @@
 ---
 layout: post
-title: SelectAllOnFocus in Syncfusion NumericTextBox for Xamarin.Forms
-description: Learn how to set SelectAllOnFocus the  NumericTextBox
+title: Selection Support in Xamarin Numeric Entry control | Syncfusion
+description: Learn here all about Selection Support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Set SelectAllOnFocus
+# Selection Support in Xamarin Numeric Entry (SfNumericTextBox)
 
 `SelectAllOnFocus` the property is used to specify whether the text should be selected when the control gets focus.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion TextInputLayout States and Colors
-description: This section explain how to customize the colors based on states in Syncfusion Xamarin.Forms SfTextInputLayout
+title: States and Colors in Xamarin Text Input Layout control | Syncfusion
+description: Learn here all about States and Colors support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug

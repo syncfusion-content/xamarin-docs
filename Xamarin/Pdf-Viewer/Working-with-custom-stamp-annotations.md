@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Working with custom stamp annotations in PDF Viewer | Syncfusion
-description: The custom stamp annotation allows the users to include any form of Xamarin.Forms widget like Button, Entry, Label, and Image anywhere in the PDF document
+title: Custom stamp annotations in Xamarin Pdf Viewer Control | Syncfusion
+description: Learn here all about Working with custom stamp annotations support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Working with custom stamp annotations
+# Working with custom stamp annotations in Xamarin Pdf Viewer
 
 [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to include any form of Xamarin.Forms View that is Button, Entry, Label, Image and more anywhere in the pages of the PDF Viewer as custom stamp annotation. You can perform operations like add, move, resize, and delete the custom stamp annotations. Also, you can save and load the existing custom stamp annotation that is associated with the PDF document
 

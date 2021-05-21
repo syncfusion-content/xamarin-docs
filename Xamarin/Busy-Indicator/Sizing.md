@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Sizing support in Syncfusion SfBusyIndicator control for Xamarin.Forms
-description: This section will explain about how to customize the size of the Xamarin.Forms SfBusyIndicator control viewbox.
+title: Sizing in Xamarin Busy Indicator control | Syncfusion
+description: Learn here all about Sizing support in Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control and more.
 platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# Sizing
+# Sizing in Xamarin Busy Indicator (SfBusyIndicator)
 
 ## Sizing in Xamarin BusyIndicator (SfBusyIndicator)
 

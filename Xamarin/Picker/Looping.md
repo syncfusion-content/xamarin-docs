@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Looping support for Syncfusion.Xamarin.Forms SfPicker
-description: Learn here all about Looping feature of Syncfusion Xamarin Picker (SfPicker) control and  its property of Enable Looping and sample.
+title: Looping in Xamarin Picker control | Syncfusion
+description: Learn here all about Looping support in Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
-# Looping in Xamarin Picker(SfPicker)
+# Looping in Xamarin Picker (SfPicker)
 
 The Looping support is used to automatically navigate the first item to repeat the list of items after reached the last item. Each forward iteration is followed by a backward iteration in the picker control. This can be achieved by `EnableLooping` property.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: TreeMapLevels in Syncfusion TreeMap control for Xamarin.Forms
-description: This section describes on how to categorize the levels and populate data for each level with their features in Syncfusion TreeMap control.
+title: TreeMap Levels in Xamarin TreeMap control | Syncfusion
+description: Learn here all about TreeMap Levels support in Syncfusion Xamarin TreeMap (SfTreeMap) control and more.
 platform: xamarin
 control: TreeMap
 documentation: ug
 ---
 
-# TreeMap levels and its usage
+# TreeMap Levels in Xamarin TreeMap (SfTreeMap)
 
 The levels of tree map can be categorized into the following two types:
 

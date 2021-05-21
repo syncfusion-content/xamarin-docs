@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Item Size Customization in Syncfusion Expander
-description: Describes the Item Size Customization in SfExpander using ItemSize property and DynamicSizeMode property.
+title: Item Size Customization in Xamarin Expander control | Syncfusion
+description: Learn here all about Item Size Customization support in Syncfusion Xamarin Expander (SfExpander) control and more.
 platform: xamarin
 control: SfExpander
 documentation: ug

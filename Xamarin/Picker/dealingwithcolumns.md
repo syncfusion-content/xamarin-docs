@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Columns of Syncfusion Picker control for Xamarin.Forms
-description: This section will explain about how to customize the multiple columns of Xamarin.Forms Picker control 
+title: Dealing with Columns in Xamarin Picker control | Syncfusion
+description: Learn here all about Dealing with Columns support in Syncfusion Xamarin Picker (SfPicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
-# Dealing with Columns
+# Dealing with Columns in Xamarin Picker (SfPicker)
 
 This section explains about the customization of picker columns
 

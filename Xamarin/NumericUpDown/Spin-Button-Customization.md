@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appearance and styling in Syncfusion NumericUpDown for Xamarin.Forms
-description: Learn spin buttons position customization, UpDownButtonSetting customization, and spin button validation customization in NumericUpDown.
+title: Spin Button Customization in Xamarin NumericUpDown | Syncfusion
+description: Learn here all about Spin Button Customization support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
 
-# Spin Button Alignment
+# Spin Button Customization in Xamarin NumericUpDown (SfNumericUpDown)
 
 Spin button position in the `SfNumericUpDown` control can be changed relative to the TextBox based on `SpinButtonAlignment` property. 
 

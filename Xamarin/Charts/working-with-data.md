@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Populating data in Syncfusion.Xamarin.Forms Chart
-description: This section describes how to add data point to series in  Essential Syncfusion.Xamarin.Forms Chart.
+title: Populating Data in Xamarin Charts control | Syncfusion
+description: Learn here all about Populating Data support in Syncfusion Xamarin Charts (SfChart) control and more.
 platform: xamarin
 control: Chart
 documentation: ug

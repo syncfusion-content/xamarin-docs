@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Essential Xamarin.Forms Chart | Syncfusion
-description: This section describes about what are the key features available in the Xamarin.Forms Charts (SfChart)
+title: About Xamarin Charts control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Overview of Xamarin Charts (SfChart)
+# Xamarin Charts (SfChart) Overview
 
 Essential Chart for Xamarin.Forms provide a perfect way to visualize data with a high level of user interactivity that focuses on development, productivity and simplicity of use. Essential Chart also provides a wide variety of charting features that are used to visualize large quantities of data, flexible data binding and user customization.
 

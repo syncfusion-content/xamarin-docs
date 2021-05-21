@@ -1,13 +1,13 @@
 ---
 layout: post
-title: SfCardLayout in Essential Syncfusion.Xamarin.Forms Cards
-description: This section describes about the Customization features of SfCardLayout and SfCardView in Xamarin.Forms.
+title: Customization in Xamarin Cards control | Syncfusion
+description: Learn about Customization support in Syncfusion Essential Studio Xamarin Cards control, its elements and more.
 platform: xamarin
 control: Cards
 documentation: ug
 ---
 
-# Customization in CardLayout
+# Customization in Xamarin Cards
 
 ### ShowSwipedCard
 
@@ -88,7 +88,7 @@ SfCardLayout cardLayout = new SfCardLayout()
 
 ![SwipeDirection in Xamarin.Forms SfCardLayout](cardlayout-customization_images/swipedirection.png)
 
-You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/xamarin.forms-cards).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Getting-started-sample-of-cards).
 
 ## Customization in CardView
 

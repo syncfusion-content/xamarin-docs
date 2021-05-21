@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Various Features in Syncfusion NumericUpDown control for Xamarin.Forms
-description: Learn how to decide maximum decimal digits to be displayed, nullable value support, autoreverse, setting range and configuring step value in NumericUpDown
+title: Set Max Number of Decimal Digits in Xamarin NumericUpDown | Syncfusion
+description: Learn here all about Set Maximum Number of Decimal Digits support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
-# Set Maximum Number of Decimal Digits
+# Set Maximum Number of Decimal Digits in Xamarin NumericUpDown
 
 The maximum number of digits to be displayed after the decimal point can be specified by using [`MaximumDecimalDigits `](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_MaximumDecimalDigits) property. 
 

@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Data Binding  in Syncfusion Carousel control in Xamarin.Forms.
-description : This section describes how to bind the data sources to populate items in the carousel and binding data in template of the carousel items.
+title: Populating Data in Xamarin Carousel View control | Syncfusion
+description: Learn here all about Populating Data support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
 platform : Xamarin
 control : Carousel
 documentation : ug
 ---
 
-# Populating Data
+# Populating Data in Xamarin Carousel View (SfCarousel)
 
 SfCarousel control, supports binding to different data sources such as IList Data Source, Observable Collection Data Source.
 

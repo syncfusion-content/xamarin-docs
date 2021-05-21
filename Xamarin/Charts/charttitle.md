@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion.Xamarin.Forms Chart Title
-description: How to add chart title and customize the appearance of the chart title in the Essential Xamarin.Forms.
+title: Chart Title in Xamarin Charts control | Syncfusion
+description: Learn here all about Chart Title support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Title in Xamarin Charts (SfChart)
+# Chart Title in Xamarin Charts (SfChart)
 
 You can define and customize the Chart title using [`Title`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#Syncfusion_SfChart_XForms_SfChart_Title) property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html). The [`Text`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTitle.html#Syncfusion_SfChart_XForms_ChartTitle_Text) property of [`ChartTitle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartTitle.html) is used to set the text for the title. 
 

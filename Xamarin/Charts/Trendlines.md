@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion.Xamarin.Forms Chart trendline
-description: How to configure the chart trendlines and customize the appearance of the trendlines in Essential Xamarin.Forms Chart.
+title: Trendlines in Xamarin Charts control | Syncfusion
+description: Learn here all about Trendlines support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Animation feature of Syncfusion Xamarin.Forms SfSunburstChart
-description: This section describes the animation feature of sunburst chart.
+title: Animation in Xamarin Sunburst Chart control | Syncfusion
+description: Learn here all about Animation support in Syncfusion Xamarin Sunburst Chart (SfSunburstChart) control and more.
 platform: xamarin
 control: SfSunburstChart
 documentation: ug
 ---
 
-# Animation
+# Animation in Xamarin Sunburst Chart (SfSunburstChart)
 
 The sunburst chart provides animation on loading and whenever the item source changes. Animation can be enabled by setting the [`EnableAnimation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SfSunburstChart.html#Syncfusion_SfSunburstChart_XForms_SfSunburstChart_EnableAnimation) property to true.
 

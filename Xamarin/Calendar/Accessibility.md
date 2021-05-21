@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AutomationId | SfCalendar | Xamarin.Forms | Syncfusion
-description: Set Automation Id to SfCalendar for automation framework to find and interact with control inner elements.
+title: Accessibility in Xamarin Calendar control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
 platform: Xamarin
 control: SfCalendar
 documentation: UG
 ---
 
-# AutomationId in Xamarin Calendar (SfCalendar)
+# Accessibility in Xamarin Calendar (SfCalendar)
 
 The `SfCalendar` control has built-in `AutomationId` for inner elements. Please find the following table of Automation IDs for inner elements.
 

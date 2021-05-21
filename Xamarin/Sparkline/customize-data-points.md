@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customize data in Syncfusion Sparkline control for Xamarin.Forms
-description: How to customize data points in Essential Xamarin.Forms Sparkline. Describes how to apply color for different data points. 
+title: Customize Data Points in Xamarin Sparkline control | Syncfusion
+description: Learn here all about Customize Data Points support in Syncfusion Xamarin Sparkline (SfSparkline) control and more.
 platform: xamarin
 control: Sparkline
 documentation: ug
 ---
 
-# Customize data points
+# Customize Data Points in Xamarin Sparkline (SfSparkline)
 
 Color of the first, last, high, low and negative data points can be customized using the following properties.
 

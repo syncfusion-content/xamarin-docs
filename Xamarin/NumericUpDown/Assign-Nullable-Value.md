@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Null Values support in Syncfusion NumericUpDown control for Xamarin.Forms
-description: Learn how to add Null Values to NumericUpDown.
+title: Assign Nullable Value in Xamarin NumericUpDown control | Syncfusion
+description: Learn here all about Assign Nullable Value support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
-# Assign Nullable Value
+# Assign Nullable Value in Xamarin NumericUpDown (SfNumericUpDown)
 
 The null values can be set in SfNumericUpDown `Value` property, by setting `AllowNull` property value to true.
 
@@ -30,7 +30,7 @@ N> By default, the property value is false.
 
 {% endtabs %}
 
-![](images/AllowNull.png)
+![AllowNull](images/AllowNull.png)
 
 
 ## Set Hint Text
@@ -55,4 +55,4 @@ The `WaterMark` property can be used to provide a hint that helps the user to ge
 {% endtabs %}
 
 
-![](images/WaterMark.png)
+![WaterMark](images/WaterMark.png)

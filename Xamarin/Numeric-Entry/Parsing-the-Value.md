@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Parsing in Syncfusion NumericTextBox control for Xamarin.Forms
-description: This section describes how to change the parser mode for the NumericTextBox control. The default value is Decimal and it also accepts 'double'.
+title: Parsing the Value in Xamarin Numeric Entry control | Syncfusion
+description: Learn here all about Parsing the Value support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Parsing the Value
+# Parsing the Value in Xamarin Numeric Entry (SfNumericTextBox)
 
 Value of the SfNumericTextBox gets parsed based on `ParserMode` property. ParsingMode is of type Parsers which is enum of Double and Decimal. Hence we have option to display the value in double or decimal. 
 

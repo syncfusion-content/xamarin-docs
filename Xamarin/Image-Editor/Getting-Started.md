@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion ImageEditor control for Xamarin.Forms
-description: Image editor has a built-in toolbar, which has options to edit the image with shapes, path, text, crop, and flip.
+title: Getting Started with Xamarin Image Editor control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Image Editor (SfImageEditor) control, its elements and more.
 platform: xamarin
 control: SfImageEditor
 documentation: ug
 ---
 
-# Getting Started with SfImageEditor
+# Getting Started with Xamarin Image Editor (SfImageEditor)
 
 This section explains the steps required to load an image to the image editor control.
 
@@ -269,6 +269,6 @@ You can find the complete getting started sample from this [link.](https://githu
 
 [How to resolve out of memory exception when loading large images in Android](https://www.syncfusion.com/kb/8301/how-to-resolve-out-of-memory-exception-when-loading-large-images-in-android)
 
-[How to resolve “UWP Getting Exception "Could not find Windows Runtime type 'Microsoft.Graphics.Canvas.CanvasDevice'" When trying to save in UWP](https://www.syncfusion.com/kb/8290/how-to-resolve-uwp-getting-exception-could-not-find-windows-runtime-type-microsoft-graphics)
+[How to resolve “UWP Getting Exception "Could not find Windows Runtime type 'Microsoft.Graphics.Canvas.CanvasDevice'" When trying to save in UWP](syncfusion.com/kb/8290/how-to-resolve-uwp-getting-exception-could-not-find-windows-runtime-type-microsoft-graphics)
 
 [How to resolve SfImageEditor not rendering issue in Xamarin.Forms.iOS](https://www.syncfusion.com/kb/7772/how-to-resolve-sfimageeditor-not-rendering-issue-in-xamarin-forms-ios)

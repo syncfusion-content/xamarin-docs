@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ImageFilter in Syncfusion SfImageEditor control in Xamarin.Forms
-description: This section describes how the apply image filter support in SfImageEditor control for Xamarin.Forms platform
+title: Image Filter in Xamarin Image Editor control | Syncfusion
+description: Learn here all about Image Filter support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
 ---
 
-# Image Filter in SfImageEditor
+# Image Filter in Xamarin Image Editor (SfImageEditor)
 
 Using the image editor control, you can add effects such as Hue, Saturation, Brightness, Contrast, Blur, and Sharpen to the image. These effects can be applied from toolbar or using the ApplyImageEffect method. The [`ApplyImageEffect`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_ApplyImageEffect_Syncfusion_SfImageEditor_XForms_ImageEffect_System_Int32_) method contains two arguments: [`ImageEffect`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.ImageEffect.html) and [`EffectValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_EffectValue). The ImageEffect is an Enum, which contains the following effects:
 

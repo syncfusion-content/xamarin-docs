@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Technical Indicators | Syncfusion | Xamarin.Forms Chart
-description: This section describes about how to enable and customize the technical indicator in Xamarin.Forms Charts
+title: Technical Indicators in Xamarin Charts control | Syncfusion
+description: Learn here all about Technical Indicators support in Syncfusion Xamarin Charts (SfChart) control and more.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Technical Indicators
+# Technical Indicators in Xamarin Charts (SfChart)
 
 The different types of technical indicators available in chart are follows:
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Swipe Events in Syncfusion Carousel control in Xamarin.Forms.
-description: This section provides how to use the Swipe start and Swipe end events in the Xamarin Forms Carousel control.
+title: Swipe Events in Xamarin Carousel View control | Syncfusion
+description: Learn here all about Swipe Events support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
 platform: Xamarin
 control: Carousel
 documentation: ug
 ---
 
-# Swipe Events of Syncfusion Carousel
+# Swipe Events in Xamarin Carousel View (SfCarousel)
 
 ## Swipe Start
 

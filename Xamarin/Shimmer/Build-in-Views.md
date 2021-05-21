@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion.Xamarin.Forms Shimmer types
-description: This section describes the different build-in Shimmer types available in Essential Xamarin.Forms Shimmer control.
+title: Build-in Views in Xamarin Shimmer control | Syncfusion
+description: Learn here all about Build-in Views support in Syncfusion Xamarin Shimmer (SfShimmer) control and more.
 platform: xamarin
 control: SfShimmer
 documentation: ug
 ---
 
-# Shimmer Types
+# Built-in Views in Xamarin Shimmer (SfShimmer)
 
 ## Built-in types
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization of Syncfusion SfImageEditor control in Xamarin.Forms
-description: This section describes how to Localize the contents of SfImageEditor control for Xamarin.Forms platform
+title: Localization in Xamarin Image Editor control | Syncfusion
+description: Learn here all about Localization support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
 ---
 
-# Localization in SfImageEditor
+# Localization in Xamarin Image Editor (SfImageEditor)
 
 The image editor control supports localization. You can localize the contents of image editor by adding equivalent localized strings.
 
@@ -116,6 +116,8 @@ The following screenshot shows localizing the text to Japanese language.
 Please refer the KB from this [`link`](https://www.syncfusion.com/kb/10602/how-to-set-localized-string-to-xamarin-forms-sfimageeditor).
 
 You can download complete sample [`here`](https://github.com/SyncfusionExamples/How-to-set-localizad-string-to-SfImageEditor).
+
+Please find a different culture .resx file [`here`](https://github.com/syncfusion/xamarin-localized-texts).
 
 ## From platform-specific projects
 

@@ -284,7 +284,7 @@ To format values displayed in the GridColumn, use the [GridColumn.Format](https:
 
 #### Format column using StringFormat
 
-Assign the format of string to the `GridColumn.Format` property based on the bound data type of the property, the GridColumn is associated to format the value. You can use different [StringFormats](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/fbxft59x(v=vs.90)?redirectedfrom=MSDN) to customize values displayed in the record cells.
+Assign the format of string to the `GridColumn.Format` property based on the bound data type of the property, the GridColumn is associated to format the value. You can use different [StringFormats](https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2008/fbxft59x(v=vs.90)) to customize values displayed in the record cells.
 
 To apply formatting for a GridTextColumn, follow the code example:
 
@@ -1781,20 +1781,20 @@ To bind a view model property inside `HeaderTemplate`, follow the code example:
 
 ## See also
 
-[How to enable the MultiSelection in GridComboBoxColumn of DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11045)
+[How to enable the MultiSelection in GridComboBoxColumn of DataGrid (SfDataGrid)](https://www.syncfusion.com/kb/11045/how-to-enable-the-multiselection-in-gridcomboboxcolumn-of-datagrid-sfdatagrid)
 
-[How to bind a column collection from view model in SfDataGrid Xamarin.Forms](https://www.syncfusion.com/kb/9787)
+[How to bind a column collection from view model in SfDataGrid Xamarin.Forms](https://www.syncfusion.com/kb/9787/how-to-bind-a-column-collection-from-view-model-in-sfdatagrid-xamarin-forms)
 
-[How to create a custom GridColumn](https://www.syncfusion.com/kb/9533)
+[How to create a custom GridColumn](https://www.syncfusion.com/kb/9533/how-to-create-a-custom-gridcolumn)
 
-[How to bind button command to ViewModel from TemplateColumn of DataGrid](https://www.syncfusion.com/kb/9076)
+[How to bind button command to ViewModel from TemplateColumn of DataGrid](https://www.syncfusion.com/kb/9076/how-to-bind-button-command-to-viewmodel-from-templatecolumn-of-datagrid)
 
-[How to get the row index of a row in SfDataGrid when using GridTemplateColumn](https://www.syncfusion.com/kb/7804)
+[How to get the row index of a row in SfDataGrid when using GridTemplateColumn](https://www.syncfusion.com/kb/7804/how-to-get-the-row-index-of-a-row-in-sfdatagrid-when-using-gridtemplatecolumn)
 
-[How to display the DatePicker and TimePicker combined in a GridColumn in SfDataGrid](https://www.syncfusion.com/kb/7780)
+[How to display the DatePicker and TimePicker combined in a GridColumn in SfDataGrid](https://www.syncfusion.com/kb/7780/how-to-display-the-datepicker-and-timepicker-combined-in-a-gridcolumn-in-sfdatagrid)
 
-[How to set the different color for each column header in SfDataGrid](https://www.syncfusion.com/kb/7536)
+[How to set the different color for each column header in SfDataGrid](https://www.syncfusion.com/kb/7536/how-to-set-the-different-color-for-each-column-header-in-sfdatagrid)
 
-[How to customize the header text of a grid column with different colors](https://www.syncfusion.com/kb/7517)
+[How to customize the header text of a grid column with different colors](https://www.syncfusion.com/kb/7517/how-to-customize-the-header-text-of-a-grid-column-with-different-colors)
 
-[How to create GridTemplateColumn in code-behind](https://www.syncfusion.com/kb/7521)
+[How to create GridTemplateColumn in code-behind](https://www.syncfusion.com/kb/7521/how-to-create-gridtemplatecolumn-in-code-behind)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started | SfChat | Xamarin | Syncfusion
-description: Getting started with Syncfusion Chat control in Xamarin.Forms and walk through to create a demo application from the scratch. 
+title: Getting Started with Xamarin Chat control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Chat (SfChat) control, its elements and more.
 platform: xamarin
 control: SfChat
 documentation: ug
 ---
 
-# Getting Started with Xamarin.Forms Chat (SfChat)      
+# Getting Started with Xamarin Chat (SfChat)
 
 
 ## Assembly deployment

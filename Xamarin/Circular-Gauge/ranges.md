@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Ranges in Syncfusion SfCircularGauge control for Xamarin.Forms
-description: This section explains the steps required to add and customize ranges in Syncfusion Circular Gauge control for Xamarin.Forms
+title: Ranges in Xamarin Circular Gauge control | Syncfusion
+description: Learn here all about Ranges support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Ranges in SfCircularGauge
+# Ranges in Xamarin Circular Gauge (SfCircularGauge)
 
 Range is a visual element, which begins and ends at specified values within a scale.
 

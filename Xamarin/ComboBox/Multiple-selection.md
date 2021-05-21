@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Multi Selection in Syncfusion SfComboBox control for Xamarin.Forms
-description: This section describes the details about how to select multiple items from SfComboBox drop-down using the MultiSelectMode
+title: Multiple selection in Xamarin ComboBox control | Syncfusion
+description: Learn here all about Multiple selection support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
-# Multiple selection in SfComboBox
+# Multiple selection in Xamarin ComboBox (SfComboBox)
 
-Select multiple items from a suggestion list by using the [`MultiSelectMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_MultiSelectModeProperty) property. There are two ways to perform multiselection in the combo box control.
+Select multiple items from a suggestion list. There are two ways to perform multi selection in the combo box control.
 
 * Token Representation
 
@@ -16,7 +16,7 @@ Select multiple items from a suggestion list by using the [`MultiSelectMode`](ht
 
 ## Token representation
 
-Selected items will be displayed with a customizable token representation. Users can remove each tokenized item with the close button. And [`IsSelectedItemsVisibleInDropDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_IsSelectedItemsVisibleInDropDownProperty) property is used to restrict the selected items as visible or not in dropDown. 
+Selected items will be displayed with a customizable token representation. Users can remove each tokenized item with the close button. And IsSelectedItemsVisibleInDropDown property is used to restrict the selected items as visible or not in dropDown. 
 
 {% tabs %}
 
@@ -53,9 +53,9 @@ Selected items will be displayed with a customizable token representation. Users
 
 The selected item can be displayed as token inside the SfComboBox in two ways. They are
 
-* `Wrap` - When the [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokensWrapModeProperty) is set to `Wrap`, the selected items will be wrapped to the next line of the SfComboBox.
+* `Wrap` - When the `TokensWrapMode` is set to `Wrap` the selected items will be wrapped to the next line of the SfComboBox.
 
-* `None` - When the [`TokensWrapMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokensWrapModeProperty) is set to `None`, the selected item will be wrapped in horizontal orientation.
+* `None` - When the `TokensWrapMode` is set to `None` the selected item will be wrapped in horizontal orientation.
 
 Define a simple model class Employee with fields ID, Name and populate employee data in ViewModel.
 
@@ -162,7 +162,7 @@ Now populate this EmployeeViewModel data in SfComboBox control by binding with [
  
 ### Token customization
 
-Token can be customized in the following ways by using the [`TokenSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_TokenSettingsProperty) class. 
+Token can be customized in the following ways: 
 
 * `TextColor` - Sets the color of the text inside the token.
 
@@ -254,7 +254,7 @@ N> CornerRadius support has enhanced only on iOS and Android platform.
 
 ## Delimiter
 
-When selecting multiple items, the selected items can be divided with a desired character given for a delimiter. You can set delimiter character using the [`Delimiter`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_DelimiterProperty) property.
+When selecting multiple items, the selected items can be divided with a desired character given for a delimiter. You can set delimiter character using the `Delimiter` property.
 
 N> Delimiter support has enhanced only on iOS and Android platform.
 
@@ -318,7 +318,7 @@ N> Delimiter support has enhanced only on iOS and Android platform.
 
 ### Selection indicator
 
-The combobox enables the user to indicate the selected item from the datasource when selecting multiple items from the dropdown. It can be performed by enabling [`EnableSelectionIndicator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_EnableSelectionIndicatorProperty) property.
+The combobox enables the user to indicate the selected item from the datasource when selecting multiple items from the dropdown. It can be performed by enabling `EnableSelectionIndicator` property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -344,7 +344,7 @@ comboBox.EnableSelectionIndicator= true;
 
 ### Item padding
 
-The autocomplete enables the user to provide padding for the items inside dropdown using [`ItemPadding`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.html#Syncfusion_XForms_ComboBox_SfComboBox_ItemPaddingProperty) property.
+The autocomplete enables the user to provide padding for the items inside dropdown using `ItemPadding` property.
 
 {% tabs %}
 {% highlight xaml %}

@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Header in Syncfusion SfCircularGauge control for Xamarin.Forms
-description: This section explains the steps required to add and customize header in Syncfusion Circular Gauge control for Xamarin.Forms
+title: Headers in Xamarin Circular Gauge control | Syncfusion
+description: Learn here all about Headers support in Syncfusion Xamarin Circular Gauge (SfCircularGauge) control and more.
 platform: xamarin
 control: SfCircularGauge
 documentation: ug
 
 ---
 
-# Header in SfCircularGauge
+# Headers in Xamarin Circular Gauge (SfCircularGauge)
 
 The [`Header`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.Header.html) support allows you to show text inside the gauge control. A circular gauge can be made self-descriptive about the data. It can be  measured with use of the header.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | SfChat | Xamarin | Syncfusion
-description: Describes about the suggestion feature, its functionalities and customizations available in Xamarin.Forms chat control.
+title: Suggestions in Xamarin Chat control | Syncfusion
+description: Learn here all about Suggestions support in Syncfusion Xamarin Chat (SfChat) control, its elements and more.
 platform: xamarin
 control: SfChat
 documentation: ug
 ---
 
-# Suggestions in Xamarin.Forms Chat (SfChat)
+# Suggestions in Xamarin Chat (SfChat)
 
 The `SfChat` control allows to show a list of options to choose from, as suggestions, below the actual message or at the bottom of the chat control. Suggestions can be shown for all the supported message types in `SfChat`. [SfChat.SuggestionItemSelected](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html) event and [SfChat.SuggestionItemSelectedCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_SuggestionItemSelectedCommand) will be executed when the user selects a suggestion item. Both the event and the command will provide the [SuggestionItemSelectedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SuggestionItemSelectedEventArgs.html) as arguments.
 

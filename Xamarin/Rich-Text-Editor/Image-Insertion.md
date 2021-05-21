@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Image Insertion | SfRichTextEditor | Xamarin | Syncfusion
-description: Rich Text Editor in Xamarin.Forms supports image insertion(JPEG and PNG) in the current selection of the Rich Text Editor.
+title: Image Insertion in Xamarin Rich Text Editor control | Syncfusion
+description: Learn here all about Image Insertion support in Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: SfRichTextEditor
 documentation: UG
 ---
 
-# Image Insertion in Xamarin Rich Text Editor(SfRichTextEditor)
+# Image Insertion in Xamarin Rich Text Editor (SfRichTextEditor)
 
 The SfRichTextEditor provides support to insert JPEG and PNG images from a photo gallery, embedded resource, or stream into the Rich Text Editor content. The image can be inserted in the `SfRichTextEditor` using the [`ImageInsertCommand`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html#Syncfusion_XForms_RichTextEditor_SfRichTextEditor_ImageInsertCommand) property or the [`ImageInserted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.RichTextEditor.SfRichTextEditor.html) event.
 

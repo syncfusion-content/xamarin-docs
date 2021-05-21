@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Appearance-Styling in Syncfusion SfRating control for Xamarin.Forms
-description: Learn how to change the Appearance and Styling of rating control
+title: Appearance and Styling in Xamarin Rating control | Syncfusion
+description: Learn here all about Appearance and Styling support in Syncfusion Xamarin Rating (SfRating) control and more.
 platform: Xamarin
 control: Rating
 documentation: ug
 
 ---
 
-# Appearance and Styling
+# Appearance and Styling in Xamarin Rating (SfRating)
 
 When the default view is not needed, you can customize the view of Xamarin.Forms SfRating control. The SfRating control provides support to customize the size, item count, and space between rating items.
 

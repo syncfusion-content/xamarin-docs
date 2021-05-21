@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Customization in Syncfusion SfRating control for Xamarin.Forms
-description: Learn how to change the Appearance and Styling of rating control
+title: Appearance Customization in Xamarin Rating control | Syncfusion
+description: Learn here all about Appearance Customization support in Syncfusion Xamarin Rating (SfRating) control and more.
 platform: Xamarin
 control: Rating
 documentation: ug
 
 ---
 
-# Appearance Customization
+# Appearance Customization in Xamarin Rating (SfRating)
 
 We can customize the rated and unrated items Color, Stroke width and Stroke color using the following properties of SfRatingSettings.
 

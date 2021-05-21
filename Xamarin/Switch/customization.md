@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization with visual states in Syncfusion Switch Xamarin.Forms
-description: Explaining about customization based on visual states in SfSwitch.
+title: Customization in Xamarin Switch control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Xamarin Switch (SfSwitch) control and more.
 platform: Xamarin
 control: Switch
 documentation: ug
 ---
 
-# Customization with visual states
+# Customization in Xamarin Switch (SfSwitch)
 
 The switch control provides options to customize the color based on states. The following code example demonstrates how to customize the switch control.
 

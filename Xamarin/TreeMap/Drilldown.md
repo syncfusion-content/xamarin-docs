@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drilldown feature in syncfusion TreeMap control for Xamarin.Forms
-description: Drilldown feature of TreeMap control
+title: Drilldown in Xamarin TreeMap control | Syncfusion
+description: Learn here all about Drilldown support in Syncfusion Xamarin TreeMap (SfTreeMap) control, its elements and more.
 platform: xamarin
 control: SfTreeMap
 documentation: ug
 ---
 
-# Drilldown
+# Drilldown in Xamarin TreeMap (SfTreeMap)
 
 The drilldown feature provides better visualization of hierarchy. A large set of data can be virtualized into minimal views. Each level of items can be drilled down. TreeMap provides animation along with the drilldown support. The drilldown header will be enabled when you perform drilldown in TreeMap, and this header helps in performing zoom out operation (i.e., drill up one level).
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Item Height Customization in Xamarin TreeView | Syncfusion
-description: Customize the height of the items in a Xamarin.Forms TreeView. Autofit the items based on node content.
+title: Item Height Customization in Xamarin TreeView control | Syncfusion
+description: Learn here all about Item Height Customization support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion TimePicker control for Xamarin.Forms
-description: A quick go through to learn about the TimePicker control and the key features available in Syncfusion TimePicker control for Xamarin.Forms. 
+title: About Xamarin TimePicker control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin TimePicker (SfTimePicker) control, its elements and more.
 platform: Xamarin
 control: TimePicker
 documentation: ug
 ---
 
-# Xamarin Time Picker (SfTimePicker) Overview
+# Xamarin TimePicker (SfTimePicker) Overview
 
 The Time Picker control allows you to pick a time. This control can be opened as dialog. Its rich feature set includes functionalities such as time format, header, footer, and default validation buttons.
 

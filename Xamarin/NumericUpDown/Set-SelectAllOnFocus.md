@@ -1,12 +1,12 @@
 ---
 layout: post
-title: SelectAllOnFocus in Syncfusion NumericUpDown for Xamarin.Forms
-description: Learn how to set SelectAllOnFocus the  NumericUpDown
+title: Selection Support in Xamarin NumericUpDown control | Syncfusion
+description: Learn here all about Selection Support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
-# Set SelectAllOnFocus
+# Selection Support in Xamarin NumericUpDown (SfNumericUpDown)
 
 The `SelectAllOnFocus` property is used to specify whether the text should be selected when the control gets the focus.
 

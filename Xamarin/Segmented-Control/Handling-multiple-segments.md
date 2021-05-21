@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Handling multiple segments in Syncfusion segmented control for Xamarin.Forms
-description: Learn how to handle multiple segments in segmented control
+title: Handling multiple segments in Xamarin Segmented Control | Syncfusion
+description: Learn here all about Handling multiple segments support in Syncfusion Xamarin Segmented Control (SfSegmentedControl) and more.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
 
-# Handling multiple segments
+# Handling multiple segments in Xamarin Segmented Control
 
 The segmented control handles segmented items with space distributed for the items in two ways. When the available space in the segmented control is not equally distributed, the items beyond the edges of the control can be viewed by scrolling the panel.
 
@@ -69,7 +69,7 @@ this.Content = segmentedControl;
 
 {% endtabs %}
 
-![](images/Handling-multiple-segments/visiblesegment.png)
+![visiblesegment](images/Handling-multiple-segments/visiblesegment.png)
 
 ## Segment width
 

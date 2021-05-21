@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Populating Events in Syncfusion Calendar control for Android
-description: Learn about Appointments support in Syncfusion Xamarin calendar (SfCalendar) control and more details.
+title: Events (Appointments) in Xamarin Calendar control | Syncfusion
+description: Learn here all about Events (Appointments) support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
 platform: Xamarin
 control: Calendar
 documentation: ug
 ---
 
-# Events (Appointments)
+# Events (Appointments) in Xamarin Calendar (SfCalendar)
 
 `SfCalendar` control provides support to add appointments on calendar's dates. By the way of adding collection of appointments, it will show the event with indicator on the desired dates.
 

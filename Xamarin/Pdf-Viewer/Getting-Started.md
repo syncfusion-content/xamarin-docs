@@ -1,13 +1,13 @@
 ---
 layout: post
-title: View & review PDF using PDF Viewer Xamarin.Forms | Syncfusion
-description: Getting started section demonstrates how to create an application that displays a PDF file using PDF Viewer Xamarin.Forms.
+title: Getting Started with Xamarin Pdf Viewer control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control, its elements and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Getting started with Xamarin PDF Viewer (SfPdfViewer)
+# Getting Started with Xamarin Pdf Viewer (SfPdfViewer)
 
 This section demonstrates how to create an application that displays a PDF file using SfPdfViewer control.
  
@@ -19,11 +19,7 @@ E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
 N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
-## Creating a simple PDF Viewer application
-
-Create a new cross platform application for Xamarin.Forms.Portable in the Visual Studio with the project name "GettingStarted" and refer the below mentioned assemblies to the respective projects.
-
-### Adding SfPdfViewer reference
+## Adding SfPdfViewer reference
 
 You can add SfPdfViewer reference using one of the following methods:
 
@@ -64,9 +60,15 @@ Location: {Installed location}/{version}/Xamarin/lib
 </tr>
 </table>
 
-N> If you are adding the references from toolbox, this step is not needed. To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
+N> To know more about obtaining our components, refer to these links for [Mac](https://help.syncfusion.com/xamarin/introduction/download-and-installation/mac/) and [Windows](https://help.syncfusion.com/xamarin/introduction/download-and-installation/windows/).
 
 I> Starting with v16.2.0.x, if you reference Syncfusion assemblies from the trial setup or from the NuGet feed, you also have to include a license key in your projects. Please refer to [Syncfusion license key](https://help.syncfusion.com/common/essential-studio/licensing/license-key/) to know about registering Syncfusion license key in your Xamarin application to use our components.
+
+## Creating a simple PDF Viewer application
+
+Create a new cross platform application for Xamarin.Forms.Portable in the Visual Studio with the project name "GettingStarted" and refer the above mentioned assemblies to the respective projects.
+
+N> If you are adding the references from toolbox, this step is not needed.
 
 An additional step is required to render the SfPdfViewer control in `iOS` project. You need to call the `Syncfusion.SfPdfViewer.XForms.iOS.SfPdfDocumentViewRenderer.Init()` and `Syncfusion.SfRangeSlider.XForms.iOS.SfRangeSliderRenderer.Init();` in the `FinishedLaunching` overridden method of the `AppDelegate` class after the Xamarin.Forms Framework has been initialized and before the `LoadApplication` is called, as demonstrated in the following code example.
 
@@ -85,7 +87,39 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {% endhighlight %}
 {% endtabs %}
 
-### Loading a PDF using MVVM binding
+
+## Resolving issue when deploying an application in ReleaseMode in the UWP platform
+
+There is a known Framework issue in the UWP platform when an application using custom control is deployed in `Release Mode`, it will not be rendered.
+
+This can be resolved by initializing the SfPdfViewer related assemblies in `App.xaml.cs` in the UWP project. Refer to the following code snippet.
+
+{% tabs %}
+{% highlight c# %}
+
+protected override void OnLaunched(LaunchActivatedEventArgs e)
+{
+     …
+     rootFrame.NavigationFailed += OnNavigationFailed;
+
+     //Add the assemblies `using System.Reflection;`
+     List<Assembly> assembliesToInclude = new List<Assembly>();
+
+     //Now, add all the assemblies that your app uses
+     assembliesToInclude.Add(typeof(SfPdfDocumentViewRenderer).GetTypeInfo().Assembly);
+
+     assembliesToInclude.Add(typeof(SfRangeSliderRenderer).GetTypeInfo().Assembly);
+
+     //Replaces Xamarin.Forms.Forms.Init(e);
+     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
+     …
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+
+## Loading a PDF using MVVM binding
 
 File handling with Xamarin.Forms can be done using embedded resources or writing against the native filesystem APIs. Please find more details in the below link:
 
@@ -182,7 +216,7 @@ The sample that illustrates loading a PDF in MVVM binding can be downloaded from
 
 <http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-2072455774> 
 
-### Loading a PDF in code-behind/programmatically
+## Loading a PDF in code-behind/programmatically
 
 In code-behind a PDF can be loaded to PdfViewer just by using the [LoadDocument](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_LoadDocument_System_IO_Stream_) method without the need of the "PdfViewerViewModel" class described in the previous section.  Use the following code snippet in the code-behind of the XAML page. 
 
@@ -234,37 +268,6 @@ In the XAML code described in the previous section, remove the binding of InputF
 The sample which illustrates loading a PDF in code-behind using LoadDocument method can be downloaded from the link below.
 
 <http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted-81946798> 
-
-### Resolving issue when deploying an application in ReleaseMode in the UWP platform
-
-There is a known Framework issue in the UWP platform when an application using custom control is deployed in `Release Mode`, it will not be rendered.
-
-This can be resolved by initializing the SfPdfViewer related assemblies in `App.xaml.cs` in the UWP project. Refer to the following code snippet.
-
-{% tabs %}
-{% highlight c# %}
-
-protected override void OnLaunched(LaunchActivatedEventArgs e)
-{
-     …
-     rootFrame.NavigationFailed += OnNavigationFailed;
-
-     //Add the assemblies `using System.Reflection;`
-     List<Assembly> assembliesToInclude = new List<Assembly>();
-
-     //Now, add all the assemblies that your app uses
-     assembliesToInclude.Add(typeof(SfPdfDocumentViewRenderer).GetTypeInfo().Assembly);
-
-     assembliesToInclude.Add(typeof(SfRangeSliderRenderer).GetTypeInfo().Assembly);
-
-     //Replaces Xamarin.Forms.Forms.Init(e);
-     Xamarin.Forms.Forms.Init(e, assembliesToInclude);
-     …
-}
-
-{% endhighlight %}
-{% endtabs %}
-
 
 ## Loading a PDF asynchronously
 

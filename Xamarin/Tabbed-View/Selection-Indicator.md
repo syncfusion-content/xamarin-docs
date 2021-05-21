@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection Indicator strip for Syncfusion TabView control.
-description: Selection Indicator customization by using the stroke thickenss,color, animation duration in TabView control for Xamarin.Forms platform
+title: Selection Indicator in Xamarin Tabbed View control | Syncfusion
+description: Learn here all about Selection Indicator support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# Selection Indicator Strip
+# Selection Indicator in Xamarin Tabbed View (SfTabView)
 
 The selection indicator strip can be used to indicate the selected index of the tab view control. It can be customized with the built-in APIs that are available in the [SelectionIndicatorSettings](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html#Syncfusion_XForms_TabView_SfTabView_SelectionIndicatorSettings) property of [SfTabView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html).
 

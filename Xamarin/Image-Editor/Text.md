@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Shapes in Syncfusion SfImageEditor control in Xamarin.Forms
-description: Learn how to add the text and customize the text in SfImageEditor control for Xamarin.Forms platform.
+title: Text in Xamarin Image Editor control | Syncfusion
+description: Learn here all about Text support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
 ---
 
-# Text in SfImageEditor
+# Text in Xamarin Image Editor (SfImageEditor)
 
 You can annotate the desired text elements to an image using the [`AddText`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html#Syncfusion_SfImageEditor_XForms_SfImageEditor_AddText_System_String_Syncfusion_SfImageEditor_XForms_TextSettings_): method with customization options.
 

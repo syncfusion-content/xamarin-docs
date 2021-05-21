@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion events in Xamarin.Forms Kanban control
-description: Kanban events
+title: Events in Xamarin Kanban Board control | Syncfusion
+description: Learn here all about Events support in Syncfusion Xamarin Kanban Board (SfKanban) control, its elements and more.
 platform: xamarin
 control: Kanban
 documentation: ug
 ---
 
-# Events
+# Events in Xamarin Kanban Board (SfKanban)
 
 ## ItemTapped
 

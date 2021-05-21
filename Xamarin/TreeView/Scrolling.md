@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrolling | TreeView | Xamarin.Forms | Syncfusion
-description: This topic explains how programmatic scrolling in Treeview and its related operations can be accomplished.
+title: Scrolling in Xamarin TreeView control | Syncfusion
+description: Learn here all about Scrolling support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug

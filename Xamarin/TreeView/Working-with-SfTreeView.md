@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Xamarin.Forms TreeView | Syncfusion
-description: This topic describes how to use Syncfusion Xamarin.Forms TreeView along with interacting events and other different functionalities
+title: Working with TreeView in Xamarin TreeView control | Syncfusion
+description: Learn here all about Working with TreeView support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug

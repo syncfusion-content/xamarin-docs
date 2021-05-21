@@ -47,7 +47,7 @@ N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com
 
 ## How to get and set the quality factor for print in the UWP platform
 
-The PDF Viewer allows the user to set and retrieve the quality factor for print by using the `QualityFactor` API. The default value of this API is set to 1, and the values are restricted between 1 and 5. The values falling below the range are taken as 1, which represents the lowest page quality, and those above the range are taken as 5, which represents the highest page quality.
+The PDF Viewer allows the user to set and retrieve the quality factor for print by using the [QualityFactor](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.PrinterSettings.html#Syncfusion_SfPdfViewer_XForms_PrinterSettings_QualityFactor) API. The default value of this API is set to 1, and the values are restricted between 1 and 5. The values falling below the range are taken as 1, which represents the lowest page quality, and those above the range are taken as 5, which represents the highest page quality.
 
 Refer to the following code sample to set the quality factor for print.
 
@@ -64,7 +64,7 @@ N>At present this feature is only available on the UWP platform. Printing with q
 
 ## How to customize the print previewer in the UWP platform 
 
-The PDF Viewer allows the user to customize the print options displayed in the print previewer while performing a print operation. The `PrintTaskRequested` event will be raised when you call the [Print](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_Print) method to print a PDF document.
+The PDF Viewer allows the user to customize the print options displayed in the print previewer while performing a print operation. The [PrintTaskRequested](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_PrintTaskRequested) event will be raised when you call the [Print](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_Print) method to print a PDF document.
 
 {% tabs %}
 {% highlight c# %}
@@ -75,12 +75,12 @@ pdfViewer.PrintTaskRequested += PdfViewer_PrintTaskRequested;
 {% endhighlight %}
 {% endtabs %}
 
-The print previewer can be customized on desktop using the native UWP APIs such as `PrintTask`, `PrintDocumentSource`, and `Request`. So, the `PrintTaskRequested` event must be handled in the Xamarin.Forms.UWP platform using dependency service.
+The print previewer can be customized on desktop using the native UWP APIs such as [PrintTask](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.PdfViewerPrintTaskRequestedEventArgs.html#Syncfusion_SfPdfViewer_XForms_PdfViewerPrintTaskRequestedEventArgs_PrintTask) , [PrintDocumentSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.PdfViewerPrintTaskRequestedEventArgs.html#Syncfusion_SfPdfViewer_XForms_PdfViewerPrintTaskRequestedEventArgs_PrintDocumentSource) , and [Request](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.PdfViewerPrintTaskRequestedEventArgs.html#Syncfusion_SfPdfViewer_XForms_PdfViewerPrintTaskRequestedEventArgs_Request) . So, the [PrintTaskRequested](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_PrintTaskRequested) event must be handled in the Xamarin.Forms.UWP platform using dependency service.
 
 {% tabs %}
 {% highlight c# %}
 
-private void PdfViewer_PrintTaskRequested(object sender, SfPdfViewerPrintTaskRequestedEventArgs e) 
+private void PdfViewer_PrintTaskRequested(object sender, PdfViewerPrintTaskRequestedEventArgs e) 
 {
      DependencyService.Get<IPrintRequestHandler>().PrintTaskRequested(sender, e)
 }
@@ -88,12 +88,12 @@ private void PdfViewer_PrintTaskRequested(object sender, SfPdfViewerPrintTaskReq
 {% endhighlight %}
 {% endtabs %}
 
-In the `PrintTaskRequested` event handler, you can include the required print options such as the number of copies, collation, duplex, and more by creating a `PrintTask` using the properties `Request` and `PrintDocumentSource`. Refer to the following code example.
+In the [PrintTaskRequested](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_PrintTaskRequested) event handler, you can include the required print options such as the number of copies, collation, duplex, and more by creating a [PrintTask](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.PdfViewerPrintTaskRequestedEventArgs.html#Syncfusion_SfPdfViewer_XForms_PdfViewerPrintTaskRequestedEventArgs_PrintTask) using the properties [Request](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.PdfViewerPrintTaskRequestedEventArgs.html#Syncfusion_SfPdfViewer_XForms_PdfViewerPrintTaskRequestedEventArgs_Request) and [PrintDocumentSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.PdfViewerPrintTaskRequestedEventArgs.html#Syncfusion_SfPdfViewer_XForms_PdfViewerPrintTaskRequestedEventArgs_PrintDocumentSource). Refer to the following code example.
 
 {% tabs %}
 {% highlight c# %}
 
-void PrintTaskRequested (object sender, SfPdfViewerPrintTaskRequestedEventArgs e)
+void PrintTaskRequested (object sender, PdfViewerPrintTaskRequestedEventArgs e)
 {
 
 PrintTask printTask = null;
@@ -124,7 +124,7 @@ The PDF Viewer allows the users to hide the preview of the pages and enable only
 {% tabs %}
 {% highlight c# %}
 
-void PrintTaskRequested (object sender, SfPdfViewerPrintTaskRequestedEventArgs e)
+void PrintTaskRequested (object sender, PdfViewerPrintTaskRequestedEventArgs e)
 {
    PrintTask printTask = null;
 printTask = (e.Request as PrintTaskRequest).CreatePrintTask("Printing", sourceRequested =>

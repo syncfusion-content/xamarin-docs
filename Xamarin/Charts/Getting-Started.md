@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Essential Syncfusion.Xamarin.Forms Chart
-description: A quick tour to create a chart with title, series, legend, data labels, tooltip, and multiple Y axis in Xamarin.Forms Chart.
+title: Getting Started with Xamarin Charts control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug

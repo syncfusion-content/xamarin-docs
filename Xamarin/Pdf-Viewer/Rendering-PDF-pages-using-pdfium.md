@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PDFium rendering in PDF Viewer Xamarin.Forms Android | Syncfusion
-description: Describes how PDF Viewer in Xamarin.Forms Android supports rendering the PDF pages using pdfium rendering engine.
+title: Rendering PDF pages using pdfium in Xamarin Pdf Viewer | Syncfusion
+description: Learn here all about Rendering PDF pages using pdfium support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: xamarin
 control: SfPdfViewer
 documentation: UG
 ---
 
-# Rendering PDF pages using pdfium in PDF Viewer Xamarin.Forms Android
+# Rendering PDF pages using pdfium in Xamarin Pdf Viewer (SfPdfViewer)
 
 The [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows using Pdfium to render the pages of a PDF document, which is a third-party open-source PDF rendering engine. By default, the PdfViewer uses native Android PDF rendering. However, using the Pdfium rendering engine will overcome the defects in the native Android PDF rendering.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
-title: AnimationTypes in Syncfusion SfBusyIndicator control for Xamarin.Forms
-description: The following section will explain about different types of animation available in Xamarin.Forms SfBusyIndicator 
+title: Animation Type in Xamarin Busy Indicator control | Syncfusion
+description: Learn here all about Animation Type support in Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control and more.
 platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# Animation Type in SfBusyIndicator
+# Animation Type in Xamarin Busy Indicator (SfBusyIndicator)
 
 ## Animation Type in Xamarin BusyIndicator (SfBusyIndicator)
 

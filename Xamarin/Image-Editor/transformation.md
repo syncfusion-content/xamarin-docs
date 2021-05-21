@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Transformation in Syncfusion SfImageEditor control in Xamarin.Forms
-description: Learn how to perform transformations such as rotation and flip in SfImageEditor control for Xamarin.Forms
+title: Transformation in Xamarin Image Editor control | Syncfusion
+description: Learn here all about Transformation support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: ImageEditor
 documentation: ug
 ---
 
-# Transformation in SfImageEditor
+# Transformation in Xamarin Image Editor (SfImageEditor)
 
 The image editor control is capable of performing the image transformations such as `rotation` and `flip`.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Automation ID in Syncfusion SfCardLayout control in Xamarin.Forms
-description: Learn how to use the automation ID in SfCardLayout control for running the test cases in Xamarin.Forms
+title: Accessibility in Xamarin Cards control | Syncfusion
+description: Learn about Accessibility support in Syncfusion Essential Studio Xamarin Cards control, its elements and more.
 platform: xamarin
 control: SfCardLayout
 documentation : ug
 ---
 
-# AutomationId in SfCardLayout
+# Accessibility in Xamarin Cards
 
 The [`SfCardLayout`](https://help.syncfusion.com/xamarin/cards/getting-started#sfcardlayout) control has built-in automation Id for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the [`SfCardLayout`](https://help.syncfusion.com/xamarin/cards/getting-started#sfcardlayout) control. To keep unique AutomationId, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`.
 

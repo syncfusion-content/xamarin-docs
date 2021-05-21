@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Various features in Syncfusion NumericTextBox control.
-description: Learn how to decide maximum decimal digits to be displayed and nullable value support in NumericTextBox.
+title: Assign Nullable Value in Xamarin Numeric Entry control | Syncfusion
+description: Learn here all about Assign Nullable Value support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Assign Nullable Value
+# Assign Nullable Value in Xamarin Numeric Entry (SfNumericTextBox)
 
 The null values can be set in SfNumericTextBox `Value` property, by setting `AllowNull` property value to true.
 

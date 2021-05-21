@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Essential Xamarin.Forms Kanban
-description: What are the key features available in kanban.
+title: About Xamarin Kanban Board control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Kanban Board (SfKanban) control, its elements and more.
 platform: xamarin
 control: Kanban
 documentation: ug
 ---
 
-# Overview
+# Xamarin Kanban Board (SfKanban) Overview
 
 The Kanban control is an efficient way to visualize a workflow at each stage of completion.
 
@@ -20,4 +20,4 @@ The Kanban control is an efficient way to visualize a workflow at each stage of 
 * Customize at a high level.
 * Transition smoothly within processes.
 
-![](SfKanban_images/Overview_img.png)
+![Overview_img](SfKanban_images/Overview_img.png)

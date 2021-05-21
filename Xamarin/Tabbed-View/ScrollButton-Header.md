@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Scroll Buttons for Syncfusion SfTabView Control
-description: Add the Scroll Buttons on both sides of the tab header in Syncfusion TabView control for Xamarin.Forms platform
+title: Scroll buttons on Header in Xamarin Tabbed View control | Syncfusion
+description: Learn here all about Scroll buttons on Header support in Syncfusion Xamarin Tabbed View (SfTabView) control and more.
 platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# Scroll Buttons on Tab Header
+# Scroll buttons on Header in Xamarin Tabbed View (SfTabView)
 
 Buttons can be used to scroll the items in the header of the tab view by setting the `IsScrollEnabled` property of [SfTabView](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TabView.SfTabView.html). This also helps to indicate that there are tabs beyond the visible area if more tabs are present.
 

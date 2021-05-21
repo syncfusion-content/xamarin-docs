@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Range Support in Syncfusion NumericTextBox control for Xamarin.Forms
-description: Learn how to use range support for NumericTextBox control.
+title: Range Support in Xamarin Numeric Entry control | Syncfusion
+description: Learn here all about Range Support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Range Support
+# Range Support in Xamarin Numeric Entry (SfNumericTextBox)
 
 Restrict the Values within a specific range by setting the Maximum and Minimum property values.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion.Xamarin.Forms Chart Axis
-description: This section explains the different types of axis in chart and how to customize the grid lines, tick lines, labels and title of the chart axis.
+title: Axis in Xamarin Charts control | Syncfusion
+description: Learn here all about Axis support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug

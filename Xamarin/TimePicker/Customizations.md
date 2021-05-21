@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customizations of Syncfusion Xamarin.Forms SfTimePicker
-description: How to customize the header, footer, selected item and unselected item of the Syncfusion Xamarin.Forms SfTimePicker
+title: Customizations in Xamarin TimePicker control | Syncfusion
+description: Learn here all about Customizations support in Syncfusion Xamarin TimePicker (SfTimePicker) control and more.
 platform: Xamarin
 control: TimePicker
 documentation: ug
 ---
 
-# Customization support in SfTimePicker
+# Customizations in Xamarin TimePicker (SfTimePicker)
 
 You can customize the header, column header, footer, selected item, and unselected item of the SfTimePicker.
 

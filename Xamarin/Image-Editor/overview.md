@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion Essential Xamarin.Forms SfImageEditor
-description:  A quick overview about SfImageEditor control in Xamarin.Forms and its Key features such as adding text, path and shapes, localization, etc.
+title: About Xamarin Image Editor control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Image Editor (SfImageEditor) control, its elements and more.
 platform: xamarin
 control: SfImageEditor
 documentation: ug
 ---
 
-# Xamarin ImageEditor (SfImageEditor) Overview
+# Xamarin Image Editor (SfImageEditor) Overview
 
 The image editor control for Xamarin.Forms is a very handy tool, which is used to edit an image by annotating with free hand drawing paths, text, and built-in shapes; it also allows to crop and flip a image. This control has a built-in toolbar that helps to perform editing operations.
 

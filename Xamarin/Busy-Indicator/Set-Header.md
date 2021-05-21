@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Title support in Syncfusion SfBusyIndicator control for Xamarin.Forms
-description: This section will explain how to add and customize title description on Xamarin.Forms SfBusyIndicator control.
+title: Set Header in Xamarin Busy Indicator control | Syncfusion
+description: Learn here all about Set Header support in Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control and more.
 platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# Set Header
+# Set Header in Xamarin Busy Indicator (SfBusyIndicator)
 
 ## Set Header in Xamarin Busy Indicator  (SfBusyIndicator)
 

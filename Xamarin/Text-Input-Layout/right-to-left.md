@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Right-to-left | TextInputLayout for Xamarin.Forms | Syncfusion
-description: Describes how TextInputLayout works on right-to-left localization.
+title: Right-to-Left in Xamarin Text Input Layout control | Syncfusion
+description: Learn here all about Right-to-Left support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Right-to-Left
+# Right-to-Left in Xamarin Text Input Layout (SfTextInputLayout)
 
 The TextInputLayout supports to change the flow of text to the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft`.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Types of Syncfusion ChipGroup control for Xamarin.Forms
-description: This section describes about the available types of chips and its behavior in Syncfusion Xamarin.Forms SfChipGroup.
+title: Chips Types in Xamarin Chips control | Syncfusion
+description: Learn about Chips Types support in Syncfusion Essential Studio Xamarin Chips control, its elements and more.
 platform: xamarin
 control: Chips
 documentation: ug
 ---
 
-# Set the type for ChipGroup
+# Chips Types in Xamarin Chips
 
 The functionality of chips control differs based on the [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property. No operation can be performed in a chip group unless the [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) property is set. The chips control provides four different types, and each has its own functionality. Default value of [`Type`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfChipGroup.html#Syncfusion_XForms_Buttons_SfChipGroup_Type) is `Input`. The types are,
 

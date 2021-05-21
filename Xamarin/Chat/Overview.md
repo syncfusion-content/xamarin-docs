@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | SfChat | Xamarin | Syncfusion
-description: A quick overview of the key features in SfChat that shows the conversation between two or more users in a fully customizable layout.
+title: About Xamarin Chat control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Chat (SfChat) control, its elements and more.
 platform: xamarin
 control: SfChat
 documentation: ug
 ---
 
-# Overview
+# Xamarin Chat (SfChat) Overview
 
 The Syncfusion chat control for Xamarin.Forms provides a modern conversational chatbot experience. It is a flexible control that shows the conversation between two or more users in a fully customizable layout.
 

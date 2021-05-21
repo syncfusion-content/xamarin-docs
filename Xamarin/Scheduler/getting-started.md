@@ -1,13 +1,13 @@
 ---   
 layout: post   
-title: Getting Started | SfSchedule | Xamarin | Syncfusion   
-description: Learn here about getting started with Syncfusion Xamarin Schedule (SfSchedule) control and more details. 
+title: Getting Started with Xamarin Scheduler control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Scheduler (SfSchedule) control, its elements and more.
 platform: xamarin   
 control: SfSchedule   
 documentation: ug   
 ---   
     
-# Getting Started with Xamarin Scheduler (SfSchedule)   
+# Getting Started with Xamarin Scheduler (SfSchedule)
     
 This section provides you an overview for working with SfSchedule for Xamarin.Forms and also provides a walk through to configure SfSchedule control in real time scenario.   
 

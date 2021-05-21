@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization in Syncfusion SfDataForm for Xamairn.Forms
-description: Describes how to localize the Xamairn.Forms SfDataForm display text and error messages based on culture.
+title: Localization in Xamarin DataForm control | Syncfusion
+description: Learn here all about Localization support in Syncfusion Xamarin DataForm (SfDataForm) control and more.
 platform: xamarin
 control: SfDataForm
 documentation: ug
@@ -21,7 +21,7 @@ Here, the display attributes or data form item display values get localized base
 
 ### Using attribute
 
-`ResourceType` [Display](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.displayattribute?view=net-5.0 ) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of `Name`, `ShortName`, `GroupName` and `Prompt` values.
+`ResourceType` [Display](https://apisof.net/catalog/e730f8e7-7af7-aa64-847e-7831e90483d7) attribute specifies the Resources File (.Resx) which is used to localize the Display attribute of `Name`, `ShortName`, `GroupName` and `Prompt` values.
 
 {% tabs %}
 {% highlight c# %}
@@ -36,7 +36,7 @@ public String FirstName { get; set; }
 
 You can also localize the DataFormItem `LabelText`, `PlaceHolderText`, `GroupName` in the `AutoGeneratingDataFormItem` event of SfDataForm by using the Resources (.Resx) file.
 
-Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://msdn.microsoft.com/en-us/library/d17ax2xk(v=vs.110).aspx) based on culture.
+Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://docs.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager.getstring?redirectedfrom=MSDN&view=net-5.0#System_Resources_ResourceManager_GetString_System_String_) based on culture.
 
 {% tabs %}
 {% highlight c# %}
@@ -70,7 +70,7 @@ Here, the validation (`Required`,`StringLength`) attributes or data form error m
 
 ### Using attribute
 
-The `Required` and `StringLength` attributes error message can be localized using [ErrorMessageResourceType](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.validationattribute.errormessageresourcetype.aspx ) and [ErrorMessageResourceName](https://msdn.microsoft.com/en-us/library/system.componentmodel.dataannotations.validationattribute.errormessageresourcename.aspx ) properties which are used to get a localized error messages from Localization Resource File (.Resx) based on culture.
+The `Required` and `StringLength` attributes error message can be localized using [ErrorMessageResourceType](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.errormessageresourcetype?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_DataAnnotations_ValidationAttribute_ErrorMessageResourceType ) and [ErrorMessageResourceName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.dataannotations.validationattribute.errormessageresourcetype?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_DataAnnotations_ValidationAttribute_ErrorMessageResourceType ) properties which are used to get a localized error messages from Localization Resource File (.Resx) based on culture.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,7 +86,7 @@ public String FirstName { get; set; }
 
 You can also localize the data form error message in the ` Validating` event of SfDataForm by using the Resources (.Resx) file.
 
-Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://msdn.microsoft.com/en-us/library/d17ax2xk(v=vs.110).aspx) based on culture.
+Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://docs.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager.getstring?redirectedfrom=MSDN&view=net-5.0#System_Resources_ResourceManager_GetString_System_String_) based on culture.
 
 {% tabs %}
 {% highlight c# %}

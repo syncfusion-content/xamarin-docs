@@ -36,7 +36,7 @@ public String FirstName { get; set; }
 
 You can also localize the DataFormItem `LabelText`, `PlaceHolderText`, `GroupName` in the `AutoGeneratingDataFormItem` event of SfDataForm by using the Resources (.Resx) file.
 
-Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://msdn.microsoft.com/en-us/library/d17ax2xk(v=vs.110).aspx) based on culture.
+Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://docs.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager.getstring?redirectedfrom=MSDN&view=net-5.0#System_Resources_ResourceManager_GetString_System_String_) based on culture.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,7 +86,7 @@ public String FirstName { get; set; }
 
 You can also localize the data form error message in the ` Validating` event of SfDataForm by using the Resources (.Resx) file.
 
-Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://msdn.microsoft.com/en-us/library/d17ax2xk(v=vs.110).aspx) based on culture.
+Here, string member of .resx file will be accessed through the class (in resxFilename.Designer.cs) which was auto-generated when .resx file created and static string members get localized using [ResourceManager](https://docs.microsoft.com/en-us/dotnet/api/system.resources.resourcemanager.getstring?redirectedfrom=MSDN&view=net-5.0#System_Resources_ResourceManager_GetString_System_String_) based on culture.
 
 {% tabs %}
 {% highlight c# %}

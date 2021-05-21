@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show password character for Syncfusion SfMaskedEdit in Xamarin.Forms
-description: Learn how the SfMaskedEdit control work as password textbox and how can we apply password delay with password delay duration.
+title: Show Password Character in Xamarin Masked Entry control | Syncfusion
+description: Learn here all about Show Password Character support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
 
-# Show password character
+# Show Password Character in Xamarin Masked Entry (SfMaskedEdit)
 
 The SfMaskedEdit control supports to work as a password text box when setting a character to the [`PasswordChar`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_PasswordChar) property.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events in Syncfusion MaskedEdit control for Xamarin.Forms platform
-description: Learn how to get the value changed and Mask input reject events in SfMaskedEdit for Xamarin.Forms platform
+title: Events in Xamarin Masked Entry control | Syncfusion
+description: Learn here all about Events support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
-# Events in SfMaskedEdit
+# Events in Xamarin Masked Entry (SfMaskedEdit)
 The SfMaskedEdit exposes the following events:
 
 * [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html): Occurs when the value of [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property is changed.

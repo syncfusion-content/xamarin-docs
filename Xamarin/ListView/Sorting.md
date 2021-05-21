@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in Syncfusion ListView
-description: This section describes about the sorting behavior in Syncfusion Xamarin.Forms ListView and its various customization features.
+title: Sorting in Xamarin ListView control | Syncfusion
+description: Learn here all about Sorting support in Syncfusion Xamarin ListView (SfListView) control, its elements and more.
 platform: xamarin
 control: SfListView
 documentation: ug

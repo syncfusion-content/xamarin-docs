@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Basic features in Syncfusion SfMaskedEdit control for Xamarin.Forms
-description: Learn how to customize SfMaskedEdit's value, PromptChar, Watermark text, Return key, and Clear button Visibility.
+title: Basic Features in Xamarin Masked Entry control | Syncfusion
+description: Learn here all about Basic Features support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
 
-# Basic features in SfMaskedEdit control
+# Basic Features in Xamarin Masked Entry (SfMaskedEdit)
 
 ## Setting value
 

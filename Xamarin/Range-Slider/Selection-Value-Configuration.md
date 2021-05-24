@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Various features of Syncfusion RangeSlider control for Xamarin.Forms
-description: Learn how to set minimum value, maximum value, tick frequency, step frequency, enabling snaps to support and orientation for RangeSlider
+title: Selection Value configuration in Xamarin Range Slider | Syncfusion
+description: Learn here all about Selection Value configuration support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
 platform: Xamarin
 control: RangeSlider
 documentation: ug
 ---
 
-# Selection Value Configuration
+# Selection Value configuration in Xamarin Range Slider (SfRangeSlider)
 
 Various customization options are available to configure the selection value in SfRangeSlider.
 

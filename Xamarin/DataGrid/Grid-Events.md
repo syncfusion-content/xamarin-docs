@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Events | SfDataGrid | Xamarin | Syncfusion
-description: Different events and commands exposed in Xamarin.Forms DataGrid with its purpose and customization options.
+title: Grid Events in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Grid Events support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Events and Commands in SfDataGrid
+# Grid Events in Xamarin DataGrid (SfDataGrid)
 
 ## GridTapped event
 

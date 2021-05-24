@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping for Syncfusion.Xamarin.Forms SfRadioButton
-description: Learn how to group the radio buttons inside the SfRadioGroup with its GroupKey support and its orientation customization
+title: Grouping in Xamarin Radio Button control | Syncfusion
+description: Learn here all about Grouping support in Syncfusion Xamarin Radio Button (SfRadioButton) control and more.
 platform: xamarin
 control: SfRadioButton
 documentation: ug 
@@ -9,7 +9,7 @@ keywords: button, SfRadioButton, RadioButton, SfRadioGroup, GroupKey
 
 ---
 
-# Grouping support in SfRadioGroup
+# Grouping in Xamarin Radio Button (SfRadioButton)
 
 ## Group Key
 

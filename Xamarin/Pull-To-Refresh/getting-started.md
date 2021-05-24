@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting started | SfPullToRefresh | Xamarin | Syncfusion
-description: Getting started with Xamarin.Forms PullToRefresh and walk through to create a demo application from the scratch. 
+title: Getting Started with Xamarin Pull To Refresh control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Pull To Refresh (SfPullToRefresh) control, its elements and more.
 platform: xamarin
 control: SfPullToRefresh
 documentation: ug
 ---
 
-# Getting Started with Xamarin PullToRefresh (SfPullToRefresh)
+# Getting Started with Xamarin Pull To Refresh (SfPullToRefresh)
 
 This section provides a quick overview for working with SfPullToRefresh for Xamarin.Forms.
 

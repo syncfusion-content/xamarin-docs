@@ -1,6 +1,6 @@
 ---
-title: Adding Gridlines in Diagram control for Xamarin.Forms | Syncfusion
-description: Learn here all about Gridlines support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
+title: Gridlines in Xamarin Diagram control | Syncfusion
+description: Learn here all about Gridlines support in Syncfusion Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: Xamarin
 control: Diagram
 documentation: ug
@@ -61,4 +61,3 @@ diagram.PageSettings.SnapToGrid = true;
 {% endtabs %}
 ![Snapping gridlines in Xamarin.Forms diagram](Gridlines_images/Gridlines.gif)
 
-N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

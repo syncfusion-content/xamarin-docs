@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UnboundColumn | SfDataGrid | Xamarin | Syncfusion
-description: Create and use Unbound column in Xamarin.Forms DataGrid. Populate data for unbound column using expression, format and event.
+title: Unbound Column in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Unbound Column support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
 ---
 
-# Unbound Column
+# Unbound Column in Xamarin DataGrid (SfDataGrid)
 
 The data grid allows adding additional columns which are not bound with data object from the underlying data source. The unbound column can be added using the [SfDataGrid.GridUnboundColumn](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridUnboundColumn.html) class.
 

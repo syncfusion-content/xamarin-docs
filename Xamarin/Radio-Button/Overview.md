@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview for Syncfusion.Xamarin.Forms SfRadioButton
-description: A quick overview of the SfRadioButton key features that allow users to choose one of the options from a set and its available customizations.
+title: About Xamarin Radio Button control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Radio Button (SfRadioButton) control, its elements and more.
 platform: xamarin
 control: SfRadioButton
 documentation: ug 

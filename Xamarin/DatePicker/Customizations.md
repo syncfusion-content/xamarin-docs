@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of Syncfusion Xamarin.Forms SfDatePicker
-description: How to customize the header, footer, selected item and unselected item of the Syncfusion Xamarin.Forms SfDatePicker
+title: Customizations in Xamarin DatePicker control | Syncfusion
+description: Learn here all about Customizations support in Syncfusion Xamarin DatePicker (SfDatePicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
-# Customization of SfDatePicker
+# Customizations in Xamarin DatePicker (SfDatePicker)
 
 You can customize the header, column header, footer, selected item, and unselected item of the SfDatePicker.
 

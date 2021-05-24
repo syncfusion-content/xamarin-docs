@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Thumb customization for SfDateTimeRangeNavigator
-description: Thumb
+title: Thumb in Xamarin DateTime Range Navigator control | Syncfusion
+description: Learn here all about Thumb support in Syncfusion Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator) control and more.
 platform: xamarin
 control: SfDateTimeRangeNavigator
 documentation: ug
 ---
 
-# Thumb
+# Thumb in Xamarin DateTime Range Navigator (SfDateTimeRangeNavigator)
 
 The [`LeftThumbStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_LeftThumbStyle) and [`RightThumbStyle`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html#Syncfusion_RangeNavigator_XForms_SfDateTimeRangeNavigator_RightThumbStyle) properties are used to configure the left and right thumb of the [`SfDateTimeRangeNavigator`](https://help.syncfusion.com/cr/xamarin/Syncfusion.RangeNavigator.XForms.SfDateTimeRangeNavigator.html). Following properties are available in thumb style to configure left and right thumb individually. 
 
@@ -70,4 +70,4 @@ rangeNavigator.RightThumbStyle.LineWidth = 5;
 {% endhighlight %}
 {% endtabs %}
 
-![](thumb_images/thumb_img1.png)
+![thumb_img1](thumb_images/thumb_img1.png)

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization | SfPullToRefresh | Xamarin | Syncfusion
-description: Various built-in styling and customization options are available in the Xamarin.Forms PullToRefresh.
+title: Customization in Xamarin Pull To Refresh control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Xamarin Pull To Refresh (SfPullToRefresh) control and more.
 platform: xamarin
 control: SfPullToRefresh
 documentation: UG
 ---
 
-# Customization in Xamarin.Forms PullToRefresh (SfPullToRefresh)
+# Customization in Xamarin Pull To Refresh (SfPullToRefresh)
 
 The PullToRefresh control supports customizing the TransitionMode, PullingThreshold, ProgressBackgroundColor, ProgressStrokeColor and more. The PullToRefresh control can be customized using the following properties.
 

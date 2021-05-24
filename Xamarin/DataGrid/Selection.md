@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection | SfDataGrid | Xamarin | Syncfusion
-description: How to enable selection for rows and cells, the selection modes, properties, events, and customizations available for selection in a data grid.
+title: Selection in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Selection support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Selection in Xamarin.Forms.DataGrid (SfDataGrid)
+# Selection in Xamarin DataGrid (SfDataGrid)
 
 This section explains how to enable selection in the data grid; modes, properties, and events involved in selection; and customizations available for selection.
 
@@ -278,7 +278,7 @@ If the active current cell is in edit mode, changes will be committed and select
 <kbd>Esc</kbd>
 </td>
 <td>
-If the current cell is in edit mode, reverts the changes done in the current cell. If the underlying source implements the {{'[IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject#"")'| markdownify }}, pressing Esc key for the second time will cancel the edit mode for the entire row.
+If the current cell is in edit mode, reverts the changes done in the current cell. If the underlying source implements the {{'[IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0#"")'| markdownify }}, pressing Esc key for the second time will cancel the edit mode for the entire row.
 </td>
 </tr>
 <tr>

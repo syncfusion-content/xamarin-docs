@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Accessibility | SfPopupLayout | Xamarin | Syncfusion
-description: Set AutomationId to SfPopupLayout for automation framework to find and interact with control inner elements.
+title: Accessibility in Xamarin Popup control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin Popup (SfPopupLayout) control and more.
 platform: xamarin
 control: SfPopupLayout
 documentation: UG
 ---
 
-# AutomationId
+# Accessibility in Xamarin Popup (SfPopupLayout)
 
 SfPopupLayout supports built-in [AutomationId](https://docs.microsoft.com/en-gb/dotnet/api/xamarin.forms.element.automationid?view=xamarin-forms#Xamarin_Forms_Element_AutomationId) for all its inner elements. These `AutomationId` values allow the automation framework to find and interact with the inner elements when the test scripts are run. A unique `AutomationId` is maintained for each inner element by prefixing the control's `AutomationId` with the inner element's Id.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Xamarin.Forms Popup MVVM | SfPopupLayout | Xamarin | Syncfusion
-description: Describes about how to use Syncfusion Xamarin.Forms Popup in MVVM and use commands to handle user responses.
+title: Working with MVVM in Xamarin Popup control | Syncfusion
+description: Learn here all about Working with MVVM support in Syncfusion Xamarin Popup (SfPopupLayout) control and more.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# How to show Xamarin.Forms popup from ViewModel?
+# Working with MVVM in Xamarin Popup (SfPopupLayout)
 
 SfPopup can be used in MVVM architecture applications easily. In the below example [SfPopupLayout.IsOpen](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html#Syncfusion_XForms_PopupLayout_SfPopupLayout_IsOpen) property is bound to a property in the ViewModel based on which the popup is opened or closed. Refer the below code example to display popup in MVVM.
 

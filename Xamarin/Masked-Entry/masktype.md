@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Mask Types of Syncfusion MaskedEdit control for Xamarin.Forms
-description: Learn the different types of mask characters available in SfMaskedEdit control to restrict the user input
+title: MaskType in Xamarin Masked Entry control | Syncfusion
+description: Learn here all about MaskType support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
-# MaskType in SfMaskedEdit
+# MaskType in Xamarin Masked Entry (SfMaskedEdit)
 Each [`MaskType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_MaskType) has different set of mask characters that are combined to form a mask expression. Based on the complexity and usage, mask types are classified as:
 
 * Text

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Overview of Syncfusion SfMaskedEdit control for Xamarin.Forms
-description: Overview and key features of SfMaskedEdit control
+title: About Xamarin Masked Entry control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Masked Entry (SfMaskedEdit) control, its elements and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug
 keywords: mask, SfMaskedEdit, maskededit
 ---
-# Overview
+# Xamarin Masked Entry (SfMaskedEdit) Overview
 
 The Masked text box is an advanced version of the Entry control that restricts your input to certain types of characters, text, and numbers using a mask pattern. This control is used to create a template for providing information such as telephone numbers, IP addresses, product IDs, and so on.
 
-![](SfMaskedEditImages/MaskedEdit.png)
+![MaskedEdit](SfMaskedEditImages/MaskedEdit.png)
 
 ## Key features
 

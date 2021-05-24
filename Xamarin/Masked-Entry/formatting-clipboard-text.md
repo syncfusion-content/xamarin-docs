@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Formatting clipboard text in Syncfusion SfMaskedEit in Xamarin.Forms
-description: Learn how to format the clipboard text during cut and copy operation in SfMaskedEdit control for Xamarin.Forms plarform
+title: Formatting clipboard text in Xamarin Masked Entry control | Syncfusion
+description: Learn here all about Formatting clipboard text support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
 
-# Formatting clipboard text
+# Formatting clipboard text in Xamarin Masked Entry (SfMaskedEdit)
 
 SfMaskedEdit allows you to format the clipboard text in a mask scenario (when the Mask property is set). When you perform the cut or copy operation, the clipboard text will be formatted with your input characters and the literals defined in the mask. You can modify this and allow the clipboard to hold the characters with or without prompt and literals by setting the [`CutCopyMaskFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_CutCopyMaskFormat) property of the control. The clipboard text is formatted by any one of the following formatting enum values:
 

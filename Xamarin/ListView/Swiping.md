@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Swiping in Xamarin.Forms ListView | Syncfusion
-description: This topic explains how to enable swiping feature in Syncfusion Xamarin.Forms ListView and its various customization features.
+title: Swiping in Xamarin ListView control | Syncfusion
+description: Learn here all about Swiping support in Syncfusion Xamarin ListView (SfListView) control, its elements and more.
 platform: xamarin
 control: SfListView
 documentation: ug

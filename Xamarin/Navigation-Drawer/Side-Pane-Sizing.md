@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Sizing of drawer in Syncfusion NavigationDrawer control
-description: Learn how to set ReSize the DrawerView panel.
+title: Setting Sliding Panel size in Xamarin Navigation Drawer | Syncfusion
+description: Learn here all about Setting Sliding Panel size support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
-# Side Pane Sizing
+# Setting Sliding Panel size in Xamarin Navigation Drawer
 
 The size of side pane can be adjusted using `DrawerHeight` and `DrawerWidth` properties.
 

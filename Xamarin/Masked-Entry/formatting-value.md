@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Formatting Value property of Syncfusion MaskedEdit for Xamarin.Forms
-description: Learn how to format the characters in the Value property of SfMaskedEdit control for Xamarin.Forms platform
+title: Formatting Value in Xamarin Masked Entry control | Syncfusion
+description: Learn here all about Formatting Value support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
-# Formatting Value in SfImageEditor
+# Formatting Value in Xamarin Masked Entry (SfMaskedEdit)
 
 SfMaskedEdit allows you to format the characters in the [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_Value) property in a mask scenario (when the Mask property is set). By default, the Value property holds your input characters, prompt characters and the literals defined in the mask. You can modify this and allow the `Value` property to hold the characters without prompt and literals by setting the [`ValueMaskFormat`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html#Syncfusion_XForms_MaskedEdit_SfMaskedEdit_ValueMaskFormat) property of the control. The `Value` in the `SfMaskedEdit` is formatted by any one of the following formatting enum values:
 

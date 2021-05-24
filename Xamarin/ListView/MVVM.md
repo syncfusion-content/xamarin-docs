@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Working with Xamarin.Forms ListView in MVVM | Syncfusion
-description: This topic describes about how to use Syncfusion xamarin.Forms ListView with commands, prism, event to command behaavior and different cases of MVVM.
+title: Working with MVVM in Xamarin ListView control | Syncfusion
+description: Learn here all about Working with MVVM support in Syncfusion Xamarin ListView (SfListView) control and more.
 platform: xamarin
 control: SfListView
 documentation: ug

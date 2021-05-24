@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Data Binding  in Syncfusion RadialMenu control for Xamarin.Forms
-description : Learn how to perform DataBinding in RadialMenu
+title: Populating Items in Xamarin Radial Menu control | Syncfusion
+description: Learn here all about Populating Items support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
 platform : xamarin
 control : SfRadialMenu
 documentation : ug
 ---
 
-# Populating Items
+# Populating Items in Xamarin Radial Menu (SfRadialMenu)
 
 This section explains the ways about populating items through radial menu item and item source with item template.
 

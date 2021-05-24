@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Ticks of Syncfusion RangeSlider control for Xamarin.Forms
-description: Learn how to set ticks in proper position for RangeSlider control in Xamarin.Forms
+title: Ticks Customization in Xamarin Range Slider control | Syncfusion
+description: Learn here all about Ticks Customization support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
 platform: Xamarin
 control: RangeSlider
 documentation: ug
 ---
 
-# Customizing ticks
+# Ticks Customization in Xamarin Range Slider (SfRangeSlider)
 
 Tick marks can be placed along the track in a uniform manner or it's position can also be customized.
 

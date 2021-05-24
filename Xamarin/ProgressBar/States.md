@@ -1,13 +1,13 @@
 ---
 layout: post
-title: States
-description: States.
+title: States in Xamarin ProgressBar control | Syncfusion
+description: Learn here all about States support in Syncfusion Xamarin ProgressBar (Progress Bar) control and more.
 platform: xamarin
 control: ProgressBar
 documentation: ug
 ---
 
-# States
+# States in Xamarin ProgressBar (Progress Bar)
 
 You can configure the states of the progress bar control depending on the usage.
 
@@ -69,4 +69,4 @@ this.LinearProgressBar.SecondaryProgress = 25;
 
 {% endtabs %} 
 
-![](overview_images/Buffer.png)
+![Buffer](overview_images/Buffer.png)

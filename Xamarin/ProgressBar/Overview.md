@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview
-description: overview
+title: About Xamarin ProgressBar control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin ProgressBar (Progress Bar) control, its elements and more.
 platform: xamarin
 control: ProgressBar
 documentation: ug
 ---
 
-# Overview
+# Xamarin ProgressBar (Progress Bar) Overview
 
 The progress bar control for Xamarin.Forms provides a customizable visual to indicate the progress of a task.
 
@@ -20,4 +20,4 @@ The progress bar control for Xamarin.Forms provides a customizable visual to ind
 * Visualizes the progress in segments.
 * Customizes the angle of the circular progress bar.
 
-![](overview_images/overview.png)
+![overview](overview_images/overview.png)

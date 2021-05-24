@@ -1,12 +1,12 @@
 ---
 layout: post
-title: TrackBar in Syncfusion RangeSlider control for Xamarin.Forms
-description: Learn how to customize the TrackBar appearance for RangeSlider control in Xamarin.Forms
+title: TrackBar Customization in Xamarin Range Slider control | Syncfusion
+description: Learn here all about TrackBar Customization support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
 platform: Xamarin
 control: RangeSlider
 documentation: ug
 ---
-# TrackBar Customization 
+# TrackBar Customization in Xamarin Range Slider (SfRangeSlider)
 
 ### Customizing track height
 

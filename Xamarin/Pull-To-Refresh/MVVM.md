@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Xamarin.Forms PullToRefresh MVVM| SfPullToRefresh| Xamarin| Syncfusion
-description: Describes about how to use Syncfusion Xamarin.Forms PullToRefresh in MVVM using commands and how to refresh from view model.
+title: Working with MVVM in Xamarin Pull To Refresh control | Syncfusion
+description: Learn here all about Working with MVVM support in Syncfusion Xamarin Pull To Refresh (SfPullToRefresh) control and more.
 platform: xamarin
 control: SfPullToRefresh 
 documentation: ug

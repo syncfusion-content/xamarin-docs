@@ -1,7 +1,7 @@
 ---
 layout : post
-title : AutomationId support for Syncfusion RadialMenu control in Xamarin.Forms
-description : Set AutomationId to find and interact with inner elements in RadialMenu 
+title: Accessibility in Xamarin Radial Menu control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
 platform : Xamarin.Forms
 control : SfRadialMenu
 documentation : ug

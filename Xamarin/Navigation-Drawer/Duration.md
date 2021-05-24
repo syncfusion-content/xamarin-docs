@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Duration in Syncfusion SfNavigationDrawer control for Xamarin.Forms
-description: This section will explain about how to customize the duration of Xamarin.Forms NavigationDrawer control viewbox.
+title: Animation Duration in Xamarin Navigation Drawer control | Syncfusion
+description: Learn here all about Animation Duration support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: SfNavigationDrawer
 documentation: ug
 ---
-# Animation duration in Xamarin NavigationDrawer (SfNavigationDrawer)
+# Animation Duration in Xamarin Navigation Drawer (SfNavigationDrawer)
 
 ## Animation Duration in SfNavigationDrawer
 

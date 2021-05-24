@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started in Syncfusion CheckBox for Xamarin.Forms platform
-description: Learn how to create a simple CheckBox and its customization options with its available basic features
+title: Getting Started with Xamarin CheckBox control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin CheckBox (SfCheckBox) control, its elements and more.
 platform: xamarin
 control: SfCheckBox
 documentation: ug 
@@ -9,7 +9,7 @@ keywords: button, SfCheckBox, CheckBox
 
 ---
 
-# Getting Started in Xamarin CheckBox (SfCheckBox)
+# Getting Started with Xamarin CheckBox (SfCheckBox)
 
 This section explains the steps required to configure the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) control in a real-time scenario and provides a walk-through on some of the customization features available in [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) control.
 

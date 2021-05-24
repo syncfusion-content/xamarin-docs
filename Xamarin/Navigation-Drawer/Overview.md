@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion NavigationDrawer control for Xamarin.Forms
-description: Overview and key features like pane positions, Animated transitions and changeable swipe sensitivity of NavigationDrawer control
+title: About Xamarin Navigation Drawer control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control, its elements and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug

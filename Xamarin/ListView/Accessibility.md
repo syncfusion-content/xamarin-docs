@@ -1,7 +1,7 @@
 ---
 layout: post 
-title: Automation in Xamarin ListView Control | Syncfusion
-description: Describes about setting automation id to ListView for automation framework to find and interact with control inner elements.
+title: Accessibility in Xamarin ListView control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin ListView (SfListView) control and more.
 platform: Xamarin
 control: ListView
 documentation: ug

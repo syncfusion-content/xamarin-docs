@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Navigation Modes in Syncfusion Rotator Control for Xamarin.Forms 
-description: Learn how to set the position of the navigation bar items in Rotator control
+title: Navigation Modes in Xamarin Rotator control | Syncfusion
+description: Learn here all about Navigation Modes support in Syncfusion Xamarin Rotator (SfRotator) control and more.
 platform: xamarin 
 control: Rotator
 documentation: ug
 
 ---
 
-# Navigation Modes
+# Navigation Modes in Xamarin Rotator (SfRotator)
 
 The `NavigationStripMode` property specifies the appearance of navigation bar items. The image data can be selected either by Thumbnail or by Dots navigation modes.
 

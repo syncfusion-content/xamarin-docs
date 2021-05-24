@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Adding Custom items in Syncfusion SfRating control for Xamarin.Forms
-description: Learn how to add the Custom Items in rating control
+title: Custom View in Xamarin Rating control | Syncfusion
+description: Learn here all about Custom View support in Syncfusion Xamarin Rating (SfRating) control, its elements and more.
 platform: Xamarin
 control: Rating 
 documentation: ug
 
 ---
 
-# Custom Views
+# Custom View in Xamarin Rating (SfRating)
 
 SfRating Items control provides support to add custom views.
 

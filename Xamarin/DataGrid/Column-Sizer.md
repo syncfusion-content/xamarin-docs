@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Sizer | SfDataGrid | Xamarin | Syncfusion
-description: Different column sizing options available in Xamarin.Forms DataGrid and its working.
+title: Column Sizer in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Column Sizer support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
 ---
 
-# ColumnSizer
+# Column Sizer in Xamarin DataGrid (SfDataGrid)
 
 The SfDataGrid allows to apply `ColumnSizer` for the [GridColumn](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html) by setting the [SfDataGrid.ColumnSizer](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ColumnSizer) property. 
 

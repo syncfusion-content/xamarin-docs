@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion DatePicker control for Xamarin.Forms
-description: A quick go through to learn about the DatePicker control and the key features available in Syncfusion DatePicker control for Xamarin.Forms. 
+title: About Xamarin DatePicker control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin DatePicker (SfDatePicker) control, its elements and more.
 platform: Xamarin
 control: DatePicker
 documentation: ug
 ---
 
-# Xamarin Date Picker (SfDatePicker) Overview
+# Xamarin DatePicker (SfDatePicker) Overview
 
 The DatePicker control allows you to select a date among a list of dates. This control can be opened as dialog. Its rich feature set includes functionalities such as date range, date format, header, footer, and default validation buttons.
 

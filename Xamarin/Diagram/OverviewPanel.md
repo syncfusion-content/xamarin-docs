@@ -1,6 +1,6 @@
 ---
-title: Overview for Essential Xamarin.Forms Diagram | Syncfusion
-description: Learn about Overview Panel support in Syncfusion Xamarin Diagram (SfDiagram) control and more details.
+title: About Xamarin Diagram control | Syncfusion
+description: Learn here all about Overview Panel support in Syncfusion Xamarin Diagram (SfDiagram) control and more.
 platform: Xamarin
 control: SfDiagram
 documentation: UG
@@ -72,4 +72,3 @@ The “StartX” and “StartY” properties are used to define the start positi
 {% endhighlight %}
 {% endtabs %}
 
-N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

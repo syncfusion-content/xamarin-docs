@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tick Settings in Syncfusion LinearGauge control for Xamarin.Forms
-description: This section describes how to define settings of linear ticks in SfLinearGauge control for Xamarin.Forms
+title: Tick Setting in Xamarin Linear Gauge control | Syncfusion
+description: Learn here all about Tick Setting support in Syncfusion Xamarin Linear Gauge (SfLinearGauge) control and more.
 platform: Xamarin
 control: LinearGauge
 documentation: ug
 ---
 
-# Tick Setting in SfLinearGauge
+# Tick Setting in Xamarin Linear Gauge (SfLinearGauge)
 
 The [`TickSetting`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.TickSettings.html) property is used to identify the gauge’s data value by marking the gauge scale in regular increments.
 

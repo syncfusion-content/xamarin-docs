@@ -1,12 +1,13 @@
 ---
 layout: post
-title: Range
+title: Define Range in Xamarin ProgressBar control | Syncfusion
+description: Learn here all about Range support in Syncfusion Xamarin ProgressBar control, its elements and more.
 platform: xamarin
 control: ProgressBar
 documentation: ug
 ---
 
-# Range
+# Define Range in Xamarin ProgressBar (Progress Bar)
 
 Range represents the entire span of the progress bar and can be defined using the [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.ProgressBarBase.html#Syncfusion_XForms_ProgressBar_ProgressBarBase_Minimum) and [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ProgressBar.ProgressBarBase.html#Syncfusion_XForms_ProgressBar_ProgressBarBase_Maximum) properties. The default value of the range is 0 to 100.
 
@@ -48,4 +49,4 @@ this.CircularProgressBar.Progress = 0.5;
 
 {% endtabs %} 
 
-![](overview_images/range.png)
+![range](overview_images/range.png)

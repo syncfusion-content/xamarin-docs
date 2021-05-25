@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Format using Syncfusion DatePicker for Xamarin.Forms
-description: This section explains the way to give the different date formats to the Syncfusion DatePicker control for Xamarin.Forms  
+title: Formatting in Xamarin DatePicker control | Syncfusion
+description: Learn here all about Formatting support in Syncfusion Xamarin DatePicker (SfDatePicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
-# Date Format in Syncfusion DatePicker 
+# Formatting in Xamarin DatePicker (SfDatePicker)
 
 Format is a way to represent the value of the date in a different string format.
 

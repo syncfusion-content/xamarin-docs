@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pull To Refresh | SfDataGrid | Xamarin | Syncfusion
-description: Use the pull to refresh functionality in Xamarin.Forms DataGrid to refresh data in the runtime. Built-in properties and other customizations available when using the pull to refresh functionality.
+title: Pull To Refresh in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Pull To Refresh support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Pull To Refresh
+# Pull To Refresh in Xamarin DataGrid (SfDataGrid)
 
 The data grid enables the `PullToRefresh` option by setting the [SfDataGrid.AllowPullToRefresh](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AllowPullToRefresh) property to `true` and by setting the [SfDataGrid.PullToRefreshCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_PullToRefreshCommand) property. When the `PullToRefresh` is enabled, the control supports for refreshing the data source at runtime while doing the pull to refresh action. 
 

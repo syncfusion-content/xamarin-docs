@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with Syncfusion RadialMenu control for Xamarin.Forms
-description: This section describes about quick tour to initial users on Syncfusion RadialMenu control for Xamarin.Forms platform.
+title: Getting Started with Xamarin Radial Menu control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Radial Menu (SfRadialMenu) control, its elements and more.
 platform: Xamarin
 control: SfRadialMenu
 documentation: ug
 ---
 
-# Getting Started with Xamarin RadialMenu(SfRadialMenu)
+# Getting Started with Xamarin Radial Menu (SfRadialMenu)
 
 This section explains the steps required to launch the radial menu with hierarchical items that can be used as mobile phone system settings. This section covers only the minimal features that needed to get started with the radial menu.
 

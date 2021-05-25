@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Range in Syncfusion RangeSlider control for Xamarin.Forms
-description: This section provides how to set Dual thumb slider and its ranges in Xamarin Forms RangeSlider control.
+title: Range in Xamarin Range Slider control | Syncfusion
+description: Learn here all about Range support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
 platform: Xamarin
 control: RangeSlider
 documentation: ug
 ---
 
-# Range in SfRangeSlider
+# Range in Xamarin Range Slider (SfRangeSlider)
 
 The SfRangeSlider control supports to select range of value by using two Thumbs.
 

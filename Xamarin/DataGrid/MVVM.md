@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Xamarin.Forms DataGrid MVVM | SfDataGrid | Xamarin | Syncfusion
-description: Describes about how to use the Syncfusion Xamarin.Forms DataGrid in MVVM, use binding and commands to SfDataGrid properties. 
+title: Working With MVVM in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Working With MVVM support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
-# MVVM in Xamarin.Forms DataGrid (SfDataGrid)
+# Working With MVVM in Xamarin DataGrid (SfDataGrid)
 
 ## Xamarin.Forms DataGrid SelectedIndex binding
 

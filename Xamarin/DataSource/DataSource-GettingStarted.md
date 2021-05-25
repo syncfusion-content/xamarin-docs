@@ -1,13 +1,13 @@
 ---
 layout: post
-title: GettingStarted | DataSource | Xamarin | Syncfusion
-description: DataSource is a non UI component that consumes raw data and processes data operations such as sorting, filtering and grouping saving developers’ time.
+title: Getting Started with Xamarin DataSource control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio Xamarin DataSource control, its elements and more.
 platform: xamarin
 control: DataSource
 documentation: UG
 ---
 
-# Getting started with Xamarin DataSource
+# Getting Started with Xamarin DataSource
 
 ## Overview
 

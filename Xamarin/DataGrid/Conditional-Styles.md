@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Conditional Styles | SfDataGrid | Xamarin | Syncfusion
-description: Apply conditional styles in Xamarin.Forms DataGrid for individual rows and cells based on user requirements.
+title: Conditional Styles in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Conditional Styles support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG

@@ -1,6 +1,6 @@
 ---
-title: Getting Started for Essential Xamarin.Forms Diagram | Syncfusion
-description: Getting started with Xamarin.Forms diagram and walk through to create a demo application from the scratch.
+title: Getting Started with Xamarin Diagram control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: Xamarin
 control: SfDiagram
 documentation: UG
@@ -8,7 +8,7 @@ keywords:
 
 ---
 
-# Getting started with Xamarin Diagram (SfDiagram)
+# Getting Started with Xamarin Diagram (SfDiagram)
 
 This section provides a quick overview for working with Diagram for Xamarin.Forms. This walkthrough demonstrates that, how to create a simple flow chart and an organization chart.
 
@@ -309,5 +309,3 @@ The Employee data is displayed in the SfDiagram as follows
 ![Organizational chart demo in Xamarin.Forms diagram](Getting-Started_images/Getting-Started_img3.jpeg)
 
 This demo project can be downloaded from the following link [OrganizationalChart_Demo.](https://www.syncfusion.com/downloads/support/directtrac/general/ze/OrganizationalChart1297437028.zip)
-
-N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

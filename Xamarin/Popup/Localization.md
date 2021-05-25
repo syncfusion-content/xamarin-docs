@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Localization | SfPopupLayout | Xamarin | Syncfusion
-description: Set localized text for the static texts used in Xamarin.Forms PopupLayout.
+title: Localization in Xamarin Popup control | Syncfusion
+description: Learn here all about Localization support in Syncfusion Xamarin Popup (SfPopupLayout) control and more.
 platform: xamarin
 control: SfPopupLayout
 documentation: UG
 ---
 
-# Localization 
+# Localization in Xamarin Popup (SfPopupLayout)
 
 Localization is the process of translating application resources into different languages for specific cultures. SfPopupLayout uses the following static text that can be localized in application level:
 

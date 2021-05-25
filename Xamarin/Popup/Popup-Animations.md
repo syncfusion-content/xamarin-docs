@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Popup Animations | SfPopupLayout |Xamarin| Syncfusion
-description: Explains the various built-in animation modes and easing effects available in Xamarin.Forms PopupLayout.
+title: Popup Animations in Xamarin Popup control | Syncfusion
+description: Learn here all about Popup Animations support in Syncfusion Xamarin Popup (SfPopupLayout) control and more.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Popup Animations
+# Popup Animations in Xamarin Popup (SfPopupLayout)
 
 ## Animation Modes
 

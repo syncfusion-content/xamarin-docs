@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Popup Events| SfPopupLayout |Xamarin| Syncfusion
-description: Use the built-in events available in Xamarin.Forms PopupLayout to control the opening and closing of popup based on conditions or requirements.
+title: Popup Events And Commands in Xamarin Popup control | Syncfusion
+description: Learn here all about Popup Events And Commands support in Syncfusion Xamarin Popup (SfPopupLayout) control and more.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
 
-# Popup Events And Commands
+# Popup Events And Commands in Xamarin Popup (SfPopupLayout)
 
 There are four built-in events in the SfPopupLayout control namely:
 
@@ -20,7 +20,7 @@ There are four built-in events in the SfPopupLayout control namely:
 
 The [SfPopupLayout.Opening](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html) event will be fired whenever opening the PopupView in the application. It can cancel popup opening with `CancelEventArgs` that contains the following property:
 
-* [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Popup opening is based on this value.
+* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev14IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0): Popup opening is based on this value.
 
 {% tabs %}
 {%highlight Xaml%}
@@ -75,7 +75,7 @@ private void PopupLayout_Opened(object sender, EventArgs e)
 
 The [SfPopupLayout.Closing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.PopupLayout.SfPopupLayout.html) event will be fired whenever closing the PopupView in the application. It can cancel popup closing with `CancelEventArgs` that contains the following property:
 
-* [Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Popup opening is based on this value.
+* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev14IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0): Popup opening is based on this value.
 
 {% tabs %}
 {%highlight Xaml%}

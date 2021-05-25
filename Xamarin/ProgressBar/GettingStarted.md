@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Essential Xamarin.Forms Progress Bar
-description: A quick tour to initial users for getting started with Syncfusion ProgressBar control for Xamarin.Forms platform.
+title: Getting Started with Xamarin ProgressBar control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin ProgressBar (Progress Bar) control, its elements and more.
 platform: xamarin
 control: ProgressBar
 documentation: ug
 ---
 
-# Getting Started with Xamarin Progress Bar (SfProgressBar)
+# Getting Started with Xamarin ProgressBar (Progress Bar)
 
 This section explains the steps required to work with the progress bar control for Xamarin.Forms.
 

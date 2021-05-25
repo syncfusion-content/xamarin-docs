@@ -1,12 +1,12 @@
 ---
 layout: post
-title: FAQ | SfPopupLayout |Xamarin | Syncfusion
-description: Explains how to achieve various requirements of user scenarios and customizations possible with the Xamarin.Forms PopupLayout.
+title: FAQ in Xamarin Popup control | Syncfusion
+description: This page contains the Frequently asked questions (FAQ) in Syncfusion Xamarin.Forms Popup (SfPopupLayout) control.
 platform: Xamarin
 control: SfPopupLayout
 documentation: ug
 --- 
-# FAQ in Xamarin.Forms Popup (SfPopupLayout)
+# FAQ in Xamarin Popup (SfPopupLayout)
 
 ## Load the SfPopupLayout in GridTappedEvent of the SfDataGrid
 

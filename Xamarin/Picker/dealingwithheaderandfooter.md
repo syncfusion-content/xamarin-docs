@@ -331,3 +331,5 @@ private void picker_CancelButtonClicked(object sender, Syncfusion.SfPicker.XForm
 
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [Xamarin Picker](https://www.syncfusion.com/xamarin-ui-controls/xamarin-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Picker example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Picker) to knows the functionalities of each feature.

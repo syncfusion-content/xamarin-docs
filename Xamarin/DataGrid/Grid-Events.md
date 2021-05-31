@@ -575,6 +575,8 @@ The [SfDataGrid.GridLongPressedCommand](https://help.syncfusion.com/cr/xamarin/S
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LongPressedCommand1698940749).
 
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+
 ## See also
 
 [How to navigate to an URL when tapping on a cell in SfDataGrid](https://www.syncfusion.com/kb/7443)

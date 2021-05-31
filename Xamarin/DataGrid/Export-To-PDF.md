@@ -1250,6 +1250,8 @@ Refer the below code to export the selected rows alone to the PDF document.
 
 ![Export selected items in a DataGrid to PDF format](SfDataGrid_images/PDF/SelectedItems_ExportToPdf.png)
 
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+
 ## See also
 
 [How to export Middle Eastern Languages (Arabic, Hebrew) from Xamarin.Forms DataGrid (SfDataGrid) to PDF](https://www.syncfusion.com/kb/11198)

@@ -769,6 +769,8 @@ private void DataGrid_QueryCellStyle(object sender, QueryCellStyleEventArgs e)
 
 ![DataGrid with border customized](SfDataGrid_images/BorderCustomization.png)
 
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+
 ## See also
 
 [How to apply the row background color when mouse hover on SfDataGrid in UWP](https://www.syncfusion.com/kb/11230)

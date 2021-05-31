@@ -744,3 +744,5 @@ The SfDataGrid provides command support for all the interactions such as tap, do
 ## Binding values to grid style in MVVM
 
 SfDatagrid allows you to bind values to the properties of grid style class from view model or directly set from application resources as shown [here](https://help.syncfusion.com/xamarin/datagrid/styles#set-datagrid-style-from-application-resources).
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

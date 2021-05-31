@@ -9,7 +9,7 @@ documentation: UG
 
 # Data Binding in Xamarin DataGrid (SfDataGrid)
 
-The SfDataGrid is bound to an external data source to display the data. It supports data sources such as [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.list-1?redirectedfrom=MSDN&view=net-5.0), [ObservableCollection](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?redirectedfrom=MSDN&view=net-5.0), and so on. The [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ItemsSource) property helps to bind this control with collection of objects.
+The [Xamarin Datagrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) Control is bound to an external data source to display the data. It supports data sources such as [List](https://docs.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-5.0), and so on. The [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_ItemsSource) property helps to bind this control with collection of objects.
 
 In order to bind data source of the SfDataGrid, set the `SfDataGrid.ItemsSource` property as follows. Such that each row in the SfDataGrid would bind to an object in data source. Each column would bind to a property in the data model object.
 
@@ -39,15 +39,15 @@ dataGrid.ItemsSource = viewModel.OrderInfoCollection;
 {% endhighlight %}
 {% endtabs %}
 
-If the data source implements `ICollectionChanged` interface, then the SfDataGrid will automatically refresh the view when an item is added, removed, or cleared. When you add or remove an item in `ObservableCollection`, it automatically refreshes the view as the `ObservableCollection`. That implements the [INotifyCollectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?redirectedfrom=MSDN&view=net-5.0). But when you do the same in `List`, it will not refresh the view automatically.
+If the data source implements `ICollectionChanged` interface, then the SfDataGrid will automatically refresh the view when an item is added, removed, or cleared. When you add or remove an item in `ObservableCollection`, it automatically refreshes the view as the `ObservableCollection`. That implements the [INotifyCollectionChanged](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.inotifycollectionchanged?view=net-5.0). But when you do the same in `List`, it will not refresh the view automatically.
 
-If the data model implements the [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?redirectedfrom=MSDN&view=net-5.0) interface, then the SfDataGrid responds to the property change at runtime to update the view.
+If the data model implements the [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0) interface, then the SfDataGrid responds to the property change at runtime to update the view.
 
 N> The SfDataGrid does not supports `DataTable` binding in `Xamarin.Forms` since `System.Data` is inaccessible in `Portable Class Library`.
 
 ## Binding with IEnumerable
 
-The SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?redirectedfrom=MSDN&view=net-5.0) interface. All the data operations such as sorting, grouping, and filtering are supported when binding collection derived from `IEnumerable`.
+The SfDataGrid control supports to bind any collection that implements the [IEnumerable](https://docs.microsoft.com/en-us/dotnet/api/system.collections.ienumerable?view=net-5.0) interface. All the data operations such as sorting, grouping, and filtering are supported when binding collection derived from `IEnumerable`.
 
 ## Binding with DataTable
 `SfDataGrid` control supports to bind the [DataTable](https://docs.microsoft.com/en-us/dotnet/api/system.data.datatable?view=netframework-4.8). SfDataGrid control automatically refresh the UI when binding DataTable as `ItemsSource` when rows are added, removed or cleared.
@@ -144,35 +144,35 @@ The following events are associated with `View`.
 
 ### RecordPropertyChanged
 
-The [RecordPropertyChanged](https://help.syncfusion.com/cr/xamarin/) event is raised when `DataModel` property value is changed, if `DataModel` implements the [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?redirectedfrom=MSDN&view=net-5.0) interface. The event receives with two arguments namely sender that handles the `DataModel` and the [PropertyChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.PropertyChangedEventArgs)%26rd%3Dtrue&view=net-5.0) as argument.
+The [RecordPropertyChanged](https://help.syncfusion.com/cr/xamarin/) event is raised when `DataModel` property value is changed, if `DataModel` implements the [INotifyPropertyChanged](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.inotifypropertychanged?view=net-5.0) interface. The event receives with two arguments namely sender that handles the `DataModel` and the [PropertyChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs?view=net-5.0) as argument.
 
 `PropertyChangedEventArgs` has the following property:
 
- [PropertyName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs.propertyname?redirectedfrom=MSDN&view=net-5.0#System_ComponentModel_PropertyChangedEventArgs_PropertyName): It denotes the `PropertyName` of the changed value.
+ [PropertyName](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.propertychangedeventargs.propertyname?view=net-5.0): It denotes the `PropertyName` of the changed value.
 
 ### CollectionChanged
 
-The [CollectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.CollectionViewAdv.html) event is raised when changes in `Records/DisplayElements` collection. The event receives two arguments namely sender that handles `View` object and the [NotifyCollectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs)%26rd%3Dtrue&view=net-5.0) as argument.
+The [CollectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.Data.CollectionViewAdv.html) event is raised when changes in `Records/DisplayElements` collection. The event receives two arguments namely sender that handles `View` object and the [NotifyCollectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?view=net-5.0) as argument.
 
 `NotifyCollectionChangedEventArgs` has the following properties:
 
- [Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action)%26rd%3Dtrue&view=net-5.0): It contains the current action. (i.e.)` Add`, `Remove`, `Move`, `Replace`, `Reset`.
- [NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewItems)%26rd%3Dtrue&view=net-5.0): It contains the list of new items involved in the change.
- [OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldItems)%26rd%3Dtrue&view=net-5.0): It contains the list of old items affected by the `Action`.
- [NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewStartingIndex)%26rd%3Dtrue&view=net-5.0): It contains the index at which the change occurred.
- [OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldStartingIndex)%26rd%3Dtrue&view=net-5.0): It contains the index at which the `Action` occurred.
+ [Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.)` Add`, `Remove`, `Move`, `Replace`, `Reset`.
+ [NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
+ [OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
+ [NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
+ [OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
 
 ### SourceCollectionChanged
 
-The [SourceCollectionChanged](https://help.syncfusion.com/cr/xamarin/) event is raised when making changes in `SourceCollection`. For example, adding or removing the collection. The event receives two arguments namely sender that handles `GridQueryableCollectionViewWrapper` object and the [NotifyCollectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs)%26rd%3Dtrue&view=net-5.0) as argument.
+The [SourceCollectionChanged](https://help.syncfusion.com/cr/xamarin/) event is raised when making changes in `SourceCollection`. For example, adding or removing the collection. The event receives two arguments namely sender that handles `GridQueryableCollectionViewWrapper` object and the [NotifyCollectionChangedEventArgs](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs?view=net-5.0) as argument.
 
 `NotifyCollectionChangedEventArgs` has the following properties:
 
- [Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.Action)%26rd%3Dtrue&view=net-5.0): It contains the current action. (i.e.) `Add`, `Remove`, `Move`, `Replace`, `Reset`.
- [NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewItems)%26rd%3Dtrue&view=net-5.0): It contains the list of new items involved in the change.
- [OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldItems)%26rd%3Dtrue&view=net-5.0): It contains the list of old items affected by the `Action`.
- [NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.NewStartingIndex)%26rd%3Dtrue&view=net-5.0): It contains the index at which the change occurred.
- [OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.Collections.Specialized.NotifyCollectionChangedEventArgs.OldStartingIndex)%26rd%3Dtrue&view=net-5.0): It contains the index at which the `Action` occurred.
+ [Action](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.action?view=net-5.0): It contains the current action. (i.e.) `Add`, `Remove`, `Move`, `Replace`, `Reset`.
+ [NewItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newitems?view=net-5.0): It contains the list of new items involved in the change.
+ [OldItems](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.olditems?view=net-5.0): It contains the list of old items affected by the `Action`.
+ [NewStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.newstartingindex?view=net-5.0): It contains the index at which the change occurred.
+ [OldStartingIndex](https://docs.microsoft.com/en-us/dotnet/api/system.collections.specialized.notifycollectionchangedeventargs.oldstartingindex?view=net-5.0): It contains the index at which the `Action` occurred.
 
 The following methods are associated with `View` which can be used to defer refresh the view:
 
@@ -539,6 +539,8 @@ Refer the below code to bind the command property of Button loaded inside the Gr
 {% endhighlight %}
 
 You can download the source code of binding the SfDataGrid properties sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfGrid_Sample788022149)
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 

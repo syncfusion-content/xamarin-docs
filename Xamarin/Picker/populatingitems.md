@@ -646,3 +646,4 @@ Screen shot for the above code.
 
 ![CustomPickerDroid Image](images/CustomPickerDroid.png)    ![CustomPickerIOS Image](images/CustomPickerIOS.png)
 
+N> You can refer to our [Xamarin Picker](https://www.syncfusion.com/xamarin-ui-controls/xamarin-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Picker example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Picker) to knows the functionalities of each feature.

@@ -54,3 +54,5 @@ CultureInfo.CurrentUICulture = new CultureInfo("fr-FR");
 {% endhighlight %} 
 
 ![Localization support in Xamarin.Forms SfPicker](images/Xamarin.Forms SfPicker.jpg)
+
+N> You can refer to our [Xamarin Picker](https://www.syncfusion.com/xamarin-ui-controls/xamarin-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Picker example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Picker) to knows the functionalities of each feature.

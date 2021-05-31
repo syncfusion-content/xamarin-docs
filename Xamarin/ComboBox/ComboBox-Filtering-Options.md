@@ -796,3 +796,5 @@ Content = layout;
 {% endtabs %}
 
 ![Suggest append image](images/ComboBox-Filtering-Options/suggest-append.png)
+
+N> The deletion of a character is not support in this mode which is a known framework issue.

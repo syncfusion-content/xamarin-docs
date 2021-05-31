@@ -7,9 +7,9 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Sorting in Xamarin DataGrid (SfDataGrid)
+# Sorting in Xamarin DataGrid (SfDataGrid) 
 
-The data grid sorts the data by setting the [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AllowSorting) property to `true`. It allows sorting the data against one or more columns. When sorting is applied, the control automatically rearranges the data to match with the current sort criteria. When `SfDataGrid.AllowSorting` is `true`, you can sort the data simply by tapping the column header. Once sorting is applied, the control shows a sort icon in the respective column header indicating the direction of sorting.
+The [Xamarin forms datagrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) sorts the data by setting the [SfDataGrid.AllowSorting](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AllowSorting) property to `true`. It allows sorting the data against one or more columns. When sorting is applied, the control automatically rearranges the data to match with the current sort criteria. When `SfDataGrid.AllowSorting` is `true`, you can sort the data simply by tapping the column header. Once sorting is applied, the control shows a sort icon in the respective column header indicating the direction of sorting.
 
 To get started quickly with sorting in Xamarin.Forms DataGrid, you can check out this video:
 <style>#XamarinDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
@@ -111,8 +111,8 @@ dataGrid.SortTapAction=SortTapAction.DoubleTap;
 
 The data grid provides the following events for the sorting functionality:
 
- * [SortColumnsChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): This event is raised while sorting the column at execution time before the column gets sorted. It helps to cancel the sorting action by setting the Cancel property of [DataGridSortColumnsChangingEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataGridSortColumnsChangingEventArgs.html).
- * [SortColumnsChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): This event is raised after the column is sorted.
+* [SortColumnsChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataGridSortColumnsChangingEventHandler.html): This event is raised while sorting the column at execution time before the column gets sorted. It helps to cancel the sorting action by setting the Cancel property of [DataGridSortColumnsChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataGridSortColumnsChangingEventArgs.html).
+* [SortColumnsChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.DataGridSortColumnsChangedEventHandler.html): This event is raised after the column is sorted.
 
 These two events are triggered with `DataGridSortColumnsChangingEventArgs` and `DataGridSortColumnsChangedEventArgs` that contains the following properties:
 
@@ -331,6 +331,8 @@ public MainPage()
     this.Content = dataGrid;          
 }
 {% endhighlight %}
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 

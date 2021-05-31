@@ -337,3 +337,5 @@ public MainPage()
 ![DataGrid with localized content](SfDataGrid_images/DataGridLocalization.png)
 
 You can download the sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/DataGridLocalization-65024307).
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

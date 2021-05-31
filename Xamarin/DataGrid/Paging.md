@@ -386,6 +386,8 @@ public class CustomAppearance : AppearanceManager
 3. Deleting is not supported. You can code to delete row in application level. 
 4. Only the navigated pages are exported when `OnDemandPaging’ is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.
 
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
+
 ## See also
 
 [How to have different page size in SfDataPager with SfDataGrid when the device is in horizontal and vertical orientation mode](https://www.syncfusion.com/kb/9299)

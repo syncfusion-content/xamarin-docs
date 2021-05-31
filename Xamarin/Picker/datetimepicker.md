@@ -485,3 +485,5 @@ The following screenshot illustrates the output of the above codes.
 You can download the DateTimePicker sample for reference from the following link.
 
 Sample link: [DateTimePicker](https://github.com/SyncfusionExamples/xamarin-sfpicker-examples/tree/master/Samples/DateTimePickerSample)
+
+N> You can refer to our [Xamarin Picker](https://www.syncfusion.com/xamarin-ui-controls/xamarin-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Picker example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Picker) to knows the functionalities of each feature.

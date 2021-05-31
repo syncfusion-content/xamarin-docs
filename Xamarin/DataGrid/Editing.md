@@ -350,9 +350,9 @@ The SfDataGrid triggers the following events while editing:
 
 The [SfDataGrid.CurrentCellBeginEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event occurs when the CurrentCell enters into edit mode. The [GridCurrentCellBeginEditEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCurrentCellBeginEditEventArgs.html) has the following members which provides information for `SfDataGrid.CurrentCellBeginEdit` event:
 
- * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): When this member set to ‘true’, the event is canceled and the CurrentCell does not enter into the edit mode.
- * [RowColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCurrentCellBeginEditEventArgs.html#Syncfusion_SfDataGrid_XForms_GridCurrentCellBeginEditEventArgs_RowColumnIndex): Gets the current row and column index of the DataGrid.
- * [Column](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCurrentCellBeginEditEventArgs.html#Syncfusion_SfDataGrid_XForms_GridCurrentCellBeginEditEventArgs_Column): Gets the Grid Column of the SfDataGrid.
+ * [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0): When this member set to ‘true’, the event is canceled and the CurrentCell does not enter into the edit mode.
+ * [RowColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.GridCommon.ScrollAxis.RowColumnIndex.html): Gets the current row and column index of the DataGrid.
+ * [Column](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridColumn.html): Gets the Grid Column of the SfDataGrid.
 
 To hook the `SfDataGrid.CurrentCellBeginEdit` event, follow the code example:
 
@@ -372,7 +372,7 @@ private void DataGrid_CurrentCellBeginEdit(object sender, GridCurrentCellBeginEd
 The [CurrentCellEndEdit](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html) event occurs when the CurrentCell exits the edit mode. The [GridCurrentCellEndEditEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCurrentCellEndEditEventArgs.html) has following members which provides information for `SfDataGrid.CurrentCellEndEdit` event:
 
  * [RowColumnIndex](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridCurrentCellEndEditEventArgs.html#Syncfusion_SfDataGrid_XForms_GridCurrentCellEndEditEventArgs_RowColumnIndex): Gets the current row and column index of the DataGrid.
- * [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): When this member set to ‘true’, the event is canceled and the edited value is not committed in the underlying collection.
+ * [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0): When this member set to ‘true’, the event is canceled and the edited value is not committed in the underlying collection.
 
 To hook the `SfDataGrid.CurrentCellEndEdit` event, follow the code example:
 

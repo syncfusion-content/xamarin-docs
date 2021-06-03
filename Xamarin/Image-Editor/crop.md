@@ -194,7 +194,7 @@ After tilt preview, cropping can be performed using the available cropping optio
 
 [How to include custom cropping aspect in toolbar](https://www.syncfusion.com/kb/8854/how-to-include-custom-cropping-aspect-in-toolbar)
 
-[How to avoid crop sluggishness in MasterDetailPage](syncfusion.com/kb/9634/how-to-avoid-crop-sluggishness-in-masterdetailpage)
+[How to avoid crop sluggishness in MasterDetailPage](https://www.syncfusion.com/kb/9634/how-to-avoid-crop-sluggishness-in-masterdetailpage)
 
 [How can we set default cropping in SfImageEditor](https://www.syncfusion.com/kb/9369/how-can-we-set-default-cropping-in-image-editor)
 

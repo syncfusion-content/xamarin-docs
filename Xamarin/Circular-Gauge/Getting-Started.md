@@ -510,4 +510,4 @@ You can find the complete getting started sample from this [`link`](https://gith
 
 [How to create circular gauge with a graphical image as the background](https://www.syncfusion.com/kb/4958/how-to-create-sfcirculargauge-with-a-graphical-image-as-the-background)
 
-[How can you use data binding in gauge with the MVVM pattern](syncfusion.com/kb/4138/how-can-you-use-data-binding-in-gauge-with-the-mvvm-pattern)
+[How can you use data binding in gauge with the MVVM pattern](https://www.syncfusion.com/kb/4138/how-can-you-use-data-binding-in-gauge-with-the-mvvm-pattern)

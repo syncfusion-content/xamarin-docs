@@ -7,7 +7,7 @@ control: UI Kit
 documentation: ug
 ---
 
-## Licensing
+# Licensing in Xamarin UI Kit
 
 Essential UI Kit source code published in GitHub with an MIT license. You can use this UI Kit pages in your application for free without any restrictions. You can find the GitHub link as follows.
 

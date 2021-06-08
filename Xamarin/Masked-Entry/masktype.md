@@ -223,12 +223,12 @@ N> SfMaskedEdit control only supports the above listed regex mask characters.
 
 {% tabs %}
 {% highlight xaml %}
-<syncmaskededit:SfMaskedEdit x:Name="maskedEdit" MaskType="RegEx" Mask="+1(\d{3})\d{5}"/>
+<syncmaskededit:SfMaskedEdit x:Name="maskedEdit" MaskType="RegEx" Mask="+1\(\d{3}\)\d{5}"/>
 {% endhighlight %}
 {% highlight c# %}
 SfMaskedEdit maskedEdit = new SfMaskedEdit();
 maskedEdit.MaskType = MaskType.RegEx;
-maskedEdit.Mask = @"+1(\d{3})\d{5}";
+maskedEdit.Mask = @"+1\(\d{3}\)\d{5}";
 {% endhighlight %}
 {% endtabs %}
 

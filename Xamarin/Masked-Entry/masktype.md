@@ -228,7 +228,7 @@ N> SfMaskedEdit control only supports the above listed regex mask characters.
 {% highlight c# %}
 SfMaskedEdit maskedEdit = new SfMaskedEdit();
 maskedEdit.MaskType = MaskType.RegEx;
-maskedEdit.Mask = @"+1(\d{3})\d{5}";
+maskedEdit.Mask = @"+1\(\d{3}\)\d{5}";
 {% endhighlight %}
 {% endtabs %}
 

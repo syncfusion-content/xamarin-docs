@@ -9,7 +9,7 @@ documentation: ug
 
 This page list the dependencies ( converters, rendereres and NuGet packages) of each XAML page in Essential UI Kit project  
 
-## Forms
+# Page Template Dependencies of Xamarin UI Kit
 
 <table>
 	<tr>

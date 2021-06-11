@@ -1695,9 +1695,9 @@ chart.Series.Add(bubbleSeries);
 
 {% endtabs %}
 
-![Enable ZeroSizeBubbles segment support in Xamarin.Forms](charttypes_images/ShowIndicationForZeroValueTrue.png)
+![Enable zero size bubble segments support in Xamarin.Forms](charttypes_images/ShowIndicationForZeroValueTrue.png)
 
-The following code example and screenshots describes when [`ShowIndicationForZeroValue`] value is false.
+The following code example and screenshots describes when `ShowZeroSizeBubbles` value is false.
 
 {% tabs %} 
 
@@ -1727,7 +1727,7 @@ chart.Series.Add(bubbleSeries);
 
 {% endtabs %}
 
-![Disable ZeroSizeBubbles segment support in Xamarin.Forms](charttypes_images/ShowIndicationForZeroValueFalse.png)
+![Disable zero size bubble segments support in Xamarin.Forms](charttypes_images/ShowIndicationForZeroValueFalse.png)
 
 N> You can also explore our [Xamarin Bubble Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/BubbleChart) to knows how to render and configure the bubble type charts
 

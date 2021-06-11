@@ -2,20 +2,28 @@
 
 layout: post
 title: Syncfusion SfBarcode control Getting Started for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion SfBarcode control for Xamarin.Forms platform
+description: This section describes about quick tour to initial users on Syncfusion Barcode control for Xamarin.Forms platform
 platform: xamarin
 control: SfBarcode
 documentation: ug
 
 ---
 
-# Getting Started 
+# Getting Started with SfBarCode
 
 This section explains how to configure a Barcode for Xamarin.Forms application. The following screenshot illustrates the final output of barcode on iOS, Android and Windows Phone devices.
 
 ![Overview of SfBarcode](Getting-Started_images/getting-started/getting-started.png)
 
 To get started with Essential Barcode, go through the following steps.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfBarcode reference
 

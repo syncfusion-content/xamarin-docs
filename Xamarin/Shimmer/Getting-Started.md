@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Shimmer
-description: How to add shimmer reference, launch an application on each platform with SfShimmer, initialize and load shimmer content.
+title: Getting Started with Xamarin Shimmer control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Shimmer (SfShimmer) control, its elements and more.
 platform: xamarin
 control: SfShimmer
 documentation: ug
@@ -10,6 +10,14 @@ documentation: ug
 # Getting Started with Xamarin Shimmer (SfShimmer)
 
 This section explains the steps required to configure the shimmer.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfShimmer reference
 
@@ -197,6 +205,8 @@ By disabling the [`IsActive`](https://help.syncfusion.com/cr/xamarin/Syncfusion.
 {% endhighlight %}
 
 {% endtabs %}
+
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-started-Xamarin-Shimmer)
 
 ## See also
 

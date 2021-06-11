@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Working with Built-In Toolbar in Xamarin Pdf Viewer | Syncfusion
-description: The PDF Viewer Xamarin.Forms allows the users to perform almost all operations in PDF Viewer using the built-in toolbar.
+title: Working with Built-In Toolbar in Xamarin Pdf Viewer | Syncfusion
+description: Learn here all about Working with Built-In Toolbar support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Working with built-in toolbar
+# Working with Built-In Toolbar in Xamarin Pdf Viewer (SfPdfViewer)
 
 The SfPdfViewer has a built-in toolbar that has provisions to perform majority of the operations in the PDF Viewer and that can be shown or hidden. You can hide the built-in toolbar and develop your own toolbar.
 
@@ -503,3 +503,5 @@ Similarly, the other items can be hidden by mentioning the appropriate key names
 </tr>
 
 </table>
+
+N>You can refer to our [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

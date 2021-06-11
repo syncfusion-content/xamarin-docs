@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Xamarin.Forms PullToRefresh MVVM| SfPullToRefresh| Xamarin| Syncfusion
-description: Describes about how to use Syncfusion Xamarin.Forms PullToRefresh in MVVM using commands and how to refresh from view model.
+title: Working with MVVM in Xamarin Pull To Refresh control | Syncfusion
+description: Learn here all about Working with MVVM support in Syncfusion Xamarin Pull To Refresh (SfPullToRefresh) control and more.
 platform: xamarin
 control: SfPullToRefresh 
 documentation: ug
 ---
 
-## How to refresh the Xamarin.Forms PullToRefresh from ViewModel?
+# How to refresh the Xamarin.Forms PullToRefresh from ViewModel?
 
 `SfPullToRefresh` is fully MVVM compatible and can be refreshed by binding a property in the view model to the [SfPullToRefresh.IsRefreshing](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html#Syncfusion_SfPullToRefresh_XForms_SfPullToRefresh_IsRefreshing) property.
 `SfPullToRefresh` also provides support for [SfPullToRefresh.RefreshCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html#Syncfusion_SfPullToRefresh_XForms_SfPullToRefresh_RefreshCommand) that will be executed when the pulling is completed and the pointer is released.  You can also pass a desired object as parameter to the `SfPullToRefresh.RefreshCommand` using the [SfPullToRefresh.RefreshCommandParameter](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPullToRefresh.XForms.SfPullToRefresh.html#Syncfusion_SfPullToRefresh_XForms_SfPullToRefresh_RefreshCommandParameter).

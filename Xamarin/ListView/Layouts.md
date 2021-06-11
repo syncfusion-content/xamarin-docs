@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layouts in Xamarin.Forms ListView | Syncfusion
-description: Describes about the different layouts such as Linear and GridLayout, its functionalities in SfListView.
+title: Layouts in Xamarin ListView control | Syncfusion
+description: Learn here all about Layouts support in Syncfusion Xamarin ListView (SfListView) control, its elements and more.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -127,7 +127,9 @@ public partial class GridLayoutPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample code [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SpanCount-1456879973).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/change-span-count-based-on-screen-size-listview-xamarin).
+
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to know how to render set of data items with Xamarin.Forms views or custom templates.
 
 ## See also
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of Syncfusion Xamarin.Forms Rich Text Editor
-description: This page explains how to customize the appearance of Syncfusion Rich Text Editor for Xamarin.Forms platform.
+title: Customization in Xamarin Rich Text Editor control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Xamarin Rich Text Editor (SfRichTextEditor) control and more.
 platform: xamarin
 control: Rich Text Editor
 documentation: ug
 ---
 
-# Customization of Rich Text Editor
+# Customization in Xamarin Rich Text Editor (SfRichTextEditor)
 
 The Xamarin Rich Text Editor control provides support for customizing the toolbar items and toolbar appearance.
 
@@ -171,3 +171,112 @@ this.Content = richtexteditor;
 {% endhighlight %}
 
 {% endtabs %}
+
+## Custom Toolbar
+
+The Rich Text Editor provides a custom toolbar support, which allows the users to add custom toolbar items to the toolbar in the editor. The following code example explains how to set custom toolbar in Rich Text Editor.
+
+{% tabs %} 
+
+{% highlight C# %} 
+SfRichTextEditor richTextEditor = new SfRichTextEditor();
+richTextEditor.PlaceHolder = "Type something";
+ObservableCollection<object> collection = new ObservableCollection<object>();
+collection.Add(ToolbarOptions.Bold);
+collection.Add(ToolbarOptions.Italic);
+collection.Add(ToolbarOptions.Underline);
+collection.Add(ToolbarOptions.NumberList);
+collection.Add(ToolbarOptions.BulletList);
+Button emojiButton = new Button();
+emojiButton.BackgroundColor = Color.Transparent;
+emojiButton.HeightRequest = 50;
+emojiButton.WidthRequest = 50;
+emojiButton.Text = "\U0001F642";
+collection.Add(emojiButton);
+richTextEditor.ToolbarItems = collection;
+this.Content = richTextEditor;
+{% endhighlight %}
+
+{% endtabs %}
+
+![Rich Text Editor custom toolbar support](SfRichTextEditor_Images/CustomToolbar.png)
+
+N> The custom toolbar will not support the sub toolbar in the Xamarin RichTextEditor iOS because the control selection will be lost when clicking the elements in the sub toolbar.
+
+### Insert new item to the custom toolbar collection
+
+The following code example explains how to insert a new item to the existing custom toolbar in the Rich Text Editor.
+
+{% highlight C# %} 
+
+SfRichTextEditor richTextEditor = new SfRichTextEditor();
+richTextEditor.PlaceHolder = "Type something";
+ObservableCollection<object> collection = new ObservableCollection<object>();
+richTextEditor.ToolbarItems = collection;
+this.Content = richTextEditor;
+
+//Insert a new item to the custom toolbar collection.
+Button emojiButton = new Button();
+emojiButton.BackgroundColor = Color.Transparent;
+emojiButton.HeightRequest = 50;
+emojiButton.WidthRequest = 50;
+emojiButton.Text = "\U0001F642";
+collection.Add(ToolbarOptions.Bold);
+collection.Add(ToolbarOptions.Italic);
+collection.Add(emojiButton);
+collection.Add(ToolbarOptions.Underline);
+{% endhighlight %}
+
+### Remove an item from the custom toolbar collection
+
+The following code example explains how to remove an existing item from the custom toolbar in the Rich Text Editor.
+
+{% highlight C# %} 
+
+SfRichTextEditor richTextEditor = new SfRichTextEditor();
+richTextEditor.PlaceHolder = "Type something";
+ObservableCollection<object> collection = new ObservableCollection<object>();
+collection.Add(ToolbarOptions.Bold);
+collection.Add(ToolbarOptions.Italic);
+collection.Add(ToolbarOptions.Underline);
+collection.Add(ToolbarOptions.NumberList);
+collection.Add(ToolbarOptions.BulletList);
+Button emojiButton = new Button();
+emojiButton.BackgroundColor = Color.Transparent;
+emojiButton.HeightRequest = 50;
+emojiButton.WidthRequest = 50;
+emojiButton.Text = "\U0001F642";
+collection.Add(emojiButton);
+richTextEditor.ToolbarItems = collection;
+this.Content = richTextEditor;
+
+//Remove an item from the custom toolbar collection.
+collection.RemoveAt(0);
+collection.Remove(emojiButton);
+
+{% endhighlight %}
+
+### Reorder the custom toolbar collection
+
+The following code example explains how to reorder the custom toolbar in the Rich Text Editor.
+
+{% highlight C# %} 
+
+SfRichTextEditor richTextEditor = new SfRichTextEditor();
+richTextEditor.PlaceHolder = "Type something";
+ObservableCollection<object> collection = new ObservableCollection<object>();
+collection.Add(ToolbarOptions.Italic);
+collection.Add(ToolbarOptions.Underline);
+collection.Add(ToolbarOptions.Bold);
+Button emojiButton = new Button();
+emojiButton.BackgroundColor = Color.Transparent;
+emojiButton.HeightRequest = 50;
+emojiButton.WidthRequest = 50;
+emojiButton.Text = "\U0001F642";
+collection.Add(emojiButton);
+collection.Add(ToolbarOptions.NumberList);
+collection.Add(ToolbarOptions.BulletList);
+richTextEditor.ToolbarItems = collection;
+this.Content = richTextEditor;
+
+{% endhighlight %}

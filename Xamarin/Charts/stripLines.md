@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion.Xamarin.Forms Chart Striplines
-description: Learn how to add strip lines, strip line recurrence, segmented strip line of Syncfusion.Xamarin.Forms Chart. 
+title: StripLines in Xamarin Charts control | Syncfusion
+description: Learn here all about StripLines support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Strip Lines in Xamarin Charts (SfChart)
+# StripLines in Xamarin Charts (SfChart)
 
 ## What is strip line?
 
@@ -504,3 +504,5 @@ numericalAxis.StripLines.Add(stripLine);
 {% endtabs %}
 
 ![Segmented support for DateTime strip lines in Xamarin.Forms Chart](striplines_images/stripline_img6.png)
+
+N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Charts example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.  

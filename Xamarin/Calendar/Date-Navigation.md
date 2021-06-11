@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Date Navigation and Gestures | SfCalendar | Xamarin.Forms | Syncfusion
-description: Learn the complete navigation and gestures support in Syncfusion Xamarin calendar (SfCalendar) control and more details.                                                           
+title: Date Navigation in Xamarin Calendar control | Syncfusion
+description: Learn here all about Date Navigation support in Syncfusion Xamarin Calendar (SfCalendar) control and more.
 platform: Xamarin
 control: Calendar
 documentation: ug
 ---
 
-# Date Navigation in the Xamarin Calendar (SfCalendar)                  
+# Date Navigation in Xamarin Calendar (SfCalendar)
 
 The `SfCalendar` control provides the option to navigate through items either programmatically or by using gestures.
 

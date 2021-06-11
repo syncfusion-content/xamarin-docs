@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging | SfDataGrid | Xamarin | Syncfusion
-description: Enable paging and use its properties. Usage and advantages of on demand paging. Options to customize the appreance of the SfDataPager.
+title: Paging in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Paging support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -385,6 +385,8 @@ public class CustomAppearance : AppearanceManager
 2. Data processing operations (Sorting, Grouping) are done only in the current page. 
 3. Deleting is not supported. You can code to delete row in application level. 
 4. Only the navigated pages are exported when `OnDemandPaging’ is enabled, if the navigated page cache is cleared then the corresponding page will not be exported.
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 

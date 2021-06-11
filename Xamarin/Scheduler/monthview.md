@@ -1,7 +1,7 @@
 ---
 layout: post   
-title: Month View | SfSchedule | Xamarin | Syncfusion   
-description: This section describes how to set the month view in sfschdule and also how to customize the month view appearance.
+title: Month View in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Month View support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin   
 control: SfSchedule   
 documentation: ug   
@@ -1279,11 +1279,13 @@ Following steps will explain how to configure the custom fonts.
 * Then, use the Custom Font name as FontFamily.
 
 >**NOTE**
- No need to mention .ttf when set the Custom Font in iOS.
+ No need to mention .ttf when setting the Custom Font in iOS.
 
 ### Custom Font Setting in Xamarin.Forms (UWP)
 * Add your custom Font (e.g. Lobster-Regular.ttf) to the Assets folder of the Xamarin.Forms (UWP) project.
 * Then, use the Custom Font name as FontFamily. When Setting custom font in UWP use the format (FontFamily = ” Assets/Lobster-Regular.ttf#Lobster”).
+
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.
 
 ## See also
 

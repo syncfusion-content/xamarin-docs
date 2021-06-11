@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MVVM | TreeView for Xamarin.Forms | Syncfusion
-description: This topic describes about how to use Syncfusion Xamarin.Forms SfTreeView with Commands, Event to command behavior and different cases of MVVM.
+title: MVVM in Xamarin TreeView control | Syncfusion
+description: Learn here all about MVVM support in Syncfusion Xamarin TreeView (SfTreeView) control, its elements and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -133,14 +133,15 @@ public class CountriesViewModel
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Selection148873057).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/binding-selected-items-treeview-xamarin).
+
 ![Xamarin Forms TreeView with selection](TreeView_images/TreeView_Selection.png)
 
 ## Commands
 
 ### Tap command
 
-The [TapCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_TapCommand) will be triggered whenever tapping the item and passing the [ItemTappedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.ItemTappedEventArgs.html) as parameter.
+The [TapCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_TapCommand) will be triggered whenever tapping the item and passing the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html) as command parameter.
 
 {% tabs %}
 {% highlight c# %}
@@ -172,7 +173,7 @@ public class CommandViewModel
 
 ### Hold command
 
-The [HoldCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_HoldCommand) will be triggered whenever an item is long pressed and passing the [ItemHoldingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.ItemHoldingEventArgs.html) as parameter.
+The [HoldCommand](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_HoldCommand) will be triggered whenever an item is long pressed and passing the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html) as command parameter.
  
 {% tabs %}
 {% highlight c# %}
@@ -269,7 +270,7 @@ public class CommandViewModel
 
 ### Collapse command
 
-The `CollapseCommand` will be triggered while collapsing the node and passing the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html) as command parameter. TreeView collapses the node based on the return value of `CanExecute` method implementation of CollapseCommand. If you return false, then collapse action will be canceled. `Execute` method implementation of `CollapseCommand` will get called after collapsing of node.
+The `CollapseCommand` will be triggered while collapsing the node and passing the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html) as command parameter. TreeView collapses the node based on the return value of `CanExecute` method implementation of CollapseCommand. If you return false, then collapse action will be canceled. `Execute` method implementation of `CollapseCommand` will be called after the node has collapsed.
 
 {% tabs %}
 {% highlight xaml %}
@@ -401,9 +402,9 @@ public class CountriesViewModel : INotifyPropertyChanged
 {% endhighlight %}
 {% endtabs %}
 
-You can download the example sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/EventToCommand839299289.zip).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/event-to-command-treeview-xamarin).
 
-For more information regarding the event to command behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
+For more information regarding the EventToCommand behavior in Xamarin.Forms, you can refer [this](https://developer.xamarin.com/samples/xamarin-forms/Behaviors/EventToCommandBehavior/) link.
 
 ## Checkbox items binding in MVVM
 
@@ -461,7 +462,9 @@ public class ViewModel
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source of this demo from [here](https://github.com/SyncfusionExamples/checkbox_bound_mode). To know more about usage of checkbox, you can refer the documentation from [here](https://help.syncfusion.com/xamarin/sftreeview/checkbox).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/checkbox_bound_mode). 
+
+To know more about usage of checkbox, you can refer the documentation from [here](https://help.syncfusion.com/xamarin/sftreeview/checkbox).
 
 ## See also
 

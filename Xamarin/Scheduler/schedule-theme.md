@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Add theming support in syncfusion schedule control
-description: Learn how to add the theme.
+title: Theming in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Theming support in Syncfusion Xamarin Scheduler (SfSchedule) control, its elements and more.
 platform: Xamarin
 control: SfSchedule
 documentation: ug
 ---
 
-# Theming
+# Theming in Xamarin Scheduler (SfSchedule)
 
 Theming is a set of resources which are used to provide the consistency look for schedule.
 You can modify the default appearance of schedule using this support. By default schedule have default theme resources and it’s located in `Syncfusion.Xamarin.Core` assembly. You need to merge them in your application’s resource to apply the theme.
@@ -177,3 +177,5 @@ Day view
 
 You can download the entire source code of this demo for Xamarin.Forms from
 here [ScheduleTheme](https://github.com/SyncfusionExamples/xamarin-schedule-theming).
+
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.

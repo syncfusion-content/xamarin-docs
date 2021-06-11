@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  ScrollHead in PDF Viewer Xamarin.Forms | Syncfusion
-description: Working with ScrollHead
+title: Working with ScrollHead in Xamarin Pdf Viewer control | Syncfusion
+description: Learn here all about Working with ScrollHead support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Working with ScrollHead
+# Working with ScrollHead in Xamarin Pdf Viewer (SfPdfViewer)
 
-The scroll head in the PDF Viewer allows users to easily scroll through and navigate to destination page in the PDF document. ScrollHead always appears on the right side of PDF Viewer.
+The scroll head in the [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows users to easily scroll through and navigate to destination page in the PDF document. ScrollHead always appears on the right side of PDF Viewer.
 
 ## Enabling and disabling ScrollHead
 
@@ -32,7 +32,7 @@ By setting the `EnableScrollHead` property of the PdfViewerControl instance to f
 {% tabs %}
 {% highlight xaml %}
 
-<pdfviewer:SfPdfViewer x:Name="pdfViewerControl" EnableScrollHead="False"/>               
+<pdfviewer:SfPdfViewer x:Name="pdfViewerControl" EnableScrollHead="False"/>
 
 {% endhighlight %}
 {% endtabs %}
@@ -41,7 +41,7 @@ By setting the `EnableScrollHead` property of the PdfViewerControl instance to f
 {% highlight c# %}
 
 //Disables the scroll head
-pdfViewerControl.EnableScrollHead = false;             
+pdfViewerControl.EnableScrollHead = false;
 
 {% endhighlight %}
 {% endtabs %}
@@ -49,3 +49,5 @@ pdfViewerControl.EnableScrollHead = false;
 ## Navigate to a desired page using ScrollHead
 
 PDF Viewer allows users to navigate to a desired destination page using ScrollHead. On tapping the ScrollHead of PDF Viewer, a page navigation pop-up will appear and users can navigate to the destination page by entering a valid page number.
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

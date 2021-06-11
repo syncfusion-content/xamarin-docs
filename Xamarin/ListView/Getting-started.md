@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | SfListView | Xamarin | Syncfusion
-description: Describes about quick overview for getting started with the ListView in Xamarin.Forms, binding data, layouts, sorting, filtering and much more.
+title: Getting Started with Xamarin ListView control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin ListView (SfListView) control, its elements and more.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -13,13 +13,13 @@ This section provides a quick overview for getting started with the SfListView f
 
 ## Assembly Deployment
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib installation folder.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
 Refer [control dependencies](https://help.syncfusion.com/xamarin/introduction/control-dependencies#sflistview) section to get the list of assemblies or NuGet package needs to be added as reference to use the SfListView control in any application.
 
-N> Assemblies can be found in an unzipped package location in Mac.
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfListView reference
 
@@ -495,7 +495,7 @@ listView.LayoutManager = new GridLayout() { SpanCount = 3 };
 
 ## DataSource
 
-The [DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html) gets the raw data and processes data operations such as sorting, filtering, and grouping in SfListView. The data source of the ListView is set using the `ItemsSource` attribute.
+The [DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.DataSource.html) gets the raw data and processes data operations such as sorting, filtering, and grouping in SfListView. The data source of the ListView is set by using the `ItemsSource` attribute.
 
 {% tabs %}
 {% highlight xaml %}
@@ -507,16 +507,16 @@ The [DataSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.DataSource.Da
              xmlns:local="clr-namespace:GettingStarted;assembly=GettingStarted"
              x:Class="GettingStarted.MainPage">             
              
-  <syncfusion:SfListView x:Name="listView"  ItemsSource="{Binding BookInfo}" >
+  <syncfusion:SfListView x:Name="listView"  ItemsSource="{Binding DataSource.DisplayItems}" >
   </syncfusion:SfListView>
 </ContentPage>
 {% endhighlight %}
 {% highlight c# %}
  SfListView listView = new SfListView();
-    DataSource dataSource = new DataSource();
-    dataSource.Source = ViewModel.BookInfo;
-	listView.DataSource = dataSource;
-    listView.DataSource.Refresh();
+ DataSource dataSource = new DataSource();
+ dataSource.Source = ViewModel.BookInfo;
+ listView.DataSource = dataSource;
+ listView.DataSource.Refresh();
 {% endhighlight %}
 {% endtabs %}
 
@@ -745,6 +745,8 @@ listView.FooterTemplate = new DataTemplate(() =>
 });
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to know how to render set of data items with Xamarin.Forms views or custom templates.
 
 ## See also
 

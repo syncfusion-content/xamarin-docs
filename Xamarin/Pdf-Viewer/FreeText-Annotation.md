@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  Freetext annotations in PDF Viewer Xamarin.Forms | Syncfusion
-description: PDF Viewer Xamarin.Forms allows user to add Freetext annotation and provides options to edit or remove an existing Freetext annotation in the PDF file.
+title: Free text annotations in Xamarin Pdf Viewer control | Syncfusion
+description: Learn here all about Free text annotations support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Working with free text annotations
+# Free text annotations in Xamarin Pdf Viewer (SfPdfViewer)
 
-PDF viewer allows you to include free text annotations in a PDF document and provides options to modify or remove the existing ones.
+[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to include free text annotations in a PDF document and provides options to modify or remove the existing ones.
 
 ## Adding free text annotations
 
@@ -365,3 +365,25 @@ pdfViewerControl.AnnotationSettings.FreeText.IsLocked = false;
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to get and set the name of the annotations?
+
+The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API.
+
+The following code sample explains modifying the name of the annotation in the [FreeTextAnnotationAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_FreeTextAnnotationAdded) event. 
+
+{% tabs %}
+{% highlight c# %}
+
+private void PdfViewerControl_ FreeTextAnnotationAdded (object sender, FreeTextAnnotationAddedEventArgs args)
+{
+//Sets the name for the annotation.
+(sender as FreeTextAnnotation).Name = "FreeText1";           
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [FreeTextAnnotationAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_FreeTextAnnotationAdded) event. But this can be done in all other events as well. 
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

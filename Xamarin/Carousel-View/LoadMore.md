@@ -1,13 +1,13 @@
 ---
 layout : post
-title : LoadMore in Syncfusion Carousel control in Xamarin.Forms.
-description : Learn how to set the LoadMore in Carousel for Xamarin.Forms.
+title: Load More in Xamarin Carousel View control | Syncfusion
+description: Learn here all about Load More support in Syncfusion Xamarin Carousel View (SfCarousel) control and more.
 platform : Xamarin
 control : Carousel
 documentation : ug
 ---
 
-# LoadMore
+# Load More in Xamarin Carousel View (SfCarousel)
 
 Virtualization can be achieved by using the Load more concept. This support is used to handle the numerous items in the carousel control. A particular items are maintained in the view port based on the `LoadMoreItemsCount` property. The LoadMore view is added after the last item in the collection of carousel view. When tapping the LoadMore view, the next set of items in the collection can be added to the carousel.
 
@@ -422,7 +422,7 @@ namespace CarouselSample
 
 ![Load more](images/LoadMore.png)
 
-You can find the complete Load More sample from this [link.](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LoadMore1567166256.zip)
+You can find the complete Load More sample from this [link.](https://github.com/SyncfusionExamples/load-more-carousel)
 
 ## LoadMore method
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in Syncfusion ListView
-description: Describes about the grouping, goup header and its functionalities like custom comparer, multi grouping in SfListView.
+title: Grouping in Xamarin ListView control | Syncfusion
+description: Learn here all about Grouping support in Syncfusion Xamarin ListView (SfListView) control, its elements and more.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -245,7 +245,9 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 
    return grid;
  });
+ {% endhighlight %}
 
+{% highlight c# %}
  public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
  {
     int result = 0;
@@ -413,7 +415,9 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
 
   return stack;
 });
+{% endhighlight %}
 
+{% highlight c# %}
 public class GroupHeaderConverter : IValueConverter
 {
   public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
@@ -569,7 +573,7 @@ The [SfListView.GroupExpanding](https://help.syncfusion.com/cr/xamarin/Syncfusio
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html) of the `GroupExpanding` event provides the information about the expanding group and it has the following members:
 
 [Groups](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html#Syncfusion_ListView_XForms_GroupExpandCollapseChangingEventArgs_Groups): Gets a list of groups being expanded.
-[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Decides whether to cancel the group expansion or not.
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev14IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0): Decides whether to cancel the group expansion or not.
 
 The `GroupExpanding` event used for the following use case.
 
@@ -612,7 +616,7 @@ The [SfListView.GroupCollapsing](https://help.syncfusion.com/cr/xamarin/Syncfusi
 The [GroupExpandCollapseChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html) of the `GroupCollapsing` event provides the information about the collapsing group and it contains the following members:
 
 [Groups](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.GroupExpandCollapseChangingEventArgs.html#Syncfusion_ListView_XForms_GroupExpandCollapseChangingEventArgs_Groups): Gets a list of groups being collapsed.
-[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true): Decides whether to cancel the group collapsing or not.
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev14IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0): Decides whether to cancel the group collapsing or not.
 
 You can cancel the group is being collapsed by setting the `GroupExpandCollapseChangingEventArgs.Cancel` to `true`.
 
@@ -650,7 +654,7 @@ To stick the group header to view, enable the property [SfListView.IsStickyGroup
 
 I> If sticky group header is enabled and `AutoFitMode` is `Height`, the panning experience will not be smooth or item's layout will not work as expected. To make the panning experience smooth, set the same size for all group header items by handling the `QueryItemSize` event.
 
-N> When the `IsStickyGroupHeader` is set to `true`, the [IsStickyHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_IsStickyHeader) property will be changed to `true` because the header item can not be scrolled. When the `IsStickyHeader` is set to `false`, if `IsStickyGroupHeader` is ``true` then it will be changed to `false` because the group header item cannot be sticky.
+N> When the `IsStickyGroupHeader` is set to `true`, the [IsStickyHeader](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_IsStickyHeader) property will be changed to `true` because the header item can not be scrolled. When the `IsStickyHeader` is set to `false`, if `IsStickyGroupHeader` is `true` then it will be changed to `false` because the group header item cannot be sticky.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1054,7 +1058,9 @@ listView.GroupHeaderTemplate = new DataTemplate(() =>
    grid.Children.Add(stack);
    return grid;
  });
+{% endhighlight %}
 
+{% highlight c# %}
  public class SelectionBoolToBackgroundColorConverter : IValueConverter 
  { 
     public object Convert(object value, Type targetType, object parameter, CultureInfo culture) 
@@ -1074,6 +1080,8 @@ The following screenshot shows the output when group header appearance changed b
 Download entire source code from GitHub [here](https://github.com/SyncfusionExamples/Customizing-grou-header-appearance-on-expanding-items-xamarin.forms-listview)
 
 ![Group header appearance while expand listview](SfListView_images/SfListView-GroupHeaderAppearence.png)
+
+N> The binding context for `GroupHeaderTemplate` is `GroupResult`. 
 
 ### Providing Indentation for GroupHeader items
 
@@ -1239,6 +1247,8 @@ The following screenshot shows the output when item added at specified index.
 Download entire source code from GitHub [here](https://github.com/SyncfusionExamples/Add-item-at-specific-index-in-group-in-xamarin.forms-listview).
 
 ![Add item at specific index in a group](SfListView_images/SfListView-AddItem.png)
+
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to know how to render set of data items with Xamarin.Forms views or custom templates.
 
 ## See also
 

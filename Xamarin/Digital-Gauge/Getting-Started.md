@@ -1,14 +1,22 @@
 ---
 layout: post
-title: Getting Started with Syncfusion DigitalGauge control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion digitalGauge control for Xamarin.Forms platform also describes how to set value for digitalGauge control
+title: Getting Started with Xamarin Digital Gauge control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Digital Gauge (SfDigitalGauge) control, its elements and more.
 platform: Xamarin
 control: DigitalGauge
 documentation: ug
 ---
-# Getting Started with SfDigitalGauge
+# Getting Started with Xamarin Digital Gauge (SfDigitalGauge)
 
 This section explains the steps required to configure the [`SfDigitalGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfDigitalGauge.html) and add basic elements to it using various APIs.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfDigitalGauge reference
 
@@ -314,7 +322,7 @@ The following screenshot illustrates the result of the previous codes.
 ![Xamarin digital gauge getting started](Getting-Started_images/Getting_Started_img1.png)
 
 
-You can find the complete getting started sample from this [`link`](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge-GettingStarted-72347847).
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Digital-Gauge).
 
 ## See also
 

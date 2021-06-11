@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TreeView Checkbox | TreeNode Checkbox | Xamarin.Forms | Syncfusion
-description: The Xamarin.Forms TreeView provides support for loading Checkbox in each node and allows users to check/uncheck the corresponding node.
+title: Checkbox in Xamarin TreeView control | Syncfusion
+description: Learn here all about Checkbox support in Syncfusion Xamarin TreeView (SfTreeView) control, its elements and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -171,9 +171,9 @@ public class FileManagerViewModel
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms BoundMode TreeView with CheckBox](TreeView_images/BoundMode_CheckBox.png)
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/checkbox_bound_mode)
 
-You can download the entire source of this demo from [here](https://github.com/SyncfusionExamples/checkbox_bound_mode)
+![Xamarin Forms BoundMode TreeView with CheckBox](TreeView_images/BoundMode_CheckBox.png)
 
 ## Working with Checkbox in UnboundMode
 
@@ -296,9 +296,9 @@ You can directly set the checkbox state by setting the [TreeViewNode.IsChecked](
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin Forms UnboundMode TreeView with CheckBox](TreeView_images/UnboundMode_CheckBox.png)
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/checkbox_unbound_mode)
 
-You can download the entire source of this demo [here](https://github.com/SyncfusionExamples/checkbox_unbound_mode)
+![Xamarin Forms UnboundMode TreeView with CheckBox](TreeView_images/UnboundMode_CheckBox.png)
 
 ## CheckBox State
 
@@ -354,7 +354,7 @@ treeView.GetCheckedNodes();
 
 ### NodeChecked event
 
-The [NodeChecked](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html) event raised when checking and unchecking the checkbox at run time. The [NodeCheckedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.NodeCheckedEventArgs.html) has the following members, which provide information for the `NodeChecked` event.
+The [NodeChecked](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_NodeChecked) event raised when checking and unchecking the checkbox at run time. The [NodeCheckedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.NodeCheckedEventArgs.html) has the following members, which provide information for the `NodeChecked` event.
 
 * `Node`: Gets the `TreeViewNode` and data associated with the checked item as its arguments.
 

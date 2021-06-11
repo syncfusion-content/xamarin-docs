@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Syncfusion.Xamarin.Forms Chart Data Point Selection
-description: How to select the data point in Essential Xamarin.Forms Chart
+title: Selection in Xamarin Charts control | Syncfusion
+description: Learn here all about Selection support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug
 ---
 
-# Selection
+# Selection in Xamarin Charts (SfChart)
 
 [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html) supports selection that enables you to select a segment in a series or series itself.
 
@@ -179,7 +179,7 @@ The [`SelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfCha
 
 **OnSelectionChanging**
 
-The [`OnSelectionChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html#Syncfusion_SfChart_XForms_ChartSelectionBehavior_OnSelectionChanging_Syncfusion_SfChart_XForms_ChartSelectionChangingEventArgs_) method of chart selection behavior is used to perform the operations, before the data point is selected, by extending the [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html) class. This method argument contains the following information:
+The [`OnSelectionChanging`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html#Syncfusion_SfChart_XForms_ChartSelectionBehavior_OnSelectionChanging_Syncfusion_SfChart_XForms_ChartSelectionChangingEventArgs_) method of chart selection behavior is used to perform the operations, before the data point is selected, by extending the [`ChartSelectionBehavior`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html) class and add to the ChartBehaviors collection property of [`SfChart`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.SfChart.html#). This method argument contains the following information:
 
 * [`SelectedSeries`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionEventArgs.html#Syncfusion_SfChart_XForms_ChartSelectionEventArgs_SelectedSeries) - Gets the series of selected data point.
 * [`SelectedDataPointIndex`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionEventArgs.html#Syncfusion_SfChart_XForms_ChartSelectionEventArgs_SelectedDataPointIndex) - Gets the selected data point index.
@@ -202,6 +202,34 @@ public class ChartSelectionBehaviorExt : ChartSelectionBehavior
 
 {% endhighlight %}
 
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+	<chart:SfChart.ChartBehaviors>
+            <local:ChartSelectionBehaviorExt/>
+        </chart:SfChart.ChartBehaviors>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+ChartSelectionBehaviorExt selectionBehavior = new ChartSelectionBehaviorExt();
+
+chart.ChartBehaviors.Add(selectionBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
 **OnSelectionChanged**
 
 The [`OnSelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html#Syncfusion_SfChart_XForms_ChartSelectionBehavior_OnSelectionChanged_Syncfusion_SfChart_XForms_ChartSelectionEventArgs_) method of the[`ChartSelectionBehavior`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.ChartSelectionBehavior.html) is used to perform the operations after a data point is selected. This method argument contains the following information:
@@ -214,15 +242,44 @@ The [`OnSelectionChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfC
 {% highlight c# %}
 
 public class ChartSelectionBehaviorExt : ChartSelectionBehavior
-{
-        
-        protected override void OnSelectionChanged(ChartSelectionEventArgs args)
-        {
-            var selectedSeries = args.SelectedSeries;
-            var dataPointIndex = args.SelectedDataPointIndex;
-            var previousSelectedIndex = args.PreviousSelectedIndex;
+{    
+    protected override void OnSelectionChanged(ChartSelectionEventArgs args)
+    {
+        var selectedSeries = args.SelectedSeries;
+        var dataPointIndex = args.SelectedDataPointIndex;
+        var previousSelectedIndex = args.PreviousSelectedIndex;
 	    var previousSelectedSeries = args.PreviousSelectedSeries;	
-        }
+    }
 }
 
 {% endhighlight %}
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart>
+...
+
+	<chart:SfChart.ChartBehaviors>
+       <local:ChartSelectionBehaviorExt/>
+    </chart:SfChart.ChartBehaviors>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+ChartSelectionBehaviorExt selectionBehavior = new ChartSelectionBehaviorExt();
+
+chart.ChartBehaviors.Add(selectionBehavior);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Charts example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.  

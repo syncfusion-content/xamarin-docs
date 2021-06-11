@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization in Syncfusion TreeMap control for Xamarin.Forms
-description: This section explains the steps required to customize the data in Syncfusion TreeMap control for Xamarin.Forms
+title: Customization in Xamarin TreeMap control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Xamarin TreeMap (SfTreeMap) control and more.
 platform: xamarin
 control: TreeMap
 documentation: ug
 ---
 
-# Customization
+# Customization in Xamarin TreeMap (SfTreeMap)
 
 The TreeMap control supports color customization to determine the exact combination of colors for the tree nodes displayed and provides tooltip support to display additional information of TreeMap data.
 

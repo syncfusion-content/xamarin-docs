@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Syncfusion.Xamarin.Forms Chart Axis
-description: This section explains the different types of axis in chart and how to customize the grid lines, tick lines, labels and title of the chart axis.
+title: Axis in Xamarin Charts control | Syncfusion
+description: Learn here all about Axis support in Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -2007,6 +2007,8 @@ The [`LabelClicked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.X
 
 * [`LabelContent`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LabelClickedEventArgs.html#Syncfusion_SfChart_XForms_LabelClickedEventArgs_LabelContent) - Used to get the text of label.
 * [`Position`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfChart.XForms.LabelClickedEventArgs.html#Syncfusion_SfChart_XForms_LabelClickedEventArgs_Position) - Used to get the position of label.
+
+N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Charts example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.  
 
 ## See also
 

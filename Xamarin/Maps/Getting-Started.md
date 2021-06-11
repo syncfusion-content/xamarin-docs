@@ -1,15 +1,23 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Maps control for Xamarin.Forms
-description: A quick tour to initial users for getting started with Syncfusion Maps control for Xamarin.Forms platform
+title: Getting Started with Xamarin Maps control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps 
 documentation: ug
 ---
 
-# Getting Started with SfMaps
+# Getting Started with Xamarin Maps (SfMaps)
 
 This section explains the steps required to configure the maps control and customize its elements.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfMaps reference
 
@@ -497,7 +505,7 @@ The following screenshot illustrates the result of the above code sample.
 
 ![Xamarin maps getting started](Images/GettingStartedimg2.PNG) 
 
-You can download the complete [Getting started](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Maps_GettingStarted182763643) sample.
+You can download the complete [Getting started](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) sample.
 
 
 ## See also

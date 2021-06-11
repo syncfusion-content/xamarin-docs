@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance | Expander for Xamarin.Forms | Syncfusion
-description: Learn about Appearance support in Syncfusion Xamarin Expander (SfExpander) control and more details.
+title: Appearance in Xamarin Expander control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion Xamarin Expander (SfExpander) control and more.
 platform: xamarin
 control: SfExpander
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Appearance in Xamarin Expander (SfExpander)
 
-The Expander allows customizing appearance of the Icon, and provides various functionalities to the users.
+The Expander allows to customize appearance of the Icon, and provides various functionalities to the users.
 
 ## Header icon position 
 

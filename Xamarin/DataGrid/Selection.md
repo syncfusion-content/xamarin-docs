@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection | SfDataGrid | Xamarin | Syncfusion
-description: How to enable selection for rows and cells, the selection modes, properties, events, and customizations available for selection in a data grid.
+title: Selection in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Selection support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Selection in Xamarin.Forms.DataGrid (SfDataGrid)
+# Selection in Xamarin DataGrid (SfDataGrid)
 
 This section explains how to enable selection in the data grid; modes, properties, and events involved in selection; and customizations available for selection.
 
@@ -198,7 +198,7 @@ this.sfDataGrid.SelectAll();
 
 ## Keyboard behavior
 
-`SfDataGrid` supports selection via keyboard interaction for the Xamarin.Forms.macOS and Xamarin.Forms.UWP platforms. Keyboard interaction will not have any effect when the `SfDataGrid.SelectionMode` is set as `SelectionMode.None`.
+`SfDataGrid` supports selection via keyboard interaction for the Xamarin.Forms.iOS, Xamarin.Forms.macOS and Xamarin.Forms.UWP platforms. Keyboard interaction will not have any effect when the `SfDataGrid.SelectionMode` is set as `SelectionMode.None`.
 
 <table>
 <tr>
@@ -278,7 +278,7 @@ If the active current cell is in edit mode, changes will be committed and select
 <kbd>Esc</kbd>
 </td>
 <td>
-If the current cell is in edit mode, reverts the changes done in the current cell. If the underlying source implements the {{'[IEditableObject](https://msdn.microsoft.com/en-us/library/system.componentmodel.ieditableobject#"")'| markdownify }}, pressing Esc key for the second time will cancel the edit mode for the entire row.
+If the current cell is in edit mode, reverts the changes done in the current cell. If the underlying source implements the {{'[IEditableObject](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.ieditableobject?redirectedfrom=MSDN&view=net-5.0#"")'| markdownify }}, pressing Esc key for the second time will cancel the edit mode for the entire row.
 </td>
 </tr>
 <tr>
@@ -804,6 +804,8 @@ The SfDataGrid allows you to bind the selection properties such as [SelectedInde
         }
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 

@@ -330,7 +330,7 @@ namespace AutocompleteSample
 
 ### Retrieving the indices of selected item
 
-When an item is selected from suggestion list, its index can be retrieved using the [`SelectedIndices`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SelectedIndicesProperty) property. 
+When an item is selected from suggestion list, its index can be retrieved using the [`SelectedIndices`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SelectedIndicesProperty) property. The property type of SelectedIndices is an Object. So you need to bind the property to the object type in the TwoWay Binding mode.
 
 The following code snippet demonstrates the way to retrieve [`SelectedIndices`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfAutoComplete.XForms.SfAutoComplete.html#Syncfusion_SfAutoComplete_XForms_SfAutoComplete_SelectedIndicesProperty) and display in the ListView.
 
@@ -351,6 +351,7 @@ The following code snippet demonstrates the way to retrieve [`SelectedIndices`](
         <autocomplete:SfAutoComplete
 	           x:Name="autoComplete"
 	           HeightRequest="40" 
+               SelectedIndices="{Binding SelectedIndices, Mode=TwoWay}"
                MultiSelectMode="Token">
             <autocomplete:SfAutoComplete.AutoCompleteSource>
                 <ListCollection:List x:TypeArguments="x:String">
@@ -690,3 +691,5 @@ The following event will be triggered
 {% endhighlight %}
 
 {% endtabs %}
+
+N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.

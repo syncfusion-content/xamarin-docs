@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection | TreeView for Xamarin.Forms | Syncfusion
-description: Describes the TreeView selection and its related operations by interacting UI or manually using methods..
+title: Selection in Xamarin TreeView control | Syncfusion
+description: Learn here all about Selection support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -14,11 +14,11 @@ This section explains how to perform selection and its related operations in the
 ## UI Selection
 The TreeView allows selecting the items either programmatically or touch interactions by setting the [SelectionMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_SelectionMode) property value to other than `None`. The control has different selection modes to perform selection operations as listed as follows.
 
-* `None`: Allows disabling the selection.
-* `Single`: Allows selecting the single item only. When clicking on the selected item, selection not will not be cleared. This is the default value for `SelectionMode`.
-* `SingleDeselect`: Allows selecting the single item only. When clicking on the selected item, selection gets cleared.
-* `Multiple`: Allows selecting more than one item. Selection is not cleared when selecting more than one items. When clicking on the selected item, selection gets cleared.
-* `Extended`: Allows to select the multiple items using the common key modifiers in `UWP platform` and for other platforms, it works as `Single` selection.
+* [None](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SelectionMode.html#Syncfusion_XForms_TreeView_SelectionMode_None): Allows disabling the selection.
+* [Single](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SelectionMode.html#Syncfusion_XForms_TreeView_SelectionMode_Single): Allows selecting the single item only. When clicking on the selected item, selection not will not be cleared. This is the default value for `SelectionMode`.
+* [SingleDeselect](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SelectionMode.html#Syncfusion_XForms_TreeView_SelectionMode_SingleDeselect): Allows selecting the single item only. When clicking on the selected item, selection gets cleared.
+* [Multiple](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SelectionMode.html#Syncfusion_XForms_TreeView_SelectionMode_Multiple): Allows selecting more than one item. Selection is not cleared when selecting more than one items. When clicking on the selected item, selection gets cleared.
+* [Extended](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SelectionMode.html#Syncfusion_XForms_TreeView_SelectionMode_Extended): Allows to select the multiple items using the common key modifiers in `UWP platform` and for other platforms, it works as `Single` selection.
 
 {% tabs %}
 {% highlight xaml %}
@@ -107,7 +107,7 @@ N> `SelectionForegroundColor` is applicable only for unbound mode.
 
 ### SelectionChanging Event
 
-The [SelectionChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html) event is raised while selecting an item at the execution time. The [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.ItemSelectionChangingEventArgs.html) has the following members which provides the information for `SelectionChanging` event:
+The [SelectionChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_SelectionChanging) event is raised while selecting an item at the execution time. The [ItemSelectionChangingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.ItemSelectionChangingEventArgs.html) has the following members which provides the information for `SelectionChanging` event:
 
 * [AddedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.ItemSelectionChangingEventArgs.html#Syncfusion_XForms_TreeView_ItemSelectionChangingEventArgs_AddedItems): Gets collection of the underlying data objects where the selection is going to process.
 * [RemovedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.ItemSelectionChangingEventArgs.html#Syncfusion_XForms_TreeView_ItemSelectionChangingEventArgs_RemovedItems): Gets collection of the underlying data objects where the selection is going to remove.
@@ -128,7 +128,7 @@ private void TreeView_SelectionChanging(object sender, ItemSelectionChangingEven
 
 ### SelectionChanged event
 
-The [SelectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html) event will occur once selection process has been completed for the selected item in the TreeView. The [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.ItemSelectionChangedEventArgs.html) has the following members which provides information for `SelectionChanged` event:
+The [SelectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_SelectionChanged) event will occur once selection process has been completed for the selected item in the TreeView. The [ItemSelectionChangedEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.ItemSelectionChangedEventArgs.html) has the following members which provides information for `SelectionChanged` event:
 
 * [AddedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.ItemSelectionChangedEventArgs.html#Syncfusion_XForms_TreeView_ItemSelectionChangedEventArgs_AddedItems): Gets collection of the underlying data objects where the selection has been processed.
 * [RemovedItems](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.ItemSelectionChangedEventArgs.html#Syncfusion_XForms_TreeView_ItemSelectionChangedEventArgs_RemovedItems): Gets collection of the underlying data objects where the selection has been removed.
@@ -144,7 +144,7 @@ private void TreeView_SelectionChanged(object sender, ItemSelectionChangedEventA
 {% endhighlight %}
 {% endtabs %}
 
-N> [SelectionChanging](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html) and [SelectionChanged](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html) events will be triggered only on UI interactions.
+N> `SelectionChanging` and `SelectionChanged` events will be triggered only on UI interactions.
 
 ## Key Navigation
 

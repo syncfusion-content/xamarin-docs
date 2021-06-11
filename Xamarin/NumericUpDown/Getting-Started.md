@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with Syncfusion NumericUpDown for Xamarin.Forms
-description: This section explain how to initialize the control, add the reference for Syncfusion Xamarin.Forms NumericUpDown control.
+title: Getting Started with Xamarin NumericUpDown control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control, its elements and more.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
@@ -10,6 +10,14 @@ documentation: ug
 # Getting Started with Xamarin NumericUpDown (SfNumericUpDown)
 
 This section provides overview for working with Essential SfNumericUpDown for Xamarin.Forms. You can walk through the entire process of creating a SfNumericUpDown.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfNumericUpDown reference
 
@@ -183,6 +191,8 @@ this.Content = numericUpDown;
 
 
 {% endtabs %}
+
+You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Textbox)
 
 ## See also
 

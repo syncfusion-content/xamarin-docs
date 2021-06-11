@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Legend in Syncfusion Maps control for Xamarin.Forms
-description: This section describes about maps legend.
+title: Legend in Xamarin Maps control | Syncfusion
+description: Learn here all about Legend support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Legend
+# Legend in Xamarin Maps (SfMaps)
 
 Legends are keys used on maps; they contain swatches of symbols with descriptions. A legend interprets what the map displays; it can be represented in various colors, shapes, or other identifiers based on the data. It gives a breakdown on what each symbol represents throughout the map.
 Legends can be added using the [`LegendSettings`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_LegendSettings) in the shape file layer.

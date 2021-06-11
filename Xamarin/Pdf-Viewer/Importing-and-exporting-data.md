@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Importing and exporting data in Xamarin Pdf Viewer | Syncfusion
-description: PDF Viewer provides options to import and export data like form fields and annotations in the PDF document 
+description: Learn here all about Importing and exporting data support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Importing and exporting data
+# Importing and exporting data in Xamarin Pdf Viewer (SfPdfViewer)
 
-PDF Viewer provides options to import and export data like form fields and annotations in the PDF document.
+[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) provides options to import and export data like form fields and annotations in the PDF document.
 
 ## Importing and exporting form data
 
@@ -122,3 +122,5 @@ pdfViewerControl.ImportAnnotations(fdfStreamToImport, AnnotationDataFormat.Fdf);
 
 {% endhighlight %}
 {% endtabs %}
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

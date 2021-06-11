@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Segmenting items in Syncfusion RadialMenu control for Xamarin.Forms
-description: How to Segment the Rim and place items in RadialMenu control in Xamarin.Forms
+title: Segmenting and Placing the Items in Xamarin Radial Menu | Syncfusion
+description: Learn here all about Segmenting and Placing the Items support in Syncfusion Xamarin Radial Menu (SfRadialMenu) control and more.
 platform: Xamarin
 control: SfRadialMenu
 documentation: ug
 ---
 
-# Layout types
+# Segmenting and Placing the Items in Xamarin Radial Menu (SfRadialMenu)
 
 There are two different layout types available for radial menu:
 

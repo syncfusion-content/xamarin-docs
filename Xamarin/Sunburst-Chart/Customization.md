@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization of Syncfusion Xamarin.Forms SfSunburstChart
-description: This section describes the customization available in sunburst chart.
+title: Customization in Xamarin Sunburst Chart control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Xamarin Sunburst Chart (SfSunburstChart) control and more.
 platform: xamarin
 control: SfSunburstChart
 documentation: ug
 ---
 
-# Customization
+# Customization in Xamarin Sunburst Chart (SfSunburstChart)
 
 The sunburst chart provides various customizing and styling options to enrich the application.
 

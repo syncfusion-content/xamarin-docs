@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview | SfDataGrid | Xamarin | Syncfusion
-description: The Xamarin.Forms DataGrid helps you render the bound data in a tabular format. It delivers the best possible performance even when loading large data sets.
+title: About Xamarin DataGrid control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
 ---
 
-# Overview of Xamarin.Forms DataGrid (SfDataGrid)
+# Xamarin DataGrid (SfDataGrid) Overview
 
 The DataGrid control is available in Xamarin.Forms, Xamarin.Android, and Xamarin.iOS. This helps to create entirely customizable features and is used to display and manipulate large amounts of data in a tabular view. It is built from the ground up to achieve the best possible performance even when loading large data sets. The following table lists the key features of this control in Xamarin.Forms, Xamarin.Android, and Xamarin.iOS.
 
@@ -163,3 +163,5 @@ I> Xamarin.Forms is unique and offers a single language(C#) and runtime that wor
 ![DataGrid with all column types](SfDataGrid_images/SfDataGrid-Xamarin_showcase1.png)
 
 ![DataGrid with template column](SfDataGrid_images/SfDataGrid-Xamarin_showcase2.png)
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Layout | SfDataForm | Xamarin.Forms | Syncfusion
-description: Learn about different editors and its customization in Syncfusion Xamarin DataForm (SfDataForm) control and more details.
+title: Editors in Xamarin DataForm control | Syncfusion
+description: Learn here all about Editors support in Syncfusion Xamarin DataForm (SfDataForm) control, its elements and more.
 platform: xamarin
 control: SfDataForm
 documentation: UG
@@ -465,7 +465,7 @@ private void DataForm_AutoGeneratingDataFormItem(object sender, AutoGeneratingDa
 {% endhighlight %}
 {% endtabs %}
 
->N `Title` property is applicable only for XForms UWP platform.
+N>`Title` property is applicable only for XForms UWP platform.
 
 ## Segment editor
 

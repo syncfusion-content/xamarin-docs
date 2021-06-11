@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Customization in Xamarin Chips control | Syncfusion
-description: Learn about customization support for background color, border color, close button color etc in Syncfusion Xamarin Chips control and more details.
+description: Learn about Customization support in Syncfusion Essential Studio Xamarin Chips control, its elements and more.
 platform: xamarin
 control: Chips
 documentation: ug
 ---
 
-# Customization in Xamarin Chips (SfChip)
+# Customization in Xamarin Chips
 
 The chip control supports to customize the background color, border color, close button color, and more. The chip control can be customized using the following properties:
 
@@ -481,6 +481,72 @@ namespace ChipCustomization
     Android : [`0d`]
     iOS : [`0d`]
     UWP : [`2d`]
+
+## BorderThickness
+
+The [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_BorderThickness) property is used to customizes the border thickness of the SfChip on four sides.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            BorderThickness="0,0,0,5"
+                            BorderColor = "Black" 
+                            CornerRadius = "5"
+                            >
+           </buttons:SfChip>  
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.BorderThickness = new Thickness (0,0,0,5);
+            chip.CornerRadius = 5;
+            chip.BorderColor = Color.Black;
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfChip with BorderThickness](images/customization-images/chip_borderthickness.png)
 
 ## CornerRadius
 
@@ -977,6 +1043,79 @@ namespace ChipCustomization
 ![SfChip with ShowIcon](images/customization-images/chip_imagesource_image.png)
 
 N> The default value of ShowIcon is [`false`].
+
+## Image
+
+The [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Image) property is used to customize the height, width, image source and aspect for the image of SfChip.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ChipCustomization"
+             xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms"
+             x:Class="ChipCustomization.MainPage">
+  
+   <ContentPage.Content>
+        <StackLayout Margin="8,8,8,8" >
+           <buttons:SfChip  Text="James" 
+                            WidthRequest="150"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center"
+                            ShowIcon="true"
+                            >
+            <button:SfChip.Image>
+  <Image Source="ChipUserContact.png" HeightRequest="50" WidthRequest="50"/>
+            </button:SfChip.Image>               
+           </buttons:SfChip>             
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+using System;
+using Syncfusion.XForms.Buttons;
+using Xamarin.Forms;
+
+namespace ChipCustomization
+{
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            StackLayout stackLayout = new StackLayout();
+            SfChip chip = new SfChip();
+            chip.Text = "James";
+            chip.WidthRequest = 150;
+            chip.HorizontalOptions = LayoutOptions.Center;
+            chip.VerticalOptions = LayoutOptions.Center;
+            chip.BackgroundColor = Color.Aqua;
+            chip.TextColor = Color.Black;
+            chip.ShowIcon = true;
+            chip.Image = new Image()
+            {
+               source = "ChipUserContact.png",
+               WidthRequest = 50,
+               HeightRequest = 50
+            };
+            stackLayout.Children.Add(chip);
+            this.Content = stackLayout;
+        }
+    }
+}
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![SfChip with image property](images/customization-images/chip_image.png)
 
 ## ImageSource
 

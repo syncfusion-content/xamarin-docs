@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AutomationId | SfSchedule | Xamarin.Forms | Syncfusion
-description: Set Automation Id to SfSchedule for automation framework to find and interact with control inner elements.
+title: Accessibility in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: Xamarin
 control: SfSchedule
 documentation: UG
 ---
 
-# AutomationId for Xamarin.Forms Schedule
+# Accessibility in Xamarin Scheduler (SfSchedule)
 
 The `SfSchedule` control has built-in `AutomationId` for inner elements. Please find the following table of Automation IDs for inner elements. To keep unique `AutomationId`, these inner elements’ AutomationIds are updated based on the control’s `AutomationId`.  For example, if you set `SfSchedule` `AutomationId` as `SfSchedule.AutomationId = EventScheduler`, then the Automation framework will interact with the month header as `EventSchedulerAugust 2019`. The following screenshots denote the AutomationIds for inner elements.
 
@@ -379,3 +379,5 @@ Schedule view changes in the order of Day, Timeline, Month, Work week, and Week.
 </td>
 </tr>
 </table>
+
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.

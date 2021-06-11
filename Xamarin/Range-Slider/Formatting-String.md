@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Format string in Syncfusion RangeSlider control for Xamarin.Forms
-description: Learn how to provide the formatting string support for the Value in xamarin.Forms RangeSlider control.
+title: Formatting String in Xamarin Range Slider control | Syncfusion
+description: Learn here all about Formatting String support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
 platform: Xamarin
 control: RangeSlider
 documentation: ug
 ---
 
-# Formatting String
+# Formatting String in Xamarin Range Slider (SfRangeSlider)
 
 The Value label of the SfRangeSlider can be configured to display different formats like currency format, percent format etc. We can also customize the Value label with string formatting. We can customize using `LabelFormat` property which determines the format specifier by which the display Value has to be formatted.
 

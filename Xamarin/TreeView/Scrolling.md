@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrolling | TreeView | Xamarin.Forms | Syncfusion
-description: This topic explains how programmatic scrolling in Treeview and its related operations can be accomplished.
+title: Scrolling in Xamarin TreeView control | Syncfusion
+description: Learn here all about Scrolling support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -25,7 +25,7 @@ private void BringIntoView_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-You can also download the entire source code of this demo from [here](https://github.com/SyncfusionExamples/bring-to-view-treeview-xamarin).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/bring-to-view-treeview-xamarin).
 
 The `BringIntoView` method comprises of other optional parameters to decide on the way in which the child item should come into view. 
 

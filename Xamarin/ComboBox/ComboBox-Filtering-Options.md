@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Filter Suggestions for Syncfusion ComboBox Control in Xamarin.Forms
-description : Learn how to filter the suggestions in ComboBox 
+title: ComboBox Filtering Options in Xamarin ComboBox control | Syncfusion
+description: Learn here all about ComboBox Filtering Options support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform : Xamarin.Forms
 control : SfComboBox
 documentation : ug
 ---
 
-# Filtering 
+# ComboBox Filtering Options in Xamarin ComboBox (SfComboBox)
 The combo box enables the filer option for filtering the suggestions in the drop-down. 
 
 {% tabs %}	
@@ -796,3 +796,5 @@ Content = layout;
 {% endtabs %}
 
 ![Suggest append image](images/ComboBox-Filtering-Options/suggest-append.png)
+
+N> The deletion of a character is not support in this mode which is a known framework issue.

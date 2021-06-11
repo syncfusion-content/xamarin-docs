@@ -1,7 +1,7 @@
 ---
 layout: post 
-title: Automation in Xamarin Expander Control | Syncfusion
-description: Describes about setting automation id to Expander for automation framework to find and interact with control inner elements.
+title: Accessibility in Xamarin Expander control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin Expander (SfExpander) control and more.
 platform: Xamarin
 control: Expander
 documentation: ug

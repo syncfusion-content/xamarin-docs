@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  Legends of Syncfusion Xamarin.Forms SfSunburstChart
-description: This section describes the legend and its customization.
+title: Legend in Xamarin Sunburst Chart control | Syncfusion
+description: Learn here all about Legend support in Syncfusion Xamarin Sunburst Chart (SfSunburstChart) control and more.
 platform: xamarin
 control: SfSunburstChart
 documentation: ug
 ---
 
-# Legend
+# Legend in Xamarin Sunburst Chart (SfSunburstChart)
 
 Legends are used to represent the first level (i.e root level) of categories in the sunburst chart.
 

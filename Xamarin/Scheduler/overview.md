@@ -1,6 +1,6 @@
 ---
-title: Overview of Syncfusion SfSchedule control for Xamarin.Forms
-description: Describes the quick overview and Key features of Scehdule (SfSchedule) control in Xamarin.Forms platform.
+title: About Xamarin Scheduler control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Scheduler (SfSchedule) control, its elements and more.
 platform: xamarin
 control: SfSchedule
 documentation: ug
@@ -21,6 +21,8 @@ Essential Schedule for Xamarin.Forms provides all the common scheduling function
 **Customization** — Control has simple APIs allowing for elegant customizations. You can edit the look to match the rest of your application.
 
 **Localization** — The built-in content of the user interface can be changed according to culture that is needed. Also, it has built-in culture support for basic items such us day and month text representations.
+
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.
 
 ## See also
 

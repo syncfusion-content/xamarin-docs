@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Accessibility in Xamarin Rotator control | Syncfusion
-description: Learn about accessibility support in Syncfusion Xamarin Rotator (SfRotator) control and more details.
+description: Learn here all about Accessibility support in Syncfusion Xamarin Rotator (SfRotator) control and more.
 platform: Xamarin
 control: SfRotator
 documentation: ug
 ---
 
-# AutomationId in Xamarin Rotator (SfRotator)
+# Accessibility in Xamarin Rotator (SfRotator)
 
 The SfRotator control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the SfRotator control. To keep unique AutomationId, these inner elements' AutomationIds are updated based on the control's `AutomationId`. 
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Events | SfDataGrid | Xamarin | Syncfusion
-description: Different events and commands exposed in Xamarin.Forms DataGrid with its purpose and customization options.
+title: Grid Events in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Grid Events support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Events and Commands in SfDataGrid
+# Grid Events in Xamarin DataGrid (SfDataGrid)
 
 ## GridTapped event
 
@@ -574,6 +574,8 @@ The [SfDataGrid.GridLongPressedCommand](https://help.syncfusion.com/cr/xamarin/S
 {% endtabs %}
 
 You can download the sample demo [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/LongPressedCommand1698940749).
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 

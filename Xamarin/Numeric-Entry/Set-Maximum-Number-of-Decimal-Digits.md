@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Set maximum decimal digits to Syncfusion NumericTextBox value
-description: Learn how to decide maximum decimal digits to be displayed and nullable value support in NumericTextBox.
+title: Set Max Number of Decimal Digits in Xamarin Numeric Entry | Syncfusion
+description: Learn here all about Set Maximum Number of Decimal Digits support in Syncfusion Xamarin Numeric Entry (SfNumericTextBox) control and more.
 platform: Xamarin
 control: NumericTextBox
 documentation: ug
 ---
-# Set Maximum Number of Decimal Digits
+# Set Maximum Number of Decimal Digits in Xamarin Numeric Entry
 
 The maximum number of digits to be displayed after the decimal point can be specified by using `MaximumNumberDecimalDigits` property. 
 

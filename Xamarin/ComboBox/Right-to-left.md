@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Right-to-left | SfComboBox | Xamarin.Forms | Syncfusion
-description: This section will explain how to use the Xamarin.Forms ComboBox works on right-to-left localization.
+title: Right to left(RTL) in Xamarin ComboBox control | Syncfusion
+description: Learn here all about Right to left(RTL) support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: UG
 ---
 
-# SfComboBox supports Right to left(RTL)
+# Right to left(RTL) in Xamarin ComboBox (SfComboBox)
 
 SfComboBox supports to change the layout direction of the control in the right-to-left direction by setting the [FlowDirection](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.visualelement.flowdirection?view=xamarin-forms#Xamarin_Forms_VisualElement_FlowDirection) to `RightToLeft` or by changing the device language.
 
@@ -22,7 +22,7 @@ combobox.FlowDirection = FlowDirection.RightToLeft;
 {% endtabs %}
 
 >**Note**
-For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Please refer [RightToLeft](https://blog.xamarin.com/right-to-left-localization-xamarin-forms) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
+For implementing the `FlowDirection` in the control, Xamarin.Forms package version must be 3.0 and above. Please refer [RightToLeft](https://devblogs.microsoft.com/xamarin/right-to-left-localization-xamarin-forms) to get more details about `RightToLeft` flow direction in Xamarin.Forms.
 
 ### Android
 For Android, add `android:supportsRtl="true"` in your application tag of `AndroidManifest.xml` file, and make sure your `MinSDKVersion` is 17+. By changing the device language / enabling the device's `Force RTL layout` can achieve the `RightToLeft` layout direction in Calendar.
@@ -73,4 +73,4 @@ LoadApplication (new App ());
 
 ![RTL in Xamarin.Forms ComboBox](images/RTL/Xamarin.Forms-ComboBox-rtl.png)
 
-The complete RTL sample is available in [this](https://www.syncfusion.com/downloads/support/directtrac/general/ze/RTL_ComboBoxSample_(2)-1702766460) link.
+The complete RTL sample is available in this [link](https://github.com/SyncfusionExamples/rtl-sample-combobox).

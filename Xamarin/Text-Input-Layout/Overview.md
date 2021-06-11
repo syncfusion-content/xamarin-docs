@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion Text Input Layout
-description: The text input layout control adds decorative elements such as floating label, icons, and assistive labels on the top of the input views.
+title: About Xamarin Text Input Layout control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control, its elements and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug
 ---
 
-# Overview
+# Xamarin Text Input Layout (SfTextInputLayout) Overview
 
 The text input layout control for Xamarin.Forms adds decorative elements such as floating labels, icons, and assistive labels on the top of input views such as [SfMaskedEdit](https://www.syncfusion.com/xamarin-ui-controls/masked-input-text), [SfNumericUpDown](https://www.syncfusion.com/xamarin-ui-controls/xamarin-numericupdown), [SfNumericTextBox](https://www.syncfusion.com/xamarin-ui-controls/numerictextbox), [SfAutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete), [SfComboBox](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete), [Entry](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/entry), and [Editor](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/text/editor) controls.
 

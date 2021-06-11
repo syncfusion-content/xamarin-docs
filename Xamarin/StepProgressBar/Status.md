@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Status in Syncfusion Xamarin.Forms StepProgressBar
-description: Explaining about different status in StepProgressBar.
+title: Status in Xamarin StepProgressBar control | Syncfusion
+description: Learn here all about Status support in Syncfusion Xamarin StepProgressBar (Step Progress Bar) control and more.
 platform: Xamarin
 control: StepProgressBar
 documentation: ug
 ---
 
-# Status
+# Status in Xamarin StepProgressBar (Step Progress Bar)
 	
 A step has three statuses: not started, in progress, and completed. Based on the status, you can format a step with different styles, which means whenever the status of a step changes, the style of the visual will change synchronously. Refer the following GIF in which the status of step is updated dynamically.
 ![Update stepview status in StepProgressBar control](overview_images/Steps-in-Not-Started-Status.gif)

@@ -1,15 +1,23 @@
 ---
 layout: post
-title: Getting Started for Syncfusion Essential Xamarin.Forms SfParallaxView
-description: A quick tour to initial users on Syncfusion parallax view control and Learn how to create a simple parallax view by adding content and source.
+title: Getting Started with Xamarin Parallax View control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Parallax View (SfParallaxView) control, its elements and more.
 platform: xamarin
 control: SfParallaxView
 documentation: ug
 ---
 
-# Getting Started with Xamarin ParallaxView (SfParallaxView)
+# Getting Started with Xamarin Parallax View (SfParallaxView)
 
 This section explains the steps required to configure the [`SfParallaxView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ParallaxView.SfParallaxView.html) control and add basic elements to it using various APIs.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfParallaxView reference
 
@@ -337,4 +345,4 @@ N> The size of the `Content` view will automatically be stretched to the size of
 
 ![SfParallaxView](ParallaxView_Images/parallaxview.gif)
 
-You can find the complete getting started sample from this link: [Sample](http://www.syncfusion.com/downloads/support/directtrac/general/ze/ParallaxView_GettingStarted979722583.zip )
+You can find the complete getting started sample from this link: [Sample](https://github.com/SyncfusionExamples/Getting-stared-Xamarin-parallax-view-)

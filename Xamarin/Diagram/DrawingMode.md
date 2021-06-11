@@ -1,12 +1,12 @@
 ---
-title: Adding drawing mode in Diagram control for Xamarin.Forms | Syncfusion
-description: Describes how to add drawing mode in diagram control for Xamarin.Forms
+title: Drawing Mode in Xamarin Diagram control | Syncfusion
+description: Learn here all about Drawing Mode support in Syncfusion Xamarin Diagram (SfDiagram) control and more.
 platform: Xamarin
 control: Diagram
 documentation: ug
 keywords: 
 ---
-# Drawing mode
+# Drawing Mode in Xamarin Diagram (SfDiagram)
 Drawing mode is used to draw continuously on the diagram area for selected mode dynamically.
 
 ## Text node

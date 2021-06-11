@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Item Height Customization in Xamarin TreeView | Syncfusion
-description: Customize the height of the items in a Xamarin.Forms TreeView. Autofit the items based on node content.
+title: Item Height Customization in Xamarin TreeView control | Syncfusion
+description: Learn here all about Item Height Customization support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -13,7 +13,7 @@ The TreeView provides various options to customize the height of items. To achie
 
 ## Customize Item Height
 
-The TreeView allows customizing the height of items by setting the [ItemHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ItemHeight) property. The default value of this property is `40`. This property can be customized at runtime.
+The TreeView allows customizing the height of items by setting the [ItemHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ItemHeight) property. The default value of this property is `40d`. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -26,7 +26,7 @@ treeView.ItemHeight = 40;
 {% endtabs %}
 
 ## Customize Item height using `QueryNodeSize` event
- The TreeView allows customizing the height of the items using [QueryNodeSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html) event. This event is raised whenever the item comes into view and triggered with [QueryNodeSizeEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.QueryNodeSizeEventArgs.html).
+ The TreeView allows customizing the height of the items using [QueryNodeSize](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_QueryNodeSize) event. This event is raised whenever the item comes into view and triggered with [QueryNodeSizeEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.QueryNodeSizeEventArgs.html).
 
 The `SfTreeView.QueryNodeSize` event provides the following arguments:
  
@@ -178,7 +178,7 @@ public class MainPage : ContentPage
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo [here](https://github.com/SyncfusionExamples/Xamarin-TreeView-Item-Height-Customization).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/Xamarin-TreeView-Item-Height-Customization).
 
 ![AutoFit items](TreeView_images/TreeView_AutoFit_Items.png)
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: selection changed in Syncfusion segmented control for Xamarin.Forms
-description: Learn how to handle selection changed in segmented control
+title: Dealing with selection in Xamarin Segmented Control | Syncfusion
+description: Learn here all about Dealing with selection changed support in Syncfusion Xamarin Segmented Control (SfSegmentedControl) and more.
 platform: Xamarin
 control: SegmentedControl
 documentation: ug
 ---
 
-# Selection changed
+# Dealing with selection changed in Xamarin Segmented Control
 
 The selection changed event occurs when there is a change from one segment item to another in the segmented control. It can be handled by two ways.
 
@@ -58,6 +58,6 @@ segmentedControl.SelectedIndex = 2;
 {% endtabs %}
 
 
-![](images/Selection-changed/selectionchange.png)
+![selectionchange](images/Selection-changed/selectionchange.png)
 
 

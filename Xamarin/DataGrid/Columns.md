@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns | SfDataGrid | Xamarin | Syncfusion
-description: Creating and adding columns, different ways to create columns, features and customizations available in columns in Xamarin.Forms DataGrid.
+title: Columns in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Columns support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Columns in Xamarin DataGrid (SfDataGrid) 
+# Columns in Xamarin DataGrid (SfDataGrid)
 
 The SfDatagrid allows to create and add columns in the following two ways:
 
@@ -236,8 +236,7 @@ dataGrid.AllowResizingColumn = true;
 {% endhighlight %}
 {% endtabs %}
 
-![DataGrid with hit test representation when resizing a column](SfDataGrid_images/Resizing_HitTest_Forms.png)
-![DataGrid with column resizing](SfDataGrid_images/Resizing_Forms.png)
+![DataGrid with column resizing](SfDataGrid_images/Resizing_OnMoved.gif)
 
 The column width can be changed by tapping and dragging the resizing indicator.
 
@@ -255,10 +254,10 @@ The SfDataGrid allows two modes of resizing by setting the [SfDataGrid.ResizingM
 N> The default resizing mode is OnMoved.
 
 The following image shows resizing mode OnMoved:
-![DataGrid with column resizing on the move](SfDataGrid_images/Resizing_OnMoved.png)
+![DataGrid with column resizing on the move](SfDataGrid_images/Resizing_OnMoved.gif)
 
 The following image shows resizing mode OnTouchUp:
-![DataGrid with column resizing on touch up](SfDataGrid_images/Resizing_OnTouchUp.png)
+![DataGrid with column resizing on touch up](SfDataGrid_images/Resizing_OnTouchUp.gif)
 
 ### Resizing events
 
@@ -271,7 +270,7 @@ The `SfDataGrid.ColumnResizing` event provides the following properties through 
 * [Index](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridResizingEventArgs.html#Syncfusion_SfDataGrid_XForms_GridResizingEventArgs_Index) - Returns the index of the column currently being resized.
 * [NewValue](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridResizingEventArgs.html#Syncfusion_SfDataGrid_XForms_GridResizingEventArgs_NewValue) - Returns the current width of the column being resized.
 * [ResizingState](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GridResizingEventArgs.html#Syncfusion_SfDataGrid_XForms_GridResizingEventArgs_ResizingState) - Returns the current state of the user-interaction through a value from the ProgressStates enum.
-* [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true) - A Boolean property to cancel the event and the resizing operation. 
+* [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?view=net-5.0) - A Boolean property to cancel the event and the resizing operation. 
 
 
 ### Cancel resizing for a column
@@ -313,6 +312,8 @@ To cancel resizing a column using the `SfDataGrid.ColumnResizing` event using th
                 e.Cancel = true;
         }
 {% endhighlight %}
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 

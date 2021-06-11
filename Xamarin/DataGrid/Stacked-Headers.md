@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Multicolumn headers | Stacked header | DataGrid | Xamarin | Syncfusion
-description: Display multilevel column headers(unbound header rows) that span across multiple columns. Group columns under common column headers in Xamarin.Forms DataGrid.
+title: Stacked Headers in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Stacked Headers support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: UG
 ---
 
-# Stacked Headers in SfDataGrid
+# Stacked Headers in Xamarin DataGrid (SfDataGrid)
 
 The SfDataGrid supports displaying additional unbound, multiple/multilevel header rows known as [StackedHeaderRows](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_StackedHeaderRows) that spans across the DataGrid columns. You can group one or more columns under each stacked header.
 
@@ -373,3 +373,4 @@ this.dataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 
 ![Load template in stacked header rows](SfDataGrid_images/StackedHeader_Template.png)
 
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

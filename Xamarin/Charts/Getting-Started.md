@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started for Essential Syncfusion.Xamarin.Forms Chart
-description: A quick tour to create a chart with title, series, legend, data labels, tooltip, and multiple Y axis in Xamarin.Forms Chart.
+title: Getting Started with Xamarin Charts control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Charts (SfChart) control, its elements and more.
 platform: xamarin
 control: Chart
 documentation: ug
@@ -15,6 +15,14 @@ To get start quickly with Xamarin.Forms SfChart, you can check on this video:
 
 <style>#XamarinChartVideoTutorial{width : 90% !important; height: 400px !important }</style>
 <iframe id='XamarinChartVideoTutorial' src='https://www.youtube.com/embed/CLE6qhIS9vM'></iframe>
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfChart reference
 
@@ -685,6 +693,8 @@ The following chart is created as a result of the above codes.
 ![Tooltip support in Xamarin.Forms Chart](Getting-Started_images/img2.png)
 
 You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/xamarin.forms-sfchart)
+
+N> You can refer to our [Xamarin Charts](https://www.syncfusion.com/xamarin-ui-controls/xamarin-charts) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Charts example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Chart) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.  
 
 ## See also
 

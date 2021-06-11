@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Item Drag and Drop in Xamarin.forms ListView | Syncfusion
-description: This topics describes about re-ordering the items in Syncfusion Xamarin.Forms ListView by drag and drop and its customizations.  
+title: Item Reordering in Xamarin ListView control | Syncfusion
+description: Learn here all about Item Reordering support in Syncfusion Xamarin ListView (SfListView) control and more.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -497,6 +497,8 @@ public class DragDropControllerExt : DragDropController
 }
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to know how to render set of data items with Xamarin.Forms views or custom templates.
 
 ## See also
 

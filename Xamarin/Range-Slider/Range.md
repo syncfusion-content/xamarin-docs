@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Range in Syncfusion RangeSlider control for Xamarin.Forms
-description: Learn how to set Dual thumb slider and its ranges in RangeSlider control.
+title: Range in Xamarin Range Slider control | Syncfusion
+description: Learn here all about Range support in Syncfusion Xamarin Range Slider (SfRangeSlider) control and more.
 platform: Xamarin
 control: RangeSlider
 documentation: ug
 ---
 
-# Range
+# Range in Xamarin Range Slider (SfRangeSlider)
 
 The SfRangeSlider control supports to select range of value by using two Thumbs.
 
@@ -150,3 +150,26 @@ Gets or sets the range value, which ranges between Minimum and Maximum. The defa
 {% endtabs %}
 
 ![Range value in SfRangeSlider in Xamarin.Forms](images/Value.jpg)
+
+
+## Allow drag range.
+
+Enable or disable the drag options to change a value of the ranges by using the `AllowDragRange` property.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+<range:SfRangeSlider x:Name="rangeslider" AllowDragRange = "True" ShowRange = "True"  Minimum="0" Maximum="100" Value="30"/>
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+rangeslider.AllowDragRange = true;
+
+{% endhighlight  %}
+
+{% endtabs %}
+
+![Allow Drag Range in SfRangeSlider in Xamarin.Forms](images/AllowDragRangeImage.gif)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Visual customization | SfRadioButton | Syncfusion | Xamarin.Forms
-description: change the description Learn how to customize the SfRadioButton CheckedColor, UncheckedColor, BorderWidth, and Text in Xamarin.Forms.
+title: Visual Customization in Xamarin Radio Button control | Syncfusion
+description: Learn here all about Visual Customization support in Syncfusion Xamarin Radio Button (SfRadioButton) control and more.
 platform: xamarin
 control: SfRadioButton
 documentation: ug 
@@ -10,7 +10,7 @@ keywords: button, SfRadioButton, RadioButton
 ---
 
 
-# Visual customization
+# Visual Customization in Xamarin Radio Button (SfRadioButton)
 
 ## Customizing a state color
 The default state colors can be customized using the `CheckedColor` and `UncheckedColor `properties. The checked state color is updated to the `CheckedColor` property value when the state is changed to the checked. The unchecked state color is updated to the `UncheckedColor` property value when the state is changed to unchecked.

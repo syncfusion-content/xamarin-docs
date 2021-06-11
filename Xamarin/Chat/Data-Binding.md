@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding | SfChat | Xamarin | Syncfusion
-description: Data binding in Xamarin.Forms Chat(SfChat) using ItemsSource & ItemsSourceConverter property for using existing data collections as message collection in SfChat
+title: Data Binding in Xamarin Chat control | Syncfusion
+description: Learn here all about Data Binding support in Syncfusion Xamarin Chat (SfChat) control, its elements and more.
 platform: xamarin
 control: SfChat
 documentation: ug
 ---
 
-# Data Binding in Xamarin.Forms Chat (SfChat)
+# Data Binding in Xamarin Chat (SfChat)
 
 The SfChat control allows to bind any existing collection of data objects as message collection using the [SfChat.ItemSource](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ItemsSource) and [SfChat.ItemsSourceConverter](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_ItemsSourceConverter) property as follows.
 
@@ -190,3 +190,7 @@ public class MessageConverter : IChatMessageConverter
 {% endtabs %}
 
 You can download the entire working sample from [here](https://github.com/SyncfusionExamples/How-to-convert-data-objects-to-messages-in-MVVM-in-Xamarin.Forms-chat-SfChat-).
+
+## See also
+
+[How to connect Azure Bot Service to Xamarin.Forms Chat Control](https://www.syncfusion.com/blogs/post/how-to-connect-azure-bot-service-to-xamarin-forms-chat-control.aspx)

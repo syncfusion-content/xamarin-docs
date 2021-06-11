@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Appointment Drag and Drop in Xamarin Scheduler | Syncfusion
-description: Describes how to drag and drop the appointments and its customization of Schedule (SfSchedule) control.
+title: Appointment Drag and Drop in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Appointment Drag and Drop support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfSchedule
 documentation: ug
 ---
 
-# Appointment Drag and Drop
+# Appointment Drag and Drop in Xamarin Scheduler (SfSchedule)
 Appointments can be rescheduled using the drag and drop operation. To perform drag-and-drop operations within the schedule, enable the [AllowAppointmentDrag](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html#Syncfusion_SfSchedule_XForms_SfSchedule_AllowAppointmentDrag) property of `SfSchedule`.
 
 {% tabs %}
@@ -26,7 +26,7 @@ schedule.AllowAppointmentDrag = true;
 Using [AppointmentDragStarting](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html) event, you can get the appointment details and handle whether the appointment can be draggable or not. This event will be triggered when the appointment is started dragging. The [AppointmentDragStartingEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentDragStartingEventArgs.html) argument contains the following properties.
 
 [Appointment](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentDragStartingEventArgs.html#Syncfusion_SfSchedule_XForms_AppointmentDragStartingEventArgs_Appointment) - Gets the dragged appointment details.
-[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true)- Appointment dragging can be handled (enable/disable) using this boolean property.
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev14IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0)- Appointment dragging can be handled (enable/disable) using this boolean property.
 
 {% tabs %}
 {% highlight c# %}
@@ -86,7 +86,7 @@ private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArg
 {% endtabs %}
 
 ### Displaying alert while dragging appointment over the blocked time slots
-Using `draggingPoint` and `draggingTime` properties in the `AppointmentDragEventArgs` of Schedule `AppointmentDragOver` event you can get the current position and time of dragging appointment. In the below code, Indicating the message while dragging over the Schedule `NonAccessibleBlock`.
+By using the `draggingPoint` and `draggingTime` properties in the `AppointmentDragEventArgs` of Schedule `AppointmentDragOver` event you can get the current position and time of dragging appointment. In the below code, Indicating the message while dragging over the Schedule `NonAccessibleBlock`.
 
 {% tabs %}
 {% highlight c# %}
@@ -110,7 +110,7 @@ private void Schedule_AppointmentDragOver(object sender, AppointmentDragEventArg
 Using [AppointmentDrop](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.SfSchedule.html) event you can get the dropping appointment details, position, time and you can handle whether the appointment can be dropped to the specific position or not. This event will trigger after dropping the appointment. The [AppointmentDropEventArgs](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs.html) argument contains the following properties.
 
 [Appointment](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs.html#Syncfusion_SfSchedule_XForms_AppointmentDropEventArgs_Appointment) - Gets the details of the appointment to be dropped.
-[Cancel](https://msdn.microsoft.com/query/dev14.query?appId=Dev14IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true)- Appointment dropping can be handled (enable / disable) using this Boolean property.
+[Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev14IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0)- Appointment dropping can be handled (enable / disable) using this Boolean property.
 [DropTime](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.AppointmentDropEventArgs.html#Syncfusion_SfSchedule_XForms_AppointmentDropEventArgs_DropTime)- Gets the dropped time of the appointment in Schedule
 
 {% tabs %}
@@ -174,7 +174,7 @@ schedule.DragDropSettings = dragDropSettings;
 {% endtabs %}
 
 ### Disabling navigation when dragging appointment
-Using [AllowNavigate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DragDropSettings.html#Syncfusion_SfSchedule_XForms_DragDropSettings_AllowNavigate) boolean property can handle the Appointment dragging, whether navigate to next/previous view or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowNavigate` property is true and  Schedule will navigate to next/previous view when dragging the appointment the endpoint of the current view.
+Using [AllowNavigate](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DragDropSettings.html#Syncfusion_SfSchedule_XForms_DragDropSettings_AllowNavigate) boolean property can handle the Appointment dragging, whether navigate to next/previous view or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowNavigate` property is true and  Schedule will navigate to next/previous view when dragging the appointment to the endpoint of the current view.
 
 {% tabs %}
 {% highlight c# %}
@@ -183,7 +183,7 @@ dragDropSettings.AllowNavigate = false;
 {% endtabs %}
 
 ### Handling navigation delay while holding dragged appointment
-Using [AutoNavigationDelay](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DragDropSettings.html#Syncfusion_SfSchedule_XForms_DragDropSettings_AutoNavigationDelay)  `TimeSpan` property can handle the navigation time when navigating to next/previous view while holding the dragged appointment.
+Using [AutoNavigationDelay](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DragDropSettings.html#Syncfusion_SfSchedule_XForms_DragDropSettings_AutoNavigationDelay)  `TimeSpan` property you can handle the navigation time when navigating to next/previous view while holding the dragged appointment.
 
 {% tabs %}
 {% highlight c# %}
@@ -193,7 +193,7 @@ dragDropSettings.AutoNavigationDelay = timeSpan;
 {% endtabs %}
 
 ### Disabling scroll when dragging appointment
-Using [AllowScroll](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DragDropSettings.html#Syncfusion_SfSchedule_XForms_DragDropSettings_AllowScroll) boolean property can handle the Appointment dragging, whether scroll (below/above) the Schedule or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowScroll` property is true.
+Using [AllowScroll](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSchedule.XForms.DragDropSettings.html#Syncfusion_SfSchedule_XForms_DragDropSettings_AllowScroll) boolean property you can handle the Appointment dragging, whether scrolling (below/above) the Schedule or not while dragging the appointment to the endpoint of the current view in Schedule. Default value of the `AllowScroll` property is true.
 
 {% tabs %}
 {% highlight c# %}
@@ -259,6 +259,7 @@ private void Schedule_AppointmentDrop(object sender, AppointmentDropEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.
 
 ## See also
 

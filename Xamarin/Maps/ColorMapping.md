@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Color mapping
-description: This section describes about the color mapping.
+title: Color Mapping in Xamarin Maps control | Syncfusion
+description: Learn here all about Color Mapping support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Color mapping
+# Color Mapping in Xamarin Maps (SfMaps)
 
 The color mapping support allows you customize the shape colors based on the underlying value of shapes received from the bound data.
 

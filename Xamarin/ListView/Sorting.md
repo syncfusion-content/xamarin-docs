@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in Syncfusion ListView
-description: This section describes about the sorting behavior in Syncfusion Xamarin.Forms ListView and its various customization features.
+title: Sorting in Xamarin ListView control | Syncfusion
+description: Learn here all about Sorting support in Syncfusion Xamarin ListView (SfListView) control, its elements and more.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -254,7 +254,7 @@ The following screenshot shows the output when items are sorted by year. Downloa
 
 ## Sorting with grouping by month and year
 
-Sorting the items along with grouping by using `KeySelector` based on retuning the month and year value of the data-time property.
+Sorting the items along with grouping by using `KeySelector` based on returning the month and year value of the data-time property.
 
 {% tabs %}
 {% highlight xaml %}
@@ -306,3 +306,4 @@ The following screenshot shows the output when items are sorted by month and yea
 
 ![Custom sort by month in listview](SfListView_images/SfListView-Sorting2.png)
 
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to know how to render set of data items with Xamarin.Forms views or custom templates.

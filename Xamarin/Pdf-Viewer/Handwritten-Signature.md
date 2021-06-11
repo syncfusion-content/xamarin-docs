@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  Handwritten signature in PDF Viewer Xamarin.Forms | Syncfusion
-description: Describes how PDF Viewer Xamarin.Forms allows to add and customize handwritten signature in the PDF file.
+title: Handwritten signatures in Xamarin Pdf Viewer control | Syncfusion
+description: Learn here all about Handwritten signatures support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Working with handwritten signatures
+# Handwritten signatures in Xamarin Pdf Viewer (SfPdfViewer)
 
-PDF viewer allows you to include handwritten signatures in PDF documents and provides options to modify or remove the existing ones.
+[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to include handwritten signatures in PDF documents and provides options to modify or remove the existing ones.
 
 ## Adding handwritten signatures using toolbar
 
@@ -259,3 +259,26 @@ pdfViewerControl.AnnotationSettings.HandwrittenSignature.IsLocked = false;
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to get and set the name of the annotations?
+
+The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API.
+
+The following code sample explains modifying the name of the annotation in the [InkAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_InkAdded) event. 
+
+{% tabs %}
+{% highlight c# %}
+private void PdfViewerControl_InkAdded(object sender, InkAddedEventArgs args)
+{
+   if(sender is HandwrittenSignature)
+    {
+     (sender as HandwrittenSignature).Name = "HandwrittenSignature1";
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [InkAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_InkAdded) event. But this can be done in all other events as well. 
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

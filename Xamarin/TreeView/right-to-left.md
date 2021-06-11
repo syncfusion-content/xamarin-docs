@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Right-to-left | TreeView for Xamarin.Forms | Syncfusion
-description: Describes how to work with treeview on right-to-left on localization and in Xamarin.Forms platforms.
+title: Right to left(RTL) in Xamarin TreeView control | Syncfusion
+description: Learn here all about Right to left(RTL) support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -66,9 +66,9 @@ public MainPage()
 {% endhighlight %} 
 {% endtabs %}
 
-![Xamarin Forms TreeView with right to left](TreeView_images/Right-To-Left-Xamarin-Forms-TreeView.png)
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/treeview-xamarin-right-to-left).
 
-You can download the entire [source code](https://github.com/SyncfusionExamples/treeview-xamarin-right-to-left) here.
+![Xamarin Forms TreeView with right to left](TreeView_images/Right-To-Left-Xamarin-Forms-TreeView.png)
 
 N> When a label is loaded in the `ItemTemplate`, the right-to-left direction is not applied due to the framework issue. It has been reported to the Xamarin team; for more details about this, refer to this [link](https://github.com/xamarin/Xamarin.Forms/issues/3611). To overcome this issue, set the `HorizontalOptions` to `StartAndExpand` in Label.
 

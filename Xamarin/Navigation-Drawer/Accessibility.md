@@ -1,13 +1,13 @@
 ---
 layout : post
-title: AutomationId support for Syncfusion NavigationDrawer control in Forms
-description: This topic describes about the support to set AutomationId to find and interact with inner elements in Xamarin.Forms SfNavigationDrawer
+title: Accessibility in Xamarin Navigation Drawer control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform : Xamarin.Forms
 control : SfNavigationDrawer
 documentation : ug
 ---
 
-# AutomationId for Xamarin.Forms NavigationDrawer 
+# Accessibility in Xamarin Navigation Drawer (SfNavigationDrawer)
 
 The SfNavigationDrawer control has built-in `AutomationId` for inner elements. The `AutomationId` API allows the automation framework to find and interact with the inner elements of the `NavigationDrawer` control. To keep unique AutomationId, these inner elements' AutomationIds are updated based on the control's `AutomationId`. 
 

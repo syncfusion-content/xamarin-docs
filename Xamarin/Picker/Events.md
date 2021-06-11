@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Events of Syncfusion Picker control for Xamarin.Forms
-description: How to hook the events when picker is open and closed in the Dialog mode in Picker conrol for Xamarin.Forms.
+title: Events in Xamarin Picker control | Syncfusion
+description: Learn here all about Events support in Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
 platform: xamarin
 control: SfPicker
 documentation: ug
 ---
 
-# Events in Syncfusion Picker
+# Events in Xamarin Picker (SfPicker)
 
 Three events have been used for a picker when it is in the `Dialog` mode. They are,
 
@@ -97,3 +97,5 @@ namespace PickerClosingEventSample
 {% endtabs %}
 
 N> View [sample](https://github.com/SyncfusionExamples/xamarin-sfpicker-examples)  in GitHub
+
+N> You can refer to our [Xamarin Picker](https://www.syncfusion.com/xamarin-ui-controls/xamarin-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Picker example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Picker) to knows the functionalities of each feature.

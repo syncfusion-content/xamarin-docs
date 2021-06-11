@@ -1,18 +1,26 @@
 ---
 
 layout: post
-title: Getting Started with Syncfusion SfRating control for Xamarin.Forms
-description: A quick tour to initial users of Syncfusion Rating control(Xamarin.Forms) on how to create a simple rating view, set number,value and precision of rating items.
+title: Getting Started with Xamarin Rating control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Rating (SfRating) control, its elements and more.
 platform: Xamarin
 control: Rating
 documentation: ug
 
 ---
 
-# Getting Started with Xamarin Rating(SfRating)
+# Getting Started with Xamarin Rating (SfRating)
 
 
 This section explains how to configure a SfRating control in a real-time scenario and also provides a walk-through on some of the customization features available in SfRating control.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfRating reference
 
@@ -237,4 +245,4 @@ public MainPage()
 
 ![SfRating Getting Started ](images/gettingstarted.png)
 
-The complete Getting Started sample is available in this [documentation](http://www.syncfusion.com/downloads/support/directtrac/general/ze/SfRating_GettingStarted419194381.zip).
+The complete Getting Started sample is available in this [documentation](https://github.com/SyncfusionExamples/xamarin-forms-rating).

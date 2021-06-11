@@ -1,14 +1,14 @@
 ---
 layout: post
-title: UnboundRow | SfDataGrid | Xamarin | Syncfusion
-description: Create and use Unbound Rows in Xamarin.Forms DataGrid. Describes how to populate data for unbound rows using event.
+title: Unbound Row in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Unbound Row support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
 ---
 
 
-# Unbound Rows 
+# Unbound Row in Xamarin DataGrid (SfDataGrid)
 
 The Xamarin.Forms DataGrid allows you to add **additional rows** at top and also bottom of the DataGrid which are **not bound with data object** of underlying data source. You can add unbound rows using [SfDataGrid.UnboundRows](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.UnboundRows.html) collection property. You can add any no of unbound rows to the DataGrid. Unbound rows can also be exported to pdf and excel documents.
 
@@ -283,3 +283,4 @@ var unboundRow = dataGrid.GetUnboundRowAtRowIndex(1);
 {% endhighlight %}
 {% endtabs %}
 
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.

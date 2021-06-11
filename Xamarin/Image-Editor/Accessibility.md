@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Automation ID in Syncfusion SfImageEditor control in Xamarin.Forms
-description: Learn how to use the automation ID in SfImageEditor control for running the test cases in Xamarin.Forms
+title: Accessibility in Xamarin Image Editor control | Syncfusion
+description: Learn here all about Accessibility support in Syncfusion Xamarin Image Editor (SfImageEditor) control and more.
 platform: xamarin
 control: SfImageEditor
 documentation : ug
 ---
 
-# AutomationId in SfImageEditor
+# Accessibility in Xamarin Image Editor (SfImageEditor)
 
 The SfImageEditor control has built-in automation Id for inner elements. The [`AutomationId`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfImageEditor.XForms.SfImageEditor.html) API allows the automation framework to find and interact with the inner elements of the SfImageEditor control. To keep unique AutomationId, these inner elements' AutomationIds are updated based on the control's `AutomationId`. For example, if you set automationId as `ImageEditor`, then the automation framework will interact with the Undo button as `ImageEditorUndo`. The following screenshot illustrates the AutomationIds  for toolbar elements.
 

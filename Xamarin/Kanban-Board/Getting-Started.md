@@ -1,15 +1,23 @@
 ---
 layout: post
-title: Getting Started for Essential Syncfusion Xamarin.Forms Kanban
-description: Getting Started for Essential Syncfusion Xamarin.Forms Kanban to get overview for working with this control
+title: Getting Started with Xamarin Kanban Board control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Kanban Board (SfKanban) control, its elements and more.
 platform: xamarin
 control: Kanban
 documentation: ug
 ---
 
-# Getting Started for Essential Syncfusion Xamarin.Forms Kanban
+# Getting Started with Xamarin Kanban Board (SfKanban)
 
 This section provides a quick overview for working with Essential Kanban for Xamarin.Forms. It is an efficient way to visualize the workflow at each stage along its path to completion.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfKanban reference
 

@@ -1,13 +1,13 @@
 ---
-title: Node in Xamarin.Forms Diagram control | Syncfusion
-description: Briefs about node,customization of node and node constraints in SfDiagram for Xamarin.Forms
+title: Node in Xamarin Diagram control | Syncfusion
+description: Learn here all about Node support in Syncfusion Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: xamarin
 control: SfDiagram
 documentation: ug
 keywords: 
 ---
 
-# Node
+# Node in Xamarin Diagram (SfDiagram)
 Nodes are graphical objects used to visually represent the geometrical information, process flow, internal business procedure or any other kind of data and it represents the functions of a complete system in regards to how it interacts with external entities.
 
 ## Create node

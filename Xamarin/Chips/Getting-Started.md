@@ -1,15 +1,23 @@
 ---
 layout: post
-title: Getting Started with Syncfusion Chips Control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion chips control for Xamarin.Forms platform and explains the types of chip group.
+title: Getting Started with Xamarin Chips control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio Xamarin Chips control, its elements and more.
 platform: xamarin
 control: Chips
 documentation: ug
 ---
 
-# Getting started with the Syncfusion chips
+# Getting Started with Xamarin Chips
 
 This section explains the steps required to create chips and arrange them in a layout for performing action. This section covers only the minimal features that you needed to know to get started with the chips.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding Chips reference
 

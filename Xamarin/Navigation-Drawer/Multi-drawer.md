@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Multi drawer support of Syncfusion NavigationDrawer control for Forms
-description: Learn how to set multi drawer view in NavigationDrawer.
+title: Multi Drawer in Xamarin Navigation Drawer control | Syncfusion
+description: Learn here all about Multi Drawer support in Syncfusion Xamarin Navigation Drawer (SfNavigationDrawer) control and more.
 platform: Xamarin
 control: NavigationDrawer
 documentation: ug
 ---
 
 
-# Multi Drawer
+# Multi Drawer in Xamarin Navigation Drawer (SfNavigationDrawer)
 
 The navigation drawer allows users to open the drawer on multiple sides with different toggle methods. The DrawerSettings class and its properties need to be used when users need to provide multiple drawer. The multiple drawers can be implemented using the following drawer settings.
 
@@ -543,5 +543,5 @@ The `IsOpen` property in the DrawerSettings of SecondaryDrawerSettings is used t
 
 N> Users can open only one drawer at a time.
 
-Note: The sample for implementing multiple drawers can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/NavigationDrawerSample_2-228312513).
+Note: The sample for implementing multiple drawers can be downloaded from this [link](https://github.com/SyncfusionExamples/multi-drawer-content).
 

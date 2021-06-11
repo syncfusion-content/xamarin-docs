@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Precision Mode in Syncfusion Rating control for Xamarin.Forms
-description: Learn how to change the Precision Mode of rating control
+title: Precision Mode in Xamarin Rating control | Syncfusion
+description: Learn here all about Precision Mode support in Syncfusion Xamarin Rating (SfRating) control and more.
 platform: Xamarin
 control: Rating
 documentation: ug
 
 ---
 
-# Precision Mode
+# Precision Mode in Xamarin Rating (SfRating)
 
 The Precision mode defines the accuracy level of the SfRating control. It has Standard, Half, and Exact options. The default precision mode of the SfRating control is `Standard`.
 

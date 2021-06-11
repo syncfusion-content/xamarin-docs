@@ -1,12 +1,12 @@
 ---
-title: Overview for Essential Xamarin.Forms Diagram | Syncfusion
-description: Describes how to add overview panel and its customization in diagram control for Xamarin.Forms
+title: About Xamarin Diagram control | Syncfusion
+description: Learn here all about Overview Panel support in Syncfusion Xamarin Diagram (SfDiagram) control and more.
 platform: Xamarin
 control: SfDiagram
 documentation: UG
 keywords: 
 ---
-# OverviewPanel
+# Xamarin Diagram (SfDiagram) Overview
 The overview panel is used to display the preview (overall mini view) of the entire content of a diagram. This helps you to see the overall picture of a large diagram and easily navigate to a position of the page using view port rectangle.
 When working on a large diagram, to navigate, you have to zoom out the entire diagram to find where you are. This solution is not suitable when frequent navigation is required.
 The overview control solves this problem by displaying a preview (overall view) of the entire diagram, A rectangle indicates the viewport of the diagram. Navigation is made easy by dragging this rectangle. 

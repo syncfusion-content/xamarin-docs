@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Getting Started with Syncfusion TabView control for Xamarin.Forms 
-description: A quick tour to initial users on Syncfusion TabView control for Xamarin.Forms platform
+title: Getting Started with Xamarin Tabbed View control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Tabbed View (SfTabView) control, its elements and more.
 platform: Xamarin
 control: TabView
 documentation: ug
 ---
 
-# Getting Started
+# Getting Started with Xamarin Tabbed View (SfTabView)
 
 This section provides an overview for working with the tab view control for Xamarin.Forms. Walk through the entire process of creating a real-world application with the tab view.
 
 ## Assembly deployment
 
-After installing the Essential Studio for Xamarin, find all the required assemblies in installation folders, {Syncfusion Essential Studio Installed location}\Essential Studio\16.1.0.24\Xamarin\lib}.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
-E.g., C:\Program Files (x86)\Syncfusion\Essential Studio\16.1.0.24\Xamarin\lib
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> In Mac, assemblies can be found in unzipped package location.
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfTabView reference
 
@@ -380,4 +380,4 @@ Similarly, content region for other tabs also can be configured.
 
 By default, both the vertical swiping for list view and horizontal swiping for tab view will work. If it is not required, it can be customized by using the `EnableSwiping` property of `SfTabView`.
 
-Note: Getting started sample can be downloaded from [this link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted1726376415.zip).
+Note: Getting started sample can be downloaded from this [link](https://github.com/SyncfusionExamples/xamarin-forms-sftabview).

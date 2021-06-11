@@ -1,12 +1,12 @@
 ---
-title: Adding connectors in diagram control for Xamarin.Forms | Syncfusion
-description: Describes how to add connector, connection with node and it's appearance in diagram control for Xamarin.Forms
+title: Connector in Xamarin Diagram control | Syncfusion
+description: Learn here all about Connector support in Syncfusion Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: Xamarin
 control: Diagram
 documentation: UG
 keywords: 
 ---
-# Connector
+# Connector in Xamarin Diagram (SfDiagram)
 Connectors are objects used to create link between two Points, Nodes or ports to represent the relationships between them.
 
 ## Create connector

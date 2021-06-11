@@ -1,16 +1,24 @@
 ---
 layout: post
-title: Getting Started with Syncfusion SfMaskedEdit control for Xamarin.Forms 
-description: A quick tour to initial users for getting started with Syncfusion SfMaskedEdit control for Xamarin.Forms
+title: Getting Started with Xamarin Masked Entry control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Masked Entry (SfMaskedEdit) control, its elements and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
 
-# Getting Started with SfMaskedEdit 
+# Getting Started with Xamarin Masked Entry (SfMaskedEdit)
 
 This section explains you the steps required to configure a [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) control in a real-time scenario and provides a walk-through on some of the customization features available in [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) control.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfMaskedEdit reference
 
@@ -178,4 +186,4 @@ Run the project and check if you get the following output to make sure that you 
 
 ![Xamarin.Forms masked edit](SfMaskedEditImages/GettingStarted.png)
 
-You can find the complete getting started sample from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/GettingStarted449308990).
+You can find the complete getting started sample from this [link](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Masted-edit).

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started | SfDataGrid | Xamarin | Syncfusion
-description: Getting started with Xamarin.Forms DataGrid and walk through to create a demo application from the scratch. 
+title: Getting Started with Xamarin DataGrid control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -17,11 +17,11 @@ To get start quickly with Xamarin.Forms DataGrid, you can check on this video:
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, find all the required assemblies in the installation folders {Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib.
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-N> Assemblies can be found in an unzipped package location in Mac.
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## NuGet configuration
 
@@ -622,6 +622,8 @@ The above exceptions can be resolved in two ways.
 
 
 ![DataGrid with linker settings](SfDataGrid_images/GettingStarted_img1.png)
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 

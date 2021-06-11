@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Xamarin Overview | xamarin | Syncfusion
-description: The Syncfusion Xamarin Extensions provide quick access to create or configure the Syncfusion Xamarin projects
+title: About Xamarin Syncfusion Extensions control | Syncfusion
+description: Learn here all about introduction of Syncfusion Essential Studio Xamarin Extensions control, its elements and more.
 platform: xamarin
 control: Syncfusion Extensions
 documentation: ug
 ---
 
-# Overview of Syncfusion Xamarin Extensions       
+# Xamarin Syncfusion Extensions Overview
 
 The Syncfusion Xamarin  Visual Studio Extensions can be accessed through the Syncfusion Menu to create and configure the project with Syncfusion references in Visual Studio.
 

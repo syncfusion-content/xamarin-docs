@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip in Syncfusion SfSunburstChart control for Xamarin.Forms
-description: This section describes the tooltip feature of sunburst chart.
+title: Tooltip in Xamarin Sunburst Chart control | Syncfusion
+description: Learn here all about Tooltip support in Syncfusion Xamarin Sunburst Chart (SfSunburstChart) control and more.
 platform: xamarin
 control: SfSunburstChart
 documentation: ug
 ---
 
-# Tooltip
+# Tooltip in Xamarin Sunburst Chart (SfSunburstChart)
 
 Tooltip provides additional information about the segments in the sunburst chart. Tooltip is displayed by tapping the segment. By default, tooltip displays the corresponding segment’s category and value. To enable the tooltip, set the [`ShowTooltip`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfSunburstChart.XForms.SunburstTooltipSettings.html#Syncfusion_SfSunburstChart_XForms_SunburstTooltipSettings_ShowTooltip) property to true.
 

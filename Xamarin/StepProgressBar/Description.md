@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Description in Syncfusion Xamarin.Forms StepProgressBar
-description: Explaining about Step view description and its formattings.
+title: Description in Xamarin StepProgressBar control | Syncfusion
+description: Learn here all about Description support in Syncfusion Xamarin StepProgressBar (Step Progress Bar) control and more.
 platform: Xamarin
 control: StepProgressBar
 documentation: ug
 ---
 
-# Description
+# Description in Xamarin StepProgressBar (Step Progress Bar)
 
 Each step in a multi-step process has a different operation. To provide self-explanatory information about a step, description can be shown on either side. A primary description will be on the right or bottom of the step, and a secondary description will be on the left or top of the step.
 

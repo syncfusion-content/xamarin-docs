@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Touch interaction events in Xamarin Pdf Viewer | Syncfusion
-description: Learn about Touch interaction events support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more details.
+title: Touch interaction events in Xamarin Pdf Viewer control | Syncfusion
+description: Learn here all about Touch interaction events support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Touch interaction events
+# Touch interaction events in Xamarin Pdf Viewer (SfPdfViewer)
 
 ## Tapped 
 
@@ -77,3 +77,5 @@ Point position = e.Position;
 
 {% endhighlight %}
 {% endtabs %}
+
+N>You can refer to our [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

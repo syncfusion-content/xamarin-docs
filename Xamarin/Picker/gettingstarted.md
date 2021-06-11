@@ -1,16 +1,24 @@
 ---
 layout: post
-title: Getting Started of Syncfusion Picker control for Xamarin.Forms
-description: Getting Started of Picker control
+title: Getting Started with Xamarin Picker control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
 
-# Getting Started
+# Getting Started with Xamarin Picker (SfPicker)
 
 This section explains the steps required to configure a picker control in a real-time scenario, and provides a walk-through on some of the customization features available in picker control.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfPicker reference
 
@@ -416,7 +424,7 @@ picker.PickerMode = PickerMode.Dialog;
 
 The picker can be opened programmatically by setting  `SfPicker.IsOpen` property to true. Default value of `SfPicker.IsOpen` is false.
 
-Note: This property is automatically changed to false when you close the dialog by click outside of dialog.
+Note: This property is automatically changed to false when you close the dialog by clicking outside of dialog.
 
 {% tabs %}
 {% highlight xaml %}
@@ -444,4 +452,6 @@ The following screenshot illustrates the output of above code.
 
 We have attached sample for reference. You can download the sample from the following link.
 
-Sample link:[GettingStarted](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Picker_GettingStarted-1178342958)
+Sample link:[GettingStarted](https://github.com/SyncfusionExamples/xamarin-forms-sfpicker)
+
+N> You can refer to our [Xamarin Picker](https://www.syncfusion.com/xamarin-ui-controls/xamarin-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Picker example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Picker) to knows the functionalities of each feature.

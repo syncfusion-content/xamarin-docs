@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Header Visibility in Syncfusion Rotator control for Xamarin.Forms 
-description: Learn how to set the header visiblity in Rotator control for Xamarin.Forms
+title: Header Visibility in Xamarin Rotator control | Syncfusion
+description: Learn here all about Header Visibility support in Syncfusion Xamarin Rotator (SfRotator) control and more.
 platform: xamarin 
 control: Rotator
 documentation: ug
 ---
 
-# Header Visibility
+# Header Visibility in Xamarin Rotator (SfRotator)
 
 The `IsTextVisible` property can be used to enable the text area visibility in bottom area of SfRotator for providing additional information of items. IsTextVisible property is used to change the visibility of the Text panel that is displayed when SfRotatorItem collection is set and will have no effect when setting Item template.
 

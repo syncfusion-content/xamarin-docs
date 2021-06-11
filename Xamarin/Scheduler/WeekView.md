@@ -1,8 +1,8 @@
 ---
 
 layout: post
-title: Customize WeekView at Syncfusion SfSchedule for Xamarin.Forms
-description: Learn how to customize the scheduler week view settings and its appearance in SfSchedule control in Xamarin.Forms
+title: Week View in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Week View support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfSchedule
 documentation: ug
@@ -598,3 +598,5 @@ schedule.ShowCurrentTimeIndicator = true;
 schedule.CurrentTimeIndicatorColor = Color.Black;
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.

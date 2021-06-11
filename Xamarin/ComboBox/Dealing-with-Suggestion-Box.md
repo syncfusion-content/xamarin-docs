@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Suggestion DropDown in Syncfusion SfComboBox control for Xamarin.Forms
-description: This section describes about the placement of the drop-down suggestion and how to get the filtered SfComboBox items.
+title: Dealing with Suggestion Box in Xamarin ComboBox control | Syncfusion
+description: Learn here all about Dealing with Suggestion Box support in Syncfusion Xamarin ComboBox (SfComboBox) control and more.
 platform: xamarin
 control: SfComboBox
 documentation: ug
 ---
 
-# Dealing with suggestion box
+# Dealing with Suggestion Box in Xamarin ComboBox (SfComboBox)
 
 Suggestion box is a drop-down list box, which displays the filtered suggestions inside a popup. This section explains the properties that deals with the drop-down list in SfComboBox control.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Dates, Navigations and Gestures in Syncfusion SfSchedule Xamarin.Forms
-description: This section describes the complete navigation and gestures support in SfSchedule control in Xamarin.Forms
+title: Date Navigations in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Date Navigations support in Syncfusion Xamarin Scheduler (SfSchedule) control and more.
 platform: xamarin
 control: SfSchedule
 documentation: ug
@@ -160,3 +160,6 @@ private void Schedule_VisibleDatesChangedEvent(object sender, VisibleDatesChange
 }
 {% endhighlight %}  
 {% endtabs %}
+
+
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.

@@ -1,13 +1,13 @@
 ---
 layout : post
-title : Data Binding in Syncfusion Rotator control in Xamarin.Forms.
-description : Learn how to set the DataSource in Rotator for Xamarin.Forms.
+title: Populating Data in Xamarin Rotator control | Syncfusion
+description: Learn here all about Populating Data support in Syncfusion Xamarin Rotator (SfRotator) control and more.
 platform : Xamarin
 control : Rotator 
 documentation : ug
 ---
 
-# Populating Data
+# Populating Data in Xamarin Rotator (SfRotator)
 
 SfRotator control supports binding to different data sources such as IList Data Source, Observable Collection Data Source.
 

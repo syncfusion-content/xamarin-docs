@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Expand and Collapse | TreeView for Xamarin.Forms | Syncfusion
-description: Describes expanding and collapsing treeview nodes in xamarin.forms. And also explains about events associated with expanding and collapsing.
+title: Expand and Collapse in Xamarin TreeView control | Syncfusion
+description: Learn here all about Expand and Collapse support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -67,7 +67,7 @@ treeView.CollapseNode(node);
 
 ### Expand and Collapse all the nodes
 
-Expand and Collapse all the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html) programmatically at runtime by using the [SfTreeView.ExpandAll](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ExpandAll) method and [SfTreeView.CollapseAll](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_CollapseAll) method.
+You can expand and collapse all the [TreeViewNode](https://help.syncfusion.com/cr/xamarin/Syncfusion.TreeView.Engine.TreeViewNode.html) programmatically at runtime by using the [SfTreeView.ExpandAll](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ExpandAll) method and [SfTreeView.CollapseAll](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_CollapseAll) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -89,10 +89,10 @@ TreeView allows to expand and collapse the nodes by using right and left arrows 
 
 TreeView exposes following events to handle expanding and collapsing of items.
 
-* [NodeCollapsing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html) - It occurs when a node is being collapsed.
-* [NodeExpanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html) - It occurs when a node is being expanded.
-* [NodeCollapsed](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html) - It occurs when a node is collapsed.
-* [NodeExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html) - It occurs when a node is expanded.
+* [NodeCollapsing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_NodeCollapsing) - It occurs when a node is being collapsed.
+* [NodeExpanding](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_NodeExpanding) - It occurs when a node is being expanded.
+* [NodeCollapsed](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_NodeCollapsed) - It occurs when a node is collapsed.
+* [NodeExpanded](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_NodeExpanded) - It occurs when a node is expanded.
 
 The expanding and collapsing interactions can be handled with the help of `NodeCollapsing` and `NodeExpanding` events and expanded and collapsed interactions can be handled with help of `NodeCollapsed` and `NodeExpanded` events.
 

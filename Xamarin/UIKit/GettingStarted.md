@@ -1,19 +1,27 @@
 ---
 layout: post
-title: Get started with Syncfusion Essential UI Kit for Xamarin
-description: Getting started with Essential UI Kit for Xamarin. To learn how to add and render the XAML templates for Xamarin.Forms apps using Visual Studio extension.
+title: Getting Started with Xamarin UI Kit control | Syncfusion
+description: Learn here about getting started with Syncfusion Essential Studio Xamarin UI Kit control, its elements and more.
 platform: xamarin
 control: Xamarin UI Kit
 documentation: ug
 ---
 
-# Essential UI Kit Getting started
+# Getting Started with Xamarin UI Kit
 
 The UI Kit screens can be added in your application by the following two ways:
 
 1. Using **Essential UI Kit for Xamarin.Forms** Visual Studio extension.
 
 2. Copying the files from our open source [GitHub repository](https://github.com/syncfusion/essential-ui-kit-for-xamarin.forms).
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Essential UI Kit for Xamarin.Forms Extension
 

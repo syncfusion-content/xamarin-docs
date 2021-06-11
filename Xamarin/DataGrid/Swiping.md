@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Swiping| SfDataGrid | Xamarin | Syncfusion
-description: Load custom view with actions on both the sides of a data row and perform swiping. Use the swiping events to customize or cancel the swiping operations. 
+title: Swiping in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Swiping support in Syncfusion Xamarin DataGrid (SfDataGrid) control, its elements and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -99,7 +99,7 @@ N> The `DataTemplateSelector` can also be directly assigned to the `SfDataGrid.R
 
 ## Swipe events
 
-[SwipeStarted](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Fired when the swipe offset changes from its initial value. The swipe action can be canceled by setting the [Cancel](https://msdn.microsoft.com/query/dev10.query?appId=Dev10IDEF1&l=EN-US&k=k(System.ComponentModel.CancelEventArgs.Cancel)&rd=true# “”) property of the [SwipeStartedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipeStartedEventArgs.html# “”) to `true`. 
+[SwipeStarted](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Fired when the swipe offset changes from its initial value. The swipe action can be canceled by setting the [Cancel](https://docs.microsoft.com/en-us/dotnet/api/system.componentmodel.canceleventargs.cancel?f1url=%3FappId%3DDev10IDEF1%26l%3DEN-US%26k%3Dk(System.ComponentModel.CancelEventArgs.Cancel)%26rd%3Dtrue&view=net-5.0# “”) property of the [SwipeStartedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipeStartedEventArgs.html# “”) to `true`. 
 [SwipeEnded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Fired when the swipe offset value reaches the `SfDataGrid.MaxSwipeOffset` indicating that the swipe action is completed. This event is triggered with [SwipeEndedEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipeEndedEventArgs.html# “”).
 [Swiping](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html): Raised while swiping a row is in progress. This event is triggered with [SwipingEventArgs](http://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipingEventArgs.html# “”). 
 
@@ -511,6 +511,78 @@ private void Datagrid_SwipeEnded(object sender, SwipeEndedEventArgs e)
 {% endhighlight %}
 
 You can download the source code of swiping sample [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Swiping-661295078).
+
+## How to set MaxSwipeOffset based on content size
+
+Users can restrict the max swipe offset of a row to the width of the content loaded inside the swipe template by setting the [SfDataGrid.SwipeOffsetMode](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_SwipeOffsetMode) as [SwipeOffsetMode.Auto](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SwipeOffsetMode.html#Syncfusion_SfDataGrid_XForms_SwipeOffsetMode_Auto). The default value of the `SwipeOffsetMode` is `SwipeOffsetMode.Custom`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<syncfusion:SfDataGrid x:Name="datagrid"
+                       ColumnSizer="Star"
+                       AutoGenerateColumns="True"
+                       AllowSwiping="True"
+                       SwipeOffsetMode="Auto"
+                       ItemsSource="{Binding OrdersInfo}">
+
+  <syncfusion:SfDataGrid.LeftSwipeTemplate>
+    <DataTemplate>
+      <Grid BackgroundColor="Blue" Padding="9">
+        <Label Text ="EDIT"
+               HorizontalTextAlignment="Start"
+               VerticalTextAlignment="Center"
+               LineBreakMode ="NoWrap"
+               BackgroundColor="Transparent"
+               TextColor ="White" />
+      </Grid>
+    </DataTemplate>
+  </syncfusion:SfDataGrid.LeftSwipeTemplate>
+
+</syncfusion:SfDataGrid>
+
+{% endhighlight %}
+{% highlight C# %}
+
+ ViewModel viewModel;
+ SfDataGrid dataGrid;
+ public MainPage()
+ {
+    InitializeComponent();
+    viewModel = new ViewModel();
+    dataGrid = new SfDataGrid();   
+    dataGrid.AllowSwiping = true;
+    dataGrid.AutoGenerateColumns = true;
+    dataGrid.SwipeOffsetMode=SwipeOffsetMode.Auto;
+    dataGrid.ItemsSource = viewModel.OrdersInfo;         
+         
+    dataGrid.LeftSwipeTemplate = new DataTemplate(() =>
+    {
+        Grid myGrid = new Grid();
+        myGrid.HorizontalOptions = LayoutOptions.FillAndExpand;
+        myGrid.BackgroundColor = Color.FromHex("#009EDA");
+        myGrid.Padding = 9;
+
+        var label = new Label();
+        label.Text = "EDIT";
+        label.HorizontalTextAlignment = TextAlignment.Start;
+        label.VerticalTextAlignment = TextAlignment.Center;
+        label.LineBreakMode = LineBreakMode.NoWrap;
+        label.BackgroundColor = Color.Transparent;
+        label.TextColor = Color.White;
+        myGrid.Children.Add(label);
+        return myGrid;
+    });
+
+    this.Content = dataGrid;
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Maximum swipe offset based on the content of the swipe template](SfDataGrid_images/SwipeOffsetMode.png)
+
+N> The `SfDataGrid.MaxSwipeOffset` property's value will not be considered when the `SfDataGrid.SwipeOffsetMode` is set as `SwipeOffsetMode.Auto`.
 
 ## How to load custom swipe buttons based on row data?
 

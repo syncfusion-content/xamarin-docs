@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Bubble Marker in Syncfusion Maps control in Xamarin.Forms
-description: This section describes about how to add bubble marker on maps control, customizing and displaying the label on the bubble marker.
+title: Bubble Marker in Xamarin Maps control | Syncfusion
+description: Learn here all about Bubble Marker support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Bubble Marker in SfMaps
+# Bubble Marker in Xamarin Maps (SfMaps)
 
 Bubbles in the maps control represent the underlying data values of the maps. Bubbles are scattered throughout the map shapes that contain bound values.
 

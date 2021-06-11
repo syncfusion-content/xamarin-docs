@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Localization | SfChat | Xamarin | Syncfusion
-description: Describes about the static texts which can be localized in application for Xamarin.Forms chat control.
+title: Localization in Xamarin Chat control | Syncfusion
+description: Learn here all about Localization support in Syncfusion Xamarin Chat (SfChat) control, its elements and more.
 platform: xamarin
 control: SfChat
 documentation: UG

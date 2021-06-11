@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Visual customization of Syncfusion MaskedEdit for Xamarin.Forms
-description: Learn how to customize the visual appearence of Syncfusion MaskedEdit control for Xamarin.Forms platform.
+title: Visual Customization in Xamarin Masked Entry control | Syncfusion
+description: Learn here all about Visual Customization support in Syncfusion Xamarin Masked Entry (SfMaskedEdit) control and more.
 platform: Xamarin
 control: SfMaskedEdit
 documentation: ug 
 keywords: mask, SfMaskedEdit, maskededit
 ---
-# Visual Customization
+# Visual Customization in Xamarin Masked Entry (SfMaskedEdit)
 
 The appearance of [`SfMaskedEdit`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.MaskedEdit.SfMaskedEdit.html) can be customized using the following properties:
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Dealing with Header and Footer of Syncfusion Picker.
-description: Dealing with Enable or disable Header, Footer and ColumnHeader of Syncfusion SfPicker control for Xamarin.Forms.
+title: Dealing with Header and Footer in Xamarin Picker control | Syncfusion
+description: Learn here all about Dealing with Header and Footer support in Syncfusion Xamarin Picker (SfPicker) control and more.
 platform: Xamarin
 control: Picker
 documentation: ug
 ---
 
-# Dealing with Header and Footer
+# Dealing with Header and Footer in Xamarin Picker (SfPicker)
 
 This section explains about the header and footer customization of picker control.
 
@@ -331,3 +331,5 @@ private void picker_CancelButtonClicked(object sender, Syncfusion.SfPicker.XForm
 
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [Xamarin Picker](https://www.syncfusion.com/xamarin-ui-controls/xamarin-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Picker example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Picker) to knows the functionalities of each feature.

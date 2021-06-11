@@ -1,12 +1,12 @@
 ---
 layout: post 
-title: Orientation in Syncfusion LinearGauge control for Xamarin.Forms
-description: This section describes how to set the Orientation in the SfLinearGauge control for Xamarin.Forms platform
+title: Orientation in Xamarin Linear Gauge control | Syncfusion
+description: Learn here all about Orientation support in Syncfusion Xamarin Linear Gauge (SfLinearGauge) control and more.
 platform: Xamarin
 control: LinearGauge
 documentation: ug
 ---
-# Change Orientation in SfLinearGauge
+# Orientation in Xamarin Linear Gauge (SfLinearGauge)
 
 [`SfLinearGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html) supports horizontal and vertical orientations. By default, [`SfLinearGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html) is rendered with horizontal orientation. You can the change the orientation by using the [`Orientation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html#Syncfusion_SfGauge_XForms_SfLinearGauge_OrientationProperty) property. 
 

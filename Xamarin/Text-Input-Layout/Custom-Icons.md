@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom icons support in Syncfusion TextInputLayout in Xamarin.Forms.
-description: This section describes how to add custom icons for leading and trailing view and how to customise the height and width of the leading and trailing view.
+title: Custom Icons in Xamarin Text Input Layout control | Syncfusion
+description: Learn here all about Custom Icons support in Syncfusion Xamarin Text Input Layout (SfTextInputLayout) control and more.
 platform: xamarin
 control: SfTextInputLayout
 documentation: ug

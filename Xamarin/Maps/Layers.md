@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layers in Syncfusion Maps control for Xamarin.Forms
-description: This section describes about the imagery layer, shape file layer, shape settings, customize the shapes and events in maps
+title: Layers in Xamarin Maps control | Syncfusion
+description: Learn here all about Layers support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Layers in Maps (SfMaps)
+# Layers in Xamarin Maps (SfMaps)
 
 The maps control is maintained through [`Layers`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.SfMaps.html#Syncfusion_SfMaps_XForms_SfMaps_LayersProperty); a map can accommodate one or more layers.
 
@@ -355,7 +355,7 @@ In the ShapeSelected event, the *BaseMapIndex* property has been used to change 
 
 {% endtabs %}
 
-![Drilldown support in Xamarin.Forms Maps](Images/Drilldown1.jpg)  ![](Images/Drilldown_Asia.jpg) 
+![Drilldown support in Xamarin.Forms Maps](Images/Drilldown1.jpg)  ![Xamarin Maps DrilldownAsia Image](Images/Drilldown_Asia.jpg) 
 
 ## See Also
 

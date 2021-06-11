@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started in Syncfusion CheckBox for Xamarin.Forms platform
-description: Learn how to create a simple CheckBox and its customization options with its available basic features
+title: Getting Started with Xamarin CheckBox control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin CheckBox (SfCheckBox) control, its elements and more.
 platform: xamarin
 control: SfCheckBox
 documentation: ug 
@@ -9,9 +9,17 @@ keywords: button, SfCheckBox, CheckBox
 
 ---
 
-# Getting Started in Xamarin CheckBox (SfCheckBox)
+# Getting Started with Xamarin CheckBox (SfCheckBox)
 
 This section explains the steps required to configure the [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) control in a real-time scenario and provides a walk-through on some of the customization features available in [`SfCheckBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfCheckBox.html) control.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfCheckBox reference
 
@@ -362,7 +370,7 @@ private void CheckBox_StateChanged(object sender, StateChangedEventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-![Xamarin.Forms CheckBox intermediate state](Images/Inter1.jpg) ![](Images/Inter2.jpg)
+![Xamarin.Forms CheckBox intermediate state](Images/Inter1.jpg) ![Xamarin.Forms CheckBox intermediate Image2](Images/Inter2.jpg)
 
 This demo can be downloaded from this [link](http://www.syncfusion.com/downloads/support/directtrac/general/ze/CheckBox_IndeterminateState-1420370588).
 

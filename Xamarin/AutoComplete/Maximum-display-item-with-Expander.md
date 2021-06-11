@@ -120,3 +120,48 @@ autoComplete.LoadMore(5);
 
 {% endhighlight %}
 {% endtabs %}
+
+## Load More Button Tapped Event
+
+The `LoadMoreButtonTapped` can be triggered only when you tap on the load more button.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+ <autocomplete:SfAutoComplete HeightRequest="40"
+                              LoadMoreButtonTapped="AutoComplete_LoadMoreButtonTapped"
+                              LoadMoreText="LOAD MORE"
+                              MaximumSuggestion="3"/>
+
+{% endhighlight %}
+
+{% highlight c# %}
+namespace AutocompleteSample
+{
+    public partial class MainPage : ContentPage
+    {
+        SfAutoComplete autoComplete;
+        public MainPage()
+        {
+          autoComplete = new SfAutoComplete();
+          autoComplete.LoadMoreButtonTapped += AutoComplete_LoadMoreButtonTapped;
+          autoComplete.HeightRequest = 40;
+          autoComplete.LoadMoreText = "Load More";
+        }
+
+        private void AutoComplete_LoadMoreButtonTapped(object sender, EventArgs e)
+        {
+            // Trigger when tap the load more button
+        }
+    }
+}
+
+
+{% endhighlight %}
+
+{% endtabs %}
+
+N> The `LoadMoreButtonTapped` event is supported only on the Android and iOS platforms.
+
+N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in Syncfusion SfListView
-description: This section describes about the selection behavior of SfListView and how it can be handled and customized.
+title: Selection in Xamarin ListView control | Syncfusion
+description: Learn here all about Selection support in Syncfusion Xamarin ListView (SfListView) control and more.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -568,6 +568,8 @@ public partial class MainPage : ContentPage
 
 * When a grid is loaded inside the [ItemTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_ItemTemplate) with background color, the [SelectionBackgroundColor](https://help.syncfusion.com/cr/xamarin/Syncfusion.ListView.XForms.SfListView.html#Syncfusion_ListView_XForms_SfListView_SelectionBackgroundColor) will not display. Because, it overlaps the `SelectionBackgroundColor`. In this case, set the background color for the ListView instead of `ItemTemplate`.
 * When the `SfListView` contains duplicated items in the collection, only the first item whose instance was created initially will be selected or deselected.
+
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to know how to render set of data items with Xamarin.Forms views or custom templates.
 
 ## See also
 [How to select ListView item using Enter key in Xamarin.Forms ListView (UWP)](https://www.syncfusion.com/kb/11042)                                                                         

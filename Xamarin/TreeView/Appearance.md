@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Appearance | TreeView for Xamarin.Forms | Syncfusion
-description: Learn about Appearance support in Syncfusion Xamarin TreeView (SfTreeView) control and more details.
+title: Appearance in Xamarin TreeView control | Syncfusion
+description: Learn here all about Appearance support in Syncfusion Xamarin TreeView (SfTreeView) control and more.
 platform: xamarin
 control: SfTreeView
 documentation: ug
@@ -188,8 +188,9 @@ treeView.ItemTemplate = new ItemTemplateSelector()
 {% endhighlight %}
 {% endtabs %}
 
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/data-template-selector-treeview-xamarin)
+
 ![Xamarin Forms TreeView with Template Selector](TreeView_images/TreeView_TemplateSelector.png)
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/TemplateSelector70341606)
 
 Similarly, you can provide `DataTemplateSelector` for [ExpanderTemplate](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ExpanderTemplate) property.
 
@@ -209,7 +210,7 @@ treeView.Indentation = 40;
 
 ## ExpanderWidth
 
-The TreeView allows customizing the width of expander view by setting the [ExpanderWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ExpanderWidth) property. The default value of this property is `40`. This property can be customized at runtime.
+The TreeView allows customizing the width of expander view by setting the [ExpanderWidth](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.TreeView.SfTreeView.html#Syncfusion_XForms_TreeView_SfTreeView_ExpanderWidth) property. The default value of this property is `40d`. This property can be customized at runtime.
 
 {% tabs %}
 {% highlight xaml %}
@@ -291,9 +292,7 @@ public class FontAttributeConverter : IValueConverter
 {% endhighlight %}
 {% endtabs %}
 
-Now, run the application to render the below output:
-
-You can also download the entire source code of this demo from [here](http://www.syncfusion.com/downloads/support/directtrac/general/ze/Styling239740457).
+Download the entire source code from GitHub [here](https://github.com/SyncfusionExamples/level-based-styling-treeview-xamarin).
 
 ![Xamarin Forms TreeView with styling](TreeView_images/TreeView_LevelStyle.png)
 

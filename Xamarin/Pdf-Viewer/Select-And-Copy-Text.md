@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Select and Copy the Text in Xamarin Pdf Viewer | Syncfusion
-description: Select and copy text support allows user to select the text in the PDF document and copy it to the clipboard using PDF Viewer Xamarin.Forms.
+title: Select and Copy the Text in Xamarin Pdf Viewer control | Syncfusion
+description: Learn here all about Select and Copy the Text support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Select and copy text
+# Select and Copy the Text in Xamarin Pdf Viewer (SfPdfViewer)
 
-The PDF viewer supports text selection and copy feature, which allows user to select the text in the PDF document and copy it to the clipboard. This section illustrates about how to use this feature.
+The [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) supports text selection and copy feature, which allows user to select the text in the PDF document and copy it to the clipboard. This section illustrates about how to use this feature.
 
 <table>
 
@@ -197,3 +197,5 @@ private void PdfViewerControl_TextSelectionMenuItemClicked(object sender, TextSe
 
 {% endhighlight %}
 {% endtabs %}
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

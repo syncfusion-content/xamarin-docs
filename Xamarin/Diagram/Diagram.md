@@ -1,13 +1,13 @@
 ---
-title: Diagram control for Xamarin.Forms | Syncfusion
-description: Briefs about diagram,stencil,page setting and diagram constraints in SfDiagram for Xamarin.Forms
+title: Diagram in Xamarin Diagram control | Syncfusion
+description: Learn here all about Diagram support in Syncfusion Xamarin Diagram (SfDiagram) control, its elements and more.
 platform: xamarin
 control: SfDiagram
 documentation: ug
 keywords: 
 ---
 
-# Diagram
+# Diagram in Xamarin Diagram (SfDiagram)
 Diagram control allows to create different types of diagrams such as flow charts, use case diagrams, workflow process diagrams, and more.
 
 ## Page settings

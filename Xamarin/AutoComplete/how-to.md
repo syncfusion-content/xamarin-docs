@@ -1,13 +1,13 @@
 ---
-layout : post
-title : Interaction in Syncfusion AutoComplete Control in Xamarin.
-description : Learn how to perform an operation while changing its selection from dropdown list in Xamarin.
-platform : Xamarin
-control : AutoComplete
-documentation : ug
+layout: post
+title: Interaction in Xamarin AutoComplete Control | Syncfusion
+description: Learn how to perform an operation while changing its selection from dropdown list in Xamarin AutoComplete.
+platform: xamarin
+control: AutoComplete
+documentation: ug
 ---
 
-# How To
+# How to do an operation when selecting an item from drop-down list?
 
 ## How to perform an operation when selecting an item from drop-down list?
 
@@ -198,3 +198,5 @@ The following screenshot illustrates the result of adding the item.
 The following screenshot illustrates the result of removing the item.
 
 ![removed item is shown in alert window](images/How-To/RemovingItem.png)
+
+N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.

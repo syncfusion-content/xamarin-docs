@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export To Excel | SfDataGrid | Xamarin | Syncfusion
-description: The SfDataGrid supports exporting the data to Excel with several customization options like custom appearance, excluding specific columns,etc.
+title: Export To Excel in Xamarin DataGrid control | Syncfusion
+description: Learn here all about Export To Excel support in Syncfusion Xamarin DataGrid (SfDataGrid) control and more.
 platform: xamarin
 control: SfDataGrid
 documentation: ug
@@ -1133,6 +1133,8 @@ Refer the below code to export the selected rows alone to Excel.
 {% endhighlight %}
 
 ![Export selected items in a DataGrid to Excel format](SfDataGrid_images/Excel/SelectedItems_ExportToExcel.png)
+
+N> You can refer to our [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms DataGrid example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/DataGrid) to knows various chart types and how to easily configured with built-in support for creating stunning visual effects.
 
 ## See also
 

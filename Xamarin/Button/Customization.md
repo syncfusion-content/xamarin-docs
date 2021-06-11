@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Customization for Syncfusion Essential Xamarin.Forms SfButton
-description: This section describes how to customize the appearance of text, background and image for SfButton in Xamarin.Forms.
+title: Customization in Xamarin Button control | Syncfusion
+description: Learn here all about Customization support in Syncfusion Xamarin Button (SfButton) control and more.
 platform: xamarin
 control: sfbutton
 documentation: ug
 ---
 
-# Customization in Xamarin Buttons(SfButton)
+# Customization in Xamarin Button (SfButton)
 
 The button control supports to customize the border color, image width, corner radius, background color, and more. The button control can be customized using the following properties:
 
@@ -194,6 +194,31 @@ button.BorderColor = Color.Red;
 {% endhighlight %}
 {% endtabs %}
 
+### BorderThickness
+
+The [`BorderThickness`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Border.SfBorder.html#Syncfusion_XForms_Border_SfBorder_BorderThickness) property is used to customize the border thickness of the SfButton on four sides.
+
+{% tabs %}
+{% highlight xaml %}
+
+<button:SfButton x:Name="button" Text="Button"  HorizontalOptions="Center" VerticalOptions="Center" BorderColor = "Red" BorderThickness="0,0,0,5">
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.HorizontalOptions = LayoutOptions.Center;
+button.VerticalOptions = LayoutOptions.Center;
+button.BorderColor = Color.Red;
+button.BorderThickness = new Thickness (0,0,0,5);
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with borderthickness](images/Button_borderthickness.png)
+
 ### CornerRadius
 
 The `CornerRadius` property is used to customize the rounded edges in SfButton as demonstrated in the following code sample.
@@ -240,6 +265,38 @@ button.ShowIcon = True;
 
 {% endhighlight %}
 {% endtabs %}
+
+## Image
+
+The [`Image`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfButton.html#Syncfusion_XForms_Buttons_SfButton_Image) property is used to customize the height, width, image source and aspect for the image of SfButton.
+
+{% tabs %}
+{% highlight xaml %}
+
+<button:SfButton x:Name="button" Text="Button"  >
+<button:SfButton.Image>
+  <Image Source="ButtonUserContact.png" HeightRequest="50" WidthRequest="50"/>
+</button:SfButton.Image>
+</button:SfButton>
+
+{% endhighlight %}
+{% highlight c# %}
+
+SfButton button = new SfButton();
+button.Text = "Button";
+button.HorizontalOptions = LayoutOptions.Center;
+button.VerticalOptions = LayoutOptions.Center;
+button.Image = new Image()
+{
+    source = "ButtonUserContact.png",
+    WidthRequest = 50,
+    HeightRequest = 50
+};
+
+{% endhighlight %}
+{% endtabs %}
+
+![SfButton with image property](images/Button_image.png)
 
 ### ImageSource
 

@@ -1,7 +1,7 @@
 ---     
 layout: post     
-title: Headers | SfSchedule | Xamarin | Syncfusion    
-description: Describes how to customize appearance of header view in Schedule (SfSchedule) control in Xamarin.Forms. 
+title: Headers in Xamarin Scheduler control | Syncfusion
+description: Learn here all about Headers support in Syncfusion Xamarin Scheduler (SfSchedule) control, its elements and more.
 platform: xamarin    
 control: SfSchedule     
 documentation: ug   
@@ -147,6 +147,8 @@ private void Handle_HeaderTapped(object sender, HeaderTappedEventArgs e)
 }
 {% endhighlight %}
 {% endtabs %}   
+
+N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.
 
 ## See also
 

@@ -1,15 +1,23 @@
 ---
 layout: post
-title: Getting Started with Syncfusion LinearGauge control for Xamarin.Forms
-description: A quick tour to initial users on Syncfusion linearGauge control for Xamarin.Forms platform and also describes how to add pointers and ranges
+title: Getting Started with Xamarin Linear Gauge control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Linear Gauge (SfLinearGauge) control, its elements and more.
 platform: Xamarin
 control: LinearGauge
 documentation: ug
 ---
 
-# Getting Started with SfLinearGauge
+# Getting Started with Xamarin Linear Gauge (SfLinearGauge)
 
 This section explains the steps required to configure a [`SfLinearGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html) control in a real-time scenario and also provides a walk-through on some of the customization features available in [`SfLinearGauge`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfGauge.XForms.SfLinearGauge.html) control.
+
+## Assembly deployment
+
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
+
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
+
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## Adding SfLinearGauge reference
 
@@ -443,7 +451,7 @@ The following screenshot illustrates the result of the above codes.
  
 ![Linear Gauge Getting Started](getting-started_images/getting-started.png)
 
-You can find the complete getting started sample from this [`link`](https://www.syncfusion.com/downloads/support/directtrac/general/ze/Gauge-GettingStarted323564295).  
+You can find the complete getting started sample from this [`link`](https://github.com/SyncfusionExamples/GettingStarted_LinearGauge).  
 
 ## See also
 

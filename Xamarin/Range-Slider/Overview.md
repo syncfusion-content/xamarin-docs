@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion RangeSlider control for Xamarin.Forms
-description: This section will explain about the Overview and key features of RangeSlider control in Xamarin.Forms
+title: About Xamarin Range Slider control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Range Slider (SfRangeSlider) control, its elements and more.
 platform: Xamarin
 control: RangeSlider
 documentation: ug

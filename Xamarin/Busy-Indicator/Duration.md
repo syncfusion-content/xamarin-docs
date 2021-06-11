@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Duration in Syncfusion SfBusyIndicator control for Xamarin.Forms
-description: This section will explain about how to customize the duration of Xamarin.Forms BusyIndicator control viewbox.
+title: Animation Duration in Xamarin Busy Indicator control | Syncfusion
+description: Learn here all about Animation Duration support in Syncfusion Xamarin Busy Indicator (SfBusyIndicator) control and more.
 platform: Xamarin
 control: BusyIndicator
 documentation: ug
 ---
-# Animation duration
+# Animation Duration in Xamarin Busy Indicator (SfBusyIndicator)
 
 ## Animation Duration in Xamarin BusyIndicator (SfBusyIndicator)
 

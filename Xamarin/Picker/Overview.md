@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview of Syncfusion Picker control for Xamarin.Forms
-description: This section explains about Overview and key features comparisions across IOS, Andriod and UMP of Xamarine Picker control
+title: About Xamarin Picker control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Picker (SfPicker) control, its elements and more.
 platform: Xamarin
 control: Picker
 documentation: ug
@@ -83,3 +83,5 @@ The following screenshot illustrates picker’s color selection
 The following screenshot illustrates picker’s multicolumn
 
 ![Xamarin Picker with multicolumn](images/multicolumn.png)
+
+N> You can refer to our [Xamarin Picker](https://www.syncfusion.com/xamarin-ui-controls/xamarin-picker) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Picker example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Picker) to knows the functionalities of each feature.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Overview of Syncfusion Shimmer
-description: The shimmer control can be used to indicate data is being loaded in the background.
+title: About Xamarin Shimmer control | Syncfusion
+description: Learn here all about introduction of Syncfusion Xamarin Shimmer (SfShimmer) control, its elements and more.
 platform: xamarin
 control: SfShimmer
 documentation: ug
 ---
 
-# Overview
+# Xamarin Shimmer (SfShimmer) Overview
 
 The SfShimmer control can be used to improve the responsiveness of an application by showing a modern shimmer effect when data is being loaded in the background. This control comes with six built-in shimmer types.
 

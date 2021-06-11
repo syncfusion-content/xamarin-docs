@@ -1,15 +1,15 @@
 ---
 
 layout: post
-title: Range selection in Syncfusion SfRating for Xamarin.Forms
-description: Perform range selection with custom views in rating control
+title: Enable View Range Selection in Xamarin Rating control | Syncfusion
+description: Learn here all about Enable View Range Selection support in Syncfusion Xamarin Rating (SfRating) control and more.
 platform: Xamarin
 control: Rating
 documentation: ug
 
 ---
 
-# View Range Selection
+# Enable View Range Selection in Xamarin Rating (SfRating)
 
 When using CustomView in SfRating, Only one item will be rated. If you need to change the view of all rated CustomView items, Use the `EnableViewRangeSelection` boolean property.
 

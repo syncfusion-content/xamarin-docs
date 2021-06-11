@@ -1,25 +1,23 @@
 ---
 layout: post
-title: Getting started | SfPullToRefresh | Xamarin | Syncfusion
-description: Getting started with Xamarin.Forms PullToRefresh and walk through to create a demo application from the scratch. 
+title: Getting Started with Xamarin Pull To Refresh control | Syncfusion
+description: Learn here about getting started with Syncfusion Xamarin Pull To Refresh (SfPullToRefresh) control, its elements and more.
 platform: xamarin
 control: SfPullToRefresh
 documentation: ug
 ---
 
-# Getting Started with Xamarin PullToRefresh (SfPullToRefresh)
+# Getting Started with Xamarin Pull To Refresh (SfPullToRefresh)
 
 This section provides a quick overview for working with SfPullToRefresh for Xamarin.Forms.
 
 ## Assembly deployment
 
-After installing Essential Studio for Xamarin, you can find all the required assemblies in the installation folders,
+After installing [Essential Studio for Xamarin](https://www.syncfusion.com/downloads/xamarin), you can find all the required assemblies in the installation folders, {Syncfusion Essential Studio Installed location} \Essential Studio\\{Version #}\Xamarin\lib.
 
-{Syncfusion Essential Studio Installed location}\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
+E.g.: C:\Program Files (x86) \Syncfusion\Essential Studio\19.1.0.54\Xamarin\lib
 
-Eg: C:\Program Files (x86)\Syncfusion\Essential Studio\{{ site.releaseversion }}\Xamarin\lib
-
-N> Assemblies can be found in unzipped package location in Mac
+N> Assemblies can be found in unzipped package location(Documents/Syncfusion/{Version #}/Xamarin/lib) in Mac.
 
 ## NuGet configuration
 

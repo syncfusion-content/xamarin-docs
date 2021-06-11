@@ -1,7 +1,7 @@
 ---
 layout: post
-title: PullToRefresh in Xamrin.Forms ListView | Syncfusion
-description: Describes about the pull to refresh integration into ListView with ScrollView, SearchBar and Grouping in Xamarin.Forms SfListView.
+title: Pull To Refresh in Xamarin ListView control | Syncfusion
+description: Learn here all about Pull To Refresh support in Syncfusion Xamarin ListView (SfListView) control and more.
 platform: xamarin
 control: SfListView
 documentation: ug
@@ -305,3 +305,5 @@ public ListViewPullToRefresh()
 }
 {% endhighlight %}
 {% endtabs %}
+
+N> You can refer to our [Xamarin ListView](https://www.syncfusion.com/xamarin-ui-controls/xamarin-listview) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms ListView example](https://github.com/SyncfusionExamples/ListView-GettingStarted-in-Xamarin-Forms) to know how to render set of data items with Xamarin.Forms views or custom templates.

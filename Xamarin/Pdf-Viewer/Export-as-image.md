@@ -1,13 +1,13 @@
 ---
 layout: post
-title: PDF to image conversion in Xamarin Pdf Viewer | Syncfusion
-description: Convert pages of the PDF to image stream with custom scale factor using Syncfusion Xamarin.Forms PDF Viewer 
-platform: Xamarin.Forms
+title: PDF to image conversion in Xamarin Pdf Viewer control | Syncfusion
+description: Learn here all about PDF to image conversion support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
+platform: xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Exporting the pages of PDF document as images
+# PDF to image conversion in Xamarin Pdf Viewer (SfPdfViewer)
 
 The PdfViewerControl allows users to export the pages of a PDF document as image streams using the `ExportAsImage` and `ExportAsImageAsync` method. The resultant image streams can be saved as image files in the local storage.
 
@@ -138,3 +138,5 @@ Stream[] stream = await pdfViewerControl.ExportAsImageAsync(0, 3, 2.0f);
 
 {% endhighlight %}
 {% endtabs %}
+
+N>You can refer to our [Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

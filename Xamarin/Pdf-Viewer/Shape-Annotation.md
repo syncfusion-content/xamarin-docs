@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  Add & modify shapes using PDF Viewer Xamarin.Forms | Syncfusion
-description: PDF Viewer Xamarin.Forms allows user to add, move and delete shapes such as line, rectangle & ellipse PDF document.
+title: Shape annotations in Xamarin Pdf Viewer control | Syncfusion
+description: Learn here all about Shape annotations support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer
 documentation: ug
 ---
 
-# Working with shape annotations
+# Shape annotations in Xamarin Pdf Viewer (SfPdfViewer)
 
-PDF viewer allows you to include shape annotations in a PDF document and provides options to modify or remove the existing shape annotations. The supported shape annotations are:
+[Xamarin PDF Viewer](https://www.syncfusion.com/xamarin-ui-controls/xamarin-pdf-viewer) allows you to include shape annotations in a PDF document and provides options to modify or remove the existing shape annotations. The supported shape annotations are:
 
 1. Rectangle
 2. Circle
@@ -407,3 +407,25 @@ pdfViewerControl.AnnotationSettings.Circle.IsLocked = false;
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to get and set the name of the annotations?
+
+The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API. 
+
+The following code sample explains modifying the name of the annotation in the [ShapeAnnotationAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ShapeAnnotationAdded) event.
+
+{% tabs %}
+{% highlight c# %}
+
+private void PdfViewerControl_ShapeAnnotationAdded(object sender, ShapeAnnotationAddedEventArgs args)
+{
+//Sets the name for the annotation.
+(sender as ShapeAnnotation).Name = "Shape1";           
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+N> For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [ShapeAnnotationAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ShapeAnnotationAdded) event. But this can be done in all other events as well. 
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

@@ -115,6 +115,24 @@ namespace AutocompleteSample
 
 ![SuggestionBoxPlacement](images/Dealing-with-Suggestion-Box/suggestion-box-placement-top.png)
 
+N>To resolve the suggestion box overlapping when the keyboard is open in Android platform, set the SoftInputMode to AdjustResize in MainActivity.
+
+{% highlight c# %}
+
+        protected override void OnCreate(Bundle savedInstanceState) 
+        { 
+            TabLayoutResource = Resource.Layout.Tabbar; 
+            ToolbarResource = Resource.Layout.Toolbar; 
+ 
+            base.OnCreate(savedInstanceState); 
+            global::Xamarin.Forms.Forms.Init(this, savedInstanceState); 
+            LoadApplication(new App()); 
+            Window.SetSoftInputMode(Android.Views.SoftInput.AdjustResize); 
+        } 
+
+ {% endhighlight %}
+
+
 ## Maximum suggestion box height
 
 The maximum height of the suggestion box in the SfAutocomplete control can be varied using the `MaximumDropDownHeight` property.
@@ -965,3 +983,45 @@ The following code snippet will handle the event.
 ![Filtered_Items_Image](images/AutoComplete-Filtering-Options/Filtered_Items_SfAutoComplete.png)
 
 N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.
+
+## DropDownClosing Event
+
+The `DropDownClosing` event occurs when the dropdown get close.
+
+### DropDown Closing event args
+
+ IsItemSelected - It returns the value indicating whether the  item is selected or not when the dropdown window closes.
+
+ Cancel - Dropdown close can be restricted by setting e.cancel to true.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <autoComplete:SfAutoComplete DisplayMemberPath="Name" DropDownClosing="SfAutoComplete_DropDownClosing"  DataSource="{Binding EmployeeCollection}" >
+     </autoComplete:SfAutoComplete>
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+     public MainPage()
+     {
+       InitializeComponent();
+       autoComplete.DropDownClosing += SfAutoComplete_DropDownClosing;
+     }
+
+       private void SfAutoComplete_DropDownClosing(object sender, DropDownCancelEventArgs e)
+		{
+            if (e.IsItemSelected)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+                e.Cancel = false;
+		    }
+		}
+{% endhighlight %}
+
+{% endtabs %}

@@ -1663,6 +1663,72 @@ Following properties are used to customize the bubble segment appearance.
 
 ![Bubble chart type in Xamarin.Forms](charttypes_images/charttypes_img16.png)
 
+### Show zero size bubbles
+
+The zero size bubble segments can be enabled or disabled by using the `ShowZeroSizeBubbles` property. The default value of `ShowZeroSizeBubbles` property value is true.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Series>
+...
+
+	<chart:BubbleSeries ShowZeroSizeBubbles = "True"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+BubbleSeries bubbleSeries = new BubbleSeries() 
+{ 
+       ShowZeroSizeBubbles = true;
+};
+chart.Series.Add(bubbleSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Enable zero size bubble segments support in Xamarin.Forms](charttypes_images/ShowIndicationForZeroValueTrue.png)
+
+The following code example and screenshots describes when `ShowZeroSizeBubbles` value is false.
+
+{% tabs %} 
+
+{% highlight xaml %}
+
+<chart:SfChart.Series>
+...
+
+	<chart:BubbleSeries ShowZeroSizeBubbles = "False"/>
+
+</chart:SfChart>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+SfChart chart = new SfChart();
+...
+
+BubbleSeries bubbleSeries = new BubbleSeries() 
+{ 
+    ShowZeroSizeBubbles = false;
+};
+chart.Series.Add(bubbleSeries);
+
+{% endhighlight %}
+
+{% endtabs %}
+
+![Disable zero size bubble segments support in Xamarin.Forms](charttypes_images/ShowIndicationForZeroValueFalse.png)
+
 N> You can also explore our [Xamarin Bubble Chart example](https://github.com/syncfusion/xamarin-demos/blob/master/Forms/Chart/Chart/Samples/BubbleChart) to knows how to render and configure the bubble type charts
 
 ## Scatter Chart	

@@ -158,9 +158,13 @@ The following code sample will add the cropping preview on the image in square s
 
 {% endtabs %}
 
-// For cropping the image with ratio and circle or elliptical format.
+* For cropping the image in circle or elliptical with specific ratio, specify `ToggleCropping` with ratio argument along with optional parameter as true, which specify the cropping panel should be added as elliptical or rectangle shape. Default value is false.
 
-editor.ToggleCropping(2, 2, true); 
+{% highlight C# %}
+
+editor.ToggleCropping(1, 1, true);    
+
+{% endhighlight %} 
 
 ## Tilt the image
 

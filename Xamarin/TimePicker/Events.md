@@ -17,16 +17,16 @@ Three events have been used for the SfTimePicker when it is in the Dialog mode.
 
 ## Opened event
 
-The `Opened` event occurs when the timepicker is opened. 
+The `Opened` event occurs when the SfTimePicker is opened. 
 
 ## Closing event 
 
-The `Closing` event occurs when the timepicker gets closing. 
+The `Closing` event occurs when the SfTimePicker gets closing. 
 Dropdown close can be restricted by setting `e.cancel` to true.
 
 ## Closed event
 
-The `Closed` event was raised after the timepicker is closed.
+The `Closed` event was raised after the SfTimePicker is closed.
 
 {% tabs %}
 

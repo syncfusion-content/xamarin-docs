@@ -379,16 +379,16 @@ For example, the following code disables the interaction operations for all shap
 {% highlight c# %}
 
 //Disable the arrow annotation interaction
-pdfViewerControl.AnnotationSettings.Arrow.IsLocked = true;
+pdfViewerControl.AnnotationSettings.Arrow.Settings.IsLocked = true;
 
 //Disable the line annotation interaction
-pdfViewerControl.AnnotationSettings.Line.IsLocked = true;
+pdfViewerControl.AnnotationSettings.Line.Settings.IsLocked = true;
 
 //Disable the rectangle annotation interaction
-pdfViewerControl.AnnotationSettings.Rectangle.IsLocked = true;
+pdfViewerControl.AnnotationSettings.Rectangle.Settings.IsLocked = true;
 
 //Disable the circle annotation interaction
-pdfViewerControl.AnnotationSettings.Circle.IsLocked = true;
+pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = true;
 
 {% endhighlight %}
 {% endtabs %}
@@ -400,10 +400,10 @@ The interaction with shape annotation types will be allowed only if the `SfPdfVi
 
 //Disables the shape annotation interaction, though its 'IsLocked' property is set to ‘false’ 
 pdfViewerControl.AnnotationSettings.IsLocked = true;
-pdfViewerControl.AnnotationSettings.Arrow.IsLocked = false;
-pdfViewerControl.AnnotationSettings.Line.IsLocked = false;
-pdfViewerControl.AnnotationSettings.Rectangle.IsLocked = false;
-pdfViewerControl.AnnotationSettings.Circle.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Arrow.Settings.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Line.Settings.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Rectangle.Settings.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = false;
 
 {% endhighlight %}
 {% endtabs %}

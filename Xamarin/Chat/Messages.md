@@ -1713,10 +1713,6 @@ namespace GettingStarted
     public class GettingStartedViewModel : INotifyPropertyChanged
     {
         private ObservableCollection<object> messages;
-
-        /// <summary>
-        /// current user of chat.
-        /// </summary>
         private Author currentUser;
 
         public GettingStartedViewModel()
@@ -1726,9 +1722,6 @@ namespace GettingStarted
             this.GenerateMessages();
         }
 
-        /// <summary>
-        /// Gets or sets the group message conversation.
-        /// </summary>
         public ObservableCollection<object> Messages
         {
             get
@@ -1742,9 +1735,6 @@ namespace GettingStarted
             }
         }
 
-        /// <summary>
-        /// Gets or sets the current author.
-        /// </summary>
         public Author CurrentUser
         {
             get
@@ -1758,15 +1748,7 @@ namespace GettingStarted
             }
         }
 
-        /// <summary>
-        /// Property changed handler.
-        /// </summary>
         public event PropertyChangedEventHandler PropertyChanged;
-
-        /// <summary>
-        /// Occurs when property is changed.
-        /// </summary>
-        /// <param name="propName">changed property name</param>
         public void RaisePropertyChanged(string propName)
         {
             if (this.PropertyChanged != null)

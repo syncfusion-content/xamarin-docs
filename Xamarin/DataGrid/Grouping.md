@@ -203,7 +203,7 @@ public class GroupConverter : IValueConverter
 
 ### Using KeySelector
 
-To achieve custom grouping through Keyselector, specify the custom logic through GroupColumnDescription.KeySelector property and column name to GroupColumnDescription.ColumnName property.
+To achieve custom grouping through KeySelector, specify the custom logic through GroupColumnDescription.KeySelector property and column name to GroupColumnDescription.ColumnName property.
 For an example, the Date column is grouped based on the week basis in the following example.
 
 {% tabs %}

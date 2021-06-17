@@ -1,13 +1,13 @@
 ---
 layout: post
-title: User Interaction in Xamarin Maps control | Syncfusion
+title: User Interaction in Xamarin.Forms Maps control | Syncfusion
 description: Learn here all about User Interaction support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# User Interaction in Xamarin Maps (SfMaps)
+# User Interaction in Xamarin.Forms Maps (SfMaps)
 
 Options such as zooming, panning, and selection enable effective interaction on map elements.
 
@@ -345,3 +345,6 @@ Using this pan event, you can add a sublayer to draw the polyline.
 {% endtabs %}
 
 ![Route map](Images/PanningEvent.png)
+
+N> You can refer to our [Xamarin Maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) feature tour page for its groundbreaking feature representations.
+You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.

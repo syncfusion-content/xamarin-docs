@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Color Mapping in Xamarin Maps control | Syncfusion
-description: Learn here all about Color Mapping support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
+title: Color Mapping in Xamarin.Forms Maps control | Syncfusion
+description: Learn here all about color mapping feature in Syncfusion Xamarin.Forms Maps control such as Equal color mapping, and Range Color mapping.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Color Mapping in Xamarin Maps (SfMaps)
+# Color Mapping in Xamarin.Forms Maps (SfMaps)
 
 The color mapping support allows you customize the shape colors based on the underlying value of shapes received from the bound data.
 
@@ -185,3 +185,5 @@ The [`From`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.Ran
 {% endtabs %}
 
 ![Range color mapping image](Images/ColorMapping_img2.jpeg)
+
+N> You can refer to our [Xamarin Maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.

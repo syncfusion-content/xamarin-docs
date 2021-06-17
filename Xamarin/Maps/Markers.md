@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Markers in Xamarin Maps control | Syncfusion
+title: Markers in Xamarin.Forms Maps control | Syncfusion
 description: Learn here all about Markers support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Markers in Xamarin Maps (SfMaps)
+# Markers in Xamarin.Forms Maps (SfMaps)
 
 Markers are used to show some messages on maps.
 
@@ -850,6 +850,9 @@ private void Layer_MarkerSelected(object sender, MarkerSelectedEventArgs e)
 {% endtabs %}
 
 ![Marker Selected Image](Images/MarkerSelected.png)
+
+N> You can refer to our [Xamarin Maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) feature tour page for its groundbreaking feature representations.
+You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.
 
 ## See also
 

@@ -393,7 +393,7 @@ pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = true;
 {% endhighlight %}
 {% endtabs %}
 
-N> The older API [`SfPdfViewer.AnnotationSettings.Rectangle.IsLocked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.RectangleAnnotation.html#Syncfusion_SfPdfViewer_XForms_RectangleAnnotation_IsLocked) have been marked as obsolete and this is applicable for other shape annotations as well.
+The older API [SfPdfViewer.AnnotationSettings.Rectangle.IsLocked]( https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.RectangleAnnotation.html#Syncfusion_SfPdfViewer_XForms_RectangleAnnotation_IsLocked) is marked as obsolete and, this is applicable for other shape annotations as well.
 
 The interaction with shape annotation types will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code does not allow the interactions with shape annotations, although the `IsLocked` property of the shape annotation is set to `false`. 
 
@@ -409,8 +409,6 @@ pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = false;
 
 {% endhighlight %}
 {% endtabs %}
-
-N> The older API [`SfPdfViewer.AnnotationSettings.Rectangle.IsLocked`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.RectangleAnnotation.html#Syncfusion_SfPdfViewer_XForms_RectangleAnnotation_IsLocked) have been marked as obsolete and this is applicable for other shape annotations as well.
 
 ## How to get and set the name of the annotations?
 

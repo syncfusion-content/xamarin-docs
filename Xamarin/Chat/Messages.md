@@ -1661,6 +1661,158 @@ public class MyCustomMessageTemplateSelector : ChatMessageTemplateSelector
 
 You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/Chat-Message-Template-Xamarin.Forms).
 
+## Spacing between messages
+
+SfChat allows to change spacing between the messages in view. Using SfChat.MessageSpacing property You can set the message spacing value in the chat control.
+
+To customize MessageSpacing, refer the below code example:
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:GettingStartedViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           MessageSpacing="8"
+	<ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.XForms.Chat;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        SfChat sfChat;
+        GettingStartedViewModel viewModel;
+        public MainPage()
+        {
+            InitializeComponent();
+            sfChat = new SfChat();
+            viewModel = new GettingStartedViewModel();
+            this.sfChat.Messages = viewModel.Messages;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.MessageSpacing = 8;
+            this.Content = sfChat;
+        }
+    }
+    public class GettingStartedViewModel : INotifyPropertyChanged
+    {
+        private ObservableCollection<object> messages;
+
+        /// <summary>
+        /// current user of chat.
+        /// </summary>
+        private Author currentUser;
+
+        public GettingStartedViewModel()
+        {
+            this.messages = new ObservableCollection<object>();
+            this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
+            this.GenerateMessages();
+        }
+
+        /// <summary>
+        /// Gets or sets the group message conversation.
+        /// </summary>
+        public ObservableCollection<object> Messages
+        {
+            get
+            {
+                return this.messages;
+            }
+
+            set
+            {
+                this.messages = value;
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the current author.
+        /// </summary>
+        public Author CurrentUser
+        {
+            get
+            {
+                return this.currentUser;
+            }
+            set
+            {
+                this.currentUser = value;
+                RaisePropertyChanged("CurrentUser");
+            }
+        }
+
+        /// <summary>
+        /// Property changed handler.
+        /// </summary>
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        /// <summary>
+        /// Occurs when property is changed.
+        /// </summary>
+        /// <param name="propName">changed property name</param>
+        public void RaisePropertyChanged(string propName)
+        {
+            if (this.PropertyChanged != null)
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
+            }
+        }
+
+        private void GenerateMessages()
+        {
+            this.messages.Add(new TextMessage()
+            {
+                Author = currentUser,
+                Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
+            });
+
+            this.messages.Add(new TextMessage()
+            {
+                Author = new Author() { Name = "Andrea", Avatar = "People_Circle2.png" },
+                Text = "Oh! That's great.",
+            });
+
+            this.messages.Add(new TextMessage()
+            {
+                Author = new Author() { Name = "Harrison", Avatar = "People_Circle14.png" },
+                Text = "That is good news.",
+            });
+
+            this.messages.Add(new TextMessage()
+            {
+                Author = new Author() { Name = "Margaret", Avatar = "People_Circle7.png" },
+                Text = "What kind of application is it and when are we going to launch?",
+            });
+
+            this.messages.Add(new TextMessage()
+            {
+                Author = currentUser,
+                Text = "A kind of Emergency Broadcast App.",
+            });
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin Forms chat message spacing](SfChat_images/messagespacing.jpg)
 
 ## Sending message
 

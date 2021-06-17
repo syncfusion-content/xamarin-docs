@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Shape Types in Xamarin Maps control | Syncfusion
+title: Shape Types in Xamarin.Forms Maps control | Syncfusion
 description: Learn here all about Shape Types support in Syncfusion Xamarin Maps (SfMaps) control, its elements and more.
 platform: xamarin
 control: SfMaps
 documentation: ug
 ---
 
-# Shape Types in Xamarin Maps (SfMaps)
+# Shape Types in Xamarin.Forms Maps (SfMaps)
 
 This feature provide supports to draw a polygon, polyline and point icon on the map. We can provide input as the Geo points to draw shapes in two different ways. 
 
@@ -580,7 +580,7 @@ maps.Layers.Add(layer);
 
 ### Map point position
 
-The position of the map points can be customized using the [`MapPointHorizontalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_MapPointHorizontalAlignment)  and [`MapPointVerticalAlignment`] (https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_MapPointVerticalAlignment) properties of shape file layer. These properties allow to vary the position to Near, Far, and Center by considering the provided latitude, longitude, and the map point icon size.
+The position of the map points can be customized using the [`MapPointHorizontalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_MapPointHorizontalAlignment)  and [`MapPointVerticalAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfMaps.XForms.ShapeFileLayer.html#Syncfusion_SfMaps_XForms_ShapeFileLayer_MapPointVerticalAlignment) properties of shape file layer. These properties allow to vary the position to Near, Far, and Center by considering the provided latitude, longitude, and the map point icon size.
 
 {% tabs %}
 
@@ -743,6 +743,9 @@ maps.Layers.Add(layer);
 {% endtabs %}
 
 ![Multiple selection in Xamarin.Forms Maps](Images/size.jpg)
+
+N> You can refer to our [Xamarin Maps](https://www.syncfusion.com/xamarin-ui-controls/xamarin-maps) feature tour page for its groundbreaking feature representations.
+You can also explore our [Xamarin.Forms Maps example](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Maps) to knows the functionalities of each feature.
 
 ## See also
 

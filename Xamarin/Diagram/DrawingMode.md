@@ -34,3 +34,4 @@ diagram.DrawingMode = DrawingMode.Connector;
 {% endtabs %}
 ![Drawing mode in Xamarin.Forms diagram](DrawingMode_images/DrawingMode.gif)
 
+N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

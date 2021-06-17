@@ -127,7 +127,11 @@ public class CustomStyle : DataGridStyle
 
 ## Custom grouping
 
-The SfDataGrid allows to group a column based on custom logic when the standard grouping techniques do not meet the requirements. To achieve this, write a converter that implements `IValueConverter` with custom grouping logic. Assign that converter to the [GroupColumnDescription.Converter](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html#Syncfusion_SfDataGrid_XForms_GroupColumnDescription_Converter) property.
+The SfDataGrid allows to group a column based on custom logic when the standard grouping techniques do not meet the requirements.
+
+### Using IValueConverter
+
+To achieve custom grouping through converter, write a converter that implements `IValueConverter` with custom grouping logic. Assign that converter to the [GroupColumnDescription.Converter](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html#Syncfusion_SfDataGrid_XForms_GroupColumnDescription_Converter) property.
 
 To set custom grouping converter for the group description that is added to group the freight column, follow the code example:
 
@@ -196,6 +200,50 @@ public class GroupConverter : IValueConverter
     }
 }
 {% endhighlight %}
+
+### Using KeySelector
+
+To achieve custom grouping through Keyselector, specify the custom logic through GroupColumnDescription.KeySelector property and column name to GroupColumnDescription.ColumnName property.
+For an example, the Date column is grouped based on the week basis in the following example.
+
+{% tabs %}
+{% highlight c# %}
+//Apply the CustomGrouping for Date Column by using KeySelector.
+dataGrid.GroupColumnDescriptions.Add(new GroupColumnDescription()
+{
+    ColumnName = "Date",
+    KeySelector = (string ColumnName, object o) =>
+        {
+            var dt = DateTime.Now;
+            var item = (o as SalesByDate).Date;
+            var days = (int)Math.Floor((dt - item).TotalDays);
+            var dayOfWeek = (int)dt.DayOfWeek;
+            var difference = days - dayOfWeek;
+            if (days <= dayOfWeek)
+            {
+                if (days == 0)
+                    return "TODAY";
+                if (days == 1)
+                    return "YESTERDAY";
+                return item.Date.DayOfWeek.ToString().ToUpper();
+            }
+            if (difference > 0 && difference <= 7)
+                return "LAST WEEK";
+            if (difference > 7 && difference <= 14)
+                return "TWO WEEKS AGO";
+            if (difference > 14 && difference <= 21)
+                return "THREE WEEKS AGO";
+            if (dt.Year == item.Date.Year && dt.Month == item.Date.Month)
+                return "EARLIER THIS MONTH";
+            if (DateTime.Now.AddMonths(-1).Month == item.Date.Month)
+                return "LAST MONTH";
+            return "OLDER";
+        }
+
+});
+{% endhighlight %}
+{% endtabs %}
+
 
 ### Sorting the grouped column records
 In custom grouping, you can sort all the inner records of each group by setting [GroupColumnDescription.SortGroupRecords](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html#Syncfusion_SfDataGrid_XForms_GroupColumnDescription_SortGroupRecords) property as `true` to sort the records based on the `GroupColumnDescription.ColumnName` property.

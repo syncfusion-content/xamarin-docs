@@ -10,7 +10,7 @@ documentation: ug
 
 ## Set Maximum Number of Decimal Digits in Xamarin Numeric Entry
 
-The maximum number of digits to be displayed after the decimal point can be specified by using [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits) property. 
+The maximum number of digits to be displayed after the decimal point can be specified by using the [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits) property. 
 
 N> The `MaximumNumberDecimalDigits` property can be provided with positive value only.
 
@@ -37,7 +37,7 @@ this.Content = numericTextBox;
 
 ## Remove Default Decimal Digits in Xamarin Numeric Entry
 
-The default number of decimal digits displayed based on [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits) property. Those default digits can be removed from numeric entry view by disable the `AllowDefaultDecimalDigits` boolean property. 
+Based on [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits) property, the default number of decimal digits is displayed. By disabling the `AllowDefaultDecimalDigits` Boolean property, those default digits can be removed from the numeric entry view.
 
 {% tabs %}
 

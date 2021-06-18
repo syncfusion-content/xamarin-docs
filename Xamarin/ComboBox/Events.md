@@ -98,13 +98,13 @@ The [`DropDownOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Co
 
 ## DropDownClosing Event
 
-The `DropDownClosing` event occurs when the dropdown gets closing.
+The `DropDownClosing` event occurs when the drop-down closes.
 
-### DropDown Closing event args
+### DropDownClosing event args
 
- IsItemSelected - It returns the value indicating whether the  item is selected or not when the dropdown window closes.
+IsItemSelected - It returns the value indicating whether the  item is selected or not when the dropdown window closes.
 
- Cancel - Dropdown close can be restricted by setting e.cancel to true.
+ Cancel - Closing of the dropdown can be handled by setting the e.Cancel.
 
 {% tabs %}
 

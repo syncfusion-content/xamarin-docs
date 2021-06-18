@@ -9,7 +9,7 @@ documentation: ug
 
 # Events in Xamarin DatePicker (SfDatePicker)
 
-Three events have been used for the SfDatePicker when it is in the Dialog mode. 
+Three events are used when the `SfDatePicker` is in Dialog mode.
 
  * Opened
  * Closing
@@ -17,16 +17,17 @@ Three events have been used for the SfDatePicker when it is in the Dialog mode.
 
 ## Opened event
 
-The `Opened` event occurs when the datepicker is opened. 
+The `Opened` event occurs when the DatePicker is opened. 
 
 ## Closing event 
 
-The `Closing` event occurs when the datepicker gets closing. 
-Dropdown close can be restricted by setting `e.cancel` to true.
+The `Closing` event occurs when the DatePicker closes.
+
+Drop-down close can be restricted by setting `e.cancel` to true.
 
 ## Closed event
 
-The `Closed` event was raised after the datepicker is closed.
+The `Closed` event was triggered, after the DatePicker was closed.
 
 {% tabs %}
 

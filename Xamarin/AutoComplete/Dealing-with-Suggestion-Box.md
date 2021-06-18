@@ -115,7 +115,7 @@ namespace AutocompleteSample
 
 ![SuggestionBoxPlacement](images/Dealing-with-Suggestion-Box/suggestion-box-placement-top.png)
 
-N>To resolve the suggestion box overlapping when the keyboard is open in Android platform, set the SoftInputMode to AdjustResize in MainActivity.
+N>Set the SoftInputMode to AdjustResize in MainActivity, to resolve the suggestion box overlapping when the keyboard is open on the Android platform.
 
 {% highlight c# %}
 
@@ -982,46 +982,45 @@ The following code snippet will handle the event.
 {% endtabs %}
 ![Filtered_Items_Image](images/AutoComplete-Filtering-Options/Filtered_Items_SfAutoComplete.png)
 
-N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to knows the functionalities of each feature.
+N> You can refer to our [Xamarin AutoComplete](https://www.syncfusion.com/xamarin-ui-controls/xamarin-autocomplete) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin.Forms AutoComplete example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/AutoComplete) to learn about the functionalities of each feature.
 
 ## DropDownClosing Event
 
-The `DropDownClosing` event occurs when the dropdown get close.
+The `DropDownClosing` event occurs when the drop-down gets close.
 
 ### DropDown Closing event args
 
- IsItemSelected - It returns the value indicating whether the  item is selected or not when the dropdown window closes.
+IsItemSelected - It returns the value indicating whether the  item is selected or not when the dropdown window closes.
 
- Cancel - Dropdown close can be restricted by setting e.cancel to true.
+ Cancel - Closing of the dropdown can be handled by setting the e.Cancel.
 
 {% tabs %}
 
 {% highlight xaml %}
 
-    <autoComplete:SfAutoComplete DisplayMemberPath="Name" DropDownClosing="SfAutoComplete_DropDownClosing"  DataSource="{Binding EmployeeCollection}" >
-     </autoComplete:SfAutoComplete>
+    <autoComplete:SfAutoComplete DisplayMemberPath="Name" DropDownClosing="SfAutoComplete_DropDownClosing"  DataSource="{Binding EmployeeCollection}" />
 
 {% endhighlight %}
 
 {% highlight C# %}
 
-     public MainPage()
-     {
-       InitializeComponent();
-       autoComplete.DropDownClosing += SfAutoComplete_DropDownClosing;
-     }
+    public MainPage()
+    {
+        InitializeComponent();
+        autoComplete.DropDownClosing += SfAutoComplete_DropDownClosing;
+    }
 
-       private void SfAutoComplete_DropDownClosing(object sender, DropDownCancelEventArgs e)
-		{
-            if (e.IsItemSelected)
-            {
-                e.Cancel = true;
-            }
-            else
-            {
-                e.Cancel = false;
-		    }
-		}
+    private void SfAutoComplete_DropDownClosing(object sender, DropDownCancelEventArgs e)
+    {
+        if (e.IsItemSelected)
+        {
+            e.Cancel = true;
+        }
+        else
+        {
+            e.Cancel = false;
+        }
+    }
 {% endhighlight %}
 
 {% endtabs %}

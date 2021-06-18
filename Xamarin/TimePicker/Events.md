@@ -9,7 +9,7 @@ documentation: ug
 
 # Events in Xamarin TimePicker (SfTimePicker)
 
-Three events have been used for the SfTimePicker when it is in the Dialog mode. 
+Three events are used when the `SfTimePicker` is in Dialog mode.
 
  * Opened
  * Closing
@@ -21,12 +21,13 @@ The `Opened` event occurs when the SfTimePicker is opened.
 
 ## Closing event 
 
-The `Closing` event occurs when the SfTimePicker gets closing. 
-Dropdown close can be restricted by setting `e.cancel` to true.
+The `Closing` event occurs when the SfTimePicker closes.
+
+Drop-down close can be restricted by setting `e.cancel` to true.
 
 ## Closed event
 
-The `Closed` event was raised after the SfTimePicker is closed.
+The `Closed` event was triggered, after the `SfTimePicker` was closed.
 
 {% tabs %}
 

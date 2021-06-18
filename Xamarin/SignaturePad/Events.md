@@ -13,7 +13,7 @@ documentation: ug
 
 The `StrokeStarted` event will be triggered when drawing is started.
 
-CancelEventArgs - Signature pad draw start action can restricted by setting the e.cancel to true.
+CancelEventArgs - SignaturePad draw start action can be restricted by setting the e.cancel to true.
 
 {% tabs %}
 

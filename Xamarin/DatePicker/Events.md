@@ -53,7 +53,7 @@ The `Closed` event was triggered, after the DatePicker was closed.
 
 {% highlight C# %}
       
-      public partial class MainPage : ContentPage
+    public partial class MainPage : ContentPage
     {
         public MainPage()
         {

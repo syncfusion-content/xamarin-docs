@@ -53,7 +53,7 @@ The `Closed` event was triggered, after the `SfTimePicker` was closed.
 
 {% highlight C# %}
       
-      public partial class MainPage : ContentPage
+    public partial class MainPage : ContentPage
     {
         public MainPage()
         {
@@ -77,7 +77,7 @@ The `Closed` event was triggered, after the `SfTimePicker` was closed.
         private void TimePicker_Closed(object sender, EventArgs e)
         {
         }
-
+    }
 
 {% endhighlight %}
 

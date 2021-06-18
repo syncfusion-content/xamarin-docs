@@ -124,11 +124,11 @@ IsItemSelected - It returns the value indicating whether the  item is selected o
      public MainPage()
      {
        InitializeComponent();
-      comboBox.DropDownClosing += SfComboBox_DropDownClosing;
+       comboBox.DropDownClosing += SfComboBox_DropDownClosing;
      }
 
-       private void SfComboBox_DropDownClosing(object sender, DropDownCancelEventArgs e)
-        {
+     private void SfComboBox_DropDownClosing(object sender, DropDownCancelEventArgs e)
+     {
             if (e.IsItemSelected)
             {
                 e.Cancel = true;
@@ -138,7 +138,7 @@ IsItemSelected - It returns the value indicating whether the  item is selected o
 
                 e.Cancel = false;
             }
-        }
+     }
 
 {% endhighlight %}
 

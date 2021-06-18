@@ -32,11 +32,11 @@ CancelEventArgs - SignaturePad draw start action can be restricted by setting th
        Signature.StrokeStarted += this.Signature_StrokeStarted;
      }
 
-     private void Signature_StrokeStarted(object sender, Syncfusion.XForms.Core.CancelEventArgs e)
-        {
+     private void Signature_StrokeStarted(object sender, Syncfusion.XForms.Core.CancelEventArgs e)        
+     {
             //To restrict the draw stroke, set e.Cancel to true.
                e.Cancel = true;
-        }
+     }
 
 {% endhighlight %}
 
@@ -63,9 +63,10 @@ The `StrokeCompleted` event will be triggered when drawing is ended.
        Signature.StrokeCompleted += Signature_StrokeCompleted;
      }
 
-    private void Signature_StrokeCompleted(object sender, EventArgs e)
-        {
-        }
+     private void Signature_StrokeCompleted(object sender, EventArgs e)
+     {
+
+     }
 
 {% endhighlight %}
 

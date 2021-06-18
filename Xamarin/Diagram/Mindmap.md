@@ -235,6 +235,4 @@ The mind map free form layout provides an option to rearrange nodes in a layout.
 {% endtabs %}
 ![Freeform in Xamarin.Forms diagram](Mindmap_images/Mindmap_img4.jpeg)
 
-N> Diagram supports mind map layout in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
-
-N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.
+N> Diagram supports mind map layout in Xamarin.Forms.Android and Xamarin.Forms.iOS alone. You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

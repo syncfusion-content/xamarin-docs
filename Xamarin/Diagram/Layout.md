@@ -308,6 +308,4 @@ private void Diagram_BeginNodeRender(object sender, BeginNodeRenderEventArgs arg
 {% endtabs %}
 ![LayoutSpacing in Xamarin.Forms diagram](Layout_images/LayoutSpacing_img3.png)
 
-N> Diagram supports layout sibling with spacing in Xamarin.Forms.Android and Xamarin.Forms.iOS alone.
-
-N> You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.
+N> Diagram supports layout sibling with spacing in Xamarin.Forms.Android and Xamarin.Forms.iOS alone. You can refer to our [Xamarin Diagram](https://www.syncfusion.com/xamarin-ui-controls/xamarin-diagram) feature tour page for its groundbreaking feature representations.You can also explore our [Xamarin Diagram example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Diagram) to understand how to present and manipulate data.

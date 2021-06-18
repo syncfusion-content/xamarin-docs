@@ -1663,9 +1663,7 @@ You can also download the entire source code of this demo [here](https://github.
 
 ## Spacing between messages
 
-SfChat allows to change spacing between the messages in view. Using SfChat.MessageSpacing property You can set the message spacing value in the chat control.
-
-To customize MessageSpacing, refer the below code example:
+SfChat allows to change the vertical spacing between the messages in view using `SfChat.MessageSpacing` property. The default value is 24.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1708,86 +1706,6 @@ namespace GettingStarted
             this.sfChat.CurrentUser = viewModel.CurrentUser;
             this.sfChat.MessageSpacing = 8;
             this.Content = sfChat;
-        }
-    }
-    public class GettingStartedViewModel : INotifyPropertyChanged
-    {
-        private ObservableCollection<object> messages;
-        private Author currentUser;
-
-        public GettingStartedViewModel()
-        {
-            this.messages = new ObservableCollection<object>();
-            this.currentUser = new Author() { Name = "Nancy", Avatar = "People_Circle16.png" };
-            this.GenerateMessages();
-        }
-
-        public ObservableCollection<object> Messages
-        {
-            get
-            {
-                return this.messages;
-            }
-
-            set
-            {
-                this.messages = value;
-            }
-        }
-
-        public Author CurrentUser
-        {
-            get
-            {
-                return this.currentUser;
-            }
-            set
-            {
-                this.currentUser = value;
-                RaisePropertyChanged("CurrentUser");
-            }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        public void RaisePropertyChanged(string propName)
-        {
-            if (this.PropertyChanged != null)
-            {
-                this.PropertyChanged(this, new PropertyChangedEventArgs(propName));
-            }
-        }
-
-        private void GenerateMessages()
-        {
-            this.messages.Add(new TextMessage()
-            {
-                Author = currentUser,
-                Text = "Hi guys, good morning! I'm very delighted to share with you the news that our team is going to launch a new mobile application.",
-            });
-
-            this.messages.Add(new TextMessage()
-            {
-                Author = new Author() { Name = "Andrea", Avatar = "People_Circle2.png" },
-                Text = "Oh! That's great.",
-            });
-
-            this.messages.Add(new TextMessage()
-            {
-                Author = new Author() { Name = "Harrison", Avatar = "People_Circle14.png" },
-                Text = "That is good news.",
-            });
-
-            this.messages.Add(new TextMessage()
-            {
-                Author = new Author() { Name = "Margaret", Avatar = "People_Circle7.png" },
-                Text = "What kind of application is it and when are we going to launch?",
-            });
-
-            this.messages.Add(new TextMessage()
-            {
-                Author = currentUser,
-                Text = "A kind of Emergency Broadcast App.",
-            });
         }
     }
 }

@@ -198,7 +198,7 @@ this.sfDataGrid.SelectAll();
 
 ## Keyboard behavior
 
-`SfDataGrid` supports selection via keyboard interaction for all the Xamarin.Forms platforms including Xamarin.Forms.macOS and Xamarin.Forms.UWP platforms. Keyboard interaction will not have any effect when the `SfDataGrid.SelectionMode` is set as `SelectionMode.None`.
+`SfDataGrid` supports selection via keyboard interaction for all the Xamarin.Forms platforms including Xamarin.Forms.macOS and Xamarin.Forms.WPF platforms. Keyboard interaction will not have any effect when the `SfDataGrid.SelectionMode` is set as `SelectionMode.None`.
 
 <table>
 <tr>
@@ -227,7 +227,7 @@ Moves selection to the previous row directly above the currently selected row wh
 </tr>
 <tr>
 <td>
-<kbd>PageDown</kbd> or For ios, <kbd>Cmd</kbd> + <kbd>DownArrow</kbd> 
+<kbd>PageDown</kbd> or for ios, <kbd>Cmd</kbd> + <kbd>DownArrow</kbd> 
 </td>
 <td>
 SfDataGrid will be scrolled to the next set of rows that are not displayed in view including the partially displayed row. If selection is applied to any row, pressing PageDown arrow will move selection to the last row of the next set of rows when the SelectionMode is Single.
@@ -235,7 +235,7 @@ SfDataGrid will be scrolled to the next set of rows that are not displayed in vi
 </tr>
 <tr>
 <td>
-<kbd>PageUp</kbd> or For ios, <kbd>Cmd</kbd> + <kbd>UpArrow</kbd> 
+<kbd>PageUp</kbd> or for ios, <kbd>Cmd</kbd> + <kbd>UpArrow</kbd> 
 </td>
 <td>
 SfDataGrid will be scrolled to the previous set of rows that are not displayed in view including the partially displayed row. If the selection is applied to any row, pressing PageUp will move selection to the first row of the next set of rows when the SelectionMode is Single.
@@ -251,7 +251,7 @@ Moves selection to the next row directly below the currently selected row when t
 </tr>
 <tr>
 <td>
-<kbd>Ctrl</kbd> + <kbd>Home</kbd> or <kbd>Ctrl</kbd> + <kbd>UpArrow</kbd> or For ios, <kbd>Cmd</kbd> + <kbd>LeftArrow</kbd> or <kbd>Home</kbd>
+<kbd>Ctrl</kbd> + <kbd>Home</kbd> or <kbd>Ctrl</kbd> + <kbd>UpArrow</kbd> or for ios, <kbd>Cmd</kbd> + <kbd>LeftArrow</kbd> or <kbd>Home</kbd>
 </td>
 <td>
 Scrolls grid to the first row of the collection.
@@ -259,7 +259,7 @@ Scrolls grid to the first row of the collection.
 </tr>
 <tr>
 <td>
-<kbd>Ctrl</kbd> + <kbd>End</kbd> or <kbd>Ctrl</kbd> + <kbd>DownArrow</kbd> or For ios, <kbd>Cmd</kbd> + <kbd>RightArrow</kbd> or <kbd>End</kbd>
+<kbd>Ctrl</kbd> + <kbd>End</kbd> or <kbd>Ctrl</kbd> + <kbd>DownArrow</kbd> or for ios, <kbd>Cmd</kbd> + <kbd>RightArrow</kbd> or <kbd>End</kbd>
 </td>
 <td>
 Scrolls grid to the last row of the collection.

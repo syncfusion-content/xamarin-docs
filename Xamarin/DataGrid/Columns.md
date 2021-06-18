@@ -220,9 +220,9 @@ dataGrid.Columns.Add (countryColumn);
 
 ## Adding columns efficiently
 
-SfDataGrid allows you to add more number of columns to SfDataGrid.Columns collection efficiently. Adding or removing more no of columns to collection, updates the UI for each time which negatively impact the performance.
+Adding/removing columns to/from `SfDataGrid.Columns` collection updates the UI (for each add/remove) which negatively impacts the performance.
 
-You can improve the performance while adding, removing columns by suspending all the UI updates using Suspend and resume the updates after adding columns using Resume methods. You have to refresh the UI using RefreshColumns method.
+You can improve the performance while adding/removing columns by suspending all the UI updates using `SfDataGrid.Columns.Suspend` and resume the updates after adding columns using `SfDataGrid.Columns.Resume` methods. You can then finally refresh the UI using `SfDataGrid.RefreshColumns` method.
 
 {% tabs %}
 {% highlight c# %}

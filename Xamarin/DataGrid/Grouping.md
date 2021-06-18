@@ -131,7 +131,7 @@ The SfDataGrid allows to group a column based on custom logic when the standard 
 
 ### Using IValueConverter
 
-To achieve custom grouping through converter, write a converter that implements `IValueConverter` with custom grouping logic. Assign that converter to the [GroupColumnDescription.Converter](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html#Syncfusion_SfDataGrid_XForms_GroupColumnDescription_Converter) property.
+To achieve this, write a converter that implements `IValueConverter` with custom grouping logic. Assign that converter to the [GroupColumnDescription.Converter](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html#Syncfusion_SfDataGrid_XForms_GroupColumnDescription_Converter) property.
 
 To set custom grouping converter for the group description that is added to group the freight column, follow the code example:
 
@@ -203,9 +203,9 @@ public class GroupConverter : IValueConverter
 
 ### Using KeySelector
 
-To achieve custom grouping through KeySelector, specify the custom logic through GroupColumnDescription.KeySelector property and column name to GroupColumnDescription.ColumnName property.
-For an example, the Date column is grouped based on the week basis in the following example.
+To achieve this, specify the custom logic in `GroupColumnDescription.KeySelector` property and column name in `GroupColumnDescription.ColumnName` property.
 
+In the below example, the Date column is grouped based on weeks.
 {% tabs %}
 {% highlight c# %}
 //Apply the CustomGrouping for Date Column by using KeySelector.

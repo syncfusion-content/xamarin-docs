@@ -390,6 +390,9 @@ pdfViewerControl.AnnotationSettings.Rectangle.Settings.IsLocked = true;
 //Disable the circle annotation interaction
 pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = true;
 
+//Disable the polygon annotation interaction
+pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = true;
+
 {% endhighlight %}
 {% endtabs %}
 
@@ -404,6 +407,7 @@ pdfViewerControl.AnnotationSettings.Arrow.Settings.IsLocked = false;
 pdfViewerControl.AnnotationSettings.Line.Settings.IsLocked = false;
 pdfViewerControl.AnnotationSettings.Rectangle.Settings.IsLocked = false;
 pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = false;
+pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = false;
 
 {% endhighlight %}
 {% endtabs %}

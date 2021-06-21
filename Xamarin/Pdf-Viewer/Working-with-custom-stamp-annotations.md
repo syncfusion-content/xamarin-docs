@@ -182,6 +182,8 @@ pdfViewerControl.AnnotationSettings.Stamp.IsLocked = false;
 {% endhighlight %}
 {% endtabs %}
 
+N> The `IsLocked` property of [`StampAnnotation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.StampAnnotation.html) have been marked as obsolete. Use the `StampAnnotation.Settings.IsLocked` property instead.
+
 ## How to retrieve the actual view added as the stamp using the AddStamp method
 
 The stamp annotation view can be retrieved when the stamp is added, tapped, selected, deselected, moved, or resized, and removed from the event data parameter of the respective event handler from the [`CustomStampView`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.StampAnnotationMovedOrResizedEventArgs.html#Syncfusion_SfPdfViewer_XForms_StampAnnotationMovedOrResizedEventArgs_CustomStampView) property. The stamp view, thus retrieved, is the same instance as the one added using the [`AddStamp`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_AddStamp_Xamarin_Forms_View_System_Int32_) method. 

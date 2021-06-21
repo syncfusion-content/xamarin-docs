@@ -393,8 +393,6 @@ pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = true;
 {% endhighlight %}
 {% endtabs %}
 
-N>The older API [SfPdfViewer.AnnotationSettings.Rectangle.IsLocked](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.RectangleAnnotation.html#Syncfusion_SfPdfViewer_XForms_RectangleAnnotation_IsLocked) is marked as obsolete and, this is applicable for other shape annotations as well.
-
 The interaction with shape annotation types will be allowed only if the `SfPdfViewer.AnnotationSettings.IsLocked` API is set to `false`. The following code does not allow the interactions with shape annotations, although the `IsLocked` property of the shape annotation is set to `false`. 
 
 {% tabs %}
@@ -409,6 +407,8 @@ pdfViewerControl.AnnotationSettings.Circle.Settings.IsLocked = false;
 
 {% endhighlight %}
 {% endtabs %}
+
+N> The `IsLocked` properties of the classes [RectangleAnnotation](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.RectangleAnnotation.html), [CircleAnnotation](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.CircleAnnotation.html), [LineAnnotation](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.LineAnnotation.html) and [ArrowAnnotation](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.ArrowAnnotation.html) have been marked as obsolete. Use the `RectangleAnnotation.Settings.IsLocked`, `CircleAnnotation.Settings.IsLocked`, `LineAnnotation.Settings.IsLocked` and `ArrowAnnotation.Settings.IsLocked` properties instead.
 
 ## How to get and set the name of the annotations?
 

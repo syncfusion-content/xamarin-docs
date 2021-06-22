@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Theming in Xamarin Scheduler control | Syncfusion
-description: Learn here all about Theming support in Syncfusion Xamarin Scheduler (SfSchedule) control, its elements and more.
+description: This topic explains about how to add the Default theme (Light theme), Dark theme and its customization in schedule.
 platform: Xamarin
 control: SfSchedule
 documentation: ug
@@ -176,6 +176,141 @@ Day view
 ![SfSchedule themes](GettingStarted_images/Xamarin.Forms-Schedule-Customizedthemeday.png)
 
 You can download the entire source code of this demo for Xamarin.Forms from
-here [ScheduleTheme](https://github.com/SyncfusionExamples/xamarin-schedule-theming).
+here [ScheduleTheme](https://github.com/SyncfusionExamples/xamarin-schedule-theming). 
+
+## Dark theme
+
+In the below code you can see the dark theme and key value for the resources.
+
+{% tabs %}
+{% highlight xaml %}
+    <!--SfSchedule-->
+    <x:String x:Key="SfScheduleTheme">CommonTheme</x:String>
+    <!--ScheduleBackgroundColor-->
+    <Color x:Key="SfScheduleBackgroundColor">#1A1A1A</Color>
+    <!--CurrentTimeIndicatorColor-->
+    <Color x:Key="SfScheduleCurrentTimeIndicatorColor">#F5F5F5</Color>
+    <!--DayViewSettings-->
+    <Color x:Key="SfScheduleDayViewNonWorkingHoursTimeSlotColor">#232323</Color>
+    <Color x:Key="SfScheduleDayViewNonWorkingHoursTimeSlotBorderColor">#313131</Color>
+    <Color x:Key="SfScheduleDayViewTimeSlotColor">#1A1A1A</Color>
+    <Color x:Key="SfScheduleDayViewTimeSlotBorderColor">#313131</Color>
+    <Color x:Key="SfScheduleDayViewVerticalLineColor">#313131</Color>
+    <Color x:Key="SfScheduleDayViewAllDayAppointmentLayoutColor">#1A1A1A</Color>
+    <!--WeekViewSettings-->
+    <Color x:Key="SfScheduleWeekViewNonWorkingHoursTimeSlotColor">#232323</Color>
+    <Color x:Key="SfScheduleWeekViewNonWorkingHoursTimeSlotBorderColor">#313131</Color>
+    <Color x:Key="SfScheduleWeekViewTimeSlotColor">#1A1A1A</Color>
+    <Color x:Key="SfScheduleWeekViewTimeSlotBorderColor">#313131</Color>
+    <Color x:Key="SfScheduleWeekViewVerticalLineColor">#313131</Color>
+    <Color x:Key="SfScheduleWeekViewAllDayAppointmentLayoutColor">#1A1A1A</Color>
+    <!--WorkWeekViewSettings-->
+    <Color x:Key="SfScheduleWorkWeekViewNonWorkingHoursTimeSlotColor">#232323</Color>
+    <Color x:Key="SfScheduleWorkWeekViewNonWorkingHoursTimeSlotBorderColor">#313131</Color>
+    <Color x:Key="SfScheduleWorkWeekViewTimeSlotColor">#1A1A1A</Color>
+    <Color x:Key="SfScheduleWorkWeekViewTimeSlotBorderColor">#313131</Color>
+    <Color x:Key="SfScheduleWorkWeekViewVerticalLineColor">#313131</Color>
+    <Color x:Key="SfScheduleWorkWeekViewAllDayAppointmentLayoutColor">#1A1A1A</Color>
+    <!--TimelineViewSettings-->
+    <Color x:Key="SfScheduleTimelineViewNonWorkingHoursTimeSlotColor">#232323</Color>
+    <Color x:Key="SfScheduleTimelineViewNonWorkingHoursTimeSlotBorderColor">#313131</Color>
+    <Color x:Key="SfScheduleTimelineViewTimeSlotColor">#1A1A1A</Color>
+    <Color x:Key="SfScheduleTimelineViewTimeSlotBorderColor">#313131</Color>
+    <!--MonthViewSettings-->
+    <Color x:Key="SfScheduleMonthViewSelectionTextColor">#FFFFFF</Color>
+    <!--DayLabelSettings-->
+    <Color x:Key="SfScheduleDayViewLabelTimeLabelColor">#A6A6A6</Color>
+    <!--WeekLabelSettings-->
+    <Color x:Key="SfScheduleWeekViewLabelTimeLabelColor">#A6A6A6</Color>
+    <!--WorkWeekLabelSettings-->
+    <Color x:Key="SfScheduleWorkWeekViewLabelTimeLabelColor">#A6A6A6</Color>
+    <!--TimelineLabelSettings-->
+    <Color x:Key="SfScheduleTimelineViewLabelTimeLabelColor">#A6A6A6</Color>
+    <!--HeaderStyle-->
+    <Color x:Key="SfScheduleHeaderBackgroundColor">#1A1A1A</Color>
+    <Color x:Key="SfScheduleHeaderTextColor">#D1D1D1</Color>
+    <!--ViewHeaderStyle-->
+    <Color x:Key="SfScheduleViewHeaderDayTextColor">#D1D1D1</Color>
+    <Color x:Key="SfScheduleViewHeaderBackgroundColor">#1A1A1A</Color>
+    <Color x:Key="SfScheduleViewHeaderDateTextColor">#D1D1D1</Color>
+    <!--SelectionStyle-->
+    <Color x:Key="SfScheduleSelectionBackgroundColor">#752A2A2A</Color>
+    <Color x:Key="SfScheduleSelectionBorderColor">#313131</Color>
+    <!--AppointmentStyle-->
+    <Color x:Key="SfScheduleAppointmentTextColor">#FFFFFF</Color>
+    <Color x:Key="SfScheduleAppointmentBorderColor">#1A1A1A</Color>
+    <Color x:Key="SfScheduleAppointmentSelectionBorderColor">#BDBDBD</Color>
+    <Color x:Key="SfScheduleAppointmentSelectionTextColor">#FFFFFF</Color>
+    <!--MonthViewCellStyle-->
+    <Color x:Key="SfScheduleMonthCellTextColor">#D1D1D1</Color>
+    <Color x:Key="SfScheduleMonthCellBackgroundColor">#1A1A1A</Color>
+    <Color x:Key="SfScheduleMonthCellTodayBackgroundColor">#1A1A1A</Color>
+    <Color x:Key="SfScheduleMonthCellPreviousMonthTextColor">#858585</Color>
+    <Color x:Key="SfScheduleMonthCellPreviousMonthBackgroundColor">#1A1A1A</Color>
+    <Color x:Key="SfScheduleMonthCellNextMonthBackgroundColor">#1A1A1A</Color>
+    <Color x:Key="SfScheduleMonthCellNextMonthTextColor">#858585</Color>
+    <!--WeekNumberStyle-->
+    <Color x:Key="SfScheduleMonthViewWeekNumberTextColor">#D1D1D1</Color>
+    <Color x:Key="SfScheduleMonthViewWeekNumberBackgroundColor">#1A1A1A</Color>
+    <!--AgendaViewStyle-->
+    <Color x:Key="SfScheduleMonthAgendaViewSubjectFontColor">#D1D1D1</Color>
+    <Color x:Key="SfScheduleMonthAgendaViewBackgroundColor">#2A2A2A</Color>
+    <Color x:Key="SfScheduleMonthAgendaViewTimeFontColor">#A6A6A6</Color>
+    <Color x:Key="SfScheduleMonthAgendaViewDateFontColor">#A6A6A6</Color>
+    <!--TimeIndicatorStyle-->
+    <Color x:Key="SfScheduleTimeIndicatorTextColor">#6D25E8</Color>
+    <!--SfSchedule-End-->
+{% endhighlight %}
+{% endtabs %} 
+
+You need to apply the syncfusion theme dictionaries in your application to view the dark theme.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:ScheduleTheme" x:Class="ScheduleTheme.MainPage" xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+              xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms">
+    <ContentPage.Resources>
+        <syncTheme:SyncfusionThemeDictionary>
+            <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+                <syncTheme:DarkTheme x:Name="DarkTheme" />
+            </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+        </syncTheme:SyncfusionThemeDictionary>
+    </ContentPage.Resources>   
+    <syncfusion:SfSchedule x:Name="schedule">
+    </syncfusion:SfSchedule>
+</ContentPage>  
+{% endhighlight %}
+{% endtabs %}
+
+## Customizing the dark theme
+
+You can customize the dark theme by overriding the existing key and set the new value.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:ScheduleTheme" x:Class="ScheduleTheme.MainPage" xmlns:syncfusion="clr-namespace:Syncfusion.SfSchedule.XForms;assembly=Syncfusion.SfSchedule.XForms"
+              xmlns:syncTheme="clr-namespace:Syncfusion.XForms.Themes;assembly=Syncfusion.Core.XForms">
+    <ContentPage.Resources>
+        <syncTheme:SyncfusionThemeDictionary>
+            <syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+                <syncTheme:DarkTheme x:Name="DarkTheme" />
+                <syncfusion:SfScheduleStyles />
+                <ResourceDictionary>
+                    <Color x:Key="SfScheduleHeaderTextColor">Red</Color>
+                    <Color x:Key="SfScheduleViewHeaderDayTextColor">Blue</Color>
+                </ResourceDictionary>
+            </syncTheme:SyncfusionThemeDictionary.MergedDictionaries>
+        </syncTheme:SyncfusionThemeDictionary>
+    </ContentPage.Resources>   
+    <syncfusion:SfSchedule x:Name="schedule">
+    </syncfusion:SfSchedule>
+</ContentPage> 
+{% endhighlight %}
+{% endtabs %}
+
+You can download the entire source code of this demo for Xamarin.Forms from
+here.
 
 N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.

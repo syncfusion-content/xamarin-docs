@@ -260,11 +260,11 @@ pdfViewerControl.AnnotationSettings.HandwrittenSignature.IsLocked = false;
 {% endhighlight %}
 {% endtabs %}
 
-## How to get and set the name of the annotations?
+## How to get and set the name of the handwritten signatures?
 
-The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API.
+The PDF Viewer allows the users to get and set the name of handwritten signatures through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API.
 
-The following code sample explains modifying the name of the annotation in the [InkAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_InkAdded) event. 
+The following code sample explains modifying the name of the handwritten signature in the [InkAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_InkAdded) event. 
 
 {% tabs %}
 {% highlight c# %}
@@ -282,3 +282,18 @@ private void PdfViewerControl_InkAdded(object sender, InkAddedEventArgs args)
 N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [InkAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_InkAdded) event. But this can be done in all other events as well. 
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.
+
+## How to Customize the Minimum size of the Handwritten Signatures
+
+By the MinimumSize property, You can set the minimum size to which the handwritten signatures could be resized.
+
+Refer the following code example:
+
+{% tabs %}
+{% highlight c# %}
+
+//Sets the minimum size for the handwritten signatures
+pdfViewerControl.AnnotationSettings.HandwrittenSignature.MinimumSize = new Size(10, 10);
+
+{% endhighlight %}
+{% endtabs %}

@@ -435,3 +435,31 @@ private void PdfViewerControl_ShapeAnnotationAdded(object sender, ShapeAnnotatio
 N> For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [ShapeAnnotationAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ShapeAnnotationAdded) event. But this can be done in all other events as well. 
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.
+
+## How to Customize the Minimum size and Minimum length of the Shape Annotations?
+
+By the MinimumSize property, You can set the minimum size to which the rectangle and circle shape annotations could be resized. 
+
+By the MinimumLength property, You can set the minimum length to which the annotations could be resized for line and arrow.
+
+Refer the following code example:
+
+{% tabs %}
+{% highlight c# %}
+
+//Sets the minimum size for the rectangle annotations
+pdfViewerControl.AnnotationSettings.Rectangle.Settings.MinimumSize = new Size(10, 10);
+
+//Sets the minimum size for the circle annotations
+pdfViewerControl.AnnotationSettings.Circle.Settings.MinimumSize = new Size(10, 10);
+
+//Sets the minimum length for the line annotations
+pdfViewerControl.AnnotationSettings.Line.Settings.MinimumLength = 10;
+
+//Sets the minimum length for the arrow annotations
+pdfViewerControl.AnnotationSettings.Arrow.Settings.MinimumLength = 10;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The value of MinimumSize property will does not affect line, arrow, and polygon annotations. Also, the value of MinimumLength property will does not affect rectangle, circle, and polygon annotations.

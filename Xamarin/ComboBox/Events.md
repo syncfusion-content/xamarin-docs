@@ -96,6 +96,55 @@ For more information regarding this refer to [`this`](https://help.syncfusion.co
 
 The [`DropDownOpen`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.DropDownOpenEventHandler.html) event occurs when the SfComboBox drop-down is opened.
 
+## DropDownClosing Event
+
+The `DropDownClosing` event occurs when the drop-down closes.
+
+### DropDownClosing event args
+
+IsItemSelected - It returns the value indicating whether the  item is selected or not when the dropdown window closes.
+
+ Cancel - Closing of the dropdown can be handled by setting the e.Cancel.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <combobox:SfComboBox HeightRequest="40"
+                             x:Name="comboBox"
+                             DataSource="{Binding EmployeeCollection}"
+                             DropDownClosing="SfComboBox_DropDownClosing"
+                             DisplayMemberPath="Name"
+                             />
+
+{% endhighlight %}
+
+{% highlight C# %}
+
+     public MainPage()
+     {
+       InitializeComponent();
+       comboBox.DropDownClosing += SfComboBox_DropDownClosing;
+     }
+
+     private void SfComboBox_DropDownClosing(object sender, DropDownCancelEventArgs e)
+     {
+            if (e.IsItemSelected)
+            {
+                e.Cancel = true;
+            }
+            else
+            {
+
+                e.Cancel = false;
+            }
+     }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+
 ## DropDownClosed Event
 
 The [`DropDownClosed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.ComboBox.SfComboBox.DropDownClosedEventHandler.html) event occurs when the SfComboBox drop-down is closed.

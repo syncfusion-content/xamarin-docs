@@ -285,7 +285,7 @@ N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com
 
 ## How to Customize the Minimum size of the Handwritten Signatures
 
-By the MinimumSize property, You can set the minimum size to which the handwritten signatures could be resized.
+By the `MinimumSize` property, You can set the minimum size to which the handwritten signatures could be resized.
 
 Refer the following code example:
 
@@ -297,3 +297,61 @@ pdfViewerControl.AnnotationSettings.HandwrittenSignature.MinimumSize = new Size(
 
 {% endhighlight %}
 {% endtabs %}
+
+## How to add the Handwritten signature programmatically?
+
+By `AddAnnotation` method, PDF Viewer allows the users to add the handwritten signature programmatically. The Handwritten signature annotation   needs to be added in the specified page will be the parameter of this method. 
+
+The following code sample illustrates the adding of handwritten signature programmatically. 
+
+{% tabs %}
+{% highlight c# %}
+
+var inkPointsCollection = new List<List<float>>();
+
+inkPointsCollection.Add(new List<float> { 53f, 525f, 53f, 527f, 53f, 528f, 53f, 531f, 53f, 549f, 54f, 570f, 56f, 597f, 57f, 623f, 59f, 652f, 60f, 679f, 62f, 705f, 64f, 726f, 65f, 744f, 66f, 758f, 66f, 768f, 65f, 777f, 65f, 782f, 65f, 784f, 64f, 786f, 64f, 786f, 63f, 786f, 63f, 786f, 63f, 784f, 66f, 774f, 71f, 757f, 79f, 734f, 88f, 708f, 99f, 681f, 112f, 652f, 126f, 627f, 140f, 606f, 150f, 591f, 158f, 582f, 162f, 578f, 164f, 577f, 165f, 576f, 166f, 576f, 165f, 578f, 155f, 592f, 143f, 605f, 121f, 621f, 99f, 631f, 77f, 639f, 54f, 644f, 35f, 645f, 20f, 644f, 10f, 642f, 4f, 642f, 2f, 641f, 1f, 640f, 0f, 639f, 0f, 639f, 2f, 639f, 20f, 645f, 47f, 657f, 75f, 672f, 106f, 688f, 137f, 704f, 168f, 718f, 197f, 732f, 221f, 741f, 240f, 748f, 254f, 753f, 254f, 753f });
+
+System.Drawing.Point position = new System.Drawing.Point(100, 100);
+HandwrittenSignature signature = new HandwrittenSignature(inkPointsCollection, 1, position);
+signature.Settings.Color = Color.Red;           
+
+//Adds the  handwritten signature to the specified page 
+pdfViewerControl.AddAnnotation(signature);
+
+{% endhighlight %}
+{% endtabs %}
+
+## How to select the Handwritten signature programmatically?
+
+By `SelectAnnotation` method, You can select the handwritten signature programmatically. The specified handwritten signature object passed as a parameter.
+ 
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Selects the specified handwritten signature 
+pdfViewerControl.SelectAnnotation(signature);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Once `SelectAnnotation` method is called and as long as the annotation stays selected, the `SelectedAnnotation` property will return the same instance as the parameter of this method.
+
+## How to deselect the Handwritten signature programmatically
+
+By `DeselectAnnotation` method, You can deselect the handwritten signature programmatically .The specified handwritten signature object passed as a parameter. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Deselects the specified handwritten signature
+pdfViewerControl.DeselectAnnotation(signature);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> There is no effect in calling `DeselectAnnotation` method, if the given annotation is not selected. Once this method is called, the `SelectedAnnotation` property will return null until any other annotation gets selected.
+

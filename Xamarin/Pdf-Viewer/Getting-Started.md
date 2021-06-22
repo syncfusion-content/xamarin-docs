@@ -517,3 +517,38 @@ pdfViewerControl.LoadDocument(stream);
 N>Annotations are only flattened when the page is rendered in the viewer only  for  viewing  the  appearance  of  annotations.  Once,  the  annotations  have flattened  the  interactions  such  as  select,  edit,  resize,  and  remove  cannot  be performed.  Setting  the  [Flatten](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.AnnotationSettings.html#Syncfusion_SfPdfViewer_XForms_AnnotationSettings_Flatten)  API  to  true  does  not  affect  the  save  and annotation export operations and the annotations will not be flattened in these operations.
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.
+
+## Rendering the appearance content of signature form fields
+
+By default, the PDF viewer does not display the appearance content of signature form fields. But the appearance can be displayed by flattening the signature form fields before loading the PDF. This can be achieved by setting the `FlattenSignatureFields` property as true. The default value of the property is set as false.
+
+{% tabs %}
+{% highlight c# %}
+
+//Sets a value whether the signature form fields should be flattened when the PDF is loaded or not.
+pdfViewerControl.FormSettings.FlattenSignatureFields = true;
+
+//Loads the PDF. 
+pdfViewerControl.LoadDocument(stream);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Signature form fields are only flattened when the page displayed in the viewer is only for viewing the appearance of signature form fields. Once the signature form fields are flattened, the interactions such as select, edit, resize, and remove cannot be performed. Setting the `FlattenSignatureFields` property as true will does not affect the save and form field export operations. The signature form fields will not be flattened in these operations.
+
+## How to get the list of annotations present in the PDF?
+
+By using `Annotations` property, You can get the list of annotations present in the PDF document.
+  .
+Refer the following code sample.
+
+{% tabs %}
+{% highlight c# %}
+
+//Gets the list annotations present in the PDF
+var annotations = pdfViewerControl.Annotations;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The list remains empty If the PDF does not have any pre-existing annotations.

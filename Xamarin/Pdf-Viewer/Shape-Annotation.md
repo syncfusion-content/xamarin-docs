@@ -438,9 +438,9 @@ N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com
 
 ## How to Customize the Minimum size and Minimum length of the Shape Annotations?
 
-By the MinimumSize property, You can set the minimum size to which the rectangle and circle shape annotations could be resized. 
+By the `MinimumSize` property, You can set the minimum size to which the rectangle and circle shape annotations could be resized. 
 
-By the MinimumLength property, You can set the minimum length to which the annotations could be resized for line and arrow.
+By the `MinimumLength` property, You can set the minimum length to which the annotations could be resized for line and arrow.
 
 Refer the following code example:
 
@@ -463,3 +463,100 @@ pdfViewerControl.AnnotationSettings.Arrow.Settings.MinimumLength = 10;
 {% endtabs %}
 
 N> The value of MinimumSize property will does not affect line, arrow, and polygon annotations. Also, the value of MinimumLength property will does not affect rectangle, circle, and polygon annotations.
+
+## Draw a cloud shape annotation
+
+To draw a cloud shape annotation, you should set the `BorderEffect` property of the shape annotation settings to BorderEffect.Cloudy. Only the rectangle and polygon annotations can be drawn with cloud border style. The following sample code illustrates how to draw a rectangle annotation with the cloud border style.
+
+{% tabs %}
+{% highlight c# %}
+
+SfPdfViewer pdfViewer = new SfPdfViewer();
+pdfViewer.AnnotationMode = AnnotationMode.Rectangle;
+
+pdfViewerControl.AnnotationSettings.Rectangle.Settings.BorderEffect = BorderEffect.Cloudy;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The value of BorderEffect property will not affect other shape annotations such as circle, line, and arrow annotations. 
+
+## Setting the default border style
+
+You can set the border style for the rectangle and polygon annotations using the `BorderEffect` property.  
+
+Refer  the following code example:
+
+{% tabs %}
+{% highlight c# %}
+
+//Sets the cloud border style for rectangle annotation
+pdfViewerControl.AnnotationSettings.Rectangle.Settings.BorderEffect = BorderEffect.Cloudy;
+
+//Sets the cloud border style for polygon annotation pdfViewerControl.AnnotationSettings.Polygon.Settings.BorderEffect = BorderEffect.Cloudy;
+
+{% endhighlight %}
+{% endtabs %}
+
+N> The value of BorderEffect property will not affect other shape annotations such as circle, line, and arrow annotations. 
+
+## Adding the shape annotations programmatically 
+
+You can add the shape annotations programmatically by using `AddAnnotation` method with the created shape annotation object passed as a parameter. The `ShapeAnnotation` instance   acquires the ShapeAnnotationType, page number and bounds as the parameters. 
+
+The following code sample illustrates the adding of rectangle annotation programmatically. 
+
+{% tabs %}
+{% highlight c# %}
+
+//Bounds in which the rectangle shape annotation should be added
+Rectangle bounds = new Rectangle(100, 100, 200, 200);
+
+//Creates a new rectangle shape annotation
+ShapeAnnotation shapeAnnotation = new ShapeAnnotation(ShapeAnnotationType.Rectangle, 1, rectangle);         
+
+//Sets the stroke color for the rectangle shape annotation 
+shapeAnnotation.Settings.StrokeColor = Color.Red;
+
+//Add the rectangle shape annotation to the specified page
+pdfViewerControl.AddAnnotation(shapeAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> For the purpose of illustration, we have only provided the code example for adding rectangle annotation. But  can follow the same procedure for other shape annotations too.
+
+## How to select the shape annotation programmatically?
+
+You can select the shape annotation programmatically by using `SelectAnnotation` method with the specified shape annotation object passed as a parameter. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Selects the specified shape annotation
+pdfViewerControl.SelectAnnotation(shapeAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Once `SelectAnnotation` method is called and as long as the annotation stays selected, the `SelectedAnnotation` property will return the same instance as the parameter of this method.
+
+## How to deselect the shape annotation programmatically?
+
+By using `DeselectAnnotation` method, You can deselect the shape annotation programmatically. The specified shape annotation object passed as a parameter. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Deselects the specified shape annotation
+pdfViewerControl.DeselectAnnotation(shapeAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Calling `DeselectAnnotation` method has no effect if the given annotation is not selected.   The `SelectedAnnotation` property will return null until any other annotation gets selected.
+

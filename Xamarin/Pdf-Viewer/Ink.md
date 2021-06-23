@@ -57,7 +57,7 @@ pdfViewer.AnnotationMode = AnnotationMode.None;
 {% endhighlight %}
 {% endtabs %}
 
-### Adding ink annotation
+### Adding ink annotation using toolbar
 
 Steps involved in adding ink annotation to the PDF document:
 
@@ -87,6 +87,29 @@ The following code can be used to ignore or discard the drawn ink annotation to 
 {% highlight c# %}
 
 pdfViewer.EndInkSession(false);
+
+{% endhighlight %}
+{% endtabs %}
+
+## Adding ink annotation programmatically
+
+By `AddAnnotation` method, You can add the ink annotations programmatically. The created ink annotation object passed as a parameter. The `InkAnnotation` instance acquires the InkPointsCollection, page number and position as the parameters. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+var inkPointsCollection = new List<List<float>>();
+
+inkPointsCollection.Add(new List<float> { 53f, 525f, 53f, 527f, 53f, 528f, 53f, 531f, 53f, 549f, 54f, 570f, 56f, 597f, 57f, 623f, 59f, 652f, 60f, 679f, 62f, 705f, 64f, 726f, 65f, 744f, 66f, 758f, 66f, 768f, 65f, 777f, 65f, 782f, 65f, 784f, 64f, 786f, 64f, 786f, 63f, 786f, 63f, 786f, 63f, 784f, 66f, 774f, 71f, 757f, 79f, 734f, 88f, 708f, 99f, 681f, 112f, 652f, 126f, 627f, 140f, 606f, 150f, 591f, 158f, 582f, 162f, 578f, 164f, 577f, 165f, 576f, 166f, 576f, 165f, 578f, 155f, 592f, 143f, 605f, 121f, 621f, 99f, 631f, 77f, 639f, 54f, 644f, 35f, 645f, 20f, 644f, 10f, 642f, 4f, 642f, 2f, 641f, 1f, 640f, 0f, 639f, 0f, 639f, 2f, 639f, 20f, 645f, 47f, 657f, 75f, 672f, 106f, 688f, 137f, 704f, 168f, 718f, 197f, 732f, 221f, 741f, 240f, 748f, 254f, 753f, 254f, 753f });
+
+System.Drawing.Point position = new System.Drawing.Point(100, 100);
+InkAnnotation inkAnnotation = new InkAnnotation(inkPointsCollection, 1, position);
+inkAnnotation.Settings.Color = Color.Red;     
+      
+//Adds the ink annotation to the specified page 
+pdfViewer.AddAnnotation(inkAnnotation);
 
 {% endhighlight %}
 {% endtabs %}
@@ -407,9 +430,39 @@ pdfViewer.AnnotationSettings.Ink.Thickness = 5;
 {% endhighlight %}
 {% endtabs %}
 
+### Changing the minimum size
+
+By the `AnnotationSettings.Ink.MinimumSize` property, You can set the minimum size to which the ink annotations could be resized. 
+
+Refer the following code example:
+
+{% tabs %}
+{% highlight c# %}
+
+//Sets the minimum size for the ink annotations
+pdfViewer.AnnotationSettings.Ink.MinimumSize = new Size(10, 10);
+
+{% endhighlight %}
+{% endtabs %}
+
 ## How to select the ink annotation?
 
 You can select the ink annotation by tapping the annotation. 
+
+### Select the ink annotation programmatically
+
+By `SelectAnnotation` method, You can select the ink annotation programmatically. The specified ink annotation object passed as a parameter. The following code example explains the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Selects the specified ink annotation
+pdfViewer.SelectAnnotation(inkAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Once `SelectAnnotation` method is called and as long as the annotation stays selected, the `SelectedAnnotation` property will return the same instance as the parameter of this method.
 
 ### How to change the properties of ink annotation after selection?
 
@@ -519,6 +572,23 @@ private void PdfViewer_InkDeselected(object sender, InkDeselectedEventArgs args)
 
 {% endhighlight %}
 {% endtabs %}
+
+### Deselect the ink annotation programmatically
+
+By `DeselectAnnotation` method, You can deselect the ink annotation programmatically. The specified ink annotation object passed as a parameter. 
+
+The following code Sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Deselects the specified ink annotation
+pdfViewer.DeselectAnnotation(inkAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> There is no effect in calling `DeselectAnnotation` method if the given annotation is not selected. Once this method is called, the `SelectedAnnotation` property will return null until any other annotation gets selected.
 
 ## How to move or resize the selected ink annotation?
 
@@ -642,76 +712,6 @@ private void PdfViewerControl_InkAdded(object sender, InkAddedEventArgs args)
 {% endhighlight %}
 {% endtabs %}
 
-N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [InkAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_InkAdded) event. But this can be done in all other events as well. 
-
-## How to Customize the Minimum size of the Ink Annotations?
-
-By the `MinimumSize` property, You can set the minimum size to which the ink annotations could be resized. 
-
-Refer the following code example:
-
-{% tabs %}
-{% highlight c# %}
-
-//Sets the minimum size for the ink annotations
-pdfViewerControl.AnnotationSettings.Ink.MinimumSize = new Size(10, 10);
-
-{% endhighlight %}
-{% endtabs %}
-
-## How to add the ink annotation programmatically?
-
-By `AddAnnotation` method, You can add the ink annotations. The created ink annotation object passed as a parameter. The `InkAnnotation` instance  acquires the InkPointsCollection, page number and position as the parameters. 
-
-The following code sample illustrates the same.
-
-{% tabs %}
-{% highlight c# %}
-
-var inkPointsCollection = new List<List<float>>();
-
-inkPointsCollection.Add(new List<float> { 53f, 525f, 53f, 527f, 53f, 528f, 53f, 531f, 53f, 549f, 54f, 570f, 56f, 597f, 57f, 623f, 59f, 652f, 60f, 679f, 62f, 705f, 64f, 726f, 65f, 744f, 66f, 758f, 66f, 768f, 65f, 777f, 65f, 782f, 65f, 784f, 64f, 786f, 64f, 786f, 63f, 786f, 63f, 786f, 63f, 784f, 66f, 774f, 71f, 757f, 79f, 734f, 88f, 708f, 99f, 681f, 112f, 652f, 126f, 627f, 140f, 606f, 150f, 591f, 158f, 582f, 162f, 578f, 164f, 577f, 165f, 576f, 166f, 576f, 165f, 578f, 155f, 592f, 143f, 605f, 121f, 621f, 99f, 631f, 77f, 639f, 54f, 644f, 35f, 645f, 20f, 644f, 10f, 642f, 4f, 642f, 2f, 641f, 1f, 640f, 0f, 639f, 0f, 639f, 2f, 639f, 20f, 645f, 47f, 657f, 75f, 672f, 106f, 688f, 137f, 704f, 168f, 718f, 197f, 732f, 221f, 741f, 240f, 748f, 254f, 753f, 254f, 753f });
-
-System.Drawing.Point position = new System.Drawing.Point(100, 100);
-InkAnnotation inkAnnotation = new InkAnnotation(inkPointsCollection, 1, position);
-inkAnnotation.Settings.Color = Color.Red;     
-      
-//Adds the ink annotation to the specified page 
-pdfViewerControl.AddAnnotation(inkAnnotation);
-
-{% endhighlight %}
-{% endtabs %}
-
-## How to select the Ink annotation programmatically?
-
-By using `SelectAnnotation` method , You can select the ink annotation programmatically. The specified ink annotation object passed as a parameter. The following code example explains the same.
-
-{% tabs %}
-{% highlight c# %}
-
-//Selects the specified ink annotation
-pdfViewerControl.SelectAnnotation(inkAnnotation);
-
-{% endhighlight %}
-{% endtabs %}
-
-N> Once SelectAnnotation method is called and as long as the annotation stays selected, the SelectedAnnotation property will return the same instance as the parameter of this method.
-
-## How to deselect the Ink annotation programmatically?
-
-By `DeselectAnnotation` method ,You can deselect the ink annotation programmatically. The specified ink annotation object passed as a parameter. 
-
-The following code Sample illustrates the same.
-
-{% tabs %}
-{% highlight c# %}
-
-//Deselects the specified ink annotation
-pdfViewerControl.DeselectAnnotation(inkAnnotation);
-
-{% endhighlight %}
-{% endtabs %}
-
-N> There is no effect in calling `DeselectAnnotation` method if the given annotation is not selected. Once this method is called, the `SelectedAnnotation` property will return null until any other annotation gets selected.
+N>For illustration purposes, we have only provided the sample for modifying the name of the ink annotation in the [InkAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_InkAdded) event. But this can be done in all other events as well. 
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

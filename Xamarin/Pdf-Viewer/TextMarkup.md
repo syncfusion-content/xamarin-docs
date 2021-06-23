@@ -64,6 +64,24 @@ pdfViewerControl.AnnotationMode = AnnotationMode.None;
 {% endhighlight %}
 {% endtabs %}
 
+### Highlight the text programmatically
+
+By `AddAnnotation` method , You can highlight the text programmatically. The created text markup annotation object passed as a parameter. The `TextMarkupAnnotation` instance acquires the `TextMarkupAnnotationType`, page number, start index and end index of the text as the parameters. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Creates the text markup annotation             
+TextMarkupAnnotation textMarkupAnnotation = new TextMarkupAnnotation(TextMarkupAnnotationType.Highlight, 2, 20, 200);        
+   
+//Add the text markup annotation to the specified page
+pdfViewerControl.AddAnnotation(textMarkupAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Underline a text
 
 The two ways to underline a text in the PDF document are: 
@@ -114,6 +132,24 @@ C# code to switch to normal mode from annotation mode.
 {% highlight c# %}
 
 pdfViewerControl.AnnotationMode = AnnotationMode.None;
+
+{% endhighlight %}
+{% endtabs %}
+
+### Underline the text programmatically
+
+By `AddAnnotation` method , You can underline the text programmatically. The created text markup annotation object passed as a parameter. The `TextMarkupAnnotation` instance acquires the `TextMarkupAnnotationType`, page number, start index and end index of the text as the parameters. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Creates the text markup annotation             
+TextMarkupAnnotation textMarkupAnnotation = new TextMarkupAnnotation(TextMarkupAnnotationType.Underline, 2, 20, 200);        
+   
+//Add the text markup annotation to the specified page
+pdfViewerControl.AddAnnotation(textMarkupAnnotation);
 
 {% endhighlight %}
 {% endtabs %}
@@ -170,6 +206,58 @@ pdfViewerControl.AnnotationMode = AnnotationMode.None;
 
 {% endhighlight %}
 {% endtabs %}
+
+### Strikethrough the text programmatically
+
+By `AddAnnotation` method , You can strikethrough the text programmatically. The created text markup annotation object passed as a parameter. The `TextMarkupAnnotation` instance acquires the `TextMarkupAnnotationType`, page number, start index and end index of the text as the parameters. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Creates the text markup annotation             
+TextMarkupAnnotation textMarkupAnnotation = new TextMarkupAnnotation(TextMarkupAnnotationType.Strikethrough, 2, 20, 200);        
+   
+//Add the text markup annotation to the specified page
+pdfViewerControl.AddAnnotation(textMarkupAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
+## Selecting text markup annotation programmatically
+
+By `SelectAnnotation` method ,You can select the text markup annotation programmatically. The specified text markup annotation object passed as a parameter.
+ 
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Selects the specified text markup annotation
+pdfViewerControl.SelectAnnotation(textMarkupAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Once `SelectAnnotation` method is called and as long as the annotation stays selected, the `SelectedAnnotation` property will return the same instance as the parameter of this method.
+
+## Deselecting text markup annotation programmatically
+
+By `DeselectAnnotation` method ,You can deselect the text markup annotation programmatically. The specified text markup annotation object passed as a parameter. 
+
+The following code sample illustrates the same.
+
+{% tabs %}
+{% highlight c# %}
+
+//Deselects the specified text markup annotation 
+pdfViewerControl.DeselectAnnotation(textMarkupAnnotation);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> There is no effect in calling `DeselectAnnotation` method, if the given annotation is not selected. Once this method is called, the `SelectedAnnotation` property will return null until any other annotation gets selected.
 
 ## Deleting a text markup annotation
 
@@ -385,11 +473,11 @@ pdfViewerControl.AnnotationSettings.TextMarkup.Strikethrough.IsLocked = false;
 {% endhighlight %}
 {% endtabs %}
 
-## How to get and set the name of the annotations?
+## How to get and set the name of the text markup annotations?
 
-The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API.
+The PDF Viewer allows the users to get and set the name of text markup annotations through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API.
 
-The following code sample explains modifying the name of the annotation in the [TextMarkupAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_TextMarkupAdded) event.
+The following code sample explains modifying the name of the text markup annotation in the [TextMarkupAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_TextMarkupAdded) event.
 
 {% tabs %}
 {% highlight c# %}
@@ -400,6 +488,6 @@ private void PdfViewerControl_TextMarkupAdded(object sender, TextMarkupAddedEven
 {% endhighlight %}
 {% endtabs %}
 
-N> For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [TextMarkupAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_TextMarkupAdded) event. But this can be done in all other events as well. 
+N> For illustration purposes, we have only provided the sample for modifying the name of the text markup annotation in the [TextMarkupAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_TextMarkupAdded) event. But this can be done in all other events as well. 
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

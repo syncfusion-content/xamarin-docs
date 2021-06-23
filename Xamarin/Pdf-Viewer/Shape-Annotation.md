@@ -285,7 +285,7 @@ pdfViewer.AnnotationSettings.Arrow.Settings.MinimumLength = 10;
 
 N> The value of `MinimumSize` property will does not affect line, arrow, and polygon annotations. Also, the value of `MinimumLength` property will does not affect rectangle, circle, and polygon annotations.
 
-## Setting the default border style
+### Setting the default border style
 
 You can set the border style for the rectangle and polygon annotations using the `BorderEffect` property.  
 
@@ -542,11 +542,11 @@ pdfViewerControl.AnnotationSettings.Polygon.Settings.IsLocked = false;
 
 N> The `IsLocked` properties of the classes [RectangleAnnotation](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.RectangleAnnotation.html), [CircleAnnotation](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.CircleAnnotation.html), [LineAnnotation](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.LineAnnotation.html) and [ArrowAnnotation](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.ArrowAnnotation.html) have been marked as obsolete. Use the `RectangleAnnotation.Settings.IsLocked`, `CircleAnnotation.Settings.IsLocked`, `LineAnnotation.Settings.IsLocked` and `ArrowAnnotation.Settings.IsLocked` properties instead.
 
-## How to get and set the name of the annotations?
+## How to get and set the name of the shape annotations?
 
-The PDF Viewer allows the users to get and set the name of annotations through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API. 
+The PDF Viewer allows the users to get and set the name of shape annotations through the [Name](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.IAnnotation.html#Syncfusion_SfPdfViewer_XForms_IAnnotation_Name) API. 
 
-The following code sample explains modifying the name of the annotation in the [ShapeAnnotationAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ShapeAnnotationAdded) event.
+The following code sample explains modifying the name of the shape annotation in the [ShapeAnnotationAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_ShapeAnnotationAdded) event.
 
 {% tabs %}
 {% highlight c# %}

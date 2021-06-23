@@ -124,7 +124,7 @@ pdfViewer.AnnotationSettings.Rectangle.Settings.BorderEffect = BorderEffect.Clou
 {% endhighlight %}
 {% endtabs %}
 
-N> The value of `BorderEffect` property will does not affect other shape annotations such as circle, line, and arrow annotations. 
+N> The value of `BorderEffect` property will does not affect other shape annotations such as circle, line, and arrow annotations. For complex cloud polygons, the cloud border-style appearance might differ from other PDF readers like Adobe.
 
 ## Detecting tap on shape annotations
 

@@ -644,8 +644,6 @@ private void PdfViewerControl_InkAdded(object sender, InkAddedEventArgs args)
 
 N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [InkAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_InkAdded) event. But this can be done in all other events as well. 
 
-N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.
-
 ## How to Customize the Minimum size of the Ink Annotations?
 
 By the `MinimumSize` property, You can set the minimum size to which the ink annotations could be resized. 
@@ -715,3 +713,5 @@ pdfViewerControl.DeselectAnnotation(inkAnnotation);
 {% endtabs %}
 
 N> There is no effect in calling `DeselectAnnotation` method if the given annotation is not selected. Once this method is called, the `SelectedAnnotation` property will return null until any other annotation gets selected.
+
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

@@ -552,4 +552,3 @@ var annotations = pdfViewerControl.Annotations;
 N> The list remains empty If the PDF does not have any pre-existing annotations.
 
 N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.
-

@@ -221,8 +221,6 @@ The following code sample explains modifying the name of the custom stamp annota
 
 N>For illustration purposes, we have only provided the sample for modifying the name of the annotation in the [StampAnnotationAdded](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfPdfViewer.XForms.SfPdfViewer.html#Syncfusion_SfPdfViewer_XForms_SfPdfViewer_StampAnnotationAdded) event. But this can be done in all other events as well.
 
-N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.
-
 ## How to Customize the Minimum size of the Custom Stamp Annotations?
 
 By the `MinimumSize` property, You can set the minimum size to which the custom stamp annotations could be resized.
@@ -298,3 +296,4 @@ pdfViewerControl.DeselectAnnotation(StampAnnotation);
 
 N> There is no effect in Calling `DeselectAnnotation` method, if the given annotation is not selected. Once this method is called, the `SelectedAnnotation` property will return null until any other annotation gets selected.
 
+N>You can also explore our [Xamarin.Forms PDF Viewer example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/PdfViewer) to knows the functionalities of each feature.

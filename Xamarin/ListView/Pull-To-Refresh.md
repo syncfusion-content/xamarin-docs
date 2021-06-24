@@ -175,7 +175,9 @@ When the `SearchBar` or any view placed above the [SfPullToRefresh](https://help
   
             <pulltoRefresh:SfPullToRefresh x:Name="pullToRefresh" Grid.Row="1"
                                            ProgressBackgroundColor="#428BCA" RefreshContentHeight="50" 
-                                           RefreshContentWidth="50" TransitionMode="Push" IsRefreshing="False">
+                                           RefreshContentWidth="50" TransitionMode="Push" 
+                                           IsRefreshing="{Binding IsRefreshing}"
+                                           RefreshCommand="{Binding RefreshCommand}">
                 <pulltoRefresh:SfPullToRefresh.PullableContent>
                     <Grid>
                         <syncfusion:SfListView x:Name="listView" AllowSwiping="True"

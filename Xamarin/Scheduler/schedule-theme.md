@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Theming in Xamarin Scheduler control | Syncfusion
-description: This topic explains about how to add the Default theme (Light theme), Dark theme and its customization in schedule.
+description: This topic explains how to add the default theme (Light theme), Dark theme, and its customization in the schedule.
 platform: Xamarin
 control: SfSchedule
 documentation: ug
@@ -180,7 +180,7 @@ here [ScheduleTheme](https://github.com/SyncfusionExamples/xamarin-schedule-them
 
 ## Dark theme
 
-In the below code you can see the dark theme and key value for the resources.
+The dark theme and the key value for the resources are shown in the following code.
 
 {% tabs %}
 {% highlight xaml %}
@@ -263,7 +263,7 @@ In the below code you can see the dark theme and key value for the resources.
 {% endhighlight %}
 {% endtabs %} 
 
-You need to apply the syncfusion theme dictionaries in your application to view the dark theme.
+Apply the Syncfusion theme dictionaries in the application to view the dark theme.
 
 {% tabs %}
 {% highlight xaml %}
@@ -285,7 +285,7 @@ You need to apply the syncfusion theme dictionaries in your application to view 
 
 ## Customizing the dark theme
 
-You can customize the dark theme by overriding the existing key and set the new value.
+Customize the dark theme by overriding the existing key and set the new value.
 
 {% tabs %}
 {% highlight xaml %}
@@ -310,7 +310,8 @@ You can customize the dark theme by overriding the existing key and set the new 
 {% endhighlight %}
 {% endtabs %}
 
-You can download the entire source code of this demo for Xamarin.Forms from
+Download the entire source code of this demo for Xamarin.Forms from
 here.
+
 
 N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.

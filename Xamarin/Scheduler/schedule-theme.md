@@ -311,7 +311,7 @@ Customize the dark theme by overriding the existing key and set the new value.
 {% endtabs %}
 
 Download the entire source code of this demo for Xamarin.Forms from
-here.
+[here](https://github.com/SyncfusionExamples/customize-dark-theme).
 
 
 N> You can refer to our [Xamarin Scheduler](https://www.syncfusion.com/xamarin-ui-controls/xamarin-scheduler) feature tour page for its groundbreaking feature representations. You can also explore our [Xamarin Scheduler example](https://github.com/syncfusion/xamarin-demos/tree/master/Forms/Schedule) to understand how to schedule and manage appointments.

@@ -131,39 +131,29 @@ Following code snippet illustrates how to enable axis tooltip while selection zo
 
 {% highlight xaml %}
 
-<chart:SfChart.PrimaryAxis>
+<chart:SfChart>
 
-	<chart:NumericalAxis ShowTrackballInfo="True">
+    <chart:SfChart.PrimaryAxis>
+	    <chart:NumericalAxis ShowTrackballInfo="True">
+            <chart:NumericalAxis.TrackballLabelStyle>
+                <chart:ChartTrackballAxisLabelStyle LabelFormat="##.##"/>
+            </chart:NumericalAxis.TrackballLabelStyle>
+        </chart:NumericalAxis>
+    </chart:SfChart.PrimaryAxis>
 
-        <chart:NumericalAxis.TrackballLabelStyle>
+    <chart:SfChart.SecondaryAxis>
+	    <chart:NumericalAxis ShowTrackballInfo="True">
+            <chart:NumericalAxis.TrackballLabelStyle>
+                <chart:ChartTrackballAxisLabelStyle LabelFormat="##.##"/>
+            </chart:NumericalAxis.TrackballLabelStyle>
+        </chart:NumericalAxis>
+    </chart:SfChart.SecondaryAxis>
 
-            <chart:ChartTrackballAxisLabelStyle LabelFormat="##.##"/>
+    <chart:SfChart.ChartBehaviors>
+	    <chart:ChartZoomPanBehavior EnableSelectionZooming="True"/>
+    </chart:SfChart.ChartBehaviors>
 
-        </chart:NumericalAxis.TrackballLabelStyle>
-
-    </chart:NumericalAxis>
-
-</chart:SfChart.PrimaryAxis>
-
-<chart:SfChart.SecondaryAxis>
-
-	<chart:NumericalAxis ShowTrackballInfo="True">
-
-        <chart:NumericalAxis.TrackballLabelStyle>
-
-            <chart:ChartTrackballAxisLabelStyle LabelFormat="##.##"/>
-
-        </chart:NumericalAxis.TrackballLabelStyle>
-
-    </chart:NumericalAxis>
-
-</chart:SfChart.SecondaryAxis>
-
-<chart:SfChart.ChartBehaviors>
-
-	<chart:ChartZoomPanBehavior EnableSelectionZooming="True"/>
-
-</chart:SfChart.ChartBehaviors>
+</chart:SfChart>
 
 {% endhighlight %}
 
@@ -205,19 +195,25 @@ Following code example illustrates how to restrict the chart to be zoomed only a
 
 {% highlight xaml %}
 
-<chart:SfChart.ChartBehaviors>
-
-	<chart:ChartZoomPanBehavior ZoomMode="X"/>
-
-</chart:SfChart.ChartBehaviors>
+<chart:SfChart>
+. . .
+    <chart:SfChart.ChartBehaviors>
+	    <chart:ChartZoomPanBehavior ZoomMode="X"/>
+    </chart:SfChart.ChartBehaviors>
+. . .
+</chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfChart chart = new SfChart();
+. . .
 ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
 
 zoomPanBehavior.ZoomMode = ZoomMode.X;
+. . .
+chart.ChartBehaviors.Add(zoomPanBehavior);
 
 {% endhighlight %}
 
@@ -306,9 +302,12 @@ Zooming and panning can be performed programmatically with the following methods
 
 {% highlight c# %}
 
+SfChart chart = new SfChart();
+. . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-
 zoomPan.ZoomIn();
+. . .
+chart.ChartBehaviors.Add(zoomPan);
 
 {% endhighlight %}
 
@@ -318,9 +317,12 @@ zoomPan.ZoomIn();
 
 {% highlight c# %}
 
+SfChart chart = new SfChart();
+. . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-
 zoomPan.ZoomOut();
+. . .
+chart.ChartBehaviors.Add(zoomPan);
 
 {% endhighlight %}
 
@@ -332,9 +334,12 @@ zoomPan.ZoomOut();
 
 {% highlight c# %}
 
+SfChart chart = new SfChart();
+. . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-
 zoomPan.Zoom(0.5f);
+. . .
+chart.ChartBehaviors.Add(zoomPan);
 
 {% endhighlight %}
 
@@ -344,9 +349,12 @@ zoomPan.Zoom(0.5f);
 
 {% highlight c# %}
 
+SfChart chart = new SfChart();
+. . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-
 zoomPan.Zoom(new Rect(10, 10, 200, 350));
+. . .
+chart.ChartBehaviors.Add(zoomPan);
 
 {% endhighlight %}
 
@@ -356,9 +364,12 @@ zoomPan.Zoom(new Rect(10, 10, 200, 350));
 
 {% highlight c# %}
 
+SfChart chart = new SfChart();
+. . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-
 zoomPan.Zoom(axis, 0.5f, 0.5f);
+. . .
+chart.ChartBehaviors.Add(zoomPan);
 
 {% endhighlight %}
 
@@ -370,9 +381,12 @@ zoomPan.Zoom(axis, 0.5f, 0.5f);
 
 {% highlight c# %}
 
+SfChart chart = new SfChart();
+. . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-
 zoomPan.ZoomByRange(axis, 20, 25);
+. . .
+chart.ChartBehaviors.Add(zoomPan);
 
 {% endhighlight %}
 
@@ -382,9 +396,12 @@ zoomPan.ZoomByRange(axis, 20, 25);
 
 {% highlight c# %}
 
+SfChart chart = new SfChart();
+. . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-
 zoomPan.ZoomByRange(axis, new DateTime(2017,3,1), new DateTime(2017,5,1));
+. . .
+chart.ChartBehaviors.Add(zoomPan);
 
 {% endhighlight %}
 
@@ -394,9 +411,12 @@ zoomPan.ZoomByRange(axis, new DateTime(2017,3,1), new DateTime(2017,5,1));
 
 {% highlight c# %}
 
+SfChart chart = new SfChart();
+. . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-
 zoomPan.ZoomToFactor(axis, 0.5f, 0.5f);
+. . .
+chart.ChartBehaviors.Add(zoomPan);
 
 {% endhighlight %}
 
@@ -407,9 +427,12 @@ zoomPan.ZoomToFactor(axis, 0.5f, 0.5f);
 
 {% highlight c# %}
 
+SfChart chart = new SfChart();
+. . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-
 zoomPan.Reset();
+. . .
+chart.ChartBehaviors.Add(zoomPan);
 
 {% endhighlight %}
 

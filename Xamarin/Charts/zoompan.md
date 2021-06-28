@@ -198,7 +198,7 @@ Following code example illustrates how to restrict the chart to be zoomed only a
 <chart:SfChart>
 . . .
     <chart:SfChart.ChartBehaviors>
-	    <chart:ChartZoomPanBehavior ZoomMode="X"/>
+        <chart:ChartZoomPanBehavior ZoomMode="X"/>
     </chart:SfChart.ChartBehaviors>
 . . .
 </chart:SfChart>
@@ -305,9 +305,9 @@ Zooming and panning can be performed programmatically with the following methods
 SfChart chart = new SfChart();
 . . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-zoomPan.ZoomIn();
-. . .
 chart.ChartBehaviors.Add(zoomPan);
+. . .
+zoomPan.ZoomIn();
 
 {% endhighlight %}
 
@@ -320,9 +320,9 @@ chart.ChartBehaviors.Add(zoomPan);
 SfChart chart = new SfChart();
 . . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-zoomPan.ZoomOut();
-. . .
 chart.ChartBehaviors.Add(zoomPan);
+. . .
+zoomPan.ZoomOut();
 
 {% endhighlight %}
 
@@ -337,9 +337,9 @@ chart.ChartBehaviors.Add(zoomPan);
 SfChart chart = new SfChart();
 . . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-zoomPan.Zoom(0.5f);
-. . .
 chart.ChartBehaviors.Add(zoomPan);
+. . .
+zoomPan.Zoom(0.5f);
 
 {% endhighlight %}
 
@@ -352,9 +352,9 @@ chart.ChartBehaviors.Add(zoomPan);
 SfChart chart = new SfChart();
 . . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-zoomPan.Zoom(new Rect(10, 10, 200, 350));
-. . .
 chart.ChartBehaviors.Add(zoomPan);
+. . .
+zoomPan.Zoom(new Rect(10, 10, 200, 350));
 
 {% endhighlight %}
 
@@ -367,9 +367,9 @@ chart.ChartBehaviors.Add(zoomPan);
 SfChart chart = new SfChart();
 . . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-zoomPan.Zoom(axis, 0.5f, 0.5f);
-. . .
 chart.ChartBehaviors.Add(zoomPan);
+. . .
+zoomPan.Zoom(axis, 0.5f, 0.5f);
 
 {% endhighlight %}
 
@@ -384,9 +384,9 @@ chart.ChartBehaviors.Add(zoomPan);
 SfChart chart = new SfChart();
 . . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-zoomPan.ZoomByRange(axis, 20, 25);
-. . .
 chart.ChartBehaviors.Add(zoomPan);
+. . .
+zoomPan.ZoomByRange(axis, 20, 25);
 
 {% endhighlight %}
 
@@ -399,9 +399,9 @@ chart.ChartBehaviors.Add(zoomPan);
 SfChart chart = new SfChart();
 . . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-zoomPan.ZoomByRange(axis, new DateTime(2017,3,1), new DateTime(2017,5,1));
-. . .
 chart.ChartBehaviors.Add(zoomPan);
+. . .
+zoomPan.ZoomByRange(axis, new DateTime(2017,3,1), new DateTime(2017,5,1));
 
 {% endhighlight %}
 
@@ -414,9 +414,9 @@ chart.ChartBehaviors.Add(zoomPan);
 SfChart chart = new SfChart();
 . . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-zoomPan.ZoomToFactor(axis, 0.5f, 0.5f);
-. . .
 chart.ChartBehaviors.Add(zoomPan);
+. . .
+zoomPan.ZoomToFactor(axis, 0.5f, 0.5f);
 
 {% endhighlight %}
 
@@ -430,9 +430,9 @@ chart.ChartBehaviors.Add(zoomPan);
 SfChart chart = new SfChart();
 . . .         
 ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
-zoomPan.Reset();
-. . .
 chart.ChartBehaviors.Add(zoomPan);
+. . .
+zoomPan.Reset();
 
 {% endhighlight %}
 

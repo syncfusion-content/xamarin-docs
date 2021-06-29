@@ -62,6 +62,8 @@ Use the following steps to create the **Syncfusion** **Xamarin** **Application**
 
    N> Choose any one of the project type and controls from Project Configuration Wizard.
 
+   ![Selected Syncfusion Xamarin control assemblies added to the UWP project](Syncfusion-Project-Templates_images/Syncfusion-Project-Templates-img13.PNG)
+
 5. Required Syncfusion NuGet/Assemblies and configuration have been added to the project based on the control chosen.
 
    **Net Standard /PCL**

@@ -218,6 +218,23 @@ dataGrid.Columns.Add (countryColumn);
 
 {% endtabs %}
 
+## Adding columns efficiently
+
+Adding/removing columns to/from `SfDataGrid.Columns` collection updates the UI (for each add/remove) which negatively impacts the performance.
+
+You can improve the performance while adding/removing columns by suspending all the UI updates using `SfDataGrid.Columns.Suspend` and resume the updates after adding columns using `SfDataGrid.Columns.Resume` methods. You can then finally refresh the UI using `SfDataGrid.RefreshColumns` method.
+
+{% tabs %}
+{% highlight c# %}
+dataGrid.Columns.Suspend();
+
+// Add or Remove More columns
+dataGrid.Columns.Resume();
+dataGrid.RefreshColumns();
+{% endhighlight %}
+
+{% endtabs %}
+
 ## Resizing columns
 
 The SfDataGrid allows to resize the columns by tapping and dragging the right border of the column headers. Resizing can be enabled or disabled by setting the [SfDataGrid.AllowResizingColumn](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.SfDataGrid.html#Syncfusion_SfDataGrid_XForms_SfDataGrid_AllowResizingColumn) property. A resizing indicator is displayed while resizing a column.

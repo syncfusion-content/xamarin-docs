@@ -41,6 +41,24 @@ pdfViewerControl.SaveDocument(true);
 {% endhighlight %}
 {% endtabs %}
 
+## Rendering the appearance content of signature form fields
+
+By default, the PDF viewer does not display the appearance content of signature form fields. But the appearance can be displayed by flattening the signature form fields before loading the PDF. This can be achieved by setting the `FlattenSignatureFields` property as true. The default value of the property is set as false.
+
+{% tabs %}
+{% highlight c# %}
+
+//Sets a value whether the signature form fields should be flattened when the PDF is loaded or not.
+pdfViewerControl.FormSettings.FlattenSignatureFields = true;
+
+//Loads the PDF. 
+pdfViewerControl.LoadDocument(stream);
+
+{% endhighlight %}
+{% endtabs %}
+
+N> Signature form fields are only flattened when the page displayed in the viewer is only for viewing the appearance of signature form fields. Once the signature form fields are flattened, the interactions such as select, edit, resize, and remove cannot be performed. Setting the `FlattenSignatureFields` property as `true` will does not affect the save and form field export operations. The signature form fields will not be flattened in these operations.
+
 ## Loading PDFs with XFA forms
 
 PDF documents that contain XFA form fields cannot be viewed in PDF Viewer since they can be viewed only in Adobe reader. When a PDF with XFA form is loaded, its original contents may not be rendered as expected. 

@@ -1661,6 +1661,58 @@ public class MyCustomMessageTemplateSelector : ChatMessageTemplateSelector
 
 You can also download the entire source code of this demo [here](https://github.com/SyncfusionExamples/Chat-Message-Template-Xamarin.Forms).
 
+## Spacing between messages
+
+SfChat allows to change the vertical spacing between the messages in view using `SfChat.MessageSpacing` property. The default value is 24.
+
+{% tabs %}
+{% highlight xaml %}
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sfChat="clr-namespace:Syncfusion.XForms.Chat;assembly=Syncfusion.SfChat.XForms"
+             xmlns:local="clr-namespace:GettingStarted"
+             x:Class="GettingStarted.MainPage">
+
+    <ContentPage.BindingContext>
+        <local:GettingStartedViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+                    <sfChat:SfChat x:Name="sfChat"
+                           Messages="{Binding Messages}"
+                           CurrentUser="{Binding CurrentUser}"
+                           MessageSpacing="8"
+	<ContentPage.Content>
+</ContentPage>
+{% endhighlight %}
+
+{% highlight c# %}
+using Syncfusion.XForms.Chat;
+using Xamarin.Forms;
+
+namespace GettingStarted
+{
+    public partial class MainPage : ContentPage
+    {
+        SfChat sfChat;
+        GettingStartedViewModel viewModel;
+        public MainPage()
+        {
+            InitializeComponent();
+            sfChat = new SfChat();
+            viewModel = new GettingStartedViewModel();
+            this.sfChat.Messages = viewModel.Messages;
+            this.sfChat.CurrentUser = viewModel.CurrentUser;
+            this.sfChat.MessageSpacing = 8;
+            this.Content = sfChat;
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+![Xamarin Forms chat message spacing](SfChat_images/messagespacing.jpg)
 
 ## Sending message
 

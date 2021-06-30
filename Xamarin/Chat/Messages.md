@@ -1663,7 +1663,7 @@ You can also download the entire source code of this demo [here](https://github.
 
 ## Spacing between messages
 
-SfChat allows to change the vertical spacing between the messages in view using `SfChat.MessageSpacing` property. The default value is 24.
+SfChat allows to change the vertical spacing between the messages in view using [SfChat.MessageSpacing](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Chat.SfChat.html#Syncfusion_XForms_Chat_SfChat_MessageSpacing) property. The default value is 24.
 
 {% tabs %}
 {% highlight xaml %}

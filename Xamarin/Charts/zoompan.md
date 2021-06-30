@@ -131,39 +131,29 @@ Following code snippet illustrates how to enable axis tooltip while selection zo
 
 {% highlight xaml %}
 
-<chart:SfChart.PrimaryAxis>
+<chart:SfChart>
 
-	<chart:NumericalAxis ShowTrackballInfo="True">
+    <chart:SfChart.PrimaryAxis>
+	    <chart:NumericalAxis ShowTrackballInfo="True">
+            <chart:NumericalAxis.TrackballLabelStyle>
+                <chart:ChartTrackballAxisLabelStyle LabelFormat="##.##"/>
+            </chart:NumericalAxis.TrackballLabelStyle>
+        </chart:NumericalAxis>
+    </chart:SfChart.PrimaryAxis>
 
-        <chart:NumericalAxis.TrackballLabelStyle>
+    <chart:SfChart.SecondaryAxis>
+	    <chart:NumericalAxis ShowTrackballInfo="True">
+            <chart:NumericalAxis.TrackballLabelStyle>
+                <chart:ChartTrackballAxisLabelStyle LabelFormat="##.##"/>
+            </chart:NumericalAxis.TrackballLabelStyle>
+        </chart:NumericalAxis>
+    </chart:SfChart.SecondaryAxis>
 
-            <chart:ChartTrackballAxisLabelStyle LabelFormat="##.##"/>
+    <chart:SfChart.ChartBehaviors>
+	    <chart:ChartZoomPanBehavior EnableSelectionZooming="True"/>
+    </chart:SfChart.ChartBehaviors>
 
-        </chart:NumericalAxis.TrackballLabelStyle>
-
-    </chart:NumericalAxis>
-
-</chart:SfChart.PrimaryAxis>
-
-<chart:SfChart.SecondaryAxis>
-
-	<chart:NumericalAxis ShowTrackballInfo="True">
-
-        <chart:NumericalAxis.TrackballLabelStyle>
-
-            <chart:ChartTrackballAxisLabelStyle LabelFormat="##.##"/>
-
-        </chart:NumericalAxis.TrackballLabelStyle>
-
-    </chart:NumericalAxis>
-
-</chart:SfChart.SecondaryAxis>
-
-<chart:SfChart.ChartBehaviors>
-
-	<chart:ChartZoomPanBehavior EnableSelectionZooming="True"/>
-
-</chart:SfChart.ChartBehaviors>
+</chart:SfChart>
 
 {% endhighlight %}
 
@@ -205,19 +195,25 @@ Following code example illustrates how to restrict the chart to be zoomed only a
 
 {% highlight xaml %}
 
-<chart:SfChart.ChartBehaviors>
-
-	<chart:ChartZoomPanBehavior ZoomMode="X"/>
-
-</chart:SfChart.ChartBehaviors>
+<chart:SfChart>
+. . .
+    <chart:SfChart.ChartBehaviors>
+        <chart:ChartZoomPanBehavior ZoomMode="X"/>
+    </chart:SfChart.ChartBehaviors>
+. . .
+</chart:SfChart>
 
 {% endhighlight %}
 
 {% highlight c# %}
 
+SfChart chart = new SfChart();
+. . .
 ChartZoomPanBehavior zoomPanBehavior = new ChartZoomPanBehavior();
 
 zoomPanBehavior.ZoomMode = ZoomMode.X;
+. . .
+chart.ChartBehaviors.Add(zoomPanBehavior);
 
 {% endhighlight %}
 
@@ -306,9 +302,27 @@ Zooming and panning can be performed programmatically with the following methods
 
 {% highlight c# %}
 
-ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
+public partial class MainPage : ContentPage
+{
+    ChartZoomPanBehavior zoomPan;
+    public MainPage()
+    {
+        InitializeComponent();
+        Button zoomButton = new Button();
+        . . .
+        zoomButton.Clicked += ZoomButton_Clicked;
+        SfChart chart = new SfChart();
+        . . .
+        zoomPan = new ChartZoomPanBehavior();
+        Chart.ChartBehaviors.Add(zoomPan);
+        . . .
+    }
 
-zoomPan.ZoomIn();
+    private void ZoomButton_Clicked(object sender, EventArgs e)
+    {
+        zoomPan.ZoomIn();
+    }
+}
 
 {% endhighlight %}
 
@@ -318,9 +332,27 @@ zoomPan.ZoomIn();
 
 {% highlight c# %}
 
-ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
+public partial class MainPage : ContentPage
+{
+    ChartZoomPanBehavior zoomPan;
+    public MainPage()
+    {
+        InitializeComponent();
+        Button zoomButton = new Button();
+        . . .
+        zoomButton.Clicked += ZoomButton_Clicked;
+        SfChart chart = new SfChart();
+        . . .
+        zoomPan = new ChartZoomPanBehavior();
+        Chart.ChartBehaviors.Add(zoomPan);
+        . . .
+    }
 
-zoomPan.ZoomOut();
+    private void ZoomButton_Clicked(object sender, EventArgs e)
+    {
+        zoomPan.ZoomOut();
+    }
+}
 
 {% endhighlight %}
 
@@ -332,9 +364,27 @@ zoomPan.ZoomOut();
 
 {% highlight c# %}
 
-ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
+public partial class MainPage : ContentPage
+{
+    ChartZoomPanBehavior zoomPan;
+    public MainPage()
+    {
+        InitializeComponent();
+        Button zoomButton = new Button();
+        . . .
+        zoomButton.Clicked += ZoomButton_Clicked;
+        SfChart chart = new SfChart();
+        . . .
+        zoomPan = new ChartZoomPanBehavior();
+        Chart.ChartBehaviors.Add(zoomPan);
+        . . .
+    }
 
-zoomPan.Zoom(0.5f);
+    private void ZoomButton_Clicked(object sender, EventArgs e)
+    {
+        zoomPan.Zoom(0.5f);
+    }
+}
 
 {% endhighlight %}
 
@@ -344,9 +394,27 @@ zoomPan.Zoom(0.5f);
 
 {% highlight c# %}
 
-ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
+public partial class MainPage : ContentPage
+{
+    ChartZoomPanBehavior zoomPan;
+    public MainPage()
+    {
+        InitializeComponent();
+        Button zoomButton = new Button();
+        . . .
+        zoomButton.Clicked += ZoomButton_Clicked;
+        SfChart chart = new SfChart();
+        . . .
+        zoomPan = new ChartZoomPanBehavior();
+        Chart.ChartBehaviors.Add(zoomPan);
+        . . .
+    }
 
-zoomPan.Zoom(new Rect(10, 10, 200, 350));
+    private void ZoomButton_Clicked(object sender, EventArgs e)
+    {
+        zoomPan.Zoom(new Rect(10, 10, 200, 350));
+    }
+}
 
 {% endhighlight %}
 
@@ -356,9 +424,27 @@ zoomPan.Zoom(new Rect(10, 10, 200, 350));
 
 {% highlight c# %}
 
-ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
+public partial class MainPage : ContentPage
+{
+    ChartZoomPanBehavior zoomPan;
+    public MainPage()
+    {
+        InitializeComponent();
+        Button zoomButton = new Button();
+        . . .
+        zoomButton.Clicked += ZoomButton_Clicked;
+        SfChart chart = new SfChart();
+        . . .
+        zoomPan = new ChartZoomPanBehavior();
+        Chart.ChartBehaviors.Add(zoomPan);
+        . . .
+    }
 
-zoomPan.Zoom(axis, 0.5f, 0.5f);
+    private void ZoomButton_Clicked(object sender, EventArgs e)
+    {
+        zoomPan.Zoom(axis, 0.5f, 0.5f);
+    }
+}
 
 {% endhighlight %}
 
@@ -370,9 +456,27 @@ zoomPan.Zoom(axis, 0.5f, 0.5f);
 
 {% highlight c# %}
 
-ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
+public partial class MainPage : ContentPage
+{
+    ChartZoomPanBehavior zoomPan;
+    public MainPage()
+    {
+        InitializeComponent();
+        Button zoomButton = new Button();
+        . . .
+        zoomButton.Clicked += ZoomButton_Clicked;
+        SfChart chart = new SfChart();
+        . . .
+        zoomPan = new ChartZoomPanBehavior();
+        Chart.ChartBehaviors.Add(zoomPan);
+        . . .
+    }
 
-zoomPan.ZoomByRange(axis, 20, 25);
+    private void ZoomButton_Clicked(object sender, EventArgs e)
+    {
+        zoomPan.ZoomByRange(axis, 20, 25);
+    }
+}
 
 {% endhighlight %}
 
@@ -382,9 +486,27 @@ zoomPan.ZoomByRange(axis, 20, 25);
 
 {% highlight c# %}
 
-ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
+public partial class MainPage : ContentPage
+{
+    ChartZoomPanBehavior zoomPan;
+    public MainPage()
+    {
+        InitializeComponent();
+        Button zoomButton = new Button();
+        . . .
+        zoomButton.Clicked += ZoomButton_Clicked;
+        SfChart chart = new SfChart();
+        . . .
+        zoomPan = new ChartZoomPanBehavior();
+        Chart.ChartBehaviors.Add(zoomPan);
+        . . .
+    }
 
-zoomPan.ZoomByRange(axis, new DateTime(2017,3,1), new DateTime(2017,5,1));
+    private void ZoomButton_Clicked(object sender, EventArgs e)
+    {
+        zoomPan.ZoomByRange(axis, new DateTime(2017,3,1), new DateTime(2017,5,1));
+    }
+}
 
 {% endhighlight %}
 
@@ -394,9 +516,27 @@ zoomPan.ZoomByRange(axis, new DateTime(2017,3,1), new DateTime(2017,5,1));
 
 {% highlight c# %}
 
-ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
+public partial class MainPage : ContentPage
+{
+    ChartZoomPanBehavior zoomPan;
+    public MainPage()
+    {
+        InitializeComponent();
+        Button zoomButton = new Button();
+        . . .
+        zoomButton.Clicked += ZoomButton_Clicked;
+        SfChart chart = new SfChart();
+        . . .
+        zoomPan = new ChartZoomPanBehavior();
+        Chart.ChartBehaviors.Add(zoomPan);
+        . . .
+    }
 
-zoomPan.ZoomToFactor(axis, 0.5f, 0.5f);
+    private void ZoomButton_Clicked(object sender, EventArgs e)
+    {
+        zoomPan.ZoomToFactor(axis, 0.5f, 0.5f);
+    }
+}
 
 {% endhighlight %}
 
@@ -407,9 +547,27 @@ zoomPan.ZoomToFactor(axis, 0.5f, 0.5f);
 
 {% highlight c# %}
 
-ChartZoomPanBehavior zoomPan = new ChartZoomPanBehavior();
+public partial class MainPage : ContentPage
+{
+    ChartZoomPanBehavior zoomPan;
+    public MainPage()
+    {
+        InitializeComponent();
+        Button zoomButton = new Button();
+        . . .
+        zoomButton.Clicked += ZoomButton_Clicked;
+        SfChart chart = new SfChart();
+        . . .
+        zoomPan = new ChartZoomPanBehavior();
+        Chart.ChartBehaviors.Add(zoomPan);
+        . . .
+    }
 
-zoomPan.Reset();
+    private void ZoomButton_Clicked(object sender, EventArgs e)
+    {
+        zoomPan.Reset();
+    }
+}
 
 {% endhighlight %}
 

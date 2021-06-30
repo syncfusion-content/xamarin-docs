@@ -222,7 +222,7 @@ dataGrid.Columns.Add (countryColumn);
 
 Adding/removing columns to/from `SfDataGrid.Columns` collection updates the UI (for each add/remove) which negatively impacts the performance.
 
-You can improve the performance while adding/removing columns by suspending all the UI updates using `SfDataGrid.Columns.Suspend` and resume the updates after adding columns using `SfDataGrid.Columns.Resume` methods. You can then finally refresh the UI using `SfDataGrid.RefreshColumns` method.
+You can improve the performance while adding/removing columns by suspending all the UI updates using [SfDataGrid.Columns.Suspend](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Columns.html#Syncfusion_SfDataGrid_XForms_Columns_Suspend) and resume the updates after adding columns using [SfDataGrid.Columns.Resume](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.Columns.html#Syncfusion_SfDataGrid_XForms_Columns_Resume) methods. You can then finally refresh the UI using `SfDataGrid.RefreshColumns` method.
 
 {% tabs %}
 {% highlight c# %}

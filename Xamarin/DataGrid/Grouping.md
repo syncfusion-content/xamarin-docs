@@ -203,7 +203,7 @@ public class GroupConverter : IValueConverter
 
 ### Using KeySelector
 
-To achieve this, specify the custom logic in `GroupColumnDescription.KeySelector` property and column name in `GroupColumnDescription.ColumnName` property.
+To achieve this, specify the custom logic in [GroupColumnDescription.KeySelector](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html#Syncfusion_SfDataGrid_XForms_GroupColumnDescription_KeySelector) property and column name in [GroupColumnDescription.ColumnName](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfDataGrid.XForms.GroupColumnDescription.html#Syncfusion_SfDataGrid_XForms_GroupColumnDescription_ColumnName) property.
 
 In the below example, the Date column is grouped based on weeks.
 {% tabs %}

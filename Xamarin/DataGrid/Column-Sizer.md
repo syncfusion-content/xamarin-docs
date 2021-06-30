@@ -360,8 +360,7 @@ public class CustomColumnSizer : GridColumnSizer
             //Calculate the ColumnSizer ratio for every column 
             starWidth *= StarSizerRatioHelpers.GetColumnRatio(getColumn);
             var columnSizer = DataGrid.GridColumnSizer;
-            var method = columnSizer.GetType().GetRuntimeMethods().FirstOrDefault(x => x.Name == "SetColumnWidth");
-            var width = method.Invoke(columnSizer, new object[] { getColumn, starWidth });
+            var width =columnSizer.GetActualWidth(getColumn, starWidth);
             double computeWidth = (double)width;
 
             if (starWidth != computeWidth && starWidth > 0)

@@ -114,7 +114,7 @@ private void SfNumericTextBox_ValueChanged(object sender, Syncfusion.SfNumericTe
 
 ## Completed in SfNumericTextBox
 
-Raised [`compelted`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Completed) event when the user finalizes the text in the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) by pressing return key on the keyboard.
+Raised [`completed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Completed) event when the user finalizes the text in the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) by pressing return key on the keyboard.
 
 {% tabs %}
 

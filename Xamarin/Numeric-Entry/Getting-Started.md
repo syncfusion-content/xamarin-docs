@@ -126,9 +126,11 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 {% endhighlight %}
 
 
-## Create a Simple SfNumericTextBox 
+## Create a simple SfNumericTextBox 
 
-The SfNumericTextBox control is configured entirely in C# code or by using XAML markup. The following steps explain on how to create a SfNumericTextBox and configure its elements,
+The [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) control is configured entirely in C# code or by using XAML markup. 
+
+The following steps explain on how to create a [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) and configure its elements,
 
 * Adding namespace for the added assemblies. 
 
@@ -148,7 +150,7 @@ The SfNumericTextBox control is configured entirely in C# code or by using XAML 
 
 {% endtabs %}
 
-* Now add the SfNumericTextBox control with a required optimal name by using the included namespace.
+* Now add the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) control with a required optimal name by using the included namespace.
 
 {% tabs %}
 
@@ -159,7 +161,7 @@ The SfNumericTextBox control is configured entirely in C# code or by using XAML 
 		xmlns:syncfusion="clr-namespace:Syncfusion.SfNumericTextBox.XForms;assembly=Syncfusion.SfNumericTextBox.XForms"
 		x:Class="GettingStarted.NumericControlPage">
   <ContentPage.Content>
-     <syncfusion:SfNumericTextBox x:Name="numericTextBox" />	
+     <syncfusion:SfNumericTextBox />	
 	</ContentPage.Content>
 	
 </ContentPage>
@@ -190,17 +192,17 @@ public partial class NumericControlPage : ContentPage
 
 {% endtabs %}
 
-## Display Customization
+![Xamarin.Forms Numeric TextBox](images/numericTextBox.PNG)
 
-### Setting and Reading Value
+## Set the value in SfNumericTextBox
 
-`Value` property is used to set and read the value presented by the SfNumericTextBox. 
+[`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Value) property is used to set and read the value presented by the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html). 
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox x:Name="numericTextBox" Value="123.45" />
+	<syncfusion:SfNumericTextBox Value="123.45" />
 	
 {% endhighlight %}
 
@@ -215,109 +217,6 @@ this.Content = numericTextBox;
 {% endtabs %}
 
 ![Xamarin.Forms Numeric TextBox with value](images/value.png)
-
-## Restrict editing
-
-You can restrict the dynamic editing of the numeric entry using the [`IsReadOnly`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_IsReadOnly) property. But you can change the control text programmatically by using the bindable  [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Value) property of the numeric entry.
-	
-## Visual states
-
-The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) has been customized based on the [VisualStates](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/visual-state-manager). 
-
-The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) control has the following three basic visual states:
-
-* Normal
-* Focused
-* Disabled
-
-N> The focused visual state is only available in Android and iOS platforms.
-
-{% tabs %}
-
-{% highlight xaml %}
-
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <numeric:SfNumericTextBox x:Name="numericTextBox" WidthRequest="100" Value="50"/>
-
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="CommonStates">
-                <VisualState x:Name="Normal">
-                    <VisualState.Setters>
-                        <Setter Property="BackgroundColor" Value="White" />
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:Name="Disabled">
-                    <VisualState.Setters>
-                        <Setter Property="BackgroundColor" Value="DarkGray" />
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:Name="Focused">
-                    <VisualState.Setters>
-                        <Setter Property="BackgroundColor" Value="Yellow" />
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
-    </StackLayout>
-
-{% endhighlight %}
-
-{% highlight c# %}
-
-            StackLayout stackLayout = new StackLayout
-            {
-                HorizontalOptions = LayoutOptions.Center,
-                VerticalOptions = LayoutOptions.Center
-            };
-            SfNumericTextBox button = new SfNumericTextBox
-            {
-                Value = 50,
-                WidthRequest = 100
-            };
-
-            VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
-
-            VisualStateGroup commonStateGroup = new VisualStateGroup();
-            VisualState normalState = new VisualState
-            {
-                Name = "Normal"
-            };
-            normalState.Setters.Add(new Setter { Property = SfNumericTextBox.BackgroundColorProperty, Value = Color.White });
-
-            VisualState disabledState = new VisualState
-            {
-                Name = "Disabled"
-            };
-            disabledState.Setters.Add(new Setter { Property = SfNumericTextBox.BackgroundColorProperty, Value = Color.DarkGray });
-
-            VisualState fousedState = new VisualState
-            {
-                Name = "Focused"
-            };
-            fousedState.Setters.Add(new Setter { Property = SfNumericTextBox.BackgroundColorProperty, Value = Color.Yellow });
-
-            commonStateGroup.States.Add(normalState);
-            commonStateGroup.States.Add(disabledState);
-            commonStateGroup.States.Add(fousedState);
-            visualStateGroupList.Add(commonStateGroup);
-
-            VisualStateManager.SetVisualStateGroups(button, visualStateGroupList);
-
-            stackLayout.Children.Add(button);
-            this.Content = stackLayout;
-
-{% endhighlight %}
-
-{% endtabs %}
-
-**Normal visual state**
-![SfNumericTextBox with normal visual state](images/NormalState.jpg)
-
-**Disabled visual state**
-![SfNumericTextBox with focused visual state](images/DisabledState.jpg)
-
-**Focused visual state**
-![SfNumericTextBox with disabled visual state](images/FocusState.jpg)
 
 You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting-Started-Xamarin-Textbox)
 

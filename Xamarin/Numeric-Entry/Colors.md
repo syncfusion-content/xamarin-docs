@@ -8,25 +8,25 @@ documentation: ug
 ---
 # Colors in Xamarin Numeric Entry (SfNumericTextBox)
 
-SfNumericTextBox can be set to use a custom background,text and border colors via the following bindable properties:
+[`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) can be set to use a custom background,text and border colors via the following bindable properties:
 
-* `TextColor` - sets the color of the NumericTextBox's value.
+* [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_TextColor) - sets the color of the NumericTextBox's value.
 
 * `BackgroundColor` - sets the background color of NumericTextBox's frame.
 
-* `BorderColor` - sets the border custom color of NumericTextBox
+* [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_BorderColor) - sets the border custom color of NumericTextBox
 
-* `WatermarkColor` - sets the watermark custom color of NumericTextBox's watermark Text.
+* [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_WatermarkColor) - sets the watermark custom color of NumericTextBox's watermark Text.
 
-### TextColor
+## Text color support in SfNumericTextBox
 
-To set the TextColor color in XAML as well as in C#:
+To set the [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_TextColor) color in XAML as well as in C#:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox x:Name="numericTextBox" Value="123" TextColor="Green" />
+	<syncfusion:SfNumericTextBox Value="123" TextColor="Green" />
 	
 {% endhighlight %}
 
@@ -43,7 +43,7 @@ this.Content = numericTextBox;
 
 ![Display SfNumericTextBox with TextColor](images/textcolor.png)
 
-### BackgroundColor
+## Background color support in SfNumericTextBox
 
 To set the BackgroundColor color in XAML as well as in C#:
 
@@ -51,7 +51,7 @@ To set the BackgroundColor color in XAML as well as in C#:
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox x:Name="numericTextBox" Value="123" BackgroundColor="Maroon" TextColor="White"/>
+	<syncfusion:SfNumericTextBox Value="123" BackgroundColor="Maroon" TextColor="White"/>
 	
 {% endhighlight %}
 
@@ -69,15 +69,15 @@ this.Content = numericTextBox;
 
 ![Display SfNumericTextBox with BackgroundColor](images/backgroundcolor.png)
 
-### BorderColor
+## Border color support in SfNumericTextBox
 
-To set the BorderColor color in XAML as well as in C#:
+To set the [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_BorderColor) color in XAML as well as in C#:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox x:Name="numericTextBox" Value="123" BorderColor="Red" />
+	<syncfusion:SfNumericTextBox Value="123" BorderColor="Red" />
 	
 {% endhighlight %}
 
@@ -94,15 +94,15 @@ this.Content = numericTextBox;
 
 ![Display SfNumericTextBox with BorderColor](images/bordercolor.png)
 
-### WatermarkColor
+## Watermark color support in SfNumericTextBox
 
-To set the WatermarkColor color in XAML as well as in C#:
+To set the [`WatermarkColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_WatermarkColor) color in XAML as well as in C#:
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<syncfusion:SfNumericTextBox  x:Name="numericTextBox" AllowNull="true" WatermarkColor="Blue" Watermark="Enter a Number"/>
+	<syncfusion:SfNumericTextBox AllowNull="true" WatermarkColor="Blue" Watermark="Enter value"/>
 	
 {% endhighlight %}
 
@@ -111,7 +111,7 @@ To set the WatermarkColor color in XAML as well as in C#:
 SfNumericTextBox numericTextBox=new SfNumericTextBox();
 numericTextBox.AllowNull=true;
 numericTextBox.WatermarkColor = Color.Blue;
-numericTextBox.Watermark = "Enter a Number"
+numericTextBox.Watermark = "Enter value"
 this.Content = numericTextBox;
 
 {% endhighlight %}
@@ -120,8 +120,111 @@ this.Content = numericTextBox;
 
 ![Display SfNumericTextBox with WatermarkColor](images/watermarkcolor.png)
 
+## Restrict editing
+
+You can restrict the dynamic editing of the numeric entry using the [`IsReadOnly`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_IsReadOnly) property. But you can change the control text programmatically by using the bindable  [`Value`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Value) property of the numeric entry.
+	
+## Visual states
+
+The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) has been customized based on the [VisualStates](https://docs.microsoft.com/en-us/xamarin/xamarin-forms/user-interface/visual-state-manager). 
+
+The [SfNumericTextBox](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.html) control has the following three basic visual states:
+
+* Normal
+* Focused
+* Disabled
+
+N> The focused visual state is only available in Android and iOS platforms.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <numeric:SfNumericTextBox  WidthRequest="100" Value="50">
+
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="CommonStates">
+                <VisualState x:Name="Normal">
+                    <VisualState.Setters>
+                        <Setter Property="BackgroundColor" Value="White" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Disabled">
+                    <VisualState.Setters>
+                        <Setter Property="BackgroundColor" Value="DarkGray" />
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="Focused">
+                    <VisualState.Setters>
+                        <Setter Property="BackgroundColor" Value="Yellow" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+	</numeric:SfNumericTextBox>
+  </StackLayout>
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+            StackLayout stackLayout = new StackLayout
+            {
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            };
+            SfNumericTextBox numericTextBox = new SfNumericTextBox
+            {
+                Value = 50,
+                WidthRequest = 100
+            };
+
+            VisualStateGroupList visualStateGroupList = new VisualStateGroupList();
+
+            VisualStateGroup commonStateGroup = new VisualStateGroup();
+            VisualState normalState = new VisualState
+            {
+                Name = "Normal"
+            };
+            normalState.Setters.Add(new Setter { Property = SfNumericTextBox.BackgroundColorProperty, Value = Color.White });
+
+            VisualState disabledState = new VisualState
+            {
+                Name = "Disabled"
+            };
+            disabledState.Setters.Add(new Setter { Property = SfNumericTextBox.BackgroundColorProperty, Value = Color.DarkGray });
+
+            VisualState fousedState = new VisualState
+            {
+                Name = "Focused"
+            };
+            fousedState.Setters.Add(new Setter { Property = SfNumericTextBox.BackgroundColorProperty, Value = Color.Yellow });
+
+            commonStateGroup.States.Add(normalState);
+            commonStateGroup.States.Add(disabledState);
+            commonStateGroup.States.Add(fousedState);
+            visualStateGroupList.Add(commonStateGroup);
+            VisualStateManager.SetVisualStateGroups(numericTextBox, visualStateGroupList);
+
+            stackLayout.Children.Add(numericTextBox);
+            this.Content = stackLayout;
+			
+{% endhighlight %}
+
+{% endtabs %}
+
+**Normal visual state**
+![SfNumericTextBox with normal visual state](images/NormalState.PNG)
+
+**Disabled visual state**
+![SfNumericTextBox with focused visual state](images/DisabledState.PNG)
+
+**Focused visual state**
+![SfNumericTextBox with disabled visual state](images/FocusState.PNG)
+
 ## See also
 
 [How to customize the border of SfNumericTextBox](https://www.syncfusion.com/kb/7587/how-to-custom-the-border-of-numerictextbox)
 
-[How to customize the color appearance of SfNumericTextBox](syncfusion.com/kb/7586/how-to-customize-the-color-appearance-of-numeric-controls-in-xamarin-forms)
+[How to customize the color appearance of SfNumericTextBox](https://www.syncfusion.com/kb/7586/how-to-customize-the-color-appearance-of-numeric-controls-in-xamarin-forms)

@@ -145,6 +145,32 @@ this.Content = numericTextBox;
 
 ![Display the textbox value](images/MaximumNumberDecimalDigits.png)
 
+## Remove Default Decimal Digits in SfNumericTextBox
+
+Based on the [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits) property, the default number of decimal digits is displayed. By disabling the `AllowDefaultDecimalDigits` Boolean property, those default digits can be removed from the numeric entry view.
+
+{% tabs %}
+
+{% highlight xaml %}
+
+	<syncfusion:SfNumericTextBox x:Name="numericTextBox" Value="123" AllowDefaultDecimalDigits="False" MaximumNumberDecimalDigits="2" />
+	
+{% endhighlight %}
+
+{% highlight c# %}
+
+            SfNumericTextBox numericTextBox = new SfNumericTextBox();
+            numericTextBox.Value = 123;
+            numericTextBox.MaximumNumberDecimalDigits = 2;
+            numericTextBox.AllowDefaultDecimalDigits = false;
+            this.Content = numericTextBox;
+  
+{% endhighlight %}
+
+{% endtabs %}
+
+![Display the textbox value without default decimal digits](images/AllowDefaultDecimalDigits.png)
+
 ## Selection support in SfNumericTextBox
 
 [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_SelectAllOnFocus) the property is used to specify whether the text should be selected when the control gets focus.

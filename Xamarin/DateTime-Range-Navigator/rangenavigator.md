@@ -372,12 +372,12 @@ namespace GettingStartedSample
 			stackLayout.Children.Add(rangeNavigator);
 			this.Content = stackLayout;
 		}
-	}
 		
-	private void rangeNavigator_RangeChanged(object sender, Syncfusion.RangeNavigator.XForms.RangeChangedEventArgs e)
-	{
-  	dateTimeAxis.Minimum = e.ViewRangeStartDate;
-  	dateTimeAxis.Maximum = e.ViewRangeEndDate;  
+		private void rangeNavigator_RangeChanged(object sender, Syncfusion.RangeNavigator.XForms.RangeChangedEventArgs e)
+		{
+  		dateTimeAxis.Minimum = e.ViewRangeStartDate;
+  		dateTimeAxis.Maximum = e.ViewRangeEndDate;  
+		}
 	}
 }
 {% endhighlight %}

@@ -277,8 +277,11 @@ Following code example illustrates how to handle range selection and update char
 {% highlight xaml %}
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-						 xmlns:local="clr-namespace:GettingStartedSample.ViewModel" xmlns:rangenavigator="clr-namespace:Syncfusion.RangeNavigator.XForms;assembly=Syncfusion.SfChart.XForms" xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+			 xmlns:local="clr-namespace:GettingStartedSample.ViewModel" 
+			 xmlns:rangenavigator="clr-namespace:Syncfusion.RangeNavigator.XForms;assembly=Syncfusion.SfChart.XForms" 
+			 xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
              x:Class="GettingStartedSample.MainPage">
+             
   <StackLayout >
   	<chart:SfChart x:Name="chart" HorizontalOptions="FillAndExpand" 
                  VerticalOptions="FillAndExpand">
@@ -305,14 +308,14 @@ Following code example illustrates how to handle range selection and update char
     	</chart:SfChart.Series>
   	</chart:SfChart>
 
-  	<rangenavigator:SfDateTimeRangeNavigator x:Name="RangeNavigator" RangeChanged="rangeNavigator_RangeChanged"      HorizontalOptions="FillAndExpand" ViewRangeStart="5/1/2015" ViewRangeEnd ="8/1/2015" ItemsSource="{Binding DateTimeRangeData}"
+  	<rangenavigator:SfDateTimeRangeNavigator x:Name="RangeNavigator" RangeChanged="rangeNavigator_RangeChanged" 
+  	HorizontalOptions="FillAndExpand" ViewRangeStart="5/1/2015" ViewRangeEnd ="8/1/2015" ItemsSource="{Binding DateTimeRangeData}"
     XBindingPath="XValue" YBindingPath="YValue" HeightRequest = "200">
-
     	<rangenavigator:SfDateTimeRangeNavigator.BindingContext>
-        <local:ViewModel />
+            <local:ViewModel />
     	</rangenavigator:SfDateTimeRangeNavigator.BindingContext>
-
   	</rangenavigator:SfDateTimeRangeNavigator>
+  	
 	</StackLayout>
 </ContentPage>
 
@@ -328,59 +331,56 @@ namespace GettingStartedSample
   {
     public MainPage()
     {
-      InitializeComponent();
+        InitializeComponent();
 
-			StackLayout stackLayout = new StackLayout();
+		StackLayout stackLayout = new StackLayout();
 
-			viewModel = new ViewModel();
-			SfChart chart = new SfChart();
-			chart.HorizontalOptions = LayoutOptions.FillAndExpand;
-			chart.VerticalOptions = LayoutOptions.FillAndExpand;
+		viewModel = new ViewModel();
+		SfChart chart = new SfChart();
+		chart.HorizontalOptions = LayoutOptions.FillAndExpand;
+		chart.VerticalOptions = LayoutOptions.FillAndExpand;
 
-			DateTimeAxis dateTimeAxis = new DateTimeAxis();
-			dateTimeAxis.Minimum = new DateTime(2015, 5, 1);
-			dateTimeAxis.Maximum = new DateTime(2015, 8, 1);
-			dateTimeAxis.LabelStyle = new ChartAxisLabelStyle { LabelFormat = "MMM/dd" };
-			chart.PrimaryAxis = dateTimeAxis;
+		DateTimeAxis dateTimeAxis = new DateTimeAxis();
+		dateTimeAxis.Minimum = new DateTime(2015, 5, 1);
+		dateTimeAxis.Maximum = new DateTime(2015, 8, 1);
+		dateTimeAxis.LabelStyle = new ChartAxisLabelStyle { LabelFormat = "MMM/dd" };
+		chart.PrimaryAxis = dateTimeAxis;
 
-			NumericalAxis secondaryAxis = new NumericalAxis();
-			chart.SecondaryAxis = secondaryAxis;
+		NumericalAxis secondaryAxis = new NumericalAxis();
+		chart.SecondaryAxis = secondaryAxis;
 
-			SplineAreaSeries series = new SplineAreaSeries();
-			series.ItemsSource = viewModel.DateTimeRangeData;
-			series.XBindingPath = "XValue";
-			series.YBindingPath = "YValue";
+		SplineAreaSeries series = new SplineAreaSeries();
+		series.ItemsSource = viewModel.DateTimeRangeData;
+		series.XBindingPath = "XValue";
+		series.YBindingPath = "YValue";
 
-			chart.Series.Add(series);
+		chart.Series.Add(series);
 
-			SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
+		SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
+		rangeNavigator.ItemsSource = viewModel.DateTimeRangeData;
+		rangeNavigator.XBindingPath = "XValue";
+		rangeNavigator.YBindingPath = "YValue";
+		rangeNavigator.ViewRangeStart = new DateTime(2015, 5, 1);
+		rangeNavigator.ViewRangeEnd = new DateTime(2015, 8, 1);
+		rangeNavigator.RangeChanged += rangeNavigator_RangeChanged;
+		rangeNavigator.HeightRequest = 200;
+ 		rangeNavigator.Content = chart;
 
-			rangeNavigator.ItemsSource = viewModel.DateTimeRangeData;
-
-			rangeNavigator.XBindingPath = "XValue";
-
-			rangeNavigator.YBindingPath = "YValue";
-
-			rangeNavigator.ViewRangeStart = new DateTime(2015, 5, 1);
-
-			rangeNavigator.ViewRangeEnd = new DateTime(2015, 8, 1);
-			rangeNavigator.RangeChanged += rangeNavigator_RangeChanged;
-			rangeNavigator.HeightRequest = 200;
- 			rangeNavigator.Content = chart;
-
-			stackLayout.Children.Add(chart);
-			stackLayout.Children.Add(rangeNavigator);
-			this.Content = stackLayout;
-		}
+		stackLayout.Children.Add(chart);
+		stackLayout.Children.Add(rangeNavigator);
+		this.Content = stackLayout;
+	}
 		
-		private void rangeNavigator_RangeChanged(object sender, Syncfusion.RangeNavigator.XForms.RangeChangedEventArgs e)
-		{
+	private void rangeNavigator_RangeChanged(object sender, Syncfusion.RangeNavigator.XForms.RangeChangedEventArgs e)
+	{
   		dateTimeAxis.Minimum = e.ViewRangeStartDate;
   		dateTimeAxis.Maximum = e.ViewRangeEndDate;  
-		}
 	}
+  }
 }
+
 {% endhighlight %}
+
 {% endtabs %}
 
 You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting_started_of_SfDateTimeRangeNavigator_in_Xamarin.Forms)

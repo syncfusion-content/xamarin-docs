@@ -274,18 +274,111 @@ N> You can get the selected start and end date using [`ViewRangeStart`](https://
 
 Following code example illustrates how to handle range selection and update chart's date time axis range,
 
-{% highlight c# %}
-[C#]
+{% tabs %}
+{% highlight xaml %}
+Namespace:
 
-rangeNavigator.RangeChanged += rangeNavigator_RangeChanged;  
-...
+ xmlns:rangenavigator="clr-namespace:Syncfusion.RangeNavigator.XForms;assembly=Syncfusion.SfChart.XForms"
+ xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms" 
 
-private void rangeNavigator_RangeChanged(object sender, RangeChangedEventArgs e) 
-{ 
-	//Updating chart's date time range 
-}  
+ ...
+
+<StackLayout >
+    <chart:SfChart x:Name="chart" HorizontalOptions="FillAndExpand" 
+                     VerticalOptions="FillAndExpand">
+
+      <chart:SfChart.BindingContext>
+        <local:ViewModel />
+      </chart:SfChart.BindingContext>
+
+      <chart:SfChart.PrimaryAxis>
+        <chart:DateTimeAxis x:Name="dateTimeAxis" Minimum="5/1/2015" Maximum="8/1/2015">
+          <chart:DateTimeAxis.LabelStyle>
+            <chart:ChartAxisLabelStyle LabelFormat="MMM/dd"/>
+              </chart:DateTimeAxis.LabelStyle>
+            </chart:DateTimeAxis>
+          </chart:SfChart.PrimaryAxis>
+
+          <chart:SfChart.SecondaryAxis>
+            <chart:NumericalAxis/>
+          </chart:SfChart.SecondaryAxis>
+
+          <chart:SfChart.Series>
+            <chart:SplineAreaSeries x:Name="series" ItemsSource="{Binding DateTimeRangeData}"
+                XBindingPath="XValue" YBindingPath="YValue"/>
+          </chart:SfChart.Series>
+      </chart:SfChart>
+
+      <rangenavigator:SfDateTimeRangeNavigator x:Name="RangeNavigator" RangeChanged="rangeNavigator_RangeChanged" HorizontalOptions="FillAndExpand" ViewRangeStart="5/1/2015" ViewRangeEnd ="8/1/2015" ItemsSource="{Binding DateTimeRangeData}"
+                          XBindingPath="XValue" YBindingPath="YValue" HeightRequest = "200">
+
+          <rangenavigator:SfDateTimeRangeNavigator.BindingContext>
+                    <local:ViewModel />
+          </rangenavigator:SfDateTimeRangeNavigator.BindingContext>
+
+      </rangenavigator:SfDateTimeRangeNavigator>
+</StackLayout>
 
 {% endhighlight %}
+
+{% highlight c# %}
+Namespace:
+using Syncfusion.RangeNavigator.XForms;
+using Syncfusion.SfChart.XForms;
+
+...
+
+StackLayout stackLayout = new StackLayout();
+
+viewModel = new ViewModel();
+SfChart chart = new SfChart();
+chart.HorizontalOptions = LayoutOptions.FillAndExpand;
+chart.VerticalOptions = LayoutOptions.FillAndExpand;
+
+DateTimeAxis primaryAxis = new DateTimeAxis();
+primaryAxis.Minimum = new DateTime(2015, 5, 1);
+primaryAxis.Maximum = new DateTime(2015, 8, 1);
+primaryAxis.LabelStyle = new ChartAxisLabelStyle { LabelFormat = "MMM/dd" };
+chart.PrimaryAxis = primaryAxis;
+
+NumericalAxis secondaryAxis = new NumericalAxis();
+chart.SecondaryAxis = secondaryAxis;
+
+SplineAreaSeries series = new SplineAreaSeries();
+series.ItemsSource = viewModel.DateTimeRangeData;
+series.XBindingPath = "XValue";
+series.YBindingPath = "YValue";
+
+chart.Series.Add(series);
+
+SfDateTimeRangeNavigator rangeNavigator = new SfDateTimeRangeNavigator();
+
+rangeNavigator.ItemsSource = viewModel.DateTimeRangeData;
+
+rangeNavigator.XBindingPath = "XValue";
+
+rangeNavigator.YBindingPath = "YValue";
+
+rangeNavigator.ViewRangeStart = new DateTime(2015, 5, 1);
+
+rangeNavigator.ViewRangeEnd = new DateTime(2015, 8, 1);
+rangeNavigator.RangeChanged += rangeNavigator_RangeChanged;
+rangeNavigator.HeightRequest = 200;
+ rangeNavigator.Content = chart;
+
+stackLayout.Children.Add(chart);
+stackLayout.Children.Add(rangeNavigator);
+this.Content = stackLayout;
+
+...
+
+private void rangeNavigator_RangeChanged(object sender, Syncfusion.RangeNavigator.XForms.RangeChangedEventArgs e)
+{
+    //Updating chart's date time range      
+}
+
+{% endhighlight %}
+{% endtabs %}
 
 You can find the complete getting started sample from this [link.](https://github.com/SyncfusionExamples/Getting_started_of_SfDateTimeRangeNavigator_in_Xamarin.Forms)
 

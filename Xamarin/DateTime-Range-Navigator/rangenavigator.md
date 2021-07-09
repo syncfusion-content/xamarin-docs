@@ -284,39 +284,39 @@ Namespace:
  ...
 
 <StackLayout >
-    <chart:SfChart x:Name="chart" HorizontalOptions="FillAndExpand" 
-                     VerticalOptions="FillAndExpand">
+  <chart:SfChart x:Name="chart" HorizontalOptions="FillAndExpand" 
+                 VerticalOptions="FillAndExpand">
 
-      <chart:SfChart.BindingContext>
+    <chart:SfChart.BindingContext>
+      <local:ViewModel />
+    </chart:SfChart.BindingContext>
+
+    <chart:SfChart.PrimaryAxis>
+      <chart:DateTimeAxis x:Name="dateTimeAxis" Minimum="5/1/2015" Maximum="8/1/2015">
+        <chart:DateTimeAxis.LabelStyle>
+          <chart:ChartAxisLabelStyle LabelFormat="MMM/dd"/>
+        </chart:DateTimeAxis.LabelStyle>
+      </chart:DateTimeAxis>
+    </chart:SfChart.PrimaryAxis>
+
+    <chart:SfChart.SecondaryAxis>
+      <chart:NumericalAxis/>
+    </chart:SfChart.SecondaryAxis>
+
+    <chart:SfChart.Series>
+      <chart:SplineAreaSeries x:Name="series" ItemsSource="{Binding DateTimeRangeData}"
+        XBindingPath="XValue" YBindingPath="YValue"/>
+    </chart:SfChart.Series>
+  </chart:SfChart>
+
+  <rangenavigator:SfDateTimeRangeNavigator x:Name="RangeNavigator" RangeChanged="rangeNavigator_RangeChanged"      HorizontalOptions="FillAndExpand" ViewRangeStart="5/1/2015" ViewRangeEnd ="8/1/2015" ItemsSource="{Binding DateTimeRangeData}"
+    XBindingPath="XValue" YBindingPath="YValue" HeightRequest = "200">
+
+    <rangenavigator:SfDateTimeRangeNavigator.BindingContext>
         <local:ViewModel />
-      </chart:SfChart.BindingContext>
+    </rangenavigator:SfDateTimeRangeNavigator.BindingContext>
 
-      <chart:SfChart.PrimaryAxis>
-        <chart:DateTimeAxis x:Name="dateTimeAxis" Minimum="5/1/2015" Maximum="8/1/2015">
-          <chart:DateTimeAxis.LabelStyle>
-            <chart:ChartAxisLabelStyle LabelFormat="MMM/dd"/>
-              </chart:DateTimeAxis.LabelStyle>
-            </chart:DateTimeAxis>
-          </chart:SfChart.PrimaryAxis>
-
-          <chart:SfChart.SecondaryAxis>
-            <chart:NumericalAxis/>
-          </chart:SfChart.SecondaryAxis>
-
-          <chart:SfChart.Series>
-            <chart:SplineAreaSeries x:Name="series" ItemsSource="{Binding DateTimeRangeData}"
-                XBindingPath="XValue" YBindingPath="YValue"/>
-          </chart:SfChart.Series>
-      </chart:SfChart>
-
-      <rangenavigator:SfDateTimeRangeNavigator x:Name="RangeNavigator" RangeChanged="rangeNavigator_RangeChanged" HorizontalOptions="FillAndExpand" ViewRangeStart="5/1/2015" ViewRangeEnd ="8/1/2015" ItemsSource="{Binding DateTimeRangeData}"
-                          XBindingPath="XValue" YBindingPath="YValue" HeightRequest = "200">
-
-          <rangenavigator:SfDateTimeRangeNavigator.BindingContext>
-                    <local:ViewModel />
-          </rangenavigator:SfDateTimeRangeNavigator.BindingContext>
-
-      </rangenavigator:SfDateTimeRangeNavigator>
+  </rangenavigator:SfDateTimeRangeNavigator>
 </StackLayout>
 
 {% endhighlight %}

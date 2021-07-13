@@ -1,6 +1,6 @@
 ---
 layout: post
-title: AutoComplete Filtering Options in Xamarin AutoComplete | Syncfusion
+title: Filtering Options in Xamarin AutoComplete Control | Syncfusion
 description: Learn about AutoComplete Filtering Options support in Syncfusion Xamarin AutoComplete (SfAutoComplete) control and more details.
 platform: xamarin
 control: AutoComplete

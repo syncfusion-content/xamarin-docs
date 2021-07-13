@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Select and Copy the Text in Xamarin Pdf Viewer control | Syncfusion
+title: Select and Copy the Text in Xamarin Pdf Viewer | Syncfusion
 description: Learn here all about Select and Copy the Text support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer

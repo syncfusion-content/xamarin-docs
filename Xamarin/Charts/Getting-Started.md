@@ -154,7 +154,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 
 ### macOS
 
-To launch the chart in macOS, call the SfChartRenderer.Init() method in the DidFinishLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework and LoadApplication initialization as demonstrated in the following code sample:
+To launch the chart in macOS, call the SfChartRenderer.Init() method in the DidFinishLaunching overridden method of the AppDelegate class after the Xamarin.Forms framework initialization and LoadApplication method as demonstrated in the following code sample:
 
 {% highlight C# %} 
 

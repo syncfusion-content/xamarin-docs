@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Documentlink in Xamarin Pdf Viewer control | Syncfusion
+title: Documentlink in Xamarin Pdf Viewer | Syncfusion
 description: Learn here all about Table of content navigation support in Syncfusion Xamarin Pdf Viewer (SfPdfViewer) control and more.
 platform: Xamarin
 control: SfPdfViewer

@@ -12,7 +12,7 @@ You can customize [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Sy
 
 * [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_TextColor) - Sets the color of the NumericTextBox's value.
 
-* `BackgroundColor` - sets the background color of NumericTextBox's frame.
+* `BackgroundColor` - Sets the background color of NumericTextBox's frame.
 
 * [`BorderColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_BorderColor) - Sets the border color of NumericTextBox.
 

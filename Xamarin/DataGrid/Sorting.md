@@ -13,7 +13,7 @@ The [Xamarin DataGrid](https://www.syncfusion.com/xamarin-ui-controls/xamarin-da
 
 To get started quickly with sorting in Xamarin.Forms DataGrid, you can check out this video:
 <style>#XamarinDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
-<iframe id='XamarinDataGridVideoTutorial' src='https://www.youtube.com/watch?v=NtXzsvz4pQk'></iframe>
+<iframe id='XamarinDataGridVideoTutorial' src='https://www.youtube.com/embed/NtXzsvz4pQk'></iframe>
 
 N> To update sorting for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 

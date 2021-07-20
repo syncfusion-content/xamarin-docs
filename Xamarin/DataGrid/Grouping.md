@@ -13,7 +13,7 @@ A group represents a collection of records that belongs to a particular category
 
 To get started quickly with grouping in Xamarin.Forms DataGrid, you can check out this video:
 <style>#XamarinDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style>
-<iframe id='XamarinDataGridVideoTutorial' src='https://www.youtube.com/watch?v=Z2JidYmNDYk'></iframe>
+<iframe id='XamarinDataGridVideoTutorial' src='https://www.youtube.com/embed/Z2JidYmNDYk'></iframe>
 
 N> To update grouping for the newly added row or column, set the `SfDataGrid.View.LiveDataUpdateMode` to `LiveDataUpdateMode.AllowDataShaping`.
 

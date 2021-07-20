@@ -22,9 +22,9 @@ N> The default value of this property is None.
 
 * [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FontFamily) : Customizes the font family of the NumericUpDown’s text.
 
-* [`TextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_TextAlignment) : Customize the NumericUpDown’s text alignment position. You can align the text in Start,End and Center position.
+* [`TextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_TextAlignment) : Customize the NumericUpDown’s text alignment position. You can align the text in Start, End and Center position.
 
-N> The default value of this property is Start.
+N> The default value of this property is [`Start`].
 
 {% tabs %}
 

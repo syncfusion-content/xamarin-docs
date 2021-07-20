@@ -8,8 +8,8 @@ documentation: ug
 ---
 # Events in Xamarin NumericUpDown (SfNumericUpDown)
 
-## ValueChanged 
-
+## Value changed event in SfNumericUpDown
+ 
 You can perform any operation when changing the value of [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) using the [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_ValueChanged) event. The ValueChanged event returns the changed value in NumericUpDown.
 
 For example you can restrict the NumericUpDown value if it exceed's greater than 3 digits using following code.
@@ -110,8 +110,8 @@ private void SfNumericUpDown_ValueChanged(object sender, ValueEventArgs e)
 
 ![Display the value with OnLostFocus](images/onlostfocus.png)
 
-## Completed 
-
+## Completed event in SfNumericUpDown
+ 
 The [`Completed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Completed) event occurs when users finalize the text in the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) by pressing the return key(enter, ok) on keyboard.
 
 {% tabs %}
@@ -137,7 +137,7 @@ void Handle_Completed(object sender, System.EventArgs e)
 
 {% endtabs %}
 
-## FocusChanged 
+## Focus changed event in SfNumericUpDown 
 
 The [`FocusChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FocusChanged) event occurs when the control gets the focus and loses the focus.
 

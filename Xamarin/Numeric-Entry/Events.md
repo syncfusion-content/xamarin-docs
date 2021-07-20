@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Events in Xamarin Numeric Entry (SfNumericTextBox)
 
-## ValueChanged event in SfNumericTextBox
+## Value changed event in SfNumericTextBox
 
 We can perform operation while the changing the value of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) value using [`ValueChanged`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ValueChanged) event. ValueChanged event returns the changed value in NumericTextBox.
 
@@ -112,7 +112,7 @@ private void SfNumericTextBox_ValueChanged(object sender, Syncfusion.SfNumericTe
 
 ![Display SfNumericTextBox control with ValueChanged event OnLostFocus](images/onlostfocus.png)
 
-## Completed in SfNumericTextBox
+## Completed event in SfNumericTextBox
 
 Raised [`completed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Completed) event when the user finalizes the text in the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) by pressing return key on the keyboard.
 

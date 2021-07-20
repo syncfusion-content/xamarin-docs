@@ -24,9 +24,9 @@ N> Default value is None.
 
 * [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_FontFamily) : Customizes the font family of the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) text.
 
-* [`TextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_TextAlignment) : Sets the style of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) text. We can give three types of style on it.It is specifying style information like Start,End and Center (using the TextAlignment enumeration in C#)
+* [`TextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_TextAlignment) : Sets the style of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) text. We can give three types of style on it.It is specifying style information like Start, End and Center (using the TextAlignment enumeration in C#)
 
-N> Default value is Start.
+N> Default value is [`Start`].
 
 To set the font size and attributes in XAML as well as in C#:
 

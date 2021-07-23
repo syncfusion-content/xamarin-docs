@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Font Settings in Syncfusion NumericUpDown control for Xamarin.Forms
-description: This section explain, how to set the Font style in  Syncfusion NumericUpDown control for Xamarin.Forms.
+description: This section explains how to set the Font style in  Syncfusion NumericUpDown control for Xamarin.Forms.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
@@ -12,7 +12,7 @@ You can customize the font style of [`SfNumericUpDown`](https://help.syncfusion.
 
 * [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FontSize)  : Sets the font size for NumericUpDown’s text. 
 
-* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FontAttribute) : Sets the style of NumericUpDown’s text. You can add below types of styles to it.
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FontAttribute) : Sets the style of NumericUpDown’s text. You can add following types of styles to it.
 
     1. Bold: Sets the style of NumericUpDown’s text to bold.
     2. Italic: Sets the style of NumericUpDown’s text to italic.
@@ -22,7 +22,7 @@ N> The default value of this property is None.
 
 * [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FontFamily) : Customizes the font family of the NumericUpDown’s text.
 
-* [`TextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_TextAlignment) : Customize the NumericUpDown’s text alignment position. You can align the text in Start, End and Center position.
+* [`TextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_TextAlignment) : Customizes the NumericUpDown’s text alignment position. You can align the text in Start, End, and Center position.
 
 N> The default value of this property is [`Start`].
 

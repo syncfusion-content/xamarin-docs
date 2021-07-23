@@ -130,7 +130,7 @@ protected override void OnLaunched(LaunchActivatedEventArgs e)
 
 The [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) control is configured entirely in C# code or by using XAML markup. 
 
-The following steps explain on how to create a [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) and configure its elements,
+The following steps explain how to create a [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) and configure its elements,
 
 * Adding namespace for the added assemblies. 
 
@@ -150,7 +150,7 @@ The following steps explain on how to create a [`SfNumericTextBox`](https://help
 
 {% endtabs %}
 
-* Now add the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) control with a required optimal name by using the included namespace.
+* Now, add the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) control with a required optimal name by using the included namespace.
 
 {% tabs %}
 

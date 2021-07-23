@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Number Formatting in Syncfusion NumericUpDown for Xamarin.Forms
-description: Learn how to add format String, enable parser mode and percent display mode for NumericUpDown control.
+description: Learn how to add format String, enable parser mode, and percent display mode for NumericUpDown control.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
@@ -14,7 +14,7 @@ The values of the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syn
 
 The [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FormatString) property determines the format specifier by which the display text has to be formatted. 
 
-N> The control displays the formatted text on lost focus. Default Value of [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FormatString) is "n". 
+N> The control displays the formatted text when the focus is lost. The default Value of [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FormatString) is "n". 
 
 ### Display currency notation
 
@@ -84,7 +84,7 @@ numericUpDown.FormatString="n";
 
 {% endtabs %}
 
-N> Instead of using above [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FormatString) types, we can provide any symbol or value as string in [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FormatString) property which will be appended with the value in [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html).
+N> Instead of using above [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FormatString) types, you can provide any symbol or value as string in [`FormatString`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FormatString) property which will be appended with the value in [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html).
 
 ![Display the value with number notation](images/format.png)
 

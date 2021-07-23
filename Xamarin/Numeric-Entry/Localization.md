@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Localization in Xamarin Numeric Entry (SfNumericTextBox)
 
-The [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) value can be localized to any specific culture. It can be specified by setting the [`Culture`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Culture) property with `System.Globalization.CultureInfo` object instance.
+The [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) value can be localized to any specific culture. It can also be specified by setting the [`Culture`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Culture) property with `System.Globalization.CultureInfo` object instance.
 
 {% tabs %}
 	

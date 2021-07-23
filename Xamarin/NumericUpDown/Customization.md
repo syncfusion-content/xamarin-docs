@@ -118,7 +118,7 @@ this.Content = NumericUpDown;
 
 ## Auto reverse in SfNumericUpDown
 
-While incrementing, the control will start from [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Minimum) value once it reaches the [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Maximum) value and vice-versa.
+When incrementing, the control will begin at the [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Minimum) value and progress to the [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Maximum) value, and vice-versa.
 
 N> By default the property value is false.
 
@@ -146,7 +146,7 @@ this.Content = NumericUpDown;
 
 ## Continuous spinning between ranges
 
-User can restrict the values between a specific range by setting [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Maximum) and [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Minimum) property value.
+Users can restrict the values to a specific range by setting the [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Maximum) and [`Minimum`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Minimum) property values.
 
 N> By default, the value of minimum property is Double.MinValue and the value of maximum property is Double.MaxValue.
 In iOS, if typed value is less than minimum value, the minimum value will be validated.
@@ -195,7 +195,7 @@ this.Content = stack;
 
 ## Step value support in SfNumericUpDown
 
-Frequency in which values gets incremented and decremented can be decided using [`StepValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_StepValue) property.
+The frequency with which values gets incremented and decremented can be decided using the [`StepValue`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_StepValue) property.
 
 N> By default the property value is 1.
 
@@ -221,7 +221,7 @@ this.Content = numericUpDown;
 
 ## Set edit option in SfNumericUpDown
 
-The [`IsEditable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_IsEditable) property is used to decide whether users need to perform edit operation in input field.
+The [`IsEditable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_IsEditable) property is used to decide whether users need to perform edit operations in the input field.
 
 N> By default, the value of [`IsEditable`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_IsEditable) property is true.
 
@@ -247,7 +247,7 @@ this.Content = numericUpDown;
 
 ## Selection support in SfNumericUpDown
 
-The [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_SelectAllOnFocus) property is used to specify whether the text should be selected when the control gets the focus.
+The [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_SelectAllOnFocus) property is used to specify whether the text should be selected or not when the control gets the focus.
 
 {% tabs %}
 

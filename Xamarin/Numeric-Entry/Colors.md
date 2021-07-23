@@ -20,7 +20,7 @@ You can customize [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Sy
 
 ## Text color support in SfNumericTextBox
 
-To set the [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_TextColor) color in XAML as well as in C#:
+To set the [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_TextColor) color in XAML as well as in C#.
 
 {% tabs %}
 

@@ -49,7 +49,7 @@ void Handle_ValueChanged(object sender, Syncfusion.SfNumericUpDown.XForms.ValueE
 
 ### Interactivity : ValueChangeMode
 
-The [`ValueChangeMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_ValueChangeMode) property is used to mention when value needs to update, either in key pressed or focus lost state. When ValueChangeMode is set to [`OnKeyFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.html#Syncfusion_SfNumericUpDown_XForms_ValueChangeMode_OnKeyFocus), the value will be updated on each key press. When ValueChangeMode is set to [`OnLostFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.html#Syncfusion_SfNumericUpDown_XForms_ValueChangeMode_OnLostFocus), the value is updated when the control lose the focus or the focus is moved to the next control. ValueChangeMode includes the following options:
+The [`ValueChangeMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_ValueChangeMode) property is used to mention when a value needs to be updated, either in key pressed or focus lost state. When ValueChangeMode is set to [`OnKeyFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.html#Syncfusion_SfNumericUpDown_XForms_ValueChangeMode_OnKeyFocus), the value is updated with each key press. When ValueChangeMode is set to [`OnLostFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.html#Syncfusion_SfNumericUpDown_XForms_ValueChangeMode_OnLostFocus), the value is updated when the control loses focus or the focus is moved to the next control. ValueChangeMode includes the following options:
 
 1. [`OnKeyFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.html#Syncfusion_SfNumericUpDown_XForms_ValueChangeMode_OnKeyFocus)
 2. [`OnLostFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.ValueChangeMode.html#Syncfusion_SfNumericUpDown_XForms_ValueChangeMode_OnLostFocus)
@@ -112,7 +112,7 @@ private void SfNumericUpDown_ValueChanged(object sender, ValueEventArgs e)
 
 ## Completed event in SfNumericUpDown
  
-The [`Completed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Completed) event occurs when users finalize the text in the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) by pressing the return key(enter, ok) on keyboard.
+The [`Completed`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Completed) event occurs when users finalize the text in the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) by pressing the return key(enter, ok) on the keyboard.
 
 {% tabs %}
 

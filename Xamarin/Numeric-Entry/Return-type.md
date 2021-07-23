@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Return Type in Xamarin Numeric Entry (SfNumericTextBox)
 
-We can able to define the return key type of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) by using the [`ReturnType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ReturnType) property of the type [Xamarin.Forms ReturnType](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.returntype?view=xamarin-forms).
+You can define the return key type of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) by using the [`ReturnType`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ReturnType) property of the type [Xamarin.Forms ReturnType](https://docs.microsoft.com/en-us/dotnet/api/xamarin.forms.entry.returntype?view=xamarin-forms).
 
 {% tabs %}
 

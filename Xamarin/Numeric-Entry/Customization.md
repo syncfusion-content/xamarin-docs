@@ -59,13 +59,13 @@ this.Content=numericTextBox;
 
 ![Display watermark text image](images/WaterMark.png)
 
-For customizing the color of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) [`WaterMark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Watermark) [refer](https://help.syncfusion.com/xamarin/sfnumerictextbox/colors)
+For customizing the color of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) [`WaterMark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Watermark), please [refer](https://help.syncfusion.com/xamarin/sfnumerictextbox/colors) to this link.
 
 ## Parsing the value in SfNumericTextBox
 
-Value of the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) gets parsed based on [`ParserMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ParserMode) property. ParsingMode is of type Parsers which is enum of [`Double`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.Parsers.html#Syncfusion_SfNumericTextBox_XForms_Parsers_Double) and [`Decimal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.Parsers.html#Syncfusion_SfNumericTextBox_XForms_Parsers_Decimal). Hence we have option to display the value in double or decimal. 
+Value of the [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) gets parsed based on [`ParserMode`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_ParserMode) property. ParsingMode is of type Parsers, which is an enum of [`Double`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.Parsers.html#Syncfusion_SfNumericTextBox_XForms_Parsers_Double) and [`Decimal`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.Parsers.html#Syncfusion_SfNumericTextBox_XForms_Parsers_Decimal). You have option to display the value in double or decimal. 
 
-Following code shows the Double parsing mode which can be set through ParserMode property.
+The following code shows the Double parsing mode, which can be set using the [`ParserMode`] property.
 
 {% tabs %}
 
@@ -118,9 +118,9 @@ N> Default Value of  [`Maximum`](https://help.syncfusion.com/cr/xamarin/Syncfusi
 
 ![SfNumericTextBox RangeSupport](images/RangeSupport.gif)
 
-## Set maximum number of decimal digits in SfNumericTextBox
+## Set the maximum number of decimal digits in SfNumericTextBox
 
-The maximum number of digits to be displayed after the decimal point can be specified by using [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits) property. 
+The maximum number of digits to be displayed after the decimal point can be specified by using the [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits) property. 
 
 N> The [[`MaximumNumberDecimalDigits`]([`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits)) property can be provided with positive value only.
 
@@ -145,7 +145,7 @@ this.Content = numericTextBox;
 
 ![Display the textbox value](images/MaximumNumberDecimalDigits.png)
 
-## Remove Default Decimal Digits in SfNumericTextBox
+## Remove default decimal digits in SfNumericTextBox
 
 Based on the [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_MaximumNumberDecimalDigits) property, the default number of decimal digits is displayed. By disabling the [`AllowDefaultDecimalDigits`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_AllowDefaultDecimalDigits) Boolean property, those default digits can be removed from the numeric entry view.
 
@@ -173,7 +173,7 @@ Based on the [`MaximumNumberDecimalDigits`](https://help.syncfusion.com/cr/xamar
 
 ## Selection support in SfNumericTextBox
 
-[`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_SelectAllOnFocus) the property is used to specify whether the text should be selected when the control gets focus.
+The [`SelectAllOnFocus`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_SelectAllOnFocus) property specifies whether the text should be selected or not when the control gets focus.
 
 {% tabs %}
 

@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Colors in Syncfusion NumericUpDown control for Xamarin.Forms
-description: This section explain, different color customization supports in Syncfusion NumericUpDown control for Xamarin.Forms.
+description: This section explains, different color customization supports in Syncfusion NumericUpDown control for Xamarin.Forms.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
 # Colors in Xamarin NumericUpDown (SfNumericUpDown)
 
-You can customize the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) background, text, and border colors through the following bindable properties:
+You can customize the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) background, text, and border colors using the following bindable properties:
 
 * [`TextColor`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_TextColor) - Sets the color of NumericUpDown's value
 
@@ -20,7 +20,7 @@ You can customize the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin
 
 ## Text color support in SfNumericUpDown
 
-The following code snippet demonstrates how to set the text color in XAML and in C#:
+The following code sample demonstrates how to set the text color in XAML and in C#:
 
 {% tabs %}
 
@@ -45,7 +45,7 @@ this.Content = NumericUpDown;
 
 ## Background color support in SfNumericUpDown
 
-The following code snippet demonstrates how to set the background color in XAML and in C#:
+The following code sample demonstrates how to set the background color in XAML and in C#:
 
 {% tabs %}
 
@@ -71,7 +71,7 @@ this.Content = NumericUpDown;
 
 ## Border color support in SfNumericUpDown
 
-The following code snippet demonstrates how to set the border color color in XAML and in C#:
+The following code sample demonstrates how to set the border color color in XAML and in C#:
 
 {% tabs %}
 
@@ -96,7 +96,7 @@ this.Content = NumericUpDown;
 
 ## Watermark color support in SfNumericUpDown
 
-The following code snippet demonstrates how to set the watermark color in XAML and in C#:
+The following code sample demonstrates how to set the watermark color in XAML and in C#:
 
 {% tabs %}
 

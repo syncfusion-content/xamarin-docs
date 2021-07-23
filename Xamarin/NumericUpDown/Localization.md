@@ -8,7 +8,7 @@ documentation: ug
 ---
 # Localization in Xamarin NumericUpDown (SfNumericUpDown)
 
-The [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) value can be localized to any specific culture. It can be specified by setting the [`Culture`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Culture) property with `System.Globalization.CultureInfo` object instance.
+The [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) value can be localized to any specific culture. It can also be specified by setting the [`Culture`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_Culture) property with `System.Globalization.CultureInfo` object instance.
 
 N> You cannot set value to the Culture property in XAML.
 

@@ -483,7 +483,7 @@ You can customize number increment and decrement mode in spin button interaction
 
 ### Default
 
-When [`SpinValidation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_SpinValidation) property is set as [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SpinValidation.html#Syncfusion_SfNumericUpDown_XForms_SpinValidation_Default), the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) value gets updated on long press untill the increment or decrement button is disabled.
+When [`SpinValidation`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_SpinValidation) property is set as [`Default`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SpinValidation.html#Syncfusion_SfNumericUpDown_XForms_SpinValidation_Default), the [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) value gets updated on long press until the increment or decrement button is disabled.
 
 {% tabs %}
 

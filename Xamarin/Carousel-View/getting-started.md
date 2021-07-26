@@ -77,7 +77,7 @@ N> If you are adding the references from toolbox, this step is not needed.
 
 ### iOS
 
-To launch SfCarousel in iOS, need to create an instance of SfCarouselRenderer in FinishedLaunching overridden method of AppDelegate class in iOS Project as shown below.
+To launch the SfCarousel in iOS, call the `SfCarouselRenderer.Init()` in the `FinishedLaunching` overridden method of the AppDelegate class after the Xamarin.Forms Framework has been initialized and before the LoadApplication is called, as demonstrated in the following code example.
 
 
 {% highlight C# %}
@@ -86,7 +86,7 @@ public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 {
 	global::Xamarin.Forms.Forms.Init();
 
-	new SfCarouselRenderer();
+	Syncfusion.SfCarousel.XForms.iOS.SfCarouselRenderer.Init();
 
 	LoadApplication(new App());
 

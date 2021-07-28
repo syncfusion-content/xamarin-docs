@@ -59,7 +59,7 @@ this.Content=numericTextBox;
 
 ![Display watermark text image](images/WaterMark.png)
 
-For customizing the color of [`SfNumericTextBox`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html) [`WaterMark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Watermark), please [refer](https://help.syncfusion.com/xamarin/sfnumerictextbox/colors) to this link.
+For customizing the color of `SfNumericTextBox` [`WaterMark`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericTextBox.XForms.SfNumericTextBox.html#Syncfusion_SfNumericTextBox_XForms_SfNumericTextBox_Watermark), please [refer](https://help.syncfusion.com/xamarin/sfnumerictextbox/colors) to this link.
 
 ## Parsing the value in SfNumericTextBox
 

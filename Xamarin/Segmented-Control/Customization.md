@@ -327,3 +327,54 @@ segmentedControl.ScrollTo(viewModel.Items[5], Syncfusion.XForms.Buttons.ScrollTo
 {% endhighlight %}
 
 {% endtabs %}
+
+## Segment Height
+
+The Segmented control height can be customized using the [SegmentHeight](https://help.syncfusion.com/cr/xamarin/Syncfusion.XForms.Buttons.SfSegmentedControl.html#Syncfusion_XForms_Buttons_SfSegmentedControl_SegmentHeight) property as shown below
+ 
+{% tabs %}
+
+{% highlight xaml %}
+     
+     <? xml version="1.0" encoding="utf-8" ?>
+     <ContentPage 
+     xmlns = "http://xamarin.com/schemas/2014/forms" 
+     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+     xmlns:buttons="clr-namespace:Syncfusion.XForms.Buttons;assembly=Syncfusion.Buttons.XForms" 
+     x:Class="GettingStarted.MainPage">
+    <ContentPage.Content>
+        <buttons:SfSegmentedControl SegmentHeight="60"/>
+    </ContentPage.Content>
+    </ContentPage>
+
+
+{% endhighlight %}
+
+{% highlight c# %}
+
+    using Syncfusion.XForms.Buttons;
+    using Xamarin.Forms;
+
+    namespace GettingStarted
+    {
+        public partial class MainPage : ContentPage
+        {
+            private SfSegmentedControl segmentedControl;
+            public MainPage()
+            {
+                InitializeComponent();
+                segmentedControl = new SfSegmentedControl();
+                segmentedControl.SegmentHeight = 60;
+                this.Content = segmentedControl;
+            }
+        }
+    }
+
+{% endhighlight %}
+
+{% endtabs %}
+
+Segment Height sample can be downloaded from this [link](https://github.com/SyncfusionExamples/how-to-customize-segment-contol-height-in-xamarin.forms).
+
+![Segment Height customization in segmented control](images/Customization/Xamarin_Forms_SegmentHeight.png)
+

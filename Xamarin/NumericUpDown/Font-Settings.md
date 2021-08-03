@@ -1,42 +1,36 @@
 ---
 layout: post
-title: Font Settings in Xamarin NumericUpDown control | Syncfusion
-description: Learn here all about Font Settings support in Syncfusion Xamarin NumericUpDown (SfNumericUpDown) control and more.
+title: Font Settings in Syncfusion NumericUpDown control for Xamarin.Forms
+description: This section explains how to set the Font style in  Syncfusion NumericUpDown control for Xamarin.Forms.
 platform: Xamarin
 control: NumericUpDown
 documentation: ug
 ---
 # Font Settings in Xamarin NumericUpDown (SfNumericUpDown)
 
-You can customize the font style of NumericUpDown using the following font-related properties that display the value's text:
+You can customize the font style of [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) using the following font-related properties that display the value's text:
 
-* `FontSize` : Sets the font size for NumericUpDown’s text. 
+* [`FontSize`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FontSize)  : Sets the font size for NumericUpDown’s text. 
 
-* `FontAttributes` : Sets the style of NumericUpDown’s text. You can add three types of styles to it. It specifies style information like Italic and Bold (using the FontAttributes enumeration in C#).
+* [`FontAttributes`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FontAttribute) : Sets the style of NumericUpDown’s text. You can add following types of styles to it.
 
-1. Bold: Sets the style of NumericUpDown’s text to bold.
-2. Italic: Sets the style of NumericUpDown’s text to italic.
-3. None: Keeps the style of NumericUpDown’s text as same. It will not modify the style.
+    1. Bold: Sets the style of NumericUpDown’s text to bold.
+    2. Italic: Sets the style of NumericUpDown’s text to italic.
+	3. None: Keeps the style of NumericUpDown’s text as same. It will not modify the style.
 
 N> The default value of this property is None.
 
-* `FontFamily` : Customizes the font family of the NumericUpDown’s text.
+* [`FontFamily`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_FontFamily) : Customizes the font family of the NumericUpDown’s text.
 
-* `TextAlignment` : Sets the style of NumericUpDown’s text. We can give three types of style on it. It is specifying style information like Start,End and Center (using the TextAlignment enumeration in C#)
+* [`TextAlignment`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html#Syncfusion_SfNumericUpDown_XForms_SfNumericUpDown_TextAlignment) : Customizes the NumericUpDown’s text alignment position. You can align the text in Start, End, and Center position.
 
-N> The default value of this property is Start.
-
-The following code sample demonstrates how to set the font size and attributes in XAML and in C#.
+N> The default value of this property is [`Start`].
 
 {% tabs %}
 
 {% highlight xaml %}
 
-	<numeric:SfNumericUpDown x:Name="NumericUpDown" 
-	                         FontSize="27" 
-	                         FontAttribute="Bold" 
-	                         Value="123" 
-	                         TextAlignment="End" />
+	<numeric:SfNumericUpDown FontSize="27"  FontAttribute="Bold" Value="123" TextAlignment="End" />
 	
 {% endhighlight %}
 
@@ -53,7 +47,7 @@ this.Content = NumericUpDown;
 
 {% endtabs %}
 
-![Display the NumericUpDown control with FontCustomization](images/textformatend.png)
+![Display the NumericUpDown control with FontCustomization](images/textformatend.PNG)
 
 ## See also
 

@@ -7,7 +7,7 @@ control: NumericUpDown
 documentation: ug
 ---
 
-## AutomationId
+## AutomationId in Xamarin NumericUpDown (SfNumericUpDown)
 
 The [`SfNumericUpDown`](https://help.syncfusion.com/cr/xamarin/Syncfusion.SfNumericUpDown.XForms.SfNumericUpDown.html) control has built-in AutomationId for inner elements. To keep unique id for inner elements, AutomationId of inner elements are updated based on NumericUpDown's AutomationId. For example, if NumericUpDown's AutomationId is set as sfNumericUpDown.AutomationId = "numericUpDown", then AutomationId of inner elements will be updated as follows.
 
